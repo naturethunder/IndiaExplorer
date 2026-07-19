@@ -1,0 +1,7 @@
+# IndiaExplore — robots
+# Allow full crawl; the 108 <slug>.html files are redirect stubs to
+# destination.html?slug=<slug> (the canonical URL, listed in sitemap.xml).
+User-agent: *
+Allow: /
+
+Sitemap: https://www.indiaexplore.example/sitemap.xml

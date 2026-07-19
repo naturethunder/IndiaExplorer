@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trip Finder — IndiaExplore</title>
+  <meta name="description" content="Describe your ideal trip in plain English and let the AI Trip Finder match you to the perfect Indian destinations — by type, budget, month, region and vibe. No signup, works instantly." />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body class="bg-gray-50">
+
+<!-- NAVBAR (shared component) -->
+<div id="siteNav"></div>
+
+<!-- MAIN -->
+<main class="pt-16">
+
+  <!-- Hero prompt -->
+  <div class="bg-gradient-to-br from-orange-50 via-white to-amber-50 border-b border-gray-200">
+    <div class="max-w-3xl mx-auto px-4 py-10 text-center">
+      <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 border border-primary/20 rounded-full px-3 py-1 mb-4">✨ AI Trip Finder · no signup, works instantly</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Describe your dream trip.<br class="hidden sm:block" /> We'll find the place.</h1>
+      <p class="text-gray-500 mb-6 text-sm sm:text-base">Search anything — a destination, a landmark, a hotel, a budget or month, a mood or region… even site info like “contact” or “weather”. The finder reads your words and finds it.</p>
+
+      <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-3 text-left">
+        <textarea id="prompt" rows="2"
+          aria-label="Describe your trip"
+          class="w-full resize-none border-0 focus:ring-0 focus:outline-none text-gray-900 placeholder-gray-400 text-base p-2"
+          placeholder="e.g. Quiet hill stations under ₹4000 for a honeymoon in December"></textarea>
+        <div class="flex items-center justify-between gap-2 pt-2 border-t border-gray-100">
+          <div class="flex items-center gap-3 pl-2">
+            <button id="nearMeBtn" type="button" class="text-sm font-semibold text-primary hover:underline flex items-center gap-1">📍 Near me</button>
+            <span id="hint" class="text-xs text-gray-400 hidden sm:inline">or press Enter</span>
+          </div>
+          <button id="findBtn" type="button" class="btn btn-primary px-5">Find destinations</button>
+        </div>
+      </div>
+
+      <!-- Example chips -->
+      <div class="flex flex-wrap gap-2 justify-center mt-5">
+        <button class="ex-chip" data-ex="Quiet hill stations under ₹4000 in December">❄️ Quiet hills under ₹4000</button>
+        <button class="ex-chip" data-ex="Beaches in South India for a honeymoon">🏖️ South India honeymoon beaches</button>
+        <button class="ex-chip" data-ex="Wildlife safari near Delhi">🐯 Wildlife safari near Delhi</button>
+        <button class="ex-chip" data-ex="Adventure trekking in the Himalayas">🥾 Himalayan trekking</button>
+        <button class="ex-chip" data-ex="Taj hotel stays">🏨 Taj hotel stays</button>
+        <button class="ex-chip" data-ex="Places with a waterfall">🏞️ Waterfalls</button>
+        <button class="ex-chip" data-ex="contact">📧 Contact us</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="results" class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Site-info answers (contact / about / weather / booking …) -->
+    <div id="siteInfo" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6"></div>
+
+    <!-- Understanding panel -->
+    <div id="understanding" class="hidden mb-6"></div>
+
+    <!-- Results header -->
+    <div id="resultsHeader" class="hidden items-center justify-between mb-4">
+      <h2 id="resultsTitle" class="text-lg font-bold text-gray-900"></h2>
+    </div>
+
+    <!-- Empty / prompt-me state -->
+    <div id="idleState" class="text-center py-16">
+      <div class="text-5xl mb-4">🧭</div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2">Tell me what you're looking for</h3>
+      <p class="text-gray-500 text-sm max-w-md mx-auto">Try one of the examples above, or describe the trip in your own words — the more detail (budget, month, vibe, region), the sharper the match.</p>
+    </div>
+
+    <!-- No-match state -->
+    <div id="noMatch" class="hidden text-center py-16">
+      <div class="text-5xl mb-4">🤔</div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2">Couldn't pin that down</h3>
+      <p class="text-gray-500 text-sm mb-6">Here are some top-rated destinations to explore instead — or try rephrasing with a type, month, budget or region.</p>
+    </div>
+
+    <!-- Results grid -->
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5"></div>
+  </div>
+</main>
+
+<!-- Mobile Nav (shared component) -->
+<div id="siteMobileNav"></div>
+
+<style>
+  .ex-chip{font-size:.8rem;font-weight:500;padding:.4rem .8rem;border-radius:9999px;background:#fff;border:1px solid #e5e7eb;color:#374151;transition:all .15s;}
+  .ex-chip:hover{border-color:#F97316;color:#EA580C;box-shadow:0 1px 6px rgba(249,115,22,.15);}
+  .reason-chip{display:inline-flex;align-items:center;gap:.25rem;font-size:11px;font-weight:600;padding:.15rem .55rem;border-radius:9999px;background:#FFF7ED;color:#C2410C;border:1px solid #FED7AA;}
+  .tag-chip{display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:.2rem .6rem;border-radius:9999px;background:#fff;color:#EA580C;border:1px solid #FED7AA;}
+</style>
+
+<script type="module" src="js/pages/finder.js"></script>
+</body>
+</html>

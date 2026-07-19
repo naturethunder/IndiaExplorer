@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destination — IndiaExplore</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="js/leaflet.css" />
+  <script src="js/leaflet.js" defer></script>
+</head>
+<body class="bg-white">
+
+<a href="#content" class="skip-link">Skip to content</a>
+
+<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="IndiaExplore home">
+      <span class="text-2xl">🏔️</span>
+      <span class="font-bold text-lg tracking-tight text-gray-900">India<span class="text-primary">Explore</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-1 text-sm text-gray-400" aria-label="Breadcrumb">
+      <a href="destinations.html" class="hover:text-primary transition-colors">Destinations</a>
+      <span class="mx-1">/</span>
+      <span id="crumbName" class="text-gray-700 font-medium">...</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="navSave" class="btn btn-outline text-sm hidden md:flex">💾 Save</button>
+      <button id="navBook" class="btn btn-primary text-sm">Book Now</button>
+    </div>
+  </div>
+</nav>
+
+<!-- NOT FOUND -->
+<div id="notFound" class="flex flex-col items-center justify-center min-h-screen gap-4" style="display:none">
+  <div class="text-6xl">🗺️</div>
+  <h1 class="text-2xl font-bold text-gray-900">Destination not found</h1>
+  <p class="text-gray-500">We don't have a page for this destination yet.</p>
+  <a href="destinations.html" class="btn btn-primary">Browse all destinations</a>
+</div>
+
+<!-- CONTENT -->
+<main id="content" style="display:none">
+
+  <!-- HERO (5-photo real-image carousel) -->
+  <div class="dest-hero pt-16">
+    <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" />
+    <div id="heroSlides" class="dest-hero-slides"></div>
+    <div class="dest-hero-overlay"></div>
+    <button id="heroPrev" class="hero-car-btn hero-car-prev" aria-label="Previous photo">‹</button>
+    <button id="heroNext" class="hero-car-btn hero-car-next" aria-label="Next photo">›</button>
+    <div id="heroDots" class="hero-car-dots"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6 max-w-7xl mx-auto w-full" style="pointer-events:none">
+      <div class="text-white" style="pointer-events:auto">
+        <div class="flex items-center gap-2 mb-2">
+          <a id="heroType" href="#" class="badge bg-primary text-white text-xs capitalize"></a>
+          <span id="heroBadge" class="badge bg-white/20 backdrop-blur-sm text-white border border-white/30 text-xs"></span>
+        </div>
+        <h1 id="heroTitle" class="font-display text-white mb-1" style="font-size:clamp(2rem,5vw,3rem);line-height:1.1"></h1>
+        <p id="heroTagline" class="text-white/80 text-base max-w-2xl"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div id="statsBar" class="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm"></div>
+    </div>
+  </div>
+
+  <!-- STICKY TABS -->
+  <div class="sticky-dest-nav">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="tab-nav" role="tablist" aria-label="Destination sections">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-overview" data-tab="overview">Overview</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-places" data-tab="places">Places <span id="tabPlacesCount" class="ml-1 text-xs bg-primary text-white rounded-full px-1.5 py-0.5"></span></button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-stays" data-tab="stays">Stays <span id="tabStaysCount" class="ml-1 text-xs bg-primary text-white rounded-full px-1.5 py-0.5"></span></button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-reach" data-tab="reach">How to Reach</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-map" data-tab="map">Map</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div id="panel-overview" class="tab-panel" role="tabpanel"></div>
+    <div id="panel-places"   class="tab-panel" role="tabpanel" style="display:none"></div>
+    <div id="panel-stays"    class="tab-panel" role="tabpanel" style="display:none"></div>
+    <div id="panel-reach"    class="tab-panel" role="tabpanel" style="display:none"></div>
+    <div id="panel-map"      class="tab-panel" role="tabpanel" style="display:none">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Map — <span id="mapName"></span></h2>
+      <div id="leaflet-map" class="w-full rounded-2xl border border-gray-200" style="height:450px"></div>
+      <p class="text-xs text-gray-400 mt-2 text-center">Map data © OpenStreetMap contributors</p>
+    </div>
+  </div>
+
+  <!-- SIMILAR -->
+  <div class="bg-gray-50 py-12 mt-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">Similar Destinations</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="similar-grid"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER (shared component) -->
+  <div id="siteFooter"></div>
+</main>
+
+<!-- Place Details Modal -->
+<div id="placeModal" class="fixed inset-0 z-[210] flex items-center justify-center p-4" style="display:none" role="dialog" aria-modal="true" aria-labelledby="placeName" aria-hidden="true">
+  <div id="placeBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto">
+    <button id="placeClose" class="absolute top-3 right-3 z-20 w-9 h-9 flex items-center justify-center text-white bg-black/40 hover:bg-black/60 rounded-full transition-colors" aria-label="Close">✕</button>
+
+    <!-- Image carousel (≥5 actual photos, populated by JS) -->
+    <div id="placeCarousel" class="carousel">
+      <div id="placeTrack" class="carousel-track"><!-- slides injected here --></div>
+      <button id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo">‹</button>
+      <button id="carNext" class="carousel-btn carousel-next" aria-label="Next photo">›</button>
+      <div id="carDots" class="carousel-dots"><!-- dots injected --></div>
+      <span id="carCount" class="carousel-count">1 / 5</span>
+    </div>
+
+    <div class="p-6">
+      <div class="flex items-start justify-between gap-3 mb-1">
+        <h2 id="placeName" class="text-2xl font-bold text-gray-900 leading-tight"></h2>
+        <span id="placeRating" class="shrink-0 text-amber-500 font-bold"></span>
+      </div>
+      <span id="placeCategory" class="inline-block badge bg-orange-100 text-orange-800 text-xs capitalize mb-4"></span>
+      <p id="placeDesc" class="text-gray-600 text-sm leading-relaxed mb-5"></p>
+
+      <!-- Live weather for the area -->
+      <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-3 mb-5">
+        <div class="flex items-center justify-between mb-1">
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Live Weather Nearby</span>
+          <span class="flex items-center gap-1.5 text-xs font-medium text-emerald-600"><span class="live-dot"></span>LIVE</span>
+        </div>
+        <div id="placeWeather" class="text-sm text-gray-700">Loading…</div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        <div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Distance</p><p id="placeDistance" class="font-medium text-gray-900"></p></div>
+        <div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Time Needed</p><p id="placeDuration" class="font-medium text-gray-900"></p></div>
+        <div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Entry Fee</p><p id="placeFee" class="font-medium text-gray-900"></p></div>
+        <div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Timings</p><p id="placeTimings" class="font-medium text-gray-900"></p></div>
+      </div>
+
+      <a id="placeMapLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full mt-6">View on Google Maps →</a>
+    </div>
+  </div>
+</div>
+
+
+<nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-nav-btn"><span class="mobile-nav-icon">🏠</span>Home</a>
+  <a href="destinations.html" class="mobile-nav-btn"><span class="mobile-nav-icon">🗺️</span>Explore</a>
+  <a href="#" id="mStays" class="mobile-nav-btn"><span class="mobile-nav-icon">🏨</span>Stays</a>
+  <a href="#" id="mReach" class="mobile-nav-btn"><span class="mobile-nav-icon">🚗</span>Route</a>
+</nav>
+
+<script type="module" src="js/pages/destination.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "_comment": "slug -> corrected {lat,lng,state,keepRegion}. Fixes bulk destinations that inherited wrong coords/state from upstream Wikidata/Wikipedia. Consumed by scripts/build-json-data.js; distanceFromDelhi + reach + map + weather recompute from these. Omit lat/lng to fix only the state label. NOTE: Category-B slugs (coords were wrong) also have stale topPlaces fetched at the old location — re-fetch places around the new coords to fully fix.",
+
+  "pavangad": { "state": "Kerala" },
+  "st-michael-s-and-all-angels-church-oorgaum-kgf": { "state": "Karnataka" },
+  "gurdwara-handi-sahib": { "state": "Bihar" },
+  "bijapur-fort": { "state": "Karnataka" },
+
+  "fatehgarh-fort": { "lat": 27.3673, "lng": 79.6221 },
+  "manibandh-shaktipeeth": { "lat": 26.4736, "lng": 74.5514 },
+  "manikarnikeswarar-temple": { "lat": 10.7869, "lng": 79.1378 },
+  "pathrakaliamman-temple": { "lat": 8.8732, "lng": 78.0310 },
+  "pananchery-mudikkode-shiva-temple": { "lat": 10.5560, "lng": 76.3080 },
+  "shri-mansa-mata-mandir-hasampur": { "lat": 27.7744, "lng": 75.9512 },
+  "st-john-in-the-wilderness-nainital": { "lat": 29.3944, "lng": 79.4469 },
+  "western-ghats": { "lat": 15.3144, "lng": 74.3144 },
+  "fort-madhogarh": { "lat": 26.8560, "lng": 76.0910 }
+}

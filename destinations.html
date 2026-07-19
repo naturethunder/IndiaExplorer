@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Destinations — IndiaExplore</title>
+  <meta name="description" content="Browse 2,355 travel destinations across all 35 states & UTs of India. Filter by type, state, budget and travel month." />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body class="bg-gray-50">
+
+<!-- NAVBAR (shared component) -->
+<div id="siteNav"></div>
+
+<!-- MAIN -->
+<main class="pt-16">
+
+  <!-- Sub-header -->
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 py-5">
+      <h1 class="text-2xl font-bold text-gray-900 mb-4">Explore India</h1>
+
+      <!-- Search -->
+      <div class="relative mb-4">
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
+        <input id="searchInput" type="text"
+               placeholder="Search by destination, state, or type..."
+               aria-label="Search destinations"
+               class="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 bg-gray-50" />
+      </div>
+
+      <!-- Type Filter (rendered by JS) -->
+      <div id="typeFilter" class="flex gap-2 overflow-x-auto scrollbar-hide pb-1"></div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <div class="flex gap-6">
+
+      <!-- ── Sidebar Filters ─────────────────────────────── -->
+      <aside id="filterSidebar" class="filter-sidebar hidden lg:block w-64 shrink-0">
+        <div class="filter-panel bg-white rounded-2xl border border-gray-200 p-5 sticky top-20 overflow-y-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="font-bold text-gray-900">Filters</h3>
+            <div class="flex items-center gap-3">
+              <button id="resetTop" class="text-xs text-primary font-semibold hover:underline">Reset all</button>
+              <button id="filterClose" class="lg:hidden w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Close filters">✕</button>
+            </div>
+          </div>
+
+          <!-- Region (macro travel-zone; derived from state) -->
+          <div class="mb-6">
+            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Region</h4>
+            <select id="regionFilter" aria-label="Filter by region"
+                    class="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:border-primary bg-white">
+              <option value="">All Regions</option>
+            </select>
+          </div>
+
+          <!-- State -->
+          <div class="mb-6">
+            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">State</h4>
+            <select id="stateFilter" aria-label="Filter by state"
+                    class="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:border-primary bg-white">
+              <option value="">All States</option>
+            </select>
+          </div>
+
+          <!-- Budget / Max Price -->
+          <div class="mb-6">
+            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Price / Night</h4>
+            <select id="tierFilter" aria-label="Filter by price per night"
+                    class="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:border-primary bg-white">
+              <option value="">Any price</option>
+            </select>
+          </div>
+
+          <!-- Season (derived from best-travel months) -->
+          <div class="mb-6">
+            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Season</h4>
+            <select id="seasonFilter" aria-label="Filter by season"
+                    class="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:border-primary bg-white">
+              <option value="">Any Season</option>
+            </select>
+          </div>
+
+          <!-- Best Month -->
+          <div>
+            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Travel Month</h4>
+            <select id="monthFilter" aria-label="Filter by travel month"
+                    class="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:border-primary bg-white">
+              <option value="">Any Month</option>
+            </select>
+          </div>
+
+          <!-- Apply (mobile drawer only) -->
+          <button id="filterApply" class="lg:hidden btn btn-primary w-full mt-6">Show <span id="filterApplyCount">0</span> destinations</button>
+        </div>
+      </aside>
+
+      <!-- ── Results ──────────────────────────────────────── -->
+      <div class="flex-1 min-w-0">
+        <!-- Result count + sort -->
+        <div class="flex items-center justify-between mb-5">
+          <p class="text-sm text-gray-600">
+            <span id="resultCount" class="font-bold text-gray-900">0</span> destinations found
+          </p>
+          <div class="flex items-center gap-2">
+          <button id="filterOpen" class="lg:hidden flex items-center gap-1.5 text-sm font-semibold border border-gray-200 rounded-lg px-3 py-1.5 bg-white text-gray-700 hover:border-primary" aria-label="Open filters">
+            ⚙️ Filters<span id="filterCount" class="hidden w-5 h-5 items-center justify-center rounded-full bg-primary text-white text-xs"></span>
+          </button>
+          <select id="sortBy" aria-label="Sort destinations"
+                  class="text-sm border border-gray-200 rounded-lg px-3 py-1.5 focus:outline-none focus:border-primary bg-white">
+            <option value="rating">Top Rated</option>
+            <option value="price_asc">Price: Low to High</option>
+            <option value="price_desc">Price: High to Low</option>
+            <option value="distance">Closest to Delhi</option>
+          </select>
+          </div>
+        </div>
+
+        <!-- No results -->
+        <div id="noResults" class="text-center py-20" style="display:none">
+          <div class="text-5xl mb-4">🗺️</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">No destinations found</h3>
+          <p class="text-gray-500 text-sm mb-6">Try adjusting your filters or search terms</p>
+          <button id="resetEmpty" class="btn btn-primary">Reset Filters</button>
+        </div>
+
+        <!-- Grid (rendered by JS) -->
+        <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5"></div>
+
+        <!-- Load more (JS-controlled; renders in batches to avoid a 2,355-card first paint) -->
+        <div id="loadMoreWrap" class="justify-center mt-8" style="display:none">
+          <button id="loadMoreBtn" class="btn btn-outline">Show <span id="loadMoreCount">60</span> more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Nav (shared component) -->
+<div id="siteMobileNav"></div>
+
+<script type="module" src="js/pages/explore.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Dependencies (npm is blocked here anyway — there is no build step)
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Logs & temp
+*.log
+*.tmp
+
+# Bulk ingest caches
+scripts/bulk/cache/
