@@ -145,11 +145,11 @@ function apply() {
   if (filters.type) {
     if (filters.type === 'road_trips') {
       results = results.filter(function (d) {
-        return d.features.some(function (f) { return f.toLowerCase() === 'ghats'; }) || d.type === 'adventure';
+        return (d.type === 'adventure' || d.type === 'hill_station' || d.features.some(function (f) { return f.toLowerCase() === 'ghats'; })) && d.type !== 'spiritual';
       });
     } else if (filters.type === 'camping') {
       results = results.filter(function (d) {
-        return d.features.some(function (f) { return f.toLowerCase().includes('camp'); });
+        return d.features.some(function (f) { return f.toLowerCase().includes('camp') || f.toLowerCase().includes('trek'); }) || d.type === 'adventure';
       });
     } else if (filters.type === 'forts') {
       results = results.filter(function (d) {
