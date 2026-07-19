@@ -308,3 +308,17 @@ Still open (unchanged): Web3Forms delivery check on HTTPS (P0 #3, needs staging)
 6. **Recalculated Categories Strip:** Restored "Road Trips" and "Camping" cards in [home.js](file:///d:/trip_planner/js/pages/home.js). Precomputed their exact search match counts (`road_trips`: 42, `camping`: 76) at build time inside [build-json-data.js](file:///d:/trip_planner/scripts/build-json-data.js) and linked cards to specific keyword queries.
 
 Verified: `node --check` clean across all modules, all validation checks passed in `validate-filters.js`, and all stubs render correct static metadata.
+
+---
+
+## Addendum — Category Filter Enhancements (2026-07-20)
+
+1. **Category Buttons Redesign:** Resized the category buttons row on [destinations.html](file:///d:/trip_planner/destinations.html) from small `text-xs` (`px-4 py-1.5`) to a standard, clean `text-sm` (`px-5 py-2`). Applied premium active styling (subtle orange background highlight, slight transform scale-up `scale-102`, and shadows).
+2. **Additional Custom Category Filters:** Extended the 6 default type filters (Mountains, Beaches, Heritage, Wildlife, Temples, Adventure) to a total of 10 categories, adding:
+   - **`🚗 Road Trips`**: Filters destinations that are adventure/hills or are located in the Ghats, excluding purely spiritual/temple sites (returns 56 proper destinations).
+   - **`🏕️ Camping`**: Filters destinations matching camping/trekking activities or adventure tags (returns 12 proper destinations).
+   - **`🏰 Forts`**: Filters destinations with fort features (returns 530 destinations).
+   - **`🌳 Ecotourism`**: Filters national parks and bird sanctuaries (returns 326 destinations).
+3. **Deep-linking & Active Navigation Sync:** Supported deep-links matching the new custom categories (e.g., `?type=road_trips`) and synced active nav highlights correctly.
+
+Verified: `node --check` clean on all touched modules, `build-css.js` re-run to compile new utility classes into [css/tailwind.css](file:///d:/trip_planner/css/tailwind.css), and verified counts for all 11 options using a database script. Committed to local Git.

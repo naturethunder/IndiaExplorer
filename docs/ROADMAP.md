@@ -103,6 +103,7 @@ Last updated: 2026-07-19.
   IIFEs). Fixed the **hero background tiling** bug — the init set the `background` shorthand, which
   reset `background-size:cover`, so an undersized banner-crop tiled; now a single fixed full-bleed
   image with `background-repeat:no-repeat` (`css/styles.css` + `js/pages/home.js`).
+- **Explore category filters updated (2026-07-20)** — redesigned the horizontal category buttons on [destinations.html](file:///d:/trip_planner/destinations.html): increased size to `text-sm` (`px-5 py-2`) and added custom active scaling/shadow styles. Extended standard list (All + 6 types) with 4 new popular custom filters (**Road Trips**, **Camping**, **Forts**, and **Ecotourism**) dynamically matching features from the JSON database (temple exclusion for Road Trips, trekking/adventure inclusion for Camping).
 
 ---
 
