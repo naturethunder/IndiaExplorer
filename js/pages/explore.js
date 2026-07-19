@@ -26,6 +26,20 @@ const SUMMARIES = idx.destinations;
 const { priceTiers: PRICE_TIERS, types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
 const typeIcon = new Map(DESTINATION_TYPES.map((t) => [t.id, t.icon]));
 
+const CATEGORY_FILTERS = [
+  { id: '', label: 'All', icon: '🗺️' },
+  { id: 'hill_station', label: 'Hill Stations', icon: '🏔️' },
+  { id: 'beach', label: 'Beaches', icon: '🏖️' },
+  { id: 'heritage', label: 'Heritage', icon: '🏛️' },
+  { id: 'wildlife', label: 'Wildlife', icon: '🐯' },
+  { id: 'spiritual', label: 'Spiritual', icon: '🕌' },
+  { id: 'adventure', label: 'Adventure', icon: '⛺' },
+  { id: 'road_trips', label: 'Road Trips', icon: '🚗' },
+  { id: 'camping', label: 'Camping', icon: '🏕️' },
+  { id: 'forts', label: 'Forts', icon: '🏰' },
+  { id: 'ecotourism', label: 'Ecotourism', icon: '🌳' },
+];
+
 // ─── Filter state ──────────────────────────────────────
 let filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
 let sortBy = 'rating';
@@ -40,18 +54,12 @@ const sortSel = document.getElementById('sortBy');
 // ─── Build static filter controls ──────────────────────
 const typeWrap = document.getElementById('typeFilter');
 function typeBtnClass(active) {
-  return 'shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all whitespace-nowrap ' +
-    (active ? 'border-primary text-primary bg-orange-50' : 'border-gray-200 text-gray-600 hover:border-gray-300');
+  return 'shrink-0 px-5 py-2 rounded-full border text-sm font-semibold transition-all whitespace-nowrap ' +
+    (active ? 'border-primary text-primary bg-orange-50/50 shadow-sm scale-102 font-bold' : 'border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50');
 }
 function renderTypeButtons() {
   typeWrap.innerHTML = '';
-  const all = document.createElement('button');
-  all.className = typeBtnClass(filters.type === '');
-  all.textContent = '🗺️ All';
-  all.dataset.type = '';
-  all.addEventListener('click', function () { filters.type = ''; apply(); });
-  typeWrap.appendChild(all);
-  DESTINATION_TYPES.forEach(function (t) {
+  CATEGORY_FILTERS.forEach(function (t) {
     const b = document.createElement('button');
     b.className = typeBtnClass(filters.type === t.id);
     b.textContent = t.icon + ' ' + t.label;
@@ -134,7 +142,27 @@ function apply() {
         d.features.some(function (f) { return f.toLowerCase().includes(q); });
     });
   }
-  if (filters.type) results = results.filter(function (d) { return d.type === filters.type; });
+  if (filters.type) {
+    if (filters.type === 'road_trips') {
+      results = results.filter(function (d) {
+        return d.features.some(function (f) { return f.toLowerCase() === 'ghats'; }) || d.type === 'adventure';
+      });
+    } else if (filters.type === 'camping') {
+      results = results.filter(function (d) {
+        return d.features.some(function (f) { return f.toLowerCase().includes('camp'); });
+      });
+    } else if (filters.type === 'forts') {
+      results = results.filter(function (d) {
+        return d.features.some(function (f) { return f.toLowerCase().includes('fort'); });
+      });
+    } else if (filters.type === 'ecotourism') {
+      results = results.filter(function (d) {
+        return d.features.some(function (f) { return f.toLowerCase().includes('nature') || f.toLowerCase().includes('birding'); });
+      });
+    } else {
+      results = results.filter(function (d) { return d.type === filters.type; });
+    }
+  }
   if (filters.state) results = results.filter(function (d) { return d.state === filters.state; });
   if (filters.region) results = results.filter(function (d) { return zoneOf(d.state) === filters.region; });
   if (filters.season) results = results.filter(function (d) { return seasonsOf(d.bestTime.months).indexOf(filters.season) >= 0; });
@@ -229,7 +257,7 @@ const params = new URLSearchParams(window.location.search);
 if (params.get('search')) { filters.search = params.get('search'); searchInput.value = filters.search; }
 if (params.get('type')) {
   const wantType = params.get('type');
-  if (DESTINATION_TYPES.some(function (t) { return t.id === wantType; })) filters.type = wantType;
+  if (CATEGORY_FILTERS.some(function (t) { return t.id === wantType; })) filters.type = wantType;
 }
 if (params.get('state') && INDIA_STATES.indexOf(params.get('state')) >= 0) {
   filters.state = params.get('state'); stateSel.value = filters.state;
