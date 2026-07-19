@@ -2026,7 +2026,7 @@ textarea.form-input {
 
 @media (min-width: 1024px) {
   .discover-row {
-    grid-template-columns: 1.6fr 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr 1fr;
     gap: 2rem;
     align-items: start;
     min-height: 420px;

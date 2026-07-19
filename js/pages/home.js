@@ -301,8 +301,8 @@ function search(q) {
   const rest = summaries
     .filter((d) => d.bestTime.months.includes(month) && (!featured || d.slug !== featured.slug))
     .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
-    .slice(0, featured ? 3 : 4);
-  const picks = (featured ? [featured].concat(rest) : rest).slice(0, 4);
+    .slice(0, featured ? 2 : 3);
+  const picks = (featured ? [featured].concat(rest) : rest).slice(0, 3);
   el.innerHTML = picks.map((d) => {
     const thumb = cardThumb(d);
     return '<a href="' + destUrl(d.slug) + '" class="rail-item">' +
