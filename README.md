@@ -65,7 +65,8 @@ trip_planner/
 ├── ai-finder.html          # ✨ AI Trip Finder — natural-language matcher, fully local & keyless
 ├── destination.html        # ⭐ The ONE real detail page (all 2,355 render via ?slug=, featuring 5-real-image overview carousel)
 ├── about / privacy / terms / contact.html   # Company pages (contact form, no backend)
-├── <slug>.html  (×2355)    # Redirect stubs → destination.html?slug=<slug>
+├── stubs/
+│   └── <slug>.html  (×2355)  # Redirect stubs → destination.html?slug=<slug>
 │
 ├── css/
 │   ├── styles.css          # Custom component classes (.card, .btn, carousels, …)

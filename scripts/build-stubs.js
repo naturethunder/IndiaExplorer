@@ -47,9 +47,22 @@ function stubHTML(d) {
     '</html>\n';
 }
 
+const STUBS_DIR = path.join(ROOT, 'stubs');
+if (!fs.existsSync(STUBS_DIR)) {
+  fs.mkdirSync(STUBS_DIR, { recursive: true });
+}
+
 let n = 0;
+let cleaned = 0;
+
 idx.destinations.forEach(function (d) {
-  fs.writeFileSync(path.join(ROOT, d.slug + '.html'), stubHTML(d));
+  const rootFile = path.join(ROOT, d.slug + '.html');
+  if (fs.existsSync(rootFile)) {
+    try { fs.unlinkSync(rootFile); cleaned++; } catch (e) {}
+  }
+  fs.writeFileSync(path.join(STUBS_DIR, d.slug + '.html'), stubHTML(d));
   n++;
 });
-console.log('Wrote ' + n + ' redirect stubs → destination.html?slug=<slug>');
+
+console.log('Wrote ' + n + ' redirect stubs into stubs/ directory (cleaned ' + cleaned + ' root-level stubs) → destination.html?slug=<slug>');
+

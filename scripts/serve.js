@@ -39,11 +39,19 @@ const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/;
 
 function checkFile(relPath) {
   const fullPath = path.normalize(path.join(ROOT, relPath));
-  if (!fullPath.startsWith(ROOT)) return null;
-  try {
-    const st = fs.statSync(fullPath);
-    if (st.isFile()) return fullPath;
-  } catch (e) {}
+  if (fullPath.startsWith(ROOT)) {
+    try {
+      const st = fs.statSync(fullPath);
+      if (st.isFile()) return fullPath;
+    } catch (e) {}
+  }
+  const stubPath = path.normalize(path.join(ROOT, 'stubs', relPath));
+  if (stubPath.startsWith(path.join(ROOT, 'stubs'))) {
+    try {
+      const st = fs.statSync(stubPath);
+      if (st.isFile()) return stubPath;
+    } catch (e) {}
+  }
   return null;
 }
 
@@ -63,17 +71,17 @@ const server = http.createServer(function (req, res) {
     // 3. Clean path without trailing slash
     const cleanPath = urlPath.endsWith('/') && urlPath !== '/' ? urlPath.slice(0, -1) : urlPath;
 
-    // 4. Try appending .html (e.g. /destinations -> /destinations.html, /about -> /about.html)
+    // 4. Try appending .html (e.g. /destinations -> /destinations.html, /about -> /about.html, /stubs/goa.html)
     if (!targetFile && !path.extname(cleanPath)) {
-      targetFile = checkFile(cleanPath + '.html');
+      targetFile = checkFile(cleanPath + '.html') || checkFile('/stubs' + cleanPath + '.html');
     }
 
-    // 5. Handle nested destination paths (e.g. /destination/goa -> /goa.html or /destination.html)
+    // 5. Handle nested destination paths (e.g. /destination/goa -> /stubs/goa.html or /destination.html)
     if (!targetFile && (cleanPath.startsWith('/destination/') || cleanPath.startsWith('/destinations/'))) {
       const parts = cleanPath.split('/').filter(Boolean);
       if (parts.length === 2) {
         const slug = parts[1];
-        targetFile = checkFile('/' + slug + '.html') || checkFile('/destination.html');
+        targetFile = checkFile('/stubs/' + slug + '.html') || checkFile('/' + slug + '.html') || checkFile('/destination.html');
       }
     }
 
