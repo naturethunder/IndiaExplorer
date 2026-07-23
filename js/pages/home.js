@@ -6,7 +6,7 @@ import { fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
-import { esc, inr } from '../utils/format.js';
+import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { resolveState, MONTH_PICKS } from '../data/taxonomy.js';
 
@@ -354,6 +354,107 @@ function search(q) {
       railEl.innerHTML = picks.map((d) => trendCardHTML(d)).join('');
       railEl.style.opacity = '1';
     }, 120);
+
+    renderMonthCarousel(monthNum);
+  }
+
+  let monthCarTimer = null;
+  let currentCarIndex = 0;
+
+  function renderMonthCarousel(monthNum) {
+    const wrap = document.getElementById('month-carousel-wrap');
+    const slidesEl = document.getElementById('month-carousel-slides');
+    const dotsEl = document.getElementById('monthCarDots');
+    if (!wrap || !slidesEl) return;
+
+    const m = MONTHS.find((x) => x.num === monthNum);
+    const monthName = m ? m.name : 'This Month';
+
+    const top5 = summaries
+      .filter((d) => d.bestTime.months.includes(monthNum))
+      .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
+      .slice(0, 5);
+
+    if (!top5.length) {
+      wrap.style.display = 'none';
+      return;
+    }
+    wrap.style.display = 'block';
+
+    slidesEl.innerHTML = top5.map((d, i) => {
+      const src = (d.heroImage && d.heroImage.src) || (d.image && d.image.src) || '';
+      return '<div class="month-car-slide ' + (i === 0 ? 'is-active' : '') + '" data-slide="' + i + '">' +
+        '<img src="' + esc(src) + '" alt="' + esc(d.title) + '" loading="lazy" ' +
+        'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(d.slug) + '/1200/600\'" />' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent"></div>' +
+        '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
+        '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
+        '🌟 Best in ' + esc(monthName) + ' · Photo ' + (i + 1) + ' of ' + top5.length +
+        '</span>' +
+        '</div>' +
+        '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
+        '<div class="flex items-center gap-2 mb-1.5">' +
+        '<span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-primary text-white uppercase tracking-wider capitalize">' + esc(typeLabel(d.type)) + '</span>' +
+        '<span class="text-amber-400 font-bold text-xs flex items-center gap-1">★ ' + esc(d.rating) + '</span>' +
+        '</div>' +
+        '<h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight drop-shadow-md">' + esc(d.title) + ', ' + esc(d.state) + '</h3>' +
+        '<p class="text-white/80 text-xs sm:text-sm max-w-xl mt-1 line-clamp-2">' + esc(d.short) + '</p>' +
+        '<div class="mt-3 flex items-center gap-3">' +
+        '<a href="destination.html?slug=' + encodeURIComponent(d.slug) + '" class="btn btn-primary btn-sm rounded-full px-5">Explore Destination →</a>' +
+        '<a href="destinations.html?month=' + monthNum + '" class="btn btn-outline text-white border-white/40 hover:bg-white/20 btn-sm rounded-full">View All ' + esc(monthName) + ' Picks</a>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+    }).join('');
+
+    if (dotsEl) {
+      dotsEl.innerHTML = top5.map((_, i) => {
+        return '<span class="month-car-dot ' + (i === 0 ? 'is-active' : '') + '" data-dot="' + i + '"></span>';
+      }).join('');
+    }
+
+    currentCarIndex = 0;
+
+    function goSlide(idx) {
+      currentCarIndex = (idx + top5.length) % top5.length;
+      const slides = slidesEl.querySelectorAll('.month-car-slide');
+      const dots = dotsEl ? dotsEl.querySelectorAll('.month-car-dot') : [];
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === currentCarIndex));
+      dots.forEach((d, i) => d.classList.toggle('is-active', i === currentCarIndex));
+    }
+
+    function startCarTimer() {
+      stopCarTimer();
+      if (top5.length > 1) {
+        monthCarTimer = setInterval(() => goSlide(currentCarIndex + 1), 4000);
+      }
+    }
+
+    function stopCarTimer() {
+      if (monthCarTimer) {
+        clearInterval(monthCarTimer);
+        monthCarTimer = null;
+      }
+    }
+
+    const prevBtn = document.getElementById('monthCarPrev');
+    const nextBtn = document.getElementById('monthCarNext');
+    if (prevBtn) prevBtn.onclick = () => { goSlide(currentCarIndex - 1); startCarTimer(); };
+    if (nextBtn) nextBtn.onclick = () => { goSlide(currentCarIndex + 1); startCarTimer(); };
+
+    if (dotsEl) {
+      dotsEl.querySelectorAll('.month-car-dot').forEach((dot) => {
+        dot.onclick = () => {
+          const idx = parseInt(dot.dataset.dot, 10);
+          if (!isNaN(idx)) { goSlide(idx); startCarTimer(); }
+        };
+      });
+    }
+
+    wrap.onmouseenter = stopCarTimer;
+    wrap.onmouseleave = startCarTimer;
+
+    startCarTimer();
   }
 
   renderMonthPills();

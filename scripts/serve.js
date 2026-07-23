@@ -39,14 +39,15 @@ const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/;
 
 function checkFile(relPath) {
   const fullPath = path.normalize(path.join(ROOT, relPath));
-  if (fullPath.startsWith(ROOT)) {
+  if (fullPath.toLowerCase().startsWith(ROOT.toLowerCase())) {
     try {
       const st = fs.statSync(fullPath);
       if (st.isFile()) return fullPath;
     } catch (e) {}
   }
   const stubPath = path.normalize(path.join(ROOT, 'stubs', relPath));
-  if (stubPath.startsWith(path.join(ROOT, 'stubs'))) {
+  const stubsRoot = path.join(ROOT, 'stubs');
+  if (stubPath.toLowerCase().startsWith(stubsRoot.toLowerCase())) {
     try {
       const st = fs.statSync(stubPath);
       if (st.isFile()) return stubPath;
