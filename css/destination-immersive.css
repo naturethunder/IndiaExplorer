@@ -1,0 +1,988 @@
+/* =========================================================
+   destination-immersive.css — Cinematic immersive theme
+   for the destination detail page.
+   Scoped to body.dest-immersive so other pages are unaffected.
+   ========================================================= */
+
+/* ─── Google Font (Playfair Display — luxury serif) ─────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+/* ─── CSS Custom Properties (immersive overrides) ──────── */
+body.dest-immersive {
+  --imm-glass: rgba(255, 255, 255, 0.10);
+  --imm-glass-strong: rgba(255, 255, 255, 0.14);
+  --imm-glass-border: rgba(255, 255, 255, 0.18);
+  --imm-glass-blur: 18px;
+  --imm-radius: 24px;
+  --imm-text: #FFFFFF;
+  --imm-text-muted: rgba(255, 255, 255, 0.85);
+  --imm-text-subtle: rgba(255, 255, 255, 0.65);
+  --imm-accent: #16A34A;
+  --imm-accent-glow: rgba(22, 163, 74, 0.4);
+  --imm-gold: #F5C542;
+  --imm-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --imm-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+  background: #0a1015;
+  color: var(--imm-text);
+  overflow-x: hidden;
+}
+
+/* ─── LAYER 1: Fixed full-viewport background image ──────── */
+.dest-immersive-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: url('../images/kanatal-immersive-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* ─── LAYER 2: Cinematic gradient overlay ────────────────── */
+.dest-immersive-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 20, 25, 0.25) 0%,
+    rgba(8, 20, 25, 0.45) 40%,
+    rgba(8, 20, 25, 0.65) 100%
+  );
+  pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* ─── LAYER 3: All foreground content above the bg ───────── */
+body.dest-immersive #siteNav {
+  position: static !important;
+  z-index: auto !important;
+}
+
+body.dest-immersive #content,
+body.dest-immersive #notFound,
+body.dest-immersive #placeModal,
+body.dest-immersive .mobile-nav {
+  position: relative;
+  z-index: 2;
+}
+
+body.dest-immersive .skip-link {
+  z-index: 200;
+}
+
+/* ─── NAVBAR — transparent → glassmorphism on scroll ─────── */
+body.dest-immersive .nav-glass {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid transparent;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease,
+              border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+body.dest-immersive .nav-glass a,
+body.dest-immersive .nav-glass button,
+body.dest-immersive .nav-glass .nav-link {
+  position: relative !important;
+  z-index: 100000 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+body.dest-immersive .nav-glass.nav-scrolled {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Nav text white on dark immersive bg */
+body.dest-immersive .nav-glass .font-bold,
+body.dest-immersive .nav-glass .text-gray-900,
+body.dest-immersive .nav-glass .text-gray-700,
+body.dest-immersive .nav-glass .text-gray-400,
+body.dest-immersive .nav-glass a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.dest-immersive .nav-glass .text-primary {
+  color: #4ADE80;
+}
+
+body.dest-immersive .nav-glass .hover\:text-primary:hover {
+  color: #4ADE80;
+}
+
+body.dest-immersive .nav-glass .btn-outline {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+body.dest-immersive .nav-glass .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dest-immersive .nav-glass .btn.btn-primary {
+  background: linear-gradient(135deg, #16A34A, #0F766E);
+  box-shadow: 0 4px 15px var(--imm-accent-glow);
+}
+
+body.dest-immersive .nav-glass .btn.btn-primary:hover {
+  box-shadow: 0 6px 25px var(--imm-accent-glow);
+  transform: translateY(-1px);
+}
+
+/* ─── HERO — cinematic centered title ────────────────────── */
+body.dest-immersive .dest-hero {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Hide the original image carousel in the hero — the fixed bg IS the hero */
+body.dest-immersive .dest-hero-img,
+body.dest-immersive .dest-hero-slides,
+body.dest-immersive .dest-hero-overlay,
+body.dest-immersive .hero-car-btn,
+body.dest-immersive .hero-car-dots {
+  display: none !important;
+}
+
+/* Hero title — luxury serif, massive, centered */
+body.dest-immersive #heroTitle {
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  font-weight: 700 !important;
+  font-size: clamp(3rem, 8vw, 5.5rem) !important;
+  letter-spacing: 0.06em !important;
+  color: #fff !important;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+  line-height: 1.05 !important;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+/* The overlay info positioned at bottom — center it instead */
+body.dest-immersive .dest-hero > .absolute {
+  position: relative !important;
+  inset: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+body.dest-immersive .dest-hero > .absolute > div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tagline — premium small caps */
+body.dest-immersive #heroTagline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem) !important;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 2rem;
+}
+
+/* Type and badge as glass chips */
+body.dest-immersive #heroType,
+body.dest-immersive #heroBadge {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #fff !important;
+  padding: 0.35rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+/* ─── STATS BAR — glass chips instead of dark band ───────── */
+body.dest-immersive .bg-gray-900.text-white {
+  background: transparent !important;
+}
+
+body.dest-immersive #statsBar {
+  justify-content: center;
+  gap: 1rem !important;
+  padding: 0.5rem 0;
+}
+
+body.dest-immersive #statsBar > div {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+body.dest-immersive #statsBar .text-gray-300 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dest-immersive #statsBar .text-amber-400 {
+  color: var(--imm-gold);
+}
+
+/* ─── STICKY TABS — glass panel ──────────────────────────── */
+body.dest-immersive .sticky-dest-nav {
+  background: rgba(10, 16, 21, 0.6) !important;
+  backdrop-filter: blur(22px) saturate(130%);
+  -webkit-backdrop-filter: blur(22px) saturate(130%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dest-immersive .tab-nav {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dest-immersive .tab-btn {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dest-immersive .tab-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.dest-immersive .tab-btn.active {
+  color: #4ADE80;
+  border-bottom-color: #4ADE80;
+}
+
+body.dest-immersive .tab-btn .bg-primary {
+  background: #16A34A;
+}
+
+/* ─── GLASS CARD — universal content container ───────────── */
+body.dest-immersive .max-w-7xl.mx-auto.px-4.py-8 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* All panels get glass treatment */
+body.dest-immersive .tab-panel {
+  background: var(--imm-glass);
+  backdrop-filter: blur(var(--imm-glass-blur));
+  -webkit-backdrop-filter: blur(var(--imm-glass-blur));
+  border: 1px solid var(--imm-glass-border);
+  border-radius: var(--imm-radius);
+  padding: 2rem;
+  box-shadow: var(--imm-shadow);
+}
+
+/* ─── TEXT COLOR OVERRIDES (white on glass) ───────────────── */
+body.dest-immersive .text-gray-900,
+body.dest-immersive .text-gray-800,
+body.dest-immersive .text-gray-700 {
+  color: var(--imm-text) !important;
+}
+
+body.dest-immersive .text-gray-600,
+body.dest-immersive .text-gray-500 {
+  color: var(--imm-text-muted) !important;
+}
+
+body.dest-immersive .text-gray-400 {
+  color: var(--imm-text-subtle) !important;
+}
+
+body.dest-immersive .text-amber-600,
+body.dest-immersive .text-amber-500,
+body.dest-immersive .text-amber-400 {
+  color: var(--imm-gold) !important;
+}
+
+body.dest-immersive .text-primary {
+  color: #4ADE80 !important;
+}
+
+/* ─── INFO CARDS — glass variant ─────────────────────────── */
+body.dest-immersive .info-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Road note / advisory cards */
+body.dest-immersive .bg-amber-50 {
+  background: rgba(245, 197, 66, 0.12) !important;
+  border-color: rgba(245, 197, 66, 0.3) !important;
+}
+
+body.dest-immersive .text-amber-900 {
+  color: var(--imm-gold) !important;
+}
+
+body.dest-immersive .text-amber-800 {
+  color: rgba(255, 230, 150, 0.9) !important;
+}
+
+/* Live weather card */
+body.dest-immersive .border-emerald-200 {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+body.dest-immersive .bg-emerald-50 {
+  background: rgba(16, 185, 129, 0.1) !important;
+}
+
+body.dest-immersive .text-emerald-700,
+body.dest-immersive .text-emerald-600 {
+  color: #6EE7B7 !important;
+}
+
+/* ─── CONTENT CARDS (places / hotels / overview items) ──── */
+body.dest-immersive .card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.dest-immersive .card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: var(--imm-shadow-lg);
+  transform: translateY(-3px);
+}
+
+/* Overview feature chips */
+body.dest-immersive .bg-orange-50 {
+  background: rgba(251, 146, 60, 0.15) !important;
+}
+
+body.dest-immersive .text-orange-800 {
+  color: #FCD19C !important;
+}
+
+body.dest-immersive .border-orange-200 {
+  border-color: rgba(251, 146, 60, 0.3) !important;
+}
+
+/* Top places preview items */
+body.dest-immersive .bg-gray-50 {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.dest-immersive .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dest-immersive .hover\:bg-orange-50:hover {
+  background: rgba(22, 163, 74, 0.15) !important;
+}
+
+body.dest-immersive .hover\:border-orange-200:hover {
+  border-color: rgba(22, 163, 74, 0.3) !important;
+}
+
+/* Hidden gem cards */
+body.dest-immersive .bg-white\/90 {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #E9D5FF !important;
+}
+
+body.dest-immersive .text-purple-700 {
+  color: #C4B5FD !important;
+}
+
+/* ─── FILTER BUTTONS — glass chips ───────────────────────── */
+body.dest-immersive .bg-white.text-gray-600.border-gray-200,
+body.dest-immersive [data-place].bg-white,
+body.dest-immersive [data-tier].bg-white {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+body.dest-immersive [data-place].bg-primary,
+body.dest-immersive [data-tier].bg-gray-900 {
+  background: var(--imm-accent) !important;
+  border-color: var(--imm-accent) !important;
+}
+
+/* Tier color badges — make them glass-friendly */
+body.dest-immersive .bg-emerald-100,
+body.dest-immersive .bg-blue-100,
+body.dest-immersive .bg-indigo-100,
+body.dest-immersive .bg-violet-100,
+body.dest-immersive .bg-orange-100,
+body.dest-immersive .bg-rose-100,
+body.dest-immersive .bg-amber-100 {
+  opacity: 0.9;
+}
+
+/* ─── STAYS CARDS ────────────────────────────────────────── */
+body.dest-immersive .card .border-t.border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dest-immersive .amenity-chip {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body.dest-immersive .bg-blue-50 {
+  background: rgba(59, 130, 246, 0.15) !important;
+}
+
+body.dest-immersive .text-blue-700 {
+  color: #93C5FD !important;
+}
+
+/* Stays "Check Availability" button */
+body.dest-immersive .card .btn.btn-primary {
+  background: linear-gradient(135deg, #16A34A, #0F766E);
+  box-shadow: 0 4px 15px var(--imm-accent-glow);
+}
+
+body.dest-immersive .card .btn.btn-primary:hover {
+  box-shadow: 0 8px 25px var(--imm-accent-glow);
+}
+
+/* ─── ROUTE TABLE — glass styling ────────────────────────── */
+body.dest-immersive .bg-white.rounded-2xl.border.border-gray-200 {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dest-immersive .route-table th {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dest-immersive .route-table td {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+body.dest-immersive .route-table tr:hover td {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body.dest-immersive .px-5.py-3.bg-gray-50.border-b.border-gray-200 {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dest-immersive .form-input {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+body.dest-immersive .form-input:focus {
+  border-color: #4ADE80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+}
+
+/* Info cards in "How to Reach" */
+body.dest-immersive .info-card.text-center .info-card-icon {
+  background: rgba(22, 163, 74, 0.2);
+}
+
+/* ─── MAP PANEL ──────────────────────────────────────────── */
+body.dest-immersive #leaflet-map {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 20px;
+}
+
+body.dest-immersive .text-xs.text-gray-400.mt-2.text-center {
+  color: var(--imm-text-subtle) !important;
+}
+
+/* ─── SIMILAR DESTINATIONS — glass treatment ─────────────── */
+body.dest-immersive .bg-gray-50.py-12.mt-8 {
+  background: transparent !important;
+  padding-top: 4rem;
+}
+
+body.dest-immersive .bg-gray-50.py-12.mt-8 .text-xl {
+  color: var(--imm-text) !important;
+}
+
+body.dest-immersive .bg-gray-50.py-12.mt-8 .text-sm {
+  color: var(--imm-text-muted) !important;
+}
+
+body.dest-immersive .bg-gray-50.py-12.mt-8 .text-xs {
+  color: var(--imm-text-subtle) !important;
+}
+
+body.dest-immersive .bg-gray-50.py-12.mt-8 .rounded-xl {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ─── IMAGE STYLES — rounded, shadow, glass border ──────── */
+body.dest-immersive .card img,
+body.dest-immersive [data-topidx] img,
+body.dest-immersive [data-uridx] img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dest-immersive .card img:hover {
+  transform: scale(1.05);
+}
+
+body.dest-immersive .card img {
+  transition: transform 0.4s ease;
+}
+
+/* ─── BUTTONS — emerald gradient glass ───────────────────── */
+body.dest-immersive .btn.btn-primary {
+  background: linear-gradient(135deg, #16A34A 0%, #0F766E 100%);
+  box-shadow: 0 4px 18px var(--imm-accent-glow);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+body.dest-immersive .btn.btn-primary:hover {
+  box-shadow: 0 8px 30px var(--imm-accent-glow);
+  transform: translateY(-2px);
+}
+
+body.dest-immersive .btn-outline {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+body.dest-immersive .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #4ADE80;
+  color: #4ADE80;
+}
+
+/* data-goto links */
+body.dest-immersive [data-goto] {
+  color: #4ADE80 !important;
+}
+
+body.dest-immersive [data-goto]:hover {
+  color: #6EE7B7 !important;
+}
+
+/* ─── FOOTER — cinematic fade from scenic to dark ────────── */
+body.dest-immersive #siteFooter {
+  position: relative;
+  z-index: 2;
+}
+
+body.dest-immersive #siteFooter::before {
+  content: '';
+  display: block;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(10, 15, 20, 0.5) 40%,
+    rgba(10, 15, 20, 0.85) 70%,
+    #0F172A 100%
+  );
+  margin-top: -200px;
+  pointer-events: none;
+}
+
+body.dest-immersive .footer {
+  background: #0F172A;
+}
+
+/* ─── MOBILE NAV — glass ─────────────────────────────────── */
+body.dest-immersive .mobile-nav {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dest-immersive .mobile-nav-btn {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dest-immersive .mobile-nav-btn:hover,
+body.dest-immersive .mobile-nav-btn.active {
+  color: #4ADE80;
+}
+
+/* ─── PLACE MODAL — glass overlay ────────────────────────── */
+body.dest-immersive #placeModal .bg-white {
+  background: rgba(20, 30, 40, 0.92) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dest-immersive #placeModal .text-2xl,
+body.dest-immersive #placeModal .font-bold {
+  color: var(--imm-text) !important;
+}
+
+body.dest-immersive #placeModal .text-gray-600,
+body.dest-immersive #placeModal .text-gray-500 {
+  color: var(--imm-text-muted) !important;
+}
+
+body.dest-immersive #placeModal .text-gray-400 {
+  color: var(--imm-text-subtle) !important;
+}
+
+body.dest-immersive #placeModal .rounded-xl.border.border-emerald-200.bg-emerald-50 {
+  background: rgba(16, 185, 129, 0.1) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+
+body.dest-immersive #placeModal .badge {
+  background: rgba(255, 180, 50, 0.2) !important;
+  border-color: rgba(255, 180, 50, 0.3) !important;
+  color: #FCD19C !important;
+}
+
+body.dest-immersive #placeModal .font-medium.text-gray-900 {
+  color: var(--imm-text) !important;
+}
+
+/* ─── SCROLLBAR — dark variant ───────────────────────────── */
+body.dest-immersive::-webkit-scrollbar-track {
+  background: rgba(10, 16, 21, 0.8);
+}
+
+body.dest-immersive::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+body.dest-immersive::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ─── SCROLL REVEAL — panels are visible, similar section fades in ── */
+body.dest-immersive .tab-panel {
+  opacity: 1;
+  transform: none;
+}
+
+body.dest-immersive .bg-gray-50.py-12.mt-8 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: immFadeUp 0.7s 0.3s ease-out forwards;
+}
+
+@keyframes immFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── UNDERLINE LINKS — green on glass ───────────────────── */
+body.dest-immersive a.underline,
+body.dest-immersive a.hover\:underline:hover {
+  color: #6EE7B7;
+}
+
+body.dest-immersive a.text-primary {
+  color: #4ADE80 !important;
+}
+
+/* ─── MISC OVERRIDES ─────────────────────────────────────── */
+/* White bg sections → transparent */
+body.dest-immersive .bg-white {
+  background: transparent !important;
+}
+
+/* Border utilities → subtle white */
+body.dest-immersive .border-gray-200,
+body.dest-immersive .border-b.border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Green text on green backgrounds */
+body.dest-immersive .text-green-600 {
+  color: #6EE7B7 !important;
+}
+
+/* Price text */
+body.dest-immersive .text-xl.font-bold.text-gray-900 {
+  color: var(--imm-text) !important;
+}
+
+body.dest-immersive .text-gray-400.text-sm {
+  color: var(--imm-text-subtle) !important;
+}
+
+/* ─── RESPONSIVE — mobile optimizations ──────────────────── */
+@media (max-width: 768px) {
+  /* Transform-based parallax for mobile (smoother than fixed) */
+  .dest-immersive-bg {
+    position: absolute;
+    height: 200vh;
+    transform: translate3d(0, 0, 0);
+  }
+
+  body.dest-immersive .dest-hero {
+    height: 85vh;
+    min-height: 500px;
+  }
+
+  body.dest-immersive #heroTitle {
+    font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  body.dest-immersive .tab-panel {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+
+  body.dest-immersive #statsBar > div {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.dest-immersive #heroTitle {
+    font-size: clamp(2rem, 12vw, 3rem) !important;
+  }
+
+  body.dest-immersive #heroTagline {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* ─── PERFORMANCE — GPU acceleration ─────────────────────── */
+/* NOTE: Do NOT apply transform to content elements — it creates stacking
+   contexts that break position:fixed on the modal (it would be positioned
+   relative to the transformed ancestor instead of the viewport). */
+body.dest-immersive .dest-immersive-bg,
+body.dest-immersive .dest-immersive-overlay {
+  will-change: transform;
+}
+
+/* ─── MODAL — always fixed to viewport, above EVERYTHING (z-index: 200000) ────── */
+body.dest-immersive #placeModal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 200000 !important;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem !important;
+}
+
+body.dest-immersive #placeModal[style*="flex"] {
+  display: flex !important;
+}
+
+body.dest-immersive #placeBackdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+body.dest-immersive #placeModal > .relative {
+  position: relative !important;
+  z-index: 2 !important;
+  max-height: calc(100vh - 3rem) !important;
+  overflow-y: auto !important;
+}
+
+body.dest-immersive #placeClose {
+  position: absolute !important;
+  top: 0.75rem !important;
+  right: 0.75rem !important;
+  z-index: 30 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background: rgba(0, 0, 0, 0.65) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 9999px !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.1rem !important;
+  line-height: 1 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.2s ease !important;
+}
+
+body.dest-immersive #placeClose:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  transform: scale(1.05) !important;
+}
+
+/* ─── REDUCED MOTION ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  body.dest-immersive .tab-panel,
+  body.dest-immersive .bg-gray-50.py-12.mt-8 {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .dest-immersive-bg {
+    position: fixed;
+  }
+}
+
+/* ══════════════════ DESTINATION OVERVIEW 5-REAL-IMAGE CAROUSEL ══════════════════ */
+.dest-ov-carousel {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 640px) {
+  .dest-ov-carousel {
+    height: 420px;
+  }
+}
+
+.dest-ov-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.dest-ov-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.dest-ov-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+.dest-ov-slide.is-active img {
+  transform: scale(1.04);
+}
+
+.dest-ov-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 25;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.dest-ov-btn:hover {
+  background: rgba(22, 163, 74, 0.9);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.dest-ov-prev {
+  left: 1rem;
+}
+
+.dest-ov-next {
+  right: 1rem;
+}
+
+.dest-ov-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dest-ov-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dest-ov-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dest-ov-dot.is-active {
+  width: 1.75rem;
+  background-color: #16a34a;
+  box-shadow: 0 0 10px rgba(22, 163, 74, 0.7);
+}
+

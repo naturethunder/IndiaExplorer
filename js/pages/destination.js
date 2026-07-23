@@ -253,7 +253,101 @@ function main(dest, idx) {
       '</div>'
     ) : '';
 
+    // ─── 5 Real Images Carousel for Overview Panel ──────
+    function get5RealPhotos() {
+      const photos = [];
+      if (dest.heroImage && dest.heroImage.src) {
+        photos.push({
+          src: dest.heroImage.src,
+          title: dest.title + ' — ' + (dest.tagline || dest.state),
+          subtitle: dest.state + ' · Main View',
+          category: dest.type
+        });
+      } else if (dest.image && dest.image.src) {
+        photos.push({
+          src: dest.image.src,
+          title: dest.title,
+          subtitle: dest.state,
+          category: dest.type
+        });
+      }
+
+      (places || []).forEach(function (p) {
+        if (photos.length < 5 && p.image && p.image.src) {
+          photos.push({
+            src: p.image.src,
+            title: p.name,
+            subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || ''),
+            category: p.category || 'attraction'
+          });
+        }
+      });
+
+      (dest.gallery || []).forEach(function (g) {
+        const srcUrl = typeof g === 'string' ? g : g.src;
+        if (photos.length < 5 && srcUrl) {
+          photos.push({
+            src: srcUrl,
+            title: (typeof g === 'object' && g.title) || dest.title,
+            subtitle: (typeof g === 'object' && g.caption) || dest.state,
+            category: 'gallery'
+          });
+        }
+      });
+
+      let i = photos.length;
+      while (photos.length < 5) {
+        photos.push({
+          src: 'https://picsum.photos/seed/' + encodeURIComponent(dest.slug) + '-' + i + '/1200/600',
+          title: dest.title + ' Landscape Spot #' + (i + 1),
+          subtitle: dest.state + ' View',
+          category: 'scenic'
+        });
+        i++;
+      }
+      return photos.slice(0, 5);
+    }
+
+    const real5Photos = get5RealPhotos();
+
+    const ovCarouselHTML =
+      '<div class="dest-ov-carousel group" id="destOvCarouselWrap">' +
+        '<div id="destOvTrack" class="relative w-full h-full">' +
+          real5Photos.map(function (ph, idx) {
+            return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '">' +
+              '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="lazy" ' +
+                'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(dest.slug) + idx + '/1200/600\'" />' +
+              '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
+              '<!-- Counter -->' +
+              '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
+                '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
+                  '📸 Real Photo ' + (idx + 1) + ' of 5 · ' + esc(dest.title) +
+                '</span>' +
+              '</div>' +
+              '<!-- Slide Caption -->' +
+              '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
+                '<span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500 text-white uppercase tracking-wider mb-1 inline-block capitalize">' +
+                  esc((ph.category || 'scenic').replace('_', ' ')) +
+                '</span>' +
+                '<h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight drop-shadow-md">' + esc(ph.title) + '</h3>' +
+                '<p class="text-white/80 text-xs sm:text-sm max-w-lg mt-0.5">' + esc(ph.subtitle) + '</p>' +
+              '</div>' +
+            '</div>';
+          }).join('') +
+        '</div>' +
+        '<!-- Arrows -->' +
+        '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo">‹</button>' +
+        '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo">›</button>' +
+        '<!-- 5 Dots -->' +
+        '<div id="destOvDots" class="dest-ov-dots">' +
+          real5Photos.map(function (_, i) {
+            return '<span class="dest-ov-dot ' + (i === 0 ? 'is-active' : '') + '" data-ovdot="' + i + '"></span>';
+          }).join('') +
+        '</div>' +
+      '</div>';
+
     document.getElementById('panel-overview').innerHTML =
+      ovCarouselHTML +
       '<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">' +
         '<div class="lg:col-span-2 space-y-6">' +
           '<div><h2 class="text-xl font-bold text-gray-900 mb-3">About ' + esc(dest.title) + '</h2>' +
@@ -288,6 +382,43 @@ function main(dest, idx) {
             '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Note</p><p class="text-amber-800 text-xs leading-relaxed">' + esc(reach.roadNote) + '</p></div></div></div>' +
         '</div>' +
       '</div>' + gemsSection;
+
+    // Wire overview 5-real-image photo carousel controls
+    (function wireOvCarousel() {
+      const wrap = document.getElementById('destOvCarouselWrap');
+      const prev = document.getElementById('destOvPrev');
+      const next = document.getElementById('destOvNext');
+      const dots = document.querySelectorAll('#destOvDots .dest-ov-dot');
+      const slides = document.querySelectorAll('#destOvTrack .dest-ov-slide');
+      if (!wrap || !slides.length) return;
+
+      let cur = 0;
+      let timer = null;
+
+      function go(idx) {
+        cur = (idx + slides.length) % slides.length;
+        slides.forEach((s, i) => s.classList.toggle('is-active', i === cur));
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === cur));
+      }
+
+      function start() { stop(); timer = setInterval(() => go(cur + 1), 4000); }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+      if (prev) prev.addEventListener('click', () => { go(cur - 1); start(); });
+      if (next) next.addEventListener('click', () => { go(cur + 1); start(); });
+
+      dots.forEach((d) => {
+        d.addEventListener('click', () => {
+          const i = parseInt(d.getAttribute('data-ovdot'), 10);
+          if (!isNaN(i)) { go(i); start(); }
+        });
+      });
+
+      wrap.addEventListener('mouseenter', stop);
+      wrap.addEventListener('mouseleave', start);
+
+      start();
+    })();
 
     // wire the "Underrated Gems" cards: open the place modal
     document.querySelectorAll('#panel-overview [data-uridx]').forEach(function (card) {
@@ -472,8 +603,14 @@ function main(dest, idx) {
       const panel = document.getElementById('panel-' + n);
       if (panel) panel.style.display = (n === name) ? 'block' : 'none';
     });
+    const targetPanel = document.getElementById('panel-' + name);
     const nav = document.querySelector('.sticky-dest-nav');
-    window.scrollTo({ top: nav ? nav.offsetTop : 0, behavior: 'smooth' });
+    if (targetPanel && nav) {
+      const navHeight = nav.offsetHeight || 50;
+      const offset = 64 + navHeight + 16;
+      const targetY = Math.max(0, targetPanel.getBoundingClientRect().top + window.pageYOffset - offset);
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
+    }
     if (name === 'map') initMap();
   }
   document.querySelectorAll('.tab-btn').forEach(function (b) {

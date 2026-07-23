@@ -37,36 +37,68 @@ const MIME = {
 // Text-ish assets that compress well (JSON manifest is ~2 MB → ~290 KB gzipped).
 const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/;
 
+function checkFile(relPath) {
+  const fullPath = path.normalize(path.join(ROOT, relPath));
+  if (!fullPath.startsWith(ROOT)) return null;
+  try {
+    const st = fs.statSync(fullPath);
+    if (st.isFile()) return fullPath;
+  } catch (e) {}
+  return null;
+}
+
 const server = http.createServer(function (req, res) {
   try {
-    let urlPath = decodeURIComponent(new URL(req.url, 'http://x').pathname);
-    if (urlPath.endsWith('/')) urlPath += 'index.html';
+    const parsedUrl = new URL(req.url, 'http://localhost:' + PORT);
+    let urlPath = decodeURIComponent(parsedUrl.pathname);
 
-    const file = path.normalize(path.join(ROOT, urlPath));
-    // never escape the site root
-    if (!file.startsWith(ROOT)) { res.writeHead(403); res.end('Forbidden'); return; }
+    // 1. Direct file match
+    let targetFile = checkFile(urlPath);
 
-    fs.stat(file, function (err, st) {
-      if (err || !st.isFile()) {
-        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-        res.end('404 Not Found: ' + urlPath);
-        return;
+    // 2. Trailing slash (e.g. / -> /index.html, /destinations/ -> /destinations/index.html)
+    if (!targetFile && urlPath.endsWith('/')) {
+      targetFile = checkFile(urlPath + 'index.html');
+    }
+
+    // 3. Clean path without trailing slash
+    const cleanPath = urlPath.endsWith('/') && urlPath !== '/' ? urlPath.slice(0, -1) : urlPath;
+
+    // 4. Try appending .html (e.g. /destinations -> /destinations.html, /about -> /about.html)
+    if (!targetFile && !path.extname(cleanPath)) {
+      targetFile = checkFile(cleanPath + '.html');
+    }
+
+    // 5. Handle nested destination paths (e.g. /destination/goa -> /goa.html or /destination.html)
+    if (!targetFile && (cleanPath.startsWith('/destination/') || cleanPath.startsWith('/destinations/'))) {
+      const parts = cleanPath.split('/').filter(Boolean);
+      if (parts.length === 2) {
+        const slug = parts[1];
+        targetFile = checkFile('/' + slug + '.html') || checkFile('/destination.html');
       }
-      const type = MIME[path.extname(file).toLowerCase()] || 'application/octet-stream';
-      const headers = { 'Content-Type': type, 'Cache-Control': 'no-cache' };
-      const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
-      const stream = fs.createReadStream(file);
-      if (acceptsGzip && COMPRESSIBLE.test(type)) {
-        headers['Content-Encoding'] = 'gzip';
-        headers['Vary'] = 'Accept-Encoding';
-        res.writeHead(200, headers);
-        stream.pipe(zlib.createGzip()).pipe(res);
-      } else {
-        headers['Content-Length'] = st.size;
-        res.writeHead(200, headers);
-        stream.pipe(res);
-      }
-    });
+    }
+
+    if (!targetFile) {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('404 Not Found: ' + urlPath);
+      return;
+    }
+
+    const type = MIME[path.extname(targetFile).toLowerCase()] || 'application/octet-stream';
+    const headers = { 'Content-Type': type, 'Cache-Control': 'no-cache' };
+    const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
+    const stream = fs.createReadStream(targetFile);
+
+    if (acceptsGzip && COMPRESSIBLE.test(type)) {
+      headers['Content-Encoding'] = 'gzip';
+      headers['Vary'] = 'Accept-Encoding';
+      res.writeHead(200, headers);
+      stream.pipe(zlib.createGzip()).pipe(res);
+    } else {
+      const st = fs.statSync(targetFile);
+      headers['Content-Length'] = st.size;
+      res.writeHead(200, headers);
+      stream.pipe(res);
+    }
   } catch (e) {
     res.writeHead(500); res.end('Server error');
   }

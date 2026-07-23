@@ -8,8 +8,13 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/explore-immersive.css" />
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 explore-immersive">
+
+<!-- Immersive fixed background + cinematic overlay -->
+<div class="explore-immersive-bg" aria-hidden="true"></div>
+<div class="explore-immersive-overlay" aria-hidden="true"></div>
 
 <!-- NAVBAR (shared component) -->
 <div id="siteNav"></div>
@@ -103,7 +108,7 @@
       <!-- ── Results ──────────────────────────────────────── -->
       <div class="flex-1 min-w-0">
         <!-- Result count + sort -->
-        <div class="flex items-center justify-between mb-5">
+        <div class="flex items-center justify-between mb-4">
           <p class="text-sm text-gray-600">
             <span id="resultCount" class="font-bold text-gray-900">0</span> destinations found
           </p>
@@ -120,6 +125,14 @@
           </select>
           </div>
         </div>
+
+        <!-- Active filter chips -->
+        <div id="activeFiltersContainer" class="flex flex-wrap items-center gap-2 mb-5 hidden">
+          <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Active Filters:</span>
+          <div id="activeFilterChips" class="flex flex-wrap items-center gap-2"></div>
+          <button id="clearAllFilters" class="text-xs font-semibold text-primary hover:underline ml-1">Clear all</button>
+        </div>
+
 
         <!-- No results -->
         <div id="noResults" class="text-center py-20" style="display:none">
@@ -145,5 +158,12 @@
 <div id="siteMobileNav"></div>
 
 <script type="module" src="js/pages/explore.js"></script>
+<script>
+// Navbar glass transition on scroll (explore immersive theme)
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('.nav-glass');
+  if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+}, { passive: true });
+</script>
 </body>
 </html>

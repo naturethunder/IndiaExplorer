@@ -7,10 +7,15 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/destination-immersive.css" />
   <link rel="stylesheet" href="js/leaflet.css" />
   <script src="js/leaflet.js" defer></script>
 </head>
-<body class="bg-white">
+<body class="bg-white dest-immersive">
+
+<!-- Immersive fixed background + cinematic overlay -->
+<div class="dest-immersive-bg" aria-hidden="true"></div>
+<div class="dest-immersive-overlay" aria-hidden="true"></div>
 
 <a href="#content" class="skip-link">Skip to content</a>
 
@@ -160,5 +165,12 @@
 </nav>
 
 <script type="module" src="js/pages/destination.js"></script>
+<script>
+// Navbar glass transition on scroll (immersive theme)
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('.nav-glass');
+  if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+}, { passive: true });
+</script>
 </body>
 </html>

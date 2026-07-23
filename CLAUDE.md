@@ -276,7 +276,8 @@ if sparse); stats bar + tab counts; `render{Overview,Places,Stays,Reach}()`; laz
 first Map-tab open (`window.L` from the vendored classic script); live-weather IIFE (Open-Meteo,
 10-min refresh, 1s clock, shared `latestWeather`); place modal (`openPlaceModal`, `carToken` race
 guard, 4s autoplay, ←/→ keys, photos from `p.photos` first then live Wikimedia fallback); similar
-grid (from the manifest, same `type`); save/book/mobile-nav buttons. Overview also renders
+grid (from the manifest, same `type`); save/book/mobile-nav buttons. Overview panel renders a
+**5-Real-Image Overview Carousel** (`.dest-ov-carousel`) at the top right above *About [Destination]* (hero landscape photo + top 4 attraction photos, slide counter, dots, arrows, 4s auto-play with pause-on-hover) plus
 "💎 Underrated Gems Nearby" via `pickUnderrated()`/`underratedScore()` (`OFFBEAT_RE` bonus,
 `FAMOUS_RE` penalty, drops the headline attraction, skips Top-Places on ≥8-place destinations).
 Coords come from `dest.weather.lat/lng` (baked at build time) for both weather and the map.
@@ -291,7 +292,7 @@ resets the stylesheet's `background-size:cover`/`no-repeat` and makes an undersi
 hero inline stats, popular-search chips, an 8-item **category strip** (`#category-strip`: Mountains,
 Beaches, Heritage, Wildlife, Road Trips, Temples, Adventure, Camping → `destinations.html?type=…`
 with live per-type counts; spreads all 8 on desktop, horizontal swipe below 640px), search +
-autocomplete, "Best This Month" rail, the **Explore India** map (lazy `import('../components/indiaMap.js')`
+autocomplete, **Monthly Highlights** section (`#monthly-highlights-section`: auto-detects current month with `NOW` badge, 12-month tab selector pills, dynamic title/subtitle/button, and an interactive **5-Image Destination Photo Showcase Carousel** `#month-carousel-wrap` with 4s auto-play, pause-on-hover, dots, and left/right arrows), the **Explore India** map (lazy `import('../components/indiaMap.js')`
 into `#india-map`, needs the generated `data/india-map.js`; hover tooltip appended into
 `.discover-map-inner` which is `position:relative` for it), trending carousel, season/budget/hills/
 explore grids, hero social-proof avatars, carousel wiring, scroll-reveal. The old **trust-badges +
@@ -299,6 +300,9 @@ newsletter panel was removed** (2026-07) — don't reintroduce it without a desi
 Discover-row sizing (2026-07-19): trending cards are 245px wide (~330px tall at 3/4 aspect) to
 match the map (max-height 360px) and Best-in-month columns — keep the three balanced if resizing.
 The navbar's `navSearchBtn` no longer exists; `home.js` still has its guarded listener (no-op).
+
+### `js/pages/explore.js` internals
+Handles `destinations.html` browsing, search, multi-faceted filtering (type, state, region, season, travel month, budget tier), and sorting. Reads URL parameters on load (`?month=7`, `?type=hill_station`, `?state=...`, etc.) and auto-selects corresponding filter controls. Displays a dynamic **Active Filters Bar** (`#activeFiltersContainer`, `#activeFilterChips`) showing chips for all active filters (e.g. `📅 Travel Month: July (✕)`) with single-click removal. Paginated card rendering in batches (`PAGE_SIZE = 60`) prevents DOM thrashing over 2,355 destinations.
 
 ## Styling: static CSS (no CDN)
 

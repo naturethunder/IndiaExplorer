@@ -60,10 +60,10 @@ without adding a single HTML file:
 
 ```
 trip_planner/
-├── index.html              # Home — hero search, category strip, interactive India map, featured grids
-├── destinations.html       # Explore — search + type/price/state/month filters + sort
+├── index.html              # Home — hero search, category strip, interactive month selector & 5-image showcase carousel, interactive India map, featured grids
+├── destinations.html       # Explore — search + type/price/state/month filters + active filter chips + sort
 ├── ai-finder.html          # ✨ AI Trip Finder — natural-language matcher, fully local & keyless
-├── destination.html        # ⭐ The ONE real detail page (all 2,355 render via ?slug=)
+├── destination.html        # ⭐ The ONE real detail page (all 2,355 render via ?slug=, featuring 5-real-image overview carousel)
 ├── about / privacy / terms / contact.html   # Company pages (contact form, no backend)
 ├── <slug>.html  (×2355)    # Redirect stubs → destination.html?slug=<slug>
 │

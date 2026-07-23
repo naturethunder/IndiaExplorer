@@ -25,6 +25,9 @@ Last updated: 2026-07-19.
   the Hills/Beaches/Heritage nav links highlight correctly on the Explore page.
 - **Travel-month coverage normalised** — every month returns an accurate, multi-category set
   (summer hills, monsoon Ghats/Himalaya, year-round pilgrimage). Min any month: 47 destinations.
+- **Interactive Monthly Highlights & 5-Image Showcase Carousel** (`index.html`) — Auto-detects current month (July with `NOW` badge), 12-month tab selector pills (`Jan`–`Dec`), dynamic title/subtitle/button, and an interactive 5-image photo showcase carousel with 4s auto-play, pause-on-hover, dots, and left/right navigation arrows.
+- **Auto-Selected Month Filter & Active Filter Chips** (`destinations.html`) — `destinations.html?month=7` auto-selects Travel Month filter in dropdown and renders an `Active Filters` bar (`📅 Travel Month: July (✕)`) with single-click clear control.
+- **Destination Detail 5-Real-Image Overview Carousel** (`destination.html`) — Every destination page renders a 5-real-image carousel at the top of the Overview panel right above *About [Destination]* (hero landscape photo + top 4 attraction photos, slide counter, dots, arrows, 4s auto-play with pause-on-hover).
 - **Company pages** — About / Privacy / Terms / Contact, with shared nav/footer + mobile nav.
 - **Contact email automation** — the Contact form delivers real email via **Web3Forms**
   (no backend; set `WEB3FORMS_ACCESS_KEY` in `contact.html`). Honeypot blocks bots.

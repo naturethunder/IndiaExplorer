@@ -2026,7 +2026,7 @@ textarea.form-input {
 
 @media (min-width: 1024px) {
   .discover-row {
-    grid-template-columns: 1.25fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     gap: 2rem;
     align-items: start;
     min-height: 420px;
@@ -2132,6 +2132,90 @@ textarea.form-input {
 .discover-map .india-map-panel {
   margin-top: 1rem;
   min-height: 0;
+}
+
+/* Floating State Destination Card on Explore India Map */
+.india-map-card {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 210px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  z-index: 20;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .india-map-card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.map-card-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #0f172a;
+  margin-bottom: 0.45rem;
+}
+
+.map-card-list {
+  list-style: none;
+  margin: 0 0 0.65rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.map-card-list li a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.map-card-list li a:hover {
+  color: var(--primary-dark);
+  transform: translateX(2px);
+}
+
+.map-card-icon {
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.map-card-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #16A34A;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.map-card-all:hover {
+  color: #15803D;
+  gap: 0.5rem;
 }
 
 
@@ -2400,4 +2484,105 @@ textarea.form-input {
 
 .avatar-cluster-img+.avatar-cluster-img {
   margin-left: -12px;
+}
+
+/* ══════════════════ MONTH SELECTOR PILLS & ACTIVE FILTER CHIPS ══════════════════ */
+.month-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.month-pill:hover {
+  border-color: var(--primary-light, #f97316);
+  color: var(--primary, #ea580c);
+  background-color: #fff7ed;
+  transform: translateY(-1px);
+}
+
+.month-pill.is-active {
+  background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+  transform: translateY(-1px);
+}
+
+.month-pill .pill-current-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.125rem 0.375rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.month-pill:not(.is-active) .pill-current-badge {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+/* Active filter chip on Destinations page */
+.active-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  border-radius: 9999px;
+  background-color: #ffedd5;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.active-filter-chip button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: rgba(154, 52, 18, 0.15);
+  color: #9a3412;
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
+
+.active-filter-chip button:hover {
+  background-color: rgba(154, 52, 18, 0.3);
+}
+
+.month-car-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.month-car-dot:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.month-car-dot.is-active {
+  width: 1.75rem;
+  background-color: #ea580c;
+  box-shadow: 0 0 10px rgba(234, 88, 12, 0.6);
 }

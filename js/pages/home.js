@@ -95,8 +95,8 @@ function search(q) {
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +
-      '<span class="hero-stat-icon">' + icon(s.ic, { size: 22 }) + '</span>' +
-      '<span class="hero-stat-body"><strong>' + s.num + '</strong><span class="hero-stat-label">' + esc(s.label) + '</span></span>' +
+    '<span class="hero-stat-icon">' + icon(s.ic, { size: 22 }) + '</span>' +
+    '<span class="hero-stat-body"><strong>' + s.num + '</strong><span class="hero-stat-label">' + esc(s.label) + '</span></span>' +
     '</span>'
   ).join('');
 })();
@@ -144,7 +144,7 @@ function search(q) {
       '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 26 }) + badge + '</span>' +
       '<span class="category-chip-label">' + esc(c.label) + '</span>' +
       '<span class="category-chip-count">' + n + ' places</span>' +
-    '</a>';
+      '</a>';
   }).join('');
 })();
 
@@ -204,8 +204,8 @@ function search(q) {
       head = '<a href="' + stateUrl(state) + '" id="ac-opt-' + (optId++) + '" class="autocomplete-item font-semibold" role="option">' +
         '<span class="autocomplete-img flex items-center justify-center bg-emerald-50 text-primary">' + icon('map-pin', { size: 18 }) + '</span>' +
         '<div class="text-left flex-1 min-w-0">' +
-          '<div class="font-bold text-gray-900 text-sm">All destinations in ' + esc(state) + '</div>' +
-          '<div class="text-xs text-gray-500">' + stateCount(state) + ' places · view listing</div>' +
+        '<div class="font-bold text-gray-900 text-sm">All destinations in ' + esc(state) + '</div>' +
+        '<div class="text-xs text-gray-500">' + stateCount(state) + ' places · view listing</div>' +
         '</div><span class="text-xs text-primary shrink-0">→</span></a>';
     }
     if (!results.length && !head) { close(); live.textContent = q ? 'No results' : ''; return; }
@@ -214,13 +214,13 @@ function search(q) {
       const currentId = optId++;
       return '<a href="' + destUrl(d.slug) + '" id="ac-opt-' + currentId + '" class="autocomplete-item" role="option">' +
         '<img src="' + esc(thumb) + '" alt="" class="autocomplete-img" loading="lazy" ' +
-          'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(d.slug) + '/80/60\'" />' +
+        'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(d.slug) + '/80/60\'" />' +
         '<div class="text-left flex-1 min-w-0">' +
-          '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
-          '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
+        '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
+        '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
         '</div>' +
         '<span class="text-xs text-gray-500 shrink-0">From ₹' + esc(d.minPrice || 0) + '</span>' +
-      '</a>';
+        '</a>';
     }).join('');
     items += '<a href="destinations.html" id="ac-opt-' + (optId++) + '" role="option" class="autocomplete-item justify-center text-sm font-semibold text-primary hover:bg-emerald-50 transition-colors">View all destinations →</a>';
     drop.innerHTML = items;
@@ -287,36 +287,79 @@ function search(q) {
   });
 })();
 
-// ─── Best this month — full-width rail below the map ──────
+// ─── Best this month — interactive monthly highlight section ──────
 (function () {
-  const el = document.getElementById('month-rail');
-  if (!el) return;
-  const month = new Date().getMonth() + 1;
-  const m = MONTHS.find((x) => x.num === month);
-  const nameEl = document.getElementById('railMonthName');
-  if (nameEl) nameEl.textContent = m ? m.name : '';
-  const allEl = document.getElementById('railMonthAll');
-  if (allEl) allEl.href = 'destinations.html?month=' + month;
-  const featured = bySlug.get(MONTH_PICKS[month]);
-  const rest = summaries
-    .filter((d) => d.bestTime.months.includes(month) && (!featured || d.slug !== featured.slug))
-    .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
-    .slice(0, featured ? 2 : 3);
-  const picks = (featured ? [featured].concat(rest) : rest).slice(0, 3);
-  el.innerHTML = picks.map((d) => {
-    const thumb = cardThumb(d);
-    return '<a href="' + destUrl(d.slug) + '" class="rail-item">' +
-      '<img src="' + esc(thumb) + '" alt="" class="rail-thumb" loading="lazy" ' +
-        'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(d.slug) + '/160/160\'" />' +
-      '<div class="rail-body">' +
-        '<p class="rail-title">' + esc(d.title) + '</p>' +
-        '<p class="rail-sub">' + esc(d.state) + '</p>' +
-      '</div>' +
-      '<span class="rail-meta">' + icon('star', { size: 13, fill: true, cls: 'rail-star' }) +
-        esc(d.rating || '—') + '</span>' +
-    '</a>';
-  }).join('');
+  const railEl = document.getElementById('month-rail');
+  const pillsEl = document.getElementById('monthPills');
+  if (!railEl) return;
+
+  const currentRealMonth = new Date().getMonth() + 1;
+  let activeMonth = currentRealMonth;
+
+  function renderMonthPills() {
+    if (!pillsEl) return;
+    pillsEl.innerHTML = MONTHS.map((m) => {
+      const isActive = m.num === activeMonth;
+      const isCurrent = m.num === currentRealMonth;
+      const badge = isCurrent ? '<span class="pill-current-badge">NOW</span>' : '';
+      return '<button type="button" class="month-pill ' + (isActive ? 'is-active' : '') + '" data-month="' + m.num + '">' +
+        '<span>' + esc(m.name) + '</span>' + badge +
+        '</button>';
+    }).join('');
+
+    pillsEl.querySelectorAll('.month-pill').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const selected = parseInt(btn.dataset.month, 10);
+        if (selected && selected !== activeMonth) {
+          activeMonth = selected;
+          renderMonthRail(activeMonth);
+          renderMonthPills();
+        }
+      });
+    });
+  }
+
+  function renderMonthRail(monthNum) {
+    const m = MONTHS.find((x) => x.num === monthNum);
+    const monthName = m ? m.name : 'This Month';
+    const isCurrent = monthNum === currentRealMonth;
+
+    const nameEl = document.getElementById('railMonthName');
+    if (nameEl) nameEl.textContent = monthName;
+
+    const btnNameEl = document.getElementById('railMonthBtnName');
+    if (btnNameEl) btnNameEl.textContent = monthName;
+
+    const subEl = document.getElementById('railMonthSub');
+    if (subEl) {
+      subEl.textContent = isCurrent
+        ? 'Top recommended places to travel right now'
+        : 'Top recommended places to travel in ' + monthName;
+    }
+
+    const allEl = document.getElementById('railMonthAll');
+    if (allEl) allEl.href = 'destinations.html?month=' + monthNum;
+
+    const featuredSlug = MONTH_PICKS[monthNum];
+    const featured = featuredSlug ? bySlug.get(featuredSlug) : null;
+    const rest = summaries
+      .filter((d) => d.bestTime.months.includes(monthNum) && (!featured || d.slug !== featured.slug))
+      .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
+      .slice(0, featured ? 3 : 4);
+
+    const picks = (featured ? [featured].concat(rest) : rest).slice(0, 4);
+
+    railEl.style.opacity = '0.4';
+    setTimeout(() => {
+      railEl.innerHTML = picks.map((d) => trendCardHTML(d)).join('');
+      railEl.style.opacity = '1';
+    }, 120);
+  }
+
+  renderMonthPills();
+  renderMonthRail(activeMonth);
 })();
+
 
 // ─── Explore India interactive map ────────────────────────
 (async function () {
@@ -325,8 +368,16 @@ function search(q) {
   try {
     const { initIndiaMap } = await import('../components/indiaMap.js');
     const countByState = new Map();
-    summaries.forEach((d) => countByState.set(d.state, (countByState.get(d.state) || 0) + 1));
-    initIndiaMap({ svgEl, countByState, stateUrl });
+    const destsByState = new Map();
+    summaries.forEach((d) => {
+      countByState.set(d.state, (countByState.get(d.state) || 0) + 1);
+      if (!destsByState.has(d.state)) destsByState.set(d.state, []);
+      destsByState.get(d.state).push(d);
+    });
+    destsByState.forEach((list) => {
+      list.sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0));
+    });
+    initIndiaMap({ svgEl, countByState, destsByState, stateUrl });
   } catch (err) {
     // Map is progressive enhancement; hide its column cleanly if it fails.
     console.warn('[india-map] failed to init:', err);
@@ -363,15 +414,15 @@ function search(q) {
     const primaryMonth = s.months[0];
     return '<a href="destinations.html?month=' + primaryMonth + '" class="season-card group">' +
       '<img src="' + esc(src) + '" alt="' + esc(s.name) + ' in India" loading="lazy" ' +
-        'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(s.name) + '/480/320\'" />' +
+      'onerror="this.onerror=null;this.src=\'https://picsum.photos/seed/' + encodeURIComponent(s.name) + '/480/320\'" />' +
       '<div class="season-card-overlay"></div>' +
       '<div class="absolute inset-0 p-5 flex flex-col justify-end">' +
-        '<p class="text-white font-bold text-lg leading-tight">' + esc(s.name) + '</p>' +
-        '<p class="text-white/80 text-sm mb-2">' + esc(s.range) + '</p>' +
-        '<span class="season-explore">Explore ' +
-          icon('arrow-right', { size: 15 }) + '</span>' +
+      '<p class="text-white font-bold text-lg leading-tight">' + esc(s.name) + '</p>' +
+      '<p class="text-white/80 text-sm mb-2">' + esc(s.range) + '</p>' +
+      '<span class="season-explore">Explore ' +
+      icon('arrow-right', { size: 15 }) + '</span>' +
       '</div>' +
-    '</a>';
+      '</a>';
   }).join('');
 })();
 
@@ -388,10 +439,10 @@ function search(q) {
   ];
   el.innerHTML = tiers.map((t) =>
     '<a href="destinations.html?maxPrice=' + t.max + '" class="budget-card group">' +
-      '<span class="w-11 h-11 rounded-full ' + t.tint + ' flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">' +
-        icon(t.ic, { size: 22 }) + '</span>' +
-      '<div class="font-bold text-sm text-gray-900">' + esc(t.label) + '</div>' +
-      '<div class="text-xs text-gray-500 mt-1">' + esc(t.sub) + '</div>' +
+    '<span class="w-11 h-11 rounded-full ' + t.tint + ' flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">' +
+    icon(t.ic, { size: 22 }) + '</span>' +
+    '<div class="font-bold text-sm text-gray-900">' + esc(t.label) + '</div>' +
+    '<div class="text-xs text-gray-500 mt-1">' + esc(t.sub) + '</div>' +
     '</a>'
   ).join('');
 })();

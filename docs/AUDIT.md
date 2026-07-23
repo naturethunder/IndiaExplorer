@@ -40,6 +40,15 @@ zero broken links**. The real problems were *truthfulness* (stale catalog counts
 
 ---
 
+## Fixes & Enhancements applied (shipped 2026-07-24)
+
+### 🟢 UX & Feature Enhancements
+1. **Interactive Monthly Highlights & 5-Image Showcase Carousel** — Added auto-current-month detection (`NOW` badge), 12-month tab selector pills (`Jan`–`Dec`), dynamic title/subtitle/button, and an interactive 5-image photo showcase carousel banner (`#month-carousel-wrap`) in `index.html` & `js/pages/home.js`.
+2. **Auto-Selected Month Filter & Active Filter Chips** — `destinations.html?month=7` auto-populates the Travel Month dropdown and renders an `Active Filters` bar (`📅 Travel Month: July (✕)`) with single-click reset capability in `destinations.html` & `js/pages/explore.js`.
+3. **Destination Page 5-Real-Image Overview Carousel** — Positioned a 5-real-image carousel (`.dest-ov-carousel`) at the top of the Overview panel in `destination.html` & `js/pages/destination.js` directly between the sticky section navigation and *About [Destination]*, with glassmorphism styling, slide counter, dot controls, and auto-play logic.
+
+---
+
 ## Fixes applied (shipped 2026-07-11)
 
 ### 🔴 Critical

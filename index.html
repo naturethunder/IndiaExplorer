@@ -198,23 +198,41 @@
               <svg id="india-map" class="india-map-svg"></svg>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Best this month rail -->
-          <div class="discover-best reveal">
-            <div class="flex items-center justify-between mb-5">
-              <h2 class="section-title text-2xl">Best in <span id="railMonthName"></span></h2>
-              <a id="railMonthAll" href="destinations.html" class="section-link">View all
-                <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-            <div id="month-rail" class="month-rail">
-              <!-- Rendered by JS -->
-            </div>
+    <!-- ═══════════════ BEST IN THIS MONTH (Upper side of Travel This Season) ═══════════════ -->
+    <section class="py-14 bg-gray-50 border-t border-b border-gray-200" id="monthly-highlights-section">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 reveal">
+          <div>
+            <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1 flex items-center gap-1.5">
+              <span>📅</span> Monthly Highlights
+            </p>
+            <h2 class="section-title">Best in <span id="railMonthName" class="text-primary"></span></h2>
+            <p class="section-subtitle" id="railMonthSub">Top recommended places to travel right now</p>
           </div>
+          <a id="railMonthAll" href="destinations.html"
+            class="btn btn-outline text-sm self-start sm:self-auto inline-flex items-center gap-2">
+            <span>View All for <span id="railMonthBtnName"></span></span>
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Month selector pills (Jan–Dec) -->
+        <div class="mb-6 overflow-x-auto scrollbar-hide py-1 reveal">
+          <div id="monthPills" class="flex gap-2 min-w-max">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <div id="month-rail" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Rendered by JS -->
         </div>
       </div>
     </section>
