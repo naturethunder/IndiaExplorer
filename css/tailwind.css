@@ -103,6 +103,7 @@ img, video { max-width: 100%; height: auto; }
 .border-emerald-200 { border-color: #a7f3d0; }
 .border-gray-100 { border-color: #f3f4f6; }
 .border-gray-200 { border-color: #e5e7eb; }
+.border-gray-200\/80 { border-color: rgb(229 231 235 / 0.8); }
 .border-gray-800 { border-color: #1f2937; }
 .border-indigo-200 { border-color: #c7d2fe; }
 .border-orange-200 { border-color: #fed7aa; }
@@ -114,6 +115,7 @@ img, video { max-width: 100%; height: auto; }
 .border-white { border-color: #ffffff; }
 .border-white\/20 { border-color: rgb(255 255 255 / 0.2); }
 .border-white\/30 { border-color: rgb(255 255 255 / 0.3); }
+.border-white\/40 { border-color: rgb(255 255 255 / 0.4); }
 .bottom-0 { bottom: 0px; }
 .bottom-2 { bottom: 0.5rem; }
 .bottom-3 { bottom: 0.75rem; }
@@ -171,6 +173,7 @@ img, video { max-width: 100%; height: auto; }
 .h-5 { height: 1.25rem; }
 .h-8 { height: 2rem; }
 .h-9 { height: 2.25rem; }
+.h-\[360px\] { height: 360px; }
 .h-full { height: 100%; }
 .hidden { display: none; }
 .inline { display: inline; }
@@ -293,7 +296,9 @@ img, video { max-width: 100%; height: auto; }
 .ring-2 { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000); }
 .ring-current { --tw-ring-color: currentColor; }
 .ring-offset-1 { --tw-ring-offset-width: 1px; }
+.rounded { border-radius: 0.25rem; }
 .rounded-2xl { border-radius: 1rem; }
+.rounded-3xl { border-radius: 1.5rem; }
 .rounded-full { border-radius: 9999px; }
 .rounded-lg { border-radius: 0.5rem; }
 .rounded-md { border-radius: 0.375rem; }
@@ -304,6 +309,7 @@ img, video { max-width: 100%; height: auto; }
 .shadow-lg { --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
 .shadow-md { --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
 .shadow-sm { --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
+.shadow-xl { --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
 .shrink-0 { flex-shrink: 0; }
 .space-y-1\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.375rem; }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
@@ -407,6 +413,7 @@ img, video { max-width: 100%; height: auto; }
 .hover\:bg-gray-200:hover { background-color: #e5e7eb; }
 .hover\:bg-gray-50:hover { background-color: #f9fafb; }
 .hover\:bg-orange-50:hover { background-color: #fff7ed; }
+.hover\:bg-white\/20:hover { background-color: rgb(255 255 255 / 0.2); }
 .hover\:border-gray-300:hover { border-color: #d1d5db; }
 .hover\:border-orange-200:hover { border-color: #fed7aa; }
 .hover\:border-primary:hover { border-color: #15803D; }
@@ -425,6 +432,7 @@ img, video { max-width: 100%; height: auto; }
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .sm\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .sm\:h-\[400px\] { height: 400px; }
   .sm\:h-full { height: 100%; }
   .sm\:inline { display: inline; }
   .sm\:items-center { align-items: center; }
@@ -433,6 +441,7 @@ img, video { max-width: 100%; height: auto; }
   .sm\:rounded-l-xl { border-top-left-radius: 0.75rem; border-bottom-left-radius: 0.75rem; }
   .sm\:rounded-tr-none { border-top-right-radius: 0px; }
   .sm\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .sm\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
   .sm\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
   .sm\:text-base { font-size: 1rem; line-height: 1.5rem; }
   .sm\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }

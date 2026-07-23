@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-07-19.
+> Last generated: 2026-07-23.
 
 **35 states/UTs · 2,355 destinations**
 
