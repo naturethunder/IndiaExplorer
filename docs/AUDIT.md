@@ -47,6 +47,11 @@ zero broken links**. The real problems were *truthfulness* (stale catalog counts
 2. **Auto-Selected Month Filter & Active Filter Chips** — `destinations.html?month=7` auto-populates the Travel Month dropdown and renders an `Active Filters` bar (`📅 Travel Month: July (✕)`) with single-click reset capability in `destinations.html` & `js/pages/explore.js`.
 3. **Destination Page 5-Real-Image Overview Carousel** — Positioned a 5-real-image carousel (`.dest-ov-carousel`) at the top of the Overview panel in `destination.html` & `js/pages/destination.js` directly between the sticky section navigation and *About [Destination]*, with glassmorphism styling, slide counter, dot controls, and auto-play logic.
 
+### 🧹 Architecture & Root Cleanliness
+4. **Organized 2,355 Redirect Stubs into `stubs/` Directory** — Moved all 2,355 redirect HTML files out of the project root into `stubs/<slug>.html`. Updated `scripts/build-stubs.js` and `scripts/serve.js` so that root-level access (`/ladakh.html`), stub-level access (`/stubs/ladakh.html`), and canonical detail routes (`/destination.html?slug=ladakh`) resolve seamlessly with status `200 OK`.
+5. **Windows Case-Insensitive Path Resolution (`serve.js`)** — Updated `checkFile()` in `scripts/serve.js` to use case-insensitive `.startsWith()` comparisons for drive letters and root paths.
+6. **Zero Console Error Quality Gate** — Fixed missing `typeLabel` import in `js/pages/home.js`. Ran a full browser subagent audit across Homepage, Explore Listing, AI Trip Finder, Destination Guides, Place Modals, and Bookmarks — verified **0 console errors** and 100% test pass.
+
 ---
 
 ## Fixes applied (shipped 2026-07-11)
