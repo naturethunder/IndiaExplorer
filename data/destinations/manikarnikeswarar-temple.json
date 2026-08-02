@@ -1,0 +1,558 @@
+{
+  "slug": "manikarnikeswarar-temple",
+  "title": "Manikarnikeswarar Temple",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Tamil Nadu",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Manikarnikeswarar Temple — spiritual town of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Manikarnikeswarar_temple_east_main_street.jpg",
+    "alt": "Manikarnikeswarar Temple, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Manikarnikeswarar Temple is a Hindu temple located in the town of Thanjavur, India.",
+    "description": "Manikarnikeswarar Temple is a Hindu temple located in the town of Thanjavur, India. The temple was constructed by Serfoji II in 1827. The principal deity is Manikarnikeswarar and the goddess, Mangala Nayaki Amman.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 16447,
+    "minPrice": 900,
+    "distanceFromDelhi": 1992
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 10.7869,
+    "lng": 79.1378,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 184,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 147 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 185,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 148 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 369,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 295 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 410,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 328 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 821,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 657 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 889,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 711 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 921,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 737 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 971,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 777 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1288,
+        "byCar": "21–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1030 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1493,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1194 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1580,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1264 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1596,
+        "byCar": "27–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1277 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1670,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1336 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1715,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1372 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 1856,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1485 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Manikarnikeswarar Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Tiruchirappalli Junction",
+      "distance": 49
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Thanjavur",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Thanjavur (Tamil: [t̪aɲdʑaːʋuːɾ]), also known as Thanjai, previously known as Tanjore, is a city in the Indian state of Tamil Nadu. It is the 12th biggest city in Tamil Nadu.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sidewalk_in_Thanjavur_Tamil_Nadu_India.jpg/1280px-Sidewalk_in_Thanjavur_Tamil_Nadu_India.jpg",
+        "alt": "Thanjavur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sidewalk_in_Thanjavur_Tamil_Nadu_India.jpg/1280px-Sidewalk_in_Thanjavur_Tamil_Nadu_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Thanjavur_in_Tamil_Nadu_%28India%29.svg/1280px-Thanjavur_in_Tamil_Nadu_%28India%29.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282010%29_023.jpg/1280px-Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282010%29_023.jpg"
+      ]
+    },
+    {
+      "name": "Achampatti",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Achampatti is a village in the Budhalur taluk of Thanjavur district, Tamil Nadu, India.",
+      "image": {
+        "src": "https://picsum.photos/seed/Achampatti/400/300",
+        "alt": "Achampatti"
+      },
+      "photos": []
+    },
+    {
+      "name": "Inathukanpatti",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Inathukanpatti, also known as Inayathukkanpatti, is a village in the Thanjavur taluk of Thanjavur district, Tamil Nadu, India.",
+      "image": {
+        "src": "https://picsum.photos/seed/Inathukanpatti/400/300",
+        "alt": "Inathukanpatti"
+      },
+      "photos": []
+    },
+    {
+      "name": "Indalur",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Indalur is a village in the Thanjavur taluk of Thanjavur district, Tamil Nadu, India.",
+      "image": {
+        "src": "https://picsum.photos/seed/Indalur/400/300",
+        "alt": "Indalur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Saraswathi Mahal Library",
+      "category": "heritage",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Saraswathi Mahal Library, also called Thanjavur Maharaja Serfoji's Saraswathi Mahal Library is a library located in Thanjavur (Tanjore), Tamil Nadu, India. It is one of the oldest subsisting libraries in Asia established during 16th century by the Nayak kings of Thanjavur and has on display a rare collection of Palm leaf manuscripts and paper written in Tamil and Sanskrit and a few other indigenous languages of india (especially southern regional languages).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/2013-Sarasvati-Mahal-Library-101.JPG/1280px-2013-Sarasvati-Mahal-Library-101.JPG",
+        "alt": "Saraswathi Mahal Library"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/2013-Sarasvati-Mahal-Library-101.JPG/1280px-2013-Sarasvati-Mahal-Library-101.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mural_Paintings_at_Sarawati_Mahal_Libray_Thanjavur_India.jpg/1280px-Mural_Paintings_at_Sarawati_Mahal_Libray_Thanjavur_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Saraswathi_mahal_library.jpg/1280px-Saraswathi_mahal_library.jpg"
+      ]
+    },
+    {
+      "name": "Great Living Chola Temples",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The Great Living Chola Temples is a UNESCO World Heritage Site designation for a group of three Chola dynasty era Hindu temples in the Indian state of Tamil Nadu. The temple at Thanjavur was added in the list in 1987, while the other two temples were added in 2004.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg/1280px-A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg",
+        "alt": "Great Living Chola Temples"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg/1280px-A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Great_Living_Chola_Temple%2C_Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu.jpg/1280px-Great_Living_Chola_Temple%2C_Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Darasuram_-_Great_Living_Chola_Temple.JPG/1280px-Darasuram_-_Great_Living_Chola_Temple.JPG"
+      ]
+    },
+    {
+      "name": "Brihadeeswarar temple fire",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "A fire accident occurred during the consecration of the Brihadeeswarar Temple on 7 June 1997 in Thanjavur, Tamil Nadu, India. A fire cracker lit near the temple fell on the yajnashala, a temporary structure built to accommodate the ritual ceremonies, and sparked the fire that spread to the thatched roofs.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Temple_tanjore.jpg/1280px-Temple_tanjore.jpg",
+        "alt": "Brihadeeswarar temple fire"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Temple_tanjore.jpg/1280px-Temple_tanjore.jpg"
+      ]
+    },
+    {
+      "name": "Brihadisvara Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Brihadisvara Temple, called Rajarajesvaram (lit. 'Lord of Rajaraja') by its builder, and known locally as Thanjai Periya Kovil (lit. 'Thanjavur Big Temple') and Peruvudaiyar Kovil (lit. 'Temple of the great lord'), is a Shaivite Hindu temple built in a Chola architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India. It is one of the largest Hindu temples and an exemplar of Tamil architecture.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+        "alt": "Brihadisvara Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/An_elephant_relief_on_the_Brihadisvara_Temple%2C_Thanjavur.jpg/1280px-An_elephant_relief_on_the_Brihadisvara_Temple%2C_Thanjavur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Brihadeeswarar_Temple_02.jpg/1280px-Brihadeeswarar_Temple_02.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Thanjavur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Thanjavur",
+          "note": "Thanjavur (Tamil: [t̪aɲdʑaːʋuːɾ]), also known as Thanjai, previously known as Tanjore, is a city in the Indian state of Tamil Nadu. It is the 12th biggest city in Tamil Nadu."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Achampatti",
+          "note": "Achampatti is a village in the Budhalur taluk of Thanjavur district, Tamil Nadu, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Inathukanpatti",
+          "note": "Inathukanpatti, also known as Inayathukkanpatti, is a village in the Thanjavur taluk of Thanjavur district, Tamil Nadu, India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Indalur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Indalur",
+          "note": "Indalur is a village in the Thanjavur taluk of Thanjavur district, Tamil Nadu, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Saraswathi Mahal Library",
+          "note": "Saraswathi Mahal Library, also called Thanjavur Maharaja Serfoji's Saraswathi Mahal Library is a library located in Thanjavur (Tanjore), Tamil Nadu, India. It is one of the oldest subsisting libraries in Asia established during 16th century by the Nayak kings of Thanjavur and has on display a rare collection of Palm leaf manuscripts and paper written in Tamil and Sanskrit and a few other indigenous languages of india (especially southern regional languages)."
+        },
+        {
+          "time": "Evening",
+          "activity": "Great Living Chola Temples",
+          "note": "The Great Living Chola Temples is a UNESCO World Heritage Site designation for a group of three Chola dynasty era Hindu temples in the Indian state of Tamil Nadu. The temple at Thanjavur was added in the list in 1987, while the other two temples were added in 2004."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Brihadeeswarar temple fire & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Brihadeeswarar temple fire",
+          "note": "A fire accident occurred during the consecration of the Brihadeeswarar Temple on 7 June 1997 in Thanjavur, Tamil Nadu, India. A fire cracker lit near the temple fell on the yajnashala, a temporary structure built to accommodate the ritual ceremonies, and sparked the fire that spread to the thatched roofs."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Brihadisvara Temple",
+          "note": "Brihadisvara Temple, called Rajarajesvaram (lit. 'Lord of Rajaraja') by its builder, and known locally as Thanjai Periya Kovil (lit. 'Thanjavur Big Temple') and Peruvudaiyar Kovil (lit. 'Temple of the great lord'), is a Shaivite Hindu temple built in a Chola architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India. It is one of the largest Hindu temples and an exemplar of Tamil architecture."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Pandiar",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://picsum.photos/seed/OYO%20Manikarnikeswarar%20Temple%20Stay/400/280",
+        "alt": "OYO Manikarnikeswarar Temple Stay"
+      }
+    },
+    {
+      "name": "Hotel Gnanam",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://picsum.photos/seed/Airbnb%3A%20Stay%20in%20Manikarnikeswarar%20Temple/400/280",
+        "alt": "Airbnb: Stay in Manikarnikeswarar Temple"
+      }
+    },
+    {
+      "name": "Tamil Nadu Tourist Home",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ancient_temples_of_Tamilnadu.pdf/page1-960px-Ancient_temples_of_Tamilnadu.pdf.jpg",
+        "alt": "Tamil Nadu Tourist Home"
+      }
+    },
+    {
+      "name": "Hotel Sangam",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Sangam_Hotel%28High_class_hotel%29_-_panoramio.jpg/960px-Sangam_Hotel%28High_class_hotel%29_-_panoramio.jpg",
+        "alt": "Hotel Sangam"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Heritage walks",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Manikarnikeswarar_temple_east_main_street.jpg",
+      "alt": "Manikarnikeswarar Temple, Tamil Nadu"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Manikarnikeswarar Temple?",
+      "a": "The best time to visit Manikarnikeswarar Temple is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Manikarnikeswarar Temple?",
+      "a": "The nearest airport is Manikarnikeswarar Temple / nearest airport (30 km) and the nearest railway station is Tiruchirappalli Junction (49 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Manikarnikeswarar Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Manikarnikeswarar Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Manikarnikeswarar Temple?",
+      "a": "Stays in Manikarnikeswarar Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Manikarnikeswarar Temple?",
+      "a": "The top attractions are Thanjavur, Achampatti, Inathukanpatti, Indalur, Saraswathi Mahal Library."
+    }
+  ],
+  "seo": {
+    "title": "Manikarnikeswarar Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Manikarnikeswarar Temple is a Hindu temple located in the town of Thanjavur, India. Plan your Manikarnikeswarar Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=manikarnikeswarar-temple",
+    "ogImage": "https://picsum.photos/seed/manikarnikeswarar-temple-hero/1400/700",
+    "keywords": [
+      "Manikarnikeswarar Temple travel guide",
+      "places to visit in Manikarnikeswarar Temple",
+      "Manikarnikeswarar Temple hotels",
+      "best time to visit Manikarnikeswarar Temple",
+      "how to reach Manikarnikeswarar Temple",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}
