@@ -1,0 +1,435 @@
+{
+  "slug": "vansda-national-park",
+  "title": "Vansda National Park",
+  "state": "Gujarat",
+  "country": "India",
+  "region": "Gujarat",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Vansda National Park — wildlife reserve of Gujarat",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vansda_N_Park6.jpg",
+    "alt": "Vansda National Park, Gujarat"
+  },
+  "overview": {
+    "short": "Vansda National Park, also known as Bansda National Park, is a protected area which represents the thick woodlands of the Dangs and southern Gujarat, and is situated in the Vansda ",
+    "description": "Vansda National Park, also known as Bansda National Park, is a protected area which represents the thick woodlands of the Dangs and southern Gujarat, and is situated in the Vansda tehsil, Navsari District of Gujarat state, India. Riding on the banks of Ambika River and measuring roughly 24 km2 in area, the park lies about 65 km east of the town of Chikhali on the National Highway 48, and about 80 km northeast of the city of Valsad. Vansda, the town from which the name of the park is derived, is an important trading place for the surrounding area where the majority of the population is represen",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 7326,
+    "minPrice": 2500,
+    "distanceFromDelhi": 954
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 20.7333,
+    "lng": 73.4667,
+    "tempSummer": "28–44°C",
+    "tempWinter": "8–25°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 95,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 76 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 103,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 82 km · road approx."
+      },
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 243,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 194 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 414,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 331 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 536,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 429 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 730,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 584 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 808,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 646 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1061,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 849 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1065,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 852 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1103,
+        "byCar": "18–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 882 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1114,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 891 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1164,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 931 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1193,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 954 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1396,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1117 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1419,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1135 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Vansda National Park / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Surat Railway Station",
+      "distance": 83
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Waghai",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Waghai is a town in the Dang District of the southern part of Gujarat state in India. And also Taluka of dang district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/WaghaiStation1.jpg/1280px-WaghaiStation1.jpg",
+        "alt": "Waghai"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/WaghaiStation1.jpg/1280px-WaghaiStation1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Unai1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gira_waterfall_in_monsoon.jpg/1280px-Gira_waterfall_in_monsoon.jpg"
+      ]
+    },
+    {
+      "name": "Bansda State",
+      "category": "scenic",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Bansda State was one of the princely states of India during the period of the British Raj. It was under the Surat Agency of the Bombay Presidency.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Market_street%2C_Vansda%2C_Gujarat_India.JPG/1280px-Market_street%2C_Vansda%2C_Gujarat_India.JPG",
+        "alt": "Bansda State"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Market_street%2C_Vansda%2C_Gujarat_India.JPG/1280px-Market_street%2C_Vansda%2C_Gujarat_India.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Traditional_farming_with_bullocks_in_Kanadha_village%2C_Vansda.jpg/1280px-Traditional_farming_with_bullocks_in_Kanadha_village%2C_Vansda.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Vansda_N_Park4.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Waghai",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Waghai",
+          "note": "Waghai is a town in the Dang District of the southern part of Gujarat state in India. And also Taluka of dang district."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Bansda State",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bansda State",
+          "note": "Bansda State was one of the princely states of India during the period of the British Raj. It was under the Surat Agency of the Bombay Presidency."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Govt. Of Gujarat Rest House, Waghai",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Vansda National Park Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Vansda National Park",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Vansda National Park"
+      }
+    },
+    {
+      "name": "Vansda National Park Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Vansda National Park Grand Hotel"
+      }
+    },
+    {
+      "name": "Jungle Lodges Vansda National Park",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Vansda National Park"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vansda_N_Park6.jpg",
+      "alt": "Vansda National Park photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Indian_Pitta_SM.jpg/1280px-Indian_Pitta_SM.jpg",
+      "alt": "Vansda National Park photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Danaid_eggfly_-_Hypolimnas_misippus%28Linnaeus%2C1764%29%28F%29%28UP%29.jpg/1280px-Danaid_eggfly_-_Hypolimnas_misippus%28Linnaeus%2C1764%29%28F%29%28UP%29.jpg",
+      "alt": "Vansda National Park photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Danaid_eggfly_-_Hypolimnas_misippus%28Linnaeus%2C1764%29%28F%29%28UN%29.jpg/1280px-Danaid_eggfly_-_Hypolimnas_misippus%28Linnaeus%2C1764%29%28F%29%28UN%29.jpg",
+      "alt": "Vansda National Park photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Common_Redeye_-_Matapa_aria%28Moore%2C1866%29.jpg/1280px-Common_Redeye_-_Matapa_aria%28Moore%2C1866%29.jpg",
+      "alt": "Vansda National Park photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Vansda National Park?",
+      "a": "The best time to visit Vansda National Park is Oct – Mar. Summers are 28–44°C and winters are 8–25°C."
+    },
+    {
+      "q": "How do I reach Vansda National Park?",
+      "a": "The nearest airport is Vansda National Park / nearest airport (30 km) and the nearest railway station is Surat Railway Station (83 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Vansda National Park?",
+      "a": "2 days are usually enough to cover the top attractions of Vansda National Park at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Vansda National Park?",
+      "a": "Stays in Vansda National Park start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Vansda National Park?",
+      "a": "The top attractions are Waghai, Bansda State."
+    }
+  ],
+  "seo": {
+    "title": "Vansda National Park Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Vansda National Park, also known as Bansda National Park, is a protected area which represents the thick woodlands of the Dangs and southern Gujarat, and is situated in the Vansda Plan your Vansda National Park trip: 2 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=vansda-national-park",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vansda_N_Park6.jpg",
+    "keywords": [
+      "Vansda National Park travel guide",
+      "places to visit in Vansda National Park",
+      "Vansda National Park hotels",
+      "best time to visit Vansda National Park",
+      "how to reach Vansda National Park",
+      "Gujarat tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

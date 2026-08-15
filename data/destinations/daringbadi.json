@@ -1,0 +1,669 @@
+{
+  "slug": "daringbadi",
+  "title": "Daringbadi",
+  "state": "Odisha",
+  "country": "India",
+  "region": "Kandhamal District",
+  "type": "hillstation",
+  "badge": "Kashmir of Odisha",
+  "tagline": "Picturesque hill station with pine forests, coffee gardens, and winter frost",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg/1280px-Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg",
+    "alt": "Daringbadi, Odisha"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg/1280px-Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg",
+    "alt": "Daringbadi, Odisha"
+  },
+  "overview": {
+    "short": "Picturesque hill station with pine forests, coffee gardens, and winter frost.",
+    "description": "Daringbadi is a serene hill station at 3,000 feet in Odisha surrounded by dense pine forests and coffee plantations. Known for sub-zero winter mornings where dew drops freeze into thin ice, Daringbadi features gushing waterfalls, tribal heritage, organic pepper gardens, and cool mountain air.",
+    "features": [
+      "Pine Forest Walk",
+      "Hill View Point",
+      "Doluri River Waterfalls",
+      "Coffee Plantations"
+    ],
+    "rating": 4.6,
+    "reviewCount": 1420,
+    "minPrice": 2000,
+    "distanceFromDelhi": 1450
+  },
+  "bestTime": {
+    "label": "Sep – May",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 19.9125,
+    "lng": 84.1332,
+    "tempSummer": "18–32°C",
+    "tempWinter": "5–20°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 228,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 182 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 333,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 266 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 375,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 300 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 500,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 400 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 661,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 529 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 679,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 543 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 766,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 613 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 800,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 640 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 823,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 658 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 985,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 788 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1071,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 857 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1080,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 864 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1179,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 943 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1228,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 982 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1249,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 999 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1269,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1015 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 1300,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1040 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1301,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1041 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 1433,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1146 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1441,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1153 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1476,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1181 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1481,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1185 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1490,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1192 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1494,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1195 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1496,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1197 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 1508,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1206 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 1565,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1252 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 1626,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1301 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1636,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1309 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1743,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1394 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1764,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1411 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 1783,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1426 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1998,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1598 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 2015,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1612 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 2121,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1697 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 2138,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1710 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Bhubaneswar Biju Patnaik Airport (BBI)",
+      "distance": 245
+    },
+    "nearestRailway": {
+      "name": "Berhampur Railway Station (BAM)",
+      "distance": 120
+    },
+    "roadNote": "Picturesque ghat road winding through tribal hills and forests."
+  },
+  "topPlaces": [
+    {
+      "name": "Daringbadi Pine Forest Walk",
+      "category": "nature",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Dense pine tree plantation trails surrounded by misty hills and crisp mountain air.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Daringbadi Pine Forest Walk"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Daringbadi Coffee & Black Pepper Gardens",
+      "category": "nature",
+      "distance": "3 km",
+      "entryFee": "Free",
+      "timings": "8 AM – 5 PM",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "Organic coffee plantations managed by Odisha Forest Dept with black pepper vines.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Daringbadi Coffee & Black Pepper Gardens"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Midubanda Waterfalls",
+      "category": "nature",
+      "distance": "15 km",
+      "entryFee": "₹20",
+      "timings": "7 AM – 5 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Cascading waterfall hidden deep inside forest gorges with natural bathing pools.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/WATER_FALL_NEAR_DARINGBADI.JPG",
+        "alt": "Midubanda Waterfalls"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b2/WATER_FALL_NEAR_DARINGBADI.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Madubanda_Waterfall%2C_Daringbari.jpg/1280px-Madubanda_Waterfall%2C_Daringbari.jpg"
+      ]
+    },
+    {
+      "name": "Hill View Park & Butterfly Garden",
+      "category": "nature",
+      "distance": "1 km",
+      "entryFee": "₹10",
+      "timings": "6 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Elevated hilltop park offering sunset views over Kandhamal valley.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_connors_hill_panorama.jpg/1280px-View_from_connors_hill_panorama.jpg",
+        "alt": "Hill View Park & Butterfly Garden"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_connors_hill_panorama.jpg/1280px-View_from_connors_hill_panorama.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg/1280px-20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/20110711_Pierre_Loti_hill_view_Istanbul_Turkey_Panorama.jpg/1280px-20110711_Pierre_Loti_hill_view_Istanbul_Turkey_Panorama.jpg"
+      ]
+    },
+    {
+      "name": "Duluri River & Granite Rock Bed",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Crystal mountain stream flowing over smooth pink granite rock formations.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Duluri River & Granite Rock Bed"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Ludo Waterfalls & Nature Camp",
+      "category": "nature",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "Daytime",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Unexplored forest waterfall with canopy trails inside deep jungle.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Ludo Waterfalls & Nature Camp"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Nature Camp Daringbadi (Eco Retreat Odisha)",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 4500,
+      "priceMax": 8500,
+      "rating": 4.8,
+      "reviews": 310,
+      "amenities": [
+        "Luxury Tents",
+        "Dining",
+        "Campfire",
+        "Pine View"
+      ],
+      "tags": [
+        "Eco Retreat",
+        "Glamping"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg/1280px-Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg",
+        "alt": "Nature Camp Daringbadi (Eco Retreat Odisha)"
+      }
+    },
+    {
+      "name": "Hotel Snow View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2200,
+      "priceMax": 4200,
+      "rating": 4.4,
+      "reviews": 260,
+      "amenities": [
+        "Restaurant",
+        "Garden",
+        "AC Rooms"
+      ],
+      "tags": [
+        "Govt Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Silence_valley%2C_Daringbari.JPG/1280px-Silence_valley%2C_Daringbari.JPG",
+        "alt": "OTDC Panthanivas Daringbadi"
+      }
+    },
+    {
+      "name": "Deomali Eco Cottage Daringbadi",
+      "type": "resort",
+      "tier": "good",
+      "priceMin": 2500,
+      "priceMax": 5000,
+      "rating": 4.6,
+      "reviews": 210,
+      "amenities": [
+        "Eco Cottages",
+        "Dining",
+        "Campfire"
+      ],
+      "tags": [
+        "Eco Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Black_pepper_creepers%2C_Daringbari.jpg/1280px-Black_pepper_creepers%2C_Daringbari.jpg",
+        "alt": "Deomali Eco Cottage Daringbadi"
+      }
+    },
+    {
+      "name": "Utopia Resort",
+      "type": "homestay",
+      "tier": "budget",
+      "priceMin": 1600,
+      "priceMax": 3000,
+      "rating": 4.5,
+      "reviews": 140,
+      "amenities": [
+        "Odia Home Cooking",
+        "Valley View"
+      ],
+      "tags": [
+        "Homestay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Hill_view_park%2C_Daringbari%2C_Orissa.JPG/1280px-Hill_view_park%2C_Daringbari%2C_Orissa.JPG",
+        "alt": "Cloud 9 Homestay Daringbadi"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg/1280px-Dromaius_novaehollandiae_%28Emu%29%2C_Daringbadi.jpg",
+      "alt": "Daringbadi photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Silence_valley%2C_Daringbari.JPG/1280px-Silence_valley%2C_Daringbari.JPG",
+      "alt": "Daringbadi photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Black_pepper_creepers%2C_Daringbari.jpg/1280px-Black_pepper_creepers%2C_Daringbari.jpg",
+      "alt": "Daringbadi photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Hill_view_park%2C_Daringbari%2C_Orissa.JPG/1280px-Hill_view_park%2C_Daringbari%2C_Orissa.JPG",
+      "alt": "Daringbadi photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Daringbadi%2Corissa.jpg/1280px-Daringbadi%2Corissa.jpg",
+      "alt": "Daringbadi photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Daringbadi.jpg/1280px-Daringbadi.jpg",
+      "alt": "Daringbadi photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is Daringbadi called the Kashmir of Odisha?",
+      "a": "Daringbadi receives winter temperatures below zero degrees Celsius with morning frost covering pine trees and grassy hillsides."
+    }
+  ],
+  "seo": {
+    "title": "Daringbadi Travel Guide 2026 — Kashmir of Odisha, Pine Forests, Waterfalls | IndiaExplore",
+    "description": "Plan your trip to Daringbadi Odisha: Kashmir of Odisha pine jungles, coffee plantations, Midubanda falls and OTDC hotels.",
+    "canonical": "destination.html?slug=daringbadi",
+    "ogImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Daringbadi Odisha",
+      "Kashmir of Odisha",
+      "Daringbadi pine forest",
+      "OTDC Daringbadi"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 2
+}

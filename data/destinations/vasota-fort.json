@@ -1,0 +1,401 @@
+{
+  "slug": "vasota-fort",
+  "title": "Vasota Fort",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Vasota Fort — heritage city of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vasota_fort_Maharashtra.jpg/1280px-Vasota_fort_Maharashtra.jpg",
+    "alt": "Vasota Fort, Maharashtra"
+  },
+  "overview": {
+    "short": "Vasota Fort (also called Vyaghragad) is located in Satara district in the Indian state of Maharashtra.",
+    "description": "Vasota Fort (also called Vyaghragad) is located in Satara district in the Indian state of Maharashtra.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.4,
+    "reviewCount": 20973,
+    "minPrice": 900,
+    "distanceFromDelhi": 1269
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 17.6633449,
+    "lng": 73.694792,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 121,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 97 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 303,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 242 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 396,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 317 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 500,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 400 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 636,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 509 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 679,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 543 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 758,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 606 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 938,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 750 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 963,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 770 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 998,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 798 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 1023,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 818 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1129,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 903 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1143,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 914 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1153,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 922 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1434,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1147 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Vasota Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Pune Junction",
+      "distance": 98
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Tiware dam failure",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "On 2 July 2019, the Tiware dam in Ratnagiri district of Maharashtra state of India failed following heavy rains. The failure resulted in flooding of the villages situated downstream.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tiware dam failure"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Tiware dam failure",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Tiware dam failure",
+          "note": "On 2 July 2019, the Tiware dam in Ratnagiri district of Maharashtra state of India failed following heavy rains. The failure resulted in flooding of the villages situated downstream."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Rajesh Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://commons.wikimedia.org/w/resources/assets/file-type-icons/fileicon-ogg.png",
+        "alt": "Rajesh Hotel"
+      }
+    },
+    {
+      "name": "SAJ RESORT",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Vasota Fort"
+      }
+    },
+    {
+      "name": "Royal Palace Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Becret_Memoirs_Of_The_Royal_Family_Of_France_During_The_Revolution_In_2_Vols_%28IA_dli.granth.37092%29.pdf/page1-500px-Becret_Memoirs_Of_The_Royal_Family_Of_France_During_The_Revolution_In_2_Vols_%28IA_dli.granth.37092%29.pdf.jpg",
+        "alt": "Royal Palace Hotel"
+      }
+    },
+    {
+      "name": "PAGODA HOTEL",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Vasota Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vasota_fort_Maharashtra.jpg/1280px-Vasota_fort_Maharashtra.jpg",
+      "alt": "Vasota Fort photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Vasota.jpg",
+      "alt": "Vasota Fort photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Plan_of_Wassota_and_Sattara%2C_1818.jpg/1280px-Plan_of_Wassota_and_Sattara%2C_1818.jpg",
+      "alt": "Vasota Fort photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Wossota_%26_Sattara.jpg/1280px-Wossota_%26_Sattara.jpg",
+      "alt": "Vasota Fort photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/View_from_vasota_fort.jpg/1280px-View_from_vasota_fort.jpg",
+      "alt": "Vasota Fort photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Vasota Fort?",
+      "a": "The best time to visit Vasota Fort is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Vasota Fort?",
+      "a": "The nearest airport is Vasota Fort / nearest airport (30 km) and the nearest railway station is Pune Junction (98 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Vasota Fort?",
+      "a": "2 days are usually enough to cover the top attractions of Vasota Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Vasota Fort?",
+      "a": "Stays in Vasota Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Vasota Fort?",
+      "a": "The top attractions are Tiware dam failure."
+    }
+  ],
+  "seo": {
+    "title": "Vasota Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Vasota Fort (also called Vyaghragad) is located in Satara district in the Indian state of Maharashtra. Plan your Vasota Fort trip: 1 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=vasota-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vasota_fort_Maharashtra.jpg/1280px-Vasota_fort_Maharashtra.jpg",
+    "keywords": [
+      "Vasota Fort travel guide",
+      "places to visit in Vasota Fort",
+      "Vasota Fort hotels",
+      "best time to visit Vasota Fort",
+      "how to reach Vasota Fort",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

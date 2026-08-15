@@ -1,0 +1,506 @@
+{
+  "slug": "hemis-monastery",
+  "title": "Hemis Monastery",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Hemis Monastery — spiritual town of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hemis_Monastery_02.jpg/1280px-Hemis_Monastery_02.jpg",
+    "alt": "Hemis Monastery, Ladakh"
+  },
+  "overview": {
+    "short": "Hemis Monastery is a Himalayan Buddhist monastery (gompa) of the Drukpa Lineage, in Hemis on the bank of the Indus River, Ladakh, India.",
+    "description": "Hemis Monastery is a Himalayan Buddhist monastery (gompa) of the Drukpa Lineage, in Hemis on the bank of the Indus River, Ladakh, India. Situated 45 km from Leh, it was re-established in 1672 by the Ladakhi king Sengge Namgyal. The annual Hemis festival honouring Padmasambhava is held there in early June. Hemis village is located 40 km southeast of Leh on Leh-Manali Highway and under-construction Bhanupli–Leh line.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.8,
+    "reviewCount": 21481,
+    "minPrice": 900,
+    "distanceFromDelhi": 591
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 33.912475,
+    "lng": 77.70283333,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 36,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 29 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 336,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 269 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 395,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 316 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 455,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 364 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 458,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 366 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 501,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 401 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 739,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 591 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 763,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 610 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 938,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 750 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1000,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 800 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1463,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1170 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1481,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1185 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1593,
+        "byCar": "27–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1274 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1624,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1299 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1638,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1310 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Hemis Monastery / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 275
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Hemis",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Hemis, also spelled Hamis, is a village in the Leh district of Ladakh, India. It is located in the Kharu tehsil, 40 km southeast of Leh town on the Leh-Manali Highway and under-construction Bhanupli–Leh line.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hemis_Monastery_02.jpg/1280px-Hemis_Monastery_02.jpg",
+        "alt": "Hemis"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hemis_Monastery_02.jpg/1280px-Hemis_Monastery_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Hemis_Gompa_-_Prayer_Hall.jpg/1280px-Hemis_Gompa_-_Prayer_Hall.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hemis_Gompa_-_Monk_Cells.jpg/1280px-Hemis_Gompa_-_Monk_Cells.jpg"
+      ]
+    },
+    {
+      "name": "Changa, Ladakh",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Changa is a village in the Leh district of Ladakh, India. It is located in the Kharu tehsil, on the bank of the Indus River.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Journals_Kept_In_Hyderabad%2C_Kashmir%2C_Sikkim%2C_And_Nepal_Vol-Ii_%28IA_JournalsKeptInHyderabadKashmirSikkimAndNepalVolII%29.pdf/page1-500px-Journals_Kept_In_Hyderabad%2C_Kashmir%2C_Sikkim%2C_And_Nepal_Vol-Ii_%28IA_JournalsKeptInHyderabadKashmirSikkimAndNepalVolII%29.pdf.jpg",
+        "alt": "Changa, Ladakh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Journals_Kept_In_Hyderabad%2C_Kashmir%2C_Sikkim%2C_And_Nepal_Vol-Ii_%28IA_JournalsKeptInHyderabadKashmirSikkimAndNepalVolII%29.pdf/page1-500px-Journals_Kept_In_Hyderabad%2C_Kashmir%2C_Sikkim%2C_And_Nepal_Vol-Ii_%28IA_JournalsKeptInHyderabadKashmirSikkimAndNepalVolII%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/The_happy_valley-_sketches_of_Kashmir_%26_the_Kashmiris_%28IA_happyvalleysketc00wakeiala%29.pdf/page1-500px-The_happy_valley-_sketches_of_Kashmir_%26_the_Kashmiris_%28IA_happyvalleysketc00wakeiala%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Travels_in_Himalayan_Provinces_of_Hindustan_and_Panjab_Vol_1_ed_%28IA_dli.pahar.0279%29.pdf/page1-500px-Travels_in_Himalayan_Provinces_of_Hindustan_and_Panjab_Vol_1_ed_%28IA_dli.pahar.0279%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Chuchot Shama",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Chuchot Shama is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chuchot Shama"
+      },
+      "photos": []
+    },
+    {
+      "name": "Karu, Ladakh",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Kharu (Wylie: mkhar bu, THL: khar bu) also spelt Karu, is a town, subdivision, tehsil, block, tourist station and military base on the bank of Indus River in the Leh district of Union territory of Ladakh in India. It is located 34 km southeast of Leh on Leh-Manali Highway and under-construction Bhanupli–Leh line.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Welcome_to_Military_Station_Karu%2C_Ladakh_-_sign.jpg",
+        "alt": "Karu, Ladakh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Welcome_to_Military_Station_Karu%2C_Ladakh_-_sign.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/India_-_Ladakh_-_Trekking_-_078_-_looking_back_down_at_Rajung_Karu_campsite_as_we_start_Day_4_%283895777905%29.jpg/1280px-India_-_Ladakh_-_Trekking_-_078_-_looking_back_down_at_Rajung_Karu_campsite_as_we_start_Day_4_%283895777905%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/India_-_Ladakh_-_Trekking_-_054_-_coming_into_the_Rajung_Karu_nomad_settlement_%283895353771%29.jpg/1280px-India_-_Ladakh_-_Trekking_-_054_-_coming_into_the_Rajung_Karu_nomad_settlement_%283895353771%29.jpg"
+      ]
+    },
+    {
+      "name": "Stakna",
+      "category": "spiritual",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Stakna is a village in the Leh district of Ladakh, India, on the banks of the Indus River. The Stakna Monastery is located there.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "alt": "Stakna"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Stakna_Monastery%2C_Ladakh_03.jpg/1280px-Stakna_Monastery%2C_Ladakh_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Stakna_Ladakh_India_August_2013.jpg/1280px-Stakna_Ladakh_India_August_2013.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Hemis & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Hemis",
+          "note": "Hemis, also spelled Hamis, is a village in the Leh district of Ladakh, India. It is located in the Kharu tehsil, 40 km southeast of Leh town on the Leh-Manali Highway and under-construction Bhanupli–Leh line."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Changa, Ladakh",
+          "note": "Changa is a village in the Leh district of Ladakh, India. It is located in the Kharu tehsil, on the bank of the Indus River."
+        },
+        {
+          "time": "Evening",
+          "activity": "Chuchot Shama",
+          "note": "Chuchot Shama is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Karu, Ladakh & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Karu, Ladakh",
+          "note": "Kharu (Wylie: mkhar bu, THL: khar bu) also spelt Karu, is a town, subdivision, tehsil, block, tourist station and military base on the bank of Indus River in the Leh district of Union territory of Ladakh in India. It is located 34 km southeast of Leh on Leh-Manali Highway and under-construction Bhanupli–Leh line."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Stakna",
+          "note": "Stakna is a village in the Leh district of Ladakh, India, on the banks of the Indus River. The Stakna Monastery is located there."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Tourist bungallow",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1586611292717-f828b167408c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Hemis Monastery Stay"
+      }
+    },
+    {
+      "name": "Sopma",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Hemis Monastery"
+      }
+    },
+    {
+      "name": "Matho Khapula Homestay",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Hemis Monastery Grand Hotel"
+      }
+    },
+    {
+      "name": "Fortune Park Hemis Monastery",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Hemis Monastery"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hemis_Monastery_02.jpg/1280px-Hemis_Monastery_02.jpg",
+      "alt": "Hemis Monastery photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Hemis_Monastery_01.jpg/1280px-Hemis_Monastery_01.jpg",
+      "alt": "Hemis Monastery photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hemis_Monastery_03.jpg/1280px-Hemis_Monastery_03.jpg",
+      "alt": "Hemis Monastery photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Hemis_Gompa_-_Prayer_Hall.jpg/1280px-Hemis_Gompa_-_Prayer_Hall.jpg",
+      "alt": "Hemis Monastery photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hemis_Gompa_-_Monk_Cells.jpg/1280px-Hemis_Gompa_-_Monk_Cells.jpg",
+      "alt": "Hemis Monastery photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Hemis Monastery?",
+      "a": "The best time to visit Hemis Monastery is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Hemis Monastery?",
+      "a": "The nearest airport is Hemis Monastery / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (275 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Hemis Monastery?",
+      "a": "2 days are usually enough to cover the top attractions of Hemis Monastery at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Hemis Monastery?",
+      "a": "Stays in Hemis Monastery start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Hemis Monastery?",
+      "a": "The top attractions are Hemis, Changa, Ladakh, Chuchot Shama, Karu, Ladakh, Stakna."
+    }
+  ],
+  "seo": {
+    "title": "Hemis Monastery Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Hemis Monastery is a Himalayan Buddhist monastery (gompa) of the Drukpa Lineage, in Hemis on the bank of the Indus River, Ladakh, India. Plan your Hemis Monastery trip: 5 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=hemis-monastery",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hemis_Monastery_02.jpg/1280px-Hemis_Monastery_02.jpg",
+    "keywords": [
+      "Hemis Monastery travel guide",
+      "places to visit in Hemis Monastery",
+      "Hemis Monastery hotels",
+      "best time to visit Hemis Monastery",
+      "how to reach Hemis Monastery",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 3
+}

@@ -1,0 +1,582 @@
+{
+  "slug": "tapkeshwar-temple",
+  "title": "Tapkeshwar Temple",
+  "state": "Uttarakhand",
+  "country": "India",
+  "region": "Uttarakhand",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Tapkeshwar Temple — spiritual town of Uttarakhand",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hanuman_Idol_at_Tapkeshwar_Temple..jpg/1280px-Hanuman_Idol_at_Tapkeshwar_Temple..jpg",
+    "alt": "Tapkeshwar Temple, Uttarakhand"
+  },
+  "overview": {
+    "short": "Tapkeshwar Temple, also known as Tapkeshwar Mahadev Temple, is a temple in Dehradun dedicated to Shiva.",
+    "description": "Tapkeshwar Temple, also known as Tapkeshwar Mahadev Temple, is a temple in Dehradun dedicated to Shiva. The temple is on the bank of the Tons River, built on top of a natural cave, which holds the temple's main shivalinga.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 19640,
+    "minPrice": 900,
+    "distanceFromDelhi": 209
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 30.3572724,
+    "lng": 78.0166768,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 145,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 116 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 158,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 126 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 261,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 209 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 290,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 232 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 415,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 332 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 443,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 354 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 499,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 399 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 530,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 424 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 550,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 440 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 989,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 791 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1096,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 877 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1223,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 978 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1288,
+        "byCar": "21–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1030 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1329,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1063 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1344,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1075 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Tapkeshwar Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Dehradun Railway Station",
+      "distance": 5
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Dehradun",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Dehradun (Hindi: Dēhrādūn, pronounced [ˈd̪ɛɦɾaːd̪uːn]), also known as Dehra Doon ( DAIR-ə DOON), is the winter capital and the most populous city of the Indian state of Uttarakhand. It is the administrative headquarters of the eponymous district and is governed by the Dehradun Municipal Corporation, with the Uttarakhand Legislative Assembly holding its winter sessions in the city as its winter capital.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_01.jpg/1280px-Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_01.jpg",
+        "alt": "Dehradun"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_01.jpg/1280px-Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_02.jpg/1280px-Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_03.jpg/1280px-Scaly-breasted_munia_or_spotted_munia_%28Lonchura_punctulata%29_at_Dehradun%2C_Uttarakhand_03.jpg"
+      ]
+    },
+    {
+      "name": "Indian Council of Forestry Research and Education",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "The Indian Council of Forestry Research and Education (ICFRE) is an autonomous organisation or governmental agency under the MoEFCC, Government of India. Headquartered in Dehradun, its functions are to conduct forestry research; transfer the technologies developed to the states of India and other user agencies; and to impart forestry education.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Forest_Research_Institute%2C_an_architectural_marvel_located_in_Dehradun_district_of_Uttarakhand.jpg/1280px-Forest_Research_Institute%2C_an_architectural_marvel_located_in_Dehradun_district_of_Uttarakhand.jpg",
+        "alt": "Indian Council of Forestry Research and Education"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Forest_Research_Institute%2C_an_architectural_marvel_located_in_Dehradun_district_of_Uttarakhand.jpg/1280px-Forest_Research_Institute%2C_an_architectural_marvel_located_in_Dehradun_district_of_Uttarakhand.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Forest_Research_Institute7-Dehradun-Uttarakhand.jpg/1280px-Forest_Research_Institute7-Dehradun-Uttarakhand.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Forest_research_institute-_dehradun-_uttrakhand-_DSC_001.jpg"
+      ]
+    },
+    {
+      "name": "Cambrian Hall",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Cambrian Hall is a private school located in the Dehradun, Uttarakhand, India. It is a co-educational, English-medium, residential day school which participates in the Council for the Indian School Certificate Examinations.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Toc_H_Hall%2C_Cambrian_Rd_-_geograph.org.uk_-_6724939.jpg",
+        "alt": "Cambrian Hall"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/1f/Toc_H_Hall%2C_Cambrian_Rd_-_geograph.org.uk_-_6724939.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Cambrian_Hotel_-_geograph.org.uk_-_8277488.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d8/The_Cambrian_line_near_Morben_Hall_-_geograph.org.uk_-_1298256.jpg"
+      ]
+    },
+    {
+      "name": "Doon Valley",
+      "category": "nature",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Doon Valley is an unusually wide, long valley within the Sivalik Hills and the Lesser Himalayas, in the Indian states of Uttarakhand and Himachal Pradesh. It is closer to Kyarda Doon, which lies in Himachal Pradesh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/View_of_Doon_Valley_from_Kipling_Trail_Uttarakhand_India.jpg/1280px-View_of_Doon_Valley_from_Kipling_Trail_Uttarakhand_India.jpg",
+        "alt": "Doon Valley"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/View_of_Doon_Valley_from_Kipling_Trail_Uttarakhand_India.jpg/1280px-View_of_Doon_Valley_from_Kipling_Trail_Uttarakhand_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2b/Chestnut_Thrush%2C_Doon_Valley%2C_Uttarakhand%2C_India_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Doon_Valley%2C_Dehradun%2C_1850s.jpg"
+      ]
+    },
+    {
+      "name": "Lok Bhavan, Dehradun",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Lok Bhavan formerly Raj Bhavan, Dehradun or Governor's House, Dehradun is the official residence of the governor of Uttarakhand. Uttarakhand is one of the few Indian states which have two official buildings of Raj Bhavans.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Lok_Bhavan_Dehradun_Uttarakhand.jpg",
+        "alt": "Lok Bhavan, Dehradun"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/86/Lok_Bhavan_Dehradun_Uttarakhand.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Raj_Bhavan_%28Bangalore%29_emblem%2C_2025.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg/1280px-Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg"
+      ]
+    },
+    {
+      "name": "National Hydrographic Office",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "The National Hydrographic Office, formerly the Indian Naval Hydrographic Department (INHD), headed by the Chief Hydrographer to the Government of India, is an Indian government agency responsible for hydrographic surveys and nautical charting in India. Its headquarters National Hydrographic Office is located in Dehradun, Uttarakhand beside the Principal Controller of Defense Accounts Office (Air Force).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Team_of_6_Officers_and_15_Sailors_from_Survey_Ships_of_ENC.jpg",
+        "alt": "National Hydrographic Office"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Team_of_6_Officers_and_15_Sailors_from_Survey_Ships_of_ENC.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_off_of_the_expedition_team_to_the_Valley_of_Flowers_and_Hemkund.jpg"
+      ]
+    },
+    {
+      "name": "St Joseph's Academy, Dehradun",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "St. Joseph's Academy, Dehradun (SJA) is a co-educational Indian Certificate of Secondary Education school in Dehradun, the capital of the state of Uttarakhand in India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Joseph%27s_Academy%2C_Dehradun_2.jpg/1280px-St_Joseph%27s_Academy%2C_Dehradun_2.jpg",
+        "alt": "St Joseph's Academy, Dehradun"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Joseph%27s_Academy%2C_Dehradun_2.jpg/1280px-St_Joseph%27s_Academy%2C_Dehradun_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/St_Joseph%27s_Academy%2C_Dehradun_1.jpg/1280px-St_Joseph%27s_Academy%2C_Dehradun_1.jpg"
+      ]
+    },
+    {
+      "name": "Uttara Museum of Contemporary Art",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Uttara Museum of Contemporary Art (UMCA), located at MDDA Complex in Dehradun, is Uttarakhand's first art museum dedicating multi-dimensional artworks in the memory of the 2013 North India floods (Kedarnath disaster). The museum exhibits various aspects of the calamity and the folk culture of Uttarakhand through paintings, sculptures, and other artworks by artist Surendra Pal Joshi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Uttara_Museum_of_Contemporary_Art_logo.png",
+        "alt": "Uttara Museum of Contemporary Art"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Uttara_Museum_of_Contemporary_Art_logo.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Uttara_Museum_of_Contemporary_Art.jpg/1280px-Uttara_Museum_of_Contemporary_Art.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8d/The-Abode-at-Uttara-Museum-of-Contemporary-Art.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Dehradun & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Dehradun",
+          "note": "Dehradun (Hindi: Dēhrādūn, pronounced [ˈd̪ɛɦɾaːd̪uːn]), also known as Dehra Doon ( DAIR-ə DOON), is the winter capital and the most populous city of the Indian state of Uttarakhand. It is the administrative headquarters of the eponymous district and is governed by the Dehradun Municipal Corporation, with the Uttarakhand Legislative Assembly holding its winter sessions in the city as its winter capital."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Indian Council of Forestry Research and Education",
+          "note": "The Indian Council of Forestry Research and Education (ICFRE) is an autonomous organisation or governmental agency under the MoEFCC, Government of India. Headquartered in Dehradun, its functions are to conduct forestry research; transfer the technologies developed to the states of India and other user agencies; and to impart forestry education."
+        },
+        {
+          "time": "Evening",
+          "activity": "Cambrian Hall",
+          "note": "Cambrian Hall is a private school located in the Dehradun, Uttarakhand, India. It is a co-educational, English-medium, residential day school which participates in the Council for the Indian School Certificate Examinations."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Doon Valley & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Doon Valley",
+          "note": "The Doon Valley is an unusually wide, long valley within the Sivalik Hills and the Lesser Himalayas, in the Indian states of Uttarakhand and Himachal Pradesh. It is closer to Kyarda Doon, which lies in Himachal Pradesh."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Lok Bhavan, Dehradun",
+          "note": "Lok Bhavan formerly Raj Bhavan, Dehradun or Governor's House, Dehradun is the official residence of the governor of Uttarakhand. Uttarakhand is one of the few Indian states which have two official buildings of Raj Bhavans."
+        },
+        {
+          "time": "Evening",
+          "activity": "National Hydrographic Office",
+          "note": "The National Hydrographic Office, formerly the Indian Naval Hydrographic Department (INHD), headed by the Chief Hydrographer to the Government of India, is an Indian government agency responsible for hydrographic surveys and nautical charting in India. Its headquarters National Hydrographic Office is located in Dehradun, Uttarakhand beside the Principal Controller of Defense Accounts Office (Air Force)."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — St Joseph's Academy, Dehradun & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "St Joseph's Academy, Dehradun",
+          "note": "St. Joseph's Academy, Dehradun (SJA) is a co-educational Indian Certificate of Secondary Education school in Dehradun, the capital of the state of Uttarakhand in India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Uttara Museum of Contemporary Art",
+          "note": "The Uttara Museum of Contemporary Art (UMCA), located at MDDA Complex in Dehradun, is Uttarakhand's first art museum dedicating multi-dimensional artworks in the memory of the 2013 North India floods (Kedarnath disaster). The museum exhibits various aspects of the calamity and the folk culture of Uttarakhand through paintings, sculptures, and other artworks by artist Surendra Pal Joshi."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Clouds End",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Tapkeshwar Temple Stay"
+      }
+    },
+    {
+      "name": "Hotel Paradise Continental",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Tapkeshwar Temple"
+      }
+    },
+    {
+      "name": "Pacific Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tapkeshwar Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "Sterling Holidays",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Tapkeshwar Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Heritage walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hanuman_Idol_at_Tapkeshwar_Temple..jpg/1280px-Hanuman_Idol_at_Tapkeshwar_Temple..jpg",
+      "alt": "Tapkeshwar Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Shiv_tapkeshwar_temple.jpg/1280px-Shiv_tapkeshwar_temple.jpg",
+      "alt": "Tapkeshwar Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/FOWLS6.jpg/1280px-FOWLS6.jpg",
+      "alt": "Tapkeshwar Temple photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/FOWL_GATHERING.jpg/1280px-FOWL_GATHERING.jpg",
+      "alt": "Tapkeshwar Temple photo 4"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Tapkeshwar Temple?",
+      "a": "The best time to visit Tapkeshwar Temple is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Tapkeshwar Temple?",
+      "a": "The nearest airport is Tapkeshwar Temple / nearest airport (30 km) and the nearest railway station is Dehradun Railway Station (5 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Tapkeshwar Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Tapkeshwar Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Tapkeshwar Temple?",
+      "a": "Stays in Tapkeshwar Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Tapkeshwar Temple?",
+      "a": "The top attractions are Dehradun, Indian Council of Forestry Research and Education, Cambrian Hall, Doon Valley, Lok Bhavan, Dehradun."
+    }
+  ],
+  "seo": {
+    "title": "Tapkeshwar Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Tapkeshwar Temple, also known as Tapkeshwar Mahadev Temple, is a temple in Dehradun dedicated to Shiva. Plan your Tapkeshwar Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=tapkeshwar-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hanuman_Idol_at_Tapkeshwar_Temple..jpg/1280px-Hanuman_Idol_at_Tapkeshwar_Temple..jpg",
+    "keywords": [
+      "Tapkeshwar Temple travel guide",
+      "places to visit in Tapkeshwar Temple",
+      "Tapkeshwar Temple hotels",
+      "best time to visit Tapkeshwar Temple",
+      "how to reach Tapkeshwar Temple",
+      "Uttarakhand tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

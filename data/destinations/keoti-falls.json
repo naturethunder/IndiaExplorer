@@ -1,0 +1,431 @@
+{
+  "slug": "keoti-falls",
+  "title": "Keoti Falls",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "region": "Madhya Pradesh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Keoti Falls — heritage city of Madhya Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg/1280px-Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg",
+    "alt": "Keoti Falls, Madhya Pradesh"
+  },
+  "overview": {
+    "short": "Keoti Falls (also spelt Kevti) is in Rewa district in the Indian state of Madhya Pradesh.",
+    "description": "Keoti Falls (also spelt Kevti) is in Rewa district in the Indian state of Madhya Pradesh. It is the 24th highest waterfall in India.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 9885,
+    "minPrice": 900,
+    "distanceFromDelhi": 597
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 24.816,
+    "lng": 81.453,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 204,
+        "byCar": "3–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 163 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 476,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 381 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 496,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 397 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 530,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 424 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 556,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 445 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 593,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 474 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 746,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 597 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 748,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 598 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 766,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 613 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 843,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 674 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 873,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 698 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 909,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 727 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 960,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 768 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1003,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 802 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1018,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 814 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Keoti Falls / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Satna Junction",
+      "distance": 69
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Badraon Tiwariyan",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Badaraotiwariyan is a village of Sirmor tehsil (Janpad) in Rewa of Madhya Pradesh in India. It is located 33 km north of Rewa, 11 km from Sirmour, and 509 km from Bhopal.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Badraon Tiwariyan"
+      },
+      "photos": []
+    },
+    {
+      "name": "Sirmaur, Madhya Pradesh",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Sirmaur is a town and a nagar panchayat in Rewa district in the Indian state of Madhya Pradesh. It is about 42 kilometers from Rewa.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sirist.png",
+        "alt": "Sirmaur, Madhya Pradesh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Sirist.png",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/IIM_Sirmaur_-_IIM_Sirmaur_8th_Annual_Convocation_2024_%28QHVSNcpBNDY_-_853x480_-_49m40s%29.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Subhash_Chowk_Rewa.jpg/1280px-Subhash_Chowk_Rewa.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Badraon Tiwariyan",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Badraon Tiwariyan",
+          "note": "Badaraotiwariyan is a village of Sirmor tehsil (Janpad) in Rewa of Madhya Pradesh in India. It is located 33 km north of Rewa, 11 km from Sirmour, and 509 km from Bhopal."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Sirmaur, Madhya Pradesh",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Sirmaur, Madhya Pradesh",
+          "note": "Sirmaur is a town and a nagar panchayat in Rewa district in the Indian state of Madhya Pradesh. It is about 42 kilometers from Rewa."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "OYO Keoti Falls Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Keoti Falls Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Keoti Falls",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Keoti Falls"
+      }
+    },
+    {
+      "name": "Keoti Falls Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Keoti Falls Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Keoti Falls",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Keoti Falls"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg/1280px-Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg",
+      "alt": "Keoti Falls photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tourists_Top_Keoti_Falls_Rewa_MP_Jan24_A7C_08811.jpg/1280px-Tourists_Top_Keoti_Falls_Rewa_MP_Jan24_A7C_08811.jpg",
+      "alt": "Keoti Falls photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Man_Keoti_Falls_Top_Rewa_MP_India_Jan24_A7C_08813.jpg/1280px-Man_Keoti_Falls_Top_Rewa_MP_India_Jan24_A7C_08813.jpg",
+      "alt": "Keoti Falls photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Keoti_falls_in_Rewa%2C_Madhya_Pradesh.jpg/1280px-Keoti_falls_in_Rewa%2C_Madhya_Pradesh.jpg",
+      "alt": "Keoti Falls photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Keoti_Falls.jpg/1280px-Keoti_Falls.jpg",
+      "alt": "Keoti Falls photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Keoti Falls?",
+      "a": "The best time to visit Keoti Falls is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Keoti Falls?",
+      "a": "The nearest airport is Keoti Falls / nearest airport (30 km) and the nearest railway station is Satna Junction (69 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Keoti Falls?",
+      "a": "2 days are usually enough to cover the top attractions of Keoti Falls at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Keoti Falls?",
+      "a": "Stays in Keoti Falls start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Keoti Falls?",
+      "a": "The top attractions are Badraon Tiwariyan, Sirmaur, Madhya Pradesh."
+    }
+  ],
+  "seo": {
+    "title": "Keoti Falls Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Keoti Falls (also spelt Kevti) is in Rewa district in the Indian state of Madhya Pradesh. Plan your Keoti Falls trip: 2 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=keoti-falls",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg/1280px-Keoti_Falls_Full_Rewa_MP_Jan24_A7C_08833.jpg",
+    "keywords": [
+      "Keoti Falls travel guide",
+      "places to visit in Keoti Falls",
+      "Keoti Falls hotels",
+      "best time to visit Keoti Falls",
+      "how to reach Keoti Falls",
+      "Madhya Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true
+}

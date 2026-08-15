@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Destinations — IndiaExplore</title>
+  <meta name="description" content="Browse 2,389 travel destinations across all 36 states and UTs of India. Filter by type, state, budget and travel month." />
+  <link rel="canonical" href="https://www.indiaexplore.example/destinations.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IndiaExplore" />
+  <meta property="og:title" content="All Destinations — IndiaExplore" />
+  <meta property="og:description" content="Browse 2,389 travel destinations across all 36 states and UTs of India." />
+  <meta property="og:url" content="https://www.indiaexplore.example/destinations.html" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="All Destinations — IndiaExplore" />
+  <meta name="twitter:description" content="Browse 2,389 travel destinations across India." />
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/glass-immersive.css" />
+  <link rel="stylesheet" href="css/explore-immersive.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 explore-immersive glass-immersive">
+  <div class="explore-immersive-bg" aria-hidden="true"></div>
+  <div class="explore-immersive-overlay" aria-hidden="true"></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div id="siteNav"></div>
+
+  <main id="main" class="pt-16">
+    <section class="explore-hero" aria-labelledby="destinationsTitle">
+      <div class="explore-shell explore-hero-inner">
+        <div class="explore-hero-copy">
+          <p class="explore-eyebrow"><span aria-hidden="true"></span>The India collection</p>
+          <h1 id="destinationsTitle">Find a place that<br><em>stays with you.</em></h1>
+          <p class="explore-intro">From high Himalayan silence to sunlit island shores, explore remarkable journeys across every region of India.</p>
+        </div>
+        <dl class="explore-stat-row" aria-label="IndiaExplore collection statistics">
+          <div><dt>Destinations</dt><dd>2,389</dd></div>
+          <div><dt>States &amp; UTs</dt><dd>36</dd></div>
+          <div><dt>One country</dt><dd>Endless stories</dd></div>
+        </dl>
+      </div>
+      <div class="explore-scroll-cue" aria-hidden="true"><span></span>Scroll to discover</div>
+    </section>
+
+    <div class="dest-subheader-wrap category-subheader">
+      <div class="explore-shell category-strip-inner">
+        <div id="typeFilter" class="type-filter" aria-label="Destination categories"></div>
+      </div>
+    </div>
+
+    <div class="explore-shell explore-content">
+      <div class="explore-layout">
+        <aside id="filterSidebar" class="filter-sidebar" aria-label="Destination filters">
+          <div class="filter-panel">
+            <div class="filter-heading">
+              <div><p>Fine tune</p><h2>Refine your journey</h2></div>
+              <div class="filter-heading-actions">
+                <button id="resetTop" type="button">Reset</button>
+                <button id="filterClose" type="button" aria-label="Close filters">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="filter-field"><label for="regionFilter">Region</label><select id="regionFilter"><option value="">All regions</option></select></div>
+            <div class="filter-field"><label for="stateFilter">State or territory</label><select id="stateFilter"><option value="">All states</option></select></div>
+            <div class="filter-field"><label for="tierFilter">Stay budget</label><select id="tierFilter"><option value="">Any price</option></select></div>
+            <div class="filter-field"><label for="seasonFilter">Season</label><select id="seasonFilter"><option value="">Any season</option></select></div>
+            <div class="filter-field"><label for="monthFilter">Travel month</label><select id="monthFilter"><option value="">Any month</option></select></div>
+            <button id="filterApply" class="filter-apply" type="button"><span>Show</span><strong id="filterApplyCount">0</strong><span>destinations</span></button>
+          </div>
+        </aside>
+
+        <section class="results-panel" aria-labelledby="resultsHeading">
+          <div class="results-toolbar">
+            <div class="results-heading">
+              <p class="results-kicker">Curated for discovery</p>
+              <h2 id="resultsHeading"><span id="resultCount">0</span> destinations</h2>
+              <p class="sr-only" aria-live="polite" aria-atomic="true"><span id="resultCountLive">0</span> destinations found</p>
+            </div>
+            <div class="discovery-search results-search" role="search">
+              <span class="search-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              </span>
+              <label for="searchInput">Search destinations</label>
+              <input id="searchInput" type="search" placeholder="Place, state, region or experience" autocomplete="off" />
+              <button id="searchClear" type="button" aria-label="Clear search" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              </button>
+            </div>
+            <div class="sort-control">
+              <label for="sortBy">Sort by</label>
+              <select id="sortBy">
+                <option value="rating">Top rated</option>
+                <option value="latest">Latest (newest first)</option>
+                <option value="price_asc">Price: low to high</option>
+                <option value="price_desc">Price: high to low</option>
+                <option value="distance">Closest to Delhi</option>
+              </select>
+            </div>
+            <button id="filterOpen" class="filter-open" type="button" aria-label="Open filters" aria-expanded="false" aria-controls="filterSidebar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg>
+              Refine
+              <span id="filterCount" class="filter-count" hidden></span>
+            </button>
+          </div>
+
+          <div id="activeFiltersContainer" class="active-filters hidden">
+            <span>Active filters</span>
+            <div id="activeFilterChips"></div>
+            <button id="clearAllFilters" type="button">Clear all</button>
+          </div>
+
+          <div id="noResults" style="display:none">
+            <div class="empty-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <h3>No journeys match yet</h3>
+            <p>Try a broader place, season or travel style.</p>
+            <button id="resetEmpty" class="filter-apply" type="button">Reset filters</button>
+          </div>
+
+          <div id="grid" class="destination-grid"></div>
+          <div id="loadMoreWrap" style="display:none">
+            <button id="loadMoreBtn" type="button">Show <span id="loadMoreCount">60</span> more <span aria-hidden="true">↓</span></button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="siteMobileNav"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    if (typeof gsap === 'undefined') {
+      document.write('<script src="js/vendor/gsap.min.js"><\/script>');
+      document.write('<script src="js/vendor/ScrollTrigger.min.js"><\/script>');
+    }
+  </script>
+  <script type="module" src="js/pages/explore.js"></script>
+</body>
+
+</html>

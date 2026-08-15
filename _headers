@@ -1,0 +1,12 @@
+# Cache rules for Cloudflare Pages / Netlify (ignored by local serve.js).
+# No cache-busting hashes in filenames, so keep max-age modest: stale assets
+# self-heal within an hour of a redeploy.
+
+/data/*
+  Cache-Control: public, max-age=3600
+
+/js/*
+  Cache-Control: public, max-age=3600
+
+/css/*
+  Cache-Control: public, max-age=3600

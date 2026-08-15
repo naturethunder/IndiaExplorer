@@ -1,0 +1,506 @@
+{
+  "slug": "trilokpur",
+  "title": "Trilokpur",
+  "state": "Himachal Pradesh",
+  "country": "India",
+  "region": "Himachal Pradesh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Trilokpur — spiritual town of Himachal Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Ma_Trilokpur_Devi_Temple.jpg",
+    "alt": "Trilokpur, Himachal Pradesh"
+  },
+  "overview": {
+    "short": "Trilokpur (Hindi: त्रिलोकपुर) is a Hindu temple site in Himachal Pradesh, India.",
+    "description": "Trilokpur (Hindi: त्रिलोकपुर) is a Hindu temple site in Himachal Pradesh, India. It is located on an hillock about 24 km south-west of Nahan at an elevation of about 430 m. The temple is an amalgam of Indo-Persian styles of architecture. The name Trilok Pur means a triangle of three Shakti Temples in the area.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.4,
+    "reviewCount": 12285,
+    "minPrice": 900,
+    "distanceFromDelhi": 214
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 30.54035,
+    "lng": 77.20855,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 58,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 46 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 79,
+        "byCar": "1–2 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 63 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 104,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 83 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 268,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 214 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 290,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 232 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 318,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 254 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 413,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 330 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 478,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 382 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 504,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 403 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 534,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 427 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1013,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 810 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1190,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 952 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1193,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 954 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1326,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1061 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1404,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1123 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Trilokpur / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Ambala Cantt Junction",
+      "distance": 41
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Kala Amb",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Kala Amb is the industrial capital of the Sirmaur district in Himachal Pradesh. It is a small town and an industrial area near Nahan which is the district headquarter of Sirmaur district in the state of Himachal Pradesh, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/03012020EX5LZU5R47thEACMoM.pdf/page1-960px-03012020EX5LZU5R47thEACMoM.pdf.jpg",
+        "alt": "Kala Amb"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/03012020EX5LZU5R47thEACMoM.pdf/page1-960px-03012020EX5LZU5R47thEACMoM.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Suketi",
+      "category": "nature",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Suketi is a village in Sirmaur District, Himachal Pradesh, India. It has Asia's oldest Fossil park Shivalik Fossil Park.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Suketi_Khad.jpg",
+        "alt": "Suketi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Suketi_Khad.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1f/Confluence_of_Beas_and_Suketi_River.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Travelling_Slacker%2C_Suketi_Bridge_%28Mandi%29_DSC_0202.jpg/1280px-Travelling_Slacker%2C_Suketi_Bridge_%28Mandi%29_DSC_0202.jpg"
+      ]
+    },
+    {
+      "name": "Sangrani",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Sangrani is a small village of Naraingarh Tehsil, Ambala district, in the state of Haryana, India. It is situated in the foothills of the Shiwalik mountain range and on the bank of Arun River which pours along with Markanda River which is a spiritual and holy river for the local mass.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Annals_and_Antiquities_of_Rajasthan_Vol_3.djvu/page1-1280px-Annals_and_Antiquities_of_Rajasthan_Vol_3.djvu.jpg",
+        "alt": "Sangrani"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Annals_and_Antiquities_of_Rajasthan_Vol_3.djvu/page1-1280px-Annals_and_Antiquities_of_Rajasthan_Vol_3.djvu.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Annals_and_antiquities_of_Rajasthan%2C_or_The_central_and_western_Rajput_states_of_India_%28IA_annalsantiquitie03todj%29.pdf/page1-500px-Annals_and_antiquities_of_Rajasthan%2C_or_The_central_and_western_Rajput_states_of_India_%28IA_annalsantiquitie03todj%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Roranwali",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Roranwali is a village in Hanumangarh district, Rajasthan state of western India. The town of Hanumangarh is the district headquarters.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Savita_Punia_hockey_player_visiting_her_ancestral_Jhansal_village_Bhadra%2C_Hanumangarh_Rajasthan._Savita_Punia_receiving_silver_hockey_stick_from_Jhansal_village_panchayat.jpg",
+        "alt": "Roranwali"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/82/Savita_Punia_hockey_player_visiting_her_ancestral_Jhansal_village_Bhadra%2C_Hanumangarh_Rajasthan._Savita_Punia_receiving_silver_hockey_stick_from_Jhansal_village_panchayat.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Village_at_Hanumangarh.jpg/960px-Village_at_Hanumangarh.jpg"
+      ]
+    },
+    {
+      "name": "Nahan",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Nahan is a town located in the Sirmaur district of the Indian state of Himachal Pradesh. It serves as the administrative headquarters of Sirmaur district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rani_Tal_Shiv_Temple%2C_Nahan%2C_Himachal_Pradesh.jpg/1280px-Rani_Tal_Shiv_Temple%2C_Nahan%2C_Himachal_Pradesh.jpg",
+        "alt": "Nahan"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rani_Tal_Shiv_Temple%2C_Nahan%2C_Himachal_Pradesh.jpg/1280px-Rani_Tal_Shiv_Temple%2C_Nahan%2C_Himachal_Pradesh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Rani_Tal%2C_Nahan%2C_Himachal_Pradesh.jpg/1280px-Rani_Tal%2C_Nahan%2C_Himachal_Pradesh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Banethi_forest_rest_house_%2CSirmaur_%2CNahan_%2CHimachal_Pardesh_01.jpg/1280px-Banethi_forest_rest_house_%2CSirmaur_%2CNahan_%2CHimachal_Pardesh_01.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Kala Amb & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kala Amb",
+          "note": "Kala Amb is the industrial capital of the Sirmaur district in Himachal Pradesh. It is a small town and an industrial area near Nahan which is the district headquarter of Sirmaur district in the state of Himachal Pradesh, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Suketi",
+          "note": "Suketi is a village in Sirmaur District, Himachal Pradesh, India. It has Asia's oldest Fossil park Shivalik Fossil Park."
+        },
+        {
+          "time": "Evening",
+          "activity": "Sangrani",
+          "note": "Sangrani is a small village of Naraingarh Tehsil, Ambala district, in the state of Haryana, India. It is situated in the foothills of the Shiwalik mountain range and on the bank of Arun River which pours along with Markanda River which is a spiritual and holy river for the local mass."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Roranwali & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Roranwali",
+          "note": "Roranwali is a village in Hanumangarh district, Rajasthan state of western India. The town of Hanumangarh is the district headquarters."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Nahan",
+          "note": "Nahan is a town located in the Sirmaur district of the Indian state of Himachal Pradesh. It serves as the administrative headquarters of Sirmaur district."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel HV",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Trilokpur Stay"
+      }
+    },
+    {
+      "name": "Paris Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Trilokpur"
+      }
+    },
+    {
+      "name": "Royal Guest House",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Trilokpur Grand Hotel"
+      }
+    },
+    {
+      "name": "PWD Rest House",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Trilokpur"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Cultural",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Ma_Trilokpur_Devi_Temple.jpg",
+      "alt": "Trilokpur photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/The_temple_of_Shiva_Mandir.jpg/1280px-The_temple_of_Shiva_Mandir.jpg",
+      "alt": "Trilokpur photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Trilokpur_temple2.jpg/1280px-Trilokpur_temple2.jpg",
+      "alt": "Trilokpur photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Trilokpur_temple3.jpg",
+      "alt": "Trilokpur photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Trilokpur_temple.jpg/1280px-Trilokpur_temple.jpg",
+      "alt": "Trilokpur photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Trilokpur?",
+      "a": "The best time to visit Trilokpur is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Trilokpur?",
+      "a": "The nearest airport is Trilokpur / nearest airport (30 km) and the nearest railway station is Ambala Cantt Junction (41 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Trilokpur?",
+      "a": "2 days are usually enough to cover the top attractions of Trilokpur at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Trilokpur?",
+      "a": "Stays in Trilokpur start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Trilokpur?",
+      "a": "The top attractions are Kala Amb, Suketi, Sangrani, Roranwali, Nahan."
+    }
+  ],
+  "seo": {
+    "title": "Trilokpur Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Trilokpur (Hindi: त्रिलोकपुर) is a Hindu temple site in Himachal Pradesh, India. Plan your Trilokpur trip: 5 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=trilokpur",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/7/75/Ma_Trilokpur_Devi_Temple.jpg",
+    "keywords": [
+      "Trilokpur travel guide",
+      "places to visit in Trilokpur",
+      "Trilokpur hotels",
+      "best time to visit Trilokpur",
+      "how to reach Trilokpur",
+      "Himachal Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

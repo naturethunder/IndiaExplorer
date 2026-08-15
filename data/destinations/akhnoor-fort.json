@@ -1,0 +1,581 @@
+{
+  "slug": "akhnoor-fort",
+  "title": "Akhnoor Fort",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Akhnoor Fort — heritage city of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg/1280px-Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg",
+    "alt": "Akhnoor Fort, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "Akhnoor Fort is a fort on the right bank of the Chenab River (ancient name Asikni), 28 km from Jammu City.",
+    "description": "Akhnoor Fort is a fort on the right bank of the Chenab River (ancient name Asikni), 28 km from Jammu City. Construction of the fort was started by Raja Tej Singh in 1762 CE and completed by his successor Raja Dhian Singh in 1802. On 17 June 1822, Maharaja Ranjit Singh crowned Maharaja Gulab Singh at the fort's Jia Pota ghat on Chenab's riverbank. The fort has high fortification walls with bastions at regular intervals and is crowned with battlements.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.8,
+    "reviewCount": 15591,
+    "minPrice": 900,
+    "distanceFromDelhi": 531
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 32.89603811,
+    "lng": 74.74005829,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 28,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 22 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 176,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 141 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 373,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 298 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 380,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 304 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 385,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 308 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 530,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 424 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 664,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 531 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 675,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 540 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 841,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 673 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 886,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 709 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1379,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1103 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1398,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1118 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1618,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1294 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1719,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1375 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1754,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1403 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Akhnoor Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 22
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Akhnoor",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Akhnoor is a town and municipal committee, near city of Jammu in Jammu district of Indian union territory of Jammu and Kashmir. It lies 28 km away from Jammu city.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg/1280px-Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg",
+        "alt": "Akhnoor"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg/1280px-Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Chenab_River_in_Akhanoor%2C_India.jpg/1280px-Chenab_River_in_Akhanoor%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Fort_at_Akhnoor_2013-09-05_12-15-20.jpg"
+      ]
+    },
+    {
+      "name": "Dar (village)",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Dar is a small village located in the Akhnoor tehsil of the Jammu district in the Union Territory of Jammu and Kashmir, India. It is situated in a region with significant historical and strategic importance near the Chenab River.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Boy_in_Dar_ul-Ihsan_Mosque.jpg/1280px-Boy_in_Dar_ul-Ihsan_Mosque.jpg",
+        "alt": "Dar (village)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Boy_in_Dar_ul-Ihsan_Mosque.jpg/1280px-Boy_in_Dar_ul-Ihsan_Mosque.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Myslivny_bozi_dar_lake.jpg/1280px-Myslivny_bozi_dar_lake.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Dar_es_Salaam_before_dusk.jpg/1280px-Dar_es_Salaam_before_dusk.jpg"
+      ]
+    },
+    {
+      "name": "Operation Grand Slam",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Operation Grand Slam was a key military operation of the Indo-Pakistani War of 1965. It refers to a plan drawn up by the Pakistan Army in May 1965, that consisted of an attack on the vital Akhnoor Bridge in Jammu and Kashmir, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Operation_Grand_Slam.jpg",
+        "alt": "Operation Grand Slam"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Operation_Grand_Slam.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Operation_GRAND_SLAM%2C_1_May_1960_%2823408835712%29.jpg/1280px-Operation_GRAND_SLAM%2C_1_May_1960_%2823408835712%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/M48_Patton.jpg"
+      ]
+    },
+    {
+      "name": "Manda, Jammu",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Manda is a village and an archaeological site in the Jammu district of the Union Territory of Jammu and Kashmir, India. It was excavated by Archaeological Survey of India during 1976-77 by J. P. Joshi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Punjabi_language_in_devanagri_script_manda_zoo_jammu_sivender.jpg/1280px-Punjabi_language_in_devanagri_script_manda_zoo_jammu_sivender.jpg",
+        "alt": "Manda, Jammu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Punjabi_language_in_devanagri_script_manda_zoo_jammu_sivender.jpg/1280px-Punjabi_language_in_devanagri_script_manda_zoo_jammu_sivender.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Carte_Indus.jpg"
+      ]
+    },
+    {
+      "name": "Marh",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Marh is a village and municipality in Jammu district of the Indian union territory of Jammu and Kashmir. The village is located 26 kilometres from district headquarters Jammu.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Wahlkreise_zur_Vidhan_Sabha_von_Jammu_%26_Kashmir_%282022%29.svg/1280px-Wahlkreise_zur_Vidhan_Sabha_von_Jammu_%26_Kashmir_%282022%29.svg.png",
+        "alt": "Marh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Wahlkreise_zur_Vidhan_Sabha_von_Jammu_%26_Kashmir_%282022%29.svg/1280px-Wahlkreise_zur_Vidhan_Sabha_von_Jammu_%26_Kashmir_%282022%29.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Berlin_UBI_marh_%2848962529863%29.jpg/1280px-Berlin_UBI_marh_%2848962529863%29.jpg"
+      ]
+    },
+    {
+      "name": "Khairi",
+      "category": "cultural",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Khairi is a village of Tehsil Mirpur, Pakistan. It is split into Upper Khairi and Lower Khairi and has the population of around 300.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Khairi_Hanoun.jpg",
+        "alt": "Khairi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Khairi_Hanoun.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Khairi_Al-Hindawi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/Khairi_al-Hindawi.jpg"
+      ]
+    },
+    {
+      "name": "Bala, Prayagraj",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Bala is a village in Prayagraj, Uttar Pradesh, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Bala_Station.JPG/1280px-Bala_Station.JPG",
+        "alt": "Bala, Prayagraj"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Bala_Station.JPG/1280px-Bala_Station.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Y_Bala_-_Bala_-_geograph.org.uk_-_4160831.jpg/1280px-Y_Bala_-_Bala_-_geograph.org.uk_-_4160831.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Y_Bala_-_Bala_-_geograph.org.uk_-_4160792.jpg/1280px-Y_Bala_-_Bala_-_geograph.org.uk_-_4160792.jpg"
+      ]
+    },
+    {
+      "name": "Bhalwal, India",
+      "category": "scenic",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Bhalwal is a census town in Jammu district in the Indian union territory of Jammu and Kashmir.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bhalwal%2C_Pakistan_-_panoramio.jpg/1280px-Bhalwal%2C_Pakistan_-_panoramio.jpg",
+        "alt": "Bhalwal, India"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bhalwal%2C_Pakistan_-_panoramio.jpg/1280px-Bhalwal%2C_Pakistan_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Cist_College_Bhalwal_-_panoramio.jpg/1280px-Cist_College_Bhalwal_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/01/Bhalwal_railway_station.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Akhnoor & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Akhnoor",
+          "note": "Akhnoor is a town and municipal committee, near city of Jammu in Jammu district of Indian union territory of Jammu and Kashmir. It lies 28 km away from Jammu city."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Dar (village)",
+          "note": "Dar is a small village located in the Akhnoor tehsil of the Jammu district in the Union Territory of Jammu and Kashmir, India. It is situated in a region with significant historical and strategic importance near the Chenab River."
+        },
+        {
+          "time": "Evening",
+          "activity": "Operation Grand Slam",
+          "note": "Operation Grand Slam was a key military operation of the Indo-Pakistani War of 1965. It refers to a plan drawn up by the Pakistan Army in May 1965, that consisted of an attack on the vital Akhnoor Bridge in Jammu and Kashmir, India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Manda, Jammu & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Manda, Jammu",
+          "note": "Manda is a village and an archaeological site in the Jammu district of the Union Territory of Jammu and Kashmir, India. It was excavated by Archaeological Survey of India during 1976-77 by J. P. Joshi."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Marh",
+          "note": "Marh is a village and municipality in Jammu district of the Indian union territory of Jammu and Kashmir. The village is located 26 kilometres from district headquarters Jammu."
+        },
+        {
+          "time": "Evening",
+          "activity": "Khairi",
+          "note": "Khairi is a village of Tehsil Mirpur, Pakistan. It is split into Upper Khairi and Lower Khairi and has the population of around 300."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Bala, Prayagraj & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bala, Prayagraj",
+          "note": "Bala is a village in Prayagraj, Uttar Pradesh, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Bhalwal, India",
+          "note": "Bhalwal is a census town in Jammu district in the Indian union territory of Jammu and Kashmir."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Girls Hostel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Akhnoor Fort Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Akhnoor Fort",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Akhnoor Fort"
+      }
+    },
+    {
+      "name": "Akhnoor Fort Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Akhnoor Fort Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Akhnoor Fort",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Akhnoor Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg/1280px-Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg",
+      "alt": "Akhnoor Fort photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Fort_at_Akhnoor_2013-09-05_12-15-20.jpg",
+      "alt": "Akhnoor Fort photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Akhnoor_Fort.JPG/1280px-Akhnoor_Fort.JPG",
+      "alt": "Akhnoor Fort photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/The_palace_of_Maharaja_Gulab_Singh%2C_on_the_banks_of_Chenab%2C_Jammu%2C_mid_19th_century.jpg",
+      "alt": "Akhnoor Fort photo 4"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Akhnoor Fort?",
+      "a": "The best time to visit Akhnoor Fort is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Akhnoor Fort?",
+      "a": "The nearest airport is Akhnoor Fort / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (22 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Akhnoor Fort?",
+      "a": "3 days are usually enough to cover the top attractions of Akhnoor Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Akhnoor Fort?",
+      "a": "Stays in Akhnoor Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Akhnoor Fort?",
+      "a": "The top attractions are Akhnoor, Dar (village), Operation Grand Slam, Manda, Jammu, Marh."
+    }
+  ],
+  "seo": {
+    "title": "Akhnoor Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Akhnoor Fort is a fort on the right bank of the Chenab River (ancient name Asikni), 28 km from Jammu City. Plan your Akhnoor Fort trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=akhnoor-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg/1280px-Akhnoor_Fort_-_Jammu_-_Jammu_and_Kashmir_-_DSC_0001.jpg",
+    "keywords": [
+      "Akhnoor Fort travel guide",
+      "places to visit in Akhnoor Fort",
+      "Akhnoor Fort hotels",
+      "best time to visit Akhnoor Fort",
+      "how to reach Akhnoor Fort",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

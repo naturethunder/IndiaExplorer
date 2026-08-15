@@ -1,0 +1,587 @@
+{
+  "slug": "hari-parbat-fort",
+  "title": "Hari Parbat Fort",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Hari Parbat Fort — heritage city of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg/1280px-Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg",
+    "alt": "Hari Parbat Fort, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "Hari Parbat Fort is a historical fortification atop the Hari Parbat hill in Srinagar, Jammu and Kashmir, India.",
+    "description": "Hari Parbat Fort is a historical fortification atop the Hari Parbat hill in Srinagar, Jammu and Kashmir, India. The fort was built during the late 18th/early 19th century by Atta Mohammad Khan, governor of Kashmir under Durrani rule. The fort's rampart dates earlier to the late 16th century, from a non-extant fortification built by Mughal emperor Akbar.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 16398,
+    "minPrice": 900,
+    "distanceFromDelhi": 652
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 34.10603,
+    "lng": 74.81628,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 191,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 153 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 318,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 254 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 344,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 275 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 500,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 400 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 523,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 418 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 649,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 519 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 815,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 652 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 828,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 662 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1006,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 805 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1036,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 829 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1540,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1232 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1565,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1252 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1715,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1372 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1876,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1501 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1896,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1517 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Hari Parbat Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 125
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Hari Parbat",
+      "category": "heritage",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Hari Parbat (Kashmiri pronunciation: [haːri parbatʰ]), also called Koh-i-Maran (Kashmiri pronunciation: [koːhi maːraːn]), is a hill overlooking Srinagar, the largest city and the capital of Jammu and Kashmir, India. It is the site of the Hari Parbat fort, built by the Durrani Empire, and of a Hindu temple, mosques, and gurdwara.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hari_Parbat%2C_Srinagar.jpg/1280px-Hari_Parbat%2C_Srinagar.jpg",
+        "alt": "Hari Parbat"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hari_Parbat%2C_Srinagar.jpg/1280px-Hari_Parbat%2C_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/Hari-parbat_0.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg/1280px-Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg"
+      ]
+    },
+    {
+      "name": "Akhund Mullah Shah Mosque",
+      "category": "heritage",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The Akhund Mullah Shah Masjid, also known as the Akhoon Mullah Masjid, the Dara Shikoh Masjid, and the Mala Shah Mashid, is a former mosque, now in partial ruins, located in Kashmiri, Srinagar, in the Srinagar District, Kashmir Valley, in the union territory of Jammu and Kashmir, India. The former mosque structure is a Monument of National Importance.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-005.jpg/1280px-Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-005.jpg",
+        "alt": "Akhund Mullah Shah Mosque"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-005.jpg/1280px-Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-005.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-002.jpg/1280px-Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-002.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-003.jpg/1280px-Akhund_Mulla_Shah%27s_Mosque_-Srinagar_district_-J%26K_-003.jpg"
+      ]
+    },
+    {
+      "name": "Hawal",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Hawal is a notified area of district Srinagar, the summer capital of union territory of Jammu and Kashmir, India. It is situated in the heart of the Srinagar just about 5 km (3.1 mi) from Lal Chowk Srinagar's one of the first cinemas Firdaus cinema is located here .",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Kashmir_156.JPG/1280px-Kashmir_156.JPG",
+        "alt": "Hawal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Kashmir_156.JPG/1280px-Kashmir_156.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Kashmir_147.JPG/1280px-Kashmir_147.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kashmir_151.JPG/1280px-Kashmir_151.JPG"
+      ]
+    },
+    {
+      "name": "Malkha Cemetery",
+      "category": "nature",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Malkha Cemetery (also spelled Malkhah) is a historic Muslim cemetery located at the foothills of Hari Parbat (Koh-e-Maran) in Srinagar, Jammu and Kashmir. Considered among the oldest and largest graveyards in the Kashmir Valley, the cemetery has historically served as a major burial ground for the city's Muslim population.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Malkhas_Amoyan.jpg",
+        "alt": "Malkha Cemetery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Malkhas_Amoyan.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Malkhas_Amoyan_%282%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Malkhas_Amoyan_3.JPG/1280px-Malkhas_Amoyan_3.JPG"
+      ]
+    },
+    {
+      "name": "Badamwari Park",
+      "category": "nature",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Badamwari Park or Badamvaer is a park in Srinagar, Jammu and Kashmir, India. It is known for the early bloom of almond flowers.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Badamwari_park.jpg/1280px-Badamwari_park.jpg",
+        "alt": "Badamwari Park"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Badamwari_park.jpg/1280px-Badamwari_park.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Entrance_gate_to_Badamwari_Park%2C_Srinagar.jpg/1280px-Entrance_gate_to_Badamwari_Park%2C_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Badamwari_Garden_01.jpg/1280px-Badamwari_Garden_01.jpg"
+      ]
+    },
+    {
+      "name": "Nowhatta",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Nowhatta, (Urdu pronunciation: [nɔːɦəʈʈɑː]) known as Navyut (Kashmiri pronunciation: [naʋʲuʈ]) in Kashmiri, is a town of historical importance situated at a distance of 5 km from Lal Chowk, Srinagar in Jammu and Kashmir, India. Nowhatta is famous because of Historical Mosque known as Jamia Masjid.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jama_Masjid-Shrinagar-Jammu_and_Kashmir-HAN002.jpg/1280px-Jama_Masjid-Shrinagar-Jammu_and_Kashmir-HAN002.jpg",
+        "alt": "Nowhatta"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jama_Masjid-Shrinagar-Jammu_and_Kashmir-HAN002.jpg/1280px-Jama_Masjid-Shrinagar-Jammu_and_Kashmir-HAN002.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/A_gate_of_Jamia_Masjid_in_Srinagar.jpg/1280px-A_gate_of_Jamia_Masjid_in_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Jamia_Masjid_Srinagar.jpg/1280px-Jamia_Masjid_Srinagar.jpg"
+      ]
+    },
+    {
+      "name": "Jamia Masjid, Shopian",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Jama Masjid is an historic Friday mosque, located in Shopian, in the union territory of Jammu and Kashmir, India. The mosque was built during the Mughal period and is very beautiful from both inside and outside.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jamia_masjid_shopian.jpg",
+        "alt": "Jamia Masjid, Shopian"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jamia_masjid_shopian.jpg"
+      ]
+    },
+    {
+      "name": "Jamia Masjid, Srinagar",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "The Jamia Masjid (Kashmiri: بٔڑ مٔشیٖد) is a Friday mosque located at Nowhatta in the Old City of Srinagar, in the Indian-administered union territory of Jammu and Kashmir. The mosque was commissioned by Sultan Sikandar in 1394 CE and completed in 1402 CE, at the behest of Mir Mohammad Hamadani, the son of Mir Sayyid Ali Hamadani, and is regarded as one of the most important mosques in Kashmir.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "alt": "Jamia Masjid, Srinagar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jami_Masjid_eastern_facade_%286133561003%29.jpg/1280px-Jami_Masjid_eastern_facade_%286133561003%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jamia_Masjid_Srinagar_01_%28edited%29.jpg/1280px-Jamia_Masjid_Srinagar_01_%28edited%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Hari Parbat & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Hari Parbat",
+          "note": "Hari Parbat (Kashmiri pronunciation: [haːri parbatʰ]), also called Koh-i-Maran (Kashmiri pronunciation: [koːhi maːraːn]), is a hill overlooking Srinagar, the largest city and the capital of Jammu and Kashmir, India. It is the site of the Hari Parbat fort, built by the Durrani Empire, and of a Hindu temple, mosques, and gurdwara."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Akhund Mullah Shah Mosque",
+          "note": "The Akhund Mullah Shah Masjid, also known as the Akhoon Mullah Masjid, the Dara Shikoh Masjid, and the Mala Shah Mashid, is a former mosque, now in partial ruins, located in Kashmiri, Srinagar, in the Srinagar District, Kashmir Valley, in the union territory of Jammu and Kashmir, India. The former mosque structure is a Monument of National Importance."
+        },
+        {
+          "time": "Evening",
+          "activity": "Hawal",
+          "note": "Hawal is a notified area of district Srinagar, the summer capital of union territory of Jammu and Kashmir, India. It is situated in the heart of the Srinagar just about 5 km (3.1 mi) from Lal Chowk Srinagar's one of the first cinemas Firdaus cinema is located here ."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Malkha Cemetery & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Malkha Cemetery",
+          "note": "Malkha Cemetery (also spelled Malkhah) is a historic Muslim cemetery located at the foothills of Hari Parbat (Koh-e-Maran) in Srinagar, Jammu and Kashmir. Considered among the oldest and largest graveyards in the Kashmir Valley, the cemetery has historically served as a major burial ground for the city's Muslim population."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Badamwari Park",
+          "note": "Badamwari Park or Badamvaer is a park in Srinagar, Jammu and Kashmir, India. It is known for the early bloom of almond flowers."
+        },
+        {
+          "time": "Evening",
+          "activity": "Nowhatta",
+          "note": "Nowhatta, (Urdu pronunciation: [nɔːɦəʈʈɑː]) known as Navyut (Kashmiri pronunciation: [naʋʲuʈ]) in Kashmiri, is a town of historical importance situated at a distance of 5 km from Lal Chowk, Srinagar in Jammu and Kashmir, India. Nowhatta is famous because of Historical Mosque known as Jamia Masjid."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Jamia Masjid, Shopian & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Jamia Masjid, Shopian",
+          "note": "The Jama Masjid is an historic Friday mosque, located in Shopian, in the union territory of Jammu and Kashmir, India. The mosque was built during the Mughal period and is very beautiful from both inside and outside."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Jamia Masjid, Srinagar",
+          "note": "The Jamia Masjid (Kashmiri: بٔڑ مٔشیٖد) is a Friday mosque located at Nowhatta in the Old City of Srinagar, in the Indian-administered union territory of Jammu and Kashmir. The mosque was commissioned by Sultan Sikandar in 1394 CE and completed in 1402 CE, at the behest of Mir Mohammad Hamadani, the son of Mir Sayyid Ali Hamadani, and is regarded as one of the most important mosques in Kashmir."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Mount Inn",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Hari Parbat Fort Stay"
+      }
+    },
+    {
+      "name": "Hotel The Residency",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Hari Parbat Fort"
+      }
+    },
+    {
+      "name": "Hotel Sadaf",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Hari Parbat Fort Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Broadway",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Hari Parbat Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Heritage walks",
+    "Sightseeing",
+    "Nature walks",
+    "Spiritual",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg/1280px-Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg",
+      "alt": "Hari Parbat Fort photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hari_Parbat%2C_Srinagar.jpg/1280px-Hari_Parbat%2C_Srinagar.jpg",
+      "alt": "Hari Parbat Fort photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hari-parbat_0.jpg",
+      "alt": "Hari Parbat Fort photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hari_Parbat%2C_Srinagar%2C_J%26K.jpg/1280px-Hari_Parbat%2C_Srinagar%2C_J%26K.jpg",
+      "alt": "Hari Parbat Fort photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Hari_Parbat_fort_Srinagar.jpg/1280px-Hari_Parbat_fort_Srinagar.jpg",
+      "alt": "Hari Parbat Fort photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Hari Parbat Fort?",
+      "a": "The best time to visit Hari Parbat Fort is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Hari Parbat Fort?",
+      "a": "The nearest airport is Hari Parbat Fort / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (125 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Hari Parbat Fort?",
+      "a": "3 days are usually enough to cover the top attractions of Hari Parbat Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Hari Parbat Fort?",
+      "a": "Stays in Hari Parbat Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Hari Parbat Fort?",
+      "a": "The top attractions are Hari Parbat, Akhund Mullah Shah Mosque, Hawal, Malkha Cemetery, Badamwari Park."
+    }
+  ],
+  "seo": {
+    "title": "Hari Parbat Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Hari Parbat Fort is a historical fortification atop the Hari Parbat hill in Srinagar, Jammu and Kashmir, India. Plan your Hari Parbat Fort trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=hari-parbat-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg/1280px-Hari_Parbat_fort%2C_Srinagar%2C_Jammu_and_Kashmir.jpg",
+    "keywords": [
+      "Hari Parbat Fort travel guide",
+      "places to visit in Hari Parbat Fort",
+      "Hari Parbat Fort hotels",
+      "best time to visit Hari Parbat Fort",
+      "how to reach Hari Parbat Fort",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

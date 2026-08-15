@@ -1,0 +1,444 @@
+{
+  "slug": "thekkady",
+  "title": "Thekkady",
+  "state": "Kerala",
+  "country": "India",
+  "region": "Idukki",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Thekkady — wildlife reserve of Kerala",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boat_safari_at_Periyar_elephant_reserve.jpg/1280px-Boat_safari_at_Periyar_elephant_reserve.jpg",
+    "alt": "Thekkady, Kerala"
+  },
+  "overview": {
+    "short": "Thekkady is a much-loved wildlife reserve in Kerala, known for periyar tiger reserve and spice gardens.",
+    "description": "Thekkady, in Idukki, Kerala, is one of India’s favourite wildlife reserve. Visitors come for its periyar tiger reserve, spice gardens, boating, with the best months being Sep – Mar.",
+    "features": [
+      "Periyar Tiger Reserve",
+      "Spice Gardens",
+      "Boating"
+    ],
+    "altitude": 900,
+    "rating": 4.5,
+    "reviewCount": 18000,
+    "minPrice": 1500,
+    "distanceFromDelhi": 2650
+  },
+  "bestTime": {
+    "label": "Sep – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 9.5916,
+    "lng": 77.1603,
+    "tempSummer": "21–32°C",
+    "tempWinter": "15–25°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 131,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 105 km · road approx."
+      },
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 139,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 111 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 383,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 306 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 488,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 390 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 634,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 507 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 936,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 749 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1071,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 857 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1098,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 878 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1319,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1055 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1610,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1288 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1710,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1368 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1728,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1382 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1833,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1466 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1888,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1510 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 2134,
+        "byCar": "36–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1707 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Thekkady / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Ernakulam Junction (Kochi)",
+      "distance": 105
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Periyar Lake Boat Safari",
+      "category": "wildlife",
+      "distance": "Park",
+      "entryFee": "₹300",
+      "timings": "Varies by season",
+      "duration": "2 hrs",
+      "rating": 4.5,
+      "description": "Boat cruise to spot elephants, bison and birds at the waterline.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boat_safari_at_Periyar_elephant_reserve.jpg/1280px-Boat_safari_at_Periyar_elephant_reserve.jpg",
+        "alt": "Periyar Lake Boat Safari"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boat_safari_at_Periyar_elephant_reserve.jpg/1280px-Boat_safari_at_Periyar_elephant_reserve.jpg"
+      ]
+    },
+    {
+      "name": "Spice Plantation Tour",
+      "category": "nature",
+      "distance": "5 km",
+      "entryFee": "₹300",
+      "timings": "Varies by season",
+      "duration": "2 hrs",
+      "rating": 4.4,
+      "description": "Guided walk through cardamom, pepper and clove gardens.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Cardamom_pods_on_plant_.jpg",
+        "alt": "Spice Plantation Tour"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/Cardamom_pods_on_plant_.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Periyar_National_Park_2019.jpg/1280px-Periyar_National_Park_2019.jpg"
+      ]
+    },
+    {
+      "name": "Periyar Nature Walk",
+      "category": "wildlife",
+      "distance": "Park",
+      "entryFee": "₹500",
+      "timings": "Varies by season",
+      "duration": "3 hrs",
+      "rating": 4.5,
+      "description": "Guided forest trek with armed naturalist in the reserve.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Mycalesis_junonia-Thekkady.jpg/1280px-Mycalesis_junonia-Thekkady.jpg",
+        "alt": "Periyar Nature Walk"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Mycalesis_junonia-Thekkady.jpg/1280px-Mycalesis_junonia-Thekkady.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Junonia_orithya-Thekkady-2016-12-03-001.jpg/1280px-Junonia_orithya-Thekkady-2016-12-03-001.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Acraea_terpsicore-Thekkady-2016-12-03-001.jpg/1280px-Acraea_terpsicore-Thekkady-2016-12-03-001.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Periyar Lake Boat Safari & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Periyar Lake Boat Safari",
+          "note": "Boat cruise to spot elephants, bison and birds at the waterline."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Spice Plantation Tour",
+          "note": "Guided walk through cardamom, pepper and clove gardens."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Periyar Nature Walk",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Periyar Nature Walk",
+          "note": "Guided forest trek with armed naturalist in the reserve."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Villa Prakriti",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1500,
+      "priceMax": 2400,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Thekkady Stay"
+      }
+    },
+    {
+      "name": "Coffee Inn",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2850,
+      "priceMax": 4050,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Thekkady"
+      }
+    },
+    {
+      "name": "Jungle Park Resort",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 6750,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Thekkady Grand Hotel"
+      }
+    },
+    {
+      "name": "Lords Nest",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 9000,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Thekkady"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Wildlife safaris",
+    "Nature walks",
+    "Periyar Tiger Reserve",
+    "Spice Gardens",
+    "Boating"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boat_safari_at_Periyar_elephant_reserve.jpg/1280px-Boat_safari_at_Periyar_elephant_reserve.jpg",
+      "alt": "Thekkady photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Periyar_National_Park_-_2.JPG/1280px-Periyar_National_Park_-_2.JPG",
+      "alt": "Thekkady photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Thekkady?",
+      "a": "The best time to visit Thekkady is Sep – Mar. Summers are 21–32°C and winters are 15–25°C."
+    },
+    {
+      "q": "How do I reach Thekkady?",
+      "a": "The nearest airport is Thekkady / nearest airport (30 km) and the nearest railway station is Ernakulam Junction (Kochi) (105 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Thekkady?",
+      "a": "2 days are usually enough to cover the top attractions of Thekkady at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Thekkady?",
+      "a": "Stays in Thekkady start from ₹1,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Thekkady?",
+      "a": "The top attractions are Periyar Lake Boat Safari, Spice Plantation Tour, Periyar Nature Walk."
+    }
+  ],
+  "seo": {
+    "title": "Thekkady Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Thekkady is a much-loved wildlife reserve in Kerala, known for periyar tiger reserve and spice gardens. Plan your Thekkady trip: 3 places to visit, 4 stays from ₹1500/night, best time (Sep – Mar) and routes.",
+    "canonical": "destination.html?slug=thekkady",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boat_safari_at_Periyar_elephant_reserve.jpg/1280px-Boat_safari_at_Periyar_elephant_reserve.jpg",
+    "keywords": [
+      "Thekkady travel guide",
+      "places to visit in Thekkady",
+      "Thekkady hotels",
+      "best time to visit Thekkady",
+      "how to reach Thekkady",
+      "Kerala tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

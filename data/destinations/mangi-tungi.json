@@ -1,0 +1,433 @@
+{
+  "slug": "mangi-tungi",
+  "title": "Mangi-Tungi",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Mangi-Tungi — spiritual town of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mangi_Tungi_Hill.jpg/1280px-Mangi_Tungi_Hill.jpg",
+    "alt": "Mangi-Tungi, Maharashtra"
+  },
+  "overview": {
+    "short": "Mangi-Tungi is a prominent twin-pinnacled peak and Digambar Jain Pilgrimage Site, located near Tahrabad about 125 km from Nashik, Maharashtra, India.",
+    "description": "Mangi-Tungi is a prominent twin-pinnacled peak and Digambar Jain Pilgrimage Site, located near Tahrabad about 125 km from Nashik, Maharashtra, India. Mangi, 4,343 ft (1,324 m) high above sea level, is the western pinnacle and Tungi, 4,366 ft (1,331 m) high, the eastern. Mangi-Tungi is 30 km (19 mi) from the city of Satana.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 3472,
+    "minPrice": 900,
+    "distanceFromDelhi": 943
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 20.58,
+    "lng": 74.22,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 183,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 146 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 199,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 159 km · road approx."
+      },
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 273,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 218 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 365,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 292 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 560,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 448 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 709,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 567 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 715,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 572 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 966,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 773 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1019,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 815 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1035,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 828 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1069,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 855 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1151,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 921 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1179,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 943 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1316,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1053 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1409,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1127 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Mangi-Tungi / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Nashik Road",
+      "distance": 81
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Satana, India",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Satana is a town and a municipal council in Nashik District in the Indian state of Maharashtra. It is in the taluka of Baglan, which is sometimes called Satana, because of the city's dominance in the taluka.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mangi_tungi_nashik.jpg/1280px-Mangi_tungi_nashik.jpg",
+        "alt": "Satana, India"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mangi_tungi_nashik.jpg/1280px-Mangi_tungi_nashik.jpg"
+      ]
+    },
+    {
+      "name": "Deola",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Deola is a taluka of Nashik district in Maharashtra, India. It is weekly market for surrounding villages.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Horoscope_%28IA_dli.granth.52541%29.pdf/page1-500px-Horoscope_%28IA_dli.granth.52541%29.pdf.jpg",
+        "alt": "Deola"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Horoscope_%28IA_dli.granth.52541%29.pdf/page1-500px-Horoscope_%28IA_dli.granth.52541%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Voyage_En_Suede_In_2_Vols%2CVol-2_%28IA_dli.granth.36415%29.pdf/page1-500px-Voyage_En_Suede_In_2_Vols%2CVol-2_%28IA_dli.granth.36415%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Oeuvres%2C_De_Descartes%2C_%28Vol.I%29_%28IA_dli.granth.35974%29.pdf/page1-500px-Oeuvres%2C_De_Descartes%2C_%28Vol.I%29_%28IA_dli.granth.35974%29.pdf.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Satana, India",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Satana, India",
+          "note": "Satana is a town and a municipal council in Nashik District in the Indian state of Maharashtra. It is in the taluka of Baglan, which is sometimes called Satana, because of the city's dominance in the taluka."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Deola",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Deola",
+          "note": "Deola is a taluka of Nashik district in Maharashtra, India. It is weekly market for surrounding villages."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "OYO Mangi-Tungi Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Mangi-Tungi Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Mangi-Tungi",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Mangi-Tungi"
+      }
+    },
+    {
+      "name": "Mangi-Tungi Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Mangi-Tungi Grand Hotel"
+      }
+    },
+    {
+      "name": "Fortune Park Mangi-Tungi",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Mangi-Tungi"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mangi_Tungi_Hill.jpg/1280px-Mangi_Tungi_Hill.jpg",
+      "alt": "Mangi-Tungi photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Mangi_Tungi_twin_pinnacle.jpg/1280px-Mangi_Tungi_twin_pinnacle.jpg",
+      "alt": "Mangi-Tungi photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mangi_tungi_nashik.jpg/1280px-Mangi_tungi_nashik.jpg",
+      "alt": "Mangi-Tungi photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mangi_Tungi_Nashik.jpg/1280px-Mangi_Tungi_Nashik.jpg",
+      "alt": "Mangi-Tungi photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Colony_No_2%2C_Mangi_Tungi%2C_Maharashtra.jpg/1280px-Colony_No_2%2C_Mangi_Tungi%2C_Maharashtra.jpg",
+      "alt": "Mangi-Tungi photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Mangi-Tungi?",
+      "a": "The best time to visit Mangi-Tungi is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Mangi-Tungi?",
+      "a": "The nearest airport is Mangi-Tungi / nearest airport (30 km) and the nearest railway station is Nashik Road (81 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Mangi-Tungi?",
+      "a": "2 days are usually enough to cover the top attractions of Mangi-Tungi at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Mangi-Tungi?",
+      "a": "Stays in Mangi-Tungi start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Mangi-Tungi?",
+      "a": "The top attractions are Satana, India, Deola."
+    }
+  ],
+  "seo": {
+    "title": "Mangi-Tungi Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Mangi-Tungi is a prominent twin-pinnacled peak and Digambar Jain Pilgrimage Site, located near Tahrabad about 125 km from Nashik, Maharashtra, India. Plan your Mangi-Tungi trip: 2 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=mangi-tungi",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mangi_Tungi_Hill.jpg/1280px-Mangi_Tungi_Hill.jpg",
+    "keywords": [
+      "Mangi-Tungi travel guide",
+      "places to visit in Mangi-Tungi",
+      "Mangi-Tungi hotels",
+      "best time to visit Mangi-Tungi",
+      "how to reach Mangi-Tungi",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true
+}

@@ -1,0 +1,444 @@
+{
+  "slug": "poonch-fort",
+  "title": "Poonch Fort",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Poonch Fort — heritage city of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Poonch_qila.jpg/1280px-Poonch_qila.jpg",
+    "alt": "Poonch Fort, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "Poonch Fort (known locally as Poonch Qila) is a historic fort and palace complex located in Poonch, in the Union Territory of Jammu and Kashmir.",
+    "description": "Poonch Fort (known locally as Poonch Qila) is a historic fort and palace complex located in Poonch, in the Union Territory of Jammu and Kashmir. The fort is one of the most significant architectural remnants of the former semi autonomous jagir of Poonch and reflects a combination of Mughal, Sikh, Dogra, and European architectural influences.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.3,
+    "reviewCount": 10593,
+    "minPrice": 900,
+    "distanceFromDelhi": 645
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 33.767633333,
+    "lng": 74.090041666,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 93,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 74 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 310,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 248 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 405,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 324 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 518,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 414 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 528,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 422 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 668,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 534 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 806,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 645 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 816,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 653 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 974,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 779 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1029,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 823 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1505,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1204 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1515,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1212 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1750,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1400 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1859,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1487 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1865,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1492 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Poonch Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 118
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Poonch (town)",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Poonch (or Punch), (called Prunts in the Kashmiri, Gojri & Pahari languages) is a city and the administrative headquarters of the Poonch district, of the Indian-administered union territory of Jammu and Kashmir, which is part of the larger disputed territory of Kashmir. It is located near the Line of Control – the de facto border in the disputed region.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Punch_Davy_Jones%27s_Locker.png/1280px-Punch_Davy_Jones%27s_Locker.png",
+        "alt": "Poonch (town)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Punch_Davy_Jones%27s_Locker.png/1280px-Punch_Davy_Jones%27s_Locker.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Poonch_city_by_Ajaz_Khawaja.jpg/1280px-Poonch_city_by_Ajaz_Khawaja.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Poonch_Banner_for_WikiVoyage.jpg/1280px-Poonch_Banner_for_WikiVoyage.jpg"
+      ]
+    },
+    {
+      "name": "Kumar, Jammu and Kashmir",
+      "category": "scenic",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Kumār is a city located in Poonch, Jammu and Kashmir, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jammu_and_Kashmir_Reorganisation_Act%2C_2019_Enforcement_Order.pdf/page1-960px-Jammu_and_Kashmir_Reorganisation_Act%2C_2019_Enforcement_Order.pdf.jpg",
+        "alt": "Kumar, Jammu and Kashmir"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Jammu_and_Kashmir_Reorganisation_Act%2C_2019_Enforcement_Order.pdf/page1-960px-Jammu_and_Kashmir_Reorganisation_Act%2C_2019_Enforcement_Order.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Jammu_and_Kashmir_Reorganisation_%28Removal_of_Difficulties%29_Order%2C_2019.pdf/page1-960px-Jammu_and_Kashmir_Reorganisation_%28Removal_of_Difficulties%29_Order%2C_2019.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Jammu_and_Kashmir_Reorganisation_%28Removal_of_Difficulties%29_Second_Order%2C_2019.pdf/page1-960px-Jammu_and_Kashmir_Reorganisation_%28Removal_of_Difficulties%29_Second_Order%2C_2019.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Mangnar",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Mangnar is a village in Poonch district, India, Jammu and Kashmir, India. The name is a combination of two words 'mang' means plain and 'nar' means mountain.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Dubium_an_in_morbo_pestilente%2C_bubone_pestilente%2C_carbunculo_v%C3%A8_pestilente%2C_apparente%2C_ante_septimum_diem_expurga%28n%29ti_medicamento_utiliceat_%28IA_ARes7642103%29.pdf/page1-250px-thumbnail.pdf.jpg",
+        "alt": "Mangnar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Dubium_an_in_morbo_pestilente%2C_bubone_pestilente%2C_carbunculo_v%C3%A8_pestilente%2C_apparente%2C_ante_septimum_diem_expurga%28n%29ti_medicamento_utiliceat_%28IA_ARes7642103%29.pdf/page1-250px-thumbnail.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/The_hook-up_%28IA_hookup52unit%29.pdf/page1-960px-The_hook-up_%28IA_hookup52unit%29.pdf.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Poonch (town) & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Poonch (town)",
+          "note": "Poonch (or Punch), (called Prunts in the Kashmiri, Gojri & Pahari languages) is a city and the administrative headquarters of the Poonch district, of the Indian-administered union territory of Jammu and Kashmir, which is part of the larger disputed territory of Kashmir. It is located near the Line of Control – the de facto border in the disputed region."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kumar, Jammu and Kashmir",
+          "note": "Kumār is a city located in Poonch, Jammu and Kashmir, India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Mangnar",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Mangnar",
+          "note": "Mangnar is a village in Poonch district, India, Jammu and Kashmir, India. The name is a combination of two words 'mang' means plain and 'nar' means mountain."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Gugdar",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Poonch Fort Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Poonch Fort",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Poonch Fort"
+      }
+    },
+    {
+      "name": "Poonch Fort Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Poonch Fort Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Poonch Fort",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Poonch Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Poonch_qila.jpg/1280px-Poonch_qila.jpg",
+      "alt": "Poonch Fort photo 1"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Poonch Fort?",
+      "a": "The best time to visit Poonch Fort is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Poonch Fort?",
+      "a": "The nearest airport is Poonch Fort / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (118 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Poonch Fort?",
+      "a": "2 days are usually enough to cover the top attractions of Poonch Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Poonch Fort?",
+      "a": "Stays in Poonch Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Poonch Fort?",
+      "a": "The top attractions are Poonch (town), Kumar, Jammu and Kashmir, Mangnar."
+    }
+  ],
+  "seo": {
+    "title": "Poonch Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Poonch Fort (known locally as Poonch Qila) is a historic fort and palace complex located in Poonch, in the Union Territory of Jammu and Kashmir. Plan your Poonch Fort trip: 3 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=poonch-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Poonch_qila.jpg/1280px-Poonch_qila.jpg",
+    "keywords": [
+      "Poonch Fort travel guide",
+      "places to visit in Poonch Fort",
+      "Poonch Fort hotels",
+      "best time to visit Poonch Fort",
+      "how to reach Poonch Fort",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

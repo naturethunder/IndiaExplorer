@@ -1,0 +1,554 @@
+{
+  "slug": "jore-pokhri-wildlife-sanctuary",
+  "title": "Jore Pokhri Wildlife Sanctuary",
+  "state": "West Bengal",
+  "country": "India",
+  "region": "West Bengal",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Jore Pokhri Wildlife Sanctuary — wildlife reserve of West Bengal",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg/1280px-Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg.png",
+    "alt": "Jorebunglow Sukhiapokhri (community development block)"
+  },
+  "overview": {
+    "short": "Jore Pokhri Wildlife Sanctuary is located in Darjeeling District, West Bengal.",
+    "description": "Jore Pokhri Wildlife Sanctuary is located in Darjeeling District, West Bengal. Situated at an elevation of about 2 km, it is the habitat of some high-altitude animals like Himalayan Salamander (Tylototriton verrucosus), locally known as 'Gora'. Many animals and birds are found there. Jore Pokhari is a small village on a hilltop which is almost 20 kilometers away from Darjeeling town.",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 20156,
+    "minPrice": 2500,
+    "distanceFromDelhi": 1091
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 26.99118,
+    "lng": 88.1573,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 48,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 38 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 74,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 59 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 424,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 339 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 460,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 368 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 505,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 404 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 589,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 471 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 621,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 497 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 675,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 540 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 688,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 550 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 730,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 584 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 764,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 611 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 784,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 627 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 976,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 781 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1150,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 920 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1318,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1054 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Jore Pokhri Wildlife Sanctuary / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Siliguri Junction",
+      "distance": 41
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Jorebunglow Sukhiapokhri (community development block)",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Jorebunglow Sukhiapokhri is a community development block (CD block) that forms an administrative division in the Darjeeling Sadar subdivision of the Darjeeling district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg/1280px-Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg.png",
+        "alt": "Jorebunglow Sukhiapokhri (community development block)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg/1280px-Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg.png"
+      ]
+    },
+    {
+      "name": "Sukhia Pokhri",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Sukhia Pokhri is a census town in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the indian state of West Bengal. It is located 11 km from Ghum on the way to Mirik.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sukhiapokhri.jpg",
+        "alt": "Sukhia Pokhri"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Sukhiapokhri.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/29/Sukhiapokhri_Weekly_Market.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/SUKHIAPOKHRI.jpg/1280px-SUKHIAPOKHRI.jpg"
+      ]
+    },
+    {
+      "name": "Poobong Tea Garden",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Poobong Tea Garden (also spelled Pubong) is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in West Bengal, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Poobong.JPG",
+        "alt": "Poobong Tea Garden"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a6/Poobong.JPG"
+      ]
+    },
+    {
+      "name": "Chamong Tea Garden",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Chamong Tea Garden (also called Chamu Tea Garden) is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the state of West Bengal, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chamong Tea Garden"
+      },
+      "photos": []
+    },
+    {
+      "name": "Pokhriabong",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Pokhriabong (also spelt as Pokhribong or Pokhrabong) is a village in the Jorebunglow Sukhiapokri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in West Bengal, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pokhriabong_lepcha_monastery_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_West_Bengal.jpg",
+        "alt": "Pokhriabong"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pokhriabong_lepcha_monastery_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_West_Bengal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pokhriabong_lepcha_monastery_Darjeeling_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_Darjeeling_West_Bengal.jpg"
+      ]
+    },
+    {
+      "name": "Manebhanjyang, Darjeeling",
+      "category": "wildlife",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Maney Bhanjyang (1,946 m) is a small transit-town in the Darjeeling Sadar subdivision, Darjeeling district in the state of West Bengal in India. It is located at the gateway of the Singalila National Park, 28 km away from Darjeeling.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Maneybhanjang_%288716434967%29.jpg",
+        "alt": "Manebhanjyang, Darjeeling"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Maneybhanjang_%288716434967%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Manebhanjang.jpg/1280px-Manebhanjang.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Maneybhanjang_%288716434951%29.jpg"
+      ]
+    },
+    {
+      "name": "Pokhriabong Lepcha Monastery",
+      "category": "spiritual",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Pokhriabong Lepcha Monastery, also popularly known as the \"Boudha Terda Pema Lingpa Lepcha Community Gompa\", is located in the Indian state of West Bengal, approximately 30 km from the town of Darjeeling at a place called Pokhriabong. The monastery follows the teachings and practices of the Nyingma school, which is the oldest of the four major schools of Tibetan Buddhism, founded by the Vajrayana revealer Guru Padmasambhava.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pokhriabong_lepcha_monastery_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_West_Bengal.jpg",
+        "alt": "Pokhriabong Lepcha Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pokhriabong_lepcha_monastery_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_West_Bengal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pokhriabong_lepcha_monastery_Darjeeling_West_Bengal.jpg/1280px-Pokhriabong_lepcha_monastery_Darjeeling_West_Bengal.jpg"
+      ]
+    },
+    {
+      "name": "Tumsong Tea Garden",
+      "category": "nature",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Tumsong Tea Garden is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the state of West Bengal, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tumsong Tea Garden"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Jorebunglow Sukhiapokhri (community development block) & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Jorebunglow Sukhiapokhri (community development block)",
+          "note": "Jorebunglow Sukhiapokhri is a community development block (CD block) that forms an administrative division in the Darjeeling Sadar subdivision of the Darjeeling district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Sukhia Pokhri",
+          "note": "Sukhia Pokhri is a census town in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the indian state of West Bengal. It is located 11 km from Ghum on the way to Mirik."
+        },
+        {
+          "time": "Evening",
+          "activity": "Poobong Tea Garden",
+          "note": "Poobong Tea Garden (also spelled Pubong) is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in West Bengal, India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Chamong Tea Garden & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Chamong Tea Garden",
+          "note": "Chamong Tea Garden (also called Chamu Tea Garden) is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the state of West Bengal, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Pokhriabong",
+          "note": "Pokhriabong (also spelt as Pokhribong or Pokhrabong) is a village in the Jorebunglow Sukhiapokri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in West Bengal, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Manebhanjyang, Darjeeling",
+          "note": "Maney Bhanjyang (1,946 m) is a small transit-town in the Darjeeling Sadar subdivision, Darjeeling district in the state of West Bengal in India. It is located at the gateway of the Singalila National Park, 28 km away from Darjeeling."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Pokhriabong Lepcha Monastery & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Pokhriabong Lepcha Monastery",
+          "note": "Pokhriabong Lepcha Monastery, also popularly known as the \"Boudha Terda Pema Lingpa Lepcha Community Gompa\", is located in the Indian state of West Bengal, approximately 30 km from the town of Darjeeling at a place called Pokhriabong. The monastery follows the teachings and practices of the Nyingma school, which is the oldest of the four major schools of Tibetan Buddhism, founded by the Vajrayana revealer Guru Padmasambhava."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Tumsong Tea Garden",
+          "note": "Tumsong Tea Garden is a village in the Jorebunglow Sukhiapokhri CD block in the Darjeeling Sadar subdivision of the Darjeeling district in the state of West Bengal, India."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Anand Palace",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Jore Pokhri Wildlife Sanctuary Stay"
+      }
+    },
+    {
+      "name": "Hotel Tranquility",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Jore Pokhri Wildlife Sanctuary"
+      }
+    },
+    {
+      "name": "Hotel Sonam",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jore Pokhri Wildlife Sanctuary Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Shikher",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Jore Pokhri Wildlife Sanctuary"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Cultural",
+    "Wildlife safaris",
+    "Spiritual",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [],
+  "faq": [
+    {
+      "q": "What is the best time to visit Jore Pokhri Wildlife Sanctuary?",
+      "a": "The best time to visit Jore Pokhri Wildlife Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Jore Pokhri Wildlife Sanctuary?",
+      "a": "The nearest airport is Jore Pokhri Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Siliguri Junction (41 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Jore Pokhri Wildlife Sanctuary?",
+      "a": "3 days are usually enough to cover the top attractions of Jore Pokhri Wildlife Sanctuary at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Jore Pokhri Wildlife Sanctuary?",
+      "a": "Stays in Jore Pokhri Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Jore Pokhri Wildlife Sanctuary?",
+      "a": "The top attractions are Jorebunglow Sukhiapokhri (community development block), Sukhia Pokhri, Poobong Tea Garden, Chamong Tea Garden, Pokhriabong."
+    }
+  ],
+  "seo": {
+    "title": "Jore Pokhri Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Jore Pokhri Wildlife Sanctuary is located in Darjeeling District, West Bengal. Plan your Jore Pokhri Wildlife Sanctuary trip: 8 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=jore-pokhri-wildlife-sanctuary",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg/1280px-Jorebunglow_Sukiapokhri_in_Darjeeling_%28West_Bengal%29.svg.png",
+    "keywords": [
+      "Jore Pokhri Wildlife Sanctuary travel guide",
+      "places to visit in Jore Pokhri Wildlife Sanctuary",
+      "Jore Pokhri Wildlife Sanctuary hotels",
+      "best time to visit Jore Pokhri Wildlife Sanctuary",
+      "how to reach Jore Pokhri Wildlife Sanctuary",
+      "West Bengal tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

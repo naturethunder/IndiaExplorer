@@ -1,0 +1,483 @@
+{
+  "slug": "adhyatma-niketan",
+  "title": "Adhyatma Niketan",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "region": "Madhya Pradesh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Adhyatma Niketan — heritage city of Madhya Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg/1280px-ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg",
+    "alt": "Adhyatma Niketan, Madhya Pradesh"
+  },
+  "overview": {
+    "short": "Adhyatma Niketan is an ashram in Gwalior, Madhya Pradesh, India.",
+    "description": "Adhyatma Niketan is an ashram in Gwalior, Madhya Pradesh, India. It is situated on Koteshwar Road, Near Vinay Nagar sector-1, is around 7 km from the Gwalior Railway station. The land was purchased by Huzur Malik Saheb Sant Yogi ManSingh ji in 1961 to establish an ashram. When Swami Vishnu Tirth Ji Maharaj visited Gwalior on 11 April 1960, the place was inaugurated and named 'Adhyatma Niketan'.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 18379,
+    "minPrice": 900,
+    "distanceFromDelhi": 289
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 26.14,
+    "lng": 78.1,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 145,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 116 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 308,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 246 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 349,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 279 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 361,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 289 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 410,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 328 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 580,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 464 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 659,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 527 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 699,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 559 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 705,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 564 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 815,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 652 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 823,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 658 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 859,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 687 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 884,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 707 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 989,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 791 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 996,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 797 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Adhyatma Niketan / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Gwalior Junction",
+      "distance": 12
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Maharaj Bada, Gwalior",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Maharaj Bada or Maharaja Square is one of the most significant and lively places of Gwalior, Madhya Pradesh, India. It is known as the most beautiful square in Asia consisting of six different architectural halls namely: the Victoria Hall, the Town Hall, the Gwalior State Minting Hall, the American Hall, the Saudi Hall and the Opera Hall.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Maharaj_Bada_Gwalior.jpg/1280px-Maharaj_Bada_Gwalior.jpg",
+        "alt": "Maharaj Bada, Gwalior"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Maharaj_Bada_Gwalior.jpg/1280px-Maharaj_Bada_Gwalior.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Maharaj_Bada.jpg"
+      ]
+    },
+    {
+      "name": "Rail Spring Karkhana",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Rail Spring Karkhana (Rail Spring Factory) (Hindi: रेल स्प्रिंग कारखाना), located near Sithouli Railway Station around 12.8 km way from Gwalior Railway Station Gwalior in the Indian state of Madhya Pradesh. It is a major railway workshop for Indian Railways which manufacture Hot Coil Springs of different types for diverse Rolling Stocks.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Rail Spring Karkhana"
+      },
+      "photos": []
+    },
+    {
+      "name": "Diocese of Gwalior",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "The Roman Catholic Diocese of Gwalior (Latin: Gwalioren(sis)) is a diocese located in the city of Gwalior in the ecclesiastical province of Bhopal in India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Map_of_Roman_Catholic_Diocese_of_Gwailor.png/1280px-Map_of_Roman_Catholic_Diocese_of_Gwailor.png",
+        "alt": "Diocese of Gwalior"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Map_of_Roman_Catholic_Diocese_of_Gwailor.png/1280px-Map_of_Roman_Catholic_Diocese_of_Gwailor.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/India_Catholic_Dioceses.svg/1280px-India_Catholic_Dioceses.svg.png"
+      ]
+    },
+    {
+      "name": "Usha Kiran Palace",
+      "category": "heritage",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Usha Kiran Palace is a heritage hotel, adjacent to Jai Vilas Mahal on a 9-acre land in Gwalior built by the royal Scindia dynasty of the Marathas. The management of the five-star hotel is done by Taj Hotels Resorts and Palaces.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Taj_Usha_Kiran_Palace_Hotel_doorman.jpg/1280px-Taj_Usha_Kiran_Palace_Hotel_doorman.jpg",
+        "alt": "Usha Kiran Palace"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Taj_Usha_Kiran_Palace_Hotel_doorman.jpg/1280px-Taj_Usha_Kiran_Palace_Hotel_doorman.jpg"
+      ]
+    },
+    {
+      "name": "Jai Vilas Mahal",
+      "category": "heritage",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "The Jai Vilas Palace is a nineteenth-century palace in Gwalior, India. It was built in 1874 by Jayajirao Scindia, the Maharaja of Gwalior in the British Raj.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/WV_banner_Northern_Madhya_Pradesh_Jai_Vilas_Mahal_in_Gwalior.jpg/1280px-WV_banner_Northern_Madhya_Pradesh_Jai_Vilas_Mahal_in_Gwalior.jpg",
+        "alt": "Jai Vilas Mahal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/WV_banner_Northern_Madhya_Pradesh_Jai_Vilas_Mahal_in_Gwalior.jpg/1280px-WV_banner_Northern_Madhya_Pradesh_Jai_Vilas_Mahal_in_Gwalior.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Jai_Vilas_Mahal_123.jpg/1280px-Jai_Vilas_Mahal_123.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Maharaj Bada, Gwalior & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Maharaj Bada, Gwalior",
+          "note": "Maharaj Bada or Maharaja Square is one of the most significant and lively places of Gwalior, Madhya Pradesh, India. It is known as the most beautiful square in Asia consisting of six different architectural halls namely: the Victoria Hall, the Town Hall, the Gwalior State Minting Hall, the American Hall, the Saudi Hall and the Opera Hall."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Rail Spring Karkhana",
+          "note": "The Rail Spring Karkhana (Rail Spring Factory) (Hindi: रेल स्प्रिंग कारखाना), located near Sithouli Railway Station around 12.8 km way from Gwalior Railway Station Gwalior in the Indian state of Madhya Pradesh. It is a major railway workshop for Indian Railways which manufacture Hot Coil Springs of different types for diverse Rolling Stocks."
+        },
+        {
+          "time": "Evening",
+          "activity": "Diocese of Gwalior",
+          "note": "The Roman Catholic Diocese of Gwalior (Latin: Gwalioren(sis)) is a diocese located in the city of Gwalior in the ecclesiastical province of Bhopal in India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Usha Kiran Palace & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Usha Kiran Palace",
+          "note": "Usha Kiran Palace is a heritage hotel, adjacent to Jai Vilas Mahal on a 9-acre land in Gwalior built by the royal Scindia dynasty of the Marathas. The management of the five-star hotel is done by Taj Hotels Resorts and Palaces."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Jai Vilas Mahal",
+          "note": "The Jai Vilas Palace is a nineteenth-century palace in Gwalior, India. It was built in 1874 by Jayajirao Scindia, the Maharaja of Gwalior in the British Raj."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Tansen Residency",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tansen_Residency_Hotel_%2CGandhi_Road_%2C_Gwalior_%28_The_Hotel_of_Madhya_Pradesh_Tourism_Department%29_-_panoramio.jpg/960px-Tansen_Residency_Hotel_%2CGandhi_Road_%2C_Gwalior_%28_The_Hotel_of_Madhya_Pradesh_Tourism_Department%29_-_panoramio.jpg",
+        "alt": "Tansen Residency"
+      }
+    },
+    {
+      "name": "Central Park",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Adhyatma Niketan"
+      }
+    },
+    {
+      "name": "Sun Beam",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sun_Beam_Hotel_-_panoramio.jpg/960px-Sun_Beam_Hotel_-_panoramio.jpg",
+        "alt": "Sun Beam"
+      }
+    },
+    {
+      "name": "Hotel Mayur",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Adhyatma Niketan"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Heritage walks",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg/1280px-ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg",
+      "alt": "Adhyatma Niketan, Madhya Pradesh"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Adhyatma Niketan?",
+      "a": "The best time to visit Adhyatma Niketan is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Adhyatma Niketan?",
+      "a": "The nearest airport is Adhyatma Niketan / nearest airport (30 km) and the nearest railway station is Gwalior Junction (12 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Adhyatma Niketan?",
+      "a": "2 days are usually enough to cover the top attractions of Adhyatma Niketan at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Adhyatma Niketan?",
+      "a": "Stays in Adhyatma Niketan start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Adhyatma Niketan?",
+      "a": "The top attractions are Maharaj Bada, Gwalior, Rail Spring Karkhana, Diocese of Gwalior, Usha Kiran Palace, Jai Vilas Mahal."
+    }
+  ],
+  "seo": {
+    "title": "Adhyatma Niketan Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Adhyatma Niketan is an ashram in Gwalior, Madhya Pradesh, India. Plan your Adhyatma Niketan trip: 5 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=adhyatma-niketan",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg/1280px-ACHARYA_SHRI_SUDARSHAN_JI_MAHARAJ.jpg",
+    "keywords": [
+      "Adhyatma Niketan travel guide",
+      "places to visit in Adhyatma Niketan",
+      "Adhyatma Niketan hotels",
+      "best time to visit Adhyatma Niketan",
+      "how to reach Adhyatma Niketan",
+      "Madhya Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

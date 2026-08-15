@@ -1,0 +1,664 @@
+{
+  "slug": "shekhawati",
+  "title": "Shekhawati",
+  "state": "Rajasthan",
+  "country": "India",
+  "region": "Jhunjhunu & Sikar",
+  "type": "heritage",
+  "badge": "Open-Air Art Gallery",
+  "tagline": "Historic region renowned for grand merchant havelis adorned with vibrant fresco murals",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Shekhawati_painted_houses.jpg/1280px-Shekhawati_painted_houses.jpg",
+    "alt": "Shekhawati, Rajasthan"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Shekhawati_painted_houses.jpg/1280px-Shekhawati_painted_houses.jpg",
+    "alt": "Shekhawati, Rajasthan"
+  },
+  "overview": {
+    "short": "Historic region renowned for grand merchant havelis adorned with vibrant fresco murals.",
+    "description": "Shekhawati is a semi-arid region in Rajasthan famed as the world's largest open-air art gallery. Built by wealthy Marwari merchants during the 18th-19th centuries, thousands of grand havelis in Mandawa, Nawalgarh, and Fatehpur are decorated with intricate wall frescoes.",
+    "features": [
+      "Fresco Painted Haveli Walk",
+      "Mandawa Fort",
+      "Nawalgarh Heritage Mansions",
+      "Camel Safari"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1840,
+    "minPrice": 2500,
+    "distanceFromDelhi": 230
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 28.1289,
+    "lng": 75.3994,
+    "tempSummer": "24–42°C",
+    "tempWinter": "8–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 176,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 141 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 205,
+        "byCar": "3–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 164 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 231,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 185 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 348,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 278 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 399,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 319 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 441,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 353 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 466,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 373 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 491,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 393 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 643,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 514 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 723,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 578 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 794,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 635 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 876,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 701 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1076,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 861 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1123,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 898 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1238,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 990 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1258,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1006 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1408,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1126 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1545,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1236 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1614,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1291 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1629,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1303 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1711,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1369 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1750,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1400 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1769,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1415 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2038,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1630 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2071,
+        "byCar": "35–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1657 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2074,
+        "byCar": "35–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1659 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 2116,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1693 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 2185,
+        "byCar": "36–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1748 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2245,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1796 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2248,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1798 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 2321,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1857 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2341,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1873 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2350,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1880 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 2469,
+        "byCar": "41–55 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1975 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 2533,
+        "byCar": "42–56 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2026 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 3215,
+        "byCar": "54–71 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2572 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Jaipur International Airport (JAI)",
+      "distance": 165
+    },
+    "nearestRailway": {
+      "name": "Jhunjhunu / Nawalgarh Railway Station",
+      "distance": 15
+    },
+    "roadNote": "Easy highway access from Delhi and Jaipur."
+  },
+  "topPlaces": [
+    {
+      "name": "Castle Mandawa Fort & Armor Museum",
+      "category": "heritage",
+      "distance": "0 km",
+      "entryFee": "₹250",
+      "timings": "9 AM – 6 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "18th-century fort hotel featuring royal armor museum and painted archways.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Castle Mandawa Fort & Armor Museum"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Murmuria & Jhunjhunwala Havelis",
+      "category": "heritage",
+      "distance": "1 km",
+      "entryFee": "₹50",
+      "timings": "8 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Intricately painted merchant havelis featuring frescoes of steam locomotives and myths.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Murmuria & Jhunjhunwala Havelis"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Nawalgarh Poddar Haveli Museum",
+      "category": "heritage",
+      "distance": "28 km",
+      "entryFee": "₹100",
+      "timings": "8 AM – 6:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Meticulously restored haveli containing over 750 detailed fresco paintings.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nawalgarh Poddar Haveli Museum"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Fatehpur Le Prince Haveli",
+      "category": "heritage",
+      "distance": "22 km",
+      "entryFee": "₹150",
+      "timings": "8 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Restored French-Indian heritage haveli turned cultural art center.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Le_Prince_Haveli.jpg/1280px-Le_Prince_Haveli.jpg",
+        "alt": "Fatehpur Le Prince Haveli"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Le_Prince_Haveli.jpg/1280px-Le_Prince_Haveli.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Le_Prince_Haveli_courtyard.JPG/1280px-Le_Prince_Haveli_courtyard.JPG"
+      ]
+    },
+    {
+      "name": "Dundlod Fort & Marwari Horse Stables",
+      "category": "heritage",
+      "distance": "32 km",
+      "entryFee": "₹100",
+      "timings": "9 AM – 5 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Historic fort famed for Marwari horse breeding stables and library.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Dundlod Fort & Marwari Horse Stables"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Churu Sethani Ka Johra Stepwell",
+      "category": "heritage",
+      "distance": "45 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "45 mins",
+      "rating": 4.6,
+      "description": "Massive reservoir stepwell with carved sandstone chatris.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Churu Sethani Ka Johra Stepwell"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Midtown Madness",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 12000,
+      "rating": 4.8,
+      "reviews": 510,
+      "amenities": [
+        "Heritage Rooms",
+        "Pool",
+        "Royal Dining",
+        "Horse Safari"
+      ],
+      "tags": [
+        "Heritage Fort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Shekhawati_painted_houses.jpg/1280px-Shekhawati_painted_houses.jpg",
+        "alt": "Castle Mandawa Heritage Hotel"
+      }
+    },
+    {
+      "name": "Kalu House",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3800,
+      "priceMax": 8000,
+      "rating": 4.7,
+      "reviews": 360,
+      "amenities": [
+        "Frescoed Rooms",
+        "Pool",
+        "Restaurant"
+      ],
+      "tags": [
+        "Heritage Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Shahpura_Haveli_%28Shekhawati%29.jpg/1280px-Shahpura_Haveli_%28Shekhawati%29.jpg",
+        "alt": "The Grand Haveli & Resort Nawalgarh"
+      }
+    },
+    {
+      "name": "Hotel Fresco Palace",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 9500,
+      "rating": 4.8,
+      "reviews": 290,
+      "amenities": [
+        "Spa",
+        "Fresco Art",
+        "Courtyard Dining"
+      ],
+      "tags": [
+        "Culture Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Durbar_Hall%2C_Shahpura_House.jpg/1280px-Durbar_Hall%2C_Shahpura_House.jpg",
+        "alt": "Hotel Vivaana Culture Hotel Churi Ajitgarh"
+      }
+    },
+    {
+      "name": "Nirban Hotel",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 2000,
+      "priceMax": 3800,
+      "rating": 4.5,
+      "reviews": 210,
+      "amenities": [
+        "Rooftop Restaurant",
+        "Fresco Rooms"
+      ],
+      "tags": [
+        "Budget Heritage"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Front_Facade_View_of_Shahpura_House%2C_Shekhawati%2C_Rajputana.jpg/1280px-Front_Facade_View_of_Shahpura_House%2C_Shekhawati%2C_Rajputana.jpg",
+        "alt": "Mandawa Haveli Guest House"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Shekhawati_painted_houses.jpg/1280px-Shekhawati_painted_houses.jpg",
+      "alt": "Shekhawati photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Shahpura_Haveli_%28Shekhawati%29.jpg/1280px-Shahpura_Haveli_%28Shekhawati%29.jpg",
+      "alt": "Shekhawati photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Durbar_Hall%2C_Shahpura_House.jpg/1280px-Durbar_Hall%2C_Shahpura_House.jpg",
+      "alt": "Shekhawati photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Front_Facade_View_of_Shahpura_House%2C_Shekhawati%2C_Rajputana.jpg/1280px-Front_Facade_View_of_Shahpura_House%2C_Shekhawati%2C_Rajputana.jpg",
+      "alt": "Shekhawati photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gate_of_Shahpura_House%2C_Shekhawati%2C_Rajputana_build_by_Shekhawat_Ruler.jpg",
+      "alt": "Shekhawati photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Shekhawati_Musician.jpg/1280px-Shekhawati_Musician.jpg",
+      "alt": "Shekhawati photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is unique about Shekhawati havelis?",
+      "a": "Shekhawati havelis feature grand outdoor and indoor fresco murals painted with natural mineral dyes illustrating folklore, gods, and historical events."
+    }
+  ],
+  "seo": {
+    "title": "Shekhawati Travel Guide 2026 — Painted Havelis, Mandawa, Castle Hotels | IndiaExplore",
+    "description": "Explore Shekhawati in Rajasthan: open-air art gallery of painted Marwari havelis in Mandawa & Nawalgarh, castle hotels and Delhi road route.",
+    "canonical": "destination.html?slug=shekhawati",
+    "ogImage": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Shekhawati Rajasthan",
+      "Mandawa haveli",
+      "Nawalgarh haveli",
+      "Castle Mandawa"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

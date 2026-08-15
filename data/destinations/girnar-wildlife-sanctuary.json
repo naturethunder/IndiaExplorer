@@ -1,0 +1,434 @@
+{
+  "slug": "girnar-wildlife-sanctuary",
+  "title": "Girnar Wildlife Sanctuary",
+  "state": "Gujarat",
+  "country": "India",
+  "region": "Gujarat",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Girnar Wildlife Sanctuary — wildlife reserve of Gujarat",
+  "image": {
+    "src": "https://images.pexels.com/photos/28721468/pexels-photo-28721468.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "alt": "Girnar Mountain landscape, Gujarat"
+  },
+  "heroImage": {
+    "src": "https://images.pexels.com/photos/28721468/pexels-photo-28721468.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "alt": "Girnar Mountain landscape, Gujarat"
+  },
+  "overview": {
+    "short": "Girnar Wildlife Sanctuary is a protected area located in the Junagadh district of Gujarat, India.",
+    "description": "Girnar Wildlife Sanctuary is a protected area located in the Junagadh district of Gujarat, India. Nestled within the Girnar hills, it serves as a crucial habitat for several endangered species, most notably the Asiatic lion. The sanctuary was officially declared a protected area in 2008 to preserve its rich biodiversity and unique ecosystem.",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 4864,
+    "minPrice": 2500,
+    "distanceFromDelhi": 1047
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 21.416666666,
+    "lng": 70.5,
+    "tempSummer": "28–44°C",
+    "tempWinter": "8–25°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 304,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 243 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 335,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 268 km · road approx."
+      },
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 450,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 360 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 603,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 482 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 714,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 571 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 933,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 746 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1188,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 950 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1243,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 994 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1278,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1022 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1309,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1047 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1315,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1052 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1441,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1153 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1498,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1198 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1513,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1210 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1520,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1216 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Girnar Wildlife Sanctuary / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Rajkot Junction",
+      "distance": 101
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Girnar",
+      "category": "nature",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Girnar is an ancient hill in Junagadh, Gujarat, India. It is one of the holiest pilgrimages of Jains, a Mahatirth, where the 22nd Tirthaṅkar, Lord Neminath attained omniscience, and later nirvana at its highest peak (Neminath Shikhar), along with other five hundred and thirty three enlightened sages.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Girnar_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+        "alt": "Girnar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Girnar_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      ],
+      "imageSource": {
+        "provider": "Wikipedia/Wikimedia Commons",
+        "page": "https://en.wikipedia.org/wiki/Girnar",
+        "matchedTitle": "Girnar"
+      }
+    },
+    {
+      "name": "Willingdon Dam",
+      "category": "scenic",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Willingdon Dam is situated to the east of the town of Junagadh, near the foot of Datar hills, in Gujarat State, and built on the Kalwa River in India. The dam was named after Marquess Willingdon, the Governor of India at that time.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Willingdon_Dam_reservoir_%2852522693905%29.jpg/1280px-Willingdon_Dam_reservoir_%2852522693905%29.jpg",
+        "alt": "Willingdon Dam"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Willingdon_Dam_reservoir_%2852522693905%29.jpg/1280px-Willingdon_Dam_reservoir_%2852522693905%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Willingdon_Dam_reservoir_%2852522763803%29.jpg/1280px-Willingdon_Dam_reservoir_%2852522763803%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Willingdon_Dam_reservoir_%2852522492524%29.jpg/1280px-Willingdon_Dam_reservoir_%2852522492524%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Girnar",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Girnar",
+          "note": "Girnar is an ancient hill in Junagadh, Gujarat, India. It is one of the holiest pilgrimages of Jains, a Mahatirth, where the 22nd Tirthaṅkar, Lord Neminath attained omniscience, and later nirvana at its highest peak (Neminath Shikhar), along with other five hundred and thirty three enlightened sages."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Willingdon Dam",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Willingdon Dam",
+          "note": "Willingdon Dam is situated to the east of the town of Junagadh, near the foot of Datar hills, in Gujarat State, and built on the Kalwa River in India. The dam was named after Marquess Willingdon, the Governor of India at that time."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Indralok",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Girnar Wildlife Sanctuary Stay"
+      }
+    },
+    {
+      "name": "The Lotus Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Girnar Wildlife Sanctuary"
+      }
+    },
+    {
+      "name": "Relief Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Girnar Wildlife Sanctuary Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Anand",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Girnar Wildlife Sanctuary"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Nature walks",
+    "Sightseeing",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://images.pexels.com/photos/28721468/pexels-photo-28721468.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Girnar Mountain landscape, Gujarat"
+    }
+  ],
+  "mediaSource": {
+    "provider": "Pexels",
+    "page": "https://www.pexels.com/photo/scenic-view-of-girnar-mountain-in-india-28721468/",
+    "matchedTitle": "Breathtaking view of Girnar Mountain, Gujarat",
+    "author": "Pratik Patil",
+    "license": "Pexels License"
+  },
+  "faq": [
+    {
+      "q": "What is the best time to visit Girnar Wildlife Sanctuary?",
+      "a": "The best time to visit Girnar Wildlife Sanctuary is Oct – Mar. Summers are 28–44°C and winters are 8–25°C."
+    },
+    {
+      "q": "How do I reach Girnar Wildlife Sanctuary?",
+      "a": "The nearest airport is Girnar Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Rajkot Junction (101 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Girnar Wildlife Sanctuary?",
+      "a": "2 days are usually enough to cover the top attractions of Girnar Wildlife Sanctuary at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Girnar Wildlife Sanctuary?",
+      "a": "Stays in Girnar Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Girnar Wildlife Sanctuary?",
+      "a": "The top attractions are Girnar, Willingdon Dam."
+    }
+  ],
+  "seo": {
+    "title": "Girnar Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Girnar Wildlife Sanctuary is a protected area located in the Junagadh district of Gujarat, India. Plan your Girnar Wildlife Sanctuary trip: 2 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=girnar-wildlife-sanctuary",
+    "ogImage": "https://images.pexels.com/photos/28721468/pexels-photo-28721468.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "keywords": [
+      "Girnar Wildlife Sanctuary travel guide",
+      "places to visit in Girnar Wildlife Sanctuary",
+      "Girnar Wildlife Sanctuary hotels",
+      "best time to visit Girnar Wildlife Sanctuary",
+      "how to reach Girnar Wildlife Sanctuary",
+      "Gujarat tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

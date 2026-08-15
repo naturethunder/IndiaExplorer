@@ -1,0 +1,461 @@
+{
+  "slug": "kovalam",
+  "title": "Kovalam",
+  "state": "Kerala",
+  "country": "India",
+  "region": "Thiruvananthapuram",
+  "type": "beach",
+  "badge": "Popular",
+  "tagline": "Kovalam — beach town of Kerala",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+    "alt": "Kovalam, Kerala"
+  },
+  "overview": {
+    "short": "Kovalam is a much-loved beach town in Kerala, known for lighthouse beach and ayurveda.",
+    "description": "Kovalam, in Thiruvananthapuram, Kerala, is one of India’s favourite beach town. Visitors come for its lighthouse beach, ayurveda, surfing, with the best months being Sep – Mar.",
+    "features": [
+      "Lighthouse Beach",
+      "Ayurveda",
+      "Surfing"
+    ],
+    "altitude": null,
+    "rating": 4.4,
+    "reviewCount": 24000,
+    "minPrice": 1200,
+    "distanceFromDelhi": 2800
+  },
+  "bestTime": {
+    "label": "Sep – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 8.4004,
+    "lng": 76.9787,
+    "tempSummer": "27–34°C",
+    "tempWinter": "24–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Thiruvananthapuram (Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "distance": 19,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 15 km · road approx."
+      },
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 264,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 211 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 544,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 435 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 626,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 501 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 666,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 533 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1075,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 860 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1231,
+        "byCar": "21–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 985 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1265,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1012 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1469,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1175 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1758,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1406 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1860,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1488 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1891,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1513 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1996,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1597 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2036,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1629 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2201,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1761 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kovalam / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Thiruvananthapuram Central",
+      "distance": 10
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Lighthouse Beach",
+      "category": "beach",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.5,
+      "description": "Crescent beach watched over by a candy-striped lighthouse.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
+        "alt": "Lighthouse Beach"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kovalam_Lighthouse_Beach.JPG/1280px-Kovalam_Lighthouse_Beach.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kovalam_beach_01.JPG/1280px-Kovalam_beach_01.JPG"
+      ]
+    },
+    {
+      "name": "Hawa Beach",
+      "category": "beach",
+      "distance": "1 km",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.3,
+      "description": "Palm-lined cove popular for sunrise and fishing boats.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+        "alt": "Hawa Beach"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg"
+      ]
+    },
+    {
+      "name": "Vizhinjam Marine Aquarium",
+      "category": "wildlife",
+      "distance": "3 km",
+      "entryFee": "₹30",
+      "timings": "Varies by season",
+      "duration": "1 hr",
+      "rating": 4,
+      "description": "Small aquarium near the historic Vizhinjam fishing harbour.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+        "alt": "Vizhinjam Marine Aquarium"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kovalam_Lighthouse_Beach.JPG/1280px-Kovalam_Lighthouse_Beach.JPG"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Lighthouse Beach & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Lighthouse Beach",
+          "note": "Crescent beach watched over by a candy-striped lighthouse."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Hawa Beach",
+          "note": "Palm-lined cove popular for sunrise and fishing boats."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Vizhinjam Marine Aquarium",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Vizhinjam Marine Aquarium",
+          "note": "Small aquarium near the historic Vizhinjam fishing harbour."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "sri gavuri nivas",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 1900,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Kovalam Stay"
+      }
+    },
+    {
+      "name": "Uday Samudra",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2300,
+      "priceMax": 3250,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Kovalam"
+      }
+    },
+    {
+      "name": "Samudra",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3600,
+      "priceMax": 5400,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kovalam Grand Hotel"
+      }
+    },
+    {
+      "name": "Pankaj Hotel",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 7200,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Kovalam"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Beach time",
+    "Wildlife safaris",
+    "Lighthouse Beach",
+    "Ayurveda",
+    "Surfing"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+      "alt": "Kovalam photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
+      "alt": "Kovalam photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kovalam_Lighthouse_Beach.JPG/1280px-Kovalam_Lighthouse_Beach.JPG",
+      "alt": "Kovalam photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Kovalam_-_view_from_the_lighthouse.jpg/1280px-Kovalam_-_view_from_the_lighthouse.jpg",
+      "alt": "Kovalam photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kovalam_beach_01.JPG/1280px-Kovalam_beach_01.JPG",
+      "alt": "Kovalam photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kovalam_Light_house_beach_evening.jpg/1280px-Kovalam_Light_house_beach_evening.jpg",
+      "alt": "Kovalam photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Kovalam?",
+      "a": "The best time to visit Kovalam is Sep – Mar. Summers are 27–34°C and winters are 24–32°C."
+    },
+    {
+      "q": "How do I reach Kovalam?",
+      "a": "The nearest airport is Kovalam / nearest airport (30 km) and the nearest railway station is Thiruvananthapuram Central (10 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Kovalam?",
+      "a": "2 days are usually enough to cover the top attractions of Kovalam at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Kovalam?",
+      "a": "Stays in Kovalam start from ₹1,200 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Kovalam?",
+      "a": "The top attractions are Lighthouse Beach, Hawa Beach, Vizhinjam Marine Aquarium."
+    }
+  ],
+  "seo": {
+    "title": "Kovalam Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Kovalam is a much-loved beach town in Kerala, known for lighthouse beach and ayurveda. Plan your Kovalam trip: 3 places to visit, 4 stays from ₹1200/night, best time (Sep – Mar) and routes.",
+    "canonical": "destination.html?slug=kovalam",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kovalam_Hawa_Beach_Evening.jpg/1280px-Kovalam_Hawa_Beach_Evening.jpg",
+    "keywords": [
+      "Kovalam travel guide",
+      "places to visit in Kovalam",
+      "Kovalam hotels",
+      "best time to visit Kovalam",
+      "how to reach Kovalam",
+      "Kerala tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

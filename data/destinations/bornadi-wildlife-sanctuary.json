@@ -1,0 +1,418 @@
+{
+  "slug": "bornadi-wildlife-sanctuary",
+  "title": "Bornadi Wildlife Sanctuary",
+  "state": "Assam",
+  "country": "India",
+  "region": "Assam",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Bornadi Wildlife Sanctuary — wildlife reserve of Assam",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Assam_locator_map.svg/1280px-Assam_locator_map.svg.png",
+    "alt": "Bornadi Wildlife Sanctuary, Assam"
+  },
+  "overview": {
+    "short": "Bornadi Wildlife Sanctuary is a 26.22 km2 (10.12 sq mi) wildlife sanctuary situated on the foothills of Himalayas bordering Bhutan in the north and in Udalguri district and Baksa D",
+    "description": "Bornadi Wildlife Sanctuary is a 26.22 km2 (10.12 sq mi) wildlife sanctuary situated on the foothills of Himalayas bordering Bhutan in the north and in Udalguri district and Baksa District of Assam, India. This sanctuary was named after the river Bornadi which flows on its western border. It is 30 km (19 mi) from Tangla town and 130 km (81 mi) from Guwahati. The sanctuary was established in 1980 to protect the hispid hare (Caprolagus hispidus) and pigmy hog (Porcula salvania).",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 20751,
+    "minPrice": 2500,
+    "distanceFromDelhi": 1444
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 26.80583333,
+    "lng": 91.74027778,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 93,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 74 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 171,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 137 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 234,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 187 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 335,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 268 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 390,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 312 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 394,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 315 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 415,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 332 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 418,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 334 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 445,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 356 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 840,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 672 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 941,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 753 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 1114,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 891 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1178,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 942 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1498,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1198 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1675,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1340 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Bornadi Wildlife Sanctuary / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Guwahati Railway Station",
+      "distance": 69
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Bhangtar",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Samdrupcholing, formerly known as Bhangtar, is a rural town, Yenlag Thromde, in the southeast of Bhutan. It is located in Samdrup Jongkhar District, close to the border with India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bhutan_relief_location_map.jpg",
+        "alt": "Bhangtar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bhutan_relief_location_map.jpg"
+      ]
+    },
+    {
+      "name": "Bangalipara",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Bangalipara is a village in Baksa District, Bodoland Territorial Region, Assam situated in north bank of river Brahmaputra. It falls on the foothills of Bhutan with the border area at a 6 km approx.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bangalipara"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Bhangtar",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bhangtar",
+          "note": "Samdrupcholing, formerly known as Bhangtar, is a rural town, Yenlag Thromde, in the southeast of Bhutan. It is located in Samdrup Jongkhar District, close to the border with India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Bangalipara",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bangalipara",
+          "note": "Bangalipara is a village in Baksa District, Bodoland Territorial Region, Assam situated in north bank of river Brahmaputra. It falls on the foothills of Bhutan with the border area at a 6 km approx."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Dungkhag Guesthouse",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Bornadi Wildlife Sanctuary Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Bornadi Wildlife Sanctuary",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Bornadi Wildlife Sanctuary"
+      }
+    },
+    {
+      "name": "Bornadi Wildlife Sanctuary Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bornadi Wildlife Sanctuary Grand Hotel"
+      }
+    },
+    {
+      "name": "Jungle Lodges Bornadi Wildlife Sanctuary",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Bornadi Wildlife Sanctuary"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Assam_locator_map.svg/1280px-Assam_locator_map.svg.png",
+      "alt": "Bornadi Wildlife Sanctuary photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/India_Assam_relief_map.svg/1280px-India_Assam_relief_map.svg.png",
+      "alt": "Bornadi Wildlife Sanctuary photo 2"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Bornadi Wildlife Sanctuary?",
+      "a": "The best time to visit Bornadi Wildlife Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Bornadi Wildlife Sanctuary?",
+      "a": "The nearest airport is Bornadi Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Guwahati Railway Station (69 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Bornadi Wildlife Sanctuary?",
+      "a": "2 days are usually enough to cover the top attractions of Bornadi Wildlife Sanctuary at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Bornadi Wildlife Sanctuary?",
+      "a": "Stays in Bornadi Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Bornadi Wildlife Sanctuary?",
+      "a": "The top attractions are Bhangtar, Bangalipara."
+    }
+  ],
+  "seo": {
+    "title": "Bornadi Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Bornadi Wildlife Sanctuary is a 26.22 km2 (10.12 sq mi) wildlife sanctuary situated on the foothills of Himalayas bordering Bhutan in the north and in Udalguri district and Baksa D Plan your Bornadi Wildlife Sanctuary trip: 2 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and route",
+    "canonical": "destination.html?slug=bornadi-wildlife-sanctuary",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Assam_locator_map.svg/1280px-Assam_locator_map.svg.png",
+    "keywords": [
+      "Bornadi Wildlife Sanctuary travel guide",
+      "places to visit in Bornadi Wildlife Sanctuary",
+      "Bornadi Wildlife Sanctuary hotels",
+      "best time to visit Bornadi Wildlife Sanctuary",
+      "how to reach Bornadi Wildlife Sanctuary",
+      "Assam tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

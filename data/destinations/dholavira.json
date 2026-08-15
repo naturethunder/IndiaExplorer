@@ -1,0 +1,663 @@
+{
+  "slug": "dholavira",
+  "title": "Dholavira",
+  "state": "Gujarat",
+  "country": "India",
+  "region": "Kutch District",
+  "type": "heritage",
+  "badge": "4500-Year Harappan City",
+  "tagline": "UNESCO World Heritage ancient Indus Valley Harappan metropolis in Rann of Kutch",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Dholavira_gujarat.jpg/1280px-Dholavira_gujarat.jpg",
+    "alt": "Dholavira, Gujarat"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Dholavira_gujarat.jpg/1280px-Dholavira_gujarat.jpg",
+    "alt": "Dholavira, Gujarat"
+  },
+  "overview": {
+    "short": "UNESCO World Heritage ancient Indus Valley Harappan metropolis in the middle of Rann of Kutch.",
+    "description": "Dholavira on Khadir Bet island in Kutch is one of the most prominent archaeological sites of the Indus Valley Civilization. Dating back to 2600 BCE, Dholavira features world-first stone water reservoirs, a planned grid citadel, and the famous 'Road to Heaven' highway.",
+    "features": [
+      "UNESCO Harappan Citadel",
+      "Ancient Water Reservoirs",
+      "Fossil Park",
+      "Road to Heaven Rann Drive"
+    ],
+    "rating": 4.8,
+    "reviewCount": 1560,
+    "minPrice": 2400,
+    "distanceFromDelhi": 1050
+  },
+  "bestTime": {
+    "label": "Nov – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 23.8863,
+    "lng": 70.2131,
+    "tempSummer": "26–42°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 324,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 259 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 454,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 363 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 591,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 473 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 739,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 591 km · road approx."
+      },
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 753,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 602 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1061,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 849 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1079,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 863 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1091,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 873 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1220,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 976 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1250,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1000 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1259,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1007 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1316,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1053 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 1320,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1056 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 1354,
+        "byCar": "23–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1083 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1405,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1124 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1510,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1208 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1643,
+        "byCar": "27–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1314 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 1683,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1346 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1704,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1363 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1880,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1504 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1898,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1518 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1924,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1539 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 1999,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1599 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2070,
+        "byCar": "35–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1656 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 2088,
+        "byCar": "35–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1670 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 2099,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1679 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 2316,
+        "byCar": "39–51 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1853 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 2353,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1882 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2676,
+        "byCar": "45–59 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2141 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2726,
+        "byCar": "45–61 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2181 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2744,
+        "byCar": "46–61 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2195 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2859,
+        "byCar": "48–64 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2287 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2964,
+        "byCar": "49–66 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2371 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 3003,
+        "byCar": "50–67 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2402 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 3021,
+        "byCar": "50–67 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2417 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 3425,
+        "byCar": "57–76 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2740 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Bhuj Airport (BHJ)",
+      "distance": 215
+    },
+    "nearestRailway": {
+      "name": "Samakhiali / Bhuj Railway Station",
+      "distance": 135
+    },
+    "roadNote": "Sensational 30km \"Road to Heaven\" highway cutting across the white salt flats."
+  },
+  "topPlaces": [
+    {
+      "name": "Dholavira Harappan Excavation Site",
+      "category": "heritage",
+      "distance": "0 km",
+      "entryFee": "₹25",
+      "timings": "8 AM – 6 PM",
+      "duration": "3 hrs",
+      "rating": 4.9,
+      "description": "UNESCO World Heritage Indus Valley metropolis (2600 BCE) featuring stone citadel and ancient market streets.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cicular_houses_Dholavira.jpg/1280px-Cicular_houses_Dholavira.jpg",
+        "alt": "Dholavira Harappan Excavation Site"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cicular_houses_Dholavira.jpg/1280px-Cicular_houses_Dholavira.jpg"
+      ]
+    },
+    {
+      "name": "Great Water Reservoirs of Dholavira",
+      "category": "heritage",
+      "distance": "0.5 km",
+      "entryFee": "Included",
+      "timings": "8 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.9,
+      "description": "World's oldest sophisticated stone-cut rainwater harvesting reservoirs.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Great Water Reservoirs of Dholavira"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Road to Heaven (Khadir Bet Salt Highway)",
+      "category": "nature",
+      "distance": "15 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "1 hr",
+      "rating": 4.9,
+      "description": "Sensational 30km highway cutting straight through glowing white salt lake waters.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/The_Road_to_%27Heaven%27_-_geograph.org.uk_-_797700.jpg",
+        "alt": "Road to Heaven (Khadir Bet Salt Highway)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/The_Road_to_%27Heaven%27_-_geograph.org.uk_-_797700.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/04/Cycle_Heaven%2C_Bishopthorpe_Road_-_geograph.org.uk_-_1183223.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Heaven_of_Hope_Road_2011.jpg/1280px-Heaven_of_Hope_Road_2011.jpg"
+      ]
+    },
+    {
+      "name": "Wood Fossil Park Khadir Bet",
+      "category": "nature",
+      "distance": "8 km",
+      "entryFee": "₹20",
+      "timings": "8 AM – 5 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Jurassic era 180-million-year-old petrified tree wood fossils site.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Wood Fossil Park Khadir Bet"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Kuntasi Harappan Port Ruins",
+      "category": "heritage",
+      "distance": "85 km",
+      "entryFee": "Free",
+      "timings": "Daytime",
+      "duration": "1.5 hrs",
+      "rating": 4.5,
+      "description": "Ancient Harappan jetty and copper workshop site near Gulf of Kutch.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kuntasi Harappan Port Ruins"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Chhari Dhand Flamingo Bird Sanctuary",
+      "category": "nature",
+      "distance": "110 km",
+      "entryFee": "Free",
+      "timings": "Sunrise – Sunset",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Seasonal wetland lake hosting over 50,000 migratory flamingos.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chhari Dhand Flamingo Bird Sanctuary"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Dholavira Tourism Resort & Tents",
+      "type": "resort",
+      "tier": "good",
+      "priceMin": 3200,
+      "priceMax": 6000,
+      "rating": 4.6,
+      "reviews": 240,
+      "amenities": [
+        "Kutchi Bhunga Huts",
+        "Buffet Meals",
+        "Cultural Dance"
+      ],
+      "tags": [
+        "Eco Resort",
+        "Bhunga Stay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Dholavira_gujarat.jpg/1280px-Dholavira_gujarat.jpg",
+        "alt": "Dholavira Tourism Resort & Tents"
+      }
+    },
+    {
+      "name": "Toran Resort Dholavira (TCGL)",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2500,
+      "priceMax": 4800,
+      "rating": 4.4,
+      "reviews": 180,
+      "amenities": [
+        "AC Rooms",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Govt Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Water_reservoir_at_Dholavira_site.jpg/1280px-Water_reservoir_at_Dholavira_site.jpg",
+        "alt": "Toran Resort Dholavira (TCGL)"
+      }
+    },
+    {
+      "name": "Toran Tourist Complex",
+      "type": "homestay",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.5,
+      "reviews": 150,
+      "amenities": [
+        "Kutchi Village Food",
+        "Local Guide"
+      ],
+      "tags": [
+        "Homestay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Dholavira_archaeological_site_4.jpg/1280px-Dholavira_archaeological_site_4.jpg",
+        "alt": "Khadir Homestay Dholavira"
+      }
+    },
+    {
+      "name": "White Rann Camp Khadir",
+      "type": "camp",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 6500,
+      "rating": 4.7,
+      "reviews": 120,
+      "amenities": [
+        "Swiss Glamping Tents",
+        "Desert Safari",
+        "Bonfire"
+      ],
+      "tags": [
+        "Glamping Camp"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cicular_houses_Dholavira.jpg/1280px-Cicular_houses_Dholavira.jpg",
+        "alt": "White Rann Camp Khadir"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Dholavira_gujarat.jpg/1280px-Dholavira_gujarat.jpg",
+      "alt": "Dholavira photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Water_reservoir_at_Dholavira_site.jpg/1280px-Water_reservoir_at_Dholavira_site.jpg",
+      "alt": "Dholavira photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Dholavira_archaeological_site_4.jpg/1280px-Dholavira_archaeological_site_4.jpg",
+      "alt": "Dholavira photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cicular_houses_Dholavira.jpg/1280px-Cicular_houses_Dholavira.jpg",
+      "alt": "Dholavira photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Water_storage_tanks_at_Dholavira_Citadel.jpg/1280px-Water_storage_tanks_at_Dholavira_Citadel.jpg",
+      "alt": "Dholavira photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Manholes_at_Dholavira_water_management_network.jpg/1280px-Manholes_at_Dholavira_water_management_network.jpg",
+      "alt": "Dholavira photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is Dholavira famous?",
+      "a": "Dholavira is a UNESCO World Heritage Indus Valley site famous for sophisticated urban water management, grand stone citadel, and ancient Harappan signboards."
+    }
+  ],
+  "seo": {
+    "title": "Dholavira Travel Guide 2026 — UNESCO Harappan Site, Road to Heaven | IndiaExplore",
+    "description": "Discover Dholavira in Kutch Gujarat: UNESCO Indus Valley Harappan excavation ruins, Road to Heaven Rann drive and Kutchi resorts.",
+    "canonical": "destination.html?slug=dholavira",
+    "ogImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Dholavira Gujarat",
+      "Road to Heaven Kutch",
+      "Dholavira Harappan site",
+      "Dholavira resort"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

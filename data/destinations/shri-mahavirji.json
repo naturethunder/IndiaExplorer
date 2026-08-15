@@ -1,0 +1,535 @@
+{
+  "slug": "shri-mahavirji",
+  "title": "Shri Mahavirji",
+  "state": "Rajasthan",
+  "country": "India",
+  "region": "Rajasthan",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Shri Mahavirji — spiritual town of Rajasthan",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mahavir.jpg",
+    "alt": "Shri Mahavirji, Rajasthan"
+  },
+  "overview": {
+    "short": "The Shri Mahaveer Ji Temple is major Jain pilgrimage site situated in the Shri Mahaveerji town in Hindaun Block, Karauli district in Rajasthan.",
+    "description": "The Shri Mahaveer Ji Temple is major Jain pilgrimage site situated in the Shri Mahaveerji town in Hindaun Block, Karauli district in Rajasthan.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 3628,
+    "minPrice": 900,
+    "distanceFromDelhi": 215
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 26.69547222,
+    "lng": 76.93021667,
+    "tempSummer": "28–44°C",
+    "tempWinter": "8–25°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 145,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 116 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 150,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 120 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 245,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 196 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 269,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 215 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 481,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 385 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 521,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 417 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 561,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 449 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 614,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 491 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 730,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 584 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 750,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 600 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 819,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 655 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 875,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 700 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 964,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 771 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1019,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 815 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1035,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 828 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Shri Mahavirji / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Jaipur Junction",
+      "distance": 116
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Shri Mahaveer Ji (town)",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Shri Mahaveer Ji is a town and tehsil headquarter in Hindaun Block, Karauli District, Rajasthan. Approximately 20,000 people live there, and Many villages come within its area.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Shri_Mahavirji_-_Kirti_Ashram_Chaityalaya.jpg/1280px-Shri_Mahavirji_-_Kirti_Ashram_Chaityalaya.jpg",
+        "alt": "Shri Mahaveer Ji (town)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Shri_Mahavirji_-_Kirti_Ashram_Chaityalaya.jpg/1280px-Shri_Mahavirji_-_Kirti_Ashram_Chaityalaya.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Viramati_Mataji.jpg/1280px-Viramati_Mataji.jpg"
+      ]
+    },
+    {
+      "name": "Baragama",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Baragama is a village in mahaveer Tehsil, Karauli district, Rajasthan, India, and forms a part of Bharatpur Division. It is located 34 km (21 mi) north of the district headquarters at Karauli, 7 km (4.3 mi) from Hindaun and 131 km (81 mi) from the state capital at Jaipur.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Baragama"
+      },
+      "photos": []
+    },
+    {
+      "name": "Jaggar Dam",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Jaggar Dam is an Earthen dam near Jagar Village of Hindaun City in Hindaun Block, Rajasthan, India. The dam was completed in 1957 for the purpose of irrigation and water supply.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/CE_1854_Lee_Harvey_Oswald%27s_daily_timesheets_when_he_was_employed_by_Jaggars-Chiles-Stovall%2C_Inc._-_DPLA_-_11e3d683271baadc9e4a0eea9da99549.pdf/page1-1280px-CE_1854_Lee_Harvey_Oswald%27s_daily_timesheets_when_he_was_employed_by_Jaggars-Chiles-Stovall%2C_Inc._-_DPLA_-_11e3d683271baadc9e4a0eea9da99549.pdf.jpg",
+        "alt": "Jaggar Dam"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/CE_1854_Lee_Harvey_Oswald%27s_daily_timesheets_when_he_was_employed_by_Jaggars-Chiles-Stovall%2C_Inc._-_DPLA_-_11e3d683271baadc9e4a0eea9da99549.pdf/page1-1280px-CE_1854_Lee_Harvey_Oswald%27s_daily_timesheets_when_he_was_employed_by_Jaggars-Chiles-Stovall%2C_Inc._-_DPLA_-_11e3d683271baadc9e4a0eea9da99549.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/George_Golding_Kennedy_correspondence._1866-1917_%28inclusive%29_%28IA_GeorgeGoldingKe00KennH%29.pdf/page1-500px-George_Golding_Kennedy_correspondence._1866-1917_%28inclusive%29_%28IA_GeorgeGoldingKe00KennH%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/A_treatise_on_the_law_in_relation_to_promoters_and_the_promotion_of_corporations_%28IA_treatiseonlawinr00algeiala%29.pdf/page1-500px-A_treatise_on_the_law_in_relation_to_promoters_and_the_promotion_of_corporations_%28IA_treatiseonlawinr00algeiala%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Khandip Dam",
+      "category": "nature",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Khandip Dam (also known as Khandip Aniket, in Hindi खंडीप बांध) is a weir which is built on the Ganbhir River at Khandip Village of Rajasthan, India. It lies in a valley to the south of the Khandip and north of the Katkad, east of Nawajipura and West of Medi and Phulwara.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Khandip_dam.jpg",
+        "alt": "Khandip Dam"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Khandip_dam.jpg"
+      ]
+    },
+    {
+      "name": "Hindaun Block",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Hindaun is a block in Karauli district of the Indian state of Rajasthan in Northern India. It is a subdivisional headquarter.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Mian_temple6.jpg",
+        "alt": "Hindaun Block"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/Mian_temple6.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Karauli_in_Rajasthan_%28India%29.svg/1280px-Karauli_in_Rajasthan_%28India%29.svg.png"
+      ]
+    },
+    {
+      "name": "Mahu Ibrahimpur",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Mahu Ibrahimpur is a town in Hindaun Block in Karauli district of the Indian state of Rajasthan in Northern India. The town is located in the vicinity of the Aravalli Range.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Mahu Ibrahimpur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Danalpur",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Danalpur is a village in Shri Mahaveer Ji Block of Rajasthan, India. It is located near Shri Mahavirji, which is a famous Jain religious place and is well connected to Jaipur ( the capital of Rajasthan) through State Highway.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Danalpur"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Shri Mahaveer Ji (town) & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shri Mahaveer Ji (town)",
+          "note": "Shri Mahaveer Ji is a town and tehsil headquarter in Hindaun Block, Karauli District, Rajasthan. Approximately 20,000 people live there, and Many villages come within its area."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Baragama",
+          "note": "Baragama is a village in mahaveer Tehsil, Karauli district, Rajasthan, India, and forms a part of Bharatpur Division. It is located 34 km (21 mi) north of the district headquarters at Karauli, 7 km (4.3 mi) from Hindaun and 131 km (81 mi) from the state capital at Jaipur."
+        },
+        {
+          "time": "Evening",
+          "activity": "Jaggar Dam",
+          "note": "Jaggar Dam is an Earthen dam near Jagar Village of Hindaun City in Hindaun Block, Rajasthan, India. The dam was completed in 1957 for the purpose of irrigation and water supply."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Khandip Dam & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Khandip Dam",
+          "note": "Khandip Dam (also known as Khandip Aniket, in Hindi खंडीप बांध) is a weir which is built on the Ganbhir River at Khandip Village of Rajasthan, India. It lies in a valley to the south of the Khandip and north of the Katkad, east of Nawajipura and West of Medi and Phulwara."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Hindaun Block",
+          "note": "Hindaun is a block in Karauli district of the Indian state of Rajasthan in Northern India. It is a subdivisional headquarter."
+        },
+        {
+          "time": "Evening",
+          "activity": "Mahu Ibrahimpur",
+          "note": "Mahu Ibrahimpur is a town in Hindaun Block in Karauli district of the Indian state of Rajasthan in Northern India. The town is located in the vicinity of the Aravalli Range."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Danalpur",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Danalpur",
+          "note": "Danalpur is a village in Shri Mahaveer Ji Block of Rajasthan, India. It is located near Shri Mahavirji, which is a famous Jain religious place and is well connected to Jaipur ( the capital of Rajasthan) through State Highway."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "jain dharamshala",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Shri Mahavirji Stay"
+      }
+    },
+    {
+      "name": "Lala Umrav Singh Jain Dharmashala",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Shri Mahavirji"
+      }
+    },
+    {
+      "name": "Atibir Athiti Ghria",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Shri Mahavirji Grand Hotel"
+      }
+    },
+    {
+      "name": "Chrand China Chatri Dharmashala",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Shri Mahavirji"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Nature walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mahavir.jpg",
+      "alt": "Shri Mahavirji photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E0%A4%B8%E0%A4%A4%E0%A5%80_%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A4%A8%E0%A4%AC%E0%A4%BE%E0%A4%B2%E0%A4%BE_%E0%A4%95%E0%A5%80_%E0%A4%95%E0%A4%B9%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A5%A7.jpeg/1280px-%E0%A4%B8%E0%A4%A4%E0%A5%80_%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A4%A8%E0%A4%AC%E0%A4%BE%E0%A4%B2%E0%A4%BE_%E0%A4%95%E0%A5%80_%E0%A4%95%E0%A4%B9%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A5%A7.jpeg",
+      "alt": "Shri Mahavirji photo 2"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Shri Mahavirji?",
+      "a": "The best time to visit Shri Mahavirji is Oct – Mar. Summers are 28–44°C and winters are 8–25°C."
+    },
+    {
+      "q": "How do I reach Shri Mahavirji?",
+      "a": "The nearest airport is Shri Mahavirji / nearest airport (30 km) and the nearest railway station is Jaipur Junction (116 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Shri Mahavirji?",
+      "a": "3 days are usually enough to cover the top attractions of Shri Mahavirji at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Shri Mahavirji?",
+      "a": "Stays in Shri Mahavirji start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Shri Mahavirji?",
+      "a": "The top attractions are Shri Mahaveer Ji (town), Baragama, Jaggar Dam, Khandip Dam, Hindaun Block."
+    }
+  ],
+  "seo": {
+    "title": "Shri Mahavirji Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "The Shri Mahaveer Ji Temple is major Jain pilgrimage site situated in the Shri Mahaveerji town in Hindaun Block, Karauli district in Rajasthan. Plan your Shri Mahavirji trip: 7 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=shri-mahavirji",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mahavir.jpg",
+    "keywords": [
+      "Shri Mahavirji travel guide",
+      "places to visit in Shri Mahavirji",
+      "Shri Mahavirji hotels",
+      "best time to visit Shri Mahavirji",
+      "how to reach Shri Mahavirji",
+      "Rajasthan tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

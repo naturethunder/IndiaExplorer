@@ -1,0 +1,587 @@
+{
+  "slug": "phyang-monastery",
+  "title": "Phyang Monastery",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Phyang Monastery — spiritual town of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Phyang_Monastery_01.jpg/1280px-Phyang_Monastery_01.jpg",
+    "alt": "Phyang Monastery, Ladakh"
+  },
+  "overview": {
+    "short": "Phyang Monastery, Phyang (or Phiyang) Gompa is a Buddhist monastery located in Fiang village, just 15 or 16 kilometres west of Leh in Ladakh, northern India.",
+    "description": "Phyang Monastery, Phyang (or Phiyang) Gompa is a Buddhist monastery located in Fiang village, just 15 or 16 kilometres west of Leh in Ladakh, northern India. It was established in 1515.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 19115,
+    "minPrice": 900,
+    "distanceFromDelhi": 620
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 34.18638889,
+    "lng": 77.48944444,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 11,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 9 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 310,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 248 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 430,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 344 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 468,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 374 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 488,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 390 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 541,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 433 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 775,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 620 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 798,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 638 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 976,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 781 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1031,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 825 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1508,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1206 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1519,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1215 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1634,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1307 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1663,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1330 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1666,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1333 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Phyang Monastery / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 270
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Fiang",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Phyang (previously known as Fiang) is a village in Leh district of Ladakh in India. It is in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Phyang_Monastery%2C_Ladakh_01.jpg/1280px-Phyang_Monastery%2C_Ladakh_01.jpg",
+        "alt": "Fiang"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Phyang_Monastery%2C_Ladakh_01.jpg/1280px-Phyang_Monastery%2C_Ladakh_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Phyang_Monastery%2C_Ladakh_02.jpg/1280px-Phyang_Monastery%2C_Ladakh_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Phyang_Monastery%2C_Ladakh_04.jpg/1280px-Phyang_Monastery%2C_Ladakh_04.jpg"
+      ]
+    },
+    {
+      "name": "Taroo",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Taroo is a village in the Sham district of Ladakh, India. It is located in the Likir tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/The_game_birds_of_India%2C_Burmah%2C_and_Ceylon_%28IA_gamebirdsofindia02hume%29.pdf/page1-500px-The_game_birds_of_India%2C_Burmah%2C_and_Ceylon_%28IA_gamebirdsofindia02hume%29.pdf.jpg",
+        "alt": "Taroo"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/The_game_birds_of_India%2C_Burmah%2C_and_Ceylon_%28IA_gamebirdsofindia02hume%29.pdf/page1-500px-The_game_birds_of_India%2C_Burmah%2C_and_Ceylon_%28IA_gamebirdsofindia02hume%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Phey",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Phey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Phey_Village%2C_Leh%2C_Ladakh.jpg",
+        "alt": "Phey"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Phey_Village%2C_Leh%2C_Ladakh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Marmot_-_Found_in_wild_in_Ladakh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sunset_in_leh%2C_Jammu_and_Kashmir.jpg/1280px-Sunset_in_leh%2C_Jammu_and_Kashmir.jpg"
+      ]
+    },
+    {
+      "name": "Spituk Monastery",
+      "category": "spiritual",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Spituk Monastery, also known as Spituk Gompa or Pethup Gompa, is a Buddhist monastery in Spituk, Leh district, Ladakh, 8 km from Leh. The site of Spituk was blessed by the Arhat Nyimagung.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "alt": "Spituk Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Spituk_Gompa_-_Door_Knob.jpg/1280px-Spituk_Gompa_-_Door_Knob.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Spituk_Gompa_View_-_4.jpg/1280px-Spituk_Gompa_View_-_4.jpg"
+      ]
+    },
+    {
+      "name": "Shanti Stupa, Ladakh",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Shanti Stupa is a Buddhist white-domed Stupa (chorten) on a hilltop in Chanspa, Leh district, Ladakh, in north India. It was built in 1991 by Japanese Buddhist monk Gyomyo Nakamura.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Chhatra_of_Shanti_Stupa%2C_Dhauli%2C_Odisha%2C_India.jpg/1280px-Chhatra_of_Shanti_Stupa%2C_Dhauli%2C_Odisha%2C_India.jpg",
+        "alt": "Shanti Stupa, Ladakh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Chhatra_of_Shanti_Stupa%2C_Dhauli%2C_Odisha%2C_India.jpg/1280px-Chhatra_of_Shanti_Stupa%2C_Dhauli%2C_Odisha%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Shanti_Stupa_%28Ladakh%29.jpg/1280px-Shanti_Stupa_%28Ladakh%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Shanti_Stupa_Ladakh.jpg/1280px-Shanti_Stupa_Ladakh.jpg"
+      ]
+    },
+    {
+      "name": "Zorawar Fort",
+      "category": "heritage",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Zorawar Fort is a fort in Leh, Ladakh, India built in 1836 by Zorawar Singh, a general of Dogra ruler Gulab Singh. Zorawar Singh led the Dogra invasion of Ladakh and built the fort at Leh after deposing the last Gyalpo of Ladakh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Zorawerfort.jpg/1280px-Zorawerfort.jpg",
+        "alt": "Zorawar Fort"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Zorawerfort.jpg/1280px-Zorawerfort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fragment_from_a_painted_scroll_depicting_Zorawar_Singh_of_the_Sikh_Empire%27s_army_marching_through_the_mountains_of_Ladakh.webp/1280px-Fragment_from_a_painted_scroll_depicting_Zorawar_Singh_of_the_Sikh_Empire%27s_army_marching_through_the_mountains_of_Ladakh.webp.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%27Zorawar_Singh_Kahluria_offering_puja_bali%27%2C_from_a_painted_scroll_documenting_the_joint_Dogra-Sikh_invasions_of_Ladakh%2C_Baltistan%2C_and_Western_Tibet%2C_ca.1840%27s.jpg/1280px-thumbnail.jpg"
+      ]
+    },
+    {
+      "name": "Kyago Tso",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Kyagar Tso or Kyagar Lake is a small brackish lake surrounded by mountains situated in the Ladakh region of the northern Indian Union Territory of Ladakh in India. From afar, it can be spotted by its turquoise colour.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tso_Kiagar_Lake_Ladakh.jpg/1280px-Tso_Kiagar_Lake_Ladakh.jpg",
+        "alt": "Kyago Tso"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tso_Kiagar_Lake_Ladakh.jpg/1280px-Tso_Kiagar_Lake_Ladakh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/India_-_Ladakh_-_Travel_-_014_-_Kiagar_Tso_%283906690146%29.jpg/1280px-India_-_Ladakh_-_Travel_-_014_-_Kiagar_Tso_%283906690146%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Perfect_Reflectio_on_Tso_Kiagar_Lake_%28Unsplash%29.jpg/1280px-Perfect_Reflectio_on_Tso_Kiagar_Lake_%28Unsplash%29.jpg"
+      ]
+    },
+    {
+      "name": "Sankar Monastery",
+      "category": "spiritual",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Sankar Monastery, or Sankar Gompa is a Buddhist monastery within an easy half-hour walk from Leh in Ladakh, northern India. It is a daughter-establishment of the Spituk Monastery and the residence of the Abbot of Spituk, the Venerable Kushok Bakula, who is the senior incarnate lama of Ladakh due to his ancient lineage and personal authority.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Sankar_Monastery.JPG/1280px-Sankar_Monastery.JPG",
+        "alt": "Sankar Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Sankar_Monastery.JPG/1280px-Sankar_Monastery.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Goddess_of_the_White_Umbrella_at_Sankar_Monastery.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Prayer_wheel_near_Sankar_Monastery.jpg/1280px-Prayer_wheel_near_Sankar_Monastery.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Fiang & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Fiang",
+          "note": "Phyang (previously known as Fiang) is a village in Leh district of Ladakh in India. It is in the Leh tehsil."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Taroo",
+          "note": "Taroo is a village in the Sham district of Ladakh, India. It is located in the Likir tehsil."
+        },
+        {
+          "time": "Evening",
+          "activity": "Phey",
+          "note": "Phey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Spituk Monastery & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Spituk Monastery",
+          "note": "Spituk Monastery, also known as Spituk Gompa or Pethup Gompa, is a Buddhist monastery in Spituk, Leh district, Ladakh, 8 km from Leh. The site of Spituk was blessed by the Arhat Nyimagung."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Shanti Stupa, Ladakh",
+          "note": "Shanti Stupa is a Buddhist white-domed Stupa (chorten) on a hilltop in Chanspa, Leh district, Ladakh, in north India. It was built in 1991 by Japanese Buddhist monk Gyomyo Nakamura."
+        },
+        {
+          "time": "Evening",
+          "activity": "Zorawar Fort",
+          "note": "Zorawar Fort is a fort in Leh, Ladakh, India built in 1836 by Zorawar Singh, a general of Dogra ruler Gulab Singh. Zorawar Singh led the Dogra invasion of Ladakh and built the fort at Leh after deposing the last Gyalpo of Ladakh."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Kyago Tso & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kyago Tso",
+          "note": "Kyagar Tso or Kyagar Lake is a small brackish lake surrounded by mountains situated in the Ladakh region of the northern Indian Union Territory of Ladakh in India. From afar, it can be spotted by its turquoise colour."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Sankar Monastery",
+          "note": "Sankar Monastery, or Sankar Gompa is a Buddhist monastery within an easy half-hour walk from Leh in Ladakh, northern India. It is a daughter-establishment of the Spituk Monastery and the residence of the Abbot of Spituk, the Venerable Kushok Bakula, who is the senior incarnate lama of Ladakh due to his ancient lineage and personal authority."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Mahey",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Phyang Monastery Stay"
+      }
+    },
+    {
+      "name": "Hill Town",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Phyang Monastery"
+      }
+    },
+    {
+      "name": "Haldupa Guest House",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Phyang Monastery Grand Hotel"
+      }
+    },
+    {
+      "name": "Gotal",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Phyang Monastery"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Spiritual",
+    "Sightseeing",
+    "Heritage walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Phyang_Monastery_01.jpg/1280px-Phyang_Monastery_01.jpg",
+      "alt": "Phyang Monastery photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Phyang_Monastery_02.jpg/1280px-Phyang_Monastery_02.jpg",
+      "alt": "Phyang Monastery photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Phyang_Monastery_03.jpg/1280px-Phyang_Monastery_03.jpg",
+      "alt": "Phyang Monastery photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Phyang_Monastery_05.jpg/1280px-Phyang_Monastery_05.jpg",
+      "alt": "Phyang Monastery photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Phyang_Monastery_04.jpg/1280px-Phyang_Monastery_04.jpg",
+      "alt": "Phyang Monastery photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Phyang Monastery?",
+      "a": "The best time to visit Phyang Monastery is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Phyang Monastery?",
+      "a": "The nearest airport is Phyang Monastery / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (270 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Phyang Monastery?",
+      "a": "3 days are usually enough to cover the top attractions of Phyang Monastery at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Phyang Monastery?",
+      "a": "Stays in Phyang Monastery start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Phyang Monastery?",
+      "a": "The top attractions are Fiang, Taroo, Phey, Spituk Monastery, Shanti Stupa, Ladakh."
+    }
+  ],
+  "seo": {
+    "title": "Phyang Monastery Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Phyang Monastery, Phyang (or Phiyang) Gompa is a Buddhist monastery located in Fiang village, just 15 or 16 kilometres west of Leh in Ladakh, northern India. Plan your Phyang Monastery trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=phyang-monastery",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Phyang_Monastery_01.jpg/1280px-Phyang_Monastery_01.jpg",
+    "keywords": [
+      "Phyang Monastery travel guide",
+      "places to visit in Phyang Monastery",
+      "Phyang Monastery hotels",
+      "best time to visit Phyang Monastery",
+      "how to reach Phyang Monastery",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

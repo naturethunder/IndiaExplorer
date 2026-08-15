@@ -1,0 +1,672 @@
+{
+  "slug": "mandu",
+  "title": "Mandu (Mandav)",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "region": "Dhar District",
+  "type": "heritage",
+  "badge": "Romantic Afghan Fortress",
+  "tagline": "Ancient ruined Afghan fortress city famed for Jahaz Mahal (Ship Palace)",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Taveli_Mahal_02.jpg/1280px-Taveli_Mahal_02.jpg",
+    "alt": "Mandu (Mandav), Madhya Pradesh"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Taveli_Mahal_02.jpg/1280px-Taveli_Mahal_02.jpg",
+    "alt": "Mandu (Mandav), Madhya Pradesh"
+  },
+  "overview": {
+    "short": "Ancient ruined Afghan fortress city famed for Jahaz Mahal (Ship Palace) and Rani Roopmati Pavilion.",
+    "description": "Mandu is a ruined fortress city in Madhya Pradesh set on a plateau perched over the Narmada valley. Famed for its Afghan architecture, Jahaz Mahal appears to float between two lakes.",
+    "features": [
+      "Jahaz Mahal (Ship Palace)",
+      "Rani Roopmati Pavilion",
+      "Hindola Mahal (Swinging Palace)",
+      "Baz Bahadur Palace"
+    ],
+    "rating": 4.8,
+    "reviewCount": 2240,
+    "minPrice": 2000,
+    "distanceFromDelhi": 880
+  },
+  "bestTime": {
+    "label": "Jul – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 22.3664,
+    "lng": 75.3941,
+    "tempSummer": "24–38°C",
+    "tempWinter": "12–26°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 78,
+        "byCar": "1–2 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 62 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 370,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 296 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 375,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 300 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 430,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 344 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 506,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 405 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 745,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 596 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 801,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 641 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 820,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 656 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 871,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 697 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 898,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 718 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 978,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 782 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1066,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 853 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1153,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 922 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1175,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 940 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 1235,
+        "byCar": "21–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 988 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1278,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1022 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1290,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1032 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1316,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1053 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1316,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1053 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1380,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1104 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 1441,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1153 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1443,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1154 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1563,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1250 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 1660,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1328 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1665,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1332 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1681,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1345 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1733,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1386 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1803,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1442 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2041,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1633 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2135,
+        "byCar": "36–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1708 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2141,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1713 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2223,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1778 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2385,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1908 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2389,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1911 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2418,
+        "byCar": "40–54 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1934 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2741,
+        "byCar": "46–61 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2193 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Indore Devi Ahilya Bai Holkar Airport (IDR)",
+      "distance": 98
+    },
+    "nearestRailway": {
+      "name": "Indore Junction Railway Station",
+      "distance": 98
+    },
+    "roadNote": "Smooth state highway drive from Indore."
+  },
+  "topPlaces": [
+    {
+      "name": "Jahaz Mahal (Ship Palace)",
+      "category": "heritage",
+      "distance": "0 km",
+      "entryFee": "₹25",
+      "timings": "6 AM – 6 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "15th-century Afghan palace built between Kapur and Munj lakes appearing like a ship afloat.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Jahaz_Mahal_01.jpg/1280px-Jahaz_Mahal_01.jpg",
+        "alt": "Jahaz Mahal (Ship Palace)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Jahaz_Mahal_01.jpg/1280px-Jahaz_Mahal_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jahaz_Mahal_02.jpg/1280px-Jahaz_Mahal_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jahaz_Mahal_04.jpg/1280px-Jahaz_Mahal_04.jpg"
+      ]
+    },
+    {
+      "name": "Rani Roopmati Pavilion & Sunset Point",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "₹25",
+      "timings": "6 AM – 6:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Hilltop fort pavilion offering breathtaking sunset vistas over the Narmada river plains.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Roopmati_3.jpg/1280px-Roopmati_3.jpg",
+        "alt": "Rani Roopmati Pavilion & Sunset Point"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Roopmati_3.jpg/1280px-Roopmati_3.jpg"
+      ]
+    },
+    {
+      "name": "Hindola Mahal (Swinging Palace)",
+      "category": "heritage",
+      "distance": "0.5 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "45 mins",
+      "rating": 4.8,
+      "description": "Tilted wall Afghan royal audience hall with massive sloping stone buttresses.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hindola_Mahal_Interiors.JPG/1280px-Hindola_Mahal_Interiors.JPG",
+        "alt": "Hindola Mahal (Swinging Palace)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hindola_Mahal_Interiors.JPG/1280px-Hindola_Mahal_Interiors.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hindola_Mahal_01.jpg/1280px-Hindola_Mahal_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Hindola_Mahal_02.jpg/1280px-Hindola_Mahal_02.jpg"
+      ]
+    },
+    {
+      "name": "Baz Bahadur Palace",
+      "category": "heritage",
+      "distance": "3.5 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "16th-century palace combining Afghan and Rajasthani court architecture with courtyards.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Baz_Bahadur%27s_Palace_01.jpg/1280px-Baz_Bahadur%27s_Palace_01.jpg",
+        "alt": "Baz Bahadur Palace"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Baz_Bahadur%27s_Palace_01.jpg/1280px-Baz_Bahadur%27s_Palace_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Baz_Bahadur%27s_Palace_05.jpg/1280px-Baz_Bahadur%27s_Palace_05.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Baz_Bahadur%27s_Palace_09.jpg/1280px-Baz_Bahadur%27s_Palace_09.jpg"
+      ]
+    },
+    {
+      "name": "Hoshang Shah's Marble Tomb",
+      "category": "heritage",
+      "distance": "0.8 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "45 mins",
+      "rating": 4.8,
+      "description": "India's first marble structure built in 1440 which inspired Shah Jahan's Taj Mahal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/CREATION_SULTANAT.jpg",
+        "alt": "Hoshang Shah's Marble Tomb"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/CREATION_SULTANAT.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mandu%2C_Tomb_of_Hoshang_Shah_%289840495736%29.jpg/1280px-Mandu%2C_Tomb_of_Hoshang_Shah_%289840495736%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ee/Hoshang_Shah%27s_Tomb_%282%29.jpg"
+      ]
+    },
+    {
+      "name": "Jami Masjid Mandu",
+      "category": "heritage",
+      "distance": "0.7 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "45 mins",
+      "rating": 4.7,
+      "description": "Colossal Pashtun architecture mosque modeled after Damascus Great Mosque.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jami_Masjid%2C_Mandu_01.jpg/1280px-Jami_Masjid%2C_Mandu_01.jpg",
+        "alt": "Jami Masjid Mandu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jami_Masjid%2C_Mandu_01.jpg/1280px-Jami_Masjid%2C_Mandu_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jami_Masjid%2C_Mandu_02.jpg/1280px-Jami_Masjid%2C_Mandu_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jami_Masjid%2C_Mandu_03.jpg/1280px-Jami_Masjid%2C_Mandu_03.jpg"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Rama Temple",
+      "type": "resort",
+      "tier": "good",
+      "priceMin": 2800,
+      "priceMax": 5500,
+      "rating": 4.6,
+      "reviews": 310,
+      "amenities": [
+        "Lakeside View",
+        "Restaurant",
+        "AC Rooms",
+        "Gardens"
+      ],
+      "tags": [
+        "MP Tourism",
+        "Lakeside"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Taveli_Mahal_02.jpg/1280px-Taveli_Mahal_02.jpg",
+        "alt": "MPT Malwa Resort Mandu (MP Tourism)"
+      }
+    },
+    {
+      "name": "Malwa Resort",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 2000,
+      "priceMax": 3800,
+      "rating": 4.4,
+      "reviews": 220,
+      "amenities": [
+        "Valley View",
+        "Restaurant",
+        "AC"
+      ],
+      "tags": [
+        "Govt Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jahaz_Mahal_03.jpg/1280px-Jahaz_Mahal_03.jpg",
+        "alt": "MPT Malwa Retreat Mandu"
+      }
+    },
+    {
+      "name": "Mandu Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2500,
+      "priceMax": 4800,
+      "rating": 4.5,
+      "reviews": 160,
+      "amenities": [
+        "Heritage Courtyard",
+        "Restaurant"
+      ],
+      "tags": [
+        "Heritage Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/MANDU.122.jpg/1280px-MANDU.122.jpg",
+        "alt": "Dinman Heritage Hotel Mandu"
+      }
+    },
+    {
+      "name": "Jain Dharamshala",
+      "type": "camp",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.5,
+      "reviews": 120,
+      "amenities": [
+        "Swiss Tents",
+        "Campfire",
+        "Local Food"
+      ],
+      "tags": [
+        "Eco Camp"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MANDU.123.jpg/1280px-MANDU.123.jpg",
+        "alt": "Mandu Eco Jungle Lodge"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Taveli_Mahal_02.jpg/1280px-Taveli_Mahal_02.jpg",
+      "alt": "Mandu (Mandav) photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Jahaz_Mahal_03.jpg/1280px-Jahaz_Mahal_03.jpg",
+      "alt": "Mandu (Mandav) photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/MANDU.122.jpg/1280px-MANDU.122.jpg",
+      "alt": "Mandu (Mandav) photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MANDU.123.jpg/1280px-MANDU.123.jpg",
+      "alt": "Mandu (Mandav) photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/MANDU.127.jpg/1280px-MANDU.127.jpg",
+      "alt": "Mandu (Mandav) photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/MANDU.138.jpg/1280px-MANDU.138.jpg",
+      "alt": "Mandu (Mandav) photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why is Mandu called the City of Joy?",
+      "a": "Under Shadiabad (City of Joy) named by Sultan Hoshang Shah, Mandu became legendary for Afghan architectural monuments and royal love stories."
+    }
+  ],
+  "seo": {
+    "title": "Mandu Travel Guide 2026 — Jahaz Mahal, Rani Roopmati Pavilion | IndiaExplore",
+    "description": "Explore Mandu (Mandav) in Madhya Pradesh: Jahaz Mahal ship palace, Rani Roopmati pavilion, Hindola mahal and Indore road route.",
+    "canonical": "destination.html?slug=mandu",
+    "ogImage": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Mandu Madhya Pradesh",
+      "Jahaz Mahal Mandu",
+      "Rani Roopmati pavilion",
+      "Mandu Indore road"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,570 @@
+{
+  "slug": "valmiki-ashram",
+  "title": "Valmiki Ashram",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "region": "Uttar Pradesh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Valmiki Ashram — spiritual town of Uttar Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg/1280px-Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg",
+    "alt": "Valmiki Ashram, Uttar Pradesh"
+  },
+  "overview": {
+    "short": "Valmiki Ashram (Nepali: वाल्मीकि आश्रम) is a Hindu Balmiki temple situated in Chitwan district of Nepal, inside Chitwan National Park.",
+    "description": "Valmiki Ashram (Nepali: वाल्मीकि आश्रम) is a Hindu Balmiki temple situated in Chitwan district of Nepal, inside Chitwan National Park. It is close to the Triveni Dham where Tamasa, Sona and Sapta Gandaki rivers meet. Deities worshipped here include Rama, Sita, and Valmiki. The festival of Rama Navami is also celebrated here.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.8,
+    "reviewCount": 7703,
+    "minPrice": 900,
+    "distanceFromDelhi": 376
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 26.597018197,
+    "lng": 80.270874492,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Lucknow (Uttar Pradesh)",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "distance": 91,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 73 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 470,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 376 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 476,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 381 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 559,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 447 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 585,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 468 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 588,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 470 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 624,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 499 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 715,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 572 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 731,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 585 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 763,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 610 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 773,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 618 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 779,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 623 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 959,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 767 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1009,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 807 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1039,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 831 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Valmiki Ashram / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Kanpur Central",
+      "distance": 18
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "New Kanpur City",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "New Kanpur City is a satellite city of Kanpur, India. The new city spreads over 10,000 acres of prime land on the banks of the Ganges.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Behar_Herald_22-01-2020_%26_30-01-2020.pdf/page1-1280px-Behar_Herald_22-01-2020_%26_30-01-2020.pdf.jpg",
+        "alt": "New Kanpur City"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Behar_Herald_22-01-2020_%26_30-01-2020.pdf/page1-1280px-Behar_Herald_22-01-2020_%26_30-01-2020.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Bithoor",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Bithoor or Bithur is a town in Kanpur district, 25 km (15mi) by road north of the centre of Kanpur city, in Uttar Pradesh, India. Bithoor is situated on the right bank of the River Ganges, and is a centre of Hindu pilgrimage.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg/1280px-Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg",
+        "alt": "Bithoor"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg/1280px-Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Valmiki_Ashrama_in_Bithoor%2C_Kanpur.jpg/1280px-Valmiki_Ashrama_in_Bithoor%2C_Kanpur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tower_in_Valmiki_Ashram_during_evening.jpg/1280px-Tower_in_Valmiki_Ashram_during_evening.jpg"
+      ]
+    },
+    {
+      "name": "Unnao dead bodies row",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "On 14 January 2015, more than one hundred unidentified dead bodies were found floating in the River Ganges in Unnao district in the Indian state of Uttar Pradesh. The dead bodies are believed to be of mostly unmarried girls and children.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Unnao dead bodies row"
+      },
+      "photos": []
+    },
+    {
+      "name": "Nyotini",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Nyotini is a town and nagar panchayat in Hasanganj tehsil of Unnao district, Uttar Pradesh, India. Located 3 km southeast of Hasanganj on the right bank of the Sai river, Nyotini was historically one of the main centres of Muslim settlement in the district and it has several mosques and shrines.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nyotini"
+      },
+      "photos": []
+    },
+    {
+      "name": "Pariyar",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Pariyar, also spelled Pariar, is a village in Sikandarpur Sarausi block of Unnao district, Uttar Pradesh, India. It is located on the left bank of the Ganges, 23 km northwest of the city of Unnao.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Madan_Pariyar_Minister_of_Agriculture_and_Livestock_Development%2C_Nepal.jpg/1280px-Madan_Pariyar_Minister_of_Agriculture_and_Livestock_Development%2C_Nepal.jpg",
+        "alt": "Pariyar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Madan_Pariyar_Minister_of_Agriculture_and_Livestock_Development%2C_Nepal.jpg/1280px-Madan_Pariyar_Minister_of_Agriculture_and_Livestock_Development%2C_Nepal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Madan_Prasad_Pariyar%2C_portrait.jpg/1280px-Madan_Prasad_Pariyar%2C_portrait.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Madan_Prasad_Pariyar%2C_portrait_%28cropped%29.jpg/1280px-Madan_Prasad_Pariyar%2C_portrait_%28cropped%29.jpg"
+      ]
+    },
+    {
+      "name": "Choubepur Kalan",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Choubepur Kalan is a census town in Kanpur district in the state of Uttar Pradesh, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Choubepur Kalan"
+      },
+      "photos": []
+    },
+    {
+      "name": "Kalyanpur, Uttar Pradesh",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Kalyanpur or Kalianpur (earlier Kullianpore) is a satellite town of Kanpur in Uttar Pradesh, India. Located about 15 km from Kanpur on the Grand Trunk Road towards Delhi, it is effectively a suburb of Kanpur.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/211-Kalyanpur%2C_Uttar_Pradesh.svg/1280px-211-Kalyanpur%2C_Uttar_Pradesh.svg.png",
+        "alt": "Kalyanpur, Uttar Pradesh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/211-Kalyanpur%2C_Uttar_Pradesh.svg/1280px-211-Kalyanpur%2C_Uttar_Pradesh.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Old_lord_shiva_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Single_Bench_in_front_of_Open_Green_Ground_Spaces_at_the_Kalyanpur_campus_of_IIT_Kanpur.jpg"
+      ]
+    },
+    {
+      "name": "Flight Laboratory, IIT Kanpur",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Flight Laboratory, IIT Kanpur is an airstrip/aerodrome located inside IIT Kanpur's campus at Kalyanpur 18 kilometres west of city of Kanpur, India. It is used by the Aerospace Engineering department of IIT Kanpur.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Kalyanpur_airport.jpg",
+        "alt": "Flight Laboratory, IIT Kanpur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Kalyanpur_airport.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — New Kanpur City & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "New Kanpur City",
+          "note": "New Kanpur City is a satellite city of Kanpur, India. The new city spreads over 10,000 acres of prime land on the banks of the Ganges."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Bithoor",
+          "note": "Bithoor or Bithur is a town in Kanpur district, 25 km (15mi) by road north of the centre of Kanpur city, in Uttar Pradesh, India. Bithoor is situated on the right bank of the River Ganges, and is a centre of Hindu pilgrimage."
+        },
+        {
+          "time": "Evening",
+          "activity": "Unnao dead bodies row",
+          "note": "On 14 January 2015, more than one hundred unidentified dead bodies were found floating in the River Ganges in Unnao district in the Indian state of Uttar Pradesh. The dead bodies are believed to be of mostly unmarried girls and children."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Nyotini & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nyotini",
+          "note": "Nyotini is a town and nagar panchayat in Hasanganj tehsil of Unnao district, Uttar Pradesh, India. Located 3 km southeast of Hasanganj on the right bank of the Sai river, Nyotini was historically one of the main centres of Muslim settlement in the district and it has several mosques and shrines."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Pariyar",
+          "note": "Pariyar, also spelled Pariar, is a village in Sikandarpur Sarausi block of Unnao district, Uttar Pradesh, India. It is located on the left bank of the Ganges, 23 km northwest of the city of Unnao."
+        },
+        {
+          "time": "Evening",
+          "activity": "Choubepur Kalan",
+          "note": "Choubepur Kalan is a census town in Kanpur district in the state of Uttar Pradesh, India."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Kalyanpur, Uttar Pradesh & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kalyanpur, Uttar Pradesh",
+          "note": "Kalyanpur or Kalianpur (earlier Kullianpore) is a satellite town of Kanpur in Uttar Pradesh, India. Located about 15 km from Kanpur on the Grand Trunk Road towards Delhi, it is effectively a suburb of Kanpur."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Flight Laboratory, IIT Kanpur",
+          "note": "Flight Laboratory, IIT Kanpur is an airstrip/aerodrome located inside IIT Kanpur's campus at Kalyanpur 18 kilometres west of city of Kanpur, India. It is used by the Aerospace Engineering department of IIT Kanpur."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "The Pristine Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1586611292717-f828b167408c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Valmiki Ashram Stay"
+      }
+    },
+    {
+      "name": "siddi vinayak",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Valmiki Ashram"
+      }
+    },
+    {
+      "name": "Hotel Anukampa",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Valmiki Ashram Grand Hotel"
+      }
+    },
+    {
+      "name": "Collection O Hotel",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Valmiki Ashram"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg/1280px-Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg",
+      "alt": "Valmiki Ashram photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tower_in_Valmiki_Ashram_during_evening.jpg/1280px-Tower_in_Valmiki_Ashram_during_evening.jpg",
+      "alt": "Valmiki Ashram photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Purva_Madhyamik_Vidyalaya_-_Maharishi_Valmiki_Ashram_-_Manikpur_-_Chitrakoot_2014-07-06_7239.JPG/1280px-Purva_Madhyamik_Vidyalaya_-_Maharishi_Valmiki_Ashram_-_Manikpur_-_Chitrakoot_2014-07-06_7239.JPG",
+      "alt": "Valmiki Ashram photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Purva_Madhyamik_Vidyalaya_-_Maharishi_Valmiki_Ashram_-_Manikpur_-_Chitrakoot_2014-07-06_7238.JPG/1280px-Purva_Madhyamik_Vidyalaya_-_Maharishi_Valmiki_Ashram_-_Manikpur_-_Chitrakoot_2014-07-06_7238.JPG",
+      "alt": "Valmiki Ashram photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tower_in_Valmiki_Ashram.jpg/1280px-Tower_in_Valmiki_Ashram.jpg",
+      "alt": "Valmiki Ashram photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Valmiki Ashram?",
+      "a": "The best time to visit Valmiki Ashram is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Valmiki Ashram?",
+      "a": "The nearest airport is Valmiki Ashram / nearest airport (30 km) and the nearest railway station is Kanpur Central (18 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Valmiki Ashram?",
+      "a": "3 days are usually enough to cover the top attractions of Valmiki Ashram at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Valmiki Ashram?",
+      "a": "Stays in Valmiki Ashram start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Valmiki Ashram?",
+      "a": "The top attractions are New Kanpur City, Bithoor, Unnao dead bodies row, Nyotini, Pariyar."
+    }
+  ],
+  "seo": {
+    "title": "Valmiki Ashram Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Valmiki Ashram (Nepali: वाल्मीकि आश्रम) is a Hindu Balmiki temple situated in Chitwan district of Nepal, inside Chitwan National Park. Plan your Valmiki Ashram trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=valmiki-ashram",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg/1280px-Sunset_in_Valmiki_Ashram_in_Bithoor%2C_Kanpur.jpg",
+    "keywords": [
+      "Valmiki Ashram travel guide",
+      "places to visit in Valmiki Ashram",
+      "Valmiki Ashram hotels",
+      "best time to visit Valmiki Ashram",
+      "how to reach Valmiki Ashram",
+      "Uttar Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

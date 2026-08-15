@@ -1,0 +1,486 @@
+{
+  "slug": "saddle-peak-national-park",
+  "title": "Saddle Peak National Park",
+  "state": "Andaman & Nicobar",
+  "country": "India",
+  "region": "Andaman & Nicobar",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Saddle Peak National Park — wildlife reserve of Andaman & Nicobar",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nth_Andaman_locale.png",
+    "alt": "Saddle Peak National Park, Andaman & Nicobar"
+  },
+  "overview": {
+    "short": "Saddle Peak National Park is a national park in the Andaman and Nicobar Islands in India.",
+    "description": "Saddle Peak National Park is a national park in the Andaman and Nicobar Islands in India. It was set up in 1979 on the surrounding areas of Saddle Peak. Saddle Peak or Saddle Hills is located on North Andaman Island.",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 21148,
+    "minPrice": 2500,
+    "distanceFromDelhi": 2371
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 13.15861111,
+    "lng": 93.00555556,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 216,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 173 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1378,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1102 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1445,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1156 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1454,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1163 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1470,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1176 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1500,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1200 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 1625,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1300 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1724,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1379 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1733,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1386 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1741,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1393 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 1746,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1397 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1799,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1439 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1813,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1450 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1881,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1505 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 1938,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1550 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Saddle Peak National Park / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Puri Railway Station",
+      "distance": 1064
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Saddle Peak (Andaman Islands)",
+      "category": "beach",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Saddle Peak or Saddle Hill is located on North Andaman Island in India's Andaman and Nicobar Islands. At 732 m, it is the highest point of the archipelago in the Bay of Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/On_short_leave_to_Japan_%28IA_onshortleavetoja00younrich%29.pdf/page1-500px-On_short_leave_to_Japan_%28IA_onshortleavetoja00younrich%29.pdf.jpg",
+        "alt": "Saddle Peak (Andaman Islands)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/On_short_leave_to_Japan_%28IA_onshortleavetoja00younrich%29.pdf/page1-500px-On_short_leave_to_Japan_%28IA_onshortleavetoja00younrich%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/On_short_leave_to_Japan_%28IA_cu31924023219748%29.pdf/page1-500px-On_short_leave_to_Japan_%28IA_cu31924023219748%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Kaplong Hydroelectric Project",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Kaplong Hydroelectric Project (Kalpong Dam) is the largest dam of the Andaman & Nicobar Islands. Built across the Kalpong River at Nabagram Diglipur in the North and Middle Andaman district the dam was completed in 2001 and commissioned on 1 September 2001 by Shri M. Kannappan the Minister of State for Non-Conventional Energy Sources.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/KHEP_Dam.jpg/1280px-KHEP_Dam.jpg",
+        "alt": "Kaplong Hydroelectric Project"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/KHEP_Dam.jpg/1280px-KHEP_Dam.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/KHEP_Penstock.jpg/1280px-KHEP_Penstock.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/KHEP_Generator.jpg/1280px-KHEP_Generator.jpg"
+      ]
+    },
+    {
+      "name": "Ramnagar, Diglipur",
+      "category": "beach",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Ramnagar (or Ram Nagar) is a village in the southeastern part of North Andaman Island. It belongs to the Diglipur county, Andaman and Nicobar territory of India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Ramnagar, Diglipur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Shibpur, Diglipur",
+      "category": "beach",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Shibpur is a village located on North Andaman Island of the Andaman & Nicobar Islands in India. Administratively, it is a part of Diglipur tehsil of North and Middle Andaman district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Durga_puja_in_Shibpur%2C_Howrah.jpg/1280px-Durga_puja_in_Shibpur%2C_Howrah.jpg",
+        "alt": "Shibpur, Diglipur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Durga_puja_in_Shibpur%2C_Howrah.jpg/1280px-Durga_puja_in_Shibpur%2C_Howrah.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Shibpur_Paurashava_mahallah_geocode_map_-_Small_Area_Atlas_Narsingdi.svg/1280px-Shibpur_Paurashava_mahallah_geocode_map_-_Small_Area_Atlas_Narsingdi.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Shibpur_in_Dhaka_division_%28Bangladesh%29.svg/1280px-Shibpur_in_Dhaka_division_%28Bangladesh%29.svg.png"
+      ]
+    },
+    {
+      "name": "Khudirampur",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Khudirampur is a village in Diglipur, North Andaman Islands.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Khudirampur"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Saddle Peak (Andaman Islands) & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Saddle Peak (Andaman Islands)",
+          "note": "Saddle Peak or Saddle Hill is located on North Andaman Island in India's Andaman and Nicobar Islands. At 732 m, it is the highest point of the archipelago in the Bay of Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kaplong Hydroelectric Project",
+          "note": "Kaplong Hydroelectric Project (Kalpong Dam) is the largest dam of the Andaman & Nicobar Islands. Built across the Kalpong River at Nabagram Diglipur in the North and Middle Andaman district the dam was completed in 2001 and commissioned on 1 September 2001 by Shri M. Kannappan the Minister of State for Non-Conventional Energy Sources."
+        },
+        {
+          "time": "Evening",
+          "activity": "Ramnagar, Diglipur",
+          "note": "Ramnagar (or Ram Nagar) is a village in the southeastern part of North Andaman Island. It belongs to the Diglipur county, Andaman and Nicobar territory of India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Shibpur, Diglipur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shibpur, Diglipur",
+          "note": "Shibpur is a village located on North Andaman Island of the Andaman & Nicobar Islands in India. Administratively, it is a part of Diglipur tehsil of North and Middle Andaman district."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Khudirampur",
+          "note": "Khudirampur is a village in Diglipur, North Andaman Islands."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Saddle Peak View Resort",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Saddle Peak National Park Stay"
+      }
+    },
+    {
+      "name": "A.P.W.D Guest House",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Saddle Peak National Park"
+      }
+    },
+    {
+      "name": "Maa Yashoda Lodge",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Saddle Peak National Park Grand Hotel"
+      }
+    },
+    {
+      "name": "Pristine Resort",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Saddle Peak National Park"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Beach time",
+    "Sightseeing",
+    "Cultural",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nth_Andaman_locale.png",
+      "alt": "Saddle Peak National Park photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Asian_Elephant_in_Corbett_National_Park.jpg",
+      "alt": "Saddle Peak National Park photo 2"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Saddle Peak National Park?",
+      "a": "The best time to visit Saddle Peak National Park is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Saddle Peak National Park?",
+      "a": "The nearest airport is Saddle Peak National Park / nearest airport (30 km) and the nearest railway station is Puri Railway Station (1064 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Saddle Peak National Park?",
+      "a": "2 days are usually enough to cover the top attractions of Saddle Peak National Park at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Saddle Peak National Park?",
+      "a": "Stays in Saddle Peak National Park start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Saddle Peak National Park?",
+      "a": "The top attractions are Saddle Peak (Andaman Islands), Kaplong Hydroelectric Project, Ramnagar, Diglipur, Shibpur, Diglipur, Khudirampur."
+    }
+  ],
+  "seo": {
+    "title": "Saddle Peak National Park Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Saddle Peak National Park is a national park in the Andaman and Nicobar Islands in India. Plan your Saddle Peak National Park trip: 5 places to visit, 4 stays from ₹2500/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=saddle-peak-national-park",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Nth_Andaman_locale.png",
+    "keywords": [
+      "Saddle Peak National Park travel guide",
+      "places to visit in Saddle Peak National Park",
+      "Saddle Peak National Park hotels",
+      "best time to visit Saddle Peak National Park",
+      "how to reach Saddle Peak National Park",
+      "Andaman & Nicobar tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

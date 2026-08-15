@@ -1,0 +1,398 @@
+{
+  "slug": "bardan-monastery",
+  "title": "Bardan Monastery",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Bardan Monastery — spiritual town of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg/1280px-Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg",
+    "alt": "Bardan Monastery, Ladakh"
+  },
+  "overview": {
+    "short": "Bardan Monastery or Bardan Gompa is a 17th-century Buddhist monastery, approximately 12 kilometres south of Padum, in Zanskar, Ladakh, northern India at the side of the Lungnak riv",
+    "description": "Bardan Monastery or Bardan Gompa is a 17th-century Buddhist monastery, approximately 12 kilometres south of Padum, in Zanskar, Ladakh, northern India at the side of the Lungnak river. The monastery also ran several smaller hermitages in the area. The monastery consists of a large Dukhang or assembly hall which has some grand statues of Buddhist figures and several small stupas.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 7315,
+    "minPrice": 900,
+    "distanceFromDelhi": 532
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 33.39,
+    "lng": 76.91,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 131,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 105 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 256,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 205 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 319,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 255 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 341,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 273 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 370,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 296 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 448,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 358 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 665,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 532 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 685,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 548 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 874,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 699 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 910,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 728 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1409,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1127 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1470,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1176 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1535,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1228 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1635,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1308 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1661,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1329 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Bardan Monastery / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 188
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Padum",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Padum (also known as Padam), is a town and the administrative headquarter of the Zanskar district of Ladakh in India. Named after the Buddhist guru Padmasambhava, it was historically one of the two main capitals of the Zanskar Kingdom, the other being Zangla.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg/1280px-Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg",
+        "alt": "Padum"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg/1280px-Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/JCB_215LC_Padum_Zanskar_Jun24_A7CR_01095.jpg/1280px-JCB_215LC_Padum_Zanskar_Jun24_A7CR_01095.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Padum",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Padum",
+          "note": "Padum (also known as Padam), is a town and the administrative headquarter of the Zanskar district of Ladakh in India. Named after the Buddhist guru Padmasambhava, it was historically one of the two main capitals of the Zanskar Kingdom, the other being Zangla."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Marq Guest House",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Bardan Monastery Stay"
+      }
+    },
+    {
+      "name": "Ibex Guest House",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Bardan Monastery"
+      }
+    },
+    {
+      "name": "Phukthar Guest House",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bardan Monastery Grand Hotel"
+      }
+    },
+    {
+      "name": "Zambala Guest House",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Bardan Monastery"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg/1280px-Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg",
+      "alt": "Bardan Monastery photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bardan_Gompa_Zanskar_India.jpg/1280px-Bardan_Gompa_Zanskar_India.jpg",
+      "alt": "Bardan Monastery photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Barden_Gompa_%2C_Zanskar.jpg",
+      "alt": "Bardan Monastery photo 3"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Bardan Monastery?",
+      "a": "The best time to visit Bardan Monastery is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Bardan Monastery?",
+      "a": "The nearest airport is Bardan Monastery / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (188 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Bardan Monastery?",
+      "a": "2 days are usually enough to cover the top attractions of Bardan Monastery at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Bardan Monastery?",
+      "a": "Stays in Bardan Monastery start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Bardan Monastery?",
+      "a": "The top attractions are Padum."
+    }
+  ],
+  "seo": {
+    "title": "Bardan Monastery Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Bardan Monastery or Bardan Gompa is a 17th-century Buddhist monastery, approximately 12 kilometres south of Padum, in Zanskar, Ladakh, northern India at the side of the Lungnak riv Plan your Bardan Monastery trip: 1 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and route",
+    "canonical": "destination.html?slug=bardan-monastery",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg/1280px-Bardan_Gompa_%E2%80%93_Prayer_Wheel.jpg",
+    "keywords": [
+      "Bardan Monastery travel guide",
+      "places to visit in Bardan Monastery",
+      "Bardan Monastery hotels",
+      "best time to visit Bardan Monastery",
+      "how to reach Bardan Monastery",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

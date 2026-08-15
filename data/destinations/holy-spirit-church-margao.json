@@ -1,0 +1,580 @@
+{
+  "slug": "holy-spirit-church-margao",
+  "title": "Holy Spirit Church, Margao",
+  "state": "Goa",
+  "country": "India",
+  "region": "Goa",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Holy Spirit Church, Margao — spiritual town of Goa",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Holy_Spirit_Church%2C_Margao.jpg/1280px-Holy_Spirit_Church%2C_Margao.jpg",
+    "alt": "Holy Spirit Church, Margao, Goa"
+  },
+  "overview": {
+    "short": "Holy Spirit Church, also referred to as the Espirito Santo Church, is a church located in Margao, Goa.",
+    "description": "Holy Spirit Church, also referred to as the Espirito Santo Church, is a church located in Margao, Goa. Built between 1564 and 1565, it was the second church to be constructed in the Salcete region.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 10721,
+    "minPrice": 900,
+    "distanceFromDelhi": 1520
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 15.28164,
+    "lng": 73.95914,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 34,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 27 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 350,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 280 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 450,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 360 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 671,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 537 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 680,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 544 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 719,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 575 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 726,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 581 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 806,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 645 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 833,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 666 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 910,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 728 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 916,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 733 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1064,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 851 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1294,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1035 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1309,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1047 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1718,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1374 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Holy Spirit Church, Margao / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Madgaon Junction (Goa)",
+      "distance": 1
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Ravindra Bhavan, Margao",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "The Ravindra Bhavan, Margao (RBM) is a cultural center situated in Fatorda, Goa, India. It is administered by the Directorate of Art and Culture, which is part of the Government of Goa.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Saurabhsom_performing_live_at_ravindra_bhavan_margao_goa.jpg",
+        "alt": "Ravindra Bhavan, Margao"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Saurabhsom_performing_live_at_ravindra_bhavan_margao_goa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ravindra_Bhavan%2C_at_Fatorda%2C_Margao%2C_South_Goa.jpg/1280px-Ravindra_Bhavan%2C_at_Fatorda%2C_Margao%2C_South_Goa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Konkani_singers_from_Goa_and_Mangalore%2C_participants_in_the_duo_and_duets_song_competition_at_the_Ravindra_Bhavan_in_Margao%2C_October_2023._39.jpg/1280px-Konkani_singers_from_Goa_and_Mangalore%2C_participants_in_the_duo_and_duets_song_competition_at_the_Ravindra_Bhavan_in_Margao%2C_October_2023._39.jpg"
+      ]
+    },
+    {
+      "name": "Gomant Vidya Niketan",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Gomant Vidya Niketan (GVN) is a private cultural center based in Comba, Goa, India. Established in 1912, it was originally founded as the Saraswat Brahman Samaj, a small library.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Shri_P_S_Narvekar-Gomant_Vidya_Niketan_Award_Letter_for_Marathi_kathasangraha_%22Kalandar%22.jpg",
+        "alt": "Gomant Vidya Niketan"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Shri_P_S_Narvekar-Gomant_Vidya_Niketan_Award_Letter_for_Marathi_kathasangraha_%22Kalandar%22.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gomant_Vidya_Niketan.jpg/1280px-Gomant_Vidya_Niketan.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Kashinath_Damodar_Naik_Library%2C_Margao.jpg/1280px-Kashinath_Damodar_Naik_Library%2C_Margao.jpg"
+      ]
+    },
+    {
+      "name": "Comba, Goa",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Comba (Komb) is a town and suburb of the city of Margao in South Goa district in the state of Goa, India close to the city of Margao. Comba is famous for Margao's well-known temple-hall \"Dambaab Saal\".It has Damodar Temple along with Ram temple.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Loyola-High-School.jpg",
+        "alt": "Comba, Goa"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/Loyola-High-School.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/72/Loyola_High_school_building.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2014._Cruceiro_en_Fontecada_Santa_Comba_Galiza.jpg/1280px-2014._Cruceiro_en_Fontecada_Santa_Comba_Galiza.jpg"
+      ]
+    },
+    {
+      "name": "Jawaharlal Nehru Stadium (Margao)",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Fatorda Stadium, officially known as Jawaharlal Nehru Stadium, is a multi-purpose stadium in Margao, Goa, India. The venue has been used to host both football and cricket matches.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fatorda_stadium_exterior_1.jpg/1280px-Fatorda_stadium_exterior_1.jpg",
+        "alt": "Jawaharlal Nehru Stadium (Margao)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fatorda_stadium_exterior_1.jpg/1280px-Fatorda_stadium_exterior_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/24/Nehru_stadium_goa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/Fatorda_Stadium%2C_Goa.jpg"
+      ]
+    },
+    {
+      "name": "Margao",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Margao (Goan Konkani: Modgaum, IPA: [mɵɖɡãʋ]; Portuguese: Margão, IPA: [mɐɾɡɐ̃ũ]) is the commercial capital of the Indian state of Goa. It stands on the banks of the river Sal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Holy_Spirit_Church%2C_Margao.jpg/1280px-Holy_Spirit_Church%2C_Margao.jpg",
+        "alt": "Margao"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Holy_Spirit_Church%2C_Margao.jpg/1280px-Holy_Spirit_Church%2C_Margao.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Holy_Spirit_Church%2C_Margao%2C_Goa_03.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Holy_Spirit_Church%2C_Margao%2C_Goa_02.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_02.jpg"
+      ]
+    },
+    {
+      "name": "Gogol, Goa",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Gogol is a town and suburb of the city of Margao in South Goa district in the state of Goa, India. Gogol is a well connected suburb with good infrastructure such as schools, colleges, post office, banks, public transport, shopping areas close to Margao city.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gogol%2C_Goa.jpg/1280px-Gogol%2C_Goa.jpg",
+        "alt": "Gogol, Goa"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gogol%2C_Goa.jpg/1280px-Gogol%2C_Goa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Gogol%2C_a_locality_of_Margao_in_Goa%2C_India%2C_as_seen_from_a_multi-storeyed_building.jpg/1280px-Gogol%2C_a_locality_of_Margao_in_Goa%2C_India%2C_as_seen_from_a_multi-storeyed_building.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Gogol%2C_a_locality_of_Margao_in_Goa%2C_India%2C_as_seen_from_a_multi-storeyed_building_2.jpg/1280px-Gogol%2C_a_locality_of_Margao_in_Goa%2C_India%2C_as_seen_from_a_multi-storeyed_building_2.jpg"
+      ]
+    },
+    {
+      "name": "Fatorda",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Fatorda is a suburb of the city of Margao in Salcete, Goa. Fatorda has been originally home to the traditional Scheduled Tribe/Scheduled Caste population.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Sports_Authority_of_Goa_building_in_Fatorda.jpg/1280px-The_Sports_Authority_of_Goa_building_in_Fatorda.jpg",
+        "alt": "Fatorda"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Sports_Authority_of_Goa_building_in_Fatorda.jpg/1280px-The_Sports_Authority_of_Goa_building_in_Fatorda.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/Fatorda_Stadium%2C_Goa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Fatorda_Stadium%2C_Margao%2C_Goa.png/1280px-Fatorda_Stadium%2C_Margao%2C_Goa.png"
+      ]
+    },
+    {
+      "name": "Vidya Vikas Academy, Goa",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Vidya Vikas Academy (VVA) is an English medium school co-educational in Goa. The school is affiliated to Central Board of Secondary Education (CBSE) .",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Vidya Vikas Academy, Goa"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Ravindra Bhavan, Margao & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Ravindra Bhavan, Margao",
+          "note": "The Ravindra Bhavan, Margao (RBM) is a cultural center situated in Fatorda, Goa, India. It is administered by the Directorate of Art and Culture, which is part of the Government of Goa."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Gomant Vidya Niketan",
+          "note": "The Gomant Vidya Niketan (GVN) is a private cultural center based in Comba, Goa, India. Established in 1912, it was originally founded as the Saraswat Brahman Samaj, a small library."
+        },
+        {
+          "time": "Evening",
+          "activity": "Comba, Goa",
+          "note": "Comba (Komb) is a town and suburb of the city of Margao in South Goa district in the state of Goa, India close to the city of Margao. Comba is famous for Margao's well-known temple-hall \"Dambaab Saal\".It has Damodar Temple along with Ram temple."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Jawaharlal Nehru Stadium (Margao) & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Jawaharlal Nehru Stadium (Margao)",
+          "note": "Fatorda Stadium, officially known as Jawaharlal Nehru Stadium, is a multi-purpose stadium in Margao, Goa, India. The venue has been used to host both football and cricket matches."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Margao",
+          "note": "Margao (Goan Konkani: Modgaum, IPA: [mɵɖɡãʋ]; Portuguese: Margão, IPA: [mɐɾɡɐ̃ũ]) is the commercial capital of the Indian state of Goa. It stands on the banks of the river Sal."
+        },
+        {
+          "time": "Evening",
+          "activity": "Gogol, Goa",
+          "note": "Gogol is a town and suburb of the city of Margao in South Goa district in the state of Goa, India. Gogol is a well connected suburb with good infrastructure such as schools, colleges, post office, banks, public transport, shopping areas close to Margao city."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Fatorda & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Fatorda",
+          "note": "Fatorda is a suburb of the city of Margao in Salcete, Goa. Fatorda has been originally home to the traditional Scheduled Tribe/Scheduled Caste population."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Vidya Vikas Academy, Goa",
+          "note": "Vidya Vikas Academy (VVA) is an English medium school co-educational in Goa. The school is affiliated to Central Board of Secondary Education (CBSE) ."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Vivenda dos Palhacos",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Holy Spirit Church, Margao Stay"
+      }
+    },
+    {
+      "name": "Royal Orchid Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Holy Spirit Church, Margao"
+      }
+    },
+    {
+      "name": "Sea Queen Beach Resort",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Holy Spirit Church, Margao Grand Hotel"
+      }
+    },
+    {
+      "name": "The Leela Palace Hotel",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Holy Spirit Church, Margao"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Holy_Spirit_Church%2C_Margao.jpg/1280px-Holy_Spirit_Church%2C_Margao.jpg",
+      "alt": "Holy Spirit Church, Margao photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Holy_Spirit_Church%2C_Margao%2C_Goa_03.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_03.jpg",
+      "alt": "Holy Spirit Church, Margao photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Holy_Spirit_Church%2C_Margao%2C_Goa_02.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_02.jpg",
+      "alt": "Holy Spirit Church, Margao photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Holy_Spirit_Church%2C_Margao%2C_Goa_04.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_04.jpg",
+      "alt": "Holy Spirit Church, Margao photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Holy_Spirit_Church%2C_Margao%2C_Goa_01.jpg/1280px-Holy_Spirit_Church%2C_Margao%2C_Goa_01.jpg",
+      "alt": "Holy Spirit Church, Margao photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Holy Spirit Church, Margao?",
+      "a": "The best time to visit Holy Spirit Church, Margao is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Holy Spirit Church, Margao?",
+      "a": "The nearest airport is Holy Spirit Church, Margao / nearest airport (30 km) and the nearest railway station is Madgaon Junction (Goa) (1 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Holy Spirit Church, Margao?",
+      "a": "3 days are usually enough to cover the top attractions of Holy Spirit Church, Margao at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Holy Spirit Church, Margao?",
+      "a": "Stays in Holy Spirit Church, Margao start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Holy Spirit Church, Margao?",
+      "a": "The top attractions are Ravindra Bhavan, Margao, Gomant Vidya Niketan, Comba, Goa, Jawaharlal Nehru Stadium (Margao), Margao."
+    }
+  ],
+  "seo": {
+    "title": "Holy Spirit Church, Margao Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Holy Spirit Church, also referred to as the Espirito Santo Church, is a church located in Margao, Goa. Plan your Holy Spirit Church, Margao trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=holy-spirit-church-margao",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Holy_Spirit_Church%2C_Margao.jpg/1280px-Holy_Spirit_Church%2C_Margao.jpg",
+    "keywords": [
+      "Holy Spirit Church, Margao travel guide",
+      "places to visit in Holy Spirit Church, Margao",
+      "Holy Spirit Church, Margao hotels",
+      "best time to visit Holy Spirit Church, Margao",
+      "how to reach Holy Spirit Church, Margao",
+      "Goa tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

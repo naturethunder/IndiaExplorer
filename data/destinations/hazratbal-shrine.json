@@ -1,0 +1,583 @@
+{
+  "slug": "hazratbal-shrine",
+  "title": "Hazratbal Shrine",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Hazratbal Shrine — spiritual town of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HAZRATBAL_SHRINE_01.JPG/1280px-HAZRATBAL_SHRINE_01.JPG",
+    "alt": "Hazratbal Shrine, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "The Hazratbal Shrine, also known as Dargah Hazratbal, is a Sufi dargah and mosque located in Hazratbal area of Srinagar, in the union territory of Jammu and Kashmir, India.",
+    "description": "The Hazratbal Shrine, also known as Dargah Hazratbal, is a Sufi dargah and mosque located in Hazratbal area of Srinagar, in the union territory of Jammu and Kashmir, India. The shrine houses the Moi-e-Muqqadas, a relic traditionally believed to be a hair strand of the Islamic Prophet Muhammad. The shrine is situated on the northern bank of Dal Lake in Srinagar and is regarded by many Muslims as the holiest Islamic religious sites in Kashmir.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.1,
+    "reviewCount": 2535,
+    "minPrice": 900,
+    "distanceFromDelhi": 653
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 34.1292,
+    "lng": 74.8422,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 9,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 7 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 315,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 252 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 346,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 277 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 501,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 401 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 524,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 419 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 649,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 519 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 816,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 653 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 830,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 664 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1010,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 808 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1038,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 830 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1543,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1234 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1569,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1255 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1715,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1372 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1879,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1503 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1895,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1516 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Hazratbal Shrine / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 127
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Hazratbal",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Hazratbal is a notified area situated in the Srinagar district of Jammu and Kashmir. It is about 10 km (6.2 mi) from the Srinagar city center.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HAZRATBAL_SHRINE_01.JPG/1280px-HAZRATBAL_SHRINE_01.JPG",
+        "alt": "Hazratbal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HAZRATBAL_SHRINE_01.JPG/1280px-HAZRATBAL_SHRINE_01.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Hazratbal_Shrine%2C_Kashmir_%288139694344%29.jpg/1280px-Hazratbal_Shrine%2C_Kashmir_%288139694344%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mother_and_Child_-_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826770681761%29.jpg/1280px-Mother_and_Child_-_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826770681761%29.jpg"
+      ]
+    },
+    {
+      "name": "Naseem Bagh",
+      "category": "nature",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Naseem Bagh is a Mughal garden built on the northwestern side of the Dal Lake, close to the city of Srinagar in Jammu and Kashmir, India. The garden is one of the oldest Mughal gardens in Kashmir, built by Mughal emperor Akbar in 1586.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Naseem_Bagh._-_panoramio.jpg",
+        "alt": "Naseem Bagh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/Naseem_Bagh._-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Naseem_Bagh_Road.jpg/1280px-Naseem_Bagh_Road.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Albumblad_met_vier_fotos._Linksboven_Picknick_in_de_tuin_Nasim_Bagh_te_Srinaga%2C_Bestanddeelnr_27_57.jpg/1280px-Albumblad_met_vier_fotos._Linksboven_Picknick_in_de_tuin_Nasim_Bagh_te_Srinaga%2C_Bestanddeelnr_27_57.jpg"
+      ]
+    },
+    {
+      "name": "Nigeen Lake",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Nigeen Lake (alternatively spelled as Nageen Lake) is a lake located in Srinagar, Jammu and Kashmir, India. It is mildly eutrophic, a term that refers to a body of water rich in nutrients, which cause excessive growth of aquatic plants like algae, resulting in bacteria that consume nearly all the oxygen.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nigeen_Lake_pano_%28edited%29.jpg/1280px-Nigeen_Lake_pano_%28edited%29.jpg",
+        "alt": "Nigeen Lake"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nigeen_Lake_pano_%28edited%29.jpg/1280px-Nigeen_Lake_pano_%28edited%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nigeen_Lake_pano.jpg/1280px-Nigeen_Lake_pano.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ec/Nagin_Lake_%28Srinagar%29.jpg"
+      ]
+    },
+    {
+      "name": "Lal Bazar",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Lal Bazar is a locality in the municipal committee of Srinagar in the Indian administered union territory of Jammu and Kashmir. It comes under the Zadibal constituency of the Srinagar Legislative Assembly.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Lal_Bazar_Market_in_Gangtok_02.jpg/1280px-Lal_Bazar_Market_in_Gangtok_02.jpg",
+        "alt": "Lal Bazar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Lal_Bazar_Market_in_Gangtok_02.jpg/1280px-Lal_Bazar_Market_in_Gangtok_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Lal_Bazar_Market_in_Gangtok_16.jpg/1280px-Lal_Bazar_Market_in_Gangtok_16.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Lal_Bazar_Market_in_Gangtok_19.jpg/1280px-Lal_Bazar_Market_in_Gangtok_19.jpg"
+      ]
+    },
+    {
+      "name": "Shalimar Bagh, Srinagar",
+      "category": "nature",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Shalimar Bagh (Urdu pronunciation: [ʃɑːliːmɑːr bɑːɣ] ; Kashmiri pronunciation: [ʃaːlɨməːr baːɣ]) is a Mughal garden in Srinagar, Indian-administered Jammu and Kashmir, located at the northeast of Dal Lake. It is also known as Shalimar Garden, Farah Baksh, and Faiz Baksh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Shalimar_Bagh%2C_Srinagar.jpg/1280px-Shalimar_Bagh%2C_Srinagar.jpg",
+        "alt": "Shalimar Bagh, Srinagar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Shalimar_Bagh%2C_Srinagar.jpg/1280px-Shalimar_Bagh%2C_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c0/A_view_of_Shalimar_Bagh%2C_Srinagar%2C_in_2013.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Muslim_Girls_in_Shalimar_Bagh_Garden_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826237309834%29.jpg/1280px-Muslim_Girls_in_Shalimar_Bagh_Garden_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826237309834%29.jpg"
+      ]
+    },
+    {
+      "name": "Badamwari Park",
+      "category": "nature",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Badamwari Park or Badamvaer is a park in Srinagar, Jammu and Kashmir, India. It is known for the early bloom of almond flowers.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Badamwari_park.jpg/1280px-Badamwari_park.jpg",
+        "alt": "Badamwari Park"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Badamwari_park.jpg/1280px-Badamwari_park.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Entrance_gate_to_Badamwari_Park%2C_Srinagar.jpg/1280px-Entrance_gate_to_Badamwari_Park%2C_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Badamwari_Garden_01.jpg/1280px-Badamwari_Garden_01.jpg"
+      ]
+    },
+    {
+      "name": "Dal Lake",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Dal (Urdu pronunciation: [ɖəl] ; Kashmiri pronunciation: [ɖal]) is a freshwater lake in Srinagar, the summer capital of Jammu and Kashmir in Indian-administered Kashmir. It is an urban lake, the second largest lake in Jammu and Kashmir, and the most visited place in Srinagar by tourists and locals.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "alt": "Dal Lake"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Empty_shikara_on_Dal_Lake%2C_Srinagar%2C_India_2013-08-23_%28flickr_9967093983%29.jpg/1280px-Empty_shikara_on_Dal_Lake%2C_Srinagar%2C_India_2013-08-23_%28flickr_9967093983%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Dal_lake_by_Ahanger_HOBO.jpg/1280px-Dal_lake_by_Ahanger_HOBO.jpg"
+      ]
+    },
+    {
+      "name": "Awanta Bhawan",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Awanta Bhawan, also spelled as Wontabhawan or Owanta Bhawan, is a historic locality adjacent to the Soura area of Srinagar, in the Indian union territory of Jammu and Kashmir. The area is associated with traditional water channels, historic religious sites, and old residential settlements in northern Srinagar, with historical associations with Rani Amritaprabha.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Awanta Bhawan"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Hazratbal & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Hazratbal",
+          "note": "Hazratbal is a notified area situated in the Srinagar district of Jammu and Kashmir. It is about 10 km (6.2 mi) from the Srinagar city center."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Naseem Bagh",
+          "note": "Naseem Bagh is a Mughal garden built on the northwestern side of the Dal Lake, close to the city of Srinagar in Jammu and Kashmir, India. The garden is one of the oldest Mughal gardens in Kashmir, built by Mughal emperor Akbar in 1586."
+        },
+        {
+          "time": "Evening",
+          "activity": "Nigeen Lake",
+          "note": "Nigeen Lake (alternatively spelled as Nageen Lake) is a lake located in Srinagar, Jammu and Kashmir, India. It is mildly eutrophic, a term that refers to a body of water rich in nutrients, which cause excessive growth of aquatic plants like algae, resulting in bacteria that consume nearly all the oxygen."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Lal Bazar & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Lal Bazar",
+          "note": "Lal Bazar is a locality in the municipal committee of Srinagar in the Indian administered union territory of Jammu and Kashmir. It comes under the Zadibal constituency of the Srinagar Legislative Assembly."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Shalimar Bagh, Srinagar",
+          "note": "Shalimar Bagh (Urdu pronunciation: [ʃɑːliːmɑːr bɑːɣ] ; Kashmiri pronunciation: [ʃaːlɨməːr baːɣ]) is a Mughal garden in Srinagar, Indian-administered Jammu and Kashmir, located at the northeast of Dal Lake. It is also known as Shalimar Garden, Farah Baksh, and Faiz Baksh."
+        },
+        {
+          "time": "Evening",
+          "activity": "Badamwari Park",
+          "note": "Badamwari Park or Badamvaer is a park in Srinagar, Jammu and Kashmir, India. It is known for the early bloom of almond flowers."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Dal Lake & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Dal Lake",
+          "note": "Dal (Urdu pronunciation: [ɖəl] ; Kashmiri pronunciation: [ɖal]) is a freshwater lake in Srinagar, the summer capital of Jammu and Kashmir in Indian-administered Kashmir. It is an urban lake, the second largest lake in Jammu and Kashmir, and the most visited place in Srinagar by tourists and locals."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Awanta Bhawan",
+          "note": "Awanta Bhawan, also spelled as Wontabhawan or Owanta Bhawan, is a historic locality adjacent to the Soura area of Srinagar, in the Indian union territory of Jammu and Kashmir. The area is associated with traditional water channels, historic religious sites, and old residential settlements in northern Srinagar, with historical associations with Rani Amritaprabha."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Mount Inn",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Hazratbal Shrine Stay"
+      }
+    },
+    {
+      "name": "Hotel The Residency",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Hazratbal Shrine"
+      }
+    },
+    {
+      "name": "Hotel Sadaf",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Hazratbal Shrine Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Broadway",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Hazratbal Shrine"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HAZRATBAL_SHRINE_01.JPG/1280px-HAZRATBAL_SHRINE_01.JPG",
+      "alt": "Hazratbal Shrine photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Hazratbal_Shrine%2C_Kashmir_%288139694344%29.jpg/1280px-Hazratbal_Shrine%2C_Kashmir_%288139694344%29.jpg",
+      "alt": "Hazratbal Shrine photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Dome_of_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826565403180%29.jpg/1280px-Dome_of_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826565403180%29.jpg",
+      "alt": "Hazratbal Shrine photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Exterior_of_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826565372660%29.jpg/1280px-Exterior_of_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826565372660%29.jpg",
+      "alt": "Hazratbal Shrine photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mother_and_Child_-_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826770681761%29.jpg/1280px-Mother_and_Child_-_Hazratbal_Shrine_-_Srinagar_-_Jammu_%26_Kashmir_-_India_%2826770681761%29.jpg",
+      "alt": "Hazratbal Shrine photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Hazratbal Shrine?",
+      "a": "The best time to visit Hazratbal Shrine is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Hazratbal Shrine?",
+      "a": "The nearest airport is Hazratbal Shrine / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (127 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Hazratbal Shrine?",
+      "a": "3 days are usually enough to cover the top attractions of Hazratbal Shrine at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Hazratbal Shrine?",
+      "a": "Stays in Hazratbal Shrine start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Hazratbal Shrine?",
+      "a": "The top attractions are Hazratbal, Naseem Bagh, Nigeen Lake, Lal Bazar, Shalimar Bagh, Srinagar."
+    }
+  ],
+  "seo": {
+    "title": "Hazratbal Shrine Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "The Hazratbal Shrine, also known as Dargah Hazratbal, is a Sufi dargah and mosque located in Hazratbal area of Srinagar, in the union territory of Jammu and Kashmir, India. Plan your Hazratbal Shrine trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=hazratbal-shrine",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HAZRATBAL_SHRINE_01.JPG/1280px-HAZRATBAL_SHRINE_01.JPG",
+    "keywords": [
+      "Hazratbal Shrine travel guide",
+      "places to visit in Hazratbal Shrine",
+      "Hazratbal Shrine hotels",
+      "best time to visit Hazratbal Shrine",
+      "how to reach Hazratbal Shrine",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

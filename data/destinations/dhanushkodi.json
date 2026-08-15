@@ -1,0 +1,668 @@
+{
+  "slug": "dhanushkodi",
+  "title": "Dhanushkodi",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Pamban Island",
+  "type": "beach",
+  "badge": "Ghost Town Edge",
+  "tagline": "Mysterious ghost town at India's tip where the Indian Ocean meets Bay of Bengal",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg",
+    "alt": "Dhanushkodi, Tamil Nadu"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg",
+    "alt": "Dhanushkodi, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Mysterious ghost town at India's tip where the Indian Ocean meets the Bay of Bengal.",
+    "description": "Dhanushkodi is an abandoned ghost town located at the southeastern tip of Pamban Island in Tamil Nadu. Destroyed in the 1964 cyclone, Dhanushkodi features evocative ruins of a church and railway station surrounded by vast blue seas where the calm Bay of Bengal meets the roaring Indian Ocean.",
+    "features": [
+      "Arichal Munai Confluence",
+      "Ruined Church & Railway Station",
+      "Ram Setu Point",
+      "End of India Road Drive"
+    ],
+    "rating": 4.9,
+    "reviewCount": 3410,
+    "minPrice": 2500,
+    "distanceFromDelhi": 2750
+  },
+  "bestTime": {
+    "label": "Oct – Apr",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 9.1761,
+    "lng": 79.4143,
+    "tempSummer": "26–35°C",
+    "tempWinter": "22–30°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 206,
+        "byCar": "3–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 165 km · road approx."
+      },
+      {
+        "from": "Thiruvananthapuram (Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "distance": 353,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 282 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 389,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 311 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 576,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 461 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 948,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 758 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1033,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 826 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1148,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 918 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1160,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 928 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1499,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1199 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1704,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1363 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1769,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1415 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1793,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1434 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 1851,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1481 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1886,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1509 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1941,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1553 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 2120,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1696 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 2211,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1769 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 2271,
+        "byCar": "38–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1817 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 2293,
+        "byCar": "38–51 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1834 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 2404,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1923 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2576,
+        "byCar": "43–57 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2061 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2686,
+        "byCar": "45–60 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2149 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 2699,
+        "byCar": "45–60 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2159 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 2718,
+        "byCar": "45–60 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2174 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 2798,
+        "byCar": "47–62 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2238 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2813,
+        "byCar": "47–63 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2250 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2864,
+        "byCar": "48–64 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2291 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2903,
+        "byCar": "48–65 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2322 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 2944,
+        "byCar": "49–65 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2355 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 3004,
+        "byCar": "50–67 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2403 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 3016,
+        "byCar": "50–67 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2413 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 3061,
+        "byCar": "51–68 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2449 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 3110,
+        "byCar": "52–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2488 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 3176,
+        "byCar": "53–71 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2541 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 3325,
+        "byCar": "55–74 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2660 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 3480,
+        "byCar": "58–77 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2784 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Madurai Airport (IXM)",
+      "distance": 175
+    },
+    "nearestRailway": {
+      "name": "Rameswaram Railway Station (RMM)",
+      "distance": 18
+    },
+    "roadNote": "A beautiful 18km sea highway connects Rameswaram to Arichal Munai (Dhanushkodi tip)."
+  },
+  "topPlaces": [
+    {
+      "name": "Arichal Munai (Land's End Tip)",
+      "category": "nature",
+      "distance": "0 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Southernmost tip where Indian Ocean (Mahodadhi) meets Bay of Bengal (Ratnakara).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Road_to_Arichal_Munai.jpg/1280px-Road_to_Arichal_Munai.jpg",
+        "alt": "Arichal Munai (Land's End Tip)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Road_to_Arichal_Munai.jpg/1280px-Road_to_Arichal_Munai.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Dhanushkodi_Arichal_Munai_1.jpg/1280px-Dhanushkodi_Arichal_Munai_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dhanushkodi_Arichal_Munai_2.jpg/1280px-Dhanushkodi_Arichal_Munai_2.jpg"
+      ]
+    },
+    {
+      "name": "Dhanushkodi Ruined Church & Police Station",
+      "category": "heritage",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Haunting ruins of the brick church and police post destroyed in 1964 cyclone.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg",
+        "alt": "Dhanushkodi Ruined Church & Police Station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg"
+      ]
+    },
+    {
+      "name": "Dhanushkodi Pristine Beach & Lagoon",
+      "category": "beach",
+      "distance": "1 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Untouched white sand beach with clear azure sea water.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Bay_of_bengal_%28_indian_ocean_%29_at_dhanushkodi._tamil_nadu_-_panoramio.jpg/1280px-Bay_of_bengal_%28_indian_ocean_%29_at_dhanushkodi._tamil_nadu_-_panoramio.jpg",
+        "alt": "Dhanushkodi Pristine Beach & Lagoon"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Bay_of_bengal_%28_indian_ocean_%29_at_dhanushkodi._tamil_nadu_-_panoramio.jpg/1280px-Bay_of_bengal_%28_indian_ocean_%29_at_dhanushkodi._tamil_nadu_-_panoramio.jpg"
+      ]
+    },
+    {
+      "name": "Pamban Sea Bridge Viewpoint",
+      "category": "heritage",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "1 hr",
+      "rating": 4.9,
+      "description": "Historic 2km sea bridge spanning Palk Strait connecting Rameswaram island.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pamban_bridge%28sea_bridge%29.JPG",
+        "alt": "Pamban Sea Bridge Viewpoint"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pamban_bridge%28sea_bridge%29.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Pamban_Bridge_ramashwaram.jpg/1280px-Pamban_Bridge_ramashwaram.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Pamban_bridge_%2CIndia%27s_first_sea_bridge_and_the_longest_one.jpg/1280px-The_Pamban_bridge_%2CIndia%27s_first_sea_bridge_and_the_longest_one.jpg"
+      ]
+    },
+    {
+      "name": "Kothandaramaswamy Temple",
+      "category": "spiritual",
+      "distance": "12 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 7 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "Sea-surrounded temple where Vibhishana surrendered to Lord Rama.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kothandaramaswamy_Temple.jpg/1280px-Kothandaramaswamy_Temple.jpg",
+        "alt": "Kothandaramaswamy Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kothandaramaswamy_Temple.jpg/1280px-Kothandaramaswamy_Temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kothandaramar_Temple%2C_Rameswaram.jpg/1280px-Kothandaramar_Temple%2C_Rameswaram.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/SRI_KOTHANDARAMASWAMY_TEMPLE%2C_Ayodhiyapatinam%2C_Salem_-_panoramio_%2810%29.jpg/1280px-SRI_KOTHANDARAMASWAMY_TEMPLE%2C_Ayodhiyapatinam%2C_Salem_-_panoramio_%2810%29.jpg"
+      ]
+    },
+    {
+      "name": "Ramanathaswamy Temple Rameswaram",
+      "category": "spiritual",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "5 AM – 9 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Venerated 12 Jyotirlinga shrine featuring the world's longest carved temple corridor.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ramanathaswamy_Temple_Rameswaram_%283%29.jpg/1280px-Ramanathaswamy_Temple_Rameswaram_%283%29.jpg",
+        "alt": "Ramanathaswamy Temple Rameswaram"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ramanathaswamy_Temple_Rameswaram_%283%29.jpg/1280px-Ramanathaswamy_Temple_Rameswaram_%283%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ramanathaswamy_Temple_Rameswaram_%281%29.jpg/1280px-Ramanathaswamy_Temple_Rameswaram_%281%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Rameswaram_harbour.jpg/1280px-Rameswaram_harbour.jpg"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Divine",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 11000,
+      "rating": 4.8,
+      "reviews": 520,
+      "amenities": [
+        "Pool",
+        "Fitness Center",
+        "Fine Dining",
+        "Free WiFi"
+      ],
+      "tags": [
+        "Luxury Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg",
+        "alt": "Hyatt Place Rameswaram"
+      }
+    },
+    {
+      "name": "Dheivanai Lodge",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 7000,
+      "rating": 4.6,
+      "reviews": 410,
+      "amenities": [
+        "Spa",
+        "Vegetarian Restaurant",
+        "Travel Desk"
+      ],
+      "tags": [
+        "Pilgrim Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dhanushkodi_buildings.JPG/1280px-Dhanushkodi_buildings.JPG",
+        "alt": "Daiwik Hotels Rameswaram"
+      }
+    },
+    {
+      "name": "Swami Ramanatha Tourist Home",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3500,
+      "rating": 4.4,
+      "reviews": 290,
+      "amenities": [
+        "Restaurant",
+        "Parking",
+        "AC Rooms"
+      ],
+      "tags": [
+        "Govt Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ruins_in_Dhanushkodi.jpg",
+        "alt": "Hotel Tamil Nadu Rameswaram (TTDC)"
+      }
+    },
+    {
+      "name": "Hare Rama Hare Krishna",
+      "type": "homestay",
+      "tier": "budget",
+      "priceMin": 2000,
+      "priceMax": 3800,
+      "rating": 4.5,
+      "reviews": 160,
+      "amenities": [
+        "Sea Breeze Balcony",
+        "Home Meals",
+        "Beach Access"
+      ],
+      "tags": [
+        "Beach Homestay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Road_to_Dhanushkodi_02.jpg/1280px-Road_to_Dhanushkodi_02.jpg",
+        "alt": "Dhanushkodi Beachside Homestay"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Dhanushkodi_church_ruin.jpg/1280px-Dhanushkodi_church_ruin.jpg",
+      "alt": "Dhanushkodi photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dhanushkodi_buildings.JPG/1280px-Dhanushkodi_buildings.JPG",
+      "alt": "Dhanushkodi photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ruins_in_Dhanushkodi.jpg",
+      "alt": "Dhanushkodi photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Road_to_Dhanushkodi_02.jpg/1280px-Road_to_Dhanushkodi_02.jpg",
+      "alt": "Dhanushkodi photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Waves_in_sea.jpg/1280px-Waves_in_sea.jpg",
+      "alt": "Dhanushkodi photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/DhanushkodiCretaDrive.jpg/1280px-DhanushkodiCretaDrive.jpg",
+      "alt": "Dhanushkodi photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can tourists visit Dhanushkodi ghost town?",
+      "a": "Yes, a paved sea highway allows private vehicles and taxis to travel up to Arichal Munai between 6 AM and 6 PM daily."
+    }
+  ],
+  "seo": {
+    "title": "Dhanushkodi Travel Guide 2026 — Ghost Town, Arichal Munai, Pamban Bridge | IndiaExplore",
+    "description": "Discover Dhanushkodi in Tamil Nadu: Ghost town ruins, Arichal Munai ocean confluence, Pamban bridge and Rameswaram stays.",
+    "canonical": "destination.html?slug=dhanushkodi",
+    "ogImage": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Dhanushkodi ghost town",
+      "Arichal Munai",
+      "Pamban bridge",
+      "Dhanushkodi Tamil Nadu"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

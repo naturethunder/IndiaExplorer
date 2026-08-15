@@ -1,0 +1,384 @@
+{
+  "slug": "prachitgad",
+  "title": "Prachitgad",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Prachitgad — heritage city of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_in_Chandoli_National_Park_01.jpg/1280px-Landscape_in_Chandoli_National_Park_01.jpg",
+    "alt": "Chandoli National Park"
+  },
+  "overview": {
+    "short": "Prachitgad is a fort in the Sahyadri mountain range in Sangli district of Maharashtra state, India.",
+    "description": "Prachitgad is a fort in the Sahyadri mountain range in Sangli district of Maharashtra state, India. It covers an area of 5 acres (20,000 m2).",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.1,
+    "reviewCount": 11380,
+    "minPrice": 900,
+    "distanceFromDelhi": 1316
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 17.22611111,
+    "lng": 73.69027778,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 181,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 145 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 243,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 194 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 455,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 364 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 560,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 448 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 620,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 496 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 636,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 509 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 814,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 651 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 931,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 745 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 938,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 750 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 969,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 775 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1023,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 818 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1073,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 858 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1103,
+        "byCar": "18–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 882 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1183,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 946 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1490,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1192 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Prachitgad / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Pune Junction",
+      "distance": 146
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Chandoli National Park",
+      "category": "wildlife",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Chandoli National Park is a national park established in Sangli district in May 2004. Earlier it was a Wildlife Sanctuary declared in 1985.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_in_Chandoli_National_Park_01.jpg/1280px-Landscape_in_Chandoli_National_Park_01.jpg",
+        "alt": "Chandoli National Park"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_in_Chandoli_National_Park_01.jpg/1280px-Landscape_in_Chandoli_National_Park_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Landscape_in_Chandoli_National_Park_02.jpg/1280px-Landscape_in_Chandoli_National_Park_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Chandoli_Maharashtra.jpg/1280px-Chandoli_Maharashtra.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Chandoli National Park",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Chandoli National Park",
+          "note": "Chandoli National Park is a national park established in Sangli district in May 2004. Earlier it was a Wildlife Sanctuary declared in 1985."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Vikrant",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Prachitgad Stay"
+      }
+    },
+    {
+      "name": "Govt Guest House",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Prachitgad"
+      }
+    },
+    {
+      "name": "Prachitgad Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Prachitgad Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Prachitgad",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Prachitgad"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Wildlife safaris",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [],
+  "faq": [
+    {
+      "q": "What is the best time to visit Prachitgad?",
+      "a": "The best time to visit Prachitgad is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Prachitgad?",
+      "a": "The nearest airport is Prachitgad / nearest airport (30 km) and the nearest railway station is Pune Junction (146 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Prachitgad?",
+      "a": "2 days are usually enough to cover the top attractions of Prachitgad at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Prachitgad?",
+      "a": "Stays in Prachitgad start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Prachitgad?",
+      "a": "The top attractions are Chandoli National Park."
+    }
+  ],
+  "seo": {
+    "title": "Prachitgad Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Prachitgad is a fort in the Sahyadri mountain range in Sangli district of Maharashtra state, India. Plan your Prachitgad trip: 1 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=prachitgad",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Landscape_in_Chandoli_National_Park_01.jpg/1280px-Landscape_in_Chandoli_National_Park_01.jpg",
+    "keywords": [
+      "Prachitgad travel guide",
+      "places to visit in Prachitgad",
+      "Prachitgad hotels",
+      "best time to visit Prachitgad",
+      "how to reach Prachitgad",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 2
+}

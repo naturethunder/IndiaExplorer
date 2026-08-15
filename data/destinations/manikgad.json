@@ -1,0 +1,450 @@
+{
+  "slug": "manikgad",
+  "title": "Manikgad",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Manikgad — heritage city of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Manikgad%28Raigad%29.jpg/1280px-Manikgad%28Raigad%29.jpg",
+    "alt": "Manikgad, Maharashtra"
+  },
+  "overview": {
+    "short": "Manikgad is a mountain fortress and temple in Gherakilla Manikgad, India.",
+    "description": "Manikgad is a mountain fortress and temple in Gherakilla Manikgad, India. Located among rolling hills, the temple is a popular hiking spot. Manikgad was built to oversee the trade route from Maval (Pune) to coastal ports. The fort is situated near Vashivali (Rasayani MIDC), which is 27 km from Panvel.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.8,
+    "reviewCount": 7711,
+    "minPrice": 900,
+    "distanceFromDelhi": 1162
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 18.825916666,
+    "lng": 73.193027777,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 54,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 43 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 224,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 179 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 329,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 263 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 471,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 377 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 643,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 514 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 728,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 582 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 804,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 643 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 851,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 681 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1039,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 831 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1151,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 921 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1151,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 921 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 1198,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 958 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1304,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1043 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1304,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1043 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1314,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1051 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Manikgad / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Mumbai CSMT",
+      "distance": 40
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Ambivali Tarf Tungaratan",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Ambivali Tarf Tungaratan is a census town in Raigad district in the state of Maharashtra, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Ambivali Tarf Tungaratan"
+      },
+      "photos": []
+    },
+    {
+      "name": "Rasayani",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Rasayani is a town in the Khalapur taluka of the Raigad district, Maharashtra, India. It is 64 km from Mumbai and 100 km from Pune.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kalash_City_Brochure-03.jpg",
+        "alt": "Rasayani"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Kalash_City_Brochure-03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/ISS062-E-116594_-_View_of_India.jpg/1280px-ISS062-E-116594_-_View_of_India.jpg"
+      ]
+    },
+    {
+      "name": "Mohpada",
+      "category": "scenic",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Mohopada, alias Wasambe, is a census town in Khalapur Taluka, Raigad district in the Indian state of Maharashtra.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Mohpada"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Ambivali Tarf Tungaratan & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Ambivali Tarf Tungaratan",
+          "note": "Ambivali Tarf Tungaratan is a census town in Raigad district in the state of Maharashtra, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Rasayani",
+          "note": "Rasayani is a town in the Khalapur taluka of the Raigad district, Maharashtra, India. It is 64 km from Mumbai and 100 km from Pune."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Mohpada",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Mohpada",
+          "note": "Mohopada, alias Wasambe, is a census town in Khalapur Taluka, Raigad district in the Indian state of Maharashtra."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Uncle's Kitchen Family Resort",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Manikgad Stay"
+      }
+    },
+    {
+      "name": "Hotel Rinky",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Manikgad"
+      }
+    },
+    {
+      "name": "Hotel Kajal",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Manikgad Grand Hotel"
+      }
+    },
+    {
+      "name": "Rishi Resorts",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Manikgad"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Manikgad%28Raigad%29.jpg/1280px-Manikgad%28Raigad%29.jpg",
+      "alt": "Manikgad photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/..._on_the_trail_to_Manikgad_%286073450133%29.jpg/1280px-..._on_the_trail_to_Manikgad_%286073450133%29.jpg",
+      "alt": "Manikgad photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Manikgad_Distant_View.jpg/1280px-Manikgad_Distant_View.jpg",
+      "alt": "Manikgad photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Manikgad_Pond.jpg/1280px-Manikgad_Pond.jpg",
+      "alt": "Manikgad photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Manikgad_Temple.jpg/1280px-Manikgad_Temple.jpg",
+      "alt": "Manikgad photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Manikgad?",
+      "a": "The best time to visit Manikgad is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Manikgad?",
+      "a": "The nearest airport is Manikgad / nearest airport (30 km) and the nearest railway station is Mumbai CSMT (40 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Manikgad?",
+      "a": "2 days are usually enough to cover the top attractions of Manikgad at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Manikgad?",
+      "a": "Stays in Manikgad start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Manikgad?",
+      "a": "The top attractions are Ambivali Tarf Tungaratan, Rasayani, Mohpada."
+    }
+  ],
+  "seo": {
+    "title": "Manikgad Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Manikgad is a mountain fortress and temple in Gherakilla Manikgad, India. Plan your Manikgad trip: 3 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=manikgad",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Manikgad%28Raigad%29.jpg/1280px-Manikgad%28Raigad%29.jpg",
+    "keywords": [
+      "Manikgad travel guide",
+      "places to visit in Manikgad",
+      "Manikgad hotels",
+      "best time to visit Manikgad",
+      "how to reach Manikgad",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

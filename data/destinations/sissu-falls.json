@@ -1,0 +1,491 @@
+{
+  "slug": "sissu-falls",
+  "title": "Sissu Falls",
+  "state": "Himachal Pradesh",
+  "country": "India",
+  "region": "Himachal Pradesh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Sissu Falls — heritage city of Himachal Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Sissu_Waterfall_2011_IMG_9682_%286890931693%29.jpg/3840px-Sissu_Waterfall_2011_IMG_9682_%286890931693%29.jpg",
+    "alt": "Sissu Falls, Himachal Pradesh"
+  },
+  "overview": {
+    "short": "Sissu Falls is located on is on a diversion on the Leh–Manali Highway in Lahaul and Spiti district, Himachal Pradesh.",
+    "description": "Sissu Falls is located on is on a diversion on the Leh–Manali Highway in Lahaul and Spiti district, Himachal Pradesh. The source of water is the suspended glaciers on the Himalayan range.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.4,
+    "reviewCount": 13897,
+    "minPrice": 900,
+    "distanceFromDelhi": 428
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 32.466385,
+    "lng": 77.122033,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 189,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 151 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 240,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 192 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 244,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 195 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 268,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 214 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 289,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 231 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 318,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 254 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 535,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 428 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 558,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 446 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 743,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 594 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 789,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 631 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1280,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1024 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1364,
+        "byCar": "23–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1091 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1426,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1141 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1556,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1245 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1578,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1262 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Sissu Falls / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Chandigarh Railway Station",
+      "distance": 201
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Sissu",
+      "category": "nature",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Sissu (also known as Khwaling) is a small town in the Lahaul valley of Himachal Pradesh in India. It is around 40 km from Manali and located on the right bank of Chandra river.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wildflowers_Mountains_Sissu_Lahaul_Jul19_D72_10447.jpg/1280px-Wildflowers_Mountains_Sissu_Lahaul_Jul19_D72_10447.jpg",
+        "alt": "Sissu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wildflowers_Mountains_Sissu_Lahaul_Jul19_D72_10447.jpg/1280px-Wildflowers_Mountains_Sissu_Lahaul_Jul19_D72_10447.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Top_View_of_Sissu_%2C_Lahaul.jpg/1280px-Top_View_of_Sissu_%2C_Lahaul.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ghepan_Monastery_Stupa_Sissu_Lahaul_Oct20_D72_18646.jpg/1280px-Ghepan_Monastery_Stupa_Sissu_Lahaul_Oct20_D72_18646.jpg"
+      ]
+    },
+    {
+      "name": "Chachi Mug",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Chachi Mug is a mountain in India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youngzin_Gemur_Khar_Lahaul_Jun24_A7CR_00176.jpg/1280px-Youngzin_Gemur_Khar_Lahaul_Jun24_A7CR_00176.jpg",
+        "alt": "Chachi Mug"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youngzin_Gemur_Khar_Lahaul_Jun24_A7CR_00176.jpg/1280px-Youngzin_Gemur_Khar_Lahaul_Jun24_A7CR_00176.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Chachi_Mug.jpg/1280px-Chachi_Mug.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Snow_Peak_Gemur_Lahaul_Oct22_A7C_03500.jpg/1280px-Snow_Peak_Gemur_Lahaul_Oct22_A7C_03500.jpg"
+      ]
+    },
+    {
+      "name": "Shikar Beh",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Shikar Beh is a mountain located in Himachal Pradesh, India. It is an ultra-prominent peak and is the 142nd highest in Asia.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/2_6_tectomap2.png",
+        "alt": "Shikar Beh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/2_6_tectomap2.png"
+      ]
+    },
+    {
+      "name": "Atal Tunnel",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Atal Tunnel (Hindi: अटल सुरंग) is a 9.02-kilometre-long (5.60 mi) road tunnel connecting Manali and Keylong, thus helping in bypassing the Rohtang Pass, Himachal Pradesh in the eastern Pir Panjal range of the Himalayas. It carries two lanes of National Highway 3 and is the longest highway single-tube tunnel above 10,000 feet (3,048 m) in the world.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/PM_Narendra_Modi_stands_at_the_entrance_to_the_Atal_Tunnel_in_Rohtang.jpg/1280px-PM_Narendra_Modi_stands_at_the_entrance_to_the_Atal_Tunnel_in_Rohtang.jpg",
+        "alt": "Atal Tunnel"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/PM_Narendra_Modi_stands_at_the_entrance_to_the_Atal_Tunnel_in_Rohtang.jpg/1280px-PM_Narendra_Modi_stands_at_the_entrance_to_the_Atal_Tunnel_in_Rohtang.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/The_Prime_Minister%2C_Shri_Narendra_Modi_dedicates_to_the_nation_the_World%E2%80%99s_longest_Highway_tunnel_-_Atal_Tunnel%2C_in_Manali%2C_Himachal_Pradesh_on_October_03%2C_2020_%287%29.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_Prime_Minister%2C_Shri_Narendra_Modi_dedicates_to_the_nation_the_World%E2%80%99s_longest_Highway_tunnel_-_Atal_Tunnel%2C_in_Manali%2C_Himachal_Pradesh_on_October_03%2C_2020_%281%29.jpg/1280px-thumbnail.jpg"
+      ]
+    },
+    {
+      "name": "Mount Friendship",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Mount Friendship, also called Friendship Peak, is a mountain summit in Manali town of Kullu district of Himachal Pradesh, India on an altitude of 5,287 metres (17,346 ft) above sea level.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2022-07-16_13_46_04_View_south_along_Delaware_State_Route_15_%28Brenford_Road%29_at_Mount_Friendship_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg/1280px-2022-07-16_13_46_04_View_south_along_Delaware_State_Route_15_%28Brenford_Road%29_at_Mount_Friendship_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg",
+        "alt": "Mount Friendship"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2022-07-16_13_46_04_View_south_along_Delaware_State_Route_15_%28Brenford_Road%29_at_Mount_Friendship_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg/1280px-2022-07-16_13_46_04_View_south_along_Delaware_State_Route_15_%28Brenford_Road%29_at_Mount_Friendship_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/2022-07-16_13_35_47_View_north_along_Delaware_State_Route_15_%28Mount_Friendship_Road%29_at_Brenford_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg/1280px-2022-07-16_13_35_47_View_north_along_Delaware_State_Route_15_%28Mount_Friendship_Road%29_at_Brenford_Road_in_Seven_Hickories%2C_Kent_County%2C_Delaware.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2022-07-16_13_39_53_View_south_along_Delaware_State_Route_15_%28Mount_Friendship_Road%29_at_Delaware_State_Route_300_%28Wheatleys_Pond_Road%29_in_Alley_Corners%2C_Kent_County%2C_Delaware.jpg/1280px-thumbnail.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Sissu & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Sissu",
+          "note": "Sissu (also known as Khwaling) is a small town in the Lahaul valley of Himachal Pradesh in India. It is around 40 km from Manali and located on the right bank of Chandra river."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chachi Mug",
+          "note": "Chachi Mug is a mountain in India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Shikar Beh",
+          "note": "Shikar Beh is a mountain located in Himachal Pradesh, India. It is an ultra-prominent peak and is the 142nd highest in Asia."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Atal Tunnel & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Atal Tunnel",
+          "note": "Atal Tunnel (Hindi: अटल सुरंग) is a 9.02-kilometre-long (5.60 mi) road tunnel connecting Manali and Keylong, thus helping in bypassing the Rohtang Pass, Himachal Pradesh in the eastern Pir Panjal range of the Himalayas. It carries two lanes of National Highway 3 and is the longest highway single-tube tunnel above 10,000 feet (3,048 m) in the world."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Mount Friendship",
+          "note": "Mount Friendship, also called Friendship Peak, is a mountain summit in Manali town of Kullu district of Himachal Pradesh, India on an altitude of 5,287 metres (17,346 ft) above sea level."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "OYO Sissu Falls Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Sissu Falls Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Sissu Falls",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Sissu Falls"
+      }
+    },
+    {
+      "name": "Sissu Falls Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sissu Falls Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Sissu Falls",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Sissu Falls"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Nature walks",
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Sissu_Waterfall_2011_IMG_9682_%286890931693%29.jpg/3840px-Sissu_Waterfall_2011_IMG_9682_%286890931693%29.jpg",
+      "alt": "Sissu Falls, Himachal Pradesh"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Sissu Falls?",
+      "a": "The best time to visit Sissu Falls is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Sissu Falls?",
+      "a": "The nearest airport is Sissu Falls / nearest airport (30 km) and the nearest railway station is Chandigarh Railway Station (201 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Sissu Falls?",
+      "a": "2 days are usually enough to cover the top attractions of Sissu Falls at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Sissu Falls?",
+      "a": "Stays in Sissu Falls start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Sissu Falls?",
+      "a": "The top attractions are Sissu, Chachi Mug, Shikar Beh, Atal Tunnel, Mount Friendship."
+    }
+  ],
+  "seo": {
+    "title": "Sissu Falls Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Sissu Falls is located on is on a diversion on the Leh–Manali Highway in Lahaul and Spiti district, Himachal Pradesh. Plan your Sissu Falls trip: 5 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=sissu-falls",
+    "ogImage": "https://picsum.photos/seed/sissu-falls-hero/1400/700",
+    "keywords": [
+      "Sissu Falls travel guide",
+      "places to visit in Sissu Falls",
+      "Sissu Falls hotels",
+      "best time to visit Sissu Falls",
+      "how to reach Sissu Falls",
+      "Himachal Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelSourceError": true
+}

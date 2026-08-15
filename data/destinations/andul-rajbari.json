@@ -1,0 +1,571 @@
+{
+  "slug": "andul-rajbari",
+  "title": "Andul Rajbari",
+  "state": "West Bengal",
+  "country": "India",
+  "region": "West Bengal",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Andul Rajbari — heritage city of West Bengal",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Andul_Rajbari_windows.jpg/1280px-Andul_Rajbari_windows.jpg",
+    "alt": "Andul Rajbari, West Bengal"
+  },
+  "overview": {
+    "short": "Andul Rajbari is a heritage palace situated at Andul, in Howrah district, West Bengal, India.",
+    "description": "Andul Rajbari is a heritage palace situated at Andul, in Howrah district, West Bengal, India. The current residents of the Rajbari are the Mitra family and a local Girls' school.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.8,
+    "reviewCount": 13402,
+    "minPrice": 900,
+    "distanceFromDelhi": 1292
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 22.5832,
+    "lng": 88.2356,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 16,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 13 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 389,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 311 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 426,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 341 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 445,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 356 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 574,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 459 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 595,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 476 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 624,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 499 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 661,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 529 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 664,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 531 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 769,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 615 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 789,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 631 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 860,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 688 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 871,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 697 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 921,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 737 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 944,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 755 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Andul Rajbari / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Howrah Junction (Kolkata)",
+      "distance": 11
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Andul",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Andul is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Andul_Rajbari_1.jpg",
+        "alt": "Andul"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Andul_Rajbari_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Andul_Rajbari_7.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Andul_Rajbari_9.jpg"
+      ]
+    },
+    {
+      "name": "Mahiari",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Mahiari is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Snack_and_Sweet_Stall_-_Rash_Mela_-_Mahiari_-_Howrah_2014-11-09_0573.JPG/1280px-Snack_and_Sweet_Stall_-_Rash_Mela_-_Mahiari_-_Howrah_2014-11-09_0573.JPG",
+        "alt": "Mahiari"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Snack_and_Sweet_Stall_-_Rash_Mela_-_Mahiari_-_Howrah_2014-11-09_0573.JPG/1280px-Snack_and_Sweet_Stall_-_Rash_Mela_-_Mahiari_-_Howrah_2014-11-09_0573.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Shani_-_Baba_Panchananda_Mandir_-_Mahiari_-_Howrah_2014-11-09_0378.JPG/1280px-Shani_-_Baba_Panchananda_Mandir_-_Mahiari_-_Howrah_2014-11-09_0378.JPG"
+      ]
+    },
+    {
+      "name": "Jhorhat",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Jhorhat is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jhorhat"
+      },
+      "photos": []
+    },
+    {
+      "name": "Dhuilya",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Dhuilya is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80.pdf/page1-1280px-%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80.pdf.jpg",
+        "alt": "Dhuilya"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80.pdf/page1-1280px-%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%80.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%80_%28%E0%A7%A7%E0%A7%AF%E0%A7%A7%E0%A7%A8%29.pdf/page1-1280px-%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%AF%E0%A6%BC_%28%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE_%E0%A6%AD%E0%A6%BE%E0%A6%97%29_-_%E0%A6%B9%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%80_%28%E0%A7%A7%E0%A7%AF%E0%A7%A7%E0%A7%A8%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Argari",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Argari is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Andul_Road_-_Argori_Crossing_-_Howrah_20170610103210.jpg/1280px-Andul_Road_-_Argori_Crossing_-_Howrah_20170610103210.jpg",
+        "alt": "Argari"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Andul_Road_-_Argori_Crossing_-_Howrah_20170610103210.jpg/1280px-Andul_Road_-_Argori_Crossing_-_Howrah_20170610103210.jpg"
+      ]
+    },
+    {
+      "name": "Ankurhati",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Ankurhati is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Bhikaram_Chandmal.jpg/1280px-Bhikaram_Chandmal.jpg",
+        "alt": "Ankurhati"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Bhikaram_Chandmal.jpg/1280px-Bhikaram_Chandmal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BF_%E0%A6%B0%E0%A7%8B%E0%A6%A1.jpg/1280px-%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BF_%E0%A6%B0%E0%A7%8B%E0%A6%A1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BF_%E0%A6%B0%E0%A7%8B%E0%A6%A1%E0%A7%A6%E0%A7%A8.jpg/1280px-%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A6%BF_%E0%A6%B0%E0%A7%8B%E0%A6%A1%E0%A7%A6%E0%A7%A8.jpg"
+      ]
+    },
+    {
+      "name": "Bipra Noapara",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Bipra Noapara is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Small_Area_Atlas_of_Bangladesh_-_Natore_Zila.pdf/page1-1280px-Small_Area_Atlas_of_Bangladesh_-_Natore_Zila.pdf.jpg",
+        "alt": "Bipra Noapara"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Small_Area_Atlas_of_Bangladesh_-_Natore_Zila.pdf/page1-1280px-Small_Area_Atlas_of_Bangladesh_-_Natore_Zila.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Banupur",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Banupur is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Banupur"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Andul & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Andul",
+          "note": "Andul is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Mahiari",
+          "note": "Mahiari is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Evening",
+          "activity": "Jhorhat",
+          "note": "Jhorhat is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Dhuilya & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Dhuilya",
+          "note": "Dhuilya is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Argari",
+          "note": "Argari is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Evening",
+          "activity": "Ankurhati",
+          "note": "Ankurhati is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Bipra Noapara & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bipra Noapara",
+          "note": "Bipra Noapara is a census town in Domjur CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Banupur",
+          "note": "Banupur is a census town in Sankrail CD Block of Howrah Sadar subdivision in Howrah district in the Indian state of West Bengal."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Centrepoint Guesthouse",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Andul Rajbari Stay"
+      }
+    },
+    {
+      "name": "Hotel Kempton",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Andul Rajbari"
+      }
+    },
+    {
+      "name": "Arya International",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Chola_Battura-Aryas_Hotel-Angamaly-Kerala-IMG_20210315_165913.jpg/960px-Chola_Battura-Aryas_Hotel-Angamaly-Kerala-IMG_20210315_165913.jpg",
+        "alt": "Arya International"
+      }
+    },
+    {
+      "name": "Trimoorti",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Andul Rajbari"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Andul_Rajbari_windows.jpg/1280px-Andul_Rajbari_windows.jpg",
+      "alt": "Andul Rajbari photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Andul_Rajbari_-_Resident_Now_A_Days.jpg/1280px-Andul_Rajbari_-_Resident_Now_A_Days.jpg",
+      "alt": "Andul Rajbari photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Andul_Rajbari_-_The_Sky_Has_No_Limit.jpg/1280px-Andul_Rajbari_-_The_Sky_Has_No_Limit.jpg",
+      "alt": "Andul Rajbari photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Andul_Rajbati%2C_Howrah%2C_West_Bengal.jpg/1280px-Andul_Rajbati%2C_Howrah%2C_West_Bengal.jpg",
+      "alt": "Andul Rajbari photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Old_Age_-_Andul_Royal_Palace_-_Howrah_2012-03-25_2814.jpg/1280px-Old_Age_-_Andul_Royal_Palace_-_Howrah_2012-03-25_2814.jpg",
+      "alt": "Andul Rajbari photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Andul Rajbari?",
+      "a": "The best time to visit Andul Rajbari is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Andul Rajbari?",
+      "a": "The nearest airport is Andul Rajbari / nearest airport (30 km) and the nearest railway station is Howrah Junction (Kolkata) (11 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Andul Rajbari?",
+      "a": "3 days are usually enough to cover the top attractions of Andul Rajbari at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Andul Rajbari?",
+      "a": "Stays in Andul Rajbari start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Andul Rajbari?",
+      "a": "The top attractions are Andul, Mahiari, Jhorhat, Dhuilya, Argari."
+    }
+  ],
+  "seo": {
+    "title": "Andul Rajbari Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Andul Rajbari is a heritage palace situated at Andul, in Howrah district, West Bengal, India. Plan your Andul Rajbari trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=andul-rajbari",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Andul_Rajbari_windows.jpg/1280px-Andul_Rajbari_windows.jpg",
+    "keywords": [
+      "Andul Rajbari travel guide",
+      "places to visit in Andul Rajbari",
+      "Andul Rajbari hotels",
+      "best time to visit Andul Rajbari",
+      "how to reach Andul Rajbari",
+      "West Bengal tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}
