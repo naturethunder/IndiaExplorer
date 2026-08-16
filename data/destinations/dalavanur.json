@@ -1,0 +1,499 @@
+{
+  "slug": "dalavanur",
+  "title": "Dalavanur",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Tamil Nadu",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Dalavanur — spiritual town of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dalavanur_cave_temple_distant_view.jpg/1280px-Dalavanur_cave_temple_distant_view.jpg",
+    "alt": "Dalavanur, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Dalavanur Sathrumalleswaram Pallava rockcut temple is situated between Gingee and Mandagapattu in Tamil Nadu.",
+    "description": "Dalavanur Sathrumalleswaram Pallava rockcut temple is situated between Gingee and Mandagapattu in Tamil Nadu. Attributed to the 7th-century Pallava king Mahendravarman I, the temple, cut out of the rock, is thought to have been dedicated to Shiva, and is noted for its unusual inscriptions. It is an Archaeological Survey of India site. Above the cave temple there are Jain rock bed resembles.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 15589,
+    "minPrice": 900,
+    "distanceFromDelhi": 1846
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 12.151005,
+    "lng": 79.478474,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 54,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 43 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 169,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 135 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 280,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 224 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 536,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 429 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 625,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 500 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 740,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 592 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 893,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 714 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 959,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 767 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1163,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 930 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1296,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1037 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1414,
+        "byCar": "24–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1131 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1449,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1159 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1534,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1227 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1545,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1236 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1736,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1389 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Dalavanur / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Chennai Central",
+      "distance": 135
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Ennayiram",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Ennayiram is a village in Vikravandi taluk in Villuppuram district in the Indian state of Tamil Nadu. The major occupation of the people living at this place is agriculture.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ennayiramalai1.JPG/1280px-Ennayiramalai1.JPG",
+        "alt": "Ennayiram"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ennayiramalai1.JPG/1280px-Ennayiramalai1.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ennayiram_vimana.JPG/1280px-Ennayiram_vimana.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ennayiram_inscriptions.JPG/1280px-Ennayiram_inscriptions.JPG"
+      ]
+    },
+    {
+      "name": "Mandagapattu Temple",
+      "category": "spiritual",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Mandagapattu Tirumurti Temple is a Hindu temple situated in the village of Mandagapattu in the Viluppuram district of Tamil Nadu, India. Hewn from rock by the Pallava ruler Mahendravarman I in honour of the trinity Brahma-Shiva-Vishnu, the rock-cut cave temple is the oldest stone shrine discovered and dated in Tamil Nadu.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg",
+        "alt": "Mandagapattu Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_entrance.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_entrance.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/ASI_notice_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg/1280px-ASI_notice_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu.jpg"
+      ]
+    },
+    {
+      "name": "Chendur, Tamil Nadu",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Chendur is a village in India which is located near to the Mailam Sri Subramania Swamy Temple, Thiruvakkarai Vakkira Kaliamman Temple and Tindivanam town, and is also a part of Villupuram District of Tamil Nadu.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Chendur_Express_%28Chennai_-_Tiruchendur%29_Route_map.jpg",
+        "alt": "Chendur, Tamil Nadu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/31/Chendur_Express_%28Chennai_-_Tiruchendur%29_Route_map.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/A_catalogue_raisonn%C3%A9e%28%21%29_of_oriental_manuscripts_in_the_library_of_the_%28late%29_college%2C_Fort_Saint_George%2C_now_in_charge_of_the_Board_of_Examiners_%28IA_catalogueraisonn03tayl%29.pdf/page1-500px-thumbnail.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Nangathur",
+      "category": "cultural",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Nangathur is a village located in between Villupuram and Ginge. It is 23 km away from Villupuram and 15 km away from Ginge.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nangathur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Perani",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Perani is a village near Tindivanam in Viluppuram district, Tamil Nadu, India, and has a railway station in the south line of Chennai Suburban Railway.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pallava_antiquities_%28IA_pallavaantiquiti00jouv%29.pdf/page1-500px-Pallava_antiquities_%28IA_pallavaantiquiti00jouv%29.pdf.jpg",
+        "alt": "Perani"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pallava_antiquities_%28IA_pallavaantiquiti00jouv%29.pdf/page1-500px-Pallava_antiquities_%28IA_pallavaantiquiti00jouv%29.pdf.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Ennayiram & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Ennayiram",
+          "note": "Ennayiram is a village in Vikravandi taluk in Villuppuram district in the Indian state of Tamil Nadu. The major occupation of the people living at this place is agriculture."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Mandagapattu Temple",
+          "note": "Mandagapattu Tirumurti Temple is a Hindu temple situated in the village of Mandagapattu in the Viluppuram district of Tamil Nadu, India. Hewn from rock by the Pallava ruler Mahendravarman I in honour of the trinity Brahma-Shiva-Vishnu, the rock-cut cave temple is the oldest stone shrine discovered and dated in Tamil Nadu."
+        },
+        {
+          "time": "Evening",
+          "activity": "Chendur, Tamil Nadu",
+          "note": "Chendur is a village in India which is located near to the Mailam Sri Subramania Swamy Temple, Thiruvakkarai Vakkira Kaliamman Temple and Tindivanam town, and is also a part of Villupuram District of Tamil Nadu."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Nangathur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nangathur",
+          "note": "Nangathur is a village located in between Villupuram and Ginge. It is 23 km away from Villupuram and 15 km away from Ginge."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Perani",
+          "note": "Perani is a village near Tindivanam in Viluppuram district, Tamil Nadu, India, and has a railway station in the south line of Chennai Suburban Railway."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "A.N.A Lodge",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Dalavanur Stay"
+      }
+    },
+    {
+      "name": "Devi Lodge",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Dalavanur"
+      }
+    },
+    {
+      "name": "classic உணவகம்",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Dalavanur Grand Hotel"
+      }
+    },
+    {
+      "name": "VR Residency",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Dalavanur"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dalavanur_cave_temple_distant_view.jpg/1280px-Dalavanur_cave_temple_distant_view.jpg",
+      "alt": "Dalavanur photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_entrance.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_entrance.jpg",
+      "alt": "Dalavanur photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_geography.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_geography.jpg",
+      "alt": "Dalavanur photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_mandapam_dvarapalas.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_mandapam_dvarapalas.jpg",
+      "alt": "Dalavanur photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_inscription_2.jpg/1280px-7th_century_Thalavanur_rock_cut_Shatrumalleswaram_temple%2C_Tamil_Nadu_inscription_2.jpg",
+      "alt": "Dalavanur photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Dalavanur?",
+      "a": "The best time to visit Dalavanur is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Dalavanur?",
+      "a": "The nearest airport is Dalavanur / nearest airport (30 km) and the nearest railway station is Chennai Central (135 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Dalavanur?",
+      "a": "2 days are usually enough to cover the top attractions of Dalavanur at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Dalavanur?",
+      "a": "Stays in Dalavanur start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Dalavanur?",
+      "a": "The top attractions are Ennayiram, Mandagapattu Temple, Chendur, Tamil Nadu, Nangathur, Perani."
+    }
+  ],
+  "seo": {
+    "title": "Dalavanur Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Dalavanur Sathrumalleswaram Pallava rockcut temple is situated between Gingee and Mandagapattu in Tamil Nadu. Plan your Dalavanur trip: 5 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=dalavanur",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dalavanur_cave_temple_distant_view.jpg/1280px-Dalavanur_cave_temple_distant_view.jpg",
+    "keywords": [
+      "Dalavanur travel guide",
+      "places to visit in Dalavanur",
+      "Dalavanur hotels",
+      "best time to visit Dalavanur",
+      "how to reach Dalavanur",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,544 @@
+{
+  "slug": "chunar-fort",
+  "title": "Chunar Fort",
+  "state": "Uttar Pradesh",
+  "country": "India",
+  "region": "Uttar Pradesh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Chunar Fort — heritage city of Uttar Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg",
+    "alt": "Chunar Fort, Uttar Pradesh"
+  },
+  "overview": {
+    "short": "The Chunar Fort (also known as Chandrakanta Chunargarh and Charanadri) is located in Mirzapur district of Uttar Pradesh, in India.",
+    "description": "The Chunar Fort (also known as Chandrakanta Chunargarh and Charanadri) is located in Mirzapur district of Uttar Pradesh, in India. The fort and Chunar town, near Mirzapur city, are two historic places with common history and legends. The fort is located 34 kilometres (21 mi) northwest of Mirzapur. The southeastern part of the fort is on the rocky bank of the Ganges River.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 16969,
+    "minPrice": 900,
+    "distanceFromDelhi": 683
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 25.1255,
+    "lng": 82.8747,
+    "tempSummer": "25–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 30,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 24 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 291,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 233 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 396,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 317 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 561,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 449 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 725,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 580 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 735,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 588 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 740,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 592 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 770,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 616 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 779,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 623 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 854,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 683 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 861,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 689 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 919,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 735 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 935,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 748 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1035,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 828 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1079,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 863 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Chunar Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Varanasi Junction",
+      "distance": 25
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Raipuria",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Raipuria is a village in Mirzapur district, Uttar Pradesh, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Raipuria"
+      },
+      "photos": []
+    },
+    {
+      "name": "Chunar",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Chunar is a city located in Mirzapur district of Indian state of Uttar Pradesh. It is nearby Mirzapur city.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chunar_Fort_1.jpg/1280px-Chunar_Fort_1.jpg",
+        "alt": "Chunar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chunar_Fort_1.jpg/1280px-Chunar_Fort_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chunar_Fort_2.jpg/1280px-Chunar_Fort_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Chunar_Fort_3.jpg/1280px-Chunar_Fort_3.jpg"
+      ]
+    },
+    {
+      "name": "Chaudharipur",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Chaudharipur is a village, part of Tehsil Chunar, in the Mirzapur district of the Indian state of Uttar Pradesh. Approximately 1,000 people live in the area.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chaudharipur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Bakiabad",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Bakiabad is a census town in Mirzapur district in the state of Uttar Pradesh, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bakiabad"
+      },
+      "photos": []
+    },
+    {
+      "name": "Baqiabad, Delhi",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Baqiabad is a census town in North East district in the Indian territory of Delhi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/A_Collection_of_the_Acts_passed_by_the_Governor_General_of_India_in_Council%2C_1915.pdf/page1-960px-A_Collection_of_the_Acts_passed_by_the_Governor_General_of_India_in_Council%2C_1915.pdf.jpg",
+        "alt": "Baqiabad, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/A_Collection_of_the_Acts_passed_by_the_Governor_General_of_India_in_Council%2C_1915.pdf/page1-960px-A_Collection_of_the_Acts_passed_by_the_Governor_General_of_India_in_Council%2C_1915.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Khanzadipur",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Khanzadipur is a small village located 42 km from the city of Varanasi in Uttar Pradesh, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Khanzadipur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Araji Line",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Araji Line (a.k.a. Arajiline & Arazeeline) is a village in Varanasi district in the Indian state of Uttar Pradesh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Small_Area_Atlas_of_Bangladesh_-_Narail_Zila.pdf/page1-1280px-Small_Area_Atlas_of_Bangladesh_-_Narail_Zila.pdf.jpg",
+        "alt": "Araji Line"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Small_Area_Atlas_of_Bangladesh_-_Narail_Zila.pdf/page1-1280px-Small_Area_Atlas_of_Bangladesh_-_Narail_Zila.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/An_English_grammar_%28IA_cu31924026580781%29.pdf/page1-500px-An_English_grammar_%28IA_cu31924026580781%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Investigation_of_the_effect_of_the_amount_of_body_used_on_the_accuracy_and_consistency_of_pace-rating_%28multi-image_loop%29._%28IA_investigationofe00mont%29.pdf/page1-960px-Investigation_of_the_effect_of_the_amount_of_body_used_on_the_accuracy_and_consistency_of_pace-rating_%28multi-image_loop%29._%28IA_investigationofe00mont%29.pdf.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Raipuria & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Raipuria",
+          "note": "Raipuria is a village in Mirzapur district, Uttar Pradesh, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chunar",
+          "note": "Chunar is a city located in Mirzapur district of Indian state of Uttar Pradesh. It is nearby Mirzapur city."
+        },
+        {
+          "time": "Evening",
+          "activity": "Chaudharipur",
+          "note": "Chaudharipur is a village, part of Tehsil Chunar, in the Mirzapur district of the Indian state of Uttar Pradesh. Approximately 1,000 people live in the area."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Bakiabad & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bakiabad",
+          "note": "Bakiabad is a census town in Mirzapur district in the state of Uttar Pradesh, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Baqiabad, Delhi",
+          "note": "Baqiabad is a census town in North East district in the Indian territory of Delhi."
+        },
+        {
+          "time": "Evening",
+          "activity": "Khanzadipur",
+          "note": "Khanzadipur is a small village located 42 km from the city of Varanasi in Uttar Pradesh, India."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Araji Line",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Araji Line",
+          "note": "Araji Line (a.k.a. Arajiline & Arazeeline) is a village in Varanasi district in the Indian state of Uttar Pradesh."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Taj Ganges Varanasi",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg/960px-2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg",
+        "alt": "Taj Ganges Varanasi"
+      }
+    },
+    {
+      "name": "Diamond Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Chunar Fort"
+      }
+    },
+    {
+      "name": "Clark´s Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chunar Fort Grand Hotel"
+      }
+    },
+    {
+      "name": "Elvis Guest House",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Chunar Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg",
+      "alt": "Chunar Fort photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_02.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_02.jpg",
+      "alt": "Chunar Fort photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_05.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_05.jpg",
+      "alt": "Chunar Fort photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_01.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_01.jpg",
+      "alt": "Chunar Fort photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_04.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_04.jpg",
+      "alt": "Chunar Fort photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Chunar Fort?",
+      "a": "The best time to visit Chunar Fort is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+    },
+    {
+      "q": "How do I reach Chunar Fort?",
+      "a": "The nearest airport is Chunar Fort / nearest airport (30 km) and the nearest railway station is Varanasi Junction (25 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Chunar Fort?",
+      "a": "3 days are usually enough to cover the top attractions of Chunar Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Chunar Fort?",
+      "a": "Stays in Chunar Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Chunar Fort?",
+      "a": "The top attractions are Raipuria, Chunar, Chaudharipur, Bakiabad, Baqiabad, Delhi."
+    }
+  ],
+  "seo": {
+    "title": "Chunar Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "The Chunar Fort (also known as Chandrakanta Chunargarh and Charanadri) is located in Mirzapur district of Uttar Pradesh, in India. Plan your Chunar Fort trip: 7 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=chunar-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg/1280px-Chunar_Fort%2C_Mirzapur%2C_Uttar_Pradesh_03.jpg",
+    "keywords": [
+      "Chunar Fort travel guide",
+      "places to visit in Chunar Fort",
+      "Chunar Fort hotels",
+      "best time to visit Chunar Fort",
+      "how to reach Chunar Fort",
+      "Uttar Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,428 @@
+{
+  "slug": "talakona",
+  "title": "Talakona",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "region": "Andhra Pradesh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Talakona — heritage city of Andhra Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Talakona_forest%2C_Tirupati.jpg/1280px-Talakona_forest%2C_Tirupati.jpg",
+    "alt": "Talakona, Andhra Pradesh"
+  },
+  "overview": {
+    "short": "Talakona is situated in Tirupati district of Andhra Pradesh, India.",
+    "description": "Talakona is situated in Tirupati district of Andhra Pradesh, India. It is a resort with waterfalls, dense forests and wildlife. Talakona waterfall is in Sri Venkateswara National Park, Tirupati district of Andhra Pradesh. With a 270 feet (82 m)-fall, Talakona is the highest waterfall in Andhra Pradesh state.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 5948,
+    "minPrice": 900,
+    "distanceFromDelhi": 1659
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 13.811666666,
+    "lng": 79.215555555,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 175,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 140 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 249,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 199 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 273,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 218 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 421,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 337 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 506,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 405 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 673,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 538 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 761,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 609 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 970,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 776 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1001,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 801 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1083,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 866 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1248,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 998 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1258,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1006 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1315,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1052 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1328,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1062 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1549,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1239 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Talakona / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Tirupati Railway Station",
+      "distance": 30
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Siddheswara Swamy Temple",
+      "category": "spiritual",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Siddheswara Swamy Temple is a large Hindu temple located in the Indian state of Andhra Pradesh. It is located in Talakona in the Sri Venkateswara National Park of Tirupati district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Talakona_waterfall.jpg/1280px-Talakona_waterfall.jpg",
+        "alt": "Siddheswara Swamy Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Talakona_waterfall.jpg/1280px-Talakona_waterfall.jpg"
+      ]
+    },
+    {
+      "name": "Nerabailu",
+      "category": "cultural",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Nerabailu is a village in Yerravaripalem Mandal of Tirupati district.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nerabailu"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Siddheswara Swamy Temple",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Siddheswara Swamy Temple",
+          "note": "Siddheswara Swamy Temple is a large Hindu temple located in the Indian state of Andhra Pradesh. It is located in Talakona in the Sri Venkateswara National Park of Tirupati district."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Nerabailu",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nerabailu",
+          "note": "Nerabailu is a village in Yerravaripalem Mandal of Tirupati district."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Annamayya Bhavan",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Talakona Stay"
+      }
+    },
+    {
+      "name": "Kalyani Choultry 3rd NC (Free)",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Talakona"
+      }
+    },
+    {
+      "name": "Rajya Lakshmi",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Talakona Grand Hotel"
+      }
+    },
+    {
+      "name": "Vaikunta Nilayam",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Talakona"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Talakona_forest%2C_Tirupati.jpg/1280px-Talakona_forest%2C_Tirupati.jpg",
+      "alt": "Talakona photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Historic_heritage_sites_of_Andhra_Pradesh_with_GPS_coordinates.jpg/1280px-Historic_heritage_sites_of_Andhra_Pradesh_with_GPS_coordinates.jpg",
+      "alt": "Talakona photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/In_Talakona_forest%2C_AP_W_IMG_8515.jpg",
+      "alt": "Talakona photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/In_Talakona_forest%2C_AP_W_IMG_8297.jpg",
+      "alt": "Talakona photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Andhra_Pradesh_-_Landscapes_from_Andhra_Pradesh%2C_views_from_Indias_South_Central_Railway_%2882%29.JPG/1280px-Andhra_Pradesh_-_Landscapes_from_Andhra_Pradesh%2C_views_from_Indias_South_Central_Railway_%2882%29.JPG",
+      "alt": "Talakona photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Talakona?",
+      "a": "The best time to visit Talakona is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Talakona?",
+      "a": "The nearest airport is Talakona / nearest airport (30 km) and the nearest railway station is Tirupati Railway Station (30 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Talakona?",
+      "a": "2 days are usually enough to cover the top attractions of Talakona at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Talakona?",
+      "a": "Stays in Talakona start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Talakona?",
+      "a": "The top attractions are Siddheswara Swamy Temple, Nerabailu."
+    }
+  ],
+  "seo": {
+    "title": "Talakona Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Talakona is situated in Tirupati district of Andhra Pradesh, India. Plan your Talakona trip: 2 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=talakona",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Talakona_forest%2C_Tirupati.jpg/1280px-Talakona_forest%2C_Tirupati.jpg",
+    "keywords": [
+      "Talakona travel guide",
+      "places to visit in Talakona",
+      "Talakona hotels",
+      "best time to visit Talakona",
+      "how to reach Talakona",
+      "Andhra Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

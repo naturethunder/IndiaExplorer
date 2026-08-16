@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Destinations — IndiaExplore | Complete Catalogue of Bharat</title>
+  <meta name="description"
+    content="Discover 2,389 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides." />
+  <link rel="canonical" href="https://www.indiaexplore.example/destinations.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IndiaExplore" />
+  <meta property="og:title" content="All Destinations — IndiaExplore" />
+  <meta property="og:description" content="Browse 2,389 travel destinations across all 36 states & UTs of India. Filter by type, state, budget and travel month." />
+  <meta property="og:url" content="https://www.indiaexplore.example/destinations.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="All Destinations — IndiaExplore" />
+  <meta name="twitter:description" content="Browse 2,389 travel destinations across India. Filter by type, state, budget and month." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/glass-immersive.css" />
+  <link rel="stylesheet" href="css/explore-immersive.css" />
+
+  <!-- GSAP Animation Core & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 explore-immersive glass-immersive">
+
+  <!-- Immersive fixed background + cinematic overlay layers -->
+  <div class="explore-immersive-bg" id="exploreBg" aria-hidden="true"></div>
+  <div class="explore-ambient-glow" aria-hidden="true"></div>
+  <div class="explore-immersive-overlay" aria-hidden="true"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR (shared component) -->
+  <div id="siteNav"></div>
+
+  <!-- MAIN -->
+  <main id="main" class="explore-main-wrap">
+
+    <!-- Premium Editorial Hero Section -->
+    <section class="explore-hero" aria-labelledby="explore-hero-title">
+      <div class="explore-shell">
+        <div class="explore-hero-grid">
+          <div class="explore-hero-content">
+            <div class="explore-eyebrow-pill" id="heroEyebrow">
+              <span class="pulse-dot"></span>
+              <span class="eyebrow-txt">The Complete Travel Catalogue of Bharat</span>
+            </div>
+            <h1 id="explore-hero-title" class="explore-hero-display">
+              <span class="hero-line-1">2,389 <em class="gold-gradient-text">Destinations</em></span>
+              <span class="hero-line-2">Across 36 States & UTs</span>
+            </h1>
+            <p class="explore-hero-desc">
+              From the snow-crowned passes of Ladakh to the sunlit lagoons of Kerala, every sacred ghat, untouched peak, and historic fortress is catalogued with verified real photography, seasonal weather insights, and budget guides.
+            </p>
+            <dl class="explore-stat-metrics" aria-label="Dataset Statistics">
+              <div class="stat-metric-card">
+                <dt>Destinations</dt>
+                <dd id="stat-destinations" data-val="2389">2,389</dd>
+              </div>
+              <div class="stat-metric-card">
+                <dt>Places to Visit</dt>
+                <dd id="stat-places" data-val="14001">14,001</dd>
+              </div>
+              <div class="stat-metric-card">
+                <dt>Verified Stays</dt>
+                <dd id="stat-stays" data-val="9756">9,756</dd>
+              </div>
+              <div class="stat-metric-card">
+                <dt>States & UTs</dt>
+                <dd id="stat-states" data-val="36">36</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="explore-hero-quickstart">
+            <div class="hero-quick-card">
+              <div class="quick-card-head">
+                <span class="quick-icon">✨</span>
+                <div>
+                  <h2 class="quick-title">Curated Discovery</h2>
+                  <p class="quick-subtitle">Quickly jump to distinct Indian landscapes</p>
+                </div>
+              </div>
+              <div class="hero-quick-tags" id="heroQuickTags">
+                <button type="button" data-type="hill_station" class="quick-tag-btn">🏔️ Hill Stations</button>
+                <button type="button" data-type="beach" class="quick-tag-btn">🏖️ Beaches</button>
+                <button type="button" data-type="heritage" class="quick-tag-btn">🏛️ Heritage</button>
+                <button type="button" data-type="wildlife" class="quick-tag-btn">🐯 Wildlife</button>
+                <button type="button" data-type="spiritual" class="quick-tag-btn">🕌 Spiritual</button>
+                <button type="button" data-type="adventure" class="quick-tag-btn">⛺ Adventure</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="explore-scroll-indicator" aria-hidden="true">
+          <span class="indicator-mouse">
+            <span class="indicator-wheel"></span>
+          </span>
+          <span class="indicator-label">Scroll to Explore</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Discovery Control Bar -->
+    <header class="dest-discovery-toolbar" id="destDiscoveryBar">
+      <div class="explore-shell">
+        <div class="discovery-toolbar-inner">
+          <div class="discovery-top-row">
+            <div class="discovery-title-wrap">
+              <h2 class="discovery-heading">Destinations</h2>
+              <span class="discovery-live-badge"><span id="toolbarCount">2,389</span> Available</span>
+            </div>
+
+            <!-- Live Search Bar -->
+            <div class="discovery-search-box" role="search">
+              <span class="search-lens-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              </span>
+              <input id="searchInput" type="search"
+                     placeholder="Search 2,389 destinations, states, regions, or attractions..."
+                     aria-label="Search destinations"
+                     autocomplete="off"
+                     class="search-input-field" />
+              <button id="searchClear" type="button" class="search-clear-btn hidden" aria-label="Clear search">✕</button>
+            </div>
+
+            <!-- Mobile Filter Drawer Button -->
+            <button id="filterOpen" type="button" class="mobile-filter-trigger lg:hidden" aria-label="Open filter sidebar" aria-expanded="false" aria-controls="filterSidebar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+              <span>Filters</span>
+              <span id="filterCount" class="mobile-filter-badge hidden">0</span>
+            </button>
+          </div>
+
+          <!-- Horizontal Category Scroller -->
+          <div class="category-tabs-container">
+            <nav id="typeFilter" class="category-tabs-track" role="tablist" aria-label="Destination categories">
+              <!-- Dynamically rendered buttons -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Discovery Layout (Sidebar + Results) -->
+    <div class="explore-content-area">
+      <div class="explore-shell">
+        <div class="explore-workspace-grid">
+
+          <!-- ── Desktop & Mobile Sidebar Filters ───────────── -->
+          <aside id="filterSidebar" class="explore-filter-sidebar" aria-label="Destination Filters">
+            <div class="filter-glass-card">
+              <div class="filter-card-header">
+                <div class="filter-title-group">
+                  <span class="filter-kicker">Refine By</span>
+                  <h3 class="filter-card-title">Filters</h3>
+                </div>
+                <div class="filter-header-actions">
+                  <button id="resetTop" type="button" class="filter-reset-link">Reset all</button>
+                  <button id="filterClose" type="button" class="filter-close-btn lg:hidden" aria-label="Close filters">✕</button>
+                </div>
+              </div>
+
+              <div class="filter-controls-stack">
+                <!-- Region (Macro Zone) -->
+                <div class="filter-group">
+                  <label for="regionFilter" class="filter-label">
+                    <span>Region / Zone</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="regionFilter" aria-label="Filter by region" class="custom-select">
+                      <option value="">All Regions of India</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">▾</span>
+                  </div>
+                </div>
+
+                <!-- State & UT -->
+                <div class="filter-group">
+                  <label for="stateFilter" class="filter-label">
+                    <span>State or UT</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="stateFilter" aria-label="Filter by state" class="custom-select">
+                      <option value="">All 36 States & UTs</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">▾</span>
+                  </div>
+                </div>
+
+                <!-- Budget / Price per Night -->
+                <div class="filter-group">
+                  <label for="tierFilter" class="filter-label">
+                    <span>Price Band / Night</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="tierFilter" aria-label="Filter by price per night" class="custom-select">
+                      <option value="">Any Budget Band</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">▾</span>
+                  </div>
+                </div>
+
+                <!-- Travel Season -->
+                <div class="filter-group">
+                  <label for="seasonFilter" class="filter-label">
+                    <span>Best Season</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="seasonFilter" aria-label="Filter by season" class="custom-select">
+                      <option value="">Any Travel Season</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">▾</span>
+                  </div>
+                </div>
+
+                <!-- Travel Month -->
+                <div class="filter-group">
+                  <label for="monthFilter" class="filter-label">
+                    <span>Specific Travel Month</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="monthFilter" aria-label="Filter by travel month" class="custom-select">
+                      <option value="">Any Travel Month</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">▾</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Apply Button (Sheet drawer) -->
+              <button id="filterApply" type="button" class="filter-apply-btn lg:hidden">
+                Show <span id="filterApplyCount">0</span> Destinations
+              </button>
+            </div>
+          </aside>
+
+          <!-- ── Results Section ────────────────────────────── -->
+          <section class="explore-results-section" aria-label="Destination Results">
+            <!-- Results Meta Toolbar -->
+            <div class="results-meta-bar">
+              <div class="results-counter-wrap">
+                <p class="results-counter-text" aria-live="polite" aria-atomic="true">
+                  Showing <span id="resultCount" class="results-num-highlight">0</span> destinations
+                </p>
+              </div>
+
+              <div class="results-sort-wrap">
+                <label for="sortBy" class="sort-label">Sort by</label>
+                <div class="custom-select-wrap sort-select-wrap">
+                  <select id="sortBy" aria-label="Sort destinations" class="custom-select sort-select">
+                    <option value="rating">★ Top Rated</option>
+                    <option value="latest">✨ Latest (Newest First)</option>
+                    <option value="price_asc">₹ Price: Low to High</option>
+                    <option value="price_desc">₹ Price: High to Low</option>
+                    <option value="distance">📍 Closest to Delhi</option>
+                  </select>
+                  <span class="select-chevron" aria-hidden="true">▾</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Active Filter Chips Display -->
+            <div id="activeFiltersContainer" class="active-chips-bar hidden">
+              <span class="active-chips-title">Active Filters:</span>
+              <div id="activeFilterChips" class="active-chips-list"></div>
+              <button id="clearAllFilters" type="button" class="clear-all-chips-btn">Clear all</button>
+            </div>
+
+            <!-- Empty Results State -->
+            <div id="noResults" class="empty-results-card" style="display:none">
+              <div class="empty-state-icon" aria-hidden="true">
+                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="m8 11 6 0"/></svg>
+              </div>
+              <h3 class="empty-state-title">No matching destinations found</h3>
+              <p class="empty-state-desc">We couldn't find any destinations matching your current combination of filters and search queries.</p>
+              <button id="resetEmpty" type="button" class="empty-state-reset-btn">Reset All Filters</button>
+            </div>
+
+            <!-- Destinations Card Grid (Managed by JS) -->
+            <div id="grid" class="destinations-master-grid" role="region" aria-label="Destinations List"></div>
+
+            <!-- Load More Pagination -->
+            <div id="loadMoreWrap" class="load-more-container" style="display:none">
+              <button id="loadMoreBtn" type="button" class="load-more-luxury-btn">
+                <span>Load More Destinations</span>
+                <span class="load-more-badge">+<span id="loadMoreCount">60</span></span>
+              </button>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER (shared component) -->
+  <div id="siteFooter"></div>
+
+  <!-- Mobile Nav (shared component) -->
+  <div id="siteMobileNav"></div>
+
+  <script type="module" src="js/pages/explore.js"></script>
+  <script>
+    // Navbar glass transition on scroll
+    window.addEventListener('scroll', function () {
+      var nav = document.querySelector('.nav-glass');
+      if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+    }, { passive: true });
+  </script>
+</body>
+
+</html>

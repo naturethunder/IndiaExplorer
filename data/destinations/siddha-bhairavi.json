@@ -1,0 +1,539 @@
+{
+  "slug": "siddha-bhairavi",
+  "title": "Siddha Bhairavi",
+  "state": "Odisha",
+  "country": "India",
+  "region": "Odisha",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Siddha Bhairavi — spiritual town of Odisha",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Siddhabhairavi_temple_mantridi_1.jpg/1280px-Siddhabhairavi_temple_mantridi_1.jpg",
+    "alt": "Siddha Bhairavi, Odisha"
+  },
+  "overview": {
+    "short": "Siddha Bhairavi temple is a shrine situated at Mantridi in Ganjam district of Odisha India.",
+    "description": "Siddha Bhairavi temple is a shrine situated at Mantridi in Ganjam district of Odisha India. The presiding deity is the goddess Bhairavi. Carved in crude fashion, the idol features one leg and four hands. It is said that this idol was excavated from a ploughed field.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 12730,
+    "minPrice": 900,
+    "distanceFromDelhi": 1299
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 19.186959,
+    "lng": 84.769194,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 208,
+        "byCar": "3–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 166 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 293,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 234 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 500,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 400 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 583,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 466 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 663,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 530 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 790,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 632 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 866,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 693 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 883,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 706 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 891,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 713 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1039,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 831 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1061,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 849 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1109,
+        "byCar": "18–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 887 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1206,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 965 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1206,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 965 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1234,
+        "byCar": "21–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 987 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Siddha Bhairavi / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Puri Railway Station",
+      "distance": 131
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Bahadur Pentho",
+      "category": "cultural",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Bahadur Pentho is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. It is located southeast of Berhampur and northeast of Ichchapuram.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bahadur_Pentho_2.jpg",
+        "alt": "Bahadur Pentho"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bahadur_Pentho_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Bahadur_Pentho_%284%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bahadur_Pentho_%287%29.jpg"
+      ]
+    },
+    {
+      "name": "Govinda puram",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Govinda puram is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. It is located southeast of Berhampur and northeast of Ichchapuram.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1018madr%29.pdf/page1-500px-Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1018madr%29.pdf.jpg",
+        "alt": "Govinda puram"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1018madr%29.pdf/page1-500px-Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1018madr%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1418madr%29.pdf/page1-500px-Madras_Journal_of_Literature_and_Science_%28IA_madrasjournalofl1418madr%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Elements_of_Hindu_Iconography_Vol._1_Part_1.pdf/page1-960px-Elements_of_Hindu_Iconography_Vol._1_Part_1.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Biswanathpur",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Biswanathpur is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. This village owes its name to Vishwanath Dev Gajapati, the Suryavanshi king of Kalinga who founded this place after conducting a royal ancient ritual known as 'Vajapeya Yagna'.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_09.jpg/1280px-Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_09.jpg",
+        "alt": "Biswanathpur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_09.jpg/1280px-Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_09.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_01.jpg/1280px-Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_04.jpg/1280px-Ruined_Shiva_Temple_at_Biswanathpur_in_Dakshin_Dinajpur_04.jpg"
+      ]
+    },
+    {
+      "name": "Golanthara",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Golanthara is a village located in the southern part of Ganjam District of Odisha, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Golanthara"
+      },
+      "photos": []
+    },
+    {
+      "name": "Siddha Vinayaka",
+      "category": "spiritual",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Panchama is a small village famous for the temple of Panchama Ganesh, or Siddha Vinayaka as it is locally known. Legend says that the Gajapati King Purushottama deva (15th century) of Puri on the way to his conquest of the Kanchi Kingdom recovered the image in the hollow of two trees of Bara and Ashwattha and paid his homage to the image after its consecration.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/The_dasa_kumara_charita%2C_or%2C_Adventures_of_ten_princes_-_a_series_of_tales_in_the_original_Sanscrit_%28IA_b2875427x%29.pdf/page1-960px-The_dasa_kumara_charita%2C_or%2C_Adventures_of_ten_princes_-_a_series_of_tales_in_the_original_Sanscrit_%28IA_b2875427x%29.pdf.jpg",
+        "alt": "Siddha Vinayaka"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/The_dasa_kumara_charita%2C_or%2C_Adventures_of_ten_princes_-_a_series_of_tales_in_the_original_Sanscrit_%28IA_b2875427x%29.pdf/page1-960px-The_dasa_kumara_charita%2C_or%2C_Adventures_of_ten_princes_-_a_series_of_tales_in_the_original_Sanscrit_%28IA_b2875427x%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Journal_asiatique_%28IA_10journalasiatique19sociuoft%29.pdf/page1-500px-Journal_asiatique_%28IA_10journalasiatique19sociuoft%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Burnouf_-_Le_Bh%C3%A2gavata_Pur%C3%A2na%2C_tome_4.djvu/page1-1280px-Burnouf_-_Le_Bh%C3%A2gavata_Pur%C3%A2na%2C_tome_4.djvu.jpg"
+      ]
+    },
+    {
+      "name": "Kanisi, Berhampur",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Kanisi is one of the 23 Tahasils in Ganjam district in the Indian state of Odisha.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kanisi, Berhampur"
+      },
+      "photos": []
+    },
+    {
+      "name": "Surla",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Surla is a village in Chikti Block of Ganjam district, Odisha, India at the Andhra Pradesh-Odisha border on National Highway 5. It sits across from Ichchapuram, in Andhra Pradesh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/SLRD_RailwayStation_01.jpg/1280px-SLRD_RailwayStation_01.jpg",
+        "alt": "Surla"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/SLRD_RailwayStation_01.jpg/1280px-SLRD_RailwayStation_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Tambdi_Surla_%286923585649%29.jpg/1280px-Tambdi_Surla_%286923585649%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tambdi_Surla_%286777468848%29.jpg/1280px-Tambdi_Surla_%286777468848%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Bahadur Pentho & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bahadur Pentho",
+          "note": "Bahadur Pentho is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. It is located southeast of Berhampur and northeast of Ichchapuram."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Govinda puram",
+          "note": "Govinda puram is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. It is located southeast of Berhampur and northeast of Ichchapuram."
+        },
+        {
+          "time": "Evening",
+          "activity": "Biswanathpur",
+          "note": "Biswanathpur is a village in Ganjam district in the south of Odisha, India, bordering Andhra Pradesh. This village owes its name to Vishwanath Dev Gajapati, the Suryavanshi king of Kalinga who founded this place after conducting a royal ancient ritual known as 'Vajapeya Yagna'."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Golanthara & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Golanthara",
+          "note": "Golanthara is a village located in the southern part of Ganjam District of Odisha, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Siddha Vinayaka",
+          "note": "Panchama is a small village famous for the temple of Panchama Ganesh, or Siddha Vinayaka as it is locally known. Legend says that the Gajapati King Purushottama deva (15th century) of Puri on the way to his conquest of the Kanchi Kingdom recovered the image in the hollow of two trees of Bara and Ashwattha and paid his homage to the image after its consecration."
+        },
+        {
+          "time": "Evening",
+          "activity": "Kanisi, Berhampur",
+          "note": "Kanisi is one of the 23 Tahasils in Ganjam district in the Indian state of Odisha."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Surla",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Surla",
+          "note": "Surla is a village in Chikti Block of Ganjam district, Odisha, India at the Andhra Pradesh-Odisha border on National Highway 5. It sits across from Ichchapuram, in Andhra Pradesh."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "PG Hostel No. 1",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Siddha Bhairavi Stay"
+      }
+    },
+    {
+      "name": "Sports Hostel Berhampur",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Siddha Bhairavi"
+      }
+    },
+    {
+      "name": "Spectrum Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Siddha Bhairavi Grand Hotel"
+      }
+    },
+    {
+      "name": "Fortune Park Siddha Bhairavi",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Siddha Bhairavi"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Spiritual",
+    "Sightseeing",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Siddhabhairavi_temple_mantridi_1.jpg/1280px-Siddhabhairavi_temple_mantridi_1.jpg",
+      "alt": "Siddha Bhairavi, Odisha"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Siddha Bhairavi?",
+      "a": "The best time to visit Siddha Bhairavi is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Siddha Bhairavi?",
+      "a": "The nearest airport is Siddha Bhairavi / nearest airport (30 km) and the nearest railway station is Puri Railway Station (131 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Siddha Bhairavi?",
+      "a": "3 days are usually enough to cover the top attractions of Siddha Bhairavi at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Siddha Bhairavi?",
+      "a": "Stays in Siddha Bhairavi start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Siddha Bhairavi?",
+      "a": "The top attractions are Bahadur Pentho, Govinda puram, Biswanathpur, Golanthara, Siddha Vinayaka."
+    }
+  ],
+  "seo": {
+    "title": "Siddha Bhairavi Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Siddha Bhairavi temple is a shrine situated at Mantridi in Ganjam district of Odisha India. Plan your Siddha Bhairavi trip: 7 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=siddha-bhairavi",
+    "ogImage": "https://picsum.photos/seed/siddha-bhairavi-hero/1400/700",
+    "keywords": [
+      "Siddha Bhairavi travel guide",
+      "places to visit in Siddha Bhairavi",
+      "Siddha Bhairavi hotels",
+      "best time to visit Siddha Bhairavi",
+      "how to reach Siddha Bhairavi",
+      "Odisha tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 3
+}

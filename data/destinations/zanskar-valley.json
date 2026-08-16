@@ -1,0 +1,666 @@
+{
+  "slug": "zanskar-valley",
+  "title": "Zanskar Valley",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Kargil District",
+  "type": "adventure",
+  "badge": "Remote Himalayan Haven",
+  "tagline": "Isolated high-altitude valley famous for Phugtal cave monastery and Chadar frozen river trek",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+    "alt": "Zanskar Valley, Ladakh"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+    "alt": "Zanskar Valley, Ladakh"
+  },
+  "overview": {
+    "short": "Isolated high-altitude valley famous for Phugtal cave monastery and Chadar frozen river trek.",
+    "description": "Zanskar Valley is a semi-arid high altitude desert valley in Ladakh surrounded by snow-capped peaks. Renowned for the honeycomb-like Phugtal Gompa built into a cliff cave entrance and the winter Chadar trek over the frozen Zanskar river.",
+    "features": [
+      "Phugtal Cave Monastery",
+      "Chadar Frozen River Trek",
+      "Drang Drung Glacier",
+      "Padum Town"
+    ],
+    "rating": 4.9,
+    "reviewCount": 1890,
+    "minPrice": 3500,
+    "distanceFromDelhi": 1050
+  },
+  "bestTime": {
+    "label": "Jun – Sep, Jan – Feb",
+    "months": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "weather": {
+    "lat": 33.4986,
+    "lng": 76.8407,
+    "tempSummer": "10–22°C",
+    "tempWinter": "-25–0°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 125,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 100 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 250,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 200 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 335,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 268 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 346,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 277 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 385,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 308 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 464,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 371 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 680,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 544 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 701,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 561 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 890,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 712 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 924,
+        "byCar": "15–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 739 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1425,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1140 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1486,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1189 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1546,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1237 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1650,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1320 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1676,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1341 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1739,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1391 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1749,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1399 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1801,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1441 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1888,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1510 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2064,
+        "byCar": "34–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1651 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2124,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1699 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2144,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1715 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2198,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1758 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2211,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1769 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 2249,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1799 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 2338,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1870 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2349,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1879 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2361,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1889 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2395,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1916 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 2531,
+        "byCar": "42–56 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2025 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 2855,
+        "byCar": "48–63 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2284 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 2871,
+        "byCar": "48–64 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2297 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 3020,
+        "byCar": "50–67 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2416 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 3234,
+        "byCar": "54–72 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2587 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 3276,
+        "byCar": "55–73 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2621 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 3650,
+        "byCar": "61–81 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2920 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kushok Bakula Rimpoche Airport Leh (IXL)",
+      "distance": 230
+    },
+    "nearestRailway": {
+      "name": "Jammu Tawi Railway Station",
+      "distance": 550
+    },
+    "roadNote": "4x4 SUV recommended due to mountain passes."
+  },
+  "topPlaces": [
+    {
+      "name": "Phugtal Cave Monastery (Phuktal Gompa)",
+      "category": "heritage",
+      "distance": "30 km trek",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "4 hrs",
+      "rating": 4.9,
+      "description": "Cliffside honeycomb cave monastery built into a natural limestone cliff face.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Phugtal_col.jpg",
+        "alt": "Phugtal Cave Monastery (Phuktal Gompa)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Phugtal_col.jpg"
+      ]
+    },
+    {
+      "name": "Drang Drung Glacier & Pensi La Pass",
+      "category": "nature",
+      "distance": "75 km",
+      "entryFee": "Free",
+      "timings": "Daytime",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Massive winding ice river glacier viewed from high altitude Pensi La pass (4,400m).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Drang_Drung_glacier_seen_from_the_Pensi_La_pass.JPG/1280px-Drang_Drung_glacier_seen_from_the_Pensi_La_pass.JPG",
+        "alt": "Drang Drung Glacier & Pensi La Pass"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Drang_Drung_glacier_seen_from_the_Pensi_La_pass.JPG/1280px-Drang_Drung_glacier_seen_from_the_Pensi_La_pass.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Drang_Drung_glacier_seen_from_Pensi_La_pass.jpg/1280px-Drang_Drung_glacier_seen_from_Pensi_La_pass.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sunrise_At_The_Glacier.jpg/1280px-Sunrise_At_The_Glacier.jpg"
+      ]
+    },
+    {
+      "name": "Karsha Gompa Padum",
+      "category": "heritage",
+      "distance": "10 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Largest Gelugpa monastery in Zanskar overlooking the entire Padum valley floor.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Padum_East_View_SSW_Zanskar_Oct22_A7C_03889.jpg/1280px-Padum_East_View_SSW_Zanskar_Oct22_A7C_03889.jpg",
+        "alt": "Karsha Gompa Padum"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Padum_East_View_SSW_Zanskar_Oct22_A7C_03889.jpg/1280px-Padum_East_View_SSW_Zanskar_Oct22_A7C_03889.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Karsha_Village_Padum_Valley_Zanskar_Oct22_A7C_03957.jpg/1280px-Karsha_Village_Padum_Valley_Zanskar_Oct22_A7C_03957.jpg"
+      ]
+    },
+    {
+      "name": "Sani Monastery & Ancient Stupa",
+      "category": "spiritual",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "Ancient monastery associated with Emperor Kanishka housing Kanishka Chorten.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sani Monastery & Ancient Stupa"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Zangla Fort & Palace Ruins",
+      "category": "heritage",
+      "distance": "35 km",
+      "entryFee": "Free",
+      "timings": "Daytime",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Hilltop fort citadel where Csoma de Koros compiled the first Tibetan-English dictionary.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Zangla Fort & Palace Ruins"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Stongdey Monastery Cliff",
+      "category": "heritage",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Perched cliff monastery housing 11 temples with ancient Buddhist wall murals.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Stongdey Monastery Cliff"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Phukthar Guest House",
+      "type": "homestay",
+      "tier": "good",
+      "priceMin": 2500,
+      "priceMax": 4500,
+      "rating": 4.8,
+      "reviews": 210,
+      "amenities": [
+        "Bukhari Stove Heating",
+        "Ladakhi Meals",
+        "Free WiFi"
+      ],
+      "tags": [
+        "Homestay",
+        "Padum"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+        "alt": "Padum Himalayan Homestay"
+      }
+    },
+    {
+      "name": "Zambala Guest House",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 6500,
+      "rating": 4.7,
+      "reviews": 180,
+      "amenities": [
+        "Heated Rooms",
+        "Dining Hall",
+        "River View"
+      ],
+      "tags": [
+        "Alpine Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shila_Tsarap_Mountains_Zanskar_Oct22_A7C_04113.jpg/1280px-Shila_Tsarap_Mountains_Zanskar_Oct22_A7C_04113.jpg",
+        "alt": "Zanskar Eco Alpine Resort Padum"
+      }
+    },
+    {
+      "name": "Ibex Guest House",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.4,
+      "reviews": 150,
+      "amenities": [
+        "Hot Water",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Govt Lodge"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg/1280px-Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg",
+        "alt": "JKTDC Alpine Huts Padum"
+      }
+    },
+    {
+      "name": "Marq Guest House",
+      "type": "camp",
+      "tier": "cheapest",
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.6,
+      "reviews": 110,
+      "amenities": [
+        "Sleeping Tents",
+        "Hot Tea",
+        "Campfire"
+      ],
+      "tags": [
+        "Trekker Camp"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Gonbo_Rangjon_Shinko_La_Zanskar_Jun24_A7CR_00332.jpg/1280px-Gonbo_Rangjon_Shinko_La_Zanskar_Jun24_A7CR_00332.jpg",
+        "alt": "Phugtal Trekker's Camp Cha"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg/1280px-Padum_Zanskar_View_From_Karsha_Oct22_A7C_03984.jpg",
+      "alt": "Zanskar Valley photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shila_Tsarap_Mountains_Zanskar_Oct22_A7C_04113.jpg/1280px-Shila_Tsarap_Mountains_Zanskar_Oct22_A7C_04113.jpg",
+      "alt": "Zanskar Valley photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg/1280px-Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg",
+      "alt": "Zanskar Valley photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Gonbo_Rangjon_Shinko_La_Zanskar_Jun24_A7CR_00332.jpg/1280px-Gonbo_Rangjon_Shinko_La_Zanskar_Jun24_A7CR_00332.jpg",
+      "alt": "Zanskar Valley photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg/1280px-Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg",
+      "alt": "Zanskar Valley photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/NE_View_Stongdey_Zanskar_Jun24_A7CR_00966.jpg/1280px-NE_View_Stongdey_Zanskar_Jun24_A7CR_00966.jpg",
+      "alt": "Zanskar Valley photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the Chadar Trek in Zanskar?",
+      "a": "The Chadar Trek is a legendary winter trek over the frozen Zanskar River when temperatures drop to -20°C."
+    }
+  ],
+  "seo": {
+    "title": "Zanskar Valley Guide 2026 — Phugtal Monastery, Chadar Trek | IndiaExplore",
+    "description": "Explore Zanskar Valley in Ladakh: Phugtal cave monastery, Chadar frozen river trek, Drang Drung glacier and Padum homestays.",
+    "canonical": "destination.html?slug=zanskar-valley",
+    "ogImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Zanskar Valley Ladakh",
+      "Phugtal monastery",
+      "Chadar trek",
+      "Padum Zanskar"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

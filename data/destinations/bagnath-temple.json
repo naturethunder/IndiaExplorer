@@ -1,0 +1,580 @@
+{
+  "slug": "bagnath-temple",
+  "title": "Bagnath Temple",
+  "state": "Uttarakhand",
+  "country": "India",
+  "region": "Uttarakhand",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Bagnath Temple — spiritual town of Uttarakhand",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bagnath_Temple%2C_Uttrayani_2018.jpg",
+    "alt": "Bagnath Temple, Uttarakhand"
+  },
+  "overview": {
+    "short": "Bagnath Temple (Kumaoni: बागनाथ थान) is an ancient shrine dedicated to Shiva, situated in the Bageshwar city at the confluence of Sarayu and Gomati rivers.",
+    "description": "Bagnath Temple (Kumaoni: बागनाथ थान) is an ancient shrine dedicated to Shiva, situated in the Bageshwar city at the confluence of Sarayu and Gomati rivers. Bagnath Temple is festooned with bells of all sizes and features impressive carvings. It is the most famous Temple in Bageshwar District. It is flooded with devotees on the occasion of Shivratri.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 2114,
+    "minPrice": 900,
+    "distanceFromDelhi": 288
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 29.83666667,
+    "lng": 79.8225,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 225,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 180 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 360,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 288 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 363,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 290 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 386,
+        "byCar": "6–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 309 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 390,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 312 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 431,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 345 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 639,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 511 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 643,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 514 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 656,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 525 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 714,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 571 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 880,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 704 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 963,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 770 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1128,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 902 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1131,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 905 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1135,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 908 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Bagnath Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Kathgodam (Nainital railhead)",
+      "distance": 69
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Mankot",
+      "category": "cultural",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Mankot is a Village situated in Bageshwar district in the State of Uttarakhand, India. It is located at a distance of 13.5 kilometres (8.4 mi) from Bageshwar on the National Highway 309A. Mankot is a medium-sized village with total 118 families residing.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Afghan_troops_surrendering_at_the_Siege_of_Mankot_%281557%29.jpg/1280px-Afghan_troops_surrendering_at_the_Siege_of_Mankot_%281557%29.jpg",
+        "alt": "Mankot"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Afghan_troops_surrendering_at_the_Siege_of_Mankot_%281557%29.jpg/1280px-Afghan_troops_surrendering_at_the_Siege_of_Mankot_%281557%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Akbar_at_the_1557_Siege_of_Mankot_%28aged_15%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Nach_der_Belagerung_von_Mankot_1557.jpg/1280px-Nach_der_Belagerung_von_Mankot_1557.jpg"
+      ]
+    },
+    {
+      "name": "Kanda, Uttarakhand",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Kanda is a small historic town and tehsil in Bageshwar district, in the state of Uttarakhand, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kanda_Market.jpg/1280px-Kanda_Market.jpg",
+        "alt": "Kanda, Uttarakhand"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kanda_Market.jpg/1280px-Kanda_Market.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kanda%2C_Uttarakhand.jpg/1280px-Kanda%2C_Uttarakhand.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kanda.jpg/1280px-Kanda.jpg"
+      ]
+    },
+    {
+      "name": "Bageshwar",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Bageshwar (Kumaoni: Bāgshyār) is a town and a municipal board in Bageshwar district in the state of Uttarakhand, India. It is located at a distance of 470 km from the National Capital New Delhi and 332 km from the State Capital Dehradun.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Karmi_Valley_in_Bageshwar_District.jpg/1280px-Karmi_Valley_in_Bageshwar_District.jpg",
+        "alt": "Bageshwar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Karmi_Valley_in_Bageshwar_District.jpg/1280px-Karmi_Valley_in_Bageshwar_District.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Karmi_Valley_in_Bageshwar_District_01.jpg/1280px-Karmi_Valley_in_Bageshwar_District_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Panwali_Dwar_and_Nanda_Khat_peaks%2C_Bageshwar-Chamoli%2C_Uttarakhand%2C_India.jpg/1280px-Panwali_Dwar_and_Nanda_Khat_peaks%2C_Bageshwar-Chamoli%2C_Uttarakhand%2C_India.jpg"
+      ]
+    },
+    {
+      "name": "Golu Devata",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Golu Devata (Kumaoni: गोलज्यू) is a deity of the Kumaoni community of India. Also known as the god of justice (Hindi: न्याय के देवता).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Golu_Devta_Udepur%2C_Binta%2C_Ranikhet.JPG/1280px-Golu_Devta_Udepur%2C_Binta%2C_Ranikhet.JPG",
+        "alt": "Golu Devata"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Golu_Devta_Udepur%2C_Binta%2C_Ranikhet.JPG/1280px-Golu_Devta_Udepur%2C_Binta%2C_Ranikhet.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Golu_Devta_Udepur%2C_Binta%2C_Ranikhet...JPG/1280px-Golu_Devta_Udepur%2C_Binta%2C_Ranikhet...JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Golu_Devta_Udepur%2C_Binta%2C_Ranikhet..JPG/1280px-Golu_Devta_Udepur%2C_Binta%2C_Ranikhet..JPG"
+      ]
+    },
+    {
+      "name": "Kapkot",
+      "category": "scenic",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Kapkot or Kapkote is a town in Bageshwar district, Uttarakhand, India. It houses the headquarters of Kapkot Tehsil, the largest administrative subdivision of Bageshwar district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kapkot_Assembly_constituency_map.svg/1280px-Kapkot_Assembly_constituency_map.svg.png",
+        "alt": "Kapkot"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kapkot_Assembly_constituency_map.svg/1280px-Kapkot_Assembly_constituency_map.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Karmi_Valley_in_Bageshwar_District_01.jpg/1280px-Karmi_Valley_in_Bageshwar_District_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/CPS_Kapkote.jpeg/1280px-CPS_Kapkote.jpeg"
+      ]
+    },
+    {
+      "name": "Sani Udiyar",
+      "category": "cultural",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Sani Udiyar is a village situated in Kanda Tehsil in Bageshwar district in the State of Uttarakhand, India. It is located at a distance of 15 kilometres (9.3 mi) from Kanda and 36 kilometres (22 mi) from Bageshwar.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sani Udiyar"
+      },
+      "photos": []
+    },
+    {
+      "name": "Vijaypur, Uttarakhand",
+      "category": "nature",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Vijaypur, officially known as Bijaypur is a hill station and village situated in Bageshwar district in the state of Uttarakhand, India. It is located at a distance of 30 km from Bageshwar and 5 km from Kanda; amidst dense Pine Forests on the Bageshwar-Chaukori Highway.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vijaypur%2C_Uttarakhand_01.jpg/1280px-Vijaypur%2C_Uttarakhand_01.jpg",
+        "alt": "Vijaypur, Uttarakhand"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vijaypur%2C_Uttarakhand_01.jpg/1280px-Vijaypur%2C_Uttarakhand_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/View_from_Vijaypur.jpg/1280px-View_from_Vijaypur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Vijaypur_view_01.jpg/1280px-Vijaypur_view_01.jpg"
+      ]
+    },
+    {
+      "name": "Khantoli",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Khantoli is a small village located at an elevation of 5000 ft in Bageshwar district of Uttrakhand. The village is located in Himalayan rage of Uttrakhand.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Khantoli.jpg/1280px-Khantoli.jpg",
+        "alt": "Khantoli"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Khantoli.jpg/1280px-Khantoli.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vijaypur-Khantoli_road.jpg/1280px-Vijaypur-Khantoli_road.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kanda.jpg/1280px-Kanda.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Mankot & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Mankot",
+          "note": "Mankot is a Village situated in Bageshwar district in the State of Uttarakhand, India. It is located at a distance of 13.5 kilometres (8.4 mi) from Bageshwar on the National Highway 309A. Mankot is a medium-sized village with total 118 families residing."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kanda, Uttarakhand",
+          "note": "Kanda is a small historic town and tehsil in Bageshwar district, in the state of Uttarakhand, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Bageshwar",
+          "note": "Bageshwar (Kumaoni: Bāgshyār) is a town and a municipal board in Bageshwar district in the state of Uttarakhand, India. It is located at a distance of 470 km from the National Capital New Delhi and 332 km from the State Capital Dehradun."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Golu Devata & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Golu Devata",
+          "note": "Golu Devata (Kumaoni: गोलज्यू) is a deity of the Kumaoni community of India. Also known as the god of justice (Hindi: न्याय के देवता)."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kapkot",
+          "note": "Kapkot or Kapkote is a town in Bageshwar district, Uttarakhand, India. It houses the headquarters of Kapkot Tehsil, the largest administrative subdivision of Bageshwar district."
+        },
+        {
+          "time": "Evening",
+          "activity": "Sani Udiyar",
+          "note": "Sani Udiyar is a village situated in Kanda Tehsil in Bageshwar district in the State of Uttarakhand, India. It is located at a distance of 15 kilometres (9.3 mi) from Kanda and 36 kilometres (22 mi) from Bageshwar."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Vijaypur, Uttarakhand & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Vijaypur, Uttarakhand",
+          "note": "Vijaypur, officially known as Bijaypur is a hill station and village situated in Bageshwar district in the state of Uttarakhand, India. It is located at a distance of 30 km from Bageshwar and 5 km from Kanda; amidst dense Pine Forests on the Bageshwar-Chaukori Highway."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Khantoli",
+          "note": "Khantoli is a small village located at an elevation of 5000 ft in Bageshwar district of Uttrakhand. The village is located in Himalayan rage of Uttrakhand."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "KMVN Tourist Rest House",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Bagnath Temple Stay"
+      }
+    },
+    {
+      "name": "vivek hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Bagnath Temple"
+      }
+    },
+    {
+      "name": "Hotell deep palace",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bagnath Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Ashish",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Bagnath Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Nature walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bagnath_Temple%2C_Uttrayani_2018.jpg",
+      "alt": "Bagnath Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Bagnath_Temple_Gate%2C_Uttrayani_2018.jpg",
+      "alt": "Bagnath Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Main_entrance_gate_of_Bagnath_temple.jpg/1280px-Main_entrance_gate_of_Bagnath_temple.jpg",
+      "alt": "Bagnath Temple photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bagnath_Temple%2C_Bageshwar.jpg/1280px-Bagnath_Temple%2C_Bageshwar.jpg",
+      "alt": "Bagnath Temple photo 4"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Bagnath Temple?",
+      "a": "The best time to visit Bagnath Temple is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Bagnath Temple?",
+      "a": "The nearest airport is Bagnath Temple / nearest airport (30 km) and the nearest railway station is Kathgodam (Nainital railhead) (69 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Bagnath Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Bagnath Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Bagnath Temple?",
+      "a": "Stays in Bagnath Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Bagnath Temple?",
+      "a": "The top attractions are Mankot, Kanda, Uttarakhand, Bageshwar, Golu Devata, Kapkot."
+    }
+  ],
+  "seo": {
+    "title": "Bagnath Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Bagnath Temple (Kumaoni: बागनाथ थान) is an ancient shrine dedicated to Shiva, situated in the Bageshwar city at the confluence of Sarayu and Gomati rivers. Plan your Bagnath Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=bagnath-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bagnath_Temple%2C_Uttrayani_2018.jpg",
+    "keywords": [
+      "Bagnath Temple travel guide",
+      "places to visit in Bagnath Temple",
+      "Bagnath Temple hotels",
+      "best time to visit Bagnath Temple",
+      "how to reach Bagnath Temple",
+      "Uttarakhand tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

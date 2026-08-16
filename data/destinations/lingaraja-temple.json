@@ -1,0 +1,568 @@
+{
+  "slug": "lingaraja-temple",
+  "title": "Lingaraja Temple",
+  "state": "Odisha",
+  "country": "India",
+  "region": "Odisha",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Lingaraja Temple — spiritual town of Odisha",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lingaraja_Temple_01.jpg/1280px-Lingaraja_Temple_01.jpg",
+    "alt": "Lingaraja Temple, Odisha"
+  },
+  "overview": {
+    "short": "Lingaraja Temple (Odia: [liŋɡɔraːd͡ʒɔ] ) is a Hindu temple dedicated to Shiva and is one of the oldest temples in Bhubaneswar, the capital of the Indian state of Odisha, India.",
+    "description": "Lingaraja Temple (Odia: [liŋɡɔraːd͡ʒɔ] ) is a Hindu temple dedicated to Shiva and is one of the oldest temples in Bhubaneswar, the capital of the Indian state of Odisha, India. The temple is the most prominent landmark of Bhubaneswar city and one of the major tourist attractions of the state. Shiva's consort and the temple's presiding Goddess, Parvati, is referred to as Annapurna or Girija. The Lingaraja temple is the largest temple in Bhubaneswar.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.3,
+    "reviewCount": 17431,
+    "minPrice": 900,
+    "distanceFromDelhi": 1276
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 20.238333333,
+    "lng": 85.833611111,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 8,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 6 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 438,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 350 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 461,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 369 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 494,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 395 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 564,
+        "byCar": "9–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 451 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 750,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 600 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 795,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 636 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 861,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 689 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 886,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 709 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1011,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 809 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1045,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 836 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1048,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 838 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1074,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 859 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1114,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 891 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1165,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 932 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Lingaraja Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Bhubaneswar Railway Station",
+      "distance": 3
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Bhrukutesvar Siva Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Bhrukuteswar Shiva Temple is situated in Yamesvara Patna, Old Town, Bhubaneswar in Odisha, India. It is a single structure pidha deul without any frontal porch.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bhrukutesvar Siva Temple"
+      },
+      "photos": []
+    },
+    {
+      "name": "Ekamra Kshetra",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Ekamra Kshetra or the temple city of Bhubaneswar is a series of ancient sandstone temples, heritage ponds and water tanks, its wealth of monuments is testament to an ancient continuous architectural and historical heritage covering over 2,000 years from the 3rd century BC to the 15th century AD. It has been listed as a tentative site in UNESCO World Heritage list.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bhumipujan_Decoration_of_Ekamra_Kshetra.jpg",
+        "alt": "Ekamra Kshetra"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/13/Bhumipujan_Decoration_of_Ekamra_Kshetra.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/LINGARAJ_TEMPLE_AMLAN_BISWAL_2024.jpg/1280px-LINGARAJ_TEMPLE_AMLAN_BISWAL_2024.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Parsurameswar_Temple%2C_Bhubaneswar%2C_Odisha._India_%28DSCN0998%29.JPG/1280px-Parsurameswar_Temple%2C_Bhubaneswar%2C_Odisha._India_%28DSCN0998%29.JPG"
+      ]
+    },
+    {
+      "name": "Mahakala-Mahakali Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Mahakala-Mahakali Temple was built around 11th century A.D. and is located at Latitude of- 20 degree 14’ 26\" N., Longitude of- 85 degree 50’ 05\" E and Elevation of- 71 ft. It is situatedted beyond the eastern compound wall of Lingaraja temple on the right side of the temple road leading to Hatasahi, Old Town, Bhubaneswar, Odisha, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mahakala-Mahakali_Temple..png",
+        "alt": "Mahakala-Mahakali Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/32/Mahakala-Mahakali_Temple..png"
+      ]
+    },
+    {
+      "name": "Byamokesvara Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Suresvara Mahadeva temple, also known as Byamokesvara temple, is located in the Tala bazaar market complex, Old Town of Bhubaneswar, the capital of the state of Orissa, India. The temple is located in front of the Lingaraj Temple across the road in the left side of the eastern gateway at a distance of 10.00 m.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Byamokesvara Temple"
+      },
+      "photos": []
+    },
+    {
+      "name": "Sivatirtha Matha, Old Town",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Sivatirtha Matha a Hindu Matha (monastery) in the outskirts of old town of Bhubaneswar, Odisha, India, and is known for Chandan Yatra and Dola purnima. Dola Purnima is celebrated in the belief that Lord Lingaraja arrives to this Matha to take pankti bhogo (community lunch) on Dola Purnima.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sivatirtha Matha, Old Town"
+      },
+      "photos": []
+    },
+    {
+      "name": "Manikarnika Tank",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Manikarnika tank is located beyond the southern compound wall of the Kapilesvara temple precinct, in the outskirt of the village Kapilesvara, Old Town, Bhubaneswar. It is now under the care and maintenance of Kapilesvara Trust Board.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ancient_manikarnika_pond.JPG/1280px-Ancient_manikarnika_pond.JPG",
+        "alt": "Manikarnika Tank"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ancient_manikarnika_pond.JPG/1280px-Ancient_manikarnika_pond.JPG"
+      ]
+    },
+    {
+      "name": "Suka Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Suka Temple is an abandoned and unused temple in Bhubaneswar, the capital of Odisha, India. The temple is devoted to saptaratha and the presence of female counterparts of the dikpalas in the upara jangha.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Suka_%28Sua%29_Deula_at_Bhubaneswar%2C_Odisha.jpg/1280px-Suka_%28Sua%29_Deula_at_Bhubaneswar%2C_Odisha.jpg",
+        "alt": "Suka Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Suka_%28Sua%29_Deula_at_Bhubaneswar%2C_Odisha.jpg/1280px-Suka_%28Sua%29_Deula_at_Bhubaneswar%2C_Odisha.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Suka_Sari_Temple.jpeg/1280px-Suka_Sari_Temple.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Suka_Sari_temple_Panorama.jpg/1280px-Suka_Sari_temple_Panorama.jpg"
+      ]
+    },
+    {
+      "name": "Devasabha Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Devasabha Temple is located in the Kharakhia Vaidyanath temple precinct, Old Town area of Bhubaneswar, Orissa, India. This is an abandoned temple and is facing towards the east.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bharhut_circular_Temple.jpg",
+        "alt": "Devasabha Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bharhut_circular_Temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/History_Of_Medi%C3%A6val_Hindu_India_Vol_3.djvu/page1-1280px-History_Of_Medi%C3%A6val_Hindu_India_Vol_3.djvu.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Bhrukutesvar Siva Temple & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bhrukutesvar Siva Temple",
+          "note": "Bhrukuteswar Shiva Temple is situated in Yamesvara Patna, Old Town, Bhubaneswar in Odisha, India. It is a single structure pidha deul without any frontal porch."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Ekamra Kshetra",
+          "note": "Ekamra Kshetra or the temple city of Bhubaneswar is a series of ancient sandstone temples, heritage ponds and water tanks, its wealth of monuments is testament to an ancient continuous architectural and historical heritage covering over 2,000 years from the 3rd century BC to the 15th century AD. It has been listed as a tentative site in UNESCO World Heritage list."
+        },
+        {
+          "time": "Evening",
+          "activity": "Mahakala-Mahakali Temple",
+          "note": "Mahakala-Mahakali Temple was built around 11th century A.D. and is located at Latitude of- 20 degree 14’ 26\" N., Longitude of- 85 degree 50’ 05\" E and Elevation of- 71 ft. It is situatedted beyond the eastern compound wall of Lingaraja temple on the right side of the temple road leading to Hatasahi, Old Town, Bhubaneswar, Odisha, India."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Byamokesvara Temple & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Byamokesvara Temple",
+          "note": "Suresvara Mahadeva temple, also known as Byamokesvara temple, is located in the Tala bazaar market complex, Old Town of Bhubaneswar, the capital of the state of Orissa, India. The temple is located in front of the Lingaraj Temple across the road in the left side of the eastern gateway at a distance of 10.00 m."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Sivatirtha Matha, Old Town",
+          "note": "Sivatirtha Matha a Hindu Matha (monastery) in the outskirts of old town of Bhubaneswar, Odisha, India, and is known for Chandan Yatra and Dola purnima. Dola Purnima is celebrated in the belief that Lord Lingaraja arrives to this Matha to take pankti bhogo (community lunch) on Dola Purnima."
+        },
+        {
+          "time": "Evening",
+          "activity": "Manikarnika Tank",
+          "note": "Manikarnika tank is located beyond the southern compound wall of the Kapilesvara temple precinct, in the outskirt of the village Kapilesvara, Old Town, Bhubaneswar. It is now under the care and maintenance of Kapilesvara Trust Board."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Suka Temple & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Suka Temple",
+          "note": "Suka Temple is an abandoned and unused temple in Bhubaneswar, the capital of Odisha, India. The temple is devoted to saptaratha and the presence of female counterparts of the dikpalas in the upara jangha."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Devasabha Temple",
+          "note": "Devasabha Temple is located in the Kharakhia Vaidyanath temple precinct, Old Town area of Bhubaneswar, Orissa, India. This is an abandoned temple and is facing towards the east."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Kalinga Ashoke",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Lingaraja Temple Stay"
+      }
+    },
+    {
+      "name": "Kalpana Chawla Hall of Residence",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Lingaraja Temple"
+      }
+    },
+    {
+      "name": "Rajmahal",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Lingaraja Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "May Fair Hotel & Resorts",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Lingaraja Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lingaraja_Temple_01.jpg/1280px-Lingaraja_Temple_01.jpg",
+      "alt": "Lingaraja Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Lingaraja_Temple_03.jpg/1280px-Lingaraja_Temple_03.jpg",
+      "alt": "Lingaraja Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lingaraja_Temple_02.jpg/1280px-Lingaraja_Temple_02.jpg",
+      "alt": "Lingaraja Temple photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/11th_century_Lingaraja_temple%2C_Bhubaneswar_Odisha_India.jpg/1280px-11th_century_Lingaraja_temple%2C_Bhubaneswar_Odisha_India.jpg",
+      "alt": "Lingaraja Temple photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lingaraj_Temple%2C_Bhubaneswar%2C_Odisha%2C_India_%282023%29_09.jpg/1280px-Lingaraj_Temple%2C_Bhubaneswar%2C_Odisha%2C_India_%282023%29_09.jpg",
+      "alt": "Lingaraja Temple photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Lingaraja Temple?",
+      "a": "The best time to visit Lingaraja Temple is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Lingaraja Temple?",
+      "a": "The nearest airport is Lingaraja Temple / nearest airport (30 km) and the nearest railway station is Bhubaneswar Railway Station (3 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Lingaraja Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Lingaraja Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Lingaraja Temple?",
+      "a": "Stays in Lingaraja Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Lingaraja Temple?",
+      "a": "The top attractions are Bhrukutesvar Siva Temple, Ekamra Kshetra, Mahakala-Mahakali Temple, Byamokesvara Temple, Sivatirtha Matha, Old Town."
+    }
+  ],
+  "seo": {
+    "title": "Lingaraja Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Lingaraja Temple (Odia: [liŋɡɔraːd͡ʒɔ] ) is a Hindu temple dedicated to Shiva and is one of the oldest temples in Bhubaneswar, the capital of the Indian state of Odisha, India. Plan your Lingaraja Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=lingaraja-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lingaraja_Temple_01.jpg/1280px-Lingaraja_Temple_01.jpg",
+    "keywords": [
+      "Lingaraja Temple travel guide",
+      "places to visit in Lingaraja Temple",
+      "Lingaraja Temple hotels",
+      "best time to visit Lingaraja Temple",
+      "how to reach Lingaraja Temple",
+      "Odisha tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,561 @@
+{
+  "slug": "sreenarayanapuram-temple",
+  "title": "Sreenarayanapuram Temple",
+  "state": "Kerala",
+  "country": "India",
+  "region": "Kerala",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Sreenarayanapuram Temple — spiritual town of Kerala",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sreenarayanapuram_Temple%2C_Manakala.jpg",
+    "alt": "Sreenarayanapuram Temple, Kerala"
+  },
+  "overview": {
+    "short": "Sreenarayanapuram Mahavishnu Temple is an ancient Vishnu temple in Kerala, India.",
+    "description": "Sreenarayanapuram Mahavishnu Temple is an ancient Vishnu temple in Kerala, India. It is at Manakala (in Pathanamthitta) about 4 km (2.5 mi) from Adoor.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 15743,
+    "minPrice": 900,
+    "distanceFromDelhi": 2210
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 8.742638888,
+    "lng": 76.769222222,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Thiruvananthapuram (Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "distance": 38,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 30 km · road approx."
+      },
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 248,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 198 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 494,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 395 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 609,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 487 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 620,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 496 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1020,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 816 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1200,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 960 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1224,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 979 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1415,
+        "byCar": "24–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1132 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1704,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1363 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1806,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1445 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1856,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1485 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1946,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1557 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2014,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1611 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2219,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1775 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Sreenarayanapuram Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Thiruvananthapuram Central",
+      "distance": 35
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Manamboor",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Manambur is a village in Varkala Taluk of Trivandrum district in the state of Kerala, India. It is situated 9 km south-east of Varkala Town and 35 km north of State Capital city Trivandrum.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Manamboor.JPG/500px-Manamboor.JPG",
+        "alt": "Manamboor"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Manamboor.JPG/500px-Manamboor.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Kannankara_boat_jetty_01.jpg/1280px-Kannankara_boat_jetty_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kannankara_boat_jetty_02.jpg/1280px-Kannankara_boat_jetty_02.jpg"
+      ]
+    },
+    {
+      "name": "Palachira",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Palachira is a suburb of Varkala Town. It is situated 2.8km south of Varkala Town.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Palachira"
+      },
+      "photos": []
+    },
+    {
+      "name": "Ottoor",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Ottoor is a panchayath in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India. It is situated 7km south-east of Varkala city and 36km north of capital city Trivandrum.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bulletin_%28IA_bulletin48unit_0%29.pdf/page1-960px-Bulletin_%28IA_bulletin48unit_0%29.pdf.jpg",
+        "alt": "Ottoor"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bulletin_%28IA_bulletin48unit_0%29.pdf/page1-960px-Bulletin_%28IA_bulletin48unit_0%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Thesaurus_mundi_das_ist_Eine_kurtze_doch_gr%C3%BCndliche_Anweisung%2C_wo_der_Schatz_der_Welt_in_hundert_und_mehr_Jahren_hingekommen%2C_-_oder_aber_noch_zum_theil_verborgen_liegt_%28IA_thesaurusmundida00unkn%29.pdf/page1-500px-thumbnail.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/A_study_of_the_relationship_between_interest_and_achievement_in_air_technical_training_in_the_Navy._%28IA_studyofrelations00kurz%29.pdf/page1-500px-A_study_of_the_relationship_between_interest_and_achievement_in_air_technical_training_in_the_Navy._%28IA_studyofrelations00kurz%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Vennicode",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Vennicode is an area of Cheruniyoor panchayat in Varkala Taluk of Thiruvananthapuram District State of Kerala in India. The Nearest Railway Station is Akathumuri railway station and Airport is Thiruvananthapuram International Airport.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Vennicode"
+      },
+      "photos": []
+    },
+    {
+      "name": "Chemmaruthy",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Chemmaruthy is a panchayat in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India. It is 7 km east of Varkala city centre and 40 km north of state capital Trivandrum.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Chemmaruthy_sreekrishna_temple.jpg",
+        "alt": "Chemmaruthy"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Chemmaruthy_sreekrishna_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/35/Sreekrishna_temple.jpg"
+      ]
+    },
+    {
+      "name": "Ponganadu",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Ponganadu is a village in the Thiruvananthapuram district, situated in the Indian state of Kerala.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ponganadu_Junction.jpg/1280px-Ponganadu_Junction.jpg",
+        "alt": "Ponganadu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ponganadu_Junction.jpg/1280px-Ponganadu_Junction.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/42084_GHS_Ponganadu_entrance_01.jpg/1280px-42084_GHS_Ponganadu_entrance_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/42084_GHS_Ponganadu_entrance_02.jpg/1280px-42084_GHS_Ponganadu_entrance_02.jpg"
+      ]
+    },
+    {
+      "name": "Karavaram",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Karavaram is a village in Chirayinkeezhu Taluk of Trivandrum district in the state of Kerala, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Chavarupara.jpg/1280px-Chavarupara.jpg",
+        "alt": "Karavaram"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Chavarupara.jpg/1280px-Chavarupara.jpg"
+      ]
+    },
+    {
+      "name": "Cherunniyoor",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Cherunniyoor is a village in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India.It is situated 3.4km south of Varkala Town center and also one of 5 panchayats that shares border with Varkala municipality. Palachira and Vadaserikonam junctions in cheruniyoor panchayat is two of the fastest urbanizing suburbs of Varkala.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Cherunniyoor"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Manamboor & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Manamboor",
+          "note": "Manambur is a village in Varkala Taluk of Trivandrum district in the state of Kerala, India. It is situated 9 km south-east of Varkala Town and 35 km north of State Capital city Trivandrum."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Palachira",
+          "note": "Palachira is a suburb of Varkala Town. It is situated 2.8km south of Varkala Town."
+        },
+        {
+          "time": "Evening",
+          "activity": "Ottoor",
+          "note": "Ottoor is a panchayath in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India. It is situated 7km south-east of Varkala city and 36km north of capital city Trivandrum."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Vennicode & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Vennicode",
+          "note": "Vennicode is an area of Cheruniyoor panchayat in Varkala Taluk of Thiruvananthapuram District State of Kerala in India. The Nearest Railway Station is Akathumuri railway station and Airport is Thiruvananthapuram International Airport."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chemmaruthy",
+          "note": "Chemmaruthy is a panchayat in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India. It is 7 km east of Varkala city centre and 40 km north of state capital Trivandrum."
+        },
+        {
+          "time": "Evening",
+          "activity": "Ponganadu",
+          "note": "Ponganadu is a village in the Thiruvananthapuram district, situated in the Indian state of Kerala."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Karavaram & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Karavaram",
+          "note": "Karavaram is a village in Chirayinkeezhu Taluk of Trivandrum district in the state of Kerala, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Cherunniyoor",
+          "note": "Cherunniyoor is a village in Varkala Taluk of Thiruvananthapuram district in the state of Kerala, India.It is situated 3.4km south of Varkala Town center and also one of 5 panchayats that shares border with Varkala municipality. Palachira and Vadaserikonam junctions in cheruniyoor panchayat is two of the fastest urbanizing suburbs of Varkala."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Osho Guest House",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Sreenarayanapuram Temple Stay"
+      }
+    },
+    {
+      "name": "Mk Gardens",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Sreenarayanapuram Temple"
+      }
+    },
+    {
+      "name": "Varkala Marine Port",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sreenarayanapuram Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "Palm Beach resort",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Sreenarayanapuram Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sreenarayanapuram_Temple%2C_Manakala.jpg",
+      "alt": "Sreenarayanapuram Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Puthanambalam_Sreenarayanapuram_Subrahmanya_Swami_Temple_2.jpg/1280px-Puthanambalam_Sreenarayanapuram_Subrahmanya_Swami_Temple_2.jpg",
+      "alt": "Sreenarayanapuram Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Puthanambalam_Sreenarayanapuram_Subrahmanya_Swami_Temple.jpg/1280px-Puthanambalam_Sreenarayanapuram_Subrahmanya_Swami_Temple.jpg",
+      "alt": "Sreenarayanapuram Temple photo 3"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Sreenarayanapuram Temple?",
+      "a": "The best time to visit Sreenarayanapuram Temple is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Sreenarayanapuram Temple?",
+      "a": "The nearest airport is Sreenarayanapuram Temple / nearest airport (30 km) and the nearest railway station is Thiruvananthapuram Central (35 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Sreenarayanapuram Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Sreenarayanapuram Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Sreenarayanapuram Temple?",
+      "a": "Stays in Sreenarayanapuram Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Sreenarayanapuram Temple?",
+      "a": "The top attractions are Manamboor, Palachira, Ottoor, Vennicode, Chemmaruthy."
+    }
+  ],
+  "seo": {
+    "title": "Sreenarayanapuram Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Sreenarayanapuram Mahavishnu Temple is an ancient Vishnu temple in Kerala, India. Plan your Sreenarayanapuram Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=sreenarayanapuram-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sreenarayanapuram_Temple%2C_Manakala.jpg",
+    "keywords": [
+      "Sreenarayanapuram Temple travel guide",
+      "places to visit in Sreenarayanapuram Temple",
+      "Sreenarayanapuram Temple hotels",
+      "best time to visit Sreenarayanapuram Temple",
+      "how to reach Sreenarayanapuram Temple",
+      "Kerala tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

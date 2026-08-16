@@ -1,0 +1,667 @@
+{
+  "slug": "tranquebar",
+  "title": "Tranquebar (Tharangambadi)",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Mayiladuthurai District",
+  "type": "beach",
+  "badge": "Danish Colonial Haven",
+  "tagline": "Historic 17th-century Danish seaside colony with Fort Dansborg and ozone sea breeze",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bungalow_on_the_Beach%2C_Neemrana_Hotels%2C_in_Tranquebar%2C_Tamil_Nadu.jpg",
+    "alt": "Tranquebar (Tharangambadi), Tamil Nadu"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bungalow_on_the_Beach%2C_Neemrana_Hotels%2C_in_Tranquebar%2C_Tamil_Nadu.jpg",
+    "alt": "Tranquebar (Tharangambadi), Tamil Nadu"
+  },
+  "overview": {
+    "short": "Historic 17th-century Danish seaside colony with Fort Dansborg and ozone-rich sea breeze.",
+    "description": "Tharangambadi (Tranquebar) served as a Danish trading colony from 1620 to 1845. Dominating the shoreline is Fort Dansborg, a yellow-painted sea fort. The quiet cobblestone streets feature Danish colonial bungalows.",
+    "features": [
+      "Fort Dansborg",
+      "Zion Church & Danish Museum",
+      "Town Gate (Landporten)",
+      "Quiet Ozone Coast Walk"
+    ],
+    "rating": 4.8,
+    "reviewCount": 1750,
+    "minPrice": 3200,
+    "distanceFromDelhi": 2350
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 11.0267,
+    "lng": 79.8544,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–30°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 128,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 102 km · road approx."
+      },
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 283,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 226 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 409,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 327 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 514,
+        "byCar": "9–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 411 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 769,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 615 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 903,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 722 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 988,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 790 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1025,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 820 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1316,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1053 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1441,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1153 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1515,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1212 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1605,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1284 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1693,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1354 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1710,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1368 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 1756,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1405 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1859,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1487 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1963,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1570 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 2029,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1623 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 2051,
+        "byCar": "34–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1641 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 2140,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1712 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 2335,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1868 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 2451,
+        "byCar": "41–54 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1961 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2451,
+        "byCar": "41–54 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1961 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 2469,
+        "byCar": "41–55 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1975 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 2539,
+        "byCar": "42–56 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2031 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2569,
+        "byCar": "43–57 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2055 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2616,
+        "byCar": "44–58 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2093 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2668,
+        "byCar": "44–59 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2134 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 2691,
+        "byCar": "45–60 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2153 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2766,
+        "byCar": "46–61 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2213 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 2768,
+        "byCar": "46–62 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2214 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 2813,
+        "byCar": "47–63 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2250 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2866,
+        "byCar": "48–64 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2293 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 2935,
+        "byCar": "49–65 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2348 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 3083,
+        "byCar": "51–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2466 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 3228,
+        "byCar": "54–72 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2582 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Tiruchirappalli Airport (TRZ)",
+      "distance": 155
+    },
+    "nearestRailway": {
+      "name": "Mayiladuthurai Railway Station",
+      "distance": 30
+    },
+    "roadNote": "Scenic seaside drive along the East Coast Road."
+  },
+  "topPlaces": [
+    {
+      "name": "Fort Dansborg",
+      "category": "heritage",
+      "distance": "0 km",
+      "entryFee": "₹10",
+      "timings": "9 AM – 5 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Danish sea fortress built in 1620 housing maritime artifacts and cannons.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Fort_Dansborg.JPG/1280px-Fort_Dansborg.JPG",
+        "alt": "Fort Dansborg"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Fort_Dansborg.JPG/1280px-Fort_Dansborg.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Fort_Dansborg.jpg/1280px-Fort_Dansborg.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Fort_Dansborg_in_Tharangambadi%2C_Tamil_Nadu.jpg/1280px-Fort_Dansborg_in_Tharangambadi%2C_Tamil_Nadu.jpg"
+      ]
+    },
+    {
+      "name": "Zion Church & Danish Museum",
+      "category": "heritage",
+      "distance": "0.3 km",
+      "entryFee": "Free",
+      "timings": "8 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "India's oldest Protestant church (1701) and colonial history museum.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Dansborg_Fort_Tranquebar.jpg/1280px-Dansborg_Fort_Tranquebar.jpg",
+        "alt": "Zion Church & Danish Museum"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Dansborg_Fort_Tranquebar.jpg/1280px-Dansborg_Fort_Tranquebar.jpg"
+      ]
+    },
+    {
+      "name": "Town Gate (Landporten)",
+      "category": "heritage",
+      "distance": "0.2 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "30 mins",
+      "rating": 4.6,
+      "description": "Historic 1792 entry gate bearing the royal seal of Danish King Christian VII.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Town_Gate%2C_Chepstow.jpg",
+        "alt": "Town Gate (Landporten)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Town_Gate%2C_Chepstow.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kidwelly_Town_Gate_-_geograph.org.uk_-_301334.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/House_-_Town_Gate%2C_Sowerby_-_geograph.org.uk_-_823868.jpg"
+      ]
+    },
+    {
+      "name": "Masilamani Nathar Temple",
+      "category": "spiritual",
+      "distance": "0.5 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 7 PM",
+      "duration": "45 mins",
+      "rating": 4.7,
+      "description": "1300-year-old Chola Shiva temple built right on the water edge.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Masilamani Nathar Temple"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Poompuhar Ancient Port Beach",
+      "category": "heritage",
+      "distance": "22 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Sangam age ancient Chola port beach mentioned in Tamil epic Silappatikaram.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Poompuhar Ancient Port Beach"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Thirukadaiyur Temple",
+      "category": "spiritual",
+      "distance": "15 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 8 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Famous temple associated with Markandeya and 60th birthday milestone rituals.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Thirukadaiyur_temple.JPG/1280px-Thirukadaiyur_temple.JPG",
+        "alt": "Thirukadaiyur Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Thirukadaiyur_temple.JPG/1280px-Thirukadaiyur_temple.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Amirthakadeswarar_Temple%2C_Thirukadaiyur.jpg/1280px-Amirthakadeswarar_Temple%2C_Thirukadaiyur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ThirukadaiyurTemple.jpg/1280px-ThirukadaiyurTemple.jpg"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Guru",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 11000,
+      "rating": 4.8,
+      "reviews": 310,
+      "amenities": [
+        "Sea View",
+        "Dining",
+        "Pool",
+        "Colonial Decor"
+      ],
+      "tags": [
+        "Neemrana",
+        "Heritage"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bungalow_on_the_Beach%2C_Neemrana_Hotels%2C_in_Tranquebar%2C_Tamil_Nadu.jpg",
+        "alt": "Bungalow on the Beach - Neemrana"
+      }
+    },
+    {
+      "name": "Hotel Manivizha",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 7000,
+      "rating": 4.6,
+      "reviews": 220,
+      "amenities": [
+        "Heritage Rooms",
+        "Dining",
+        "Garden"
+      ],
+      "tags": [
+        "Neemrana Villa"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tranquebar_-_Skoklosters_slott_-_86273.tif/lossy-page1-1280px-Tranquebar_-_Skoklosters_slott_-_86273.tif.jpg",
+        "alt": "The Gate House Tranquebar - Neemrana"
+      }
+    },
+    {
+      "name": "Hotel Krishna Bhavan",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3500,
+      "rating": 4.4,
+      "reviews": 190,
+      "amenities": [
+        "Restaurant",
+        "Sea View Rooms",
+        "Parking"
+      ],
+      "tags": [
+        "Govt Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tranquebar-Gravenstein.jpg",
+        "alt": "Hotel Tamil Nadu Tranquebar (TTDC)"
+      }
+    },
+    {
+      "name": "Hotel Sadhabishegam",
+      "type": "homestay",
+      "tier": "good",
+      "priceMin": 2200,
+      "priceMax": 4200,
+      "rating": 4.5,
+      "reviews": 140,
+      "amenities": [
+        "Kitchenette",
+        "Beach Access"
+      ],
+      "tags": [
+        "Beach Villa"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Ziegenbalg_Landing_Plaque%2C_Tranquebar_3.jpg/1280px-Ziegenbalg_Landing_Plaque%2C_Tranquebar_3.jpg",
+        "alt": "Tranquebar Beachside Villa"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bungalow_on_the_Beach%2C_Neemrana_Hotels%2C_in_Tranquebar%2C_Tamil_Nadu.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tranquebar_-_Skoklosters_slott_-_86273.tif/lossy-page1-1280px-Tranquebar_-_Skoklosters_slott_-_86273.tif.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tranquebar-Gravenstein.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Ziegenbalg_Landing_Plaque%2C_Tranquebar_3.jpg/1280px-Ziegenbalg_Landing_Plaque%2C_Tranquebar_3.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/New_Jerusalem_Church%2C_Tranquebar_1.jpg/1280px-New_Jerusalem_Church%2C_Tranquebar_1.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Fort_Dansborg_%28Danish_Fort%29_-_Tharangambadi%2C_Tamil_Nadu.jpg/1280px-Fort_Dansborg_%28Danish_Fort%29_-_Tharangambadi%2C_Tamil_Nadu.jpg",
+      "alt": "Tranquebar (Tharangambadi) photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Tranquebar known for?",
+      "a": "Tranquebar is known for Fort Dansborg, its Danish colonial history, and being the land of singing waves with high natural ozone content."
+    }
+  ],
+  "seo": {
+    "title": "Tranquebar Travel Guide 2026 — Fort Dansborg, Danish Colony | IndiaExplore",
+    "description": "Explore Tranquebar (Tharangambadi) Tamil Nadu: Fort Dansborg, Danish colonial beach bungalows and Neemrana sea resorts.",
+    "canonical": "destination.html?slug=tranquebar",
+    "ogImage": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Tranquebar Tamil Nadu",
+      "Fort Dansborg",
+      "Tharangambadi",
+      "Neemrana Tranquebar"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

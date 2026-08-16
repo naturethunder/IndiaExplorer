@@ -1,0 +1,556 @@
+{
+  "slug": "tendong-gumpa",
+  "title": "Tendong Gumpa",
+  "state": "Sikkim",
+  "country": "India",
+  "region": "Sikkim",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Tendong Gumpa — heritage city of Sikkim",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gumpa1.jpg/1280px-Gumpa1.jpg",
+    "alt": "Tendong Gumpa, Sikkim"
+  },
+  "overview": {
+    "short": "Tendong Dichhen Salhun Gumpa or Tendong Gumpa as commonly known, is a Buddhist monastery situated atop 8530 ft.",
+    "description": "Tendong Dichhen Salhun Gumpa or Tendong Gumpa as commonly known, is a Buddhist monastery situated atop 8530 ft. altitude from mean sea level (msl). This monastery is surrounded by lush green virgin reserve forest and nearest hamlet is Damthang which is at a six kilometer walking distance. Because of its seclusion, there are no resident monks/nuns in this monastery.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.1,
+    "reviewCount": 13858,
+    "minPrice": 900,
+    "distanceFromDelhi": 1111
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 27.20611111,
+    "lng": 88.40805556,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 31,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 25 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 66,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 53 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 439,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 351 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 465,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 372 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 489,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 391 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 593,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 474 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 643,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 514 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 663,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 530 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 725,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 580 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 726,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 581 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 740,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 592 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 766,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 613 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1015,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 812 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1193,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 954 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1335,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1068 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Tendong Gumpa / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Siliguri Junction",
+      "distance": 55
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Damthang, Sikkim",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Damthang is a small town in the Namchi district of the Indian state of Sikkim.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Damthang, Sikkim"
+      },
+      "photos": []
+    },
+    {
+      "name": "Perbing",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Perbing is a village near Namchi in the Namchi district of Sikkim state, India, some 90 kilometres (56 mi) from the state capital Gangtok. The village is demographically dominated by the Sherpa tribe of Sikkim.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Notes_of_a_tour_from_Bangalore_to_Calcutta_%28microform%29_-_thence_to_Delhi%2C_and%2C_subsequently%2C_to_British_Sikkim_during_the_early_part_of_1867_%28IA_cihm_00855%29.pdf/page1-500px-Notes_of_a_tour_from_Bangalore_to_Calcutta_%28microform%29_-_thence_to_Delhi%2C_and%2C_subsequently%2C_to_British_Sikkim_during_the_early_part_of_1867_%28IA_cihm_00855%29.pdf.jpg",
+        "alt": "Perbing"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Notes_of_a_tour_from_Bangalore_to_Calcutta_%28microform%29_-_thence_to_Delhi%2C_and%2C_subsequently%2C_to_British_Sikkim_during_the_early_part_of_1867_%28IA_cihm_00855%29.pdf/page1-500px-Notes_of_a_tour_from_Bangalore_to_Calcutta_%28microform%29_-_thence_to_Delhi%2C_and%2C_subsequently%2C_to_British_Sikkim_during_the_early_part_of_1867_%28IA_cihm_00855%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Ranguthang",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Ranguthang is a small town in the Namchi district of the Indian state of Sikkim.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Ranguthang"
+      },
+      "photos": []
+    },
+    {
+      "name": "Chalamthang",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Chalamthang is a village in Namchi district of Sikkim and is located at 27.2119° N, 88.4711° E. It is located 42 km away from Gangtok, capital of Sikkim and 98 km away from Siliguri. It is located at half an hour drive from Singtam, its nearest town.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Chalamthang_7.jpg/1280px-Chalamthang_7.jpg",
+        "alt": "Chalamthang"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Chalamthang_7.jpg/1280px-Chalamthang_7.jpg"
+      ]
+    },
+    {
+      "name": "Tarku, India",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Tarku is a small village in the Namchi district of the Indian state of Sikkim.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/The_Secretary_Rural_Management_Development_Department%2C_Sikkim_visiting_the_Bharat_Nirman_Stall_at_Public_Information_Campaign%2C_at_Temi_Tarku_South_Sikkim_on_December_07%2C_2012.jpg/1280px-thumbnail.jpg",
+        "alt": "Tarku, India"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/The_Secretary_Rural_Management_Development_Department%2C_Sikkim_visiting_the_Bharat_Nirman_Stall_at_Public_Information_Campaign%2C_at_Temi_Tarku_South_Sikkim_on_December_07%2C_2012.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/The_Secretary_Rural_Management_Development_Department%2C_Sikkim_distributed_Prizes_and_certificates_to_the_participants_at_Public_Information_Campaign%2C_at_Temi_Tarku_South_Sikkim_on_December_07%2C_2012.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/The_Minister_for_Rural_Management_Development_Department%2C_Government_of_Sikkim%2C_Shri_C.B._Karki_addressing_at_the_Public_Information_Campaign_on_Bharat_Nirman%2C_at_Temi_Tarku_South_Sikkim_on_December_05%2C_2012.jpg/1280px-thumbnail.jpg"
+      ]
+    },
+    {
+      "name": "Namchi Monastery",
+      "category": "spiritual",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Namchi Monastery is a Buddhist monastery in Sikkim, northeastern India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Namchi_monastery_1_Sikkim_India.jpg/1280px-Namchi_monastery_1_Sikkim_India.jpg",
+        "alt": "Namchi Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Namchi_monastery_1_Sikkim_India.jpg/1280px-Namchi_monastery_1_Sikkim_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Namchi_monastery_Decchen_Choyling_Gumpa_Sikkim_India.jpg/1280px-Namchi_monastery_Decchen_Choyling_Gumpa_Sikkim_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Namchi_Monastery_2_Sikkim_India.jpg/1280px-Namchi_Monastery_2_Sikkim_India.jpg"
+      ]
+    },
+    {
+      "name": "Paney-Phensong",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Paney-Phensong is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260904.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Paney-Phensong"
+      },
+      "photos": []
+    },
+    {
+      "name": "Namchi",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Namchi is a city and the administrative headquarter of the Namchi district in the Indian state of Sikkim. The appellation Namchi means Sky (Nam) High (Chi) in Sikkimese.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cherry_Resort_inside_Temi_Tea_Garden%2C_Namchi%2C_Sikkim.jpg/1280px-Cherry_Resort_inside_Temi_Tea_Garden%2C_Namchi%2C_Sikkim.jpg",
+        "alt": "Namchi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cherry_Resort_inside_Temi_Tea_Garden%2C_Namchi%2C_Sikkim.jpg/1280px-Cherry_Resort_inside_Temi_Tea_Garden%2C_Namchi%2C_Sikkim.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Char_Dham_Namchi_Sikkim.jpg/1280px-Char_Dham_Namchi_Sikkim.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Namchi.jpg/1280px-Namchi.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Damthang, Sikkim & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Damthang, Sikkim",
+          "note": "Damthang is a small town in the Namchi district of the Indian state of Sikkim."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Perbing",
+          "note": "Perbing is a village near Namchi in the Namchi district of Sikkim state, India, some 90 kilometres (56 mi) from the state capital Gangtok. The village is demographically dominated by the Sherpa tribe of Sikkim."
+        },
+        {
+          "time": "Evening",
+          "activity": "Ranguthang",
+          "note": "Ranguthang is a small town in the Namchi district of the Indian state of Sikkim."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Chalamthang & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Chalamthang",
+          "note": "Chalamthang is a village in Namchi district of Sikkim and is located at 27.2119° N, 88.4711° E. It is located 42 km away from Gangtok, capital of Sikkim and 98 km away from Siliguri. It is located at half an hour drive from Singtam, its nearest town."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Tarku, India",
+          "note": "Tarku is a small village in the Namchi district of the Indian state of Sikkim."
+        },
+        {
+          "time": "Evening",
+          "activity": "Namchi Monastery",
+          "note": "Namchi Monastery is a Buddhist monastery in Sikkim, northeastern India."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Paney-Phensong & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Paney-Phensong",
+          "note": "Paney-Phensong is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260904."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Namchi",
+          "note": "Namchi is a city and the administrative headquarter of the Namchi district in the Indian state of Sikkim. The appellation Namchi means Sky (Nam) High (Chi) in Sikkimese."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Rangpo Tourist Lodge",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Tendong Gumpa Stay"
+      }
+    },
+    {
+      "name": "Hotel snow white",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_abode_of_snow%3B_%28IA_abodeofsnow00wils%29.pdf/page1-500px-The_abode_of_snow%3B_%28IA_abodeofsnow00wils%29.pdf.jpg",
+        "alt": "Hotel snow white"
+      }
+    },
+    {
+      "name": "Shimam",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tendong Gumpa Grand Hotel"
+      }
+    },
+    {
+      "name": "Summit Sobralia Resort & Spa",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Tendong Gumpa"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Spiritual",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gumpa1.jpg/1280px-Gumpa1.jpg",
+      "alt": "Tendong Gumpa photo 1"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Tendong Gumpa?",
+      "a": "The best time to visit Tendong Gumpa is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Tendong Gumpa?",
+      "a": "The nearest airport is Tendong Gumpa / nearest airport (30 km) and the nearest railway station is Siliguri Junction (55 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Tendong Gumpa?",
+      "a": "3 days are usually enough to cover the top attractions of Tendong Gumpa at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Tendong Gumpa?",
+      "a": "Stays in Tendong Gumpa start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Tendong Gumpa?",
+      "a": "The top attractions are Damthang, Sikkim, Perbing, Ranguthang, Chalamthang, Tarku, India."
+    }
+  ],
+  "seo": {
+    "title": "Tendong Gumpa Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Tendong Dichhen Salhun Gumpa or Tendong Gumpa as commonly known, is a Buddhist monastery situated atop 8530 ft. Plan your Tendong Gumpa trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=tendong-gumpa",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gumpa1.jpg/1280px-Gumpa1.jpg",
+    "keywords": [
+      "Tendong Gumpa travel guide",
+      "places to visit in Tendong Gumpa",
+      "Tendong Gumpa hotels",
+      "best time to visit Tendong Gumpa",
+      "how to reach Tendong Gumpa",
+      "Sikkim tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

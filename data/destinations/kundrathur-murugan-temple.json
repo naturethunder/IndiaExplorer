@@ -1,0 +1,565 @@
+{
+  "slug": "kundrathur-murugan-temple",
+  "title": "Kundrathur Murugan Temple",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Tamil Nadu",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Kundrathur Murugan Temple — spiritual town of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg",
+    "alt": "Kundrathur Murugan Temple, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Kundrathur Murugan Temple is a Hindu temple located in Kundrathur, a suburb of Chennai in the Kancheepuram district of Tamil Nadu.",
+    "description": "Kundrathur Murugan Temple is a Hindu temple located in Kundrathur, a suburb of Chennai in the Kancheepuram district of Tamil Nadu. According to Hindu mythology, Lord Subramaniar (Murugan) stayed on the hill during his travels from Tiruporur to Tiruttanigai. This place is also known as South Thanigai, as Lord Subramaniar is depicted facing the north, towards Thanigai.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 1926,
+    "minPrice": 900,
+    "distanceFromDelhi": 1762
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 12.9974,
+    "lng": 80.0966,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 26,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 21 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 153,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 122 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 339,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 271 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 494,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 395 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 648,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 518 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 674,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 539 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 913,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 730 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1070,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 856 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1134,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 907 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1165,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 932 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1269,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1015 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1411,
+        "byCar": "24–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1129 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1463,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1170 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1490,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1192 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1594,
+        "byCar": "27–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1275 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kundrathur Murugan Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Chennai Central",
+      "distance": 22
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Kundrathur",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Kundrathur is a town located in the Chennai Metropolitan Area and the headquarters of Kundrathur taluk in Kanchipuram District. It is the birthplace of Sekkizhar, a well-known poet-saint who authored the Periyapuranam.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kundrathur_Murugan_Temple5.jpg",
+        "alt": "Kundrathur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kundrathur_Murugan_Temple5.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/60/Kundrathur_Murugan_Temple3.jpg"
+      ]
+    },
+    {
+      "name": "Kundrathur Nageswarar Temple",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Kundrathur Nageswarar Temple, also known as Vada Thirunageswaram, is a Hindu temple dedicated to Shiva, located in the neighbourhood of Kundrathur in Chennai, India. The temple was built in the 12th century by the Shivite saint Sekkilar and is modelled on the Thirunageswaram temple at Kumbakonam.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kundrathur Nageswarar Temple"
+      },
+      "photos": []
+    },
+    {
+      "name": "Kundrathur Hill",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "The Subramaniyasvami Hill, popularly known as the Kundrathur Hill is a hillock located 5 kilometres (3.1 miles) from the Greater Chennai Corporation (GCC) limits in the Kundrathur taluk of Kanchipuram district, Tamil Nadu, India. The town of Kundrathur known for its Kundrathur Murugan Temple occupies the summit of the hill.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg",
+        "alt": "Kundrathur Hill"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg"
+      ]
+    },
+    {
+      "name": "Thirumudivakkam",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Thirumudivakkam is a south-western suburb of Chennai metropolitan city, Tamil Nadu. This area belongs to Sriperumbudur taluk, Kanchipuram district.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Thirumudivakkam"
+      },
+      "photos": []
+    },
+    {
+      "name": "Meenakshi Academy of Higher Education and Research",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Meenakshi Academy of Higher Education and Research (MAHER), commonly referred to as Meenakshi University, is a private deemed-to-be-university for mainly medical science in Chennai, Tamil Nadu, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Behar_Herald_22-01-2021_%26_31-01-2021.pdf/page1-1280px-Behar_Herald_22-01-2021_%26_31-01-2021.pdf.jpg",
+        "alt": "Meenakshi Academy of Higher Education and Research"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Behar_Herald_22-01-2021_%26_31-01-2021.pdf/page1-1280px-Behar_Herald_22-01-2021_%26_31-01-2021.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Behar_Herald_7-06-2021_%26_15-06-2021.pdf/page1-1280px-Behar_Herald_7-06-2021_%26_15-06-2021.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Sikkarayapuram",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Sikkarayapuram, also known as Chikkarayapuram, is part of the Mangadu municipality and located in west of Chennai, India Indian state of Tamil Nadu.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sikkarayapuram"
+      },
+      "photos": []
+    },
+    {
+      "name": "Kovur, Chennai",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Kovur is a western suburb of Chennai, India. It is located in the Indian state of Tamil Nadu and is situated at a distance of about 5 kilometers from Porur on the Porur-Kundrathur Road.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Kovur_Trunk_Road.jpg",
+        "alt": "Kovur, Chennai"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Kovur_Trunk_Road.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4a/Kovur_Board_on_NH67.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Kovur_Pedda_Bazar_Center.jpg/1280px-Kovur_Pedda_Bazar_Center.jpg"
+      ]
+    },
+    {
+      "name": "Kovur Sundareswarar Temple",
+      "category": "spiritual",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Sundareswarar Temple at Kovur, a suburb of Chennai, India is a Hindu temple dedicated to the god Shiva. Constructed in about 965 CE, the presiding deity of the temple is Sundareswarar, a form of Shiva and the presiding goddess is Soundarambikai.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kovur Sundareswarar Temple"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Kundrathur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kundrathur",
+          "note": "Kundrathur is a town located in the Chennai Metropolitan Area and the headquarters of Kundrathur taluk in Kanchipuram District. It is the birthplace of Sekkizhar, a well-known poet-saint who authored the Periyapuranam."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kundrathur Nageswarar Temple",
+          "note": "Kundrathur Nageswarar Temple, also known as Vada Thirunageswaram, is a Hindu temple dedicated to Shiva, located in the neighbourhood of Kundrathur in Chennai, India. The temple was built in the 12th century by the Shivite saint Sekkilar and is modelled on the Thirunageswaram temple at Kumbakonam."
+        },
+        {
+          "time": "Evening",
+          "activity": "Kundrathur Hill",
+          "note": "The Subramaniyasvami Hill, popularly known as the Kundrathur Hill is a hillock located 5 kilometres (3.1 miles) from the Greater Chennai Corporation (GCC) limits in the Kundrathur taluk of Kanchipuram district, Tamil Nadu, India. The town of Kundrathur known for its Kundrathur Murugan Temple occupies the summit of the hill."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Thirumudivakkam & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Thirumudivakkam",
+          "note": "Thirumudivakkam is a south-western suburb of Chennai metropolitan city, Tamil Nadu. This area belongs to Sriperumbudur taluk, Kanchipuram district."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Meenakshi Academy of Higher Education and Research",
+          "note": "The Meenakshi Academy of Higher Education and Research (MAHER), commonly referred to as Meenakshi University, is a private deemed-to-be-university for mainly medical science in Chennai, Tamil Nadu, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Sikkarayapuram",
+          "note": "Sikkarayapuram, also known as Chikkarayapuram, is part of the Mangadu municipality and located in west of Chennai, India Indian state of Tamil Nadu."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Kovur, Chennai & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kovur, Chennai",
+          "note": "Kovur is a western suburb of Chennai, India. It is located in the Indian state of Tamil Nadu and is situated at a distance of about 5 kilometers from Porur on the Porur-Kundrathur Road."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kovur Sundareswarar Temple",
+          "note": "Sundareswarar Temple at Kovur, a suburb of Chennai, India is a Hindu temple dedicated to the god Shiva. Constructed in about 965 CE, the presiding deity of the temple is Sundareswarar, a form of Shiva and the presiding goddess is Soundarambikai."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Green Park - Chennai",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Kundrathur Murugan Temple Stay"
+      }
+    },
+    {
+      "name": "Le Royal Meridian",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Kundrathur Murugan Temple"
+      }
+    },
+    {
+      "name": "Grand Palace",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kundrathur Murugan Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "Trident Hilton",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Kundrathur Murugan Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg",
+      "alt": "Kundrathur Murugan Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kundrathur_Murugan_Temple5.jpg",
+      "alt": "Kundrathur Murugan Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Kundrathur_Murugan_Temple3.jpg",
+      "alt": "Kundrathur Murugan Temple photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kundrathur_Murugan_Temple4.jpg",
+      "alt": "Kundrathur Murugan Temple photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Kundrathur_Murugan_Temple2.jpg",
+      "alt": "Kundrathur Murugan Temple photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Kundrathur Murugan Temple?",
+      "a": "The best time to visit Kundrathur Murugan Temple is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Kundrathur Murugan Temple?",
+      "a": "The nearest airport is Kundrathur Murugan Temple / nearest airport (30 km) and the nearest railway station is Chennai Central (22 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Kundrathur Murugan Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Kundrathur Murugan Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Kundrathur Murugan Temple?",
+      "a": "Stays in Kundrathur Murugan Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Kundrathur Murugan Temple?",
+      "a": "The top attractions are Kundrathur, Kundrathur Nageswarar Temple, Kundrathur Hill, Thirumudivakkam, Meenakshi Academy of Higher Education and Research."
+    }
+  ],
+  "seo": {
+    "title": "Kundrathur Murugan Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Kundrathur Murugan Temple is a Hindu temple located in Kundrathur, a suburb of Chennai in the Kancheepuram district of Tamil Nadu. Plan your Kundrathur Murugan Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=kundrathur-murugan-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kundrathur_Murugan_Temple1.jpg",
+    "keywords": [
+      "Kundrathur Murugan Temple travel guide",
+      "places to visit in Kundrathur Murugan Temple",
+      "Kundrathur Murugan Temple hotels",
+      "best time to visit Kundrathur Murugan Temple",
+      "how to reach Kundrathur Murugan Temple",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

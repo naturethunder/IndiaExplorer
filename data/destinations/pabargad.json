@@ -1,0 +1,488 @@
+{
+  "slug": "pabargad",
+  "title": "Pabargad",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Pabargad — heritage city of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghanchakkar_pleateau_from_top.jpg/1280px-Ghanchakkar_pleateau_from_top.jpg",
+    "alt": "Ghanchakkar"
+  },
+  "overview": {
+    "short": "Pabargad Fort is a fort located 50 km (31 mi) from Igatpuri via Bhandardara.",
+    "description": "Pabargad Fort is a fort located 50 km (31 mi) from Igatpuri via Bhandardara. The fort is in Akole taluka in Ahmednagar district, of Maharashtra. The trek to this fort is difficult.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.1,
+    "reviewCount": 4218,
+    "minPrice": 900,
+    "distanceFromDelhi": 1074
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 19.482361111,
+    "lng": 73.752833333,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 128,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 102 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 175,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 140 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 264,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 211 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 526,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 421 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 555,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 444 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 689,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 551 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 709,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 567 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 925,
+        "byCar": "15–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 740 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1001,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 801 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1055,
+        "byCar": "18–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 844 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1199,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 959 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1244,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 995 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1249,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 999 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1315,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1052 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1324,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1059 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Pabargad / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Nashik Road",
+      "distance": 53
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Ghanchakkar",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Ghanchakkar 1,532 metres (5,026 ft) is the third highest peak in the Maharashtra State under Sahyadri mountain ranges in western India. Its neighbouring peak Muda 1,520 metres (4,990 ft) is the fourth highest peak in the Maharashtra State under Sahyadris.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghanchakkar_pleateau_from_top.jpg/1280px-Ghanchakkar_pleateau_from_top.jpg",
+        "alt": "Ghanchakkar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghanchakkar_pleateau_from_top.jpg/1280px-Ghanchakkar_pleateau_from_top.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kalad_Gadh.jpg/1280px-Kalad_Gadh.jpg"
+      ]
+    },
+    {
+      "name": "Ratanwadi",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Ratanwadi is a village in Ahmednagar district, Maharashtra, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Amruteshwar_temple%2C_Ratanwadi_%286714133345%29.jpg/1280px-Amruteshwar_temple%2C_Ratanwadi_%286714133345%29.jpg",
+        "alt": "Ratanwadi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Amruteshwar_temple%2C_Ratanwadi_%286714133345%29.jpg/1280px-Amruteshwar_temple%2C_Ratanwadi_%286714133345%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Historic_heritage_sites_of_Maharashtra_with_GPS_coordinates.jpg/1280px-Historic_heritage_sites_of_Maharashtra_with_GPS_coordinates.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ratangad_fort_from_ratanwadi.jpg/1280px-Ratangad_fort_from_ratanwadi.jpg"
+      ]
+    },
+    {
+      "name": "Amruteshwar Temple",
+      "category": "spiritual",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Amruteshwar Temple is an intricately carved Shiva temple in Ratanwadi. It is over 1200 years old and was built by the rulers of Shilahara dynasty in the 9th century CE. This is one of twelve Shiva temples built by King Jhanjha.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Amriteshwar_temple.jpg/1280px-Amriteshwar_temple.jpg",
+        "alt": "Amruteshwar Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Amriteshwar_temple.jpg/1280px-Amriteshwar_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Erotica_on_Amruteshwar_temple_1.jpg/1280px-Erotica_on_Amruteshwar_temple_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Amruteshwar_Temple_-_Description.jpg/1280px-Amruteshwar_Temple_-_Description.jpg"
+      ]
+    },
+    {
+      "name": "Bhandardara",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Bhandardara is a holiday resort village on the Pravara River near Igatpuri, in the Western Ghats of India. The village is located in the Akole tehsil, Aahilyanagar district of the state of Maharashtra, about 185 kilometers (115 mi) from Mumbai, and 73 kilometers (45 mi) from Nashik.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bhandardara_mountain%2Cnashik.jpg/1280px-Bhandardara_mountain%2Cnashik.jpg",
+        "alt": "Bhandardara"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bhandardara_mountain%2Cnashik.jpg/1280px-Bhandardara_mountain%2Cnashik.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Shendi_Bhandardara_%286714122555%29.jpg/1280px-Shendi_Bhandardara_%286714122555%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Videw_on_Bhandardara_Road.jpg"
+      ]
+    },
+    {
+      "name": "Ratangad",
+      "category": "heritage",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Ratangad is a fort in Ratanwadi, Maharashtra, India, overlooking Bhandardara in the Ahmadnagar district of Maharashtra bordering the Thane district. The fort is about 400 years old.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Ratangad_nedhe.jpg",
+        "alt": "Ratangad"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/Ratangad_nedhe.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ratangad_Flowers.jpg/1280px-Ratangad_Flowers.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ratangad_Flowers3.jpg/1280px-Ratangad_Flowers3.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Ghanchakkar & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Ghanchakkar",
+          "note": "Ghanchakkar 1,532 metres (5,026 ft) is the third highest peak in the Maharashtra State under Sahyadri mountain ranges in western India. Its neighbouring peak Muda 1,520 metres (4,990 ft) is the fourth highest peak in the Maharashtra State under Sahyadris."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Ratanwadi",
+          "note": "Ratanwadi is a village in Ahmednagar district, Maharashtra, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Amruteshwar Temple",
+          "note": "Amruteshwar Temple is an intricately carved Shiva temple in Ratanwadi. It is over 1200 years old and was built by the rulers of Shilahara dynasty in the 9th century CE. This is one of twelve Shiva temples built by King Jhanjha."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Bhandardara & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Bhandardara",
+          "note": "Bhandardara is a holiday resort village on the Pravara River near Igatpuri, in the Western Ghats of India. The village is located in the Akole tehsil, Aahilyanagar district of the state of Maharashtra, about 185 kilometers (115 mi) from Mumbai, and 73 kilometers (45 mi) from Nashik."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Ratangad",
+          "note": "Ratangad is a fort in Ratanwadi, Maharashtra, India, overlooking Bhandardara in the Ahmadnagar district of Maharashtra bordering the Thane district. The fort is about 400 years old."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Sanket Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Pabargad Stay"
+      }
+    },
+    {
+      "name": "Vanrai Adventure (Kokankada)",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Pabargad"
+      }
+    },
+    {
+      "name": "Hotel kokankada.in",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Spider_webs_at_KokanKada_Harishchandragad.jpg/960px-Spider_webs_at_KokanKada_Harishchandragad.jpg",
+        "alt": "Hotel kokankada.in"
+      }
+    },
+    {
+      "name": "MTDC Bhandardara",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Pabargad"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Spiritual",
+    "Heritage walks",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [],
+  "faq": [
+    {
+      "q": "What is the best time to visit Pabargad?",
+      "a": "The best time to visit Pabargad is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Pabargad?",
+      "a": "The nearest airport is Pabargad / nearest airport (30 km) and the nearest railway station is Nashik Road (53 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Pabargad?",
+      "a": "2 days are usually enough to cover the top attractions of Pabargad at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Pabargad?",
+      "a": "Stays in Pabargad start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Pabargad?",
+      "a": "The top attractions are Ghanchakkar, Ratanwadi, Amruteshwar Temple, Bhandardara, Ratangad."
+    }
+  ],
+  "seo": {
+    "title": "Pabargad Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Pabargad Fort is a fort located 50 km (31 mi) from Igatpuri via Bhandardara. Plan your Pabargad trip: 5 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=pabargad",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghanchakkar_pleateau_from_top.jpg/1280px-Ghanchakkar_pleateau_from_top.jpg",
+    "keywords": [
+      "Pabargad travel guide",
+      "places to visit in Pabargad",
+      "Pabargad hotels",
+      "best time to visit Pabargad",
+      "how to reach Pabargad",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

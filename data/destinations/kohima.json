@@ -1,0 +1,466 @@
+{
+  "slug": "kohima",
+  "title": "Kohima",
+  "state": "Nagaland",
+  "country": "India",
+  "region": "Naga Hills",
+  "type": "hill_station",
+  "badge": "Popular",
+  "tagline": "Kohima — hill station of Nagaland",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kohima_war_cemetery_7.jpg/1280px-Kohima_war_cemetery_7.jpg",
+    "alt": "Kohima, Nagaland"
+  },
+  "overview": {
+    "short": "Kohima is a much-loved hill station in Nagaland, known for hornbill festival and wwii history.",
+    "description": "Kohima, in Naga Hills, Nagaland, is one of India’s favourite hill station. Visitors come for its hornbill festival, wwii history, tribes, with the best months being Oct – May.",
+    "features": [
+      "Hornbill Festival",
+      "WWII History",
+      "Tribes"
+    ],
+    "altitude": 1444,
+    "rating": 4.4,
+    "reviewCount": 7000,
+    "minPrice": 1400,
+    "distanceFromDelhi": 2350
+  },
+  "bestTime": {
+    "label": "Oct – May",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 25.6751,
+    "lng": 94.1086,
+    "tempSummer": "16–28°C",
+    "tempWinter": "4–18°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 121,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 97 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 206,
+        "byCar": "3–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 165 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 278,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 222 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 304,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 243 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 323,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 258 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 439,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 351 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 721,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 577 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 728,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 582 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1124,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 899 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1159,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 927 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1296,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1037 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 1398,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1118 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1705,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1364 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1790,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1432 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 1961,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1569 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kohima / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Dimapur Railway Station",
+      "distance": 46
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Kohima War Cemetery",
+      "category": "heritage",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Moving WWII memorial to the Battle of Kohima.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kohima_war_cemetery_7.jpg/1280px-Kohima_war_cemetery_7.jpg",
+        "alt": "Kohima War Cemetery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kohima_war_cemetery_7.jpg/1280px-Kohima_war_cemetery_7.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kohima_war_cemetery_19.jpg/1280px-Kohima_war_cemetery_19.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kohima_war_cemetery_34.jpg/1280px-Kohima_war_cemetery_34.jpg"
+      ]
+    },
+    {
+      "name": "Kisama Heritage Village",
+      "category": "cultural",
+      "distance": "12 km",
+      "entryFee": "₹30",
+      "timings": "Varies by season",
+      "duration": "2 hrs",
+      "rating": 4.6,
+      "description": "Host of the Hornbill Festival showcasing all Naga tribes.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/The_Chief_Minister_of_Nagaland%2C_Shri_Neiphiu_Rio_addressing_at_the_inauguration_of_the_World_Bamboo_Day_function%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-thumbnail.jpg",
+        "alt": "Kisama Heritage Village"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/The_Chief_Minister_of_Nagaland%2C_Shri_Neiphiu_Rio_addressing_at_the_inauguration_of_the_World_Bamboo_Day_function%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_addressing_at_the_inauguration_of_the_World_Bamboo_Day_function%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_visits_the_Crafts_Bazaar%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_visits_the_Crafts_Bazaar%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg"
+      ]
+    },
+    {
+      "name": "Dzukou Valley",
+      "category": "trekking",
+      "distance": "25 km",
+      "entryFee": "₹100",
+      "timings": "Varies by season",
+      "duration": "2 days",
+      "rating": 4.7,
+      "description": "Valley of seasonal flowers and rolling green hills.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Western_Dzukou_frozen_waterfall.png",
+        "alt": "Dzukou Valley"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Western_Dzukou_frozen_waterfall.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg/1280px-Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border.jpg/1280px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Kohima War Cemetery & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kohima War Cemetery",
+          "note": "Moving WWII memorial to the Battle of Kohima."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kisama Heritage Village",
+          "note": "Host of the Hornbill Festival showcasing all Naga tribes."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Dzukou Valley",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Dzukou Valley",
+          "note": "Valley of seasonal flowers and rolling green hills."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "China Town",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1400,
+      "priceMax": 2250,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Kohima Stay"
+      }
+    },
+    {
+      "name": "Hotel Capital",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2650,
+      "priceMax": 3800,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Kohima"
+      }
+    },
+    {
+      "name": "Hotel Legacy",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4200,
+      "priceMax": 6300,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kohima Grand Hotel"
+      }
+    },
+    {
+      "name": "Eastgate hotel",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8400,
+      "priceMax": 14000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sterling Kohima"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Heritage walks",
+    "Cultural",
+    "Trekking",
+    "Hornbill Festival",
+    "WWII History",
+    "Tribes"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kohima_war_cemetery_7.jpg/1280px-Kohima_war_cemetery_7.jpg",
+      "alt": "Kohima photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kohima_war_cemetery_19.jpg/1280px-Kohima_war_cemetery_19.jpg",
+      "alt": "Kohima photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/The_Chief_Minister_of_Nagaland%2C_Shri_Neiphiu_Rio_addressing_at_the_inauguration_of_the_World_Bamboo_Day_function%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-thumbnail.jpg",
+      "alt": "Kohima photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_addressing_at_the_inauguration_of_the_World_Bamboo_Day_function%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-thumbnail.jpg",
+      "alt": "Kohima photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kohima_war_cemetery_34.jpg/1280px-Kohima_war_cemetery_34.jpg",
+      "alt": "Kohima photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kohima_war_cemetery_39.jpg/1280px-Kohima_war_cemetery_39.jpg",
+      "alt": "Kohima photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Kohima?",
+      "a": "The best time to visit Kohima is Oct – May. Summers are 16–28°C and winters are 4–18°C."
+    },
+    {
+      "q": "How do I reach Kohima?",
+      "a": "The nearest airport is Kohima / nearest airport (30 km) and the nearest railway station is Dimapur Railway Station (46 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Kohima?",
+      "a": "2 days are usually enough to cover the top attractions of Kohima at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Kohima?",
+      "a": "Stays in Kohima start from ₹1,400 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Kohima?",
+      "a": "The top attractions are Kohima War Cemetery, Kisama Heritage Village, Dzukou Valley."
+    }
+  ],
+  "seo": {
+    "title": "Kohima Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Kohima is a much-loved hill station in Nagaland, known for hornbill festival and wwii history. Plan your Kohima trip: 3 places to visit, 4 stays from ₹1400/night, best time (Oct – May) and routes.",
+    "canonical": "destination.html?slug=kohima",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kohima_war_cemetery_7.jpg/1280px-Kohima_war_cemetery_7.jpg",
+    "keywords": [
+      "Kohima travel guide",
+      "places to visit in Kohima",
+      "Kohima hotels",
+      "best time to visit Kohima",
+      "how to reach Kohima",
+      "Nagaland tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

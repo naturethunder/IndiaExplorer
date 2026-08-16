@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO: Title & Description updated by destination.js via applySEO() -->
+  <title>Destination Guide — IndiaExplore</title>
+  <meta name="description"
+    content="Explore top places to visit, best hotels, how to reach, and travel tips for this destination in India. Plan your perfect trip with IndiaExplore." />
+  <!-- Canonical: set by JS per destination -->
+  <link rel="canonical" href="https://www.indiaexplore.example/destination.html" id="canonicalLink" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="IndiaExplore" />
+  <meta property="og:title" content="Destination Guide — IndiaExplore" id="ogTitle" />
+  <meta property="og:description"
+    content="Explore top places to visit, best hotels, how to reach, and travel tips for this destination in India."
+    id="ogDesc" />
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg"
+    id="ogImage" />
+  <meta property="og:url" content="https://www.indiaexplore.example/destination.html" id="ogUrl" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Destination Guide — IndiaExplore" id="twTitle" />
+  <meta name="twitter:description" content="Explore top places to visit, best hotels, how to reach, and travel tips."
+    id="twDesc" />
+  <meta name="twitter:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg"
+    id="twImage" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Google Fonts: Bodoni Moda + Jost -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,800;1,6..96,700&family=Jost:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,800;1,6..96,700&family=Jost:wght@300;400;500;600;700&display=swap"
+    media="print" onload="this.media='all'" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/destination-immersive.css" />
+  <link rel="stylesheet" href="js/leaflet.css" />
+  <script src="js/leaflet.js" defer></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="dest-immersive">
+
+  <!-- Immersive fixed background + cinematic overlay -->
+  <div class="dest-immersive-bg" aria-hidden="true"></div>
+  <div class="dest-immersive-overlay" aria-hidden="true"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR -->
+  <nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between gap-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="IndiaExplore — Go to homepage">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="14" cy="14" r="13" fill="#10b981" opacity="0.15" />
+          <path d="M14 4C9.582 4 6 7.582 6 12c0 6 8 14 8 14s8-8 8-14c0-4.418-3.582-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"
+            fill="#10b981" />
+        </svg>
+        <span class="font-bold text-lg tracking-tight text-white">India<span style="color:#10b981">Explore</span></span>
+      </a>
+      <!-- Navigation Menu -->
+      <div class="hidden md:flex nav-menu items-center gap-1">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="ai-finder.html" class="nav-link">AI Trip Finder</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <!-- Breadcrumb & CTA -->
+      <div class="flex items-center gap-3">
+        <nav aria-label="Breadcrumb" class="hidden lg:block">
+          <ol class="flex items-center gap-1 text-xs text-gray-400 list-none p-0 m-0">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true" class="mx-1 text-gray-600">/</li>
+            <li><a href="destinations.html" class="hover:text-white transition-colors">Destinations</a></li>
+            <li aria-hidden="true" class="mx-1 text-gray-600">/</li>
+            <li><span id="crumbName" class="text-white font-medium" aria-current="page">...</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NOT FOUND STATE -->
+  <div id="notFound" class="flex flex-col items-center justify-center min-h-screen gap-4" style="display:none"
+    role="status" aria-live="polite">
+    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+      stroke-linecap="round" stroke-linejoin="round" class="text-gray-400" aria-hidden="true">
+      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+      <line x1="8" y1="2" x2="8" y2="18" />
+      <line x1="16" y1="6" x2="16" y2="22" />
+    </svg>
+    <h1 class="text-2xl font-bold text-white">Destination not found</h1>
+    <p class="text-gray-400">We don't have a page for this destination yet.</p>
+    <a href="destinations.html" class="btn btn-primary">Browse all destinations</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main" style="display:none">
+
+    <!-- HERO: Single cinematic full-viewport image -->
+    <div class="dest-hero pt-16" role="banner">
+      <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" />
+      <div id="heroSlides" class="dest-hero-slides"></div>
+      <div class="dest-hero-overlay" aria-hidden="true"></div>
+      <button id="heroPrev" class="hero-car-btn hero-car-prev" aria-label="Previous photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button id="heroNext" class="hero-car-btn hero-car-next" aria-label="Next photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <div id="heroDots" class="hero-car-dots" role="tablist" aria-label="Photo navigation"></div>
+      <div class="absolute inset-0 flex flex-col justify-end p-6 max-w-7xl mx-auto w-full" style="pointer-events:none">
+        <div class="text-white" style="pointer-events:auto">
+          <div class="flex items-center gap-2 mb-2">
+            <a id="heroType" href="#" class="badge bg-primary text-white text-xs capitalize"></a>
+            <span id="heroBadge"
+              class="badge bg-white/20 backdrop-blur-sm text-white border border-white/30 text-xs"></span>
+          </div>
+          <h1 id="heroTitle" class="font-display text-white mb-1"
+            style="font-size:clamp(2rem,5vw,3rem);line-height:1.1"></h1>
+          <p id="heroTagline" class="text-white/80 text-base max-w-2xl"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STICKY TAB BAR — populated by JS with role="tablist" -->
+    <div id="destNavContainer" role="tablist" aria-label="Destination sections"></div>
+
+    <!-- TAB PANELS — aria-labelledby set by JS in setTab() -->
+    <div class="max-w-7xl mx-auto px-4 pt-10 pb-12">
+      <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
+      <div id="panel-places" class="tab-panel" role="tabpanel" aria-labelledby="tab-places" style="display:none"></div>
+      <div id="panel-stays" class="tab-panel" role="tabpanel" aria-labelledby="tab-stays" style="display:none"></div>
+      <div id="panel-reach" class="tab-panel" role="tabpanel" aria-labelledby="tab-reach" style="display:none"></div>
+      <div id="panel-map" class="tab-panel" role="tabpanel" aria-labelledby="tab-map" style="display:none">
+        <h2 class="text-2xl font-bold text-white mb-4">Interactive Map — <span id="mapName"
+            class="text-emerald-400"></span></h2>
+        <div id="leaflet-map" class="w-full rounded-2xl border border-white/15 shadow-2xl overflow-hidden"
+          style="height:480px"></div>
+        <p class="text-xs text-slate-400 mt-3 text-center">Map data © OpenStreetMap contributors</p>
+      </div>
+    </div>
+
+    <!-- SIMILAR DESTINATIONS -->
+    <section id="similarSection" aria-labelledby="similar-heading" class="dest-similar-wrap py-16 mt-14 border-t border-white/15 relative">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="dest-similar-header flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">
+              <span>✨</span>
+              <span>More Like This</span>
+            </div>
+            <h2 id="similar-heading" class="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-white tracking-tight drop-shadow-lg">
+              Similar <span id="similarTypeName" class="text-emerald-400 font-serif italic"></span>Destinations You May Love
+            </h2>
+            <p class="text-slate-300/80 text-sm max-w-2xl mt-1.5">Handpicked getaways sharing similar landscapes, altitudes, and travel vibes across India.</p>
+          </div>
+          <a href="destinations.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-400 hover:text-emerald-300 bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl transition-all shrink-0">
+            <span>Explore All 2,389</span>
+            <span>→</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="similar-grid"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER (shared component) -->
+    <div id="siteFooter"></div>
+  </main>
+
+  <!-- Place Details Modal -->
+  <div id="placeModal" class="fixed inset-0 z-[210] flex items-center justify-center p-4" style="display:none"
+    role="dialog" aria-modal="true" aria-labelledby="placeName" aria-hidden="true">
+    <div id="placeBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto">
+      <button id="placeClose"
+        class="absolute top-3 right-3 z-20 w-9 h-9 flex items-center justify-center text-white bg-black/40 hover:bg-black/60 rounded-full transition-colors"
+        aria-label="Close place details">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Image carousel -->
+      <div id="placeCarousel" class="carousel">
+        <div id="placeTrack" class="carousel-track"></div>
+        <button id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button id="carNext" class="carousel-btn carousel-next" aria-label="Next photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        <div id="carDots" class="carousel-dots" role="tablist" aria-label="Photo navigation"></div>
+        <span id="carCount" class="carousel-count" aria-live="polite">1 / 5</span>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-3 mb-1">
+          <h2 id="placeName" class="text-2xl font-bold text-gray-900 leading-tight"></h2>
+          <span id="placeRating" class="shrink-0 text-amber-500 font-bold" aria-label="Rating"></span>
+        </div>
+        <span id="placeCategory"
+          class="inline-block badge bg-orange-100 text-orange-800 text-xs capitalize mb-4"></span>
+        <p id="placeDesc" class="text-gray-600 text-sm leading-relaxed mb-5"></p>
+
+        <!-- Live weather -->
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-3 mb-5" aria-live="polite">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Live Weather Nearby</span>
+            <span class="flex items-center gap-1.5 text-xs font-medium text-emerald-600"><span class="live-dot"
+                aria-hidden="true"></span>LIVE</span>
+          </div>
+          <div id="placeWeather" class="text-sm text-gray-700">Loading…</div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+          <div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Distance</p>
+            <p id="placeDistance" class="font-medium text-gray-900"></p>
+          </div>
+          <div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Time Needed</p>
+            <p id="placeDuration" class="font-medium text-gray-900"></p>
+          </div>
+          <div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Entry Fee</p>
+            <p id="placeFee" class="font-medium text-gray-900"></p>
+          </div>
+          <div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Timings</p>
+            <p id="placeTimings" class="font-medium text-gray-900"></p>
+          </div>
+        </div>
+
+        <a id="placeMapLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full mt-6">View
+          on Google Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation — SVG icons replacing emojis -->
+  <nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav-btn" aria-label="Home">
+      <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+      Home
+    </a>
+    <a href="destinations.html" class="mobile-nav-btn" aria-label="Explore destinations">
+      <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+        <line x1="8" y1="2" x2="8" y2="18" />
+        <line x1="16" y1="6" x2="16" y2="22" />
+      </svg>
+      Explore
+    </a>
+    <a href="#" id="mStays" class="mobile-nav-btn" aria-label="View hotel stays">
+      <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2 22h20" />
+        <path d="M2 11h20" />
+        <path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4" />
+        <rect x="8" y="15" width="8" height="7" rx="1" />
+      </svg>
+      Stays
+    </a>
+    <a href="#" id="mReach" class="mobile-nav-btn" aria-label="How to reach">
+      <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 8 16 12 12 16" />
+        <line x1="8" y1="12" x2="16" y2="12" />
+      </svg>
+      Route
+    </a>
+  </nav>
+
+  <script type="module" src="js/pages/destination.js"></script>
+  <script>
+    // Navbar glass transition on scroll
+    window.addEventListener('scroll', function () {
+      var nav = document.querySelector('.nav-glass');
+      if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+    }, { passive: true });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+{
+  "slug": "lachung",
+  "title": "Lachung",
+  "state": "Sikkim",
+  "country": "India",
+  "region": "North Sikkim",
+  "type": "hill_station",
+  "badge": "Popular",
+  "tagline": "Lachung — hill station of Sikkim",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Yumthang_valley%2C_Lachung_Sikkim_India_2012.jpg",
+    "alt": "Lachung, Sikkim"
+  },
+  "overview": {
+    "short": "Lachung is a much-loved hill station in Sikkim, known for yumthang valley and zero point.",
+    "description": "Lachung, in North Sikkim, Sikkim, is one of India’s favourite hill station. Visitors come for its yumthang valley, zero point, rhododendrons, with the best months being Mar – Jun, Sep – Nov.",
+    "features": [
+      "Yumthang Valley",
+      "Zero Point",
+      "Rhododendrons"
+    ],
+    "altitude": 2700,
+    "rating": 4.6,
+    "reviewCount": 7000,
+    "minPrice": 2000,
+    "distanceFromDelhi": 1700
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 27.69,
+    "lng": 88.74,
+    "tempSummer": "8–18°C",
+    "tempWinter": "-4–10°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 53,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 42 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 140,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 112 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 429,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 343 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 490,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 392 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 534,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 427 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 606,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 485 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 624,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 499 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 723,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 578 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 741,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 593 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 743,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 594 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 761,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 609 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 789,
+        "byCar": "13–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 631 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1093,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 874 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1269,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1015 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1351,
+        "byCar": "23–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1081 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Lachung / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Siliguri Junction",
+      "distance": 113
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Yumthang Valley",
+      "category": "scenic",
+      "distance": "24 km",
+      "entryFee": "₹100",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.7,
+      "description": "“Valley of Flowers” carpeted with rhododendrons in spring.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Yumthang_valley%2C_Lachung_Sikkim_India_2012.jpg",
+        "alt": "Yumthang Valley"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Yumthang_valley%2C_Lachung_Sikkim_India_2012.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/16/The_Yumthang_Valley_with_the_River_Lachung_Chu_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Yumthang_Valley%2C_Lachung_Sikkim.jpg/1280px-Yumthang_Valley%2C_Lachung_Sikkim.jpg"
+      ]
+    },
+    {
+      "name": "Zero Point",
+      "category": "scenic",
+      "distance": "40 km",
+      "entryFee": "₹100",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.6,
+      "description": "Snow-covered last-civilian point at 4,700m.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Zeropoint.jpg/1280px-Zeropoint.jpg",
+        "alt": "Zero Point"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Zeropoint.jpg/1280px-Zeropoint.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Zero_point_lachung.jpg/1280px-Zero_point_lachung.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/16/A_small_River_near_Zero_Point%2C_Sikkim.png"
+      ]
+    },
+    {
+      "name": "Lachung Monastery",
+      "category": "spiritual",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "1 hr",
+      "rating": 4.4,
+      "description": "18th-century Nyingma monastery amid apple orchards.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lachung_Monastery_Murals_Rinpoche.jpg/1280px-Lachung_Monastery_Murals_Rinpoche.jpg",
+        "alt": "Lachung Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lachung_Monastery_Murals_Rinpoche.jpg/1280px-Lachung_Monastery_Murals_Rinpoche.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lachung_Monastery_Murals_new_menri_style.jpg/1280px-Lachung_Monastery_Murals_new_menri_style.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Lachung_Monastery%2C_Sikkim_India.jpg/1280px-Lachung_Monastery%2C_Sikkim_India.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Yumthang Valley & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Yumthang Valley",
+          "note": "“Valley of Flowers” carpeted with rhododendrons in spring."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Zero Point",
+          "note": "Snow-covered last-civilian point at 4,700m."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Lachung Monastery",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Lachung Monastery",
+          "note": "18th-century Nyingma monastery amid apple orchards."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Etho Metho Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2000,
+      "priceMax": 3200,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Lachung Stay"
+      }
+    },
+    {
+      "name": "Floret holiday",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 3800,
+      "priceMax": 5400,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Lachung"
+      }
+    },
+    {
+      "name": "Yashshree hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6000,
+      "priceMax": 9000,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Lachung Grand Hotel"
+      }
+    },
+    {
+      "name": "Rehoboth",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 20000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sterling Lachung"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Spiritual",
+    "Yumthang Valley",
+    "Zero Point",
+    "Rhododendrons"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Yumthang_valley%2C_Lachung_Sikkim_India_2012.jpg",
+      "alt": "Lachung photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/The_Yumthang_Valley_with_the_River_Lachung_Chu_-_panoramio.jpg",
+      "alt": "Lachung photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Zeropoint.jpg/1280px-Zeropoint.jpg",
+      "alt": "Lachung photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Zero_point_lachung.jpg/1280px-Zero_point_lachung.jpg",
+      "alt": "Lachung photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lachung_Monastery_Murals_Rinpoche.jpg/1280px-Lachung_Monastery_Murals_Rinpoche.jpg",
+      "alt": "Lachung photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lachung_Monastery_Murals_new_menri_style.jpg/1280px-Lachung_Monastery_Murals_new_menri_style.jpg",
+      "alt": "Lachung photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Lachung?",
+      "a": "The best time to visit Lachung is Mar – Jun, Sep – Nov. Summers are 8–18°C and winters are -4–10°C."
+    },
+    {
+      "q": "How do I reach Lachung?",
+      "a": "The nearest airport is Lachung / nearest airport (30 km) and the nearest railway station is Siliguri Junction (113 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Lachung?",
+      "a": "2 days are usually enough to cover the top attractions of Lachung at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Lachung?",
+      "a": "Stays in Lachung start from ₹2,000 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Lachung?",
+      "a": "The top attractions are Yumthang Valley, Zero Point, Lachung Monastery."
+    }
+  ],
+  "seo": {
+    "title": "Lachung Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Lachung is a much-loved hill station in Sikkim, known for yumthang valley and zero point. Plan your Lachung trip: 3 places to visit, 4 stays from ₹2000/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=lachung",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Yumthang_valley%2C_Lachung_Sikkim_India_2012.jpg",
+    "keywords": [
+      "Lachung travel guide",
+      "places to visit in Lachung",
+      "Lachung hotels",
+      "best time to visit Lachung",
+      "how to reach Lachung",
+      "Sikkim tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

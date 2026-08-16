@@ -1,0 +1,564 @@
+{
+  "slug": "st-francis-xavier-s-cathedral-kottar",
+  "title": "St. Francis Xavier's Cathedral, Kottar",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Tamil Nadu",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "St. Francis Xavier's Cathedral, Kottar — heritage city of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/St._Xavier%27s_Church%2C_Kottar.JPG/1280px-St._Xavier%27s_Church%2C_Kottar.JPG",
+    "alt": "St. Francis Xavier's Cathedral, Kottar, Tamil Nadu"
+  },
+  "overview": {
+    "short": "St. Francis Xavier's Cathedral, Kottar is a much-loved heritage city in Tamil Nadu, known for forts and architecture.",
+    "description": "St. Francis Xavier's Cathedral, Kottar, also known as St. Xavier Church, is a Roman Catholic Latin Rite shrine in Kottar, Nagercoil, in the Kanyakumari district of Tamil Nadu state, India. While Francis Xavier was doing missionary work in Kottar and its neighbourhood, he averted an invasion of Vadugas with the help of the army of Paravars and Padayatchi nadars of Kottar, at Vadasery, thus protecting the people of the Venad kingdom from that attack which was appreciated by the king, Unni Kerala Varma, who became closer to the priest and befriended him from then on.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 12362,
+    "minPrice": 900,
+    "distanceFromDelhi": 2273
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 8.17481,
+    "lng": 77.43869,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Thiruvananthapuram (Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "distance": 85,
+        "byCar": "1–2 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 68 km · road approx."
+      },
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 261,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 209 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 584,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 467 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 616,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 493 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 738,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 590 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1129,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 903 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1238,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 990 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1288,
+        "byCar": "21–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1030 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1518,
+        "byCar": "25–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1214 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1808,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1446 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1903,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1522 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1909,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1527 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2028,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1622 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 2033,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1626 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2148,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1718 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "St. Francis Xavier's Cathedral, Kottar / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Thiruvananthapuram Central",
+      "distance": 64
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Vadiveeswaram",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Vadiveeswaram is a village, now part of the town of Nagercoil, in Kanyakumari district in the southern Indian state of Tamil Nadu. The village was originally an agraharam, or a traditional double line of houses occupied by Brahmins and flanking a temple or pair of temples.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Azhakamman-koil-vadiveeswaram.jpg",
+        "alt": "Vadiveeswaram"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Azhakamman-koil-vadiveeswaram.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Soora_Samharam_in_Vadiveeswaram_Azhagamman_temple.jpg/1280px-Soora_Samharam_in_Vadiveeswaram_Azhagamman_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Perumal_koil_vadiveeswaram.jpg"
+      ]
+    },
+    {
+      "name": "Kottar",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Kottar is a locality and a bazaar area of Nagercoil, Tamil Nadu state, in the southernmost part of Peninsular India. It is the original town around which the city of Nagercoil grew and was an ancient trade centre of both Pandyans and Cheras at various times.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/St._Xavier%27s_Church%2C_Kottar.JPG/1280px-St._Xavier%27s_Church%2C_Kottar.JPG",
+        "alt": "Kottar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/St._Xavier%27s_Church%2C_Kottar.JPG/1280px-St._Xavier%27s_Church%2C_Kottar.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kottar.jpg/1280px-Kottar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Devasahayam_Pillai_Grab_1a.JPG/1280px-Devasahayam_Pillai_Grab_1a.JPG"
+      ]
+    },
+    {
+      "name": "Nagercoil",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Nagercoil, natively spelt as Nāgarkovil (Tamil: [n̪aːhɐɾkoːʋil], \"Temple of the Nāgas\", or Nagaraja-Temple), is a City and the administrative headquarters of Kanyakumari District in Tamil Nadu state, India. Situated close to the tip of the Indian peninsula, it lies on an undulating terrain between the Western Ghats and the Arabian Sea.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Devasahayam_Pillai_Grab_1a.JPG/1280px-Devasahayam_Pillai_Grab_1a.JPG",
+        "alt": "Nagercoil"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Devasahayam_Pillai_Grab_1a.JPG/1280px-Devasahayam_Pillai_Grab_1a.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Devasahayam_Pillai_2a.JPG/1280px-Devasahayam_Pillai_2a.JPG"
+      ]
+    },
+    {
+      "name": "Meenakshipuram, Nagercoil",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Meenakshipuram is a neighbourhood of Nagercoil, in Kanniyakumari district of Tamil Nadu state in the peninsular India. It is located at an altitude of 46 m above the mean sea level with the geographical coordinates of 8°10′57.4″N 77°26′08.6″E (i.e., 8.182611°N, 77.435708°E).",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Meenakshipuram, Nagercoil"
+      },
+      "photos": []
+    },
+    {
+      "name": "South Thamaraikulam",
+      "category": "cultural",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "South Thamaraikulam is a village in Kanyakumari district, Tamil Nadu, near Nagercoil. It is the site of Thamaraikulam Pathi, one of the five holy places of Ayyavazhi.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "South Thamaraikulam"
+      },
+      "photos": []
+    },
+    {
+      "name": "Chemmuthal",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Chemmuthal is a historic landmark in the Kanyakumari district in the Indian state of Tamil Nadu, India. It is located in Vilavancode taluk, in the Killiyoor Panchayat.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chemmuthal_temple_view.jpg/1280px-Chemmuthal_temple_view.jpg",
+        "alt": "Chemmuthal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chemmuthal_temple_view.jpg/1280px-Chemmuthal_temple_view.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Charming_Chemmuthal.jpg/1280px-Charming_Chemmuthal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pongalo.jpg/1280px-Pongalo.jpg"
+      ]
+    },
+    {
+      "name": "Nagercoil division",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Nagercoil division is a revenue division in the Kanyakumari district of Tamil Nadu, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nagercoil_Railway_station.jpg/1280px-Nagercoil_Railway_station.jpg",
+        "alt": "Nagercoil division"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nagercoil_Railway_station.jpg/1280px-Nagercoil_Railway_station.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/PF_1_2_Nagercoil_Rly_Stn.jpg/1280px-PF_1_2_Nagercoil_Rly_Stn.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PF_1_2_Nagercol_Station_1.jpg/1280px-PF_1_2_Nagercol_Station_1.jpg"
+      ]
+    },
+    {
+      "name": "Bawa Kassim Valiyullah Mosque",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The Bawa Kassim Valiyullah Mosque, also known as the Bava Kassim Waliyullah Masjid, is a mosque, located in the village of Elankadai, near the town of Nagercoil, in the Kanyakumari district of the state of Tamil Nadu, India.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Bawa Kassim Valiyullah Mosque"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Vadiveeswaram & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Vadiveeswaram",
+          "note": "Vadiveeswaram is a village, now part of the town of Nagercoil, in Kanyakumari district in the southern Indian state of Tamil Nadu. The village was originally an agraharam, or a traditional double line of houses occupied by Brahmins and flanking a temple or pair of temples."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kottar",
+          "note": "Kottar is a locality and a bazaar area of Nagercoil, Tamil Nadu state, in the southernmost part of Peninsular India. It is the original town around which the city of Nagercoil grew and was an ancient trade centre of both Pandyans and Cheras at various times."
+        },
+        {
+          "time": "Evening",
+          "activity": "Nagercoil",
+          "note": "Nagercoil, natively spelt as Nāgarkovil (Tamil: [n̪aːhɐɾkoːʋil], \"Temple of the Nāgas\", or Nagaraja-Temple), is a City and the administrative headquarters of Kanyakumari District in Tamil Nadu state, India. Situated close to the tip of the Indian peninsula, it lies on an undulating terrain between the Western Ghats and the Arabian Sea."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Meenakshipuram, Nagercoil & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Meenakshipuram, Nagercoil",
+          "note": "Meenakshipuram is a neighbourhood of Nagercoil, in Kanniyakumari district of Tamil Nadu state in the peninsular India. It is located at an altitude of 46 m above the mean sea level with the geographical coordinates of 8°10′57.4″N 77°26′08.6″E (i.e., 8.182611°N, 77.435708°E)."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "South Thamaraikulam",
+          "note": "South Thamaraikulam is a village in Kanyakumari district, Tamil Nadu, near Nagercoil. It is the site of Thamaraikulam Pathi, one of the five holy places of Ayyavazhi."
+        },
+        {
+          "time": "Evening",
+          "activity": "Chemmuthal",
+          "note": "Chemmuthal is a historic landmark in the Kanyakumari district in the Indian state of Tamil Nadu, India. It is located in Vilavancode taluk, in the Killiyoor Panchayat."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Nagercoil division & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nagercoil division",
+          "note": "Nagercoil division is a revenue division in the Kanyakumari district of Tamil Nadu, India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Bawa Kassim Valiyullah Mosque",
+          "note": "The Bawa Kassim Valiyullah Mosque, also known as the Bava Kassim Waliyullah Masjid, is a mosque, located in the village of Elankadai, near the town of Nagercoil, in the Kanyakumari district of the state of Tamil Nadu, India."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Vashanth Krishna",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO St. Francis Xavier's Cathedral, Kottar Stay"
+      }
+    },
+    {
+      "name": "Harris Residency",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in St. Francis Xavier's Cathedral, Kottar"
+      }
+    },
+    {
+      "name": "Hotel Ganga Tamilnadu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "St. Francis Xavier's Cathedral, Kottar Grand Hotel"
+      }
+    },
+    {
+      "name": "Sukumar Lodge",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott St. Francis Xavier's Cathedral, Kottar"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Cultural",
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/St._Xavier%27s_Church%2C_Kottar.JPG/1280px-St._Xavier%27s_Church%2C_Kottar.JPG",
+      "alt": "St. Francis Xavier's Cathedral, Kottar photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Devasahayam_Pillai_Grab_1a.JPG/1280px-Devasahayam_Pillai_Grab_1a.JPG",
+      "alt": "St. Francis Xavier's Cathedral, Kottar photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kottar.jpg/1280px-Kottar.jpg",
+      "alt": "St. Francis Xavier's Cathedral, Kottar photo 3"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit St. Francis Xavier's Cathedral, Kottar?",
+      "a": "The best time to visit St. Francis Xavier's Cathedral, Kottar is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach St. Francis Xavier's Cathedral, Kottar?",
+      "a": "The nearest airport is St. Francis Xavier's Cathedral, Kottar / nearest airport (30 km) and the nearest railway station is Thiruvananthapuram Central (64 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for St. Francis Xavier's Cathedral, Kottar?",
+      "a": "3 days are usually enough to cover the top attractions of St. Francis Xavier's Cathedral, Kottar at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in St. Francis Xavier's Cathedral, Kottar?",
+      "a": "Stays in St. Francis Xavier's Cathedral, Kottar start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in St. Francis Xavier's Cathedral, Kottar?",
+      "a": "The top attractions are Vadiveeswaram, Kottar, Nagercoil, Meenakshipuram, Nagercoil, South Thamaraikulam."
+    }
+  ],
+  "seo": {
+    "title": "St. Francis Xavier's Cathedral, Kottar Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "St. Francis Xavier's Cathedral, Kottar is a much-loved heritage city in Tamil Nadu, known for forts and architecture. Plan your St. Francis Xavier's Cathedral, Kottar trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=st-francis-xavier-s-cathedral-kottar",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/St._Xavier%27s_Church%2C_Kottar.JPG/1280px-St._Xavier%27s_Church%2C_Kottar.JPG",
+    "keywords": [
+      "St. Francis Xavier's Cathedral, Kottar travel guide",
+      "places to visit in St. Francis Xavier's Cathedral, Kottar",
+      "St. Francis Xavier's Cathedral, Kottar hotels",
+      "best time to visit St. Francis Xavier's Cathedral, Kottar",
+      "how to reach St. Francis Xavier's Cathedral, Kottar",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

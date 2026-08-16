@@ -1,0 +1,404 @@
+{
+  "slug": "zangla-khar",
+  "title": "Zangla Khar",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Zangla Khar — heritage city of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg/1280px-Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg",
+    "alt": "Zangla Khar, Ladakh"
+  },
+  "overview": {
+    "short": "Current day Zangla village has no monastery, only a nunnery.",
+    "description": "Current day Zangla village has no monastery, only a nunnery. Zangla Palace is sometimes called Zangla Monastery due to a mistake probably first made by Tivadar Duka, biographer of Alexander Csoma de Kőrös, and later by Ervin Baktay, an Indologist who visited Zangla in 1928 to identify the locations related to Alexander Csoma de Kőrös. Suffering from malaria, he described Zangla Palace – probably due to the shrine and the monks living there – as a monastery. Tsazar Monastery is a Buddhist monastery in the village of Tsa-zar, 6 kilometres south of Zangla, Zanskar, Kargil district, Ladakh, northe",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": 3650,
+    "rating": 4.8,
+    "reviewCount": 7348,
+    "minPrice": 900,
+    "distanceFromDelhi": 563
+  },
+  "bestTime": {
+    "label": "Apr – Jun, Sep – Oct",
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ]
+  },
+  "weather": {
+    "lat": 33.67,
+    "lng": 76.98,
+    "tempSummer": "10–22°C",
+    "tempWinter": "-6–10°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 96,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 77 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 259,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 207 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 358,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 286 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 375,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 300 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 409,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 327 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 483,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 386 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 704,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 563 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 724,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 579 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 911,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 729 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 950,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 760 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1448,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1158 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1493,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1194 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1575,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1260 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1646,
+        "byCar": "27–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1317 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1675,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1340 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Zangla Khar / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 203
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Zangla",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Zangla is a village in Zanskar tehsil of Zanskar district, in the Indian union territory of Ladakh. It is located 262 km (163 mi) southeast of Kargil city, the district headquarters, and 32 km (20 mi) northeast of Padum, the headquarters of Zanskar.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg/1280px-Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg",
+        "alt": "Zangla"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg/1280px-Fields_Zangla_Zanskar_River_Ladakh_Jun24_A7CR_00981.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Zangla_SE_Mountains_Zanskar_Ladakh_Jun24_A7CR_00990.jpg/1280px-Zangla_SE_Mountains_Zanskar_Ladakh_Jun24_A7CR_00990.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/House_Zangla_Zanskar_Ladakh_Jun24_A7CR_01063.jpg/1280px-House_Zangla_Zanskar_Ladakh_Jun24_A7CR_01063.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Zangla",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Zangla",
+          "note": "Zangla is a village in Zanskar tehsil of Zanskar district, in the Indian union territory of Ladakh. It is located 262 km (163 mi) southeast of Kargil city, the district headquarters, and 32 km (20 mi) northeast of Padum, the headquarters of Zanskar."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Dragon Guest House and Restaurant",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Zangla Khar Stay"
+      }
+    },
+    {
+      "name": "PWD Resthouse Zangla",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Zangla Khar"
+      }
+    },
+    {
+      "name": "Pami Guest house",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Zangla Khar Grand Hotel"
+      }
+    },
+    {
+      "name": "Gongma Homestay",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Zangla Khar"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg/1280px-Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg",
+      "alt": "Zangla Khar photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Zangla_SE_Mountains_Zanskar_Ladakh_Jun24_A7CR_00990.jpg/1280px-Zangla_SE_Mountains_Zanskar_Ladakh_Jun24_A7CR_00990.jpg",
+      "alt": "Zangla Khar photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Entrance_Chorten_Zangla_Khar_Zanskar_Jun24_A7CR_00988.jpg/1280px-Entrance_Chorten_Zangla_Khar_Zanskar_Jun24_A7CR_00988.jpg",
+      "alt": "Zangla Khar photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/West_Zangla_Khar_Zanskar_Jun24_A7CR_01009.jpg/1280px-West_Zangla_Khar_Zanskar_Jun24_A7CR_01009.jpg",
+      "alt": "Zangla Khar photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/NW_Zangla_Khar_Zanskar_Jun24_A7CR_01004.jpg/1280px-NW_Zangla_Khar_Zanskar_Jun24_A7CR_01004.jpg",
+      "alt": "Zangla Khar photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Zangla Khar?",
+      "a": "The best time to visit Zangla Khar is Apr – Jun, Sep – Oct. Summers are 10–22°C and winters are -6–10°C."
+    },
+    {
+      "q": "How do I reach Zangla Khar?",
+      "a": "The nearest airport is Zangla Khar / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (203 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Zangla Khar?",
+      "a": "2 days are usually enough to cover the top attractions of Zangla Khar at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Zangla Khar?",
+      "a": "Stays in Zangla Khar start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Zangla Khar?",
+      "a": "The top attractions are Zangla."
+    }
+  ],
+  "seo": {
+    "title": "Zangla Khar Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Current day Zangla village has no monastery, only a nunnery. Plan your Zangla Khar trip: 1 places to visit, 4 stays from ₹900/night, best time (Apr – Jun, Sep – Oct) and routes.",
+    "canonical": "destination.html?slug=zangla-khar",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg/1280px-Plaque_Zangla_Khar_Zanskar_Ladakh_Jun24_A7CR_00977.jpg",
+    "keywords": [
+      "Zangla Khar travel guide",
+      "places to visit in Zangla Khar",
+      "Zangla Khar hotels",
+      "best time to visit Zangla Khar",
+      "how to reach Zangla Khar",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

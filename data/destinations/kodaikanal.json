@@ -1,0 +1,467 @@
+{
+  "slug": "kodaikanal",
+  "title": "Kodaikanal",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Palani Hills",
+  "type": "hill_station",
+  "badge": "Popular",
+  "tagline": "Kodaikanal — hill station of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kodai_Lake_Sunset.JPG/1280px-Kodai_Lake_Sunset.JPG",
+    "alt": "Kodaikanal, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Kodaikanal is a much-loved hill station in Tamil Nadu, known for star lake and pillar rocks.",
+    "description": "Kodaikanal, in Palani Hills, Tamil Nadu, is one of India’s favourite hill station. Visitors come for its star lake, pillar rocks, forests, with the best months being Sep – May.",
+    "features": [
+      "Star Lake",
+      "Pillar Rocks",
+      "Forests"
+    ],
+    "altitude": 2133,
+    "rating": 4.5,
+    "reviewCount": 29000,
+    "minPrice": 1300,
+    "distanceFromDelhi": 2450
+  },
+  "bestTime": {
+    "label": "Sep – May",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 10.2381,
+    "lng": 77.4892,
+    "tempSummer": "17–25°C",
+    "tempWinter": "8–20°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Madurai (Tamil Nadu)",
+        "city": "Madurai",
+        "state": "Tamil Nadu",
+        "distance": 96,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 77 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 173,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 138 km · road approx."
+      },
+      {
+        "from": "Mysuru (Karnataka)",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "distance": 309,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 247 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 395,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 316 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 665,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 532 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 883,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 706 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 970,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 776 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1003,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 802 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1250,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1000 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1544,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1235 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1628,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1302 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1643,
+        "byCar": "27–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1314 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1749,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1399 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1789,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1431 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 2056,
+        "byCar": "34–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1645 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kodaikanal / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Madurai Junction",
+      "distance": 78
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Kodai Lake",
+      "category": "scenic",
+      "distance": "Centre",
+      "entryFee": "₹30",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Star-shaped lake with pedal boating and cycle paths.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kodai_Lake_Sunset.JPG/1280px-Kodai_Lake_Sunset.JPG",
+        "alt": "Kodai Lake"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kodai_Lake_Sunset.JPG/1280px-Kodai_Lake_Sunset.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kodai_lake_at_night.jpg/1280px-Kodai_lake_at_night.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Kodai%2Cold-lake-mirrored_back.jpg"
+      ]
+    },
+    {
+      "name": "Pillar Rocks",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "₹30",
+      "timings": "Varies by season",
+      "duration": "1 hr",
+      "rating": 4.5,
+      "description": "Three giant granite pillars rising 120m, often cloud-wrapped.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pillar_Rocks_kodaikanal.jpg",
+        "alt": "Pillar Rocks"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pillar_Rocks_kodaikanal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/26_Kodaikanal_Pillar_Rocks.jpg/1280px-26_Kodaikanal_Pillar_Rocks.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pillar_Rocks_in_Kodaikanal.jpg/1280px-Pillar_Rocks_in_Kodaikanal.jpg"
+      ]
+    },
+    {
+      "name": "Coaker’s Walk",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "₹10",
+      "timings": "Varies by season",
+      "duration": "1 hr",
+      "rating": 4.3,
+      "description": "Cliff-edge promenade with valley views and a telescope house.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kodaikanal_Coaker%27s_Walk.JPG/1280px-Kodaikanal_Coaker%27s_Walk.JPG",
+        "alt": "Coaker’s Walk"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kodaikanal_Coaker%27s_Walk.JPG/1280px-Kodaikanal_Coaker%27s_Walk.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg/1280px-Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kodaikanal_coakers_walk_%281%29.jpg/1280px-Kodaikanal_coakers_walk_%281%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Kodai Lake & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kodai Lake",
+          "note": "Star-shaped lake with pedal boating and cycle paths."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Pillar Rocks",
+          "note": "Three giant granite pillars rising 120m, often cloud-wrapped."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Coaker’s Walk",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Coaker’s Walk",
+          "note": "Cliff-edge promenade with valley views and a telescope house."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Anifa Residency",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1300,
+      "priceMax": 2100,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Kodaikanal Stay"
+      }
+    },
+    {
+      "name": "Richwin Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2450,
+      "priceMax": 3500,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Kodaikanal"
+      }
+    },
+    {
+      "name": "Timer Lake Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3900,
+      "priceMax": 5850,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kodaikanal Grand Hotel"
+      }
+    },
+    {
+      "name": "Hamidia Lodge",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 7800,
+      "priceMax": 13000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sterling Kodaikanal"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Star Lake",
+    "Pillar Rocks",
+    "Forests"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kodai_Lake_Sunset.JPG/1280px-Kodai_Lake_Sunset.JPG",
+      "alt": "Kodaikanal photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kodai_lake_at_night.jpg/1280px-Kodai_lake_at_night.jpg",
+      "alt": "Kodaikanal photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pillar_Rocks_kodaikanal.jpg",
+      "alt": "Kodaikanal photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/26_Kodaikanal_Pillar_Rocks.jpg/1280px-26_Kodaikanal_Pillar_Rocks.jpg",
+      "alt": "Kodaikanal photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kodaikanal_Coaker%27s_Walk.JPG/1280px-Kodaikanal_Coaker%27s_Walk.JPG",
+      "alt": "Kodaikanal photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg/1280px-Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg",
+      "alt": "Kodaikanal photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Kodaikanal?",
+      "a": "The best time to visit Kodaikanal is Sep – May. Summers are 17–25°C and winters are 8–20°C."
+    },
+    {
+      "q": "How do I reach Kodaikanal?",
+      "a": "The nearest airport is Kodaikanal / nearest airport (30 km) and the nearest railway station is Madurai Junction (78 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Kodaikanal?",
+      "a": "2 days are usually enough to cover the top attractions of Kodaikanal at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Kodaikanal?",
+      "a": "Stays in Kodaikanal start from ₹1,300 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Kodaikanal?",
+      "a": "The top attractions are Kodai Lake, Pillar Rocks, Coaker’s Walk."
+    }
+  ],
+  "seo": {
+    "title": "Kodaikanal Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Kodaikanal is a much-loved hill station in Tamil Nadu, known for star lake and pillar rocks. Plan your Kodaikanal trip: 3 places to visit, 4 stays from ₹1300/night, best time (Sep – May) and routes.",
+    "canonical": "destination.html?slug=kodaikanal",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kodai_Lake_Sunset.JPG/1280px-Kodai_Lake_Sunset.JPG",
+    "keywords": [
+      "Kodaikanal travel guide",
+      "places to visit in Kodaikanal",
+      "Kodaikanal hotels",
+      "best time to visit Kodaikanal",
+      "how to reach Kodaikanal",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

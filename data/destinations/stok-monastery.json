@@ -1,0 +1,565 @@
+{
+  "slug": "stok-monastery",
+  "title": "Stok Monastery",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Stok Monastery — spiritual town of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stok_Gompa_-_Stupa.jpg/1280px-Stok_Gompa_-_Stupa.jpg",
+    "alt": "Stok Monastery, Ladakh"
+  },
+  "overview": {
+    "short": "Stok Monastery or Stok Gompa is a Buddhist monastery in Stok, Leh district, Ladakh, northern India, 15 kilometres south of Leh.",
+    "description": "Stok Monastery or Stok Gompa is a Buddhist monastery in Stok, Leh district, Ladakh, northern India, 15 kilometres south of Leh. It was founded by Lama Lhawang Lotus in the 14th Century and has a notable library including all 108 volumes of the Kangyur. A ritual dance-mask festival is held annually. Next to the monastery is a 71-foot (22 m) high seated Gautama Buddha statue and temple, constructed between 2012-2015 and consecrated by the 14th Dalai Lama on 8 August 2016.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 11680,
+    "minPrice": 900,
+    "distanceFromDelhi": 607
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 34.065694444,
+    "lng": 77.542222222,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 13,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 10 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 316,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 253 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 414,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 331 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 460,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 368 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 471,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 377 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 524,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 419 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 759,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 607 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 781,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 625 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 959,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 767 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1016,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 813 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1490,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1192 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1503,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1202 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1619,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1295 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1650,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1320 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1651,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1321 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Stok Monastery / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 269
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Stok",
+      "category": "nature",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Stok is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, in the Indus Valley 17 km southeast of the Leh town.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stok_Gompa_-_Stupa.jpg/1280px-Stok_Gompa_-_Stupa.jpg",
+        "alt": "Stok"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stok_Gompa_-_Stupa.jpg/1280px-Stok_Gompa_-_Stupa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/StokKangri.jpg/1280px-StokKangri.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Stok_Kangri_.jpg/1280px-Stok_Kangri_.jpg"
+      ]
+    },
+    {
+      "name": "Spituk",
+      "category": "scenic",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Spituk or Spaythub is a census town located in the Leh district of Ladakh, India. Spituk was originally known as \"Pethup\", meaning \"Exemplary\" in the local language.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "alt": "Spituk"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Spituk_Gompa_-_Door_Knob.jpg/1280px-Spituk_Gompa_-_Door_Knob.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Spituk_Gompa_View_-_2.jpg/1280px-Spituk_Gompa_View_-_2.jpg"
+      ]
+    },
+    {
+      "name": "Spituk Monastery",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Spituk Monastery, also known as Spituk Gompa or Pethup Gompa, is a Buddhist monastery in Spituk, Leh district, Ladakh, 8 km from Leh. The site of Spituk was blessed by the Arhat Nyimagung.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "alt": "Spituk Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Spituk_Gompa_-_Shrine.jpg/1280px-Spituk_Gompa_-_Shrine.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Spituk_Gompa_-_Door_Knob.jpg/1280px-Spituk_Gompa_-_Door_Knob.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Spituk_Gompa_View_-_4.jpg/1280px-Spituk_Gompa_View_-_4.jpg"
+      ]
+    },
+    {
+      "name": "Choglamsar",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Choglamsar, also spelt Chuglamsar, is a census town in the Leh district of Ladakh, India. It is located on the bank of the Indus River.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Stupas_in_Choglamsar%2C_Ladakh%2C_India_%282008%29.jpg/1280px-Stupas_in_Choglamsar%2C_Ladakh%2C_India_%282008%29.jpg",
+        "alt": "Choglamsar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Stupas_in_Choglamsar%2C_Ladakh%2C_India_%282008%29.jpg/1280px-Stupas_in_Choglamsar%2C_Ladakh%2C_India_%282008%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/A_road_in_Choglamsar%2C_Leh%2C_Ladakh%2C_India_%282014%29.jpg/1280px-A_road_in_Choglamsar%2C_Leh%2C_Ladakh%2C_India_%282014%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ladakh_%2814687162393%29.jpg/1280px-Ladakh_%2814687162393%29.jpg"
+      ]
+    },
+    {
+      "name": "Shey Monastery",
+      "category": "heritage",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Shey Monastery or Gompa or the Shey Palace are complex structures located on a hillock in Shey, 15 kilometres (9.3 mi) to the south of Leh in Ladakh, northern India on the Leh-Manali road. Shey was the summer capital of Ladakh in the past.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "alt": "Shey Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Shey_Palace%2C_Ladakh_03.jpg/1280px-Shey_Palace%2C_Ladakh_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Shey_Palace%2C_Ladakh_04.jpg/1280px-Shey_Palace%2C_Ladakh_04.jpg"
+      ]
+    },
+    {
+      "name": "Shey",
+      "category": "cultural",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Shey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, 15 km from Leh towards Hemis.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Shey_Palace_sign%2C_Ladakh.jpg/1280px-Shey_Palace_sign%2C_Ladakh.jpg",
+        "alt": "Shey"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Shey_Palace_sign%2C_Ladakh.jpg/1280px-Shey_Palace_sign%2C_Ladakh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Shey_Stupa_Field_-_1.jpg/1280px-Shey_Stupa_Field_-_1.jpg"
+      ]
+    },
+    {
+      "name": "Chuchot Gongma",
+      "category": "cultural",
+      "distance": "10 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Chuchot Gongma is a village-group and the headquarter of Chuchot block in the Leh district of Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ladakh%2C_India_%2814693639112%29.jpg/1280px-Ladakh%2C_India_%2814693639112%29.jpg",
+        "alt": "Chuchot Gongma"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ladakh%2C_India_%2814693639112%29.jpg/1280px-Ladakh%2C_India_%2814693639112%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ladakh_%2814480815337%29.jpg/1280px-Ladakh_%2814480815337%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Stok & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Stok",
+          "note": "Stok is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, in the Indus Valley 17 km southeast of the Leh town."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Spituk",
+          "note": "Spituk or Spaythub is a census town located in the Leh district of Ladakh, India. Spituk was originally known as \"Pethup\", meaning \"Exemplary\" in the local language."
+        },
+        {
+          "time": "Evening",
+          "activity": "Spituk Monastery",
+          "note": "Spituk Monastery, also known as Spituk Gompa or Pethup Gompa, is a Buddhist monastery in Spituk, Leh district, Ladakh, 8 km from Leh. The site of Spituk was blessed by the Arhat Nyimagung."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Choglamsar & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Choglamsar",
+          "note": "Choglamsar, also spelt Chuglamsar, is a census town in the Leh district of Ladakh, India. It is located on the bank of the Indus River."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Shey Monastery",
+          "note": "Shey Monastery or Gompa or the Shey Palace are complex structures located on a hillock in Shey, 15 kilometres (9.3 mi) to the south of Leh in Ladakh, northern India on the Leh-Manali road. Shey was the summer capital of Ladakh in the past."
+        },
+        {
+          "time": "Evening",
+          "activity": "Shey",
+          "note": "Shey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, 15 km from Leh towards Hemis."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Chuchot Gongma",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Chuchot Gongma",
+          "note": "Chuchot Gongma is a village-group and the headquarter of Chuchot block in the Leh district of Ladakh, India. It is located in the Leh tehsil."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Mahey",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Stok Monastery Stay"
+      }
+    },
+    {
+      "name": "Hill Town",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Stok Monastery"
+      }
+    },
+    {
+      "name": "Haldupa Guest House",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Stok Monastery Grand Hotel"
+      }
+    },
+    {
+      "name": "Gotal",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Stok Monastery"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Nature walks",
+    "Sightseeing",
+    "Spiritual",
+    "Heritage walks",
+    "Cultural",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stok_Gompa_-_Stupa.jpg/1280px-Stok_Gompa_-_Stupa.jpg",
+      "alt": "Stok Monastery photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Stok_Monastery_Ladakh%2C_India.jpg/1280px-Stok_Monastery_Ladakh%2C_India.jpg",
+      "alt": "Stok Monastery photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stok_Gompa_-_Prayer_Hall_Entrance.jpg/1280px-Stok_Gompa_-_Prayer_Hall_Entrance.jpg",
+      "alt": "Stok Monastery photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Stok_Palace%2C_Ladakh_06.jpg/1280px-Stok_Palace%2C_Ladakh_06.jpg",
+      "alt": "Stok Monastery photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Stok_Palace%2C_Ladakh_02.jpg/1280px-Stok_Palace%2C_Ladakh_02.jpg",
+      "alt": "Stok Monastery photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Stok Monastery?",
+      "a": "The best time to visit Stok Monastery is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Stok Monastery?",
+      "a": "The nearest airport is Stok Monastery / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (269 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Stok Monastery?",
+      "a": "3 days are usually enough to cover the top attractions of Stok Monastery at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Stok Monastery?",
+      "a": "Stays in Stok Monastery start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Stok Monastery?",
+      "a": "The top attractions are Stok, Spituk, Spituk Monastery, Choglamsar, Shey Monastery."
+    }
+  ],
+  "seo": {
+    "title": "Stok Monastery Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Stok Monastery or Stok Gompa is a Buddhist monastery in Stok, Leh district, Ladakh, northern India, 15 kilometres south of Leh. Plan your Stok Monastery trip: 7 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=stok-monastery",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stok_Gompa_-_Stupa.jpg/1280px-Stok_Gompa_-_Stupa.jpg",
+    "keywords": [
+      "Stok Monastery travel guide",
+      "places to visit in Stok Monastery",
+      "Stok Monastery hotels",
+      "best time to visit Stok Monastery",
+      "how to reach Stok Monastery",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

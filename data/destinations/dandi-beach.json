@@ -1,0 +1,461 @@
+{
+  "slug": "dandi-beach",
+  "title": "Dandi Beach",
+  "state": "Gujarat",
+  "country": "India",
+  "region": "Gujarat",
+  "type": "beach",
+  "badge": "Popular",
+  "tagline": "Dandi Beach — beach town of Gujarat",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dandi_Beach.jpg/1280px-Dandi_Beach.jpg",
+    "alt": "Dandi Beach, Gujarat"
+  },
+  "overview": {
+    "short": "Dandi Beach is one of the prominent beaches located in Dandi village, Gujarat, India.",
+    "description": "Dandi Beach is one of the prominent beaches located in Dandi village, Gujarat, India. Dandi beach is one of the cleanest beaches in the Arabian Sea. Dandi Beach is historically prominent as Mahatma Gandhi led the salt sathyagraha from Sabarmati Ashram (Ahmedabad) to Dandi. This is the beach where Mahatma Gandhi broke the salt tax law of the British after the Salt March.",
+    "features": [
+      "Beaches",
+      "Seafood",
+      "Water Sports",
+      "Sunsets"
+    ],
+    "altitude": null,
+    "rating": 4.7,
+    "reviewCount": 19275,
+    "minPrice": 1200,
+    "distanceFromDelhi": 968
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 20.8761,
+    "lng": 72.8031,
+    "tempSummer": "28–44°C",
+    "tempWinter": "8–25°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 41,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 33 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 66,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 53 km · road approx."
+      },
+      {
+        "from": "Mumbai (Maharashtra)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "distance": 250,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 200 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 470,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 376 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 529,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 423 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 761,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 609 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 890,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 712 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1096,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 877 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 1140,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 912 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1146,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 917 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1181,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 945 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1198,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 958 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1210,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 968 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1434,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1147 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1458,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1166 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Dandi Beach / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Surat Railway Station",
+      "distance": 37
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Dandi, Navsari",
+      "category": "cultural",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Dandi is a village in the Jalalpore taluka, Navsari District, Gujarat, India. It is located on the coast of the Arabian Sea near the city of Navsari.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Dargah_of_Mai_Saheba_in_Dandi%2C_near_Navsari%2C_South_Gujarat_-_panoramio.jpg/1280px-Dargah_of_Mai_Saheba_in_Dandi%2C_near_Navsari%2C_South_Gujarat_-_panoramio.jpg",
+        "alt": "Dandi, Navsari"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Dargah_of_Mai_Saheba_in_Dandi%2C_near_Navsari%2C_South_Gujarat_-_panoramio.jpg/1280px-Dargah_of_Mai_Saheba_in_Dandi%2C_near_Navsari%2C_South_Gujarat_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Dandi_Salt_Memorial_1.jpg/1280px-Dandi_Salt_Memorial_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Gandhiji_at_Dandi_Salt_Memorial.jpg/1280px-Gandhiji_at_Dandi_Salt_Memorial.jpg"
+      ]
+    },
+    {
+      "name": "National Salt Satyagraha Memorial",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The National Salt Satyagraha Memorial or Dandi Memorial is a memorial in Dandi, Gujarat, India, that honors the activists and participants of the Salt Satyagraha, an act of nonviolent civil disobedience in colonial India which was led by Mahatma Gandhi in 1930. The memorial is spread over a 15 acres (61,000 m2) and is located in the coastal town of Dandi, where the Salt March ended on 5 April 1930 and the British salt monopoly was broken by producing salt by boiling sea water.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/National_Salt_Satyagraha_Memorial_50.jpg/1280px-National_Salt_Satyagraha_Memorial_50.jpg",
+        "alt": "National Salt Satyagraha Memorial"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/National_Salt_Satyagraha_Memorial_50.jpg/1280px-National_Salt_Satyagraha_Memorial_50.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/National_Salt_Satyagraha_Memorial_49.jpg/1280px-National_Salt_Satyagraha_Memorial_49.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/National_Salt_Satyagraha_Memorial_03.jpg/1280px-National_Salt_Satyagraha_Memorial_03.jpg"
+      ]
+    },
+    {
+      "name": "Purna River (Gujarat)",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Purna is one of the major rivers in the Indian state of Gujarat, though its source lies at the hill of Pipalner in the Sahyadri range in Maharashtra. It then passes through three districts in Gujarat, including Dang, Surat and Navsari.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Purna_River%2C_Gujarat.jpg/1280px-Purna_River%2C_Gujarat.jpg",
+        "alt": "Purna River (Gujarat)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Purna_River%2C_Gujarat.jpg/1280px-Purna_River%2C_Gujarat.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Purna_river_Dang_forest_Gujarat.jpg/1280px-Purna_river_Dang_forest_Gujarat.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Purna_River_view_from_Campsite.jpg/1280px-Purna_River_view_from_Campsite.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Dandi, Navsari & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Dandi, Navsari",
+          "note": "Dandi is a village in the Jalalpore taluka, Navsari District, Gujarat, India. It is located on the coast of the Arabian Sea near the city of Navsari."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "National Salt Satyagraha Memorial",
+          "note": "The National Salt Satyagraha Memorial or Dandi Memorial is a memorial in Dandi, Gujarat, India, that honors the activists and participants of the Salt Satyagraha, an act of nonviolent civil disobedience in colonial India which was led by Mahatma Gandhi in 1930. The memorial is spread over a 15 acres (61,000 m2) and is located in the coastal town of Dandi, where the Salt March ended on 5 April 1930 and the British salt monopoly was broken by producing salt by boiling sea water."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Purna River (Gujarat)",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Purna River (Gujarat)",
+          "note": "Purna is one of the major rivers in the Indian state of Gujarat, though its source lies at the hill of Pipalner in the Sahyadri range in Maharashtra. It then passes through three districts in Gujarat, including Dang, Surat and Navsari."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Paras",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 1900,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Dandi Beach Stay"
+      }
+    },
+    {
+      "name": "UPCOMIN",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2300,
+      "priceMax": 3250,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Dandi Beach"
+      }
+    },
+    {
+      "name": "Shakti",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3600,
+      "priceMax": 5400,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Dandi Beach Grand Hotel"
+      }
+    },
+    {
+      "name": "Boys Hostel",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 7200,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Dandi Beach"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Sightseeing",
+    "Nature walks",
+    "Beaches",
+    "Seafood",
+    "Water Sports",
+    "Sunsets"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dandi_Beach.jpg/1280px-Dandi_Beach.jpg",
+      "alt": "Dandi Beach photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dandi_beach.jpg/1280px-Dandi_beach.jpg",
+      "alt": "Dandi Beach photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Panorama_%2CDandi_Beach_-_panoramio.jpg/1280px-Panorama_%2CDandi_Beach_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Panorama_Dandi_beach_-_panoramio.jpg/1280px-Panorama_Dandi_beach_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Dandi_Beach_RETRO_-_panoramio.jpg/1280px-Dandi_Beach_RETRO_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Dandi Beach?",
+      "a": "The best time to visit Dandi Beach is Oct – Mar. Summers are 28–44°C and winters are 8–25°C."
+    },
+    {
+      "q": "How do I reach Dandi Beach?",
+      "a": "The nearest airport is Dandi Beach / nearest airport (30 km) and the nearest railway station is Surat Railway Station (37 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Dandi Beach?",
+      "a": "2 days are usually enough to cover the top attractions of Dandi Beach at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Dandi Beach?",
+      "a": "Stays in Dandi Beach start from ₹1,200 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Dandi Beach?",
+      "a": "The top attractions are Dandi, Navsari, National Salt Satyagraha Memorial, Purna River (Gujarat)."
+    }
+  ],
+  "seo": {
+    "title": "Dandi Beach Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Dandi Beach is one of the prominent beaches located in Dandi village, Gujarat, India. Plan your Dandi Beach trip: 3 places to visit, 4 stays from ₹1200/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=dandi-beach",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dandi_Beach.jpg/1280px-Dandi_Beach.jpg",
+    "keywords": [
+      "Dandi Beach travel guide",
+      "places to visit in Dandi Beach",
+      "Dandi Beach hotels",
+      "best time to visit Dandi Beach",
+      "how to reach Dandi Beach",
+      "Gujarat tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

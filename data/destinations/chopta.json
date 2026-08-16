@@ -1,0 +1,461 @@
+{
+  "slug": "chopta",
+  "title": "Chopta",
+  "state": "Uttarakhand",
+  "country": "India",
+  "region": "Garhwal",
+  "type": "hill_station",
+  "badge": "Popular",
+  "tagline": "Chopta — hill station of Uttarakhand",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Way_to_Tungnath_Temple_%2CChopta.jpg/1280px-Way_to_Tungnath_Temple_%2CChopta.jpg",
+    "alt": "Chopta, Uttarakhand"
+  },
+  "overview": {
+    "short": "Chopta is a much-loved hill station in Uttarakhand, known for mini switzerland and tungnath.",
+    "description": "Chopta, in Garhwal, Uttarakhand, is one of India’s favourite hill station. Visitors come for its mini switzerland, tungnath, meadows, with the best months being Apr – Jun, Sep – Nov.",
+    "features": [
+      "Mini Switzerland",
+      "Tungnath",
+      "Meadows"
+    ],
+    "altitude": 2680,
+    "rating": 4.6,
+    "reviewCount": 7000,
+    "minPrice": 1200,
+    "distanceFromDelhi": 420
+  },
+  "bestTime": {
+    "label": "Apr – Jun, Sep – Nov",
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 30.49,
+    "lng": 79.15,
+    "tempSummer": "10–20°C",
+    "tempWinter": "-2–12°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 136,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 109 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 251,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 201 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 285,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 228 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 351,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 281 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 381,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 305 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 481,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 385 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 534,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 427 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 541,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 433 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 596,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 477 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 645,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 516 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1001,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 801 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1028,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 822 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1231,
+        "byCar": "21–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 985 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1243,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 994 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1253,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1002 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Chopta / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Dehradun Railway Station",
+      "distance": 109
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Tungnath Temple",
+      "category": "spiritual",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.7,
+      "description": "Highest Shiva temple in the world at 3,680m.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Way_to_Tungnath_Temple_%2CChopta.jpg/1280px-Way_to_Tungnath_Temple_%2CChopta.jpg",
+        "alt": "Tungnath Temple"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Way_to_Tungnath_Temple_%2CChopta.jpg/1280px-Way_to_Tungnath_Temple_%2CChopta.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Himalayan_Peaks_from_Tungnath.jpg/1280px-Himalayan_Peaks_from_Tungnath.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tungnath_temple_one_of_thepanch_kedar.jpg/1280px-Tungnath_temple_one_of_thepanch_kedar.jpg"
+      ]
+    },
+    {
+      "name": "Chandrashila Summit",
+      "category": "trekking",
+      "distance": "5 km",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.7,
+      "description": "Trek peak with 360° Himalayan views incl. Nanda Devi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg/1280px-Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg",
+        "alt": "Chandrashila Summit"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg/1280px-Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tungnath%2C_highest_Shiva_temple_in_the_world.jpg/1280px-Tungnath%2C_highest_Shiva_temple_in_the_world.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chandrashila_Panorama.jpg/1280px-Chandrashila_Panorama.jpg"
+      ]
+    },
+    {
+      "name": "Deoria Tal",
+      "category": "trekking",
+      "distance": "15 km",
+      "entryFee": "Free",
+      "timings": "Varies by season",
+      "duration": "Half day",
+      "rating": 4.5,
+      "description": "Emerald lake reflecting the Chaukhamba peaks.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sari_Village_%283%29_%2814099762286%29.jpg",
+        "alt": "Deoria Tal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sari_Village_%283%29_%2814099762286%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sari_Village_%283%29_%2814099762286%29.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Tungnath Temple & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Tungnath Temple",
+          "note": "Highest Shiva temple in the world at 3,680m."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chandrashila Summit",
+          "note": "Trek peak with 360° Himalayan views incl. Nanda Devi."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Deoria Tal",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Deoria Tal",
+          "note": "Emerald lake reflecting the Chaukhamba peaks."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Rhodendron forest - Mud hut @ Chopta",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 1900,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Chopta Stay"
+      }
+    },
+    {
+      "name": "Hotel Madhuganga",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2300,
+      "priceMax": 3250,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Chopta"
+      }
+    },
+    {
+      "name": "Chopta Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3600,
+      "priceMax": 5400,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chopta Grand Hotel"
+      }
+    },
+    {
+      "name": "Sterling Chopta",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 7200,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Sterling Chopta"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Trekking",
+    "Mini Switzerland",
+    "Tungnath",
+    "Meadows"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Way_to_Tungnath_Temple_%2CChopta.jpg/1280px-Way_to_Tungnath_Temple_%2CChopta.jpg",
+      "alt": "Chopta photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tungnath_temple_one_of_thepanch_kedar.jpg/1280px-Tungnath_temple_one_of_thepanch_kedar.jpg",
+      "alt": "Chopta photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Higest_Shiv_Temple_In_The_World_Tungnath_Temple_In_Chopta_Uttrakhand_%28242691741%29.jpeg/1280px-Higest_Shiv_Temple_In_The_World_Tungnath_Temple_In_Chopta_Uttrakhand_%28242691741%29.jpeg",
+      "alt": "Chopta photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tungnath%2C_highest_Shiva_temple_in_the_world.jpg/1280px-Tungnath%2C_highest_Shiva_temple_in_the_world.jpg",
+      "alt": "Chopta photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tungnath_mahadev.jpg",
+      "alt": "Chopta photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tungnath_Temple_Uttarakhand.jpg/1280px-Tungnath_Temple_Uttarakhand.jpg",
+      "alt": "Chopta photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Chopta?",
+      "a": "The best time to visit Chopta is Apr – Jun, Sep – Nov. Summers are 10–20°C and winters are -2–12°C."
+    },
+    {
+      "q": "How do I reach Chopta?",
+      "a": "The nearest airport is Chopta / nearest airport (30 km) and the nearest railway station is Dehradun Railway Station (109 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Chopta?",
+      "a": "2 days are usually enough to cover the top attractions of Chopta at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Chopta?",
+      "a": "Stays in Chopta start from ₹1,200 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Chopta?",
+      "a": "The top attractions are Tungnath Temple, Chandrashila Summit, Deoria Tal."
+    }
+  ],
+  "seo": {
+    "title": "Chopta Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Chopta is a much-loved hill station in Uttarakhand, known for mini switzerland and tungnath. Plan your Chopta trip: 3 places to visit, 4 stays from ₹1200/night, best time (Apr – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=chopta",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Way_to_Tungnath_Temple_%2CChopta.jpg/1280px-Way_to_Tungnath_Temple_%2CChopta.jpg",
+    "keywords": [
+      "Chopta travel guide",
+      "places to visit in Chopta",
+      "Chopta hotels",
+      "best time to visit Chopta",
+      "how to reach Chopta",
+      "Uttarakhand tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 2
+}

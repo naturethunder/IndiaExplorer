@@ -1,0 +1,512 @@
+{
+  "slug": "havelock-island",
+  "title": "Havelock Island (Swaraj Dweep)",
+  "state": "Andaman & Nicobar",
+  "country": "India",
+  "region": "Ritchie's Archipelago",
+  "type": "beach",
+  "badge": "Top Asian Beach",
+  "tagline": "Home to world-renowned Radhanagar Beach and coral reefs",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1280&q=80",
+    "alt": "Havelock Island (Swaraj Dweep), Andaman & Nicobar"
+  },
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1280&q=80",
+    "alt": "Havelock Island (Swaraj Dweep), Andaman & Nicobar"
+  },
+  "overview": {
+    "short": "Home to Asia's world-famous Radhanagar Beach, turquoise diving spots and mahua forests.",
+    "description": "Havelock Island (Swaraj Dweep) is the premier destination in the Andaman Islands, celebrated for Radhanagar Beach, scuba diving spots, elephant beach sea-walking, and mangrove kayaking.",
+    "features": [
+      "Radhanagar Sunset",
+      "Elephant Beach Snorkeling",
+      "Scuba Diving",
+      "Mangrove Kayaking"
+    ],
+    "rating": 4.9,
+    "reviewCount": 6890,
+    "minPrice": 3500,
+    "distanceFromDelhi": 2480
+  },
+  "bestTime": {
+    "label": "Oct – Apr",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 11.9761,
+    "lng": 92.9876,
+    "tempSummer": "24–32°C",
+    "tempWinter": "22–30°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 60,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 48 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1500,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1200 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1534,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1227 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1595,
+        "byCar": "27–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1276 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1634,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1307 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1663,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1330 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1733,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1386 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 1789,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1431 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1793,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1434 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1878,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1502 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1896,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1517 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 1910,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1528 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1976,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1581 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1986,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1589 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 2089,
+        "byCar": "35–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1671 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 2094,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1675 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2101,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1681 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 2155,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1724 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 2209,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1767 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 2246,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1797 km · road approx."
+      },
+      {
+        "from": "Thiruvananthapuram (Kerala)",
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "distance": 2246,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1797 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 2273,
+        "byCar": "38–51 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1818 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 2588,
+        "byCar": "43–58 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2070 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 2631,
+        "byCar": "44–58 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2105 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 2780,
+        "byCar": "46–62 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2224 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 2930,
+        "byCar": "49–65 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2344 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 2970,
+        "byCar": "50–66 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2376 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 3058,
+        "byCar": "51–68 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2446 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 3088,
+        "byCar": "51–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2470 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 3089,
+        "byCar": "51–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2471 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 3195,
+        "byCar": "53–71 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2556 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 3338,
+        "byCar": "56–74 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2670 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 3345,
+        "byCar": "56–74 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2676 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 3584,
+        "byCar": "60–80 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2867 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 3648,
+        "byCar": "61–81 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2918 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 3695,
+        "byCar": "62–82 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2956 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Veer Savarkar Airport, Port Blair (IXZ)",
+      "distance": 57
+    },
+    "nearestRailway": {
+      "name": "Chennai Central (via Sea Route)",
+      "distance": 1350
+    },
+    "roadNote": "Inter-island movement via high-speed ferries. Rent scooty on the island."
+  },
+  "topPlaces": [
+    {
+      "name": "Radhanagar Beach (Beach No. 7)",
+      "category": "beach",
+      "distance": "10 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "3–4 hrs",
+      "rating": 4.9,
+      "description": "Voted among Asia's best beaches, famous for soft white sand and breathtaking sunsets.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Radhanagar Beach (Beach No. 7)"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Island Vinnie's Tropical Cabanas",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.9,
+      "reviews": 820,
+      "amenities": [
+        "Rainforest Setting",
+        "Spa",
+        "Restaurant"
+      ],
+      "tags": [
+        "Eco Luxury",
+        "Near Radhanagar"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Barefoot at Havelock"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 1"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 2"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 3"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 4"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 5"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Havelock Island (Swaraj Dweep) photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How to reach Havelock Island?",
+      "a": "Take a flight to Port Blair, then a 1.5-hour high-speed ferry (Makruzz or Green Ocean) to Havelock."
+    }
+  ],
+  "seo": {
+    "title": "Havelock Island Travel Guide 2026 — Radhanagar Beach, Hotels, Ferries | IndiaExplore",
+    "description": "Complete Havelock Island guide: Radhanagar Beach, scuba diving spots, luxury resorts and ferry timings from Port Blair.",
+    "canonical": "destination.html?slug=havelock-island",
+    "ogImage": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Havelock Island Andaman",
+      "Radhanagar Beach",
+      "Port Blair to Havelock ferry"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

@@ -1,0 +1,405 @@
+{
+  "slug": "devgad-fort",
+  "title": "Devgad Fort",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Devgad Fort — heritage city of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Devgad_fort.JPG/1280px-Devgad_fort.JPG",
+    "alt": "Devgad Fort, Maharashtra"
+  },
+  "overview": {
+    "short": "Devgad Fort, also called Janjira Devgad Fort, is a fort located 5 km from Devgad town, in Sindhudurg district, of Maharashtra.",
+    "description": "Devgad Fort, also called Janjira Devgad Fort, is a fort located 5 km from Devgad town, in Sindhudurg district, of Maharashtra. This fort is an important fort in Sindhudurg district. The fort is surrounded by sea from three side and to the south it is attached to the land.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 6847,
+    "minPrice": 900,
+    "distanceFromDelhi": 1415
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 16.387139,
+    "lng": 73.37225,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 139,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 111 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 304,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 243 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 523,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 418 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 563,
+        "byCar": "9–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 450 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 669,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 535 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 694,
+        "byCar": "12–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 555 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 816,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 653 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 890,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 712 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 939,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 751 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 970,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 776 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 979,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 783 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1065,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 852 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1140,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 912 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1279,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1023 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1614,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1291 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Devgad Fort / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Vasco da Gama (Goa)",
+      "distance": 120
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Pural",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Pural is a town in Devgad Taluka in Sindhudurg district of the state of Maharashtra, India. It is a small village on the west coast of Maharashtra.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Great_India%27s_Maharashtra_Rangoli_stone.jpg/1280px-The_Great_India%27s_Maharashtra_Rangoli_stone.jpg",
+        "alt": "Pural"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Great_India%27s_Maharashtra_Rangoli_stone.jpg/1280px-The_Great_India%27s_Maharashtra_Rangoli_stone.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pure_Ghee-Homemade-Maharashtra.jpg/1280px-Pure_Ghee-Homemade-Maharashtra.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Dry_fruit_shake-Pure_Milk_%26_Snacks_Center-Mumbai%2C_Maharashtra-007.jpg/1280px-Dry_fruit_shake-Pure_Milk_%26_Snacks_Center-Mumbai%2C_Maharashtra-007.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Pural",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Pural",
+          "note": "Pural is a town in Devgad Taluka in Sindhudurg district of the state of Maharashtra, India. It is a small village on the west coast of Maharashtra."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Diamond",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Story_of_the_Diamond_Necklace%2C_in_Two_Volumes%2C_Vol._I_%28IA_dli.granth.74250%29.pdf/page1-500px-The_Story_of_the_Diamond_Necklace%2C_in_Two_Volumes%2C_Vol._I_%28IA_dli.granth.74250%29.pdf.jpg",
+        "alt": "Diamond"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Devgad Fort",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Devgad Fort"
+      }
+    },
+    {
+      "name": "Devgad Fort Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Devgad Fort Grand Hotel"
+      }
+    },
+    {
+      "name": "Marriott Devgad Fort",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Devgad Fort"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Devgad_fort.JPG/1280px-Devgad_fort.JPG",
+      "alt": "Devgad Fort photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Durga_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_11.jpg/1280px-Durga_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_11.jpg",
+      "alt": "Devgad Fort photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg/1280px-Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg",
+      "alt": "Devgad Fort photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kala_Pahad_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_01.jpg/1280px-Kala_Pahad_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_01.jpg",
+      "alt": "Devgad Fort photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_37.jpg/1280px-Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_37.jpg",
+      "alt": "Devgad Fort photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Devgad Fort?",
+      "a": "The best time to visit Devgad Fort is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Devgad Fort?",
+      "a": "The nearest airport is Devgad Fort / nearest airport (30 km) and the nearest railway station is Vasco da Gama (Goa) (120 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Devgad Fort?",
+      "a": "2 days are usually enough to cover the top attractions of Devgad Fort at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Devgad Fort?",
+      "a": "Stays in Devgad Fort start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Devgad Fort?",
+      "a": "The top attractions are Pural."
+    }
+  ],
+  "seo": {
+    "title": "Devgad Fort Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Devgad Fort, also called Janjira Devgad Fort, is a fort located 5 km from Devgad town, in Sindhudurg district, of Maharashtra. Plan your Devgad Fort trip: 1 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=devgad-fort",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Devgad_fort.JPG/1280px-Devgad_fort.JPG",
+    "keywords": [
+      "Devgad Fort travel guide",
+      "places to visit in Devgad Fort",
+      "Devgad Fort hotels",
+      "best time to visit Devgad Fort",
+      "how to reach Devgad Fort",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

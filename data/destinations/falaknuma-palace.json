@@ -1,0 +1,578 @@
+{
+  "slug": "falaknuma-palace",
+  "title": "Falaknuma Palace",
+  "state": "Telangana",
+  "country": "India",
+  "region": "Telangana",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Falaknuma Palace — heritage city of Telangana",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Falaknuma_Palace_01.jpg/1280px-Falaknuma_Palace_01.jpg",
+    "alt": "Falaknuma Palace, Telangana"
+  },
+  "overview": {
+    "short": "Falaknuma Palace is a palace and a luxury hotel in Hyderabad, Telangana, India.",
+    "description": "Falaknuma Palace is a palace and a luxury hotel in Hyderabad, Telangana, India. It originally belonged to the Paigah family, and was later owned by the Nizam of Hyderabad. It is on a hillock and covers a 13-hectare (32-acre) area in Falaknuma, 5 kilometres (3.1 mi) from Charminar. Built by Nawab Sir Viqar-ul-Umra, Prime Minister of Hyderabad state and the uncle and brother-in-law of the sixth Nizam.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": 609,
+    "rating": 4.4,
+    "reviewCount": 2455,
+    "minPrice": 900,
+    "distanceFromDelhi": 1261
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 17.330955,
+    "lng": 78.467504,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 8,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 6 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 311,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 249 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 536,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 429 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 618,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 494 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 638,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 510 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 669,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 535 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 685,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 548 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 770,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 616 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 823,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 658 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 855,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 684 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 911,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 729 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1051,
+        "byCar": "18–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 841 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1070,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 856 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1183,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 946 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1221,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 977 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Falaknuma Palace / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Kacheguda (Hyderabad)",
+      "distance": 7
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Jahanuma",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Jahanuma is a neighbourhood in Hyderabad, Telangana. A light cavalry unit of the Paigahs known as Jahanuma Lancers were once located here.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jahnuma_Palace%2C_Hyderabad.jpg",
+        "alt": "Jahanuma"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jahnuma_Palace%2C_Hyderabad.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Jama_Masjid_Delhi_%282392307929%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wards_of_Hyderabad_2011.pdf/page1-1280px-Wards_of_Hyderabad_2011.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Uppuguda",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Uppuguda is a part of the Old City, Hyderabad, Hyderabad, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Armenian_cemetery_in_Hyderabad.jpg/1280px-Armenian_cemetery_in_Hyderabad.jpg",
+        "alt": "Uppuguda"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Armenian_cemetery_in_Hyderabad.jpg/1280px-Armenian_cemetery_in_Hyderabad.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wards_of_Hyderabad_2011.pdf/page1-1280px-Wards_of_Hyderabad_2011.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Aliabad, Hyderabad",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Aliabad is one of the old neighbourhoods in Hyderabad, India. It is part of the old city of Hyderabad.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Aliabad_Tower2012-01-17.jpg",
+        "alt": "Aliabad, Hyderabad"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Aliabad_Tower2012-01-17.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Awesome_surring_of_Aliabad_-_Rakaposhi.jpg/1280px-Awesome_surring_of_Aliabad_-_Rakaposhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Aliabad_Tower2021_44.jpg/1280px-Aliabad_Tower2021_44.jpg"
+      ]
+    },
+    {
+      "name": "Shah Ghouse Café",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Shah Ghouse Café is a popular restaurant chain specializing in Hyderabadi cuisine, located in Hyderabad, Telangana, India. The café is widely celebrated for its biryani, Hyderabadi haleem, and other traditional dishes.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Haleemjoint.jpg/1280px-Haleemjoint.jpg",
+        "alt": "Shah Ghouse Café"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Haleemjoint.jpg/1280px-Haleemjoint.jpg"
+      ]
+    },
+    {
+      "name": "Chandrayan Gutta",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Chandrayana Gutta is a neighbourhood in Old City, Hyderabad, Telangana, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/ISS066-E-76189_-_View_of_Earth.jpg/1280px-ISS066-E-76189_-_View_of_Earth.jpg",
+        "alt": "Chandrayan Gutta"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/ISS066-E-76189_-_View_of_Earth.jpg/1280px-ISS066-E-76189_-_View_of_Earth.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/The_election_results_are_being_updated_at_a_Chandrayangutta_Assembly_Segment_Counting_Centre%2C_in_Hyderabad_on_May_16%2C_2009.jpg/1280px-The_election_results_are_being_updated_at_a_Chandrayangutta_Assembly_Segment_Counting_Centre%2C_in_Hyderabad_on_May_16%2C_2009.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Chandrayanagutta.jpg/1280px-Chandrayanagutta.jpg"
+      ]
+    },
+    {
+      "name": "Hyderabad International Film Festival",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "The Hyderabad International Film Festival (HIFF) is a film festival in Hyderabad, India. The first Hyderabad International Film Festival (HIFF) was held in Hyderabad, Andhra Pradesh, India in 2007.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/The_Minister_of_Cinematography%2C_Telangana%2C_Shri_Talasani_Srinivasa_Yadav_lighting_the_lamp_at_the_inauguration_of_the_20th_International_Children%E2%80%99s_Film_Festival%2C_in_Hyderabad.jpg",
+        "alt": "Hyderabad International Film Festival"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/The_Minister_of_Cinematography%2C_Telangana%2C_Shri_Talasani_Srinivasa_Yadav_lighting_the_lamp_at_the_inauguration_of_the_20th_International_Children%E2%80%99s_Film_Festival%2C_in_Hyderabad.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/The_Minister_of_Cinematography%2C_Telangana%2C_Shri_Talasani_Srinivasa_Yadav_inaugurating_the_20th_International_Children%E2%80%99s_Film_Festival_of_India_%28ICFFI%29_Media_Centre_in_Prasad_IMAX_theatre%2C_in_Hyderabad_on_November_07%2C_2017.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Talasani_Srinivasa_Yadav_addressing_a_Press_Conference_after_inaugurating_the_20th_International_Children%E2%80%99s_Film_Festival_of_India_%28ICFFI%29_Media_Centre_in_Prasad_IMAX_theatre%2C_in_Hyderabad.jpg/1280px-thumbnail.jpg"
+      ]
+    },
+    {
+      "name": "Shah-Ali-Banda",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Shah Ali Banda is a neighbourhood in Hyderabad, India. It forms a part of the Old City, Hyderabad in an area located close to Charminar.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Silver_30_abbasi_of_Shah_Sultan_Husayn%2C_minted_in_Isfahan%2C_dated_1709-1710.jpg/1280px-Silver_30_abbasi_of_Shah_Sultan_Husayn%2C_minted_in_Isfahan%2C_dated_1709-1710.jpg",
+        "alt": "Shah-Ali-Banda"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Silver_30_abbasi_of_Shah_Sultan_Husayn%2C_minted_in_Isfahan%2C_dated_1709-1710.jpg/1280px-Silver_30_abbasi_of_Shah_Sultan_Husayn%2C_minted_in_Isfahan%2C_dated_1709-1710.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1c/Raja_Rai_Rayan_Devdi_Gadiya_%28Clock_Tower%29_in_Shalibanda.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e5/Chandu_Lal_Baradari_1.jpg"
+      ]
+    },
+    {
+      "name": "Kings Colony, Shastripuram",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Shastripuram Housing Colony is an area in the Ranga Reddy District of Telangana, India. It comes under Rajendra Nagar Circle 6 Government of Telangana.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kings Colony, Shastripuram"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Jahanuma & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Jahanuma",
+          "note": "Jahanuma is a neighbourhood in Hyderabad, Telangana. A light cavalry unit of the Paigahs known as Jahanuma Lancers were once located here."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Uppuguda",
+          "note": "Uppuguda is a part of the Old City, Hyderabad, Hyderabad, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Aliabad, Hyderabad",
+          "note": "Aliabad is one of the old neighbourhoods in Hyderabad, India. It is part of the old city of Hyderabad."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Shah Ghouse Café & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shah Ghouse Café",
+          "note": "Shah Ghouse Café is a popular restaurant chain specializing in Hyderabadi cuisine, located in Hyderabad, Telangana, India. The café is widely celebrated for its biryani, Hyderabadi haleem, and other traditional dishes."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chandrayan Gutta",
+          "note": "Chandrayana Gutta is a neighbourhood in Old City, Hyderabad, Telangana, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Hyderabad International Film Festival",
+          "note": "The Hyderabad International Film Festival (HIFF) is a film festival in Hyderabad, India. The first Hyderabad International Film Festival (HIFF) was held in Hyderabad, Andhra Pradesh, India in 2007."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Shah-Ali-Banda & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shah-Ali-Banda",
+          "note": "Shah Ali Banda is a neighbourhood in Hyderabad, India. It forms a part of the Old City, Hyderabad in an area located close to Charminar."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kings Colony, Shastripuram",
+          "note": "Shastripuram Housing Colony is an area in the Ranga Reddy District of Telangana, India. It comes under Rajendra Nagar Circle 6 Government of Telangana."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Taj Tristar",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Falaknuma Palace Stay"
+      }
+    },
+    {
+      "name": "Boys Hostel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Falaknuma Palace"
+      }
+    },
+    {
+      "name": "Aditya Hometel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Falaknuma Palace Grand Hotel"
+      }
+    },
+    {
+      "name": "Taj Banjara",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Falaknuma Palace"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Falaknuma_Palace_01.jpg/1280px-Falaknuma_Palace_01.jpg",
+      "alt": "Falaknuma Palace photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Falaknuma_Palace_04.jpg/1280px-Falaknuma_Palace_04.jpg",
+      "alt": "Falaknuma Palace photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Shaik_Arahan_Brs_Youth_President.jpg/1280px-Shaik_Arahan_Brs_Youth_President.jpg",
+      "alt": "Falaknuma Palace photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Shaik_Mohd.jpg/1280px-Shaik_Mohd.jpg",
+      "alt": "Falaknuma Palace photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Falaknuma_Palace_%2823364859905%29.jpg/1280px-Falaknuma_Palace_%2823364859905%29.jpg",
+      "alt": "Falaknuma Palace photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Falaknuma Palace?",
+      "a": "The best time to visit Falaknuma Palace is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Falaknuma Palace?",
+      "a": "The nearest airport is Falaknuma Palace / nearest airport (30 km) and the nearest railway station is Kacheguda (Hyderabad) (7 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Falaknuma Palace?",
+      "a": "3 days are usually enough to cover the top attractions of Falaknuma Palace at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Falaknuma Palace?",
+      "a": "Stays in Falaknuma Palace start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Falaknuma Palace?",
+      "a": "The top attractions are Jahanuma, Uppuguda, Aliabad, Hyderabad, Shah Ghouse Café, Chandrayan Gutta."
+    }
+  ],
+  "seo": {
+    "title": "Falaknuma Palace Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Falaknuma Palace is a palace and a luxury hotel in Hyderabad, Telangana, India. Plan your Falaknuma Palace trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=falaknuma-palace",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Falaknuma_Palace_01.jpg/1280px-Falaknuma_Palace_01.jpg",
+    "keywords": [
+      "Falaknuma Palace travel guide",
+      "places to visit in Falaknuma Palace",
+      "Falaknuma Palace hotels",
+      "best time to visit Falaknuma Palace",
+      "how to reach Falaknuma Palace",
+      "Telangana tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

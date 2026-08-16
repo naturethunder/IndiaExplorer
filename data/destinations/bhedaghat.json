@@ -1,0 +1,671 @@
+{
+  "slug": "bhedaghat",
+  "title": "Bhedaghat",
+  "state": "Madhya Pradesh",
+  "country": "India",
+  "region": "Jabalpur District",
+  "type": "nature",
+  "badge": "100ft Marble Rocks Gorge",
+  "tagline": "Soaring 100ft white marble cliffs lining Narmada river with moonlight boat rides",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg/1280px-Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg",
+    "alt": "Bhedaghat, Madhya Pradesh"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg/1280px-Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg",
+    "alt": "Bhedaghat, Madhya Pradesh"
+  },
+  "overview": {
+    "short": "Soaring 100ft white marble cliffs lining the Narmada river with moonlight boat rides.",
+    "description": "Bhedaghat is famous for its 100-foot towering marble rock gorge carved by the Narmada river near Jabalpur. Boating between the glowing white marble rocks — especially on full moon nights — is a magical experience.",
+    "features": [
+      "Marble Rocks Boat Safari",
+      "Dhuandhar Waterfall",
+      "Chausath Yogini Temple",
+      "Ropeway Sky Ride"
+    ],
+    "rating": 4.8,
+    "reviewCount": 2850,
+    "minPrice": 2000,
+    "distanceFromDelhi": 820
+  },
+  "bestTime": {
+    "label": "Nov – May",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 23.1311,
+    "lng": 79.8005,
+    "tempSummer": "24–42°C",
+    "tempWinter": "10–26°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 291,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 233 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 305,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 244 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 351,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 281 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 504,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 403 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 704,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 563 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 729,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 583 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 758,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 606 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 816,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 653 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 818,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 654 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 828,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 662 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 871,
+        "byCar": "15–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 697 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 878,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 702 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 925,
+        "byCar": "15–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 740 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 976,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 781 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1023,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 818 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1100,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 880 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1121,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 897 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 1155,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 924 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1253,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1002 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1319,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1055 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1329,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1063 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1398,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1118 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 1441,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1153 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 1465,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1172 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1468,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1174 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 1555,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1244 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1555,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1244 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1564,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1251 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1568,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1254 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 1649,
+        "byCar": "27–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1319 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 1810,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1448 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 1821,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1457 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 1844,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1475 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1894,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1515 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1989,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1591 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2343,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1874 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Jabalpur Dumna Airport (JLR)",
+      "distance": 35
+    },
+    "nearestRailway": {
+      "name": "Jabalpur Junction Railway Station",
+      "distance": 22
+    },
+    "roadNote": "Smooth city highway from Jabalpur town."
+  },
+  "topPlaces": [
+    {
+      "name": "Marble Rocks Gorge Boating",
+      "category": "nature",
+      "distance": "0 km",
+      "entryFee": "₹100/boat",
+      "timings": "7 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Boating between 100ft high white, pink, and blue-veined marble cliffs on Narmada river.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/The_Pacific_coast_scenic_tour%2C_from_southern_California_to_Alaska%2C_the_Canadian_Pacific_railway%2C_Yellowstone_Park_and_the_Grand_Ca%C3%B1on_%281890%29_%2814580428217%29.jpg/1280px-The_Pacific_coast_scenic_tour%2C_from_southern_California_to_Alaska%2C_the_Canadian_Pacific_railway%2C_Yellowstone_Park_and_the_Grand_Ca%C3%B1on_%281890%29_%2814580428217%29.jpg",
+        "alt": "Marble Rocks Gorge Boating"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/The_Pacific_coast_scenic_tour%2C_from_southern_California_to_Alaska%2C_the_Canadian_Pacific_railway%2C_Yellowstone_Park_and_the_Grand_Ca%C3%B1on_%281890%29_%2814580428217%29.jpg/1280px-The_Pacific_coast_scenic_tour%2C_from_southern_California_to_Alaska%2C_the_Canadian_Pacific_railway%2C_Yellowstone_Park_and_the_Grand_Ca%C3%B1on_%281890%29_%2814580428217%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Marble_rocks_alongside_Narmada_River.jpg/1280px-Marble_rocks_alongside_Narmada_River.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Proceedings_of_the_Bristol_Naturalists%27_Society_%28IA_proceedings3918981900bris%29.pdf/page1-500px-Proceedings_of_the_Bristol_Naturalists%27_Society_%28IA_proceedings3918981900bris%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Dhuandhar Waterfalls & Cable Car",
+      "category": "nature",
+      "distance": "2 km",
+      "entryFee": "Free (Cable Car ₹100)",
+      "timings": "6 AM – 8 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Thunderous Narmada waterfall creating a permanent cloud of mist spray with ropeway sky ride.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg/1280px-Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg",
+        "alt": "Dhuandhar Waterfalls & Cable Car"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg/1280px-Dhuandhar_falls_at_Bhedaghat%2C_Madhya_Pradesh%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Dhuandhar_falls4.JPG/1280px-Dhuandhar_falls4.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dhuandhar_Bhedaghat.JPG/1280px-Dhuandhar_Bhedaghat.JPG"
+      ]
+    },
+    {
+      "name": "Chausath Yogini Temple Hilltop",
+      "category": "heritage",
+      "distance": "1 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "10th-century circular hilltop temple featuring 64 carved stone Yogini statues.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chausath_Yogini_Temple%2C_Jabalpur.JPG/1280px-Chausath_Yogini_Temple%2C_Jabalpur.JPG",
+        "alt": "Chausath Yogini Temple Hilltop"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chausath_Yogini_Temple%2C_Jabalpur.JPG/1280px-Chausath_Yogini_Temple%2C_Jabalpur.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Chausath_Yogini_Temple_front.jpg/1280px-Chausath_Yogini_Temple_front.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chausath_Yogini_Mitawali_Shiva_Temple_Madhya_Pradesh_008.jpg/1280px-Chausath_Yogini_Mitawali_Shiva_Temple_Madhya_Pradesh_008.jpg"
+      ]
+    },
+    {
+      "name": "Balancing Rock Jabalpur",
+      "category": "nature",
+      "distance": "20 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "30 mins",
+      "rating": 4.6,
+      "description": "Geological marvel of a massive granite boulder balanced on a tiny rock point.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Balancing_Rock_Madan_Mahal.jpg/1280px-Balancing_Rock_Madan_Mahal.jpg",
+        "alt": "Balancing Rock Jabalpur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Balancing_Rock_Madan_Mahal.jpg/1280px-Balancing_Rock_Madan_Mahal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Balance_rock.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/The_balance_rock.jpg/1280px-The_balance_rock.jpg"
+      ]
+    },
+    {
+      "name": "Madan Mahal Fort Jabalpur",
+      "category": "heritage",
+      "distance": "21 km",
+      "entryFee": "Free",
+      "timings": "7 AM – 6 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "11th-century Gond ruler fort perched atop a giant granite hill outcrop.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/The_Madan_Mahal_Fort_Jabalpur_India%2Cjpg.jpg/1280px-The_Madan_Mahal_Fort_Jabalpur_India%2Cjpg.jpg",
+        "alt": "Madan Mahal Fort Jabalpur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/The_Madan_Mahal_Fort_Jabalpur_India%2Cjpg.jpg/1280px-The_Madan_Mahal_Fort_Jabalpur_India%2Cjpg.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/The_Madan_Mahal_Fort_Jabalpur_Madhya_Pradesh_India_DSC_0005.jpg/1280px-The_Madan_Mahal_Fort_Jabalpur_Madhya_Pradesh_India_DSC_0005.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/The_Madan_Mahal_Fort_Jabalpur_Madhya_Pradesh_India_DSC.00023.jpg/1280px-The_Madan_Mahal_Fort_Jabalpur_Madhya_Pradesh_India_DSC.00023.jpg"
+      ]
+    },
+    {
+      "name": "Tilwara Ghat Narmada River Walk",
+      "category": "spiritual",
+      "distance": "12 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Historic river ghat where Mahatma Gandhi's ashes were immersed in Narmada river.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tilwara Ghat Narmada River Walk"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "MPT Rockwoods Bhedaghat (MP Tourism)",
+      "type": "resort",
+      "tier": "good",
+      "priceMin": 3000,
+      "priceMax": 5500,
+      "rating": 4.6,
+      "reviews": 320,
+      "amenities": [
+        "River View",
+        "Restaurant",
+        "AC Rooms",
+        "Parking"
+      ],
+      "tags": [
+        "MP Tourism",
+        "River View"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Shop_at_Bhedaghat.jpg/1280px-Shop_at_Bhedaghat.jpg",
+        "alt": "MPT Rockwoods Bhedaghat (MP Tourism)"
+      }
+    },
+    {
+      "name": "Hotel Shree Hari (correct location)",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 2000,
+      "priceMax": 3800,
+      "rating": 4.4,
+      "reviews": 210,
+      "amenities": [
+        "AC",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Budget Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Chausath_Yogini_Temple%2C_Bhedaghat.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat.jpg",
+        "alt": "Hotel Marble Palace Bhedaghat"
+      }
+    },
+    {
+      "name": "hotel yuvraj",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 2500,
+      "priceMax": 4800,
+      "rating": 4.5,
+      "reviews": 160,
+      "amenities": [
+        "Lakeside Lawn",
+        "Restaurant",
+        "Pool"
+      ],
+      "tags": [
+        "Resort"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg",
+        "alt": "Vrindavan Gopala Resort Bhedaghat"
+      }
+    },
+    {
+      "name": "Satya Ashoka",
+      "type": "homestay",
+      "tier": "budget",
+      "priceMin": 1500,
+      "priceMax": 2800,
+      "rating": 4.5,
+      "reviews": 120,
+      "amenities": [
+        "Riverside Terrace",
+        "Home Meals"
+      ],
+      "tags": [
+        "Homestay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chausath_Yogini_Temple%2C_Bhedaghat_%2815129%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2815129%29.jpg",
+        "alt": "Narmada Riverfront Homestay"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Shop_at_Bhedaghat.jpg/1280px-Shop_at_Bhedaghat.jpg",
+      "alt": "Bhedaghat photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Chausath_Yogini_Temple%2C_Bhedaghat.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat.jpg",
+      "alt": "Bhedaghat photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg",
+      "alt": "Bhedaghat photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chausath_Yogini_Temple%2C_Bhedaghat_%2815129%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2815129%29.jpg",
+      "alt": "Bhedaghat photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Chausath_Yogini_Temple%2C_Bhedaghat_%2865710%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2865710%29.jpg",
+      "alt": "Bhedaghat photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Guest_house_in_Bhedaghat.jpg/1280px-Guest_house_in_Bhedaghat.jpg",
+      "alt": "Bhedaghat photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is full moon boating at Bhedaghat?",
+      "a": "During full moon nights, special boat rides operate along the Narmada marble rocks gorge as the white marble shines under moonlight."
+    }
+  ],
+  "seo": {
+    "title": "Bhedaghat Marble Rocks Guide 2026 — Dhuandhar Falls, Jabalpur | IndiaExplore",
+    "description": "Explore Bhedaghat in Madhya Pradesh: Marble rocks gorge boat ride, Dhuandhar waterfall and Jabalpur hotels.",
+    "canonical": "destination.html?slug=bhedaghat",
+    "ogImage": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Bhedaghat marble rocks",
+      "Dhuandhar falls",
+      "Bhedaghat Jabalpur",
+      "Narmada marble gorge"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 3
+}

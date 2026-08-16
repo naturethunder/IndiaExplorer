@@ -1,0 +1,583 @@
+{
+  "slug": "raghunath-temple",
+  "title": "Raghunath Temple",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Raghunath Temple — spiritual town of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
+    "alt": "Raghunath Temple, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "Raghunath Temple is a Hindu temple located in Jammu in the Indian union territory of Jammu and Kashmir.",
+    "description": "Raghunath Temple is a Hindu temple located in Jammu in the Indian union territory of Jammu and Kashmir. It consists of a complex of seven Hindu shrines. Raghunath Temple was constructed by the first Dogra ruler Maharaja Gulab Singh in the year 1835 and later his son Maharaja Ranbir Singh got it completed in the year 1860 during Dogra rule. The temple has many gods in its complex of shrines, but the presiding deity is Rama – also known as Raghunath, an Avatar of Vishnu.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.4,
+    "reviewCount": 20303,
+    "minPrice": 900,
+    "distanceFromDelhi": 510
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 32.731,
+    "lng": 74.8638,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 153,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 122 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 189,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 151 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 354,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 283 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 359,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 287 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 371,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 297 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 504,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 403 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 638,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 510 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 648,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 518 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 816,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 653 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 860,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 688 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1353,
+        "byCar": "23–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1082 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1379,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1103 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1593,
+        "byCar": "27–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1274 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1693,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1354 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1733,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1386 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Raghunath Temple / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Jammu Tawi",
+      "distance": 4
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Jammu",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Jammu () is a city in Indian-administered Jammu and Kashmir in the Jammu division. It serves as the winter capital of the union territory of Jammu and Kashmir.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg/1280px-Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg",
+        "alt": "Jammu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg/1280px-Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Chowgan_ground_in_Kishtwar%2C_Jammu%2C_India_%28crop%29.jpg/1280px-Chowgan_ground_in_Kishtwar%2C_Jammu%2C_India_%28crop%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Thajiwas_Park%2C_Sonamarg%2C_Jammu_and_Kashmir%2C_India.jpg/1280px-Thajiwas_Park%2C_Sonamarg%2C_Jammu_and_Kashmir%2C_India.jpg"
+      ]
+    },
+    {
+      "name": "Jammu division",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "The Jammu division ( ; Dogri pronunciation: [dʒəmːuː]) is a revenue and administrative division of the Indian-administered Jammu and Kashmir in the disputed Kashmir region. It is bordered by the Kashmir division to the north.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg/1280px-Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg",
+        "alt": "Jammu division"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg/1280px-Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Chowgan_ground_in_Kishtwar%2C_Jammu%2C_India_%28crop%29.jpg/1280px-Chowgan_ground_in_Kishtwar%2C_Jammu%2C_India_%28crop%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Thajiwas_Park%2C_Sonamarg%2C_Jammu_and_Kashmir%2C_India.jpg/1280px-Thajiwas_Park%2C_Sonamarg%2C_Jammu_and_Kashmir%2C_India.jpg"
+      ]
+    },
+    {
+      "name": "Maulana Azad Stadium",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "The Maulana Azad Stadium (also spelled Molana Azad Stadium) is a stadium in Jammu, India and is one of the home venues for the Jammu and Kashmir cricket team.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Azad_Hind_-_English_-_Vol._2_-_No._166_-_1945-07-16.pdf/page1-1280px-Azad_Hind_-_English_-_Vol._2_-_No._166_-_1945-07-16.pdf.jpg",
+        "alt": "Maulana Azad Stadium"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Azad_Hind_-_English_-_Vol._2_-_No._166_-_1945-07-16.pdf/page1-1280px-Azad_Hind_-_English_-_Vol._2_-_No._166_-_1945-07-16.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Azad_Hind_-_English_-_Vol._2_-_No._164_-_1945-07-13.pdf/page1-1280px-Azad_Hind_-_English_-_Vol._2_-_No._164_-_1945-07-13.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Behar_Herald_15-11-2018.pdf/page1-1280px-Behar_Herald_15-11-2018.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Mubarak Mandi Palace",
+      "category": "heritage",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Mubarak Mandi is a palace complex located in the heart of the old walled city of Jammu in Jammu and Kashmir, India. Built over several centuries, starting in 1824, the complex served as the principal seat of the Dogra dynasty, which ruled the region as maharajas of Jammu and Kashmir until the mid-20th century.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mubarak_Mandi_Palace_1905_2.jpg/1280px-Mubarak_Mandi_Palace_1905_2.jpg",
+        "alt": "Mubarak Mandi Palace"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mubarak_Mandi_Palace_1905_2.jpg/1280px-Mubarak_Mandi_Palace_1905_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Mubarak_Mandi_Palace_Courtyard_around_1905_-_2.jpg/1280px-Mubarak_Mandi_Palace_Courtyard_around_1905_-_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Jammu_Mubara_Mandi_Palace_Plan_by_Ipflo.png/1280px-Jammu_Mubara_Mandi_Palace_Plan_by_Ipflo.png"
+      ]
+    },
+    {
+      "name": "Lok Bhavan, Jammu",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Lok Bhavan formerly Raj Bhavan (translation: Government House) is the official winter residence of the Lieutenant Governor of Jammu and Kashmir Manoj Sinha. It is located in the winter capital city Jammu, Jammu and Kashmir.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Lok_Bhavan_Srinagar_Jammu_and_Kashmir.jpg",
+        "alt": "Lok Bhavan, Jammu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/Lok_Bhavan_Srinagar_Jammu_and_Kashmir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/PM_Modi_meets_various_groups_of_flood_affected_people_in_Srinagar.jpg/1280px-PM_Modi_meets_various_groups_of_flood_affected_people_in_Srinagar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Raj_Bhavan_%28Bangalore%29_emblem%2C_2025.jpg"
+      ]
+    },
+    {
+      "name": "Kala Kendra Jammu",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Kala Kendra Jammu is an arts institution located in Jammu, India. It was established by the Department of Culture, Government of Jammu and Kashmir, with support from the Ministry of Culture, Government of India, and became operational in 2006.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pandit_Manilal_Nag.jpg/1280px-Pandit_Manilal_Nag.jpg",
+        "alt": "Kala Kendra Jammu"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pandit_Manilal_Nag.jpg/1280px-Pandit_Manilal_Nag.jpg"
+      ]
+    },
+    {
+      "name": "Hari Niwas Palace",
+      "category": "heritage",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The Hari Niwas Palace is a palace in Jammu, India. It overlooks the Tawi river on one side and on the other side the Trikuta hills.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg/1280px-Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg",
+        "alt": "Hari Niwas Palace"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg/1280px-Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hari_Niwas%2CJammu.JPG/1280px-Hari_Niwas%2CJammu.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Mubarak_mandi_palace.jpg/1280px-Mubarak_mandi_palace.jpg"
+      ]
+    },
+    {
+      "name": "Talab Tillo",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Talab Tillo is an urban area of Jammu City in the Indian union territory of Jammu and Kashmir. It is a bustling residential and commercial hub that holds historical and cultural significance.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Central_Veterinary_hospital_Talab_Tillo%2C_Jammu.jpg",
+        "alt": "Talab Tillo"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Central_Veterinary_hospital_Talab_Tillo%2C_Jammu.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Jammu & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Jammu",
+          "note": "Jammu () is a city in Indian-administered Jammu and Kashmir in the Jammu division. It serves as the winter capital of the union territory of Jammu and Kashmir."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Jammu division",
+          "note": "The Jammu division ( ; Dogri pronunciation: [dʒəmːuː]) is a revenue and administrative division of the Indian-administered Jammu and Kashmir in the disputed Kashmir region. It is bordered by the Kashmir division to the north."
+        },
+        {
+          "time": "Evening",
+          "activity": "Maulana Azad Stadium",
+          "note": "The Maulana Azad Stadium (also spelled Molana Azad Stadium) is a stadium in Jammu, India and is one of the home venues for the Jammu and Kashmir cricket team."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Mubarak Mandi Palace & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Mubarak Mandi Palace",
+          "note": "Mubarak Mandi is a palace complex located in the heart of the old walled city of Jammu in Jammu and Kashmir, India. Built over several centuries, starting in 1824, the complex served as the principal seat of the Dogra dynasty, which ruled the region as maharajas of Jammu and Kashmir until the mid-20th century."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Lok Bhavan, Jammu",
+          "note": "Lok Bhavan formerly Raj Bhavan (translation: Government House) is the official winter residence of the Lieutenant Governor of Jammu and Kashmir Manoj Sinha. It is located in the winter capital city Jammu, Jammu and Kashmir."
+        },
+        {
+          "time": "Evening",
+          "activity": "Kala Kendra Jammu",
+          "note": "Kala Kendra Jammu is an arts institution located in Jammu, India. It was established by the Department of Culture, Government of Jammu and Kashmir, with support from the Ministry of Culture, Government of India, and became operational in 2006."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Hari Niwas Palace & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Hari Niwas Palace",
+          "note": "The Hari Niwas Palace is a palace in Jammu, India. It overlooks the Tawi river on one side and on the other side the Trikuta hills."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Talab Tillo",
+          "note": "Talab Tillo is an urban area of Jammu City in the Indian union territory of Jammu and Kashmir. It is a bustling residential and commercial hub that holds historical and cultural significance."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "KC Residency Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Raghunath Temple Stay"
+      }
+    },
+    {
+      "name": "Hari Niwas Palace Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg/960px-Rear_Hari_Nivas_Palace_Hotel_Jammu_Nov17_DSC04635.jpg",
+        "alt": "Hari Niwas Palace Hotel"
+      }
+    },
+    {
+      "name": "Fortune Inn Riviera Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Raghunath Temple Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Asia",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Raghunath Temple"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Heritage walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
+      "alt": "Raghunath Temple photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/The_Temples_of_Raghunath%2C_Jammu%2C_India%2C_ca.1875-ca.1940_%28imp-cswc-GB-237-CSWC47-LS10-011%29.jpg/1280px-The_Temples_of_Raghunath%2C_Jammu%2C_India%2C_ca.1875-ca.1940_%28imp-cswc-GB-237-CSWC47-LS10-011%29.jpg",
+      "alt": "Raghunath Temple photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/18th-century_Yajurveda_manuscript_folio%2C_page_1%2C_Raghunath_temple_Jammu_archives.jpg/1280px-18th-century_Yajurveda_manuscript_folio%2C_page_1%2C_Raghunath_temple_Jammu_archives.jpg",
+      "alt": "Raghunath Temple photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hatha_Yoga_Pradipika_Bhasya%2C_page_1%2C_Raghunath_temple_library%2C_Sanskrit%2C_Devanagari.jpg/1280px-Hatha_Yoga_Pradipika_Bhasya%2C_page_1%2C_Raghunath_temple_library%2C_Sanskrit%2C_Devanagari.jpg",
+      "alt": "Raghunath Temple photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kama_sutra%2C_Vatsyayayan%2C_commentary%2C_sample_ii%2C_Sanskrit%2C_Devanagari.jpg/1280px-Kama_sutra%2C_Vatsyayayan%2C_commentary%2C_sample_ii%2C_Sanskrit%2C_Devanagari.jpg",
+      "alt": "Raghunath Temple photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Raghunath Temple?",
+      "a": "The best time to visit Raghunath Temple is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Raghunath Temple?",
+      "a": "The nearest airport is Raghunath Temple / nearest airport (30 km) and the nearest railway station is Jammu Tawi (4 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Raghunath Temple?",
+      "a": "3 days are usually enough to cover the top attractions of Raghunath Temple at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Raghunath Temple?",
+      "a": "Stays in Raghunath Temple start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Raghunath Temple?",
+      "a": "The top attractions are Jammu, Jammu division, Maulana Azad Stadium, Mubarak Mandi Palace, Lok Bhavan, Jammu."
+    }
+  ],
+  "seo": {
+    "title": "Raghunath Temple Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Raghunath Temple is a Hindu temple located in Jammu in the Indian union territory of Jammu and Kashmir. Plan your Raghunath Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=raghunath-temple",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Raghunath_Temple_Jammu.JPG",
+    "keywords": [
+      "Raghunath Temple travel guide",
+      "places to visit in Raghunath Temple",
+      "Raghunath Temple hotels",
+      "best time to visit Raghunath Temple",
+      "how to reach Raghunath Temple",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,404 @@
+{
+  "slug": "nawegaon-national-park",
+  "title": "Nawegaon National Park",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Maharashtra",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Nawegaon National Park — wildlife reserve of Maharashtra",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Garden_Lizard_%28Calotes_versicolor%29._Navegaon_National_Park%2C_Maharashtra..jpg",
+    "alt": "Nawegaon National Park, Maharashtra"
+  },
+  "overview": {
+    "short": "Navegaon National Park is a National park located in the Arjuni Morgaon subdivision of Gondia district in state of Maharashtra, India.",
+    "description": "Navegaon National Park is a National park located in the Arjuni Morgaon subdivision of Gondia district in state of Maharashtra, India. The Dr Salim Ali Bird Sanctuary, Navegaon is home to almost 60% of the bird species found in entire Maharashtra. Every winter, flocks of migratory birds visit the lake. The national park has diverse type of vegetation ranging from dry mixed forest to moist forest.",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 17307,
+    "minPrice": 2500,
+    "distanceFromDelhi": 905
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ]
+  },
+  "weather": {
+    "lat": 20.93333333,
+    "lng": 80.16666667,
+    "tempSummer": "26–40°C",
+    "tempWinter": "12–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 143,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 114 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 195,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 156 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 480,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 384 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 540,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 432 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 604,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 483 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 708,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 566 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 741,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 593 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 743,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 594 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 906,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 725 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 953,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 762 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 956,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 765 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 970,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 776 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1083,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 866 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1091,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 873 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1119,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 895 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Nawegaon National Park / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Nagpur Junction",
+      "distance": 114
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Nawegaonbandh Dam",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Nawegaonbandh Dam, is an earthfill dam on local river near Navegaon, Gondia district in the state of Maharashtra in India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Navegaon_Dam_-_panoramio.jpg/1280px-Navegaon_Dam_-_panoramio.jpg",
+        "alt": "Nawegaonbandh Dam"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Navegaon_Dam_-_panoramio.jpg/1280px-Navegaon_Dam_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Water_of_Navegaon_Dam_-_panoramio2.jpg/1280px-Water_of_Navegaon_Dam_-_panoramio2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Navegaon_Bandh_Dam_-_panoramio.jpg/1280px-Navegaon_Bandh_Dam_-_panoramio.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Nawegaonbandh Dam",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nawegaonbandh Dam",
+          "note": "Nawegaonbandh Dam, is an earthfill dam on local river near Navegaon, Gondia district in the state of Maharashtra in India."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "OYO Nawegaon National Park Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Nawegaon National Park Stay"
+      }
+    },
+    {
+      "name": "Airbnb: Stay in Nawegaon National Park",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Nawegaon National Park"
+      }
+    },
+    {
+      "name": "Nawegaon National Park Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nawegaon National Park Grand Hotel"
+      }
+    },
+    {
+      "name": "Jungle Lodges Nawegaon National Park",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Nawegaon National Park"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Garden_Lizard_%28Calotes_versicolor%29._Navegaon_National_Park%2C_Maharashtra..jpg",
+      "alt": "Nawegaon National Park photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Beautiful_Deer_At_Navegaon_Bandh_National_Park..jpg",
+      "alt": "Nawegaon National Park photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Navegaon_Bandh_National_Park_-_panoramio.jpg/1280px-Navegaon_Bandh_National_Park_-_panoramio.jpg",
+      "alt": "Nawegaon National Park photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Navegaon_bandh_National_Park_-_panoramio.jpg/1280px-Navegaon_bandh_National_Park_-_panoramio.jpg",
+      "alt": "Nawegaon National Park photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gray_langur_at_Navegaon_Dam.jpg/1280px-Gray_langur_at_Navegaon_Dam.jpg",
+      "alt": "Nawegaon National Park photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Nawegaon National Park?",
+      "a": "The best time to visit Nawegaon National Park is Oct – Mar. Summers are 26–40°C and winters are 12–28°C."
+    },
+    {
+      "q": "How do I reach Nawegaon National Park?",
+      "a": "The nearest airport is Nawegaon National Park / nearest airport (30 km) and the nearest railway station is Nagpur Junction (114 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Nawegaon National Park?",
+      "a": "2 days are usually enough to cover the top attractions of Nawegaon National Park at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Nawegaon National Park?",
+      "a": "Stays in Nawegaon National Park start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Nawegaon National Park?",
+      "a": "The top attractions are Nawegaonbandh Dam."
+    }
+  ],
+  "seo": {
+    "title": "Nawegaon National Park Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Navegaon National Park is a National park located in the Arjuni Morgaon subdivision of Gondia district in state of Maharashtra, India. Plan your Nawegaon National Park trip: 1 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "canonical": "destination.html?slug=nawegaon-national-park",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Garden_Lizard_%28Calotes_versicolor%29._Navegaon_National_Park%2C_Maharashtra..jpg",
+    "keywords": [
+      "Nawegaon National Park travel guide",
+      "places to visit in Nawegaon National Park",
+      "Nawegaon National Park hotels",
+      "best time to visit Nawegaon National Park",
+      "how to reach Nawegaon National Park",
+      "Maharashtra tourism"
+    ]
+  },
+  "hotelSourceTried": true
+}

@@ -1,0 +1,550 @@
+{
+  "slug": "thirumarperu",
+  "title": "Thirumarperu",
+  "state": "Tamil Nadu",
+  "country": "India",
+  "region": "Tamil Nadu",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Thirumarperu — spiritual town of Tamil Nadu",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tirumalper10.jpg",
+    "alt": "Thirumarperu, Tamil Nadu"
+  },
+  "overview": {
+    "short": "Thirumarperu Manikandeswarar Temple is a Hindu temple dedicated to Shiva on Ocheri-Tirumalpur road in Tirumalpur, Tamil Nadu, India.",
+    "description": "Thirumarperu Manikandeswarar Temple is a Hindu temple dedicated to Shiva on Ocheri-Tirumalpur road in Tirumalpur, Tamil Nadu, India. Constructed in the Dravidian style of architecture, the temple is believed to have been built during the Cholas period in the 9th century. Shiva is worshipped as Manikandeswarar and his consort Parvathi as Karunai Nayagi. The presiding deity is revered in the 7th century Tamil Saiva canonical work, the Tevaram, written by Tamil saint poets known as the Nayanmars and classified as Paadal Petra Sthalam.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 1540,
+    "minPrice": 900,
+    "distanceFromDelhi": 1760
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 12.9567,
+    "lng": 79.6736,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 83,
+        "byCar": "1–2 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 66 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 143,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 114 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 281,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 225 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 510,
+        "byCar": "9–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 408 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 626,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 501 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 636,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 509 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 863,
+        "byCar": "14–19 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 690 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1014,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 811 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1096,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 877 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1181,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 945 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1308,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1046 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1378,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1102 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1448,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1158 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1459,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1167 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1624,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1299 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Thirumarperu / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Chennai Central",
+      "distance": 67
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Tirumalpur",
+      "category": "spiritual",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Tirumalpur is a temple town and a suburb of Kanchipuram, Tamil Nadu, with a train station on the south west line of Chennai Suburban Railway. It is the site of the Thirumarperu temple of Shiva.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tirumalper10.jpg",
+        "alt": "Tirumalpur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tirumalper10.jpg"
+      ]
+    },
+    {
+      "name": "Govindavadi",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Govindavadi is a small village near Kancheepuram temple town in Kancheepuram district in Tamil Nadu, India. Kancheepuram is about 100 km from Chennai and is known for its silk sarees.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Govindavadi"
+      },
+      "photos": []
+    },
+    {
+      "name": "Shenbakkam Raghavendra Swamy Mutt",
+      "category": "spiritual",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Shenbakkam Raghavendra Swami Mutt is an ancient temple located on the banks of the Palar River, in Vellore district, Shenbakkam. It is located in the Indian state of Tamil Nadu around 130 km from Chennai and 200 km from Bangalore.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Shenbakkam Raghavendra Swamy Mutt"
+      },
+      "photos": []
+    },
+    {
+      "name": "Pullalur",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Pullalur or Pollilur is a village in the Kanchipuram taluk of Kanchipuram district in Tamil Nadu, India. The village has been the site of three historic battles - the Battle of Pullalur fought between the Chalukya king Pulakesin II and the Pallava king Mahendravarman I in 611-12, the Battle of Pollilur (1780) and Battle of Pollilur (1781) of the Second Anglo-Mysore War between Hyder Ali and the East India Company.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pullalur_obelisks_situated_amidst_paddy_fields_and_coconut_grove.jpg/1280px-Pullalur_obelisks_situated_amidst_paddy_fields_and_coconut_grove.jpg",
+        "alt": "Pullalur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pullalur_obelisks_situated_amidst_paddy_fields_and_coconut_grove.jpg/1280px-Pullalur_obelisks_situated_amidst_paddy_fields_and_coconut_grove.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Front_view_of_obelisks.jpg/1280px-Front_view_of_obelisks.jpg"
+      ]
+    },
+    {
+      "name": "Battle of Pollilur (1781)",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "The Battle of Pollilur was fought on 27 August 1781, between forces of the Kingdom of Mysore under Hyder Ali and British East India Company forces led by General Eyre Coote. The battle was fought on the site of a 1780 encounter in which a Company force was almost completely routed or captured.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Battle_of_Pollilore%2C_1781.jpg",
+        "alt": "Battle of Pollilur (1781)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Battle_of_Pollilore%2C_1781.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Second_Battle_of_Polilore.jpg/1280px-Second_Battle_of_Polilore.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/The_Battle_of_Pollilur_-_early_19th-century.jpg/1280px-The_Battle_of_Pollilur_-_early_19th-century.jpg"
+      ]
+    },
+    {
+      "name": "Pudupakkam",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Pudupakkam is a village near Chennai, India. It is closer to Siruseri SIPCOT. This village comes under Vandalur taluk of Chengalpattu district in Tamil Nadu.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Pudupakkam"
+      },
+      "photos": []
+    },
+    {
+      "name": "Kadambanallur",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Kadambanallur is a village located in Vellore District of Tamil Nadu. Part of the people were the settlers from Chennai (Madras) who migrated during the freedom struggle in 1950.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Kadambanallur_vinayagar_temple.jpg",
+        "alt": "Kadambanallur"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/bf/Kadambanallur_vinayagar_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kadambanallur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sri_Prasanna_Venkatesh_Perumal_Temple.jpg/1280px-Sri_Prasanna_Venkatesh_Perumal_Temple.jpg"
+      ]
+    },
+    {
+      "name": "Parandur",
+      "category": "cultural",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Parandur, is a village in Kanchipuram district in the state of Tamil Nadu, India. It is the site of a proposed Chennai Greenfield Airport.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Parandur"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Tirumalpur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Tirumalpur",
+          "note": "Tirumalpur is a temple town and a suburb of Kanchipuram, Tamil Nadu, with a train station on the south west line of Chennai Suburban Railway. It is the site of the Thirumarperu temple of Shiva."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Govindavadi",
+          "note": "Govindavadi is a small village near Kancheepuram temple town in Kancheepuram district in Tamil Nadu, India. Kancheepuram is about 100 km from Chennai and is known for its silk sarees."
+        },
+        {
+          "time": "Evening",
+          "activity": "Shenbakkam Raghavendra Swamy Mutt",
+          "note": "Shenbakkam Raghavendra Swami Mutt is an ancient temple located on the banks of the Palar River, in Vellore district, Shenbakkam. It is located in the Indian state of Tamil Nadu around 130 km from Chennai and 200 km from Bangalore."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Pullalur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Pullalur",
+          "note": "Pullalur or Pollilur is a village in the Kanchipuram taluk of Kanchipuram district in Tamil Nadu, India. The village has been the site of three historic battles - the Battle of Pullalur fought between the Chalukya king Pulakesin II and the Pallava king Mahendravarman I in 611-12, the Battle of Pollilur (1780) and Battle of Pollilur (1781) of the Second Anglo-Mysore War between Hyder Ali and the East India Company."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Battle of Pollilur (1781)",
+          "note": "The Battle of Pollilur was fought on 27 August 1781, between forces of the Kingdom of Mysore under Hyder Ali and British East India Company forces led by General Eyre Coote. The battle was fought on the site of a 1780 encounter in which a Company force was almost completely routed or captured."
+        },
+        {
+          "time": "Evening",
+          "activity": "Pudupakkam",
+          "note": "Pudupakkam is a village near Chennai, India. It is closer to Siruseri SIPCOT. This village comes under Vandalur taluk of Chengalpattu district in Tamil Nadu."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Kadambanallur & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kadambanallur",
+          "note": "Kadambanallur is a village located in Vellore District of Tamil Nadu. Part of the people were the settlers from Chennai (Madras) who migrated during the freedom struggle in 1950."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Parandur",
+          "note": "Parandur, is a village in Kanchipuram district in the state of Tamil Nadu, India. It is the site of a proposed Chennai Greenfield Airport."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "GRT Regency",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Thirumarperu Stay"
+      }
+    },
+    {
+      "name": "Kalathi's Non Veg. Hotel",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Thirumarperu"
+      }
+    },
+    {
+      "name": "Hotel Tamilnadu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Hotel_Tamilnadu_Mahabalipuram_Sep24_A7CR_03157.jpg/960px-Hotel_Tamilnadu_Mahabalipuram_Sep24_A7CR_03157.jpg",
+        "alt": "Hotel Tamilnadu"
+      }
+    },
+    {
+      "name": "Ragha Residency",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Thirumarperu"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Cultural",
+    "Sightseeing",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tirumalper10.jpg",
+      "alt": "Thirumarperu photo 1"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Thirumarperu?",
+      "a": "The best time to visit Thirumarperu is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Thirumarperu?",
+      "a": "The nearest airport is Thirumarperu / nearest airport (30 km) and the nearest railway station is Chennai Central (67 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Thirumarperu?",
+      "a": "3 days are usually enough to cover the top attractions of Thirumarperu at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Thirumarperu?",
+      "a": "Stays in Thirumarperu start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Thirumarperu?",
+      "a": "The top attractions are Tirumalpur, Govindavadi, Shenbakkam Raghavendra Swamy Mutt, Pullalur, Battle of Pollilur (1781)."
+    }
+  ],
+  "seo": {
+    "title": "Thirumarperu Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Thirumarperu Manikandeswarar Temple is a Hindu temple dedicated to Shiva on Ocheri-Tirumalpur road in Tirumalpur, Tamil Nadu, India. Plan your Thirumarperu trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=thirumarperu",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tirumalper10.jpg",
+    "keywords": [
+      "Thirumarperu travel guide",
+      "places to visit in Thirumarperu",
+      "Thirumarperu hotels",
+      "best time to visit Thirumarperu",
+      "how to reach Thirumarperu",
+      "Tamil Nadu tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

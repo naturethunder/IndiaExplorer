@@ -1,0 +1,581 @@
+{
+  "slug": "someshwara-temple-marathahalli",
+  "title": "Someshwara Temple, Marathahalli",
+  "state": "Karnataka",
+  "country": "India",
+  "region": "Karnataka",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Someshwara Temple, Marathahalli — spiritual town of Karnataka",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg/1280px-Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg",
+    "alt": "Someshwara Temple, Marathahalli, Karnataka"
+  },
+  "overview": {
+    "short": "Someshwara Temple is a Hindu temple in Marathahalli, Bangalore, Karnataka, India, dedicated to Siva.",
+    "description": "Someshwara Temple is a Hindu temple in Marathahalli, Bangalore, Karnataka, India, dedicated to Siva.",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 5283,
+    "minPrice": 900,
+    "distanceFromDelhi": 1742
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 12.9525,
+    "lng": 77.692777777,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 14,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 11 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 288,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 230 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 320,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 256 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 463,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 370 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 625,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 500 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 629,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 503 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 634,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 507 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 764,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 611 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 929,
+        "byCar": "15–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 743 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1220,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 976 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1266,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1013 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1313,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1050 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1379,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1103 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1488,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1190 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1699,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1359 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Someshwara Temple, Marathahalli / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "KSR Bengaluru City Junction",
+      "distance": 13
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Kodibeesanahalli metro station",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Kodibeesanahalli is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. Around this metro station holds the IT Companies like JP Morgan Chase,Adobe, Nutanix Technologies Pvt.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kodibeesanahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Kodibeesanahalli_metro_station_%28Apr_%2724%29.jpg",
+        "alt": "Kodibeesanahalli metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kodibeesanahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Kodibeesanahalli_metro_station_%28Apr_%2724%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kodibeesanahalli_metro_station_%28Mar_%2725%29.jpg/1280px-Kodibeesanahalli_metro_station_%28Mar_%2725%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kodibeesanahalli_metro_station_%28Dec_%2723%29.jpg/1280px-Kodibeesanahalli_metro_station_%28Dec_%2723%29.jpg"
+      ]
+    },
+    {
+      "name": "Marathahalli",
+      "category": "nature",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Marathahalli is a major eastern suburb of the city of Bengaluru, Karnataka. It is infamous for its traffic and is a cheaper choice for IT employees to live in because of its close proximity to the IT clusters in Mahadevapura, Bellandur, International Tech Park, and Whitefield.It is famous for having a huge Telugu population in the city and is known as the little Andhra of the city which led to many businesses being established in the local area catering specifically to their tastes.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Naja_naja_juvenile_%28Karnataka%29.jpg/1280px-Naja_naja_juvenile_%28Karnataka%29.jpg",
+        "alt": "Marathahalli"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Naja_naja_juvenile_%28Karnataka%29.jpg/1280px-Naja_naja_juvenile_%28Karnataka%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/RIA_Data_Analytics_MIS_Advanced_Excel_VBA_Data_Analytics_Tableau_Training_Marathahalli_Bangalore.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Innovative_Multiplex_Marathalli_11-25-2008_7-51-06_AM.jpg/1280px-Innovative_Multiplex_Marathalli_11-25-2008_7-51-06_AM.jpg"
+      ]
+    },
+    {
+      "name": "Marathahalli metro station",
+      "category": "heritage",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Marathahalli is an important upcoming elevated metro station on the north–south corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves mainly the Marathahalli suburban area and als WeWork, a coworking space company in South Bengaluru and the main Marathahalli Bridge that connects Kundalahalli area and HAL Aerospace Museum along with the Outer Ring Road which leads towards Hebbal in the north and Silk Board in the south.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Marathahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Marathahalli_metro_station_%28Apr_%2724%29.jpg",
+        "alt": "Marathahalli metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Marathahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Marathahalli_metro_station_%28Apr_%2724%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Marathahalli_metro_station_%28Dec_%2723%29.jpg/1280px-Marathahalli_metro_station_%28Dec_%2723%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Marathahalli_metro_station_%28Mar_%2725%29.jpg/1280px-Marathahalli_metro_station_%28Mar_%2725%29.jpg"
+      ]
+    },
+    {
+      "name": "ISRO metro station",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "ISRO is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro serves mainly the Doddanekundi area, which comprises the ISRO Assembly Integration & Testing Centre in South Bengaluru and the Outer Ring Road, which leads towards Krishnarajapura in the north and Bellandur in the south.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ISRO_metro_station_%28Mar_%2725%29.jpg/1280px-ISRO_metro_station_%28Mar_%2725%29.jpg",
+        "alt": "ISRO metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ISRO_metro_station_%28Mar_%2725%29.jpg/1280px-ISRO_metro_station_%28Mar_%2725%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ISRO_metro_station_%28Apr_%2724%29.jpg/1280px-ISRO_metro_station_%28Apr_%2724%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISRO_metro_station_%28Dec_%2723%29.jpg/1280px-ISRO_metro_station_%28Dec_%2723%29.jpg"
+      ]
+    },
+    {
+      "name": "Kadubeesanahalli metro station",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Embassy TechVillage Kadubeesanahalli (formerly known as Kadubeesanahalli) is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves mainly Embassy TechnoVillage, which comprises IT companies such J.P. Morgan Chase, Cisco, Wells Fargo, New Horizon College of Engineering and Carmatec .",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kadubeesanahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Kadubeesanahalli_metro_station_%28Apr_%2724%29.jpg",
+        "alt": "Kadubeesanahalli metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kadubeesanahalli_metro_station_%28Apr_%2724%29.jpg/1280px-Kadubeesanahalli_metro_station_%28Apr_%2724%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Kadubeesanahalli_metro_station_%28Dec_%2723%29.jpg/1280px-Kadubeesanahalli_metro_station_%28Dec_%2723%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Embassy_TechVillage_Kadubeesanahalli_metro_station_%28Apr_%2725%29.jpg/1280px-Embassy_TechVillage_Kadubeesanahalli_metro_station_%28Apr_%2725%29.jpg"
+      ]
+    },
+    {
+      "name": "Vibhutipura Lake",
+      "category": "scenic",
+      "distance": "2 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Vibuthipura Lake is a lake in the suburb of Hindustan Aeronautics Limited, in the southeast of the city of Bengaluru. The lake is the part of Bellandur-Varthur Lake series.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Vibhutipura_lake_05-May-2019_6.jpg/1280px-Vibhutipura_lake_05-May-2019_6.jpg",
+        "alt": "Vibhutipura Lake"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Vibhutipura_lake_05-May-2019_6.jpg/1280px-Vibhutipura_lake_05-May-2019_6.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vibhutipura_lake_05-May-2019.jpg/1280px-Vibhutipura_lake_05-May-2019.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Vibhutipura_lake_05-May-2019_3_2.jpg/1280px-Vibhutipura_lake_05-May-2019_3_2.jpg"
+      ]
+    },
+    {
+      "name": "Doddanekundi metro station",
+      "category": "nature",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Doddanekundi is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves IT companies such as Amazon Web Services, Lenovo India, and Qualcomm, in addition to Bagmane Constellation Business Park, Rainbow Children's Hospital and DJ Sports Complex in South Bengaluru.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Doddanekundi_metro_station_%28Apr_%2724%29.jpg/1280px-Doddanekundi_metro_station_%28Apr_%2724%29.jpg",
+        "alt": "Doddanekundi metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Doddanekundi_metro_station_%28Apr_%2724%29.jpg/1280px-Doddanekundi_metro_station_%28Apr_%2724%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Doddanekundi_metro_station_%28Mar_%2725%29.jpg/1280px-Doddanekundi_metro_station_%28Mar_%2725%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Doddanekundi_metro_station_%28Dec_%2723%29.jpg/1280px-Doddanekundi_metro_station_%28Dec_%2723%29.jpg"
+      ]
+    },
+    {
+      "name": "2024 Bengaluru cafe bombing",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "On 1 March 2024, two terrorists belonging to ISIS, Mussavir Hussain Shazib and Abdul Mateen Taha, planted an improvised explosive device (IED) inside a bag at the Rameshwaram Cafe in Bengaluru, India. The bomb detonated and at least eight people were injured and taken to hospital, though none were in critical condition.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "2024 Bengaluru cafe bombing"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Kodibeesanahalli metro station & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kodibeesanahalli metro station",
+          "note": "Kodibeesanahalli is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. Around this metro station holds the IT Companies like JP Morgan Chase,Adobe, Nutanix Technologies Pvt."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Marathahalli",
+          "note": "Marathahalli is a major eastern suburb of the city of Bengaluru, Karnataka. It is infamous for its traffic and is a cheaper choice for IT employees to live in because of its close proximity to the IT clusters in Mahadevapura, Bellandur, International Tech Park, and Whitefield.It is famous for having a huge Telugu population in the city and is known as the little Andhra of the city which led to many businesses being established in the local area catering specifically to their tastes."
+        },
+        {
+          "time": "Evening",
+          "activity": "Marathahalli metro station",
+          "note": "Marathahalli is an important upcoming elevated metro station on the north–south corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves mainly the Marathahalli suburban area and als WeWork, a coworking space company in South Bengaluru and the main Marathahalli Bridge that connects Kundalahalli area and HAL Aerospace Museum along with the Outer Ring Road which leads towards Hebbal in the north and Silk Board in the south."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — ISRO metro station & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "ISRO metro station",
+          "note": "ISRO is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro serves mainly the Doddanekundi area, which comprises the ISRO Assembly Integration & Testing Centre in South Bengaluru and the Outer Ring Road, which leads towards Krishnarajapura in the north and Bellandur in the south."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kadubeesanahalli metro station",
+          "note": "Embassy TechVillage Kadubeesanahalli (formerly known as Kadubeesanahalli) is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves mainly Embassy TechnoVillage, which comprises IT companies such J.P. Morgan Chase, Cisco, Wells Fargo, New Horizon College of Engineering and Carmatec ."
+        },
+        {
+          "time": "Evening",
+          "activity": "Vibhutipura Lake",
+          "note": "Vibuthipura Lake is a lake in the suburb of Hindustan Aeronautics Limited, in the southeast of the city of Bengaluru. The lake is the part of Bellandur-Varthur Lake series."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Doddanekundi metro station & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Doddanekundi metro station",
+          "note": "Doddanekundi is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station serves IT companies such as Amazon Web Services, Lenovo India, and Qualcomm, in addition to Bagmane Constellation Business Park, Rainbow Children's Hospital and DJ Sports Complex in South Bengaluru."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "2024 Bengaluru cafe bombing",
+          "note": "On 1 March 2024, two terrorists belonging to ISIS, Mussavir Hussain Shazib and Abdul Mateen Taha, planted an improvised explosive device (IED) inside a bag at the Rameshwaram Cafe in Bengaluru, India. The bomb detonated and at least eight people were injured and taken to hospital, though none were in critical condition."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Gangothri Residency",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Someshwara Temple, Marathahalli Stay"
+      }
+    },
+    {
+      "name": "Ringview Residency",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Someshwara Temple, Marathahalli"
+      }
+    },
+    {
+      "name": "Canara Bank Holiday Home",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Someshwara Temple, Marathahalli Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Hindustan",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Someshwara Temple, Marathahalli"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Heritage walks",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg/1280px-Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg",
+      "alt": "Someshwara Temple, Marathahalli, Karnataka"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Altars_in_front_of_the_open_mantapa_in_the_Someshwara_Temple_at_Kolar.jpg/1280px-Altars_in_front_of_the_open_mantapa_in_the_Someshwara_Temple_at_Kolar.jpg",
+      "alt": "Someshwara Temple, Marathahalli, Karnataka"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Relief_sculptures_on_mantapa_base_molding_in_Someshwara_Temple_at_Kolar.jpg/1280px-Relief_sculptures_on_mantapa_base_molding_in_Someshwara_Temple_at_Kolar.jpg",
+      "alt": "Someshwara Temple, Marathahalli, Karnataka"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/View_from_the_rear_of_the_Someshwara_Temple_at_Kolar.jpg/1280px-View_from_the_rear_of_the_Someshwara_Temple_at_Kolar.jpg",
+      "alt": "Someshwara Temple, Marathahalli, Karnataka"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rear_view_of_shrine_with_ornate_sikhara%2C_mantapa_half_pillars_and_gopura_of_Someshwara_Temple_at_Kolar.jpg/1280px-Rear_view_of_shrine_with_ornate_sikhara%2C_mantapa_half_pillars_and_gopura_of_Someshwara_Temple_at_Kolar.jpg",
+      "alt": "Someshwara Temple, Marathahalli, Karnataka"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Someshwara Temple, Marathahalli?",
+      "a": "The best time to visit Someshwara Temple, Marathahalli is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Someshwara Temple, Marathahalli?",
+      "a": "The nearest airport is Someshwara Temple, Marathahalli / nearest airport (30 km) and the nearest railway station is KSR Bengaluru City Junction (13 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Someshwara Temple, Marathahalli?",
+      "a": "3 days are usually enough to cover the top attractions of Someshwara Temple, Marathahalli at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Someshwara Temple, Marathahalli?",
+      "a": "Stays in Someshwara Temple, Marathahalli start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Someshwara Temple, Marathahalli?",
+      "a": "The top attractions are Kodibeesanahalli metro station, Marathahalli, Marathahalli metro station, ISRO metro station, Kadubeesanahalli metro station."
+    }
+  ],
+  "seo": {
+    "title": "Someshwara Temple, Marathahalli Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Someshwara Temple is a Hindu temple in Marathahalli, Bangalore, Karnataka, India, dedicated to Siva. Plan your Someshwara Temple, Marathahalli trip: 8 places to visit, 4 stays from ₹900/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=someshwara-temple-marathahalli",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg/1280px-Ornate_mantapa_pillars_in_Someshwara_Temple_at_Kolar.jpg",
+    "keywords": [
+      "Someshwara Temple, Marathahalli travel guide",
+      "places to visit in Someshwara Temple, Marathahalli",
+      "Someshwara Temple, Marathahalli hotels",
+      "best time to visit Someshwara Temple, Marathahalli",
+      "how to reach Someshwara Temple, Marathahalli",
+      "Karnataka tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

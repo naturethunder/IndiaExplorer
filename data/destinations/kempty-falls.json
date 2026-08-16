@@ -1,0 +1,585 @@
+{
+  "slug": "kempty-falls",
+  "title": "Kempty Falls",
+  "state": "Uttarakhand",
+  "country": "India",
+  "region": "Uttarakhand",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Kempty Falls — heritage city of Uttarakhand",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg",
+    "alt": "Kempty Falls, Uttarakhand"
+  },
+  "overview": {
+    "short": "Kempty Falls is a waterfall in Ram Gaon and at the south of Kempty, in the Tehri Garhwal District of Uttarakhand, India.",
+    "description": "Kempty Falls is a waterfall in Ram Gaon and at the south of Kempty, in the Tehri Garhwal District of Uttarakhand, India. It is 13 kilometres (8 mi) from Mussoorie on the Chakrata Road, and 45 kilometres (28 mi) from Dehradun. It is nearly 1364 meters above sea level, at 78°-02’East longitude and 30° -29’North latitude. The Kempty Falls, and the area around is surrounded by high mountain ranges at an altitude of 4500 feet.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 9110,
+    "minPrice": 900,
+    "distanceFromDelhi": 223
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 30.48731667,
+    "lng": 78.03620556,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 24,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 19 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 134,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 107 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 154,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 123 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 279,
+        "byCar": "5–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 223 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 308,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 246 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 409,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 327 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 460,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 368 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 489,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 391 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 513,
+        "byCar": "9–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 410 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 568,
+        "byCar": "9–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 454 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1008,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 806 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1105,
+        "byCar": "18–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 884 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1239,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 991 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1305,
+        "byCar": "22–29 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1044 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1340,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1072 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Kempty Falls / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Dehradun Railway Station",
+      "distance": 19
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Lal Bahadur Shastri National Academy of Administration",
+      "category": "scenic",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Lal Bahadur Shastri National Academy of Administration (LBSNAA) is a civil service training institute on public policy and public administration in Mussoorie, Uttarakhand in India. The academy's main purpose is to train civil servants of the IAS cadre and also conduct the Foundation Course of Group-A Central Civil Services.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Lal_Bahadur_Shastri_National_Academy_of_Administration%2C_Mussoorie%2C_at_night.JPG/1280px-Lal_Bahadur_Shastri_National_Academy_of_Administration%2C_Mussoorie%2C_at_night.JPG",
+        "alt": "Lal Bahadur Shastri National Academy of Administration"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Lal_Bahadur_Shastri_National_Academy_of_Administration%2C_Mussoorie%2C_at_night.JPG/1280px-Lal_Bahadur_Shastri_National_Academy_of_Administration%2C_Mussoorie%2C_at_night.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Narendra_Modi_offering_the_floral_tributes_on_the_statue_of_the_former_Prime_Minister%2C_Shri_Lal_Bahadur_Shastri%2C_at_the_Lal_Bahadur_Shastri_National_Academy_of_Administration_%28LBSNAA%29%2C_in_Mussoorie%2C_Uttarakhand.jpg/1280px-thumbnail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Prime_Minister%2C_Shri_Narendra_Modi_with_the_children_at_Balwadi%2C_at_the_Lal_Bahadur_Shastri_National_Academy_of_Administration_%28LBSNAA%29%2C_in_Mussoorie%2C_Uttarakhand_on_October_27%2C_2017.jpg/1280px-thumbnail.jpg"
+      ]
+    },
+    {
+      "name": "Mussoorie Wildlife Sanctuary",
+      "category": "wildlife",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Mussoorie Wildlife Sanctuary also known as Benog Wildlife Sanctuary, is a protected area and wildlife sanctuary located about 11 km (6.8 mi) Mussoorie in the Dehradun district of the Indian state of Uttarakhand. It was declared as a protected area on 2 September 1993.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mussoorie_Wildlife_Sanctuary.jpg/1280px-Mussoorie_Wildlife_Sanctuary.jpg",
+        "alt": "Mussoorie Wildlife Sanctuary"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mussoorie_Wildlife_Sanctuary.jpg/1280px-Mussoorie_Wildlife_Sanctuary.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Butterflies_of_Garhwal%2C_Uttarakhand%2C_western_Himalaya%2C_India.pdf/page1-960px-Butterflies_of_Garhwal%2C_Uttarakhand%2C_western_Himalaya%2C_India.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Savoy Hotel, Mussoorie",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "The Savoy, is a historic luxury hotel in the hill station, Mussoorie, in Uttarakhand state of India, owned by Mr. Kishore Kaya and Managed by the ITC Hotels.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Savoy-hotel-mussoorie.jpg",
+        "alt": "Savoy Hotel, Mussoorie"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Savoy-hotel-mussoorie.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/CONVENT_HILL_%26_SAVOY_HOTEL.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Savoy_Hotel_Piano.jpg/1280px-Savoy_Hotel_Piano.jpg"
+      ]
+    },
+    {
+      "name": "Kasmanda Palace",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Kasmanda Palace is a historic hotel in Mussoorie, Uttarakhand, India. It was originally built in 1836 by Captain Rennie Tailour of the Bengal Engineers as part of the Christ Church complex.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Palace_Kamlapur.JPG/1280px-Palace_Kamlapur.JPG",
+        "alt": "Kasmanda Palace"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Palace_Kamlapur.JPG/1280px-Palace_Kamlapur.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kellogg_Memorial_Church%2C_Landour.jpg/1280px-Kellogg_Memorial_Church%2C_Landour.jpg"
+      ]
+    },
+    {
+      "name": "Happy Valley, Mussoorie",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Happy Valley is an area situated within the hill station of Mussoorie with majority of Tibetans settled in area in Dehradun district, Uttarakhand, India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mussoorie_Uttarakhand_India_%28183712361%29.jpeg/1280px-Mussoorie_Uttarakhand_India_%28183712361%29.jpeg",
+        "alt": "Happy Valley, Mussoorie"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mussoorie_Uttarakhand_India_%28183712361%29.jpeg/1280px-Mussoorie_Uttarakhand_India_%28183712361%29.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mussoorie_Uttarakhand_India_Himalaya_%28183712363%29.jpeg/1280px-Mussoorie_Uttarakhand_India_Himalaya_%28183712363%29.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mussoorie_Uttarakhand_India_%28183712303%29.jpeg/1280px-Mussoorie_Uttarakhand_India_%28183712303%29.jpeg"
+      ]
+    },
+    {
+      "name": "Mussoorie",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Mussoorie (Garhwali: [məsuːɾiː]) is a hill station and a municipal board in the Dehradun district of the Indian state of Uttarakhand. It is about 26 kilometres (16 mi) from the state Winter capital Dehradun and 289 km (180 mi) north of the national capital of New Delhi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Mussoorie%2C_Uttarakhand.jpg",
+        "alt": "Mussoorie"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panoramic_view_of_Mussoorie%2C_Uttarakhand.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Company_garden_Mussoorie_waterfall.jpg/1280px-Company_garden_Mussoorie_waterfall.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mussoorie_Hill_Station.jpg/1280px-Mussoorie_Hill_Station.jpg"
+      ]
+    },
+    {
+      "name": "Landour",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Landour, a small cantonment town contiguous with Mussoorie, is about 35 km (22 mi) from the city of Dehradun in Dehradun district in the northern state of Uttarakhand in India. The twin towns of Mussoorie and Landour, together, are a well-known British Raj-era hill station in northern India.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Dehradun_Valley_from_Landour%2C_Uttarakhand_India_November_2010.jpg/1280px-Dehradun_Valley_from_Landour%2C_Uttarakhand_India_November_2010.jpg",
+        "alt": "Landour"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Dehradun_Valley_from_Landour%2C_Uttarakhand_India_November_2010.jpg/1280px-Dehradun_Valley_from_Landour%2C_Uttarakhand_India_November_2010.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Uttarakhand%2C_Dehradun_Valley_from_Landour%2C_India_2010.jpg/1280px-Uttarakhand%2C_Dehradun_Valley_from_Landour%2C_India_2010.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Landour_Cemetery_%285283897477%29.jpg/1280px-Landour_Cemetery_%285283897477%29.jpg"
+      ]
+    },
+    {
+      "name": "Tajewala Barrage",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Tajewala Barrage is a now decommissioned but existing old barrage across the Yamuna River, located in Yamuna Nagar District, in the state of Haryana, India. Completed in 1873, it regulated the flow of the Yamuna for irrigation in Uttar Pradesh and Haryana through two canals originating at this place namely Western Yamuna Canal and Eastern Yamuna Canal, as well as the municipal water supply to Delhi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/District_census_handbook%2C_Punjab_%28IA_districtcensusha05indi%29.pdf/page1-960px-District_census_handbook%2C_Punjab_%28IA_districtcensusha05indi%29.pdf.jpg",
+        "alt": "Tajewala Barrage"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/District_census_handbook%2C_Punjab_%28IA_districtcensusha05indi%29.pdf/page1-960px-District_census_handbook%2C_Punjab_%28IA_districtcensusha05indi%29.pdf.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Lal Bahadur Shastri National Academy of Administration & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Lal Bahadur Shastri National Academy of Administration",
+          "note": "Lal Bahadur Shastri National Academy of Administration (LBSNAA) is a civil service training institute on public policy and public administration in Mussoorie, Uttarakhand in India. The academy's main purpose is to train civil servants of the IAS cadre and also conduct the Foundation Course of Group-A Central Civil Services."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Mussoorie Wildlife Sanctuary",
+          "note": "Mussoorie Wildlife Sanctuary also known as Benog Wildlife Sanctuary, is a protected area and wildlife sanctuary located about 11 km (6.8 mi) Mussoorie in the Dehradun district of the Indian state of Uttarakhand. It was declared as a protected area on 2 September 1993."
+        },
+        {
+          "time": "Evening",
+          "activity": "Savoy Hotel, Mussoorie",
+          "note": "The Savoy, is a historic luxury hotel in the hill station, Mussoorie, in Uttarakhand state of India, owned by Mr. Kishore Kaya and Managed by the ITC Hotels."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Kasmanda Palace & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Kasmanda Palace",
+          "note": "Kasmanda Palace is a historic hotel in Mussoorie, Uttarakhand, India. It was originally built in 1836 by Captain Rennie Tailour of the Bengal Engineers as part of the Christ Church complex."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Happy Valley, Mussoorie",
+          "note": "Happy Valley is an area situated within the hill station of Mussoorie with majority of Tibetans settled in area in Dehradun district, Uttarakhand, India."
+        },
+        {
+          "time": "Evening",
+          "activity": "Mussoorie",
+          "note": "Mussoorie (Garhwali: [məsuːɾiː]) is a hill station and a municipal board in the Dehradun district of the Indian state of Uttarakhand. It is about 26 kilometres (16 mi) from the state Winter capital Dehradun and 289 km (180 mi) north of the national capital of New Delhi."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Landour & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Landour",
+          "note": "Landour, a small cantonment town contiguous with Mussoorie, is about 35 km (22 mi) from the city of Dehradun in Dehradun district in the northern state of Uttarakhand in India. The twin towns of Mussoorie and Landour, together, are a well-known British Raj-era hill station in northern India."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Tajewala Barrage",
+          "note": "Tajewala Barrage is a now decommissioned but existing old barrage across the Yamuna River, located in Yamuna Nagar District, in the state of Haryana, India. Completed in 1873, it regulated the flow of the Yamuna for irrigation in Uttar Pradesh and Haryana through two canals originating at this place namely Western Yamuna Canal and Eastern Yamuna Canal, as well as the municipal water supply to Delhi."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Clouds End",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Kempty Falls Stay"
+      }
+    },
+    {
+      "name": "Hotel Paradise Continental",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Kempty Falls"
+      }
+    },
+    {
+      "name": "Sterling Holidays",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kempty Falls Grand Hotel"
+      }
+    },
+    {
+      "name": "Welcomhotel by ITC Savoy Hotel",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Kempty Falls"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Wildlife safaris",
+    "Nature walks",
+    "Heritage walks",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg",
+      "alt": "Kempty Falls photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_04.jpg/960px-Kempty_Falls_at_Lakhwad%2C_Uttarakhand_04.jpg",
+      "alt": "Kempty Falls photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_03.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Uttarakhand_03.jpg",
+      "alt": "Kempty Falls photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_02.jpg/960px-Kempty_Falls_at_Lakhwad%2C_Uttarakhand_02.jpg",
+      "alt": "Kempty Falls photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_01.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Uttarakhand_01.jpg",
+      "alt": "Kempty Falls photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Kempty Falls?",
+      "a": "The best time to visit Kempty Falls is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Kempty Falls?",
+      "a": "The nearest airport is Kempty Falls / nearest airport (30 km) and the nearest railway station is Dehradun Railway Station (19 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Kempty Falls?",
+      "a": "3 days are usually enough to cover the top attractions of Kempty Falls at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Kempty Falls?",
+      "a": "Stays in Kempty Falls start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Kempty Falls?",
+      "a": "The top attractions are Lal Bahadur Shastri National Academy of Administration, Mussoorie Wildlife Sanctuary, Savoy Hotel, Mussoorie, Kasmanda Palace, Happy Valley, Mussoorie."
+    }
+  ],
+  "seo": {
+    "title": "Kempty Falls Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Kempty Falls is a waterfall in Ram Gaon and at the south of Kempty, in the Tehri Garhwal District of Uttarakhand, India. Plan your Kempty Falls trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=kempty-falls",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Kempty_06.jpg",
+    "keywords": [
+      "Kempty Falls travel guide",
+      "places to visit in Kempty Falls",
+      "Kempty Falls hotels",
+      "best time to visit Kempty Falls",
+      "how to reach Kempty Falls",
+      "Uttarakhand tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

@@ -1,0 +1,513 @@
+{
+  "slug": "agatti-island",
+  "title": "Agatti Island",
+  "state": "Lakshadweep",
+  "country": "India",
+  "region": "Lakshadweep Archipelago",
+  "type": "beach",
+  "badge": "Island Gateway",
+  "tagline": "Gateway airfield island of Lakshadweep with scenic ocean runway",
+  "image": {
+    "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1280&q=80",
+    "alt": "Agatti Island, Lakshadweep"
+  },
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1280&q=80",
+    "alt": "Agatti Island, Lakshadweep"
+  },
+  "overview": {
+    "short": "Gateway island with dramatic ocean airstrip runway and clear blue lagoons.",
+    "description": "Agatti Island features a 7km narrow strip of land surrounded by a deep blue ocean and calm shallow lagoons. It serves as the primary airfield entrance to the Lakshadweep archipelago.",
+    "features": [
+      "Lagoon Kayaking",
+      "Island Hopping",
+      "Airport Runway View",
+      "Deep Sea Fishing"
+    ],
+    "rating": 4.8,
+    "reviewCount": 1850,
+    "minPrice": 5500,
+    "distanceFromDelhi": 2130
+  },
+  "bestTime": {
+    "label": "Oct – May",
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 10.8533,
+    "lng": 72.1946,
+    "tempSummer": "26–33°C",
+    "tempWinter": "25–31°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 73,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 58 km · road approx."
+      },
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 461,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 369 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 571,
+        "byCar": "10–13 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 457 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 650,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 520 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 681,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 545 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1049,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 839 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 1089,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 871 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1243,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 994 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1329,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1063 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 1385,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1108 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1436,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1149 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1720,
+        "byCar": "29–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1376 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1916,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1533 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1919,
+        "byCar": "32–43 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1535 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 2245,
+        "byCar": "37–50 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1796 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 2393,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1914 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 2456,
+        "byCar": "41–55 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1965 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 2526,
+        "byCar": "42–56 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2021 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 2554,
+        "byCar": "43–57 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2043 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 2664,
+        "byCar": "44–59 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2131 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 2695,
+        "byCar": "45–60 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2156 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2800,
+        "byCar": "47–62 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2240 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 2809,
+        "byCar": "47–62 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2247 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 2826,
+        "byCar": "47–63 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2261 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 2888,
+        "byCar": "48–64 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2310 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 2909,
+        "byCar": "48–65 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2327 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 3059,
+        "byCar": "51–68 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2447 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 3104,
+        "byCar": "52–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2483 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 3139,
+        "byCar": "52–70 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2511 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 3251,
+        "byCar": "54–72 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2601 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 3301,
+        "byCar": "55–73 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2641 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 3310,
+        "byCar": "55–74 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2648 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 3330,
+        "byCar": "56–74 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2664 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 3461,
+        "byCar": "58–77 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2769 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 3541,
+        "byCar": "59–79 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2833 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 3595,
+        "byCar": "60–80 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2876 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Agatti Airport (AGX)",
+      "distance": 2
+    },
+    "nearestRailway": {
+      "name": "Ernakulam Junction",
+      "distance": 460
+    },
+    "roadNote": "Island transport via bicycle, auto-rickshaw or electric buggy."
+  },
+  "topPlaces": [
+    {
+      "name": "Agatti Lagoon",
+      "category": "beach",
+      "distance": "1 km",
+      "entryFee": "Free",
+      "timings": "All day",
+      "duration": "2–3 hrs",
+      "rating": 4.8,
+      "description": "Shallow calm waters perfect for swimming, windsurfing and glass-bottom boat rides.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Agatti Lagoon"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1280&q=80"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Kasim's Homestay",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 7000,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 410,
+      "amenities": [
+        "Diving Center",
+        "Airport Transfers",
+        "Restaurant"
+      ],
+      "tags": [
+        "Beachfront",
+        "Diving"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Agatti Island Beach Resort"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 1"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 2"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 3"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 4"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 5"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1280&q=80",
+      "alt": "Agatti Island photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How to get an entry permit for Agatti?",
+      "a": "Permits are arranged through approved travel agents or resort bookings prior to travel."
+    }
+  ],
+  "seo": {
+    "title": "Agatti Island Travel Guide 2026 — Airport, Hotels, Water Sports | IndiaExplore",
+    "description": "Plan your trip to Agatti Island in Lakshadweep: ocean runway, lagoon kayaking, resorts and permit requirements.",
+    "canonical": "destination.html?slug=agatti-island",
+    "ogImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Agatti Island",
+      "Agatti airport",
+      "Lakshadweep beaches"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}

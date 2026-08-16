@@ -1,0 +1,567 @@
+{
+  "slug": "padubidri-beach",
+  "title": "Padubidri Beach",
+  "state": "Karnataka",
+  "country": "India",
+  "region": "Karnataka",
+  "type": "beach",
+  "badge": "Popular",
+  "tagline": "Padubidri Beach — beach town of Karnataka",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Flag_Beach_Padubidri1.jpg/1280px-Blue_Flag_Beach_Padubidri1.jpg",
+    "alt": "Padubidri Beach, Karnataka"
+  },
+  "overview": {
+    "short": "Padubidri Beach is a coastal beach located at Padubidri in the Udupi district of Karnataka, India.",
+    "description": "Padubidri Beach is a coastal beach located at Padubidri in the Udupi district of Karnataka, India. It is one of the Blue Flag-certified beaches in the country, recognized for its cleanliness, environmental sustainability, and well-maintained facilities. The beach is known for its golden sands, tranquil waters, and lush green surroundings, attracting tourists and nature enthusiasts.",
+    "features": [
+      "Beaches",
+      "Seafood",
+      "Water Sports",
+      "Sunsets"
+    ],
+    "altitude": null,
+    "rating": 4.5,
+    "reviewCount": 10337,
+    "minPrice": 1200,
+    "distanceFromDelhi": 1740
+  },
+  "bestTime": {
+    "label": "Nov – Feb",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ]
+  },
+  "weather": {
+    "lat": 13.131944444,
+    "lng": 74.762222222,
+    "tempSummer": "26–36°C",
+    "tempWinter": "22–32°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Mangaluru (Karnataka)",
+        "city": "Mangaluru",
+        "state": "Karnataka",
+        "distance": 33,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 26 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 351,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 281 km · road approx."
+      },
+      {
+        "from": "Coimbatore (Tamil Nadu)",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "distance": 419,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 335 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 460,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 368 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 490,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 392 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 704,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 563 km · road approx."
+      },
+      {
+        "from": "Pune (Maharashtra)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "distance": 759,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 607 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 774,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 619 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 919,
+        "byCar": "15–20 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 735 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1043,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 834 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 1146,
+        "byCar": "19–25 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 917 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 1340,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1072 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1450,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1160 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 1598,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1278 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1776,
+        "byCar": "30–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1421 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Padubidri Beach / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Mangaluru Central",
+      "distance": 31
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Padubidri",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Padubidri /Padubidre (in Kannada) or Padubedre (in Tulu) is a town in the coastal district of Udupi in Karnataka state, India. It borders Mulki town in Dakshina Kannada District.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg/1280px-%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg",
+        "alt": "Padubidri"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg/1280px-%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Flag_Beach_Padubidri1.jpg/1280px-Blue_Flag_Beach_Padubidri1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Blue_Flag_Beach.jpg"
+      ]
+    },
+    {
+      "name": "Yermal",
+      "category": "scenic",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Yermal is a settlement in Udupi district of Karnataka state in India, between Uchila and Padubidri on National Highway 66. There are two parts of Yermal, one is Tenka (meaning \"south\" in Tulu) and the other Bada or Badagu (meaning \"north\" in Tulu).",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Brett%27s_New_Zealand_and_South_Pacific_pilot_%28IA_brettsnewzealand00tillrich%29.pdf/page1-500px-Brett%27s_New_Zealand_and_South_Pacific_pilot_%28IA_brettsnewzealand00tillrich%29.pdf.jpg",
+        "alt": "Yermal"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Brett%27s_New_Zealand_and_South_Pacific_pilot_%28IA_brettsnewzealand00tillrich%29.pdf/page1-500px-Brett%27s_New_Zealand_and_South_Pacific_pilot_%28IA_brettsnewzealand00tillrich%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Selections_from_the_travels_and_journals_preserved_in_the_Bombay_secretariat_%28IA_selectionsfromtr00forr%29.pdf/page1-960px-Selections_from_the_travels_and_journals_preserved_in_the_Bombay_secretariat_%28IA_selectionsfromtr00forr%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Price_list_of_agricultural_seeds%2C_and_treatise_on_permanent_pasture_grasses_and_the_adulteration_of_their_seeds_%28IA_CAT31290810%29.pdf/page1-500px-Price_list_of_agricultural_seeds%2C_and_treatise_on_permanent_pasture_grasses_and_the_adulteration_of_their_seeds_%28IA_CAT31290810%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Adamaru",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Adamaru or Adamaar or Admar is a village in the Udupi district of the state of Karnataka, India. The village houses one of the Ashta Mathas known as Adamaru Matha founded by Shri Madhvacharya, the Dvaita philosopher.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/UDUPI_SRI_KRISHNA.jpg/1280px-UDUPI_SRI_KRISHNA.jpg",
+        "alt": "Adamaru"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/UDUPI_SRI_KRISHNA.jpg/1280px-UDUPI_SRI_KRISHNA.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Medic%C3%A6_artis_principes%2C_post_Hippocratem_%26_Galenum._-_Graeci_Latinitate_donati%2C_Aret%C3%A6us%2C_Ruffus_Ephesius%2C_Oribasius%2C_Paulus_AEgineta_%28sic%29%2C_A%C3%ABtius%2C_Alex._Trallianus%2C_Actuarius%2C_Nic._%28IA_b33550876_0017%29.pdf/page1-1280px-thumbnail.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Fasciculus_temporum_omnes_antiquorum_cronicas_co%28m%29plectens_incipit_foeliciter_%28IA_fasciculustempo00role%29.pdf/page1-960px-Fasciculus_temporum_omnes_antiquorum_cronicas_co%28m%29plectens_incipit_foeliciter_%28IA_fasciculustempo00role%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Nandicoor",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Nandicoor (variously Nandikur or Nandikoor) is a village in Udupi district of Karnataka state in India. The Nandicoor village lies amidst paddy fields, coconut gardens and evergreen forests.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Nandicoor"
+      },
+      "photos": []
+    },
+    {
+      "name": "Udupi Power Plant",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Udupi Power Plant is a coal based thermal power station in Karnataka, India, established in 2008. It is located to the north of Mangalore, west of Belmannu, and just to the northeast of Padubidri in the village of Yellur, Udupi district, close to the Shambhavi River, roughly 7 or 8 km (4.3 or 5.0 mi) from the coast from where the imported coal for the power plant is transported to plant through rail line.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ecology_is_for_the_People.pdf/page1-960px-Ecology_is_for_the_People.pdf.jpg",
+        "alt": "Udupi Power Plant"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ecology_is_for_the_People.pdf/page1-960px-Ecology_is_for_the_People.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/In_Pursuit_of_Our_Roots.djvu/page1-960px-In_Pursuit_of_Our_Roots.djvu.jpg"
+      ]
+    },
+    {
+      "name": "Mulki, India",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Mulki, also anglicized as Moolki, is a panchayat town located in Mulki taluk of Dakshina Kannada district in the Indian state of Karnataka. It is located on the Kanara coast, and also lies on the banks of the Shambhavi River and was originally known as Moolikapur, which later evolved into its present name.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Caribbean_Seashell_Picking%2C_Mulki_-_panoramio.jpg/1280px-Caribbean_Seashell_Picking%2C_Mulki_-_panoramio.jpg",
+        "alt": "Mulki, India"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Caribbean_Seashell_Picking%2C_Mulki_-_panoramio.jpg/1280px-Caribbean_Seashell_Picking%2C_Mulki_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/LORD_HANUMAN_OF_MULKI.JPG/1280px-LORD_HANUMAN_OF_MULKI.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Mulki_Railway_Station.jpg/1280px-Mulki_Railway_Station.jpg"
+      ]
+    },
+    {
+      "name": "Palimar",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "Palimar is a village and Grama Panchayat in the Udupi district of Karnataka state, India. Palimaru village is located on north banks of River Shambavi It houses Palimar Matha, one of the Ashta Mathas of Udupi founded by the Dvaita philosopher Madhvacharya.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/River_Shambhavi_near_palimar_dam.jpg/1280px-River_Shambhavi_near_palimar_dam.jpg",
+        "alt": "Palimar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/River_Shambhavi_near_palimar_dam.jpg/1280px-River_Shambhavi_near_palimar_dam.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Palimar_moola_matha_entrance%2C_Palimar.jpg/1280px-Palimar_moola_matha_entrance%2C_Palimar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Palimar_Bridge.jpg/1280px-Palimar_Bridge.jpg"
+      ]
+    },
+    {
+      "name": "Kemundel",
+      "category": "scenic",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Kemundel (Kemundelu) is a place in the Udupi district of the state of Karnataka, India. It is near to Yellur and Admar.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kemundel"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Padubidri & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Padubidri",
+          "note": "Padubidri /Padubidre (in Kannada) or Padubedre (in Tulu) is a town in the coastal district of Udupi in Karnataka state, India. It borders Mulki town in Dakshina Kannada District."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Yermal",
+          "note": "Yermal is a settlement in Udupi district of Karnataka state in India, between Uchila and Padubidri on National Highway 66. There are two parts of Yermal, one is Tenka (meaning \"south\" in Tulu) and the other Bada or Badagu (meaning \"north\" in Tulu)."
+        },
+        {
+          "time": "Evening",
+          "activity": "Adamaru",
+          "note": "Adamaru or Adamaar or Admar is a village in the Udupi district of the state of Karnataka, India. The village houses one of the Ashta Mathas known as Adamaru Matha founded by Shri Madhvacharya, the Dvaita philosopher."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Nandicoor & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Nandicoor",
+          "note": "Nandicoor (variously Nandikur or Nandikoor) is a village in Udupi district of Karnataka state in India. The Nandicoor village lies amidst paddy fields, coconut gardens and evergreen forests."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Udupi Power Plant",
+          "note": "Udupi Power Plant is a coal based thermal power station in Karnataka, India, established in 2008. It is located to the north of Mangalore, west of Belmannu, and just to the northeast of Padubidri in the village of Yellur, Udupi district, close to the Shambhavi River, roughly 7 or 8 km (4.3 or 5.0 mi) from the coast from where the imported coal for the power plant is transported to plant through rail line."
+        },
+        {
+          "time": "Evening",
+          "activity": "Mulki, India",
+          "note": "Mulki, also anglicized as Moolki, is a panchayat town located in Mulki taluk of Dakshina Kannada district in the Indian state of Karnataka. It is located on the Kanara coast, and also lies on the banks of the Shambhavi River and was originally known as Moolikapur, which later evolved into its present name."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Palimar & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Palimar",
+          "note": "Palimar is a village and Grama Panchayat in the Udupi district of Karnataka state, India. Palimaru village is located on north banks of River Shambavi It houses Palimar Matha, one of the Ashta Mathas of Udupi founded by the Dvaita philosopher Madhvacharya."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Kemundel",
+          "note": "Kemundel (Kemundelu) is a place in the Udupi district of the state of Karnataka, India. It is near to Yellur and Admar."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Kamal Lodge (Hotel)",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 1900,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Padubidri Beach Stay"
+      }
+    },
+    {
+      "name": "New Girls Hostel Block",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 2300,
+      "priceMax": 3250,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Padubidri Beach"
+      }
+    },
+    {
+      "name": "Hotel Mayura",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3600,
+      "priceMax": 5400,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Padubidri Beach Grand Hotel"
+      }
+    },
+    {
+      "name": "Hotel Janardhana",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 7200,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Padubidri Beach"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Cultural",
+    "Beaches",
+    "Seafood",
+    "Water Sports",
+    "Sunsets"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Flag_Beach_Padubidri1.jpg/1280px-Blue_Flag_Beach_Padubidri1.jpg",
+      "alt": "Padubidri Beach photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg/1280px-%E0%B2%AC%E0%B3%8D%E0%B2%B2%E0%B3%82_%E0%B2%AB%E0%B2%BC%E0%B3%8D%E0%B2%B2%E0%B2%BE%E0%B2%97%E0%B3%8D_%E0%B2%AC%E0%B3%80%E0%B2%9A%E0%B3%8D%2C%E0%B2%AA%E0%B2%A1%E0%B3%81%E0%B2%AC%E0%B2%BF%E0%B2%A6%E0%B3%8D%E0%B2%B0%E0%B2%BF.jpg",
+      "alt": "Padubidri Beach photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Blue_Flag_Beach.jpg",
+      "alt": "Padubidri Beach photo 3"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Padubidri Beach?",
+      "a": "The best time to visit Padubidri Beach is Nov – Feb. Summers are 26–36°C and winters are 22–32°C."
+    },
+    {
+      "q": "How do I reach Padubidri Beach?",
+      "a": "The nearest airport is Padubidri Beach / nearest airport (30 km) and the nearest railway station is Mangaluru Central (31 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Padubidri Beach?",
+      "a": "3 days are usually enough to cover the top attractions of Padubidri Beach at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Padubidri Beach?",
+      "a": "Stays in Padubidri Beach start from ₹1,200 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Padubidri Beach?",
+      "a": "The top attractions are Padubidri, Yermal, Adamaru, Nandicoor, Udupi Power Plant."
+    }
+  ],
+  "seo": {
+    "title": "Padubidri Beach Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Padubidri Beach is a coastal beach located at Padubidri in the Udupi district of Karnataka, India. Plan your Padubidri Beach trip: 8 places to visit, 4 stays from ₹1200/night, best time (Nov – Feb) and routes.",
+    "canonical": "destination.html?slug=padubidri-beach",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Blue_Flag_Beach_Padubidri1.jpg/1280px-Blue_Flag_Beach_Padubidri1.jpg",
+    "keywords": [
+      "Padubidri Beach travel guide",
+      "places to visit in Padubidri Beach",
+      "Padubidri Beach hotels",
+      "best time to visit Padubidri Beach",
+      "how to reach Padubidri Beach",
+      "Karnataka tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

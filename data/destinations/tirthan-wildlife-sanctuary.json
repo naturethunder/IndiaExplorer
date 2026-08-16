@@ -1,0 +1,406 @@
+{
+  "slug": "tirthan-wildlife-sanctuary",
+  "title": "Tirthan Wildlife Sanctuary",
+  "state": "Himachal Pradesh",
+  "country": "India",
+  "region": "Himachal Pradesh",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Tirthan Wildlife Sanctuary — wildlife reserve of Himachal Pradesh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tirthan_River_Tirthan_Valley_DSC00968.jpg/1280px-Tirthan_River_Tirthan_Valley_DSC00968.jpg",
+    "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+  },
+  "overview": {
+    "short": "Tirthan Wildlife Sanctuary is a wildlife sanctuary in Himachal Pradesh, India.",
+    "description": "Tirthan Wildlife Sanctuary is a wildlife sanctuary in Himachal Pradesh, India. It is situated near the banks of the Tirthan river. It features densely forested areas and hosts a diverse fauna. In 2021, it was ranked the Best Managed Protected Area of India as per the Management Effectiveness Evaluation.",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.6,
+    "reviewCount": 10910,
+    "minPrice": 2500,
+    "distanceFromDelhi": 336
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 31.619444444,
+    "lng": 77.547222222,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 84,
+        "byCar": "1–2 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 67 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 154,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 123 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 190,
+        "byCar": "3–4 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 152 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 316,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 253 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 353,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 282 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 353,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 282 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 420,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 336 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 444,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 355 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 620,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 496 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 689,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 551 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1163,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 930 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1248,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 998 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1344,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1075 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1465,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1172 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1469,
+        "byCar": "24–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1175 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Tirthan Wildlife Sanctuary / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Chandigarh Railway Station",
+      "distance": 125
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Renuka Ji",
+      "category": "spiritual",
+      "distance": "9 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Sri Renukaji (also spelled Renuka Ji) is a Hindu shrine located on the shore of Renuka Lake in the Sirmaur district of Himachal Pradesh, India. The temple complex and adjacent wetland form a combined cultural, religious and ecological site centred on the veneration of the goddess Renuka, mother of the epic figure Parashurama.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Renuka_ji_temple%2C_Himachal_Pradesh.JPG/1280px-Renuka_ji_temple%2C_Himachal_Pradesh.JPG",
+        "alt": "Renuka Ji"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Renuka_ji_temple%2C_Himachal_Pradesh.JPG/1280px-Renuka_ji_temple%2C_Himachal_Pradesh.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Renuka_Temple_in_Renuka_Lake.JPG/1280px-Renuka_Temple_in_Renuka_Lake.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Renuka_lake.JPG/1280px-Renuka_lake.JPG"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Renuka Ji",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Renuka Ji",
+          "note": "Sri Renukaji (also spelled Renuka Ji) is a Hindu shrine located on the shore of Renuka Lake in the Sirmaur district of Himachal Pradesh, India. The temple complex and adjacent wetland form a combined cultural, religious and ecological site centred on the veneration of the goddess Renuka, mother of the epic figure Parashurama."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "River View Home Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Tirthan Wildlife Sanctuary Stay"
+      }
+    },
+    {
+      "name": "Sun N Sky",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Tirthan Wildlife Sanctuary"
+      }
+    },
+    {
+      "name": "Bhagwati",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Tirthan Wildlife Sanctuary Grand Hotel"
+      }
+    },
+    {
+      "name": "Sharchi Green valley Homestay",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1561501878-aabd62234533?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Tirthan Wildlife Sanctuary"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Spiritual",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tirthan_River_Tirthan_Valley_DSC00968.jpg/1280px-Tirthan_River_Tirthan_Valley_DSC00968.jpg",
+      "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Tirthan_%282832739538%29.jpg",
+      "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tirthan_River.jpg/1280px-Tirthan_River.jpg",
+      "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Tirthan_River%2C_Himachal_Pradesh.jpeg/1280px-Tirthan_River%2C_Himachal_Pradesh.jpeg",
+      "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Stone_arrangement_Tirthan_valley_DSC00755.jpg/1280px-Stone_arrangement_Tirthan_valley_DSC00755.jpg",
+      "alt": "Tirthan Wildlife Sanctuary, Himachal Pradesh"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Tirthan Wildlife Sanctuary?",
+      "a": "The best time to visit Tirthan Wildlife Sanctuary is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Tirthan Wildlife Sanctuary?",
+      "a": "The nearest airport is Tirthan Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Chandigarh Railway Station (125 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Tirthan Wildlife Sanctuary?",
+      "a": "2 days are usually enough to cover the top attractions of Tirthan Wildlife Sanctuary at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Tirthan Wildlife Sanctuary?",
+      "a": "Stays in Tirthan Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Tirthan Wildlife Sanctuary?",
+      "a": "The top attractions are Renuka Ji."
+    }
+  ],
+  "seo": {
+    "title": "Tirthan Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Tirthan Wildlife Sanctuary is a wildlife sanctuary in Himachal Pradesh, India. Plan your Tirthan Wildlife Sanctuary trip: 1 places to visit, 4 stays from ₹2500/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=tirthan-wildlife-sanctuary",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tirthan_River_Tirthan_Valley_DSC00968.jpg/1280px-Tirthan_River_Tirthan_Valley_DSC00968.jpg",
+    "keywords": [
+      "Tirthan Wildlife Sanctuary travel guide",
+      "places to visit in Tirthan Wildlife Sanctuary",
+      "Tirthan Wildlife Sanctuary hotels",
+      "best time to visit Tirthan Wildlife Sanctuary",
+      "how to reach Tirthan Wildlife Sanctuary",
+      "Himachal Pradesh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

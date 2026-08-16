@@ -1,0 +1,578 @@
+{
+  "slug": "gulmarg-wildlife-sanctuary",
+  "title": "Gulmarg Wildlife Sanctuary",
+  "state": "Jammu & Kashmir",
+  "country": "India",
+  "region": "Jammu & Kashmir",
+  "type": "wildlife",
+  "badge": "Popular",
+  "tagline": "Gulmarg Wildlife Sanctuary — wildlife reserve of Jammu & Kashmir",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg/1280px-Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg",
+    "alt": "Gulmarg Wildlife Sanctuary, Jammu & Kashmir"
+  },
+  "overview": {
+    "short": "The Gulmarg Wildlife Sanctuary spread over 180 square kilometres (69 mi2) is a protected area in Gulmarg, Baramulla district of Jammu and Kashmir, India.",
+    "description": "The Gulmarg Wildlife Sanctuary spread over 180 square kilometres (69 mi2) is a protected area in Gulmarg, Baramulla district of Jammu and Kashmir, India. It is one of the most beautiful and attractive sanctuaries in J&K. The sanctuary offers a pass that'll lead you to poonch district. Kanternag peak, Apharwatt peak, Neel kanth peak etc are the well known mountains of the sanctuary.The sanctuary lies on the north-eastern side of the Pir Panjal mountain range and falls under the northwest Biogeographic Zone 2A. It lies 50 kilometres (31 mi) south-west of Srinagar and 26 kilometres (16 mi) from B",
+    "features": [
+      "Safari",
+      "Wildlife",
+      "Nature",
+      "Birding"
+    ],
+    "altitude": null,
+    "rating": 4.2,
+    "reviewCount": 14488,
+    "minPrice": 2500,
+    "distanceFromDelhi": 656
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 33.994166666,
+    "lng": 74.374166666,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 50,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 40 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 334,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 267 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 370,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 296 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 519,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 415 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 534,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 427 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 669,
+        "byCar": "11–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 535 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 820,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 656 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 831,
+        "byCar": "14–18 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 665 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 999,
+        "byCar": "17–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 799 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1043,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 834 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1538,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1230 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1541,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1233 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1744,
+        "byCar": "29–39 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1395 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1878,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1502 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1899,
+        "byCar": "32–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1519 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Gulmarg Wildlife Sanctuary / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 124
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Apharwat Peak",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Apharwat Peak is a summit, situated at a height of 4,390 metres (14,403 ft) above the sea level, in Gulmarg, India. It receives heavy snowfall and remains covered with snow for much of the year.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "alt": "Apharwat Peak"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Srinagar_pano.jpg/1280px-Srinagar_pano.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Apharwat_Peak.JPG/1280px-Apharwat_Peak.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Afoot_through_the_Kashmir_valleys_%28IA_afootthroughkash00dougiala%29.pdf/page1-500px-Afoot_through_the_Kashmir_valleys_%28IA_afootthroughkash00dougiala%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Khyber Himalayan Resort & Spa",
+      "category": "scenic",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "The Khyber Himalayan Resort & Spa, or simply The Khyber, is an Indian luxury resort in Gulmarg, Jammu and Kashmir. It was inaugurated in 2012 and was originally built with INR 120 crore over a period of seven years.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Khyber Himalayan Resort & Spa"
+      },
+      "photos": []
+    },
+    {
+      "name": "Gulmarg Gondola",
+      "category": "scenic",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Gulmarg Gondola in Gulmarg, Jammu and Kashmir, is the second longest and second highest cable car in the world. Higher lines include the Mi Teleférico in Bolivia and at Jade Dragon Snow Mountain.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Gulmarg_Gondola%2C_Cable_Car.JPG/1280px-Gulmarg_Gondola%2C_Cable_Car.JPG",
+        "alt": "Gulmarg Gondola"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Gulmarg_Gondola%2C_Cable_Car.JPG/1280px-Gulmarg_Gondola%2C_Cable_Car.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gulmarg_Gondola_%28ropeway_or_cable_transport%29_station_in_Jammu_and_Kashmir.jpg/1280px-Gulmarg_Gondola_%28ropeway_or_cable_transport%29_station_in_Jammu_and_Kashmir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Tourists_at_the_Gulmarg_Gondola_station_in_2013.jpg/1280px-Tourists_at_the_Gulmarg_Gondola_station_in_2013.jpg"
+      ]
+    },
+    {
+      "name": "Khilanmarg",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Khilanmarg is a small valley in Jammu and Kashmir, India, located about 6 kilometres (3.7 mi) away from the Gulmarg. The meadow, carpeted with flowers in the spring, is the site for Gulmarg's winter ski runs and offers a view of the surrounding peaks and over the Kashmir Valley.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_in_Gulmarg%2C_Kashmir.jpg/1280px-Snow_in_Gulmarg%2C_Kashmir.jpg",
+        "alt": "Khilanmarg"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_in_Gulmarg%2C_Kashmir.jpg/1280px-Snow_in_Gulmarg%2C_Kashmir.jpg"
+      ]
+    },
+    {
+      "name": "Gulmarg",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Gulmarg (also known as Gulmarag, lit. 'meadow of flowers' in Kashmiri) is a hill station and a notified area committee in Baramulla district of the Indian union territory of Jammu and Kashmir. It is located in the Indian administered Kashmir, close to the Line of Control that serves as the de facto border between India and Pakistan.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Abandoned_Gulmarg_Hotel.jpg/1280px-Abandoned_Gulmarg_Hotel.jpg",
+        "alt": "Gulmarg"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Abandoned_Gulmarg_Hotel.jpg/1280px-Abandoned_Gulmarg_Hotel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Tourists_enjoying_snow_at_Gulmarg%2C_in_Jammu_and_Kashmir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Tourists_from_West_Bengal_in_Gulmarg%2C_Jammu_and_Kashmir.jpg/1280px-Tourists_from_West_Bengal_in_Gulmarg%2C_Jammu_and_Kashmir.jpg"
+      ]
+    },
+    {
+      "name": "St Mary's Church, Gulmarg",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "St Mary's Church is located in the Valley of Shepherds in Gulmarg and is one of the oldest churches in Jammu and Kashmir, India. It was built in 1902, during the period of British rule, and was constructed in a British style.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_01.jpg/1280px-St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_01.jpg",
+        "alt": "St Mary's Church, Gulmarg"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_01.jpg/1280px-St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Inner_view_of_St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_02.jpg/1280px-Inner_view_of_St_Mary%27s_Church_in_the_valley_of_Shepherds_in_Gulmarg_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Irene_Petrie%2C_missionary_to_Kashmir_%28IA_irenepetriemissi00caru%29.pdf/page1-500px-Irene_Petrie%2C_missionary_to_Kashmir_%28IA_irenepetriemissi00caru%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Gulmarg Golf Club",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "The Gulmarg Golf Club is a public golf course in a meadow at Gulmarg in Baramulla district, Jammu and Kashmir, India. It lies 35 km from Baramulla city.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Our_summer_in_the_vale_of_Kashmir_%28IA_cu31924023972601%29.pdf/page1-500px-Our_summer_in_the_vale_of_Kashmir_%28IA_cu31924023972601%29.pdf.jpg",
+        "alt": "Gulmarg Golf Club"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Our_summer_in_the_vale_of_Kashmir_%28IA_cu31924023972601%29.pdf/page1-500px-Our_summer_in_the_vale_of_Kashmir_%28IA_cu31924023972601%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Our_summer_in_the_vale_of_Kashmir_%28IA_oursummerinvaleo00deny%29.pdf/page1-500px-Our_summer_in_the_vale_of_Kashmir_%28IA_oursummerinvaleo00deny%29.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Beyond_the_Pir_Panjal%3B_life_and_missionary_enterprise_in_Kashmir_%28IA_beyondpirpanjall00neveiala%29.pdf/page1-500px-Beyond_the_Pir_Panjal%3B_life_and_missionary_enterprise_in_Kashmir_%28IA_beyondpirpanjall00neveiala%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Hardu-Aboora",
+      "category": "scenic",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Hardu-Aboora or Hardu-Aboor is a locality in Karhama tehsil in Baramulla district in the Indian union territory of Jammu and Kashmir. It is situated on the banks of Ferozpora Nallah, at the foothills of the mountain range that runs parallel to the Srinagar-Gulmarg highway on its left side, some 15 km (9.3 mi) from Tangmarg town, Baramulla and 29 km (18 mi) from the state capital, Srinagar, and 10 km (6.2 mi) from railway station Mazhama.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Hardu-Aboora"
+      },
+      "photos": []
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Apharwat Peak & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Apharwat Peak",
+          "note": "Apharwat Peak is a summit, situated at a height of 4,390 metres (14,403 ft) above the sea level, in Gulmarg, India. It receives heavy snowfall and remains covered with snow for much of the year."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Khyber Himalayan Resort & Spa",
+          "note": "The Khyber Himalayan Resort & Spa, or simply The Khyber, is an Indian luxury resort in Gulmarg, Jammu and Kashmir. It was inaugurated in 2012 and was originally built with INR 120 crore over a period of seven years."
+        },
+        {
+          "time": "Evening",
+          "activity": "Gulmarg Gondola",
+          "note": "Gulmarg Gondola in Gulmarg, Jammu and Kashmir, is the second longest and second highest cable car in the world. Higher lines include the Mi Teleférico in Bolivia and at Jade Dragon Snow Mountain."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Khilanmarg & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Khilanmarg",
+          "note": "Khilanmarg is a small valley in Jammu and Kashmir, India, located about 6 kilometres (3.7 mi) away from the Gulmarg. The meadow, carpeted with flowers in the spring, is the site for Gulmarg's winter ski runs and offers a view of the surrounding peaks and over the Kashmir Valley."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Gulmarg",
+          "note": "Gulmarg (also known as Gulmarag, lit. 'meadow of flowers' in Kashmiri) is a hill station and a notified area committee in Baramulla district of the Indian union territory of Jammu and Kashmir. It is located in the Indian administered Kashmir, close to the Line of Control that serves as the de facto border between India and Pakistan."
+        },
+        {
+          "time": "Evening",
+          "activity": "St Mary's Church, Gulmarg",
+          "note": "St Mary's Church is located in the Valley of Shepherds in Gulmarg and is one of the oldest churches in Jammu and Kashmir, India. It was built in 1902, during the period of British rule, and was constructed in a British style."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Gulmarg Golf Club & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Gulmarg Golf Club",
+          "note": "The Gulmarg Golf Club is a public golf course in a meadow at Gulmarg in Baramulla district, Jammu and Kashmir, India. It lies 35 km from Baramulla city."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Hardu-Aboora",
+          "note": "Hardu-Aboora or Hardu-Aboor is a locality in Karhama tehsil in Baramulla district in the Indian union territory of Jammu and Kashmir. It is situated on the banks of Ferozpora Nallah, at the foothills of the mountain range that runs parallel to the Srinagar-Gulmarg highway on its left side, some 15 km (9.3 mi) from Tangmarg town, Baramulla and 29 km (18 mi) from the state capital, Srinagar, and 10 km (6.2 mi) from railway station Mazhama."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Kingsley",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 2500,
+      "priceMax": 4000,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Gulmarg Wildlife Sanctuary Stay"
+      }
+    },
+    {
+      "name": "Affarwat",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 4750,
+      "priceMax": 6750,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Gulmarg Wildlife Sanctuary"
+      }
+    },
+    {
+      "name": "Hotel Park Royal",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 7500,
+      "priceMax": 11250,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Gulmarg Wildlife Sanctuary Grand Hotel"
+      }
+    },
+    {
+      "name": "Pine Palace Platinum",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 15000,
+      "priceMax": 25000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Jungle Lodges Gulmarg Wildlife Sanctuary"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Spiritual",
+    "Safari",
+    "Wildlife",
+    "Nature",
+    "Birding"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg/1280px-Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg",
+      "alt": "Gulmarg Wildlife Sanctuary photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flora_of_Gulmarg_Wildlife_Sanctuary.jpg/1280px-Flora_of_Gulmarg_Wildlife_Sanctuary.jpg",
+      "alt": "Gulmarg Wildlife Sanctuary photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Gulmarg_Wildlife_Sanctuary.jpg/1280px-Gulmarg_Wildlife_Sanctuary.jpg",
+      "alt": "Gulmarg Wildlife Sanctuary photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gulmarg-Valley.jpg/1280px-Gulmarg-Valley.jpg",
+      "alt": "Gulmarg Wildlife Sanctuary photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cherry_boy.jpg/1280px-Cherry_boy.jpg",
+      "alt": "Gulmarg Wildlife Sanctuary photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Gulmarg Wildlife Sanctuary?",
+      "a": "The best time to visit Gulmarg Wildlife Sanctuary is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Gulmarg Wildlife Sanctuary?",
+      "a": "The nearest airport is Gulmarg Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (124 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Gulmarg Wildlife Sanctuary?",
+      "a": "3 days are usually enough to cover the top attractions of Gulmarg Wildlife Sanctuary at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Gulmarg Wildlife Sanctuary?",
+      "a": "Stays in Gulmarg Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Gulmarg Wildlife Sanctuary?",
+      "a": "The top attractions are Apharwat Peak, Khyber Himalayan Resort & Spa, Gulmarg Gondola, Khilanmarg, Gulmarg."
+    }
+  ],
+  "seo": {
+    "title": "Gulmarg Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "The Gulmarg Wildlife Sanctuary spread over 180 square kilometres (69 mi2) is a protected area in Gulmarg, Baramulla district of Jammu and Kashmir, India. Plan your Gulmarg Wildlife Sanctuary trip: 8 places to visit, 4 stays from ₹2500/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=gulmarg-wildlife-sanctuary",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg/1280px-Snow_Clad_Hut_in_Gulmarg%2C_Jammu_%26_Kashmir.jpg",
+    "keywords": [
+      "Gulmarg Wildlife Sanctuary travel guide",
+      "places to visit in Gulmarg Wildlife Sanctuary",
+      "Gulmarg Wildlife Sanctuary hotels",
+      "best time to visit Gulmarg Wildlife Sanctuary",
+      "how to reach Gulmarg Wildlife Sanctuary",
+      "Jammu & Kashmir tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

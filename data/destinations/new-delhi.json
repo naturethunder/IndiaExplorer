@@ -1,0 +1,1206 @@
+{
+  "slug": "new-delhi",
+  "title": "New Delhi",
+  "state": "Delhi",
+  "country": "India",
+  "region": "North India",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "New Delhi — Delhi",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/1280px-Delhi_fort.jpg",
+    "alt": "New Delhi — Capital of India"
+  },
+  "overview": {
+    "short": "The historic capital of India — home to UNESCO World Heritage monuments, grand Mughal architecture, bustling bazaars, and world-class luxury stays.",
+    "description": "New Delhi is a captivating blend of ancient history and vibrant modernity. From imperial Mughal landmarks like Red Fort, Qutub Minar, and Humayun's Tomb to lush Mughal gardens, Lutyens' ceremonial avenues, and bustling spice markets of Chandni Chowk, Delhi offers an unforgettable travel experience for every explorer.",
+    "features": [],
+    "rating": 4.8,
+    "reviewCount": 14200,
+    "minPrice": 2200,
+    "distanceFromDelhi": 0
+  },
+  "bestTime": {
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "label": "Oct – Mar (Pleasant Winters)"
+  },
+  "weather": {
+    "lat": 28.6139,
+    "lng": 77.209,
+    "tempSummer": "25°C – 42°C",
+    "tempWinter": "6°C – 22°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 31,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 25 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 223,
+        "byCar": "4–5 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 178 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 256,
+        "byCar": "4–6 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 205 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 294,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 235 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 299,
+        "byCar": "5–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "No direct flight — rail/road faster",
+        "via": "Straight-line 239 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 346,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 277 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 505,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 404 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 638,
+        "byCar": "11–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 510 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 745,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 596 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 771,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 617 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 970,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 776 km · road approx."
+      },
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 1065,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 852 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1066,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 853 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1165,
+        "byCar": "19–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 932 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1249,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 999 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 1269,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1015 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1401,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1121 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1411,
+        "byCar": "24–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1129 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 1569,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1255 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1588,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1270 km · road approx."
+      },
+      {
+        "from": "Visakhapatnam (Andhra Pradesh)",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "distance": 1701,
+        "byCar": "28–38 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1361 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 1824,
+        "byCar": "30–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1459 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 1864,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1491 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 1875,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1500 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1875,
+        "byCar": "31–42 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1500 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2025,
+        "byCar": "34–45 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1620 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2049,
+        "byCar": "34–46 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1639 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2128,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1702 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2141,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1713 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 2175,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1740 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 2195,
+        "byCar": "37–49 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1756 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 2341,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1873 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 2579,
+        "byCar": "43–57 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2063 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 2600,
+        "byCar": "43–58 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2080 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 3104,
+        "byCar": "52–69 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 2483 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 15
+    },
+    "nearestRailway": {
+      "name": "New Delhi Railway Station (NDLS)",
+      "distance": 2
+    },
+    "roadNote": "Nearest major city: Gurugram (30 km)."
+  },
+  "topPlaces": [
+    {
+      "name": "Red Fort (Lal Qila)",
+      "category": "UNESCO Monument",
+      "description": "A magnificent 17th-century red sandstone fortress built by Mughal Emperor Shah Jahan. Serves as the historic seat of Mughal power and the site of India's annual Independence Day ceremony.",
+      "distance": "4.5 km",
+      "duration": "2 – 3 hrs",
+      "entryFee": "₹50 (Indian) / ₹600 (Foreigner)",
+      "timings": "9:30 AM – 4:30 PM (Closed Mondays)",
+      "rating": 4.8,
+      "lat": 28.6562,
+      "lng": 77.241,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/1280px-Delhi_fort.jpg",
+        "alt": "Red Fort (Lal Qila) in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/1280px-Delhi_fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Diwan-i-Khas%2C_Red_Fort%2C_Delhi.jpg/1280px-Diwan-i-Khas%2C_Red_Fort%2C_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Red_Fort_drawing.svg/1280px-Red_Fort_drawing.svg.png"
+      ]
+    },
+    {
+      "name": "Qutub Minar",
+      "category": "UNESCO Monument",
+      "description": "Standing at 72.5 meters, this world-renowned 12th-century brick minaret is decorated with intricate carving and Quranic inscriptions, surrounded by ancient ruins including the 1,600-year-old rust-resistant Iron Pillar.",
+      "distance": "14 km",
+      "duration": "1.5 – 2 hrs",
+      "entryFee": "₹40 (Indian) / ₹600 (Foreigner)",
+      "timings": "7:00 AM – 5:00 PM (Daily)",
+      "rating": 4.8,
+      "lat": 28.5245,
+      "lng": 77.1855,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Qutub_Minar_3.jpg/1280px-Qutub_Minar_3.jpg",
+        "alt": "Qutub Minar in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Qutub_Minar_3.jpg/1280px-Qutub_Minar_3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Iron_Pillar_of_Delhi.jpg/1280px-Iron_Pillar_of_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Qutb_Minar_2011.jpg/1280px-Qutb_Minar_2011.jpg"
+      ]
+    },
+    {
+      "name": "Humayun's Tomb",
+      "category": "UNESCO Monument",
+      "description": "The first garden-tomb on the Indian subcontinent, built in 1570 for Mughal Emperor Humayun. Its symmetrical Charbagh garden and red sandstone-marble dome directly inspired the Taj Mahal.",
+      "distance": "6 km",
+      "duration": "2 hrs",
+      "entryFee": "₹40 (Indian) / ₹600 (Foreigner)",
+      "timings": "6:00 AM – 6:00 PM (Daily)",
+      "rating": 4.8,
+      "lat": 28.5849,
+      "lng": 77.2507,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Humayun%27s_Tomb_at_Delhi.jpg/1280px-Humayun%27s_Tomb_at_Delhi.jpg",
+        "alt": "Humayun's Tomb in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Humayun%27s_Tomb_at_Delhi.jpg/1280px-Humayun%27s_Tomb_at_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Humayun_Tomb_Delhi_India.jpg/1280px-Humayun_Tomb_Delhi_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/1280px-Tomb_of_Humayun%2C_Delhi.jpg"
+      ]
+    },
+    {
+      "name": "India Gate & Kartavya Path",
+      "category": "National Monument",
+      "description": "A striking 42-meter high triumphal war memorial arch honoring 84,000 soldiers. Flanked by lush lawns, fountains, and the grand Kartavya Path leading to Rashtrapati Bhavan.",
+      "distance": "2 km",
+      "duration": "1 – 2 hrs",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours (Best at sunset & evening illumination)",
+      "rating": 4.7,
+      "lat": 28.6129,
+      "lng": 77.2295,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/India_Gate_in_New_Delhi_03-2016.jpg/1280px-India_Gate_in_New_Delhi_03-2016.jpg",
+        "alt": "India Gate & Kartavya Path in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/India_Gate_in_New_Delhi_03-2016.jpg/1280px-India_Gate_in_New_Delhi_03-2016.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PXL_20231127_142319433_India_Gate_at_Night_Kartavya_Path%2C_New_Delhi%2C_Delhi_110001_01.jpg/1280px-PXL_20231127_142319433_India_Gate_at_Night_Kartavya_Path%2C_New_Delhi%2C_Delhi_110001_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/PXL_20231127_142319433_India_Gate_at_Night_Kartavya_Path%2C_New_Delhi%2C_Delhi_110001_05.jpg/1280px-PXL_20231127_142319433_India_Gate_at_Night_Kartavya_Path%2C_New_Delhi%2C_Delhi_110001_05.jpg"
+      ]
+    },
+    {
+      "name": "Lotus Temple",
+      "category": "Architecture & Peace",
+      "description": "Famous for its flower-like white marble petal design, this Bahá'í House of Worship is set amidst 26 acres of serene ponds and gardens, welcoming visitors of all faiths to meditate in silence.",
+      "distance": "12 km",
+      "duration": "1 – 1.5 hrs",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:30 PM (Closed Mondays)",
+      "rating": 4.6,
+      "lat": 28.5535,
+      "lng": 77.2588,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Lotus_Temple_in_New_Delhi_03-2016.jpg/1280px-Lotus_Temple_in_New_Delhi_03-2016.jpg",
+        "alt": "Lotus Temple in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Lotus_Temple_in_New_Delhi_03-2016.jpg/1280px-Lotus_Temple_in_New_Delhi_03-2016.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lotus_Temple-Panoroma-Visit_During_WCI_2016-_IMG_6471.jpg/1280px-Lotus_Temple-Panoroma-Visit_During_WCI_2016-_IMG_6471.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lotus_temple_in_Delhi%2C_India_%282018%29.jpg/1280px-Lotus_temple_in_Delhi%2C_India_%282018%29.jpg"
+      ]
+    },
+    {
+      "name": "Akshardham Temple",
+      "category": "Spiritual Complex",
+      "description": "A colossal pink sandstone and white marble Hindu temple complex showcasing 10,000 years of Indian culture, featuring carved stone pillars, thematic boat rides, musical fountain shows, and sprawling gardens.",
+      "distance": "8 km",
+      "duration": "3 – 4 hrs",
+      "entryFee": "Free (Exhibitions & Fountain show: ₹250)",
+      "timings": "10:00 AM – 6:30 PM (Closed Mondays)",
+      "rating": 4.9,
+      "lat": 28.6127,
+      "lng": 77.2773,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+        "alt": "Akshardham Temple in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Akshardham_fountain.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Akshardham_Lotus.jpg"
+      ]
+    },
+    {
+      "name": "Jama Masjid",
+      "category": "Historic Mosque",
+      "description": "Constructed by Mughal Emperor Shah Jahan between 1644 and 1656, this monumental red sandstone and white marble mosque can accommodate over 25,000 worshippers in its sprawling courtyard.",
+      "distance": "4 km",
+      "duration": "1 hr",
+      "entryFee": "Free (Minaret climb: ₹100)",
+      "timings": "7:00 AM – 12:00 PM & 1:30 PM – 6:30 PM (Daily)",
+      "rating": 4.6,
+      "lat": 28.6507,
+      "lng": 77.2334,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jama_Masjid_Delhi.jpg",
+        "alt": "Jama Masjid in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jama_Masjid_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Jama_Masjid_2011.jpg/1280px-Jama_Masjid_2011.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Jama_Masjid%2C_Delhi.jpg/1280px-Jama_Masjid%2C_Delhi.jpg"
+      ]
+    },
+    {
+      "name": "Chandni Chowk",
+      "category": "Heritage Bazaar",
+      "description": "Established in the 17th century by Princess Jahanara, Old Delhi's iconic market is world-famous for narrow heritage lanes, street food delicacies (paranthas, jalebis), spices (Khari Baoli), and textiles.",
+      "distance": "3.5 km",
+      "duration": "2 – 3 hrs",
+      "entryFee": "Free",
+      "timings": "10:00 AM – 8:00 PM (Closed Sundays)",
+      "rating": 4.6,
+      "lat": 28.6506,
+      "lng": 77.2303,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_02.jpg/1280px-State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_02.jpg",
+        "alt": "Chandni Chowk in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_02.jpg/1280px-State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_03.jpg/1280px-State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_04.jpg/1280px-State_Bank_of_India%2C_Chandni_Chowk_branch%2C_Delhi_04.jpg"
+      ]
+    },
+    {
+      "name": "Lodhi Garden",
+      "category": "Historic Park",
+      "description": "A peaceful 90-acre city park dotted with grand 15th-century mausoleums of the Sayyid and Lodi Dynasties, landscaped lawns, ancient stone bridges, and tranquil duck ponds.",
+      "distance": "3.8 km",
+      "duration": "1.5 – 2 hrs",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:30 PM (Daily)",
+      "rating": 4.8,
+      "lat": 28.5933,
+      "lng": 77.2197,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lodhi_Garden_Tomb_2019.jpg/1280px-Lodhi_Garden_Tomb_2019.jpg",
+        "alt": "Lodhi Garden in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lodhi_Garden_Tomb_2019.jpg/1280px-Lodhi_Garden_Tomb_2019.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/Lodhi_Garden_-_Delhi.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/A_street_at_Lodhi_Gardens%2C_Delhi.jpg/1280px-A_street_at_Lodhi_Gardens%2C_Delhi.jpg"
+      ]
+    },
+    {
+      "name": "Hauz Khas Village & Fort",
+      "category": "Heritage & Nightlife",
+      "description": "An eclectic urban contrast featuring 14th-century Khalji dynasty reservoir ruins, madrasa pavilions, and royal tombs paired directly with trendy art galleries, boutique shops, and rooftop cafes.",
+      "distance": "10 km",
+      "duration": "2 – 3 hrs",
+      "entryFee": "Free",
+      "timings": "10:30 AM – 7:00 PM (Fort complex)",
+      "rating": 4.6,
+      "lat": 28.5494,
+      "lng": 77.1937,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Ancient_Water_Reservoir.jpg/1280px-Ancient_Water_Reservoir.jpg",
+        "alt": "Hauz Khas Village & Fort in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Ancient_Water_Reservoir.jpg/1280px-Ancient_Water_Reservoir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hauz_Khas_Village_Lake.jpg/1280px-Hauz_Khas_Village_Lake.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/The_arch%C3%A6ology_and_monumental_remains_of_Delhi_%28IA_b28709548%29.pdf/page1-960px-The_arch%C3%A6ology_and_monumental_remains_of_Delhi_%28IA_b28709548%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Gurudwara Bangla Sahib",
+      "category": "Spiritual Landmark",
+      "description": "One of the most prominent Sikh gurdwaras in Delhi, recognized by its gleaming gold dome, sacred Sarovar reflection pool, and community kitchen (Langar) feeding tens of thousands daily.",
+      "distance": "1.5 km",
+      "duration": "1 hr",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours (Daily)",
+      "rating": 4.9,
+      "lat": 28.6264,
+      "lng": 77.2091,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Gurudwara_Bangla_Sahib_New_Delhi.jpg/1280px-Gurudwara_Bangla_Sahib_New_Delhi.jpg",
+        "alt": "Gurudwara Bangla Sahib in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Gurudwara_Bangla_Sahib_New_Delhi.jpg/1280px-Gurudwara_Bangla_Sahib_New_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img1.jpg/1280px-Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img2.jpg/1280px-Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img2.jpg"
+      ]
+    },
+    {
+      "name": "Agrasen ki Baoli",
+      "category": "Stepwell & Heritage",
+      "description": "A hidden 60-meter long historical stepwell featuring 108 stone steps descending through three levels of arched alcoves in the heart of Connaught Place, protected by the Archaeological Survey of India.",
+      "distance": "1.8 km",
+      "duration": "45 min",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:30 PM (Daily)",
+      "rating": 4.6,
+      "lat": 28.626,
+      "lng": 77.225,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Agrasen_Ki_Baoli-New_Delhi-Delhi-DSC02.jpg/1280px-Agrasen_Ki_Baoli-New_Delhi-Delhi-DSC02.jpg",
+        "alt": "Agrasen ki Baoli in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Agrasen_Ki_Baoli-New_Delhi-Delhi-DSC02.jpg/1280px-Agrasen_Ki_Baoli-New_Delhi-Delhi-DSC02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Agrasen_ki_Baoli%2C_Delhi_2.jpg/1280px-Agrasen_ki_Baoli%2C_Delhi_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/PXL_20231130_032601650_Agrasen_ki_Baoli_New_Delhi%2C_Delhi_110001_14.jpg/1280px-PXL_20231130_032601650_Agrasen_ki_Baoli_New_Delhi%2C_Delhi_110001_14.jpg"
+      ]
+    },
+    {
+      "name": "Rashtrapati Bhavan & Amrit Udyan",
+      "category": "Royal Palace & Gardens",
+      "description": "The official 340-room residence of the President of India, designed by Sir Edwin Lutyens. Features the famous 15-acre Amrit Udyan (Mughal Gardens) showcasing rare tulips, roses, and circular fountains.",
+      "distance": "2.2 km",
+      "duration": "2 hrs",
+      "entryFee": "₹50 (Online booking required)",
+      "timings": "9:00 AM – 4:00 PM (Selected days & seasonal opening)",
+      "rating": 4.8,
+      "lat": 28.6143,
+      "lng": 77.1994,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rashtrapati_Bhavan_%2CDelhi_03.jpg/1280px-Rashtrapati_Bhavan_%2CDelhi_03.jpg",
+        "alt": "Rashtrapati Bhavan & Amrit Udyan in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rashtrapati_Bhavan_%2CDelhi_03.jpg/1280px-Rashtrapati_Bhavan_%2CDelhi_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Rashtrapati_Bhavan_Mughal_Garden_New_Delhi_02.jpg/1280px-Rashtrapati_Bhavan_Mughal_Garden_New_Delhi_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Rashtrapati_Bhavan_Mughal_Garden_New_Delhi_06.jpg/1280px-Rashtrapati_Bhavan_Mughal_Garden_New_Delhi_06.jpg"
+      ]
+    },
+    {
+      "name": "Sunder Nursery",
+      "category": "Nature & Gardens",
+      "description": "A UNESCO Award-winning 90-acre heritage park adjacent to Humayun's Tomb, featuring six restored 16th-century Mughal monuments, marble fountains, botanical garden collections, and tranquil lakes.",
+      "distance": "6.2 km",
+      "duration": "2 hrs",
+      "entryFee": "₹50 (Indian) / ₹200 (Foreigner)",
+      "timings": "7:00 AM – 7:00 PM (Daily)",
+      "rating": 4.8,
+      "lat": 28.589,
+      "lng": 77.2467,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunder_Nursery_%28Garden%29.jpg/1280px-Sunder_Nursery_%28Garden%29.jpg",
+        "alt": "Sunder Nursery in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunder_Nursery_%28Garden%29.jpg/1280px-Sunder_Nursery_%28Garden%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Sunder_Nursery_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sunder_Nursery_Heritage.jpg/1280px-Sunder_Nursery_Heritage.jpg"
+      ]
+    },
+    {
+      "name": "Safdarjung Tomb",
+      "category": "UNESCO Monument",
+      "description": "Built in 1754, this is the last garden-tomb of the Mughal architecture style in Delhi, featuring a high grand portal, ornate plasterwork, red sandstone facade, and expansive surrounding gardens.",
+      "distance": "4.8 km",
+      "duration": "1.5 hrs",
+      "entryFee": "₹25 (Indian) / ₹300 (Foreigner)",
+      "timings": "7:00 AM – 5:00 PM (Daily)",
+      "rating": 4.7,
+      "lat": 28.5893,
+      "lng": 77.2106,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomb_of_Safdarjung_in_Delhi.jpg/1280px-Tomb_of_Safdarjung_in_Delhi.jpg",
+        "alt": "Safdarjung Tomb in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomb_of_Safdarjung_in_Delhi.jpg/1280px-Tomb_of_Safdarjung_in_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Night_view_of_Safdurjung%27s_Tomb.jpg/1280px-Night_view_of_Safdurjung%27s_Tomb.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Tomb_of_Safdarjung_Cenopath_2.jpg/1280px-Tomb_of_Safdarjung_Cenopath_2.jpg"
+      ]
+    },
+    {
+      "name": "Purana Qila (Old Fort)",
+      "category": "UNESCO Monument",
+      "description": "One of Delhi's oldest fortresses, with origins dating back to Indraprastha of the Mahabharata. Features massive 18-meter stone ramparts, Sher Mandal octagonal tower, and boating in the outer moat lake.",
+      "distance": "4.2 km",
+      "duration": "2 hrs",
+      "entryFee": "₹20 (Indian) / ₹300 (Foreigner)",
+      "timings": "7:00 AM – 5:00 PM (Daily)",
+      "rating": 4.6,
+      "lat": 28.6083,
+      "lng": 77.2437,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg/1280px-Purana_Qila_in_Delhi_03-2016_img1.jpg",
+        "alt": "Purana Qila (Old Fort) in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg/1280px-Purana_Qila_in_Delhi_03-2016_img1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Purana_Qila_in_Delhi_03-2016_img2.jpg/1280px-Purana_Qila_in_Delhi_03-2016_img2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Entrance_of_the_Archaeological_Museum%2C_Purana_Qila_%2802%29.jpg"
+      ]
+    },
+    {
+      "name": "National Museum",
+      "category": "Museum & Culture",
+      "description": "One of India's largest museums, housing over 200,000 rare artifacts spanning 5,000 years of civilization, including Harappan bronze dancing girl statues, ancient Buddhist relics, and Tanjore paintings.",
+      "distance": "2.5 km",
+      "duration": "2 – 3 hrs",
+      "entryFee": "₹20 (Indian) / ₹650 (Foreigner)",
+      "timings": "10:00 AM – 6:00 PM (Closed Mondays)",
+      "rating": 4.7,
+      "lat": 28.6118,
+      "lng": 77.2193,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/1280px-India_national_museum_01.jpg",
+        "alt": "National Museum in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/1280px-India_national_museum_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Neminatha_-_National_Museum%2C_New_Delhi.jpg/1280px-Neminatha_-_National_Museum%2C_New_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mahakala_-_National_Museum%2C_New_Delhi.jpg/1280px-Mahakala_-_National_Museum%2C_New_Delhi.jpg"
+      ]
+    },
+    {
+      "name": "Jantar Mantar",
+      "category": "UNESCO Monument",
+      "description": "Built in 1724 by Maharaja Jai Singh II of Jaipur, this astronomical observatory complex features 13 architectural instruments designed to compile astronomical tables and track sun & planetary movements.",
+      "distance": "1.2 km",
+      "duration": "1 hr",
+      "entryFee": "₹25 (Indian) / ₹300 (Foreigner)",
+      "timings": "6:00 AM – 6:00 PM (Daily)",
+      "rating": 4.5,
+      "lat": 28.6271,
+      "lng": 77.2166,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Jantar_Mantar_New_Delhi.jpg/1280px-Jantar_Mantar_New_Delhi.jpg",
+        "alt": "Jantar Mantar in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Jantar_Mantar_New_Delhi.jpg/1280px-Jantar_Mantar_New_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Jantar_Mantar_Bird.jpg/1280px-Jantar_Mantar_Bird.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jantar_Mantar_Wall.jpg/1280px-Jantar_Mantar_Wall.jpg"
+      ]
+    },
+    {
+      "name": "Raj Ghat",
+      "category": "National Monument",
+      "description": "A serene black marble memorial structure marking the spot of Mahatma Gandhi's cremation in 1948, surrounded by landscaped lawns, trees planted by world leaders, and an eternal flame.",
+      "distance": "4.5 km",
+      "duration": "1 hr",
+      "entryFee": "Free",
+      "timings": "6:30 AM – 6:00 PM (Daily)",
+      "rating": 4.7,
+      "lat": 28.6406,
+      "lng": 77.2495,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Raj_Ghat_Panorama_%281%29.jpg/1280px-Raj_Ghat_Panorama_%281%29.jpg",
+        "alt": "Raj Ghat in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Raj_Ghat_Panorama_%281%29.jpg/1280px-Raj_Ghat_Panorama_%281%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Raj_Ghat_Panorama_%283%29.jpg/1280px-Raj_Ghat_Panorama_%283%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Raj_Ghat_Panorama_%282%29.jpg/1280px-Raj_Ghat_Panorama_%282%29.jpg"
+      ]
+    },
+    {
+      "name": "National Crafts Museum & Hastkala Academy",
+      "category": "Museum & Culture",
+      "description": "A delightful open-air village museum displaying traditional Indian handicrafts, rural village mud huts, carved wooden doors, live artisan demonstrations, and the popular Cafe Lota.",
+      "distance": "4.0 km",
+      "duration": "2 hrs",
+      "entryFee": "₹20 (Indian) / ₹300 (Foreigner)",
+      "timings": "10:00 AM – 6:00 PM (Closed Mondays)",
+      "rating": 4.7,
+      "lat": 28.6133,
+      "lng": 77.2422,
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Gond_Painting.JPG",
+        "alt": "National Crafts Museum & Hastkala Academy in New Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Gond_Painting.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Entrance_to_the_Textiles_Gallery%2C_National_Crafts_Museum%2C_New_Delhi.png/1280px-Entrance_to_the_Textiles_Gallery%2C_National_Crafts_Museum%2C_New_Delhi.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/India_national_museum_01.jpg/1280px-India_national_museum_01.jpg"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "The Imperial New Delhi",
+      "type": "Colonial Heritage 5-Star Hotel",
+      "tier": "extra_luxury",
+      "priceMin": 24500,
+      "priceMax": 38000,
+      "rating": 4.9,
+      "reviews": 480,
+      "amenities": [
+        "Free High-Speed Wi-Fi",
+        "Outdoor Pool",
+        "Imperial Spa",
+        "Fine Dining",
+        "Valet Parking"
+      ],
+      "tags": [
+        "Heritage",
+        "Luxury",
+        "Connaught Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "The Imperial New Delhi luxury colonial courtyard and facade"
+      }
+    },
+    {
+      "name": "The Leela Palace New Delhi",
+      "type": "Ultra Luxury Palace Hotel",
+      "tier": "extra_luxury",
+      "priceMin": 28000,
+      "priceMax": 45000,
+      "rating": 4.9,
+      "reviews": 620,
+      "amenities": [
+        "Rooftop Infinity Pool",
+        "ESPACIO Spa",
+        "Michelin-Style Dining",
+        "Butler Service",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Diplomatic Enclave"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "The Leela Palace New Delhi luxury rooftop pool and facade"
+      }
+    },
+    {
+      "name": "Taj Mahal Hotel (Mansingh Road)",
+      "type": "Iconic 5-Star Heritage Hotel",
+      "tier": "luxury",
+      "priceMin": 22000,
+      "priceMax": 35000,
+      "rating": 4.8,
+      "reviews": 580,
+      "amenities": [
+        "Jiva Spa",
+        "Machan All-Day Dining",
+        "Outdoor Pool",
+        "Fitness Center",
+        "Valet Parking"
+      ],
+      "tags": [
+        "Iconic",
+        "Lutyens Delhi"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Taj Mahal Hotel New Delhi grand suite and pool"
+      }
+    },
+    {
+      "name": "ITC Maurya, New Delhi",
+      "type": "5-Star Luxury Retreat & Culinary Hub",
+      "tier": "luxury",
+      "priceMin": 19500,
+      "priceMax": 32000,
+      "rating": 4.8,
+      "reviews": 510,
+      "amenities": [
+        "Bukhara Restaurant",
+        "Kaya Kalp Spa",
+        "Outdoor Pool",
+        "Executive Club",
+        "Free Wi-Fi"
+      ],
+      "tags": [
+        "Culinary",
+        "Diplomatic Enclave"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "ITC Maurya New Delhi luxury hotel exterior and gardens"
+      }
+    },
+    {
+      "name": "The Oberoi New Delhi",
+      "type": "Ultra Luxury City Resort",
+      "tier": "extra_luxury",
+      "priceMin": 26000,
+      "priceMax": 42000,
+      "rating": 4.9,
+      "reviews": 490,
+      "amenities": [
+        "Heated Indoor & Outdoor Pools",
+        "Oberoi Spa",
+        "Golf Course Views",
+        "Fine Dining",
+        "Air Purification System"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Golf Course"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "The Oberoi New Delhi luxury room and golf view"
+      }
+    },
+    {
+      "name": "Maidens Hotel (Civil Lines)",
+      "type": "19th-Century Colonial Heritage Hotel",
+      "tier": "better",
+      "priceMin": 10500,
+      "priceMax": 16000,
+      "rating": 4.7,
+      "reviews": 380,
+      "amenities": [
+        "Lush 8-Acre Gardens",
+        "Swimming Pool",
+        "Curzon Room Dining",
+        "Free Wi-Fi",
+        "Heritage Tours"
+      ],
+      "tags": [
+        "Colonial Heritage",
+        "Old Delhi"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Maidens Hotel Civil Lines colonial heritage facade and gardens"
+      }
+    },
+    {
+      "name": "Hyatt Regency New Delhi",
+      "type": "5-Star Business & Leisure Hotel",
+      "tier": "better",
+      "priceMin": 12000,
+      "priceMax": 18500,
+      "rating": 4.7,
+      "reviews": 430,
+      "amenities": [
+        "Club Olympus Spa & Pool",
+        "China Kitchen Dining",
+        "Fitness Center",
+        "Free Wi-Fi",
+        "Valet Parking"
+      ],
+      "tags": [
+        "Business",
+        "Bhikaji Cama Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Hyatt Regency New Delhi outdoor pool and facade"
+      }
+    },
+    {
+      "name": "Radisson Blu Plaza Delhi Airport",
+      "type": "5-Star Airport Luxury Hotel",
+      "tier": "better",
+      "priceMin": 9500,
+      "priceMax": 15000,
+      "rating": 4.6,
+      "reviews": 540,
+      "amenities": [
+        "R-The Spa",
+        "Free Airport Shuttle",
+        "Outdoor Lagoon Pool",
+        "Great Kebab Factory",
+        "Free Wi-Fi"
+      ],
+      "tags": [
+        "Airport",
+        "Luxury"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Radisson Blu Plaza Delhi Airport resort pool and rooms"
+      }
+    },
+    {
+      "name": "The Ambassador, IHCL SeleQtions",
+      "type": "Art Deco Heritage Hotel",
+      "tier": "better",
+      "priceMin": 11000,
+      "priceMax": 17000,
+      "rating": 4.6,
+      "reviews": 320,
+      "amenities": [
+        "Yellow Brick Road Cafe",
+        "Fitness Center",
+        "Concierge Service",
+        "Free Wi-Fi",
+        "Central Location"
+      ],
+      "tags": [
+        "Heritage",
+        "Khan Market"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "The Ambassador Hotel facade near Khan Market"
+      }
+    },
+    {
+      "name": "Radisson Blu Marina Hotel",
+      "type": "Boutique Heritage Hotel",
+      "tier": "good",
+      "priceMin": 6500,
+      "priceMax": 10500,
+      "rating": 4.5,
+      "reviews": 410,
+      "amenities": [
+        "Full-Service Spa",
+        "Fifty9 All-Day Dining",
+        "Fitness Center",
+        "Free High-Speed Wi-Fi",
+        "Business Center"
+      ],
+      "tags": [
+        "Boutique",
+        "Connaught Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Radisson Blu Marina Hotel Connaught Place boutique lobby"
+      }
+    },
+    {
+      "name": "Jaypee Vasant Continental",
+      "type": "4-Star Premium City Hotel",
+      "tier": "good",
+      "priceMin": 5800,
+      "priceMax": 9200,
+      "rating": 4.4,
+      "reviews": 350,
+      "amenities": [
+        "Swimming Pool",
+        "Tamaya Spa",
+        "Ano-Tai Chinese Restaurant",
+        "Fitness Center",
+        "Free Wi-Fi"
+      ],
+      "tags": [
+        "Premium",
+        "Vasant Vihar"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Jaypee Vasant Continental Hotel room interior"
+      }
+    },
+    {
+      "name": "Bloomrooms @ Janpath",
+      "type": "Modern Designer Boutique Stay",
+      "tier": "budget",
+      "priceMin": 3800,
+      "priceMax": 5800,
+      "rating": 4.4,
+      "reviews": 290,
+      "amenities": [
+        "Cloud Beds",
+        "Rain Showers",
+        "Free High-Speed Wi-Fi",
+        "In-House Cafe",
+        "24/7 Security"
+      ],
+      "tags": [
+        "Designer",
+        "Janpath"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Bloomrooms Janpath modern designer hotel room"
+      }
+    },
+    {
+      "name": "Hotel Tara Palace (Daryaganj)",
+      "type": "Heritage City Stay",
+      "tier": "budget",
+      "priceMin": 2800,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 260,
+      "amenities": [
+        "Air Conditioning",
+        "Free Breakfast",
+        "Free Wi-Fi",
+        "Travel Desk",
+        "Room Service"
+      ],
+      "tags": [
+        "Heritage",
+        "Old Delhi"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Hotel Tara Palace Daryaganj heritage room"
+      }
+    },
+    {
+      "name": "Ginger Hotel New Delhi (Rail Yatri)",
+      "type": "Modern Comfort Budget Hotel",
+      "tier": "cheapest",
+      "priceMin": 2200,
+      "priceMax": 3400,
+      "rating": 4.2,
+      "reviews": 310,
+      "amenities": [
+        "Keyless Entry",
+        "Square Meal Restaurant",
+        "Fitness Center",
+        "Free Wi-Fi",
+        "Laundry Service"
+      ],
+      "tags": [
+        "Budget",
+        "Near Railway Station"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&h=800&q=85",
+        "alt": "Ginger Hotel New Delhi modern budget room"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/1280px-Delhi_fort.jpg",
+      "alt": "New Delhi landmark photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Qutub_Minar_3.jpg/1280px-Qutub_Minar_3.jpg",
+      "alt": "New Delhi landmark photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Humayun%27s_Tomb_at_Delhi.jpg/1280px-Humayun%27s_Tomb_at_Delhi.jpg",
+      "alt": "New Delhi landmark photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/India_Gate_in_New_Delhi_03-2016.jpg/1280px-India_Gate_in_New_Delhi_03-2016.jpg",
+      "alt": "New Delhi landmark photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Lotus_Temple_in_New_Delhi_03-2016.jpg/1280px-Lotus_Temple_in_New_Delhi_03-2016.jpg",
+      "alt": "New Delhi landmark photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg",
+      "alt": "New Delhi landmark photo 6"
+    }
+  ],
+  "seo": {
+    "title": "New Delhi Travel Guide — Places, Stays & How to Reach | IndiaExplore",
+    "description": "The historic capital of India — home to UNESCO World Heritage monuments, grand Mughal architecture, bustling bazaars, and world-class luxury stays.",
+    "canonical": "destination.html?slug=new-delhi",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Delhi_fort.jpg/1280px-Delhi_fort.jpg",
+    "keywords": [
+      "New Delhi",
+      "Delhi",
+      "heritage",
+      "travel guide",
+      "places to visit",
+      "hotels"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 22
+}

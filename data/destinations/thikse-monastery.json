@@ -1,0 +1,585 @@
+{
+  "slug": "thikse-monastery",
+  "title": "Thikse Monastery",
+  "state": "Ladakh",
+  "country": "India",
+  "region": "Ladakh",
+  "type": "spiritual",
+  "badge": "Popular",
+  "tagline": "Thikse Monastery — spiritual town of Ladakh",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg/1280px-View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg",
+    "alt": "Thikse Monastery, Ladakh"
+  },
+  "overview": {
+    "short": "Thiksey Monastery or Thiksey Gompa (also transliterated from Ladakhi as Thikse, Thiksay or Tikse) is a Buddhist monastery affiliated with the Gelug school of Tibetan Buddhism.",
+    "description": "Thiksey Monastery or Thiksey Gompa (also transliterated from Ladakhi as Thikse, Thiksay or Tikse) is a Buddhist monastery affiliated with the Gelug school of Tibetan Buddhism. It is located on top of a hill in Thiksey approximately 19 kilometres (12 mi) east of Leh, in the Ladakh region of northern India. It is noted for its resemblance to the Potala Palace in Lhasa, Tibet, and is the largest monastery in central Ladakh, notably containing a separate set of buildings for female renunciates that has been the source of significant recent building and reorganization. The monastery is located at a",
+    "features": [
+      "Temples",
+      "Pilgrimage",
+      "Ghats",
+      "Festivals"
+    ],
+    "altitude": 3600,
+    "rating": 4.7,
+    "reviewCount": 10955,
+    "minPrice": 900,
+    "distanceFromDelhi": 607
+  },
+  "bestTime": {
+    "label": "Apr – Jun, Sep – Oct",
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ]
+  },
+  "weather": {
+    "lat": 34.05638889,
+    "lng": 77.66666667,
+    "tempSummer": "10–22°C",
+    "tempWinter": "-6–10°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 18,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 14 km · road approx."
+      },
+      {
+        "from": "Srinagar (Jammu & Kashmir UT)",
+        "city": "Srinagar",
+        "state": "Jammu & Kashmir UT",
+        "distance": 330,
+        "byCar": "6–7 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 264 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 414,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 331 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 469,
+        "byCar": "8–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 375 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 474,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 379 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 521,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 417 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 759,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 607 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 781,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 625 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 958,
+        "byCar": "16–21 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 766 km · road approx."
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 1018,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 814 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1480,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1184 km · road approx."
+      },
+      {
+        "from": "Bhopal (Madhya Pradesh)",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "distance": 1501,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1201 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1606,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1285 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 1639,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1311 km · road approx."
+      },
+      {
+        "from": "Ahmedabad (Gujarat)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "distance": 1654,
+        "byCar": "28–37 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1323 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Thikse Monastery / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Katra (Vaishno Devi railhead)",
+      "distance": 279
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Thiksey",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Thiksey is a village and the headquarters of its eponymous block in Leh district, Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Thiksey_Monastery%2C_Ladakh_14.jpg/1280px-Thiksey_Monastery%2C_Ladakh_14.jpg",
+        "alt": "Thiksey"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Thiksey_Monastery%2C_Ladakh_14.jpg/1280px-Thiksey_Monastery%2C_Ladakh_14.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Thiksey_Monastery%2C_Ladakh_15.jpg/1280px-Thiksey_Monastery%2C_Ladakh_15.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Thiksey_Monastery%2C_Ladakh_01.jpg/1280px-Thiksey_Monastery%2C_Ladakh_01.jpg"
+      ]
+    },
+    {
+      "name": "Chuchot Gongma",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Chuchot Gongma is a village-group and the headquarter of Chuchot block in the Leh district of Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ladakh%2C_India_%2814693639112%29.jpg/1280px-Ladakh%2C_India_%2814693639112%29.jpg",
+        "alt": "Chuchot Gongma"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ladakh%2C_India_%2814693639112%29.jpg/1280px-Ladakh%2C_India_%2814693639112%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ladakh_%2814480815337%29.jpg/1280px-Ladakh_%2814480815337%29.jpg"
+      ]
+    },
+    {
+      "name": "Shey",
+      "category": "cultural",
+      "distance": "3 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Shey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, 15 km from Leh towards Hemis.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Shey_Palace_sign%2C_Ladakh.jpg/1280px-Shey_Palace_sign%2C_Ladakh.jpg",
+        "alt": "Shey"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Shey_Palace_sign%2C_Ladakh.jpg/1280px-Shey_Palace_sign%2C_Ladakh.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Shey_Stupa_Field_-_1.jpg/1280px-Shey_Stupa_Field_-_1.jpg"
+      ]
+    },
+    {
+      "name": "Shey Monastery",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Shey Monastery or Gompa or the Shey Palace are complex structures located on a hillock in Shey, 15 kilometres (9.3 mi) to the south of Leh in Ladakh, northern India on the Leh-Manali road. Shey was the summer capital of Ladakh in the past.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "alt": "Shey Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Shey_Palace%2C_Ladakh_01.jpg/1280px-Shey_Palace%2C_Ladakh_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Shey_Palace%2C_Ladakh_03.jpg/1280px-Shey_Palace%2C_Ladakh_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Shey_Palace%2C_Ladakh_04.jpg/1280px-Shey_Palace%2C_Ladakh_04.jpg"
+      ]
+    },
+    {
+      "name": "Stakna Monastery",
+      "category": "spiritual",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Stakna Monastery or Stakna Gompa is a Buddhist monastery of the Drugpa sect in Stakna, Leh district, Ladakh, northern India, 21 or 25 kilometres from Leh on the left bank of the Indus River. It was founded in the late 16th century by a Bhutanese scholar and saint, Chosje Modzin.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "alt": "Stakna Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Stakna_Monastery%2C_Ladakh_03.jpg/1280px-Stakna_Monastery%2C_Ladakh_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Stakna_Monastery%2C_Ladakh_04.jpg/1280px-Stakna_Monastery%2C_Ladakh_04.jpg"
+      ]
+    },
+    {
+      "name": "Nang, Leh",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Nang is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Houses_in_Nang%2C_Leh%2C_Ladakh%2C_India.jpg/1280px-Houses_in_Nang%2C_Leh%2C_Ladakh%2C_India.jpg",
+        "alt": "Nang, Leh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Houses_in_Nang%2C_Leh%2C_Ladakh%2C_India.jpg/1280px-Houses_in_Nang%2C_Leh%2C_Ladakh%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerial_view_of_landscape_of_Ladakh_07.jpg/1280px-Aerial_view_of_landscape_of_Ladakh_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Moorcroft%27s_Travels_in_Ladakh_and_Gerard%27s_Kunawar_%28IA_dli.pahar.0324%29.pdf/page1-500px-Moorcroft%27s_Travels_in_Ladakh_and_Gerard%27s_Kunawar_%28IA_dli.pahar.0324%29.pdf.jpg"
+      ]
+    },
+    {
+      "name": "Stakna",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Stakna is a village in the Leh district of Ladakh, India, on the banks of the Indus River. The Stakna Monastery is located there.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "alt": "Stakna"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Stakna_Monastery_from_the_Indus_River.jpg/1280px-Stakna_Monastery_from_the_Indus_River.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Stakna_Monastery%2C_Ladakh_03.jpg/1280px-Stakna_Monastery%2C_Ladakh_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Stakna_Ladakh_India_August_2013.jpg/1280px-Stakna_Ladakh_India_August_2013.jpg"
+      ]
+    },
+    {
+      "name": "Matho Monastery",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Matho Monastery, or Matho Gonpa or Mangtro Monastery or Mangtro Gonpa, from the Tibetan \"mang\" that means \"many\" and \"tro\" that means \"happiness\", is a Tibetan Buddhist monastery located 26 kilometres southeast of Leh in Ladakh, northern India, on the banks of the Indus River. The village of Matho is located at the mouth of a deep gorge running out of the Zanskar Range and across the Indus.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Statue_of_Buddha%2C_Matho_Monastery%2C_Ladakh_%2814666923762%29.jpg/1280px-Statue_of_Buddha%2C_Matho_Monastery%2C_Ladakh_%2814666923762%29.jpg",
+        "alt": "Matho Monastery"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Statue_of_Buddha%2C_Matho_Monastery%2C_Ladakh_%2814666923762%29.jpg/1280px-Statue_of_Buddha%2C_Matho_Monastery%2C_Ladakh_%2814666923762%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Matho_monastery_%2814508193298%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ladakh-Matho-bodhisattva-statue.png/1280px-Ladakh-Matho-bodhisattva-statue.png"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Thiksey & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Thiksey",
+          "note": "Thiksey is a village and the headquarters of its eponymous block in Leh district, Ladakh, India. It is located in the Leh tehsil."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Chuchot Gongma",
+          "note": "Chuchot Gongma is a village-group and the headquarter of Chuchot block in the Leh district of Ladakh, India. It is located in the Leh tehsil."
+        },
+        {
+          "time": "Evening",
+          "activity": "Shey",
+          "note": "Shey is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil, 15 km from Leh towards Hemis."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Shey Monastery & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shey Monastery",
+          "note": "Shey Monastery or Gompa or the Shey Palace are complex structures located on a hillock in Shey, 15 kilometres (9.3 mi) to the south of Leh in Ladakh, northern India on the Leh-Manali road. Shey was the summer capital of Ladakh in the past."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Stakna Monastery",
+          "note": "Stakna Monastery or Stakna Gompa is a Buddhist monastery of the Drugpa sect in Stakna, Leh district, Ladakh, northern India, 21 or 25 kilometres from Leh on the left bank of the Indus River. It was founded in the late 16th century by a Bhutanese scholar and saint, Chosje Modzin."
+        },
+        {
+          "time": "Evening",
+          "activity": "Nang, Leh",
+          "note": "Nang is a village in the Leh district of Ladakh, India. It is located in the Leh tehsil."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Stakna & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Stakna",
+          "note": "Stakna is a village in the Leh district of Ladakh, India, on the banks of the Indus River. The Stakna Monastery is located there."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Matho Monastery",
+          "note": "Matho Monastery, or Matho Gonpa or Mangtro Monastery or Mangtro Gonpa, from the Tibetan \"mang\" that means \"many\" and \"tro\" that means \"happiness\", is a Tibetan Buddhist monastery located 26 kilometres southeast of Leh in Ladakh, northern India, on the banks of the Indus River. The village of Matho is located at the mouth of a deep gorge running out of the Zanskar Range and across the Indus."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Mahey",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1586611292717-f828b167408c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Thikse Monastery Stay"
+      }
+    },
+    {
+      "name": "Hill Town",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Thikse Monastery"
+      }
+    },
+    {
+      "name": "Haldupa Guest House",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Thikse Monastery Grand Hotel"
+      }
+    },
+    {
+      "name": "Gotal",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Fortune Park Thikse Monastery"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Cultural",
+    "Heritage walks",
+    "Spiritual",
+    "Temples",
+    "Pilgrimage",
+    "Ghats",
+    "Festivals"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg/1280px-View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg",
+      "alt": "Thikse Monastery photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Thikse_Gompa_Entrance_-_Stupa.jpg/1280px-Thikse_Gompa_Entrance_-_Stupa.jpg",
+      "alt": "Thikse Monastery photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Thikse_Gompa_-_Gyalingy.jpg/1280px-Thikse_Gompa_-_Gyalingy.jpg",
+      "alt": "Thikse Monastery photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Thikse_Gompa_-_Court%2C_Indus_Valley.jpg/1280px-Thikse_Gompa_-_Court%2C_Indus_Valley.jpg",
+      "alt": "Thikse Monastery photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Thikse_Gompa_-_Prayer_Hall.jpg/1280px-Thikse_Gompa_-_Prayer_Hall.jpg",
+      "alt": "Thikse Monastery photo 5"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Thikse Monastery?",
+      "a": "The best time to visit Thikse Monastery is Apr – Jun, Sep – Oct. Summers are 10–22°C and winters are -6–10°C."
+    },
+    {
+      "q": "How do I reach Thikse Monastery?",
+      "a": "The nearest airport is Thikse Monastery / nearest airport (30 km) and the nearest railway station is Katra (Vaishno Devi railhead) (279 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Thikse Monastery?",
+      "a": "3 days are usually enough to cover the top attractions of Thikse Monastery at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Thikse Monastery?",
+      "a": "Stays in Thikse Monastery start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Thikse Monastery?",
+      "a": "The top attractions are Thiksey, Chuchot Gongma, Shey, Shey Monastery, Stakna Monastery."
+    }
+  ],
+  "seo": {
+    "title": "Thikse Monastery Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Thiksey Monastery or Thiksey Gompa (also transliterated from Ladakhi as Thikse, Thiksay or Tikse) is a Buddhist monastery affiliated with the Gelug school of Tibetan Buddhism. Plan your Thikse Monastery trip: 8 places to visit, 4 stays from ₹900/night, best time (Apr – Jun, Sep – Oct) and routes.",
+    "canonical": "destination.html?slug=thikse-monastery",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg/1280px-View_of_Indus_Valley_from_Thikse_Gompa%2C_Ladakh%2C_India.jpg",
+    "keywords": [
+      "Thikse Monastery travel guide",
+      "places to visit in Thikse Monastery",
+      "Thikse Monastery hotels",
+      "best time to visit Thikse Monastery",
+      "how to reach Thikse Monastery",
+      "Ladakh tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

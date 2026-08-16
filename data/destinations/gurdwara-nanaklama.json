@@ -1,0 +1,564 @@
+{
+  "slug": "gurdwara-nanaklama",
+  "title": "Gurdwara Nanaklama",
+  "state": "Sikkim",
+  "country": "India",
+  "region": "Sikkim",
+  "type": "heritage",
+  "badge": "Popular",
+  "tagline": "Gurdwara Nanaklama — heritage city of Sikkim",
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gurudwara_Nanaklama_sahib_by_panjab_digital_library.jpg",
+    "alt": "Gurdwara Nanaklama, Sikkim"
+  },
+  "overview": {
+    "short": "Gurudwara Nanaklama is a historical gurudwara situated in Chungthang.",
+    "description": "Gurudwara Nanaklama is a historical gurudwara situated in Chungthang.",
+    "features": [
+      "Forts",
+      "Architecture",
+      "History",
+      "Local Bazaars"
+    ],
+    "altitude": null,
+    "rating": 4.3,
+    "reviewCount": 7386,
+    "minPrice": 900,
+    "distanceFromDelhi": 1127
+  },
+  "bestTime": {
+    "label": "Mar – Jun, Sep – Nov",
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "weather": {
+    "lat": 27.60433,
+    "lng": 88.645847,
+    "tempSummer": "15–28°C",
+    "tempWinter": "2–16°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 39,
+        "byCar": "1–2 hrs",
+        "byTrain": "Local trains / road",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 31 km · road approx."
+      },
+      {
+        "from": "Siliguri (West Bengal)",
+        "city": "Siliguri",
+        "state": "West Bengal",
+        "distance": 126,
+        "byCar": "2–3 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Too close to fly",
+        "via": "Straight-line 101 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 434,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 347 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 493,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 394 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 518,
+        "byCar": "9–12 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 414 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 616,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 493 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 620,
+        "byCar": "10–14 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 496 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 725,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 580 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 730,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 584 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 743,
+        "byCar": "12–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 594 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 765,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 612 km · road approx."
+      },
+      {
+        "from": "Varanasi (Uttar Pradesh)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 774,
+        "byCar": "13–17 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 619 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1078,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 862 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 1251,
+        "byCar": "21–28 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1001 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1344,
+        "byCar": "22–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1075 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Gurdwara Nanaklama / nearest airport",
+      "distance": 30
+    },
+    "nearestRailway": {
+      "name": "Siliguri Junction",
+      "distance": 101
+    },
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+  },
+  "topPlaces": [
+    {
+      "name": "Chungthang",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Chungthang is a town in Mangan district in the Indian state of Sikkim. It is located just 28 km from Mangan town, the district headquarters.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/CHUNGTHANG%2CSIKKIM.jpg/1280px-CHUNGTHANG%2CSIKKIM.jpg",
+        "alt": "Chungthang"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/CHUNGTHANG%2CSIKKIM.jpg/1280px-CHUNGTHANG%2CSIKKIM.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Ringhim_Helipad%2C_Shankar_Road%2C_Chungthang%2C_North_Sikkim%2C_India.webm/1280px--Ringhim_Helipad%2C_Shankar_Road%2C_Chungthang%2C_North_Sikkim%2C_India.webm.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tsunthang_Rigdzin_Choeling_Monastery_at_Chungthang%2C_North_Sikkim%2C_India_01.jpg/1280px-Tsunthang_Rigdzin_Choeling_Monastery_at_Chungthang%2C_North_Sikkim%2C_India_01.jpg"
+      ]
+    },
+    {
+      "name": "Lachen River",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "The Lachen River is a tributary of the Teesta River in the state of Sikkim, India. It is one of the two main tributaries of the Teesta along with the Lachung River, which rise on opposite sides of the Donga Range in neighbouring Bhutan and converge in Chungthang in the North Sikkim district.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Confluence_of_the_Lachen_and_Lachung_c.png",
+        "alt": "Lachen River"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/00/Confluence_of_the_Lachen_and_Lachung_c.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lachen_River_in_North_Sikkim.jpg/1280px-Lachen_River_in_North_Sikkim.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Lachen_River_08.jpg/1280px-Lachen_River_08.jpg"
+      ]
+    },
+    {
+      "name": "Chungthang Forest Block",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Chungthang Forest Block is a village in Chungthang subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260867.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Chungthang Forest Block"
+      },
+      "photos": []
+    },
+    {
+      "name": "Shipgyer",
+      "category": "cultural",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Shipgyer is a village in Chungthang subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260862.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ship_Kunzang_Choling_Monastery_at_Shipgyer%2C_North_Sikkim%2C_India.webm/1280px--Ship_Kunzang_Choling_Monastery_at_Shipgyer%2C_North_Sikkim%2C_India.webm.jpg",
+        "alt": "Shipgyer"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ship_Kunzang_Choling_Monastery_at_Shipgyer%2C_North_Sikkim%2C_India.webm/1280px--Ship_Kunzang_Choling_Monastery_at_Shipgyer%2C_North_Sikkim%2C_India.webm.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ship_Kunzang_Choling_Monastery%2C_Shipgyer%2C_North_Sikkim%2C_India_03.jpg/1280px-Ship_Kunzang_Choling_Monastery%2C_Shipgyer%2C_North_Sikkim%2C_India_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Ship_Kunzang_Choling_Monastery%2C_Shipgyer%2C_North_Sikkim%2C_India_14.jpg/1280px-Ship_Kunzang_Choling_Monastery%2C_Shipgyer%2C_North_Sikkim%2C_India_14.jpg"
+      ]
+    },
+    {
+      "name": "Naga-Namgor",
+      "category": "cultural",
+      "distance": "6 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Naga-Namgor is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260868.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Naga-Namgor"
+      },
+      "photos": []
+    },
+    {
+      "name": "Tung, Sikkim",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Tung is a village in the Chungthang subdivision of North Sikkim district in the north Indian state of Sikkim. The Ministry of Home Affairs has given it a geographical code of 260863.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_07.jpg/1280px-Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_07.jpg",
+        "alt": "Tung, Sikkim"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_07.jpg/1280px-Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_04.jpg/1280px-Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_09.jpg/1280px-Manilakhang_near_Tung_Check_Post%2C_North_Sikkim%2C_India_09.jpg"
+      ]
+    },
+    {
+      "name": "Meyong, Sikkim",
+      "category": "cultural",
+      "distance": "7 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.2,
+      "description": "Meyong is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260869.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bali-lontar-carcan-meyong-400ppi.pdf/page1-1280px-Bali-lontar-carcan-meyong-400ppi.pdf.jpg",
+        "alt": "Meyong, Sikkim"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bali-lontar-carcan-meyong-400ppi.pdf/page1-1280px-Bali-lontar-carcan-meyong-400ppi.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bali-lontar-usadha-meyong-garong-350ppi.pdf/page1-1280px-Bali-lontar-usadha-meyong-garong-350ppi.pdf.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sporting_Clube_de_Portugal_vs_Sporting_Clube_de_Braga_01.jpg"
+      ]
+    },
+    {
+      "name": "Singchit",
+      "category": "cultural",
+      "distance": "8 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Singchit is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260870.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_09.jpg/1280px-Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_09.jpg",
+        "alt": "Singchit"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_09.jpg/1280px-Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_09.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_06.jpg/1280px-Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_06.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_02.jpg/1280px-Singchit_Ngadag_Monastery_alias_Nadey_Monastery_in_Singhik%2C_North_Sikkim%2C_India_02.jpg"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Day 1 — Chungthang & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Chungthang",
+          "note": "Chungthang is a town in Mangan district in the Indian state of Sikkim. It is located just 28 km from Mangan town, the district headquarters."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Lachen River",
+          "note": "The Lachen River is a tributary of the Teesta River in the state of Sikkim, India. It is one of the two main tributaries of the Teesta along with the Lachung River, which rise on opposite sides of the Donga Range in neighbouring Bhutan and converge in Chungthang in the North Sikkim district."
+        },
+        {
+          "time": "Evening",
+          "activity": "Chungthang Forest Block",
+          "note": "Chungthang Forest Block is a village in Chungthang subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260867."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Shipgyer & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Shipgyer",
+          "note": "Shipgyer is a village in Chungthang subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260862."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Naga-Namgor",
+          "note": "Naga-Namgor is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260868."
+        },
+        {
+          "time": "Evening",
+          "activity": "Tung, Sikkim",
+          "note": "Tung is a village in the Chungthang subdivision of North Sikkim district in the north Indian state of Sikkim. The Ministry of Home Affairs has given it a geographical code of 260863."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Meyong, Sikkim & around",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Meyong, Sikkim",
+          "note": "Meyong is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260869."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Singchit",
+          "note": "Singchit is a village in Mangan subdivision, North Sikkim district, Sikkim, India. The Ministry of Home Affairs has given it a geographical code of 260870."
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Etho Metho Hotel",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1280&q=80",
+        "alt": "OYO Gurdwara Nanaklama Stay"
+      }
+    },
+    {
+      "name": "Floret holiday",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Airbnb: Stay in Gurdwara Nanaklama"
+      }
+    },
+    {
+      "name": "Yashshree hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Gurdwara Nanaklama Grand Hotel"
+      }
+    },
+    {
+      "name": "Rehoboth",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Marriott Gurdwara Nanaklama"
+      }
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Sightseeing",
+    "Nature walks",
+    "Cultural",
+    "Forts",
+    "Architecture",
+    "History",
+    "Local Bazaars"
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gurudwara_Nanaklama_sahib_by_panjab_digital_library.jpg",
+      "alt": "Gurdwara Nanaklama, Sikkim"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best time to visit Gurdwara Nanaklama?",
+      "a": "The best time to visit Gurdwara Nanaklama is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+    },
+    {
+      "q": "How do I reach Gurdwara Nanaklama?",
+      "a": "The nearest airport is Gurdwara Nanaklama / nearest airport (30 km) and the nearest railway station is Siliguri Junction (101 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    },
+    {
+      "q": "How many days are enough for Gurdwara Nanaklama?",
+      "a": "3 days are usually enough to cover the top attractions of Gurdwara Nanaklama at a relaxed pace."
+    },
+    {
+      "q": "How much does a hotel cost in Gurdwara Nanaklama?",
+      "a": "Stays in Gurdwara Nanaklama start from ₹900 per night, with options across 4 price categories."
+    },
+    {
+      "q": "What are the top places to visit in Gurdwara Nanaklama?",
+      "a": "The top attractions are Chungthang, Lachen River, Chungthang Forest Block, Shipgyer, Naga-Namgor."
+    }
+  ],
+  "seo": {
+    "title": "Gurdwara Nanaklama Travel Guide 2026 — Places, Hotels, How to Reach | IndiaExplore",
+    "description": "Gurudwara Nanaklama is a historical gurudwara situated in Chungthang. Plan your Gurdwara Nanaklama trip: 8 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "canonical": "destination.html?slug=gurdwara-nanaklama",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Gurudwara_Nanaklama_sahib_by_panjab_digital_library.jpg",
+    "keywords": [
+      "Gurdwara Nanaklama travel guide",
+      "places to visit in Gurdwara Nanaklama",
+      "Gurdwara Nanaklama hotels",
+      "best time to visit Gurdwara Nanaklama",
+      "how to reach Gurdwara Nanaklama",
+      "Sikkim tourism"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 4
+}

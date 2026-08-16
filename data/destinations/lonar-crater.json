@@ -1,0 +1,664 @@
+{
+  "slug": "lonar-crater",
+  "title": "Lonar Crater Lake",
+  "state": "Maharashtra",
+  "country": "India",
+  "region": "Buldhana District",
+  "type": "nature",
+  "badge": "50,000-Year Meteorite Lake",
+  "tagline": "Ancient saline and alkaline crater lake formed by a hyper-velocity meteor impact",
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg",
+    "alt": "Lonar Crater Lake, Maharashtra"
+  },
+  "heroImage": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg",
+    "alt": "Lonar Crater Lake, Maharashtra"
+  },
+  "overview": {
+    "short": "Ancient saline and alkaline crater lake formed by a hyper-velocity meteor impact.",
+    "description": "Lonar Lake is a Geo-heritage monument and unique impact crater lake created by a meteor impact during the Pleistocene Epoch. Surrounded by dense teak forests and 1,000-year-old temples, Lonar is the world's only high-velocity impact crater formed in basaltic rock.",
+    "features": [
+      "Meteor Impact Crater",
+      "Daitya Sudhan Temple",
+      "Gomukh Temple Springs",
+      "Alkaline Lake Trek"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1650,
+    "minPrice": 1800,
+    "distanceFromDelhi": 1200
+  },
+  "bestTime": {
+    "label": "Nov – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 19.9757,
+    "lng": 76.508,
+    "tempSummer": "26–40°C",
+    "tempWinter": "14–28°C"
+  },
+  "howToReach": {
+    "routes": [
+      {
+        "from": "Nagpur (Maharashtra)",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "distance": 373,
+        "byCar": "6–8 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 298 km · road approx."
+      },
+      {
+        "from": "Indore (Madhya Pradesh)",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "distance": 390,
+        "byCar": "7–9 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 312 km · road approx."
+      },
+      {
+        "from": "Hyderabad (Telangana)",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "distance": 445,
+        "byCar": "7–10 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 356 km · road approx."
+      },
+      {
+        "from": "Daman (Daman & Diu UT)",
+        "city": "Daman",
+        "state": "Daman & Diu UT",
+        "distance": 483,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 386 km · road approx."
+      },
+      {
+        "from": "Surat (Gujarat)",
+        "city": "Surat",
+        "state": "Gujarat",
+        "distance": 506,
+        "byCar": "8–11 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 405 km · road approx."
+      },
+      {
+        "from": "Raipur (Chhattisgarh)",
+        "city": "Raipur",
+        "state": "Chhattisgarh",
+        "distance": 690,
+        "byCar": "12–15 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 552 km · road approx."
+      },
+      {
+        "from": "Panaji (Goa)",
+        "city": "Panaji",
+        "state": "Goa",
+        "distance": 718,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 574 km · road approx."
+      },
+      {
+        "from": "Vijayawada (Andhra Pradesh)",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "distance": 729,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 583 km · road approx."
+      },
+      {
+        "from": "Udaipur (Rajasthan)",
+        "city": "Udaipur",
+        "state": "Rajasthan",
+        "distance": 735,
+        "byCar": "12–16 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 588 km · road approx."
+      },
+      {
+        "from": "Bengaluru (Karnataka)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "distance": 984,
+        "byCar": "16–22 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 787 km · road approx."
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 1019,
+        "byCar": "17–23 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 815 km · road approx."
+      },
+      {
+        "from": "Chennai (Tamil Nadu)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "distance": 1081,
+        "byCar": "18–24 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 865 km · road approx."
+      },
+      {
+        "from": "Gurugram (Haryana)",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 1181,
+        "byCar": "20–26 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 945 km · road approx."
+      },
+      {
+        "from": "Puducherry (Puducherry UT)",
+        "city": "Puducherry",
+        "state": "Puducherry UT",
+        "distance": 1200,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 960 km · road approx."
+      },
+      {
+        "from": "Delhi (Delhi UT)",
+        "city": "Delhi",
+        "state": "Delhi UT",
+        "distance": 1204,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 963 km · road approx."
+      },
+      {
+        "from": "Bhubaneswar (Odisha)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "distance": 1216,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 973 km · road approx."
+      },
+      {
+        "from": "Ranchi (Jharkhand)",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "distance": 1229,
+        "byCar": "20–27 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 983 km · road approx."
+      },
+      {
+        "from": "Patna (Bihar)",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 1353,
+        "byCar": "23–30 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1082 km · road approx."
+      },
+      {
+        "from": "Kochi (Kerala)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "distance": 1396,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1117 km · road approx."
+      },
+      {
+        "from": "Kavaratti (Lakshadweep UT)",
+        "city": "Kavaratti",
+        "state": "Lakshadweep UT",
+        "distance": 1408,
+        "byCar": "23–31 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1126 km · road approx."
+      },
+      {
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 1450,
+        "byCar": "24–32 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1160 km · road approx."
+      },
+      {
+        "from": "Chandigarh (Chandigarh UT)",
+        "city": "Chandigarh",
+        "state": "Chandigarh UT",
+        "distance": 1495,
+        "byCar": "25–33 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1196 km · road approx."
+      },
+      {
+        "from": "Shimla (Himachal Pradesh)",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "distance": 1549,
+        "byCar": "26–34 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1239 km · road approx."
+      },
+      {
+        "from": "Kolkata (West Bengal)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "distance": 1578,
+        "byCar": "26–35 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1262 km · road approx."
+      },
+      {
+        "from": "Amritsar (Punjab)",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "distance": 1634,
+        "byCar": "27–36 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1307 km · road approx."
+      },
+      {
+        "from": "Jammu (Jammu & Kashmir UT)",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir UT",
+        "distance": 1784,
+        "byCar": "30–40 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1427 km · road approx."
+      },
+      {
+        "from": "Gangtok (Sikkim)",
+        "city": "Gangtok",
+        "state": "Sikkim",
+        "distance": 1848,
+        "byCar": "31–41 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1478 km · road approx."
+      },
+      {
+        "from": "Leh (Ladakh UT)",
+        "city": "Leh",
+        "state": "Ladakh UT",
+        "distance": 1975,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1580 km · road approx."
+      },
+      {
+        "from": "Agartala (Tripura)",
+        "city": "Agartala",
+        "state": "Tripura",
+        "distance": 1979,
+        "byCar": "33–44 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1583 km · road approx."
+      },
+      {
+        "from": "Shillong (Meghalaya)",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "distance": 2118,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1694 km · road approx."
+      },
+      {
+        "from": "Guwahati (Assam)",
+        "city": "Guwahati",
+        "state": "Assam",
+        "distance": 2126,
+        "byCar": "35–47 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1701 km · road approx."
+      },
+      {
+        "from": "Aizawl (Mizoram)",
+        "city": "Aizawl",
+        "state": "Mizoram",
+        "distance": 2154,
+        "byCar": "36–48 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1723 km · road approx."
+      },
+      {
+        "from": "Imphal (Manipur)",
+        "city": "Imphal",
+        "state": "Manipur",
+        "distance": 2336,
+        "byCar": "39–52 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1869 km · road approx."
+      },
+      {
+        "from": "Kohima (Nagaland)",
+        "city": "Kohima",
+        "state": "Nagaland",
+        "distance": 2388,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1910 km · road approx."
+      },
+      {
+        "from": "Itanagar (Arunachal Pradesh)",
+        "city": "Itanagar",
+        "state": "Arunachal Pradesh",
+        "distance": 2389,
+        "byCar": "40–53 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1911 km · road approx."
+      },
+      {
+        "from": "Port Blair (Andaman & Nicobar UT)",
+        "city": "Port Blair",
+        "state": "Andaman & Nicobar UT",
+        "distance": 2458,
+        "byCar": "41–55 hrs",
+        "byTrain": "Trains to nearest railhead",
+        "byAir": "Fly to nearest airport + road transfer",
+        "via": "Straight-line 1966 km · road approx."
+      }
+    ],
+    "nearestAirport": {
+      "name": "Aurangabad Chhatrapati Sambhajinagar Airport (IXU)",
+      "distance": 140
+    },
+    "nearestRailway": {
+      "name": "Malkapur / Jalna Railway Station",
+      "distance": 90
+    },
+    "roadNote": "Smooth road access via Jalna and Samruddhi Mahamarg expressway."
+  },
+  "topPlaces": [
+    {
+      "name": "Lonar Meteorite Impact Crater Lake",
+      "category": "nature",
+      "distance": "0 km",
+      "entryFee": "Free",
+      "timings": "All Day",
+      "duration": "3 hrs",
+      "rating": 4.9,
+      "description": "50,000-year-old hyper-velocity basalt meteorite impact crater lake with saline-alkaline water.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/India%2C_Lonar_crater%2C_Meteorite_Impact%2C_Aerial_view.jpg/1280px-India%2C_Lonar_crater%2C_Meteorite_Impact%2C_Aerial_view.jpg",
+        "alt": "Lonar Meteorite Impact Crater Lake"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/India%2C_Lonar_crater%2C_Meteorite_Impact%2C_Aerial_view.jpg/1280px-India%2C_Lonar_crater%2C_Meteorite_Impact%2C_Aerial_view.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lonar_Crater_Lake.jpg/1280px-Lonar_Crater_Lake.jpg"
+      ]
+    },
+    {
+      "name": "Daitya Sudhan Temple",
+      "category": "heritage",
+      "distance": "1.5 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 8 PM",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "11th-century Chalukyan Vishnu temple built in star shape with stone carvings resembling Khajuraho.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Daitya Sudhan Temple"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1626014903708-662886f3db5a?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Gomukh Temple & Natural Spring",
+      "category": "spiritual",
+      "distance": "0.5 km",
+      "entryFee": "Free",
+      "timings": "5 AM – 7 PM",
+      "duration": "45 mins",
+      "rating": 4.7,
+      "description": "Crater rim temple where a natural perennial fresh water stream flows continuously.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Gomukh Temple & Natural Spring"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Kamanja Devi Temple inside Crater",
+      "category": "spiritual",
+      "distance": "1 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Ancient temple situated deep on the jungle floor of the crater rim.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "alt": "Kamanja Devi Temple inside Crater"
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80"
+      ]
+    },
+    {
+      "name": "Amber Khana Temple Ruins",
+      "category": "heritage",
+      "distance": "0.8 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 6 PM",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Ancient stone temple ruins hidden amidst dense crater jungle foliage.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg",
+        "alt": "Amber Khana Temple Ruins"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg"
+      ]
+    },
+    {
+      "name": "Sleeping Hanuman Temple (Yadgir)",
+      "category": "spiritual",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "6 AM – 8 PM",
+      "duration": "30 mins",
+      "rating": 4.6,
+      "description": "Unique reclining Hanuman idol carved out of magnetic rock.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%281%29.jpg/1280px-Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%281%29.jpg",
+        "alt": "Sleeping Hanuman Temple (Yadgir)"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%281%29.jpg/1280px-Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%281%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%282%29.jpg/1280px-Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%282%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%285%29.jpg/1280px-Inchangunarayan_Temple_Nagarjun_Municipility_Ichangu_Kathmandu_Nepal_Rajesh_Dhungana_%285%29.jpg"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "MTDC Resort Lonar",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3500,
+      "rating": 4.4,
+      "reviews": 310,
+      "amenities": [
+        "Crater View",
+        "Restaurant",
+        "Parking",
+        "AC Rooms"
+      ],
+      "tags": [
+        "Govt Resort",
+        "Crater View"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg",
+        "alt": "MTDC Resort Lonar"
+      }
+    },
+    {
+      "name": "Hotel Meteorite Lonar",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1500,
+      "priceMax": 2800,
+      "rating": 4.3,
+      "reviews": 180,
+      "amenities": [
+        "Free WiFi",
+        "Room Service",
+        "AC"
+      ],
+      "tags": [
+        "Budget Hotel"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Inscriptions_at_Lonar_Crater_9.jpg/1280px-Inscriptions_at_Lonar_Crater_9.jpg",
+        "alt": "Hotel Meteorite Lonar"
+      }
+    },
+    {
+      "name": "Lonar Crater Heritage Lodge",
+      "type": "resort",
+      "tier": "good",
+      "priceMin": 2200,
+      "priceMax": 4000,
+      "rating": 4.5,
+      "reviews": 140,
+      "amenities": [
+        "Garden",
+        "Restaurant",
+        "Guide Service"
+      ],
+      "tags": [
+        "Eco Lodge"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Inscriptions_at_Lonar_Crater_10.jpg/1280px-Inscriptions_at_Lonar_Crater_10.jpg",
+        "alt": "Lonar Crater Heritage Lodge"
+      }
+    },
+    {
+      "name": "MTDC Lonar",
+      "type": "farmstay",
+      "tier": "budget",
+      "priceMin": 1400,
+      "priceMax": 2500,
+      "rating": 4.4,
+      "reviews": 90,
+      "amenities": [
+        "Farm Fresh Food",
+        "Peaceful Location"
+      ],
+      "tags": [
+        "Farmstay"
+      ],
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Inscriptions_at_Lonar_Crater_11.jpg/1280px-Inscriptions_at_Lonar_Crater_11.jpg",
+        "alt": "Green Valley Stay Lonar"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Inscriptions_at_Lonar_Crater_4.jpg/1280px-Inscriptions_at_Lonar_Crater_4.jpg",
+      "alt": "Lonar Crater Lake photo 1"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Inscriptions_at_Lonar_Crater_9.jpg/1280px-Inscriptions_at_Lonar_Crater_9.jpg",
+      "alt": "Lonar Crater Lake photo 2"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Inscriptions_at_Lonar_Crater_10.jpg/1280px-Inscriptions_at_Lonar_Crater_10.jpg",
+      "alt": "Lonar Crater Lake photo 3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Inscriptions_at_Lonar_Crater_11.jpg/1280px-Inscriptions_at_Lonar_Crater_11.jpg",
+      "alt": "Lonar Crater Lake photo 4"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Inscriptions_at_Lonar_Crater_12.jpg/1280px-Inscriptions_at_Lonar_Crater_12.jpg",
+      "alt": "Lonar Crater Lake photo 5"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Inscriptions_at_Lonar_Crater_13.jpg/1280px-Inscriptions_at_Lonar_Crater_13.jpg",
+      "alt": "Lonar Crater Lake photo 6"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How was Lonar Crater Lake formed?",
+      "a": "Lonar Lake was formed by a hyper-velocity meteorite impact about 50,000 years ago into the Deccan basalt rock."
+    }
+  ],
+  "seo": {
+    "title": "Lonar Crater Lake Guide 2026 — Meteor Impact Lake, Temples, MTDC | IndiaExplore",
+    "description": "Explore Lonar Crater Lake in Maharashtra: 50,000-year-old meteorite impact lake, Daitya Sudhan temple and Aurangabad road route.",
+    "canonical": "destination.html?slug=lonar-crater",
+    "ogImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "keywords": [
+      "Lonar crater lake",
+      "Lonar meteorite lake",
+      "Lonar Maharashtra",
+      "Daitya Sudhan temple"
+    ]
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 1
+}
