@@ -13,6 +13,15 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Multi-Provider Image Pipeline & 100% Pexels/Unsplash Audit (2026-08-19)
+
+Completed multi-provider image pipeline overhaul supporting **Pexels**, **Unsplash**, and **Wikimedia Commons** with non-blocking rate limits and intelligent caching. 
+
+### Key Accomplishments:
+1. **100% Pexels & Unsplash Migration**: Replaced all broken/rate-limited Wikimedia images across top 10 priority destinations (`coorg`, `kanatal`, `manali`, `goa`, `udaipur`, `rishikesh`, `darjeeling`, `munnar`, `ladakh`, `hampi`) with verified Pexels and Unsplash photography (0 Wikimedia remaining).
+2. **Landmark-Specific Place Matching**: Populated all 141 tourist places across all 10 destinations with exactly 1 main image + 3 distinct supporting photos matching the specific landmark identity.
+3. **HTTP 200 OK Verification**: 467/467 unique images verified returning HTTP 200 OK with 0 broken links.
+
 ## Addendum — Destinations Luxury Redesign & GSAP Scroll Motion System (2026-08-17)
 
 Full verification and audit of the luxury editorial overhaul across the Destinations catalogue,

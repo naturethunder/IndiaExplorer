@@ -182,12 +182,11 @@ Full detail and rationale live in **[CLAUDE.md](CLAUDE.md)**.
 
 ---
 
-## External services (called from the browser, no API keys)
+## External services & Image Pipeline
 
 - **Open-Meteo** — live weather.
-- **Wikimedia Commons** — real photos, baked into each destination JSON (`heroImage`, `gallery`,
-  `topPlaces[].photos`) so the hero carousel and place cards are instant. Any place missing a
-  baked photo fetches live; falls back to `picsum.photos`.
+- **Pexels & Unsplash Multi-Provider Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].photos`, `hotels[].image`). Managed by `scripts/images/` pipeline with SQLite caching and non-blocking rate limiting.
+- **Wikimedia Commons** — Secondary fallback source for regional monument photography.
 - **OpenStreetMap** — map tiles (via vendored Leaflet).
 - **Web3Forms** — contact-form email delivery. A live access key is set in `js/pages/contact.js`;
   delivery only fires from a **browser over http(s)** (not `file://`), so it activates once deployed.

@@ -1,0 +1,2390 @@
+type,slug,title,state,rating,minPrice
+adventure,ladakh,"Ladakh",Ladakh,4.9,400
+adventure,spiti,"Spiti Valley",Himachal Pradesh,4.8,700
+adventure,rann-of-kutch,"Rann of Kutch",Gujarat,4.6,600
+adventure,auli,"Auli",Uttarakhand,4.6,2000
+adventure,kasol,"Kasol",Himachal Pradesh,4.5,900
+adventure,bir-billing,"Bir Billing",Himachal Pradesh,4.6,1000
+adventure,gulmarg,"Gulmarg",Jammu & Kashmir,4.7,2000
+adventure,chembra-peak,"Chembra Peak",Kerala,4.9,2800
+adventure,gurudongmar-lake,"Gurudongmar Lake",Sikkim,4.9,3500
+adventure,hanle,"Hanle",Ladakh,4.9,2500
+adventure,sandakphu,"Sandakphu",West Bengal,4.9,2200
+adventure,zanskar-valley,"Zanskar Valley",Ladakh,4.9,3500
+beach,goa,"Goa",Goa,4.5,400
+beach,varkala,"Varkala",Kerala,4.5,500
+beach,gokarna,"Gokarna",Karnataka,4.5,900
+beach,alleppey,"Alleppey",Kerala,4.6,1500
+beach,kovalam,"Kovalam",Kerala,4.4,1200
+beach,kumarakom,"Kumarakom",Kerala,4.5,1800
+beach,pondicherry,"Pondicherry",Puducherry,4.5,1200
+beach,kanyakumari,"Kanyakumari",Tamil Nadu,4.4,900
+beach,visakhapatnam,"Visakhapatnam",Andhra Pradesh,4.4,1200
+beach,diu,"Diu",Daman & Diu,4.3,1200
+beach,tarkarli,"Tarkarli",Maharashtra,4.4,1100
+beach,digha,"Digha",West Bengal,4,900
+beach,ramakrishna-mission-beach,"Ramakrishna Mission Beach",Andhra Pradesh,4.7,1200
+beach,rushikonda-beach,"Rushikonda Beach",Andhra Pradesh,4.3,1200
+beach,kondakarla-ava,"Kondakarla Āva",Andhra Pradesh,4.7,1200
+beach,vodarevu-beach,"Vodarevu Beach",Andhra Pradesh,4.2,1200
+beach,ramayapatnam-beach,"Ramayapatnam Beach",Andhra Pradesh,4.2,1200
+beach,vagator-beach,"Vagator Beach",Goa,4.2,1200
+beach,palolem-beach,"Palolem Beach",Goa,4.6,1200
+beach,mandrem-beach,"Mandrem Beach",Goa,4.6,1200
+beach,bambolim-beach,"Bambolim Beach",Goa,4.1,1200
+beach,dandi-beach,"Dandi Beach",Gujarat,4.7,1200
+beach,dumas-beach,"Dumas Beach",Gujarat,4.1,1200
+beach,shivrajpur-beach,"Shivrajpur beach",Gujarat,4.5,1200
+beach,padubidri-beach,"Padubidri Beach",Karnataka,4.5,1200
+beach,kappad,"Kappad",Kerala,4.1,1200
+beach,muzhappilangad-beach,"Muzhappilangad Beach",Kerala,4.5,1200
+beach,kollam-beach,"Kollam Beach",Kerala,4.8,1200
+beach,shankumugham-beach,"Shankumugham Beach",Kerala,4.4,1200
+beach,marari-beach,"Marari Beach",Kerala,4.7,1200
+beach,cherai-beach,"Cherai Beach",Kerala,4.4,1200
+beach,puthenthope-beach,"Puthenthope Beach",Kerala,4.3,1200
+beach,meenkunnu-beach,"Meenkunnu Beach",Kerala,4.4,1200
+beach,aksa-beach,"Aksa Beach",Maharashtra,4.5,1200
+beach,kalamb-beach,"Kalamb Beach",Maharashtra,4.1,1200
+beach,talasari-beach,"Talasari beach",Odisha,4.6,1200
+beach,chandrabhaga-beach,"Chandrabhaga beach",Odisha,4.6,1200
+beach,konark-beach,"Konark Beach",Odisha,4.3,1200
+beach,promenade-beach,"Promenade Beach",Puducherry,4.4,1200
+beach,agatti-island,"Agatti Island",Lakshadweep,4.8,5500
+beach,bangaram-island,"Bangaram Island",Lakshadweep,4.9,6500
+beach,dhanushkodi,"Dhanushkodi",Tamil Nadu,4.9,2500
+beach,havelock-island,"Havelock Island (Swaraj Dweep)",Andaman & Nicobar,4.9,3500
+beach,tranquebar,"Tranquebar (Tharangambadi)",Tamil Nadu,4.8,3200
+city,gurugram,"Gurugram",Haryana,4.7,2800
+city,noida,"Noida & Greater Noida",Uttar Pradesh,4.6,2400
+heritage,udaipur,"Udaipur",Rajasthan,4.7,400
+heritage,hampi,"Hampi",Karnataka,4.7,400
+heritage,jaisalmer,"Jaisalmer",Rajasthan,4.6,500
+heritage,jaipur,"Jaipur",Rajasthan,4.6,900
+heritage,jodhpur,"Jodhpur",Rajasthan,4.6,900
+heritage,bikaner,"Bikaner",Rajasthan,4.3,900
+heritage,majuli,"Majuli",Assam,4.4,1000
+heritage,mysore,"Mysore",Karnataka,4.6,1000
+heritage,badami,"Badami",Karnataka,4.4,900
+heritage,kochi,"Kochi",Kerala,4.5,1200
+heritage,mahabalipuram,"Mahabalipuram",Tamil Nadu,4.6,1000
+heritage,hyderabad,"Hyderabad",Telangana,4.5,1200
+heritage,mumbai,"Mumbai",Maharashtra,4.4,1500
+heritage,ajanta-ellora,"Ajanta & Ellora",Maharashtra,4.7,1000
+heritage,ahmedabad,"Ahmedabad",Gujarat,4.4,1000
+heritage,statue-of-unity,"Statue of Unity",Gujarat,4.5,1500
+heritage,khajuraho,"Khajuraho",Madhya Pradesh,4.6,900
+heritage,gwalior,"Gwalior",Madhya Pradesh,4.4,900
+heritage,orchha,"Orchha",Madhya Pradesh,4.6,900
+heritage,kolkata,"Kolkata",West Bengal,4.5,1200
+heritage,konark,"Konark",Odisha,4.6,900
+heritage,bhubaneswar,"Bhubaneswar",Odisha,4.4,1000
+heritage,nalanda,"Nalanda",Bihar,4.5,900
+heritage,belum-caves,"Belum Caves",Andhra Pradesh,4.5,900
+heritage,ethipothala-falls,"Ethipothala Falls",Andhra Pradesh,4.3,900
+heritage,konda-reddy-fort,"Konda Reddy Fort",Andhra Pradesh,4.3,900
+heritage,kondaveedu-fort,"Kondaveedu Fort",Andhra Pradesh,4.5,900
+heritage,kondapalli-fort,"Kondapalli Fort",Andhra Pradesh,4.6,900
+heritage,talakona,"Talakona",Andhra Pradesh,4.2,900
+heritage,chandragiri-fort,"Chandragiri Fort",Andhra Pradesh,4.1,900
+heritage,gooty-fort,"Gooty Fort",Andhra Pradesh,4.2,900
+heritage,madaksira-hill-fort,"Madaksira hill fort",Andhra Pradesh,4.8,900
+heritage,ratnagiri-fort,"Ratnagiri Fort",Andhra Pradesh,4.5,900
+heritage,nuranang-falls,"Nuranang Falls",Arunachal Pradesh,4.1,900
+heritage,chumi-gyatse-falls,"Chumi Gyatse Falls",Arunachal Pradesh,4.4,900
+heritage,kameng-elephant-reserve,"Kameng Elephant Reserve",Arunachal Pradesh,4.7,900
+heritage,maidam,"Maidam",Assam,4.1,900
+heritage,kareng-ghar,"Kareng Ghar",Assam,4.1,900
+heritage,gurdwara-sri-guru-tegh-bahadur-sahib,"Gurdwara Sri Guru Tegh Bahadur Sahib",Assam,4.4,900
+heritage,panimur,"Panimur",Assam,4.4,900
+heritage,rohtasgarh-fort,"Rohtasgarh Fort",Bihar,4.5,900
+heritage,takht-sri-patna-sahib,"Takht Sri Patna Sahib",Bihar,4.1,900
+heritage,munger-fort,"Munger Fort",Bihar,4.8,900
+heritage,buxar-fort,"Buxar Fort",Bihar,4.5,900
+heritage,darbhanga-fort,"Darbhanga Fort",Bihar,4.2,900
+heritage,gurdwara-bal-lila-maini-sangat,"Gurdwara Bal Lila Maini Sangat",Bihar,4.7,900
+heritage,nandangarh-stupa-and-rampart,"Nandangarh Stupa and Rampart",Bihar,4.4,900
+heritage,vishwamitra-ashram-bisaul,"Vishwamitra Ashram, Bisaul",Bihar,4.3,900
+heritage,burail-fort,"Burail Fort",Chandigarh,4.4,900
+heritage,manimajra-fort,"Manimajra Fort",Chandigarh,4.4,900
+heritage,chitrakoot-falls,"Chitrakoot Falls",Chhattisgarh,4.5,900
+heritage,kotumsar-cave,"Kotumsar Cave",Chhattisgarh,4.2,900
+heritage,bijapur-fort,"Bijapur Fort",Karnataka,4.3,900
+heritage,mendri-ghumar,"Mendri Ghumar",Chhattisgarh,4.3,900
+heritage,new-delhi,"New Delhi",Delhi,4.8,2200
+heritage,faridabad,"Faridabad & Surajkund",Haryana,4.5,2400
+heritage,neemrana,"Neemrana",Rajasthan,4.8,3800
+heritage,red-fort,"Red Fort",Delhi,4.4,900
+heritage,gurdwara-dam-dama-sahib,"Gurdwara Dam Dama Sahib",Delhi,4.3,900
+heritage,fort-st-anthony-of-simbor,"Fort St. Anthony of Simbor",Daman & Diu,4.7,900
+heritage,dudhsagar-falls,"Dudhsagar Falls",Goa,4.1,900
+heritage,fort-aguada,"Fort Aguada",Goa,4.6,900
+heritage,fort-tiracol,"Fort Tiracol",Goa,4.5,900
+heritage,corjuem-fort,"Corjuem Fort",Goa,4.3,900
+heritage,alorna-fort,"Alorna Fort",Goa,4.6,900
+heritage,fort-of-sao-tiago-of-banastarim,"Fort of São Tiago of Banastarim",Goa,4.6,900
+heritage,cabo-de-rama,"Cabo de Rama",Goa,4.3,900
+heritage,colvale-fort,"Colvale Fort",Goa,4.6,900
+heritage,mormugao-fort,"Mormugão Fort",Goa,4.3,900
+heritage,laxmi-vilas-palace,"Laxmi Vilas Palace",Gujarat,4.7,900
+heritage,uparkot-fort,"Uparkot Fort",Gujarat,4.7,900
+heritage,bhujia-fort,"Bhujia Fort",Gujarat,4.5,900
+heritage,songadh-fort,"Songadh Fort",Gujarat,4.2,900
+heritage,lakhpat-gurdwara-sahib,"Lakhpat Gurdwara Sahib",Gujarat,4.1,900
+heritage,roha-fort,"Roha Fort",Gujarat,4.1,900
+heritage,kanthkot-fort,"Kanthkot Fort",Gujarat,4.4,900
+heritage,english-cemetery-surat,"English Cemetery, Surat",Gujarat,4.1,900
+heritage,vijaya-vilas-palace,"Vijaya Vilas Palace",Gujarat,4.1,900
+heritage,rajmahal-mehsana,"Rajmahal, Mehsana",Gujarat,4.5,900
+heritage,asigarh-fort,"Asigarh Fort",Haryana,4.3,900
+heritage,nada-sahib,"Nada Sahib",Haryana,4.3,900
+heritage,firoz-shah-palace-complex,"Firoz Shah palace complex",Haryana,4.5,900
+heritage,nabha-house,"Nabha House",Haryana,4.7,900
+heritage,nahar-singh-mahal,"Nahar Singh Mahal",Haryana,4.1,900
+heritage,appu-ghar,"Appu Ghar",Haryana,4.2,900
+heritage,european-cemetery,"European Cemetery",Haryana,4.8,900
+heritage,kangra-fort-himachal-pradesh,"Kangra Fort, Himachal Pradesh",Himachal Pradesh,4.6,900
+heritage,gurdwara-paonta-sahib,"Gurdwara Paonta Sahib",Himachal Pradesh,4.2,900
+heritage,rehala-falls,"Rehala Falls",Himachal Pradesh,4.6,900
+heritage,naggar-castle,"Naggar Castle",Himachal Pradesh,4.6,900
+heritage,sissu-falls,"Sissu Falls",Himachal Pradesh,4.4,900
+heritage,dhankar-gompa,"Dhankar Gompa",Himachal Pradesh,4.4,900
+heritage,jaitak-fort,"Jaitak Fort",Himachal Pradesh,4.6,900
+heritage,akhnoor-fort,"Akhnoor Fort",Jammu & Kashmir,4.8,900
+heritage,ramnagar-fort,"Ramnagar Fort",Jammu & Kashmir,4.3,900
+heritage,hari-parbat-fort,"Hari Parbat Fort",Jammu & Kashmir,4.7,900
+heritage,noori-chamb,"Noori Chamb",Jammu & Kashmir,4.4,900
+heritage,hiranagar-fort,"Hiranagar Fort",Jammu & Kashmir,4.5,900
+heritage,poonch-fort,"Poonch Fort",Jammu & Kashmir,4.3,900
+heritage,hundru-falls,"Hundru Falls",Jharkhand,4.1,900
+heritage,dassam-falls,"Dassam Falls",Jharkhand,4.6,900
+heritage,jonha-falls,"Jonha Falls",Jharkhand,4.5,900
+heritage,lodh-falls,"Lodh Falls",Jharkhand,4.2,900
+heritage,rajrappa,"Rajrappa",Jharkhand,4.4,900
+heritage,panchghagh-falls,"Panchghagh Falls",Jharkhand,4.8,900
+heritage,lower-ghaghri-falls,"Lower Ghaghri Falls",Jharkhand,4.3,900
+heritage,usri-falls,"Usri Falls",Jharkhand,4.3,900
+heritage,st-mary-s-cathedral-ranchi,"St. Mary's Cathedral, Ranchi",Jharkhand,4.7,900
+heritage,palamu-fort,"Palamu Fort",Jharkhand,4.1,900
+heritage,sita-falls,"Sita Falls",Jharkhand,4.3,900
+heritage,perwaghagh-falls,"Perwaghagh Falls",Jharkhand,4.7,900
+heritage,bhatinda-falls,"Bhatinda Falls",Jharkhand,4.3,900
+heritage,lawapani-falls,"Lawapani Falls",Jharkhand,4.4,900
+heritage,jog-falls,"Jog Falls",Karnataka,4.4,900
+heritage,shivanasamudra-falls,"Shivanasamudra Falls",Karnataka,4.7,900
+heritage,irupu-falls,"Irupu Falls",Karnataka,4.3,900
+heritage,bidar-fort,"Bidar Fort",Karnataka,4.4,900
+heritage,gokak-falls,"Gokak Falls",Karnataka,4.1,900
+heritage,kunchikal-falls,"Kunchikal Falls",Karnataka,4.8,900
+heritage,bengaluru-palace,"Bengaluru Palace",Karnataka,4.6,900
+heritage,lalitha-mahal,"Lalitha Mahal",Karnataka,4.5,900
+heritage,hebbe-falls,"Hebbe Falls",Karnataka,4.3,900
+heritage,chitradurga-fort,"Chitradurga Fort",Karnataka,4.7,900
+heritage,devanahalli-fort,"Devanahalli Fort",Karnataka,4.1,900
+heritage,gulbarga-fort,"Gulbarga Fort",Karnataka,4.8,900
+heritage,jamalabad-fort,"Jamalabad Fort",Karnataka,4.3,900
+heritage,muthyalamaduvu,"Muthyalamaduvu",Karnataka,4.7,900
+heritage,mirjan-fort,"Mirjan Fort",Karnataka,4.6,900
+heritage,raichur-fort,"Raichur Fort",Karnataka,4.5,900
+heritage,hanumana-gundi-falls,"Hanumana Gundi Falls",Karnataka,4.5,900
+heritage,mallalli-falls,"Mallalli Falls",Karnataka,4.2,900
+heritage,kittur-fort,"Kittur Fort",Karnataka,4.7,900
+heritage,fort-anjediva,"Fort Anjediva",Karnataka,4.5,900
+heritage,belgaum-fort,"Belgaum Fort",Karnataka,4.6,900
+heritage,bellary-fort,"Bellary Fort",Karnataka,4.2,900
+heritage,koosalli-water-falls,"Koosalli Water Falls",Karnataka,4.3,900
+heritage,vajrapoha-falls,"Vajrapoha Falls",Karnataka,4.7,900
+heritage,jayamangali-blackbuck-reserve,"Jayamangali Blackbuck Reserve",Karnataka,4.3,900
+heritage,madikeri-fort,"Madikeri Fort",Karnataka,4.8,900
+heritage,manjarabad-fort,"Manjarabad Fort",Karnataka,4.7,900
+heritage,nalknad-palace,"Nalknad Palace",Karnataka,4.5,900
+heritage,chittaranjan-palace,"Chittaranjan Palace",Karnataka,4.4,900
+heritage,chelavara-falls,"Chelavara Falls",Karnataka,4.2,900
+heritage,bhimgad-fort,"Bhimgad Fort",Karnataka,4.8,900
+heritage,devaragundi,"Devaragundi",Karnataka,4.4,900
+heritage,tungabhadra-otter-conservation-reserve,"Tungabhadra Otter Conservation Reserve",Karnataka,4.7,900
+heritage,parashurama-theme-park-karkala,"Parashurama Theme Park, Karkala",Karnataka,4.1,900
+heritage,yadgir-fort,"Yadgir Fort",Karnataka,4.7,900
+heritage,athirappilly-falls,"Athirappilly Falls",Kerala,4.5,900
+heritage,palaruvi-falls,"Palaruvi Falls",Kerala,4.3,900
+heritage,santa-cruz-basilica,"Santa Cruz Basilica",Kerala,4.3,900
+heritage,st-angelo-fort,"St. Angelo Fort",Kerala,4.4,900
+heritage,thusharagiri-falls,"Thusharagiri Falls",Kerala,4.3,900
+heritage,soochipara-falls,"Soochipara Falls",Kerala,4.5,900
+heritage,bekal-fort,"Bekal Fort",Kerala,4.6,900
+heritage,pallipuram-fort,"Pallipuram Fort",Kerala,4.6,900
+heritage,st-mary-s-syro-malabar-catholic-cathedral-basilica,"St. Mary's Syro-Malabar Catholic Cathedral Basilica",Kerala,4.5,900
+heritage,vazhachal-falls,"Vazhachal Falls",Kerala,4.2,900
+heritage,cheeyappara-waterfalls,"Cheeyappara Waterfalls",Kerala,4.3,900
+heritage,palakkad-fort,"Palakkad Fort",Kerala,4.6,900
+heritage,st-mary-s-cathedral-pattom-trivandrum,"St. Mary's Cathedral, Pattom, Trivandrum",Kerala,4.3,900
+heritage,cranganore-fort,"Cranganore Fort",Kerala,4.5,900
+heritage,hosdurg-fort,"Hosdurg Fort",Kerala,4.2,900
+heritage,st-thomas-cathedral-pala,"St. Thomas Cathedral, Pala",Kerala,4.1,900
+heritage,pathampuzha,"Pathampuzha",Kerala,4.1,900
+heritage,aruvikkuzhy-falls,"Aruvikkuzhy Falls",Kerala,4.7,900
+heritage,tellicherry-fort,"Tellicherry Fort",Kerala,4.7,900
+heritage,anchuthengu-fort,"Anchuthengu Fort",Kerala,4.4,900
+heritage,immaculate-heart-of-mary-cathedral,"Immaculate Heart of Mary Cathedral",Kerala,4.3,900
+heritage,adyanpara-falls,"Adyanpara Falls",Kerala,4.6,900
+heritage,perunthenaruvi-falls,"Perunthenaruvi Falls",Kerala,4.7,900
+heritage,meenmutty-falls,"Meenmutty Falls",Kerala,4.2,900
+heritage,thommankuthu,"Thommankuthu",Kerala,4.3,900
+heritage,marmala-waterfall,"Marmala waterfall",Kerala,4.3,900
+heritage,kumbhavurutty-waterfalls,"Kumbhavurutty Waterfalls",Kerala,4.1,900
+heritage,aruvikkuzhi-waterfalls,"Aruvikkuzhi Waterfalls",Kerala,4.3,900
+heritage,st-mary-s-cathedral-punalur,"St. Mary's Cathedral, Punalur",Kerala,4.1,900
+heritage,arthat-st-mary-s-cathedral,"Arthat St. Mary's Cathedral",Kerala,4.4,900
+heritage,vazhvanthol-waterfalls,"Vazhvanthol waterfalls",Kerala,4.4,900
+heritage,valanjanganam-falls,"Valanjanganam Falls",Kerala,4.2,900
+heritage,keralamkundu-waterfalls,"Keralamkundu Waterfalls",Kerala,4.6,900
+heritage,kattikkayam-falls,"Kattikkayam Falls",Kerala,4.5,900
+heritage,areekkal-waterfalls,"Areekkal Waterfalls",Kerala,4.2,900
+heritage,lakkam-waterfalls,"Lakkam Waterfalls",Kerala,4.7,900
+heritage,carmelagiri-elephant-park,"Carmelagiri Elephant Park",Kerala,4.5,900
+heritage,mango-meadows,"Mango Meadows",Kerala,4.8,900
+heritage,konni-forest-division,"Konni Forest Division",Kerala,4.6,900
+heritage,valara,"Valara",Kerala,4.6,900
+heritage,kannimara-teak,"Kannimara Teak",Kerala,4.5,900
+heritage,kannamcode-cathedral,"Kannamcode Cathedral",Kerala,4.3,900
+heritage,st-thomas-orthodox-cathedral-thottomon-ranny,"St Thomas Orthodox Cathedral, Thottomon, Ranny",Kerala,4.5,900
+heritage,zangla-khar,"Zangla Khar",Ladakh,4.8,900
+heritage,khurnak-fort,"Khurnak Fort",Ladakh,4.2,900
+heritage,asirgarh-fort,"Asirgarh Fort",Madhya Pradesh,4.5,900
+heritage,chachai-falls,"Chachai Falls",Madhya Pradesh,4.6,900
+heritage,dhuandhar-falls,"Dhuandhar Falls",Madhya Pradesh,4.2,900
+heritage,pandav-falls,"Pandav Falls",Madhya Pradesh,4.2,900
+heritage,keoti-falls,"Keoti Falls",Madhya Pradesh,4.6,900
+heritage,purwa-falls,"Purwa Falls",Madhya Pradesh,4.3,900
+heritage,raneh-falls,"Raneh Falls",Madhya Pradesh,4.4,900
+heritage,bahuti-falls,"Bahuti Falls",Madhya Pradesh,4.8,900
+heritage,gatha-falls,"Gatha Falls",Madhya Pradesh,4.2,900
+heritage,taj-mahal-palace,"Taj Mahal Palace",Madhya Pradesh,4.4,900
+heritage,chanderi-fort,"Chanderi Fort",Madhya Pradesh,4.8,900
+heritage,rajwada-palace,"Rajwada palace",Madhya Pradesh,4.6,900
+heritage,patalpani-waterfall,"Patalpani waterfall",Madhya Pradesh,4.2,900
+heritage,gohad-fort,"Gohad Fort",Madhya Pradesh,4.6,900
+heritage,sabalgarh-fort,"Sabalgarh Fort",Madhya Pradesh,4.3,900
+heritage,jabalpur-madan-mahal,"Jabalpur Madan Mahal",Madhya Pradesh,4.1,900
+heritage,champavati-fort,"Champavati Fort",Madhya Pradesh,4.2,900
+heritage,datia-palace,"Datia Palace",Madhya Pradesh,4.4,900
+heritage,hindola-mahal,"Hindola Mahal",Madhya Pradesh,4.2,900
+heritage,chaman-mahal,"Chaman Mahal",Madhya Pradesh,4.7,900
+heritage,deogarh-fort,"Deogarh Fort",Madhya Pradesh,4.4,900
+heritage,kaliadeh-palace,"Kaliadeh Palace",Madhya Pradesh,4.3,900
+heritage,adhyatma-niketan,"Adhyatma Niketan",Madhya Pradesh,4.2,900
+heritage,raigad-fort,"Raigad Fort",Maharashtra,4.5,900
+heritage,shivneri-fort,"Shivneri Fort",Maharashtra,4.6,900
+heritage,aga-khan-palace,"Aga Khan Palace",Maharashtra,4.3,900
+heritage,shaniwar-wada,"Shaniwar Wada",Maharashtra,4.3,900
+heritage,murud-janjira,"Murud-Janjira",Maharashtra,4.4,900
+heritage,hazur-sahib,"Hazur Sahib",Maharashtra,4.4,900
+heritage,fort-vasai,"Fort Vasai",Maharashtra,4.3,900
+heritage,rajgad-fort,"Rajgad Fort",Maharashtra,4.5,900
+heritage,sindhudurg-fort,"Sindhudurg Fort",Maharashtra,4.2,900
+heritage,khanderi-island,"Khānderi Island",Maharashtra,4.6,900
+heritage,harishchandragad,"Harishchandragad",Maharashtra,4.2,900
+heritage,ahmednagar-fort,"Ahmednagar Fort",Maharashtra,4.7,900
+heritage,panhala-fort,"Panhala Fort",Maharashtra,4.8,900
+heritage,sinhagad,"Sinhagad",Maharashtra,4.3,900
+heritage,harihar-fort,"Harihar Fort",Maharashtra,4.3,900
+heritage,daulatabad-fort,"Daulatabad Fort",Maharashtra,4.1,900
+heritage,lohagad,"Lohagad",Maharashtra,4.3,900
+heritage,pratapgad,"Pratapgad",Maharashtra,4.5,900
+heritage,arnala-fort,"Arnala Fort",Maharashtra,4.7,900
+heritage,karnala-fort,"Karnala Fort",Maharashtra,4.2,900
+heritage,torna-fort,"Torna Fort",Maharashtra,4.2,900
+heritage,gawilghur-fort,"Gawilghur Fort",Maharashtra,4.6,900
+heritage,belapur-fort,"Belapur Fort",Maharashtra,4.3,900
+heritage,suvarnadurg-fort,"Suvarnadurg Fort",Maharashtra,4.4,900
+heritage,dongri-fort,"Dongri Fort",Maharashtra,4.7,900
+heritage,kolaba-fort,"Kolaba Fort",Maharashtra,4.1,900
+heritage,rajmachi-fort,"Rajmachi Fort",Maharashtra,4.3,900
+heritage,alang-fort,"Alang Fort",Maharashtra,4.1,900
+heritage,ajinkyatara-fort,"Ajinkyatara Fort",Maharashtra,4.5,900
+heritage,riwa-fort,"Riwa Fort",Maharashtra,4.3,900
+heritage,udgir-fort,"Udgir Fort",Maharashtra,4.4,900
+heritage,purandar-fort,"Purandar Fort",Maharashtra,4.5,900
+heritage,madh-fort,"Madh Fort",Maharashtra,4.7,900
+heritage,naldurg-fort,"Naldurg Fort",Maharashtra,4.4,900
+heritage,ghodbunder-fort,"Ghodbunder Fort",Maharashtra,4.7,900
+heritage,akola-fort,"Akola Fort",Maharashtra,4.4,900
+heritage,asheri-fort,"Asheri Fort",Maharashtra,4.4,900
+heritage,kaldurg-fort,"Kaldurg Fort",Maharashtra,4.1,900
+heritage,vijaydurg-fort,"Vijaydurg Fort",Maharashtra,4.7,900
+heritage,st-patrick-s-cathedral-pune,"St. Patrick's Cathedral, Pune",Maharashtra,4.2,900
+heritage,dabhosa-waterfalls,"Dabhosa Waterfalls",Maharashtra,4.4,900
+heritage,tikona,"Tikona",Maharashtra,4.3,900
+heritage,laling-fort,"Laling Fort",Maharashtra,4.5,900
+heritage,kavnai-fort,"Kavnai Fort",Maharashtra,4.5,900
+heritage,ghosalegad-fort,"Ghosalegad Fort",Maharashtra,4.4,900
+heritage,ballarpur-fort,"Ballarpur Fort",Maharashtra,4.2,900
+heritage,jaigad-fort,"Jaigad Fort",Maharashtra,4.3,900
+heritage,paranda-fort,"Paranda Fort",Maharashtra,4.5,900
+heritage,achala-fort,"Achala Fort",Maharashtra,4.4,900
+heritage,mahuli-fort,"Mahuli Fort",Maharashtra,4.2,900
+heritage,prabalgad,"Prabalgad",Maharashtra,4.2,900
+heritage,narnala-fort,"Narnala Fort",Maharashtra,4.4,900
+heritage,korlai-fort,"Korlai Fort",Maharashtra,4.5,900
+heritage,dugarwadi-waterfall,"Dugarwadi waterfall",Maharashtra,4.6,900
+heritage,pandavkada-falls,"Pandavkada Falls",Maharashtra,4.6,900
+heritage,avchitgad,"Avchitgad",Maharashtra,4.5,900
+heritage,kandhar-fort,"Kandhar Fort",Maharashtra,4.6,900
+heritage,antur-fort,"Antur Fort",Maharashtra,4.2,900
+heritage,ankai-fort,"Ankai Fort",Maharashtra,4.6,900
+heritage,ghangad,"Ghangad",Maharashtra,4.2,900
+heritage,hadsar,"Hadsar",Maharashtra,4.4,900
+heritage,dhodap-fort,"Dhodap Fort",Maharashtra,4.4,900
+heritage,kamalgad,"Kamalgad",Maharashtra,4.2,900
+heritage,malanggad,"Malanggad",Maharashtra,4.2,900
+heritage,sajjangad,"Sajjangad",Maharashtra,4.7,900
+heritage,indrai-fort,"Indrai Fort",Maharashtra,4.3,900
+heritage,kamandurg,"Kamandurg",Maharashtra,4.7,900
+heritage,malegaon-fort,"Malegaon Fort",Maharashtra,4.7,900
+heritage,anjanvel-fort,"Anjanvel Fort",Maharashtra,4.6,900
+heritage,bankot-fort,"Bankot Fort",Maharashtra,4.5,900
+heritage,akluj-fort,"Akluj Fort",Maharashtra,4.7,900
+heritage,mahur-fort,"Mahur Fort",Maharashtra,4.7,900
+heritage,jivdhan,"Jivdhan",Maharashtra,4.4,900
+heritage,kothaligad,"Kothaligad",Maharashtra,4.7,900
+heritage,tung-fort,"Tung Fort",Maharashtra,4.5,900
+heritage,irshalgad,"Irshalgad",Maharashtra,4.2,900
+heritage,talagad,"Talagad",Maharashtra,4.1,900
+heritage,galna-fort,"Galna Fort",Maharashtra,4.5,900
+heritage,sahasrakund-waterfall,"Sahasrakund Waterfall",Maharashtra,4.2,900
+heritage,hazara-falls,"Hazara Falls",Maharashtra,4.7,900
+heritage,devkund-waterfall,"Devkund Waterfall",Maharashtra,4.5,900
+heritage,kanchana-fort,"Kanchana Fort",Maharashtra,4.7,900
+heritage,korigad,"Korigad",Maharashtra,4.6,900
+heritage,fort-mangad,"Fort Mangad",Maharashtra,4.5,900
+heritage,hatgadh-fort,"Hatgadh Fort",Maharashtra,4.2,900
+heritage,birwadi-fort,"Birwadi Fort",Maharashtra,4.5,900
+heritage,kankrala,"Kankrala",Maharashtra,4.2,900
+heritage,dronagiri-fort,"Dronagiri Fort द्रौणपुर रियासत",Maharashtra,4.6,900
+heritage,mora-fort,"Mora fort",Maharashtra,4.6,900
+heritage,bhaskargad,"Bhaskargad",Maharashtra,4.5,900
+heritage,bhushangad,"Bhushangad",Maharashtra,4.3,900
+heritage,shirgaon-fort,"Shirgaon Fort",Maharashtra,4.7,900
+heritage,dategad,"Dategad",Maharashtra,4.8,900
+heritage,kelve-fort,"Kelve Fort",Maharashtra,4.1,900
+heritage,gorakhgad,"Gorakhgad",Maharashtra,4.1,900
+heritage,chandwad-fort,"Chandwad Fort",Maharashtra,4.2,900
+heritage,ahivant-fort,"Ahivant Fort",Maharashtra,4.2,900
+heritage,avandha-fort,"Avandha Fort",Maharashtra,4.2,900
+heritage,bharatgad,"Bharatgad",Maharashtra,4.2,900
+heritage,bahadur-fort,"Bahadur Fort",Maharashtra,4.2,900
+heritage,devgad-fort,"Devgad Fort",Maharashtra,4.5,900
+heritage,kohoj,"Kohoj",Maharashtra,4.5,900
+heritage,gambhirgad,"Gambhirgad",Maharashtra,4.7,900
+heritage,dativare-fort,"Dativare Fort",Maharashtra,4.3,900
+heritage,bhavangad-fort,"Bhavangad Fort",Maharashtra,4.3,900
+heritage,manikgad,"Manikgad",Maharashtra,4.8,900
+heritage,yeshwantgad,"Yeshwantgad",Maharashtra,4.5,900
+heritage,balapur-fort,"Balapur Fort",Maharashtra,4.2,900
+heritage,padmadurg,"Padmadurg",Maharashtra,4.2,900
+heritage,vajrai-waterfall,"Vajrai Waterfall",Maharashtra,4.6,900
+heritage,kirkee-war-cemetery,"Kirkee War Cemetery",Maharashtra,4.4,900
+heritage,rangana-fort,"Rangana Fort",Maharashtra,4.4,900
+heritage,rohida-fort,"Rohida Fort",Maharashtra,4.6,900
+heritage,sagargad,"Sagargad",Maharashtra,4.4,900
+heritage,surgad,"Surgad",Maharashtra,4.1,900
+heritage,mrugagad,"Mrugagad",Maharashtra,4.4,900
+heritage,tandulwadi-fort,"Tandulwadi Fort",Maharashtra,4.3,900
+heritage,jangali-jayagad,"Jangali Jayagad",Maharashtra,4.5,900
+heritage,mahipatgad,"Mahipatgad",Maharashtra,4.4,900
+heritage,rasalgad,"Rasalgad",Maharashtra,4.7,900
+heritage,nhavigad,"Nhavigad",Maharashtra,4.1,900
+heritage,chandan-fort,"Chandan Fort",Maharashtra,4.7,900
+heritage,salota-fort,"Salota fort",Maharashtra,4.4,900
+heritage,vairagad-fort,"Vairagad Fort",Maharashtra,4.2,900
+heritage,indori-fort,"Indori Fort",Maharashtra,4.6,900
+heritage,gowalkot,"Gowalkot",Maharashtra,4.3,900
+heritage,mangalgad,"Mangalgad",Maharashtra,4.7,900
+heritage,vasota-fort,"Vasota Fort",Maharashtra,4.4,900
+heritage,bitangad,"Bitangad",Maharashtra,4.4,900
+heritage,vairatgad-fort,"Vairatgad Fort",Maharashtra,4.3,900
+heritage,patta-fort,"Patta Fort",Maharashtra,4.6,900
+heritage,kalyangad,"Kalyangad",Maharashtra,4.4,900
+heritage,purnagad-fort,"Purnagad Fort",Maharashtra,4.1,900
+heritage,vardhangad-fort,"Vardhangad Fort",Maharashtra,4.2,900
+heritage,yashwantgad-fort,"Yashwantgad Fort",Maharashtra,4.3,900
+heritage,kunjargad,"Kunjargad",Maharashtra,4.5,900
+heritage,ghargad,"Ghargad",Maharashtra,4.3,900
+heritage,tringalwadi,"Tringalwadi",Maharashtra,4.2,900
+heritage,rajdher-fort,"Rajdher fort",Maharashtra,4.3,900
+heritage,pisola-fort,"Pisola fort",Maharashtra,4.2,900
+heritage,narayangad,"Narayangad",Maharashtra,4.2,900
+heritage,chandragad,"Chandragad",Maharashtra,4.3,900
+heritage,vikatgad,"Vikatgad",Maharashtra,4.6,900
+heritage,kurdugad,"Kurdugad",Maharashtra,4.5,900
+heritage,chavand,"Chavand",Maharashtra,4.2,900
+heritage,bhorgiri-fort,"Bhorgiri Fort",Maharashtra,4.4,900
+heritage,malhargad,"Malhargad",Maharashtra,4.5,900
+heritage,gurdwara-guru-nanak-punjabi-sabha-chakala,"Gurdwara Guru Nanak Punjabi Sabha Chakala",Maharashtra,4.3,900
+heritage,banoti-waterfall,"Banoti waterfall",Maharashtra,4.1,900
+heritage,gagangad,"Gagangad",Maharashtra,4.2,900
+heritage,mohangad,"Mohangad",Maharashtra,4.5,900
+heritage,konkan-diva-fort,"Konkan Diva Fort",Maharashtra,4.3,900
+heritage,pandavgad,"Pandavgad",Maharashtra,4.4,900
+heritage,pabargad,"Pabargad",Maharashtra,4.1,900
+heritage,mansantoshgad,"Mansantoshgad",Maharashtra,4.6,900
+heritage,santoshgad,"Santoshgad",Maharashtra,4.3,900
+heritage,samangad,"Samangad",Maharashtra,4.5,900
+heritage,prachitgad,"Prachitgad",Maharashtra,4.1,900
+heritage,machindragad,"Machindragad",Maharashtra,4.1,900
+heritage,suamargad,"Suamargad",Maharashtra,4.6,900
+heritage,javlya-fort,"Javlya Fort",Maharashtra,4.6,900
+heritage,pavangad,"Pavangad",Kerala,4.6,900
+heritage,tungi-fort,"Tungi fort",Maharashtra,4.7,900
+heritage,kidzania-mumbai,"KidZania Mumbai",Maharashtra,4.3,900
+heritage,mahipalgad,"Mahipalgad",Maharashtra,4.7,900
+heritage,mohandar-fort,"Mohandar fort",Maharashtra,4.4,900
+heritage,mandangad-fort,"Mandangad fort",Maharashtra,4.8,900
+heritage,makrandgad,"Makrandgad",Maharashtra,4.5,900
+heritage,kangla-fort,"Kangla Fort",Manipur,4.3,900
+heritage,st-joseph-s-cathedral-imphal,"St. Joseph's Cathedral, Imphal",Manipur,4.8,900
+heritage,bihu-loukon,"Bihu Loukon",Manipur,4.2,900
+heritage,nohsngithiang-falls,"Nohsngithiang Falls",Meghalaya,4.5,900
+heritage,nohkalikai-falls,"Nohkalikai Falls",Meghalaya,4.8,900
+heritage,langshiang-falls,"Langshiang Falls",Meghalaya,4.7,900
+heritage,kynrem-falls,"Kynrem Falls",Meghalaya,4.6,900
+heritage,wah-kaba-falls,"Wah Kaba Falls",Meghalaya,4.2,900
+heritage,vantawng-falls,"Vantawng Falls",Mizoram,4.5,900
+heritage,barehipani-falls,"Barehipani Falls",Odisha,4.5,900
+heritage,sanaghagara-waterfall,"Sanaghagara Waterfall",Odisha,4.8,900
+heritage,barabati-fort,"Barabati Fort",Odisha,4.4,900
+heritage,raibania-fort,"Raibania Fort",Odisha,4.8,900
+heritage,gajlaxmi-palace,"Gajlaxmi palace",Odisha,4.7,900
+heritage,kanika-palace,"Kanika Palace",Odisha,4.2,900
+heritage,gandahati-waterfall,"Gandahati Waterfall",Odisha,4.6,900
+heritage,asurgarh,"Asurgarh",Odisha,4.6,900
+heritage,gajapati-palace,"Gajapati Palace",Odisha,4.3,900
+heritage,harmandir-sahib,"Harmandir Sahib",Punjab,4.3,900
+heritage,qila-mubarak,"Qila Mubarak",Punjab,4.2,900
+heritage,qila-mubarak-patiala,"Qila Mubarak, Patiala",Punjab,4.5,900
+heritage,takht-sri-damdama-sahib,"Takht Sri Damdama Sahib",Punjab,4.6,900
+heritage,gurdwara-fatehgarh-sahib,"Gurdwara Fatehgarh Sahib",Punjab,4.5,900
+heritage,gurdwara-sri-tarn-taran-sahib,"Gurdwara Sri Tarn Taran Sahib",Punjab,4.5,900
+heritage,manauli-fort,"Manauli Fort",Punjab,4.1,900
+heritage,gurdwara-manji-sahib,"Gurdwara Manji Sahib",Punjab,4.7,900
+heritage,st-mary-s-cathedral-jalandhar,"St. Mary's Cathedral, Jalandhar",Punjab,4.4,900
+heritage,mughal-serai,"Mughal Serai",Punjab,4.1,900
+heritage,gurdwara-karamsar-rara-sahib,"Gurdwara Karamsar Rara Sahib",Punjab,4.3,900
+heritage,phillaur-fort,"Phillaur Fort",Punjab,4.7,900
+heritage,gurdwara-sri-ber-sahib,"Gurdwara Sri Ber Sahib",Punjab,4.7,900
+heritage,gurdwara-patalpuri-sahib,"Gurdwara Patalpuri Sahib",Punjab,4.5,900
+heritage,gurdwara-baba-bakala-sahib,"Gurdwara Baba Bakala Sahib",Punjab,4.1,900
+heritage,addhi-khuyi,"Addhi Khuyi",Punjab,4.6,900
+heritage,keshgarh-qila,"Keshgarh Qila",Punjab,4.7,900
+heritage,sainik-school-kapurthala,"Sainik School, Kapurthala",Punjab,4.6,900
+heritage,gurdwara-jyoti-sarup,"Gurdwara Jyoti Sarup",Punjab,4.3,900
+heritage,gurdwara-jand-sahib,"Gurdwara Jand Sahib",Punjab,4.2,900
+heritage,bajwara-fort,"Bajwara Fort",Punjab,4.3,900
+heritage,qila-mubarak-faridkot,"Qila Mubarak, Faridkot",Punjab,4.2,900
+heritage,hawa-mahal,"Hawa Mahal",Rajasthan,4.7,900
+heritage,hill-forts-of-rajasthan,"Hill Forts of Rajasthan",Rajasthan,4.5,900
+heritage,amber-fort,"Amber Fort",Rajasthan,4.8,900
+heritage,kumbhalgarh,"Kumbhalgarh",Rajasthan,4.2,900
+heritage,mehrangarh-fort,"Mehrangarh Fort",Rajasthan,4.3,900
+heritage,ranthambore-fort,"Ranthambore Fort",Rajasthan,4.4,900
+heritage,lake-palace,"Lake Palace",Rajasthan,4.4,900
+heritage,jal-mahal,"Jal Mahal",Rajasthan,4.6,900
+heritage,gagron-fort,"Gagron Fort",Rajasthan,4.3,900
+heritage,bhangarh-fort,"Bhangarh Fort",Rajasthan,4.7,900
+heritage,monsoon-palace,"Monsoon Palace",Rajasthan,4.7,900
+heritage,taragarh-fort,"Taragarh Fort",Rajasthan,4.3,900
+heritage,lohagarh-fort,"Lohagarh Fort",Rajasthan,4.6,900
+heritage,birla-mandir,"Birla Mandir",Rajasthan,4.4,900
+heritage,bhatner-fort,"Bhatner Fort",Rajasthan,4.2,900
+heritage,hill-fort-kesroli,"Hill Fort Kesroli",Rajasthan,4.3,900
+heritage,deeg-palace,"Deeg Palace",Rajasthan,4.4,900
+heritage,fort-madhogarh,"Fort Madhogarh",Rajasthan,4.8,900
+heritage,alwar-fort,"Alwar Fort",Rajasthan,4.6,900
+heritage,jalore-fort,"Jalore Fort",Rajasthan,4.4,900
+heritage,laxmangarh-fort,"Laxmangarh Fort",Rajasthan,4.2,900
+heritage,umed-bhawan-palace,"Umed Bhawan Palace",Rajasthan,4.4,900
+heritage,hindaun-fort,"Hindaun Fort",Rajasthan,4.6,900
+heritage,juna-mahal-dungarpur,"Juna Mahal, Dungarpur",Rajasthan,4.1,900
+heritage,bijai-garh,"Bijai Garh",Rajasthan,4.2,900
+heritage,rajgarh-fort,"Rajgarh Fort",Rajasthan,4.6,900
+heritage,bhainsrorgarh,"Bhainsrorgarh",Rajasthan,4.4,900
+heritage,bandh-baretha,"Bandh Baretha",Rajasthan,4.5,900
+heritage,gurdwara-nanaklama,"Gurdwara Nanaklama",Sikkim,4.3,900
+heritage,tendong-gumpa,"Tendong Gumpa",Sikkim,4.1,900
+heritage,san-thome-basilica,"San Thome Basilica",Tamil Nadu,4.3,900
+heritage,fort-st-george,"Fort St. George",Tamil Nadu,4.4,900
+heritage,hogenakkal-falls,"Hogenakkal Falls",Tamil Nadu,4.3,900
+heritage,agaya-gangai,"Agaya Gangai",Tamil Nadu,4.3,900
+heritage,gingee-fort,"Gingee Fort",Tamil Nadu,4.1,900
+heritage,pykara,"Pykara",Tamil Nadu,4.6,900
+heritage,thalaiyar-falls,"Thalaiyar Falls",Tamil Nadu,4.7,900
+heritage,vellore-fort,"Vellore Fort",Tamil Nadu,4.4,900
+heritage,siruvani-waterfalls,"Siruvani Waterfalls",Tamil Nadu,4.1,900
+heritage,suruli-falls,"Suruli Falls",Tamil Nadu,4.1,900
+heritage,kiliyur-falls,"Kiliyur Falls",Tamil Nadu,4.3,900
+heritage,thirparappu-waterfalls,"Thirparappu Waterfalls",Tamil Nadu,4.6,900
+heritage,fort-dansborg,"Fort Dansborg",Tamil Nadu,4.7,900
+heritage,kutladampatti-falls,"Kutladampatti Falls",Tamil Nadu,4.2,900
+heritage,dindigul-fort,"Dindigul Fort",Tamil Nadu,4.4,900
+heritage,padmanabhapuram-palace,"Padmanabhapuram Palace",Tamil Nadu,4.8,900
+heritage,kumbakkarai-falls,"Kumbakkarai Falls",Tamil Nadu,4.6,900
+heritage,fort-st-david,"Fort St. David",Tamil Nadu,4.6,900
+heritage,vattakottai-fort,"Vattakottai Fort",Tamil Nadu,4.6,900
+heritage,attur-fort,"Attur Fort",Tamil Nadu,4.8,900
+heritage,st-francis-xavier-s-cathedral-kottar,"St. Francis Xavier's Cathedral, Kottar",Tamil Nadu,4.7,900
+heritage,st-george-s-cathedral,"St. George's Cathedral",Tamil Nadu,4.4,900
+heritage,agasthiyar-falls,"Agasthiyar Falls",Tamil Nadu,4.5,900
+heritage,namakkal-fort,"Namakkal Fort",Tamil Nadu,4.4,900
+heritage,alamparai-fort,"Alamparai Fort",Tamil Nadu,4.4,900
+heritage,thirumayam-fort,"Thirumayam Fort",Tamil Nadu,4.5,900
+heritage,katary-falls,"Katary Falls",Tamil Nadu,4.8,900
+heritage,fort-vijf-sinnen,"Fort Vijf Sinnen",Tamil Nadu,4.5,900
+heritage,sankagiri-fort,"Sankagiri Fort",Tamil Nadu,4.3,900
+heritage,kalhatty-falls,"Kalhatty Falls",Tamil Nadu,4.3,900
+heritage,dash-n-splash,"Dash n Splash",Tamil Nadu,4.3,900
+heritage,ranjankudi-fort,"Ranjankudi Fort",Tamil Nadu,4.7,900
+heritage,frog-hill-view-point,"Frog Hill View Point",Tamil Nadu,4.4,900
+heritage,droog-fort,"Droog Fort",Tamil Nadu,4.4,900
+heritage,anchettidurgam,"Anchettidurgam",Tamil Nadu,4.4,900
+heritage,tangrakottai,"Tangrakottai",Tamil Nadu,4.1,900
+heritage,sivaganga-palace,"Sivaganga Palace",Tamil Nadu,4.5,900
+heritage,saccidananda-ashram,"Saccidananda Ashram",Tamil Nadu,4.2,900
+heritage,st-john-s-cathedral-nazareth,"St. John's Cathedral, Nazareth",Tamil Nadu,4.7,900
+heritage,ramoji-film-city,"Ramoji Film City",Telangana,4.2,900
+heritage,falaknuma-palace,"Falaknuma Palace",Telangana,4.4,900
+heritage,chowmahalla-palace,"Chowmahalla Palace",Telangana,4.5,900
+heritage,warangal-fort,"Warangal Fort",Telangana,4.5,900
+heritage,nizamia-observatory,"Nizamia observatory",Telangana,4.5,900
+heritage,asman-garh-palace,"Asman Garh Palace",Telangana,4.2,900
+heritage,bhongir-fort,"Bhongir Fort",Telangana,4.7,900
+heritage,medak-fort,"Medak Fort",Telangana,4.4,900
+heritage,khammam-fort,"Khammam Fort",Telangana,4.6,900
+heritage,gayatri-waterfalls,"Gayatri Waterfalls",Telangana,4.7,900
+heritage,buddhavanam,"Buddhavanam",Telangana,4.5,900
+heritage,elgandal-fort,"Elgandal Fort",Telangana,4.3,900
+heritage,gandhari-khilla,"Gandhari khilla",Telangana,4.7,900
+heritage,ramagiri-fort,"Ramagiri Fort",Telangana,4.7,900
+heritage,gurdwara-handi-sahib,"Gurdwara Handi Sahib",Bihar,4.2,900
+heritage,national-fisheries-development-board-building,"National Fisheries Development Board building",Telangana,4.5,900
+heritage,osmania-arts-college,"Osmania Arts College",Telangana,4.2,900
+heritage,st-francis-xavier-cathedral-agartala,"St. Francis Xavier Cathedral, Agartala",Tripura,4.3,900
+heritage,fatehpur-sikri,"Fatehpur Sikri",Uttar Pradesh,4.4,900
+heritage,agra-fort,"Agra Fort",Uttar Pradesh,4.3,900
+heritage,khusro-bagh,"Khusro Bagh",Uttar Pradesh,4.6,900
+heritage,allahabad-fort,"Allahabad Fort",Uttar Pradesh,4.8,900
+heritage,sikandar-bagh,"Sikandar Bagh",Uttar Pradesh,4.3,900
+heritage,jhansi-fort,"Jhansi Fort",Uttar Pradesh,4.7,900
+heritage,chunar-fort,"Chunar Fort",Uttar Pradesh,4.6,900
+heritage,garhwa-fort,"Garhwa Fort",Uttar Pradesh,4.7,900
+heritage,etawah-safari-park,"Etawah Safari Park",Uttar Pradesh,4.2,900
+heritage,guru-ka-tal,"Guru ka Tal",Uttar Pradesh,4.4,900
+heritage,shahi-qila,"Shahi Qila",Uttar Pradesh,4.3,900
+heritage,vijaygarh-fort,"Vijaygarh Fort",Uttar Pradesh,4.5,900
+heritage,portuguese-cemetery,"Portuguese Cemetery",Uttar Pradesh,4.2,900
+heritage,fort-ruhya,"Fort Ruhya",Uttar Pradesh,4.4,900
+heritage,hathras-fort,"Hathras Fort",Uttar Pradesh,4.7,900
+heritage,kuchesar-fort,"Kuchesar Fort",Uttar Pradesh,4.2,900
+heritage,fatehgarh-fort,"Fatehgarh Fort",Uttar Pradesh,4.6,900
+heritage,kempty-falls,"Kempty Falls",Uttarakhand,4.2,900
+heritage,patal-bhuvaneshwar,"Patal Bhuvaneshwar",Uttarakhand,4.7,900
+heritage,vasudhara-falls,"Vasudhara Falls",Uttarakhand,4.2,900
+heritage,beatles-ashram,"Beatles Ashram",Uttarakhand,4.8,900
+heritage,gurdwara-nanak-mata-sahib,"Gurdwara Nanak Mata Sahib",Uttarakhand,4.2,900
+heritage,fort-william,"Fort William",West Bengal,4.3,900
+heritage,cooch-behar-palace,"Cooch Behar Palace",West Bengal,4.8,900
+heritage,garh-panchkot,"Garh Panchkot",West Bengal,4.4,900
+heritage,hazarduari-palace,"Hazarduari Palace",West Bengal,4.3,900
+heritage,buxa-fort,"Buxa Fort",West Bengal,4.3,900
+heritage,rasmancha,"Rasmancha",West Bengal,4.5,900
+heritage,eco-park,"Eco Park",West Bengal,4.5,900
+heritage,nicco-park,"Nicco Park",West Bengal,4.7,900
+heritage,kurumbera-fort,"Kurumbera Fort",West Bengal,4.2,900
+heritage,andul-rajbari,"Andul Rajbari",West Bengal,4.8,900
+heritage,rangamati-tea-estate-cemetery,"Rangamati Tea Estate Cemetery",West Bengal,4.8,900
+heritage,kalikapur-zamindar-palace,"Kalikapur Zamindar palace",West Bengal,4.2,900
+heritage,dholavira,"Dholavira",Gujarat,4.8,2400
+heritage,mandu,"Mandu (Mandav)",Madhya Pradesh,4.8,2000
+heritage,shekhawati,"Shekhawati",Rajasthan,4.7,2500
+heritage,unakoti,"Unakoti",Tripura,4.8,1600
+hill_station,kanatal,"Kanatal",Uttarakhand,4.6,500
+hill_station,manali,"Manali",Himachal Pradesh,4.7,400
+hill_station,coorg,"Coorg",Karnataka,4.5,600
+hill_station,darjeeling,"Darjeeling",West Bengal,4.6,500
+hill_station,munnar,"Munnar",Kerala,4.6,600
+hill_station,ooty,"Ooty",Tamil Nadu,4.4,400
+hill_station,mount-abu,"Mount Abu",Rajasthan,4.4,1000
+hill_station,nainital,"Nainital",Uttarakhand,4.4,1200
+hill_station,mussoorie,"Mussoorie",Uttarakhand,4.4,1300
+hill_station,lansdowne,"Lansdowne",Uttarakhand,4.3,1500
+hill_station,ranikhet,"Ranikhet",Uttarakhand,4.3,1400
+hill_station,chopta,"Chopta",Uttarakhand,4.6,1200
+hill_station,munsiyari,"Munsiyari",Uttarakhand,4.5,1300
+hill_station,shimla,"Shimla",Himachal Pradesh,4.4,1300
+hill_station,dalhousie,"Dalhousie",Himachal Pradesh,4.3,1300
+hill_station,khajjiar,"Khajjiar",Himachal Pradesh,4.4,1400
+hill_station,chitkul,"Chitkul",Himachal Pradesh,4.6,1200
+hill_station,kalpa,"Kalpa",Himachal Pradesh,4.5,1200
+hill_station,srinagar,"Srinagar",Jammu & Kashmir,4.6,1500
+hill_station,pahalgam,"Pahalgam",Jammu & Kashmir,4.6,1800
+hill_station,sonamarg,"Sonamarg",Jammu & Kashmir,4.5,1800
+hill_station,patnitop,"Patnitop",Jammu & Kashmir,4.2,1300
+hill_station,gangtok,"Gangtok",Sikkim,4.6,1500
+hill_station,pelling,"Pelling",Sikkim,4.5,1400
+hill_station,lachung,"Lachung",Sikkim,4.6,2000
+hill_station,shillong,"Shillong",Meghalaya,4.5,1300
+hill_station,cherrapunji,"Cherrapunji",Meghalaya,4.5,1300
+hill_station,ziro,"Ziro",Arunachal Pradesh,4.5,1400
+hill_station,tawang,"Tawang",Arunachal Pradesh,4.6,1600
+hill_station,kohima,"Kohima",Nagaland,4.4,1400
+hill_station,chikmagalur,"Chikmagalur",Karnataka,4.5,1200
+hill_station,wayanad,"Wayanad",Kerala,4.5,1200
+hill_station,kodaikanal,"Kodaikanal",Tamil Nadu,4.5,1300
+hill_station,araku-valley,"Araku Valley",Andhra Pradesh,4.4,1100
+hill_station,lonavala,"Lonavala",Maharashtra,4.3,1200
+hill_station,mahabaleshwar,"Mahabaleshwar",Maharashtra,4.4,1300
+hill_station,matheran,"Matheran",Maharashtra,4.3,1300
+hill_station,saputara,"Saputara",Gujarat,4.2,1100
+hill_station,pachmarhi,"Pachmarhi",Madhya Pradesh,4.4,1100
+hill_station,kufri,"Kufri",Himachal Pradesh,4.1,1300
+hill_station,dehradun,"Dehradun",Uttarakhand,4.2,1100
+hill_station,yelagiri,"Yelagiri",Tamil Nadu,4.1,1100
+hill_station,netarhat,"Netarhat",Jharkhand,4.2,1000
+hill_station,western-ghats,"Western Ghats",Goa,4.6,1500
+hill_station,church-of-our-lady-of-the-snows,"Church of Our Lady of the Snows",Goa,4.3,1200
+hill_station,diskit-monastery,"Diskit Monastery",Ladakh,4.2,1200
+hill_station,amboli,"Amboli",Maharashtra,4.4,1200
+hill_station,basilica-of-our-lady-of-snows-thoothukudi,"Basilica of Our Lady of Snows, Thoothukudi",Tamil Nadu,4.4,1200
+hill_station,our-lady-of-snows,"Our Lady of Snows",Tamil Nadu,4.2,1200
+hillstation,daringbadi,"Daringbadi",Odisha,4.6,2000
+hillstation,dhanaulti,"Dhanaulti",Uttarakhand,4.7,2200
+hillstation,gurez-valley,"Gurez Valley",Jammu & Kashmir,4.9,3000
+hillstation,jibhi,"Jibhi",Himachal Pradesh,4.9,1800
+hillstation,valparai,"Valparai",Tamil Nadu,4.8,2500
+nature,manesar,"Manesar & Damdama Lake",Haryana,4.6,2800
+nature,bhedaghat,"Bhedaghat",Madhya Pradesh,4.8,2000
+nature,chitrakote-falls,"Chitrakote Falls",Chhattisgarh,4.8,2000
+nature,dawki,"Dawki",Meghalaya,4.8,2000
+nature,gandikota,"Gandikota",Andhra Pradesh,4.8,2200
+nature,loktak-lake,"Loktak Lake",Manipur,4.9,2400
+nature,lonar-crater,"Lonar Crater Lake",Maharashtra,4.7,1800
+nature,mawlynnong,"Mawlynnong",Meghalaya,4.8,1800
+nature,polo-forest,"Polo Forest",Gujarat,4.7,2200
+nature,tamhini-ghat,"Tamhini Ghat",Maharashtra,4.8,2200
+scenic,teerathgarh-falls,"Teerathgarh Falls",Chhattisgarh,4.8,900
+spiritual,rishikesh,"Rishikesh",Uttarakhand,4.6,350
+spiritual,varanasi,"Varanasi",Uttar Pradesh,4.5,350
+spiritual,mcleodganj,"McLeod Ganj",Himachal Pradesh,4.5,400
+spiritual,pushkar,"Pushkar",Rajasthan,4.4,900
+spiritual,haridwar,"Haridwar",Uttarakhand,4.5,900
+spiritual,madurai,"Madurai",Tamil Nadu,4.6,900
+spiritual,rameshwaram,"Rameshwaram",Tamil Nadu,4.6,900
+spiritual,tirupati,"Tirupati",Andhra Pradesh,4.6,900
+spiritual,dwarka,"Dwarka",Gujarat,4.5,900
+spiritual,somnath,"Somnath",Gujarat,4.6,900
+spiritual,ujjain,"Ujjain",Madhya Pradesh,4.6,900
+spiritual,puri,"Puri",Odisha,4.5,900
+spiritual,bodh-gaya,"Bodh Gaya",Bihar,4.7,900
+spiritual,sri-vetrimalai-murugan-temple,"Sri Vetrimalai Murugan Temple",Andaman & Nicobar,4.4,900
+spiritual,tirumala-venkateswara-temple,"Tirumala Venkateswara Temple",Andhra Pradesh,4.5,900
+spiritual,mallikarjuna-temple,"Mallikarjuna Temple",Andhra Pradesh,4.7,900
+spiritual,simhachalam-temple,"Simhachalam Temple",Andhra Pradesh,4.2,900
+spiritual,kanaka-durga-temple,"Kanaka Durga Temple",Andhra Pradesh,4.4,900
+spiritual,srikalahasti-temple,"Srikalahasti Temple",Andhra Pradesh,4.2,900
+spiritual,veerabhadra-temple,"Veerabhadra Temple",Andhra Pradesh,4.3,900
+spiritual,arasavalli-sun-temple,"Arasavalli Sun Temple",Andhra Pradesh,4.2,900
+spiritual,yaganti-temple,"Yaganti Temple",Andhra Pradesh,4.6,900
+spiritual,sri-kodandrama-swamy-temple-vontimitta,"Sri Kodandrama Swamy Temple, Vontimitta",Andhra Pradesh,4.6,900
+spiritual,kanipakam-vinayaka-temple,"Kanipakam Vinayaka Temple",Andhra Pradesh,4.8,900
+spiritual,somarama,"Somarama",Andhra Pradesh,4.3,900
+spiritual,mogalrajapuram-caves,"Mogalrajapuram caves",Andhra Pradesh,4.4,900
+spiritual,palli-kondeswarar-temple-surutupalle,"Palli Kondeswarar Temple, Surutupalle",Andhra Pradesh,4.2,900
+spiritual,kumararama,"Kumararama",Andhra Pradesh,4.1,900
+spiritual,chintala-venkataramana-temple-tadipatri,"Chintala Venkataramana Temple, Tadipatri",Andhra Pradesh,4.5,900
+spiritual,annavaram-satyanarayana-temple,"Annavaram Satyanarayana Temple",Andhra Pradesh,4.5,900
+spiritual,amararama,"Amararama",Andhra Pradesh,4.4,900
+spiritual,ksheerarama,"Ksheerarama",Andhra Pradesh,4.2,900
+spiritual,bhavanarayana-temple,"Bhavanarayana temple",Andhra Pradesh,4.2,900
+spiritual,prasanna-venkateswara-temple,"Prasanna Venkateswara Temple",Andhra Pradesh,4.5,900
+spiritual,devipuram,"Devipuram",Andhra Pradesh,4.5,900
+spiritual,kurmanathaswamy-temple-srikurmam,"Kurmanathaswamy Temple, Srikurmam",Andhra Pradesh,4.8,900
+spiritual,sri-lakshmi-narasimha-swamy-temple-antarvedi,"Sri Lakshmi Narasimha Swamy Temple, Antarvedi",Andhra Pradesh,4.5,900
+spiritual,vedanarayana-temple-nagalapuram,"Vedanarayana Temple, Nagalapuram",Andhra Pradesh,4.3,900
+spiritual,parasuramesvara-temple,"Parasuramesvara Temple",Andhra Pradesh,4.4,900
+spiritual,mangapuram-venkatesvara-vishnu-temple,"Mangapuram Venkatesvara Vishnu Temple",Andhra Pradesh,4.7,900
+spiritual,lakshmi-narasimha-swamy-temple-penna-ahobilam,"Lakshmi Narasimha swamy temple, Penna Ahobilam",Andhra Pradesh,4.6,900
+spiritual,someswara-swamy-temple-appikonda,"Someswara Swamy Temple, Appikonda",Andhra Pradesh,4.6,900
+spiritual,koneti-rayala-swamy-temple,"Koneti Rayala Swamy Temple",Andhra Pradesh,4.7,900
+spiritual,kotappakonda,"Kotappakonda",Andhra Pradesh,4.1,900
+spiritual,lakshmi-narasimha-temple-mangalagiri,"Lakshmi Narasimha Temple, Mangalagiri",Andhra Pradesh,4.7,900
+spiritual,beeramgunta-poleramma-temple,"Beeramgunta Poleramma Temple",Andhra Pradesh,4.6,900
+spiritual,sri-kodandarama-swami-devastanam,"Sri Kodandarama Swami Devastanam",Andhra Pradesh,4.5,900
+spiritual,talupulamma-lova,"Talupulamma Lova",Andhra Pradesh,4.2,900
+spiritual,pushpagiri-group-of-temples,"Pushpagiri Group of Temples",Andhra Pradesh,4.3,900
+spiritual,kotasattemma-temple-nidadavolu,"Kotasattemma Temple, Nidadavolu",Andhra Pradesh,4.7,900
+spiritual,veerabhadra-temple-pattiseema,"Veerabhadra Temple, Pattiseema",Andhra Pradesh,4.6,900
+spiritual,swayambhu-sri-abhista-gnana-ganapathi-temple,"Swayambhu Sri Abhista Gnana Ganapathi Temple",Andhra Pradesh,4.7,900
+spiritual,thiripurantakesvararar-temple-tripuranthakam,"Thiripurantakesvararar Temple, Tripuranthakam",Andhra Pradesh,4.3,900
+spiritual,chengalamma-parameshwari-temple,"Chengalamma Parameshwari Temple",Andhra Pradesh,4.4,900
+spiritual,gangamma-temple-dhenuvakonda,"Gangamma Temple, Dhenuvakonda",Andhra Pradesh,4.8,900
+spiritual,koulutla-chenna-kesava-temple,"Koulutla Chenna Kesava Temple",Andhra Pradesh,4.6,900
+spiritual,ramalingeswara-swamy-temple,"Ramalingeswara swamy Temple",Andhra Pradesh,4.1,900
+spiritual,dibbesvarasvamipur-temple,"Dibbesvarasvamipur Temple",Andhra Pradesh,4.5,900
+spiritual,siddalakona,"SiddalaKona",Andhra Pradesh,4.3,900
+spiritual,sri-sunama-jakini-matha,"Sri Sunama Jakini Matha",Andhra Pradesh,4.2,900
+spiritual,peddintlamma-temple-kolletikota,"Peddintlamma Temple, Kolletikota",Andhra Pradesh,4.3,900
+spiritual,sri-talpagiri-ranganadha-swamy-temple-nellore,"Sri Talpagiri Ranganadha Swamy Temple, Nellore",Andhra Pradesh,4.7,900
+spiritual,andhra-shiridi,"Andhra Shiridi",Andhra Pradesh,4.3,900
+spiritual,sai-shiva-balaji-mandir-dharmapuri,"Sai Shiva Balaji Mandir, Dharmapuri",Andhra Pradesh,4.3,900
+spiritual,sri-sri-nookambika-ammavari-temple,"Sri Sri Nookambika Ammavari Temple",Andhra Pradesh,4.8,900
+spiritual,chowdeshwari-temple-at-nandavaram,"Chowdeshwari Temple at Nandavaram",Andhra Pradesh,4.4,900
+spiritual,maddi-anjaneya-temple,"Maddi Anjaneya Temple",Andhra Pradesh,4.5,900
+spiritual,malinithan,"Malinithan",Arunachal Pradesh,4.6,900
+spiritual,kamakhya-temple,"Kamakhya Temple",Assam,4.7,900
+spiritual,sivasagar-sivadol,"Sivasagar Sivadol",Assam,4.8,900
+spiritual,umananda-temple,"Umananda Temple",Assam,4.4,900
+spiritual,hayagriva-madhava-temple,"Hayagriva Madhava Temple",Assam,4.5,900
+spiritual,mahabhairav-temple,"Mahabhairav Temple",Assam,4.4,900
+spiritual,negheriting-shiva-doul,"Negheriting Shiva Doul",Assam,4.8,900
+spiritual,hatimura-temple,"Hatimura Temple",Assam,4.5,900
+spiritual,maha-mrityunjay-temple,"Maha Mrityunjay Temple",Assam,4.3,900
+spiritual,mahamaya-dham,"Mahamaya Dham",Assam,4.7,900
+spiritual,burhi-gosani-devalaya-jorhat,"Burhi Gosani Devalaya Jorhat",Assam,4.3,900
+spiritual,deopani-durga-mandir,"Deopani Durga Mandir",Assam,4.5,900
+spiritual,da-parbatia,"Da Parbatia",Assam,4.3,900
+spiritual,joysagar-vishnudol,"Joysagar Vishnudol",Assam,4.6,900
+spiritual,bhimeswar-dham,"Bhimeswar Dham",Assam,4.4,900
+spiritual,bharali-namghar,"Bharali Namghar",Assam,4.7,900
+spiritual,lankeshwar-temple,"Lankeshwar Temple",Assam,4.4,900
+spiritual,bagheswari-temple-bongaigaon,"Bagheswari Temple, Bongaigaon",Assam,4.4,900
+spiritual,bileswar-temple,"Bileswar Temple",Assam,4.6,900
+spiritual,nagsankar-mandir,"Nagsankar Mandir",Assam,4.3,900
+spiritual,siva-doul,"Siva Doul",Assam,4.5,900
+spiritual,vasudeva-doul,"Vasudeva Doul",Assam,4.6,900
+spiritual,govinda-temple-hojai,"Govinda Temple, Hojai",Assam,4.7,900
+spiritual,golaghat-british-cemetery,"Golaghat British Cemetery",Assam,4.3,900
+spiritual,mundeshwari-temple,"Mundeshwari Temple",Bihar,4.7,900
+spiritual,vishnupad-temple-gaya,"Vishnupad Temple, Gaya",Bihar,4.6,900
+spiritual,baba-garib-sthan-mandir,"Baba Garib Sthan Mandir",Bihar,4.1,900
+spiritual,mangla-gauri-temple,"Mangla Gauri Temple",Bihar,4.8,900
+spiritual,ashokdham-temple,"Ashokdham Temple",Bihar,4.4,900
+spiritual,aranya-devi-temple-arrah,"Aranya Devi Temple, Arrah",Bihar,4.4,900
+spiritual,maa-tara-chandi-temple,"Maa Tara Chandi Temple",Bihar,4.7,900
+spiritual,pataleshwar-mandir,"Pataleshwar Mandir",Bihar,4.8,900
+spiritual,chandika-sthan,"Chandika Sthan",Bihar,4.4,900
+spiritual,kapileshwar-temple,"Kapileshwar Temple",Bihar,4.6,900
+spiritual,khudneshwar-asthan-morwa,"Khudneshwar Asthan Morwa",Bihar,4.2,900
+spiritual,lal-keshwar-shiv-temple,"Lal Keshwar Shiv Temple",Bihar,4.3,900
+spiritual,basilica-of-our-lady-of-divine-grace,"Basilica of Our Lady of Divine Grace",Bihar,4.7,900
+spiritual,iskcon-temple-patna,"ISKCON Temple Patna",Bihar,4.1,900
+spiritual,koncheswar-mahadev-temple,"Koncheswar Mahadev temple",Bihar,4.8,900
+spiritual,sundernath,"Sundernath",Bihar,4.2,900
+spiritual,bhoramdeo-temple,"Bhoramdeo Temple",Chhattisgarh,4.7,900
+spiritual,bambleshwari-temple,"Bambleshwari Temple",Chhattisgarh,4.5,900
+spiritual,ashtabhuji-temple,"Ashtabhuji Temple",Chhattisgarh,4.1,900
+spiritual,rajiv-lochan-temple-rajim,"Rajiv Lochan temple, Rajim",Chhattisgarh,4.6,900
+spiritual,barfani-dham,"Barfani dham",Chhattisgarh,4.4,900
+spiritual,dhumnath-temple,"Dhumnath Temple",Chhattisgarh,4.7,900
+spiritual,cathedral-of-our-lady-of-the-rosary,"Cathedral of Our Lady of the Rosary",Chhattisgarh,4.4,900
+spiritual,mahadev-temple-deobaloda,"Mahadev Temple, Deobaloda",Chhattisgarh,4.2,900
+spiritual,indal-deul-temple-kharod,"Indal Deul temple, Kharod",Chhattisgarh,4.2,900
+spiritual,arang-jain-temples,"Arang Jain temples",Chhattisgarh,4.1,900
+spiritual,bhooteshwarnath,"Bhooteshwarnath",Chhattisgarh,4.2,900
+spiritual,lotus-temple,"Lotus Temple",Delhi,4.1,900
+spiritual,chhatarpur-temple,"Chhatarpur Temple",Delhi,4.6,900
+spiritual,jhandewalan-temple,"Jhandewalan Temple",Delhi,4.7,900
+spiritual,st-sebastian-s-church,"St. Sebastian's Church,",Delhi,4.8,900
+spiritual,st-james-orthodox-church-mayur-vihar-phase-3-delhi,"St. James' Orthodox Church, Mayur Vihar Phase-3, Delhi",Delhi,4.5,900
+spiritual,basilica-of-bom-jesus,"Basilica of Bom Jesus",Goa,4.3,900
+spiritual,mangueshi-temple,"Mangueshi Temple",Goa,4.7,900
+spiritual,mahadev-temple-tambdi-surla,"Mahadev Temple, Tambdi Surla",Goa,4.2,900
+spiritual,shanta-durga-temple,"Shanta Durga Temple",Goa,4.4,900
+spiritual,our-lady-of-the-immaculate-conception-church,"Our Lady of the Immaculate Conception Church",Goa,4.4,900
+spiritual,church-of-st-anne-talaulim,"Church of St. Anne, Talaulim",Goa,4.2,900
+spiritual,saptakoteshwar-temple,"Saptakoteshwar Temple",Goa,4.3,900
+spiritual,holy-spirit-church-margao,"Holy Spirit Church, Margao",Goa,4.5,900
+spiritual,mallikarjuna-temple-goa,"Mallikarjuna Temple, Goa",Goa,4.6,900
+spiritual,mahalasa-narayani-temple,"Mahalasa Narayani Temple",Goa,4.6,900
+spiritual,shantadurga-kalangutkarin-temple,"Shantadurga Kalangutkarin Temple",Goa,4.1,900
+spiritual,our-lady-of-grace-church,"Our Lady of Grace Church",Goa,4.2,900
+spiritual,shri-damodar-sansthaan-goa,"Shri Damodar Sansthaan, Goa",Goa,4.6,900
+spiritual,capela-de-nossa-senhora-da-saude,"Capela de Nossa Senhora da Saúde",Goa,4.5,900
+spiritual,nageshvara-jyotirlinga,"Nageshvara Jyotirlinga",Gujarat,4.4,900
+spiritual,sun-temple,"Sun Temple",Gujarat,4.8,900
+spiritual,rudra-mahalaya-temple,"Rudra Mahalaya Temple",Gujarat,4.5,900
+spiritual,akshardham-gandhinagar,"Akshardham (Gandhinagar)",Gujarat,4.8,900
+spiritual,taranga,"Taranga",Gujarat,4.3,900
+spiritual,palitana-temples,"Palitana temples",Gujarat,4.3,900
+spiritual,navlakha-temple-ghumli,"Navlakha Temple, Ghumli",Gujarat,4.3,900
+spiritual,rama-lakshamana-temples-baradia,"Rama Lakshamana Temples, Baradia",Gujarat,4.7,900
+spiritual,pindara-group-of-temples,"Pindara Group of Temples",Gujarat,4.3,900
+spiritual,shankheshwar-jain-temple,"Shankheshwar Jain Temple",Gujarat,4.5,900
+spiritual,camp-hanuman-temple,"Camp Hanuman Temple",Gujarat,4.2,900
+spiritual,girnar-jain-temples,"Girnar Jain temples",Gujarat,4.1,900
+spiritual,shiva-temple-kera,"Shiva Temple, Kera",Gujarat,4.3,900
+spiritual,magderu,"Magderu",Gujarat,4.6,900
+spiritual,munsar-lake-and-shrines,"Munsar lake and shrines",Gujarat,4.6,900
+spiritual,shri-hanuman-mandir,"Shri Hanuman Mandir",Gujarat,4.3,900
+spiritual,sacred-heart-syro-malabar-cathedral,"Sacred Heart Syro-Malabar Cathedral",Gujarat,4.2,900
+spiritual,shri-swaminarayan-mandir-gadhada,"Shri Swaminarayan Mandir, Gadhada",Gujarat,4.5,900
+spiritual,utkanteshwar-mahadev,"Utkanteshwar Mahadev",Gujarat,4.7,900
+spiritual,bhadreshwar-jain-temple,"Bhadreshwar Jain Temple",Gujarat,4.5,900
+spiritual,kalika-mata-temple-new-dhrewad,"Kalika Mata Temple, New Dhrewad",Gujarat,4.6,900
+spiritual,eme-temple,"EME Temple",Gujarat,4.7,900
+spiritual,umiya-temple-unjha,"Umiya Temple, Unjha",Gujarat,4.6,900
+spiritual,trinetreshwar-temple,"Trinetreshwar Temple",Gujarat,4.8,900
+spiritual,kumbharia-jain-temples,"Kumbharia Jain temples",Gujarat,4.3,900
+spiritual,brahma-temple-khedbrahma,"Brahma Temple, Khedbrahma",Gujarat,4.4,900
+spiritual,santram-mandir,"Santram Mandir",Gujarat,4.6,900
+spiritual,ahmedabad-kali-bari,"Ahmedabad Kali Bari",Gujarat,4.1,900
+spiritual,jain-temples-pavagadh,"Jain temples, Pavagadh",Gujarat,4.3,900
+spiritual,jain-temples-abhapur,"Jain temples, Abhapur",Gujarat,4.7,900
+spiritual,shri-swaminarayan-mandir-vadtal,"Shri Swaminarayan Mandir, Vadtal",Gujarat,4.3,900
+spiritual,tapkeshwari-temple,"Tapkeshwari Temple",Gujarat,4.6,900
+spiritual,sitala-mata-temple-butapaldi,"Sitala Mata Temple, Butapaldi",Gujarat,4.3,900
+spiritual,ranak-devi-s-temple,"Ranak Devi's Temple",Gujarat,4.3,900
+spiritual,panchasara-parshwanath-temple,"Panchasara Parshwanath temple",Gujarat,4.5,900
+spiritual,valinath-mahadev-temple-tarabh,"Valinath Mahadev temple, Tarabh",Gujarat,4.3,900
+spiritual,shantinath-jain-temple-kothara,"Shantinath Jain temple, Kothara",Gujarat,4.3,900
+spiritual,sadhimataji-s-temple,"Sadhimataji’s temple",Gujarat,4.5,900
+spiritual,shri-keshavraiji-temple,"Shri Keshavraiji Temple",Gujarat,4.5,900
+spiritual,vardayini-mata-temple,"Vardayini Mata Temple",Gujarat,4.7,900
+spiritual,khodaldham,"Khodaldham",Gujarat,4.2,900
+spiritual,hanuman-dandi-temple,"Hanuman Dandi temple",Gujarat,4.3,900
+spiritual,lakkadiya-hanuman-temple,"Lakkadiya Hanuman Temple",Gujarat,4.6,900
+spiritual,songadh-jain-temple,"Songadh Jain temple",Gujarat,4.1,900
+spiritual,sun-temple-thangadh,"Sun temple, Thangadh",Gujarat,4.8,900
+spiritual,bhima-devi-temple-complex,"Bhima Devi Temple Complex",Haryana,4.3,900
+spiritual,agroha-dham,"Agroha Dham",Haryana,4.7,900
+spiritual,bhuteshwar-temple,"Bhuteshwar Temple",Haryana,4.5,900
+spiritual,kalayat-ancient-bricks-temple-complex,"Kalayat Ancient Bricks Temple Complex",Haryana,4.6,900
+spiritual,cantonment-church-tower,"Cantonment Church Tower",Haryana,4.8,900
+spiritual,eklavya-temple,"Eklavya temple",Haryana,4.5,900
+spiritual,dehra-temple,"Dehra Temple",Haryana,4.7,900
+spiritual,sheetla-mata-mandir-gurgaon,"Sheetla Mata Mandir Gurgaon",Haryana,4.7,900
+spiritual,kartikeya-temple-pehowa,"Kartikeya Temple, Pehowa",Haryana,4.7,900
+spiritual,ranila,"Ranila",Haryana,4.5,900
+spiritual,seventh-day-adventist-church-nilokheri,"Seventh-day Adventist Church, Nilokheri",Haryana,4.6,900
+spiritual,masroor-temples,"Masroor Temples",Himachal Pradesh,4.5,900
+spiritual,baijnath-temple-himachal-pradesh,"Baijnath Temple, Himachal Pradesh",Himachal Pradesh,4.6,900
+spiritual,bhimakali-temple,"Bhimakali Temple",Himachal Pradesh,4.4,900
+spiritual,lakshana-devi-temple-bharmour,"Lakshana Devi Temple, Bharmour",Himachal Pradesh,4.8,900
+spiritual,bathu-temples-himachal-pradesh,"Bathu Temples, Himachal Pradesh",Himachal Pradesh,4.6,900
+spiritual,shri-chamunda-devi-mandir,"Shri Chamunda Devi Mandir",Himachal Pradesh,4.7,900
+spiritual,kamaksha,"Kamaksha",Himachal Pradesh,4.6,900
+spiritual,jwala-ji-kangra,"Jwala Ji Kangra",Himachal Pradesh,4.5,900
+spiritual,trilokpur,"Trilokpur",Himachal Pradesh,4.4,900
+spiritual,himani-chamunda,"Himani Chamunda",Himachal Pradesh,4.5,900
+spiritual,tangyud-monastery,"Tangyud Monastery",Himachal Pradesh,4.5,900
+spiritual,shali-mata-temple,"Shali Mata Temple",Himachal Pradesh,4.5,900
+spiritual,pohlani-mata-temple,"Pohlani Mata Temple",Himachal Pradesh,4.2,900
+spiritual,kamna-devi-temple,"Kamna Devi Temple",Himachal Pradesh,4.1,900
+spiritual,shikari-devi-temple,"Shikari Devi Temple",Himachal Pradesh,4.2,900
+spiritual,chehni-kothi,"Chehni Kothi",Himachal Pradesh,4.8,900
+spiritual,maa-bhangayani-temple-haripurdhar,"Maa Bhangayani Temple, Haripurdhar",Himachal Pradesh,4.4,900
+spiritual,maa-simsa-temple,"Maa Simsa temple",Himachal Pradesh,4.2,900
+spiritual,amarnath-temple,"Amarnath Temple",Jammu & Kashmir,4.6,900
+spiritual,vaishno-devi-temple,"Vaishno Devi Temple",Jammu & Kashmir,4.6,900
+spiritual,hazratbal-shrine,"Hazratbal Shrine",Jammu & Kashmir,4.1,900
+spiritual,martand-sun-temple,"Martand Sun Temple",Jammu & Kashmir,4.7,900
+spiritual,shankaracharya-temple-srinagar,"Shankaracharya Temple, Srinagar",Jammu & Kashmir,4.5,900
+spiritual,avanti-swami-temple,"Avanti Swami Temple",Jammu & Kashmir,4.2,900
+spiritual,kheer-bhawani,"Kheer Bhawani",Jammu & Kashmir,4.1,900
+spiritual,raghunath-temple,"Raghunath Temple",Jammu & Kashmir,4.4,900
+spiritual,shankaragaurishvara-temple-pattan,"Shankaragaurishvara Temple, Pattan",Jammu & Kashmir,4.3,900
+spiritual,shivkhori,"Shivkhori",Jammu & Kashmir,4.7,900
+spiritual,wangath-temple-complex-naranag,"Wangath Temple complex, Naranag",Jammu & Kashmir,4.4,900
+spiritual,ancient-temple-at-ladhoo,"Ancient Temple at Ladhoo",Jammu & Kashmir,4.7,900
+spiritual,group-of-temples-at-kiramchi,"Group of Temples at Kiramchi",Jammu & Kashmir,4.6,900
+spiritual,st-joseph-s-catholic-church,"St. Joseph's Catholic Church",Jammu & Kashmir,4.4,900
+spiritual,bumzuva-cave-and-temple,"Bumzuva Cave and Temple",Jammu & Kashmir,4.3,900
+spiritual,vaidyanath-jyotirlinga,"Vaidyanath Jyotirlinga",Jharkhand,4.7,900
+spiritual,shikharji,"Shikharji",Jharkhand,4.4,900
+spiritual,basilica-of-the-divine-motherhood-of-our-lady,"Basilica of the Divine Motherhood of Our Lady",Jharkhand,4.6,900
+spiritual,maa-dewri-temple,"Maa Dewri Temple",Jharkhand,4.6,900
+spiritual,harihar-dham,"Harihar Dham",Jharkhand,4.8,900
+spiritual,maluti-temples,"Maluti temples",Jharkhand,4.4,900
+spiritual,sri-sri-kalika-maharani-temple,"Sri Sri Kalika Maharani Temple",Jharkhand,4.1,900
+spiritual,karneshwar-dham,"Karneshwar Dham",Jharkhand,4.2,900
+spiritual,rani-sati-mandir-mahuda,"Rani Sati Mandir Mahuda",Jharkhand,4.4,900
+spiritual,chennakesava-temple,"Chennakesava Temple",Karnataka,4.7,900
+spiritual,chennakesava-temple-at-somanathapura-mysore,"Chennakesava Temple at Somanathapura Mysore",Karnataka,4.6,900
+spiritual,st-philomena-s-cathedral,"St. Philomena's Cathedral",Karnataka,4.3,900
+spiritual,hoysaleswara-temple,"Hoysaleswara Temple",Karnataka,4.7,900
+spiritual,udupi-sri-krishna-matha,"Udupi Sri Krishna Matha",Karnataka,4.8,900
+spiritual,chamundeshwari-temple,"Chamundeshwari Temple",Karnataka,4.8,900
+spiritual,durga-temple-aihole,"Durga temple, Aihole",Karnataka,4.8,900
+spiritual,kollur-mookambika-temple,"Kollur Mookambika Temple",Karnataka,4.8,900
+spiritual,nageshvara-temple,"Nageshvara Temple",Karnataka,4.3,900
+spiritual,mahadeva-temple-itagi,"Mahadeva Temple, Itagi",Karnataka,4.6,900
+spiritual,dharmaraya-swamy-temple,"Dharmaraya Swamy Temple",Karnataka,4.2,900
+spiritual,panchakuta-basadi-kambadahalli,"Panchakuta Basadi, Kambadahalli",Karnataka,4.8,900
+spiritual,mahakuta-group-of-temples,"Mahakuta group of temples",Karnataka,4.7,900
+spiritual,banashankari-amma-temple,"Banashankari Amma Temple",Karnataka,4.3,900
+spiritual,halasuru-someshwara-temple-bangalore,"Halasuru Someshwara Temple, Bangalore",Karnataka,4.4,900
+spiritual,kukke-subramanya-temple,"Kukke Subramanya Temple",Karnataka,4.2,900
+spiritual,amrutesvara-temple,"Amrutesvara Temple",Karnataka,4.6,900
+spiritual,saavira-kambada-basadi,"Saavira Kambada Basadi",Karnataka,4.2,900
+spiritual,st-lawrence-shrine,"St. Lawrence Shrine",Karnataka,4.6,900
+spiritual,manyakheta,"Manyakheta",Karnataka,4.5,900
+spiritual,ananthasayana-temple,"Ananthasayana temple",Karnataka,4.4,900
+spiritual,gokarnanatheshwara-temple,"Gokarnanatheshwara Temple",Karnataka,4.8,900
+spiritual,dharmasthala-temple,"Dharmasthala Temple",Karnataka,4.1,900
+spiritual,mangaladevi-temple,"Mangaladevi Temple",Karnataka,4.3,900
+spiritual,srikanteshwara-temple-nanjangud,"Srikanteshwara Temple, Nanjangud",Karnataka,4.6,900
+spiritual,akkana-basadi,"Akkana Basadi",Karnataka,4.1,900
+spiritual,kasivisvesvara-temple-lakkundi,"Kasivisvesvara Temple, Lakkundi",Karnataka,4.1,900
+spiritual,kamala-narayana-temple-degaon,"Kamala Narayana Temple, Degaon",Karnataka,4.2,900
+spiritual,sirsi-marikamba-temple,"Sirsi Marikamba Temple",Karnataka,4.4,900
+spiritual,ishvara-temple-arasikere,"Ishvara Temple, Arasikere",Karnataka,4.6,900
+spiritual,kaitabheshvara-temple-kubatur,"Kaitabheshvara Temple, Kubatur",Karnataka,4.1,900
+spiritual,arakeshvara-templa,"Arakeshvara Templa",Karnataka,4.7,900
+spiritual,sri-ranganathaswamy-temple-srirangapatna,"Sri Ranganathaswamy Temple (Srirangapatna)",Karnataka,4.4,900
+spiritual,kolaramma-temple,"Kolaramma Temple",Karnataka,4.7,900
+spiritual,kotilingeshwara-temple,"Kotilingeshwara Temple",Karnataka,4.8,900
+spiritual,siddhesvara-temple,"Siddhesvara Temple",Karnataka,4.8,900
+spiritual,st-anthony-s-basilica-dornahalli,"St. Anthony's Basilica, Dornahalli",Karnataka,4.3,900
+spiritual,hospet-church,"Hospet Church",Karnataka,4.4,900
+spiritual,doddabasappa-temple-dambal,"Doddabasappa Temple, Dambal",Karnataka,4.6,900
+spiritual,gaurishvara-temple-yelandur,"Gaurishvara Temple, Yelandur",Karnataka,4.4,900
+spiritual,kalleshvara-temple-bagali,"Kalleshvara Temple, Bagali",Karnataka,4.1,900
+spiritual,veera-narayana-temple-belavadi,"Veera Narayana Temple, Belavadi",Karnataka,4.8,900
+spiritual,banashankari-temple-amargol,"Banashankari Temple, Amargol",Karnataka,4.5,900
+spiritual,harihareshwara-temple,"Harihareshwara Temple",Karnataka,4.6,900
+spiritual,shringeri-sharadamba-temple,"Shringeri Sharadamba Temple",Karnataka,4.2,900
+spiritual,marikamba-temple-sagara,"Marikamba Temple, Sagara",Karnataka,4.7,900
+spiritual,shettihalli-rosary-church,"Shettihalli Rosary Church",Karnataka,4.6,900
+spiritual,kedareshvara-temple-balligavi,"Kedareshvara Temple, Balligavi",Karnataka,4.7,900
+spiritual,lakshmi-narasimha-temple-nuggehalli,"Lakshmi Narasimha Temple, Nuggehalli",Karnataka,4.8,900
+spiritual,lakshminarasimha-temple-javagal,"Lakshminarasimha Temple, Javagal",Karnataka,4.7,900
+spiritual,mylara-lingeshwara-temple,"Mylara Lingeshwara Temple",Karnataka,4.6,900
+spiritual,ragigudda-sri-prasannaswamy-anjaneya-temple,"Ragigudda Sri Prasannaswamy Anjaneya Temple",Karnataka,4.3,900
+spiritual,venugopala-swamy-temple,"Venugopala Swamy Temple",Karnataka,4.2,900
+spiritual,milagres-church,"Milagres Church",Karnataka,4.2,900
+spiritual,ramalingeshwara-group-of-temples-avani,"Ramalingeshwara group of temples, Avani",Karnataka,4.4,900
+spiritual,sri-vinayaka-temple-guddattu,"Sri Vinayaka Temple, Guddattu",Karnataka,4.2,900
+spiritual,iswara-temple-in-jalasangvi,"Iswara temple in Jalasangvi",Karnataka,4.4,900
+spiritual,chandramouleshwara-temple-unkal,"Chandramouleshwara Temple, Unkal",Karnataka,4.1,900
+spiritual,lakshmikanta-temple-kalale,"Lakshmikanta Temple, Kalale",Karnataka,4.4,900
+spiritual,gunja-narasimha-swamy-temple-thirumakudalu-narasipura,"Gunja Narasimha Swamy Temple, Thirumakudalu Narasipura",Karnataka,4.4,900
+spiritual,teru-malleshvara-temple-hiriyur,"Teru Malleshvara Temple, Hiriyur",Karnataka,4.5,900
+spiritual,the-rvm-foundation-shiv-temple,"The RVM Foundation Shiv Temple",Karnataka,4.4,900
+spiritual,bhoga-nandeeshwara-temple,"Bhoga Nandeeshwara Temple",Karnataka,4.7,900
+spiritual,kanakachalapathi-temple-kanakagiri,"Kanakachalapathi Temple, Kanakagiri",Karnataka,4.3,900
+spiritual,hasanamba-temple,"Hasanamba temple",Karnataka,4.5,900
+spiritual,nageshvara-chennakeshava-temple-complex-mosale,"Nageshvara-Chennakeshava Temple complex, Mosale",Karnataka,4.5,900
+spiritual,shiva-temple-in-narayanapur,"Shiva temple in Narayanapur",Karnataka,4.4,900
+spiritual,vijayanarayana-temple-gundlupet,"Vijayanarayana Temple, Gundlupet",Karnataka,4.7,900
+spiritual,lakshmi-devi-temple,"Lakshmi Devi Temple",Karnataka,4.6,900
+spiritual,panchalingeshwara-temple-govindanahalli,"Panchalingeshwara temple, Govindanahalli",Karnataka,4.5,900
+spiritual,lakshminarayana-temple-hosaholalu,"Lakshminarayana Temple, Hosaholalu",Karnataka,4.5,900
+spiritual,annapoorneshwari-temple,"Annapoorneshwari Temple",Karnataka,4.8,900
+spiritual,ghati-subramanya,"Ghati Subramanya",Karnataka,4.7,900
+spiritual,chaturmukha-basadi,"Chaturmukha Basadi",Karnataka,4.7,900
+spiritual,chennakeshava-temple-aralaguppe,"Chennakeshava Temple, Aralaguppe",Karnataka,4.7,900
+spiritual,lakshmi-narasimha-temple-bhadravathi,"Lakshmi Narasimha Temple, Bhadravathi",Karnataka,4.4,900
+spiritual,lakshminarasimha-temple-haranhalli,"Lakshminarasimha Temple, Haranhalli",Karnataka,4.8,900
+spiritual,mallikarjuna-temple-basaralu,"Mallikarjuna Temple, Basaralu",Karnataka,4.5,900
+spiritual,yelluru-shri-vishweshwara-temple,"Yelluru Shri Vishweshwara Temple",Karnataka,4.7,900
+spiritual,brahmeshvara-temple-kikkeri,"Brahmeshvara Temple, Kikkeri",Karnataka,4.4,900
+spiritual,rameshvara-temple-koodli,"Rameshvara Temple, Koodli",Karnataka,4.6,900
+spiritual,saumyakeshava-temple-nagamangala,"Saumyakeshava Temple, Nagamangala",Karnataka,4.5,900
+spiritual,kumara-swamy-devasthana-bangalore,"Kumara Swamy Devasthana, Bangalore",Karnataka,4.4,900
+spiritual,lakshminarasimha-temple-vignasante,"Lakshminarasimha Temple, Vignasante",Karnataka,4.5,900
+spiritual,veeranarayana-temple-gadag,"Veeranarayana Temple, Gadag",Karnataka,4.8,900
+spiritual,arakeshwara-temple-haleyedatore,"Arakeshwara Temple, Haleyedatore",Karnataka,4.4,900
+spiritual,yellamma-temple-saundatti,"Yellamma Temple, Saundatti",Karnataka,4.5,900
+spiritual,karinjeshwara-temple,"Karinjeshwara Temple",Karnataka,4.7,900
+spiritual,huligina-maradi-temple,"Huligina Maradi Temple",Karnataka,4.8,900
+spiritual,bhimeshvara-temple-nilagunda,"Bhimeshvara Temple, Nilagunda",Karnataka,4.7,900
+spiritual,bucesvara-temple-koravangala,"Bucesvara Temple, Koravangala",Karnataka,4.6,900
+spiritual,polali-rajarajeshwari-temple,"Polali Rajarajeshwari Temple",Karnataka,4.7,900
+spiritual,yoga-madhava-temple-settikere,"Yoga Madhava Temple, Settikere",Karnataka,4.2,900
+spiritual,cheluvanarayana-swamy-temple,"Cheluvanarayana Swamy Temple",Karnataka,4.3,900
+spiritual,ganesha-temple-idagunji,"Ganesha Temple, Idagunji",Karnataka,4.2,900
+spiritual,navagraha-jain-temple,"Navagraha Jain Temple",Karnataka,4.8,900
+spiritual,kanakagiri-jain-shri-kshetra,"Kanakagiri Jain Shri kshetra",Karnataka,4.4,900
+spiritual,sri-anjaneya-swamy-temple-shamanur,"Sri Anjaneya Swamy Temple, Shamanur",Karnataka,4.4,900
+spiritual,sri-mailar-mallanna,"Sri Mailar Mallanna",Karnataka,4.7,900
+spiritual,veerbhadra-temple,"Veerbhadra Temple",Karnataka,4.8,900
+spiritual,st-paul-s-church-mangalore,"St. Paul's Church, Mangalore",Karnataka,4.6,900
+spiritual,william-arthur-memorial-church-gubbi,"William Arthur Memorial Church, Gubbi",Karnataka,4.8,900
+spiritual,navalinga-temple,"Navalinga Temple",Karnataka,4.1,900
+spiritual,group-of-temples-at-magadi-karnataka,"Group of temples at Magadi, Karnataka",Karnataka,4.4,900
+spiritual,chaturmukha-basadi-gerusoppa,"Chaturmukha Basadi, Gerusoppa",Karnataka,4.8,900
+spiritual,guru-narasimha-temple,"Guru Narasimha Temple",Karnataka,4.1,900
+spiritual,chennakeshava-temple-hullekere,"Chennakeshava Temple, Hullekere",Karnataka,4.6,900
+spiritual,sri-jnanakshi-rajarajeshwari-temple,"Sri Jnanakshi Rajarajeshwari Temple",Karnataka,4.2,900
+spiritual,shri-kalika-devi-temple,"Shri Kalika Devi Temple",Karnataka,4.3,900
+spiritual,madhukesvara-temple,"Madhukesvara temple",Karnataka,4.2,900
+spiritual,yoganarasimha,"Yoganarasimha",Karnataka,4.8,900
+spiritual,dharmesvara-temple,"Dharmesvara Temple",Karnataka,4.1,900
+spiritual,someshwara-temple-marathahalli,"Someshwara Temple, Marathahalli",Karnataka,4.2,900
+spiritual,most-holy-redeemer-church-belthangady,"Most Holy Redeemer Church, Belthangady",Karnataka,4.1,900
+spiritual,st-patrick-church-siddakatte,"St. Patrick Church, Siddakatte",Karnataka,4.4,900
+spiritual,st-mary-s-orthodox-valiyapally,"St. Mary's Orthodox Valiyapally",Karnataka,4.2,900
+spiritual,jwalamalini-temple,"Jwalamalini temple",Karnataka,4.4,900
+spiritual,kere-basadi,"Kere Basadi",Karnataka,4.6,900
+spiritual,humcha-jain-temples,"Humcha Jain temples",Karnataka,4.1,900
+spiritual,moole-shankareshvara-temple-turuvekere,"Moole Shankareshvara Temple, Turuvekere",Karnataka,4.4,900
+spiritual,sri-ananda-lingeshwara-temple,"Sri Ananda Lingeshwara Temple",Karnataka,4.5,900
+spiritual,ranganathaswamy-temple-nirthadi,"Ranganathaswamy Temple, Nirthadi",Karnataka,4.2,900
+spiritual,tarakeshwara-temple-hangal,"Tarakeshwara Temple, Hangal",Karnataka,4.7,900
+spiritual,puttur-shree-mahalingeshwara-temple,"Puttur Shree Mahalingeshwara Temple",Karnataka,4.6,900
+spiritual,shree-brahma-baidarkala-garadi-kshetra,"Shree Brahma Baidarkala Garadi Kshetra",Karnataka,4.7,900
+spiritual,manyamkonda,"Manyamkonda",Karnataka,4.5,900
+spiritual,lakshmeshwara-jain-temples,"Lakshmeshwara Jain temples",Karnataka,4.5,900
+spiritual,kuruvathi-basaveshwara-temple,"Kuruvathi Basaveshwara temple",Karnataka,4.7,900
+spiritual,shri-katyayani-baneshwar-temple-aversa,"Shri Katyayani Baneshwar Temple, Aversa",Karnataka,4.6,900
+spiritual,kote-anjaneya,"Kote Anjaneya",Karnataka,4.6,900
+spiritual,our-lady-of-lourdes-church-kanajar,"Our Lady of Lourdes Church, Kanajar",Karnataka,4.1,900
+spiritual,church-of-sacred-heart-of-jesus-madanthyar,"Church Of Sacred Heart Of Jesus, Madanthyar",Karnataka,4.5,900
+spiritual,st-antony-church-ujire,"St. Antony Church, Ujire",Karnataka,4.6,900
+spiritual,st-joseph-church-belman,"St. Joseph Church, Belman",Karnataka,4.5,900
+spiritual,st-vincent-de-paul-church-katapady,"St Vincent De Paul Church, Katapady",Karnataka,4.1,900
+spiritual,shri-guru-kottureshwara-temple,"Shri Guru Kottureshwara Temple",Karnataka,4.3,900
+spiritual,sri-parashakthi-kshetra,"Sri Parashakthi Kshetra",Karnataka,4.2,900
+spiritual,dodda-basaveshwara-temple,"Dodda Basaveshwara Temple",Karnataka,4.2,900
+spiritual,sabarimala-temple-complex,"Sabarimala temple complex",Kerala,4.7,900
+spiritual,padmanabhaswamy-temple,"Padmanabhaswamy Temple",Kerala,4.7,900
+spiritual,guruvayur-temple,"Guruvayur Temple",Kerala,4.8,900
+spiritual,vazhappally-maha-siva-temple,"Vazhappally Maha Siva Temple",Kerala,4.5,900
+spiritual,vadakkunnathan-temple-thrissur,"Vadakkunnathan Temple, Thrissur",Kerala,4.2,900
+spiritual,ananthapura-lake-temple,"Ananthapura Lake Temple",Kerala,4.2,900
+spiritual,chottanikkara-temple,"Chottanikkara Temple",Kerala,4.4,900
+spiritual,vaikom-temple,"Vaikom Temple",Kerala,4.6,900
+spiritual,aluva-mahadeva-temple,"Aluva Mahadeva Temple",Kerala,4.7,900
+spiritual,ambalappuzha-sri-krishna-temple,"Ambalappuzha Sri Krishna Temple",Kerala,4.4,900
+spiritual,tirunavaya-temple,"Tirunavaya Temple",Kerala,4.4,900
+spiritual,madhur-temple,"Madhur Temple",Kerala,4.4,900
+spiritual,abaya-pradhan-temple,"Abaya Pradhan Temple",Kerala,4.1,900
+spiritual,valiya-koonambaikulam-temple,"Valiya Koonambaikulam temple",Kerala,4.6,900
+spiritual,sreevallabha-temple-thiruvalla,"Sreevallabha Temple, Thiruvalla",Kerala,4.6,900
+spiritual,amaramkavu,"Amaramkavu",Kerala,4.5,900
+spiritual,aranmula-parthasarathy-temple,"Aranmula Parthasarathy Temple",Kerala,4.2,900
+spiritual,arattupuzha-temple,"Arattupuzha Temple",Kerala,4.5,900
+spiritual,kaviyoor-mahadeva-temple-kerala,"Kaviyoor Mahadeva Temple, Kerala",Kerala,4.3,900
+spiritual,muthappan-temple,"Muthappan Temple",Kerala,4.5,900
+spiritual,st-andrew-s-basilica-arthunkal,"St. Andrew's Basilica, Arthunkal",Kerala,4.7,900
+spiritual,thrikkakara-temple,"Thrikkakara Temple",Kerala,4.5,900
+spiritual,panachikkadu-temple,"Panachikkadu Temple",Kerala,4.5,900
+spiritual,sree-poornathrayeesa-temple,"Sree Poornathrayeesa Temple",Kerala,4.4,900
+spiritual,thali-mahadeva-temple-kozhikode,"Thali Mahadeva temple, Kozhikode",Kerala,4.5,900
+spiritual,puramundekkadu-shri-mahadeva-temple,"Puramundekkadu Shri Mahadeva Temple",Kerala,4.3,900
+spiritual,perumparampu-sri-mahadeva-temple,"Perumparampu Sri Mahadeva Temple",Kerala,4.2,900
+spiritual,puttingal-temple,"Puttingal Temple",Kerala,4.5,900
+spiritual,kottukal-cave-temple,"Kottukal cave temple",Kerala,4.2,900
+spiritual,thiruvallam-parasurama-temple,"Thiruvallam Parasurama Temple",Kerala,4.3,900
+spiritual,trichambaram-temple,"Trichambaram Temple",Kerala,4.5,900
+spiritual,vellayani-devi-temple,"Vellayani Devi Temple",Kerala,4.7,900
+spiritual,vilwadrinatha-temple,"Vilwadrinatha Temple",Kerala,4.5,900
+spiritual,amaravila-rameswaram-sri-mahadeva-temple,"Amaravila Rameswaram Sri Mahadeva Temple",Kerala,4.6,900
+spiritual,ashtamangalam-siva-temple,"Ashtamangalam Siva Temple",Kerala,4.4,900
+spiritual,mannarasala-temple,"Mannarasala Temple",Kerala,4.3,900
+spiritual,koodalmanikyam-temple,"Koodalmanikyam Temple",Kerala,4.8,900
+spiritual,madayi-kavu,"Madayi Kavu",Kerala,4.5,900
+spiritual,kandiyoor-sree-mahadeva-temple,"Kandiyoor Sree Mahadeva Temple",Kerala,4.5,900
+spiritual,manakkattu-devi-temple,"Manakkattu devi temple",Kerala,4.5,900
+spiritual,puliyur-mahavishnu-temple,"Puliyur Mahavishnu Temple",Kerala,4.3,900
+spiritual,ramapuram-alappuzha,"Ramapuram, Alappuzha",Kerala,4.4,900
+spiritual,thrichittatt-maha-vishnu-temple,"Thrichittatt Maha Vishnu Temple",Kerala,4.6,900
+spiritual,mangala-devi-temple,"Mangala Devi Temple",Kerala,4.1,900
+spiritual,panniyur-sri-varahamoorthy-temple,"Panniyur Sri Varahamoorthy Temple",Kerala,4.4,900
+spiritual,st-george-s-catholic-forane-church,"St. George's Catholic Forane Church",Kerala,4.4,900
+spiritual,parumala-valiya-panayannarkavu-devi-temple,"Parumala Valiya Panayannarkavu Devi Temple",Kerala,4.4,900
+spiritual,alattiyur-hanuman-temple,"Alattiyur Hanuman Temple",Kerala,4.5,900
+spiritual,dakshina-mookambika-temple-north-paravur,"Dakshina Mookambika Temple, North Paravur",Kerala,4.4,900
+spiritual,ettumanoor-mahadevar-temple,"Ettumanoor Mahadevar Temple",Kerala,4.4,900
+spiritual,iringol-kavu-temple,"Iringol Kavu Temple",Kerala,4.5,900
+spiritual,kadampuzha-devi-temple,"Kadampuzha Devi Temple",Kerala,4.1,900
+spiritual,kallil-temple,"Kallil Temple",Kerala,4.4,900
+spiritual,cheranalloor-mahadeva-temple,"Cheranalloor Mahadeva Temple",Kerala,4.3,900
+spiritual,chowara-chidambaraswamy-temple,"Chowara Chidambaraswamy Temple",Kerala,4.4,900
+spiritual,thrikodithanam-mahavishnu-temple,"Thrikodithanam Mahavishnu Temple",Kerala,4.8,900
+spiritual,pazhoor-perumthrikkovil,"Pazhoor Perumthrikkovil",Kerala,4.4,900
+spiritual,oachira-temple,"Oachira Temple",Kerala,4.3,900
+spiritual,poruvazhy-peruviruthy-malanada-temple,"Poruvazhy Peruviruthy Malanada Temple",Kerala,4.1,900
+spiritual,thirunelli-temple,"Thirunelli Temple",Kerala,4.5,900
+spiritual,vayalil-thrikkovil-mahavishnu-temple,"Vayalil Thrikkovil Mahavishnu Temple",Kerala,4.2,900
+spiritual,padanilam-parabrahma-temple,"Padanilam Parabrahma Temple",Kerala,4.7,900
+spiritual,kadachira-sri-thrikkapalam-siva-temple,"Kadachira Sri Thrikkapalam Siva Temple",Kerala,4.7,900
+spiritual,kottiyoor-temple,"Kottiyoor Temple",Kerala,4.1,900
+spiritual,morkulangara-devi-temple,"Morkulangara Devi Temple",Kerala,4.6,900
+spiritual,velloor-perunthatta-siva-temple,"Velloor Perunthatta Siva Temple",Kerala,4.5,900
+spiritual,adithyapuram-sun-temple,"Adithyapuram Sun Temple",Kerala,4.5,900
+spiritual,kidangoor-subramanya-swamy-temple,"Kidangoor Subramanya Swamy Temple",Kerala,4.2,900
+spiritual,shatrughna-temple,"Shatrughna Temple",Kerala,4.8,900
+spiritual,kokkamangalam-st-thomas-church,"Kokkamangalam St. Thomas Church",Kerala,4.4,900
+spiritual,uthralikavu-pooram,"Uthralikavu Pooram",Kerala,4.3,900
+spiritual,palakkavu-bhagavathi-temple,"Palakkavu Bhagavathi temple",Kerala,4.6,900
+spiritual,thriprayar-ramaswamy-temple,"Thriprayar Ramaswamy Temple",Kerala,4.7,900
+spiritual,adat-shiva-temple,"Adat Shiva Temple",Kerala,4.6,900
+spiritual,kodungallur-bhagavathy-temple,"Kodungallur Bhagavathy Temple",Kerala,4.6,900
+spiritual,cheruvathur-mahadeva-temple,"Cheruvathur Mahadeva Temple",Kerala,4.4,900
+spiritual,chowalloor-siva-temple,"Chowalloor Siva Temple",Kerala,4.5,900
+spiritual,kondazhy-tritham-tali-siva-temple,"Kondazhy Tritham Tali Siva Temple",Kerala,4.6,900
+spiritual,pananchery-mudikkode-shiva-temple,"Pananchery Mudikkode Shiva Temple",Kerala,4.7,900
+spiritual,choorakkottukavu-bhagavathy-temple,"Choorakkottukavu Bhagavathy Temple",Kerala,4.5,900
+spiritual,iranikulam-mahadeva-temple,"Iranikulam Mahadeva Temple",Kerala,4.7,900
+spiritual,pallimanna-siva-temple,"Pallimanna Siva Temple",Kerala,4.3,900
+spiritual,thrippalur-mahadeva-temple,"Thrippalur Mahadeva Temple",Kerala,4.3,900
+spiritual,sree-indilayappan-temple,"Sree Indilayappan Temple",Kerala,4.5,900
+spiritual,annamanada-mahadeva-temple,"Annamanada Mahadeva Temple",Kerala,4.6,900
+spiritual,annapurneshwari-temple-cherukunnu,"Annapurneshwari Temple, Cherukunnu",Kerala,4.6,900
+spiritual,chettikulangara-devi-temple,"Chettikulangara Devi Temple",Kerala,4.7,900
+spiritual,cherthala-karthyayani-temple,"Cherthala Karthyayani Temple",Kerala,4.6,900
+spiritual,kattil-madam-temple-chalapuram,"Kattil Madam Temple, Chalapuram",Kerala,4.2,900
+spiritual,nalpathaneeswaram-sree-mahadeva-temple,"Nalpathaneeswaram Sree Mahadeva Temple",Kerala,4.3,900
+spiritual,kanichukulangara-devi-temple,"Kanichukulangara Devi Temple",Kerala,4.1,900
+spiritual,st-george-syro-malabar-catholic-basilica-angamaly,"St. George Syro-Malabar Catholic Basilica, Angamaly",Kerala,4.6,900
+spiritual,valliyamkavu-devi-temple,"Valliyamkavu Devi Temple",Kerala,4.3,900
+spiritual,pattupurackal-bhagavathy-temple,"Pattupurackal Bhagavathy Temple",Kerala,4.8,900
+spiritual,saint-thomas-syro-malabar-catholic-church-malayattoor,"Saint Thomas Syro-Malabar Catholic Church, Malayattoor",Kerala,4.7,900
+spiritual,pandalam-mahadeva-temple,"Pandalam Mahadeva Temple",Kerala,4.4,900
+spiritual,rektha-kanda-swamy-temple,"Rektha Kanda Swamy Temple",Kerala,4.5,900
+spiritual,thrikkavu-temple,"Thrikkavu Temple",Kerala,4.4,900
+spiritual,tirumanthamkunnu-temple,"Tirumanthamkunnu Temple",Kerala,4.1,900
+spiritual,vadakkan-koyikkal-devi-temple-puthiyavila,"Vadakkan Koyikkal Devi Temple Puthiyavila",Kerala,4.5,900
+spiritual,jain-temple-kidanganad,"Jain Temple, Kidanganad",Kerala,4.1,900
+spiritual,marth-mariyam-major-archiepiscopal-church,"Marth Mariyam Major Archiepiscopal Church",Kerala,4.8,900
+spiritual,thirupalkadal-sreekrishnaswamy-temple,"Thirupalkadal Sreekrishnaswamy Temple",Kerala,4.7,900
+spiritual,thirumoozhikkulam-lakshmana-perumal-temple,"Thirumoozhikkulam Lakshmana Perumal Temple",Kerala,4.5,900
+spiritual,thiruvanvandoor-mahavishnu-temple,"Thiruvanvandoor Mahavishnu Temple",Kerala,4.7,900
+spiritual,aazhimala-shiva-temple,"Aazhimala Shiva Temple",Kerala,4.6,900
+spiritual,mulavana-mahadevar-temple,"Mulavana Mahadevar Temple",Kerala,4.4,900
+spiritual,uravappara-temple,"Uravappara Temple",Kerala,4.4,900
+spiritual,ramapuram-sree-rama-temple,"Ramapuram Sree Rama Temple",Kerala,4.7,900
+spiritual,kottankulangara-devi-temple-chavara,"Kottankulangara Devi Temple, Chavara",Kerala,4.4,900
+spiritual,puthiyakavu-devi-temple,"Puthiyakavu Devi Temple",Kerala,4.6,900
+spiritual,lokanarkavu-temple,"Lokanarkavu Temple",Kerala,4.5,900
+spiritual,pundareekapuram-temple,"Pundareekapuram Temple",Kerala,4.4,900
+spiritual,thiruvaloor-mahadeva-temple,"Thiruvaloor Mahadeva temple",Kerala,4.4,900
+spiritual,thaliyil-mahadeva-temple,"Thaliyil Mahadeva temple",Kerala,4.7,900
+spiritual,nadapuram-iringannur-siva-temple,"Nadapuram Iringannur Siva Temple",Kerala,4.6,900
+spiritual,tirunettur-mahadeva-temple,"Tirunettur Mahadeva Temple",Kerala,4.2,900
+spiritual,mazhuvannur-maha-siva-kshethram,"Mazhuvannur Maha Siva Kshethram",Kerala,4.6,900
+spiritual,valliyoorkkavu,"Valliyoorkkavu",Kerala,4.5,900
+spiritual,varinjam-sree-subramanya-swamy-temple,"Varinjam Sree Subramanya Swamy Temple",Kerala,4.1,900
+spiritual,thrikkadavoor-mahadeva-temple,"Thrikkadavoor Mahadeva Temple",Kerala,4.7,900
+spiritual,trithala-maha-siva-temple,"Trithala Maha Siva Temple",Kerala,4.4,900
+spiritual,chirakkadavu-sree-mahadeva-temple,"Chirakkadavu Sree Mahadeva Temple",Kerala,4.5,900
+spiritual,kodikkunnu-bhagavathy-temple,"Kodikkunnu Bhagavathy Temple",Kerala,4.6,900
+spiritual,udayamperoor-perumthrikkovil-temple,"Udayamperoor Perumthrikkovil Temple",Kerala,4.5,900
+spiritual,kanjilassery-maha-siva-temple,"Kanjilassery Maha Siva Temple",Kerala,4.2,900
+spiritual,erumely-sree-dharmasastha-temple,"Erumely Sree Dharmasastha Temple",Kerala,4.3,900
+spiritual,puliyannoor-mahadeva-temple,"Puliyannoor Mahadeva Temple",Kerala,4.6,900
+spiritual,thiru-nayathode-siva-narayana-temple,"Thiru Nayathode Siva Narayana Temple",Kerala,4.7,900
+spiritual,kadakkal-devi-temple,"Kadakkal Devi Temple",Kerala,4.7,900
+spiritual,kottarakkara-sree-mahaganapathi-kshethram,"Kottarakkara Sree Mahaganapathi Kshethram",Kerala,4.8,900
+spiritual,vattal-kurishu-palli,"Vattal Kurishu Palli",Kerala,4.6,900
+spiritual,st-peter-and-st-paul-s-church-kolenchery,"St. Peter and St. Paul's Church, Kolenchery",Kerala,4.2,900
+spiritual,mahadeva-temple-kalanjoor,"Mahadeva Temple, Kalanjoor",Kerala,4.7,900
+spiritual,trikkur-mahadeva-temple,"Trikkur Mahadeva Temple",Kerala,4.2,900
+spiritual,muttichur-kallattupuzha-sri-maha-siva-temple,"Muttichur Kallattupuzha Sri Maha Siva Temple",Kerala,4.2,900
+spiritual,thirumangalam-sree-maha-vishnu-siva-temple,"Thirumangalam Sree Maha Vishnu Siva Temple",Kerala,4.6,900
+spiritual,mundayur-mahadeva-temple,"Mundayur Mahadeva Temple",Kerala,4.3,900
+spiritual,sree-shivashakthi-mahaganapathi-temple,"Sree Shivashakthi Mahaganapathi temple",Kerala,4.8,900
+spiritual,kainoor-shiva-temple,"Kainoor Shiva Temple",Kerala,4.3,900
+spiritual,mahadeva-temple-avittathur,"Mahadeva Temple, Avittathur",Kerala,4.5,900
+spiritual,thrikkunnathu-mahadeva-temple,"Thrikkunnathu Mahadeva Temple",Kerala,4.5,900
+spiritual,chemmanthatta-mahadeva-temple,"Chemmanthatta Mahadeva Temple",Kerala,4.3,900
+spiritual,kattakampal-temple,"Kattakampal Temple",Kerala,4.7,900
+spiritual,panayur-palur-shiva-temple,"Panayur Palur Shiva Temple",Kerala,4.3,900
+spiritual,thrikkariyoor-mahadeva-temple,"Thrikkariyoor Mahadeva Temple",Kerala,4.4,900
+spiritual,anikkattilammakshethram,"Anikkattilammakshethram",Kerala,4.3,900
+spiritual,chakkulathukavu-temple,"Chakkulathukavu Temple",Kerala,4.6,900
+spiritual,mithranandapuram-vamanamoorthy-temple,"Mithranandapuram Vamanamoorthy Temple",Kerala,4.4,900
+spiritual,neelamperoor-palli-bhagavathi-temple,"Neelamperoor Palli Bhagavathi Temple",Kerala,4.4,900
+spiritual,sree-andalurkavu,"Sree Andalurkavu",Kerala,4.2,900
+spiritual,thanikkudam-bhagavathi-temple,"Thanikkudam Bhagavathi Temple",Kerala,4.7,900
+spiritual,karppillikkavu-sree-mahadeva-temple,"Karppillikkavu Sree Mahadeva Temple",Kerala,4.7,900
+spiritual,kulathupuzha-sastha-temple,"Kulathupuzha Sastha Temple",Kerala,4.7,900
+spiritual,achankovil-sastha-temple,"Achankovil Sastha Temple",Kerala,4.7,900
+spiritual,pokkunny-siva-temple,"Pokkunny Siva Temple",Kerala,4.7,900
+spiritual,parassala-mahadeva-temple,"Parassala Mahadeva Temple",Kerala,4.8,900
+spiritual,vadeshwaram-temple,"Vadeshwaram Temple",Kerala,4.4,900
+spiritual,our-lady-of-good-health-church-pattumala,"Our Lady of Good Health Church, Pattumala",Kerala,4.5,900
+spiritual,st-mary-s-syro-malabar-catholic-church-arakuzha,"St. Mary's Syro-Malabar Catholic Church, Arakuzha",Kerala,4.4,900
+spiritual,st-mary-s-syro-malabar-catholic-forane-church-champakulam,"St. Mary's Syro-Malabar Catholic Forane Church, Champakulam",Kerala,4.7,900
+spiritual,st-xavier-s-church-peyad,"St. Xavier's Church, Peyad",Kerala,4.6,900
+spiritual,sree-bhuvaneswary-temple-valamchuzhy,"Sree Bhuvaneswary Temple, Valamchuzhy",Kerala,4.6,900
+spiritual,vethalan-kavu-mahadeva-temple,"Vethalan Kavu Mahadeva Temple",Kerala,4.2,900
+spiritual,thumpamon-vadakkumnatha-temple,"Thumpamon Vadakkumnatha Temple",Kerala,4.8,900
+spiritual,nalukulangara-devi-temple,"Nalukulangara Devi Temple",Kerala,4.6,900
+spiritual,elamgulam-sree-dharma-sastha-temple,"Elamgulam Sree Dharma Sastha Temple",Kerala,4.1,900
+spiritual,panakkattodil-devi-temple,"Panakkattodil Devi Temple",Kerala,4.8,900
+spiritual,amunthirathu-devi-temple,"Amunthirathu Devi Temple",Kerala,4.5,900
+spiritual,st-mary-s-syro-malabar-catholic-church-koratty,"St. Mary's Syro-Malabar Catholic Church, Koratty",Kerala,4.6,900
+spiritual,st-elijah-orthodox-syrian-church-koduvila,"St. Elijah Orthodox Syrian Church, Koduvila",Kerala,4.2,900
+spiritual,valiyakoikkal-temple,"Valiyakoikkal Temple",Kerala,4.1,900
+spiritual,sri-nellikulangara-bhagavathi-temple,"Sri Nellikulangara Bhagavathi Temple",Kerala,4.7,900
+spiritual,ponmeri-shiva-temple,"Ponmeri Shiva Temple",Kerala,4.4,900
+spiritual,kalarivathukkal-bhagavathy-temple,"Kalarivathukkal Bhagavathy Temple",Kerala,4.3,900
+spiritual,mangottu-bhagavathi-temple,"Mangottu Bhagavathi Temple",Kerala,4.2,900
+spiritual,meenkulathi-temple,"Meenkulathi Temple",Kerala,4.4,900
+spiritual,anjumoorthy-temple,"Anjumoorthy Temple",Kerala,4.6,900
+spiritual,karivellur-mahadeva-temple,"Karivellur Mahadeva Temple",Kerala,4.7,900
+spiritual,shaktheeswaram-temple,"Shaktheeswaram Temple",Kerala,4.6,900
+spiritual,manarcad-church,"Manarcad Church",Kerala,4.4,900
+spiritual,kanimangalam-sastha-temple,"Kanimangalam Sastha Temple",Kerala,4.1,900
+spiritual,nedumpura-kulasekharanellur-shiva-temple,"Nedumpura Kulasekharanellur Shiva Temple",Kerala,4.5,900
+spiritual,kootayanimoodu-chamundi-temple,"Kootayanimoodu chamundi temple",Kerala,4.2,900
+spiritual,padanayarkulangara-mahadeva-temple,"Padanayarkulangara Mahadeva Temple",Kerala,4.5,900
+spiritual,aluvamkudi-sree-mahadeva-temple,"Aluvamkudi Sree Mahadeva Temple",Kerala,4.1,900
+spiritual,chammanad-devi-temple,"Chammanad devi temple",Kerala,4.1,900
+spiritual,vazhappully-temple,"Vazhappully temple",Kerala,4.6,900
+spiritual,st-george-forane-church-edathua,"St.George Forane Church, Edathua",Kerala,4.6,900
+spiritual,marthoman-cheriyapally-kothamangalam,"Marthoman Cheriyapally, Kothamangalam",Kerala,4.4,900
+spiritual,avanoor-sreekanteswaram-mahadeva-temple,"Avanoor Sreekanteswaram Mahadeva Temple",Kerala,4.6,900
+spiritual,ootukulangara-bhagavathy-temple-peruvemba,"Ootukulangara Bhagavathy Temple, Peruvemba",Kerala,4.6,900
+spiritual,padiyanoor-devi-temple,"Padiyanoor Devi Temple",Kerala,4.7,900
+spiritual,nilakkal-sree-mahadeva-temple,"Nilakkal Sree Mahadeva Temple",Kerala,4.8,900
+spiritual,changattu-sree-bhagavathy-temple,"Changattu Sree Bhagavathy Temple",Kerala,4.5,900
+spiritual,sacred-heart-forane-church,"Sacred Heart Forane Church",Kerala,4.8,900
+spiritual,mulanthuruthy-marthoman-church,"Mulanthuruthy Marthoman Church",Kerala,4.6,900
+spiritual,st-mary-s-forane-church-chalakudy,"St. Mary's Forane Church, Chalakudy",Kerala,4.2,900
+spiritual,st-mary-s-church-vechoor,"St. Mary's Church, Vechoor",Kerala,4.2,900
+spiritual,st-mary-s-forane-church-edoor,"St. Mary's Forane Church Edoor",Kerala,4.5,900
+spiritual,st-marys-church-meenangadi,"St. Marys Church Meenangadi",Kerala,4.1,900
+spiritual,mar-thoma-sleeha-church-thulappally,"Mar Thoma Sleeha Church Thulappally",Kerala,4.5,900
+spiritual,ramapuram-church,"Ramapuram Church",Kerala,4.6,900
+spiritual,st-francis-xavier-s-church-sampaloor,"St. Francis Xavier's Church, Sampaloor",Kerala,4.6,900
+spiritual,dutch-church-munroe-island,"Dutch Church, Munroe Island",Kerala,4.1,900
+spiritual,st-mary-s-church-marady,"St. Mary's Church, Marady",Kerala,4.7,900
+spiritual,sri-rama-temple-ramapuram,"Sri Rama Temple, Ramapuram",Kerala,4.3,900
+spiritual,avanavanchery-sri-indilayappan-temple,"Avanavanchery Sri Indilayappan Temple",Kerala,4.4,900
+spiritual,chittoorkavu-devi-temple,"Chittoorkavu Devi Temple",Kerala,4.6,900
+spiritual,eravikulangara-temple,"Eravikulangara Temple",Kerala,4.3,900
+spiritual,kalamassery-mahaganapathy-temple,"Kalamassery Mahaganapathy Temple",Kerala,4.4,900
+spiritual,manikandeswaram-uma-maheswara-temple,"Manikandeswaram Uma Maheswara temple",Kerala,4.6,900
+spiritual,chennamangalam-temple,"Chennamangalam Temple",Kerala,4.8,900
+spiritual,sree-balakrishna-swami-temple-kuzhuppilly,"Sree Balakrishna Swami Temple, Kuzhuppilly",Kerala,4.2,900
+spiritual,kannamaly-church-ernakulam,"Kannamaly Church, Ernakulam",Kerala,4.7,900
+spiritual,malayalapuzha-devi-temple,"Malayalapuzha Devi Temple",Kerala,4.3,900
+spiritual,st-francis-xavier-s-church-pizhala,"St. Francis Xavier's Church, Pizhala",Kerala,4.3,900
+spiritual,st-mary-s-church-vendore,"St Mary's Church, Vendore",Kerala,4.7,900
+spiritual,bela-church,"Bela Church",Kerala,4.8,900
+spiritual,sreenarayanapuram-temple,"Sreenarayanapuram Temple",Kerala,4.7,900
+spiritual,thattayil-orippurathu-bhagavathy-kshetram,"Thattayil Orippurathu Bhagavathy Kshetram",Kerala,4.6,900
+spiritual,thrissileri-mahadeva-temple,"Thrissileri Mahadeva Temple",Kerala,4.2,900
+spiritual,anandeshwaram-mahadeva-temple,"Anandeshwaram Mahadeva Temple",Kerala,4.6,900
+spiritual,karyat-sree-ayyappa-temple-vanimal,"Karyat Sree Ayyappa Temple Vanimal",Kerala,4.5,900
+spiritual,st-francis-xavier-forane-church-velur,"St. Francis Xavier Forane Church, Velur",Kerala,4.2,900
+spiritual,pazhakulam-punthalaveettil-temple,"Pazhakulam punthalaveettil temple",Kerala,4.5,900
+spiritual,parthasarathy-temple-mundakkayam,"Parthasarathy Temple, Mundakkayam",Kerala,4.3,900
+spiritual,oorali-appooppan-kavu,"Oorali Appooppan Kavu",Kerala,4.3,900
+spiritual,pulimukham-devi-temple,"Pulimukham Devi Temple",Kerala,4.5,900
+spiritual,pariyanempatta-bhagavathi-temple,"Pariyanempatta Bhagavathi Temple",Kerala,4.2,900
+spiritual,mukkoottuthara-thiruvambadi-sree-krishaswami-temple,"Mukkoottuthara Thiruvambadi Sree Krishaswami Temple",Kerala,4.2,900
+spiritual,mayannur-kavu-sri-kurumba-bagavathy-temple,"Mayannur Kavu Sri Kurumba Bagavathy Temple",Kerala,4.7,900
+spiritual,st-bursouma-s-orthodox-church,"St. Bursouma's Orthodox Church",Kerala,4.2,900
+spiritual,mezhuveli-temple,"Mezhuveli Temple",Kerala,4.4,900
+spiritual,sri-gopalakrishna-temple-kumble,"Sri Gopalakrishna Temple Kumble",Kerala,4.3,900
+spiritual,sree-madiyan-koolom-temple,"Sree Madiyan Koolom Temple",Kerala,4.4,900
+spiritual,chelamattom-shree-krishna-swami-temple,"Chelamattom Shree Krishna Swami Temple",Kerala,4.7,900
+spiritual,st-mary-s-orthodox-cathedral-puthencavu,"St. Mary's Orthodox Cathedral, Puthencavu",Kerala,4.2,900
+spiritual,aruvithura-st-george-s-syro-malabar-catholic-forane-church,"Aruvithura St. George's Syro-Malabar Catholic Forane Church",Kerala,4.7,900
+spiritual,st-thomas-church-thumpoly,"St. Thomas Church, Thumpoly",Kerala,4.3,900
+spiritual,nariampara-puthiyakavu-devikshethram,"Nariampara Puthiyakavu Devikshethram",Kerala,4.5,900
+spiritual,sasthamangalam-mahadevar-temple,"Sasthamangalam Mahadevar Temple",Kerala,4.2,900
+spiritual,sree-kattayattu-bhagavathi-kshethram,"Sree Kattayattu Bhagavathi Kshethram",Kerala,4.8,900
+spiritual,st-george-shrine-pilgrim-centre-kulathuvayal,"St George Shrine Pilgrim Centre Kulathuvayal",Kerala,4.4,900
+spiritual,little-flower-forane-church-nilambur,"Little Flower Forane Church, Nilambur",Kerala,4.6,900
+spiritual,kottekkad-temple,"Kottekkad Temple",Kerala,4.6,900
+spiritual,kolathukara-shiva-temple,"Kolathukara shiva temple",Kerala,4.7,900
+spiritual,padayanivettom,"Padayanivettom",Kerala,4.2,900
+spiritual,changankulangara-sri-mahadevar-temple,"Changankulangara Sri Mahadevar Temple",Kerala,4.7,900
+spiritual,st-joseph-s-syro-malabar-catholic-church-meenkunnam,"St. Joseph's Syro-Malabar Catholic Church, Meenkunnam",Kerala,4.7,900
+spiritual,st-george-forane-church-kallody-wayanad,"St. George Forane Church Kallody, Wayanad",Kerala,4.8,900
+spiritual,trikandiyur-mahadeva-temple,"Trikandiyur Mahadeva Temple",Kerala,4.6,900
+spiritual,nilakkal-st-thomas-church,"Nilakkal St.Thomas Church",Kerala,4.4,900
+spiritual,st-teresa-s-shrine-mahe,"St. Teresa’s Shrine, Mahé",Kerala,4.2,900
+spiritual,basilica-of-our-lady-of-lourdes-chemperi,"Basilica of Our Lady of Lourdes, Chemperi",Kerala,4.1,900
+spiritual,st-mary-s-jacobite-syrian-cathedral-church-karakunnam,"St. Mary's Jacobite Syrian Cathedral Church, Karakunnam",Kerala,4.4,900
+spiritual,polur-temple-kozhikode,"Polur temple, Kozhikode",Kerala,4.2,900
+spiritual,st-joseph-s-parish-shrine-pavaratty,"St. Joseph’s Parish Shrine, Pavaratty",Kerala,4.4,900
+spiritual,madhur,"Madhur",Kerala,4.6,900
+spiritual,bethel-marthoma-church,"Bethel Marthoma Church",Kerala,4.3,900
+spiritual,st-john-the-baptist-jacobite-syrian-church-south-parur,"St. John The Baptist Jacobite Syrian Church, South Parur",Kerala,4.3,900
+spiritual,st-nicholas-church,"St. Nicholas' Church",Kerala,4.3,900
+spiritual,st-george-church-kalady,"St. George Church, Kalady",Kerala,4.3,900
+spiritual,st-joseph-s-syro-malabar-catholic-church-chennamkary,"St. Joseph's Syro-Malabar Catholic Church, Chennamkary",Kerala,4.4,900
+spiritual,holy-magi-syro-malabar-catholic-forane-church-muvattupuzha,"Holy Magi Syro-Malabar Catholic Forane Church, Muvattupuzha",Kerala,4.3,900
+spiritual,kadammanittapally,"Kadammanittapally",Kerala,4.2,900
+spiritual,st-antony-s-church-pazhuvil,"St. Antony's Church, Pazhuvil",Kerala,4.2,900
+spiritual,kadampanad-church,"Kadampanad Church",Kerala,4.1,900
+spiritual,st-antony-s-church-kuninji,"St. Antony's Church, Kuninji",Kerala,4.1,900
+spiritual,st-philomena-s-forane-church-koonammavu,"St.Philomena's Forane Church, Koonammavu",Kerala,4.2,900
+spiritual,st-stanislaus-forane-church-mala,"St. Stanislaus Forane Church, Mala",Kerala,4.5,900
+spiritual,st-mary-s-orthodox-church-avaneeswaram,"St. Mary's Orthodox Church, Avaneeswaram",Kerala,4.3,900
+spiritual,holy-cross-shrine-mapranam,"Holy Cross Shrine Mapranam",Kerala,4.6,900
+spiritual,nileshwar-muthappan-madappura,"Nileshwar Muthappan Madappura",Kerala,4.3,900
+spiritual,thikse-monastery,"Thikse Monastery",Ladakh,4.7,900
+spiritual,lamayuru-monastery,"Lamayuru Monastery",Ladakh,4.4,900
+spiritual,alchi-monastery,"Alchi Monastery",Ladakh,4.5,900
+spiritual,hemis-monastery,"Hemis Monastery",Ladakh,4.8,900
+spiritual,karsha-monastery,"Karsha Monastery",Ladakh,4.8,900
+spiritual,likir-monastery,"Likir Monastery",Ladakh,4.2,900
+spiritual,tingmosgang-monastery,"Tingmosgang monastery",Ladakh,4.5,900
+spiritual,rizong-monastery,"Rizong Monastery",Ladakh,4.2,900
+spiritual,korzok-monastery,"Korzok Monastery",Ladakh,4.8,900
+spiritual,lingshed-monastery,"Lingshed Monastery",Ladakh,4.1,900
+spiritual,matho-monastery,"Matho Monastery",Ladakh,4.4,900
+spiritual,phyang-monastery,"Phyang Monastery",Ladakh,4.2,900
+spiritual,takthok-monastery,"Takthok Monastery",Ladakh,4.3,900
+spiritual,hanle-monastery,"Hanle Monastery",Ladakh,4.8,900
+spiritual,basgo-monastery,"Basgo Monastery",Ladakh,4.6,900
+spiritual,stok-monastery,"Stok Monastery",Ladakh,4.5,900
+spiritual,bardan-monastery,"Bardan Monastery",Ladakh,4.2,900
+spiritual,stakna-monastery,"Stakna Monastery",Ladakh,4.2,900
+spiritual,shey-monastery,"Shey Monastery",Ladakh,4.2,900
+spiritual,mangyu-temple-complex,"Mangyu temple complex",Ladakh,4.5,900
+spiritual,omkareshwar-temple,"Omkareshwar Temple",Madhya Pradesh,4.6,900
+spiritual,bhojeshwar-temple,"Bhojeshwar Temple",Madhya Pradesh,4.7,900
+spiritual,chausath-yogini-temple-mitaoli,"Chausath Yogini Temple, Mitaoli",Madhya Pradesh,4.5,900
+spiritual,kal-bhairav-temple,"Kal Bhairav temple",Madhya Pradesh,4.6,900
+spiritual,pashupatinath-temple,"Pashupatinath Temple",Madhya Pradesh,4.1,900
+spiritual,bateshwar-hindu-temples,"Bateshwar Hindu temples",Madhya Pradesh,4.7,900
+spiritual,bawangaja,"Bawangaja",Madhya Pradesh,4.4,900
+spiritual,kakanmath-temple-sihoniya,"Kakanmath temple, Sihoniya",Madhya Pradesh,4.8,900
+spiritual,shiva-temple-bhumara,"Shiva temple, Bhumara",Madhya Pradesh,4.4,900
+spiritual,aharji,"Aharji",Madhya Pradesh,4.6,900
+spiritual,tigawa-temple,"Tigawa Temple",Madhya Pradesh,4.7,900
+spiritual,bijasan-mata-mandir-indore,"Bijasan mata mandir indore",Madhya Pradesh,4.3,900
+spiritual,shri-kala-bhairava-nath-swami-temple,"Shri Kala Bhairava Nath Swami Temple",Madhya Pradesh,4.5,900
+spiritual,sun-temple-madkhera,"Sun Temple, Madkhera",Madhya Pradesh,4.6,900
+spiritual,nava-toran-temple,"Nava Toran Temple",Madhya Pradesh,4.3,900
+spiritual,bagalamukhi-temple,"Bagalamukhi Temple",Madhya Pradesh,4.2,900
+spiritual,hanumantal-bada-jain-mandir,"Hanumantal Bada Jain Mandir",Madhya Pradesh,4.4,900
+spiritual,bajramath-temple-gyaraspur,"Bajramath Temple, Gyaraspur",Madhya Pradesh,4.2,900
+spiritual,christ-church-dr-ambedkar-nagar,"Christ Church, Dr.Ambedkar Nagar",Madhya Pradesh,4.2,900
+spiritual,siddhanath-temple-nemawar,"Siddhanath Temple, Nemawar",Madhya Pradesh,4.4,900
+spiritual,unao-balaji-sun-temple,"Unao Balaji Sun Temple",Madhya Pradesh,4.4,900
+spiritual,mohajmata-temple-terahi,"Mohajmata temple, Terahi",Madhya Pradesh,4.4,900
+spiritual,dada-darbar,"Dada Darbar",Madhya Pradesh,4.7,900
+spiritual,virateshwar-temple-sohagpur,"Virateshwar temple, Sohagpur",Madhya Pradesh,4.6,900
+spiritual,fellowship-of-the-pentecostal-churches-in-india,"Fellowship of the Pentecostal Churches in India",Madhya Pradesh,4.4,900
+spiritual,gadarmal-devi-temple,"Gadarmal Devi temple",Madhya Pradesh,4.7,900
+spiritual,neelkantha-nilkantheswar,"Neelkantha (Nilkantheswar)",Madhya Pradesh,4.1,900
+spiritual,kailasa-temple-ellora,"Kailasa Temple, Ellora",Maharashtra,4.5,900
+spiritual,bhimashankar-temple,"Bhimashankar Temple",Maharashtra,4.3,900
+spiritual,trimbakeshwar-shiva-temple,"Trimbakeshwar Shiva Temple",Maharashtra,4.6,900
+spiritual,siddhivinayak-temple-mumbai,"Siddhivinayak Temple, Mumbai",Maharashtra,4.6,900
+spiritual,mumba-devi-temple,"Mumba Devi Temple",Maharashtra,4.8,900
+spiritual,vithoba-temple,"Vithoba Temple",Maharashtra,4.7,900
+spiritual,mahalakshmi-temple,"Mahalakshmi Temple",Maharashtra,4.3,900
+spiritual,lenyadri,"Lenyadri",Maharashtra,4.6,900
+spiritual,morgaon-ganesha-temple,"Morgaon Ganesha Temple",Maharashtra,4.1,900
+spiritual,mount-mary-church,"Mount Mary Church",Maharashtra,4.5,900
+spiritual,kopeshwar-temple,"Kopeshwar temple",Maharashtra,4.6,900
+spiritual,walkeshwar-temple,"Walkeshwar Temple",Maharashtra,4.3,900
+spiritual,kalaram-temple,"Kalaram Temple",Maharashtra,4.2,900
+spiritual,vajreshwari-temple,"Vajreshwari Temple",Maharashtra,4.8,900
+spiritual,afghan-church,"Afghan Church",Maharashtra,4.8,900
+spiritual,amruteshwar-temple,"Amruteshwar Temple",Maharashtra,4.4,900
+spiritual,saptashrungi,"Saptashrungi",Maharashtra,4.4,900
+spiritual,siddhivinayak-temple-siddhatek,"Siddhivinayak Temple, Siddhatek",Maharashtra,4.6,900
+spiritual,mangi-tungi,"Mangi-Tungi",Maharashtra,4.6,900
+spiritual,shiv-mandir-ambarnath,"Shiv Mandir, Ambarnath",Maharashtra,4.6,900
+spiritual,chaturshringi-temple,"Chaturshringi Temple",Maharashtra,4.6,900
+spiritual,tulja-bhavani-temple,"Tulja Bhavani Temple",Maharashtra,4.8,900
+spiritual,vigneshwara-temple-ozar,"Vigneshwara Temple, Ozar",Maharashtra,4.6,900
+spiritual,yamai-temple,"Yamai Temple",Maharashtra,4.3,900
+spiritual,siddheshwar-temple-solapur,"Siddheshwar Temple, Solapur",Maharashtra,4.8,900
+spiritual,chintamani-temple-theur,"Chintamani Temple, Theur",Maharashtra,4.7,900
+spiritual,shri-dev-rameshwar-temple,"Shri Dev Rameshwar Temple",Maharashtra,4.6,900
+spiritual,mahalakshmi-temple-dahanu,"Mahalakshmi Temple, Dahanu",Maharashtra,4.6,900
+spiritual,shri-vaijnath-temple,"Shri Vaijnath Temple",Maharashtra,4.2,900
+spiritual,khandoba-temple-jejuri,"Khandoba Temple, Jejuri",Maharashtra,4.6,900
+spiritual,aundha-nagnath-temple,"Aundha Nagnath Temple",Maharashtra,4.7,900
+spiritual,st-john-the-baptist-church-mumbai,"St. John the Baptist Church, Mumbai",Maharashtra,4.6,900
+spiritual,markanda-group-of-temples-gadchiroli,"Markanda Group of Temples, Gadchiroli",Maharashtra,4.7,900
+spiritual,baneshwar-temple-nasrapur,"Baneshwar temple, Nasrapur",Maharashtra,4.2,900
+spiritual,dashabhuja-temple,"Dashabhuja Temple",Maharashtra,4.3,900
+spiritual,mandhardevi-kalubai-temple,"Mandhardevi Kalubai temple",Maharashtra,4.5,900
+spiritual,shri-kaleshwar-mandir,"Shri Kaleshwar Mandir",Maharashtra,4.3,900
+spiritual,siddhivinayak-mahaganapati-temple,"Siddhivinayak Mahaganapati Temple",Maharashtra,4.2,900
+spiritual,gondeshwar-temple,"Gondeshwar Temple",Maharashtra,4.7,900
+spiritual,trivikrama-temple,"Trivikrama Temple",Maharashtra,4.7,900
+spiritual,balaji-mandir-ketkawla,"Balaji Mandir Ketkawla",Maharashtra,4.4,900
+spiritual,gajpanth,"Gajpanth",Maharashtra,4.4,900
+spiritual,sandor,"Sandor",Maharashtra,4.3,900
+spiritual,siddhanath-temple-mhaswad,"Siddhanath Temple, Mhaswad",Maharashtra,4.2,900
+spiritual,wagheshwari-temple,"Wagheshwari Temple",Maharashtra,4.2,900
+spiritual,madhe-ghat,"Madhe Ghat",Maharashtra,4.3,900
+spiritual,shantinatha-temple-ramtek,"Shantinatha temple, Ramtek",Maharashtra,4.2,900
+spiritual,dhandai-devi,"Dhandai Devi",Maharashtra,4.6,900
+spiritual,sacred-heart-church-santacruz,"Sacred Heart Church, Santacruz",Maharashtra,4.5,900
+spiritual,holy-trinity-church-powai,"Holy Trinity Church, Powai",Maharashtra,4.5,900
+spiritual,patnadevi,"Patnadevi",Maharashtra,4.8,900
+spiritual,shree-dev-vyadeshar,"Shree Dev Vyadeshar",Maharashtra,4.3,900
+spiritual,kankaleshwar-temple,"Kankaleshwar Temple",Maharashtra,4.5,900
+spiritual,birla-mandir-shahad,"Birla Mandir, Shahad",Maharashtra,4.3,900
+spiritual,siddheshwar-and-ratneshwar-temple,"Siddheshwar & Ratneshwar Temple",Maharashtra,4.7,900
+spiritual,st-joseph-s-church-juhu,"St. Joseph's Church, Juhu",Maharashtra,4.7,900
+spiritual,our-lady-of-immaculate-conception-church-mt-poinsur,"Our Lady of Immaculate Conception Church, Mt. Poinsur",Maharashtra,4.3,900
+spiritual,st-michael-s-and-all-angels-church-oorgaum-kgf,"St. Michael's and All Angels' Church, Oorgaum, KGF",Karnataka,4.5,900
+spiritual,gajanan-maharaj-temple-kanhor,"Gajanan Maharaj Temple, Kanhor",Maharashtra,4.4,900
+spiritual,khidkaleshwar-mandir,"Khidkaleshwar Mandir",Maharashtra,4.6,900
+spiritual,revansiddha-temple,"Revansiddha Temple",Maharashtra,4.2,900
+spiritual,sidhhanath-temple-kharsundi,"Sidhhanath Temple, Kharsundi",Maharashtra,4.2,900
+spiritual,bhawani-waghjai-temple-terav,"Bhawani Waghjai Temple, Terav",Maharashtra,4.7,900
+spiritual,ganpati-temple,"Ganpati Temple",Maharashtra,4.3,900
+spiritual,vithal-dayaji-temple-sulewadi,"Vithal Dayaji Temple, Sulewadi",Maharashtra,4.8,900
+spiritual,sri-sai-janmasthan-temple-pathri,"Sri Sai Janmasthan Temple, Pathri",Maharashtra,4.5,900
+spiritual,mudhai-devi-temple,"Mudhai Devi temple",Maharashtra,4.4,900
+spiritual,sanamahi-lainingkol,"Sanamahi Lainingkol",Manipur,4.5,900
+spiritual,nartiang-durga-temple,"Nartiang Durga Temple",Meghalaya,4.4,900
+spiritual,solomon-s-temple-aizawl-mizoram-india,"Solomon's Temple, Aizawl Mizoram, India",Mizoram,4.6,900
+spiritual,dimapur-kalibari,"Dimapur Kalibari",Nagaland,4.2,900
+spiritual,jain-temple-kohima,"Jain Temple Kohima",Nagaland,4.3,900
+spiritual,sumi-baptist-church,"Sumi Baptist Church",Nagaland,4.6,900
+spiritual,lingaraja-temple,"Lingaraja Temple",Odisha,4.3,900
+spiritual,udayagiri-and-khandagiri-caves,"Udayagiri and Khandagiri Caves",Odisha,4.3,900
+spiritual,chausath-yogini-temple-hirapur,"Chausath Yogini Temple, Hirapur",Odisha,4.7,900
+spiritual,tara-tarini-temple,"Tara Tarini Temple",Odisha,4.5,900
+spiritual,alarnatha-temple,"Alarnatha Temple",Odisha,4.8,900
+spiritual,jagannath-temple-koraput,"Jagannath Temple, Koraput",Odisha,4.3,900
+spiritual,biraja-temple,"Biraja Temple",Odisha,4.2,900
+spiritual,chandrasekhara-mahadeva-temple,"Chandrasekhara Mahadeva Temple",Odisha,4.3,900
+spiritual,khirachora-gopinatha-temple,"Khirachora Gopinatha Temple",Odisha,4.2,900
+spiritual,kichakeshwari-temple,"Kichakeshwari Temple",Odisha,4.6,900
+spiritual,maa-tarini-temple-ghatgaon,"Maa Tarini Temple, Ghatgaon",Odisha,4.7,900
+spiritual,bhattarika-temple,"Bhattarika Temple",Odisha,4.1,900
+spiritual,varahi-deula,"Varahi Deula",Odisha,4.4,900
+spiritual,harishankar-temple,"Harishankar Temple",Odisha,4.2,900
+spiritual,nilamadhav-temple,"Nilamadhav Temple",Odisha,4.5,900
+spiritual,gandhi-temple-bhatara,"Gandhi Temple, Bhatara",Odisha,4.4,900
+spiritual,sarala-temple,"Sarala Temple",Odisha,4.6,900
+spiritual,sacred-heart-cathedral-rourkela,"Sacred Heart Cathedral, Rourkela",Odisha,4.3,900
+spiritual,shri-shri-hari-baladev-jew-bije-baripada,"Shri Shri Hari Baladev Jew Bije, Baripada",Odisha,4.4,900
+spiritual,majhighariani-temple,"Majhighariani Temple",Odisha,4.6,900
+spiritual,biranchinarayan-temple-buguda,"Biranchinarayan Temple, Buguda",Odisha,4.3,900
+spiritual,kakatpur-mangala-temple,"Kakatpur Mangala Temple",Odisha,4.2,900
+spiritual,baladevjew-temple,"Baladevjew Temple",Odisha,4.3,900
+spiritual,odogaon-raghunath-temple,"Odogaon Raghunath Temple",Odisha,4.2,900
+spiritual,manikeshwari-temple,"Manikeshwari Temple",Odisha,4.3,900
+spiritual,marichi-temple,"Marichi Temple",Odisha,4.6,900
+spiritual,dishisvara-siva-temple,"Dishisvara Siva Temple",Odisha,4.4,900
+spiritual,ghanteswari-temple,"Ghanteswari Temple",Odisha,4.4,900
+spiritual,leaning-temple-of-huma,"Leaning Temple of Huma",Odisha,4.5,900
+spiritual,nilakantheswar-temple,"Nilakantheswar Temple",Odisha,4.7,900
+spiritual,laxminarayan-temple-therubali,"Laxminarayan temple, Therubali",Odisha,4.5,900
+spiritual,akhandalamani-temple,"Akhandalamani Temple",Odisha,4.7,900
+spiritual,sakhigopal-temple,"Sakhigopal Temple",Odisha,4.3,900
+spiritual,lokanatha-temple,"Lokanatha Temple",Odisha,4.5,900
+spiritual,varahanatha-temple,"Varahanatha Temple",Odisha,4.2,900
+spiritual,jagannath-temple-gunupur,"Jagannath Temple, Gunupur",Odisha,4.7,900
+spiritual,dhabaleswar,"Dhabaleswar",Odisha,4.2,900
+spiritual,kalijai,"Kalijai",Odisha,4.2,900
+spiritual,khajuresvara-temple-complex,"Khajuresvara temple complex",Odisha,4.4,900
+spiritual,ghanteswara-siva-temple,"Ghanteswara Siva Temple",Odisha,4.5,900
+spiritual,buddhanath-temple,"Buddhanath Temple",Odisha,4.3,900
+spiritual,brahmani-temple,"Brahmani temple",Odisha,4.3,900
+spiritual,chari-sambhu-temple,"Chari sambhu temple",Odisha,4.7,900
+spiritual,maa-baulasuni-temple,"Maa Baulasuni Temple",Odisha,4.5,900
+spiritual,maa-samleswari-temple,"Maa Samleswari Temple",Odisha,4.6,900
+spiritual,siddha-bhairavi,"Siddha Bhairavi",Odisha,4.2,900
+spiritual,bhadrakali-temple,"Bhadrakali Temple",Odisha,4.5,900
+spiritual,lakhmi-varaha-temple,"Lakhmi Varaha Temple",Odisha,4.6,900
+spiritual,kukutesvara-siva-temple,"Kukutesvara Siva Temple",Odisha,4.1,900
+spiritual,lakhesvara-siva-temple,"Lakhesvara Siva temple",Odisha,4.4,900
+spiritual,subai-jain-temples,"Subai Jain temples",Odisha,4.1,900
+spiritual,baneswara-temple-balasore,"Baneswara Temple, Balasore",Odisha,4.7,900
+spiritual,nrusinghanath-temple,"Nrusinghanath Temple",Odisha,4.3,900
+spiritual,ladoo-baba-temple,"Ladoo Baba Temple",Odisha,4.6,900
+spiritual,sekhareswar-temple,"Sekhareswar Temple",Odisha,4.7,900
+spiritual,maa-jhanjiri-mangala-temple,"Maa Jhanjiri Mangala Temple",Odisha,4.3,900
+spiritual,jagannath-temple-angul,"Jagannath Temple, Angul",Odisha,4.2,900
+spiritual,jagannath-temple-nayagarh,"Jagannath Temple, Nayagarh",Odisha,4.6,900
+spiritual,tirunallar-saniswaran-temple,"Tirunallar Saniswaran Temple",Puducherry,4.2,900
+spiritual,vadukeeswarar-temple,"Vadukeeswarar temple",Puducherry,4.5,900
+spiritual,our-lady-of-lourdes-shrine,"Our Lady of Lourdes Shrine",Puducherry,4.2,900
+spiritual,karaikal-ammayar-temple,"Karaikal Ammayar Temple",Puducherry,4.2,900
+spiritual,ram-teerath,"Ram Teerath",Punjab,4.4,900
+spiritual,shri-devi-talab-mandir,"Shri Devi Talab Mandir",Punjab,4.1,900
+spiritual,gurudwara-naulakha-sahib,"Gurudwara Naulakha Sahib",Punjab,4.5,900
+spiritual,gurudwara-guptsar-sahib,"Gurudwara Guptsar Sahib",Punjab,4.3,900
+spiritual,mukteshwar-temple-punjab,"Mukteshwar Temple, Punjab",Punjab,4.6,900
+spiritual,shanaleshwara-swayambhu-temple,"Shanaleshwara Swayambhu Temple",Punjab,4.2,900
+spiritual,karni-mata-temple,"Karni Mata Temple",Rajasthan,4.2,900
+spiritual,rishabhdeo,"Rishabhdeo",Rajasthan,4.2,900
+spiritual,om-banna,"Om Banna",Rajasthan,4.4,900
+spiritual,ranakpur-jain-temple,"Ranakpur Jain Temple",Rajasthan,4.6,900
+spiritual,galtaji,"Galtaji",Rajasthan,4.2,900
+spiritual,harshnath-temple,"Harshnath Temple",Rajasthan,4.3,900
+spiritual,nakoda,"Nakoda",Rajasthan,4.7,900
+spiritual,kiradu-temples,"Kiradu temples",Rajasthan,4.4,900
+spiritual,sahastra-bahu-temples,"Sahastra Bahu Temples",Rajasthan,4.2,900
+spiritual,binnayaga-caves,"Binnayaga caves",Rajasthan,4.5,900
+spiritual,shrinathji-temple,"Shrinathji Temple",Rajasthan,4.7,900
+spiritual,harshat-mata-temple,"Harshat Mata Temple",Rajasthan,4.8,900
+spiritual,bisaldeo-temple,"Bisaldeo temple",Rajasthan,4.5,900
+spiritual,bhand-deva-temple,"Bhand Deva Temple",Rajasthan,4.5,900
+spiritual,baroli-temple-complex,"Baroli Temple Complex",Rajasthan,4.2,900
+spiritual,mehandipur-balaji-temple,"Mehandipur Balaji Temple",Rajasthan,4.7,900
+spiritual,madan-mohan-temple,"Madan Mohan Temple",Rajasthan,4.7,900
+spiritual,jagannath-temple,"Jagannath Temple",Rajasthan,4.7,900
+spiritual,jirawala-tirth,"Jirawala Tirth",Rajasthan,4.8,900
+spiritual,sundha-mata-temple,"Sundha Mata Temple",Rajasthan,4.6,900
+spiritual,kaila-devi,"Kaila devi",Rajasthan,4.1,900
+spiritual,mirpur-jain-temple,"Mirpur Jain Temple",Rajasthan,4.4,900
+spiritual,sanwariaji-temple,"Sanwariaji Temple",Rajasthan,4.2,900
+spiritual,salasar-balaji,"Salasar Balaji",Rajasthan,4.6,900
+spiritual,sachiya-mata-temple,"Sachiya Mata Temple",Rajasthan,4.3,900
+spiritual,rani-sati-temple,"Rani Sati Temple",Rajasthan,4.2,900
+spiritual,kunjal-mata-temple,"Kunjal Mata Temple",Rajasthan,4.7,900
+spiritual,shri-mahavirji,"Shri Mahavirji",Rajasthan,4.6,900
+spiritual,tijara-jain-temple,"Tijara Jain Temple",Rajasthan,4.3,900
+spiritual,sanghiji,"Sanghiji",Rajasthan,4.2,900
+spiritual,gupteshwar-mahadev-udaipur,"Gupteshwar Mahadev, Udaipur",Rajasthan,4.8,900
+spiritual,mahavira-jain-temple,"Mahavira Jain temple",Rajasthan,4.2,900
+spiritual,naugaza-digambar-jain-temple,"Naugaza Digambar Jain temple",Rajasthan,4.3,900
+spiritual,jahaj-mandir,"Jahaj Mandir",Rajasthan,4.4,900
+spiritual,muchhal-mahavir-temple,"Muchhal Mahavir Temple",Rajasthan,4.2,900
+spiritual,bhomiaji-maharaj-temple-sopra-bhopalgarh,"Bhomiaji Maharaj Temple, Sopra, Bhopalgarh",Rajasthan,4.2,900
+spiritual,ladnu-jain-temple,"Ladnu Jain temple",Rajasthan,4.8,900
+spiritual,shri-kalyan-temple,"Shri Kalyan Temple",Rajasthan,4.5,900
+spiritual,keshav-rai-temple,"Keshav Rai Temple",Rajasthan,4.3,900
+spiritual,chamatkarji-jain-temple,"Chamatkarji Jain Temple",Rajasthan,4.8,900
+spiritual,sawariya-seth-temple,"Sawariya Seth Temple",Rajasthan,4.4,900
+spiritual,shri-mansa-mata-mandir-hasampur,"Shri Mansa Mata Mandir Hasampur",Rajasthan,4.1,900
+spiritual,atishaya-kshetra-lunwa-jain-temple,"Atishaya Kshetra Lunwa Jain Temple",Rajasthan,4.4,900
+spiritual,manibandh-shaktipeeth,"Manibandh Shaktipeeth",Rajasthan,4.7,900
+spiritual,kirateshwar-mahadev-temple,"Kirateshwar Mahadev Temple",Sikkim,4.3,900
+spiritual,dubdi-monastery,"Dubdi Monastery",Sikkim,4.7,900
+spiritual,shri-viswa-vinayaka-mandir-rhenock,"Shri Viswa Vinayaka Mandir Rhenock",Sikkim,4.5,900
+spiritual,prahadisvarar-temple,"Prahadisvarar Temple",Tamil Nadu,4.5,900
+spiritual,ranganathaswamy-temple-srirangam,"Ranganathaswamy Temple, Srirangam",Tamil Nadu,4.2,900
+spiritual,airavatesvara-temple,"Airavatesvara Temple",Tamil Nadu,4.6,900
+spiritual,basilica-of-our-lady-of-good-health,"Basilica of Our Lady of Good Health",Tamil Nadu,4.4,900
+spiritual,kailasanathar-temple-kanchipuram,"Kailasanathar Temple, Kanchipuram",Tamil Nadu,4.5,900
+spiritual,gangaikonda-cholapuram-temple,"Gangaikonda Cholapuram Temple",Tamil Nadu,4.1,900
+spiritual,nataraja-temple,"Nataraja Temple",Tamil Nadu,4.3,900
+spiritual,varadharaja-perumal-temple,"Varadharaja Perumal Temple",Tamil Nadu,4.1,900
+spiritual,lakshmi-narayani-golden-temple,"Lakshmi Narayani Golden Temple",Tamil Nadu,4.5,900
+spiritual,varaha-cave-temple,"Varaha Cave Temple",Tamil Nadu,4.2,900
+spiritual,nellaiappar-temple,"Nellaiappar Temple",Tamil Nadu,4.5,900
+spiritual,subramaniya-swamy-temple-tiruttani,"Subramaniya Swamy Temple, Tiruttani",Tamil Nadu,4.4,900
+spiritual,ucchi-pillayar-temple-rockfort,"Ucchi Pillayar Temple, Rockfort",Tamil Nadu,4.5,900
+spiritual,masani-amman,"Masānī Ammān",Tamil Nadu,4.3,900
+spiritual,karpaka-vinayakar-temple,"Karpaka Vinayakar Temple",Tamil Nadu,4.7,900
+spiritual,maruthamalai-marudhachalamurthy-temple,"Maruthamalai Marudhachalamurthy Temple",Tamil Nadu,4.1,900
+spiritual,dhandayuthapani-swamy-temple,"Dhandayuthapani Swamy Temple",Tamil Nadu,4.5,900
+spiritual,tirumalai-tamil-nadu,"Tirumalai (Tamil Nadu)",Tamil Nadu,4.4,900
+spiritual,chitharal-jain-monuments,"Chitharal Jain Monuments",Tamil Nadu,4.2,900
+spiritual,tiger-cave,"Tiger Cave",Tamil Nadu,4.4,900
+spiritual,yathothkari-perumal-temple,"Yathothkari Perumal Temple",Tamil Nadu,4.6,900
+spiritual,marundeeswarar-temple,"Marundeeswarar Temple",Tamil Nadu,4.6,900
+spiritual,thirunadhikkara-cave-temple,"Thirunadhikkara Cave Temple",Tamil Nadu,4.5,900
+spiritual,atcheeswarar-temple,"Atcheeswarar Temple",Tamil Nadu,4.5,900
+spiritual,kodumudi-magudeswarar-temple,"Kodumudi Magudeswarar temple",Tamil Nadu,4.2,900
+spiritual,swamimalai-murugan-temple,"Swamimalai Murugan Temple",Tamil Nadu,4.1,900
+spiritual,adikesava-perumal-temple,"Adikesava Perumal Temple",Tamil Nadu,4.7,900
+spiritual,iskcon-temple-chennai,"ISKCON Temple Chennai",Tamil Nadu,4.5,900
+spiritual,pataleeswarar-temple,"Pataleeswarar Temple",Tamil Nadu,4.6,900
+spiritual,vijayalaya-cholesvaram,"Vijayalaya Cholesvaram",Tamil Nadu,4.2,900
+spiritual,sri-appakkudathaan-perumal-temple,"Sri Appakkudathaan Perumal Temple",Tamil Nadu,4.8,900
+spiritual,thenkurangaduthurai-temple,"Thenkurangaduthurai Temple",Tamil Nadu,4.7,900
+spiritual,thiruarimeya-vinnagaram,"Thiruarimeya Vinnagaram",Tamil Nadu,4.2,900
+spiritual,vayalur-murugan-temple,"Vayalur Murugan Temple",Tamil Nadu,4.6,900
+spiritual,samayapuram-mariamman-temple,"Samayapuram Mariamman Temple",Tamil Nadu,4.5,900
+spiritual,tiruvalithayam,"Tiruvalithayam",Tamil Nadu,4.4,900
+spiritual,adhi-ratneswarar-temple,"Adhi Ratneswarar Temple",Tamil Nadu,4.2,900
+spiritual,tiruvetkalam-pasupatheswarar-temple,"Tiruvetkalam Pasupatheswarar Temple",Tamil Nadu,4.2,900
+spiritual,vadapalani-andavar-temple,"Vadapalani Andavar Temple",Tamil Nadu,4.2,900
+spiritual,ulagalantha-perumal-temple-tirukoyilur,"Ulagalantha Perumal Temple, Tirukoyilur",Tamil Nadu,4.1,900
+spiritual,mahalingeswarar-temple-thiruvidaimarudur,"Mahalingeswarar Temple, Thiruvidaimarudur",Tamil Nadu,4.2,900
+spiritual,neyyadiappar-temple,"Neyyadiappar Temple",Tamil Nadu,4.6,900
+spiritual,perur-pateeswarar-temple,"Perur Pateeswarar Temple",Tamil Nadu,4.2,900
+spiritual,pazhamudircholai-murugan-temple,"Pazhamudircholai Murugan Temple",Tamil Nadu,4.6,900
+spiritual,papanasanathar-temple,"Papanasanathar Temple",Tamil Nadu,4.7,900
+spiritual,srivilliputhur-andal-temple,"Srivilliputhur Andal Temple",Tamil Nadu,4.5,900
+spiritual,thyagaraja-temple-tiruvottiyur,"Thyagaraja Temple, Tiruvottiyur",Tamil Nadu,4.3,900
+spiritual,moovar-koil,"Moovar Koil",Tamil Nadu,4.2,900
+spiritual,sri-devaadi-raja-perumal-temple,"Sri Devaadi Raja Perumal Temple",Tamil Nadu,4.1,900
+spiritual,sundaravarada-perumal-temple,"Sundaravarada Perumal Temple",Tamil Nadu,4.3,900
+spiritual,odhanavaneswarar-temple-tiruchotruturai,"Odhanavaneswarar Temple, Tiruchotruturai",Tamil Nadu,4.5,900
+spiritual,agniswarar-temple-kanjanur,"Agniswarar Temple, Kanjanur",Tamil Nadu,4.3,900
+spiritual,vettuvan-koil,"Vettuvan Koil",Tamil Nadu,4.3,900
+spiritual,bhaktavatsala-perumal-temple-thirunindravur,"Bhaktavatsala Perumal Temple, Thirunindravur",Tamil Nadu,4.6,900
+spiritual,panchavarnaswamy-temple,"Panchavarnaswamy Temple",Tamil Nadu,4.7,900
+spiritual,veeraraghava-swamy-temple,"Veeraraghava Swamy Temple",Tamil Nadu,4.8,900
+spiritual,eri-katha-ramar-temple,"Eri-Katha Ramar Temple",Tamil Nadu,4.6,900
+spiritual,tirumaanturai,"Tirumaanturai",Tamil Nadu,4.3,900
+spiritual,thiruvadigai-temple-panruti,"Thiruvadigai Temple, Panruti",Tamil Nadu,4.3,900
+spiritual,atulya-nadheswarar-temple,"Atulya Nadheswarar Temple",Tamil Nadu,4.8,900
+spiritual,poondi-madha-basilica,"Poondi Madha Basilica",Tamil Nadu,4.2,900
+spiritual,thenupuriswarar-temple,"Thenupuriswarar Temple",Tamil Nadu,4.2,900
+spiritual,subramaniya-swamy-temple-tiruchendur,"Subramaniya Swamy Temple, Tiruchendur",Tamil Nadu,4.3,900
+spiritual,thyagaraja-temple-tiruvarur,"Thyagaraja Temple, Tiruvarur",Tamil Nadu,4.4,900
+spiritual,jalantheeswarar-temple,"Jalantheeswarar Temple",Tamil Nadu,4.3,900
+spiritual,thalagireeshwarar-temple,"Thalagireeshwarar Temple",Tamil Nadu,4.7,900
+spiritual,kasi-viswanathar-temple-tenkasi,"Kasi Viswanathar temple, Tenkasi",Tamil Nadu,4.1,900
+spiritual,arulmigu-koniamman-temple,"Arulmigu Koniamman Temple",Tamil Nadu,4.2,900
+spiritual,patalathri-narasimhar-temple,"Patalathri Narasimhar Temple",Tamil Nadu,4.5,900
+spiritual,pundarikakshan-perumal-temple,"Pundarikakshan Perumal Temple",Tamil Nadu,4.2,900
+spiritual,thirukkadigai,"Thirukkadigai",Tamil Nadu,4.7,900
+spiritual,thiruppathisaram,"Thiruppathisaram",Tamil Nadu,4.5,900
+spiritual,thiruppullani,"Thiruppullani",Tamil Nadu,4.5,900
+spiritual,mahendrapalli-tirumeni-azhagar-temple,"Mahendrapalli Tirumeni Azhagar Temple",Tamil Nadu,4.6,900
+spiritual,vedapureeswarar-temple,"Vedapureeswarar Temple",Tamil Nadu,4.6,900
+spiritual,chandra-choodeswarar-temple-hosur,"Chandra Choodeswarar Temple, Hosur",Tamil Nadu,4.4,900
+spiritual,anna-nagar-ayyappan-koil-chennai,"Anna Nagar Ayyappan Koil, Chennai",Tamil Nadu,4.8,900
+spiritual,tiruvaikavur-temple,"Tiruvaikavur Temple",Tamil Nadu,4.2,900
+spiritual,uthirakosamangai,"Uthirakosamangai",Tamil Nadu,4.4,900
+spiritual,vaithamanidhi-perumal-temple,"Vaithamanidhi Perumal Temple",Tamil Nadu,4.1,900
+spiritual,eachanari-vinayagar-temple,"Eachanari Vinayagar Temple",Tamil Nadu,4.3,900
+spiritual,rahu-stalam,"Rahu Stalam",Tamil Nadu,4.8,900
+spiritual,kasi-viswanathar-temple-sivakasi,"Kasi Viswanathar temple, Sivakasi",Tamil Nadu,4.5,900
+spiritual,thiruporur-kandaswamy-temple,"Thiruporur Kandaswamy temple",Tamil Nadu,4.7,900
+spiritual,sattainathar-temple-sirkazhi,"Sattainathar Temple, Sirkazhi",Tamil Nadu,4.5,900
+spiritual,sikkal-singaravelan-temple,"Sikkal Singaravelan Temple",Tamil Nadu,4.2,900
+spiritual,sri-sivalokanathar-temple-tirupunkur,"Sri Sivalokanathar Temple, Tirupunkur",Tamil Nadu,4.4,900
+spiritual,sri-srinivasa-perumal-temple-tirukulandhai,"Sri Srinivasa Perumal Temple, Tirukulandhai",Tamil Nadu,4.6,900
+spiritual,srivaikuntanathan-permual-temple,"Srivaikuntanathan Permual Temple",Tamil Nadu,4.8,900
+spiritual,pasupateeswarar-temple-karur,"Pasupateeswarar Temple, Karur",Tamil Nadu,4.5,900
+spiritual,thirumuruganatheeswar-temple,"Thirumuruganatheeswar Temple",Tamil Nadu,4.7,900
+spiritual,avudaiyarkoil,"Avudaiyarkoil",Tamil Nadu,4.5,900
+spiritual,brahmapureeswarar-temple-thirukkuvalai,"Brahmapureeswarar Temple, Thirukkuvalai",Tamil Nadu,4.3,900
+spiritual,mayuranathaswami-temple-mayiladuthurai,"Mayuranathaswami Temple, Mayiladuthurai",Tamil Nadu,4.4,900
+spiritual,ponsei-natrunaiyappar-temple,"Ponsei Natrunaiyappar Temple",Tamil Nadu,4.8,900
+spiritual,thindal-murugan-temple,"Thindal Murugan Temple",Tamil Nadu,4.6,900
+spiritual,thirumakaraleeswarar-temple,"Thirumakaraleeswarar Temple",Tamil Nadu,4.3,900
+spiritual,shanmughanathar-temple-kunnakudi,"Shanmughanathar Temple, Kunnakudi",Tamil Nadu,4.4,900
+spiritual,pushpavaneswarar-temple,"Pushpavaneswarar temple",Tamil Nadu,4.3,900
+spiritual,amirthakadeswarar-temple-sakkottai,"Amirthakadeswarar Temple, Sakkottai",Tamil Nadu,4.1,900
+spiritual,pushpavananathar-temple-tiruppoonturutti,"Pushpavananathar Temple, Tiruppoonturutti",Tamil Nadu,4.5,900
+spiritual,koneswarar-temple-kudavasal,"Koneswarar Temple, Kudavasal",Tamil Nadu,4.5,900
+spiritual,nadutariappar-temple,"Nadutariappar Temple",Tamil Nadu,4.3,900
+spiritual,rajagopalaswamy-temple-mannargudi,"Rajagopalaswamy Temple, Mannargudi",Tamil Nadu,4.7,900
+spiritual,thirukutralam,"Thirukutralam",Tamil Nadu,4.4,900
+spiritual,prananadeswarar-temple,"Prananadeswarar Temple",Tamil Nadu,4.6,900
+spiritual,erumbeeswarar-temple,"Erumbeeswarar Temple",Tamil Nadu,4.3,900
+spiritual,vekkali-amman-temple,"Vekkali Amman Temple",Tamil Nadu,4.4,900
+spiritual,vaseeswarar-temple,"Vaseeswarar Temple",Tamil Nadu,4.5,900
+spiritual,tiruppukkozhiyur,"Tiruppukkozhiyur",Tamil Nadu,4.5,900
+spiritual,vedapureeswarar-temple-thiruverkadu,"Vedapureeswarar Temple, Thiruverkadu",Tamil Nadu,4.2,900
+spiritual,vedagiriswarar-temple,"Vedagiriswarar temple",Tamil Nadu,4.5,900
+spiritual,apatsahayesvarar-temple-alangudi,"Apatsahayesvarar Temple, Alangudi",Tamil Nadu,4.8,900
+spiritual,chenraya-perumal-temple,"Chenraya Perumal Temple",Tamil Nadu,4.6,900
+spiritual,padikasu-nathar-temple,"Padikasu Nathar Temple",Tamil Nadu,4.7,900
+spiritual,pasupatiswarar-temple,"Pasupatiswarar Temple",Tamil Nadu,4.6,900
+spiritual,thiruvali-thirunagari,"Thiruvali-Thirunagari",Tamil Nadu,4.8,900
+spiritual,thiruvanthipuram-temple,"Thiruvanthipuram temple",Tamil Nadu,4.2,900
+spiritual,thirukumaresar-temple,"Thirukumaresar temple",Tamil Nadu,4.6,900
+spiritual,tirutalinathar-temple,"Tirutalinathar Temple",Tamil Nadu,4.8,900
+spiritual,sudarkozhundeeswarar-temple-pennadam,"Sudarkozhundeeswarar Temple, Pennadam",Tamil Nadu,4.2,900
+spiritual,avanibhajana-pallaveshwaram-temple,"Avanibhajana Pallaveshwaram temple",Tamil Nadu,4.2,900
+spiritual,nithyakalyana-perumal-temple,"Nithyakalyana Perumal temple",Tamil Nadu,4.2,900
+spiritual,arasaleeswarar-temple,"Arasaleeswarar temple",Tamil Nadu,4.2,900
+spiritual,nehanurpatti,"Nehanurpatti",Tamil Nadu,4.6,900
+spiritual,vilwanatheswarar-temple,"Vilwanatheswarar temple",Tamil Nadu,4.4,900
+spiritual,innambur-ezhutharinathar-temple,"Innambur Ezhutharinathar Temple",Tamil Nadu,4.3,900
+spiritual,sakshinatheswarar-temple-thiruppurambiyam,"Sakshinatheswarar Temple, Thiruppurambiyam.",Tamil Nadu,4.5,900
+spiritual,amirthakadeswarar-temple,"Amirthakadeswarar Temple",Tamil Nadu,4.5,900
+spiritual,thirumalapadi-siva-temple,"Thirumalapadi Siva Temple",Tamil Nadu,4.7,900
+spiritual,abirameswarar-temple,"Abirameswarar temple",Tamil Nadu,4.5,900
+spiritual,marundeeswarar-temple-t-edayar,"Marundeeswarar Temple, T. Edayar",Tamil Nadu,4.3,900
+spiritual,sivalokanathar-temple-gramam,"Sivalokanathar temple, Gramam",Tamil Nadu,4.6,900
+spiritual,chandramouleeswar-temple-thiruvakkarai,"Chandramouleeswar temple, Thiruvakkarai",Tamil Nadu,4.3,900
+spiritual,bhaktajaneswarar-temple,"Bhaktajaneswarar temple",Tamil Nadu,4.2,900
+spiritual,kasi-viswanathar-temple-kumbakonam,"Kasi Viswanathar Temple, Kumbakonam",Tamil Nadu,4.4,900
+spiritual,sangameswarar-temple,"Sangameswarar Temple",Tamil Nadu,4.3,900
+spiritual,sri-vadaranyeswarar-temple,"Sri Vadaranyeswarar Temple",Tamil Nadu,4.1,900
+spiritual,ninra-narayana-perumal-temple,"Ninra Narayana Perumal temple",Tamil Nadu,4.6,900
+spiritual,kazheesirama-vinnagaram,"Kazheesirama Vinnagaram",Tamil Nadu,4.2,900
+spiritual,bhu-varaha-swamy-temple,"Bhu Varaha Swamy temple",Tamil Nadu,4.2,900
+spiritual,makara-nedunkuzhai-kannan-temple,"Makara Nedunkuzhai Kannan Temple",Tamil Nadu,4.5,900
+spiritual,adhirangam-ranganathaswamy-temple,"Adhirangam Ranganathaswamy temple",Tamil Nadu,4.2,900
+spiritual,thiruppunavayil,"Thiruppunavayil",Tamil Nadu,4.5,900
+spiritual,vriddhagiriswarar-temple-vriddhachalam,"Vriddhagiriswarar Temple, Vriddhachalam",Tamil Nadu,4.4,900
+spiritual,thiruchuzhial,"Thiruchuzhial",Tamil Nadu,4.4,900
+spiritual,achalpuram-shivalokathyagar-temple,"Achalpuram Shivalokathyagar Temple",Tamil Nadu,4.5,900
+spiritual,tirunellikka-nellivananathar-temple,"Tirunellikka Nellivananathar Temple",Tamil Nadu,4.2,900
+spiritual,tiruppaatrurai-adhimooleswarar-temple,"Tiruppaatrurai Adhimooleswarar Temple",Tamil Nadu,4.5,900
+spiritual,dandeeswarar-temple,"Dandeeswarar Temple",Tamil Nadu,4.8,900
+spiritual,koothanur-maha-saraswathi-temple,"Koothanur Maha Saraswathi Temple",Tamil Nadu,4.1,900
+spiritual,mondaicaud-bhagavathi-temple,"Mondaicaud Bhagavathi Temple",Tamil Nadu,4.4,900
+spiritual,mudikondan-kothandaramar-temple,"Mudikondan Kothandaramar Temple",Tamil Nadu,4.5,900
+spiritual,nagannathaswamy-temple-keezhaperumpallam,"Nagannathaswamy Temple, Keezhaperumpallam",Tamil Nadu,4.3,900
+spiritual,narasingam-yoga-narasimha-perumal-temple,"Narasingam Yoga Narasimha Perumal Temple",Tamil Nadu,4.3,900
+spiritual,paampuranathar-temple-thirupampuram,"Paampuranathar Temple, Thirupampuram",Tamil Nadu,4.4,900
+spiritual,edaganathar-temple,"Edaganathar temple",Tamil Nadu,4.6,900
+spiritual,vandiyur-mariamman-temple,"Vandiyur Mariamman Temple",Tamil Nadu,4.1,900
+spiritual,agnipureeswarar-temple-thirupugalur,"Agnipureeswarar Temple, Thirupugalur",Tamil Nadu,4.3,900
+spiritual,someswarar-temple-pazhayarai,"Someswarar Temple, Pazhayarai",Tamil Nadu,4.1,900
+spiritual,sri-venkatesa-perumal-temple-melathiruppathi-mondipalayam,"Sri Venkatesa Perumal Temple (Melathiruppathi) – Mondipalayam",Tamil Nadu,4.4,900
+spiritual,keezhvelur-kediliappar-temple,"Keezhvelur Kediliappar Temple",Tamil Nadu,4.4,900
+spiritual,swamithope-pathi,"Swamithope Pathi",Tamil Nadu,4.7,900
+spiritual,ithiyapuram-kaavu,"Ithiyapuram kaavu",Tamil Nadu,4.4,900
+spiritual,thanthondreeswarar-temple,"Thanthondreeswarar Temple",Tamil Nadu,4.2,900
+spiritual,amritaghateswarar-abirami-temple-thirukkadaiyur,"Amritaghateswarar-Abirami Temple,Thirukkadaiyur",Tamil Nadu,4.3,900
+spiritual,swetharanyeswarar-temple,"Swetharanyeswarar Temple",Tamil Nadu,4.6,900
+spiritual,agastheeswarar-temple,"Agastheeswarar Temple",Tamil Nadu,4.7,900
+spiritual,soundararajaperumal-temple-thadikombu,"Soundararajaperumal Temple, Thadikombu",Tamil Nadu,4.8,900
+spiritual,vallakottai-subramaniyaswami-temple,"Vallakottai Subramaniyaswami temple",Tamil Nadu,4.2,900
+spiritual,adikesava-perumal-temple-sriperumpudur,"Adikesava Perumal temple, Sriperumpudur",Tamil Nadu,4.4,900
+spiritual,sowmya-narayana-perumal-temple,"Sowmya Narayana Perumal temple",Tamil Nadu,4.1,900
+spiritual,chakravageswarar-temple,"Chakravageswarar Temple",Tamil Nadu,4.5,900
+spiritual,piranmalai-kodunkundreeswar-temple,"Piranmalai Kodunkundreeswar Temple",Tamil Nadu,4.7,900
+spiritual,punnainallur-mariamman,"Punnainallur Mariamman",Tamil Nadu,4.6,900
+spiritual,bhaktavatsala-perumal-temple,"Bhaktavatsala Perumal Temple",Tamil Nadu,4.5,900
+spiritual,tirucherai-saranathan-temple,"Tirucherai Saranathan Temple",Tamil Nadu,4.7,900
+spiritual,valisvara-temple,"Valisvara Temple",Tamil Nadu,4.7,900
+spiritual,suyambulingaswamy-temple-uvari,"Suyambulingaswamy Temple, Uvari",Tamil Nadu,4.6,900
+spiritual,anjaneya-temple-nanganallur,"Anjaneya Temple, Nanganallur",Tamil Nadu,4.7,900
+spiritual,jakath-rakshaka-perumal-temple-thirukkoodaloor,"Jakath Rakshaka Perumal Temple, Thirukkoodaloor.",Tamil Nadu,4.5,900
+spiritual,mel-sithamur-jain-math,"Mel Sithamur Jain Math",Tamil Nadu,4.6,900
+spiritual,oondreswarar-temple,"Oondreswarar Temple",Tamil Nadu,4.2,900
+spiritual,choleesvarar-temple-mulanur,"Choleesvarar Temple, Mulanur",Tamil Nadu,4.3,900
+spiritual,uthanda-velayudhasamy-temple-uthiyur,"Uthanda VelayudhaSamy Temple, Uthiyur",Tamil Nadu,4.5,900
+spiritual,bannari-amman-temple,"Bannari Amman Temple",Tamil Nadu,4.2,900
+spiritual,kaliyuga-varadaraja-perumal-temple,"Kaliyuga Varadaraja Perumal Temple",Tamil Nadu,4.5,900
+spiritual,palaivananathar-temple,"Palaivananathar Temple",Tamil Nadu,4.1,900
+spiritual,parimala-ranganatha-perumal-temple,"Parimala Ranganatha Perumal Temple",Tamil Nadu,4.7,900
+spiritual,venjamakoodal,"Venjamakoodal",Tamil Nadu,4.7,900
+spiritual,kolanjiappar-temple,"Kolanjiappar Temple",Tamil Nadu,4.4,900
+spiritual,akshayapureeswarar-temple,"Akshayapureeswarar Temple",Tamil Nadu,4.8,900
+spiritual,ranganathaswamy-temple-karamadai,"Ranganathaswamy Temple, Karamadai",Tamil Nadu,4.2,900
+spiritual,narthana-vallabeswarar-temple,"Narthana Vallabeswarar temple",Tamil Nadu,4.7,900
+spiritual,basilica-of-our-lady-of-the-holy-rosary-karumathampatti,"Basilica of Our Lady of the Holy Rosary, Karumathampatti",Tamil Nadu,4.3,900
+spiritual,dalavanur,"Dalavanur",Tamil Nadu,4.7,900
+spiritual,thirumarperu,"Thirumarperu",Tamil Nadu,4.5,900
+spiritual,ardhanareeswarar-temple,"Ardhanareeswarar Temple",Tamil Nadu,4.6,900
+spiritual,navapashanam-temple,"Navapashanam temple",Tamil Nadu,4.7,900
+spiritual,sivasailam-temple,"Sivasailam Temple",Tamil Nadu,4.8,900
+spiritual,kripapureeswarar-temple,"Kripapureeswarar Temple",Tamil Nadu,4.6,900
+spiritual,netroddharakaswami-temple,"Netroddharakaswami Temple",Tamil Nadu,4.4,900
+spiritual,kola-valvill-ramar-temple-tiruvelliyangudi,"Kola Valvill Ramar Temple, Tiruvelliyangudi",Tamil Nadu,4.3,900
+spiritual,prasanna-venkatachalapathy-temple,"Prasanna Venkatachalapathy Temple",Tamil Nadu,4.3,900
+spiritual,jagannath-temple-chennai,"Jagannath Temple, Chennai",Tamil Nadu,4.8,900
+spiritual,kokarneswarar-temple-thirukokarnam,"Kokarneswarar Temple, Thirukokarnam",Tamil Nadu,4.4,900
+spiritual,thiruppudaimarudur,"Thiruppudaimarudur",Tamil Nadu,4.3,900
+spiritual,anniyur-agnipureeswarar-temple,"Anniyur Agnipureeswarar Temple",Tamil Nadu,4.4,900
+spiritual,aakkoor-thanthondreeswarar-temple,"Aakkoor Thanthondreeswarar Temple",Tamil Nadu,4.2,900
+spiritual,anniyur-abathsahayeswarar-temple,"Anniyur Abathsahayeswarar Temple",Tamil Nadu,4.5,900
+spiritual,korukkai-veeratteswarar-temple,"Korukkai Veeratteswarar Temple",Tamil Nadu,4.6,900
+spiritual,tirundudevankudi-karkadeswarar-temple,"Tirundudevankudi Karkadeswarar Temple",Tamil Nadu,4.3,900
+spiritual,tirunedunkulam-nedungalanathar-temple,"Tirunedunkulam Nedungalanathar Temple",Tamil Nadu,4.4,900
+spiritual,tirupandurai-sivanandeswarar-temple,"Tirupandurai Sivanandeswarar Temple",Tamil Nadu,4.6,900
+spiritual,tirupalli-mukkudal-tirunethranathar-temple,"Tirupalli Mukkudal Tirunethranathar Temple",Tamil Nadu,4.5,900
+spiritual,tirumanancheri-udhvaganathar-temple,"Tirumanancheri Udhvaganathar Temple",Tamil Nadu,4.8,900
+spiritual,thiruvattathurai-theerthapureeswarar-temple,"Thiruvattathurai Theerthapureeswarar Temple",Tamil Nadu,4.4,900
+spiritual,tiruvalaputhur-manickavannar-temple,"Tiruvalaputhur Manickavannar Temple",Tamil Nadu,4.3,900
+spiritual,tiruvirkudi-veerataneswarar-temple,"Tiruvirkudi Veerataneswarar Temple",Tamil Nadu,4.1,900
+spiritual,uchira-vaneswarar-temple,"Uchira Vaneswarar Temple",Tamil Nadu,4.2,900
+spiritual,arulmigu-prasanna-venkatesa-perumal-temple,"Arulmigu Prasanna Venkatesa Perumal Temple",Tamil Nadu,4.5,900
+spiritual,kuzhanthai-velappar-temple,"Kuzhanthai Velappar temple",Tamil Nadu,4.3,900
+spiritual,twin-temples-keezhaiyur,"Twin Temples, Keezhaiyur",Tamil Nadu,4.8,900
+spiritual,masilamaniswara-temple-thirumullaivoyal,"Masilamaniswara Temple, Thirumullaivoyal",Tamil Nadu,4.2,900
+spiritual,venni-karumbeswarar-temple,"Venni Karumbeswarar Temple",Tamil Nadu,4.4,900
+spiritual,piramanoor-kailasha-nathar-temple,"Piramanoor Kailasha Nathar Temple",Tamil Nadu,4.7,900
+spiritual,shri-pathirakali-mariamman-temple,"Shri Pathirakali Mariamman Temple",Tamil Nadu,4.3,900
+spiritual,chennai-om-sri-skandhashramam,"Chennai Om Sri Skandhashramam",Tamil Nadu,4.4,900
+spiritual,betrayaswamy-temple,"Betrayaswamy Temple",Tamil Nadu,4.3,900
+spiritual,ashtamsa-varadha-anjaneyar-temple,"Ashtamsa Varadha Anjaneyar Temple",Tamil Nadu,4.5,900
+spiritual,pratyangira-temple-hosur,"Pratyangira temple, Hosur",Tamil Nadu,4.4,900
+spiritual,kamakshi-amman-temple-mangadu,"Kamakshi Amman Temple, Mangadu",Tamil Nadu,4.5,900
+spiritual,kamakshi-amman-temple-saidapet,"Kamakshi Amman Temple, Saidapet",Tamil Nadu,4.3,900
+spiritual,rathnagiriswarar-temple-thirumarugal,"Rathnagiriswarar Temple,Thirumarugal",Tamil Nadu,4.7,900
+spiritual,ravishwarar-temple,"Ravishwarar Temple",Tamil Nadu,4.3,900
+spiritual,sri-navaladi-karuppannaswami-temple-mohanur,"Sri Navaladi Karuppannaswami Temple – Mohanur",Tamil Nadu,4.7,900
+spiritual,kaichinam-kaichineswarar-temple,"Kaichinam Kaichineswarar Temple",Tamil Nadu,4.3,900
+spiritual,kodi-kuzhagar-temple,"Kodi Kuzhagar Temple",Tamil Nadu,4.5,900
+spiritual,varadaraja-perumal-temple-shoolagiri,"Varadaraja Perumal Temple, Shoolagiri",Tamil Nadu,4.3,900
+spiritual,pallikonda-perumal-temple-malayadippatti,"Pallikonda Perumal Temple, Malayadippatti",Tamil Nadu,4.3,900
+spiritual,ekambaranathar-temple-tiruvekambathur,"Ekambaranathar Temple, Tiruvekambathur",Tamil Nadu,4.7,900
+spiritual,kundrathur-murugan-temple,"Kundrathur Murugan Temple",Tamil Nadu,4.7,900
+spiritual,pachaimalai-subramanya-swamy-temple,"Pachaimalai Subramanya Swamy Temple",Tamil Nadu,4.2,900
+spiritual,kanthaswamy-temple-cheyyur,"Kanthaswamy Temple, Cheyyur",Tamil Nadu,4.3,900
+spiritual,vijayaraghava-perumal-temple,"Vijayaraghava Perumal temple",Tamil Nadu,4.4,900
+spiritual,cherugudi-sukshmapureeswarar-temple,"Cherugudi Sukshmapureeswarar Temple",Tamil Nadu,4.4,900
+spiritual,tirumeeyachur-mehanadhar-temple,"Tirumeeyachur Mehanadhar Temple",Tamil Nadu,4.7,900
+spiritual,sathya-vageeswarar-temple-kalakkad,"Sathya Vageeswarar Temple, Kalakkad",Tamil Nadu,4.7,900
+spiritual,vaithya-lingam-temple,"Vaithya lingam temple",Tamil Nadu,4.7,900
+spiritual,vanniappar-temple,"Vanniappar Temple",Tamil Nadu,4.2,900
+spiritual,arjuneswarar,"Arjuneswarar",Tamil Nadu,4.3,900
+spiritual,vishamangalesvarar-temple-thudaiyur,"Vishamangalesvarar Temple, Thudaiyur",Tamil Nadu,4.3,900
+spiritual,sukreeswarar-temple,"Sukreeswarar temple",Tamil Nadu,4.5,900
+spiritual,agasteeswarar-temple-kolapakkam,"Agasteeswarar Temple, Kolapakkam",Tamil Nadu,4.7,900
+spiritual,badhri-narayanan-temple,"Badhri Narayanan temple",Tamil Nadu,4.2,900
+spiritual,brahmapureeswarar-temple,"Brahmapureeswarar Temple",Tamil Nadu,4.8,900
+spiritual,ganga-jadadisvarar-temple,"Ganga Jadadisvarar Temple",Tamil Nadu,4.5,900
+spiritual,garbharakshambigai-temple,"Garbharakshambigai temple",Tamil Nadu,4.4,900
+spiritual,kalahastiswamy-temple-uthamapalayam,"Kalahastiswamy Temple, Uthamapalayam",Tamil Nadu,4.7,900
+spiritual,tirusoolanathar-temple,"Tirusoolanathar Temple",Tamil Nadu,4.1,900
+spiritual,semponarkoil-swarnapureeswarar-temple,"Semponarkoil Swarnapureeswarar Temple",Tamil Nadu,4.1,900
+spiritual,vilamal-pathanchali-manoharar-temple,"Vilamal Pathanchali Manoharar Temple",Tamil Nadu,4.3,900
+spiritual,tirunaarayur-soundaryeswarar-temple,"Tirunaarayur Soundaryeswarar Temple",Tamil Nadu,4.6,900
+spiritual,egowri-amman-temple-vallam,"Egowri Amman Temple, Vallam",Tamil Nadu,4.6,900
+spiritual,st-antony-s-church-chemmanvilai,"St. Antony's Church, Chemmanvilai",Tamil Nadu,4.6,900
+spiritual,christ-church-salem,"Christ Church, Salem",Tamil Nadu,4.3,900
+spiritual,ringeltaube-vethamonikam-memorial-church-mylaudy,"Ringeltaube Vethamonikam Memorial Church, Mylaudy",Tamil Nadu,4.2,900
+spiritual,st-mary-s-basilica,"St. Mary's Basilica",Tamil Nadu,4.7,900
+spiritual,balasubramaniyaswamy-temple,"Balasubramaniyaswamy Temple",Tamil Nadu,4.2,900
+spiritual,st-joseph-shrine-panagudi,"St. Joseph Shrine, Panagudi",Tamil Nadu,4.5,900
+spiritual,jain-temple-mettupudur,"Jain temple, Mettupudur",Tamil Nadu,4.1,900
+spiritual,poondi-arugar-temple,"Poondi Arugar Temple",Tamil Nadu,4.3,900
+spiritual,irumbai-mahaleswarar-temple,"Irumbai Mahaleswarar Temple",Tamil Nadu,4.6,900
+spiritual,kothandaramaswami-temple-nandambakkam,"Kothandaramaswami Temple, Nandambakkam",Tamil Nadu,4.5,900
+spiritual,holy-trinity-cathedral-palayamkottai,"Holy Trinity Cathedral, Palayamkottai",Tamil Nadu,4.3,900
+spiritual,koranganatha-temple,"Koranganatha Temple",Tamil Nadu,4.3,900
+spiritual,rajagopala-perumal-temple,"Rajagopala Perumal Temple",Tamil Nadu,4.2,900
+spiritual,othandeeswarar-temple,"Othandeeswarar temple",Tamil Nadu,4.7,900
+spiritual,parthasarathy-temple-parthivapuram,"Parthasarathy temple, Parthivapuram",Tamil Nadu,4.1,900
+spiritual,kodandaramaswamy-temple-ayodhyapatinam,"Kodandaramaswamy Temple, Ayodhyapatinam",Tamil Nadu,4.2,900
+spiritual,vanmeekanathar-temple-tiruvetriyur,"Vanmeekanathar Temple, Tiruvetriyur",Tamil Nadu,4.8,900
+spiritual,thiruthaleeshwarar-temple,"Thiruthaleeshwarar Temple",Tamil Nadu,4.2,900
+spiritual,velveeswarar-temple,"Velveeswarar Temple",Tamil Nadu,4.3,900
+spiritual,aridwaramangalam-padaleswarar-temple,"Aridwaramangalam Padaleswarar Temple",Tamil Nadu,4.3,900
+spiritual,pereyil-jagadeeswarar-temple,"Pereyil Jagadeeswarar Temple",Tamil Nadu,4.5,900
+spiritual,omampuliyur-thuyartheertanathar-temple,"Omampuliyur Thuyartheertanathar Temple",Tamil Nadu,4.7,900
+spiritual,thiruengoimalai-maragadachaleswarar-temple,"Thiruengoimalai Maragadachaleswarar Temple",Tamil Nadu,4.5,900
+spiritual,siruvapuri-sri-balasubrahmanyam-temple,"Siruvapuri Sri Balasubrahmanyam temple",Tamil Nadu,4.5,900
+spiritual,kosavalasu-bhagavan-temple,"Kosavalasu Bhagavan Temple",Tamil Nadu,4.5,900
+spiritual,manikarnikeswarar-temple,"Manikarnikeswarar Temple",Tamil Nadu,4.2,900
+spiritual,kothandarama-temple-thillaivilagam,"Kothandarama Temple, Thillaivilagam",Tamil Nadu,4.2,900
+spiritual,natadreeswarar-temple,"Natadreeswarar Temple",Tamil Nadu,4.2,900
+spiritual,agastheesvarar-temple-kuzhaiyur,"Agastheesvarar Temple, Kuzhaiyur",Tamil Nadu,4.2,900
+spiritual,soundareswararswamy-temple-thiruppanaiyur,"Soundareswararswamy Temple, Thiruppanaiyur",Tamil Nadu,4.2,900
+spiritual,karpaganatharkulam-karpaganathar-temple,"Karpaganatharkulam Karpaganathar Temple",Tamil Nadu,4.5,900
+spiritual,kottur-kozhundeeswarar-temple,"Kottur Kozhundeeswarar Temple",Tamil Nadu,4.2,900
+spiritual,kanattampuliyur-pathanchalinathar-temple,"Kanattampuliyur Pathanchalinathar Temple",Tamil Nadu,4.6,900
+spiritual,sivankoil-raja-raja-choleshwar-mahadevar-temple,"Sivankoil (Raja Raja Choleshwar Mahadevar Temple)",Tamil Nadu,4.2,900
+spiritual,sri-perungaraiyadi-meenda-ayyanar-temple,"Sri Perungaraiyadi Meenda Ayyanar Temple",Tamil Nadu,4.2,900
+spiritual,alavaimalai-subrayar-murugan-temple,"Alavaimalai Subrayar Murugan Temple",Tamil Nadu,4.4,900
+spiritual,thandayuthapani-temples-chettikulam,"Thandayuthapani Temples, Chettikulam",Tamil Nadu,4.2,900
+spiritual,therazhundur-vedapureeswarar-temple,"Therazhundur Vedapureeswarar Temple",Tamil Nadu,4.1,900
+spiritual,pariyur-kondathu-kaliamman,"Pariyur Kondathu Kaliamman",Tamil Nadu,4.5,900
+spiritual,ambal-brahmapureeswarar-temple,"Ambal Brahmapureeswarar Temple",Tamil Nadu,4.7,900
+spiritual,karapuranathar-temple,"Karapuranathar Temple",Tamil Nadu,4.6,900
+spiritual,prasanna-venkatachalapathi-temple-thuraiyur,"Prasanna Venkatachalapathi Temple, Thuraiyur",Tamil Nadu,4.6,900
+spiritual,singamadai-ayyanar-temple-nalli,"Singamadai Ayyanar Temple, Nalli",Tamil Nadu,4.2,900
+spiritual,paridiniyamam-parithiappar-temple,"Paridiniyamam Parithiappar Temple",Tamil Nadu,4.5,900
+spiritual,tirukkollikkadu-agneeswarar-temple,"Tirukkollikkadu Agneeswarar Temple",Tamil Nadu,4.6,900
+spiritual,patcheeswarar-temple,"Patcheeswarar temple",Tamil Nadu,4.4,900
+spiritual,veeramakaliamman-temple-arantangi,"Veeramakaliamman Temple, Arantangi",Tamil Nadu,4.5,900
+spiritual,peravallur-sundararaja-perumal-temple,"Peravallur Sundararaja Perumal Temple",Tamil Nadu,4.2,900
+spiritual,virundeeswarar-temple,"Virundeeswarar Temple",Tamil Nadu,4.2,900
+spiritual,st-peter-s-church-royapuram,"St. Peter's Church, Royapuram",Tamil Nadu,4.6,900
+spiritual,wesley-church-egmore,"Wesley Church, Egmore",Tamil Nadu,4.6,900
+spiritual,brough-memorial-church,"Brough Memorial Church",Tamil Nadu,4.5,900
+spiritual,rudrakodisvarar-temple-sempankudi,"Rudrakodisvarar Temple, Sempankudi",Tamil Nadu,4.8,900
+spiritual,thinthirineesvarar-temple-tindivanam,"Thinthirineesvarar Temple, Tindivanam",Tamil Nadu,4.4,900
+spiritual,saint-paul-church-mela-ilandaikulam,"Saint Paul Church, Mela Ilandaikulam",Tamil Nadu,4.6,900
+spiritual,st-stephen-s-church-kombuthurai,"St. Stephen's Church, Kombuthurai",Tamil Nadu,4.3,900
+spiritual,deepanayakaswamy-jain-temple-deepankudi,"Deepanayakaswamy Jain Temple, Deepankudi",Tamil Nadu,4.2,900
+spiritual,abaya-hastha-swayambu-sri-lakshmi-narasimha-swamy-temple-agaram-village-hosur,"Abaya Hastha Swayambu Sri Lakshmi Narasimha Swamy Temple, Agaram Village, Hosur",Tamil Nadu,4.7,900
+spiritual,karaikandeswarar-temple-kanji,"Karaikandeswarar temple, Kanji",Tamil Nadu,4.1,900
+spiritual,nallur-sundara-varadharaja-perumal-temple,"Nallur Sundara Varadharaja Perumal Temple",Tamil Nadu,4.4,900
+spiritual,tholudur-madhurantaka-choleswarar,"Tholudur Madhurantaka Choleswarar",Tamil Nadu,4.6,900
+spiritual,basilica-of-st-john-de-britto,"Basilica of St. John de Britto",Tamil Nadu,4.6,900
+spiritual,sri-varadharaja-perumal-kovil,"Sri Varadharaja Perumal Kovil",Tamil Nadu,4.8,900
+spiritual,subrahmanya-temple-perambur,"Subrahmanya Temple, Perambur",Tamil Nadu,4.1,900
+spiritual,venugopalaswami-temple-kaliappettai,"Venugopalaswami Temple, Kaliappettai",Tamil Nadu,4.2,900
+spiritual,vishahareswara-temple,"Vishahareswara Temple",Tamil Nadu,4.4,900
+spiritual,sri-rajagopala-swamy-temple,"Sri Rajagopala Swamy temple",Tamil Nadu,4.8,900
+spiritual,pathrakaliamman-temple,"Pathrakaliamman Temple",Tamil Nadu,4.5,900
+spiritual,mavoothu-vellappar-temple,"Mavoothu Vellappar Temple",Tamil Nadu,4.2,900
+spiritual,mariamman-temple-irukkankudi,"Mariamman Temple, Irukkankudi",Tamil Nadu,4.6,900
+spiritual,sri-sengazhuneer-amman-temple,"Sri Sengazhuneer Amman Temple",Tamil Nadu,4.4,900
+spiritual,alappancode-easwara-kala-bhoothathan-temple,"Alappancode Easwara Kala Bhoothathan Temple",Tamil Nadu,4.2,900
+spiritual,st-francis-xavier-church-kethanahalli,"St. Francis Xavier Church, Kethanahalli",Tamil Nadu,4.3,900
+spiritual,our-lady-of-mount-carmel-church-b-pallipatti,"Our Lady of Mount Carmel Church, B Pallipatti",Tamil Nadu,4.7,900
+spiritual,vinnarasi-madha-church-gopasandiram,"Vinnarasi Madha Church, Gopasandiram",Tamil Nadu,4.6,900
+spiritual,st-joseph-church-kathanpallam,"St. Joseph Church, Kathanpallam",Tamil Nadu,4.7,900
+spiritual,thirumanangeeswarar-temple,"Thirumanangeeswarar Temple",Tamil Nadu,4.2,900
+spiritual,elai-kaatha-amman-temple,"Elai Kaatha Amman Temple",Tamil Nadu,4.6,900
+spiritual,podhu-aavudayar-temple,"Podhu Aavudayar Temple",Tamil Nadu,4.8,900
+spiritual,c-s-i-ellis-memorial-church,"C.S.I Ellis Memorial Church",Tamil Nadu,4.5,900
+spiritual,our-lady-of-rosary-church-kallakurichi,"Our Lady of Rosary Church, Kallakurichi",Tamil Nadu,4.6,900
+spiritual,our-lady-of-fatima-church-krishnagiri,"Our Lady of Fatima Church, Krishnagiri",Tamil Nadu,4.6,900
+spiritual,our-lady-of-presentation-church-mathapuram,"Our Lady of Presentation Church, Mathapuram",Tamil Nadu,4.3,900
+spiritual,our-lady-of-good-health-church-mathigiri,"Our Lady of Good Health Church, Mathigiri",Tamil Nadu,4.5,900
+spiritual,queen-of-angels-church-kadagathur,"Queen of Angels Church, Kadagathur",Tamil Nadu,4.8,900
+spiritual,somanatha-pashana-lingeswarar-temple-timiri,"Somanatha Pashana Lingeswarar Temple, Timiri",Tamil Nadu,4.4,900
+spiritual,adaikkala-madha-shrine-elakurichi,"Adaikkala Madha Shrine, Elakurichi",Tamil Nadu,4.4,900
+spiritual,ramappa-temple,"Ramappa Temple",Telangana,4.6,900
+spiritual,birla-mandir-hyderabad,"Birla Mandir, Hyderabad",Telangana,4.2,900
+spiritual,basilica-of-our-lady-of-the-assumption-secunderabad,"Basilica of Our Lady of the Assumption, Secunderabad",Telangana,4.7,900
+spiritual,thousand-pillar-temple,"Thousand Pillar Temple",Telangana,4.4,900
+spiritual,gnana-saraswati-temple,"Gnana Saraswati Temple",Telangana,4.5,900
+spiritual,bhadrachalam-temple,"Bhadrachalam Temple",Telangana,4.8,900
+spiritual,yadagirigutta-temple,"Yadagirigutta Temple",Telangana,4.5,900
+spiritual,karmanghat-hanuman-temple,"Karmanghat Hanuman Temple",Telangana,4.2,900
+spiritual,chaya-someswara-swamy-temple,"Chaya Someswara Swamy temple",Telangana,4.6,900
+spiritual,wargal-saraswati-temple,"Wargal Saraswati Temple",Telangana,4.4,900
+spiritual,chilkur-balaji-temple,"Chilkur Balaji Temple",Telangana,4.8,900
+spiritual,hyderabad-kalibari,"Hyderabad Kalibari",Telangana,4.2,900
+spiritual,alampur-navabrahma-temples,"Alampur Navabrahma Temples",Telangana,4.3,900
+spiritual,kulpakji,"Kulpakji",Telangana,4.7,900
+spiritual,ashtalakshmi-temple-hyderabad,"Ashtalakshmi Temple, Hyderabad",Telangana,4.1,900
+spiritual,sitaram-bagh-temple,"Sitaram Bagh temple",Telangana,4.7,900
+spiritual,sri-dubba-rajeshwara-swamy-temple,"Sri Dubba Rajeshwara Swamy Temple",Telangana,4.4,900
+spiritual,kaleshwara-mukteswara-swamy-temple,"Kaleshwara Mukteswara Swamy Temple",Telangana,4.3,900
+spiritual,erakeswara-temple-pillalamarri,"Erakeswara Temple, Pillalamarri",Telangana,4.5,900
+spiritual,ananthagiri-temple,"Ananthagiri Temple",Telangana,4.6,900
+spiritual,ramalingeswara-temple-nandikandi,"Ramalingeswara Temple, Nandikandi",Telangana,4.3,900
+spiritual,holy-trinity-church-bolarum,"Holy Trinity Church, Bolarum",Telangana,4.4,900
+spiritual,komrelly-mallanna-temple,"Komrelly Mallanna Temple",Telangana,4.5,900
+spiritual,neelakanteshwara-temple,"Neelakanteshwara temple",Telangana,4.2,900
+spiritual,saraswathi-kshetramu-ananthasagar,"Saraswathi Kshetramu, Ananthasagar",Telangana,4.3,900
+spiritual,sri-raja-rajeshwara-temple,"Sri Raja Rajeshwara temple",Telangana,4.5,900
+spiritual,sri-trilinga-sanghameshwara-swamy-temple,"Sri Trilinga Sanghameshwara swamy temple",Telangana,4.2,900
+spiritual,jamalapuram-temple,"Jamalapuram Temple",Telangana,4.8,900
+spiritual,sri-ranganayaka-swamy-temple,"Sri Ranganayaka Swamy Temple",Telangana,4.6,900
+spiritual,kota-gullu,"Kota Gullu",Telangana,4.5,900
+spiritual,dichpally-ramalayam,"Dichpally Ramalayam",Telangana,4.3,900
+spiritual,katta-maisamma-temple,"Katta Maisamma temple",Telangana,4.4,900
+spiritual,tripura-sundari-temple,"Tripura Sundari Temple",Tripura,4.7,900
+spiritual,lakshmi-narayan-temple-agartala,"Lakshmi Narayan Temple, Agartala",Tripura,4.6,900
+spiritual,bhubaneswari-temple,"Bhubaneswari Temple",Tripura,4.8,900
+spiritual,chaturdasha-temple,"Chaturdasha Temple",Tripura,4.6,900
+spiritual,kasbeswari-kali-mata,"Kasbeswari Kali Mata",Tripura,4.3,900
+spiritual,ram-mandir,"Ram Mandir",Uttar Pradesh,4.7,900
+spiritual,kashi-vishwanath-temple,"Kashi Vishwanath Temple",Uttar Pradesh,4.2,900
+spiritual,dashavatara-temple-deogarh,"Dashavatara Temple, Deogarh",Uttar Pradesh,4.8,900
+spiritual,krishna-janmasthan-temple-complex,"Krishna Janmasthan Temple Complex",Uttar Pradesh,4.5,900
+spiritual,banke-bihari-temple,"Banke Bihari Temple",Uttar Pradesh,4.4,900
+spiritual,new-vishwanath-temple,"New Vishwanath Temple",Uttar Pradesh,4.7,900
+spiritual,basilica-of-our-lady-of-graces,"Basilica of Our Lady of Graces",Uttar Pradesh,4.8,900
+spiritual,gorakhnath-math,"Gorakhnath Math",Uttar Pradesh,4.8,900
+spiritual,radha-raman-temple,"Radha Raman Temple",Uttar Pradesh,4.8,900
+spiritual,shri-naimishnath-vishnu-temple,"Shri Naimishnath Vishnu Temple",Uttar Pradesh,4.5,900
+spiritual,sri-radha-rani-temple,"Śrī Rādhā Rānī Temple",Uttar Pradesh,4.3,900
+spiritual,baba-gangeshwarnath-dham,"Baba Gangeshwarnath Dham",Uttar Pradesh,4.3,900
+spiritual,lodheshwar-mahadev-mandir,"Lodheshwar Mahadev Mandir",Uttar Pradesh,4.7,900
+spiritual,tiruvaaippadi,"Tiruvaaippadi",Uttar Pradesh,4.2,900
+spiritual,chandrawati-jain-temple,"Chandrawati Jain temple",Uttar Pradesh,4.8,900
+spiritual,swarved-mahamandir,"Swarved Mahamandir",Uttar Pradesh,4.2,900
+spiritual,sita-samahit-sthal,"Sita Samahit Sthal",Uttar Pradesh,4.2,900
+spiritual,kanpur-memorial-church,"Kanpur Memorial Church",Uttar Pradesh,4.5,900
+spiritual,all-saints-garrison-church-lucknow,"All Saints Garrison Church, Lucknow",Uttar Pradesh,4.7,900
+spiritual,chandrika-devi-temple-lucknow,"Chandrika Devi Temple, Lucknow",Uttar Pradesh,4.3,900
+spiritual,jambudweep,"Jambudweep",Uttar Pradesh,4.5,900
+spiritual,ramrekha-mandir,"Ramrekha Mandir",Uttar Pradesh,4.6,900
+spiritual,bada-gaon-temple,"Bada Gaon temple",Uttar Pradesh,4.4,900
+spiritual,sheetala-chaukia-dham-mandir-jaunpur,"Sheetala Chaukia Dham Mandir Jaunpur",Uttar Pradesh,4.4,900
+spiritual,parhul-devi-temple,"Parhul Devi Temple",Uttar Pradesh,4.5,900
+spiritual,ved-mata-gaytri-mandir,"Ved Mata Gaytri Mandir",Uttar Pradesh,4.3,900
+spiritual,valmiki-ashram,"Valmiki Ashram",Uttar Pradesh,4.8,900
+spiritual,vahelna-jain-temple,"Vahelna Jain temple",Uttar Pradesh,4.3,900
+spiritual,sarnath-jain-tirth,"Sarnath Jain Tirth",Uttar Pradesh,4.4,900
+spiritual,shobhnath-temple,"Shobhnath temple",Uttar Pradesh,4.4,900
+spiritual,daan-ghati,"Daan-Ghati",Uttar Pradesh,4.3,900
+spiritual,st-john-s-church-meerut,"St. John's Church, Meerut",Uttar Pradesh,4.7,900
+spiritual,sacred-heart-church,"Sacred Heart Church",Uttar Pradesh,4.5,900
+spiritual,jarai-ka-math,"Jarai-ka-Math",Uttar Pradesh,4.7,900
+spiritual,belha-devi-temple,"Belha Devi Temple",Uttar Pradesh,4.4,900
+spiritual,neelkantheshwar,"Neelkantheshwar",Uttar Pradesh,4.4,900
+spiritual,vandevi-temple,"Vandevi Temple",Uttar Pradesh,4.5,900
+spiritual,st-mary-s-church-noida,"St. Mary's Church, Noida",Uttar Pradesh,4.3,900
+spiritual,renukeshwar-mahadev-temple,"Renukeshwar Mahadev Temple",Uttar Pradesh,4.7,900
+spiritual,chauharjan-devi-temple,"Chauharjan Devi Temple",Uttar Pradesh,4.7,900
+spiritual,maa-kaali-and-bhagwan-shankar-temple,"Maa Kaali & Bhagwan Shankar Temple",Uttar Pradesh,4.2,900
+spiritual,gomateshwar-mahadev-temple-kerakat,"Gomateshwar Mahadev Temple,Kerakat",Uttar Pradesh,4.1,900
+spiritual,sri-aastik-swami-mandir-raebareli,"Sri Aastik Swami Mandir, Raebareli",Uttar Pradesh,4.2,900
+spiritual,kedarnath-temple,"Kedarnath Temple",Uttarakhand,4.5,900
+spiritual,badrinath-temple,"Badrinath Temple",Uttarakhand,4.7,900
+spiritual,gauri-kund,"Gauri Kund",Uttarakhand,4.3,900
+spiritual,rudranath,"Rudranath",Uttarakhand,4.7,900
+spiritual,yamunotri-temple,"Yamunotri Temple",Uttarakhand,4.1,900
+spiritual,kalpeshwar,"Kalpeshwar",Uttarakhand,4.2,900
+spiritual,madhyamaheshwar,"Madhyamaheshwar",Uttarakhand,4.3,900
+spiritual,baleshwar-temple,"Baleshwar Temple",Uttarakhand,4.8,900
+spiritual,daksheswara-mahadev-temple,"Daksheswara Mahadev Temple",Uttarakhand,4.2,900
+spiritual,bagnath-temple,"Bagnath Temple",Uttarakhand,4.7,900
+spiritual,triyuginarayan-temple,"Triyuginarayan Temple",Uttarakhand,4.3,900
+spiritual,tapkeshwar-temple,"Tapkeshwar Temple",Uttarakhand,4.6,900
+spiritual,sapta-badri,"Sapta Badri",Uttarakhand,4.5,900
+spiritual,gopinath-mandir,"Gopinath Mandir",Uttarakhand,4.6,900
+spiritual,neelkanth-mahadev-temple,"Neelkanth Mahadev Temple",Uttarakhand,4.8,900
+spiritual,lakhamandal-temple-ruins-and-images,"Lakhamandal temple, ruins and images",Uttarakhand,4.8,900
+spiritual,kainchi-dham,"Kainchi Dham",Uttarakhand,4.1,900
+spiritual,umra-narayan,"Umra Narayan",Uttarakhand,4.1,900
+spiritual,raghunathji-temple-devprayag,"Raghunathji Temple, Devprayag",Uttarakhand,4.4,900
+spiritual,adi-badri-temples,"Adi Badri temples",Uttarakhand,4.5,900
+spiritual,kamanda-mahadev,"Kamanda Mahadev",Uttarakhand,4.7,900
+spiritual,moteshwar-mahadev,"Moteshwar Mahadev",Uttarakhand,4.2,900
+spiritual,kalinka-pauri-garhwal,"Kalinka, Pauri Garhwal",Uttarakhand,4.8,900
+spiritual,st-john-in-the-wilderness-nainital,"St. John in the Wilderness (Nainital)",Uttarakhand,4.3,900
+spiritual,gujrugarhi,"Gujrugarhi",Uttarakhand,4.1,900
+spiritual,chandrabadani-devi,"Chandrabadani Devi",Uttarakhand,4.1,900
+spiritual,dakshineswar-kali-temple,"Dakshineswar Kali Temple",West Bengal,4.6,900
+spiritual,kalighat-kali-temple,"Kalighat Kali Temple",West Bengal,4.1,900
+spiritual,basilica-of-the-holy-rosary,"Basilica of the Holy-Rosary",West Bengal,4.4,900
+spiritual,hangseshwari-temple,"Hangseshwari Temple",West Bengal,4.7,900
+spiritual,armenian-church-of-st-john-the-baptist,"Armenian Church of St. John the Baptist",West Bengal,4.4,900
+spiritual,nava-kailasha-temple,"Nava-Kailasha Temple",West Bengal,4.2,900
+spiritual,st-mary-armenian-church,"St. Mary Armenian Church",West Bengal,4.1,900
+spiritual,temple-of-vedic-planetarium,"Temple of Vedic Planetarium",West Bengal,4.5,900
+spiritual,madangopal-jiu-temple,"Madangopal-jiu Temple",West Bengal,4.5,900
+spiritual,jatar-deul,"Jatar Deul",West Bengal,4.2,900
+spiritual,siddheshwar-temple,"Siddheshwar temple",West Bengal,4.4,900
+spiritual,bargabhima-temple,"Bargabhima temple",West Bengal,4.5,900
+spiritual,attahas-shaktipeeth,"Attahas Shaktipeeth",West Bengal,4.4,900
+spiritual,temple-of-ichai-ghosh,"Temple of Ichai Ghosh",West Bengal,4.2,900
+spiritual,kalyaneshwari-temple,"Kalyaneshwari Temple",West Bengal,4.7,900
+spiritual,kiriteswari-temple,"Kiriteswari Temple",West Bengal,4.5,900
+spiritual,st-olav-s-church-serampore,"St. Olav's Church, Serampore",West Bengal,4.3,900
+spiritual,gokulchand-temple,"Gokulchand Temple",West Bengal,4.7,900
+spiritual,ekteshwar-temple,"Ekteshwar Temple",West Bengal,4.2,900
+spiritual,temple-of-banda,"Temple of Banda",West Bengal,4.4,900
+spiritual,char-bangla-temples,"Char Bangla Temples",West Bengal,4.2,900
+spiritual,jalpeshwar-shiva-temple,"Jalpeshwar Shiva temple",West Bengal,4.3,900
+spiritual,twin-temples,"Twin temples",West Bengal,4.5,900
+spiritual,brindaban-chandra-s-math,"Brindaban Chandra's Math",West Bengal,4.7,900
+spiritual,chapra-christ-church,"Chapra Christ Church",West Bengal,4.7,900
+spiritual,sridhar-temple,"Sridhar Temple",West Bengal,4.4,900
+spiritual,taraknath-temple,"Taraknath Temple",West Bengal,4.6,900
+spiritual,kamteswari-temple,"Kamteswari temple",West Bengal,4.1,900
+spiritual,ramkeli-madanmohan-jiu-temple,"Ramkeli Madanmohan Jiu temple",West Bengal,4.8,900
+spiritual,rampara-kalibari,"Rampara Kalibari",West Bengal,4.6,900
+spiritual,jagatnagar-kalibari,"Jagatnagar Kalibari",West Bengal,4.6,900
+spiritual,sat-deul,"Sat Deul",West Bengal,4.5,900
+spiritual,keshabeshwar-temple,"Keshabeshwar temple",West Bengal,4.3,900
+spiritual,nrisingha-temple,"Nrisingha Temple",West Bengal,4.5,900
+spiritual,santinath-siva-temple,"Santinath Siva temple",West Bengal,4.5,900
+spiritual,ghaghar-burhi-temple,"Ghaghar Burhi temple",West Bengal,4.3,900
+spiritual,sacred-heart-french-cemetery,"Sacred Heart French Cemetery",West Bengal,4.3,900
+spiritual,st-john-s-church,"St. John's Church",West Bengal,4.5,900
+spiritual,kanak-durga-temple,"Kanak Durga Temple",West Bengal,4.6,900
+spiritual,nandikeshwari-temple,"Nandikeshwari Temple",West Bengal,4.7,900
+spiritual,begunbari-kali-temple,"Begunbari Kali Temple",West Bengal,4.6,900
+spiritual,bhavatarini-shmashanpith-kali-temple,"Bhavatarini Shmashanpith Kali Temple",West Bengal,4.2,900
+spiritual,baneshwar-shiva-temple,"Baneshwar Shiva temple",West Bengal,4.7,900
+spiritual,mohanpur-jagannath-temple,"Mohanpur Jagannath temple",West Bengal,4.4,900
+spiritual,jatileswar-siva-temple,"Jatileswar Siva temple",West Bengal,4.3,900
+spiritual,chakbhabani-kalibari,"Chakbhabani Kalibari",West Bengal,4.2,900
+spiritual,sangchhen-thong-delling-monastery,"Sangchhen Thong Delling monastery",West Bengal,4.7,900
+spiritual,ghanteshwar-temple,"Ghanteshwar Temple",West Bengal,4.7,900
+wildlife,kaziranga,"Kaziranga",Assam,4.8,600
+wildlife,ranthambore,"Ranthambore",Rajasthan,4.6,2500
+wildlife,jim-corbett,"Jim Corbett",Uttarakhand,4.5,2500
+wildlife,bandipur,"Bandipur",Karnataka,4.5,2500
+wildlife,thekkady,"Thekkady",Kerala,4.5,1500
+wildlife,gir,"Gir National Park",Gujarat,4.6,2500
+wildlife,bandhavgarh,"Bandhavgarh",Madhya Pradesh,4.6,3000
+wildlife,kanha,"Kanha",Madhya Pradesh,4.6,3000
+wildlife,sundarbans,"Sundarbans",West Bengal,4.4,2500
+wildlife,binsar,"Binsar",Uttarakhand,4.5,1500
+wildlife,galathea-national-park,"Galathea National Park",Andaman & Nicobar,4.7,2500
+wildlife,mount-manipur-national-park,"Mount Manipur National Park",Andaman & Nicobar,4.4,2500
+wildlife,saddle-peak-national-park,"Saddle Peak National Park",Andaman & Nicobar,4.6,2500
+wildlife,south-button-island-national-park,"South Button Island National Park",Andaman & Nicobar,4.1,2500
+wildlife,kwangtung-island-wildlife-sanctuary,"Kwangtung Island Wildlife Sanctuary",Andaman & Nicobar,4.5,2500
+wildlife,bamboo-island-wildlife-sanctuary,"Bamboo Island Wildlife Sanctuary",Andaman & Nicobar,4.3,2500
+wildlife,papikonda-national-park,"Papikonda National Park",Andhra Pradesh,4.1,2500
+wildlife,pulicat-lake-bird-sanctuary,"Pulicat Lake Bird Sanctuary",Andhra Pradesh,4.6,2500
+wildlife,manjira-wildlife-sanctuary,"Manjira Wildlife Sanctuary",Andhra Pradesh,4.1,2500
+wildlife,kambalakonda-wildlife-sanctuary,"Kambalakonda Wildlife Sanctuary",Andhra Pradesh,4.6,2500
+wildlife,kolleru-bird-sanctuary,"Kolleru Bird Sanctuary",Andhra Pradesh,4.5,2500
+wildlife,rajiv-gandhi-national-park,"Rajiv Gandhi National Park",Andhra Pradesh,4.5,2500
+wildlife,rollapadu-wildlife-sanctuary,"Rollapadu Wildlife Sanctuary",Andhra Pradesh,4.1,2500
+wildlife,gundla-brahmeswaram-wildlife-sanctuary,"Gundla Brahmeswaram Wildlife Sanctuary",Andhra Pradesh,4.5,2500
+wildlife,eaglenest-wildlife-sanctuary,"Eaglenest Wildlife Sanctuary",Arunachal Pradesh,4.6,2500
+wildlife,sessa-orchid-sanctuary,"Sessa Orchid Sanctuary",Arunachal Pradesh,4.6,2500
+wildlife,talley-valley-wildlife-sanctuary,"Talley Valley Wildlife Sanctuary",Arunachal Pradesh,4.6,2500
+wildlife,itanagar-wildlife-sanctuary,"Itanagar Wildlife Sanctuary",Arunachal Pradesh,4.1,2500
+wildlife,kane-wildlife-sanctuary,"Kane Wildlife Sanctuary",Arunachal Pradesh,4.6,2500
+wildlife,mehao-wildlife-sanctuary,"Mehao Wildlife Sanctuary",Arunachal Pradesh,4.2,2500
+wildlife,orang-national-park,"Orang National Park",Assam,4.4,2500
+wildlife,pobitora-wildlife-sanctuary,"Pobitora Wildlife Sanctuary",Assam,4.2,2500
+wildlife,assam-state-zoo-cum-botanical-garden,"Assam State Zoo cum Botanical Garden",Assam,4.1,2500
+wildlife,garampani-wildlife-sanctuary,"Garampani Wildlife Sanctuary",Assam,4.1,2500
+wildlife,hoollongapar-gibbon-sanctuary,"Hoollongapar Gibbon Sanctuary",Assam,4.5,2500
+wildlife,bura-chapori-wildlife-sanctuary,"Bura Chapori Wildlife Sanctuary",Assam,4.3,2500
+wildlife,chakrashila-wildlife-sanctuary,"Chakrashila Wildlife Sanctuary",Assam,4.2,2500
+wildlife,bornadi-wildlife-sanctuary,"Bornadi Wildlife Sanctuary",Assam,4.5,2500
+wildlife,bherjan-borajan-padumoni-wildlife-sanctuary,"Bherjan-Borajan-Padumoni Wildlife Sanctuary",Assam,4.3,2500
+wildlife,east-karbi-anglong-wildlife-sanctuary,"East Karbi-Anglong Wildlife Sanctuary",Assam,4.2,2500
+wildlife,amchang-wildlife-sanctuary,"Amchang Wildlife Sanctuary",Assam,4.2,2500
+wildlife,pani-dihing-wildlife-sanctuary,"Pani Dihing Wildlife Sanctuary",Assam,4.6,2500
+wildlife,deepar-beel-wildlife-sanctuary,"Deepar Beel Wildlife Sanctuary",Assam,4.2,2500
+wildlife,nambor-doigrung-wildlife-sanctuary,"Nambor - Doigrung Wildlife Sanctuary",Assam,4.1,2500
+wildlife,kanwar-lake-bird-sanctuary,"Kanwar Lake Bird Sanctuary",Bihar,4.7,2500
+wildlife,bhimbandh-wildlife-sanctuary,"Bhimbandh Wildlife Sanctuary",Bihar,4.5,2500
+wildlife,gautam-budha-wildlife-sanctuary,"Gautam Budha Wildlife Sanctuary",Bihar,4.7,2500
+wildlife,udaypur-wildlife-sanctuary,"Udaypur Wildlife Sanctuary",Bihar,4.4,2500
+wildlife,kaimur-wildlife-sanctuary,"Kaimur Wildlife Sanctuary",Bihar,4.8,2500
+wildlife,vikramshila-gangetic-dolphin-sanctuary,"Vikramshila Gangetic Dolphin Sanctuary",Bihar,4.7,2500
+wildlife,pant-wildlife-sanctuary,"Pant Wildlife Sanctuary",Bihar,4.6,2500
+wildlife,nagi-bird-sanctuary,"Nagi Bird Sanctuary",Bihar,4.6,2500
+wildlife,barela-bird-sanctuary,"Barela Bird Sanctuary",Bihar,4.2,2500
+wildlife,kusheshwar-asthan-bird-sanctuary,"Kusheshwar Asthan Bird Sanctuary",Bihar,4.3,2500
+wildlife,rajauli-wildlife-sanctuary,"Rajauli Wildlife Sanctuary",Bihar,4.7,2500
+wildlife,maitri-baagh-zoo,"Maitri Baagh Zoo",Chhattisgarh,4.7,2500
+wildlife,nandanvan-jungle-safari,"Nandanvan Jungle Safari",Chhattisgarh,4.5,2500
+wildlife,asola-bhatti-wildlife-sanctuary,"Asola Bhatti Wildlife Sanctuary",Delhi,4.7,2500
+wildlife,dadra-and-nagar-haveli-wildlife-sanctuary,"Dadra and Nagar Haveli Wildlife Sanctuary",Daman & Diu,4.6,2500
+wildlife,bhagwan-mahaveer-sanctuary-and-mollem-national-park,"Bhagwan Mahaveer Sanctuary and Mollem National Park",Goa,4.4,2500
+wildlife,mhadei-wildlife-sanctuary,"Mhadei Wildlife Sanctuary",Goa,4.3,2500
+wildlife,netravali-wildlife-sanctuary,"Netravali Wildlife Sanctuary",Goa,4.3,2500
+wildlife,gir-forest,"Gir Forest",Gujarat,4.7,2500
+wildlife,vansda-national-park,"Vansda National Park",Gujarat,4.7,2500
+wildlife,nal-sarovar-bird-sanctuary,"Nal Sarovar Bird Sanctuary",Gujarat,4.3,2500
+wildlife,khijadiya-bird-sanctuary,"Khijadiya Bird Sanctuary",Gujarat,4.6,2500
+wildlife,porbandar-bird-sanctuary,"Porbandar Bird Sanctuary",Gujarat,4.5,2500
+wildlife,balaram-ambaji-widelife-sanctuary,"Balaram Ambaji Widelife Sanctuary",Gujarat,4.2,2500
+wildlife,mitiyala-lion-sanctuary,"Mitiyala Lion Sanctuary",Gujarat,4.7,2500
+wildlife,kutch-bustard-sanctuary,"Kutch Bustard Sanctuary",Gujarat,4.4,2500
+wildlife,thol-lake-bird-sanctuary,"Thol Lake Bird Sanctuary",Gujarat,4.1,2500
+wildlife,jambughoda-wildlife-sanctuary,"Jambughoda Wildlife Sanctuary",Gujarat,4.3,2500
+wildlife,jessore-sloth-bear-sanctuary,"Jessore Sloth Bear Sanctuary",Gujarat,4.7,2500
+wildlife,rampara-sanctuary,"Rampara Sanctuary",Gujarat,4.7,2500
+wildlife,hingolgadh-sanctuary,"Hingolgadh Sanctuary",Gujarat,4.6,2500
+wildlife,girnar-wildlife-sanctuary,"Girnar Wildlife Sanctuary",Gujarat,4.5,2500
+wildlife,sultanpur-national-park,"Sultanpur National Park",Haryana,4.4,2500
+wildlife,kalesar-national-park,"Kalesar National Park",Haryana,4.6,2500
+wildlife,bhindawas-wildlife-sanctuary,"Bhindawas Wildlife Sanctuary",Haryana,4.2,2500
+wildlife,nahar-wildlife-sanctuary,"Nahar Wildlife Sanctuary",Haryana,4.2,2500
+wildlife,rohtak-zoo,"Rohtak Zoo",Haryana,4.1,2500
+wildlife,saraswati-wildlife-sanctuary,"Saraswati Wildlife Sanctuary",Haryana,4.2,2500
+wildlife,khaparwas-wildlife-sanctuary,"Khaparwas Wildlife Sanctuary",Haryana,4.6,2500
+wildlife,bir-shikargah-wildlife-sanctuary,"Bir Shikargah Wildlife Sanctuary",Haryana,4.7,2500
+wildlife,khol-hi-raitan-wildlife-sanctuary,"Khol Hi-Raitan Wildlife Sanctuary",Haryana,4.7,2500
+wildlife,chhilchhila-wildlife-sanctuary,"Chhilchhila Wildlife Sanctuary",Haryana,4.5,2500
+wildlife,great-himalayan-national-park,"Great Himalayan National Park",Himachal Pradesh,4.2,2500
+wildlife,pin-valley-national-park,"Pin Valley National Park",Himachal Pradesh,4.2,2500
+wildlife,khirganga-national-park,"Khirganga National Park",Himachal Pradesh,4.8,2500
+wildlife,simbalbara-national-park,"Simbalbara National Park",Himachal Pradesh,4.7,2500
+wildlife,majthal-sanctuary,"Majthal Sanctuary",Himachal Pradesh,4.5,2500
+wildlife,kalatop-khajjiar-sanctuary,"Kalatop Khajjiar Sanctuary",Himachal Pradesh,4.8,2500
+wildlife,nargu-wildlife-sanctuary,"Nargu Wildlife Sanctuary",Himachal Pradesh,4.1,2500
+wildlife,renuka-sanctuary,"Renuka Sanctuary",Himachal Pradesh,4.3,2500
+wildlife,kanwar-sanctuary,"Kanwar Sanctuary",Himachal Pradesh,4.1,2500
+wildlife,chail-sanctuary,"Chail Sanctuary",Himachal Pradesh,4.5,2500
+wildlife,churdhar-sanctuary,"Churdhar Sanctuary",Himachal Pradesh,4.7,2500
+wildlife,tirthan-wildlife-sanctuary,"Tirthan Wildlife Sanctuary",Himachal Pradesh,4.6,2500
+wildlife,talra-wildlife-sanctuary,"Talra Wildlife Sanctuary",Himachal Pradesh,4.1,2500
+wildlife,bandli-wildlife-sanctuary,"Bandli Wildlife Sanctuary",Himachal Pradesh,4.5,2500
+wildlife,rupi-bhaba-wildlife-sanctuary,"Rupi Bhaba Wildlife Sanctuary",Himachal Pradesh,4.2,2500
+wildlife,kugti-sanctuary,"Kugti Sanctuary",Himachal Pradesh,4.4,2500
+wildlife,pong-dam-lake-wildlife-sanctuary,"Pong Dam Lake Wildlife Sanctuary",Himachal Pradesh,4.5,2500
+wildlife,kibber-wildlife-sanctuary,"Kibber Wildlife Sanctuary",Himachal Pradesh,4.6,2500
+wildlife,chandratal-wildlife-sanctuary,"Chandratal Wildlife Sanctuary",Himachal Pradesh,4.7,2500
+wildlife,dachigam-national-park,"Dachigam National Park",Jammu & Kashmir,4.8,2500
+wildlife,gulmarg-wildlife-sanctuary,"Gulmarg Wildlife Sanctuary",Jammu & Kashmir,4.2,2500
+wildlife,hirpora-wildlife-sanctuary,"Hirpora Wildlife Sanctuary",Jammu & Kashmir,4.7,2500
+wildlife,limber-wildlife-sanctuary,"Limber Wildlife Sanctuary",Jammu & Kashmir,4.7,2500
+wildlife,qazinag-national-park,"Qazinag National Park",Jammu & Kashmir,4.5,2500
+wildlife,overa-aru-wildlife-sanctuary,"Overa-Aru Wildlife Sanctuary",Jammu & Kashmir,4.2,2500
+wildlife,tral-wildlife-sanctuary,"Tral Wildlife Sanctuary",Jammu & Kashmir,4.6,2500
+wildlife,mansar-surinsar-wildlife-sanctuary,"Mansar-Surinsar Wildlife sanctuary",Jammu & Kashmir,4.4,2500
+wildlife,baltal-thajwas-wildlife-sanctuary,"Baltal Thajwas Wildlife Sanctuary",Jammu & Kashmir,4.6,2500
+wildlife,betla-national-park,"Betla National Park",Jharkhand,4.4,2500
+wildlife,hazaribagh-wildlife-sanctuary,"Hazaribagh Wildlife Sanctuary",Jharkhand,4.3,2500
+wildlife,dalma-wildlife-sanctuary,"Dalma Wildlife Sanctuary",Jharkhand,4.6,2500
+wildlife,palamau-tiger-reserve,"Palamau Tiger Reserve",Jharkhand,4.7,2500
+wildlife,tata-steel-zoological-park,"Tata Steel Zoological Park",Jharkhand,4.3,2500
+wildlife,koderma-wildlife-sanctuary,"Koderma Wildlife Sanctuary",Jharkhand,4.2,2500
+wildlife,bhagwan-birsa-biological-park,"Bhagwan Birsa Biological Park",Jharkhand,4.6,2500
+wildlife,mahuadanr-wolf-sanctuary,"Mahuadanr Wolf Sanctuary",Jharkhand,4.8,2500
+wildlife,topchanchi-wildlife-sanctuary,"Topchanchi Wildlife Sanctuary",Jharkhand,4.8,2500
+wildlife,nagarhole-national-park,"Nagarhole National Park",Karnataka,4.2,2500
+wildlife,kali-tiger-reserve,"Kali Tiger Reserve",Karnataka,4.6,2500
+wildlife,bannerghatta-national-park,"Bannerghatta National Park",Karnataka,4.4,2500
+wildlife,ranganthittu-bird-sanctuary,"Ranganthittu Bird Sanctuary",Karnataka,4.1,2500
+wildlife,dandeli-wildlife-sanctuary,"Dandeli Wildlife Sanctuary",Karnataka,4.7,2500
+wildlife,brahmagiri-wildlife-sanctuary,"Brahmagiri Wildlife Sanctuary",Karnataka,4.3,2500
+wildlife,ranibennur-blackbuck-sanctuary,"Ranibennur Blackbuck Sanctuary",Karnataka,4.5,2500
+wildlife,attiveri-bird-sanctuary,"Attiveri Bird Sanctuary",Karnataka,4.7,2500
+wildlife,gudavi-bird-sanctuary,"Gudavi Bird Sanctuary",Karnataka,4.2,2500
+wildlife,mookambika-wildlife-sanctuary,"Mookambika Wildlife Sanctuary",Karnataka,4.5,2500
+wildlife,tyavarekoppa-lion-and-tiger-safari,"Tyavarekoppa Lion and Tiger Safari",Karnataka,4.3,2500
+wildlife,kudremukh-national-park,"Kudremukh National Park",Karnataka,4.2,2500
+wildlife,shettihalli-wildlife-sanctuary,"Shettihalli Wildlife Sanctuary",Karnataka,4.2,2500
+wildlife,thimlapura-wildlife-sanctuary,"Thimlapura Wildlife Sanctuary",Karnataka,4.7,2500
+wildlife,gudekote-wildlife-sanctuary,"Gudekote Wildlife Sanctuary",Karnataka,4.6,2500
+wildlife,bukkapatna-chinkara-wildlife-sanctuary,"Bukkapatna Chinkara Wildlife Sanctuary",Karnataka,4.5,2500
+wildlife,yadahalli-chinkara-wildlife-sanctuary,"Yadahalli Chinkara Wildlife Sanctuary",Karnataka,4.7,2500
+wildlife,chincholi-wildlife-sanctuary,"Chincholi Wildlife Sanctuary",Karnataka,4.5,2500
+wildlife,arabithittu-wildlife-sanctuary,"Arabithittu Wildlife Sanctuary",Karnataka,4.4,2500
+wildlife,nugu-wildlife-sanctuary,"Nugu Wildlife Sanctuary",Karnataka,4.2,2500
+wildlife,kappatagudda-wildlife-sanctuary,"Kappatagudda Wildlife Sanctuary",Karnataka,4.6,2500
+wildlife,adichunchanagiri-peacock-wildlife-sanctuary,"Adichunchanagiri Peacock Wildlife Sanctuary",Karnataka,4.3,2500
+wildlife,malai-mahadeshwara-wildlife-sanctuary,"Malai Mahadeshwara Wildlife Sanctuary",Karnataka,4.1,2500
+wildlife,ghataprabha-wildlife-sanctuary,"Ghataprabha Wildlife Sanctuary",Karnataka,4.3,2500
+wildlife,melkote-temple-wildlife-sanctuary,"Melkote Temple Wildlife Sanctuary",Karnataka,4.4,2500
+wildlife,rangayyanadurga-four-horned-antelope-wildlife-sanctuary,"Rangayyanadurga Four–horned antelope Wildlife Sanctuary",Karnataka,4.7,2500
+wildlife,ramadevarabetta-vulture-sanctuary,"Ramadevarabetta Vulture Sanctuary",Karnataka,4.3,2500
+wildlife,jogimatti-wildlife-sanctuary,"Jogimatti Wildlife Sanctuary",Karnataka,4.7,2500
+wildlife,dandeli-national-park,"Dandeli National Park",Karnataka,4.4,2500
+wildlife,eravikulam-national-park,"Eravikulam National Park",Kerala,4.7,2500
+wildlife,mathikettan-shola-national-park,"Mathikettan Shola National Park",Kerala,4.6,2500
+wildlife,peppara-wildlife-sanctuary,"Peppara Wildlife Sanctuary",Kerala,4.4,2500
+wildlife,parambikulam-tiger-reserve,"Parambikulam Tiger Reserve",Kerala,4.6,2500
+wildlife,chinnar-wildlife-sanctuary,"Chinnar Wildlife Sanctuary",Kerala,4.2,2500
+wildlife,neyyar-wildlife-sanctuary,"Neyyar Wildlife Sanctuary",Kerala,4.3,2500
+wildlife,aralam-wildlife-sanctuary,"Aralam Wildlife Sanctuary",Kerala,4.8,2500
+wildlife,chimmini-wildlife-sanctuary,"Chimmini Wildlife Sanctuary",Kerala,4.5,2500
+wildlife,chulannur-peafowl-sanctuary,"Chulannur Peafowl Sanctuary",Kerala,4.6,2500
+wildlife,thattekad-bird-sanctuary,"Thattekad Bird Sanctuary",Kerala,4.8,2500
+wildlife,karimpuzha-wildlife-sanctuary,"Karimpuzha Wildlife Sanctuary",Kerala,4.4,2500
+wildlife,idukki-wildlife-sanctuary,"Idukki wildlife sanctuary",Kerala,4.4,2500
+wildlife,kurinjimala-sanctuary,"Kurinjimala Sanctuary",Kerala,4.1,2500
+wildlife,malabar-wildlife-sanctuary,"Malabar Wildlife Sanctuary",Kerala,4.6,2500
+wildlife,hemis-national-park,"Hemis National Park",Ladakh,4.3,2500
+wildlife,changthang-wildlife-sanctuary,"Changthang Wildlife Sanctuary",Ladakh,4.4,2500
+wildlife,bandhavgarh-national-park,"Bandhavgarh National Park",Madhya Pradesh,4.1,2500
+wildlife,pench-national-park,"Pench National Park",Madhya Pradesh,4.2,2500
+wildlife,van-vihar-national-park,"Van Vihar National Park",Madhya Pradesh,4.3,2500
+wildlife,pench-tiger-reserve,"Pench Tiger Reserve",Madhya Pradesh,4.7,2500
+wildlife,ratapani-tiger-reserve,"Ratapani Tiger Reserve",Madhya Pradesh,4.5,2500
+wildlife,gandhi-sagar-sanctuary,"Gandhi Sagar Sanctuary",Madhya Pradesh,4.6,2500
+wildlife,kheoni-wildlife-sanctuary,"Kheoni Wildlife Sanctuary",Madhya Pradesh,4.7,2500
+wildlife,national-chambal-sanctuary,"National Chambal Sanctuary",Madhya Pradesh,4.6,2500
+wildlife,ghatigaon-sanctuary,"Ghatigaon Sanctuary",Madhya Pradesh,4.4,2500
+wildlife,ralamandal-wildlife-sanctuary,"Ralamandal Wildlife Sanctuary",Madhya Pradesh,4.7,2500
+wildlife,ken-gharial-sanctuary,"Ken Gharial Sanctuary",Madhya Pradesh,4.3,2500
+wildlife,veerangana-durgavati-wildlife-sanctuary,"Veerangana Durgavati Wildlife Sanctuary",Madhya Pradesh,4.3,2500
+wildlife,son-gharial-wildlife-sanctuary,"Son Gharial Wildlife Sanctuary",Madhya Pradesh,4.7,2500
+wildlife,dinosaur-fossils-national-park,"Dinosaur Fossils National Park",Madhya Pradesh,4.3,2500
+wildlife,narsinghgarh-wildlife-sanctuary,"Narsinghgarh Wildlife Sanctuary",Madhya Pradesh,4.8,2500
+wildlife,sardarpur-wildlife-sanctuary,"Sardarpur Wildlife Sanctuary",Madhya Pradesh,4.4,2500
+wildlife,sanjay-gandhi-national-park,"Sanjay Gandhi National Park",Maharashtra,4.7,2500
+wildlife,chandoli-national-park,"Chandoli National Park",Maharashtra,4.1,2500
+wildlife,nawegaon-national-park,"Nawegaon National Park",Maharashtra,4.6,2500
+wildlife,karnala-bird-sanctuary,"Karnala Bird Sanctuary",Maharashtra,4.6,2500
+wildlife,jijamata-udyaan,"Jijamata Udyaan",Maharashtra,4.7,2500
+wildlife,rajiv-gandhi-zoological-park,"Rajiv Gandhi Zoological Park",Maharashtra,4.6,2500
+wildlife,bhimashankar-wildlife-sanctuary,"Bhimashankar Wildlife Sanctuary",Maharashtra,4.2,2500
+wildlife,koyna-wildlife-sanctuary,"Koyna Wildlife Sanctuary",Maharashtra,4.1,2500
+wildlife,phansad-wildlife-sanctuary,"Phansad Wildlife Sanctuary",Maharashtra,4.8,2500
+wildlife,nandur-madhmeshwar-bird-sanctuary,"Nandur Madhmeshwar Bird Sanctuary",Maharashtra,4.5,2500
+wildlife,bor-wildlife-sanctuary,"Bor Wildlife Sanctuary",Maharashtra,4.2,2500
+wildlife,yawal-wildlife-sanctuary,"Yawal Wildlife Sanctuary",Maharashtra,4.4,2500
+wildlife,mayureshwar-wildlife-sanctuary,"Mayureshwar Wildlife Sanctuary",Maharashtra,4.2,2500
+wildlife,great-indian-bustard-sanctuary,"Great Indian Bustard Sanctuary",Maharashtra,4.2,2500
+wildlife,sagareshwar-wildlife-sanctuary,"Sagareshwar Wildlife Sanctuary",Maharashtra,4.3,2500
+wildlife,nagzira-wildlife-sanctuary,"Nagzira Wildlife Sanctuary",Maharashtra,4.7,2500
+wildlife,aner-dam-wildlife-sanctuary,"Aner Dam Wildlife Sanctuary",Maharashtra,4.6,2500
+wildlife,tansa-wildlife-sanctuary,"Tansa Wildlife Sanctuary",Maharashtra,4.7,2500
+wildlife,ghodazari-wildlife-sanctuary,"Ghodazari Wildlife Sanctuary",Maharashtra,4.4,2500
+wildlife,umred-karhandla-wildlife-sanctuary,"Umred Karhandla Wildlife Sanctuary",Maharashtra,4.7,2500
+wildlife,maharajbagh-zoo,"Maharajbagh zoo",Maharashtra,4.4,2500
+wildlife,gautala-autramghat-sanctuary,"Gautala Autramghat Sanctuary",Maharashtra,4.5,2500
+wildlife,kalsubai-harishchandragad-wildlife-sanctuary,"Kalsubai Harishchandragad Wildlife Sanctuary",Maharashtra,4.3,2500
+wildlife,lonar-wildlife-sanctuary,"Lonar Wildlife Sanctuary",Maharashtra,4.3,2500
+wildlife,karanja-sohol-wildlife-sanctuary,"Karanja Sohol Wildlife Sanctuary",Maharashtra,4.8,2500
+wildlife,dnyanganga-wildlife-sanctuary,"Dnyanganga Wildlife Sanctuary",Maharashtra,4.1,2500
+wildlife,wan-wildlife-sanctuary,"Wan Wildlife Sanctuary",Maharashtra,4.3,2500
+wildlife,keibul-lamjao-national-park,"Keibul Lamjao National Park",Manipur,4.5,2500
+wildlife,shirui-national-park,"Shirui National Park",Manipur,4.7,2500
+wildlife,yangoupokpi-lokchao-wildlife-sanctuary,"Yangoupokpi-Lokchao Wildlife Sanctuary",Manipur,4.6,2500
+wildlife,menjor-multipurpose-research-centre-and-unity-park,"Menjor Multipurpose Research Centre and Unity Park",Manipur,4.3,2500
+wildlife,baghmara-pitcher-plant-wildlife-sanctuary,"Baghmara Pitcher Plant Wildlife Sanctuary",Meghalaya,4.2,2500
+wildlife,phawngpui-national-park,"Phawngpui National Park",Mizoram,4.5,2500
+wildlife,lengteng-wildlife-sanctuary,"Lengteng Wildlife Sanctuary",Mizoram,4.7,2500
+wildlife,pualreng-wildlife-sanctuary,"Pualreng Wildlife Sanctuary",Mizoram,4.6,2500
+wildlife,tokalo-wildlife-sanctuary,"Tokalo Wildlife Sanctuary",Mizoram,4.3,2500
+wildlife,ntangki-national-park,"Ntangki National Park",Nagaland,4.4,2500
+wildlife,nagaland-zoological-park,"Nagaland Zoological Park",Nagaland,4.2,2500
+wildlife,pulie-badze-wildlife-sanctuary,"Pulie Badze Wildlife Sanctuary",Nagaland,4.5,2500
+wildlife,sanctuary-falls,"Sanctuary Falls",Nagaland,4.8,2500
+wildlife,fakim-wildlife-sanctuary,"Fakim Wildlife Sanctuary",Nagaland,4.1,2500
+wildlife,bhitarkanika-national-park,"Bhitarkanika National Park",Odisha,4.7,2500
+wildlife,chandaka-elephant-sanctuary,"Chandaka Elephant Sanctuary",Odisha,4.6,2500
+wildlife,satkosia-tiger-reserve,"Satkosia Tiger Reserve",Odisha,4.7,2500
+wildlife,nalbana-bird-sanctuary,"Nalbana Bird Sanctuary",Odisha,4.3,2500
+wildlife,kapilasa-wildlife-sanctuary,"Kapilasa Wildlife Sanctuary",Odisha,4.2,2500
+wildlife,lakhari-valley-wildlife-sanctuary,"Lakhari Valley Wildlife Sanctuary",Odisha,4.5,2500
+wildlife,hadgarh-wildlife-sanctuary,"Hadgarh Wildlife Sanctuary",Odisha,4.3,2500
+wildlife,oussudu-bird-sanctuary,"Oussudu Bird Sanctuary",Puducherry,4.3,2500
+wildlife,nangal-wildlife-sanctuary,"Nangal Wildlife Sanctuary",Punjab,4.4,2500
+wildlife,bir-aishvan-wildlife-sanctuary,"Bir Aishvan Wildlife Sanctuary",Punjab,4.5,2500
+wildlife,bir-bunerheri-wildlife-sanctuary,"Bir Bunerheri Wildlife Sanctuary",Punjab,4.4,2500
+wildlife,kevladev-national-park,"Kevladev National Park",Rajasthan,4.2,2500
+wildlife,sariska-tiger-reserve,"Sariska Tiger Reserve",Rajasthan,4.8,2500
+wildlife,sita-mata-wildlife-sanctuary,"Sita Mata Wildlife Sanctuary",Rajasthan,4.6,2500
+wildlife,tal-chhapar-sanctuary,"Tal Chhapar Sanctuary",Rajasthan,4.5,2500
+wildlife,todgarh-raoli-sanctuary,"Todgarh-Raoli Sanctuary",Rajasthan,4.8,2500
+wildlife,bhensrodgarh-wildlife-sanctuary,"Bhensrodgarh Wildlife Sanctuary",Rajasthan,4.6,2500
+wildlife,kailadevi-wildlife-sanctuary,"Kailadevi Wildlife Sanctuary",Rajasthan,4.2,2500
+wildlife,jamwa-ramgarh-wildlife-sanctuary,"Jamwa Ramgarh Wildlife Sanctuary",Rajasthan,4.2,2500
+wildlife,sawai-man-singh-wildlife-sanctuary,"Sawai Man Singh Wildlife Sanctuary",Rajasthan,4.3,2500
+wildlife,van-vihar-wildlife-sanctuary,"Van Vihar Wildlife Sanctuary",Rajasthan,4.3,2500
+wildlife,ramsagar-wildlife-sanctuary,"Ramsagar Wildlife Sanctuary",Rajasthan,4.2,2500
+wildlife,darrah-wildlife-sanctuary,"Darrah Wildlife Sanctuary",Rajasthan,4.6,2500
+wildlife,kesarbagh-wildlife-sanctuary,"Kesarbagh Wildlife Sanctuary",Rajasthan,4.2,2500
+wildlife,jawahar-sagar-wildlife-sanctuary,"Jawahar Sagar Wildlife Sanctuary",Rajasthan,4.3,2500
+wildlife,khangchendzonga-national-park,"Khangchendzonga National Park",Sikkim,4.2,2500
+wildlife,varsey-rhododendron-sanctuary,"Varsey Rhododendron Sanctuary",Sikkim,4.2,2500
+wildlife,shingba-rhododendron-sanctuary,"Shingba Rhododendron Sanctuary",Sikkim,4.7,2500
+wildlife,kyongnosla-alpine-sanctuary,"Kyongnosla Alpine Sanctuary",Sikkim,4.5,2500
+wildlife,pangolakha-wildlife-sanctuary,"Pangolakha Wildlife Sanctuary",Sikkim,4.4,2500
+wildlife,maenam-wildlife-sanctuary,"Maenam Wildlife Sanctuary",Sikkim,4.7,2500
+wildlife,kitam-bird-sanctuary,"Kitam bird sanctuary",Sikkim,4.4,2500
+wildlife,mudumalai-national-park,"Mudumalai National Park",Tamil Nadu,4.2,2500
+wildlife,mukurthi-national-park,"Mukurthi National Park",Tamil Nadu,4.4,2500
+wildlife,anaimalai-tiger-reserve,"Anaimalai Tiger Reserve",Tamil Nadu,4.5,2500
+wildlife,gulf-of-mannar-marine-national-park,"Gulf of Mannar Marine National Park",Tamil Nadu,4.7,2500
+wildlife,vedanthangal-bird-sanctuary,"Vedanthangal Bird Sanctuary",Tamil Nadu,4.1,2500
+wildlife,grizzled-squirrel-wildlife-sanctuary,"Grizzled Squirrel Wildlife Sanctuary",Tamil Nadu,4.3,2500
+wildlife,koothankulam-bird-sanctuary,"Koothankulam Bird Sanctuary",Tamil Nadu,4.8,2500
+wildlife,kalakkad-mundanthurai-tiger-reserve,"Kalakkad Mundanthurai Tiger Reserve",Tamil Nadu,4.3,2500
+wildlife,karaivetti-bird-sanctuary,"Karaivetti Bird Sanctuary",Tamil Nadu,4.4,2500
+wildlife,arignar-anna-zoological-park,"Arignar Anna Zoological Park",Tamil Nadu,4.6,2500
+wildlife,point-calimere-wildlife-and-bird-sanctuary,"Point Calimere Wildlife and Bird Sanctuary",Tamil Nadu,4.7,2500
+wildlife,vaduvoor-bird-sanctuary,"Vaduvoor Bird Sanctuary",Tamil Nadu,4.7,2500
+wildlife,chitrangudi-bird-sanctuary,"Chitrangudi Bird Sanctuary",Tamil Nadu,4.4,2500
+wildlife,vallanadu-wildlife-sanctuary,"Vallanadu Wildlife Sanctuary",Tamil Nadu,4.7,2500
+wildlife,vellode-birds-sanctuary,"Vellode Birds Sanctuary",Tamil Nadu,4.5,2500
+wildlife,udayamarthandapuram-bird-sanctuary,"Udayamarthandapuram Bird Sanctuary",Tamil Nadu,4.7,2500
+wildlife,kodaikanal-wildlife-sanctuary,"Kodaikanal Wildlife Sanctuary",Tamil Nadu,4.8,2500
+wildlife,vettangudi-bird-sanctuary,"Vettangudi Bird Sanctuary",Tamil Nadu,4.3,2500
+wildlife,kurumbapatti-zoological-park,"Kurumbapatti Zoological Park",Tamil Nadu,4.6,2500
+wildlife,cauvery-north-wildlife-sanctuary,"Cauvery North Wildlife Sanctuary",Tamil Nadu,4.7,2500
+wildlife,kallaperambur-lake-bird-sanctuary,"Kallaperambur Lake Bird Sanctuary",Tamil Nadu,4.4,2500
+wildlife,melaselvanur-kilaselvanur-bird-sanctuary,"Melaselvanur-Kilaselvanur Bird Sanctuary",Tamil Nadu,4.3,2500
+wildlife,gangaikondan-spotted-deer-sanctuary,"Gangaikondan Spotted Deer Sanctuary",Tamil Nadu,4.5,2500
+wildlife,kazhuveli-bird-sanctuary,"Kazhuveli Bird Sanctuary",Tamil Nadu,4.6,2500
+wildlife,nanjarayan-tank-bird-sanctuary,"Nanjarayan Tank Bird Sanctuary",Tamil Nadu,4.5,2500
+wildlife,sakkarakottai-bird-sanctuary,"Sakkarakottai Bird Sanctuary",Tamil Nadu,4.3,2500
+wildlife,therthangal-bird-sanctuary,"Therthangal Bird Sanctuary",Tamil Nadu,4.4,2500
+wildlife,mahavir-harina-vanasthali-national-park,"Mahavir Harina Vanasthali National Park",Telangana,4.3,2500
+wildlife,kasu-brahmananda-reddy-national-park,"Kasu Brahmananda Reddy National Park",Telangana,4.2,2500
+wildlife,pranahita-wildlife-sanctuary,"Pranahita Wildlife Sanctuary",Telangana,4.3,2500
+wildlife,kawal-wildlife-sanctuary,"Kawal Wildlife Sanctuary",Telangana,4.6,2500
+wildlife,shivaram-wildlife-sanctuary,"Shivaram Wildlife Sanctuary",Telangana,4.4,2500
+wildlife,pakhal-wildlife-sanctuary,"Pakhal Wildlife Sanctuary",Telangana,4.5,2500
+wildlife,sepahijala-wildlife-sanctuary,"Sepahijala Wildlife Sanctuary",Tripura,4.8,2500
+wildlife,rajbari-national-park,"Rajbari National Park",Tripura,4.7,2500
+wildlife,trishna-wildlife-sanctuary,"Trishna Wildlife Sanctuary",Tripura,4.7,2500
+wildlife,rowa-wildlife-sanctuary,"Rowa Wildlife Sanctuary",Tripura,4.6,2500
+wildlife,pilibhit-tiger-reserve,"Pilibhit Tiger Reserve",Uttar Pradesh,4.4,2500
+wildlife,dudhwa-national-park,"Dudhwa National Park",Uttar Pradesh,4.7,2500
+wildlife,bakhira-sanctuary,"Bakhira Sanctuary",Uttar Pradesh,4.3,2500
+wildlife,nawabganj-bird-sanctuary,"Nawabganj Bird Sanctuary",Uttar Pradesh,4.6,2500
+wildlife,samaspur-sanctuary,"Samaspur Sanctuary",Uttar Pradesh,4.4,2500
+wildlife,hastinapur-sanctuary,"Hastinapur Sanctuary",Uttar Pradesh,4.2,2500
+wildlife,okhla-sanctuary,"Okhla Sanctuary",Uttar Pradesh,4.8,2500
+wildlife,kaimoor-sanctuary,"Kaimoor Sanctuary",Uttar Pradesh,4.3,2500
+wildlife,shaheed-ashfaq-ullah-khan-prani-udyan,"Shaheed Ashfaq Ullah Khan Prani Udyan",Uttar Pradesh,4.5,2500
+wildlife,sandi-bird-sanctuary,"Sandi Bird Sanctuary",Uttar Pradesh,4.2,2500
+wildlife,vijai-sagar-sanctuary,"Vijai Sagar Sanctuary",Uttar Pradesh,4.6,2500
+wildlife,parvati-arga-bird-sanctuary,"Parvati Arga Bird Sanctuary",Uttar Pradesh,4.1,2500
+wildlife,patna-bird-sanctuary,"Patna Bird Sanctuary",Uttar Pradesh,4.4,2500
+wildlife,shekha-bird-sanctuary,"Shekha Bird Sanctuary",Uttar Pradesh,4.6,2500
+wildlife,surha-tal-bird-sanctuary,"Surha Tal Bird Sanctuary",Uttar Pradesh,4.6,2500
+wildlife,saman-bird-sanctuary,"Saman Bird Sanctuary",Uttar Pradesh,4.1,2500
+wildlife,valley-of-flowers-national-park,"Valley of Flowers National Park",Uttarakhand,4.4,2500
+wildlife,nanda-devi-national-park,"Nanda Devi National Park",Uttarakhand,4.7,2500
+wildlife,nanda-devi-and-valley-of-flowers-national-parks,"Nanda Devi and Valley of Flowers National Parks",Uttarakhand,4.3,2500
+wildlife,mussoorie-wildlife-sanctuary,"Mussoorie Wildlife Sanctuary",Uttarakhand,4.4,2500
+wildlife,sonanadi-wildlife-sanctuary,"Sonanadi Wildlife Sanctuary",Uttarakhand,4.4,2500
+wildlife,sundarbans-national-park,"Sundarbans National Park",West Bengal,4.3,2500
+wildlife,singalila-national-park,"Singalila National Park",West Bengal,4.2,2500
+wildlife,raiganj-wildlife-sanctuary,"Raiganj Wildlife Sanctuary",West Bengal,4.7,2500
+wildlife,bethuadahari-wildlife-sanctuary,"Bethuadahari Wildlife Sanctuary",West Bengal,4.6,2500
+wildlife,bibhutibhushan-wildlife-sanctuary,"Bibhutibhushan Wildlife Sanctuary",West Bengal,4.7,2500
+wildlife,chapramari-wildlife-sanctuary,"Chapramari Wildlife Sanctuary",West Bengal,4.6,2500
+wildlife,mahananda-wildlife-sanctuary,"Mahananda Wildlife Sanctuary",West Bengal,4.5,2500
+wildlife,ramnabagan-wildlife-sanctuary,"Ramnabagan Wildlife Sanctuary",West Bengal,4.1,2500
+wildlife,ballabhpur-wildlife-sanctuary,"Ballabhpur Wildlife Sanctuary",West Bengal,4.4,2500
+wildlife,jungle-mahal-zoological-park,"Jungle Mahal Zoological Park",West Bengal,4.6,2500
+wildlife,senchal-wildlife-sanctuary,"Senchal Wildlife Sanctuary",West Bengal,4.6,2500
+wildlife,chintamoni-kar-bird-sanctuary,"Chintamoni Kar Bird Sanctuary",West Bengal,4.3,2500
+wildlife,lothian-island-wildlife-sanctuary,"Lothian Island Wildlife Sanctuary",West Bengal,4.3,2500
+wildlife,haliday-island-wildlife-sanctuary,"Haliday Island Wildlife Sanctuary",West Bengal,4.2,2500
+wildlife,jore-pokhri-wildlife-sanctuary,"Jore Pokhri Wildlife Sanctuary",West Bengal,4.6,2500

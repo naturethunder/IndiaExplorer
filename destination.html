@@ -43,6 +43,8 @@
     media="print" onload="this.media='all'" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/glass-immersive.css" />
   <link rel="stylesheet" href="css/destination-immersive.css" />
   <link rel="stylesheet" href="js/leaflet.css" />
   <script src="js/leaflet.js" defer></script>
@@ -51,7 +53,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 
-<body class="dest-immersive">
+<body class="dest-immersive glass-immersive">
 
   <!-- Immersive fixed background + cinematic overlay -->
   <div class="dest-immersive-bg" aria-hidden="true"></div>
@@ -82,7 +84,7 @@
       </div>
       <!-- Breadcrumb & CTA -->
       <div class="flex items-center gap-3">
-        <nav aria-label="Breadcrumb" class="hidden lg:block">
+        <div role="navigation" aria-label="Breadcrumb" class="hidden lg:block">
           <ol class="flex items-center gap-1 text-xs text-gray-400 list-none p-0 m-0">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li aria-hidden="true" class="mx-1 text-gray-600">/</li>
@@ -90,7 +92,7 @@
             <li aria-hidden="true" class="mx-1 text-gray-600">/</li>
             <li><span id="crumbName" class="text-white font-medium" aria-current="page">...</span></li>
           </ol>
-        </nav>
+        </div>
       </div>
     </div>
   </nav>
@@ -112,24 +114,20 @@
   <!-- MAIN CONTENT -->
   <main id="main" style="display:none">
 
-    <!-- HERO: Single cinematic full-viewport image -->
+    <!-- HERO: Clean cinematic banner image -->
     <div class="dest-hero pt-16" role="banner">
       <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" />
-      <div id="heroSlides" class="dest-hero-slides"></div>
       <div class="dest-hero-overlay" aria-hidden="true"></div>
-      <button id="heroPrev" class="hero-car-btn hero-car-prev" aria-label="Previous photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
-      <button id="heroNext" class="hero-car-btn hero-car-next" aria-label="Next photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
-      <div id="heroDots" class="hero-car-dots" role="tablist" aria-label="Photo navigation"></div>
-      <div class="absolute inset-0 flex flex-col justify-end p-6 max-w-7xl mx-auto w-full" style="pointer-events:none">
-        <div class="text-white" style="pointer-events:auto">
-          <div class="flex items-center gap-2 mb-2">
+      <div class="dest-hero-content absolute inset-0 flex flex-col justify-center items-center p-6 max-w-5xl mx-auto w-full text-center" style="pointer-events:none">
+        <div class="text-white flex flex-col items-center" style="pointer-events:auto">
+          <div class="flex items-center justify-center gap-2.5 mb-3">
             <a id="heroType" href="#" class="badge bg-primary text-white text-xs capitalize"></a>
             <span id="heroBadge"
               class="badge bg-white/20 backdrop-blur-sm text-white border border-white/30 text-xs"></span>
           </div>
-          <h1 id="heroTitle" class="font-display text-white mb-1"
-            style="font-size:clamp(2rem,5vw,3rem);line-height:1.1"></h1>
-          <p id="heroTagline" class="text-white/80 text-base max-w-2xl"></p>
+          <h1 id="heroTitle" class="font-display text-white mb-2"
+            style="font-size:clamp(2.6rem,6.5vw,4.8rem);line-height:1.08"></h1>
+          <p id="heroTagline" class="text-white/90 text-base sm:text-lg max-w-2xl text-center"></p>
         </div>
       </div>
     </div>

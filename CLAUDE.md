@@ -33,6 +33,9 @@ frosted glass panels, fixed cinematic background images, emerald accent glows, a
 > **⚠️ Strict Real Photos Policy (Zero Picsum / Fake Stock Rule).**
 > `picsum.photos` and random stock image fallbacks have been completely eradicated from `destination.js`,
 > `home.js`, `finder.js`, hero cover layers, and data files. If a place has 3 real photos, it renders strictly 3 real photos. An automated & manual audit filtered out all PDF document scans, magazine articles, insect diagrams, and dictionary entry images.
+>
+> **Multi-Provider Image Pipeline (`scripts/images/`):**
+> High-resolution verified photography powered by **Pexels & Unsplash APIs** with SQLite caching and non-blocking rate limits. All top priority destinations have been migrated to 100% verified Pexels & Unsplash photography with landmark-specific place matching.
 
 ## Architecture (the load-bearing decisions)
 

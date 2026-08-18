@@ -1,0 +1,244 @@
+{
+  "runId": "audit_1787081634912",
+  "timestamp": "2026-08-18T19:33:54.912Z",
+  "summary": {
+    "totalImages": 732,
+    "level1": {
+      "ok": 467,
+      "missingUrl": 0,
+      "malformedUrl": 0,
+      "duplicateUrl": 265,
+      "placeholder": 0,
+      "invalidLocalPath": 0
+    },
+    "level2": {
+      "ok": 467,
+      "broken": 0,
+      "wrongMime": 0,
+      "timeout": 0,
+      "error": 0
+    },
+    "level3": {
+      "ok": 0,
+      "lowResolution": 0,
+      "oversized": 0,
+      "perceptualDuplicates": 0,
+      "downloadError": 0
+    }
+  },
+  "level1": {
+    "stats": {
+      "total": 732,
+      "ok": 467,
+      "missingUrl": 0,
+      "malformedUrl": 0,
+      "duplicateUrl": 265,
+      "placeholder": 0,
+      "invalidLocalPath": 0
+    },
+    "samples": {
+      "missingUrl": [],
+      "malformedUrl": [],
+      "placeholder": [],
+      "duplicateUrl": [
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "gallery[4]",
+          "url": "https://images.pexels.com/photos/36737801/pexels-photo-36737801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Kanatal",
+          "type": "gallery",
+          "issue": "Duplicate URL",
+          "count": 3
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[1].photos[0]",
+          "url": "https://images.pexels.com/photos/9290337/pexels-photo-9290337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Tehri Lake",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[1].photos[1]",
+          "url": "https://images.pexels.com/photos/8055260/pexels-photo-8055260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Tehri Lake",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[3].image",
+          "url": "https://images.unsplash.com/photo-1689676452888-c9ccc1896e96?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
+          "name": "Dhanaulti",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[3].photos[0]",
+          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
+          "name": "Dhanaulti",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 4
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[3].photos[2]",
+          "url": "https://images.unsplash.com/photo-1653545709914-cbb1b2748e13?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
+          "name": "Dhanaulti",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[4].image",
+          "url": "https://images.pexels.com/photos/38329795/pexels-photo-38329795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Chamba Village",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[4].photos[0]",
+          "url": "https://images.pexels.com/photos/36908034/pexels-photo-36908034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Chamba Village",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[5].image",
+          "url": "https://images.pexels.com/photos/9290337/pexels-photo-9290337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "New Tehri Town",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[5].photos[2]",
+          "url": "https://images.pexels.com/photos/8055260/pexels-photo-8055260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "New Tehri Town",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[6].image",
+          "url": "https://images.unsplash.com/photo-1689676452888-c9ccc1896e96?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RWNvJTIwUGFyayUyMERoYW5hdWx0aSUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM2N3ww&ixlib=rb-4.1.0&q=85",
+          "name": "Eco Park Dhanaulti",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[6].photos[0]",
+          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8RWNvJTIwUGFyayUyMERoYW5hdWx0aSUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM2N3ww&ixlib=rb-4.1.0&q=85",
+          "name": "Eco Park Dhanaulti",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 4
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[7].photos[0]",
+          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TmFnJTIwVGliYmElMjBUcmVrJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzcxfDA&ixlib=rb-4.1.0&q=85",
+          "name": "Nag Tibba Trek",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 4
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[10].image",
+          "url": "https://images.pexels.com/photos/36908034/pexels-photo-36908034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Pantwari Village",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[10].photos[0]",
+          "url": "https://images.pexels.com/photos/38329795/pexels-photo-38329795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Pantwari Village",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[11].image",
+          "url": "https://images.unsplash.com/photo-1653545709914-cbb1b2748e13?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8QXBwbGUlMjBPcmNoYXJkJTIwV2FsayUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM4OHww&ixlib=rb-4.1.0&q=85",
+          "name": "Apple Orchard Walk",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "hotels[0].image",
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
+          "name": "GMVN",
+          "type": "hotel",
+          "issue": "Duplicate URL",
+          "count": 5
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "hotels[1].image",
+          "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
+          "name": "हिमालयन स्प्लेंडर रिजॉर्ट",
+          "type": "hotel",
+          "issue": "Duplicate URL",
+          "count": 5
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "hotels[2].image",
+          "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1280&q=80",
+          "name": "Camp Thangal",
+          "type": "hotel",
+          "issue": "Duplicate URL",
+          "count": 4
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "hotels[3].image",
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
+          "name": "Apple Orchard Cottages",
+          "type": "hotel",
+          "issue": "Duplicate URL",
+          "count": 3
+        }
+      ],
+      "invalidLocalPath": []
+    }
+  },
+  "level2": {
+    "stats": {
+      "total": 467,
+      "ok": 467,
+      "broken": 0,
+      "wrongMime": 0,
+      "timeout": 0,
+      "error": 0
+    },
+    "samples": {
+      "broken": [],
+      "wrongMime": [],
+      "timeout": []
+    }
+  },
+  "level3": null
+}

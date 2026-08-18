@@ -60,7 +60,11 @@ body.dest-immersive {
 /* JS dynamically updates background-image per-destination   */
 .dest-immersive-bg {
   position: fixed;
-  inset: 0;
+  top: -5%;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+  height: 110%;
   z-index: 0;
   background-image: url('../images/kanatal-immersive-bg.png');
   background-size: cover;
@@ -86,6 +90,7 @@ body.dest-immersive {
 
 /* ─── Z-LAYER MANAGEMENT ────────────────────────────────── */
 body.dest-immersive #content,
+body.dest-immersive #main,
 body.dest-immersive #notFound,
 body.dest-immersive #placeModal,
 body.dest-immersive .mobile-nav {
@@ -173,64 +178,83 @@ body.dest-immersive .nav-glass .btn.btn-primary:hover {
   transform: translateY(-1px);
 }
 
-/* ─── HERO — Cinematic Single Image Hero ───────────────── */
+/* ─── HERO — Cinematic Destination Banner ───────────────── */
 body.dest-immersive .dest-hero {
-  height: 100vh;
-  min-height: 640px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: transparent;
+  height: 64vh;
+  min-height: 480px;
+  max-height: 580px;
   position: relative;
   overflow: hidden;
-}
-
-/* Hide hero carousel controls in favor of cleaner single hero image */
-body.dest-immersive .dest-hero-img,
-body.dest-immersive .dest-hero-slides,
-body.dest-immersive .dest-hero-overlay,
-body.dest-immersive .hero-car-btn,
-body.dest-immersive .hero-car-dots,
-body.dest-immersive .hero-photo-counter {
-  display: none !important;
-}
-
-/* Hero container styling */
-body.dest-immersive .dest-hero>.absolute {
-  position: relative !important;
-  inset: auto !important;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 960px;
-  padding: 0 1.5rem;
-  z-index: 3;
+  background: transparent;
 }
 
-body.dest-immersive .dest-hero>.absolute>div {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body.dest-immersive .dest-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  display: block;
 }
 
-/* Hero title — Bodoni Moda luxury serif */
+body.dest-immersive .dest-hero-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+body.dest-immersive .dest-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(circle at center, rgba(2, 4, 8, 0.12) 0%, rgba(2, 4, 8, 0.45) 100%),
+              linear-gradient(180deg, rgba(2, 4, 8, 0.25) 0%, rgba(2, 4, 8, 0.05) 45%, rgba(2, 4, 8, 0.70) 100%);
+  pointer-events: none;
+}
+
+/* Hero container styling — centered luxury editorial */
+body.dest-immersive .dest-hero > .dest-hero-content,
+body.dest-immersive .dest-hero > .absolute {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 3rem 1.5rem !important;
+  z-index: 10 !important;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body.dest-immersive .dest-hero > .dest-hero-content > div,
+body.dest-immersive .dest-hero > .absolute > div {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Hero title — Bodoni Moda luxury serif, centered & glowing */
 body.dest-immersive #heroTitle {
-  font-family: 'Bodoni Moda', 'Georgia', serif !important;
+  font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
   font-weight: 800 !important;
-  font-size: clamp(2.8rem, 7.5vw, 6rem) !important;
-  letter-spacing: 0.04em !important;
+  font-size: clamp(2.8rem, 6.5vw, 5rem) !important;
+  letter-spacing: -0.015em !important;
   color: #FFFFFF !important;
+  text-align: center !important;
   text-shadow:
-    0 2px 40px rgba(0, 0, 0, 0.6),
-    0 1px 0 rgba(0, 0, 0, 0.4);
-  line-height: 1.0 !important;
-  text-transform: uppercase;
-  margin-bottom: 0.4em;
-  animation: heroFadeUp 1s var(--imm-ease) both;
+    0 8px 32px rgba(0, 0, 0, 0.75),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+  line-height: 1.08 !important;
+  text-transform: none;
+  margin-bottom: 0.5rem;
+  animation: heroFadeUp 0.8s var(--imm-ease) both;
 }
 
 @keyframes heroFadeUp {
@@ -245,32 +269,38 @@ body.dest-immersive #heroTitle {
   }
 }
 
-/* Tagline — Jost italic */
+/* Tagline — Jost, centered */
 body.dest-immersive #heroTagline {
   font-family: 'Jost', sans-serif;
-  font-size: clamp(0.95rem, 2.2vw, 1.3rem) !important;
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.75) !important;
-  margin-bottom: 2rem;
-  animation: heroFadeUp 1s 0.2s var(--imm-ease) both;
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.90) !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+  max-width: 40rem;
+  line-height: 1.55;
+  animation: heroFadeUp 0.8s 0.15s var(--imm-ease) both;
 }
 
 
 body.dest-immersive #heroType,
 body.dest-immersive #heroBadge {
-  background: rgba(255, 255, 255, 0.10) !important;
-  backdrop-filter: var(--imm-blur-sm);
-  -webkit-backdrop-filter: var(--imm-blur-sm);
-  border: 1px solid var(--imm-border-md) !important;
-  color: var(--imm-text) !important;
-  padding: 0.3rem 1rem;
-  font-size: 0.72rem;
+  background: rgba(255, 255, 255, 0.14) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #FFFFFF !important;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
   font-family: 'Jost', sans-serif;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: 100px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* ─── STATS BAR ─────────────────────────────────────────── */
@@ -310,19 +340,17 @@ body.dest-immersive #statsBar .text-amber-400 {
   color: var(--imm-gold);
 }
 
-/* ─── STICKY TAB BAR — Airbnb/Figma-style bottom indicator ─── */
+/* ─── STICKY TAB BAR — Translucent Glass Indicator ─── */
 #destNavContainer {
   position: sticky;
   top: 64px;
   z-index: 500;
   width: 100%;
-  background: rgba(2, 2, 3, 0.95);
-  backdrop-filter: var(--imm-blur-lg);
-  -webkit-backdrop-filter: var(--imm-blur-lg);
-  border-bottom: 1px solid var(--imm-border);
-  box-shadow:
-    0 1px 0 var(--imm-border),
-    0 4px 24px rgba(0, 0, 0, 0.5);
+  background: rgba(10, 15, 22, 0.70);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   margin-bottom: 0;
 }
 

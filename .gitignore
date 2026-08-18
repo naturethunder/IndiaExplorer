@@ -16,6 +16,15 @@ desktop.ini
 # Bulk ingest caches
 scripts/bulk/cache/
 
+# Environment files
+.env
+.env.local
+.env.secret
+
+# Image cache database & reports
+data/*.sqlite
+data/*.db
+
 # Python cache
 __pycache__/
 *.pyc

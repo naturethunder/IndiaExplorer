@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndiaExplore Image Audit Report</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #0f172a; color: #e2e8f0; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { color: #10b981; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+    h2 { color: #38bdf8; margin-top: 30px; }
+    h3 { color: #fbbf24; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 15px; }
+    .card.ok { border-left: 4px solid #10b981; }
+    .card.warn { border-left: 4px solid #f59e0b; }
+    .card.error { border-left: 4px solid #ef4444; }
+    .card h4 { margin: 0 0 5px 0; font-size: 14px; color: #94a3b8; }
+    .card .value { font-size: 28px; font-weight: bold; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; background: #1e293b; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #334155; }
+    th { background: #0f172a; color: #94a3b8; font-weight: 600; }
+    tr:hover { background: #1e293b; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+    .badge-ok { background: #064e3b; color: #10b981; }
+    .badge-warn { background: #78350f; color: #fbbf24; }
+    .badge-error { background: #7f1d1d; color: #f87171; }
+    .url { font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .confidence { font-weight: bold; }
+    .confidence.high { color: #10b981; }
+    .confidence.med { color: #fbbf24; }
+    .confidence.low { color: #ef4444; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 IndiaExplore Image Audit Report</h1>
+    <p>Generated: 19/8/2026, 1:04:10 am</p>
+    <p>Run ID: <code>audit_1787081634912</code></p>
+
+    <h2>Summary</h2>
+    <div class="grid">
+      <div class="card ok"><h4>Total Images</h4><div class="value">732</div></div>
+      <div class="card ok"><h4>Level 1 OK</h4><div class="value">467</div></div>
+      <div class="card warn"><h4>Placeholders</h4><div class="value">0</div></div>
+      <div class="card error"><h4>Broken (L2)</h4><div class="value">0</div></div>
+      <div class="card warn"><h4>Low Resolution</h4><div class="value">0</div></div>
+      <div class="card error"><h4>Perceptual Duplicates</h4><div class="value">0</div></div>
+    </div>
+
+    
+
+    
+
+    <h2>Level 1 Details</h2>
+    <h3>Placeholders (0)</h3>
+    <table>
+      <thead><tr><th>Destination</th><th>Field</th><th>URL</th><th>Type</th></tr></thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+
+    <h3>Broken URLs (0)</h3>
+    <table>
+      <thead><tr><th>Destination</th><th>Field</th><th>URL</th><th>Status</th></tr></thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+
+  </div>
+</body>
+</html>
