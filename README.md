@@ -23,8 +23,8 @@ open a per-destination page with a photo hero, places to visit, stays by budget,
 ## Quick start
 
 ```bash
-node scripts/serve.js          # → http://localhost:8080
-# node scripts/serve.js 3000   # pick a different port
+node scripts/serve.js          # → http://localhost:8080 (Start local web server)
+node scripts/qa-audit.js        # → Run complete national QA audit suite & check image integrity
 ```
 
 Then open **http://localhost:8080/**. A server is required (not `file://`) because the site
