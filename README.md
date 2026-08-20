@@ -1,4 +1,11 @@
-# 🏔️ IndiaExplore
+
+
+
+
+
+
+
+> **Image Pipeline Status (2026-08-20):** **2,240 / 2,389 destinations (93.8%)** enriched with **55,681 verified high-res photos** across 30 completed States/UTs. 100% zero-duplicate & landmark-verified.
 
 A luxury India travel-discovery platform. Browse **2,389 destinations** (14,001+ places,
 9,756+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and

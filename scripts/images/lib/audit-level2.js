@@ -27,30 +27,45 @@ class HttpClient {
   }
 
   async request(url, options = {}) {
-    const method = options.method || 'HEAD';
-    const headers = { 'User-Agent': 'IndiaExplore Image Auditor/1.0', ...options.headers };
+    let method = options.method || 'HEAD';
+    const headers = { 
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+      ...options.headers 
+    };
 
     let attempts = 0;
     let lastError;
 
-    while (attempts <= (this.retry?.attempts || 3)) {
+    while (attempts <= (this.retry?.attempts || 2)) {
       attempts++;
       try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), this.timeout);
+        const timeoutId = setTimeout(() => controller.abort(), this.timeout || 8000);
+
+        let reqHeaders = { ...headers };
+        if (method === 'GET') {
+          reqHeaders['Range'] = 'bytes=0-1024';
+        }
 
         const response = await fetch(url, {
           method,
-          headers,
+          headers: reqHeaders,
           redirect: this.followRedirects ? 'follow' : 'manual',
           signal: controller.signal,
         });
 
         clearTimeout(timeoutId);
 
+        // If HEAD was rejected with 403/405/404, retry once with GET (Range 0-1024)
+        if (method === 'HEAD' && (response.status === 403 || response.status === 405 || response.status === 400)) {
+          method = 'GET';
+          continue;
+        }
+
         // Check retryable status codes
-        if (this.retry?.retryOn?.includes(response.status) && attempts <= (this.retry?.attempts || 3)) {
-          const delay = (this.retry?.backoff || 1000) * Math.pow(this.retry?.backoffMultiplier || 2, attempts - 1);
+        if (this.retry?.retryOn?.includes(response.status) && attempts <= (this.retry?.attempts || 2)) {
+          const delay = (this.retry?.backoff || 500) * Math.pow(this.retry?.backoffMultiplier || 2, attempts - 1);
           await this.sleep(delay);
           continue;
         }

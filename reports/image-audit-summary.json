@@ -1,18 +1,18 @@
 {
-  "runId": "audit_1787081634912",
-  "timestamp": "2026-08-18T19:33:54.912Z",
+  "runId": "audit_1787171856931",
+  "timestamp": "2026-08-19T20:37:36.931Z",
   "summary": {
-    "totalImages": 732,
+    "totalImages": 78840,
     "level1": {
-      "ok": 467,
+      "ok": 10958,
       "missingUrl": 0,
       "malformedUrl": 0,
-      "duplicateUrl": 265,
-      "placeholder": 0,
+      "duplicateUrl": 66189,
+      "placeholder": 1693,
       "invalidLocalPath": 0
     },
     "level2": {
-      "ok": 467,
+      "ok": 0,
       "broken": 0,
       "wrongMime": 0,
       "timeout": 0,
@@ -28,27 +28,244 @@
   },
   "level1": {
     "stats": {
-      "total": 732,
-      "ok": 467,
+      "total": 78840,
+      "ok": 10958,
       "missingUrl": 0,
       "malformedUrl": 0,
-      "duplicateUrl": 265,
-      "placeholder": 0,
+      "duplicateUrl": 66189,
+      "placeholder": 1693,
       "invalidLocalPath": 0
     },
     "samples": {
       "missingUrl": [],
       "malformedUrl": [],
-      "placeholder": [],
+      "placeholder": [
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "heroImage",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Batasia_Loop_of_Darjeeling_Himalayan_Railway.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Darjeeling",
+          "type": "hero",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "topPlaces[0].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Tiger_Hill_Darjeeling_West_Bengal_India_%283%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Tiger Hill Sunrise",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "topPlaces[4].image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Buddhist_Temple_Darjeeling_West_Bengal_India_%285%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Ghoom Monastery",
+          "type": "place",
+          "issue": "Placeholder image",
+          "isDuplicate": true
+        },
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "topPlaces[4].photos[0]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Buddhist_Temple_Darjeeling_West_Bengal_India_%285%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Ghoom Monastery",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": true
+        },
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "topPlaces[8].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Buddhist_Temple_Peace_Pagoda_Darjeeling_West_Bengal_India_%2810%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Japanese Peace Pagoda",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "darjeeling",
+          "fieldPath": "topPlaces[12].photos[1]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/DJ001_Pontia_daplidice_UN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Tinchuley Village",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "varanasi",
+          "fieldPath": "gallery[3]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bathing_Ghat_Banaras_India_1890.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Varanasi",
+          "type": "gallery",
+          "issue": "Placeholder image",
+          "isDuplicate": true
+        },
+        {
+          "destSlug": "varanasi",
+          "fieldPath": "topPlaces[0].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/India_-_Varanasi_puja_ceremony_-_1772.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Dashashwamedh Ghat Aarti",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "varanasi",
+          "fieldPath": "topPlaces[7].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Colours_of_India_-_Silk_yarn_waiting_to_be_made_into_saris.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Silk Weaving Workshop",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "varanasi",
+          "fieldPath": "topPlaces[11].photos[1]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Bharat_Mata_Mandir_Varanasi_India_-_panoramio_%283%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Bharat Mata Temple",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "kaziranga",
+          "fieldPath": "hotels[1].image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/The_great_Roosevelt_African_hunt_and_the_wild_animals_of_Africa_.._%28IA_greatrooseveltaf00lund%29.pdf/page1-500px-The_great_Roosevelt_African_hunt_and_the_wild_animals_of_Africa_.._%28IA_greatrooseveltaf00lund%29.pdf.jpg",
+          "name": "Wild Grass",
+          "type": "hotel",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "bikaner",
+          "fieldPath": "heroImage",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/20191211_Junagarh_Fort%2C_Bikaner%2C_India_1547_8077_DxO.jpg/1280px-20191211_Junagarh_Fort%2C_Bikaner%2C_India_1547_8077_DxO.jpg",
+          "name": "Bikaner",
+          "type": "hero",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "bikaner",
+          "fieldPath": "gallery[1]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/20191212_Junagarh_Fort%2C_Bikaner%2C_India_1507_8174_DxO.jpg/1280px-20191212_Junagarh_Fort%2C_Bikaner%2C_India_1507_8174_DxO.jpg",
+          "name": "Bikaner",
+          "type": "gallery",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "bikaner",
+          "fieldPath": "topPlaces[0].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/20191212_Junagarh_Fort%2C_Bikaner%2C_India_1524_8206.jpg/1280px-20191212_Junagarh_Fort%2C_Bikaner%2C_India_1524_8206.jpg",
+          "name": "Junagarh Fort",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "bikaner",
+          "fieldPath": "topPlaces[1].photos[1]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg/1280px-Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg",
+          "name": "Karni Mata Temple",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "chopta",
+          "fieldPath": "gallery[0]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/India_statue_of_nataraja.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Chopta",
+          "type": "gallery",
+          "issue": "Placeholder image",
+          "isDuplicate": true
+        },
+        {
+          "destSlug": "chopta",
+          "fieldPath": "topPlaces[2].photos[1]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Deoria_Taal_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Deoria Tal",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "chopta",
+          "fieldPath": "topPlaces[2].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Deoria_Tal_Chandrashila_Chaukamba_reflection.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+          "name": "Deoria Tal",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "dalhousie",
+          "fieldPath": "topPlaces[2].photos[2]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/St._JOHN%27S_CHURCH_CHURCH_OF_NORTH_INDIA_ESTD._1863.jpg/1280px-St._JOHN%27S_CHURCH_CHURCH_OF_NORTH_INDIA_ESTD._1863.jpg",
+          "name": "St. John’s Church",
+          "type": "place-photo",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        },
+        {
+          "destSlug": "bir-billing",
+          "fieldPath": "gallery[4]",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Five_miles_off%3B_%28IA_fivemilesoff00dibd%29.pdf/page1-960px-Five_miles_off%3B_%28IA_fivemilesoff00dibd%29.pdf.jpg",
+          "name": "Bir Billing",
+          "type": "gallery",
+          "issue": "Placeholder image",
+          "isDuplicate": false
+        }
+      ],
       "duplicateUrl": [
         {
           "destSlug": "kanatal",
-          "fieldPath": "gallery[4]",
-          "url": "https://images.pexels.com/photos/36737801/pexels-photo-36737801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "fieldPath": "gallery[1]",
+          "url": "https://images.pexels.com/photos/13353126/pexels-photo-13353126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Kanatal",
           "type": "gallery",
           "issue": "Duplicate URL",
-          "count": 3
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "gallery[3]",
+          "url": "https://images.pexels.com/photos/16871285/pexels-photo-16871285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Kanatal",
+          "type": "gallery",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[0].image",
+          "url": "https://images.pexels.com/photos/36737801/pexels-photo-36737801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Surkanda Devi Temple",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 7
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[0].photos[0]",
+          "url": "https://images.pexels.com/photos/36737801/pexels-photo-36737801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Surkanda Devi Temple",
+          "type": "place-photo",
+          "issue": "Duplicate URL",
+          "count": 7
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[1].image",
+          "url": "https://images.pexels.com/photos/9290337/pexels-photo-9290337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Tehri Lake",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
         },
         {
           "destSlug": "kanatal",
@@ -61,9 +278,18 @@
         },
         {
           "destSlug": "kanatal",
-          "fieldPath": "topPlaces[1].photos[1]",
-          "url": "https://images.pexels.com/photos/8055260/pexels-photo-8055260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "name": "Tehri Lake",
+          "fieldPath": "topPlaces[2].image",
+          "url": "https://images.pexels.com/photos/36122101/pexels-photo-36122101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Kodia Jungle",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[2].photos[0]",
+          "url": "https://images.pexels.com/photos/36122101/pexels-photo-36122101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Kodia Jungle",
           "type": "place-photo",
           "issue": "Duplicate URL",
           "count": 2
@@ -71,7 +297,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[3].image",
-          "url": "https://images.unsplash.com/photo-1689676452888-c9ccc1896e96?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
+          "url": "https://images.pexels.com/photos/29887879/pexels-photo-29887879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Dhanaulti",
           "type": "place",
           "issue": "Duplicate URL",
@@ -80,16 +306,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[3].photos[0]",
-          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
-          "name": "Dhanaulti",
-          "type": "place-photo",
-          "issue": "Duplicate URL",
-          "count": 4
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "topPlaces[3].photos[2]",
-          "url": "https://images.unsplash.com/photo-1653545709914-cbb1b2748e13?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8RGhhbmF1bHRpJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzU0fDA&ixlib=rb-4.1.0&q=85",
+          "url": "https://images.pexels.com/photos/29887879/pexels-photo-29887879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Dhanaulti",
           "type": "place-photo",
           "issue": "Duplicate URL",
@@ -98,7 +315,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[4].image",
-          "url": "https://images.pexels.com/photos/38329795/pexels-photo-38329795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "url": "https://images.pexels.com/photos/37791800/pexels-photo-37791800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Chamba Village",
           "type": "place",
           "issue": "Duplicate URL",
@@ -107,7 +324,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[4].photos[0]",
-          "url": "https://images.pexels.com/photos/36908034/pexels-photo-36908034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "url": "https://images.pexels.com/photos/37791800/pexels-photo-37791800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Chamba Village",
           "type": "place-photo",
           "issue": "Duplicate URL",
@@ -116,7 +333,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[5].image",
-          "url": "https://images.pexels.com/photos/9290337/pexels-photo-9290337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "url": "https://images.pexels.com/photos/15609756/pexels-photo-15609756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "New Tehri Town",
           "type": "place",
           "issue": "Duplicate URL",
@@ -124,8 +341,8 @@
         },
         {
           "destSlug": "kanatal",
-          "fieldPath": "topPlaces[5].photos[2]",
-          "url": "https://images.pexels.com/photos/8055260/pexels-photo-8055260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "fieldPath": "topPlaces[5].photos[0]",
+          "url": "https://images.pexels.com/photos/15609756/pexels-photo-15609756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "New Tehri Town",
           "type": "place-photo",
           "issue": "Duplicate URL",
@@ -134,7 +351,7 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[6].image",
-          "url": "https://images.unsplash.com/photo-1689676452888-c9ccc1896e96?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RWNvJTIwUGFyayUyMERoYW5hdWx0aSUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM2N3ww&ixlib=rb-4.1.0&q=85",
+          "url": "https://images.pexels.com/photos/26847150/pexels-photo-26847150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Eco Park Dhanaulti",
           "type": "place",
           "issue": "Duplicate URL",
@@ -143,102 +360,52 @@
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[6].photos[0]",
-          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8RWNvJTIwUGFyayUyMERoYW5hdWx0aSUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM2N3ww&ixlib=rb-4.1.0&q=85",
+          "url": "https://images.pexels.com/photos/26847150/pexels-photo-26847150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Eco Park Dhanaulti",
           "type": "place-photo",
           "issue": "Duplicate URL",
-          "count": 4
+          "count": 2
+        },
+        {
+          "destSlug": "kanatal",
+          "fieldPath": "topPlaces[7].image",
+          "url": "https://images.pexels.com/photos/877263/pexels-photo-877263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Nag Tibba Trek",
+          "type": "place",
+          "issue": "Duplicate URL",
+          "count": 2
         },
         {
           "destSlug": "kanatal",
           "fieldPath": "topPlaces[7].photos[0]",
-          "url": "https://images.unsplash.com/photo-1689676474552-3c5df0ec6b56?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TmFnJTIwVGliYmElMjBUcmVrJTIwVXR0YXJha2hhbmQlMjBJbmRpYXxlbnwwfDB8fHwxNzg3MDc0MzcxfDA&ixlib=rb-4.1.0&q=85",
+          "url": "https://images.pexels.com/photos/877263/pexels-photo-877263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "name": "Nag Tibba Trek",
           "type": "place-photo",
           "issue": "Duplicate URL",
-          "count": 4
+          "count": 2
         },
         {
           "destSlug": "kanatal",
-          "fieldPath": "topPlaces[10].image",
-          "url": "https://images.pexels.com/photos/36908034/pexels-photo-36908034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "name": "Pantwari Village",
+          "fieldPath": "topPlaces[8].image",
+          "url": "https://images.pexels.com/photos/8416808/pexels-photo-8416808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Tehri Dam Viewpoint",
           "type": "place",
           "issue": "Duplicate URL",
           "count": 2
         },
         {
           "destSlug": "kanatal",
-          "fieldPath": "topPlaces[10].photos[0]",
-          "url": "https://images.pexels.com/photos/38329795/pexels-photo-38329795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "name": "Pantwari Village",
+          "fieldPath": "topPlaces[8].photos[0]",
+          "url": "https://images.pexels.com/photos/8416808/pexels-photo-8416808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "name": "Tehri Dam Viewpoint",
           "type": "place-photo",
           "issue": "Duplicate URL",
           "count": 2
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "topPlaces[11].image",
-          "url": "https://images.unsplash.com/photo-1653545709914-cbb1b2748e13?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8QXBwbGUlMjBPcmNoYXJkJTIwV2FsayUyMFV0dGFyYWtoYW5kJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzA3NDM4OHww&ixlib=rb-4.1.0&q=85",
-          "name": "Apple Orchard Walk",
-          "type": "place",
-          "issue": "Duplicate URL",
-          "count": 2
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "hotels[0].image",
-          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1280&q=80",
-          "name": "GMVN",
-          "type": "hotel",
-          "issue": "Duplicate URL",
-          "count": 5
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "hotels[1].image",
-          "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1280&q=80",
-          "name": "हिमालयन स्प्लेंडर रिजॉर्ट",
-          "type": "hotel",
-          "issue": "Duplicate URL",
-          "count": 5
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "hotels[2].image",
-          "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1280&q=80",
-          "name": "Camp Thangal",
-          "type": "hotel",
-          "issue": "Duplicate URL",
-          "count": 4
-        },
-        {
-          "destSlug": "kanatal",
-          "fieldPath": "hotels[3].image",
-          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1280&q=80",
-          "name": "Apple Orchard Cottages",
-          "type": "hotel",
-          "issue": "Duplicate URL",
-          "count": 3
         }
       ],
       "invalidLocalPath": []
     }
   },
-  "level2": {
-    "stats": {
-      "total": 467,
-      "ok": 467,
-      "broken": 0,
-      "wrongMime": 0,
-      "timeout": 0,
-      "error": 0
-    },
-    "samples": {
-      "broken": [],
-      "wrongMime": [],
-      "timeout": []
-    }
-  },
+  "level2": null,
   "level3": null
 }

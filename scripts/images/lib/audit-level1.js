@@ -11,9 +11,23 @@ const config = require('../config');
 
 const PLACEHOLDER_PATTERNS = config.audit.level1.placeholderPatterns;
 
+const JUNK_PATTERNS = [
+  '.pdf/',
+  '.pdf.jpg',
+  'map_showing',
+  '_map.jpg',
+  'locator_map',
+  'location_map',
+  'coat_of_arms',
+  'logo',
+  'diagram',
+  'document',
+  'page1-500px-thumbnail',
+  'ia_'
+];
+
 function normalizeUrl(url) {
   try {
-    // Remove query parameters for duplicate detection
     const u = new URL(url);
     u.search = '';
     u.hash = '';
@@ -23,9 +37,14 @@ function normalizeUrl(url) {
   }
 }
 
+function isJunkImage(url) {
+  const lower = (url || '').toLowerCase();
+  return JUNK_PATTERNS.some(p => lower.includes(p));
+}
+
 function isPlaceholder(url) {
-  const lower = url.toLowerCase();
-  return PLACEHOLDER_PATTERNS.some(p => lower.includes(p));
+  const lower = (url || '').toLowerCase();
+  return PLACEHOLDER_PATTERNS.some(p => lower.includes(p)) || isJunkImage(url);
 }
 
 function isLocalPath(url) {

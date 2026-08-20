@@ -40,6 +40,7 @@ async function main() {
   try {
     const engine = new RepairEngine(cache, {
       dryRun: !args.apply,
+      apply: args.apply === true,
       limit: args.limit,
       minConfidence: args.minConfidence || config.audit.level4.autoApplyThreshold,
       manualReviewThreshold: args.reviewThreshold || config.audit.level4.manualReviewThreshold,
@@ -80,27 +81,32 @@ function parseArgs(argv) {
 }
 
 function printRepairSummary(results) {
+  const autoApplied = results.autoApplied || [];
+  const manualReview = results.manualReview || [];
+  const rejected = results.rejected || [];
+  const failed = results.failed || [];
+
   console.log('\n================ REPAIR SUMMARY ================');
-  console.log(`Auto-applied: ${results.stats.autoApplied}`);
-  console.log(`Manual review: ${results.stats.manualReview}`);
-  console.log(`Failed: ${results.stats.failed}`);
-  console.log(`Skipped: ${results.stats.skipped}`);
+  console.log(`High Confidence (Auto-Applied/Ready): ${autoApplied.length}`);
+  console.log(`Manual review queue                 : ${manualReview.length}`);
+  console.log(`Rejected (Low Confidence)           : ${rejected.length}`);
+  console.log(`Failed                              : ${failed.length}`);
   console.log('================================================');
 
-  if (results.autoApplied.length > 0) {
-    console.log('\nAuto-applied changes:');
-    for (const r of results.autoApplied.slice(0, 10)) {
-      console.log(`  ${r.destSlug} / ${r.fieldPath}: ${r.oldUrl} -> ${r.newUrl} (conf: ${r.confidence})`);
+  if (autoApplied.length > 0) {
+    console.log('\nTop Candidates Sample:');
+    for (const r of autoApplied.slice(0, 10)) {
+      console.log(`  ${r.destSlug} / ${r.fieldPath} (${r.name}): ${r.provider} -> ${r.newUrl} (conf: ${r.confidence})`);
     }
-    if (results.autoApplied.length > 10) console.log(`  ... and ${results.autoApplied.length - 10} more`);
+    if (autoApplied.length > 10) console.log(`  ... and ${autoApplied.length - 10} more`);
   }
 
-  if (results.manualReview.length > 0) {
+  if (manualReview.length > 0) {
     console.log('\nManual review queue:');
-    for (const r of results.manualReview.slice(0, 10)) {
-      console.log(`  ${r.destSlug} / ${r.fieldPath}: ${r.issue} -> suggested: ${r.bestCandidate?.url} (conf: ${r.bestCandidate?.confidence})`);
+    for (const r of manualReview.slice(0, 10)) {
+      console.log(`  ${r.destSlug} / ${r.fieldPath} (${r.name}): ${r.issue} -> suggested: ${r.newUrl} (conf: ${r.confidence})`);
     }
-    if (results.manualReview.length > 10) console.log(`  ... and ${results.manualReview.length - 10} more`);
+    if (manualReview.length > 10) console.log(`  ... and ${manualReview.length - 10} more`);
   }
 }
 

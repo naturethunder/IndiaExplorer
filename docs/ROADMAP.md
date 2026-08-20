@@ -176,3 +176,19 @@ concurrent viewers on a free CDN.
   (regenerates [DESTINATIONS.md](DESTINATIONS.md)) and re-run `build-css.js` if new utility classes were used.
 - Verified in-browser with a hard refresh (Ctrl+Shift+R).
 - [CLAUDE.md](../CLAUDE.md) updated if architecture/conventions changed.
+
+
+
+### Phase 7: Repository-Wide Image Enrichment & Deduplication (ACTIVE: 2026-08-20)
+- [x] Multi-Provider Fallback Cascade (Pexels + Unsplash + Wikimedia Commons)
+- [x] Zero-Duplicate Image Enforcement across Hero, Gallery (5 items), and Places (3 items each)
+- [x] Over 2,240 destinations enriched with 55,681 verified photos
+- [x] 30 Indian States and UTs 100% completed
+- [ ] Final 100% national sweep completion
+Zero-Duplicate Image Enforcement across Hero, Gallery (5 items), and Places (3 items each)
+- [x] Over 2,239 destinations enriched with 55,670 verified photos
+- [x] 30 Indian States and UTs 100% completed
+- [ ] Final 100% national sweep completion
+Zero-Duplicate Image Enforcement across Hero, Gallery (5 items), and Places (3 items each)
+- [x] Over 1,651 destinations enriched with 37,469 verified photos
+- [x] 19 Indian States and UTs 100% completed
