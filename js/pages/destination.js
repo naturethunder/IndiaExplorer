@@ -991,16 +991,38 @@ function main(dest, idx) {
   }
 
   const allDestList = (idx && Array.isArray(idx.destinations)) ? idx.destinations : [];
-  let similar = allDestList.filter(function (d) {
-    return d && d.slug !== dest.slug && d.type === dest.type;
-  });
-  if (similar.length < 4 && allDestList.length > 0) {
-    const extra = allDestList.filter(function (d) {
-      return d && d.slug !== dest.slug && !similar.some(function (s) { return s.slug === d.slug; });
+  
+  function getSimilarDestinations() {
+    if (!allDestList.length) return [];
+    // 1. Same state and same type
+    const sameStateAndType = allDestList.filter(function (d) {
+      return d && d.slug !== dest.slug && d.type === dest.type && d.state === dest.state;
     });
-    similar = similar.concat(extra);
+    // 2. Same state other types
+    const sameStateOther = allDestList.filter(function (d) {
+      return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
+    });
+    // 3. Same type other states (top rated)
+    const sameTypeOther = allDestList.filter(function (d) {
+      return d && d.slug !== dest.slug && d.type === dest.type && d.state !== dest.state;
+    });
+    // 4. Any other popular destinations
+    const others = allDestList.filter(function (d) {
+      return d && d.slug !== dest.slug;
+    });
+
+    const pool = [].concat(sameStateAndType, sameStateOther, sameTypeOther, others);
+    const uniqueMap = new Map();
+    pool.forEach(function (d) {
+      if (d && d.slug && !uniqueMap.has(d.slug)) {
+        uniqueMap.set(d.slug, d);
+      }
+    });
+
+    return Array.from(uniqueMap.values()).slice(0, 4);
   }
-  similar = similar.slice(0, 4);
+
+  const similar = getSimilarDestinations();
 
   function resolveCardPhoto(d) {
     if (!d) return '';
@@ -1258,7 +1280,7 @@ function main(dest, idx) {
         clearProps: 'all',
         scrollTrigger: {
           trigger: '#similarSection',
-          start: 'top 95%',
+          start: 'top 98%',
           toggleActions: 'play none none none',
         },
       });
@@ -1272,14 +1294,16 @@ function main(dest, idx) {
         clearProps: 'all',
         scrollTrigger: {
           trigger: '#similarSection',
-          start: 'top 95%',
+          start: 'top 98%',
           toggleActions: 'play none none none',
         },
       });
 
       setTimeout(function () {
         if (window.ScrollTrigger) window.ScrollTrigger.refresh();
-      }, 300);
+        const cards = document.querySelectorAll('#similar-grid a');
+        cards.forEach(function (c) { c.style.opacity = '1'; });
+      }, 500);
     }
   }
 
