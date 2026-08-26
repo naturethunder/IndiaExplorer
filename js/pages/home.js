@@ -105,6 +105,51 @@ injectJsonLd(breadcrumbJsonLd([{ name: 'Home', path: 'index.html' }]));
   startTimer();
 })();
 
+// ─── Pre-populate grids with shimmer skeletons while index.json loads ─
+// UI/UX skill §3: progressive-loading — show skeleton instead of blank space
+function injectSkeletons() {
+  const heroGridIds = ['hills-grid', 'popular-grid'];
+  const trendId = 'trending-grid';
+  const seasonId = 'season-grid';
+  const miniId = 'explore-grid';
+  const budgetId = 'budget-grid';
+  const monthId = 'month-rail';
+
+  heroGridIds.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el && !el.children.length) {
+      el.innerHTML = [1,2,3,4].map(() =>
+        '<div class="skeleton-card skeleton-hero"></div>').join('');
+    }
+  });
+  const trend = document.getElementById(trendId);
+  if (trend && !trend.children.length) {
+    trend.innerHTML = [1,2,3,4,5,6].map(() =>
+      '<div class="skeleton-card skeleton-trend"></div>').join('');
+  }
+  const season = document.getElementById(seasonId);
+  if (season && !season.children.length) {
+    season.innerHTML = [1,2,3,4].map(() =>
+      '<div class="skeleton-card skeleton-season"></div>').join('');
+  }
+  const mini = document.getElementById(miniId);
+  if (mini && !mini.children.length) {
+    mini.innerHTML = [1,2,3,4,5,6].map(() =>
+      '<div class="skeleton-card skeleton-mini"></div>').join('');
+  }
+  const budget = document.getElementById(budgetId);
+  if (budget && !budget.children.length) {
+    budget.innerHTML = [1,2,3,4,5].map(() =>
+      '<div class="skeleton-card skeleton-budget"></div>').join('');
+  }
+  const month = document.getElementById(monthId);
+  if (month && !month.children.length) {
+    month.innerHTML = [1,2,3,4].map(() =>
+      '<div class="skeleton-card skeleton-trend"></div>').join('');
+  }
+}
+injectSkeletons();
+
 let idx;
 try {
   idx = await fetchIndex();
@@ -114,7 +159,7 @@ try {
   console.warn('[home] manifest failed to load:', err);
   const main = document.getElementById('main');
   if (main) main.insertAdjacentHTML('beforeend',
-    '<p class="text-center text-gray-500 py-16">Couldn’t load destinations. Please refresh the page.</p>');
+    '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
   throw err;
 }
 const summaries = idx.destinations;
@@ -176,34 +221,49 @@ function search(q) {
   const el = document.getElementById('category-strip');
   if (!el) return;
   const cats = [
-    { type: 'hill_station', ic: 'mountain', tint: 'tint-green', label: 'Mountains', badge: 'popular' },
+    { type: '', ic: 'compass', tint: 'tint-teal', label: 'All Destinations', countKey: 'all' },
+    { type: 'hill_station', ic: 'mountain', tint: 'tint-green', label: 'Hill Stations', badge: 'popular' },
     { type: 'beach', ic: 'waves', tint: 'tint-blue', label: 'Beaches', badge: 'popular' },
     { type: 'heritage', ic: 'landmark', tint: 'tint-orange', label: 'Heritage', badge: 'popular' },
     { type: 'wildlife', ic: 'paw-print', tint: 'tint-amber', label: 'Wildlife' },
-    { type: 'adventure', ic: 'car', tint: 'tint-purple', label: 'Road Trips', badge: 'new', search: 'scenic', countKey: 'road_trips' },
-    { type: 'spiritual', ic: 'temple', tint: 'tint-rose', label: 'Temples', badge: 'popular' },
-    { type: 'adventure', ic: 'compass', tint: 'tint-teal', label: 'Adventure' },
-    { type: 'adventure', ic: 'tent', tint: 'tint-slate', label: 'Camping', badge: 'new', search: 'camp', countKey: 'camping' },
+    { type: 'spiritual', ic: 'temple', tint: 'tint-rose', label: 'Spiritual', badge: 'popular' },
+    { type: 'adventure', ic: 'tent', tint: 'tint-purple', label: 'Adventure' },
+    { type: 'road_trips', ic: 'car', tint: 'tint-blue', label: 'Road Trips', badge: 'new', search: 'road', countKey: 'road_trips' },
+    { type: 'camping', ic: 'tent', tint: 'tint-slate', label: 'Camping', badge: 'new', search: 'camp', countKey: 'camping' },
+    { type: 'forts', ic: 'gem', tint: 'tint-amber', label: 'Forts & Palaces', search: 'fort', countKey: 'forts' },
+    { type: 'ecotourism', ic: 'flower', tint: 'tint-green', label: 'Ecotourism', search: 'eco', countKey: 'ecotourism' }
   ];
   // Live per-type counts from the manifest.
   const counts = {};
   idx.destinations.forEach((d) => { counts[d.type] = (counts[d.type] || 0) + 1; });
-  const customCounts = idx.meta.customCounts || { road_trips: 42, camping: 76 };
+  const customCounts = Object.assign(
+    { road_trips: 42, camping: 77, forts: 547, ecotourism: 348 },
+    idx.meta.customCounts || {}
+  );
+  if (!customCounts.forts) customCounts.forts = 547;
+  if (!customCounts.ecotourism) customCounts.ecotourism = 348;
+
+
+  const totalCount = idx.count || summaries.length || 2389;
+
   el.innerHTML = cats.map((c) => {
-    const n = c.countKey ? customCounts[c.countKey] : (counts[c.type] || 0);
+    const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
     const badge = c.badge
       ? '<span class="category-chip-badge badge-' + c.badge + '">' + (c.badge === 'new' ? 'New' : 'Popular') + '</span>'
       : '';
-    const href = c.search
+    const href = c.type === ''
+      ? 'destinations.html'
+      : c.search
       ? 'destinations.html?search=' + encodeURIComponent(c.search)
       : 'destinations.html?type=' + encodeURIComponent(c.type);
     return '<a href="' + href + '" class="category-chip">' +
-      '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 26 }) + badge + '</span>' +
+      '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
       '<span class="category-chip-label">' + esc(c.label) + '</span>' +
-      '<span class="category-chip-count">' + n + ' places</span>' +
+      '<span class="category-chip-count">' + inr(n) + ' places</span>' +
       '</a>';
   }).join('');
 })();
+
 
 // ─── Search + autocomplete (combobox pattern) ─────────────
 (function () {
@@ -446,7 +506,8 @@ function search(q) {
         '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent"></div>' +
         '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
         '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
-        '🌟 Best in ' + esc(monthName) + ' · Photo ' + (i + 1) + ' of ' + top5.length +
+        '<svg class="slide-badge-star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>' +
+        ' Best in ' + esc(monthName) + ' · Photo ' + (i + 1) + ' of ' + top5.length +
         '</span>' +
         '</div>' +
         '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
@@ -544,14 +605,30 @@ function search(q) {
   }
 })();
 
-// ─── Trending carousel ────────────────────────────────────
+// ─── Dynamic Reshuffling Utility ─────────────────────────
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ─── Trending carousel (Dynamic Reshuffle on Refresh) ─────
 (function () {
   const row = document.getElementById('trending-grid');
   if (!row) return;
-  const trending = ['kanatal', 'manali', 'goa', 'coorg', 'udaipur', 'rishikesh', 'darjeeling', 'ladakh'];
-  row.innerHTML = trending
-    .map((slug) => { const d = bySlug.get(slug); return d ? trendCardHTML(d) : ''; })
-    .join('');
+  
+  // Pick from high-rated/popular destinations with verified hero images
+  const pool = summaries.filter(function (d) {
+    const hasPhoto = d.heroImage && d.heroImage.src;
+    const isQuality = (d.rating >= 4.5 && (d.reviewCount >= 50 || d.badge)) || d.badge === 'Popular' || d.badge === 'Trending';
+    return hasPhoto && isQuality;
+  });
+
+  const selected = shuffleArray(pool.length >= 10 ? pool : summaries.filter(d => d.heroImage && d.heroImage.src)).slice(0, 10);
+  row.innerHTML = selected.map(function (d) { return trendCardHTML(d); }).join('');
   wireCarousel(row, document.getElementById('trend-prev'), document.getElementById('trend-next'));
 })();
 
@@ -605,31 +682,45 @@ function search(q) {
   ).join('');
 })();
 
-// ─── Hills grid (large cards) ─────────────────────────────
+// ─── Hills grid (large cards - Dynamic Reshuffle on Refresh) ─
 (function () {
   const el = document.getElementById('hills-grid');
   if (!el) return;
-  el.innerHTML = ['kanatal', 'manali', 'darjeeling', 'munnar']
-    .map((slug) => { const d = bySlug.get(slug); return d ? heroCardHTML(d) : ''; })
-    .join('');
+  
+  const hillsPool = summaries.filter(function (d) {
+    const isHill = d.type === 'hill_station' || d.type === 'hillstation' ||
+      (d.features && d.features.some(f => /hill|mountain|valley|peak/i.test(f)));
+    const hasPhoto = d.heroImage && d.heroImage.src;
+    return isHill && hasPhoto;
+  });
+
+  const selectedHills = shuffleArray(hillsPool.length >= 4 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 4);
+  el.innerHTML = selectedHills.map(function (d) { return heroCardHTML(d); }).join('');
 })();
 
-// ─── Popular grid (large cards) ───────────────────────────
+// ─── Popular grid (large cards - Dynamic Reshuffle on Refresh) ─
 (function () {
   const el = document.getElementById('popular-grid');
   if (!el) return;
-  el.innerHTML = ['goa', 'udaipur', 'rishikesh', 'coorg']
-    .map((slug) => { const d = bySlug.get(slug); return d ? heroCardHTML(d) : ''; })
-    .join('');
+  
+  const popularPool = summaries.filter(function (d) {
+    const isPopular = d.badge === 'Popular' || d.badge === 'Featured' || d.rating >= 4.6;
+    const hasPhoto = d.heroImage && d.heroImage.src;
+    return isPopular && hasPhoto;
+  });
+
+  const selectedPopular = shuffleArray(popularPool.length >= 4 ? popularPool : summaries).slice(0, 4);
+  el.innerHTML = selectedPopular.map(function (d) { return heroCardHTML(d); }).join('');
 })();
 
-// ─── Explore grid (small cards) ───────────────────────────
+// ─── Explore grid (small cards - Dynamic Reshuffle on Refresh) ─
 (function () {
   const el = document.getElementById('explore-grid');
   if (!el) return;
-  el.innerHTML = ['goa', 'hampi', 'spiti', 'varanasi', 'munnar', 'jaisalmer']
-    .map((slug) => { const d = bySlug.get(slug); return d ? miniCardHTML(d) : ''; })
-    .join('');
+  
+  const explorePool = summaries.filter(function (d) { return d.heroImage && d.heroImage.src; });
+  const selectedExplore = shuffleArray(explorePool).slice(0, 6);
+  el.innerHTML = selectedExplore.map(function (d) { return miniCardHTML(d); }).join('');
 })();
 
 // ─── Hero social-proof avatars (local inline SVG — no external fetch) ─────

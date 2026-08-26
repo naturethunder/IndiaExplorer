@@ -317,6 +317,13 @@ body.explore-immersive :focus-visible {
   cursor: pointer;
   transition: all 0.25s ease;
   text-align: left;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.quick-tag-btn svg {
+  flex: 0 0 auto;
+  color: var(--exp-emerald-light);
 }
 
 .quick-tag-btn:hover {
@@ -366,17 +373,23 @@ body.explore-immersive :focus-visible {
 /* ==========================================================================
    Sticky Discovery Toolbar
    ========================================================================== */
+body.explore-immersive .dest-discovery-toolbar,
+body.glass-immersive .dest-discovery-toolbar,
+header.dest-discovery-toolbar,
 .dest-discovery-toolbar {
-  position: sticky;
-  top: 64px;
-  z-index: 40;
-  background: rgba(7, 18, 15, 0.88);
-  backdrop-filter: blur(24px) saturate(130%);
-  -webkit-backdrop-filter: blur(24px) saturate(130%);
-  border-bottom: 1px solid var(--exp-border);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-  transition: border-color 0.2s ease;
+  position: sticky !important;
+  top: 64px !important;
+  z-index: 40 !important;
+  background: #060f0c !important;
+  background-color: #060f0c !important;
+  backdrop-filter: blur(28px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(140%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+
 
 .discovery-toolbar-inner {
   padding-top: 14px;
@@ -468,11 +481,11 @@ body.explore-immersive :focus-visible {
 
 .search-clear-btn {
   position: absolute;
-  right: 12px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: none;
   background: rgba(255, 255, 255, 0.1);
@@ -489,8 +502,12 @@ body.explore-immersive :focus-visible {
   color: var(--exp-text-main);
 }
 
+.search-clear-btn.hidden {
+  display: none !important;
+}
+
 .mobile-filter-trigger {
-  display: inline-flex;
+  display: none !important; /* Hidden on desktop — sidebar is always visible */
   align-items: center;
   gap: 8px;
   height: 44px;
@@ -505,6 +522,7 @@ body.explore-immersive :focus-visible {
   transition: all 0.2s ease;
 }
 
+
 .mobile-filter-badge {
   display: inline-grid;
   place-items: center;
@@ -515,6 +533,10 @@ body.explore-immersive :focus-visible {
   color: #04110d;
   font-size: 11px;
   font-weight: 800;
+}
+
+.mobile-filter-badge.hidden {
+  display: none !important;
 }
 
 /* Category Tabs */
@@ -540,7 +562,7 @@ body.explore-immersive :focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  height: 38px;
+  min-height: 44px;
   padding: 0 16px;
   border-radius: 9999px;
   border: 1px solid var(--exp-border);
@@ -551,6 +573,9 @@ body.explore-immersive :focus-visible {
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.2s ease;
+  /* Press scale feedback per Pro Max */
+  touch-action: manipulation;
+  user-select: none;
 }
 
 .category-pill-btn svg {
@@ -559,55 +584,95 @@ body.explore-immersive :focus-visible {
 }
 
 .category-pill-btn:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
   color: var(--exp-text-main);
+  transform: translateY(-1px);
+}
+
+.category-pill-btn:active {
+  transform: scale(0.95);
 }
 
 .category-pill-btn:hover svg {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .category-pill-btn.active {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.24), rgba(5, 150, 105, 0.32));
-  border-color: var(--exp-emerald-light);
-  color: #f0fdf4;
-  box-shadow: 0 0 16px rgba(16, 185, 129, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  border-color: #34d399 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
 .category-pill-btn.active svg {
-  color: #a7f3d0;
+  color: #ffffff !important;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
 }
+
 
 /* ==========================================================================
    Main Discovery Workspace (Sidebar + Grid)
    ========================================================================== */
 .explore-content-area {
-  padding: 40px 0 100px;
+  padding: 48px 0 120px;
 }
 
 .explore-workspace-grid {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: clamp(28px, 3vw, 48px);
+  grid-template-columns: 288px minmax(0, 1fr);
+  gap: clamp(24px, 2.5vw, 44px);
   align-items: start;
 }
 
-/* Sidebar filter card */
+/* Sidebar filter card — sticky with comfortable top clearance under sticky discovery bar */
+body.explore-immersive .explore-filter-sidebar,
+body.glass-immersive .explore-filter-sidebar,
 .explore-filter-sidebar {
-  position: sticky;
-  top: 195px;
+  position: sticky !important;
+  top: 200px !important;
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   z-index: 20;
+  /* Subtle entrance from left */
+  animation: sidebarFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.explore-filter-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@keyframes sidebarFadeIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 .filter-glass-card {
   padding: 24px;
   border-radius: var(--exp-radius-lg);
-  background: linear-gradient(155deg, rgba(15, 30, 26, 0.9), rgba(7, 16, 14, 0.94));
+  background: linear-gradient(155deg, rgba(15, 30, 26, 0.92), rgba(7, 16, 14, 0.96));
   border: 1px solid var(--exp-border-light);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 24px 56px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.filter-glass-card:hover {
+  border-color: rgba(52, 211, 153, 0.25);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 28px 64px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(16, 185, 129, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .filter-card-header {
@@ -644,7 +709,8 @@ body.explore-immersive :focus-visible {
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
-  padding: 4px 8px;
+  min-height: 44px;
+  padding: 8px;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
@@ -655,16 +721,18 @@ body.explore-immersive :focus-visible {
 }
 
 .filter-close-btn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 1px solid var(--exp-border);
   background: rgba(255, 255, 255, 0.05);
   color: var(--exp-text-main);
-  display: grid;
+  display: none !important; /* Hidden on desktop — only shown inside mobile drawer */
   place-items: center;
   cursor: pointer;
 }
+
+
 
 .filter-controls-stack {
   display: flex;
@@ -693,7 +761,7 @@ body.explore-immersive :focus-visible {
 
 .custom-select {
   width: 100%;
-  height: 42px;
+  height: 44px;
   padding: 0 34px 0 12px;
   border-radius: var(--exp-radius-sm);
   border: 1px solid var(--exp-border);
@@ -802,12 +870,12 @@ body.explore-immersive :focus-visible {
 }
 
 .sort-select {
-  height: 38px;
+  height: 44px;
   font-size: 12.5px;
   font-weight: 600;
 }
 
-/* Active Chips */
+/* Active Chips — ONLY visible when filters are applied */
 .active-chips-bar {
   display: flex;
   flex-wrap: wrap;
@@ -819,6 +887,13 @@ body.explore-immersive :focus-visible {
   background: rgba(16, 185, 129, 0.06);
   border: 1px solid rgba(52, 211, 153, 0.18);
 }
+
+/* Explicitly override any competing CSS when hidden class is present */
+.active-chips-bar.hidden,
+#activeFiltersContainer.hidden {
+  display: none !important;
+}
+
 
 .active-chips-title {
   font-size: 11px;
@@ -850,8 +925,9 @@ body.explore-immersive :focus-visible {
 }
 
 .active-filter-chip button {
-  width: 16px;
-  height: 16px;
+  position: relative;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: none;
   background: rgba(255, 255, 255, 0.15);
@@ -861,6 +937,12 @@ body.explore-immersive :focus-visible {
   place-items: center;
   cursor: pointer;
   transition: background 0.2s ease;
+}
+
+.active-filter-chip button::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
 }
 
 .active-filter-chip button:hover {
@@ -875,6 +957,8 @@ body.explore-immersive :focus-visible {
   font-weight: 700;
   cursor: pointer;
   margin-left: 6px;
+  min-height: 44px;
+  padding-inline: 8px;
   text-decoration: underline;
 }
 
@@ -938,12 +1022,13 @@ body.explore-immersive :focus-visible {
 .destinations-master-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 28px;
 }
 
 .dest-card-item {
   min-width: 0;
   height: 100%;
+  /* Cards start hidden — GSAP scroll-reveal sets opacity:0 on them */
 }
 
 .dest-card-link {
@@ -951,20 +1036,39 @@ body.explore-immersive :focus-visible {
   flex-direction: column;
   height: 100%;
   border-radius: var(--exp-radius-lg);
-  background: linear-gradient(155deg, rgba(16, 32, 28, 0.94), rgba(8, 18, 15, 0.96));
+  background: linear-gradient(155deg, rgba(16, 32, 28, 0.95), rgba(8, 18, 15, 0.97));
   border: 1px solid var(--exp-border);
   overflow: hidden;
   text-decoration: none;
   color: var(--exp-text-main);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.25s ease, box-shadow 0.35s ease;
+  /* Layered shadow for premium depth */
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    0 16px 40px rgba(0, 0, 0, 0.2);
+  /* Spring-physics transition per Pro Max */
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.25s ease,
+    box-shadow 0.4s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .dest-card-link:hover {
-  transform: translateY(-6px);
-  border-color: rgba(52, 211, 153, 0.45);
-  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.45), 0 0 24px rgba(16, 185, 129, 0.15);
+  transform: translateY(-8px) scale(1.012);
+  border-color: rgba(52, 211, 153, 0.5);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    0 12px 32px rgba(0, 0, 0, 0.35),
+    0 32px 72px rgba(0, 0, 0, 0.45),
+    0 0 32px rgba(16, 185, 129, 0.18),
+    inset 0 1px 0 rgba(52, 211, 153, 0.12);
+}
+
+.dest-card-link:active {
+  transform: translateY(-4px) scale(1.006);
+  transition-duration: 0.15s;
 }
 
 /* Card Media Frame */
@@ -1022,11 +1126,16 @@ body.explore-immersive :focus-visible {
   left: 12px;
   right: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 8px;
+  gap: 6px;
   z-index: 2;
+  /* Never let badges overflow the card edges */
+  overflow: hidden;
+  /* Wrap to next line if badges are too wide — prevents overlap */
+  flex-wrap: nowrap;
 }
+
 
 .dest-badge-featured {
   display: inline-flex;
@@ -1038,9 +1147,15 @@ body.explore-immersive :focus-visible {
   color: #ffffff;
   font-size: 9.5px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   backdrop-filter: blur(8px);
+  /* Prevent long badge text from crashing into the type badge */
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 1;
 }
 
 .dest-badge-type {
@@ -1056,6 +1171,9 @@ body.explore-immersive :focus-visible {
   font-weight: 700;
   letter-spacing: 0.04em;
   backdrop-filter: blur(10px);
+  /* Always stays visible on the right — never shrink */
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .dest-badge-type svg {
@@ -1272,6 +1390,11 @@ body.explore-immersive :focus-visible {
 }
 
 @media (max-width: 1023px) {
+  /* Show the "Filters" button on mobile — hidden on desktop */
+  .mobile-filter-trigger {
+    display: inline-flex !important;
+  }
+
   .explore-workspace-grid {
     grid-template-columns: 1fr;
   }
@@ -1306,6 +1429,10 @@ body.explore-immersive :focus-visible {
     overflow-y: auto;
     border-left: 1px solid var(--exp-border-light);
     animation: drawerIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  body.explore-immersive .explore-filter-sidebar.open .filter-close-btn {
+    display: grid !important; /* Show ✕ only inside mobile drawer */
   }
 
   @keyframes drawerIn {
@@ -1368,4 +1495,3 @@ body.explore-immersive :focus-visible {
     transform: none !important;
   }
 }
-

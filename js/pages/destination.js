@@ -555,30 +555,32 @@ function main(dest, idx) {
         '<button class="mt-3 text-primary text-sm font-semibold" data-tier="all">Show all stays</button></div>';
     } else {
       cards = list.map(function (s) {
-        const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md font-medium">' + esc(t) + '</span>'; }).join('');
-        const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip">' + esc(a) + '</span>'; }).join('');
-        const bookUrl = 'https://www.google.com/search?q=' + encodeURIComponent(s.name + ' ' + dest.title + ' hotel booking');
-        const stayImage = typeof s.image === 'string' ? s.image : (s.image && s.image.src ? s.image.src : '');
-        const stayImageAlt = s.image && s.image.alt ? s.image.alt : s.name;
-        const stayMedia = stayImage
-          ? '<img src="' + esc(stayImage) + '" alt="' + esc(stayImageAlt) + '" class="w-full h-44 sm:h-full object-cover hover:scale-105 transition-transform" loading="lazy" onerror="this.onerror=null;this.hidden=true;this.nextElementSibling.hidden=false;" />' +
-            '<div class="w-full h-44 sm:h-full bg-gray-100 text-gray-500 text-xs font-semibold tracking-wide flex items-center justify-center" hidden>Photo unavailable</div>'
-          : '<div class="w-full h-44 sm:h-full bg-gray-100 text-gray-500 text-xs font-semibold tracking-wide flex items-center justify-center">Photo unavailable</div>';
-        return '<div class="card p-0"><div class="flex flex-col sm:flex-row">' +
-          '<div class="sm:w-52 shrink-0 overflow-hidden rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none relative">' +
-          stayMedia +
-          '<div class="absolute top-3 left-3"><span class="text-xs font-bold px-2.5 py-1 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span></div>' +
+        const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
+        const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
+        const googleUrl = s.url || ('https://www.google.com/search?q=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '') + ' hotel'));
+        return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-emerald-500/40 hover:shadow-xl transition-all group">' +
+          '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
+          '<div class="min-w-0 flex-1">' +
+          '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
+          '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="font-bold text-lg text-gray-900 dark:text-white hover:text-emerald-500 transition-colors flex items-center gap-1.5" title="View ' + esc(s.name) + ' on Google">' +
+          '🏨 ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold">↗</span></a>' +
+          '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
+          '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
-          '<div class="flex-1 p-4 flex flex-col justify-between min-w-0"><div>' +
-          '<div class="flex items-start justify-between gap-3 mb-2"><div><h3 class="font-bold text-gray-900">' + esc(s.name) + '</h3>' +
-          '<p class="text-gray-500 text-xs capitalize mt-0.5">' + esc(s.type) + '</p></div>' +
-          '<div class="text-right shrink-0"><span class="text-amber-400">★</span> <span class="font-bold text-sm">' + esc(s.rating) + '</span> <a href="https://www.google.com/search?q=' + encodeURIComponent(s.name + ' ' + dest.title + ' reviews') + '#lrd" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary text-xs underline" title="Read reviews of ' + esc(s.name) + '">(' + esc(s.reviews) + ')</a></div></div>' +
-          '<div class="flex flex-wrap gap-1.5 mb-3">' + tags + '</div>' +
-          '<div class="flex flex-wrap gap-1.5">' + ams + '</div></div>' +
-          '<div class="flex items-center justify-between mt-4 pt-3 border-t border-gray-100">' +
-          '<div><span class="text-xl font-bold text-gray-900">₹' + inr(s.priceMin) + '</span><span class="text-gray-400 text-sm"> – ₹' + inr(s.priceMax) + '/night</span></div>' +
-          '<a href="' + bookUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-sm px-5">Check Availability →</a>' +
-          '</div></div></div></div>';
+          '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
+          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-500 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
+          (tags ? '<span class="flex gap-1.5">' + tags + '</span>' : '') +
+          '</div>' +
+          '<div class="flex flex-wrap gap-1.5">' + ams + '</div>' +
+          '</div>' +
+          '<div class="flex sm:flex-col items-end justify-between sm:justify-center shrink-0 pt-3 md:pt-0 border-t md:border-t-0 border-gray-100 dark:border-white/10 gap-2">' +
+          '<div class="text-right">' +
+          '<span class="text-2xl font-extrabold text-gray-900 dark:text-white">₹' + inr(s.priceMin) + '</span>' +
+          '<span class="text-gray-400 text-xs block">to ₹' + inr(s.priceMax) + ' / night</span>' +
+          '</div>' +
+          '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-emerald-500/20">Search on Google ↗</a>' +
+          '</div>' +
+          '</div></div>';
       }).join('');
       cards = '<div class="space-y-4">' + cards + '</div>';
     }

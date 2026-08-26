@@ -205,9 +205,37 @@ function buildFaq(d) {  const topNames = (d.places || []).slice(0, 5).map((p) =>
   return faq;
 }
 
+// Image sanitization patterns to prevent bad media injection
+const PDF_DJVU_PATTERN = /\.(pdf|djvu|doc|txt)(\/page|\.jpg|\.png)?/i;
+const VIDEO_AUDIO_PATTERN = /\.(webm|ogv|mp4|avi|mov|flv|mp3|wav|mid|midi)(\/|\.jpg|\.png)?/i;
+const LOGO_FLAG_MAP_PATTERN = /(flag_of|coat_of_arms|logo_of|map_of|diagram|chart|census|stamp_of|location_map|seal_of|symbol_of)/i;
+const PLACEHOLDER_PATTERN = /(picsum\.photos|via\.placeholder|dummyimage|placehold\.co|loremflickr)/i;
+const BLURRY_THUMB_PATTERN = /\/([1-9][0-9]|1[0-9][0-9]|200)px-/i;
+
+function isBadImage(url) {
+  if (!url || typeof url !== 'string') return true;
+  if (!url.startsWith('http://') && !url.startsWith('https://') && !url.startsWith('images/')) return true;
+  if (PDF_DJVU_PATTERN.test(url)) return true;
+  if (VIDEO_AUDIO_PATTERN.test(url)) return true;
+  if (LOGO_FLAG_MAP_PATTERN.test(url)) return true;
+  if (PLACEHOLDER_PATTERN.test(url)) return true;
+  if (BLURRY_THUMB_PATTERN.test(url)) return true;
+  return false;
+}
+
+function sanitizeUrl(url, fallback) {
+  return isBadImage(url) ? (fallback || '') : url;
+}
+
 function toDestinationJSON(d) {
   const c = coordsOf(d);
-  const hero = (d.photos && d.photos[0]) || d.heroImage || d.image;
+  const destFile = path.join(OUT_DIR, `${d.id}.json`);
+  let existing = null;
+  if (fs.existsSync(destFile)) {
+    try { existing = JSON.parse(fs.readFileSync(destFile, 'utf8')); } catch (e) {}
+  }
+  const rawHero = (existing && existing.heroImage && (existing.heroImage.src || existing.heroImage)) || (d.photos && d.photos[0]) || d.heroImage || d.image;
+  const hero = sanitizeUrl(rawHero, (d.gallery && d.gallery[0] && d.gallery[0].src) || rawHero);
   // Upgrade synthetic reach to real (nearest airport/railway + major-city
   // routes) before it feeds both howToReach and the derived FAQ.
   const reach = buildReach(d, c);
@@ -249,18 +277,26 @@ function toDestinationJSON(d) {
       nearestRailway: d.nearestRailway || null,
       roadNote: d.roadNote || '',
     },
-    topPlaces: (d.places || []).map((p) => ({
-      name: p.name,
-      category: p.category || '',
-      distance: p.distance || '',
-      entryFee: p.entryFee || '',
-      timings: p.timings || '',
-      duration: p.duration || '',
-      rating: p.rating || 0,
-      description: p.desc || '',
-      image: { src: p.image || '', alt: p.name },
-      photos: p.photos || [],
-    })),
+    topPlaces: (d.places || []).map((p, pIdx) => {
+      const existingPlace = existing && existing.topPlaces && existing.topPlaces[pIdx];
+      const pImgRaw = (existingPlace && existingPlace.image && (existingPlace.image.src || existingPlace.image)) || p.image;
+      const pImg = sanitizeUrl(pImgRaw, hero);
+      const pPhotos = (existingPlace && Array.isArray(existingPlace.photos) && existingPlace.photos.length)
+        ? existingPlace.photos.map((u) => sanitizeUrl(u, pImg)).filter(Boolean)
+        : (p.photos || []).map((u) => sanitizeUrl(u, pImg)).filter(Boolean);
+      return {
+        name: p.name,
+        category: p.category || '',
+        distance: p.distance || '',
+        entryFee: p.entryFee || '',
+        timings: p.timings || '',
+        duration: p.duration || '',
+        rating: p.rating || 0,
+        description: p.desc || '',
+        image: { src: pImg, alt: p.name },
+        photos: pPhotos.length ? pPhotos : [pImg],
+      };
+    }),
     itinerary: buildItinerary(d),
     hotels: (d.stays || []).map((s) => ({
       name: s.name,
@@ -272,11 +308,13 @@ function toDestinationJSON(d) {
       reviews: s.reviews || 0,
       amenities: s.amenities || [],
       tags: s.tags || [],
-      image: { src: s.image || '', alt: s.name },
+      url: s.url || `https://www.google.com/search?q=${encodeURIComponent(s.name + ' ' + d.name + ' ' + (d.state || '') + ' hotel')}`,
     })),
     restaurants: [],
     activities: buildActivities(d),
-    gallery: (d.photos || []).map((u, i) => ({ src: u, alt: `${d.name} photo ${i + 1}` })),
+    gallery: (existing && Array.isArray(existing.gallery) && existing.gallery.length)
+      ? existing.gallery.map((g) => ({ src: sanitizeUrl(g.src || g, hero), alt: g.alt || `${d.name} photo` })).filter((g) => g.src)
+      : (d.photos || []).map((u, i) => ({ src: sanitizeUrl(u, hero), alt: `${d.name} photo ${i + 1}` })).filter((g) => g.src),
     faq: buildFaq(d),
     seo: {
       title: `${d.name} Travel Guide ${YEAR} — Places, Hotels, How to Reach | IndiaExplore`,
@@ -293,6 +331,14 @@ function toDestinationJSON(d) {
 
 function toSummary(d) {
   const c = coordsOf(d);
+  const destFile = path.join(OUT_DIR, `${d.id}.json`);
+  let existing = null;
+  if (fs.existsSync(destFile)) {
+    try { existing = JSON.parse(fs.readFileSync(destFile, 'utf8')); } catch (e) {}
+  }
+  const rawHero = (existing && existing.heroImage && (existing.heroImage.src || existing.heroImage)) || (d.photos && d.photos[0]) || d.heroImage || d.image || '';
+  const hero = sanitizeUrl(rawHero, (d.gallery && d.gallery[0] && d.gallery[0].src) || rawHero);
+  const img = sanitizeUrl((existing && existing.image && (existing.image.src || existing.image)) || d.image || hero, hero);
   return {
     slug: d.id,
     title: d.name,
@@ -308,8 +354,8 @@ function toSummary(d) {
     distanceFromDelhi: d.distanceFromDelhi || null,
     lat: c ? c[0] : null,
     lng: c ? c[1] : null,
-    image: { src: d.image || '', alt: `${d.name}, ${d.state}` },
-    heroImage: { src: (d.photos && d.photos[0]) || d.heroImage || d.image || '', alt: `${d.name}, ${d.state}` },
+    image: { src: img, alt: `${d.name}, ${d.state}` },
+    heroImage: { src: hero, alt: `${d.name}, ${d.state}` },
     features: d.features || [],
     tiers: tiersOf(d),
   };

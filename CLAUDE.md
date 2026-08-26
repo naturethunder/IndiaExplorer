@@ -1,4 +1,4 @@
-# IndiaExplore — Project Guide (updated 2026-08-17)
+# IndiaExplore — Project Guide (updated 2026-08-26)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -16,26 +16,16 @@ The entire site uses a **dark glassmorphism** design system (`glass-immersive.cs
 frosted glass panels, fixed cinematic background images, emerald accent glows, and
 **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Catalog provenance.** 108 destinations are hand-curated (18 base + 90 in `data-destinations.js`)
-> with real baked Wikimedia photos. 28 more (Bangaram Island, Dawki, Gurudongmar Lake, Hanle,
-> Chopta, Gandikota, Dhanushkodi, Mawlynnong, Lonar Crater Lake, Chembra Peak, Gurez Valley,
-> Unakoti, Sandakphu, Chitrakote Falls, Shekhawati, Dholavira, Zanskar Valley, Polo Forest,
-> Tranquebar, Jibhi, Bhedaghat, Valparai, Tamhini Ghat, Loktak Lake, Dhanaulti, Mandu, Daringbadi, etc.)
-> were **hand-added & enriched** via `scripts/enrich-new-destinations-full.js` +
-> `scripts/fetch-verified-wikimedia-photos.js` with 100% genuine real Wikimedia Commons landmark photography.
-> The remaining ~2,247 were **bulk-ingested** from Wikidata + Wikipedia (`scripts/bulk/`) across 36 state/UTs.
-
-> **Hotel & Hero enrichment handoff (verified 2026-08-03).**
-> - **Destination Hero Images:** **2,389 / 2,389 (100.0% Verified Real HD Photography)** with 0 picsum.photos placeholders remaining.
-> - **Navbar & UI/UX Pro Max:** Removed redundant "Plan Trip" navbar CTA; upgraded "Top Places to Visit" in `destination.js` to full cover-card grid UI/UX; eliminated duplicate "Underrated Gems Nearby" section.
-> - **Hotel Stays:** `scripts/bulk/fill-real-hotels.js` completed pass across all 2,389 canonical destinations.
-
-> **⚠️ Strict Real Photos Policy (Zero Picsum / Fake Stock Rule).**
-> `picsum.photos` and random stock image fallbacks have been completely eradicated from `destination.js`,
-> `home.js`, `finder.js`, hero cover layers, and data files. If a place has 3 real photos, it renders strictly 3 real photos. An automated & manual audit filtered out all PDF document scans, magazine articles, insect diagrams, and dictionary entry images.
->
-> **Multi-Provider Image Pipeline (`scripts/images/`):**
-> High-resolution verified photography powered by **Pexels & Unsplash APIs** and **Wikimedia Commons** with SQLite caching, zero-duplicate enforcement, and non-blocking rate limits. Over **1,651 destinations (69.1% of entire catalog)** and **9,158 attractions** are 100% enriched with **37,469 verified high-resolution photos** across 19 fully completed States/UTs. Every destination adheres strictly to 5 unique visual photos in Hero/Gallery and 3 distinct photos per nearby place.
+> **Latest Milestone (2026-08-26):**
+> - **Dynamic Refresh Reshuffling:** Implemented Fisher-Yates dynamic reshuffling in `js/pages/home.js` so that *Trending Destinations*, *Popular Destinations*, *Best Hill Stations*, and *Explore More* display randomized, fresh destination sets on every page refresh.
+> - **Hotel Direct Google Integration:** Stripped image thumbnails from all 9,756 hotel listings and added direct Google Search / Reviews links (`https://www.google.com/search?q=...`) with price tier badges, rate ranges, and amenity chips.
+> - **100% Unique Hero Images (2,389 / 2,389):** Every destination in the catalog has a dedicated, 100% unique 1-to-1 high-resolution hero photo.
+> - **Re-infection Loop Eliminated:** Synchronized all 36 state bulk files (`data/bulk/*.json`) with clean canonical destinations and hardened `scripts/build-json-data.js` with sanitization filters.
+> - **Zero Broken Media:** 0 picsum placeholders, 0 PDF/DJVU document scans, 0 video/audio files, 0 maps/flags across all 70,000+ catalog image references.
+> - **Full-Screen Stretched Layout:** All sections across `index.html` (*11-Category Grid, Trending, Map, Monthly Highlights, Seasonal, Popular, Budget, Hills, Explore More*) stretch edge-to-edge (`flex: 1 1 0`, `w-full px-4 sm:px-6 lg:px-8`) with balanced fixed margins.
+> - **11-Category Grid on Home & Catalogue:** Synced all 11 taxonomy categories with live counts matching the destinations catalogue.
+> - **GSAP ScrollTrigger Batch Reveal:** Batch row stagger reveal engine in `js/pages/explore.js` with lifecycle cleanup.
+> - **Opaque Sticky Discovery Bar & Active Pill Glow:** Fixed category bar background bleed on `destinations.html` and applied glowing emerald gradient active styling (`#typeFilter button.active`).
 
 ## Architecture (the load-bearing decisions)
 

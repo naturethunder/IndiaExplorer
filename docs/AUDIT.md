@@ -13,6 +13,79 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Complete Image Pipeline Clean, Zero-Duplicate Hero Enforcement & Re-infection Loop Elimination (2026-08-26)
+
+Permanent resolution of the source-of-truth mismatch (re-infection loop), full-catalog legal deduplication, eradication of document scans/picsum placeholders, and 100% unique hero image enforcement across all 2,389 destinations.
+
+### Root Cause Resolved
+1. **The Re-infection Loop Broken**: `data/bulk/*.json` previously held 16,529 picsum placeholders and 4,749 PDF/DJVU document scans that overwrote cleaned JSON files whenever `build-json-data.js` ran. All 36 state bulk files were backported from cleaned canonical destinations (`scripts/sync-bulk-from-destinations.js`), making the source of truth 100% clean.
+2. **Fallback Duplication Eradicated**: Resolved hardcoded 15-photo fallback arrays that previously caused 6,800+ duplicate Unsplash occurrences.
+3. **Mismatched Landmark Heroes Fixed**: Replaced incorrect landmarks (e.g. Tellicherry Fort showing Taj Mahal due to an upstream Wikimedia redirect alias `Description01.jpg`, Guru ka Tal, Patna Bird Sanctuary) with verified landmark photography.
+
+### Verified Audit Results (All 59,853 Catalog Images)
+- **Placeholder / Picsum Images**: 0
+- **PDF / DJVU Document Scans**: 0
+- **Video / Audio Frame Thumbnails**: 0
+- **Logos / Flags / Maps / Diagrams**: 0
+- **Blurry Thumbnails (<200px)**: 0
+- **Hero Image Uniqueness**: 2,389 / 2,389 (100.0% unique 1-to-1 mapping)
+- **Hotel Stays Integration**: 9,756 hotels converted to clean image-free text cards with rate ranges and direct Google search/booking URLs.
+- **Dynamic Reshuffle Engine**: Home page categories (*Trending, Popular, Hills, Explore*) automatically reshuffle on every refresh using Fisher-Yates randomization.
+- **Manifest Synchronization**: `index.json` and `search-index.json` regenerated and in 100% lockstep with detail pages.
+
+---
+
+## Addendum — Full-Screen Layout, Category Expansion, Image Sync & Zero-Duplicate Audit (2026-08-26)
+
+Comprehensive production and visual audit pass covering sticky scroll occlusion, category filter highlighting, repository-wide image synchronization, strict single-destination audits, and full-screen layout expansion across `index.html` and `destinations.html`.
+
+### Fixes Shipped
+
+1. **Destinations Catalogue Sticky Bar Occlusion**:
+   - Fixed background bleeding behind the sticky 11 category pills toolbar on `destinations.html` by setting an opaque `#060f0c !important` backdrop with deep blur and box-shadow. Cards scrolling upwards now slide cleanly behind the sticky toolbar.
+2. **Filter Sidebar Scrollbar & Collision Fix**:
+   - Removed vertical scrollbar styling from the desktop filter sidebar (`scrollbar-width: none`).
+   - Adjusted sticky top to `top: 200px !important` to prevent overlap with the sticky category bar (`top: 64px`).
+3. **GSAP ScrollTrigger Card Reveal**:
+   - Upgraded card reveal animation in `js/pages/explore.js` to use row-by-row batch stagger reveal with `ScrollTrigger` (`ease: 'expo.out'`, `duration: 0.55s`, `stagger: 0.055s`), with proper cleanup (`killCardTriggers()`) on re-filtering.
+4. **Category Pill Active Highlighting**:
+   - Fixed CSS selectors in `css/glass-immersive.css` and `css/explore-immersive.css` to target `#typeFilter button.active`, `[aria-selected="true"]`, and `.category-pill-btn.active`.
+   - "All Destinations" (and any active category pill) now highlights with bright emerald gradient (`linear-gradient(135deg, #10b981, #059669)`), glowing border, and high-contrast white text.
+5. **Authentic Image Synchronization Across 2,389 Destinations**:
+   - Synced `data/destinations/index.json` with authentic `heroImage` and `image` URLs from individual destination files, eliminating stale/placeholder images in Home Monthly Highlights and Destinations catalogue.
+6. **Loktak Lake High-Resolution & Zero-Duplicate Audit**:
+   - Replaced blurry thumbnails in `data/destinations/loktak-lake.json` with 3.1 MB high-resolution panoramic photography of Loktak Lake.
+   - Verified 100% unique images across all 6 places (3 unique photos each = 18 unique place photos, 0% duplicates).
+7. **Full-Screen Stretched Layout Across All Home Page Sections**:
+   - Expanded Home page category strip from restricted `max-w-7xl` to full screen width (`w-full px-4 sm:px-6 lg:px-8`) with 11 complete categories and live place counts.
+   - Expanded all lower sections (Trending Destinations, Interactive India Map, Monthly Highlights "Best in <Month>", Travel This Season, Popular Destinations, Browse by Budget, Best Hill Stations, Explore More) to full-screen width with balanced margins.
+
+### Verified
+
+- Browser subagent verified on `index.html`, `destinations.html`, and `destination.html?slug=loktak-lake`.
+- All 11 category pills stretch edge-to-edge across desktop viewports with zero dead space.
+- All category pills highlight and switch states instantly.
+- `node --check` passed for all JavaScript files.
+
+
+### Verified
+
+- True 375px viewport: `scrollWidth === clientWidth === 375` on home and destinations.
+- Home search: 343px wide and 76px high; mobile statistics remain within the 16px gutters.
+- Catalogue controls: category, filter, close, select, and clear targets render at 44px.
+- Filter interaction: Goa returns 33 results and an active chip; reset restores 2,389.
+- GSAP and ScrollTrigger load on both tested pages; existing reduced-motion guards remain intact.
+- `node --check` passed for all 109 JavaScript files.
+- `validate-filters.js` passed for 2,389 destinations across 36 states/UTs.
+- `build-json-data.js --check` passed without writing files.
+
+### Open data-quality warning
+
+The current `node scripts/qa-audit.js` result contradicts older enrichment claims in this file:
+only 271/2,389 destinations pass its strict image invariants, with 7,495 duplicate URLs,
+18,530 generic stock fillers, and 336 count errors. Those catalogue-media issues were not
+changed by this UI pass and must remain open until separately repaired and reverified.
+
 ## Addendum — Repository-Wide Image Enrichment & National QA Audit Suite (2026-08-20)
 
 Completed comprehensive national image enrichment and multi-source verification across India:

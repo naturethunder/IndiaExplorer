@@ -20,7 +20,7 @@ function slugify(name) {
 }
 
 function img(seed, w, h) {
-  return 'https://picsum.photos/seed/' + encodeURIComponent(seed) + '/' + w + '/' + h;
+  return '';
 }
 
 // ─── stays (verbatim port of data-destinations.js stdStays) ──
@@ -35,7 +35,7 @@ function stdStays(name, base, type) {
   const r = (x) => Math.round(x / 50) * 50;
   const stay = (nm, t, tier, lo, hi, rating, reviews, amenities, tags) => ({
     name: nm, type: t, tier, priceMin: lo, priceMax: hi, rating, reviews,
-    amenities, tags, image: img(nm, 400, 280), bookingUrl: '#',
+    amenities, tags, url: `https://www.google.com/search?q=${encodeURIComponent(nm + ' ' + name + ' hotel')}`,
   });
   return [
     stay('OYO ' + name + ' Stay', 'oyo', 'budget', r(b), r(b * 1.6), 4.0, 320,

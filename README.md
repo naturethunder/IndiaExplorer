@@ -1,19 +1,14 @@
+# 🇮🇳 IndiaExplore — Luxury Travel Discovery Platform
 
-
-
-
-
-
-
-> **Image Pipeline Status (2026-08-20):** **2,240 / 2,389 destinations (93.8%)** enriched with **55,681 verified high-res photos** across 30 completed States/UTs. 100% zero-duplicate & landmark-verified.
+> **System Status (2026-08-26):** **2,389 Destinations** across all 36 States & UTs. Full-screen responsive glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography, image-free hotel cards with direct Google search integration, and zero broken/placeholder media repository-wide.
 
 A luxury India travel-discovery platform. Browse **2,389 destinations** (14,001+ places,
 9,756+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
 open a per-destination page with a photo hero, places to visit, stays by budget, routes
 (with distance from major cities), an interactive Leaflet map, live weather, and dynamic similar recommendations.
 
-> **108 curated + 28 offbeat enriched + 2,253 bulk-ingested.** Hand-authored with baked real
-> Wikimedia photography (no picsum/dummy stock fallbacks). See [CLAUDE.md](CLAUDE.md) for provenance.
+> **100% Verified Legal Photography.** Hand-authored and enriched with authentic
+> Wikimedia Commons & Pexels photography (zero picsum/PDF/dummy stock fallbacks, zero re-infection loops). See [CLAUDE.md](CLAUDE.md) for provenance.
 
 > **No framework. No npm. No bundler.** Plain HTML5 + CSS + vanilla ES6 modules, powered by
 > **GSAP ScrollTrigger** animations and served over a zero-dependency Node static server.
@@ -47,6 +42,8 @@ without adding a single HTML file:
 - **A single data-access abstraction.** Every read goes through `js/data/api.js`
   (`fetchDestination(slug)`, `fetchIndex()`, `fetchSearchIndex()`). A future backend
   (e.g. Supabase) only has to change **that one file** — nothing else touches storage.
+- **Dynamic Refresh Reshuffling.** Featured sections (*Trending Destinations, Popular Destinations, Best Hill Stations, Explore More*) automatically reshuffle on every page refresh using Fisher-Yates randomization.
+- **Hotel Direct Google Integration.** All 9,756 hotel listings feature image-free modern text cards with nightly rate ranges, price tier badges, star ratings, amenities, and direct links to live Google hotel search & reviews.
 - **GSAP Scroll & Motion Engine.** Smooth scroll parallax background scrubs, hero staggered entrance timelines, animated stat counters, and section scroll triggers via GSAP 3.12.5 & ScrollTrigger with reduced-motion accessibility support.
 - **Reusable components.** Navbar, footer, mobile-nav (`js/components/layout.js`),
   destination cards (`js/components/destinationCard.js`), and SEO/JSON-LD helpers

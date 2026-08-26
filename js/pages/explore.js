@@ -99,6 +99,10 @@ function syncFilterActive() {
 const quickTagsWrap = document.getElementById('heroQuickTags');
 if (quickTagsWrap) {
   quickTagsWrap.querySelectorAll('button').forEach((btn) => {
+    const category = CATEGORY_FILTERS.find((item) => item.id === btn.dataset.type);
+    if (category) {
+      btn.innerHTML = icon(category.iconName, { size: 16 }) + '<span>' + esc(category.label) + '</span>';
+    }
     btn.addEventListener('click', () => {
       const type = btn.dataset.type;
       if (type) {
@@ -147,36 +151,70 @@ if (monthSel) monthSel.addEventListener('change', function () {
   apply();
 });
 
-// ─── Core: filter, sort, render ────────────────────────
+// ─── GSAP ScrollTrigger Card Reveal Engine ─────────────
 const PAGE_SIZE = 60;
 let shown = PAGE_SIZE;
 let lastResults = [];
+let _cardScrollTriggers = [];
+
+function killCardTriggers() {
+  _cardScrollTriggers.forEach((st) => { try { st.kill(); } catch (_) {} });
+  _cardScrollTriggers = [];
+}
 
 function animateCardsIn(startIndex) {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReduced || !window.gsap) return;
 
-  const cardItems = grid.querySelectorAll('.dest-card-item');
-  const itemsToAnimate = Array.from(cardItems).slice(startIndex, startIndex + PAGE_SIZE);
-  if (!itemsToAnimate.length) return;
+  const cardItems = Array.from(grid.querySelectorAll('.dest-card-item'));
+  const items = cardItems.slice(startIndex, startIndex + PAGE_SIZE);
+  if (!items.length) return;
 
-  window.gsap.fromTo(itemsToAnimate,
-    { opacity: 0, y: 24, scale: 0.98 },
-    {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      duration: 0.45,
-      stagger: 0.03,
-      ease: 'power2.out',
-      clearProps: 'transform,scale',
-    }
-  );
+  // Chunk into rows of 3 for row-by-row stagger reveal
+  const chunkSize = 3;
+  for (let i = 0; i < items.length; i += chunkSize) {
+    const row = items.slice(i, i + chunkSize);
+
+    // Set initial hidden state
+    window.gsap.set(row, { opacity: 0, y: 32, scale: 0.97 });
+
+    const st = window.ScrollTrigger
+      ? window.gsap.to(row, {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.55,
+          stagger: 0.055,
+          ease: 'expo.out',
+          clearProps: 'transform,scale,opacity',
+          scrollTrigger: {
+            trigger: row[0],
+            start: 'top 92%',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      : window.gsap.to(row, {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.55,
+          stagger: 0.055,
+          ease: 'expo.out',
+          delay: (i / chunkSize) * 0.07,
+          clearProps: 'transform,scale,opacity',
+        });
+
+    if (st && st.scrollTrigger) _cardScrollTriggers.push(st.scrollTrigger);
+  }
 }
 
 function renderBatch(isAppend = false) {
   const previousShown = isAppend ? shown - PAGE_SIZE : 0;
   const slice = lastResults.slice(0, shown);
+
+  // Kill stale scroll triggers before re-render
+  if (!isAppend) killCardTriggers();
 
   grid.innerHTML = slice.map(function (d) {
     return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '' });
@@ -189,6 +227,7 @@ function renderBatch(isAppend = false) {
 
   animateCardsIn(previousShown);
 }
+
 
 function apply() {
   let results = SUMMARIES.slice();
@@ -302,12 +341,15 @@ function renderActiveFilterChips() {
   }
 
   if (!activeItems.length) {
+    container.style.display = 'none';
     container.classList.add('hidden');
     chipsWrap.innerHTML = '';
     return;
   }
 
+  container.style.display = '';
   container.classList.remove('hidden');
+
   chipsWrap.innerHTML = activeItems.map((item) =>
     '<span class="active-filter-chip">' +
     '<span>' + esc(item.label) + '</span>' +
@@ -360,11 +402,22 @@ function resetFilters() {
 const sidebar = document.getElementById('filterSidebar');
 const filterCountBadge = document.getElementById('filterCount');
 const filterApplyCount = document.getElementById('filterApplyCount');
+const filterOpenBtn = document.getElementById('filterOpen');
+
+const quickIcon = document.querySelector('.quick-icon');
+if (quickIcon) quickIcon.innerHTML = icon('sparkles', { size: 24 });
 
 function setDrawer(open) {
   if (!sidebar) return;
   sidebar.classList.toggle('open', open);
   document.body.style.overflow = open ? 'hidden' : '';
+  if (filterOpenBtn) filterOpenBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+  if (open) {
+    requestAnimationFrame(() => filterCloseBtn?.focus());
+  } else {
+    filterOpenBtn?.focus();
+  }
 }
 
 function activeSidebarFilters() {
@@ -381,7 +434,6 @@ function syncMobileFilterUI(resultLen) {
   if (filterApplyCount) filterApplyCount.textContent = inr(resultLen);
 }
 
-const filterOpenBtn = document.getElementById('filterOpen');
 if (filterOpenBtn) filterOpenBtn.addEventListener('click', function () { setDrawer(true); });
 const filterCloseBtn = document.getElementById('filterClose');
 if (filterCloseBtn) filterCloseBtn.addEventListener('click', function () { setDrawer(false); });
@@ -392,6 +444,19 @@ if (sidebar) {
 }
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && sidebar && sidebar.classList.contains('open')) setDrawer(false);
+  if (e.key === 'Tab' && sidebar && sidebar.classList.contains('open')) {
+    const focusable = Array.from(sidebar.querySelectorAll('button, select, input, [href], [tabindex]:not([tabindex="-1"])'))
+      .filter((el) => !el.disabled && el.getClientRects().length);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last?.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first?.focus();
+    }
+  }
   // Keyboard shortcut '/' to search
   if (e.key === '/' && document.activeElement !== searchInput && !['input', 'textarea', 'select'].includes(document.activeElement.tagName.toLowerCase())) {
     e.preventDefault();
@@ -434,8 +499,6 @@ if (loadMoreBtn) {
   });
 }
 
-renderTypeButtons();
-
 // ─── URL Parameters Handling ───────────────────────────
 const params = new URLSearchParams(window.location.search);
 if (params.get('search')) {
@@ -471,12 +534,21 @@ if (regionSel) regionSel.value = filters.region;
 if (seasonSel) seasonSel.value = filters.season;
 if (monthSel) monthSel.value = filters.month ? String(filters.month) : '';
 
+// Render category pill buttons with active state from URL / defaults
+renderTypeButtons();
+
 setActiveNav(filters.type ? 'destinations.html?type=' + filters.type : 'destinations.html');
 
 // ─── Initial Render ────────────────────────────────────
 apply();
 
+
 // ─── GSAP Motion Engine ────────────────────────────────
+// Register ScrollTrigger immediately so card reveal works on first render
+if (window.gsap && window.ScrollTrigger) {
+  window.gsap.registerPlugin(window.ScrollTrigger);
+}
+
 function initGSAPAnimations() {
   if (!window.gsap) return;
 
@@ -537,4 +609,3 @@ if (document.readyState === 'loading') {
 } else {
   setTimeout(initGSAPAnimations, 50);
 }
-

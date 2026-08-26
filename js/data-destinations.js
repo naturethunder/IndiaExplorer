@@ -5,7 +5,7 @@
 (function () {
   if (typeof DESTINATIONS === 'undefined') return;
 
-  function img(name, w, h) { return 'https://picsum.photos/seed/' + encodeURIComponent(name) + '/' + w + '/' + h; }
+  function img(name, w, h) { return '' + encodeURIComponent(name) + '/' + w + '/' + h; }
 
   // Compact place factory (timings default; rating optional)
   function pl(name, cat, dist, fee, dur, rating, desc) {

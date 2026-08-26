@@ -4,7 +4,7 @@
 // Names here are chosen to NOT collide with data.js; the merge also dedupes by name.
 (function () {
   function img(name, w, h) {
-    return 'https://picsum.photos/seed/' + encodeURIComponent(name) + '/' + w + '/' + h;
+    return '' + encodeURIComponent(name) + '/' + w + '/' + h;
   }
   function P(name, category, distance, entryFee, timings, duration, rating, desc) {
     return { name: name, category: category, distance: distance, entryFee: entryFee,

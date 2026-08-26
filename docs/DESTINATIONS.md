@@ -1,10 +1,13 @@
-## Image Enrichment Progress (Active Milestone: 2026-08-20)
+# 🧭 IndiaExplore — Destinations by State
 
-- **Fully Enriched Destinations**: **2,240 / 2,389 (93.8%)**
-- **Nearby Places Enriched**: **14,001** (with exactly 3 unique photos each)
-- **Total Applied Image Assets**: **55,681 Photos**
-- **100% Completed States**: **30 States & UTs**
-- **Duplicate Rate**: **0% (Verified Unique Across All Destinations)**
+> Auto-generated reference: every one of the **2,389 destinations** grouped by state/UT,
+> with its **best travel months** and **price per night** (min–max, taken from the
+> cheapest and most expensive real listing for that destination).
+>
+> Regenerate with `node scripts/build-destinations-doc.js` after data changes.
+> Last generated: 2026-08-26.
+
+**36 states/UTs · 2,389 destinations**
 
 ## Contents
 

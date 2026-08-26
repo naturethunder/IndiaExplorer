@@ -93,7 +93,12 @@ const server = http.createServer(function (req, res) {
     }
 
     const type = MIME[path.extname(targetFile).toLowerCase()] || 'application/octet-stream';
-    const headers = { 'Content-Type': type, 'Cache-Control': 'no-cache' };
+    const headers = {
+      'Content-Type': type,
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
+      'Pragma': 'no-cache',
+      'Expires': '0',
+    };
     const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
     const stream = fs.createReadStream(targetFile);
 
