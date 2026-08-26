@@ -4,30 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IndiaExplore — Discover Incredible India</title>
+  <title>ExploreDesh — Discover Incredible India</title>
   <meta name="description"
     content="Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
-  <link rel="canonical" href="https://www.indiaexplore.example/index.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#080A0F" />
+  <link rel="canonical" href="https://exploredesh.com/index.html" />
   <!-- Static OG/Twitter for JS-less social scrapers (runtime seo.js overwrites/extends). -->
-  <meta property="og:title" content="IndiaExplore — Discover Incredible India" />
+  <meta property="og:title" content="ExploreDesh — Discover Incredible India" />
   <meta property="og:description"
     content="Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="IndiaExplore" />
+  <meta property="og:site_name" content="ExploreDesh" />
   <meta property="og:image"
     content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="IndiaExplore — Discover Incredible India" />
+  <meta name="twitter:title" content="ExploreDesh — Discover Incredible India" />
   <meta name="twitter:description"
     content="Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
   <meta name="twitter:image"
     content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="fonts/caveat-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <!-- Hero bg is the LCP element (CSS background — invisible to the preload scanner). -->
-  <link rel="preconnect" href="https://upload.wikimedia.org" />
-  <link rel="preload" as="image" fetchpriority="high"
-    href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pangong_Tso_lake_banner.jpg/1280px-Pangong_Tso_lake_banner.jpg" />
+  <!-- Google Fonts: Cinzel, Playfair Display & Plus Jakarta Sans for Royal Gold Theme -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="css/glass-immersive.css" />
@@ -64,7 +66,7 @@
             </h1>
 
             <p class="text-white/85 text-lg mt-5 mb-8 max-w-xl animate-fade-up delay-100">
-              Discover incredible places across India with IndiaExplore
+              Discover incredible places across India with ExploreDesh
             </p>
 
             <!-- Segmented search bar (search input + Where/When/Travelers + wiring) -->
@@ -355,9 +357,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "IndiaExplore",
-    "url": "https://www.indiaexplore.example",
-    "logo": "https://www.indiaexplore.example/images/favicon.svg",
+    "name": "ExploreDesh",
+    "url": "https://exploredesh.com",
+    "logo": "https://exploredesh.com/images/favicon.svg",
     "description": "India's most comprehensive travel planning platform with 2,389 destinations across 36 states."
   }
   </script>
@@ -365,14 +367,14 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "IndiaExplore",
-    "url": "https://www.indiaexplore.example",
+    "name": "ExploreDesh",
+    "url": "https://exploredesh.com",
     "description": "Discover India's most beautiful destinations, plan trips, and find the best hotels.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.indiaexplore.example/destinations.html?q={search_term_string}"
+        "urlTemplate": "https://exploredesh.com/destinations.html?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

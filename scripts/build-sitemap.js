@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const ORIGIN = (process.env.SITE_ORIGIN || 'https://www.indiaexplore.example').replace(/\/$/, '');
+const ORIGIN = (process.env.SITE_ORIGIN || 'https://exploredesh.com').replace(/\/$/, '');
 const idx = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'destinations', 'index.json'), 'utf8'));
 
 // Static pages with crawl priorities.

@@ -19,7 +19,7 @@ function xmlEscape(s) {
 
 function stubHTML(d) {
   const url = '/destination.html?slug=' + encodeURIComponent(d.slug);
-  const title = xmlEscape(d.title + ' Travel Guide — Places, Hotels, How to Reach | IndiaExplore');
+  const title = xmlEscape(d.title + ' Travel Guide — Places, Hotels, How to Reach | ExploreDesh');
   const desc = xmlEscape((d.short || '').replace(/\s+$/, '') + ' Plan your ' + d.title + ' trip: top attractions, stays and how to reach.');
   const imgUrl = xmlEscape((d.heroImage && d.heroImage.src) || (d.image && d.image.src) || '');
   return '<!DOCTYPE html>\n' +

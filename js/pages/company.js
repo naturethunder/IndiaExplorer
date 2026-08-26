@@ -9,24 +9,24 @@ import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
 const PAGES = {
   'about.html': {
     active: 'about',
-    title: 'About Us — IndiaExplore',
-    description: "Learn about IndiaExplore — India's most thoughtful travel discovery platform. Our mission, story, and the values behind 2,389 destinations across 36 states & UTs.",
+    title: 'About Us — ExploreDesh',
+    description: "Learn about ExploreDesh — India's most thoughtful travel discovery platform. Our mission, story, and the values behind 2,389 destinations across 36 states & UTs.",
     crumb: 'About Us',
-    keywords: ['about indiaexplore', 'india travel platform', 'curated india destinations'],
+    keywords: ['about exploredesh', 'india travel platform', 'curated india destinations'],
   },
   'privacy.html': {
     active: '',
-    title: 'Privacy Policy — IndiaExplore',
-    description: 'IndiaExplore Privacy Policy — what information we collect, how we use it, and the third-party services (weather, maps, photos) we rely on.',
+    title: 'Privacy Policy — ExploreDesh',
+    description: 'ExploreDesh Privacy Policy — what information we collect, how we use it, and the third-party services (weather, maps, photos) we rely on.',
     crumb: 'Privacy Policy',
-    keywords: ['indiaexplore privacy policy'],
+    keywords: ['exploredesh privacy policy'],
   },
   'terms.html': {
     active: '',
-    title: 'Terms of Use — IndiaExplore',
-    description: 'The terms and conditions of using the IndiaExplore travel discovery website.',
+    title: 'Terms of Use — ExploreDesh',
+    description: 'The terms and conditions of using the ExploreDesh travel discovery website.',
     crumb: 'Terms of Use',
-    keywords: ['indiaexplore terms of use'],
+    keywords: ['exploredesh terms of use'],
   },
 };
 

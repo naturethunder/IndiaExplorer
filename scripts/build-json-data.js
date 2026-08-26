@@ -317,7 +317,7 @@ function toDestinationJSON(d) {
       : (d.photos || []).map((u, i) => ({ src: sanitizeUrl(u, hero), alt: `${d.name} photo ${i + 1}` })).filter((g) => g.src),
     faq: buildFaq(d),
     seo: {
-      title: `${d.name} Travel Guide ${YEAR} — Places, Hotels, How to Reach | IndiaExplore`,
+      title: `${d.name} Travel Guide ${YEAR} — Places, Hotels, How to Reach | ExploreDesh`,
       description: `${(d.shortDesc || '').replace(/\s+$/, '')} Plan your ${d.name} trip: ${(d.places || []).length} places to visit, ${(d.stays || []).length} stays from ₹${d.minPrice || 0}/night, best time (${d.bestMonths}) and routes.`.slice(0, 300),
       canonical: `destination.html?slug=${d.id}`,
       ogImage: hero,

@@ -1,4 +1,4 @@
-# 🇮🇳 IndiaExplore — Luxury Travel Discovery Platform
+# 🇮🇳 ExploreDesh — Luxury Travel Discovery Platform
 
 > **System Status (2026-08-26):** **2,389 Destinations** across all 36 States & UTs. Full-screen responsive glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography, image-free hotel cards with direct Google search integration, and zero broken/placeholder media repository-wide.
 

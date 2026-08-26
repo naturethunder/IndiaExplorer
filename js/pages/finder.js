@@ -16,7 +16,7 @@ import { icon } from '../components/icons.js';
 initLayout({ active: 'finder' });
 
 applySEO({
-  title: 'AI Trip Finder — IndiaExplore',
+  title: 'AI Trip Finder — ExploreDesh',
   description: 'Describe your ideal trip in plain English and let the AI Trip Finder match you to the perfect Indian destinations — by type, budget, month, region and vibe. No signup, works instantly.',
   canonicalPath: 'ai-finder.html',
   keywords: ['ai trip planner india', 'india trip finder', 'where to travel in india', 'india destination search'],
@@ -110,14 +110,14 @@ const HOTEL_BRANDS = ['taj', 'oberoi', 'jw marriott', 'marriott', 'radisson', 'i
 
 // Website info topics — so anyone can search the site itself, not just destinations.
 const SITE_INFO = [
-  { keys: ['contact', 'email address', 'phone number', 'get in touch', 'reach the team', 'reach you', 'helpline', 'customer support', 'support team'], icon: 'mail', title: 'Contact us', body: 'Reach the IndiaExplore team — send a message and we reply within 1–2 business days.', link: 'contact.html', cta: 'Open contact page' },
-  { keys: ['about indiaexplore', 'about the site', 'about us', 'who made', 'who runs', 'who are you', 'your company', 'about you', 'the team'], icon: 'globe', title: 'About IndiaExplore', body: 'A guide to 2,389 destinations across all 36 states & UTs of India.', link: 'about.html', cta: 'About us' },
-  { keys: ['privacy', 'cookie', 'my data', 'personal data', 'personal information'], icon: 'shield-check', title: 'Privacy policy', body: 'How IndiaExplore handles your data.', link: 'privacy.html', cta: 'Read privacy policy' },
-  { keys: ['terms', 'conditions', 'disclaimer', 'liability'], icon: 'book-open', title: 'Terms & conditions', body: 'The terms of using IndiaExplore.', link: 'terms.html', cta: 'Read terms' },
+  { keys: ['contact', 'email address', 'phone number', 'get in touch', 'reach the team', 'reach you', 'helpline', 'customer support', 'support team'], icon: 'mail', title: 'Contact us', body: 'Reach the ExploreDesh team — send a message and we reply within 1–2 business days.', link: 'contact.html', cta: 'Open contact page' },
+  { keys: ['about exploredesh', 'about indiaexplore', 'about the site', 'about us', 'who made', 'who runs', 'who are you', 'your company', 'about you', 'the team'], icon: 'globe', title: 'About ExploreDesh', body: 'A guide to 2,389 destinations across all 36 states & UTs of India.', link: 'about.html', cta: 'About us' },
+  { keys: ['privacy', 'cookie', 'my data', 'personal data', 'personal information'], icon: 'shield-check', title: 'Privacy policy', body: 'How ExploreDesh handles your data.', link: 'privacy.html', cta: 'Read privacy policy' },
+  { keys: ['terms', 'conditions', 'disclaimer', 'liability'], icon: 'book-open', title: 'Terms & conditions', body: 'The terms of using ExploreDesh.', link: 'terms.html', cta: 'Read terms' },
   { keys: ['weather', 'temperature', 'climate', 'forecast'], icon: 'cloud-rain', title: 'Live weather', body: 'Every destination page shows live, real-time weather for that location.', link: 'destinations.html', cta: 'Browse destinations' },
   { keys: ['how to reach', 'how do i reach', 'how to get to', 'nearest airport', 'nearest railway', 'directions to'], icon: 'compass', title: 'How to reach', body: 'Each destination page has a “Reach” tab with nearest airport/railway, road notes and an interactive map.', link: 'destinations.html', cta: 'Browse destinations' },
   { keys: ['how to book', 'booking', 'reserve a', 'make a reservation', 'book a hotel', 'book a stay'], icon: 'bed', title: 'Stays & booking', body: 'Open any destination and check the “Stays” tab — hotels for every budget with booking links.', link: 'destinations.html', cta: 'Browse destinations' },
-  { keys: ['how many destinations', 'how many places', 'total destinations', 'number of destinations', 'how many states'], icon: 'trending-up', title: '2,389 destinations', body: 'IndiaExplore covers 2,389 destinations across all 36 states & union territories.', link: 'destinations.html', cta: 'See all destinations' },
+  { keys: ['how many destinations', 'how many places', 'total destinations', 'number of destinations', 'how many states'], icon: 'trending-up', title: '2,389 destinations', body: 'ExploreDesh covers 2,389 destinations across all 36 states & union territories.', link: 'destinations.html', cta: 'See all destinations' },
 ];
 
 // ─── Parser: natural language → structured intent ───────

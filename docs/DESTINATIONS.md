@@ -1,4 +1,4 @@
-# 🧭 IndiaExplore — Destinations by State
+# 🧭 ExploreDesh — Destinations by State
 
 > Auto-generated reference: every one of the **2,389 destinations** grouped by state/UT,
 > with its **best travel months** and **price per night** (min–max, taken from the

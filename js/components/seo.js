@@ -43,7 +43,7 @@ export function applySEO(opts) {
   setMeta('property', 'og:description', opts.description);
   setMeta('property', 'og:url', canonical);
   setMeta('property', 'og:type', opts.type || 'website');
-  setMeta('property', 'og:site_name', 'IndiaExplore');
+  setMeta('property', 'og:site_name', 'ExploreDesh');
   if (opts.ogImage) setMeta('property', 'og:image', absUrl(opts.ogImage));
 
   setMeta('name', 'twitter:card', opts.ogImage ? 'summary_large_image' : 'summary');

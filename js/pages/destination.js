@@ -55,7 +55,7 @@ let slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, 
 
 // Fallback to recently visited destination if no parameter is provided
 if (!slug) {
-  slug = localStorage.getItem('indiaexplore_last_destination') || 'kanatal';
+  slug = localStorage.getItem('exploredesh_last_destination') || localStorage.getItem('indiaexplore_last_destination') || 'kanatal';
 }
 
 let dest = null;
@@ -64,7 +64,7 @@ if (slug) {
   try {
     [dest, idx] = await Promise.all([fetchDestination(slug), fetchIndex()]);
     if (dest && dest.slug) {
-      localStorage.setItem('indiaexplore_last_destination', dest.slug);
+      localStorage.setItem('exploredesh_last_destination', dest.slug);
     }
   } catch (e) {
     dest = null;
@@ -108,7 +108,7 @@ function main(dest, idx) {
 
   // Build a safe seo object even when dest.seo is missing
   const seoObj = dest.seo || {
-    title: (dest.title || 'Destination') + ' Travel Guide 2026 — Places, Hotels | IndiaExplore',
+    title: (dest.title || 'Destination') + ' Travel Guide 2026 — Places, Hotels | ExploreDesh',
     description: dest.short || dest.description || 'Explore top places to visit and best hotels.',
     canonical: 'destination.html?slug=' + encodeURIComponent(dest.slug || ''),
     ogImage: heroSrc,

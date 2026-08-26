@@ -5,7 +5,7 @@
    ========================================================= */
 
 body.glass-immersive {
-  background: #0a1015 !important;
+  background: #080a0f !important;
   color: rgba(255, 255, 255, 0.95) !important;
   overflow-x: hidden;
 }
@@ -28,9 +28,9 @@ body.glass-immersive {
   inset: 0;
   z-index: 1;
   background: linear-gradient(180deg,
-      rgba(8, 20, 25, 0.40) 0%,
-      rgba(8, 20, 25, 0.65) 40%,
-      rgba(8, 20, 25, 0.85) 100%);
+      rgba(8, 10, 15, 0.45) 0%,
+      rgba(8, 10, 15, 0.72) 40%,
+      rgba(8, 10, 15, 0.92) 100%);
   pointer-events: none;
 }
 
@@ -80,15 +80,27 @@ body.glass-immersive .nav-link {
 
 body.glass-immersive .brand-mark,
 .nav-glass .brand-mark {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.85), rgba(5, 150, 105, 0.90)) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(52, 211, 153, 0.6) !important;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
+  color: #080a0f !important;
+  border: 1px solid rgba(229, 192, 123, 0.7) !important;
+  box-shadow: 0 4px 18px rgba(229, 192, 123, 0.45) !important;
   padding: 0.4rem !important;
   border-radius: 0.65rem !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+body.glass-immersive .text-primary,
+.nav-glass .text-primary,
+footer .text-primary,
+.text-primary {
+  color: #E5C07B !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
 }
 
 body.glass-immersive .nav-link,
@@ -98,8 +110,8 @@ body.glass-immersive .nav-link,
   padding: 0.42rem 1.05rem !important;
   border-radius: 9999px !important;
   transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  background: rgba(255, 255, 255, 0.07) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
@@ -108,19 +120,19 @@ body.glass-immersive .nav-link,
 body.glass-immersive .nav-link:hover,
 .nav-glass .nav-link:hover {
   color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.18) !important;
-  border-color: rgba(74, 222, 128, 0.5) !important;
+  background: rgba(229, 192, 123, 0.16) !important;
+  border-color: rgba(229, 192, 123, 0.6) !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 4px 16px rgba(229, 192, 123, 0.25) !important;
 }
 
 body.glass-immersive .nav-link.active,
 .nav-glass .nav-link.active {
-  color: #ffffff !important;
+  color: #080a0f !important;
   font-weight: 700 !important;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.88), rgba(5, 150, 105, 0.92)) !important;
-  border: 1px solid rgba(52, 211, 153, 0.65) !important;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  border: 1px solid rgba(229, 192, 123, 0.8) !important;
+  box-shadow: 0 4px 18px rgba(229, 192, 123, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
 }
 
 body.glass-immersive .nav-link::after,
@@ -166,12 +178,12 @@ body.glass-immersive .month-tab,
 body.glass-immersive [data-dest-card],
 body.glass-immersive .bg-white:not(section):not(main):not(body):not(nav):not(.rating-badge):not(.rating-badge *):not(button):not(input):not(.badge),
 body.glass-immersive .bg-gray-50:not(section):not(main):not(body):not(nav):not(button) {
-  background: rgba(15, 23, 42, 0.85) !important;
+  background: rgba(14, 19, 30, 0.82) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border: 1px solid rgba(229, 192, 123, 0.16) !important;
   border-radius: 1.25rem !important;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.40) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), 0 0 25px rgba(229, 192, 123, 0.04) !important;
 }
 
 body.glass-immersive .category-strip {
@@ -179,7 +191,8 @@ body.glass-immersive .category-strip {
   max-width: 100% !important;
   padding: 1.25rem 1.5rem !important;
   border-radius: 1.5rem !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 30px rgba(229, 192, 123, 0.06) !important;
+  border: 1px solid rgba(229, 192, 123, 0.22) !important;
 }
 
 body.glass-immersive #category-strip.carousel-row {
@@ -219,10 +232,10 @@ body.glass-immersive .category-chip {
 }
 
 body.glass-immersive .category-chip:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: rgba(74, 222, 128, 0.5) !important;
+  background: rgba(229, 192, 123, 0.12) !important;
+  border-color: rgba(229, 192, 123, 0.6) !important;
   transform: translateY(-5px) scale(1.03) !important;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 192, 123, 0.25) !important;
 }
 
 body.glass-immersive .category-chip-icon {
@@ -239,7 +252,7 @@ body.glass-immersive .category-chip-icon {
 
 body.glass-immersive .category-chip:hover .category-chip-icon {
   transform: scale(1.14) rotate(-4deg) !important;
-  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.45) !important;
+  box-shadow: 0 6px 22px rgba(229, 192, 123, 0.5) !important;
 }
 
 body.glass-immersive .category-chip-label {
@@ -252,13 +265,11 @@ body.glass-immersive .category-chip-label {
 }
 
 body.glass-immersive .category-chip-count {
-  color: rgba(255, 255, 255, 0.70) !important;
+  color: rgba(229, 192, 123, 0.85) !important;
   font-size: 0.74rem !important;
   white-space: nowrap !important;
   margin-top: 0.15rem !important;
 }
-
-
 
 body.glass-immersive .budget-card {
   text-decoration: none !important;
@@ -281,9 +292,9 @@ body.glass-immersive .card:hover,
 body.glass-immersive .budget-card:hover,
 body.glass-immersive .dest-summary-card:hover,
 body.glass-immersive .category-chip:hover {
-  background: rgba(15, 23, 42, 0.80) !important;
-  border-color: rgba(74, 222, 128, 0.45) !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.50) !important;
+  background: rgba(18, 24, 38, 0.88) !important;
+  border-color: rgba(229, 192, 123, 0.55) !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.65), 0 0 30px rgba(229, 192, 123, 0.20) !important;
 }
 
 /* ─── Text Contrast & Typography ──────────────────────────────────── */
@@ -612,23 +623,30 @@ body.glass-immersive .autocomplete-item .text-gray-500 {
 
 body.glass-immersive .autocomplete-item:hover,
 body.glass-immersive .autocomplete-item.is-active {
-  background: rgba(34, 197, 94, 0.22) !important;
-  outline: 1px solid #4ade80 !important;
+  background: rgba(229, 192, 123, 0.20) !important;
+  outline: 1px solid #E5C07B !important;
 }
 
 /* ─── Buttons, Links & Pills ─────────────────────────────────────────────── */
 body.glass-immersive .btn-primary {
-  background: linear-gradient(135deg, #16a34a, #15803d) !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 20px rgba(22, 163, 74, 0.40) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  color: #080a0f !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 20px rgba(229, 192, 123, 0.45) !important;
   border: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(229, 192, 123, 0.6) !important;
 }
 
 body.glass-immersive .btn-outline,
 body.glass-immersive a.btn-outline {
   background: rgba(10, 15, 22, 0.85) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #E5C07B !important;
+  border: 1px solid rgba(229, 192, 123, 0.35) !important;
   backdrop-filter: blur(20px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45) !important;
@@ -639,10 +657,10 @@ body.glass-immersive a.btn-outline {
 
 body.glass-immersive .btn-outline:hover,
 body.glass-immersive a.btn-outline:hover {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
-  color: #ffffff !important;
-  border-color: #34d399 !important;
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.50) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  color: #080a0f !important;
+  border-color: #E5C07B !important;
+  box-shadow: 0 8px 24px rgba(229, 192, 123, 0.50) !important;
   transform: translateY(-1px) !important;
 }
 
@@ -653,12 +671,12 @@ body.glass-immersive a.section-link {
   gap: 0.4rem !important;
   font-size: 0.88rem !important;
   font-weight: 600 !important;
-  color: #34d399 !important;
+  color: #E5C07B !important;
   text-decoration: none !important;
   padding: 0.45rem 1rem !important;
   border-radius: 9999px !important;
   background: rgba(10, 15, 22, 0.85) !important;
-  border: 1px solid rgba(52, 211, 153, 0.45) !important;
+  border: 1px solid rgba(229, 192, 123, 0.40) !important;
   backdrop-filter: blur(20px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.40) !important;
@@ -667,11 +685,11 @@ body.glass-immersive a.section-link {
 
 body.glass-immersive .section-link:hover,
 body.glass-immersive a.section-link:hover {
-  color: #ffffff !important;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
-  border-color: #34d399 !important;
+  color: #080a0f !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  border-color: #E5C07B !important;
   transform: translateY(-1px) translateX(2px) !important;
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.50) !important;
+  box-shadow: 0 8px 24px rgba(229, 192, 123, 0.50) !important;
 }
 
 /* ─── Equal Height & Size for Trending Destinations & Explore India Map ── */
@@ -701,12 +719,12 @@ body.glass-immersive .trend-card {
 
 /* ─── India Map Floating Popover Card & 2-Column Side-by-Side Layout ── */
 body.glass-immersive .discover-map-inner {
-  background: rgba(15, 23, 42, 0.80) !important;
+  background: rgba(14, 19, 30, 0.82) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid rgba(229, 192, 123, 0.22) !important;
   border-radius: 1.25rem !important;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55), 0 0 25px rgba(229, 192, 123, 0.05) !important;
   padding: 1.25rem 1.5rem !important;
   display: flex !important;
   flex-direction: row !important;
@@ -735,12 +753,12 @@ body.glass-immersive .india-map-card {
   width: 36% !important;
   min-width: 190px !important;
   margin: 0 !important;
-  background: rgba(15, 23, 42, 0.90) !important;
+  background: rgba(14, 19, 30, 0.92) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  border: 1px solid rgba(229, 192, 123, 0.25) !important;
   border-radius: 1.25rem !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65) !important;
   z-index: 10 !important;
   pointer-events: auto !important;
 }
@@ -771,24 +789,27 @@ body.glass-immersive .india-state {
 }
 
 body.glass-immersive .india-state:not(.is-empty) {
-  fill: #86efac !important;
-  stroke: #0f172a !important;
+  fill: #D4AF37 !important;
+  stroke: #080A0F !important;
   stroke-width: 1.2px !important;
   cursor: pointer !important;
+  opacity: 0.75;
 }
 
 body.glass-immersive .india-state:not(.is-empty):hover {
-  fill: #4ade80 !important;
+  fill: #FDE047 !important;
   stroke: #ffffff !important;
   stroke-width: 2px !important;
-  filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.9)) !important;
+  opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(229, 192, 123, 0.95)) !important;
 }
 
 body.glass-immersive .india-state.is-active {
-  fill: #22c55e !important;
+  fill: #E5C07B !important;
   stroke: #ffffff !important;
   stroke-width: 2.2px !important;
-  filter: drop-shadow(0 0 14px rgba(34, 197, 94, 0.95)) !important;
+  opacity: 1;
+  filter: drop-shadow(0 0 16px rgba(229, 192, 123, 1)) !important;
 }
 
 /* ─── Footer Glass Styling ────────────────────────────────────────── */
@@ -932,8 +953,8 @@ header.dest-discovery-toolbar {
 }
 
 #searchInput:focus {
-  border-color: #4ade80 !important;
-  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.35) !important;
+  border-color: #E5C07B !important;
+  box-shadow: 0 0 0 3px rgba(229, 192, 123, 0.35) !important;
 }
 
 /* Category Filter Chips */
@@ -964,24 +985,24 @@ header.dest-discovery-toolbar {
 #typeFilter button:hover {
   background: rgba(15, 23, 42, 0.90) !important;
   color: #ffffff !important;
-  border-color: rgba(74, 222, 128, 0.5) !important;
+  border-color: rgba(229, 192, 123, 0.6) !important;
   transform: translateY(-1px) !important;
 }
 
 #typeFilter button.active,
 #typeFilter button[aria-selected="true"],
 .category-pill-btn.active {
-  background: linear-gradient(135deg, #10b981, #059669) !important;
-  color: #ffffff !important;
-  border-color: #34d399 !important;
-  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  color: #080a0f !important;
+  border-color: #E5C07B !important;
+  box-shadow: 0 4px 18px rgba(229, 192, 123, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   font-weight: 700 !important;
 }
 
 #typeFilter button.active svg,
 .category-pill-btn.active svg {
-  color: #ffffff !important;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+  color: #080a0f !important;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
 }
 
 

@@ -13,7 +13,7 @@ import { icon } from '../components/icons.js';
 initLayout({ active: 'destinations' });
 
 applySEO({
-  title: 'All Destinations — IndiaExplore | Complete Catalogue of Bharat',
+  title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
   description: 'Browse 2,389 travel destinations across all 36 states & UTs of India. Filter by type, state, budget and travel month.',
   canonicalPath: 'destinations.html',
   keywords: ['india destinations', 'places to visit in india', 'india travel by budget', 'best travel months india'],

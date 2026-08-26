@@ -1,4 +1,4 @@
-# 🔍 IndiaExplore — Production Audit & Fix Log
+# 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
 > (QA, frontend, UX, accessibility, SEO, performance, security) run on **2026-07-11** and

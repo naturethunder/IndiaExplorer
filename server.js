@@ -1,5 +1,5 @@
 /**
- * server.js — Local dev server for IndiaExplorer with correct MIME types.
+ * server.js — Local dev server for ExploreDesh with correct MIME types.
  * Run: node server.js
  */
 const http = require('http');
@@ -57,7 +57,7 @@ http.createServer((req, res) => {
     res.end('500 Server Error');
   }
 }).listen(PORT, () => {
-  console.log('✅ IndiaExplorer server running at http://localhost:' + PORT);
+  console.log('✅ ExploreDesh server running at http://localhost:' + PORT);
   console.log('   Serving from: ' + ROOT);
   console.log('   Correct MIME types: JS, CSS, JSON, fonts, images');
 });

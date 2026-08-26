@@ -1,4 +1,4 @@
-# IndiaExplore — Project Guide (updated 2026-08-26)
+# ExploreDesh — Project Guide (updated 2026-08-26)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.

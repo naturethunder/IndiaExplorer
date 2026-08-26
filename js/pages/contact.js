@@ -19,10 +19,10 @@ const WEB3FORMS_ACCESS_KEY = 'f5711d49-3704-4174-a94b-480dc0cfc42c';
 initLayout({ variant: 'company', active: 'contact' });
 
 applySEO({
-  title: 'Contact Us — IndiaExplore',
-  description: 'Get in touch with the IndiaExplore team — questions, feedback, partnership enquiries or destination suggestions.',
+  title: 'Contact Us — ExploreDesh',
+  description: 'Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.',
   canonicalPath: 'contact.html',
-  keywords: ['contact indiaexplore', 'indiaexplore support'],
+  keywords: ['contact exploredesh', 'exploredesh support'],
 });
 injectJsonLd(breadcrumbJsonLd([
   { name: 'Home', path: 'index.html' },
@@ -68,8 +68,8 @@ form.addEventListener('submit', function (e) {
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify({
       access_key: WEB3FORMS_ACCESS_KEY,
-      subject: subject || ('New message from ' + name + ' — IndiaExplore'),
-      from_name: 'IndiaExplore Contact Form',
+      subject: subject || ('New message from ' + name + ' — ExploreDesh'),
+      from_name: 'ExploreDesh Contact Form',
       name: name,
       email: email,         // shown in the email; used as reply-to below
       replyto: email,

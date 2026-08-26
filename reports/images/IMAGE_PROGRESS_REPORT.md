@@ -1,4 +1,4 @@
-# 🇮🇳 IndiaExplore — Image Pipeline & Destination Enrichment Master Report
+# 🇮🇳 ExploreDesh — Image Pipeline & Destination Enrichment Master Report
 
 **Last Updated:** 2026-08-26
 

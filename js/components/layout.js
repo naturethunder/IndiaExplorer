@@ -31,9 +31,9 @@ function navbarHTML(active, variant) {
     '<a href="' + l.href + '" class="nav-link' + (l.key === active ? ' active' : '') + '">' + l.label + '</a>'
   ).join('\n        ');
   const brand =
-    '<a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="IndiaExplore home">\n' +
+    '<a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
     '      <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
-    '      <span class="font-bold text-lg tracking-tight text-white">India<span class="text-primary">Explore</span></span>\n' +
+    '      <span class="font-bold text-lg tracking-tight text-white">Explore<span class="text-primary">Desh</span></span>\n' +
     '    </a>';
   return (
     '<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation">\n' +
@@ -120,20 +120,20 @@ function footerHTML() {
     '      <div class="col-span-2">\n' +
     '        <div class="flex items-center gap-2.5 mb-4">\n' +
     '          <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
-    '          <span class="font-bold text-lg text-white">India<span class="text-primary">Explore</span></span>\n' +
+    '          <span class="font-bold text-lg text-white">Explore<span class="text-primary">Desh</span></span>\n' +
     '        </div>\n' +
     '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-5">India\'s most thoughtful travel discovery platform. Find your perfect destination, compare prices honestly.</p>\n' +
     '        <div class="flex items-center gap-2">\n' +
-    '          ' + socialBtn('facebook', 'IndiaExplore on Facebook', '#') + '\n' +
-    '          ' + socialBtn('instagram', 'IndiaExplore on Instagram', '#') + '\n' +
-    '          ' + socialBtn('twitter', 'IndiaExplore on X', '#') + '\n' +
-    '          ' + socialBtn('youtube', 'IndiaExplore on YouTube', '#') + '\n' +
+    '          ' + socialBtn('facebook', 'ExploreDesh on Facebook', '#') + '\n' +
+    '          ' + socialBtn('instagram', 'ExploreDesh on Instagram', '#') + '\n' +
+    '          ' + socialBtn('twitter', 'ExploreDesh on X', '#') + '\n' +
+    '          ' + socialBtn('youtube', 'ExploreDesh on YouTube', '#') + '\n' +
     '        </div>\n' +
     '      </div>\n' +
     cols + '\n' +
     '    </div>\n' +
     '    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">\n' +
-    '      <p class="text-gray-400 text-sm">© 2026 IndiaExplore. All rights reserved.</p>\n' +
+    '      <p class="text-gray-400 text-sm">© 2026 ExploreDesh. All rights reserved.</p>\n' +
     '      <p class="text-gray-400 text-xs inline-flex items-center gap-1.5">Made with ' +
     '<span class="text-primary" aria-hidden="true">' + icon('heart', { size: 14, fill: true }) + '</span> in India</p>\n' +
     '    </div>\n' +

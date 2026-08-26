@@ -1,4 +1,4 @@
-// IndiaExplore — extra places & hotels (OYO / Airbnb / famous chains)
+// ExploreDesh — extra places & hotels (OYO / Airbnb / famous chains)
 // Loaded AFTER data.js. Merges additional places and stays into DESTINATIONS.
 // Schema is kept identical to data.js so the vanilla renderers work unchanged.
 // Names here are chosen to NOT collide with data.js; the merge also dedupes by name.

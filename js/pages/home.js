@@ -15,7 +15,7 @@ const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-re
 initLayout({ active: 'home' });
 
 applySEO({
-  title: 'IndiaExplore — Discover Incredible India',
+  title: 'ExploreDesh — Discover Incredible India',
   description: "Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip.",
   canonicalPath: 'index.html',
   keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner'],
@@ -23,7 +23,7 @@ applySEO({
 injectJsonLd({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'IndiaExplore',
+  name: 'ExploreDesh',
   url: new URL('index.html', window.location.href).href,
   potentialAction: {
     '@type': 'SearchAction',
@@ -66,13 +66,13 @@ injectJsonLd(breadcrumbJsonLd([{ name: 'Home', path: 'index.html' }]));
     const indicatorEl = document.getElementById('hero-photo-indicator');
     if (indicatorEl) {
       indicatorEl.innerHTML = `
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-white/20 backdrop-blur-md shadow-lg text-xs font-semibold text-white">
-          <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" width="14" height="14" style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span class="inline-flex items-center gap-1">${icon('map-pin', { size: 14 })} Featured: <strong class="text-emerald-300 font-bold">${photo.name}</strong> (${photo.state})</span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/80 border border-amber-400/30 backdrop-blur-md shadow-lg text-xs font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400 shrink-0" width="14" height="14" style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span class="inline-flex items-center gap-1">${icon('map-pin', { size: 14 })} Featured: <strong class="text-amber-300 font-bold">${photo.name}</strong> (${photo.state})</span>
         </div>
         <div class="flex items-center gap-1.5 ml-1">
           ${HERO_PHOTOS.map((_, idx) => `
-            <button type="button" data-hero-idx="${idx}" class="h-2 rounded-full transition-all duration-300 ${idx === currentIdx ? 'bg-emerald-400 w-6 shadow-sm shadow-emerald-400' : 'bg-white/40 hover:bg-white/80 w-2'}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}></button>
+            <button type="button" data-hero-idx="${idx}" class="h-2 rounded-full transition-all duration-300 ${idx === currentIdx ? 'bg-amber-400 w-6 shadow-sm shadow-amber-400' : 'bg-white/40 hover:bg-white/80 w-2'}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}></button>
           `).join('')}
         </div>
       `;
@@ -189,15 +189,15 @@ function search(q) {
   const el = document.getElementById('hero-stats');
   if (!el) return;
   const stats = [
-    { ic: 'map-pin', num: inr(idx.count || 2389) + '+', label: 'Destinations' },
-    { ic: 'landmark', num: (STATES ? STATES.length : 36), label: 'States' },
-    { ic: 'mountain', num: '13,991+', label: 'Places' },
-    { ic: 'bed', num: '9,764+', label: 'Stays' },
+    { ic: 'map-pin', raw: idx.count || 2389, suffix: '+', label: 'Destinations' },
+    { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
+    { ic: 'mountain', raw: 13991, suffix: '+', label: 'Places' },
+    { ic: 'bed', raw: 9764, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +
     '<span class="hero-stat-icon">' + icon(s.ic, { size: 22 }) + '</span>' +
-    '<span class="hero-stat-body"><strong>' + s.num + '</strong><span class="hero-stat-label">' + esc(s.label) + '</span></span>' +
+    '<span class="hero-stat-body"><strong class="stat-count-num" data-target="' + s.raw + '" data-suffix="' + s.suffix + '">' + inr(s.raw) + s.suffix + '</strong><span class="hero-stat-label">' + esc(s.label) + '</span></span>' +
     '</span>'
   ).join('');
 })();
@@ -784,7 +784,7 @@ function wireCarousel(row, prevBtn, nextBtn) {
   els.forEach((el) => io.observe(el));
 })();
 
-// ─── GSAP ScrollTrigger Motion ─────────────────────────
+// ─── GSAP & ScrollTrigger Animations Suite ─────────────────────────
 (function initHomeGSAP() {
   if (!window.gsap) return;
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -793,49 +793,199 @@ function wireCarousel(row, prevBtn, nextBtn) {
     window.gsap.registerPlugin(window.ScrollTrigger);
   }
 
-  // Hero parallax scrub
+  // 1. Hero Intro Sequence (Page Load Timeline)
+  const heroTL = window.gsap.timeline({ delay: 0.1 });
+  
+  if (document.querySelector('.hero-home h1')) {
+    heroTL.from('.hero-home h1', {
+      opacity: 0,
+      y: 35,
+      duration: 0.85,
+      ease: 'power3.out'
+    });
+  }
+
+  if (document.querySelector('.hero-home p')) {
+    heroTL.from('.hero-home p', {
+      opacity: 0,
+      y: 20,
+      duration: 0.65,
+      ease: 'power2.out'
+    }, '-=0.55');
+  }
+
+  if (document.querySelector('.hero-search-seg')) {
+    heroTL.from('.hero-search-seg', {
+      opacity: 0,
+      scale: 0.95,
+      y: 20,
+      duration: 0.7,
+      ease: 'back.out(1.4)'
+    }, '-=0.45');
+  }
+
+  if (document.querySelectorAll('#popular-searches .popular-chip').length) {
+    heroTL.from('#popular-searches .popular-chip', {
+      opacity: 0,
+      y: 12,
+      stagger: 0.04,
+      duration: 0.45,
+      ease: 'power2.out'
+    }, '-=0.35');
+  }
+
+  if (document.querySelectorAll('.hero-stat').length) {
+    heroTL.from('.hero-stat', {
+      opacity: 0,
+      y: 18,
+      stagger: 0.08,
+      duration: 0.6,
+      ease: 'power2.out'
+    }, '-=0.25');
+  }
+
+  if (document.querySelector('.ai-hero-card')) {
+    heroTL.from('.ai-hero-card', {
+      opacity: 0,
+      x: 30,
+      duration: 0.8,
+      ease: 'power3.out'
+    }, '-=0.7');
+  }
+
+  // 2. Dynamic Numeric Stat Counters
+  document.querySelectorAll('.stat-count-num').forEach((el) => {
+    const target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    const suffix = el.getAttribute('data-suffix') || '';
+    const counterObj = { val: 0 };
+    window.gsap.to(counterObj, {
+      val: target,
+      duration: 1.8,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 95%',
+        toggleActions: 'play none none none',
+      },
+      onUpdate: () => {
+        el.textContent = inr(Math.floor(counterObj.val)) + suffix;
+      },
+    });
+  });
+
+  // 3. Hero Depth Parallax on Scroll
   if (window.ScrollTrigger && document.getElementById('heroBg')) {
     window.gsap.to('#heroBg', {
-      yPercent: 18,
+      yPercent: 20,
       ease: 'none',
       scrollTrigger: {
         trigger: '.hero-home',
         start: 'top top',
         end: 'bottom top',
-        scrub: 0.5,
+        scrub: 0.6,
       },
     });
   }
 
-  // Background ambient parallax
+  // 4. Ambient Background Subtle Parallax
   if (window.ScrollTrigger && document.querySelector('.explore-immersive-bg')) {
     window.gsap.to('.explore-immersive-bg', {
-      yPercent: 12,
+      yPercent: 10,
       ease: 'none',
       scrollTrigger: {
         trigger: 'body',
         start: 'top top',
         end: 'bottom bottom',
-        scrub: 0.5,
+        scrub: 0.8,
       },
     });
   }
 
-  // Staggered section entrance triggers
+  // 5. ScrollTrigger Staggered Section Entrances
   if (window.ScrollTrigger) {
-    ['#trending-scroll', '#best-month-grid', '#explore-grid'].forEach((selector) => {
+    // Category strip chips
+    const catStrip = document.getElementById('category-strip');
+    if (catStrip) {
+      window.gsap.fromTo(catStrip.children, {
+        opacity: 0,
+        y: 25,
+        scale: 0.92
+      }, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        stagger: 0.035,
+        duration: 0.55,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: catStrip,
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+      });
+    }
+
+    // Grid sections staggered reveal
+    const gridSelectors = [
+      '#trending-grid',
+      '#month-rail',
+      '#season-grid',
+      '#popular-grid',
+      '#budget-grid',
+      '#hills-grid',
+      '#explore-grid',
+    ];
+
+    gridSelectors.forEach((selector) => {
       const container = document.querySelector(selector);
       if (!container) return;
 
-      window.gsap.from(container.children, {
+      window.gsap.fromTo(container.children, {
         opacity: 0,
-        y: 24,
-        stagger: 0.06,
-        duration: 0.7,
+        y: 32,
+        scale: 0.96
+      }, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.65,
+        stagger: 0.07,
         ease: 'power2.out',
         scrollTrigger: {
           trigger: container,
           start: 'top 88%',
+          toggleActions: 'play none none none',
+        },
+      });
+    });
+
+    // Interactive Map reveal
+    const mapInner = document.querySelector('.discover-map-inner');
+    if (mapInner) {
+      window.gsap.from(mapInner, {
+        opacity: 0,
+        scale: 0.96,
+        y: 30,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: mapInner,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+      });
+    }
+
+    // Section Titles and headers reveal
+    document.querySelectorAll('.section-title').forEach((titleEl) => {
+      window.gsap.from(titleEl, {
+        opacity: 0,
+        y: 18,
+        duration: 0.6,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: titleEl,
+          start: 'top 92%',
           toggleActions: 'play none none none',
         },
       });

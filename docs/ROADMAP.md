@@ -1,4 +1,4 @@
-# 🗺️ IndiaExplore — Roadmap & Plan
+# 🗺️ ExploreDesh — Roadmap & Plan
 
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.

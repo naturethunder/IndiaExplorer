@@ -1,4 +1,4 @@
-// IndiaExplore — 85+ additional travel destinations.
+// ExploreDesh — 85+ additional travel destinations.
 // Loaded AFTER data.js (and data-extra.js). Each destination carries real lat/lng so the
 // live-weather widget and the map work automatically. Stays are generated per destination
 // from OYO / Airbnb / famous-chain templates. Schema matches data.js exactly.
