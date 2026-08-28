@@ -62,12 +62,16 @@ let dest = null;
 let idx = null;
 if (slug) {
   try {
-    [dest, idx] = await Promise.all([fetchDestination(slug), fetchIndex()]);
+    [dest, idx] = await Promise.all([
+      fetchDestination(slug),
+      fetchIndex().catch(() => null),  // Bug 7 fix: fetchIndex failure won't mask dest error
+    ]);
     if (dest && dest.slug) {
       localStorage.setItem('exploredesh_last_destination', dest.slug);
     }
   } catch (e) {
     dest = null;
+    idx = null;
   }
 }
 
@@ -170,7 +174,8 @@ function main(dest, idx) {
   const heroType = document.getElementById('heroType');
   if (heroType) {
     heroType.href = 'destinations.html?type=' + dest.type;
-    heroType.textContent = (typeObj.icon || '') + ' ' + typeLabel(dest.type);
+    // Bug 3 fix: removed emoji typeObj.icon; use plain text label only
+    heroType.textContent = typeLabel(dest.type);
   }
   const heroBadgeEl = document.getElementById('heroBadge');
   if (heroBadgeEl) heroBadgeEl.textContent = dest.badge || typeLabel(dest.type);
@@ -181,14 +186,19 @@ function main(dest, idx) {
 
 
   // ─── Stats bar ──────────────────────────────────────────
+  // Bug 2/19 fix: replaced emoji icons with inline SVGs
+  const SVG_MOUNTAIN = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>';
+  const SVG_CALENDAR = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
+  const SVG_THERMO = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>';
+  const SVG_SNOW = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>';
   let stats = '';
-  if (ov && ov.altitude) stats += '<div class="flex items-center gap-2"><span>🏔️</span><span class="text-gray-300">Altitude:</span><span class="font-semibold">' + inr(ov.altitude) + 'm</span></div>';
+  if (ov && ov.altitude) stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_MOUNTAIN + '</span><span class="text-gray-300">Altitude:</span><span class="font-semibold">' + inr(ov.altitude) + 'm</span></div>';
   const bestLabel = (dest.bestTime && dest.bestTime.label) ? dest.bestTime.label : 'Oct – Mar';
-  stats += '<div class="flex items-center gap-2"><span>📅</span><span class="text-gray-300">Best Time:</span><span class="font-semibold">' + esc(bestLabel) + '</span></div>';
+  stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_CALENDAR + '</span><span class="text-gray-300">Best Time:</span><span class="font-semibold">' + esc(bestLabel) + '</span></div>';
   const tempSummer = (dest.weather && dest.weather.tempSummer) ? dest.weather.tempSummer : '25°C – 40°C';
   const tempWinter = (dest.weather && dest.weather.tempWinter) ? dest.weather.tempWinter : '5°C – 20°C';
-  stats += '<div class="flex items-center gap-2"><span>🌡️</span><span class="text-gray-300">Summer:</span><span class="font-semibold">' + esc(tempSummer) + '</span></div>';
-  stats += '<div class="flex items-center gap-2"><span>❄️</span><span class="text-gray-300">Winter:</span><span class="font-semibold">' + esc(tempWinter) + '</span></div>';
+  stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_THERMO + '</span><span class="text-gray-300">Summer:</span><span class="font-semibold">' + esc(tempSummer) + '</span></div>';
+  stats += '<div class="flex items-center gap-2"><span class="text-emerald-400">' + SVG_SNOW + '</span><span class="text-gray-300">Winter:</span><span class="font-semibold">' + esc(tempWinter) + '</span></div>';
   if (ov && !dest.hideRating && !ov.hideRating && dest.slug !== 'ladakh' && ov.rating) {
     stats += '<div class="flex items-center gap-2 ml-auto"><span class="text-amber-400">★</span><span class="font-bold text-lg">' + esc(ov.rating) + '</span>' +
       '<a href="https://www.google.com/search?q=' + encodeURIComponent(dest.title + ' ' + dest.state + ' reviews') + '#lrd" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white underline text-xs" title="Read ' + esc(dest.title) + ' reviews">(' + inr(ov.reviewCount) + ' reviews)</a></div>';
@@ -337,7 +347,8 @@ function main(dest, idx) {
           '<!-- Counter -->' +
           '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
           '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
-          '📸 Real Photo ' + (idx + 1) + ' of 5 · ' + esc(dest.title) +
+          // Bug 17 fix: use real5Photos.length instead of hardcoded 5
+          'Photo ' + (idx + 1) + ' of ' + real5Photos.length + ' · ' + esc(dest.title) +
           '</span>' +
           '</div>' +
           '<!-- Slide Caption -->' +
@@ -372,22 +383,27 @@ function main(dest, idx) {
       altitudeVal = esc(ov.altitude);
     }
 
+    // Bug 2 fix: replaced emoji icons with SVG icons in summary cards
+    const SVG_MTN = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>';
+    const SVG_CAL = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
+    const SVG_SUN = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>';
+    const SVG_SNW = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>';
     const summaryHighlightsHTML =
       '<div class="dest-summary-grid">' +
       '<div class="dest-summary-card dest-card-altitude">' +
-      '<div class="dest-summary-icon icon-altitude">🏔️</div>' +
+      '<div class="dest-summary-icon icon-altitude">' + SVG_MTN + '</div>' +
       '<div class="min-w-0 flex-1"><div class="dest-summary-label">Altitude</div><div class="dest-summary-val" title="' + altitudeVal + '">' + altitudeVal + '</div></div>' +
       '</div>' +
       '<div class="dest-summary-card dest-card-time">' +
-      '<div class="dest-summary-icon icon-time">📅</div>' +
+      '<div class="dest-summary-icon icon-time">' + SVG_CAL + '</div>' +
       '<div class="min-w-0 flex-1"><div class="dest-summary-label">Best Time</div><div class="dest-summary-val" title="' + bestTimeVal + '">' + bestTimeVal + '</div></div>' +
       '</div>' +
       '<div class="dest-summary-card dest-card-summer">' +
-      '<div class="dest-summary-icon icon-summer">🌡️</div>' +
+      '<div class="dest-summary-icon icon-summer">' + SVG_SUN + '</div>' +
       '<div class="min-w-0 flex-1"><div class="dest-summary-label">Summer Temp</div><div class="dest-summary-val" title="' + summerVal + '">' + summerVal + '</div></div>' +
       '</div>' +
       '<div class="dest-summary-card dest-card-winter">' +
-      '<div class="dest-summary-icon icon-winter">❄️</div>' +
+      '<div class="dest-summary-icon icon-winter">' + SVG_SNW + '</div>' +
       '<div class="min-w-0 flex-1"><div class="dest-summary-label">Winter Temp</div><div class="dest-summary-val" title="' + winterVal + '">' + winterVal + '</div></div>' +
       '</div>' +
       '</div>';
@@ -397,8 +413,9 @@ function main(dest, idx) {
       '<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">' +
       '<div class="lg:col-span-2 space-y-6">' +
       summaryHighlightsHTML +
+      // Bug 13 fix: ov uses 'about' field, not 'description'; fall back gracefully
       '<div><h2 class="text-xl font-bold text-gray-900 mb-3">About ' + esc(dest.title) + '</h2>' +
-      '<p class="text-gray-600 leading-relaxed">' + esc(ov.description) + '</p></div>' +
+      '<p class="text-gray-600 leading-relaxed">' + esc(ov.about || ov.description || dest.short || '') + '</p></div>' +
       '<div><h3 class="font-semibold text-gray-900 mb-3">Known For</h3><div class="flex flex-wrap gap-2">' + features + '</div></div>' +
       '<div><div class="flex items-center justify-between mb-3.5"><h3 class="font-bold text-gray-900 text-lg">Top Places to Visit</h3>' +
       '<button class="text-sm text-primary font-semibold hover:underline flex items-center gap-1" data-goto="places">See all places →</button></div>' +
@@ -426,7 +443,7 @@ function main(dest, idx) {
       '<button class="text-xs text-primary font-semibold" data-goto="stays">View all</button></div>' +
       '<div class="space-y-2">' + staysFrom + '</div></div>' +
       (reach && reach.roadNote ? '<div class="bg-amber-50 border border-amber-200 rounded-xl p-4"><div class="flex items-start gap-2"><span class="text-lg shrink-0">⚠️</span>' +
-      '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Note</p><p class="text-amber-800 text-xs leading-relaxed">' + esc(reach.roadNote) + '</p></div></div></div>' : '') +
+        '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Note</p><p class="text-amber-800 text-xs leading-relaxed">' + esc(reach.roadNote) + '</p></div></div></div>' : '') +
       '</div>' +
       '</div>';
 
@@ -505,9 +522,11 @@ function main(dest, idx) {
       const fee = p.entryFee === 'Free'
         ? '<span class="text-green-600 font-medium">Free Entry</span>'
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
+      // Bug 14 fix: guard p.image before accessing .src to avoid null crash
+      const pImg = (p.image && p.image.src) ? p.image : null;
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
-        '<div class="shrink-0 w-28 h-24 overflow-hidden">' +
-        '<img src="' + esc(p.image.src) + '" alt="' + esc(p.image.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" /></div>' +
+        '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
+        (pImg ? '<img src="' + esc(pImg.src) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -549,8 +568,10 @@ function main(dest, idx) {
 
     const list = hotels.filter(function (s) { return stayTier === 'all' || s.tier === stayTier; });
     let cards;
+    // Bug 2 fix: replaced 🏨 emoji with SVG hotel icon
+    const SVG_HOTEL = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg>';
     if (list.length === 0) {
-      cards = '<div class="text-center py-16"><div class="text-4xl mb-3">🏨</div>' +
+      cards = '<div class="text-center py-16"><div class="mb-3 flex justify-center">' + SVG_HOTEL + '</div>' +
         '<p class="text-gray-600 font-medium">No stays in this price category</p>' +
         '<button class="mt-3 text-primary text-sm font-semibold" data-tier="all">Show all stays</button></div>';
     } else {
@@ -561,9 +582,10 @@ function main(dest, idx) {
         return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-emerald-500/40 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
+          // Bug 2 fix: replaced 🏨 emoji with inline SVG
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
           '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="font-bold text-lg text-gray-900 dark:text-white hover:text-emerald-500 transition-colors flex items-center gap-1.5" title="View ' + esc(s.name) + ' on Google">' +
-          '🏨 ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold">↗</span></a>' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold">↗</span></a>' +
           '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
@@ -619,7 +641,7 @@ function main(dest, idx) {
       if (target) {
         let recMode = '🚗 Direct Drive / Bus';
         let recBadge = 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
-              if (target.distance > 700 && reach.nearestAirport && reach.nearestAirport.name) {
+        if (target.distance > 700 && reach.nearestAirport && reach.nearestAirport.name) {
           recMode = '✈️ Flight to ' + esc(reach.nearestAirport.name) + ' (' + reach.nearestAirport.distance + ' km away) + Taxi';
           recBadge = 'bg-blue-500/20 text-blue-300 border-blue-500/40';
         } else if (target.distance > 300 && reach.nearestRailway && reach.nearestRailway.name) {
@@ -649,14 +671,18 @@ function main(dest, idx) {
       }
     }
 
+    // Bug 20 fix: replaced ✈️ 🚂 🚗 emojis with inline SVGs in reach panel
+    const SVG_PLANE = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2A1 1 0 0 0 1 7.2l2.4 2.4 4.8-.8L3.5 17.8l2.3 2.3 7.5-4.8-.8 4.8 2.4 2.4a1 1 0 0 0 1-.8z"/></svg>';
+    const SVG_TRAIN = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M9 3v16M15 3v16M4 11h16M4 7h16"/><path d="m8 20-1 2M17 20l1 2"/></svg>';
+    const SVG_CAR = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
     document.getElementById('panel-reach').innerHTML =
       '<h2 class="text-xl font-bold text-gray-900 mb-2">How to Reach ' + esc(dest.title) + '</h2>' +
-            '<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">' +
-      (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">✈️</div><h3 class="font-bold text-sm mb-1">Nearest Airport</h3>' +
-      '<p class="text-gray-600 text-sm">' + esc(reach.nearestAirport.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestAirport.distance || '—') + ' km away</p></div>' : '') +
-      (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">🚂</div><h3 class="font-bold text-sm mb-1">Nearest Railway</h3>' +
-      '<p class="text-gray-600 text-sm">' + esc(reach.nearestRailway.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestRailway.distance || '—') + ' km away</p></div>' : '') +
-      '<div class="info-card text-center"><div class="info-card-icon mx-auto">🚗</div><h3 class="font-bold text-sm mb-1">From Delhi</h3>' +
+      '<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">' +
+      (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_PLANE + '</div><h3 class="font-bold text-sm mb-1">Nearest Airport</h3>' +
+        '<p class="text-gray-600 text-sm">' + esc(reach.nearestAirport.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestAirport.distance || '—') + ' km away</p></div>' : '') +
+      (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_TRAIN + '</div><h3 class="font-bold text-sm mb-1">Nearest Railway</h3>' +
+        '<p class="text-gray-600 text-sm">' + esc(reach.nearestRailway.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestRailway.distance || '—') + ' km away</p></div>' : '') +
+      '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_CAR + '</div><h3 class="font-bold text-sm mb-1">From Delhi</h3>' +
       '<p class="text-gray-600 text-sm">' + (delhiRoute.distance ? delhiRoute.distance + ' km' : (ov && ov.distanceFromDelhi ? ov.distanceFromDelhi + ' km' : (dest.distanceFromDelhi ? dest.distanceFromDelhi + ' km' : 'N/A'))) + '</p><p class="text-primary font-semibold text-sm mt-1">' + esc(delhiCar) + '</p></div>' +
       '</div>' +
       selectedBanner +
@@ -669,8 +695,8 @@ function main(dest, idx) {
       '</div>' +
       '<div class="overflow-x-auto"><table class="route-table"><thead><tr><th>From (City & State)</th><th>Distance</th><th>By Road</th><th>By Train</th><th>By Air</th><th>Via</th></tr></thead>' +
       '<tbody>' + rows + '</tbody></table></div></div>' +
-            (reach && reach.roadNote ? '<div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3"><span class="text-xl shrink-0">⚠️</span>' +
-      '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Advisory</p><p class="text-amber-800 text-sm">' + esc(reach.roadNote) + '</p></div></div>' : '');
+      (reach && reach.roadNote ? '<div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3"><span class="text-xl shrink-0">⚠️</span>' +
+        '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Advisory</p><p class="text-amber-800 text-sm">' + esc(reach.roadNote) + '</p></div></div>' : '');
 
     const sel = document.getElementById('reachCity');
     if (sel) sel.addEventListener('change', function () { reachCity = sel.value; renderReach(); });
@@ -681,6 +707,22 @@ function main(dest, idx) {
   let activeMapInstance = null;
   const mapNameEl = document.getElementById('mapName');
   if (mapNameEl) mapNameEl.textContent = dest.title;
+
+  // Wire "Open in Google Maps" and "Get Directions" buttons
+  const mapCoords = coords && coords.length === 2 && !isNaN(coords[0]) && !isNaN(coords[1])
+    ? coords : [20.5937, 78.9629];
+  const mapOpenGoogleBtn = document.getElementById('mapOpenGoogleBtn');
+  const mapDirectionsBtn = document.getElementById('mapDirectionsBtn');
+  if (mapOpenGoogleBtn) {
+    mapOpenGoogleBtn.href = 'https://www.google.com/maps/search/?api=1&query=' +
+      encodeURIComponent(dest.title + ', ' + dest.state + ', India') +
+      '&query_place_id=' + mapCoords[0] + ',' + mapCoords[1];
+  }
+  if (mapDirectionsBtn) {
+    mapDirectionsBtn.href = 'https://www.google.com/maps/dir/?api=1&destination=' +
+      mapCoords[0] + ',' + mapCoords[1] +
+      '&destination_place_id=' + encodeURIComponent(dest.title + ', ' + dest.state);
+  }
 
   function initMap() {
     if (typeof L === 'undefined') {
@@ -706,10 +748,9 @@ function main(dest, idx) {
 
     activeMapInstance = map;
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 20
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
     }).addTo(map);
 
     // Main Destination Marker
@@ -991,7 +1032,7 @@ function main(dest, idx) {
   }
 
   const allDestList = (idx && Array.isArray(idx.destinations)) ? idx.destinations : [];
-  
+
   function getSimilarDestinations() {
     if (!allDestList.length) return [];
     // 1. Same state and same type
@@ -1069,10 +1110,16 @@ function main(dest, idx) {
   if (navBookBtn) {
     navBookBtn.addEventListener('click', function () { setTab('stays'); });
   }
+  // Bug 1 fix: replaced 💾 emoji with text/SVG; Bug 5 fix: guard saveBtn inside updateSaveUI
   const saveBtn = document.getElementById('navSave');
   let saved = localStorage.getItem('saved_' + dest.slug) === 'true';
+  const SVG_CHECK = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
+  const SVG_BOOKMARK = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>';
   function updateSaveUI() {
-    saveBtn.textContent = saved ? '✓ Saved' : '💾 Save';
+    if (!saveBtn) return;  // Bug 5 fix: guard against null saveBtn
+    saveBtn.innerHTML = saved
+      ? SVG_CHECK + ' Saved'
+      : SVG_BOOKMARK + ' Save';
     saveBtn.classList.toggle('!bg-primary', saved);
     saveBtn.classList.toggle('!text-white', saved);
     saveBtn.classList.toggle('!border-primary', saved);
@@ -1085,8 +1132,11 @@ function main(dest, idx) {
       updateSaveUI();
     });
   }
-  document.getElementById('mStays').addEventListener('click', function (e) { e.preventDefault(); setTab('stays'); });
-  document.getElementById('mReach').addEventListener('click', function (e) { e.preventDefault(); setTab('reach'); });
+  // Bug 4 fix: added null checks for mStays and mReach before addEventListener
+  const mStaysEl = document.getElementById('mStays');
+  const mReachEl = document.getElementById('mReach');
+  if (mStaysEl) mStaysEl.addEventListener('click', function (e) { e.preventDefault(); setTab('stays'); });
+  if (mReachEl) mReachEl.addEventListener('click', function (e) { e.preventDefault(); setTab('reach'); });
 
   // ─── Place details modal (with live weather) ───────────
   const pModal = document.getElementById('placeModal');
@@ -1198,8 +1248,9 @@ function main(dest, idx) {
     pModal.removeAttribute('aria-hidden');
     document.body.style.overflow = 'hidden';
     // a11y: hide background content from screen readers while modal is open
+    // Bug 11 fix: destination.html uses id="main", not id="content"
     const nav = document.getElementById('siteNav');
-    const mainContent = document.getElementById('content');
+    const mainContent = document.getElementById('main') || document.getElementById('content');
     const footer = document.getElementById('siteFooter');
     if (nav) nav.setAttribute('aria-hidden', 'true');
     if (mainContent) mainContent.setAttribute('aria-hidden', 'true');
@@ -1224,8 +1275,9 @@ function main(dest, idx) {
     carStopAuto();
     document.removeEventListener('keydown', trapModalTab);
     // a11y: restore background visibility for screen readers
+    // Bug 11 fix: use 'main' (destination.html) with 'content' as fallback
     const nav = document.getElementById('siteNav');
-    const mainContent = document.getElementById('content');
+    const mainContent = document.getElementById('main') || document.getElementById('content');
     const footer = document.getElementById('siteFooter');
     if (nav) nav.removeAttribute('aria-hidden');
     if (mainContent) mainContent.removeAttribute('aria-hidden');

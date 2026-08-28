@@ -68,7 +68,8 @@ ES6-module-component** design that scales to 2,000+ destinations without new HTM
   `addEventListener`. No React/Vue/Alpine/jQuery/Bootstrap.
 - **No npm dependencies.** `npm install` is blocked on the corporate network.
   Everything — the dev server, all build scripts — is pure Node stdlib. Vendor any library into `js/`.
-- **No fake / dummy stock fallbacks.** Never use `picsum.photos` or dummy stock photos. Show strictly original real photos.
+- **No fake / dummy stock fallbacks.** Never use `picsum.photos` or dummy stock placeholders. Sourcing is strictly restricted to verified legal HD providers: **Pexels**, **Unsplash**, **Wikimedia Commons**, **Pixabay**, **Google Places Photos**, **Openverse**, and **Mapillary**.
+- **Subject Curation Constraint:** Always select authentic **monuments, scenic views, natural landscapes, and architectural highlights**. Strictly reject photos with prominent people, selfies, tourist poses, wrong/unrelated locations, food close-ups, or modern office objects.
 - **No hardcoded content.** All destination content lives in `data/`. Add/edit data there, never in markup or page JS.
 
 ## Directory layout
