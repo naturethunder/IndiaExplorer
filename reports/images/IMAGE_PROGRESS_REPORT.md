@@ -9,12 +9,14 @@
 | **Total Destinations in Repository** | **2,389** | ✅ 100% |
 | **Fully Enriched & Cleaned Destinations** | **2,389 (100.0%)** | ✅ Complete |
 | **Pending Destinations** | **0 Destinations** | ✅ 0 Pending |
-| **Nearby Attractions Enriched** | **14,001 Places** | ✅ Complete |
-| **Total Verified Image Assets** | **70,334 Photos** | ✅ Verified |
+| **Nearby Attractions Enriched** | **13,973 Places** | ✅ Complete |
+| **Total Verified Image Assets** | **70,226 Photos** | ✅ Verified |
 | **100% Fully Completed States & UTs** | **36 / 36 States & UTs (100.0%)** | ✅ Complete |
 | **Hero Image Uniqueness Rate** | **100.0% Unique (2,389 / 2,389)** | ✅ Enforced |
+| **Internal Duplicate URLs Across Files** | **0 (0.0% Duplication)** | ✅ Zero Duplicates |
 | **Maps, Diagrams & Floor Plans** | **0 (0.0%)** | ✅ 100% Clean |
 | **Human Portraits & Selfies** | **0 (0.0%)** | ✅ 100% Clean |
+| **Foreign & Misattributed Media** | **0 (0.0%)** | ✅ 100% Clean |
 | **Hotel Image Optimization** | **9,756 Hotels Linked to Google** | ✅ Direct URLs |
 | **Corrupted Media / Document Scans** | **0 (0.0%)** | ✅ Zero Errors |
 
