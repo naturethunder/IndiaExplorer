@@ -1,11 +1,11 @@
-# 🧭 ExploreDesh — Destinations by State
+# 🧭 IndiaExplore — Destinations by State
 
 > Auto-generated reference: every one of the **2,389 destinations** grouped by state/UT,
 > with its **best travel months** and **price per night** (min–max, taken from the
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-08-26.
+> Last generated: 2026-08-28.
 
 **36 states/UTs · 2,389 destinations**
 
@@ -716,7 +716,7 @@
 | **Kudremukh National Park** | Wildlife | Jan–Feb, Nov–Dec | ₹2,500 – ₹25,000 |
 | **Kukke Subramanya Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Kumara Swamy Devasthana, Bangalore** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
-| **Kunchikal Falls** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
+| **Kunchikal Falls** | Lakes | Jan, Jul–Dec | ₹1,200 – ₹6,000 |
 | **Kuruvathi Basaveshwara temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Lakshmeshwara Jain temples** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Lakshmi Devi Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |

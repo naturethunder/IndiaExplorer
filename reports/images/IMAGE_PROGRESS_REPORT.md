@@ -1,6 +1,6 @@
 # 🇮🇳 ExploreDesh — Image Pipeline & Destination Enrichment Master Report
 
-**Last Updated:** 2026-08-26
+**Last Updated:** 2026-08-29
 
 ## Global Progress Summary
 
@@ -10,9 +10,11 @@
 | **Fully Enriched & Cleaned Destinations** | **2,389 (100.0%)** | ✅ Complete |
 | **Pending Destinations** | **0 Destinations** | ✅ 0 Pending |
 | **Nearby Attractions Enriched** | **14,001 Places** | ✅ Complete |
-| **Total Verified Image Assets** | **59,853 Photos** | ✅ Verified |
+| **Total Verified Image Assets** | **70,334 Photos** | ✅ Verified |
 | **100% Fully Completed States & UTs** | **36 / 36 States & UTs (100.0%)** | ✅ Complete |
 | **Hero Image Uniqueness Rate** | **100.0% Unique (2,389 / 2,389)** | ✅ Enforced |
+| **Maps, Diagrams & Floor Plans** | **0 (0.0%)** | ✅ 100% Clean |
+| **Human Portraits & Selfies** | **0 (0.0%)** | ✅ 100% Clean |
 | **Hotel Image Optimization** | **9,756 Hotels Linked to Google** | ✅ Direct URLs |
 | **Corrupted Media / Document Scans** | **0 (0.0%)** | ✅ Zero Errors |
 
