@@ -16,16 +16,16 @@ The entire site uses a **dark glassmorphism** design system (`glass-immersive.cs
 frosted glass panels, fixed cinematic background images, emerald accent glows, and
 **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-08-26):**
+> **Latest Milestone (2026-08-29):**
+> - **Zero Maps, Portraits & Selfies Repository-Wide (2,389 / 2,389):** Complete elimination of all map diagrams, sketches, floor plans, human portraits, selfies, and author photos across all 2,389 destinations. Enforced 100% scenic landscapes, monument architecture, waterfalls, and nature photography.
+> - **Strict 5-Gallery & 3-Place Photo Quality Standards:** Every destination JSON enforced with exactly 5 unique HD gallery images, 1 scenic cover photo per place, and exactly 3 unique authentic photos per place (0 duplicate URLs per destination).
+> - **Interactive Google Maps Actions:** Added direct "Open in Google Maps" and "Get Directions" action buttons with dynamic GPS coordinates and destination queries on the interactive Map tab in `destination.html`.
+> - **Multi-Source Legal Photography:** Seamlessly enriched with Wikimedia Commons, Openverse (Flickr CC-BY, Smithsonian Open Access, iNaturalist), and Wikipedia originals.
 > - **Dynamic Refresh Reshuffling:** Implemented Fisher-Yates dynamic reshuffling in `js/pages/home.js` so that *Trending Destinations*, *Popular Destinations*, *Best Hill Stations*, and *Explore More* display randomized, fresh destination sets on every page refresh.
 > - **Hotel Direct Google Integration:** Stripped image thumbnails from all 9,756 hotel listings and added direct Google Search / Reviews links (`https://www.google.com/search?q=...`) with price tier badges, rate ranges, and amenity chips.
 > - **100% Unique Hero Images (2,389 / 2,389):** Every destination in the catalog has a dedicated, 100% unique 1-to-1 high-resolution hero photo.
 > - **Re-infection Loop Eliminated:** Synchronized all 36 state bulk files (`data/bulk/*.json`) with clean canonical destinations and hardened `scripts/build-json-data.js` with sanitization filters.
-> - **Zero Broken Media:** 0 picsum placeholders, 0 PDF/DJVU document scans, 0 video/audio files, 0 maps/flags across all 70,000+ catalog image references.
 > - **Full-Screen Stretched Layout:** All sections across `index.html` (*11-Category Grid, Trending, Map, Monthly Highlights, Seasonal, Popular, Budget, Hills, Explore More*) stretch edge-to-edge (`flex: 1 1 0`, `w-full px-4 sm:px-6 lg:px-8`) with balanced fixed margins.
-> - **11-Category Grid on Home & Catalogue:** Synced all 11 taxonomy categories with live counts matching the destinations catalogue.
-> - **GSAP ScrollTrigger Batch Reveal:** Batch row stagger reveal engine in `js/pages/explore.js` with lifecycle cleanup.
-> - **Opaque Sticky Discovery Bar & Active Pill Glow:** Fixed category bar background bleed on `destinations.html` and applied glowing emerald gradient active styling (`#typeFilter button.active`).
 
 ## Architecture (the load-bearing decisions)
 

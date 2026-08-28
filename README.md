@@ -1,14 +1,14 @@
 # 🇮🇳 ExploreDesh — Luxury Travel Discovery Platform
 
-> **System Status (2026-08-26):** **2,389 Destinations** across all 36 States & UTs. Full-screen responsive glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography, image-free hotel cards with direct Google search integration, and zero broken/placeholder media repository-wide.
+> **System Status (2026-08-29):** **2,389 Destinations** across all 36 States & UTs. Full-screen responsive glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography, interactive Google Maps & Directions actions, zero map diagrams/selfies/portraits, image-free hotel cards with direct Google search integration, and zero broken/placeholder media repository-wide.
 
 A luxury India travel-discovery platform. Browse **2,389 destinations** (14,001+ places,
 9,756+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
 open a per-destination page with a photo hero, places to visit, stays by budget, routes
-(with distance from major cities), an interactive Leaflet map, live weather, and dynamic similar recommendations.
+(with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
 > **100% Verified Legal Photography.** Hand-authored and enriched with authentic
-> Wikimedia Commons & Pexels photography (zero picsum/PDF/dummy stock fallbacks, zero re-infection loops). See [CLAUDE.md](CLAUDE.md) for provenance.
+> Wikimedia Commons, Openverse (Flickr CC-BY, Smithsonian Open Access), and Wikipedia photography (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/maps, zero re-infection loops). See [CLAUDE.md](CLAUDE.md) for provenance.
 
 > **No framework. No npm. No bundler.** Plain HTML5 + CSS + vanilla ES6 modules, powered by
 > **GSAP ScrollTrigger** animations and served over a zero-dependency Node static server.

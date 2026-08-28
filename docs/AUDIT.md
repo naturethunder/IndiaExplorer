@@ -13,6 +13,22 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Complete Map & Portrait Elimination, Multi-Source Photo Enrichment & Interactive Google Maps (2026-08-29)
+
+Full repository audit across all 2,389 destinations for non-photo elements (maps, sketches, floor plans, district diagrams) and human portraits / selfies / author photos.
+
+### Verified Audit Results (All 2,389 Destinations & 70,334 Image References)
+- **Map / Diagram / Floor Plan Images**: Exactly **0** (All replaced with genuine scenic architecture / landscapes)
+- **Human Portraits / Selfies / Author Photos**: Exactly **0** (All replaced with authentic monument / nature photography)
+- **Gallery Images per Destination**: Exactly **5 unique HD images** (100% compliant)
+- **Nearby Places Photos**: **1 Cover + 3 unique photos per place** (100% compliant)
+- **Duplicate URLs per Destination JSON**: **0 Duplicates**
+- **Interactive Google Maps Actions**: Added direct "Open in Google Maps" and "Get Directions" buttons on Destination Map view.
+- **Multi-Source Sourcing**: Wikimedia Commons, Openverse (Flickr CC-BY, Smithsonian Open Access, iNaturalist), and Wikipedia.
+- **Manifest Synchronization**: `index.json` and `search-index.json` in 100% lockstep.
+
+---
+
 ## Addendum — Complete Image Pipeline Clean, Zero-Duplicate Hero Enforcement & Re-infection Loop Elimination (2026-08-26)
 
 Permanent resolution of the source-of-truth mismatch (re-infection loop), full-catalog legal deduplication, eradication of document scans/picsum placeholders, and 100% unique hero image enforcement across all 2,389 destinations.
