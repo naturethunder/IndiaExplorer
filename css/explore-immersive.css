@@ -4,28 +4,28 @@
    ========================================================================== */
 
 body.explore-immersive {
-  --exp-ink-black: #050c0a;
-  --exp-ink-base: #07120f;
-  --exp-ink-card: rgba(12, 24, 21, 0.85);
-  --exp-ink-card-hover: rgba(18, 36, 31, 0.95);
-  --exp-ink-sheet: rgba(8, 18, 15, 0.96);
+  --exp-ink-black: #080A0F;
+  --exp-ink-base: #0B0F19;
+  --exp-ink-card: rgba(14, 20, 32, 0.85);
+  --exp-ink-card-hover: rgba(20, 28, 44, 0.95);
+  --exp-ink-sheet: rgba(10, 15, 25, 0.96);
 
-  --exp-border: rgba(255, 255, 255, 0.08);
-  --exp-border-light: rgba(255, 255, 255, 0.14);
-  --exp-border-glow: rgba(52, 211, 153, 0.4);
+  --exp-border: rgba(255, 255, 255, 0.09);
+  --exp-border-light: rgba(245, 197, 66, 0.25);
+  --exp-border-glow: rgba(245, 197, 66, 0.45);
 
-  --exp-emerald-base: #10b981;
-  --exp-emerald-light: #34d399;
-  --exp-emerald-glow: rgba(16, 185, 129, 0.16);
-  --exp-emerald-vibrant: #6ee7b7;
+  --exp-emerald-base: #F5C542;
+  --exp-emerald-light: #FDE68A;
+  --exp-emerald-glow: rgba(245, 197, 66, 0.25);
+  --exp-emerald-vibrant: #FFFBEB;
 
-  --exp-gold-base: #f3c86b;
-  --exp-gold-light: #fef08a;
-  --exp-gold-glow: rgba(243, 200, 107, 0.2);
+  --exp-gold-base: #F5C542;
+  --exp-gold-light: #FDE68A;
+  --exp-gold-glow: rgba(245, 197, 66, 0.35);
 
-  --exp-text-main: #f8faf7;
-  --exp-text-muted: #94a3b8;
-  --exp-text-subtle: #64748b;
+  --exp-text-main: #FFFFFF;
+  --exp-text-muted: #CBD5E1;
+  --exp-text-subtle: #94A3B8;
 
   --exp-radius-sm: 8px;
   --exp-radius-md: 14px;

@@ -497,9 +497,16 @@ body.glass-immersive .hero-search-seg input::placeholder {
 }
 
 body.glass-immersive .hero-seg-btn {
-  background: linear-gradient(135deg, #16a34a, #15803d) !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.45) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  color: #080a0f !important;
+  box-shadow: 0 4px 16px rgba(229, 192, 123, 0.45) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .hero-seg-btn:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5C542 50%, #C8962E 100%) !important;
+  box-shadow: 0 6px 22px rgba(245, 197, 66, 0.65) !important;
+  transform: scale(1.05) !important;
 }
 
 /* ─── Hero Social Proof & Avatar Cluster ─────────────────────────── */

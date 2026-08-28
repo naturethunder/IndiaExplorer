@@ -576,15 +576,13 @@ function main(dest, idx) {
         '<button class="mt-3 text-primary text-sm font-semibold" data-tier="all">Show all stays</button></div>';
     } else {
       cards = list.map(function (s) {
-        const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
+        const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-amber-500/15 text-amber-300 dark:text-amber-400 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
         const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
         const googleUrl = s.url || ('https://www.google.com/search?q=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '') + ' hotel'));
-        return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-emerald-500/40 hover:shadow-xl transition-all group">' +
+        return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
-          // Bug 2 fix: replaced 🏨 emoji with inline SVG
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
-          '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="font-bold text-lg text-gray-900 dark:text-white hover:text-emerald-500 transition-colors flex items-center gap-1.5" title="View ' + esc(s.name) + ' on Google">' +
           '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold">↗</span></a>' +
           '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
