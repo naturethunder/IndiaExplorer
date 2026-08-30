@@ -48,6 +48,42 @@ function weatherInfo(code) {
 }
 function pad2(n) { return (n < 10 ? '0' : '') + n; }
 
+function truncateMeta(value, maxLength) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (text.length <= maxLength) return text;
+  const clipped = text.slice(0, maxLength - 1);
+  const boundary = clipped.lastIndexOf(' ');
+  return clipped.slice(0, boundary > maxLength * 0.7 ? boundary : maxLength - 1)
+    .replace(/[,:;.!?\-–—]+$/g, '') + '…';
+}
+
+function middleTruncate(value, maxLength) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (text.length <= maxLength) return text;
+  const available = maxLength - 1;
+  const headLength = Math.ceil(available * 0.58);
+  const tailLength = available - headLength;
+  return text.slice(0, headLength).trimEnd() + '…' + text.slice(-tailLength).trimStart();
+}
+
+function destinationMetaTitle(name) {
+  const suffix = ' Travel Guide | ExploreDesh';
+  const destinationName = String(name || 'Destination').trim();
+  return middleTruncate(destinationName, 60 - suffix.length) + suffix;
+}
+
+function destinationMetaDescription(dest, source) {
+  const lead = middleTruncate(dest.title || 'Destination', 64) + ' travel guide: ';
+  return lead + truncateMeta(source, 160 - lead.length);
+}
+
+function markDestinationNotFound() {
+  const robots = document.head.querySelector('meta[name="robots"]');
+  if (robots) robots.setAttribute('content', 'noindex, follow, max-image-preview:large');
+  const canonical = document.head.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.remove();
+}
+
 // ─── Resolve destination ───────────────────────────────
 const params = new URLSearchParams(window.location.search);
 let rawSlug = params.get('slug') || params.get('id') || window.location.hash.slice(1) || null;
@@ -76,6 +112,7 @@ if (slug) {
 }
 
 if (!dest) {
+  markDestinationNotFound();
   document.getElementById('notFound').style.display = 'flex';
 } else {
   main(dest, idx);
@@ -112,7 +149,7 @@ function main(dest, idx) {
 
   // Build a safe seo object even when dest.seo is missing
   const seoObj = dest.seo || {
-    title: (dest.title || 'Destination') + ' Travel Guide 2026 — Places, Hotels | ExploreDesh',
+    title: (dest.title || 'Destination') + ' Travel Guide | ExploreDesh',
     description: dest.short || dest.description || 'Explore top places to visit and best hotels.',
     canonical: 'destination.html?slug=' + encodeURIComponent(dest.slug || ''),
     ogImage: heroSrc,
@@ -128,20 +165,24 @@ function main(dest, idx) {
   const hotels = dest.hotels || [];
 
   // ─── SEO ───────────────────────────────────────────────
+  const canonicalPath = 'destination.html?slug=' + encodeURIComponent(dest.slug || '');
+  const metaTitle = destinationMetaTitle(dest.title);
+  const metaDescription = destinationMetaDescription(
+    dest,
+    seoObj.description || dest.short || dest.description || 'Explore top places to visit, stays, routes and practical travel tips for this destination in India.'
+  );
   applySEO({
-    title: seoObj.title,
-    description: seoObj.description,
-    canonicalPath: seoObj.canonical,
-    ogImage: seoObj.ogImage,
+    title: metaTitle,
+    description: metaDescription,
+    canonicalPath: canonicalPath,
     keywords: seoObj.keywords,
-    type: 'article',
   });
-  injectJsonLd(destinationJsonLd(dest));
+  injectJsonLd(destinationJsonLd(dest, canonicalPath));
   if (dest.faq) injectJsonLd(faqJsonLd(dest.faq));
   injectJsonLd(breadcrumbJsonLd([
-    { name: 'Home', path: 'index.html' },
+    { name: 'Home', path: '/' },
     { name: 'Destinations', path: 'destinations.html' },
-    { name: dest.title, path: seoObj.canonical },
+    { name: dest.title, path: canonicalPath },
   ]));
 
   const mainEl = document.getElementById('main') || document.getElementById('content');

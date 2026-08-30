@@ -1,9 +1,6 @@
-# ExploreDesh — robots.txt
-# Allow full crawl. Destination pages use destination.html?slug=<slug>
-# as the canonical URL (listed in sitemap.xml). 2,383 redirect stubs in /stubs/
-# redirect each /<slug>.html to the canonical destination.html?slug=<slug>.
+# ExploreDesh robots.txt
+# Public HTML, CSS, JavaScript, fonts, images, and rendering data remain crawlable.
 User-agent: *
 Allow: /
-Disallow: /stubs/
 
 Sitemap: https://exploredesh.com/sitemap.xml

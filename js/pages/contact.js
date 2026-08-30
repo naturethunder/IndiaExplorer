@@ -12,7 +12,7 @@
  * Real delivery needs a browser over http(s) — not file:// and not server-side.
  */
 import { initLayout } from '../components/layout.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
+import { applySEO, injectJsonLd, breadcrumbJsonLd, contactPageJsonLd } from '../components/seo.js';
 
 const WEB3FORMS_ACCESS_KEY = 'f5711d49-3704-4174-a94b-480dc0cfc42c';
 
@@ -24,8 +24,13 @@ applySEO({
   canonicalPath: 'contact.html',
   keywords: ['contact exploredesh', 'exploredesh support'],
 });
+injectJsonLd(contactPageJsonLd({
+  title: 'Contact Us — ExploreDesh',
+  description: 'Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.',
+  canonicalPath: 'contact.html',
+}));
 injectJsonLd(breadcrumbJsonLd([
-  { name: 'Home', path: 'index.html' },
+  { name: 'Home', path: '/' },
   { name: 'Contact', path: 'contact.html' },
 ]));
 

@@ -1,6 +1,6 @@
 # 🇮🇳 ExploreDesh — Luxury Travel Discovery Platform
 
-> **System Status (2026-08-30):** **2,389 Destinations** across all 36 States & UTs. Full-screen **Royal Obsidian & Heritage Gold** luxury dark glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography (69,361 unique image pool across 71,750 image slots), True 4K & Ultra-HD widescreen landscape imagery, interactive Google Maps & Directions actions, zero map diagrams/selfies/portraits/audio/coins, zero cross-destination duplicates, image-free hotel cards with direct Google search integration, and zero broken/placeholder media repository-wide.
+> **System Status (2026-08-31):** **2,389 Destinations** across all 36 States & UTs. Full-screen **Royal Obsidian & Heritage Gold** luxury dark glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography (69,361 unique image pool across 71,750 image slots), True 4K & Ultra-HD widescreen landscape imagery, interactive Google Maps & Directions actions, zero map diagrams/selfies/portraits/audio/coins, zero cross-destination duplicates, image-free hotel cards with direct Google search integration, pure search-engine SEO (Schema.org JSON-LD graph with Sitelinks `SearchAction`, `TouristDestination`, `CollectionPage`, `AboutPage`, `ContactPage`, `BreadcrumbList`, canonical consolidation, 0 social media tags), and zero broken/placeholder media repository-wide.
 
 A luxury India travel-discovery platform. Browse **2,389 destinations** (13,973+ places,
 9,756+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
@@ -45,14 +45,14 @@ without adding a single HTML file:
 - **Dynamic Refresh Reshuffling.** Featured sections (*Trending Destinations, Popular Destinations, Best Hill Stations, Explore More*) automatically reshuffle on every page refresh using Fisher-Yates randomization.
 - **Hotel Direct Google Integration.** All 9,756 hotel listings feature image-free modern text cards with nightly rate ranges, price tier badges, star ratings, amenities, and direct links to live Google hotel search & reviews.
 - **GSAP Scroll & Motion Engine.** Smooth scroll parallax background scrubs, hero staggered entrance timelines, animated stat counters, and section scroll triggers via GSAP 3.12.5 & ScrollTrigger with reduced-motion accessibility support.
-- **Reusable components.** Navbar, footer, mobile-nav (`js/components/layout.js`),
+- **Reusable components.** Navbar, footer with brand trust badge, mobile-nav (`js/components/layout.js`),
   destination cards (`js/components/destinationCard.js`), and SEO/JSON-LD helpers
   (`js/components/seo.js`) are defined once and mounted by every page.
 - **Performance.** Browse/explore/finder load only the lightweight manifest
   (`data/destinations/index.json`); a detail page loads **only its own** destination JSON.
   Images are lazy-loaded.
-- **SEO per page.** Runtime `<title>`/description/canonical/OpenGraph/Twitter + Schema.org
-  JSON-LD (WebSite, BreadcrumbList, FAQPage, TouristDestination) via `js/components/seo.js`.
+- **Pure Search-Engine SEO.** Runtime `<title>` / description / canonical / robots meta directives + Schema.org
+  JSON-LD graph (`WebSite` with Google Sitelinks `SearchAction`, `TouristDestination`, `CollectionPage`, `AboutPage`, `ContactPage`, `BreadcrumbList`, `FAQPage`) via `js/components/seo.js`. Social media meta tags (`og:*`, `twitter:*`) are excluded by design for optimal search engine crawling.
 - **Every device.** Fully responsive: on phones/tablets (<1024px) the Explore filters open
   as a slide-in drawer ("⚙️ Filters" button), and a bottom nav bar replaces the desktop links
   below 768px.

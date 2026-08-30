@@ -7,7 +7,7 @@
 import { fetchIndex } from '../data/api.js';
 import { initLayout, setActiveNav } from '../components/layout.js';
 import { destCardHTML } from '../components/destinationCard.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
+import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS } from '../data/taxonomy.js';
 import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
@@ -25,8 +25,14 @@ applySEO({
   keywords: ['india destinations', 'places to visit in india', 'india travel by budget', 'best travel months india'],
 });
 
+injectJsonLd(collectionPageJsonLd({
+  title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
+  description: 'Browse 2,389 travel destinations across all 36 states & UTs of India. Filter by type, state, budget and travel month.',
+  canonicalPath: 'destinations.html',
+}));
+
 injectJsonLd(breadcrumbJsonLd([
-  { name: 'Home', path: 'index.html' },
+  { name: 'Home', path: '/' },
   { name: 'Destinations', path: 'destinations.html' },
 ]));
 

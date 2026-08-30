@@ -14,8 +14,11 @@ detail pages with places, stays, routes, an interactive Leaflet map, **live weat
 dynamic similar-destination recommendations.
 The entire site uses the **Royal Obsidian & Heritage Gold** luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-08-30):**
-> - **Comprehensive Image Quality & Defect Eradication Pass:** Replaced 185 defective image slots (22 audio files `.ogg`, 110 site floor plans/diagrams, 26 SVGs, 7 ancient coins/stamps, 10 person portraits/headshots, and 9 state maps) with authentic HD landscape and monument photography across 108 destination files.
+> **Latest Milestone (2026-08-31):**
+> - **Pure Search Engine SEO & Structured Data Architecture:** Hardened all pages (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`) for search engine crawlers (Google & Bing) while strictly excluding social media meta tags (`og:*`, `twitter:*`).
+> - **Complete Schema.org JSON-LD Graph:** Integrated Google Sitelinks `SearchAction` within `WebSite` schema on `index.html`, `TouristDestination` with GPS coordinates and PostalAddress on `destination.html`, `CollectionPage` on `destinations.html`, `AboutPage` on `about.html`, `ContactPage` on `contact.html`, `BreadcrumbList` on all interior pages, and `FAQPage` where applicable.
+> - **Contact Page & Navigation Polish:** Removed Phone block from `contact.html` and adjusted remaining cards (Email, Office Location, Response Time guarantee) with responsive glassmorphism. Replaced placeholder social buttons in footer with a brand trust badge (`✨ Complete Catalogue of Bharat`).
+> - **Comprehensive Image Quality & Defect Eradication Pass (2026-08-30):** Replaced 185 defective image slots (22 audio files `.ogg`, 110 site floor plans/diagrams, 26 SVGs, 7 ancient coins/stamps, 10 person portraits/headshots, and 9 state maps) with authentic HD landscape and monument photography across 108 destination files.
 > - **True 4K & Ultra-HD Landscape Standards:** Enforced widescreen landscape aspect ratios (1.25 to 1.9) with resolutions up to 5600×3728 across all destinations and nearby places, eliminating vertical portrait stretches and low-res thumbnails.
 > - **Frontend Highlights Carousel Engine (`js/pages/destination.js`):** Fixed `get5RealPhotos()` to prioritize `dest.gallery` first, parsing `.title`, `.caption`, and `.alt` attributes so the 5 curated destination photos are always displayed in the top highlights carousel.
 > - **Global Zero-Collision Verification (69,361 Unique Assets):** Verified 0 cross-destination duplicate images, 0 intra-destination collisions, and 100% `heroImage.src === gallery[0].src` alignment across all 2,389 destinations (71,750 total image slots).
@@ -41,7 +44,7 @@ ES6-module-component** design that scales to 2,000+ destinations without new HTM
 4. **Reusable components** (ES6 modules under `js/components/`), mounted by each page.
 5. **Load only what's needed.** Browse/explore/finder fetch the light manifest; a detail page
    fetches only its own destination JSON. Images lazy-load.
-6. **Runtime SEO** per page (meta + OpenGraph + Twitter + Schema.org JSON-LD).
+6. **Runtime Pure Search SEO** per page (meta title/description/canonical/robots directives + Schema.org JSON-LD graph via `js/components/seo.js`; zero social media metadata).
 7. **Latest-First Sorting & Filtering.** `destinations.html` includes a `Latest (Newest First)` sort
    option processed by `js/pages/explore.js` using reverse-chronological insertion index.
 8. **GSAP Scroll & Motion Engine.** GSAP 3.12.5 + ScrollTrigger loaded via CDN on all three

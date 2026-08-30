@@ -22,7 +22,7 @@ applySEO({
   keywords: ['ai trip planner india', 'india trip finder', 'where to travel in india', 'india destination search'],
 });
 injectJsonLd(breadcrumbJsonLd([
-  { name: 'Home', path: 'index.html' },
+  { name: 'Home', path: '/' },
   { name: 'AI Trip Finder', path: 'ai-finder.html' },
 ]));
 

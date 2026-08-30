@@ -5,7 +5,7 @@
 import { fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
+import { applySEO } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { resolveState, MONTH_PICKS } from '../data/taxonomy.js';
@@ -17,22 +17,9 @@ initLayout({ active: 'home' });
 applySEO({
   title: 'ExploreDesh — Discover Incredible India',
   description: "Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip.",
-  canonicalPath: 'index.html',
+  canonicalPath: '/',
   keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner'],
 });
-injectJsonLd({
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'ExploreDesh',
-  url: new URL('index.html', window.location.href).href,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: new URL('destinations.html', window.location.href).href + '?search={search_term_string}',
-    'query-input': 'required name=search_term_string',
-  },
-});
-injectJsonLd(breadcrumbJsonLd([{ name: 'Home', path: 'index.html' }]));
-
 // ─── Hero background & cinematic rotator ────────────────────
 (function () {
   const bg = document.getElementById('heroBg');

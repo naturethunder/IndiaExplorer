@@ -5,8 +5,7 @@
  * (destination.html?slug=<slug>). Re-run after adding destinations:
  *   node scripts/build-sitemap.js
  *
- * Set SITE_ORIGIN (env) to your deployed origin; defaults to a placeholder
- * that you should replace before submitting to search engines.
+ * Set SITE_ORIGIN (env) to override the production origin.
  */
 const fs = require('fs');
 const path = require('path');
@@ -17,13 +16,11 @@ const idx = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'destinations', '
 
 // Static pages with crawl priorities.
 const STATIC = [
-  { loc: 'index.html', priority: '1.0', changefreq: 'weekly' },
+  { loc: '', priority: '1.0', changefreq: 'weekly' },
   { loc: 'destinations.html', priority: '0.9', changefreq: 'weekly' },
   { loc: 'ai-finder.html', priority: '0.8', changefreq: 'monthly' },
   { loc: 'about.html', priority: '0.4', changefreq: 'yearly' },
   { loc: 'contact.html', priority: '0.4', changefreq: 'yearly' },
-  { loc: 'privacy.html', priority: '0.2', changefreq: 'yearly' },
-  { loc: 'terms.html', priority: '0.2', changefreq: 'yearly' },
 ];
 
 function xmlEscape(s) {

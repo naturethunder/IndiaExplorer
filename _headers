@@ -4,9 +4,23 @@
 
 /data/*
   Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex, nofollow
 
 /js/*
   Cache-Control: public, max-age=3600
 
 /css/*
   Cache-Control: public, max-age=3600
+
+# Keep internal reports, scripts, and redirect stubs out of search.
+/docs/*
+  X-Robots-Tag: noindex, nofollow
+
+/reports/*
+  X-Robots-Tag: noindex, nofollow
+
+/scripts/*
+  X-Robots-Tag: noindex, nofollow
+
+/stubs/*
+  X-Robots-Tag: noindex, follow

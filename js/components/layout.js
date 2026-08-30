@@ -15,7 +15,7 @@ import { esc } from '../utils/format.js';
 // Pill nav: Home / Destinations / AI Trip Finder / About / Contact.
 // "Plan My Trip" is the standout gradient CTA on the right.
 const NAV_LINKS = [
-  { key: 'home', href: 'index.html', label: 'Home' },
+  { key: 'home', href: '/', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', label: 'Destinations' },
   { key: 'finder', href: 'ai-finder.html', label: 'AI Trip Finder' },
   { key: 'about', href: 'about.html', label: 'About' },
@@ -31,7 +31,7 @@ function navbarHTML(active, variant) {
     '<a href="' + l.href + '" class="nav-link' + (l.key === active ? ' active' : '') + '">' + l.label + '</a>'
   ).join('\n        ');
   const brand =
-    '<a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
+    '<a href="/" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
     '      <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
     '      <span class="font-bold text-lg tracking-tight text-white">Explore<span class="text-primary">Desh</span></span>\n' +
     '    </a>';
@@ -44,13 +44,6 @@ function navbarHTML(active, variant) {
     '  </div>\n' +
     '</nav>'
   );
-}
-
-function socialBtn(name, label, href) {
-  // No real profiles yet: same-page '#' placeholder, no target=_blank (which
-  // would open a duplicate tab of the current page).
-  return '<a href="' + href + '" class="footer-social" aria-label="' + label + '">' +
-    icon(name, { size: 18 }) + '</a>';
 }
 
 // Column link groups. Every href routes to a page/param that actually resolves —
@@ -122,12 +115,9 @@ function footerHTML() {
     '          <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
     '          <span class="font-bold text-lg text-white">Explore<span class="text-primary">Desh</span></span>\n' +
     '        </div>\n' +
-    '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-5">India\'s most thoughtful travel discovery platform. Find your perfect destination, compare prices honestly.</p>\n' +
-    '        <div class="flex items-center gap-2">\n' +
-    '          ' + socialBtn('facebook', 'ExploreDesh on Facebook', '#') + '\n' +
-    '          ' + socialBtn('instagram', 'ExploreDesh on Instagram', '#') + '\n' +
-    '          ' + socialBtn('twitter', 'ExploreDesh on X', '#') + '\n' +
-    '          ' + socialBtn('youtube', 'ExploreDesh on YouTube', '#') + '\n' +
+    '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-5">India\'s most thoughtful travel discovery platform. Explore 2,389 verified destinations across 36 states and union territories.</p>\n' +
+    '        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-amber-300 font-medium">\n' +
+    '          <span>✨ Complete Catalogue of Bharat</span>\n' +
     '        </div>\n' +
     '      </div>\n' +
     cols + '\n' +
@@ -143,14 +133,14 @@ function footerHTML() {
 }
 
 const MOBILE_LINKS = [
-  { key: 'home', href: 'index.html', icon: 'home', label: 'Home' },
+  { key: 'home', href: '/', icon: 'home', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
   { key: 'finder', href: 'ai-finder.html', icon: 'sparkles', label: 'AI Finder' },
   { key: 'beaches', href: 'destinations.html?type=beach', icon: 'waves', label: 'Beaches' },
 ];
 
 const COMPANY_MOBILE_LINKS = [
-  { key: 'home', href: 'index.html', icon: 'home', label: 'Home' },
+  { key: 'home', href: '/', icon: 'home', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
   { key: 'hills', href: 'destinations.html?type=hill_station', icon: 'mountain', label: 'Hills' },
   { key: 'contact', href: 'contact.html', icon: 'mail', label: 'Contact' },

@@ -4,7 +4,7 @@
  * and applies per-page SEO, keyed off the current filename.
  */
 import { initLayout } from '../components/layout.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
+import { applySEO, injectJsonLd, breadcrumbJsonLd, aboutPageJsonLd } from '../components/seo.js';
 
 const PAGES = {
   'about.html': {
@@ -20,6 +20,7 @@ const PAGES = {
     description: 'ExploreDesh Privacy Policy — what information we collect, how we use it, and the third-party services (weather, maps, photos) we rely on.',
     crumb: 'Privacy Policy',
     keywords: ['exploredesh privacy policy'],
+    robots: 'noindex, follow, max-image-preview:large',
   },
   'terms.html': {
     active: '',
@@ -27,6 +28,7 @@ const PAGES = {
     description: 'The terms and conditions of using the ExploreDesh travel discovery website.',
     crumb: 'Terms of Use',
     keywords: ['exploredesh terms of use'],
+    robots: 'noindex, follow, max-image-preview:large',
   },
 };
 
@@ -40,8 +42,16 @@ applySEO({
   description: page.description,
   canonicalPath: file,
   keywords: page.keywords,
+  robots: page.robots,
 });
+if (file === 'about.html') {
+  injectJsonLd(aboutPageJsonLd({
+    title: page.title,
+    description: page.description,
+    canonicalPath: file,
+  }));
+}
 injectJsonLd(breadcrumbJsonLd([
-  { name: 'Home', path: 'index.html' },
+  { name: 'Home', path: '/' },
   { name: page.crumb, path: file },
 ]));
