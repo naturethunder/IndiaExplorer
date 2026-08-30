@@ -151,6 +151,22 @@ function main(dest, idx) {
   const crumbEl = document.getElementById('crumbName');
   if (crumbEl) crumbEl.textContent = dest.title;
 
+  // Preserve explore filters in breadcrumb if user came from filtered catalogue
+  try {
+    const saved = sessionStorage.getItem('exploredesh_explore_state');
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.url) {
+        const destCrumbs = document.querySelectorAll('a[href="destinations.html"]');
+        destCrumbs.forEach(function (a) {
+          if (a.closest('[role="navigation"]') || a.closest('ol')) {
+            a.href = parsed.url;
+          }
+        });
+      }
+    }
+  } catch (_) {}
+
   // ─── Dynamic per-destination fixed background ────────────
   const immBg = document.querySelector('.dest-immersive-bg');
   if (immBg && heroSrc) {
@@ -1183,17 +1199,21 @@ function main(dest, idx) {
       ' · feels ' + w.feels + '°C · humidity ' + w.humidity + '% · wind ' + w.wind + ' km/h';
   }
 
-  // ─── Place photos: baked p.photos first ─────────────────
+  // ─── Place photos: card image as slide 1 + baked p.photos ──
   function fetchPlacePhotos(p, cb) {
-    if (Array.isArray(p.photos) && p.photos.length) {
-      const valid = [...new Set(p.photos.filter(u => u && typeof u === 'string' && !u.includes('picsum.photos')))];
-      if (valid.length > 0) {
-        cb(valid);
-        return;
+    const list = [];
+    if (p.image && p.image.src && typeof p.image.src === 'string' && !p.image.src.includes('picsum.photos')) {
+      list.push(p.image.src);
+    }
+    if (Array.isArray(p.photos)) {
+      for (const u of p.photos) {
+        if (u && typeof u === 'string' && !u.includes('picsum.photos') && !list.includes(u)) {
+          list.push(u);
+        }
       }
     }
-    if (p.image && p.image.src && typeof p.image.src === 'string' && !p.image.src.includes('picsum.photos')) {
-      cb([p.image.src]);
+    if (list.length > 0) {
+      cb(list);
       return;
     }
     if (dest.heroImage && dest.heroImage.src) {

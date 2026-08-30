@@ -1,6 +1,8 @@
 /**
  * explore.js — page logic for destinations.html (browse/filter/sort).
  * Loads lightweight manifest, manages filter state, renders cards with GSAP motion.
+ * Automatically synchronizes filter state with URL query parameters and sessionStorage
+ * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
 import { fetchIndex } from '../data/api.js';
 import { initLayout, setActiveNav } from '../components/layout.js';
@@ -9,6 +11,10 @@ import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS } from '../data/taxonomy.js';
 import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
 initLayout({ active: 'destinations' });
 
@@ -50,6 +56,7 @@ const categoryIconMap = new Map(
 // ─── Filter state ──────────────────────────────────────
 let filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
 let sortBy = 'rating';
+let initialRestoredScrollY = 0;
 
 const grid = document.getElementById('grid');
 const noResults = document.getElementById('noResults');
@@ -228,8 +235,159 @@ function renderBatch(isAppend = false) {
   animateCardsIn(previousShown);
 }
 
+// ─── URL & State Synchronization ───────────────────────
+function syncUrlAndState() {
+  const p = new URLSearchParams();
+  if (filters.search) p.set('search', filters.search);
+  if (filters.type) p.set('type', filters.type);
+  if (filters.state) p.set('state', filters.state);
+  if (filters.region) p.set('region', filters.region);
+  if (filters.tier) p.set('tier', filters.tier);
+  if (filters.season) p.set('season', filters.season);
+  if (filters.month) p.set('month', String(filters.month));
+  if (sortBy && sortBy !== 'rating') p.set('sort', sortBy);
 
-function apply() {
+  const qs = p.toString();
+  const currentQs = window.location.search.replace(/^\?/, '');
+  const targetUrl = window.location.pathname + (qs ? '?' + qs : '');
+
+  // Keep browser address bar synchronized with current active filters
+  try {
+    if (currentQs !== qs) {
+      window.history.replaceState({ filters: { ...filters }, sortBy, shown, scrollY: window.scrollY }, '', targetUrl);
+    }
+  } catch (_) {}
+
+  // Keep state in sessionStorage for instant restoration on Back button navigation
+  try {
+    sessionStorage.setItem('exploredesh_explore_state', JSON.stringify({
+      filters: { ...filters },
+      sortBy,
+      shown,
+      scrollY: window.scrollY,
+      url: targetUrl,
+      timestamp: Date.now()
+    }));
+  } catch (_) {}
+
+  setActiveNav(filters.type ? 'destinations.html?type=' + filters.type : 'destinations.html');
+}
+
+function syncControlsFromFilters() {
+  if (searchInput) {
+    searchInput.value = filters.search || '';
+    toggleSearchClear();
+  }
+  if (stateSel) stateSel.value = filters.state || '';
+  if (regionSel) regionSel.value = filters.region || '';
+  if (tierSel) tierSel.value = filters.tier || '';
+  if (seasonSel) seasonSel.value = filters.season || '';
+  if (monthSel) monthSel.value = filters.month ? String(filters.month) : '';
+  if (sortSel) sortSel.value = sortBy || 'rating';
+  syncFilterActive();
+}
+
+function readFiltersFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  let hasUrlParams = false;
+
+  const newFilters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
+  let newSortBy = 'rating';
+
+  if (params.get('search') || params.get('q')) {
+    newFilters.search = (params.get('search') || params.get('q') || '').trim();
+    hasUrlParams = true;
+  }
+  if (params.get('type') || params.get('category')) {
+    const wantType = params.get('type') || params.get('category');
+    if (CATEGORY_FILTERS.some(function (t) { return t.id === wantType; })) {
+      newFilters.type = wantType;
+      hasUrlParams = true;
+    }
+  }
+  if (params.get('state') && INDIA_STATES.indexOf(params.get('state')) >= 0) {
+    newFilters.state = params.get('state');
+    hasUrlParams = true;
+  }
+  if (params.get('region') && ZONES.indexOf(params.get('region')) >= 0) {
+    newFilters.region = params.get('region');
+    hasUrlParams = true;
+  }
+  if (params.get('season') && SEASONS.indexOf(params.get('season')) >= 0) {
+    newFilters.season = params.get('season');
+    hasUrlParams = true;
+  }
+  if (params.get('month')) {
+    const mo = parseInt(params.get('month'), 10);
+    if (mo >= 1 && mo <= 12) {
+      newFilters.month = mo;
+      hasUrlParams = true;
+    }
+  }
+  if (params.get('tier') && PRICE_TIERS[params.get('tier')]) {
+    newFilters.tier = params.get('tier');
+    hasUrlParams = true;
+  } else if (params.get('maxPrice')) {
+    const max = parseInt(params.get('maxPrice'), 10);
+    if (!isNaN(max)) {
+      const entry = Object.entries(PRICE_TIERS).find(function (e) { return e[1].min <= max && max <= e[1].max; }) ||
+        Object.entries(PRICE_TIERS).sort(function (a, b) { return b[1].max - a[1].max; })[0];
+      if (entry) {
+        newFilters.tier = entry[0];
+        hasUrlParams = true;
+      }
+    }
+  }
+  if (params.get('sort') || params.get('sortBy')) {
+    const s = params.get('sort') || params.get('sortBy');
+    const validSorts = ['rating', 'latest', 'price_asc', 'price_desc', 'distance'];
+    if (validSorts.indexOf(s) >= 0) {
+      newSortBy = s;
+      hasUrlParams = true;
+    }
+  }
+
+  // If no params in URL, check if we have a saved session state from recent navigation
+  if (!hasUrlParams) {
+    try {
+      const saved = sessionStorage.getItem('exploredesh_explore_state');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && parsed.filters && (Date.now() - (parsed.timestamp || 0) < 7200000)) {
+          if (parsed.filters.search) newFilters.search = parsed.filters.search;
+          if (parsed.filters.type) newFilters.type = parsed.filters.type;
+          if (parsed.filters.state) newFilters.state = parsed.filters.state;
+          if (parsed.filters.region) newFilters.region = parsed.filters.region;
+          if (parsed.filters.tier) newFilters.tier = parsed.filters.tier;
+          if (parsed.filters.season) newFilters.season = parsed.filters.season;
+          if (parsed.filters.month) newFilters.month = parsed.filters.month;
+          if (parsed.sortBy) newSortBy = parsed.sortBy;
+          if (parsed.shown && parsed.shown > PAGE_SIZE) shown = parsed.shown;
+          if (parsed.scrollY && parsed.scrollY > 0) initialRestoredScrollY = parsed.scrollY;
+        }
+      }
+    } catch (_) {}
+  } else {
+    // If URL has params, still restore shown count and scroll position if available
+    try {
+      const saved = sessionStorage.getItem('exploredesh_explore_state');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && (Date.now() - (parsed.timestamp || 0) < 7200000)) {
+          if (parsed.shown && parsed.shown > PAGE_SIZE) shown = parsed.shown;
+          if (parsed.scrollY && parsed.scrollY > 0) initialRestoredScrollY = parsed.scrollY;
+        }
+      }
+    } catch (_) {}
+  }
+
+  filters = newFilters;
+  sortBy = newSortBy;
+  syncControlsFromFilters();
+}
+
+function apply(options = {}) {
+  const { skipUrlSync = false, isAppend = false } = options;
   let results = SUMMARIES.slice();
 
   if (filters.search) {
@@ -301,11 +459,28 @@ function apply() {
   syncMobileFilterUI(results.length);
 
   lastResults = results;
-  shown = PAGE_SIZE;
-  renderBatch(false);
+
+  if (!isAppend) {
+    renderBatch(false);
+  }
 
   syncFilterActive();
   renderActiveFilterChips();
+
+  if (!skipUrlSync) {
+    syncUrlAndState();
+  }
+
+  // Restore scroll position after initial rendering if requested
+  if (initialRestoredScrollY > 0) {
+    const targetY = initialRestoredScrollY;
+    initialRestoredScrollY = 0;
+    requestAnimationFrame(function () {
+      setTimeout(function () {
+        window.scrollTo({ top: targetY, behavior: 'instant' });
+      }, 60);
+    });
+  }
 }
 
 function renderActiveFilterChips() {
@@ -381,12 +556,17 @@ function toggleSearchClear() {
 let searchTimer = null;
 function applyDebounced() {
   if (searchTimer) clearTimeout(searchTimer);
-  searchTimer = setTimeout(apply, 150);
+  searchTimer = setTimeout(function () { apply(); }, 150);
 }
 
 function resetFilters() {
   filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
   sortBy = 'rating';
+  shown = PAGE_SIZE;
+  initialRestoredScrollY = 0;
+  try {
+    sessionStorage.removeItem('exploredesh_explore_state');
+  } catch (_) {}
   if (searchInput) searchInput.value = '';
   toggleSearchClear();
   if (stateSel) stateSel.value = '';
@@ -496,52 +676,52 @@ if (loadMoreBtn) {
   loadMoreBtn.addEventListener('click', function () {
     shown += PAGE_SIZE;
     renderBatch(true);
+    syncUrlAndState();
   });
 }
 
-// ─── URL Parameters Handling ───────────────────────────
-const params = new URLSearchParams(window.location.search);
-if (params.get('search')) {
-  filters.search = params.get('search');
-  if (searchInput) searchInput.value = filters.search;
-  toggleSearchClear();
-}
-if (params.get('type')) {
-  const wantType = params.get('type');
-  if (CATEGORY_FILTERS.some(function (t) { return t.id === wantType; })) filters.type = wantType;
-}
-if (params.get('state') && INDIA_STATES.indexOf(params.get('state')) >= 0) {
-  filters.state = params.get('state');
-  if (stateSel) stateSel.value = filters.state;
-}
-if (params.get('region') && ZONES.indexOf(params.get('region')) >= 0) filters.region = params.get('region');
-if (params.get('season') && SEASONS.indexOf(params.get('season')) >= 0) filters.season = params.get('season');
-if (params.get('month')) {
-  const mo = parseInt(params.get('month'), 10);
-  if (mo >= 1 && mo <= 12) { filters.month = mo; if (monthSel) monthSel.value = String(mo); }
-}
-if (params.get('maxPrice')) {
-  const max = parseInt(params.get('maxPrice'), 10);
-  if (!isNaN(max)) {
-    const entry = Object.entries(PRICE_TIERS).find(function (e) { return e[1].min <= max && max <= e[1].max; }) ||
-      Object.entries(PRICE_TIERS).sort(function (a, b) { return b[1].max - a[1].max; })[0];
-    if (entry) filters.tier = entry[0];
-  }
+// Preserve state and scroll position when clicking any destination card
+if (grid) {
+  grid.addEventListener('click', function (e) {
+    const link = e.target.closest('a');
+    if (link) {
+      try {
+        sessionStorage.setItem('exploredesh_explore_state', JSON.stringify({
+          filters: { ...filters },
+          sortBy,
+          shown,
+          scrollY: window.scrollY,
+          url: window.location.pathname + window.location.search,
+          timestamp: Date.now()
+        }));
+      } catch (_) {}
+    }
+  });
 }
 
-if (tierSel) tierSel.value = filters.tier;
-if (regionSel) regionSel.value = filters.region;
-if (seasonSel) seasonSel.value = filters.season;
-if (monthSel) monthSel.value = filters.month ? String(filters.month) : '';
+window.addEventListener('beforeunload', function () {
+  try {
+    sessionStorage.setItem('exploredesh_explore_state', JSON.stringify({
+      filters: { ...filters },
+      sortBy,
+      shown,
+      scrollY: window.scrollY,
+      url: window.location.pathname + window.location.search,
+      timestamp: Date.now()
+    }));
+  } catch (_) {}
+});
 
-// Render category pill buttons with active state from URL / defaults
+// Handle browser Back / Forward buttons without full reload
+window.addEventListener('popstate', function () {
+  readFiltersFromUrl();
+  apply({ skipUrlSync: true });
+});
+
+// ─── Initial Load & Render ─────────────────────────────
+readFiltersFromUrl();
 renderTypeButtons();
-
-setActiveNav(filters.type ? 'destinations.html?type=' + filters.type : 'destinations.html');
-
-// ─── Initial Render ────────────────────────────────────
 apply();
-
 
 // ─── GSAP Motion Engine ────────────────────────────────
 // Register ScrollTrigger immediately so card reveal works on first render

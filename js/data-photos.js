@@ -6421,12 +6421,12 @@
     "https://upload.wikimedia.org/wikipedia/commons/f/f7/Boita_-_Konark_Museum.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Closeup_of_the_center_of_a_stone_wheel_-_Konark_Sun_Temple%2C_Orissa%2C_India.jpg/1280px-Closeup_of_the_center_of_a_stone_wheel_-_Konark_Sun_Temple%2C_Orissa%2C_India.jpg"
   ],
-  "koncheswar-mahadev-temple": [
-    "https://images.pexels.com/photos/34148386/pexels-photo-34148386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://upload.wikimedia.org/wikipedia/commons/1/1f/ASI_VOL_XVI_Pl_XVI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://upload.wikimedia.org/wikipedia/commons/9/98/ASI_VOL_XVI_Pl_XVII.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "https://images.pexels.com/photos/27816870/pexels-photo-27816870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/5546466/pexels-photo-5546466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "koncheswar-mahadev-temple": [
+    "https://images.pexels.com/photos/31817437/pexels-photo-31817437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/28616500/pexels-photo-28616500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/32216141/pexels-photo-32216141.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.unsplash.com/photo-1642516861335-97971622499e?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8YW5jaWVudCUyMGluZGlhbiUyMGJyaWNrJTIwdGVtcGxlJTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3ODgwODkzMTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=80",
+    "https://images.unsplash.com/photo-1704788564069-d54cab4169aa?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8YW5jaWVudCUyMGluZGlhbiUyMGJyaWNrJTIwdGVtcGxlJTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3ODgwODkzMTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=80"
   ],
   "konda-reddy-fort": [
     "https://upload.wikimedia.org/wikipedia/commons/a/af/21_-_Front_View_of_Kondareddy_Buruju.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -7711,12 +7711,12 @@
     "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mana05.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
     "https://upload.wikimedia.org/wikipedia/commons/e/e7/Manakkaattaamma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
-  "manali": [
-    "https://images.pexels.com/photos/11538476/pexels-photo-11538476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "manali": [
     "https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/8020071/pexels-photo-8020071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/28689395/pexels-photo-28689395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/36721862/pexels-photo-36721862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "https://images.pexels.com/photos/28680808/pexels-photo-28680808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/16104060/pexels-photo-16104060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/17123224/pexels-photo-17123224.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/968625/pexels-photo-968625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   ],
   "manarcad-church": [
     "https://upload.wikimedia.org/wikipedia/commons/8/86/Front_view_of_manarcad_church.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -8403,12 +8403,12 @@
     "https://upload.wikimedia.org/wikipedia/commons/6/6a/The_old_palace_buildings_within_the_fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "https://upload.wikimedia.org/wikipedia/commons/3/3a/The_East_End_of_the_Fort_of_Mongheer_View_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
   ],
-  "munnar": [
-    "https://images.pexels.com/photos/35994958/pexels-photo-35994958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/3848200/pexels-photo-3848200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "munnar": [
     "https://images.pexels.com/photos/29023410/pexels-photo-29023410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/32262506/pexels-photo-32262506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/32262495/pexels-photo-32262495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "https://images.pexels.com/photos/36982207/pexels-photo-36982207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/35491392/pexels-photo-35491392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/29280001/pexels-photo-29280001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/13045091/pexels-photo-13045091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   ],
   "munsar-lake-and-shrines": [
     "https://images.pexels.com/photos/32261675/pexels-photo-32261675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -10400,8 +10400,12 @@
     "https://images.pexels.com/photos/38087449/pexels-photo-38087449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "https://images.pexels.com/photos/10329511/pexels-photo-10329511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   ],
-  "rajauli-wildlife-sanctuary": [
-    "https://images.pexels.com/photos/17650350/pexels-photo-17650350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "rajauli-wildlife-sanctuary": [
+    "https://images.pexels.com/photos/673920/pexels-photo-673920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/19834533/pexels-photo-19834533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/26707743/pexels-photo-26707743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/16300777/pexels-photo-16300777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/17183455/pexels-photo-17183455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   ],
   "rajbari-national-park": [
     "https://upload.wikimedia.org/wikipedia/commons/4/4c/Spotted_Deers_at_Bhitarkanika_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",

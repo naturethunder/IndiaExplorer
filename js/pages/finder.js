@@ -768,8 +768,15 @@ function infoCardHTML(t) {
   }
 
   // Safe wrapper: search directly and attempt geolocation in background without blocking
-  async function doSearch(text) {
+  async function doSearch(text, skipUrlSync = false) {
     if (!text || !text.trim()) return;
+
+    if (!skipUrlSync) {
+      try {
+        const targetUrl = window.location.pathname + '?q=' + encodeURIComponent(text.trim());
+        window.history.replaceState({ q: text.trim() }, '', targetUrl);
+      } catch (_) {}
+    }
 
     if (currentUserCoords) {
       try { await run(text, currentUserCoords); }
@@ -806,6 +813,14 @@ function infoCardHTML(t) {
     try { locateMe(); } catch (err) { if (window.console) console.error('[ai-finder]', err); bestThisMonth(); }
   });
 
+  window.addEventListener('popstate', function () {
+    const query = new URLSearchParams(location.search).get('q');
+    if (query) {
+      promptEl.value = query;
+      doSearch(query, true);
+    }
+  });
+
   // Deep link: ai-finder.html?q=...
   const q = new URLSearchParams(location.search).get('q');
-  if (q) { promptEl.value = q; doSearch(q); }
+  if (q) { promptEl.value = q; doSearch(q, true); }
