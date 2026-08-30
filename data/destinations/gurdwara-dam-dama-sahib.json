@@ -5,569 +5,354 @@
   "country": "India",
   "region": "Delhi",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Gurdwara Dam Dama Sahib — heritage city of Delhi",
+  "badge": "Spiritual",
+  "tagline": "Gurdwara Dam Dama Sahib — Sacred Sikh Shrine & Nizamuddin UNESCO Heritage",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/28861160/pexels-photo-28861160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Gurdwara Dam Dama Sahib, Delhi"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Gurdwara_Damdama_Sahib%2C_Delhi.jpg",
+    "alt": "Gurdwara Dam Dama Sahib iconic heritage in Delhi, India"
   },
   "overview": {
-    "short": "Gurdwara Damdama Sahib is a gurdwara (Sikh place of worship) located near Humayun's Tomb on the Outer Ring Road in New Delhi, India.",
-    "description": "Gurdwara Damdama Sahib is a gurdwara (Sikh place of worship) located near Humayun's Tomb on the Outer Ring Road in New Delhi, India.",
+    "short": "Gurdwara Dam Dama Sahib in Nizamuddin East commemorates the historic meeting between Tenth Sikh Guru Gobind Singh Ji and Prince Mu’azzam in 1707.",
+    "description": "Situated near Humayun’s Tomb and Sarai Kale Khan in South Delhi, Gurdwara Dam Dama Sahib is a revered historic Sikh shrine built on the site where Guru Gobind Singh Ji met the Mughal Prince Mu’azzam (later Emperor Bahadur Shah I) in 1707. The serene white marble Gurdwara stands adjacent to world-renowned Mughal heritage including Humayun’s Tomb, Hazrat Nizamuddin Auliya Dargah, Sunder Nursery, and the Millennium Indraprastha Park.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Historic 1707 Meeting Site",
+      "Adjacent to Humayun’s Tomb",
+      "Hazrat Nizamuddin Sufi Dargah",
+      "Sunder Nursery Heritage Campus"
     ],
-    "altitude": null,
-    "rating": 4.3,
-    "reviewCount": 12565,
-    "minPrice": 900,
-    "distanceFromDelhi": 5
+    "altitude": "215 m",
+    "rating": 4.8,
+    "reviewCount": 19000,
+    "minPrice": 1500,
+    "distanceFromDelhi": 0,
+    "about": "The shrine hosts grand annual celebrations during Hola Mohalla with traditional Sikh martial arts (Gatka) displays and 24-hour Guru ka Langar. Its location makes it the gateway to Delhi’s richest historic enclave spanning seven centuries of Sultanate, Mughal, and Sikh history."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 28.594746,
-    "lng": 77.252574,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 28.588,
+    "lng": 77.252,
+    "tempSummer": "28–42°C",
+    "tempWinter": "8–24°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 34,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 27 km · road approx."
-      },
-      {
-        "from": "Agra (Uttar Pradesh)",
-        "city": "Agra",
-        "state": "Uttar Pradesh",
-        "distance": 218,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 174 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 258,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 206 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 295,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 236 km · road approx."
-      },
-      {
-        "from": "Chandigarh (Chandigarh UT)",
-        "city": "Chandigarh",
-        "state": "Chandigarh UT",
-        "distance": 303,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 242 km · road approx."
-      },
-      {
-        "from": "Shimla (Himachal Pradesh)",
-        "city": "Shimla",
-        "state": "Himachal Pradesh",
-        "distance": 349,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 279 km · road approx."
-      },
-      {
-        "from": "Amritsar (Punjab)",
-        "city": "Amritsar",
-        "state": "Punjab",
-        "distance": 510,
-        "byCar": "9–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 408 km · road approx."
-      },
-      {
-        "from": "Jammu (Jammu & Kashmir UT)",
-        "city": "Jammu",
-        "state": "Jammu & Kashmir UT",
-        "distance": 641,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 513 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 741,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 593 km · road approx."
-      },
-      {
-        "from": "Leh (Ladakh UT)",
-        "city": "Leh",
-        "state": "Ladakh UT",
-        "distance": 774,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 619 km · road approx."
-      },
-      {
-        "from": "Ahmedabad (Gujarat)",
-        "city": "Ahmedabad",
-        "state": "Gujarat",
-        "distance": 971,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 777 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1061,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 849 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 1061,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 849 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1160,
-        "byCar": "19–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 928 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 1243,
-        "byCar": "21–28 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 994 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Gurdwara Dam Dama Sahib / nearest airport",
-      "distance": 30
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 18
     },
     "nearestRailway": {
-      "name": "New Delhi Railway Station",
-      "distance": 6
+      "name": "Hazrat Nizamuddin Railway Station (NZM)",
+      "distance": 1
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located right next to Sarai Kale Khan ISBT and Hazrat Nizamuddin Railway Station. Served directly by Sarai Kale Khan - Nizamuddin Metro Station (Pink Line).",
+    "routes": [
+      {
+        "from": "Hazrat Nizamuddin Railway Station (NZM)",
+        "city": "Nizamuddin",
+        "state": "Delhi",
+        "distance": 1,
+        "byCar": "5 mins",
+        "byTrain": "Walking distance (10 mins)",
+        "byAir": "Not applicable",
+        "via": "Mathura Road"
+      },
+      {
+        "from": "Indira Gandhi Airport (DEL)",
+        "city": "Delhi Airport",
+        "state": "Delhi",
+        "distance": 18,
+        "byCar": "40 mins",
+        "byTrain": "Airport Express to New Delhi + Pink Line",
+        "byAir": "Direct flight",
+        "via": "Ring Road & Barapullah"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Humayun's tomb",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Humayun's tomb (Persian: Maqbara-i Humayun) is the tomb of the Mughal Emperor Humayun located in Delhi, India. The tomb was commissioned by Humayun's first wife and chief consort, Empress Bega Begum, under her patronage in 1558, and designed by Persian architects Mirak Mirza Ghiyas and his son, Sayyid Muhammad, whom she personally chose.",
+      "name": "Gurdwara Dam Dama Sahib Sanctum",
+      "category": "temple",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1 hr",
+      "rating": 4.9,
+      "description": "Sacred white marble Gurdwara commemorating Guru Gobind Singh Ji with round-the-clock community kitchen (Langar) and holy sarovar.",
       "image": {
-        "src": "https://images.pexels.com/photos/19966858/pexels-photo-19966858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Humayun's tomb"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Gurudwara_Damdama_Sahib_-_Visit_During_WCI_2016_%281%29.jpg",
+        "alt": "Gurdwara Dam Dama Sahib Sanctum in Gurdwara Dam Dama Sahib, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/19966841/pexels-photo-19966841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/16931338/pexels-photo-16931338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Gurudwara_Dumdama_Sahib.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/3/32/Gurudwara_Damdama_Sahib_-_Visit_During_WCI_2016_%282%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Gurudwara_Damdama_Sahib_-_Visit_During_WCI_2016_%283%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Gurudwara_Damdama_Sahib_-_Visit_During_WCI_2016_%284%29.jpg"
       ]
     },
     {
-      "name": "Nila Gumbad",
+      "name": "Humayun’s Tomb Complex (UNESCO)",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Nila Gumbad (lit. 'Blue Dome') is a tomb located within the Humayun's Tomb complex at Delhi, India. Historians are unsure about the identity of the person who has been buried.",
+      "distance": "600 m",
+      "entryFee": "₹40 (Indians) / ₹600 (Foreigners)",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "UNESCO World Heritage Mughal garden tomb that inspired the Taj Mahal, set within sprawling charbagh quadrangles.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Distant_view_of_Nila_Gumbad%2C_and_Nai-ka-Gumbad%2C_Humayun%27s_Tomb%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nila Gumbad"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Humayun_Tomb%2C_Delhi%2C_from_the_entrance_portal.jpg",
+        "alt": "Humayun’s Tomb Complex (UNESCO) in Gurdwara Dam Dama Sahib, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/20318704/pexels-photo-20318704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/11517257/pexels-photo-11517257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/19195977/pexels-photo-19195977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0a/Humayuns_tomb_new_Delhi_4.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Humayun%27s_Tomb_31.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Humayun%27s_Tomb_32.jpg"
       ]
     },
     {
-      "name": "Tombs of Battashewala Complex",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Tombs of Battashewala Complex is an Archaeological Survey of India (ASI) protected monument in Nizamuddin East, Delhi. The funerary complex, consists of three Mughal period tombs, known as the Bara Batashewala Mahal, the Chota Batashewala Mahal, an unidentified Mughal tomb and arched compound wall enclosures.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Unknown_Tomb%2C_Ghaispur_-just_across_the_North_Gate_of_the_Humayun_Tomb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tombs of Battashewala Complex"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/33618580/pexels-photo-33618580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/37790653/pexels-photo-37790653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Refurbished_Battashewala_tomb_in_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Arab Serai",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Arab Serai is a 16th century caravanserai within the Humayun's tomb complex at Delhi, India. It is said to have been built by Mughal emperor Humayun's widow Haji Begum.",
-      "image": {
-        "src": "https://images.pexels.com/photos/20050829/pexels-photo-20050829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Arab Serai"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/20045160/pexels-photo-20045160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/10527023/pexels-photo-10527023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Humayun%27s_Tomb_-_Wall_of_Arab_Serai_-_View_from_inside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Nizamuddin East",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Nizamuddin East is an affluent residential colony in South East Delhi, India. It is located on Mathura Road and is home to Humayun's Tomb, as well as that of Abdul Rahim Khan-I-Khana.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Bulleh_Shah%27s_Shrine.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nizamuddin East"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Leafy_street_in_Nizamuddin_East.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/ce/Nizamuddin_East%2C_New_Delhi%2C_Delhi_110013%2C_India_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/77/Nizamuddin_East%2C_New_Delhi%2C_Delhi_110013%2C_India_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Sarai Kale Khan",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
+      "name": "Hazrat Nizamuddin Auliya Dargah",
+      "category": "cultural",
+      "distance": "1.2 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 10:30 PM",
+      "duration": "1.5 hrs",
       "rating": 4.7,
-      "description": "Sarai Kale Khan is a neighborhood located in the South East Delhi district of Delhi and a major multimodal transport hub offering convenient transportation options, between Delhi Metro’s Pink line, nearby Sarai Kale Khan ISBT, semi-high-speed RRTS station, the planned high-speed rail and the adjacent Hazrat Nizamuddin Railway Station (one of Delhi's five major railway hubs).",
+      "description": "Spiritual Sufi sanctuary of 14th-century saint Nizamuddin Auliya, world-famed for soul-stirring Thursday evening Qawwali music.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Delhi_aerial_photo_04-2016_img7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sarai Kale Khan"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hazrat_Nizamuddin_Dargah%2C_Delhi_%282017%29.jpg",
+        "alt": "Hazrat Nizamuddin Auliya Dargah in Gurdwara Dam Dama Sahib, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/19883650/pexels-photo-19883650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Rajnath_Singh_laying_the_Foundation_Stone_of_Extension_of_Elevated_Road_over_Barapullah_Nallah_%28Phase-III%29_between_Sarai_Kale_Khan_and_Mayur_Vihar%2C_at_Mayur_Vihar%2C_in_Delhi._The_Lt._Governor_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rajnath_Singh_at_the_Foundation_Stone_Laying_Ceremony_of_Extension_of_Elevated_Road_over_Barapullah_Nallah_%28Phase-III%29_between_Sarai_Kale_Khan_and_Mayur_Vihar%2C_at_Mayur_Vihar%2C_in_Delhi._The_Lt._Governor_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Hazrat_Nizamuddin_Dargah_in_Delhi_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Hazrat_Nizamuddin_Dargah_in_Delhi_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/29/Hazrat_Nizamuddin_Dargah_in_Delhi_03.jpg"
       ]
     },
     {
-      "name": "Tomb of Isa Khan",
+      "name": "Tomb of Isa Khan Niyazi",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The tomb of the noble Isa Khan Niazi is located in the Humayun's Tomb complex in Delhi, India. The mausoleum, octagonal in shape and built mainly of red sandstone, was built in 1547–1548 during the reign of Sher Shah Suri.",
+      "distance": "700 m",
+      "entryFee": "Included in Humayun’s Tomb",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "30 mins",
+      "rating": 4.7,
+      "description": "Exquisite octagonal Suri-era mausoleum adorned with glazed ceramic tiles and an attached heritage red stone mosque.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/20191205_Isa_Khan_Niyazi%27s_tomb%2C_Delhi_1044_6782.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tomb of Isa Khan"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/20191205_Isa_Khan_Niyazi%27s_tomb%2C_Delhi_1044_6782.jpg",
+        "alt": "Tomb of Isa Khan Niyazi in Gurdwara Dam Dama Sahib, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/15911220/pexels-photo-15911220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/20191205_Isa_Khan_Niyazi%27s_tomb%2C_Delhi_1044_6783.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Tomb_of_Isa_Khan_-_Delhi_-_0001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/20191205_Isa_Khan_Niyazi%27s_tomb%2C_Delhi_1044_6783.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/46/Tomb_of_Isa_Khan_-_Delhi_-_0001.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Tomb_of_Isa_Khan_-_Delhi_-_002.jpg"
       ]
     },
     {
-      "name": "Indraprastha Park",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "The Millennium Park is a park on the Outer Ring Road in the east of Delhi, India. It was constructed in 2004 by the Delhi Development Authority.",
+      "name": "Nila Gumbad (Blue Dome)",
+      "category": "heritage",
+      "distance": "400 m",
+      "entryFee": "Included in Humayun’s Tomb",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "20 mins",
+      "rating": 4.6,
+      "description": "Distinctive early Mughal tomb crowned with shimmering Persian blue turquoise tiles located next to the railway line.",
       "image": {
-        "src": "https://images.pexels.com/photos/37790648/pexels-photo-37790648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Indraprastha Park"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Distant_view_of_Nila_Gumbad%2C_and_Nai-ka-Gumbad%2C_Humayun%27s_Tomb%2C_Delhi.jpg",
+        "alt": "Nila Gumbad (Blue Dome) in Gurdwara Dam Dama Sahib, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1561571994-3c391516f455?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/20045037/pexels-photo-20045037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/30032903/pexels-photo-30032903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nila_Gumbad%2C_and_Nai-ka-Gumbad_or_Barber%27s_Tomb%2C_near_Humayun%27s_Tomb.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0a/Nila_Gumbad_or_Blue_Dome%2C_adjacent_to_the_Humayun%27s_tomb_complex%2C_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Nila_Gumbad%2C_Delhi.jpg"
+      ]
+    },
+    {
+      "name": "Sunder Nursery Heritage Park",
+      "category": "nature",
+      "distance": "800 m",
+      "entryFee": "₹50",
+      "timings": "7:00 AM – 10:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "90-acre UNESCO-recognized heritage park with 15 restored Mughal monuments, lush botanical gardens, and weekend farmers markets.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sunder_Nursery_-_55332545775.jpg",
+        "alt": "Sunder Nursery Heritage Park in Gurdwara Dam Dama Sahib, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sunder_Nursery_-_55332124241.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Lakharwal_Gumbab_in_the_Sunder_Nursery_Lawns.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sunderwala_Burj_in_the_Sunder_Nursery_Gardens.JPG"
+      ]
+    },
+    {
+      "name": "Chausath Khamba & Mirza Ghalib’s Tomb",
+      "category": "heritage",
+      "distance": "1.4 km",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Unique 64-pillared pure white marble pavilion and the serene resting place of Urdu literary icon Mirza Ghalib.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chausath_Khamba.jpg",
+        "alt": "Chausath Khamba & Mirza Ghalib’s Tomb in Gurdwara Dam Dama Sahib, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Chaunsath_Khamba_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Chaunsath_Khamba_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/06/Chaunsath_Khamba_02.jpg"
+      ]
+    },
+    {
+      "name": "Millennium Indraprastha Park & Shanti Stupa",
+      "category": "nature",
+      "distance": "1.5 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 8:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.5,
+      "description": "Sprawling 84-acre riverfront green lung along the Ring Road featuring the gleaming white Japanese Vishwa Shanti Stupa.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Shanti_Stupa_at_Indraprastha_park_%2C_New_Delhi%2C_India.jpg",
+        "alt": "Millennium Indraprastha Park & Shanti Stupa in Gurdwara Dam Dama Sahib, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Elephants_sculpture%2C_Gate_of_Shanti_Stupa_at_Indraprastha_Park%2C_New_Delhi%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Shanti_Stupa_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3b/IndraprasthaPark-Stupa-3.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Humayun's tomb & around",
+      "title": "Day 1 — Sacred Meeting Place & Mughal Splendour",
       "items": [
         {
           "time": "Morning",
-          "activity": "Humayun's tomb",
-          "note": "Humayun's tomb (Persian: Maqbara-i Humayun) is the tomb of the Mughal Emperor Humayun located in Delhi, India. The tomb was commissioned by Humayun's first wife and chief consort, Empress Bega Begum, under her patronage in 1558, and designed by Persian architects Mirak Mirza Ghiyas and his son, Sayyid Muhammad, whom she personally chose."
+          "activity": "Gurdwara Dam Dama Sahib",
+          "note": "Participate in morning prayers, kirtan, and community langar at the sacred shrine."
+        },
+        {
+          "time": "Midday",
+          "activity": "Humayun’s Tomb & Isa Khan Complex",
+          "note": "Explore the UNESCO garden-tomb architecture and tile-roofed octagonal pavilions."
         },
         {
           "time": "Afternoon",
-          "activity": "Nila Gumbad",
-          "note": "Nila Gumbad (lit. 'Blue Dome') is a tomb located within the Humayun's Tomb complex at Delhi, India. Historians are unsure about the identity of the person who has been buried."
+          "activity": "Sunder Nursery Nature & Cafe Walk",
+          "note": "Relax among landscaped lakes, botanical flowerbeds, and restored Mughal pavilions."
         },
         {
           "time": "Evening",
-          "activity": "Tombs of Battashewala Complex",
-          "note": "Tombs of Battashewala Complex is an Archaeological Survey of India (ASI) protected monument in Nizamuddin East, Delhi. The funerary complex, consists of three Mughal period tombs, known as the Bara Batashewala Mahal, the Chota Batashewala Mahal, an unidentified Mughal tomb and arched compound wall enclosures."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Arab Serai & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Arab Serai",
-          "note": "Arab Serai is a 16th century caravanserai within the Humayun's tomb complex at Delhi, India. It is said to have been built by Mughal emperor Humayun's widow Haji Begum."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Nizamuddin East",
-          "note": "Nizamuddin East is an affluent residential colony in South East Delhi, India. It is located on Mathura Road and is home to Humayun's Tomb, as well as that of Abdul Rahim Khan-I-Khana."
-        },
-        {
-          "time": "Evening",
-          "activity": "Sarai Kale Khan",
-          "note": "Sarai Kale Khan is a neighborhood located in the South East Delhi district of Delhi and a major multimodal transport hub offering convenient transportation options, between Delhi Metro’s Pink line, nearby Sarai Kale Khan ISBT, semi-high-speed RRTS station, the planned high-speed rail and the adjacent Hazrat Nizamuddin Railway Station (one of Delhi's five major railway hubs)."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Tomb of Isa Khan & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Tomb of Isa Khan",
-          "note": "The tomb of the noble Isa Khan Niazi is located in the Humayun's Tomb complex in Delhi, India. The mausoleum, octagonal in shape and built mainly of red sandstone, was built in 1547–1548 during the reign of Sher Shah Suri."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Indraprastha Park",
-          "note": "The Millennium Park is a park on the Outer Ring Road in the east of Delhi, India. It was constructed in 2004 by the Delhi Development Authority."
+          "activity": "Nizamuddin Dargah Qawwali",
+          "note": "Immerse in transcendent Sufi music and sample kebabs in the heritage Nizamuddin lanes."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Gurdwara Dam Dama Sahib Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "name": "The Oberoi New Delhi",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 14000,
+      "priceMax": 28000,
+      "rating": 4.9,
+      "reviews": 3600,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Outdoor & Indoor Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Golf Course View",
+        "Butler Service"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Iconic Luxury",
+        "World Class"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Gurdwara%20Dam%20Dama%20Sahib%20Stay%20Gurdwara%20Dam%20Dama%20Sahib%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=The%20Oberoi%20New%20Delhi%20Dr%20Zakir%20Hussain%20Marg"
     },
     {
-      "name": "Airbnb: Stay in Gurdwara Dam Dama Sahib",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "name": "The Lodhi New Delhi",
+      "type": "resort hotel",
+      "tier": "luxury",
+      "priceMin": 12000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 2200,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
+        "Private Plunge Pools",
+        "Spa",
+        "Tennis Courts",
+        "Fine Dining",
         "WiFi"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Gurdwara%20Dam%20Dama%20Sahib%20Gurdwara%20Dam%20Dama%20Sahib%20Delhi%20hotel"
-    },
-    {
-      "name": "Gurdwara Dam Dama Sahib Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
-      "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
-      ],
-      "tags": [
-        "Popular",
+        "Ultra Luxury",
         "Central"
       ],
-      "url": "https://www.google.com/search?q=Gurdwara%20Dam%20Dama%20Sahib%20Grand%20Hotel%20Gurdwara%20Dam%20Dama%20Sahib%20Delhi%20hotel"
-    },
-    {
-      "name": "Marriott Gurdwara Dam Dama Sahib",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Marriott%20Gurdwara%20Dam%20Dama%20Sahib%20Gurdwara%20Dam%20Dama%20Sahib%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=The%20Lodhi%20New%20Delhi%20hotel"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Heritage walks",
-    "Sightseeing",
-    "Nature walks",
-    "Forts",
-    "Architecture",
-    "History",
-    "Local Bazaars"
+    "Gurdwara Dam Dama Sahib Sanctum",
+    "Humayun’s Tomb Complex (UNESCO)",
+    "Hazrat Nizamuddin Auliya Dargah",
+    "Tomb of Isa Khan Niyazi",
+    "Nila Gumbad (Blue Dome)",
+    "Sunder Nursery Heritage Park",
+    "Chausath Khamba & Mirza Ghalib’s Tomb",
+    "Millennium Indraprastha Park & Shanti Stupa"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Gurdwara Dam Dama Sahib scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Gurdwara_Damdama_Sahib%2C_Delhi.jpg",
+      "alt": "Gurdwara Dam Dama Sahib - Gurdwara Damdama Sahib, Delhi."
     },
     {
-      "src": "https://images.pexels.com/photos/28905552/pexels-photo-28905552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gurdwara Dam Dama Sahib photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Humayuns_Tomb_Mosque_01_%282281684880%29.jpg",
+      "alt": "Gurdwara Dam Dama Sahib - Humayun's Tomb Mosque 01"
     },
     {
-      "src": "https://images.pexels.com/photos/28905560/pexels-photo-28905560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gurdwara Dam Dama Sahib photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Delhi%2C_January_2012_%2815619263881%29.jpg",
+      "alt": "Gurdwara Dam Dama Sahib - Delhi, January 2012"
     },
     {
-      "src": "https://images.pexels.com/photos/38053057/pexels-photo-38053057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gurdwara Dam Dama Sahib photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Humayun%27s_Tomb_Complex_031.jpg",
+      "alt": "Gurdwara Dam Dama Sahib - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeolog"
     },
     {
-      "src": "https://images.pexels.com/photos/28905558/pexels-photo-28905558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gurdwara Dam Dama Sahib photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Humayun%27s_tomb_complex_330.jpg",
+      "alt": "Gurdwara Dam Dama Sahib - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeolog"
     }
   ],
   "faq": [
     {
-      "q": "What is the best time to visit Gurdwara Dam Dama Sahib?",
-      "a": "The best time to visit Gurdwara Dam Dama Sahib is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
-    },
-    {
-      "q": "How do I reach Gurdwara Dam Dama Sahib?",
-      "a": "The nearest airport is Gurdwara Dam Dama Sahib / nearest airport (30 km) and the nearest railway station is New Delhi Railway Station (6 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Gurdwara Dam Dama Sahib?",
-      "a": "3 days are usually enough to cover the top attractions of Gurdwara Dam Dama Sahib at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Gurdwara Dam Dama Sahib?",
-      "a": "Stays in Gurdwara Dam Dama Sahib start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Gurdwara Dam Dama Sahib?",
-      "a": "The top attractions are Humayun's tomb, Nila Gumbad, Tombs of Battashewala Complex, Arab Serai, Nizamuddin East."
+      "q": "What is the historical significance of Gurdwara Dam Dama Sahib?",
+      "a": "It marks the historic 1707 meeting where Tenth Guru Gobind Singh Ji agreed to support Prince Mu’azzam in the succession battle following Emperor Aurangzeb’s death."
     }
   ],
   "seo": {
     "title": "Gurdwara Dam Dama Sahib Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Gurdwara Damdama Sahib is a gurdwara (Sikh place of worship) located near Humayun's Tomb on the Outer Ring Road in New Delhi, India. Plan your Gurdwara Dam Dama Sahib trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Gurdwara Dam Dama Sahib in Nizamuddin East commemorates the historic meeting between Tenth Sikh Guru Gobind Singh Ji and Prince Mu’azzam in 1707. Plan your visit with 8 top places, stays from ₹1500/night, best time, and routes.",
     "canonical": "destination.html?slug=gurdwara-dam-dama-sahib",
-    "ogImage": "https://images.pexels.com/photos/28861160/pexels-photo-28861160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Gurdwara_Damdama_Sahib%2C_Delhi.jpg",
     "keywords": [
       "Gurdwara Dam Dama Sahib travel guide",
       "places to visit in Gurdwara Dam Dama Sahib",
-      "Gurdwara Dam Dama Sahib hotels",
-      "best time to visit Gurdwara Dam Dama Sahib",
-      "how to reach Gurdwara Dam Dama Sahib",
-      "Delhi tourism"
+      "Gurdwara Dam Dama Sahib Delhi",
+      "Delhi tourism",
+      "best time to visit Gurdwara Dam Dama Sahib"
     ]
   }
 }

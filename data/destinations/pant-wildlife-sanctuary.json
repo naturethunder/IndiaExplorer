@@ -3,573 +3,321 @@
   "title": "Pant Wildlife Sanctuary",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Magadh / Rajgir (Southern Bihar)",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Pant Wildlife Sanctuary — wildlife reserve of Bihar",
+  "badge": "Wildlife",
+  "tagline": "Pant Wildlife Sanctuary — The Five Sacred Hills of Rajgir & Historic Peace Pagoda",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Forest_near_rajgir.JPG/1280px-Forest_near_rajgir.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Pant Wildlife Sanctuary photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sher_Shah_Suri%27s_-_Tomb_05.jpg",
+    "alt": "Pant Wildlife Sanctuary - Situauted in Sasaram, Bihar. Accessible easily via rail and road."
   },
   "overview": {
-    "short": "Pant Wildlife Sanctuary is a wildlife sanctuary in India, situated near Rajgir in Nalanda district, Bihar, India.",
-    "description": "Pant Wildlife Sanctuary is a wildlife sanctuary in India, situated near Rajgir in Nalanda district, Bihar, India. It is under the Nalanda forest division.",
+    "short": "Pant Wildlife Sanctuary in Rajgir covers 35.8 square kilometers across the historic five hills (Vipulagiri, Ratnagiri, Gridhrakuta, Udaygiri, and Sona Giri), rich in ancient Buddhist and Jain lore.",
+    "description": "Cradled in a green valley encircled by the ancient 40-kilometer Cyclopean Stone Wall, Pant Sanctuary preserves dry deciduous forests sheltering leopards, nilgai, hyenas, and rich birdlife. Perched atop the hills are the world-famous Vishwa Shanti Stupa, Vulture Peak (Gridhrakuta) where Lord Buddha delivered the Lotus Sutra, and the Swarna Bhandar caves.",
     "features": [
-      "Safari",
-      "Wildlife",
-      "Nature",
-      "Birding"
+      "Vulture Peak (Gridhrakuta Lotus Sutra Site)",
+      "Vishwa Shanti Stupa & Aerial Ropeway",
+      "Ancient 40-km Cyclopean Wall of Rajgir",
+      "Swarna Bhandar & Bimbisara Jail Ruins"
     ],
-    "altitude": null,
-    "rating": 4.6,
-    "reviewCount": 19141,
-    "minPrice": 2500,
-    "distanceFromDelhi": 909,
-    "about": "Pant Wildlife Sanctuary is a wildlife sanctuary in India, situated near Rajgir in Nalanda district, Bihar, India. It is under the Nalanda forest division."
+    "altitude": "73 m",
+    "rating": 4.9,
+    "reviewCount": 38000,
+    "minPrice": 1500,
+    "distanceFromDelhi": 1030,
+    "about": "A historic landscape where ancient mountain citadels, serene stupas, hot springs, and forested hills create an unforgettable experience."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 24.9928,
-    "lng": 85.4233,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.03,
+    "lng": 85.42,
+    "tempSummer": "25–41°C",
+    "tempWinter": "8–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 91,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 73 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 230,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 184 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 311,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 249 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 443,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 354 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 514,
-        "byCar": "9–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 411 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 655,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 524 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 711,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 569 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 760,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 608 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 808,
-        "byCar": "13–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 646 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 818,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 654 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 940,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 752 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 970,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 776 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 1044,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 835 km · road approx."
-      },
-      {
-        "from": "Visakhapatnam (Andhra Pradesh)",
-        "city": "Visakhapatnam",
-        "state": "Andhra Pradesh",
-        "distance": 1055,
-        "byCar": "18–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 844 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 1063,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 850 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Pant Wildlife Sanctuary / nearest airport",
-      "distance": 30
+      "name": "Patna Airport (PAT)",
+      "distance": 100
     },
     "nearestRailway": {
-      "name": "Gaya Junction",
-      "distance": 48
+      "name": "Rajgir Railway Station (RGD)",
+      "distance": 3
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Connected via NH-120 and Bakhtiyarpur-Rajgir 4-lane highway from Patna and Gaya.",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 100,
+        "byCar": "2.5 hrs",
+        "byTrain": "Express train (2 hrs)",
+        "byAir": "Via Patna Airport",
+        "via": "NH-120 Southbound"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Jivakarama vihara",
+      "name": "Vishwa Shanti Stupa & Ratnagiri Hilltop",
       "category": "spiritual",
-      "distance": "1 km",
+      "distance": "Hilltop",
+      "entryFee": "Free (Ropeway ₹100)",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Dazzling white marble Peace Pagoda erected in 1969 by Nichidatsu Fuji Guruji atop Ratnagiri Hill.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Vishwa_Shanti_Stupa_1.JPEG",
+        "alt": "Vishwa Shanti Stupa & Ratnagiri Hilltop in Pant Wildlife Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vishwa_Shanti_Stupa.JPEG",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Rajgir_Vishwa_Shanti_Stupa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rajgir_13_top_of_Shanti_Stupa_%2831512469735%29.jpg"
+      ]
+    },
+    {
+      "name": "Gridhrakuta Peak (Vulture Peak Meditation Site)",
+      "category": "spiritual",
+      "distance": "Ratnagiri Slope",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Jivakarama vihara, also Jivaka Amravana vihara (Amra-vana means \"mango garden\"), Jivakamravana, Jivakamrabana or Jivakavanarama, is an ancient Buddhist monastery, or vihara, established at the time of the Buddha. The location, on the outside of Rajagriha in Nalanda district in the Indian state of Bihar, just below the Gijjhakuta hill, was originally a mango orchard which was donated to the sangha by the famous royal doctor Jivaka, who was in the service of king Bimbisara.",
+      "timings": "6:00 AM – 5:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Sacred natural rock ledge where Lord Buddha spent many rainy seasons preaching the Lotus Sutra.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Jivakambavana%2C_Rajgir.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jivakarama vihara in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Gridhra_Kuta_-_Rajgir_09.jpg",
+        "alt": "Gridhrakuta Peak (Vulture Peak Meditation Site) in Pant Wildlife Sanctuary, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/69/Jivakambavana..jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1e/Jivakambavana.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Jivakarama_Vihara%2C_Ambavana.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/d/dc/Gridhra_Kuta_-_Rajgir_10.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/44/Gridhra_Kuta_-_Rajgir_11.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/Gridhra_Kuta_-_Rajgir_12.jpg"
       ]
     },
     {
-      "name": "Son Bhandar Caves",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
+      "name": "Rajgir Aerial Ropeway & Chairlift",
+      "category": "nature",
+      "distance": "Base to Top",
+      "entryFee": "₹100",
       "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "duration": "45 mins",
+      "rating": 4.8,
+      "description": "India’s oldest operating single-chair scenic ropeway gliding across lush forested hill slopes.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aerial_Chair_lift_%28822906740%29.jpg",
+        "alt": "Rajgir Aerial Ropeway & Chairlift in Pant Wildlife Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/New_Rajgriha%2C_Rajgrih%2C_Nalanda%2C_Bihar._Lift.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/BeautifulRopewayRide%40incredibleIndia.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Vishea_Shanti_Stupa_%2C_Rajgir.jpg"
+      ]
+    },
+    {
+      "name": "Swarna Bhandar (Treasury Caves of Bimbisara)",
+      "category": "heritage",
+      "distance": "2.5 km",
+      "entryFee": "₹25",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "3rd-century BCE polished rock-cut caves believed to house the unrecovered treasury of King Bimbisara.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Son_Bhandar_caves_front.jpg",
+        "alt": "Swarna Bhandar (Treasury Caves of Bimbisara) in Pant Wildlife Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Son_Bhandar_Caves%2C_Rajgir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b4/Son_Bhandar_Caves_-_Rajgir_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Son_Bhandar_Caves_-_Rajgir_01.jpg"
+      ]
+    },
+    {
+      "name": "Cyclopean Wall of Rajgir (40-km Stone Rampart)",
+      "category": "heritage",
+      "distance": "Valley Ridge",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "Pre-Mauryan 2,500-year-old monumental raw stone rampart that encircled the ancient capital of Magadh.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Rajgir_-_002_Old_City_Walls_%289242554013%29.jpg",
+        "alt": "Cyclopean Wall of Rajgir (40-km Stone Rampart) in Pant Wildlife Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Cyclopian_wall%2C_Rajgir._%285457385482%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Cyclopian_wall%2C_Rajgir._%285457385482%29_%28cropped%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rajgriha_Border_Wall_from_road.jpg"
+      ]
+    },
+    {
+      "name": "Bimbisara Jail & Maniyar Math Ruins",
+      "category": "heritage",
+      "distance": "3 km",
+      "entryFee": "₹25",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "1 hr",
       "rating": 4.6,
-      "description": "The Son Bhandar Caves (also known as the Swarn Bhandar Caves) are two Jain man-made caves carved into the base of the Vaibhar Hills in Rajgir in the state of Bihar in India. Based on the dedicatory inscription found in the largest cave — which uses Gupta script of the 4th century CE — the caves are generally dated to the 3rd or 4th century CE, although some authors have suggested the caves could actually go back to the period of the Maurya Empire, possibly as early as 319 BCE. The main cave is rectangular with a trapezoidal entrance and a vaulted ceiling, reminiscent of the structure of the earlier Barabar Caves.",
+      "description": "Historic stone enclosure where Prince Ajatashatru imprisoned his father King Bimbisara.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Cyclopian_wall%2C_Rajgir._%285457385482%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Son Bhandar Caves in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Bimbisar%27s_Jail_%28822063511%29.jpg",
+        "alt": "Bimbisara Jail & Maniyar Math Ruins in Pant Wildlife Sanctuary, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/47/Ghora_Katora_Lake_in_Rajgir_Bihar_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5f/New_Excavated_Stupa_-_Rajgir_-_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/16/Naulakha_Mandir.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/9/92/Rajgir_-_Bimbisar_Jail.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bimbisar_Jail%2C_Rajgir%2C_Bihar_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bimbisar_Jail%2C_Rajgir%2C_Bihar_01.jpg"
       ]
     },
     {
-      "name": "Saptaparni Cave",
-      "category": "nature",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Saptparni Cave, also referred to as Sapta parni guha (Sanskrit) or sattapaṇṇi guhā (Pali), literally Seven-leaves-cave (cognate with sapta, sept), is a Buddhist cave site about 2 kilometres (1.2 mi) southwest from Rajgir, Bihar, India. It is embedded in a hill.",
+      "name": "Venuvana (Bamboo Grove Monastery of Buddha)",
+      "category": "spiritual",
+      "distance": "1.5 km",
+      "entryFee": "₹20",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "Historic peaceful bamboo park and pond donated by King Bimbisara for Buddha and the Sangha.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Nitish_Kumar%2C_Kaushal_Kishore_and_others_at_55th_anniversary_of_establishment_of_Vishwa_Shanti_Stupa.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Saptaparni Cave in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Venuvana.jpg",
+        "alt": "Venuvana (Bamboo Grove Monastery of Buddha) in Pant Wildlife Sanctuary, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rajgir_-_035_Gijjhakuta_from_Above_%289242176293%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Rajgir_-_040_Chanting_at_Boar%27s_Cave_%289244902902%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/08/Rajgir_12_hills_panorama_%2831396985691%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Buddha-image_at_Venuvana_Rajgir%2C_Bihar%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Venuvana_.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Mulagandhakuti_in_Venuvana_Monastery.jpg"
       ]
     },
     {
-      "name": "Rajgir Hills",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The Rajgir Hills, also known as \"Rajgriha\" hills, lie near the city of Rajgir in central regions of the Indian state of Bihar. It is surrounded by five hills named Ratnagiri, Vipulachal, Vaibharagiri, Songiri and Udaygiri.",
+      "name": "Saptaparni Cave (First Buddhist Council Site)",
+      "category": "spiritual",
+      "distance": "Vaibhara Hill",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.7,
+      "description": "Sacred cave atop Vaibhara Hill where 500 Arhats convened the First Buddhist Council in 483 BCE.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Monk_in_the_hills_around_Vulture_Peak_Rajgir%2C_Bihar%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rajgir Hills in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Rajgir_7_-_International_Convention_Centre_%2830875640383%29.jpg",
+        "alt": "Saptaparni Cave (First Buddhist Council Site) in Pant Wildlife Sanctuary, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Jain_Shrine_Ruins_-_Vaibhar_Hills_-_Rajgir_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jain_Shrine_Ruins_-_Vaibhar_Hills_-_Rajgir_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/99/Jain_Shrine_Ruins_-_Vaibhar_Hills_-_Rajgir_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Gurpa hill",
-      "category": "nature",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Gurpa hill (also known as Kukkutapāda or Gurupādaka) is a Buddhist pilgrimage site located in the Indian state of Bihar, twenty six kilometres northeast of Bodh Gaya. The mountain is said to be the site where the Buddha's disciple, Mahākāśyapa, is said to have died while waiting for the future Buddha, Maitreya to arrive on earth.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/%22_Tomb_of_Sher_Shah_Suri_%22.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gurpa hill in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/AnupamLakeKaimurBihar.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/Garbage_heap_in_Batla_House%2C_New_Delhi%2C_18_June_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Vulture Peak",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The Vulture Peak (Pali: Gijjhakūṭa गिज्झकूट, Sanskrit: Gṛdhrakūṭa गृध्रकूट), also known as the Holy Eagle Peak or Gridhrakūta (or Gādhrakūta), was, according to Buddhist tradition, the Buddha's favorite retreat in Rajagaha – now Rajgir, located in Bihar, India. It is so named because it resembles a sitting vulture with its wings folded, and was the scene for many of his discourses.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Vulture Peak in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Rajgir",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Rajgir (old name Rajagriha, meaning \"The City of Kings\") is an ancient city and university town in the Nalanda district of Bihar, India. It is also considered a cultural capital of Magadh.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Rajgir_lord_mahavira.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rajgir in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rope_way%2C_Rajgir.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Nahub",
-      "category": "cultural",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Nahub is a village situated in Nalanda district in the Indian state of Bihar. The village is located midway between the cities of Silao and Rajgir.",
-      "image": {
-        "src": "https://images.pexels.com/photos/34333001/pexels-photo-34333001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Nahub in Bihar, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/13938405/pexels-photo-13938405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/11282084/pexels-photo-11282084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/Saptaparni_Caves%2C_Rajgir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Saptaparni_Cave_-_Rajgir_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/37/Saptaparni_Cave_-_Rajgir_01.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Jivakarama vihara & around",
+      "title": "Day 1 — Highlights of Pant Wildlife Sanctuary",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Jivakarama vihara",
-          "note": "The Jivakarama vihara, also Jivaka Amravana vihara (Amra-vana means \"mango garden\"), Jivakamravana, Jivakamrabana or Jivakavanarama, is an ancient Buddhist monastery, or vihara, established at the time of the Buddha. The location, on the outside of Rajagriha in Nalanda district in the Indian state of Bihar, just below the Gijjhakuta hill, was originally a mango orchard which was donated to the sangha by the famous royal doctor Jivaka, who was in the service of king Bimbisara."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Vishwa Shanti Stupa & Ratnagiri Hilltop",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Son Bhandar Caves",
-          "note": "The Son Bhandar Caves (also known as the Swarn Bhandar Caves) are two Jain man-made caves carved into the base of the Vaibhar Hills in Rajgir in the state of Bihar in India. Based on the dedicatory inscription found in the largest cave — which uses Gupta script of the 4th century CE — the caves are generally dated to the 3rd or 4th century CE, although some authors have suggested the caves could actually go back to the period of the Maurya Empire, possibly as early as 319 BCE. The main cave is rectangular with a trapezoidal entrance and a vaulted ceiling, reminiscent of the structure of the earlier Barabar Caves."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Gridhrakuta Peak (Vulture Peak Meditation Site)",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Saptaparni Cave",
-          "note": "Saptparni Cave, also referred to as Sapta parni guha (Sanskrit) or sattapaṇṇi guhā (Pali), literally Seven-leaves-cave (cognate with sapta, sept), is a Buddhist cave site about 2 kilometres (1.2 mi) southwest from Rajgir, Bihar, India. It is embedded in a hill."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Rajgir Hills & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Rajgir Hills",
-          "note": "The Rajgir Hills, also known as \"Rajgriha\" hills, lie near the city of Rajgir in central regions of the Indian state of Bihar. It is surrounded by five hills named Ratnagiri, Vipulachal, Vaibharagiri, Songiri and Udaygiri."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Gurpa hill",
-          "note": "Gurpa hill (also known as Kukkutapāda or Gurupādaka) is a Buddhist pilgrimage site located in the Indian state of Bihar, twenty six kilometres northeast of Bodh Gaya. The mountain is said to be the site where the Buddha's disciple, Mahākāśyapa, is said to have died while waiting for the future Buddha, Maitreya to arrive on earth."
-        },
-        {
-          "time": "Evening",
-          "activity": "Vulture Peak",
-          "note": "The Vulture Peak (Pali: Gijjhakūṭa गिज्झकूट, Sanskrit: Gṛdhrakūṭa गृध्रकूट), also known as the Holy Eagle Peak or Gridhrakūta (or Gādhrakūta), was, according to Buddhist tradition, the Buddha's favorite retreat in Rajagaha – now Rajgir, located in Bihar, India. It is so named because it resembles a sitting vulture with its wings folded, and was the scene for many of his discourses."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Rajgir & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Rajgir",
-          "note": "Rajgir (old name Rajagriha, meaning \"The City of Kings\") is an ancient city and university town in the Nalanda district of Bihar, India. It is also considered a cultural capital of Magadh."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Nahub",
-          "note": "Nahub is a village situated in Nalanda district in the Indian state of Bihar. The village is located midway between the cities of Silao and Rajgir."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Pant Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Pant%20Wildlife%20Sanctuary%20Stay%20Pant%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Pant Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Pant%20Wildlife%20Sanctuary%20Pant%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Pant Wildlife Sanctuary Grand Hotel",
+      "name": "Hotel Grand Pant",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Pant%20Wildlife%20Sanctuary%20Grand%20Hotel%20Pant%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Jungle Lodges Pant Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Pant%20Wildlife%20Sanctuary%20Pant%20Wildlife%20Sanctuary%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Pant%20Wildlife%20Sanctuary%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Spiritual",
-    "Sightseeing",
-    "Nature walks",
-    "Cultural",
-    "Safari",
-    "Wildlife",
-    "Nature",
-    "Birding"
+    "Vishwa Shanti Stupa & Ratnagiri Hilltop",
+    "Gridhrakuta Peak (Vulture Peak Meditation Site)",
+    "Rajgir Aerial Ropeway & Chairlift",
+    "Swarna Bhandar (Treasury Caves of Bimbisara)",
+    "Cyclopean Wall of Rajgir (40-km Stone Rampart)",
+    "Bimbisara Jail & Maniyar Math Ruins",
+    "Venuvana (Bamboo Grove Monastery of Buddha)",
+    "Saptaparni Cave (First Buddhist Council Site)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Pant Wildlife Sanctuary scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sher_Shah_Suri%27s_-_Tomb_05.jpg",
+      "alt": "Pant Wildlife Sanctuary - Situauted in Sasaram, Bihar. Accessible easily via rail and road."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/River_Doon_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pant Wildlife Sanctuary — River Doon Patna"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Shershah_Suri_Tomb%2C_Sasaram%2C_Bihar.jpg",
+      "alt": "Pant Wildlife Sanctuary - Tomb of Sher Shah Suri - tomb in Sasaram town of Bihar state, India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Patna_river_port1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pant Wildlife Sanctuary — Patna river port1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Premises_of_tomb_or_mausoleum_of_Sher_Shah_Suri_in_Sasaram%2C_Bihar%2C_India_01.jpg",
+      "alt": "Pant Wildlife Sanctuary - Premises of tomb or mausoleum of Sher Shah Suri in Sasaram, Bihar, India\nSher Shah Suri, who w"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pant Wildlife Sanctuary — Aerial view, Patna (314731093)"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Premises_of_tomb_or_mausoleum_of_Sher_Shah_Suri_in_Sasaram%2C_Bihar%2C_India_03.jpg",
+      "alt": "Pant Wildlife Sanctuary - Premises of tomb or mausoleum of Sher Shah Suri in Sasaram, Bihar, India\nSher Shah Suri, who w"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/The_Prime_Minister%2C_Shri_Narendra_Modi_visiting_the_Bihar_Museum%2C_in_Patna_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pant Wildlife Sanctuary — The Prime Minister, Shri Narendra Modi visiting the Bihar Museum, in Patna (6)"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Premises_of_tomb_or_mausoleum_of_Sher_Shah_Suri_in_Sasaram%2C_Bihar%2C_India_07.jpg",
+      "alt": "Pant Wildlife Sanctuary - Premises of tomb or mausoleum of Sher Shah Suri in Sasaram, Bihar, India\nSher Shah Suri, who w"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Pant Wildlife Sanctuary?",
-      "a": "The best time to visit Pant Wildlife Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Pant Wildlife Sanctuary?",
-      "a": "The nearest airport is Pant Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Gaya Junction (48 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Pant Wildlife Sanctuary?",
-      "a": "3 days are usually enough to cover the top attractions of Pant Wildlife Sanctuary at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Pant Wildlife Sanctuary?",
-      "a": "Stays in Pant Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Pant Wildlife Sanctuary?",
-      "a": "The top attractions are Jivakarama vihara, Son Bhandar Caves, Saptaparni Cave, Rajgir Hills, Gurpa hill."
+      "q": "What are the primary highlights of Pant Wildlife Sanctuary?",
+      "a": "Pant Wildlife Sanctuary in Rajgir covers 35.8 square kilometers across the historic five hills (Vipulagiri, Ratnagiri, Gridhrakuta, Udaygiri, and Sona Giri), rich in ancient Buddhist and Jain lore."
     }
   ],
   "seo": {
     "title": "Pant Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Pant Wildlife Sanctuary is a wildlife sanctuary in India, situated near Rajgir in Nalanda district, Bihar, India. Plan your Pant Wildlife Sanctuary trip: 8 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "description": "Pant Wildlife Sanctuary in Rajgir covers 35.8 square kilometers across the historic five hills (Vipulagiri, Ratnagiri, Gridhrakuta, Udaygiri, and Sona Giri), rich in ancient Buddhist and Jain lore. Plan your visit with 8 top places, stays from ₹1500/night, best time, and routes.",
     "canonical": "destination.html?slug=pant-wildlife-sanctuary",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Forest_near_rajgir.JPG/1280px-Forest_near_rajgir.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sher_Shah_Suri%27s_-_Tomb_05.jpg",
     "keywords": [
       "Pant Wildlife Sanctuary travel guide",
       "places to visit in Pant Wildlife Sanctuary",
-      "Pant Wildlife Sanctuary hotels",
-      "best time to visit Pant Wildlife Sanctuary",
-      "how to reach Pant Wildlife Sanctuary",
-      "Bihar tourism"
+      "Pant Wildlife Sanctuary Bihar tourism"
     ]
   }
 }

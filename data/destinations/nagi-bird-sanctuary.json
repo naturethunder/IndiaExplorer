@@ -3,421 +3,320 @@
   "title": "Nagi Bird Sanctuary",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Jamui / Anga (Southeastern Bihar)",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Nagi Bird Sanctuary — wildlife reserve of Bihar",
+  "badge": "Wildlife",
+  "tagline": "Nagi Bird Sanctuary — Bihar’s Ramsar Wetland Jewel & Migratory Avian Haven",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Bakhira_Bird_Sanctury.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Nagi Bird Sanctuary photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Tor_formation_in_Nagi_Dam_Bird_Sanctuary.jpg",
+    "alt": "Nagi Bird Sanctuary - One of the views from the dam wall"
   },
   "overview": {
-    "short": "Nagi Bird Sanctuary is located in Jhajha Jamui district of south Bihar, near the Jharkhand border.",
-    "description": "Nagi Bird Sanctuary is located in Jhajha Jamui district of south Bihar, near the Jharkhand border. It was declared a bird sanctuary on 25 February 1984 as per Section 18 of the Wildlife (Protection) Act, 1972. The final notification under Section 26A of the act was issued on 4 September 2009. Thousands of migrating birds congregate in the reservoir during the winter season, especially from November to February.",
+    "short": "Nagi Bird Sanctuary (and adjacent Nakti Dam) in Jamui spans 7.91 square kilometers of crystal-clear reservoir waters, designated as Ramsar Wetlands in 2024.",
+    "description": "Surrounded by the scenic hills and dry deciduous Sal forests of Jamui district, Nagi Dam was created for irrigation and has evolved into one of Eastern India’s richest waterfowl refuges. Recognized as a Ramsar Wetland of International Importance in 2024, it hosts over 20,000 migratory birds each winter, including the Bar-headed Goose (over 1.6% of the global population), painted storks, red-crested pochards, and osprey.",
     "features": [
-      "Safari",
-      "Wildlife",
-      "Nature",
-      "Birding"
+      "Designated Ramsar Wetland Site (2024)",
+      "Host to 1.6% of Global Bar-headed Goose Population",
+      "Host Venue of Bihar’s State Bird Festival \"Kalrav\"",
+      "Scenic Hill & Water Reservoir Panorama"
     ],
-    "altitude": null,
-    "rating": 4.6,
-    "reviewCount": 5602,
-    "minPrice": 2500,
-    "distanceFromDelhi": 1005,
-    "about": "Nagi Bird Sanctuary is located in Jhajha Jamui district of south Bihar, near the Jharkhand border. It was declared a bird sanctuary on 25 February 1984 as per Section 18 of the Wildlife (Protection) Act, 1972. The final notification under Section 26A of the act was issued on 4 September 2009. Thousands of migrating birds congregate in the reservoir during the winter season, especially from November to February."
+    "altitude": "130 m",
+    "rating": 4.7,
+    "reviewCount": 7100,
+    "minPrice": 1200,
+    "distanceFromDelhi": 1150,
+    "about": "A scenic avian paradise where azure reservoir waters, misty winter hillocks, and thousands of Bar-headed Geese greet nature lovers."
   },
   "bestTime": {
-    "label": "Oct – Mar",
+    "label": "Nov – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 24.8175,
-    "lng": 86.4,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 24.81,
+    "lng": 86.36,
+    "tempSummer": "26–42°C",
+    "tempWinter": "7–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 193,
-        "byCar": "3–4 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 154 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 248,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 198 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 365,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 292 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 438,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 350 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 445,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 356 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 633,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 506 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 634,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 507 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 695,
-        "byCar": "12–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 556 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 699,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 559 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 786,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 629 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 815,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 652 km · road approx."
-      },
-      {
-        "from": "Imphal (Manipur)",
-        "city": "Imphal",
-        "state": "Manipur",
-        "distance": 951,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 761 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 954,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 763 km · road approx."
-      },
-      {
-        "from": "Kohima (Nagaland)",
-        "city": "Kohima",
-        "state": "Nagaland",
-        "distance": 976,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 781 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1065,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 852 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Nagi Bird Sanctuary / nearest airport",
-      "distance": 30
+      "name": "Deoghar Airport (DGH)",
+      "distance": 65
     },
     "nearestRailway": {
-      "name": "Dhanbad Junction",
-      "distance": 114
+      "name": "Jhajha Railway Station (JAJ) / Jamui (JMU)",
+      "distance": 15
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located 15 km from Jhajha and 35 km from Jamui town via SH-18 and local paved roads.",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 190,
+        "byCar": "4.5 hrs",
+        "byTrain": "Express train to Jhajha (3 hrs)",
+        "byAir": "Via Deoghar/Patna Airport",
+        "via": "NH-31 and NH-333"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Nakti Dam Wildlife Sanctuary",
+      "name": "Nagi Dam Wetland & Bird Sanctuary Core",
       "category": "wildlife",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Nakti Dam Wildlife Sanctuary is a protected area and wildlife sanctuary located in Jamui district of the Indian state of Bihar.",
+      "distance": "Centre",
+      "entryFee": "₹20",
+      "timings": "6:00 AM – 5:30 PM",
+      "duration": "3 hrs",
+      "rating": 4.8,
+      "description": "Crystal-clear reservoir hosting massive winter flocks of Bar-headed Geese, grebes, and coots.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nakti Dam Wildlife Sanctuary in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jal_Mandir_-_Pawapuri_26.jpg",
+        "alt": "Nagi Dam Wetland & Bird Sanctuary Core - Jal Mandir - Pawapuri"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Jal_Mandir_-_Pawapuri_25.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/94/Jal_Mandir_-_Pawapuri_27.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9c/Jal_Mandir_-_Pawapuri_29.jpg"
       ]
     },
     {
-      "name": "Jhajha",
-      "category": "scenic",
+      "name": "Nakti Dam Bird Sanctuary (Twin Reservoir)",
+      "category": "wildlife",
       "distance": "6 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Jhajha is a city and a notified area in the Jamui district of Bihar, India. It is located in the southern part of Bihar, close to the Bihar–Jharkhand border.",
+      "entryFee": "₹20",
+      "timings": "6:00 AM – 5:30 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.8,
+      "description": "Twin Ramsar water body surrounded by scenic rocky hillocks, hosting migratory ducks and eagles.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sandgrouse_-_Male.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jhajha in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jal_%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0%E0%A4%BE453.jpg",
+        "alt": "Nakti Dam Bird Sanctuary (Twin Reservoir) - Jal mandir in pawapuri..a Jain temple in Pawapuri Nalanda,Bihar .dedicated t"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aythya_nyroca_at_Martin_Mere_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bar-headed_Goose_-_St_James%27s_Park%2C_London_-_Nov_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/24/Common_kestrel_falco_tinnunculus.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Jal_Mandir_Pawapuri.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/da/Pawapuri_jal_mandir..jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Pawapuri_-_003_Gateway_to_temple_%289243079237%29.jpg"
+      ]
+    },
+    {
+      "name": "Nagi Bird Interpretation Centre & Watchtowers",
+      "category": "cultural",
+      "distance": "Sanctuary Gate",
+      "entryFee": "Included",
+      "timings": "6:30 AM – 5:00 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "State-of-the-art nature interpretation center equipped with high-powered spotting scopes.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Pawapuri_-_001_Temple_marking_Mahavira%27s_Passing_%289243092471%29.jpg",
+        "alt": "Nagi Bird Interpretation Centre & Watchtowers - Temple marking Mahavira's Passing at Pawapuri. Photograph from Pawapuri"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Pawapuri_-_002_Temple_marking_Mahavira%27s_Passing_%289243084937%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/03/Pawapuri_-_004_Lions_and_Vases_%289245852276%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pawapuri_-_005_Door_Guardian_%289243062075%29.jpg"
+      ]
+    },
+    {
+      "name": "Gidhaur Royal Fort & Heritage Palace",
+      "category": "heritage",
+      "distance": "22 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 5:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Historic 16th-century stone palace and fortified citadel of the Chandel Rajput rulers of Gidhaur Raj.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pawapuri_-_006_Door_Guardian_%289245834130%29.jpg",
+        "alt": "Gidhaur Royal Fort & Heritage Palace - 06 Door Guardian at Pawapuri\n\nPhotograph from Pawapuri in Bihar taken by Anandajo"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pawapuri_-_007_Door_Guardian_%289243039897%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d2/011_Jaina_Family_on_Pilgrimage_%289242999953%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/86/Pawapuri_-_panoramio.jpg"
+      ]
+    },
+    {
+      "name": "Patneshwar Dham Shiva Temple",
+      "category": "spiritual",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:30 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Ancient Shiva temple situated amidst hillocks, revered throughout Jamui and Santhal Pargana.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Blessings_%F0%9F%92%9E.jpg",
+        "alt": "Patneshwar Dham Shiva Temple in Nagi Bird Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Approach_to_Pawapuri_temple_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jal_Mandir_pawapuri_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Jal_Mandir_pawapuri_2.jpg"
+      ]
+    },
+    {
+      "name": "Lachhuar Digambar Jain Teerth",
+      "category": "spiritual",
+      "distance": "38 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Ancient Jain pilgrimage shrine and Dharamshala associated with Lord Mahavira’s early austerities.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Bhagwan_Mahaveer.jpg",
+        "alt": "Lachhuar Digambar Jain Teerth in Nagi Bird Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lachhuar_Lachhwad_Shwetambar_Jain_Temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/Jal_Mandir_-_Pawapuri_28.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/88/Jal-mandipost67.jpg"
+      ]
+    },
+    {
+      "name": "Kumar Gram Reservoir & Hill Escarpment",
+      "category": "nature",
+      "distance": "8 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.5,
+      "description": "Scenic irrigation reservoir nestled below rugged hill ridges, offering peaceful nature walks.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ghora_Katora_Lake.jpg",
+        "alt": "Kumar Gram Reservoir & Hill Escarpment in Nagi Bird Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/60/Lotus-68jalmandir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/77/Lesser_Whistling_Ducks%2C_Jal_Mandir%2C_Bihar_78.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Pavapuri_Jal_Mandir_Gate.jpg"
+      ]
+    },
+    {
+      "name": "Jamui Sal & Bamboo Forest Eco Trail",
+      "category": "nature",
+      "distance": "12 km",
+      "entryFee": "Free",
+      "timings": "6:30 AM – 5:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.5,
+      "description": "Shaded woodland trail through natural Sal forests harboring peacocks, jungle cats, and spotted deer.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Notice_at_Digambar_Temple_Pavapuri.jpg",
+        "alt": "Jamui Sal & Bamboo Forest Eco Trail - A notice posted outside the Digambara temple at Pavapuri that describes that the J"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Kakolat_waterfall%2C_Bihar%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Kakolat_waterfall%2C_starting_point%2C_Bihar%2C_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/73/Kakolat_Water_falls_-_panoramio.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Nakti Dam Wildlife Sanctuary",
+      "title": "Day 1 — Highlights of Nagi Bird Sanctuary",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Nakti Dam Wildlife Sanctuary",
-          "note": "Nakti Dam Wildlife Sanctuary is a protected area and wildlife sanctuary located in Jamui district of the Indian state of Bihar."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Jhajha",
-      "items": [
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Nagi Dam Wetland & Bird Sanctuary Core",
+          "note": "Start your journey at the primary attraction."
+        },
         {
-          "time": "Morning",
-          "activity": "Jhajha",
-          "note": "Jhajha is a city and a notified area in the Jamui district of Bihar, India. It is located in the southern part of Bihar, close to the Bihar–Jharkhand border."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Nakti Dam Bird Sanctuary (Twin Reservoir)",
+          "note": "Experience local heritage and culture."
+        },
+        {
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Nagi Bird Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Nagi%20Bird%20Sanctuary%20Stay%20Nagi%20Bird%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Nagi Bird Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Nagi%20Bird%20Sanctuary%20Nagi%20Bird%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Nagi Bird Sanctuary Grand Hotel",
+      "name": "Hotel Grand Nagi",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Nagi%20Bird%20Sanctuary%20Grand%20Hotel%20Nagi%20Bird%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Jungle Lodges Nagi Bird Sanctuary",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Nagi%20Bird%20Sanctuary%20Nagi%20Bird%20Sanctuary%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Nagi%20Bird%20Sanctuary%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Wildlife safaris",
-    "Sightseeing",
-    "Safari",
-    "Wildlife",
-    "Nature",
-    "Birding"
+    "Nagi Dam Wetland & Bird Sanctuary Core",
+    "Nakti Dam Bird Sanctuary (Twin Reservoir)",
+    "Nagi Bird Interpretation Centre & Watchtowers",
+    "Gidhaur Royal Fort & Heritage Palace",
+    "Patneshwar Dham Shiva Temple",
+    "Lachhuar Digambar Jain Teerth",
+    "Kumar Gram Reservoir & Hill Escarpment",
+    "Jamui Sal & Bamboo Forest Eco Trail"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Nagi Bird Sanctuary scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Tor_formation_in_Nagi_Dam_Bird_Sanctuary.jpg",
+      "alt": "Nagi Bird Sanctuary - One of the views from the dam wall"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bhitarkanika_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nagi Bird Sanctuary photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nagighat.jpg",
+      "alt": "Nagi Bird Sanctuary - This place is in Jamui Bihar india  known as nagi dam"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/House_Boat_View_DSW.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nagi Bird Sanctuary photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Stairs_to_heavens.jpg",
+      "alt": "Nagi Bird Sanctuary - This place is in Jamui Bihar india known as nagi dam"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Nalban_-_Kolkata_2011-09-14_5172.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nagi Bird Sanctuary photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Jal_Mandir_-_Pawapuri_23.jpg",
+      "alt": "Nagi Bird Sanctuary - Jal Mandir - Pawapuri"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Satapada_2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nagi Bird Sanctuary photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Jal_Mandir_-_Pawapuri_24.jpg",
+      "alt": "Nagi Bird Sanctuary - Jal Mandir - Pawapuri"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Nagi Bird Sanctuary?",
-      "a": "The best time to visit Nagi Bird Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Nagi Bird Sanctuary?",
-      "a": "The nearest airport is Nagi Bird Sanctuary / nearest airport (30 km) and the nearest railway station is Dhanbad Junction (114 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Nagi Bird Sanctuary?",
-      "a": "2 days are usually enough to cover the top attractions of Nagi Bird Sanctuary at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Nagi Bird Sanctuary?",
-      "a": "Stays in Nagi Bird Sanctuary start from ₹2,500 per night, with options across 5 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Nagi Bird Sanctuary?",
-      "a": "The top attractions are Nakti Dam Wildlife Sanctuary, Jhajha."
+      "q": "What are the primary highlights of Nagi Bird Sanctuary?",
+      "a": "Nagi Bird Sanctuary (and adjacent Nakti Dam) in Jamui spans 7.91 square kilometers of crystal-clear reservoir waters, designated as Ramsar Wetlands in 2024."
     }
   ],
   "seo": {
     "title": "Nagi Bird Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Nagi Bird Sanctuary is located in Jhajha Jamui district of south Bihar, near the Jharkhand border. Plan your Nagi Bird Sanctuary trip: 2 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "description": "Nagi Bird Sanctuary (and adjacent Nakti Dam) in Jamui spans 7.91 square kilometers of crystal-clear reservoir waters, designated as Ramsar Wetlands in 2024. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=nagi-bird-sanctuary",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Bakhira_Bird_Sanctury.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/0/00/Tor_formation_in_Nagi_Dam_Bird_Sanctuary.jpg",
     "keywords": [
       "Nagi Bird Sanctuary travel guide",
       "places to visit in Nagi Bird Sanctuary",
-      "Nagi Bird Sanctuary hotels",
-      "best time to visit Nagi Bird Sanctuary",
-      "how to reach Nagi Bird Sanctuary",
-      "Bihar tourism"
+      "Nagi Bird Sanctuary Bihar tourism"
     ]
   }
 }

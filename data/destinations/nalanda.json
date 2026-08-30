@@ -3,28 +3,29 @@
   "title": "Nalanda",
   "state": "Bihar",
   "country": "India",
-  "region": "Magadh",
+  "region": "Magadh (Southern Bihar)",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Nalanda — heritage city of Bihar",
+  "badge": "Heritage",
+  "tagline": "Nalanda — The World’s Greatest Ancient University & UNESCO Mahavihara",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Monastery_5_-_Nalanda_Mahavihara_%281%29.jpg/1280px-Monastery_5_-_Nalanda_Mahavihara_%281%29.jpg",
-    "alt": "Nalanda photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Nalanda_Ruins_%286%29.jpg",
+    "alt": "Nalanda - Nalanda University Ruins"
   },
   "overview": {
-    "short": "Nalanda is a much-loved heritage city in Bihar, known for ancient university and ruins.",
-    "description": "Nalanda, in Magadh, Bihar, is one of India’s favourite heritage city. Visitors come for its ancient university, ruins, unesco, with the best months being Oct – Mar.",
+    "short": "Nalanda Mahavihara is an iconic UNESCO World Heritage site and the most revered ancient residential university in history, flourishing from the 5th to the 12th century CE.",
+    "description": "Located 90 kilometers southeast of Patna, Nalanda was the ancient world’s pinnacle of higher learning, attracting over 10,000 scholars and 2,000 masters from across Asia, including China, Korea, Japan, Tibet, and Persia. Supported by the Gupta, Harsha, and Pala dynasties, the monumental red-brick complex spanned vast residential monasteries (viharas), multi-tiered stupas, meditation cells, and the legendary nine-storey library Dharmaganja. Today, the majestic archaeological ruins and the Xuanzang Memorial stand as enduring monuments to ancient India’s intellectual golden age.",
     "features": [
-      "Ancient University",
-      "Ruins",
-      "UNESCO"
+      "Nalanda University Ruins (UNESCO)",
+      "Sariputta Stupa Monolith (Site 3)",
+      "Xuanzang Memorial Hall",
+      "Pawapuri Jal Mandir (Jain Nirvana)"
     ],
-    "altitude": null,
-    "rating": 4.5,
-    "reviewCount": 9000,
-    "minPrice": 900,
-    "distanceFromDelhi": 1050,
-    "about": "Nalanda, in Magadh, Bihar, is one of India’s favourite heritage city. Visitors come for its ancient university, ruins, unesco, with the best months being Oct – Mar."
+    "altitude": "67 m",
+    "rating": 4.8,
+    "reviewCount": 28000,
+    "minPrice": 1400,
+    "distanceFromDelhi": 1020,
+    "about": "A profoundly historic center of learning where brick courtyards, ancient lecture halls, intricate stucco Buddha niches, and world-class museums narrate over 800 years of academic mastery."
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -32,8 +33,6 @@
       1,
       2,
       3,
-      4,
-      9,
       10,
       11,
       12
@@ -41,407 +40,352 @@
   },
   "weather": {
     "lat": 25.1357,
-    "lng": 85.4436,
-    "tempSummer": "28–40°C",
-    "tempWinter": "10–26°C"
+    "lng": 85.4439,
+    "tempSummer": "25–41°C",
+    "tempWinter": "9–24°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 75,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 60 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 250,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 200 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 311,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 249 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 430,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 344 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 499,
-        "byCar": "8–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 399 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 675,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 540 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 728,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 582 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 761,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 609 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 801,
-        "byCar": "13–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 641 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 813,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 650 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 941,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 753 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 984,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 787 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 1051,
-        "byCar": "18–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 841 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 1054,
-        "byCar": "18–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 843 km · road approx."
-      },
-      {
-        "from": "Imphal (Manipur)",
-        "city": "Imphal",
-        "state": "Manipur",
-        "distance": 1071,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 857 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Nalanda / nearest airport",
-      "distance": 30
+      "name": "Patna Jay Prakash Narayan Airport (PAT)",
+      "distance": 85
     },
     "nearestRailway": {
-      "name": "Gaya Junction",
-      "distance": 59
+      "name": "Nalanda / Rajgir Railway Station",
+      "distance": 12
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Connected via NH-120 and NH-31 from Patna (85 km), Rajgir (15 km), and Bodh Gaya (80 km).",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 85,
+        "byCar": "2 hrs",
+        "byTrain": "Rajgir Intercity / Passenger (1.5 hrs)",
+        "byAir": "Via Patna Airport",
+        "via": "NH-120 / Bakhtiyarpur-Rajgir Hwy"
+      },
+      {
+        "from": "Bodh Gaya",
+        "city": "Bodh Gaya",
+        "state": "Bihar",
+        "distance": 80,
+        "byCar": "2 hrs",
+        "byTrain": "Gaya to Rajgir Express",
+        "byAir": "Via Gaya Airport",
+        "via": "SH-70 via Hisua"
+      },
+      {
+        "from": "Varanasi",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 290,
+        "byCar": "5.5 hrs",
+        "byTrain": "Express via Patna/Gaya",
+        "byAir": "Train / Road",
+        "via": "NH-19 and NH-120"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Nalanda University Ruins",
+      "name": "Nalanda Mahavihara Archaeological Ruins (UNESCO)",
       "category": "heritage",
       "distance": "Centre",
-      "entryFee": "₹40",
+      "entryFee": "₹40 (Foreigners ₹600)",
       "timings": "9:00 AM – 5:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.6,
-      "description": "UNESCO ruins of the world’s oldest residential university.",
+      "duration": "3 hrs",
+      "rating": 4.9,
+      "description": "Vast red-brick excavation complex featuring 11 residential monasteries, 6 temples, stone wells, meditation cells, and ancient drainage systems.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Monastery_1_-_Granary_-_Nalanda_Mahavihara_%281%29.jpg/1280px-Monastery_1_-_Granary_-_Nalanda_Mahavihara_%281%29.jpg",
-        "alt": "Nalanda University Ruins in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Nalanda_Ruins_%2813%29.jpg",
+        "alt": "Nalanda Mahavihara Archaeological Ruins (UNESCO) in Nalanda, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Nalanda_Ruins_%2818%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/ca/Nalanda_Ruins_%2826%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/49/Nalanda_Ruins_%2829%29.jpg"
+      ]
+    },
+    {
+      "name": "Great Stupa of Sariputta (Temple Site 3)",
+      "category": "heritage",
+      "distance": "Ruins Complex",
+      "entryFee": "Included in Site Ticket",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "1 hr",
+      "rating": 4.9,
+      "description": "Towering multi-layered brick monument built over the relics of Buddha’s foremost disciple Sariputta, adorned with 6th-century stucco panels of Buddha and Bodhisattvas.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Temple_no_3_alias_Sariputra_Stupa_at_Nalanda%2C_Bihar_%2C_India_02.jpg",
+        "alt": "Great Stupa of Sariputta (Temple Site 3) in Nalanda, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/Temple_no_3_alias_Sariputra_Stupa_at_Nalanda%2C_Bihar_%2C_India_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_no_3_alias_Sariputra_Stupa_at_Nalanda%2C_Bihar_%2C_India_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Temple_no_3_alias_Sariputra_Stupa_at_Nalanda%2C_Bihar_%2C_India_06.jpg"
+      ]
+    },
+    {
+      "name": "Xuanzang (Hiuen Tsang) Memorial Hall",
+      "category": "heritage",
+      "distance": "1.5 km",
+      "entryFee": "₹25",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Grand Indo-Chinese pavilion built to commemorate Chinese pilgrim-scholar Xuanzang, who studied and taught at Nalanda in the 7th century CE.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Xuanzang_Memorial_Hall.JPG",
+        "alt": "Xuanzang (Hiuen Tsang) Memorial Hall in Nalanda, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Nalanda_-_Xuanzang_Memorial_-_Picture_379_%282244001638%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Xuang_zang_memorial.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/XUANG_TSANG_NALANDA.jpg"
       ]
     },
     {
       "name": "Nalanda Archaeological Museum",
       "category": "cultural",
-      "distance": "Centre",
-      "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1 hr",
-      "rating": 4.3,
-      "description": "Buddhist bronzes and stuccos excavated from the site.",
+      "distance": "300 m",
+      "entryFee": "₹5",
+      "timings": "10:00 AM – 5:00 PM (Closed Friday)",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Four-gallery museum displaying over 13,000 excavated antiquities including Pala bronzes, terracotta seals with university insignia, stone sculptures, and charred rice grains.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Terracotta_Lotus_Seal_-_Nalanda_Museum.jpg/1280px-Terracotta_Lotus_Seal_-_Nalanda_Museum.jpg",
-        "alt": "Nalanda Archaeological Museum in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Rishabhnath_-_Nalanda_Museum_-_1.jpg",
+        "alt": "Nalanda Archaeological Museum in Nalanda, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Artefacts_-_Nalanda_Museum_-_ASI_NM_G3_S4_-_12_-_Buddha_-_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Terracotta_Lotus_Seal_-_Nalanda_Museum.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/ca/Gajalakhsmi_-_Nalanda_Museum.jpg"
       ]
     },
     {
-      "name": "Xuanzang Memorial Hall",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "name": "Kundalpur Digambar Jain Temple",
+      "category": "spiritual",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
       "duration": "1 hr",
-      "rating": 4.2,
-      "description": "Memorial to the Chinese pilgrim-scholar who studied here.",
+      "rating": 4.7,
+      "description": "Revered Jain pilgrimage shrine believed to be the birthplace of Lord Mahavira by Digambar tradition, featuring a towering white marble temple and sacred lotus pond.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Nalanda_-_Xuanzang_Memorial_-_Picture_379_%282244001638%29.jpg/1280px-Nalanda_-_Xuanzang_Memorial_-_Picture_379_%282244001638%29.jpg",
-        "alt": "Xuanzang Memorial Hall in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Kundalpur_Jain_Temple_Nalanda.jpg",
+        "alt": "Kundalpur Digambar Jain Temple in Nalanda, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e5/Xuanzang_Memorial_Hall_Nalanda.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Kundalpur_temple_Mahavira.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kundalpur_temple_statue.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/07/Kundalpur_Jain_Temple_Nalanda_%28cropped%29.jpg"
+      ]
+    },
+    {
+      "name": "Pawapuri Jal Mandir (Lotus Pond Shrine)",
+      "category": "spiritual",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Breathtaking white marble temple situated in the center of an expansive lotus-filled water tank, marking the exact cremation and Nirvana spot of Lord Mahavira in 527 BCE.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Jal_Mandir_-_Pawapuri_02.jpg",
+        "alt": "Pawapuri Jal Mandir (Lotus Pond Shrine) in Nalanda, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Jal_Mandir_-_Pawapuri_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/60/Jal_Mandir_-_Pawapuri_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e9/Jal_Mandir_-_Pawapuri_05.jpg"
+      ]
+    },
+    {
+      "name": "Surya Mandir (Sun Temple of Surajpur Baragaon)",
+      "category": "spiritual",
+      "distance": "2.5 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:30 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Historic Sun temple located on the banks of Surajpur lake, hosting massive gatherings during the sacred Chhath Puja festival, featuring antique stone idols of Surya.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bara_Kaman%2C_a_heritage_monument_in_Bijapur%2C_Karnataka_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Surya Mandir (Sun Temple of Surajpur Baragaon), Nalanda"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Nalanda_Heritage.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Nalanda_Heritage_Site_300_%282%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Nalanda_Heritage_Site_300_%28112%29.jpg"
+      ]
+    },
+    {
+      "name": "Ghora Katora Eco Lake & Buddha Monolith",
+      "category": "nature",
+      "distance": "16 km",
+      "entryFee": "₹20 (Electric Cart ₹100)",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Pristine horse-hoof-shaped lake cradled between five scenic hills, home to a 70-foot pink sandstone statue of Buddha installed amidst the azure waters with pedal boating.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ghoda_katora_Rajgir.jpg",
+        "alt": "Ghora Katora Eco Lake & Buddha Monolith in Nalanda, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Lake_Ghoda_Katora_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Buddha_Statue_Ghoda_Katora.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ghora_katora_lake.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Nalanda University Ruins & around",
+      "title": "Day 1 — UNESCO Nalanda Excavations, Xuanzang Memorial & Museum",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Nalanda University Ruins",
-          "note": "UNESCO ruins of the world’s oldest residential university."
+          "time": "Morning (9:00 AM)",
+          "activity": "Nalanda Mahavihara Guided Exploration",
+          "note": "Walk through ancient vihara courtyards, Site 3 stupa, and lecture halls."
         },
         {
-          "time": "Afternoon",
-          "activity": "Nalanda Archaeological Museum",
-          "note": "Buddhist bronzes and stuccos excavated from the site."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Xuanzang Memorial Hall",
-      "items": [
+          "time": "Midday (12:30 PM)",
+          "activity": "Archaeological Museum Antiquities",
+          "note": "View original Pala bronze idols and terracotta seals of the ancient varsity."
+        },
         {
-          "time": "Morning",
-          "activity": "Xuanzang Memorial Hall",
-          "note": "Memorial to the Chinese pilgrim-scholar who studied here."
+          "time": "Afternoon (2:30 PM)",
+          "activity": "Xuanzang Memorial Hall & Kundalpur",
+          "note": "Admire Indo-Chinese pagoda architecture and Chinese manuscripts."
+        },
+        {
+          "time": "Evening (5:00 PM)",
+          "activity": "Pawapuri Jal Mandir Sunset Walk",
+          "note": "Witness sunset over the pristine white marble temple floating in lotus waters."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Nalanda Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Nalanda%20Stay%20Nalanda%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Nalanda",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Nalanda%20Nalanda%20Bihar%20hotel"
-    },
-    {
-      "name": "Nalanda Grand Hotel",
+      "name": "Nalanda Regency Hotel Rajgir",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 3200,
+      "priceMax": 6500,
+      "rating": 4.3,
+      "reviews": 1400,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Convenient",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Nalanda%20Grand%20Hotel%20Nalanda%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Nalanda%20Regency%20Hotel%20Rajgir"
     },
     {
-      "name": "Marriott Nalanda",
-      "type": "resort",
+      "name": "Indo Hokke Hotel Rajgir",
+      "type": "hotel",
       "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "priceMin": 5500,
+      "priceMax": 11000,
+      "rating": 4.6,
+      "reviews": 1200,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Japanese Onsen Bath",
+        "Multi-cuisine Restaurant",
+        "Lush Gardens"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Japanese Style",
+        "Heritage"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Nalanda%20Nalanda%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Indo%20Hokke%20Hotel%20Rajgir"
+    },
+    {
+      "name": "The Nalanda Resort",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 2800,
+      "priceMax": 5200,
+      "rating": 4.2,
+      "reviews": 850,
+      "amenities": [
+        "Cottages",
+        "Garden Dining",
+        "Travel Desk"
+      ],
+      "tags": [
+        "Eco Stay",
+        "Spacious"
+      ],
+      "url": "https://www.google.com/search?q=The%20Nalanda%20Resort%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Heritage walks",
-    "Cultural",
-    "Ancient University",
-    "Ruins",
-    "UNESCO"
+    "Nalanda Mahavihara Archaeological Ruins (UNESCO)",
+    "Great Stupa of Sariputta (Temple Site 3)",
+    "Xuanzang (Hiuen Tsang) Memorial Hall",
+    "Nalanda Archaeological Museum",
+    "Kundalpur Digambar Jain Temple",
+    "Pawapuri Jal Mandir (Lotus Pond Shrine)",
+    "Surya Mandir (Sun Temple of Surajpur Baragaon)",
+    "Ghora Katora Eco Lake & Buddha Monolith"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Nalanda scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Nalanda_Ruins_%286%29.jpg",
+      "alt": "Nalanda - Nalanda University Ruins"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Temple_12_-_Nalanda_Mahavihara_%283%29.jpg/1280px-Temple_12_-_Nalanda_Mahavihara_%283%29.jpg",
-      "alt": "Nalanda photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nalanda_Ruins_%287%29.jpg",
+      "alt": "Nalanda - Nalanda University Ruins"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rishabhnath_-_Nalanda_Museum_-_1.jpg/1280px-Rishabhnath_-_Nalanda_Museum_-_1.jpg",
-      "alt": "Nalanda photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Nalanda_Ruins_%2814%29.jpg",
+      "alt": "Nalanda - Nalanda University Ruins"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Artefacts_-_Nalanda_Museum_-_ASI_NM_G3_S4_-_12_-_Buddha_-_01.jpg/1280px-Artefacts_-_Nalanda_Museum_-_ASI_NM_G3_S4_-_12_-_Buddha_-_01.jpg",
-      "alt": "Nalanda photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Nalanda_Ruins_%2820%29.jpg",
+      "alt": "Nalanda - Nalanda University Ruins"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Xuanzang_Memorial_Hall.JPG/1280px-Xuanzang_Memorial_Hall.JPG",
-      "alt": "Nalanda photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Nalanda_Ruins_%2824%29.jpg",
+      "alt": "Nalanda - Nalanda University Ruins"
     }
   ],
   "faq": [
     {
-      "q": "What is the best time to visit Nalanda?",
-      "a": "The best time to visit Nalanda is Oct – Mar. Summers are 28–40°C and winters are 10–26°C."
+      "q": "How far is Nalanda from Patna and Rajgir?",
+      "a": "Nalanda is 85 km (2 hrs drive) from Patna and just 15 km (20 mins drive) from Rajgir."
     },
     {
-      "q": "How do I reach Nalanda?",
-      "a": "The nearest airport is Nalanda / nearest airport (30 km) and the nearest railway station is Gaya Junction (59 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "q": "What are the visiting hours for the Nalanda ruins?",
+      "a": "The ruins are open daily from 9:00 AM to 5:00 PM. The nearby museum is open 10:00 AM to 5:00 PM and closed on Fridays."
     },
     {
-      "q": "How many days are enough for Nalanda?",
-      "a": "2 days are usually enough to cover the top attractions of Nalanda at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Nalanda?",
-      "a": "Stays in Nalanda start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Nalanda?",
-      "a": "The top attractions are Nalanda University Ruins, Nalanda Archaeological Museum, Xuanzang Memorial Hall."
+      "q": "Are electric vehicle carts available at Nalanda?",
+      "a": "Yes, battery-operated carts are available at the entrance to transport senior citizens and families comfortably."
     }
   ],
   "seo": {
     "title": "Nalanda Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Nalanda is a much-loved heritage city in Bihar, known for ancient university and ruins. Plan your Nalanda trip: 3 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Nalanda Mahavihara is an iconic UNESCO World Heritage site and the most revered ancient residential university in history, flourishing from the 5th to the 12th century CE. Plan your visit with 8 top places, stays from ₹1400/night, best time, and routes.",
     "canonical": "destination.html?slug=nalanda",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Monastery_5_-_Nalanda_Mahavihara_%281%29.jpg/1280px-Monastery_5_-_Nalanda_Mahavihara_%281%29.jpg",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/1/10/Nalanda_Ruins_%286%29.jpg",
     "keywords": [
       "Nalanda travel guide",
       "places to visit in Nalanda",
-      "Nalanda hotels",
-      "best time to visit Nalanda",
-      "how to reach Nalanda",
-      "Bihar tourism"
+      "Nalanda Bihar tourism",
+      "Nalanda sightseeing"
     ]
   }
 }

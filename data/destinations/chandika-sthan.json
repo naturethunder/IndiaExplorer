@@ -3,572 +3,321 @@
   "title": "Chandika Sthan",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Munger / Anga (Eastern Bihar)",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Chandika Sthan — spiritual town of Bihar",
+  "badge": "Spiritual",
+  "tagline": "Chandika Sthan — The Netra Shaktipith of Maa Sati & Mahabharata Karna Chauraha",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Chandika_Sthan_Temple_near_Saharsa_Town.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Chandika Sthan photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_14.jpg",
+    "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
   },
   "overview": {
-    "short": "Chandika Sthan is a Hindu temple situated in Munger, in the India state of Bihar.",
-    "description": "Chandika Sthan is a Hindu temple situated in Munger, in the India state of Bihar. It is one of the fifty-one Shakta pithas, places of worship consecrated to the goddess Shakti. On the Northeast corner of Munger, Chandika Sthan is just two kilometers away from the Munger town. Being a Siddhi-Peetha, Chandika Sthan is considered to be one of the most sacred and sanctified temples, as important as the Kamakshya temple near Guwahati.",
+    "short": "Chandika Sthan in Munger is one of the 51 sacred Shakti Peethas, where Goddess Sati’s left eye fell, renowned for miraculous cures of eye ailments.",
+    "description": "Located in Munger on the banks of the sacred Ganga, Chandika Sthan is an ancient cave-shrine where the left eye of Goddess Sati is worshipped inside a subterranean stone sanctum. Mahabharata legend recounts that King Karna of Anga used to boil himself daily in a cauldron of oil and offer his flesh to Goddess Chandika, who would restore him and grant gold charities.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "One of 51 Sacred Shakti Peethas (Sati’s Left Eye)",
+      "Mahabharata King Karna Charity Legend",
+      "Sacred Subterranean Cave Sanctorum",
+      "Proximity to Kastaharni Ganga Ghat"
     ],
-    "altitude": null,
-    "rating": 4.4,
-    "reviewCount": 21230,
-    "minPrice": 900,
-    "distanceFromDelhi": 988,
-    "about": "Chandika Sthan is a Hindu temple situated in Munger, in the India state of Bihar. It is one of the fifty-one Shakta pithas, places of worship consecrated to the goddess Shakti. On the Northeast corner of Munger, Chandika Sthan is just two kilometers away from the Munger town. Being a Siddhi-Peetha, Chandika Sthan is considered to be one of the most sacred and sanctified temples, as important as the Kamakshya temple near Guwahati."
+    "altitude": "54 m",
+    "rating": 4.8,
+    "reviewCount": 16500,
+    "minPrice": 1300,
+    "distanceFromDelhi": 1130,
+    "about": "A powerful Siddhapeeth sanctuary where ancient Tantric worship, Ganga breezes, and King Karna’s legends harmonize."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 25.38333333,
-    "lng": 86.5,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.38,
+    "lng": 86.48,
+    "tempSummer": "26–42°C",
+    "tempWinter": "8–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 174,
-        "byCar": "3–4 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 139 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 301,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 241 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 321,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 257 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 378,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 302 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 443,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 354 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 643,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 514 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 664,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 531 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 678,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 542 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 713,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 570 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 819,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 655 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 846,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 677 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 916,
-        "byCar": "15–20 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 733 km · road approx."
-      },
-      {
-        "from": "Imphal (Manipur)",
-        "city": "Imphal",
-        "state": "Manipur",
-        "distance": 939,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 751 km · road approx."
-      },
-      {
-        "from": "Kohima (Nagaland)",
-        "city": "Kohima",
-        "state": "Nagaland",
-        "distance": 955,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 764 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1114,
-        "byCar": "19–25 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 891 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Chandika Sthan / nearest airport",
-      "distance": 30
+      "name": "Patna Airport (PAT) / Deoghar Airport (DGH)",
+      "distance": 150
     },
     "nearestRailway": {
-      "name": "Katihar Junction",
-      "distance": 110
+      "name": "Munger / Jamalpur Junction",
+      "distance": 2.5
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located in Munger city on the banks of the Ganga, accessible via NH-80 and Sri Krishna Setu.",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 175,
+        "byCar": "4 hrs",
+        "byTrain": "Express train (2.5 hrs)",
+        "byAir": "Via Patna Airport",
+        "via": "NH-31 and NH-80"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Tarapur, Bihar",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Tarapur is a town and one of the three sub-divisions in Munger district in the Indian state of Bihar. It is centrally located and connects cities like Bhagalpur, Munger, Banka, Jamui and Deoghar.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Badi_Durga_Mandir.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tarapur, Bihar in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Bhim_Bandh.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5d/Hawakhana_at_Tarapur%2C_Puthia%2C_Rajshahi%2C_Bangladesh-022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Munger",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Munger, formerly spelt as Monghyr, is a twin city and a Municipal Corporation situated in the Indian state of Bihar. It is the administrative headquarters of Munger district and Munger Division.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Munger in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Charlie_Munger_Signature_transparent.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/49/Munger_Graduate_Residences.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kastaharni Ghat",
+      "name": "Maa Chandika Subterranean Sanctum",
       "category": "spiritual",
-      "distance": "4 km",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 9:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Ancient cave-temple sanctorum where the eye of Goddess Sati is worshipped with vermilion.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_22.jpg",
+        "alt": "Maa Chandika Subterranean Sanctum - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished sing"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_23.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sher_Shah_Suri%27s_Tomb%2C_Sasaram%2C_1870_photograph.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sher_Shah_Suri%27s_Tomb.jpg"
+      ]
+    },
+    {
+      "name": "Karna Chauraha & Charity Legend Spot",
+      "category": "heritage",
+      "distance": "Temple Grounds",
       "entryFee": "Free",
       "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Kastaharni Ghat is a ghat or bathing place on the River Ganges, at Munger in the Indian state of Bihar. Located on the banks of the Ganges River on the eastern side of Munger city, the ghat is important has important in both Hindu religious faith and tourism.",
+      "duration": "45 mins",
+      "rating": 4.7,
+      "description": "Historic altar where King Karna performed gold charities after worshipping Goddess Chandika.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Fort_of_Munger.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kastaharni Ghat in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Barabar_Caves_-_Rock_Carved_Figures_%289224632877%29.jpg",
+        "alt": "Karna Chauraha & Charity Legend Spot in Chandika Sthan, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Gangariver_23220.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/af/Kashtharni_Ghat_Munger.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Karan_Chaupar_Cave.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Tomb_of_sher_Shah_suri.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sher_Shah_suri_tomb.jpg"
       ]
     },
     {
-      "name": "Kaunhara Ghat",
+      "name": "Kastaharni Ghat (North-Flowing Ganga Ghat)",
       "category": "spiritual",
-      "distance": "4 km",
+      "distance": "1.5 km",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "Sacred riverfront where the Ganga flows northwards, famous for sunrise and evening aarti.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Sasaram-tomb-of-sher-shah-suri.jpg",
+        "alt": "Kastaharni Ghat (North-Flowing Ganga Ghat) - This is a photo of ASI monument number"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/Tomb_of_Sher_Shah_Suri_in_Sasaram.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sher_Shah_Suri%27s_-_Tomb_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_01.jpg"
+      ]
+    },
+    {
+      "name": "Munger Fort Citadel & Ramparts",
+      "category": "heritage",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Massive stone fortress with grand gateways overlooking the Ganga River.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_03.jpg",
+        "alt": "Munger Fort Citadel & Ramparts - Tomb of Sher Shah Suri, Sasaram, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a1/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_05.jpg"
+      ]
+    },
+    {
+      "name": "Bihar School of Yoga (Ganga Darshan)",
+      "category": "spiritual",
+      "distance": "2.5 km",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "World-renowned yoga ashram on a hillock overlooking the majestic Ganga.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_06.jpg",
+        "alt": "Bihar School of Yoga (Ganga Darshan) - Tomb of Sher Shah Suri, Sasaram, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_08.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cc/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_09.jpg"
+      ]
+    },
+    {
+      "name": "Sita Kund Thermal Spring Reservoir",
+      "category": "spiritual",
+      "distance": "7 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "Boiling hot sulfur spring tied to Sita’s Agni Pariksha, with ritual bathing kunds.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_10.jpg",
+        "alt": "Sita Kund Thermal Spring Reservoir - Tomb of Sher Shah Suri, Sasaram, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_11.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_12.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/82/Tomb_of_Sher_Shah_Suri%2C_Sasaram%2C_Bihar_13.jpg"
+      ]
+    },
+    {
+      "name": "Pir Shah Nufa Tomb (Bastion Dargah)",
+      "category": "heritage",
+      "distance": "2 km",
       "entryFee": "Free",
       "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Kaunhara ghat is a river bank in Hajipur in the Indian state of Bihar. It is one of the main ghats of the Ganga-Gandak rivers.",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "15th-century domed Sufi mausoleum on a high circular bastion within the fort walls.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kaunhara_ghat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kaunhara Ghat in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/TOMB_OF_SHER_SHAH_SURI-Reflection_in_water.png",
+        "alt": "Pir Shah Nufa Tomb (Bastion Dargah) - Tomb of Sher Shah Suri is located in the town of Sasaram ,Bihar."
       },
       "photos": [
-        "https://images.pexels.com/photos/36402970/pexels-photo-36402970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/19272041/pexels-photo-19272041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/2/22/Sher_shah_suri_tomb_sasaram.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Tomb_of_sher_shah_suri_from_outer_windo.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Tomb_of_Sher_Shah_Suri_-Sasaram.png"
       ]
     },
     {
-      "name": "Munger Ganga Bridge",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Shri Krishna Setu (Munger Ganga Bridge) NH 333B is a rail-cum-road bridge across the Ganges, at Munger in the Indian state of Bihar and named after first Chief Minister of Bihar Shri Krishna Singh. The bridge connects the Munger-Jamalpur twin cities in Munger District to various districts of North Bihar.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/MungerRailwayStation.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Munger Ganga Bridge in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Munger_Ganga_Rail_Road_Bridge.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Munger_Railway_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Nauagarhi",
-      "category": "cultural",
-      "distance": "6 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Goenka Shivalaya (Marble Shiva Temple)",
+      "category": "spiritual",
+      "distance": "1.8 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:30 PM",
+      "duration": "45 mins",
       "rating": 4.6,
-      "description": "Nauagarhi is a village in Munger District, Bihar, India. It is situated on the northern portion of Munger District.",
+      "description": "Ornate white marble Shiva temple built by merchant philanthropists with intricate carvings.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nauagarhi in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/SHER_SHAH_SURI_TOMB.jpg",
+        "alt": "Goenka Shivalaya (Marble Shiva Temple) - The tomb of Sher Shah Suri is a mausoleum located in Sasaram, in the Indian sta"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Adarshgram",
-      "category": "cultural",
-      "distance": "8 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Adarshgram tikarampur is a village located in the Mahauli panchayat of Munger district, Bihar state, India.",
-      "image": {
-        "src": "https://images.pexels.com/photos/9965027/pexels-photo-9965027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Adarshgram in Bihar, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/9965062/pexels-photo-9965062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/34595475/pexels-photo-34595475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Khajuraha",
-      "category": "cultural",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Khajuraha is an ancient northern Indian village situated in the Saharsa district of Bihar. It is one of the largest panchayats of the state, both by area and population.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/en/c/c2/Mahavir_sthan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Khajuraha in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/en/9/95/Chandi_Maa_Sthan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ramnavmi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a7/School_Khajuraha.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sher_Shah_Suri%27s_-_Tomb_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Sher_Shah_Suri%27s_-_Tomb_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Sher_Shah_Suri%27s_-_Tomb_03.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Tarapur, Bihar & around",
+      "title": "Day 1 — Highlights of Chandika Sthan",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Tarapur, Bihar",
-          "note": "Tarapur is a town and one of the three sub-divisions in Munger district in the Indian state of Bihar. It is centrally located and connects cities like Bhagalpur, Munger, Banka, Jamui and Deoghar."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Maa Chandika Subterranean Sanctum",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Munger",
-          "note": "Munger, formerly spelt as Monghyr, is a twin city and a Municipal Corporation situated in the Indian state of Bihar. It is the administrative headquarters of Munger district and Munger Division."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Karna Chauraha & Charity Legend Spot",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Kastaharni Ghat",
-          "note": "Kastaharni Ghat is a ghat or bathing place on the River Ganges, at Munger in the Indian state of Bihar. Located on the banks of the Ganges River on the eastern side of Munger city, the ghat is important has important in both Hindu religious faith and tourism."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Kaunhara Ghat & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Kaunhara Ghat",
-          "note": "Kaunhara ghat is a river bank in Hajipur in the Indian state of Bihar. It is one of the main ghats of the Ganga-Gandak rivers."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Munger Ganga Bridge",
-          "note": "Shri Krishna Setu (Munger Ganga Bridge) NH 333B is a rail-cum-road bridge across the Ganges, at Munger in the Indian state of Bihar and named after first Chief Minister of Bihar Shri Krishna Singh. The bridge connects the Munger-Jamalpur twin cities in Munger District to various districts of North Bihar."
-        },
-        {
-          "time": "Evening",
-          "activity": "Nauagarhi",
-          "note": "Nauagarhi is a village in Munger District, Bihar, India. It is situated on the northern portion of Munger District."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Adarshgram & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Adarshgram",
-          "note": "Adarshgram tikarampur is a village located in the Mahauli panchayat of Munger district, Bihar state, India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Khajuraha",
-          "note": "Khajuraha is an ancient northern Indian village situated in the Saharsa district of Bihar. It is one of the largest panchayats of the state, both by area and population."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Chandika Sthan Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Chandika%20Sthan%20Stay%20Chandika%20Sthan%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Chandika Sthan",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chandika%20Sthan%20Chandika%20Sthan%20Bihar%20hotel"
-    },
-    {
-      "name": "Chandika Sthan Grand Hotel",
+      "name": "Hotel Grand Chandika",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Chandika%20Sthan%20Grand%20Hotel%20Chandika%20Sthan%20Bihar%20hotel"
-    },
-    {
-      "name": "Fortune Park Chandika Sthan",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Chandika%20Sthan%20Chandika%20Sthan%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Chandika%20Sthan%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Sightseeing",
-    "Spiritual",
-    "Cultural",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "Maa Chandika Subterranean Sanctum",
+    "Karna Chauraha & Charity Legend Spot",
+    "Kastaharni Ghat (North-Flowing Ganga Ghat)",
+    "Munger Fort Citadel & Ramparts",
+    "Bihar School of Yoga (Ganga Darshan)",
+    "Sita Kund Thermal Spring Reservoir",
+    "Pir Shah Nufa Tomb (Bastion Dargah)",
+    "Goenka Shivalaya (Marble Shiva Temple)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Chandika Sthan scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_14.jpg",
+      "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dakshayani.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chandika Sthan photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_16.jpg",
+      "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Entrance_Chandika_Stahna_Munger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chandika Sthan photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_17.jpg",
+      "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Chandika_Sthan_Temple_near_Saharsa_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chandika Sthan photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_18.jpg",
+      "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Chandika_Asthan_at_Munger%2C_Bihar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chandika Sthan photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_21.jpg",
+      "alt": "Chandika Sthan - Emperor Ashoka built The Lion Pillar at Kolhua. It is made of a highly polished single piece of red"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Chandika Sthan?",
-      "a": "The best time to visit Chandika Sthan is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Chandika Sthan?",
-      "a": "The nearest airport is Chandika Sthan / nearest airport (30 km) and the nearest railway station is Katihar Junction (110 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Chandika Sthan?",
-      "a": "3 days are usually enough to cover the top attractions of Chandika Sthan at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Chandika Sthan?",
-      "a": "Stays in Chandika Sthan start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Chandika Sthan?",
-      "a": "The top attractions are Tarapur, Bihar, Munger, Kastaharni Ghat, Kaunhara Ghat, Munger Ganga Bridge."
+      "q": "What are the primary highlights of Chandika Sthan?",
+      "a": "Chandika Sthan in Munger is one of the 51 sacred Shakti Peethas, where Goddess Sati’s left eye fell, renowned for miraculous cures of eye ailments."
     }
   ],
   "seo": {
     "title": "Chandika Sthan Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Chandika Sthan is a Hindu temple situated in Munger, in the India state of Bihar. Plan your Chandika Sthan trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Chandika Sthan in Munger is one of the 51 sacred Shakti Peethas, where Goddess Sati’s left eye fell, renowned for miraculous cures of eye ailments. Plan your visit with 8 top places, stays from ₹1300/night, best time, and routes.",
     "canonical": "destination.html?slug=chandika-sthan",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/1/15/Chandika_Sthan_Temple_near_Saharsa_Town.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/3/37/Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar_14.jpg",
     "keywords": [
       "Chandika Sthan travel guide",
       "places to visit in Chandika Sthan",
-      "Chandika Sthan hotels",
-      "best time to visit Chandika Sthan",
-      "how to reach Chandika Sthan",
-      "Bihar tourism"
+      "Chandika Sthan Bihar tourism"
     ]
   }
 }

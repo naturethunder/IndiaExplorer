@@ -3,547 +3,321 @@
   "title": "Buxar Fort",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Bhojpur / Buxar (Western Bihar)",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Buxar Fort — heritage city of Bihar",
+  "badge": "Heritage",
+  "tagline": "Buxar Fort — The Ganga River Citadel & Battle of Buxar Historic Grounds",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Shah_Alam_II%2C_Mughal_Emperor_of_India%2C_reviewing_the_East_India_Company%27s_troops%2C_1781.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Buxar Fort photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Buxar_fort%2C_river_face.jpg",
+    "alt": "Buxar Fort - Buxar fort, river face"
   },
   "overview": {
-    "short": "Buxar Fort is a fort located in Buxar, Bihar, India.",
-    "description": "Buxar Fort is a fort located in Buxar, Bihar, India. Buxar is a city in the state of Bihar in the eastern part of India bordering eastern Uttar Pradesh. It is the headquarters of Buxar District. The fort was established by King Rudra Deo in 1054 .",
+    "short": "Buxar Fort stands on a high bluff overlooking the sacred River Ganga in Buxar, famous for Vedic hermitage lore of Sage Vishwamitra and the historic 1764 Battle of Buxar.",
+    "description": "Erected in 1054 CE by King Rudra Deo of the Paramara dynasty and fortified through the Mughal and British eras, Buxar Fort commands spectacular views over the sacred Ganga. The historic town is legendary as the Tapovan of Sage Vishwamitra where Lord Rama slew demoness Tadaka, as well as the site of the pivotal 1764 Battle of Buxar and the 1539 Battle of Chausa.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "11th-Century Ganga Riverfront Stone Fortress",
+      "Battle of Buxar (1764) Monument at Katkauli",
+      "Ramrekha Ghat (Lord Rama’s Holy Bathing Ghat)",
+      "Chausa Battlefield & Memorial (1539 CE)"
     ],
-    "altitude": null,
-    "rating": 4.5,
-    "reviewCount": 19073,
-    "minPrice": 900,
-    "distanceFromDelhi": 751,
-    "about": "Buxar Fort is a fort located in Buxar, Bihar, India. Buxar is a city in the state of Bihar in the eastern part of India bordering eastern Uttar Pradesh. It is the headquarters of Buxar District. The fort was established by King Rudra Deo in 1054 ."
+    "altitude": "65 m",
+    "rating": 4.7,
+    "reviewCount": 12500,
+    "minPrice": 1200,
+    "distanceFromDelhi": 920,
+    "about": "A historic riverfront destination blending ancient Ramayana legends with epic battlefield monuments along the holy Ganga."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 25.56049,
-    "lng": 83.98054,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.56,
+    "lng": 83.98,
+    "tempSummer": "26–43°C",
+    "tempWinter": "8–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 131,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 105 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 145,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 116 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 351,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 281 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 574,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 459 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 628,
-        "byCar": "10–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 502 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 670,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 536 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 769,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 615 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 875,
-        "byCar": "15–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 700 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 890,
-        "byCar": "15–20 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 712 km · road approx."
-      },
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 939,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 751 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 950,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 760 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 954,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 763 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 974,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 779 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 985,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 788 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 993,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 794 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Buxar Fort / nearest airport",
-      "distance": 30
+      "name": "Varanasi Airport (VNS)",
+      "distance": 95
     },
     "nearestRailway": {
-      "name": "Varanasi Junction",
-      "distance": 103
+      "name": "Buxar Railway Station (BXR)",
+      "distance": 2
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located directly on the Varanasi-Patna highway (NH-922) and Purvanchal Expressway spur.",
+    "routes": [
+      {
+        "from": "Varanasi",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 95,
+        "byCar": "2 hrs",
+        "byTrain": "Express train (1 hr)",
+        "byAir": "Via Varanasi Airport",
+        "via": "NH-922 / NH-19"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Buxar",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Buxar is a nagar parishad city in the state of Bihar, India, sharing border with Balia and Ghazipur district of Uttar Pradesh. It is the headquarters of the eponymous Buxar district, as well as the headquarters of the community development block of Buxar, which also contains the census town of Sarimpur along with 132 rural villages.",
+      "name": "Buxar Fort Citadel & Ganga Viewpoint",
+      "category": "heritage",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Medieval stone fort bastion perched on the Ganga bluff with ancient carved subterranean cells.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Buxar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fort_Calcutta.JPG",
+        "alt": "Buxar Fort Citadel & Ganga Viewpoint in Buxar Fort, Bihar - Edict of Fort Calcutta, Faizabad, India. Built by Shuja ud D"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/Buxar_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Buxar_bridge.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Clive_House.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_110.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_116.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Back_door_of_Mundeshwari_Devi.jpg"
       ]
     },
     {
-      "name": "Battle of Buxar",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The Battle of Buxar was fought between 22 and 23 October 1764, between the forces of the British East India Company, under the command of Major Hector Munro, against the combined armies of Shah Alam II, the Emperor of the Mughal Empire; Mir Qasim, the Nawab of Bengal; Balwant Singh, the Maharaja of the Benares State; Shuja-ud-daula, the Nawab of Awadh. The battle was fought at Buxar, a \"strong fortified town\" within the territory of Bihar, located on the banks of the Ganges river about 130 kilometres (81 mi) west of Patna; it was a challenging victory for the British East India Company.",
+      "name": "Ramrekha Ghat (Sacred Ganga Promenade)",
+      "category": "spiritual",
+      "distance": "500 m",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Holy riverfront bathing ghat where Lord Rama and Lakshmana crossed the Ganga with Sage Vishwamitra.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Battle_of_Buxar_-Crown_and_company-_Arthur_Edward_Mainwaring_pg.144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Battle of Buxar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Carvings_on_the_wall_of_Mundeshwari_Devi.jpg",
+        "alt": "Ramrekha Ghat (Sacred Ganga Promenade) - This is a photo of ASI monument number"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/80/Ganges_river_at_buxar_famous_for_battle_of_buxar_and_lord_rama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Sir_Hector_Munro_by_David_Martin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Clive_London.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/View_from_the_top_of_Mundeshwari_Devi_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Sacred_thread_at_Mundeshwari_Devi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d3/Wall_of_Mundeshwari_Devi.jpg"
       ]
     },
     {
-      "name": "Diocese of Buxar",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "The Roman Catholic Diocese of Buxar (Latin: Dioecesis Buxarensis) in India was created on December 12, 2005. It is a suffragan diocese of the Archdiocese of Patna.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sadhu_V%C3%A2r%C3%A2nas%C3%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Diocese of Buxar in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Varanasi_2010_ghats3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/29/Varanasi_2010_ghats4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Varanasi_Munshi_Ghat3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Bharouli Khas, Ballia",
-      "category": "cultural",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Bharouli Khas is a village in Ballia district, Uttar Pradesh, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Varanasi_2010_Ahilyabai_Ghat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bharouli Khas, Ballia in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/7a/India_-_Varanasi_green_peas_-_2714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Scindia_Ghat_in_morning%2C_Varanasi%2C_Uttar_Pradesh%2C_India_%282012%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varanasi%2C_India%2C_Boatmen_on_the_Ganges_River_in_Varanasi_%28Kashi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kanuan",
-      "category": "cultural",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Kanuan Also known as kanuwan is a village located in Mohammadabad Assembly constituency tehsil of Ghazipur , Uttar Pradesh. It is situated 45 km from Ghazipur district.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Varanasi%2C_India%2C_Varanasi_skyline_in_the_evening.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kanuan in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varanasi_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Varanasi_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Varanasi_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Itarhi, Buxar",
-      "category": "scenic",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Katkauli Maidan (Battle of Buxar 1764 Monument)",
+      "category": "heritage",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 6:00 PM",
+      "duration": "1 hr",
       "rating": 4.7,
-      "description": "Itarhi (Hindi: इटाढ़ी) is a Nagar Panchayat and corresponding community development block in Buxar district of Bihar, India. According to the 2011 Census of India, its population is 10,275, in 1,711 households, while the total block population is 170,629, in 25,557 households.",
+      "description": "Historic battleground and British victory stone obelisk commemorating the historic October 1764 battle.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Varanasi_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Itarhi, Buxar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/MAA_MUNDESHWARI_TEMPLE.jpg",
+        "alt": "Katkauli Maidan (Battle of Buxar 1764 Monument) - This actually is a rest house which falls while you descend from the M"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Varanasi_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/67/Varanasi_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Somersaulting_into_Ganges%2C_India%2C_ca._1906_%28IMP-CSCNWW33-OS14-32%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/8/81/MA_MUNDESHWARI_TEMPLE_FAR_VIEW.png",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Amlaka.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/16/Yaksha_engraved_in_lintel.jpg"
       ]
     },
     {
-      "name": "Sukhdehri",
-      "category": "cultural",
-      "distance": "10 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Sukhdehri Kalan is a village located in Mohammadabad tehsil of Ghazipur district, Uttar Pradesh. It has total 110 families residing.",
+      "name": "Chausa Battlefield & Historic Monument",
+      "category": "heritage",
+      "distance": "14 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Famous riverfront site where Sher Shah Suri defeated Mughal Emperor Humayun in June 1539.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Benares-_Temple_on_Ganges_in_state_of_collapse%2C_India%2C_ca._1906_%28IMP-CSCNWW33-OS14-59%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sukhdehri in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Mundeshwari_temple.jpg",
+        "alt": "Chausa Battlefield & Historic Monument - This is a photo of ASI monument number"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/66/Fort_at_Pattihata%2C_Bihar._Coloured_etching_by_William_Hodges_Wellcome_V0050444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sharda_Sinha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/8/80/Stone_edict.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nandi_outside_Mundeshwari_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mundeshwari_temple%2C_Kaimur.jpg"
+      ]
+    },
+    {
+      "name": "Vishwamitra Ashram (Charitravan)",
+      "category": "spiritual",
+      "distance": "2 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:00 PM",
+      "duration": "1 hr",
+      "rating": 4.7,
+      "description": "Ancient hermitage complex where Sage Vishwamitra taught divine astras to Lord Rama.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Vishwamitra_Ashram.jpg",
+        "alt": "Vishwamitra Ashram (Charitravan) in Buxar Fort, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Brajmohan_das.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/IMG20200317101053_Mundeshwari_Dham.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kaimur_district_-_Mundeshwari_Temple_-_20210908122054.jpg"
+      ]
+    },
+    {
+      "name": "Ahirauli Devi Ahilya Temple & Kund",
+      "category": "spiritual",
+      "distance": "5 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:30 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Sacred village temple commemorating the redemption of Devi Ahilya from a stone curse by Rama’s lotus touch.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Kaimur_district_-_Mundeshwari_Temple_-_20210908122549.jpg",
+        "alt": "Ahirauli Devi Ahilya Temple & Kund - Kaimur district, Mundeshwari Temple."
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Kaimur_district_-_Mundeshwari_Temple_-_20210908122650.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Kaimur_district_-_Mundeshwari_Temple_-_20210908122242.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Kaimur_district_-_Mundeshwari_Temple_-_20210908122505.jpg"
+      ]
+    },
+    {
+      "name": "Brahmapur Baba Bameshwar Nath Temple",
+      "category": "spiritual",
+      "distance": "36 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 9:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Ancient westward-facing Swayambhu Shiva temple renowned for massive cattle and pilgrim fairs during Shivratri.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Maa_Mundeshawari.jpg",
+        "alt": "Brahmapur Baba Bameshwar Nath Temple - Taken this picture of Beautiful Temple based out at Bhabua , a small town in the"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/The_Age_of_the_Imperial_Guptas_Plate_08.png",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/The_Age_of_the_Imperial_Guptas_Plate_09.png",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a1/The_Age_of_the_Imperial_Guptas_Plate_10.png"
+      ]
+    },
+    {
+      "name": "Naulakha Mandir (Charitravan Buxar)",
+      "category": "heritage",
+      "distance": "2.5 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Intricately sculpted marble South Indian-style temple complex constructed in the early 20th century.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/NaulakhaMandirAtBuxar.jpg",
+        "alt": "Naulakha Mandir (Charitravan Buxar) in Buxar Fort, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/aa/The_Age_of_the_Imperial_Guptas_Plate_40.png",
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/Maa_MUNDESHWARI.png",
+        "https://upload.wikimedia.org/wikipedia/commons/2/28/Statues_in_sanctum_sanctorum.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Buxar & around",
+      "title": "Day 1 — Highlights of Buxar Fort",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Buxar",
-          "note": "Buxar is a nagar parishad city in the state of Bihar, India, sharing border with Balia and Ghazipur district of Uttar Pradesh. It is the headquarters of the eponymous Buxar district, as well as the headquarters of the community development block of Buxar, which also contains the census town of Sarimpur along with 132 rural villages."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Buxar Fort Citadel & Ganga Viewpoint",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Battle of Buxar",
-          "note": "The Battle of Buxar was fought between 22 and 23 October 1764, between the forces of the British East India Company, under the command of Major Hector Munro, against the combined armies of Shah Alam II, the Emperor of the Mughal Empire; Mir Qasim, the Nawab of Bengal; Balwant Singh, the Maharaja of the Benares State; Shuja-ud-daula, the Nawab of Awadh. The battle was fought at Buxar, a \"strong fortified town\" within the territory of Bihar, located on the banks of the Ganges river about 130 kilometres (81 mi) west of Patna; it was a challenging victory for the British East India Company."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Ramrekha Ghat (Sacred Ganga Promenade)",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Diocese of Buxar",
-          "note": "The Roman Catholic Diocese of Buxar (Latin: Dioecesis Buxarensis) in India was created on December 12, 2005. It is a suffragan diocese of the Archdiocese of Patna."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Bharouli Khas, Ballia & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Bharouli Khas, Ballia",
-          "note": "Bharouli Khas is a village in Ballia district, Uttar Pradesh, India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Kanuan",
-          "note": "Kanuan Also known as kanuwan is a village located in Mohammadabad Assembly constituency tehsil of Ghazipur , Uttar Pradesh. It is situated 45 km from Ghazipur district."
-        },
-        {
-          "time": "Evening",
-          "activity": "Itarhi, Buxar",
-          "note": "Itarhi (Hindi: इटाढ़ी) is a Nagar Panchayat and corresponding community development block in Buxar district of Bihar, India. According to the 2011 Census of India, its population is 10,275, in 1,711 households, while the total block population is 170,629, in 25,557 households."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Sukhdehri",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Sukhdehri",
-          "note": "Sukhdehri Kalan is a village located in Mohammadabad tehsil of Ghazipur district, Uttar Pradesh. It has total 110 families residing."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Buxar Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Buxar%20Fort%20Stay%20Buxar%20Fort%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Buxar Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Buxar%20Fort%20Buxar%20Fort%20Bihar%20hotel"
-    },
-    {
-      "name": "Buxar Fort Grand Hotel",
+      "name": "Hotel Grand Buxar",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Buxar%20Fort%20Grand%20Hotel%20Buxar%20Fort%20Bihar%20hotel"
-    },
-    {
-      "name": "Marriott Buxar Fort",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Marriott%20Buxar%20Fort%20Buxar%20Fort%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Buxar%20Fort%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Sightseeing",
-    "Cultural",
-    "Forts",
-    "Architecture",
-    "History",
-    "Local Bazaars"
+    "Buxar Fort Citadel & Ganga Viewpoint",
+    "Ramrekha Ghat (Sacred Ganga Promenade)",
+    "Katkauli Maidan (Battle of Buxar 1764 Monument)",
+    "Chausa Battlefield & Historic Monument",
+    "Vishwamitra Ashram (Charitravan)",
+    "Ahirauli Devi Ahilya Temple & Kund",
+    "Brahmapur Baba Bameshwar Nath Temple",
+    "Naulakha Mandir (Charitravan Buxar)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Buxar Fort scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Buxar_fort%2C_river_face.jpg",
+      "alt": "Buxar Fort - Buxar fort, river face"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Sir_Hector_Munro_by_David_Martin_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Buxar Fort photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Ganges_river_at_buxar_famous_for_battle_of_buxar_and_lord_rama.jpg",
+      "alt": "Buxar Fort - Ganges river at buxar"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/The_Navab%27s_arrival_before_Clive%27s_position.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Buxar Fort photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/Mansion_of_mound.jpg",
+      "alt": "Buxar Fort - The located in river side. If any Ganga."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Buxar_Fort_1830.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Buxar Fort photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Najaf_Khan_Tomb_entrance.JPG",
+      "alt": "Buxar Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Survey_o"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Buxar_fort%2C_river_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Buxar Fort photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bihari_ji_Ka_Mandir.jpg",
+      "alt": "Buxar Fort - Bihari ji ka Mandir,a temple in Dumraon dist buxar Bihar build by Dumraon Maharaj"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Buxar Fort?",
-      "a": "The best time to visit Buxar Fort is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Buxar Fort?",
-      "a": "The nearest airport is Buxar Fort / nearest airport (30 km) and the nearest railway station is Varanasi Junction (103 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Buxar Fort?",
-      "a": "3 days are usually enough to cover the top attractions of Buxar Fort at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Buxar Fort?",
-      "a": "Stays in Buxar Fort start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Buxar Fort?",
-      "a": "The top attractions are Buxar, Battle of Buxar, Diocese of Buxar, Bharouli Khas, Ballia, Kanuan."
+      "q": "What are the primary highlights of Buxar Fort?",
+      "a": "Buxar Fort stands on a high bluff overlooking the sacred River Ganga in Buxar, famous for Vedic hermitage lore of Sage Vishwamitra and the historic 1764 Battle of Buxar."
     }
   ],
   "seo": {
     "title": "Buxar Fort Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Buxar Fort is a fort located in Buxar, Bihar, India. Plan your Buxar Fort trip: 7 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Buxar Fort stands on a high bluff overlooking the sacred River Ganga in Buxar, famous for Vedic hermitage lore of Sage Vishwamitra and the historic 1764 Battle of Buxar. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=buxar-fort",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Shah_Alam_II%2C_Mughal_Emperor_of_India%2C_reviewing_the_East_India_Company%27s_troops%2C_1781.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/5/50/Buxar_fort%2C_river_face.jpg",
     "keywords": [
       "Buxar Fort travel guide",
       "places to visit in Buxar Fort",
-      "Buxar Fort hotels",
-      "best time to visit Buxar Fort",
-      "how to reach Buxar Fort",
-      "Bihar tourism"
+      "Buxar Fort Bihar tourism"
     ]
   }
 }

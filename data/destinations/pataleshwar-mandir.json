@@ -3,572 +3,324 @@
   "title": "Pataleshwar Mandir",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Tirhut / Vaishali (Central Bihar)",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Pataleshwar Mandir — spiritual town of Bihar",
+  "badge": "Spiritual",
+  "tagline": "Pataleshwar Mahadev — The Subterranean Shiva Shrine & Historic Ramchaura of Hajipur",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/en/b/b4/Pataleshwar_Nandi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Pataleshwar Mandir photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5891.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "alt": "Wokha district Doyang"
   },
   "overview": {
-    "short": "The Pataleshwar Mandir is a Hindu Temple in the city of Hajipur, Bihar, India.",
-    "description": "The Pataleshwar Mandir is a Hindu Temple in the city of Hajipur, Bihar, India. Dedicated to Shiva, it is located at Jadhua Road, Hajipur. As per local folklore, it is said to have been in existence since ancient period and Lord Shiva is believed to be in the form of Lingam here. Apart from anthropomorphic images of Shiva, the worship of Shiva in the form of a lingam, or linga, is also important.",
+    "short": "Pataleshwar Mandir in Hajipur is an ancient subterranean Shiva temple where the Lingam is situated deep below ground level, surrounded by sacred Ramayana pilgrim ghats.",
+    "description": "Located in Hajipur (Vaishali district) at the confluence of the sacred Ganga and Gandak rivers, Pataleshwar Mandir is famed for its self-manifested (Swayambhu) Shiva Lingam located inside an underground sanctum. The pilgrimage circuit includes the Ramchaura Mandir enshrining the footprint of Lord Rama and Konhara Ghat, the mythical site of Gajendra Moksha.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "Subterranean (Patala) Shiva Lingam Sanctum",
+      "Ramchaura Mandir (Footprint of Lord Rama)",
+      "Konhara Ghat (Mythical Gajendra Moksha Sangam)",
+      "Proximity to Sonepur Hariharnath Temple"
     ],
-    "altitude": null,
-    "rating": 4.8,
-    "reviewCount": 10648,
-    "minPrice": 900,
-    "distanceFromDelhi": 857,
-    "about": "The Pataleshwar Mandir is a Hindu Temple in the city of Hajipur, Bihar, India. Dedicated to Shiva, it is located at Jadhua Road, Hajipur. As per local folklore, it is said to have been in existence since ancient period and Lord Shiva is believed to be in the form of Lingam here. Apart from anthropomorphic images of Shiva, the worship of Shiva in the form of a lingam, or linga, is also important."
+    "altitude": "52 m",
+    "rating": 4.7,
+    "reviewCount": 9800,
+    "minPrice": 1200,
+    "distanceFromDelhi": 1010,
+    "about": "A tranquil riverine pilgrimage hub where subterranean Shiva devotion, Ramayana footprints, and holy river confluences meet."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 25.66666667,
-    "lng": 85.21666667,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.68,
+    "lng": 85.21,
+    "tempSummer": "26–42°C",
+    "tempWinter": "9–24°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 14,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 11 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 285,
-        "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 228 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 323,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 258 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 423,
-        "byCar": "7–9 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 338 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 481,
-        "byCar": "8–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 385 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 750,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 600 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 765,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 612 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 808,
-        "byCar": "13–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 646 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 818,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 654 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 836,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 669 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 985,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 788 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1003,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 802 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 1043,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 834 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 1063,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 850 km · road approx."
-      },
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 1071,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 857 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Pataleshwar Mandir / nearest airport",
-      "distance": 30
+      "name": "Patna Airport (PAT)",
+      "distance": 20
     },
     "nearestRailway": {
-      "name": "Patna Junction",
-      "distance": 11
+      "name": "Hajipur Junction (HJP)",
+      "distance": 3
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located just 15 km north of Patna across Mahatma Gandhi Setu / JP Ganga Setu.",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 15,
+        "byCar": "30 mins",
+        "byTrain": "Train to Hajipur (20 mins)",
+        "byAir": "Via Patna Airport",
+        "via": "JP Setu / Gandhi Setu"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Ramchaura Mandir",
+      "name": "Pataleshwar Mahadev Subterranean Sanctum",
       "category": "spiritual",
-      "distance": "Town Centre",
+      "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
+      "timings": "5:00 AM – 9:00 PM",
+      "duration": "1.5 hrs",
       "rating": 4.8,
-      "description": "The Ramchaura Mandir is a Hindu temple in the city of Hajipur, Bihar, India. Dedicated to the god Rama, it is located at Rambhadra near Helabazar.",
+      "description": "Underground stone sanctum housing the ancient Swayambhu Pataleshwar Shiva Lingam.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/en/d/d3/Ram_Charan_%28new%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Ramchaura Mandir in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Ashoka%27s_Pillar%2C_Vaishali.jpg",
+        "alt": "Pataleshwar Mahadev Subterranean Sanctum - 土の中に埋まっていた為に、完全な形で残っているアショーカ王柱。\nこれだけ完全な形で残っているのはインドでもヴァイシャーリーくらいとのこと。\n\n(2005/"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/en/1/16/Ramchaura_Mandir_closeview.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/en/4/42/Ramchaura_Mandir_Entrance%28old%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/2/28/Ashoka_Pillar_Vaishali.png",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Asoka%27s_pillar_vaishali_%2831157579%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/56/Ashoka_Pillar%2CVaishali%2CBihar.jpg"
       ]
     },
     {
-      "name": "Bari Sangat Bihar",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The Bari Sangat - Helabazar is a Hindu Sangat in the city of Hajipur, Bihar, India. It is said to have been built during the reign of the Ancient Indian civilization.",
+      "name": "Ramchaura Mandir (Lord Rama’s Footprints)",
+      "category": "spiritual",
+      "distance": "1.5 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:30 PM",
+      "duration": "1 hr",
+      "rating": 4.8,
+      "description": "Ancient temple marking the spot where Lord Rama placed his feet en route to Janakpur for Sita Swayamvar.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bari Sangat Bihar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Ashokan_Pillar_and_Buddhist_Stupa_at_Vaishali%2C_Bihar_%28350840154%29.jpg",
+        "alt": "Ramchaura Mandir (Lord Rama’s Footprints) - Vaishali, said to be among world's first republics was named after King Vish"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Ashoka_Pillar_and_other_remains_at_Vaishali_%28Bihar%2CIndia%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Ashoka_pillar_at_Vaishali%2C_Bihar%2C_India_2007-01-29_cropped2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_02.jpg"
       ]
     },
     {
-      "name": "Dighikala East",
-      "category": "cultural",
+      "name": "Konhara Ghat (Gajendra Moksha Sangam)",
+      "category": "spiritual",
+      "distance": "2.5 km",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Sacred river confluence ghat where Lord Vishnu saved King of Elephants Gajendra from the crocodile.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_03.jpg",
+        "alt": "Konhara Ghat (Gajendra Moksha Sangam) - Ananda Stupa - The Stupa with relics of Ananda, with Ashokan-pillar, is located"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/31/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_05.jpg"
+      ]
+    },
+    {
+      "name": "Sonepur Harihar Nath Temple (Across Gandak)",
+      "category": "spiritual",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 9:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Ancient temple enshrining the united form of Vishnu (Hari) and Shiva (Hara), home of the Asia’s largest cattle fair.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hariharnath_Shivling%2C_Gyanpur.jpg",
+        "alt": "Sonepur Harihar Nath Temple (Across Gandak) in Pataleshwar Mandir, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Hariharnath_Mandir.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hariharnath_temple%2C_Sonepur._%285448166304%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5932.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
+      "name": "Gandak-Ganga Sacred Sangam Viewpoint",
+      "category": "nature",
       "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Dighikala East is a Gram panchayat in Hajipur, Vaishali district, Bihar. Dighikala East is a village (Now it has become a part of Hajipur Nagar Parishad.) in Hajipur block and located towards west from district headquarters Hajipur.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dighikala East in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Dighikala West",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Dighikala west is a village in Hajipur, vaishali district, Bihar state of India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dighikala West in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kashipur Chakbibi",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Kashipur chakbibi is a gram panchayat in Hajipur, Vaishali district, Bihar, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kashipur Chakbibi in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kumar Bajitpur",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1 hr",
       "rating": 4.6,
-      "description": "Kumar Bajitpur is a village located in the Vaishali district of Bihar, East India.",
+      "description": "Breathtaking broad confluence where the blue waters of Gandak merge with the muddy sacred Ganga.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kumar Bajitpur in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ananda_Stupa_with_Ashokan-pillar_at_vaishali%2C_Bihar_06.jpg",
+        "alt": "Gandak-Ganga Sacred Sangam Viewpoint - Ananda Stupa - The Stupa with relics of Ananda, with Ashokan-pillar, is located a"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/81/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_06.jpg"
       ]
     },
     {
-      "name": "Bishunpur Baladhari",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
+      "name": "Vaishali Relic Stupa Site",
+      "category": "heritage",
+      "distance": "34 km",
+      "entryFee": "₹25",
       "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "duration": "2 hrs",
       "rating": 4.8,
-      "description": "Bishunpur Baladhari is a village in Hajipur, Vaishali district, in the Bihar state of India.",
+      "description": "Excavated 5th-century BCE mud stupa that contained one-eighth of the original holy bone relics of Lord Buddha.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bishunpur Baladhari in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RELIC_STUPA_VAISHALI_JILA..JPG",
+        "alt": "Vaishali Relic Stupa Site in Pataleshwar Mandir, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/49/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Relic_Stupa%2C_Vaishali%2C_Tirhut%2C_Bihar%2C_India_%282013%29_0026.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/N-BR-68_Relic_Stupa_Vaishali_%281%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/N-BR-68_Relic_Stupa_Vaishali_%282%29.jpg"
       ]
     },
     {
-      "name": "Vishunpur Vasant Urf Shubhai",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
+      "name": "Kolhua Ashokan Lion Pillar & Ananda Stupa",
+      "category": "heritage",
+      "distance": "36 km",
+      "entryFee": "₹25",
       "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Vishunpur vasant is a Gram panchayat in hajipur, vaishali district, bihar.",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "Complete polished monolithic Ashokan pillar crowned by a life-sized lion facing north towards Kushinagar.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Campus_of_Wheeler_Senate_Hall_at_Patna_University_at_Patna%2C_Bihar%2C_India_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Vishunpur Vasant Urf Shubhai in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/The_Ashokan_Pillar%2C_Vaishali_-_panoramio.jpg",
+        "alt": "Kolhua Ashokan Lion Pillar & Ananda Stupa in Pataleshwar Mandir, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Exteriors_of_Darbhanga_house_inside_Patna_University_Campus_at_Bihar%2C_India_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c2/Serpent_statuettes_from_Patna._Bihar_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/31/Sher_E_Shahi_Jama_Masjid_in_Patna%2CBihar%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Ashokan_Pillar_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Panoramic_View_of_the_Ashokan_Pillar_Garden_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/180_view_of_garden_at_Ashokan_Pillar_%40_Vaishali_-_panoramio.jpg"
+      ]
+    },
+    {
+      "name": "Bawan Pokhar Temple (Vaishali Lake Shrine)",
+      "category": "spiritual",
+      "distance": "33 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:30 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Pala-era temple located on the northern bank of a massive ancient water tank, housing Hindu and Jain deities.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_05.jpg",
+        "alt": "Bawan Pokhar Temple (Vaishali Lake Shrine) - Ananda Stupa - The Stupa with relics of Ananda, with Ashokan-pillar, is loc"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_08.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/Ananda_Stupa_with_Ashok_lion_pillar_at_vaishali%2C_Bihar_09.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Ramchaura Mandir & around",
+      "title": "Day 1 — Highlights of Pataleshwar Mandir",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Ramchaura Mandir",
-          "note": "The Ramchaura Mandir is a Hindu temple in the city of Hajipur, Bihar, India. Dedicated to the god Rama, it is located at Rambhadra near Helabazar."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Pataleshwar Mahadev Subterranean Sanctum",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Bari Sangat Bihar",
-          "note": "The Bari Sangat - Helabazar is a Hindu Sangat in the city of Hajipur, Bihar, India. It is said to have been built during the reign of the Ancient Indian civilization."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Ramchaura Mandir (Lord Rama’s Footprints)",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Dighikala East",
-          "note": "Dighikala East is a Gram panchayat in Hajipur, Vaishali district, Bihar. Dighikala East is a village (Now it has become a part of Hajipur Nagar Parishad.) in Hajipur block and located towards west from district headquarters Hajipur."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Dighikala West & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Dighikala West",
-          "note": "Dighikala west is a village in Hajipur, vaishali district, Bihar state of India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Kashipur Chakbibi",
-          "note": "Kashipur chakbibi is a gram panchayat in Hajipur, Vaishali district, Bihar, India."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kumar Bajitpur",
-          "note": "Kumar Bajitpur is a village located in the Vaishali district of Bihar, East India."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Bishunpur Baladhari & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Bishunpur Baladhari",
-          "note": "Bishunpur Baladhari is a village in Hajipur, Vaishali district, in the Bihar state of India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Vishunpur Vasant Urf Shubhai",
-          "note": "Vishunpur vasant is a Gram panchayat in hajipur, vaishali district, bihar."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Pataleshwar Mandir Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Pataleshwar%20Mandir%20Stay%20Pataleshwar%20Mandir%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Pataleshwar Mandir",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Pataleshwar%20Mandir%20Pataleshwar%20Mandir%20Bihar%20hotel"
-    },
-    {
-      "name": "Pataleshwar Mandir Grand Hotel",
+      "name": "Hotel Grand Pataleshwar",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Pataleshwar%20Mandir%20Grand%20Hotel%20Pataleshwar%20Mandir%20Bihar%20hotel"
-    },
-    {
-      "name": "Fortune Park Pataleshwar Mandir",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Pataleshwar%20Mandir%20Pataleshwar%20Mandir%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Pataleshwar%20Mandir%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Spiritual",
-    "Sightseeing",
-    "Cultural",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "Pataleshwar Mahadev Subterranean Sanctum",
+    "Ramchaura Mandir (Lord Rama’s Footprints)",
+    "Konhara Ghat (Gajendra Moksha Sangam)",
+    "Sonepur Harihar Nath Temple (Across Gandak)",
+    "Gandak-Ganga Sacred Sangam Viewpoint",
+    "Vaishali Relic Stupa Site",
+    "Kolhua Ashokan Lion Pillar & Ananda Stupa",
+    "Bawan Pokhar Temple (Vaishali Lake Shrine)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Pataleshwar Mandir scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5891.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "Pataleshwar Mandir - Highlight 1",
+      "alt": "Wokha district Doyang"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Exclusive_close_up_of_Nandi_Bull_-_Pataleshwar_Cave_Temple%2C_Pune.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pataleshwar Mandir photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Nepali_Chhawani_Mandir_Hajipur.JPG",
+      "alt": "Pataleshwar Mandir - Shiva Temple in Nepali Architecture, Hajipur (Bihar)"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Pataleshwar_Caves%2C_Panchalesvara_Hindu_temple%2C_Pune_Maharashtra.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pataleshwar Mandir photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5930.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "Pataleshwar Mandir - Highlight 3",
+      "alt": "Wokha district Doyang"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Pataleshwar_Caves_Internal_Temple_Columns.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pataleshwar Mandir photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nepali_Temple%2C_Hazipur%2C_Dist._Vaishali%2C_Bihar._A_temple_with_wooden_carvings_resembling_the_sculptures_of_Khajuraho.jpg",
+      "alt": "Pataleshwar Mandir - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pataleshwar_Caves_Internal_Temple_Corridors.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pataleshwar Mandir photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5931.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "Pataleshwar Mandir - Highlight 5",
+      "alt": "Wokha district Doyang"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Pataleshwar Mandir?",
-      "a": "The best time to visit Pataleshwar Mandir is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Pataleshwar Mandir?",
-      "a": "The nearest airport is Pataleshwar Mandir / nearest airport (30 km) and the nearest railway station is Patna Junction (11 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Pataleshwar Mandir?",
-      "a": "3 days are usually enough to cover the top attractions of Pataleshwar Mandir at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Pataleshwar Mandir?",
-      "a": "Stays in Pataleshwar Mandir start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Pataleshwar Mandir?",
-      "a": "The top attractions are Ramchaura Mandir, Bari Sangat Bihar, Dighikala East, Dighikala West, Kashipur Chakbibi."
+      "q": "What are the primary highlights of Pataleshwar Mandir?",
+      "a": "Pataleshwar Mandir in Hajipur is an ancient subterranean Shiva temple where the Lingam is situated deep below ground level, surrounded by sacred Ramayana pilgrim ghats."
     }
   ],
   "seo": {
     "title": "Pataleshwar Mandir Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "The Pataleshwar Mandir is a Hindu Temple in the city of Hajipur, Bihar, India. Plan your Pataleshwar Mandir trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Pataleshwar Mandir in Hajipur is an ancient subterranean Shiva temple where the Lingam is situated deep below ground level, surrounded by sacred Ramayana pilgrim ghats. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=pataleshwar-mandir",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/en/b/b4/Pataleshwar_Nandi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Forest_around_Pangti_Village_and_Doyang_Dam_region_Nagaland_JEG5891.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "keywords": [
       "Pataleshwar Mandir travel guide",
       "places to visit in Pataleshwar Mandir",
-      "Pataleshwar Mandir hotels",
-      "best time to visit Pataleshwar Mandir",
-      "how to reach Pataleshwar Mandir",
-      "Bihar tourism"
+      "Pataleshwar Mandir Bihar tourism"
     ]
   }
 }

@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-08-28.
+> Last generated: 2026-08-30.
 
 **36 states/UTs · 2,389 destinations**
 
@@ -217,44 +217,44 @@
 
 | Destination | Type | Best Months | Price / night |
 |---|---|---|---|
-| **Aranya Devi Temple, Arrah** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Ashokdham Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Baba Garib Sthan Mandir** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Barela Bird Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Basilica of Our Lady of Divine Grace** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Bhimbandh Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Bodh Gaya** | Spiritual | Jan–Dec | ₹900 – ₹9,000 |
-| **Buxar Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Chandika Sthan** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Darbhanga Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Gautam Budha Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Gurdwara Bal Lila Maini Sangat** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Gurdwara Handi Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **ISKCON Temple Patna** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Kaimur Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Kanwar Lake Bird Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Kapileshwar Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Khudneshwar Asthan Morwa** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Koncheswar Mahadev temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Kusheshwar Asthan Bird Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Lal Keshwar Shiv Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Maa Tara Chandi Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Mangla Gauri Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Mundeshwari Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Munger Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Nagi Bird Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Nalanda** | Heritage | Jan–Apr, Sep–Dec | ₹900 – ₹9,000 |
-| **Nandangarh Stupa and Rampart** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Pant Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Pataleshwar Mandir** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Rajauli Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Rohtasgarh Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Sundernath** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Takht Sri Patna Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Udaypur Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Vikramshila Gangetic Dolphin Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Vishnupad Temple, Gaya** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Vishwamitra Ashram, Bisaul** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
+| **Aranya Devi Temple, Arrah** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Ashokdham Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Baba Garib Sthan Mandir** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Barela Bird Sanctuary** | Wildlife | Jan–Mar, Nov–Dec | ₹2,200 – ₹4,500 |
+| **Basilica of Our Lady of Divine Grace** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Bhimbandh Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Bodh Gaya** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹14,000 |
+| **Buxar Fort** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Chandika Sthan** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Darbhanga Fort** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Gautam Budha Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Gurdwara Bal Lila Maini Sangat** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Gurdwara Handi Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **ISKCON Temple Patna** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Kaimur Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Kanwar Lake Bird Sanctuary** | Wildlife | Jan–Mar, Nov–Dec | ₹2,200 – ₹4,500 |
+| **Kapileshwar Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Khudneshwar Asthan Morwa** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Koncheswar Mahadev temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Kusheshwar Asthan Bird Sanctuary** | Wildlife | Jan–Mar, Nov–Dec | ₹2,200 – ₹4,500 |
+| **Lal Keshwar Shiv Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Maa Tara Chandi Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Mangla Gauri Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Mundeshwari Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹1,800 – ₹4,000 |
+| **Munger Fort** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Nagi Bird Sanctuary** | Wildlife | Jan–Mar, Nov–Dec | ₹2,200 – ₹4,500 |
+| **Nalanda** | Heritage | Jan–Mar, Oct–Dec | ₹2,800 – ₹11,000 |
+| **Nandangarh Stupa and Rampart** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Pant Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Pataleshwar Mandir** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Rajauli Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Rohtasgarh Fort** | Heritage | Jan–Mar, Oct–Dec | ₹1,800 – ₹4,200 |
+| **Sundernath** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Takht Sri Patna Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹3,500 – ₹13,000 |
+| **Udaypur Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Vikramshila Gangetic Dolphin Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
+| **Vishnupad Temple, Gaya** | Spiritual | Jan–Mar, Sep–Dec | ₹2,200 – ₹4,500 |
+| **Vishwamitra Ashram, Bisaul** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
 
 ## Chandigarh
 
@@ -298,15 +298,15 @@
 
 | Destination | Type | Best Months | Price / night |
 |---|---|---|---|
-| **Asola Bhatti Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
-| **Chhatarpur Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Gurdwara Dam Dama Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Jhandewalan Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Lotus Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **New Delhi** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹45,000 |
-| **Red Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **St. James' Orthodox Church, Mayur Vihar Phase-3, Delhi** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **St. Sebastian's Church,** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
+| **Asola Bhatti Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹3,500 – ₹12,500 |
+| **Chhatarpur Temple** | Temple | Jan–Mar, Oct–Dec | ₹1,700 – ₹10,500 |
+| **Gurdwara Dam Dama Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹12,000 – ₹28,000 |
+| **Jhandewalan Temple** | Temple | Jan–Mar, Oct–Dec | ₹2,800 – ₹13,000 |
+| **Lotus Temple** | Temple | Jan–Mar, Oct–Dec | ₹1,600 – ₹12,000 |
+| **New Delhi** | Heritage | Jan–Mar, Oct–Dec | ₹3,500 – ₹30,000 |
+| **Red Fort** | Heritage | Jan–Mar, Oct–Dec | ₹1,800 – ₹16,000 |
+| **St. James’ Orthodox Church (Mayur Vihar)** | Heritage | Jan–Mar, Oct–Dec | ₹4,500 – ₹8,000 |
+| **St. Sebastian’s Church, Dilshad Garden** | Heritage | Jan–Mar, Oct–Dec | ₹5,500 – ₹9,500 |
 
 ## Goa
 
@@ -417,7 +417,7 @@
 | **Somnath** | Spiritual | Jan–Dec | ₹900 – ₹9,000 |
 | **Songadh Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Songadh Jain temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Statue of Unity** | Heritage | Jan–Apr, Sep–Dec | ₹1,500 – ₹15,000 |
+| **Statue of Unity** | Heritage | Jan–Mar, Oct–Dec | ₹4,500 – ₹15,000 |
 | **Sun Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Sun temple, Thangadh** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Tapkeshwari Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
@@ -1527,7 +1527,7 @@
 | **Shri Vaijnath Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Siddhanath Temple, Mhaswad** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Siddheshwar & Ratneshwar Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Siddheshwar Temple, Solapur** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
+| **Siddheshwar Temple, Solapur** | Temple | Jan–Mar, Oct–Dec | ₹1,800 – ₹8,500 |
 | **Siddhivinayak Mahaganapati Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Siddhivinayak Temple, Mumbai** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Siddhivinayak Temple, Siddhatek** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
@@ -1836,7 +1836,7 @@
 | **Om Banna** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Pushkar** | Spiritual | Jan–Dec | ₹900 – ₹9,000 |
 | **Rajgarh Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Ramsagar Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
+| **Ramsagar Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,400 – ₹15,000 |
 | **Ranakpur Jain Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Rani Sati Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Ranthambore** | Wildlife | Jan–Jun, Oct–Dec | ₹2,500 – ₹25,000 |

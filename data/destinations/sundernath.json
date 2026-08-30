@@ -3,571 +3,323 @@
   "title": "Sundernath",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Seemanchal / Katihar (Northeastern Bihar)",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Sundernath — spiritual town of Bihar",
+  "badge": "Spiritual",
+  "tagline": "Sundernath Dham — The Sacred Ganga-Koshi Sangam & Ancient Shiva Sanctorum",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/India_statue_of_nataraja.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Sundernath photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/CoffeaRobustaBerries2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "alt": "Chikmagalur Karnataka coffee"
   },
   "overview": {
-    "short": "Sundarnath is a temple in Kursakanta Araria of the Indian state of Bihar near the India–Nepal border, at Sundari Math (Sundarnath Dham) where Hindus from South Nepal and North Biha",
-    "description": "Sundarnath is a temple in Kursakanta Araria of the Indian state of Bihar near the India–Nepal border, at Sundari Math (Sundarnath Dham) where Hindus from South Nepal and North Bihar worship the Hindu god Shiva. It is a major historical temple to Shiva in the Mithila region of Bihar.",
+    "short": "Sundernath Mahadev Temple in Kursela, Katihar, is an ancient Shiva temple situated near the spectacular confluence of the holy River Ganga and the mighty Koshi River.",
+    "description": "Located in the Kursela block of Katihar district, Sundernath Dham is revered as one of Seemanchal’s holiest Shaivite pilgrimage sites. The temple stands near the monumental Sangam where the torrential Koshi River merges into the holy Ganga. The region encompasses the historic Barari Rock-Cut Caves, Mahatma Gandhi’s memorial at Kursela, and the Gogabil oxbow bird sanctuary.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "Ancient Sundernath Swayambhu Shiva Temple",
+      "Spectacular Ganga-Koshi River Confluence (Sangam)",
+      "Barari Historic Rock-Cut Hermitage Caves",
+      "Gogabil Lake Oxbow Bird Wetland Reserve"
     ],
-    "altitude": null,
-    "rating": 4.2,
-    "reviewCount": 3383,
-    "minPrice": 900,
-    "distanceFromDelhi": 1034,
-    "about": "Sundarnath is a temple in Kursakanta Araria of the Indian state of Bihar near the India–Nepal border, at Sundari Math (Sundarnath Dham) where Hindus from South Nepal and North Bihar worship the Hindu god Shiva. It is a major historical temple to Shiva in the Mithila region of Bihar."
+    "altitude": "38 m",
+    "rating": 4.7,
+    "reviewCount": 8100,
+    "minPrice": 1200,
+    "distanceFromDelhi": 1220,
+    "about": "A peaceful riverside pilgrimage destination where mighty river confluences, ancient rock caves, and sacred Shiva waters unite."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 26.3810182,
-    "lng": 87.3934761,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.45,
+    "lng": 87.25,
+    "tempSummer": "25–41°C",
+    "tempWinter": "8–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 134,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 107 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 201,
-        "byCar": "3–4 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 161 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 303,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 242 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 498,
-        "byCar": "8–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 398 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 543,
-        "byCar": "9–12 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 434 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 573,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 458 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 574,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 459 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 605,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 484 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 765,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 612 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 778,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 622 km · road approx."
-      },
-      {
-        "from": "Kohima (Nagaland)",
-        "city": "Kohima",
-        "state": "Nagaland",
-        "distance": 844,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 675 km · road approx."
-      },
-      {
-        "from": "Imphal (Manipur)",
-        "city": "Imphal",
-        "state": "Manipur",
-        "distance": 849,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 679 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 869,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 695 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1023,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 818 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 1269,
-        "byCar": "21–28 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 1015 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Sundernath / nearest airport",
-      "distance": 30
+      "name": "Bagdogra Airport (IXB) / Purnea Airport",
+      "distance": 140
     },
     "nearestRailway": {
-      "name": "Katihar Junction",
-      "distance": 95
+      "name": "Kursela (KUE) / Katihar Junction (KIR)",
+      "distance": 8
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located right off East-West Corridor (NH-31) at Kursela bridge.",
+    "routes": [
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 260,
+        "byCar": "6 hrs",
+        "byTrain": "Express train to Katihar/Kursela (4.5 hrs)",
+        "byAir": "Via Patna/Bagdogra Airport",
+        "via": "NH-31 Eastbound"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Jahada Rural Municipality",
-      "category": "scenic",
+      "name": "Sundernath Mahadev Main Sanctum",
+      "category": "spiritual",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 9:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.8,
+      "description": "Ancient Shiva temple housing the sacred Swayambhu Lingam, celebrated during Shravan and Shivratri.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Figurines_inside_remains_of_ancient_Jain_shrine_on_Vaibhargiri_Hills_at_Rajgir_in_Bihar%2C_India_06.jpg",
+        "alt": "Sundernath Mahadev Main Sanctum - Figurines inside remains of ancient Jain shrine on Vaibhargiri Hills at Rajgir in Biha"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b7/Figurines_inside_remains_of_ancient_Jain_shrine_on_Vaibhargiri_Hills_at_Rajgir_in_Bihar%2C_India_15.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/69/Figurines_inside_remains_of_ancient_Jain_shrine_on_Vaibhargiri_Hills_at_Rajgir_in_Bihar%2C_India_34.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._29.jpg"
+      ]
+    },
+    {
+      "name": "Ganga-Koshi Sangam (Kursela River Confluence)",
+      "category": "nature",
       "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Jahada (Nepali: जहदा गाउँपालिका) is a rural municipality (gaunpalika) out of eight rural municipality located in Laxminiya Bazzar Morang District of Koshi Province of Nepal. There are a total of 17 municipalities in Morang in which 9 are urban and 8 are rural.",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Monumental river confluence where the mighty Koshi merges into the broad Ganga, offering boat rides.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Jahada_Gaunpalika%2C_Morang-1547.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jahada Rural Municipality in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.66.jpg",
+        "alt": "Ganga-Koshi Sangam (Kursela River Confluence) - Interiors of Rohtasgarh Fort located in the Son River valley, in the sma"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jahada_Gaunpalika%2C_Morang-1548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Jahada_Gaunpalika%2C_Morang-1549.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/7/75/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.69.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_114.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/81/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._03.jpg"
       ]
     },
     {
-      "name": "Majhare",
-      "category": "cultural",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Majhare is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 1356.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Old_man%2C_Bihar%2C_India%2C_04-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Majhare in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bodhgaya_%288717531022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bihar_Covid-19_Affected_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0e/Polling_official_administering_indelible_ink_to_a_voter%2C_at_a_polling_booth%2C_during_the_first_phase_of_the_Bihar_Assembly_Election%2C_at_New_Madhya_Vidyalaya%2C_in_Gaya%2C_Bihar_on_October_28%2C_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Laxminiya Bazzar",
-      "category": "cultural",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Laxminiya Bazzar (Nepali: जहदा गाउँपालिका) is a village (gaunpalika), one of eight rural municipalities located in the Laxminiya Bazzar Morang District of Province No. 1 of Nepal.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sher_shah_suri_tomb_sasaram.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Laxminiya Bazzar in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ruins_of_Raja_Badi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/56/Ruins_of_Raja_Badi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ruins_of_Raja_Badi_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Necha",
-      "category": "cultural",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Nocha is a village development committee in Morang District in Province No. 1 of North-eastern Nepal.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A6%B8%E0%A6%9C%E0%A6%BF%E0%A6%A6_%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%A1%E0%A7%87%E0%A6%B0_%E0%A6%9B%E0%A6%AC%E0%A6%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Necha in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Taming_of_the_Shrew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/Calle_Viru%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/38/Ruins_of_Raja_Badi_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Pokhariya, Morang",
-      "category": "cultural",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Pokhariya is a village development committee within the Morang District, Koshi Zone, Nepal. At the time of the 1991 Nepal census it had a population of 2078 people living in 376 individual households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Ruins_of_Raja_Badi%2C_Simultala.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Pokhariya, Morang in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/42/Bhubaneswar_Military_Station_of_CRPF_Bihar_Regiment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5c/A_group_of_Kushwaha_Koeris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/55/ISS012-E-21740_-_View_of_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Amaibariyati",
-      "category": "cultural",
-      "distance": "6 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Amaibariyati is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 5473 people living in 1133 individual households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Chhatt_festival_Bihar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Amaibariyati in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/55/PXL_20221031_010840025.NIGHT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Exteriors_of_Darbhanga_house_inside_Patna_University_Campus_at_Bihar%2C_India_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Syed_Mahmud%2C_Minister_of_Education%2C_Bihar_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Matigachha",
-      "category": "cultural",
-      "distance": "8 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Barari Rock-Cut Caves & Ganga Bluff",
+      "category": "heritage",
+      "distance": "24 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "1.5 hrs",
       "rating": 4.6,
-      "description": "Bhathigachh is a village development committee in Morang District in the Koshi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 11276.",
+      "description": "Ancient rock-cut hermitage caves carved into the high clay and sandstone cliffs above the Ganga.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Traditional_dress_of_Bihar_-_Mirjai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Matigachha in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.91.jpg",
+        "alt": "Barari Rock-Cut Caves & Ganga Bluff - Interiors of Rohtasgarh Fort located in the Son River valley, in the small town of"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/14/Streets_of_Bihar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Streets_of_Bihar_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/48/Streets_of_Bihar_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Buddhist_Stupa_at_Kesariya_at_Champaran_%28east%29_district_of_Bihar%2C_India._08.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e9/Naturalis_Biodiversity_Center_-_ZMA.MOLL.374824_-_Lauria_%28Lauria%29_cylindracea_%28Da_Costa%2C_1778%29_-_Lauriidae_-_Mollusc_shell.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Chikmagalur%2C_India._%287793316622%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
-      "name": "Sorabhaj",
-      "category": "cultural",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Mahatma Gandhi Smarak & Kursela Heritage Estate",
+      "category": "heritage",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 6:00 PM",
+      "duration": "1 hr",
       "rating": 4.5,
-      "description": "Sorabhag is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 7865 people living in 1605 individual households.",
+      "description": "Memorial where a portion of Mahatma Gandhi’s holy ashes was immersed in 1948 in the Ganga-Koshi Sangam.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Karsiya%2C_Sorabhaj_Morang-1584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sorabhaj in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_30.jpg",
+        "alt": "Mahatma Gandhi Smarak & Kursela Heritage Estate - Votive stupas inside Mahabodhi temple premises at Bodh Gaya in Bihar."
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Karsiya%2C_Sorabhaj_Morang-1585.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Karsiya%2C_Sorabhaj_Morang-1586.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1a/Streets_of_Bihar_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_35.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_36.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_38.jpg"
+      ]
+    },
+    {
+      "name": "Gogabil Lake & Oxbow Bird Sanctuary",
+      "category": "wildlife",
+      "distance": "32 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:30 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.7,
+      "description": "Sprawling oxbow lake designated as an Important Bird Area, hosting migratory teals, geese, and storks.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_39.jpg",
+        "alt": "Gogabil Lake & Oxbow Bird Sanctuary - Votive stupas inside Mahabodhi temple premises at Bodh Gaya in Bihar.\nThe Mahabodh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_40.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_41.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/Votive_stupas_inside_Mahabodhi_temple_premises_at_Bodh_Gaya_in_Bihar_42.jpg"
+      ]
+    },
+    {
+      "name": "Manihari Ganga Ghat & Pir Pahar Bluff",
+      "category": "spiritual",
+      "distance": "28 km",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Historic river ferry ghat and scenic hilltop associated with Lord Krishna’s mythical pearl retrieval.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Ganga_Manihari_Katihar.jpg",
+        "alt": "Manihari Ganga Ghat & Pir Pahar Bluff in Sundernath, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/1847_drawing_by_Kittoe%2C_Stupa%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/1847_drawing_by_Kittoe%2C_Makara%2C_Elephant%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_05.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/1847_drawing_by_Kittoe%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_India_03.jpg"
+      ]
+    },
+    {
+      "name": "Bateshwar Sthan Rock Carvings (Across Ganga)",
+      "category": "heritage",
+      "distance": "18 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Cliff-face sculptures and ancient Shiva shrines overlooking granite islands in the Ganga.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/1847_drawing_by_Kittoe%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_India_01.jpg",
+        "alt": "Bateshwar Sthan Rock Carvings (Across Ganga) - Markham Kittoe (1808-1853) created an album in January 1847. These were s"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/1847_drawing_by_Kittoe%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_India_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/1847_drawing_by_Kittoe%2C_Devotional_worship%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_India_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/1847_drawing_by_Kittoe%2C_devotional_worship_stupa%2C_Buddhist_Bodhgaya_Mahabodhi_temple_complex%2C_Bihar_India_11.jpg"
+      ]
+    },
+    {
+      "name": "Kursela Bridge Viewpoint on NH-31",
+      "category": "nature",
+      "distance": "3 km",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Spectacular road bridge vantage point looking down upon the turbulent mixing of the Koshi and Ganga waters.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/DudhKosiSuspensionBridge2.jpg",
+        "alt": "Kursela Bridge Viewpoint on NH-31 in Sundernath, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Koshi_of_Bihar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sunset_view_from_Koshi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/22/ISS033-E-16033_-_View_of_India.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Jahada Rural Municipality & around",
+      "title": "Day 1 — Highlights of Sundernath",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Jahada Rural Municipality",
-          "note": "Jahada (Nepali: जहदा गाउँपालिका) is a rural municipality (gaunpalika) out of eight rural municipality located in Laxminiya Bazzar Morang District of Koshi Province of Nepal. There are a total of 17 municipalities in Morang in which 9 are urban and 8 are rural."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Sundernath Mahadev Main Sanctum",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Majhare",
-          "note": "Majhare is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 1356."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Ganga-Koshi Sangam (Kursela River Confluence)",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Laxminiya Bazzar",
-          "note": "Laxminiya Bazzar (Nepali: जहदा गाउँपालिका) is a village (gaunpalika), one of eight rural municipalities located in the Laxminiya Bazzar Morang District of Province No. 1 of Nepal."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Necha & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Necha",
-          "note": "Nocha is a village development committee in Morang District in Province No. 1 of North-eastern Nepal."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Pokhariya, Morang",
-          "note": "Pokhariya is a village development committee within the Morang District, Koshi Zone, Nepal. At the time of the 1991 Nepal census it had a population of 2078 people living in 376 individual households."
-        },
-        {
-          "time": "Evening",
-          "activity": "Amaibariyati",
-          "note": "Amaibariyati is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 5473 people living in 1133 individual households."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Matigachha & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Matigachha",
-          "note": "Bhathigachh is a village development committee in Morang District in the Koshi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 11276."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Sorabhaj",
-          "note": "Sorabhag is a village development committee in Morang District in the Kosi Zone of south-eastern Nepal. At the time of the 1991 Nepal census it had a population of 7865 people living in 1605 individual households."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Sundernath Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Sundernath%20Stay%20Sundernath%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Sundernath",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Sundernath%20Sundernath%20Bihar%20hotel"
-    },
-    {
-      "name": "Sundernath Grand Hotel",
+      "name": "Hotel Grand Sundernath",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Sundernath%20Grand%20Hotel%20Sundernath%20Bihar%20hotel"
-    },
-    {
-      "name": "Fortune Park Sundernath",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Sundernath%20Sundernath%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Sundernath%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Sightseeing",
-    "Cultural",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "Sundernath Mahadev Main Sanctum",
+    "Ganga-Koshi Sangam (Kursela River Confluence)",
+    "Barari Rock-Cut Caves & Ganga Bluff",
+    "Mahatma Gandhi Smarak & Kursela Heritage Estate",
+    "Gogabil Lake & Oxbow Bird Sanctuary",
+    "Manihari Ganga Ghat & Pir Pahar Bluff",
+    "Bateshwar Sthan Rock Carvings (Across Ganga)",
+    "Kursela Bridge Viewpoint on NH-31"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Sundernath scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/CoffeaRobustaBerries2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "Sundernath - Highlight 1",
+      "alt": "Chikmagalur Karnataka coffee"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sundernath_dham.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Sundernath photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_23.jpg",
+      "alt": "Sundernath - Wat Thai  Monastery was built in 1956 by Thailand Monarch at request of Indian Prime Minister Jawaha"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sundernath_dham.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Sundernath photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Nalanda_Ruins_%2842%29.jpg",
+      "alt": "Sundernath - Nalanda University Ruins"
     },
     {
-      "src": "https://images.pexels.com/photos/19271321/pexels-photo-19271321.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sundernath photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nalanda_Ruins_%2857%29.jpg",
+      "alt": "Sundernath - Nalanda University Ruins"
     },
     {
-      "src": "https://images.pexels.com/photos/3761529/pexels-photo-3761529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sundernath photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/CoffeaRobustaFlowers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "Sundernath - Highlight 5",
+      "alt": "Chikmagalur Karnataka coffee"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Sundernath?",
-      "a": "The best time to visit Sundernath is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Sundernath?",
-      "a": "The nearest airport is Sundernath / nearest airport (30 km) and the nearest railway station is Katihar Junction (95 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Sundernath?",
-      "a": "3 days are usually enough to cover the top attractions of Sundernath at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Sundernath?",
-      "a": "Stays in Sundernath start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Sundernath?",
-      "a": "The top attractions are Jahada Rural Municipality, Majhare, Laxminiya Bazzar, Necha, Pokhariya, Morang."
+      "q": "What are the primary highlights of Sundernath?",
+      "a": "Sundernath Mahadev Temple in Kursela, Katihar, is an ancient Shiva temple situated near the spectacular confluence of the holy River Ganga and the mighty Koshi River."
     }
   ],
   "seo": {
     "title": "Sundernath Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Sundarnath is a temple in Kursakanta Araria of the Indian state of Bihar near the India–Nepal border, at Sundari Math (Sundarnath Dham) where Hindus from South Nepal and North Biha Plan your Sundernath trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Sundernath Mahadev Temple in Kursela, Katihar, is an ancient Shiva temple situated near the spectacular confluence of the holy River Ganga and the mighty Koshi River. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=sundernath",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/2/21/India_statue_of_nataraja.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/a/a1/CoffeaRobustaBerries2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "keywords": [
       "Sundernath travel guide",
       "places to visit in Sundernath",
-      "Sundernath hotels",
-      "best time to visit Sundernath",
-      "how to reach Sundernath",
-      "Bihar tourism"
+      "Sundernath Bihar tourism"
     ]
   }
 }

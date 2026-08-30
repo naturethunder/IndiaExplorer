@@ -283,43 +283,61 @@ function main(dest, idx) {
         seen.add(photo.src);
         photos.push(photo);
       }
+
+      // 1. Primary Hero Image
       if (typeof dest.heroImage === 'string' && dest.heroImage) {
-        addPhoto({ src: dest.heroImage, title: dest.title + ' — ' + (dest.tagline || dest.state), subtitle: dest.state + ' · Main View', category: dest.type });
+        addPhoto({
+          src: dest.heroImage,
+          title: dest.title + ' — ' + (dest.tagline || dest.state),
+          subtitle: dest.state + ' · Main View',
+          category: dest.type || 'scenic'
+        });
       } else if (dest.heroImage && dest.heroImage.src) {
         addPhoto({
           src: dest.heroImage.src,
-          title: dest.title + ' — ' + (dest.tagline || dest.state),
-          subtitle: dest.state + ' · Main View',
-          category: dest.type
-        });
-      } else if (dest.image && dest.image.src) {
-        addPhoto({
-          src: dest.image.src,
-          title: dest.title,
-          subtitle: dest.state,
-          category: dest.type
+          title: dest.title + ' — ' + (dest.tagline || (dest.heroImage.alt ? dest.heroImage.alt.slice(0, 70) : dest.state)),
+          subtitle: dest.heroImage.alt || (dest.state + ' · Main View'),
+          category: dest.type || 'scenic'
         });
       }
 
+      // 2. Curated Destination Gallery (Prioritize destination's own authentic gallery photos)
+      (dest.gallery || []).forEach(function (g, idx) {
+        const srcUrl = typeof g === 'string' ? g : (g && g.src ? g.src : '');
+        if (photos.length < 5 && srcUrl) {
+          const gAlt = (typeof g === 'object' && g.alt) ? g.alt : '';
+          const gTitle = (typeof g === 'object' && g.title) ? g.title : (gAlt ? gAlt.slice(0, 60) : (dest.title + ' — Highlight ' + (idx + 1)));
+          const gCaption = (typeof g === 'object' && g.caption) ? g.caption : (gAlt || (dest.state + ' · Architectural Highlight'));
+          addPhoto({
+            src: srcUrl,
+            title: gTitle,
+            subtitle: gCaption,
+            category: (typeof g === 'object' && g.category) ? g.category : (dest.type || 'heritage')
+          });
+        }
+      });
+
+      // 3. Backfill with Top Places if gallery has fewer than 5 photos
       (places || []).forEach(function (p) {
         if (photos.length < 5 && p.image && p.image.src) {
           addPhoto({
             src: p.image.src,
             title: p.name,
-            subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || ''),
+            subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
             category: p.category || 'attraction'
           });
         }
-      });
-
-      (dest.gallery || []).forEach(function (g) {
-        const srcUrl = typeof g === 'string' ? g : g.src;
-        if (photos.length < 5 && srcUrl) {
-          addPhoto({
-            src: srcUrl,
-            title: (typeof g === 'object' && g.title) || dest.title,
-            subtitle: (typeof g === 'object' && g.caption) || dest.state,
-            category: 'gallery'
+        if (Array.isArray(p.photos)) {
+          p.photos.forEach(function (ph) {
+            const phSrc = typeof ph === 'string' ? ph : (ph && ph.src ? ph.src : '');
+            if (photos.length < 5 && phSrc) {
+              addPhoto({
+                src: phSrc,
+                title: p.name,
+                subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
+                category: p.category || 'attraction'
+              });
+            }
           });
         }
       });
@@ -329,7 +347,7 @@ function main(dest, idx) {
           src: dest.image.src,
           title: dest.title,
           subtitle: dest.state,
-          category: 'scenic'
+          category: dest.type || 'scenic'
         });
       }
       return photos;

@@ -4,571 +4,376 @@
   "state": "Delhi",
   "country": "India",
   "region": "Delhi",
-  "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Chhatarpur Temple — spiritual town of Delhi",
+  "type": "temple",
+  "badge": "Spiritual",
+  "tagline": "Chhatarpur Temple — Monumental Marble Shaktipith & South Ridge Heritage",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/28616502/pexels-photo-28616502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Chhatarpur Temple photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/A_Hindu_temple_at_Chhattarpur_temple_complex%2C_Delhi.jpg",
+    "alt": "Chhatarpur Temple iconic view in Delhi, India"
   },
   "overview": {
-    "short": "Shri Aadya Katyayani Shakti Peeth is a Hindu temple dedicated to the Hindu deity Katyayani.",
-    "description": "Shri Aadya Katyayani Shakti Peeth is a Hindu temple dedicated to the Hindu deity Katyayani. The entire complex of the temple is spread over a wide area of 28 hectares (70 acres). It is located in Chhatarpur, on the southwestern outskirts of the New Delhi. It is the 2nd largest temple in Delhi, after the Akshardham Temple.",
+    "short": "Shri Adhya Katyayani Shaktipith (Chhatarpur Temple) in South Delhi is India’s second-largest temple complex sprawling across 70 acres of marble shrines.",
+    "description": "Founded in 1974 by Sant Baba Nagpal Ji Maharaj, the Chhatarpur Temple complex is dedicated to Goddess Katyayani, the sixth aspect of Navadurga. Built entirely of lustrous Makrana marble, the sprawling 70-acre sanctum blends North and South Indian temple architecture with over 20 grand shrines dedicated to Lord Shiva, Rama, Hanuman, Ganesha, and Radha-Krishna.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "70-Acre Marble Campus",
+      "Maa Katyayani Shaktipith",
+      "Colossal Shiva & Hanuman Statues",
+      "Navratri Celebrations"
     ],
-    "altitude": null,
-    "rating": 4.6,
-    "reviewCount": 12814,
-    "minPrice": 900,
-    "distanceFromDelhi": 14,
-    "about": "Shri Aadya Katyayani Shakti Peeth is a Hindu temple dedicated to the Hindu deity Katyayani. The entire complex of the temple is spread over a wide area of 28 hectares (70 acres). It is located in Chhatarpur, on the southwestern outskirts of the New Delhi. It is the 2nd largest temple in Delhi, after the Akshardham Temple."
+    "altitude": "235 m",
+    "rating": 4.7,
+    "reviewCount": 34000,
+    "minPrice": 1500,
+    "distanceFromDelhi": 0,
+    "about": "During Navratri festivals, over a hundred thousand devotees visit the sanctum daily. Located close to the Mehrauli heritage belt, the area encompasses medieval Sultanate marvels like Jahaz Mahal, Hauz-i-Shamsi, and Mehrauli Archaeological Park."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 28.49438,
-    "lng": 77.18415,
-    "tempSummer": "25–42°C",
+    "lat": 28.5015,
+    "lng": 77.1772,
+    "tempSummer": "28–42°C",
     "tempWinter": "7–24°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 18,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 14 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 20,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 16 km · road approx."
-      },
-      {
-        "from": "Agra (Uttar Pradesh)",
-        "city": "Agra",
-        "state": "Uttar Pradesh",
-        "distance": 209,
-        "byCar": "3–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 167 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 274,
-        "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 219 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 279,
-        "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 223 km · road approx."
-      },
-      {
-        "from": "Chandigarh (Chandigarh UT)",
-        "city": "Chandigarh",
-        "state": "Chandigarh UT",
-        "distance": 315,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 252 km · road approx."
-      },
-      {
-        "from": "Shimla (Himachal Pradesh)",
-        "city": "Shimla",
-        "state": "Himachal Pradesh",
-        "distance": 363,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 290 km · road approx."
-      },
-      {
-        "from": "Amritsar (Punjab)",
-        "city": "Amritsar",
-        "state": "Punjab",
-        "distance": 518,
-        "byCar": "9–12 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 414 km · road approx."
-      },
-      {
-        "from": "Jammu (Jammu & Kashmir UT)",
-        "city": "Jammu",
-        "state": "Jammu & Kashmir UT",
-        "distance": 651,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 521 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 728,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 582 km · road approx."
-      },
-      {
-        "from": "Leh (Ladakh UT)",
-        "city": "Leh",
-        "state": "Ladakh UT",
-        "distance": 788,
-        "byCar": "13–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 630 km · road approx."
-      },
-      {
-        "from": "Ahmedabad (Gujarat)",
-        "city": "Ahmedabad",
-        "state": "Gujarat",
-        "distance": 955,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 764 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1049,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 839 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 1064,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 851 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1153,
-        "byCar": "19–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 922 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Chhatarpur Temple / nearest airport",
-      "distance": 30
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 14
     },
     "nearestRailway": {
-      "name": "New Delhi Railway Station",
-      "distance": 17
+      "name": "Hazrat Nizamuddin Railway Station (NZM)",
+      "distance": 16
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located directly on Mehrauli-Gurgaon Road (MG Road) with Chhatarpur Metro Station on the Yellow Line providing direct access.",
+    "routes": [
+      {
+        "from": "Indira Gandhi Airport (DEL)",
+        "city": "Delhi Airport",
+        "state": "Delhi",
+        "distance": 14,
+        "byCar": "30–40 mins",
+        "byTrain": "Magenta Line to Hauz Khas + Yellow Line to Chhatarpur",
+        "byAir": "Direct flight",
+        "via": "Mahipalpur & Mehrauli Road"
+      },
+      {
+        "from": "Gurugram Cyber City",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "distance": 16,
+        "byCar": "25–35 mins",
+        "byTrain": "Yellow Line direct metro (15 mins)",
+        "byAir": "Not applicable",
+        "via": "MG Road"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Chhatarpur metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "name": "Shri Adhya Katyayani Shaktipith (Main Mandir)",
+      "category": "temple",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 10:00 PM",
       "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Chhatarpur is an elevated station on the Yellow Line of the Delhi Metro. It is located in the Chhatarpur locality of the South West district of Delhi, India.",
+      "rating": 4.8,
+      "description": "The grand white marble sanctum of Goddess Katyayani featuring gold-plated vahanas and intricate filigree carvings.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chattarpur_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Chhatarpur metro station in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Floor_at_Aadya_Katyayini_Shaktipeeth%2C_Chhatarpur_temple%2C_Delhi.jpg",
+        "alt": "Shri Adhya Katyayani Shaktipith (Main Mandir) in Chhatarpur Temple, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/31743456/pexels-photo-31743456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/31743457/pexels-photo-31743457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gauri_Nageshwara_Temple_Complex.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Chhatarpur_temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/13/Chhatarput_Temple_Delhi_02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chhatarput_Temple_Delhi_01.jpg"
       ]
     },
     {
-      "name": "Qutab Minar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Qutab Minar is an elevated station on the Yellow Line of the Delhi Metro. It was inaugurated on 21 June 2010 as part of the 14.47 km completely elevated corridor from Qutab Minar – HUDA City Centre.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Qutab_Minar_station_of_the_Delhi_Metro.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Qutab Minar metro station in Delhi, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Qutab_Minar_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Qutab_Minar_metro_station_%284871416245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Qutab_Minar_HD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Hauz-i-Shamsi",
-      "category": "heritage",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Hauz-i-Shamsi (literally \"sunny water tank\"), also known as Shamsi Talab, is a water reservoir built by Iltutmish of the Slave Dynasty in 1230 CE. According to legend, its location was revealed to him in a dream by the Islamic prophet Muhammad. A palace known as the Jahaz Mahal was constructed on the eastern edge of the same reservoir during the Lodi dynasty in the 16th century, serving as a retreat or inn for pilgrims.",
-      "image": {
-        "src": "https://images.pexels.com/photos/19149644/pexels-photo-19149644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Hauz-i-Shamsi in Delhi, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/20083809/pexels-photo-20083809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Laxmi_Vinayaka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Main_Gopura_of_the_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Jahaz Mahal",
-      "category": "heritage",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Chhatarpur Colossal Shiva & Nandi Shrine",
+      "category": "temple",
+      "distance": "Temple Campus",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 10:00 PM",
+      "duration": "30 mins",
       "rating": 4.7,
-      "description": "Jahaz Mahal (lit. 'Ship Palace') is located next to Hauz-i-Shamsi in Mehrauli, Delhi. It was so named, since its reflection (illusion) in the surrounding reservoir looked like a ship floating on a lake.",
+      "description": "Monumental standing statue of Lord Shiva overlooking the main prayer square and sacred tree enclosure.",
       "image": {
-        "src": "https://images.pexels.com/photos/35851108/pexels-photo-35851108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Jahaz Mahal in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Shiv_mandir_in_khajwa.jpg",
+        "alt": "Chhatarpur Colossal Shiva & Nandi Shrine in Chhatarpur Temple, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/37790651/pexels-photo-37790651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nandi_at_Shiva_temple%2C_Chhatarpur_temple%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c2/New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Sun_temple%2C_Banjari_Tikari%2C_Chhatarpur_district%2C_Madhya_Pradesh_010.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sun_temple%2C_Banjari_Tikari%2C_Chhatarpur_district%2C_Madhya_Pradesh_012.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4d/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
-      "name": "Sultanpur metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "The Sultanpur metro station is located on the Yellow Line of the Delhi Metro. During Peak hours, it serves as an alternate southern Terminus for the yellow line along with Qutab Minar.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Gulmarg_Snowy_Himalayan_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sultanpur metro station in Delhi, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/70/Woman_with_veena%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sultanpur_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/77/Jama_Masjid%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Sultanpur, Delhi",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Jahaz Mahal (Mehrauli)",
+      "category": "heritage",
+      "distance": "3.5 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "45 mins",
       "rating": 4.5,
-      "description": "Sultanpur is a village in South Delhi district of Delhi. According to the 2011 census, there are 3280 houses, two government schools and three national banks.",
+      "description": "15th-century Lodi-era Ship Palace constructed with domed pavilions reflecting gracefully on the waters of Hauz-i-Shamsi.",
       "image": {
-        "src": "https://images.pexels.com/photos/8511691/pexels-photo-8511691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Sultanpur, Delhi in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Front_view_of_Jahaz_Mahal%2C_Mehrauli.jpg",
+        "alt": "Jahaz Mahal (Mehrauli) in Chhatarpur Temple, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1566552881560-0be86c532107?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/28975098/pexels-photo-28975098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/11015286/pexels-photo-11015286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Jahaz_Mahal%2CMehrauli%2CNew_Delhi%2CIndia.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Restored_lattice-screen%2CJahaz_Mahal%2CMehrauli%2CNew_Delhi%2CIndia.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jahaz_Mahal%2C_Mehrauli.jpg"
       ]
     },
     {
-      "name": "Satbari",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Satbari (also spelled as Satbadi) is a village and census town located in the Chhatarpur area of South Delhi district in Delhi, India. Its postal code is 110074.",
+      "name": "Hauz-i-Shamsi & Jharna",
+      "category": "heritage",
+      "distance": "3.8 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "30 mins",
+      "rating": 4.4,
+      "description": "Historic 13th-century water reservoir excavated by Sultan Iltutmish with surviving Mughal cascades and pleasure gardens.",
       "image": {
-        "src": "https://images.pexels.com/photos/33976900/pexels-photo-33976900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Satbari in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Jahaz_Mahal_on_the_bank_of_Hauz-i-Shamsi_tank.jpg",
+        "alt": "Hauz-i-Shamsi & Jharna in Chhatarpur Temple, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/7521578/pexels-photo-7521578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/37904041/pexels-photo-37904041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/b/ba/Jahaz_Mahal_on_the_bank_of_Hauz-i-Shamsi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tower_at_the_location_of_prophet%27s_horse%27s_hoop.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Hauz-i-Shamsi_01.jpg"
       ]
     },
     {
-      "name": "Mehrauli",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Mehrauli is a neighbourhood in South Delhi, Delhi, India. It represents a constituency in the Delhi Legislative Assembly.",
+      "name": "Mehrauli Archaeological Park",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Sprawling 200-acre historic park containing over 100 medieval monuments including Jamali Kamali Mosque and Balban Tomb.",
       "image": {
-        "src": "https://images.pexels.com/photos/30319869/pexels-photo-30319869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Mehrauli in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/94/Tomb_in_Mehrauli_Archaeological_Park.jpg",
+        "alt": "Mehrauli Archaeological Park in Chhatarpur Temple, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/30319868/pexels-photo-30319868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/28672809/pexels-photo-28672809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Rose_Garden%2C_Mehrauli_Archaeological_Park.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Mehrauli_Archaeological_Park_841.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mehrauli_Archaeological_Park_620.jpg"
+      ]
+    },
+    {
+      "name": "Rajon ki Baoli",
+      "category": "heritage",
+      "distance": "4.2 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "45 mins",
+      "rating": 4.8,
+      "description": "Magnificent 16th-century three-tiered stepwell decorated with ornate arches, pillared verandas, and stucco plasterwork.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rajon_Ki_Baoli_102.jpg",
+        "alt": "Rajon ki Baoli in Chhatarpur Temple, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/02/Rajon_Ki_Baoli_107.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/31/Rajon_Ki_Baoli_110.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Rajon_Ki_Baoli_113.jpg"
+      ]
+    },
+    {
+      "name": "Ahinsa Sthal (Mehrauli)",
+      "category": "temple",
+      "distance": "3 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
+      "duration": "45 mins",
+      "rating": 4.6,
+      "description": "Hilltop Jain monument featuring a colossal stone idol of Lord Mahavira seated atop a scenic rocky mound on MG Road.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ahinsa_Sthal.jpg",
+        "alt": "Ahinsa Sthal (Mehrauli) in Chhatarpur Temple, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Ahinsa.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Ahinsa_Sthal_mehrauli.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/Lord_Mahavir.jpg"
+      ]
+    },
+    {
+      "name": "Zafar Mahal (Mehrauli)",
+      "category": "heritage",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:00 PM",
+      "duration": "30 mins",
+      "rating": 4.4,
+      "description": "The last imperial summer palace built by the Mughal dynasty under Akbar II and Bahadur Shah Zafar.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Sunset_at_Zafar_Mahal_%28Lal_Mahal%29%2C_Mehrauli%2C_Delhi.jpg",
+        "alt": "Zafar Mahal (Mehrauli) in Chhatarpur Temple, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/00/Zafar_Mahal%2C_Mehrauli.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/Zafar_Mahal_ag01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Zafar_Mahal_ag05.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Chhatarpur metro station & around",
+      "title": "Day 1 — Marble Temples & Medieval Mehrauli",
       "items": [
         {
           "time": "Morning",
-          "activity": "Chhatarpur metro station",
-          "note": "Chhatarpur is an elevated station on the Yellow Line of the Delhi Metro. It is located in the Chhatarpur locality of the South West district of Delhi, India."
+          "activity": "Chhatarpur Mandir Complex",
+          "note": "Participate in morning aarti at Maa Katyayani sanctum and marvel at the 70-acre marble shrines."
         },
         {
           "time": "Afternoon",
-          "activity": "Qutab Minar metro station",
-          "note": "Qutab Minar is an elevated station on the Yellow Line of the Delhi Metro. It was inaugurated on 21 June 2010 as part of the 14.47 km completely elevated corridor from Qutab Minar – HUDA City Centre."
+          "activity": "Mehrauli Archaeological Park & Rajon ki Baoli",
+          "note": "Walk through dense heritage woodlands exploring stepwells and ancient mosques."
         },
         {
           "time": "Evening",
-          "activity": "Hauz-i-Shamsi",
-          "note": "Hauz-i-Shamsi (literally \"sunny water tank\"), also known as Shamsi Talab, is a water reservoir built by Iltutmish of the Slave Dynasty in 1230 CE. According to legend, its location was revealed to him in a dream by the Islamic prophet Muhammad. A palace known as the Jahaz Mahal was constructed on the eastern edge of the same reservoir during the Lodi dynasty in the 16th century, serving as a retreat or inn for pilgrims."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Jahaz Mahal & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Jahaz Mahal",
-          "note": "Jahaz Mahal (lit. 'Ship Palace') is located next to Hauz-i-Shamsi in Mehrauli, Delhi. It was so named, since its reflection (illusion) in the surrounding reservoir looked like a ship floating on a lake."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Sultanpur metro station",
-          "note": "The Sultanpur metro station is located on the Yellow Line of the Delhi Metro. During Peak hours, it serves as an alternate southern Terminus for the yellow line along with Qutab Minar."
-        },
-        {
-          "time": "Evening",
-          "activity": "Sultanpur, Delhi",
-          "note": "Sultanpur is a village in South Delhi district of Delhi. According to the 2011 census, there are 3280 houses, two government schools and three national banks."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Satbari & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Satbari",
-          "note": "Satbari (also spelled as Satbadi) is a village and census town located in the Chhatarpur area of South Delhi district in Delhi, India. Its postal code is 110074."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Mehrauli",
-          "note": "Mehrauli is a neighbourhood in South Delhi, Delhi, India. It represents a constituency in the Delhi Legislative Assembly."
+          "activity": "Jahaz Mahal & Ahinsa Sthal Sunset",
+          "note": "Catch panoramic sunset views over Hauz-i-Shamsi and the rocky Aravalli ridge."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Chhatarpur Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "name": "Tivoli Grand Resort Hotel",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 5500,
+      "priceMax": 10500,
+      "rating": 4.4,
+      "reviews": 1600,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Chhatarpur%20Temple%20Stay%20Chhatarpur%20Temple%20Delhi%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Chhatarpur Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
+        "Pool",
+        "Lawn Gardens",
+        "Restaurant",
+        "Spa",
         "WiFi"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Lush Estate",
+        "MG Road"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chhatarpur%20Temple%20Chhatarpur%20Temple%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Tivoli%20Grand%20Resort%20Chhatarpur%20Delhi"
     },
     {
-      "name": "Chhatarpur Temple Grand Hotel",
+      "name": "Qutub Residency Hotel",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 3200,
+      "priceMax": 5400,
+      "rating": 4.2,
+      "reviews": 850,
       "amenities": [
-        "Pool",
+        "AC",
+        "WiFi",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Near Mehrauli",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Chhatarpur%20Temple%20Grand%20Hotel%20Chhatarpur%20Temple%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Qutub%20Residency%20Hotel%20Delhi"
     },
     {
-      "name": "Fortune Park Chhatarpur Temple",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "name": "Hotel Royal Castle Grand",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1700,
+      "priceMax": 2800,
+      "rating": 4,
+      "reviews": 410,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "WiFi",
+        "AC",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Value",
+        "Chhatarpur"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Chhatarpur%20Temple%20Chhatarpur%20Temple%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20Royal%20Castle%20Grand%20Chhatarpur%20hotel"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Sightseeing",
-    "Heritage walks",
-    "Cultural",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "Shri Adhya Katyayani Shaktipith (Main Mandir)",
+    "Chhatarpur Colossal Shiva & Nandi Shrine",
+    "Jahaz Mahal (Mehrauli)",
+    "Hauz-i-Shamsi & Jharna",
+    "Mehrauli Archaeological Park",
+    "Rajon ki Baoli",
+    "Ahinsa Sthal (Mehrauli)",
+    "Zafar Mahal (Mehrauli)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chattarpur_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chhatarpur Temple view 1 — Chattarpur Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/A_Hindu_temple_at_Chhattarpur_temple_complex%2C_Delhi.jpg",
+      "alt": "Chhatarpur Temple - A Hindu temple at Chhattarpur temple complex, Delhi."
     },
     {
-      "src": "https://images.pexels.com/photos/28861116/pexels-photo-28861116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Chhatarpur Temple photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3d/The_main_courtyard_of_Chhatarpur_Temple%2C_Delhi.jpg",
+      "alt": "Chhatarpur Temple - The main courtyard of Chhatarpur Temple, Delhi."
     },
     {
-      "src": "https://images.pexels.com/photos/28861115/pexels-photo-28861115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Chhatarpur Temple photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nandi_at_Shiva_temple%2C_Chhatarpur_temple%2C_Delhi.jpg",
+      "alt": "Chhatarpur Temple - Nandi at Shiva temple, Chhatarpur temple, Delhi."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/A_temple_from_western_group_of_Khajuraho_temples_India.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chhatarpur Temple photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Chhatarpur_Temple%2C_Delhi%2C_India.jpg",
+      "alt": "Chhatarpur Temple - Chhatarpur Temple (Officially: Shri Aadya Katyayani Shakti Peetham) is located in a down town area i"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Chhatarpur%2C_Madhya_Pradesh_Railway_station_platform_2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chhatarpur Temple photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Chunnis_at_Aadya_Katyayini_Shaktipeeth%2C_Chhatarpur_temple%2C_Delhi.jpg",
+      "alt": "Chhatarpur Temple - Chunnis at Aadya Katyayini Shaktipeeth, Chhatarpur temple, Delhi"
     }
   ],
   "faq": [
     {
-      "q": "What is the best time to visit Chhatarpur Temple?",
-      "a": "The best time to visit Chhatarpur Temple is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "q": "What is the dress code for Chhatarpur Temple?",
+      "a": "Modest traditional clothing is recommended. Footwear must be deposited at the free counter before entering the sanctum."
     },
     {
-      "q": "How do I reach Chhatarpur Temple?",
-      "a": "The nearest airport is Chhatarpur Temple / nearest airport (30 km) and the nearest railway station is New Delhi Railway Station (17 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "q": "Which metro station connects to Chhatarpur Temple?",
+      "a": "Chhatarpur Metro Station on the Yellow Line is just 600 metres away from the main temple gates."
     },
     {
-      "q": "How many days are enough for Chhatarpur Temple?",
-      "a": "3 days are usually enough to cover the top attractions of Chhatarpur Temple at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Chhatarpur Temple?",
-      "a": "Stays in Chhatarpur Temple start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Chhatarpur Temple?",
-      "a": "The top attractions are Chhatarpur metro station, Qutab Minar metro station, Hauz-i-Shamsi, Jahaz Mahal, Sultanpur metro station."
+      "q": "Is Chhatarpur Temple crowded during Navratri?",
+      "a": "Yes, during Chaitra and Sharad Navratri the temple welcomes hundreds of thousands of pilgrims; early morning hours (6:00–8:00 AM) are best for peaceful darshan."
     }
   ],
   "seo": {
     "title": "Chhatarpur Temple Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Shri Aadya Katyayani Shakti Peeth is a Hindu temple dedicated to the Hindu deity Katyayani. Plan your Chhatarpur Temple trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Shri Adhya Katyayani Shaktipith (Chhatarpur Temple) in South Delhi is India’s second-largest temple complex sprawling across 70 acres of marble shrines. Plan your visit with 8 top places, stays from ₹1500/night, best time, and routes.",
     "canonical": "destination.html?slug=chhatarpur-temple",
-    "ogImage": "https://images.pexels.com/photos/28616502/pexels-photo-28616502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/5/55/A_Hindu_temple_at_Chhattarpur_temple_complex%2C_Delhi.jpg",
     "keywords": [
       "Chhatarpur Temple travel guide",
       "places to visit in Chhatarpur Temple",
-      "Chhatarpur Temple hotels",
-      "best time to visit Chhatarpur Temple",
-      "how to reach Chhatarpur Temple",
-      "Delhi tourism"
+      "Chhatarpur Temple Delhi",
+      "Delhi tourism",
+      "best time to visit Chhatarpur Temple"
     ]
   }
 }

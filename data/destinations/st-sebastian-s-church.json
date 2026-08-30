@@ -1,574 +1,318 @@
 {
   "slug": "st-sebastian-s-church",
-  "title": "St. Sebastian's Church,",
+  "title": "St. Sebastian’s Church, Dilshad Garden",
   "state": "Delhi",
   "country": "India",
   "region": "Delhi",
-  "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "St. Sebastian's Church, — spiritual town of Delhi",
+  "type": "heritage",
+  "badge": "Heritage",
+  "tagline": "St. Sebastian’s Church — East Delhi Landmark, Trans-Yamuna Heritage & Parks",
   "heroImage": {
-    "src": "https://images.unsplash.com/photo-1750433401229-0a76bfe77a36?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
-    "alt": "St. Sebastian's Church, photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/A_JBM_CityLife_CNG_AC_Bus_on_Delhi%27s_Outer_Ring_Road_%28Road_No._56%29_near_Ramprastha-Yojna_Vihar.jpg",
+    "alt": "St. Sebastian’s Church, Dilshad Garden iconic heritage in Delhi, India"
   },
   "overview": {
-    "short": "St. Sebastian's Church, is a much-loved spiritual town in Delhi, known for temples and pilgrimage.",
-    "description": "St. Sebastian's Church is located in Dilshad Garden in the city of Delhi, India. The church is dedicated to Saint Sebastian.",
+    "short": "St. Sebastian’s Church in Dilshad Garden, East Delhi, is a prominent Catholic parish known for its serene community campus and proximity to Trans-Yamuna heritage.",
+    "description": "Established in 1980 under the Archdiocese of Delhi, St. Sebastian’s Church in Dilshad Garden is a prominent Christian spiritual sanctuary in East Delhi. Dedicated to Saint Sebastian, the parish is celebrated for its festive Christmas and Easter gatherings, peaceful interior, and community welfare services. Located near the historic trans-Yamuna quarter of Shahdara, the surrounding area offers lush recreational spaces like Surajmal Park, Yamuna Sports Complex, and Sanjay Lake.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "Historic Catholic Parish",
+      "Archdiocese of Delhi",
+      "Shahdara Heritage Quarter",
+      "Yamuna Sports & Eco Parks"
     ],
-    "altitude": null,
-    "rating": 4.8,
-    "reviewCount": 18605,
-    "minPrice": 900,
-    "distanceFromDelhi": 13,
-    "about": "St. Sebastian's Church is located in Dilshad Garden in the city of Delhi, India. The church is dedicated to Saint Sebastian."
+    "altitude": "210 m",
+    "rating": 4.5,
+    "reviewCount": 6500,
+    "minPrice": 1200,
+    "distanceFromDelhi": 0,
+    "about": "The church serves thousands of parish families across East Delhi and NCR. Visitors can combine visits to the church with exploring ancient Mughal-era markets in Shahdara, serene lakes, and the sprawling cultural campus of Akshardham."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 28.6875431,
-    "lng": 77.3159818,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 28.6825,
+    "lng": 77.3175,
+    "tempSummer": "28–42°C",
+    "tempWinter": "8–24°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 16,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 13 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 48,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 38 km · road approx."
-      },
-      {
-        "from": "Agra (Uttar Pradesh)",
-        "city": "Agra",
-        "state": "Uttar Pradesh",
-        "distance": 226,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 181 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 243,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 194 km · road approx."
-      },
-      {
-        "from": "Chandigarh (Chandigarh UT)",
-        "city": "Chandigarh",
-        "state": "Chandigarh UT",
-        "distance": 291,
-        "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 233 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 310,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 248 km · road approx."
-      },
-      {
-        "from": "Shimla (Himachal Pradesh)",
-        "city": "Shimla",
-        "state": "Himachal Pradesh",
-        "distance": 336,
-        "byCar": "6–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 269 km · road approx."
-      },
-      {
-        "from": "Amritsar (Punjab)",
-        "city": "Amritsar",
-        "state": "Punjab",
-        "distance": 504,
-        "byCar": "8–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 403 km · road approx."
-      },
-      {
-        "from": "Jammu (Jammu & Kashmir UT)",
-        "city": "Jammu",
-        "state": "Jammu & Kashmir UT",
-        "distance": 634,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 507 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 755,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 604 km · road approx."
-      },
-      {
-        "from": "Leh (Ladakh UT)",
-        "city": "Leh",
-        "state": "Ladakh UT",
-        "distance": 760,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 608 km · road approx."
-      },
-      {
-        "from": "Ahmedabad (Gujarat)",
-        "city": "Ahmedabad",
-        "state": "Gujarat",
-        "distance": 986,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 789 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 1059,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 847 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1071,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 857 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1168,
-        "byCar": "19–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 934 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "St. Sebastian's Church, / nearest airport",
-      "distance": 30
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 28
     },
     "nearestRailway": {
-      "name": "New Delhi Railway Station",
-      "distance": 11
+      "name": "Old Delhi Railway Station (DLI)",
+      "distance": 10
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Conveniently connected by Dilshad Garden Metro Station (Red Line). Grand Trunk Road (GT Road) provides direct access to Central Delhi and Ghaziabad.",
+    "routes": [
+      {
+        "from": "Old Delhi Railway Station",
+        "city": "Old Delhi",
+        "state": "Delhi",
+        "distance": 10,
+        "byCar": "25 mins",
+        "byTrain": "Red Line direct metro (18 mins)",
+        "byAir": "Not applicable",
+        "via": "GT Road & Shahdara Flyover"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Dilshad Garden",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "St. Sebastian’s Church Sanctum",
+      "category": "temple",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:30 PM",
+      "duration": "1 hr",
       "rating": 4.7,
-      "description": "Dilshad Garden is a residential area of Shahdara district, which was planned and developed by Delhi Development Authority in the late 1970s and early 1980s. It falls under the both Shahdara and Seemapuri constituency of the legislative assembly.",
+      "description": "Serene Catholic parish church featuring stained glass windows, a peaceful altar, and vibrant community choir services.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Dilshad_Garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dilshad Garden in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Premises_of_Pitalkhora_Buddhist_caves%2C_Chandikawadi%2C_Aurangabad%2C_Maharashtra_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "St. Sebastian’s Church Sanctum, St. Sebastian’s Church, Dilshad Garden"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80"
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Good_Samaritan_Hospital_1896.png",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Premises_of_Pitalkhora_Buddhist_caves%2C_Chandikawadi%2C_Aurangabad%2C_Maharashtra_29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/0112521_Bajramath_Hindu_temple_converted_to_Jain_temple%2C_Gyaraspur%2C_Madhya_Pradesh_03.jpg"
       ]
     },
     {
-      "name": "Ziauddin Pur",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Ziauddin Pur is a village and census town in Mustafabad in North East district in the Indian state of Delhi.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1597040663342-45b6af3d91a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8WmlhdWRkaW4lMjBQdXIlMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1Mjh8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Ziauddin Pur in Delhi, India"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1513014576558-921f00d80b77?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8WmlhdWRkaW4lMjBQdXIlMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1Mjh8MA&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1599230080795-a48439229cb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8WmlhdWRkaW4lMjBQdXIlMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1Mjh8MA&ixlib=rb-4.1.0&q=85"
-      ]
-    },
-    {
-      "name": "Jhilmil metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "The Jhilmil Station is located on the Red Line of the Delhi Metro.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1590657004813-b82c66b4c588?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8SmhpbG1pbCUyMG1ldHJvJTIwc3RhdGlvbiUyMERlbGhpJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzEyMTUzMHww&ixlib=rb-4.1.0&q=85",
-        "alt": "Jhilmil metro station in Delhi, India"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1649042964070-8eb14ea4da7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8SmhpbG1pbCUyMG1ldHJvJTIwc3RhdGlvbiUyMERlbGhpJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzEyMTUzMHww&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1616585592371-1515b1e558d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8SmhpbG1pbCUyMG1ldHJvJTIwc3RhdGlvbiUyMERlbGhpJTIwSW5kaWF8ZW58MHwwfHx8MTc4NzEyMTUzMHww&ixlib=rb-4.1.0&q=85"
-      ]
-    },
-    {
-      "name": "Dilshad Garden metro station",
+      "name": "Surajmal Park (Vivek Vihar)",
       "category": "nature",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "The Dilshad Garden metro station is a station of the Red Line of the Delhi Metro. It was the terminal station of the Red Line till 7 March 2019.",
+      "distance": "2.5 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 8:00 PM",
+      "duration": "1 hr",
+      "rating": 4.4,
+      "description": "Expansive 20-acre landscaped public park with jogging tracks, outdoor fitness zones, and manicured floral lawns.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1649042966082-e98e95a79100?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RGlsc2hhZCUyMEdhcmRlbiUyMG1ldHJvJTIwc3RhdGlvbiUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzR8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Dilshad Garden metro station in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/MAHARAJA_SURAJMAL_SAMADHI_PARK.jpg",
+        "alt": "Surajmal Park (Vivek Vihar) in St. Sebastian’s Church, Dilshad Garden, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1695718935605-107d23321486?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8RGlsc2hhZCUyMEdhcmRlbiUyMG1ldHJvJTIwc3RhdGlvbiUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzR8MA&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1760816418369-7889ec0acfe5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8RGlsc2hhZCUyMEdhcmRlbiUyMG1ldHJvJTIwc3RhdGlvbiUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzR8MA&ixlib=rb-4.1.0&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Sculpture_of_Raja_Surajmal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Van_Vihar_National_Park%2C_Bhopal.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1a/Pair_of_owls_in_Van_Vihar_National_Park%2C_Bhopal.jpg"
       ]
     },
     {
-      "name": "Mansarovar Park metro station",
+      "name": "Yamuna Sports Complex",
       "category": "nature",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "The Mansarovar Park metro station is located on the Red Line of the Delhi Metro, India.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1590657004813-b82c66b4c588?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8TWFuc2Fyb3ZhciUyMFBhcmslMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzV8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Mansarovar Park metro station in Delhi, India"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1649042964070-8eb14ea4da7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TWFuc2Fyb3ZhciUyMFBhcmslMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzV8MA&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1616585592371-1515b1e558d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8TWFuc2Fyb3ZhciUyMFBhcmslMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1MzV8MA&ixlib=rb-4.1.0&q=85"
-      ]
-    },
-    {
-      "name": "Shaheed Nagar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "The Shaheed Nagar is a metro station located on the Red Line of the Delhi Metro. It is located in the Sahibabad Industrial Area locality of Ghaziabad of Uttar Pradesh.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Woman_with_veena%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Shaheed Nagar metro station in Delhi, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Shaheed_Nagar_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/77/Jama_Masjid%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Vivek Vihar",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Vivek Vihar is one of 3 subdivisions of Delhi's Shahdara district, near the edge of Ghaziabad as well as a small neighbourhood in that subdivision located beside just besides the Choudhary Charan Singh road along with Uttar Pradesh border.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1650341278999-d1b5142cfe30?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8Vml2ZWslMjBWaWhhciUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDN8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Vivek Vihar in Delhi, India"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1566552881560-0be86c532107?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1712510817140-917938f92e5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8Vml2ZWslMjBWaWhhciUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDN8MA&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1619338068747-b178eea06d41?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8Vml2ZWslMjBWaWhhciUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDN8MA&ixlib=rb-4.1.0&q=85"
-      ]
-    },
-    {
-      "name": "Shahdara metro station",
-      "category": "scenic",
       "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "The Shahdara metro station is located on the Red Line of the Delhi Metro.",
+      "entryFee": "Entry by membership / passes",
+      "timings": "6:00 AM – 9:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "International-standard sports facility with Olympic archery ranges, tennis courts, and lush tree-lined walkways.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1590657004813-b82c66b4c588?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8U2hhaGRhcmElMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDR8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Shahdara metro station in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/XIX_Commonwealth_Games-2010_Delhi_Dola_Banerjee%2C_Deepika_Kumari_and_Bombayala_Devi_of_India_won_the_Gold_medal_in_Archery_%28Women%E2%80%99s_Team_Recurve%29%2C_during_the_medal_presentation_ceremony%2C_at_Yamuna_Sports_Complex%2C_in_New_Delhi.jpg",
+        "alt": "Yamuna Sports Complex in St. Sebastian’s Church, Dilshad Garden, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1649042964070-8eb14ea4da7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8U2hhaGRhcmElMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDR8MA&ixlib=rb-4.1.0&q=85",
-        "https://images.unsplash.com/photo-1616585592371-1515b1e558d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8U2hhaGRhcmElMjBtZXRybyUyMHN0YXRpb24lMjBEZWxoaSUyMEluZGlhfGVufDB8MHx8fDE3ODcxMjE1NDR8MA&ixlib=rb-4.1.0&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b4/XIX_Commonwealth_Games-2010_Delhi_Winners_of_%28Women%60s%29_Archery_Individual_Compound%2C_Hunt_Nicky_of_England_%28Gold%29%2C_DM_Jones_of_Canada_%28Silver%29_and_C._McCall_of_Australia_%28Bronze%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/XIX_Commonwealth_Games-2010_Delhi_Archery_%28Women%E2%80%99s_Individual_Recurve%29_Deepika_Kumari_of_India_%28Gold%29%2C_Alison_Jane_Williamson_of_England_%28Silver%29_and_Dola_Banerjee_of_India_%28Bronze%29_during_the_medal_presentation_ceremony.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Mango_Plantation_near_Sasan_Gir%2C_Gujarat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
+      "name": "Chhota Bazaar & Shahdara Heritage Quarter",
+      "category": "cultural",
+      "distance": "3.5 km",
+      "entryFee": "Free",
+      "timings": "10:00 AM – 9:00 PM (Closed Wed)",
+      "duration": "1.5 hrs",
+      "rating": 4.3,
+      "description": "Century-old historic market established during the Mughal era, renowned for traditional sweets, brassware, and textiles.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Skyline_at_Rajiv_Chowk.JPG",
+        "alt": "Chhota Bazaar & Shahdara Heritage Quarter in St. Sebastian’s Church, Dilshad Garden, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Delhi_Gate_Structure.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a9/Drummers_at_Delhi_gate.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/The_Union_Minister_of_External_Affairs_Shri_K._Natwar_Singh_speaking_at_the_valedictory_function_to_celebrate_20_years_of_INTACH_%28Indian_National_Trust_for_Art_and_Cultural_Heritage%29_in_New_Delhi_on_November_4%2C_2004.jpg"
+      ]
+    },
+    {
+      "name": "Yamuna Biodiversity Park (Phase II)",
+      "category": "nature",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "9:30 AM – 4:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Spectacular 457-acre restored wetland ecosystem harboring over 200 species of migratory birds, butterflies, and indigenous flora.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Black_Spotted_Butterfly.jpg",
+        "alt": "Yamuna Biodiversity Park (Phase II) in St. Sebastian’s Church, Dilshad Garden, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Purana_Qila_-New_Delhi_-Delhi_-DSC_0003.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/94/Delhi_red_fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/Red_Fort_-Delhi_-Delhi_-DSC_0001.jpg"
+      ]
+    },
+    {
+      "name": "Sanjay Lake & Eco Park",
+      "category": "nature",
+      "distance": "7 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.6,
+      "description": "Tranquil 42-acre artificial lake surrounded by rolling eucalyptus trees, walking trails, and family boating pavilions.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Paintings_in_the_Pitalkhora_Buddhist_caves%2C_Chandikawadi%2C_Aurangabad%2C_Maharashtra_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Sanjay Lake & Eco Park, St. Sebastian’s Church, Dilshad Garden"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sanjay_Lake_Entrance.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/Sanjay_Lake%2C_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sanjay_Lake.jpg"
+      ]
+    },
+    {
+      "name": "Shyam Lal College Heritage Lake",
+      "category": "nature",
+      "distance": "3.2 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "45 mins",
+      "rating": 4.3,
+      "description": "Revitalized urban lake and green promenade providing a peaceful retreat in the heart of East Delhi.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Jaipur%2C_Amber_Fort%2C_Lake_Maota%2C_fishermen_%289713583012%29.jpg",
+        "alt": "Shyam Lal College Heritage Lake in St. Sebastian’s Church, Dilshad Garden, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/Red_Fort_-Delhi_-Delhi_-DSC_0002.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Red_Fort_-Delhi_-Delhi_-DSC_0003.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/The_Great_Veterans_Memorial_WWII_Anti-Tank_Gun_Of_Delhi_Township.jpg"
+      ]
+    },
+    {
+      "name": "Swami Narayan Akshardham Temple Campus",
+      "category": "temple",
+      "distance": "8 km",
+      "entryFee": "Free (Exhibitions ticketed)",
+      "timings": "9:30 AM – 6:30 PM (Closed Mon)",
+      "duration": "3 hrs",
+      "rating": 4.9,
+      "description": "Monumental 100-acre sandstone and marble spiritual campus showcasing 10,000 years of Indian art, wisdom, and architecture.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Akshardham%2CDelhi.JPG",
+        "alt": "Swami Narayan Akshardham Temple Campus in St. Sebastian’s Church, Dilshad Garden, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/Akshardham_in_Delhi_at_night.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/7/77/Akshardham_Gandhinagar_Gujarat.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/00/Akshardham_Temple_%28406274496%29.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Dilshad Garden & around",
+      "title": "Day 1 — Sacred East Delhi, Heritage Bazaars & Green Parks",
       "items": [
         {
           "time": "Morning",
-          "activity": "Dilshad Garden",
-          "note": "Dilshad Garden is a residential area of Shahdara district, which was planned and developed by Delhi Development Authority in the late 1970s and early 1980s. It falls under the both Shahdara and Seemapuri constituency of the legislative assembly."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Ziauddin Pur",
-          "note": "Ziauddin Pur is a village and census town in Mustafabad in North East district in the Indian state of Delhi."
+          "activity": "St. Sebastian’s Church & Morning Service",
+          "note": "Experience the peaceful morning service and admire the stained glass parish architecture."
         },
         {
           "time": "Evening",
-          "activity": "Jhilmil metro station",
-          "note": "The Jhilmil Station is located on the Red Line of the Delhi Metro."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Dilshad Garden metro station & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Dilshad Garden metro station",
-          "note": "The Dilshad Garden metro station is a station of the Red Line of the Delhi Metro. It was the terminal station of the Red Line till 7 March 2019."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Mansarovar Park metro station",
-          "note": "The Mansarovar Park metro station is located on the Red Line of the Delhi Metro, India."
-        },
-        {
-          "time": "Evening",
-          "activity": "Shaheed Nagar metro station",
-          "note": "The Shaheed Nagar is a metro station located on the Red Line of the Delhi Metro. It is located in the Sahibabad Industrial Area locality of Ghaziabad of Uttar Pradesh."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Vivek Vihar & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Vivek Vihar",
-          "note": "Vivek Vihar is one of 3 subdivisions of Delhi's Shahdara district, near the edge of Ghaziabad as well as a small neighbourhood in that subdivision located beside just besides the Choudhary Charan Singh road along with Uttar Pradesh border."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Shahdara metro station",
-          "note": "The Shahdara metro station is located on the Red Line of the Delhi Metro."
+          "activity": "Akshardham Temple & Water Show",
+          "note": "Watch the Sahaj Anand water and laser sound spectacle illuminating the grand temple."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO St. Sebastian's Church, Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20St.%20Sebastian's%20Church%2C%20Stay%20St.%20Sebastian's%20Church%2C%20Delhi%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in St. Sebastian's Church,",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20St.%20Sebastian's%20Church%2C%20St.%20Sebastian's%20Church%2C%20Delhi%20hotel"
-    },
-    {
-      "name": "St. Sebastian's Church, Grand Hotel",
+      "name": "Park Plaza Delhi CBD Shahdara",
       "type": "hotel",
-      "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
+      "tier": "luxury",
+      "priceMin": 5500,
+      "priceMax": 9500,
       "rating": 4.4,
-      "reviews": 430,
-      "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
-      ],
-      "tags": [
-        "Popular",
-        "Central"
-      ],
-      "url": "https://www.google.com/search?q=St.%20Sebastian's%20Church%2C%20Grand%20Hotel%20St.%20Sebastian's%20Church%2C%20Delhi%20hotel"
-    },
-    {
-      "name": "Fortune Park St. Sebastian's Church,",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "reviews": 1800,
       "amenities": [
         "Pool",
         "Spa",
         "Fine Dining",
-        "Concierge"
+        "Gym",
+        "WiFi"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "5 Star",
+        "East Delhi"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20St.%20Sebastian's%20Church%2C%20St.%20Sebastian's%20Church%2C%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Park%20Plaza%20Delhi%20CBD%20Shahdara%20hotel"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Nature walks",
-    "Cultural",
-    "Sightseeing",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "St. Sebastian’s Church Sanctum",
+    "Surajmal Park (Vivek Vihar)",
+    "Yamuna Sports Complex",
+    "Chhota Bazaar & Shahdara Heritage Quarter",
+    "Yamuna Biodiversity Park (Phase II)",
+    "Sanjay Lake & Eco Park",
+    "Shyam Lal College Heritage Lake",
+    "Swami Narayan Akshardham Temple Campus"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Jacob_Parappally.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "St. Sebastian's Church, view 1 — Jacob Parappally"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/A_JBM_CityLife_CNG_AC_Bus_on_Delhi%27s_Outer_Ring_Road_%28Road_No._56%29_near_Ramprastha-Yojna_Vihar.jpg",
+      "alt": "St. Sebastian’s Church, Dilshad Garden - This is an image of a JBM CityLife CNG AC bus on Delhi's outer ring road. The e"
     },
     {
-      "src": "https://images.unsplash.com/photo-1583407386527-820c9281cfd0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
-      "alt": "St. Sebastian's Church, photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/0011122_Narayanpal_Vishnu_Mandir_Chhattisgarh_247.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "alt": "Narayanpal temple is close the northern banks of the Indravati river, about 20 kilometers west of Ba"
     },
     {
-      "src": "https://images.unsplash.com/photo-1763924041952-1a401796cc9e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
-      "alt": "St. Sebastian's Church, photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/0011122_Narayanpal_Vishnu_Mandir_Chhattisgarh_235.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "alt": "Narayanpal temple is close the northern banks of the Indravati river, about 20 kilometers west of Ba"
     },
     {
-      "src": "https://images.unsplash.com/photo-1593456080727-2ab7814891e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NXx8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
-      "alt": "St. Sebastian's Church, photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/XIX_Commonwealth_Games-2010_Delhi_Archery_%28Women%E2%80%99s_team_compound%29_Bheigyabati_Chanu%2C_Jhano_Hansdah_and_Kaur_Gagandeep_won_the_Bronze_medal%2C_at_Yamuna_Sports_Complex%2C_in_New_Delhi_on_October_07%2C_2010.jpg",
+      "alt": "St. Sebastian’s Church, Dilshad Garden - XIX Commonwealth Games-2010 Delhi: Archery (Women’s team compound) Bheigyabati"
     },
     {
-      "src": "https://images.unsplash.com/photo-1763384763825-9e5f76627905?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Nnx8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
-      "alt": "St. Sebastian's Church, photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Premises_of_Pitalkhora_Buddhist_caves%2C_Chandikawadi%2C_Aurangabad%2C_Maharashtra_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "caption": "St. Sebastian’s Church, Dilshad Garden - Highlight 5",
+      "alt": "Aurangabad Maharashtra monuments"
     }
   ],
   "faq": [
     {
-      "q": "What is the best time to visit St. Sebastian's Church,?",
-      "a": "The best time to visit St. Sebastian's Church, is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
-    },
-    {
-      "q": "How do I reach St. Sebastian's Church,?",
-      "a": "The nearest airport is St. Sebastian's Church, / nearest airport (30 km) and the nearest railway station is New Delhi Railway Station (11 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for St. Sebastian's Church,?",
-      "a": "3 days are usually enough to cover the top attractions of St. Sebastian's Church, at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in St. Sebastian's Church,?",
-      "a": "Stays in St. Sebastian's Church, start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in St. Sebastian's Church,?",
-      "a": "The top attractions are Dilshad Garden, Ziauddin Pur, Jhilmil metro station, Dilshad Garden metro station, Mansarovar Park metro station."
+      "q": "Which metro station is nearest to St. Sebastian’s Church?",
+      "a": "Dilshad Garden Metro Station on the Red Line is approximately 1 km away, easily reached by e-rickshaw in 5 minutes."
     }
   ],
   "seo": {
-    "title": "St. Sebastian's Church, Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "St. Sebastian's Church, is a much-loved spiritual town in Delhi, known for temples and pilgrimage. Plan your St. Sebastian's Church, trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "title": "St. Sebastian’s Church, Dilshad Garden Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
+    "description": "St. Sebastian’s Church in Dilshad Garden, East Delhi, is a prominent Catholic parish known for its serene community campus and proximity to Trans-Yamuna heritage. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=st-sebastian-s-church",
-    "ogImage": "https://images.unsplash.com/photo-1750433401229-0a76bfe77a36?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8U3QuJTIwU2ViYXN0aWFuJTI3cyUyMENodXJjaCUyMERlbGhpJTIwSW5kaWElMjB0cmF2ZWx8ZW58MHwwfHx8MTc4NzEyMTUyMnww&ixlib=rb-4.1.0&q=85",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/c/cf/A_JBM_CityLife_CNG_AC_Bus_on_Delhi%27s_Outer_Ring_Road_%28Road_No._56%29_near_Ramprastha-Yojna_Vihar.jpg",
     "keywords": [
-      "St. Sebastian's Church, travel guide",
-      "places to visit in St. Sebastian's Church,",
-      "St. Sebastian's Church, hotels",
-      "best time to visit St. Sebastian's Church,",
-      "how to reach St. Sebastian's Church,",
-      "Delhi tourism"
+      "St. Sebastian’s Church, Dilshad Garden travel guide",
+      "places to visit in St. Sebastian’s Church, Dilshad Garden",
+      "St. Sebastian’s Church, Dilshad Garden Delhi",
+      "Delhi tourism",
+      "best time to visit St. Sebastian’s Church, Dilshad Garden"
     ]
   }
 }

@@ -115,9 +115,9 @@ function normalizeUrl(rawUrl) {
     // Normalize Wikimedia thumbnail URLs to canonical commons filename
     if (parsed.hostname.includes('wikimedia.org') && pathname.includes('/thumb/')) {
       // e.g. /wikipedia/commons/thumb/a/b/File.jpg/800px-File.jpg -> /wikipedia/commons/a/b/File.jpg
-      const match = pathname.match(/\/thumb(\/[^/]+\/[^/]+\/[^/]+\/[^/]+)\/[^/]+$/);
+      const match = pathname.match(/^(.*)\/thumb\/([^/]+\/[^/]+\/[^/]+)\/[^/]+$/);
       if (match) {
-        pathname = match[1];
+        pathname = `${match[1]}/${match[2]}`;
         parsed.pathname = pathname;
       }
     }
@@ -359,6 +359,9 @@ function auditRepository() {
           destFailures.push(`INVALID_GALLERY_PHOTO[${idx}]: ${gRaw || 'EMPTY'}`);
           if (!gNorm) malformedCount++;
           else genericFillerCount++;
+        } else if (idx === 0 && gNorm === heroNorm) {
+          // The strict dataset contract explicitly allows the hero to mirror
+          // gallery[0]. Count the asset once and keep all other slots disjoint.
         } else if (localUrls.has(gNorm)) {
           destFailures.push(`INTERNAL_DUPLICATE_GALLERY[${idx}]: ${gNorm}`);
         } else {
@@ -388,6 +391,14 @@ function auditRepository() {
           placeFailed = true;
           if (!plMainNorm) malformedCount++;
           else genericFillerCount++;
+        } else if (localUrls.has(plMainNorm)) {
+          destFailures.push(`INTERNAL_DUPLICATE_PLACE_MAIN[${pIdx}] (${pName}): ${plMainNorm}`);
+          placeFailed = true;
+        } else {
+          localUrls.add(plMainNorm);
+          if (!globalUrlIndex.has(plMainNorm)) globalUrlIndex.set(plMainNorm, []);
+          globalUrlIndex.get(plMainNorm).push({ slug, field: `topPlaces[${pIdx}].image` });
+          totalValidatedImages++;
         }
 
         // Validate place.photos: MUST BE EXACTLY 3 DISTINCT PHOTOS
@@ -408,8 +419,12 @@ function auditRepository() {
             } else if (placeLocalPhotos.has(phNorm)) {
               destFailures.push(`DUPLICATE_PHOTO_IN_SAME_PLACE[${pIdx}][${phIdx}] (${pName})`);
               placeFailed = true;
+            } else if (localUrls.has(phNorm)) {
+              destFailures.push(`INTERNAL_DUPLICATE_PLACE_PHOTO[${pIdx}][${phIdx}] (${pName}): ${phNorm}`);
+              placeFailed = true;
             } else {
               placeLocalPhotos.add(phNorm);
+              localUrls.add(phNorm);
               if (!globalUrlIndex.has(phNorm)) globalUrlIndex.set(phNorm, []);
               globalUrlIndex.get(phNorm).push({ slug, field: `topPlaces[${pIdx}].photos[${phIdx}]` });
               totalValidatedImages++;

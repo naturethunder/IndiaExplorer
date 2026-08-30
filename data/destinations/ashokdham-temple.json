@@ -3,517 +3,321 @@
   "title": "Ashokdham Temple",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Anga / Lakhisarai (Eastern Bihar)",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Ashokdham Temple — spiritual town of Bihar",
+  "badge": "Spiritual",
+  "tagline": "Ashokdham Dham — The Sacred Indradamneshwar Mahadev & Giant Black Stone Lingam",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ashokdham_Lakhisarai.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Ashokdham Temple photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ashok_Dham.jpg",
+    "alt": "Ashokdham Temple - Ashokdham, Bihar Tourism, Lkr, अशोकधाम लखीसराय, By Guddu Raj Chauhan"
   },
   "overview": {
-    "short": "Ashokdham Mandir also known as Indradamneshwar Mahadev Mandir is located at ASHOK DHAM RAJAUNA CHOUKI in Lakhisarai district, Bihar.",
-    "description": "Ashokdham Mandir also known as Indradamneshwar Mahadev Mandir is located at ASHOK DHAM RAJAUNA CHOUKI in Lakhisarai district, Bihar. It is a temple complex having Indradamneshwar Mahadev Mandir in the center dedicated to the primary deity lord Shiva surrounded by three more temples dedicated to Goddess Parvati, the mount of the Shiva Nandi and Goddess Durga. On 11 February 1993, the Shankaracharya of Jagannathpuri inaugurated the reconstruction of the temple complex.",
+    "short": "Ashokdham Temple (Indradamneshwar Mahadev Mandir) in Lakhisarai enshrines a colossal ancient black granite Shiva Lingam discovered by boy Ashok in 1977.",
+    "description": "Situated at the confluence of the Kiul and Harohar rivers in Lakhisarai district, Ashokdham is celebrated for its colossal black basalt Shiva Lingam, believed to have been originally worshipped by 8th-century King Indradyumna of the Pala dynasty. Excavated in April 1977, the sacred pilgrimage center features a majestic Nagara-style stone temple complex, sacred ponds, and nearby ancient Buddhist stupas.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Ghats",
-      "Festivals"
+      "Colossal Black Granite Indradamneshwar Lingam",
+      "Pala-Era 8th-Century Historical Heritage",
+      "Shringirishi Dham Hill Sacred Springs",
+      "Nongarh & Rajauna Buddhist Excavation Stupas"
     ],
-    "altitude": null,
-    "rating": 4.4,
-    "reviewCount": 13082,
-    "minPrice": 900,
-    "distanceFromDelhi": 957,
-    "about": "Ashokdham Mandir also known as Indradamneshwar Mahadev Mandir is located at ASHOK DHAM RAJAUNA CHOUKI in Lakhisarai district, Bihar. It is a temple complex having Indradamneshwar Mahadev Mandir in the center dedicated to the primary deity lord Shiva surrounded by three more temples dedicated to Goddess Parvati, the mount of the Shiva Nandi and Goddess Durga. On 11 February 1993, the Shankaracharya of Jagannathpuri inaugurated the reconstruction of the temple complex."
+    "altitude": "58 m",
+    "rating": 4.7,
+    "reviewCount": 14200,
+    "minPrice": 1200,
+    "distanceFromDelhi": 1090,
+    "about": "A divine pilgrimage center in the historic Kiul valley surrounded by ancient Pala monasteries, holy waterfalls, and verdant hills."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 25.19325,
-    "lng": 86.073305555,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 25.18,
+    "lng": 86.09,
+    "tempSummer": "26–42°C",
+    "tempWinter": "8–23°C"
   },
   "howToReach": {
+    "nearestAirport": {
+      "name": "Patna Airport (PAT)",
+      "distance": 130
+    },
+    "nearestRailway": {
+      "name": "Lakhisarai Junction (LKR) / Kiul Junction (KIUL)",
+      "distance": 4
+    },
+    "roadNote": "Located just 4 km from Lakhisarai town on the Lakhisarai-Sikandra road, connected by NH-80 and NH-333A.",
     "routes": [
       {
-        "from": "Patna (Bihar)",
+        "from": "Patna",
         "city": "Patna",
         "state": "Bihar",
         "distance": 130,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 104 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 275,
-        "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 220 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 360,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 288 km · road approx."
-      },
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 390,
-        "byCar": "7–9 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 312 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 434,
-        "byCar": "7–10 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 347 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 681,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 545 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 686,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 549 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 721,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 577 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 733,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 586 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 789,
-        "byCar": "13–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 631 km · road approx."
-      },
-      {
-        "from": "Aizawl (Mizoram)",
-        "city": "Aizawl",
-        "state": "Mizoram",
-        "distance": 865,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 692 km · road approx."
-      },
-      {
-        "from": "Itanagar (Arunachal Pradesh)",
-        "city": "Itanagar",
-        "state": "Arunachal Pradesh",
-        "distance": 976,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 781 km · road approx."
-      },
-      {
-        "from": "Imphal (Manipur)",
-        "city": "Imphal",
-        "state": "Manipur",
-        "distance": 991,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 793 km · road approx."
-      },
-      {
-        "from": "Kohima (Nagaland)",
-        "city": "Kohima",
-        "state": "Nagaland",
-        "distance": 1011,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 809 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1055,
-        "byCar": "18–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 844 km · road approx."
+        "byCar": "3 hrs",
+        "byTrain": "Express train (2 hrs)",
+        "byAir": "Via Patna Airport",
+        "via": "NH-31 and NH-80"
       }
-    ],
-    "nearestAirport": {
-      "name": "Ashokdham Temple / nearest airport",
-      "distance": 30
-    },
-    "nearestRailway": {
-      "name": "Patna Junction",
-      "distance": 104
-    },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    ]
   },
   "topPlaces": [
     {
-      "name": "Balgudar",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Balgudar is a village Located in the Lakhisarai District of Bihar, India, with a total 1200 families residing. The total population of the village is 7,326, of which 3654 are males while 3672 are females.",
+      "name": "Indradamneshwar Mahadev Main Sanctum",
+      "category": "spiritual",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 9:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Towering stone temple sanctum housing the colossal black granite Shiva Lingam.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ashokdham_Temple_near_Balgudar_Village_in_Bihar%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Balgudar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ashok_dham_nandi.jpg",
+        "alt": "Indradamneshwar Mahadev Main Sanctum in Ashokdham Temple, Bihar"
       },
       "photos": [
-        "https://images.pexels.com/photos/36737805/pexels-photo-36737805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/9/91/Ashok_dham_nandi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Ashok_Dham.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ashokdham_Temple.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/02/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_09.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/39/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_10.jpg"
       ]
     },
     {
-      "name": "Nandnama",
-      "category": "cultural",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Nandnama or Nand Nama is a village in the Ramgarh Chowk Block of the Lakhisarai district in the Indian state of Bihar. It is 14 km south of the administrative district headquarters in Lakhisarai and 134 km from the state capital, Patna.",
+      "name": "Shringirishi Dham Hills & Sacred Springs",
+      "category": "spiritual",
+      "distance": "22 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Scenic hill hermitage associated with sage Rishyasringa, featuring freshwater spring kunds.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nandnama_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nandnama in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_11.jpg",
+        "alt": "Shringirishi Dham Hills & Sacred Springs - Nyingma monastery in Bodhgaya is a Shechen Monastery which was build in 1996"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d8/Aulia_Baba.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/49/Vishnu_maha_Jag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Aerial_view%2C_Patna_%28314731093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_12.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_13.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5d/Nyingma_monastery_in_Bodhgaya%2C_Bihar%2C_India_14.jpg"
       ]
     },
     {
-      "name": "Lakhisarai",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Lakhisarai (archaic spelling: Luckeesarai) town is the administrative headquarters of Lakhisarai district in the Indian state of Bihar. The town has a population of 99,979 (2011 census).",
-      "image": {
-        "src": "https://images.pexels.com/photos/38811718/pexels-photo-38811718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Lakhisarai in Bihar, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/36712495/pexels-photo-36712495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/33953860/pexels-photo-33953860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Surigadha_bazar_lakhisarai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Babhangawan",
-      "category": "cultural",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Babhangawan is a village located in the Lakhisarai district of Bihar, India. The village has a population of 3,737 as of the 2011 Census.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Ashok_Dham_Lakhisarai_01.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Babhangawan in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sangrahalaya_Lakhisarai.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Patna_University_Main_gate_Patna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Krimila",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Jalappa Asthan (Hilltop Shrine)",
+      "category": "spiritual",
+      "distance": "12 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:00 PM",
+      "duration": "1 hr",
       "rating": 4.6,
-      "description": "Kṛmilā was a Buddhist religious and administrative centre located in what is now Lakhisarai district in Bihar. Spread in an area around 25–30 square kilometres, the city has a large number of historical monuments, particularly Buddhist Stupas and Hindu temples.",
+      "description": "Hilltop sanctuary dedicated to Goddess Jalappa, offering panoramic vistas of the Kiul basin.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/%22_Tomb_of_Sher_Shah_Suri_%22.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Krimila in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pal_Tergar_Monastery%2C_Bodhgaya_%288717524750%29.jpg",
+        "alt": "Jalappa Asthan (Hilltop Shrine) - Pal Tergar Monastery, Bodhgaya"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/AnupamLakeKaimurBihar.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bihar_Museum_02.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bihar_Museum_-_Patna_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pal_Tergar_Monastery%2C_Bodhgaya_%288717524714%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pal_Tergar_Monastery%2C_Bodhgaya_%288716404337%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Pal_Tergar_Monastery%2C_Bodhgaya_%288716404309%29.jpg"
       ]
     },
     {
-      "name": "Jaitpur",
-      "category": "cultural",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Jaitpur is a village and a Gram panchayat under Barahiya Tehsil in Lakhisarai district of Bihar, India.",
+      "name": "Nongarh Ancient Buddhist Stupa Mound",
+      "category": "heritage",
+      "distance": "16 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.5,
+      "description": "Massive 5th-century Buddhist brick stupa mound excavated on the banks of the Kiul River.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/JaitpurKart.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jaitpur in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_02.jpg",
+        "alt": "Nongarh Ancient Buddhist Stupa Mound - Wat Thai  Monastery was built in 1956 by Thailand Monarch at request of Indian Pr"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1d/JaitpurKart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Vidhan_Sabha_constituencies_of_Madhya_Pradesh_%2885-Jaitpur%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Indian_Tent_Turtle%2C_Jaitpur_Chambal%2C_Madhya_Pradesh%2C_India_imported_from_iNaturalist_photo_469830641.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_06.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_07.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_09.jpg"
+      ]
+    },
+    {
+      "name": "Rajauna Archaeological Site & Sculptures",
+      "category": "heritage",
+      "distance": "6 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "1 hr",
+      "rating": 4.5,
+      "description": "Pala-era archaeological mound that yielded exquisite sandstone Buddha and Ganesha idols.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_08.jpg",
+        "alt": "Rajauna Archaeological Site & Sculptures - Wat Thai  Monastery was built in 1956 by Thailand Monarch at request of India"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_11.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_14.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/96/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_16.jpg"
+      ]
+    },
+    {
+      "name": "Kiul Riverfront & Bridge Viewpoint",
+      "category": "nature",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1 hr",
+      "rating": 4.4,
+      "description": "Scenic riverbank providing gentle breezes and sunset reflections along the historic Kiul railway bridges.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_19.jpg",
+        "alt": "Kiul Riverfront & Bridge Viewpoint - Wat Thai  Monastery was built in 1956 by Thailand Monarch at request of Indian Prim"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_20.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/13/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_22.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/42/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_25.jpg"
+      ]
+    },
+    {
+      "name": "Lakhisarai Lai Sweet Heritage Market",
+      "category": "cultural",
+      "distance": "4 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 9:30 PM",
+      "duration": "45 mins",
+      "rating": 4.6,
+      "description": "Traditional bazaar famous for GI-recognized crispy Khoya-Lai, Ramdana Lai, and sweets.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Surigadha_bazar_lakhisarai.JPG",
+        "alt": "Lakhisarai Lai Sweet Heritage Market in Ashokdham Temple, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/14/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_26.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a1/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_27.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/55/Ruins_of_Nalanda_University_At_Nalanda_Bihar_in_India.jpg"
+      ]
+    },
+    {
+      "name": "Surya Mandir Pokharama",
+      "category": "spiritual",
+      "distance": "14 km",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 8:00 PM",
+      "duration": "1 hr",
+      "rating": 4.5,
+      "description": "Historic lakeside Sun temple celebrated for festive Chhath gatherings and ancient stone carvings.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nalanda_Ruins_%2822%29.jpg",
+        "alt": "Surya Mandir Pokharama - Nalanda University Ruins"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nalanda_Ruins_%2850%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/54/Nalanda_Ruins_%2853%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Nalanda_Ruins_%2860%29.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Balgudar & around",
+      "title": "Day 1 — Highlights of Ashokdham Temple",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Balgudar",
-          "note": "Balgudar is a village Located in the Lakhisarai District of Bihar, India, with a total 1200 families residing. The total population of the village is 7,326, of which 3654 are males while 3672 are females."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Indradamneshwar Mahadev Main Sanctum",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Nandnama",
-          "note": "Nandnama or Nand Nama is a village in the Ramgarh Chowk Block of the Lakhisarai district in the Indian state of Bihar. It is 14 km south of the administrative district headquarters in Lakhisarai and 134 km from the state capital, Patna."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Shringirishi Dham Hills & Sacred Springs",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Lakhisarai",
-          "note": "Lakhisarai (archaic spelling: Luckeesarai) town is the administrative headquarters of Lakhisarai district in the Indian state of Bihar. The town has a population of 99,979 (2011 census)."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Babhangawan & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Babhangawan",
-          "note": "Babhangawan is a village located in the Lakhisarai district of Bihar, India. The village has a population of 3,737 as of the 2011 Census."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Krimila",
-          "note": "Kṛmilā was a Buddhist religious and administrative centre located in what is now Lakhisarai district in Bihar. Spread in an area around 25–30 square kilometres, the city has a large number of historical monuments, particularly Buddhist Stupas and Hindu temples."
-        },
-        {
-          "time": "Evening",
-          "activity": "Jaitpur",
-          "note": "Jaitpur is a village and a Gram panchayat under Barahiya Tehsil in Lakhisarai district of Bihar, India."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Ashokdham Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Ashokdham%20Temple%20Stay%20Ashokdham%20Temple%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Ashokdham Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ashokdham%20Temple%20Ashokdham%20Temple%20Bihar%20hotel"
-    },
-    {
-      "name": "Ashokdham Temple Grand Hotel",
+      "name": "Hotel Grand Ashokdham",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Ashokdham%20Temple%20Grand%20Hotel%20Ashokdham%20Temple%20Bihar%20hotel"
-    },
-    {
-      "name": "Fortune Park Ashokdham Temple",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Ashokdham%20Temple%20Ashokdham%20Temple%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Ashokdham%20Temple%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Cultural",
-    "Sightseeing",
-    "Temples",
-    "Pilgrimage",
-    "Ghats",
-    "Festivals"
+    "Indradamneshwar Mahadev Main Sanctum",
+    "Shringirishi Dham Hills & Sacred Springs",
+    "Jalappa Asthan (Hilltop Shrine)",
+    "Nongarh Ancient Buddhist Stupa Mound",
+    "Rajauna Archaeological Site & Sculptures",
+    "Kiul Riverfront & Bridge Viewpoint",
+    "Lakhisarai Lai Sweet Heritage Market",
+    "Surya Mandir Pokharama"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Ashokdham Temple scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ashok_Dham.jpg",
+      "alt": "Ashokdham Temple - Ashokdham, Bihar Tourism, Lkr, अशोकधाम लखीसराय, By Guddu Raj Chauhan"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ashokdham_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ashokdham Temple photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ashokdham_Lakhisarai.jpg",
+      "alt": "Ashokdham Temple - अशोक धाम लखीसराय"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Lord_Shiva%2C_Ashokdham_.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ashokdham Temple photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ashok_Dham_Lakhisarai.jpg",
+      "alt": "Ashokdham Temple - अशोक धाम मंदिर लखीसराय, बिहार By Guddu Raj Chauhan"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Lord_Vishnu_Ashok_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ashokdham Temple photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ashok_Dham_Mandir.jpg",
+      "alt": "Ashokdham Temple - Indradamneshwar Mahadev"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ashok_Dham_Mandir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ashokdham Temple photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Saadh_Baba_Temple.jpg",
+      "alt": "Ashokdham Temple - Saadh Baba Temple"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Ashokdham Temple?",
-      "a": "The best time to visit Ashokdham Temple is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Ashokdham Temple?",
-      "a": "The nearest airport is Ashokdham Temple / nearest airport (30 km) and the nearest railway station is Patna Junction (104 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Ashokdham Temple?",
-      "a": "2 days are usually enough to cover the top attractions of Ashokdham Temple at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Ashokdham Temple?",
-      "a": "Stays in Ashokdham Temple start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Ashokdham Temple?",
-      "a": "The top attractions are Balgudar, Nandnama, Lakhisarai, Babhangawan, Krimila."
+      "q": "What are the primary highlights of Ashokdham Temple?",
+      "a": "Ashokdham Temple (Indradamneshwar Mahadev Mandir) in Lakhisarai enshrines a colossal ancient black granite Shiva Lingam discovered by boy Ashok in 1977."
     }
   ],
   "seo": {
     "title": "Ashokdham Temple Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Ashokdham Mandir also known as Indradamneshwar Mahadev Mandir is located at ASHOK DHAM RAJAUNA CHOUKI in Lakhisarai district, Bihar. Plan your Ashokdham Temple trip: 6 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Ashokdham Temple (Indradamneshwar Mahadev Mandir) in Lakhisarai enshrines a colossal ancient black granite Shiva Lingam discovered by boy Ashok in 1977. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=ashokdham-temple",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ashokdham_Lakhisarai.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ashok_Dham.jpg",
     "keywords": [
       "Ashokdham Temple travel guide",
       "places to visit in Ashokdham Temple",
-      "Ashokdham Temple hotels",
-      "best time to visit Ashokdham Temple",
-      "how to reach Ashokdham Temple",
-      "Bihar tourism"
+      "Ashokdham Temple Bihar tourism"
     ]
   }
 }

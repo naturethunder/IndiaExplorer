@@ -15,10 +15,14 @@ This skill defines the autonomous image acquisition and quality enforcement work
    - Minimum resolution width 1280px or Wikimedia original full-resolution.
    - Every gallery item must have descriptive `alt` text.
 
-2. **Rule 2 — Nearby Places (3 Unique Images per Place)**
-   - Every place in `topPlaces[]` must have a unique `image.src` (card thumbnail) and exactly 3 unique image URLs in `photos[]`.
-   - Photos must accurately reflect the specific place (temple, fort, waterfall, sanctuary, garden, beach, lake).
-   - Every place image must have descriptive `alt` text.
+2. **Rule 2 — Nearby Places (Flexible Count, 3 Photos per Existing Place)**
+   - The number of places in `topPlaces[]` is **non-mandatory / flexible** (can be 1, 2, 3, 4, 5, 6, 7, 8, etc.).
+   - **Preserve existing places**: Do NOT force-add or auto-generate dummy places to hit an artificial number. Keep whatever valid places already exist.
+   - For every place that exists:
+     - 1 unique `image.src` (card thumbnail).
+     - Exactly 3 unique image URLs in `photos[]`.
+     - Photos must accurately reflect the specific place.
+     - Descriptive `alt` text.
 
 3. **Rule 3 — Zero Duplicate URLs**
    - No image URL may be reused across distinct items in the same destination JSON.

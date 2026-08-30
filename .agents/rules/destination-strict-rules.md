@@ -5,15 +5,16 @@ They stack on top of `ui-ux-pro-max` skill rules.
 
 ---
 
-## Rule 1 — Destination Hero: 5 Unique HD Images
+## Rule 1 — Destination Hero: 5 Unique HD / 4K Landscape Images
 
 Every destination JSON must have **exactly 5 hero/gallery images**, all different.
 
-- Sources allowed: **Pexels**, **Unsplash**, **Wikimedia Commons** (original full-resolution), **Pixabay**, **Google Places Photos**, **Openverse**, **Mapillary**
-- Each image must be **HD quality** — minimum 1280px wide
-- All 5 must show the **actual destination** — no generic maps, district graphics, or unrelated photos
-- The `heroImage.src` must be one of these 5
-- The `gallery[]` array must contain all 5 unique URLs
+- Sources allowed: **Wikimedia Commons** (original full-resolution), **Pexels**, **Unsplash**, **Pixabay**, **Google Places Photos**, **Openverse**, **Mapillary**
+- Each image must be **True HD / 4K Landscape quality** — minimum 1280px wide (recommended 1920×1080 to 4608×2592), widescreen aspect ratio (`1.25` to `1.9`)
+- Portrait orientation (< 1.0 ratio) and thin banner slices (< 300px height) are strictly prohibited
+- All 5 must show the **actual destination** — no generic maps, district graphics, audio files, coins, or unrelated photos
+- The `heroImage.src` must be identical to `gallery[0].src`
+- The `gallery[]` array must contain all 5 unique URLs with descriptive `alt`, `title`, and `caption` fields
 
 ```json
 "heroImage": {

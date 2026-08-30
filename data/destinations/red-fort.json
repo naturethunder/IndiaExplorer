@@ -6,567 +6,426 @@
   "region": "Delhi",
   "type": "heritage",
   "badge": "Popular",
-  "tagline": "Red Fort — heritage city of Delhi",
+  "tagline": "Red Fort — Iconic Mughal Citadel & UNESCO World Heritage Symbol",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/17161606/pexels-photo-17161606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Red Fort photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
+    "alt": "Red Fort iconic view in Delhi, India"
   },
   "overview": {
-    "short": "The Red Fort (Lal Qila in Hindi; Hindi pronunciation: [laːl 'qɪlaː]) is a historic Mughal fort located in the Old Delhi area of Delhi, India.",
-    "description": "The Red Fort (Lal Qila in Hindi; Hindi pronunciation: [laːl 'qɪlaː]) is a historic Mughal fort located in the Old Delhi area of Delhi, India. Serving as the main residence of the Mughal emperors, it was commissioned by Emperor Shah Jahan on the 12th of May 1639; the fort was constructed following his decision to shift the Mughal capital from Agra to Delhi. Originally adorned in red and white, the fort's design is attributed to Ustad Ahmad Lahori, the architect of the Taj Mahal. The Red Fort is a prominent example of Mughal architecture from Shah Jahan's reign, combining Persian and Indian arch",
+    "short": "Red Fort (Lal Qila) in Old Delhi is a 17th-century UNESCO World Heritage Mughal fortress constructed by Emperor Shah Jahan from red sandstone.",
+    "description": "Rising majestically above Netaji Subhash Marg in Old Delhi, the Red Fort (Lal Qila) was commissioned by Mughal Emperor Shah Jahan in 1638 when he shifted his capital from Agra to Shahjahanabad. Enclosed within massive 33-metre-high red sandstone octagonal battlements, the complex houses imperial marvels including the Lahori Gate, Chhatta Chowk, Diwan-i-Aam, Diwan-i-Khas, Moti Masjid, and the lush Hayat Bakhsh Bagh gardens.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "UNESCO World Heritage Site",
+      "Mughal Architecture",
+      "Diwan-i-Khas & Diwan-i-Aam",
+      "Sound & Light Show"
     ],
-    "altitude": null,
-    "rating": 4.4,
-    "reviewCount": 16792,
-    "minPrice": 900,
-    "distanceFromDelhi": 6,
-    "about": "The Red Fort (Lal Qila in Hindi; Hindi pronunciation: [laːl 'qɪlaː]) is a historic Mughal fort located in the Old Delhi area of Delhi, India. Serving as the main residence of the Mughal emperors, it was commissioned by Emperor Shah Jahan on the 12th of May 1639; the fort was constructed following his decision to shift the Mughal capital from Agra to Delhi. Originally adorned in red and white, the fort's design is attributed to Ustad Ahmad Lahori, the architect of the Taj Mahal. The Red Fort is a prominent example of Mughal architecture from Shah Jahan's reign, combining Persian and Indian arch"
+    "altitude": "216 m",
+    "rating": 4.7,
+    "reviewCount": 52000,
+    "minPrice": 1200,
+    "distanceFromDelhi": 0,
+    "about": "The Red Fort stands as the historic epicenter of Delhi and the symbol of Indian sovereignty where the Prime Minister unfurls the national tricolor every Independence Day. Its synthesis of Persian, Timurid, and Hindu architectural traditions created the zenith of Mughal palatial design."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 28.655833333,
-    "lng": 77.240277777,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 28.6562,
+    "lng": 77.241,
+    "tempSummer": "28–42°C",
+    "tempWinter": "8–24°C"
   },
   "howToReach": {
+    "nearestAirport": {
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 20
+    },
+    "nearestRailway": {
+      "name": "Old Delhi Railway Station (DLI)",
+      "distance": 2
+    },
+    "roadNote": "Conveniently accessible via Lal Qila Metro Station (Violet Line) and Chandni Chowk Metro Station (Yellow Line). Auto-rickshaws, e-rickshaws, and app-based cabs operate round the clock.",
     "routes": [
       {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 8,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 6 km · road approx."
+        "from": "Indira Gandhi Airport (DEL)",
+        "city": "Delhi Airport",
+        "state": "Delhi",
+        "distance": 20,
+        "byCar": "45–60 mins",
+        "byTrain": "Airport Express Metro to New Delhi + Yellow Line",
+        "byAir": "Direct connectivity",
+        "via": "Vandemataram Marg & NH48"
+      },
+      {
+        "from": "New Delhi Railway Station (NDLS)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "distance": 4,
+        "byCar": "15–20 mins",
+        "byTrain": "Yellow Line Metro (10 mins)",
+        "byAir": "Not applicable",
+        "via": "Netaji Subhash Marg"
       },
       {
         "from": "Gurugram (Haryana)",
         "city": "Gurugram",
         "state": "Haryana",
-        "distance": 38,
-        "byCar": "1–2 hrs",
-        "byTrain": "Local trains / road",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 30 km · road approx."
+        "distance": 35,
+        "byCar": "1–1.5 hrs",
+        "byTrain": "Yellow Line direct metro",
+        "byAir": "Not applicable",
+        "via": "NH48"
       },
       {
-        "from": "Agra (Uttar Pradesh)",
-        "city": "Agra",
+        "from": "Noida (Uttar Pradesh)",
+        "city": "Noida",
         "state": "Uttar Pradesh",
-        "distance": 226,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 181 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 250,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 200 km · road approx."
-      },
-      {
-        "from": "Chandigarh (Chandigarh UT)",
-        "city": "Chandigarh",
-        "state": "Chandigarh UT",
-        "distance": 294,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 235 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 301,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 241 km · road approx."
-      },
-      {
-        "from": "Shimla (Himachal Pradesh)",
-        "city": "Shimla",
-        "state": "Himachal Pradesh",
-        "distance": 340,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 272 km · road approx."
-      },
-      {
-        "from": "Amritsar (Punjab)",
-        "city": "Amritsar",
-        "state": "Punjab",
-        "distance": 503,
-        "byCar": "8–11 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 402 km · road approx."
-      },
-      {
-        "from": "Jammu (Jammu & Kashmir UT)",
-        "city": "Jammu",
-        "state": "Jammu & Kashmir UT",
-        "distance": 634,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 507 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 750,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 600 km · road approx."
-      },
-      {
-        "from": "Leh (Ladakh UT)",
-        "city": "Leh",
-        "state": "Ladakh UT",
-        "distance": 765,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 612 km · road approx."
-      },
-      {
-        "from": "Ahmedabad (Gujarat)",
-        "city": "Ahmedabad",
-        "state": "Gujarat",
-        "distance": 976,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 781 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 1065,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 852 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1070,
-        "byCar": "18–24 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 856 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1168,
-        "byCar": "19–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 934 km · road approx."
+        "distance": 22,
+        "byCar": "40–50 mins",
+        "byTrain": "Blue Line to Mandi House + Violet Line",
+        "byAir": "Not applicable",
+        "via": "DND Flyway & Ring Road"
       }
-    ],
-    "nearestAirport": {
-      "name": "Red Fort / nearest airport",
-      "distance": 30
-    },
-    "nearestRailway": {
-      "name": "New Delhi Railway Station",
-      "distance": 2
-    },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    ]
   },
   "topPlaces": [
     {
-      "name": "Indian War Memorial Museum",
+      "name": "Lahori Gate & Chhatta Chowk",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Indian War Memorial Museum is in the Naubat Khana of the Red Fort in Delhi, northern India. It was built in 1919 as a tribute to commemorate the soldiers who had joined the First World War in India or abroad on behalf of the British Empire.",
+      "distance": "Entrance",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "45 mins",
+      "rating": 4.8,
+      "description": "The grand ceremonial main gate of the fort leading into the historic vaulted Mughal shopping arcade.",
       "image": {
-        "src": "https://images.pexels.com/photos/30032907/pexels-photo-30032907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Indian War Memorial Museum in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Red_Fort_-_Lahori_Gate_01.JPG",
+        "alt": "Lahori Gate & Chhatta Chowk in Red Fort, Delhi"
       },
       "photos": [
-        "https://images.pexels.com/photos/4144015/pexels-photo-4144015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/14520365/pexels-photo-14520365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/1/14/%27Naubat_Khana%27_at_RED_FORT%2C_Delhi%2C_India.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Red_Fort_-_Lahori_Gate_Information.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dc/Red_Fort_-_Lahori_Gate_02.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Red_Fort_-_Lahori_Gate_03.JPG"
       ]
     },
     {
-      "name": "Naubat Khana (Red Fort)",
+      "name": "Diwan-i-Aam (Hall of Public Audience)",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Naubat Khana, or Naqqar Khana, is the drum house that stands at the entrance between the outer and inner court at the Red Fort in Old Delhi. It is believed by some historians to be the site of the assassinations of Mughal emperors Jahandar Shah and Farrukhsiyar in the early 18th century.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Covered_market_past_the_Lahore_gate_entrance_in_Red_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Naubat Khana (Red Fort) in Delhi, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/Diwan-e-Khas-2022.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/67/Diwan-i-Aam_across_lawn.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Chhatta Chowk",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "The Chhatta Chowk (transl. Covered Bazaar) is a long passage way that contains a bazaar, or market, located in the Red Fort of Old Delhi, India. The Chhatta Chowk is located behind the Lahori Gate and is set within an arched passage.",
-      "image": {
-        "src": "https://images.pexels.com/photos/1362906/pexels-photo-1362906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Chhatta Chowk in Delhi, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/38043950/pexels-photo-38043950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/2/29/Fuerte_Rojo-Delhi-India62.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Fuerte_Rojo-Delhi-India69.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Lahori Gate, Red Fort, Delhi",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Lahori Gate is the main entrance to the Red Fort in Old Delhi. The fort is approached through a covered street flanked by arcaded apartments called the Chhatta Chowk.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Close_up_of_Red_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Lahori Gate, Red Fort, Delhi in Delhi, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/12409661/pexels-photo-12409661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/19926950/pexels-photo-19926950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ghulam_Ali_Khan_004.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Diwan-i-Am (Red Fort)",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "distance": "Central Complex",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "30 mins",
       "rating": 4.7,
-      "description": "The Diwan-i-Am, or Hall of Audience, is a building in the Red Fort of Old Delhi where the Mughal emperor Shah Jahan (1592–1666) and his successors received members of the general public and heard their grievances. The inner main court to which the Nakkarkhana led was 540 feet broad, 420 feet deep, and surrounded by arcade galleries, where chieftains (umaras) on duty were posted.",
+      "description": "Magnificent columned red sandstone hall with an ornate carved white marble throne canopy where emperors heard public grievances.",
       "image": {
-        "src": "https://images.pexels.com/photos/19149644/pexels-photo-19149644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Diwan-i-Am (Red Fort) in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Reminiscences_of_Imperial_Delhi_The_Diwan-i_%E2%80%98Am_from_the_west.png",
+        "alt": "Diwan-i-Aam (Hall of Public Audience) in Red Fort, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/35616888/pexels-photo-35616888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/35616883/pexels-photo-35616883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Reminiscences_of_Imperial_Delhi_The_imperial_jharoka_in_the_Diwan-i_%E2%80%98Am.png",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Diwan-i_Am%2C_Red_Fort%2C_New_Delhi_%2802%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c7/Diwan-i_Am%2C_Red_Fort%2C_New_Delhi.jpg"
       ]
     },
     {
-      "name": "Moti Masjid (Red Fort)",
+      "name": "Diwan-i-Khas (Hall of Private Audience)",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "The Moti Masjid (lit. 'Pearl mosque') is a 17th-century historical mosque, not open for worship, inside the Red Fort complex in Old Delhi, India. It was built by Mughal emperor Aurangzeb, damaged during the Siege of Delhi, and subsequently restored by the British.",
+      "distance": "Riverside Complex",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "30 mins",
+      "rating": 4.9,
+      "description": "Exquisite white marble pavilion inlaid with semi-precious stones that once housed the legendary Peacock Throne.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Woman_with_veena%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Moti Masjid (Red Fort) in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Diwan-i-Khas-Fatehpur-Fatehpur_Sikri_India0017.JPG",
+        "alt": "Diwan-i-Khas (Hall of Private Audience) in Red Fort, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/44/Moti_Masjid%2C_Red_Fort%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/77/Jama_Masjid%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Diwan-i-Khas-Fatehpur-Fatehpur_Sikri_India0013.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/2/24/Diwan-i-Khas-Fatehpur-Fatehpur_Sikri_India0022.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Diwan-i_Khas%2C_Red_Fort.jpg"
       ]
     },
     {
-      "name": "Hayat Bakhsh Bagh",
+      "name": "Moti Masjid (Pearl Mosque)",
       "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "The Hayat Baksh Bagh, which means \"Life-bestowing garden\", is the largest of the gardens in the Red Fort in Old Delhi . The North Eastern portion of the Red Fort.",
+      "distance": "Private Quarters",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "20 mins",
+      "rating": 4.6,
+      "description": "A pristine three-domed white marble private mosque built by Emperor Aurangzeb in 1659.",
       "image": {
-        "src": "https://images.pexels.com/photos/29548260/pexels-photo-29548260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Hayat Bakhsh Bagh in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Moti_Masjid%2C_Red_Fort%2C_Delhi.jpg",
+        "alt": "Moti Masjid (Pearl Mosque) in Red Fort, Delhi"
       },
       "photos": [
-        "https://images.unsplash.com/photo-1566552881560-0be86c532107?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/37790656/pexels-photo-37790656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/20045160/pexels-photo-20045160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/Moti_Masjid%2CRed_Fort.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Moti_Masjid%2C_Red_Fort%2C_Delhi%2C_India.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Moti_Masjid_%28Red_Fort%29.jpg"
       ]
     },
     {
-      "name": "Rang Mahal (Red Fort)",
-      "category": "heritage",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "The Rang Mahal or Palace of Colour is located in the Red Fort, Old Delhi. It originally served as a part of the imperial harem.",
+      "name": "Hayat Bakhsh Bagh & Zafar Mahal",
+      "category": "nature",
+      "distance": "Northern Gardens",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "30 mins",
+      "rating": 4.6,
+      "description": "Expansive Mughal pleasure garden with fountains, water channels, and the red sandstone Zafar Mahal pavilion in the reservoir.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pink_dress_with_embroidery%2C_detail%2C_Crafts_Museum%2C_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rang Mahal (Red Fort) in Delhi, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Red_Fort_65771487_0479aebecc_o.jpg",
+        "alt": "Hayat Bakhsh Bagh & Zafar Mahal in Red Fort, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Karima_Delli%2C_Delhi%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sansad_Bhavan%2C_Delhi%2C_BNK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/dc/Lotus_Temple_in_New_Delhi_03-2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/British_barracks_within_Red_Fort%2C_Delhi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Red_Fort_1.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/India-0111_-_Flickr_-_archer10_%28Dennis%29.jpg"
+      ]
+    },
+    {
+      "name": "Rang Mahal (Palace of Colors)",
+      "category": "heritage",
+      "distance": "Zenana Complex",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "20 mins",
+      "rating": 4.6,
+      "description": "Imperial wives quarters featuring gilded ceilings and a central marble lotus pool fed by the Stream of Paradise.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/RedFortDelhi-Rang-Mahal-20080210-1.jpg",
+        "alt": "Rang Mahal (Palace of Colors) in Red Fort, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/RedFortDelhi-Rang-Mahal-20080210-2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/RedFortDelhi-Rang-Mahal-20080210-3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Red_Fort_04.jpg"
+      ]
+    },
+    {
+      "name": "Mumtaz Mahal & Archaeological Museum",
+      "category": "museum",
+      "distance": "Southern Pavilion",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Riverside palace converted into an archaeological museum exhibiting Mughal weapons, manuscripts, astronomical tools, and textiles.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Red_Fort_8.JPG",
+        "alt": "Mumtaz Mahal & Archaeological Museum in Red Fort, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mumtaz_Mahal_Museum%2C_Red_Fort2.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/4/43/Mumtaz_Mahal_Museum%2C_Red_Fort3.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/Mumtaz_Mahal_Museum%2C_Red_Fort.JPG"
+      ]
+    },
+    {
+      "name": "Naubat Khana (Drum House)",
+      "category": "heritage",
+      "distance": "Main Entrance",
+      "entryFee": "Included in entry",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "20 mins",
+      "rating": 4.5,
+      "description": "Historic musicians gallery where state heralds played ceremonial drums, now housing the Indian War Memorial Museum.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Artistic_work_at_Naubat_Khana%2C_Red_Fort%2C_Delhi.JPG",
+        "alt": "Naubat Khana (Drum House) in Red Fort, Delhi"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b8/Naubat_Khana%2C_Red_Fort%2C_Delhi_-_View_from_inside_01.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a0/Naubat_Khana_-_Eastern_Facade_-_Red_Fort_-_Delhi_2014-05-13_3208.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Naubat_Khana_-_North-east_View_-_Red_Fort_-_Delhi_2014-05-13_3204.JPG"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Indian War Memorial Museum & around",
+      "title": "Day 1 — Imperial Mughal Citadel Tour",
       "items": [
         {
           "time": "Morning",
-          "activity": "Indian War Memorial Museum",
-          "note": "The Indian War Memorial Museum is in the Naubat Khana of the Red Fort in Delhi, northern India. It was built in 1919 as a tribute to commemorate the soldiers who had joined the First World War in India or abroad on behalf of the British Empire."
+          "activity": "Lahori Gate & Chhatta Chowk",
+          "note": "Enter through the monumental gate and explore the heritage covered bazaar."
+        },
+        {
+          "time": "Mid-Morning",
+          "activity": "Diwan-i-Aam & Diwan-i-Khas",
+          "note": "Marvel at the marble throne canopy and the exquisite inlaid private pavilions."
         },
         {
           "time": "Afternoon",
-          "activity": "Naubat Khana (Red Fort)",
-          "note": "The Naubat Khana, or Naqqar Khana, is the drum house that stands at the entrance between the outer and inner court at the Red Fort in Old Delhi. It is believed by some historians to be the site of the assassinations of Mughal emperors Jahandar Shah and Farrukhsiyar in the early 18th century."
+          "activity": "Moti Masjid, Hayat Bakhsh Bagh & Museums",
+          "note": "Walk through imperial pleasure gardens and view artifacts at Mumtaz Mahal museum."
         },
         {
           "time": "Evening",
-          "activity": "Chhatta Chowk",
-          "note": "The Chhatta Chowk (transl. Covered Bazaar) is a long passage way that contains a bazaar, or market, located in the Red Fort of Old Delhi, India. The Chhatta Chowk is located behind the Lahori Gate and is set within an arched passage."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Lahori Gate, Red Fort, Delhi & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Lahori Gate, Red Fort, Delhi",
-          "note": "The Lahori Gate is the main entrance to the Red Fort in Old Delhi. The fort is approached through a covered street flanked by arcaded apartments called the Chhatta Chowk."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Diwan-i-Am (Red Fort)",
-          "note": "The Diwan-i-Am, or Hall of Audience, is a building in the Red Fort of Old Delhi where the Mughal emperor Shah Jahan (1592–1666) and his successors received members of the general public and heard their grievances. The inner main court to which the Nakkarkhana led was 540 feet broad, 420 feet deep, and surrounded by arcade galleries, where chieftains (umaras) on duty were posted."
-        },
-        {
-          "time": "Evening",
-          "activity": "Moti Masjid (Red Fort)",
-          "note": "The Moti Masjid (lit. 'Pearl mosque') is a 17th-century historical mosque, not open for worship, inside the Red Fort complex in Old Delhi, India. It was built by Mughal emperor Aurangzeb, damaged during the Siege of Delhi, and subsequently restored by the British."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Hayat Bakhsh Bagh & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Hayat Bakhsh Bagh",
-          "note": "The Hayat Baksh Bagh, which means \"Life-bestowing garden\", is the largest of the gardens in the Red Fort in Old Delhi . The North Eastern portion of the Red Fort."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Rang Mahal (Red Fort)",
-          "note": "The Rang Mahal or Palace of Colour is located in the Red Fort, Old Delhi. It originally served as a part of the imperial harem."
+          "activity": "Light & Sound Show / Chandni Chowk Walk",
+          "note": "Watch the evening laser/sound show bringing 300 years of Mughal history alive."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Red Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "name": "Haveli Dharampura",
+      "type": "heritage",
+      "tier": "luxury",
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.8,
+      "reviews": 1450,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Heritage Courtyard",
+        "Rooftop Dining",
+        "Kathak Shows",
+        "Free WiFi",
+        "AC"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "UNESCO Heritage",
+        "Old Delhi Experience"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Red%20Fort%20Stay%20Red%20Fort%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Haveli%20Dharampura%20Old%20Delhi%20hotel"
     },
     {
-      "name": "Airbnb: Stay in Red Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Red%20Fort%20Red%20Fort%20Delhi%20hotel"
-    },
-    {
-      "name": "Red Fort Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "name": "Maidens Hotel New Delhi",
+      "type": "heritage hotel",
+      "tier": "luxury",
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.6,
+      "reviews": 1980,
       "amenities": [
         "Pool",
+        "Garden Lounge",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Gym",
+        "Bar"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Colonial Heritage",
+        "Lush Gardens"
       ],
-      "url": "https://www.google.com/search?q=Red%20Fort%20Grand%20Hotel%20Red%20Fort%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=Maidens%20Hotel%20Civil%20Lines%20Delhi"
     },
     {
-      "name": "Marriott Red Fort",
-      "type": "resort",
+      "name": "The Lalit New Delhi",
+      "type": "hotel",
       "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "priceMin": 7500,
+      "priceMax": 14000,
+      "rating": 4.5,
+      "reviews": 3200,
       "amenities": [
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Gym",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Central Location",
+        "5 Star"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Red%20Fort%20Red%20Fort%20Delhi%20hotel"
+      "url": "https://www.google.com/search?q=The%20Lalit%20New%20Delhi%20Connaught%20Place"
+    },
+    {
+      "name": "Hotel Broadway Old Delhi",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.2,
+      "reviews": 890,
+      "amenities": [
+        "Restaurant",
+        "Room Service",
+        "AC",
+        "WiFi"
+      ],
+      "tags": [
+        "Value",
+        "Near Red Fort"
+      ],
+      "url": "https://www.google.com/search?q=Hotel%20Broadway%20Asaf%20Ali%20Road%20Delhi"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Heritage walks",
-    "Forts",
-    "Architecture",
-    "History",
-    "Local Bazaars"
+    "Lahori Gate & Chhatta Chowk",
+    "Diwan-i-Aam (Hall of Public Audience)",
+    "Diwan-i-Khas (Hall of Private Audience)",
+    "Moti Masjid (Pearl Mosque)",
+    "Hayat Bakhsh Bagh & Zafar Mahal",
+    "Rang Mahal (Palace of Colors)",
+    "Mumtaz Mahal & Archaeological Museum",
+    "Naubat Khana (Drum House)"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Red_Fort_in_Delhi_03-2016_img2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Red Fort view 1 — Red Fort in Delhi 03-2016 img2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
+      "alt": "Red Fort - Fortifications of the <a href=\"https://en.wikipedia.org/wiki/Red_Fort\" class=\"extiw\" title=\"en:Red Fort\">Red"
     },
     {
-      "src": "https://images.pexels.com/photos/19149637/pexels-photo-19149637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Red Fort photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/20191203_Naubat_Khana%2C_Red_Fort%2C_Delhi_0453_6340_DxO.jpg",
+      "alt": "Red Fort - Naubat Khana, Red Fort, Delhi"
     },
     {
-      "src": "https://images.pexels.com/photos/19926945/pexels-photo-19926945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Red Fort photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/20191203_Naubat_Khana%2C_Red_Fort%2C_Delhi_0456_6348_DxO.jpg",
+      "alt": "Red Fort - Naubat Khana, Red Fort, Delhi"
     },
     {
-      "src": "https://images.pexels.com/photos/19926951/pexels-photo-19926951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Red Fort photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/20191203_Diwan-i-Am_-_Red_Fort_-_Delhi_-_0458_6351_DxO.jpg",
+      "alt": "Red Fort - Diwan-i-Am, Red Fort, Delhi"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/20191203_Naubat_Khana%2C_Red_Fort%2C_Delhi_0453_6340_DxO.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Red Fort photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/20191203_Czerwony_Fort_w_Delhi_0528_6405_DxO.jpg",
+      "alt": "Red Fort - Red Fort, Delhi"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Red Fort?",
-      "a": "The best time to visit Red Fort is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "The best time to visit Red Fort is October to March when Delhi weather is pleasantly cool. Morning hours (9:30 AM) are best to avoid crowds."
     },
     {
-      "q": "How do I reach Red Fort?",
-      "a": "The nearest airport is Red Fort / nearest airport (30 km) and the nearest railway station is New Delhi Railway Station (2 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "q": "Which is the nearest metro station to Red Fort?",
+      "a": "Lal Qila Metro Station on the Violet Line is right opposite the main gate, and Chandni Chowk on the Yellow Line is an 8-minute walk away."
     },
     {
-      "q": "How many days are enough for Red Fort?",
-      "a": "3 days are usually enough to cover the top attractions of Red Fort at a relaxed pace."
+      "q": "Is Red Fort open on Mondays?",
+      "a": "No, Red Fort is closed for visitors on Mondays for routine maintenance."
     },
     {
-      "q": "How much does a hotel cost in Red Fort?",
-      "a": "Stays in Red Fort start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Red Fort?",
-      "a": "The top attractions are Indian War Memorial Museum, Naubat Khana (Red Fort), Chhatta Chowk, Lahori Gate, Red Fort, Delhi, Diwan-i-Am (Red Fort)."
+      "q": "What are the top attractions inside Red Fort?",
+      "a": "Key highlights include Lahori Gate, Diwan-i-Aam, Diwan-i-Khas, Moti Masjid, Hayat Bakhsh Bagh, and the Archaeological Museum."
     }
   ],
   "seo": {
     "title": "Red Fort Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "The Red Fort (Lal Qila in Hindi; Hindi pronunciation: [laːl 'qɪlaː]) is a historic Mughal fort located in the Old Delhi area of Delhi, India. Plan your Red Fort trip: 8 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Red Fort (Lal Qila) in Old Delhi is a 17th-century UNESCO World Heritage Mughal fortress constructed by Emperor Shah Jahan from red sandstone. Plan your visit with 8 top places, stays from ₹1200/night, best time, and routes.",
     "canonical": "destination.html?slug=red-fort",
-    "ogImage": "https://images.pexels.com/photos/17161606/pexels-photo-17161606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_Fort_in_Delhi_03-2016_img3.jpg",
     "keywords": [
       "Red Fort travel guide",
       "places to visit in Red Fort",
-      "Red Fort hotels",
-      "best time to visit Red Fort",
-      "how to reach Red Fort",
-      "Delhi tourism"
+      "Red Fort Delhi",
+      "Delhi tourism",
+      "best time to visit Red Fort"
     ]
   }
 }

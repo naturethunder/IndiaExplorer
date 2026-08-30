@@ -3,470 +3,386 @@
   "title": "Rohtasgarh Fort",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Kaimur Plateau (Southwestern Bihar)",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Rohtasgarh Fort — heritage city of Bihar",
+  "badge": "Heritage",
+  "tagline": "Rohtasgarh Fort — The Impregnable Hilltop Citadel of King Harishchandra & Sher Shah Suri",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Inside_Takht-e-Badshahi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Rohtasgarh Fort photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rohtasgarh_Fort_Entrance.jpg",
+    "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
   },
   "overview": {
-    "short": "The Rohtasgarh or Rohtas Fort is located in the Son River valley, in the small town of Rohtas in Bihar, India.",
-    "description": "The Rohtasgarh or Rohtas Fort is located in the Son River valley, in the small town of Rohtas in Bihar, India.",
+    "short": "Perched atop a 1,500-foot sheer cliff on the Kaimur plateau, Rohtasgarh is one of India’s largest and most formidable ancient hill fortresses, spanning 42 square kilometers.",
+    "description": "Commanding breathtaking panoramic views of the Son River valley, Rohtasgarh Fort was founded according to legend by Rohitashwa, son of King Harishchandra of Ayodhya. Strategically reinforced by Mughal general Raja Man Singh in the 16th century and captured by Sher Shah Suri in 1539, the immense fort complex encompasses royal palace quarters, the multi-storey Aina Mahal, intricate Hathiya Pol stone gates, Jami Masjid, Phulbari gardens, and hanging waterfalls cascading down the rugged Kaimur scarps.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Sprawling 42-sq-km Hill Citadel",
+      "Aina Mahal (Mirror Palace of Raja Man Singh)",
+      "Hathiya Pol (Monumental Elephant Gates)",
+      "Tutla Bhawani Waterfall Gorge"
     ],
-    "altitude": null,
-    "rating": 4.5,
-    "reviewCount": 8323,
-    "minPrice": 900,
-    "distanceFromDelhi": 801,
-    "about": "The Rohtasgarh or Rohtas Fort is located in the Son River valley, in the small town of Rohtas in Bihar, India."
+    "altitude": "450 m",
+    "rating": 4.7,
+    "reviewCount": 9400,
+    "minPrice": 1300,
+    "distanceFromDelhi": 960,
+    "about": "An adventurous trekker and history lover’s paradise where ancient stone arches, steep cliff faces, Mughal courtyards, and virgin jungle waterfalls meet on the Kaimur plateau."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 24.6233338,
-    "lng": 83.9177424,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 24.63,
+    "lng": 83.91,
+    "tempSummer": "27–43°C",
+    "tempWinter": "7–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 154,
-        "byCar": "3–4 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 123 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 205,
-        "byCar": "3–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 164 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 251,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 201 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 553,
-        "byCar": "9–12 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 442 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 633,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 506 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 650,
-        "byCar": "11–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 520 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 698,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 558 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 785,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 628 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 848,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 678 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 940,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 752 km · road approx."
-      },
-      {
-        "from": "Visakhapatnam (Andhra Pradesh)",
-        "city": "Visakhapatnam",
-        "state": "Andhra Pradesh",
-        "distance": 969,
-        "byCar": "16–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 775 km · road approx."
-      },
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 1001,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 801 km · road approx."
-      },
-      {
-        "from": "Guwahati (Assam)",
-        "city": "Guwahati",
-        "state": "Assam",
-        "distance": 1004,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 803 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 1009,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 807 km · road approx."
-      },
-      {
-        "from": "Shillong (Meghalaya)",
-        "city": "Shillong",
-        "state": "Meghalaya",
-        "distance": 1013,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 810 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Rohtasgarh Fort / nearest airport",
-      "distance": 30
+      "name": "Varanasi Lal Bahadur Shastri Airport (VNS)",
+      "distance": 140
     },
     "nearestRailway": {
-      "name": "Gaya Junction",
-      "distance": 111
+      "name": "Dehri-on-Sone / Sasaram Junction",
+      "distance": 45
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Accessible via NH-19 (Grand Trunk Road) to Dehri-on-Sone or Sasaram, followed by SH-15 to Akbarpur base village.",
+    "routes": [
+      {
+        "from": "Sasaram",
+        "city": "Sasaram",
+        "state": "Bihar",
+        "distance": 55,
+        "byCar": "1.5 hrs",
+        "byTrain": "Train to Dehri-on-Sone",
+        "byAir": "Via Varanasi Airport",
+        "via": "SH-15 via Rohtas Block"
+      },
+      {
+        "from": "Varanasi",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 140,
+        "byCar": "3.5 hrs",
+        "byTrain": "Direct train to Sasaram/Dehri",
+        "byAir": "Via Varanasi Airport",
+        "via": "NH-19 Eastbound"
+      },
+      {
+        "from": "Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "distance": 165,
+        "byCar": "4 hrs",
+        "byTrain": "Express train to Dehri (2.5 hrs)",
+        "byAir": "Via Patna Airport",
+        "via": "NH-139 / NH-19"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Maghigawan",
-      "category": "cultural",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Maghigawan is a village in India, located in Rohtas District, Bihar. According to the 2011 census of India, it has a population of 1904 people.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sadhu_V%C3%A2r%C3%A2nas%C3%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Maghigawan in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Varanasi_2010_ghats3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/29/Varanasi_2010_ghats4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Varanasi_Munshi_Ghat3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Akbarpur, Rohtas",
+      "name": "Rohtasgarh Palace & Citadel Ramparts",
       "category": "heritage",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Akbarpur is a village in Rohtas block of Rohtas district, Bihar, India. Located on the bank of the Son river, a short distance east of the historic Rohtasgarh fort.",
+      "distance": "Centre",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "3.5 hrs",
+      "rating": 4.8,
+      "description": "Imposing stone palace citadel built by Raja Man Singh featuring royal darbar halls, residential quarters, hidden tunnels, and bastions overlooking the Son River.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rothasgarh_Fort_28.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Akbarpur, Rohtas in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/View_of_the_Rohtasgarh_Fort_from_downhill.jpg",
+        "alt": "Rohtasgarh Palace & Citadel Ramparts in Rohtasgarh Fort, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/65/Ruins_of_Aina_Mahal.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/08/View_from_fourth_floor.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Varanasi_2010_Ahilyabai_Ghat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Rohtasgarh_fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/46/Rothasgarh_Fort_18.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Rothasgarh_Fort_30.jpg"
       ]
     },
     {
-      "name": "Banjari, Bihar",
-      "category": "scenic",
-      "distance": "8 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Aina Mahal (Mirror Palace of Raja Man Singh)",
+      "category": "heritage",
+      "distance": "Fort Complex",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "1 hr",
       "rating": 4.7,
-      "description": "Banjari is a small town at the south-western tip of Bihar state, India. It is located on the Sone River, the largest of the Ganges' southern tributaries, in Rohtas district.",
+      "description": "Three-storey sandstone pleasure pavilion adorned with carved jharokhas, cupolas, and ornamental plasterwork, which served as the Mughal governor’s headquarters.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ashoka_Brahmi_numerals_256.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Banjari, Bihar in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Ruins_of_Aina_Mahal.jpg",
+        "alt": "Aina Mahal (Mirror Palace of Raja Man Singh) in Rohtasgarh Fort, Bihar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Hasan_Shah_Tomb_4.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7a/India_-_Varanasi_green_peas_-_2714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/80_Feet_Budhdha_of_Bodh_Gaya%2C_Bihar.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Bastion%2C_Ziegelmauer%2C_K%C3%A1lvin_Platz%2C_2025_Hajd%C3%BAszoboszl%C3%B3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Landscape_at_Rohtasgarh%2C_Bihar._Coloured_aquatint_by_Thomas_Wellcome_V0050464.jpg"
       ]
     },
     {
-      "name": "Deorikalan",
-      "category": "scenic",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Deorikalan is a census town in Palamu district in the state of Jharkhand, India.",
+      "name": "Hathiya Pol (Monumental Elephant Gateway)",
+      "category": "heritage",
+      "distance": "Fort Complex",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "45 mins",
+      "rating": 4.6,
+      "description": "Main royal portal erected in 1597 flanked by life-sized stone elephant sculptures, guard chambers, and formidable arrow slits.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Gulmarg_Snowy_Himalayan_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Deorikalan in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hathiya_Pol%2C_Rohtasgarh_Fort%2C_Rohtas%2C_India_-_DPLA_-_977bae9dd89e93a4f97a9f69f431fbee.jpg",
+        "alt": "Hathiya Pol (Monumental Elephant Gateway) in Rohtasgarh Fort, Bihar"
       },
       "photos": [
-        "https://images.pexels.com/photos/33797765/pexels-photo-33797765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/33797753/pexels-photo-33797753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Scindia_Ghat_in_morning%2C_Varanasi%2C_Uttar_Pradesh%2C_India_%282012%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Inscriptions_on_gate_at_Rohtasgarh_Fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/86/Rohtasgarh_Fort_Gate_8.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Rohtasgarh_Fort_Gate_7.jpg"
+      ]
+    },
+    {
+      "name": "Jami Masjid of Rohtasgarh",
+      "category": "heritage",
+      "distance": "Fort Complex",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "45 mins",
+      "rating": 4.6,
+      "description": "Grand 1543 white-plastered stone mosque built during the reign of Sher Shah Suri, featuring three domed bays, arched arcades, and a spacious prayer courtyard.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/N.W._View_of_Rotas_Ghur%2C_Bahar_-_British_Library_P930.jpg",
+        "alt": "Jami Masjid of Rohtasgarh in Rohtasgarh Fort, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mosque_-_Rohtasgarh_Fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mosque_-_Rohtasgarh_Fort_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/46/Rohtasgarh_Fort_-_Mosque.jpg"
+      ]
+    },
+    {
+      "name": "Chaurasan Mandir & Rohitaswa Temple",
+      "category": "spiritual",
+      "distance": "2 km within fort",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Historic hilltop temple complex with 84 steps dedicated to Lord Shiva and King Rohitashwa, commanding panoramic views of the forested ravines.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Rothasgarh_Fort_33.jpg",
+        "alt": "Chaurasan Mandir & Rohitaswa Temple in Rohtasgarh Fort, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/ff/Rothasgarh_Fort_32.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Shiva_Temple_-_Rohtasgarh_Fort.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Shiva_Temple_-_Rohtasgarh_Fort_2.jpg"
+      ]
+    },
+    {
+      "name": "Phulwari Bagh (Royal Mughal Gardens)",
+      "category": "heritage",
+      "distance": "Fort Complex",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:00 PM",
+      "duration": "45 mins",
+      "rating": 4.5,
+      "description": "Symmetrical Charbagh-style terraced pleasure garden complex featuring stone water channels, ornamental fountains, and pavilion ruins.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Mahabodhi_temple_at_Bodhgaya_in_Bihar_01.jpg",
+        "alt": "Phulwari Bagh (Royal Mughal Gardens) - Mahabodhi temple at Bodhgaya in Bihar.\nThe Mahabodhi Temple (literally: \"Great Aw"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/93/Landscape_with_the_fort_at_Rohtasgarh%2C_Bihar._Coloured_aquat_Wellcome_V0050479.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/Oriental_Scenery_Fig_5.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mahabodhi_temple_at_Bodhgaya_in_Bihar_02.jpg"
+      ]
+    },
+    {
+      "name": "Tutla Bhawani Forest Canyon & Waterfall",
+      "category": "nature",
+      "distance": "28 km from base",
+      "entryFee": "₹30",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.8,
+      "description": "Spectacular jungle ravine canyon where the Kachhuar stream drops over sheer rocks, featuring a 200-meter suspension bridge and sacred rock temple of Maa Tutla Bhawani.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Mahabodhi_temple_at_Bodhgaya_in_Bihar_03.jpg",
+        "alt": "Tutla Bhawani Forest Canyon & Waterfall - Mahabodhi temple at Bodhgaya in Bihar.\nThe Mahabodhi Temple (literally: \"Great"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/58/Mahabodhi_temple_at_Bodhgaya_in_Bihar_05.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Mahabodhi_temple_at_Bodhgaya_in_Bihar_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/Mahabodhi_temple_at_Bodhgaya_in_Bihar_07.jpg"
+      ]
+    },
+    {
+      "name": "Dhua Kund & Manjhar Kund Waterfalls",
+      "category": "nature",
+      "distance": "35 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Twin dramatic cascades plunging into deep natural rock pools on the Kaimur plateau edge, famous for roaring post-monsoon waters and lush green valley vistas.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Green_waterfall.jpg",
+        "alt": "Dhua Kund & Manjhar Kund Waterfalls in Rohtasgarh Fort, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/04/Dhuah_Koonde_-_British_Library_X432_4%2811%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/45/Dhuah_Koonde_-_Bonhams.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Dhua_kund_in_kaimur.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Maghigawan & around",
+      "title": "Day 1 — The Climb to Rohtasgarh Citadel & Royal Palaces",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Maghigawan",
-          "note": "Maghigawan is a village in India, located in Rohtas District, Bihar. According to the 2011 census of India, it has a population of 1904 people."
+          "time": "Early Morning (6:00 AM)",
+          "activity": "Trek from Akbarpur Base to Plateau Crest",
+          "note": "Hike the historic stone-paved trail up the Kaimur escarpment."
         },
         {
-          "time": "Afternoon",
-          "activity": "Akbarpur, Rohtas",
-          "note": "Akbarpur is a village in Rohtas block of Rohtas district, Bihar, India. Located on the bank of the Son river, a short distance east of the historic Rohtasgarh fort."
+          "time": "Morning (9:30 AM)",
+          "activity": "Hathiya Pol & Aina Mahal Palace Exploration",
+          "note": "Examine multi-storey sandstone quarters and Raja Man Singh darbar."
+        },
+        {
+          "time": "Midday (1:00 PM)",
+          "activity": "Jami Masjid & Phulwari Gardens",
+          "note": "Picnic amid ancient stone arcades with panoramic Son valley views."
+        },
+        {
+          "time": "Afternoon (3:30 PM)",
+          "activity": "Chaurasan Mandir Cliff Viewpoint",
+          "note": "Enjoy breathtaking 360-degree vistas of the rugged plateau before descent."
         }
       ]
     },
     {
       "day": 2,
-      "title": "Day 2 — Banjari, Bihar & around",
+      "title": "Day 2 — Tutla Bhawani Canyon & Dhua Kund Waterfalls",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Banjari, Bihar",
-          "note": "Banjari is a small town at the south-western tip of Bihar state, India. It is located on the Sone River, the largest of the Ganges' southern tributaries, in Rohtas district."
+          "time": "Morning (8:00 AM)",
+          "activity": "Tutla Bhawani Suspension Bridge Walk",
+          "note": "Walk across the valley gorge to the sacred waterfall shrine."
         },
         {
-          "time": "Afternoon",
-          "activity": "Deorikalan",
-          "note": "Deorikalan is a census town in Palamu district in the state of Jharkhand, India."
+          "time": "Afternoon (1:00 PM)",
+          "activity": "Dhua Kund Plunge Pool & Relaxing Picnic",
+          "note": "Unwind near the roaring natural pools overlooking the valley."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Rohtasgarh Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "name": "Hotel Maurya Royal Sasaram",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2200,
+      "priceMax": 4200,
+      "rating": 4.2,
+      "reviews": 750,
       "amenities": [
-        "WiFi",
+        "Restaurant",
         "AC",
-        "Parking",
-        "Breakfast"
+        "Free Parking",
+        "Travel Desk"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "City Base",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Rohtasgarh%20Fort%20Stay%20Rohtasgarh%20Fort%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20Maurya%20Royal%20Sasaram"
     },
     {
-      "name": "Airbnb: Stay in Rohtasgarh Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "name": "Hotel Rohit International Dehri-on-Sone",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 1800,
+      "priceMax": 3500,
+      "rating": 4.1,
+      "reviews": 600,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
+        "AC",
+        "Room Service",
         "WiFi"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Near Station",
+        "Budget Friendly"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Rohtasgarh%20Fort%20Rohtasgarh%20Fort%20Bihar%20hotel"
-    },
-    {
-      "name": "Rohtasgarh Fort Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
-      "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
-      ],
-      "tags": [
-        "Popular",
-        "Central"
-      ],
-      "url": "https://www.google.com/search?q=Rohtasgarh%20Fort%20Grand%20Hotel%20Rohtasgarh%20Fort%20Bihar%20hotel"
-    },
-    {
-      "name": "Marriott Rohtasgarh Fort",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Marriott%20Rohtasgarh%20Fort%20Rohtasgarh%20Fort%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20Rohit%20International%20Dehri"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Cultural",
-    "Heritage walks",
-    "Sightseeing",
-    "Forts",
-    "Architecture",
-    "History",
-    "Local Bazaars"
+    "Rohtasgarh Palace & Citadel Ramparts",
+    "Aina Mahal (Mirror Palace of Raja Man Singh)",
+    "Hathiya Pol (Monumental Elephant Gateway)",
+    "Jami Masjid of Rohtasgarh",
+    "Chaurasan Mandir & Rohitaswa Temple",
+    "Phulwari Bagh (Royal Mughal Gardens)",
+    "Tutla Bhawani Forest Canyon & Waterfall",
+    "Dhua Kund & Manjhar Kund Waterfalls"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Rohtasgarh Fort scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rohtasgarh_Fort_Entrance.jpg",
+      "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Mahal_Sarai_-_Rohtasgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Rohtasgarh Fort photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Rohtasgarh_Fort_Front_View.jpg",
+      "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Mausoleum_-_Habsh_Khan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Rohtasgarh Fort photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Rohtasgarh_Fort_Inside_View.jpg",
+      "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.64.jpg/1280px-Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.64.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Rohtasgarh Fort photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Rohtasgarh_Fort_Top_View.jpg",
+      "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rohtasgarh_Fort_Entrance.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Rohtasgarh Fort photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Rohtasgarh_Fort_Inside_Side_View.jpg",
+      "alt": "Rohtasgarh Fort - This is a photo of <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Archaeological_Sur"
     }
   ],
   "faq": [
     {
-      "q": "What is the best time to visit Rohtasgarh Fort?",
-      "a": "The best time to visit Rohtasgarh Fort is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "q": "How physically demanding is the trek to Rohtasgarh Fort?",
+      "a": "The uphill trek from Akbarpur base takes 2 to 3 hours along a stepped stone path. Moderate fitness is recommended. Carry plenty of water."
     },
     {
-      "q": "How do I reach Rohtasgarh Fort?",
-      "a": "The nearest airport is Rohtasgarh Fort / nearest airport (30 km) and the nearest railway station is Gaya Junction (111 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "q": "Is it safe to visit Rohtasgarh Fort with family?",
+      "a": "Yes, daytime visits are very popular and safe, especially on weekends between October and March."
     },
     {
-      "q": "How many days are enough for Rohtasgarh Fort?",
-      "a": "2 days are usually enough to cover the top attractions of Rohtasgarh Fort at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Rohtasgarh Fort?",
-      "a": "Stays in Rohtasgarh Fort start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Rohtasgarh Fort?",
-      "a": "The top attractions are Maghigawan, Akbarpur, Rohtas, Banjari, Bihar, Deorikalan."
+      "q": "Are guides available at the fort base?",
+      "a": "Local village guides are readily available at Akbarpur base to assist with navigation and narrate historical legends."
     }
   ],
   "seo": {
     "title": "Rohtasgarh Fort Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "The Rohtasgarh or Rohtas Fort is located in the Son River valley, in the small town of Rohtas in Bihar, India. Plan your Rohtasgarh Fort trip: 4 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Perched atop a 1,500-foot sheer cliff on the Kaimur plateau, Rohtasgarh is one of India’s largest and most formidable ancient hill fortresses, spanning 42 square kilometers. Plan your visit with 8 top places, stays from ₹1300/night, best time, and routes.",
     "canonical": "destination.html?slug=rohtasgarh-fort",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Inside_Takht-e-Badshahi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rohtasgarh_Fort_Entrance.jpg",
     "keywords": [
       "Rohtasgarh Fort travel guide",
       "places to visit in Rohtasgarh Fort",
-      "Rohtasgarh Fort hotels",
-      "best time to visit Rohtasgarh Fort",
-      "how to reach Rohtasgarh Fort",
-      "Bihar tourism"
+      "Rohtasgarh Fort Bihar tourism",
+      "Rohtasgarh Fort sightseeing"
     ]
   }
 }

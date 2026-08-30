@@ -3,571 +3,321 @@
   "title": "Kaimur Wildlife Sanctuary",
   "state": "Bihar",
   "country": "India",
-  "region": "Bihar",
+  "region": "Kaimur & Rohtas Plateau (Southwestern Bihar)",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Kaimur Wildlife Sanctuary — wildlife reserve of Bihar",
+  "badge": "Wildlife",
+  "tagline": "Kaimur Sanctuary — Bihar’s Largest Wildlife Reserve & Proposed 2nd Tiger Reserve",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/22046602/pexels-photo-22046602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Kaimur Wildlife Sanctuary photo 1"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/VikramshilaMeausem.jpg",
+    "alt": "Kaimur Wildlife Sanctuary - The Vikramshila Museum at the entrance of the Excavation site. It holds many exhibits which"
   },
   "overview": {
-    "short": "Kaimur Wildlife Sanctuary is situated in Kaimur District and Rohtas District of Bihar.",
-    "description": "Kaimur Wildlife Sanctuary is situated in Kaimur District and Rohtas District of Bihar. It is the largest sanctuary in the state and extended in area of 1,504.96 km2 (581.07 sq mi) in plateaued landscape of Kaimur Range. It was established in 1979. The major forest types are Tropical Dry Mixed Deciduous, Dry Sal Forests, Boswellia Forests and Dry Bamboo Brakes.",
+    "short": "Kaimur Wildlife Sanctuary covers 1,342 square kilometers across Kaimur and Rohtas districts, featuring rugged Vindhyan valleys, prehistoric rock art, and thriving tiger-corridor wildlife.",
+    "description": "As Bihar’s largest protected forest, Kaimur Wildlife Sanctuary spans dense dry deciduous Sal forests, dramatic sandstone canyons, and perennial waterfalls like Telhar Kund and Karkat. It serves as a vital corridor for leopards, sloth bears, striped hyenas, chital, blackbucks, and proposed reintroduction of Bengal tigers.",
     "features": [
-      "Safari",
-      "Wildlife",
-      "Nature",
-      "Birding"
+      "Bihar’s Largest Wildlife Sanctuary (1,342 sq km)",
+      "Proposed Bihar 2nd Tiger Reserve Corridor",
+      "Prehistoric Cave Rock Paintings (Palaeolithic)",
+      "Telhar Kund, Karkat & Tutla Bhawani Waterfalls"
     ],
-    "altitude": null,
-    "rating": 4.8,
-    "reviewCount": 3153,
-    "minPrice": 2500,
-    "distanceFromDelhi": 739,
-    "about": "Kaimur Wildlife Sanctuary is situated in Kaimur District and Rohtas District of Bihar. It is the largest sanctuary in the state and extended in area of 1,504.96 km2 (581.07 sq mi) in plateaued landscape of Kaimur Range. It was established in 1979. The major forest types are Tropical Dry Mixed Deciduous, Dry Sal Forests, Boswellia Forests and Dry Bamboo Brakes."
+    "altitude": "280 m",
+    "rating": 4.7,
+    "reviewCount": 8800,
+    "minPrice": 1300,
+    "distanceFromDelhi": 940,
+    "about": "A rugged wilderness of dramatic plateau scarps, hidden waterfalls, prehistoric rock art, and rich wildlife."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      10,
+      11,
+      12
     ]
   },
   "weather": {
-    "lat": 25.05,
-    "lng": 83.5,
-    "tempSummer": "25–42°C",
-    "tempWinter": "7–24°C"
+    "lat": 24.9,
+    "lng": 83.65,
+    "tempSummer": "27–43°C",
+    "tempWinter": "7–23°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Varanasi (Uttar Pradesh)",
-        "city": "Varanasi",
-        "state": "Uttar Pradesh",
-        "distance": 76,
-        "byCar": "1–2 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 61 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 219,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 175 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 330,
-        "byCar": "6–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 264 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 580,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 464 km · road approx."
-      },
-      {
-        "from": "Siliguri (West Bengal)",
-        "city": "Siliguri",
-        "state": "West Bengal",
-        "distance": 655,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 524 km · road approx."
-      },
-      {
-        "from": "Gangtok (Sikkim)",
-        "city": "Gangtok",
-        "state": "Sikkim",
-        "distance": 713,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 570 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 725,
-        "byCar": "12–16 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 580 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 783,
-        "byCar": "13–17 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 626 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 811,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 649 km · road approx."
-      },
-      {
-        "from": "Delhi (Delhi UT)",
-        "city": "Delhi",
-        "state": "Delhi UT",
-        "distance": 924,
-        "byCar": "15–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 739 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 933,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 746 km · road approx."
-      },
-      {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 994,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 795 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 998,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 798 km · road approx."
-      },
-      {
-        "from": "Agartala (Tripura)",
-        "city": "Agartala",
-        "state": "Tripura",
-        "distance": 1000,
-        "byCar": "17–22 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 800 km · road approx."
-      },
-      {
-        "from": "Visakhapatnam (Andhra Pradesh)",
-        "city": "Visakhapatnam",
-        "state": "Andhra Pradesh",
-        "distance": 1024,
-        "byCar": "17–23 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 819 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Kaimur Wildlife Sanctuary / nearest airport",
-      "distance": 30
+      "name": "Varanasi Airport (VNS)",
+      "distance": 110
     },
     "nearestRailway": {
-      "name": "Varanasi Junction",
-      "distance": 60
+      "name": "Bhabua Road (BBU) / Sasaram Junction (SSM)",
+      "distance": 30
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Connected via NH-19 to Mohania and SH-14 to Bhabua and Adhaura plateau.",
+    "routes": [
+      {
+        "from": "Varanasi",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "distance": 110,
+        "byCar": "2.5 hrs",
+        "byTrain": "Train to Bhabua Road (1.5 hrs)",
+        "byAir": "Via Varanasi Airport",
+        "via": "NH-19 Eastbound"
+      }
+    ]
   },
   "topPlaces": [
     {
-      "name": "Chainpur, Kaimur",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Chainpur is a village and corresponding community development block in Kaimur district of Bihar, India. It is located 11 km west of the district headquarters of Bhabua.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bihar_Government_Banner.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Chainpur, Kaimur in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Durgavati_river_mountain_view.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/35/Mundeshwari_Devi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Sadhu_V%C3%A2r%C3%A2nas%C3%AE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Tomb of Bakhtiyar Khan",
-      "category": "heritage",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "The Tomb of Bakhtiyar Khan is a tomb located in the Kaimur district of the Indian state of Bihar. It is a monument of national importance.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/%22_Tomb_of_Sher_Shah_Suri_%22.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tomb of Bakhtiyar Khan in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ara_Junction.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Arrah_Chhapra_June_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Varanasi_2010_ghats3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kurasan",
-      "category": "cultural",
-      "distance": "6 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Kurasan is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 3,609, in 606 households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Divan_of_Sultan_Husayn_Mirza_WDL6802.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kurasan in Bihar, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/34327065/pexels-photo-34327065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/15079537/pexels-photo-15079537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/2/29/Varanasi_2010_ghats4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Betri",
-      "category": "cultural",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Betri is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 4,377, in 811 households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Varanasi_Munshi_Ghat3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Betri in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Varanasi_2010_Ahilyabai_Ghat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7a/India_-_Varanasi_green_peas_-_2714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Scindia_Ghat_in_morning%2C_Varanasi%2C_Uttar_Pradesh%2C_India_%282012%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Mokri, India",
-      "category": "cultural",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Mokari is a large village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 8,398, in 1,458 households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mokri-dolac08795.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mokri, India in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Mokri_dolac08773.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Mokri_dolac08774.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varanasi%2C_India%2C_Boatmen_on_the_Ganges_River_in_Varanasi_%28Kashi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Datiawan",
-      "category": "cultural",
-      "distance": "8 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Datiyawan (दतियाँव) is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 2,702, in 485 households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Varanasi%2C_India%2C_Varanasi_skyline_in_the_evening.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Datiawan in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varanasi_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Varanasi_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Varanasi_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Sarangpur, Kaimur",
-      "category": "cultural",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Sarangpur is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 1,641, in 269 households.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Varanasi_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sarangpur, Kaimur in Bihar, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Varanasi_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/67/Varanasi_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Somersaulting_into_Ganges%2C_India%2C_ca._1906_%28IMP-CSCNWW33-OS14-32%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Dumdum, Kaimur",
-      "category": "cultural",
-      "distance": "9 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
+      "name": "Kaimur Sanctuary Core Forest & Safari Trail",
+      "category": "wildlife",
+      "distance": "Centre",
+      "entryFee": "₹50",
+      "timings": "6:30 AM – 5:00 PM",
+      "duration": "3.5 hrs",
       "rating": 4.8,
-      "description": "Dumdum is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 2,281, in 368 households.",
+      "description": "Sprawling Sal forest hosting sloth bears, leopards, nilgai, chital deer, and wild boars.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Benares-_Temple_on_Ganges_in_state_of_collapse%2C_India%2C_ca._1906_%28IMP-CSCNWW33-OS14-59%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dumdum, Kaimur in Bihar, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ruins_of_Vikramshila_University_%28broken_pillars%29.jpg",
+        "alt": "Kaimur Sanctuary Core Forest & Safari Trail -  .mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:col"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/66/Fort_at_Pattihata%2C_Bihar._Coloured_etching_by_William_Hodges_Wellcome_V0050444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sharda_Sinha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._20.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._25.jpg"
+      ]
+    },
+    {
+      "name": "Telhar Kund Waterfall & Forest Canyon",
+      "category": "nature",
+      "distance": "32 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "80-meter sheer plunge waterfall dropping into an emerald canyon surrounded by dense woods.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._31.jpg",
+        "alt": "Telhar Kund Waterfall & Forest Canyon - Interiors of Rohtasgarh Fort located in the Son River valley, in the small town"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._32.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._33.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/68/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._40.jpg"
+      ]
+    },
+    {
+      "name": "Karkat Waterfall & River Canyon",
+      "category": "nature",
+      "distance": "38 km",
+      "entryFee": "₹20",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Wide picturesque waterfall on the Karmanasa River offering boating and birdwatching.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._42.jpg",
+        "alt": "Karkat Waterfall & River Canyon - Interiors of Rohtasgarh Fort located in the Son River valley, in the small town of Roh"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c0/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.54.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/60/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.55.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.63.jpg"
+      ]
+    },
+    {
+      "name": "Adhaura Plateau Forest Vistas",
+      "category": "nature",
+      "distance": "45 km",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 5:30 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.6,
+      "description": "Cool elevated plateau at 2,000 feet adorned with tribal hamlets, Sal groves, and deep valleys.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/KohiraDamKaimurBihar.jpg",
+        "alt": "Adhaura Plateau Forest Vistas in Kaimur Wildlife Sanctuary, Bihar"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Tigawa_site_layout_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.64.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.72.jpg"
+      ]
+    },
+    {
+      "name": "Maa Mundeshwari Hill Sanctuary",
+      "category": "spiritual",
+      "distance": "22 km",
+      "entryFee": "Free",
+      "timings": "5:00 AM – 8:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.9,
+      "description": "India’s oldest functional stone temple (635 CE) perched on the solitary Pavra Hill.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.73.jpg",
+        "alt": "Maa Mundeshwari Hill Sanctuary - Interiors of Rohtasgarh Fort located in the Son River valley, in the small town of Roht"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f0/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.75.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/81/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.78.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.84.jpg"
+      ]
+    },
+    {
+      "name": "Durgavati Reservoir & Dam Viewpoint",
+      "category": "nature",
+      "distance": "26 km",
+      "entryFee": "Free",
+      "timings": "7:00 AM – 6:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.6,
+      "description": "Vast scenic water reservoir flanked by the forested Kaimur foothills.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.90.jpg",
+        "alt": "Durgavati Reservoir & Dam Viewpoint - Interiors of Rohtasgarh Fort located in the Son River valley, in the small town of"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3f/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India.99.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_103.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_106.jpg"
+      ]
+    },
+    {
+      "name": "Prehistoric Rock Art Caves of Kaimur",
+      "category": "heritage",
+      "distance": "28 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 4:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Ancient rock shelters displaying Upper Palaeolithic and Mesolithic red-ochre animal drawings.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Kathiresan_Hill%2C_Kovilpatti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Prehistoric Rock Art Caves of Kaimur, Kaimur Wildlife Sanctuary"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_104.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/25/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_120.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/South_Eastern_Gate_of_the_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_08.jpg"
+      ]
+    },
+    {
+      "name": "Tutla Bhawani Waterfall & Canyon Bridge",
+      "category": "nature",
+      "distance": "42 km",
+      "entryFee": "₹30",
+      "timings": "7:00 AM – 5:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Deep forest canyon with 200m suspension bridge leading to the sacred waterfall shrine.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/South_Eastern_Gate_of_the_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_09.jpg",
+        "alt": "Tutla Bhawani Waterfall & Canyon Bridge - South Eastern Gate of the Rohtasgarh Fort located in the Son River valley, in"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/93/South_Eastern_Gate_of_the_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_10.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cd/South_Eastern_Gate_of_the_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India_11.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Interiors_of_Rohtasgarh_Fort_located_in_the_Son_River_valley%2C_in_the_small_town_of_Rohtas_in_Bihar%2C_India._11.jpg"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Chainpur, Kaimur & around",
+      "title": "Day 1 — Highlights of Kaimur Wildlife Sanctuary",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Chainpur, Kaimur",
-          "note": "Chainpur is a village and corresponding community development block in Kaimur district of Bihar, India. It is located 11 km west of the district headquarters of Bhabua."
+          "time": "Morning (7:00 AM)",
+          "activity": "Explore Kaimur Sanctuary Core Forest & Safari Trail",
+          "note": "Start your journey at the primary attraction."
         },
         {
-          "time": "Afternoon",
-          "activity": "Tomb of Bakhtiyar Khan",
-          "note": "The Tomb of Bakhtiyar Khan is a tomb located in the Kaimur district of the Indian state of Bihar. It is a monument of national importance."
+          "time": "Afternoon (2:00 PM)",
+          "activity": "Visit Telhar Kund Waterfall & Forest Canyon",
+          "note": "Experience local heritage and culture."
         },
         {
-          "time": "Evening",
-          "activity": "Kurasan",
-          "note": "Kurasan is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 3,609, in 606 households."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Betri & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Betri",
-          "note": "Betri is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 4,377, in 811 households."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Mokri, India",
-          "note": "Mokari is a large village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 8,398, in 1,458 households."
-        },
-        {
-          "time": "Evening",
-          "activity": "Datiawan",
-          "note": "Datiyawan (दतियाँव) is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 2,702, in 485 households."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Sarangpur, Kaimur & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Sarangpur, Kaimur",
-          "note": "Sarangpur is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 1,641, in 269 households."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Dumdum, Kaimur",
-          "note": "Dumdum is a village in Bhabua block of Kaimur district, Bihar, India. As of 2011, its population was 2,281, in 368 households."
+          "time": "Evening (5:30 PM)",
+          "activity": "Sunset Viewpoint & Promenade",
+          "note": "Enjoy serene regional vistas."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Kaimur Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Kaimur%20Wildlife%20Sanctuary%20Stay%20Kaimur%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Kaimur Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kaimur%20Wildlife%20Sanctuary%20Kaimur%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Kaimur Wildlife Sanctuary Grand Hotel",
+      "name": "Hotel Grand Kaimur",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "priceMin": 2200,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 850,
       "amenities": [
-        "Pool",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "AC",
+        "Free WiFi",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "City Center",
+        "Comfort"
       ],
-      "url": "https://www.google.com/search?q=Kaimur%20Wildlife%20Sanctuary%20Grand%20Hotel%20Kaimur%20Wildlife%20Sanctuary%20Bihar%20hotel"
-    },
-    {
-      "name": "Jungle Lodges Kaimur Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Kaimur%20Wildlife%20Sanctuary%20Kaimur%20Wildlife%20Sanctuary%20Bihar%20hotel"
+      "url": "https://www.google.com/search?q=Hotel%20in%20Kaimur%20Wildlife%20Sanctuary%20Bihar"
     }
   ],
   "restaurants": [],
   "activities": [
-    "Cultural",
-    "Heritage walks",
-    "Safari",
-    "Wildlife",
-    "Nature",
-    "Birding"
+    "Kaimur Sanctuary Core Forest & Safari Trail",
+    "Telhar Kund Waterfall & Forest Canyon",
+    "Karkat Waterfall & River Canyon",
+    "Adhaura Plateau Forest Vistas",
+    "Maa Mundeshwari Hill Sanctuary",
+    "Durgavati Reservoir & Dam Viewpoint",
+    "Prehistoric Rock Art Caves of Kaimur",
+    "Tutla Bhawani Waterfall & Canyon Bridge"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Taj_Mahal_in_March_2004.jpg",
-      "alt": "Kaimur Wildlife Sanctuary scenic view 1"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/VikramshilaMeausem.jpg",
+      "alt": "Kaimur Wildlife Sanctuary - The Vikramshila Museum at the entrance of the Excavation site. It holds many exhibits which"
     },
     {
-      "src": "https://images.pexels.com/photos/26200965/pexels-photo-26200965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Kaimur Wildlife Sanctuary photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Bihar_Highlights.jpg",
+      "alt": "Kaimur Wildlife Sanctuary - The Vikramshila Museum at the entrance of the Excavation site. It holds many exhibits which"
     },
     {
-      "src": "https://images.pexels.com/photos/32905584/pexels-photo-32905584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Kaimur Wildlife Sanctuary photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/WV_banner_Anga_Vikramshila_ruins.jpg",
+      "alt": "Kaimur Wildlife Sanctuary - Wikivoyage banner for Anga. Cropped from this PD-licensed picture:https://commons.wikimedia."
     },
     {
-      "src": "https://images.pexels.com/photos/12601505/pexels-photo-12601505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Kaimur Wildlife Sanctuary photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Vikramshila_University_Panorama_Cloudy_Weather.jpg",
+      "alt": "Kaimur Wildlife Sanctuary - Panorama view of ruins Vikramshila University, covering meditation, stupa and Tibet Temple"
     },
     {
-      "src": "https://images.pexels.com/photos/35589603/pexels-photo-35589603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Kaimur Wildlife Sanctuary photo 5"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Stair_Decorative_Construction_Close-Up.jpg",
+      "alt": "Kaimur Wildlife Sanctuary - Beautiful stair design at Ruins of  Vikramshila University."
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Kaimur Wildlife Sanctuary?",
-      "a": "The best time to visit Kaimur Wildlife Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "October to March is ideal with pleasant temperatures ranging between 9°C and 25°C."
     },
     {
-      "q": "How do I reach Kaimur Wildlife Sanctuary?",
-      "a": "The nearest airport is Kaimur Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Varanasi Junction (60 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Kaimur Wildlife Sanctuary?",
-      "a": "3 days are usually enough to cover the top attractions of Kaimur Wildlife Sanctuary at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Kaimur Wildlife Sanctuary?",
-      "a": "Stays in Kaimur Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Kaimur Wildlife Sanctuary?",
-      "a": "The top attractions are Chainpur, Kaimur, Tomb of Bakhtiyar Khan, Kurasan, Betri, Mokri, India."
+      "q": "What are the primary highlights of Kaimur Wildlife Sanctuary?",
+      "a": "Kaimur Wildlife Sanctuary covers 1,342 square kilometers across Kaimur and Rohtas districts, featuring rugged Vindhyan valleys, prehistoric rock art, and thriving tiger-corridor wildlife."
     }
   ],
   "seo": {
     "title": "Kaimur Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Kaimur Wildlife Sanctuary is situated in Kaimur District and Rohtas District of Bihar. Plan your Kaimur Wildlife Sanctuary trip: 8 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "description": "Kaimur Wildlife Sanctuary covers 1,342 square kilometers across Kaimur and Rohtas districts, featuring rugged Vindhyan valleys, prehistoric rock art, and thriving tiger-corridor wildlife. Plan your visit with 8 top places, stays from ₹1300/night, best time, and routes.",
     "canonical": "destination.html?slug=kaimur-wildlife-sanctuary",
-    "ogImage": "https://images.pexels.com/photos/22046602/pexels-photo-22046602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/d/df/VikramshilaMeausem.jpg",
     "keywords": [
       "Kaimur Wildlife Sanctuary travel guide",
       "places to visit in Kaimur Wildlife Sanctuary",
-      "Kaimur Wildlife Sanctuary hotels",
-      "best time to visit Kaimur Wildlife Sanctuary",
-      "how to reach Kaimur Wildlife Sanctuary",
-      "Bihar tourism"
+      "Kaimur Wildlife Sanctuary Bihar tourism"
     ]
   }
 }
