@@ -105,33 +105,33 @@ function injectSkeletons() {
   heroGridIds.forEach((id) => {
     const el = document.getElementById(id);
     if (el && !el.children.length) {
-      el.innerHTML = [1,2,3,4].map(() =>
+      el.innerHTML = [1, 2, 3, 4].map(() =>
         '<div class="skeleton-card skeleton-hero"></div>').join('');
     }
   });
   const trend = document.getElementById(trendId);
   if (trend && !trend.children.length) {
-    trend.innerHTML = [1,2,3,4,5,6].map(() =>
+    trend.innerHTML = [1, 2, 3, 4, 5, 6].map(() =>
       '<div class="skeleton-card skeleton-trend"></div>').join('');
   }
   const season = document.getElementById(seasonId);
   if (season && !season.children.length) {
-    season.innerHTML = [1,2,3,4].map(() =>
+    season.innerHTML = [1, 2, 3, 4].map(() =>
       '<div class="skeleton-card skeleton-season"></div>').join('');
   }
   const mini = document.getElementById(miniId);
   if (mini && !mini.children.length) {
-    mini.innerHTML = [1,2,3,4,5,6].map(() =>
+    mini.innerHTML = [1, 2, 3, 4, 5, 6].map(() =>
       '<div class="skeleton-card skeleton-mini"></div>').join('');
   }
   const budget = document.getElementById(budgetId);
   if (budget && !budget.children.length) {
-    budget.innerHTML = [1,2,3,4,5].map(() =>
+    budget.innerHTML = [1, 2, 3, 4, 5].map(() =>
       '<div class="skeleton-card skeleton-budget"></div>').join('');
   }
   const month = document.getElementById(monthId);
   if (month && !month.children.length) {
-    month.innerHTML = [1,2,3,4].map(() =>
+    month.innerHTML = [1, 2, 3, 4].map(() =>
       '<div class="skeleton-card skeleton-trend"></div>').join('');
   }
 }
@@ -241,8 +241,8 @@ function search(q) {
     const href = c.type === ''
       ? 'destinations.html'
       : c.search
-      ? 'destinations.html?search=' + encodeURIComponent(c.search)
-      : 'destinations.html?type=' + encodeURIComponent(c.type);
+        ? 'destinations.html?search=' + encodeURIComponent(c.search)
+        : 'destinations.html?type=' + encodeURIComponent(c.type);
     return '<a href="' + href + '" class="category-chip">' +
       '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
       '<span class="category-chip-label">' + esc(c.label) + '</span>' +
@@ -606,7 +606,7 @@ function shuffleArray(arr) {
 (function () {
   const row = document.getElementById('trending-grid');
   if (!row) return;
-  
+
   // Pick from high-rated/popular destinations with verified hero images
   const pool = summaries.filter(function (d) {
     const hasPhoto = d.heroImage && d.heroImage.src;
@@ -673,7 +673,7 @@ function shuffleArray(arr) {
 (function () {
   const el = document.getElementById('hills-grid');
   if (!el) return;
-  
+
   const hillsPool = summaries.filter(function (d) {
     const isHill = d.type === 'hill_station' || d.type === 'hillstation' ||
       (d.features && d.features.some(f => /hill|mountain|valley|peak/i.test(f)));
@@ -689,7 +689,7 @@ function shuffleArray(arr) {
 (function () {
   const el = document.getElementById('popular-grid');
   if (!el) return;
-  
+
   const popularPool = summaries.filter(function (d) {
     const isPopular = d.badge === 'Popular' || d.badge === 'Featured' || d.rating >= 4.6;
     const hasPhoto = d.heroImage && d.heroImage.src;
@@ -704,7 +704,7 @@ function shuffleArray(arr) {
 (function () {
   const el = document.getElementById('explore-grid');
   if (!el) return;
-  
+
   const explorePool = summaries.filter(function (d) { return d.heroImage && d.heroImage.src; });
   const selectedExplore = shuffleArray(explorePool).slice(0, 6);
   el.innerHTML = selectedExplore.map(function (d) { return miniCardHTML(d); }).join('');
@@ -782,7 +782,7 @@ function wireCarousel(row, prevBtn, nextBtn) {
 
   // 1. Hero Intro Sequence (Page Load Timeline)
   const heroTL = window.gsap.timeline({ delay: 0.1 });
-  
+
   if (document.querySelector('.hero-home h1')) {
     heroTL.from('.hero-home h1', {
       opacity: 0,

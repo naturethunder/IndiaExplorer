@@ -36,6 +36,18 @@ function urlEntry(loc, priority, changefreq) {
 
 const urls = [];
 STATIC.forEach(function (s) { urls.push(urlEntry(s.loc, s.priority, s.changefreq)); });
+idx.meta.states.forEach(function (state) {
+  const destinationCount = idx.destinations.filter(function (destination) { return destination.state === state; }).length;
+  if (destinationCount >= 3) {
+    urls.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly'));
+  }
+});
+idx.meta.types.forEach(function (type) {
+  urls.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly'));
+});
+idx.meta.months.forEach(function (month) {
+  urls.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly'));
+});
 idx.destinations.forEach(function (d) {
   urls.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.7', 'monthly'));
 });
@@ -46,4 +58,4 @@ const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '</urlset>\n';
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
-console.log('Wrote sitemap.xml — ' + (STATIC.length + idx.destinations.length) + ' URLs (origin: ' + ORIGIN + ')');
+console.log('Wrote sitemap.xml — ' + urls.length + ' URLs (origin: ' + ORIGIN + ')');

@@ -51,13 +51,21 @@ export function applySEO(opts = {}) {
   link.setAttribute('href', canonical);
 }
 
-/** Inject one Schema.org JSON-LD block. */
-export function injectJsonLd(obj) {
-  if (!obj) return;
-  const s = document.createElement('script');
-  s.type = 'application/ld+json';
+/** Inject or update one Schema.org JSON-LD block. */
+export function injectJsonLd(obj, schemaId) {
+  const selector = schemaId ? 'script[data-seo-schema="' + schemaId + '"]' : '';
+  let s = selector ? document.head.querySelector(selector) : null;
+  if (!obj) {
+    if (s) s.remove();
+    return;
+  }
+  if (!s) {
+    s = document.createElement('script');
+    s.type = 'application/ld+json';
+    if (schemaId) s.dataset.seoSchema = schemaId;
+    document.head.appendChild(s);
+  }
   s.textContent = JSON.stringify(obj);
-  document.head.appendChild(s);
 }
 
 /** BreadcrumbList schema. items: [{name, path}] (path relative). */
@@ -70,19 +78,6 @@ export function breadcrumbJsonLd(items = []) {
       position: i + 1,
       name: it.name,
       item: absUrl(it.path),
-    })),
-  };
-}
-
-/** FAQPage schema from [{q, a}]. */
-export function faqJsonLd(faq = []) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: (faq || []).map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
   };
 }

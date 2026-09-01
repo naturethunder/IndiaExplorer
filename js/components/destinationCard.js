@@ -46,7 +46,7 @@ export function trendCardHTML(d) {
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '">' +
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" loading="lazy" ' +
-    'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
+      'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
     '<span class="rating-badge">' + icon('star', { size: 13, fill: true }) + esc(d.rating) + '</span>' +
@@ -84,7 +84,7 @@ export function destCardHTML(d, opts = {}) {
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" loading="lazy" ' +
-    'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
+      'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     '<div class="dest-card-badges-top">' +
     (badgeHtml || '') +
@@ -125,7 +125,7 @@ export function heroCardHTML(d) {
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block group">' +
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" ' +
-    'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
+      'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
     '<div class="absolute top-3 left-3"><span class="badge bg-primary text-white text-[10px] sm:text-xs">' + esc(d.badge) + '</span></div>' +
     '</div>' +
     '<div class="p-3 bg-slate-900/90 flex flex-col gap-1">' +
@@ -154,7 +154,7 @@ export function miniCardHTML(d) {
     '<a href="' + destUrl(d.slug) + '" class="group block">' +
     '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" ' +
-    'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
+      'onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\')" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +
     '<p class="text-white text-xs font-semibold truncate">' + esc(d.title) + '</p>' +

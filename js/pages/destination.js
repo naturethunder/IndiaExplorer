@@ -9,7 +9,7 @@
 import { fetchDestination, fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg } from '../components/destinationCard.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd, faqJsonLd, destinationJsonLd } from '../components/seo.js';
+import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 
 // This page keeps its own breadcrumb navbar + mobile tab bar (Stays/Route);
@@ -178,7 +178,6 @@ function main(dest, idx) {
     keywords: seoObj.keywords,
   });
   injectJsonLd(destinationJsonLd(dest, canonicalPath));
-  if (dest.faq) injectJsonLd(faqJsonLd(dest.faq));
   injectJsonLd(breadcrumbJsonLd([
     { name: 'Home', path: '/' },
     { name: 'Destinations', path: 'destinations.html' },
@@ -206,7 +205,7 @@ function main(dest, idx) {
         });
       }
     }
-  } catch (_) {}
+  } catch (_) { }
 
   // ─── Dynamic per-destination fixed background ────────────
   const immBg = document.querySelector('.dest-immersive-bg');

@@ -80,10 +80,10 @@ body.dest-immersive {
   inset: 0;
   z-index: 1;
   background: linear-gradient(180deg,
-    rgba(2, 4, 8, 0.15) 0%,
-    rgba(2, 4, 8, 0.25) 30%,
-    rgba(2, 4, 8, 0.35) 65%,
-    rgba(2, 4, 8, 0.50) 100%);
+      rgba(2, 4, 8, 0.15) 0%,
+      rgba(2, 4, 8, 0.25) 30%,
+      rgba(2, 4, 8, 0.35) 65%,
+      rgba(2, 4, 8, 0.50) 100%);
   pointer-events: none;
   transform: translateZ(0);
 }
@@ -149,9 +149,10 @@ body.dest-immersive .nav-glass .nav-link {
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.88);
   transition: background 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 body.dest-immersive .nav-glass .nav-link:hover {
   background: rgba(255, 255, 255, 0.16);
   border-color: rgba(74, 222, 128, 0.5);
@@ -240,8 +241,8 @@ body.dest-immersive .dest-hero-overlay {
 }
 
 /* Hero container styling — centered luxury editorial */
-body.dest-immersive .dest-hero > .dest-hero-content,
-body.dest-immersive .dest-hero > .absolute {
+body.dest-immersive .dest-hero>.dest-hero-content,
+body.dest-immersive .dest-hero>.absolute {
   position: absolute !important;
   inset: 0 !important;
   display: flex !important;
@@ -255,8 +256,8 @@ body.dest-immersive .dest-hero > .absolute {
   margin: 0 auto;
 }
 
-body.dest-immersive .dest-hero > .dest-hero-content > div,
-body.dest-immersive .dest-hero > .absolute > div {
+body.dest-immersive .dest-hero>.dest-hero-content>div,
+body.dest-immersive .dest-hero>.absolute>div {
   text-align: center !important;
   display: flex !important;
   flex-direction: column !important;

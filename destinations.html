@@ -11,7 +11,7 @@
     content="India travel catalogue, destinations in India, hill stations, beaches, heritage spots, state destinations, budget travel India" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#080A0F" />
-  <link rel="canonical" href="https://exploredesh.com/destinations.html" />
+  <!-- Canonical is added by explore.js after validating the active filter intent. -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="css/explore-immersive.css" />
 
   <!-- GSAP Animation Core & ScrollTrigger -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 explore-immersive glass-immersive">
@@ -55,7 +55,7 @@
               <span class="hero-line-1">2,389 <em class="gold-gradient-text">Destinations</em></span>
               <span class="hero-line-2">Across 36 States & UTs</span>
             </h1>
-            <p class="explore-hero-desc">
+            <p class="explore-hero-desc" id="exploreHeroDescription">
               From the snow-crowned passes of Ladakh to the sunlit lagoons of Kerala, every sacred ghat, untouched peak, and historic fortress is catalogued with verified real photography, seasonal weather insights, and budget guides.
             </p>
             <dl class="explore-stat-metrics" aria-label="Dataset Statistics">

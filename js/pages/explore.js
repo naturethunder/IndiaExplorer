@@ -18,28 +18,21 @@ if ('scrollRestoration' in history) {
 
 initLayout({ active: 'destinations' });
 
-applySEO({
-  title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
-  description: 'Browse 2,389 travel destinations across all 36 states & UTs of India. Filter by type, state, budget and travel month.',
-  canonicalPath: 'destinations.html',
-  keywords: ['india destinations', 'places to visit in india', 'india travel by budget', 'best travel months india'],
-});
-
-injectJsonLd(collectionPageJsonLd({
-  title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
-  description: 'Browse 2,389 travel destinations across all 36 states & UTs of India. Filter by type, state, budget and travel month.',
-  canonicalPath: 'destinations.html',
-}));
-
-injectJsonLd(breadcrumbJsonLd([
-  { name: 'Home', path: '/' },
-  { name: 'Destinations', path: 'destinations.html' },
-]));
-
 const idx = await fetchIndex();
 const SUMMARIES = idx.destinations;
 SUMMARIES.forEach((d, i) => { d._index = i; d._addedAt = d.addedAt || i; });
 const { priceTiers: PRICE_TIERS, types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
+const TYPE_SEO_LABELS = {
+  hill_station: 'Hill Stations',
+  beach: 'Beaches',
+  heritage: 'Heritage Places',
+  wildlife: 'Wildlife Destinations',
+  spiritual: 'Spiritual Places',
+  adventure: 'Adventure Destinations',
+};
+const INDEXABLE_TYPES = new Map(DESTINATION_TYPES.map(function (type) {
+  return [type.id, TYPE_SEO_LABELS[type.id] || type.label];
+}));
 
 const CATEGORY_FILTERS = [
   { id: '', label: 'All Destinations', iconName: 'compass' },
@@ -77,6 +70,121 @@ const regionSel = document.getElementById('regionFilter');
 const seasonSel = document.getElementById('seasonFilter');
 const monthSel = document.getElementById('monthFilter');
 const typeWrap = document.getElementById('typeFilter');
+const heroTitle = document.getElementById('explore-hero-title');
+const heroDescription = document.getElementById('exploreHeroDescription');
+const heroEyebrowText = document.querySelector('#heroEyebrow .eyebrow-txt');
+const discoveryHeading = document.querySelector('.discovery-heading');
+
+const BASE_SEO = {
+  title: 'Places to Visit in India | ExploreDesh',
+  description: 'Browse 2,389 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
+  canonicalPath: 'destinations.html',
+  heading: 'Places to Visit in India',
+  subheading: 'Across 36 States & UTs',
+};
+
+function fullMonthName(monthNumber) {
+  return new Intl.DateTimeFormat('en-IN', { month: 'long' }).format(new Date(2026, monthNumber - 1, 1));
+}
+
+function activeFilterCount() {
+  return ['search', 'type', 'state', 'tier', 'month', 'region', 'season']
+    .filter(function (key) { return Boolean(filters[key]); }).length + (sortBy !== 'rating' ? 1 : 0);
+}
+
+function landingSeo(resultLength) {
+  const count = inr(resultLength);
+  const activeCount = activeFilterCount();
+  if (activeCount === 0) return { ...BASE_SEO, breadcrumb: 'Destinations' };
+
+  if (activeCount === 1 && filters.state) {
+    const state = filters.state;
+    const stateSeo = {
+      title: 'Places to Visit in ' + state + ' | ExploreDesh',
+      description: 'Explore ' + count + ' places to visit in ' + state + ', with top attractions, best travel months, stays across budgets and practical route guides.',
+      canonicalPath: 'destinations.html?state=' + encodeURIComponent(state),
+      heading: 'Places to Visit in ' + state,
+      subheading: count + ' Destination Guides',
+      breadcrumb: state,
+    };
+    if (resultLength < 3) {
+      stateSeo.canonicalPath = BASE_SEO.canonicalPath;
+      stateSeo.robots = 'noindex, follow, max-image-preview:large';
+      stateSeo.noSchema = true;
+    }
+    return stateSeo;
+  }
+
+  if (activeCount === 1 && filters.type && INDEXABLE_TYPES.has(filters.type)) {
+    const label = INDEXABLE_TYPES.get(filters.type);
+    return {
+      title: 'Best ' + label + ' in India | ExploreDesh',
+      description: 'Discover ' + count + ' of the best ' + label.toLowerCase() + ' in India, with destination guides, ideal travel months, stays and practical routes.',
+      canonicalPath: 'destinations.html?type=' + encodeURIComponent(filters.type),
+      heading: 'Best ' + label + ' in India',
+      subheading: count + ' Destination Guides',
+      breadcrumb: label,
+    };
+  }
+
+  if (activeCount === 1 && filters.month) {
+    const monthName = fullMonthName(filters.month);
+    return {
+      title: 'Best Places to Visit in ' + monthName + ' | ExploreDesh',
+      description: 'Plan an India trip in ' + monthName + ' with ' + count + ' recommended destinations, seasonal highlights, stays across budgets and practical travel guides.',
+      canonicalPath: 'destinations.html?month=' + filters.month,
+      heading: 'Best Places to Visit in ' + monthName,
+      subheading: count + ' Seasonal Picks Across India',
+      breadcrumb: monthName + ' Travel',
+    };
+  }
+
+  return {
+    title: 'Filtered India Destinations | ExploreDesh',
+    description: 'Refine destinations in India by state, category, travel month, season and budget.',
+    canonicalPath: BASE_SEO.canonicalPath,
+    heading: count + ' Matching Destinations',
+    subheading: 'Refine Your India Trip',
+    robots: 'noindex, follow, max-image-preview:large',
+    noSchema: true,
+  };
+}
+
+function applyLandingSeo(resultLength) {
+  const seo = landingSeo(resultLength);
+  applySEO({
+    title: seo.title,
+    description: seo.description,
+    canonicalPath: seo.canonicalPath,
+    robots: seo.robots,
+  });
+
+  if (heroTitle) {
+    heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
+      '<span class="hero-line-2">' + esc(seo.subheading) + '</span>';
+  }
+  if (heroDescription) heroDescription.textContent = seo.description;
+  if (heroEyebrowText) heroEyebrowText.textContent = seo.breadcrumb || 'Explore India by State, Style or Season';
+  if (discoveryHeading) discoveryHeading.textContent = seo.heading;
+
+  if (seo.noSchema) {
+    injectJsonLd(null, 'explore-collection');
+    injectJsonLd(null, 'explore-breadcrumb');
+    return;
+  }
+
+  injectJsonLd(collectionPageJsonLd({
+    title: seo.title,
+    description: seo.description,
+    canonicalPath: seo.canonicalPath,
+  }), 'explore-collection');
+  const crumbs = [
+    { name: 'Home', path: '/' },
+    { name: 'Destinations', path: 'destinations.html' },
+  ];
+  if (seo.breadcrumb !== 'Destinations') crumbs.push({ name: seo.breadcrumb, path: seo.canonicalPath });
+  injectJsonLd(breadcrumbJsonLd(crumbs), 'explore-breadcrumb');
+}
 
 // ─── Render Category Pill Buttons ──────────────────────
 function renderTypeButtons() {
@@ -171,7 +279,7 @@ let lastResults = [];
 let _cardScrollTriggers = [];
 
 function killCardTriggers() {
-  _cardScrollTriggers.forEach((st) => { try { st.kill(); } catch (_) {} });
+  _cardScrollTriggers.forEach((st) => { try { st.kill(); } catch (_) { } });
   _cardScrollTriggers = [];
 }
 
@@ -193,30 +301,30 @@ function animateCardsIn(startIndex) {
 
     const st = window.ScrollTrigger
       ? window.gsap.to(row, {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.55,
-          stagger: 0.055,
-          ease: 'expo.out',
-          clearProps: 'transform,scale,opacity',
-          scrollTrigger: {
-            trigger: row[0],
-            start: 'top 92%',
-            toggleActions: 'play none none none',
-            once: true,
-          },
-        })
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.55,
+        stagger: 0.055,
+        ease: 'expo.out',
+        clearProps: 'transform,scale,opacity',
+        scrollTrigger: {
+          trigger: row[0],
+          start: 'top 92%',
+          toggleActions: 'play none none none',
+          once: true,
+        },
+      })
       : window.gsap.to(row, {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.55,
-          stagger: 0.055,
-          ease: 'expo.out',
-          delay: (i / chunkSize) * 0.07,
-          clearProps: 'transform,scale,opacity',
-        });
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.55,
+        stagger: 0.055,
+        ease: 'expo.out',
+        delay: (i / chunkSize) * 0.07,
+        clearProps: 'transform,scale,opacity',
+      });
 
     if (st && st.scrollTrigger) _cardScrollTriggers.push(st.scrollTrigger);
   }
@@ -262,7 +370,7 @@ function syncUrlAndState() {
     if (currentQs !== qs) {
       window.history.replaceState({ filters: { ...filters }, sortBy, shown, scrollY: window.scrollY }, '', targetUrl);
     }
-  } catch (_) {}
+  } catch (_) { }
 
   // Keep state in sessionStorage for instant restoration on Back button navigation
   try {
@@ -274,7 +382,7 @@ function syncUrlAndState() {
       url: targetUrl,
       timestamp: Date.now()
     }));
-  } catch (_) {}
+  } catch (_) { }
 
   setActiveNav(filters.type ? 'destinations.html?type=' + filters.type : 'destinations.html');
 }
@@ -372,7 +480,7 @@ function readFiltersFromUrl() {
           if (parsed.scrollY && parsed.scrollY > 0) initialRestoredScrollY = parsed.scrollY;
         }
       }
-    } catch (_) {}
+    } catch (_) { }
   } else {
     // If URL has params, still restore shown count and scroll position if available
     try {
@@ -384,7 +492,7 @@ function readFiltersFromUrl() {
           if (parsed.scrollY && parsed.scrollY > 0) initialRestoredScrollY = parsed.scrollY;
         }
       }
-    } catch (_) {}
+    } catch (_) { }
   }
 
   filters = newFilters;
@@ -476,6 +584,7 @@ function apply(options = {}) {
   if (!skipUrlSync) {
     syncUrlAndState();
   }
+  applyLandingSeo(results.length);
 
   // Restore scroll position after initial rendering if requested
   if (initialRestoredScrollY > 0) {
@@ -572,7 +681,7 @@ function resetFilters() {
   initialRestoredScrollY = 0;
   try {
     sessionStorage.removeItem('exploredesh_explore_state');
-  } catch (_) {}
+  } catch (_) { }
   if (searchInput) searchInput.value = '';
   toggleSearchClear();
   if (stateSel) stateSel.value = '';
@@ -700,7 +809,7 @@ if (grid) {
           url: window.location.pathname + window.location.search,
           timestamp: Date.now()
         }));
-      } catch (_) {}
+      } catch (_) { }
     }
   });
 }
@@ -715,7 +824,7 @@ window.addEventListener('beforeunload', function () {
       url: window.location.pathname + window.location.search,
       timestamp: Date.now()
     }));
-  } catch (_) {}
+  } catch (_) { }
 });
 
 // Handle browser Back / Forward buttons without full reload

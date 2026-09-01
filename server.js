@@ -3,7 +3,7 @@
  * Run: node server.js
  */
 const http = require('http');
-const fs   = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const PORT = 8080;
@@ -11,20 +11,20 @@ const ROOT = __dirname;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
-  '.css' : 'text/css; charset=utf-8',
-  '.js'  : 'application/javascript; charset=utf-8',
-  '.mjs' : 'application/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.mjs': 'application/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
-  '.png' : 'image/png',
-  '.jpg' : 'image/jpeg',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
-  '.svg' : 'image/svg+xml',
-  '.ico' : 'image/x-icon',
+  '.svg': 'image/svg+xml',
+  '.ico': 'image/x-icon',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
-  '.ttf' : 'font/ttf',
-  '.txt' : 'text/plain; charset=utf-8',
-  '.xml' : 'application/xml',
+  '.ttf': 'font/ttf',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml',
   '.webp': 'image/webp',
 };
 
@@ -47,7 +47,7 @@ http.createServer((req, res) => {
   }
 
   const ext = path.extname(filePath).toLowerCase();
-  const ct  = MIME[ext] || 'application/octet-stream';
+  const ct = MIME[ext] || 'application/octet-stream';
   res.setHeader('Content-Type', ct);
 
   try {

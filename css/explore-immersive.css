@@ -156,8 +156,17 @@ body.explore-immersive :focus-visible {
 }
 
 @keyframes pulseDot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
 }
 
 .explore-eyebrow-pill .eyebrow-txt {
@@ -366,8 +375,15 @@ body.explore-immersive :focus-visible {
 }
 
 @keyframes wheelAnim {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(10px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 }
 
 /* ==========================================================================
@@ -475,7 +491,7 @@ header.dest-discovery-toolbar,
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
 }
 
-.search-input-field:focus ~ .search-lens-icon {
+.search-input-field:focus~.search-lens-icon {
   color: var(--exp-emerald-light);
 }
 
@@ -507,7 +523,8 @@ header.dest-discovery-toolbar,
 }
 
 .mobile-filter-trigger {
-  display: none !important; /* Hidden on desktop — sidebar is always visible */
+  display: none !important;
+  /* Hidden on desktop — sidebar is always visible */
   align-items: center;
   gap: 8px;
   height: 44px;
@@ -648,8 +665,15 @@ body.glass-immersive .explore-filter-sidebar,
 
 
 @keyframes sidebarFadeIn {
-  from { opacity: 0; transform: translateX(-12px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .filter-glass-card {
@@ -727,7 +751,8 @@ body.glass-immersive .explore-filter-sidebar,
   border: 1px solid var(--exp-border);
   background: rgba(255, 255, 255, 0.05);
   color: var(--exp-text-main);
-  display: none !important; /* Hidden on desktop — only shown inside mobile drawer */
+  display: none !important;
+  /* Hidden on desktop — only shown inside mobile drawer */
   place-items: center;
   cursor: pointer;
 }
@@ -1390,6 +1415,7 @@ body.glass-immersive .explore-filter-sidebar,
 }
 
 @media (max-width: 1023px) {
+
   /* Show the "Filters" button on mobile — hidden on desktop */
   .mobile-filter-trigger {
     display: inline-flex !important;
@@ -1432,12 +1458,20 @@ body.glass-immersive .explore-filter-sidebar,
   }
 
   body.explore-immersive .explore-filter-sidebar.open .filter-close-btn {
-    display: grid !important; /* Show ✕ only inside mobile drawer */
+    display: grid !important;
+    /* Show ✕ only inside mobile drawer */
   }
 
   @keyframes drawerIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 
@@ -1480,6 +1514,7 @@ body.glass-immersive .explore-filter-sidebar,
    Reduced Motion
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
+
   body.explore-immersive *,
   body.explore-immersive *::before,
   body.explore-immersive *::after {
@@ -1488,9 +1523,11 @@ body.glass-immersive .explore-filter-sidebar,
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
   .explore-immersive-bg {
     transform: none !important;
   }
+
   .dest-card-link:hover {
     transform: none !important;
   }
