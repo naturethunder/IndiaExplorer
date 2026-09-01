@@ -98,6 +98,9 @@ const server = http.createServer(function (req, res) {
       'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
       'Pragma': 'no-cache',
       'Expires': '0',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'SAMEORIGIN',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
     };
     const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
     const stream = fs.createReadStream(targetFile);

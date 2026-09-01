@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-26T17:59:35.678Z",
-  "count": 2389,
+  "count": 2390,
   "meta": {
     "priceTiers": {
       "cheapest": {
@@ -180,6 +180,52 @@
   },
   "destinations": [
     {
+      "slug": "taj-mahal",
+      "title": "Taj Mahal",
+      "state": "Uttar Pradesh",
+      "region": "Northern India",
+      "type": "heritage",
+      "badge": "Must Visit",
+      "short": "An ivory-white marble monument of eternal love and UNESCO World Heritage Wonder on the Yamuna river.",
+      "bestTime": {
+        "label": "Oct – Mar",
+        "months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3
+        ]
+      },
+      "rating": 4.9,
+      "reviewCount": 48520,
+      "minPrice": 800,
+      "distanceFromDelhi": 210,
+      "lat": 27.1751,
+      "lng": 78.0421,
+      "image": "https://images.pexels.com/photos/18722577/pexels-photo-18722577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "heroImage": {
+        "src": "https://images.pexels.com/photos/18722577/pexels-photo-18722577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Taj Mahal in Agra, Uttar Pradesh, India - Panoramic View with Iconic Reflecting Pool"
+      },
+      "features": [
+        "UNESCO World Heritage",
+        "Mughal Architecture",
+        "Pietra Dura Inlay",
+        "Charbagh Gardens"
+      ],
+      "tiers": [
+        "cheapest",
+        "budget",
+        "good",
+        "better",
+        "best",
+        "luxury"
+      ],
+      "tagline": "An ivory-white marble masterpiece of eternal love"
+    },
+    {
       "slug": "kanatal",
       "title": "Kanatal",
       "state": "Uttarakhand",
@@ -259,7 +305,7 @@
       "image": "https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
         "src": "https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Manali photo 2"
+        "alt": "Manali, Himachal Pradesh - Panoramic View of Snow Peaks & Pine Forests"
       },
       "features": [
         "Snow",
@@ -563,7 +609,7 @@
       "image": "https://images.pexels.com/photos/29023410/pexels-photo-29023410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
         "src": "https://images.pexels.com/photos/29023410/pexels-photo-29023410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Munnar photo 3"
+        "alt": "Munnar, Kerala - Verdant Tea Plantations & Rolling Misty Hills of Western Ghats"
       },
       "features": [
         "Tea Estates",
@@ -12484,8 +12530,8 @@
       "lng": 85.5,
       "image": "https://images.pexels.com/photos/673920/pexels-photo-673920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Dan_Lauria_1.jpg",
-        "alt": "Rajauli Wildlife Sanctuary - Hollywood actor Dan Lauria hands an autographed photo to Staff Sgt. Brian Cull, Headquarter"
+        "src": "https://images.pexels.com/photos/673920/pexels-photo-673920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Rajauli Wildlife Sanctuary - Dense Sal Forests and Scenic Mountain Ghats of Nawada"
       },
       "features": [
         "27.27-sq-km Protected Wildlife Sanctuary",
@@ -12574,8 +12620,8 @@
       "lng": 84.78,
       "image": "https://images.pexels.com/photos/31817437/pexels-photo-31817437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Bodhgaya%281878%29_p102_No.1%2C_Section_of_Temple_at_Konch.jpg",
-        "alt": "Koncheswar Mahadev temple - Koncheswar Mahadev temple scenic view 1"
+        "src": "https://images.pexels.com/photos/31817437/pexels-photo-31817437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Koncheswar Mahadev Temple - Ancient 8th-Century Curvilinear Brick Temple Shikhara"
       },
       "features": [
         "Rare 8th-Century Curvilinear Brick Temple Shikhara",
@@ -16946,7 +16992,10 @@
       "lat": 23.48388889,
       "lng": 70.46194444,
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanthkot_Fort_Entrance_Gate.jpg",
-      "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanthkot_Fort_Entrance_Gate.jpg",
+      "heroImage": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kanthkot_Fort_Entrance_Gate.jpg",
+        "alt": "Kanthkot Fort arched stone entrance gateway in Kutch, Gujarat (4608x2592 4K Ultra-HD)"
+      },
       "features": [
         "Forts",
         "Architecture",
@@ -18270,9 +18319,9 @@
       "distanceFromDelhi": 1002,
       "lat": 21.7911687,
       "lng": 70.689375558,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Khodaldham_temple.jpg",
+      "image": "https://images.pexels.com/photos/29938373/pexels-photo-29938373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Khodaldham_temple.jpg",
+        "src": "https://images.pexels.com/photos/29938373/pexels-photo-29938373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Khodaldham in Khodaldham, Gujarat - khodaldham temple out side"
       },
       "features": [
@@ -20191,7 +20240,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sarahan-Bhimakali-27-Tempeltuer-2016-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sarahan-Bhimakali-27-Tempeltuer-2016-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gurdwara Paonta Sahib in Gurdwara Paonta Sahib, Himachal Pradesh - Photograph taken of Gurdwara Paonta Sahib located in"
+        "alt": "sarahan bhimakali temple"
       },
       "features": [
         "Forts",
@@ -21958,10 +22007,10 @@
       "distanceFromDelhi": 653,
       "lat": 34.1292,
       "lng": 74.8422,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Hazratbal_Shrine.jpg",
+      "image": "https://images.pexels.com/photos/5776634/pexels-photo-5776634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Hazratbal_Shrine.jpg",
-        "alt": "Hazratbal Shrine in Hazratbal Shrine, Jammu & Kashmir - A historical monument and a mosque built all in marble stone in"
+        "src": "https://images.pexels.com/photos/5776634/pexels-photo-5776634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Scenic view of a mosque by Dal Lake in Kashmir with boats on calm waters and mountains in the background."
       },
       "features": [
         "Temples",
@@ -23183,10 +23232,10 @@
       "distanceFromDelhi": 1049,
       "lat": 24.4925,
       "lng": 86.7,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Baba_dham.jpg",
+      "image": "https://images.pexels.com/photos/8325457/pexels-photo-8325457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Baba_dham.jpg",
-        "alt": "Vaidyanath Jyotirlinga in Vaidyanath Jyotirlinga, Jharkhand - This is photo of Baidyanath ji- commonly known as Baba Dha"
+        "src": "https://images.pexels.com/photos/8325457/pexels-photo-8325457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "A Hindu priest in traditional attire performs a nighttime ritual holding a ghee lamp in Nepal."
       },
       "features": [
         "Temples",
@@ -30386,9 +30435,9 @@
       "distanceFromDelhi": 1721,
       "lat": 13.25,
       "lng": 75.2,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kudremukh_National_Park.jpg/1280px-Kudremukh_National_Park.jpg",
+      "image": "https://images.pexels.com/photos/33216709/pexels-photo-33216709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kudremukh_National_Park.jpg/1280px-Kudremukh_National_Park.jpg",
+        "src": "https://images.pexels.com/photos/33216709/pexels-photo-33216709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Kudremukh National Park photo 2"
       },
       "features": [
@@ -32599,9 +32648,9 @@
       "distanceFromDelhi": 1570,
       "lat": 14.533333333,
       "lng": 76.116666666,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Four-horned_Antelope.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image": "https://images.pexels.com/photos/4998446/pexels-photo-4998446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Four-horned_Antelope.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "src": "https://images.pexels.com/photos/4998446/pexels-photo-4998446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Rangayyanadurga Four–horned antelope Wildlife Sanctuary photo 2"
       },
       "features": [
@@ -47716,9 +47765,9 @@
       "distanceFromDelhi": 591,
       "lat": 33.912475,
       "lng": 77.70283333,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Amber_Palace%2C_Jaipur.jpg",
+      "image": "https://images.pexels.com/photos/38332156/pexels-photo-38332156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Amber_Palace%2C_Jaipur.jpg",
+        "src": "https://images.pexels.com/photos/38332156/pexels-photo-38332156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Hemis Monastery - authentic heritage scenery"
       },
       "features": [
@@ -52595,9 +52644,9 @@
       "distanceFromDelhi": 905,
       "lat": 20.93333333,
       "lng": 80.16666667,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Navegaon_Bandh_National_Park_-_panoramio.jpg/1280px-Navegaon_Bandh_National_Park_-_panoramio.jpg",
+      "image": "https://images.pexels.com/photos/30889518/pexels-photo-30889518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Navegaon_Bandh_National_Park_-_panoramio.jpg/1280px-Navegaon_Bandh_National_Park_-_panoramio.jpg",
+        "src": "https://images.pexels.com/photos/30889518/pexels-photo-30889518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Nawegaon National Park photo 2"
       },
       "features": [
@@ -54986,9 +55035,9 @@
       "distanceFromDelhi": 972,
       "lat": 20.43172222,
       "lng": 73.81525,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Achal_Killa.jpg",
+      "image": "https://pixabay.com/get/gd9ffa09c20ec58575a2a92e387b4b55d21f1e9702971c2c54b68ba09a56cd07477e1da2cbd577914504f78e76eed0aae994bea07544a2e1e5b8e3c892812046d_1280.jpg",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Achal_Killa.jpg",
+        "src": "https://pixabay.com/get/gd9ffa09c20ec58575a2a92e387b4b55d21f1e9702971c2c54b68ba09a56cd07477e1da2cbd577914504f78e76eed0aae994bea07544a2e1e5b8e3c892812046d_1280.jpg",
         "alt": "Achala Fort scenic view 1"
       },
       "features": [
@@ -55207,9 +55256,9 @@
       "distanceFromDelhi": 943,
       "lat": 20.58,
       "lng": 74.22,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mangi_tungi_nashik.jpg/1280px-Mangi_tungi_nashik.jpg",
+      "image": "https://pixabay.com/get/gb0eda85909e838ac87ea849dc185dcbd608eb727a1b616d06169a5324d9e3aff1ff58a388caf41e33aae01a996ea3149706388a6e2733f34ed1339a4ce997094_1280.jpg",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Mangi_tungi_nashik.jpg/1280px-Mangi_tungi_nashik.jpg",
+        "src": "https://pixabay.com/get/gb0eda85909e838ac87ea849dc185dcbd608eb727a1b616d06169a5324d9e3aff1ff58a388caf41e33aae01a996ea3149706388a6e2733f34ed1339a4ce997094_1280.jpg",
         "alt": "Mangi-Tungi photo 2"
       },
       "features": [
@@ -64173,7 +64222,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Gondhla_Fort%2C_Lahaul%2C_Himachal_Pradesh_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Gondhla_Fort%2C_Lahaul%2C_Himachal_Pradesh_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Ntangki National Park in Nagaland - \nAmerican; Pier table; Furniture"
+        "alt": "Gondhla Fort is an ancient seven-storey tower built in the traditional Kath-Kuni architectural style"
       },
       "features": [
         "Safari",
@@ -64218,7 +64267,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sarahan-Bhimakali-28-Tempeltuer-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sarahan-Bhimakali-28-Tempeltuer-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dimapur Kalibari in Nagaland - \nAmerican; Pier table; Furniture"
+        "alt": "sarahan bhimakali temple"
       },
       "features": [
         "Temples",
@@ -68229,7 +68278,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/View_of_Nahargarh_Fort_from_Jantar_Mantar%2C_Jaipur_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/View_of_Nahargarh_Fort_from_Jantar_Mantar%2C_Jaipur_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Qila Mubarak photo 2"
+        "alt": "View of Nahargarh Fort from Jantar Mantar, Jaipur.\nThe Jantar Mantar monument in Jaipur, Rajasthan i"
       },
       "features": [
         "Forts",
@@ -69551,9 +69600,9 @@
       "distanceFromDelhi": 232,
       "lat": 26.924,
       "lng": 75.82672,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Hawa_Mahal_2011.jpg",
+      "image": "https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Hawa_Mahal_2011.jpg",
+        "src": "https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Hawa Mahal in Hawa Mahal, Rajasthan - Hawa Mahal, Jaipur, India."
       },
       "features": [
@@ -73808,10 +73857,10 @@
       "distanceFromDelhi": 1111,
       "lat": 27.20611111,
       "lng": 88.40805556,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pathibhara_Devi_Temple.jpg",
+      "image": "https://images.pexels.com/photos/19561298/pexels-photo-19561298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pathibhara_Devi_Temple.jpg",
-        "alt": "Tendong Gumpa in Sikkim - TOUR(SIKKIM,DARJELLING AND EASTERN NEPAL) 2070-08-16,,21"
+        "src": "https://images.pexels.com/photos/19561298/pexels-photo-19561298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Tendong Gumpa Buddhist Monastery atop Namchi Ridge, South Sikkim"
       },
       "features": [
         "Forts",
@@ -74410,7 +74459,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Villages_Chenab_Udaipur_Lahaul_Himachal_Jul19_D72_10963.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Villages_Chenab_Udaipur_Lahaul_Himachal_Jul19_D72_10963.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nataraja Temple photo 3"
+        "alt": "Rashil and Rape villages on the left bank of the Chenab River, Udaipur, Lahaul &amp; Spiti District,"
       },
       "features": [
         "Temples",
@@ -76817,9 +76866,9 @@
       "distanceFromDelhi": 1758,
       "lat": 13.0527,
       "lng": 80.2136,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Vadapalani_Murugan_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image": "https://images.unsplash.com/photo-1621488832166-8507b7eae488?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8N3x8VmFkYXBhbGFuaSUyMEFuZGF2YXIlMjBUZW1wbGUlMjBUYW1pbCUyME5hZHV8ZW58MHwwfHx8MTc4ODA4MjkwM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=85",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Vadapalani_Murugan_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "src": "https://images.unsplash.com/photo-1621488832166-8507b7eae488?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8N3x8VmFkYXBhbGFuaSUyMEFuZGF2YXIlMjBUZW1wbGUlMjBUYW1pbCUyME5hZHV8ZW58MHwwfHx8MTc4ODA4MjkwM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=85",
         "alt": "Vadapalani Andavar Temple photo 2"
       },
       "features": [
@@ -80779,7 +80828,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "heroImage": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nehanurpatti photo 4"
+        "alt": "A traditional house made in the Kinnauri vernacular architectural style in the town of Sangla, locat"
       },
       "features": [
         "Temples",
@@ -93697,9 +93746,9 @@
       "distanceFromDelhi": 1353,
       "lat": 16.8317,
       "lng": 80.5198,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Jamalapuram_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image": "https://images.pexels.com/photos/35359507/pexels-photo-35359507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Jamalapuram_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "src": "https://images.pexels.com/photos/35359507/pexels-photo-35359507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Jamalapuram Temple view 1 — Jamalapuram Temple"
       },
       "features": [
@@ -96487,10 +96536,10 @@
       "distanceFromDelhi": 678,
       "lat": 26.854349,
       "lng": 83.802804,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gaytrimandir.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image": "https://images.pexels.com/photos/35960312/pexels-photo-35960312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gaytrimandir.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Ved Mata Gaytri Mandir photo 2"
+        "src": "https://images.pexels.com/photos/35960312/pexels-photo-35960312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Low angle view of the intricate architecture of the ISKCON Temple in Vrindavan, showcasing its ornate stonework."
       },
       "features": [
         "Temples",
@@ -97682,9 +97731,9 @@
       "distanceFromDelhi": 670,
       "lat": 25.59172,
       "lng": 83.070256,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wayanad_Hills.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image": "https://images.pexels.com/photos/31228051/pexels-photo-31228051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wayanad_Hills.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "src": "https://images.pexels.com/photos/31228051/pexels-photo-31228051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Hills of Kerala"
       },
       "features": [
@@ -98811,9 +98860,9 @@
       "distanceFromDelhi": 325,
       "lat": 30.788556,
       "lng": 79.452611,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Vasudhara_Falls.JPG",
+      "image": "https://images.pexels.com/photos/33719848/pexels-photo-33719848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Vasudhara_Falls.JPG",
+        "src": "https://images.pexels.com/photos/33719848/pexels-photo-33719848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Vasudhara Falls in Vasudhara Falls, Uttarakhand - Vasudhara Falls, Uttarakhand"
       },
       "features": [
@@ -100287,9 +100336,9 @@
       "distanceFromDelhi": 1184,
       "lat": 23.0682354,
       "lng": 87.32209778,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Rasmancha%2C_Bishnupur.JPG",
+      "image": "https://images.pexels.com/photos/774570/pexels-photo-774570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Rasmancha%2C_Bishnupur.JPG",
+        "src": "https://images.pexels.com/photos/774570/pexels-photo-774570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Rasmancha in Rasmancha, West Bengal - This is a photo of ASI monument number"
       },
       "features": [
@@ -103857,9 +103906,9 @@
       "distanceFromDelhi": 1950,
       "lat": 25.2017,
       "lng": 91.9163,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mawlynnong_village.jpg",
+      "image": "https://images.pexels.com/photos/27820314/pexels-photo-27820314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "heroImage": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mawlynnong_village.jpg",
+        "src": "https://images.pexels.com/photos/27820314/pexels-photo-27820314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Mawlynnong in Mawlynnong, Meghalaya - mawlynnong is the world's cleaanest village and full of greenary"
       },
       "features": [

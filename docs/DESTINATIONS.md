@@ -1,13 +1,13 @@
 # 🧭 IndiaExplore — Destinations by State
 
-> Auto-generated reference: every one of the **2,389 destinations** grouped by state/UT,
+> Auto-generated reference: every one of the **2,390 destinations** grouped by state/UT,
 > with its **best travel months** and **price per night** (min–max, taken from the
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-08-30.
+> Last generated: 2026-09-01.
 
-**36 states/UTs · 2,389 destinations**
+**36 states/UTs · 2,390 destinations**
 
 ## Contents
 
@@ -44,7 +44,7 @@
 - [Tamil Nadu](#tamil-nadu) (429)
 - [Telangana](#telangana) (55)
 - [Tripura](#tripura) (11)
-- [Uttar Pradesh](#uttar-pradesh) (78)
+- [Uttar Pradesh](#uttar-pradesh) (79)
 - [Uttarakhand](#uttarakhand) (50)
 - [West Bengal](#west-bengal) (80)
 
@@ -2470,6 +2470,7 @@
 | **St. Mary's Church, Noida** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Surha Tal Bird Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
 | **Swarved Mahamandir** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
+| **Taj Mahal** | Heritage | Jan–Mar, Oct–Dec | ₹800 – ₹65,000 |
 | **Tiruvaaippadi** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Vahelna Jain temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Valmiki Ashram** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |

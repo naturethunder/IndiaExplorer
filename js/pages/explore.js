@@ -77,7 +77,7 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
   title: 'Places to Visit in India | ExploreDesh',
-  description: 'Browse 2,389 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
+  description: 'Browse 2,390 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
   canonicalPath: 'destinations.html',
   heading: 'Places to Visit in India',
   subheading: 'Across 36 States & UTs',
@@ -461,28 +461,13 @@ function readFiltersFromUrl() {
     }
   }
 
-  // If no params in URL, check if we have a saved session state from recent navigation
+  // If no params in URL, start with fresh clean filters and clear any stale session state
   if (!hasUrlParams) {
     try {
-      const saved = sessionStorage.getItem('exploredesh_explore_state');
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (parsed && parsed.filters && (Date.now() - (parsed.timestamp || 0) < 7200000)) {
-          if (parsed.filters.search) newFilters.search = parsed.filters.search;
-          if (parsed.filters.type) newFilters.type = parsed.filters.type;
-          if (parsed.filters.state) newFilters.state = parsed.filters.state;
-          if (parsed.filters.region) newFilters.region = parsed.filters.region;
-          if (parsed.filters.tier) newFilters.tier = parsed.filters.tier;
-          if (parsed.filters.season) newFilters.season = parsed.filters.season;
-          if (parsed.filters.month) newFilters.month = parsed.filters.month;
-          if (parsed.sortBy) newSortBy = parsed.sortBy;
-          if (parsed.shown && parsed.shown > PAGE_SIZE) shown = parsed.shown;
-          if (parsed.scrollY && parsed.scrollY > 0) initialRestoredScrollY = parsed.scrollY;
-        }
-      }
+      sessionStorage.removeItem('exploredesh_explore_state');
     } catch (_) { }
   } else {
-    // If URL has params, still restore shown count and scroll position if available
+    // If URL has params, restore shown count and scroll position if available from the same active query
     try {
       const saved = sessionStorage.getItem('exploredesh_explore_state');
       if (saved) {

@@ -105,5 +105,14 @@ console.log('-------------------------------------------------------------------
 console.log(`🚨 Defective / Improper Images Remaining:   ${totalDefectsFound}`);
 console.log(`🚨 Cross-Destination Duplicate Images:      ${crossDestCollisionsCount}`);
 console.log(`🚨 Intra-Destination Disjoint Collisions:   ${intraDestCollisionsCount}`);
-console.log(`🎯 Hero Image vs Gallery[0] Consistency:    ${heroGallery0MismatchCount === 0 ? '100% Perfect (0 mismatches)' : heroGallery0MismatchCount + ' mismatches'}`);
 console.log('======================================================================\n');
+
+const totalErrors = totalDefectsFound + crossDestCollisionsCount + intraDestCollisionsCount + heroGallery0MismatchCount;
+if (totalErrors > 0) {
+  console.error(`❌ QUALITY AUDIT FAILED: ${totalErrors} issues detected.`);
+  process.exit(1);
+} else {
+  console.log('✅ QUALITY AUDIT PASSED: 0 defects, 0 collisions, 100% hero consistency.');
+  process.exit(0);
+}
+

@@ -1,9 +1,9 @@
 # 🇮🇳 ExploreDesh — Luxury Travel Discovery Platform
 
-> **System Status (2026-08-31):** **2,389 Destinations** across all 36 States & UTs. Full-screen **Royal Obsidian & Heritage Gold** luxury dark glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography (69,361 unique image pool across 71,750 image slots), True 4K & Ultra-HD widescreen landscape imagery, interactive Google Maps & Directions actions, zero map diagrams/selfies/portraits/audio/coins, zero cross-destination duplicates, image-free hotel cards with direct Google search integration, pure search-engine SEO (Schema.org JSON-LD graph with Sitelinks `SearchAction`, `TouristDestination`, `CollectionPage`, `AboutPage`, `ContactPage`, `BreadcrumbList`, canonical consolidation, 0 social media tags), and zero broken/placeholder media repository-wide.
+> **System Status (2026-09-02):** **2,390 Destinations** across all 36 States & UTs. Full-screen **Royal Obsidian & Heritage Gold** luxury dark glass layouts, **11-category discovery grid**, dynamic reshuffling on refresh, GSAP ScrollTrigger batch motion engine, 100% unique 1-to-1 hero photography (69,398 unique image pool across 71,787 image slots), True 4K & Ultra-HD widescreen landscape imagery, interactive Google Maps & Directions actions, zero map diagrams/selfies/portraits/audio/coins, zero cross-destination duplicates, image-free hotel cards with direct Google search integration, pure search-engine SEO (Schema.org JSON-LD graph with Sitelinks `SearchAction`, `TouristDestination`, `CollectionPage`, `AboutPage`, `ContactPage`, `BreadcrumbList`, canonical consolidation, 0 social media tags), and zero broken/placeholder media repository-wide.
 
-A luxury India travel-discovery platform. Browse **2,389 destinations** (13,973+ places,
-9,756+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
+A luxury India travel-discovery platform. Browse **2,390 destinations** (14,362+ places,
+9,629+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
 open a per-destination page with a photo hero, places to visit, stays by budget, routes
 (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
@@ -19,7 +19,7 @@ open a per-destination page with a photo hero, places to visit, stays by budget,
 
 ```bash
 node scripts/serve.js          # → http://localhost:8080 (Start local web server)
-node scripts/qa-audit.js        # → Run complete national QA audit suite & check image integrity
+node scripts/final-repository-audit.js  # → Run comprehensive repository integrity & media audit
 ```
 
 Then open **http://localhost:8080/**. A server is required (not `file://`) because the site

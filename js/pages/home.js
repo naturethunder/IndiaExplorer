@@ -26,16 +26,16 @@ applySEO({
   if (!bg) return;
 
   const HERO_PHOTOS = [
-    { name: 'Varanasi Ganga Ghats', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ganga_Aarti_in_evening_at_Dashashwamedh_ghat%2C_Varanasi.jpg/1920px-Ganga_Aarti_in_evening_at_Dashashwamedh_ghat%2C_Varanasi.jpg', state: 'Uttar Pradesh' },
-    { name: 'Hawa Mahal, Jaipur', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/20191218%2C_Hawa_Mahal_%28The_Palace_of_Winds%29_in_Jaipur%2C_1128_9119.jpg/1920px-20191218%2C_Hawa_Mahal_%28The_Palace_of_Winds%29_in_Jaipur%2C_1128_9119.jpg', state: 'Rajasthan' },
-    { name: 'Rishikesh Ganga Aarti', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Aarti_at_Triveni_Ghat_Rishikesh.jpg/1920px-Aarti_at_Triveni_Ghat_Rishikesh.jpg', state: 'Uttarakhand' },
-    { name: 'Baga Beach, Goa', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/India_-_Goa_-_010_-_Touristy_Baga_Beach.jpg/1920px-India_-_Goa_-_010_-_Touristy_Baga_Beach.jpg', state: 'Goa' },
-    { name: 'Manali Valley', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Manali_to_Rohtang_Pass_04.jpg/1920px-Manali_to_Rohtang_Pass_04.jpg', state: 'Himachal Pradesh' },
-    { name: 'City Palace, Udaipur', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/City_Palace_Udaipur_Rajasthan_India.JPG/1920px-City_Palace_Udaipur_Rajasthan_India.JPG', state: 'Rajasthan' },
-    { name: 'Vittala Temple, Hampi', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Vittala_temple_complex_MS.jpg/1920px-Vittala_temple_complex_MS.jpg', state: 'Karnataka' },
-    { name: 'Kanchenjunga from Darjeeling', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kangchenjunga_view_from_Darjeeling.jpg/1920px-Kangchenjunga_view_from_Darjeeling.jpg', state: 'West Bengal' },
-    { name: 'Key Monastery, Spiti', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kee_monastery_Spiti_Valley_%28edited%29.jpg/1920px-Kee_monastery_Spiti_Valley_%28edited%29.jpg', state: 'Himachal Pradesh' },
-    { name: 'Jaisalmer Fort', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Jaisalmer%27s_Fort.jpg/1920px-Jaisalmer%27s_Fort.jpg', state: 'Rajasthan' },
+    { name: 'Varanasi Ganga Ghats', src: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Uttar Pradesh' },
+    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
+    { name: 'Rishikesh Ganga Aarti', src: 'https://images.pexels.com/photos/18887232/pexels-photo-18887232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Uttarakhand' },
+    { name: 'Baga Beach, Goa', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Goa' },
+    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Himachal Pradesh' },
+    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
+    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Karnataka' },
+    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'West Bengal' },
+    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Himachal Pradesh' },
+    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
   ];
 
   let currentIdx = 0;
@@ -176,10 +176,10 @@ function search(q) {
   const el = document.getElementById('hero-stats');
   if (!el) return;
   const stats = [
-    { ic: 'map-pin', raw: idx.count || 2389, suffix: '+', label: 'Destinations' },
+    { ic: 'map-pin', raw: idx.count || 2390, suffix: '+', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
-    { ic: 'mountain', raw: 13991, suffix: '+', label: 'Places' },
-    { ic: 'bed', raw: 9764, suffix: '+', label: 'Stays' },
+    { ic: 'mountain', raw: 14362, suffix: '+', label: 'Places' },
+    { ic: 'bed', raw: 9629, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +

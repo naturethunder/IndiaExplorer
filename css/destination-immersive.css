@@ -214,14 +214,14 @@ body.dest-immersive .dest-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 36%;
+  object-position: center center;
   display: block;
-  transform: scale(1.01);
+  transform: scale(1.0);
   transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
 }
 
 body.dest-immersive .dest-hero:hover .dest-hero-img {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 body.dest-immersive .dest-hero-slides {

@@ -97,9 +97,23 @@ if (crossFileCollisions > 0) {
 }
 
 // Index verification
+let indexItemsCount = 0;
 try {
   const indexData = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf8'));
-  console.log(`\n9. Master index.json Items: ${indexData.length}`);
-} catch (e) {}
+  indexItemsCount = Array.isArray(indexData) ? indexData.length : (indexData.destinations ? indexData.destinations.length : 0);
+  console.log(`\n9. Master index.json Items: ${indexItemsCount}`);
+} catch (e) {
+  console.error('\nError reading index.json:', e.message);
+}
+
+const totalViolations = tajViolations + crossFileCollisions + internalDupsViolations + galleryViolations + heroSyncViolations + placePhotoViolations;
 
 console.log('\n=============================================');
+if (totalViolations > 0) {
+  console.error(`❌ AUDIT FAILED: ${totalViolations} integrity violations detected.`);
+  process.exit(1);
+} else {
+  console.log('✅ AUDIT PASSED: 100% repository integrity verified (0 violations).');
+  process.exit(0);
+}
+

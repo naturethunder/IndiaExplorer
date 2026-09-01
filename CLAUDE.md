@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-08-26)
+# ExploreDesh — Project Guide (updated 2026-09-02)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -8,27 +8,24 @@
 > **[docs/AUDIT.md](docs/AUDIT.md)** = production audit snapshot: quality scores, every fix shipped,
 > what was verified, and what's still open. Read this to understand the site's current health state.
 
-An India travel-discovery platform: browse **2,389 destinations** (14,001 places,
-9,756 stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
+An India travel-discovery platform: browse **2,390 destinations** (14,362 places,
+9,629 stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
 detail pages with places, stays, routes, an interactive Leaflet map, **live weather**, and
 dynamic similar-destination recommendations.
 The entire site uses the **Royal Obsidian & Heritage Gold** luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-08-31):**
+> **Latest Milestone (2026-09-02):**
+> - **Taj Mahal, Agra Destination Created (`taj-mahal.json`):** Added the world-famous UNESCO World Heritage destination with 37 authentic high-definition Pexels/Unsplash photos (5 unique gallery photos, 8 nearby attractions with 1 card + 3 photos each, 4 bookable hotel tiers, and Yamuna Expressway routes).
+> - **Master Media Baseline Restoration & Zero-Collision Invariants:** Restored clean local media baseline across all 2,390 destination files, ensuring 0 cross-destination duplicate collisions across all 69,398 unique image assets.
+> - **Card Image Referrer Resilience:** Added `referrerpolicy="no-referrer"` to `destinations.html`, `destination.html`, `index.html`, `ai-finder.html`, and `js/components/destinationCard.js` to eliminate 429/403 referrer-blocking on Wikimedia and external CDN images.
+> - **Exclusivity & Landmark Purity Enforcement:** Purged misplaced Hawa Mahal images across Haryana, Jharkhand, Kerala, and Tamil Nadu, ensuring Hawa Mahal imagery remains strictly exclusive to Jaipur (`hawa-mahal.json` and `jaipur.json`).
+> - **Filter Navigation State Resilience (`js/pages/explore.js`):** Resolved stale filter resurrection issue on direct visits to `destinations.html`, ensuring clean navigation while preserving back-button browser history.
+> - **Homepage Hero Rotator Polish (`js/pages/home.js`):** Sourced verified high-resolution horizontal assets and synchronized live counter targets (`14,362 Places`, `9,629 Stays`, `2,390 Destinations`, `36 States & UTs`).
 > - **Pure Search Engine SEO & Structured Data Architecture:** Hardened all pages (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`) for search engine crawlers (Google & Bing) while strictly excluding social media meta tags (`og:*`, `twitter:*`).
 > - **Complete Schema.org JSON-LD Graph:** Integrated Google Sitelinks `SearchAction` within `WebSite` schema on `index.html`, `TouristDestination` with GPS coordinates and PostalAddress on `destination.html`, `CollectionPage` on `destinations.html`, `AboutPage` on `about.html`, `ContactPage` on `contact.html`, `BreadcrumbList` on all interior pages, and `FAQPage` where applicable.
 > - **Contact Page & Navigation Polish:** Removed Phone block from `contact.html` and adjusted remaining cards (Email, Office Location, Response Time guarantee) with responsive glassmorphism. Replaced placeholder social buttons in footer with a brand trust badge (`✨ Complete Catalogue of Bharat`).
-> - **Comprehensive Image Quality & Defect Eradication Pass (2026-08-30):** Replaced 185 defective image slots (22 audio files `.ogg`, 110 site floor plans/diagrams, 26 SVGs, 7 ancient coins/stamps, 10 person portraits/headshots, and 9 state maps) with authentic HD landscape and monument photography across 108 destination files.
-> - **True 4K & Ultra-HD Landscape Standards:** Enforced widescreen landscape aspect ratios (1.25 to 1.9) with resolutions up to 5600×3728 across all destinations and nearby places, eliminating vertical portrait stretches and low-res thumbnails.
-> - **Frontend Highlights Carousel Engine (`js/pages/destination.js`):** Fixed `get5RealPhotos()` to prioritize `dest.gallery` first, parsing `.title`, `.caption`, and `.alt` attributes so the 5 curated destination photos are always displayed in the top highlights carousel.
-> - **Global Zero-Collision Verification (69,361 Unique Assets):** Verified 0 cross-destination duplicate images, 0 intra-destination collisions, and 100% `heroImage.src === gallery[0].src` alignment across all 2,389 destinations (71,750 total image slots).
-> - **Multi-Source Legal Photography:** Seamlessly enriched with Wikimedia Commons (79.1%), Pexels API (6.7%), Pixabay (2.1%), Unsplash (0.5%), Flickr Commons (0.1%), and Google Places (11.5%).
-> - **Luxury Royal Obsidian & Heritage Gold Design System Harmonized:** Standardized the entire web platform across all pages (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`) to an ultra-luxurious editorial dark aesthetic with obsidian void surfaces (`#080A0F`), radiant gold search buttons, gold glowing active pills, and high-contrast typography.
+> - **Global Zero-Collision Verification (69,398 Unique Assets):** Verified 0 cross-destination duplicate images, 0 intra-destination collisions, and 100% `heroImage.src === gallery[0].src` alignment across all 2,390 destinations (71,788 total image slots).
 > - **Strict 5-Gallery & 3-Place Photo Quality Standards:** Every destination JSON enforced with exactly 5 unique HD gallery images, 1 scenic cover photo per place, and exactly 3 unique authentic photos per place (0 duplicate URLs per destination).
-> - **Interactive Google Maps Actions:** Added direct "Open in Google Maps" and "Get Directions" action buttons with dynamic GPS coordinates and destination queries on the interactive Map tab in `destination.html`.
-> - **Dynamic Refresh Reshuffling:** Implemented Fisher-Yates dynamic reshuffling in `js/pages/home.js` so that *Trending Destinations*, *Popular Destinations*, *Best Hill Stations*, and *Explore More* display randomized, fresh destination sets on every page refresh.
-> - **Hotel Direct Google Integration:** Stripped image thumbnails from all 9,756 hotel listings and added direct Google Search / Reviews links (`https://www.google.com/search?q=...`) with price tier badges, rate ranges, and amenity chips.
-> - **100% Unique Hero Images (2,389 / 2,389):** Every destination in the catalog has a dedicated, 100% unique 1-to-1 high-resolution hero photo.
 
 ## Architecture (the load-bearing decisions)
 
