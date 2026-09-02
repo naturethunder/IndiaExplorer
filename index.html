@@ -14,11 +14,14 @@
   <meta name="theme-color" content="#080A0F" />
   <link rel="canonical" href="https://exploredesh.com/" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="fonts/caveat-latin.woff2" as="font" type="font/woff2" crossorigin />
   <!-- Google Fonts: Cinzel, Playfair Display & Plus Jakarta Sans for Royal Gold Theme -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="css/glass-immersive.css" />
@@ -144,7 +147,7 @@
     <!-- ═══════════════ CATEGORY CHIPS (Full-Width Stretched) ═══════════════ -->
     <div class="w-full px-4 sm:px-6 lg:px-8 relative z-20 mt-8 mb-6">
       <div class="category-strip px-4 py-5">
-        <div class="carousel-row" id="category-strip" style="scroll-snap-type:none;gap:0.5rem;padding:0.25rem;">
+        <div class="carousel-row" id="category-strip" tabindex="0" role="group" aria-label="Browse by category" style="scroll-snap-type:none;gap:0.5rem;padding:0.25rem;">
           <!-- Rendered by JS -->
         </div>
       </div>
@@ -167,7 +170,7 @@
               </a>
             </div>
             <div class="discover-trending-wrap">
-              <div class="carousel-row" id="trending-grid">
+              <div class="carousel-row" id="trending-grid" tabindex="0" role="group" aria-label="Trending destinations">
                 <!-- Rendered by JS -->
               </div>
               <button class="carousel-arrow discover-arrow discover-arrow-left" id="trend-prev"
@@ -236,7 +239,7 @@
           </div>
         </div>
 
-        <div id="month-rail" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div id="month-rail" aria-live="polite" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- Rendered by JS -->
         </div>
       </div>
@@ -325,7 +328,7 @@
           <!-- Rendered by JS -->
         </div>
         <div class="text-center mt-10 reveal">
-          <a href="destinations.html" class="btn btn-primary">Browse All 2,389 Destinations</a>
+          <a href="destinations.html" class="btn btn-primary">Browse All 2,390 Destinations</a>
         </div>
       </div>
     </section>
@@ -348,7 +351,7 @@
     "name": "ExploreDesh",
     "url": "https://exploredesh.com",
     "logo": "https://exploredesh.com/images/favicon.svg",
-    "description": "India's most comprehensive travel planning platform with 2,389 destinations across 36 states."
+    "description": "India's most comprehensive travel planning platform with 2,390 destinations across 36 states."
   }
   </script>
   <script type="application/ld+json">

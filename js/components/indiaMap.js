@@ -63,7 +63,7 @@ export function initIndiaMap(opts) {
     const list = destsByState && destsByState.get(stateName) ? destsByState.get(stateName) : [];
     const topDests = list.slice(0, 5);
 
-    let html = '<h4 class="map-card-title">' + esc(stateName) + '</h4>';
+    let html = '<h3 class="map-card-title">' + esc(stateName) + '</h3>';
     if (topDests.length > 0) {
       html += '<ul class="map-card-list">' +
         topDests.map((d) =>
@@ -105,6 +105,12 @@ export function initIndiaMap(opts) {
     if (!p || p.classList.contains('is-empty')) return;
     const name = p.getAttribute('data-state');
     activateState(name);
+  });
+
+  svgEl.addEventListener('focusin', (e) => {
+    const p = e.target.closest('.india-state');
+    if (!p || p.classList.contains('is-empty')) return;
+    activateState(p.getAttribute('data-state'));
   });
 
   function go(state) {

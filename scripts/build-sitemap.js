@@ -21,6 +21,9 @@ const STATIC = [
   { loc: 'ai-finder.html', priority: '0.8', changefreq: 'monthly' },
   { loc: 'about.html', priority: '0.4', changefreq: 'yearly' },
   { loc: 'contact.html', priority: '0.4', changefreq: 'yearly' },
+  // privacy.html / terms.html are intentionally <meta name="robots" content="noindex">
+  // (see privacy.html:9, terms.html:9) — excluded to avoid a Search Console
+  // "submitted URL marked 'noindex'" error.
 ];
 
 function xmlEscape(s) {

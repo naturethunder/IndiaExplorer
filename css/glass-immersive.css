@@ -169,7 +169,6 @@ body.glass-immersive .card .bg-white,
 body.glass-immersive .dest-card .bg-white,
 body.glass-immersive .info-card,
 body.glass-immersive .dest-summary-card,
-body.glass-immersive .filter-panel,
 body.glass-immersive .ai-hero-card,
 body.glass-immersive .budget-card,
 body.glass-immersive .category-strip,
@@ -311,7 +310,7 @@ body.glass-immersive .text-slate-800 {
   color: #ffffff !important;
 }
 
-body.glass-immersive :where(p, span, label, li, td):not(:where(.badge, .badge *, .rating-badge, .rating-badge *, .bg-emerald-50 *, .bg-orange-50 *, .bg-amber-50 *, .bg-purple-50 *, .bg-blue-50 *, .bg-rose-50 *)),
+body.glass-immersive :where(p, span, label, li, td):not(:where(.badge, .badge *, .rating-badge, .rating-badge *, .bg-emerald-50 *, .bg-orange-50 *, .bg-amber-50 *, .bg-purple-50 *, .bg-blue-50 *, .bg-rose-50 *, [class*="text-emerald"], [class*="text-amber"], [class*="text-rose"], [class*="text-red"], [class*="text-green"])),
 body.glass-immersive .text-gray-700,
 body.glass-immersive .text-gray-600,
 body.glass-immersive .text-slate-700,
@@ -492,6 +491,11 @@ body.glass-immersive .hero-search-seg .search-input {
   border-radius: 0 !important;
 }
 
+body.glass-immersive .hero-search-seg:focus-within {
+  border-color: #4ade80 !important;
+  box-shadow: 0 0 0 2px #4ade80, 0 16px 40px rgba(0, 0, 0, 0.50) !important;
+}
+
 body.glass-immersive .hero-search-seg input::placeholder {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -552,6 +556,7 @@ body.glass-immersive .popular-chip {
   background: rgba(15, 23, 42, 0.85) !important;
   color: #ffffff !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
   font-weight: 500 !important;
 }
@@ -570,6 +575,7 @@ body.glass-immersive .badge {
   background: rgba(15, 23, 42, 0.80) !important;
   color: #ffffff !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
 }
 
@@ -997,7 +1003,7 @@ header.dest-discovery-toolbar {
 }
 
 #typeFilter button.active,
-#typeFilter button[aria-selected="true"],
+#typeFilter button[aria-pressed="true"],
 .category-pill-btn.active {
   background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
   color: #080a0f !important;
@@ -1012,28 +1018,6 @@ header.dest-discovery-toolbar {
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
 }
 
-
-/* Sidebar Filter Panel Sticky Position */
-body.glass-immersive .filter-panel {
-  position: sticky !important;
-  top: 180px !important;
-  max-height: calc(100vh - 200px) !important;
-  overflow-y: auto !important;
-  scroll-behavior: smooth !important;
-}
-
-body.glass-immersive .filter-panel select,
-body.glass-immersive .filter-panel input {
-  background: rgba(15, 23, 42, 0.85) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 0.75rem !important;
-}
-
-body.glass-immersive .filter-panel select option {
-  background: #0f172a !important;
-  color: #ffffff !important;
-}
 
 /* ─── Universal High-Contrast Card Fix (All Pages) ────────── */
 #similar-grid a,
@@ -1276,6 +1260,7 @@ body.glass-immersive .ex-chip {
   background: rgba(15, 23, 42, 0.75) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   color: rgba(255, 255, 255, 0.85) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   backdrop-filter: blur(12px) !important;
 }
 

@@ -1,0 +1,1334 @@
+{
+  "generatedAt": "2026-09-02T20:08:11.632Z",
+  "totalChecked": 200,
+  "totalFailed": 170,
+  "byStatus": {
+    "400": 3,
+    "429": 167
+  },
+  "failures": [
+    {
+      "slug": "muchhal-mahavir-temple",
+      "field": "topPlaces[4].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Village_Sunali%2C_Purola%2C_Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Desuri",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "daksheswara-mahadev-temple",
+      "field": "topPlaces[1].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Exterior_view_of_the_gateway_and_facade_of_the_chowk_at_Kankhal%2C_1814.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Ramakrishna Mission Sevashrama, Kankhal",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "avudaiyarkoil",
+      "field": "topPlaces[6].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Die_S%C3%A4ugthiere_in_Abbildungen_nach_der_Natur%2C_mit_Beschreibungen_%28Plate_50%29_%288547720365%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Embal",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-our-lady-of-divine-grace",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kesaria_Abramidze.jpg",
+      "place": "Mokama Ganga Ghat & River Promenade",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "fort-madhogarh",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Aerial_view_of_mountains_%28India%2C_2013%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Galtaji",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhimashankar-temple",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Sunset_Sunrise_Bhimashankar_Wildlife_Sanctuary_Pune_%281%29_05.jpg",
+      "place": "Bhimashankar Wildlife Sanctuary",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhaskargad",
+      "field": "topPlaces[0].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Dugarwadi_Waterfall_closer_view.jpg/1280px-Dugarwadi_Waterfall_closer_view.jpg",
+      "place": "Dugarwadi waterfall",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhatner-fort",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Fried_Idli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Hanumangarh",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "gaurishvara-temple-yelandur",
+      "field": "topPlaces[2].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mamballi.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Mamballi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "begunbari-kali-temple",
+      "field": "topPlaces[6].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Sajnekhali_Wildlife_Sanctuary_on_West_Bengal_19.jpg",
+      "place": "Purbba Gopalpur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-our-lady-of-graces",
+      "field": "topPlaces[3].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/0121921_Neelkanth_temple%2C_Kalinjar_Fort%2C_Uttar_Pradesh_145.jpg",
+      "place": "Daurala",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dandeeswarar-temple",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Votive_Stupas_-_Mahabodhi_Temple_Complex_-_Bodh_Gaya_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bawangaja",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Showing_hike_to_Bawangaja_ji.JPG",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "brahmapureeswarar-temple-thirukkuvalai",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/The_Song_%26_Drama_Division_artists_giving_a_presentation_on_the_advantages_of_guarding_and_growing_trees%2C_at_the_Public_Information_Campaign_at_Thirukkuvalai_of_Nagapattinam_District%2C_Tamil_Nadu_on_July_3%2C_2006.jpg",
+      "place": "Thirukkuvalai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dumas-beach",
+      "field": "topPlaces[6].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/12th_century_Dodda_Basappa_temple%2C_Dambal%2C_Karnataka_India_-_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Hazira Port",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chail-sanctuary",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Floriculture_in_village_Mahog_%2CChail%2C_Himachal_Pradesh%2CIndia_03.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Mahog",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "galtaji",
+      "field": "topPlaces[6].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Indian_God_%28459%29_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kalki Mandir",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "gagron-fort",
+      "field": "topPlaces[4].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Jhalrapatan_Padam_Nath_Temple_Sikhara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Jhalrapatan",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavatarini-shmashanpith-kali-temple",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Yumthang_Valley_at_North_Sikkim%2C_India_07.jpg",
+      "place": "Valley of Flowers (West Bengal)",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavangad-fort",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Courtyard_of_Aamkhas_palace_or_Diwan-e-Aam_inside_Daulatabad_Fort_alias_Deogiri_Fort%2C_Daulatabad%2C_Maharashtra%2C_India.jpg",
+      "place": "Aagarwadi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "beatles-ashram",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Rishikesh_%28Ganges_View%29.jpg",
+      "place": "Pashulok Barrage",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bathu-temples-himachal-pradesh",
+      "field": "topPlaces[3].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Painting_of_Maharaja_Karam_Singh_of_Patiala_and_his_son_Narinder_Singh%2C_in_conversation_with_a_mendicant%2C_surrounded_by_courtiers_and_attendants%2C_North_India%2C_ca.1845%E2%80%9350.jpg",
+      "place": "Dhami State",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "darjeeling",
+      "field": "topPlaces[4].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Darjeeling%2C_India%2C_Darjeeling_tea%2C_Black_tea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Ghoom Monastery",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chaturshringi-temple",
+      "field": "topPlaces[4].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ncl-pune.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "National Chemical Laboratory",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dalhousie",
+      "field": "topPlaces[1].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Sunrise_in_Jammu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Panchpula",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavangad-fort",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/View_from_Kosbad_Hill%2C_Dahanu%2C_Thane_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Datiware",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "gandikota",
+      "field": "topPlaces[2].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Grand_Canon_of_India_%28Gandikota%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Jamia Masjid Gandikota",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "belgaum-fort",
+      "field": "topPlaces[4].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Karisiddeshwar_fair.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Belagavi division",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-the-divine-motherhood-of-our-lady",
+      "field": "topPlaces[4].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/LPK19_31_Veerabhadra_Temple_pillars_outer_Mandapa_small.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Namkum",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavangad-fort",
+      "field": "topPlaces[5].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bird_peacock.jpg",
+      "place": "Saphale",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bawangaja",
+      "field": "topPlaces[1].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mandar_Bakery_Barwani_Navratri_2012.jpg",
+      "place": "Barwani",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basgo-monastery",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Basgo_Monastery_Information_board.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "barabati-fort",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sculptures_in_Odisha%2C_India_%282016%29.jpg",
+      "place": "Barabati Stadium",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "beatles-ashram",
+      "field": "gallery[1].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Abbey_Rd_Studios.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chapra-christ-church",
+      "field": "topPlaces[1].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Sacred_Heart_Church_at_Chapra_in_Nadia_District_10.jpg",
+      "place": "Chapra, Nadia",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bijai-garh",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/William_Hodges_-_A_View_of_the_Fort_of_Bidjegur_-_British_Library_X307%2810%29.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "buddhavanam",
+      "field": "heroImage.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Buddhavanam_park_at_MVP_in_Visakhapatnam.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "ashokdham-temple",
+      "field": "topPlaces[3].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Wat_Thai_Monastery_premises_at_Bodhgaya_in_the_state_of_Bihar%2C_India_02.jpg",
+      "place": "Nongarh Ancient Buddhist Stupa Mound",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "daksheswara-mahadev-temple",
+      "field": "gallery[4].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Daksheshwar_Mahadev_temple%2C_Kankhal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "gajanan-maharaj-temple-kanhor",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Birla_Mandir_Yagya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "banke-bihari-temple",
+      "field": "topPlaces[5].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/H%C3%B4pitalmission.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Ramakrishna Mission Sevashrama",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "baneshwar-shiva-temple",
+      "field": "topPlaces[7].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rimbik_Waterfalls_%284635646816%29.jpg",
+      "place": "Chakchaka",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aruvikkuzhi-waterfalls",
+      "field": "topPlaces[2].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/St.Antony%27s_Shrine_Anicad_Muvattupuzha_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Anicad (Kottayam)",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "arnala-fort",
+      "field": "topPlaces[4].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/WV_banner_Thane_district_Arnala_fort.jpg",
+      "place": "Battle of Vasai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "arulmigu-prasanna-venkatesa-perumal-temple",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Vijayanagar_crest.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kaveripakkam",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bucesvara-temple-koravangala",
+      "field": "topPlaces[3].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Buchesvara_Temple_at_Koravangala_in_the_Hassan_district_of_Karnataka_state_India_carvings_on_western_side.jpg",
+      "place": "Haravanahalli",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "arulmigu-koniamman-temple",
+      "field": "topPlaces[0].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Ubagarasamy_Bernadeth.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Roman Catholic Diocese of Coimbatore",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chaturdasha-temple",
+      "field": "gallery[4].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gibraltar_Hindu_Temple_altar.JPG",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "ballabhpur-wildlife-sanctuary",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Doorway_-_Sinha_Sadan_-_1926_CE_-_Santiniketan_2014-06-29_5525.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Surul",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chennakeshava-temple-hullekere",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Kirtimukha_over_aedicules_in_Chennakeshava_temple_at_Hullekere.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chandramouleshwara-temple-unkal",
+      "field": "topPlaces[5].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Baramulla-tank_0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "FACT Stadium",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-our-lady-of-divine-grace",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Buddhist_Stupa_at_Kesariya_at_Champaran_%28east%29_district_of_Bihar%2C_India._28.jpg",
+      "place": "Barauni Heritage Thermal Eco Park",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhatner-fort",
+      "field": "gallery[1].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bhatner_durg.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bellary-fort",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Kudatini.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kudathini",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "baneshwar-shiva-temple",
+      "field": "topPlaces[1].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Scenery_of_uttarakhand.jpg",
+      "place": "Sidheswari",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "devipuram",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Jageshwar_Dham_Temple%2C_Almora_35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Maredupudi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "fort-tiracol",
+      "field": "topPlaces[5].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Hamilton_County_Court_House_-_Noblesville_Indiana_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Querim",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhanaulti",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/N-JK-31_MeditatingHall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Amber & Dhara Eco Parks",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "baba-gangeshwarnath-dham",
+      "field": "topPlaces[5].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/15th_century_Kadalekalu_Ganesha_Temple%2C_Hampi_Hindu_monuments_Karnataka_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Dhantulasi Uparwar",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bannari-amman-temple",
+      "field": "gallery[1].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bannarai_amman_temple_at_bannari.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dadra-and-nagar-haveli-wildlife-sanctuary",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/0111921_Kuti_group_of_Hindu_temples_and_Vaishnava_monastery%2C_Thubon_Madhya_Pradesh_511.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Jawahar Navodaya Vidyalaya, Silvassa",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chaman-mahal",
+      "field": "topPlaces[7].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Chaman_mahal_Islam_Nagar_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Intkhedi Sadak",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "cabo-de-rama",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Cabo_da_Rama_Fort_1%2C_South_Goa.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhojeshwar-temple",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bhojeshwar_Temple_situated_in_Bhojpur%2C_28_km_from_Bhopal%2C_Madhya_Pradesh.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhadrakali-temple",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AC%86%E0%AC%B9%E0%AC%BE%E0%AC%B0%E0%AC%AA%E0%AC%A6%E0%AC%BE_%E0%AC%AD%E0%AC%A6%E0%AD%8D%E0%AC%B0%E0%AC%95%E0%AC%BE%E0%AC%B3%E0%AD%80_%E0%AC%AE%E0%AC%A8%E0%AD%8D%E0%AC%A6%E0%AC%BF%E0%AC%B0_%E0%AC%AE%E0%AD%81%E0%AC%96%E0%AD%8D%E0%AD%9F%E0%AC%A6%E0%AD%8D%E0%AD%B1%E0%AC%BE%E0%AC%B0.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "balasubramaniyaswamy-temple",
+      "field": "topPlaces[2].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sri_Prasanna_Anjaneya_Gudi_on_Hemakuta_hill_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Pasupateeswarar Temple, Karur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "fort-st-george",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Mandyada_Sri_Shiradi_Sai_Baba_Mandir_123_356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Chennai Port Trust Centenary Building",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bannari-amman-temple",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bhavanisagar_dam_1.jpg",
+      "place": "Bhavanisagar",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chakravageswarar-temple",
+      "field": "topPlaces[0].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Ranod_monastery%2C_Khokai_Matha%2C_Rannod_Madhya_Pradesh_102.jpg",
+      "place": "Chakkarapalli",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-the-holy-rosary",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Bandel_Church_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Hooghly Gour Hari Harijan Vidya Mandir",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chandragiri-fort",
+      "field": "topPlaces[7].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Pahalgham%28the_valley_of_shepherds%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Ghat Roads",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chelamattom-shree-krishna-swami-temple",
+      "field": "topPlaces[4].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sree_Sankara_College_Campus%2C.jpg/1280px-Sree_Sankara_College_Campus%2C.jpg",
+      "place": "Kalady",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aruvithura-st-george-s-syro-malabar-catholic-forane-church",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Aruvithura_church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chausath-yogini-temple-mitaoli",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/15th_century_Yaganti_Umamahesvara_temple%2C_Andhra_Pradesh_India_-_162.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Endori",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhedaghat",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg/1280px-Chausath_Yogini_Temple%2C_Bhedaghat_%2830164%29.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "avchitgad",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://pixabay.com/get/g84c6d3a862a66725814342ba872caabe21f91ac0cba055962f951b1022825ba8aeab727e01589ce9ebaf1168ba54733c6dabda86800c0b9e553e7eba338fbdfa_1280.jpg",
+      "place": "Avchitgad Attraction 8",
+      "status": 400,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-the-holy-rosary",
+      "field": "topPlaces[2].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Danish_Cemetery._All_ancient_structure_%26_Tombs.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Hooghly Imambara",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "burhi-gosani-devalaya-jorhat",
+      "field": "topPlaces[0].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Assam_Sahitya_Sabha_Adhibeshan%2C_Barpetaroad.jpg",
+      "place": "Asam Sahitya Sabha",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dimapur-kalibari",
+      "field": "topPlaces[6].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/8th_century_Durga_Surya_temple_Shiva_with_Nandi%2C_Aihole_Hindu_temples_monuments.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Nagaland Zoological Park",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "fort-anjediva",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Lonar_Lake_from_the_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Nandangadda",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "gambhirgad",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Overview_of_Nidigonda_Trikutalayam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Shilonde",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bumzuva-cave-and-temple",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Martand_Sun_Temple_Enclosing_wall_outer_corner_%286133768187%29.jpg",
+      "place": "Martand Sun Temple",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "elamgulam-sree-dharma-sastha-temple",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Muchalinda_Sarovar_-_Mahabodhi_Temple_Complex_-_Bodh_Gaya_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Thampalakad",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhanaulti",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/AlchiMonastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Potato Farm & Himalayan Viewpoint",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "char-bangla-temples",
+      "field": "topPlaces[7].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Namak_Haram_Deorhi_-_Murshidabad-_West_Bengal_-_DSC0001.jpg",
+      "place": "Namak Haram Deorhi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "devkund-waterfall",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jageshwar_Dham_Temple%2C_Almora_69.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Adgaon, Mulshi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "ganga-jadadisvarar-temple",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Apathsahayeswarar_temple%2C_Aduthurai_%286%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Thenkurangaduthurai Temple, Aduthurai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "eco-park",
+      "field": "heroImage.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eco_park%27s_Pyramid_Replica.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhabaleswar",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jameswar_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Sisupalgarh",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bathu-temples-himachal-pradesh",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Bathu_li_ladi.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavanarayana-temple",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/%E0%B0%AD%E0%B0%BE%E0%B0%B5%E0%B0%A8%E0%B0%BE%E0%B0%B0%E0%B0%BE%E0%B0%AF%E0%B0%A3_%E0%B0%B8%E0%B1%8D%E0%B0%B5%E0%B0%BE%E0%B0%AE%E0%B0%BF_%E0%B0%A6%E0%B1%87%E0%B0%B5%E0%B0%BE%E0%B0%B2%E0%B0%AF%E0%B0%82_%E0%B0%A8%E0%B1%81%E0%B0%82%E0%B0%9A%E0%B0%BF_%E0%B0%AC%E0%B0%BE%E0%B0%AA%E0%B0%9F%E0%B1%8D%E0%B0%B2_%E0%B0%A6%E0%B1%83%E0%B0%B6%E0%B1%8D%E0%B0%AF%E0%B0%82.jpg",
+      "place": "Kankatapalem",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-the-divine-motherhood-of-our-lady",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Kejriwal_Institute_of_Management_and_Development_Studies%2C_Namkum%2C_Ranchi.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Namkum, Ranchi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "devkund-waterfall",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Jageshwar_Dham_Temple%2C_Almora_83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Mulshi Dam",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "avchitgad",
+      "field": "topPlaces[4].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sunrise%40Karanja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Karanja, Raigad",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "cheeyappara-waterfalls",
+      "field": "topPlaces[1].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E0%B4%A8%E0%B5%87%E0%B4%B0%E0%B5%8D%E0%B4%AF%E0%B4%AE%E0%B4%82%E0%B4%97%E0%B4%B2%E0%B4%82-%E0%B4%AA%E0%B4%BE%E0%B4%B2%E0%B4%82.JPG",
+      "place": "Neriamangalam Bridge",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bannari-amman-temple",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Pannariamman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bajwara-fort",
+      "field": "topPlaces[0].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Ministry_of_State_for_Commerce_and_Industry%2C_Shri_Ashwani_Kumar_inquiring_about_the_progress_of_Sarva_Shiksha_Abhiyan_at_Bharat_Nirman_Campaign_at_village_Bajwara%2C_Hoshiarpur%2C_Punjab_on_August_25%2C_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Bajwara",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "churdhar-sanctuary",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Gau_Mukh_Kund_-_Chittor_Fort_-_Rajasthan_-DSC_4568.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Balogi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "durga-temple-aihole",
+      "field": "topPlaces[2].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Durga_Temple_1%2C_Aihole%2C_Karnataka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Sulibhavi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "eachanari-vinayagar-temple",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Madhilkarai2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Madukkarai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhanaulti",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Wall_paintings_of_Shey_Monastery_and_the_Shey_Palace_temple_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Tehri Dam Backwaters & Water Sports",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhubaneswar",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Udaygiri_%26_Khandagiri_Caves%2C_Bhubaneswar_%2812%29_-_Oct_2010.jpg/1280px-Udaygiri_%26_Khandagiri_Caves%2C_Bhubaneswar_%2812%29_-_Oct_2010.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bajramath-temple-gyaraspur",
+      "field": "gallery[3].src",
+      "url": "https://pixabay.com/get/g025a661f2ce6a0c757af8ad17b844e1c9eea84446ce6880167a36c784aa62404d9c3601eb3f8d94728dcc31ca893e2d3533e781d4f46972db7c64b4caf35a6ac_1280.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "ashtalakshmi-temple-hyderabad",
+      "field": "topPlaces[6].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Saroornagar_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Saroornagar",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bengaluru-palace",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Sankey_Tank_%28Sankey_Lake%29_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Sadashivanagar",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhumnath-temple",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Sargaon_Dhoomnath_Dhumeswari_temple_Chhattisgarh_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "banoti-waterfall",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Ratanagiri_hill.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-the-holy-rosary",
+      "field": "topPlaces[3].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/River_Hooghly_-_Jubilee_Bridge_Area_-_Chinsurah_-_Hooghly_-_2013-05-19_7854-7855-7857-7858_Combined.JPG",
+      "place": "Jubilee Bridge (India)",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhanaulti",
+      "field": "topPlaces[2].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Shanti_Stupa-Leh-Jammu_And_Kashmir-Jinal_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Potato Farm & Himalayan Viewpoint",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "avanoor-sreekanteswaram-mahadeva-temple",
+      "field": "topPlaces[7].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Karuvathoor_8.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Karuvathoor Sreeramaswami Temple",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "char-bangla-temples",
+      "field": "topPlaces[6].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Khosh_Bagh_Cemetery.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kathgola",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhavanarayana-temple",
+      "field": "topPlaces[2].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gopuram_of_Sarpavaram_temple.JPG",
+      "place": "Bapatla East",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "adikesava-perumal-temple-sriperumpudur",
+      "field": "topPlaces[2].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Rajiv_Gandhi_Memorial_-_Stone_Plaque_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Rajiv Gandhi Memorial",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "arulmigu-koniamman-temple",
+      "field": "topPlaces[3].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Coimbatore_clocktower.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Athar Jamad Mosque",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "basilica-of-our-lady-of-good-health",
+      "field": "gallery[4].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Shrine_basilica_vailankanni.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhabaleswar",
+      "field": "topPlaces[3].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Champakesvara_Siva_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Sisupalgarh",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "arulmigu-koniamman-temple",
+      "field": "topPlaces[6].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Murugan_temple_in_Coimbatore.jpg",
+      "place": "Ukkadam Bus Terminus",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chaya-someswara-swamy-temple",
+      "field": "topPlaces[6].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/11th_12th_century_Chaya_Someshwara_Temple%2C_Panagal_Telangana_India_-_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Vailasingaram",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "adithyapuram-sun-temple",
+      "field": "heroImage.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/A_Surya_Deva_image_inside_Kerala_Hindu_temple%2C_Adithyapuram_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "achankovil-sastha-temple",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Kumbhavurutty_Waterfall_entrance_06.jpg",
+      "place": "Kumbhavurutty Waterfalls",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "erakeswara-temple-pillalamarri",
+      "field": "topPlaces[6].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Som_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Suryapet (mandal)",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "abaya-pradhan-temple",
+      "field": "topPlaces[6].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/16308_MARUTHUR_GLPS_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Maruthur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chandratal-wildlife-sanctuary",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/0051423_Baijnath_temple%2C_Vaidyanatha_mandir%2C_Baijnath_Himachal_Pradesh_049.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aakkoor-thanthondreeswarar-temple",
+      "field": "topPlaces[4].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sayavanamsayavaneswarartemple1.jpg",
+      "place": "Sayavaneswarar Temple",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "baijnath-temple-himachal-pradesh",
+      "field": "topPlaces[4].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/0051423_Siddhanath_temple%2C_Baijnath_Himachal_Pradesh_009.jpg",
+      "place": "Bhawarna",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhanaulti",
+      "field": "topPlaces[0].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/When_the_other_side_of_peace_is_also_peace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Amber & Dhara Eco Parks",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "adikesava-perumal-temple-sriperumpudur",
+      "field": "topPlaces[6].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Chennai.satmap.annotated.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Thandalam, Chennai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chari-sambhu-temple",
+      "field": "topPlaces[2].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Golden_jackal_in_Kuldiha_Wildlife_Sanctuary_January_2024_by_Tisha_Mukherjee_02.jpg",
+      "place": "Tebhapadar",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "elgandal-fort",
+      "field": "topPlaces[5].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Vishwa_Shanthi_School%282%29%2C_Medipalli%2C_Ramagundam_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Vadlur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "beatles-ashram",
+      "field": "topPlaces[5].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/APTDP_15_Tadipatri_Bugga_Rama_Lingeshwara_Entrance1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Lakshman Jhula",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "baneshwar-shiva-temple",
+      "field": "topPlaces[6].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Baneshwar_Shiva_Temple_at_Cooch_Behar_District_in_West_Bengal_14.jpg",
+      "place": "Bhuchungmari",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "adhi-ratneswarar-temple",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Thiruvadanai_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Tiruvadanai",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhuandhar-falls",
+      "field": "topPlaces[5].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Idol_of_Durga_with_151_tigers_near_madan_Mahal_station_jabalpur%2C_madhya_pradesh_during_Navratri.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Madan Mahal, Jabalpur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dadra-and-nagar-haveli-wildlife-sanctuary",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sarahan-Bhimakali-20-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chennamangalam-temple",
+      "field": "topPlaces[6].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E0%B4%B2%E0%B5%8B%E0%B4%95%E0%B4%A8%E0%B4%BE%E0%B5%BC%E0%B4%95%E0%B4%BE%E0%B4%B5%E0%B5%8D_%E0%B4%AD%E0%B4%97%E0%B4%B5%E0%B4%A4%E0%B4%BF_%E0%B4%95%E0%B5%8D%E0%B4%B7%E0%B5%87%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%82_01.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Villiappally",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhojeshwar-temple",
+      "field": "topPlaces[4].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/01221_Bhojeswar_Shiva_temple%2C_Bhojpur_Madhya_Pradesh_040.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Deepdi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dhumnath-temple",
+      "field": "topPlaces[1].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/0010622_Bhadwaha_Satmahala_Chattisgarh_125.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Tala, Chhattisgarh",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "kedareshvara-temple-balligavi",
+      "field": "topPlaces[5].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/About_Kedaresvara_temple_at_Balligavi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Adaganti",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "manikandeswaram-uma-maheswara-temple",
+      "field": "topPlaces[7].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Ranisar_Lake%2C_Jodhpur%2C_20191209_1646_7719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kattakampal",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "manakkattu-devi-temple",
+      "field": "topPlaces[7].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Great_Egret_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Valiyaperumpuzha",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "amrutesvara-temple",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Decorative_swirls_on_mantapa_wall_at_Amruteshvara_temple_in_Amruthapura%2C_Chikkamagaluru_district.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mahuli-fort",
+      "field": "topPlaces[7].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Riyang_Khola%2C_West_Bengal%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Talavali Tarf Rahur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mangi-tungi",
+      "field": "topPlaces[1].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Pandav_Gufa%2C_Nashik_-_panoramio_%2857%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Deola",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "majhighariani-temple",
+      "field": "topPlaces[4].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Shillong_peak_lanscape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Hanging Bridge at Chekaguda, Rayagada",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chapramari-wildlife-sanctuary",
+      "field": "gallery[3].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Golden_fronted_leafbird.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "kynrem-falls",
+      "field": "topPlaces[2].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Nohkalikai_Water_Falls_Cherrapunjee_505.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Nohkalikai Falls",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "ashtabhuji-temple",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/001_2022_Adbhar_Ashtabhuji_Temple_Chattisgarh_%28700_CE%29_056.jpg/1280px-001_2022_Adbhar_Ashtabhuji_Temple_Chattisgarh_%28700_CE%29_056.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "koneswarar-temple-kudavasal",
+      "field": "topPlaces[2].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Kudavasal_temple_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kudavasal block",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "dategad",
+      "field": "topPlaces[1].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Udayagiri_and_Khandagiri_Caves_2024_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "1967 Koynanagar earthquake",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mahuli-fort",
+      "field": "topPlaces[0].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Habitat_Tansa_WLS_by_Dr._Raju_Kasambe_DSCN4979_%287%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Tansa Wildlife Sanctuary",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "markanda-group-of-temples-gadchiroli",
+      "field": "topPlaces[1].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/P%C3%B3r_River_in_Batorz_in_Poland_part_1.jpg/1280px-P%C3%B3r_River_in_Batorz_in_Poland_part_1.jpg",
+      "place": "Por River",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chachai-falls",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Chachai_falls_rewa_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "khurnak-fort",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Pangong Tso",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "kolkata",
+      "field": "topPlaces[1].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Howrah Bridge",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "kumarakom",
+      "field": "topPlaces[2].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pathiramanal_walkway.jpg/1280px-Pathiramanal_walkway.jpg",
+      "place": "Pathiramanal Island",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "khirganga-national-park",
+      "field": "gallery[1].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Asian_Elephant_at_Corbett_National_Park_10.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mansantoshgad",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Symmetrical_Himalayas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Talamba Dam",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhorgiri-fort",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Art_objects_in_the_courtyard_of_Amakhas_Palace_or_Diwan-e-Aam_inside_Daulatabad_Fort_or_Deogiri_at_Daulatabad%2C_Maharashtra%2C_India_11.jpg",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "chelamattom-shree-krishna-swami-temple",
+      "field": "topPlaces[5].photos[0]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Perumbavoor_Kalady_Road.jpg/1280px-Perumbavoor_Kalady_Road.jpg",
+      "place": "Perumbavoor",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "marari-beach",
+      "field": "heroImage.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Indian_fishing_boat_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mahavira-jain-temple",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Osian_17-70.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Osian, Rajasthan",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bumzuva-cave-and-temple",
+      "field": "topPlaces[3].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Shalimar_Bagh_Srinagar_05.jpg",
+      "place": "Krewa Rampur",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aruvikkuzhi-waterfalls",
+      "field": "topPlaces[6].photos[1]",
+      "url": "https://pixabay.com/get/gc30d1220ae6872a8347362d7baa2a7a10500349ba89f6ca2ead4939fae1ee8529ce3cff50fbc47d43362b7d9cd631fd4078ef08f130cf77faf794ea31d6e7d04_1280.jpg",
+      "place": "Akalakunnam",
+      "status": 400,
+      "ok": false
+    },
+    {
+      "slug": "mahadeva-temple-kalanjoor",
+      "field": "topPlaces[5].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Such_a_lovely_place_..._%282824692491%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kannanalloor",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "mahadeva-temple-itagi",
+      "field": "gallery[2].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Hall_pillar_pedestal_relief_in_the_Mahadeva_Temple_at_Itagi_in_the_Koppal_district.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aruvikkuzhy-falls",
+      "field": "topPlaces[6].image.src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kozhencherry_Bridge.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kozhencherry",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "manyamkonda",
+      "field": "topPlaces[0].photos[2]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Uvari_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Devarakadra",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "cheluvanarayana-swamy-temple",
+      "field": "gallery[0].src",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Melkote_Panorama_%2812%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "bhawani-waghjai-temple-terav",
+      "field": "topPlaces[0].photos[1]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/IMG-2402_01-Bhawani_Waghjai_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "place": "Kherdi",
+      "status": 429,
+      "ok": false
+    },
+    {
+      "slug": "aharji",
+      "field": "topPlaces[0].photos[0]",
+      "url": "https://pixabay.com/get/gc09a3d34c505a09821ec1b82a90ed5276a123a79451652f5fb9ff4845716f3e6a16c22b05a1264bd74deee3ff974cb9e429da31d44078b2cc740f71f8b71ada7_1280.jpg",
+      "place": "Baldeogarh",
+      "status": 400,
+      "ok": false
+    }
+  ]
+}

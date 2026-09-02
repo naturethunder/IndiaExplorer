@@ -11,7 +11,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#080A0F" />
-  <!-- A valid destination canonical is added by destination.js after slug validation. -->
+  <!-- Default canonical for non-JS crawlers; destination.js overwrites this after slug validation. -->
+  <link rel="canonical" href="https://exploredesh.com/destination.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://upload.wikimedia.org" />
@@ -28,8 +29,7 @@
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="css/glass-immersive.css" />
   <link rel="stylesheet" href="css/destination-immersive.css" />
-  <link rel="stylesheet" href="js/leaflet.css" />
-  <script src="js/leaflet.js" defer></script>
+  <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
   <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" defer></script>
@@ -88,7 +88,7 @@
       <line x1="8" y1="2" x2="8" y2="18" />
       <line x1="16" y1="6" x2="16" y2="22" />
     </svg>
-    <h2 class="text-2xl font-bold text-white">Destination not found</h2>
+    <h1 class="text-2xl font-bold text-white">Destination not found</h1>
     <p class="text-gray-400">We don't have a page for this destination yet.</p>
     <a href="destinations.html" class="btn btn-primary">Browse all destinations</a>
   </div>
@@ -97,8 +97,8 @@
   <main id="main" style="display:none">
 
     <!-- HERO: Clean cinematic banner image -->
-    <div class="dest-hero pt-16" role="banner">
-      <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" />
+    <div class="dest-hero pt-16" role="region" aria-label="Destination hero">
+      <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" referrerpolicy="no-referrer" />
       <div class="dest-hero-overlay" aria-hidden="true"></div>
       <div
         class="dest-hero-content absolute inset-0 flex flex-col justify-center items-center p-6 max-w-5xl mx-auto w-full text-center"
@@ -156,9 +156,8 @@
             </a>
           </div>
         </div>
-        <div id="leaflet-map" class="w-full rounded-2xl border border-white/15 shadow-2xl overflow-hidden"
-          style="height:480px"></div>
-        <p class="text-xs text-slate-400 mt-3 text-center">Map data © OpenStreetMap contributors</p>
+        <div id="destination-map" class="w-full"></div>
+        <p class="text-xs text-slate-400 mt-3 text-center">Google Maps · Interactive Location Map</p>
       </div>
     </div>
 
@@ -188,7 +187,7 @@
           </div>
           <a href="destinations.html"
             class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-400 hover:text-emerald-300 bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl transition-all shrink-0">
-            <span>Explore All 2,389</span>
+            <span>Explore All 2,390</span>
             <span>→</span>
           </a>
         </div>
@@ -227,7 +226,7 @@
             stroke-linejoin="round" aria-hidden="true">
             <path d="m9 18 6-6-6-6" />
           </svg></button>
-        <div id="carDots" class="carousel-dots" role="tablist" aria-label="Photo navigation"></div>
+        <div id="carDots" class="carousel-dots" role="group" aria-label="Photo navigation"></div>
         <span id="carCount" class="carousel-count" aria-live="polite">1 / 5</span>
       </div>
 

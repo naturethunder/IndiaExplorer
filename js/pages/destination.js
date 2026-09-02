@@ -3,13 +3,14 @@
  * template for every destination). Resolves the slug from ?slug= (canonical),
  * ?id= or #hash (legacy stubs), loads ONLY that destination's JSON via
  * fetchDestination(slug) plus the light manifest (for similar destinations +
- * price-tier meta), and renders every tab. Leaflet (js/leaflet.js) is a classic
- * script loaded before this module — window.L.
+ * price-tier meta), and renders every tab. Google Maps Embed is mounted
+ * lazily via GoogleMapEmbed component when opening the Map tab.
  */
 import { fetchDestination, fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd } from '../components/seo.js';
+import { mountGoogleMapEmbed } from '../components/googleMapEmbed.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 
 // This page keeps its own breadcrumb navbar + mobile tab bar (Stays/Route);
@@ -88,11 +89,6 @@ function markDestinationNotFound() {
 const params = new URLSearchParams(window.location.search);
 let rawSlug = params.get('slug') || params.get('id') || window.location.hash.slice(1) || null;
 let slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, '').replace(/\.html$/i, '').replace(/\.json$/i, '') : null;
-
-// Fallback to recently visited destination if no parameter is provided
-if (!slug) {
-  slug = localStorage.getItem('exploredesh_last_destination') || localStorage.getItem('indiaexplore_last_destination') || 'kanatal';
-}
 
 let dest = null;
 let idx = null;
@@ -241,58 +237,6 @@ function main(dest, idx) {
   if (heroTaglineEl) heroTaglineEl.textContent = dest.tagline || dest.short || '';
 
 
-  // ─── Stats bar ──────────────────────────────────────────
-  // Bug 2/19 fix: replaced emoji icons with inline SVGs
-  const SVG_MOUNTAIN = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>';
-  const SVG_CALENDAR = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
-  const SVG_THERMO = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>';
-  const SVG_SNOW = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>';
-  let stats = '';
-  if (ov && ov.altitude) stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_MOUNTAIN + '</span><span class="text-gray-300">Altitude:</span><span class="font-semibold">' + inr(ov.altitude) + 'm</span></div>';
-  const bestLabel = (dest.bestTime && dest.bestTime.label) ? dest.bestTime.label : 'Oct – Mar';
-  stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_CALENDAR + '</span><span class="text-gray-300">Best Time:</span><span class="font-semibold">' + esc(bestLabel) + '</span></div>';
-  const tempSummer = (dest.weather && dest.weather.tempSummer) ? dest.weather.tempSummer : '25°C – 40°C';
-  const tempWinter = (dest.weather && dest.weather.tempWinter) ? dest.weather.tempWinter : '5°C – 20°C';
-  stats += '<div class="flex items-center gap-2"><span class="text-gray-400">' + SVG_THERMO + '</span><span class="text-gray-300">Summer:</span><span class="font-semibold">' + esc(tempSummer) + '</span></div>';
-  stats += '<div class="flex items-center gap-2"><span class="text-emerald-400">' + SVG_SNOW + '</span><span class="text-gray-300">Winter:</span><span class="font-semibold">' + esc(tempWinter) + '</span></div>';
-  if (ov && !dest.hideRating && !ov.hideRating && dest.slug !== 'ladakh' && ov.rating) {
-    stats += '<div class="flex items-center gap-2 ml-auto"><span class="text-amber-400">★</span><span class="font-bold text-lg">' + esc(ov.rating) + '</span>' +
-      '<a href="https://www.google.com/search?q=' + encodeURIComponent(dest.title + ' ' + dest.state + ' reviews') + '#lrd" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white underline text-xs" title="Read ' + esc(dest.title) + ' reviews">(' + inr(ov.reviewCount) + ' reviews)</a></div>';
-  }
-  const statsEl = document.getElementById('statsBar');
-  if (statsEl) statsEl.innerHTML = stats;
-
-  const tabP = document.getElementById('tabPlacesCount'); if (tabP) tabP.textContent = places.length;
-  const tabS = document.getElementById('tabStaysCount'); if (tabS) tabS.textContent = hotels.length;
-
-  // ─── "Underrated gems nearby" heuristic ────────────────
-  // Surfaces lesser-known but high-quality spots near the destination:
-  // good rating + offbeat wording, minus tourist-magnet signals, with a
-  // nudge toward places featured lower down the list. Pure client-side —
-  // no extra data, works for every destination.
-  const OFFBEAT_RE = /hidden|secret|off-?beat|less[ -]?crowded|lesser[ -]known|underrated|quiet|serene|seclud|peaceful|tranquil|untouched|pristine|unspoil|tucked|hamlet|village|meadow|trail|viewpoint|sunrise|sunset|offbeat|local|escape|solitude|away from|hidden gem/i;
-  const FAMOUS_RE = /most (popular|visited|famous)|world[ -]famous|iconic|must[ -]visit|renowned|landmark|top attraction|bustling|touristy|crowded|lively|commercial|hub/i;
-  function underratedScore(p, pIdx, total) {
-    const text = (p.description || '') + ' ' + (p.name || '');
-    let score = (typeof p.rating === 'number' ? p.rating : 4);
-    if (OFFBEAT_RE.test(text)) score += 0.7;
-    if (/free/i.test(p.entryFee || '')) score += 0.2;
-    if (FAMOUS_RE.test(text)) score -= 0.9;
-    score += (total > 1 ? pIdx / (total - 1) : 0) * 0.6; // lesser-featured = more likely a gem
-    return score;
-  }
-  function pickUnderrated(list) {
-    let pool = list.map(function (p, i) { return { p: p, idx: i }; });
-    // never call the headline attraction "underrated"; on content-rich
-    // destinations skip the whole Top-Places set so the gems are distinct.
-    const skip = list.length >= 8 ? 4 : 1;
-    pool = pool.filter(function (c) { return c.idx >= skip; });
-    return pool
-      .map(function (c) { return { p: c.p, idx: c.idx, s: underratedScore(c.p, c.idx, list.length) }; })
-      .sort(function (a, b) { return b.s - a.s; })
-      .slice(0, 4);
-  }
-
   // ─── OVERVIEW panel ─────────────────────────────────────
   function renderOverview() {
     const features = (ov && ov.features ? ov.features : (dest.features || [])).map(function (f) {
@@ -340,21 +284,49 @@ function main(dest, idx) {
         photos.push(photo);
       }
 
+      function formatHeroTitle(title, tagline, alt, state) {
+        if (tagline && typeof tagline === 'string') {
+          const t = tagline.trim();
+          if (t.toLowerCase().startsWith(title.toLowerCase())) {
+            return t;
+          }
+          return title + ' — ' + t;
+        }
+        if (alt && typeof alt === 'string') {
+          const a = alt.trim();
+          if (a.toLowerCase().startsWith(title.toLowerCase())) {
+            return a.slice(0, 70);
+          }
+          return title + ' — ' + a.slice(0, 60);
+        }
+        return title + (state ? ' · ' + state : '');
+      }
+
       // 1. Primary Hero Image
       if (typeof dest.heroImage === 'string' && dest.heroImage) {
         addPhoto({
           src: dest.heroImage,
-          title: dest.title + ' — ' + (dest.tagline || dest.state),
+          title: formatHeroTitle(dest.title, dest.tagline, '', dest.state),
           subtitle: dest.state + ' · Main View',
           category: dest.type || 'scenic'
         });
       } else if (dest.heroImage && dest.heroImage.src) {
         addPhoto({
           src: dest.heroImage.src,
-          title: dest.title + ' — ' + (dest.tagline || (dest.heroImage.alt ? dest.heroImage.alt.slice(0, 70) : dest.state)),
+          title: formatHeroTitle(dest.title, dest.tagline, dest.heroImage.alt, dest.state),
           subtitle: dest.heroImage.alt || (dest.state + ' · Main View'),
           category: dest.type || 'scenic'
         });
+      }
+
+      // Helper to avoid displaying raw generic labels like "Jaipur photo 5"
+      function cleanLabel(raw, fallback) {
+        if (!raw || typeof raw !== 'string') return fallback;
+        const trimmed = raw.trim();
+        if (/^(?:[a-zA-Z\s-]+[\s—-])?(?:photo|highlight|view|scenic view)\s*\d+$/i.test(trimmed) || /^photo\s*\d+$/i.test(trimmed)) {
+          return fallback;
+        }
+        return trimmed;
       }
 
       // 2. Curated Destination Gallery (Prioritize destination's own authentic gallery photos)
@@ -362,8 +334,15 @@ function main(dest, idx) {
         const srcUrl = typeof g === 'string' ? g : (g && g.src ? g.src : '');
         if (photos.length < 5 && srcUrl) {
           const gAlt = (typeof g === 'object' && g.alt) ? g.alt : '';
-          const gTitle = (typeof g === 'object' && g.title) ? g.title : (gAlt ? gAlt.slice(0, 60) : (dest.title + ' — Highlight ' + (idx + 1)));
-          const gCaption = (typeof g === 'object' && g.caption) ? g.caption : (gAlt || (dest.state + ' · Architectural Highlight'));
+          const fallbackTitle = dest.title + ' — ' + (typeLabel(dest.type) || 'Heritage') + ' Highlight ' + (idx + 1);
+          const fallbackCaption = (dest.state ? dest.state + ' · ' : '') + (typeLabel(dest.type) || 'Scenic') + ' Landmark';
+
+          const rawTitle = (typeof g === 'object' && g.title) ? g.title : (gAlt ? gAlt.slice(0, 60) : '');
+          const gTitle = cleanLabel(rawTitle, fallbackTitle);
+
+          const rawCaption = (typeof g === 'object' && g.caption) ? g.caption : gAlt;
+          const gCaption = cleanLabel(rawCaption, fallbackCaption);
+
           addPhoto({
             src: srcUrl,
             title: gTitle,
@@ -440,9 +419,9 @@ function main(dest, idx) {
       '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo">‹</button>' +
       '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo">›</button>' +
       '<!-- 5 Dots -->' +
-      '<div id="destOvDots" class="dest-ov-dots">' +
+      '<div id="destOvDots" class="dest-ov-dots" role="group" aria-label="Photo navigation">' +
       real5Photos.map(function (_, i) {
-        return '<span class="dest-ov-dot ' + (i === 0 ? 'is-active' : '') + '" data-ovdot="' + i + '"></span>';
+        return '<button type="button" class="dest-ov-dot ' + (i === 0 ? 'is-active' : '') + '" data-ovdot="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';
       }).join('') +
       '</div>' +
       '</div>';
@@ -536,10 +515,11 @@ function main(dest, idx) {
       function go(idx) {
         cur = (idx + slides.length) % slides.length;
         slides.forEach((s, i) => s.classList.toggle('is-active', i === cur));
-        dots.forEach((d, i) => d.classList.toggle('is-active', i === cur));
+        dots.forEach((d, i) => { d.classList.toggle('is-active', i === cur); d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
       }
 
-      function start() { stop(); timer = setInterval(() => go(cur + 1), 4000); }
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function start() { if (reduceMotion) return; stop(); timer = setInterval(() => go(cur + 1), 4000); }
       function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
       if (prev) prev.addEventListener('click', () => { go(cur - 1); start(); });
@@ -554,29 +534,11 @@ function main(dest, idx) {
 
       wrap.addEventListener('mouseenter', stop);
       wrap.addEventListener('mouseleave', start);
+      wrap.addEventListener('focusin', stop);
+      wrap.addEventListener('focusout', start);
 
       start();
     })();
-
-    // wire the "Underrated Gems" cards: open the place modal
-    document.querySelectorAll('#panel-overview [data-uridx]').forEach(function (card) {
-      const p = places[parseInt(card.getAttribute('data-uridx'), 10)];
-      if (!p) return;
-      card.addEventListener('click', function () { openPlaceModal(p); });
-      card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPlaceModal(p); } });
-    });
-    // "All places →" — wire directly so it works regardless of delegation
-    const gemsAll = document.querySelector('#panel-overview [data-gems-all]');
-    if (gemsAll) gemsAll.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); setTab('places'); });
-
-    // Wire subnav pills inside Overview header
-    document.querySelectorAll('#panel-overview [data-navtab]').forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetTab = btn.getAttribute('data-navtab');
-        if (targetTab) setTab(targetTab);
-      });
-    });
   }
 
   // ─── PLACES panel (with category filter) ────────────────
@@ -657,12 +619,13 @@ function main(dest, idx) {
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold">↗</span></a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-emerald-500">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
           '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
           '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
-          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-500 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
+          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-500 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
           (tags ? '<span class="flex gap-1.5">' + tags + '</span>' : '') +
           '</div>' +
           '<div class="flex flex-wrap gap-1.5">' + ams + '</div>' +
@@ -672,7 +635,7 @@ function main(dest, idx) {
           '<span class="text-2xl font-extrabold text-gray-900 dark:text-white">₹' + inr(s.priceMin) + '</span>' +
           '<span class="text-gray-400 text-xs block">to ₹' + inr(s.priceMax) + ' / night</span>' +
           '</div>' +
-          '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-emerald-500/20">Search on Google ↗</a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-emerald-500/20">Search on Google ↗</a>' +
           '</div>' +
           '</div></div>';
       }).join('');
@@ -776,7 +739,6 @@ function main(dest, idx) {
 
   // ─── MAP ────────────────────────────────────────────────
   let mapReady = false;
-  let activeMapInstance = null;
   const mapNameEl = document.getElementById('mapName');
   if (mapNameEl) mapNameEl.textContent = dest.title;
 
@@ -797,91 +759,19 @@ function main(dest, idx) {
   }
 
   function initMap() {
-    if (typeof L === 'undefined') {
-      setTimeout(initMap, 100);
-      return;
-    }
-
-    if (mapReady && activeMapInstance) {
-      setTimeout(function () { activeMapInstance.invalidateSize(); }, 100);
-      return;
-    }
-
-    const mapContainer = document.getElementById('leaflet-map');
+    if (mapReady) return;
+    const mapContainer = document.getElementById('destination-map') || document.getElementById('leaflet-map');
     if (!mapContainer) return;
 
-    const c = coords && coords.length === 2 && !isNaN(coords[0]) && !isNaN(coords[1])
-      ? coords
-      : [20.5937, 78.9629];
-
-    const map = L.map('leaflet-map', {
-      scrollWheelZoom: false
-    }).setView(c, 11);
-
-    activeMapInstance = map;
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 19
-    }).addTo(map);
-
-    // Main Destination Marker
-    const mainIcon = L.divIcon({
-      html: '<div style="background:#10b981;width:18px;height:18px;border-radius:50%;border:3px solid white;box-shadow:0 0 12px rgba(16,185,129,0.6)"></div>',
-      className: '',
-      iconAnchor: [9, 9]
+    mountGoogleMapEmbed(mapContainer, {
+      name: dest.title,
+      state: dest.state,
+      latitude: coords ? coords[0] : null,
+      longitude: coords ? coords[1] : null,
+      zoom: 12
     });
-    L.marker(c, { icon: mainIcon })
-      .addTo(map)
-      .bindPopup('<div style="color:#0f172a"><b>' + esc(dest.title) + '</b><br><span style="color:#64748b;font-size:12px">' + esc(dest.state) + '</span></div>')
-      .openPopup();
-
-    // Plot Places to Visit Markers
-    if (places && places.length) {
-      places.forEach((p, idx) => {
-        let pLat = p.lat || p.latitude;
-        let pLng = p.lng || p.longitude;
-        if (!pLat || !pLng || isNaN(pLat) || isNaN(pLng)) {
-          const angle = (idx / places.length) * 2 * Math.PI;
-          const radius = 0.02 + (idx * 0.005);
-          pLat = c[0] + Math.sin(angle) * radius;
-          pLng = c[1] + Math.cos(angle) * radius;
-        }
-        const placeIcon = L.divIcon({
-          html: '<div style="background:#3b82f6;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3)"></div>',
-          className: '',
-          iconAnchor: [6, 6]
-        });
-        L.marker([pLat, pLng], { icon: placeIcon })
-          .addTo(map)
-          .bindPopup('<div style="color:#0f172a"><strong style="color:#1e40af">📍 ' + esc(p.name || p.title) + '</strong><br><span style="font-size:11px;color:#64748b">' + esc(p.type || 'Attraction') + '</span></div>');
-      });
-    }
-
-    // Plot Hotel Stays Markers
-    if (hotels && hotels.length) {
-      hotels.forEach((h, idx) => {
-        let hLat = h.lat || h.latitude;
-        let hLng = h.lng || h.longitude;
-        if (!hLat || !hLng || isNaN(hLat) || isNaN(hLng)) {
-          const angle = ((idx + 0.5) / hotels.length) * 2 * Math.PI;
-          const radius = 0.015 + (idx * 0.004);
-          hLat = c[0] + Math.cos(angle) * radius;
-          hLng = c[1] + Math.sin(angle) * radius;
-        }
-        const hotelIcon = L.divIcon({
-          html: '<div style="background:#f59e0b;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3)"></div>',
-          className: '',
-          iconAnchor: [6, 6]
-        });
-        L.marker([hLat, hLng], { icon: hotelIcon })
-          .addTo(map)
-          .bindPopup('<div style="color:#0f172a"><strong style="color:#b45309">🏨 ' + esc(h.name) + '</strong><br><span style="font-size:11px;color:#047857;font-weight:600">From ₹' + inr(h.pricePerNight || h.minPrice || 1000) + '/night</span></div>');
-      });
-    }
 
     mapReady = true;
-    setTimeout(function () { map.invalidateSize(); }, 150);
   }
 
   // ─── Persistent Nav Bar Render ─────────────────────────
@@ -898,25 +788,25 @@ function main(dest, idx) {
 
     container.innerHTML =
       '<div class="dest-subnav-bar">' +
-      '<button type="button" role="tab" id="tab-overview" class="dest-quick-pill active" data-navtab="overview" aria-controls="panel-overview" aria-selected="true">' +
+      '<button type="button" role="tab" id="tab-overview" class="dest-quick-pill active" data-navtab="overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>' +
       '<span>Overview</span>' +
       '</button>' +
-      '<button type="button" role="tab" id="tab-places" class="dest-quick-pill" data-navtab="places" aria-controls="panel-places" aria-selected="false">' +
+      '<button type="button" role="tab" id="tab-places" class="dest-quick-pill" data-navtab="places" aria-controls="panel-places" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>' +
       '<span>Places</span>' +
       '<span class="tab-badge" aria-label="' + pc + ' places">' + pc + '</span>' +
       '</button>' +
-      '<button type="button" role="tab" id="tab-stays" class="dest-quick-pill" data-navtab="stays" aria-controls="panel-stays" aria-selected="false">' +
+      '<button type="button" role="tab" id="tab-stays" class="dest-quick-pill" data-navtab="stays" aria-controls="panel-stays" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>' +
       '<span>Stays</span>' +
       '<span class="tab-badge" aria-label="' + sc + ' stays">' + sc + '</span>' +
       '</button>' +
-      '<button type="button" role="tab" id="tab-reach" class="dest-quick-pill" data-navtab="reach" aria-controls="panel-reach" aria-selected="false">' +
+      '<button type="button" role="tab" id="tab-reach" class="dest-quick-pill" data-navtab="reach" aria-controls="panel-reach" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>' +
       '<span>How to Reach</span>' +
       '</button>' +
-      '<button type="button" role="tab" id="tab-map" class="dest-quick-pill" data-navtab="map" aria-controls="panel-map" aria-selected="false">' +
+      '<button type="button" role="tab" id="tab-map" class="dest-quick-pill" data-navtab="map" aria-controls="panel-map" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>' +
       '<span>Map</span>' +
       '</button>' +
@@ -973,8 +863,27 @@ function main(dest, idx) {
     }
   });
 
-  // Always initialize map on page load
-  initMap();
+  // Map is initialized lazily on first Map-tab open (see the data-navtab
+  // delegated handler above, which calls initMap() when name === 'map').
+
+  // Roving tabindex arrow-key navigation for the subnav tablist (moves focus
+  // only; activation still requires click/Enter/Space per the ARIA APG
+  // "manual activation" tab pattern).
+  (function () {
+    const navContainer = document.getElementById('destNavContainer');
+    if (!navContainer) return;
+    navContainer.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      const tabs = Array.from(navContainer.querySelectorAll('[role="tab"]'));
+      if (!tabs.length) return;
+      const currentIndex = tabs.indexOf(document.activeElement);
+      if (currentIndex === -1) return;
+      e.preventDefault();
+      const delta = e.key === 'ArrowRight' ? 1 : -1;
+      const nextIndex = (currentIndex + delta + tabs.length) % tabs.length;
+      tabs[nextIndex].focus();
+    });
+  })();
 
   // ─── Render nav & all panels ───────────────────────────
   renderNav();
@@ -1060,7 +969,7 @@ function main(dest, idx) {
         .catch(function () {
           if (!haveData) {
             body.innerHTML = '<span class="text-gray-400">Couldn\'t load live weather (offline or blocked). ' +
-              'Best season: ' + esc(dest.bestTime.label) + '.</span>';
+              'Best season: ' + esc((dest.bestTime && dest.bestTime.label) || 'Oct – Mar') + '.</span>';
           }
         });
     }
@@ -1105,24 +1014,28 @@ function main(dest, idx) {
 
   const allDestList = (idx && Array.isArray(idx.destinations)) ? idx.destinations : [];
 
+  function byRating(a, b) {
+    return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0);
+  }
+
   function getSimilarDestinations() {
     if (!allDestList.length) return [];
     // 1. Same state and same type
     const sameStateAndType = allDestList.filter(function (d) {
       return d && d.slug !== dest.slug && d.type === dest.type && d.state === dest.state;
-    });
+    }).sort(byRating);
     // 2. Same state other types
     const sameStateOther = allDestList.filter(function (d) {
       return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
-    });
+    }).sort(byRating);
     // 3. Same type other states (top rated)
     const sameTypeOther = allDestList.filter(function (d) {
       return d && d.slug !== dest.slug && d.type === dest.type && d.state !== dest.state;
-    });
-    // 4. Any other popular destinations
-    const others = allDestList.filter(function (d) {
-      return d && d.slug !== dest.slug;
-    });
+    }).sort(byRating);
+    // 4. Fallback fill only if the above buckets can't cover 4 cards
+    const others = (sameStateAndType.length + sameStateOther.length + sameTypeOther.length < 4)
+      ? allDestList.filter(function (d) { return d && d.slug !== dest.slug; }).sort(byRating)
+      : [];
 
     const pool = [].concat(sameStateAndType, sameStateOther, sameTypeOther, others);
     const uniqueMap = new Map();
@@ -1177,33 +1090,6 @@ function main(dest, idx) {
     }).join('');
   }
 
-  // ─── Nav buttons ────────────────────────────────────────
-  const navBookBtn = document.getElementById('navBook');
-  if (navBookBtn) {
-    navBookBtn.addEventListener('click', function () { setTab('stays'); });
-  }
-  // Bug 1 fix: replaced 💾 emoji with text/SVG; Bug 5 fix: guard saveBtn inside updateSaveUI
-  const saveBtn = document.getElementById('navSave');
-  let saved = localStorage.getItem('saved_' + dest.slug) === 'true';
-  const SVG_CHECK = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
-  const SVG_BOOKMARK = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>';
-  function updateSaveUI() {
-    if (!saveBtn) return;  // Bug 5 fix: guard against null saveBtn
-    saveBtn.innerHTML = saved
-      ? SVG_CHECK + ' Saved'
-      : SVG_BOOKMARK + ' Save';
-    saveBtn.classList.toggle('!bg-primary', saved);
-    saveBtn.classList.toggle('!text-white', saved);
-    saveBtn.classList.toggle('!border-primary', saved);
-  }
-  if (saveBtn) {
-    updateSaveUI();
-    saveBtn.addEventListener('click', function () {
-      saved = !saved;
-      localStorage.setItem('saved_' + dest.slug, saved ? 'true' : 'false');
-      updateSaveUI();
-    });
-  }
   // Bug 4 fix: added null checks for mStays and mReach before addEventListener
   const mStaysEl = document.getElementById('mStays');
   const mReachEl = document.getElementById('mReach');
@@ -1279,7 +1165,10 @@ function main(dest, idx) {
     carTrack.style.transform = 'translateX(-' + (carIdx * 100) + '%)';
     carCount.textContent = (carIdx + 1) + ' / ' + carLen;
     const dots = carDots.children;
-    for (let d = 0; d < dots.length; d++) dots[d].className = 'dot' + (d === carIdx ? ' active' : '');
+    for (let d = 0; d < dots.length; d++) {
+      dots[d].className = 'dot' + (d === carIdx ? ' active' : '');
+      dots[d].setAttribute('aria-current', d === carIdx ? 'true' : 'false');
+    }
   }
   function carRender(urls, name) {
     carLen = urls.length; carIdx = 0;
@@ -1287,11 +1176,14 @@ function main(dest, idx) {
       return '<div class="carousel-slide"><img src="' + esc(u) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
         '" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" /></div>';
     }).join('');
-    carDots.innerHTML = urls.map(function (u, i) { return '<span class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '"></span>'; }).join('');
+    carDots.innerHTML = urls.map(function (u, i) {
+      return '<button type="button" class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';
+    }).join('');
     carCount.textContent = '1 / ' + carLen;
     carTrack.style.transform = 'translateX(0)';
   }
-  function carStartAuto() { carStopAuto(); carTimer = setInterval(function () { carGo(carIdx + 1); }, 4000); }
+  const carReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function carStartAuto() { if (carReduceMotion) return; carStopAuto(); carTimer = setInterval(function () { carGo(carIdx + 1); }, 4000); }
   function carStopAuto() { if (carTimer) { clearInterval(carTimer); carTimer = null; } }
 
   document.getElementById('carPrev').addEventListener('click', function () { carGo(carIdx - 1); carStartAuto(); });
@@ -1299,6 +1191,8 @@ function main(dest, idx) {
   carDots.addEventListener('click', function (e) {
     const d = e.target.closest('.dot'); if (d) { carGo(parseInt(d.getAttribute('data-i'), 10)); carStartAuto(); }
   });
+  carDots.addEventListener('focusin', carStopAuto);
+  carDots.addEventListener('focusout', carStartAuto);
 
   function openPlaceModal(p) {
     document.getElementById('placeName').textContent = p.name;

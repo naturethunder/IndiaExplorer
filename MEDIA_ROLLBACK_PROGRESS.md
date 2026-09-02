@@ -99,3 +99,14 @@ M sitemap.xml
 
 ## Conclusion
 **The media rollback and quality hardening is 100% complete and verified across all 2,390 destination files.** The repository adheres to strict zero-duplicate standards (0 cross-destination collisions across 69,398 unique image assets), clean 5-gallery + 3-place photo invariants, synchronized search indices, and reliable card rendering.
+
+## Phase 15 — Non-Wikimedia Corrections (2026-09-03)
+
+Two additional destinations were corrected after user-directed inspection revealed Wikimedia images with politically sensitive or geographically wrong subjects:
+
+| Destination | Slug | Before | After | Status |
+|-------------|------|--------|-------|--------|
+| Kundrathur Murugan Temple | kundrathur-murugan-temple | Wikimedia hero + Pixabay 429-expiring place photos + wrong-state imagery (Salem/Theni) | 37 distinct Pexels/Unsplash HD images (hero, 5-gallery, 6-place card+photos) | ✅ 37/37 HTTP 200, 0 collisions |
+| Gurez Valley | gurez-valley | Wikimedia (PM at LoC photo as hero, beach/birthday cake place images) | 29 distinct Pexels HD images of authentic Kashmir/Himalayan scenery | ✅ 29/29 HTTP 200, 0 collisions |
+
+**Policy change:** Wikimedia is now flagged as discouraged/fallback-only in `.agents/rules/destination-strict-rules.md`. Pexels and Unsplash are the mandatory primary sources for all new and corrective image work.

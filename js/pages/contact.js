@@ -40,7 +40,15 @@ const err = document.getElementById('cf-error');
 const success = document.getElementById('cf-success');
 const submitBtn = form.querySelector('button[type="submit"]');
 const btnLabel = submitBtn.textContent;
-function showErr(msg, focusEl) { err.textContent = msg; err.style.display = 'block'; if (focusEl) focusEl.focus(); }
+function showErr(msg, focusEl) {
+  err.textContent = msg;
+  err.style.display = 'block';
+  if (focusEl) {
+    focusEl.setAttribute('aria-invalid', 'true');
+    focusEl.setAttribute('aria-describedby', 'cf-error');
+    focusEl.focus();
+  }
+}
 function busy(on) {
   submitBtn.disabled = on;
   submitBtn.textContent = on ? 'Sending…' : btnLabel;
@@ -49,6 +57,10 @@ function busy(on) {
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   err.style.display = 'none';
+  form.querySelectorAll('input, textarea').forEach(function (field) {
+    field.removeAttribute('aria-invalid');
+    field.removeAttribute('aria-describedby');
+  });
   const name = document.getElementById('cf-name').value.trim();
   const email = document.getElementById('cf-email').value.trim();
   const subject = document.getElementById('cf-subject').value.trim();

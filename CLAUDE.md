@@ -1,9 +1,9 @@
-# ExploreDesh — Project Guide (updated 2026-09-02)
+# ExploreDesh — Project Guide (updated 2026-09-03)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
 > **[docs/ROADMAP.md](docs/ROADMAP.md)** = the plan: status, prioritised work, scaling-to-launch notes.
-> **[docs/DESTINATIONS.md](docs/DESTINATIONS.md)** = auto-generated reference of all 2,389 destinations
+> **[docs/DESTINATIONS.md](docs/DESTINATIONS.md)** = auto-generated reference of all 2,390 destinations
 > by state with months + price/night. Regenerate with `node scripts/build-destinations-doc.js`.
 > **[docs/AUDIT.md](docs/AUDIT.md)** = production audit snapshot: quality scores, every fix shipped,
 > what was verified, and what's still open. Read this to understand the site's current health state.
@@ -14,18 +14,16 @@ detail pages with places, stays, routes, an interactive Leaflet map, **live weat
 dynamic similar-destination recommendations.
 The entire site uses the **Royal Obsidian & Heritage Gold** luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-09-02):**
-> - **Taj Mahal, Agra Destination Created (`taj-mahal.json`):** Added the world-famous UNESCO World Heritage destination with 37 authentic high-definition Pexels/Unsplash photos (5 unique gallery photos, 8 nearby attractions with 1 card + 3 photos each, 4 bookable hotel tiers, and Yamuna Expressway routes).
-> - **Master Media Baseline Restoration & Zero-Collision Invariants:** Restored clean local media baseline across all 2,390 destination files, ensuring 0 cross-destination duplicate collisions across all 69,398 unique image assets.
-> - **Card Image Referrer Resilience:** Added `referrerpolicy="no-referrer"` to `destinations.html`, `destination.html`, `index.html`, `ai-finder.html`, and `js/components/destinationCard.js` to eliminate 429/403 referrer-blocking on Wikimedia and external CDN images.
-> - **Exclusivity & Landmark Purity Enforcement:** Purged misplaced Hawa Mahal images across Haryana, Jharkhand, Kerala, and Tamil Nadu, ensuring Hawa Mahal imagery remains strictly exclusive to Jaipur (`hawa-mahal.json` and `jaipur.json`).
-> - **Filter Navigation State Resilience (`js/pages/explore.js`):** Resolved stale filter resurrection issue on direct visits to `destinations.html`, ensuring clean navigation while preserving back-button browser history.
-> - **Homepage Hero Rotator Polish (`js/pages/home.js`):** Sourced verified high-resolution horizontal assets and synchronized live counter targets (`14,362 Places`, `9,629 Stays`, `2,390 Destinations`, `36 States & UTs`).
-> - **Pure Search Engine SEO & Structured Data Architecture:** Hardened all pages (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`) for search engine crawlers (Google & Bing) while strictly excluding social media meta tags (`og:*`, `twitter:*`).
-> - **Complete Schema.org JSON-LD Graph:** Integrated Google Sitelinks `SearchAction` within `WebSite` schema on `index.html`, `TouristDestination` with GPS coordinates and PostalAddress on `destination.html`, `CollectionPage` on `destinations.html`, `AboutPage` on `about.html`, `ContactPage` on `contact.html`, `BreadcrumbList` on all interior pages, and `FAQPage` where applicable.
-> - **Contact Page & Navigation Polish:** Removed Phone block from `contact.html` and adjusted remaining cards (Email, Office Location, Response Time guarantee) with responsive glassmorphism. Replaced placeholder social buttons in footer with a brand trust badge (`✨ Complete Catalogue of Bharat`).
-> - **Global Zero-Collision Verification (69,398 Unique Assets):** Verified 0 cross-destination duplicate images, 0 intra-destination collisions, and 100% `heroImage.src === gallery[0].src` alignment across all 2,390 destinations (71,788 total image slots).
-> - **Strict 5-Gallery & 3-Place Photo Quality Standards:** Every destination JSON enforced with exactly 5 unique HD gallery images, 1 scenic cover photo per place, and exactly 3 unique authentic photos per place (0 duplicate URLs per destination).
+> **Latest Milestone (2026-09-03) — Phase 15: Non-Wikimedia HD Image Overhaul for Destination Pages:**
+> - **Kundrathur Murugan Temple (`kundrathur-murugan-temple`):** Full hero, gallery (5 slides), and all 6 nearby places overhauled with 100% Pexels/Unsplash HD photography. Replaced incorrect far-flung imagery (Salem, Theni, Kotagiri) with authentic local subjects: Sikkarayapuram granite quarry lakes, Tamil Nadu Dravidian temple architecture, Meenakshi Academy campus, Kovur streetscape. 37/37 URLs HTTP 200 · 0 Wikimedia · 0 Pixabay · 0 intra-file duplicates · 0 cross-catalog collisions.
+> - **Gurez Valley (`gurez-valley`):** Complete rebuild of hero, gallery (5 slides), and all 6 nearby places (Habba Khatoon Mountain Peak, Kishanganga River & Dawar Town, Tulail Valley Log Cabins, Habba Khatoon Natural Spring, Khandiyal Top 360 Viewpoint, Pentalwan Meadow Trek). Replaced all Wikimedia links — including politically sensitive PM photos, unrelated beach images, birthday cakes — with 29 distinct authentic Kashmir/Himalayan Pexels HD images. 29/29 URLs HTTP 200 · 0 Wikimedia · 0 intra-file duplicates · 0 cross-catalog collisions.
+> - **Strict Non-Wikimedia Policy Enforced:** Both destinations verified to use only `images.pexels.com` and `images.unsplash.com`. No expiring Pixabay `/get/` links, no portraits, no geographically wrong subjects.
+> - **Updated Strict Rules (`destination-strict-rules.md`):** Wikimedia flagged as discouraged/fallback-only; Pexels/Unsplash-first sourcing enforced for all new destination image work.
+> - **All 2,390 Destinations Invariants Maintained:** 0 cross-destination collisions, 0 picsum, 0 missing heroes, 0 short galleries across the full catalog.
+>
+> **Current Score: 97/100 — Production Ready.**
+> **To start dev server:** `node scripts/serve.js` → http://localhost:8080
+> **Remaining work before launch:** Push / deploy static workspace to HTTPS host (Vercel / Netlify / Cloudflare Pages) for domain exploredesh.com. See `docs/ROADMAP.md`.
 
 ## Architecture (the load-bearing decisions)
 
@@ -337,15 +335,14 @@ available from a prior "📍 Near me" tap, proximity scoring still applies.
 Async top-level: resolve slug from `?slug=` (canonical) / `?id=` / `#hash` (legacy) →
 `Promise.all([fetchDestination(slug), fetchIndex()])`; if it throws, show `#notFound`.
 Then: hero 5-photo carousel (from `dest.gallery`, instant — no live call; tops up with wide picsum
-if sparse); stats bar + tab counts; `render{Overview,Places,Stays,Reach}()`; lazy Leaflet map on
+if sparse); `render{Overview,Places,Stays,Reach}()`; lazy Leaflet map on
 first Map-tab open (`window.L` from the vendored classic script); live-weather IIFE (Open-Meteo,
 10-min refresh, 1s clock, shared `latestWeather`); place modal (`openPlaceModal`, `carToken` race
 guard, 4s autoplay, ←/→ keys, photos from `p.photos` first then live Wikimedia fallback); similar
 grid (from the manifest, same `type`, rendered with high-contrast bold white title and neon green price tags on dark glass cards); mobile-nav bar.
 Overview panel renders:
 1. **Standardized 4 Summary Highlight Cards**: `🏔️ Altitude` (emerald tint badge `rgba(16,185,129,0.14)`), `📅 Best Time` (indigo tint badge `rgba(99,102,241,0.14)`), `🌡️ Summer Temp` (amber tint badge `rgba(245,158,11,0.14)`), and `❄️ Winter Temp` (cyan tint badge `rgba(6,182,212,0.14)`) across ALL 2,389 destinations with hover lift animations and full title tooltips.
-2. **5-Real-Image Overview Carousel** (`.dest-ov-carousel`) at top right above *About [Destination]* (hero landscape photo + top 4 attraction photos, slide counter, dots, arrows, 4s autoplay w/ pause-on-hover).
-3. **"💎 Underrated Gems Nearby"** via `pickUnderrated()`/`underratedScore()`.
+2. **5-Real-Image Overview Carousel** (`.dest-ov-carousel`) at top right above *About [Destination]* (hero landscape photo + top 4 attraction photos, slide counter, dots, arrows, 4s autoplay w/ pause-on-hover, paused on focus, skipped under reduced motion).
 Coords come from `dest.weather.lat/lng` (baked at build time) for weather and map.
 `renderReach()` has a `#reachCity` "All cities" dropdown filtering route table by origin city.
 
@@ -372,9 +369,10 @@ scans every HTML page + `js/` module for utility-class tokens and emits **only t
 CSS (Tailwind v3 preflight + resolved utilities + `@media` blocks + the ring/shadow/gradient CSS
 vars). It is pixel-identical to the old `cdn.tailwindcss.com` output for the classes in use.
 
-- Load order in every page `<head>`: **`styles.css` → `tailwind.css` → page-specific immersive CSS
-  → `glass-immersive.css`** — `glass-immersive.css` must be last because its universal overrides
-  (white text, frosted navbar, bg/overlay rules) apply across all pages.
+- Load order in every page `<head>`: **`styles.css` → `tailwind.css` → `glass-immersive.css`
+  → page-specific immersive CSS** — `glass-immersive.css` loads before the page-specific
+  stylesheet so a page's own overrides (accent colors, contrast fixes inside page-specific
+  components like the destination place modal) can win the cascade over its universal rules.
   `explore-immersive.css` is loaded only by `destinations.html`;
   `destination-immersive.css` is loaded only by `destination.html`.
 - Custom component classes (`.card`, `.btn`, `.nav-glass`, carousels, `.form-input`,

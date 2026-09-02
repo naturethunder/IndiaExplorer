@@ -8,7 +8,7 @@ import { fetchIndex } from '../data/api.js';
 import { initLayout, setActiveNav } from '../components/layout.js';
 import { destCardHTML } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
-import { zoneOf, seasonsOf, ZONES, SEASONS } from '../data/taxonomy.js';
+import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
 import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 
@@ -196,8 +196,7 @@ function renderTypeButtons() {
     b.className = 'category-pill-btn' + (filters.type === t.id ? ' active' : '');
     b.innerHTML = icon(t.iconName, { size: 14 }) + '<span>' + esc(t.label) + '</span>';
     b.dataset.type = t.id;
-    b.setAttribute('role', 'tab');
-    b.setAttribute('aria-selected', filters.type === t.id ? 'true' : 'false');
+    b.setAttribute('aria-pressed', filters.type === t.id ? 'true' : 'false');
     b.addEventListener('click', function () {
       filters.type = t.id;
       apply();
@@ -212,7 +211,7 @@ function syncFilterActive() {
   Array.prototype.forEach.call(typeWrap.children, function (b) {
     const isAct = filters.type === (b.dataset.type || '');
     b.classList.toggle('active', isAct);
-    b.setAttribute('aria-selected', isAct ? 'true' : 'false');
+    b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
   });
 }
 
@@ -347,6 +346,7 @@ function renderBatch(isAppend = false) {
   if (moreCount) moreCount.textContent = Math.min(PAGE_SIZE, lastResults.length - shown);
 
   animateCardsIn(previousShown);
+  if (window.ScrollTrigger) window.ScrollTrigger.refresh();
 }
 
 // ─── URL & State Synchronization ───────────────────────
@@ -486,7 +486,8 @@ function readFiltersFromUrl() {
 }
 
 function apply(options = {}) {
-  const { skipUrlSync = false, isAppend = false } = options;
+  const { skipUrlSync = false, preserveShown = false } = options;
+  if (!preserveShown) shown = PAGE_SIZE;
   let results = SUMMARIES.slice();
 
   if (filters.search) {
@@ -502,22 +503,8 @@ function apply(options = {}) {
   }
 
   if (filters.type) {
-    if (filters.type === 'road_trips') {
-      results = results.filter(function (d) {
-        return (d.type === 'adventure' || d.type === 'hill_station' || (d.features && d.features.some((f) => f.toLowerCase() === 'ghats'))) && d.type !== 'spiritual';
-      });
-    } else if (filters.type === 'camping') {
-      results = results.filter(function (d) {
-        return (d.features && d.features.some((f) => f.toLowerCase().includes('camp') || f.toLowerCase().includes('trek'))) || d.type === 'adventure';
-      });
-    } else if (filters.type === 'forts') {
-      results = results.filter(function (d) {
-        return d.features && d.features.some((f) => f.toLowerCase().includes('fort') || f.toLowerCase().includes('palace'));
-      });
-    } else if (filters.type === 'ecotourism') {
-      results = results.filter(function (d) {
-        return d.features && d.features.some((f) => f.toLowerCase().includes('nature') || f.toLowerCase().includes('birding') || f.toLowerCase().includes('eco'));
-      });
+    if (CUSTOM_TYPE_MATCHERS[filters.type]) {
+      results = results.filter(CUSTOM_TYPE_MATCHERS[filters.type]);
     } else {
       results = results.filter(function (d) { return d.type === filters.type; });
     }
@@ -559,9 +546,7 @@ function apply(options = {}) {
 
   lastResults = results;
 
-  if (!isAppend) {
-    renderBatch(false);
-  }
+  renderBatch(false);
 
   syncFilterActive();
   renderActiveFilterChips();
@@ -628,7 +613,7 @@ function renderActiveFilterChips() {
   chipsWrap.innerHTML = activeItems.map((item) =>
     '<span class="active-filter-chip">' +
     '<span>' + esc(item.label) + '</span>' +
-    '<button type="button" data-key="' + item.key + '" aria-label="Remove filter">✕</button>' +
+    '<button type="button" data-key="' + item.key + '" aria-label="Remove filter: ' + esc(item.label) + '">✕</button>' +
     '</span>'
   ).join('');
 
@@ -692,6 +677,17 @@ function setDrawer(open) {
   sidebar.classList.toggle('open', open);
   document.body.style.overflow = open ? 'hidden' : '';
   if (filterOpenBtn) filterOpenBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+  // a11y: hide background content from screen readers while the filter dialog is open
+  const resultsSection = document.querySelector('.explore-results-section');
+  const footer = document.getElementById('siteFooter');
+  if (open) {
+    if (resultsSection) resultsSection.setAttribute('aria-hidden', 'true');
+    if (footer) footer.setAttribute('aria-hidden', 'true');
+  } else {
+    if (resultsSection) resultsSection.removeAttribute('aria-hidden');
+    if (footer) footer.removeAttribute('aria-hidden');
+  }
 
   if (open) {
     requestAnimationFrame(() => filterCloseBtn?.focus());
@@ -815,13 +811,13 @@ window.addEventListener('beforeunload', function () {
 // Handle browser Back / Forward buttons without full reload
 window.addEventListener('popstate', function () {
   readFiltersFromUrl();
-  apply({ skipUrlSync: true });
+  apply({ skipUrlSync: true, preserveShown: true });
 });
 
 // ─── Initial Load & Render ─────────────────────────────
 readFiltersFromUrl();
 renderTypeButtons();
-apply();
+apply({ preserveShown: true });
 
 // ─── GSAP Motion Engine ────────────────────────────────
 // Register ScrollTrigger immediately so card reveal works on first render

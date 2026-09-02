@@ -10,7 +10,7 @@ const PAGES = {
   'about.html': {
     active: 'about',
     title: 'About Us — ExploreDesh',
-    description: "Learn about ExploreDesh — India's most thoughtful travel discovery platform. Our mission, story, and the values behind 2,389 destinations across 36 states & UTs.",
+    description: "Learn about ExploreDesh — India's most thoughtful travel discovery platform. Our mission, story, and the values behind 2,390 destinations across 36 states & UTs.",
     crumb: 'About Us',
     keywords: ['about exploredesh', 'india travel platform', 'curated india destinations'],
   },

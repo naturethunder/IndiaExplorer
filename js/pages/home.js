@@ -8,7 +8,7 @@ import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '.
 import { applySEO } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
-import { resolveState, MONTH_PICKS } from '../data/taxonomy.js';
+import { resolveState, MONTH_PICKS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
 
 const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -157,7 +157,6 @@ const bySlug = new Map(summaries.map((d) => [d.slug, d]));
 // Count destinations in a state (for the "view all in <state>" suggestion).
 function stateCount(state) { return summaries.reduce((n, d) => n + (d.state === state ? 1 : 0), 0); }
 function stateUrl(state) { return 'destinations.html?state=' + encodeURIComponent(state); }
-function monthCount(m) { return summaries.reduce((n, d) => n + (d.bestTime.months.includes(m) ? 1 : 0), 0); }
 
 function search(q) {
   q = q.toLowerCase();
@@ -215,23 +214,22 @@ function search(q) {
     { type: 'wildlife', ic: 'paw-print', tint: 'tint-amber', label: 'Wildlife' },
     { type: 'spiritual', ic: 'temple', tint: 'tint-rose', label: 'Spiritual', badge: 'popular' },
     { type: 'adventure', ic: 'tent', tint: 'tint-purple', label: 'Adventure' },
-    { type: 'road_trips', ic: 'car', tint: 'tint-blue', label: 'Road Trips', badge: 'new', search: 'road', countKey: 'road_trips' },
-    { type: 'camping', ic: 'tent', tint: 'tint-slate', label: 'Camping', badge: 'new', search: 'camp', countKey: 'camping' },
-    { type: 'forts', ic: 'gem', tint: 'tint-amber', label: 'Forts & Palaces', search: 'fort', countKey: 'forts' },
-    { type: 'ecotourism', ic: 'flower', tint: 'tint-green', label: 'Ecotourism', search: 'eco', countKey: 'ecotourism' }
+    { type: 'road_trips', ic: 'car', tint: 'tint-blue', label: 'Road Trips', badge: 'new', countKey: 'road_trips' },
+    { type: 'camping', ic: 'tent', tint: 'tint-slate', label: 'Camping', badge: 'new', countKey: 'camping' },
+    { type: 'forts', ic: 'gem', tint: 'tint-amber', label: 'Forts & Palaces', countKey: 'forts' },
+    { type: 'ecotourism', ic: 'flower', tint: 'tint-green', label: 'Ecotourism', countKey: 'ecotourism' }
   ];
-  // Live per-type counts from the manifest.
+  // Live counts from the manifest — pseudo-categories (road_trips/camping/
+  // forts/ecotourism) use the same CUSTOM_TYPE_MATCHERS predicate explore.js
+  // filters on, so the chip count always matches what clicking through yields.
   const counts = {};
   idx.destinations.forEach((d) => { counts[d.type] = (counts[d.type] || 0) + 1; });
-  const customCounts = Object.assign(
-    { road_trips: 42, camping: 77, forts: 547, ecotourism: 348 },
-    idx.meta.customCounts || {}
-  );
-  if (!customCounts.forts) customCounts.forts = 547;
-  if (!customCounts.ecotourism) customCounts.ecotourism = 348;
+  const customCounts = {};
+  Object.keys(CUSTOM_TYPE_MATCHERS).forEach((key) => {
+    customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
+  });
 
-
-  const totalCount = idx.count || summaries.length || 2389;
+  const totalCount = idx.count || summaries.length || 2390;
 
   el.innerHTML = cats.map((c) => {
     const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
@@ -240,9 +238,7 @@ function search(q) {
       : '';
     const href = c.type === ''
       ? 'destinations.html'
-      : c.search
-        ? 'destinations.html?search=' + encodeURIComponent(c.search)
-        : 'destinations.html?type=' + encodeURIComponent(c.type);
+      : 'destinations.html?type=' + encodeURIComponent(c.type);
     return '<a href="' + href + '" class="category-chip">' +
       '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
       '<span class="category-chip-label">' + esc(c.label) + '</span>' +
@@ -291,6 +287,7 @@ function search(q) {
     opts.forEach((a, j) => {
       const active = j === activeIdx;
       a.classList.toggle('is-active', active);
+      a.setAttribute('aria-selected', active ? 'true' : 'false');
       if (active) {
         input.setAttribute('aria-activedescendant', a.id);
       }
@@ -323,7 +320,7 @@ function search(q) {
         '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
         '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
         '</div>' +
-        '<span class="text-xs text-gray-500 shrink-0">From ₹' + esc(d.minPrice || 0) + '</span>' +
+        '<span class="text-xs text-gray-500 shrink-0">From ₹' + inr(d.minPrice || 0) + '</span>' +
         '</a>';
     }).join('');
     items += '<a href="destinations.html" id="ac-opt-' + (optId++) + '" role="option" class="autocomplete-item justify-center text-sm font-semibold text-primary hover:bg-emerald-50 transition-colors">View all destinations →</a>';
@@ -405,8 +402,8 @@ function search(q) {
     pillsEl.innerHTML = MONTHS.map((m) => {
       const isActive = m.num === activeMonth;
       const isCurrent = m.num === currentRealMonth;
-      const badge = isCurrent ? '<span class="pill-current-badge ml-1.5">NOW</span>' : '';
-      return '<button type="button" class="month-pill ' + (isActive ? 'is-active' : '') + '" data-month="' + m.num + '">' +
+      const badge = isCurrent ? '<span class="pill-current-badge ml-1.5"><span class="sr-only">Current month: </span>NOW</span>' : '';
+      return '<button type="button" class="month-pill ' + (isActive ? 'is-active' : '') + '" data-month="' + m.num + '" aria-pressed="' + (isActive ? 'true' : 'false') + '">' +
         '<span>' + esc(m.name) + '</span>' + badge +
         '</button>';
     }).join('');
@@ -459,107 +456,6 @@ function search(q) {
       railEl.style.opacity = '1';
     }, 120);
 
-    renderMonthCarousel(monthNum);
-  }
-
-  let monthCarTimer = null;
-  let currentCarIndex = 0;
-
-  function renderMonthCarousel(monthNum) {
-    const wrap = document.getElementById('month-carousel-wrap');
-    const slidesEl = document.getElementById('month-carousel-slides');
-    const dotsEl = document.getElementById('monthCarDots');
-    if (!wrap || !slidesEl) return;
-
-    const m = MONTHS.find((x) => x.num === monthNum);
-    const monthName = m ? m.name : 'This Month';
-
-    const top5 = summaries
-      .filter((d) => d.bestTime.months.includes(monthNum))
-      .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
-      .slice(0, 5);
-
-    if (!top5.length) {
-      wrap.style.display = 'none';
-      return;
-    }
-    wrap.style.display = 'block';
-
-    slidesEl.innerHTML = top5.map((d, i) => {
-      const src = (d.heroImage && d.heroImage.src) || (d.image && d.image.src) || '';
-      return '<div class="month-car-slide ' + (i === 0 ? 'is-active' : '') + '" data-slide="' + i + '">' +
-        '<img src="' + esc(src) + '" alt="' + esc(d.title) + '" loading="lazy" ' +
-        'onerror="this.onerror=null;this.style.display=\'none\';" />' +
-        '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent"></div>' +
-        '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
-        '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
-        '<svg class="slide-badge-star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>' +
-        ' Best in ' + esc(monthName) + ' · Photo ' + (i + 1) + ' of ' + top5.length +
-        '</span>' +
-        '</div>' +
-        '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
-        '<div class="flex items-center gap-2 mb-1.5">' +
-        '<span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-primary text-white uppercase tracking-wider capitalize">' + esc(typeLabel(d.type)) + '</span>' +
-        '<span class="text-amber-400 font-bold text-xs flex items-center gap-1">★ ' + esc(d.rating) + '</span>' +
-        '</div>' +
-        '<h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight drop-shadow-md">' + esc(d.title) + ', ' + esc(d.state) + '</h3>' +
-        '<p class="text-white/80 text-xs sm:text-sm max-w-xl mt-1 line-clamp-2">' + esc(d.short) + '</p>' +
-        '<div class="mt-3 flex items-center gap-3">' +
-        '<a href="destination.html?slug=' + encodeURIComponent(d.slug) + '" class="btn btn-primary btn-sm rounded-full px-5">Explore Destination →</a>' +
-        '<a href="destinations.html?month=' + monthNum + '" class="btn btn-outline text-white border-white/40 hover:bg-white/20 btn-sm rounded-full">View All ' + esc(monthName) + ' Picks</a>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
-    }).join('');
-
-    if (dotsEl) {
-      dotsEl.innerHTML = top5.map((_, i) => {
-        return '<span class="month-car-dot ' + (i === 0 ? 'is-active' : '') + '" data-dot="' + i + '"></span>';
-      }).join('');
-    }
-
-    currentCarIndex = 0;
-
-    function goSlide(idx) {
-      currentCarIndex = (idx + top5.length) % top5.length;
-      const slides = slidesEl.querySelectorAll('.month-car-slide');
-      const dots = dotsEl ? dotsEl.querySelectorAll('.month-car-dot') : [];
-      slides.forEach((s, i) => s.classList.toggle('is-active', i === currentCarIndex));
-      dots.forEach((d, i) => d.classList.toggle('is-active', i === currentCarIndex));
-    }
-
-    function startCarTimer() {
-      stopCarTimer();
-      if (top5.length > 1) {
-        monthCarTimer = setInterval(() => goSlide(currentCarIndex + 1), 4000);
-      }
-    }
-
-    function stopCarTimer() {
-      if (monthCarTimer) {
-        clearInterval(monthCarTimer);
-        monthCarTimer = null;
-      }
-    }
-
-    const prevBtn = document.getElementById('monthCarPrev');
-    const nextBtn = document.getElementById('monthCarNext');
-    if (prevBtn) prevBtn.onclick = () => { goSlide(currentCarIndex - 1); startCarTimer(); };
-    if (nextBtn) nextBtn.onclick = () => { goSlide(currentCarIndex + 1); startCarTimer(); };
-
-    if (dotsEl) {
-      dotsEl.querySelectorAll('.month-car-dot').forEach((dot) => {
-        dot.onclick = () => {
-          const idx = parseInt(dot.dataset.dot, 10);
-          if (!isNaN(idx)) { goSlide(idx); startCarTimer(); }
-        };
-      });
-    }
-
-    wrap.onmouseenter = stopCarTimer;
-    wrap.onmouseleave = startCarTimer;
-
-    startCarTimer();
   }
 
   renderMonthPills();
@@ -635,7 +531,7 @@ function shuffleArray(arr) {
     const src = (lead && (lead.heroImage && lead.heroImage.src || lead.image && lead.image.src)) || '';
     const primaryMonth = s.months[0];
     return '<a href="destinations.html?month=' + primaryMonth + '" class="season-card group">' +
-      '<img src="' + esc(src) + '" alt="' + esc(s.name) + ' in India" loading="lazy" ' +
+      '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" ' +
       'onerror="this.onerror=null;this.style.display=\'none\';" />' +
       '<div class="season-card-overlay"></div>' +
       '<div class="absolute inset-0 p-5 flex flex-col justify-end">' +
@@ -710,6 +606,11 @@ function shuffleArray(arr) {
   el.innerHTML = selectedExplore.map(function (d) { return miniCardHTML(d); }).join('');
 })();
 
+// Grids above are populated synchronously right after the index fetch resolves;
+// let ScrollTrigger recompute trigger positions now that real card heights exist
+// (skeletons had different heights while loading).
+if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+
 // ─── Hero social-proof avatars (local inline SVG — no external fetch) ─────
 (function () {
   const el = document.getElementById('heroAvatars');
@@ -718,7 +619,7 @@ function shuffleArray(arr) {
   // (Strict Real Photos Policy: no picsum / stock placeholders).
   const grads = [['#34d399', '#0ea5e9'], ['#f59e0b', '#ef4444'], ['#8b5cf6', '#ec4899'], ['#10b981', '#6366f1']];
   el.innerHTML = grads.map(function (g, i) {
-    return '<svg class="avatar-cluster-img" width="48" height="48" viewBox="0 0 48 48" role="img" aria-hidden="true">' +
+    return '<svg class="avatar-cluster-img" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">' +
       '<defs><linearGradient id="av' + i + '" x1="0" y1="0" x2="1" y2="1">' +
       '<stop offset="0" stop-color="' + g[0] + '"/><stop offset="1" stop-color="' + g[1] + '"/>' +
       '</linearGradient></defs>' +

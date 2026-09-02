@@ -2,5 +2,10 @@
 # Public HTML, CSS, JavaScript, fonts, images, and rendering data remain crawlable.
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /reports/
+Disallow: /docs/
+Disallow: /stubs/
+Disallow: /*.md$
 
 Sitemap: https://exploredesh.com/sitemap.xml

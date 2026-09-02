@@ -3,8 +3,8 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://*.wikimedia.org https://*.unsplash.com https://*.pexels.com https://*.pixabay.com https://*.tile.openstreetmap.org https://maps.googleapis.com https://*.googleusercontent.com https://*.ggpht.com; connect-src 'self' https://*.tile.openstreetmap.org https://nominatim.openstreetmap.org https://api.web3forms.com; frame-ancestors 'self';
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://*.wikimedia.org https://*.unsplash.com https://*.pexels.com https://*.pixabay.com https://*.staticflickr.com https://*.tile.openstreetmap.org https://maps.googleapis.com https://*.googleusercontent.com https://*.ggpht.com; connect-src 'self' https://*.tile.openstreetmap.org https://nominatim.openstreetmap.org https://api.web3forms.com https://api.open-meteo.com; frame-src 'self' https://www.google.com https://maps.google.com; frame-ancestors 'self';
 
 # Cache rules for Cloudflare Pages / Netlify (ignored by local serve.js).
 # No cache-busting hashes in filenames, so keep max-age modest: stale assets
@@ -19,6 +19,12 @@
 
 /css/*
   Cache-Control: public, max-age=3600
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 
 # Keep internal reports, scripts, and redirect stubs out of search.
 /docs/*

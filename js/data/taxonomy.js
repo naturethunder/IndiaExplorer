@@ -153,3 +153,31 @@ export function resolveState(query, states) {
   if (best && bestDist <= budget && !tie && states.indexOf(best) >= 0) return best;
   return null;
 }
+
+// ── Pseudo-category matchers ────────────────────────────────────────────
+// The Explore category strip includes 4 ids that aren't a real `d.type`
+// value (road_trips/camping/forts/ecotourism); they filter on `features`
+// instead. Single source of truth so js/pages/home.js's chip counts always
+// match what js/pages/explore.js's filter actually returns for the same id.
+export const CUSTOM_TYPE_MATCHERS = {
+  road_trips: function (d) {
+    return (d.type === 'adventure' || d.type === 'hill_station' ||
+      (d.features && d.features.some(function (f) { return f.toLowerCase() === 'ghats'; }))) &&
+      d.type !== 'spiritual';
+  },
+  camping: function (d) {
+    return (d.features && d.features.some(function (f) {
+      return f.toLowerCase().includes('camp') || f.toLowerCase().includes('trek');
+    })) || d.type === 'adventure';
+  },
+  forts: function (d) {
+    return d.features && d.features.some(function (f) {
+      return f.toLowerCase().includes('fort') || f.toLowerCase().includes('palace');
+    });
+  },
+  ecotourism: function (d) {
+    return d.features && d.features.some(function (f) {
+      return f.toLowerCase().includes('nature') || f.toLowerCase().includes('birding') || f.toLowerCase().includes('eco');
+    });
+  },
+};

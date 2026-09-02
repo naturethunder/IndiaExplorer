@@ -12,12 +12,16 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#080A0F" />
-  <!-- Canonical is added by explore.js after validating the active filter intent. -->
+  <!-- Default canonical for non-JS crawlers; explore.js overwrites this after validating the active filter intent. -->
+  <link rel="canonical" href="https://exploredesh.com/destinations.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
+  <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="css/glass-immersive.css" />
@@ -141,8 +145,8 @@
           </div>
 
           <!-- Horizontal Category Scroller -->
-          <div class="category-tabs-container">
-            <nav id="typeFilter" class="category-tabs-track" role="tablist" aria-label="Destination categories">
+          <div class="category-tabs-container" tabindex="0">
+            <nav id="typeFilter" class="category-tabs-track" aria-label="Destination categories">
               <!-- Dynamically rendered buttons -->
             </nav>
           </div>
@@ -156,12 +160,12 @@
         <div class="explore-workspace-grid">
 
           <!-- ── Desktop & Mobile Sidebar Filters ───────────── -->
-          <aside id="filterSidebar" class="explore-filter-sidebar" aria-label="Destination Filters">
+          <aside id="filterSidebar" class="explore-filter-sidebar" aria-label="Destination Filters" role="dialog" aria-modal="true" aria-labelledby="filterCardTitle">
             <div class="filter-glass-card">
               <div class="filter-card-header">
                 <div class="filter-title-group">
                   <span class="filter-kicker">Refine By</span>
-                  <h3 class="filter-card-title">Filters</h3>
+                  <h3 class="filter-card-title" id="filterCardTitle">Filters</h3>
                 </div>
                 <div class="filter-header-actions">
                   <button id="resetTop" type="button" class="filter-reset-link">Reset all</button>
