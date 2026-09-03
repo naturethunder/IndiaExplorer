@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-09-01.
+> Last generated: 2026-09-03.
 
 **36 states/UTs · 2,390 destinations**
 
@@ -19,7 +19,7 @@
 - [Chandigarh](#chandigarh) (2)
 - [Chhattisgarh](#chhattisgarh) (18)
 - [Daman & Diu](#daman-diu) (3)
-- [Delhi](#delhi) (9)
+- [Delhi](#delhi) (6)
 - [Goa](#goa) (33)
 - [Gujarat](#gujarat) (81)
 - [Haryana](#haryana) (31)
@@ -45,7 +45,7 @@
 - [Telangana](#telangana) (55)
 - [Tripura](#tripura) (11)
 - [Uttar Pradesh](#uttar-pradesh) (79)
-- [Uttarakhand](#uttarakhand) (50)
+- [Uttarakhand](#uttarakhand) (51)
 - [West Bengal](#west-bengal) (80)
 
 ---
@@ -300,13 +300,10 @@
 |---|---|---|---|
 | **Asola Bhatti Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹3,500 – ₹12,500 |
 | **Chhatarpur Temple** | Temple | Jan–Mar, Oct–Dec | ₹1,700 – ₹10,500 |
-| **Gurdwara Dam Dama Sahib** | Heritage | Jan–Mar, Oct–Dec | ₹12,000 – ₹28,000 |
-| **Jhandewalan Temple** | Temple | Jan–Mar, Oct–Dec | ₹2,800 – ₹13,000 |
+| **Delhi** | Heritage | Jan–Mar, Oct–Dec | ₹3,500 – ₹30,000 |
 | **Lotus Temple** | Temple | Jan–Mar, Oct–Dec | ₹1,600 – ₹12,000 |
 | **New Delhi** | Heritage | Jan–Mar, Oct–Dec | ₹3,500 – ₹30,000 |
 | **Red Fort** | Heritage | Jan–Mar, Oct–Dec | ₹1,800 – ₹16,000 |
-| **St. James’ Orthodox Church (Mayur Vihar)** | Heritage | Jan–Mar, Oct–Dec | ₹4,500 – ₹8,000 |
-| **St. Sebastian’s Church, Dilshad Garden** | Heritage | Jan–Mar, Oct–Dec | ₹5,500 – ₹9,500 |
 
 ## Goa
 
@@ -488,7 +485,7 @@
 | **Gurdwara Paonta Sahib** | Heritage | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Himani Chamunda** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Jaitak Fort** | Heritage | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
-| **Jibhi** | Hillstation | Mar–Jun, Sep–Nov | ₹1,500 – ₹6,500 |
+| **Jibhi** | Hill Station | Mar–Jun, Sep–Nov | ₹1,500 – ₹6,500 |
 | **Jwala Ji Kangra** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Kalatop Khajjiar Sanctuary** | Wildlife | Mar–Jun, Sep–Nov | ₹2,500 – ₹25,000 |
 | **Kalpa** | Hill Station | Apr–Oct | ₹1,200 – ₹12,000 |
@@ -543,7 +540,7 @@
 | **Group of Temples at Kiramchi** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Gulmarg** | Adventure | Jan–Sep, Dec | ₹2,000 – ₹20,000 |
 | **Gulmarg Wildlife Sanctuary** | Wildlife | Mar–Jun, Sep–Nov | ₹2,500 – ₹25,000 |
-| **Gurez Valley** | Hillstation | May–Oct | ₹1,600 – ₹6,000 |
+| **Gurez Valley** | Hill Station | May–Oct | ₹1,600 – ₹6,000 |
 | **Hari Parbat Fort** | Heritage | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Hazratbal Shrine** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Hiranagar Fort** | Heritage | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
@@ -716,7 +713,7 @@
 | **Kudremukh National Park** | Wildlife | Jan–Feb, Nov–Dec | ₹2,500 – ₹25,000 |
 | **Kukke Subramanya Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Kumara Swamy Devasthana, Bangalore** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
-| **Kunchikal Falls** | Lakes | Jan, Jul–Dec | ₹1,200 – ₹6,000 |
+| **Kunchikal Falls** | Nature | Jan, Jul–Dec | ₹1,200 – ₹6,000 |
 | **Kuruvathi Basaveshwara temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Lakshmeshwara Jain temples** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Lakshmi Devi Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
@@ -1654,7 +1651,7 @@
 | **Chandrasekhara Mahadeva Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Chari sambhu temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Chausath Yogini Temple, Hirapur** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Daringbadi** | Hillstation | Jan–May, Sep–Dec | ₹1,600 – ₹8,500 |
+| **Daringbadi** | Hill Station | Jan–May, Sep–Dec | ₹1,600 – ₹8,500 |
 | **Dhabaleswar** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Dishisvara Siva Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Gajapati Palace** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
@@ -2282,7 +2279,7 @@
 | **Valisvara Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Vallakottai Subramaniyaswami temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Vallanadu Wildlife Sanctuary** | Wildlife | Jan–Feb, Nov–Dec | ₹2,500 – ₹25,000 |
-| **Valparai** | Hillstation | Jan–May, Sep–Dec | ₹2,000 – ₹9,500 |
+| **Valparai** | Hill Station | Jan–May, Sep–Dec | ₹2,000 – ₹9,500 |
 | **Vandiyur Mariamman Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Vanmeekanathar Temple, Tiruvetriyur** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Vanniappar Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
@@ -2491,11 +2488,12 @@
 | **Baleshwar Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Beatles Ashram** | Heritage | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Binsar** | Wildlife | Mar–Jun, Sep–Nov | ₹1,500 – ₹15,000 |
+| **Chakrata** | Hill Station | Mar–Jun, Sep–Nov | ₹1,200 – ₹11,000 |
 | **Chandrabadani Devi** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Chopta** | Hill Station | Apr–Jun, Sep–Nov | ₹1,200 – ₹12,000 |
 | **Daksheswara Mahadev Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Dehradun** | Hill Station | Jan–Jun, Sep–Dec | ₹1,100 – ₹11,000 |
-| **Dhanaulti** | Hillstation | Jan–Dec | ₹1,800 – ₹14,000 |
+| **Dhanaulti** | Hill Station | Jan–Dec | ₹1,800 – ₹14,000 |
 | **Gauri Kund** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Gopinath Mandir** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Gujrugarhi** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |

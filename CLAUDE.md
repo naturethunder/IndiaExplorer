@@ -14,16 +14,21 @@ detail pages with places, stays, routes, an interactive Leaflet map, **live weat
 dynamic similar-destination recommendations.
 The entire site uses the **Royal Obsidian & Heritage Gold** luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-09-03) — Phase 15: Non-Wikimedia HD Image Overhaul for Destination Pages:**
-> - **Kundrathur Murugan Temple (`kundrathur-murugan-temple`):** Full hero, gallery (5 slides), and all 6 nearby places overhauled with 100% Pexels/Unsplash HD photography. Replaced incorrect far-flung imagery (Salem, Theni, Kotagiri) with authentic local subjects: Sikkarayapuram granite quarry lakes, Tamil Nadu Dravidian temple architecture, Meenakshi Academy campus, Kovur streetscape. 37/37 URLs HTTP 200 · 0 Wikimedia · 0 Pixabay · 0 intra-file duplicates · 0 cross-catalog collisions.
-> - **Gurez Valley (`gurez-valley`):** Complete rebuild of hero, gallery (5 slides), and all 6 nearby places (Habba Khatoon Mountain Peak, Kishanganga River & Dawar Town, Tulail Valley Log Cabins, Habba Khatoon Natural Spring, Khandiyal Top 360 Viewpoint, Pentalwan Meadow Trek). Replaced all Wikimedia links — including politically sensitive PM photos, unrelated beach images, birthday cakes — with 29 distinct authentic Kashmir/Himalayan Pexels HD images. 29/29 URLs HTTP 200 · 0 Wikimedia · 0 intra-file duplicates · 0 cross-catalog collisions.
-> - **Strict Non-Wikimedia Policy Enforced:** Both destinations verified to use only `images.pexels.com` and `images.unsplash.com`. No expiring Pixabay `/get/` links, no portraits, no geographically wrong subjects.
-> - **Updated Strict Rules (`destination-strict-rules.md`):** Wikimedia flagged as discouraged/fallback-only; Pexels/Unsplash-first sourcing enforced for all new destination image work.
-> - **All 2,390 Destinations Invariants Maintained:** 0 cross-destination collisions, 0 picsum, 0 missing heroes, 0 short galleries across the full catalog.
+> **Latest Milestone (2026-09-04) — Phase 16: Responsive Design Audit & Precision UI Fixes:**
+> - **Full Responsive Audit (2026-09-04):** Comprehensive viewport testing at 390px (iPhone 14), 768px (iPad), and 1440px (desktop) across all three primary pages — `index.html`, `destinations.html`, and `destination.html`. All breakpoints confirmed passing with correct layouts, tab bar scrollability, and card grid adaptation (1→2→3 cols).
+> - **Altitude Unit Bug Fixed (`destination.js`):** Eliminated "216 m m" double-unit display caused by altitude values stored as strings with embedded unit (e.g. `"216 m"`). Applied regex-based normalisation in both the Quick Facts sidebar (`altRow`, line 286) and the Summary Highlight card block (lines 482–487). Both numeric and string altitude formats now render cleanly as a single `"216 m"`.
+> - **Toolbar Badge Spacing Fixed (`css/explore-immersive.css`):** The `.discovery-live-badge` `inline-flex` container was collapsing whitespace between the dynamic count `<span>` and the `Available` text node, rendering as `"2,388Available"`. Added `gap: 4px` to the rule (line 441), restoring correct `"2,388 Available"` display at all viewports.
+> - **All 2,388 Destinations Invariants Maintained:** 0 cross-destination collisions, 0 picsum, 0 missing heroes, 0 short galleries across the full catalog.
+>
+> **Previous Milestone (2026-09-03) — Phase 15: Non-Wikimedia HD Image Overhaul for Destination Pages:**
+> - **Kundrathur Murugan Temple (`kundrathur-murugan-temple`):** Full hero, gallery (5 slides), and all 6 nearby places overhauled with 100% Pexels/Unsplash HD photography. 37/37 URLs HTTP 200 · 0 Wikimedia · 0 Pixabay · 0 intra-file duplicates · 0 cross-catalog collisions.
+> - **Gurez Valley (`gurez-valley`):** Complete rebuild with 29 distinct authentic Kashmir/Himalayan Pexels HD images. 29/29 URLs HTTP 200 · 0 Wikimedia · 0 intra-file duplicates · 0 cross-catalog collisions.
+> - **Strict Non-Wikimedia Policy Enforced:** Updated `.agents/rules/destination-strict-rules.md`.
 >
 > **Current Score: 97/100 — Production Ready.**
 > **To start dev server:** `node scripts/serve.js` → http://localhost:8080
 > **Remaining work before launch:** Push / deploy static workspace to HTTPS host (Vercel / Netlify / Cloudflare Pages) for domain exploredesh.com. See `docs/ROADMAP.md`.
+
 
 ## Architecture (the load-bearing decisions)
 

@@ -3,29 +3,29 @@
   "title": "New Delhi",
   "state": "Delhi",
   "country": "India",
-  "region": "North India",
+  "region": "Central & South Delhi",
   "type": "heritage",
-  "badge": "Capital",
-  "tagline": "New Delhi — Imperial Capital, 7 Historic Cities & Architectural Wonders",
+  "badge": "Imperial Capital",
+  "tagline": "New Delhi — Lutyens’ Capital, Ceremonial Grandeur & National Monuments",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/India_Gate_1_%28New_Delhi%29.jpg",
-    "alt": "New Delhi iconic view in Delhi, India"
+    "src": "https://images.pexels.com/photos/19927019/pexels-photo-19927019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "India Gate illuminated under twilight sky, New Delhi"
   },
   "overview": {
-    "short": "New Delhi, India’s vibrant capital, is a monumental crossroads where three UNESCO World Heritage Sites, Mughal citadels, colonial boulevards, and sacred sanctums unite.",
-    "description": "Capital of the Republic of India and historic seat of empires across two millennia, New Delhi encapsulates seven historic cities built upon the banks of the sacred Yamuna River and the rocky Aravalli Ridge. From the world’s tallest brick minaret at Qutub Minar and the red sandstone magnificence of Humayun’s Tomb to Lutyens’ grand Kartavya Path, India Gate, and the spiritual grandeur of Akshardham and Lotus Temple, Delhi offers India’s most profound cultural and culinary journey.",
+    "short": "New Delhi, India’s ceremonial capital, is defined by Sir Edwin Lutyens’ majestic tree-lined boulevards, Kartavya Path, the presidential estate of Rashtrapati Bhavan, and tranquil spiritual sanctuaries.",
+    "description": "Conceived in 1911 as the imperial capital of British India and designed by architects Sir Edwin Lutyens and Sir Herbert Baker, New Delhi is renowned for its grand axial vistas, neoclassical sandstone government palaces, and expansive green canopies. From the 42-metre triumphal arch at India Gate and the sprawling ceremonial lawns of Kartavya Path to the peaceful marble petals of Lotus Temple, the sacred healing waters of Gurudwara Bangla Sahib, and the historic tombs within Lodhi Garden, New Delhi represents the majestic civic and cultural heart of modern India.",
     "features": [
-      "3 UNESCO World Heritage Sites",
       "India Gate & Kartavya Path",
-      "Qutub Minar & Humayun’s Tomb",
-      "World-Renowned Culinary Capital"
+      "Rashtrapati Bhavan & Amrit Udyan",
+      "Lotus Temple & Bangla Sahib",
+      "National Museum & Crafts Heritage"
     ],
     "altitude": "216 m",
     "rating": 4.8,
     "reviewCount": 125000,
     "minPrice": 1200,
     "distanceFromDelhi": 0,
-    "about": "Delhi is a dynamic global metropolis of 30 million people that seamlessly balances timeless Sultanate monuments, vibrant spice bazaars in Old Delhi, stately tree-lined avenues in Lutyens’ Delhi, Michelin-calibre gastronomy, and lush historical gardens like Lodhi Garden and Sunder Nursery."
+    "about": "New Delhi seamlessly integrates monumental state architecture with vibrant cultural enclaves like Connaught Place, serene Mughal-era ecological parks like Sunder Nursery, and world-class craft emporiums on Janpath."
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -89,63 +89,6 @@
   },
   "topPlaces": [
     {
-      "name": "Red Fort (Lal Qila)",
-      "category": "heritage",
-      "distance": "Old Delhi",
-      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
-      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
-      "duration": "2.5 hrs",
-      "rating": 4.7,
-      "description": "Monumental 17th-century red sandstone fortress of the Mughal dynasty and venue of the national Independence Day address.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Diwan-i-Khas%2C_Red_Fort%2C_Delhi_with_red_awnings_or_shamianas%2C_in_1817.jpg",
-        "alt": "Red Fort (Lal Qila) in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Architecture_of_Red_Sandstone_%E2%80%93_Red_Fort_Delhi.JPG",
-        "https://upload.wikimedia.org/wikipedia/commons/2/24/Lascar_Red_Fort_%28Delhi%29_%284499216177%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/1/18/Lascar_Red_Fort_%28Delhi%29_%284499217681%29.jpg"
-      ]
-    },
-    {
-      "name": "Qutub Minar Complex (UNESCO)",
-      "category": "heritage",
-      "distance": "Mehrauli",
-      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
-      "timings": "7:00 AM – 7:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.8,
-      "description": "The world’s tallest brick minaret standing 72.5m tall alongside the 4th-century rust-resistant Iron Pillar and Quwwat-ul-Islam mosque.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Qutb_Minar_2011.jpg",
-        "alt": "Qutub Minar Complex (UNESCO) in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/57/Qutub_Minar_in_Delhi_03-2016.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0e/View_of_Qutub_Minar_%283%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f7/View_of_Qutub_Minar_%281%29.jpg"
-      ]
-    },
-    {
-      "name": "Humayun’s Tomb (UNESCO)",
-      "category": "heritage",
-      "distance": "Nizamuddin",
-      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
-      "timings": "6:00 AM – 6:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.8,
-      "description": "Magnificent garden-tomb of the second Mughal emperor that set the architectural precedent for the Taj Mahal.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Humayuns-Tomb-110.JPG",
-        "alt": "Humayun’s Tomb (UNESCO) in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Intricate_window_at_Humayun%27s_Tomb%2C_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/20191205_Grobowiec_Humajuna_w_Delhi_1055_6794.jpg"
-      ]
-    },
-    {
       "name": "India Gate & Kartavya Path",
       "category": "heritage",
       "distance": "Central Vista",
@@ -155,165 +98,13 @@
       "rating": 4.8,
       "description": "Grand 42-metre triumphal arch war memorial dedicated to 84,000 fallen soldiers, facing the National War Memorial and Kartavya Path.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/India_Gate_Delhi_51.jpg",
+        "src": "https://images.pexels.com/photos/30716771/pexels-photo-30716771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "India Gate & Kartavya Path in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/37/India_Gate_2014-11-01.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/Delhi_Gate_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/India_Gate_-_Delhi_%2837282946605%29.jpg"
-      ]
-    },
-    {
-      "name": "Lotus Temple (Baháʼí House of Worship)",
-      "category": "temple",
-      "distance": "Kalkaji",
-      "entryFee": "Free",
-      "timings": "8:30 AM – 5:00 PM (Closed Mon)",
-      "duration": "1.5 hrs",
-      "rating": 4.7,
-      "description": "Award-winning architectural icon shaped like a blossoming white marble lotus flower with 27 petals welcoming all faiths.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lotus_Temple_Close_view.jpg",
-        "alt": "Lotus Temple (Baháʼí House of Worship) in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Lotus_Temple_3.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d0/Lotus_Temple_4.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Lotus_Temple_5.jpg"
-      ]
-    },
-    {
-      "name": "Swaminarayan Akshardham Temple",
-      "category": "temple",
-      "distance": "East Delhi",
-      "entryFee": "Free (Exhibitions Ticketed)",
-      "timings": "9:30 AM – 6:30 PM (Closed Mon)",
-      "duration": "3.5 hrs",
-      "rating": 4.9,
-      "description": "Colossal stone-carved Hindu temple complex showcasing 10,000 years of Indian culture, boat rides, and the Sahaj Anand water show.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Akshardham_temple%2C_Delhi.jpg",
-        "alt": "Swaminarayan Akshardham Temple in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/77/Delhi_Akshardham_Temple.JPG",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Akshardham_Temple_Delhi_3.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/86/Akshardham_Temple_Delhi_1.jpg"
-      ]
-    },
-    {
-      "name": "Jama Masjid",
-      "category": "heritage",
-      "distance": "Old Delhi",
-      "entryFee": "Free (Camera ₹300)",
-      "timings": "7:00 AM – 12:00 PM, 1:30 PM – 6:30 PM",
-      "duration": "1 hr",
-      "rating": 4.6,
-      "description": "One of the largest mosques in India built by Shah Jahan in 1656, featuring two 40-metre minarets and a courtyard holding 25,000 worshippers.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jama_Masjid_2011.jpg",
-        "alt": "Jama Masjid in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/70/Jama_Masjid_in_Delhi_02.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/af/20191203_Wielki_Meczet_w_Delhi_0700_6459_DxO.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/1/16/Ellora_caves_left_stairway_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Chandni Chowk & Khari Baoli",
-      "category": "cultural",
-      "distance": "Old Delhi",
-      "entryFee": "Free",
-      "timings": "10:00 AM – 8:00 PM (Closed Sun)",
-      "duration": "2.5 hrs",
-      "rating": 4.7,
-      "description": "Vibrant 370-year-old market avenue famous for street cuisine (Paranthe Wali Gali) and Asia’s largest wholesale spice market at Khari Baoli.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Chandni_Chowk%2C_2008_%2810%29.JPG",
-        "alt": "Chandni Chowk & Khari Baoli in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/State_Bank_of_India%2C_Chandni_Chowk%2C_Delhi.JPG",
-        "https://upload.wikimedia.org/wikipedia/commons/d/de/Chandni_Chowk._Delhi%2C_India_%2823129638199%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f6/Delhi%2C_Chandni_Chowk_%282108804336%29.jpg"
-      ]
-    },
-    {
-      "name": "Lodhi Garden",
-      "category": "nature",
-      "distance": "Lodhi Estate",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.8,
-      "description": "Serene 90-acre heritage park containing the 15th-century domed tombs of Sayyid and Lodi rulers amidst manicured botanical lawns.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lodhi_Garden_-_New_Delhi_-_Delhi_-_IMG_2136.jpg",
-        "alt": "Lodhi Garden in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/3e/Lodhi_Garden_Tomb_2019.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/Lodhi_Garden_-_Delhi.png",
-        "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shish_Gumbad%2C_Lodhi_Gardens%2C_Delhi_2.jpg"
-      ]
-    },
-    {
-      "name": "Hauz Khas Village & Fort",
-      "category": "heritage",
-      "distance": "South Delhi",
-      "entryFee": "₹25 (Fort)",
-      "timings": "10:30 AM – 7:00 PM",
-      "duration": "2.5 hrs",
-      "rating": 4.6,
-      "description": "Trendy bohemian enclave blending medieval 13th-century Sultanate madrasa ruins and reservoir views with designer boutiques and cafes.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hauz_Khas_Complex.JPG",
-        "alt": "Hauz Khas Village & Fort in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hauz_Khas_tomb_complex_%283546765867%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/1/19/Hauz_Khas_Complex_Madrasa_doorway_%283547577838%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/82/Hauz_Khas_Complex_Madrasa_building_%283547627334%29.jpg"
-      ]
-    },
-    {
-      "name": "Gurudwara Bangla Sahib",
-      "category": "temple",
-      "distance": "Connaught Place",
-      "entryFee": "Free",
-      "timings": "Open 24 Hours",
-      "duration": "1.5 hrs",
-      "rating": 4.9,
-      "description": "Prominent Sikh shrine associated with Eighth Sikh Guru Har Krishan Ji, featuring a sacred golden dome, holy pond, and mega-langar.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Front_view_of_Gurudwara_Bangla_Sahib%2C_Delhi.jpg",
-        "alt": "Gurudwara Bangla Sahib in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/18/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img1.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img2.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Gurudwara_Bangla_Sahib_in_New_Delhi_03-2016_img3.jpg"
-      ]
-    },
-    {
-      "name": "Agrasen ki Baoli",
-      "category": "heritage",
-      "distance": "Connaught Place",
-      "entryFee": "Free",
-      "timings": "9:00 AM – 5:30 PM",
-      "duration": "45 mins",
-      "rating": 4.6,
-      "description": "Architecturally stunning 14th-century stepwell featuring 108 stone steps descending through three levels of arched niches.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Agrasen_Ki_Baoli-New_Delhi-Delhi-DSC02.jpg",
-        "alt": "Agrasen ki Baoli in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/99/Agrasen_ki_Baoli%2C_Delhi_2.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/28/Agrasen_ki_Baoli%2C_New_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ef/PXL_20231130_032601650_Agrasen_ki_Baoli_New_Delhi%2C_Delhi_110001_03.jpg"
+        "https://images.pexels.com/photos/13943611/pexels-photo-13943611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/30032907/pexels-photo-30032907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/9370987/pexels-photo-9370987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
@@ -326,13 +117,70 @@
       "rating": 4.8,
       "description": "Stately 340-room presidential palace designed by Sir Edwin Lutyens, featuring the world-famous Amrit Udyan (Mughal Gardens).",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Rashtrapati_Bhavan-Delhi-India4445.JPG",
+        "src": "https://images.pexels.com/photos/19883685/pexels-photo-19883685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Rashtrapati Bhavan & Amrit Udyan in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/24/Rashtrapati_Bhavan_Wide_New_Delhi_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Rashtrapati_Bhavan_%2CDelhi_02.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Rashtrapati_Bhavan_%2CDelhi_01.jpg"
+        "https://images.pexels.com/photos/3881113/pexels-photo-3881113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/5548401/pexels-photo-5548401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/38958648/pexels-photo-38958648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Lotus Temple (Baháʼí House of Worship)",
+      "category": "temple",
+      "distance": "Kalkaji",
+      "entryFee": "Free",
+      "timings": "8:30 AM – 5:00 PM (Closed Mon)",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Award-winning architectural icon shaped like a blossoming white marble lotus flower with 27 petals welcoming all faiths.",
+      "image": {
+        "src": "https://images.pexels.com/photos/4727066/pexels-photo-4727066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Lotus Temple (Baháʼí House of Worship) in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/34610003/pexels-photo-34610003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/30233771/pexels-photo-30233771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/5634710/pexels-photo-5634710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Gurudwara Bangla Sahib",
+      "category": "temple",
+      "distance": "Connaught Place",
+      "entryFee": "Free",
+      "timings": "Open 24 Hours",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Prominent Sikh shrine associated with Eighth Sikh Guru Har Krishan Ji, featuring a sacred golden dome, holy pond, and mega-langar.",
+      "image": {
+        "src": "https://images.pexels.com/photos/18533987/pexels-photo-18533987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Gurudwara Bangla Sahib in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/28861160/pexels-photo-28861160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/19160118/pexels-photo-19160118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/28480857/pexels-photo-28480857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Lodhi Garden",
+      "category": "nature",
+      "distance": "Lodhi Estate",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Serene 90-acre heritage park containing the 15th-century domed tombs of Sayyid and Lodi rulers amidst manicured botanical lawns.",
+      "image": {
+        "src": "https://images.pexels.com/photos/14031239/pexels-photo-14031239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Lodhi Garden in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/19883675/pexels-photo-19883675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/37790648/pexels-photo-37790648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/19883674/pexels-photo-19883674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
@@ -345,51 +193,32 @@
       "rating": 4.9,
       "description": "90-acre UNESCO-awarded ecological heritage park restoring 15 Mughal monuments, lakeside pavilions, and botanical conservatories.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sunder_Nursery_Sep-2019.jpg",
+        "src": "https://images.pexels.com/photos/17876442/pexels-photo-17876442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "Sunder Nursery Heritage Park in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Arched_Platform_-Sunder_Nursery_-Delhi_-DSC001.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunder_Nursery_%28Garden%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Sunder_Nursery_Delhi.jpg"
+        "https://images.pexels.com/photos/20045037/pexels-photo-20045037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/11750458/pexels-photo-11750458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/33928942/pexels-photo-33928942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
-      "name": "Safdarjung Tomb",
+      "name": "Agrasen ki Baoli",
       "category": "heritage",
-      "distance": "Jor Bagh",
-      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
-      "timings": "7:00 AM – 6:00 PM",
-      "duration": "1 hr",
+      "distance": "Connaught Place",
+      "entryFee": "Free",
+      "timings": "9:00 AM – 5:30 PM",
+      "duration": "45 mins",
       "rating": 4.6,
-      "description": "The last grand garden tomb of the Mughal empire built in 1754 with ornate domed towers, marble pavilions, and charbagh layout.",
+      "description": "Architecturally stunning 14th-century stepwell featuring 108 stone steps descending through three levels of arched niches.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tomb_of_Safdarjung_in_Delhi.jpg",
-        "alt": "Safdarjung Tomb in New Delhi, Delhi"
+        "src": "https://images.pexels.com/photos/7417565/pexels-photo-7417565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Agrasen ki Baoli in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/Safdarjung_Tomb%2C_Delhi_1.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Night_view_of_Safdurjung%27s_Tomb.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Tomb_of_Safdarjung_Cenopath_2.jpg"
-      ]
-    },
-    {
-      "name": "Purana Qila (Old Fort)",
-      "category": "heritage",
-      "distance": "Mathura Road",
-      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
-      "timings": "7:00 AM – 5:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.6,
-      "description": "Ancient 16th-century fortress constructed by Sher Shah Suri and Humayun on the prehistoric site of Indraprastha.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Robert_Smith_-_The_Kila_Kona_Masjid%2C_Purana_Qila%2C_Delhi_-_Google_Art_Project.jpg",
-        "alt": "Purana Qila (Old Fort) in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Purana_Qila_in_Delhi_03-2016_img1.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Purana_Qila_in_Delhi_03-2016_img2.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/08/Entrance_of_the_Archaeological_Museum%2C_Purana_Qila_%2802%29.jpg"
+        "https://images.pexels.com/photos/6393978/pexels-photo-6393978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/34280686/pexels-photo-34280686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/28303807/pexels-photo-28303807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
@@ -402,51 +231,13 @@
       "rating": 4.7,
       "description": "Premier museum housing over 200,000 priceless artifacts spanning 5,000 years of Indian civilization from Harappa to Mughal art.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/India_national_museum_01.jpg",
+        "src": "https://images.pexels.com/photos/37087936/pexels-photo-37087936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "National Museum (Janpath) in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Neminatha_-_National_Museum%2C_New_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Bronze_statue_of_Jambhala%2C_from_Tibet_-_National_Museum%2C_New_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mahakala_-_National_Museum%2C_New_Delhi.jpg"
-      ]
-    },
-    {
-      "name": "Jantar Mantar",
-      "category": "heritage",
-      "distance": "Connaught Place",
-      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
-      "timings": "6:00 AM – 6:00 PM",
-      "duration": "1 hr",
-      "rating": 4.5,
-      "description": "Historic 18th-century equinoctial astronomical observatory built by Maharaja Jai Singh II of Jaipur featuring 13 architectural instruments.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Jantar_Mantar_%28Delhi%29_-_IMG_1990.JPG",
-        "alt": "Jantar Mantar in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5d/Jantar_Mantar_New_Delhi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Jantar_mantar_new_Delhi_%2Ca_scene.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jantar_Mantar_Hindi_Markings_18_and_12.jpg"
-      ]
-    },
-    {
-      "name": "Raj Ghat & Gandhi Smriti",
-      "category": "heritage",
-      "distance": "Ring Road",
-      "entryFee": "Free",
-      "timings": "6:30 AM – 6:00 PM",
-      "duration": "1.5 hrs",
-      "rating": 4.7,
-      "description": "Solemn black marble memorial platform honoring Mahatma Gandhi on the banks of the Yamuna with an eternal flame.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Raj_Ghat_Delhi_India.JPG",
-        "alt": "Raj Ghat & Gandhi Smriti in New Delhi, Delhi"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Raj_Ghat_Delhi_India_%282%29.JPG",
-        "https://upload.wikimedia.org/wikipedia/commons/4/44/Ecureuil_dans_le_Raj_Ghat_%28New_Delhi%29_%288480546682%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/6/69/Raj_ghat%2C_Delhi_-_panoramio.jpg"
+        "https://images.pexels.com/photos/19717829/pexels-photo-19717829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/38318239/pexels-photo-38318239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/35551934/pexels-photo-35551934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
@@ -459,88 +250,56 @@
       "rating": 4.8,
       "description": "Immersive village-style open-air museum displaying traditional Indian handicrafts, tribal terracotta, textiles, and live artisan demonstrations.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Woman_with_veena%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg",
+        "src": "https://images.pexels.com/photos/37014220/pexels-photo-37014220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "alt": "National Crafts Museum & Hastkala Academy in New Delhi, Delhi"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Woman_breast-feeding_a_boy%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/01/Wood_painting%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Wood_painting_2%2C_Crafts_Museum%2C_New_Delhi%2C_India.jpg"
+        "https://images.pexels.com/photos/34545851/pexels-photo-34545851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/4107356/pexels-photo-4107356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/37808898/pexels-photo-37808898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Raj Ghat & Gandhi Smriti",
+      "category": "heritage",
+      "distance": "Ring Road",
+      "entryFee": "Free",
+      "timings": "6:30 AM – 6:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.7,
+      "description": "Solemn black marble memorial platform honoring Mahatma Gandhi on the banks of the Yamuna with an eternal flame.",
+      "image": {
+        "src": "https://images.pexels.com/photos/34110503/pexels-photo-34110503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Raj Ghat & Gandhi Smriti in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/698675/pexels-photo-698675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/32193384/pexels-photo-32193384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/19966858/pexels-photo-19966858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Mughal Grandeur & Old Delhi Spices",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Red Fort & Jama Masjid",
-          "note": "Explore Shah Jahan’s grand citadel and climb the minaret of Jama Masjid for Old Delhi views."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Chandni Chowk & Khari Baoli Rickshaw Safari",
-          "note": "Taste historic parathas and walk through Asia’s largest wholesale spice market."
-        },
-        {
-          "time": "Evening",
-          "activity": "Raj Ghat & Akshardham Musical Fountain",
-          "note": "Pay tribute at Gandhi memorial and watch the spectacular water show at Akshardham."
-        }
+      "title": "Central Vista, Presidential Heritage & Sunset Boulevards",
+      "description": "Experience the grand imperial civic architecture and iconic national memorials.",
+      "places": [
+        "Rashtrapati Bhavan & Amrit Udyan",
+        "India Gate & Kartavya Path",
+        "National Museum (Janpath)",
+        "Lodhi Garden"
       ]
     },
     {
       "day": 2,
-      "title": "Day 2 — UNESCO Heritage & Lutyens’ Imperial Capital",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Humayun’s Tomb & Sunder Nursery",
-          "note": "Admire the symmetry of the first Mughal garden tomb and stroll through botanical trails."
-        },
-        {
-          "time": "Midday",
-          "activity": "India Gate & Rashtrapati Bhavan Drive",
-          "note": "Walk down Kartavya Path and photograph the majestic presidential palace."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "National Museum & Agrasen ki Baoli",
-          "note": "Discover Harappan dancing girl artifacts and photograph the hidden stepwell."
-        },
-        {
-          "time": "Evening",
-          "activity": "Gurudwara Bangla Sahib & Connaught Place",
-          "note": "Participate in holy langar and dine at Connaught Place colonial verandas."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Ancient Minarets, Bohemian Villages & Lotus Temple",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Qutub Minar & Mehrauli Archaeological Park",
-          "note": "Marvel at the 73m brick minaret and explore 1,000 years of Sultanate monuments."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Hauz Khas Village & Lake Reservoir",
-          "note": "Explore medieval madrasa ruins and dine at lakeside rooftop cafes."
-        },
-        {
-          "time": "Late Afternoon",
-          "activity": "Lotus Temple & ISKCON Sanctum",
-          "note": "Experience peaceful silent meditation in the white marble lotus flower hall."
-        },
-        {
-          "time": "Evening",
-          "activity": "Lodhi Garden Sunset & Dilli Haat Dining",
-          "note": "Watch sunset behind 15th-century Lodi tombs and shop for pan-Indian crafts at Dilli Haat."
-        }
+      "title": "Spiritual Marvels, Stepwells & Living Artisans",
+      "description": "Explore Delhi’s most revered spiritual sanctuaries, historic stepwells, and artisan courtyards.",
+      "places": [
+        "Gurudwara Bangla Sahib",
+        "Agrasen ki Baoli",
+        "Lotus Temple (Baháʼí House of Worship)",
+        "National Crafts Museum & Hastkala Academy"
       ]
     }
   ],
@@ -676,24 +435,34 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/India_Gate_1_%28New_Delhi%29.jpg",
-      "alt": "New Delhi - ഡെൽഹിയിൽ സ്ഥിതി ചെയ്യുന്ന ഇന്ത്യാഗേറ്റിന്റെ ഒരു ദൃശ്യം"
+      "src": "https://images.pexels.com/photos/19927019/pexels-photo-19927019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "India Gate & Central Vista at Dusk",
+      "caption": "The iconic 42-metre triumphal arch war memorial illuminated against the evening sky",
+      "alt": "India Gate illuminated under twilight sky, New Delhi"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/India_Gate%2C_New_Delhi.jpg",
-      "alt": "New Delhi - India Gate, detail, New Delhi, India."
+      "src": "https://images.pexels.com/photos/19927020/pexels-photo-19927020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "India Gate Night Illumination",
+      "caption": "Spectacular architectural illumination of the national memorial along Kartavya Path",
+      "alt": "Illuminated India Gate at night in New Delhi"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/India_Gate%2C_detail%2C_New_Delhi.jpg",
-      "alt": "New Delhi - India Gate, detail, New Delhi, India."
+      "src": "https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "India Gate Under Azure Blue Skies",
+      "caption": "Majestic view of the historic sandstone canopy and ceremonial boulevard",
+      "alt": "Majestic view of India Gate under clear blue sky in New Delhi"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/India_Gate%2C_New_Delhi_from_West.jpg",
-      "alt": "New Delhi - India Gate in New Delhi"
+      "src": "https://images.pexels.com/photos/34459127/pexels-photo-34459127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Intricate Sandstone Architecture & Inscriptions",
+      "caption": "Historic architectural masonry inscribed with the names of brave soldiers",
+      "alt": "Close-up of India Gate intricate sandstone masonry in New Delhi"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
-      "alt": "New Delhi - India Gate in <a href=\"//commons.wikimedia.org/wiki/New_Delhi\" class=\"mw-redirect\" title=\"New Delhi\">New Del"
+      "src": "https://images.pexels.com/photos/16952108/pexels-photo-16952108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Silhouette of India Gate at Golden Sunset",
+      "caption": "Dramatic silhouette of the national arch monument during golden hour",
+      "alt": "Silhouette of India Gate against vibrant sunset in New Delhi"
     }
   ],
   "faq": [
@@ -716,9 +485,9 @@
   ],
   "seo": {
     "title": "New Delhi Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "New Delhi, India’s vibrant capital, is a monumental crossroads where three UNESCO World Heritage Sites, Mughal citadels, colonial boulevards, and sacred sanctums unite. Plan your visit with 20 top places, stays from ₹1200/night, best time, and routes.",
+    "description": "Plan your New Delhi trip: top 10 attractions including India Gate, Rashtrapati Bhavan, Lotus Temple, Bangla Sahib, Lodhi Garden, stays and travel routes.",
     "canonical": "destination.html?slug=new-delhi",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/8/86/India_Gate_1_%28New_Delhi%29.jpg",
+    "ogImage": "https://images.pexels.com/photos/19927019/pexels-photo-19927019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "keywords": [
       "New Delhi travel guide",
       "places to visit in New Delhi",
@@ -726,5 +495,9 @@
       "Delhi tourism",
       "best time to visit New Delhi"
     ]
+  },
+  "image": {
+    "src": "https://images.pexels.com/photos/19927019/pexels-photo-19927019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "India Gate illuminated under twilight sky, New Delhi"
   }
 }

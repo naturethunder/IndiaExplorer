@@ -174,11 +174,12 @@ function search(q) {
 (function () {
   const el = document.getElementById('hero-stats');
   if (!el) return;
+  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2388);
   const stats = [
-    { ic: 'map-pin', raw: idx.count || 2390, suffix: '+', label: 'Destinations' },
+    { ic: 'map-pin', raw: totalDestCount, suffix: '+', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
-    { ic: 'mountain', raw: 14362, suffix: '+', label: 'Places' },
-    { ic: 'bed', raw: 9629, suffix: '+', label: 'Stays' },
+    { ic: 'mountain', raw: 14338, suffix: '+', label: 'Places' },
+    { ic: 'bed', raw: 9621, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +

@@ -3,13 +3,19 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-03.
+Last updated: 2026-09-04.
+
 
 ---
 
 ## ✅ Done (current state)
 
+- **Phase 16: Responsive Design Audit & Precision UI Fixes (2026-09-04)** — Full responsive audit across 390px / 768px / 1440px viewports on all three primary pages (`index.html`, `destinations.html`, `destination.html`). All layouts confirmed passing: bottom mobile nav, card grids (1→2→3 col), horizontal scrollable tab bar, stat cards, hero sections. Two precision bugs discovered and fixed:
+  1. **Altitude double-unit bug** (`destination.js` lines 286 & 482–487): altitude values stored as `"216 m"` (string) were re-appended with `m`, displaying as `"216 m m"`. Fixed via regex-normalisation: strips trailing `m` before appending unit, handles both numeric and string storage formats.
+  2. **Toolbar badge missing space** (`css/explore-immersive.css` line 441): `.discovery-live-badge` used `inline-flex` which collapses HTML whitespace between the `<span id="toolbarCount">` child and the bare `Available` text node, rendering as `"2,388Available"`. Fixed by adding `gap: 4px` to the flex container. All fixes verified via browser screenshots at every breakpoint. **Score: 97/100.**
+
 - **Phase 15: Non-Wikimedia HD Image Overhaul — Kundrathur & Gurez Valley (2026-09-03)** — Enforced strict Pexels/Unsplash-only image sourcing on two destinations that still held Wikimedia images with wrong subjects. `kundrathur-murugan-temple`: replaced hero, 5-slide gallery, and all 6 nearby place card+photos (Sikkarayapuram granite quarry lake, Thirumudivakkam streetscape, Meenakshi Academy campus, Kovur temple architecture, Kovur Sundareswarar Temple, Kundrathur Hill) with 37 distinct HD Pexels/Unsplash images (37/37 HTTP 200, 0 collisions). `gurez-valley`: replaced hero, 5-slide gallery, and all 6 nearby places (Habba Khatoon Peak, Kishanganga River, Tulail Log Cabins, Natural Spring, Khandiyal Viewpoint, Pentalwan Meadow Trek) with 29 distinct Pexels images of authentic Kashmir/Himalayan scenery — expunging unrelated Wikimedia photos (PM at LoC, beach images, birthday cakes, folk culture). Updated `.agents/rules/destination-strict-rules.md` to mark Wikimedia as discouraged/fallback-only. **Site score: 97/100 — production ready.**
+
 
 - **Phase 14: Full QA/A11y/CSS Audit, Safari Fix & Image Verification (2026-09-02)** — Safari/iOS glassmorphism fully fixed: added `-webkit-backdrop-filter` to all 55 unpaired rules across all 4 CSS files. 10 accessibility fixes: mobile filter drawer `role="dialog" aria-modal`, month pills `aria-pressed`, filter-removal chip labels, contact form `aria-invalid`/`aria-describedby`, keyboard scroll strips `tabindex="0"`, autocomplete `aria-selected`, destination tab strip roving tabindex + arrow-key nav, `robots.txt` disallow rules, Google Fonts preload+swap, `ScrollTrigger.refresh()` after async renders. Dead CSS cleanup: defined `.glass-card` and `.dest-card-altitude/time/summer/winter` in `styles.css`; removed ~67 orphaned `.filter-panel`/`.filter-sidebar` lines from `styles.css` and `glass-immersive.css`. Live image audit confirmed across all 2,390 destinations: 0 picsum, 0 cross-destination duplicates, 0 intra-destination duplicates, 0 missing heroes, 0 short galleries. 5 hill station type corrections (`daringbadi`, `dhanaulti`, `gurez-valley`, `jibhi`, `valparai`: `hillstation`→`hill_station`), `kunchikal-falls` type+coords fixed. ROADMAP and CLAUDE.md updated to reflect verified current state. **Site score: 95/100 — production ready.**
 

@@ -77,7 +77,7 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
   title: 'Places to Visit in India | ExploreDesh',
-  description: 'Browse 2,390 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
+  description: 'Browse 2,388 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
   canonicalPath: 'destinations.html',
   heading: 'Places to Visit in India',
   subheading: 'Across 36 States & UTs',

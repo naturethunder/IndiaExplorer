@@ -260,20 +260,22 @@ body.dest-immersive .dest-hero>.absolute>div {
   align-items: center !important;
 }
 
-/* Hero title — Bodoni Moda luxury serif, centered & glowing */
+/* Hero title — Beautiful Calligraphy, grand scale, centered & glowing */
 body.dest-immersive #heroTitle {
-  font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
-  font-weight: 800 !important;
-  font-size: clamp(2.8rem, 6.5vw, 5rem) !important;
-  letter-spacing: -0.015em !important;
+  font-family: 'Great Vibes', 'Pinyon Script', 'Alex Brush', cursive !important;
+  font-weight: 400 !important;
+  font-size: clamp(4.6rem, 12.5vw, 8.6rem) !important;
+  letter-spacing: 0.03em !important;
   color: #FFFFFF !important;
   text-align: center !important;
   text-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.75),
-    0 2px 6px rgba(0, 0, 0, 0.6);
-  line-height: 1.08 !important;
+    0 6px 24px rgba(0, 0, 0, 0.95),
+    0 12px 48px rgba(0, 0, 0, 0.85),
+    0 0 60px rgba(255, 255, 255, 0.28);
+  line-height: 1.12 !important;
   text-transform: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
+  padding: 0 1rem;
   animation: heroFadeUp 0.8s var(--imm-ease) both;
 }
 
@@ -289,19 +291,22 @@ body.dest-immersive #heroTitle {
   }
 }
 
-/* Tagline — Jost, centered */
+/* Tagline — Beautiful Editorial Serif / Italic Subtitle */
 body.dest-immersive #heroTagline {
-  font-family: 'Jost', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.25rem) !important;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
+  font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
+  font-size: clamp(1.25rem, 2.8vw, 1.85rem) !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+  letter-spacing: 0.025em !important;
   text-align: center !important;
-  color: rgba(255, 255, 255, 0.90) !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.96) !important;
+  text-shadow:
+    0 2px 14px rgba(0, 0, 0, 0.95),
+    0 6px 30px rgba(0, 0, 0, 0.85);
   margin-bottom: 0;
-  max-width: 40rem;
-  line-height: 1.55;
+  max-width: 55rem;
+  line-height: 1.45 !important;
+  padding: 0 1rem;
   animation: heroFadeUp 0.8s 0.15s var(--imm-ease) both;
 }
 
@@ -1146,8 +1151,13 @@ body.dest-immersive #placeClose:hover {
   }
 
   body.dest-immersive #heroTitle {
-    font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
-    letter-spacing: 0.03em !important;
+    font-size: clamp(3.4rem, 14vw, 5.6rem) !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  body.dest-immersive #heroTagline {
+    font-size: clamp(1.15rem, 3.5vw, 1.5rem) !important;
+    line-height: 1.4 !important;
   }
 
   body.dest-immersive .tab-panel {
@@ -1163,11 +1173,11 @@ body.dest-immersive #placeClose:hover {
 
 @media (max-width: 480px) {
   body.dest-immersive #heroTitle {
-    font-size: clamp(1.9rem, 12vw, 2.8rem) !important;
+    font-size: clamp(2.8rem, 16vw, 4.2rem) !important;
   }
 
   body.dest-immersive #heroTagline {
-    font-size: 0.88rem !important;
+    font-size: clamp(1rem, 4.2vw, 1.25rem) !important;
   }
 
   #destNavContainer .dest-quick-pill {

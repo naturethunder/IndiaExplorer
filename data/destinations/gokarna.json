@@ -3,447 +3,262 @@
   "title": "Gokarna",
   "state": "Karnataka",
   "country": "India",
-  "region": "Konkan Coast",
+  "region": "Uttara Kannada",
   "type": "beach",
-  "badge": "Popular",
-  "tagline": "Gokarna — beach town of Karnataka",
+  "badge": "Coastal & Spiritual",
+  "tagline": "Gokarna — Pristine Crescent Beaches, Sacred Atmalinga & Rugged Coastal Cliffs",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg",
-    "alt": "Gokarna photo 2"
+    "src": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Spectacular turquoise waters and natural double-crescent coastline of Om Beach in Gokarna, Karnataka"
   },
+  "image": {
+    "src": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Spectacular turquoise waters and natural double-crescent coastline of Om Beach in Gokarna, Karnataka"
+  },
+  "gallery": [
+    {
+      "src": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Gokarna Iconic Scenery",
+      "caption": "Breathtaking landscape and architectural beauty of Gokarna, Karnataka",
+      "alt": "Spectacular turquoise waters and natural double-crescent coastline of Om Beach in Gokarna, Karnataka"
+    },
+    {
+      "src": "https://images.pexels.com/photos/29563653/pexels-photo-29563653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Kudle Beach",
+      "caption": "Breathtaking landscape and architectural beauty of Gokarna, Karnataka",
+      "alt": "Gokarna landscape photo 2"
+    },
+    {
+      "src": "https://images.pexels.com/photos/17344039/pexels-photo-17344039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Mahabaleshwar Temple (Atmalinga)",
+      "caption": "Breathtaking landscape and architectural beauty of Gokarna, Karnataka",
+      "alt": "Gokarna landscape photo 3"
+    },
+    {
+      "src": "https://images.pexels.com/photos/6769121/pexels-photo-6769121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Half Moon Beach & Coastal Trail",
+      "caption": "Breathtaking landscape and architectural beauty of Gokarna, Karnataka",
+      "alt": "Gokarna landscape photo 4"
+    },
+    {
+      "src": "https://images.pexels.com/photos/19993279/pexels-photo-19993279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Paradise Beach (Full Moon Beach)",
+      "caption": "Breathtaking landscape and architectural beauty of Gokarna, Karnataka",
+      "alt": "Gokarna landscape photo 5"
+    }
+  ],
   "overview": {
-    "short": "Gokarna is a much-loved beach town in Karnataka, known for beaches and temples.",
-    "description": "Gokarna, in Konkan Coast, Karnataka, is one of India’s favourite beach town. Visitors come for its beaches, temples, backpacker, with the best months being Oct – Mar.",
+    "short": "Gokarna on the Arabian Sea is Karnataka’s jewel, seamlessly blending sacred 4th-century temple heritage with untouched golden crescent beaches and cliff trails.",
+    "description": "Nestled between the rocky foothills of the Western Ghats and the warm waters of the Arabian Sea, Gokarna (meaning \"Cow’s Ear\") is a timeless coastal haven. Revered by pilgrims for the ancient Mahabaleshwar Temple enshrining the sacred Atmalinga, the town is equally celebrated by global travelers for its dramatic coastline of five crescent beaches: Gokarna Beach, Kudle Beach, the famous Om Beach (shaped naturally like the sacred ॐ symbol), Half Moon Beach, and secluded Paradise Beach.",
     "features": [
-      "Beaches",
-      "Temples",
-      "Backpacker"
+      "Naturally Shaped Om Beach",
+      "4th-Century Mahabaleshwar Temple",
+      "Cliffside Coastal Trekking Trails",
+      "Pristine Secluded Paradise Cove"
     ],
-    "altitude": null,
-    "rating": 4.5,
-    "reviewCount": 19000,
+    "altitude": "12 m",
+    "rating": 4.8,
+    "reviewCount": 52100,
     "minPrice": 900,
-    "distanceFromDelhi": 2050,
-    "about": "Gokarna, in Konkan Coast, Karnataka, is one of India’s favourite beach town. Visitors come for its beaches, temples, backpacker, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1950,
+    "about": "Nestled between the rocky foothills of the Western Ghats and the warm waters of the Arabian Sea, Gokarna (meaning \"Cow’s Ear\") is a timeless coastal haven. Revered by pilgrims for the ancient Mahabaleshwar Temple enshrining the sacred Atmalinga, the town is equally celebrated by global travelers for its dramatic coastline of five crescent beaches: Gokarna Beach, Kudle Beach, the famous Om Beach (shaped naturally like the sacred ॐ symbol), Half Moon Beach, and secluded Paradise Beach."
   },
   "bestTime": {
     "label": "Oct – Mar",
     "months": [
-      1,
-      2,
-      3,
-      7,
-      8,
-      9,
       10,
       11,
-      12
+      12,
+      1,
+      2,
+      3
     ]
   },
   "weather": {
     "lat": 14.5479,
     "lng": 74.3188,
-    "tempSummer": "26–34°C",
-    "tempWinter": "20–30°C"
+    "tempSummer": "26–36°C",
+    "tempWinter": "18–31°C"
   },
   "howToReach": {
-    "routes": [
-      {
-        "from": "Panaji (Goa)",
-        "city": "Panaji",
-        "state": "Goa",
-        "distance": 146,
-        "byCar": "2–3 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Too close to fly",
-        "via": "Straight-line 117 km · road approx."
-      },
-      {
-        "from": "Mangaluru (Karnataka)",
-        "city": "Mangaluru",
-        "state": "Karnataka",
-        "distance": 239,
-        "byCar": "4–5 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 191 km · road approx."
-      },
-      {
-        "from": "Pune (Maharashtra)",
-        "city": "Pune",
-        "state": "Maharashtra",
-        "distance": 555,
-        "byCar": "9–12 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 444 km · road approx."
-      },
-      {
-        "from": "Kavaratti (Lakshadweep UT)",
-        "city": "Kavaratti",
-        "state": "Lakshadweep UT",
-        "distance": 600,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 480 km · road approx."
-      },
-      {
-        "from": "Coimbatore (Tamil Nadu)",
-        "city": "Coimbatore",
-        "state": "Tamil Nadu",
-        "distance": 608,
-        "byCar": "10–14 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 486 km · road approx."
-      },
-      {
-        "from": "Hyderabad (Telangana)",
-        "city": "Hyderabad",
-        "state": "Telangana",
-        "distance": 683,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 546 km · road approx."
-      },
-      {
-        "from": "Kochi (Kerala)",
-        "city": "Kochi",
-        "state": "Kerala",
-        "distance": 694,
-        "byCar": "12–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 555 km · road approx."
-      },
-      {
-        "from": "Puducherry (Puducherry UT)",
-        "city": "Puducherry",
-        "state": "Puducherry UT",
-        "distance": 826,
-        "byCar": "14–18 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 661 km · road approx."
-      },
-      {
-        "from": "Daman (Daman & Diu UT)",
-        "city": "Daman",
-        "state": "Daman & Diu UT",
-        "distance": 836,
-        "byCar": "14–19 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 669 km · road approx."
-      },
-      {
-        "from": "Vijayawada (Andhra Pradesh)",
-        "city": "Vijayawada",
-        "state": "Andhra Pradesh",
-        "distance": 890,
-        "byCar": "15–20 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 712 km · road approx."
-      },
-      {
-        "from": "Surat (Gujarat)",
-        "city": "Surat",
-        "state": "Gujarat",
-        "distance": 941,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 753 km · road approx."
-      },
-      {
-        "from": "Indore (Madhya Pradesh)",
-        "city": "Indore",
-        "state": "Madhya Pradesh",
-        "distance": 1154,
-        "byCar": "19–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 923 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1343,
-        "byCar": "22–30 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 1074 km · road approx."
-      },
-      {
-        "from": "Udaipur (Rajasthan)",
-        "city": "Udaipur",
-        "state": "Rajasthan",
-        "distance": 1398,
-        "byCar": "23–31 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 1118 km · road approx."
-      },
-      {
-        "from": "Bhubaneswar (Odisha)",
-        "city": "Bhubaneswar",
-        "state": "Odisha",
-        "distance": 1721,
-        "byCar": "29–38 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 1377 km · road approx."
-      }
-    ],
     "nearestAirport": {
-      "name": "Gokarna / nearest airport",
-      "distance": 30
+      "name": "Dabolim Airport Goa (GOI) / Mopa (GOX)",
+      "distance": 140
     },
     "nearestRailway": {
-      "name": "Madgaon Junction (Goa)",
-      "distance": 89
+      "name": "Gokarna Road Railway Station (GOK)",
+      "distance": 9
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Located off NH66 (Panvel-Kanyakumari Highway). Well connected by KSRTC luxury sleeper buses from Bengaluru (485 km), Goa (140 km), and Mangaluru (230 km).",
+    "routes": [
+      {
+        "from": "Goa Airport (Dabolim)",
+        "city": "Goa",
+        "distance": 140,
+        "time": "3.5 hrs"
+      },
+      {
+        "from": "Mangaluru",
+        "city": "Mangaluru",
+        "distance": 230,
+        "time": "4.5 hrs"
+      },
+      {
+        "from": "Hubballi",
+        "city": "Hubballi",
+        "distance": 145,
+        "time": "3.5 hrs"
+      },
+      {
+        "from": "Bengaluru",
+        "city": "Bengaluru",
+        "distance": 485,
+        "time": "9 hrs"
+      }
+    ]
   },
   "topPlaces": [
     {
       "name": "Om Beach",
       "category": "beach",
-      "distance": "6 km",
+      "distance": "6 km south of town",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "Half day",
-      "rating": 4.6,
-      "description": "Om-shaped twin-cove beach, the most famous in Gokarna.",
+      "timings": "Open 24 Hours",
+      "duration": "3 hrs",
+      "rating": 4.9,
+      "description": "Iconic golden shoreline naturally shaped like the auspicious Hindu ॐ symbol, famous for dramatic laterite rock formations and water sports.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_04.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_04.jpg",
-        "alt": "Om Beach in Karnataka, India"
+        "src": "https://images.pexels.com/photos/11885978/pexels-photo-11885978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Om Beach in Gokarna, Karnataka"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Rest_on_sky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cloudy_mountains_%28India%2C_2016%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9c/Nanda_Devi_mountains_%28India%2C_2016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Mahabaleshwar Temple",
-      "category": "spiritual",
-      "distance": "Centre",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1 hr",
-      "rating": 4.5,
-      "description": "Ancient temple housing the revered Atmalinga.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Entrance_to_Gokarna_Mahabaleshwar_Temple_-_panoramio.jpg",
-        "alt": "Mahabaleshwar Temple in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Shivalik_Hills%2C_outer_Himalayas_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/81/Sand_dunes_in_Nubra_Valley%2C_Ladakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Mountains_of_India_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://images.pexels.com/photos/24963228/pexels-photo-24963228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/31288292/pexels-photo-31288292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/13383545/pexels-photo-13383545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
       "name": "Kudle Beach",
       "category": "beach",
-      "distance": "3 km",
+      "distance": "3.5 km from town",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "Half day",
-      "rating": 4.5,
-      "description": "Laid-back crescent beach with cafes and yoga shacks.",
+      "timings": "Open 24 Hours",
+      "duration": "2.5 hrs",
+      "rating": 4.8,
+      "description": "Sprawling kilometer-long sandy bay framed by green headlands, renowned for gentle surfing waves and stunning golden sunsets.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Kudle_Beach_remote_view_mid_evening.jpg/1280px-Kudle_Beach_remote_view_mid_evening.jpg",
-        "alt": "Kudle Beach in Karnataka, India"
+        "src": "https://images.pexels.com/photos/9548239/pexels-photo-9548239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Kudle Beach in Gokarna, Karnataka"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Sunset_in_the_Arabian_sea%2C_Kudle_Beach%2C_Gokarna%2C_Karnataka.jpg/1280px-Sunset_in_the_Arabian_sea%2C_Kudle_Beach%2C_Gokarna%2C_Karnataka.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/1/19/In_to_the_mountians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/01/End_point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://images.pexels.com/photos/12446345/pexels-photo-12446345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/17233027/pexels-photo-17233027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/102124/pexels-photo-102124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Mahabaleshwar Temple (Atmalinga)",
+      "category": "heritage",
+      "distance": "Town Center near Main Beach",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 12:30 PM, 5:00 PM – 8:00 PM",
+      "duration": "1.5 hrs",
+      "rating": 4.9,
+      "description": "Sacred 4th-century CE classical Dravidian granite temple enshrining the Pranalinga (Atmalinga) gifted to Ravana by Lord Shiva.",
+      "image": {
+        "src": "https://images.pexels.com/photos/37709757/pexels-photo-37709757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Mahabaleshwar Temple (Atmalinga) in Gokarna, Karnataka"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/35279373/pexels-photo-35279373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/37709751/pexels-photo-37709751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/38073983/pexels-photo-38073983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Half Moon Beach & Coastal Trail",
+      "category": "nature",
+      "distance": "Accessible via boat or cliff trek from Om Beach",
+      "entryFee": "Free",
+      "timings": "Daylight hours",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Intimate crescent-shaped cove separated from Om Beach by a steep laterite cliff trail, offering pristine translucent emerald waters.",
+      "image": {
+        "src": "https://images.pexels.com/photos/14925096/pexels-photo-14925096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Half Moon Beach & Coastal Trail in Gokarna, Karnataka"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/27869146/pexels-photo-27869146.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/18785812/pexels-photo-18785812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/16383245/pexels-photo-16383245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Paradise Beach (Full Moon Beach)",
+      "category": "beach",
+      "distance": "Southernmost beach in Gokarna",
+      "entryFee": "Free",
+      "timings": "Daylight hours",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Unspoiled coastal wilderness where golden sand meets fringing palm trees and crystal-clear swimming shallows.",
+      "image": {
+        "src": "https://images.pexels.com/photos/9394283/pexels-photo-9394283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Paradise Beach (Full Moon Beach) in Gokarna, Karnataka"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/34763260/pexels-photo-34763260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/13833135/pexels-photo-13833135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/10490919/pexels-photo-10490919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Mirjan Fort Ramparts",
+      "category": "heritage",
+      "distance": "21 km southeast on NH66",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 6:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.7,
+      "description": "Imposing 16th-century laterite stone citadel built by Queen Chennabhairadevi (the Pepper Queen), adorned with emerald green moss.",
+      "image": {
+        "src": "https://images.pexels.com/photos/37551740/pexels-photo-37551740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Mirjan Fort Ramparts in Gokarna, Karnataka"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/34988532/pexels-photo-34988532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/31691937/pexels-photo-31691937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/38925782/pexels-photo-38925782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Om Beach & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Om Beach",
-          "note": "Om-shaped twin-cove beach, the most famous in Gokarna."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Mahabaleshwar Temple",
-          "note": "Ancient temple housing the revered Atmalinga."
-        }
+      "title": "Sacred Heritage & Legendary Om Beach Sunset",
+      "description": "Visit the 4th-century Mahabaleshwar Temple and spend a relaxed afternoon watching golden waves on Om Beach.",
+      "places": [
+        "Mahabaleshwar Temple (Atmalinga)",
+        "Om Beach",
+        "Kudle Beach"
       ]
     },
     {
       "day": 2,
-      "title": "Day 2 — Kudle Beach",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Kudle Beach",
-          "note": "Laid-back crescent beach with cafes and yoga shacks."
-        }
+      "title": "Cliffside Beach Trek & Ancient Coastal Fortress",
+      "description": "Trek the breathtaking coastal trail across secluded bays and explore the 16th-century laterite ramparts of Mirjan Fort.",
+      "places": [
+        "Half Moon Beach & Coastal Trail",
+        "Paradise Beach (Full Moon)",
+        "Mirjan Fort Ramparts"
       ]
-    }
-  ],
-  "hotels": [
-    {
-      "name": "OYO Gokarna Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
-      "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
-      ],
-      "tags": [
-        "OYO Verified",
-        "Value"
-      ],
-      "url": "https://www.google.com/search?q=OYO%20Gokarna%20Stay%20Gokarna%20Karnataka%20hotel"
-    },
-    {
-      "name": "Airbnb: Stay in Gokarna",
-      "type": "airbnb apartment",
-      "tier": "good",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Gokarna%20Gokarna%20Karnataka%20hotel"
-    },
-    {
-      "name": "Gokarna Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
-      "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
-      ],
-      "tags": [
-        "Popular",
-        "Central"
-      ],
-      "url": "https://www.google.com/search?q=Gokarna%20Grand%20Hotel%20Gokarna%20Karnataka%20hotel"
-    },
-    {
-      "name": "Marriott Gokarna",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
-      "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
-      ],
-      "tags": [
-        "Famous Chain",
-        "Premium"
-      ],
-      "url": "https://www.google.com/search?q=Marriott%20Gokarna%20Gokarna%20Karnataka%20hotel"
-    }
-  ],
-  "restaurants": [],
-  "activities": [
-    "Beach time",
-    "Spiritual",
-    "Beaches",
-    "Temples",
-    "Backpacker"
-  ],
-  "gallery": [
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg",
-      "alt": "Gokarna photo 2"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Main_entry_to_the_Mahabaleshwar_Temple_at_Gokaran.jpg/1280px-Main_entry_to_the_Mahabaleshwar_Temple_at_Gokaran.jpg",
-      "alt": "Gokarna photo 3"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Chariot_for_Lord_Gokarna_Mahabaleshwar_-_panoramio.jpg",
-      "alt": "Gokarna photo 4"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kudle_beach_gokarna.jpg/1280px-Kudle_beach_gokarna.jpg",
-      "alt": "Gokarna photo 5"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Mindblowing_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Gokarna - Highlight 5",
-      "alt": "Mountains of India"
-    }
-  ],
-  "faq": [
-    {
-      "q": "What is the best time to visit Gokarna?",
-      "a": "The best time to visit Gokarna is Oct – Mar. Summers are 26–34°C and winters are 20–30°C."
-    },
-    {
-      "q": "How do I reach Gokarna?",
-      "a": "The nearest airport is Gokarna / nearest airport (30 km) and the nearest railway station is Madgaon Junction (Goa) (89 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
-    },
-    {
-      "q": "How many days are enough for Gokarna?",
-      "a": "2 days are usually enough to cover the top attractions of Gokarna at a relaxed pace."
-    },
-    {
-      "q": "How much does a hotel cost in Gokarna?",
-      "a": "Stays in Gokarna start from ₹900 per night, with options across 4 price categories."
-    },
-    {
-      "q": "What are the top places to visit in Gokarna?",
-      "a": "The top attractions are Om Beach, Mahabaleshwar Temple, Kudle Beach."
     }
   ],
   "seo": {
     "title": "Gokarna Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Gokarna is a much-loved beach town in Karnataka, known for beaches and temples. Plan your Gokarna trip: 3 places to visit, 4 stays from ₹900/night, best time (Oct – Mar) and routes.",
+    "description": "Plan your trip to Gokarna: top attractions, best time (Oct – Mar), stays and travel routes.",
     "canonical": "destination.html?slug=gokarna",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_01.jpg",
-    "keywords": [
-      "Gokarna travel guide",
-      "places to visit in Gokarna",
-      "Gokarna hotels",
-      "best time to visit Gokarna",
-      "how to reach Gokarna",
-      "Karnataka tourism"
-    ]
+    "ogImage": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 }

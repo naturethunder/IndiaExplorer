@@ -157,8 +157,8 @@ function main(dest, idx) {
   const coords = (dest.weather && dest.weather.lat != null)
     ? [dest.weather.lat, dest.weather.lng]
     : (dest.coordinates ? [dest.coordinates.lat, dest.coordinates.lng] : null);
-  const places = dest.topPlaces || [];
-  const hotels = dest.hotels || [];
+  const places = (dest.topPlaces && dest.topPlaces.length) ? dest.topPlaces : (dest.places || []);
+  const hotels = (dest.hotels && dest.hotels.length) ? dest.hotels : (dest.stays || dest.accommodations || []);
 
   // ─── SEO ───────────────────────────────────────────────
   const canonicalPath = 'destination.html?slug=' + encodeURIComponent(dest.slug || '');
@@ -234,7 +234,18 @@ function main(dest, idx) {
   const heroTitleEl = document.getElementById('heroTitle');
   if (heroTitleEl) heroTitleEl.textContent = dest.title;
   const heroTaglineEl = document.getElementById('heroTagline');
-  if (heroTaglineEl) heroTaglineEl.textContent = dest.tagline || dest.short || '';
+  if (heroTaglineEl) {
+    let rawTagline = dest.tagline || dest.short || '';
+    if (dest.title) {
+      const escapedTitle = dest.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const prefixPattern = new RegExp('^' + escapedTitle + '\\s*[-—–:]\\s*', 'i');
+      rawTagline = rawTagline.replace(prefixPattern, '').trim();
+    }
+    if (rawTagline) {
+      rawTagline = rawTagline.charAt(0).toUpperCase() + rawTagline.slice(1);
+    }
+    heroTaglineEl.textContent = rawTagline;
+  }
 
 
   // ─── OVERVIEW panel ─────────────────────────────────────
@@ -272,7 +283,7 @@ function main(dest, idx) {
         '<span class="font-semibold text-gray-900 text-sm">₹' + inr(min) + '+</span></div>';
     }).join('');
 
-    const altRow = (ov && ov.altitude) ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Altitude</span><span class="font-medium">' + inr(ov.altitude) + ' m</span></div>' : '';
+    const altRow = (ov && ov.altitude) ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Altitude</span><span class="font-medium">' + (function(a) { if (typeof a === 'number') return inr(a) + ' m'; var s = String(a).trim(); return /m$/i.test(s) ? esc(s) : esc(s) + ' m'; })(ov.altitude) + '</span></div>' : '';
 
     // ─── 5 Real Images Carousel for Overview Panel ──────
     function get5RealPhotos() {
@@ -319,29 +330,68 @@ function main(dest, idx) {
         });
       }
 
-      // Helper to avoid displaying raw generic labels like "Jaipur photo 5"
-      function cleanLabel(raw, fallback) {
-        if (!raw || typeof raw !== 'string') return fallback;
-        const trimmed = raw.trim();
-        if (/^(?:[a-zA-Z\s-]+[\s—-])?(?:photo|highlight|view|scenic view)\s*\d+$/i.test(trimmed) || /^photo\s*\d+$/i.test(trimmed)) {
-          return fallback;
+      // Intelligent resolver for gallery titles and subtitles avoiding generic "Vista 2" or "Highlight 1"
+      function isGenericLabel(text) {
+        if (!text || typeof text !== 'string') return true;
+        const trimmed = text.trim();
+        return /^(?:[a-zA-Z\s-]+[\s—–-])?(?:vista|highlight|photo|slide|view|scenic view|image|attraction)\s*\d+$/i.test(trimmed)
+          || /^(?:photo|slide|image|vista|highlight)\s*\d+$/i.test(trimmed)
+          || /^attraction\s*\d+/i.test(trimmed);
+      }
+
+      function resolveGalleryTitle(g, idx) {
+        // 1. If explicit title exists and is not generic, use it
+        if (g && typeof g === 'object' && g.title && !isGenericLabel(g.title)) {
+          return g.title.trim();
         }
-        return trimmed;
+        // 2. Derive from alt text if descriptive
+        const gAlt = (g && typeof g === 'object' && g.alt) ? g.alt.trim() : '';
+        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt)) {
+          let cleanAlt = gAlt.replace(/<[^>]*>/g, '').replace(/https?:\/\/\S+/g, '').trim();
+          if (cleanAlt.length > 55) {
+            const sub = cleanAlt.slice(0, 52);
+            const lastSpace = sub.lastIndexOf(' ');
+            cleanAlt = (lastSpace > 25 ? sub.slice(0, lastSpace) : sub) + '…';
+          }
+          return cleanAlt;
+        }
+        // 3. Fallback to destination features if available
+        const features = dest.features || (dest.overview && dest.overview.features) || [];
+        if (features && features[idx]) {
+          return features[idx];
+        }
+        // 4. Fallback to top places names if available
+        if (places && places[idx] && places[idx].name) {
+          return places[idx].name;
+        }
+        // 5. Evocative editorial descriptors (never robotic numbers)
+        const editorialPicks = [
+          'Panoramic Landscape & Horizon',
+          'Historic Architecture & Spire',
+          'Scenic Nature & Serene Trails',
+          'Sacred Temple & Spiritual Sanctuary',
+          'Majestic Sunset Vista'
+        ];
+        return dest.title + ' — ' + (editorialPicks[idx % editorialPicks.length] || 'Scenic Vista');
+      }
+
+      function resolveGalleryCaption(g, idx) {
+        if (g && typeof g === 'object' && g.caption && !isGenericLabel(g.caption)) {
+          return g.caption.trim();
+        }
+        const gAlt = (g && typeof g === 'object' && g.alt) ? g.alt.trim() : '';
+        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt)) {
+          return gAlt.slice(0, 80);
+        }
+        return (dest.state ? dest.state + ' · ' : '') + (typeLabel(dest.type) || 'Scenic') + ' Landmark';
       }
 
       // 2. Curated Destination Gallery (Prioritize destination's own authentic gallery photos)
       (dest.gallery || []).forEach(function (g, idx) {
         const srcUrl = typeof g === 'string' ? g : (g && g.src ? g.src : '');
         if (photos.length < 5 && srcUrl) {
-          const gAlt = (typeof g === 'object' && g.alt) ? g.alt : '';
-          const fallbackTitle = dest.title + ' — ' + (typeLabel(dest.type) || 'Heritage') + ' Highlight ' + (idx + 1);
-          const fallbackCaption = (dest.state ? dest.state + ' · ' : '') + (typeLabel(dest.type) || 'Scenic') + ' Landmark';
-
-          const rawTitle = (typeof g === 'object' && g.title) ? g.title : (gAlt ? gAlt.slice(0, 60) : '');
-          const gTitle = cleanLabel(rawTitle, fallbackTitle);
-
-          const rawCaption = (typeof g === 'object' && g.caption) ? g.caption : gAlt;
-          const gCaption = cleanLabel(rawCaption, fallbackCaption);
+          const gTitle = resolveGalleryTitle(g, idx);
+          const gCaption = resolveGalleryCaption(g, idx);
 
           addPhoto({
             src: srcUrl,
@@ -431,9 +481,11 @@ function main(dest, idx) {
     const winterVal = dest.weather && dest.weather.tempWinter ? esc(dest.weather.tempWinter) : '10°C – 20°C';
     let altitudeVal = 'Sea level';
     if (typeof ov.altitude === 'number') {
-      altitudeVal = ov.altitude > 0 ? inr(ov.altitude) + 'm' : 'Sea level';
+      altitudeVal = ov.altitude > 0 ? inr(ov.altitude) + ' m' : 'Sea level';
     } else if (ov.altitude) {
-      altitudeVal = esc(ov.altitude);
+      // Strip trailing 'm' or 'M' duplicates then normalise
+      var _altStr = String(ov.altitude).trim();
+      altitudeVal = /\d\s*m$/i.test(_altStr) ? esc(_altStr) : esc(_altStr) + ' m';
     }
 
     // Bug 2 fix: replaced emoji icons with SVG icons in summary cards
@@ -1049,6 +1101,11 @@ function main(dest, idx) {
   }
 
   const similar = getSimilarDestinations();
+  const expAllEl = document.getElementById('similarExploreAllText');
+  if (expAllEl) {
+    const totalCount = (idx && idx.count) || allDestList.length || 2388;
+    expAllEl.textContent = 'Explore All ' + inr(totalCount);
+  }
 
   function resolveCardPhoto(d) {
     if (!d) return '';
@@ -1330,4 +1387,15 @@ function main(dest, idx) {
   }
 
   setTimeout(initDestinationGSAP, 100);
+
+  // Clean up any residual sample classes from testing session
+  try {
+    sessionStorage.removeItem('delhi_sample_theme');
+    document.body.classList.remove('sample-canvas-obsidian', 'sample-canvas-white');
+    const oldBar = document.getElementById('sampleThemeBar');
+    if (oldBar) oldBar.remove();
+    const oldStyles = document.getElementById('delhiThemeInjectedStyles');
+    if (oldStyles) oldStyles.remove();
+  } catch (_) { }
 }
+

@@ -1,0 +1,503 @@
+{
+  "slug": "delhi",
+  "title": "Delhi",
+  "state": "Delhi",
+  "country": "India",
+  "region": "Old Delhi & Medieval Citadels",
+  "type": "heritage",
+  "badge": "Mughal & World Heritage",
+  "tagline": "Delhi — Walled Mughal Citadel, 7 Ancient Cities & Sultanate Heritage",
+  "heroImage": {
+    "src": "https://images.pexels.com/photos/6776755/pexels-photo-6776755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Front view of the historic Red Fort in Delhi with the Indian flag waving"
+  },
+  "overview": {
+    "short": "Delhi, the historic heartbeat of India across two millennia, encompasses the monumental walled city of Shahjahanabad, UNESCO World Heritage citadels, and ancient Sultanate ramparts.",
+    "description": "From the 12th-century soaring minaret at Qutub Minar and the proto-Taj Mughal symmetry of Humayun’s Tomb to the towering red sandstone battlements of Red Fort and the bustling medieval alleys of Chandni Chowk, Delhi is a living museum of empires. Built upon the sacred banks of the Yamuna River, it boasts three UNESCO World Heritage Sites, India's largest congregational mosque at Jama Masjid, the mystical ruins of Hauz Khas, and the spiritual grandeur of Akshardham.",
+    "features": [
+      "3 UNESCO World Heritage Sites",
+      "Red Fort & Shahjahanabad Citadel",
+      "Qutub Minar & Mehrauli Sultanate",
+      "Chandni Chowk & Asia’s Spice Market"
+    ],
+    "altitude": "216 m",
+    "rating": 4.8,
+    "reviewCount": 125000,
+    "minPrice": 1200,
+    "distanceFromDelhi": 0,
+    "about": "Old Delhi and the medieval southern enclaves offer unmatched culinary street trails, rich Persian and Timurid architectural traditions, and centuries of vibrant history preserved in ancient baolis, tombs, and bustling bazaars."
+  },
+  "bestTime": {
+    "label": "Oct – Mar",
+    "months": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ]
+  },
+  "weather": {
+    "lat": 28.6139,
+    "lng": 77.209,
+    "tempSummer": "28–42°C",
+    "tempWinter": "7–24°C"
+  },
+  "howToReach": {
+    "nearestAirport": {
+      "name": "Indira Gandhi International Airport (DEL)",
+      "distance": 15
+    },
+    "nearestRailway": {
+      "name": "New Delhi Railway Station (NDLS)",
+      "distance": 1
+    },
+    "roadNote": "Delhi Metro is one of the world’s largest and most efficient rapid transit networks connecting all major attractions, airports, and NCR satellite cities.",
+    "routes": [
+      {
+        "from": "Indira Gandhi Airport (DEL)",
+        "city": "Delhi Airport",
+        "state": "Delhi",
+        "distance": 15,
+        "byCar": "30–45 mins",
+        "byTrain": "Airport Express Metro (18 mins to New Delhi)",
+        "byAir": "Primary International Hub",
+        "via": "Vandemataram Marg / NH48"
+      },
+      {
+        "from": "Agra (Uttar Pradesh)",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "distance": 210,
+        "byCar": "3 hrs",
+        "byTrain": "Gatimaan / Vande Bharat Express (100 mins)",
+        "byAir": "Flights available",
+        "via": "Yamuna Expressway"
+      },
+      {
+        "from": "Jaipur (Rajasthan)",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "distance": 270,
+        "byCar": "3.5–4 hrs",
+        "byTrain": "Vande Bharat / Shatabdi Express (3.5 hrs)",
+        "byAir": "Direct 50-min flights",
+        "via": "Delhi-Mumbai Expressway"
+      }
+    ]
+  },
+  "topPlaces": [
+    {
+      "name": "Red Fort (Lal Qila)",
+      "category": "heritage",
+      "distance": "Old Delhi",
+      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
+      "timings": "9:30 AM – 4:30 PM (Closed Mon)",
+      "duration": "2.5 hrs",
+      "rating": 4.7,
+      "description": "Monumental 17th-century red sandstone fortress of the Mughal dynasty and venue of the national Independence Day address.",
+      "image": {
+        "src": "https://images.pexels.com/photos/34201914/pexels-photo-34201914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Red Fort (Lal Qila) in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/14094276/pexels-photo-14094276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/19926942/pexels-photo-19926942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/17161606/pexels-photo-17161606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Qutub Minar Complex (UNESCO)",
+      "category": "heritage",
+      "distance": "Mehrauli",
+      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
+      "timings": "7:00 AM – 7:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "The world’s tallest brick minaret standing 72.5m tall alongside the 4th-century rust-resistant Iron Pillar and Quwwat-ul-Islam mosque.",
+      "image": {
+        "src": "https://images.pexels.com/photos/3881110/pexels-photo-3881110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Qutub Minar Complex (UNESCO) in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/5087502/pexels-photo-5087502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/768043/pexels-photo-768043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/16892575/pexels-photo-16892575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Humayun’s Tomb (UNESCO)",
+      "category": "heritage",
+      "distance": "Nizamuddin",
+      "entryFee": "₹35 (Indians) / ₹550 (Foreigners)",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Magnificent garden-tomb of the second Mughal emperor that set the architectural precedent for the Taj Mahal.",
+      "image": {
+        "src": "https://images.pexels.com/photos/15867666/pexels-photo-15867666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Humayun’s Tomb (UNESCO) in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/13256094/pexels-photo-13256094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/8385840/pexels-photo-8385840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/18364866/pexels-photo-18364866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Jama Masjid",
+      "category": "heritage",
+      "distance": "Old Delhi",
+      "entryFee": "Free (Camera ₹300)",
+      "timings": "7:00 AM – 12:00 PM, 1:30 PM – 6:30 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "One of the largest mosques in India built by Shah Jahan in 1656, featuring two 40-metre minarets and a courtyard holding 25,000 worshippers.",
+      "image": {
+        "src": "https://images.pexels.com/photos/20083836/pexels-photo-20083836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Jama Masjid in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/20083835/pexels-photo-20083835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/4003272/pexels-photo-4003272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/5562368/pexels-photo-5562368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Chandni Chowk & Khari Baoli",
+      "category": "cultural",
+      "distance": "Old Delhi",
+      "entryFee": "Free",
+      "timings": "10:00 AM – 8:00 PM (Closed Sun)",
+      "duration": "2.5 hrs",
+      "rating": 4.7,
+      "description": "Vibrant 370-year-old market avenue famous for street cuisine (Paranthe Wali Gali) and Asia’s largest wholesale spice market at Khari Baoli.",
+      "image": {
+        "src": "https://images.pexels.com/photos/20795328/pexels-photo-20795328.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Chandni Chowk & Khari Baoli in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/17870116/pexels-photo-17870116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/15741144/pexels-photo-15741144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/11899657/pexels-photo-11899657.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Swaminarayan Akshardham Temple",
+      "category": "temple",
+      "distance": "East Delhi",
+      "entryFee": "Free (Exhibitions Ticketed)",
+      "timings": "9:30 AM – 6:30 PM (Closed Mon)",
+      "duration": "3.5 hrs",
+      "rating": 4.9,
+      "description": "Colossal stone-carved Hindu temple complex showcasing 10,000 years of Indian culture, boat rides, and the Sahaj Anand water show.",
+      "image": {
+        "src": "https://images.pexels.com/photos/33971089/pexels-photo-33971089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Swaminarayan Akshardham Temple in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/16386151/pexels-photo-16386151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/23897668/pexels-photo-23897668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/4059538/pexels-photo-4059538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Hauz Khas Village & Fort",
+      "category": "heritage",
+      "distance": "South Delhi",
+      "entryFee": "₹25 (Fort)",
+      "timings": "10:30 AM – 7:00 PM",
+      "duration": "2.5 hrs",
+      "rating": 4.6,
+      "description": "Trendy bohemian enclave blending medieval 13th-century Sultanate madrasa ruins and reservoir views with designer boutiques and cafes.",
+      "image": {
+        "src": "https://images.pexels.com/photos/20494080/pexels-photo-20494080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Hauz Khas Village & Fort in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/12284723/pexels-photo-12284723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/32164946/pexels-photo-32164946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/32323289/pexels-photo-32323289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Purana Qila (Old Fort)",
+      "category": "heritage",
+      "distance": "Mathura Road",
+      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
+      "timings": "7:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.6,
+      "description": "Ancient 16th-century fortress constructed by Sher Shah Suri and Humayun on the prehistoric site of Indraprastha.",
+      "image": {
+        "src": "https://images.pexels.com/photos/13708235/pexels-photo-13708235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Purana Qila (Old Fort) in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/33928936/pexels-photo-33928936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/34201845/pexels-photo-34201845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/37917759/pexels-photo-37917759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Safdarjung Tomb",
+      "category": "heritage",
+      "distance": "Jor Bagh",
+      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
+      "timings": "7:00 AM – 6:00 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "The last grand garden tomb of the Mughal empire built in 1754 with ornate domed towers, marble pavilions, and charbagh layout.",
+      "image": {
+        "src": "https://images.pexels.com/photos/23885155/pexels-photo-23885155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Safdarjung Tomb in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/7107597/pexels-photo-7107597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/19883648/pexels-photo-19883648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
+      "name": "Jantar Mantar",
+      "category": "heritage",
+      "distance": "Connaught Place",
+      "entryFee": "₹25 (Indians) / ₹300 (Foreigners)",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "1 hr",
+      "rating": 4.5,
+      "description": "Historic 18th-century equinoctial astronomical observatory built by Maharaja Jai Singh II of Jaipur featuring 13 architectural instruments.",
+      "image": {
+        "src": "https://images.pexels.com/photos/35069844/pexels-photo-35069844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Jantar Mantar in New Delhi, Delhi"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/19966841/pexels-photo-19966841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/20045159/pexels-photo-20045159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/2106249/pexels-photo-2106249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Mughal Imperial Splendour & Old Delhi Bazaars",
+      "description": "Immerse yourself in Shahjahanabad’s 17th-century citadels, grand mosques, and sensory spice markets.",
+      "places": [
+        "Red Fort (Lal Qila)",
+        "Jama Masjid",
+        "Chandni Chowk & Khari Baoli",
+        "Swaminarayan Akshardham Temple"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "UNESCO World Heritage & Ancient Medieval Citadels",
+      "description": "Discover world-famous garden tombs, the world’s tallest brick minaret, and Sultanate fortress ruins.",
+      "places": [
+        "Humayun’s Tomb (UNESCO)",
+        "Qutub Minar Complex (UNESCO)",
+        "Hauz Khas Village & Fort",
+        "Purana Qila (Old Fort)"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "name": "The Taj Mahal Hotel, New Delhi",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.8,
+      "reviews": 4500,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "House of Ming",
+        "Machan",
+        "Gym",
+        "Concierge"
+      ],
+      "tags": [
+        "Iconic Taj",
+        "Lutyens Delhi"
+      ],
+      "url": "https://www.google.com/search?q=The%20Taj%20Mahal%20Hotel%20Mansingh%20Road%20New%20Delhi"
+    },
+    {
+      "name": "The Imperial New Delhi",
+      "type": "heritage hotel",
+      "tier": "luxury",
+      "priceMin": 15000,
+      "priceMax": 30000,
+      "rating": 4.9,
+      "reviews": 3800,
+      "amenities": [
+        "Art Collection",
+        "Outdoor Pool",
+        "Spa",
+        "Royal Ballroom",
+        "Fine Dining"
+      ],
+      "tags": [
+        "Colonial Luxury",
+        "Connaught Place"
+      ],
+      "url": "https://www.google.com/search?q=The%20Imperial%20New%20Delhi%20Janpath"
+    },
+    {
+      "name": "ITC Maurya, A Luxury Collection Hotel",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 5100,
+      "amenities": [
+        "Bukhara Dining",
+        "Dum Pukht",
+        "Pool",
+        "Kaya Kalp Spa",
+        "Gym"
+      ],
+      "tags": [
+        "Legendary Dining",
+        "Diplomatic Enclave"
+      ],
+      "url": "https://www.google.com/search?q=ITC%20Maurya%20Diplomatic%20Enclave%20Delhi"
+    },
+    {
+      "name": "The Claridges New Delhi",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 2900,
+      "amenities": [
+        "Garden Lawn",
+        "Dhaba Dining",
+        "Pool",
+        "Gym",
+        "WiFi"
+      ],
+      "tags": [
+        "Heritage Charm",
+        "APJ Abdul Kalam Road"
+      ],
+      "url": "https://www.google.com/search?q=The%20Claridges%20New%20Delhi%20hotel"
+    },
+    {
+      "name": "Bloomrooms @ Janpath",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 6000,
+      "rating": 4.4,
+      "reviews": 1500,
+      "amenities": [
+        "Bright Modern Decor",
+        "Cafe",
+        "Free High Speed WiFi",
+        "AC"
+      ],
+      "tags": [
+        "Central Location",
+        "Modern Value"
+      ],
+      "url": "https://www.google.com/search?q=Bloomrooms%20Janpath%20Delhi%20hotel"
+    }
+  ],
+  "restaurants": [],
+  "activities": [
+    "Red Fort (Lal Qila)",
+    "Qutub Minar Complex (UNESCO)",
+    "Humayun’s Tomb (UNESCO)",
+    "India Gate & Kartavya Path",
+    "Lotus Temple (Baháʼí House of Worship)",
+    "Swaminarayan Akshardham Temple",
+    "Jama Masjid",
+    "Chandni Chowk & Khari Baoli",
+    "Lodhi Garden",
+    "Hauz Khas Village & Fort",
+    "Gurudwara Bangla Sahib",
+    "Agrasen ki Baoli",
+    "Rashtrapati Bhavan & Amrit Udyan",
+    "Sunder Nursery Heritage Park",
+    "Safdarjung Tomb",
+    "Purana Qila (Old Fort)",
+    "National Museum (Janpath)",
+    "Jantar Mantar",
+    "Raj Ghat & Gandhi Smriti",
+    "National Crafts Museum & Hastkala Academy"
+  ],
+  "gallery": [
+    {
+      "src": "https://images.pexels.com/photos/6776755/pexels-photo-6776755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Red Fort Citadel & Lahori Gate Ramparts",
+      "caption": "The colossal 17th-century Mughal red sandstone imperial fortress in Old Delhi",
+      "alt": "Front view of the historic Red Fort in Delhi with the Indian flag waving"
+    },
+    {
+      "src": "https://images.pexels.com/photos/6776756/pexels-photo-6776756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Iconic Mughal Architecture of Lal Qila",
+      "caption": "Magnificent architectural domes and battlements of the UNESCO World Heritage fort",
+      "alt": "Capture of the iconic Red Fort in Delhi showcasing Mughal architecture and the Indian flag"
+    },
+    {
+      "src": "https://images.pexels.com/photos/19867576/pexels-photo-19867576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Red Fort Battlements Under Clear Azure Skies",
+      "caption": "Historic red sandstone walls standing majestic against the sky in Old Delhi",
+      "alt": "Stunning view of the historic Red Fort in Delhi with Indian flag under clear blue sky"
+    },
+    {
+      "src": "https://images.pexels.com/photos/19926951/pexels-photo-19926951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Night Illumination of Red Fort Citadel",
+      "caption": "Dramatic evening light accentuating the massive octagonal walls of the imperial palace",
+      "alt": "Night view of the majestic Red Fort in Delhi beautifully illuminated under the night sky"
+    },
+    {
+      "src": "https://images.pexels.com/photos/17161601/pexels-photo-17161601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "title": "Red Sandstone Pavilions & Octagonal Bastions",
+      "caption": "UNESCO World Heritage sandstone craftsmanship at Shah Jahan’s grand seat of power",
+      "alt": "Red Fort in Delhi showcasing its iconic red sandstone architecture"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many UNESCO World Heritage Sites are in Delhi?",
+      "a": "Delhi has three UNESCO World Heritage Sites: Red Fort (Lal Qila), Qutub Minar Complex, and Humayun’s Tomb."
+    },
+    {
+      "q": "What is the best way to get around Delhi?",
+      "a": "The Delhi Metro is the fastest, cleanest, and most reliable way to navigate the city, connecting virtually all tourist attractions."
+    },
+    {
+      "q": "How many days are needed to explore New Delhi?",
+      "a": "A 3-day itinerary is recommended to cover the primary UNESCO monuments, Old Delhi markets, Lutyens’ government quarter, and major spiritual campuses."
+    },
+    {
+      "q": "What are the top must-try street foods in Delhi?",
+      "a": "Do not miss Chole Bhature, Chandni Chowk Parathas, Golgappe, Daulat ki Chaat, Nizamuddin Kebabs, and Old Delhi Jalebis."
+    }
+  ],
+  "seo": {
+    "title": "Delhi Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
+    "description": "Explore Delhi: 10 top historic attractions including Red Fort, Qutub Minar, Humayun’s Tomb, Jama Masjid, Chandni Chowk, Akshardham, best time, stays and travel routes.",
+    "canonical": "destination.html?slug=delhi",
+    "ogImage": "https://images.pexels.com/photos/6776755/pexels-photo-6776755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "keywords": [
+      "New Delhi travel guide",
+      "places to visit in New Delhi",
+      "New Delhi Delhi",
+      "Delhi tourism",
+      "best time to visit New Delhi"
+    ]
+  },
+  "image": {
+    "src": "https://images.pexels.com/photos/6776755/pexels-photo-6776755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Front view of the historic Red Fort in Delhi with the Indian flag waving"
+  }
+}
