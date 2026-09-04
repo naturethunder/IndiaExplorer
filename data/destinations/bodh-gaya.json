@@ -260,5 +260,87 @@
     "description": "Plan your trip to Bodh Gaya: top attractions, best time (Oct – Mar), stays and travel routes.",
     "canonical": "destination.html?slug=bodh-gaya",
     "ogImage": "https://images.pexels.com/photos/29868338/pexels-photo-29868338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-  }
+  },
+  "hotels": [
+    {
+      "name": "OYO Bodh Gaya Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 900,
+      "priceMax": 1450,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "url": "https://www.google.com/search?q=OYO%20Bodh%20Gaya%20Stay%20Bodh%20Gaya%20Bihar%20hotel"
+    },
+    {
+      "name": "Airbnb: Stay in Bodh Gaya",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 1700,
+      "priceMax": 2450,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Bodh%20Gaya%20Bodh%20Gaya%20Bihar%20hotel"
+    },
+    {
+      "name": "Bodh Gaya Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 2700,
+      "priceMax": 4050,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "url": "https://www.google.com/search?q=Bodh%20Gaya%20Grand%20Hotel%20Bodh%20Gaya%20Bihar%20hotel"
+    },
+    {
+      "name": "Fortune Park Bodh Gaya",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 5400,
+      "priceMax": 9000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "url": "https://www.google.com/search?q=Fortune%20Park%20Bodh%20Gaya%20Bodh%20Gaya%20Bihar%20hotel"
+    }
+  ]
 }

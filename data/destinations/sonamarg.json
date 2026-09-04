@@ -260,5 +260,87 @@
     "description": "Plan your trip to Sonamarg: top attractions, best time (Apr – Sep), stays and travel routes.",
     "canonical": "destination.html?slug=sonamarg",
     "ogImage": "https://images.pexels.com/photos/35027239/pexels-photo-35027239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-  }
+  },
+  "hotels": [
+    {
+      "name": "OYO Sonamarg Stay",
+      "type": "oyo",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 2900,
+      "rating": 4,
+      "reviews": 320,
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Breakfast"
+      ],
+      "tags": [
+        "OYO Verified",
+        "Value"
+      ],
+      "url": "https://www.google.com/search?q=OYO%20Sonamarg%20Stay%20Sonamarg%20Jammu%20%26%20Kashmir%20hotel"
+    },
+    {
+      "name": "Airbnb: Stay in Sonamarg",
+      "type": "airbnb apartment",
+      "tier": "good",
+      "priceMin": 3400,
+      "priceMax": 4850,
+      "rating": 4.7,
+      "reviews": 130,
+      "amenities": [
+        "Full Kitchen",
+        "Self Check-in",
+        "Local Host",
+        "WiFi"
+      ],
+      "tags": [
+        "Airbnb Superhost",
+        "Entire Place"
+      ],
+      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Sonamarg%20Sonamarg%20Jammu%20%26%20Kashmir%20hotel"
+    },
+    {
+      "name": "Sonamarg Grand Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5400,
+      "priceMax": 8100,
+      "rating": 4.4,
+      "reviews": 430,
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Room Service",
+        "Gym"
+      ],
+      "tags": [
+        "Popular",
+        "Central"
+      ],
+      "url": "https://www.google.com/search?q=Sonamarg%20Grand%20Hotel%20Sonamarg%20Jammu%20%26%20Kashmir%20hotel"
+    },
+    {
+      "name": "Sterling Sonamarg",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 10800,
+      "priceMax": 18000,
+      "rating": 4.7,
+      "reviews": 560,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Fine Dining",
+        "Concierge"
+      ],
+      "tags": [
+        "Famous Chain",
+        "Premium"
+      ],
+      "url": "https://www.google.com/search?q=Sterling%20Sonamarg%20Sonamarg%20Jammu%20%26%20Kashmir%20hotel"
+    }
+  ]
 }

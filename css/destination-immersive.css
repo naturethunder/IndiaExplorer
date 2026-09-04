@@ -58,32 +58,49 @@ body.dest-immersive {
 
 /* ─── LAYER 1: Fixed full-viewport background ───────────── */
 /* JS dynamically updates background-image per-destination   */
+/* Blurred + slightly scaled so bg doesn't compete with the  */
+/* carousel card above — creates atmospheric dark stage look  */
 .dest-immersive-bg {
   position: fixed;
-  top: -5%;
-  bottom: -5%;
-  left: 0;
-  right: 0;
-  height: 110%;
+  top: -8%;
+  bottom: -8%;
+  left: -4%;
+  right: -4%;
+  width: 108%;
+  height: 116%;
   z-index: 0;
   background-image: url('../images/kanatal-immersive-bg.png');
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
-  transform: translateZ(0);
-  transition: background-image 0.6s ease;
+  /* Blur removes sharpness so bg can't compete with carousel */
+  filter: blur(10px) brightness(0.55) saturate(1.3);
+  transform: scale(1.05) translateZ(0);
+  will-change: transform;
+  transition: background-image 0.7s ease;
 }
 
 /* ─── LAYER 2: Cinematic gradient overlay ───────────────── */
+/* Darkened so carousel card pops as a bright window against  */
+/* a deep moody atmospheric backdrop — premium dark stage     */
 .dest-immersive-overlay {
   position: fixed;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg,
-      rgba(2, 4, 8, 0.15) 0%,
-      rgba(2, 4, 8, 0.25) 30%,
-      rgba(2, 4, 8, 0.35) 65%,
-      rgba(2, 4, 8, 0.50) 100%);
+  background:
+    /* Vignette — dark edges, lighter centre for focus */
+    radial-gradient(ellipse 80% 70% at 50% 30%,
+      rgba(2, 4, 8, 0.10) 0%,
+      rgba(2, 4, 8, 0.55) 70%,
+      rgba(2, 4, 8, 0.75) 100%
+    ),
+    /* Vertical ramp — darker bottom, lighter top-mid */
+    linear-gradient(180deg,
+      rgba(2, 4, 8, 0.25) 0%,
+      rgba(2, 4, 8, 0.30) 25%,
+      rgba(2, 4, 8, 0.48) 65%,
+      rgba(2, 4, 8, 0.72) 100%
+    );
   pointer-events: none;
   transform: translateZ(0);
 }
@@ -177,9 +194,9 @@ body.dest-immersive .nav-glass .btn.btn-primary:hover {
 
 /* ─── HERO — Cinematic Expanded Destination Banner ───────── */
 body.dest-immersive .dest-hero {
-  height: 80vh;
-  min-height: 580px;
-  max-height: 760px;
+  height: 64vh;
+  min-height: 480px;
+  max-height: 580px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -190,17 +207,17 @@ body.dest-immersive .dest-hero {
 
 @media (max-width: 768px) {
   body.dest-immersive .dest-hero {
-    height: 68vh;
-    min-height: 480px;
-    max-height: 580px;
+    height: 56vh;
+    min-height: 400px;
+    max-height: 480px;
   }
 }
 
 @media (max-width: 480px) {
   body.dest-immersive .dest-hero {
-    height: 62vh;
-    min-height: 420px;
-    max-height: 520px;
+    height: 50vh;
+    min-height: 340px;
+    max-height: 420px;
   }
 }
 
@@ -210,14 +227,14 @@ body.dest-immersive .dest-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 30%;
   display: block;
-  transform: scale(1.0);
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+  transform: none;
+  transition: filter 0.8s ease;
 }
 
 body.dest-immersive .dest-hero:hover .dest-hero-img {
-  transform: scale(1.03);
+  transform: none;
 }
 
 body.dest-immersive .dest-hero-slides {
@@ -246,9 +263,10 @@ body.dest-immersive .dest-hero>.absolute {
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
-  padding: 3rem 1.5rem !important;
+  padding: 2.25rem 1.5rem 1.5rem !important;
   z-index: 10 !important;
-  max-width: 900px;
+  max-width: 1400px !important;
+  width: 95% !important;
   margin: 0 auto;
 }
 
@@ -258,24 +276,72 @@ body.dest-immersive .dest-hero>.absolute>div {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
-/* Hero title — Beautiful Calligraphy, grand scale, centered & glowing */
+/* Hero micro-badges — Frosted Luxury Glass Capsules */
+body.dest-immersive #heroType,
+body.dest-immersive #heroBadge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 5px 16px !important;
+  font-family: 'Jost', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  border-radius: 9999px !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  transition: all 0.3s var(--imm-ease) !important;
+}
+
+body.dest-immersive #heroType {
+  background: rgba(245, 197, 66, 0.15) !important;
+  color: #F5C542 !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+
+body.dest-immersive #heroType:hover {
+  background: rgba(245, 197, 66, 0.25) !important;
+  border-color: rgba(245, 197, 66, 0.8) !important;
+  box-shadow: 0 4px 20px rgba(245, 197, 66, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+body.dest-immersive #heroBadge {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Hero title — High-End Luxury Editorial Serif */
 body.dest-immersive #heroTitle {
-  font-family: 'Great Vibes', 'Pinyon Script', 'Alex Brush', cursive !important;
-  font-weight: 400 !important;
-  font-size: clamp(4.6rem, 12.5vw, 8.6rem) !important;
-  letter-spacing: 0.03em !important;
+  font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
+  font-weight: 700 !important;
+  font-size: var(--hero-title-size, clamp(2.4rem, 5.5vw, 5.5rem)) !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.12 !important;
   color: #FFFFFF !important;
   text-align: center !important;
-  text-shadow:
-    0 6px 24px rgba(0, 0, 0, 0.95),
-    0 12px 48px rgba(0, 0, 0, 0.85),
-    0 0 60px rgba(255, 255, 255, 0.28);
-  line-height: 1.12 !important;
+  background: linear-gradient(180deg, #FFFFFF 15%, #FFF6E5 60%, #F5C542 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.95))
+    drop-shadow(0 12px 42px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 0 35px rgba(245, 197, 66, 0.28));
   text-transform: none;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.55rem;
   padding: 0 1rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  overflow: visible;
   animation: heroFadeUp 0.8s var(--imm-ease) both;
 }
 
@@ -294,7 +360,7 @@ body.dest-immersive #heroTitle {
 /* Tagline — Beautiful Editorial Serif / Italic Subtitle */
 body.dest-immersive #heroTagline {
   font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
-  font-size: clamp(1.25rem, 2.8vw, 1.85rem) !important;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem) !important;
   font-weight: 500 !important;
   font-style: italic !important;
   letter-spacing: 0.025em !important;
@@ -365,25 +431,25 @@ body.dest-immersive #statsBar .text-amber-400 {
   color: var(--imm-gold);
 }
 
-/* ─── STICKY TAB BAR — Translucent Glass Indicator ─── */
 #destNavContainer {
   position: sticky;
   top: 64px;
   z-index: 500;
   width: 100%;
-  background: rgba(10, 15, 22, 0.70);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background: rgba(8, 12, 20, 0.85) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(245, 197, 66, 0.22) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
   margin-bottom: 0;
 }
 
 #destNavContainer .dest-subnav-bar {
   display: flex !important;
   align-items: stretch !important;
-  gap: 0 !important;
-  padding: 0 1rem !important;
+  gap: 4px !important;
+  padding: 0 1.25rem !important;
   max-width: 1280px;
   margin: 0 auto;
   border-radius: 0 !important;
@@ -405,17 +471,17 @@ body.dest-immersive #statsBar .text-amber-400 {
 #destNavContainer .dest-quick-pill {
   display: flex !important;
   align-items: center !important;
-  gap: 7px !important;
-  padding: 15px 18px !important;
+  gap: 8px !important;
+  padding: 15px 22px !important;
   border-radius: 0 !important;
   border: none !important;
   border-bottom: 2px solid transparent !important;
   background: transparent !important;
-  color: var(--imm-text-muted) !important;
+  color: rgba(203, 213, 225, 0.85) !important;
   font-family: 'Jost', sans-serif !important;
-  font-size: 13.5px !important;
+  font-size: 14px !important;
   font-weight: 500 !important;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   white-space: nowrap;
   cursor: pointer;
   transition:
@@ -428,16 +494,17 @@ body.dest-immersive #statsBar .text-amber-400 {
 }
 
 #destNavContainer .dest-quick-pill:hover {
-  color: var(--imm-text) !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-bottom-color: rgba(245, 197, 66, 0.35) !important;
 }
 
 #destNavContainer .dest-quick-pill.active {
-  color: var(--imm-accent) !important;
-  border-bottom-color: var(--imm-accent) !important;
-  background: var(--imm-accent-dim) !important;
+  color: #F5C542 !important;
+  border-bottom-color: #F5C542 !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.06) 0%, rgba(245, 197, 66, 0.16) 100%) !important;
   font-weight: 600 !important;
+  box-shadow: inset 0 -2px 10px rgba(245, 197, 66, 0.25) !important;
 }
 
 /* Count badges */
@@ -955,12 +1022,8 @@ body.dest-immersive #similar-grid a:hover {
 
 /* ─── IMAGE HOVER ───────────────────────────────────────── */
 body.dest-immersive .card img {
-  transition: transform 0.45s var(--imm-ease);
-}
-
-body.dest-immersive .card img:hover,
-body.dest-immersive .card:hover img {
-  transform: scale(1.04);
+  /* zoom-on-hover removed */
+  transition: filter 0.45s var(--imm-ease);
 }
 
 /* ─── SCROLLBAR ─────────────────────────────────────────── */
@@ -1146,12 +1209,13 @@ body.dest-immersive #placeClose:hover {
   }
 
   body.dest-immersive .dest-hero {
-    height: 85vh;
-    min-height: 520px;
+    height: 56vh;
+    min-height: 400px;
+    max-height: 480px;
   }
 
   body.dest-immersive #heroTitle {
-    font-size: clamp(3.4rem, 14vw, 5.6rem) !important;
+    font-size: var(--hero-title-size, clamp(2.2rem, 7vw, 4.4rem)) !important;
     letter-spacing: 0.02em !important;
   }
 
@@ -1173,7 +1237,9 @@ body.dest-immersive #placeClose:hover {
 
 @media (max-width: 480px) {
   body.dest-immersive #heroTitle {
-    font-size: clamp(2.8rem, 16vw, 4.2rem) !important;
+    font-size: var(--hero-title-size, clamp(1.8rem, 8.5vw, 3.2rem)) !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
   }
 
   body.dest-immersive #heroTagline {
@@ -1194,10 +1260,16 @@ body.dest-immersive #placeClose:hover {
   overflow: hidden;
   margin-bottom: 2rem;
   background: var(--imm-bg-elevated);
-  border: 1px solid var(--imm-border);
+  /* Premium border: subtle gold/white glow on top + left edges */
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-color: rgba(255, 255, 255, 0.22);
+  border-left-color: rgba(255, 255, 255, 0.18);
+  /* Layered shadow: deep shadow + inner top highlight */
   box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.45),
-    0 1px 0 var(--imm-border);
+    0 24px 64px rgba(0, 0, 0, 0.65),
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    0 2px 0 rgba(255, 255, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10);
 }
 
 @media (min-width: 640px) {
@@ -1226,11 +1298,11 @@ body.dest-immersive #placeClose:hover {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  transition: transform 7s ease;
+  /* transform transition removed — no Ken Burns zoom */
 }
 
 .dest-ov-slide.is-active img {
-  transform: scale(1.05);
+  transform: scale(1); /* Ken Burns zoom removed */
 }
 
 /* Carousel nav buttons */
@@ -1393,4 +1465,127 @@ body.dest-immersive .nav-glass.nav-scrolled {
   body.dest-immersive .dest-ov-slide {
     transition: opacity 0.2s ease !important;
   }
+
+  /* Disable all new wow animations for reduced-motion users */
+  .dest-ov-slide.is-active img {
+    animation: none !important;
+  }
+  .dest-ov-carousel {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .dest-ov-slide .dest-ov-caption {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
+
+/* ═══════════════ WOW PREMIUM ENHANCEMENTS ══════════════════ */
+
+/* ─── 1. KEN BURNS — subtle breathing zoom on active slide ──── */
+/* Images gently drift/breathe while active — feels alive      */
+@keyframes imm-ken-burns {
+  0%   { transform: scale(1.00) translate(0px, 0px); }
+  33%  { transform: scale(1.04) translate(-6px, -3px); }
+  66%  { transform: scale(1.06) translate(4px, -5px); }
+  100% { transform: scale(1.04) translate(-2px, 2px); }
+}
+
+.dest-ov-slide.is-active img {
+  animation: imm-ken-burns 10s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* ─── 2. CAROUSEL ENTRANCE — rises in on first load ────────── */
+@keyframes imm-carousel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.dest-ov-carousel {
+  animation: imm-carousel-enter 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.1s;
+}
+
+/* ─── 3. CAPTION SLIDE-UP — every slide change triggers this ─ */
+/* Applied via JS adding/removing .caption-enter class          */
+@keyframes imm-caption-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dest-ov-slide.is-active .dest-ov-caption-inner {
+  animation: imm-caption-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─── 4. COUNTER BADGE — pops on slide change ────────────── */
+@keyframes imm-badge-pop {
+  0%   { transform: scale(1);    opacity: 1; }
+  20%  { transform: scale(0.85); opacity: 0.7; }
+  70%  { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+
+.dest-ov-slide.is-active .dest-ov-counter {
+  animation: imm-badge-pop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─── 5. ACTIVE TAB GLOW — premium gold underline pulse ────── */
+@keyframes imm-tab-glow {
+  0%, 100% { box-shadow: 0 2px 8px rgba(212, 175, 55, 0.0); }
+  50%       { box-shadow: 0 2px 12px rgba(212, 175, 55, 0.45); }
+}
+
+#destNavContainer .dest-quick-pill.active {
+  animation: imm-tab-glow 2.5s ease-in-out infinite;
+}
+
+/* ─── 6. STATS CARDS ENTRANCE — stagger on overview load ───── */
+@keyframes imm-stat-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dest-summary-card:nth-child(1) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both; }
+.dest-summary-card:nth-child(2) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both; }
+.dest-summary-card:nth-child(3) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both; }
+.dest-summary-card:nth-child(4) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both; }
+
+/* ─── 7. AMBIENT BG TRANSITION — smooth crossfade for JS sync ─ */
+/* JS updates --imm-bg-current CSS var; this handles the fade   */
+.dest-immersive-bg {
+  transition: background-image 1.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* ─── 8. CAROUSEL HOVER — subtle lift on hover ────────────── */
+.dest-ov-carousel:hover {
+  box-shadow:
+    0 32px 80px rgba(0, 0, 0, 0.75),
+    0 12px 32px rgba(0, 0, 0, 0.55),
+    0 2px 0 rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  transition: box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}

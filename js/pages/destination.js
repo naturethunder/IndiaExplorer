@@ -232,7 +232,65 @@ function main(dest, idx) {
   const heroBadgeEl = document.getElementById('heroBadge');
   if (heroBadgeEl) heroBadgeEl.textContent = dest.badge || typeLabel(dest.type);
   const heroTitleEl = document.getElementById('heroTitle');
-  if (heroTitleEl) heroTitleEl.textContent = dest.title;
+  if (heroTitleEl) {
+    heroTitleEl.textContent = dest.title;
+    fitHeroTitle(dest.title);
+    window.addEventListener('resize', function () {
+      fitHeroTitle(dest.title);
+    });
+  }
+
+  function fitHeroTitle(title) {
+    const el = document.getElementById('heroTitle');
+    if (!el) return;
+    const text = (title || el.textContent || '').trim();
+    if (!text) return;
+
+    const len = text.length;
+    const wordCount = text.split(/\s+/).length;
+    const vw = window.innerWidth;
+
+    let baseRem = 4.8;
+    if (len <= 10 && wordCount <= 2) {
+      baseRem = 4.8;
+    } else if (len <= 16 && wordCount <= 2) {
+      baseRem = 4.2;
+    } else if (len <= 22) {
+      baseRem = 3.6;
+    } else if (len <= 30) {
+      baseRem = 3.1;
+    } else if (len <= 40) {
+      baseRem = 2.6;
+    } else if (len <= 55) {
+      baseRem = 2.2;
+    } else {
+      baseRem = 1.9;
+    }
+
+    if (vw < 640) {
+      baseRem = Math.min(baseRem, 2.4);
+      baseRem = Math.max(1.5, baseRem * (vw / 600));
+    } else if (vw < 1024) {
+      baseRem = Math.min(baseRem, 3.5);
+      baseRem = Math.max(2.0, baseRem * (vw / 1024));
+    } else if (vw < 1366) {
+      baseRem = Math.min(baseRem, 4.2);
+      baseRem = baseRem * (vw / 1366);
+    }
+
+    el.style.setProperty('--hero-title-size', baseRem.toFixed(2) + 'rem');
+
+    if (vw >= 640) {
+      el.style.whiteSpace = 'nowrap';
+      const maxAvailableWidth = vw * 0.90;
+      let attempts = 0;
+      while (el.scrollWidth > maxAvailableWidth && baseRem > 1.8 && attempts < 10) {
+        baseRem -= 0.2;
+        el.style.setProperty('--hero-title-size', baseRem.toFixed(2) + 'rem');
+        attempts++;
+      }
+    }
+  }
   const heroTaglineEl = document.getElementById('heroTagline');
   if (heroTaglineEl) {
     let rawTagline = dest.tagline || dest.short || '';
@@ -444,11 +502,11 @@ function main(dest, idx) {
       '<div class="dest-ov-carousel group" id="destOvCarouselWrap">' +
       '<div id="destOvTrack" class="relative w-full h-full">' +
       real5Photos.map(function (ph, idx) {
-        return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '">' +
+        return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
           '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
-          '<div class="absolute top-4 left-4 z-20 pointer-events-none">' +
+          '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
           '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
           // Bug 17 fix: use real5Photos.length instead of hardcoded 5
           'Photo ' + (idx + 1) + ' of ' + real5Photos.length + ' · ' + esc(dest.title) +
@@ -456,11 +514,13 @@ function main(dest, idx) {
           '</div>' +
           '<!-- Slide Caption -->' +
           '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
+          '<div class="dest-ov-caption-inner">' +
           '<span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500 text-white uppercase tracking-wider mb-1 inline-block capitalize">' +
           esc((ph.category || 'scenic').replace('_', ' ')) +
           '</span>' +
           '<h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight drop-shadow-md">' + esc(ph.title) + '</h3>' +
           '<p class="text-white/80 text-xs sm:text-sm max-w-lg mt-0.5">' + esc(ph.subtitle) + '</p>' +
+          '</div>' +
           '</div>' +
           '</div>';
       }).join('') +
@@ -561,24 +621,54 @@ function main(dest, idx) {
       const slides = document.querySelectorAll('#destOvTrack .dest-ov-slide');
       if (!wrap || !slides.length) return;
 
+      // Cache ambient bg element for live sync
+      const immBg = document.querySelector('.dest-immersive-bg');
+      // Pre-collect slide image URLs for ambient bg sync
+      const slideImgSrcs = Array.from(slides).map(function (s) {
+        return s.getAttribute('data-src') || '';
+      });
+
       let cur = 0;
       let timer = null;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function syncAmbientBg(idx) {
+        // Sync the full-page blurred background to the current slide's image
+        // Creates the "living page" WOW effect — page breathes with the photo
+        if (!immBg || !slideImgSrcs[idx] || reduceMotion) return;
+        immBg.style.backgroundImage = "url('" + slideImgSrcs[idx].replace(/'/g, "\\'") + "')";
+      }
 
       function go(idx) {
         cur = (idx + slides.length) % slides.length;
-        slides.forEach((s, i) => s.classList.toggle('is-active', i === cur));
-        dots.forEach((d, i) => { d.classList.toggle('is-active', i === cur); d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
+        slides.forEach(function (s, i) {
+          const wasActive = s.classList.contains('is-active');
+          s.classList.toggle('is-active', i === cur);
+          // Re-trigger caption animation: briefly remove then re-add is-active
+          // so CSS animation fires again on each slide change
+          if (i === cur && !wasActive) {
+            s.classList.remove('is-active');
+            // Force reflow then re-add to restart animation
+            void s.offsetWidth;
+            s.classList.add('is-active');
+          }
+        });
+        dots.forEach(function (d, i) {
+          d.classList.toggle('is-active', i === cur);
+          d.setAttribute('aria-current', i === cur ? 'true' : 'false');
+        });
+        // ✨ Ambient bg sync — page background follows the carousel slide
+        syncAmbientBg(cur);
       }
 
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      function start() { if (reduceMotion) return; stop(); timer = setInterval(() => go(cur + 1), 4000); }
+      function start() { if (reduceMotion) return; stop(); timer = setInterval(function () { go(cur + 1); }, 4000); }
       function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
-      if (prev) prev.addEventListener('click', () => { go(cur - 1); start(); });
-      if (next) next.addEventListener('click', () => { go(cur + 1); start(); });
+      if (prev) prev.addEventListener('click', function () { go(cur - 1); start(); });
+      if (next) next.addEventListener('click', function () { go(cur + 1); start(); });
 
-      dots.forEach((d) => {
-        d.addEventListener('click', () => {
+      dots.forEach(function (d) {
+        d.addEventListener('click', function () {
           const i = parseInt(d.getAttribute('data-ovdot'), 10);
           if (!isNaN(i)) { go(i); start(); }
         });
@@ -589,6 +679,61 @@ function main(dest, idx) {
       wrap.addEventListener('focusin', stop);
       wrap.addEventListener('focusout', start);
 
+      // ─── TOUCH & DRAG SWIPE ──────────────────────────────
+      // Covers: mobile touch, tablet touch, mouse drag
+      // Uses Pointer Events API (single unified handler for all input types)
+      var swipeStartX = 0;
+      var swipeStartY = 0;
+      var swipeActive = false;
+      var SWIPE_THRESHOLD = 50;   // min px horizontal travel to trigger slide
+      var ANGLE_THRESHOLD = 0.7;  // max tan(angle) — prevents diagonal-drag triggers
+
+      wrap.style.touchAction = 'pan-y'; // let vertical scroll still work on mobile
+
+      wrap.addEventListener('pointerdown', function (e) {
+        // Only track primary pointer (ignore multi-touch second fingers)
+        if (!e.isPrimary) return;
+        // Skip swipe if the user clicked a button/dot — let those click events fire normally
+        if (e.target.closest('button')) return;
+        swipeStartX = e.clientX;
+        swipeStartY = e.clientY;
+        swipeActive = true;
+        stop(); // pause autoplay while dragging
+        // NOTE: No setPointerCapture — that blocks child button click events
+      });
+
+      wrap.addEventListener('pointermove', function (e) {
+        if (!swipeActive || !e.isPrimary) return;
+        // Prevent accidental vertical-drag triggering a swipe
+        var dx = e.clientX - swipeStartX;
+        var dy = e.clientY - swipeStartY;
+        // If moving more vertically than horizontally, cancel swipe tracking
+        if (Math.abs(dy) > Math.abs(dx) * 1.5 && Math.abs(dx) < 20) {
+          swipeActive = false;
+        }
+      });
+
+      wrap.addEventListener('pointerup', function (e) {
+        if (!swipeActive || !e.isPrimary) return;
+        swipeActive = false;
+        var dx = e.clientX - swipeStartX;
+        var dy = e.clientY - swipeStartY;
+        // Check it's a mostly-horizontal gesture
+        var isHorizontal = Math.abs(dx) > SWIPE_THRESHOLD &&
+          Math.abs(dy) < Math.abs(dx) * ANGLE_THRESHOLD;
+        if (isHorizontal) {
+          go(dx < 0 ? cur + 1 : cur - 1); // left swipe = next, right swipe = prev
+        }
+        start(); // resume autoplay
+      });
+
+      wrap.addEventListener('pointercancel', function () {
+        swipeActive = false;
+        start();
+      });
+
+      // Init ambient bg with first slide
+      syncAmbientBg(0);
       start();
     })();
   }
@@ -1345,6 +1490,23 @@ function main(dest, idx) {
           start: 'top top',
           end: 'bottom bottom',
           scrub: 0.6,
+        },
+      });
+    }
+
+    // ─── HERO IMAGE PARALLAX ───────────────────────────────
+    // heroImg moves at 40% of scroll speed → classic depth illusion
+    // overflow:hidden on .dest-hero clips the extra 20% height
+    const heroImgEl = document.getElementById('heroImg');
+    if (window.ScrollTrigger && heroImgEl) {
+      window.gsap.to(heroImgEl, {
+        yPercent: 22,          // translate down 22% of its height as user scrolls
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.dest-hero',
+          start: 'top top',
+          end: 'bottom top',   // trigger ends when hero bottom hits viewport top
+          scrub: true,         // perfectly tied to scroll position
         },
       });
     }

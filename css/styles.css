@@ -342,11 +342,7 @@ body {
   aspect-ratio: 16/10;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
-}
-
-.card:hover .card-img {
-  transform: scale(1.04);
+  /* zoom-on-hover removed */
 }
 
 /* ─── Destination Card ───────────────────────────────────── */
@@ -693,6 +689,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%;
   display: block;
 }
 

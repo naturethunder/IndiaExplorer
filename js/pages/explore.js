@@ -76,10 +76,10 @@ const heroEyebrowText = document.querySelector('#heroEyebrow .eyebrow-txt');
 const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
-  title: 'Places to Visit in India | ExploreDesh',
-  description: 'Browse 2,388 places to visit across all 36 states and union territories of India, with seasonal guidance, stays and practical routes.',
+  title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
+  description: 'Discover 2,388 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
   canonicalPath: 'destinations.html',
-  heading: 'Places to Visit in India',
+  heading: '2,388 Destinations',
   subheading: 'Across 36 States & UTs',
 };
 
@@ -95,7 +95,7 @@ function activeFilterCount() {
 function landingSeo(resultLength) {
   const count = inr(resultLength);
   const activeCount = activeFilterCount();
-  if (activeCount === 0) return { ...BASE_SEO, breadcrumb: 'Destinations' };
+  if (activeCount === 0) return { ...BASE_SEO, breadcrumb: 'The Complete Travel Catalogue of Bharat', isDefault: true };
 
   if (activeCount === 1 && filters.state) {
     const state = filters.state;
@@ -160,12 +160,23 @@ function applyLandingSeo(resultLength) {
   });
 
   if (heroTitle) {
-    heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
-      '<span class="hero-line-2">' + esc(seo.subheading) + '</span>';
+    if (seo.isDefault) {
+      heroTitle.innerHTML = '<span class="hero-line-1">2,388 <em class="gold-gradient-text">Destinations</em></span>' +
+        '<span class="hero-line-2">Across 36 States & UTs</span>';
+    } else {
+      heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
+        '<span class="hero-line-2">' + esc(seo.subheading) + '</span>';
+    }
   }
-  if (heroDescription) heroDescription.textContent = seo.description;
-  if (heroEyebrowText) heroEyebrowText.textContent = seo.breadcrumb || 'Explore India by State, Style or Season';
-  if (discoveryHeading) discoveryHeading.textContent = seo.heading;
+  if (heroDescription) {
+    if (seo.isDefault) {
+      heroDescription.textContent = 'From the snow-crowned passes of Ladakh to the sunlit lagoons of Kerala, every sacred ghat, untouched peak, and historic fortress is catalogued with verified real photography, seasonal weather insights, and budget guides.';
+    } else {
+      heroDescription.textContent = seo.description;
+    }
+  }
+  if (heroEyebrowText) heroEyebrowText.textContent = seo.breadcrumb || 'The Complete Travel Catalogue of Bharat';
+  if (discoveryHeading) discoveryHeading.textContent = seo.isDefault ? 'Destinations' : seo.heading;
 
   if (seo.noSchema) {
     injectJsonLd(null, 'explore-collection');

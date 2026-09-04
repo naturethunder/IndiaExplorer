@@ -1,13 +1,13 @@
 # 🧭 IndiaExplore — Destinations by State
 
-> Auto-generated reference: every one of the **2,390 destinations** grouped by state/UT,
+> Auto-generated reference: every one of the **2,388 destinations** grouped by state/UT,
 > with its **best travel months** and **price per night** (min–max, taken from the
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-09-03.
+> Last generated: 2026-09-04.
 
-**36 states/UTs · 2,390 destinations**
+**36 states/UTs · 2,388 destinations**
 
 ## Contents
 
@@ -223,7 +223,7 @@
 | **Barela Bird Sanctuary** | Wildlife | Jan–Mar, Nov–Dec | ₹2,200 – ₹4,500 |
 | **Basilica of Our Lady of Divine Grace** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
 | **Bhimbandh Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
-| **Bodh Gaya** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹14,000 |
+| **Bodh Gaya** | Pilgrimage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Buxar Fort** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
 | **Chandika Sthan** | Spiritual | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
 | **Darbhanga Fort** | Heritage | Jan–Mar, Oct–Dec | ₹2,200 – ₹4,500 |
@@ -560,7 +560,7 @@
 | **Shankaracharya Temple, Srinagar** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Shankaragaurishvara Temple, Pattan** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Shivkhori** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
-| **Sonamarg** | Hill Station | Apr–Oct | ₹1,800 – ₹18,000 |
+| **Sonamarg** | Hill Station | Apr–Sep | ₹1,800 – ₹18,000 |
 | **Srinagar** | Hill Station | Apr–Oct | ₹1,500 – ₹15,000 |
 | **St. Joseph's Catholic Church** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |
 | **Tral Wildlife Sanctuary** | Wildlife | Mar–Jun, Sep–Nov | ₹2,500 – ₹25,000 |
@@ -667,7 +667,7 @@
 | **Ghataprabha Wildlife Sanctuary** | Wildlife | Jan–Mar, Oct–Dec | ₹2,500 – ₹25,000 |
 | **Ghati Subramanya** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Gokak Falls** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Gokarna** | Beach | Jan–Mar, Jul–Dec | ₹900 – ₹9,000 |
+| **Gokarna** | Beach | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Gokarnanatheshwara Temple** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Group of temples at Magadi, Karnataka** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Gudavi Bird Sanctuary** | Wildlife | Jan–Feb, Nov–Dec | ₹2,500 – ₹25,000 |
@@ -1562,7 +1562,7 @@
 | **Vigneshwara Temple, Ozar** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Vijaydurg Fort** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Vikatgad** | Heritage | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
-| **Vithal Dayaji Temple, Sulewadi** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
+| **Vithal Dayaji Temple, Sulewadi** | Spiritual | Jan–Mar, Oct–Dec | ₹0 – ₹0 |
 | **Vithoba Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Wagheshwari Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
 | **Walkeshwar Temple** | Spiritual | Jan–Mar, Oct–Dec | ₹900 – ₹9,000 |
