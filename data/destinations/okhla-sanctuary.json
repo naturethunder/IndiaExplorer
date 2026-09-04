@@ -205,7 +205,11 @@
       "name": "New Delhi Railway Station",
       "distance": 12
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Okhla Vihar metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -225,25 +229,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/20/Parks_in_noida.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/17/Rashtriya_Dalit_Prerna_Sthal_and_Green_Garden.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a0/PERIYAR_NATIONAL_PARK_AND_TIGER_RESERVE%2C_THEKKADY%2C_KERALA%2C_INDIA_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Okhla Vihar metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "The Okhla Vihar metro station is located on the Magenta Line of the Delhi Metro. It is located in Abul Fazal Enclave just behind Jamia Nagar Police station.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Okhla_Vihar_metro_station_%28Delhi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Okhla Vihar metro station in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Spoonbills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flickr_-_law_keven_-_Wakey%2C_Wakey...sleepy_head....jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/01/White-cheeked_partridge_%28Arborophila_atrogularis%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -304,25 +289,6 @@
       ]
     },
     {
-      "name": "Jamia Millia Islamia metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "The Jamia Millia Islamia metro station is located on the Magenta Line of the Delhi Metro which was inaugurated on 25 December 2017 by Prime Minister Narendra Modi. Jamia Millia Islamia is part of Phase III of Delhi Metro, on the Magenta Line.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Jamia_Millia_Islamia_metro_station_%28Delhi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jamia Millia Islamia metro station in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/A_cloudy_sky_and_the_tracks_of_Jamia_Millia_Islamia_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Jamia_Metro_Mural.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/54/Nepal_Fulvetta_a_feathered_whisper_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Nangli Wazidpur",
       "category": "cultural",
       "distance": "2 km",
@@ -372,11 +338,6 @@
           "note": "The Rashtriya Dalit Prerna Sthal and Green Garden is a memorial in Noida, Uttar Pradesh, India. It was commissioned by former Chief Minister of Uttar Pradesh Mayawati and inaugurated on 14 October 2011."
         },
         {
-          "time": "Afternoon",
-          "activity": "Okhla Vihar metro station",
-          "note": "The Okhla Vihar metro station is located on the Magenta Line of the Delhi Metro. It is located in Abul Fazal Enclave just behind Jamia Nagar Police station."
-        },
-        {
           "time": "Evening",
           "activity": "All India Muslim Majlis-e-Mushawarat",
           "note": "All India Muslim Majlis-e-Mushawarat (AIMMM or MMM) is a federation of various Muslim organisations in India. Majlis-e-Mushawarat was formally launched at a two-day (August 8–9) meeting in 1964 at the Islamic seminary Darul Uloom Nadwatul Ulama, Lucknow."
@@ -396,11 +357,6 @@
           "time": "Afternoon",
           "activity": "Shaheen Bagh",
           "note": "Shaheen Bagh is a neighbourhood in the South East Delhi district of Delhi, India. It is on the U.P border and southernmost colony of the Okhla (Jamia Nagar) area, situated along the banks of the Yamuna."
-        },
-        {
-          "time": "Evening",
-          "activity": "Jamia Millia Islamia metro station",
-          "note": "The Jamia Millia Islamia metro station is located on the Magenta Line of the Delhi Metro which was inaugurated on 25 December 2017 by Prime Minister Narendra Modi. Jamia Millia Islamia is part of Phase III of Delhi Metro, on the Magenta Line."
         }
       ]
     },
@@ -561,7 +517,7 @@
     },
     {
       "q": "What are the top places to visit in Okhla Sanctuary?",
-      "a": "The top attractions are Rashtriya Dalit Prerna Sthal and Green Garden, Okhla Vihar metro station, All India Muslim Majlis-e-Mushawarat, Jamiatul Qasim Darul Uloom Al-Islamiah, Shaheen Bagh."
+      "a": "The top attractions are Rashtriya Dalit Prerna Sthal and Green Garden, All India Muslim Majlis-e-Mushawarat, Jamiatul Qasim Darul Uloom Al-Islamiah, Shaheen Bagh."
     }
   ],
   "seo": {

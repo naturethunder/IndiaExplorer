@@ -203,7 +203,11 @@
       "name": "Ernakulam Junction (Kochi)",
       "distance": 6
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Edapally metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -245,25 +249,6 @@
       ]
     },
     {
-      "name": "Edapally metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Edapally is a station of Kochi Metro. The station is located between Pathadipalam and Changampuzha Park, in the area of Edappally.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Kochi_metro_train_at_edappilly_metro_station_going_towards_aluva.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Edapally metro station in Kerala, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Train_leaving_Edapally_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Lulu_Mall_view_from_Edapally_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/Vallam_St-_Theresa_of_Avila_Forane_Church%2C_%E0%B4%B5%E0%B4%B2%E0%B5%8D%E0%B4%B2%E0%B4%82_%E0%B4%B8%E0%B5%86%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%8D_%E0%B4%A4%E0%B5%86%E0%B4%B0%E0%B5%87%E0%B4%B8%E0%B4%BE%E0%B4%B8%E0%B5%8D_%E0%B4%AB%E0%B5%8A%E0%B4%B1%E0%B5%8B%E0%B4%A8_%E0%B4%AA%E0%B4%B3%E0%B5%8D%E0%B4%B3%E0%B4%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Edappally Juma Mosque",
       "category": "spiritual",
       "distance": "Town Centre",
@@ -299,25 +284,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/1b/Edappilly_church_bell_Tower_Board.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c5/Gurkha_Guaru_Family_%28BOND_0472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d1/Pandit_Tushar_Dutta_performing_at_Mayar_Madhuri%2C_Organized_by_Bengal_Foundation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Changampuzha Park metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Changampuzha Park is a station of Kochi Metro. It was inaugurated by the Prime Minister of India Narendra Modi on 17 June and opened for public on 19 June 2017 as a part of the first stretch of the metro system, between Aluva and Palarivattom.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Changampuzha_park_Metro_station_Entrance.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Changampuzha Park metro station in Kerala, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/92/Kochi_metro_changampuzha_park_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Changampuzha_park_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/32/Pengantin_Soja_-_His_Masters_Voice_1930s_Calcutta_IMG_9751_singapore_paranakan_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -373,11 +339,6 @@
           "time": "Afternoon",
           "activity": "Centre Square Mall, Kochi",
           "note": "Centre Square Mall is a shopping mall in the city centre of Kochi in Kerala, India, launched in 2013. Located on MG Road, the mall is spread over 2.5 acres and is owned and operated by Peevees Projects."
-        },
-        {
-          "time": "Evening",
-          "activity": "Edapally metro station",
-          "note": "Edapally is a station of Kochi Metro. The station is located between Pathadipalam and Changampuzha Park, in the area of Edappally."
         }
       ]
     },
@@ -394,11 +355,6 @@
           "time": "Afternoon",
           "activity": "Edappally",
           "note": "Edappally is an urban quarter of the city of Kochi, India. A major commercial centre in Kerala, it is one of the busiest junctions in Kerala."
-        },
-        {
-          "time": "Evening",
-          "activity": "Changampuzha Park metro station",
-          "note": "Changampuzha Park is a station of Kochi Metro. It was inaugurated by the Prime Minister of India Narendra Modi on 17 June and opened for public on 19 June 2017 as a part of the first stretch of the metro system, between Aluva and Palarivattom."
         }
       ]
     },
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in St. George's Catholic Forane Church?",
-      "a": "The top attractions are Edappally Junction, Centre Square Mall, Kochi, Edapally metro station, Edappally Juma Mosque, Edappally."
+      "a": "The top attractions are Edappally Junction, Centre Square Mall, Kochi, Edappally Juma Mosque, Edappally."
     }
   ],
   "seo": {

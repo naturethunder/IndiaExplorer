@@ -205,7 +205,11 @@
       "name": "Kalyan Junction (Mumbai)",
       "distance": 29
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Mandapeshwar metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -264,101 +268,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dahisar_river_as_seen_from_the_Metro.jpg/1280px-Dahisar_river_as_seen_from_the_Metro.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/53/Walayar_as_seen_from_line.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Mandapeshwar metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Mandapeshwar (IC Colony) is an elevated metro station on the North-South corridor of the Yellow Line 2A of Mumbai Metro in Mumbai, India. This metro station is located in IC Colony Road in North Mumbai.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mandapeshwar_Caves.jpg/1280px-Mandapeshwar_Caves.jpg",
-        "alt": "Mandapeshwar metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ruins_at_Mandapeshwar_above_the_caves_10.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ruins_at_Mandapeshwar_above_the_caves_03.jpg/1280px-Ruins_at_Mandapeshwar_above_the_caves_03.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/40/Officers_Club%2C_Palakkad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Eksar metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Eksar is an elevated metro station on the North-South corridor of the Yellow Line 2A of Mumbai Metro in Mumbai, India. This station is located in Borivali, Mumbai.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/An_under-construction_Pahadi_Eksar_metro_station_in_Borivali%2C_as_of_February_2022.jpg/1280px-An_under-construction_Pahadi_Eksar_metro_station_in_Borivali%2C_as_of_February_2022.jpg",
-        "alt": "Eksar metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Shimpoli_%28Pahadi_Eksar%29_metro_station_Gate_A2.jpg/1280px-Shimpoli_%28Pahadi_Eksar%29_metro_station_Gate_A2.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Eksar_Gaondevi_Lake_03.jpg/1280px-Eksar_Gaondevi_Lake_03.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/6/60/Kollengode%2C_Palakkad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Ovaripada metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Ovaripada is the elevated northern terminal metro station on the North-South corridor of the Red Line 7 of Mumbai Metro. This station is located in an elevated position on Western Express Highway in North Mumbai.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ovaripada_metro_station.jpg/1280px-Ovaripada_metro_station.jpg",
-        "alt": "Ovaripada metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ovari_Pada_metro_station_%28Jan_%2723%29.jpg/1280px-Ovari_Pada_metro_station_%28Jan_%2723%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Natures_glory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/ba/Satyrium_nepalense-Silent_Valley-2016-08-13-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kandarpada metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Kandarpada is an elevated metro station on the North-South corridor of the Yellow Line 2A of the Mumbai Metro in Mumbai, India. This metro station is located on CS Link Road in Dahisar, Mumbai.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kandarpada%2C_Metro_Station_01.jpg/1280px-Kandarpada%2C_Metro_Station_01.jpg",
-        "alt": "Kandarpada metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kandarpada%2C_Metro_Station_03.jpg/1280px-Kandarpada%2C_Metro_Station_03.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Kandarpada%2C_Metro_Station_02.jpg/1280px-Kandarpada%2C_Metro_Station_02.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aularches_miliaris-Silent_Valley-2016-08-13-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Rashtriya Udyan metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Rashtriya Udyan is an elevated metro station on the north–south corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Rashtriya_Udyan_metro_station_%28Jan_%2723%29.jpg/1280px-Rashtriya_Udyan_metro_station_%28Jan_%2723%29.jpg",
-        "alt": "Rashtriya Udyan metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Dhudhwa_Rashtriya_Udyan.jpg/1280px-Dhudhwa_Rashtriya_Udyan.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/75/Orthetrum_glaucum-Silent_Valley-2016-08-14-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/83/Nenmara%2C_Kerala%2C_India_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -380,43 +289,6 @@
           "time": "Evening",
           "activity": "Dahisar",
           "note": "Dahisar (Marathi pronunciation: [d̪əɦisəɾ]) is the northernmost suburb (and railway station) of Mumbai, India. (Not to be confused with Dahisar Mori in Navi Mumbai)."
-        }
-      ]
-    },
-    {
-      "day": 2,
-      "title": "Day 2 — Mandapeshwar metro station & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Mandapeshwar metro station",
-          "note": "Mandapeshwar (IC Colony) is an elevated metro station on the North-South corridor of the Yellow Line 2A of Mumbai Metro in Mumbai, India. This metro station is located in IC Colony Road in North Mumbai."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Eksar metro station",
-          "note": "Eksar is an elevated metro station on the North-South corridor of the Yellow Line 2A of Mumbai Metro in Mumbai, India. This station is located in Borivali, Mumbai."
-        },
-        {
-          "time": "Evening",
-          "activity": "Ovaripada metro station",
-          "note": "Ovaripada is the elevated northern terminal metro station on the North-South corridor of the Red Line 7 of Mumbai Metro. This station is located in an elevated position on Western Express Highway in North Mumbai."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Kandarpada metro station & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Kandarpada metro station",
-          "note": "Kandarpada is an elevated metro station on the North-South corridor of the Yellow Line 2A of the Mumbai Metro in Mumbai, India. This metro station is located on CS Link Road in Dahisar, Mumbai."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Rashtriya Udyan metro station",
-          "note": "Rashtriya Udyan is an elevated metro station on the north–south corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi."
         }
       ]
     }
@@ -563,7 +435,7 @@
     },
     {
       "q": "What are the top places to visit in Our Lady of Immaculate Conception Church, Mt. Poinsur?",
-      "a": "The top attractions are Mandapeshwar Caves, I.C. Colony, Dahisar, Mandapeshwar metro station, Eksar metro station."
+      "a": "The top attractions are Mandapeshwar Caves, I.C. Colony, Dahisar."
     }
   ],
   "seo": {

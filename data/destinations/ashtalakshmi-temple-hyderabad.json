@@ -204,7 +204,11 @@
       "name": "Kacheguda (Hyderabad)",
       "distance": 6
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Chaitanyapuri metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -284,25 +288,6 @@
       ]
     },
     {
-      "name": "Chaitanyapuri metro station",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "The Chaitanyapuri Metro Station is located on the Red Line of the Hyderabad Metro, in India. It is near to Omni Super Speciality Hospital, Fruit market, GBR Hospital, Viajy Textiles, APSRTC Bus stop, Annie Beasant college, Saroor Nagar Arch and PVT Market.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Chaitanyapuri_metro_gate_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Chaitanyapuri metro station in Telangana, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gates_of_Chaitanyapuri_metro_station_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://pixabay.com/get/gc1dd6c0408bcaed920d6819a47e196a066d44e13789bdeb203487145eb1d22d5d25ce08b0c89a228df0a519467257487bd4e81e2652f9ccfa2cd04e3f5405203_1280.jpg",
-        "https://pixabay.com/get/gb716d71aec790e8bf89597b8e256c4f782a233f00de80c6bdce0da3817edfdf82ba8768e7d1b86531e6238464bce9c175c78a10723761520c19f68f0143e8806_1280.jpg"
-      ]
-    },
-    {
       "name": "Uppal Kalan",
       "category": "scenic",
       "distance": "2 km",
@@ -339,25 +324,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/1d/Saroornagar_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/32/Saroornagar_Mosque.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "LB Nagar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "LB Nagar (also known as Vasavi LB Nagar) is a metro station located on the Red Line of the Hyderabad Metro. It is part of Corridor I of Hyderabad metro starting from Miyapur and was opened to public on 24 September 2018.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Lbnagarmetro.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "LB Nagar metro station in Telangana, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/LB_Nagar_Metro_station.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Ashtalakshmi_temple_Uttara_dvara_02.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0a/Ashtalakshmi_temple_Uttara_dvara_01.jpg"
-      ]
     }
   ],
   "itinerary": [
@@ -392,11 +358,6 @@
           "note": "Kothapet is a major commercial and residential suburb of Hyderabad, in Telangana state of India located around a strip of NH65. It belongs to Maheshwaram constituency of Ranga Reddy district."
         },
         {
-          "time": "Afternoon",
-          "activity": "Chaitanyapuri metro station",
-          "note": "The Chaitanyapuri Metro Station is located on the Red Line of the Hyderabad Metro, in India. It is near to Omni Super Speciality Hospital, Fruit market, GBR Hospital, Viajy Textiles, APSRTC Bus stop, Annie Beasant college, Saroor Nagar Arch and PVT Market."
-        },
-        {
           "time": "Evening",
           "activity": "Uppal Kalan",
           "note": "Uppal is a neighbourhood in Eastern Hyderabad, Telangana, India. It is the mandal headquarters of Uppal mandal in Keesara revenue division in Medchal-Malkajgiri district."
@@ -411,11 +372,6 @@
           "time": "Morning",
           "activity": "Saroornagar",
           "note": "Saroornagar is a neighbourhood in Hyderabad. It is located in the Rangareddy district of Indian state of Telangana."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "LB Nagar metro station",
-          "note": "LB Nagar (also known as Vasavi LB Nagar) is a metro station located on the Red Line of the Hyderabad Metro. It is part of Corridor I of Hyderabad metro starting from Miyapur and was opened to public on 24 September 2018."
         }
       ]
     }
@@ -560,7 +516,7 @@
     },
     {
       "q": "What are the top places to visit in Ashtalakshmi Temple, Hyderabad?",
-      "a": "The top attractions are Sultan Nagar Fort, Victoria Memorial Home, Saroornagar Indoor Arena, Kothapet, Hyderabad, Chaitanyapuri metro station."
+      "a": "The top attractions are Sultan Nagar Fort, Victoria Memorial Home, Saroornagar Indoor Arena, Kothapet, Hyderabad."
     }
   ],
   "seo": {

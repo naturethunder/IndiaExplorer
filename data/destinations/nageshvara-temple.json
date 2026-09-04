@@ -203,7 +203,11 @@
       "name": "KSR Bengaluru City Junction",
       "distance": 13
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kudlu Gate metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -302,44 +306,6 @@
       ]
     },
     {
-      "name": "Kudlu Gate metro station",
-      "category": "heritage",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Kudlu Gate is an elevated metro station on the North-South corridor of the Yellow Line of Namma Metro in Bengaluru, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Kudlu_Gate_metro_station_%28Sept_%2723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kudlu Gate metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Kudlu_Gate_metro_station_%28Dec_%2723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/60/Kudlu_Gate_metro_station_%28Apr_%2724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/ce/14_Intricate_carvings_at_Modhera_sun_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Singasandra metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Singasandra is an elevated metro station on the north–south corridor of the Yellow Line of Namma Metro in Bengaluru, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Singasandra_metro_station_%28Sept_%2723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Singasandra metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/ce/Singasandra_metro_station_%28Dec_%2723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Singasandra_metro_station_%28Apr_%2724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/78/15_Intricate_carvings_at_Modhera_sun_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Vijaya bank layout",
       "category": "scenic",
       "distance": "2 km",
@@ -394,11 +360,6 @@
           "time": "Afternoon",
           "activity": "Akshay Nagar",
           "note": "Akshay Nagar is a neighbourhood in Begur ward in Southeast Bangalore. It is surrounded by Hulimavu to the west and Begur to the east."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kudlu Gate metro station",
-          "note": "Kudlu Gate is an elevated metro station on the North-South corridor of the Yellow Line of Namma Metro in Bengaluru, India."
         }
       ]
     },
@@ -406,11 +367,6 @@
       "day": 3,
       "title": "Day 3 — Singasandra metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "Singasandra metro station",
-          "note": "Singasandra is an elevated metro station on the north–south corridor of the Yellow Line of Namma Metro in Bengaluru, India."
-        },
         {
           "time": "Afternoon",
           "activity": "Vijaya bank layout",
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Nageshvara Temple?",
-      "a": "The top attractions are Inscription stones of Bengaluru, Begur inscriptions and hero stones, Begur, Bengaluru, Devarachikkanahalli, Akshay Nagar."
+      "a": "The top attractions are Inscription stones of Bengaluru, Begur inscriptions and hero stones, Begur, Bengaluru, Devarachikkanahalli."
     }
   ],
   "seo": {

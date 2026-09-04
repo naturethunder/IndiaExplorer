@@ -203,7 +203,11 @@
       "name": "KSR Bengaluru City Junction",
       "distance": 34
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "KIAL Terminals metro station",
+      "distance": 6
+    }
   },
   "topPlaces": [
     {
@@ -283,25 +287,6 @@
       ]
     },
     {
-      "name": "KIAL Terminals metro station",
-      "category": "scenic",
-      "distance": "6 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "KIAL Terminals is an upcoming underground eastern terminal metro station on the East-West corridor of the Blue Line of Namma Metro in Bangalore, India. This will be an important metro station which will serve the passengers who would be flying to different destinations across the globe.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/004182023_Chandi_Devi_temple_and_historic_Water_tanks%2C_Nirmand_Himachal_Pradesh_090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "KIAL Terminals metro station, Devanahalli Fort"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/18/004182023_Chandi_Devi_temple_and_historic_Water_tanks%2C_Nirmand_Himachal_Pradesh_019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6f/004182023_Chandi_Devi_temple_and_historic_Water_tanks%2C_Nirmand_Himachal_Pradesh_051.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fe/004182023_Chandi_Devi_temple_and_historic_Water_tanks%2C_Nirmand_Himachal_Pradesh_042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Kannamangala",
       "category": "cultural",
       "distance": "6 km",
@@ -338,25 +323,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/ChittorgarhFortWaterReflection.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Doddajala metro station",
-      "category": "scenic",
-      "distance": "10 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Doddajala is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station will consist of the main ITC Limited office followed by the main Navayuga Devanahalli Tollway Pvt Ltd which will lead towards Kempegowda International Airport in the form of Trumpet Interchange and towards Devanahalli, Nandi Hills, Chikkaballapur, Penukonda (Andhra Pradesh) and capital city of Telangana, Hyderabad.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Adil_Shah%27s_Tomb%2C_Inside_Gol_Gumbaz%2C_Bijapur%2C_Karnataka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Doddajala metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Adobe_monuments_in_the_Tabo_Buddhist_monastery_and_temples_complex%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bering_Nag_Temple%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/70/Katarmal_Sun_Temple_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -391,11 +357,6 @@
           "note": "Rayasandra is a village in the Tumkur district of Karnataka, India. It is located in the Dandinashivara hobli, Turuvekere taluk of Tumkur district in Karnataka."
         },
         {
-          "time": "Afternoon",
-          "activity": "KIAL Terminals metro station",
-          "note": "KIAL Terminals is an upcoming underground eastern terminal metro station on the East-West corridor of the Blue Line of Namma Metro in Bangalore, India. This will be an important metro station which will serve the passengers who would be flying to different destinations across the globe."
-        },
-        {
           "time": "Evening",
           "activity": "Kannamangala",
           "note": "Kannamangala is a village located in Bangalore East Tehsil, in the Bangalore Rural district in Karnataka, India. It is situated 6 km away from the sub-district headquarters of Bangalore East."
@@ -410,11 +371,6 @@
           "time": "Morning",
           "activity": "Statue of Prosperity",
           "note": "The Statue of Prosperity is the statue of the founder and architect of the city of Bangalore, termed widely as 'Nadaprabhu' Kempe Gowda (1510 - 1569), constructed at the Kempegowda International Airport, in Devanahalli of Bengaluru. It was inaugurated by the Prime Minister of India Narendra Modi, in the presence of Basavaraj Bommai, the then chief minister of the state, and other delegates on the occasion of Kanakadas Jayanti."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Doddajala metro station",
-          "note": "Doddajala is an upcoming elevated metro station on the North-South corridor of the Blue Line of Namma Metro in Bangalore, India. This metro station will consist of the main ITC Limited office followed by the main Navayuga Devanahalli Tollway Pvt Ltd which will lead towards Kempegowda International Airport in the form of Trumpet Interchange and towards Devanahalli, Nandi Hills, Chikkaballapur, Penukonda (Andhra Pradesh) and capital city of Telangana, Hyderabad."
         }
       ]
     }
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Devanahalli Fort?",
-      "a": "The top attractions are Venugopalaswamy Temple, Devanahalli, Devanahalli, Agalakote (Magadi), Rayasandra, KIAL Terminals metro station."
+      "a": "The top attractions are Venugopalaswamy Temple, Devanahalli, Devanahalli, Agalakote (Magadi), Rayasandra."
     }
   ],
   "seo": {

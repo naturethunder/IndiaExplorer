@@ -205,7 +205,11 @@
       "name": "Mumbai CSMT",
       "distance": 15
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Santacruz metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -266,25 +270,6 @@
       ]
     },
     {
-      "name": "Santacruz metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Santacruz Metro (ICICI Prudential Mutual Fund Santacruz Metro) is an underground metro station on the north–south corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 5 October 2024, by Prime Minister Narendra Modi, followed by the commencement of the metro service from 7 October 2024.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Nilayora_Patha_Ponnani_3z_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Santacruz metro station, Sacred Heart Church, Santacruz"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Nilayora_Patha_Ponnani_3z_31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d3/Nilayora_Patha_Ponnani_4_z_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Nilayora_Patha_Ponnani_4_z_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Pali Hill",
       "category": "nature",
       "distance": "1 km",
@@ -340,25 +325,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nilayora_Patha_Ponnani_4_z_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/47/Nilayora_Patha_Ponnani_4_z_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Bandra Colony metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Bandra Colony is an underground metro station on the North-South corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. It was opened to public on 7 October 2024.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Nilayora_Patha_Ponnani_4_z_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bandra Colony metro station, Sacred Heart Church, Santacruz"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Nilayora_Patha_Ponnani_4_z_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nilayora_Patha_Ponnani_4_z_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c7/Nilayora_Patha_Ponnani_4_z_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -388,11 +354,6 @@
       "title": "Day 2 — Santacruz metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Santacruz metro station",
-          "note": "Santacruz Metro (ICICI Prudential Mutual Fund Santacruz Metro) is an underground metro station on the north–south corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 5 October 2024, by Prime Minister Narendra Modi, followed by the commencement of the metro service from 7 October 2024."
-        },
-        {
           "time": "Afternoon",
           "activity": "Pali Hill",
           "note": "Pali Hill is an affluent residential area spread across the adjoined suburbs of Bandra and Khar in Mumbai, India (sharing postal codes 400050 and 400052 respectively)."
@@ -412,11 +373,6 @@
           "time": "Morning",
           "activity": "Late Bhausaheb Hiray Smaranik Samiti Trust",
           "note": "Late Bhausaheb Hiray Smaranik Samiti Trust (LBHSST) (also known as Hiray College Or Bhausaheb Hiray College) is an Indian college located at Bandra, Mumbai. Its course include Master's degree in Computer Application, Architecture, Applied Arts and Interior Design."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Bandra Colony metro station",
-          "note": "Bandra Colony is an underground metro station on the North-South corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. It was opened to public on 7 October 2024."
         }
       ]
     }
@@ -564,7 +520,7 @@
     },
     {
       "q": "What are the top places to visit in Sacred Heart Church, Santacruz?",
-      "a": "The top attractions are Ghanteshwar Temple Mumbai, Santacruz, Mumbai, Khar, Mumbai, Santacruz metro station, Pali Hill."
+      "a": "The top attractions are Ghanteshwar Temple Mumbai, Santacruz, Mumbai, Khar, Mumbai, Pali Hill."
     }
   ],
   "seo": {

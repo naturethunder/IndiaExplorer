@@ -9,7 +9,7 @@
 import { fetchDestination, fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg } from '../components/destinationCard.js';
-import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd } from '../components/seo.js';
+import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';
 import { mountGoogleMapEmbed } from '../components/googleMapEmbed.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 
@@ -67,15 +67,26 @@ function middleTruncate(value, maxLength) {
   return text.slice(0, headLength).trimEnd() + '…' + text.slice(-tailLength).trimStart();
 }
 
-function destinationMetaTitle(name) {
-  const suffix = ' Travel Guide | ExploreDesh';
-  const destinationName = String(name || 'Destination').trim();
-  return middleTruncate(destinationName, 60 - suffix.length) + suffix;
+function destinationMetaTitle(dest, seoObj) {
+  if (seoObj && seoObj.title && seoObj.title.trim().length > 15) {
+    return seoObj.title.trim();
+  }
+  const destName = String(dest && dest.title ? dest.title : 'Destination').trim();
+  const stateStr = dest && dest.state ? `, ${dest.state}` : '';
+  const suffix = ` Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh`;
+  const candidate = `${destName}${stateStr}${suffix}`;
+  return candidate.length <= 70 ? candidate : `${destName}${suffix}`;
 }
 
-function destinationMetaDescription(dest, source) {
-  const lead = middleTruncate(dest.title || 'Destination', 64) + ' travel guide: ';
-  return lead + truncateMeta(source, 160 - lead.length);
+function destinationMetaDescription(dest, seoObj) {
+  if (seoObj && seoObj.description && seoObj.description.trim().length > 30) {
+    return seoObj.description.trim();
+  }
+  const destName = dest && dest.title ? dest.title : 'Destination';
+  const ov = (dest && dest.overview && dest.overview.short) ? dest.overview.short : (dest && dest.short ? dest.short : '');
+  const body = ov || (dest && dest.description ? dest.description : 'Explore top attractions, hotels, weather, and how to reach.');
+  const lead = `${destName} Travel Guide: `;
+  return truncateMeta(`${lead}${body}`, 160);
 }
 
 function markDestinationNotFound() {
@@ -162,23 +173,32 @@ function main(dest, idx) {
 
   // ─── SEO ───────────────────────────────────────────────
   const canonicalPath = 'destination.html?slug=' + encodeURIComponent(dest.slug || '');
-  const metaTitle = destinationMetaTitle(dest.title);
-  const metaDescription = destinationMetaDescription(
-    dest,
-    seoObj.description || dest.short || dest.description || 'Explore top places to visit, stays, routes and practical travel tips for this destination in India.'
-  );
+  const metaTitle = destinationMetaTitle(dest, seoObj);
+  const metaDescription = destinationMetaDescription(dest, seoObj);
   applySEO({
     title: metaTitle,
     description: metaDescription,
     canonicalPath: canonicalPath,
     keywords: seoObj.keywords,
+    image: heroSrc,
+    type: 'article',
   });
-  injectJsonLd(destinationJsonLd(dest, canonicalPath));
-  injectJsonLd(breadcrumbJsonLd([
+  injectJsonLd(destinationJsonLd(dest, canonicalPath), 'destination');
+  if (Array.isArray(dest.faq) && dest.faq.length > 0) {
+    injectJsonLd(faqPageJsonLd(dest.faq), 'faq');
+  }
+  const breadcrumbItems = [
     { name: 'Home', path: '/' },
     { name: 'Destinations', path: 'destinations.html' },
-    { name: dest.title, path: canonicalPath },
-  ]));
+  ];
+  if (dest.state) {
+    breadcrumbItems.push({
+      name: dest.state,
+      path: 'destinations.html?state=' + encodeURIComponent(dest.state),
+    });
+  }
+  breadcrumbItems.push({ name: dest.title, path: canonicalPath });
+  injectJsonLd(breadcrumbJsonLd(breadcrumbItems), 'breadcrumb');
 
   const mainEl = document.getElementById('main') || document.getElementById('content');
   if (mainEl) mainEl.style.display = 'block';
@@ -602,6 +622,7 @@ function main(dest, idx) {
       altRow +
       (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Airport</span><span class="font-medium text-right text-xs max-w-36">' + esc(reach.nearestAirport.name) + ' (' + (reach.nearestAirport.distance || '—') + ' km)</span></div>' : '') +
       (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Station</span><span class="font-medium text-right text-xs max-w-36">' + esc(reach.nearestRailway.name) + ' (' + (reach.nearestRailway.distance || '—') + ' km)</span></div>' : '') +
+      (reach && reach.nearestMetro && reach.nearestMetro.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Metro</span><span class="font-medium text-right text-xs max-w-36">🚇 ' + esc(reach.nearestMetro.name) + ' (' + (reach.nearestMetro.distance || '—') + ' km)</span></div>' : '') +
       (ov && ov.distanceFromDelhi ? '<div class="flex justify-between text-sm"><span class="text-gray-500">From Delhi</span><span class="font-medium">' + ov.distanceFromDelhi + ' km</span></div>' : (dest.distanceFromDelhi ? '<div class="flex justify-between text-sm"><span class="text-gray-500">From Delhi</span><span class="font-medium">' + dest.distanceFromDelhi + ' km</span></div>' : '')) +
       '</div></div>' +
       '<div class="info-card"><div class="flex items-center justify-between mb-3"><h3 class="font-bold text-gray-900 text-sm uppercase tracking-wider">Stays From</h3>' +
@@ -906,14 +927,18 @@ function main(dest, idx) {
     // Bug 20 fix: replaced ✈️ 🚂 🚗 emojis with inline SVGs in reach panel
     const SVG_PLANE = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2A1 1 0 0 0 1 7.2l2.4 2.4 4.8-.8L3.5 17.8l2.3 2.3 7.5-4.8-.8 4.8 2.4 2.4a1 1 0 0 0 1-.8z"/></svg>';
     const SVG_TRAIN = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M9 3v16M15 3v16M4 11h16M4 7h16"/><path d="m8 20-1 2M17 20l1 2"/></svg>';
+    const SVG_METRO = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16M12 3v8M8 19l-3 3M16 19l3 3M8 15h.01M16 15h.01"/></svg>';
     const SVG_CAR = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
+    const hasMetro = !!(reach && reach.nearestMetro && reach.nearestMetro.name);
     document.getElementById('panel-reach').innerHTML =
       '<h2 class="text-xl font-bold text-gray-900 mb-2">How to Reach ' + esc(dest.title) + '</h2>' +
-      '<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">' +
+      '<div class="grid grid-cols-1 sm:grid-cols-2 ' + (hasMetro ? 'lg:grid-cols-4' : 'lg:grid-cols-3') + ' gap-4 mb-8">' +
       (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_PLANE + '</div><h3 class="font-bold text-sm mb-1">Nearest Airport</h3>' +
         '<p class="text-gray-600 text-sm">' + esc(reach.nearestAirport.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestAirport.distance || '—') + ' km away</p></div>' : '') +
       (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_TRAIN + '</div><h3 class="font-bold text-sm mb-1">Nearest Railway</h3>' +
         '<p class="text-gray-600 text-sm">' + esc(reach.nearestRailway.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestRailway.distance || '—') + ' km away</p></div>' : '') +
+      (hasMetro ? '<div class="info-card text-center"><div class="info-card-icon mx-auto text-primary">' + SVG_METRO + '</div><h3 class="font-bold text-sm mb-1">Nearest Metro</h3>' +
+        '<p class="text-gray-600 text-sm">' + esc(reach.nearestMetro.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestMetro.distance || '—') + ' km away</p></div>' : '') +
       '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_CAR + '</div><h3 class="font-bold text-sm mb-1">From Delhi</h3>' +
       '<p class="text-gray-600 text-sm">' + (delhiRoute.distance ? delhiRoute.distance + ' km' : (ov && ov.distanceFromDelhi ? ov.distanceFromDelhi + ' km' : (dest.distanceFromDelhi ? dest.distanceFromDelhi + ' km' : 'N/A'))) + '</p><p class="text-primary font-semibold text-sm mt-1">' + esc(delhiCar) + '</p></div>' +
       '</div>' +
@@ -1335,8 +1360,9 @@ function main(dest, idx) {
     }
     if (Array.isArray(p.photos)) {
       for (const u of p.photos) {
-        if (u && typeof u === 'string' && !u.includes('picsum.photos') && !list.includes(u)) {
-          list.push(u);
+        const photoUrl = (typeof u === 'string') ? u : (u && u.src ? u.src : '');
+        if (photoUrl && !photoUrl.includes('picsum.photos') && !list.includes(photoUrl)) {
+          list.push(photoUrl);
         }
       }
     }

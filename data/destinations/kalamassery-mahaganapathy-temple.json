@@ -203,28 +203,13 @@
       "name": "Ernakulam Junction (Kochi)",
       "distance": 11
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kalamassery metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "Kalamassery metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Kalamassery is a station of Kochi Metro. The station is located between Muttom and Cochin University, in the municipality of Kalamassery.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/18/Administrative_Block_%2C_Cusat.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kalamassery metro station in Kerala, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/Kalamassery_Municipal_office.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/40/Adimoolaperumal.j.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/72/Perumal_vimanam.S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "St. Thomas Church, Kalamassery",
       "category": "spiritual",
@@ -280,25 +265,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Eraniel_amman_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/0f/Putlur_Valluvar_idol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/15/Putlur_Temple_Entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Muttom metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Muttom is a station of Kochi Metro. The station is located between Ambattukavu and Kalamassery.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Muttom_metro_station_from_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Muttom metro station in Kerala, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Muttom_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/Kochi_metro_muttom_station_inside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/58/ChoLeeswarar_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -365,11 +331,6 @@
       "title": "Day 1 — Kalamassery metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Kalamassery metro station",
-          "note": "Kalamassery is a station of Kochi Metro. The station is located between Muttom and Cochin University, in the municipality of Kalamassery."
-        },
-        {
           "time": "Afternoon",
           "activity": "St. Thomas Church, Kalamassery",
           "note": "St. Thomas Marthoma Church Kalamassery, is a prominent Christian parish of the Kottayam – Kochi diocese under the Malankara Mar Thoma Syrian Church of Malabar."
@@ -389,11 +350,6 @@
           "time": "Morning",
           "activity": "Kalamassery",
           "note": "Kalamassery ([kɐɭɐmɐʃːeːɾi]) is a major industrial region in the city of Kochi in the state of Kerala, India. It is located around 9 km (5.6 mi) northeast of the city centre."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Muttom metro station",
-          "note": "Muttom is a station of Kochi Metro. The station is located between Ambattukavu and Kalamassery."
         },
         {
           "time": "Evening",
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Kalamassery Mahaganapathy Temple?",
-      "a": "The top attractions are Kalamassery metro station, St. Thomas Church, Kalamassery, Rajagiri, Kalamassery, Muttom metro station."
+      "a": "The top attractions are St. Thomas Church, Kalamassery, Rajagiri, Kalamassery, St. Joseph's of the Woods EMHS."
     }
   ],
   "seo": {

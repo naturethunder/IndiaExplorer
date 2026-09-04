@@ -205,7 +205,11 @@
       "name": "Howrah Junction (Kolkata)",
       "distance": 13
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Eco Park metro station (Kolkata)",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -282,25 +286,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bell_eco_park.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/68/Butterfly_eco_park.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/4b/Airport_metro_station.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Eco Park metro station (Kolkata)",
-      "category": "nature",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Eco Park is a metro station of Orange Line of the Kolkata Metro. It is situated beside Eco Park and will serve the Nawabpur area of New Town.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Eco_Park%2C_Rajarhat%2C_Kolkata%2C_India_2013-09-24_08-36.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Eco Park metro station (Kolkata) in West Bengal, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1c/Eco_Park_Butterfly_Lab_DSCN8945.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Gaming_Zone.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/06/12th_century_Dodda_Basappa_temple%2C_Dambal%2C_Karnataka_India_-_93.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -391,11 +376,6 @@
           "time": "Morning",
           "activity": "New Town, Kolkata",
           "note": "New Town (a.k.a. Rajarhat-New Town) is a planned Satellite city of Kolkata in the Indian state of West Bengal."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Eco Park metro station (Kolkata)",
-          "note": "Eco Park is a metro station of Orange Line of the Kolkata Metro. It is situated beside Eco Park and will serve the Nawabpur area of New Town."
         },
         {
           "time": "Evening",
@@ -558,7 +538,7 @@
     },
     {
       "q": "What are the top places to visit in Eco Park?",
-      "a": "The top attractions are Jatragachhi, Vivek Tirtha, Ghuni, New Town, Kolkata, Eco Park metro station (Kolkata)."
+      "a": "The top attractions are Jatragachhi, Vivek Tirtha, Ghuni, New Town, Kolkata."
     }
   ],
   "seo": {

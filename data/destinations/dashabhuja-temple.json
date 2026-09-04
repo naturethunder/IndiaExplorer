@@ -205,7 +205,11 @@
       "name": "Pune Junction",
       "distance": 6
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Paud Phata metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -225,25 +229,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/1e/0101821_Trivikrama_Temple%2C_Pipriyapeth%2C_Ramtek_Maharashtra_007.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/56/0101821_Trivikrama_Temple%2C_Pipriyapeth%2C_Ramtek_Maharashtra_040.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/68/0101821_Trivikrama_Temple%2C_Pipriyapeth%2C_Ramtek_Maharashtra_093.jpg"
-      ]
-    },
-    {
-      "name": "Paud Phata metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Paud Phata (until Dec. 2025 Ideal Colony) is an elevated metro station on the East-West corridor of the Aqua Line of Pune Metro in Pune, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/0101721_Karpur_Baoli%2C_Ancient_Vapi%2C_Ramtek_Maharashtra_076.jpg",
-        "alt": "Paud Phata metro station in Maharashtra - The Karpur Baoli, also referred to as the Karpuravapi complex, is a water tank"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/dc/0101721_Karpur_Baoli%2C_Ancient_Vapi%2C_Ramtek_Maharashtra_126.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/47/0101721_Rangavalli_Rangoli_at_an_ancient_Ramtek_Hindu_tirtha_site_ruins%2C_Maharashtra.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ruins_and_Remains_of_Pravarapura%2C_Mansar_13.jpg"
       ]
     },
     {
@@ -304,25 +289,6 @@
       ]
     },
     {
-      "name": "Anand Nagar metro station (Pune)",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Anand Nagar is an elevated metro station on the East-West corridor of the Aqua Line of Pune Metro in Pune, India. The station was opened on 6 March 2022 as an inauguration of Pune Metro and was the first to be completed.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sculptures_on_outer_wall_of_Kaliash_Temple%2C_Ellora_Caves%2C_Aurangabad_district%2C_Maharashtra%2C_India_14.jpg",
-        "alt": "Anand Nagar metro station (Pune) in Maharashtra - Sculptures on outer wall of Kaliash Temple, Ellora Caves, Aurangabad d"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sculptures_on_outer_wall_of_Kaliash_Temple%2C_Ellora_Caves%2C_Aurangabad_district%2C_Maharashtra%2C_India_16.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Sculptures_on_outer_wall_of_Kaliash_Temple%2C_Ellora_Caves%2C_Aurangabad_district%2C_Maharashtra%2C_India_20.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sculptures_on_outer_wall_of_Kaliash_Temple%2C_Ellora_Caves%2C_Aurangabad_district%2C_Maharashtra%2C_India_23.jpg"
-      ]
-    },
-    {
       "name": "Ovale",
       "category": "cultural",
       "distance": "1 km",
@@ -372,11 +338,6 @@
           "note": "Abhinava Vidyalaya English Medium School, or Abhinava, is a private, co-educational day school located in Erandwane in Pune, India. The institution is a part of the Adarsh Shikshan Mandali."
         },
         {
-          "time": "Afternoon",
-          "activity": "Paud Phata metro station",
-          "note": "Paud Phata (until Dec. 2025 Ideal Colony) is an elevated metro station on the East-West corridor of the Aqua Line of Pune Metro in Pune, India."
-        },
-        {
           "time": "Evening",
           "activity": "Bhaskaracharya Pratishthana",
           "note": "Bhaskaracharya Pratishthana is a research and education institute for mathematics in Pune, India, founded by noted Indian-American mathematician professor Shreeram Abhyankar. The institute is named after the great ancient Indian Mathematician Bhaskaracharya (Born in 1114 A.D)."
@@ -396,11 +357,6 @@
           "time": "Afternoon",
           "activity": "Bhadawali",
           "note": "Bhadawali is a village in Mawal taluka of Pune district in the state of Maharashtra, India. It encompasses an area of 211.85 ha (523 acres)."
-        },
-        {
-          "time": "Evening",
-          "activity": "Anand Nagar metro station (Pune)",
-          "note": "Anand Nagar is an elevated metro station on the East-West corridor of the Aqua Line of Pune Metro in Pune, India. The station was opened on 6 March 2022 as an inauguration of Pune Metro and was the first to be completed."
         }
       ]
     },
@@ -559,7 +515,7 @@
     },
     {
       "q": "What are the top places to visit in Dashabhuja Temple?",
-      "a": "The top attractions are Abhinava Vidyalaya, Pune, Paud Phata metro station, Bhaskaracharya Pratishthana, Sadashiv Peth, Pune, Bhadawali."
+      "a": "The top attractions are Abhinava Vidyalaya, Pune, Bhaskaracharya Pratishthana, Sadashiv Peth, Pune, Bhadawali."
     }
   ],
   "seo": {

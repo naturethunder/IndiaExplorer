@@ -205,7 +205,11 @@
       "name": "Mumbai CSMT",
       "distance": 20
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Jagruti Nagar metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -285,63 +289,6 @@
       ]
     },
     {
-      "name": "Jagruti Nagar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Jagruti Nagar is an elevated metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro in Mumbai, India. It was opened to the public on 8 June 2014.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jagruti_Nagar_metro_station.jpg/1280px-Jagruti_Nagar_metro_station.jpg",
-        "alt": "Jagruti Nagar metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Jagruti_Nagar_metro_station_-_Stationboard.jpg/1280px-Jagruti_Nagar_metro_station_-_Stationboard.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Asalfa_station_Birdseye..jpg/1280px-Asalfa_station_Birdseye..jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/%E0%B2%AD%E0%B3%80%E0%B2%AE%E0%B3%87%E0%B2%B6%E0%B3%8D%E0%B2%B5%E0%B2%B0_%E0%B2%A6%E0%B3%87%E0%B2%B5%E0%B2%B8%E0%B3%8D%E0%B2%A5%E0%B2%BE%E0%B2%A8%E0%B2%95%E0%B3%8D%E0%B2%95%E0%B3%86_%E0%B2%B9%E0%B3%8B%E0%B2%97%E0%B3%81%E0%B2%B5_%E0%B2%A6%E0%B2%BE%E0%B2%B0%E0%B2%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Asalpha metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Asalpha is an elevated metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro in Mumbai, India. It was opened to the public on 8 June 2014.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Asalpha_metro_station.jpg/1280px-Asalpha_metro_station.jpg",
-        "alt": "Asalpha metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Asalpha_metro_station_Station_board.jpg/1280px-Asalpha_metro_station_Station_board.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5d/Nilgiri_woodsnake-Xylophis_perroteti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/Plectrurus_perrotetii-_Perrotet%27s_shieldtail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Ghatkopar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Ghatkopar is the elevated eastern terminal metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro serving the Ghatkopar suburb of Mumbai, India. It was opened to the public on 8 June 2014.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Aerial_view_of_Ghatkopar_Metro_Station_and_Ghatkopar_Railway_Station.jpg/1280px-Aerial_view_of_Ghatkopar_Metro_Station_and_Ghatkopar_Railway_Station.jpg",
-        "alt": "Ghatkopar metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Ghatkopar_metro_station_platform.jpg/1280px-Ghatkopar_metro_station_platform.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ghatkopar_metro_Mezzanine.jpg/1280px-Ghatkopar_metro_Mezzanine.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/78/View_of_Western_Ghats-Attappadi-Silent_Valley_hills_from_Mannarkkad_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Jagruti Nagar",
       "category": "scenic",
       "distance": "2 km",
@@ -391,16 +338,6 @@
           "time": "Morning",
           "activity": "2018 UY Aviation King Air C90 crash",
           "note": "On 28 June 2018, at about 1:15 pm, a Beechcraft C90 King Air aircraft chartered from UY Aviation Pvt Ltd with the registration VT-UPZ crashed at Jagruti Nagar in the suburb of Ghatkopar in Mumbai, India. The 12-seater aircraft carried 4 people, including the pilot."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Jagruti Nagar metro station",
-          "note": "Jagruti Nagar is an elevated metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro in Mumbai, India. It was opened to the public on 8 June 2014."
-        },
-        {
-          "time": "Evening",
-          "activity": "Asalpha metro station",
-          "note": "Asalpha is an elevated metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro in Mumbai, India. It was opened to the public on 8 June 2014."
         }
       ]
     },
@@ -408,11 +345,6 @@
       "day": 3,
       "title": "Day 3 — Ghatkopar metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "Ghatkopar metro station",
-          "note": "Ghatkopar is the elevated eastern terminal metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro serving the Ghatkopar suburb of Mumbai, India. It was opened to the public on 8 June 2014."
-        },
         {
           "time": "Afternoon",
           "activity": "Jagruti Nagar",
@@ -561,7 +493,7 @@
     },
     {
       "q": "What are the top places to visit in KidZania Mumbai?",
-      "a": "The top attractions are Amrut Nagar, July 2003 Mumbai bombing, R City Mall, 2018 UY Aviation King Air C90 crash, Jagruti Nagar metro station."
+      "a": "The top attractions are Amrut Nagar, July 2003 Mumbai bombing, R City Mall, 2018 UY Aviation King Air C90 crash."
     }
   ],
   "seo": {

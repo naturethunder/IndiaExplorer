@@ -5,7 +5,7 @@
 import { fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
-import { applySEO } from '../components/seo.js';
+import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { resolveState, MONTH_PICKS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
@@ -15,11 +15,14 @@ const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-re
 initLayout({ active: 'home' });
 
 applySEO({
-  title: 'ExploreDesh — Discover Incredible India',
-  description: "Discover India's most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip.",
+  title: 'ExploreDesh — Discover Incredible India | Travel Guides & Hotels',
+  description: "Discover India's most beautiful destinations. Search hotels by budget, explore top places to visit, and plan your perfect India trip with ExploreDesh.",
   canonicalPath: '/',
-  keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner'],
+  keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner', 'hotels in india'],
+  image: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&w=1280',
 });
+
+injectJsonLd(websiteJsonLd(), 'website');
 // ─── Hero background & cinematic rotator ────────────────────
 (function () {
   const bg = document.getElementById('heroBg');

@@ -205,28 +205,13 @@
       "name": "Ahmedabad Junction",
       "distance": 5
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "AEC metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "AEC metro station",
-      "category": "nature",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "AEC is an elevated metro station on the North-South Corridor of the Red Line of Ahmedabad Metro in Ahmedabad, India. Around this metro station holds the main and upcoming Sabarmati HSR Terminal railway station along with AEC Garden Park and Torrent Power Limited.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tusa_Hiti%2C_Sundari_Chowk_Water_Spout_Patan_Durbar_Square_Patan_Lalitpur_Nepal_Rajesh_Dhungana_%281%29.jpg",
-        "alt": "AEC metro station in Camp Hanuman Temple, Gujarat - Inside the Patan Durbar Square, a historic site in Lalitpur district"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2d/2004-tsunami.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/42/AEC_Matador.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/AEC_MILITANT_MK1_Breakdown_Tender_No.1456_MR_Milly_Tant.jpg"
-      ]
-    },
     {
       "name": "Sardar Vallabhbhai Patel National Memorial",
       "category": "heritage",
@@ -366,11 +351,6 @@
       "day": 1,
       "title": "Day 1 — AEC metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "AEC metro station",
-          "note": "AEC is an elevated metro station on the North-South Corridor of the Red Line of Ahmedabad Metro in Ahmedabad, India. Around this metro station holds the main and upcoming Sabarmati HSR Terminal railway station along with AEC Garden Park and Torrent Power Limited."
-        },
         {
           "time": "Afternoon",
           "activity": "Sardar Vallabhbhai Patel National Memorial",
@@ -559,7 +539,7 @@
     },
     {
       "q": "What are the top places to visit in Camp Hanuman Temple?",
-      "a": "The top attractions are AEC metro station, Sardar Vallabhbhai Patel National Memorial, Shahibaug, Air India Flight 171, Subhash Bridge."
+      "a": "The top attractions are Sardar Vallabhbhai Patel National Memorial, Shahibaug, Air India Flight 171, Subhash Bridge."
     }
   ],
   "seo": {

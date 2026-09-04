@@ -204,7 +204,11 @@
       "name": "Mumbai CSMT",
       "distance": 22
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Versova metro station",
+      "distance": 3
+    }
   },
   "topPlaces": [
     {
@@ -281,25 +285,6 @@
         "https://images.pexels.com/photos/37869983/pexels-photo-37869983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/28242863/pexels-photo-28242863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/27014934/pexels-photo-27014934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Versova metro station",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Versova is the elevated western terminal metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro serving the Seven Bungalows, Yari Road and Versova neighbourhoods of Andheri in Mumbai, India. It opened to the public on 8 June 2014 and consists of two side platforms.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Versova_metro_station_-_Main.jpg/1280px-Versova_metro_station_-_Main.jpg",
-        "alt": "Versova metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Versova_metro_station_feb_2025.jpg/1280px-Versova_metro_station_feb_2025.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Versova_metro_station.jpg/1280px-Versova_metro_station.jpg",
-        "https://images.pexels.com/photos/37678059/pexels-photo-37678059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
@@ -390,11 +375,6 @@
           "time": "Morning",
           "activity": "Seven Bungalows",
           "note": "Saat Bangla also known as Seven Bungalows is a neighbourhood in Versova, Andheri, Mumbai."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Versova metro station",
-          "note": "Versova is the elevated western terminal metro station on the East-West Corridor of the Blue Line 1 of Mumbai Metro serving the Seven Bungalows, Yari Road and Versova neighbourhoods of Andheri in Mumbai, India. It opened to the public on 8 June 2014 and consists of two side platforms."
         },
         {
           "time": "Evening",
@@ -560,7 +540,7 @@
     },
     {
       "q": "What are the top places to visit in Madh Fort?",
-      "a": "The top attractions are Malad Creek, Ambu Island, Aram Nagar, Seven Bungalows, Versova metro station."
+      "a": "The top attractions are Malad Creek, Ambu Island, Aram Nagar, Seven Bungalows."
     }
   ],
   "seo": {

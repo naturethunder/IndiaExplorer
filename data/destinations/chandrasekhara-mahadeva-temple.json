@@ -204,7 +204,11 @@
       "name": "Bhubaneswar Railway Station",
       "distance": 9
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Bhubaneswar Metro",
+      "distance": 5
+    }
   },
   "topPlaces": [
     {
@@ -320,25 +324,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d2/Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7420.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://images.pexels.com/photos/33954619/pexels-photo-33954619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
-    },
-    {
-      "name": "Bhubaneswar Metro",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "The Bhubaneswar Metro is a proposed rapid transit system for the twin cities of Bhubaneswar and Cuttack in Odisha, India. In the first phase, a 30 km (19 mi) metro trunk route will be created from SCB Medical College in Cuttack to the Biju Patnaik International Airport in Bhubaneswar.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1578044145290-8d40db4c0587?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8Qmh1YmFuZXN3YXIlMjBNZXRybyUyMEluZGlhfGVufDB8MHx8fDE3ODcxNTU0NDF8MA&ixlib=rb-4.1.0&q=85",
-        "alt": "Bhubaneswar Metro"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1758939557815-2953e83c46a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8Qmh1YmFuZXN3YXIlMjBNZXRybyUyMEluZGlhfGVufDB8MHx8fDE3ODcxNTU0NDF8MA&ixlib=rb-4.1.0&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/PXL_20250608_105643291_Gundicha_Ghagi_Waterfall_Ghatgaon%2C_Banachakulia%2C_Odisha_758027_11.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/PXL_20250608_105643291_Gundicha_Ghagi_Waterfall_Ghatgaon%2C_Banachakulia%2C_Odisha_758027_12.jpg"
-      ]
     }
   ],
   "itinerary": [
@@ -381,17 +366,6 @@
           "time": "Evening",
           "activity": "Gandarpur",
           "note": "Gandarpur is a village located in the northern part of the district of Khordha in the Indian state of Odisha. In 2011, the population was 3,109 persons in 606 households."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Bhubaneswar Metro",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Bhubaneswar Metro",
-          "note": "The Bhubaneswar Metro is a proposed rapid transit system for the twin cities of Bhubaneswar and Cuttack in Odisha, India. In the first phase, a 30 km (19 mi) metro trunk route will be created from SCB Medical College in Cuttack to the Biju Patnaik International Airport in Bhubaneswar."
         }
       ]
     }
@@ -535,7 +509,7 @@
     },
     {
       "q": "What are the top places to visit in Chandrasekhara Mahadeva Temple?",
-      "a": "The top attractions are Kalikadevi Temple, Jaleswar Siva Temple Precinct, Kalabhairavi Temple, Central Tool Room and Training Centre, Bhubaneswar, Chandrasekharpur."
+      "a": "The top attractions are Kalikadevi Temple, Jaleswar Siva Temple Precinct, Kalabhairavi Temple, Central Tool Room and Training Centre, Bhubaneswar."
     }
   ],
   "seo": {

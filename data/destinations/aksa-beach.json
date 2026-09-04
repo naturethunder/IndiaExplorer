@@ -205,7 +205,11 @@
       "name": "Mumbai CSMT",
       "distance": 27
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Malad West metro station",
+      "distance": 4
+    }
   },
   "topPlaces": [
     {
@@ -340,25 +344,6 @@
         "https://pixabay.com/get/g512e3554556f4daebb231609b0a7c81d9bb5175392b4cabc30481a412e657230d3fbc225bad3cc1af564a2873e20678d86025fa43f7387123bb144be36e951ad_1280.jpg",
         "https://images.pexels.com/photos/16382136/pexels-photo-16382136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
-    },
-    {
-      "name": "Malad West metro station",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Malad West (officially known as Motilal Oswal - Malad West) is an elevated metro station serving the Ekta Nagar neighbourhood of Malad, on the North-South corridor of the Yellow Line 2A of the Mumbai Metro in Mumbai, India. This station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA), and was inaugurated on 19 January 2023.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Malad_%28West%29_metro_station.jpg/1280px-Malad_%28West%29_metro_station.jpg",
-        "alt": "Malad West metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/INRI_Jesus_on_Cross_in_Jankalyan_Nagar%2C_Malad_West_-_panoramio.jpg/1280px-INRI_Jesus_on_Cross_in_Jankalyan_Nagar%2C_Malad_West_-_panoramio.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sunder_Nagar%2C_Malad_West%2C_Mumbai%2C_Maharashtra_400064%2C_India_-_panoramio_%2816%29.jpg/1280px-Sunder_Nagar%2C_Malad_West%2C_Mumbai%2C_Maharashtra_400064%2C_India_-_panoramio_%2816%29.jpg",
-        "https://images.pexels.com/photos/20661493/pexels-photo-20661493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
     }
   ],
   "itinerary": [
@@ -412,11 +397,6 @@
           "time": "Morning",
           "activity": "Bangur Nagar",
           "note": "Bangur Nagar is a residential area in Goregaon West, Mumbai, India. It was developed by the Bangur Group of Kolkata in the mid-1970s."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Malad West metro station",
-          "note": "Malad West (officially known as Motilal Oswal - Malad West) is an elevated metro station serving the Ekta Nagar neighbourhood of Malad, on the North-South corridor of the Yellow Line 2A of the Mumbai Metro in Mumbai, India. This station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA), and was inaugurated on 19 January 2023."
         }
       ]
     }
@@ -559,7 +539,7 @@
     },
     {
       "q": "What are the top places to visit in Aksa Beach?",
-      "a": "The top attractions are Manori Creek, Marve Island, Marvé Beach, Oshiwara River, Manori."
+      "a": "The top attractions are Manori Creek, Marve Island, Marvé Beach, Oshiwara River."
     }
   ],
   "seo": {

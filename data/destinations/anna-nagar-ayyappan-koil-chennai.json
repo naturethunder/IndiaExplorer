@@ -203,7 +203,11 @@
       "name": "Chennai Central",
       "distance": 7
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Anna Nagar Tower metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -264,44 +268,6 @@
       ]
     },
     {
-      "name": "Anna Nagar Tower metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Anna Nagar Tower is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Anna Nagar.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/M_g_r_memorial_house_t_nagar.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Anna Nagar Tower metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Natesan_park_Chennai.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/36/Panagal_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://pixabay.com/get/gd37485ae14dc62dea38d67f7123d944852c506c35f7b749b18a7bfdfac7597c65b3a529e4b8b6222f6677a598a1a1b1908ec724781a1a0504da3eddb9c21a0a7_1280.jpg"
-      ]
-    },
-    {
-      "name": "Anna Nagar East metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Anna Nagar East is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods of Anna Nagar, Villivakkam, and Kilpauk.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Anna_Nagar_Tower_metro_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Anna Nagar East metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/80/Anna_Nagar_East_metro_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4d/Chennai_Underground_metrostation_with_India%27s_first_Platform_Screen_Doors.jpg",
-        "https://pixabay.com/get/gae6d2f8c72bf0502abd0a18a3864b4b497ddee26596e2d88c64726f526c140098b1cd3cf2820ad3e06a17dd135fac01c431723dff958eb37f125dd6d0cea2ec5_1280.jpg"
-      ]
-    },
-    {
       "name": "Otteri Nullah",
       "category": "scenic",
       "distance": "1 km",
@@ -338,25 +304,6 @@
         "https://pixabay.com/get/gfcf25d1a4247b057ef12f16c1a838e5f95bb86f3ca98bc9fce134eaab1f322d288652a4f071bb6e07b025303874abeb8ac5d5f95cfc9c6cf1691e3b4b39f1ffd_1280.jpg",
         "https://images.pexels.com/photos/33797751/pexels-photo-33797751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
-    },
-    {
-      "name": "Thirumangalam metro station",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Thirumangalam is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods where the old village of Thirumangalam once stood and now the area where the Thirumangalam Flyover, a prominent landmark and referred to by residents when giving directions.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/M._Venkaiah_Naidu_lighting_the_lamp_at_the_inaugural_ceremony_of_the_Chennai_Metro_Rail_from_Thirumangalam_to_Nehru_Park%2C_at_Thirumangalam_Metro_Station%2C_Chennai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Thirumangalam metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/M._Venkaiah_Naidu_and_the_Chief_Minister_of_Tamil_Nadu%2C_Shri_Edappadi_K._Palaniswami_jointly_unveiling_the_plaque_to_mark_the_inauguration_of_the_Chennai_Metro_Rail_from_Thirumangalam_to_Nehru_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/M._Venkaiah_Naidu_addressing_the_gathering_at_the_inaugural_ceremony_of_the_Chennai_Metro_Rail_from_Thirumangalam_to_Nehru_Park%2C_at_Thirumangalam_Metro_Station%2C_Chennai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/42/Thirumangalam_metro_station.jpg"
-      ]
     }
   ],
   "itinerary": [
@@ -386,16 +333,6 @@
       "title": "Day 2 — Anna Nagar Tower metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Anna Nagar Tower metro station",
-          "note": "Anna Nagar Tower is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Anna Nagar."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Anna Nagar East metro station",
-          "note": "Anna Nagar East is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods of Anna Nagar, Villivakkam, and Kilpauk."
-        },
-        {
           "time": "Evening",
           "activity": "Otteri Nullah",
           "note": "The Otteri Nullah is an east–west waterway which runs through north Chennai, starting in western Anna Nagar proceeding through Purasawalkam and then passing through Buckingham and Carnatic Mills before meeting the Buckingham Canal at Basin Bridge. The waterway is around 10 km in length with a catchment area of 38.40 square kilometres."
@@ -410,11 +347,6 @@
           "time": "Morning",
           "activity": "Anna Nagar twin arches",
           "note": "The Anna Nagar Twin Arches are ornamental structures in Chennai, India, built in 1986 to honor the platinum jubilee of C. N. Annadurai, Tamil Nadu’s former Chief Minister. They are located at the junction of Poonamallee High Road and Third Avenue."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Thirumangalam metro station",
-          "note": "Thirumangalam is an underground metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods where the old village of Thirumangalam once stood and now the area where the Thirumangalam Flyover, a prominent landmark and referred to by residents when giving directions."
         }
       ]
     }
@@ -557,7 +489,7 @@
     },
     {
       "q": "What are the top places to visit in Anna Nagar Ayyappan Koil, Chennai?",
-      "a": "The top attractions are Anna Nagar Tower Park, Anna Nagar, Periyakudal, Anna Nagar Tower metro station, Anna Nagar East metro station."
+      "a": "The top attractions are Anna Nagar Tower Park, Anna Nagar, Periyakudal, Otteri Nullah."
     }
   ],
   "seo": {

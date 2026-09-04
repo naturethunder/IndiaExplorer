@@ -203,7 +203,11 @@
       "name": "KSR Bengaluru City Junction",
       "distance": 9
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Jnanabharathi metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -226,63 +230,6 @@
       ]
     },
     {
-      "name": "Jnanabharathi metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Jnanabharathi is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the Bangalore University campus along with Dhanvantri Vana park in Bengaluru, India. The Station was inaugurated on 29 August 2021 and was opened to the public on 30 August 2021.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Sri_Raja_Rajeshwari_Temple_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jnanabharathi metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/20735788/pexels-photo-20735788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/12300440/pexels-photo-12300440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Inner_view_of_Sri_Rajarajeshwari_Temple_%2C_Bangalore_._02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Pattanagere metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Pattanagere is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the RV College of Engineering, RV University in Bengaluru, India. To the North lies the Jnanabharathi area and to the South is the suburbs of Kengeri.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Pattanagere_metro_station_%28as_of_May_%2722%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Pattanagere metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/5263198/pexels-photo-5263198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/34527439/pexels-photo-34527439.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sri_Rajarajeshwari_Temple_%2C_Bangalore_._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Rajarajeshwari Nagar metro station",
-      "category": "spiritual",
-      "distance": "1 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Rajarajeshwari Nagar is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the residential locality of Rajarajeshwari Nagar which was named after the Jnanalakshi Rajarajeshwari temple located in Rajarajeshwari Nagar in Bengaluru, India. To the north is the Bangalore University and to the south is the suburb city of Kengeri along with Kengeri Metro Station.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rajarajeshwari_Nagar_metro_station_%282024%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rajarajeshwari Nagar metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/48/Rajarajeshwari_Nagar_metro_station_%282024%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Rajarajeshwari_Nagar_metro_station_%282024%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Sri_Rajarajeshwari_Temple_%2C_Bangalore_._03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Rajarajeshwari Nagar, Bengaluru",
       "category": "scenic",
       "distance": "3 km",
@@ -299,25 +246,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sri_Shivaratnapuri_Temple_of_Health_%282024%29_88.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/ec/BullTemple4.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9d/Church_in_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kengeri Bus Terminal metro station",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Kengeri Bus Terminal is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro in Bengaluru, India. It is one of the most important metro stations since it holds the Kengeri Bus Terminus in the suburban city of Kengeri.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Kengeri_Bus_Terminal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kengeri Bus Terminal metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Kengeri_Bus_Terminal_%28nameboard%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kengeri_Bus_Terminal_metro_station_%282024%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sri_Rajarajeshwari_Temple_%2C_Bangalore_._04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -338,25 +266,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/a/a9/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289966936105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/73/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289967002244%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Mysuru Road metro station",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Mysuru Road is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving Muthachari Industrial Estate, Nayandahalli and Deepanjali Nagar in Bengaluru. It was opened to the public on 16 November 2015.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289967013234%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mysuru Road metro station, Sri Jnanakshi Rajarajeshwari Temple"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289967037416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289967062476%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/13/Dal_Lake%27s_sunset_tour_on_a_shikara_-_Srinagar_%289967176373%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -368,16 +277,6 @@
           "time": "Morning",
           "activity": "Global Village Tech Park",
           "note": "Sattva Global City (formerly Global Village Tech Park) is a software technology park in Bangalore, India. The park is in Kengeri off Mysore Road, behind the R.V. College of Engineering."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Jnanabharathi metro station",
-          "note": "Jnanabharathi is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the Bangalore University campus along with Dhanvantri Vana park in Bengaluru, India. The Station was inaugurated on 29 August 2021 and was opened to the public on 30 August 2021."
-        },
-        {
-          "time": "Evening",
-          "activity": "Pattanagere metro station",
-          "note": "Pattanagere is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the RV College of Engineering, RV University in Bengaluru, India. To the North lies the Jnanabharathi area and to the South is the suburbs of Kengeri."
         }
       ]
     },
@@ -386,19 +285,9 @@
       "title": "Day 2 — Rajarajeshwari Nagar metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Rajarajeshwari Nagar metro station",
-          "note": "Rajarajeshwari Nagar is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving the residential locality of Rajarajeshwari Nagar which was named after the Jnanalakshi Rajarajeshwari temple located in Rajarajeshwari Nagar in Bengaluru, India. To the north is the Bangalore University and to the south is the suburb city of Kengeri along with Kengeri Metro Station."
-        },
-        {
           "time": "Afternoon",
           "activity": "Rajarajeshwari Nagar, Bengaluru",
           "note": "Rajarajeshwari Nagar, commonly referred to as RR Nagar, is a western suburb of Bengaluru, Karnataka, India. It is located in the southwestern part of Bengaluru along the Mysore Road, with Nagarbhavi and the Bangalore University to the north and north-west, Hosakerehalli to the east and Kengeri to the south-west."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kengeri Bus Terminal metro station",
-          "note": "Kengeri Bus Terminal is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro in Bengaluru, India. It is one of the most important metro stations since it holds the Kengeri Bus Terminus in the suburban city of Kengeri."
         }
       ]
     },
@@ -410,11 +299,6 @@
           "time": "Morning",
           "activity": "J.S.S. Academy of Technical Education, Bengaluru",
           "note": "J.S.S. Academy of Technical Education, Bengaluru (JSSATEB), or in its full name Jagadguru Sri Shivarathreeshwara Academy of Technical Education, Bengaluru, is an engineering college in Bangalore, India established in 1997 and managed by JSS Mahavidyapeetha, Mysore."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Mysuru Road metro station",
-          "note": "Mysuru Road is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro serving Muthachari Industrial Estate, Nayandahalli and Deepanjali Nagar in Bengaluru. It was opened to the public on 16 November 2015."
         }
       ]
     }
@@ -558,7 +442,7 @@
     },
     {
       "q": "What are the top places to visit in Sri Jnanakshi Rajarajeshwari Temple?",
-      "a": "The top attractions are Global Village Tech Park, Jnanabharathi metro station, Pattanagere metro station, Rajarajeshwari Nagar metro station, Rajarajeshwari Nagar, Bengaluru."
+      "a": "The top attractions are Global Village Tech Park, Rajarajeshwari Nagar, Bengaluru, J.S.S. Academy of Technical Education, Bengaluru."
     }
   ],
   "seo": {

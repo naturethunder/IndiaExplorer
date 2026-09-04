@@ -203,7 +203,11 @@
       "name": "Chennai Central",
       "distance": 23
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Poonamallee Bypass metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -264,25 +268,6 @@
       ]
     },
     {
-      "name": "Poonamallee Bypass metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Poonamallee Bypass metro station is an upcoming elevated metro station on the Yellow Line of the Chennai Metro. This metro station will be among the 30 stations of corridor IV and 18 elevated stations along corridor IV of the Chennai Metro, Poonamallee Bypass–Lighthouse stretch.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Poonamallee_Bypass_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Poonamallee Bypass metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Porur_Bypass_Metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/15509981/pexels-photo-15509981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/SRI_JAYAVEERA_ANJANEYAR_TEMPLE%2C_NH7%2C_THOPPUR_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Poonamallee",
       "category": "scenic",
       "distance": "4 km",
@@ -299,25 +284,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/09/SRI_JAYAVEERA_ANJANEYAR_TEMPLE%2C_NH7%2C_THOPPUR_-_panoramio_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/41/SRI_JAYAVEERA_ANJANEYAR_TEMPLE%2C_NH7%2C_THOPPUR_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/69/SRI_JAYAVEERA_ANJANEYAR_TEMPLE%2C_NH7%2C_THOPPUR_-_panoramio_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Poonamallee Bus Stand metro station",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Poonamallee Bus Stand Metro is an upcoming elevated metro station on the East-West Corridor of the Yellow Line of Chennai Metro in Chennai, India. This metro station will be among the 18 elevated stations of Corridor IV of the Chennai Metro, from Poonamallee Bypass to Lighthouse stretch.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Poonamallee_bus_stand_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Poonamallee Bus Stand metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/65/Chill_-_Lake.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Fly_-_Lake.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%AE%E0%AF%87%E0%AE%B8%E0%AF%8D%E0%AE%B5%E0%AE%B0%E0%AE%B0%E0%AF%8D_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -386,19 +352,9 @@
       "title": "Day 2 — Poonamallee Bypass metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Poonamallee Bypass metro station",
-          "note": "Poonamallee Bypass metro station is an upcoming elevated metro station on the Yellow Line of the Chennai Metro. This metro station will be among the 30 stations of corridor IV and 18 elevated stations along corridor IV of the Chennai Metro, Poonamallee Bypass–Lighthouse stretch."
-        },
-        {
           "time": "Afternoon",
           "activity": "Poonamallee",
           "note": "Poonamallee is a western suburb of Chennai, India under the Chennai Metropolitan Area. It was historically called Pushpagirimangalam, later renamed in Tamil as Poovirundhavalli (Tamil: [puːʋiɾɯn̪daʋalli]), and now colloquially called as Poondhamalli."
-        },
-        {
-          "time": "Evening",
-          "activity": "Poonamallee Bus Stand metro station",
-          "note": "Poonamallee Bus Stand Metro is an upcoming elevated metro station on the East-West Corridor of the Yellow Line of Chennai Metro in Chennai, India. This metro station will be among the 18 elevated stations of Corridor IV of the Chennai Metro, from Poonamallee Bypass to Lighthouse stretch."
         }
       ]
     },
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Othandeeswarar temple?",
-      "a": "The top attractions are Jagannatha Perumal temple, Thirumazhisai, Kuthambakkam Mofussil Bus Terminus, Poonamallee Bypass metro station, Poonamallee."
+      "a": "The top attractions are Jagannatha Perumal temple, Thirumazhisai, Kuthambakkam Mofussil Bus Terminus, Poonamallee."
     }
   ],
   "seo": {

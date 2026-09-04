@@ -203,7 +203,11 @@
       "name": "Chennai Central",
       "distance": 5
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kutchery Road metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -280,25 +284,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b5/Crossing_Jaher_Than_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/69/Crossing_Jaher_Than_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/09/Crossing_Jaher_Than_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kutchery Road metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Kutchery Road is an upcoming underground metro station on the East-West Corridor of the Yellow Line of Chennai Metro in Chennai, India. This metro station will be among the 30 stations of Corridor IV and 12 underground stations along Corridor IV of the Chennai Metro, Poonamallee Bypass–Lighthouse stretch.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Church_in_India_Chennai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kutchery Road metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e5/San_Thome_Basilica_as_taken_from_a_moving_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Interior_of_San_Thome_Basilica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d5/San_Thome_Church_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -389,11 +374,6 @@
           "time": "Morning",
           "activity": "Foreshore Estate",
           "note": "Foreshore Estate (Tamil: பட்டினப்பாக்கம் Pattinapakkam) is a neighbourhood in Chennai, India. It is situated along the southern stretch of the Marina Beach."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Kutchery Road metro station",
-          "note": "Kutchery Road is an upcoming underground metro station on the East-West Corridor of the Yellow Line of Chennai Metro in Chennai, India. This metro station will be among the 30 stations of Corridor IV and 12 underground stations along Corridor IV of the Chennai Metro, Poonamallee Bypass–Lighthouse stretch."
         },
         {
           "time": "Evening",
@@ -558,7 +538,7 @@
     },
     {
       "q": "What are the top places to visit in San Thome Basilica?",
-      "a": "The top attractions are Archdiocese of Madras and Mylapore, Consulate General of Russia, Chennai, Santhome, Foreshore Estate, Kutchery Road metro station."
+      "a": "The top attractions are Archdiocese of Madras and Mylapore, Consulate General of Russia, Chennai, Santhome, Foreshore Estate."
     }
   ],
   "seo": {

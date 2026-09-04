@@ -205,7 +205,11 @@
       "name": "Kanpur Central",
       "distance": 11
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Gurudev Chauraha metro station",
+      "distance": 7
+    }
   },
   "topPlaces": [
     {
@@ -302,63 +306,6 @@
         "https://images.unsplash.com/photo-1658730557753-caf6bbc4a0bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8U2lrYW5kYXJwdXIlMjBTaWthbmRhcnB1ciUyMFNhcmF1c2klMjBWYW5kZXZpJTIwVGVtcGxlfGVufDB8fHx8MTc4NzIyMDA5N3ww&ixlib=rb-4.1.0&q=85",
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Oriental_Larden_Lizard_%28Calotes_versicolor%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Gurudev Chauraha metro station",
-      "category": "scenic",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Gurudev Chauraha is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Gurudev_Chauraha_metro_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gurudev Chauraha metro station in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Lucknow_Metro.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b4/Green_Keelback_%28Macropisthodon_plumbicolor%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f0/Trimeresurus_andersonii_-_Shreeram_M_V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Geeta Nagar metro station",
-      "category": "scenic",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Geeta Nagar is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Geeta_Nagar_metro_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Geeta Nagar metro station in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Chameleon_charm_on_a_floral_stage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/97/Samsarasuchus_restoration.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Fan-throated_Lizard_display.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Rawatpur metro station",
-      "category": "scenic",
-      "distance": "7 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Rawatpur is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cnemaspis_gracilis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rawatpur metro station, Vandevi Temple"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/28600350/pexels-photo-28600350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/35348249/pexels-photo-35348249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/a/aa/Cnemaspis_sp._%28aff._wynadensis_clade%29_-_Coorg%2C_Karnataka%2C_India_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -396,27 +343,6 @@
           "time": "Afternoon",
           "activity": "Sikandarpur, Sikandarpur Sarausi",
           "note": "Sikandarpur is a village in Sikandarpur Sarausi block of Unnao district, Uttar Pradesh, India. Located 10 km northwest of the city of Unnao, near the Barkota lake, it serves as the block headquarters as well as the seat of a nyaya panchayat."
-        },
-        {
-          "time": "Evening",
-          "activity": "Gurudev Chauraha metro station",
-          "note": "Gurudev Chauraha is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Geeta Nagar metro station & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Geeta Nagar metro station",
-          "note": "Geeta Nagar is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Rawatpur metro station",
-          "note": "Rawatpur is a metro station on the East-West corridor of the Orange Line of Kanpur Metro in Kanpur, India. The station was opened on 28 December 2021 as part of the inaugural section of Kanpur Metro, between IIT Kanpur and Moti Jheel."
         }
       ]
     }
@@ -560,7 +486,7 @@
     },
     {
       "q": "What are the top places to visit in Vandevi Temple?",
-      "a": "The top attractions are Nyotini, Ganges Barrage, Kanpur Zoological Park, Kendriya Vidyalaya IIT Kanpur, Sikandarpur, Sikandarpur Sarausi."
+      "a": "The top attractions are Nyotini, Ganges Barrage, Kanpur Zoological Park, Kendriya Vidyalaya IIT Kanpur."
     }
   ],
   "seo": {

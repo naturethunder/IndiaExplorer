@@ -205,28 +205,13 @@
       "name": "New Delhi Railway Station",
       "distance": 25
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Millennium City Centre Gurugram metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "Millennium City Centre Gurugram metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Millennium City Centre Gurugram, formerly and widely known as HUDA City Centre, is a terminal station on the Yellow Line of Delhi Metro. It is an elevated station and is located in Gurugram, Haryana in the National Capital Region of India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Delhi_underground_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Millennium City Centre Gurugram metro station in Gurugram, Haryana"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d0/HUDA_City_Center_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/69/HUDA_City_Center_station_in_Gurgaon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8f/HUDA_City_Center_station_%28Delhi_Metro%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "Kingdom of Dreams",
       "category": "heritage",
@@ -244,25 +229,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/6/68/Culture_Gully_and_Nautanki_Mahal_auditorium%2C_Kingdom_of_Dreams%2C_Gurgaon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/b7/Her_Kingdom_of_Dreams_%281919%29_ad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/95/Kingdom_of_Dreams%2C_Gurgaon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "IFFCO Chowk metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "The IFFCO Chowk metro station is located on the Yellow Line of the Delhi Metro. The station is located near the headquarters of IFFCO, PowerGrid Corporation of India and RITES Limited.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/IFFCO_Chowk_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "IFFCO Chowk metro station in Gurugram, Haryana"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/37172000/pexels-photo-37172000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Gurgaon_IFFCO_Chowk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Brihadishvara_temple_back_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -367,19 +333,9 @@
       "title": "Day 1 — Millennium City Centre Gurugram metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Millennium City Centre Gurugram metro station",
-          "note": "Millennium City Centre Gurugram, formerly and widely known as HUDA City Centre, is a terminal station on the Yellow Line of Delhi Metro. It is an elevated station and is located in Gurugram, Haryana in the National Capital Region of India."
-        },
-        {
           "time": "Afternoon",
           "activity": "Kingdom of Dreams",
           "note": "Kingdom of Dreams was an entertainment complex located in the Indian city of Gurgaon. Owned by the Great Indian Nautanki Company (GINC), a joint venture between Apra Group and Wizcraft, and opened in 2010, the 6-acre (24,000 m2) facility consisted of two auditoriums, the 864-seat Nautanki Mahal, the 350-seat Showshaa Theatre, and an indoor cultural \"boulevard\" featuring dining, crafts, and entertainment."
-        },
-        {
-          "time": "Evening",
-          "activity": "IFFCO Chowk metro station",
-          "note": "The IFFCO Chowk metro station is located on the Yellow Line of the Delhi Metro. The station is located near the headquarters of IFFCO, PowerGrid Corporation of India and RITES Limited."
         }
       ]
     },
@@ -560,7 +516,7 @@
     },
     {
       "q": "What are the top places to visit in Appu Ghar?",
-      "a": "The top attractions are Millennium City Centre Gurugram metro station, Kingdom of Dreams, IFFCO Chowk metro station, Museo Camera, Kanhai."
+      "a": "The top attractions are Kingdom of Dreams, Museo Camera, Kanhai, Church of Immaculate Conception."
     }
   ],
   "seo": {

@@ -205,7 +205,11 @@
       "name": "Kacheguda (Hyderabad)",
       "distance": 3
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Musarambagh metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -225,25 +229,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3b/Raymonds....._total_pic._clear.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Raymonds_Tomb_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://pixabay.com/get/g0842bf243461ece995ce5f84c097e613299991936218aecd195cd3543f0127c0e9bde513766374d3b16d4c1c35167a95ff8fabdd7aaed9e11b54f64164aa820b_1280.jpg"
-      ]
-    },
-    {
-      "name": "Musarambagh metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Musarambagh Metro Station is on the Red Line of the Hyderabad Metro, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Aerial_view_of_Hyderabad_Race_Club.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Musarambagh metro station in Telangana, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2c/TV_tower.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://pixabay.com/get/g0bab9e07ece7493c31c8e429612d2cdc60e4291f86372802c3508cba6822d6f9c2260cbb9ea4d3b49ed6ba5d54d0b9792b20d93158f8500e5d10feca4ce69624_1280.jpg",
-        "https://pixabay.com/get/g745359f263ffcc2f104ec81c8d656c1a54394c3fbd275815920347dab90dcf27e8a642adc3d4766dd9a8c58a57ea0021f0b68682c12ba735b7edadc3ab11cbbc_1280.jpg"
       ]
     },
     {
@@ -304,25 +289,6 @@
       ]
     },
     {
-      "name": "Dilsukhnagar metro station",
-      "category": "spiritual",
-      "distance": "1 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "The Dilsukhnagar Metro Station is located on the Red Line of the Hyderabad Metro in India. It is near to Mega Theatre, Imint Financial Sol (Stock Market training institute), Sai Baba Temple, Konark Theatre, Dilsukh Nagar Bus Depot, Rajdhani Theatre and Pragathi Degree College.",
-      "image": {
-        "src": "https://pixabay.com/get/g3a085797d39544ecf3e09ab695c3912bf490949bbacd6d23e870288eb264ed92dcd00e283419283711d7592ff05264a9988e1aaaa48876002b3203cbf9f22389_1280.jpg",
-        "alt": "Dilsukhnagar metro station in Asman Garh Palace, Telangana - metro, subway, metro station, people, transport, interior,"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/11578105/pexels-photo-11578105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/462533/pexels-photo-462533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://pixabay.com/get/g185b195755cf1d5cf920331f2b0fb12cda570c901956005f2e17bf4435c8797c73338c8700a69f724b6b0ea8ea52b6eb4d8083c5c70d5c73549d2f89c982c3ae_1280.jpg"
-      ]
-    },
-    {
       "name": "Sai Baba Temple, Dilsukhnagar",
       "category": "spiritual",
       "distance": "1 km",
@@ -372,11 +338,6 @@
           "note": "Raymond's tomb is the tomb of Michel Joachim Marie Raymond, a French general in the army of the 2nd Nizam of Hyderabad State, Nizam Ali Khan, Asaf Jah II. The tomb, located today in Hyderabad, India is a black granite tombstone, conical, about 7 metres high and it has the initials JR on it. The pavilion was built by the Nizam and collapsed in October 2001 in heavy rain."
         },
         {
-          "time": "Afternoon",
-          "activity": "Musarambagh metro station",
-          "note": "The Musarambagh Metro Station is on the Red Line of the Hyderabad Metro, India."
-        },
-        {
           "time": "Evening",
           "activity": "Moosarambagh",
           "note": "Moosrambagh also Moosa Ram Bagh is an old suburb of Hyderabad, Telangana, India. It is named after the French military commander Monsieur Raymond who served the Nizams of the Hyderabad state during the 18th century."
@@ -396,11 +357,6 @@
           "time": "Afternoon",
           "activity": "Dilsukhnagar",
           "note": "Dilsukhnagar is a commercial and residential neighborhood in Hyderabad, Telangana. One of the largest areas of the city, it is governed by the Greater Hyderabad Municipal Corporation."
-        },
-        {
-          "time": "Evening",
-          "activity": "Dilsukhnagar metro station",
-          "note": "The Dilsukhnagar Metro Station is located on the Red Line of the Hyderabad Metro in India. It is near to Mega Theatre, Imint Financial Sol (Stock Market training institute), Sai Baba Temple, Konark Theatre, Dilsukh Nagar Bus Depot, Rajdhani Theatre and Pragathi Degree College."
         }
       ]
     },
@@ -559,7 +515,7 @@
     },
     {
       "q": "What are the top places to visit in Asman Garh Palace?",
-      "a": "The top attractions are Raymond's Tomb, Musarambagh metro station, Moosarambagh, Gaddiannaram, Dilsukhnagar."
+      "a": "The top attractions are Raymond's Tomb, Moosarambagh, Gaddiannaram, Dilsukhnagar."
     }
   ],
   "seo": {

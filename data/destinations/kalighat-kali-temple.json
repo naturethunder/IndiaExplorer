@@ -205,7 +205,11 @@
       "name": "Howrah Junction (Kolkata)",
       "distance": 7
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kalighat metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -302,44 +306,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e3/Basusree_Cinema%2C_Kolkata.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c5/Vadakkunnathan_Temple%2C_Thrissur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Kalighat metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Kalighat is an underground metro station on the North-South corridor of the Blue Line of Kolkata Metro at Rashbehari Avenue in Kalighat, Kolkata, West Bengal, India.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Shrine%2C_Kalighat_Metro_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kalighat metro station in West Bengal, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Lady_Cobbler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Tiger_wrestling_bout_of_Soham_Swami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bakthapriyam_sreekrishna_temple_near_vadakkechira_Thrissur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Jatin Das Park metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Jatin Das Park is an underground metro station on the North-South corridor of the Blue Line of Kolkata Metro at Hazra, Kalighat, Kolkata, West Bengal, India. It is named after Indian independence activist and revolutionary Jatindra Nath Das.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jatin_Das_Park_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jatin Das Park metro station in West Bengal, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/07/JATINDASPARKCAL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/90/Jatin_Das_park_metro_station_during_Hemanta_Mukhopadhyay_metro_station_to_Netaji_Bhavan_metro_journey_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/View_Of_Muthuthala_Temple_%2813th_January_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -377,22 +343,6 @@
           "time": "Afternoon",
           "activity": "Basusree Cinema, Kolkata",
           "note": "Basusree Cinema is a single screen cinema hall located on Shyama Prasad Mukherjee Road, near Jatin Das Park metro station in Kolkata, West Bengal, India. The cinema hall was inaugurated on 19 December 1947 by Satyabhushan Basu and is regarded as one of the city’s heritage theatres."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kalighat metro station",
-          "note": "Kalighat is an underground metro station on the North-South corridor of the Blue Line of Kolkata Metro at Rashbehari Avenue in Kalighat, Kolkata, West Bengal, India."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Jatin Das Park metro station",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Jatin Das Park metro station",
-          "note": "Jatin Das Park is an underground metro station on the North-South corridor of the Blue Line of Kolkata Metro at Hazra, Kalighat, Kolkata, West Bengal, India. It is named after Indian independence activist and revolutionary Jatindra Nath Das."
         }
       ]
     }
@@ -536,7 +486,7 @@
     },
     {
       "q": "What are the top places to visit in Kalighat Kali Temple?",
-      "a": "The top attractions are Pathrakaliamman Temple, Kalighat Home for the Dying, Kalighat, Chetla, Basusree Cinema, Kolkata."
+      "a": "The top attractions are Pathrakaliamman Temple, Kalighat Home for the Dying, Kalighat, Chetla."
     }
   ],
   "seo": {

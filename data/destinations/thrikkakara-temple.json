@@ -203,7 +203,11 @@
       "name": "Ernakulam Junction (Kochi)",
       "distance": 9
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Pathadipalam metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -338,25 +342,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b5/Siddhachal_Caves_-_arch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/76/Siddhachal_Caves_-_Tirthankar_statues_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Pathadipalam metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Pathadipalam is a station of Kochi Metro.The station is located between Cochin University and Edapally. It was inaugurated by the Prime Minister of India Narendra Modi on 17 June and opened for public on 19 June 2017 as a part of the first stretch of the metro system, between Aluva and Palarivattom.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Shatrunjaya_tirth_pat_at_Dadawadi_Jain_temple_in_Mehsana%2C_Gujarat%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Pathadipalam metro station, Thrikkakara Temple"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/62/Shatrunjaya_tirth_pat_at_Dadawadi_Jain_temple_in_Mehsana%2C_Gujarat%2C_India_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Shatrunjaya_tirth_pat_at_Dadawadi_Jain_temple_in_Mehsana%2C_Gujarat%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Siddhachal_-_Rishabhanatha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -410,11 +395,6 @@
           "time": "Morning",
           "activity": "Bhavan's Varuna Vidyalaya",
           "note": "Bhavan's Varuna Vidyalaya is a senior secondary school situated at Thrikkakara, in the city of Kochi, India. The school is a joint venture of the Bharatiya Vidya Bhavan and Naval Physical and Oceanographic Laboratory (NPOL)."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Pathadipalam metro station",
-          "note": "Pathadipalam is a station of Kochi Metro.The station is located between Cochin University and Edapally. It was inaugurated by the Prime Minister of India Narendra Modi on 17 June and opened for public on 19 June 2017 as a part of the first stretch of the metro system, between Aluva and Palarivattom."
         }
       ]
     }
@@ -557,7 +537,7 @@
     },
     {
       "q": "What are the top places to visit in Thrikkakara Temple?",
-      "a": "The top attractions are Thrikkakkara, Thrikkakara North, Naval Physical and Oceanographic Laboratory, Changampuzha Nagar, St. Joseph's of the Woods EMHS."
+      "a": "The top attractions are Thrikkakkara, Thrikkakara North, Naval Physical and Oceanographic Laboratory, Changampuzha Nagar."
     }
   ],
   "seo": {

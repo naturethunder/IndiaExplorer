@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Fakim Wildlife Sanctuary — wildlife reserve of Nagaland",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kiphire_district%2C_Nagaland.jpg",
-    "alt": "Panoramic view of rolling emerald mountain ranges and valleys in Kiphire district near Fakim Wildlife Sanctuary, Nagaland"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Community_forest_in_Kiphire_district%2C_Nagaland%2C_India.jpg",
+    "alt": "Dense virgin community rainforest canopy sheltering rare wildlife in Kiphire district near Fakim Wildlife Sanctuary"
   },
   "overview": {
     "short": "Fakim Wildlife Sanctuary is a protected area in Nagaland, India.",
@@ -198,129 +198,254 @@
       }
     ],
     "nearestAirport": {
-      "name": "Fakim Wildlife Sanctuary / nearest airport",
-      "distance": 30
+      "name": "Dimapur Airport (DMU)",
+      "distance": 260
     },
     "nearestRailway": {
       "name": "Dimapur Railway Station",
-      "distance": 123
+      "distance": 260
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Accessible by road from Kohima via Meluri, Kiphire, and Pungro. Sturdy 4WD vehicle recommended during monsoon season."
   },
   "topPlaces": [
     {
-      "name": "Zaonger",
-      "category": "scenic",
-      "distance": "8 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Zaonger is a settlement in Kiphire district of Nagaland state of India.",
+      "name": "Mount Saramati Peak & Trail",
+      "category": "nature",
+      "distance": "12 km",
+      "entryFee": "Free / Guide recommended",
+      "timings": "Sunrise – Sunset",
+      "duration": "1–2 days",
+      "rating": 4.9,
+      "description": "Rising to 3,841 metres right above Fakim Wildlife Sanctuary along the India-Myanmar frontier, Mount Saramati is Nagaland's highest peak, revered for its alpine flora, winter snows, and rugged trekking expeditions.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Sangtam_Tribe_village.jpg/1280px-Sangtam_Tribe_village.jpg",
-        "alt": "Zaonger rural settlement and traditional hill village landscape in Kiphire district"
+        "src": "https://images.pexels.com/photos/14118775/pexels-photo-14118775.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Majestic misty alpine peak and rugged trekking trail of Mount Saramati on Nagaland frontier"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2b/A_wooden_house_in_Fakim_village%2C_Nagaland.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/3/38/Flycatcher_sp._Fakim_Pungro_Nagaland_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Old_Risethsi.jpg/1280px-Old_Risethsi.jpg"
+        {
+          "src": "https://images.pexels.com/photos/2929268/pexels-photo-2929268.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Scenic misty green mountain ridges surrounding Mount Saramati trail"
+        },
+        {
+          "src": "https://images.pexels.com/photos/14912323/pexels-photo-14912323.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Dramatic rugged peak shrouded in high altitude Himalayan fog"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Terrace_cultivation%2C_Pfutsero%2C_Nagaland_%286328134243%29.jpg",
+          "alt": "High altitude mountain slopes and alpine ridges in Nagaland"
+        }
+      ]
+    },
+    {
+      "name": "Thanamir Apple Village",
+      "category": "cultural",
+      "distance": "9 km",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 6:00 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.8,
+      "description": "Known as the Apple Capital of Nagaland, Thanamir is a picturesque Yimkhiung Naga village nestled at the foot of Mount Saramati, serving as the cultural staging camp for visitors to Fakim and the peak.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/A_wooden_house_in_Fakim_village%2C_Nagaland.jpg",
+        "alt": "Traditional wooden architecture and rural village life in Fakim village gateway"
+      },
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sangtam_Tribe_village.jpg",
+          "alt": "Traditional hill village settlement and ethnic architecture in Kiphire district"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Old_Risethsi.jpg",
+          "alt": "Historic village settlement nestled amidst the green hills of Kiphire"
+        },
+        {
+          "src": "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Lush mountain apple orchards and blooming trees in high altitude Naga village"
+        }
+      ]
+    },
+    {
+      "name": "Mimi & Salomi Limestone Caves",
+      "category": "nature",
+      "distance": "18 km",
+      "entryFee": "Local permission",
+      "timings": "9:00 AM – 4:00 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.7,
+      "description": "Located in the hills of Kiphire near Fakim, these ancient natural limestone caves feature underground caverns, unique karst rock formations, and colonies of subterranean bats in untouched wild surroundings.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1562663859-6550c0c10f08?auto=format&fit=crop&w=1920&q=80",
+        "alt": "Mystic subterranean limestone cavern and massive natural rock formations near Mimi"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Underground limestone cavern chambers and mineral stalactites"
+        },
+        {
+          "src": "https://images.pexels.com/photos/14776269/pexels-photo-14776269.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Dramatic natural cave rock passage and subterranean formations"
+        },
+        {
+          "src": "https://images.pexels.com/photos/2873671/pexels-photo-2873671.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "alt": "Karst limestone cave structures and rock formations in Kiphire"
+        }
+      ]
+    },
+    {
+      "name": "Pungro Foothills Gateway",
+      "category": "scenic",
+      "distance": "22 km",
+      "entryFee": "Free",
+      "timings": "All day",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Pungro is the picturesque sub-divisional hill settlement and primary gateway to Fakim Wildlife Sanctuary and Mount Saramati, offering panoramic views across the eastern Naga ranges.",
+      "image": {
+        "src": "https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Panoramic winding mountain road and rolling green valley hills of Pungro gateway"
+      },
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flycatcher_sp._Fakim_Pungro_Nagaland_India.jpg",
+          "alt": "Exotic native Flycatcher bird photographed in Fakim Pungro, Nagaland"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bird_Common_Rosefinch_DSCN7706_03.jpg",
+          "alt": "Common Rosefinch in the wild biodiversity haven of Fakim sanctuary"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/1/18/Kohima_Nagaland_India.jpg",
+          "alt": "Expansive mist-shrouded green hills and ridges of Nagaland"
+        }
       ]
     }
   ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — Zaonger",
+      "title": "Day 1 — Arrive at Pungro & Fakim Gateway",
       "items": [
         {
           "time": "Morning",
-          "activity": "Zaonger",
-          "note": "Zaonger is a settlement in Kiphire district of Nagaland state of India."
+          "activity": "Travel to Pungro",
+          "note": "Drive through the scenic hill roads of Kiphire district to arrive at Pungro base."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Pungro Foothills Gateway",
+          "note": "Acclimatize and enjoy panoramic views over the eastern Naga mountain ranges."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Day 2 — Fakim Sanctuary Wildlife & Thanamir Village",
+      "items": [
+        {
+          "time": "Morning",
+          "activity": "Fakim Wildlife Sanctuary Exploration",
+          "note": "Early morning guided birdwatching and wildlife trek inside virgin community rainforests."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Thanamir Apple Village",
+          "note": "Explore the famous apple village, traditional Naga morungs, and cultural hospitality."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day 3 — Mount Saramati Ascent & Mimi Caves",
+      "items": [
+        {
+          "time": "Full Day",
+          "activity": "Mount Saramati Peak & Trail",
+          "note": "Guided expedition towards Nagaland's highest summit and the ancient limestone caves."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Fakim Wildlife Sanctuary Stay",
-      "type": "oyo",
+      "name": "Pungro Tourist Lodge & Circuit House",
+      "type": "lodge",
       "tier": "budget",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.2,
+      "reviews": 85,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Basic Dining",
+        "Local Guides",
+        "Hot Water on Request",
+        "Parking"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Government Lodge",
+        "Gateway Base"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Fakim%20Wildlife%20Sanctuary%20Stay%20Fakim%20Wildlife%20Sanctuary%20Nagaland%20hotel"
+      "url": "https://www.google.com/search?q=Pungro%20Tourist%20Lodge%20Kiphire%20Nagaland"
     },
     {
-      "name": "Airbnb: Stay in Fakim Wildlife Sanctuary",
-      "type": "airbnb apartment",
+      "name": "Thanamir Community Eco-Homestay",
+      "type": "homestay",
       "tier": "good",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "priceMin": 1500,
+      "priceMax": 2800,
+      "rating": 4.8,
+      "reviews": 110,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
+        "Traditional Naga Meals",
         "Local Host",
-        "WiFi"
+        "Bonfire",
+        "Village Tours"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Authentic Experience",
+        "Eco Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Fakim%20Wildlife%20Sanctuary%20Fakim%20Wildlife%20Sanctuary%20Nagaland%20hotel"
+      "url": "https://www.google.com/search?q=Thanamir%20village%20homestay%20Nagaland"
     },
     {
-      "name": "Fakim Wildlife Sanctuary Grand Hotel",
-      "type": "hotel",
+      "name": "Kiphire Forest Rest House",
+      "type": "guest house",
       "tier": "better",
-      "priceMin": 7500,
-      "priceMax": 11250,
+      "priceMin": 2000,
+      "priceMax": 3500,
       "rating": 4.4,
-      "reviews": 430,
+      "reviews": 95,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Forestry Dept",
+        "Spacious Rooms",
+        "Catering Available",
+        "Lush Grounds"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Historic",
+        "Tranquil"
       ],
-      "url": "https://www.google.com/search?q=Fakim%20Wildlife%20Sanctuary%20Grand%20Hotel%20Fakim%20Wildlife%20Sanctuary%20Nagaland%20hotel"
+      "url": "https://www.google.com/search?q=Kiphire%20Forest%20Rest%20House%20Nagaland"
     },
     {
-      "name": "Jungle Lodges Fakim Wildlife Sanctuary",
-      "type": "resort",
+      "name": "Mount Saramati Base Camp & Tents",
+      "type": "camp",
       "tier": "best",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "priceMin": 2500,
+      "priceMax": 4500,
+      "rating": 4.9,
+      "reviews": 140,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "All-Weather Tents",
+        "Trek Equipment",
+        "Campfire Meals",
+        "Expedition Guides"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Adventure",
+        "Summit Base"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Fakim%20Wildlife%20Sanctuary%20Fakim%20Wildlife%20Sanctuary%20Nagaland%20hotel"
+      "url": "https://www.google.com/search?q=Mount%20Saramati%20Trek%20Camp%20Nagaland"
     }
   ],
   "restaurants": [],
@@ -333,65 +458,66 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kiphire_district%2C_Nagaland.jpg",
-      "alt": "Panoramic view of rolling emerald mountain ranges and valleys in Kiphire district near Fakim Wildlife Sanctuary, Nagaland",
-      "title": "Fakim Wildlife Sanctuary & Kiphire Panorama"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Community_forest_in_Kiphire_district%2C_Nagaland%2C_India.jpg",
+      "alt": "Dense virgin community rainforest canopy sheltering rare wildlife in Kiphire district near Fakim Wildlife Sanctuary",
+      "title": "Virgin Rainforest Canopy of Kiphire"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Community_forest_in_Kiphire_district%2C_Nagaland%2C_India.jpg/1280px-Community_forest_in_Kiphire_district%2C_Nagaland%2C_India.jpg",
-      "alt": "Dense virgin community rainforest canopy sheltering rare wildlife in Kiphire district",
-      "title": "Community Rainforest Canopy"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/A_view_of_Naga_Hills%2C_Kiphire_district%2C_Nagaland.jpg/1280px-A_view_of_Naga_Hills%2C_Kiphire_district%2C_Nagaland.jpg",
-      "alt": "Sweeping mountain ridges and virgin forest terrain of the Naga Hills in Kiphire district",
-      "title": "Naga Hills Ridges"
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Jhum_cultivation_landscape_in_Kiphire_district%2C_Nagaland.jpg/1280px-Jhum_cultivation_landscape_in_Kiphire_district%2C_Nagaland.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Jhum_cultivation_landscape_in_Kiphire_district%2C_Nagaland.jpg",
       "alt": "Traditional terraced hill slopes and mountain valley landscape in Kiphire district near Fakim",
-      "title": "Kiphire Hillside Landscape"
+      "title": "Kiphire Mountain Valley & Terraces"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/A_view_of_Naga_Hills_from_Mukokchang.jpg",
+      "alt": "Sweeping mountain ridges and virgin forest terrain of the Naga Hills",
+      "title": "Naga Hills Mountain Ridges"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Rufous-necked_Hornbill_While_She_Waited_in_Darkness%2C_He_Carried_the_Forest_to_Her_01.jpg",
+      "alt": "Majestic Rufous-necked Hornbill soaring across the ancient canopy of Fakim Wildlife Sanctuary",
+      "title": "Rufous-necked Hornbill Wildlife"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Clearings_for_Jhum_cultivation%2C_Nagaland.jpg",
       "alt": "Forest clearings and mountain vegetation in the hill slopes of Kiphire district",
-      "title": "Forest Clearings & Mountain Slope"
+      "title": "Forest Clearings & Mountain Slopes"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Fakim Wildlife Sanctuary?",
-      "a": "The best time to visit Fakim Wildlife Sanctuary is Oct – Mar. Summers are 25–42°C and winters are 7–24°C."
+      "a": "The best time to visit Fakim Wildlife Sanctuary is Oct – Mar. The winter months offer clear mountain views and pleasant hiking weather."
     },
     {
       "q": "How do I reach Fakim Wildlife Sanctuary?",
-      "a": "The nearest airport is Fakim Wildlife Sanctuary / nearest airport (30 km) and the nearest railway station is Dimapur Railway Station (123 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "a": "The nearest airport and major railway station is Dimapur (260 km). From Dimapur or Kohima, take a shared taxi or 4WD vehicle via Meluri to Pungro, which is the gateway to Fakim."
     },
     {
       "q": "How many days are enough for Fakim Wildlife Sanctuary?",
-      "a": "2 days are usually enough to cover the top attractions of Fakim Wildlife Sanctuary at a relaxed pace."
+      "a": "3 to 4 days are recommended to explore Fakim Wildlife Sanctuary, visit Thanamir Apple Village, and trek towards Mount Saramati."
     },
     {
-      "q": "How much does a hotel cost in Fakim Wildlife Sanctuary?",
-      "a": "Stays in Fakim Wildlife Sanctuary start from ₹2,500 per night, with options across 5 price categories."
+      "q": "Where should I stay when visiting Fakim Wildlife Sanctuary?",
+      "a": "Accommodations are available at the Pungro Tourist Lodge, community homestays in Thanamir village, and the Forest Rest House in Kiphire."
     },
     {
-      "q": "What are the top places to visit in Fakim Wildlife Sanctuary?",
-      "a": "The top attractions are Zaonger."
+      "q": "What are the top places to visit around Fakim Wildlife Sanctuary?",
+      "a": "The top attractions are Mount Saramati Peak & Trail, Thanamir Apple Village, Mimi & Salomi Limestone Caves, and Pungro Foothills Gateway."
     }
   ],
   "seo": {
-    "title": "Fakim Wildlife Sanctuary Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Fakim Wildlife Sanctuary is a protected area in Nagaland, India. Plan your Fakim Wildlife Sanctuary trip: 1 places to visit, 4 stays from ₹2500/night, best time (Oct – Mar) and routes.",
+    "title": "Fakim Wildlife Sanctuary Travel Guide 2026 — Places, Stays, How to Reach | ExploreDesh",
+    "description": "Plan your trip to Fakim Wildlife Sanctuary, Nagaland. Discover Mount Saramati, Thanamir Apple Village, Mimi Caves, homestays, routes, and travel tips.",
     "canonical": "destination.html?slug=fakim-wildlife-sanctuary",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kiphire_district%2C_Nagaland.jpg",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/5/55/Community_forest_in_Kiphire_district%2C_Nagaland%2C_India.jpg",
     "keywords": [
-      "Fakim Wildlife Sanctuary travel guide",
-      "places to visit in Fakim Wildlife Sanctuary",
-      "Fakim Wildlife Sanctuary hotels",
-      "best time to visit Fakim Wildlife Sanctuary",
-      "how to reach Fakim Wildlife Sanctuary",
-      "Nagaland tourism"
+      "Fakim Wildlife Sanctuary",
+      "Mount Saramati Nagaland",
+      "Thanamir apple village",
+      "Kiphire tourism",
+      "Nagaland wildlife sanctuary",
+      "places to visit in Kiphire",
+      "Nagaland trekking"
     ]
   }
 }

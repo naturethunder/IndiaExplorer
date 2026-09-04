@@ -204,7 +204,11 @@
       "name": "Secunderabad Junction (Hyderabad)",
       "distance": 5
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Ameerpet metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -284,25 +288,6 @@
       ]
     },
     {
-      "name": "Ameerpet metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Ameerpet metro station is an interchange metro station between the Red Line and Blue Line of the Hyderabad Metro. The Ameerpet Inter-change Metro Station is one of the largest metro stations in India with a sprawling premises over 200,000 square feet (19,000 m2).",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Full_view_of_Mythrivanam_Building.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Ameerpet metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Aditya_Enclave_-_Ameerpet_-_Hyderabad.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/00/Ameerpet.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/12384054/pexels-photo-12384054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
       "name": "Ameerpet",
       "category": "scenic",
       "distance": "Town Centre",
@@ -319,44 +304,6 @@
         "https://images.pexels.com/photos/11985554/pexels-photo-11985554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/18779639/pexels-photo-18779639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/20322353/pexels-photo-20322353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Begumpet metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Begumpet ( also known as SBI Begumpet Metro Station) Metro Station is located on the Blue Line of the Hyderabad Metro in India. It is near to Begumpet railway station, Kundan Bagh, Country Club, Life style, Meena Bazaar Ext, Green park Hotel and Green lands road.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ameerpet1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Begumpet metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Ameerpet_area_of_Hyderabad_in_Telengana_10.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Ameerpetmetroyellareddyguda.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/30842254/pexels-photo-30842254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Parade Ground metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "The Parade Ground Metro Station is located on the Blue Line of the Hyderabad Metro in India. It is part of Corridor I of the Hyderabad Metro starting from Miyapur and was opened to the public on 28 November 2017.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Konark_Sun_Temple_-_IRCTC_2017_%2856%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Parade Ground metro station, Nizamia observatory"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Parade_ground_metro.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Parade_Ground_Metro_station_in_Hyderabad_%28August_2019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/17235332/pexels-photo-17235332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     }
   ],
@@ -392,30 +339,9 @@
           "note": "Hyderabad Central is a shopping mall in Hyderabad, India, located on the Punjagutta road. The mall includes Marks and Spencer, as well as a range of movies, music, books, coffee shops, a food court, supermarket and restaurants."
         },
         {
-          "time": "Afternoon",
-          "activity": "Ameerpet metro station",
-          "note": "Ameerpet metro station is an interchange metro station between the Red Line and Blue Line of the Hyderabad Metro. The Ameerpet Inter-change Metro Station is one of the largest metro stations in India with a sprawling premises over 200,000 square feet (19,000 m2)."
-        },
-        {
           "time": "Evening",
           "activity": "Ameerpet",
           "note": "Ameerpet is a residential hub located in the north-west part of Hyderabad, Telangana. Ameerpet is also a Mandal in Hyderabad District."
-        }
-      ]
-    },
-    {
-      "day": 3,
-      "title": "Day 3 — Begumpet metro station & around",
-      "items": [
-        {
-          "time": "Morning",
-          "activity": "Begumpet metro station",
-          "note": "Begumpet ( also known as SBI Begumpet Metro Station) Metro Station is located on the Blue Line of the Hyderabad Metro in India. It is near to Begumpet railway station, Kundan Bagh, Country Club, Life style, Meena Bazaar Ext, Green park Hotel and Green lands road."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Parade Ground metro station",
-          "note": "The Parade Ground Metro Station is located on the Blue Line of the Hyderabad Metro in India. It is part of Corridor I of the Hyderabad Metro starting from Miyapur and was opened to the public on 28 November 2017."
         }
       ]
     }
@@ -558,7 +484,7 @@
     },
     {
       "q": "What are the top places to visit in Nizamia observatory?",
-      "a": "The top attractions are Telangana State Guesthouse, Somajiguda, Greenlands Guest House, Hyderabad Central, Ameerpet metro station."
+      "a": "The top attractions are Telangana State Guesthouse, Somajiguda, Greenlands Guest House, Hyderabad Central."
     }
   ],
   "seo": {

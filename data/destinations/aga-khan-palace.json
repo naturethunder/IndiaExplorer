@@ -205,7 +205,11 @@
       "name": "Pune Junction",
       "distance": 4
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kalyani Nagar metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -225,44 +229,6 @@
         "https://images.unsplash.com/photo-1686487220868-13d19709b784?crop=entropy&cs=srgb&fm=jpg&q=85",
         "https://upload.wikimedia.org/wikipedia/commons/6/65/Kalyani_nagar_top_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6a/KALYANI_NAGAR_marigold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kalyani Nagar metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Kalyani Nagar metro station, is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System.",
-      "image": {
-        "src": "https://images.pexels.com/photos/14466391/pexels-photo-14466391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Kalyani Nagar metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/21835254/pexels-photo-21835254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.unsplash.com/photo-1694626310936-8a38325b3054?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/Kalyani_Nagar_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Ramwadi metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.4,
-      "description": "Ramwadi is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System.",
-      "image": {
-        "src": "https://images.pexels.com/photos/15623149/pexels-photo-15623149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Ramwadi metro station, Maharashtra - Beautiful palace surrounded by gardens in Pune, Maharashtra, India on a sunny day."
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1705955463252-e3f670e4041b?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Work_in_progress_of_Civil_Court_Metro_Station%2C_Pune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Ramwadi_Metro_Station_with_Airport_Shuttle_Bus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -301,25 +267,6 @@
         "https://images.unsplash.com/photo-1702155298472-789642cd2c59?crop=entropy&cs=srgb&fm=jpg&q=85",
         "https://upload.wikimedia.org/wikipedia/commons/4/4b/MES_PUMP_HOUSE_yerawada.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://images.pexels.com/photos/15623165/pexels-photo-15623165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Yerwada metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Yerwada metro station is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System.",
-      "image": {
-        "src": "https://images.pexels.com/photos/29285205/pexels-photo-29285205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Yerwada metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/20565999/pexels-photo-20565999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.unsplash.com/photo-1705954797147-652784bc2484?crop=entropy&cs=srgb&fm=jpg&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Various_structures_on_Mula-Mutha_River_near_Bund_Garden_with_ongoing_Riverfront_Development_Project_in_Pune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -370,16 +317,6 @@
           "time": "Morning",
           "activity": "Kalyani Nagar",
           "note": "Kalyani Nagar is an affluent, predominantly residential neighbourhood located in eastern Pune, India. It has a population of 25,272 according to the 2011 Census of India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Kalyani Nagar metro station",
-          "note": "Kalyani Nagar metro station, is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System."
-        },
-        {
-          "time": "Evening",
-          "activity": "Ramwadi metro station",
-          "note": "Ramwadi is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System."
         }
       ]
     },
@@ -396,11 +333,6 @@
           "time": "Afternoon",
           "activity": "Yerawada",
           "note": "Yerawada is a neighbourhood of the city of Pune in the state of Maharashtra, India. Before that British Raj Yerawada was known as Yeraoda."
-        },
-        {
-          "time": "Evening",
-          "activity": "Yerwada metro station",
-          "note": "Yerwada metro station is the elevated eastern terminal metro station on the East - West corridor of the Aqua Line of Pune Metro in Pune, India. It is connected to Rainbow Bus Rapid Transit System."
         }
       ]
     },
@@ -558,7 +490,7 @@
     },
     {
       "q": "What are the top places to visit in Aga Khan Palace?",
-      "a": "The top attractions are Kalyani Nagar, Kalyani Nagar metro station, Ramwadi metro station, Vimannagar, Yerawada."
+      "a": "The top attractions are Kalyani Nagar, Vimannagar, Yerawada, Yerawada Central Jail."
     }
   ],
   "seo": {

@@ -203,28 +203,13 @@
       "name": "Chennai Central",
       "distance": 8
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Vadapalani metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "Vadapalani metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Vadapalani is an elevated metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Vadapalani and Kodambakkam and is one of the major stations on the Koyambedu-Alandur stretch and became operational by early 2015.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/View_from_Metro_in_Vadapalani.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Vadapalani metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Vadapalani_Metro_Station_%2820492172626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Vadapalani_Junction%2C_Chennai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Vadapazhani_murugan_temple_model.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "Vadapalani",
       "category": "spiritual",
@@ -280,25 +265,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/33/Vadapalani2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/db/Vadapalani_Murugan_Kovil_%284359067100%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://images.unsplash.com/photo-1744740898484-8984bc1fdd60?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8VHJ1c3RwdXJhbSUyMFRhbWlsJTIwTmFkdXxlbnwwfDB8fHwxNzg4MDgyOTA1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=85"
-      ]
-    },
-    {
-      "name": "Arumbakkam metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Arumbakkam is an elevated metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods of Vinayagapuram, Choolaimedu and MMDA Colony.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Arumbakkam_Metro_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Arumbakkam metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/11770219/pexels-photo-11770219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/9/97/Arumbakkam_metro_station_02.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Gopuram_of_Vadapalani_Andavar_Temple%2C_Chennai%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -365,11 +331,6 @@
       "title": "Day 1 — Vadapalani metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Vadapalani metro station",
-          "note": "Vadapalani is an elevated metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Vadapalani and Kodambakkam and is one of the major stations on the Koyambedu-Alandur stretch and became operational by early 2015."
-        },
-        {
           "time": "Afternoon",
           "activity": "Vadapalani",
           "note": "Vadapalani is a neighbourhood in the city of Chennai in Tamil Nadu, India. It is known for its film studios, the Vadapalani Andavar Temple, and Vengeeswarar Temples which are important pilgrimage centres for Hindus."
@@ -389,11 +350,6 @@
           "time": "Morning",
           "activity": "Trustpuram",
           "note": "Trustpuram is a residential area in Kodambakkam, in the city of Chennai, India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Arumbakkam metro station",
-          "note": "Arumbakkam is an elevated metro station on the South-East Corridor of the Green Line of Chennai Metro in Chennai, India. This station will serve the neighbourhoods of Vinayagapuram, Choolaimedu and MMDA Colony."
         },
         {
           "time": "Evening",
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Vadapalani Andavar Temple?",
-      "a": "The top attractions are Vadapalani metro station, Vadapalani, KM Music Conservatory, Trustpuram, Arumbakkam metro station."
+      "a": "The top attractions are Vadapalani, KM Music Conservatory, Trustpuram, Sridevi Nrithyalaya."
     }
   ],
   "seo": {

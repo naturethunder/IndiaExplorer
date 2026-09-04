@@ -203,7 +203,11 @@
       "name": "KSR Bengaluru City Junction",
       "distance": 7
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Ragigudda metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -242,44 +246,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c5/Ragigudda_metro_station_%28Dec_%2723%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/30/Chrysanthemum_flowers_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flower_in_Guntur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Ragigudda metro station",
-      "category": "spiritual",
-      "distance": "Town Centre",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Ragigudda is an elevated metro station on the north–south corridor of the Yellow Line of Namma Metro in Bengaluru, India. Located in between Jayanagar 9th Block & J.P. Nagar 2nd & 3rd Phase, this metro station is named after the Ragigudda Anjaneya Temple.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Yellow_Line_inauguration_at_Ragigudda_metro_station%2C_Bangalore_%282025%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Ragigudda metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Yellow_Line_inauguration_at_Ragigudda_metro_station%2C_Bangalore_%282025%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Yellow_Line_inauguration_at_Ragigudda_metro_station%2C_Bangalore_%282025%29_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/03/Cosmos_flower_%28Tehatta%2C_West_Bengal%2C_India%29_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "JP Nagar 4th Phase metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "JP Nagar 4th Phase is an upcoming elevated interchange metro station on the North-South corridor of the Pink Line and the ORR-West corridor of the Orange Line of Namma Metro in Bengaluru, India. This station is located near the popular Vega City Mall and serves the residential areas of BTM Layout and JP Nagar 3rd & 4th Phase.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/JP_Nagar_4th_Phase_metro_station_%28Dec_%2723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "JP Nagar 4th Phase metro station in Karnataka, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/26/JP_Nagar_4th_Phase_metro_station_%28Nov_%2724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/JP_Nagar_4th_Phase_metro_station_%28May_%2725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/A_bee_enjoying_itself.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -373,11 +339,6 @@
           "time": "Afternoon",
           "activity": "Ragigudda - Silk Board Flyover",
           "note": "Ragigudda - Silk Board Flyover is a rail-cum-road flyover in the city of Bengaluru in Karnataka, India. It is the first double decker flyover in Bengaluru, which is was built by the Bangalore Metro Rail Corporation Limited between Central Silk Board and Ragigudda metro stations as part of the Yellow Line (Rashtreeya Vidyalaya Road-Delta Electronics Bommasandra)."
-        },
-        {
-          "time": "Evening",
-          "activity": "Ragigudda metro station",
-          "note": "Ragigudda is an elevated metro station on the north–south corridor of the Yellow Line of Namma Metro in Bengaluru, India. Located in between Jayanagar 9th Block & J.P. Nagar 2nd & 3rd Phase, this metro station is named after the Ragigudda Anjaneya Temple."
         }
       ]
     },
@@ -385,11 +346,6 @@
       "day": 2,
       "title": "Day 2 — JP Nagar 4th Phase metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "JP Nagar 4th Phase metro station",
-          "note": "JP Nagar 4th Phase is an upcoming elevated interchange metro station on the North-South corridor of the Pink Line and the ORR-West corridor of the Orange Line of Namma Metro in Bengaluru, India. This station is located near the popular Vega City Mall and serves the residential areas of BTM Layout and JP Nagar 3rd & 4th Phase."
-        },
         {
           "time": "Afternoon",
           "activity": "Karuna Trust (India)",
@@ -557,7 +513,7 @@
     },
     {
       "q": "What are the top places to visit in Ragigudda Sri Prasannaswamy Anjaneya Temple?",
-      "a": "The top attractions are Jayaprakash Nagar, Bengaluru, Ragigudda - Silk Board Flyover, Ragigudda metro station, JP Nagar 4th Phase metro station, Karuna Trust (India)."
+      "a": "The top attractions are Jayaprakash Nagar, Bengaluru, Ragigudda - Silk Board Flyover, Karuna Trust (India), Masjid-e-Bilal."
     }
   ],
   "seo": {

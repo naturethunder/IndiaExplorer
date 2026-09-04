@@ -203,7 +203,11 @@
       "name": "Chennai Central",
       "distance": 17
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Meenambakkam metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -261,25 +265,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pallavaram_chennai.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/5e/Chranockite_exposure_at_Pallavaram_quarry.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d3/Guindy_National_Park_Board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Meenambakkam metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Meenambakkam is an elevated metro station on the North-South Corridor of the Blue Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Meenambakkam and Tirusulam.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Meenambakkam_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Meenambakkam metro station in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/28927886/pexels-photo-28927886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/4/49/Guindy_National_Park_46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Deer_at_Guindy_Childrens_Park%2C_Chennai._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -385,11 +370,6 @@
       "day": 2,
       "title": "Day 2 — Meenambakkam metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "Meenambakkam metro station",
-          "note": "Meenambakkam is an elevated metro station on the North-South Corridor of the Blue Line of Chennai Metro in Chennai, India. This station serves the neighbourhoods of Meenambakkam and Tirusulam."
-        },
         {
           "time": "Afternoon",
           "activity": "Ayyappa Nagar",
@@ -559,7 +539,7 @@
     },
     {
       "q": "What are the top places to visit in Tirusoolanathar Temple?",
-      "a": "The top attractions are Tirusulam, Meenambakkam, Pallavaram, Meenambakkam metro station, Ayyappa Nagar."
+      "a": "The top attractions are Tirusulam, Meenambakkam, Pallavaram, Ayyappa Nagar."
     }
   ],
   "seo": {

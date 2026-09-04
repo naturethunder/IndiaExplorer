@@ -205,28 +205,13 @@
       "name": "New Delhi Railway Station",
       "distance": 63
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "MES Colony metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "MES Colony metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "The MES Colony metro station is an elevated Meerut Metro station on the Delhi–Ghaziabad–Meerut RRTS corridor (also known as the Namo Bharat corridor) serving Lekha Nagar in Meerut, Uttar Pradesh, India. It serves as a halt for Meerut Metro trains that run at a speed of 120 km/h.",
-      "image": {
-        "src": "https://images.pexels.com/photos/32395063/pexels-photo-32395063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "MES Colony metro station in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/12641818/pexels-photo-12641818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/20282328/pexels-photo-20282328.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Scenes_from_the_Goa_Mando_Festival%2C_December_2025_%28Dec_11%2C_2025_Day_23%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "St. Mary's Academy, Meerut",
       "category": "scenic",
@@ -263,25 +248,6 @@
         "https://images.pexels.com/photos/38428821/pexels-photo-38428821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/c/c3/Scenes_from_the_Goa_Mando_Festival%2C_December_2025_%28Dec_11%2C_2025_Day_26%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1d/Scenes_from_the_Goa_Mando_Festival%2C_December_2025_%28Dec_11%2C_2025_Day_27%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Meerut division",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Meerut division (Hindi pronunciation: [meːɾəʈʰ]) is one of the 18 administrative geographical units (i.e. division) of the northern Indian state of Uttar Pradesh.",
-      "image": {
-        "src": "https://images.pexels.com/photos/21935064/pexels-photo-21935064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Meerut division in Uttar Pradesh, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/17595235/pexels-photo-17595235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/36932152/pexels-photo-36932152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Scenes_from_the_Goa_Mando_Festival%2C_December_2025_%28Dec_11%2C_2025_Day_25%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -367,11 +333,6 @@
       "title": "Day 1 — MES Colony metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "MES Colony metro station",
-          "note": "The MES Colony metro station is an elevated Meerut Metro station on the Delhi–Ghaziabad–Meerut RRTS corridor (also known as the Namo Bharat corridor) serving Lekha Nagar in Meerut, Uttar Pradesh, India. It serves as a halt for Meerut Metro trains that run at a speed of 120 km/h."
-        },
-        {
           "time": "Afternoon",
           "activity": "St. Mary's Academy, Meerut",
           "note": "St. Mary's Academy is a private, college preparatory school for day students located in Meerut, Uttar Pradesh, India in the NCR Region."
@@ -387,11 +348,6 @@
       "day": 2,
       "title": "Day 2 — Meerut division & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "Meerut division",
-          "note": "Meerut division (Hindi pronunciation: [meːɾəʈʰ]) is one of the 18 administrative geographical units (i.e. division) of the northern Indian state of Uttar Pradesh."
-        },
         {
           "time": "Afternoon",
           "activity": "2006 Meerut fire",
@@ -561,7 +517,7 @@
     },
     {
       "q": "What are the top places to visit in St. John's Church, Meerut?",
-      "a": "The top attractions are MES Colony metro station, St. Mary's Academy, Meerut, Diocese of Meerut, Meerut division, 2006 Meerut fire."
+      "a": "The top attractions are St. Mary's Academy, Meerut, Diocese of Meerut, 2006 Meerut fire, Bhoopgarhi."
     }
   ],
   "seo": {

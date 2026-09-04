@@ -205,7 +205,11 @@
       "name": "Mumbai CSMT",
       "distance": 13
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Bandra Kurla Complex metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -304,25 +308,6 @@
       ]
     },
     {
-      "name": "Bandra Kurla Complex metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Bandra–Kurla Complex (officially known as KOTAK - Bandra–Kurla Complex) is an underground metro station serving the business district of Bandra Kurla Complex on the North-South corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on October 5, 2024, by Prime Minister Narendra Modi, followed by the commencement of the metro service from October 7, 2024.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/Road_104.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bandra Kurla Complex metro station, Riwa Fort"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0a/An_empty_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Balutola_road_Sign_Board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4b/City-next-to-valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Sion, Mumbai",
       "category": "beach",
       "distance": "1 km",
@@ -396,11 +381,6 @@
           "time": "Afternoon",
           "activity": "Godrej BKC",
           "note": "Godrej BKC (Bandra-Kurla Complex) is a project by Godrej Properties Limited developed in partnership with Jet Airways located in Mumbai, India."
-        },
-        {
-          "time": "Evening",
-          "activity": "Bandra Kurla Complex metro station",
-          "note": "Bandra–Kurla Complex (officially known as KOTAK - Bandra–Kurla Complex) is an underground metro station serving the business district of Bandra Kurla Complex on the North-South corridor of the Aqua Line 3 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on October 5, 2024, by Prime Minister Narendra Modi, followed by the commencement of the metro service from October 7, 2024."
         }
       ]
     },
@@ -566,7 +546,7 @@
     },
     {
       "q": "What are the top places to visit in Riwa Fort?",
-      "a": "The top attractions are Church of Our Lady of Good Counsel & Shrine of St. Anthony, Sion, Sion Hillock Fort, United Stock Exchange of India, National Stock Exchange of India, Godrej BKC."
+      "a": "The top attractions are Church of Our Lady of Good Counsel & Shrine of St. Anthony, Sion, Sion Hillock Fort, United Stock Exchange of India, National Stock Exchange of India."
     }
   ],
   "seo": {

@@ -205,7 +205,11 @@
       "name": "Secunderabad Junction (Hyderabad)",
       "distance": 1
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Secunderabad East metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -304,25 +308,6 @@
       ]
     },
     {
-      "name": "Jubilee Bus Station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Jubilee Bus Station popularly known as JBS is a bus station located in Secunderabad, Telangana, India. It is one of the two main bus stations for buses leaving Hyderabad city, the other being MGBS. It is owned by the state-run bus transport corporation, TGSRTC. JBS is located about 2 km from Secunderabad Railway Station and 800m distance from JBS Parade Ground Station.",
-      "image": {
-        "src": "https://images.pexels.com/photos/33748418/pexels-photo-33748418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Jubilee Bus Station in Telangana, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/32901355/pexels-photo-32901355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/14547115/pexels-photo-14547115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/34842257/pexels-photo-34842257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
       "name": "St. Thomas (SPG) Cathedral, Secunderabad",
       "category": "spiritual",
       "distance": "Town Centre",
@@ -339,25 +324,6 @@
         "https://images.pexels.com/photos/37772420/pexels-photo-37772420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/7/7b/St._Mary%27s_Church_-_geograph.org.uk_-_1715490.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/d/dd/Stmaryschurchinsidenave.png"
-      ]
-    },
-    {
-      "name": "Secunderabad East metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "The Secunderabad East metro station is located on the Blue Line of the Hyderabad Metro, in India. It is part of Corridor I of the Hyderabad Metro starting from Raidurg to Nagole.",
-      "image": {
-        "src": "https://images.pexels.com/photos/32908046/pexels-photo-32908046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Secunderabad East metro station in Telangana, India"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/37212131/pexels-photo-37212131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Secundrabad_Metro_station.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/23/Secunderabad_eastmetro.png"
       ]
     }
   ],
@@ -396,11 +362,6 @@
           "time": "Afternoon",
           "activity": "Patny",
           "note": "Patny or Patny circle is a commercial shopping hub in Secunderabad, India."
-        },
-        {
-          "time": "Evening",
-          "activity": "Jubilee Bus Station",
-          "note": "Jubilee Bus Station popularly known as JBS is a bus station located in Secunderabad, Telangana, India. It is one of the two main bus stations for buses leaving Hyderabad city, the other being MGBS. It is owned by the state-run bus transport corporation, TGSRTC. JBS is located about 2 km from Secunderabad Railway Station and 800m distance from JBS Parade Ground Station."
         }
       ]
     },
@@ -412,11 +373,6 @@
           "time": "Morning",
           "activity": "St. Thomas (SPG) Cathedral, Secunderabad",
           "note": "St. Thomas (SPG) Church is one of the oldest churches in the city of Secunderabad, India."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Secunderabad East metro station",
-          "note": "The Secunderabad East metro station is located on the Blue Line of the Hyderabad Metro, in India. It is part of Corridor I of the Hyderabad Metro starting from Raidurg to Nagole."
         }
       ]
     }
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Basilica of Our Lady of the Assumption, Secunderabad?",
-      "a": "The top attractions are Centenary Baptist Church Secunderabad, The St. John's (Secunderabad), Secunderabad Clock Tower, Secunderabad, Patny."
+      "a": "The top attractions are Centenary Baptist Church Secunderabad, The St. John's (Secunderabad), Secunderabad Clock Tower, Secunderabad."
     }
   ],
   "seo": {

@@ -205,7 +205,11 @@
       "name": "Ahmedabad Junction",
       "distance": 12
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Thaltej metro station",
+      "distance": 4
+    }
   },
   "topPlaces": [
     {
@@ -285,25 +289,6 @@
       ]
     },
     {
-      "name": "Thaltej metro station",
-      "category": "nature",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Thaltej is a metro station on the East-West Corridor of the Blue Line of Ahmedabad Metro in Ahmedabad, India. This metro station consists of PVR Acropolis (Ahmedabad) along with Mondeal Business Park in West Ahmedabad.",
-      "image": {
-        "src": "https://images.pexels.com/photos/37301164/pexels-photo-37301164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Thaltej metro station, Gujarat - Aerial view of a metro train traversing an urban cityscape with dense buildings and gre"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/13402029/pexels-photo-13402029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Thaltej_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/15921368/pexels-photo-15921368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
       "name": "Centre for Environment Education",
       "category": "scenic",
       "distance": "4 km",
@@ -340,25 +325,6 @@
         "https://pixabay.com/get/g53abe97a7b7a8e793e3ad9009086169f7221d1490f84d6c09d0c2f7221e01bbeb3f673e52ee92d8f02845e147500cfc3898dbb0eced8372c811371b15ca6cd27_1280.jpg",
         "https://pixabay.com/get/g72b0563a00eb42165eaedecb5e1ad92335cc059f0a40d7b329eb1a9d0f4d41b6e0c5e866e6fa55d8bf7950668219cfe1e8e2547e03298a3ae95c78322a76d216_1280.jpg"
       ]
-    },
-    {
-      "name": "Doordarshan Kendra metro station",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Doordarshan Kendra is an elevated metro station on the East-West Corridor of the Blue Line of Ahmedabad Metro in Ahmedabad, India. This metro station consists of the main Doordarshan Kendra (Ahmedabad) along with its adjacent Ahmedabad Education Society Ground and SKUM College of Physiotherapy.",
-      "image": {
-        "src": "https://images.pexels.com/photos/35699925/pexels-photo-35699925.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Doordarshan Kendra metro station, Gujarat - Bright urban walkway in railway station with people walking and clear roof d"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/44/Doordarshan_Kendra_metro_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/15334784/pexels-photo-15334784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/31597514/pexels-photo-31597514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
     }
   ],
   "itinerary": [
@@ -393,11 +359,6 @@
           "note": "Space Applications Centre (SAC) is an institution of research in Ahmedabad under the aegis of ISRO. It is one of the major centres of ISRO that is engaged in the research, development and demonstration of applications of space technology in the field of telecommunications, remote sensing, meteorology and satellite navigation (Sat Nav). This includes research and development of on-board systems, ground systems and end user equipment hardware and software."
         },
         {
-          "time": "Afternoon",
-          "activity": "Thaltej metro station",
-          "note": "Thaltej is a metro station on the East-West Corridor of the Blue Line of Ahmedabad Metro in Ahmedabad, India. This metro station consists of PVR Acropolis (Ahmedabad) along with Mondeal Business Park in West Ahmedabad."
-        },
-        {
           "time": "Evening",
           "activity": "Centre for Environment Education",
           "note": "The Centre for Environment Education (CEE) in India was established in August 1984 as a Centre of Excellence supported by the Ministry of Environment and Forests. The organisation works towards developing programmes and materials to increase awareness about the environment and sustainable development."
@@ -412,11 +373,6 @@
           "time": "Morning",
           "activity": "Palladium Ahmedabad",
           "note": "Palladium Ahmedabad (popularly called Phoenix Palladium Ahmedabad) is a shopping mall in Ahmedabad, Gujarat, India. It is owned by Phoenix Mills Ltd and it was opened on 26 February 2023."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Doordarshan Kendra metro station",
-          "note": "Doordarshan Kendra is an elevated metro station on the East-West Corridor of the Blue Line of Ahmedabad Metro in Ahmedabad, India. This metro station consists of the main Doordarshan Kendra (Ahmedabad) along with its adjacent Ahmedabad Education Society Ground and SKUM College of Physiotherapy."
         }
       ]
     }
@@ -558,7 +514,7 @@
     },
     {
       "q": "What are the top places to visit in Ahmedabad Kali Bari?",
-      "a": "The top attractions are Bopal, Ecology Park, Shalby Hospitals, Space Applications Centre, Thaltej metro station."
+      "a": "The top attractions are Bopal, Ecology Park, Shalby Hospitals, Space Applications Centre."
     }
   ],
   "seo": {

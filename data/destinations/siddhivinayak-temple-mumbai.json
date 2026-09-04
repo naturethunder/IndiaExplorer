@@ -205,7 +205,11 @@
       "name": "Mumbai CSMT",
       "distance": 9
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Siddhivinayak metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -225,25 +229,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Siddhivinayak_Mumbai.jpg/1280px-Siddhivinayak_Mumbai.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Siddhivinayak_Temple_%28Wednesday_10-12-2008%29.jpg/1280px-Siddhivinayak_Temple_%28Wednesday_10-12-2008%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/ee/Siddhivinayak_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Siddhivinayak metro station",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Siddhivinayak (also known as ICICI Lombard - Siddhivinayak for sponsorship reasons) is an underground metro station located in the Prabhadevi area, on the North–South corridor of the Aqua Line 3 of the Mumbai Metro in Mumbai, India. The station opened to the public on 10 May 2025, under a naming rights agreement between ICICI Lombard and the Mumbai Metro Rail Corporation Ltd (MMRC).",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Siddhivinayak_metro_station.jpg/1280px-Siddhivinayak_metro_station.jpg",
-        "alt": "Siddhivinayak metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/Siddhivinayak_metro_station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/36559748/pexels-photo-36559748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/2/22/Evening_Colors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -370,11 +355,6 @@
           "time": "Morning",
           "activity": "Prabhadevi",
           "note": "Prabhadevi (Pronunciation: [pɾəbʱaːd̪eʋiː]) is a small up-scale southern neighbourhood of Mumbai, situated between Dadar to the north, Worli to the south and the Arabian Sea to the west. The area derives its name from the 300-year-old Prabhavati temple located in the locality."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Siddhivinayak metro station",
-          "note": "Siddhivinayak (also known as ICICI Lombard - Siddhivinayak for sponsorship reasons) is an underground metro station located in the Prabhadevi area, on the North–South corridor of the Aqua Line 3 of the Mumbai Metro in Mumbai, India. The station opened to the public on 10 May 2025, under a naming rights agreement between ICICI Lombard and the Mumbai Metro Rail Corporation Ltd (MMRC)."
         },
         {
           "time": "Evening",
@@ -562,7 +542,7 @@
     },
     {
       "q": "What are the top places to visit in Siddhivinayak Temple, Mumbai?",
-      "a": "The top attractions are Prabhadevi, Siddhivinayak metro station, Prabhadevi Temple, Portuguese Church, Mumbai, Chaitya Bhoomi."
+      "a": "The top attractions are Prabhadevi, Prabhadevi Temple, Portuguese Church, Mumbai, Chaitya Bhoomi."
     }
   ],
   "seo": {

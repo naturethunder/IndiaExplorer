@@ -205,28 +205,13 @@
       "name": "Kalyan Junction (Mumbai)",
       "distance": 26
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Kashigaon metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
-    {
-      "name": "Kashigaon metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Kashigaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashigaon, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Azad_Nagar_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kashigaon metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Anchuruli_Waterfalls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Khrangsuri_waterfall%2C_Meghalaya_01_%28edit%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Munnar-Pothupara_Waterfalls-WUS07067.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "Vasai Creek",
       "category": "beach",
@@ -282,25 +267,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/89/Athirappilly_Waterfalls_IMG_20250511_150138458.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/25/Athirappilly_Waterfalls_IMG_20250511_150145110.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/53/Athirappilly_Waterfalls_IMG_20250511_151414968.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Miragaon metro station",
-      "category": "scenic",
-      "distance": "3 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Miragaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashimira, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Mumbai%2C_India%2C_Bombay%2C_Mumbai_city_skyline_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Miragaon metro station in Maharashtra, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Athirappilly_Waterfalls_IMG_20250511_151411132.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Athirappilly_Waterfalls_IMG_20250511_152519420.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Athirappilly_Waterfalls_IMG_20250511_152524980.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -367,11 +333,6 @@
       "title": "Day 1 — Kashigaon metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Kashigaon metro station",
-          "note": "Kashigaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashigaon, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9."
-        },
-        {
           "time": "Afternoon",
           "activity": "Vasai Creek",
           "note": "Vasai Creek, previously Bassein Creek, is an estuary and one of the two main distributaries of the Ulhas River, in the Konkan division of Maharashtra, India. The Ulhas splits at the northeast corner of Salsette island into its two main distributaries, the other one being the Thane Creek, both of which empty into the Arabian Sea."
@@ -391,11 +352,6 @@
           "time": "Morning",
           "activity": "Kashigaon",
           "note": "Kashigaon is a town located on Ghodbunder Road in Maharashtra, India. It is now part of Thane."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Miragaon metro station",
-          "note": "Miragaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashimira, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9."
         },
         {
           "time": "Evening",
@@ -561,7 +517,7 @@
     },
     {
       "q": "What are the top places to visit in Ghodbunder Fort?",
-      "a": "The top attractions are Kashigaon metro station, Vasai Creek, St. Jerome Church (Kashimira), Kashigaon, Miragaon metro station."
+      "a": "The top attractions are Vasai Creek, St. Jerome Church (Kashimira), Kashigaon, Umrao Hospitals."
     }
   ],
   "seo": {

@@ -205,28 +205,13 @@
       "name": "Howrah Junction (Kolkata)",
       "distance": 8
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Nalban metro station",
+      "distance": 1
+    }
   },
   "topPlaces": [
-    {
-      "name": "Nalban metro station",
-      "category": "nature",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Nalban (Also known as Nicco Park) is a metro station of Orange Line of the Kolkata Metro. It is situated at just beside of Nicco Park.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Nalban_metro_station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nalban metro station in West Bengal, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Nalban_metro_station_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Nalban_metro_station_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/67/Nicco_Park_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
     {
       "name": "The Chatterjee Group Centres for Research and Education in Science and Technology",
       "category": "scenic",
@@ -340,25 +325,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/27/Kolkata_Aerial_view_Salt_Lake_Stadium_view_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ellora_Caves_-_UNESCO_Heritage_Site.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
-    },
-    {
-      "name": "Gour Kishore Ghosh metro station",
-      "category": "scenic",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.1,
-      "description": "Gour Kishore Ghosh is a upcoming metro station of the Orange Line of Kolkata Metro near Chingrighata crossing, Tangra at Sukanta Nagar in Bidhannagar. The station is named in honour of famous Bengali writer and journalist, Gour Kishore Ghosh.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gour_Kishore_Ghosh_metro_station_construction_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gour Kishore Ghosh metro station in West Bengal, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Gour_Kishore_Ghosh_metro_station_construction_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gour_Kishore_Ghosh_metro_station_construction_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/42/Ellora_Caves_-_UNESCO_World_Heritage_Site.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
     }
   ],
   "itinerary": [
@@ -366,11 +332,6 @@
       "day": 1,
       "title": "Day 1 — Nalban metro station & around",
       "items": [
-        {
-          "time": "Morning",
-          "activity": "Nalban metro station",
-          "note": "Nalban (Also known as Nicco Park) is a metro station of Orange Line of the Kolkata Metro. It is situated at just beside of Nicco Park."
-        },
         {
           "time": "Afternoon",
           "activity": "The Chatterjee Group Centres for Research and Education in Science and Technology",
@@ -412,11 +373,6 @@
           "time": "Morning",
           "activity": "Salt Lake Stadium",
           "note": "The Salt Lake Stadium, Kolkata, also known as Vivekananda Yuba Bharati Krirangan (VYBK), is a multi-purpose stadium, used mostly for football matches, located in Salt Lake City, Greater Kolkata, with a capacity of 85,000 spectators. Named after Swami Vivekananda, the stadium is one of the home grounds of East Bengal FC and Mohun Bagan SG. The stadium hosted the final match of the 2017 FIFA U-17 World Cup, alongside other matches of the tournament."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Gour Kishore Ghosh metro station",
-          "note": "Gour Kishore Ghosh is a upcoming metro station of the Orange Line of Kolkata Metro near Chingrighata crossing, Tangra at Sukanta Nagar in Bidhannagar. The station is named in honour of famous Bengali writer and journalist, Gour Kishore Ghosh."
         }
       ]
     }
@@ -559,7 +515,7 @@
     },
     {
       "q": "What are the top places to visit in Nicco Park?",
-      "a": "The top attractions are Nalban metro station, The Chatterjee Group Centres for Research and Education in Science and Technology, S. N. Bose National Centre for Basic Sciences, National Council of Science Museums, Bidhannagar."
+      "a": "The top attractions are The Chatterjee Group Centres for Research and Education in Science and Technology, S. N. Bose National Centre for Basic Sciences, National Council of Science Museums, Bidhannagar."
     }
   ],
   "seo": {

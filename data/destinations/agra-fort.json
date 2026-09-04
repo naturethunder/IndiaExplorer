@@ -204,7 +204,11 @@
       "name": "Agra Cantt",
       "distance": 4
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Agra Metro",
+      "distance": 1
+    }
   },
   "topPlaces": [
     {
@@ -303,25 +307,6 @@
       ]
     },
     {
-      "name": "Agra Metro",
-      "category": "scenic",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "The Agra Metro is a rapid transit system in Agra, Uttar Pradesh, India. The metro is owned and operated by the Uttar Pradesh Metro Rail Corporation (UPMRC).",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Agra_Metro_Inside_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Agra Metro"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e5/Fatehbad_Road_Metro_4.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/KMRT_Yellow_Line_2000.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Jahangiri_Mahal-Red_Fort-Agra-India5356.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
       "name": "Agra Province",
       "category": "scenic",
       "distance": "Town Centre",
@@ -395,11 +380,6 @@
           "time": "Afternoon",
           "activity": "Agra",
           "note": "Agra (; Hindi: Āgarā, pronounced [ˈaːɡɾaː] ) is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, It is a part of Western Uttar Pradesh, about 230 kilometres (140 mi) south-east of the national capital Delhi and 330 km west of the state capital Lucknow. It is also the part of Braj region."
-        },
-        {
-          "time": "Evening",
-          "activity": "Agra Metro",
-          "note": "The Agra Metro is a rapid transit system in Agra, Uttar Pradesh, India. The metro is owned and operated by the Uttar Pradesh Metro Rail Corporation (UPMRC)."
         }
       ]
     },
@@ -557,7 +537,7 @@
     },
     {
       "q": "What are the top places to visit in Agra Fort?",
-      "a": "The top attractions are Battle of Agra, Capture of Agra, Moti Masjid (Agra Fort), Nagina Masjid, Agra Fort, Agra."
+      "a": "The top attractions are Battle of Agra, Capture of Agra, Moti Masjid (Agra Fort), Nagina Masjid, Agra Fort."
     }
   ],
   "seo": {

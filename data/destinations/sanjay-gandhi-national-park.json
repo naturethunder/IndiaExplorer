@@ -205,7 +205,11 @@
       "name": "Kalyan Junction (Mumbai)",
       "distance": 22
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Miragaon metro station",
+      "distance": 4
+    }
   },
   "topPlaces": [
     {
@@ -247,44 +251,6 @@
       ]
     },
     {
-      "name": "Miragaon metro station",
-      "category": "scenic",
-      "distance": "4 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Miragaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashimira, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sanjay_Gandhi_National_Park_5.jpg/1280px-Sanjay_Gandhi_National_Park_5.jpg",
-        "alt": "Lush green landscape view from the elevated western transit corridor near SGNP"
-      },
-      "photos": [
-        "https://images.pexels.com/photos/14379616/pexels-photo-14379616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/34480697/pexels-photo-34480697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/34480721/pexels-photo-34480721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Pandurang Wadi metro station",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Pandurangwadi is an elevated metro station on the Red Line of the Mumbai Metro, located in Pandurangwadi, Dahisar, Mumbai, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sanjay_gandhi_national_part_railtrack.jpg/1280px-Sanjay_gandhi_national_part_railtrack.jpg",
-        "alt": "Heritage narrow-gauge railway tracks running along the forested foothills of SGNP"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1649510550074-16195a0c6473?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8TXVtYmFpJTIwTWV0cm98ZW58MHwwfHx8MTc4ODU0OTcxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-        "https://images.pexels.com/photos/18776000/pexels-photo-18776000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.unsplash.com/photo-1708067372301-145e0e0f39d2?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8TXVtYmFpJTIwTWV0cm98ZW58MHwwfHx8MTc4ODU0OTcxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80"
-      ]
-    },
-    {
       "name": "Kanheri Caves",
       "category": "wildlife",
       "distance": "5 km",
@@ -301,25 +267,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Mumbai_03-2016_92_Kanheri_Caves.jpg/1280px-Mumbai_03-2016_92_Kanheri_Caves.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mumbai_03-2016_94_Kanheri_Caves.jpg/1280px-Mumbai_03-2016_94_Kanheri_Caves.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Kanheri_donor_couple.jpg/1280px-Kanheri_donor_couple.jpg"
-      ]
-    },
-    {
-      "name": "Kashigaon metro station",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Kashigaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashigaon, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1727550416539-ea5004432f33?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TXVtYmFpJTIwTWV0cm98ZW58MHwwfHx8MTc4ODU0OTcxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-        "alt": "Panoramic view of northern Mumbai skyline and elevated transport corridors"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Southern_Plains_gray_langur_in_Sanjay_Gandhi_National_Park%2C_Mumbai%2C_India.jpg/1280px-Southern_Plains_gray_langur_in_Sanjay_Gandhi_National_Park%2C_Mumbai%2C_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Indian_Rock_Python_%28Python_molurus%29_at_Sanjay_Gandhi_National_Park%2C_Mumbai%2C_Maharashtra.jpg/1280px-Indian_Rock_Python_%28Python_molurus%29_at_Sanjay_Gandhi_National_Park%2C_Mumbai%2C_Maharashtra.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Little_Cormorant%2C_Sanjay_Gandhi_National_Park%2C_Maharashtra_%28312681776%29.jpg/1280px-Little_Cormorant%2C_Sanjay_Gandhi_National_Park%2C_Maharashtra_%28312681776%29.jpg"
       ]
     },
     {
@@ -340,25 +287,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/5/5e/Upvan_Lake_night_lights%2C_shoreline_20160109.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/f5/Upvan_in_Morning_1.jpg"
       ]
-    },
-    {
-      "name": "Dahisar East metro station",
-      "category": "scenic",
-      "distance": "5 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Dahisar (East) is an elevated metro station on the Mumbai Metro in Mumbai, India, located on the Western Express Highway in northern Mumbai. It serves as the northern terminus of both the Yellow Line 2A and the Red Line 7, and as the southern terminus of Line 9, which extends the Red Line northward into Mira-Bhayandar.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1728109714943-c45770e8c318?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Nnx8TXVtYmFpJTIwTWV0cm98ZW58MHwwfHx8MTc4ODU0OTcxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-        "alt": "Modern elevated transport architecture connecting northern Mumbai suburbs"
-      },
-      "photos": [
-        "https://images.unsplash.com/photo-1709912068267-78b1e7f8531b?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8S2FuaGVyaSUyMGNhdmVzfGVufDB8MHx8fDE3ODg1NDk0NTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1752432477286-8b9020f5f926?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8S2FuaGVyaSUyMGNhdmVzfGVufDB8MHx8fDE3ODg1NDk0NTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1780557668377-684dbcd0821f?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8OXx8TXVtYmFpJTIwTWV0cm98ZW58MHwwfHx8MTc4ODU0OTcxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80"
-      ]
     }
   ],
   "itinerary": [
@@ -375,11 +303,6 @@
           "time": "Afternoon",
           "activity": "St. Jerome Church (Kashimira)",
           "note": "St. Jerome Church is a Roman Catholic Church in Kashimira, Mira-Bhayandar, India."
-        },
-        {
-          "time": "Evening",
-          "activity": "Miragaon metro station",
-          "note": "Miragaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashimira, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9."
         }
       ]
     },
@@ -388,19 +311,9 @@
       "title": "Day 2 — Pandurang Wadi metro station & around",
       "items": [
         {
-          "time": "Morning",
-          "activity": "Pandurang Wadi metro station",
-          "note": "Pandurangwadi is an elevated metro station on the Red Line of the Mumbai Metro, located in Pandurangwadi, Dahisar, Mumbai, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9."
-        },
-        {
           "time": "Afternoon",
           "activity": "Kanheri Caves",
           "note": "The Kanheri Caves (Kānherī-guhā [kaːnʱeɾiː ɡuɦaː]) are a group of caves and rock-cut monuments, cut into a massive basalt outcrop in the forests of the Sanjay Gandhi National Park, on the island of Salsette in the western outskirts of Mumbai, India. They contain Buddhist sculptures and relief carvings, paintings and inscriptions, dating from the 1st century CE to the 10th century CE. Kanheri comes from the Sanskrit Krishnagiri, which means \"black mountain\"."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kashigaon metro station",
-          "note": "Kashigaon is an elevated metro station on the Red Line of the Mumbai Metro, located in Kashigaon, Mira-Bhayandar, Maharashtra, India. The station is owned by the Mumbai Metropolitan Region Development Authority (MMRDA) and was opened to the public on 7 April 2026 as part of Phase 1 of Line 9."
         }
       ]
     },
@@ -412,11 +325,6 @@
           "time": "Morning",
           "activity": "Upvan Lake",
           "note": "Upvan (or Upavan) Lake is located in Thane in the Indian state of Maharashtra. It is known for hosting the Sanskruti Arts Festival."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Dahisar East metro station",
-          "note": "Dahisar (East) is an elevated metro station on the Mumbai Metro in Mumbai, India, located on the Western Express Highway in northern Mumbai. It serves as the northern terminus of both the Yellow Line 2A and the Red Line 7, and as the southern terminus of Line 9, which extends the Red Line northward into Mira-Bhayandar."
         }
       ]
     }
@@ -564,7 +472,7 @@
     },
     {
       "q": "What are the top places to visit in Sanjay Gandhi National Park?",
-      "a": "The top attractions are Kashigaon, St. Jerome Church (Kashimira), Miragaon metro station, Pandurang Wadi metro station, Kanheri Caves."
+      "a": "The top attractions are Kashigaon, St. Jerome Church (Kashimira), Kanheri Caves, Upvan Lake."
     }
   ],
   "seo": {

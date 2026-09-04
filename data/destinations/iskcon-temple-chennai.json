@@ -203,7 +203,11 @@
       "name": "Chennai Central",
       "distance": 20
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Sholinganallur metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -280,25 +284,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rivers_of_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Rivers_of_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/07/Bhaga_River_in_Keylong%2C_Lahaul%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Sholinganallur metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Sholinganallur metro station is an upcoming elevated-interchange metro station on the Red Line and Purple Line of Chennai Metro in Chennai, India. This metro station will be among the 19 elevated stations of Corridor III and 39 elevated stations of Corridor V of the Chennai Metro.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Sunset_over_the_Alaknanda_River_in_Srinagar_Garhwal%2C_Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sholinganallur metro station, ISKCON Temple Chennai"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_beautiful_view_of_the_Himalayan_river_valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/A_beautiful_view_of_the_Himalayan_river_valley_and_mountain_settlement.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/A_beautiful_view_of_Alaknanda_river_valley_from_the_Ganga_Darshan_in_Srinagar_Garhwal%2C_Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -389,11 +374,6 @@
           "time": "Morning",
           "activity": "Golden Beach, Chennai",
           "note": "Golden Beach is a natural urban beach located along the Bay of Bengal in Chennai, Tamil Nadu, India. VGP Golden Beach is a major tourist attraction in Chennai."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Sholinganallur metro station",
-          "note": "Sholinganallur metro station is an upcoming elevated-interchange metro station on the Red Line and Purple Line of Chennai Metro in Chennai, India. This metro station will be among the 19 elevated stations of Corridor III and 39 elevated stations of Corridor V of the Chennai Metro."
         },
         {
           "time": "Evening",
@@ -558,7 +538,7 @@
     },
     {
       "q": "What are the top places to visit in ISKCON Temple Chennai?",
-      "a": "The top attractions are Marine Kingdom, VGP Universal Kingdom, Injambakkam, Golden Beach, Chennai, Sholinganallur metro station."
+      "a": "The top attractions are Marine Kingdom, VGP Universal Kingdom, Injambakkam, Golden Beach, Chennai."
     }
   ],
   "seo": {

@@ -204,7 +204,11 @@
       "name": "Mumbai CSMT",
       "distance": 26
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
+    "nearestMetro": {
+      "name": "Dindoshi metro station",
+      "distance": 2
+    }
   },
   "topPlaces": [
     {
@@ -224,44 +228,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/25/Gokuldham_from_the_Top.jpg",
         "https://images.pexels.com/photos/31087178/pexels-photo-31087178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/c/cd/Athirappilly_Falls_during_Dec2011_0440.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Dindoshi metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Dindoshi is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Dindoshi_metro_station_%28Jan_%2723%29.jpg/1280px-Dindoshi_metro_station_%28Jan_%2723%29.jpg",
-        "alt": "Dindoshi metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c0/Varanasi%2C_India%2C_Ganges_River_after_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Dindoshi_metro_station_%28Jan_%2723%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Athirappilly_Falls_during_Dec2011_0441.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Aarey metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Aarey is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Aarey_metro_station_%28Jan_%2723%29.jpg/1280px-Aarey_metro_station_%28Jan_%2723%29.jpg",
-        "alt": "Aarey metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/View_of_Aarey_Metro_Station.jpg/1280px-View_of_Aarey_Metro_Station.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Aarey_Metro_Station%CB%90_Post_station_tracks.jpg/1280px-Aarey_Metro_Station%CB%90_Post_station_tracks.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Modern_Dairy_Road%2C_Aarey_Colony.jpg"
       ]
     },
     {
@@ -300,25 +266,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/83/Life_of_James_McNeill_Whistler%2C_%281911%29_%2814596883350%29.jpg",
         "https://images.pexels.com/photos/38906568/pexels-photo-38906568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/27877930/pexels-photo-27877930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Kurar metro station",
-      "category": "scenic",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.8,
-      "description": "Kurar is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kurar_metro_station_%28Jan_%2723%29.jpg",
-        "alt": "Kurar metro station"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kurar_tools_A_281.jpg/1280px-Kurar_tools_A_281.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kurar_tools_A_282.jpg/1280px-Kurar_tools_A_282.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Kurar_tools_A_281.jpg"
       ]
     },
     {
@@ -369,16 +316,6 @@
           "time": "Morning",
           "activity": "Yashodham",
           "note": "Yashodham (Hindi: यशोधाम) is a densely populated locality in Mumbai, India, close to Goregaon railway station. It has around a hundred residential buildings ranging from 5 to 30 floors high and forthcoming constructions are expected to be higher."
-        },
-        {
-          "time": "Afternoon",
-          "activity": "Dindoshi metro station",
-          "note": "Dindoshi is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi."
-        },
-        {
-          "time": "Evening",
-          "activity": "Aarey metro station",
-          "note": "Aarey is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi."
         }
       ]
     },
@@ -395,11 +332,6 @@
           "time": "Afternoon",
           "activity": "Whistling Woods International",
           "note": "Whistling Woods International is a film, communication and creative arts institute located in Mumbai, India. Founded in 2006 by Subhash Ghai."
-        },
-        {
-          "time": "Evening",
-          "activity": "Kurar metro station",
-          "note": "Kurar is an elevated metro station on the North-South corridor of the Red Line 7 of Mumbai Metro in Mumbai, India. This metro station was inaugurated on 2 April 2022 by Prime Minister Narendra Modi."
         }
       ]
     },
@@ -561,7 +493,7 @@
     },
     {
       "q": "What are the top places to visit in Wagheshwari Temple?",
-      "a": "The top attractions are Yashodham, Dindoshi metro station, Aarey metro station, Aarey Milk Colony, Whistling Woods International."
+      "a": "The top attractions are Yashodham, Aarey Milk Colony, Whistling Woods International, Film City, Mumbai."
     }
   ],
   "seo": {
