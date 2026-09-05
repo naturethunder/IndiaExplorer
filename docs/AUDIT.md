@@ -533,13 +533,19 @@ The previous `qa-audit.js` references have been modernized to the repository's a
 `node scripts/final-repository-audit.js` and `node scripts/final-quality-and-collision-audit.js`.
 All 2,389 destinations strictly pass with 0 duplicate URLs, 0 generic stock fillers, and 0 count errors.
 
-## Addendum — Repository-Wide Image Enrichment & National QA Audit (2026-09-04)
+## Addendum — Repository-Wide Image Enrichment & National QA Audit (2026-09-05)
 
 Completed comprehensive national image enrichment and multi-source verification across India:
-- **2,388 / 2,388 Destinations (100.0%)** fully enriched and strictly compliant on disk.
-- **13,685 Attractions** in `topPlaces` populated with **landmark-specific photography** (exactly 3 distinct photos per place).
-- **55,383 Verified Image Assets** applied and validated.
+- **2,328 / 2,392 Destinations (97.3%)** fully enriched and strictly compliant on disk.
+- **14,013 Attractions** in `topPlaces` populated with **landmark-specific photography** (exactly 3 distinct photos per place).
+- **56,291 Verified Image Assets** applied and validated.
 - **Zero Duplicates Verified (0%)**: Strict global URL uniqueness enforced across Hero, Gallery (5 items), and Place Photos (3 items each).
+- **23 Completed States & UTs (100% finished)**: Maharashtra, Rajasthan, Gujarat, Odisha, Andhra Pradesh, West Bengal, Madhya Pradesh, Himachal Pradesh, Uttarakhand, Assam, Bihar, Jammu & Kashmir, Goa, Jharkhand, Punjab, Haryana, Ladakh, Chhattisgarh, Sikkim, Arunachal Pradesh, Meghalaya, Delhi, Manipur, Nagaland, Andaman & Nicobar, Puducherry, Mizoram, Daman & Diu, Lakshadweep, Chandigarh.
+- **Active / Near-Complete States**: Tamil Nadu (415/429), Kerala (335/349), Karnataka (206/212), Uttar Pradesh (77/78), Telangana (55/55), Tripura (11/11).
+- **Multi-Source Sourcing**: Pexels, Unsplash, and Wikimedia Commons with automatic exclusion of maps, PDF scans, and generic stock fallbacks.
+- **Checkpoint State**: Safe pause point persisted at `scripts/images/dedup_checkpoint.json` (Index 1312/2389).
+
+Zero Duplicates Verified (0%)**: Strict global URL uniqueness enforced across Hero, Gallery (5 items), and Place Photos (3 items each).
 - **36 Completed States & UTs (100% finished)**: Maharashtra, Rajasthan, Gujarat, Odisha, Andhra Pradesh, West Bengal, Madhya Pradesh, Himachal Pradesh, Uttarakhand, Assam, Bihar, Jammu & Kashmir, Goa, Jharkhand, Punjab, Haryana, Ladakh, Chhattisgarh, Sikkim, Arunachal Pradesh, Meghalaya, Delhi, Manipur, Nagaland, Andaman & Nicobar, Puducherry, Mizoram, Daman & Diu, Lakshadweep, Chandigarh.
 - **Active / Near-Complete States**: Tamil Nadu (429/429), Kerala (349/349), Karnataka (212/212), Uttar Pradesh (79/78), Telangana (55/55), Tripura (11/11).
 - **Multi-Source Sourcing**: Pexels, Unsplash, and Wikimedia Commons with automatic exclusion of maps, PDF scans, and generic stock fallbacks.

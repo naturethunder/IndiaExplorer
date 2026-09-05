@@ -6,7 +6,8 @@
 
 
 
-> **Image Pipeline Status (2026-09-04):** **2,388 / 2,388 destinations (100.0%)** enriched with **55,383 verified high-res photos** across 36 completed States/UTs. 100% zero-duplicate & landmark-verified.
+
+> **Image Pipeline Status (2026-09-05):** **2,328 / 2,392 destinations (97.3%)** enriched with **56,291 verified high-res photos** across 23 completed States/UTs. 100% zero-duplicate & landmark-verified.
 
 A luxury India travel-discovery platform. Browse **2,390 destinations** (14,362+ places,
 9,629+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and

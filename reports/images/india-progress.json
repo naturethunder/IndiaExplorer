@@ -1,84 +1,84 @@
 {
-  "updatedAt": "2026-09-04T21:59:26.490Z",
+  "updatedAt": "2026-09-05T20:36:43.862Z",
   "overallProgress": {
-    "totalDestinations": 2388,
-    "enrichedDestinations": 2388,
-    "pendingDestinations": 0,
-    "percentComplete": "100.0%",
-    "totalPlaces": 13685,
-    "totalAppliedImages": 55383,
-    "completedStatesCount": 36,
+    "totalDestinations": 2392,
+    "enrichedDestinations": 2328,
+    "pendingDestinations": 64,
+    "percentComplete": "97.3%",
+    "totalPlaces": 14013,
+    "totalAppliedImages": 56291,
+    "completedStatesCount": 23,
     "totalStatesCount": 36
   },
   "checkpoint": {
     "resumeMode": "DEDUPLICATION_AND_QUALITY_RESOLVER",
     "nextFileIndex": 1312,
-    "totalFiles": 2388,
+    "totalFiles": 2392,
     "checkpointFile": "scripts/images/dedup_checkpoint.json"
   },
   "stateBreakdown": [
     {
       "state": "Tamil Nadu",
       "total": 429,
-      "enriched": 429,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 2902,
-      "photos": 11280
+      "enriched": 415,
+      "remaining": 14,
+      "pct": "96.7",
+      "places": 3065,
+      "photos": 11739
     },
     {
       "state": "Kerala",
       "total": 349,
-      "enriched": 349,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 2693,
-      "photos": 10173
+      "enriched": 335,
+      "remaining": 14,
+      "pct": "96.0",
+      "places": 2730,
+      "photos": 10268
     },
     {
       "state": "Maharashtra",
       "total": 271,
-      "enriched": 271,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 1243,
-      "photos": 5355
+      "enriched": 254,
+      "remaining": 17,
+      "pct": "93.7",
+      "places": 1277,
+      "photos": 5431
     },
     {
       "state": "Karnataka",
       "total": 212,
-      "enriched": 212,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 1177,
-      "photos": 4803
+      "enriched": 206,
+      "remaining": 6,
+      "pct": "97.2",
+      "places": 1203,
+      "photos": 4873
     },
     {
       "state": "Rajasthan",
       "total": 96,
-      "enriched": 96,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 390,
-      "photos": 1746
+      "enriched": 95,
+      "remaining": 1,
+      "pct": "99.0",
+      "places": 383,
+      "photos": 1721
     },
     {
       "state": "Gujarat",
       "total": 81,
-      "enriched": 81,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 345,
-      "photos": 1521
+      "enriched": 80,
+      "remaining": 1,
+      "pct": "98.8",
+      "places": 348,
+      "photos": 1528
     },
     {
       "state": "Odisha",
       "total": 81,
-      "enriched": 81,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 343,
-      "photos": 1515
+      "enriched": 79,
+      "remaining": 2,
+      "pct": "97.5",
+      "places": 345,
+      "photos": 1519
     },
     {
       "state": "Andhra Pradesh",
@@ -86,8 +86,8 @@
       "enriched": 80,
       "remaining": 0,
       "pct": "100.0",
-      "places": 409,
-      "photos": 1707
+      "places": 423,
+      "photos": 1749
     },
     {
       "state": "West Bengal",
@@ -95,26 +95,26 @@
       "enriched": 80,
       "remaining": 0,
       "pct": "100.0",
-      "places": 553,
-      "photos": 2139
+      "places": 561,
+      "photos": 2163
     },
     {
       "state": "Uttar Pradesh",
       "total": 79,
-      "enriched": 79,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 428,
-      "photos": 1758
+      "enriched": 77,
+      "remaining": 2,
+      "pct": "97.5",
+      "places": 444,
+      "photos": 1804
     },
     {
       "state": "Madhya Pradesh",
       "total": 75,
-      "enriched": 75,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 270,
-      "photos": 1260
+      "enriched": 73,
+      "remaining": 2,
+      "pct": "97.3",
+      "places": 279,
+      "photos": 1282
     },
     {
       "state": "Himachal Pradesh",
@@ -122,8 +122,8 @@
       "enriched": 56,
       "remaining": 0,
       "pct": "100.0",
-      "places": 250,
-      "photos": 1086
+      "places": 251,
+      "photos": 1089
     },
     {
       "state": "Telangana",
@@ -131,8 +131,8 @@
       "enriched": 55,
       "remaining": 0,
       "pct": "100.0",
-      "places": 270,
-      "photos": 1140
+      "places": 289,
+      "photos": 1197
     },
     {
       "state": "Uttarakhand",
@@ -140,8 +140,8 @@
       "enriched": 51,
       "remaining": 0,
       "pct": "100.0",
-      "places": 233,
-      "photos": 1005
+      "places": 234,
+      "photos": 1008
     },
     {
       "state": "Assam",
@@ -158,17 +158,17 @@
       "enriched": 38,
       "remaining": 0,
       "pct": "100.0",
-      "places": 295,
-      "photos": 1113
+      "places": 228,
+      "photos": 912
     },
     {
       "state": "Jammu & Kashmir",
       "total": 36,
-      "enriched": 36,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 194,
-      "photos": 798
+      "enriched": 34,
+      "remaining": 2,
+      "pct": "94.4",
+      "places": 192,
+      "photos": 790
     },
     {
       "state": "Goa",
@@ -176,17 +176,17 @@
       "enriched": 33,
       "remaining": 0,
       "pct": "100.0",
-      "places": 220,
-      "photos": 858
+      "places": 248,
+      "photos": 942
     },
     {
       "state": "Jharkhand",
       "total": 33,
-      "enriched": 33,
-      "remaining": 0,
-      "pct": "100.0",
+      "enriched": 32,
+      "remaining": 1,
+      "pct": "97.0",
       "places": 158,
-      "photos": 672
+      "photos": 671
     },
     {
       "state": "Punjab",
@@ -203,8 +203,8 @@
       "enriched": 31,
       "remaining": 0,
       "pct": "100.0",
-      "places": 168,
-      "photos": 690
+      "places": 176,
+      "photos": 714
     },
     {
       "state": "Ladakh",
@@ -218,11 +218,11 @@
     {
       "state": "Chhattisgarh",
       "total": 18,
-      "enriched": 18,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 65,
-      "photos": 303
+      "enriched": 17,
+      "remaining": 1,
+      "pct": "94.4",
+      "places": 66,
+      "photos": 305
     },
     {
       "state": "Sikkim",
@@ -261,6 +261,15 @@
       "photos": 255
     },
     {
+      "state": "Delhi",
+      "total": 10,
+      "enriched": 10,
+      "remaining": 0,
+      "pct": "100.0",
+      "places": 84,
+      "photos": 312
+    },
+    {
       "state": "Manipur",
       "total": 9,
       "enriched": 9,
@@ -275,8 +284,8 @@
       "enriched": 9,
       "remaining": 0,
       "pct": "100.0",
-      "places": 49,
-      "photos": 201
+      "places": 46,
+      "photos": 192
     },
     {
       "state": "Andaman & Nicobar",
@@ -293,17 +302,8 @@
       "enriched": 7,
       "remaining": 0,
       "pct": "100.0",
-      "places": 46,
-      "photos": 180
-    },
-    {
-      "state": "Delhi",
-      "total": 6,
-      "enriched": 6,
-      "remaining": 0,
-      "pct": "100.0",
-      "places": 52,
-      "photos": 192
+      "places": 51,
+      "photos": 195
     },
     {
       "state": "Mizoram",
@@ -326,11 +326,11 @@
     {
       "state": "Lakshadweep",
       "total": 2,
-      "enriched": 2,
-      "remaining": 0,
-      "pct": "100.0",
+      "enriched": 1,
+      "remaining": 1,
+      "pct": "50.0",
       "places": 4,
-      "photos": 24
+      "photos": 23
     },
     {
       "state": "Chandigarh",
