@@ -73,10 +73,10 @@ trip_planner/
 ├── index.html              # Home — GSAP hero parallax, category strip, interactive month showcase, SVG India map, featured grids
 ├── destinations.html       # Explore — Editorial hero with GSAP live counter, instant search, sticky category pills, dark filter rail
 ├── ai-finder.html          # ✨ AI Trip Finder — natural-language matcher, fully local & keyless
-├── destination.html        # ⭐ The ONE real detail page (all 2,389 render via ?slug=, GSAP parallax, weather, stays, routes & similar getaways)
+├── destination.html        # ⭐ The ONE real detail page (all 2,392 render via ?slug=, GSAP parallax, weather, stays, routes & similar getaways)
 ├── about / privacy / terms / contact.html   # Company pages (contact form, no backend)
 ├── stubs/
-│   └── <slug>.html  (×2389)  # Redirect stubs → destination.html?slug=<slug>
+│   └── <slug>.html  (×2392)  # Redirect stubs → destination.html?slug=<slug>
 │
 ├── css/
 │   ├── styles.css          # Custom component classes (.card, .btn, carousels, …)
@@ -87,8 +87,8 @@ trip_planner/
 │
 ├── data/                             # ← the data layer (JSON, no hardcoded content)
 │   ├── destinations/
-│   │   ├── index.json      # Light manifest: 2,389 summaries + filter meta (tiers/types/states/months)
-│   │   └── <slug>.json  (×2389)  # Full per-destination detail (schema below)
+│   │   ├── index.json      # Light manifest: 2,392 summaries + filter meta (tiers/types/states/months)
+│   │   └── <slug>.json  (×2392)  # Full per-destination detail (schema below)
 │   ├── search-index.json   # AI-finder haystack: precomputed place/hotel names + tiers + text
 │   ├── bulk/<state>.json   # Bulk-ingest output, merged into DESTINATIONS by build-json-data.js
 │   └── coord-overrides.json  # Manual lat/lng/state fixes for bad upstream coords
@@ -116,7 +116,7 @@ trip_planner/
 │   ├── geo-reference.js    # Offline airports/railheads/cities → real nearest-reach + city routes
 │   ├── build-css.js        # Generates css/tailwind.css (static utility CSS)
 │   ├── build-india-map.js  # Generates data/india-map.js (state SVG paths for the home map)
-│   ├── build-stubs.js      # Regenerates the 2,389 redirect stubs
+│   ├── build-stubs.js      # Regenerates the 2,392 redirect stubs
 │   ├── bulk/               # Bulk-ingest pipeline (Wikidata + Wikipedia) + refetch-places-overrides.js
 │   ├── build-photos*.js / build-place-photos*.js  # Real-photo fetchers (legacy source data)
 │   └── build-destinations-doc.js   # Regenerates docs/DESTINATIONS.md

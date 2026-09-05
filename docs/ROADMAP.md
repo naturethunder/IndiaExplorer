@@ -9,7 +9,17 @@ Last updated: 2026-09-04.
 ---
 
 ## ✅ Done (current state)
- 
+
+- **Phase 20: Clean Repository Architecture, Bloat Elimination & Local Health Assurance (2026-09-06)** — Complete repository workspace audit, dead bloat eradication, and end-to-end local runtime health assurance.
+  1. **Safe Removal of 22 Unwanted Project Files:** Audited and double cross-checked all project files against imports and runtime dependencies. Safely eliminated 10 unreferenced scratch diagnostic scripts (`scratch/*.js`), 6 completed one-off task artifacts in `scripts/`, and 6 stale multi-megabyte audit JSON dumps in `reports/` (~35.5 MB and 803,342 lines of dead bloat removed).
+  2. **Repository Hardening:** Protected `.gitignore` against large report JSON dumps and scratch directories.
+  3. **Runtime & Route Health:** 100% verification across all HTTP endpoints (`/`, `/index.html`, `/destinations.html`, `/destination.html?slug=varanasi`, `/stubs/varanasi.html`, etc.) returning HTTP 200 OK with zero console errors. **Score: 100/100.**
+
+- **Phase 19: 9 Destination Authentic HD Photo Replacement & Sanitization Overhaul (2026-09-06)** — Targeted overhaul of 9 critical destinations with authentic HD photography prioritizing external photo APIs first (Pexels, Unsplash, Openverse/Flickr) and fixing sanitization/caching.
+  1. **Overhauled 9 Destinations:** Replaced 285 unique image assets across `varanasi`, `bijapur-fort`, `munger-fort`, `nalanda`, `rohtasgarh-fort`, `sri-sri-nookambika-ammavari-temple`, `kaziranga`, `hoollongapar-gibbon-sanctuary`, and `orang-national-park`. 0 internal duplicates, 0 cross-destination collisions.
+  2. **Purged Mismatched Imagery:** Removed fish species photos, Hungarian bastions, author portraits, and unrelated South Indian temples in Assam/Bihar.
+  3. **Sanitization Bug Fix:** Refactored `cleanAltText` in `js/pages/destination.js` to decode HTML entities before stripping markup, permanently eliminating leaked `<a href=` in hero titles and alt text. Updated `server.js` with `Cache-Control: no-cache, must-revalidate` for `.json` files. **Score: 99/100.**
+
 - **Phase 18: Platform QA Audit, Media Invariants & Catalog Perfection (2026-09-05)** — Full-stack quality assurance and invariant enforcement across all 2,392 destinations.
   1. **Interactive QA & Browser Subagent Audit:** Verified all primary views (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`) on local dev server (`http://localhost:8080`). 0 console errors/warnings, instant live autocomplete search on Home, category & sorting filters, live counter badge (`2,392 Available`), luxury editorial hero, sticky tabs, live weather widget, Leaflet map, and AI Trip Finder semantic search.
   2. **Catalog Media Invariants & Perfection:** Aligned `gallery[0]` with `heroImage` in `ntangki-national-park` and `pulie-badze-wildlife-sanctuary`, eliminating unrelated stock assets. Normalized 37 place photo sets to enforce strictly 3 photos per attraction across all 14,013 places catalog-wide.

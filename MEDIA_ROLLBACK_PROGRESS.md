@@ -137,3 +137,18 @@ A rigorous deep overhaul was executed across 9 critical destinations to enforce 
 3. **Global Duplicate Matrix**:
    - Across all 9 destination files, exactly **285 distinct image URLs** are referenced with **0 internal duplicates** and **0 cross-destination collisions**.
    - Invariant verified: Every destination has exactly 5 gallery images (`heroImage.src === gallery[0].src`), and each nearby attraction has strictly 3 photos (`photos.length === 3`).
+
+## Phase 20 — Clean Repository Architecture, Bloat Elimination & Local Health Assurance (2026-09-06)
+
+A comprehensive repository audit was conducted to safely eliminate bloat and obsolete task artifacts while ensuring 100% preservation of core architecture and functional code:
+
+### Removed Bloat Items:
+1. **Scratch Diagnostic Scripts (`scratch/`)**: Deleted 10 unreferenced diagnostic scripts from previous hotel debugging sessions.
+2. **Completed One-Off Task Scripts (`scripts/`)**: Deleted 6 completed migration/search artifacts (`fakim_hd_candidates.json`, `search_fakim_hd.js`, `test-clean-alt.js`, `fix-9-destinations.js`, `finalize-remaining-3.js`, `fix-referrer-policy.js`).
+3. **Stale Historical Report Dumps (`reports/`)**: Deleted 6 obsolete multi-megabyte audit JSON files (`comprehensive-image-quality-audit.json`, `duplicate-images-full-audit.json`, `person-images-found.json`, `person-images-verified.json`, `repaired-28-heroes.json`, `detailed-image-duplication-analysis.json`), eliminating ~35.5 MB and 803,342 lines of dead bloat from Git.
+4. **Hardened `.gitignore`**: Added entries for `scratch/` and massive audit report dumps.
+
+### Verification:
+- All core application pages, redirect stubs (2,392 in `stubs/`), datasets (2,392 in `data/destinations/`), and stylesheets verified intact.
+- Dev server route verification confirmed 100% of endpoints returning HTTP 200 OK.
+- Browser subagent verified 0 JavaScript console errors and clean luxury UI rendering across Home and Destination pages.
