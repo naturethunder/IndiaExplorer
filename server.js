@@ -109,7 +109,7 @@ const server = http.createServer((req, res) => {
     if (req.headers['if-none-match'] === etag) {
       res.writeHead(304, {
         'ETag': etag,
-        'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=86400, stale-while-revalidate=3600',
+        'Cache-Control': (ext === '.html' || ext === '.json') ? 'no-cache' : 'public, max-age=86400, stale-while-revalidate=3600',
         'Access-Control-Allow-Origin': '*',
       });
       res.end();
@@ -121,7 +121,8 @@ const server = http.createServer((req, res) => {
     if (ext === '.html') {
       cacheControl = 'no-cache';
     } else if (ext === '.json') {
-      cacheControl = 'public, max-age=3600, stale-while-revalidate=600';
+      // Dev: always revalidate JSON data so fixes show immediately without hard refresh
+      cacheControl = 'no-cache';
     }
 
     const headers = {

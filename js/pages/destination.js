@@ -149,24 +149,40 @@ function main(dest, idx) {
   function cleanAltText(str) {
     if (!str || typeof str !== 'string') return '';
     let clean = str;
+    // Step 1: Remove HTML comments
     clean = clean.replace(/<!--[\s\S]*?-->/g, ' ');
-    clean = clean.replace(/<[a-zA-Z\/][^>]*>?/g, ' ');
-    clean = clean.replace(/<[a-zA-Z]+(?:\s+[^>]*)?$/g, ' ');
-    clean = clean.replace(/&amp;/gi, '&')
-                 .replace(/&quot;/gi, '"')
-                 .replace(/&#039;|&apos;/gi, "'")
-                 .replace(/&lt;/gi, '<')
-                 .replace(/&gt;/gi, '>')
-                 .replace(/&[a-z0-9]+;/gi, ' ');
-    clean = clean.replace(/<[^>]*>?/g, ' ');
+    // Step 2: Decode HTML entities FIRST (so &lt;a href= becomes <a href=)
+    clean = clean
+      .replace(/&amp;/gi, '&')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#039;|&apos;/gi, "'")
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/&[a-z0-9#]+;/gi, ' ');
+    // Step 3: Now strip ALL HTML tags (including those decoded from entities)
+    // Use a loop to handle nested/malformed tags
+    let prev = '';
+    while (prev !== clean) {
+      prev = clean;
+      clean = clean.replace(/<[^>]*>/g, ' ');          // complete tags
+      clean = clean.replace(/<[a-zA-Z\/][^<]*/g, ' '); // unclosed tags (no > found)
+    }
+    // Step 4: Strip remaining angle brackets as a safety net
+    clean = clean.replace(/[<>]/g, ' ');
+    // Step 5: Strip raw URLs
     clean = clean.replace(/(?:https?:\/\/|\/\/)\S+/gi, ' ');
+    // Step 6: Remove common Wikimedia file prefix patterns
     clean = clean.replace(/^File:[^.]+\.(?:jpe?g|png|webp)/i, ' ');
     clean = clean.replace(/^This is a photo of\s*/i, ' ');
+    // Step 7: Normalise whitespace
     clean = clean.replace(/[\r\n\t]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+    // Step 8: Strip trailing/leading punctuation
     clean = clean.replace(/[-—–:]\s*(?:This is a photo of|A photo of|View of)?\s*$/i, '');
     clean = clean.replace(/^[-—–:;,./|]\s*/, '').replace(/\s*[-—–:;,./|]$/, '').trim();
     return clean;
   }
+
 
   // Resolve heroImage regardless of whether it's a string URL or {src,alt} object
   const heroSrc = typeof dest.heroImage === 'string' ? dest.heroImage
