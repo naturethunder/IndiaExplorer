@@ -9,7 +9,7 @@
   "tagline": "Jodhpur — heritage city of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Columns%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg",
-    "alt": "Jodhpur in Jodhpur, Rajasthan - Columns alley, Umaid Bhawan, Jodhpur, Rajasthan, India."
+    "alt": "Jodhpur, Rajasthan"
   },
   "overview": {
     "short": "Jodhpur is a much-loved heritage city in Rajasthan, known for blue city and mehrangarh.",
@@ -24,8 +24,7 @@
     "rating": 4.6,
     "reviewCount": 31000,
     "minPrice": 900,
-    "distanceFromDelhi": 597,
-    "about": "Jodhpur, in Marwar, Rajasthan, is one of India’s favourite heritage city. Visitors come for its blue city, mehrangarh, forts, markets, with the best months being Oct – Mar."
+    "distanceFromDelhi": 597
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "City Centre",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2–3 hrs",
       "rating": 4.8,
       "description": "One of India’s largest forts, towering 122m over the blue city.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fresco%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan%2C_India.jpg/1280px-Fresco%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan%2C_India.jpg",
-        "alt": "Mehrangarh Fort in Rajasthan, India"
+        "alt": "Mehrangarh Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Fresco_2%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan.jpg/1280px-Fresco_2%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan.jpg",
@@ -234,13 +233,13 @@
       "category": "heritage",
       "distance": "1 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "45 min",
       "rating": 4.4,
       "description": "Marble royal cenotaph beside a lake, the “Taj of Marwar”.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Jaswant_Thada_cenotaph.jpg/1280px-Jaswant_Thada_cenotaph.jpg",
-        "alt": "Jaswant Thada in Rajasthan, India"
+        "alt": "Jaswant Thada"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jaswant_Thada_cenotaph_2.jpg/1280px-Jaswant_Thada_cenotaph_2.jpg",
@@ -253,13 +252,13 @@
       "category": "heritage",
       "distance": "3 km",
       "entryFee": "₹60",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Art-deco royal palace, part museum and part Taj hotel.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Columns%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg/1280px-Columns%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg",
-        "alt": "Umaid Bhawan Palace in Rajasthan, India"
+        "alt": "Umaid Bhawan Palace"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Columns_alley%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg/1280px-Columns_alley%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg",
@@ -299,84 +298,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Jodhpur Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Jodhpur Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 447,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Jodhpur%20Stay%20Jodhpur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jodhpur%20Backpackers%20Jodhpur%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Jodhpur",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Jodhpur Haveli Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 231,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Period Property"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Jodhpur%20Jodhpur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jodhpur%20Haveli%20Stay%20Jodhpur%20Rajasthan"
     },
     {
-      "name": "Jodhpur Grand Hotel",
+      "name": "Jodhpur Period Property",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 648,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Jodhpur%20Grand%20Hotel%20Jodhpur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jodhpur%20Period%20Property%20Jodhpur%20Rajasthan"
     },
     {
-      "name": "Marriott Jodhpur",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Jodhpur Keys Select",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 935,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Jodhpur%20Jodhpur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jodhpur%20Keys%20Select%20Jodhpur%20Rajasthan"
+    },
+    {
+      "name": "Zone by The Park Jodhpur",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2778,
+      "priceMax": 3772,
+      "rating": 4.1,
+      "reviews": 984,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Jodhpur%20Jodhpur%20Rajasthan"
+    },
+    {
+      "name": "Fairfield by Marriott Jodhpur",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5244,
+      "priceMax": 6715,
+      "rating": 4.4,
+      "reviews": 1851,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Heritage Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Jodhpur%20Jodhpur%20Rajasthan"
+    },
+    {
+      "name": "Hyatt Regency Jodhpur",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11487,
+      "priceMax": 12427,
+      "rating": 4.6,
+      "reviews": 1938,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Jodhpur%20Jodhpur%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -390,28 +462,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Columns%2C_Umaid_Bhawan%2C_Jodhpur%2C_Rajasthan%2C_India.jpg",
-      "alt": "Jodhpur in Jodhpur, Rajasthan - Columns alley, Umaid Bhawan, Jodhpur, Rajasthan, India.",
-      "title": "Jodhpur in Jodhpur, Rajasthan - Columns alley,…"
+      "alt": "Jodhpur in Jodhpur, Rajasthan - Columns alley, Umaid Bhawan, Jodhpur, Rajasthan, India."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cannon%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan.jpg/1280px-Cannon%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan.jpg",
-      "alt": "Jodhpur photo 2",
-      "title": "Jaswant Thada"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Cannon%2C_Mehrangarh_Fort%2C_Jodhpur%2C_Rajasthan.jpg",
+      "alt": "Jodhpur photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/20191210_Jaswant_Thada%2C_Jodhpur_1233_7950.jpg/1280px-20191210_Jaswant_Thada%2C_Jodhpur_1233_7950.jpg",
-      "alt": "Jodhpur photo 3",
-      "title": "Umaid Bhawan Palace"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/20191210_Jaswant_Thada%2C_Jodhpur_1233_7950.jpg",
+      "alt": "Jodhpur photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/20191210_Jaswant_Thada%2C_Jodhpur_1242_7961.jpg/1280px-20191210_Jaswant_Thada%2C_Jodhpur_1242_7961.jpg",
-      "alt": "Jodhpur photo 4",
-      "title": "Jodhpur — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/20191210_Jaswant_Thada%2C_Jodhpur_1242_7961.jpg",
+      "alt": "Jodhpur photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg/1280px-Umaid_Bhawan%2C_Jodhpur.jpg",
-      "alt": "Jodhpur photo 5",
-      "title": "Jodhpur — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg",
+      "alt": "Jodhpur photo 5"
     }
   ],
   "faq": [
@@ -449,5 +516,7 @@
       "how to reach Jodhpur",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

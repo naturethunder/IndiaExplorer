@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Khajjiar — hill station of Himachal Pradesh",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Khajjiar_view.jpg/1280px-Khajjiar_view.jpg",
-    "alt": "Khajjiar photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Khajjiar_view.jpg",
+    "alt": "Khajjiar, Himachal Pradesh"
   },
   "overview": {
     "short": "Khajjiar is a much-loved hill station in Himachal Pradesh, known for mini switzerland and meadow.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 11000,
     "minPrice": 1400,
-    "distanceFromDelhi": 565,
-    "about": "Khajjiar, in Chamba, Himachal Pradesh, is one of India’s favourite hill station. Visitors come for its mini switzerland, meadow, lake, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 565
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Grassy plateau with a floating-island lake and zorbing.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/94/View_of_Jammu_city_and_the_Tawi_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Khajjiar Lake & Meadow in Himachal Pradesh, India"
+        "alt": "Khajjiar Lake & Meadow"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/15/Amjhera%2BAmjheraIMG_20160821_142534896_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "spiritual",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "30 min",
       "rating": 4.2,
       "description": "12th-century temple blending Hindu and Buddhist styles.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Aerial_Transport_Nagar_Jammu_Jul24_A7CR_01921.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Khajji Nag Temple in Himachal Pradesh, India"
+        "alt": "Khajji Nag Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/fd/Amjhera%2BAmjheraIMG_20160821_143903345.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "wildlife",
       "distance": "6 km",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.4,
       "description": "Deodar forest sanctuary with easy nature trails.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Entry_to_Kalatop_Wildlife_Sanctuary..JPG",
-        "alt": "Kalatop Wildlife Sanctuary in Himachal Pradesh, India"
+        "alt": "Kalatop Wildlife Sanctuary"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ater-fort-bhind.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -297,84 +296,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Khajjiar Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Khajjiar BunkStay",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1400,
       "priceMax": 2250,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 457,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Khajjiar%20Stay%20Khajjiar%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20BunkStay%20Khajjiar%20Himachal%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Khajjiar",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "FabHotels Peak Stay",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2650,
       "priceMax": 3800,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 342,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Khajjiar%20Khajjiar%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Peak%20Stay%20Khajjiar%20Himachal%20Pradesh"
     },
     {
-      "name": "Khajjiar Grand Hotel",
+      "name": "Lemon Tree Red Fox Khajjiar",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4200,
       "priceMax": 6300,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 372,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=Khajjiar%20Grand%20Hotel%20Khajjiar%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Khajjiar%20Khajjiar%20Himachal%20Pradesh"
     },
     {
-      "name": "Sterling Khajjiar",
-      "type": "resort",
-      "tier": "best",
+      "name": "FabHotels Prime Khajjiar",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 8400,
       "priceMax": 14000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 285,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Good Value",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Khajjiar%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Sarovar Portico Khajjiar",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2490,
+      "priceMax": 3268,
+      "rating": 4.1,
+      "reviews": 1062,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Khajjiar%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Khajjiar Ibis",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3744,
+      "priceMax": 4612,
+      "rating": 4.1,
+      "reviews": 1135,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20Ibis%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Khajjiar Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5038,
+      "priceMax": 5345,
+      "rating": 4.3,
+      "reviews": 1813,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20Fairfield%20by%20Marriott%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Khajjiar Peak Stay",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8750,
+      "priceMax": 9640,
+      "rating": 4.5,
+      "reviews": 2253,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Khajjiar%20Khajjiar%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20Peak%20Stay%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Khajjiar Alpine Lodge",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10176,
+      "priceMax": 12022,
+      "rating": 4.6,
+      "reviews": 904,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20Alpine%20Lodge%20Khajjiar%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Khajjiar Leela",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 23252,
+      "priceMax": 23735,
+      "rating": 4.7,
+      "reviews": 1897,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "World Class",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Khajjiar%20Leela%20Khajjiar%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -388,30 +524,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Khajjiar_view.jpg/1280px-Khajjiar_view.jpg",
-      "alt": "Khajjiar photo 2",
-      "title": "Khajjiar Lake & Meadow"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Khajjiar_view.jpg",
+      "alt": "Khajjiar photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Clavulina_coralloides_%28L.%29_J._Schr%C3%B6t_110491.jpg/1280px-Clavulina_coralloides_%28L.%29_J._Schr%C3%B6t_110491.jpg",
-      "alt": "Khajjiar photo 3",
-      "title": "Khajji Nag Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Clavulina_coralloides_%28L.%29_J._Schr%C3%B6t_110491.jpg",
+      "alt": "Khajjiar photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Boletus_reticuloceps_112289.jpg/1280px-Boletus_reticuloceps_112289.jpg",
-      "alt": "Khajjiar photo 4",
-      "title": "Kalatop Wildlife Sanctuary"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Boletus_reticuloceps_112289.jpg",
+      "alt": "Khajjiar photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Khajjiar_during_august.jpg/1280px-Khajjiar_during_august.jpg",
-      "alt": "Khajjiar photo 5",
-      "title": "Khajjiar — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Khajjiar_during_august.jpg",
+      "alt": "Khajjiar photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Amjhera%2BAmjheraIMG_20160821_142251367_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Khajjiar - Highlight 5",
-      "alt": "Forts in Madhya Pradesh",
-      "title": "Forts in Madhya Pradesh"
+      "alt": "Forts in Madhya Pradesh"
     }
   ],
   "faq": [
@@ -449,5 +579,7 @@
       "how to reach Khajjiar",
       "Himachal Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

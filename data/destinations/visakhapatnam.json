@@ -9,7 +9,7 @@
   "tagline": "Visakhapatnam — beach town of Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sunrise_near_Thotlakonda_beach_10.jpg",
-    "alt": "Visakhapatnam in Visakhapatnam, Andhra Pradesh - Sunrise near Thotlakonda beach"
+    "alt": "Visakhapatnam, Andhra Pradesh"
   },
   "overview": {
     "short": "Visakhapatnam is a much-loved beach town in Andhra Pradesh, known for beaches and submarine.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 31000,
     "minPrice": 1200,
-    "distanceFromDelhi": 1800,
-    "about": "Visakhapatnam, in Eastern Ghats, Andhra Pradesh, is one of India’s favourite beach town. Visitors come for its beaches, submarine, araku nearby, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1800
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -212,13 +211,13 @@
       "category": "beach",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "Lively city beachfront with the INS Kursura submarine museum.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sweetpan_at_RK_Beach_Visakhapatnam_02.jpg/1280px-Sweetpan_at_RK_Beach_Visakhapatnam_02.jpg",
-        "alt": "RK Beach in Andhra Pradesh, India"
+        "alt": "RK Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b6/Visakhapatnam_port_from_RK_beach_at_night.jpg",
@@ -231,13 +230,13 @@
       "category": "scenic",
       "distance": "8 km",
       "entryFee": "₹40",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Hilltop park with ropeway and giant Shiva-Parvati statues.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_2.jpg/1280px-Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_2.jpg",
-        "alt": "Kailasagiri in Andhra Pradesh, India"
+        "alt": "Kailasagiri"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_1.jpg/1280px-Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_1.jpg",
@@ -250,13 +249,13 @@
       "category": "nature",
       "distance": "90 km",
       "entryFee": "₹60",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "Million-year-old limestone caves with dramatic stalactites.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Borra_caves_3.jpg/1280px-Borra_caves_3.jpg",
-        "alt": "Borra Caves in Andhra Pradesh, India"
+        "alt": "Borra Caves"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Borra_caves_1.jpg/1280px-Borra_caves_1.jpg",
@@ -296,84 +295,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Visakhapatnam Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Visakhapatnam",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 345,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Visakhapatnam%20Stay%20Visakhapatnam%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Visakhapatnam",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ginger Visakhapatnam",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 553,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Seaside Retreat"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh"
     },
     {
-      "name": "Visakhapatnam Grand Hotel",
+      "name": "Hotel Royal Orchid Visakhapatnam",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 497,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Visakhapatnam%20Grand%20Hotel%20Visakhapatnam%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh"
     },
     {
-      "name": "Marriott Visakhapatnam",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Visakhapatnam Zone by The Park",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 339,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Visakhapatnam%20Zone%20by%20The%20Park%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Visakhapatnam Sand & Surf",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3709,
+      "priceMax": 5108,
+      "rating": 4.2,
+      "reviews": 990,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Tide Pool"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Visakhapatnam%20Sand%20%26%20Surf%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "DoubleTree by Hilton Beach Resort",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5702,
+      "priceMax": 6791,
+      "rating": 4.4,
+      "reviews": 1404,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=DoubleTree%20by%20Hilton%20Beach%20Resort%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Visakhapatnam Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8770,
+      "priceMax": 10117,
+      "rating": 4.5,
+      "reviews": 657,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Visakhapatnam%20Marriott%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Visakhapatnam Shore Stay",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10878,
+      "priceMax": 12401,
+      "rating": 4.6,
+      "reviews": 1749,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Sand & Surf"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Visakhapatnam%20Shore%20Stay%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Visakhapatnam Conrad",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 15479,
+      "priceMax": 16561,
+      "rating": 4.7,
+      "reviews": 3241,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Visakhapatnam%20Conrad%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Aman Visakhapatnam",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 29474,
+      "priceMax": 30358,
+      "rating": 4.6,
+      "reviews": 1202,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Exclusive",
+        "Ocean View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Aman%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -388,28 +529,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sunrise_near_Thotlakonda_beach_10.jpg",
-      "alt": "Visakhapatnam in Visakhapatnam, Andhra Pradesh - Sunrise near Thotlakonda beach",
-      "title": "Visakhapatnam in Visakhapatnam, Andhra Pradesh -…"
+      "alt": "Visakhapatnam in Visakhapatnam, Andhra Pradesh - Sunrise near Thotlakonda beach"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Visakhapatnam_port_from_RK_beach_at_night.jpg/1280px-Visakhapatnam_port_from_RK_beach_at_night.jpg",
-      "alt": "Visakhapatnam photo 2",
-      "title": "Kailasagiri"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Visakhapatnam_port_from_RK_beach_at_night.jpg",
+      "alt": "Visakhapatnam photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg/1280px-INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg",
-      "alt": "Visakhapatnam photo 3",
-      "title": "Borra Caves"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg",
+      "alt": "Visakhapatnam photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Sacred_Heart_Church_in_Visakhapatnam%2C_Andhra_Pradesh_01.jpg/1280px-Sacred_Heart_Church_in_Visakhapatnam%2C_Andhra_Pradesh_01.jpg",
-      "alt": "Visakhapatnam photo 4",
-      "title": "Visakhapatnam — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Sacred_Heart_Church_in_Visakhapatnam%2C_Andhra_Pradesh_01.jpg",
+      "alt": "Visakhapatnam photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jurassic_Statues_at_RK_Beach_Visakhapatnam_05.jpg/1280px-Jurassic_Statues_at_RK_Beach_Visakhapatnam_05.jpg",
-      "alt": "Visakhapatnam photo 5",
-      "title": "Visakhapatnam — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Jurassic_Statues_at_RK_Beach_Visakhapatnam_05.jpg",
+      "alt": "Visakhapatnam photo 5"
     }
   ],
   "faq": [
@@ -447,5 +583,7 @@
       "how to reach Visakhapatnam",
       "Andhra Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

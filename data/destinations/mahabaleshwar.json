@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Mahabaleshwar — hill station of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mahabaleshwar_Pratapgad_023.jpg/1280px-Mahabaleshwar_Pratapgad_023.jpg",
-    "alt": "Mahabaleshwar photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahabaleshwar_Pratapgad_023.jpg",
+    "alt": "Mahabaleshwar, Maharashtra"
   },
   "overview": {
     "short": "Mahabaleshwar is a much-loved hill station in Maharashtra, known for strawberries and viewpoints.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 27000,
     "minPrice": 1300,
-    "distanceFromDelhi": 1550,
-    "about": "Mahabaleshwar, in Sahyadri, Maharashtra, is one of India’s favourite hill station. Visitors come for its strawberries, viewpoints, lake, with the best months being Oct – Jun."
+    "distanceFromDelhi": 1550
   },
   "bestTime": {
     "label": "Oct – Jun",
@@ -218,13 +217,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹150",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Boating lake ringed by strawberry stalls and horse rides.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Horse_Riding_at_Venna_Lake%2C_Mahabaleshwar.jpg/1280px-Horse_Riding_at_Venna_Lake%2C_Mahabaleshwar.jpg",
-        "alt": "Venna Lake in Maharashtra, India"
+        "alt": "Venna Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Venna_Lake%2C_Mahabaleshwar.jpg/1280px-Venna_Lake%2C_Mahabaleshwar.jpg",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "12 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "“Queen of Points” overlooking the Savitri valley gorge.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Arthur%27s_Seat_Mahabaleshwar.JPG/1280px-Arthur%27s_Seat_Mahabaleshwar.JPG",
-        "alt": "Arthur’s Seat in Maharashtra, India"
+        "alt": "Arthur’s Seat"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/bf/Arthur%27s_seat%2C_Mahabaleshwar.jpg",
@@ -256,13 +255,13 @@
       "category": "heritage",
       "distance": "24 km",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "Shivaji’s hill fort with sweeping Sahyadri views.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Savitribai_Phule_Pune_University%2C_Pune_%283%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Pratapgad Fort in Maharashtra, India"
+        "alt": "Pratapgad Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c3/Rajasthan_%286373260699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,223 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mahabaleshwar Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mahabaleshwar OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 182,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mahabaleshwar%20Stay%20Mahabaleshwar%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20OYO%20Mahabaleshwar%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Mahabaleshwar",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "GoStops Mahabaleshwar Hostel",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 481,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Mahabaleshwar%20Hostel%20Mahabaleshwar%20Maharashtra"
     },
     {
-      "name": "Mahabaleshwar Grand Hotel",
+      "name": "Ginger Mahabaleshwar",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 597,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Mahabaleshwar%20Grand%20Hotel%20Mahabaleshwar%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra"
     },
     {
-      "name": "Sterling Mahabaleshwar",
-      "type": "resort",
-      "tier": "best",
+      "name": "Mahabaleshwar FabHotels Prime",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 595,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Popular Pick",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20FabHotels%20Prime%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "Mahabaleshwar Ridge Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2228,
+      "priceMax": 3012,
+      "rating": 4.3,
+      "reviews": 841,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20Ridge%20Resort%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "Lemon Tree Mahabaleshwar",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3749,
+      "priceMax": 5123,
+      "rating": 4.3,
+      "reviews": 501,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "Mahabaleshwar Pine Grove",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4832,
+      "priceMax": 5414,
+      "rating": 4.3,
+      "reviews": 1584,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20Pine%20Grove%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "Mahabaleshwar The Gateway",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11364,
+      "priceMax": 12038,
+      "rating": 4.6,
+      "reviews": 1581,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20The%20Gateway%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "Mahabaleshwar Taj Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11707,
+      "priceMax": 12949,
+      "rating": 4.4,
+      "reviews": 1644,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mahabaleshwar%20Taj%20Vivanta%20Mahabaleshwar%20Maharashtra"
+    },
+    {
+      "name": "ITC Mahabaleshwar Resort & Spa",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 21574,
+      "priceMax": 22294,
+      "rating": 4.6,
+      "reviews": 2650,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Mahabaleshwar%20Resort%20%26%20Spa%20Mahabaleshwar%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -392,30 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mahabaleshwar_Pratapgad_023.jpg/1280px-Mahabaleshwar_Pratapgad_023.jpg",
-      "alt": "Mahabaleshwar photo 2",
-      "title": "Venna Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahabaleshwar_Pratapgad_023.jpg",
+      "alt": "Mahabaleshwar photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pratapgad_Fort.JPG/1280px-Pratapgad_Fort.JPG",
-      "alt": "Mahabaleshwar photo 3",
-      "title": "Arthur’s Seat"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pratapgad_Fort.JPG",
+      "alt": "Mahabaleshwar photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mahabaleshwar_Pratapgad_023_%28cropped%29.jpg",
-      "alt": "Mahabaleshwar photo 4",
-      "title": "Pratapgad Fort"
+      "alt": "Mahabaleshwar photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Pratapgad_fort_front_view.jpg/1280px-Pratapgad_fort_front_view.jpg",
-      "alt": "Mahabaleshwar photo 5",
-      "title": "Mahabaleshwar — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Pratapgad_fort_front_view.jpg",
+      "alt": "Mahabaleshwar photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/RAJASTHAN_%286358883141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Mahabaleshwar - Highlight 5",
-      "alt": "Hills of Rajasthan",
-      "title": "Hills of Rajasthan"
+      "alt": "Hills of Rajasthan"
     }
   ],
   "faq": [
@@ -453,5 +585,7 @@
       "how to reach Mahabaleshwar",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

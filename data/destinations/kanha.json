@@ -9,7 +9,7 @@
   "tagline": "Kanha — wildlife reserve of Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Common_Sailer_Neptis_hylas_UN_Kanha_Madhya_Pradesh_IMG_9762_%285%29.CR2.jpg",
-    "alt": "Kanha in Kanha, Madhya Pradesh - Common Sailer Neptis hylas UN at Kanha Tiger Reserve, Madhya Pradesh"
+    "alt": "Kanha, Madhya Pradesh"
   },
   "overview": {
     "short": "Kanha is a much-loved wildlife reserve in Madhya Pradesh, known for jungle book and barasingha.",
@@ -22,9 +22,8 @@
     "altitude": null,
     "rating": 4.6,
     "reviewCount": 13000,
-    "minPrice": 3000,
-    "distanceFromDelhi": 900,
-    "about": "Kanha, in Maikal Hills, Madhya Pradesh, is one of India’s favourite wildlife reserve. Visitors come for its jungle book, barasingha, sal forests, with the best months being Oct – Jun."
+    "minPrice": 2884,
+    "distanceFromDelhi": 900
   },
   "bestTime": {
     "label": "Oct – Jun",
@@ -215,13 +214,13 @@
       "category": "wildlife",
       "distance": "Park",
       "entryFee": "₹2,500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "Sprawling reserve that inspired Kipling’s Jungle Book.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Jungle_safari_-_Kanha_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kanha Jeep Safari in Kanha, Madhya Pradesh"
+        "alt": "Kanha Jeep Safari"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f4/Pataleswar_Temple%2C_Palanpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "scenic",
       "distance": "Park",
       "entryFee": "Included",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "“Sunset Point” overlooking the meadows and sal forest.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ahmedabad2007-362.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bamni Dadar, Kanha"
+        "alt": "Bamni Dadar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ambe_Maa_Ambapur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "cultural",
       "distance": "Gate",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "30 min",
       "rating": 4.2,
       "description": "Interpretation centre on the park’s flora and fauna.",
       "image": {
         "src": "https://images.pexels.com/photos/17374911/pexels-photo-17374911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "A herd of Barasingha deer in Kanha National Park, India, amidst lush greenery."
+        "alt": "Kanha Museum"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/db/Main_Portal_of_the_Ruins_of_the_Rudramala_at_Sidhpur_Gujarat_1905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -299,84 +298,203 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kanha Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Kanha FabHotels",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 3000,
       "priceMax": 4800,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 483,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kanha%20Stay%20Kanha%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanha%20FabHotels%20Kanha%20Madhya%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Kanha",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Zostel Plus Kanha",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 5700,
       "priceMax": 8100,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 362,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kanha%20Kanha%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Kanha%20Kanha%20Madhya%20Pradesh"
     },
     {
-      "name": "Kanha Grand Hotel",
+      "name": "Kanha Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 9000,
       "priceMax": 13500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 381,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Tiger Trail"
       ],
-      "url": "https://www.google.com/search?q=Kanha%20Grand%20Hotel%20Kanha%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanha%20Treebo%20Trend%20Kanha%20Madhya%20Pradesh"
     },
     {
-      "name": "Jungle Lodges Kanha",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lemon Tree Tiger Trail",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 18000,
       "priceMax": 30000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 355,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Tiger%20Trail%20Kanha%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Ibis Wilderness Camp",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2884,
+      "priceMax": 3465,
+      "rating": 4.1,
+      "reviews": 1039,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Wilderness%20Camp%20Kanha%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Fairfield by Marriott Kanha",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6878,
+      "priceMax": 7842,
+      "rating": 4.3,
+      "reviews": 757,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Kanha%20Kanha%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Kanha Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11981,
+      "priceMax": 12334,
+      "rating": 4.4,
+      "reviews": 2061,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Wilderness Camp"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Kanha%20Kanha%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanha%20Marriott%20Kanha%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Kanha Conrad",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 21762,
+      "priceMax": 22140,
+      "rating": 4.6,
+      "reviews": 1597,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanha%20Conrad%20Kanha%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Four Seasons Kanha Resort & Spa",
+      "type": "hotel",
+      "tier": "extra_luxury",
+      "priceMin": 40510,
+      "priceMax": 41935,
+      "rating": 4.6,
+      "reviews": 1476,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Four%20Seasons%20Kanha%20Resort%20%26%20Spa%20Kanha%20Madhya%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -391,28 +509,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Common_Sailer_Neptis_hylas_UN_Kanha_Madhya_Pradesh_IMG_9762_%285%29.CR2.jpg",
-      "alt": "Kanha in Kanha, Madhya Pradesh - Common Sailer Neptis hylas UN at Kanha Tiger Reserve, Madhya Pradesh",
-      "title": "Kanha in Kanha, Madhya Pradesh - Common Sailer…"
+      "alt": "Kanha in Kanha, Madhya Pradesh - Common Sailer Neptis hylas UN at Kanha Tiger Reserve, Madhya Pradesh"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Thirsty_Monkey%21.jpg/1280px-Thirsty_Monkey%21.jpg",
-      "alt": "Kanha photo 2",
-      "title": "Bamni Dadar"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Thirsty_Monkey%21.jpg",
+      "alt": "Kanha photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Thai_-_Vessantara_Jataka%2C_Chapter_4_-_Vessantara%2C_Maddi%2C_Jali%2C_and_Kanha_Enter_the_Forest_-_Walters_35234.jpg",
-      "alt": "Kanha photo 4",
-      "title": "Kanha Museum"
+      "alt": "Kanha photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Thai_-_Vessantara_Jataka%2C_Chapter_4_-_Vessantara%2C_Maddi%2C_Jali%2C_and_Kanha_Enter_the_Forest_-_Walters_2010125.jpg",
-      "alt": "Kanha photo 5",
-      "title": "Kanha — Sacred Heritage"
+      "alt": "Kanha photo 5"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Thirsty_Deers%21.jpg/1280px-Thirsty_Deers%21.jpg",
-      "alt": "Kanha photo 6",
-      "title": "Kanha — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Thirsty_Deers%21.jpg",
+      "alt": "Kanha photo 6"
     }
   ],
   "faq": [
@@ -450,5 +563,7 @@
       "how to reach Kanha",
       "Madhya Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

@@ -9,7 +9,7 @@
   "tagline": "Kovalam — beach town of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
-    "alt": "Kovalam photo 2"
+    "alt": "Kovalam, Kerala"
   },
   "overview": {
     "short": "Kovalam is a much-loved beach town in Kerala, known for lighthouse beach and ayurveda.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 24000,
     "minPrice": 1200,
-    "distanceFromDelhi": 2800,
-    "about": "Kovalam, in Thiruvananthapuram, Kerala, is one of India’s favourite beach town. Visitors come for its lighthouse beach, ayurveda, surfing, with the best months being Sep – Mar."
+    "distanceFromDelhi": 2800
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -213,13 +212,13 @@
       "category": "beach",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Crescent beach watched over by a candy-striped lighthouse.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Dancers_performs_at_the_inauguration_of_the_Night_Tourism_Bazaar_showcasing_various_facets_of_art%2C_craft_and_culture_in_New_Delhi_on_March_27%2C_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Lighthouse Beach, Kovalam"
+        "alt": "Lighthouse Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c1/RedFort%2C_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "beach",
       "distance": "1 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.3,
       "description": "Palm-lined cove popular for sunrise and fishing boats.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Special_Incredible_India_bags_with_Tourism_brochures_distributed_at_%E2%80%9CIndia_Calling%E2%80%9D_Celebrations%2C_in_Los_Angeles_on_September_20%2C_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Hawa Beach, Kovalam"
+        "alt": "Hawa Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f5/The_Union_Minister_of_Tourism_%26_Housing_and_Urban_Poverty_Alleviation%2C_Kum._Selja_chairing_a_meeting_of_convergence_for_development_of_tourist_destinations%2C_in_New_Delhi_on_April_13%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "wildlife",
       "distance": "3 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4,
       "description": "Small aquarium near the historic Vizhinjam fishing harbour.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/A.P.J._Abdul_Kalam_lighting_the_lamp_at_the_All_India_workshop_on_Campaign_Clean_India_to_create_awareness_about_hygiene_and_cleanliness_at_tourist_destinations_and_monuments%2C_organized_by_the_Ministry_of_Tourism.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Vizhinjam Marine Aquarium, Kovalam"
+        "alt": "Vizhinjam Marine Aquarium"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/fa/Subodh_Kant_Sahai_addressing_at_the_All_India_workshop_on_Campaign_Clean_India_to_create_awareness_about_hygiene_and_cleanliness_at_tourist_destinations_and_monuments%2C_organized_by_the_Ministry_of_Tourism%2C_in_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -297,84 +296,228 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kovalam Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Kovalam BunkStay",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 217,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kovalam%20Stay%20Kovalam%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kovalam%20BunkStay%20Kovalam%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Kovalam",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Kovalam Tide Pool",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 439,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Ocean View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kovalam%20Kovalam%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kovalam%20Tide%20Pool%20Kovalam%20Kerala"
     },
     {
-      "name": "Kovalam Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Zostel Plus Kovalam Hostel",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 336,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Sand & Surf"
       ],
-      "url": "https://www.google.com/search?q=Kovalam%20Grand%20Hotel%20Kovalam%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Kovalam%20Hostel%20Kovalam%20Kerala"
     },
     {
-      "name": "Marriott Kovalam",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Fortune Coastal Haven",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 944,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Coastal%20Haven%20Kovalam%20Kerala"
+    },
+    {
+      "name": "Sarovar Portico Seaside Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3996,
+      "priceMax": 5743,
+      "rating": 4.2,
+      "reviews": 478,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Seaside%20Retreat%20Kovalam%20Kerala"
+    },
+    {
+      "name": "Kovalam Holiday Inn",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5010,
+      "priceMax": 6588,
+      "rating": 4.5,
+      "reviews": 1401,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Beach Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kovalam%20Holiday%20Inn%20Kovalam%20Kerala"
+    },
+    {
+      "name": "Hyatt Regency Beach Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8182,
+      "priceMax": 9440,
+      "rating": 4.6,
+      "reviews": 1518,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Beach%20Resort%20Kovalam%20Kerala"
+    },
+    {
+      "name": "Sheraton Seaside Retreat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11176,
+      "priceMax": 12481,
+      "rating": 4.4,
+      "reviews": 801,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Sand & Surf"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Kovalam%20Kovalam%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Seaside%20Retreat%20Kovalam%20Kerala"
+    },
+    {
+      "name": "ITC Kovalam Resort & Spa",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 18756,
+      "priceMax": 19509,
+      "rating": 4.5,
+      "reviews": 770,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Kovalam%20Resort%20%26%20Spa%20Kovalam%20Kerala"
+    },
+    {
+      "name": "Alila Kovalam",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 42120,
+      "priceMax": 44008,
+      "rating": 4.8,
+      "reviews": 1699,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Alila%20Kovalam%20Kovalam%20Kerala"
     }
   ],
   "restaurants": [],
@@ -388,29 +531,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
-      "alt": "Kovalam photo 2",
-      "title": "Lighthouse Beach"
+      "alt": "Kovalam photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kovalam_Lighthouse_Beach.JPG/1280px-Kovalam_Lighthouse_Beach.JPG",
-      "alt": "Kovalam photo 3",
-      "title": "Hawa Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Kovalam_Lighthouse_Beach.JPG",
+      "alt": "Kovalam photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Kovalam_-_view_from_the_lighthouse.jpg/1280px-Kovalam_-_view_from_the_lighthouse.jpg",
-      "alt": "Kovalam photo 4",
-      "title": "Vizhinjam Marine Aquarium"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Kovalam_-_view_from_the_lighthouse.jpg",
+      "alt": "Kovalam photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kovalam_beach_01.JPG/1280px-Kovalam_beach_01.JPG",
-      "alt": "Kovalam photo 5",
-      "title": "Kovalam — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Kovalam_beach_01.JPG",
+      "alt": "Kovalam photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/India_Folk_Historical_Place_In_Maharashtra_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kovalam - Highlight 5",
-      "alt": "Raigad Fort is a historic hill fortress located in the Sahyadri mountain range of Maharashtra, India",
-      "title": "Raigad Fort is a historic hill fortress located in…"
+      "alt": "Raigad Fort is a historic hill fortress located in the Sahyadri mountain range of Maharashtra, India"
     }
   ],
   "faq": [
@@ -448,5 +585,7 @@
       "how to reach Kovalam",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

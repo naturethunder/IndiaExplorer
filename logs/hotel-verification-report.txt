@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════════
+  HOTEL DATA VERIFICATION REPORT
+═══════════════════════════════════════════════════════════════
+Generated: 2026-09-05T15:59:52.207Z
+
+📊 SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total destinations:              2392
+Destinations with hotels:        2392 (100.0%)
+Destinations with real chains:   2365 (98.9%)
+Destinations with metadata:      2392 (100.0%)
+Destinations with synthetic:     0
+Total hotels:                    17567
+Avg hotels/destination:          7.34
+
+💰 PRICE STATISTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Min price:                       ₹350
+Max price:                       ₹80,000
+Avg min price:                   ₹5,767
+Avg max price:                   ₹7,401
+
+📈 TIER DISTRIBUTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+best                  2461 hotels
+better                2379 hotels
+budget                4757 hotels
+cheapest              2413 hotels
+extra_luxury           369 hotels
+good                  4765 hotels
+luxury                 423 hotels
+
+⚠️  ISSUES DETECTED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+No hotels:                       0
+Synthetic patterns:              0
+Missing metadata:                0
+Price anomalies:                 0
+Duplicate names:                 0
+
+═══════════════════════════════════════════════════════════════
+✅ STATUS: ALL CHECKS PASSED
+═══════════════════════════════════════════════════════════════

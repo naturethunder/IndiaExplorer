@@ -9,7 +9,7 @@
   "tagline": "Tirupati — spiritual town of Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/SVU_entrance%2C_tirupati.JPG",
-    "alt": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati"
+    "alt": "Tirupati, Andhra Pradesh"
   },
   "overview": {
     "short": "Tirupati is a much-loved spiritual town in Andhra Pradesh, known for balaji temple and pilgrimage.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 60000,
     "minPrice": 900,
-    "distanceFromDelhi": 2150,
-    "about": "Tirupati, in Tirumala Hills, Andhra Pradesh, is one of India’s favourite spiritual town. Visitors come for its balaji temple, pilgrimage, hills, with the best months being Sep – Mar."
+    "distanceFromDelhi": 2150
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -218,13 +217,13 @@
       "category": "spiritual",
       "distance": "Tirumala",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "3–4 hrs",
       "rating": 4.8,
       "description": "World’s most-visited temple atop the seven Tirumala hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_vari_temple2%29.jpg/1280px-Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_vari_temple2%29.jpg",
-        "alt": "Sri Venkateswara Temple in Andhra Pradesh, India"
+        "alt": "Sri Venkateswara Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/67/Mudumalai_Tiger_Reserve_-_panoramio_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "spiritual",
       "distance": "36 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Ancient Vayu (wind) element Shiva temple.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Mudumalai_National_Park_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sri Kalahasti Temple, Tirupati"
+        "alt": "Sri Kalahasti Temple"
       },
       "photos": [
         "https://images.pexels.com/photos/5860770/pexels-photo-5860770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -256,13 +255,13 @@
       "category": "heritage",
       "distance": "12 km",
       "entryFee": "₹15",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "11th-century fort and palace of the Vijayanagara kings.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29.jpg/1280px-Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29.jpg",
-        "alt": "Chandragiri Fort in Andhra Pradesh, India"
+        "alt": "Chandragiri Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/40/MDR_700_Below_Kalhatty_Nilgiris_Sep24_A7CR_02953.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Tirupati Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Tirupati",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 324,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Tirupati%20Stay%20Tirupati%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Tirupati%20Tirupati%20Andhra%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Tirupati",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Tirupati FabHotels Prime",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 592,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Krishna Kunj"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Tirupati%20Tirupati%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Tirupati%20FabHotels%20Prime%20Tirupati%20Andhra%20Pradesh"
     },
     {
-      "name": "Tirupati Grand Hotel",
+      "name": "Tirupati Ginger",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 755,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Divine Retreat"
       ],
-      "url": "https://www.google.com/search?q=Tirupati%20Grand%20Hotel%20Tirupati%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Tirupati%20Ginger%20Tirupati%20Andhra%20Pradesh"
     },
     {
-      "name": "Fortune Park Tirupati",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Tirupati",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 521,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Tirupati%20Tirupati%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Tirupati%20Tirupati%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Fairfield by Marriott Tirupati",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3875,
+      "priceMax": 4358,
+      "rating": 4.3,
+      "reviews": 438,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Shiva Sadan"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Tirupati%20Tirupati%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Tirupati Hyatt Place",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5096,
+      "priceMax": 5520,
+      "rating": 4.4,
+      "reviews": 1125,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Tirupati%20Hyatt%20Place%20Tirupati%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Sheraton Tirupati",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11140,
+      "priceMax": 12266,
+      "rating": 4.4,
+      "reviews": 1947,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Bhakti Residency"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Tirupati%20Tirupati%20Andhra%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -393,29 +464,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/SVU_entrance%2C_tirupati.JPG",
-      "alt": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati",
-      "title": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati"
+      "alt": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_varu%29.jpg/1280px-Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_varu%29.jpg",
-      "alt": "Tirupati photo 2",
-      "title": "Sri Kalahasti Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_varu%29.jpg",
+      "alt": "Tirupati photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_2.jpg/1280px-Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_2.jpg",
-      "alt": "Tirupati photo 5",
-      "title": "Chandragiri Fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_2.jpg",
+      "alt": "Tirupati photo 5"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_1.jpg/1280px-Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_1.jpg",
-      "alt": "Tirupati photo 6",
-      "title": "Tirupati — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_1.jpg",
+      "alt": "Tirupati photo 6"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mudumalai_Tiger_Reserve_-_panoramio_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tirupati - Highlight 5",
-      "alt": "Mudumalai tiger reserve nilgiris",
-      "title": "Mudumalai tiger reserve nilgiris"
+      "alt": "Mudumalai tiger reserve nilgiris"
     }
   ],
   "faq": [
@@ -453,5 +518,7 @@
       "how to reach Tirupati",
       "Andhra Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

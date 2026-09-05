@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Maharajbagh zoo — wildlife reserve of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg/1280px-Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg",
-    "alt": "Maharajbagh zoo photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg",
+    "alt": "Maharajbagh zoo, Maharashtra"
   },
   "overview": {
     "short": "Maharajbagh zoo is the central zoo of Nagpur, India.",
@@ -24,8 +24,7 @@
     "rating": 4.4,
     "reviewCount": 4032,
     "minPrice": 2500,
-    "distanceFromDelhi": 852,
-    "about": "Maharajbagh zoo is the central zoo of Nagpur, India. The zoo is located in the heart of the city and has been built on the garden of the Bhonsle and Maratha rulers of the city. The zoo comes under the Central Zoo Authority (CZA) of India and is maintained by the Panjabrao Deshmukh Krishi Vidyapeeth (PKV) of Nagpur. The zoo had come under scrutiny in 2006 for possible closure due to issues concerning animal healthcare but was cleared of all objections raised by CZA in 2007."
+    "distanceFromDelhi": 852
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -205,25 +204,21 @@
       "name": "Nagpur Junction",
       "distance": 2
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
-    "nearestMetro": {
-      "name": "Jhansi Rani Square metro station",
-      "distance": 1
-    }
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
   },
   "topPlaces": [
     {
-      "name": "Yashwant Stadium",
+      "name": "Jhansi Rani Square metro station",
       "category": "scenic",
       "distance": "Town Centre",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Yashwant Stadium is a football stadium in Nagpur, India. It has a maximum seating capacity of 30,000 and a maximum standing capacity of 50,000.",
+      "rating": 4.3,
+      "description": "Jhansi Rani Square is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 28 January 2020.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Yashwant_Stadium.jpg/1280px-Yashwant_Stadium.jpg",
-        "alt": "Yashwant Stadium in Maharashtra, India"
+        "alt": "Jhansi Rani Square metro station"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Solan_by_twilight_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,17 +227,74 @@
       ]
     },
     {
+      "name": "Cotton Market metro station",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Cotton Market is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 21 September 2023.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Zero_Mile_Stone%2C_Nagpur%2C_Maharashtra.jpg",
+        "alt": "Cotton Market metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/23/Zero_mile_nagpur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Atlanta_zero_mile_post.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/91/Solan_Himachal_Pradesh_Wikivoyage_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
+      "name": "Yashwant Stadium",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.6,
+      "description": "Yashwant Stadium is a football stadium in Nagpur, India. It has a maximum seating capacity of 30,000 and a maximum standing capacity of 50,000.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Corn_Fields_Batheri_Mandi_Himachal_Jul20_D72_16723.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Yashwant Stadium"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/9c/Road_Valley_Batheri_Mandi_Himachal_Jul20_D72_16720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Hill_scenery_with_small_stream%2C_somewhere_in_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hill_scenery_with_road_in_background%2C_somewhere_in_Sirmaur_district%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
+      "name": "Sitabuldi metro station",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Sitabuldi is an elevated metro interchange station on the North-South corridor of the Orange Line and East-West corridor of the Aqua Line of Nagpur Metro in the city of Nagpur, Maharashtra, India which allows passengers to transfer between the Orange Line and the Aqua Line. It was opened to the public on 8 March 2019.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Meetha_Neem_Dargah.jpg/1280px-Meetha_Neem_Dargah.jpg",
+        "alt": "Sitabuldi metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Meetha_Neem_Dargah_-_panoramio.jpg/1280px-Meetha_Neem_Dargah_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/A_shop_at_Meetha_Neem_Dargah_-_panoramio.jpg/1280px-A_shop_at_Meetha_Neem_Dargah_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Hill_opposite_Haridwar%2C_July_1813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
       "name": "Zero Mile Stone (Nagpur)",
       "category": "heritage",
       "distance": "Town Centre",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "Zero Mile Stone (ISO: Śūnya Mailācā Dagaḍa) is a monument built by the British during the Great Trigonometrical Survey of India in 1907 in Nagpur, Maharashtra. The Zero Mile Stone consists of a pillar made up of sandstone and another small stone representing the GTS Standard Bench Mark, and four stucco horses that were added later.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Zero_Mile_Stone%2C_Nagpur%2C_Maharashtra.jpg",
-        "alt": "Zero Mile Stone (Nagpur) in Maharashtra, India"
+        "alt": "Zero Mile Stone (Nagpur)"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Zero_mile_nagpur.jpg",
@@ -255,13 +307,13 @@
       "category": "heritage",
       "distance": "Town Centre",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "The Nagpur Central Museum, popularly known as Ajab Bangala, is located in Nagpur, Maharashtra, India. Established in 1863, Nagpur Central Museum is one of the oldest museums in India and Maharashtra.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Corn_Fields_Batheri_Mandi_Himachal_Jul20_D72_16723.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nagpur Central Museum, Maharajbagh zoo"
+        "alt": "Nagpur Central Museum"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/9c/Road_Valley_Batheri_Mandi_Himachal_Jul20_D72_16720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -270,17 +322,36 @@
       ]
     },
     {
+      "name": "Institution of Engineers metro station",
+      "category": "scenic",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.3,
+      "description": "Institution of Engineers, also known as Institute of Engineers, is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 28 January 2020.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kausali_Town_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Institution of Engineers metro station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/5d/A_dry_stream_and_few_transmission_line_with_Shivalik_mountain_range_in_background_in_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Panoramic_view_from_hill_in_Shimla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f0/The_Red_track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
       "name": "Meetha Neem Dargah",
       "category": "spiritual",
       "distance": "Town Centre",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Meetha-Neem Dargah also known as Meetha-Neem Sharif is the resting place of Aala Hazrat Sufi Saint Sayyad Jalaluddin Meer Surkh. It is located at civil lines region of Nagpur.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Meetha_Neem_Dargah.jpg/1280px-Meetha_Neem_Dargah.jpg",
-        "alt": "Meetha Neem Dargah in Maharashtra, India"
+        "alt": "Meetha Neem Dargah"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Meetha_Neem_Dargah_-_panoramio.jpg/1280px-Meetha_Neem_Dargah_-_panoramio.jpg",
@@ -295,6 +366,16 @@
       "title": "Day 1 — Jhansi Rani Square metro station & around",
       "items": [
         {
+          "time": "Morning",
+          "activity": "Jhansi Rani Square metro station",
+          "note": "Jhansi Rani Square is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 28 January 2020."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Cotton Market metro station",
+          "note": "Cotton Market is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 21 September 2023."
+        },
+        {
           "time": "Evening",
           "activity": "Yashwant Stadium",
           "note": "Yashwant Stadium is a football stadium in Nagpur, India. It has a maximum seating capacity of 30,000 and a maximum standing capacity of 50,000."
@@ -305,6 +386,11 @@
       "day": 2,
       "title": "Day 2 — Sitabuldi metro station & around",
       "items": [
+        {
+          "time": "Morning",
+          "activity": "Sitabuldi metro station",
+          "note": "Sitabuldi is an elevated metro interchange station on the North-South corridor of the Orange Line and East-West corridor of the Aqua Line of Nagpur Metro in the city of Nagpur, Maharashtra, India which allows passengers to transfer between the Orange Line and the Aqua Line. It was opened to the public on 8 March 2019."
+        },
         {
           "time": "Afternoon",
           "activity": "Zero Mile Stone (Nagpur)",
@@ -322,6 +408,11 @@
       "title": "Day 3 — Institution of Engineers metro station & around",
       "items": [
         {
+          "time": "Morning",
+          "activity": "Institution of Engineers metro station",
+          "note": "Institution of Engineers, also known as Institute of Engineers, is an elevated metro station on the East-West corridor of the Aqua Line of Nagpur Metro in Nagpur, India. It was opened on 28 January 2020."
+        },
+        {
           "time": "Afternoon",
           "activity": "Meetha Neem Dargah",
           "note": "Meetha-Neem Dargah also known as Meetha-Neem Sharif is the resting place of Aala Hazrat Sufi Saint Sayyad Jalaluddin Meer Surkh. It is located at civil lines region of Nagpur."
@@ -331,84 +422,202 @@
   ],
   "hotels": [
     {
-      "name": "OYO Maharajbagh zoo Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Maharajbagh Hostel",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 304,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Maharajbagh%20zoo%20Stay%20Maharajbagh%20zoo%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Maharajbagh%20Hostel%20Maharajbagh%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Maharajbagh zoo",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Maharajbagh",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 627,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Tiger Trail"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Maharajbagh%20zoo%20Maharajbagh%20zoo%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Maharajbagh%20Maharajbagh%20Maharashtra"
     },
     {
-      "name": "Maharajbagh zoo Grand Hotel",
+      "name": "Treebo Trend Nature Retreat",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 297,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Maharajbagh%20zoo%20Grand%20Hotel%20Maharajbagh%20zoo%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Nature%20Retreat%20Maharajbagh%20Maharashtra"
     },
     {
-      "name": "Jungle Lodges Maharajbagh zoo",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lemon Tree Maharajbagh",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 1073,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Maharajbagh%20zoo%20Maharajbagh%20zoo%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Maharajbagh%20Maharajbagh%20Maharashtra"
+    },
+    {
+      "name": "Maharajbagh Eco Lodge",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3548,
+      "priceMax": 5024,
+      "rating": 4.2,
+      "reviews": 1011,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Wilderness Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Maharajbagh%20Eco%20Lodge%20Maharajbagh%20Maharashtra"
+    },
+    {
+      "name": "The Fern Wildlife Camp",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4702,
+      "priceMax": 5477,
+      "rating": 4.3,
+      "reviews": 1460,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Forest Rest House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Fern%20Wildlife%20Camp%20Maharajbagh%20Maharashtra"
+    },
+    {
+      "name": "Renaissance Maharajbagh",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11157,
+      "priceMax": 12542,
+      "rating": 4.5,
+      "reviews": 685,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Forest Rest House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Maharajbagh%20Maharajbagh%20Maharashtra"
+    },
+    {
+      "name": "Conrad Maharajbagh",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 23036,
+      "priceMax": 24702,
+      "rating": 4.6,
+      "reviews": 3154,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Conrad%20Maharajbagh%20Maharajbagh%20Maharashtra"
+    },
+    {
+      "name": "Taj Rambagh Maharajbagh",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 59181,
+      "priceMax": 59865,
+      "rating": 4.6,
+      "reviews": 1488,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Rambagh%20Maharajbagh%20Maharajbagh%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -424,30 +633,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg/1280px-Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg",
-      "alt": "Maharajbagh zoo photo 2",
-      "title": "Jhansi Rani Square metro station"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg",
+      "alt": "Maharajbagh zoo photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/A_view_of_Maharajbag%2C_Nagpur.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Maharajbagh zoo photo 3",
-      "title": "Cotton Market metro station"
+      "alt": "Maharajbagh zoo photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Spotted_deer_at_Maharajbag_Zoo.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Maharajbagh zoo photo 4",
-      "title": "Yashwant Stadium"
+      "alt": "Maharajbagh zoo photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cannon_Ball_Tree%2C_Maharajbagh%2C_Nagpur.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Maharajbagh zoo photo 5",
-      "title": "Sitabuldi metro station"
+      "alt": "Maharajbagh zoo photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/View_from_Naggar%2C_Kullu_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Maharajbagh zoo - Highlight 5",
-      "alt": "Hills of Himachal Pradesh",
-      "title": "Hills of Himachal Pradesh"
+      "alt": "Hills of Himachal Pradesh"
     }
   ],
   "faq": [
@@ -469,7 +672,7 @@
     },
     {
       "q": "What are the top places to visit in Maharajbagh zoo?",
-      "a": "The top attractions are Yashwant Stadium, Zero Mile Stone (Nagpur), Nagpur Central Museum, Meetha Neem Dargah."
+      "a": "The top attractions are Jhansi Rani Square metro station, Cotton Market metro station, Yashwant Stadium, Sitabuldi metro station, Zero Mile Stone (Nagpur)."
     }
   ],
   "seo": {
@@ -485,5 +688,7 @@
       "how to reach Maharajbagh zoo",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

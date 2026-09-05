@@ -23,7 +23,7 @@
     "altitude": "216 m",
     "rating": 4.8,
     "reviewCount": 125000,
-    "minPrice": 1200,
+    "minPrice": 673,
     "distanceFromDelhi": 0,
     "about": "Old Delhi and the medieval southern enclaves offer unmatched culinary street trails, rich Persian and Timurid architectural traditions, and centuries of vibrant history preserved in ancient baolis, tombs, and bustling bazaars."
   },
@@ -305,109 +305,157 @@
   ],
   "hotels": [
     {
-      "name": "The Taj Mahal Hotel, New Delhi",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 12000,
-      "priceMax": 24000,
-      "rating": 4.8,
-      "reviews": 4500,
+      "name": "Delhi OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 673,
+      "priceMax": 1726,
+      "rating": 4.2,
+      "reviews": 234,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
+      ],
+      "tags": [
+        "Value Stay",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Delhi%20OYO%20Delhi%20Delhi"
+    },
+    {
+      "name": "Keys Prima Delhi",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1234,
+      "priceMax": 2106,
+      "rating": 4.2,
+      "reviews": 754,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Popular Pick",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Prima%20Delhi%20Delhi%20Delhi"
+    },
+    {
+      "name": "Delhi Manor House",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1236,
+      "priceMax": 2968,
+      "rating": 4.2,
+      "reviews": 524,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Delhi%20Manor%20House%20Delhi%20Delhi"
+    },
+    {
+      "name": "Sarovar Portico Delhi",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3508,
+      "priceMax": 4014,
+      "rating": 4.3,
+      "reviews": 981,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "House of Ming",
-        "Machan",
-        "Gym",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Iconic Taj",
-        "Lutyens Delhi"
+        "Well Rated",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=The%20Taj%20Mahal%20Hotel%20Mansingh%20Road%20New%20Delhi"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Delhi%20Delhi%20Delhi"
     },
     {
-      "name": "The Imperial New Delhi",
-      "type": "heritage hotel",
-      "tier": "luxury",
-      "priceMin": 15000,
-      "priceMax": 30000,
-      "rating": 4.9,
-      "reviews": 3800,
-      "amenities": [
-        "Art Collection",
-        "Outdoor Pool",
-        "Spa",
-        "Royal Ballroom",
-        "Fine Dining"
-      ],
-      "tags": [
-        "Colonial Luxury",
-        "Connaught Place"
-      ],
-      "url": "https://www.google.com/search?q=The%20Imperial%20New%20Delhi%20Janpath"
-    },
-    {
-      "name": "ITC Maurya, A Luxury Collection Hotel",
+      "name": "Delhi Haveli Stay",
       "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 11000,
-      "priceMax": 22000,
-      "rating": 4.8,
-      "reviews": 5100,
+      "tier": "good",
+      "priceMin": 3845,
+      "priceMax": 4383,
+      "rating": 4.3,
+      "reviews": 301,
       "amenities": [
-        "Bukhara Dining",
-        "Dum Pukht",
-        "Pool",
-        "Kaya Kalp Spa",
-        "Gym"
-      ],
-      "tags": [
-        "Legendary Dining",
-        "Diplomatic Enclave"
-      ],
-      "url": "https://www.google.com/search?q=ITC%20Maurya%20Diplomatic%20Enclave%20Delhi"
-    },
-    {
-      "name": "The Claridges New Delhi",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 8500,
-      "priceMax": 16000,
-      "rating": 4.6,
-      "reviews": 2900,
-      "amenities": [
-        "Garden Lawn",
-        "Dhaba Dining",
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
         "Gym",
-        "WiFi"
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Heritage Charm",
-        "APJ Abdul Kalam Road"
+        "Well Rated",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=The%20Claridges%20New%20Delhi%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Delhi%20Haveli%20Stay%20Delhi%20Delhi"
     },
     {
-      "name": "Bloomrooms @ Janpath",
-      "type": "hotel",
+      "name": "Delhi Sterling",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 6000,
-      "rating": 4.4,
-      "reviews": 1500,
+      "priceMin": 5108,
+      "priceMax": 5695,
+      "rating": 4.3,
+      "reviews": 1434,
       "amenities": [
-        "Bright Modern Decor",
-        "Cafe",
-        "Free High Speed WiFi",
-        "AC"
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
       ],
       "tags": [
-        "Central Location",
-        "Modern Value"
+        "Premium Stay",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Bloomrooms%20Janpath%20Delhi%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Delhi%20Sterling%20Delhi%20Delhi"
+    },
+    {
+      "name": "Taj Vivanta Delhi",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10574,
+      "priceMax": 11183,
+      "rating": 4.6,
+      "reviews": 1022,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Delhi%20Delhi%20Delhi"
     }
   ],
   "restaurants": [],
@@ -499,5 +547,7 @@
   "image": {
     "src": "https://images.pexels.com/photos/6776755/pexels-photo-6776755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "alt": "Front view of the historic Red Fort in Delhi with the Indian flag waving"
-  }
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 7
 }

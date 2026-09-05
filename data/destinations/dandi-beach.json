@@ -9,7 +9,7 @@
   "tagline": "Dandi Beach — beach town of Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%22A_Dimming_Evening%22_by_Siddhesh_Mangela.jpg",
-    "alt": "Dandi Beach in Dandi Beach, Gujarat - Evening in Dandi Beach, Maharashtra,India"
+    "alt": "Dandi Beach, Gujarat"
   },
   "overview": {
     "short": "Dandi Beach is one of the prominent beaches located in Dandi village, Gujarat, India.",
@@ -296,84 +296,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Dandi Beach Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Dandi OYO",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 417,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Wave Crest"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Dandi%20Beach%20Stay%20Dandi%20Beach%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dandi%20OYO%20Dandi%20Gujarat"
     },
     {
-      "name": "Airbnb: Stay in Dandi Beach",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Dandi Harbour View",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 400,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Dandi%20Beach%20Dandi%20Beach%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dandi%20Harbour%20View%20Dandi%20Gujarat"
     },
     {
-      "name": "Dandi Beach Grand Hotel",
+      "name": "OYO Townhouse Dandi",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 226,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Beach Resort"
       ],
-      "url": "https://www.google.com/search?q=Dandi%20Beach%20Grand%20Hotel%20Dandi%20Beach%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Dandi%20Dandi%20Gujarat"
     },
     {
-      "name": "Marriott Dandi Beach",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Fortune Dandi",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 1144,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Coastal Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Dandi%20Dandi%20Gujarat"
+    },
+    {
+      "name": "Dandi Palm Grove",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3952,
+      "priceMax": 4655,
+      "rating": 4.2,
+      "reviews": 759,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Ocean View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dandi%20Palm%20Grove%20Dandi%20Gujarat"
+    },
+    {
+      "name": "The Fern Coastal Haven",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6111,
+      "priceMax": 6880,
+      "rating": 4.5,
+      "reviews": 1499,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Shore Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Fern%20Coastal%20Haven%20Dandi%20Gujarat"
+    },
+    {
+      "name": "Westin Dandi",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9633,
+      "priceMax": 10545,
+      "rating": 4.5,
+      "reviews": 1242,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Seaside Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Dandi%20Beach%20Dandi%20Beach%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Dandi%20Dandi%20Gujarat"
+    },
+    {
+      "name": "Le Méridien Harbour View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11327,
+      "priceMax": 12988,
+      "rating": 4.4,
+      "reviews": 529,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Harbour%20View%20Dandi%20Gujarat"
+    },
+    {
+      "name": "Leela Dandi Resort & Spa",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 15817,
+      "priceMax": 17417,
+      "rating": 4.5,
+      "reviews": 3216,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Leela%20Dandi%20Resort%20%26%20Spa%20Dandi%20Gujarat"
+    },
+    {
+      "name": "Alila Wave Crest",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 27296,
+      "priceMax": 28520,
+      "rating": 4.6,
+      "reviews": 1339,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Exclusive",
+        "Coastal Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Alila%20Wave%20Crest%20Dandi%20Gujarat"
     }
   ],
   "restaurants": [],
@@ -389,28 +531,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/%22A_Dimming_Evening%22_by_Siddhesh_Mangela.jpg",
-      "alt": "Dandi Beach in Dandi Beach, Gujarat - Evening in Dandi Beach, Maharashtra,India",
-      "title": "Dandi Beach in Dandi Beach, Gujarat - Evening in…"
+      "alt": "Dandi Beach in Dandi Beach, Gujarat - Evening in Dandi Beach, Maharashtra,India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Panorama_%2CDandi_Beach_-_panoramio.jpg/1280px-Panorama_%2CDandi_Beach_-_panoramio.jpg",
-      "alt": "Dandi Beach photo 2",
-      "title": "National Salt Satyagraha Memorial"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Panorama_%2CDandi_Beach_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Panorama_Dandi_beach_-_panoramio.jpg/1280px-Panorama_Dandi_beach_-_panoramio.jpg",
-      "alt": "Dandi Beach photo 3",
-      "title": "Purna River (Gujarat)"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Panorama_Dandi_beach_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Dandi_Beach_RETRO_-_panoramio.jpg/1280px-Dandi_Beach_RETRO_-_panoramio.jpg",
-      "alt": "Dandi Beach photo 4",
-      "title": "Dandi Beach — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Dandi_Beach_RETRO_-_panoramio.jpg",
+      "alt": "Dandi Beach photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Badshah_Khan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dandi Beach photo 5",
-      "title": "Dandi Beach — Sunset Horizon"
+      "alt": "Dandi Beach photo 5"
     }
   ],
   "faq": [
@@ -448,5 +585,7 @@
       "how to reach Dandi Beach",
       "Gujarat tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

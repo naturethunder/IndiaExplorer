@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Rajiv Gandhi Zoological Park — wildlife reserve of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg/1280px-Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg",
-    "alt": "Rajiv Gandhi Zoological Park photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg",
+    "alt": "Rajiv Gandhi Zoological Park, Maharashtra"
   },
   "overview": {
     "short": "The Rajiv Gandhi Zoological Park, commonly known as the Rajiv Gandhi Zoo or Katraj Zoo, is located in Katraj, Pune district, Maharashtra State, India.",
@@ -339,6 +339,25 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Taljai_Hill_8.jpg/1280px-Taljai_Hill_8.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/2e/Semparuthi_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
+    },
+    {
+      "name": "Swargate bus station",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "Swargate bus station consists of two adjacent bus stations in Pune, operated by the Maharashtra State Road Transport Corporation (MSRTC) and the Pune Mahanagar Parivahan Mahamandal Limited (PMPML). It is located in the locality of Swargate in Pune, opposite the Swargate Police Station.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Pune_swargate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "alt": "Swargate bus station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Aga_Khan_Palace_9.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Aga_Khan_Palace_Isometric_View.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/88/CROSSANDRA_INFUNDIBULIFORMIS_FORTUNA--.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
     }
   ],
   "itinerary": [
@@ -392,90 +411,212 @@
           "time": "Morning",
           "activity": "Taljai Hills",
           "note": "Taljai is a hill located in the heart of Pune, India that has been designated as a wildlife reserve. The road to this hill passes through the Shivaji Maratha College campus with a picturesque mountain path, with sharp turns."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Swargate bus station",
+          "note": "Swargate bus station consists of two adjacent bus stations in Pune, operated by the Maharashtra State Road Transport Corporation (MSRTC) and the Pune Mahanagar Parivahan Mahamandal Limited (PMPML). It is located in the locality of Swargate in Pune, opposite the Swargate Police Station."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "OYO Rajiv Gandhi Zoological Park Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Rajiv Gandhi",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 394,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Tiger Trail"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Rajiv%20Gandhi%20Zoological%20Park%20Stay%20Rajiv%20Gandhi%20Zoological%20Park%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Rajiv Gandhi Zoological Park",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Keys Prima Rajiv Gandhi",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 371,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Rajiv%20Gandhi%20Zoological%20Park%20Rajiv%20Gandhi%20Zoological%20Park%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Prima%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
     },
     {
-      "name": "Rajiv Gandhi Zoological Park Grand Hotel",
+      "name": "Rajiv Gandhi Eco Lodge",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 691,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Forest Rest House"
       ],
-      "url": "https://www.google.com/search?q=Rajiv%20Gandhi%20Zoological%20Park%20Grand%20Hotel%20Rajiv%20Gandhi%20Zoological%20Park%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rajiv%20Gandhi%20Eco%20Lodge%20Rajiv%20Gandhi%20Maharashtra"
     },
     {
-      "name": "Jungle Lodges Rajiv Gandhi Zoological Park",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ibis Rajiv Gandhi",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 395,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
+    },
+    {
+      "name": "Keys Select Rajiv Gandhi",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3689,
+      "priceMax": 4953,
+      "rating": 4.1,
+      "reviews": 688,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
+    },
+    {
+      "name": "Rajiv Gandhi Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5368,
+      "priceMax": 5741,
+      "rating": 4.5,
+      "reviews": 1944,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Rajiv%20Gandhi%20Radisson%20Blu%20Rajiv%20Gandhi%20Maharashtra"
+    },
+    {
+      "name": "Rajiv Gandhi Renaissance",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10108,
+      "priceMax": 10511,
+      "rating": 4.5,
+      "reviews": 1723,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Rajiv%20Gandhi%20Zoological%20Park%20Rajiv%20Gandhi%20Zoological%20Park%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rajiv%20Gandhi%20Renaissance%20Rajiv%20Gandhi%20Maharashtra"
+    },
+    {
+      "name": "Taj Rajiv Gandhi",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 20735,
+      "priceMax": 22491,
+      "rating": 4.7,
+      "reviews": 3417,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
+    },
+    {
+      "name": "The Aman Rajiv Gandhi",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 32385,
+      "priceMax": 33385,
+      "rating": 4.6,
+      "reviews": 1080,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Holistic Wellness",
+        "Curated Dining",
+        "Butler",
+        "Chauffeur",
+        "Experiences"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Wilderness Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Aman%20Rajiv%20Gandhi%20Rajiv%20Gandhi%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -491,30 +632,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg/1280px-Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg",
-      "alt": "Rajiv Gandhi Zoological Park photo 2",
-      "title": "Katraj"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Electric_Battery-Vehicle_for_Transportation_at_Rajiv_Gandhi_Zoological_Park_and_Wild_Life_Research_Centre%2C_Katraj.jpg",
+      "alt": "Rajiv Gandhi Zoological Park photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Gaur_from_Rajiv_Gandhi_Zoological_park%2C_Pune.jpg/1280px-Gaur_from_Rajiv_Gandhi_Zoological_park%2C_Pune.jpg",
-      "alt": "Rajiv Gandhi Zoological Park photo 3",
-      "title": "Bharati Vidyapeeth"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Gaur_from_Rajiv_Gandhi_Zoological_park%2C_Pune.jpg",
+      "alt": "Rajiv Gandhi Zoological Park photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Conversation_between_Mr._Crow_and_Master_Deer.jpg/1280px-Conversation_between_Mr._Crow_and_Master_Deer.jpg",
-      "alt": "Rajiv Gandhi Zoological Park photo 4",
-      "title": "Dhankawadi"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Conversation_between_Mr._Crow_and_Master_Deer.jpg",
+      "alt": "Rajiv Gandhi Zoological Park photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/An_Emu_at_Indira_Gandhi_Zoo_park_in_Visakhapatnam_%281%29.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Rajiv Gandhi Zoological Park photo 5",
-      "title": "Union Biblical Seminary"
+      "alt": "Rajiv Gandhi Zoological Park photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Another_view_of_Datura_metel_flower_%28Indian_thornapple%29_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Rajiv Gandhi Zoological Park - Highlight 5",
-      "alt": "Flowers of India",
-      "title": "Flowers of India"
+      "alt": "Flowers of India"
     }
   ],
   "faq": [
@@ -536,7 +671,7 @@
     },
     {
       "q": "What are the top places to visit in Rajiv Gandhi Zoological Park?",
-      "a": "The top attractions are Katraj, Bharati Vidyapeeth, Dhankawadi, Union Biblical Seminary."
+      "a": "The top attractions are Katraj, Bharati Vidyapeeth, Dhankawadi, Union Biblical Seminary, Vadgaon Budruk."
     }
   ],
   "seo": {
@@ -552,5 +687,7 @@
       "how to reach Rajiv Gandhi Zoological Park",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

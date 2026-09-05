@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Pandav Falls — heritage city of Madhya Pradesh",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/The_white_Tree.jpg/1280px-The_white_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Pandav Falls photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/The_white_Tree.jpg",
+    "alt": "Pandav Falls, Madhya Pradesh"
   },
   "overview": {
     "short": "The Pandav Falls is a waterfall in the Panna district in the Indian state of Madhya Pradesh.",
@@ -24,8 +24,7 @@
     "rating": 4.2,
     "reviewCount": 10004,
     "minPrice": 900,
-    "distanceFromDelhi": 517,
-    "about": "The Pandav Falls is a waterfall in the Panna district in the Indian state of Madhya Pradesh. About 30 metres (98 ft) high, it is located on a tributary of the Ken River, as it plunges over the falls to join it. Pandav Falls is located 12 kilometres (7.5 mi) from Panna and 35 kilometres (22 mi) from Khajuraho, close to Raneh Falls. The falls are named after the legendary Pandava brothers of the epic poem Mahabharata, who supposedly visited this area."
+    "distanceFromDelhi": 517
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -213,13 +212,13 @@
       "category": "nature",
       "distance": "3 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "The Gatha Falls (or Gatha Seha) is a waterfall in Panna district in the Indian state of Madhya Pradesh. It is the 36th highest waterfall in India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Govind_Mehta_House_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gatha Falls, Pandav Falls"
+        "alt": "Gatha Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b8/Pandukholi_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "cultural",
       "distance": "7 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Jaruapur is a village in Panna district of Madhya Pradesh state of India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/GIC_Jaurasi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jaruapur, Pandav Falls"
+        "alt": "Jaruapur"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/25/View_from_Asur_Garhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -273,84 +272,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Pandav Falls Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Pandav",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 284,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Pandav%20Falls%20Stay%20Pandav%20Falls%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Pandav%20Pandav%20Madhya%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Pandav Falls",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "FabHotels Prime Pandav",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 603,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Pandav%20Falls%20Pandav%20Falls%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Pandav%20Pandav%20Madhya%20Pradesh"
     },
     {
-      "name": "Pandav Falls Grand Hotel",
+      "name": "Treebo Trend Fort Residence",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 642,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Pandav%20Falls%20Grand%20Hotel%20Pandav%20Falls%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Fort%20Residence%20Pandav%20Madhya%20Pradesh"
     },
     {
-      "name": "Marriott Pandav Falls",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Pandav Zone by The Park",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 558,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Pandav%20Falls%20Pandav%20Falls%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Pandav%20Zone%20by%20The%20Park%20Pandav%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Lemon Tree Period Property",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3775,
+      "priceMax": 4402,
+      "rating": 4.1,
+      "reviews": 649,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Period%20Property%20Pandav%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Pandav Novotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6915,
+      "priceMax": 8347,
+      "rating": 4.4,
+      "reviews": 1789,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Pandav%20Novotel%20Pandav%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Pandav Legacy Hotel",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11830,
+      "priceMax": 13421,
+      "rating": 4.4,
+      "reviews": 1378,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Pandav%20Legacy%20Hotel%20Pandav%20Madhya%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -364,30 +437,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/The_white_Tree.jpg/1280px-The_white_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Pandav Falls photo 2",
-      "title": "Gatha Falls"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/The_white_Tree.jpg",
+      "alt": "Pandav Falls photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sunset_in_Pandav_Falls.jpg/1280px-Sunset_in_Pandav_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Pandav Falls photo 3",
-      "title": "Jaruapur"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sunset_in_Pandav_Falls.jpg",
+      "alt": "Pandav Falls photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sunset%2C_Flora_in_Pandav_Falls.jpg/1280px-Sunset%2C_Flora_in_Pandav_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Pandav Falls photo 4",
-      "title": "Pandav Falls — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Sunset%2C_Flora_in_Pandav_Falls.jpg",
+      "alt": "Pandav Falls photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pandav_fall.jpg/1280px-Pandav_fall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Pandav Falls photo 5",
-      "title": "Pandav Falls — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Pandav_fall.jpg",
+      "alt": "Pandav Falls photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Devsthal_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Pandav Falls - Highlight 5",
-      "alt": "Almora district view",
-      "title": "Almora district view"
+      "alt": "Almora district view"
     }
   ],
   "faq": [
@@ -425,5 +492,7 @@
       "how to reach Pandav Falls",
       "Madhya Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

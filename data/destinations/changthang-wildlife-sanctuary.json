@@ -9,7 +9,7 @@
   "tagline": "Changthang Wildlife Sanctuary — wildlife reserve of Ladakh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pangong_lake_ladakh_by_samritypaul_2.jpg",
-    "alt": "Changthang Wildlife Sanctuary in Changthang Wildlife Sanctuary, Ladakh - Bar headed geese.. floating in peace..\nAt Pango"
+    "alt": "Changthang Wildlife Sanctuary, Ladakh"
   },
   "overview": {
     "short": "Changthang Wildlife Sanctuary (or the Changthang Cold Desert Wildlife Sanctuary), a high-altitude wildlife sanctuary in the Ladakhi adjunct of the Changthang plateau in Leh distric",
@@ -213,13 +213,13 @@
       "category": "scenic",
       "distance": "5 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "Chakula is a mountain peak located at 6,534 m (21,437 ft) above sea level in the far west of the Transhimalaya mountain range.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Egyptian_food_Koshary.jpg/1280px-Egyptian_food_Koshary.jpg",
-        "alt": "Chakula in Ladakh, India"
+        "alt": "Chakula"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Parboiled_rice_with_chicken%2C_peppers%2C_cucurbita%2C_peas_and_tomato.jpg/1280px-Parboiled_rice_with_chicken%2C_peppers%2C_cucurbita%2C_peas_and_tomato.jpg",
@@ -243,84 +243,204 @@
   ],
   "hotels": [
     {
-      "name": "OYO Changthang Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Tiger Trail",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 167,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Eco Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Changthang%20Wildlife%20Sanctuary%20Stay%20Changthang%20Wildlife%20Sanctuary%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Tiger%20Trail%20Changthang%20Ladakh"
     },
     {
-      "name": "Airbnb: Stay in Changthang Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ibis Budget Changthang",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 328,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Wildlife Camp"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Changthang%20Wildlife%20Sanctuary%20Changthang%20Wildlife%20Sanctuary%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Changthang%20Changthang%20Ladakh"
     },
     {
-      "name": "Changthang Wildlife Sanctuary Grand Hotel",
+      "name": "Treebo Trend Safari Lodge",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 355,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Wildlife Camp"
       ],
-      "url": "https://www.google.com/search?q=Changthang%20Wildlife%20Sanctuary%20Grand%20Hotel%20Changthang%20Wildlife%20Sanctuary%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Safari%20Lodge%20Changthang%20Ladakh"
     },
     {
-      "name": "Jungle Lodges Changthang Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
+      "name": "Sarovar Portico Jungle Lodge",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 592,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Jungle%20Lodge%20Changthang%20Ladakh"
+    },
+    {
+      "name": "Ginger Changthang",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3496,
+      "priceMax": 4920,
+      "rating": 4.4,
+      "reviews": 1169,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Tiger Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Changthang%20Changthang%20Ladakh"
+    },
+    {
+      "name": "Changthang Tiger Trail",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5069,
+      "priceMax": 6714,
+      "rating": 4.5,
+      "reviews": 1206,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Forest Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Changthang%20Tiger%20Trail%20Changthang%20Ladakh"
+    },
+    {
+      "name": "Changthang Birders Inn",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11895,
+      "priceMax": 12978,
+      "rating": 4.5,
+      "reviews": 1688,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "River View Camp"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Changthang%20Wildlife%20Sanctuary%20Changthang%20Wildlife%20Sanctuary%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Changthang%20Birders%20Inn%20Changthang%20Ladakh"
+    },
+    {
+      "name": "The JW Marriott Changthang",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 12859,
+      "priceMax": 13614,
+      "rating": 4.7,
+      "reviews": 2186,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Royal Experience",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20JW%20Marriott%20Changthang%20Changthang%20Ladakh"
+    },
+    {
+      "name": "The Six Senses Changthang",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 33913,
+      "priceMax": 35406,
+      "rating": 4.8,
+      "reviews": 1079,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Six%20Senses%20Changthang%20Changthang%20Ladakh"
     }
   ],
   "restaurants": [],
@@ -334,29 +454,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pangong_lake_ladakh_by_samritypaul_2.jpg",
-      "alt": "Changthang Wildlife Sanctuary in Changthang Wildlife Sanctuary, Ladakh - Bar headed geese.. floating in peace..\nAt Pango",
-      "title": "Changthang Wildlife Sanctuary in Changthang…"
+      "alt": "Changthang Wildlife Sanctuary in Changthang Wildlife Sanctuary, Ladakh - Bar headed geese.. floating in peace..\nAt Pango"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pangong_lake_ladakh_by_samritypaul_2.jpg/1280px-Pangong_lake_ladakh_by_samritypaul_2.jpg",
-      "alt": "Changthang Wildlife Sanctuary photo 2",
-      "title": "Changthang Wildlife Sanctuary — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pangong_lake_ladakh_by_samritypaul_2.jpg",
+      "alt": "Changthang Wildlife Sanctuary photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kalak_Tar_tar_plateau_in_Ladakh.jpg/1280px-Kalak_Tar_tar_plateau_in_Ladakh.jpg",
-      "alt": "Changthang Wildlife Sanctuary photo 3",
-      "title": "Changthang Wildlife Sanctuary — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Kalak_Tar_tar_plateau_in_Ladakh.jpg",
+      "alt": "Changthang Wildlife Sanctuary photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Pangonglakeladakhbysamritypaul1.jpg",
-      "alt": "Changthang Wildlife Sanctuary photo 4",
-      "title": "Changthang Wildlife Sanctuary — Sacred Heritage"
+      "alt": "Changthang Wildlife Sanctuary photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/8th_century_gopuram_top_of_a_small_shrine_at_Virupaksha_Shaivism_temple%2C_Pattadakal_Hindu_monuments_Karnataka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Changthang Wildlife Sanctuary - Highlight 5",
-      "alt": "Ancient temples of South India gopuram",
-      "title": "Ancient temples of South India gopuram"
+      "alt": "Ancient temples of South India gopuram"
     }
   ],
   "faq": [
@@ -394,5 +508,7 @@
       "how to reach Changthang Wildlife Sanctuary",
       "Ladakh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

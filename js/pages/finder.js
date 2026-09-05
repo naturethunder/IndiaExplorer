@@ -111,13 +111,13 @@ const HOTEL_BRANDS = ['taj', 'oberoi', 'jw marriott', 'marriott', 'radisson', 'i
 // Website info topics — so anyone can search the site itself, not just destinations.
 const SITE_INFO = [
   { keys: ['contact', 'email address', 'phone number', 'get in touch', 'reach the team', 'reach you', 'helpline', 'customer support', 'support team'], icon: 'mail', title: 'Contact us', body: 'Reach the ExploreDesh team — send a message and we reply within 1–2 business days.', link: 'contact.html', cta: 'Open contact page' },
-  { keys: ['about exploredesh', 'about indiaexplore', 'about the site', 'about us', 'who made', 'who runs', 'who are you', 'your company', 'about you', 'the team'], icon: 'globe', title: 'About ExploreDesh', body: 'A guide to 2,388 destinations across all 36 states & UTs of India.', link: 'about.html', cta: 'About us' },
+  { keys: ['about exploredesh', 'about indiaexplore', 'about the site', 'about us', 'who made', 'who runs', 'who are you', 'your company', 'about you', 'the team'], icon: 'globe', title: 'About ExploreDesh', body: 'A guide to 2,392 destinations across all 36 states & UTs of India.', link: 'about.html', cta: 'About us' },
   { keys: ['privacy', 'cookie', 'my data', 'personal data', 'personal information'], icon: 'shield-check', title: 'Privacy policy', body: 'How ExploreDesh handles your data.', link: 'privacy.html', cta: 'Read privacy policy' },
   { keys: ['terms', 'conditions', 'disclaimer', 'liability'], icon: 'book-open', title: 'Terms & conditions', body: 'The terms of using ExploreDesh.', link: 'terms.html', cta: 'Read terms' },
   { keys: ['weather', 'temperature', 'climate', 'forecast'], icon: 'cloud-rain', title: 'Live weather', body: 'Every destination page shows live, real-time weather for that location.', link: 'destinations.html', cta: 'Browse destinations' },
   { keys: ['how to reach', 'how do i reach', 'how to get to', 'nearest airport', 'nearest railway', 'directions to'], icon: 'compass', title: 'How to reach', body: 'Each destination page has a “Reach” tab with nearest airport/railway, road notes and an interactive map.', link: 'destinations.html', cta: 'Browse destinations' },
   { keys: ['how to book', 'booking', 'reserve a', 'make a reservation', 'book a hotel', 'book a stay'], icon: 'bed', title: 'Stays & booking', body: 'Open any destination and check the “Stays” tab — hotels for every budget with booking links.', link: 'destinations.html', cta: 'Browse destinations' },
-  { keys: ['how many destinations', 'how many places', 'total destinations', 'number of destinations', 'how many states'], icon: 'trending-up', title: '2,388 destinations', body: 'ExploreDesh covers 2,388 destinations across all 36 states & union territories.', link: 'destinations.html', cta: 'See all destinations' },
+  { keys: ['how many destinations', 'how many places', 'total destinations', 'number of destinations', 'how many states'], icon: 'trending-up', title: '2,392 destinations', body: 'ExploreDesh covers 2,392 destinations across all 36 states & union territories.', link: 'destinations.html', cta: 'See all destinations' },
 ];
 
 // ─── Parser: natural language → structured intent ───────
@@ -368,7 +368,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block bg-slate-900/80 border border-white/15 backdrop-blur-xl rounded-2xl shadow-xl hover:border-emerald-400/50 transition-all duration-200">' +
       '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
-        '<img src="' + esc(cardImg(d)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="no-referrer" ' +
+        '<img src="' + esc(cardImg(d)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="origin" ' +
              'onerror="this.onerror=null;this.style.display=\'none\';" />' +
         '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
         '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
@@ -389,7 +389,10 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
         detailsHTML +
         '<div class="flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
           '<span class="text-xs text-slate-400">' + distanceText + '</span>' +
-          '<span class="text-sm font-extrabold text-emerald-400">From ₹' + inr(d.minPrice) + '</span>' +
+          '<div class="flex items-baseline gap-1.5">' +
+            '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
+            '<span class="text-sm font-extrabold text-amber-400">₹' + inr(d.minPrice) + '</span>' +
+          '</div>' +
         '</div>' +
       '</div>' +
     '</a>';
@@ -413,8 +416,8 @@ function understandingHTML(p) {
   p.vibes.forEach(function (v) { if (p.text.indexOf(v) >= 0 && tags.indexOf('✨ ' + v) < 0) tags.push('✨ ' + v); });
   if (!tags.length) return '';
   return '<div class="bg-slate-900/80 border border-white/15 rounded-xl p-4 backdrop-blur-md shadow-lg">' +
-    '<p class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">' +
-    '<svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>' +
+    '<p class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">' +
+    '<svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>' +
     'What I understood' +
     '</p>' +
     '<div class="flex flex-wrap gap-2">' + tags.map(function (t) { return '<span class="tag-chip">' + esc(t) + '</span>'; }).join('') + '</div></div>';
@@ -425,12 +428,12 @@ function matchSiteInfo(text) {
   return SITE_INFO.filter(function (t) { return t.keys.some(function (k) { return text.indexOf(k) >= 0; }); });
 }
 function infoCardHTML(t) {
-  return '<a href="' + t.link + '" class="flex items-start gap-3.5 bg-slate-900/80 border border-white/15 hover:border-emerald-400/60 rounded-xl p-4 backdrop-blur-md shadow-lg hover:shadow-emerald-950/40 transition-all duration-200 group">' +
-    '<span class="text-emerald-400 leading-none p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20 inline-flex items-center justify-center">' + icon(t.icon, { size: 22 }) + '</span>' +
+  return '<a href="' + t.link + '" class="flex items-start gap-3.5 bg-slate-900/80 border border-white/15 hover:border-amber-400/60 rounded-xl p-4 backdrop-blur-md shadow-lg hover:shadow-amber-950/40 transition-all duration-200 group">' +
+    '<span class="text-amber-400 leading-none p-2 bg-amber-500/10 rounded-lg border border-amber-500/20 inline-flex items-center justify-center">' + icon(t.icon, { size: 22 }) + '</span>' +
     '<span class="min-w-0 flex-1">' +
-    '<span class="block font-bold text-white group-hover:text-emerald-300 text-base transition-colors">' + esc(t.title) + '</span>' +
+    '<span class="block font-bold text-white group-hover:text-amber-300 text-base transition-colors">' + esc(t.title) + '</span>' +
     '<span class="block text-sm text-slate-300 mt-1 leading-snug">' + esc(t.body) + '</span>' +
-    '<span class="inline-flex items-center gap-1 text-emerald-400 text-sm font-semibold mt-2.5 group-hover:translate-x-1 transition-transform">' + esc(t.cta) + ' →</span>' +
+    '<span class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold mt-2.5 group-hover:translate-x-1 transition-transform">' + esc(t.cta) + ' →</span>' +
     '</span></a>';
 }
 
@@ -466,7 +469,7 @@ function infoCardHTML(t) {
       '<span class="text-3xl p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">📅</span>' +
       '<div>' +
       '<h3 class="text-xl font-bold text-white">' + esc(days) + '-Day Plan for ' + esc(dest.title) + '</h3>' +
-      '<p class="text-xs text-emerald-400 font-semibold uppercase tracking-wider mt-1">Featuring hidden gem: ' + esc(hiddenPlace) + esc(distanceText) + '</p>' +
+      '<p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Featuring hidden gem: ' + esc(hiddenPlace) + esc(distanceText) + '</p>' +
       '</div>' +
       '</div>' +
       '<div class="space-y-6">';
@@ -476,19 +479,19 @@ function infoCardHTML(t) {
       if (d <= baseItin.length) {
         const dayData = baseItin[d - 1];
         const items = dayData.items || [];
-        html += '<div class="relative pl-6 border-l-2 border-emerald-500/40">' +
-          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900 shadow-sm shadow-emerald-400"></div>' +
+        html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
+          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
           '<h4 class="text-base font-bold text-white mb-2.5 flex items-center gap-2">' + esc(dayData.title || ('Day ' + d)) + '</h4>' +
           '<div class="space-y-2.5 text-sm text-slate-300">';
         items.forEach(function (it) {
           html += '<p><strong class="text-slate-200">' + esc(it.time) + ':</strong> ' +
-            '<span class="text-emerald-300 font-semibold">' + esc(it.activity) + '</span>. ' +
+            '<span class="text-amber-300 font-semibold">' + esc(it.activity) + '</span>. ' +
             esc(it.note || '') + '</p>';
         });
         // Add stay from hotels list
         const hotel = hotels[d % hotels.length] || hotels[0];
         if (hotel) {
-          html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-emerald-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>';
+          html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>';
         }
         html += '</div></div>';
       } else {
@@ -497,13 +500,13 @@ function infoCardHTML(t) {
         const p2 = places[(d * 2 - 1) % places.length];
         const hotel = hotels[d % hotels.length] || hotels[0];
 
-        html += '<div class="relative pl-6 border-l-2 border-emerald-500/40">' +
-          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900 shadow-sm shadow-emerald-400"></div>' +
+        html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
+          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
           '<h4 class="text-base font-bold text-white mb-2.5">Day ' + d + ': Deep Dive & Hidden Sights</h4>' +
           '<div class="space-y-2.5 text-sm text-slate-300">' +
-          (p1 ? '<p><strong class="text-slate-200">Morning:</strong> Head to <span class="text-emerald-300 font-semibold">' + esc(p1.name) + '</span>. ' + esc(p1.description || 'Spend some quiet time exploring the scenic landscape.') + '</p>' : '') +
-          (p2 ? '<p><strong class="text-slate-200">Afternoon:</strong> Visit <span class="text-emerald-300 font-semibold">' + esc(p2.name) + '</span>. ' + esc(p2.description || 'Enjoy local specialties, photograph local architecture and interact with locals.') + '</p>' : '') +
-          (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-emerald-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>' : '') +
+          (p1 ? '<p><strong class="text-slate-200">Morning:</strong> Head to <span class="text-amber-300 font-semibold">' + esc(p1.name) + '</span>. ' + esc(p1.description || 'Spend some quiet time exploring the scenic landscape.') + '</p>' : '') +
+          (p2 ? '<p><strong class="text-slate-200">Afternoon:</strong> Visit <span class="text-amber-300 font-semibold">' + esc(p2.name) + '</span>. ' + esc(p2.description || 'Enjoy local specialties, photograph local architecture and interact with locals.') + '</p>' : '') +
+          (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>' : '') +
           '</div>' +
           '</div>';
       }
@@ -561,10 +564,10 @@ function infoCardHTML(t) {
       }
 
       // Show simulated loader sequence
-      grid.innerHTML = '<div class="col-span-full bg-slate-900/90 border border-emerald-500/30 rounded-2xl shadow-xl p-8 text-center text-slate-200 mb-8 backdrop-blur-xl">' +
+      grid.innerHTML = '<div class="col-span-full bg-slate-900/90 border border-amber-500/30 rounded-2xl shadow-xl p-8 text-center text-slate-200 mb-8 backdrop-blur-xl">' +
         '<div class="flex flex-col items-center justify-center gap-3">' +
-        '<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-400"></div>' +
-        '<div id="itineraryStatus" class="text-sm font-semibold text-emerald-400">🔍 Connecting to database indexes...</div>' +
+        '<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-400"></div>' +
+        '<div id="itineraryStatus" class="text-sm font-semibold text-amber-400">🔍 Connecting to database indexes...</div>' +
         '</div></div>';
       scrollToResults();
 

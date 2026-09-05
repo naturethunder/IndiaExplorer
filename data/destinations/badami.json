@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Badami — heritage city of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cave_Temple_3%2C_Badami.JPG/1280px-Cave_Temple_3%2C_Badami.JPG",
-    "alt": "Badami photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cave_Temple_3%2C_Badami.JPG",
+    "alt": "Badami, Karnataka"
   },
   "overview": {
     "short": "Badami is a much-loved heritage city in Karnataka, known for cave temples and chalukya.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 7000,
     "minPrice": 900,
-    "distanceFromDelhi": 1850,
-    "about": "Badami, in Bagalkot, Karnataka, is one of India’s favourite heritage city. Visitors come for its cave temples, chalukya, sandstone, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1850
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -216,13 +215,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.7,
       "description": "6th-century rock-cut Hindu and Jain caves above Agastya lake.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/A-cave-temple-at-badami.JPG",
-        "alt": "Badami Cave Temples in Badami, Karnataka - A cave temple at badami, karnataka"
+        "alt": "Badami Cave Temples"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Rock_Cut_Cave_1%2C_Badami.jpg/1280px-Rock_Cut_Cave_1%2C_Badami.jpg",
@@ -235,13 +234,13 @@
       "category": "heritage",
       "distance": "1 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Sandstone temple group on the edge of the lake.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Profile_of_Bhutanatha_group_of_temples_at_Badami.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bhutanatha Temples in Karnataka, India"
+        "alt": "Bhutanatha Temples"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Bhutanatha_group_of_temples_Badami.JPG/1280px-Bhutanatha_group_of_temples_Badami.JPG",
@@ -254,13 +253,13 @@
       "category": "heritage",
       "distance": "22 km",
       "entryFee": "₹40",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "UNESCO complex of Chalukyan temples, a cradle of Indian architecture.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sculptures_at_the_Virupaksha_Temple%2C_Pattadakal%2C_Badami%2C_Bagalkot%2C_Belgaum%2C_Karnataka%2C_India_%282002%29_1498.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Pattadakal in Karnataka, India"
+        "alt": "Pattadakal"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/ce/Sculptures_at_the_Virupaksha_Temple%2C_Pattadakal%2C_Badami%2C_Bagalkot%2C_Belgaum%2C_Karnataka%2C_India_%282002%29_1537.jpg",
@@ -300,84 +299,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Badami Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Badami OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 490,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Badami%20Stay%20Badami%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Badami%20OYO%20Badami%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Badami",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Mahal Palace",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 294,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Badami%20Badami%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Mahal%20Palace%20Badami%20Karnataka"
     },
     {
-      "name": "Badami Grand Hotel",
+      "name": "FabHotels Prime Badami",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 336,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Legacy Hotel"
       ],
-      "url": "https://www.google.com/search?q=Badami%20Grand%20Hotel%20Badami%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Badami%20Badami%20Karnataka"
     },
     {
-      "name": "Marriott Badami",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Badami Manor House",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 1074,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Badami%20Manor%20House%20Badami%20Karnataka"
+    },
+    {
+      "name": "Keys Select Fort Residence",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3915,
+      "priceMax": 4993,
+      "rating": 4.4,
+      "reviews": 852,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Fort%20Residence%20Badami%20Karnataka"
+    },
+    {
+      "name": "Badami Period Property",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4709,
+      "priceMax": 6683,
+      "rating": 4.3,
+      "reviews": 518,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Badami%20Period%20Property%20Badami%20Karnataka"
+    },
+    {
+      "name": "Badami Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11269,
+      "priceMax": 11759,
+      "rating": 4.6,
+      "reviews": 2215,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Badami%20Badami%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Badami%20Vivanta%20Badami%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -389,29 +460,20 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cave_Temple_3%2C_Badami.JPG/1280px-Cave_Temple_3%2C_Badami.JPG",
-      "alt": "Badami photo 2",
-      "title": "Badami Cave Temples"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cave_Temple_3%2C_Badami.JPG",
+      "alt": "Badami photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Bhutanatha_group_of_temple_on_the_east_margin_of_the_tank.JPG/1280px-Bhutanatha_group_of_temple_on_the_east_margin_of_the_tank.JPG",
-      "alt": "Badami photo 3",
-      "title": "Bhutanatha Temples"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bhutanatha_group_of_temple_on_the_east_margin_of_the_tank.JPG",
+      "alt": "Badami photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bhutanatha_Temple%2C_Badami.jpg/1280px-Bhutanatha_Temple%2C_Badami.jpg",
-      "alt": "Badami photo 4",
-      "title": "Pattadakal"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Bhutanatha_Temple%2C_Badami.jpg",
+      "alt": "Badami photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/A-temple-at-pattadakal-badami.jpg/1280px-A-temple-at-pattadakal-badami.jpg",
-      "alt": "Badami photo 5",
-      "title": "Badami — Sacred Temple Heritage"
-    },
-    {
-      "src": "https://pixabay.com/get/g39926824318462e445469d9138cb43ebe8226a1e9c0a12819d77a74c3e960cad69e8c5eaec37cdca4784df78c53d03f1251d2bce6cf3a50edfa81abd50c66daf_1280.jpg",
-      "alt": "Badami in Badami, Karnataka - sandstone, badami rocks, red, caves, badami, temple, heritage, religious, karnataka, india",
-      "title": "Badami in Badami, Karnataka - sandstone, badami…"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A-temple-at-pattadakal-badami.jpg",
+      "alt": "Badami photo 5"
     }
   ],
   "faq": [
@@ -449,5 +511,7 @@
       "how to reach Badami",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

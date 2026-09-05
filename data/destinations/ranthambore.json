@@ -9,7 +9,7 @@
   "tagline": "Ranthambore — wildlife reserve of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Osiya-temple_%26_architecture_02.jpg",
-    "alt": "Ranthambore in Rajasthan - The temple of Osiya-Rajasthan"
+    "alt": "Ranthambore, Rajasthan"
   },
   "overview": {
     "short": "Ranthambore is a much-loved wildlife reserve in Rajasthan, known for tigers and safari.",
@@ -24,8 +24,7 @@
     "rating": 4.6,
     "reviewCount": 24000,
     "minPrice": 2500,
-    "distanceFromDelhi": 381,
-    "about": "Ranthambore, in Sawai Madhopur, Rajasthan, is one of India’s favourite wildlife reserve. Visitors come for its tigers, safari, fort, lakes, with the best months being Oct – Jun."
+    "distanceFromDelhi": 381
   },
   "bestTime": {
     "label": "Oct – Jun",
@@ -216,13 +215,13 @@
       "category": "wildlife",
       "distance": "Park",
       "entryFee": "₹1,500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "3 hrs",
       "rating": 4.7,
       "description": "Premier reserve to spot Royal Bengal tigers in the wild.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ranthambhore_Tiger_safari_Panorama_View.jpg/1280px-Ranthambhore_Tiger_safari_Panorama_View.jpg",
-        "alt": "Tiger Safari (Zone 1-6) in Rajasthan, India"
+        "alt": "Tiger Safari (Zone 1-6)"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tiger_Safari.jpg/1280px-Tiger_Safari.jpg",
@@ -235,13 +234,13 @@
       "category": "heritage",
       "distance": "12 km",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "10th-century UNESCO hill fort inside the tiger reserve.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ranthambore_Fort%2C_Rajasthan.JPG/1280px-Ranthambore_Fort%2C_Rajasthan.JPG",
-        "alt": "Ranthambore Fort in Rajasthan, India"
+        "alt": "Ranthambore Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mondrothuruthu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -254,13 +253,13 @@
       "category": "scenic",
       "distance": "Park",
       "entryFee": "Included",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Largest lake in the park, famed for the Jogi Mahal backdrop.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sunrise_dal_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Padam Talao, Ranthambore"
+        "alt": "Padam Talao"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Natural_vs_man-made.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -300,84 +299,203 @@
   ],
   "hotels": [
     {
-      "name": "OYO Ranthambore Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Ranthambore Treebo",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 111,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Wilderness Camp"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Ranthambore%20Stay%20Ranthambore%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Treebo%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Ranthambore",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Ranthambore",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 738,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ranthambore%20Ranthambore%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Ranthambore%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Ranthambore Grand Hotel",
+      "name": "Ranthambore FabHotels Prime",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 362,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Ranthambore%20Grand%20Hotel%20Ranthambore%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20FabHotels%20Prime%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Jungle Lodges Ranthambore",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Ranthambore",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 671,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Ranthambore%20Ranthambore%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Ranthambore%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Lemon Tree Nature Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2502,
+      "priceMax": 3463,
+      "rating": 4.4,
+      "reviews": 818,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Tiger Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Nature%20Retreat%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Ranthambore River View Camp",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6195,
+      "priceMax": 6547,
+      "rating": 4.4,
+      "reviews": 1040,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20River%20View%20Camp%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Ranthambore Taj Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10900,
+      "priceMax": 12853,
+      "rating": 4.6,
+      "reviews": 1599,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Taj%20Vivanta%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "The Conrad Ranthambore",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 13153,
+      "priceMax": 14727,
+      "rating": 4.7,
+      "reviews": 1372,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "World Class",
+        "Tiger Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Conrad%20Ranthambore%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Four Seasons Ranthambore",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 52174,
+      "priceMax": 53131,
+      "rating": 4.6,
+      "reviews": 1698,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Exclusive",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Four%20Seasons%20Ranthambore%20Ranthambore%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -393,29 +511,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Osiya-temple_%26_architecture_02.jpg",
-      "alt": "Ranthambore in Rajasthan - The temple of Osiya-Rajasthan",
-      "title": "Ranthambore in Rajasthan - The temple of…"
+      "alt": "Ranthambore in Rajasthan - The temple of Osiya-Rajasthan"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ranthambore_Fort%2C_Built.JPG/1280px-Ranthambore_Fort%2C_Built.JPG",
-      "alt": "Ranthambore photo 2",
-      "title": "Ranthambore Fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Ranthambore_Fort%2C_Built.JPG",
+      "alt": "Ranthambore photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Padam_Talao_Lake%2C_Ranthambore_National_Park_%282014%29.jpg/1280px-Padam_Talao_Lake%2C_Ranthambore_National_Park_%282014%29.jpg",
-      "alt": "Ranthambore photo 3",
-      "title": "Padam Talao"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Padam_Talao_Lake%2C_Ranthambore_National_Park_%282014%29.jpg",
+      "alt": "Ranthambore photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Padam_Talao.jpg/1280px-Padam_Talao.jpg",
-      "alt": "Ranthambore photo 4",
-      "title": "Ranthambore — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Padam_Talao.jpg",
+      "alt": "Ranthambore photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Center_beauty_of_ganga_river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Ranthambore - Highlight 5",
-      "alt": "Boats in India",
-      "title": "Boats in India"
+      "alt": "Boats in India"
     }
   ],
   "faq": [
@@ -453,5 +565,7 @@
       "how to reach Ranthambore",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

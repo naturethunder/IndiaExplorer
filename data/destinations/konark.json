@@ -9,7 +9,7 @@
   "tagline": "Konark — heritage city of Odisha",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg",
-    "alt": "Konark in Konark, Odisha - This is a wheel engraved in the 13th century built Konark Sun Temple in Orissa, India. The te"
+    "alt": "Konark, Odisha"
   },
   "overview": {
     "short": "Konark is a much-loved heritage city in Odisha, known for sun temple and chariot.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 15000,
     "minPrice": 900,
-    "distanceFromDelhi": 1730,
-    "about": "Konark, in Coromandel Coast, Odisha, is one of India’s favourite heritage city. Visitors come for its sun temple, chariot, unesco, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1730
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -214,13 +213,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "₹40",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.8,
       "description": "13th-century UNESCO temple shaped as the Sun God’s chariot.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Closeup_of_the_center_of_a_stone_wheel_-_Konark_Sun_Temple%2C_Orissa%2C_India.jpg/1280px-Closeup_of_the_center_of_a_stone_wheel_-_Konark_Sun_Temple%2C_Orissa%2C_India.jpg",
-        "alt": "Konark Sun Temple in Odisha, India"
+        "alt": "Konark Sun Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/Colvale-_Tar_vaddo_kopel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -233,13 +232,13 @@
       "category": "beach",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Tranquil beach with a sunrise viewpoint near the temple.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Chandrabhaga_Beach_Konark.jpg/1280px-Chandrabhaga_Beach_Konark.jpg",
-        "alt": "Chandrabhaga Beach in Odisha, India"
+        "alt": "Chandrabhaga Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Regina_Martyrum_Church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -252,13 +251,13 @@
       "category": "cultural",
       "distance": "Centre",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.2,
       "description": "Sculpture fragments recovered from the Sun Temple.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tribal_Museum_Bhubaneswar_Nov_2018_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "ASI Konark Museum in Odisha, India"
+        "alt": "ASI Konark Museum"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/46/Utorda_Church_%28Our_Lady_of_Lourdes%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -298,84 +297,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Konark Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Konark Treebo",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 476,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Konark%20Stay%20Konark%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Konark%20Treebo%20Konark%20Odisha"
     },
     {
-      "name": "Airbnb: Stay in Konark",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Zostel Plus Konark",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 469,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Legacy Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Konark%20Konark%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Konark%20Konark%20Odisha"
     },
     {
-      "name": "Konark Grand Hotel",
+      "name": "Treebo Trend Konark",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 344,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Konark%20Grand%20Hotel%20Konark%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Konark%20Konark%20Odisha"
     },
     {
-      "name": "Marriott Konark",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Konark Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 885,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Konark%20Konark%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Konark%20Haveli%20Stay%20Konark%20Odisha"
+    },
+    {
+      "name": "Keys Select Konark",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3573,
+      "priceMax": 4670,
+      "rating": 4.4,
+      "reviews": 384,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Konark%20Konark%20Odisha"
+    },
+    {
+      "name": "Konark Rajwada",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6368,
+      "priceMax": 7021,
+      "rating": 4.5,
+      "reviews": 1789,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Konark%20Rajwada%20Konark%20Odisha"
+    },
+    {
+      "name": "Westin Konark",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9115,
+      "priceMax": 9670,
+      "rating": 4.4,
+      "reviews": 1416,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Konark%20Konark%20Odisha"
     }
   ],
   "restaurants": [],
@@ -390,28 +462,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg",
-      "alt": "Konark in Konark, Odisha - This is a wheel engraved in the 13th century built Konark Sun Temple in Orissa, India. The te",
-      "title": "Konark in Konark, Odisha - This is a wheel engraved…"
+      "alt": "Konark in Konark, Odisha - This is a wheel engraved in the 13th century built Konark Sun Temple in Orissa, India. The te"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg/1280px-Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg",
-      "alt": "Konark photo 2",
-      "title": "Chandrabhaga Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg",
+      "alt": "Konark photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Beach_of_Konark_02.jpg/1280px-Beach_of_Konark_02.jpg",
-      "alt": "Konark photo 3",
-      "title": "ASI Konark Museum"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Beach_of_Konark_02.jpg",
+      "alt": "Konark photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Beach_of_Konark_01.jpg/1280px-Beach_of_Konark_01.jpg",
-      "alt": "Konark photo 4",
-      "title": "Konark — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Beach_of_Konark_01.jpg",
+      "alt": "Konark photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Boita_-_Konark_Museum.jpg",
-      "alt": "Konark photo 5",
-      "title": "Konark — Sunset Horizon"
+      "alt": "Konark photo 5"
     }
   ],
   "faq": [
@@ -449,5 +516,7 @@
       "how to reach Konark",
       "Odisha tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

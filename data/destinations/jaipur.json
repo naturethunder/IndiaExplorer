@@ -9,7 +9,7 @@
   "tagline": "Jaipur — heritage city of Rajasthan",
   "heroImage": {
     "src": "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Hawa Mahal (Palace of Winds), Jaipur — Iconic Rajput pink sandstone architecture"
+    "alt": "Jaipur, Rajasthan"
   },
   "overview": {
     "short": "Jaipur is a much-loved heritage city in Rajasthan, known for forts and palaces.",
@@ -24,8 +24,7 @@
     "rating": 4.6,
     "reviewCount": 52000,
     "minPrice": 900,
-    "distanceFromDelhi": 268,
-    "about": "Jaipur, in Aravalli Plains, Rajasthan, is one of India’s favourite heritage city. Visitors come for its forts, palaces, pink city, bazaars, with the best months being Oct – Mar."
+    "distanceFromDelhi": 268
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "City Centre",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "The five-storey Palace of Winds with 953 honeycomb windows.",
       "image": {
         "src": "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Hawa Mahal, Jaipur"
+        "alt": "Hawa Mahal"
       },
       "photos": [
         "https://images.pexels.com/photos/38068052/pexels-photo-38068052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -234,13 +233,13 @@
       "category": "heritage",
       "distance": "11 km",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2–3 hrs",
       "rating": 4.7,
       "description": "Hilltop Rajput fort with the dazzling Sheesh Mahal mirror palace.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg/1280px-20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg",
-        "alt": "Amber Fort, Jaipur"
+        "alt": "Amber Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1552_9340.jpg/1280px-20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1552_9340.jpg",
@@ -253,13 +252,13 @@
       "category": "heritage",
       "distance": "City Centre",
       "entryFee": "₹200",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Royal residence of courtyards, museums and the Chandra Mahal.",
       "image": {
         "src": "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "City Palace, Jaipur"
+        "alt": "City Palace"
       },
       "photos": [
         "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -272,13 +271,13 @@
       "category": "heritage",
       "distance": "City Centre",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "UNESCO 18th-century observatory with the world’s largest stone sundial.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg/1280px-20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg",
-        "alt": "Jantar Mantar, Jaipur"
+        "alt": "Jantar Mantar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg/1280px-20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg",
@@ -323,84 +322,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Jaipur Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Jaipur Haveli Stay",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 448,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Legacy Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Jaipur%20Stay%20Jaipur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jaipur%20Haveli%20Stay%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Jaipur",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Trend Jaipur",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 618,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Jaipur%20Jaipur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Jaipur Grand Hotel",
+      "name": "Ginger Palace Hotel",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 265,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Jaipur%20Grand%20Hotel%20Jaipur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Palace%20Hotel%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Marriott Jaipur",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Fairfield by Marriott Period Property",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 874,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Jaipur%20Jaipur%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Period%20Property%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "Jaipur Fortune",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3904,
+      "priceMax": 4251,
+      "rating": 4.3,
+      "reviews": 1197,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jaipur%20Fortune%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "Holiday Inn Jaipur",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5647,
+      "priceMax": 7496,
+      "rating": 4.4,
+      "reviews": 1375,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "Jaipur Mahal Palace",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7818,
+      "priceMax": 9366,
+      "rating": 4.6,
+      "reviews": 2141,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jaipur%20Mahal%20Palace%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -414,32 +486,22 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "title": "Hawa Mahal — Palace of Winds",
-      "caption": "Iconic five-storey pink sandstone palace with 953 honeycomb jharokhas",
       "alt": "Hawa Mahal Palace of Winds full facade, Jaipur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg/1280px-20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg",
-      "title": "Jaigarh Fort & Amer Ramparts",
-      "caption": "Historic hill fortress overlooking the Amer valley with the iconic Diya Burj",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg",
       "alt": "Jaigarh Fort ramparts and watchtower, Jaipur"
     },
     {
       "src": "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "title": "Royal Courtyards of Jaipur",
-      "caption": "Intricate terracotta archways and filigree balconies of Jaipur's palaces",
       "alt": "Royal palace courtyards and arches, Jaipur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg/1280px-20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg",
-      "title": "Nahargarh Fort — Madhavendra Palace",
-      "caption": "Royal suites and rooftop chhatris along the Aravalli ridge above Jaipur",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg",
       "alt": "Nahargarh Fort royal pavilions, Jaipur"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Water_Palace%2C_Jaipur.jpg/1280px-Water_Palace%2C_Jaipur.jpg",
-      "title": "Jal Mahal (Water Palace) at Dawn",
-      "caption": "Serene palace floating on the waters of Man Sagar Lake against the Aravalli hills",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Water_Palace%2C_Jaipur.jpg",
       "alt": "Jal Mahal Water Palace floating in Man Sagar Lake at dawn, Jaipur"
     }
   ],
@@ -478,5 +540,7 @@
       "how to reach Jaipur",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

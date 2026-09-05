@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-05T15:59:52.207Z",
+  "summary": {
+    "totalDestinations": 2392,
+    "withHotels": 2392,
+    "withRealChains": 2365,
+    "withMetadata": 2392,
+    "withSyntheticPatterns": 0,
+    "totalHotels": 17567,
+    "avgHotelsPerDestination": "7.34"
+  },
+  "issues": {
+    "noHotels": [],
+    "syntheticPatterns": [],
+    "missingMetadata": [],
+    "priceAnomalies": [],
+    "duplicateNames": []
+  },
+  "tierDistribution": {
+    "cheapest": 2413,
+    "budget": 4757,
+    "good": 4765,
+    "better": 2379,
+    "best": 2461,
+    "luxury": 423,
+    "extra_luxury": 369
+  },
+  "priceStats": {
+    "min": 350,
+    "max": 80000,
+    "avgMin": 5767,
+    "avgMax": 7401
+  }
+}

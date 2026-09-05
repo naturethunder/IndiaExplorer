@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Malanggad — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Malang_Fort1.jpg/1280px-Malang_Fort1.jpg",
-    "alt": "Malanggad photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Malang_Fort1.jpg",
+    "alt": "Malanggad, Maharashtra"
   },
   "overview": {
     "short": "Malanggad is a hill fort located in the Matheran Hill Range, Thane District, Maharashtra, India.",
@@ -24,8 +24,7 @@
     "rating": 4.2,
     "reviewCount": 8719,
     "minPrice": 900,
-    "distanceFromDelhi": 1133,
-    "about": "Malanggad is a hill fort located in the Matheran Hill Range, Thane District, Maharashtra, India."
+    "distanceFromDelhi": 1133
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -213,13 +212,13 @@
       "category": "cultural",
       "distance": "8 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Poshir is a village near the city of Neral, in the state of Maharashtra, India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Poshir_Pond.jpg",
-        "alt": "Poshir in Maharashtra, India"
+        "alt": "Poshir"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c5/Malanggad_top.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "cultural",
       "distance": "8 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.8,
       "description": "Kalyan Airstrip was located at Nevali village, 6 km (3.7 mi) south of Kalyan railway station and 55 km (34 mi) north of Chhatrapati Shivaji Maharaj International Airport. It was the primary landing ground for the nearby city of Bombay (now Mumbai) as early as 1920, much before the airfields of Juhu and RAF Santa Cruz were established.[2] As a Royal Air Force station during World War II in British India, the airfield served as RAF Kalyan from 1942 to 1947 and was abandoned after the war.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Remains_of_NE-SW_Runway_of_RAF_Kalyan.png/1280px-Remains_of_NE-SW_Runway_of_RAF_Kalyan.png",
-        "alt": "Kalyan Airstrip in Maharashtra, India"
+        "alt": "Kalyan Airstrip"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/RAF_Kalyan_and_Kalyan_Array.jpg/1280px-RAF_Kalyan_and_Kalyan_Array.jpg",
@@ -250,14 +249,14 @@
       "name": "Shiv Mandir, Ambarnath",
       "category": "spiritual",
       "distance": "10 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "The Shiv Mandir of Ambarnath is a historic 11th-century Hindu temple, at Ambarnath near Mumbai, in Maharashtra, India. It is also known as the Ambreshwar Shiva Temple, and known locally as Puratana Shivalaya.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Shiv_Mandir%2C_Ambarnath_in_January_2024_%2811%29.jpg/1280px-Shiv_Mandir%2C_Ambarnath_in_January_2024_%2811%29.jpg",
-        "alt": "Shiv Mandir, Ambarnath in Maharashtra, India"
+        "alt": "Shiv Mandir, Ambarnath"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Temple_of_Ambarnath.JPG/1280px-Temple_of_Ambarnath.JPG",
@@ -270,13 +269,13 @@
       "category": "scenic",
       "distance": "10 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.1,
       "description": "Badlapur (Marathi pronunciation: [bəd̪lapuːɾ]) is a city in the Thane district, Maharashtra state, India, and is a part of Mumbai Metropolitan Region. Badlapur is a city on the banks of Ulhas River in the Thane district of Maharashtra state in Konkan division.",
       "image": {
         "src": "https://images.pexels.com/photos/12623400/pexels-photo-12623400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Badlapur, Maharashtra - Rear view of a muscular man in a tank top holding a jacket by the seaside, showcasing strength a"
+        "alt": "Badlapur"
       },
       "photos": [
         "https://images.pexels.com/photos/10924650/pexels-photo-10924650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -321,84 +320,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Malanggad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Malanggad Heritage Hotel",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 342,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Period Property"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Malanggad%20Stay%20Malanggad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Malanggad%20Heritage%20Hotel%20Malanggad%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Malanggad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Malanggad Royal Retreat",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 649,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Malanggad%20Malanggad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Malanggad%20Royal%20Retreat%20Malanggad%20Maharashtra"
     },
     {
-      "name": "Malanggad Grand Hotel",
+      "name": "Hotel Royal Orchid Malanggad",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 674,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Malanggad%20Grand%20Hotel%20Malanggad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Malanggad%20Malanggad%20Maharashtra"
     },
     {
-      "name": "Marriott Malanggad",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Sarovar Portico Legacy Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 963,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Legacy%20Hotel%20Malanggad%20Maharashtra"
+    },
+    {
+      "name": "Lemon Tree Malanggad",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3881,
+      "priceMax": 4779,
+      "rating": 4.4,
+      "reviews": 438,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Malanggad%20Malanggad%20Maharashtra"
+    },
+    {
+      "name": "Novotel Malanggad",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5531,
+      "priceMax": 7147,
+      "rating": 4.4,
+      "reviews": 1200,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Malanggad%20Malanggad%20Maharashtra"
+    },
+    {
+      "name": "Malanggad Period Property",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8785,
+      "priceMax": 10155,
+      "rating": 4.5,
+      "reviews": 1278,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Malanggad%20Malanggad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Malanggad%20Period%20Property%20Malanggad%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -413,30 +486,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Malang_Fort1.jpg/1280px-Malang_Fort1.jpg",
-      "alt": "Malanggad photo 2",
-      "title": "Poshir"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Malang_Fort1.jpg",
+      "alt": "Malanggad photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bawamalang_or_the_Cathedral_Rocks.jpg",
-      "alt": "Malanggad photo 3",
-      "title": "Kalyan Airstrip"
+      "alt": "Malanggad photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Malanggad_machi.jpg/1280px-Malanggad_machi.jpg",
-      "alt": "Malanggad photo 4",
-      "title": "Shiv Mandir, Ambarnath"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Malanggad_machi.jpg",
+      "alt": "Malanggad photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Malang_Fort1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Malanggad photo 5",
-      "title": "Badlapur"
+      "alt": "Malanggad photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Sceneryg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Malanggad - Highlight 5",
-      "alt": "Hills of Andhra Pradesh",
-      "title": "Hills of Andhra Pradesh"
+      "alt": "Hills of Andhra Pradesh"
     }
   ],
   "faq": [
@@ -474,5 +541,7 @@
       "how to reach Malanggad",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

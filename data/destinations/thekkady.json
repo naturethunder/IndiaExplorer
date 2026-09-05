@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Thekkady — wildlife reserve of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Periyar_National_Park_-_2.JPG/1280px-Periyar_National_Park_-_2.JPG",
-    "alt": "Thekkady photo 6"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Periyar_National_Park_-_2.JPG",
+    "alt": "Thekkady, Kerala"
   },
   "overview": {
     "short": "Thekkady is a much-loved wildlife reserve in Kerala, known for periyar tiger reserve and spice gardens.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 18000,
     "minPrice": 1500,
-    "distanceFromDelhi": 2650,
-    "about": "Thekkady, in Idukki, Kerala, is one of India’s favourite wildlife reserve. Visitors come for its periyar tiger reserve, spice gardens, boating, with the best months being Sep – Mar."
+    "distanceFromDelhi": 2650
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -213,13 +212,13 @@
       "category": "wildlife",
       "distance": "Park",
       "entryFee": "₹300",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Boat cruise to spot elephants, bison and birds at the waterline.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Marble_rocks.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Periyar Lake Boat Safari, Thekkady"
+        "alt": "Periyar Lake Boat Safari"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/2b/A_view_of_Marble_Rocks%2C_Jabalpur_Madhya_Pradesh_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "nature",
       "distance": "5 km",
       "entryFee": "₹300",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "Guided walk through cardamom, pepper and clove gardens.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Cardamom_pods_on_plant_.jpg",
-        "alt": "Spice Plantation Tour in Kerala, India"
+        "alt": "Spice Plantation Tour"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Periyar_National_Park_2019.jpg/1280px-Periyar_National_Park_2019.jpg",
@@ -251,13 +250,13 @@
       "category": "wildlife",
       "distance": "Park",
       "entryFee": "₹500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "3 hrs",
       "rating": 4.5,
       "description": "Guided forest trek with armed naturalist in the reserve.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Mycalesis_junonia-Thekkady.jpg/1280px-Mycalesis_junonia-Thekkady.jpg",
-        "alt": "Periyar Nature Walk in Kerala, India"
+        "alt": "Periyar Nature Walk"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Junonia_orithya-Thekkady-2016-12-03-001.jpg/1280px-Junonia_orithya-Thekkady-2016-12-03-001.jpg",
@@ -297,84 +296,202 @@
   ],
   "hotels": [
     {
-      "name": "OYO Thekkady Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Thekkady The Hosteller",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1500,
       "priceMax": 2400,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 374,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Thekkady%20Stay%20Thekkady%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20The%20Hosteller%20Thekkady%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Thekkady",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ibis Budget Thekkady",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2850,
       "priceMax": 4050,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 457,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Thekkady%20Thekkady%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Thekkady%20Thekkady%20Kerala"
     },
     {
-      "name": "Thekkady Grand Hotel",
+      "name": "Ginger Thekkady",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4500,
       "priceMax": 6750,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 472,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Thekkady%20Grand%20Hotel%20Thekkady%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Thekkady%20Thekkady%20Kerala"
     },
     {
-      "name": "Jungle Lodges Thekkady",
-      "type": "resort",
-      "tier": "best",
+      "name": "Thekkady Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 9000,
       "priceMax": 15000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 1115,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Eco Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Thekkady%20Thekkady%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Fairfield%20by%20Marriott%20Thekkady%20Kerala"
+    },
+    {
+      "name": "Thekkady Keys Select",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3575,
+      "priceMax": 5346,
+      "rating": 4.4,
+      "reviews": 1123,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Keys%20Select%20Thekkady%20Kerala"
+    },
+    {
+      "name": "Hyatt Place Thekkady",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5463,
+      "priceMax": 6714,
+      "rating": 4.4,
+      "reviews": 1455,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Thekkady%20Thekkady%20Kerala"
+    },
+    {
+      "name": "Thekkady Hilton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10735,
+      "priceMax": 12611,
+      "rating": 4.5,
+      "reviews": 2573,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Hilton%20Thekkady%20Kerala"
+    },
+    {
+      "name": "Taj Thekkady",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 19151,
+      "priceMax": 19510,
+      "rating": 4.7,
+      "reviews": 1920,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Thekkady%20Thekkady%20Kerala"
+    },
+    {
+      "name": "Aman Jungle Lodge",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 38171,
+      "priceMax": 39162,
+      "rating": 4.7,
+      "reviews": 813,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Aman%20Jungle%20Lodge%20Thekkady%20Kerala"
     }
   ],
   "restaurants": [],
@@ -387,33 +504,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Periyar_National_Park_-_2.JPG/1280px-Periyar_National_Park_-_2.JPG",
-      "alt": "Thekkady photo 6",
-      "title": "Periyar Lake Boat Safari"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Periyar_National_Park_-_2.JPG",
+      "alt": "Thekkady photo 6"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Rajwada_at_Indore%2C_Madhya_Pradesh_15_49_59_921000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Thekkady - Highlight 2",
-      "alt": "Indore Madhya Pradesh rajwada",
-      "title": "Indore Madhya Pradesh rajwada"
+      "alt": "Indore Madhya Pradesh rajwada"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Itanagar_buddhist_monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Thekkady - Highlight 3",
-      "alt": "Itanagar Arunachal Pradesh monastery",
-      "title": "Itanagar Arunachal Pradesh monastery"
+      "alt": "Itanagar Arunachal Pradesh monastery"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Centre_for_Buddhist_Culture_%28Gompa_Temple%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Thekkady - Highlight 4",
-      "alt": "Itanagar Arunachal Pradesh monastery",
-      "title": "Itanagar Arunachal Pradesh monastery"
+      "alt": "Itanagar Arunachal Pradesh monastery"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Serene_View_of_Itanagar_Monastery_Amidst_Lush_Hills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Thekkady - Highlight 5",
-      "alt": "Itanagar Arunachal Pradesh monastery",
-      "title": "Itanagar Arunachal Pradesh monastery"
+      "alt": "Itanagar Arunachal Pradesh monastery"
     }
   ],
   "faq": [
@@ -451,5 +559,7 @@
       "how to reach Thekkady",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

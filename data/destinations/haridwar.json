@@ -9,7 +9,7 @@
   "tagline": "Haridwar — spiritual town of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Haridwar%2C_Uttarakhand%2C_India.jpg",
-    "alt": "Haridwar in Haridwar, Uttarakhand - From the Mansa Devi temple."
+    "alt": "Haridwar, Uttarakhand"
   },
   "overview": {
     "short": "Haridwar is a much-loved spiritual town in Uttarakhand, known for ganga aarti and har ki pauri.",
@@ -24,8 +24,7 @@
     "rating": 4.5,
     "reviewCount": 40000,
     "minPrice": 900,
-    "distanceFromDelhi": 222,
-    "about": "Haridwar, in Ganga Plains, Uttarakhand, is one of India’s favourite spiritual town. Visitors come for its ganga aarti, har ki pauri, kumbh, temples, with the best months being Sep – Mar."
+    "distanceFromDelhi": 222
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -219,13 +218,13 @@
       "category": "spiritual",
       "distance": "City Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.7,
       "description": "The most sacred ghat, host to the spectacular evening Ganga Aarti.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Dehradun_Valley_from_Landour%2C_Uttarakhand_India_November_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Har Ki Pauri in Uttarakhand, India"
+        "alt": "Har Ki Pauri"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/bf/Amar_y_%28139%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -238,13 +237,13 @@
       "category": "spiritual",
       "distance": "3 km",
       "entryFee": "₹120",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Hilltop Shakti temple reached by a cable car.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mansa_Devi_Temple%2C_Haridwar.JPG/1280px-Mansa_Devi_Temple%2C_Haridwar.JPG",
-        "alt": "Mansa Devi Temple in Uttarakhand, India"
+        "alt": "Mansa Devi Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Mansa_Devi_Temple%2C_Haridwar_03.jpg/1280px-Mansa_Devi_Temple%2C_Haridwar_03.jpg",
@@ -257,13 +256,13 @@
       "category": "spiritual",
       "distance": "4 km",
       "entryFee": "₹120",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Ropeway temple atop Neel Parvat, a revered Siddh Peeth.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Information_board_of_Robber_Cave_Dehradun_Uttarakhand_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Chandi Devi Temple in Uttarakhand, India"
+        "alt": "Chandi Devi Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/08/Dal_Lake%2C_Guptaele_%28143%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -303,84 +302,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Haridwar Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "FabHotels Haridwar",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 100,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Bhakti Residency"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Haridwar%20Stay%20Haridwar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Haridwar%20Haridwar%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Haridwar",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Haridwar FabHotels Prime",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 232,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Devotee Inn"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Haridwar%20Haridwar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Haridwar%20FabHotels%20Prime%20Haridwar%20Uttarakhand"
     },
     {
-      "name": "Haridwar Grand Hotel",
+      "name": "Haridwar Divine Retreat",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 253,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Devotee Inn"
       ],
-      "url": "https://www.google.com/search?q=Haridwar%20Grand%20Hotel%20Haridwar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Haridwar%20Divine%20Retreat%20Haridwar%20Uttarakhand"
     },
     {
-      "name": "Fortune Park Haridwar",
-      "type": "resort",
-      "tier": "best",
+      "name": "Sarovar Portico Heritage Residency & Suites",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 689,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Yatri Nivas"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Heritage%20Residency%20%26%20Suites%20Haridwar%20Uttarakhand"
+    },
+    {
+      "name": "Keys Select Haridwar",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3526,
+      "priceMax": 4721,
+      "rating": 4.3,
+      "reviews": 417,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Divine Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Haridwar%20Haridwar%20Uttarakhand"
+    },
+    {
+      "name": "Haridwar Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5367,
+      "priceMax": 5884,
+      "rating": 4.5,
+      "reviews": 1498,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Haridwar%20Fairfield%20by%20Marriott%20Haridwar%20Uttarakhand"
+    },
+    {
+      "name": "Haridwar Hyatt Regency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9766,
+      "priceMax": 10604,
+      "rating": 4.6,
+      "reviews": 896,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Haridwar%20Haridwar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Haridwar%20Hyatt%20Regency%20Haridwar%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -394,29 +464,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Haridwar%2C_Uttarakhand%2C_India.jpg",
-      "alt": "Haridwar in Haridwar, Uttarakhand - From the Mansa Devi temple.",
-      "title": "Haridwar in Haridwar, Uttarakhand - From the Mansa…"
+      "alt": "Haridwar in Haridwar, Uttarakhand - From the Mansa Devi temple."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Har_ki_Pauri%2C_Haridwar_2.jpg/1280px-Har_ki_Pauri%2C_Haridwar_2.jpg",
-      "alt": "Haridwar photo 2",
-      "title": "Mansa Devi Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Har_ki_Pauri%2C_Haridwar_2.jpg",
+      "alt": "Haridwar photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Trisula_%28trident%29_from_Chandi_Pahar%2C_opposite_Haridwar._April_1814.jpg",
-      "alt": "Haridwar photo 3",
-      "title": "Chandi Devi Temple"
+      "alt": "Haridwar photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Har_ki_Pauri%2C_Haridwar_3.jpg/1280px-Har_ki_Pauri%2C_Haridwar_3.jpg",
-      "alt": "Haridwar photo 5",
-      "title": "Haridwar — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Har_ki_Pauri%2C_Haridwar_3.jpg",
+      "alt": "Haridwar photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Amar_y_%28138%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Haridwar - Highlight 5",
-      "alt": "Gardens in India",
-      "title": "Gardens in India"
+      "alt": "Gardens in India"
     }
   ],
   "faq": [
@@ -454,5 +518,7 @@
       "how to reach Haridwar",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

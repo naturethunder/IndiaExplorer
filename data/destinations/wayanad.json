@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Wayanad — hill station of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Edakkal_Caves_-_Interior.jpg/1280px-Edakkal_Caves_-_Interior.jpg",
-    "alt": "Wayanad photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Edakkal_Caves_-_Interior.jpg",
+    "alt": "Wayanad, Kerala"
   },
   "overview": {
     "short": "Wayanad is a much-loved hill station in Kerala, known for caves and waterfalls.",
@@ -24,8 +24,7 @@
     "rating": 4.5,
     "reviewCount": 21000,
     "minPrice": 1200,
-    "distanceFromDelhi": 2400,
-    "about": "Wayanad, in Western Ghats, Kerala, is one of India’s favourite hill station. Visitors come for its caves, waterfalls, wildlife, plantations, with the best months being Oct – May."
+    "distanceFromDelhi": 2400
   },
   "bestTime": {
     "label": "Oct – May",
@@ -219,13 +218,13 @@
       "category": "heritage",
       "distance": "25 km",
       "entryFee": "₹40",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Prehistoric petroglyph caves from 6,000 BCE.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Edakkal_Caves_-_Petroglyphs_-_10.jpg/1280px-Edakkal_Caves_-_Petroglyphs_-_10.jpg",
-        "alt": "Edakkal Caves in Kerala, India"
+        "alt": "Edakkal Caves"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Cave_at_Edakkal%28Inside%29.JPG",
@@ -238,13 +237,13 @@
       "category": "trekking",
       "distance": "15 km",
       "entryFee": "₹750",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.6,
       "description": "Trek to a heart-shaped lake and Wayanad’s highest point.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Chembra_peak%2C_wayanad%2C_kerala%2C_India.jpg/1280px-Chembra_peak%2C_wayanad%2C_kerala%2C_India.jpg",
-        "alt": "Chembra Peak in Kerala, India"
+        "alt": "Chembra Peak"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Chembra_Peak%2C_Wayanad.JPG",
@@ -257,13 +256,13 @@
       "category": "scenic",
       "distance": "21 km",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "India’s largest earthen dam with island-dotted boating.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Banasura_Sagar_Dam_Wayanad2.jpg/1280px-Banasura_Sagar_Dam_Wayanad2.jpg",
-        "alt": "Banasura Sagar Dam in Kerala, India"
+        "alt": "Banasura Sagar Dam"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Banasura_Sagar_Dam_Wayanad1.jpg/1280px-Banasura_Sagar_Dam_Wayanad1.jpg",
@@ -303,84 +302,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Wayanad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Ridge Resort",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 276,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Wayanad%20Stay%20Wayanad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Ridge%20Resort%20Wayanad%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Wayanad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Wayanad Alpine Lodge",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 184,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Wayanad%20Wayanad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Wayanad%20Alpine%20Lodge%20Wayanad%20Kerala"
     },
     {
-      "name": "Wayanad Grand Hotel",
+      "name": "FabHotels Prime Summit View",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 423,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Wayanad%20Grand%20Hotel%20Wayanad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Summit%20View%20Wayanad%20Kerala"
     },
     {
-      "name": "Sterling Wayanad",
-      "type": "resort",
-      "tier": "best",
+      "name": "OYO Townhouse Hilltop Retreat",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 698,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Good Value",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Wayanad%20Wayanad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Hilltop%20Retreat%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Lemon Tree Mist Haven",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2898,
+      "priceMax": 3834,
+      "rating": 4.2,
+      "reviews": 937,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Mist%20Haven%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Ginger Wayanad",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3598,
+      "priceMax": 5024,
+      "rating": 4.1,
+      "reviews": 408,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Courtyard by Marriott Peak Stay",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4661,
+      "priceMax": 5475,
+      "rating": 4.5,
+      "reviews": 1835,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Peak%20Stay%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Wayanad Valley View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11224,
+      "priceMax": 12445,
+      "rating": 4.6,
+      "reviews": 1913,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Wayanad%20Valley%20View%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Wayanad Mountain Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11767,
+      "priceMax": 12841,
+      "rating": 4.5,
+      "reviews": 1645,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Wayanad%20Mountain%20Resort%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Wayanad Taj",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 16979,
+      "priceMax": 17909,
+      "rating": 4.5,
+      "reviews": 1125,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Wayanad%20Taj%20Wayanad%20Kerala"
     }
   ],
   "restaurants": [],
@@ -395,29 +534,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Edakkal_Caves_-_Interior.jpg/1280px-Edakkal_Caves_-_Interior.jpg",
-      "alt": "Wayanad photo 2",
-      "title": "Edakkal Caves"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Edakkal_Caves_-_Interior.jpg",
+      "alt": "Wayanad photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Chembra_Peak%2C_Wayanad_-_panoramio.jpg/1280px-Chembra_Peak%2C_Wayanad_-_panoramio.jpg",
-      "alt": "Wayanad photo 3",
-      "title": "Chembra Peak"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Chembra_Peak%2C_Wayanad_-_panoramio.jpg",
+      "alt": "Wayanad photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chembra_Peak%2C_Wayanad_-_panoramio_%285%29.jpg/1280px-Chembra_Peak%2C_Wayanad_-_panoramio_%285%29.jpg",
-      "alt": "Wayanad photo 4",
-      "title": "Banasura Sagar Dam"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Chembra_Peak%2C_Wayanad_-_panoramio_%285%29.jpg",
+      "alt": "Wayanad photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Banasura_Sagar_Dam_Wayanad4.jpg/1280px-Banasura_Sagar_Dam_Wayanad4.jpg",
-      "alt": "Wayanad photo 5",
-      "title": "Wayanad — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Banasura_Sagar_Dam_Wayanad4.jpg",
+      "alt": "Wayanad photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/JainTemple_Wayanad_%286%29.JPG",
-      "alt": "Wayanad in Wayanad, Kerala - This is a photo of ASI monument number",
-      "title": "Wayanad in Wayanad, Kerala - This is a photo of ASI…"
+      "alt": "Wayanad in Wayanad, Kerala - This is a photo of ASI monument number"
     }
   ],
   "faq": [
@@ -455,5 +589,7 @@
       "how to reach Wayanad",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

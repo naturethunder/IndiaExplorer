@@ -20,15 +20,15 @@ initLayout({});
 const TIER_ORDER = ['cheapest', 'budget', 'good', 'better', 'best', 'luxury', 'extra_luxury'];
 function tierColor(tier) {
   const map = {
-    cheapest: 'bg-emerald-100 text-emerald-800 border-emerald-200',
-    budget: 'bg-blue-100 text-blue-800 border-blue-200',
-    good: 'bg-indigo-100 text-indigo-800 border-indigo-200',
-    better: 'bg-violet-100 text-violet-800 border-violet-200',
-    best: 'bg-orange-100 text-orange-800 border-orange-200',
-    luxury: 'bg-rose-100 text-rose-800 border-rose-200',
-    extra_luxury: 'bg-amber-100 text-amber-800 border-amber-200',
+    cheapest: 'tier-pill-cheapest',
+    budget: 'tier-pill-budget',
+    good: 'tier-pill-good',
+    better: 'tier-pill-better',
+    best: 'tier-pill-best',
+    luxury: 'tier-pill-luxury',
+    extra_luxury: 'tier-pill-extra-luxury',
   };
-  return map[tier] || 'bg-gray-100 text-gray-800 border-gray-200';
+  return map[tier] || 'tier-pill-default';
 }
 
 // Map a WMO weather code to a human label + emoji
@@ -146,13 +146,35 @@ function main(dest, idx) {
     { id: 'adventure', label: 'Adventure', icon: '⛺' },
   ];
 
+  function cleanAltText(str) {
+    if (!str || typeof str !== 'string') return '';
+    let clean = str;
+    clean = clean.replace(/<!--[\s\S]*?-->/g, ' ');
+    clean = clean.replace(/<[a-zA-Z\/][^>]*>?/g, ' ');
+    clean = clean.replace(/<[a-zA-Z]+(?:\s+[^>]*)?$/g, ' ');
+    clean = clean.replace(/&amp;/gi, '&')
+                 .replace(/&quot;/gi, '"')
+                 .replace(/&#039;|&apos;/gi, "'")
+                 .replace(/&lt;/gi, '<')
+                 .replace(/&gt;/gi, '>')
+                 .replace(/&[a-z0-9]+;/gi, ' ');
+    clean = clean.replace(/<[^>]*>?/g, ' ');
+    clean = clean.replace(/(?:https?:\/\/|\/\/)\S+/gi, ' ');
+    clean = clean.replace(/^File:[^.]+\.(?:jpe?g|png|webp)/i, ' ');
+    clean = clean.replace(/^This is a photo of\s*/i, ' ');
+    clean = clean.replace(/[\r\n\t]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+    clean = clean.replace(/[-—–:]\s*(?:This is a photo of|A photo of|View of)?\s*$/i, '');
+    clean = clean.replace(/^[-—–:;,./|]\s*/, '').replace(/\s*[-—–:;,./|]$/, '').trim();
+    return clean;
+  }
+
   // Resolve heroImage regardless of whether it's a string URL or {src,alt} object
   const heroSrc = typeof dest.heroImage === 'string' ? dest.heroImage
     : (dest.heroImage && dest.heroImage.src ? dest.heroImage.src
       : (dest.image && dest.image.src ? dest.image.src
         : (dest.gallery && dest.gallery[0] ? (typeof dest.gallery[0] === 'string' ? dest.gallery[0] : dest.gallery[0].src) : '')));
-  const heroAlt = typeof dest.heroImage === 'object' && dest.heroImage
-    ? (dest.heroImage.alt || dest.title) : dest.title;
+  const rawHeroAlt = typeof dest.heroImage === 'object' && dest.heroImage ? dest.heroImage.alt : '';
+  const heroAlt = cleanAltText(rawHeroAlt) || (dest.title || 'Destination');
 
   // Build a safe seo object even when dest.seo is missing
   const seoObj = dest.seo || {
@@ -375,18 +397,22 @@ function main(dest, idx) {
 
       function formatHeroTitle(title, tagline, alt, state) {
         if (tagline && typeof tagline === 'string') {
-          const t = tagline.trim();
-          if (t.toLowerCase().startsWith(title.toLowerCase())) {
-            return t;
+          const t = cleanAltText(tagline);
+          if (t) {
+            if (t.toLowerCase().startsWith(title.toLowerCase())) {
+              return t;
+            }
+            return title + ' — ' + t;
           }
-          return title + ' — ' + t;
         }
         if (alt && typeof alt === 'string') {
-          const a = alt.trim();
-          if (a.toLowerCase().startsWith(title.toLowerCase())) {
-            return a.slice(0, 70);
+          const a = cleanAltText(alt);
+          if (a && a.toLowerCase() !== title.toLowerCase()) {
+            if (a.toLowerCase().startsWith(title.toLowerCase())) {
+              return a.slice(0, 70);
+            }
+            return title + ' — ' + a.slice(0, 60);
           }
-          return title + ' — ' + a.slice(0, 60);
         }
         return title + (state ? ' · ' + state : '');
       }
@@ -400,10 +426,11 @@ function main(dest, idx) {
           category: dest.type || 'scenic'
         });
       } else if (dest.heroImage && dest.heroImage.src) {
+        const cleanHeroSub = cleanAltText(dest.heroImage.alt);
         addPhoto({
           src: dest.heroImage.src,
-          title: formatHeroTitle(dest.title, dest.tagline, dest.heroImage.alt, dest.state),
-          subtitle: dest.heroImage.alt || (dest.state + ' · Main View'),
+          title: formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
+          subtitle: (cleanHeroSub && cleanHeroSub.toLowerCase() !== dest.title.toLowerCase()) ? cleanHeroSub : (dest.state + ' · Main View'),
           category: dest.type || 'scenic'
         });
       }
@@ -420,12 +447,13 @@ function main(dest, idx) {
       function resolveGalleryTitle(g, idx) {
         // 1. If explicit title exists and is not generic, use it
         if (g && typeof g === 'object' && g.title && !isGenericLabel(g.title)) {
-          return g.title.trim();
+          const cleanedTitle = cleanAltText(g.title);
+          if (cleanedTitle) return cleanedTitle;
         }
         // 2. Derive from alt text if descriptive
-        const gAlt = (g && typeof g === 'object' && g.alt) ? g.alt.trim() : '';
-        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt)) {
-          let cleanAlt = gAlt.replace(/<[^>]*>/g, '').replace(/https?:\/\/\S+/g, '').trim();
+        const gAlt = (g && typeof g === 'object' && g.alt) ? cleanAltText(g.alt) : '';
+        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt) && gAlt.toLowerCase() !== dest.title.toLowerCase()) {
+          let cleanAlt = gAlt;
           if (cleanAlt.length > 55) {
             const sub = cleanAlt.slice(0, 52);
             const lastSpace = sub.lastIndexOf(' ');
@@ -455,10 +483,11 @@ function main(dest, idx) {
 
       function resolveGalleryCaption(g, idx) {
         if (g && typeof g === 'object' && g.caption && !isGenericLabel(g.caption)) {
-          return g.caption.trim();
+          const c = cleanAltText(g.caption);
+          if (c) return c;
         }
-        const gAlt = (g && typeof g === 'object' && g.alt) ? g.alt.trim() : '';
-        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt)) {
+        const gAlt = (g && typeof g === 'object' && g.alt) ? cleanAltText(g.alt) : '';
+        if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt) && gAlt.toLowerCase() !== dest.title.toLowerCase()) {
           return gAlt.slice(0, 80);
         }
         return (dest.state ? dest.state + ' · ' : '') + (typeLabel(dest.type) || 'Scenic') + ' Landmark';
@@ -598,11 +627,10 @@ function main(dest, idx) {
       '<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">' +
       '<div class="lg:col-span-2 space-y-6">' +
       summaryHighlightsHTML +
-      // Bug 13 fix: ov uses 'about' field, not 'description'; fall back gracefully
-      '<div><h2 class="text-xl font-bold text-gray-900 mb-3">About ' + esc(dest.title) + '</h2>' +
+      '<div><span class="tab-calligraphy-kicker">✦ The Chronicles & Heritage ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">About ' + esc(dest.title) + '</h2>' +
       '<p class="text-gray-600 leading-relaxed">' + esc(ov.about || ov.description || dest.short || '') + '</p></div>' +
       '<div><h3 class="font-semibold text-gray-900 mb-3">Known For</h3><div class="flex flex-wrap gap-2">' + features + '</div></div>' +
-      '<div><div class="flex items-center justify-between mb-3.5"><h3 class="font-bold text-gray-900 text-lg">Top Places to Visit</h3>' +
+      '<div><div class="flex items-center justify-between mb-3.5"><div><span class="tab-calligraphy-kicker text-sm">✦ Must-Visit Wonders ✦</span><h3 class="font-bold text-gray-900 dark:text-white text-lg">Top Places to Visit</h3></div>' +
       '<button class="text-sm text-primary font-semibold hover:underline flex items-center gap-1" data-goto="places">See all places →</button></div>' +
       '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">' + topPlaces + '</div></div>' +
       '</div>' +
@@ -765,16 +793,16 @@ function main(dest, idx) {
     const cats = [];
     places.forEach(function (p) { if (cats.indexOf(p.category) === -1) cats.push(p.category); });
     let btns = '<button class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
-      (placeFilter === 'all' ? 'bg-primary text-white border-primary' : 'bg-white text-gray-600 border-gray-200') + '" data-place="all">All</button>';
+      (placeFilter === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="all">All</button>';
     btns += cats.map(function (c) {
       return '<button class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all capitalize ' +
-        (placeFilter === c ? 'bg-primary text-white border-primary' : 'bg-white text-gray-600 border-gray-200 hover:border-primary') + '" data-place="' + esc(c) + '">' + esc(c) + '</button>';
+        (placeFilter === c ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="' + esc(c) + '">' + esc(c) + '</button>';
     }).join('');
 
     const list = places.filter(function (p) { return placeFilter === 'all' || p.category === placeFilter; });
     const cards = list.map(function (p, i) {
       const fee = p.entryFee === 'Free'
-        ? '<span class="text-green-600 font-medium">Free Entry</span>'
+        ? '<span class="text-amber-400 font-medium">Free Entry</span>'
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
       // Bug 14 fix: guard p.image before accessing .src to avoid null crash
       const pImg = (p.image && p.image.src) ? p.image : null;
@@ -787,12 +815,12 @@ function main(dest, idx) {
         '<p class="text-xs text-gray-500 mb-1.5 capitalize">' + esc(p.category) + ' · ' + esc(p.distance) + ' · ' + esc(p.duration) + '</p>' +
         '<p class="text-xs text-gray-600 leading-relaxed line-clamp-2">' + esc(p.description) + '</p>' +
         '<div class="flex items-center justify-between mt-2 text-xs"><div class="flex gap-3">' + fee + '<span class="text-gray-400">' + esc(p.timings) + '</span></div>' +
-        '<span class="text-primary font-semibold shrink-0">View details →</span></div>' +
+        '<span class="text-amber-400 font-semibold shrink-0">View details →</span></div>' +
         '</div></div></div>';
     }).join('');
 
     document.getElementById('panel-places').innerHTML =
-      '<div class="flex items-center justify-between mb-6"><h2 class="text-xl font-bold text-gray-900">Places to Visit in ' + esc(dest.title) + '</h2></div>' +
+      '<div class="flex items-center justify-between mb-6"><div><span class="tab-calligraphy-kicker">✦ Sacred Sanctuaries & Must-Visit Wonders ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
       '<div class="flex gap-2 overflow-x-auto scrollbar-hide mb-6 pb-1">' + btns + '</div>' +
       '<div class="grid grid-cols-1 md:grid-cols-2 gap-4">' + cards + '</div>';
 
@@ -812,11 +840,11 @@ function main(dest, idx) {
   let stayTier = 'all';
   function renderStays() {
     const allBtn = '<button class="px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
-      (stayTier === 'all' ? 'bg-gray-900 text-white' : 'bg-white text-gray-600 border-gray-200') + '" data-tier="all">All Stays</button>';
+      (stayTier === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-tier="all">All Stays</button>';
     const tierBtns = Object.keys(PRICE_TIERS).filter(function (key) {
       return hotels.some(function (s) { return s.tier === key; });
     }).map(function (key) {
-      const active = stayTier === key ? ' ring-2 ring-offset-1 ring-current' : '';
+      const active = stayTier === key ? ' active ring-2 ring-offset-1 ring-amber-400/80 shadow-md shadow-amber-400/25' : ' opacity-75 hover:opacity-100';
       return '<button class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '">' + PRICE_TIERS[key].label + '</button>';
     }).join('');
 
@@ -827,23 +855,26 @@ function main(dest, idx) {
     if (list.length === 0) {
       cards = '<div class="text-center py-16"><div class="mb-3 flex justify-center">' + SVG_HOTEL + '</div>' +
         '<p class="text-gray-600 font-medium">No stays in this price category</p>' +
-        '<button class="mt-3 text-primary text-sm font-semibold" data-tier="all">Show all stays</button></div>';
+        '<button class="mt-3 text-amber-400 text-sm font-semibold" data-tier="all">Show all stays</button></div>';
     } else {
       cards = list.map(function (s) {
         const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-amber-500/15 text-amber-300 dark:text-amber-400 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
         const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
-        const googleUrl = s.url || ('https://www.google.com/search?q=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '') + ' hotel'));
+        const canonicalQuery = encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || ''));
+        const googleUrl = (s.url && (s.url.includes('google.com/maps') || s.url.includes('google.com/search')) && s.url.toLowerCase().includes(encodeURIComponent(s.name).toLowerCase()))
+          ? s.url
+          : ('https://www.google.com/maps/search/?api=1&query=' + canonicalQuery);
         return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
-          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-emerald-500">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-emerald-500 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-amber-400">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-amber-400 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
           '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
           '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
-          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-500 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
+          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-amber-400 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
           (tags ? '<span class="flex gap-1.5">' + tags + '</span>' : '') +
           '</div>' +
           '<div class="flex flex-wrap gap-1.5">' + ams + '</div>' +
@@ -853,7 +884,7 @@ function main(dest, idx) {
           '<span class="text-2xl font-extrabold text-gray-900 dark:text-white">₹' + inr(s.priceMin) + '</span>' +
           '<span class="text-gray-400 text-xs block">to ₹' + inr(s.priceMax) + ' / night</span>' +
           '</div>' +
-          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-emerald-500/20">Search on Google ↗</a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20">Google Maps ↗</a>' +
           '</div>' +
           '</div></div>';
       }).join('');
@@ -861,7 +892,7 @@ function main(dest, idx) {
     }
 
     document.getElementById('panel-stays').innerHTML =
-      '<div class="flex items-center justify-between mb-4"><h2 class="text-xl font-bold text-gray-900">Where to Stay in ' + esc(dest.title) + '</h2></div>' +
+      '<div class="flex items-center justify-between mb-4"><div><span class="tab-calligraphy-kicker">✦ Regal Stays & Boutique Sanctuaries ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Where to Stay in ' + esc(dest.title) + '</h2></div></div>' +
       '<div class="flex gap-2 flex-wrap mb-6">' + allBtn + tierBtns + '</div>' + cards;
 
     document.querySelectorAll('#panel-stays [data-tier]').forEach(function (b) {
@@ -931,7 +962,7 @@ function main(dest, idx) {
     const SVG_CAR = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
     const hasMetro = !!(reach && reach.nearestMetro && reach.nearestMetro.name);
     document.getElementById('panel-reach').innerHTML =
-      '<h2 class="text-xl font-bold text-gray-900 mb-2">How to Reach ' + esc(dest.title) + '</h2>' +
+      '<div class="mb-4"><span class="tab-calligraphy-kicker">✦ The Royal Passage & Routes ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">How to Reach ' + esc(dest.title) + '</h2></div>' +
       '<div class="grid grid-cols-1 sm:grid-cols-2 ' + (hasMetro ? 'lg:grid-cols-4' : 'lg:grid-cols-3') + ' gap-4 mb-8">' +
       (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_PLANE + '</div><h3 class="font-bold text-sm mb-1">Nearest Airport</h3>' +
         '<p class="text-gray-600 text-sm">' + esc(reach.nearestAirport.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestAirport.distance || '—') + ' km away</p></div>' : '') +
@@ -1273,7 +1304,7 @@ function main(dest, idx) {
   const similar = getSimilarDestinations();
   const expAllEl = document.getElementById('similarExploreAllText');
   if (expAllEl) {
-    const totalCount = (idx && idx.count) || allDestList.length || 2388;
+    const totalCount = (idx && idx.count) || allDestList.length || 2392;
     expAllEl.textContent = 'Explore All ' + inr(totalCount);
   }
 
@@ -1311,7 +1342,7 @@ function main(dest, idx) {
         '<div class="flex items-center gap-1 text-amber-400 text-xs font-bold">' +
         '<span>★</span><span>' + esc(d.rating || '4.5') + '</span>' +
         '</div>' +
-        '<p class="text-xs font-bold text-emerald-400">From ₹' + inr(d.minPrice || 1500) + '</p>' +
+        '<p class="text-xs text-slate-400">Stay starts from <span class="font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
         '</div>' +
         '</a>';
     }).join('');

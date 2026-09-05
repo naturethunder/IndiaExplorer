@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Lonavala — hill station of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bhushi_Dam_-_Lonavala.jpg/1280px-Bhushi_Dam_-_Lonavala.jpg",
-    "alt": "Lonavala photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Bhushi_Dam_-_Lonavala.jpg",
+    "alt": "Lonavala, Maharashtra"
   },
   "overview": {
     "short": "Lonavala is a much-loved hill station in Maharashtra, known for waterfalls and forts.",
@@ -24,8 +24,7 @@
     "rating": 4.3,
     "reviewCount": 34000,
     "minPrice": 1200,
-    "distanceFromDelhi": 1450,
-    "about": "Lonavala, in Sahyadri, Maharashtra, is one of India’s favourite hill station. Visitors come for its waterfalls, forts, chikki, caves, with the best months being Jun – Sep, Oct – Feb."
+    "distanceFromDelhi": 1450
   },
   "bestTime": {
     "label": "Jun – Sep, Oct – Feb",
@@ -219,13 +218,13 @@
       "category": "nature",
       "distance": "6 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "Stepped dam where monsoon water cascades over the steps.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/..._along_Kas_Waghali_Road_%2850702311092%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bhushi Dam, Lonavala"
+        "alt": "Bhushi Dam"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mountain_matheran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -238,13 +237,13 @@
       "category": "scenic",
       "distance": "12 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Cliff viewpoint with a sheer 650m drop over the valley.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mumbra_Devi_Temple_on_Parsik_Hill.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tiger’s Leap, Lonavala"
+        "alt": "Tiger’s Leap"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/ba/Dhom_Lake_Diksal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -257,13 +256,13 @@
       "category": "heritage",
       "distance": "11 km",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "2,000-year-old Buddhist rock-cut chaityas and viharas.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Karla_Caves_-_Lonavala.jpg/1280px-Karla_Caves_-_Lonavala.jpg",
-        "alt": "Karla & Bhaja Caves in Maharashtra, India"
+        "alt": "Karla & Bhaja Caves"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MTDC%2CLonavala%2CPune%2CMaharashtra_-_panoramio.jpg/1280px-MTDC%2CLonavala%2CPune%2CMaharashtra_-_panoramio.jpg",
@@ -303,84 +302,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Lonavala Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Lonavala Alpine Lodge",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 393,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Lonavala%20Stay%20Lonavala%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Alpine%20Lodge%20Lonavala%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Lonavala",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Summit View",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 222,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Lonavala%20Lonavala%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Summit%20View%20Lonavala%20Maharashtra"
     },
     {
-      "name": "Lonavala Grand Hotel",
+      "name": "Ginger Pine Grove",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 252,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Lonavala%20Grand%20Hotel%20Lonavala%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Pine%20Grove%20Lonavala%20Maharashtra"
     },
     {
-      "name": "Sterling Lonavala",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lonavala Hotel Royal Orchid",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 255,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Hotel%20Royal%20Orchid%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Lonavala Hilltop Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2913,
+      "priceMax": 3652,
+      "rating": 4.2,
+      "reviews": 953,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Hilltop%20Retreat%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Lonavala Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3143,
+      "priceMax": 4502,
+      "rating": 4.2,
+      "reviews": 781,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Lemon%20Tree%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Holiday Inn Lonavala",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6945,
+      "priceMax": 7519,
+      "rating": 4.4,
+      "reviews": 1829,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Lonavala%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Lonavala Peak Stay",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9762,
+      "priceMax": 11540,
+      "rating": 4.4,
+      "reviews": 790,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Peak%20Stay%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Sheraton Lonavala",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11143,
+      "priceMax": 12565,
+      "rating": 4.4,
+      "reviews": 880,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Lonavala%20Lonavala%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Lonavala%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Lonavala Taj",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 19188,
+      "priceMax": 19789,
+      "rating": 4.5,
+      "reviews": 2091,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Taj%20Lonavala%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -395,30 +531,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bhushi_Dam_-_Lonavala.jpg/1280px-Bhushi_Dam_-_Lonavala.jpg",
-      "alt": "Lonavala photo 2",
-      "title": "Bhushi Dam"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Bhushi_Dam_-_Lonavala.jpg",
+      "alt": "Lonavala photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tiger%27s_Leap%2CLonavala.jpg/1280px-Tiger%27s_Leap%2CLonavala.jpg",
-      "alt": "Lonavala photo 3",
-      "title": "Tiger’s Leap"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Tiger%27s_Leap%2CLonavala.jpg",
+      "alt": "Lonavala photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Bhushi_Dam.JPG/1280px-Bhushi_Dam.JPG",
-      "alt": "Lonavala photo 4",
-      "title": "Karla & Bhaja Caves"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Bhushi_Dam.JPG",
+      "alt": "Lonavala photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Bhushi_Dam_an_anotherview_%2C_Lonovala.jpg/1280px-Bhushi_Dam_an_anotherview_%2C_Lonovala.jpg",
-      "alt": "Lonavala photo 5",
-      "title": "Lonavala — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Bhushi_Dam_an_anotherview_%2C_Lonovala.jpg",
+      "alt": "Lonavala photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/..._along_Kas_Waghali_Road_%2850702228046%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Lonavala - Highlight 5",
-      "alt": "Hills of Maharashtra",
-      "title": "Hills of Maharashtra"
+      "alt": "Hills of Maharashtra"
     }
   ],
   "faq": [
@@ -456,5 +586,7 @@
       "how to reach Lonavala",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

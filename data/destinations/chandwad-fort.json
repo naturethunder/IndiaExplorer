@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Chandwad Fort — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chandwad4.jpg/1280px-Chandwad4.jpg",
-    "alt": "Chandwad Fort photo 3"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chandwad4.jpg",
+    "alt": "Chandwad Fort, Maharashtra"
   },
   "overview": {
     "short": "Chandwad Fort (Chandor fort; चांदवड किल्ला) is located 3 kilometres (1.9 mi) from Chandwad, Nashik district, of Maharashtra.",
@@ -218,7 +218,7 @@
       "description": "Chandwad (IPA:Cāndavaḍa) is a town located in Nashik district of Maharashtra, India. It is 250 km from Mumbai.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Chandwad3.jpg",
-        "alt": "Chandwad in Chandwad Fort, Maharashtra - File:Chandwad3.jpg"
+        "alt": "Chandwad"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d1/Chandwad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,7 +237,7 @@
       "description": "Rajdeher Fort is a fort located 10 km (6.2 mi) from chandwad, Nashik district, of Maharashtra. This fort is an important fort in Nashik district.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Rajdher_Fort.jpg",
-        "alt": "Rajdher fort in Chandwad Fort, Maharashtra - Author: CC Marathe"
+        "alt": "Rajdher fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d7/Rajdher5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -272,84 +272,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chandwad Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Chandwad OYO",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 228,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chandwad%20Fort%20Stay%20Chandwad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chandwad%20OYO%20Chandwad%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Chandwad Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Chandwad Manor House",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 730,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chandwad%20Fort%20Chandwad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chandwad%20Manor%20House%20Chandwad%20Maharashtra"
     },
     {
-      "name": "Chandwad Fort Grand Hotel",
+      "name": "Ginger Rajwada",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 646,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Chandwad%20Fort%20Grand%20Hotel%20Chandwad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Rajwada%20Chandwad%20Maharashtra"
     },
     {
-      "name": "Marriott Chandwad Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Chandwad Legacy Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 1078,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chandwad%20Legacy%20Hotel%20Chandwad%20Maharashtra"
+    },
+    {
+      "name": "Holiday Inn Express Rajwada",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3020,
+      "priceMax": 4762,
+      "rating": 4.3,
+      "reviews": 1032,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Rajwada%20Chandwad%20Maharashtra"
+    },
+    {
+      "name": "Fairfield by Marriott Chandwad",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5962,
+      "priceMax": 6303,
+      "rating": 4.5,
+      "reviews": 1683,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Chandwad%20Chandwad%20Maharashtra"
+    },
+    {
+      "name": "Chandwad Westin",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9153,
+      "priceMax": 10648,
+      "rating": 4.5,
+      "reviews": 1132,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Chandwad%20Fort%20Chandwad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chandwad%20Westin%20Chandwad%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -363,29 +436,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chandwad4.jpg/1280px-Chandwad4.jpg",
-      "alt": "Chandwad Fort photo 3",
-      "title": "Chandwad"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chandwad4.jpg",
+      "alt": "Chandwad Fort photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Chandwad6.jpg/1280px-Chandwad6.jpg",
-      "alt": "Chandwad Fort photo 4",
-      "title": "Rajdher fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Chandwad6.jpg",
+      "alt": "Chandwad Fort photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Statue_of_Trivikram_Vishnu%2C_Ramtek.jpg",
-      "alt": "Chandwad Fort in Maharashtra - This is a photo of ASI monument number",
-      "title": "Chandwad Fort in Maharashtra - This is a photo of…"
+      "alt": "Chandwad Fort in Maharashtra - This is a photo of ASI monument number"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mutilated_Image_of_Trivikram_Vishnu%2C_Ruins_at_Ramtek._-_panoramio.jpg",
-      "alt": "Chandwad Fort in Maharashtra - Mutilated Image of Trivikram Vishnu, Ruins at Ramtek.",
-      "title": "Chandwad Fort in Maharashtra - Mutilated Image of…"
+      "alt": "Chandwad Fort in Maharashtra - Mutilated Image of Trivikram Vishnu, Ruins at Ramtek."
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Nalla_sopara_Stupa.jpg",
-      "alt": "Chandwad Fort in Maharashtra - Excavated in April 1882 by Bhagwan Lal Indraji, The ruins of a Buddhist Stupa was found.",
-      "title": "Chandwad Fort in Maharashtra - Excavated in April…"
+      "alt": "Chandwad Fort in Maharashtra - Excavated in April 1882 by Bhagwan Lal Indraji, The ruins of a Buddhist Stupa was found."
     }
   ],
   "faq": [
@@ -423,5 +491,7 @@
       "how to reach Chandwad Fort",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

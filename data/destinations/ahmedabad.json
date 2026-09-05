@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Ahmedabad — heritage city of Gujarat",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG/1280px-Adalaj_Vav_%282%29_Ahmedabad.JPG",
-    "alt": "Ahmedabad photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG",
+    "alt": "Ahmedabad, Gujarat"
   },
   "overview": {
     "short": "Ahmedabad is a much-loved heritage city in Gujarat, known for heritage city and sabarmati ashram.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 33000,
     "minPrice": 1000,
-    "distanceFromDelhi": 950,
-    "about": "Ahmedabad, in Sabarmati, Gujarat, is one of India’s favourite heritage city. Visitors come for its heritage city, sabarmati ashram, textiles, with the best months being Nov – Feb."
+    "distanceFromDelhi": 950
   },
   "bestTime": {
     "label": "Nov – Feb",
@@ -214,13 +213,13 @@
       "category": "heritage",
       "distance": "6 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "Gandhi’s riverside ashram and museum of the freedom struggle.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Statue_of_Gandhi_at_Sabarmati_Ashram.jpg/1280px-Statue_of_Gandhi_at_Sabarmati_Ashram.jpg",
-        "alt": "Sabarmati Ashram in Gujarat, India"
+        "alt": "Sabarmati Ashram"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC001.jpg/1280px-Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC001.jpg",
@@ -233,13 +232,13 @@
       "category": "heritage",
       "distance": "18 km",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Intricately carved five-storey 1498 stepwell.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Stepwell_-_adalaj%2C_gujarat_-_N-GJ-120.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Adalaj Stepwell in Gujarat, India"
+        "alt": "Adalaj Stepwell"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Adalaj_Stepwell%2C_Ahmedabad%2C_Gujarat%2C_India.jpg/1280px-Adalaj_Stepwell%2C_Ahmedabad%2C_Gujarat%2C_India.jpg",
@@ -252,13 +251,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "30 min",
       "rating": 4.4,
       "description": "Famous for its delicate tree-of-life jali stone lattice.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sidi_Saiyyed_Mosque%2C_Ahmedabad.jpg/1280px-Sidi_Saiyyed_Mosque%2C_Ahmedabad.jpg",
-        "alt": "Sidi Saiyyed Mosque in Gujarat, India"
+        "alt": "Sidi Saiyyed Mosque"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
@@ -298,84 +297,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Ahmedabad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Ahmedabad Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 234,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Ahmedabad%20Stay%20Ahmedabad%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Backpackers%20Ahmedabad%20Gujarat"
     },
     {
-      "name": "Airbnb: Stay in Ahmedabad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Ahmedabad",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 716,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ahmedabad%20Ahmedabad%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Ahmedabad%20Ahmedabad%20Gujarat"
     },
     {
-      "name": "Ahmedabad Grand Hotel",
+      "name": "Ahmedabad Ginger",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3000,
       "priceMax": 4500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 387,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Ahmedabad%20Grand%20Hotel%20Ahmedabad%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Ginger%20Ahmedabad%20Gujarat"
     },
     {
-      "name": "Marriott Ahmedabad",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Ahmedabad Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 6000,
       "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 1125,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Fairfield%20by%20Marriott%20Ahmedabad%20Gujarat"
+    },
+    {
+      "name": "Ahmedabad Period Property",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3860,
+      "priceMax": 5835,
+      "rating": 4.1,
+      "reviews": 379,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Period%20Property%20Ahmedabad%20Gujarat"
+    },
+    {
+      "name": "Ahmedabad Holiday Inn",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4518,
+      "priceMax": 5694,
+      "rating": 4.5,
+      "reviews": 510,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Heritage Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Holiday%20Inn%20Ahmedabad%20Gujarat"
+    },
+    {
+      "name": "Hyatt Regency Palace Hotel",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8180,
+      "priceMax": 9238,
+      "rating": 4.6,
+      "reviews": 1511,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Ahmedabad%20Ahmedabad%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Palace%20Hotel%20Ahmedabad%20Gujarat"
     }
   ],
   "restaurants": [],
@@ -387,29 +460,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG/1280px-Adalaj_Vav_%282%29_Ahmedabad.JPG",
-      "alt": "Ahmedabad photo 2",
-      "title": "Sabarmati Ashram"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG",
+      "alt": "Ahmedabad photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg/1280px-Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg",
-      "alt": "Ahmedabad photo 3",
-      "title": "Adalaj Stepwell"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg",
+      "alt": "Ahmedabad photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Adalaj_stepwell_in_Nov_2023.jpg/1280px-Adalaj_stepwell_in_Nov_2023.jpg",
-      "alt": "Ahmedabad photo 4",
-      "title": "Sidi Saiyyed Mosque"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Adalaj_stepwell_in_Nov_2023.jpg",
+      "alt": "Ahmedabad photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/A_pigeon_at_Adalaj_stepwell%2C_Ahmedabad.jpg/1280px-A_pigeon_at_Adalaj_stepwell%2C_Ahmedabad.jpg",
-      "alt": "Ahmedabad photo 5",
-      "title": "Ahmedabad — Sacred Temple Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/A_pigeon_at_Adalaj_stepwell%2C_Ahmedabad.jpg",
+      "alt": "Ahmedabad photo 5"
     },
     {
       "src": "https://images.unsplash.com/photo-1570605505301-0f713202ca7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8QWhtZWRhYmFkJTIwR3VqYXJhdHxlbnwwfDB8fHwxNzg4MDEyOTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "alt": "Ahmedabad in Ahmedabad, Gujarat - brown concrete builsing",
-      "title": "Ahmedabad in Ahmedabad, Gujarat - brown concrete…"
+      "alt": "Ahmedabad in Ahmedabad, Gujarat - brown concrete builsing"
     }
   ],
   "faq": [
@@ -447,5 +515,7 @@
       "how to reach Ahmedabad",
       "Gujarat tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

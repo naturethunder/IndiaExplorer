@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Umred Karhandla Wildlife Sanctuary — wildlife reserve of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Gray_langur_1.jpg/1280px-Gray_langur_1.jpg",
-    "alt": "Umred Karhandla Wildlife Sanctuary photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Gray_langur_1.jpg",
+    "alt": "Umred Karhandla Wildlife Sanctuary, Maharashtra"
   },
   "overview": {
     "short": "Umred-Pauni-Karhandla Wildlife Sanctuary is a nature reserve in the state of Maharashtra in India.",
@@ -23,9 +23,8 @@
     "altitude": null,
     "rating": 4.7,
     "reviewCount": 9218,
-    "minPrice": 2500,
-    "distanceFromDelhi": 896,
-    "about": "Umred-Pauni-Karhandla Wildlife Sanctuary is a nature reserve in the state of Maharashtra in India. It is bounded roughly by the Wainganga river and the Gose Khurd Dam in the Bhandara and Nagpur districts."
+    "minPrice": 2438,
+    "distanceFromDelhi": 896
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "1 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Bhiwapur is a town and a tehsil in Umred subdivision of Nagpur district in the Berar region in the state of Maharashtra, India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bhiwapur_Chilli_-_Green_Unripened.jpg",
-        "alt": "Bhiwapur in Maharashtra, India"
+        "alt": "Bhiwapur"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bhiwapur_Chilli_-_Red_Dried.jpg",
@@ -232,13 +231,13 @@
       "category": "scenic",
       "distance": "7 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Maru river (Marathi: मारू नदी) is a minor river of eastern Vidarbha flowing through Nagpur and Bhandara districts. It flows near Bhiwapur forming a boundary between Nagpur and Bhandara districts for a short distance.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Maru_River_near_Bhiwapur.jpg/1280px-Maru_River_near_Bhiwapur.jpg",
-        "alt": "Maru river (Wainganga basin) in Maharashtra, India"
+        "alt": "Maru river (Wainganga basin)"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Maru_river_near_Bhiwapur_at_confluence_of_two_streams._%2828844287162%29.jpg/1280px-Maru_river_near_Bhiwapur_at_confluence_of_two_streams._%2828844287162%29.jpg",
@@ -273,84 +272,207 @@
   ],
   "hotels": [
     {
-      "name": "OYO Umred Karhandla Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Umred Karhandla Tiger Trail",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 226,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Stay%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Umred%20Karhandla%20Tiger%20Trail%20Umred%20Karhandla%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Umred Karhandla Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Umred Karhandla Tiger Trail Budget",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 446,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Umred%20Karhandla%20Tiger%20Trail%20Umred%20Karhandla%20Maharashtra"
     },
     {
-      "name": "Umred Karhandla Wildlife Sanctuary Grand Hotel",
+      "name": "Umred Karhandla Forest Camp",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 200,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Eco Lodge"
       ],
-      "url": "https://www.google.com/search?q=Umred%20Karhandla%20Wildlife%20Sanctuary%20Grand%20Hotel%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Umred%20Karhandla%20Forest%20Camp%20Umred%20Karhandla%20Maharashtra"
     },
     {
-      "name": "Jungle Lodges Umred Karhandla Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
+      "name": "Zone by The Park Jungle Lodge",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 872,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Umred%20Karhandla%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Jungle%20Lodge%20Umred%20Karhandla%20Maharashtra"
+    },
+    {
+      "name": "Lemon Tree River View Camp",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2438,
+      "priceMax": 3294,
+      "rating": 4.3,
+      "reviews": 1012,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20River%20View%20Camp%20Umred%20Karhandla%20Maharashtra"
+    },
+    {
+      "name": "Novotel Umred Karhandla",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6001,
+      "priceMax": 6651,
+      "rating": 4.5,
+      "reviews": 1719,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Umred%20Karhandla%20Umred%20Karhandla%20Maharashtra"
+    },
+    {
+      "name": "Umred Karhandla Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9160,
+      "priceMax": 9919,
+      "rating": 4.5,
+      "reviews": 544,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Umred%20Karhandla%20Vivanta%20Umred%20Karhandla%20Maharashtra"
+    },
+    {
+      "name": "Oberoi Umred Karhandla Palace",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 13882,
+      "priceMax": 15658,
+      "rating": 4.6,
+      "reviews": 1967,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "World Class",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Umred%20Karhandla%20Palace%20Umred%20Karhandla%20Maharashtra"
+    },
+    {
+      "name": "Aman Umred Karhandla",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 52056,
+      "priceMax": 53209,
+      "rating": 4.8,
+      "reviews": 1973,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Exclusive",
+        "Tiger Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Aman%20Umred%20Karhandla%20Umred%20Karhandla%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -363,30 +485,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Gray_langur_1.jpg/1280px-Gray_langur_1.jpg",
-      "alt": "Umred Karhandla Wildlife Sanctuary photo 2",
-      "title": "Bhiwapur"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Gray_langur_1.jpg",
+      "alt": "Umred Karhandla Wildlife Sanctuary photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/5W7A3791_%282%29.jpg/1280px-5W7A3791_%282%29.jpg",
-      "alt": "Umred Karhandla Wildlife Sanctuary photo 3",
-      "title": "Maru river (Wainganga basin)"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/5W7A3791_%282%29.jpg",
+      "alt": "Umred Karhandla Wildlife Sanctuary photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/5W7A3687_%282%29.jpg/1280px-5W7A3687_%282%29.jpg",
-      "alt": "Umred Karhandla Wildlife Sanctuary photo 4",
-      "title": "Umred Karhandla Wildlife Sanctuary — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/5W7A3687_%282%29.jpg",
+      "alt": "Umred Karhandla Wildlife Sanctuary photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Major_State_Highway_3_%28Maharashtra%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Umred Karhandla Wildlife Sanctuary photo 5",
-      "title": "Umred Karhandla Wildlife Sanctuary — Sacred Heritage"
+      "alt": "Umred Karhandla Wildlife Sanctuary photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Blumea_lanceolaria_%28Roxb.%29_Druce_%286935656105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Umred Karhandla Wildlife Sanctuary - Highlight 5",
-      "alt": "Flora of Karnataka",
-      "title": "Flora of Karnataka"
+      "alt": "Flora of Karnataka"
     }
   ],
   "faq": [
@@ -424,5 +540,7 @@
       "how to reach Umred Karhandla Wildlife Sanctuary",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

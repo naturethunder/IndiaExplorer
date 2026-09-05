@@ -115,7 +115,8 @@ function footerHTML() {
     '          <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
     '          <span class="font-bold text-lg text-white">Explore<span class="text-primary">Desh</span></span>\n' +
     '        </div>\n' +
-    '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-5">India\'s most thoughtful travel discovery platform. Explore 2,388 verified destinations across 36 states and union territories.</p>\n' +
+    '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-3">India\'s most thoughtful travel discovery platform. Explore 2,392 verified destinations across 36 states and union territories.</p>\n' +
+    '        <p class="font-calligraphy text-amber-200/90 text-2xl tracking-wide my-3 italic leading-tight">“A timeless journey across the soul of Bharat”</p>\n' +
     '        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-amber-300 font-medium">\n' +
     '          <span>✨ Complete Catalogue of Bharat</span>\n' +
     '        </div>\n' +

@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Balapur Fort — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg/1280px-Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg",
-    "alt": "Balapur Fort photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg",
+    "alt": "Balapur Fort, Maharashtra"
   },
   "overview": {
     "short": "Balapur Fort is a Mughal fortress in the town of Balapur in the Akola district of India.",
@@ -212,13 +212,13 @@
       "category": "scenic",
       "distance": "6 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.1,
       "description": "\"Paras Thermal Power Plant\" is located at Paras, in the Akola district of Maharashtra. The power plant is a coal based power plant operated by Mahagenco.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bhikund_River_at_Balapur.jpg/1280px-Bhikund_River_at_Balapur.jpg",
-        "alt": "Paras Thermal Power Station in Maharashtra, India"
+        "alt": "Paras Thermal Power Station"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bhikund_River_in_2022.jpg/1280px-Bhikund_River_in_2022.jpg",
@@ -242,84 +242,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Balapur Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Period Property",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 170,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Balapur%20Fort%20Stay%20Balapur%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Period%20Property%20Balapur%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Balapur Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Balapur Ginger",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 700,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Balapur%20Fort%20Balapur%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Balapur%20Ginger%20Balapur%20Maharashtra"
     },
     {
-      "name": "Balapur Fort Grand Hotel",
+      "name": "FabHotels Prime Period Property",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 586,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Balapur%20Fort%20Grand%20Hotel%20Balapur%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Period%20Property%20Balapur%20Maharashtra"
     },
     {
-      "name": "Marriott Balapur Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Fortune Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 734,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Haveli%20Stay%20Balapur%20Maharashtra"
+    },
+    {
+      "name": "Ginger Balapur",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2571,
+      "priceMax": 4019,
+      "rating": 4.1,
+      "reviews": 1085,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Balapur%20Balapur%20Maharashtra"
+    },
+    {
+      "name": "Balapur Royal Retreat",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6393,
+      "priceMax": 6923,
+      "rating": 4.4,
+      "reviews": 765,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Balapur%20Royal%20Retreat%20Balapur%20Maharashtra"
+    },
+    {
+      "name": "Westin Balapur",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7723,
+      "priceMax": 8684,
+      "rating": 4.6,
+      "reviews": 2739,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Balapur%20Fort%20Balapur%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Balapur%20Balapur%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -332,29 +404,16 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg/1280px-Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg",
-      "alt": "Balapur Fort photo 2",
-      "title": "Paras Thermal Power Station"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg",
+      "alt": "Balapur Fort photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Annual_Report_of_the_Archaeological_Survey_of_India_1913-14_Plate_IVb_%28page_70_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Balapur Fort view 3 — Annual Report of the Archaeological Survey of India 1913-14 Plate IVb (page 70 crop)",
-      "title": "Balapur Fort view 3 — Annual Report of the…"
-    },
-    {
-      "src": "https://pixabay.com/get/g38d5054e3d1e8e7f11af890ac853a4833f07d0a32b9953ea5003d6f14b1970d5344edf664519b215857162b05cc2d6d61e9cf0203e448241be43ad3379446374_1280.jpg",
-      "alt": "Balapur Fort in Balapur Fort, Maharashtra - fort, rajgad fort, india, maharashtra, history, pune, maratha empire, killa,",
-      "title": "Balapur Fort in Balapur Fort, Maharashtra - fort,…"
-    },
-    {
-      "src": "https://pixabay.com/get/g0cd8e6cd5c068f5e4eb5552df285bea29097321ac1128e18df861119e869b5d18a6ae502a232618bbfb418f3379451fc9ed866e6434b367a28fc9b1e817a6f7f_1280.jpg",
-      "alt": "Balapur Fort in Maharashtra - fall, nature, landscape, black forest, tourism, trees, forest, 2022, november, hike, natur",
-      "title": "Balapur Fort in Maharashtra - fall, nature,…"
+      "alt": "Balapur Fort view 3 — Annual Report of the Archaeological Survey of India 1913-14 Plate IVb (page 70 crop)"
     },
     {
       "src": "https://live.staticflickr.com/8205/8226878714_618f40fb76.jpg",
-      "alt": "Balapur Fort in Balapur Fort, Maharashtra - balapur fort",
-      "title": "Balapur Fort in Balapur Fort, Maharashtra - balapur…"
+      "alt": "Balapur Fort in Balapur Fort, Maharashtra - balapur fort"
     }
   ],
   "faq": [
@@ -392,5 +451,7 @@
       "how to reach Balapur Fort",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

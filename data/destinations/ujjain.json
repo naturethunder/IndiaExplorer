@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Ujjain — spiritual town of Madhya Pradesh",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mahakaleshwar_ujjain.jpg/1280px-Mahakaleshwar_ujjain.jpg",
-    "alt": "Ujjain photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mahakaleshwar_ujjain.jpg",
+    "alt": "Ujjain, Madhya Pradesh"
   },
   "overview": {
     "short": "Ujjain is a much-loved spiritual town in Madhya Pradesh, known for mahakaleshwar and kumbh.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 30000,
     "minPrice": 900,
-    "distanceFromDelhi": 770,
-    "about": "Ujjain, in Malwa, Madhya Pradesh, is one of India’s favourite spiritual town. Visitors come for its mahakaleshwar, kumbh, shipra, with the best months being Oct – Mar."
+    "distanceFromDelhi": 770
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -218,13 +217,13 @@
       "category": "spiritual",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.8,
       "description": "Jyotirlinga temple famed for its dawn Bhasma Aarti.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Shri_Mahakaleshwar_Temple_Ujjain_-_panoramio_%282%29.jpg/1280px-Shri_Mahakaleshwar_Temple_Ujjain_-_panoramio_%282%29.jpg",
-        "alt": "Mahakaleshwar Temple in Madhya Pradesh, India"
+        "alt": "Mahakaleshwar Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eriocaulon_madayiparense_%2855780%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "spiritual",
       "distance": "2 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Sacred Shipra-river ghat, a focal point of the Simhastha Kumbh.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Shri_Ram_Ghat_03.jpg/1280px-Shri_Ram_Ghat_03.jpg",
-        "alt": "Ram Ghat in Madhya Pradesh, India"
+        "alt": "Ram Ghat"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/Murdannia_semiteres_%2822327%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "spiritual",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Unusual temple where liquor is offered to the deity.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Kal_Bhairav_Ujjain_-_entrance.jpg/1280px-Kal_Bhairav_Ujjain_-_entrance.jpg",
-        "alt": "Kal Bhairav Temple in Madhya Pradesh, India"
+        "alt": "Kal Bhairav Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kal_Bhairav_Ujjain_-_Deepmalika.jpg/1280px-Kal_Bhairav_Ujjain_-_Deepmalika.jpg",
@@ -302,84 +301,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Ujjain Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Ujjain Treebo",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 176,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Ujjain%20Stay%20Ujjain%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ujjain%20Treebo%20Ujjain%20Madhya%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Ujjain",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ginger Shiva Sadan",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 374,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ujjain%20Ujjain%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Shiva%20Sadan%20Ujjain%20Madhya%20Pradesh"
     },
     {
-      "name": "Ujjain Grand Hotel",
+      "name": "Ujjain Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 539,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=Ujjain%20Grand%20Hotel%20Ujjain%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ujjain%20Treebo%20Trend%20Ujjain%20Madhya%20Pradesh"
     },
     {
-      "name": "Fortune Park Ujjain",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ujjain Sanctum Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 1023,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Ujjain%20Ujjain%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ujjain%20Sanctum%20Stay%20Ujjain%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Lemon Tree Ujjain",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3023,
+      "priceMax": 3325,
+      "rating": 4.2,
+      "reviews": 397,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Ujjain%20Ujjain%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Ujjain Yatri Nivas",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5428,
+      "priceMax": 7089,
+      "rating": 4.4,
+      "reviews": 655,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Pilgrim Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ujjain%20Yatri%20Nivas%20Ujjain%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Ujjain Sanctum Stay Best",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9062,
+      "priceMax": 9469,
+      "rating": 4.4,
+      "reviews": 1808,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Pilgrim Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ujjain%20Sanctum%20Stay%20Ujjain%20Madhya%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -391,30 +464,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mahakaleshwar_ujjain.jpg/1280px-Mahakaleshwar_ujjain.jpg",
-      "alt": "Ujjain photo 2",
-      "title": "Mahakaleshwar Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mahakaleshwar_ujjain.jpg",
+      "alt": "Ujjain photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Shri_Ram_Ghat_01.jpg/1280px-Shri_Ram_Ghat_01.jpg",
-      "alt": "Ujjain photo 3",
-      "title": "Ram Ghat"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Shri_Ram_Ghat_01.jpg",
+      "alt": "Ujjain photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shri_Ram_Ghat_02.jpg/1280px-Shri_Ram_Ghat_02.jpg",
-      "alt": "Ujjain photo 4",
-      "title": "Kal Bhairav Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Shri_Ram_Ghat_02.jpg",
+      "alt": "Ujjain photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Kal_Bhairav_temple_Ujjain.jpg/1280px-Kal_Bhairav_temple_Ujjain.jpg",
-      "alt": "Ujjain photo 5",
-      "title": "Ujjain — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kal_Bhairav_temple_Ujjain.jpg",
+      "alt": "Ujjain photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Eriocaulon_madayiparense_%2850576%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Ujjain - Highlight 5",
-      "alt": "Flora of Kerala",
-      "title": "Flora of Kerala"
+      "alt": "Flora of Kerala"
     }
   ],
   "faq": [
@@ -452,5 +519,7 @@
       "how to reach Ujjain",
       "Madhya Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

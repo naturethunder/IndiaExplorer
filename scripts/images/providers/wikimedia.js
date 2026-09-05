@@ -89,7 +89,20 @@ class WikimediaProvider {
       if (meta?.ImageHeight?.value) height = parseInt(meta.ImageHeight.value);
 
       // Get description/artist from extmetadata
-      const description = meta?.ImageDescription?.value || '';
+      let description = meta?.ImageDescription?.value || '';
+      if (description) {
+        description = description.replace(/<[^>]*>?/g, ' ')
+          .replace(/&amp;/gi, '&')
+          .replace(/&quot;/gi, '"')
+          .replace(/&#039;|&apos;/gi, "'")
+          .replace(/&lt;/gi, '<')
+          .replace(/&gt;/gi, '>')
+          .replace(/&[a-z0-9]+;/gi, ' ')
+          .replace(/https?:\/\/\S+/gi, ' ')
+          .replace(/[\r\n\t]+/g, ' ')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+      }
       const artist = meta?.Artist?.value || '';
       const license = meta?.LicenseShortName?.value || '';
 

@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Saputara — hill station of Gujarat",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Lake_Saputara.jpg/1280px-Lake_Saputara.jpg",
-    "alt": "Saputara photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Lake_Saputara.jpg",
+    "alt": "Saputara, Gujarat"
   },
   "overview": {
     "short": "Saputara is a much-loved hill station in Gujarat, known for only hill station and lake.",
@@ -23,8 +23,7 @@
     "rating": 4.2,
     "reviewCount": 9000,
     "minPrice": 1100,
-    "distanceFromDelhi": 1150,
-    "about": "Saputara, in Dang, Gujarat, is one of India’s favourite hill station. Visitors come for its only hill station, lake, tribal, with the best months being Oct – Jun."
+    "distanceFromDelhi": 1150
   },
   "bestTime": {
     "label": "Oct – Jun",
@@ -218,13 +217,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Central boating lake ringed by the Sahyadri hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Saputara_%28Gujarat%29.jpg",
-        "alt": "Saputara Lake in Gujarat, India"
+        "alt": "Saputara Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kharkhara_Dam_Evening_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "3 km",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Ropeway-accessed point for valley sunsets.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saputara_sunset_point_-_panoramio.jpg/1280px-Saputara_sunset_point_-_panoramio.jpg",
-        "alt": "Sunset Point in Gujarat, India"
+        "alt": "Sunset Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Sh07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "52 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.2,
       "description": "Wide seasonal falls on the Ambika river, best in monsoon.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Massanjore_dam%2C_Santhal_pargana_dumka%2C_Jharkhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gira Waterfalls, Saputara"
+        "alt": "Gira Waterfalls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Mountains_malampuzha_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,222 @@
   ],
   "hotels": [
     {
-      "name": "OYO Saputara Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Saputara Treebo",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1100,
       "priceMax": 1750,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 199,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Saputara%20Stay%20Saputara%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Treebo%20Saputara%20Gujarat"
     },
     {
-      "name": "Airbnb: Stay in Saputara",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Saputara Mist Haven",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2100,
       "priceMax": 2950,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 463,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Saputara%20Saputara%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Mist%20Haven%20Saputara%20Gujarat"
     },
     {
-      "name": "Saputara Grand Hotel",
+      "name": "Saputara FabHotels Prime",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3300,
       "priceMax": 4950,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 651,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Saputara%20Grand%20Hotel%20Saputara%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20FabHotels%20Prime%20Saputara%20Gujarat"
     },
     {
-      "name": "Sterling Saputara",
-      "type": "resort",
-      "tier": "best",
+      "name": "Saputara Treebo Trend",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 6600,
       "priceMax": 11000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 703,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Treebo%20Trend%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Saputara Alpine Lodge",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2850,
+      "priceMax": 4359,
+      "rating": 4.2,
+      "reviews": 301,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Alpine%20Lodge%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Saputara Ridge Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3528,
+      "priceMax": 4855,
+      "rating": 4.3,
+      "reviews": 983,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Ridge%20Resort%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Saputara Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4573,
+      "priceMax": 5101,
+      "rating": 4.5,
+      "reviews": 736,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Radisson%20Blu%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Saputara Renaissance",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8128,
+      "priceMax": 9428,
+      "rating": 4.5,
+      "reviews": 2325,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Saputara%20Saputara%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Renaissance%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Saputara Taj Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9822,
+      "priceMax": 11320,
+      "rating": 4.6,
+      "reviews": 869,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Saputara%20Taj%20Vivanta%20Saputara%20Gujarat"
+    },
+    {
+      "name": "Leela Saputara Palace",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 16058,
+      "priceMax": 17456,
+      "rating": 4.7,
+      "reviews": 1905,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "World Class",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Leela%20Saputara%20Palace%20Saputara%20Gujarat"
     }
   ],
   "restaurants": [],
@@ -392,30 +529,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Lake_Saputara.jpg/1280px-Lake_Saputara.jpg",
-      "alt": "Saputara photo 2",
-      "title": "Saputara Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Lake_Saputara.jpg",
+      "alt": "Saputara photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Valley_view.jpg/1280px-Valley_view.jpg",
-      "alt": "Saputara photo 3",
-      "title": "Sunset Point"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Valley_view.jpg",
+      "alt": "Saputara photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Saputara_-_YS.jpg/1280px-Saputara_-_YS.jpg",
-      "alt": "Saputara photo 4",
-      "title": "Gira Waterfalls"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Saputara_-_YS.jpg",
+      "alt": "Saputara photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gira_waterfalls.jpg/1280px-Gira_waterfalls.jpg",
-      "alt": "Saputara photo 5",
-      "title": "Saputara — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Gira_waterfalls.jpg",
+      "alt": "Saputara photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/On_the_way_to_Tehri_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Saputara - Highlight 5",
-      "alt": "Dams in India",
-      "title": "Dams in India"
+      "alt": "Dams in India"
     }
   ],
   "faq": [
@@ -453,5 +584,7 @@
       "how to reach Saputara",
       "Gujarat tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

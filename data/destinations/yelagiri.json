@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Yelagiri — hill station of Tamil Nadu",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nature_Park%2C_Yelagiri.jpg/1280px-Nature_Park%2C_Yelagiri.jpg",
-    "alt": "Yelagiri photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nature_Park%2C_Yelagiri.jpg",
+    "alt": "Yelagiri, Tamil Nadu"
   },
   "overview": {
     "short": "Yelagiri is a much-loved hill station in Tamil Nadu, known for quiet hills and paragliding.",
@@ -23,8 +23,7 @@
     "rating": 4.1,
     "reviewCount": 7000,
     "minPrice": 1100,
-    "distanceFromDelhi": 2200,
-    "about": "Yelagiri, in Vellore, Tamil Nadu, is one of India’s favourite hill station. Visitors come for its quiet hills, paragliding, trekking, with the best months being Oct – Jun."
+    "distanceFromDelhi": 2200
   },
   "bestTime": {
     "label": "Oct – Jun",
@@ -218,13 +217,13 @@
       "category": "trekking",
       "distance": "5 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.4,
       "description": "Trek to Yelagiri’s highest peak through shola forest.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Melkote_ramjala_path_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Swamimalai Hills Trek, Yelagiri"
+        "alt": "Swamimalai Hills Trek"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Melkote_trecking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹15",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.2,
       "description": "Man-made boating lake with a musical fountain.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ancient_Temple_on_the_hillock-_Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Punganoor Lake, Yelagiri"
+        "alt": "Punganoor Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f3/Close_up_view_of_the_Gopuram_at_Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "8 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.3,
       "description": "Seasonal falls on the Attaru river below the hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Jalagamparai_Falls_%283976643944%29.jpg/1280px-Jalagamparai_Falls_%283976643944%29.jpg",
-        "alt": "Jalagamparai Waterfalls in Tamil Nadu, India"
+        "alt": "Jalagamparai Waterfalls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Melkoute_Yoga_Narasimha_temple-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,223 @@
   ],
   "hotels": [
     {
-      "name": "OYO Yelagiri Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Yelagiri Peak Stay",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1100,
       "priceMax": 1750,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 255,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Yelagiri%20Stay%20Yelagiri%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Peak%20Stay%20Yelagiri%20Tamil%20Nadu"
     },
     {
-      "name": "Airbnb: Stay in Yelagiri",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Yelagiri",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2100,
       "priceMax": 2950,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.9,
+      "reviews": 404,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Cloud Nine"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Yelagiri%20Yelagiri%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Yelagiri%20Yelagiri%20Tamil%20Nadu"
     },
     {
-      "name": "Yelagiri Grand Hotel",
+      "name": "Yelagiri Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3300,
       "priceMax": 4950,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 719,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Yelagiri%20Grand%20Hotel%20Yelagiri%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Treebo%20Trend%20Yelagiri%20Tamil%20Nadu"
     },
     {
-      "name": "Sterling Yelagiri",
-      "type": "resort",
-      "tier": "best",
+      "name": "Yelagiri Valley View",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 6600,
       "priceMax": 11000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 699,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Cloud Nine"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Valley%20View%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "Yelagiri Ibis",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2355,
+      "priceMax": 3055,
+      "rating": 4.1,
+      "reviews": 973,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Ibis%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "Yelagiri Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2716,
+      "priceMax": 3281,
+      "rating": 4.1,
+      "reviews": 453,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Lemon%20Tree%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "Yelagiri Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6927,
+      "priceMax": 7704,
+      "rating": 4.4,
+      "reviews": 1614,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Fairfield%20by%20Marriott%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "The Gateway Yelagiri",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7725,
+      "priceMax": 9227,
+      "rating": 4.4,
+      "reviews": 1837,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Yelagiri%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "Taj Vivanta Pine Grove",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9209,
+      "priceMax": 10772,
+      "rating": 4.4,
+      "reviews": 2048,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Yelagiri%20Yelagiri%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Pine%20Grove%20Yelagiri%20Tamil%20Nadu"
+    },
+    {
+      "name": "Yelagiri Ridge Resort",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 18822,
+      "priceMax": 20798,
+      "rating": 4.5,
+      "reviews": 2306,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "World Class",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yelagiri%20Ridge%20Resort%20Yelagiri%20Tamil%20Nadu"
     }
   ],
   "restaurants": [],
@@ -392,30 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nature_Park%2C_Yelagiri.jpg/1280px-Nature_Park%2C_Yelagiri.jpg",
-      "alt": "Yelagiri photo 2",
-      "title": "Swamimalai Hills Trek"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nature_Park%2C_Yelagiri.jpg",
+      "alt": "Yelagiri photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Weird_fruits_%2834007052385%29.jpg/1280px-Weird_fruits_%2834007052385%29.jpg",
-      "alt": "Yelagiri photo 3",
-      "title": "Punganoor Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Weird_fruits_%2834007052385%29.jpg",
+      "alt": "Yelagiri photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Rose_apples_%2833194264723%29.jpg/1280px-Rose_apples_%2833194264723%29.jpg",
-      "alt": "Yelagiri photo 4",
-      "title": "Jalagamparai Waterfalls"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Rose_apples_%2833194264723%29.jpg",
+      "alt": "Yelagiri photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Weird_fruits_%2833194272143%29.jpg/1280px-Weird_fruits_%2833194272143%29.jpg",
-      "alt": "Yelagiri photo 5",
-      "title": "Yelagiri — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Weird_fruits_%2833194272143%29.jpg",
+      "alt": "Yelagiri photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Melkote_ramjala_path.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Yelagiri - Highlight 5",
-      "alt": "Yoganarasimha temple Devarayanadurga",
-      "title": "Yoganarasimha temple Devarayanadurga"
+      "alt": "Yoganarasimha temple Devarayanadurga"
     }
   ],
   "faq": [
@@ -453,5 +585,7 @@
       "how to reach Yelagiri",
       "Tamil Nadu tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

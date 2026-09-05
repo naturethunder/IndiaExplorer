@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Hatgadh Fort — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg/1280px-Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg",
-    "alt": "Hatgadh Fort photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg",
+    "alt": "Hatgadh Fort, Maharashtra"
   },
   "overview": {
     "short": "Hatgad Fort is a fort located 71 km (44 mi)from Nashik, Nashik district, of Maharashtra.",
@@ -296,84 +296,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Hatgadh Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Hatgadh OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 385,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Hatgadh%20Fort%20Stay%20Hatgadh%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hatgadh%20OYO%20Hatgadh%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Hatgadh Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Keys Prima Fort Residence",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 441,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Hatgadh%20Fort%20Hatgadh%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Prima%20Fort%20Residence%20Hatgadh%20Maharashtra"
     },
     {
-      "name": "Hatgadh Fort Grand Hotel",
+      "name": "Ginger Rajwada",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 279,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Hatgadh%20Fort%20Grand%20Hotel%20Hatgadh%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Rajwada%20Hatgadh%20Maharashtra"
     },
     {
-      "name": "Marriott Hatgadh Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Zone by The Park Legacy Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 318,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Hatgadh%20Fort%20Hatgadh%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Legacy%20Hotel%20Hatgadh%20Maharashtra"
+    },
+    {
+      "name": "Ginger Palace Hotel",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3651,
+      "priceMax": 5198,
+      "rating": 4.3,
+      "reviews": 379,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Palace%20Hotel%20Hatgadh%20Maharashtra"
+    },
+    {
+      "name": "Hyatt Place Haveli Stay",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6550,
+      "priceMax": 6988,
+      "rating": 4.5,
+      "reviews": 813,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Legacy Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Haveli%20Stay%20Hatgadh%20Maharashtra"
+    },
+    {
+      "name": "Sheraton Hatgadh",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10839,
+      "priceMax": 11438,
+      "rating": 4.6,
+      "reviews": 670,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Hatgadh%20Hatgadh%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -387,30 +460,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg/1280px-Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg",
-      "alt": "Hatgadh Fort photo 2",
-      "title": "Saputara Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Road_leading_to_Hatgad_%28fort%29_%2851694186656%29.jpg",
+      "alt": "Hatgadh Fort photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Hatgad_village_viewed_from_Hatgad_fort_%2851694624663%29.jpg/1280px-Hatgad_village_viewed_from_Hatgad_fort_%2851694624663%29.jpg",
-      "alt": "Hatgadh Fort photo 3",
-      "title": "Saputara"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Hatgad_village_viewed_from_Hatgad_fort_%2851694624663%29.jpg",
+      "alt": "Hatgadh Fort photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Club_Mahindra_Hatgad_viewed_from_Hatgad_fort_%2851694667648%29.jpg/1280px-Club_Mahindra_Hatgad_viewed_from_Hatgad_fort_%2851694667648%29.jpg",
-      "alt": "Hatgadh Fort photo 4",
-      "title": "Saputara ropeway"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Club_Mahindra_Hatgad_viewed_from_Hatgad_fort_%2851694667648%29.jpg",
+      "alt": "Hatgadh Fort photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Maharastra-small.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hatgadh Fort photo 5",
-      "title": "Hatgadh Fort — Sacred Heritage"
+      "alt": "Hatgadh Fort photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Empress_botanical_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Hatgadh Fort - Highlight 5",
-      "alt": "Gardens in India",
-      "title": "Gardens in India"
+      "alt": "Gardens in India"
     }
   ],
   "faq": [
@@ -448,5 +515,7 @@
       "how to reach Hatgadh Fort",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

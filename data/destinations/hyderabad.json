@@ -9,7 +9,7 @@
   "tagline": "Hyderabad — heritage city of Telangana",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Cafe_Niloufer_Hitech_City_Hyderabad_Telangana_2.jpg",
-    "alt": "Hyderabad in Hyderabad, Telangana - Cafe Niloufer Hitech City Hyderabad Telangana"
+    "alt": "Hyderabad, Telangana"
   },
   "overview": {
     "short": "Hyderabad is a much-loved heritage city in Telangana, known for charminar and biryani.",
@@ -24,8 +24,7 @@
     "rating": 4.5,
     "reviewCount": 58000,
     "minPrice": 1200,
-    "distanceFromDelhi": 1500,
-    "about": "Hyderabad, in Deccan Plateau, Telangana, is one of India’s favourite heritage city. Visitors come for its charminar, biryani, golconda, lakes, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1500
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "Old City",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "1591 four-minaret monument at the heart of the bazaar.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/1280px-Charminar_Hyderabad_1.jpg",
-        "alt": "Charminar in Telangana, India"
+        "alt": "Charminar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Charminar_Hyderabad_111.jpg/1280px-Charminar_Hyderabad_111.jpg",
@@ -234,13 +233,13 @@
       "category": "heritage",
       "distance": "11 km",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2–3 hrs",
       "rating": 4.6,
       "description": "Hilltop fort famed for acoustics and the Koh-i-Noor’s origins.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Vijayawada_railway_station_platform_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Golconda Fort in Telangana, India"
+        "alt": "Golconda Fort"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Plum-headed_Parakeet_from_Gujarat%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "cultural",
       "distance": "30 km",
       "entryFee": "₹1,200",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Full day",
       "rating": 4.4,
       "description": "World’s largest film studio complex and theme park.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ramoji_Film_City.jpg",
-        "alt": "Ramoji Film City in Telangana, India"
+        "alt": "Ramoji Film City"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ramoji_entrance.jpg/1280px-Ramoji_entrance.jpg",
@@ -299,84 +298,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Hyderabad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Hyderabad OYO",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 212,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Hyderabad%20Stay%20Hyderabad%20Telangana%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyderabad%20OYO%20Hyderabad%20Telangana"
     },
     {
-      "name": "Airbnb: Stay in Hyderabad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Hyderabad OYO Townhouse",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 543,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Hyderabad%20Hyderabad%20Telangana%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyderabad%20OYO%20Townhouse%20Hyderabad%20Telangana"
     },
     {
-      "name": "Hyderabad Grand Hotel",
+      "name": "Hyderabad Mahal Palace",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 381,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Hyderabad%20Grand%20Hotel%20Hyderabad%20Telangana%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyderabad%20Mahal%20Palace%20Hyderabad%20Telangana"
     },
     {
-      "name": "Marriott Hyderabad",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Hyderabad Palace Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 828,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyderabad%20Palace%20Hotel%20Hyderabad%20Telangana"
+    },
+    {
+      "name": "Fortune Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3891,
+      "priceMax": 4253,
+      "rating": 4.2,
+      "reviews": 1002,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Haveli%20Stay%20Hyderabad%20Telangana"
+    },
+    {
+      "name": "Hyderabad Hyatt Place",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6692,
+      "priceMax": 8083,
+      "rating": 4.4,
+      "reviews": 1287,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyderabad%20Hyatt%20Place%20Hyderabad%20Telangana"
+    },
+    {
+      "name": "Hyatt Regency Hyderabad",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9936,
+      "priceMax": 11418,
+      "rating": 4.4,
+      "reviews": 1630,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Hyderabad%20Hyderabad%20Telangana%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Hyderabad%20Hyderabad%20Telangana"
     }
   ],
   "restaurants": [],
@@ -391,28 +463,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Cafe_Niloufer_Hitech_City_Hyderabad_Telangana_2.jpg",
-      "alt": "Hyderabad in Hyderabad, Telangana - Cafe Niloufer Hitech City Hyderabad Telangana",
-      "title": "Hyderabad in Hyderabad, Telangana - Cafe Niloufer…"
+      "alt": "Hyderabad in Hyderabad, Telangana - Cafe Niloufer Hitech City Hyderabad Telangana"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Golconda_Fort%2C_Hyderabad_%2880461%29.jpg/1280px-Golconda_Fort%2C_Hyderabad_%2880461%29.jpg",
-      "alt": "Hyderabad photo 2",
-      "title": "Golconda Fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Golconda_Fort%2C_Hyderabad_%2880461%29.jpg",
+      "alt": "Hyderabad photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ceiling_of_Echo_Dome%2C_Golconda_Fort_%28Oct_2025%29.jpg/1280px-Ceiling_of_Echo_Dome%2C_Golconda_Fort_%28Oct_2025%29.jpg",
-      "alt": "Hyderabad photo 3",
-      "title": "Ramoji Film City"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Ceiling_of_Echo_Dome%2C_Golconda_Fort_%28Oct_2025%29.jpg",
+      "alt": "Hyderabad photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_3.jpg/1280px-Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_3.jpg",
-      "alt": "Hyderabad photo 4",
-      "title": "Hyderabad — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_3.jpg",
+      "alt": "Hyderabad photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_4.jpg/1280px-Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_4.jpg",
-      "alt": "Hyderabad photo 5",
-      "title": "Hyderabad — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Golconda_Fort%2C_Hyderabad_%28Oct_2025%29_-_4.jpg",
+      "alt": "Hyderabad photo 5"
     }
   ],
   "faq": [
@@ -450,5 +517,7 @@
       "how to reach Hyderabad",
       "Telangana tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

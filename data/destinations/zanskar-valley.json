@@ -26,7 +26,7 @@
     ],
     "rating": 4.9,
     "reviewCount": 1890,
-    "minPrice": 3500,
+    "minPrice": 1200,
     "distanceFromDelhi": 1050
   },
   "bestTime": {
@@ -553,7 +553,7 @@
         "Homestay",
         "Padum"
       ],
-      "url": "https://www.google.com/search?q=Phukthar%20Guest%20House%20Zanskar%20Valley%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Phukthar%20Guest%20House%20Zanskar%20Valley%20Ladakh"
     },
     {
       "name": "Zambala Guest House",
@@ -571,11 +571,11 @@
       "tags": [
         "Alpine Resort"
       ],
-      "url": "https://www.google.com/search?q=Zambala%20Guest%20House%20Zanskar%20Valley%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zambala%20Guest%20House%20Zanskar%20Valley%20Ladakh"
     },
     {
       "name": "Ibex Guest House",
-      "type": "hotel",
+      "type": "guesthouse",
       "tier": "budget",
       "priceMin": 1800,
       "priceMax": 3200,
@@ -589,11 +589,11 @@
       "tags": [
         "Govt Lodge"
       ],
-      "url": "https://www.google.com/search?q=Ibex%20Guest%20House%20Zanskar%20Valley%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibex%20Guest%20House%20Zanskar%20Valley%20Ladakh"
     },
     {
       "name": "Marq Guest House",
-      "type": "camp",
+      "type": "guesthouse",
       "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 2200,
@@ -607,7 +607,7 @@
       "tags": [
         "Trekker Camp"
       ],
-      "url": "https://www.google.com/search?q=Marq%20Guest%20House%20Zanskar%20Valley%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Marq%20Guest%20House%20Zanskar%20Valley%20Ladakh"
     }
   ],
   "gallery": [

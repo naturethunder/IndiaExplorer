@@ -124,17 +124,132 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Handwritten script accent — ONLY for the word "India" in the hero headline. */
-.script-accent {
-  font-family: 'Caveat', cursive;
+/* ─── Premium Royal Calligraphy & Heritage Typography ─────── */
+.font-calligraphy,
+.calligraphy-script {
+  font-family: 'Pinyon Script', cursive !important;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.font-calligraphy-fluid,
+.calligraphy-fluid {
+  font-family: 'Alex Brush', cursive !important;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.font-calligraphy-regal,
+.calligraphy-monogram {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif !important;
+  letter-spacing: 0.03em;
+}
+
+.font-editorial-italic {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Royal Calligraphy Eyebrows & Kickers */
+.calligraphy-kicker,
+.calligraphy-eyebrow {
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: clamp(1.4rem, 2.2vw, 2.05rem);
+  line-height: 1.15;
+  color: #F5C542;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75));
+  text-shadow: 0 0 20px rgba(229, 192, 123, 0.25);
+  font-weight: 400;
+}
+
+.calligraphy-kicker::before,
+.calligraphy-kicker::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(229, 192, 123, 0.75));
+}
+
+.calligraphy-kicker::after {
+  background: linear-gradient(90deg, rgba(229, 192, 123, 0.75), transparent);
+}
+
+/* Calligraphic Tab Section Kicker */
+.tab-calligraphy-kicker {
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  line-height: 1.2;
+  color: #E5C07B;
+  background: linear-gradient(135deg, #FFF6E5 0%, #F5C542 60%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  margin-bottom: 2px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/* Gold Gradient Text Accent */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Calligraphic Accents & State Flourishes */
+.card-calligraphy-accent,
+.dest-card-calligraphy-state {
+  display: block;
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: clamp(1.05rem, 1.25vw, 1.28rem);
+  line-height: 1.1;
+  color: #F5C542;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+  font-weight: 400;
+}
+
+/* Universal Destination Card Title */
+.dest-card-title {
+  font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
+  font-size: clamp(1.2rem, 1.4vw, 1.45rem);
   font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 3px;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.dest-card-item:hover .dest-card-title,
+.dest-card-link:hover .dest-card-title {
+  color: #FFF3C4;
+  text-shadow: 0 0 16px rgba(245, 197, 66, 0.45);
+}
+
+/* Royal Handwritten script accent */
+.script-accent {
+  font-family: 'Pinyon Script', 'Alex Brush', cursive;
+  font-weight: 400;
   color: var(--primary);
   position: relative;
   display: inline-block;
-  padding: 0 0.08em;
-  line-height: 0.9;
-  font-size: 1.18em;
-  /* Caveat runs small; bump to match the sans cap height */
+  padding: 0 0.12em;
+  line-height: 0.95;
+  font-size: 1.35em;
+  letter-spacing: 0.02em;
 }
 
 /* Hand-drawn underline stroke (SVG), sits just under the script word. */

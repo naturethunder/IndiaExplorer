@@ -1,24 +1,27 @@
 #!/usr/bin/env node
 /**
- * serve.js — zero-dependency static file server (pure Node, no npm).
- * ES modules + fetch()ed JSON need http:// — file:// blocks both.
+ * scripts/serve.js — High-Performance Static Dev Server for ExploreDesh
  *
- * Usage:  node scripts/serve.js [port]     (default 8080)
- * Then open http://localhost:8080/
+ * Features:
+ * - Ultra-fast in-memory cached Gzip compression
+ * - ETag generation & If-None-Match support (returns 304 Not Modified in < 1ms)
+ * - Smart Cache-Control headers for static assets, JSON data, and HTML
+ * - Clean URLs support (/destinations -> destinations.html, /about -> about.html)
  */
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 
 const ROOT = path.resolve(__dirname, '..');
-const PORT = parseInt(process.argv[2], 10) || 8080;
+const PORT = parseInt(process.argv[2] || process.env.PORT, 10) || 8080;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.mjs': 'text/javascript; charset=utf-8',
-  '.css': 'text/css; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.xml': 'application/xml; charset=utf-8',
   '.png': 'image/png',
@@ -32,97 +35,151 @@ const MIME = {
   '.md': 'text/plain; charset=utf-8',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
+  '.ttf': 'font/ttf',
 };
 
-// Text-ish assets that compress well (JSON manifest is ~2 MB → ~290 KB gzipped).
-const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/;
+const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/i;
+const gzipCache = new Map();
 
 function checkFile(relPath) {
   const fullPath = path.normalize(path.join(ROOT, relPath));
   if (fullPath.toLowerCase().startsWith(ROOT.toLowerCase())) {
     try {
       const st = fs.statSync(fullPath);
-      if (st.isFile()) return fullPath;
-    } catch (e) {}
+      if (st.isFile()) return { fullPath, stat: st };
+    } catch (_) {}
   }
   const stubPath = path.normalize(path.join(ROOT, 'stubs', relPath));
   const stubsRoot = path.join(ROOT, 'stubs');
   if (stubPath.toLowerCase().startsWith(stubsRoot.toLowerCase())) {
     try {
       const st = fs.statSync(stubPath);
-      if (st.isFile()) return stubPath;
-    } catch (e) {}
+      if (st.isFile()) return { fullPath: stubPath, stat: st };
+    } catch (_) {}
   }
   return null;
 }
 
-const server = http.createServer(function (req, res) {
+const server = http.createServer((req, res) => {
   try {
     const parsedUrl = new URL(req.url, 'http://localhost:' + PORT);
     let urlPath = decodeURIComponent(parsedUrl.pathname);
 
     // 1. Direct file match
-    let targetFile = checkFile(urlPath);
+    let match = checkFile(urlPath);
 
-    // 2. Trailing slash (e.g. / -> /index.html, /destinations/ -> /destinations/index.html)
-    if (!targetFile && urlPath.endsWith('/')) {
-      targetFile = checkFile(urlPath + 'index.html');
+    // 2. Trailing slash / -> /index.html
+    if (!match && urlPath.endsWith('/')) {
+      match = checkFile(urlPath + 'index.html');
     }
 
     // 3. Clean path without trailing slash
     const cleanPath = urlPath.endsWith('/') && urlPath !== '/' ? urlPath.slice(0, -1) : urlPath;
 
-    // 4. Try appending .html (e.g. /destinations -> /destinations.html, /about -> /about.html, /stubs/goa.html)
-    if (!targetFile && !path.extname(cleanPath)) {
-      targetFile = checkFile(cleanPath + '.html') || checkFile('/stubs' + cleanPath + '.html');
+    // 4. Try appending .html
+    if (!match && !path.extname(cleanPath)) {
+      match = checkFile(cleanPath + '.html') || checkFile('/stubs' + cleanPath + '.html');
     }
 
-    // 5. Handle nested destination paths (e.g. /destination/goa -> /stubs/goa.html or /destination.html)
-    if (!targetFile && (cleanPath.startsWith('/destination/') || cleanPath.startsWith('/destinations/'))) {
+    // 5. Handle nested destination paths
+    if (!match && (cleanPath.startsWith('/destination/') || cleanPath.startsWith('/destinations/'))) {
       const parts = cleanPath.split('/').filter(Boolean);
       if (parts.length === 2) {
         const slug = parts[1];
-        targetFile = checkFile('/stubs/' + slug + '.html') || checkFile('/' + slug + '.html') || checkFile('/destination.html');
+        match = checkFile('/stubs/' + slug + '.html') || checkFile('/' + slug + '.html') || checkFile('/destination.html');
       }
     }
 
-    if (!targetFile) {
+    if (!match) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('404 Not Found: ' + urlPath);
       return;
     }
 
-    const type = MIME[path.extname(targetFile).toLowerCase()] || 'application/octet-stream';
+    const { fullPath, stat } = match;
+    const ext = path.extname(fullPath).toLowerCase();
+    const contentType = MIME[ext] || 'application/octet-stream';
+
+    // Fast ETag based on file size and mtime
+    const etag = 'W/"' + stat.size.toString(16) + '-' + Math.floor(stat.mtimeMs).toString(16) + '"';
+
+    if (req.headers['if-none-match'] === etag) {
+      res.writeHead(304, {
+        'ETag': etag,
+        'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=86400, stale-while-revalidate=3600',
+        'Access-Control-Allow-Origin': '*',
+      });
+      res.end();
+      return;
+    }
+
+    let cacheControl = 'public, max-age=86400, stale-while-revalidate=3600';
+    if (ext === '.html') {
+      cacheControl = 'no-cache';
+    } else if (ext === '.json') {
+      cacheControl = 'public, max-age=3600, stale-while-revalidate=600';
+    }
+
     const headers = {
-      'Content-Type': type,
-      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-      'Pragma': 'no-cache',
-      'Expires': '0',
+      'Content-Type': contentType,
+      'ETag': etag,
+      'Cache-Control': cacheControl,
+      'Access-Control-Allow-Origin': '*',
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'SAMEORIGIN',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
     };
-    const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
-    const stream = fs.createReadStream(targetFile);
 
-    if (acceptsGzip && COMPRESSIBLE.test(type)) {
+    const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
+
+    if (acceptsGzip && COMPRESSIBLE.test(contentType)) {
       headers['Content-Encoding'] = 'gzip';
       headers['Vary'] = 'Accept-Encoding';
-      res.writeHead(200, headers);
-      stream.pipe(zlib.createGzip()).pipe(res);
+
+      const cacheKey = fullPath;
+      const cached = gzipCache.get(cacheKey);
+      if (cached && cached.mtimeMs === stat.mtimeMs) {
+        headers['Content-Length'] = cached.buffer.length;
+        res.writeHead(200, headers);
+        res.end(cached.buffer);
+        return;
+      }
+
+      fs.readFile(fullPath, (readErr, rawData) => {
+        if (readErr) {
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Server Error');
+          return;
+        }
+        zlib.gzip(rawData, { level: 6 }, (gzipErr, gzipped) => {
+          if (gzipErr) {
+            delete headers['Content-Encoding'];
+            headers['Content-Length'] = rawData.length;
+            res.writeHead(200, headers);
+            res.end(rawData);
+            return;
+          }
+          if (gzipped.length > 4096) {
+            gzipCache.set(cacheKey, { mtimeMs: stat.mtimeMs, buffer: gzipped });
+          }
+          headers['Content-Length'] = gzipped.length;
+          res.writeHead(200, headers);
+          res.end(gzipped);
+        });
+      });
     } else {
-      const st = fs.statSync(targetFile);
-      headers['Content-Length'] = st.size;
+      headers['Content-Length'] = stat.size;
       res.writeHead(200, headers);
-      stream.pipe(res);
+      fs.createReadStream(fullPath).pipe(res);
     }
-  } catch (e) {
-    res.writeHead(500); res.end('Server error');
+  } catch (err) {
+    res.writeHead(500, { 'Content-Type': 'text/plain' });
+    res.end('500 Server Error');
   }
 });
 
-server.listen(PORT, function () {
-  console.log('IndiaExplore dev server running:');
-  console.log('  http://localhost:' + PORT + '/');
-  console.log('Ctrl+C to stop.');
+server.listen(PORT, () => {
+  console.log('⚡ IndiaExplore High-Performance Server running:');
+  console.log('   http://localhost:' + PORT + '/');
+  console.log('   Gzip Compression + ETag 304 Caching Active.');
 });

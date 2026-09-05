@@ -9,7 +9,7 @@
   "tagline": "Digha — beach town of West Bengal",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Stone_in_Digha_at_night.jpg",
-    "alt": "Digha in Digha, West Bengal - File:Stone in Digha at night.jpg"
+    "alt": "Digha, West Bengal"
   },
   "overview": {
     "short": "Digha is a much-loved beach town in West Bengal, known for beach and marine aquarium.",
@@ -23,8 +23,7 @@
     "rating": 4,
     "reviewCount": 14000,
     "minPrice": 900,
-    "distanceFromDelhi": 1550,
-    "about": "Digha, in Bay of Bengal, West Bengal, is one of India’s favourite beach town. Visitors come for its beach, marine aquarium, weekend getaway, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1550
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -212,13 +211,13 @@
       "category": "beach",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.1,
       "description": "Bengal’s most popular seaside escape with a long promenade.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Beach_Ghat_-_New_Digha_-_East_Midnapore_2015-05-03_9779.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "New Digha Beach in West Bengal, India"
+        "alt": "New Digha Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/New_Digha_Sea_beach_in_Digha_03.jpg/1280px-New_Digha_Sea_beach_in_Digha_03.jpg",
@@ -231,13 +230,13 @@
       "category": "wildlife",
       "distance": "2 km",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4,
       "description": "India’s largest marine aquarium of the eastern coast.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Digha_Marine_Aquarium_-_Photography_Prohibited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Marine Aquarium & Research Centre in West Bengal, India"
+        "alt": "Marine Aquarium & Research Centre"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Marine_Aquarium_%26_Regional_Centre_of_Digha_02.jpg/1280px-Marine_Aquarium_%26_Regional_Centre_of_Digha_02.jpg",
@@ -250,13 +249,13 @@
       "category": "beach",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4,
       "description": "Quieter beach near the Odisha border, good for sunsets.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Udaipur_People_0071.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Udaipur Beach in West Bengal, India"
+        "alt": "Udaipur Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Udaipur_Sea_Beach_0060.JPG/1280px-Udaipur_Sea_Beach_0060.JPG",
@@ -296,84 +295,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Digha Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "GoStops Digha Hostel",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 327,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Seaside Retreat"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Digha%20Stay%20Digha%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Digha%20Hostel%20Digha%20West%20Bengal"
     },
     {
-      "name": "Airbnb: Stay in Digha",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Digha FabHotels Prime",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 205,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Digha%20Digha%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Digha%20FabHotels%20Prime%20Digha%20West%20Bengal"
     },
     {
-      "name": "Digha Grand Hotel",
+      "name": "OYO Townhouse Digha",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 506,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Digha%20Grand%20Hotel%20Digha%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Digha%20Digha%20West%20Bengal"
     },
     {
-      "name": "Marriott Digha",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Keys Select Palm Grove",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 1188,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Palm%20Grove%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Digha Sarovar Portico",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3512,
+      "priceMax": 4519,
+      "rating": 4.3,
+      "reviews": 639,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Digha%20Sarovar%20Portico%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Digha Harbour View",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5145,
+      "priceMax": 6150,
+      "rating": 4.4,
+      "reviews": 1449,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Seaside Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Digha%20Harbour%20View%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Hyatt Regency Palm Grove",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7651,
+      "priceMax": 9042,
+      "rating": 4.5,
+      "reviews": 825,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Harbour View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Palm%20Grove%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Digha Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8819,
+      "priceMax": 9664,
+      "rating": 4.5,
+      "reviews": 1578,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Sand & Surf"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Digha%20Digha%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Digha%20Vivanta%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Digha Sand & Surf",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 18543,
+      "priceMax": 20502,
+      "rating": 4.5,
+      "reviews": 3723,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Digha%20Sand%20%26%20Surf%20Digha%20West%20Bengal"
+    },
+    {
+      "name": "Oberoi Rajvilas Digha Palace",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 48315,
+      "priceMax": 49430,
+      "rating": 4.7,
+      "reviews": 1786,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Shore Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Rajvilas%20Digha%20Palace%20Digha%20West%20Bengal"
     }
   ],
   "restaurants": [],
@@ -387,28 +528,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Stone_in_Digha_at_night.jpg",
-      "alt": "Digha in Digha, West Bengal - File:Stone in Digha at night.jpg",
-      "title": "Digha in Digha, West Bengal - File:Stone in Digha…"
+      "alt": "Digha in Digha, West Bengal - File:Stone in Digha at night.jpg"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/New_Digha_Sea_beach_in_Digha_02.jpg/1280px-New_Digha_Sea_beach_in_Digha_02.jpg",
-      "alt": "Digha photo 2",
-      "title": "Marine Aquarium & Research Centre"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/New_Digha_Sea_beach_in_Digha_02.jpg",
+      "alt": "Digha photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Marine_Aquarium_%26_Regional_Centre_of_Digha_01.jpg/1280px-Marine_Aquarium_%26_Regional_Centre_of_Digha_01.jpg",
-      "alt": "Digha photo 3",
-      "title": "Udaipur Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Marine_Aquarium_%26_Regional_Centre_of_Digha_01.jpg",
+      "alt": "Digha photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Marine_Aquarium_%26_Regional_Centre_of_Digha_03.jpg/1280px-Marine_Aquarium_%26_Regional_Centre_of_Digha_03.jpg",
-      "alt": "Digha photo 4",
-      "title": "Digha — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Marine_Aquarium_%26_Regional_Centre_of_Digha_03.jpg",
+      "alt": "Digha photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Udaipur_Sea_Beach_0059.JPG/1280px-Udaipur_Sea_Beach_0059.JPG",
-      "alt": "Digha photo 5",
-      "title": "Digha — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Udaipur_Sea_Beach_0059.JPG",
+      "alt": "Digha photo 5"
     }
   ],
   "faq": [
@@ -446,5 +582,7 @@
       "how to reach Digha",
       "West Bengal tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

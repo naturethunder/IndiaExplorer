@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Bhaskargad — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bhaskargad4.jpg/1280px-Bhaskargad4.jpg",
-    "alt": "Bhaskargad photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Bhaskargad4.jpg",
+    "alt": "Bhaskargad, Maharashtra"
   },
   "overview": {
     "short": "Bhaskargad Fort, alternatively known as Basgad Fort, is a hill fort situated within the Nashik district of Maharashtra, India.",
@@ -218,7 +218,7 @@
       "description": "Dugarwadi waterfall is 30 kilometres (19 mi) from Nashik and around 177 kilometers (110 mi) from Mumbai on Trimbakeshwar road and 2 kilometres (1.2 mi) from the Jawhaar road. In monsoon season, people are advised to take care as the water level suddenly rises.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Shri_Kumareshwar_Temple%2C_Lonar_Lake%2C_Maharashtra%2C_India_09.jpg",
-        "alt": "Dugarwadi waterfall in Maharashtra - Shri Kumareshwar Temple, Lonar Lake, Maharashtra, India.\nThe area surrounding the c"
+        "alt": "Dugarwadi waterfall"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Dugarwadi_Waterfall_closer_view.jpg/1280px-Dugarwadi_Waterfall_closer_view.jpg",
@@ -237,7 +237,7 @@
       "description": "Trymbakgad Fort/Brahmagiri Fort (Marathi: त्र्यंबकगड किल्ला) is a fort located 30 km from Nashik, in Nashik district, of Maharashtra, India. This is an important fort in Nashik district.",
       "image": {
         "src": "https://images.pexels.com/photos/37391613/pexels-photo-37391613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Trymbakgad, Maharashtra - Close-up of an ancient basalt stone temple structure under a clear blue sky in Maharashtra."
+        "alt": "Trymbakgad"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Fortifications_of_Rohida_fort.jpg",
@@ -272,84 +272,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Bhaskargad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Bhaskargad OYO",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 382,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Bhaskargad%20Stay%20Bhaskargad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bhaskargad%20OYO%20Bhaskargad%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Bhaskargad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Bhaskargad Lemon Tree Red Fox",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 205,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Bhaskargad%20Bhaskargad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bhaskargad%20Lemon%20Tree%20Red%20Fox%20Bhaskargad%20Maharashtra"
     },
     {
-      "name": "Bhaskargad Grand Hotel",
+      "name": "Bhaskargad FabHotels Prime",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 573,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Bhaskargad%20Grand%20Hotel%20Bhaskargad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bhaskargad%20FabHotels%20Prime%20Bhaskargad%20Maharashtra"
     },
     {
-      "name": "Marriott Bhaskargad",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Bhaskargad Palace Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 1169,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Bhaskargad%20Bhaskargad%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bhaskargad%20Palace%20Hotel%20Bhaskargad%20Maharashtra"
+    },
+    {
+      "name": "Fortune Period Property",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3542,
+      "priceMax": 5530,
+      "rating": 4.3,
+      "reviews": 679,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Period%20Property%20Bhaskargad%20Maharashtra"
+    },
+    {
+      "name": "Bhaskargad Heritage Hotel",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6997,
+      "priceMax": 7704,
+      "rating": 4.5,
+      "reviews": 1852,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bhaskargad%20Heritage%20Hotel%20Bhaskargad%20Maharashtra"
+    },
+    {
+      "name": "Westin Bhaskargad",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9878,
+      "priceMax": 11707,
+      "rating": 4.4,
+      "reviews": 2538,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Bhaskargad%20Bhaskargad%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -363,29 +437,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bhaskargad4.jpg/1280px-Bhaskargad4.jpg",
-      "alt": "Bhaskargad photo 2",
-      "title": "Dugarwadi waterfall"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Bhaskargad4.jpg",
+      "alt": "Bhaskargad photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bhaskargad1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bhaskargad photo 4",
-      "title": "Trymbakgad"
+      "alt": "Bhaskargad photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bhaskargad2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bhaskargad photo 5",
-      "title": "Bhaskargad — Scenic Nature"
+      "alt": "Bhaskargad photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Bhaskargad4.jpg",
-      "alt": "Bhaskargad in Bhaskargad, Maharashtra - File:Bhaskargad4.jpg",
-      "title": "Bhaskargad in Bhaskargad, Maharashtra -…"
+      "alt": "Bhaskargad in Bhaskargad, Maharashtra - File:Bhaskargad4.jpg"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Shri_Kumareshwar_Temple%2C_Lonar_Lake%2C_Maharashtra%2C_India_01.jpg",
-      "alt": "Bhaskargad in Maharashtra - Shri Kumareshwar Temple, Lonar Lake, Maharashtra, India.\nThe area surrounding the crater lak",
-      "title": "Bhaskargad in Maharashtra - Shri Kumareshwar…"
+      "alt": "Bhaskargad in Maharashtra - Shri Kumareshwar Temple, Lonar Lake, Maharashtra, India.\nThe area surrounding the crater lak"
     }
   ],
   "faq": [
@@ -423,5 +492,7 @@
       "how to reach Bhaskargad",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

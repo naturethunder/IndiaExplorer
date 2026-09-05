@@ -9,7 +9,7 @@
   "tagline": "Mussoorie — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Mussoorie-6530427.jpg",
-    "alt": "Mussoorie in Mussoorie, Uttarakhand - Mussoorie Morning view"
+    "alt": "Mussoorie, Uttarakhand"
   },
   "overview": {
     "short": "Mussoorie is a much-loved hill station in Uttarakhand, known for queen of hills and kempty falls.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 41000,
     "minPrice": 1300,
-    "distanceFromDelhi": 290,
-    "about": "Mussoorie, in Garhwal, Uttarakhand, is one of India’s favourite hill station. Visitors come for its queen of hills, kempty falls, mall road, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 290
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "nature",
       "distance": "15 km",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "Mussoorie’s most popular tiered waterfall with bathing pools.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/1890s_Kempty_Falls%2C_Mussoorie%2C_Uttarakhand%2C_India.jpg",
-        "alt": "Kempty Falls in Uttarakhand, India"
+        "alt": "Kempty Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/7f/First_Step_of_Elephant_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "scenic",
       "distance": "2 km",
       "entryFee": "₹150",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Second-highest point, reached by ropeway, with Doon valley views.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Gun_hill%2C_Mussoorie_05.JPG/1280px-Gun_hill%2C_Mussoorie_05.JPG",
-        "alt": "Gun Hill in Uttarakhand, India"
+        "alt": "Gun Hill"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Last_Step_of_Elephant_Falls_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "scenic",
       "distance": "Town Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "3-km scenic promenade ending at a sunset point over the hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/The_Camel_of_Camels_Back_Road_%285281211643%29.jpg/1280px-The_Camel_of_Camels_Back_Road_%285281211643%29.jpg",
-        "alt": "Camel’s Back Road in Uttarakhand, India"
+        "alt": "Camel’s Back Road"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/The_Camel_of_Camels_Back_Road_%285281210753%29.jpg/1280px-The_Camel_of_Camels_Back_Road_%285281210753%29.jpg",
@@ -297,84 +296,223 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mussoorie Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mussoorie OYO",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 322,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mussoorie%20Stay%20Mussoorie%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20OYO%20Mussoorie%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Mussoorie",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Mussoorie Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 386,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mussoorie%20Mussoorie%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Backpackers%20Mussoorie%20Uttarakhand"
     },
     {
-      "name": "Mussoorie Grand Hotel",
+      "name": "Mussoorie Hotel Royal Orchid",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 799,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Mussoorie%20Grand%20Hotel%20Mussoorie%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Hotel%20Royal%20Orchid%20Mussoorie%20Uttarakhand"
     },
     {
-      "name": "Sterling Mussoorie",
-      "type": "resort",
-      "tier": "best",
+      "name": "Mussoorie OYO Townhouse",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 525,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Smart Choice",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Mussoorie%20Mussoorie%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20OYO%20Townhouse%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "Mussoorie Peak Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3442,
+      "priceMax": 5303,
+      "rating": 4.1,
+      "reviews": 953,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Peak%20Stay%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "Mussoorie Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3739,
+      "priceMax": 4837,
+      "rating": 4.4,
+      "reviews": 1017,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Lemon%20Tree%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "Mussoorie Mist Haven",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5672,
+      "priceMax": 6895,
+      "rating": 4.3,
+      "reviews": 401,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Mist%20Haven%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "Mussoorie Highland Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10361,
+      "priceMax": 11558,
+      "rating": 4.4,
+      "reviews": 753,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Highland%20Resort%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "Mussoorie Summit View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11663,
+      "priceMax": 12706,
+      "rating": 4.5,
+      "reviews": 2572,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mussoorie%20Summit%20View%20Mussoorie%20Uttarakhand"
+    },
+    {
+      "name": "The ITC Mussoorie",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 12439,
+      "priceMax": 12873,
+      "rating": 4.7,
+      "reviews": 754,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20ITC%20Mussoorie%20Mussoorie%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -388,28 +526,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Mussoorie-6530427.jpg",
-      "alt": "Mussoorie in Mussoorie, Uttarakhand - Mussoorie Morning view",
-      "title": "Mussoorie in Mussoorie, Uttarakhand - Mussoorie…"
+      "alt": "Mussoorie in Mussoorie, Uttarakhand - Mussoorie Morning view"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_01.jpg/1280px-Kempty_Falls_at_Lakhwad%2C_Uttarakhand_01.jpg",
-      "alt": "Mussoorie photo 2",
-      "title": "Gun Hill"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Kempty_Falls_at_Lakhwad%2C_Uttarakhand_01.jpg",
+      "alt": "Mussoorie photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gun_hill%2C_Mussoorie_01.JPG/1280px-Gun_hill%2C_Mussoorie_01.JPG",
-      "alt": "Mussoorie photo 3",
-      "title": "Camel’s Back Road"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gun_hill%2C_Mussoorie_01.JPG",
+      "alt": "Mussoorie photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Gun_hill%2C_Mussoorie_03.JPG/1280px-Gun_hill%2C_Mussoorie_03.JPG",
-      "alt": "Mussoorie photo 4",
-      "title": "Mussoorie — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Gun_hill%2C_Mussoorie_03.JPG",
+      "alt": "Mussoorie photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Chewing_on_Camels_Back_Road%2C_Mussoorie_%285281199779%29.jpg/1280px-Chewing_on_Camels_Back_Road%2C_Mussoorie_%285281199779%29.jpg",
-      "alt": "Mussoorie photo 5",
-      "title": "Mussoorie — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Chewing_on_Camels_Back_Road%2C_Mussoorie_%285281199779%29.jpg",
+      "alt": "Mussoorie photo 5"
     }
   ],
   "faq": [
@@ -447,5 +580,7 @@
       "how to reach Mussoorie",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

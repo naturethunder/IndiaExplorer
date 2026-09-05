@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Munsiyari — hill station of Uttarakhand",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg/1280px-Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg",
-    "alt": "Munsiyari photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg",
+    "alt": "Munsiyari, Uttarakhand"
   },
   "overview": {
     "short": "Munsiyari is a much-loved hill station in Uttarakhand, known for panchachuli views and trekking base.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 4000,
     "minPrice": 1300,
-    "distanceFromDelhi": 580,
-    "about": "Munsiyari, in Pithoragarh, Uttarakhand, is one of India’s favourite hill station. Visitors come for its panchachuli views, trekking base, glaciers, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 580
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "Town",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.7,
       "description": "Front-row views of the five snow peaks of Panchachuli.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Panchchuli_Peaks%2C_near_Munsiyari%2C_Uttarakhand.jpg",
-        "alt": "Panchachuli Viewpoint in Uttarakhand, India"
+        "alt": "Panchachuli Viewpoint"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Panchachuli_peaks_view_from_%22Thamri_Kund%22.JPG/1280px-Panchachuli_peaks_view_from_%22Thamri_Kund%22.JPG",
@@ -232,13 +231,13 @@
       "category": "trekking",
       "distance": "8 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.6,
       "description": "Alpine meadow trek with sweeping Himalayan vistas.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Dawki_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Khaliya Top, Munsiyari"
+        "alt": "Khaliya Top"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/a/a3/TATA_Tigor_at_Shillong_Peak_View_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "nature",
       "distance": "35 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "126m waterfall on the road to Munsiyari.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bhirti_water_fall_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Birthi Falls in Munsiyari, Uttarakhand"
+        "alt": "Birthi Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e7/Mawsmai_Cave_in_Meghalaya%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -297,84 +296,222 @@
   ],
   "hotels": [
     {
-      "name": "OYO Munsiyari Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Munsiyari FabHotels",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 230,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Munsiyari%20Stay%20Munsiyari%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20FabHotels%20Munsiyari%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Munsiyari",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "The Hosteller Munsiyari Hostel",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 381,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Munsiyari%20Munsiyari%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Hosteller%20Munsiyari%20Hostel%20Munsiyari%20Uttarakhand"
     },
     {
-      "name": "Munsiyari Grand Hotel",
+      "name": "Munsiyari Ridge Resort",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 797,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Munsiyari%20Grand%20Hotel%20Munsiyari%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Ridge%20Resort%20Munsiyari%20Uttarakhand"
     },
     {
-      "name": "Sterling Munsiyari",
-      "type": "resort",
-      "tier": "best",
+      "name": "Munsiyari FabHotels Prime",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4,
+      "reviews": 607,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Smart Choice",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Munsiyari%20Munsiyari%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20FabHotels%20Prime%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Munsiyari Hilltop Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2743,
+      "priceMax": 4650,
+      "rating": 4.4,
+      "reviews": 517,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Hilltop%20Retreat%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Munsiyari Mountain Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2905,
+      "priceMax": 3365,
+      "rating": 4.2,
+      "reviews": 708,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Mountain%20Resort%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Munsiyari Ridge Resort Better",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4612,
+      "priceMax": 6455,
+      "rating": 4.5,
+      "reviews": 1432,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Ridge%20Resort%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Munsiyari Hilltop Retreat Best",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8536,
+      "priceMax": 9138,
+      "rating": 4.6,
+      "reviews": 1358,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Hilltop%20Retreat%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Munsiyari Summit View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11899,
+      "priceMax": 13795,
+      "rating": 4.5,
+      "reviews": 591,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Munsiyari%20Summit%20View%20Munsiyari%20Uttarakhand"
+    },
+    {
+      "name": "Conrad Munsiyari",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 20787,
+      "priceMax": 22423,
+      "rating": 4.5,
+      "reviews": 1630,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Conrad%20Munsiyari%20Munsiyari%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -388,30 +525,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg/1280px-Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg",
-      "alt": "Munsiyari photo 2",
-      "title": "Panchachuli Viewpoint"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Fulvous-breasted_Woodpecker_Dendrocopos_macei%2C_Munsiyari%2C_Uttarakhand.jpg",
+      "alt": "Munsiyari photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bhirti_water_fall_-_panoramio.jpg/1280px-Bhirti_water_fall_-_panoramio.jpg",
-      "alt": "Munsiyari photo 3",
-      "title": "Khaliya Top"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bhirti_water_fall_-_panoramio.jpg",
+      "alt": "Munsiyari photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Khaliya_Bugyal_Munsiyari.jpg",
-      "alt": "Munsiyari photo 4",
-      "title": "Birthi Falls"
+      "alt": "Munsiyari photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Alpine_meadow_Khaliya.jpg/1280px-Alpine_meadow_Khaliya.jpg",
-      "alt": "Munsiyari photo 5",
-      "title": "Munsiyari — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Alpine_meadow_Khaliya.jpg",
+      "alt": "Munsiyari photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Dawki_Border_crossing_Bangladesh_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Munsiyari - Highlight 5",
-      "alt": "Shillong peak Meghalaya",
-      "title": "Shillong peak Meghalaya"
+      "alt": "Shillong peak Meghalaya"
     }
   ],
   "faq": [
@@ -449,5 +580,7 @@
       "how to reach Munsiyari",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

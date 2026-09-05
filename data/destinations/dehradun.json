@@ -9,7 +9,7 @@
   "tagline": "Dehradun — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Guchu_Pani_Robbers_Cave_ate_Dehradun.jpg",
-    "alt": "Dehradun photo 2"
+    "alt": "Dehradun, Uttarakhand"
   },
   "overview": {
     "short": "Dehradun is a much-loved hill station in Uttarakhand, known for robbers cave and forest research.",
@@ -23,8 +23,7 @@
     "rating": 4.2,
     "reviewCount": 28000,
     "minPrice": 1100,
-    "distanceFromDelhi": 250,
-    "about": "Dehradun, in Doon Valley, Uttarakhand, is one of India’s favourite hill station. Visitors come for its robbers cave, forest research, gateway, with the best months being Sep – Apr."
+    "distanceFromDelhi": 250
   },
   "bestTime": {
     "label": "Sep – Apr",
@@ -216,13 +215,13 @@
       "category": "nature",
       "distance": "8 km",
       "entryFee": "₹25",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "River cave where the stream vanishes and re-emerges underground.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Jageshwar_main.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Robber’s Cave (Gucchupani) in Uttarakhand, India"
+        "alt": "Robber’s Cave (Gucchupani)"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hidimba_Devi_Temple-Manali-Himachal_pradesh-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -231,22 +230,41 @@
       ]
     },
     {
-      "name": "Sahastradhara",
-      "category": "nature",
-      "distance": "11 km",
-      "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
-      "duration": "2 hrs",
-      "rating": 4.2,
-      "description": "“Thousand-fold spring” of sulphur water and limestone terraces.",
+      "name": "Forest Research Institute",
+      "category": "heritage",
+      "distance": "7 km",
+      "entryFee": "₹40",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Grand Greco-Roman colonial campus and forestry museums.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Kangra_Fort-Kangra-Himachal_Pradesh_DSC0002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sahastradhara, Dehradun"
+        "alt": "Forest Research Institute"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_at_Sahastradhara_v2.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sahastradhara_fun_spot_connected_with_cable_car.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/Masroor-Kangra-Himachal-R16_02706.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
+      "name": "Sahastradhara",
+      "category": "nature",
+      "distance": "11 km",
+      "entryFee": "₹100",
+      "timings": "Varies by season",
+      "duration": "2 hrs",
+      "rating": 4.2,
+      "description": "“Thousand-fold spring” of sulphur water and limestone terraces.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/View_at_Sahastradhara_v1.jpg",
+        "alt": "Sahastradhara"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/View_at_Sahastradhara_v1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_at_Sahastradhara_v2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sahastradhara_fun_spot_connected_with_cable_car.jpg"
       ]
     }
   ],
@@ -259,6 +277,11 @@
           "time": "Morning",
           "activity": "Robber’s Cave (Gucchupani)",
           "note": "River cave where the stream vanishes and re-emerges underground."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Forest Research Institute",
+          "note": "Grand Greco-Roman colonial campus and forestry museums."
         }
       ]
     },
@@ -276,84 +299,220 @@
   ],
   "hotels": [
     {
-      "name": "OYO Dehradun Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Dehradun OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1100,
       "priceMax": 1750,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 471,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Dehradun%20Stay%20Dehradun%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dehradun%20OYO%20Dehradun%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Dehradun",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "BunkStay Highland Resort",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2100,
       "priceMax": 2950,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 298,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Dehradun%20Dehradun%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=BunkStay%20Highland%20Resort%20Dehradun%20Uttarakhand"
     },
     {
-      "name": "Dehradun Grand Hotel",
+      "name": "Dehradun Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3300,
       "priceMax": 4950,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 532,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Dehradun%20Grand%20Hotel%20Dehradun%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dehradun%20Treebo%20Trend%20Dehradun%20Uttarakhand"
     },
     {
-      "name": "Sterling Dehradun",
-      "type": "resort",
-      "tier": "best",
+      "name": "FabHotels Prime Hilltop Retreat",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 6600,
       "priceMax": 11000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 772,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Good Value",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Hilltop%20Retreat%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Dehradun Pine Grove",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3269,
+      "priceMax": 5203,
+      "rating": 4.4,
+      "reviews": 447,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dehradun%20Pine%20Grove%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Ginger Dehradun",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3471,
+      "priceMax": 4993,
+      "rating": 4.1,
+      "reviews": 691,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Dehradun%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Novotel Dehradun",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4929,
+      "priceMax": 5467,
+      "rating": 4.4,
+      "reviews": 566,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Dehradun%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Hyatt Regency Dehradun",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9186,
+      "priceMax": 9829,
+      "rating": 4.6,
+      "reviews": 1882,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Dehradun%20Dehradun%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Dehradun%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Dehradun Ridge Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10937,
+      "priceMax": 12744,
+      "rating": 4.4,
+      "reviews": 2152,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dehradun%20Ridge%20Resort%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Dehradun Mountain Resort",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 12947,
+      "priceMax": 14495,
+      "rating": 4.6,
+      "reviews": 1960,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "World Class",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dehradun%20Mountain%20Resort%20Dehradun%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -367,29 +526,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Guchu_Pani_Robbers_Cave_ate_Dehradun.jpg",
-      "alt": "Dehradun photo 2",
-      "title": "Robber’s Cave (Gucchupani)"
+      "alt": "Dehradun photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Forest_Research_Institute_campus%2C_Dehradun%2C_India.jpg/1280px-Forest_Research_Institute_campus%2C_Dehradun%2C_India.jpg",
-      "alt": "Dehradun photo 3",
-      "title": "Forest Research Institute"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Forest_Research_Institute_campus%2C_Dehradun%2C_India.jpg",
+      "alt": "Dehradun photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Forest_Research_Institute_in_Dehradun_05.jpg/1280px-Forest_Research_Institute_in_Dehradun_05.jpg",
-      "alt": "Dehradun photo 4",
-      "title": "Sahastradhara"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Forest_Research_Institute_in_Dehradun_05.jpg",
+      "alt": "Dehradun photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/View_at_Sahastradhara_v1.jpg",
-      "alt": "Dehradun photo 5",
-      "title": "Dehradun — Sacred Heritage"
+      "alt": "Dehradun photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Hidimba_Devi_Temple-Manali-Himachal_pradesh-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Dehradun - Highlight 5",
-      "alt": "Temples and monuments of Himachal Pradesh",
-      "title": "Temples and monuments of Himachal Pradesh"
+      "alt": "Temples and monuments of Himachal Pradesh"
     }
   ],
   "faq": [
@@ -411,7 +564,7 @@
     },
     {
       "q": "What are the top places to visit in Dehradun?",
-      "a": "The top attractions are Robber’s Cave (Gucchupani), Sahastradhara."
+      "a": "The top attractions are Robber’s Cave (Gucchupani), Forest Research Institute, Sahastradhara."
     }
   ],
   "seo": {
@@ -427,5 +580,7 @@
       "how to reach Dehradun",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

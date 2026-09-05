@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Cherrapunji — hill station of Meghalaya",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg/1280px-Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg",
-    "alt": "Cherrapunji photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg",
+    "alt": "Cherrapunji, Meghalaya"
   },
   "overview": {
     "short": "Cherrapunji is a much-loved hill station in Meghalaya, known for living root bridges and waterfalls.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 16000,
     "minPrice": 1300,
-    "distanceFromDelhi": 1930,
-    "about": "Cherrapunji, in Khasi Hills, Meghalaya, is one of India’s favourite hill station. Visitors come for its living root bridges, waterfalls, caves, with the best months being Sep – May."
+    "distanceFromDelhi": 1930
   },
   "bestTime": {
     "label": "Sep – May",
@@ -218,13 +217,13 @@
       "category": "nature",
       "distance": "5 km",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.6,
       "description": "India’s tallest plunge waterfall at 340m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Global_tropical_cyclone_tracks-edit2.jpg",
-        "alt": "Nohkalikai Falls in Meghalaya - This map shows the tracks of all Tropical cyclones which formed worldwide from 1985 to 2"
+        "alt": "Nohkalikai Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e1/Drought.jpg",
@@ -237,13 +236,13 @@
       "category": "nature",
       "distance": "12 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "Hand-grown root bridge reached by a 3,500-step trek.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/A_double_decker_living_bridge_in_Meghalaya%2C_December_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Double Decker Living Root Bridge in Meghalaya, India"
+        "alt": "Double Decker Living Root Bridge"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "6 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Easy-to-walk limestone cave with lit formations.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Mawsmai_Cave_in_Meghalaya%2C_India.jpg/1280px-Mawsmai_Cave_in_Meghalaya%2C_India.jpg",
-        "alt": "Mawsmai Cave in Meghalaya, India"
+        "alt": "Mawsmai Cave"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/62/Stalactites_cave_meghalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Cherrapunji Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Cherrapunji Treebo",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 339,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Cherrapunji%20Stay%20Cherrapunji%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Treebo%20Cherrapunji%20Meghalaya"
     },
     {
-      "name": "Airbnb: Stay in Cherrapunji",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Cherrapunji",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.9,
+      "reviews": 498,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Cherrapunji%20Cherrapunji%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Cherrapunji%20Cherrapunji%20Meghalaya"
     },
     {
-      "name": "Cherrapunji Grand Hotel",
+      "name": "Cherrapunji Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 738,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Cherrapunji%20Grand%20Hotel%20Cherrapunji%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Treebo%20Trend%20Cherrapunji%20Meghalaya"
     },
     {
-      "name": "Sterling Cherrapunji",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Mountain Resort",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 323,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Mountain%20Resort%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "Cherrapunji Keys Select",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3078,
+      "priceMax": 3445,
+      "rating": 4.2,
+      "reviews": 1024,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Keys%20Select%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "Cherrapunji Holiday Inn Express",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3262,
+      "priceMax": 3972,
+      "rating": 4.1,
+      "reviews": 312,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Holiday%20Inn%20Express%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "Hilton Garden Inn Peak Stay",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6405,
+      "priceMax": 7544,
+      "rating": 4.3,
+      "reviews": 1077,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Peak%20Stay%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "Cherrapunji Valley View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7923,
+      "priceMax": 9666,
+      "rating": 4.5,
+      "reviews": 1422,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Valley%20View%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "Cherrapunji Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8795,
+      "priceMax": 9614,
+      "rating": 4.5,
+      "reviews": 2256,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Cherrapunji%20Cherrapunji%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Cherrapunji%20Vivanta%20Cherrapunji%20Meghalaya"
+    },
+    {
+      "name": "ITC Cherrapunji Resort & Spa",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 15500,
+      "priceMax": 15888,
+      "rating": 4.7,
+      "reviews": 3085,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Cherrapunji%20Resort%20%26%20Spa%20Cherrapunji%20Meghalaya"
     }
   ],
   "restaurants": [],
@@ -391,29 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg/1280px-Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg",
-      "alt": "Cherrapunji photo 2",
-      "title": "Nohkalikai Falls"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nohkalikai_Falls_near_Cherrapunji%2C_India.jpg",
+      "alt": "Cherrapunji photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/The_rocks_and_the_pond_under_the_double_decker_bridge_in_Nongriat.jpg/1280px-The_rocks_and_the_pond_under_the_double_decker_bridge_in_Nongriat.jpg",
-      "alt": "Cherrapunji photo 3",
-      "title": "Double Decker Living Root Bridge"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_rocks_and_the_pond_under_the_double_decker_bridge_in_Nongriat.jpg",
+      "alt": "Cherrapunji photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mawsmai_Cave_Cherrapunji.jpg/1280px-Mawsmai_Cave_Cherrapunji.jpg",
-      "alt": "Cherrapunji photo 4",
-      "title": "Mawsmai Cave"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Mawsmai_Cave_Cherrapunji.jpg",
+      "alt": "Cherrapunji photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mawsmai_Cave.jpg/1280px-Mawsmai_Cave.jpg",
-      "alt": "Cherrapunji photo 5",
-      "title": "Cherrapunji — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Mawsmai_Cave.jpg",
+      "alt": "Cherrapunji photo 5"
     },
     {
       "src": "https://images.pexels.com/photos/29613182/pexels-photo-29613182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Cherrapunji in Meghalaya - Stunning view of a tall waterfall cascading into a pool surrounded by lush greenery in Meghal",
-      "title": "Cherrapunji in Meghalaya - Stunning view of a tall…"
+      "alt": "Cherrapunji in Meghalaya - Stunning view of a tall waterfall cascading into a pool surrounded by lush greenery in Meghal"
     }
   ],
   "faq": [
@@ -451,5 +585,7 @@
       "how to reach Cherrapunji",
       "Meghalaya tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

@@ -26,7 +26,7 @@
     ],
     "rating": 4.8,
     "reviewCount": 1850,
-    "minPrice": 5500,
+    "minPrice": 800,
     "distanceFromDelhi": 2130
   },
   "bestTime": {
@@ -444,23 +444,44 @@
   ],
   "hotels": [
     {
-      "name": "Kasim's Homestay",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 7000,
-      "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 410,
+      "name": "Agatti Island Tourist Guest House",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 140,
       "amenities": [
-        "Diving Center",
-        "Airport Transfers",
-        "Restaurant"
+        "Clean Rooms",
+        "Hot Water",
+        "Free Parking",
+        "Travel Assistance"
       ],
       "tags": [
-        "Beachfront",
-        "Diving"
+        "Budget Friendly",
+        "Convenient"
       ],
-      "url": "https://www.google.com/search?q=Kasim's%20Homestay%20Agatti%20Island%20Lakshadweep%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Agatti%20Island%20Tourist%20Guest%20House%20Lakshadweep"
+    },
+    {
+      "name": "Agatti Island Heritage Residency",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.3,
+      "reviews": 210,
+      "amenities": [
+        "AC Rooms",
+        "Multi-Cuisine Dining",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Comfortable"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Agatti%20Island%20Heritage%20Residency%20Lakshadweep"
     }
   ],
   "gallery": [
@@ -483,11 +504,6 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Agatti_island%2C_Lakshadweep.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "alt": "Agatti Island view 5",
       "title": "Agatti Island — Sacred Temple Heritage"
-    },
-    {
-      "src": "https://pixabay.com/get/g305d3f7ad42124c5ae3dcbed0fe170a015fed9b3720d85ddaf2183705ebef0bc3ef9eff2364b33ae45f4ff12c4d68522c6b5c5fc74e0ae2e37fbc941b3f2d36d_1280.jpg",
-      "alt": "Agatti Island in Agatti Island, Lakshadweep - beach, nature, boat, boats, lakshadweep",
-      "title": "Agatti Island in Agatti Island, Lakshadweep -…"
     }
   ],
   "faq": [

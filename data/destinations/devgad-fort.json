@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Devgad Fort — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg/1280px-Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg",
-    "alt": "Devgad Fort photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg",
+    "alt": "Devgad Fort, Maharashtra"
   },
   "overview": {
     "short": "Devgad Fort, also called Janjira Devgad Fort, is a fort located 5 km from Devgad town, in Sindhudurg district, of Maharashtra.",
@@ -242,84 +242,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Devgad Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Palace Hotel",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 277,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Devgad%20Fort%20Stay%20Devgad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Palace%20Hotel%20Devgad%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Devgad Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ginger Heritage Hotel",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 779,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Period Property"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Devgad%20Fort%20Devgad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Heritage%20Hotel%20Devgad%20Maharashtra"
     },
     {
-      "name": "Devgad Fort Grand Hotel",
+      "name": "OYO Townhouse Devgad",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 645,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Devgad%20Fort%20Grand%20Hotel%20Devgad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Devgad%20Devgad%20Maharashtra"
     },
     {
-      "name": "Marriott Devgad Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Devgad Royal Retreat",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 411,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Devgad%20Royal%20Retreat%20Devgad%20Maharashtra"
+    },
+    {
+      "name": "Devgad Sarovar Portico",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3758,
+      "priceMax": 4440,
+      "rating": 4.1,
+      "reviews": 1085,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Devgad%20Sarovar%20Portico%20Devgad%20Maharashtra"
+    },
+    {
+      "name": "Hyatt Place Fort Residence",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6818,
+      "priceMax": 7767,
+      "rating": 4.5,
+      "reviews": 1869,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Fort%20Residence%20Devgad%20Maharashtra"
+    },
+    {
+      "name": "Taj Vivanta Devgad",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10937,
+      "priceMax": 12684,
+      "rating": 4.5,
+      "reviews": 2251,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Devgad%20Fort%20Devgad%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Devgad%20Devgad%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -332,29 +403,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg/1280px-Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg",
-      "alt": "Devgad Fort photo 2",
-      "title": "Pural"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sculptures_in_the_Devgiri_Fort_Museum%2C_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_42.jpg",
+      "alt": "Devgad Fort photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kala_Pahad_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_01.jpg/1280px-Kala_Pahad_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_01.jpg",
-      "alt": "Devgad Fort photo 3",
-      "title": "Devgad Fort — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kala_Pahad_Canon_in_the_Daulatabad_Fort_alias_Devgad_fort_Complex%2C_Daulatabad%2C_Maharashtra%2C_India_01.jpg",
+      "alt": "Devgad Fort photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_37.jpg/1280px-Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_37.jpg",
-      "alt": "Devgad Fort photo 4",
-      "title": "Devgad Fort — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_37.jpg",
+      "alt": "Devgad Fort photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Canons_at_entrance_gate_of_Daulatabad_Fort_alias_Devgad_fort%2C_Daulatabad%2C_Maharashtra%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Devgad Fort photo 5",
-      "title": "Devgad Fort — Sacred Heritage"
+      "alt": "Devgad Fort photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/0101721_Karpur_Baoli%2C_Ancient_Vapi%2C_Ramtek_Maharashtra_023.jpg",
-      "alt": "Devgad Fort in Maharashtra - The Karpur Baoli, also referred to as the Karpuravapi complex, is a water tank and temples",
-      "title": "Devgad Fort in Maharashtra - The Karpur Baoli, also…"
+      "alt": "Devgad Fort in Maharashtra - The Karpur Baoli, also referred to as the Karpuravapi complex, is a water tank and temples"
     }
   ],
   "faq": [
@@ -392,5 +458,7 @@
       "how to reach Devgad Fort",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

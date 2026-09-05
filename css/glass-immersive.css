@@ -559,6 +559,15 @@ body.glass-immersive .popular-chip {
   -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
   font-weight: 500 !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .popular-chip:hover {
+  background: rgba(229, 192, 123, 0.18) !important;
+  border-color: rgba(229, 192, 123, 0.55) !important;
+  color: #FFF3C4 !important;
+  box-shadow: 0 4px 14px rgba(229, 192, 123, 0.25) !important;
+  transform: translateY(-1px) !important;
 }
 
 body.glass-immersive .card .amenity-chip {
@@ -1096,17 +1105,17 @@ body.glass-immersive .month-pill {
 }
 
 body.glass-immersive .month-pill:hover {
-  background: rgba(15, 23, 42, 0.90) !important;
-  color: #ffffff !important;
-  border-color: rgba(74, 222, 128, 0.5) !important;
+  background: rgba(22, 30, 48, 0.95) !important;
+  color: #FFF3C4 !important;
+  border-color: rgba(229, 192, 123, 0.5) !important;
   transform: translateY(-2px) !important;
 }
 
 body.glass-immersive .month-pill.is-active {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.92), rgba(5, 150, 105, 0.95)) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(52, 211, 153, 0.75) !important;
-  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  color: #080A0F !important;
+  border: 1px solid rgba(255, 243, 196, 0.8) !important;
+  box-shadow: 0 6px 22px rgba(229, 192, 123, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
   font-weight: 700 !important;
   transform: scale(1.05) !important;
 }
@@ -1123,14 +1132,14 @@ body.glass-immersive .month-pill .pill-current-badge {
 }
 
 body.glass-immersive .month-pill.is-active .pill-current-badge {
-  background-color: rgba(255, 255, 255, 0.30) !important;
-  color: #ffffff !important;
+  background-color: #080A0F !important;
+  color: #F5C542 !important;
 }
 
 body.glass-immersive .month-pill:not(.is-active) .pill-current-badge {
-  background-color: rgba(74, 222, 128, 0.25) !important;
-  color: #4ade80 !important;
-  border: 1px solid rgba(74, 222, 128, 0.45) !important;
+  background-color: rgba(229, 192, 123, 0.2) !important;
+  color: #F5C542 !important;
+  border: 1px solid rgba(229, 192, 123, 0.45) !important;
 }
 
 /* ─── Stay Price Filter Chips (Translucent Neon Capsules) ─────────── */
@@ -1257,11 +1266,16 @@ body.glass-immersive .bg-amber-100 {
 }
 
 body.glass-immersive .ex-chip {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  touch-action: manipulation;
   background: rgba(15, 23, 42, 0.75) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   color: rgba(255, 255, 255, 0.85) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   backdrop-filter: blur(12px) !important;
+  transition: all 0.2s ease !important;
 }
 
 body.glass-immersive .ex-chip:hover {
@@ -1269,6 +1283,10 @@ body.glass-immersive .ex-chip:hover {
   color: #ffffff !important;
   box-shadow: 0 4px 14px rgba(74, 222, 128, 0.20) !important;
   transform: translateY(-1px) !important;
+}
+
+body.glass-immersive .ex-chip:active {
+  transform: scale(0.96) !important;
 }
 
 /* ─── Map Card Title (Glass) ───────────────────────────────────── */
@@ -1456,4 +1474,39 @@ body.glass-immersive .season-card img {
 
 body.glass-immersive #main {
   min-height: 100vh;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ROYAL CALLIGRAPHY & EDITORIAL SERIF ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+body.glass-immersive .calligraphy-kicker,
+body.glass-immersive .calligraphy-eyebrow {
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: clamp(1.4rem, 2.2vw, 2.15rem) !important;
+  color: #F5C542 !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.9)) !important;
+}
+
+body.glass-immersive .trend-card .trend-card-title,
+body.glass-immersive .trend-card p.text-white.font-bold {
+  font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+}
+
+body.glass-immersive .card-calligraphy-accent {
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: 1.25rem !important;
+  color: #F5C542 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95) !important;
+  margin-bottom: 2px !important;
+  display: block !important;
+  letter-spacing: 0.03em !important;
 }

@@ -324,7 +324,7 @@ function search(q) {
         '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
         '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
         '</div>' +
-        '<span class="text-xs text-gray-500 shrink-0">From ₹' + inr(d.minPrice || 0) + '</span>' +
+        '<span class="text-xs text-gray-500 shrink-0">Stay starts from ₹' + inr(d.minPrice || 0) + '</span>' +
         '</a>';
     }).join('');
     items += '<a href="destinations.html" id="ac-opt-' + (optId++) + '" role="option" class="autocomplete-item justify-center text-sm font-semibold text-primary hover:bg-emerald-50 transition-colors">View all destinations →</a>';

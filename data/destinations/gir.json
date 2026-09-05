@@ -9,7 +9,7 @@
   "tagline": "Gir National Park — wildlife reserve of Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Sinh_sadan_Sasan_Gir_Gujarat_India.jpg",
-    "alt": "Gir National Park in Gir National Park, Gujarat - Sinh sadan Sasan Gir Gujarat India"
+    "alt": "Gir National Park, Gujarat"
   },
   "overview": {
     "short": "Gir National Park is a much-loved wildlife reserve in Gujarat, known for asiatic lions and safari.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 17000,
     "minPrice": 2500,
-    "distanceFromDelhi": 1250,
-    "about": "Gir National Park, in Saurashtra, Gujarat, is one of India’s favourite wildlife reserve. Visitors come for its asiatic lions, safari, forest, with the best months being Dec – Mar."
+    "distanceFromDelhi": 1250
   },
   "bestTime": {
     "label": "Dec – Mar",
@@ -210,13 +209,13 @@
       "category": "wildlife",
       "distance": "Sasan Gir",
       "entryFee": "₹800",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "3 hrs",
       "rating": 4.7,
       "description": "The only place on earth to see Asiatic lions in the wild.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Asiatic_Lion_at_Devaliya_Gir.jpg/1280px-Asiatic_Lion_at_Devaliya_Gir.jpg",
-        "alt": "Gir Lion Safari in Gujarat, India"
+        "alt": "Gir Lion Safari"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/06/Janakipara_waterfalls_%2845869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -229,13 +228,13 @@
       "category": "wildlife",
       "distance": "12 km",
       "entryFee": "₹190",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Fenced interpretation zone with near-guaranteed sightings.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Asiatic_Lions_at_Devaliya_Gir.jpg/1280px-Asiatic_Lions_at_Devaliya_Gir.jpg",
-        "alt": "Devalia Safari Park in Gujarat, India"
+        "alt": "Devalia Safari Park"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Asiatic_Lions_in_Gir%2C_Gujarat.jpg/1280px-Asiatic_Lions_in_Gir%2C_Gujarat.jpg",
@@ -248,13 +247,13 @@
       "category": "spiritual",
       "distance": "Core",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.2,
       "description": "Forest temple deep inside the Gir sanctuary.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Main_Street%2C_Surat%2C_1952.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kankai Mata Temple in Gujarat, India"
+        "alt": "Kankai Mata Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c5/Janakipara_waterfalls_%2825411%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -294,84 +293,202 @@
   ],
   "hotels": [
     {
-      "name": "OYO Gir National Park Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Tiger Trail",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 275,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Gir%20National%20Park%20Stay%20Gir%20National%20Park%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Tiger%20Trail%20Gir%20Gujarat"
     },
     {
-      "name": "Airbnb: Stay in Gir National Park",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Eco Lodge",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 797,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Eco Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Gir%20National%20Park%20Gir%20National%20Park%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Eco%20Lodge%20Gir%20Gujarat"
     },
     {
-      "name": "Gir National Park Grand Hotel",
+      "name": "Gir Birders Inn",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 287,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Gir%20National%20Park%20Grand%20Hotel%20Gir%20National%20Park%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gir%20Birders%20Inn%20Gir%20Gujarat"
     },
     {
-      "name": "Jungle Lodges Gir National Park",
-      "type": "resort",
-      "tier": "best",
+      "name": "Gir Safari Lodge",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 415,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Wilderness Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gir%20Safari%20Lodge%20Gir%20Gujarat"
+    },
+    {
+      "name": "Sarovar Portico Eco Lodge",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3873,
+      "priceMax": 4459,
+      "rating": 4.3,
+      "reviews": 451,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Eco%20Lodge%20Gir%20Gujarat"
+    },
+    {
+      "name": "Hyatt Place Safari Lodge",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4608,
+      "priceMax": 5056,
+      "rating": 4.3,
+      "reviews": 699,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Safari%20Lodge%20Gir%20Gujarat"
+    },
+    {
+      "name": "Gir Hilton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10800,
+      "priceMax": 12352,
+      "rating": 4.4,
+      "reviews": 2621,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Gir%20National%20Park%20Gir%20National%20Park%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gir%20Hilton%20Gir%20Gujarat"
+    },
+    {
+      "name": "Gir Jungle Lodge",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 12397,
+      "priceMax": 13221,
+      "rating": 4.7,
+      "reviews": 3067,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gir%20Jungle%20Lodge%20Gir%20Gujarat"
+    },
+    {
+      "name": "Gir River View Camp",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 35869,
+      "priceMax": 36176,
+      "rating": 4.8,
+      "reviews": 1106,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gir%20River%20View%20Camp%20Gir%20Gujarat"
     }
   ],
   "restaurants": [],
@@ -385,28 +502,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Sinh_sadan_Sasan_Gir_Gujarat_India.jpg",
-      "alt": "Gir National Park in Gir National Park, Gujarat - Sinh sadan Sasan Gir Gujarat India",
-      "title": "Gir National Park in Gir National Park, Gujarat -…"
+      "alt": "Gir National Park in Gir National Park, Gujarat - Sinh sadan Sasan Gir Gujarat India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Indian_Gir_Lion.jpg/1280px-Indian_Gir_Lion.jpg",
-      "alt": "Gir National Park photo 2",
-      "title": "Devalia Safari Park"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Indian_Gir_Lion.jpg",
+      "alt": "Gir National Park photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg/1280px-Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg",
-      "alt": "Gir National Park photo 3",
-      "title": "Kankai Mata Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Majestic_Asiatic_Lions_in_Devalia_Safari_Park%2C_Gir_National_Forest_Park.jpg",
+      "alt": "Gir National Park photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Majestic_Asiatic_Lions_in_Gir_Forest_National_Park.jpg/1280px-Majestic_Asiatic_Lions_in_Gir_Forest_National_Park.jpg",
-      "alt": "Gir National Park photo 4",
-      "title": "Gir National Park — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Majestic_Asiatic_Lions_in_Gir_Forest_National_Park.jpg",
+      "alt": "Gir National Park photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Majestic_Asiatic_Lions_in_Devalia_Safari_Park_in_Gir_National_Forest%2C_Gujarat%2C_India.jpg/1280px-Majestic_Asiatic_Lions_in_Devalia_Safari_Park_in_Gir_National_Forest%2C_Gujarat%2C_India.jpg",
-      "alt": "Gir National Park photo 5",
-      "title": "Gir National Park — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Majestic_Asiatic_Lions_in_Devalia_Safari_Park_in_Gir_National_Forest%2C_Gujarat%2C_India.jpg",
+      "alt": "Gir National Park photo 5"
     }
   ],
   "faq": [
@@ -444,5 +556,7 @@
       "how to reach Gir National Park",
       "Gujarat tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

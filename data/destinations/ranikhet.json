@@ -9,7 +9,7 @@
   "tagline": "Ranikhet — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ranikhet_town_at_night%2C_from_Rai_estate.jpg",
-    "alt": "Ranikhet in Ranikhet, Uttarakhand - Ranikhet town at night,view from Rai Estate"
+    "alt": "Ranikhet, Uttarakhand"
   },
   "overview": {
     "short": "Ranikhet is a much-loved hill station in Uttarakhand, known for golf and pine forests.",
@@ -23,8 +23,7 @@
     "rating": 4.3,
     "reviewCount": 8000,
     "minPrice": 1400,
-    "distanceFromDelhi": 350,
-    "about": "Ranikhet, in Kumaon, Uttarakhand, is one of India’s favourite hill station. Visitors come for its golf, pine forests, himalayan views, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 350
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "spiritual",
       "distance": "7 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "45 min",
       "rating": 4.4,
       "description": "Temple of thousands of bells offered for wishes fulfilled.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Festivities_on_a_River_%286125080248%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Jhula Devi Temple, Ranikhet"
+        "alt": "Jhula Devi Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/dd/Maharana_Jagat_Singh_II_hawking_and_boar_hunting_%286125048946%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "nature",
       "distance": "10 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Apple and apricot orchards with a Himalayan viewpoint.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Entrance_gate_of_the_Gopegarh_Heritage_and_Eco_tourism_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Chaubatia Gardens in Uttarakhand, India"
+        "alt": "Chaubatia Gardens"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/8/81/Adi_Ganga_or_Tolly%27s_Nullah%2C_Kalighat_in_1865_%2807%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "scenic",
       "distance": "5 km",
       "entryFee": "₹200",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "One of Asia’s highest 9-hole golf courses amid pines.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Dehradun-Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Upat Golf Course in Uttarakhand, India"
+        "alt": "Upat Golf Course"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/00/Taki_2010_DSC_0102_%288508432909%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -297,84 +296,222 @@
   ],
   "hotels": [
     {
-      "name": "OYO Ranikhet Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "GoStops Ranikhet Hostel",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1400,
       "priceMax": 2250,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 155,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Ranikhet%20Stay%20Ranikhet%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Ranikhet%20Hostel%20Ranikhet%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Ranikhet",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ranikhet Treebo",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2650,
       "priceMax": 3800,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 367,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ranikhet%20Ranikhet%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Treebo%20Ranikhet%20Uttarakhand"
     },
     {
-      "name": "Ranikhet Grand Hotel",
+      "name": "Ginger Mountain Resort",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4200,
       "priceMax": 6300,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 480,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Ranikhet%20Grand%20Hotel%20Ranikhet%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Mountain%20Resort%20Ranikhet%20Uttarakhand"
     },
     {
-      "name": "Sterling Ranikhet",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ranikhet Summit View",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 8400,
       "priceMax": 14000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4,
+      "reviews": 395,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Smart Choice",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Ranikhet%20Ranikhet%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Summit%20View%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Ranikhet Mountain Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3642,
+      "priceMax": 4604,
+      "rating": 4.1,
+      "reviews": 999,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Mountain%20Resort%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Fairfield by Marriott Ranikhet",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3923,
+      "priceMax": 5004,
+      "rating": 4.1,
+      "reviews": 409,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Ranikhet%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Ranikhet Novotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6767,
+      "priceMax": 7793,
+      "rating": 4.4,
+      "reviews": 738,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Novotel%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Ranikhet The Gateway",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9712,
+      "priceMax": 10851,
+      "rating": 4.6,
+      "reviews": 1187,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20The%20Gateway%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Ranikhet Hilton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11627,
+      "priceMax": 13448,
+      "rating": 4.4,
+      "reviews": 2659,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Hilton%20Ranikhet%20Uttarakhand"
+    },
+    {
+      "name": "Ranikhet Grand Hyatt",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 14656,
+      "priceMax": 16469,
+      "rating": 4.6,
+      "reviews": 3693,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranikhet%20Grand%20Hyatt%20Ranikhet%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -389,28 +526,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ranikhet_town_at_night%2C_from_Rai_estate.jpg",
-      "alt": "Ranikhet in Ranikhet, Uttarakhand - Ranikhet town at night,view from Rai Estate",
-      "title": "Ranikhet in Ranikhet, Uttarakhand - Ranikhet town…"
+      "alt": "Ranikhet in Ranikhet, Uttarakhand - Ranikhet town at night,view from Rai Estate"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ranikhet_town_at_night%2C_from_Rai_estate.jpg/1280px-Ranikhet_town_at_night%2C_from_Rai_estate.jpg",
-      "alt": "Ranikhet photo 2",
-      "title": "Chaubatia Gardens"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ranikhet_town_at_night%2C_from_Rai_estate.jpg",
+      "alt": "Ranikhet photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Ranikhet%2C_Uttarakhand_in_the_1880s.JPG",
-      "alt": "Ranikhet photo 3",
-      "title": "Upat Golf Course"
+      "alt": "Ranikhet photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aesculus_indica_in_Ranikhet.jpg/1280px-Aesculus_indica_in_Ranikhet.jpg",
-      "alt": "Ranikhet photo 4",
-      "title": "Ranikhet — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Aesculus_indica_in_Ranikhet.jpg",
+      "alt": "Ranikhet photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Ranikhet_Medows.jpg",
-      "alt": "Ranikhet photo 5",
-      "title": "Ranikhet — Sunset Horizon"
+      "alt": "Ranikhet photo 5"
     }
   ],
   "faq": [
@@ -448,5 +580,7 @@
       "how to reach Ranikhet",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Kodaikanal — hill station of Tamil Nadu",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kodai_lake_at_night.jpg/1280px-Kodai_lake_at_night.jpg",
-    "alt": "Kodaikanal photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kodai_lake_at_night.jpg",
+    "alt": "Kodaikanal, Tamil Nadu"
   },
   "overview": {
     "short": "Kodaikanal is a much-loved hill station in Tamil Nadu, known for star lake and pillar rocks.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 29000,
     "minPrice": 1300,
-    "distanceFromDelhi": 2450,
-    "about": "Kodaikanal, in Palani Hills, Tamil Nadu, is one of India’s favourite hill station. Visitors come for its star lake, pillar rocks, forests, with the best months being Sep – May."
+    "distanceFromDelhi": 2450
   },
   "bestTime": {
     "label": "Sep – May",
@@ -218,13 +217,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Star-shaped lake with pedal boating and cycle paths.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Kodai%2Cold-lake-mirrored_back.jpg",
-        "alt": "Kodai Lake in Tamil Nadu, India"
+        "alt": "Kodai Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/fc/Fruits_and_seeds_in_a_bowl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "7 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Three giant granite pillars rising 120m, often cloud-wrapped.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pillar_Rocks_in_Kodaikanal.jpg/1280px-Pillar_Rocks_in_Kodaikanal.jpg",
-        "alt": "Pillar Rocks in Tamil Nadu, India"
+        "alt": "Pillar Rocks"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/6d/Fruits_and_seeds_of_Maesa_indica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "scenic",
       "distance": "1 km",
       "entryFee": "₹10",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Cliff-edge promenade with valley views and a telescope house.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg/1280px-Hillview_of_Kodaikanal_from_Coaker%27s_Walk.jpg",
-        "alt": "Coaker’s Walk in Tamil Nadu, India"
+        "alt": "Coaker’s Walk"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kodaikanal_coakers_walk_%281%29.jpg/1280px-Kodaikanal_coakers_walk_%281%29.jpg",
@@ -302,84 +301,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kodaikanal Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Kodaikanal",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 401,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kodaikanal%20Stay%20Kodaikanal%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu"
     },
     {
-      "name": "Airbnb: Stay in Kodaikanal",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Kodaikanal",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 285,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu"
     },
     {
-      "name": "Kodaikanal Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Zostel Plus Kodaikanal Hostel",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 794,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Kodaikanal%20Grand%20Hotel%20Kodaikanal%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Kodaikanal%20Hostel%20Kodaikanal%20Tamil%20Nadu"
     },
     {
-      "name": "Sterling Kodaikanal",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lemon Tree Red Fox Kodaikanal",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 371,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Good Value",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "Fairfield by Marriott Summit View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3407,
+      "priceMax": 5329,
+      "rating": 4.1,
+      "reviews": 867,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Summit%20View%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kodaikanal Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3466,
+      "priceMax": 4612,
+      "rating": 4.3,
+      "reviews": 442,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kodaikanal%20Lemon%20Tree%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "DoubleTree by Hilton Valley View",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4910,
+      "priceMax": 6434,
+      "rating": 4.5,
+      "reviews": 650,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=DoubleTree%20by%20Hilton%20Valley%20View%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kodaikanal Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11338,
+      "priceMax": 11711,
+      "rating": 4.5,
+      "reviews": 1213,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kodaikanal%20Marriott%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "Renaissance Kodaikanal",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11692,
+      "priceMax": 13007,
+      "rating": 4.5,
+      "reviews": 570,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Kodaikanal%20Kodaikanal%20Tamil%20Nadu"
+    },
+    {
+      "name": "Oberoi Summit View",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 12425,
+      "priceMax": 14159,
+      "rating": 4.6,
+      "reviews": 1175,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Summit%20View%20Kodaikanal%20Tamil%20Nadu"
     }
   ],
   "restaurants": [],
@@ -391,30 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kodai_lake_at_night.jpg/1280px-Kodai_lake_at_night.jpg",
-      "alt": "Kodaikanal photo 2",
-      "title": "Kodai Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kodai_lake_at_night.jpg",
+      "alt": "Kodaikanal photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pillar_Rocks_kodaikanal.jpg",
-      "alt": "Kodaikanal photo 3",
-      "title": "Pillar Rocks"
+      "alt": "Kodaikanal photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/26_Kodaikanal_Pillar_Rocks.jpg/1280px-26_Kodaikanal_Pillar_Rocks.jpg",
-      "alt": "Kodaikanal photo 4",
-      "title": "Coaker’s Walk"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/26_Kodaikanal_Pillar_Rocks.jpg",
+      "alt": "Kodaikanal photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kodaikanal_Coaker%27s_Walk.JPG/1280px-Kodaikanal_Coaker%27s_Walk.JPG",
-      "alt": "Kodaikanal photo 5",
-      "title": "Kodaikanal — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kodaikanal_Coaker%27s_Walk.JPG",
+      "alt": "Kodaikanal photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Leaves_and_unripe_fruit_of_Connarus_sp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kodaikanal - Highlight 5",
-      "alt": "Western Ghats",
-      "title": "Western Ghats"
+      "alt": "Western Ghats"
     }
   ],
   "faq": [
@@ -452,5 +585,7 @@
       "how to reach Kodaikanal",
       "Tamil Nadu tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

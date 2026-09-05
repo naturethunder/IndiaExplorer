@@ -26,7 +26,7 @@
     ],
     "rating": 4.9,
     "reviewCount": 6890,
-    "minPrice": 3500,
+    "minPrice": 800,
     "distanceFromDelhi": 2480,
     "about": "Havelock Island (Swaraj Dweep) is the premier destination in the Andaman Islands, celebrated for Radhanagar Beach, scuba diving spots, elephant beach sea-walking, and mangrove kayaking."
   },
@@ -444,23 +444,44 @@
   ],
   "hotels": [
     {
-      "name": "Island Vinnie's Tropical Cabanas",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 12000,
-      "priceMax": 24000,
-      "rating": 4.9,
-      "reviews": 820,
+      "name": "Havelock Island (Swaraj Dweep) Tourist Guest House",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 140,
       "amenities": [
-        "Rainforest Setting",
-        "Spa",
-        "Restaurant"
+        "Clean Rooms",
+        "Hot Water",
+        "Free Parking",
+        "Travel Assistance"
       ],
       "tags": [
-        "Eco Luxury",
-        "Near Radhanagar"
+        "Budget Friendly",
+        "Convenient"
       ],
-      "url": "https://www.google.com/search?q=Island%20Vinnie's%20Tropical%20Cabanas%20Havelock%20Island%20(Swaraj%20Dweep)%20Andaman%20%26%20Nicobar%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Havelock%20Island%20(Swaraj%20Dweep)%20Tourist%20Guest%20House%20Andaman%20%26%20Nicobar"
+    },
+    {
+      "name": "Havelock Island (Swaraj Dweep) Heritage Residency",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.3,
+      "reviews": 210,
+      "amenities": [
+        "AC Rooms",
+        "Multi-Cuisine Dining",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Comfortable"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Havelock%20Island%20(Swaraj%20Dweep)%20Heritage%20Residency%20Andaman%20%26%20Nicobar"
     }
   ],
   "gallery": [

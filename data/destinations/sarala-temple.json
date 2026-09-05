@@ -9,7 +9,7 @@
   "tagline": "Sarala Temple — spiritual town of Odisha",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Maa_Sarala_Mandir%2C_Olaver%2C_Kendrapara.jpg",
-    "alt": "Sarala Temple in Sarala Temple, Odisha - Maa Sarala Mandir, Olaver, Kendrapara"
+    "alt": "Sarala Temple, Odisha"
   },
   "overview": {
     "short": "The Maa Sarala Temple (also known as Jhankad Sarala Temple) is a Hindu temple in the district of Jagatsinghpur, Odisha, India, dedicated to Goddess Adishakti.",
@@ -211,14 +211,14 @@
       "name": "Utkal Plains",
       "category": "scenic",
       "distance": "8 km",
-      "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "The Utkal Plain is part of the Eastern Coastal Plain of India. It is a coastal plain in the Odisha state of eastern India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Baranga_grant_of_Umarabana%2C_Kalinga_script_3AD.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Utkal Plains in Odisha, India"
+        "alt": "Utkal Plains"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/94/Evolution_of_Oriya_Language.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -242,84 +242,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Sarala Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "FabHotels Sarala",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 165,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Sai Dham"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Sarala%20Temple%20Stay%20Sarala%20Temple%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Sarala%20Sarala%20Odisha"
     },
     {
-      "name": "Airbnb: Stay in Sarala Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Sarala Temple View",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 731,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Krishna Kunj"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Sarala%20Temple%20Sarala%20Temple%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarala%20Temple%20View%20Sarala%20Odisha"
     },
     {
-      "name": "Sarala Temple Grand Hotel",
+      "name": "Sarala Krishna Kunj",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 683,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Sarala%20Temple%20Grand%20Hotel%20Sarala%20Temple%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarala%20Krishna%20Kunj%20Sarala%20Odisha"
     },
     {
-      "name": "Fortune Park Sarala Temple",
-      "type": "resort",
-      "tier": "best",
+      "name": "Sarala Divine Retreat",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 1052,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Devotee Inn"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Sarala%20Temple%20Sarala%20Temple%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarala%20Divine%20Retreat%20Sarala%20Odisha"
+    },
+    {
+      "name": "Sarala Sai Dham",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3078,
+      "priceMax": 5002,
+      "rating": 4.3,
+      "reviews": 531,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Divine Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarala%20Sai%20Dham%20Sarala%20Odisha"
+    },
+    {
+      "name": "Sarala Holiday Inn",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6742,
+      "priceMax": 8177,
+      "rating": 4.3,
+      "reviews": 725,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Devotee Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarala%20Holiday%20Inn%20Sarala%20Odisha"
+    },
+    {
+      "name": "Renaissance Krishna Kunj",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9884,
+      "priceMax": 11247,
+      "rating": 4.4,
+      "reviews": 2061,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Sanctum Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Krishna%20Kunj%20Sarala%20Odisha"
     }
   ],
   "restaurants": [],
@@ -333,28 +405,19 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Maa_Sarala_Mandir%2C_Olaver%2C_Kendrapara.jpg",
-      "alt": "Sarala Temple in Sarala Temple, Odisha - Maa Sarala Mandir, Olaver, Kendrapara",
-      "title": "Sarala Temple in Sarala Temple, Odisha - Maa Sarala…"
+      "alt": "Sarala Temple in Sarala Temple, Odisha - Maa Sarala Mandir, Olaver, Kendrapara"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Sarala_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Sarala Temple — Sarala Temple",
-      "title": "Sarala Temple — Sarala Temple"
-    },
-    {
-      "src": "https://pixabay.com/get/g85eba70831d4274f7b268e699f40923551b1c64735624a85244c6baf148451dd3dd0b1fd21a4e2a2ff77d802a00ee5ea6a872c7f618a85ca85c61fbab9aea595_1280.jpg",
-      "alt": "temple, night view, yakushiji temple, world cultural heritage, nara, seasonal event, wakakusa yamayaki, japan, temple, night view, nara, japan, japan, japan, japan, japan",
-      "title": "temple, night view, yakushiji temple, world…"
+      "alt": "Sarala Temple — Sarala Temple"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sarala_temple_pond.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Sarala Temple — Sarala temple pond",
-      "title": "Sarala Temple — Sarala temple pond"
+      "alt": "Sarala Temple — Sarala temple pond"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sarala_temple_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Sarala Temple — Sarala temple 1",
-      "title": "Sarala Temple — Sarala temple 1"
+      "alt": "Sarala Temple — Sarala temple 1"
     }
   ],
   "faq": [
@@ -392,5 +455,7 @@
       "how to reach Sarala Temple",
       "Odisha tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

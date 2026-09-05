@@ -9,6 +9,11 @@ Last updated: 2026-09-04.
 ---
 
 ## ✅ Done (current state)
+ 
+- **Phase 18: Platform QA Audit, Media Invariants & Catalog Perfection (2026-09-05)** — Full-stack quality assurance and invariant enforcement across all 2,392 destinations.
+  1. **Interactive QA & Browser Subagent Audit:** Verified all primary views (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`) on local dev server (`http://localhost:8080`). 0 console errors/warnings, instant live autocomplete search on Home, category & sorting filters, live counter badge (`2,392 Available`), luxury editorial hero, sticky tabs, live weather widget, Leaflet map, and AI Trip Finder semantic search.
+  2. **Catalog Media Invariants & Perfection:** Aligned `gallery[0]` with `heroImage` in `ntangki-national-park` and `pulie-badze-wildlife-sanctuary`, eliminating unrelated stock assets. Normalized 37 place photo sets to enforce strictly 3 photos per attraction across all 14,013 places catalog-wide.
+  3. **Full Catalog Verification (2,392 Destinations):** 100% unique 1:1 hero images (0 duplicates), 0 picsum placeholders, 0 missing heroes, 0 gallery length violations, 0 SEO ogImage mismatches across 70,435 audited image slots. Hardened `comprehensive-website-audit.js`. **Score: 99/100.**
 
 - **Phase 17: Destination Media Integrity, Zero-Duplicate Audit & Luxury Editorial UI Overhaul (2026-09-05)** — Full-catalog media verification, non-Wikimedia HD photography overhaul across 15+ high-priority destinations, comprehensive zero-duplicate audit across all 2,388 destinations, and destination detail UX & visual redesign.
   1. **Strict Non-Wikimedia HD Media Overhaul:** Overhauled 15+ destinations (`pahalgam`, `srinagar`, `patnitop`, `tawang`, `siddhanath-temple-mhaswad`, `tulja-bhavani-temple`, `afghan-church`, `patnadevi`, `vithal-dayaji-temple-sulewadi`, `fakim-wildlife-sanctuary`, `kailasanathar-temple-kanchipuram`, `tirumanancheri-udhvaganathar-temple`, `tirutalinathar-temple`, `srivaikuntanathan-permual-temple`, `sri-varadharaja-perumal-kovil`) with authentic HD landscape and monument photography (Pexels / Unsplash / Pixabay / Openverse). Strictly enforced 0 human portraits / selfies, landscape orientation (width ≥ 1280px), 5 unique gallery slides (`heroImage` === `gallery[0]`), 3 unique photos per nearby place, and 0 duplicate URLs.

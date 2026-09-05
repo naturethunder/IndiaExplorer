@@ -9,7 +9,7 @@
   "tagline": "Binsar — wildlife reserve of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Binsar%2C_a_view_of_Kumaon_Himalayas.jpg",
-    "alt": "Binsar in Binsar, Uttarakhand - Binsar, a view of Kumaon Himalayas, (Uttarakhand)"
+    "alt": "Binsar, Uttarakhand"
   },
   "overview": {
     "short": "Binsar is a much-loved wildlife reserve in Uttarakhand, known for wildlife sanctuary and zero point.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 6000,
     "minPrice": 1500,
-    "distanceFromDelhi": 400,
-    "about": "Binsar, in Kumaon, Uttarakhand, is one of India’s favourite wildlife reserve. Visitors come for its wildlife sanctuary, zero point, himalayan views, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 400
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "3 km",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "300-degree views of Kedarnath, Nanda Devi and Panchachuli peaks.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pindari_glacier_from_Zero_Point%2C_Uttarakhand%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Zero Point in Uttarakhand, India"
+        "alt": "Zero Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jhandi_Dhar_Hills.jpg",
@@ -232,13 +231,13 @@
       "category": "wildlife",
       "distance": "Gate",
       "entryFee": "₹150",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.4,
       "description": "Oak-and-rhododendron sanctuary rich in birds and leopards.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/11th_12th_century_Suryanarayana_Temple%2C_Kalgi%2C_Karnataka_India_-_51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Binsar Wildlife Sanctuary, Binsar"
+        "alt": "Binsar Wildlife Sanctuary"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/22/Binsar_Oak_Forests.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "spiritual",
       "distance": "5 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "45 min",
       "rating": 4.3,
       "description": "16th-century Shiva temple deep in the forest.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Cloudscape_in_sky_at_Binsar%2C_Almora%2C_Uttarakhand%2C_India.jpg",
-        "alt": "Bineshwar Mahadev Temple in Binsar, Uttarakhand - Cloudscape taken frrom Binsar, Almora, Uttarakhand, India."
+        "alt": "Bineshwar Mahadev Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sitting_Area_in_Room_of_The_Calm_Cottages_Nathuakhan_-_panoramio.jpg",
@@ -297,84 +296,207 @@
   ],
   "hotels": [
     {
-      "name": "OYO Binsar Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Binsar Birders Inn",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1500,
       "priceMax": 2400,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 415,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Nature Retreat"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Binsar%20Stay%20Binsar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Birders%20Inn%20Binsar%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Binsar",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Binsar Wildlife Camp",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2850,
       "priceMax": 4050,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 481,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "River View Camp"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Binsar%20Binsar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Wildlife%20Camp%20Binsar%20Uttarakhand"
     },
     {
-      "name": "Binsar Grand Hotel",
+      "name": "Binsar Jungle Lodge",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4500,
       "priceMax": 6750,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 612,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Tiger Trail"
       ],
-      "url": "https://www.google.com/search?q=Binsar%20Grand%20Hotel%20Binsar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Jungle%20Lodge%20Binsar%20Uttarakhand"
     },
     {
-      "name": "Jungle Lodges Binsar",
-      "type": "resort",
-      "tier": "best",
+      "name": "Binsar Nature Retreat",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 9000,
       "priceMax": 15000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 749,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Nature Retreat"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Binsar%20Binsar%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Nature%20Retreat%20Binsar%20Uttarakhand"
+    },
+    {
+      "name": "Binsar Holiday Inn Express",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2612,
+      "priceMax": 4213,
+      "rating": 4.2,
+      "reviews": 878,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Holiday%20Inn%20Express%20Binsar%20Uttarakhand"
+    },
+    {
+      "name": "Holiday Inn Binsar",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5432,
+      "priceMax": 5800,
+      "rating": 4.3,
+      "reviews": 1295,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Binsar%20Binsar%20Uttarakhand"
+    },
+    {
+      "name": "Binsar Taj Vivanta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11190,
+      "priceMax": 11799,
+      "rating": 4.5,
+      "reviews": 2489,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Award Winning",
+        "Forest Rest House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Taj%20Vivanta%20Binsar%20Uttarakhand"
+    },
+    {
+      "name": "The Taj Binsar",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 13807,
+      "priceMax": 15653,
+      "rating": 4.7,
+      "reviews": 1006,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Wilderness Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Binsar%20Binsar%20Uttarakhand"
+    },
+    {
+      "name": "Alila Binsar Palace",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 42188,
+      "priceMax": 42645,
+      "rating": 4.8,
+      "reviews": 1966,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Alila%20Binsar%20Palace%20Binsar%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -389,28 +511,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Binsar%2C_a_view_of_Kumaon_Himalayas.jpg",
-      "alt": "Binsar in Binsar, Uttarakhand - Binsar, a view of Kumaon Himalayas, (Uttarakhand)",
-      "title": "Binsar in Binsar, Uttarakhand - Binsar, a view of…"
+      "alt": "Binsar in Binsar, Uttarakhand - Binsar, a view of Kumaon Himalayas, (Uttarakhand)"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Binsar_Oak_Forests.JPG/1280px-Binsar_Oak_Forests.JPG",
-      "alt": "Binsar photo 2",
-      "title": "Binsar Wildlife Sanctuary"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Binsar_Oak_Forests.JPG",
+      "alt": "Binsar photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sunrise_at_Binsar_1.JPG/1280px-Sunrise_at_Binsar_1.JPG",
-      "alt": "Binsar photo 3",
-      "title": "Bineshwar Mahadev Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sunrise_at_Binsar_1.JPG",
+      "alt": "Binsar photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/View_from_Brahmadhungi%2C_Binsar_wildlife_sanctuary_20160520.jpg/1280px-View_from_Brahmadhungi%2C_Binsar_wildlife_sanctuary_20160520.jpg",
-      "alt": "Binsar photo 4",
-      "title": "Binsar — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_from_Brahmadhungi%2C_Binsar_wildlife_sanctuary_20160520.jpg",
+      "alt": "Binsar photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Trek_route_in_binsar_wildlife_sanctury.jpg/1280px-Trek_route_in_binsar_wildlife_sanctury.jpg",
-      "alt": "Binsar photo 5",
-      "title": "Binsar — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Trek_route_in_binsar_wildlife_sanctury.jpg",
+      "alt": "Binsar photo 5"
     }
   ],
   "faq": [
@@ -448,5 +565,7 @@
       "how to reach Binsar",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

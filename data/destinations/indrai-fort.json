@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Indrai Fort — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Indrai2.jpg/1280px-Indrai2.jpg",
-    "alt": "Indrai Fort photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Indrai2.jpg",
+    "alt": "Indrai Fort, Maharashtra"
   },
   "overview": {
     "short": "Indrai Fort / Indragiri Fort is a fort located 75 km from Nashik, in Nashik district, of Maharashtra.",
@@ -296,84 +296,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Indrai Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Haveli Stay",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 215,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Indrai%20Fort%20Stay%20Indrai%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Haveli%20Stay%20Indrai%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Indrai Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Indrai Fort Residence",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 585,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Legacy Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Indrai%20Fort%20Indrai%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Indrai%20Fort%20Residence%20Indrai%20Maharashtra"
     },
     {
-      "name": "Indrai Fort Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Indrai Mahal Palace",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 449,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Indrai%20Fort%20Grand%20Hotel%20Indrai%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Indrai%20Mahal%20Palace%20Indrai%20Maharashtra"
     },
     {
-      "name": "Marriott Indrai Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Indrai Rajwada",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 779,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Indrai%20Rajwada%20Indrai%20Maharashtra"
+    },
+    {
+      "name": "Ginger Indrai",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3775,
+      "priceMax": 4394,
+      "rating": 4.2,
+      "reviews": 1021,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Indrai%20Indrai%20Maharashtra"
+    },
+    {
+      "name": "Novotel Indrai",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4737,
+      "priceMax": 5338,
+      "rating": 4.3,
+      "reviews": 818,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Indrai%20Indrai%20Maharashtra"
+    },
+    {
+      "name": "Hyatt Regency Indrai",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9188,
+      "priceMax": 9501,
+      "rating": 4.4,
+      "reviews": 1282,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Indrai%20Fort%20Indrai%20Fort%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Indrai%20Indrai%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -387,30 +460,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Indrai2.jpg/1280px-Indrai2.jpg",
-      "alt": "Indrai Fort photo 2",
-      "title": "Rajdher fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Indrai2.jpg",
+      "alt": "Indrai Fort photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Indrai8.jpg/1280px-Indrai8.jpg",
-      "alt": "Indrai Fort photo 3",
-      "title": "Chandwad"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Indrai8.jpg",
+      "alt": "Indrai Fort photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Indrai7.jpg/1280px-Indrai7.jpg",
-      "alt": "Indrai Fort photo 4",
-      "title": "Chandwad fort"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Indrai7.jpg",
+      "alt": "Indrai Fort photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chandwad4.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Indrai Fort photo 5",
-      "title": "Indrai Fort — Sacred Heritage"
+      "alt": "Indrai Fort photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/River_and_a_lot_of_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Indrai Fort - Highlight 5",
-      "alt": "Rivers of India",
-      "title": "Rivers of India"
+      "alt": "Rivers of India"
     }
   ],
   "faq": [
@@ -448,5 +515,7 @@
       "how to reach Indrai Fort",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

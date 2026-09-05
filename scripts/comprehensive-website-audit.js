@@ -15,7 +15,7 @@ const searchIndex = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/sea
 console.log('📦 1. CATALOG & DATA INTEGRITY:');
 console.log(`   - Destination Canonical JSON Files: ${destFiles.length}`);
 console.log(`   - Master index.json Items:         ${indexData.destinations.length}`);
-console.log(`   - AI Search Index Items:           ${searchIndex.length}`);
+console.log(`   - AI Search Index Items:           ${searchIndex.entries ? searchIndex.entries.length : searchIndex.length}`);
 console.log(`   - Total States/UTs Covered:        ${indexData.meta.states.length}`);
 console.log(`   - Destination Types Defined:       ${indexData.meta.types.length}`);
 

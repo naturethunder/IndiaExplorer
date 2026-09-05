@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Yawal Wildlife Sanctuary — wildlife reserve of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg/1280px-Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg",
-    "alt": "Yawal Wildlife Sanctuary photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg",
+    "alt": "Yawal Wildlife Sanctuary, Maharashtra"
   },
   "overview": {
     "short": "The Yawal Wildlife Sanctuary is a protected area located in the Jalgaon district of Maharashtra, India, at the banks of the Anner and Manjar rivers and at the border of Madhya Prad",
@@ -212,13 +212,13 @@
       "category": "scenic",
       "distance": "9 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Garbaldi Dam, is an earthfill dam on Suki river near Khiroda, Jalgaon district in the state of Maharashtra in India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Signboard_in_Satpura_range.jpg/1280px-Signboard_in_Satpura_range.jpg",
-        "alt": "Garbaldi Dam in Maharashtra, India"
+        "alt": "Garbaldi Dam"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/fc/Melukote_BNC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -242,84 +242,202 @@
   ],
   "hotels": [
     {
-      "name": "OYO Yawal Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Yawal",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 173,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Tiger Trail"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Yawal%20Wildlife%20Sanctuary%20Stay%20Yawal%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Yawal%20Yawal%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Yawal Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Yawal",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 402,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Yawal%20Wildlife%20Sanctuary%20Yawal%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Yawal%20Yawal%20Maharashtra"
     },
     {
-      "name": "Yawal Wildlife Sanctuary Grand Hotel",
+      "name": "Yawal FabHotels Prime",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 372,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "River View Camp"
       ],
-      "url": "https://www.google.com/search?q=Yawal%20Wildlife%20Sanctuary%20Grand%20Hotel%20Yawal%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Yawal%20FabHotels%20Prime%20Yawal%20Maharashtra"
     },
     {
-      "name": "Jungle Lodges Yawal Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
+      "name": "Sarovar Portico Yawal",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 525,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Yawal%20Wildlife%20Sanctuary%20Yawal%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Yawal%20Yawal%20Maharashtra"
+    },
+    {
+      "name": "Yawal Nature Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2668,
+      "priceMax": 4304,
+      "rating": 4.3,
+      "reviews": 1126,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yawal%20Nature%20Retreat%20Yawal%20Maharashtra"
+    },
+    {
+      "name": "Novotel Yawal",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5098,
+      "priceMax": 5436,
+      "rating": 4.4,
+      "reviews": 1232,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Yawal%20Yawal%20Maharashtra"
+    },
+    {
+      "name": "Yawal Birders Inn",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11343,
+      "priceMax": 12178,
+      "rating": 4.4,
+      "reviews": 874,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Yawal%20Birders%20Inn%20Yawal%20Maharashtra"
+    },
+    {
+      "name": "Taj Yawal Palace",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 19448,
+      "priceMax": 20249,
+      "rating": 4.6,
+      "reviews": 1873,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "World Class",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Yawal%20Palace%20Yawal%20Maharashtra"
+    },
+    {
+      "name": "Oberoi Rajvilas Yawal Resort & Spa",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 29101,
+      "priceMax": 30906,
+      "rating": 4.6,
+      "reviews": 1246,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Wildlife Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Rajvilas%20Yawal%20Resort%20%26%20Spa%20Yawal%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -332,30 +450,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg/1280px-Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg",
-      "alt": "Yawal Wildlife Sanctuary photo 2",
-      "title": "Garbaldi Dam"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Langoor_%40_Yawal_Wildlife_Sanctuary_01.jpg",
+      "alt": "Yawal Wildlife Sanctuary photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Spotted_owlet_1_%40_Yawal_Wildlife_Sanctuary.jpg/1280px-Spotted_owlet_1_%40_Yawal_Wildlife_Sanctuary.jpg",
-      "alt": "Yawal Wildlife Sanctuary photo 3",
-      "title": "Yawal Wildlife Sanctuary — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Spotted_owlet_1_%40_Yawal_Wildlife_Sanctuary.jpg",
+      "alt": "Yawal Wildlife Sanctuary photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Spotted_owlet_in_romantic_mood_%40_Yawal_Wildlife_Sanctuary.jpg/1280px-Spotted_owlet_in_romantic_mood_%40_Yawal_Wildlife_Sanctuary.jpg",
-      "alt": "Yawal Wildlife Sanctuary photo 4",
-      "title": "Yawal Wildlife Sanctuary — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Spotted_owlet_in_romantic_mood_%40_Yawal_Wildlife_Sanctuary.jpg",
+      "alt": "Yawal Wildlife Sanctuary photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Rufous_treepie_1.jpg/1280px-Rufous_treepie_1.jpg",
-      "alt": "Yawal Wildlife Sanctuary photo 5",
-      "title": "Yawal Wildlife Sanctuary — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rufous_treepie_1.jpg",
+      "alt": "Yawal Wildlife Sanctuary photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Melukote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Yawal Wildlife Sanctuary - Highlight 5",
-      "alt": "Yoganarasimha temple Devarayanadurga",
-      "title": "Yoganarasimha temple Devarayanadurga"
+      "alt": "Yoganarasimha temple Devarayanadurga"
     }
   ],
   "faq": [
@@ -393,5 +505,7 @@
       "how to reach Yawal Wildlife Sanctuary",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

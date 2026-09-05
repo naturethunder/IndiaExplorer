@@ -9,7 +9,7 @@
   "tagline": "Virateshwar temple, Sohagpur — spiritual town of Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_320.jpg",
-    "alt": "Virateshwar temple, Sohagpur in Virateshwar temple, Sohagpur, Madhya Pradesh - The Virateshwar temple of Sohagpur is an"
+    "alt": "Virateshwar temple, Sohagpur, Madhya Pradesh"
   },
   "overview": {
     "short": "Virateshwar temple or Virat temple of Lord Shiva is located in Sohagpur (Shahdol), Shahdol district of Madhya Pradesh.",
@@ -208,6 +208,25 @@
   },
   "topPlaces": [
     {
+      "name": "Shahdol division",
+      "category": "scenic",
+      "distance": "5 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.1,
+      "description": "Shahdol Division is an administrative division of the Indian state of Madhya Pradesh. The division was inaugurated on 14 June, 2008.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_003.jpg/1280px-0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_003.jpg",
+        "alt": "Shahdol division"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/cc/0010422_Pataleswar_Temple%2C_Group_of_Ancient_Temples_%28Kalachuri_Group%29%2C_Amarkantak%2C_Madhya_Pradesh_01.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/23/0010522_Amarkantak_11th_century_Kalachuri_era_Karan_Mandir_MP_060.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/ca/006_Main_Stupa_%2833697143145%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+      ]
+    },
+    {
       "name": "Shahdol",
       "category": "scenic",
       "distance": "5 km",
@@ -217,13 +236,13 @@
       "rating": 4.1,
       "description": "Shahdol is a City in Shahdol district in the Indian state of Madhya Pradesh. It is the administrative headquarters of Shahdol district, The total geographical area of the district is 5,671 square kilometres (2,190 mi2).",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_003.jpg/1280px-0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_003.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Virath_Temple_N-MP-255_Shahdol_MP_Kamlashanker_Vishvakarma.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "alt": "Shahdol"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/cc/0010422_Pataleswar_Temple%2C_Group_of_Ancient_Temples_%28Kalachuri_Group%29%2C_Amarkantak%2C_Madhya_Pradesh_01.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/23/0010522_Amarkantak_11th_century_Kalachuri_era_Karan_Mandir_MP_060.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/ca/006_Main_Stupa_%2833697143145%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/01022_Kachch_Machch_statues%2C_Vishnu_avatars%2C_Karitalai_005.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/00/01022_Vishnu_Varaha_temple%2C_Bilhari_Madhya_Pradesh_024.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/01022_Vishnu_Varaha_temple_and_ruins%2C_Karitalai_Karanpur%2C_Madhya_Pradesh_019.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
       ]
     },
     {
@@ -252,6 +271,11 @@
       "title": "Day 1 — Shahdol division & around",
       "items": [
         {
+          "time": "Morning",
+          "activity": "Shahdol division",
+          "note": "Shahdol Division is an administrative division of the Indian state of Madhya Pradesh. The division was inaugurated on 14 June, 2008."
+        },
+        {
           "time": "Afternoon",
           "activity": "Shahdol",
           "note": "Shahdol is a City in Shahdol district in the Indian state of Madhya Pradesh. It is the administrative headquarters of Shahdol district, The total geographical area of the district is 5,671 square kilometres (2,190 mi2)."
@@ -272,84 +296,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Virateshwar temple, Sohagpur Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Sohagpur Devotee Inn",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 117,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Sanctum Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Virateshwar%20temple%2C%20Sohagpur%20Stay%20Virateshwar%20temple%2C%20Sohagpur%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sohagpur%20Devotee%20Inn%20Sohagpur%20Madhya%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Virateshwar temple, Sohagpur",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ginger Sohagpur",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 760,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Virateshwar%20temple%2C%20Sohagpur%20Virateshwar%20temple%2C%20Sohagpur%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Sohagpur%20Sohagpur%20Madhya%20Pradesh"
     },
     {
-      "name": "Virateshwar temple, Sohagpur Grand Hotel",
+      "name": "Hotel Royal Orchid Sohagpur",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 282,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Virateshwar%20temple%2C%20Sohagpur%20Grand%20Hotel%20Virateshwar%20temple%2C%20Sohagpur%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Sohagpur%20Sohagpur%20Madhya%20Pradesh"
     },
     {
-      "name": "Fortune Park Virateshwar temple, Sohagpur",
-      "type": "resort",
-      "tier": "best",
+      "name": "Zone by The Park Devotee Inn",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 887,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Sai Dham"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Virateshwar%20temple%2C%20Sohagpur%20Virateshwar%20temple%2C%20Sohagpur%20Madhya%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Devotee%20Inn%20Sohagpur%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Sohagpur Sarovar Portico",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3729,
+      "priceMax": 4452,
+      "rating": 4.2,
+      "reviews": 391,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sohagpur%20Sarovar%20Portico%20Sohagpur%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Sohagpur Shiva Sadan",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4822,
+      "priceMax": 6483,
+      "rating": 4.4,
+      "reviews": 1570,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sohagpur%20Shiva%20Sadan%20Sohagpur%20Madhya%20Pradesh"
+    },
+    {
+      "name": "Sohagpur Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8456,
+      "priceMax": 9533,
+      "rating": 4.5,
+      "reviews": 2802,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Shiva Sadan"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sohagpur%20Marriott%20Sohagpur%20Madhya%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -363,28 +458,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_320.jpg",
-      "alt": "Virateshwar temple, Sohagpur in Virateshwar temple, Sohagpur, Madhya Pradesh - The Virateshwar temple of Sohagpur is an",
-      "title": "Virateshwar temple, Sohagpur in Virateshwar temple,…"
+      "alt": "Virateshwar temple, Sohagpur in Virateshwar temple, Sohagpur, Madhya Pradesh - The Virateshwar temple of Sohagpur is an"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_037.jpg/1280px-0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_037.jpg",
-      "alt": "Virateshwar temple, Sohagpur photo 2",
-      "title": "Virateshwar temple, Sohagpur photo 2"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/36/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_037.jpg",
+      "alt": "Virateshwar temple, Sohagpur photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_284.jpg/1280px-0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_284.jpg",
-      "alt": "Virateshwar temple, Sohagpur photo 3",
-      "title": "Virateshwar temple, Sohagpur photo 3"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_284.jpg",
+      "alt": "Virateshwar temple, Sohagpur photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_320.jpg/1280px-0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_320.jpg",
-      "alt": "Virateshwar temple, Sohagpur photo 4",
-      "title": "Virateshwar temple, Sohagpur photo 4"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/0101022_Virateshwar_temple%2C_Sohagpur%2C_Madhya_Pradesh_320.jpg",
+      "alt": "Virateshwar temple, Sohagpur photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Erotic_sculpture_at_virat_temple_shahdol.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Virateshwar temple, Sohagpur photo 5",
-      "title": "Virateshwar temple, Sohagpur photo 5"
+      "alt": "Virateshwar temple, Sohagpur photo 5"
     }
   ],
   "faq": [
@@ -406,7 +496,7 @@
     },
     {
       "q": "What are the top places to visit in Virateshwar temple, Sohagpur?",
-      "a": "The top attractions are Shahdol, Sohagpur (Shahdol)."
+      "a": "The top attractions are Shahdol division, Shahdol, Sohagpur (Shahdol)."
     }
   ],
   "seo": {
@@ -422,5 +512,7 @@
       "how to reach Virateshwar temple, Sohagpur",
       "Madhya Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

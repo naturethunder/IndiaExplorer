@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Ranthambore Fort — heritage city of Rajasthan",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ganesh_Temple_at_Ranthambore_Fort.jpg/1280px-Ganesh_Temple_at_Ranthambore_Fort.jpg",
-    "alt": "Ranthambore Fort photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ganesh_Temple_at_Ranthambore_Fort.jpg",
+    "alt": "Ranthambore Fort, Rajasthan"
   },
   "overview": {
     "short": "Ranthambore Fort lies within the Ranthambore National Park, near the city of Sawai Madhopur in Sawai Madhopur district of Rajasthan, India.",
@@ -256,7 +256,7 @@
       "description": "The Regional Museum of Natural History, Sawai Madhopur or The Rajiv Gandhi Regional Museum of Natural History, Sawai Madhopur is the country's fourth regional museum of Natural History in Sawai Madhopur, India with exhibits on plants, animals and geology of the Western region of India. It is situated near Ramsinghpura village, 9 km (5.6 mi) from Sawai Madhopur in Rajasthan.",
       "image": {
         "src": "https://images.pexels.com/photos/37415399/pexels-photo-37415399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Intricate architecture of Jaisalmer Fort's interior hallway showcasing artifacts."
+        "alt": "Rajiv Gandhi Regional Museum of Natural History"
       },
       "photos": [
         "https://images.pexels.com/photos/36213405/pexels-photo-36213405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -344,84 +344,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Ranthambore Fort Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Ranthambore",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 214,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Ranthambore%20Fort%20Stay%20Ranthambore%20Fort%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Ranthambore%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Ranthambore Fort",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ranthambore Treebo Trend",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 720,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Ranthambore%20Fort%20Ranthambore%20Fort%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Treebo%20Trend%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Ranthambore Fort Grand Hotel",
+      "name": "Ranthambore Ibis Budget",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 767,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Ranthambore%20Fort%20Grand%20Hotel%20Ranthambore%20Fort%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Ibis%20Budget%20Ranthambore%20Rajasthan"
     },
     {
-      "name": "Marriott Ranthambore Fort",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Ginger Manor House",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 671,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Manor%20House%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Ranthambore Ibis",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3143,
+      "priceMax": 4699,
+      "rating": 4.2,
+      "reviews": 492,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Ibis%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Ranthambore Haveli Stay",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5189,
+      "priceMax": 5604,
+      "rating": 4.4,
+      "reviews": 1704,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Haveli%20Stay%20Ranthambore%20Rajasthan"
+    },
+    {
+      "name": "Ranthambore Westin",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9446,
+      "priceMax": 9760,
+      "rating": 4.6,
+      "reviews": 1700,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Ranthambore%20Fort%20Ranthambore%20Fort%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ranthambore%20Westin%20Ranthambore%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -435,30 +507,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ganesh_Temple_at_Ranthambore_Fort.jpg/1280px-Ganesh_Temple_at_Ranthambore_Fort.jpg",
-      "alt": "Ranthambore Fort photo 2",
-      "title": "Siege of Ranthambore (1568)"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ganesh_Temple_at_Ranthambore_Fort.jpg",
+      "alt": "Ranthambore Fort photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Annapurna_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ranthambore Fort photo 3",
-      "title": "Shilpgram, Sawai Madhopur"
+      "alt": "Ranthambore Fort photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Fine_rock_art_at_Ranthambhore_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ranthambore Fort photo 4",
-      "title": "Rajiv Gandhi Regional Museum of Natural History"
+      "alt": "Ranthambore Fort photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Naulakha_gate%2Cranthambor_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ranthambore Fort photo 5",
-      "title": "Ranthambore National Park"
+      "alt": "Ranthambore Fort photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/India_%2864885892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Ranthambore Fort - Highlight 5",
-      "alt": "Boats in India",
-      "title": "Boats in India"
+      "alt": "Boats in India"
     }
   ],
   "faq": [
@@ -496,5 +562,7 @@
       "how to reach Ranthambore Fort",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

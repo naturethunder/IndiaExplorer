@@ -26,7 +26,7 @@
     ],
     "rating": 4.9,
     "reviewCount": 1680,
-    "minPrice": 2500,
+    "minPrice": 800,
     "distanceFromDelhi": 1080,
     "about": "Hanle is a serene high-altitude village at 4,500m on the Changthang plateau of Ladakh. Home to India's 1st Dark Sky Reserve, it features world-class stargazing, astrophotography, the 17th-century Hanle Gompa, and wild Tibetan kiangs."
   },
@@ -442,23 +442,44 @@
   ],
   "hotels": [
     {
-      "name": "Scientists Hostel",
-      "type": "homestay",
+      "name": "Hanle Tourist Guest House",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 2500,
-      "priceMax": 4500,
-      "rating": 4.8,
-      "reviews": 190,
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 140,
       "amenities": [
-        "Telescope Stargazing",
-        "Home Cooked Meals",
-        "Solar Heating"
+        "Clean Rooms",
+        "Hot Water",
+        "Free Parking",
+        "Travel Assistance"
       ],
       "tags": [
-        "Stargazing",
-        "Local Homestay"
+        "Budget Friendly",
+        "Convenient"
       ],
-      "url": "https://www.google.com/search?q=Scientists%20Hostel%20Hanle%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hanle%20Tourist%20Guest%20House%20Ladakh"
+    },
+    {
+      "name": "Hanle Heritage Residency",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.3,
+      "reviews": 210,
+      "amenities": [
+        "AC Rooms",
+        "Multi-Cuisine Dining",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Comfortable"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hanle%20Heritage%20Residency%20Ladakh"
     }
   ],
   "gallery": [

@@ -24,7 +24,7 @@
     "altitude": 171,
     "rating": 4.9,
     "reviewCount": 48520,
-    "minPrice": 800,
+    "minPrice": 650,
     "distanceFromDelhi": 210,
     "about": "The Taj Mahal is universally celebrated as the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light and shadow; such as arches and domes further increases the aesthetic aspect. The relief carving in marble and inlay with precious and semi-precious stones make it a monument beyond compare."
   },
@@ -298,89 +298,104 @@
   ],
   "hotels": [
     {
-      "name": "OYO Taj Mahal View Budget Stay",
-      "type": "oyo",
-      "tier": "budget",
-      "priceMin": 800,
-      "priceMax": 1800,
-      "rating": 4.2,
-      "reviews": 1420,
+      "name": "Joey's Hostel Agra (Rooftop Taj View)",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 650,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 950,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Rooftop Cafe",
-        "Luggage Storage"
+        "Direct Taj View Rooftop",
+        "AC Dorms",
+        "Cafe",
+        "Walking Tours"
       ],
       "tags": [
-        "OYO Verified",
-        "Budget Choice",
-        "Near East Gate"
+        "Backpacker Hub",
+        "Taj View"
       ],
-      "url": "https://www.google.com/search?q=OYO+hotel+near+Taj+Mahal+Agra+hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Joey's%20Hostel%20Agra%20(Rooftop%20Taj%20View)%20Agra%20Uttar%20Pradesh"
     },
     {
-      "name": "Airbnb: Heritage Homestay with Taj View Rooftop",
-      "type": "airbnb apartment",
+      "name": "Hotel Taj Resorts (East Gate)",
+      "type": "hotel",
       "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4500,
-      "rating": 4.8,
-      "reviews": 430,
+      "priceMin": 2400,
+      "priceMax": 4200,
+      "rating": 4.3,
+      "reviews": 1400,
       "amenities": [
-        "Rooftop Taj View",
-        "Air Conditioning",
-        "Home-Cooked Breakfast",
-        "WiFi"
+        "Rooftop Pool with Taj View",
+        "Near Taj East Gate",
+        "Restaurant",
+        "Free WiFi"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Taj View",
-        "Clean & Cozy"
+        "Walking to Taj",
+        "Rooftop Pool"
       ],
-      "url": "https://www.google.com/search?q=Airbnb+homestay+near+Taj+Mahal+Agra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Taj%20Resorts%20(East%20Gate)%20Agra%20Uttar%20Pradesh"
     },
     {
-      "name": "Tajview Agra - IHCL SeleQtions / Grand Hotel",
+      "name": "Courtyard by Marriott Agra",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5500,
-      "priceMax": 9500,
-      "rating": 4.6,
-      "reviews": 3280,
+      "priceMin": 4500,
+      "priceMax": 7500,
+      "rating": 4.5,
+      "reviews": 2100,
       "amenities": [
-        "Swimming Pool",
-        "Rooftop Lounge",
-        "Fine Dining",
-        "Spa & Fitness"
+        "Outdoor Pool",
+        "Spa",
+        "MoMo Cafe",
+        "Fitness Centre"
       ],
       "tags": [
-        "IHCL SeleQtions",
-        "Taj Facing",
-        "Premium"
+        "Marriott Comfort",
+        "Fatehabad Road"
       ],
-      "url": "https://www.google.com/search?q=Tajview+Agra+IHCL+SeleQtions+hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Agra%20Agra%20Uttar%20Pradesh"
     },
     {
-      "name": "The Oberoi Amarvilas / ITC Mughal Luxury Resort",
+      "name": "ITC Mughal, a Luxury Collection Resort & Spa",
       "type": "resort",
-      "tier": "luxury",
-      "priceMin": 28000,
-      "priceMax": 65000,
-      "rating": 4.9,
-      "reviews": 4920,
+      "tier": "best",
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.7,
+      "reviews": 3400,
       "amenities": [
-        "Unobstructed Taj Views from Every Room",
-        "Private Terraces",
-        "Royal Spa",
-        "Butler Service",
-        "Infinity Pool"
+        "Kaya Kalp Royal Spa",
+        "Peshawri Dining",
+        "35 Acres Mughal Lawns",
+        "Pool"
       ],
       "tags": [
-        "World Luxury Award",
-        "Iconic Luxury",
-        "600m from Taj"
+        "Aga Khan Award Winner",
+        "Peshawri Cuisine"
       ],
-      "url": "https://www.google.com/search?q=The+Oberoi+Amarvilas+Agra+luxury+hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Mughal%2C%20a%20Luxury%20Collection%20Resort%20%26%20Spa%20Agra%20Uttar%20Pradesh"
+    },
+    {
+      "name": "The Oberoi Amarvilas, Agra",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 35000,
+      "priceMax": 75000,
+      "rating": 4.9,
+      "reviews": 2800,
+      "amenities": [
+        "Unobstructed Taj Mahal Views from Every Room",
+        "Private Golf Buggy to Taj",
+        "Tiered Pool",
+        "Oberoi Spa"
+      ],
+      "tags": [
+        "World’s Best Taj View",
+        "Ultra Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Amarvilas%2C%20Agra%20Agra%20Uttar%20Pradesh"
     }
   ],
   "restaurants": [
@@ -478,5 +493,7 @@
       "best time to visit Taj Mahal",
       "Agra tourism Uttar Pradesh"
     ]
-  }
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 5
 }

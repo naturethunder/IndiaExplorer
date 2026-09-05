@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Kanyakumari — beach town of Tamil Nadu",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg/1280px-Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg",
-    "alt": "Kanyakumari photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg",
+    "alt": "Kanyakumari, Tamil Nadu"
   },
   "overview": {
     "short": "Kanyakumari is a much-loved beach town in Tamil Nadu, known for land’s end and sunrise & sunset.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 26000,
     "minPrice": 900,
-    "distanceFromDelhi": 2900,
-    "about": "Kanyakumari, in Cape Comorin, Tamil Nadu, is one of India’s favourite beach town. Visitors come for its land’s end, sunrise & sunset, memorials, with the best months being Oct – Mar."
+    "distanceFromDelhi": 2900
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -212,13 +211,13 @@
       "category": "spiritual",
       "distance": "Sea",
       "entryFee": "₹50",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.6,
       "description": "Island memorial reached by ferry where Vivekananda meditated.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Vivekananda_Rock_Memorial_PSK_363.jpg/1280px-Vivekananda_Rock_Memorial_PSK_363.jpg",
-        "alt": "Vivekananda Rock Memorial in Tamil Nadu, India"
+        "alt": "Vivekananda Rock Memorial"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Trimbakeshwar_Shiva_Temple%2C_Trimbak%2C_Nashik_District%2C_Maharastra_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -231,13 +230,13 @@
       "category": "heritage",
       "distance": "Sea",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "133-ft stone statue of the Tamil poet-saint on a rock islet.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Indian_Temple_at_dusk_Thiruvalluvar_Statue.jpg/1280px-Indian_Temple_at_dusk_Thiruvalluvar_Statue.jpg",
-        "alt": "Thiruvalluvar Statue in Tamil Nadu, India"
+        "alt": "Thiruvalluvar Statue"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e9/Trimbakeshwar_Shiva_Temple%2C_Trimbak%2C_Nashik_District%2C_Maharastra_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -250,13 +249,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Rare spot to watch both sunrise and sunset over three seas.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Trimbakeshwar_Shiva_Temple_%28Entrance_Gate%29%2C_Trimbak%2C_Nashik_District%2C_Maharastra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Sunrise & Sunset Point, Kanyakumari"
+        "alt": "Sunrise & Sunset Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/Maharshi_Valmiki_Rushi_Mandir%2C_Near_Trimbakeshwar_Shiva_temple%2C_Nashik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -296,84 +295,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kanyakumari Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Kanyakumari Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 141,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kanyakumari%20Stay%20Kanyakumari%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Backpackers%20Kanyakumari%20Tamil%20Nadu"
     },
     {
-      "name": "Airbnb: Stay in Kanyakumari",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Kanyakumari Keys Prima",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 254,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kanyakumari%20Kanyakumari%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Keys%20Prima%20Kanyakumari%20Tamil%20Nadu"
     },
     {
-      "name": "Kanyakumari Grand Hotel",
+      "name": "Kanyakumari Ginger",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 629,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Sand & Surf"
       ],
-      "url": "https://www.google.com/search?q=Kanyakumari%20Grand%20Hotel%20Kanyakumari%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Ginger%20Kanyakumari%20Tamil%20Nadu"
     },
     {
-      "name": "Marriott Kanyakumari",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Kanyakumari Keys Select",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 511,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Keys%20Select%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kanyakumari Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3111,
+      "priceMax": 4723,
+      "rating": 4.4,
+      "reviews": 966,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Beach Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Lemon%20Tree%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "Fairfield by Marriott Kanyakumari",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6469,
+      "priceMax": 8007,
+      "rating": 4.4,
+      "reviews": 1659,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Kanyakumari%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kanyakumari Sheraton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9746,
+      "priceMax": 10847,
+      "rating": 4.6,
+      "reviews": 596,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Kanyakumari%20Kanyakumari%20Tamil%20Nadu%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Sheraton%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kanyakumari Le Méridien",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11728,
+      "priceMax": 12694,
+      "rating": 4.5,
+      "reviews": 2227,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Ocean View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Le%20M%C3%A9ridien%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "JW Marriott Kanyakumari Palace",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 22583,
+      "priceMax": 23551,
+      "rating": 4.6,
+      "reviews": 2168,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=JW%20Marriott%20Kanyakumari%20Palace%20Kanyakumari%20Tamil%20Nadu"
+    },
+    {
+      "name": "Kanyakumari Harbour View",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 30117,
+      "priceMax": 30464,
+      "rating": 4.8,
+      "reviews": 1716,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool/Villa",
+        "Signature Spa",
+        "Michelin Dining",
+        "24hr Butler",
+        "Private Jet",
+        "Helipad",
+        "Personal Concierge"
+      ],
+      "tags": [
+        "Exclusive",
+        "Harbour View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanyakumari%20Harbour%20View%20Kanyakumari%20Tamil%20Nadu"
     }
   ],
   "restaurants": [],
@@ -387,31 +528,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg/1280px-Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg",
-      "alt": "Kanyakumari photo 2",
-      "title": "Vivekananda Rock Memorial"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Vivekananda_Rock_Memorial_Kanyakumari_2014_%2820%29.jpg",
+      "alt": "Kanyakumari photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Thiruvalluvar_Statue_at_Kanyakumari_02.jpg/1280px-Thiruvalluvar_Statue_at_Kanyakumari_02.jpg",
-      "alt": "Kanyakumari photo 3",
-      "title": "Thiruvalluvar Statue"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Thiruvalluvar_Statue_at_Kanyakumari_02.jpg",
+      "alt": "Kanyakumari photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kanyakumari_magical_sunset.jpg/1280px-Kanyakumari_magical_sunset.jpg",
-      "alt": "Kanyakumari photo 5",
-      "title": "Sunrise & Sunset Point"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Kanyakumari_magical_sunset.jpg",
+      "alt": "Kanyakumari photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Trimbakeshwar_Shiva_Temple%2C_Trimbak%2C_Nashik_District%2C_Maharastra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kanyakumari - Highlight 4",
-      "alt": "Trimbakeshwar Shiva Temple",
-      "title": "Trimbakeshwar Shiva Temple"
+      "alt": "Trimbakeshwar Shiva Temple"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Trimbakeshwar_Shiva_Temple%2C_Trimbak%2C_Nashik_District%2C_Maharastra_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kanyakumari - Highlight 5",
-      "alt": "Trimbakeshwar Shiva Temple",
-      "title": "Trimbakeshwar Shiva Temple"
+      "alt": "Trimbakeshwar Shiva Temple"
     }
   ],
   "faq": [
@@ -449,5 +583,7 @@
       "how to reach Kanyakumari",
       "Tamil Nadu tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

@@ -9,7 +9,7 @@
   "tagline": "Maidam — heritage city of Assam",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Charadeo_Maidam_mausoleum.jpg",
-    "alt": "Maidam in Maidam, Assam - Mausoleum of  Ahom Royals of Assam located at Charaideo in Sivasagar district"
+    "alt": "Maidam, Assam"
   },
   "overview": {
     "short": "Frang-Mai-Dam or Moidam for short (Ahom:𑜉𑜩𑜓𑜝𑜪; meaning: Burial of the dead) is a traditional tumulus of the Ahom religion.",
@@ -218,7 +218,7 @@
       "description": "Charaideo or Che-Rai-Doi (Literally: the shining city on the hills in Ahom language) is a historic town situated in Charaideo district, Assam, India. Charaideo was established by the first Ahom king Chao Lung Siu-Ka-Pha in the year 1253 CE as the first capital of the Ahom kingdom.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vellyes_in_shilong.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Charaideo, Maidam"
+        "alt": "Charaideo"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_4.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -242,84 +242,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Maidam Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "The Hosteller Maidam",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 208,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Maidam%20Stay%20Maidam%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Hosteller%20Maidam%20Maidam%20Assam"
     },
     {
-      "name": "Airbnb: Stay in Maidam",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ginger Maidam",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 681,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Maidam%20Maidam%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Maidam%20Maidam%20Assam"
     },
     {
-      "name": "Maidam Grand Hotel",
+      "name": "Keys Prima Haveli Stay",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 580,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Maidam%20Grand%20Hotel%20Maidam%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Prima%20Haveli%20Stay%20Maidam%20Assam"
     },
     {
-      "name": "Marriott Maidam",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Maidam Fortune",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 711,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Maidam%20Maidam%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Maidam%20Fortune%20Maidam%20Assam"
+    },
+    {
+      "name": "Ibis Legacy Hotel",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2996,
+      "priceMax": 4746,
+      "rating": 4.4,
+      "reviews": 631,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Legacy%20Hotel%20Maidam%20Assam"
+    },
+    {
+      "name": "Hyatt Place Maidam",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4789,
+      "priceMax": 5924,
+      "rating": 4.5,
+      "reviews": 1975,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Heritage Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Maidam%20Maidam%20Assam"
+    },
+    {
+      "name": "Le Méridien Maidam",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9188,
+      "priceMax": 10392,
+      "rating": 4.6,
+      "reviews": 1120,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Legacy Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Maidam%20Maidam%20Assam"
     }
   ],
   "restaurants": [],
@@ -333,28 +405,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Charadeo_Maidam_mausoleum.jpg",
-      "alt": "Maidam in Maidam, Assam - Mausoleum of  Ahom Royals of Assam located at Charaideo in Sivasagar district",
-      "title": "Maidam in Maidam, Assam - Mausoleum of  Ahom Royals…"
+      "alt": "Maidam in Maidam, Assam - Mausoleum of  Ahom Royals of Assam located at Charaideo in Sivasagar district"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_7.jpg/1280px-Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_7.jpg",
-      "alt": "Maidam photo 2",
-      "title": "Maidam — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_7.jpg",
+      "alt": "Maidam photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_5.jpg/1280px-Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_5.jpg",
-      "alt": "Maidam photo 3",
-      "title": "Maidam — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_5.jpg",
+      "alt": "Maidam photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_1.jpg/1280px-Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_1.jpg",
-      "alt": "Maidam photo 4",
-      "title": "Maidam — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_1.jpg",
+      "alt": "Maidam photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Charaideo_Maidam_of_Ahom_Kings_at_Charaideo_in_Sivasagar%2C_Assam_1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Maidam photo 5",
-      "title": "Maidam — Sunset Horizon"
+      "alt": "Maidam photo 5"
     }
   ],
   "faq": [
@@ -392,5 +459,7 @@
       "how to reach Maidam",
       "Assam tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

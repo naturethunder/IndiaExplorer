@@ -23,7 +23,7 @@
     "altitude": "216 m",
     "rating": 4.8,
     "reviewCount": 125000,
-    "minPrice": 1200,
+    "minPrice": 569,
     "distanceFromDelhi": 0,
     "about": "New Delhi seamlessly integrates monumental state architecture with vibrant cultural enclaves like Connaught Place, serene Mughal-era ecological parks like Sunder Nursery, and world-class craft emporiums on Janpath."
   },
@@ -305,109 +305,156 @@
   ],
   "hotels": [
     {
-      "name": "The Taj Mahal Hotel, New Delhi",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 12000,
-      "priceMax": 24000,
-      "rating": 4.8,
-      "reviews": 4500,
+      "name": "New Delhi OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 569,
+      "priceMax": 1820,
+      "rating": 4.1,
+      "reviews": 134,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
+      ],
+      "tags": [
+        "Value Stay",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=New%20Delhi%20OYO%20New%20Delhi%20Delhi"
+    },
+    {
+      "name": "New Delhi Period Property",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1642,
+      "priceMax": 3055,
+      "rating": 4.3,
+      "reviews": 499,
+      "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=New%20Delhi%20Period%20Property%20New%20Delhi%20Delhi"
+    },
+    {
+      "name": "OYO Townhouse Fort Residence",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1710,
+      "priceMax": 3296,
+      "rating": 4.1,
+      "reviews": 701,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Fort%20Residence%20New%20Delhi%20Delhi"
+    },
+    {
+      "name": "Lemon Tree Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2679,
+      "priceMax": 3066,
+      "rating": 4.4,
+      "reviews": 453,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "House of Ming",
-        "Machan",
-        "Gym",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Iconic Taj",
-        "Lutyens Delhi"
+        "Well Rated",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=The%20Taj%20Mahal%20Hotel%20Mansingh%20Road%20New%20Delhi"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Haveli%20Stay%20New%20Delhi%20Delhi"
     },
     {
-      "name": "The Imperial New Delhi",
-      "type": "heritage hotel",
-      "tier": "luxury",
-      "priceMin": 15000,
-      "priceMax": 30000,
-      "rating": 4.9,
-      "reviews": 3800,
+      "name": "Ibis Period Property",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3287,
+      "priceMax": 3925,
+      "rating": 4.4,
+      "reviews": 685,
       "amenities": [
-        "Art Collection",
-        "Outdoor Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Royal Ballroom",
-        "Fine Dining"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Colonial Luxury",
-        "Connaught Place"
+        "Well Rated",
+        "Rajwada"
       ],
-      "url": "https://www.google.com/search?q=The%20Imperial%20New%20Delhi%20Janpath"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Period%20Property%20New%20Delhi%20Delhi"
     },
     {
-      "name": "ITC Maurya, A Luxury Collection Hotel",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 11000,
-      "priceMax": 22000,
-      "rating": 4.8,
-      "reviews": 5100,
-      "amenities": [
-        "Bukhara Dining",
-        "Dum Pukht",
-        "Pool",
-        "Kaya Kalp Spa",
-        "Gym"
-      ],
-      "tags": [
-        "Legendary Dining",
-        "Diplomatic Enclave"
-      ],
-      "url": "https://www.google.com/search?q=ITC%20Maurya%20Diplomatic%20Enclave%20Delhi"
-    },
-    {
-      "name": "The Claridges New Delhi",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 8500,
-      "priceMax": 16000,
-      "rating": 4.6,
-      "reviews": 2900,
-      "amenities": [
-        "Garden Lawn",
-        "Dhaba Dining",
-        "Pool",
-        "Gym",
-        "WiFi"
-      ],
-      "tags": [
-        "Heritage Charm",
-        "APJ Abdul Kalam Road"
-      ],
-      "url": "https://www.google.com/search?q=The%20Claridges%20New%20Delhi%20hotel"
-    },
-    {
-      "name": "Bloomrooms @ Janpath",
+      "name": "New Delhi DoubleTree by Hilton",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 6000,
+      "priceMin": 5614,
+      "priceMax": 6503,
       "rating": 4.4,
-      "reviews": 1500,
+      "reviews": 1997,
       "amenities": [
-        "Bright Modern Decor",
-        "Cafe",
-        "Free High Speed WiFi",
-        "AC"
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
       ],
       "tags": [
-        "Central Location",
-        "Modern Value"
+        "Top Amenities",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Bloomrooms%20Janpath%20Delhi%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=New%20Delhi%20DoubleTree%20by%20Hilton%20New%20Delhi%20Delhi"
+    },
+    {
+      "name": "Sheraton Heritage Hotel",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8404,
+      "priceMax": 9530,
+      "rating": 4.6,
+      "reviews": 2194,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Heritage%20Hotel%20New%20Delhi%20Delhi"
     }
   ],
   "restaurants": [],
@@ -499,5 +546,7 @@
   "image": {
     "src": "https://images.pexels.com/photos/19927019/pexels-photo-19927019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "alt": "India Gate illuminated under twilight sky, New Delhi"
-  }
+  },
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 7
 }

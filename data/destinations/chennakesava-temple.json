@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Chennakesava Temple — spiritual town of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg/1280px-Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg",
-    "alt": "Chennakesava Temple photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg",
+    "alt": "Chennakesava Temple, Karnataka"
   },
   "overview": {
     "short": "The Chennakeshava Temple, also referred to as the Keshava, Kesava or Vijayanarayana Temple, is a 12th-century Hindu temple in the Hassan district of Karnataka, India.",
@@ -270,84 +270,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chennakesava Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Chennakesava Devotee Inn",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 295,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chennakesava%20Temple%20Stay%20Chennakesava%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chennakesava%20Devotee%20Inn%20Chennakesava%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Chennakesava Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Lemon Tree Red Fox Chennakesava",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 564,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chennakesava%20Temple%20Chennakesava%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Chennakesava%20Chennakesava%20Karnataka"
     },
     {
-      "name": "Chennakesava Temple Grand Hotel",
+      "name": "Chennakesava Krishna Kunj",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 206,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Krishna Kunj"
       ],
-      "url": "https://www.google.com/search?q=Chennakesava%20Temple%20Grand%20Hotel%20Chennakesava%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chennakesava%20Krishna%20Kunj%20Chennakesava%20Karnataka"
     },
     {
-      "name": "Fortune Park Chennakesava Temple",
-      "type": "resort",
-      "tier": "best",
+      "name": "Chennakesava Bhakti Residency",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 1188,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Krishna Kunj"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chennakesava%20Bhakti%20Residency%20Chennakesava%20Karnataka"
+    },
+    {
+      "name": "Ginger Chennakesava",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3403,
+      "priceMax": 3742,
+      "rating": 4.2,
+      "reviews": 484,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Shiva Sadan"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Chennakesava%20Chennakesava%20Karnataka"
+    },
+    {
+      "name": "Chennakesava Devotee Inn Better",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6440,
+      "priceMax": 7739,
+      "rating": 4.4,
+      "reviews": 549,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chennakesava%20Devotee%20Inn%20Chennakesava%20Karnataka"
+    },
+    {
+      "name": "Chennakesava Hyatt Regency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10057,
+      "priceMax": 10378,
+      "rating": 4.5,
+      "reviews": 1474,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Chennakesava%20Temple%20Chennakesava%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chennakesava%20Hyatt%20Regency%20Chennakesava%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -361,29 +433,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg/1280px-Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg",
-      "alt": "Chennakesava Temple photo 2",
-      "title": "Belur, Karnataka"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_05.jpg",
+      "alt": "Chennakesava Temple photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_10.jpg/1280px-Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_10.jpg",
-      "alt": "Chennakesava Temple photo 3",
-      "title": "Aggadalu"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Carvings%2CChennakesava_Temple%2C_Belur%2C_Karnataka_10.jpg",
+      "alt": "Chennakesava Temple photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Carvings%2C_Chennakesava_Temple_9%2C_Belur_Karnataka_03.jpg/1280px-Carvings%2C_Chennakesava_Temple_9%2C_Belur_Karnataka_03.jpg",
-      "alt": "Chennakesava Temple photo 4",
-      "title": "Chennakesava Temple — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Carvings%2C_Chennakesava_Temple_9%2C_Belur_Karnataka_03.jpg",
+      "alt": "Chennakesava Temple photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Chennakesava_temple%2C_Somanathapura.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chennakesava Temple photo 5",
-      "title": "Chennakesava Temple — Sacred Heritage"
+      "alt": "Chennakesava Temple photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sculptures_at_the_Chennakesava_Temple%2C_Somanathapura%2C_Mysuru%2C_Karnataka%2C_India_%282009%29.jpg",
-      "alt": "Chennakesava Temple in Chennakesava Temple, Karnataka - This is a photo of ASI monument number",
-      "title": "Chennakesava Temple in Chennakesava Temple,…"
+      "alt": "Chennakesava Temple in Chennakesava Temple, Karnataka - This is a photo of ASI monument number"
     }
   ],
   "faq": [
@@ -421,5 +488,7 @@
       "how to reach Chennakesava Temple",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

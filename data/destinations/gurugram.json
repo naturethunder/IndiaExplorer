@@ -17,7 +17,7 @@
     "features": [],
     "rating": 4.7,
     "reviewCount": 9800,
-    "minPrice": 2800,
+    "minPrice": 575,
     "distanceFromDelhi": 25
   },
   "bestTime": {
@@ -146,411 +146,156 @@
   ],
   "hotels": [
     {
-      "name": "hotel Anupam palace",
-      "type": "Luxury Palace Hotel",
-      "tier": "",
-      "priceMin": 24500,
-      "priceMax": 24500,
-      "rating": 4.9,
-      "reviews": 320,
+      "name": "Gurugram Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 575,
+      "priceMax": 1137,
+      "rating": 3.8,
+      "reviews": 223,
       "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=hotel%20Anupam%20palace%20Gurugram%20Haryana%20hotel"
+      "tags": [
+        "Budget Friendly",
+        "Court Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurugram%20Backpackers%20Gurugram%20Haryana"
     },
     {
-      "name": "Hotel Arch",
-      "type": "Heritage 5-Star Hotel",
-      "tier": "",
-      "priceMin": 21000,
-      "priceMax": 21000,
-      "rating": 4.8,
-      "reviews": 365,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Hotel%20Arch%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Building 185",
-      "type": "Colonial Heritage Hotel",
-      "tier": "",
-      "priceMin": 18500,
-      "priceMax": 18500,
-      "rating": 4.8,
-      "reviews": 410,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Building%20185%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "บ้านโบว์",
-      "type": "5-Star Luxury Retreat",
-      "tier": "",
-      "priceMin": 19500,
-      "priceMax": 19500,
-      "rating": 4.8,
-      "reviews": 455,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%9A%E0%B8%A7%E0%B9%8C%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Atrio A Boutique Hotel",
-      "type": "Ultra Luxury Hotel",
-      "tier": "",
-      "priceMin": 26000,
-      "priceMax": 26000,
-      "rating": 4.9,
-      "reviews": 500,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Atrio%20A%20Boutique%20Hotel%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Hotel Golf View Suites",
-      "type": "5-Star Resort & Spa",
-      "tier": "",
-      "priceMin": 14500,
-      "priceMax": 14500,
-      "rating": 4.7,
-      "reviews": 545,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Hotel%20Golf%20View%20Suites%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Airport City",
-      "type": "Boutique Heritage Hotel",
-      "tier": "",
-      "priceMin": 13500,
-      "priceMax": 13500,
-      "rating": 4.7,
-      "reviews": 590,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Airport%20City%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Quality inn",
-      "type": "Business & Luxury Hotel",
-      "tier": "",
-      "priceMin": 12000,
-      "priceMax": 12000,
-      "rating": 4.6,
-      "reviews": 635,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Quality%20inn%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Leon Tree Premier II",
-      "type": "5-Star Business Hotel",
-      "tier": "",
-      "priceMin": 9500,
-      "priceMax": 9500,
-      "rating": 4.5,
-      "reviews": 680,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Leon%20Tree%20Premier%20II%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Vista Wood",
-      "type": "Heritage Garden Hotel",
-      "tier": "",
-      "priceMin": 10500,
-      "priceMax": 10500,
-      "rating": 4.6,
-      "reviews": 725,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Vista%20Wood%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "The Leela",
-      "type": "Modern Luxury Hotel",
-      "tier": "",
-      "priceMin": 11000,
-      "priceMax": 11000,
-      "rating": 4.6,
-      "reviews": 770,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=The%20Leela%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Lemon Tree",
-      "type": "Premium Business Hotel",
-      "tier": "",
-      "priceMin": 8800,
-      "priceMax": 8800,
-      "rating": 4.5,
-      "reviews": 815,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Lemon%20Tree%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Treebo FourSight",
-      "type": "Luxury Golf Resort",
-      "tier": "",
-      "priceMin": 15500,
-      "priceMax": 15500,
-      "rating": 4.7,
-      "reviews": 860,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Treebo%20FourSight%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Galgotia's Hotel",
-      "type": "Forest Eco Resort",
-      "tier": "",
-      "priceMin": 16000,
-      "priceMax": 16000,
-      "rating": 4.8,
-      "reviews": 905,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Galgotia's%20Hotel%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "the umbro",
-      "type": "15th Century Fort Palace",
-      "tier": "",
-      "priceMin": 12500,
-      "priceMax": 12500,
-      "rating": 4.8,
-      "reviews": 950,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=the%20umbro%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Kshitij",
-      "type": "Rajasthani Haveli Resort",
-      "tier": "",
-      "priceMin": 11500,
-      "priceMax": 11500,
-      "rating": 4.7,
-      "reviews": 995,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Kshitij%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Vishal Residency Hotel",
-      "type": "Lakeside Organic Farmstay",
-      "tier": "",
-      "priceMin": 6500,
-      "priceMax": 6500,
-      "rating": 4.4,
-      "reviews": 1040,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Vishal%20Residency%20Hotel%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Vatika Grand",
-      "type": "Boutique Business Hotel",
-      "tier": "",
-      "priceMin": 5800,
-      "priceMax": 5800,
-      "rating": 4.4,
-      "reviews": 1085,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Vatika%20Grand%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Hotel Amba Residency",
-      "type": "Comfort Budget Stay",
-      "tier": "",
-      "priceMin": 3200,
-      "priceMax": 3200,
-      "rating": 4.2,
-      "reviews": 1130,
-      "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Hotel%20Amba%20Residency%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Ibis Hotel",
-      "type": "Modern Designer Stay",
-      "tier": "",
-      "priceMin": 4200,
-      "priceMax": 4200,
-      "rating": 4.4,
-      "reviews": 1175,
-      "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
-      ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Ibis%20Hotel%20Gurugram%20Haryana%20hotel"
-    },
-    {
-      "name": "Radisson Blu Plaza Hotel,Delhi Airport",
-      "type": "Executive City Lodge",
-      "tier": "",
-      "priceMin": 2800,
-      "priceMax": 2800,
+      "name": "Gurugram City Hotel",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1403,
+      "priceMax": 2765,
       "rating": 4.3,
-      "reviews": 1220,
+      "reviews": 247,
       "amenities": [
-        "Free High-Speed Wi-Fi",
-        "Swimming Pool",
-        "Luxury Spa",
-        "Fine Dining Restaurant",
-        "24h Room Service",
-        "Valet Parking"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Radisson%20Blu%20Plaza%20Hotel%2CDelhi%20Airport%20Gurugram%20Haryana%20hotel"
+      "tags": [
+        "Popular Pick",
+        "Comfort Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurugram%20City%20Hotel%20Gurugram%20Haryana"
     },
     {
-      "name": "Trident Hotel",
-      "type": "Budget Homestay",
-      "tier": "",
-      "priceMin": 2400,
-      "priceMax": 2400,
-      "rating": 4.2,
-      "reviews": 1265,
+      "name": "FabHotels Prime Gurugram",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1944,
+      "priceMax": 2950,
+      "rating": 4,
+      "reviews": 734,
       "amenities": [
-        "Free Wi-Fi",
-        "Complimentary Breakfast",
-        "Fitness Center",
-        "Conference Rooms",
-        "Airport Shuttle"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
-      "tags": [],
-      "url": "https://www.google.com/search?q=Trident%20Hotel%20Gurugram%20Haryana%20hotel"
+      "tags": [
+        "Good Value",
+        "City Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Gurugram%20Gurugram%20Haryana"
+    },
+    {
+      "name": "Sarovar Portico Gurugram",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2210,
+      "priceMax": 3314,
+      "rating": 4.2,
+      "reviews": 694,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Regency Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Gurugram%20Gurugram%20Haryana"
+    },
+    {
+      "name": "Gurugram Ginger",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2550,
+      "priceMax": 3523,
+      "rating": 4.3,
+      "reviews": 828,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "City Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurugram%20Ginger%20Gurugram%20Haryana"
+    },
+    {
+      "name": "Gurugram Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4542,
+      "priceMax": 6381,
+      "rating": 4.3,
+      "reviews": 805,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Urban Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurugram%20Radisson%20Blu%20Gurugram%20Haryana"
+    },
+    {
+      "name": "Gurugram Hilton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9055,
+      "priceMax": 9691,
+      "rating": 4.5,
+      "reviews": 1475,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Urban Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurugram%20Hilton%20Gurugram%20Haryana"
     }
   ],
   "gallery": [
@@ -597,5 +342,5 @@
     ]
   },
   "hotelSourceTried": true,
-  "hotelsRealSourceCount": 22
+  "hotelsRealSourceCount": 7
 }

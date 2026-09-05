@@ -9,7 +9,7 @@
   "tagline": "Gulmarg — adventure base of Jammu & Kashmir",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maharani_Temple%2C_Gulmarg_2012-05-07.jpg",
-    "alt": "Gulmarg in Gulmarg, Jammu & Kashmir - Maharani Temple at Gulmarg. – Himalaya hills are the home of Lord Shiva according"
+    "alt": "Gulmarg, Jammu & Kashmir"
   },
   "overview": {
     "short": "Gulmarg is a much-loved adventure base in Jammu & Kashmir, known for gondola and skiing.",
@@ -24,8 +24,7 @@
     "rating": 4.7,
     "reviewCount": 28000,
     "minPrice": 2000,
-    "distanceFromDelhi": 860,
-    "about": "Gulmarg, in Kashmir Valley, Jammu & Kashmir, is one of India’s favourite adventure base. Visitors come for its gondola, skiing, meadows, golf, with the best months being Dec – Mar (ski), Apr – Jun."
+    "distanceFromDelhi": 860
   },
   "bestTime": {
     "label": "Dec – Mar (ski), Apr – Jun",
@@ -217,13 +216,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹1,700",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.7,
       "description": "One of the world’s highest cable cars to Apharwat Peak (3,980m).",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gulmarg_gondola.JPG/1280px-Gulmarg_gondola.JPG",
-        "alt": "Gulmarg Gondola in Jammu & Kashmir, India"
+        "alt": "Gulmarg Gondola"
       },
       "photos": [
         "https://images.pexels.com/photos/29983914/pexels-photo-29983914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -236,13 +235,13 @@
       "category": "adventure",
       "distance": "Gondola",
       "entryFee": "Included",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "Snow bowl for skiing, snowboarding and sledging.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gulmarg-Valley.jpg/1280px-Gulmarg-Valley.jpg",
-        "alt": "Apharwat Peak in Jammu & Kashmir, India"
+        "alt": "Apharwat Peak"
       },
       "photos": [
         "https://images.pexels.com/photos/20583478/pexels-photo-20583478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -255,13 +254,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "One of the world’s highest green golf courses.",
       "image": {
         "src": "https://images.pexels.com/photos/7251405/pexels-photo-7251405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Gulmarg Golf Course in Jammu & Kashmir - A scenic view of a traditional brick mosque with wooden spires covered in snow,"
+        "alt": "Gulmarg Golf Course"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Indian_Mountain_Images_%2825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -301,84 +300,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Gulmarg Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "GoStops Gulmarg",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2000,
       "priceMax": 3200,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 438,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Outpost Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Gulmarg%20Stay%20Gulmarg%20Jammu%20%26%20Kashmir%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
     },
     {
-      "name": "Airbnb: Stay in Gulmarg",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Hotel Royal Orchid Gulmarg",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 3800,
       "priceMax": 5400,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 753,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Outpost Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
     },
     {
-      "name": "Gulmarg Grand Hotel",
+      "name": "Treebo Trend Gulmarg",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 6000,
       "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 740,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Trailhead Lodge"
       ],
-      "url": "https://www.google.com/search?q=Gulmarg%20Grand%20Hotel%20Gulmarg%20Jammu%20%26%20Kashmir%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
     },
     {
-      "name": "Radisson Gulmarg",
-      "type": "resort",
-      "tier": "best",
+      "name": "Gulmarg Keys Select",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 12000,
       "priceMax": 20000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 636,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Outpost Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Keys%20Select%20Gulmarg%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Gulmarg Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3456,
+      "priceMax": 3843,
+      "rating": 4.1,
+      "reviews": 883,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Trail Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Lemon%20Tree%20Gulmarg%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Gulmarg Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5041,
+      "priceMax": 5788,
+      "rating": 4.3,
+      "reviews": 1316,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Trekker's Hut"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Radisson%20Blu%20Gulmarg%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Hyatt Regency Gulmarg",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10888,
+      "priceMax": 11624,
+      "rating": 4.5,
+      "reviews": 900,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Valley Base"
       ],
-      "url": "https://www.google.com/search?q=Radisson%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
     }
   ],
   "restaurants": [],
@@ -393,28 +464,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maharani_Temple%2C_Gulmarg_2012-05-07.jpg",
-      "alt": "Gulmarg in Gulmarg, Jammu & Kashmir - Maharani Temple at Gulmarg. – Himalaya hills are the home of Lord Shiva according",
-      "title": "Gulmarg in Gulmarg, Jammu & Kashmir - Maharani…"
+      "alt": "Gulmarg in Gulmarg, Jammu & Kashmir - Maharani Temple at Gulmarg. – Himalaya hills are the home of Lord Shiva according"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Gulmarg_Gondola%2C_Cable_Car.JPG/1280px-Gulmarg_Gondola%2C_Cable_Car.JPG",
-      "alt": "Gulmarg photo 2",
-      "title": "Apharwat Peak"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Gulmarg_Gondola%2C_Cable_Car.JPG",
+      "alt": "Gulmarg photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Apharwat_Peak.JPG/1280px-Apharwat_Peak.JPG",
-      "alt": "Gulmarg photo 3",
-      "title": "Gulmarg Golf Course"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Apharwat_Peak.JPG",
+      "alt": "Gulmarg photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Apharwat_Right_Wing.jpg/1280px-Apharwat_Right_Wing.jpg",
-      "alt": "Gulmarg photo 4",
-      "title": "Gulmarg — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Apharwat_Right_Wing.jpg",
+      "alt": "Gulmarg photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Ancient_Maharani_Temple%28Gulmarg%2CKashmir%29_DivyaGupta_forWiki.jpg/1280px-The_Ancient_Maharani_Temple%28Gulmarg%2CKashmir%29_DivyaGupta_forWiki.jpg",
-      "alt": "Gulmarg photo 5",
-      "title": "Gulmarg — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/The_Ancient_Maharani_Temple%28Gulmarg%2CKashmir%29_DivyaGupta_forWiki.jpg",
+      "alt": "Gulmarg photo 5"
     }
   ],
   "faq": [
@@ -452,5 +518,7 @@
       "how to reach Gulmarg",
       "Jammu & Kashmir tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

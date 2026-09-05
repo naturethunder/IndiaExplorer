@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Mumbai — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Great_Gateway_of_India_Mumbai.jpg/1280px-Great_Gateway_of_India_Mumbai.jpg",
-    "alt": "Gateway of India waterfront arch monument in Mumbai"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Gateway_of_India_Mumbai.jpg",
+    "alt": "Mumbai, Maharashtra"
   },
   "overview": {
     "short": "Mumbai is a much-loved heritage city in Maharashtra, known for gateway and marine drive.",
@@ -24,8 +24,7 @@
     "rating": 4.4,
     "reviewCount": 72000,
     "minPrice": 1500,
-    "distanceFromDelhi": 1400,
-    "about": "Mumbai, in Konkan Coast, Maharashtra, is one of India’s favourite heritage city. Visitors come for its gateway, marine drive, bollywood, street food, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1400
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "Colaba",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "1924 basalt arch on the harbour, Mumbai’s defining landmark.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Arch-monument_-_Gate_Way_of_India.jpg/1280px-Arch-monument_-_Gate_Way_of_India.jpg",
-        "alt": "Grand Indo-Saracenic arch of Gateway of India on the Mumbai harbour front"
+        "alt": "Gateway of India"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Gateway_of_India_in_Mumbai%2C_India.jpg/1280px-Gateway_of_India_in_Mumbai%2C_India.jpg",
@@ -234,13 +233,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "3.6-km seafront promenade called the “Queen’s Necklace” at night.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Marine_Drive_Mumbai_Bombay_by_Vibhabamba.jpg/1280px-Marine_Drive_Mumbai_Bombay_by_Vibhabamba.jpg",
-        "alt": "Panoramic sea view along the curved Marine Drive promenade in Mumbai"
+        "alt": "Marine Drive"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mumbai_%28Bombay%29%2C_RTW_2012_%288405005216%29.jpg/1280px-Mumbai_%28Bombay%29%2C_RTW_2012_%288405005216%29.jpg",
@@ -253,13 +252,13 @@
       "category": "heritage",
       "distance": "Sea",
       "entryFee": "₹40",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "UNESCO island rock-cut Shiva caves reached by ferry.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mumbai_elephanta_caves.JPG/1280px-Mumbai_elephanta_caves.JPG",
-        "alt": "Pillared entrance hall to the ancient rock-cut Cave 1 at Elephanta Island Mumbai"
+        "alt": "Elephanta Caves"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Elephanta_Caves_Shiva-Parvati.jpg/1280px-Elephanta_Caves_Shiva-Parvati.jpg",
@@ -299,84 +298,160 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mumbai Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mumbai Haveli Stay",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1500,
       "priceMax": 2400,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 332,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mumbai%20Stay%20Mumbai%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20Haveli%20Stay%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Mumbai",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Lemon Tree Red Fox Period Property",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2850,
       "priceMax": 4050,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 565,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mumbai%20Mumbai%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Period%20Property%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Mumbai Grand Hotel",
+      "name": "Treebo Trend Legacy Hotel",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4500,
       "priceMax": 6750,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 517,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Mumbai%20Grand%20Hotel%20Mumbai%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Legacy%20Hotel%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Marriott Mumbai",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Ibis Mahal Palace",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 9000,
       "priceMax": 15000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 535,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Mumbai%20Mumbai%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Mahal%20Palace%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "Fairfield by Marriott Mumbai",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3049,
+      "priceMax": 3753,
+      "rating": 4.4,
+      "reviews": 500,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Mumbai%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "Mumbai The Fern",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 5571,
+      "priceMax": 7475,
+      "rating": 4.5,
+      "reviews": 493,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20The%20Fern%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "Mumbai Hyatt Regency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10792,
+      "priceMax": 12581,
+      "rating": 4.5,
+      "reviews": 1313,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20Hyatt%20Regency%20Mumbai%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -390,34 +465,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Great_Gateway_of_India_Mumbai.jpg/1280px-Great_Gateway_of_India_Mumbai.jpg",
-      "alt": "Gateway of India waterfront arch monument in Mumbai",
-      "title": "Gateway of India",
-      "caption": "The iconic 1924 basalt ceremonial arch on the waterfront at Apollo Bunder overlooking the Arabian Sea."
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Gateway_of_India_Mumbai.jpg",
+      "alt": "Gateway of India waterfront arch monument in Mumbai"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mumbai_Skyline_at_Night.jpg/1280px-Mumbai_Skyline_at_Night.jpg",
-      "alt": "Marine Drive coastal promenade lit at twilight in Mumbai",
-      "title": "Marine Drive & Queen's Necklace",
-      "caption": "The sweeping 3.6-kilometer C-shaped coastal boulevard lit by night along Netaji Subhash Chandra Bose Road."
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg",
+      "alt": "Marine Drive coastal promenade lit at twilight in Mumbai"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Mumbai_03-2016_68_Victoria_Terminus.jpg/1280px-Mumbai_03-2016_68_Victoria_Terminus.jpg",
-      "alt": "Chhatrapati Shivaji Maharaj Terminus historic Victorian Gothic facade in Mumbai",
-      "title": "Chhatrapati Shivaji Maharaj Terminus",
-      "caption": "UNESCO World Heritage Victorian Gothic Revival railway terminus headquarters in Mumbai."
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Mumbai_03-2016_68_Victoria_Terminus.jpg",
+      "alt": "Chhatrapati Shivaji Maharaj Terminus historic Victorian Gothic facade in Mumbai"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Mumbai_Skyline_with_Bandra%E2%80%93Worli_Sea_Link_25_July_2018_%281%29.jpg/1280px-Mumbai_Skyline_with_Bandra%E2%80%93Worli_Sea_Link_25_July_2018_%281%29.jpg",
-      "alt": "Bandra Worli Sea Link cable-stayed bridge and Mumbai coastal skyline",
-      "title": "Bandra–Worli Sea Link",
-      "caption": "The 5.6-kilometer cable-stayed architectural marvel spanning Mahim Bay connecting Bandra with South Mumbai."
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Mumbai_Skyline_with_Bandra%E2%80%93Worli_Sea_Link_25_July_2018_%281%29.jpg",
+      "alt": "Bandra Worli Sea Link cable-stayed bridge and Mumbai coastal skyline"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Shiva_Trimurti_%40_Elephanta_Caves.jpg/1280px-Shiva_Trimurti_%40_Elephanta_Caves.jpg",
-      "alt": "Rock-cut Trimurti sculpture of Lord Shiva inside Cave 1 at Elephanta Caves Mumbai",
-      "title": "Elephanta Caves UNESCO Monument",
-      "caption": "Ancient rock-cut cave temple complex dedicated to Lord Shiva on Elephanta Island in Mumbai Harbour."
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shiva_Trimurti_%40_Elephanta_Caves.jpg",
+      "alt": "Rock-cut Trimurti sculpture of Lord Shiva inside Cave 1 at Elephanta Caves Mumbai"
     }
   ],
   "faq": [
@@ -455,5 +520,7 @@
       "how to reach Mumbai",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

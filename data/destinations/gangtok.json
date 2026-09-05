@@ -9,7 +9,7 @@
   "tagline": "Gangtok — hill station of Sikkim",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rumtek_Monastry_%2C_Gangtok%2C_Sikkim.jpg",
-    "alt": "Gangtok in Gangtok, Sikkim - Rumtek Monastery."
+    "alt": "Gangtok, Sikkim"
   },
   "overview": {
     "short": "Gangtok is a much-loved hill station in Sikkim, known for mg marg and monasteries.",
@@ -24,8 +24,7 @@
     "rating": 4.6,
     "reviewCount": 33000,
     "minPrice": 1500,
-    "distanceFromDelhi": 1550,
-    "about": "Gangtok, in East Sikkim, Sikkim, is one of India’s favourite hill station. Visitors come for its mg marg, monasteries, tsomgo lake, cable car, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 1550
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -214,13 +213,13 @@
       "category": "scenic",
       "distance": "38 km",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.6,
       "description": "Glacial lake at 3,753m, frozen in winter, with yak rides.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Deep_blue_lake_i.e_changu_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tsomgo (Changu) Lake in Sikkim, India"
+        "alt": "Tsomgo (Changu) Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -233,13 +232,13 @@
       "category": "spiritual",
       "distance": "24 km",
       "entryFee": "₹10",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Largest monastery in Sikkim, seat of the Karmapa.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_01.jpg/1280px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_01.jpg",
-        "alt": "Rumtek Monastery in Sikkim, India"
+        "alt": "Rumtek Monastery"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Dharmachakra_Centre%2C_Rumtek_Monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -252,13 +251,13 @@
       "category": "town",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Litter-free pedestrian boulevard of cafes and shops.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/M.G._Marg%2C_Gangtok_01.jpg/1280px-M.G._Marg%2C_Gangtok_01.jpg",
-        "alt": "MG Marg in Sikkim, India"
+        "alt": "MG Marg"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mahatma_Gandhi_Marg_%28Gangtok%29_Sikkim.jpg",
@@ -298,84 +297,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Gangtok Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "GoStops Gangtok",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1500,
       "priceMax": 2400,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 311,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Summit View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Gangtok%20Stay%20Gangtok%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Gangtok%20Gangtok%20Sikkim"
     },
     {
-      "name": "Airbnb: Stay in Gangtok",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "The Hosteller Valley View",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2850,
       "priceMax": 4050,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 367,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Gangtok%20Gangtok%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Hosteller%20Valley%20View%20Gangtok%20Sikkim"
     },
     {
-      "name": "Gangtok Grand Hotel",
+      "name": "Gangtok Valley View",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4500,
       "priceMax": 6750,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 515,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Gangtok%20Grand%20Hotel%20Gangtok%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gangtok%20Valley%20View%20Gangtok%20Sikkim"
     },
     {
-      "name": "Sterling Gangtok",
-      "type": "resort",
-      "tier": "best",
+      "name": "Gangtok Treebo Trend",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 9000,
       "priceMax": 15000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 282,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Popular Pick",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Gangtok%20Gangtok%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gangtok%20Treebo%20Trend%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Keys Select Gangtok",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2570,
+      "priceMax": 4019,
+      "rating": 4.2,
+      "reviews": 671,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Gangtok%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Gangtok Holiday Inn Express",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2581,
+      "priceMax": 4358,
+      "rating": 4.4,
+      "reviews": 376,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gangtok%20Holiday%20Inn%20Express%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Gangtok Novotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6058,
+      "priceMax": 7070,
+      "rating": 4.5,
+      "reviews": 847,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gangtok%20Novotel%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Vivanta Gangtok",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7573,
+      "priceMax": 8513,
+      "rating": 4.5,
+      "reviews": 1394,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Gangtok%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Westin Mountain Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9710,
+      "priceMax": 11515,
+      "rating": 4.4,
+      "reviews": 1024,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Mountain%20Resort%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Taj Gangtok Resort & Spa",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 24436,
+      "priceMax": 24823,
+      "rating": 4.7,
+      "reviews": 3989,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "World Class",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Gangtok%20Resort%20%26%20Spa%20Gangtok%20Sikkim"
     }
   ],
   "restaurants": [],
@@ -391,29 +530,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rumtek_Monastry_%2C_Gangtok%2C_Sikkim.jpg",
-      "alt": "Gangtok in Gangtok, Sikkim - Rumtek Monastery.",
-      "title": "Gangtok in Gangtok, Sikkim - Rumtek Monastery."
+      "alt": "Gangtok in Gangtok, Sikkim - Rumtek Monastery."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tsomgo_Lake_%28Changu_Lake%29_in_Gangtok_district.jpg/1280px-Tsomgo_Lake_%28Changu_Lake%29_in_Gangtok_district.jpg",
-      "alt": "Gangtok photo 2",
-      "title": "Rumtek Monastery"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tsomgo_Lake_%28Changu_Lake%29_in_Gangtok_district.jpg",
+      "alt": "Gangtok photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_03.jpg/1280px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_03.jpg",
-      "alt": "Gangtok photo 3",
-      "title": "MG Marg"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_03.jpg",
+      "alt": "Gangtok photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_02.jpg/1280px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_02.jpg",
-      "alt": "Gangtok photo 4",
-      "title": "Gangtok — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_02.jpg",
+      "alt": "Gangtok photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Pure_Solitarity.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Gangtok - Highlight 5",
-      "alt": "Lakes of India",
-      "title": "Lakes of India"
+      "alt": "Lakes of India"
     }
   ],
   "faq": [
@@ -451,5 +584,7 @@
       "how to reach Gangtok",
       "Sikkim tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

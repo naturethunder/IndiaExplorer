@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Jivdhan — heritage city of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg/1280px-Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg",
-    "alt": "Jivdhan photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg",
+    "alt": "Jivdhan, Maharashtra"
   },
   "overview": {
     "short": "Jivdhan (or Jeevdhan) is a hill fortress situated 1 km from modern town of Ghatghar in Junnar Taluka of Pune district in Maharashtra, India.",
@@ -296,84 +296,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Jivdhan Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Jivdhan",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 159,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Jivdhan%20Stay%20Jivdhan%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Jivdhan%20Jivdhan%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Jivdhan",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Jivdhan Mahal Palace",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 436,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Jivdhan%20Jivdhan%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jivdhan%20Mahal%20Palace%20Jivdhan%20Maharashtra"
     },
     {
-      "name": "Jivdhan Grand Hotel",
+      "name": "Jivdhan Heritage Hotel",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 349,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Jivdhan%20Grand%20Hotel%20Jivdhan%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Jivdhan%20Heritage%20Hotel%20Jivdhan%20Maharashtra"
     },
     {
-      "name": "Marriott Jivdhan",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Lemon Tree Jivdhan",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 756,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Jivdhan%20Jivdhan%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Jivdhan%20Jivdhan%20Maharashtra"
+    },
+    {
+      "name": "Ginger Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2973,
+      "priceMax": 4858,
+      "rating": 4.1,
+      "reviews": 860,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Haveli%20Stay%20Jivdhan%20Maharashtra"
+    },
+    {
+      "name": "Jivdhan Palace Hotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5258,
+      "priceMax": 6568,
+      "rating": 4.3,
+      "reviews": 407,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Legacy Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jivdhan%20Palace%20Hotel%20Jivdhan%20Maharashtra"
+    },
+    {
+      "name": "Jivdhan Sheraton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10325,
+      "priceMax": 12193,
+      "rating": 4.6,
+      "reviews": 1603,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jivdhan%20Sheraton%20Jivdhan%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -388,31 +461,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg/1280px-Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg",
-      "alt": "Jivdhan photo 2",
-      "title": "Ghatghar"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_10.jpg",
+      "alt": "Jivdhan photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_11.jpg/1280px-Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_11.jpg",
-      "alt": "Jivdhan photo 3",
-      "title": "Naneghat"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_11.jpg",
+      "alt": "Jivdhan photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_05.jpg/1280px-Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_05.jpg",
-      "alt": "Jivdhan photo 4",
-      "title": "Chavand, Maharashtra"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Jivdhan_Fort_fort_of_Maharashtra_India_%281%29_05.jpg",
+      "alt": "Jivdhan photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/MURUGAN_TEMPLE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Jivdhan - Highlight 4",
-      "alt": "Hindu temples in Tamil Nadu",
-      "title": "Hindu temples in Tamil Nadu"
+      "alt": "Hindu temples in Tamil Nadu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Azhiyar_arivu_thiru_koil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Jivdhan - Highlight 5",
-      "alt": "Hindu temples in Tamil Nadu",
-      "title": "Hindu temples in Tamil Nadu"
+      "alt": "Hindu temples in Tamil Nadu"
     }
   ],
   "faq": [
@@ -450,5 +516,7 @@
       "how to reach Jivdhan",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

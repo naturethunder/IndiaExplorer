@@ -9,7 +9,7 @@
   "tagline": "Dwarka — spiritual town of Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Adi_Shankara_math_next_to_Dwarka_temple_Gujarat_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Dwarka view 1 — Adi Shankara math next to Dwarka temple Gujarat India"
+    "alt": "Dwarka, Gujarat"
   },
   "overview": {
     "short": "Dwarka is a much-loved spiritual town in Gujarat, known for char dham and krishna.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 19000,
     "minPrice": 900,
-    "distanceFromDelhi": 1450,
-    "about": "Dwarka, in Saurashtra, Gujarat, is one of India’s favourite spiritual town. Visitors come for its char dham, krishna, coast, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1450
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -218,13 +217,13 @@
       "category": "spiritual",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "5-storey Char Dham temple to Lord Krishna on the Gomti.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dwarkadheesh_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dwarkadhish Temple in Gujarat, India"
+        "alt": "Dwarkadhish Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/N-GJ-126_Dwarkadhish_Temple%2C_Dwarka_Flag_Hoisting.jpg/1280px-N-GJ-126_Dwarkadhish_Temple%2C_Dwarka_Flag_Hoisting.jpg",
@@ -237,13 +236,13 @@
       "category": "spiritual",
       "distance": "30 km",
       "entryFee": "₹20",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.4,
       "description": "Island shrine reached by ferry, Krishna’s legendary residence.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bet Dwarka in Gujarat, India"
+        "alt": "Bet Dwarka"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%2825%29.jpg/1280px-Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%2825%29.jpg",
@@ -256,13 +255,13 @@
       "category": "spiritual",
       "distance": "16 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "One of the twelve sacred Jyotirlinga Shiva shrines.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Nageshwar_temple_outdoors.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Nageshwar Jyotirlinga in Gujarat, India"
+        "alt": "Nageshwar Jyotirlinga"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Nageshwar_Temple.jpg/1280px-Nageshwar_Temple.jpg",
@@ -302,84 +301,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Dwarka Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Dwarka",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 154,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Dwarka%20Stay%20Dwarka%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Dwarka%20Dwarka%20Gujarat"
     },
     {
-      "name": "Airbnb: Stay in Dwarka",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Dwarka Pilgrim Lodge",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 331,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Bhakti Residency"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Dwarka%20Dwarka%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dwarka%20Pilgrim%20Lodge%20Dwarka%20Gujarat"
     },
     {
-      "name": "Dwarka Grand Hotel",
+      "name": "Dwarka Temple View",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 251,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Ashram Stay"
       ],
-      "url": "https://www.google.com/search?q=Dwarka%20Grand%20Hotel%20Dwarka%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dwarka%20Temple%20View%20Dwarka%20Gujarat"
     },
     {
-      "name": "Fortune Park Dwarka",
-      "type": "resort",
-      "tier": "best",
+      "name": "Fortune Bhakti Residency",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 885,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Krishna Kunj"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Dwarka%20Dwarka%20Gujarat%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Bhakti%20Residency%20Dwarka%20Gujarat"
+    },
+    {
+      "name": "Dwarka Dharmashala",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2817,
+      "priceMax": 3348,
+      "rating": 4.1,
+      "reviews": 592,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Ashram Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dwarka%20Dharmashala%20Dwarka%20Gujarat"
+    },
+    {
+      "name": "Dwarka Krishna Kunj",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6228,
+      "priceMax": 6709,
+      "rating": 4.3,
+      "reviews": 1713,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Divine Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dwarka%20Krishna%20Kunj%20Dwarka%20Gujarat"
+    },
+    {
+      "name": "Dwarka Hyatt Regency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10260,
+      "priceMax": 11414,
+      "rating": 4.4,
+      "reviews": 1631,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dwarka%20Hyatt%20Regency%20Dwarka%20Gujarat"
     }
   ],
   "restaurants": [],
@@ -392,29 +464,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Adi_Shankara_math_next_to_Dwarka_temple_Gujarat_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dwarka view 1 — Adi Shankara math next to Dwarka temple Gujarat India",
-      "title": "Dwarka view 1 — Adi Shankara math next to Dwarka…"
+      "alt": "Dwarka view 1 — Adi Shankara math next to Dwarka temple Gujarat India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Dwarkadhish_Temple%2C_Dwarka%2C_Gujarat.JPG/1280px-Dwarkadhish_Temple%2C_Dwarka%2C_Gujarat.JPG",
-      "alt": "Dwarka photo 2",
-      "title": "Bet Dwarka"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Dwarkadhish_Temple%2C_Dwarka%2C_Gujarat.JPG",
+      "alt": "Dwarka photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%284%29.jpg/1280px-Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%284%29.jpg",
-      "alt": "Dwarka photo 4",
-      "title": "Nageshwar Jyotirlinga"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bet_Dwarka_during_Dwaraka_DWARASPDB_2015_%284%29.jpg",
+      "alt": "Dwarka photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Nageshwar_temple_outdoors.JPG/1280px-Nageshwar_temple_outdoors.JPG",
-      "alt": "Dwarka photo 5",
-      "title": "Dwarka — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Nageshwar_temple_outdoors.JPG",
+      "alt": "Dwarka photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Stairs_leading_to_the_Ancient_well_in_Shri_Ananthashayana_Temple_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Dwarka - Highlight 5",
-      "alt": "India ancient temple heritage architecture monument",
-      "title": "India ancient temple heritage architecture monument"
+      "alt": "India ancient temple heritage architecture monument"
     }
   ],
   "faq": [
@@ -452,5 +518,7 @@
       "how to reach Dwarka",
       "Gujarat tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

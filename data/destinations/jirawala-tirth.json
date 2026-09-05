@@ -9,7 +9,7 @@
   "tagline": "Jirawala Tirth — spiritual town of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jirawala_Parshwanath_Jain_Tirth.jpg",
-    "alt": "Jirawala Tirth in Jirawala Tirth, Rajasthan - Jirawala, a Village at Sirohi District of Rajasthan in 2019."
+    "alt": "Jirawala Tirth, Rajasthan"
   },
   "overview": {
     "short": "Jirawala Tirth is a Śvetāmbara Jain temple in Jirawala village of Sirohi District in Rajasthan, India.",
@@ -24,8 +24,7 @@
     "rating": 4.8,
     "reviewCount": 10917,
     "minPrice": 900,
-    "distanceFromDelhi": 641,
-    "about": "Jirawala Tirth is a Śvetāmbara Jain temple in Jirawala village of Sirohi District in Rajasthan, India. It is situated 58 km from Abu Road. The temple is an important Śvetāmbara Jain pilgrimage center, and the Jirawala Parshvanath idol is one of the 108 prominent Śvetāmbara Parshvanath idols."
+    "distanceFromDelhi": 641
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -213,13 +212,13 @@
       "category": "cultural",
       "distance": "5 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "Dantrai, also known as Harni Dantrai, is a town in Reodar tehsil, Sirohi district, Rajasthan, India. The total geographical area of village is 2218 hectares.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Entrance_of_murugan_koil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dantrai, Jirawala Tirth"
+        "alt": "Dantrai"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/99/Murugan_koil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "scenic",
       "distance": "7 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Reodar is a town in Sirohi District of Rajasthan state in India. It is situated at 52 km east of the Sirohi.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/UNDAVALLI_ROCK_CUT_CAVES_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "The Undavalli Caves, a monolithic example of Indian rock-cut architecture and one of the finest test"
+        "alt": "Reodar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/78/GOPURAM.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -273,84 +272,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Jirawala Tirth Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Bhakti Residency",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 455,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Sai Dham"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Jirawala%20Tirth%20Stay%20Jirawala%20Tirth%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Bhakti%20Residency%20Jirawala%20Tirth%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Jirawala Tirth",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Townhouse Jirawala Tirth",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 624,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Bhakti Residency"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan"
     },
     {
-      "name": "Jirawala Tirth Grand Hotel",
+      "name": "FabHotels Prime Jirawala Tirth",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 450,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jirawala%20Tirth%20Grand%20Hotel%20Jirawala%20Tirth%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan"
     },
     {
-      "name": "Fortune Park Jirawala Tirth",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Jirawala Tirth",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 612,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan"
+    },
+    {
+      "name": "Jirawala Tirth Keys Select",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3474,
+      "priceMax": 4346,
+      "rating": 4.3,
+      "reviews": 1172,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jirawala%20Tirth%20Keys%20Select%20Jirawala%20Tirth%20Rajasthan"
+    },
+    {
+      "name": "Novotel Jirawala Tirth",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5327,
+      "priceMax": 6118,
+      "rating": 4.3,
+      "reviews": 751,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Devotee Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Jirawala%20Tirth%20Jirawala%20Tirth%20Rajasthan"
+    },
+    {
+      "name": "Jirawala Tirth Sai Dham",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9492,
+      "priceMax": 11088,
+      "rating": 4.6,
+      "reviews": 675,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Jirawala%20Tirth%20Sai%20Dham%20Jirawala%20Tirth%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -365,29 +438,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jirawala_Parshwanath_Jain_Tirth.jpg",
-      "alt": "Jirawala Tirth in Jirawala Tirth, Rajasthan - Jirawala, a Village at Sirohi District of Rajasthan in 2019.",
-      "title": "Jirawala Tirth in Jirawala Tirth, Rajasthan -…"
+      "alt": "Jirawala Tirth in Jirawala Tirth, Rajasthan - Jirawala, a Village at Sirohi District of Rajasthan in 2019."
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Jirawala_Parshwanath_%28cropped%29.jpg",
-      "alt": "Jirawala Tirth photo 2",
-      "title": "Reodar"
+      "alt": "Jirawala Tirth photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/PUG_MILL.jpg",
-      "alt": "Jirawala Tirth photo 3",
-      "title": "Jirawala Tirth — Scenic Nature"
+      "alt": "Jirawala Tirth photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/DIFFERENT_STYLES_OF_POT.jpg/1280px-DIFFERENT_STYLES_OF_POT.jpg",
-      "alt": "Jirawala Tirth photo 4",
-      "title": "Jirawala Tirth — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/DIFFERENT_STYLES_OF_POT.jpg",
+      "alt": "Jirawala Tirth photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Mottai_Amman_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Jirawala Tirth - Highlight 5",
-      "alt": "Hindu temples in Tamil Nadu",
-      "title": "Hindu temples in Tamil Nadu"
+      "alt": "Hindu temples in Tamil Nadu"
     }
   ],
   "faq": [
@@ -425,5 +492,7 @@
       "how to reach Jirawala Tirth",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

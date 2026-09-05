@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Mysore — heritage city of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mysore_Palace_%281%29.jpg/1280px-Mysore_Palace_%281%29.jpg",
-    "alt": "Mysore photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mysore_Palace_%281%29.jpg",
+    "alt": "Mysore, Karnataka"
   },
   "overview": {
     "short": "Mysore is a much-loved heritage city in Karnataka, known for palace and dasara.",
@@ -24,8 +24,7 @@
     "rating": 4.6,
     "reviewCount": 38000,
     "minPrice": 1000,
-    "distanceFromDelhi": 2150,
-    "about": "Mysore, in Deccan Plateau, Karnataka, is one of India’s favourite heritage city. Visitors come for its palace, dasara, chamundi hill, silk, with the best months being Oct – Mar."
+    "distanceFromDelhi": 2150
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "₹70",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.8,
       "description": "Indo-Saracenic royal palace, dazzling when lit by 100,000 bulbs.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1280px-Mysore_Palace_Morning.jpg",
-        "alt": "Mysore Palace in Karnataka, India"
+        "alt": "Mysore Palace"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "spiritual",
       "distance": "13 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.5,
       "description": "Hilltop temple of the city’s patron goddess, reached by 1,000 steps.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Chamundi_Hill_temple%2C_Mysore_%281890s%29_by_an_unknown_photographer%2C_from_the_Curzon_Collection%27s_%27Souvenir_of_Mysore_Album%27.jpg",
-        "alt": "Chamundi Hill Temple in Karnataka, India"
+        "alt": "Chamundi Hill Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d3/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "nature",
       "distance": "21 km",
       "entryFee": "₹15",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.3,
       "description": "Terraced gardens with a musical fountain below the KRS dam.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brindavan_Garden_Mysore_fountain2.JPG/1280px-Brindavan_Garden_Mysore_fountain2.JPG",
-        "alt": "Brindavan Gardens in Karnataka, India"
+        "alt": "Brindavan Gardens"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg/1280px-Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg",
@@ -299,84 +298,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mysore Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mysore Rajwada",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 289,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mysore%20Stay%20Mysore%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mysore%20Rajwada%20Mysore%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Mysore",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Mysore Mahal Palace",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 610,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mysore%20Mysore%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mysore%20Mahal%20Palace%20Mysore%20Karnataka"
     },
     {
-      "name": "Mysore Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Zostel Plus Mysore Hostel",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 3000,
       "priceMax": 4500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 519,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Legacy Hotel"
       ],
-      "url": "https://www.google.com/search?q=Mysore%20Grand%20Hotel%20Mysore%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Mysore%20Hostel%20Mysore%20Karnataka"
     },
     {
-      "name": "Marriott Mysore",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Ibis Mahal Palace",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 6000,
       "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 957,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Fort Residence"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Mysore%20Mysore%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Mahal%20Palace%20Mysore%20Karnataka"
+    },
+    {
+      "name": "Fairfield by Marriott Mahal Palace",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2687,
+      "priceMax": 3294,
+      "rating": 4.1,
+      "reviews": 527,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Mahal%20Palace%20Mysore%20Karnataka"
+    },
+    {
+      "name": "Mysore Hilton Garden Inn",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6923,
+      "priceMax": 7776,
+      "rating": 4.5,
+      "reviews": 833,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mysore%20Hilton%20Garden%20Inn%20Mysore%20Karnataka"
+    },
+    {
+      "name": "Mysore Westin",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8525,
+      "priceMax": 10088,
+      "rating": 4.6,
+      "reviews": 1643,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Manor House"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mysore%20Westin%20Mysore%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -391,30 +464,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mysore_Palace_%281%29.jpg/1280px-Mysore_Palace_%281%29.jpg",
-      "alt": "Mysore photo 2",
-      "title": "Mysore Palace"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mysore_Palace_%281%29.jpg",
+      "alt": "Mysore photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Chamundi_Temple_Mysore.jpg",
-      "alt": "Mysore photo 3",
-      "title": "Chamundi Hill Temple"
+      "alt": "Mysore photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Chamudeswari_Temple_%2C_Chamundi_Hills_-_Mysore.jpg/1280px-Chamudeswari_Temple_%2C_Chamundi_Hills_-_Mysore.jpg",
-      "alt": "Mysore photo 4",
-      "title": "Brindavan Gardens"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chamudeswari_Temple_%2C_Chamundi_Hills_-_Mysore.jpg",
+      "alt": "Mysore photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Brindavan_Gardens.JPG/1280px-Brindavan_Gardens.JPG",
-      "alt": "Mysore photo 5",
-      "title": "Mysore — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Brindavan_Gardens.JPG",
+      "alt": "Mysore photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Mysore - Highlight 5",
-      "alt": "Tamil Nadu temples",
-      "title": "Tamil Nadu temples"
+      "alt": "Tamil Nadu temples"
     }
   ],
   "faq": [
@@ -452,5 +519,7 @@
       "how to reach Mysore",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

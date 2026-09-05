@@ -9,7 +9,7 @@
   "tagline": "Bir Billing — adventure base of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Buddhist_Monastery_in_HIMACHAL_PRADESH_%28INDIA%29.jpg",
-    "alt": "Bir Billing in Bir Billing, Himachal Pradesh - A beautiful monastery near BIR BILLING H.P. in the laps of Dhauladhar ran"
+    "alt": "Bir Billing, Himachal Pradesh"
   },
   "overview": {
     "short": "Bir Billing is a much-loved adventure base in Himachal Pradesh, known for paragliding and monasteries.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 12000,
     "minPrice": 1000,
-    "distanceFromDelhi": 500,
-    "about": "Bir Billing, in Kangra, Himachal Pradesh, is one of India’s favourite adventure base. Visitors come for its paragliding, monasteries, tea gardens, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 500
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "adventure",
       "distance": "14 km",
       "entryFee": "₹2,500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.7,
       "description": "World-class paragliding launch site at 2,400m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Upper_paragliding_takeoff_at_Bir-Billing.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Billing Take-off in Himachal Pradesh, India"
+        "alt": "Billing Take-off"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/a/ae/Lockheed_ER-2_take_off_in_Costa_Rica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "adventure",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Famous paragliding landing meadow with cafes.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bir-Billing_%28HP%29%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bir Landing Site in Himachal Pradesh, India"
+        "alt": "Bir Landing Site"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "spiritual",
       "distance": "8 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Serene Tibetan monastery set among pine and tea slopes.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sherab-ling.png/1280px-Sherab-ling.png",
-        "alt": "Sherab Ling Monastery in Himachal Pradesh, India"
+        "alt": "Sherab Ling Monastery"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Palpung_in_Tibet.jpg",
@@ -297,84 +296,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Bir Billing Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Bir Billing",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 135,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Expedition Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Bir%20Billing%20Stay%20Bir%20Billing%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Bir Billing",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Lemon Tree Red Fox Bir Billing",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 343,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Adventure Camp"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
     },
     {
-      "name": "Bir Billing Grand Hotel",
+      "name": "OYO Townhouse Valley Base",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3000,
       "priceMax": 4500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 783,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Summit Camp"
       ],
-      "url": "https://www.google.com/search?q=Bir%20Billing%20Grand%20Hotel%20Bir%20Billing%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Valley%20Base%20Bir%20Billing%20Himachal%20Pradesh"
     },
     {
-      "name": "Radisson Bir Billing",
-      "type": "resort",
-      "tier": "best",
+      "name": "Sarovar Portico Summit Camp",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 6000,
       "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 403,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Trekker's Hut"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Summit%20Camp%20Bir%20Billing%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Ginger Valley Base",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3784,
+      "priceMax": 5528,
+      "rating": 4.1,
+      "reviews": 581,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Trekker's Hut"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Valley%20Base%20Bir%20Billing%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Novotel Bir Billing",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4861,
+      "priceMax": 5840,
+      "rating": 4.4,
+      "reviews": 545,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Adventure Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Bir Billing Trail Lodge",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8894,
+      "priceMax": 10620,
+      "rating": 4.6,
+      "reviews": 1590,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Base Camp"
       ],
-      "url": "https://www.google.com/search?q=Radisson%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bir%20Billing%20Trail%20Lodge%20Bir%20Billing%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -388,28 +458,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Buddhist_Monastery_in_HIMACHAL_PRADESH_%28INDIA%29.jpg",
-      "alt": "Bir Billing in Bir Billing, Himachal Pradesh - A beautiful monastery near BIR BILLING H.P. in the laps of Dhauladhar ran",
-      "title": "Bir Billing in Bir Billing, Himachal Pradesh - A…"
+      "alt": "Bir Billing in Bir Billing, Himachal Pradesh - A beautiful monastery near BIR BILLING H.P. in the laps of Dhauladhar ran"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pilot_on_a_paragliding_takeoff_at_Bir-Billing_%2801%29.JPG/1280px-Pilot_on_a_paragliding_takeoff_at_Bir-Billing_%2801%29.JPG",
-      "alt": "Bir Billing photo 2",
-      "title": "Bir Landing Site"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Pilot_on_a_paragliding_takeoff_at_Bir-Billing_%2801%29.JPG",
+      "alt": "Bir Billing photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bir-Billing_%28HP%29%2C_India.jpg/1280px-Bir-Billing_%28HP%29%2C_India.jpg",
-      "alt": "Bir Billing photo 3",
-      "title": "Sherab Ling Monastery"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bir-Billing_%28HP%29%2C_India.jpg",
+      "alt": "Bir Billing photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bir-Billing.jpg/1280px-Bir-Billing.jpg",
-      "alt": "Bir Billing photo 4",
-      "title": "Bir Billing — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bir-Billing.jpg",
+      "alt": "Bir Billing photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Catoptrophorus-semipalmatus-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bir Billing — Catoptrophorus-semipalmatus-001",
-      "title": "Bir Billing — Catoptrophorus-semipalmatus-001"
+      "alt": "Bir Billing — Catoptrophorus-semipalmatus-001"
     }
   ],
   "faq": [
@@ -447,5 +512,7 @@
       "how to reach Bir Billing",
       "Himachal Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

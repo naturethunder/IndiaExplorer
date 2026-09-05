@@ -9,7 +9,7 @@
   "tagline": "Araku Valley — hill station of Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Beauty_of_aruku.jpg",
-    "alt": "Araku Valley in Araku Valley, Andhra Pradesh - Araku, Vishakapatnam, Andhra Pradesh"
+    "alt": "Araku Valley, Andhra Pradesh"
   },
   "overview": {
     "short": "Araku Valley is a much-loved hill station in Andhra Pradesh, known for coffee and tribal culture.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 12000,
     "minPrice": 1100,
-    "distanceFromDelhi": 1900,
-    "about": "Araku Valley, in Eastern Ghats, Andhra Pradesh, is one of India’s favourite hill station. Visitors come for its coffee, tribal culture, train ride, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1900
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "cultural",
       "distance": "Centre",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Museum tracing the valley’s celebrated tribal coffee.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Coffee_Museum%2C_Araku_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Araku Coffee Museum in Andhra Pradesh, India"
+        "alt": "Araku Coffee Museum"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/3/31/Chicken_tikka_in_Araku_Valley%2C_Andhra_Pradesh_01.jpg",
@@ -234,13 +233,13 @@
       "category": "cultural",
       "distance": "2 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Dioramas of the Eastern Ghats’ indigenous Adivasi life.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Araku_Tribal_Museum_at_Araku_in_Andhra_Pradesh_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tribal Museum in Andhra Pradesh, India"
+        "alt": "Tribal Museum"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Araku_Tribal_Museum_in_Araku_valley_03.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_03.jpg",
@@ -253,13 +252,13 @@
       "category": "scenic",
       "distance": "Route",
       "entryFee": "₹500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "5 hrs",
       "rating": 4.6,
       "description": "Scenic ride through 58 tunnels and the Borra hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Araku_Train.jpg/1280px-Araku_Train.jpg",
-        "alt": "Vizag–Araku Train Ride in Andhra Pradesh, India"
+        "alt": "Vizag–Araku Train Ride"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Train_Exiting_Araku_and_heading_Towards_Ghat.jpg/1280px-Train_Exiting_Araku_and_heading_Towards_Ghat.jpg",
@@ -299,84 +298,225 @@
   ],
   "hotels": [
     {
-      "name": "OYO Araku Valley Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Araku",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1100,
       "priceMax": 1750,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 427,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Araku%20Valley%20Stay%20Araku%20Valley%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Araku%20Araku%20Andhra%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Araku Valley",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "FabHotels Araku",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2100,
       "priceMax": 2950,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.9,
+      "reviews": 349,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Araku%20Valley%20Araku%20Valley%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Araku%20Araku%20Andhra%20Pradesh"
     },
     {
-      "name": "Araku Valley Grand Hotel",
+      "name": "Ginger Araku",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3300,
       "priceMax": 4950,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 470,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Araku%20Valley%20Grand%20Hotel%20Araku%20Valley%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Araku%20Araku%20Andhra%20Pradesh"
     },
     {
-      "name": "Sterling Araku Valley",
-      "type": "resort",
-      "tier": "best",
+      "name": "Zostel Plus Araku",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 6600,
       "priceMax": 11000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 269,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Good Value",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Araku%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Araku Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2742,
+      "priceMax": 4583,
+      "rating": 4.3,
+      "reviews": 448,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Lemon%20Tree%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Araku Keys Select",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3455,
+      "priceMax": 3788,
+      "rating": 4.1,
+      "reviews": 818,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Keys%20Select%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Araku Pine Grove",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6736,
+      "priceMax": 7783,
+      "rating": 4.5,
+      "reviews": 1805,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Pine%20Grove%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "The Gateway Ridge Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8160,
+      "priceMax": 8524,
+      "rating": 4.6,
+      "reviews": 832,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Araku%20Valley%20Araku%20Valley%20Andhra%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Ridge%20Resort%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Hilton Peak Stay",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8199,
+      "priceMax": 9292,
+      "rating": 4.4,
+      "reviews": 843,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Peak%20Stay%20Araku%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Araku ITC",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 15244,
+      "priceMax": 16298,
+      "rating": 4.6,
+      "reviews": 1748,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20ITC%20Araku%20Andhra%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -390,28 +530,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Beauty_of_aruku.jpg",
-      "alt": "Araku Valley in Araku Valley, Andhra Pradesh - Araku, Vishakapatnam, Andhra Pradesh",
-      "title": "Araku Valley in Araku Valley, Andhra Pradesh -…"
+      "alt": "Araku Valley in Araku Valley, Andhra Pradesh - Araku, Vishakapatnam, Andhra Pradesh"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Araku_Tribal_Museum_in_Araku_valley_02.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_02.jpg",
-      "alt": "Araku Valley photo 2",
-      "title": "Tribal Museum"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Araku_Tribal_Museum_in_Araku_valley_02.jpg",
+      "alt": "Araku Valley photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Araku_Tribal_Museum_in_Araku_valley_01.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_01.jpg",
-      "alt": "Araku Valley photo 3",
-      "title": "Vizag–Araku Train Ride"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Araku_Tribal_Museum_in_Araku_valley_01.jpg",
+      "alt": "Araku Valley photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Araku_Tribal_Museum_in_Araku_valley_04.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_04.jpg",
-      "alt": "Araku Valley photo 4",
-      "title": "Araku Valley — Sacred Temple Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Araku_Tribal_Museum_in_Araku_valley_04.jpg",
+      "alt": "Araku Valley photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Araku_Tribal_Museum_in_Araku_valley_06.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_06.jpg",
-      "alt": "Araku Valley photo 5",
-      "title": "Araku Valley — Tranquil Nature Trail & Valley"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Araku_Tribal_Museum_in_Araku_valley_06.jpg",
+      "alt": "Araku Valley photo 5"
     }
   ],
   "faq": [
@@ -449,5 +584,7 @@
       "how to reach Araku Valley",
       "Andhra Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

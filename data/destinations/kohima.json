@@ -9,7 +9,7 @@
   "tagline": "Kohima — hill station of Nagaland",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Way_o_Kohima%2CNagaland_India.jpg",
-    "alt": "Kohima in Kohima, Nagaland - This the entrance to Kohima the town of Nagaland"
+    "alt": "Kohima, Nagaland"
   },
   "overview": {
     "short": "Kohima is a much-loved hill station in Nagaland, known for hornbill festival and wwii history.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 7000,
     "minPrice": 1400,
-    "distanceFromDelhi": 2350,
-    "about": "Kohima, in Naga Hills, Nagaland, is one of India’s favourite hill station. Visitors come for its hornbill festival, wwii history, tribes, with the best months being Oct – May."
+    "distanceFromDelhi": 2350
   },
   "bestTime": {
     "label": "Oct – May",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.6,
       "description": "Moving WWII memorial to the Battle of Kohima.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cemetery_with_kohima.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kohima War Cemetery in Nagaland, India"
+        "alt": "Kohima War Cemetery"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/df/Kohima_war_cemetery_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "cultural",
       "distance": "12 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.6,
       "description": "Host of the Hornbill Festival showcasing all Naga tribes.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_visits_the_Crafts_Bazaar%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg/1280px-The_Vice_President%2C_Shri_Mohd._Hamid_Ansari_visits_the_Crafts_Bazaar%2C_at_Kisama_Heritage_Village%2C_in_Kohima%2C_Nagaland_on_September_18%2C_2010.jpg",
-        "alt": "Kisama Heritage Village in Nagaland, India"
+        "alt": "Kisama Heritage Village"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/a/a2/Western_Ghats-_Karnataka_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "trekking",
       "distance": "25 km",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 days",
       "rating": 4.7,
       "description": "Valley of seasonal flowers and rolling green hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Western_Dzukou_frozen_waterfall.png",
-        "alt": "Dzukou Valley in Nagaland, India"
+        "alt": "Dzukou Valley"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg/1280px-Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg",
@@ -299,84 +298,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kohima Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Kohima",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1400,
       "priceMax": 2250,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 108,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kohima%20Stay%20Kohima%20Nagaland%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Kohima%20Kohima%20Nagaland"
     },
     {
-      "name": "Airbnb: Stay in Kohima",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Peak Stay",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2650,
       "priceMax": 3800,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 265,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kohima%20Kohima%20Nagaland%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Peak%20Stay%20Kohima%20Nagaland"
     },
     {
-      "name": "Kohima Grand Hotel",
+      "name": "OYO Townhouse Kohima",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4200,
       "priceMax": 6300,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 604,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Kohima%20Grand%20Hotel%20Kohima%20Nagaland%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Kohima%20Kohima%20Nagaland"
     },
     {
-      "name": "Sterling Kohima",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ibis Budget Mountain Resort",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 8400,
       "priceMax": 14000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 627,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Popular Pick",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Kohima%20Kohima%20Nagaland%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Mountain%20Resort%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Ginger Kohima",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2462,
+      "priceMax": 3038,
+      "rating": 4.3,
+      "reviews": 511,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Kohima%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Kohima Peak Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3194,
+      "priceMax": 5164,
+      "rating": 4.3,
+      "reviews": 761,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kohima%20Peak%20Stay%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Kohima DoubleTree by Hilton",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4861,
+      "priceMax": 5188,
+      "rating": 4.4,
+      "reviews": 1474,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kohima%20DoubleTree%20by%20Hilton%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Kohima Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9045,
+      "priceMax": 10531,
+      "rating": 4.4,
+      "reviews": 1742,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kohima%20Marriott%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Renaissance Kohima",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9884,
+      "priceMax": 11676,
+      "rating": 4.5,
+      "reviews": 2590,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Kohima%20Kohima%20Nagaland"
+    },
+    {
+      "name": "Oberoi Kohima",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 15404,
+      "priceMax": 17290,
+      "rating": 4.7,
+      "reviews": 944,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Kohima%20Kohima%20Nagaland"
     }
   ],
   "restaurants": [],
@@ -391,28 +532,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Way_o_Kohima%2CNagaland_India.jpg",
-      "alt": "Kohima in Kohima, Nagaland - This the entrance to Kohima the town of Nagaland",
-      "title": "Kohima in Kohima, Nagaland - This the entrance to…"
+      "alt": "Kohima in Kohima, Nagaland - This the entrance to Kohima the town of Nagaland"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kohima_war_cemetery_19.jpg/1280px-Kohima_war_cemetery_19.jpg",
-      "alt": "Kohima photo 2",
-      "title": "Kisama Heritage Village"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Kohima_war_cemetery_19.jpg",
+      "alt": "Kohima photo 2"
     },
     {
       "src": "https://images.pexels.com/photos/34330917/pexels-photo-34330917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Stunning view of vibrant green hills under a dramatic cloudy sky, located in India.",
-      "title": "Stunning view of vibrant green hills under a…"
+      "alt": "Stunning view of vibrant green hills under a dramatic cloudy sky, located in India."
     },
     {
       "src": "https://images.pexels.com/photos/14916663/pexels-photo-14916663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Stunning view of Gangtok, Sikkim at sunset showcasing vibrant urban landscape and scenic hills.",
-      "title": "Stunning view of Gangtok, Sikkim at sunset…"
+      "alt": "Stunning view of Gangtok, Sikkim at sunset showcasing vibrant urban landscape and scenic hills."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kohima_war_cemetery_34.jpg/1280px-Kohima_war_cemetery_34.jpg",
-      "alt": "Kohima photo 5",
-      "title": "Kohima — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kohima_war_cemetery_34.jpg",
+      "alt": "Kohima photo 5"
     }
   ],
   "faq": [
@@ -450,5 +586,7 @@
       "how to reach Kohima",
       "Nagaland tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

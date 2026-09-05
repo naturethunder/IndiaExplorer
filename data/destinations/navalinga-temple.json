@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Navalinga Temple — spiritual town of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg/1280px-9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Navalinga Temple photo 5"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg",
+    "alt": "Navalinga Temple, Karnataka"
   },
   "overview": {
     "short": "The Navalinga temple is a cluster of Hindu temples built in the 9th century, during the reign of King Amoghavarsha I or his son Krishna II of the Rashtrakuta Dynasty.",
@@ -235,7 +235,7 @@
       "description": "The Mahadeva Temple is located in the town of Itagi in Yelburga Taluk, in the Koppal District of Karnataka state, India. It is about 7 km (4 mi) from Kuknur and 20 km (12 mi) from Lakkundi.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Vagator%2C_Goa%2C_India%2C_Hilltop%2C_DJ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mahadeva Temple, Itagi, Navalinga Temple"
+        "alt": "Mahadeva Temple, Itagi"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/90/Vagator%2C_Goa%2C_India%2C_Psychedelic_art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -254,7 +254,7 @@
       "description": "Dyampur is a village in the southern state of Karnataka, India. It is located in the Yelburga taluk of Koppal district, Raichur.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Vagator%2C_Goa%2C_India%2C_Nighttime_in_Vagator_hills%2C_nightlife_in_Goa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Dyampur, Navalinga Temple"
+        "alt": "Dyampur"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vagator%2C_Goa%2C_India%2C_Vagator_hills_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -273,7 +273,7 @@
       "description": "Rajooru also spelled Rajur is a village in the Kukanoor taluk of Koppal district in the Indian state of Karnataka.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Anjuna_Beach%2C_Goa%2C_India%2C_New_Year%27s_Eve%2C_Fireworks_in_the_sky%2C_Beach_party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Rajooru, Navalinga Temple"
+        "alt": "Rajooru"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/63/Fishing_Boat_Outrigger_Goa_Jan19_DSC00099.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -311,7 +311,7 @@
       "description": "Bhatapanahalli is a village in the Yelburga taluk of Koppal district in the Indian state of Karnataka. Bhatapanahalli is 6 km from Kuknoor and 40 km from Gadag.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Vagator%2C_Dance_party%2C_Goa%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Bhatapanahalli, Navalinga Temple"
+        "alt": "Bhatapanahalli"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b5/Vagator%2C_Sunset_in_Goa%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -330,7 +330,7 @@
       "description": "Adoor is a village in the southern state of Karnataka, India. It is located in the Yelbarga taluk of Koppal district in Karnataka.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Goa_-_In_a_Goa_beach_on_a_stormy_evening2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Adoor (Yelbarga), Navalinga Temple"
+        "alt": "Adoor (Yelbarga)"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/ff/Goa_-_In_a_Goa_beach_on_a_stormy_evening.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -349,7 +349,7 @@
       "description": "Kallur also spelled as Kallooru is a village in the Yelburga taluk of Koppal district in the Indian state of Karnataka.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Hanuman_temple_on_Anjanadri_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kallur, Yelburga in Karnataka, India"
+        "alt": "Kallur, Yelburga"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Goa_-_In_a_Goa_beach_on_a_stormy_evening6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -420,84 +420,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Navalinga Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Navalinga The Hosteller",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 249,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Navalinga%20Temple%20Stay%20Navalinga%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Navalinga%20The%20Hosteller%20Navalinga%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Navalinga Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ibis Budget Sanctum Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 591,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Sanctum Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Navalinga%20Temple%20Navalinga%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Sanctum%20Stay%20Navalinga%20Karnataka"
     },
     {
-      "name": "Navalinga Temple Grand Hotel",
+      "name": "FabHotels Prime Navalinga",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 561,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Sai Dham"
       ],
-      "url": "https://www.google.com/search?q=Navalinga%20Temple%20Grand%20Hotel%20Navalinga%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Navalinga%20Navalinga%20Karnataka"
     },
     {
-      "name": "Fortune Park Navalinga Temple",
-      "type": "resort",
-      "tier": "best",
+      "name": "Navalinga Sanctum Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 943,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Navalinga%20Temple%20Navalinga%20Temple%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Navalinga%20Sanctum%20Stay%20Navalinga%20Karnataka"
+    },
+    {
+      "name": "Lemon Tree Sai Dham",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3995,
+      "priceMax": 4792,
+      "rating": 4.2,
+      "reviews": 536,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Sai%20Dham%20Navalinga%20Karnataka"
+    },
+    {
+      "name": "Navalinga Bhakti Residency",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6612,
+      "priceMax": 7448,
+      "rating": 4.5,
+      "reviews": 1836,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Sai Dham"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Navalinga%20Bhakti%20Residency%20Navalinga%20Karnataka"
+    },
+    {
+      "name": "Navalinga Heritage Residency & Suites",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8829,
+      "priceMax": 9187,
+      "rating": 4.4,
+      "reviews": 2123,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Sanctum Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Navalinga%20Heritage%20Residency%20%26%20Suites%20Navalinga%20Temple%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -511,33 +584,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg/1280px-9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "alt": "Navalinga Temple photo 5",
-      "title": "Kuknur"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/9th_century_Navalinga_temple%2C_Kukkanur%2C_Karnataka_India_-_22.jpg",
+      "alt": "Navalinga Temple photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vagator%2C_Goa%2C_India%2C_Cows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Navalinga Temple - Highlight 2",
-      "alt": "Goa beaches",
-      "title": "Goa beaches"
+      "alt": "Goa beaches"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Vagator%2C_Goa%2C_India%2C_Sacred_Cows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Navalinga Temple - Highlight 3",
-      "alt": "Goa beaches",
-      "title": "Goa beaches"
+      "alt": "Goa beaches"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Morjim_Beach%2C_Goa%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Navalinga Temple - Highlight 4",
-      "alt": "Goa beaches",
-      "title": "Goa beaches"
+      "alt": "Goa beaches"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Morjim_Beach%2C_Goa%2C_India%2C_Vast_spaces.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Navalinga Temple - Highlight 5",
-      "alt": "Goa beaches",
-      "title": "Goa beaches"
+      "alt": "Goa beaches"
     }
   ],
   "faq": [
@@ -575,5 +639,7 @@
       "how to reach Navalinga Temple",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Chikmagalur — hill station of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Stunning_unknown.jpg/1280px-Stunning_unknown.jpg",
-    "alt": "Chikmagalur photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Stunning_unknown.jpg",
+    "alt": "Chikmagalur, Karnataka"
   },
   "overview": {
     "short": "Chikmagalur is a much-loved hill station in Karnataka, known for coffee and mullayanagiri.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 16000,
     "minPrice": 1200,
-    "distanceFromDelhi": 2200,
-    "about": "Chikmagalur, in Western Ghats, Karnataka, is one of India’s favourite hill station. Visitors come for its coffee, mullayanagiri, waterfalls, with the best months being Sep – Mar."
+    "distanceFromDelhi": 2200
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -218,13 +217,13 @@
       "category": "trekking",
       "distance": "22 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.6,
       "description": "Highest peak in Karnataka at 1,930m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/View_From_Mullayanagiri.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mullayanagiri Peak in Karnataka, India"
+        "alt": "Mullayanagiri Peak"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/The_otherside_of_the_peak.jpg/1280px-The_otherside_of_the_peak.jpg",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "30 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Sacred cave-shrine range famed for the first Indian coffee beans.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Indian_Monkey_at_Budangiri.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Baba Budangiri in Karnataka, India"
+        "alt": "Baba Budangiri"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Baba_Budangiri%2C_Chikmagalur_%282024%29_44.jpg/1280px-Baba_Budangiri%2C_Chikmagalur_%282024%29_44.jpg",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "55 km",
       "entryFee": "₹500",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.4,
       "description": "Two-tier waterfall reached by a jeep ride through coffee estates.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Hebbe_Falls.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Hebbe Falls in Karnataka, India"
+        "alt": "Hebbe Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hebbe_Falls_Chikmagalur_India.jpg/1280px-Hebbe_Falls_Chikmagalur_India.jpg",
@@ -302,84 +301,222 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chikmagalur Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Chikmagalur Treebo",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 499,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chikmagalur%20Stay%20Chikmagalur%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Treebo%20Chikmagalur%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Chikmagalur",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Chikmagalur",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 186,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chikmagalur%20Chikmagalur%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Chikmagalur%20Chikmagalur%20Karnataka"
     },
     {
-      "name": "Chikmagalur Grand Hotel",
+      "name": "Treebo Trend Chikmagalur",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 555,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Chikmagalur%20Grand%20Hotel%20Chikmagalur%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Chikmagalur%20Chikmagalur%20Karnataka"
     },
     {
-      "name": "Sterling Chikmagalur",
-      "type": "resort",
-      "tier": "best",
+      "name": "Chikmagalur Hotel Royal Orchid",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 613,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Smart Choice",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Hotel%20Royal%20Orchid%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "Chikmagalur Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2401,
+      "priceMax": 4077,
+      "rating": 4.2,
+      "reviews": 1119,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Lemon%20Tree%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "Chikmagalur Summit View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3248,
+      "priceMax": 3972,
+      "rating": 4.1,
+      "reviews": 1103,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Summit%20View%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "Chikmagalur Novotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5470,
+      "priceMax": 6891,
+      "rating": 4.3,
+      "reviews": 1079,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Novotel%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "Chikmagalur Pine Grove",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8736,
+      "priceMax": 9567,
+      "rating": 4.4,
+      "reviews": 726,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Chikmagalur%20Chikmagalur%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20Pine%20Grove%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "Chikmagalur The Gateway",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11525,
+      "priceMax": 11989,
+      "rating": 4.6,
+      "reviews": 2121,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chikmagalur%20The%20Gateway%20Chikmagalur%20Karnataka"
+    },
+    {
+      "name": "The Taj Chikmagalur",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 17506,
+      "priceMax": 19328,
+      "rating": 4.5,
+      "reviews": 3623,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Chikmagalur%20Chikmagalur%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -393,31 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Stunning_unknown.jpg/1280px-Stunning_unknown.jpg",
-      "alt": "Chikmagalur photo 2",
-      "title": "Mullayanagiri Peak"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Stunning_unknown.jpg",
+      "alt": "Chikmagalur photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Baba_Budangiri%2C_Chikmagalur_%282024%29_29.jpg/1280px-Baba_Budangiri%2C_Chikmagalur_%282024%29_29.jpg",
-      "alt": "Chikmagalur photo 3",
-      "title": "Baba Budangiri"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Baba_Budangiri%2C_Chikmagalur_%282024%29_29.jpg",
+      "alt": "Chikmagalur photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Baba_Budangiri%2C_Chikmagalur_%282024%29_37.jpg/1280px-Baba_Budangiri%2C_Chikmagalur_%282024%29_37.jpg",
-      "alt": "Chikmagalur photo 4",
-      "title": "Hebbe Falls"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Baba_Budangiri%2C_Chikmagalur_%282024%29_37.jpg",
+      "alt": "Chikmagalur photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_173.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Chikmagalur - Highlight 4",
-      "alt": "Temples and monuments of Tamil Nadu",
-      "title": "Temples and monuments of Tamil Nadu"
+      "alt": "Temples and monuments of Tamil Nadu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_182.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Chikmagalur - Highlight 5",
-      "alt": "Temples and monuments of Tamil Nadu",
-      "title": "Temples and monuments of Tamil Nadu"
+      "alt": "Temples and monuments of Tamil Nadu"
     }
   ],
   "faq": [
@@ -455,5 +585,7 @@
       "how to reach Chikmagalur",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

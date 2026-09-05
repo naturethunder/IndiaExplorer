@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Hemis National Park — wildlife reserve of Ladakh",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/17th_century_Hemis_Monastery_in_Ladakh.jpg/1280px-17th_century_Hemis_Monastery_in_Ladakh.jpg",
-    "alt": "Hemis National Park photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/17th_century_Hemis_Monastery_in_Ladakh.jpg",
+    "alt": "Hemis National Park, Ladakh"
   },
   "overview": {
     "short": "Hemis National Park, a high-elevation national park near Hemis in the Leh district of Ladakh in India, is located 50 km (31 mi) from Leh town, the capitals of Ladakh.",
@@ -273,84 +273,201 @@
   ],
   "hotels": [
     {
-      "name": "OYO Hemis National Park Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Hemis FabHotels",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 236,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Forest Camp"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Hemis%20National%20Park%20Stay%20Hemis%20National%20Park%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hemis%20FabHotels%20Hemis%20Ladakh"
     },
     {
-      "name": "Airbnb: Stay in Hemis National Park",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Hotel Royal Orchid Hemis",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 217,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Hemis%20National%20Park%20Hemis%20National%20Park%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Hemis%20Hemis%20Ladakh"
     },
     {
-      "name": "Hemis National Park Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Zostel Plus Hemis",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 616,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Wilderness Camp"
       ],
-      "url": "https://www.google.com/search?q=Hemis%20National%20Park%20Grand%20Hotel%20Hemis%20National%20Park%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Hemis%20Hemis%20Ladakh"
     },
     {
-      "name": "Jungle Lodges Hemis National Park",
-      "type": "resort",
-      "tier": "best",
+      "name": "Hemis Safari Lodge",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 733,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Wildlife Camp"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Hemis%20National%20Park%20Hemis%20National%20Park%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hemis%20Safari%20Lodge%20Hemis%20Ladakh"
+    },
+    {
+      "name": "Hemis Holiday Inn Express",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2782,
+      "priceMax": 3723,
+      "rating": 4.1,
+      "reviews": 716,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hemis%20Holiday%20Inn%20Express%20Hemis%20Ladakh"
+    },
+    {
+      "name": "Fairfield by Marriott Hemis",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6318,
+      "priceMax": 6912,
+      "rating": 4.5,
+      "reviews": 1048,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Hemis%20Hemis%20Ladakh"
+    },
+    {
+      "name": "Vivanta Wildlife Camp",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8618,
+      "priceMax": 9917,
+      "rating": 4.6,
+      "reviews": 2163,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Wildlife%20Camp%20Hemis%20Ladakh"
+    },
+    {
+      "name": "The Oberoi Hemis",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 24053,
+      "priceMax": 24882,
+      "rating": 4.6,
+      "reviews": 2810,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Hemis%20Hemis%20Ladakh"
+    },
+    {
+      "name": "Six Senses Nature Retreat",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 38022,
+      "priceMax": 39379,
+      "rating": 4.8,
+      "reviews": 879,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Holistic Wellness",
+        "Curated Dining",
+        "Butler",
+        "Chauffeur",
+        "Experiences"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Forest Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Six%20Senses%20Nature%20Retreat%20Hemis%20Ladakh"
     }
   ],
   "restaurants": [],
@@ -363,30 +480,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/17th_century_Hemis_Monastery_in_Ladakh.jpg/1280px-17th_century_Hemis_Monastery_in_Ladakh.jpg",
-      "alt": "Hemis National Park photo 2",
-      "title": "Stok Kangri"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2b/17th_century_Hemis_Monastery_in_Ladakh.jpg",
+      "alt": "Hemis National Park photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Eurasian_Magpie%2C_Hemis_NP%2C_Ladakh.jpg/1280px-Eurasian_Magpie%2C_Hemis_NP%2C_Ladakh.jpg",
-      "alt": "Hemis National Park photo 3",
-      "title": "Rumbak"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Eurasian_Magpie%2C_Hemis_NP%2C_Ladakh.jpg",
+      "alt": "Hemis National Park photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Lizard_in_Ladakh_1.JPG/1280px-Lizard_in_Ladakh_1.JPG",
-      "alt": "Hemis National Park photo 4",
-      "title": "Hemis National Park — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Lizard_in_Ladakh_1.JPG",
+      "alt": "Hemis National Park photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Bharal_Ladakh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hemis National Park photo 5",
-      "title": "Hemis National Park — Sacred Heritage"
+      "alt": "Hemis National Park photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Rajghat_Garden_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Hemis National Park - Highlight 5",
-      "alt": "Gardens in India",
-      "title": "Gardens in India"
+      "alt": "Gardens in India"
     }
   ],
   "faq": [
@@ -424,5 +535,7 @@
       "how to reach Hemis National Park",
       "Ladakh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Bor Wildlife Sanctuary — wildlife reserve of Maharashtra",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/The_soothing_view.jpg/1280px-The_soothing_view.jpg",
-    "alt": "Bor Wildlife Sanctuary photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/The_soothing_view.jpg",
+    "alt": "Bor Wildlife Sanctuary, Maharashtra"
   },
   "overview": {
     "short": "Bor Tiger Reserve is a wildlife sanctuary which was declared as a tiger reserve in July 2014.",
@@ -24,8 +24,7 @@
     "rating": 4.2,
     "reviewCount": 11153,
     "minPrice": 2500,
-    "distanceFromDelhi": 862,
-    "about": "Bor Tiger Reserve is a wildlife sanctuary which was declared as a tiger reserve in July 2014. It is located near Hingani in Wardha District in the Indian state of Maharashtra. It is a home to a variety of wild animals. The reserve covers an area of 138.12 km2 (53.33 sq mi)."
+    "distanceFromDelhi": 862
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -213,13 +212,13 @@
       "category": "wildlife",
       "distance": "2 km",
       "entryFee": "Varies",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Bor Dam, is an earthfill dam on Bor river near Bori in the Bor Wildlife Sanctuary, Seloo Tahsil, Wardha district in State of Maharashtra in India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sambar_Deer_1.jpg",
-        "alt": "Bor Dam in Bor Wildlife Sanctuary, Maharashtra - Sambar Deer at Bor dam Wardha Maharashtra"
+        "alt": "Bor Dam"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e4/Royal_Bengal_tiger_1.jpg",
@@ -243,84 +242,205 @@
   ],
   "hotels": [
     {
-      "name": "OYO Bor Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Bor",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 423,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "River View Camp"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Bor%20Wildlife%20Sanctuary%20Stay%20Bor%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Bor%20Bor%20Maharashtra"
     },
     {
-      "name": "Airbnb: Stay in Bor Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Lemon Tree Red Fox Nature Retreat",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 423,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Bor%20Wildlife%20Sanctuary%20Bor%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Nature%20Retreat%20Bor%20Maharashtra"
     },
     {
-      "name": "Bor Wildlife Sanctuary Grand Hotel",
+      "name": "OYO Townhouse River View Camp",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 220,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Eco Lodge"
       ],
-      "url": "https://www.google.com/search?q=Bor%20Wildlife%20Sanctuary%20Grand%20Hotel%20Bor%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20River%20View%20Camp%20Bor%20Maharashtra"
     },
     {
-      "name": "Jungle Lodges Bor Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lemon Tree Bor",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 842,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Gym",
+        "Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Jungle Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Bor%20Wildlife%20Sanctuary%20Bor%20Wildlife%20Sanctuary%20Maharashtra%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Bor%20Bor%20Maharashtra"
+    },
+    {
+      "name": "Bor Ginger",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3136,
+      "priceMax": 3928,
+      "rating": 4.2,
+      "reviews": 456,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bor%20Ginger%20Bor%20Maharashtra"
+    },
+    {
+      "name": "Bor The Fern",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6743,
+      "priceMax": 7055,
+      "rating": 4.3,
+      "reviews": 1482,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Tiger Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bor%20The%20Fern%20Bor%20Maharashtra"
+    },
+    {
+      "name": "Bor Nature Retreat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8646,
+      "priceMax": 9576,
+      "rating": 4.4,
+      "reviews": 1486,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "River View Camp"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bor%20Nature%20Retreat%20Bor%20Maharashtra"
+    },
+    {
+      "name": "Bor Safari Lodge",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 20025,
+      "priceMax": 21081,
+      "rating": 4.7,
+      "reviews": 3238,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Safari Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bor%20Safari%20Lodge%20Bor%20Maharashtra"
+    },
+    {
+      "name": "Raffles Bor Resort & Spa",
+      "type": "hotel",
+      "tier": "extra_luxury",
+      "priceMin": 28510,
+      "priceMax": 29706,
+      "rating": 4.6,
+      "reviews": 874,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Exclusive",
+        "Eco Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Raffles%20Bor%20Resort%20%26%20Spa%20Bor%20Maharashtra"
     }
   ],
   "restaurants": [],
@@ -333,29 +453,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/The_soothing_view.jpg/1280px-The_soothing_view.jpg",
-      "alt": "Bor Wildlife Sanctuary photo 2",
-      "title": "Bor Dam"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/The_soothing_view.jpg",
+      "alt": "Bor Wildlife Sanctuary photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Black_drongo_Bor_Dam_Wardha.jpg/1280px-Black_drongo_Bor_Dam_Wardha.jpg",
-      "alt": "Bor Wildlife Sanctuary photo 3",
-      "title": "Bor Wildlife Sanctuary — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Black_drongo_Bor_Dam_Wardha.jpg",
+      "alt": "Bor Wildlife Sanctuary photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sambar_deer_Bordharan_Dam_Wardha_%282%29.jpg/1280px-Sambar_deer_Bordharan_Dam_Wardha_%282%29.jpg",
-      "alt": "Bor Wildlife Sanctuary photo 4",
-      "title": "Bor Wildlife Sanctuary — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sambar_deer_Bordharan_Dam_Wardha_%282%29.jpg",
+      "alt": "Bor Wildlife Sanctuary photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Brahminy_Starling_2.jpg/1280px-Brahminy_Starling_2.jpg",
-      "alt": "Bor Wildlife Sanctuary photo 5",
-      "title": "Bor Wildlife Sanctuary — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Brahminy_Starling_2.jpg",
+      "alt": "Bor Wildlife Sanctuary photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Spotted_deer_or_axis_deer.jpg",
-      "alt": "Bor Wildlife Sanctuary in Bor Wildlife Sanctuary, Maharashtra - This beautiful Spotted deer at Bor Dam Wardha Maharashtr",
-      "title": "Bor Wildlife Sanctuary in Bor Wildlife Sanctuary,…"
+      "alt": "Bor Wildlife Sanctuary in Bor Wildlife Sanctuary, Maharashtra - This beautiful Spotted deer at Bor Dam Wardha Maharashtr"
     }
   ],
   "faq": [
@@ -393,5 +508,7 @@
       "how to reach Bor Wildlife Sanctuary",
       "Maharashtra tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

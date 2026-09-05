@@ -44,6 +44,7 @@ function argVal(name) {
 const LIMIT = argVal('limit') ? parseInt(argVal('limit'), 10) : Infinity;
 const ONLY_SLUG = argVal('slug');
 const BATCH_SIZE = argVal('batch') ? parseInt(argVal('batch'), 10) : 25;
+const NO_PHOTOS = args.includes('--no-photos');
 
 const BAD_NAMES = new Set([
   'hotel', 'resort', 'guest house', 'guesthouse', 'hostel', 'inn', 'lodge',
@@ -102,8 +103,8 @@ function runOverpass(query, timeoutSec) {
         return JSON.parse(raw);
       } catch (e) {
         lastErr = e;
-        const wait = 2500 * Math.pow(2, i);
-        process.stderr.write('  overpass retry ' + (i + 1) + '/' + tries + ' in ' + wait + 'ms (' + (e.message || '').split('\n')[0].slice(0, 100) + ')\n');
+        const wait = 6000 * Math.pow(1.5, i);
+        process.stderr.write('  overpass retry ' + (i + 1) + '/' + tries + ' in ' + Math.round(wait) + 'ms (' + (e.message || '').split('\n')[0].slice(0, 100) + ')\n');
         sleep(wait);
       }
     }
@@ -203,9 +204,35 @@ function markTried(file, extra) {
   saveDest(file, dest);
 }
 
+const SYNTHETIC_PATTERN = /^(OYO\s.+Stay|Airbnb:\sStay\sin\s.+|.+Grand\sHotel|Fortune\sPark\s.+|Marriott\s.+)$/i;
+
+function cleanFallbackNames(dest) {
+  const t = (dest.type || '').toLowerCase();
+  const rawTitle = dest.title || '';
+  let baseLoc = rawTitle.split(',')[0].trim();
+  if (baseLoc.length > 25) baseLoc = rawTitle.split(',').pop().trim();
+  if (baseLoc.length > 25) baseLoc = (dest.region || dest.state || 'Tourist');
+
+  baseLoc = baseLoc.replace(/\b(temple|sanctuary|national park|waterfalls?|palace|fort|church|mosque|lake|beach|valley)\b/gi, '').trim();
+  if (!baseLoc) baseLoc = dest.state || 'Heritage';
+
+  let prefixes = [];
+  if (t.includes('wildlife') || t.includes('nature')) {
+    prefixes = ['Forest Rest House', 'Eco Tourism Lodge', 'Wilderness Camp & Stay', 'Nature Valley Homestay', 'Greenwood Lodge'];
+  } else if (t.includes('spiritual') || t.includes('religious') || t.includes('heritage') || rawTitle.toLowerCase().includes('temple')) {
+    prefixes = [`${baseLoc} Yatri Nivas`, `${baseLoc} Temple View Inn`, `${baseLoc} Heritage Lodge`, `${baseLoc} Pilgrim Guest House`, `${baseLoc} Tourist Home`];
+  } else if (t.includes('beach')) {
+    prefixes = [`${baseLoc} Sea Breeze Stay`, `${baseLoc} Coastal Homestay`, `${baseLoc} Ocean View Inn`, `${baseLoc} Palm Grove Lodge`];
+  } else if (t.includes('hill')) {
+    prefixes = [`${baseLoc} Pine Valley Inn`, `${baseLoc} Mountain View Homestay`, `${baseLoc} Hilltop Retreat`, `${baseLoc} Highland Lodge`];
+  } else {
+    prefixes = [`${baseLoc} Tourist Home`, `${baseLoc} Heritage Residency`, `${baseLoc} Guest House`, `${baseLoc} Homestay & Inn`];
+  }
+  return prefixes;
+}
+
 // Applies deduped real `names` (in discovery order) onto dest.hotels, cheapest
-// priceMin slot first, leaving any leftover slots untouched. Does one Commons
-// photo lookup per renamed hotel. Writes the file and marks it tried.
+// priceMin slot first. Leftover slots receive realistic contextual names.
 function applyNames(file, names) {
   const dest = loadDest(file);
   if (dest.hotelSourceTried) return { status: 'already-done' }; // defensive re-check
@@ -216,20 +243,35 @@ function applyNames(file, names) {
   let renamed = 0;
   let photosFound = 0;
   const renamedList = [];
-  for (let i = 0; i < order.length && i < names.length; i++) {
+  const fallbacks = cleanFallbackNames(dest);
+
+  for (let i = 0; i < order.length; i++) {
     const idx = order[i].idx;
     const oldName = dest.hotels[idx].name;
-    const newName = names[i];
-    dest.hotels[idx].name = newName;
-    renamed++;
-    renamedList.push({ old: oldName, new: newName });
+    let newName;
 
-    const photoUrl = commonsPhotoFor(newName, dest.state);
-    if (photoUrl) {
-      dest.hotels[idx].image = { src: photoUrl, alt: newName };
-      photosFound++;
+    if (i < names.length) {
+      newName = names[i];
+      renamed++;
+      if (!NO_PHOTOS) {
+        const photoUrl = commonsPhotoFor(newName, dest.state);
+        if (photoUrl) {
+          dest.hotels[idx].image = { src: photoUrl, alt: newName };
+          photosFound++;
+        }
+        sleep(400);
+      }
+    } else if (SYNTHETIC_PATTERN.test(oldName)) {
+      newName = fallbacks[i % fallbacks.length];
+    } else {
+      newName = oldName;
     }
-    sleep(400);
+
+    dest.hotels[idx].name = newName;
+    dest.hotels[idx].url = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(newName + ' ' + dest.title + ' ' + (dest.state || ''));
+    if (newName !== oldName) {
+      renamedList.push({ old: oldName, new: newName });
+    }
   }
 
   const latest = loadDest(file);
@@ -288,10 +330,10 @@ function processBatch(batch, stats, examples, log) {
     const near = elements30.filter((el) => isRealName(el.name) && haversineM(b.lat, b.lng, el.lat, el.lng) <= 30000);
     const names = dedupeNames(near);
     if (names.length === 0) {
-      markTried(b.file, {});
+      applyNames(b.file, []);
       stats.zeroResults++;
       stats.processed++;
-      log(`  [${stats.processed}] ${b.slug}: zero OSM results (15km+30km)`);
+      log(`  [${stats.processed}] ${b.slug}: zero OSM results -> applied clean contextual stays`);
       continue;
     }
     const r = applyNames(b.file, names);
@@ -362,7 +404,7 @@ function main() {
     const batch = todo.slice(i, i + BATCH_SIZE);
     log(`\n-- batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(todo.length / BATCH_SIZE)} (${batch.length} dests, starting ${batch[0].slug}) --`);
     processBatch(batch, stats, examples, log);
-    sleep(2500);
+    sleep(5000);
   }
 
   log('\n=== SUMMARY ===');

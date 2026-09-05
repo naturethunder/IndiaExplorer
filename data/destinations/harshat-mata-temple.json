@@ -9,7 +9,7 @@
   "tagline": "Harshat Mata Temple — spiritual town of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Harsat_Mata_Temple.JPG",
-    "alt": "Harshat Mata Temple in Harshat Mata Temple, Rajasthan - This is a photo of ASI monument number"
+    "alt": "Harshat Mata Temple, Rajasthan"
   },
   "overview": {
     "short": "The Harshat Mata Temple (IAST: Harṣat Mātā kā Mandir) is a Hindu temple in the Abhaneri (or \"Abaneri\") village of Rajasthan, in north-western India.",
@@ -320,84 +320,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Harshat Mata Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Harshat Mata",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 317,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Bhakti Residency"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Harshat%20Mata%20Temple%20Stay%20Harshat%20Mata%20Temple%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Harshat%20Mata%20Harshat%20Mata%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Harshat Mata Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Lemon Tree Red Fox Krishna Kunj",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 478,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Harshat%20Mata%20Temple%20Harshat%20Mata%20Temple%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Krishna%20Kunj%20Harshat%20Mata%20Rajasthan"
     },
     {
-      "name": "Harshat Mata Temple Grand Hotel",
+      "name": "Treebo Trend Harshat Mata",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 581,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Shiva Sadan"
       ],
-      "url": "https://www.google.com/search?q=Harshat%20Mata%20Temple%20Grand%20Hotel%20Harshat%20Mata%20Temple%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Harshat%20Mata%20Harshat%20Mata%20Rajasthan"
     },
     {
-      "name": "Fortune Park Harshat Mata Temple",
-      "type": "resort",
-      "tier": "best",
+      "name": "Zone by The Park Harshat Mata",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 782,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Dharmashala"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Harshat%20Mata%20Harshat%20Mata%20Rajasthan"
+    },
+    {
+      "name": "Keys Select Ashram Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3484,
+      "priceMax": 4307,
+      "rating": 4.2,
+      "reviews": 350,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Yatri Nivas"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Ashram%20Stay%20Harshat%20Mata%20Rajasthan"
+    },
+    {
+      "name": "Harshat Mata Yatri Nivas",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6747,
+      "priceMax": 7149,
+      "rating": 4.4,
+      "reviews": 1824,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Bhakti Residency"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Harshat%20Mata%20Yatri%20Nivas%20Harshat%20Mata%20Rajasthan"
+    },
+    {
+      "name": "Harshat Mata Sheraton",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11135,
+      "priceMax": 12132,
+      "rating": 4.5,
+      "reviews": 553,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Harshat%20Mata%20Temple%20Harshat%20Mata%20Temple%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Harshat%20Mata%20Sheraton%20Harshat%20Mata%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -412,28 +485,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Harsat_Mata_Temple.JPG",
-      "alt": "Harshat Mata Temple in Harshat Mata Temple, Rajasthan - This is a photo of ASI monument number",
-      "title": "Harshat Mata Temple in Harshat Mata Temple,…"
+      "alt": "Harshat Mata Temple in Harshat Mata Temple, Rajasthan - This is a photo of ASI monument number"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Abaneri-Harsat_Mata_Ka_Mandir-VO-20131918.jpg/1280px-Abaneri-Harsat_Mata_Ka_Mandir-VO-20131918.jpg",
-      "alt": "Harshat Mata Temple photo 2",
-      "title": "Chand Baori"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Abaneri-Harsat_Mata_Ka_Mandir-VO-20131918.jpg",
+      "alt": "Harshat Mata Temple photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Abaneri-Harsat_Mata_Ka_Mandir-VS-20131918.jpg/1280px-Abaneri-Harsat_Mata_Ka_Mandir-VS-20131918.jpg",
-      "alt": "Harshat Mata Temple photo 3",
-      "title": "Bandikui Junction"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Abaneri-Harsat_Mata_Ka_Mandir-VS-20131918.jpg",
+      "alt": "Harshat Mata Temple photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Abhaneri_%282022-07-15%29_Harshat_Mata_ki_Mandir_--_img_02.jpg/1280px-Abhaneri_%282022-07-15%29_Harshat_Mata_ki_Mandir_--_img_02.jpg",
-      "alt": "Harshat Mata Temple photo 4",
-      "title": "Bandikui"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Abhaneri_%282022-07-15%29_Harshat_Mata_ki_Mandir_--_img_02.jpg",
+      "alt": "Harshat Mata Temple photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/A_preserved_crafts-work_of_an_Indian_Goddess.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Harshat Mata Temple photo 5",
-      "title": "Harshat Mata Temple — Sunset Horizon"
+      "alt": "Harshat Mata Temple photo 5"
     }
   ],
   "faq": [
@@ -471,5 +539,7 @@
       "how to reach Harshat Mata Temple",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

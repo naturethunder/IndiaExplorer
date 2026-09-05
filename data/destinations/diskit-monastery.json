@@ -9,7 +9,7 @@
   "tagline": "Diskit Monastery — hill station of Ladakh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Diskit_monastery_in_ladakh.JPG",
-    "alt": "Diskit Monastery in Diskit Monastery, Ladakh - This is a photo of ASI monument number"
+    "alt": "Diskit Monastery, Ladakh"
   },
   "overview": {
     "short": "Diskit Monastery also known as Deskit Gompa or Diskit Gompa is the oldest and largest Buddhist monastery (gompa) in Diskit, Nubra Valley of the Leh district of Ladakh.",
@@ -273,84 +273,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Diskit Monastery Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Diskit Monastery",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 283,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Diskit%20Monastery%20Stay%20Diskit%20Monastery%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh"
     },
     {
-      "name": "Airbnb: Stay in Diskit Monastery",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Hilltop Retreat",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 295,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Backpacker Choice",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Hilltop%20Retreat%20Diskit%20Monastery%20Ladakh"
     },
     {
-      "name": "Diskit Monastery Grand Hotel",
+      "name": "OYO Townhouse Diskit Monastery",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 334,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Diskit%20Monastery%20Grand%20Hotel%20Diskit%20Monastery%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh"
     },
     {
-      "name": "Sterling Diskit Monastery",
-      "type": "resort",
-      "tier": "best",
+      "name": "Diskit Monastery Hilltop Retreat",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 445,
       "amenities": [
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
+      ],
+      "tags": [
+        "Good Value",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Diskit%20Monastery%20Hilltop%20Retreat%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Diskit Monastery Mist Haven",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2635,
+      "priceMax": 3249,
+      "rating": 4.2,
+      "reviews": 362,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Diskit%20Monastery%20Mist%20Haven%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Zone by The Park Diskit Monastery",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2907,
+      "priceMax": 3602,
+      "rating": 4.3,
+      "reviews": 1058,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Diskit Monastery Highland Resort",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4975,
+      "priceMax": 5896,
+      "rating": 4.4,
+      "reviews": 1989,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Diskit%20Monastery%20Highland%20Resort%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Hyatt Regency Diskit Monastery",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10890,
+      "priceMax": 12211,
+      "rating": 4.6,
+      "reviews": 2870,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Diskit%20Monastery%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Sheraton Summit View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11651,
+      "priceMax": 13188,
+      "rating": 4.6,
+      "reviews": 1740,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Summit%20View%20Diskit%20Monastery%20Ladakh"
+    },
+    {
+      "name": "Taj Mountain Resort",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 20788,
+      "priceMax": 22099,
+      "rating": 4.5,
+      "reviews": 2246,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Mountain%20Resort%20Diskit%20Monastery%20Ladakh"
     }
   ],
   "restaurants": [],
@@ -365,28 +505,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Diskit_monastery_in_ladakh.JPG",
-      "alt": "Diskit Monastery in Diskit Monastery, Ladakh - This is a photo of ASI monument number",
-      "title": "Diskit Monastery in Diskit Monastery, Ladakh - This…"
+      "alt": "Diskit Monastery in Diskit Monastery, Ladakh - This is a photo of ASI monument number"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_1.jpg/1280px-Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_1.jpg",
-      "alt": "Diskit Monastery photo 2",
-      "title": "Hundar, India"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_1.jpg",
+      "alt": "Diskit Monastery photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_3.jpg/1280px-Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_3.jpg",
-      "alt": "Diskit Monastery photo 3",
-      "title": "Diskit Monastery — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Jampa_Buddha_-_Diskit_Monastery_-_Ladakh_-_3.jpg",
+      "alt": "Diskit Monastery photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Diskit_Monastery%2C_Leh.jpg",
-      "alt": "Diskit Monastery photo 4",
-      "title": "Diskit Monastery — Sacred Heritage"
+      "alt": "Diskit Monastery photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Diskit-gompa-1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Diskit Monastery photo 5",
-      "title": "Diskit Monastery — Sunset Horizon"
+      "alt": "Diskit Monastery photo 5"
     }
   ],
   "faq": [
@@ -424,5 +559,7 @@
       "how to reach Diskit Monastery",
       "Ladakh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

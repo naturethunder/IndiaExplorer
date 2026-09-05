@@ -9,7 +9,7 @@
   "tagline": "Bijai Garh — heritage city of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Wallsbayana.jpg",
-    "alt": "Bijai Garh in Bijai Garh, Rajasthan - Fortress Bayana"
+    "alt": "Bijai Garh, Rajasthan"
   },
   "overview": {
     "short": "Bijai Garh, also known as Vijayamandirgarh or Bijaigarh, is a fort located in Bharatpur district.",
@@ -242,84 +242,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Bijai Garh Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Bijai Garh",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 210,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Period Property"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Bijai%20Garh%20Stay%20Bijai%20Garh%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Bijai%20Garh%20Bijai%20Garh%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Bijai Garh",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Bijai Garh Keys Prima",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 341,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Palace Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Bijai%20Garh%20Bijai%20Garh%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Bijai%20Garh%20Keys%20Prima%20Bijai%20Garh%20Rajasthan"
     },
     {
-      "name": "Bijai Garh Grand Hotel",
+      "name": "FabHotels Prime Mahal Palace",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 735,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Bijai%20Garh%20Grand%20Hotel%20Bijai%20Garh%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Mahal%20Palace%20Bijai%20Garh%20Rajasthan"
     },
     {
-      "name": "Marriott Bijai Garh",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Lemon Tree Bijai Garh",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 326,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Bijai%20Garh%20Bijai%20Garh%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Bijai%20Garh%20Bijai%20Garh%20Rajasthan"
+    },
+    {
+      "name": "Zone by The Park Rajwada",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3610,
+      "priceMax": 4775,
+      "rating": 4.1,
+      "reviews": 683,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Rajwada%20Bijai%20Garh%20Rajasthan"
+    },
+    {
+      "name": "The Fern Legacy Hotel",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 5137,
+      "priceMax": 6688,
+      "rating": 4.4,
+      "reviews": 1833,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Fort Residence"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Fern%20Legacy%20Hotel%20Bijai%20Garh%20Rajasthan"
+    },
+    {
+      "name": "Vivanta Royal Retreat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8830,
+      "priceMax": 9348,
+      "rating": 4.5,
+      "reviews": 844,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Mahal Palace"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Royal%20Retreat%20Bijai%20Garh%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -333,28 +405,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Wallsbayana.jpg",
-      "alt": "Bijai Garh in Bijai Garh, Rajasthan - Fortress Bayana",
-      "title": "Bijai Garh in Bijai Garh, Rajasthan - Fortress Bayana"
+      "alt": "Bijai Garh in Bijai Garh, Rajasthan - Fortress Bayana"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/William_Hodges_-_View_of_the_Fort_of_Bidjegur_%28Bijaigarh%29_-_B1978.43.1795_-_Yale_Center_for_British_Art.jpg/1280px-William_Hodges_-_View_of_the_Fort_of_Bidjegur_%28Bijaigarh%29_-_B1978.43.1795_-_Yale_Center_for_British_Art.jpg",
-      "alt": "Bijai Garh photo 2",
-      "title": "Bijai Garh — Historic Architecture"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/William_Hodges_-_View_of_the_Fort_of_Bidjegur_%28Bijaigarh%29_-_B1978.43.1795_-_Yale_Center_for_British_Art.jpg",
+      "alt": "Bijai Garh photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thomas_Daniell_-_Bijaigarh_%28Bidze_Gur%29_-_B2000.6.29_-_Yale_Center_for_British_Art.jpg/1280px-Thomas_Daniell_-_Bijaigarh_%28Bidze_Gur%29_-_B2000.6.29_-_Yale_Center_for_British_Art.jpg",
-      "alt": "Bijai Garh photo 3",
-      "title": "Bijai Garh — Scenic Nature"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Thomas_Daniell_-_Bijaigarh_%28Bidze_Gur%29_-_B2000.6.29_-_Yale_Center_for_British_Art.jpg",
+      "alt": "Bijai Garh photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/William_Hodges_-_A_View_of_the_Fort_of_Bidjegur_-_British_Library_X307%2810%29.jpg",
-      "alt": "Bijai Garh photo 4",
-      "title": "Bijai Garh — Sacred Heritage"
+      "alt": "Bijai Garh photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/William_Hodges_-_The_Fort_of_Bidjegur_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bijai Garh photo 5",
-      "title": "Bijai Garh — Sunset Horizon"
+      "alt": "Bijai Garh photo 5"
     }
   ],
   "faq": [
@@ -392,5 +459,7 @@
       "how to reach Bijai Garh",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

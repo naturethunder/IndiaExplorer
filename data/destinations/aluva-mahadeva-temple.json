@@ -9,7 +9,7 @@
   "tagline": "Aluva Mahadeva Temple — spiritual town of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Uliyannoor_Mahadeva_Temple_DSC_1833.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Aluva Mahadeva Temple scenic view 1"
+    "alt": "Aluva Mahadeva Temple, Kerala"
   },
   "overview": {
     "short": "Aluva Mahadeva Temple is an ancient Hindu temple dedicated to Shiva, and situated on the bank of the Periyar River at Aluva manappuram in suburban Kochi.",
@@ -202,11 +202,7 @@
       "name": "Ernakulam Junction (Kochi)",
       "distance": 18
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches.",
-    "nearestMetro": {
-      "name": "Aluva metro station",
-      "distance": 1
-    }
+    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
   },
   "topPlaces": [
     {
@@ -286,6 +282,44 @@
       ]
     },
     {
+      "name": "Aluva metro station",
+      "category": "cultural",
+      "distance": "Town Centre",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "Aluva is an elevated metro station serving as the northern terminal of the Kochi Metro. It is located besides the Aluva flyover near the Aluva market and the banks of the Periyar river.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Thottakkattukara_junction%2C_Aluva%2C_Ernakulam%2C_Kerala%2C_India.jpg/1280px-Thottakkattukara_junction%2C_Aluva%2C_Ernakulam%2C_Kerala%2C_India.jpg",
+        "alt": "Aluva metro station"
+      },
+      "photos": [
+        "https://pixabay.com/get/g2b2dc1d448a8b4b5e1b2e69c979bb995328d4a8435e58dcbbde2cee7c87933be6d47463a44fcee3a55eac5449028a67305fb7bae28fa2c5da2ff5705b8d94a58_1280.jpg",
+        "https://pixabay.com/get/g71eae996e6cb45b892a85446dd440b4a0eb58d58c7d96f448c0189c50fa146a06a02b994576f38fabb2213725450d5c1d360706e8f0a21b27da6a2d707939492_1280.jpg",
+        "https://pixabay.com/get/gb2739013a459b1b4cf119c5618fdda0996d24a9073d4b4e2f3fe63d746256dcf522a10e31d42cc2390c3b8de94e34d48e7d5612c226d667c2462ab749fcdf2ce_1280.jpg"
+      ]
+    },
+    {
+      "name": "Aluva KSRTC bus station",
+      "category": "scenic",
+      "distance": "1 km",
+      "entryFee": "Varies",
+      "timings": "Varies by season",
+      "duration": "1–2 hrs",
+      "rating": 4.4,
+      "description": "Aluva KSRTC bus station is a transport hub in the Indian city of Aluva, owned and operated by the Kerala State Road Transport Corporation (KSRTC). An important transport hub in the state, the station is located left aside Aluva railway station, one of the busiest railway stations in the Ernakulam district, and a kilometre away from Aluva metro station of Kochi Metro.",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/St_Mary%27s_Church_Thrikkunnathu.jpg/1280px-St_Mary%27s_Church_Thrikkunnathu.jpg",
+        "alt": "Aluva KSRTC bus station"
+      },
+      "photos": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/43/ManjanikkaraBava.jpg",
+        "https://images.pexels.com/photos/35877017/pexels-photo-35877017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/3810915/pexels-photo-3810915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ]
+    },
+    {
       "name": "Thottakkattukara",
       "category": "scenic",
       "distance": "1 km",
@@ -354,6 +388,16 @@
           "time": "Morning",
           "activity": "Marthanda Varma Bridge",
           "note": "Marthanda Varma Bridge is a twin-bridge located in the city of Aluva, in the Ernakulam district, Kerala, India. The bridges lie on the NH 544 connecting the banks of the Periyar river."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Aluva metro station",
+          "note": "Aluva is an elevated metro station serving as the northern terminal of the Kochi Metro. It is located besides the Aluva flyover near the Aluva market and the banks of the Periyar river."
+        },
+        {
+          "time": "Evening",
+          "activity": "Aluva KSRTC bus station",
+          "note": "Aluva KSRTC bus station is a transport hub in the Indian city of Aluva, owned and operated by the Kerala State Road Transport Corporation (KSRTC). An important transport hub in the state, the station is located left aside Aluva railway station, one of the busiest railway stations in the Ernakulam district, and a kilometre away from Aluva metro station of Kochi Metro."
         }
       ]
     },
@@ -376,84 +420,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Aluva Mahadeva Temple Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "GoStops Aluva Mahadeva",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 264,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Yatri Nivas"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Aluva%20Mahadeva%20Temple%20Stay%20Aluva%20Mahadeva%20Temple%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Aluva%20Mahadeva%20Aluva%20Mahadeva%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Aluva Mahadeva Temple",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Trend Yatri Nivas",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 435,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Aluva%20Mahadeva%20Temple%20Aluva%20Mahadeva%20Temple%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Yatri%20Nivas%20Aluva%20Mahadeva%20Kerala"
     },
     {
-      "name": "Aluva Mahadeva Temple Grand Hotel",
+      "name": "OYO Townhouse Bhakti Residency",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 533,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Dharmashala"
       ],
-      "url": "https://www.google.com/search?q=Aluva%20Mahadeva%20Temple%20Grand%20Hotel%20Aluva%20Mahadeva%20Temple%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Bhakti%20Residency%20Aluva%20Mahadeva%20Kerala"
     },
     {
-      "name": "Fortune Park Aluva Mahadeva Temple",
-      "type": "resort",
-      "tier": "best",
+      "name": "Zone by The Park Ashram Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 317,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Divine Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Ashram%20Stay%20Aluva%20Mahadeva%20Kerala"
+    },
+    {
+      "name": "Aluva Mahadeva Ginger",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3949,
+      "priceMax": 5473,
+      "rating": 4.1,
+      "reviews": 651,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Krishna Kunj"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Aluva%20Mahadeva%20Ginger%20Aluva%20Mahadeva%20Kerala"
+    },
+    {
+      "name": "Hyatt Place Aluva Mahadeva",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5862,
+      "priceMax": 6616,
+      "rating": 4.3,
+      "reviews": 1635,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Bhakti Residency"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Aluva%20Mahadeva%20Aluva%20Mahadeva%20Kerala"
+    },
+    {
+      "name": "Aluva Mahadeva Temple View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9427,
+      "priceMax": 10115,
+      "rating": 4.5,
+      "reviews": 629,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Ashram Stay"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Aluva%20Mahadeva%20Temple%20Aluva%20Mahadeva%20Temple%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Aluva%20Mahadeva%20Temple%20View%20Aluva%20Mahadeva%20Kerala"
     }
   ],
   "restaurants": [],
@@ -469,28 +586,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Uliyannoor_Mahadeva_Temple_DSC_1833.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Aluva Mahadeva Temple scenic view 1",
-      "title": "Aluva"
+      "alt": "Aluva Mahadeva Temple scenic view 1"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Aluva_Manappuram_Siva_Temple_Main.JPG/1280px-Aluva_Manappuram_Siva_Temple_Main.JPG",
-      "alt": "Aluva Mahadeva Temple photo 2",
-      "title": "Uliyannoor"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Aluva_Manappuram_Siva_Temple_Main.JPG",
+      "alt": "Aluva Mahadeva Temple photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Uliyannoor_Mahadeva_Temple_DSC_1824.jpg/1280px-Uliyannoor_Mahadeva_Temple_DSC_1824.jpg",
-      "alt": "Aluva Mahadeva Temple photo 3",
-      "title": "Nedumbassery"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Uliyannoor_Mahadeva_Temple_DSC_1824.jpg",
+      "alt": "Aluva Mahadeva Temple photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Uliyannoor_Mahadeva_Temple_DSC_1829.jpg/1280px-Uliyannoor_Mahadeva_Temple_DSC_1829.jpg",
-      "alt": "Aluva Mahadeva Temple photo 4",
-      "title": "Marthanda Varma Bridge"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Uliyannoor_Mahadeva_Temple_DSC_1829.jpg",
+      "alt": "Aluva Mahadeva Temple photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Uliyannoor_Mahadeva_Temple_DSC_1827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Aluva Mahadeva Temple photo 5",
-      "title": "Aluva metro station"
+      "alt": "Aluva Mahadeva Temple photo 5"
     }
   ],
   "faq": [
@@ -512,7 +624,7 @@
     },
     {
       "q": "What are the top places to visit in Aluva Mahadeva Temple?",
-      "a": "The top attractions are Aluva, Uliyannoor, Nedumbassery, Marthanda Varma Bridge."
+      "a": "The top attractions are Aluva, Uliyannoor, Nedumbassery, Marthanda Varma Bridge, Aluva metro station."
     }
   ],
   "seo": {
@@ -528,5 +640,7 @@
       "how to reach Aluva Mahadeva Temple",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

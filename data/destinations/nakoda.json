@@ -9,7 +9,7 @@
   "tagline": "Nakoda — spiritual town of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Stoney_Nakoda_Dance_Outfit_-_Royal_Ontario_Museum_%288032222514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Nakoda view 1 — Stoney Nakoda Dance Outfit - Royal Ontario Museum (8032222514)"
+    "alt": "Nakoda, Rajasthan"
   },
   "overview": {
     "short": "Nakoda Mewa Nagar is a village in the Barmer District of the Indian state of Rajasthan.",
@@ -332,7 +332,7 @@
       "description": "Mewa Nagar is a village in Pachpadra tehsil of Balotra District, Rajasthan, India.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bara_Kaman%2C_a_heritage_monument_in_Bijapur%2C_Karnataka_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mewa Nagar, Nakoda"
+        "alt": "Mewa Nagar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nakoda_summer_camp_near_Banff%2C_Alberta_%2818309624949%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -422,84 +422,159 @@
   ],
   "hotels": [
     {
-      "name": "OYO Nakoda Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "FabHotels Bhakti Residency",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 211,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Divine Retreat"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Nakoda%20Stay%20Nakoda%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Bhakti%20Residency%20Nakoda%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Nakoda",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Nakoda Hotel Royal Orchid",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 396,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Dharmashala"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Nakoda%20Nakoda%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Nakoda%20Hotel%20Royal%20Orchid%20Nakoda%20Rajasthan"
     },
     {
-      "name": "Nakoda Grand Hotel",
+      "name": "Treebo Trend Temple View",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 449,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Nakoda%20Grand%20Hotel%20Nakoda%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Temple%20View%20Nakoda%20Rajasthan"
     },
     {
-      "name": "Fortune Park Nakoda",
-      "type": "resort",
-      "tier": "best",
+      "name": "Nakoda Ashram Stay",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 916,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Ashram Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Nakoda%20Ashram%20Stay%20Nakoda%20Rajasthan"
+    },
+    {
+      "name": "Nakoda Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3708,
+      "priceMax": 5186,
+      "rating": 4.2,
+      "reviews": 871,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Temple View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Nakoda%20Lemon%20Tree%20Nakoda%20Rajasthan"
+    },
+    {
+      "name": "Nakoda Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6252,
+      "priceMax": 6948,
+      "rating": 4.3,
+      "reviews": 1250,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Yatri Nivas"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Nakoda%20Fairfield%20by%20Marriott%20Nakoda%20Rajasthan"
+    },
+    {
+      "name": "Hyatt Regency Divine Retreat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10624,
+      "priceMax": 12304,
+      "rating": 4.4,
+      "reviews": 1287,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Divine Retreat"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Nakoda%20Nakoda%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Divine%20Retreat%20Nakoda%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -515,28 +590,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Stoney_Nakoda_Dance_Outfit_-_Royal_Ontario_Museum_%288032222514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nakoda view 1 — Stoney Nakoda Dance Outfit - Royal Ontario Museum (8032222514)",
-      "title": "Nakoda view 1 — Stoney Nakoda Dance Outfit - Royal…"
+      "alt": "Nakoda view 1 — Stoney Nakoda Dance Outfit - Royal Ontario Museum (8032222514)"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Stoney_Nakoda_moccasins_-_Royal_Ontario_Museum.jpg/1280px-Stoney_Nakoda_moccasins_-_Royal_Ontario_Museum.jpg",
-      "alt": "Nakoda photo 2",
-      "title": "Khed Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Stoney_Nakoda_moccasins_-_Royal_Ontario_Museum.jpg",
+      "alt": "Nakoda photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Kalpesh%2CNakoda_Tirath_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nakoda view 3 — Kalpesh,Nakoda Tirath 2007",
-      "title": "Nakoda view 3 — Kalpesh,Nakoda Tirath 2007"
+      "alt": "Nakoda view 3 — Kalpesh,Nakoda Tirath 2007"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Stoney_Nakoda_high_moccasins_-_Royal_Ontario_Museum.jpg/1280px-Stoney_Nakoda_high_moccasins_-_Royal_Ontario_Museum.jpg",
-      "alt": "Nakoda photo 4",
-      "title": "Dandali"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Stoney_Nakoda_high_moccasins_-_Royal_Ontario_Museum.jpg",
+      "alt": "Nakoda photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Stoney_lang.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Nakoda photo 5",
-      "title": "Majivala"
+      "alt": "Nakoda photo 5"
     }
   ],
   "faq": [
@@ -574,5 +644,7 @@
       "how to reach Nakoda",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

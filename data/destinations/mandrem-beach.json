@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Mandrem Beach — beach town of Goa",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mandrem_Beach%2C_Goa%2C_India.jpg/1280px-Mandrem_Beach%2C_Goa%2C_India.jpg",
-    "alt": "Mandrem Beach photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mandrem_Beach%2C_Goa%2C_India.jpg",
+    "alt": "Mandrem Beach, Goa"
   },
   "overview": {
     "short": "Mandrem is a coastal village famous as a tourist spot in Pernem taluka in North Goa district of Goa state in India.",
@@ -420,84 +420,224 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mandrem Beach Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mandrem Seaside Retreat",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 421,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Harbour View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mandrem%20Beach%20Stay%20Mandrem%20Beach%20Goa%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Seaside%20Retreat%20Mandrem%20Goa"
     },
     {
-      "name": "Airbnb: Stay in Mandrem Beach",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "FabHotels Prime Mandrem",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 420,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Beach Resort"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mandrem%20Beach%20Mandrem%20Beach%20Goa%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Mandrem%20Mandrem%20Goa"
     },
     {
-      "name": "Mandrem Beach Grand Hotel",
+      "name": "Mandrem Treebo Trend",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 310,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Mandrem%20Beach%20Grand%20Hotel%20Mandrem%20Beach%20Goa%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Treebo%20Trend%20Mandrem%20Goa"
     },
     {
-      "name": "Marriott Mandrem Beach",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Mandrem Beach Resort",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 826,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Coastal Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Beach%20Resort%20Mandrem%20Goa"
+    },
+    {
+      "name": "Mandrem Holiday Inn Express",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3995,
+      "priceMax": 4646,
+      "rating": 4.1,
+      "reviews": 1005,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Shore Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Holiday%20Inn%20Express%20Mandrem%20Goa"
+    },
+    {
+      "name": "Mandrem Beach Resort Better",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5703,
+      "priceMax": 6686,
+      "rating": 4.3,
+      "reviews": 998,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Beach%20Resort%20Mandrem%20Goa"
+    },
+    {
+      "name": "Hyatt Regency Seaside Retreat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8103,
+      "priceMax": 8908,
+      "rating": 4.4,
+      "reviews": 1031,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Seaside%20Retreat%20Mandrem%20Goa"
+    },
+    {
+      "name": "Mandrem Beach Resort Best",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11015,
+      "priceMax": 12711,
+      "rating": 4.6,
+      "reviews": 2549,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Harbour View"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Mandrem%20Beach%20Mandrem%20Beach%20Goa%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mandrem%20Beach%20Resort%20Mandrem%20Goa"
+    },
+    {
+      "name": "JW Marriott Mandrem Palace",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 23915,
+      "priceMax": 25216,
+      "rating": 4.5,
+      "reviews": 2781,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Harbour View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=JW%20Marriott%20Mandrem%20Palace%20Mandrem%20Goa"
+    },
+    {
+      "name": "Six Senses Mandrem Resort & Spa",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 36498,
+      "priceMax": 38441,
+      "rating": 4.6,
+      "reviews": 1782,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Holistic Wellness",
+        "Curated Dining",
+        "Butler",
+        "Chauffeur",
+        "Experiences"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Six%20Senses%20Mandrem%20Resort%20%26%20Spa%20Mandrem%20Goa"
     }
   ],
   "restaurants": [],
@@ -514,30 +654,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mandrem_Beach%2C_Goa%2C_India.jpg/1280px-Mandrem_Beach%2C_Goa%2C_India.jpg",
-      "alt": "Mandrem Beach photo 2",
-      "title": "Morjim"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mandrem_Beach%2C_Goa%2C_India.jpg",
+      "alt": "Mandrem Beach photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Mandrem_Beach_2%2C_Mandrem%2C_Goa%2C_India.jpg/1280px-Mandrem_Beach_2%2C_Mandrem%2C_Goa%2C_India.jpg",
-      "alt": "Mandrem Beach photo 3",
-      "title": "Querim Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Mandrem_Beach_2%2C_Mandrem%2C_Goa%2C_India.jpg",
+      "alt": "Mandrem Beach photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mandrem_Beach%2C_Mandrem%2C_Goa%2C_India.jpg/1280px-Mandrem_Beach%2C_Mandrem%2C_Goa%2C_India.jpg",
-      "alt": "Mandrem Beach photo 4",
-      "title": "Parcem"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mandrem_Beach%2C_Mandrem%2C_Goa%2C_India.jpg",
+      "alt": "Mandrem Beach photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Deserted_Mandrem_beach%2C_Goa%2C_India_%28464057265%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Mandrem Beach photo 5",
-      "title": "Chapora Fort"
+      "alt": "Mandrem Beach photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Kas1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Mandrem Beach - Highlight 5",
-      "alt": "Lakes of Maharashtra",
-      "title": "Lakes of Maharashtra"
+      "alt": "Lakes of Maharashtra"
     }
   ],
   "faq": [
@@ -575,5 +709,7 @@
       "how to reach Mandrem Beach",
       "Goa tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

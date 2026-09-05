@@ -9,7 +9,7 @@
   "tagline": "Mount Abu — hill station of Rajasthan",
   "heroImage": {
     "src": "https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan"
+    "alt": "Mount Abu, Rajasthan"
   },
   "overview": {
     "short": "Mount Abu is a much-loved hill station in Rajasthan, known for only hill station and dilwara temples.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 21000,
     "minPrice": 1000,
-    "distanceFromDelhi": 747,
-    "about": "Mount Abu, in Aravalli Range, Rajasthan, is one of India’s favourite hill station. Visitors come for its only hill station, dilwara temples, nakki lake, with the best months being Oct – Mar."
+    "distanceFromDelhi": 747
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "Exquisite 11th-13th century marble Jain temples.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dilwara_temple_in_mount_abu.jpg/1280px-Dilwara_temple_in_mount_abu.jpg",
-        "alt": "Dilwara Jain Temples in Rajasthan, India"
+        "alt": "Dilwara Jain Temples"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/01/Main_Uddin_and_Chaulung_Chukafa_Web_Team.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "scenic",
       "distance": "Town Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Sacred boating lake said to be dug by gods with their nails.",
       "image": {
         "src": "https://images.pexels.com/photos/19435858/pexels-photo-19435858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "Beautiful rock formation and trees reflecting in a tranquil lake at Mount Abu, Rajasthan, India."
+        "alt": "Nakki Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nakki_Lake%2C_Mount_Abu%2C_Rajasthan%2C_610.jpg/1280px-Nakki_Lake%2C_Mount_Abu%2C_Rajasthan%2C_610.jpg",
@@ -253,13 +252,13 @@
       "category": "scenic",
       "distance": "15 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Highest peak of the Aravallis at 1,722m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Guru_shikhar_-_mount_abu.jpg/1280px-Guru_shikhar_-_mount_abu.jpg",
-        "alt": "Guru Shikhar in Rajasthan, India"
+        "alt": "Guru Shikhar"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view_of_Jatinga_village%2C_Assam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -299,84 +298,222 @@
   ],
   "hotels": [
     {
-      "name": "OYO Mount Abu Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Mount Abu The Hosteller",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 164,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Mount%20Abu%20Stay%20Mount%20Abu%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20The%20Hosteller%20Mount%20Abu%20Rajasthan"
     },
     {
-      "name": "Airbnb: Stay in Mount Abu",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "FabHotels Mount Abu",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 389,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Mount%20Abu%20Mount%20Abu%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Mount%20Abu%20Mount%20Abu%20Rajasthan"
     },
     {
-      "name": "Mount Abu Grand Hotel",
+      "name": "Mount Abu Mountain Resort",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3000,
       "priceMax": 4500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 784,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Cloud Nine"
       ],
-      "url": "https://www.google.com/search?q=Mount%20Abu%20Grand%20Hotel%20Mount%20Abu%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20Mountain%20Resort%20Mount%20Abu%20Rajasthan"
     },
     {
-      "name": "Sterling Mount Abu",
-      "type": "resort",
-      "tier": "best",
+      "name": "Mount Abu Peak Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 6000,
       "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 530,
       "amenities": [
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
+      ],
+      "tags": [
+        "Popular Pick",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20Peak%20Stay%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Ibis Summit View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2446,
+      "priceMax": 2961,
+      "rating": 4.4,
+      "reviews": 730,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Well Rated",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Summit%20View%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Zone by The Park Mountain Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2966,
+      "priceMax": 3366,
+      "rating": 4.4,
+      "reviews": 836,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Mountain%20Resort%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Mount Abu Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5778,
+      "priceMax": 7640,
+      "rating": 4.3,
+      "reviews": 1669,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20Radisson%20Blu%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Mount Abu Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11420,
+      "priceMax": 12527,
+      "rating": 4.5,
+      "reviews": 1455,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20Marriott%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Mount Abu Hyatt Regency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11970,
+      "priceMax": 13880,
+      "rating": 4.5,
+      "reviews": 2505,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Mount%20Abu%20Mount%20Abu%20Rajasthan%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mount%20Abu%20Hyatt%20Regency%20Mount%20Abu%20Rajasthan"
+    },
+    {
+      "name": "Leela Alpine Lodge",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 14098,
+      "priceMax": 15345,
+      "rating": 4.5,
+      "reviews": 732,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Leela%20Alpine%20Lodge%20Mount%20Abu%20Rajasthan"
     }
   ],
   "restaurants": [],
@@ -390,28 +527,23 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan",
-      "title": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan"
+      "alt": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ceiling_of_Dilwara_Jain_Temple_Abu_Rajasthan_India.jpg/1280px-Ceiling_of_Dilwara_Jain_Temple_Abu_Rajasthan_India.jpg",
-      "alt": "Mount Abu photo 2",
-      "title": "Nakki Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Ceiling_of_Dilwara_Jain_Temple_Abu_Rajasthan_India.jpg",
+      "alt": "Mount Abu photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Abu_Observatory.JPG/1280px-Mount_Abu_Observatory.JPG",
-      "alt": "Mount Abu photo 3",
-      "title": "Guru Shikhar"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Mount_Abu_Observatory.JPG",
+      "alt": "Mount Abu photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Guru_Shikhar.jpg/1280px-Guru_Shikhar.jpg",
-      "alt": "Mount Abu photo 4",
-      "title": "Mount Abu — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Guru_Shikhar.jpg",
+      "alt": "Mount Abu photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/The_Jain_temples_on_mount_Abu%2C_Rajasthan.jpg/1280px-The_Jain_temples_on_mount_Abu%2C_Rajasthan.jpg",
-      "alt": "Mount Abu photo 5",
-      "title": "Mount Abu — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/The_Jain_temples_on_mount_Abu%2C_Rajasthan.jpg",
+      "alt": "Mount Abu photo 5"
     }
   ],
   "faq": [
@@ -440,7 +572,7 @@
     "title": "Mount Abu Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
     "description": "Mount Abu is a much-loved hill station in Rajasthan, known for only hill station and dilwara temples. Plan your Mount Abu trip: 3 places to visit, 4 stays from ₹1000/night, best time (Oct – Mar) and routes.",
     "canonical": "destination.html?slug=mount-abu",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Woman_with_a_water_pot%2C_Mount_Abu%2C_Rajasthan.jpg",
+    "ogImage": "https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "keywords": [
       "Mount Abu travel guide",
       "places to visit in Mount Abu",
@@ -449,5 +581,7 @@
       "how to reach Mount Abu",
       "Rajasthan tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

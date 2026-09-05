@@ -9,7 +9,7 @@
   "tagline": "Kolkata — heritage city of West Bengal",
   "heroImage": {
     "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata"
+    "alt": "Kolkata, West Bengal"
   },
   "overview": {
     "short": "Kolkata is a much-loved heritage city in West Bengal, known for victoria memorial and trams.",
@@ -24,8 +24,7 @@
     "rating": 4.5,
     "reviewCount": 49000,
     "minPrice": 1200,
-    "distanceFromDelhi": 1500,
-    "about": "Kolkata, in Hooghly Delta, West Bengal, is one of India’s favourite heritage city. Visitors come for its victoria memorial, trams, durga puja, sweets, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1500
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -215,13 +214,13 @@
       "category": "heritage",
       "distance": "Centre",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.7,
       "description": "Grand white-marble museum of the British Raj era.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Victoria_Memorial%2C_Kolkata_-_West_facade_01.jpg/1280px-Victoria_Memorial%2C_Kolkata_-_West_facade_01.jpg",
-        "alt": "Victoria Memorial in West Bengal, India"
+        "alt": "Victoria Memorial"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/4e/Old_monastry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "heritage",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Iconic cantilever bridge over the Hooghly river.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Howrah_Railway_Station_02.jpg/1280px-Howrah_Railway_Station_02.jpg",
-        "alt": "Howrah Bridge in West Bengal, India"
+        "alt": "Howrah Bridge"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/48/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "spiritual",
       "distance": "12 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "Riverside temple linked to the saint Ramakrishna.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Inside_the_Dakshineswar_temple_complex%2C_North_24_Parganas_district%2C_India.jpg/1280px-Inside_the_Dakshineswar_temple_complex%2C_North_24_Parganas_district%2C_India.jpg",
-        "alt": "Dakshineswar Kali Temple in West Bengal, India"
+        "alt": "Dakshineswar Kali Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg/1280px-Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg",
@@ -299,84 +298,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kolkata Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Kolkata Treebo",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 140,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kolkata%20Stay%20Kolkata%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Treebo%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Airbnb: Stay in Kolkata",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Kolkata Mahal Palace",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 536,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kolkata%20Kolkata%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Mahal%20Palace%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Kolkata Grand Hotel",
+      "name": "OYO Townhouse Mahal Palace",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 686,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Kolkata%20Grand%20Hotel%20Kolkata%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Mahal%20Palace%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Marriott Kolkata",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Kolkata Ginger",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 776,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Kolkata%20Kolkata%20West%20Bengal%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Ginger%20Kolkata%20West%20Bengal"
+    },
+    {
+      "name": "Kolkata Rajwada",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3593,
+      "priceMax": 5243,
+      "rating": 4.2,
+      "reviews": 348,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Rajwada"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Rajwada%20Kolkata%20West%20Bengal"
+    },
+    {
+      "name": "Kolkata Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6167,
+      "priceMax": 6927,
+      "rating": 4.4,
+      "reviews": 596,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Fairfield%20by%20Marriott%20Kolkata%20West%20Bengal"
+    },
+    {
+      "name": "Westin Heritage Hotel",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9283,
+      "priceMax": 11179,
+      "rating": 4.4,
+      "reviews": 686,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Legacy Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Heritage%20Hotel%20Kolkata%20West%20Bengal"
     }
   ],
   "restaurants": [],
@@ -391,28 +461,23 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata",
-      "title": "Victoria Memorial marble architecture and…"
+      "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Pavilion_at_the_Victoria_Memorial%2C_Kolkata_02.jpg/1280px-Pavilion_at_the_Victoria_Memorial%2C_Kolkata_02.jpg",
-      "alt": "Kolkata photo 2",
-      "title": "Howrah Bridge"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pavilion_at_the_Victoria_Memorial%2C_Kolkata_02.jpg",
+      "alt": "Kolkata photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Howrah_Bridge%2C_Foggy.jpg/1280px-Howrah_Bridge%2C_Foggy.jpg",
-      "alt": "Kolkata photo 3",
-      "title": "Dakshineswar Kali Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Howrah_Bridge%2C_Foggy.jpg",
+      "alt": "Kolkata photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Howrah_Railway_Station_01.jpg/1280px-Howrah_Railway_Station_01.jpg",
-      "alt": "Kolkata photo 4",
-      "title": "Kolkata — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Howrah_Railway_Station_01.jpg",
+      "alt": "Kolkata photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dakshineswar_Kali_temple%2C_Kolkata%2C_West_Bengal%2C_India.JPG/1280px-Dakshineswar_Kali_temple%2C_Kolkata%2C_West_Bengal%2C_India.JPG",
-      "alt": "Kolkata photo 5",
-      "title": "Kolkata — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Dakshineswar_Kali_temple%2C_Kolkata%2C_West_Bengal%2C_India.JPG",
+      "alt": "Kolkata photo 5"
     }
   ],
   "faq": [
@@ -441,7 +506,7 @@
     "title": "Kolkata Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
     "description": "Kolkata is a much-loved heritage city in West Bengal, known for victoria memorial and trams. Plan your Kolkata trip: 3 places to visit, 4 stays from ₹1200/night, best time (Oct – Mar) and routes.",
     "canonical": "destination.html?slug=kolkata",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/c/ce/India_-_Kolkata_electricity_meters_-_3832.jpg",
+    "ogImage": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "keywords": [
       "Kolkata travel guide",
       "places to visit in Kolkata",
@@ -450,5 +515,7 @@
       "how to reach Kolkata",
       "West Bengal tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

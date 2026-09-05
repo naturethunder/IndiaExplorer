@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ExploreDesh — Discover Incredible India</title>
   <meta name="description"
-    content="Discover India's 2,388 most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
+    content="Discover India's 2,392 most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
   <meta name="keywords"
     content="India travel, travel guide, tourist destinations India, hill stations, beaches, heritage spots, trip planner" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="referrer" content="no-referrer" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="theme-color" content="#080A0F" />
   <link rel="canonical" href="https://exploredesh.com/" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-  <!-- Google Fonts: Cinzel, Playfair Display & Plus Jakarta Sans for Royal Gold Theme -->
+  <!-- CDN & Resource Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+  <link rel="preconnect" href="https://commons.wikimedia.org" crossorigin />
+  <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <!-- Preload LCP Hero Photo -->
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" fetchpriority="high" />
+  <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Bodoni Moda, Playfair Display & Plus Jakarta Sans -->
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Jost:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Jost:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/tailwind.css" />
@@ -44,21 +51,22 @@
   <main id="main">
     <!-- ═══════════════ HERO ═══════════════ -->
     <section class="hero-home">
-      <div class="hero-home-bg" id="heroBg"></div>
+      <div class="hero-home-bg" id="heroBg" style="background-image: url('https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');"></div>
       <div class="hero-home-overlay"></div>
 
       <div class="relative z-10 w-full px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-24">
         <div class="grid lg:grid-cols-12 gap-10 items-start">
           <!-- Left: headline + search -->
           <div class="lg:col-span-8">
+            <div class="calligraphy-kicker animate-fade-up">✦ Timeless Journeys Across Bharat ✦</div>
             <h1 class="font-display text-white animate-fade-up"
               style="font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.05;">
               Explore. Plan.<br class="hidden sm:block" />
-              <span style="color:var(--primary-light)">Travel.</span> Repeat.
+              <span class="gold-gradient-text">Travel.</span> <span class="font-calligraphy text-amber-300 text-[1.15em] font-normal tracking-wide">Experience.</span>
             </h1>
 
-            <p class="text-white/85 text-lg mt-5 mb-8 max-w-xl animate-fade-up delay-100">
-              Discover incredible places across India with ExploreDesh
+            <p class="text-white/85 text-lg mt-4 mb-8 max-w-xl animate-fade-up delay-100">
+              Discover incredible sanctuaries and heritage wonders across India with ExploreDesh
             </p>
 
             <!-- Segmented search bar (search input + Where/When/Travelers + wiring) -->
@@ -159,8 +167,11 @@
         <div class="discover-row">
           <!-- Trending carousel -->
           <div class="discover-trending reveal">
-            <div class="flex items-center justify-between mb-5">
-              <h2 class="section-title text-2xl">Trending Destinations</h2>
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <span class="calligraphy-kicker text-sm block mb-1">✦ Handcrafted Journeys ✦</span>
+                <h2 class="section-title text-2xl">Trending Destinations</h2>
+              </div>
               <a href="destinations.html" class="section-link">View all
                 <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -192,8 +203,11 @@
 
           <!-- Explore India map -->
           <div class="discover-map reveal">
-            <div class="flex items-center justify-between mb-5">
-              <h2 class="section-title text-2xl">Interactive India Map</h2>
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <span class="calligraphy-kicker text-sm block mb-1">✦ Cartography of Wonder ✦</span>
+                <h2 class="section-title text-2xl">Interactive India Map</h2>
+              </div>
               <a href="destinations.html" class="section-link">View all states
                 <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -215,6 +229,7 @@
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 reveal">
           <div>
+            <span class="calligraphy-kicker text-sm block mb-1">✦ Wanderlust of the Season ✦</span>
             <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1 flex items-center gap-1.5">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Monthly Highlights
             </p>
@@ -249,6 +264,7 @@
     <section class="py-14">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="mb-8 reveal">
+          <span class="calligraphy-kicker text-sm block mb-1">✦ Seasonal Escapes ✦</span>
           <h2 class="section-title">Travel This Season</h2>
           <p class="section-subtitle">Where to go, whatever the weather</p>
         </div>
@@ -263,6 +279,7 @@
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between mb-8 reveal">
           <div>
+            <span class="calligraphy-kicker text-sm block mb-1">✦ The Crown Jewels ✦</span>
             <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-1">Most Visited</p>
             <h2 class="section-title">Popular Destinations</h2>
           </div>
@@ -285,6 +302,7 @@
     <section class="py-14">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 reveal">
+          <span class="calligraphy-kicker block mb-1">✦ Tailored For Every Journey ✦</span>
           <h2 class="section-title">Browse by Budget</h2>
           <p class="section-subtitle">From backpacker stays to palace suites — every budget welcome</p>
         </div>
@@ -299,6 +317,7 @@
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between mb-8 reveal">
           <div>
+            <span class="calligraphy-kicker text-sm block mb-1">✦ Sanctuaries in the Clouds ✦</span>
             <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-1">Escape to the Hills</p>
             <h2 class="section-title">Best Hill Stations</h2>
           </div>
@@ -321,6 +340,7 @@
     <section class="py-14 bg-gray-50">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 reveal">
+          <span class="calligraphy-kicker block mb-1">✦ Infinite Wonders of Bharat ✦</span>
           <h2 class="section-title">Explore More</h2>
           <p class="section-subtitle">Beaches, Heritage, Wildlife and more across India</p>
         </div>
@@ -328,7 +348,7 @@
           <!-- Rendered by JS -->
         </div>
         <div class="text-center mt-10 reveal">
-          <a href="destinations.html" class="btn btn-primary">Browse All 2,388 Destinations</a>
+          <a href="destinations.html" class="btn btn-primary">Browse All 2,392 Destinations</a>
         </div>
       </div>
     </section>
@@ -351,7 +371,7 @@
     "name": "ExploreDesh",
     "url": "https://exploredesh.com",
     "logo": "https://exploredesh.com/images/favicon.svg",
-    "description": "India's most comprehensive travel planning platform with 2,388 destinations across 36 states."
+    "description": "India's most comprehensive travel planning platform with 2,392 destinations across 36 states."
   }
   </script>
   <script type="application/ld+json">

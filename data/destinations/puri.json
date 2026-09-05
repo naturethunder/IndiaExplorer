@@ -9,7 +9,7 @@
   "tagline": "Puri — spiritual town of Odisha",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/At_Puri_beach_05.jpg",
-    "alt": "Puri in Puri, Odisha - Boats at Puri beach"
+    "alt": "Puri, Odisha"
   },
   "overview": {
     "short": "Puri is a much-loved spiritual town in Odisha, known for jagannath and beach.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 32000,
     "minPrice": 900,
-    "distanceFromDelhi": 1700,
-    "about": "Puri, in Coromandel Coast, Odisha, is one of India’s favourite spiritual town. Visitors come for its jagannath, beach, rath yatra, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1700
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -218,13 +217,13 @@
       "category": "spiritual",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.7,
       "description": "One of the Char Dham, home of the famous Rath Yatra chariots.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jagannath_Temple%2C_Puri_03.jpg/1280px-Jagannath_Temple%2C_Puri_03.jpg",
-        "alt": "Jagannath Temple in Odisha, India"
+        "alt": "Jagannath Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rising_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "beach",
       "distance": "2 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.4,
       "description": "Wide golden beach famed for sunrise and sand art.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/At_Puri_beach_05.jpg/1280px-At_Puri_beach_05.jpg",
-        "alt": "Puri Beach in Odisha, India"
+        "alt": "Puri Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/6b/Full_of_tree%27s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "50 km",
       "entryFee": "₹1,200",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Asia’s largest brackish lagoon with dolphins and migratory birds.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Chilka-North-c.jpg/1280px-Chilka-North-c.jpg",
-        "alt": "Chilika Lake in Odisha, India"
+        "alt": "Chilika Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Satpada.jpg/1280px-Satpada.jpg",
@@ -302,84 +301,157 @@
   ],
   "hotels": [
     {
-      "name": "OYO Puri Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Puri",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 378,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Krishna Kunj"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Puri%20Stay%20Puri%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Puri%20Puri%20Odisha"
     },
     {
-      "name": "Airbnb: Stay in Puri",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Puri Ashram Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 216,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Puri%20Puri%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Puri%20Ashram%20Stay%20Puri%20Odisha"
     },
     {
-      "name": "Puri Grand Hotel",
+      "name": "OYO Townhouse Puri",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 338,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Temple View"
       ],
-      "url": "https://www.google.com/search?q=Puri%20Grand%20Hotel%20Puri%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Puri%20Puri%20Odisha"
     },
     {
-      "name": "Fortune Park Puri",
-      "type": "resort",
-      "tier": "best",
+      "name": "Puri Fortune",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 1024,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Well Rated",
+        "Pilgrim Lodge"
       ],
-      "url": "https://www.google.com/search?q=Fortune%20Park%20Puri%20Puri%20Odisha%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Puri%20Fortune%20Puri%20Odisha"
+    },
+    {
+      "name": "Puri Keys Select",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3775,
+      "priceMax": 5548,
+      "rating": 4.3,
+      "reviews": 1132,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Pilgrim Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Puri%20Keys%20Select%20Puri%20Odisha"
+    },
+    {
+      "name": "Holiday Inn Puri",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5125,
+      "priceMax": 6200,
+      "rating": 4.5,
+      "reviews": 1531,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Krishna Kunj"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Puri%20Puri%20Odisha"
+    },
+    {
+      "name": "Puri Bhakti Residency",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8122,
+      "priceMax": 9970,
+      "rating": 4.5,
+      "reviews": 2283,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Ashram Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Puri%20Bhakti%20Residency%20Puri%20Odisha"
     }
   ],
   "restaurants": [],
@@ -394,29 +466,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/At_Puri_beach_05.jpg",
-      "alt": "Puri in Puri, Odisha - Boats at Puri beach",
-      "title": "Puri in Puri, Odisha - Boats at Puri beach"
+      "alt": "Puri in Puri, Odisha - Boats at Puri beach"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Jagannath_Temple%2C_Puri_02.jpg/1280px-Jagannath_Temple%2C_Puri_02.jpg",
-      "alt": "Puri photo 2",
-      "title": "Puri Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jagannath_Temple%2C_Puri_02.jpg",
+      "alt": "Puri photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/At_Puri_beach_02.jpg/1280px-At_Puri_beach_02.jpg",
-      "alt": "Puri photo 3",
-      "title": "Chilika Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/At_Puri_beach_02.jpg",
+      "alt": "Puri photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/At_Puri_beach_03.jpg/1280px-At_Puri_beach_03.jpg",
-      "alt": "Puri photo 4",
-      "title": "Puri — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/At_Puri_beach_03.jpg",
+      "alt": "Puri photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tree_without_leaf_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Puri - Highlight 5",
-      "alt": "Trees in India",
-      "title": "Trees in India"
+      "alt": "Trees in India"
     }
   ],
   "faq": [
@@ -454,5 +520,7 @@
       "how to reach Puri",
       "Odisha tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

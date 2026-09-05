@@ -244,7 +244,40 @@ function toDestinationJSON(d) {
     d.nearestAirport = reach.nearestAirport;
     d.nearestRailway = reach.nearestRailway;
   }
-  return {
+
+  // PRESERVE: Use existing hotels if they have real chain data (hotelsRealSourceCount > 0)
+  // Otherwise fall back to legacy d.stays
+  let hotels;
+  if (existing && Array.isArray(existing.hotels) && existing.hotels.length > 0 && existing.hotelsRealSourceCount > 0) {
+    // Preserve our regenerated hotels with real chain names
+    hotels = existing.hotels.map((h, idx) => {
+      const s = d.stays && d.stays[idx];
+      return {
+        ...h,
+        // Sync price bounds from legacy if available (but keep real chain name)
+        priceMin: s && s.priceMin ? s.priceMin : h.priceMin,
+        priceMax: s && s.priceMax ? s.priceMax : h.priceMax,
+        // Ensure URL is a proper Google Maps search link
+        url: h.url && h.url.includes('api=1&query=') ? h.url : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + ' ' + d.name + ' ' + (d.state || ''))}`,
+      };
+    });
+  } else {
+    // Fallback: build from legacy stays
+    hotels = (d.stays || []).map((s) => ({
+      name: s.name,
+      type: s.type || '',
+      tier: s.tier || '',
+      priceMin: s.priceMin || 0,
+      priceMax: s.priceMax || 0,
+      rating: s.rating || 0,
+      reviews: s.reviews || 0,
+      amenities: s.amenities || [],
+      tags: s.tags || [],
+      url: s.url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name + ' ' + d.name + ' ' + (d.state || '') + ' hotel')}`,
+    }));
+  }
+
+  const result = {
     slug: d.id,
     title: d.name,
     state: d.state,
@@ -298,18 +331,7 @@ function toDestinationJSON(d) {
       };
     }),
     itinerary: buildItinerary(d),
-    hotels: (d.stays || []).map((s) => ({
-      name: s.name,
-      type: s.type || '',
-      tier: s.tier || '',
-      priceMin: s.priceMin || 0,
-      priceMax: s.priceMax || 0,
-      rating: s.rating || 0,
-      reviews: s.reviews || 0,
-      amenities: s.amenities || [],
-      tags: s.tags || [],
-      url: s.url || `https://www.google.com/search?q=${encodeURIComponent(s.name + ' ' + d.name + ' ' + (d.state || '') + ' hotel')}`,
-    })),
+    hotels,
     restaurants: [],
     activities: buildActivities(d),
     gallery: (existing && Array.isArray(existing.gallery) && existing.gallery.length)
@@ -327,6 +349,21 @@ function toDestinationJSON(d) {
       ],
     },
   };
+
+  // Preserve hotel verification metadata
+  if (existing && existing.hotelsRealSourceCount) {
+    result.hotelsRealSourceCount = existing.hotelsRealSourceCount;
+  }
+  if (existing && existing.hotelSourceTried) {
+    result.hotelSourceTried = existing.hotelSourceTried;
+  }
+
+  // Also copy over any other hotel-related metadata
+  if (existing && existing.hotelSourceCount) {
+    result.hotelSourceCount = existing.hotelSourceCount;
+  }
+
+  return result;
 }
 
 function toSummary(d) {

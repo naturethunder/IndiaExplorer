@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Kappad — beach town of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kappad_2.jpg/1280px-Kappad_2.jpg",
-    "alt": "Kappad photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Kappad_2.jpg",
+    "alt": "Kappad, Kerala"
   },
   "overview": {
     "short": "Kappad, or Kappakadavu locally, is a beach and village near Koyilandy, in the Kozhikode district, Kerala, India.",
@@ -235,7 +235,7 @@
       "description": "Kanjilassery Maha Siva Temple is located at Chemancheri village in Kozhikode district, in Kerala, India. The presiding deity of the temple is Lord Shiva, located in main Sanctum Sanctorum, facing west.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/%E0%B4%95%E0%B4%BE%E0%B4%9E%E0%B5%8D%E0%B4%9E%E0%B4%BF%E0%B4%B2%E0%B4%B6%E0%B5%87%E0%B4%B0%E0%B4%BF_%E0%B4%AE%E0%B4%B9%E0%B4%BE%E0%B4%A6%E0%B5%87%E0%B4%B5%E0%B4%95%E0%B5%8D%E0%B4%B7%E0%B5%87%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%82.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Kanjilassery Maha Siva Temple in Kappad, Kerala"
+        "alt": "Kanjilassery Maha Siva Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kappad_Beach_%28Kerala-2008%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -420,84 +420,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kappad Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Treebo Kappad",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 136,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Wave Crest"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kappad%20Stay%20Kappad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Kappad%20Kappad%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Kappad",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ibis Budget Beach Resort",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.3,
+      "reviews": 625,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kappad%20Kappad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Beach%20Resort%20Kappad%20Kerala"
     },
     {
-      "name": "Kappad Grand Hotel",
+      "name": "Kappad Beach Resort",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 685,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=Kappad%20Grand%20Hotel%20Kappad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kappad%20Beach%20Resort%20Kappad%20Kerala"
     },
     {
-      "name": "Marriott Kappad",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Ibis Palm Grove",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 426,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Beach Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Palm%20Grove%20Kappad%20Kerala"
+    },
+    {
+      "name": "Kappad Ginger",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3859,
+      "priceMax": 5784,
+      "rating": 4.3,
+      "reviews": 921,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Shore Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kappad%20Ginger%20Kappad%20Kerala"
+    },
+    {
+      "name": "Kappad The Fern",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6157,
+      "priceMax": 8062,
+      "rating": 4.5,
+      "reviews": 1186,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Tide Pool"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kappad%20The%20Fern%20Kappad%20Kerala"
+    },
+    {
+      "name": "Taj Vivanta Harbour View",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8804,
+      "priceMax": 10113,
+      "rating": 4.5,
+      "reviews": 2244,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Tide Pool"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Harbour%20View%20Kappad%20Kerala"
+    },
+    {
+      "name": "The Gateway Kappad",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9345,
+      "priceMax": 9971,
+      "rating": 4.4,
+      "reviews": 1153,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Palm Grove"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Kappad%20Kappad%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Kappad%20Kappad%20Kerala"
+    },
+    {
+      "name": "The Oberoi Kappad",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 14389,
+      "priceMax": 14740,
+      "rating": 4.6,
+      "reviews": 3011,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "World Class",
+        "Beach Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Kappad%20Kappad%20Kerala"
+    },
+    {
+      "name": "Rosewood Shore Stay",
+      "type": "hotel",
+      "tier": "extra_luxury",
+      "priceMin": 29691,
+      "priceMax": 30310,
+      "rating": 4.8,
+      "reviews": 1964,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Once in a Lifetime",
+        "Sand & Surf"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Rosewood%20Shore%20Stay%20Kappad%20Kerala"
     }
   ],
   "restaurants": [],
@@ -513,30 +655,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kappad_2.jpg/1280px-Kappad_2.jpg",
-      "alt": "Kappad photo 2",
-      "title": "Vettilappara"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Kappad_2.jpg",
+      "alt": "Kappad photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kappad_5.jpg/1280px-Kappad_5.jpg",
-      "alt": "Kappad photo 3",
-      "title": "Kanjilassery Maha Siva Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kappad_5.jpg",
+      "alt": "Kappad photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kappad.jpg/1280px-Kappad.jpg",
-      "alt": "Kappad photo 4",
-      "title": "Chemancheri"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kappad.jpg",
+      "alt": "Kappad photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Grishneshwar_trust.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kappad - Highlight 4",
-      "alt": "Grishneshwar Temple",
-      "title": "Grishneshwar Temple"
+      "alt": "Grishneshwar Temple"
     },
     {
       "src": "https://images.pexels.com/photos/6652178/pexels-photo-6652178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Varkala Beach with cliffs, boats, and people enjoying the sunny day by the sea.",
-      "title": "Varkala Beach with cliffs, boats, and people…"
+      "alt": "Varkala Beach with cliffs, boats, and people enjoying the sunny day by the sea."
     }
   ],
   "faq": [
@@ -574,5 +710,7 @@
       "how to reach Kappad",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

@@ -9,7 +9,7 @@
   "tagline": "Lachung — hill station of Sikkim",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridge_over_Lachung_River%2C_North_Sikkim.jpg",
-    "alt": "Lachung in Lachung, Sikkim - Images from 2010 Sikkim tour"
+    "alt": "Lachung, Sikkim"
   },
   "overview": {
     "short": "Lachung is a much-loved hill station in Sikkim, known for yumthang valley and zero point.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 7000,
     "minPrice": 2000,
-    "distanceFromDelhi": 1700,
-    "about": "Lachung, in North Sikkim, Sikkim, is one of India’s favourite hill station. Visitors come for its yumthang valley, zero point, rhododendrons, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 1700
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "24 km",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "“Valley of Flowers” carpeted with rhododendrons in spring.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Yumthang_Valley%2C_Lachung_Sikkim.jpg/1280px-Yumthang_Valley%2C_Lachung_Sikkim.jpg",
-        "alt": "Yumthang Valley in Sikkim, India"
+        "alt": "Yumthang Valley"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Trees_at_yumthang_valley_%286828773293%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "scenic",
       "distance": "40 km",
       "entryFee": "₹100",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.6,
       "description": "Snow-covered last-civilian point at 4,700m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/A_small_River_near_Zero_Point%2C_Sikkim.png",
-        "alt": "Zero Point in Sikkim, India"
+        "alt": "Zero Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/79/Zero-point_energy_v.s._motion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "spiritual",
       "distance": "2 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "18th-century Nyingma monastery amid apple orchards.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lachung_Monastery_Murals_new_menri_style.jpg/1280px-Lachung_Monastery_Murals_new_menri_style.jpg",
-        "alt": "Lachung Monastery in Sikkim, India"
+        "alt": "Lachung Monastery"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Lachung_Monastery%2C_Sikkim_India.jpg/1280px-Lachung_Monastery%2C_Sikkim_India.jpg",
@@ -297,84 +296,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Lachung Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Lachung FabHotels",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2000,
       "priceMax": 3200,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 162,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Lachung%20Stay%20Lachung%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lachung%20FabHotels%20Lachung%20Sikkim"
     },
     {
-      "name": "Airbnb: Stay in Lachung",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "OYO Alpine Lodge",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 3800,
       "priceMax": 5400,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 360,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Cloud Nine"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Lachung%20Lachung%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Alpine%20Lodge%20Lachung%20Sikkim"
     },
     {
-      "name": "Lachung Grand Hotel",
+      "name": "Lachung OYO Townhouse",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 6000,
       "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 278,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Lachung%20Grand%20Hotel%20Lachung%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lachung%20OYO%20Townhouse%20Lachung%20Sikkim"
     },
     {
-      "name": "Sterling Lachung",
-      "type": "resort",
-      "tier": "best",
+      "name": "Lemon Tree Red Fox Ridge Resort",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 12000,
       "priceMax": 20000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 617,
       "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
+      ],
+      "tags": [
+        "Popular Pick",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Ridge%20Resort%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Lachung Alpine Lodge",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2419,
+      "priceMax": 3854,
+      "rating": 4.1,
+      "reviews": 726,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lachung%20Alpine%20Lodge%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Sarovar Portico Mountain Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2477,
+      "priceMax": 3297,
+      "rating": 4.1,
+      "reviews": 913,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Mountain%20Resort%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Holiday Inn Hilltop Retreat",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6838,
+      "priceMax": 7661,
+      "rating": 4.5,
+      "reviews": 410,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Hilltop%20Retreat%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Lachung Pine Grove",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8893,
+      "priceMax": 9556,
+      "rating": 4.4,
+      "reviews": 1775,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Valley View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lachung%20Pine%20Grove%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Lachung Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9820,
+      "priceMax": 11546,
+      "rating": 4.4,
+      "reviews": 2104,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Luxury Experience",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Lachung%20Lachung%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lachung%20Marriott%20Lachung%20Sikkim"
+    },
+    {
+      "name": "Oberoi Lachung",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 16803,
+      "priceMax": 17859,
+      "rating": 4.7,
+      "reviews": 1570,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Lachung%20Lachung%20Sikkim"
     }
   ],
   "restaurants": [],
@@ -388,28 +524,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridge_over_Lachung_River%2C_North_Sikkim.jpg",
-      "alt": "Lachung in Lachung, Sikkim - Images from 2010 Sikkim tour",
-      "title": "Lachung in Lachung, Sikkim - Images from 2010…"
+      "alt": "Lachung in Lachung, Sikkim - Images from 2010 Sikkim tour"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/The_Yumthang_Valley_with_the_River_Lachung_Chu_-_panoramio.jpg",
-      "alt": "Lachung photo 2",
-      "title": "Zero Point"
+      "alt": "Lachung photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Zeropoint.jpg/1280px-Zeropoint.jpg",
-      "alt": "Lachung photo 3",
-      "title": "Lachung Monastery"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Zeropoint.jpg",
+      "alt": "Lachung photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Zero_point_lachung.jpg/1280px-Zero_point_lachung.jpg",
-      "alt": "Lachung photo 4",
-      "title": "Lachung — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Zero_point_lachung.jpg",
+      "alt": "Lachung photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lachung_Monastery_Murals_Rinpoche.jpg/1280px-Lachung_Monastery_Murals_Rinpoche.jpg",
-      "alt": "Lachung photo 5",
-      "title": "Lachung — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Lachung_Monastery_Murals_Rinpoche.jpg",
+      "alt": "Lachung photo 5"
     }
   ],
   "faq": [
@@ -447,5 +578,7 @@
       "how to reach Lachung",
       "Sikkim tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

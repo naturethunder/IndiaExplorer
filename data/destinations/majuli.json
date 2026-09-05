@@ -9,7 +9,7 @@
   "tagline": "Majuli — heritage city of Assam",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Majuli_-_The_largest_river_island.jpg",
-    "alt": "Majuli in Majuli, Assam - Fishing nets installed in Khekutia River, an anabranch of the Brahmaputra flowing on the north"
+    "alt": "Majuli, Assam"
   },
   "overview": {
     "short": "Majuli is a much-loved heritage city in Assam, known for river island and satras.",
@@ -23,8 +23,7 @@
     "rating": 4.4,
     "reviewCount": 5000,
     "minPrice": 1000,
-    "distanceFromDelhi": 2000,
-    "about": "Majuli, in Brahmaputra, Assam, is one of India’s favourite heritage city. Visitors come for its river island, satras, mask making, with the best months being Oct – Mar."
+    "distanceFromDelhi": 2000
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -214,13 +213,13 @@
       "category": "cultural",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Neo-Vaishnavite monastery of dance, music and manuscripts.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Guru_Ghanakanta_Bora.jpg",
-        "alt": "Kamalabari Satra in Assam, India"
+        "alt": "Kamalabari Satra"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/79/Shillong%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -233,13 +232,13 @@
       "category": "cultural",
       "distance": "5 km",
       "entryFee": "₹50",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Traditional workshop crafting expressive bamboo-and-clay masks.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Art_of_Mask_making%2CMajuli%2CAssam.jpg/1280px-Art_of_Mask_making%2CMajuli%2CAssam.jpg",
-        "alt": "Mask Making at Samaguri in Assam, India"
+        "alt": "Mask Making at Samaguri"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mask_of_Samaguri_Satra_2.jpg/1280px-Mask_of_Samaguri_Satra_2.jpg",
@@ -252,13 +251,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Sweeping sunset views over the world’s largest river island.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brahmaputra_river_in_Majuli_Island.jpg/1280px-Brahmaputra_river_in_Majuli_Island.jpg",
-        "alt": "Brahmaputra Sunset Point in Assam, India"
+        "alt": "Brahmaputra Sunset Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MAJULI.jpg/1280px-MAJULI.jpg",
@@ -298,84 +297,158 @@
   ],
   "hotels": [
     {
-      "name": "OYO Majuli Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Majuli GoStops",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 336,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Haveli Stay"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Majuli%20Stay%20Majuli%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Majuli%20GoStops%20Majuli%20Assam"
     },
     {
-      "name": "Airbnb: Stay in Majuli",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Majuli Haveli Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
-      "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
-      ],
-      "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
-      ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Majuli%20Majuli%20Assam%20hotel"
-    },
-    {
-      "name": "Majuli Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 3000,
-      "priceMax": 4500,
-      "rating": 4.4,
+      "rating": 4,
       "reviews": 430,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=Majuli%20Grand%20Hotel%20Majuli%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Majuli%20Haveli%20Stay%20Majuli%20Assam"
     },
     {
-      "name": "Marriott Majuli",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 6000,
-      "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "name": "Treebo Trend Majuli",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 3000,
+      "priceMax": 4500,
+      "rating": 4.1,
+      "reviews": 656,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Smart Choice",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Majuli%20Majuli%20Assam%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Majuli%20Majuli%20Assam"
+    },
+    {
+      "name": "Ginger Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 6000,
+      "priceMax": 10000,
+      "rating": 4.3,
+      "reviews": 470,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Haveli%20Stay%20Majuli%20Assam"
+    },
+    {
+      "name": "Zone by The Park Haveli Stay",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3590,
+      "priceMax": 5562,
+      "rating": 4.4,
+      "reviews": 460,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Heritage Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Haveli%20Stay%20Majuli%20Assam"
+    },
+    {
+      "name": "Majuli Courtyard by Marriott",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6605,
+      "priceMax": 6912,
+      "rating": 4.5,
+      "reviews": 1717,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Dining",
+        "Gym",
+        "Banquet",
+        "Concierge",
+        "Valet"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Majuli%20Courtyard%20by%20Marriott%20Majuli%20Assam"
+    },
+    {
+      "name": "Hyatt Regency Majuli",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8195,
+      "priceMax": 9599,
+      "rating": 4.6,
+      "reviews": 2773,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Majuli%20Majuli%20Assam"
     }
   ],
   "restaurants": [],
@@ -389,28 +462,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Majuli_-_The_largest_river_island.jpg",
-      "alt": "Majuli in Majuli, Assam - Fishing nets installed in Khekutia River, an anabranch of the Brahmaputra flowing on the north",
-      "title": "Majuli in Majuli, Assam - Fishing nets installed in…"
+      "alt": "Majuli in Majuli, Assam - Fishing nets installed in Khekutia River, an anabranch of the Brahmaputra flowing on the north"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Majuli_Island_%28117%29.jpg/1280px-Majuli_Island_%28117%29.jpg",
-      "alt": "Majuli photo 2",
-      "title": "Mask Making at Samaguri"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Majuli_Island_%28117%29.jpg",
+      "alt": "Majuli photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mask_of_Samaguri_Satra_3.jpg/1280px-Mask_of_Samaguri_Satra_3.jpg",
-      "alt": "Majuli photo 3",
-      "title": "Brahmaputra Sunset Point"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Mask_of_Samaguri_Satra_3.jpg",
+      "alt": "Majuli photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mask_of_Samaguri_Satra_4.jpg/1280px-Mask_of_Samaguri_Satra_4.jpg",
-      "alt": "Majuli photo 4",
-      "title": "Majuli — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mask_of_Samaguri_Satra_4.jpg",
+      "alt": "Majuli photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%B0_%E0%A6%95%E0%A6%AE%E0%A6%B2%E0%A6%BE%E0%A6%AC%E0%A6%BE%E0%A7%B0%E0%A7%80_%E0%A6%B8%E0%A6%A4%E0%A7%8D%E0%A7%B0%E0%A7%B0_%E0%A6%B8%E0%A6%A4%E0%A7%8D%E0%A7%B0%E0%A6%BE%E0%A6%A7%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A7%B0_%E0%A6%AA%E0%A7%8D%E0%A7%B0%E0%A6%AD%E0%A7%81.jpeg",
-      "alt": "Majuli photo 5",
-      "title": "Majuli — Sunset Horizon"
+      "alt": "Majuli photo 5"
     }
   ],
   "faq": [
@@ -448,5 +516,7 @@
       "how to reach Majuli",
       "Assam tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

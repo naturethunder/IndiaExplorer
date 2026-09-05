@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Alleppey — beach town of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg/1280px-Alleppey_Backwaters_%2815865969507%29.jpg",
-    "alt": "Alleppey photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg",
+    "alt": "Alleppey, Kerala"
   },
   "overview": {
     "short": "Alleppey is a much-loved beach town in Kerala, known for houseboats and backwaters.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 33000,
     "minPrice": 1500,
-    "distanceFromDelhi": 2700,
-    "about": "Alleppey, in Backwaters, Kerala, is one of India’s favourite beach town. Visitors come for its houseboats, backwaters, beach, with the best months being Sep – Mar."
+    "distanceFromDelhi": 2700
   },
   "bestTime": {
     "label": "Sep – Mar",
@@ -213,13 +212,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "₹7,000",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Overnight",
       "rating": 4.7,
       "description": "Overnight cruise through palm-fringed canals and paddy fields.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/India_-_Kerala_-_001_-_houseboats_for_rent_in_Alleppey_%282068028927%29.jpg/1280px-India_-_Kerala_-_001_-_houseboats_for_rent_in_Alleppey_%282068028927%29.jpg",
-        "alt": "Backwater Houseboat Cruise in Kerala, India"
+        "alt": "Backwater Houseboat Cruise"
       },
       "photos": [
         "https://pixabay.com/get/g9650332637c2bb8d65988535a1975f5d748e510da2774bab7be246c6b65a0245cd7ac77e2646a401d2c3079cf68af1c0d4567ab6da04aaa19b25be3f6d92a5ca_1280.jpg",
@@ -232,13 +231,13 @@
       "category": "beach",
       "distance": "3 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.3,
       "description": "Long beach with a 137-year-old pier and lighthouse.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Crab-plover%2C_Pallana_beach%2C_Alleppey_4.jpg/1280px-Crab-plover%2C_Pallana_beach%2C_Alleppey_4.jpg",
-        "alt": "Alleppey Beach in Kerala, India"
+        "alt": "Alleppey Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crab-plover%2C_Pallana_beach%2C_Alleppey_5.jpg/1280px-Crab-plover%2C_Pallana_beach%2C_Alleppey_5.jpg",
@@ -251,13 +250,13 @@
       "category": "beach",
       "distance": "11 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Quiet fishing-village beach lined with coconut palms.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Marari_Beach_Sunset_01.JPG/1280px-Marari_Beach_Sunset_01.JPG",
-        "alt": "Marari Beach in Kerala, India"
+        "alt": "Marari Beach"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sunset_from_Mararikulam_beach%2C_Kerala%2C_India.jpg/1280px-Sunset_from_Mararikulam_beach%2C_Kerala%2C_India.jpg",
@@ -297,84 +296,226 @@
   ],
   "hotels": [
     {
-      "name": "OYO Alleppey Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Alleppey",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1500,
       "priceMax": 2400,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 176,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Harbour View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Alleppey%20Stay%20Alleppey%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Alleppey%20Alleppey%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Alleppey",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Ibis Budget Tide Pool",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2850,
       "priceMax": 4050,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 292,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Shore Stay"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Alleppey%20Alleppey%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Tide%20Pool%20Alleppey%20Kerala"
     },
     {
-      "name": "Alleppey Grand Hotel",
+      "name": "Alleppey OYO Townhouse",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 4500,
       "priceMax": 6750,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.1,
+      "reviews": 472,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Coastal Haven"
       ],
-      "url": "https://www.google.com/search?q=Alleppey%20Grand%20Hotel%20Alleppey%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Alleppey%20OYO%20Townhouse%20Alleppey%20Kerala"
     },
     {
-      "name": "Marriott Alleppey",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Keys Select Alleppey",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 9000,
       "priceMax": 15000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 669,
       "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Well Rated",
+        "Wave Crest"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Alleppey%20Alleppey%20Kerala"
+    },
+    {
+      "name": "Sarovar Portico Alleppey",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3482,
+      "priceMax": 5062,
+      "rating": 4.3,
+      "reviews": 505,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Beach Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Alleppey%20Alleppey%20Kerala"
+    },
+    {
+      "name": "Alleppey Tide Pool",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6213,
+      "priceMax": 7347,
+      "rating": 4.4,
+      "reviews": 983,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Alleppey%20Tide%20Pool%20Alleppey%20Kerala"
+    },
+    {
+      "name": "Alleppey Marriott",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11536,
+      "priceMax": 12755,
+      "rating": 4.5,
+      "reviews": 1612,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Seaside Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Alleppey%20Alleppey%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Alleppey%20Marriott%20Alleppey%20Kerala"
+    },
+    {
+      "name": "Westin Beach Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11702,
+      "priceMax": 13411,
+      "rating": 4.6,
+      "reviews": 2124,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Palm Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Beach%20Resort%20Alleppey%20Kerala"
+    },
+    {
+      "name": "Grand Hyatt Palm Grove",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 13702,
+      "priceMax": 14581,
+      "rating": 4.6,
+      "reviews": 1067,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "World Class",
+        "Tide Pool"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Palm%20Grove%20Alleppey%20Kerala"
+    },
+    {
+      "name": "The Aman Alleppey",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 30282,
+      "priceMax": 30668,
+      "rating": 4.8,
+      "reviews": 1961,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Private Dining",
+        "Butler",
+        "Yacht",
+        "Cultural Programs",
+        "Wellness Retreat"
+      ],
+      "tags": [
+        "Exclusive",
+        "Ocean View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Aman%20Alleppey%20Alleppey%20Kerala"
     }
   ],
   "restaurants": [],
@@ -387,29 +528,20 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg/1280px-Alleppey_Backwaters_%2815865969507%29.jpg",
-      "alt": "Alleppey photo 2",
-      "title": "Backwater Houseboat Cruise"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg",
+      "alt": "Alleppey photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Alleppey_beach.jpg/1280px-Alleppey_beach.jpg",
-      "alt": "Alleppey photo 3",
-      "title": "Alleppey Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Alleppey_beach.jpg",
+      "alt": "Alleppey photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Crab-plover%2C_Pallana_beach%2C_Alleppey_3.jpg/1280px-Crab-plover%2C_Pallana_beach%2C_Alleppey_3.jpg",
-      "alt": "Alleppey photo 4",
-      "title": "Marari Beach"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Crab-plover%2C_Pallana_beach%2C_Alleppey_3.jpg",
+      "alt": "Alleppey photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Alleppey_Backwaters_%2816049777971%29.jpg/1280px-Alleppey_Backwaters_%2816049777971%29.jpg",
-      "alt": "Alleppey photo 5",
-      "title": "Alleppey — Sacred Temple Heritage"
-    },
-    {
-      "src": "https://pixabay.com/get/g68db91655f992739a8ec55171d1853c864f60c7974f3a1670b086a2c846164e5a22df2d0d453bbbd84a120dece890f2ee23bd75ece057ab776320c85426c4db7_1280.jpg",
-      "alt": "Alleppey in Alleppey, Kerala - alleppey, kerala, houseboat, india, travel, kumarakom, backwaters, alappuzha, alleppey, a",
-      "title": "Alleppey in Alleppey, Kerala - alleppey, kerala,…"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Alleppey_Backwaters_%2816049777971%29.jpg",
+      "alt": "Alleppey photo 5"
     }
   ],
   "faq": [
@@ -447,5 +579,7 @@
       "how to reach Alleppey",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

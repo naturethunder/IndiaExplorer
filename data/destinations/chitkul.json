@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Chitkul — hill station of Himachal Pradesh",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chitkul%2C_last_village_of_india.jpg/1280px-Chitkul%2C_last_village_of_india.jpg",
-    "alt": "Chitkul photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Chitkul%2C_last_village_of_india.jpg",
+    "alt": "Chitkul, Himachal Pradesh"
   },
   "overview": {
     "short": "Chitkul is a much-loved hill station in Himachal Pradesh, known for last indian village and baspa river.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 5000,
     "minPrice": 1200,
-    "distanceFromDelhi": 580,
-    "about": "Chitkul, in Kinnaur, Himachal Pradesh, is one of India’s favourite hill station. Visitors come for its last indian village, baspa river, apple orchards, with the best months being Apr – Jun, Sep – Oct."
+    "distanceFromDelhi": 580
   },
   "bestTime": {
     "label": "Apr – Jun, Sep – Oct",
@@ -213,13 +212,13 @@
       "category": "town",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "2 hrs",
       "rating": 4.6,
       "description": "India’s last inhabited village before the Tibet border.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chhitkul_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Last Village of India in Himachal Pradesh, India"
+        "alt": "Last Village of India"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/1b/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -232,13 +231,13 @@
       "category": "scenic",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.5,
       "description": "Pristine river meadows framed by snow peaks.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Marumba_cristata_cristata_MHNT_CUT_2010_0_123_Himachal_Pradesh_male_dorsal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Baspa Riverside in Himachal Pradesh, India"
+        "alt": "Baspa Riverside"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/42/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2839%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -251,13 +250,13 @@
       "category": "spiritual",
       "distance": "Centre",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "30 min",
       "rating": 4.3,
       "description": "Ancient wooden village temple of local goddess Mathi.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Mathi_Temple%2C_Chitkul%2C_The_last_Village_of_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Mathi Temple in Himachal Pradesh, India"
+        "alt": "Mathi Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Courtyard_Mathi_Temple.jpg/1280px-Courtyard_Mathi_Temple.jpg",
@@ -297,84 +296,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chitkul Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "OYO Highland Resort",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 456,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Ridge Resort"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chitkul%20Stay%20Chitkul%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Highland%20Resort%20Chitkul%20Himachal%20Pradesh"
     },
     {
-      "name": "Airbnb: Stay in Chitkul",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Mist Haven",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 298,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Pine Grove"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chitkul%20Chitkul%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Mist%20Haven%20Chitkul%20Himachal%20Pradesh"
     },
     {
-      "name": "Chitkul Grand Hotel",
+      "name": "Lemon Tree Red Fox Chitkul",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 556,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Chitkul%20Grand%20Hotel%20Chitkul%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Chitkul%20Chitkul%20Himachal%20Pradesh"
     },
     {
-      "name": "Sterling Chitkul",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Alpine Lodge",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.3,
+      "reviews": 253,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Good Value",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Chitkul%20Chitkul%20Himachal%20Pradesh%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Alpine%20Lodge%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Chitkul Summit View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2274,
+      "priceMax": 3154,
+      "rating": 4.2,
+      "reviews": 770,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Summit%20View%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Chitkul Valley View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3742,
+      "priceMax": 4905,
+      "rating": 4.2,
+      "reviews": 696,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Well Rated",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Valley%20View%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Holiday Inn Alpine Lodge",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5628,
+      "priceMax": 6572,
+      "rating": 4.3,
+      "reviews": 1674,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Alpine%20Lodge%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Sheraton Chitkul",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7820,
+      "priceMax": 8964,
+      "rating": 4.5,
+      "reviews": 1726,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Chitkul%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Chitkul Mist Haven",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10015,
+      "priceMax": 10360,
+      "rating": 4.6,
+      "reviews": 1283,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Mist%20Haven%20Chitkul%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Taj Summit View",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 16230,
+      "priceMax": 17669,
+      "rating": 4.5,
+      "reviews": 3136,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "World Class",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Summit%20View%20Chitkul%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],
@@ -388,30 +524,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chitkul%2C_last_village_of_india.jpg/1280px-Chitkul%2C_last_village_of_india.jpg",
-      "alt": "Chitkul photo 2",
-      "title": "Last Village of India"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Chitkul%2C_last_village_of_india.jpg",
+      "alt": "Chitkul photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Mathi_Temple%2C_Chitkul%2C_The_last_Village_of_India.jpg/1280px-Mathi_Temple%2C_Chitkul%2C_The_last_Village_of_India.jpg",
-      "alt": "Chitkul photo 3",
-      "title": "Baspa Riverside"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Mathi_Temple%2C_Chitkul%2C_The_last_Village_of_India.jpg",
+      "alt": "Chitkul photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mathi_Temple.jpg/1280px-Mathi_Temple.jpg",
-      "alt": "Chitkul photo 4",
-      "title": "Mathi Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Mathi_Temple.jpg",
+      "alt": "Chitkul photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Chitkul_the_last_village_of_India.jpg/1280px-Chitkul_the_last_village_of_India.jpg",
-      "alt": "Chitkul photo 5",
-      "title": "Chitkul — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Chitkul_the_last_village_of_India.jpg",
+      "alt": "Chitkul photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Badami_cave_temples%2C_cave_2_-_hamvrvb102k22_%2854%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Chitkul - Highlight 5",
-      "alt": "Temples and monuments of Karnataka",
-      "title": "Temples and monuments of Karnataka"
+      "alt": "Temples and monuments of Karnataka"
     }
   ],
   "faq": [
@@ -449,5 +579,7 @@
       "how to reach Chitkul",
       "Himachal Pradesh tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

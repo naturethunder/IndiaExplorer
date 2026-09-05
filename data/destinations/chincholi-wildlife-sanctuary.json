@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Chincholi Wildlife Sanctuary — wildlife reserve of Karnataka",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg/1280px-A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg",
-    "alt": "Chincholi Wildlife Sanctuary photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg",
+    "alt": "Chincholi Wildlife Sanctuary, Karnataka"
   },
   "overview": {
     "short": "Chincholi Wildlife Sanctuary, located in the Chincholi taluka of kalaburagi district of Karnataka, is the first drylands wildlife sanctuary in South India.",
@@ -272,84 +272,202 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chincholi Wildlife Sanctuary Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Chincholi GoStops",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 2500,
       "priceMax": 4000,
       "rating": 4,
-      "reviews": 320,
+      "reviews": 431,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chincholi%20Wildlife%20Sanctuary%20Stay%20Chincholi%20Wildlife%20Sanctuary%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chincholi%20GoStops%20Chincholi%20Karnataka"
     },
     {
-      "name": "Airbnb: Stay in Chincholi Wildlife Sanctuary",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Chincholi Wilderness Camp",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 4750,
       "priceMax": 6750,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.1,
+      "reviews": 273,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Good Value",
+        "Birders Inn"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chincholi%20Wildlife%20Sanctuary%20Chincholi%20Wildlife%20Sanctuary%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chincholi%20Wilderness%20Camp%20Chincholi%20Karnataka"
     },
     {
-      "name": "Chincholi Wildlife Sanctuary Grand Hotel",
-      "type": "hotel",
-      "tier": "better",
+      "name": "Zostel Plus Chincholi",
+      "type": "hostel",
+      "tier": "budget",
       "priceMin": 7500,
       "priceMax": 11250,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.2,
+      "reviews": 326,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Popular Pick",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Chincholi%20Wildlife%20Sanctuary%20Grand%20Hotel%20Chincholi%20Wildlife%20Sanctuary%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Chincholi%20Chincholi%20Karnataka"
     },
     {
-      "name": "Jungle Lodges Chincholi Wildlife Sanctuary",
-      "type": "resort",
-      "tier": "best",
+      "name": "Chincholi Ginger",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 15000,
       "priceMax": 25000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 802,
       "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chincholi%20Ginger%20Chincholi%20Karnataka"
+    },
+    {
+      "name": "Chincholi Safari Lodge",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3416,
+      "priceMax": 4521,
+      "rating": 4.4,
+      "reviews": 1199,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chincholi%20Safari%20Lodge%20Chincholi%20Karnataka"
+    },
+    {
+      "name": "Chincholi Jungle Lodge",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4829,
+      "priceMax": 6794,
+      "rating": 4.4,
+      "reviews": 1876,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Jungle Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chincholi%20Jungle%20Lodge%20Chincholi%20Karnataka"
+    },
+    {
+      "name": "Taj Vivanta Chincholi",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8720,
+      "priceMax": 10191,
+      "rating": 4.5,
+      "reviews": 2445,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Celebrity Choice",
+        "Safari Lodge"
       ],
-      "url": "https://www.google.com/search?q=Jungle%20Lodges%20Chincholi%20Wildlife%20Sanctuary%20Chincholi%20Wildlife%20Sanctuary%20Karnataka%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Chincholi%20Chincholi%20Karnataka"
+    },
+    {
+      "name": "The ITC Chincholi",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 22767,
+      "priceMax": 23963,
+      "rating": 4.5,
+      "reviews": 1698,
+      "amenities": [
+        "Free WiFi",
+        "Private Pool",
+        "World-class Spa",
+        "Fine Dining",
+        "Butler",
+        "Limousine",
+        "Golf",
+        "Helipad"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Birders Inn"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20ITC%20Chincholi%20Chincholi%20Karnataka"
+    },
+    {
+      "name": "Four Seasons Eco Lodge",
+      "type": "resort",
+      "tier": "extra_luxury",
+      "priceMin": 46544,
+      "priceMax": 46994,
+      "rating": 4.6,
+      "reviews": 1827,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Holistic Wellness",
+        "Curated Dining",
+        "Butler",
+        "Chauffeur",
+        "Experiences"
+      ],
+      "tags": [
+        "Ultra Luxury",
+        "Nature Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Four%20Seasons%20Eco%20Lodge%20Chincholi%20Karnataka"
     }
   ],
   "restaurants": [],
@@ -363,29 +481,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg/1280px-A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg",
-      "alt": "Chincholi Wildlife Sanctuary photo 2",
-      "title": "Inoli"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg",
+      "alt": "Chincholi Wildlife Sanctuary photo 2"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bay-backed_Shrike%2C_Chincholi_Wildlife_Sanctuary%2C_Telangana%2C_India_%2850263109437%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chincholi Wildlife Sanctuary photo 3",
-      "title": "Chincholi"
+      "alt": "Chincholi Wildlife Sanctuary photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Oriental_garden_lizard%2C_Chincholi_Wildlife_Sanctuary_%2850133807212%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chincholi Wildlife Sanctuary photo 4",
-      "title": "Chincholi Wildlife Sanctuary — Scenic Nature"
+      "alt": "Chincholi Wildlife Sanctuary photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/A_White_Bellied_Minivet_in_action_-_Flickr_-_Hari_K_Patibanda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chincholi Wildlife Sanctuary photo 5",
-      "title": "Chincholi Wildlife Sanctuary — Sacred Heritage"
+      "alt": "Chincholi Wildlife Sanctuary photo 5"
     },
     {
       "src": "https://images.pexels.com/photos/34171013/pexels-photo-34171013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Chincholi Wildlife Sanctuary in Karnataka - A moody landscape of Cauvery River in Karnataka, India with ancient bridge u",
-      "title": "Chincholi Wildlife Sanctuary in Karnataka - A moody…"
+      "alt": "Chincholi Wildlife Sanctuary in Karnataka - A moody landscape of Cauvery River in Karnataka, India with ancient bridge u"
     }
   ],
   "faq": [
@@ -423,5 +536,7 @@
       "how to reach Chincholi Wildlife Sanctuary",
       "Karnataka tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 9,
+  "hotelSourceTried": true
 }

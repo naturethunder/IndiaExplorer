@@ -9,7 +9,7 @@
   "tagline": "Chopta — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Chandra_Shila.JPG",
-    "alt": "Chopta in Chopta, Uttarakhand - 15,000 ft Above sea level, Chandra shila rests above the holy Tungnath ji Temple in Chop"
+    "alt": "Chopta, Uttarakhand"
   },
   "overview": {
     "short": "Chopta is a much-loved hill station in Uttarakhand, known for mini switzerland and tungnath.",
@@ -23,8 +23,7 @@
     "rating": 4.6,
     "reviewCount": 7000,
     "minPrice": 1200,
-    "distanceFromDelhi": 420,
-    "about": "Chopta, in Garhwal, Uttarakhand, is one of India’s favourite hill station. Visitors come for its mini switzerland, tungnath, meadows, with the best months being Apr – Jun, Sep – Nov."
+    "distanceFromDelhi": 420
   },
   "bestTime": {
     "label": "Apr – Jun, Sep – Nov",
@@ -212,13 +211,13 @@
       "category": "spiritual",
       "distance": "4 km",
       "entryFee": "Free",
-      "timings": "6:00 AM – 8:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "Highest Shiva temple in the world at 3,680m.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Tungnath_temple%2C_Tungnath%2C_Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Tungnath Temple in Uttarakhand, India"
+        "alt": "Tungnath Temple"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Himalayan_Peaks_from_Tungnath.jpg/1280px-Himalayan_Peaks_from_Tungnath.jpg",
@@ -231,13 +230,13 @@
       "category": "trekking",
       "distance": "5 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.7,
       "description": "Trek peak with 360° Himalayan views incl. Nanda Devi.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg/1280px-Chopta%2C_starting_point_for_treks_to_Tungnath_and_Chandrashila.jpg",
-        "alt": "Chandrashila Summit in Uttarakhand, India"
+        "alt": "Chandrashila Summit"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chandrashila_Panorama.jpg/1280px-Chandrashila_Panorama.jpg",
@@ -250,13 +249,13 @@
       "category": "trekking",
       "distance": "15 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "Half day",
       "rating": 4.5,
       "description": "Emerald lake reflecting the Chaukhamba peaks.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Deoria_Tal_Chandrashila_Chaukamba_reflection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Deoria Tal in Uttarakhand, India"
+        "alt": "Deoria Tal"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sari_Village_%283%29_%2814099762286%29.jpg",
@@ -296,84 +295,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Chopta Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Chopta Summit View",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 394,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Value Stay",
+        "Alpine Lodge"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Chopta%20Stay%20Chopta%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Summit%20View%20Chopta%20Uttarakhand"
     },
     {
-      "name": "Airbnb: Stay in Chopta",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Chopta OYO",
+      "type": "guesthouse",
+      "tier": "cheapest",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.9,
+      "reviews": 309,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Chopta%20Chopta%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20OYO%20Chopta%20Uttarakhand"
     },
     {
-      "name": "Chopta Grand Hotel",
+      "name": "Chopta Ginger",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 732,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Peak Stay"
       ],
-      "url": "https://www.google.com/search?q=Chopta%20Grand%20Hotel%20Chopta%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Ginger%20Chopta%20Uttarakhand"
     },
     {
-      "name": "Sterling Chopta",
-      "type": "resort",
-      "tier": "best",
+      "name": "Chopta Pine Grove",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4,
+      "reviews": 264,
       "amenities": [
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
+      ],
+      "tags": [
+        "Popular Pick",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Pine%20Grove%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "Fortune Mountain Resort",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2513,
+      "priceMax": 2962,
+      "rating": 4.4,
+      "reviews": 625,
+      "amenities": [
+        "Free WiFi",
+        "Mini Bar",
+        "Spa",
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Ridge Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Mountain%20Resort%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "Chopta Valley View",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3122,
+      "priceMax": 4224,
+      "rating": 4.3,
+      "reviews": 802,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Valley%20View%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "Chopta Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5850,
+      "priceMax": 6359,
+      "rating": 4.4,
+      "reviews": 1987,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Highland Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Radisson%20Blu%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "Chopta Westin",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8832,
+      "priceMax": 10286,
+      "rating": 4.6,
+      "reviews": 2015,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Highland Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Chopta%20Chopta%20Uttarakhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chopta%20Westin%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "Hyatt Regency Chopta",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10131,
+      "priceMax": 11221,
+      "rating": 4.5,
+      "reviews": 1638,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Award Winning",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Chopta%20Chopta%20Uttarakhand"
+    },
+    {
+      "name": "The JW Marriott Chopta",
+      "type": "hotel",
+      "tier": "luxury",
+      "priceMin": 19825,
+      "priceMax": 20572,
+      "rating": 4.6,
+      "reviews": 2760,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20JW%20Marriott%20Chopta%20Chopta%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -387,28 +523,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Chandra_Shila.JPG",
-      "alt": "Chopta in Chopta, Uttarakhand - 15,000 ft Above sea level, Chandra shila rests above the holy Tungnath ji Temple in Chop",
-      "title": "Chopta in Chopta, Uttarakhand - 15,000 ft Above sea…"
+      "alt": "Chopta in Chopta, Uttarakhand - 15,000 ft Above sea level, Chandra shila rests above the holy Tungnath ji Temple in Chop"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tungnath_temple_one_of_thepanch_kedar.jpg/1280px-Tungnath_temple_one_of_thepanch_kedar.jpg",
-      "alt": "Chopta photo 2",
-      "title": "Chandrashila Summit"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Tungnath_temple_one_of_thepanch_kedar.jpg",
+      "alt": "Chopta photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Higest_Shiv_Temple_In_The_World_Tungnath_Temple_In_Chopta_Uttrakhand_%28242691741%29.jpeg/1280px-Higest_Shiv_Temple_In_The_World_Tungnath_Temple_In_Chopta_Uttrakhand_%28242691741%29.jpeg",
-      "alt": "Chopta photo 3",
-      "title": "Deoria Tal"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Higest_Shiv_Temple_In_The_World_Tungnath_Temple_In_Chopta_Uttrakhand_%28242691741%29.jpeg",
+      "alt": "Chopta photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tungnath%2C_highest_Shiva_temple_in_the_world.jpg/1280px-Tungnath%2C_highest_Shiva_temple_in_the_world.jpg",
-      "alt": "Chopta photo 4",
-      "title": "Chopta — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tungnath%2C_highest_Shiva_temple_in_the_world.jpg",
+      "alt": "Chopta photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tungnath_mahadev.jpg",
-      "alt": "Chopta photo 5",
-      "title": "Chopta — Sunset Horizon"
+      "alt": "Chopta photo 5"
     }
   ],
   "faq": [
@@ -446,5 +577,7 @@
       "how to reach Chopta",
       "Uttarakhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

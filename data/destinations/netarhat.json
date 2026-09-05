@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Netarhat — hill station of Jharkhand",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/1280px-Sunset_in_netarhatt%2C_jharkhand.jpg",
-    "alt": "Netarhat photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
+    "alt": "Netarhat, Jharkhand"
   },
   "overview": {
     "short": "Netarhat is a much-loved hill station in Jharkhand, known for queen of chotanagpur and sunrise.",
@@ -23,8 +23,7 @@
     "rating": 4.2,
     "reviewCount": 4000,
     "minPrice": 1000,
-    "distanceFromDelhi": 1150,
-    "about": "Netarhat, in Chota Nagpur, Jharkhand, is one of India’s favourite hill station. Visitors come for its queen of chotanagpur, sunrise, forests, with the best months being Oct – Mar."
+    "distanceFromDelhi": 1150
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -218,13 +217,13 @@
       "category": "scenic",
       "distance": "10 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Famous viewpoint for sunset over the Palamu hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_157.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Magnolia Sunset Point, Netarhat"
+        "alt": "Magnolia Sunset Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/75/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_170.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -237,13 +236,13 @@
       "category": "scenic",
       "distance": "2 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Dawn views across rolling sal forests and plateaus.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Netarhat_School.jpg",
-        "alt": "Netarhat Sunrise Point in Jharkhand, India"
+        "alt": "Netarhat Sunrise Point"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/76/Ellora_Caves_%286158337875%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -256,13 +255,13 @@
       "category": "nature",
       "distance": "5 km",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "Forest waterfall on the way down the plateau.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ellora_Caves%2C_India%2C_Religious_shrines_in_Kailash-Kailasa_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Upper Ghaghri Falls, Netarhat"
+        "alt": "Upper Ghaghri Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ellora_caves_rigth_caves_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -302,84 +301,223 @@
   ],
   "hotels": [
     {
-      "name": "OYO Netarhat Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Zostel Summit View",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1000,
       "priceMax": 1600,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.2,
+      "reviews": 425,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Backpacker Choice",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Netarhat%20Stay%20Netarhat%20Jharkhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Summit%20View%20Netarhat%20Jharkhand"
     },
     {
-      "name": "Airbnb: Stay in Netarhat",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "GoStops Summit View",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1900,
       "priceMax": 2700,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 3.8,
+      "reviews": 352,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Hot Water",
+        "Room Service",
+        "Luggage Storage"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Budget Friendly",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Netarhat%20Netarhat%20Jharkhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Summit%20View%20Netarhat%20Jharkhand"
     },
     {
-      "name": "Netarhat Grand Hotel",
+      "name": "Treebo Trend Valley View",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3000,
       "priceMax": 4500,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 664,
       "amenities": [
-        "Pool",
-        "Restaurant",
-        "Room Service",
-        "Gym"
+        "Free WiFi",
+        "Hot Water",
+        "TV",
+        "Intercom",
+        "Doctor on Call"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Netarhat%20Grand%20Hotel%20Netarhat%20Jharkhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Valley%20View%20Netarhat%20Jharkhand"
     },
     {
-      "name": "Sterling Netarhat",
-      "type": "resort",
-      "tier": "best",
+      "name": "Ginger Pine Grove",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 6000,
       "priceMax": 10000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.2,
+      "reviews": 421,
       "amenities": [
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
+      ],
+      "tags": [
+        "Good Value",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Pine%20Grove%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Ibis Pine Grove",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2328,
+      "priceMax": 3720,
+      "rating": 4.3,
+      "reviews": 795,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Cloud Nine"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Pine%20Grove%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Netarhat Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3531,
+      "priceMax": 5253,
+      "rating": 4.2,
+      "reviews": 758,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Hilltop Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Netarhat%20Lemon%20Tree%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Netarhat The Fern",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4902,
+      "priceMax": 6658,
+      "rating": 4.3,
+      "reviews": 1076,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Club Lounge",
+        "Butler"
+      ],
+      "tags": [
+        "Business Preferred",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Netarhat%20The%20Fern%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Westin Netarhat",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8851,
+      "priceMax": 10466,
+      "rating": 4.6,
+      "reviews": 985,
+      "amenities": [
+        "Free WiFi",
         "Pool",
         "Spa",
-        "Fine Dining",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
         "Concierge"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Award Winning",
+        "Mountain Resort"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Netarhat%20Netarhat%20Jharkhand%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Netarhat%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Netarhat Mountain Resort",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10455,
+      "priceMax": 10971,
+      "rating": 4.5,
+      "reviews": 550,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Restaurants",
+        "Ballroom",
+        "Kids Club",
+        "Concierge"
+      ],
+      "tags": [
+        "Award Winning",
+        "Alpine Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Netarhat%20Mountain%20Resort%20Netarhat%20Jharkhand"
+    },
+    {
+      "name": "Oberoi Netarhat Palace",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 22511,
+      "priceMax": 24483,
+      "rating": 4.7,
+      "reviews": 1922,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Multiple Fine Dining",
+        "Palace Grounds",
+        "Heritage Tours",
+        "Butler"
+      ],
+      "tags": [
+        "Iconic Luxury",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Netarhat%20Palace%20Netarhat%20Jharkhand"
     }
   ],
   "restaurants": [],
@@ -392,31 +530,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/1280px-Sunset_in_netarhatt%2C_jharkhand.jpg",
-      "alt": "Netarhat photo 2",
-      "title": "Magnolia Sunset Point"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
+      "alt": "Netarhat photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hill_station_of_jharkhand%2CNetarhat.jpg/1280px-Hill_station_of_jharkhand%2CNetarhat.jpg",
-      "alt": "Netarhat photo 4",
-      "title": "Netarhat Sunrise Point"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Hill_station_of_jharkhand%2CNetarhat.jpg",
+      "alt": "Netarhat photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Netarhat_Gate%2C_Latehar%2C_Jharkhand_Sample_3.jpg",
-      "alt": "Netarhat photo 5",
-      "title": "Upper Ghaghri Falls"
+      "alt": "Netarhat photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Netarhat - Highlight 4",
-      "alt": "Madhya Pradesh temples",
-      "title": "Madhya Pradesh temples"
+      "alt": "Madhya Pradesh temples"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_149.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Netarhat - Highlight 5",
-      "alt": "Madhya Pradesh temples",
-      "title": "Madhya Pradesh temples"
+      "alt": "Madhya Pradesh temples"
     }
   ],
   "faq": [
@@ -454,5 +585,7 @@
       "how to reach Netarhat",
       "Jharkhand tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }

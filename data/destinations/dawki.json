@@ -26,7 +26,7 @@
     ],
     "rating": 4.8,
     "reviewCount": 3120,
-    "minPrice": 2000,
+    "minPrice": 800,
     "distanceFromDelhi": 1980
   },
   "bestTime": {
@@ -442,23 +442,44 @@
   ],
   "hotels": [
     {
-      "name": "Hala Tong",
-      "type": "camp",
+      "name": "Dawki Tourist Guest House",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 2000,
-      "priceMax": 4000,
-      "rating": 4.7,
-      "reviews": 350,
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 140,
       "amenities": [
-        "Riverside Tents",
-        "Campfire",
-        "Kayaking"
+        "Clean Rooms",
+        "Hot Water",
+        "Free Parking",
+        "Travel Assistance"
       ],
       "tags": [
-        "Riverside",
-        "Camping"
+        "Budget Friendly",
+        "Convenient"
       ],
-      "url": "https://www.google.com/search?q=Hala%20Tong%20Dawki%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dawki%20Tourist%20Guest%20House%20Meghalaya"
+    },
+    {
+      "name": "Dawki Heritage Residency",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.3,
+      "reviews": 210,
+      "amenities": [
+        "AC Rooms",
+        "Multi-Cuisine Dining",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Comfortable"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Dawki%20Heritage%20Residency%20Meghalaya"
     }
   ],
   "gallery": [

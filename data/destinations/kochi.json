@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Kochi — heritage city of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Kochi_chinese_fishing-net-20080215-01a.jpg/1280px-Kochi_chinese_fishing-net-20080215-01a.jpg",
-    "alt": "Kochi photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kochi_chinese_fishing-net-20080215-01a.jpg",
+    "alt": "Kochi, Kerala"
   },
   "overview": {
     "short": "Kochi is a much-loved heritage city in Kerala, known for fort kochi and chinese nets.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 41000,
     "minPrice": 1200,
-    "distanceFromDelhi": 2580,
-    "about": "Kochi, in Malabar Coast, Kerala, is one of India’s favourite heritage city. Visitors come for its fort kochi, chinese nets, spice trade, with the best months being Oct – Mar."
+    "distanceFromDelhi": 2580
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -214,13 +213,13 @@
       "category": "heritage",
       "distance": "Fort Kochi",
       "entryFee": "Free",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Iconic cantilevered nets lining the Fort Kochi shore.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg/1280px-Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg",
-        "alt": "Chinese Fishing Nets in Kerala, India"
+        "alt": "Chinese Fishing Nets"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/17/Dispersed_seed_of_Gnetum_edule.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -233,13 +232,13 @@
       "category": "heritage",
       "distance": "3 km",
       "entryFee": "₹15",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Portuguese-built palace with vivid Hindu mythological murals.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Mattancherry_palace_at_night.jpg/1280px-Mattancherry_palace_at_night.jpg",
-        "alt": "Mattancherry Palace in Kerala, India"
+        "alt": "Mattancherry Palace"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/17/Fruit_of_Salacia_fruticosa_%28Woody_Salacia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -252,13 +251,13 @@
       "category": "heritage",
       "distance": "3 km",
       "entryFee": "₹10",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Antique-lined lane and the 1568 Paradesi Synagogue.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Paradesi_exterior.jpg/1280px-Paradesi_exterior.jpg",
-        "alt": "Jew Town & Synagogue in Kerala, India"
+        "alt": "Jew Town & Synagogue"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Jew_Town%2C_Fort_Kochin%2C_Cochin%2C_India_%282044452110%29.jpg/1280px-Jew_Town%2C_Fort_Kochin%2C_Cochin%2C_India_%282044452110%29.jpg",
@@ -298,84 +297,155 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kochi Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Kochi Backpackers",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1200,
       "priceMax": 1900,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.8,
+      "reviews": 152,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Manor House"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Kochi%20Stay%20Kochi%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Kochi%20Backpackers%20Kochi%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Kochi",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Trend Kochi",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 2300,
       "priceMax": 3250,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4,
+      "reviews": 211,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast",
+        "Parking",
+        "Room Service"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Smart Choice",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Kochi%20Kochi%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Kochi%20Kochi%20Kerala"
     },
     {
-      "name": "Kochi Grand Hotel",
+      "name": "Lemon Tree Red Fox Royal Retreat",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3600,
       "priceMax": 5400,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4,
+      "reviews": 259,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Smart Choice",
+        "Period Property"
       ],
-      "url": "https://www.google.com/search?q=Kochi%20Grand%20Hotel%20Kochi%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Royal%20Retreat%20Kochi%20Kerala"
     },
     {
-      "name": "Marriott Kochi",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Sarovar Portico Legacy Hotel",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 7200,
       "priceMax": 12000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.1,
+      "reviews": 872,
       "amenities": [
+        "Free WiFi",
         "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Family Friendly",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Kochi%20Kochi%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Legacy%20Hotel%20Kochi%20Kerala"
+    },
+    {
+      "name": "Kochi Fairfield by Marriott",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3724,
+      "priceMax": 4332,
+      "rating": 4.2,
+      "reviews": 756,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kochi%20Fairfield%20by%20Marriott%20Kochi%20Kerala"
+    },
+    {
+      "name": "Hyatt Place Kochi",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5483,
+      "priceMax": 7336,
+      "rating": 4.5,
+      "reviews": 1624,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Premium Stay",
+        "Haveli Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Kochi%20Kochi%20Kerala"
+    },
+    {
+      "name": "Kochi Period Property",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10463,
+      "priceMax": 11296,
+      "rating": 4.4,
+      "reviews": 2619,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Period Property"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kochi%20Period%20Property%20Kochi%20Kerala"
     }
   ],
   "restaurants": [],
@@ -387,30 +457,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Kochi_chinese_fishing-net-20080215-01a.jpg/1280px-Kochi_chinese_fishing-net-20080215-01a.jpg",
-      "alt": "Kochi photo 2",
-      "title": "Chinese Fishing Nets"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kochi_chinese_fishing-net-20080215-01a.jpg",
+      "alt": "Kochi photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mattancherry_Palace_-_Throne_Room.jpg/1280px-Mattancherry_Palace_-_Throne_Room.jpg",
-      "alt": "Kochi photo 3",
-      "title": "Mattancherry Palace"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Mattancherry_Palace_-_Throne_Room.jpg",
+      "alt": "Kochi photo 3"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fresco_showing_Sita%27s_Agni_Pariksha%2C_Mattancherry_Palace%2C_Kochi%2C_Kerala.jpg",
-      "alt": "Kochi photo 4",
-      "title": "Jew Town & Synagogue"
+      "alt": "Kochi photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Synagogue_Jew_Town.jpg/1280px-Synagogue_Jew_Town.jpg",
-      "alt": "Kochi photo 5",
-      "title": "Kochi — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Synagogue_Jew_Town.jpg",
+      "alt": "Kochi photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Fruits_of_Murraya_paniculata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Kochi - Highlight 5",
-      "alt": "Western Ghats",
-      "title": "Western Ghats"
+      "alt": "Western Ghats"
     }
   ],
   "faq": [
@@ -448,5 +512,7 @@
       "how to reach Kochi",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

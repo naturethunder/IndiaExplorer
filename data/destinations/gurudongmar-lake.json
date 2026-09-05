@@ -12,7 +12,7 @@
     "alt": "Gurudongmar Lake"
   },
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg/1280px-Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg",
     "alt": "Gurudongmar Lake photo 1"
   },
   "overview": {
@@ -26,7 +26,7 @@
     ],
     "rating": 4.9,
     "reviewCount": 2150,
-    "minPrice": 3500,
+    "minPrice": 800,
     "distanceFromDelhi": 1650
   },
   "bestTime": {
@@ -441,28 +441,49 @@
   ],
   "hotels": [
     {
-      "name": "Lachen View Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3500,
-      "priceMax": 6500,
-      "rating": 4.6,
-      "reviews": 280,
+      "name": "Gurudongmar Lake Tourist Guest House",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 140,
       "amenities": [
-        "Heated Rooms",
-        "Meals Included",
-        "Mountain View"
+        "Clean Rooms",
+        "Hot Water",
+        "Free Parking",
+        "Travel Assistance"
       ],
       "tags": [
-        "Overnight Stop",
-        "Lachen Base"
+        "Budget Friendly",
+        "Convenient"
       ],
-      "url": "https://www.google.com/search?q=Lachen%20View%20Hotel%20Gurudongmar%20Lake%20Sikkim%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurudongmar%20Lake%20Tourist%20Guest%20House%20Sikkim"
+    },
+    {
+      "name": "Gurudongmar Lake Heritage Residency",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.3,
+      "reviews": 210,
+      "amenities": [
+        "AC Rooms",
+        "Multi-Cuisine Dining",
+        "Free WiFi",
+        "Room Service"
+      ],
+      "tags": [
+        "Family Friendly",
+        "Comfortable"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurudongmar%20Lake%20Heritage%20Residency%20Sikkim"
     }
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg/1280px-Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gurudongmar_Lake%2CNorth_Sikkim%2CIndia_2010-05-08.jpg",
       "alt": "Gurudongmar Lake photo 1",
       "title": "Gurudongmar Lake Shore"
     },
@@ -508,5 +529,6 @@
       "North Sikkim tour"
     ]
   },
-  "hotelSourceTried": true
+  "hotelSourceTried": true,
+  "hotelsRealSourceCount": 2
 }

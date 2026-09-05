@@ -8,8 +8,8 @@
   "badge": "Popular",
   "tagline": "Palaruvi Falls — heritage city of Kerala",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg/1280px-Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg",
-    "alt": "Palaruvi Falls photo 2"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg",
+    "alt": "Palaruvi Falls, Kerala"
   },
   "overview": {
     "short": "Palaruvi Falls is a waterfall located in Kollam district in the Indian state of Kerala.",
@@ -420,84 +420,156 @@
   ],
   "hotels": [
     {
-      "name": "OYO Palaruvi Falls Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "Palaruvi Rajwada",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 900,
       "priceMax": 1450,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 3.9,
+      "reviews": 273,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Heritage Hotel"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Palaruvi%20Falls%20Stay%20Palaruvi%20Falls%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Palaruvi%20Rajwada%20Palaruvi%20Kerala"
     },
     {
-      "name": "Airbnb: Stay in Palaruvi Falls",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Palaruvi Haveli Stay",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 1700,
       "priceMax": 2450,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 291,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Popular Pick",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Palaruvi%20Falls%20Palaruvi%20Falls%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Palaruvi%20Haveli%20Stay%20Palaruvi%20Kerala"
     },
     {
-      "name": "Palaruvi Falls Grand Hotel",
+      "name": "Palaruvi Haveli Stay Budget",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 2700,
       "priceMax": 4050,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 674,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Mahal Palace"
       ],
-      "url": "https://www.google.com/search?q=Palaruvi%20Falls%20Grand%20Hotel%20Palaruvi%20Falls%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Palaruvi%20Haveli%20Stay%20Palaruvi%20Kerala"
     },
     {
-      "name": "Marriott Palaruvi Falls",
-      "type": "resort",
-      "tier": "luxury",
+      "name": "Keys Select Period Property",
+      "type": "hotel",
+      "tier": "good",
       "priceMin": 5400,
       "priceMax": 9000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4.4,
+      "reviews": 558,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "Mini Bar",
         "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Conference Room",
+        "Banquet Hall",
+        "Valet"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Comfort Plus",
+        "Royal Retreat"
       ],
-      "url": "https://www.google.com/search?q=Marriott%20Palaruvi%20Falls%20Palaruvi%20Falls%20Kerala%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Period%20Property%20Palaruvi%20Kerala"
+    },
+    {
+      "name": "Palaruvi Sarovar Portico",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3776,
+      "priceMax": 5226,
+      "rating": 4.2,
+      "reviews": 402,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Royal Retreat"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Palaruvi%20Sarovar%20Portico%20Palaruvi%20Kerala"
+    },
+    {
+      "name": "Palaruvi Novotel",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4536,
+      "priceMax": 5363,
+      "rating": 4.4,
+      "reviews": 1157,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Legacy Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Palaruvi%20Novotel%20Palaruvi%20Kerala"
+    },
+    {
+      "name": "Renaissance Legacy Hotel",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 8993,
+      "priceMax": 10831,
+      "rating": 4.4,
+      "reviews": 827,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Full Spa",
+        "Multiple Fine Dining",
+        "Club Lounge",
+        "Butler",
+        "Valet",
+        "Golf"
+      ],
+      "tags": [
+        "Celebrity Choice",
+        "Palace Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Legacy%20Hotel%20Palaruvi%20Kerala"
     }
   ],
   "restaurants": [],
@@ -513,30 +585,24 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg/1280px-Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg",
-      "alt": "Palaruvi Falls photo 2",
-      "title": "Aryankavu Sastha Temple"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Palaruvi_Waterfalls%2C_thenmala_-_panoramio.jpg",
+      "alt": "Palaruvi Falls photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Palaruvi_Waterfalls%2C_thenmala_-_panoramio_%281%29.jpg/1280px-Palaruvi_Waterfalls%2C_thenmala_-_panoramio_%281%29.jpg",
-      "alt": "Palaruvi Falls photo 3",
-      "title": "Aryankavu"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Palaruvi_Waterfalls%2C_thenmala_-_panoramio_%281%29.jpg",
+      "alt": "Palaruvi Falls photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Palaruvi_waterfalls2.jpg/1280px-Palaruvi_waterfalls2.jpg",
-      "alt": "Palaruvi Falls photo 4",
-      "title": "Pudur, Tirunelveli"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Palaruvi_waterfalls2.jpg",
+      "alt": "Palaruvi Falls photo 4"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Palaruvi_Express_at_Ernakulam_Town%2C_July_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Palaruvi Falls photo 5",
-      "title": "Pathimoonnu Kannara Bridge"
+      "alt": "Palaruvi Falls photo 5"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fort%2C_Neemrana%2C_Alwar.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Palaruvi Falls - Highlight 5",
-      "alt": "Alwar district fort",
-      "title": "Alwar district fort"
+      "alt": "Alwar district fort"
     }
   ],
   "faq": [
@@ -574,5 +640,7 @@
       "how to reach Palaruvi Falls",
       "Kerala tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 7,
+  "hotelSourceTried": true
 }

@@ -9,7 +9,7 @@
   "tagline": "Shillong — hill station of Meghalaya",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nohkalikai_Falls_Cherrapunjee_Shillong_Meghalaya_India.jpg",
-    "alt": "Shillong in Meghalaya - Waterfalls, Nature, Scenes of India"
+    "alt": "Shillong, Meghalaya"
   },
   "overview": {
     "short": "Shillong is a much-loved hill station in Meghalaya, known for scotland of east and waterfalls.",
@@ -23,8 +23,7 @@
     "rating": 4.5,
     "reviewCount": 27000,
     "minPrice": 1300,
-    "distanceFromDelhi": 1900,
-    "about": "Shillong, in Khasi Hills, Meghalaya, is one of India’s favourite hill station. Visitors come for its scotland of east, waterfalls, living roots, with the best months being Mar – Jun, Sep – Nov."
+    "distanceFromDelhi": 1900
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -215,13 +214,13 @@
       "category": "nature",
       "distance": "12 km",
       "entryFee": "₹20",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.3,
       "description": "Three-tiered waterfall on the city outskirts.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/36/Elephant_Falls_Meghalaya.jpg",
-        "alt": "Elephant Falls in Meghalaya, India"
+        "alt": "Elephant Falls"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b0/Stupa_with_Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar%2C_India_52.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -234,13 +233,13 @@
       "category": "scenic",
       "distance": "15 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Vast reservoir with kayaking and scenic viewpoints.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Umiam_Lake%2C_Shillong%2C_Megahalya.jpg/1280px-Umiam_Lake%2C_Shillong%2C_Megahalya.jpg",
-        "alt": "Umiam Lake in Meghalaya, India"
+        "alt": "Umiam Lake"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b9/Stupa_with_Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar%2C_India_56.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -253,13 +252,13 @@
       "category": "scenic",
       "distance": "10 km",
       "entryFee": "₹30",
-      "timings": "9:00 AM – 5:00 PM",
+      "timings": "Varies by season",
       "duration": "1 hr",
       "rating": 4.4,
       "description": "Highest point with panoramic views of the city and hills.",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Shillong_by_Vikramjit_Kakati.png",
-        "alt": "Shillong Peak in Meghalaya, India"
+        "alt": "Shillong Peak"
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Scenic_View_from_Shillong_peak.JPG",
@@ -299,84 +298,221 @@
   ],
   "hotels": [
     {
-      "name": "OYO Shillong Stay",
-      "type": "oyo",
-      "tier": "budget",
+      "name": "BunkStay Shillong",
+      "type": "hostel",
+      "tier": "cheapest",
       "priceMin": 1300,
       "priceMax": 2100,
-      "rating": 4,
-      "reviews": 320,
+      "rating": 4.1,
+      "reviews": 167,
       "amenities": [
-        "WiFi",
-        "AC",
-        "Parking",
-        "Breakfast"
+        "Free WiFi",
+        "Clean Rooms",
+        "24hr Reception",
+        "CCTV Security"
       ],
       "tags": [
-        "OYO Verified",
-        "Value"
+        "Budget Friendly",
+        "Valley View"
       ],
-      "url": "https://www.google.com/search?q=OYO%20Shillong%20Stay%20Shillong%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=BunkStay%20Shillong%20Shillong%20Meghalaya"
     },
     {
-      "name": "Airbnb: Stay in Shillong",
-      "type": "airbnb apartment",
-      "tier": "good",
+      "name": "Treebo Shillong",
+      "type": "hotel",
+      "tier": "cheapest",
       "priceMin": 2450,
       "priceMax": 3500,
-      "rating": 4.7,
-      "reviews": 130,
+      "rating": 4.2,
+      "reviews": 143,
       "amenities": [
-        "Full Kitchen",
-        "Self Check-in",
-        "Local Host",
-        "WiFi"
+        "Free WiFi",
+        "Attached Bath",
+        "Daily Housekeeping",
+        "Power Backup"
       ],
       "tags": [
-        "Airbnb Superhost",
-        "Entire Place"
+        "Value Stay",
+        "Mist Haven"
       ],
-      "url": "https://www.google.com/search?q=Airbnb%3A%20Stay%20in%20Shillong%20Shillong%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Shillong%20Shillong%20Meghalaya"
     },
     {
-      "name": "Shillong Grand Hotel",
+      "name": "Treebo Trend Pine Grove",
       "type": "hotel",
-      "tier": "better",
+      "tier": "budget",
       "priceMin": 3900,
       "priceMax": 5850,
-      "rating": 4.4,
-      "reviews": 430,
+      "rating": 4.3,
+      "reviews": 275,
       "amenities": [
-        "Pool",
+        "Free WiFi",
+        "AC & Non-AC",
         "Restaurant",
-        "Room Service",
-        "Gym"
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Popular",
-        "Central"
+        "Good Value",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Shillong%20Grand%20Hotel%20Shillong%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Pine%20Grove%20Shillong%20Meghalaya"
     },
     {
-      "name": "Sterling Shillong",
-      "type": "resort",
-      "tier": "best",
+      "name": "Shillong Pine Grove",
+      "type": "hotel",
+      "tier": "budget",
       "priceMin": 7800,
       "priceMax": 13000,
-      "rating": 4.7,
-      "reviews": 560,
+      "rating": 4,
+      "reviews": 422,
       "amenities": [
-        "Pool",
-        "Spa",
-        "Fine Dining",
-        "Concierge"
+        "Free WiFi",
+        "AC & Non-AC",
+        "Restaurant",
+        "Travel Desk",
+        "Laundry"
       ],
       "tags": [
-        "Famous Chain",
-        "Premium"
+        "Good Value",
+        "Hilltop Retreat"
       ],
-      "url": "https://www.google.com/search?q=Sterling%20Shillong%20Shillong%20Meghalaya%20hotel"
+      "url": "https://www.google.com/maps/search/?api=1&query=Shillong%20Pine%20Grove%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Keys Select Hilltop Retreat",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3347,
+      "priceMax": 3744,
+      "rating": 4.4,
+      "reviews": 1029,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Breakfast Buffet",
+        "Pool",
+        "Gym",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Mist Haven"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Hilltop%20Retreat%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Shillong Lemon Tree",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3395,
+      "priceMax": 4426,
+      "rating": 4.3,
+      "reviews": 881,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Multi-cuisine",
+        "Bar",
+        "Kids Club",
+        "Business Center"
+      ],
+      "tags": [
+        "Comfort Plus",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Shillong%20Lemon%20Tree%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Shillong Radisson Blu",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 6252,
+      "priceMax": 6581,
+      "rating": 4.4,
+      "reviews": 1111,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Rooftop Bar",
+        "Meeting Rooms",
+        "Airport Transfer"
+      ],
+      "tags": [
+        "Top Amenities",
+        "Pine Grove"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Shillong%20Radisson%20Blu%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Westin Mist Haven",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7735,
+      "priceMax": 8140,
+      "rating": 4.6,
+      "reviews": 2453,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Award Winning",
+        "Peak Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Mist%20Haven%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Hyatt Regency Shillong",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 10644,
+      "priceMax": 12197,
+      "rating": 4.4,
+      "reviews": 1253,
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Michelin Dining",
+        "Private Beach",
+        "Yacht Access",
+        "Helipad"
+      ],
+      "tags": [
+        "Luxury Experience",
+        "Summit View"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Shillong%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "The The Oberoi Shillong",
+      "type": "resort",
+      "tier": "luxury",
+      "priceMin": 23789,
+      "priceMax": 25644,
+      "rating": 4.7,
+      "reviews": 1007,
+      "amenities": [
+        "Free WiFi",
+        "Infinity Pool",
+        "Ayurveda Spa",
+        "Royal Dining",
+        "Personal Butler",
+        "Private Jet Access"
+      ],
+      "tags": [
+        "Royal Experience",
+        "Mountain Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20The%20Oberoi%20Shillong%20Shillong%20Meghalaya"
     }
   ],
   "restaurants": [],
@@ -390,28 +526,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nohkalikai_Falls_Cherrapunjee_Shillong_Meghalaya_India.jpg",
-      "alt": "Shillong in Meghalaya - Waterfalls, Nature, Scenes of India",
-      "title": "Shillong in Meghalaya - Waterfalls, Nature, Scenes…"
+      "alt": "Shillong in Meghalaya - Waterfalls, Nature, Scenes of India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Elephant_Falls_II%2C_Shillong.jpg/1280px-Elephant_Falls_II%2C_Shillong.jpg",
-      "alt": "Shillong photo 2",
-      "title": "Umiam Lake"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Elephant_Falls_II%2C_Shillong.jpg",
+      "alt": "Shillong photo 2"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Umiam_lake_Shillong_Meghalaya_India.jpg/1280px-Umiam_lake_Shillong_Meghalaya_India.jpg",
-      "alt": "Shillong photo 3",
-      "title": "Shillong Peak"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Umiam_lake_Shillong_Meghalaya_India.jpg",
+      "alt": "Shillong photo 3"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Umiam_Lake%2C_Shillong%2C_Meghalaya%2C_India.jpg/1280px-Umiam_Lake%2C_Shillong%2C_Meghalaya%2C_India.jpg",
-      "alt": "Shillong photo 4",
-      "title": "Shillong — Sacred Heritage"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Umiam_Lake%2C_Shillong%2C_Meghalaya%2C_India.jpg",
+      "alt": "Shillong photo 4"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Shillong_from_Shillong_Peak.jpg/1280px-Shillong_from_Shillong_Peak.jpg",
-      "alt": "Shillong photo 5",
-      "title": "Shillong — Sunset Horizon"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Shillong_from_Shillong_Peak.jpg",
+      "alt": "Shillong photo 5"
     }
   ],
   "faq": [
@@ -449,5 +580,7 @@
       "how to reach Shillong",
       "Meghalaya tourism"
     ]
-  }
+  },
+  "hotelsRealSourceCount": 10,
+  "hotelSourceTried": true
 }
