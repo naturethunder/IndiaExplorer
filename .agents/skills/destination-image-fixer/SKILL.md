@@ -28,14 +28,18 @@ This skill defines the autonomous image acquisition and quality enforcement work
    - No image URL may be reused across distinct items in the same destination JSON.
    - Disjoint sets for gallery vs place cards vs place photos.
 
-4. **Rule 4 — Authentic Legal Sourcing**
-   - Source images strictly from **Wikimedia Commons**, **Pexels**, **Unsplash**, **Pixabay**, **Google Places Photos**, **Openverse**, or **Mapillary**.
-   - No placeholder domains (`picsum.photos`, `via.placeholder`, `placeholder.com`).
-   - Use high-resolution original URLs (`imageinfo/url` on Wikimedia Commons, `largeImageURL` on Pixabay, HD query parameters on Pexels/Unsplash).
+4. **Rule 4 — Authentic Legal Sourcing (Photo APIs First)**
+   - Priority Source Order:
+     1. **Pexels API**: Full HD (`cs=tinysrgb&dpr=2&w=1280` or `original`), authentic landscape/architecture.
+     2. **Unsplash API**: High resolution (`auto=format&fit=crop&w=1280&q=80`).
+     3. **Openverse / Flickr CDN**: Verified CC-BY / CC0 high resolution imagery.
+     4. **Wikimedia Commons**: Absolute LAST RESORT only when external photo APIs yield zero suitable assets.
+   - Strictly banned: Pixabay `/get/` session links (return HTTP 429), placeholder domains (`picsum.photos`, `via.placeholder`, `placeholder.com`).
+   - Sanitize all metadata: Ensure HTML entities (`&lt;`, `&gt;`, `&quot;`, `&amp;`) are completely decoded and any HTML tags (`<a href=...>`, `<b>`, etc.) are 100% stripped from `alt`, `title`, and `caption`.
 
 5. **Rule 5 — Subject Selection (Monuments, Scenery & Architecture Only)**
    - **Target Subjects**: Must feature authentic monuments, scenic landscapes, panoramic views, historical architecture, heritage structures, nature, temples, forts, waterfalls, or beaches.
-   - **Automatic Rejections**: Strictly discard images containing prominent individuals/portraits/selfies, tourist poses blocking landmarks, unrelated/mismatched locations, indoor office spaces, food close-ups, or irrelevant items.
+   - **Automatic Rejections**: Strictly discard images containing prominent individuals/portraits/selfies, tourist poses blocking landmarks, unrelated/mismatched locations (e.g. Hungarian bastions, foreign bells, unrelated South Indian temples in Assam/Bihar), indoor office spaces, food close-ups, or irrelevant items.
 
 ## Search Strategy & Heuristics
 

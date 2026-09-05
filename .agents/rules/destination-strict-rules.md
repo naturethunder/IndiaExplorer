@@ -3,7 +3,7 @@
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-09-03 (Phase 15).** Wikimedia is now **discouraged** — use Pexels/Unsplash first.
+> **Last updated: 2026-09-06 (Phase 19).** External photo APIs (Pexels, Unsplash, Openverse/Flickr) are **mandatory primary sources**. Wikimedia Commons is strictly **last resort**. All image alt text and titles must have HTML entities decoded and tags stripped.
 
 ---
 
@@ -11,8 +11,8 @@ They stack on top of `ui-ux-pro-max` skill rules.
 
 Every destination JSON must have **exactly 5 hero/gallery images**, all different.
 
-- **Preferred sources (in priority order): Pexels, Unsplash**
-- Fallback/discouraged: Wikimedia Commons — only if Pexels/Unsplash have no suitable authentic match
+- **Preferred sources (in priority order): Pexels, Unsplash, Openverse (Flickr CDN)**
+- Fallback/last resort: Wikimedia Commons — strictly if external photo APIs have no suitable authentic match
 - **Banned:** Pixabay `/get/` session links (expire / return HTTP 429), `picsum.photos`, placeholder CDNs
 - Each image must be **True HD / 4K Landscape quality** — minimum 1280px wide (recommended 1920×1080 to 4608×2592), widescreen aspect ratio (`1.25` to `1.9`)
 - Portrait orientation (< 1.0 ratio) and thin banner slices (< 300px height) are strictly prohibited

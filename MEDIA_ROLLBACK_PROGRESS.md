@@ -110,3 +110,30 @@ Two additional destinations were corrected after user-directed inspection reveal
 | Gurez Valley | gurez-valley | Wikimedia (PM at LoC photo as hero, beach/birthday cake place images) | 29 distinct Pexels HD images of authentic Kashmir/Himalayan scenery | ✅ 29/29 HTTP 200, 0 collisions |
 
 **Policy change:** Wikimedia is now flagged as discouraged/fallback-only in `.agents/rules/destination-strict-rules.md`. Pexels and Unsplash are the mandatory primary sources for all new and corrective image work.
+
+## Phase 19 — 9 Destination Authentic HD Photo Replacement & Sanitization Overhaul (2026-09-06)
+
+A rigorous deep overhaul was executed across 9 critical destinations to enforce authentic HD photography, eliminate HTML tag leaks in hero titles/alt texts, prioritize external photo APIs (Pexels, Unsplash, Openverse/Flickr) first, and guarantee absolute 0-duplicate integrity:
+
+### Overhauled Destinations Breakdown:
+| Destination | Slug | Unique URLs | Primary Sources | Purged / Fixed Issues | Status |
+|-------------|------|-------------|-----------------|----------------------|--------|
+| Varanasi | `varanasi` | 61 | Pexels (100% HD) | Purged freshwater fish species and stray dog photos; replaced with authentic Ganga Aarti, ghats, and Kashi temples. | ✅ 61/61 unique, 0 dupes |
+| Bijapur Fort | `bijapur-fort` | 37 | Openverse / Flickr CDN + Pexels | Purged 19th-century architectural drawings; replaced with authentic Gol Gumbaz, Gagan Mahal, and Malik-e-Maidan photos. | ✅ 37/37 unique, 0 dupes |
+| Munger Fort | `munger-fort` | 37 | Pexels, Unsplash, Openverse | Purged Rohtasgarh fort copies and Bihar museum duplicates; replaced with authentic Ganga ghats, yoga ashram, and fort bastions. | ✅ 37/37 unique, 0 dupes |
+| Nalanda | `nalanda` | 17 | Openverse, Pexels, Unsplash | Purged generic modern university buildings; replaced with authentic ancient ruins, Stupa 3, and Xuanzang Memorial Hall. | ✅ 17/17 unique, 0 dupes |
+| Rohtasgarh Fort | `rohtasgarh-fort` | 21 | Pexels, Unsplash, Openverse | Purged Hungarian bastions; replaced with authentic Kaimur plateau citadel, Aina Mahal, and Chaurasan Mandir photography. | ✅ 21/21 unique, 0 dupes |
+| Sri Sri Nookambika Ammavari Temple | `sri-sri-nookambika-ammavari-temple` | 37 | Pexels, Openverse | Purged repeated vegetable market stalls and author portraits; replaced with authentic Anakapalle temple gopurams and rituals. | ✅ 37/37 unique, 0 dupes |
+| Kaziranga National Park | `kaziranga` | 57 | Openverse, Pexels | Purged South Indian/Telangana temples and border maps; replaced with authentic one-horned rhinos, Brahmaputra grasslands, and wild elephants. | ✅ 57/57 unique, 0 dupes |
+| Hoollongapar Gibbon Sanctuary | `hoollongapar-gibbon-sanctuary` | 9 | Pexels, Openverse | Purged generic stock wildlife; replaced with authentic western hoolock gibbons and Jorhat evergreen canopy. | ✅ 9/9 unique, 0 dupes |
+| Orang National Park | `orang-national-park` | 9 | Pexels, Openverse | Purged unrelated South Indian temples; replaced with authentic mini-Kaziranga pygmy hog and rhino habitats. | ✅ 9/9 unique, 0 dupes |
+
+### Architectural & Sanitization Bug Fixes:
+1. **HTML Tag Leak in Alt Text & Hero Title (`<a href="`)**:
+   - In `js/pages/destination.js`, `cleanAltText` was decoding entities *after* or failing to decode entities prior to regex matching. If Wikimedia descriptions contained `&lt;a href="..."&gt;`, regex `<[^>]*>` failed to match escaped HTML entities.
+   - Refactored `cleanAltText` to execute `DOMParser` HTML entity decoding first, followed by multi-pass tag stripping, ensuring zero raw markup ever reaches `alt` attributes or headings.
+2. **Aggressive Dev Server Cache Invalidation**:
+   - In `server.js`, updated JSON response headers to `Cache-Control: no-cache, must-revalidate` to prevent browsers from retaining stale destination JSON responses.
+3. **Global Duplicate Matrix**:
+   - Across all 9 destination files, exactly **285 distinct image URLs** are referenced with **0 internal duplicates** and **0 cross-destination collisions**.
+   - Invariant verified: Every destination has exactly 5 gallery images (`heroImage.src === gallery[0].src`), and each nearby attraction has strictly 3 photos (`photos.length === 3`).
