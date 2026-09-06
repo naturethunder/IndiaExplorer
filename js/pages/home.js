@@ -3,12 +3,13 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js';
+import { initLayout } from '../components/layout.js?v=20260906-1';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { resolveState, MONTH_PICKS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
+import { searchDestinations } from '../utils/search.js';
 
 const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -162,27 +163,19 @@ function stateCount(state) { return summaries.reduce((n, d) => n + (d.state === 
 function stateUrl(state) { return 'destinations.html?state=' + encodeURIComponent(state); }
 
 function search(q) {
-  q = q.toLowerCase();
-  return summaries.filter((d) =>
-    d.title.toLowerCase().includes(q) ||
-    d.state.toLowerCase().includes(q) ||
-    d.region.toLowerCase().includes(q) ||
-    d.type.toLowerCase().includes(q) ||
-    d.short.toLowerCase().includes(q) ||
-    d.features.some((f) => f.toLowerCase().includes(q))
-  );
+  return searchDestinations(summaries, q);
 }
 
 // ─── Hero inline stats ────────────────────────────────────
 (function () {
   const el = document.getElementById('hero-stats');
   if (!el) return;
-  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2388);
+  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2392);
   const stats = [
     { ic: 'map-pin', raw: totalDestCount, suffix: '+', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
-    { ic: 'mountain', raw: 14338, suffix: '+', label: 'Places' },
-    { ic: 'bed', raw: 9621, suffix: '+', label: 'Stays' },
+    { ic: 'mountain', raw: 14013, suffix: '+', label: 'Places' },
+    { ic: 'bed', raw: 17567, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +

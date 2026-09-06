@@ -132,8 +132,18 @@ export function resolveState(query, states) {
   for (let i = 0; i < states.length; i++) {
     if (norm(states[i]) === q) return states[i];
   }
+
+  // Direct space-stripped state match (e.g., "tamilnadu" -> "Tamil Nadu", "uttarpradesh" -> "Uttar Pradesh")
+  const cleanQ = String(query || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (cleanQ.length >= 3) {
+    for (let i = 0; i < states.length; i++) {
+      if (states[i].toLowerCase().replace(/[^a-z0-9]/g, '') === cleanQ) return states[i];
+    }
+  }
+
   // Alias table (exact key).
   if (STATE_ALIASES[q] && states.indexOf(STATE_ALIASES[q]) >= 0) return STATE_ALIASES[q];
+  if (cleanQ && STATE_ALIASES[cleanQ] && states.indexOf(STATE_ALIASES[cleanQ]) >= 0) return STATE_ALIASES[cleanQ];
 
   // Fuzzy: nearest state within a length-scaled edit budget, must be unique.
   const budget = q.length <= 5 ? 1 : 2;

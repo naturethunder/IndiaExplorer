@@ -92,15 +92,13 @@ body.dest-immersive {
     radial-gradient(ellipse 80% 70% at 50% 30%,
       rgba(2, 4, 8, 0.10) 0%,
       rgba(2, 4, 8, 0.55) 70%,
-      rgba(2, 4, 8, 0.75) 100%
-    ),
+      rgba(2, 4, 8, 0.75) 100%),
     /* Vertical ramp — darker bottom, lighter top-mid */
     linear-gradient(180deg,
       rgba(2, 4, 8, 0.25) 0%,
       rgba(2, 4, 8, 0.30) 25%,
       rgba(2, 4, 8, 0.48) 65%,
-      rgba(2, 4, 8, 0.72) 100%
-    );
+      rgba(2, 4, 8, 0.72) 100%);
   pointer-events: none;
   transform: translateZ(0);
 }
@@ -154,44 +152,76 @@ body.dest-immersive .nav-glass button {
   cursor: pointer !important;
 }
 
-/* Frosted pill nav links — match glass-immersive navbar on all other pages (#4) */
+/* Tab-style nav links — match Overview tab design (#4) */
 body.dest-immersive .nav-glass .nav-link {
-  padding: 0.42rem 1.05rem;
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.88);
-  transition: background 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.5rem 1.15rem !important;
+  border-radius: 6px 6px 0 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2.5px solid transparent !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500 !important;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 body.dest-immersive .nav-glass .nav-link:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(74, 222, 128, 0.5);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-bottom-color: rgba(245, 197, 66, 0.4) !important;
+  color: #FFFFFF !important;
+  transform: none !important;
+}
+
+body.dest-immersive .nav-glass .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.03) 0%, rgba(245, 197, 66, 0.12) 60%, rgba(245, 197, 66, 0.22) 100%) !important;
+  border: none !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.4), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  border-radius: 6px 6px 0 0 !important;
 }
 
 body.dest-immersive .nav-glass .btn-outline {
-  border-color: var(--imm-border-md);
-  color: var(--imm-text);
+  background: rgba(10, 15, 22, 0.85) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(245, 197, 66, 0.30) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.50) !important;
+  border-radius: 8px !important;
+  transition: all 0.22s var(--imm-ease);
 }
 
-body.dest-immersive .nav-glass .btn-outline:hover {
-  background: var(--imm-surface-md);
-  border-color: var(--imm-border-hi);
+body.dest-immersive .nav-glass .btn-outline:hover,
+body.dest-immersive .nav-glass .btn-outline:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
 }
 
 body.dest-immersive .nav-glass .btn.btn-primary {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
-  color: #080A0F !important;
-  font-weight: 700;
-  box-shadow: 0 4px 20px rgba(229, 192, 123, 0.45);
-  border: none;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.16) 0%, rgba(245, 197, 66, 0.08) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.65) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 8px !important;
+  transition: all 0.22s var(--imm-ease);
 }
 
-body.dest-immersive .nav-glass .btn.btn-primary:hover {
-  box-shadow: 0 6px 28px rgba(229, 192, 123, 0.65);
+body.dest-immersive .nav-glass .btn.btn-primary:hover,
+body.dest-immersive .nav-glass .btn.btn-primary:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   transform: translateY(-1px);
 }
 
@@ -367,9 +397,7 @@ body.dest-immersive #heroTitle {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter:
-    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.95))
-    drop-shadow(0 12px 42px rgba(0, 0, 0, 0.85))
-    drop-shadow(0 0 35px rgba(245, 197, 66, 0.28));
+    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.95)) drop-shadow(0 12px 42px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 35px rgba(245, 197, 66, 0.28));
   text-transform: none;
   margin-bottom: 0.55rem;
   padding: 0 1rem;
@@ -507,10 +535,11 @@ body.dest-immersive #statsBar .text-amber-400 {
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
-  padding: 15px 22px !important;
-  border-radius: 0 !important;
+  padding: 14px 22px !important;
+  border-radius: 6px 6px 0 0 !important;
   border: none !important;
-  border-bottom: 2px solid transparent !important;
+  border-bottom: 2.5px solid transparent !important;
+  margin-bottom: -1px !important;
   background: transparent !important;
   color: rgba(203, 213, 225, 0.85) !important;
   font-family: 'Jost', sans-serif !important;
@@ -522,24 +551,21 @@ body.dest-immersive #statsBar .text-amber-400 {
   transition:
     color var(--imm-duration) var(--imm-ease),
     border-color var(--imm-duration) var(--imm-ease),
-    background var(--imm-duration) var(--imm-ease) !important;
+    background var(--imm-duration) var(--imm-ease),
+    box-shadow var(--imm-duration) var(--imm-ease) !important;
   box-shadow: none !important;
   transform: none !important;
   -webkit-tap-highlight-color: transparent;
 }
 
-#destNavContainer .dest-quick-pill:hover {
-  color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-bottom-color: rgba(245, 197, 66, 0.35) !important;
-}
-
+#destNavContainer .dest-quick-pill:hover,
+#destNavContainer .dest-quick-pill:active,
 #destNavContainer .dest-quick-pill.active {
-  color: #F5C542 !important;
+  color: #FFFFFF !important;
   border-bottom-color: #F5C542 !important;
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.06) 0%, rgba(245, 197, 66, 0.16) 100%) !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   font-weight: 600 !important;
-  box-shadow: inset 0 -2px 10px rgba(245, 197, 66, 0.25) !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
 }
 
 /* Count badges */
@@ -559,9 +585,9 @@ body.dest-immersive #statsBar .text-amber-400 {
 }
 
 #destNavContainer .dest-quick-pill.active .tab-badge {
-  background: var(--imm-accent-dim) !important;
-  color: var(--imm-accent) !important;
-  border-color: rgba(245, 197, 66, 0.45) !important;
+  background: rgba(245, 197, 66, 0.22) !important;
+  color: #F5C542 !important;
+  border-color: rgba(245, 197, 66, 0.5) !important;
 }
 
 /* SVG icons */
@@ -569,11 +595,16 @@ body.dest-immersive #statsBar .text-amber-400 {
   width: 15px !important;
   height: 15px !important;
   flex-shrink: 0;
-  transition: color var(--imm-duration) var(--imm-ease);
+  color: rgba(245, 197, 66, 0.75) !important;
+  stroke: rgba(245, 197, 66, 0.75) !important;
+  transition: color var(--imm-duration) var(--imm-ease), stroke var(--imm-duration) var(--imm-ease);
 }
 
+#destNavContainer .dest-quick-pill:hover svg,
 #destNavContainer .dest-quick-pill.active svg {
-  color: var(--imm-accent) !important;
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.45));
 }
 
 /* ─── CONTENT PANELS ────────────────────────────────────── */
@@ -758,34 +789,73 @@ body.dest-immersive .dest-filter-btn {
 
 body.dest-immersive [data-place]:hover,
 body.dest-immersive [data-tier]:hover,
-body.dest-immersive .dest-filter-btn:hover {
-  background: rgba(22, 30, 48, 0.95) !important;
-  color: #FFFFFF !important;
-  border-color: rgba(229, 192, 123, 0.5) !important;
-  transform: translateY(-1px);
-}
-
+body.dest-immersive .dest-filter-btn:hover,
+body.dest-immersive [data-place]:active,
+body.dest-immersive [data-tier]:active,
+body.dest-immersive .dest-filter-btn:active,
 body.dest-immersive [data-place].active,
 body.dest-immersive [data-tier].active,
 body.dest-immersive .dest-filter-btn.active,
 body.dest-immersive [data-place].bg-primary,
 body.dest-immersive [data-tier].bg-gray-900 {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
-  border-color: #F5C542 !important;
-  color: #080A0F !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 18px rgba(229, 192, 123, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
 }
 
 /* ─── Stay Tier Chips (Dark Glass Jewel Badges) ─────────── */
-.tier-pill-cheapest { background: rgba(16, 185, 129, 0.16) !important; color: #6ee7b7 !important; border: 1px solid rgba(52, 211, 153, 0.4) !important; }
-.tier-pill-budget { background: rgba(59, 130, 246, 0.16) !important; color: #93c5fd !important; border: 1px solid rgba(96, 165, 250, 0.4) !important; }
-.tier-pill-good { background: rgba(99, 102, 241, 0.16) !important; color: #a5b4fc !important; border: 1px solid rgba(129, 140, 248, 0.4) !important; }
-.tier-pill-better { background: rgba(139, 92, 246, 0.16) !important; color: #c4b5fd !important; border: 1px solid rgba(167, 139, 250, 0.4) !important; }
-.tier-pill-best { background: rgba(245, 158, 11, 0.16) !important; color: #fcd34d !important; border: 1px solid rgba(251, 191, 36, 0.45) !important; }
-.tier-pill-luxury { background: rgba(244, 63, 94, 0.16) !important; color: #fda4af !important; border: 1px solid rgba(251, 113, 133, 0.45) !important; }
-.tier-pill-extra-luxury { background: rgba(245, 197, 66, 0.2) !important; color: #F5C542 !important; border: 1px solid rgba(245, 197, 66, 0.6) !important; box-shadow: 0 0 14px rgba(245, 197, 66, 0.3) !important; }
-.tier-pill-default { background: rgba(255, 255, 255, 0.08) !important; color: #e2e8f0 !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; }
+.tier-pill-cheapest {
+  background: rgba(16, 185, 129, 0.16) !important;
+  color: #6ee7b7 !important;
+  border: 1px solid rgba(52, 211, 153, 0.4) !important;
+}
+
+.tier-pill-budget {
+  background: rgba(59, 130, 246, 0.16) !important;
+  color: #93c5fd !important;
+  border: 1px solid rgba(96, 165, 250, 0.4) !important;
+}
+
+.tier-pill-good {
+  background: rgba(99, 102, 241, 0.16) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(129, 140, 248, 0.4) !important;
+}
+
+.tier-pill-better {
+  background: rgba(139, 92, 246, 0.16) !important;
+  color: #c4b5fd !important;
+  border: 1px solid rgba(167, 139, 250, 0.4) !important;
+}
+
+.tier-pill-best {
+  background: rgba(245, 158, 11, 0.16) !important;
+  color: #fcd34d !important;
+  border: 1px solid rgba(251, 191, 36, 0.45) !important;
+}
+
+.tier-pill-luxury {
+  background: rgba(244, 63, 94, 0.16) !important;
+  color: #fda4af !important;
+  border: 1px solid rgba(251, 113, 133, 0.45) !important;
+}
+
+.tier-pill-extra-luxury {
+  background: rgba(245, 197, 66, 0.2) !important;
+  color: #F5C542 !important;
+  border: 1px solid rgba(245, 197, 66, 0.6) !important;
+  box-shadow: 0 0 14px rgba(245, 197, 66, 0.3) !important;
+}
+
+.tier-pill-default {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
 
 body.dest-immersive .bg-gray-100 {
   background: rgba(255, 255, 255, 0.08) !important;
@@ -1023,32 +1093,45 @@ body.dest-immersive .border-b.border-gray-100 {
 /* ─── BUTTONS ───────────────────────────────────────────── */
 body.dest-immersive .btn.btn-primary {
   font-family: 'Jost', sans-serif;
-  font-weight: 700;
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
-  color: #080A0F !important;
-  box-shadow: 0 4px 20px rgba(229, 192, 123, 0.45);
-  border: none;
+  font-weight: 600;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.16) 0%, rgba(245, 197, 66, 0.08) 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.65) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 8px !important;
   letter-spacing: 0.02em;
-  transition: all 0.25s var(--imm-ease);
+  transition: all 0.22s var(--imm-ease);
 }
 
-body.dest-immersive .btn.btn-primary:hover {
-  box-shadow: 0 8px 32px rgba(229, 192, 123, 0.65);
-  transform: translateY(-2px);
+body.dest-immersive .btn.btn-primary:hover,
+body.dest-immersive .btn.btn-primary:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
 }
 
 body.dest-immersive .btn-outline {
   font-family: 'Jost', sans-serif;
-  background: var(--imm-surface);
-  border: 1px solid var(--imm-border-md);
-  color: var(--imm-text);
+  background: rgba(10, 15, 22, 0.85) !important;
+  border: 1px solid rgba(245, 197, 66, 0.30) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.50) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px !important;
   transition: all 0.22s var(--imm-ease);
 }
 
-body.dest-immersive .btn-outline:hover {
-  background: var(--imm-surface-hi);
-  border-color: var(--imm-accent);
-  color: var(--imm-accent);
+body.dest-immersive .btn-outline:hover,
+body.dest-immersive .btn-outline:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
 }
 
 /* data-goto & data-gems-all links */
@@ -1074,6 +1157,23 @@ body.dest-immersive #similar-heading {
   color: #ffffff !important;
   font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8) !important;
+}
+
+body.dest-immersive #similarExploreBtn {
+  background: rgba(245, 197, 66, 0.08) !important;
+  border: 1px solid rgba(245, 197, 66, 0.3) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.dest-immersive #similarExploreBtn:hover {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.08) 0%, rgba(245, 197, 66, 0.18) 60%, rgba(245, 197, 66, 0.28) 100%) !important;
+  border-color: #F5C542 !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 20px -2px rgba(245, 197, 66, 0.5), inset 0 -2px 8px rgba(245, 197, 66, 0.3) !important;
+  transform: translateY(-2px) !important;
 }
 
 body.dest-immersive #similar-grid a {
@@ -1371,7 +1471,8 @@ body.dest-immersive #placeClose:hover {
 }
 
 .dest-ov-slide.is-active img {
-  transform: scale(1); /* Ken Burns zoom removed */
+  transform: scale(1);
+  /* Ken Burns zoom removed */
 }
 
 /* Carousel nav buttons */
@@ -1470,15 +1571,24 @@ body.dest-immersive .bg-amber-100 {
 
 /* Stays "Check Availability" button */
 body.dest-immersive .card .btn.btn-primary {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
-  color: #080A0F !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 16px rgba(229, 192, 123, 0.45);
-  border: none !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.16) 0%, rgba(245, 197, 66, 0.08) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.65) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 8px !important;
+  transition: all 0.22s var(--imm-ease);
 }
 
-body.dest-immersive .card .btn.btn-primary:hover {
-  box-shadow: 0 8px 28px rgba(229, 192, 123, 0.65);
+body.dest-immersive .card .btn.btn-primary:hover,
+body.dest-immersive .card .btn.btn-primary:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
 }
 
 /* Price text */
@@ -1542,11 +1652,13 @@ body.dest-immersive .nav-glass.nav-scrolled {
   .dest-ov-slide.is-active img {
     animation: none !important;
   }
+
   .dest-ov-carousel {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
   }
+
   .dest-ov-slide .dest-ov-caption {
     animation: none !important;
     opacity: 1 !important;
@@ -1559,10 +1671,21 @@ body.dest-immersive .nav-glass.nav-scrolled {
 /* ─── 1. KEN BURNS — subtle breathing zoom on active slide ──── */
 /* Images gently drift/breathe while active — feels alive      */
 @keyframes imm-ken-burns {
-  0%   { transform: scale(1.00) translate(0px, 0px); }
-  33%  { transform: scale(1.04) translate(-6px, -3px); }
-  66%  { transform: scale(1.06) translate(4px, -5px); }
-  100% { transform: scale(1.04) translate(-2px, 2px); }
+  0% {
+    transform: scale(1.00) translate(0px, 0px);
+  }
+
+  33% {
+    transform: scale(1.04) translate(-6px, -3px);
+  }
+
+  66% {
+    transform: scale(1.06) translate(4px, -5px);
+  }
+
+  100% {
+    transform: scale(1.04) translate(-2px, 2px);
+  }
 }
 
 .dest-ov-slide.is-active img {
@@ -1578,6 +1701,7 @@ body.dest-immersive .nav-glass.nav-scrolled {
     transform: translateY(40px) scale(0.98);
     filter: blur(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -1597,6 +1721,7 @@ body.dest-immersive .nav-glass.nav-scrolled {
     opacity: 0;
     transform: translateY(14px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1609,10 +1734,25 @@ body.dest-immersive .nav-glass.nav-scrolled {
 
 /* ─── 4. COUNTER BADGE — pops on slide change ────────────── */
 @keyframes imm-badge-pop {
-  0%   { transform: scale(1);    opacity: 1; }
-  20%  { transform: scale(0.85); opacity: 0.7; }
-  70%  { transform: scale(1.08); opacity: 1; }
-  100% { transform: scale(1);    opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  20% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+
+  70% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .dest-ov-slide.is-active .dest-ov-counter {
@@ -1621,8 +1761,15 @@ body.dest-immersive .nav-glass.nav-scrolled {
 
 /* ─── 5. ACTIVE TAB GLOW — premium gold underline pulse ────── */
 @keyframes imm-tab-glow {
-  0%, 100% { box-shadow: 0 2px 8px rgba(212, 175, 55, 0.0); }
-  50%       { box-shadow: 0 2px 12px rgba(212, 175, 55, 0.45); }
+
+  0%,
+  100% {
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.0);
+  }
+
+  50% {
+    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.45);
+  }
 }
 
 #destNavContainer .dest-quick-pill.active {
@@ -1635,16 +1782,28 @@ body.dest-immersive .nav-glass.nav-scrolled {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.dest-summary-card:nth-child(1) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both; }
-.dest-summary-card:nth-child(2) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both; }
-.dest-summary-card:nth-child(3) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both; }
-.dest-summary-card:nth-child(4) { animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both; }
+.dest-summary-card:nth-child(1) {
+  animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+
+.dest-summary-card:nth-child(2) {
+  animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+}
+
+.dest-summary-card:nth-child(3) {
+  animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+}
+
+.dest-summary-card:nth-child(4) {
+  animation: imm-stat-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both;
+}
 
 /* ─── 7. AMBIENT BG TRANSITION — smooth crossfade for JS sync ─ */
 /* JS updates --imm-bg-current CSS var; this handles the fade   */
@@ -1660,4 +1819,72 @@ body.dest-immersive .nav-glass.nav-scrolled {
     0 2px 0 rgba(255, 255, 255, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.14);
   transition: box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   UNIVERSAL BUTTON INTERACTION DESIGN — OVERVIEW LUXURY GOLD UNDERLINE
+   "I want whole button of my project look like this, when I click or when I hover"
+   Applied across every button, pill, tab, CTA, and action trigger on destination pages.
+   ═════════════════════════════════════════════════════════════════════════════ */
+body.dest-immersive button:hover,
+body.dest-immersive button:active,
+body.dest-immersive button.active,
+body.dest-immersive button[aria-selected="true"],
+body.dest-immersive button[aria-pressed="true"],
+body.dest-immersive .btn:hover,
+body.dest-immersive .btn:active,
+body.dest-immersive .btn.active,
+body.dest-immersive a.btn:hover,
+body.dest-immersive a.btn:active,
+body.dest-immersive a.btn.active,
+body.dest-immersive .btn-primary:hover,
+body.dest-immersive .btn-primary:active,
+body.dest-immersive .btn-primary.active,
+body.dest-immersive .btn-outline:hover,
+body.dest-immersive .btn-outline:active,
+body.dest-immersive .btn-outline.active,
+body.dest-immersive .dest-quick-pill:hover,
+body.dest-immersive .dest-quick-pill:active,
+body.dest-immersive .dest-quick-pill.active,
+body.dest-immersive .nav-link:hover,
+body.dest-immersive .nav-link:active,
+body.dest-immersive .nav-link.active,
+body.dest-immersive [data-place]:hover,
+body.dest-immersive [data-place]:active,
+body.dest-immersive [data-place].active,
+body.dest-immersive [data-tier]:hover,
+body.dest-immersive [data-tier]:active,
+body.dest-immersive [data-tier].active,
+body.dest-immersive .dest-filter-btn:hover,
+body.dest-immersive .dest-filter-btn:active,
+body.dest-immersive .dest-filter-btn.active,
+body.dest-immersive input[type="button"]:hover,
+body.dest-immersive input[type="button"]:active,
+body.dest-immersive input[type="submit"]:hover,
+body.dest-immersive input[type="submit"]:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dest-immersive button:hover svg,
+body.dest-immersive button:active svg,
+body.dest-immersive button.active svg,
+body.dest-immersive .btn:hover svg,
+body.dest-immersive .btn:active svg,
+body.dest-immersive .btn.active svg,
+body.dest-immersive a.btn:hover svg,
+body.dest-immersive a.btn:active svg,
+body.dest-immersive .dest-quick-pill:hover svg,
+body.dest-immersive .dest-quick-pill:active svg,
+body.dest-immersive .dest-quick-pill.active svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
+}

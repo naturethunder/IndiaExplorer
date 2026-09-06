@@ -65,7 +65,7 @@ const FOOTER_COLS = [
       ['Heritage', 'destinations.html?type=heritage'],
       ['Wildlife', 'destinations.html?type=wildlife'],
       ['Adventure', 'destinations.html?type=adventure'],
-      ['Road Trips', 'destinations.html?type=adventure'],
+      ['Road Trips', 'destinations.html?type=road_trips'],
     ]
   },
   {

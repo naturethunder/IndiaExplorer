@@ -12,6 +12,7 @@ import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { MONTH_PICKS } from '../data/taxonomy.js';
 import { icon } from '../components/icons.js';
+import { cleanSearchText, normalizeSearchWords } from '../utils/search.js';
 
 initLayout({ active: 'finder' });
 
@@ -130,14 +131,58 @@ function parsePrompt(raw) {
   };
 
   // Direct destination-name match (people often just type a place name)
+  // Support partial/fuzzy matching: ALL query words must appear in title or slug
+  // Also support no-space matching for queries like "tajmahal" or "tamilnadu"
+  const queryWordsNorm = normalizeSearchWords(text).split(/\s+/).filter(Boolean);
+  const queryWordsClean = queryWordsNorm.map(cleanSearchText).filter(Boolean);
+  const queryClean = cleanSearchText(text);
+
   SUMMARIES.forEach(function (d) {
-    if (text.indexOf(' ' + d.title.toLowerCase() + ' ') >= 0) out.names.push(d.slug);
+    const titleClean = cleanSearchText(d.title);
+    const titleNorm = normalizeSearchWords(d.title);
+    const slugClean = cleanSearchText(d.slug);
+    const stateClean = cleanSearchText(d.state);
+    const stateNorm = normalizeSearchWords(d.state);
+
+    // Match if ALL query words appear in title, slug or state
+    // OR if clean space-less query matches title, slug, state, or title+state
+    const wordMatch = queryWordsClean.length > 0 && queryWordsClean.every(function (wordClean, idx) {
+      const wordNorm = queryWordsNorm[idx];
+      return titleClean.includes(wordClean) ||
+        titleNorm.includes(wordNorm) ||
+        slugClean.includes(wordClean) ||
+        stateClean.includes(wordClean) ||
+        stateNorm.includes(wordNorm);
+    });
+
+    const noSpaceMatch = queryClean.length >= 2 && (
+      titleClean.includes(queryClean) ||
+      slugClean.includes(queryClean) ||
+      stateClean.includes(queryClean) ||
+      (titleClean + stateClean).includes(queryClean)
+    );
+
+    if (wordMatch || noSpaceMatch) {
+      out.names.push(d.slug);
+    }
   });
 
   // Attraction / place match — search the precomputed place-name index
+  // Also support partial matching for place names (ALL words must match)
+  // Also support no-space matching for place names
   SUMMARIES.forEach(function (d) {
     entryOf(d).placeNames.forEach(function (name) {
-      if (name && name.length > 3 && text.indexOf(' ' + name.toLowerCase() + ' ') >= 0) out.places.push({ dest: d.slug, name: name });
+      if (name && name.length >= 2) {
+        const nameNorm = normalizeSearchWords(name);
+        const nameClean = cleanSearchText(name);
+        const wordMatch = queryWordsClean.length > 0 && queryWordsClean.every(function (wordClean, idx) {
+          return nameClean.includes(wordClean) || nameNorm.includes(queryWordsNorm[idx]);
+        });
+        const noSpaceMatch = queryClean.length >= 3 && nameClean.includes(queryClean);
+        if (wordMatch || noSpaceMatch) {
+          out.places.push({ dest: d.slug, name: name });
+        }
+      }
     });
   });
 
@@ -195,7 +240,13 @@ function parsePrompt(raw) {
   const proxCue = /\b(near|nearby|around|close to|closest|next to|beside|from|day trip|weekend)\b/.test(text);
   if (proxCue) {
     SUMMARIES.forEach(function (d) {
-      if (text.indexOf(' ' + d.title.toLowerCase() + ' ') >= 0 && (!out.near || d.title.length > out.near.title.length)) out.near = d;
+      const title = d.title.toLowerCase();
+      const slug = (d.slug || '').toLowerCase();
+      // Support partial matching for "near X" queries (ALL words must match)
+      if (queryWords.every(function (word) { return title.includes(word) || slug.includes(word); }) &&
+          (!out.near || d.title.length > out.near.title.length)) {
+        out.near = d;
+      }
     });
     if (/\b(delhi|ncr|gurgaon|gurugram|noida)\b/.test(text) || /\b(weekend getaway|day trip)\b/.test(text)) out.nearDelhi = true;
   }

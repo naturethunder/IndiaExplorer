@@ -335,10 +335,24 @@ body.explore-immersive :focus-visible {
   color: var(--exp-emerald-light);
 }
 
-.quick-tag-btn:hover {
-  background: rgba(16, 185, 129, 0.16);
-  border-color: rgba(52, 211, 153, 0.4);
-  transform: translateY(-2px);
+.quick-tag-btn:hover,
+.quick-tag-btn:active,
+.quick-tag-btn.active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px) !important;
+}
+
+.quick-tag-btn:hover svg,
+.quick-tag-btn:active svg,
+.quick-tag-btn.active svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
 }
 
 /* Scroll indicator */
@@ -563,6 +577,7 @@ header.dest-discovery-toolbar,
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .category-tabs-container::-webkit-scrollbar {
@@ -571,8 +586,8 @@ header.dest-discovery-toolbar,
 
 .category-tabs-track {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-end;
+  gap: 4px;
   min-width: max-content;
 }
 
@@ -580,53 +595,48 @@ header.dest-discovery-toolbar,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 44px;
-  padding: 0 16px;
-  border-radius: 9999px;
-  border: 1px solid var(--exp-border);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--exp-text-muted);
-  font-size: 12.5px;
-  font-weight: 600;
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 6px 6px 0 0 !important;
+  border: none !important;
+  border-bottom: 2.5px solid transparent !important;
+  background: transparent !important;
+  color: rgba(203, 213, 225, 0.85);
+  font-size: 13.5px;
+  font-weight: 500;
   white-space: nowrap;
   cursor: pointer;
-  transition: all 0.2s ease;
-  /* Press scale feedback per Pro Max */
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   touch-action: manipulation;
   user-select: none;
+  box-shadow: none !important;
 }
 
 .category-pill-btn svg {
-  color: var(--exp-emerald-light);
-  transition: transform 0.2s ease;
+  color: rgba(245, 197, 66, 0.75);
+  stroke: rgba(245, 197, 66, 0.75);
+  transition: color 0.2s ease, transform 0.2s ease, stroke 0.2s ease;
 }
 
-.category-pill-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.22);
-  color: var(--exp-text-main);
-  transform: translateY(-1px);
-}
-
-.category-pill-btn:active {
-  transform: scale(0.95);
-}
-
-.category-pill-btn:hover svg {
-  transform: scale(1.15);
-}
-
+.category-pill-btn:hover,
+.category-pill-btn:active,
 .category-pill-btn.active {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
-  border-color: #F5C542 !important;
-  color: #080A0F !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 18px rgba(229, 192, 123, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  border: none !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  border-radius: 6px 6px 0 0 !important;
+  transform: none;
 }
 
+.category-pill-btn:hover svg,
+.category-pill-btn:active svg,
 .category-pill-btn.active svg {
-  color: #080A0F !important;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
 }
 
 
@@ -1410,12 +1420,14 @@ body.glass-immersive .explore-filter-sidebar,
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.load-more-luxury-btn:hover {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
-  color: #080A0F;
-  border-color: #E5C07B;
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(229, 192, 123, 0.35);
+.load-more-luxury-btn:hover,
+.load-more-luxury-btn:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
 }
 
 .load-more-badge {
@@ -1555,4 +1567,76 @@ body.glass-immersive .explore-filter-sidebar,
   .dest-card-link:hover {
     transform: none !important;
   }
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   UNIVERSAL BUTTON INTERACTION DESIGN — OVERVIEW LUXURY GOLD UNDERLINE
+   "I want whole button of my project look like this, when I click or when I hover"
+   Applied across every button, tag, filter, and action trigger on explore pages.
+   ═════════════════════════════════════════════════════════════════════════════ */
+body.explore-immersive button:hover,
+body.explore-immersive button:active,
+body.explore-immersive button.active,
+body.explore-immersive button[aria-selected="true"],
+body.explore-immersive button[aria-pressed="true"],
+body.explore-immersive .btn:hover,
+body.explore-immersive .btn:active,
+body.explore-immersive .btn.active,
+body.explore-immersive a.btn:hover,
+body.explore-immersive a.btn:active,
+body.explore-immersive a.btn.active,
+body.explore-immersive .btn-primary:hover,
+body.explore-immersive .btn-primary:active,
+body.explore-immersive .btn-primary.active,
+body.explore-immersive .btn-outline:hover,
+body.explore-immersive .btn-outline:active,
+body.explore-immersive .btn-outline.active,
+body.explore-immersive .quick-tag-btn:hover,
+body.explore-immersive .quick-tag-btn:active,
+body.explore-immersive .quick-tag-btn.active,
+body.explore-immersive .category-pill-btn:hover,
+body.explore-immersive .category-pill-btn:active,
+body.explore-immersive .category-pill-btn.active,
+body.explore-immersive .nav-link:hover,
+body.explore-immersive .nav-link:active,
+body.explore-immersive .nav-link.active,
+body.explore-immersive .load-more-luxury-btn:hover,
+body.explore-immersive .load-more-luxury-btn:active,
+body.explore-immersive .mobile-filter-trigger:hover,
+body.explore-immersive .mobile-filter-trigger:active,
+body.explore-immersive .filter-apply-btn:hover,
+body.explore-immersive .filter-apply-btn:active,
+body.explore-immersive .empty-state-reset-btn:hover,
+body.explore-immersive .empty-state-reset-btn:active,
+body.explore-immersive input[type="button"]:hover,
+body.explore-immersive input[type="button"]:active,
+body.explore-immersive input[type="submit"]:hover,
+body.explore-immersive input[type="submit"]:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.explore-immersive button:hover svg,
+body.explore-immersive button:active svg,
+body.explore-immersive button.active svg,
+body.explore-immersive .btn:hover svg,
+body.explore-immersive .btn:active svg,
+body.explore-immersive .btn.active svg,
+body.explore-immersive a.btn:hover svg,
+body.explore-immersive a.btn:active svg,
+body.explore-immersive .quick-tag-btn:hover svg,
+body.explore-immersive .quick-tag-btn:active svg,
+body.explore-immersive .category-pill-btn:hover svg,
+body.explore-immersive .category-pill-btn:active svg,
+body.explore-immersive .category-pill-btn.active svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
 }

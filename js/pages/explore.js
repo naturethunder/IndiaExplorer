@@ -5,12 +5,13 @@
  * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout, setActiveNav } from '../components/layout.js';
+import { initLayout, setActiveNav } from '../components/layout.js?v=20260906-1';
 import { destCardHTML } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
 import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
+import { searchDestinations } from '../utils/search.js';
 
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
@@ -430,9 +431,15 @@ function readFiltersFromUrl() {
       hasUrlParams = true;
     }
   }
-  if (params.get('state') && INDIA_STATES.indexOf(params.get('state')) >= 0) {
-    newFilters.state = params.get('state');
-    hasUrlParams = true;
+  if (params.get('state')) {
+    const rawState = params.get('state');
+    const matchedState = INDIA_STATES.find(function (s) {
+      return s === rawState || s.toLowerCase().replace(/[^a-z0-9]/g, '') === rawState.toLowerCase().replace(/[^a-z0-9]/g, '');
+    });
+    if (matchedState) {
+      newFilters.state = matchedState;
+      hasUrlParams = true;
+    }
   }
   if (params.get('region') && ZONES.indexOf(params.get('region')) >= 0) {
     newFilters.region = params.get('region');
@@ -465,7 +472,7 @@ function readFiltersFromUrl() {
   }
   if (params.get('sort') || params.get('sortBy')) {
     const s = params.get('sort') || params.get('sortBy');
-    const validSorts = ['rating', 'latest', 'price_asc', 'price_desc', 'distance'];
+    const validSorts = ['rating', 'latest', 'name_asc', 'name_desc', 'price_asc', 'price_desc', 'distance'];
     if (validSorts.indexOf(s) >= 0) {
       newSortBy = s;
       hasUrlParams = true;
@@ -502,15 +509,7 @@ function apply(options = {}) {
   let results = SUMMARIES.slice();
 
   if (filters.search) {
-    const q = filters.search.toLowerCase().trim();
-    results = results.filter(function (d) {
-      return d.title.toLowerCase().includes(q) ||
-        d.state.toLowerCase().includes(q) ||
-        (d.region && d.region.toLowerCase().includes(q)) ||
-        d.type.toLowerCase().includes(q) ||
-        d.short.toLowerCase().includes(q) ||
-        (d.features && d.features.some(function (f) { return f.toLowerCase().includes(q); }));
-    });
+    results = searchDestinations(results, filters.search);
   }
 
   if (filters.type) {
@@ -543,8 +542,15 @@ function apply(options = {}) {
     });
   }
 
-  if (sortBy === 'rating') results.sort(function (a, b) { return (b.rating || 0) - (a.rating || 0); });
+  if (sortBy === 'rating') {
+    if (!filters.search) {
+      results.sort(function (a, b) { return (b.rating || 0) - (a.rating || 0); });
+    }
+    // When filters.search is active, searchDestinations already ranked by relevance
+  }
   else if (sortBy === 'latest') results.sort(function (a, b) { return (b._addedAt || 0) - (a._addedAt || 0); });
+  else if (sortBy === 'name_asc') results.sort(function (a, b) { return (a.title || '').localeCompare(b.title || ''); });
+  else if (sortBy === 'name_desc') results.sort(function (a, b) { return (b.title || '').localeCompare(a.title || ''); });
   else if (sortBy === 'price_asc') results.sort(function (a, b) { return (a.minPrice || 0) - (b.minPrice || 0); });
   else if (sortBy === 'price_desc') results.sort(function (a, b) { return (b.minPrice || 0) - (a.minPrice || 0); });
   else if (sortBy === 'distance') results.sort(function (a, b) { return (a.distanceFromDelhi || 0) - (b.distanceFromDelhi || 0); });

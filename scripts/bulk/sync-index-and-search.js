@@ -67,6 +67,23 @@ idx.destinations.forEach(summary => {
   // Update summary record in index.json
   summary.minPrice = realMinPrice;
   summary.tiers = calculateTiers(hotels, realMinPrice);
+  if (dest.heroImage && dest.heroImage.src) {
+    summary.heroImage = {
+      src: dest.heroImage.src,
+      alt: dest.heroImage.alt || `${dest.title}, ${dest.state}`
+    };
+  }
+  if (dest.image && dest.image.src) {
+    summary.image = {
+      src: dest.image.src,
+      alt: dest.image.alt || `${dest.title}, ${dest.state}`
+    };
+  } else if (dest.heroImage && dest.heroImage.src) {
+    summary.image = {
+      src: dest.heroImage.src,
+      alt: dest.heroImage.alt || `${dest.title}, ${dest.state}`
+    };
+  }
   updatedCount++;
 
   // Build search-index entry

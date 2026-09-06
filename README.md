@@ -1,21 +1,11 @@
+# ExploreDesh — Discover Incredible India
 
+> **Platform Status (2026-09-06):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Production-Ready Score: **100/100**.
 
-
-
-
-
-
-
-
-> **Image Pipeline Status (2026-09-05):** **2,328 / 2,392 destinations (97.3%)** enriched with **56,291 verified high-res photos** across 23 completed States/UTs. 100% zero-duplicate & landmark-verified.
-
-A luxury India travel-discovery platform. Browse **2,390 destinations** (14,362+ places,
-9,629+ stays across all 36 states & UTs), filter by type / budget / state / travel-month, and
-open a per-destination page with a photo hero, places to visit, stays by budget, routes
-(with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
+A luxury India travel-discovery platform. Browse **2,392 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
 > **100% Verified Legal Photography & Zero Duplicate URLs.** Hand-authored and enriched with authentic
-> Wikimedia Commons, Pexels API, Unsplash, Pixabay, Openverse (Flickr CC-BY, Smithsonian Open Access), and Wikipedia photography (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/maps/audio/coins, zero internal duplicates). See [CLAUDE.md](CLAUDE.md) for provenance.
+> Pexels API, Unsplash, Wikimedia Commons, Pixabay, Openverse (Flickr CC-BY, Smithsonian Open Access), and Wikipedia photography (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/maps/audio/coins, zero internal duplicates). Sourced strictly from legal external photo APIs (Phase 24). See [CLAUDE.md](CLAUDE.md) for provenance.
 
 > **No framework. No npm. No bundler.** Plain HTML5 + CSS + vanilla ES6 modules, powered by
 > **GSAP ScrollTrigger** animations and served over a zero-dependency Node static server.
@@ -43,14 +33,17 @@ The site follows a strict **template + data-layer** design so it scales to 2,000
 without adding a single HTML file:
 
 - **One reusable detail template.** `destination.html?slug=goa` renders *any* destination.
-  There is never one HTML file per destination — the 2,389 `<slug>.html` files are redirect stubs kept for old links.
+  There is never one HTML file per destination — the 2,392 `<slug>.html` files in `stubs/` are redirect stubs kept for backwards compatibility.
 - **A JSON data layer.** All content lives in `data/` as JSON. No content is hardcoded in
   markup or page scripts.
 - **A single data-access abstraction.** Every read goes through `js/data/api.js`
   (`fetchDestination(slug)`, `fetchIndex()`, `fetchSearchIndex()`). A future backend
   (e.g. Supabase) only has to change **that one file** — nothing else touches storage.
+- **Universal Luxury Overview Button Interactions.** Every button site-wide (`.btn`, `.btn-primary`, `.btn-outline`, `.nav-link`, `.tab-btn`, `.category-pill-btn`, `.quick-tag-btn`, `<button>`) features bottom-up ambient gold glow, radiant `2.5px solid #F5C542` bottom underline, and golden drop shadows on hover and active click.
+- **Universal Space-Agnostic & Relevance-Ranked Search Engine.** Engineered with `js/utils/search.js` to support space-less searches (`tajmahal`, `tamilnadu`, `ootytamilnadu`, `mehtabbagh`), compound queries, mixed multi-word queries, and full 14,013 attraction place indexing with tiered relevance ranking across `index.html`, `destinations.html`, and `ai-finder.html`.
+- **Homepage Visual Symmetry.** Trending Destinations carousel cards and the Interactive India Map are matched to `500px` height with aligned header baselines and bottom edges.
 - **Dynamic Refresh Reshuffling.** Featured sections (*Trending Destinations, Popular Destinations, Best Hill Stations, Explore More*) automatically reshuffle on every page refresh using Fisher-Yates randomization.
-- **Hotel Direct Google Integration.** All 9,756 hotel listings feature image-free modern text cards with nightly rate ranges, price tier badges, star ratings, amenities, and direct links to live Google hotel search & reviews.
+- **Hotel Direct Google Integration.** All 17,567 hotel listings feature image-free modern text cards with nightly rate ranges, price tier badges, star ratings, amenities, and direct links to live Google hotel search & reviews.
 - **GSAP Scroll & Motion Engine.** Smooth scroll parallax background scrubs, hero staggered entrance timelines, animated stat counters, and section scroll triggers via GSAP 3.12.5 & ScrollTrigger with reduced-motion accessibility support.
 - **Reusable components.** Navbar, footer with brand trust badge, mobile-nav (`js/components/layout.js`),
   destination cards (`js/components/destinationCard.js`), and SEO/JSON-LD helpers

@@ -3,7 +3,7 @@
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-09-06 (Phase 19).** External photo APIs (Pexels, Unsplash, Openverse/Flickr) are **mandatory primary sources**. Wikimedia Commons is strictly **last resort**. All image alt text and titles must have HTML entities decoded and tags stripped.
+> **Last updated: 2026-09-06 (Phase 24).** External photo APIs (Pexels, Unsplash, Openverse/Flickr) are **mandatory primary sources**. Wikimedia Commons is strictly **last resort**. All image alt text and titles must have HTML entities decoded and tags stripped.
 
 ---
 

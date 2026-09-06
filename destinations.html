@@ -270,6 +270,8 @@
                   <select id="sortBy" aria-label="Sort destinations" class="custom-select sort-select">
                     <option value="rating">★ Top Rated</option>
                     <option value="latest">✨ Latest (Newest First)</option>
+                    <option value="name_asc">🔤 Name: A to Z</option>
+                    <option value="name_desc">🔤 Name: Z to A</option>
                     <option value="price_asc">₹ Price: Low to High</option>
                     <option value="price_desc">₹ Price: High to Low</option>
                     <option value="distance">📍 Closest to Delhi</option>
@@ -320,7 +322,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/explore.js"></script>
+  <script type="module" src="js/pages/explore.js?v=20260906-1"></script>
   <script>
     // Navbar glass transition on scroll
     window.addEventListener('scroll', function () {

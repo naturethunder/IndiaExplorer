@@ -1,6 +1,6 @@
 # 🇮🇳 IndiaExplore — Image Pipeline & Destination Enrichment Master Report
 
-**Last Updated:** 2026-09-05
+**Last Updated:** 2026-09-06
 
 ## Global Progress Summary
 
@@ -56,8 +56,8 @@
 | **Chandigarh** | 2 / 2 | **100.0%** | 0 | 13 | 51 | ✅ Completed |
 
 ## Verified Standards Enforced
-1. **Hero & Gallery (5 Photos)**: Exactly 5 original, high-resolution visual photos in gallery per destination.
+1. **Hero & Gallery (5 Photos)**: Exactly 5 original, high-resolution visual photos in gallery per destination (`heroImage.src === gallery[0].src`).
 2. **Nearby Attractions (3 Photos)**: Exactly 3 landmark-specific photos for each place in `topPlaces`.
-3. **Zero Duplicates**: 100% unique image references across all fields repository-wide.
-4. **Multi-Source Sourcing**: Verified photography from Pexels, Unsplash, and Wikimedia Commons with 0 maps or PDF scans.
+3. **Legal Photo API Sourcing (Phase 24)**: High-resolution photography strictly from legal external photo APIs (Pexels, Unsplash, Openverse/Flickr CC-BY) with Wikimedia Commons reserved solely for unphotographed regional monuments. Zero pixabay `/get/` session links.
+4. **Zero Duplicate Invariant**: 100% unique image references across all fields repository-wide with 0 internal duplicates and 0 cross-destination collisions.
 5. **Persistent Checkpoint**: Automated resume enabled from `scripts/images/dedup_checkpoint.json`.

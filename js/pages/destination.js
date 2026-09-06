@@ -399,7 +399,7 @@ function main(dest, idx) {
         '<span class="font-semibold text-gray-900 text-sm">₹' + inr(min) + '+</span></div>';
     }).join('');
 
-    const altRow = (ov && ov.altitude) ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Altitude</span><span class="font-medium">' + (function(a) { if (typeof a === 'number') return inr(a) + ' m'; var s = String(a).trim(); return /m$/i.test(s) ? esc(s) : esc(s) + ' m'; })(ov.altitude) + '</span></div>' : '';
+    const altRow = (ov && ov.altitude) ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Altitude</span><span class="font-medium">' + (function (a) { if (typeof a === 'number') return inr(a) + ' m'; var s = String(a).trim(); return /m$/i.test(s) ? esc(s) : esc(s) + ' m'; })(ov.altitude) + '</span></div>' : '';
 
     // ─── 5 Real Images Carousel for Overview Panel ──────
     function get5RealPhotos() {
@@ -1289,24 +1289,26 @@ function main(dest, idx) {
 
   function getSimilarDestinations() {
     if (!allDestList.length) return [];
-    // 1. Same state and same type
+    // 1. Same state and same type (closest match)
     const sameStateAndType = allDestList.filter(function (d) {
       return d && d.slug !== dest.slug && d.type === dest.type && d.state === dest.state;
     }).sort(byRating);
-    // 2. Same state other types
-    const sameStateOther = allDestList.filter(function (d) {
-      return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
-    }).sort(byRating);
-    // 3. Same type other states (top rated)
+    // 2. Same type in other states (top rated across India)
     const sameTypeOther = allDestList.filter(function (d) {
       return d && d.slug !== dest.slug && d.type === dest.type && d.state !== dest.state;
     }).sort(byRating);
-    // 4. Fallback fill only if the above buckets can't cover 4 cards
-    const others = (sameStateAndType.length + sameStateOther.length + sameTypeOther.length < 4)
+    // 3. Same state other types (only fallback if same type has fewer than 4 total)
+    const sameStateOther = (sameStateAndType.length + sameTypeOther.length < 4)
+      ? allDestList.filter(function (d) {
+        return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
+      }).sort(byRating)
+      : [];
+    // 4. Fallback fill only if still fewer than 4 cards
+    const others = (sameStateAndType.length + sameTypeOther.length + sameStateOther.length < 4)
       ? allDestList.filter(function (d) { return d && d.slug !== dest.slug; }).sort(byRating)
       : [];
 
-    const pool = [].concat(sameStateAndType, sameStateOther, sameTypeOther, others);
+    const pool = [].concat(sameStateAndType, sameTypeOther, sameStateOther, others);
     const uniqueMap = new Map();
     pool.forEach(function (d) {
       if (d && d.slug && !uniqueMap.has(d.slug)) {
@@ -1318,10 +1320,62 @@ function main(dest, idx) {
   }
 
   const similar = getSimilarDestinations();
+
+  // Dynamic Type-Specific Similar Section Heading & Explore Button
+  const TYPE_NAME_MAP = {
+    spiritual: 'Spiritual',
+    hill_station: 'Hill Station',
+    beach: 'Beach',
+    adventure: 'Adventure',
+    heritage: 'Heritage',
+    wildlife: 'Wildlife',
+    road_trips: 'Road Trip',
+    camping: 'Camping',
+    forts: 'Forts & Palaces',
+    ecotourism: 'Ecotourism'
+  };
+
+  const rawType = (dest.type || '').toLowerCase();
+  const typeTitle = TYPE_NAME_MAP[rawType] || (rawType ? (rawType.charAt(0).toUpperCase() + rawType.slice(1).replace(/_/g, ' ')) : '');
+
+  const similarHeadingEl = document.getElementById('similar-heading');
+  const similarSubheadingEl = document.getElementById('similarSubheading');
+  const expBtnEl = document.getElementById('similarExploreBtn');
   const expAllEl = document.getElementById('similarExploreAllText');
+
+  if (similarHeadingEl) {
+    if (typeTitle) {
+      similarHeadingEl.innerHTML = 'Similar <span id="similarTypeName" class="text-amber-400 font-serif italic">' + esc(typeTitle) + '</span> Destinations You May Love';
+    } else {
+      similarHeadingEl.innerHTML = 'Similar Destinations You May Love';
+    }
+  }
+
+  if (similarSubheadingEl) {
+    if (typeTitle) {
+      similarSubheadingEl.textContent = 'Handpicked ' + typeTitle.toLowerCase() + ' getaways sharing similar landscapes, heritage, and travel vibes across India.';
+    } else {
+      similarSubheadingEl.textContent = 'Handpicked getaways sharing similar landscapes, altitudes, and travel vibes across India.';
+    }
+  }
+
+  if (expBtnEl) {
+    if (rawType) {
+      expBtnEl.href = 'destinations.html?type=' + encodeURIComponent(rawType);
+      expBtnEl.setAttribute('aria-label', 'Explore Similar ' + typeTitle + ' Destinations');
+    } else {
+      expBtnEl.href = 'destinations.html';
+      expBtnEl.setAttribute('aria-label', 'Explore All Destinations');
+    }
+  }
+
   if (expAllEl) {
-    const totalCount = (idx && idx.count) || allDestList.length || 2392;
-    expAllEl.textContent = 'Explore All ' + inr(totalCount);
+    if (typeTitle) {
+      expAllEl.textContent = 'Explore Similar ' + typeTitle + ' Destinations';
+    } else {
+      const totalCount = (idx && idx.count) || allDestList.length || 2392;
+      expAllEl.textContent = 'Explore All ' + inr(totalCount);
+    }
   }
 
   function resolveCardPhoto(d) {

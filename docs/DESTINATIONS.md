@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-09-05.
+> Last generated: 2026-09-06.
 
 **36 states/UTs · 2,392 destinations**
 
@@ -323,7 +323,7 @@
 | **Church of St. Anne, Talaulim** | Spiritual | Jan–Feb, Nov–Dec | ₹900 – ₹11,863 |
 | **Colvale Fort** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹9,440 |
 | **Corjuem Fort** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹10,923 |
-| **Dudhsagar Falls** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹9,389 |
+| **Dudhsagar Falls** | Adventure | Jan–Feb, Nov–Dec | ₹900 – ₹9,389 |
 | **Fort Aguada** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹9,000 |
 | **Fort of São Tiago of Banastarim** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹12,628 |
 | **Fort Tiracol** | Heritage | Jan–Feb, Nov–Dec | ₹900 – ₹13,088 |

@@ -69,19 +69,39 @@ html {
 /* ─── Full-width layout utilities (supplement Tailwind) ────
    These ensure max-w-screen-2xl and xl: grid variants work
    even if the Tailwind build didn't include them. */
-.max-w-screen-2xl { max-width: 1536px; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
 @media (min-width: 1280px) {
-  .xl\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .xl\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .xl\:grid-cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
-  .xl\:col-span-5  { grid-column: span 5 / span 5; }
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
 }
 
 /* Responsive padding for sections on very large screens */
 @media (min-width: 1536px) {
-  .max-w-screen-2xl { padding-left: 2rem; padding-right: 2rem; }
+  .max-w-screen-2xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 
@@ -523,29 +543,41 @@ body {
 }
 
 .tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 0.75rem 1.25rem;
   font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  color: rgba(203, 213, 225, 0.85);
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  border-radius: 6px 6px 0 0;
   margin-bottom: -2px;
   white-space: nowrap;
   cursor: pointer;
   transition: all var(--transition);
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  background: transparent;
   outline: none;
 }
 
-.tab-btn:hover {
-  color: var(--primary);
+.tab-btn:hover,
+.tab-btn:active,
+.tab-btn.active {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
 }
 
-.tab-btn.active {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
+.tab-btn svg,
+.tab-btn:hover svg,
+.tab-btn:active svg,
+.tab-btn.active svg {
+  color: #F5C542;
+  stroke: #F5C542;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
 }
 
 /* ─── Place Card ─────────────────────────────────────────── */
@@ -1381,10 +1413,21 @@ body.glass-immersive .dest-summary-val {
    to identify the card type. The visual icon tint comes from the paired
    .icon-altitude / .icon-time / .icon-summer / .icon-winter child class.
    These rules provide a matching left-border accent on the card. */
-.dest-card-altitude { border-left: 3px solid rgba(16, 185, 129, 0.5); }
-.dest-card-time     { border-left: 3px solid rgba(99, 102, 241, 0.5); }
-.dest-card-summer   { border-left: 3px solid rgba(245, 158, 11, 0.5); }
-.dest-card-winter   { border-left: 3px solid rgba(6, 182, 212, 0.5); }
+.dest-card-altitude {
+  border-left: 3px solid rgba(16, 185, 129, 0.5);
+}
+
+.dest-card-time {
+  border-left: 3px solid rgba(99, 102, 241, 0.5);
+}
+
+.dest-card-summer {
+  border-left: 3px solid rgba(245, 158, 11, 0.5);
+}
+
+.dest-card-winter {
+  border-left: 3px solid rgba(6, 182, 212, 0.5);
+}
 
 .autocomplete-img {
   width: 44px;
@@ -1730,7 +1773,7 @@ textarea.form-input {
     width: 100%;
   }
 
-  .hero-stat + .hero-stat {
+  .hero-stat+.hero-stat {
     border-left: 0;
     padding-left: 0;
   }
@@ -2319,7 +2362,8 @@ textarea.form-input {
   opacity: 1;
   transform: none;
   transition: none !important;
-  will-change: auto; /* GSAP sets will-change itself where needed */
+  will-change: auto;
+  /* GSAP sets will-change itself where needed */
 }
 
 /* ─── Reduced motion (a11y) ───────────────────────────────────
@@ -2413,10 +2457,10 @@ textarea.form-input {
 
 .discover-arrow {
   position: absolute;
-  top: 42%;
+  top: 50%;
   transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   box-shadow: var(--shadow);
   z-index: 5;
 }
@@ -2455,7 +2499,7 @@ textarea.form-input {
 
 .discover-trending-wrap {
   position: relative;
-  height: 440px;
+  height: 500px;
 }
 
 .discover-trending .carousel-row {
@@ -2464,12 +2508,12 @@ textarea.form-input {
 }
 
 .discover-trending .carousel-row>* {
-  width: 290px;
-  height: 430px;
+  width: 320px;
+  height: 500px;
 }
 
 .trend-card {
-  height: 430px;
+  height: 500px;
   aspect-ratio: auto;
 }
 
@@ -2487,8 +2531,8 @@ textarea.form-input {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  height: 430px;
-  min-height: 430px;
+  height: 500px;
+  min-height: 500px;
 }
 
 .discover-map .india-map-svg {
@@ -2553,386 +2597,386 @@ textarea.form-input {
   transform: translateX(2px);
 }
 
-  .map-card-icon {
-    font-size: 0.9rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-  }
+.map-card-icon {
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
 
-  .map-card-all {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #16A34A;
-    text-decoration: none;
-    transition: gap 0.2s ease, color 0.2s ease;
-  }
+.map-card-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #16A34A;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
 
-  .map-card-all:hover {
-    color: #15803D;
-    gap: 0.5rem;
-  }
+.map-card-all:hover {
+  color: #15803D;
+  gap: 0.5rem;
+}
 
 
-  /* Best-this-month column */
-  .discover-best .month-rail {
-    gap: 0.625rem;
-  }
+/* Best-this-month column */
+.discover-best .month-rail {
+  gap: 0.625rem;
+}
 
-  /* ══════════════════ EXPLORE INDIA MAP ══════════════════ */
+/* ══════════════════ EXPLORE INDIA MAP ══════════════════ */
+.map-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 768px) {
   .map-wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 1.25rem;
-    padding: 1.25rem;
-    box-shadow: var(--shadow-sm);
-  }
-
-  @media (min-width: 768px) {
-    .map-wrap {
-      grid-template-columns: 1.25fr 1fr;
-      align-items: center;
-      padding: 2rem;
-    }
-  }
-
-  .india-map-svg {
-    width: 100%;
-    height: auto;
-    max-height: 520px;
-    display: block;
-  }
-
-  .india-state {
-    fill: #E8EDF2;
-    stroke: #fff;
-    stroke-width: 1;
-    transition: fill 0.2s ease, transform 0.2s ease;
-  }
-
-  .india-state:not(.is-empty) {
-    fill: #BBF7D0;
-    cursor: pointer;
-  }
-
-  .india-state:not(.is-empty):hover {
-    fill: #6EE7A8;
-  }
-
-  .india-state.is-active {
-    fill: var(--primary);
-  }
-
-  .india-state.is-empty {
-    fill: #EEF1F4;
-    pointer-events: none;
-  }
-
-  .india-state:focus-visible {
-    outline: none;
-    stroke: var(--primary-dark);
-    stroke-width: 2;
-  }
-
-  /* Hover tooltip: state name + destination count, follows the cursor */
-  .india-map-tip {
-    display: none;
-    position: absolute;
-    z-index: 10;
-    pointer-events: none;
-    background: #0f172a;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.5rem;
-    white-space: nowrap;
-    box-shadow: var(--shadow);
-  }
-
-  .india-map-panel {
-    min-height: 220px;
-    background: #F8FAFC;
-    border: 1px solid var(--border);
-    border-radius: 1rem;
-    padding: 1.25rem;
-  }
-
-  .map-panel-empty {
-    text-align: center;
-    padding: 1.5rem 0.5rem;
-  }
-
-  .map-panel-empty-icon {
-    display: inline-flex;
+    grid-template-columns: 1.25fr 1fr;
     align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #DCFCE7;
-    color: var(--primary-dark);
-    margin-bottom: 0.75rem;
+    padding: 2rem;
   }
+}
 
-  .map-panel-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
+.india-map-svg {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  display: block;
+}
 
-  .map-panel-title {
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: var(--text, #0f172a);
-  }
+.india-state {
+  fill: #E8EDF2;
+  stroke: #fff;
+  stroke-width: 1;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
 
-  .map-panel-sub {
-    font-size: 0.8125rem;
-    color: #6b7280;
-  }
+.india-state:not(.is-empty) {
+  fill: #BBF7D0;
+  cursor: pointer;
+}
 
-  .map-panel-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #DCFCE7;
-    color: var(--primary-dark);
-  }
+.india-state:not(.is-empty):hover {
+  fill: #6EE7A8;
+}
 
-  .map-panel-list {
-    list-style: none;
-    margin: 0 0 1rem;
-    padding: 0;
-  }
+.india-state.is-active {
+  fill: var(--primary);
+}
 
-  .map-panel-list li+li {
-    border-top: 1px solid var(--border);
-  }
+.india-state.is-empty {
+  fill: #EEF1F4;
+  pointer-events: none;
+}
 
-  .map-panel-list a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.55rem 0;
-    font-size: 0.9375rem;
-    color: #374151;
-    transition: color 0.15s ease;
-  }
+.india-state:focus-visible {
+  outline: none;
+  stroke: var(--primary-dark);
+  stroke-width: 2;
+}
 
-  .map-panel-list a:hover {
-    color: var(--primary-dark);
-  }
+/* Hover tooltip: state name + destination count, follows the cursor */
+.india-map-tip {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+}
 
-  .map-panel-chev {
-    width: 14px;
-    height: 14px;
-    color: var(--primary);
-    flex-shrink: 0;
-  }
+.india-map-panel {
+  min-height: 220px;
+  background: #F8FAFC;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
 
-  .map-panel-all {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--primary-dark);
-  }
+.map-panel-empty {
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+}
 
-  .map-panel-all:hover {
-    text-decoration: underline;
-  }
+.map-panel-empty-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #DCFCE7;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
 
-  /* ══════════════════ BEST-THIS-MONTH RAIL ══════════════════ */
+.map-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.map-panel-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text, #0f172a);
+}
+
+.map-panel-sub {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.map-panel-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #DCFCE7;
+  color: var(--primary-dark);
+}
+
+.map-panel-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.map-panel-list li+li {
+  border-top: 1px solid var(--border);
+}
+
+.map-panel-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0;
+  font-size: 0.9375rem;
+  color: #374151;
+  transition: color 0.15s ease;
+}
+
+.map-panel-list a:hover {
+  color: var(--primary-dark);
+}
+
+.map-panel-chev {
+  width: 14px;
+  height: 14px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.map-panel-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.map-panel-all:hover {
+  text-decoration: underline;
+}
+
+/* ══════════════════ BEST-THIS-MONTH RAIL ══════════════════ */
+.month-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 1024px) {
   .month-rail {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    justify-content: space-between;
+    height: 327px;
+    gap: 0;
   }
+}
 
-  @media (min-width: 1024px) {
-    .month-rail {
-      justify-content: space-between;
-      height: 327px;
-      gap: 0;
-    }
-  }
+.rail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  padding: 0.625rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
 
-  .rail-item {
-    display: flex;
-    align-items: center;
-    gap: 0.875rem;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 0.875rem;
-    padding: 0.625rem;
-    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-  }
+.rail-item:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
 
-  .rail-item:hover {
-    box-shadow: var(--shadow);
-    border-color: var(--primary-light);
-    transform: translateY(-2px);
-  }
+.rail-thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 0.625rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
 
-  .rail-thumb {
-    width: 64px;
-    height: 64px;
-    border-radius: 0.625rem;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
+.rail-body {
+  flex: 1;
+  min-width: 0;
+}
 
-  .rail-body {
-    flex: 1;
-    min-width: 0;
-  }
+.rail-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  .rail-title {
-    font-weight: 600;
-    font-size: 0.9375rem;
-    color: #0f172a;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+.rail-sub {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
 
-  .rail-sub {
-    font-size: 0.8125rem;
-    color: #6b7280;
-  }
+.rail-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+  flex-shrink: 0;
+}
 
-  .rail-meta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: #374151;
-    flex-shrink: 0;
-  }
+.rail-star {
+  color: #f59e0b;
+}
 
-  .rail-star {
-    color: #f59e0b;
-  }
+/* ══════════════════ HERO AVATAR CLUSTER ══════════════════ */
+.avatar-cluster {
+  display: inline-flex;
+}
 
-  /* ══════════════════ HERO AVATAR CLUSTER ══════════════════ */
-  .avatar-cluster {
-    display: inline-flex;
-  }
+.avatar-cluster-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  object-fit: cover;
+}
 
-  .avatar-cluster-img {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.9);
-    object-fit: cover;
-  }
+.avatar-cluster-img+.avatar-cluster-img {
+  margin-left: -12px;
+}
 
-  .avatar-cluster-img+.avatar-cluster-img {
-    margin-left: -12px;
-  }
+/* ══════════════════ MONTH SELECTOR PILLS & ACTIVE FILTER CHIPS ══════════════════ */
+.month-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+}
 
-  /* ══════════════════ MONTH SELECTOR PILLS & ACTIVE FILTER CHIPS ══════════════════ */
-  .month-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #4b5563;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.2s ease;
-    user-select: none;
-  }
+.month-pill:hover {
+  border-color: var(--primary-light, #f97316);
+  color: var(--primary, #ea580c);
+  background-color: #fff7ed;
+  transform: translateY(-1px);
+}
 
-  .month-pill:hover {
-    border-color: var(--primary-light, #f97316);
-    color: var(--primary, #ea580c);
-    background-color: #fff7ed;
-    transform: translateY(-1px);
-  }
+.month-pill.is-active .pill-current-badge {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
 
-  .month-pill.is-active .pill-current-badge {
-    background-color: rgba(255, 255, 255, 0.25);
-    color: #ffffff;
-  }
+.month-pill:not(.is-active) .pill-current-badge {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
 
-  .month-pill:not(.is-active) .pill-current-badge {
-    background-color: #ffedd5;
-    color: #ea580c;
-  }
+/* Active filter chip on Destinations page */
+.active-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  border-radius: 9999px;
+  background-color: #ffedd5;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
 
-  /* Active filter chip on Destinations page */
-  .active-filter-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.375rem 0.875rem;
-    border-radius: 9999px;
-    background-color: #ffedd5;
-    border: 1px solid #fed7aa;
-    color: #9a3412;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    transition: all 0.15s ease;
-  }
+.active-filter-chip button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: rgba(154, 52, 18, 0.15);
+  color: #9a3412;
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
 
-  .active-filter-chip button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.125rem;
-    height: 1.125rem;
-    border-radius: 50%;
-    background-color: rgba(154, 52, 18, 0.15);
-    color: #9a3412;
-    font-size: 0.75rem;
-    line-height: 1;
-    transition: background-color 0.15s ease;
-  }
+.active-filter-chip button:hover {
+  background-color: rgba(154, 52, 18, 0.3);
+}
 
-  .active-filter-chip button:hover {
-    background-color: rgba(154, 52, 18, 0.3);
-  }
+.month-car-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  .month-car-dot {
-    width: 0.625rem;
-    height: 0.625rem;
-    border-radius: 9999px;
-    background-color: rgba(255, 255, 255, 0.45);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+.month-car-dot:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
 
-  .month-car-dot:hover {
-    background-color: rgba(255, 255, 255, 0.85);
-  }
-
-  .month-car-dot.is-active {
-    width: 1.75rem;
-    background-color: #ea580c;
-    box-shadow: 0 0 10px rgba(234, 88, 12, 0.6);
-  }
+.month-car-dot.is-active {
+  width: 1.75rem;
+  background-color: #ea580c;
+  box-shadow: 0 0 10px rgba(234, 88, 12, 0.6);
+}
 
 /* =============================================================
    GLOBAL QA PATCH — Spacing · Buttons · Carousel · Accessibility
@@ -2941,10 +2985,23 @@ textarea.form-input {
 
 /* Section vertical rhythm on mobile */
 @media (max-width: 640px) {
-  .py-14 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
-  .pt-28 { padding-top: 5rem !important; }
-  .pb-14 { padding-bottom: 2.5rem !important; }
-  .py-12 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+  .py-14 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .pt-28 {
+    padding-top: 5rem !important;
+  }
+
+  .pb-14 {
+    padding-bottom: 2.5rem !important;
+  }
+
+  .py-12 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
 }
 
 /* Button touch target — WCAG 2.5.5 minimum 44×44px */
@@ -2956,8 +3013,13 @@ textarea.form-input {
 }
 
 /* Button active press feedback */
-.btn:active:not(:disabled) { transform: translateY(1px) scale(0.98); }
-.btn.btn-primary:active:not(:disabled) { transform: translateY(1px); }
+.btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+}
+
+.btn.btn-primary:active:not(:disabled) {
+  transform: translateY(1px);
+}
 
 /* Button disabled */
 .btn:disabled,
@@ -2994,14 +3056,31 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.15);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
 }
 
 /* Overview carousel — improved height on mobile */
-.dest-ov-carousel { height: 260px; }
-@media (min-width: 480px) { .dest-ov-carousel { height: 320px; } }
-@media (min-width: 640px) { .dest-ov-carousel { height: 420px; } }
-@media (min-width: 1024px) { .dest-ov-carousel { height: 480px; } }
+.dest-ov-carousel {
+  height: 260px;
+}
+
+@media (min-width: 480px) {
+  .dest-ov-carousel {
+    height: 320px;
+  }
+}
+
+@media (min-width: 640px) {
+  .dest-ov-carousel {
+    height: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dest-ov-carousel {
+    height: 480px;
+  }
+}
 
 /* Carousel button minimum tap targets */
 .carousel-btn,
@@ -3030,13 +3109,23 @@ textarea:focus {
 /* Ensure body has enough bottom padding for the 56px mobile nav
    (+ the home-indicator safe area on notched iOS devices) */
 @media (max-width: 767.98px) {
-  body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important; }
+  body {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+  }
 }
 
 /* No-results proper spacing */
-#noResults { padding: 4rem 1rem; }
-#noResults h3 { margin-bottom: 0.5rem; }
-#noResults p { margin-bottom: 1.5rem; }
+#noResults {
+  padding: 4rem 1rem;
+}
+
+#noResults h3 {
+  margin-bottom: 0.5rem;
+}
+
+#noResults p {
+  margin-bottom: 1.5rem;
+}
 
 /* Prose-custom (terms/privacy) */
 .prose-custom h2 {
@@ -3046,15 +3135,25 @@ textarea:focus {
   margin-bottom: 0.75rem;
   margin-top: 0.25rem;
 }
-.prose-custom p { line-height: 1.8; }
-.prose-custom section { padding-bottom: 0.5rem; }
-.prose-custom ul { line-height: 1.8; }
+
+.prose-custom p {
+  line-height: 1.8;
+}
+
+.prose-custom section {
+  padding-bottom: 0.5rem;
+}
+
+.prose-custom ul {
+  line-height: 1.8;
+}
 
 /* Contact form validation styling */
 #contactForm .form-input:invalid:not(:focus):not(:placeholder-shown) {
   border-color: #ef4444;
-  box-shadow: 0 0 0 2px rgba(239,68,68,0.1);
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.1);
 }
+
 #contactForm .form-input:valid:not(:focus):not(:placeholder-shown) {
   border-color: #22c55e;
 }
@@ -3066,11 +3165,117 @@ textarea:focus {
     transform: none !important;
     transition: none !important;
   }
+
   .skeleton {
     animation: none !important;
     background: #e0e0e0;
   }
+
   .card-img,
-  .card:hover .card-img { transform: none !important; }
-  .dest-ov-slide img { transform: none !important; }
+  .card:hover .card-img {
+    transform: none !important;
+  }
+
+  .dest-ov-slide img {
+    transform: none !important;
+  }
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   UNIVERSAL BUTTON INTERACTION DESIGN — OVERVIEW LUXURY GOLD UNDERLINE
+   "I want whole button of my project look like this, when I click or when I hover"
+   Applied across all button types across the entire project.
+   ═════════════════════════════════════════════════════════════════════════════ */
+button:hover,
+button:active,
+button.active,
+button[aria-selected="true"],
+button[aria-pressed="true"],
+.btn:hover,
+.btn:active,
+.btn.active,
+a.btn:hover,
+a.btn:active,
+a.btn.active,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline.active,
+.btn-ghost:hover,
+.btn-ghost:active,
+.btn-ghost.active,
+.btn-gradient:hover,
+.btn-gradient:active,
+.btn-gradient.active,
+.tab-btn:hover,
+.tab-btn:active,
+.tab-btn.active,
+.dest-quick-pill:hover,
+.dest-quick-pill:active,
+.dest-quick-pill.active,
+.category-pill-btn:hover,
+.category-pill-btn:active,
+.category-pill-btn.active,
+.quick-tag-btn:hover,
+.quick-tag-btn:active,
+.quick-tag-btn.active,
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active,
+.ex-chip:hover,
+.ex-chip:active,
+.ex-chip.active,
+.hero-seg-btn:hover,
+.hero-seg-btn:active,
+.hero-car-btn:hover,
+.hero-car-btn:active,
+.load-more-luxury-btn:hover,
+.load-more-luxury-btn:active,
+.mobile-filter-trigger:hover,
+.mobile-filter-trigger:active,
+.filter-apply-btn:hover,
+.filter-apply-btn:active,
+.empty-state-reset-btn:hover,
+.empty-state-reset-btn:active,
+input[type="button"]:hover,
+input[type="button"]:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+button:hover svg,
+button:active svg,
+button.active svg,
+.btn:hover svg,
+.btn:active svg,
+.btn.active svg,
+a.btn:hover svg,
+a.btn:active svg,
+.quick-tag-btn:hover svg,
+.quick-tag-btn:active svg,
+.category-pill-btn:hover svg,
+.category-pill-btn:active svg,
+.category-pill-btn.active svg,
+.dest-quick-pill:hover svg,
+.dest-quick-pill:active svg,
+.dest-quick-pill.active svg,
+.tab-btn:hover svg,
+.tab-btn:active svg,
+.tab-btn.active svg,
+.ex-chip:hover svg,
+.ex-chip:active svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
 }

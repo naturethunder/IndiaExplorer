@@ -50,17 +50,17 @@ M sitemap.xml
 - [x] Phase 4a: Validation of destination files (PRIMARY DATA)
 
 ## Validation Results (Destinations - MAIN DATA - data/destinations/*.json)
-- **Total destinations:** 2,390
-- **Total nearby places:** 14,362
-- **Total photos[] entries:** 43,086
-- **Places with correct photo count (3):** 14,362 (100%)
+- **Total destinations:** 2,392
+- **Total nearby places:** 14,013
+- **Total photos[] entries:** 42,039
+- **Places with correct photo count (3):** 14,013 (100%)
 - **Places with incorrect photo count:** 0
 - **Places with cover duplicated in photos[]:** 0
 - **Places with internal duplicate identities:** 0
 - **Destinations with gallery duplicates:** 0
-- **Total gallery images:** 11,950
+- **Total gallery images:** 11,960
 - **JSON parse errors:** 0
-- **Index count matches destinations:** true (2,390 / 2,390)
+- **Index count matches destinations:** true (2,392 / 2,392)
 - **Referrer Policy Enforced:** `referrerpolicy="no-referrer"` added to `destinations.html`, `destination.html`, `index.html`, `ai-finder.html`, and `js/components/destinationCard.js` (eliminating Wikimedia/CDN 429 & 403 referrer blocks).
 
 ## Bulk Files Issues (data/bulk/*.json - SOURCE FILES)
@@ -86,7 +86,7 @@ M sitemap.xml
 1. **Destination JSON files (canonical data)** are 100% clean — all 14,362 nearby places have exactly 3 photos each, no cover duplication, and no internal duplicates.
 2. **Batch 5 & Delhi files** restored to clean authentic local baseline, with 0 cross-destination duplicate collisions and 0 disjoint collisions.
 3. **Card Rendering Optimization**: Added `referrerpolicy="no-referrer"` across all card templates and HTML page headers so that external CDN and Wikimedia images load instantly without rate-limiting.
-4. **Master Manifests Synchronized**: `data/destinations/index.json`, `data/search-index.json`, and `sitemap.xml` are 100% in sync with all 2,390 destination JSON files.
+4. **Master Manifests Synchronized**: `data/destinations/index.json`, `data/search-index.json`, and `sitemap.xml` are 100% in sync with all 2,392 destination JSON files.
 5. **Frontend/UI/SEO changes preserved:**
    - Larger destination hero / responsive hero heights
    - Filter URL synchronization & restoration
@@ -152,3 +152,62 @@ A comprehensive repository audit was conducted to safely eliminate bloat and obs
 - All core application pages, redirect stubs (2,392 in `stubs/`), datasets (2,392 in `data/destinations/`), and stylesheets verified intact.
 - Dev server route verification confirmed 100% of endpoints returning HTTP 200 OK.
 - Browser subagent verified 0 JavaScript console errors and clean luxury UI rendering across Home and Destination pages.
+
+## Phase 21 — Goa & Dudhsagar Falls Media Overhaul & Alphabetical Sorting (2026-09-06)
+
+1. **Goa Destination Media & Stays Overhaul (`data/destinations/goa.json`)**:
+   - Sourced authentic Pexels HD sunset coastline hero and verified photography across all top attractions (Baga Beach, Old Goa, Dudhsagar Waterfalls, Fontainhas, Sahakari Spice Farm, Chapora Fort) with 0 duplicate URLs.
+   - Replaced mismatched "Oberoi Rajvilas Goa Palace" with authentic luxury resort **Taj Exotica Resort & Spa Goa**.
+2. **Dudhsagar Falls Classification & Copy Alignment (`data/destinations/dudhsagar-falls.json`)**:
+   - Cleaned synthetic "heritage city" template copy into authentic waterfall descriptions and adventure classification.
+3. **Alphabetical Sorting**: Added `🔤 Name: A to Z` (`name_asc`) and `🔤 Name: Z to A` (`name_desc`) in `destinations.html` & `explore.js`.
+
+## Phase 22 — Hyderabad, Gandhari Khilla & Gayatri Waterfalls Photo API Sourcing (2026-09-06)
+
+Complete replacement of all imagery across `hyderabad`, `gandhari-khilla`, and `gayatri-waterfalls` with authentic HD photography sourced strictly from external photo APIs (Pexels, Unsplash) — 0 Wikimedia Commons images, 0 duplicate URLs internally, and 0 cross-destination catalog collisions:
+
+| Destination | Slug | Unique URLs | Sourcing | Purged Assets | Status |
+|-------------|------|-------------|----------|---------------|--------|
+| Hyderabad | `hyderabad` | 17 | Pexels API, Unsplash | Cafe Niloufer, Vijayawada station, parakeets, Uttarakhand mushrooms | ✅ 17/17 unique, 0 dupes |
+| Gandhari Khilla | `gandhari-khilla` | 17 | Pexels API, Unsplash | Bangkok Emerald Buddha, hero stones, generic temples | ✅ 17/17 unique, 0 dupes |
+| Gayatri Waterfalls | `gayatri-waterfalls` | 13 | Pexels API, Unsplash | Matheran, Amboli, Ulsoor Lake Bangalore, Tanuku statue | ✅ 13/13 unique, 0 dupes |
+
+- 47 total unique URLs tested live with HTTP 200 OK across Pexels and Unsplash.
+- 0 duplicate URLs across all 3 destination JSON files.
+- Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, and regenerated `stubs/*.html`.
+
+## Phase 23 — Universal Luxury Overview Button Interaction System & Homepage Visual Symmetry Polish (2026-09-06)
+
+1. **Universal Button Interaction Architecture**:
+   - Standardized every button across the entire project (`.btn`, `.btn-primary`, `.btn-outline`, `.btn-ghost`, `.btn-gradient`, `nav-link`, `tab-btn`, `dest-quick-pill`, `category-pill-btn`, `quick-tag-btn`, `ex-chip`, `load-more-luxury-btn`, `hero-seg-btn`, filter buttons, and `<button>`) to adopt the luxury Overview tab design when hovered (`:hover`) or active/clicked (`:active`, `.active`, `[aria-selected="true"]`).
+   - Bottom-up ambient amber illumination: `linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;`.
+   - Radiant solid gold bottom underline: `border-bottom: 2.5px solid #F5C542 !important;`.
+   - Golden ambient drop & inner glow: `box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;`.
+   - High-contrast crisp white typography: `color: #FFFFFF !important; font-weight: 600 !important;`.
+   - Radiant gold SVG icons: `color: #F5C542 !important; stroke: #F5C542 !important; filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;`.
+   - Eradicated old solid yellow pill fill with dark text.
+
+2. **Homepage Layout Symmetry & Sizing Matching**:
+   - Matched **Trending Destinations** carousel container height to the **Interactive India Map** (`500px` height) across `.discover-trending-wrap`, `.trend-card`, `.discover-trending .carousel-row > *`, and `.discover-map-inner`.
+   - Balanced card width to `320px`, achieving an optimal ~1:1.55 portrait poster ratio with horizontal carousel peek affordance.
+   - Centered carousel navigation arrows vertically (`top: 50%; transform: translateY(-50%)`).
+   - Top headers and bottom edges align across the desktop layout.
+
+3. **Local Dev Server Caching Hardening**:
+   - Updated `scripts/serve.js` HTTP caching headers to serve `.css` and `.js` with `no-cache` instead of `max-age=86400` in local dev.
+   - Added version query parameters (`?v=2`) to stylesheets in `index.html`.
+
+## Phase 24 — Alampur Navabrahma Temples & Chilkur Balaji Temple Photo API Overhaul (2026-09-06)
+
+Strict adherence to the legal photo API policy (Pexels / Unsplash) across two prominent Telangana temple destinations, eliminating all Wikimedia Commons imagery, broken Pixabay `/get/` session links, and non-architectural/non-scenic images:
+
+| Destination | Slug | Unique URLs | Sourcing | Purged Assets | Status |
+|-------------|------|-------------|----------|---------------|--------|
+| Alampur Navabrahma Temples | `alampur-navabrahma-temples` | 23 | Pexels API (100% HD) | Purged 10 Wikimedia images and broken Pixabay `/get/` session link; replaced with Badami Chalukyan sandstone architecture, Nagara temple towers, ancient stone carvings, Tungabhadra river, and Jogulamba barrage. | ✅ 23/23 unique, 0 dupes, HTTP 200 |
+| Chilkur Balaji Temple | `chilkur-balaji-temple` | 29 | Pexels API (100% HD) | Purged Wikimedia Shatagopa Chari image, king-lion paintings, Tamil Nadu/Malayalam cross-contamination; replaced with authentic temple gopurams, Osman Sagar reservoir, Gandipet balancing rocks, Mrugavani spotted deer, and modern Kokapet skyline. | ✅ 29/29 unique, 0 dupes, HTTP 200 |
+
+- **52 total unique URLs** verified live with HTTP 200 OK.
+- **0 duplicate URLs** within each destination, 0 cross-destination collisions.
+- Sourced exclusively from external photo APIs (Pexels) featuring authentic heritage monuments, scenery, wildlife, and architecture.
+- Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, `stubs/*.html`, and rebuilt `docs/DESTINATIONS.md`.
+- Verified visual rendering in browser across hero, 5-gallery carousel, and all place cards.

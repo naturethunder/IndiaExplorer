@@ -116,13 +116,10 @@ const server = http.createServer((req, res) => {
       return;
     }
 
-    // Determine cache control
+    // Determine cache control: dev server always revalidates code & data immediately
     let cacheControl = 'public, max-age=86400, stale-while-revalidate=3600';
-    if (ext === '.html') {
-      cacheControl = 'no-cache';
-    } else if (ext === '.json') {
-      // Dev: always revalidate JSON data so fixes show immediately without hard refresh
-      cacheControl = 'no-cache';
+    if (ext === '.html' || ext === '.json' || ext === '.js' || ext === '.css') {
+      cacheControl = 'no-cache, must-revalidate';
     }
 
     const headers = {
