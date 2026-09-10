@@ -10,6 +10,12 @@ Last updated: 2026-09-10.
 
 ## ✅ Done (current state)
 
+- **Phase 32: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 4 (2026-09-10)** — Complete HD image overhaul, 0-collision validation, and subject curation across 5 destinations (Someshwara Temple Marathahalli, Kodaikanal, Thoothukudi Basilica, Our Lady of Snows Kallikulam, Tawang) using multi-agent parallel execution:
+  1. **5 Destinations Overhauled:** `someshwara-temple-marathahalli`, `kodaikanal`, `basilica-of-our-lady-of-snows-thoothukudi`, `our-lady-of-snows`, and `tawang` — 150 total URLs checked and verified HTTP 200 OK.
+  2. **100% Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates; 0 cross-destination URL collisions against all other 2,387 destinations catalog-wide.
+  3. **Strict Subject Curation & Provenance:** Purged 117 legacy Wikimedia images, purged foreign locations (Peru, Brazil, Vietnam, Portugal, Macau), and replaced inappropriate automated Place 7 scrape in Someshwara Temple ("2024 Bengaluru cafe bombing") with the authentic "HAL Heritage Centre and Aerospace Museum" (2.5 km away).
+  4. **Gallery & Place Invariants:** `heroImage.src === gallery[0].src` and `heroImage.alt === gallery[0].alt` enforced; exactly 5 unique HD gallery slides and 3 photos per nearby place. **Score: 100/100.**
+
 - **Phase 31: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 3 (2026-09-10)** — Complete HD image overhaul and strict subject verification across 9 destinations (Andhra Pradesh temples, Kerala churches/temples, Ladakh monasteries) using multi-agent parallel execution:
   1. **9 Destinations Overhauled:** `beeramgunta-poleramma-temple`, `sri-sri-nookambika-ammavari-temple`, `kotasattemma-temple-nidadavolu`, `st-joseph-s-syro-malabar-catholic-church-meenkunnam`, `sacred-heart-forane-church`, `kottarakkara-sree-mahaganapathi-kshethram`, `shatrughna-temple`, `tingmosgang-monastery`, and `karsha-monastery` — 302 total URLs checked and verified HTTP 200 OK.
   2. **100% Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates; 0 cross-destination URL collisions against all other 2,383 destinations catalog-wide.

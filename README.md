@@ -1,11 +1,11 @@
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-10):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phases 29, 30 & 31: 21 destinations fully overhauled with authentic HD-only imagery and zero catalog collisions. Production-Ready Score: **100/100**.
+> **Platform Status (2026-09-10):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phases 29, 30, 31 & 32: 26 destinations fully overhauled with authentic HD-only imagery and zero catalog collisions. Production-Ready Score: **100/100**.
 
 A luxury India travel-discovery platform. Browse **2,392 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
 > **100% Verified Legal Photography & Zero Duplicate URLs.** Hand-authored and enriched with authentic
-> Pexels API and Unsplash photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/maps/audio/coins, zero internal duplicates). Wikimedia Commons is fully removed from all overhauled destinations (Phase 29, 30 & 31 extended this to 21 destinations). See [CLAUDE.md](CLAUDE.md) for provenance.
+> Pexels API and Unsplash photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/maps/audio/coins, zero internal duplicates). Wikimedia Commons is fully removed from all overhauled destinations (Phases 29, 30, 31 & 32 extended this to 26 destinations). See [CLAUDE.md](CLAUDE.md) for provenance.
 
 > **No framework. No npm. No bundler.** Plain HTML5 + CSS + vanilla ES6 modules, powered by
 > **GSAP ScrollTrigger** animations and served over a zero-dependency Node static server.

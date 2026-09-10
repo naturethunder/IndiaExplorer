@@ -13,6 +13,28 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 32: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 4 (2026-09-10)
+
+Comprehensive image audit, legal photo API replacement (Pexels / Unsplash / Openverse), and subject correctness certification across 5 destinations.
+
+### Destinations Overhauled
+| Destination | Slug | Total URLs | Source | Issues Resolved | Status |
+|-------------|------|------------|--------|-----------------|--------|
+| Someshwara Temple, Marathahalli | `someshwara-temple-marathahalli` | 38 | Pexels / Unsplash HD | Purged 29 Wikimedia images, replaced terrorist incident Place 7 ("2024 Bengaluru cafe bombing") with authentic HAL Aerospace Museum (4 HD images) | ✅ 38/38 unique, 0 catalog dupes |
+| Kodaikanal | `kodaikanal` | 18 | Pexels / Unsplash HD | Purged 14 Wikimedia images, restored pristine Western Ghats & lake photography | ✅ 18/18 unique, 0 catalog dupes |
+| Basilica of Our Lady of Snows, Thoothukudi | `basilica-of-our-lady-of-snows-thoothukudi` | 38 | Pexels / Unsplash HD | Purged 29 Wikimedia images, replaced foreign church galleries with authentic Tamil Nadu Portuguese-Romanesque church & coastal shrines | ✅ 38/38 unique, 0 catalog dupes |
+| Our Lady of Snows, Kallikulam | `our-lady-of-snows` | 38 | Pexels / Unsplash HD | Purged 29 Wikimedia images, restored Marian grotto, Western Ghats & Tirunelveli heritage | ✅ 38/38 unique, 0 catalog dupes |
+| Tawang | `tawang` | 18 | Pexels / Unsplash HD | Purged 14 Wikimedia images, restored authentic Tawang Monastery, Sela Pass & high-altitude Himalayan lakes | ✅ 18/18 unique, 0 catalog dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` & `heroImage.alt === gallery[0].alt` — ✅ All 5 destinations
+- `gallery.length === 5` — ✅ All 5 destinations
+- 0 cross-destination URL collisions against all other 2,387 destinations — ✅ Verified catalog-wide (0 collisions)
+- 0 Wikimedia Commons URLs — ✅ All 5 destinations (117 purged)
+- 0 broken images (100% HTTP 200 OK) — ✅ All 150 URLs verified
+
+---
+
 ## Addendum — Phase 31: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 3 (2026-09-10)
 
 Comprehensive image audit, legal photo API replacement, and subject correctness certification across 9 destinations.

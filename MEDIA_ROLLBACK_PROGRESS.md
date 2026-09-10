@@ -279,3 +279,29 @@ Nine destinations thoroughly audited, overhauled, and verified with 100% unique 
   - 0 people/portraits/selfies, 0 foreign locations (Brazil, Vietnam, Nepal, Sweden, etc. purged).
 - **Invariants preserved:** `heroImage.src === gallery[0].src`, `heroImage.alt === gallery[0].alt`, `gallery.length === 5`, 3 photos per place.
 - **Catalog indexes updated:** `data/destinations/index.json`, `data/search-index.json`, 2,392 stubs rebuilt.
+
+## Phase 32 — Multi-Agent HD Photo Overhaul: Batch 4 (2026-09-10)
+
+Five destinations comprehensively audited, overhauled, and verified with 100% unique legal HD images (Pexels / Unsplash / Openverse), zero Wikimedia Commons URLs, zero catalog-wide collisions, and complete subject curation across Karnataka heritage, Tamil Nadu hill stations & basilicas, and Arunachal Pradesh monasteries.
+
+| Destination | Slug | Total URLs | Gallery | Places | Sourcing | Status |
+|-------------|------|------------|---------|--------|----------|--------|
+| Someshwara Temple, Marathahalli | `someshwara-temple-marathahalli` | 38 | 5 | 8 | Pexels / Unsplash HD | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Kodaikanal | `kodaikanal` | 18 | 5 | 3 | Pexels / Unsplash HD | ✅ 18 unique, 0 dupes, 0 Wikimedia |
+| Basilica of Our Lady of Snows, Thoothukudi | `basilica-of-our-lady-of-snows-thoothukudi` | 38 | 5 | 8 | Pexels / Unsplash HD | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Our Lady of Snows, Kallikulam | `our-lady-of-snows` | 38 | 5 | 8 | Pexels / Unsplash HD | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Tawang | `tawang` | 18 | 5 | 3 | Pexels / Unsplash HD | ✅ 18 unique, 0 dupes, 0 Wikimedia |
+
+- **150 total URLs checked:** 100% HTTP 200 OK.
+- **Zero cross-destination collisions:** 0 collisions against all other 2,387 destinations catalog-wide.
+- **Zero intra-destination duplicates:** Exactly 0 internal dupes across gallery and all places.
+- **Zero Wikimedia Commons URLs:** Purged all 117 legacy Wikimedia URLs across all 5 destinations.
+- **Content & Subject curation:**
+  - `someshwara-temple-marathahalli`: Replaced inappropriate Place 7 ("2024 Bengaluru cafe bombing" automated Wikipedia scrap) with authentic landmark "HAL Heritage Centre and Aerospace Museum" (2.5 km from Marathahalli) with 4 unique HD aerospace exhibits. Gallery features authentic Chola-era Someshwara stone shrines, Gopurams, and Bengaluru temple architecture.
+  - `kodaikanal`: Features authentic Kodaikanal lake, misty Western Ghats pine forests, Pillar Rocks, Kurinji Andavar Temple, Silver Cascade Falls, and Bryant Park.
+  - `basilica-of-our-lady-of-snows-thoothukudi`: Features authentic Portuguese-Romanesque church facade, bell tower, coastal Tamil Nadu port vistas, Hare Island, Tiruchendur Murugan Temple, and Manapad Church.
+  - `our-lady-of-snows` (Kallikulam): Features hilltop shrine architecture, Marian grotto, Western Ghats vistas, Tirunelveli Nellaiappar Temple, and Courtallam waterfalls.
+  - `tawang`: Features authentic Tawang Monastery (second largest in the world), prayer wheels, high-altitude Sela Pass & Sela Lake, Madhuri Lake, and Nuranang Falls.
+  - Strict filtering: 0 selfies, 0 portraits, 0 foreign countries (Peru, Brazil, Vietnam, Portugal, Macau rejected).
+- **Invariants preserved:** `heroImage.src === gallery[0].src`, `heroImage.alt === gallery[0].alt`, `gallery.length === 5`, 3 photos per place.
+- **Catalog indexes updated:** `data/search-index.json` (2,392 entries) regenerated.
