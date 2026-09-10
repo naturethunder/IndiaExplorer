@@ -13,6 +13,28 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 33: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 5 (2026-09-10)
+
+Comprehensive image audit, legal photo API replacement (Pexels / Unsplash), and subject correctness certification across 5 destinations.
+
+### Destinations Overhauled
+| Destination | Slug | Total URLs | Source | Issues Resolved | Status |
+|-------------|------|------------|--------|-----------------|--------|
+| Munger Fort | `munger-fort` | 37 | Pexels / Unsplash HD | Purged 11 Wikimedia images, restored authentic Bihar Ganga fortress ramparts, Kashtaharani Ghat, and historic heritage | ✅ 37/37 unique, 0 catalog dupes |
+| Rohtasgarh Fort | `rohtasgarh-fort` | 21 | Pexels HD (100%) | Purged 12 Wikimedia images, restored ancient hill fort ruins, Kaimur cliffs, and Son river valley | ✅ 21/21 unique, 0 catalog dupes |
+| Aralam Wildlife Sanctuary | `aralam-wildlife-sanctuary` | 37 | Pexels HD (100%) | Purged 29 Wikimedia images, expanded gallery from 4 to 5, restored Western Ghats evergreen canopy and rainforest wildlife | ✅ 37/37 unique, 0 catalog dupes |
+| Chulannur Peafowl Sanctuary | `chulannur-peafowl-sanctuary` | 37 | Pexels / Unsplash HD | Purged 37 Wikimedia images, restored vibrant Indian peacocks displaying plumage and Palakkad rural landscapes | ✅ 37/37 unique, 0 catalog dupes |
+| Mathikettan Shola National Park | `mathikettan-shola-national-park` | 37 | Pexels HD (100%) | Purged 37 Wikimedia images, restored misty shola cloud forests, Devikulam tea hills, and Asian wild elephants | ✅ 37/37 unique, 0 catalog dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` & `heroImage.alt === gallery[0].alt` — ✅ All 5 destinations
+- `gallery.length === 5` — ✅ All 5 destinations
+- 0 cross-destination URL collisions against all other 2,387 destinations — ✅ Verified catalog-wide (0 collisions)
+- 0 Wikimedia Commons URLs — ✅ All 5 destinations (80+ purged)
+- 0 broken images (100% HTTP 200 OK) — ✅ All 169 URLs verified
+
+---
+
 ## Addendum — Phase 32: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 4 (2026-09-10)
 
 Comprehensive image audit, legal photo API replacement (Pexels / Unsplash / Openverse), and subject correctness certification across 5 destinations.

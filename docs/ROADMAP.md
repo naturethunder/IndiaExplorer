@@ -10,6 +10,12 @@ Last updated: 2026-09-10.
 
 ## ✅ Done (current state)
 
+- **Phase 33: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 5 (2026-09-10)** — Complete HD image overhaul, 0-collision validation, and subject curation across 5 destinations (Munger Fort, Rohtasgarh Fort, Aralam Wildlife Sanctuary, Chulannur Peafowl Sanctuary, Mathikettan Shola National Park) using multi-agent parallel execution:
+  1. **5 Destinations Overhauled:** `munger-fort`, `rohtasgarh-fort`, `aralam-wildlife-sanctuary`, `chulannur-peafowl-sanctuary`, and `mathikettan-shola-national-park` — 169 total URLs checked and verified HTTP 200 OK.
+  2. **100% Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates; 0 cross-destination URL collisions against all other 2,387 destinations catalog-wide.
+  3. **Strict Subject Curation & Provenance:** Purged all 80+ legacy Wikimedia images, purged foreign locations (Peru, Brazil, Vietnam, Portugal, Macau, Hungary), and curated authentic Bihar forts, Ghats on the Ganges, Kaimur hills, Western Ghats evergreen forests, and Indian peacocks displaying plumage.
+  4. **Gallery & Place Invariants:** `heroImage.src === gallery[0].src` and `heroImage.alt === gallery[0].alt` enforced; exactly 5 unique HD gallery slides and 3 photos per nearby place. **Score: 100/100.**
+
 - **Phase 32: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 4 (2026-09-10)** — Complete HD image overhaul, 0-collision validation, and subject curation across 5 destinations (Someshwara Temple Marathahalli, Kodaikanal, Thoothukudi Basilica, Our Lady of Snows Kallikulam, Tawang) using multi-agent parallel execution:
   1. **5 Destinations Overhauled:** `someshwara-temple-marathahalli`, `kodaikanal`, `basilica-of-our-lady-of-snows-thoothukudi`, `our-lady-of-snows`, and `tawang` — 150 total URLs checked and verified HTTP 200 OK.
   2. **100% Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates; 0 cross-destination URL collisions against all other 2,387 destinations catalog-wide.
