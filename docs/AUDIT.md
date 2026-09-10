@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-06** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-10** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -13,7 +13,52 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 30: Multi-Agent HD Photo Replacement — Batch 2 (2026-09-10)
+
+Complete Pexels-only HD image overhaul of 6 destinations using multi-agent parallel execution.
+
+### Destinations Overhauled
+| Destination | Slug | Unique URLs | Source | Issues Resolved | Status |
+|-------------|------|-------------|--------|-----------------|--------|
+| Baleshwar Temple | `baleshwar-temple` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Himalayan temple photography | ✅ 5/5 unique, 0 dupes |
+| Neelkanth Mahadev Temple | `neelkanth-mahadev-temple` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Uttarakhand Shiva shrine photography | ✅ 5/5 unique, 0 dupes |
+| Jhansi Fort | `jhansi-fort` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Bundelkhand fort photography | ✅ 5/5 unique, 0 dupes |
+| Mahur Fort | `mahur-fort` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Maharashtra hill-fort photography | ✅ 5/5 unique, 0 dupes |
+| Manikgad | `manikgad` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Sahyadri hill-fort photography | ✅ 5/5 unique, 0 dupes |
+| Dategad | `dategad` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Deccan hill-fort photography | ✅ 5/5 unique, 0 dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` — ✅ All 6 destinations
+- `gallery.length === 5` — ✅ All 6 destinations
+- 0 cross-destination URL collisions — ✅ Verified catalog-wide
+- 0 Wikimedia Commons URLs — ✅ All 6 destinations
+
+---
+
+## Addendum — Phase 29: Multi-Agent HD Photo Replacement — Batch 1 (2026-09-10)
+
+Complete Pexels-only HD image overhaul of 6 destinations using multi-agent parallel execution (6 simultaneous browser subagents via the `destination-image-fixer` skill).
+
+### Destinations Overhauled
+| Destination | Slug | Unique URLs | Source | Issues Resolved | Status |
+|-------------|------|-------------|--------|-----------------|--------|
+| Portuguese Cemetery | `portuguese-cemetery` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Goa colonial cemetery photography | ✅ 5/5 unique, 0 dupes |
+| Allahabad Fort | `allahabad-fort` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Prayagraj fort and Sangam photography | ✅ 5/5 unique, 0 dupes |
+| Kedarnath Temple | `kedarnath-temple` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Char Dham Himalayan shrine photography | ✅ 5/5 unique, 0 dupes |
+| Badrinath Temple | `badrinath-temple` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Char Dham Vishnu shrine photography | ✅ 5/5 unique, 0 dupes |
+| Lakhamandal Temple, Ruins & Images | `lakhamandal-temple-ruins-and-images` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Uttarkashi ruins photography | ✅ 5/5 unique, 0 dupes |
+| Rudranath | `rudranath` | 5 | Pexels (100% HD) | Replaced old/broken imagery with authentic Panch Kedar alpine shrine photography | ✅ 5/5 unique, 0 dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` — ✅ All 6 destinations
+- `gallery.length === 5` — ✅ All 6 destinations
+- 0 cross-destination URL collisions — ✅ Verified catalog-wide
+- 0 Wikimedia Commons URLs — ✅ All 6 destinations
+
+---
+
 ## Addendum — Phase 28: Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul (2026-09-06)
+
 
 Resolved all search box limitations across the platform (`index.html`, `destinations.html`, and `ai-finder.html`), empowering users to search destinations, states, attractions, slugs, and compound terms with or without spaces, punctuation, or diacritics:
 

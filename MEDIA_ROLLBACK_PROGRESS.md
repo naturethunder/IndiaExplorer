@@ -211,3 +211,39 @@ Strict adherence to the legal photo API policy (Pexels / Unsplash) across two pr
 - Sourced exclusively from external photo APIs (Pexels) featuring authentic heritage monuments, scenery, wildlife, and architecture.
 - Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, `stubs/*.html`, and rebuilt `docs/DESTINATIONS.md`.
 - Verified visual rendering in browser across hero, 5-gallery carousel, and all place cards.
+
+## Phase 29 — Multi-Agent HD Photo Replacement: Batch 1 (2026-09-10)
+
+Six destinations overhauled in a single parallel multi-agent session using the `destination-image-fixer` skill. All imagery replaced with strictly Pexels HD photography \u2014 zero Wikimedia Commons, zero expired Pixabay session links, zero broken URLs.
+
+| Destination | Slug | Unique URLs | Sourcing | Status |
+|-------------|------|-------------|----------|--------|
+| Portuguese Cemetery | `portuguese-cemetery` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Allahabad Fort | `allahabad-fort` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Kedarnath Temple | `kedarnath-temple` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Badrinath Temple | `badrinath-temple` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Lakhamandal Temple, Ruins & Images | `lakhamandal-temple-ruins-and-images` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Rudranath | `rudranath` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+
+- **30 total unique Pexels URLs** across 6 destination files.
+- **0 cross-destination URL collisions** verified catalog-wide.
+- **Gallery invariant maintained:** `heroImage.src === gallery[0].src`; exactly 5 unique HD gallery slides per destination.
+- **Subject curation enforced:** Only authentic Himalayan temples, Char Dham shrines, Uttarakhand alpine scenery, and Goa colonial architecture \u2014 0 selfies, people portraits, or geographically wrong images.
+
+## Phase 30 \u2014 Multi-Agent HD Photo Replacement: Batch 2 (2026-09-10)
+
+A second parallel multi-agent session completed the same day, targeting 6 more destinations across Maharashtra (Sahyadri forts), Uttar Pradesh (Jhansi Fort), and Uttarakhand (Baleshwar/Neelkanth temples).
+
+| Destination | Slug | Unique URLs | Sourcing | Status |
+|-------------|------|-------------|----------|--------|
+| Baleshwar Temple | `baleshwar-temple` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Neelkanth Mahadev Temple | `neelkanth-mahadev-temple` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Jhansi Fort | `jhansi-fort` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Mahur Fort | `mahur-fort` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Manikgad | `manikgad` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Dategad | `dategad` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+
+- **30 total unique Pexels URLs** across 6 destination files.
+- **0 cross-destination URL collisions** verified catalog-wide.
+- **Gallery invariant maintained:** `heroImage.src === gallery[0].src`; exactly 5 unique HD gallery slides per destination.
+- **Subject curation enforced:** Only authentic Sahyadri fort walls, Himalayan Shiva temples, Bundelkhand heritage, and Deccan hill-fort landscapes \u2014 0 selfies, people portraits, food, or wrong-location imagery.

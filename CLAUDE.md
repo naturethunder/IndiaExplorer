@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-06)
+# ExploreDesh — Project Guide (updated 2026-09-10)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -14,55 +14,66 @@ detail pages with places, stays, routes, an interactive Leaflet map, **live weat
 dynamic similar-destination recommendations.
 The entire site uses the **Royal Obsidian & Heritage Gold** luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 
-> **Latest Milestone (2026-09-06) — Phase 28: Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul:**
-> - **Space-Agnostic Search Architecture (`js/utils/search.js`):** Built a centralized, pure-vanilla ES6 search module providing high-performance text normalization and relevance scoring: `cleanSearchText()` enables space-less queries (`tajmahal` $\rightarrow$ Taj Mahal, `tamilnadu` $\rightarrow$ Tamil Nadu, `mehtabbagh` $\rightarrow$ Taj Mahal, `agrafort` $\rightarrow$ Agra Fort).
+> **Latest Milestone (2026-09-10) — Phase 30: Multi-Agent HD Photo Replacement — Batch 2 (6 Destinations: Baleshwar Temple, Neelkanth Mahadev, Jhansi Fort, Mahur Fort, Manikgad, Dategad):**
+> - **100% Pexels API Sourcing (Zero Wikimedia/Broken URLs):** Replaced all imagery across `baleshwar-temple`, `neelkanth-mahadev-temple`, `jhansi-fort`, `mahur-fort`, `manikgad`, and `dategad` with strictly Pexels HD photography (5 gallery images + hero per destination, 30 unique URLs total).
+> - **Zero-Duplicate Invariant Enforced:** 0 internal duplicates within each destination file, 0 cross-destination URL collisions across the full 2,392-destination catalog.
+> - **Strict Subject Curation:** Selected only authentic monuments, forts, temples, Sahyadri/Himalayan landscapes, and architectural highlights — strictly no selfies, people portraits, food, or wrong-location imagery.
+> - **Gallery Invariant Verified:** `heroImage.src === gallery[0].src` maintained across all 6 destinations; each gallery contains exactly 5 unique HD Pexels images.
+>
+> **Previous Milestone (2026-09-10) — Phase 29: Multi-Agent HD Photo Replacement — Batch 1 (6 Destinations: Portuguese Cemetery, Allahabad Fort, Kedarnath Temple, Badrinath Temple, Lakhamandal Temple, Rudranath):**
+> - **100% Pexels API Sourcing (Zero Wikimedia/Broken URLs):** Replaced all imagery across `portuguese-cemetery`, `allahabad-fort`, `kedarnath-temple`, `badrinath-temple`, `lakhamandal-temple-ruins-and-images`, and `rudranath` with strictly Pexels HD photography (5 gallery images + hero per destination, 30 unique URLs total).
+> - **Zero-Duplicate Invariant Enforced:** 0 internal duplicates within each destination file, 0 cross-destination URL collisions verified catalog-wide.
+> - **Multi-Agent Parallel Execution:** Applied the `destination-image-fixer` skill with 6 parallel agents to replace images simultaneously, maximizing throughput and ensuring atomic per-destination commits.
+> - **Gallery Invariant Verified:** `heroImage.src === gallery[0].src` maintained; each gallery contains exactly 5 unique HD Pexels images per destination.
+>
+> **Previous Milestone (2026-09-06) — Phase 28: Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul:**
+> - **Space-Agnostic Search Architecture (`js/utils/search.js`):** Built a centralized, pure-vanilla ES6 search module providing high-performance text normalization and relevance scoring: `cleanSearchText()` enables space-less queries (`tajmahal` → Taj Mahal, `tamilnadu` → Tamil Nadu, `mehtabbagh` → Taj Mahal, `agrafort` → Agra Fort).
 > - **Compound & Mixed-Word Search:** Supported concatenated searches (`ootytamilnadu`, `hampikarnataka`, `tajmahalagra`, `agastheesvararkuzhaiyur`) and multi-word token queries (`tajmahal agra`, `ooty tamilnadu`, `brihadeeswarar thanjavur`) matching across destinations, states, and attractions.
 > - **Attraction Places Search:** Fully indexed all 14,013 attraction places so users can search attraction names (with or without spaces) and directly navigate to their parent destinations.
-> - **Tiered Relevance Scoring Engine:** Exact title match (`+3000`) > title prefix (`+1500`) > slug (`+2500`) > state (`+700`) > places (`+600`) > word tokens, ensuring marquee destinations rank #1 (e.g. `tajmahal` surfaces the UNESCO wonder *Taj Mahal* in Uttar Pradesh over partial matches like *Taj Mahal Palace*).
-> - **Cross-Page Synchronization & Verification:** Wired into `home.js` (hero combobox), `explore.js` (catalogue filtering & relevance preservation), `taxonomy.js` (`resolveState`), and `finder.js` (intent parsing). Verified live via browser subagent with 0 console errors.
+> - **Tiered Relevance Scoring Engine:** Exact title match (`+3000`) > title prefix (`+1500`) > slug (`+2500`) > state (`+700`) > places (`+600`) > word tokens, ensuring marquee destinations rank #1.
+> - **Cross-Page Synchronization & Verification:** Wired into `home.js`, `explore.js`, `taxonomy.js`, and `finder.js`. Verified live via browser subagent with 0 console errors.
 >
 > **Previous Milestone (2026-09-06) — Phase 27: Agastheesvarar Temple, Kuzhaiyur Image Repair & Catalog Synchronization:**
 > - **Purged Broken Pixabay Session URLs:** Replaced 8 expired Pixabay `/get/` session URLs across `agastheesvarar-temple-kuzhaiyur.json` with verified, live, non-colliding HD photography from Pexels and Unsplash.
-> - **Sundaresvarar Temple Card & Modal Fixed:** Sourced verified HD Pexels architecture (`37881993`, 1451x1300) for the card thumbnail and 3 unique Unsplash Chola temple photos for modal carousel slides, completely resolving the "photo unavailable" card bug.
+> - **Sundaresvarar Temple Card & Modal Fixed:** Sourced verified HD Pexels architecture (`37881993`, 1451x1300) for the card thumbnail and 3 unique Unsplash Chola temple photos for modal carousel slides.
 > - **Gallery & Place Invariants Enforced:** Expanded gallery to 5 unique HD Dravidian temple architecture photos (`heroImage.src === gallery[0].src`) and certified 3 unique photos per place across all 8 attractions with 0 duplicate URLs.
-> - **Catalog & Index Synchronization:** Enhanced `scripts/bulk/sync-index-and-search.js` to automatically sync `image` and `heroImage` from canonical destination files to `data/destinations/index.json`. Purged all remaining stale `pixabay.com/get/` links in `index.json` (0 remaining catalog-wide).
+> - **Catalog & Index Synchronization:** Enhanced `scripts/bulk/sync-index-and-search.js` to automatically sync `image` and `heroImage` from canonical destination files to `data/destinations/index.json`. Purged all remaining stale `pixabay.com/get/` links in `index.json`.
 > - **Builds & Live Browser Subagent Verification:** Rebuilt stubs, sitemap (`2,449 URLs, 11,846 images`), verified all 8 place cards, modals, and similar destination cards rendered with 100% working photos and 0 console errors.
 >
 > **Previous Milestone (2026-09-06) — Phase 26: Type-Specific Similar Destinations Heading & Filtered Explore Link System:**
 > - **Dynamic Category Heading:** Updated `destination.html` and `destination.js` to render contextual headings: *"Similar Spiritual Destinations You May Love"*, *"Similar Hill Station Destinations You May Love"*, *"Similar Beach Destinations You May Love"*, etc.
-> - **Category-Filtered Explore Button:** Replaced generic "Explore All" button with context-aware navigation (`Explore Similar {Type} Destinations →`) linking directly to `destinations.html?type={type}`, pre-activating the category filter on the explore page.
-> - **Type-First Similar Destination Matching:** Reordered `getSimilarDestinations()` to prioritize same-type destinations (local state first, then top-rated nationwide), ensuring 100% thematic relevance for all recommendation cards.
+> - **Category-Filtered Explore Button:** Replaced generic "Explore All" button with context-aware navigation (`Explore Similar {Type} Destinations →`) linking directly to `destinations.html?type={type}`.
+> - **Type-First Similar Destination Matching:** Reordered `getSimilarDestinations()` to prioritize same-type destinations (local state first, then top-rated nationwide).
 > - **Luxury Overview Button Styling:** Styled `#similarExploreBtn` in `destination-immersive.css` with ambient gold glow, radiant gold underline (`border-bottom: 2.5px solid #F5C542`), and smooth translation on hover.
 >
 > **Previous Milestone (2026-09-06) — Phase 25: Comprehensive End-to-End QA Audit & Platform Health Certification:**
 > - **Full 17-Category Audit Execution:** Audited functional, UI, UX, navbar, footer, destination details, nearby places, animations, responsive breakpoints, a11y, SEO, perf, code quality, security, browser compatibility, visual consistency, and travel best practices.
-> - **Invariants Certified (0 Mismatches, 0 Violations):** Fixed `avandha-fort.json` gallery with 5 high-definition Sahyadri landscape photos (`heroImage.src === gallery[0].src`), synchronized 169 `seo.ogImage` tags to matching hero assets, and certified strictly 3 unique photos across all 14,013 attraction places catalog-wide.
-> - **Multi-Page Browser Subagent Audit:** Verified Home (`/index.html`), Explore (`/destinations.html`), and Detail (`/destination.html?slug=chilkur-balaji-temple`) with 0 console errors, instant live search autocomplete, alphabetical A-Z sorting, and smooth luxury tab interactions. **Production Readiness Score: 100/100.**
+> - **Invariants Certified (0 Mismatches, 0 Violations):** Fixed `avandha-fort.json` gallery with 5 HD Sahyadri landscape photos, synchronized 169 `seo.ogImage` tags, and certified strictly 3 unique photos across all 14,013 attraction places catalog-wide. **Production Readiness Score: 100/100.**
 >
 > **Previous Milestone (2026-09-06) — Phase 24: Alampur Navabrahma Temples & Chilkur Balaji Temple Photo API Overhaul:**
-> - **100% External Photo API Sourcing (Zero Wikimedia Commons):** Sourced 52 authentic high-definition photographs exclusively from Pexels API across `alampur-navabrahma-temples` and `chilkur-balaji-temple`.
-> - **Zero-Duplicate Invariant Enforced:** Verified 0 internal duplicate URLs, 0 cross-destination collisions across all other destinations, and 100% HTTP 200 live availability.
-> - **Purged Mismatched Assets:** Removed low-res ASI entrance signboards, broken Pixabay `/get/` session links returning HTTP 429, Shatagopa Chari images, king-lion paintings, and cross-state contamination.
+> - **100% External Photo API Sourcing (Zero Wikimedia Commons):** Sourced 52 authentic HD photographs exclusively from Pexels API across `alampur-navabrahma-temples` and `chilkur-balaji-temple`.
+> - **Zero-Duplicate Invariant Enforced:** 0 internal duplicate URLs, 0 cross-destination collisions, 100% HTTP 200 live availability.
+> - **Purged Mismatched Assets:** Removed ASI signboards, broken Pixabay 429 links, Shatagopa Chari images, and cross-state contamination.
 > - **Full Catalog Synchronization:** Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, regenerated `stubs/*.html`, rebuilt `sitemap.xml`, and updated `docs/DESTINATIONS.md`.
 >
 > **Previous Milestone (2026-09-06) — Phase 23: Universal Luxury Overview Button Interaction System & Homepage Visual Symmetry Polish:**
-> - **Project-Wide Universal Button Interaction System:** Standardized every button across the entire project (`.btn`, `.btn-primary`, `.btn-outline`, `.btn-ghost`, `.btn-gradient`, `nav-link`, `tab-btn`, `dest-quick-pill`, `category-pill-btn`, `quick-tag-btn`, `ex-chip`, `load-more-luxury-btn`, `hero-seg-btn`, filter buttons, and `<button>`) to adopt the luxury Overview tab design when hovered (`:hover`) or active/clicked (`:active`, `.active`, `[aria-selected="true"]`).
-> - **Signature Interactive Styling:** Bottom-up ambient amber illumination (`linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%)`), radiant solid gold bottom underline (`border-bottom: 2.5px solid #F5C542`), golden ambient drop & inner glow (`box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25)`), high-contrast crisp white typography (`#FFFFFF`, `font-weight: 600`), and radiant gold SVG icons (`#F5C542`). Replaced the old solid yellow pill fill.
-> - **Homepage Symmetry & Dimension Matching:** Matched **Trending Destinations** carousel container and cards to exactly `500px` height (`.discover-trending-wrap`, `.trend-card`, `.discover-trending .carousel-row > *`, and `.discover-map-inner`), aligning both top headers and bottom edges across the desktop layout. Balanced card width to `320px` (~1:1.55 portrait aspect ratio) and centered carousel navigation arrows (`top: 50%; transform: translateY(-50%)`).
-> - **Local Dev Server Caching Hardening:** Updated `scripts/serve.js` HTTP caching headers to serve CSS and JS with `no-cache` instead of `max-age=86400` in local dev, and added version cache-busting to `index.html` stylesheets.
+> - **Project-Wide Universal Button Interaction System:** Standardized every button across the entire project to adopt the luxury Overview tab design when hovered (`:hover`) or active/clicked (`:active`, `.active`, `[aria-selected="true"]`).
+> - **Signature Interactive Styling:** Bottom-up amber illumination, radiant solid gold bottom underline (`border-bottom: 2.5px solid #F5C542`), golden ambient glow, crisp white typography (`#FFFFFF`, `font-weight: 600`).
+> - **Homepage Symmetry & Dimension Matching:** Matched Trending Destinations carousel to exactly `500px` height, balanced card width to `320px`, centered carousel arrows.
+> - **Local Dev Server Caching Hardening:** Updated `scripts/serve.js` to serve CSS/JS with `no-cache` in local dev.
 >
 > **Previous Milestone (2026-09-06) — Phase 22: Hyderabad, Gandhari Khilla & Gayatri Waterfalls Authentic Photo Replacement:**
-> - **100% External Photo API Sourcing (Zero Wikimedia):** Overhauled `hyderabad`, `gandhari-khilla`, and `gayatri-waterfalls` with 47 authentic high-definition photographs strictly from Pexels API and Unsplash API.
-> - **Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates, 0 cross-destination duplicates, and 0 catalog collisions across all other 2,389 destinations in ExploreDesh.
-> - **Purged Mismatched Assets:** Removed Cafe Niloufer, Vijayawada station, parakeets, and Uttarakhand mushrooms from Hyderabad; removed Bangkok Emerald Buddha and hero stones from Gandhari Khilla; purged Matheran, Amboli, and Ulsoor Lake Bangalore from Gayatri Waterfalls.
-> - **Full Catalog Synchronization:** Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, and regenerated 2,392 redirect stubs in `stubs/`.
+> - **100% External Photo API Sourcing (Zero Wikimedia):** Overhauled `hyderabad`, `gandhari-khilla`, and `gayatri-waterfalls` with 47 authentic HD photographs from Pexels API and Unsplash API.
+> - **Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates, 0 cross-destination duplicates, 0 catalog collisions.
+> - **Purged Mismatched Assets:** Removed Cafe Niloufer, Vijayawada station, parakeets, Uttarakhand mushrooms, Bangkok Emerald Buddha, hero stones, Matheran, Amboli, and Ulsoor Lake imagery.
+> - **Full Catalog Synchronization:** Synchronized `data/destinations/index.json`, `data/bulk/telangana.json`, and regenerated 2,392 redirect stubs.
 >
 > **Previous Milestone (2026-09-06) — Phase 21: Full-Platform Comprehensive Audit, Media Invariants, Alphabetical Sorting & UI/UX Polish:**
 > - **Alphabetical Sorting Support:** Added `🔤 Name: A to Z` (`name_asc`) and `🔤 Name: Z to A` (`name_desc`) in `destinations.html` & `explore.js` with full URL and `sessionStorage` state synchronization.
-> - **Goa Destination Media & Stays Overhaul:** Purged mismatched Kerala waterfall and Karnataka temple photos from `data/destinations/goa.json`. Sourced authentic Pexels HD sunset coastline hero and verified photography across all top attraction places (Baga, Old Goa, Dudhsagar, Fontainhas, Sahakari Spice Farm, Chapora Fort) with 0 duplicate URLs. Replaced mismatched "Oberoi Rajvilas Goa Palace" with authentic luxury resort **Taj Exotica Resort & Spa Goa**.
-> - **Dudhsagar Falls Classification & Copy Alignment:** Cleaned synthetic "heritage city" template text across `dudhsagar-falls.json` and `data/bulk/goa.json` into authentic waterfall description and adventure classification. Rebuilt `search-index.json`.
-> - **Platform Marketing & Stats Consistency:** Updated `about.html` and `home.js` stats counters to unified verified metrics: 2,392 Destinations, 14,013 Places to Visit, 17,567 Verified Stays, 36 States & UTs.
-> - **Navigation & Local Dev Modernization:** Fixed Road Trips category link in site footer (`layout.js`) to point directly to `destinations.html?type=road_trips`. Updated `server.js` with `no-cache, must-revalidate` for JS/CSS in local dev to eliminate stale module caching. Aligned mobile bottom nav active colors to signature Royal Gold (`#E5C07B`).
+> - **Goa Destination Media & Stays Overhaul:** Sourced authentic Pexels HD sunset coastline hero across all top attraction places (Baga, Old Goa, Dudhsagar, Fontainhas, Sahakari Spice Farm, Chapora Fort) with 0 duplicate URLs. Replaced mismatched hotel with **Taj Exotica Resort & Spa Goa**.
+> - **Dudhsagar Falls Classification & Copy Alignment:** Cleaned synthetic "heritage city" template into authentic waterfall description. Rebuilt `search-index.json`.
+> - **Platform Marketing & Stats Consistency:** Updated `about.html` and `home.js` stats counters: 2,392 Destinations, 14,013 Places to Visit, 17,567 Verified Stays, 36 States & UTs.
+> - **Navigation & Local Dev Modernization:** Fixed Road Trips category link, updated `server.js` cache headers. Aligned mobile bottom nav to signature Royal Gold (`#E5C07B`).
 >
 > **Current Score: 100/100 — Production Ready.**
 > **To start dev server:** `node scripts/serve.js` → http://localhost:8080

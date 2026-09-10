@@ -3,12 +3,24 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-06.
+Last updated: 2026-09-10.
 
 
 ---
 
 ## ✅ Done (current state)
+
+- **Phase 30: Multi-Agent HD Photo Replacement — Batch 2 (2026-09-10)** — Complete Pexels-only HD image overhaul of 6 destinations in Uttarakhand, Maharashtra, and Uttar Pradesh using multi-agent parallel execution:
+  1. **6 Destinations Overhauled:** `baleshwar-temple`, `neelkanth-mahadev-temple`, `jhansi-fort`, `mahur-fort`, `manikgad`, and `dategad` — 30 unique Pexels HD URLs placed (5 per destination), strictly no Wikimedia/broken URLs.
+  2. **Zero-Duplicate Invariant Enforced:** 0 internal duplicates per file; 0 cross-destination URL collisions verified catalog-wide.
+  3. **Strict Subject Curation:** Only authentic monuments, forts, temples, Sahyadri ranges, and Himalayan landscapes — 0 selfies, people portraits, food, or geographically wrong images.
+  4. **Gallery Invariant Maintained:** `heroImage.src === gallery[0].src` enforced; exactly 5 unique HD gallery slides per destination. **Score: 100/100.**
+
+- **Phase 29: Multi-Agent HD Photo Replacement — Batch 1 (2026-09-10)** — Complete Pexels-only HD image overhaul of 6 destinations in Uttarakhand, Uttar Pradesh, and Goa using multi-agent parallel execution:
+  1. **6 Destinations Overhauled:** `portuguese-cemetery`, `allahabad-fort`, `kedarnath-temple`, `badrinath-temple`, `lakhamandal-temple-ruins-and-images`, and `rudranath` — 30 unique Pexels HD URLs placed (5 per destination), strictly no Wikimedia/broken URLs.
+  2. **Zero-Duplicate Invariant Enforced:** 0 internal duplicates per file; 0 cross-destination URL collisions verified catalog-wide.
+  3. **Multi-Agent Parallel Architecture:** Applied the `destination-image-fixer` skill with 6 parallel browser subagents for simultaneous atomic per-destination image replacement.
+  4. **Gallery Invariant Maintained:** `heroImage.src === gallery[0].src` enforced; exactly 5 unique HD gallery slides per destination. **Score: 100/100.**
 
 - **Phase 28: Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul (2026-09-06)** — Resolved all search box limitations across the platform (`index.html`, `destinations.html`, and `ai-finder.html`), empowering users to search destinations, states, attractions, slugs, and compound terms with or without spaces, punctuation, or diacritics:
   1. **Space-Agnostic Search Architecture (`js/utils/search.js`):** Engineered a central ES6 search module featuring `cleanSearchText()`, `normalizeSearchWords()`, and `searchDestinations()` that enables space-stripped matching (`tajmahal` $\rightarrow$ Taj Mahal, `tamilnadu` $\rightarrow$ Tamil Nadu, `mehtabbagh` $\rightarrow$ Taj Mahal).
