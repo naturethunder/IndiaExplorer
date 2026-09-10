@@ -13,6 +13,32 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 31: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 3 (2026-09-10)
+
+Comprehensive image audit, legal photo API replacement, and subject correctness certification across 9 destinations.
+
+### Destinations Overhauled
+| Destination | Slug | Total URLs | Source | Issues Resolved | Status |
+|-------------|------|------------|--------|-----------------|--------|
+| Beeramgunta Poleramma Temple | `beeramgunta-poleramma-temple` | 18 | Pexels (100% HD) | Replaced tribal woman portrait with authentic Nellore rural landscape | ✅ 18/18 unique, 0 catalog dupes |
+| Sri Sri Nookambika Ammavari Temple | `sri-sri-nookambika-ammavari-temple` | 38 | Pexels (100% HD) | Synced hero alt, eliminated 16 catalog collisions | ✅ 38/38 unique, 0 catalog dupes |
+| Kotasattemma Temple, Nidadavolu | `kotasattemma-temple-nidadavolu` | 38 | Pexels (100% HD) | Replaced Indore Chhatri with authentic Andhra Lepakshi temple; eliminated 11 catalog collisions | ✅ 38/38 unique, 0 catalog dupes |
+| St. Joseph's Syro-Malabar Church | `st-joseph-s-syro-malabar-catholic-church-meenkunnam` | 38 | Pexels (100% HD) | Verified authentic Kerala Catholic church heritage, eliminated 22 catalog collisions | ✅ 38/38 unique, 0 catalog dupes |
+| Sacred Heart Forane Church | `sacred-heart-forane-church` | 38 | Pexels / Unsplash | Purged Hindu temple from hero/gallery, Theyyam portraits, Brazil weir, Turkish church; replaced with authentic Kerala Catholic architecture | ✅ 38/38 unique, 0 catalog dupes |
+| Kottarakkara Sree Mahaganapathi | `kottarakkara-sree-mahaganapathi-kshethram` | 38 | Pexels (100% HD) | Synced hero metadata, eliminated 21 catalog collisions | ✅ 38/38 unique, 0 catalog dupes |
+| Shatrughna Temple | `shatrughna-temple` | 38 | Pexels / Unsplash | Purged church from temple gallery, woman/elderly portraits, Vietnam church; replaced with Padmanabhaswamy and traditional Kerala temple lamps | ✅ 38/38 unique, 0 catalog dupes |
+| Tingmosgang Monastery | `tingmosgang-monastery` | 34 | Pexels / Unsplash | Purged abandoned district photo; replaced duplicate Lamayuru images with Leh Palace, Shanti Stupa, Pangong Lake | ✅ 34/34 unique, 0 catalog dupes |
+| Karsha Monastery | `karsha-monastery` | 22 | Pexels / Unsplash | Purged Nepal stupas; replaced with authentic Zanskar valley gompa, cliffside monastery, and snow peaks | ✅ 22/22 unique, 0 catalog dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` & `heroImage.alt === gallery[0].alt` — ✅ All 9 destinations
+- `gallery.length === 5` — ✅ All 9 destinations
+- 0 cross-destination URL collisions against all other 2,383 destinations — ✅ Verified catalog-wide (0 collisions)
+- 0 Wikimedia Commons URLs — ✅ All 9 destinations
+- 0 broken images (100% HTTP 200 OK) — ✅ All 302 URLs verified
+
+---
+
 ## Addendum — Phase 30: Multi-Agent HD Photo Replacement — Batch 2 (2026-09-10)
 
 Complete Pexels-only HD image overhaul of 6 destinations using multi-agent parallel execution.

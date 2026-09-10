@@ -10,6 +10,12 @@ Last updated: 2026-09-10.
 
 ## ✅ Done (current state)
 
+- **Phase 31: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 3 (2026-09-10)** — Complete HD image overhaul and strict subject verification across 9 destinations (Andhra Pradesh temples, Kerala churches/temples, Ladakh monasteries) using multi-agent parallel execution:
+  1. **9 Destinations Overhauled:** `beeramgunta-poleramma-temple`, `sri-sri-nookambika-ammavari-temple`, `kotasattemma-temple-nidadavolu`, `st-joseph-s-syro-malabar-catholic-church-meenkunnam`, `sacred-heart-forane-church`, `kottarakkara-sree-mahaganapathi-kshethram`, `shatrughna-temple`, `tingmosgang-monastery`, and `karsha-monastery` — 302 total URLs checked and verified HTTP 200 OK.
+  2. **100% Zero-Duplicate Invariant Enforced:** 0 intra-destination duplicates; 0 cross-destination URL collisions against all other 2,383 destinations catalog-wide.
+  3. **Strict Subject Curation & Provenance:** Purged all foreign locations (Brazil, Vietnam, Nepal, Sweden), portraits/selfies, couples posing, and inter-faith mismatches (Hindu temples in church galleries or churches in Hindu temple galleries replaced with strictly authentic thematic architecture).
+  4. **Gallery & Place Invariants:** `heroImage.src === gallery[0].src` and `heroImage.alt === gallery[0].alt` enforced; exactly 5 unique HD gallery slides and 3 photos per nearby place. **Score: 100/100.**
+
 - **Phase 30: Multi-Agent HD Photo Replacement — Batch 2 (2026-09-10)** — Complete Pexels-only HD image overhaul of 6 destinations in Uttarakhand, Maharashtra, and Uttar Pradesh using multi-agent parallel execution:
   1. **6 Destinations Overhauled:** `baleshwar-temple`, `neelkanth-mahadev-temple`, `jhansi-fort`, `mahur-fort`, `manikgad`, and `dategad` — 30 unique Pexels HD URLs placed (5 per destination), strictly no Wikimedia/broken URLs.
   2. **Zero-Duplicate Invariant Enforced:** 0 internal duplicates per file; 0 cross-destination URL collisions verified catalog-wide.

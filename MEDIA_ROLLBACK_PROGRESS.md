@@ -241,9 +241,41 @@ A second parallel multi-agent session completed the same day, targeting 6 more d
 | Jhansi Fort | `jhansi-fort` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
 | Mahur Fort | `mahur-fort` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
 | Manikgad | `manikgad` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
-| Dategad | `dategad` | 5 | Pexels API (100% HD) | \u2705 5/5 unique, 0 dupes, 0 Wikimedia |
+| Baleshwar Temple | `baleshwar-temple` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
+| Neelkanth Mahadev Temple | `neelkanth-mahadev-temple` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
+| Jhansi Fort | `jhansi-fort` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
+| Mahur Fort | `mahur-fort` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
+| Manikgad | `manikgad` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
+| Dategad | `dategad` | 5 | Pexels API (100% HD) | ✅ 5/5 unique, 0 dupes, 0 Wikimedia |
 
 - **30 total unique Pexels URLs** across 6 destination files.
 - **0 cross-destination URL collisions** verified catalog-wide.
 - **Gallery invariant maintained:** `heroImage.src === gallery[0].src`; exactly 5 unique HD gallery slides per destination.
-- **Subject curation enforced:** Only authentic Sahyadri fort walls, Himalayan Shiva temples, Bundelkhand heritage, and Deccan hill-fort landscapes \u2014 0 selfies, people portraits, food, or wrong-location imagery.
+- **Subject curation enforced:** Only authentic Sahyadri fort walls, Himalayan Shiva temples, Bundelkhand heritage, and Deccan hill-fort landscapes — 0 selfies, people portraits, food, or wrong-location imagery.
+
+## Phase 31 — Multi-Agent HD Photo Overhaul: Batch 3 (2026-09-10)
+
+Nine destinations thoroughly audited, overhauled, and verified with 100% unique legal HD images (Pexels / Unsplash), zero Wikimedia Commons, zero catalog-wide collisions, and complete subject curation across AP temples, Kerala churches, and Ladakh monasteries.
+
+| Destination | Slug | Total URLs | Gallery | Places | Sourcing | Status |
+|-------------|------|------------|---------|--------|----------|--------|
+| Beeramgunta Poleramma Temple | `beeramgunta-poleramma-temple` | 18 | 5 | 3 | Pexels HD (100%) | ✅ 18 unique, 0 dupes, 0 Wikimedia |
+| Sri Sri Nookambika Ammavari Temple | `sri-sri-nookambika-ammavari-temple` | 38 | 5 | 8 | Pexels HD (100%) | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Kotasattemma Temple, Nidadavolu | `kotasattemma-temple-nidadavolu` | 38 | 5 | 8 | Pexels HD (100%) | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| St. Joseph's Syro-Malabar Catholic Church | `st-joseph-s-syro-malabar-catholic-church-meenkunnam` | 38 | 5 | 8 | Pexels HD (100%) | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Sacred Heart Forane Church | `sacred-heart-forane-church` | 38 | 5 | 8 | Pexels / Unsplash HD | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Kottarakkara Sree Mahaganapathi Kshethram | `kottarakkara-sree-mahaganapathi-kshethram` | 38 | 5 | 8 | Pexels HD (100%) | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Shatrughna Temple | `shatrughna-temple` | 38 | 5 | 8 | Pexels / Unsplash HD | ✅ 38 unique, 0 dupes, 0 Wikimedia |
+| Tingmosgang Monastery | `tingmosgang-monastery` | 34 | 5 | 7 | Pexels HD (100%) | ✅ 34 unique, 0 dupes, 0 Wikimedia |
+| Karsha Monastery | `karsha-monastery` | 22 | 5 | 4 | Pexels HD (100%) | ✅ 22 unique, 0 dupes, 0 Wikimedia |
+
+- **302 total URLs checked:** 100% HTTP 200 OK.
+- **Zero cross-destination collisions:** 0 collisions against all other 2,383 destinations catalog-wide.
+- **Zero intra-destination duplicates:** Exactly 0 internal dupes across gallery and all places.
+- **Subject accuracy verified:**
+  - Christian destinations (`sacred-heart-forane-church`, `st-joseph...`) feature verified Catholic churches, Gothic/colonial architecture, stained glass, and Kerala landscapes.
+  - Hindu temple destinations (`kotasattemma...`, `shatrughna...`, `beeramgunta...`, `sri-sri-nookambika...`, `kottarakkara...`) feature authentic South Indian temples, stone carvings, gopurams, and traditional lamps.
+  - Buddhist monasteries (`tingmosgang-monastery`, `karsha-monastery`) feature authentic Ladakh and Zanskar gompas, stupas, Leh palace, and Himalayan peaks.
+  - 0 people/portraits/selfies, 0 foreign locations (Brazil, Vietnam, Nepal, Sweden, etc. purged).
+- **Invariants preserved:** `heroImage.src === gallery[0].src`, `heroImage.alt === gallery[0].alt`, `gallery.length === 5`, 3 photos per place.
+- **Catalog indexes updated:** `data/destinations/index.json`, `data/search-index.json`, 2,392 stubs rebuilt.
