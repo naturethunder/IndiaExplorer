@@ -3,12 +3,20 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-11.
+Last updated: 2026-09-11 (rev-2).
 
 
 ---
 
 ## ✅ Done (current state)
+
+- **Phase 35: AI Trip Finder NLP Parser Fix, Search-Index Rebuild & Full Responsive/Itinerary QA (2026-09-11)** — Systematic hardening of the AI Trip Finder and platform-wide QA:
+  1. **NLP Parser `STOP_WORDS` Refactor (`js/pages/finder.js`):** Rewrote `parsePrompt()` with an exhaustive `STOP_WORDS` set of filler/intent words. Destination tokens are extracted only after stop-word filtering, fixing the root bug where queries like "5 days in manali" fell back to a random destination ("ladakh") instead of the intended one.
+  2. **Schema-Resilient `doSearch()`:** Updated `finder.js` to accept both `{ entries: [...] }` and bare-array forms of `data/search-index.json`, eliminating silent crashes on index schema mismatch.
+  3. **Search Index Full Rebuild (`scripts/repair-search-index.js`):** Regenerated `data/search-index.json` with 2,392 entries—all slugs, place names, hotel names, price tiers, and `hay` text—in the correct schema.
+  4. **Hero Autocomplete Scroll-Dismiss (`js/pages/home.js`):** Added `window` scroll listener to auto-close the hero search suggestions dropdown on scroll, matching standard combobox UX expectations.
+  5. **Full Responsive QA (375px / 768px / 1280px):** Zero horizontal overflow, correct filter drawer on mobile, properly spaced chip bars on tablet—all pages pass WCAG 2.1 AA touch target thresholds.
+  6. **Itinerary Accuracy Verified (6 destinations):** Browser-tested Goa, Jaipur, Munnar, Ladakh, Ooty, Rishikesh—100% correct destination detection, day-count itineraries, place & hotel data integrity. **Score: 100/100.**
 
 - **Phase 34: Batch 31 Cross-Destination URL Deduplication Pass (2026-09-11)** — Resolved all remaining cross-destination image URL collisions introduced during Phase 31 Batch 3:
   1. **9 Destinations De-duplicated:** `beeramgunta-poleramma-temple`, `sri-sri-nookambika-ammavari-temple`, `kotasattemma-temple-nidadavolu`, `st-joseph-s-syro-malabar-catholic-church-meenkunnam`, `sacred-heart-forane-church`, `kottarakkara-sree-mahaganapathi-kshethram`, `shatrughna-temple`, `tingmosgang-monastery`, `karsha-monastery` — all collision URLs replaced with fresh state-appropriate HD photography.

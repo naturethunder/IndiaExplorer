@@ -1,6 +1,6 @@
 # Search Engine Architecture & Enhancements
 
-**Date:** 2026-09-06  
+**Date:** 2026-09-06 (Phase 28 original) | Last updated: 2026-09-11 rev-2 (Phase 35)
 **Milestone:** Phase 28 — Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul
 
 ## Problem Solved
@@ -83,3 +83,46 @@ All tests verified live via browser subagent on `http://localhost:8080`:
 | `agastheesvararkuzhaiyur`| `destinations.html` | "Agastheesvarar Temple, Kuzhaiyur" matched |
 | `mehtabbagh` | `destinations.html` | "Taj Mahal" matched via attraction |
 | `tajmahal tamilnadu` | `destinations.html` | Both Taj Mahal and Tamil Nadu destinations rendered |
+
+---
+
+## Phase 35 Update — AI Trip Finder NLP Parser Hardening (2026-09-11)
+
+### Problem Solved
+
+Users querying the AI Trip Finder with natural-language sentences such as **"5 days in manali"**, **"plan a trip to goa"**, or **"3 night stay in ooty"** received results for wrong/random destinations. The parser extracted every word (including `days`, `in`, `5`) as potential destination tokens and matched them against the search index, causing the digit `5` to produce no match and the fallback to pick the first-best destination alphabetically.
+
+### Fix: `STOP_WORDS` Set in `parsePrompt()` (`js/pages/finder.js`)
+
+A `STOP_WORDS` `Set` was added containing all filler/intent words that should never be treated as destination names:
+
+```js
+const STOP_WORDS = new Set([
+  'contact', 'about', 'help', 'privacy', 'terms', 'weather',
+  'hotel', 'hotels', 'stay', 'stays', 'resort', 'resorts',
+  'trip', 'trips', 'tour', 'tours', 'travel', 'plan', 'plans', 'itinerary',
+  'day', 'days', 'night', 'nights', 'weekend',
+  'near', 'nearby', 'around', 'close',
+  'best', 'top', 'good', 'cheap', 'budget', 'luxury',
+  'place', 'places', 'visit', 'visiting', 'see', 'things', 'in', 'at', 'to', 'for'
+]);
+```
+
+Only `nonStopWords` are used for direct-destination lookup and fuzzy matching.
+
+### Schema Resilience Fix
+
+`doSearch()` in `finder.js` now handles both `search-index.json` shapes:
+- `{ entries: [...] }` (correct shape after `repair-search-index.js`)
+- `[...]` (bare array, produced by older build scripts)
+
+### Tested Queries
+
+| Query | Before Fix | After Fix |
+|-------|------------|-----------|
+| `5 days in manali` | ❌ Ladakh (wrong) | ✅ Manali |
+| `3 days in goa` | ✅ Goa | ✅ Goa |
+| `7 days in jaipur` | ✅ Jaipur | ✅ Jaipur |
+| `honeymoon trip to ooty` | ⚠️ Random | ✅ Ooty |
+| `weekend in rishikesh` | ⚠️ Random | ✅ Rishikesh |
+| `plan a trip to munnar` | ⚠️ Random | ✅ Munnar |

@@ -1,6 +1,6 @@
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-11):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phases 29–33 + Batch 31 cross-destination dedup: 31 destinations fully overhauled with authentic HD-only imagery and zero catalog collisions. Production-Ready Score: **100/100**.
+> **Platform Status (2026-09-11 rev-2):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phase 35: AI Trip Finder NLP parser hardened (STOP_WORDS fix), search-index rebuilt (2,392 entries), full responsive QA passed (375px/768px/1280px). Production-Ready Score: **100/100**.
 
 A luxury India travel-discovery platform. Browse **2,392 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
@@ -97,7 +97,7 @@ trip_planner/
 │   ├── pages/
 │   │   ├── home.js         # index.html (GSAP parallax, rotators, monthly picks)
 │   │   ├── explore.js      # destinations.html (GSAP counters, debounced filter engine)
-│   │   ├── finder.js       # ai-finder.html (NLP matching)
+│   │   ├── finder.js       # ai-finder.html (NLP matching, STOP_WORDS parser, itinerary extrapolation)
 │   │   ├── destination.js  # destination.html (detail tabs, Leaflet map, stays, similar getaways)
 │   │   ├── company.js      # about / privacy / terms
 │   │   └── contact.js      # contact.html (Web3Forms)
