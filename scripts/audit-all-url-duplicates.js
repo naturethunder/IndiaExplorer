@@ -6,7 +6,7 @@ const DEST_DIR = path.join(ROOT, 'data', 'destinations');
 const files = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json' && f !== 'search-index.json');
 
 console.log('======================================================================');
-console.log('🔍 FULL-CATALOG DUPLICATE URL AUDIT ACROSS ALL 2,389 DESTINATIONS');
+console.log('🔍 FULL-CATALOG DUPLICATE URL AUDIT ACROSS ALL 2,392 DESTINATIONS');
 console.log('======================================================================\n');
 
 // 1. HERO IMAGE DUPLICATES (Cross-destination)

@@ -1,7 +1,7 @@
 /**
  * deepest-forensic-audit.js
  * 
- * An exhaustive, deep forensic audit across all 2,389 destination JSON files,
+ * An exhaustive, deep forensic audit across all 2,392 destination JSON files,
  * data/destinations/index.json, and data/bulk/*.json.
  */
 

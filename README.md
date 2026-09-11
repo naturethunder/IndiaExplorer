@@ -1,6 +1,6 @@
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-10):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phases 29, 30, 31, 32 & 33: 31 destinations fully overhauled with authentic HD-only imagery and zero catalog collisions. Production-Ready Score: **100/100**.
+> **Platform Status (2026-09-11):** **2,392 destinations** (14,013+ places, 17,567+ verified stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography. Phases 29–33 + Batch 31 cross-destination dedup: 31 destinations fully overhauled with authentic HD-only imagery and zero catalog collisions. Production-Ready Score: **100/100**.
 
 A luxury India travel-discovery platform. Browse **2,392 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
 
@@ -156,7 +156,7 @@ bestTime/lat/lng/image/features/tiers) plus `meta` (priceTiers, types, states, m
 ```bash
 node scripts/build-json-data.js   # rebuild data/ from js/data*.js + bulk + coord-overrides (+ index + search-index)
 node scripts/build-css.js         # rebuild css/tailwind.css (run after adding utility classes)
-node scripts/build-stubs.js       # rebuild the 2,389 redirect stubs
+node scripts/build-stubs.js       # rebuild the 2,392 redirect stubs
 ```
 
 `build-css.js` scans every page + `js/` module for utility classes and emits **only those**

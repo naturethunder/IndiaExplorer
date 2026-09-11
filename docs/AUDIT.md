@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-10** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-11** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,6 +12,32 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro**
 skills, plus three parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
+
+## Addendum — Phase 34: Batch 31 Cross-Destination URL Deduplication Pass (2026-09-11)
+
+Post-Phase-31 cross-destination URL collision resolution across all 9 Batch 3 destinations using region-appropriate HD photography replacement.
+
+### Destinations De-duplicated
+| Destination | Slug | Collision Type | Fix Applied | Status |
+|-------------|------|----------------|-------------|--------|
+| Beeramgunta Poleramma Temple | `beeramgunta-poleramma-temple` | Baseline (no collisions) | Registered as baseline URL set | ✅ 0 cross-dupes |
+| Sri Sri Nookambika Ammavari Temple | `sri-sri-nookambika-ammavari-temple` | Gallery/place URL collisions vs. baseline | AP temple architecture Pexels replacements | ✅ 0 cross-dupes |
+| Kotasattemma Temple, Nidadavolu | `kotasattemma-temple-nidadavolu` | Gallery/place URL collisions | South India temple HD replacements | ✅ 0 cross-dupes |
+| St. Joseph's Syro-Malabar Church | `st-joseph-s-syro-malabar-catholic-church-meenkunnam` | Gallery/place URL collisions | Kerala church heritage Pexels replacements | ✅ 0 cross-dupes |
+| Sacred Heart Forane Church | `sacred-heart-forane-church` | Gallery/place URL collisions | Kerala church/tropical scenery replacements | ✅ 0 cross-dupes |
+| Kottarakkara Sree Mahaganapathi | `kottarakkara-sree-mahaganapathi-kshethram` | Gallery/place URL collisions | Kerala temple architecture replacements | ✅ 0 cross-dupes |
+| Shatrughna Temple | `shatrughna-temple` | Gallery/place URL collisions | Kerala landscape/temple replacements | ✅ 0 cross-dupes |
+| Tingmosgang Monastery | `tingmosgang-monastery` | Gallery/place URL collisions | Ladakh Buddhist monastery/Zanskar valley replacements | ✅ 0 cross-dupes |
+| Karsha Monastery | `karsha-monastery` | Gallery/place URL collisions | Himalayan gompa/prayer flags replacements | ✅ 0 cross-dupes |
+
+### Invariants Verified
+- `heroImage.src === gallery[0].src` & `heroImage.alt === gallery[0].alt` — ✅ All 9 destinations
+- `gallery.length === 5` — ✅ All 9 destinations
+- 0 cross-destination URL collisions against all other 2,383 destinations — ✅ Verified catalog-wide (0 collisions)
+- 0 Wikimedia Commons URLs — ✅ All 9 destinations
+- Subject curation: only region-authentic architecture, landscapes, heritage photography — ✅ All 9 destinations
+
+---
 
 ## Addendum — Phase 33: Multi-Agent HD Photo Overhaul & Subject Curation — Batch 5 (2026-09-10)
 

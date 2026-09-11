@@ -1,7 +1,7 @@
 /**
  * comprehensive-image-quality-audit.js
  * 
- * Deep audit of ALL image URLs across 2,389 destination JSON files.
+ * Deep audit of ALL image URLs across 2,392 destination JSON files.
  * Checks for:
  *   1. Blurry / low-resolution thumbnails (Wikimedia <300px thumbs)
  *   2. Placeholder / dummy images (picsum, placeholder.com, etc.)

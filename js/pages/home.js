@@ -226,7 +226,7 @@ function search(q) {
     customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
   });
 
-  const totalCount = idx.count || summaries.length || 2390;
+  const totalCount = idx.count || summaries.length || 2392;
 
   el.innerHTML = cats.map((c) => {
     const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
@@ -383,6 +383,9 @@ function search(q) {
   document.addEventListener('click', function (e) {
     if (!drop.contains(e.target) && e.target !== input && e.target !== btn) close();
   });
+  window.addEventListener('scroll', function () {
+    if (drop.style.display === 'block') close();
+  }, { passive: true });
 })();
 
 // ─── Best this month — interactive monthly highlight section ──────

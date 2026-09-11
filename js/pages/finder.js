@@ -30,7 +30,8 @@ injectJsonLd(breadcrumbJsonLd([
 const [idx, searchIdx] = await Promise.all([fetchIndex(), fetchSearchIndex()]);
 const SUMMARIES = idx.destinations;
 const { types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
-const SEARCH = new Map(searchIdx.entries.map((e) => [e.slug, e]));
+const searchEntries = Array.isArray(searchIdx) ? searchIdx : (searchIdx && searchIdx.entries ? searchIdx.entries : []);
+const SEARCH = new Map(searchEntries.map((e) => [e.slug, e]));
 const bySlug = new Map(SUMMARIES.map((d) => [d.slug, d]));
 
 let currentUserCoords = null;
@@ -135,6 +136,7 @@ function parsePrompt(raw) {
   // Also support no-space matching for queries like "tajmahal" or "tamilnadu"
   const queryWordsNorm = normalizeSearchWords(text).split(/\s+/).filter(Boolean);
   const queryWordsClean = queryWordsNorm.map(cleanSearchText).filter(Boolean);
+  const queryWords = queryWordsClean;
   const queryClean = cleanSearchText(text);
 
   SUMMARIES.forEach(function (d) {
@@ -243,7 +245,7 @@ function parsePrompt(raw) {
       const title = d.title.toLowerCase();
       const slug = (d.slug || '').toLowerCase();
       // Support partial matching for "near X" queries (ALL words must match)
-      if (queryWords.every(function (word) { return title.includes(word) || slug.includes(word); }) &&
+      if (queryWords.length > 0 && queryWords.every(function (word) { return title.includes(word) || slug.includes(word); }) &&
           (!out.near || d.title.length > out.near.title.length)) {
         out.near = d;
       }

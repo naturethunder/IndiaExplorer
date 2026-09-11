@@ -1,6 +1,6 @@
 /**
  * COMPREHENSIVE REPOSITORY IMAGE AUDIT ENGINE
- * Evaluates all 2,389 destinations against strict requirements:
+ * Evaluates all 2,392 destinations against strict requirements:
  * 1. Hero & Gallery: Exactly 5 original, high-res photos.
  * 2. Nearby Places (topPlaces): Exactly 3 distinct, authentic photos per attraction.
  * 3. Zero Duplicates: 0 global duplicate URLs across the entire repository.
