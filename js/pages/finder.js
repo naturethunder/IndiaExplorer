@@ -131,13 +131,26 @@ function parsePrompt(raw) {
     places: [], brands: [], text: text
   };
 
-  // Direct destination-name match (people often just type a place name)
-  // Support partial/fuzzy matching: ALL query words must appear in title or slug
-  // Also support no-space matching for queries like "tajmahal" or "tamilnadu"
+  // Common intent / filler words that should not be treated as a destination or place name
+  const STOP_WORDS = new Set([
+    'contact', 'about', 'help', 'privacy', 'terms', 'weather',
+    'hotel', 'hotels', 'stay', 'stays', 'resort', 'resorts',
+    'trip', 'trips', 'tour', 'tours', 'travel', 'plan', 'plans', 'itinerary',
+    'day', 'days', 'night', 'nights', 'weekend',
+    'near', 'nearby', 'around', 'close',
+    'best', 'top', 'good', 'cheap', 'budget', 'luxury',
+    'place', 'places', 'visit', 'visiting', 'see', 'things', 'in', 'at', 'to', 'for'
+  ]);
+
+  // Direct destination-name match (handles both standalone queries like 'manali' and sentences like '5 days in manali')
   const queryWordsNorm = normalizeSearchWords(text).split(/\s+/).filter(Boolean);
   const queryWordsClean = queryWordsNorm.map(cleanSearchText).filter(Boolean);
   const queryWords = queryWordsClean;
   const queryClean = cleanSearchText(text);
+  const nonStopWords = queryWordsClean.filter(function (w) { return !STOP_WORDS.has(w); });
+
+  const directDests = [];
+  const fuzzyDests = [];
 
   SUMMARIES.forEach(function (d) {
     const titleClean = cleanSearchText(d.title);
@@ -146,47 +159,63 @@ function parsePrompt(raw) {
     const stateClean = cleanSearchText(d.state);
     const stateNorm = normalizeSearchWords(d.state);
 
-    // Match if ALL query words appear in title, slug or state
-    // OR if clean space-less query matches title, slug, state, or title+state
-    const wordMatch = queryWordsClean.length > 0 && queryWordsClean.every(function (wordClean, idx) {
-      const wordNorm = queryWordsNorm[idx];
-      return titleClean.includes(wordClean) ||
-        titleNorm.includes(wordNorm) ||
-        slugClean.includes(wordClean) ||
-        stateClean.includes(wordClean) ||
-        stateNorm.includes(wordNorm);
-    });
+    // 1. Natural phrase mention (e.g. '5 days in manali', 'trip to goa', 'ooty stay')
+    const directHit = text.indexOf(' ' + titleNorm + ' ') >= 0 ||
+                      text.indexOf(' ' + slugClean + ' ') >= 0 ||
+                      (titleClean.length >= 4 && queryClean.indexOf(titleClean) >= 0);
+    if (directHit) {
+      directDests.push({ slug: d.slug, title: d.title, len: titleClean.length });
+    }
 
-    const noSpaceMatch = queryClean.length >= 2 && (
-      titleClean.includes(queryClean) ||
-      slugClean.includes(queryClean) ||
-      stateClean.includes(queryClean) ||
-      (titleClean + stateClean).includes(queryClean)
-    );
+    // 2. Pure destination search or prefix search (e.g. 'manali', 'taj mahal')
+    if (nonStopWords.length > 0) {
+      const titleWords = titleNorm.split(/\s+/);
+      const allWordsInTitle = nonStopWords.every(function (w) {
+        return titleWords.some(function (tw) { return tw === w || tw.startsWith(w); }) || slugClean.indexOf(w) >= 0;
+      });
+      const noSpaceMatch = queryClean.length >= 3 && (titleClean.indexOf(queryClean) >= 0 || slugClean.indexOf(queryClean) >= 0);
+      if (allWordsInTitle || noSpaceMatch) {
+        fuzzyDests.push({ slug: d.slug, title: d.title, len: titleClean.length });
+      }
+    }
+  });
 
-    if (wordMatch || noSpaceMatch) {
-      out.names.push(d.slug);
+  directDests.sort(function (a, b) { return b.len - a.len; });
+  fuzzyDests.sort(function (a, b) { return b.len - a.len; });
+
+  const destList = directDests.length ? directDests : fuzzyDests;
+  const seenSlugs = new Set();
+  destList.forEach(function (item) {
+    if (!seenSlugs.has(item.slug)) {
+      seenSlugs.add(item.slug);
+      out.names.push(item.slug);
     }
   });
 
   // Attraction / place match — search the precomputed place-name index
-  // Also support partial matching for place names (ALL words must match)
-  // Also support no-space matching for place names
+  const matchedPlaces = [];
   SUMMARIES.forEach(function (d) {
     entryOf(d).placeNames.forEach(function (name) {
-      if (name && name.length >= 2) {
+      if (name && name.length >= 3) {
         const nameNorm = normalizeSearchWords(name);
         const nameClean = cleanSearchText(name);
-        const wordMatch = queryWordsClean.length > 0 && queryWordsClean.every(function (wordClean, idx) {
-          return nameClean.includes(wordClean) || nameNorm.includes(queryWordsNorm[idx]);
-        });
-        const noSpaceMatch = queryClean.length >= 3 && nameClean.includes(queryClean);
-        if (wordMatch || noSpaceMatch) {
-          out.places.push({ dest: d.slug, name: name });
+        const placeDirect = text.indexOf(' ' + nameNorm + ' ') >= 0 || (nameClean.length >= 5 && queryClean.indexOf(nameClean) >= 0);
+        const placeSearched = nonStopWords.length >= 2 && nonStopWords.every(function (w) { return nameClean.indexOf(w) >= 0; });
+        if (placeDirect || placeSearched) {
+          matchedPlaces.push({ dest: d.slug, name: name, len: nameClean.length });
         }
       }
     });
   });
+
+  matchedPlaces.sort(function (a, b) { return b.len - a.len; });
+  matchedPlaces.forEach(function (p) {
+    out.places.push({ dest: p.dest, name: p.name });
+  });
+
+  if (out.names.length === 0 && out.places.length > 0) {
+    out.names.push(out.places[0].dest);
+  }
 
   // Hotel / stay brand match
   HOTEL_BRANDS.forEach(function (b) { if (text.indexOf(' ' + b) >= 0 && out.brands.indexOf(b) < 0) out.brands.push(b); });
