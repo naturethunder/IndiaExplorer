@@ -541,77 +541,87 @@
   ],
   "hotels": [
     {
-      "name": "Nature Camp Daringbadi (Eco Retreat Odisha)",
+      "name": "OTDC Panthanivas (Daringbadi)",
+      "type": "hotel",
+      "tier": "cheapest",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=OTDC%20Panthanivas%20Daringbadi%20Odisha"
+    },
+    {
+      "name": "OTDC Panthanivas Puri",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1400,
+      "priceMax": 2400,
+      "rating": 4.1,
+      "reviews": 2900,
+      "amenities": [
+        "Sea Facing Lawns",
+        "Odisha Tourism Run",
+        "Authentic Dalma & Seafood",
+        "Parking"
+      ],
+      "tags": [
+        "Puri (178 km away)",
+        "State Tourism",
+        "Beach Road Hub"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=OTDC%20Panthanivas%20Puri%20Puri%20Odisha"
+    },
+    {
+      "name": "Toshali Sands Ethnic Village Resort Puri",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 6500,
+      "rating": 4.3,
+      "reviews": 3600,
+      "amenities": [
+        "30 Acres of Greenery",
+        "Balighai Private Beach",
+        "Ayurveda",
+        "Swimming Pool"
+      ],
+      "tags": [
+        "Puri (178 km away)",
+        "Konark Marine Drive",
+        "Odisha Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Toshali%20Sands%20Ethnic%20Village%20Resort%20Puri%20Puri%20Odisha"
+    },
+    {
+      "name": "Mayfair Waves, Puri",
       "type": "resort",
       "tier": "best",
-      "priceMin": 4500,
-      "priceMax": 8500,
-      "rating": 4.8,
-      "reviews": 310,
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.7,
+      "reviews": 4800,
       "amenities": [
-        "Luxury Tents",
-        "Dining",
-        "Campfire",
-        "Pine View"
+        "Direct Golden Beach Access",
+        "Oceanfront Pool",
+        "Samudra Dining",
+        "Spa"
       ],
       "tags": [
-        "Eco Retreat",
-        "Glamping"
+        "Puri (178 km away)",
+        "Chakratirtha Road",
+        "Luxury Beachfront"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nature%20Camp%20Daringbadi%20(Eco%20Retreat%20Odisha)%20Daringbadi%20Odisha"
-    },
-    {
-      "name": "Hotel Snow View",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4200,
-      "rating": 4.4,
-      "reviews": 260,
-      "amenities": [
-        "Restaurant",
-        "Garden",
-        "AC Rooms"
-      ],
-      "tags": [
-        "Govt Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Snow%20View%20Daringbadi%20Odisha"
-    },
-    {
-      "name": "Deomali Eco Cottage Daringbadi",
-      "type": "resort",
-      "tier": "good",
-      "priceMin": 2500,
-      "priceMax": 5000,
-      "rating": 4.6,
-      "reviews": 210,
-      "amenities": [
-        "Eco Cottages",
-        "Dining",
-        "Campfire"
-      ],
-      "tags": [
-        "Eco Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Deomali%20Eco%20Cottage%20Daringbadi%20Daringbadi%20Odisha"
-    },
-    {
-      "name": "Utopia Resort",
-      "type": "resort",
-      "tier": "budget",
-      "priceMin": 1600,
-      "priceMax": 3000,
-      "rating": 4.5,
-      "reviews": 140,
-      "amenities": [
-        "Odia Home Cooking",
-        "Valley View"
-      ],
-      "tags": [
-        "Homestay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Utopia%20Resort%20Daringbadi%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Waves%2C%20Puri%20Puri%20Odisha"
     }
   ],
   "gallery": [

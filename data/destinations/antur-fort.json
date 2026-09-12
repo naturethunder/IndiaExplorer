@@ -242,155 +242,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Antur",
-      "type": "guesthouse",
-      "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.1,
-      "reviews": 313,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Value Stay",
-        "Rajwada"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Antur%20Antur%20Maharashtra"
-    },
-    {
-      "name": "Ginger Royal Retreat",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 503,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Royal%20Retreat%20Antur%20Maharashtra"
-    },
-    {
-      "name": "Treebo Trend Period Property",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 703,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Period%20Property%20Antur%20Maharashtra"
-    },
-    {
-      "name": "Fortune Heritage Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 971,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Heritage%20Hotel%20Antur%20Maharashtra"
-    },
-    {
-      "name": "Antur Sarovar Portico",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3770,
-      "priceMax": 4906,
-      "rating": 4.3,
-      "reviews": 1076,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Antur%20Sarovar%20Portico%20Antur%20Maharashtra"
-    },
-    {
-      "name": "Antur The Fern",
+      "name": "MTDC Holiday Resort (Antur Fort)",
       "type": "resort",
-      "tier": "better",
-      "priceMin": 5866,
-      "priceMax": 6306,
-      "rating": 4.3,
-      "reviews": 1853,
+      "tier": "cheapest",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Business Preferred",
-        "Period Property"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Antur%20The%20Fern%20Antur%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Antur%20Fort%20Maharashtra"
     },
     {
-      "name": "Antur Mahal Palace",
+      "name": "Hotel Green Olive Aurangabad",
+      "type": "hotel",
+      "tier": "cheapest",
+      "priceMin": 950,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 1900,
+      "amenities": [
+        "Vegetarian Restaurant",
+        "AC Rooms",
+        "Free WiFi",
+        "Central Location"
+      ],
+      "tags": [
+        "Chhatrapati Sambhajinagar (62 km away)",
+        "Railway Station Hub",
+        "Budget Traveller Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Green%20Olive%20Aurangabad%20Chhatrapati%20Sambhajinagar%20Maharashtra"
+    },
+    {
+      "name": "MTDC Holiday Resort Aurangabad",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2100,
+      "rating": 4.1,
+      "reviews": 2200,
+      "amenities": [
+        "Govt Tourism Unit",
+        "Garden Restaurant",
+        "Tour Bus Base",
+        "Parking"
+      ],
+      "tags": [
+        "Chhatrapati Sambhajinagar (62 km away)",
+        "Station Road",
+        "Maharashtra State Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Aurangabad%20Chhatrapati%20Sambhajinagar%20Maharashtra"
+    },
+    {
+      "name": "Vivanta Aurangabad",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5500,
+      "priceMax": 9500,
+      "rating": 4.5,
+      "reviews": 3100,
+      "amenities": [
+        "Palace Architecture",
+        "Outdoor Pool",
+        "Fitness Centre",
+        "Garden View"
+      ],
+      "tags": [
+        "Chhatrapati Sambhajinagar (62 km away)",
+        "Rauza Baugh",
+        "Taj Hospitality"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Aurangabad%20Chhatrapati%20Sambhajinagar%20Maharashtra"
+    },
+    {
+      "name": "Welcomhotel by ITC Hotels Rama International Aurangabad",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 7831,
-      "priceMax": 8641,
-      "rating": 4.6,
-      "reviews": 1661,
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.5,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Expansive Lawns",
+        "Outdoor Pool",
         "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Fine Dining"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Manor House"
+        "Chhatrapati Sambhajinagar (62 km away)",
+        "Chikalthana",
+        "Ajanta & Ellora Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Antur%20Mahal%20Palace%20Antur%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Welcomhotel%20by%20ITC%20Hotels%20Rama%20International%20Aurangabad%20Chhatrapati%20Sambhajinagar%20Maharashtra"
     }
   ],
   "restaurants": [],

@@ -541,76 +541,108 @@
   ],
   "hotels": [
     {
-      "name": "Coffee Aroma Resort",
+      "name": "Chembra Peak Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "best",
-      "priceMin": 7500,
-      "priceMax": 16000,
-      "rating": 4.8,
-      "reviews": 650,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Zip-line",
-        "Buffet"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "5-Star Resort"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Coffee%20Aroma%20Resort%20Chembra%20Peak%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chembra%20Peak%20Forest%20Rest%20House%20Kerala"
     },
     {
-      "name": "Green Gates",
+      "name": "Zostel Wayanad",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.5,
+      "reviews": 1900,
+      "amenities": [
+        "Tea Estate Views",
+        "Bonfire",
+        "Common Lounge",
+        "Hiking Tours"
+      ],
+      "tags": [
+        "Wayanad (6 km away)",
+        "Meppadi",
+        "Backpacker Base"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "KTDC Pepper Grove Wayanad",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 2100,
+      "amenities": [
+        "Kerala Tourism Unit",
+        "Restaurant",
+        "Garden",
+        "Sightseeing Desk"
+      ],
+      "tags": [
+        "Wayanad (6 km away)",
+        "Sulthan Bathery",
+        "State Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Pepper%20Grove%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Tranquil Resort Wayanad",
       "type": "resort",
       "tier": "better",
-      "priceMin": 3800,
-      "priceMax": 7500,
-      "rating": 4.7,
-      "reviews": 450,
-      "amenities": [
-        "Tea Garden View",
-        "Pool",
-        "Restaurant"
-      ],
-      "tags": [
-        "Tea Estate Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Green%20Gates%20Chembra%20Peak%20Kerala"
-    },
-    {
-      "name": "Woodlands",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 6000,
-      "priceMax": 12000,
-      "rating": 4.8,
-      "reviews": 310,
-      "amenities": [
-        "Treehouses",
-        "Plantation Walk",
-        "Pool"
-      ],
-      "tags": [
-        "Heritage Plantation"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Woodlands%20Chembra%20Peak%20Kerala"
-    },
-    {
-      "name": "Harithagiri",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4200,
+      "priceMin": 5500,
+      "priceMax": 9500,
       "rating": 4.6,
-      "reviews": 210,
+      "reviews": 1400,
       "amenities": [
-        "Traditional Kerala Food",
-        "Tea Garden Walk"
+        "Coffee Plantation",
+        "Treehouse Suites",
+        "Swimming Pool",
+        "Ayurveda"
       ],
       "tags": [
-        "Homestay"
+        "Wayanad (6 km away)",
+        "Kuppamudi Estate",
+        "Boutique Plantation Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Harithagiri%20Chembra%20Peak%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Tranquil%20Resort%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Vythiri Village Resort Wayanad",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8000,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 4700,
+      "amenities": [
+        "Hanging Bridge",
+        "Artificial Waterfall",
+        "Spa",
+        "Plantation Walks"
+      ],
+      "tags": [
+        "Wayanad (6 km away)",
+        "Vythiri",
+        "Rainforest Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vythiri%20Village%20Resort%20Wayanad%20Wayanad%20Kerala"
     }
   ],
   "gallery": [

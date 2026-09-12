@@ -520,77 +520,66 @@
   ],
   "hotels": [
     {
-      "name": "Hotel Divine",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5500,
-      "priceMax": 11000,
-      "rating": 4.8,
-      "reviews": 520,
-      "amenities": [
-        "Pool",
-        "Fitness Center",
-        "Fine Dining",
-        "Free WiFi"
-      ],
-      "tags": [
-        "Luxury Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Divine%20Dhanushkodi%20Tamil%20Nadu"
-    },
-    {
-      "name": "Dheivanai Lodge",
-      "type": "lodge",
-      "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 7000,
-      "rating": 4.6,
-      "reviews": 410,
-      "amenities": [
-        "Spa",
-        "Vegetarian Restaurant",
-        "Travel Desk"
-      ],
-      "tags": [
-        "Pilgrim Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Dheivanai%20Lodge%20Dhanushkodi%20Tamil%20Nadu"
-    },
-    {
-      "name": "Swami Ramanatha Tourist Home",
+      "name": "TTDC Hotel Tamil Nadu (Dhanushkodi)",
       "type": "guesthouse",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3500,
-      "rating": 4.4,
-      "reviews": 290,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Restaurant",
-        "Parking",
-        "AC Rooms"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Govt Hotel"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Swami%20Ramanatha%20Tourist%20Home%20Dhanushkodi%20Tamil%20Nadu"
+      "url": "https://www.google.com/maps/search/?api=1&query=TTDC%20Hotel%20Tamil%20Nadu%20Dhanushkodi%20Tamil%20Nadu"
     },
     {
-      "name": "Hare Rama Hare Krishna",
-      "type": "homestay",
+      "name": "Hotel Ashoka Rameswaram",
+      "type": "hotel",
       "tier": "budget",
-      "priceMin": 2000,
-      "priceMax": 3800,
-      "rating": 4.5,
-      "reviews": 160,
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 2100,
       "amenities": [
-        "Sea Breeze Balcony",
-        "Home Meals",
-        "Beach Access"
+        "Near Temple West Gate",
+        "AC Rooms",
+        "Travel Desk",
+        "Lift"
       ],
       "tags": [
-        "Beach Homestay"
+        "Rameswaram (17 km away)",
+        "Darshan Walking Distance",
+        "Family Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hare%20Rama%20Hare%20Krishna%20Dhanushkodi%20Tamil%20Nadu"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Ashoka%20Rameswaram%20Rameswaram%20Tamil%20Nadu"
+    },
+    {
+      "name": "Daiwik Hotels Rameswaram",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3400,
+      "priceMax": 5800,
+      "rating": 4.5,
+      "reviews": 4800,
+      "amenities": [
+        "Pilgrim Activity Desk",
+        "Pure Veg Dining",
+        "Spa",
+        "Banquet"
+      ],
+      "tags": [
+        "Rameswaram (17 km away)",
+        "Dedicated Pilgrim Hotel",
+        "Top Rated"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Daiwik%20Hotels%20Rameswaram%20Rameswaram%20Tamil%20Nadu"
     }
   ],
   "gallery": [

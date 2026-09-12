@@ -296,207 +296,87 @@
   ],
   "hotels": [
     {
-      "name": "Binsar Birders Inn",
-      "type": "hotel",
+      "name": "Binsar Eco Tourism & Forest Rest House",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 1500,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Forest%20Rest%20House%20Uttarakhand"
+    },
+    {
+      "name": "KMVN Tourist Rest House Sukhatal",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1400,
       "priceMax": 2400,
       "rating": 4.1,
-      "reviews": 415,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Birders%20Inn%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Binsar Wildlife Camp",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2850,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 481,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Wildlife%20Camp%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Binsar Jungle Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4500,
-      "priceMax": 6750,
-      "rating": 4.1,
-      "reviews": 612,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Tiger Trail"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Jungle%20Lodge%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Binsar Nature Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 9000,
-      "priceMax": 15000,
-      "rating": 4.1,
-      "reviews": 749,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Nature%20Retreat%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Binsar Holiday Inn Express",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2612,
-      "priceMax": 4213,
-      "rating": 4.2,
-      "reviews": 878,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Kumaon Mandal Tourism",
+        "Spacious Lawns",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Family Friendly",
-        "Jungle Lodge"
+        "Nainital (46 km away)",
+        "State Tourism",
+        "Budget Lake Access"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Holiday%20Inn%20Express%20Binsar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=KMVN%20Tourist%20Rest%20House%20Sukhatal%20Nainital%20Uttarakhand"
     },
     {
-      "name": "Holiday Inn Binsar",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5432,
-      "priceMax": 5800,
-      "rating": 4.3,
-      "reviews": 1295,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Binsar%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Binsar Taj Vivanta",
+      "name": "The Manu Maharani Nainital",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11190,
-      "priceMax": 11799,
-      "rating": 4.5,
-      "reviews": 2489,
+      "priceMin": 7500,
+      "priceMax": 14000,
+      "rating": 4.6,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Naini Lake Panorama",
+        "Olive Spa",
+        "Garden Dining",
+        "Shuttle to Mall"
       ],
       "tags": [
-        "Award Winning",
-        "Forest Rest House"
+        "Nainital (46 km away)",
+        "Luxury Hilltop",
+        "Nainital Classic"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Binsar%20Taj%20Vivanta%20Binsar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Manu%20Maharani%20Nainital%20Nainital%20Uttarakhand"
     },
     {
-      "name": "The Taj Binsar",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 13807,
-      "priceMax": 15653,
+      "name": "The Naini Retreat, by Leisure Hotels",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 8000,
+      "priceMax": 16000,
       "rating": 4.7,
-      "reviews": 1006,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Private Pool",
-        "World-class Spa",
+        "Historic Maharaja Residence",
+        "Forest Setting",
         "Fine Dining",
-        "Butler",
-        "Limousine",
-        "Golf",
-        "Helipad"
+        "Bar"
       ],
       "tags": [
-        "Royal Experience",
-        "Wilderness Camp"
+        "Nainital (46 km away)",
+        "Ayarpata Slopes",
+        "Colonial Charm"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Binsar%20Binsar%20Uttarakhand"
-    },
-    {
-      "name": "Alila Binsar Palace",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 42188,
-      "priceMax": 42645,
-      "rating": 4.8,
-      "reviews": 1966,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Private Dining",
-        "Butler",
-        "Yacht",
-        "Cultural Programs",
-        "Wellness Retreat"
-      ],
-      "tags": [
-        "Once in a Lifetime",
-        "Safari Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Alila%20Binsar%20Palace%20Binsar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Naini%20Retreat%2C%20by%20Leisure%20Hotels%20Nainital%20Uttarakhand"
     }
   ],
   "restaurants": [],

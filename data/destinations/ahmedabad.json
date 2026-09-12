@@ -297,158 +297,108 @@
   ],
   "hotels": [
     {
-      "name": "Ahmedabad Backpackers",
-      "type": "hostel",
+      "name": "TCGL Toran Tourist Complex (Ahmedabad)",
+      "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 1000,
+      "priceMin": 850,
       "priceMax": 1600,
       "rating": 4.1,
-      "reviews": 234,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Backpackers%20Ahmedabad%20Gujarat"
-    },
-    {
-      "name": "OYO Townhouse Ahmedabad",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1900,
-      "priceMax": 2700,
-      "rating": 4.1,
-      "reviews": 716,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Ahmedabad%20Ahmedabad%20Gujarat"
-    },
-    {
-      "name": "Ahmedabad Ginger",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3000,
-      "priceMax": 4500,
-      "rating": 4,
-      "reviews": 387,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Ginger%20Ahmedabad%20Gujarat"
-    },
-    {
-      "name": "Ahmedabad Fairfield by Marriott",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 6000,
-      "priceMax": 10000,
-      "rating": 4.1,
-      "reviews": 1125,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Fairfield%20by%20Marriott%20Ahmedabad%20Gujarat"
-    },
-    {
-      "name": "Ahmedabad Period Property",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3860,
-      "priceMax": 5835,
-      "rating": 4.1,
-      "reviews": 379,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Haveli Stay"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Period%20Property%20Ahmedabad%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=TCGL%20Toran%20Tourist%20Complex%20Ahmedabad%20Gujarat"
     },
     {
-      "name": "Ahmedabad Holiday Inn",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 4518,
-      "priceMax": 5694,
-      "rating": 4.5,
-      "reviews": 510,
+      "name": "Hotel Toran Gandhi Ashram (TCGL)",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1100,
+      "priceMax": 1900,
+      "rating": 4.1,
+      "reviews": 1800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Opposite Sabarmati Ashram",
+        "Govt Run",
+        "Gujarati Canteen",
+        "Quiet Gardens"
       ],
       "tags": [
-        "Top Amenities",
-        "Heritage Hotel"
+        "Town Centre",
+        "State Tourism",
+        "Sabarmati Riverfront"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ahmedabad%20Holiday%20Inn%20Ahmedabad%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Toran%20Gandhi%20Ashram%20(TCGL)%20Ahmedabad%20Gujarat"
     },
     {
-      "name": "Hyatt Regency Palace Hotel",
+      "name": "Lemon Tree Hotel, Ahmedabad",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2800,
+      "priceMax": 4600,
+      "rating": 4.3,
+      "reviews": 3200,
+      "amenities": [
+        "Citrus Cafe",
+        "Gym",
+        "Free WiFi",
+        "Central AC"
+      ],
+      "tags": [
+        "Town Centre",
+        "Navrangpura Hub",
+        "Reliable Comfort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Hotel%2C%20Ahmedabad%20Ahmedabad%20Gujarat"
+    },
+    {
+      "name": "The House of MG - Heritage Hotel",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 7000,
+      "priceMax": 14000,
+      "rating": 4.7,
+      "reviews": 4600,
+      "amenities": [
+        "1924 Textile Mansion",
+        "Agashiye Rooftop Gujarati Thali",
+        "Indoor Pool",
+        "Lotus Spa"
+      ],
+      "tags": [
+        "Town Centre",
+        "Old Ahmedabad Heritage",
+        "Culinary Landmark"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20House%20of%20MG%20-%20Heritage%20Hotel%20Ahmedabad%20Gujarat"
+    },
+    {
+      "name": "ITC Narmada, a Luxury Collection Hotel, Ahmedabad",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8180,
-      "priceMax": 9238,
-      "rating": 4.6,
-      "reviews": 1511,
+      "priceMin": 8500,
+      "priceMax": 17000,
+      "rating": 4.8,
+      "reviews": 3900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Stepwell Architecture",
+        "Kaya Kalp Spa",
+        "Peshawri Dining",
+        "Executive Lounge"
       ],
       "tags": [
-        "Luxury Experience",
-        "Mahal Palace"
+        "Town Centre",
+        "Judges Bunglow Road",
+        "Gujarat Modern Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Palace%20Hotel%20Ahmedabad%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Narmada%2C%20a%20Luxury%20Collection%20Hotel%2C%20Ahmedabad%20Ahmedabad%20Gujarat"
     }
   ],
   "restaurants": [],

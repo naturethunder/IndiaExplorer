@@ -1091,6 +1091,17 @@ body.dest-immersive .border-b.border-gray-100 {
 }
 
 /* ─── BUTTONS ───────────────────────────────────────────── */
+/* UI/UX Pro Max: Minimum 44x44px touch target standard (Apple HIG / Material Design) */
+body.dest-immersive .btn,
+body.dest-immersive .dest-quick-pill,
+body.dest-immersive .dest-filter-btn,
+body.dest-immersive .tab-btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body.dest-immersive .btn.btn-primary {
   font-family: 'Jost', sans-serif;
   font-weight: 600;

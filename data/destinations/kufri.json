@@ -296,222 +296,108 @@
   ],
   "hotels": [
     {
-      "name": "Treebo Kufri",
+      "name": "HPTDC Tourist Inn (Kufri)",
       "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 1300,
-      "priceMax": 2100,
-      "rating": 4,
-      "reviews": 124,
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Mountain Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Kufri%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Kufri Highland Resort",
-      "type": "guesthouse",
-      "tier": "cheapest",
-      "priceMin": 2450,
-      "priceMax": 3500,
-      "rating": 4,
-      "reviews": 331,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Pine Grove"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kufri%20Highland%20Resort%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "FabHotels Prime Hilltop Retreat",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3900,
-      "priceMax": 5850,
-      "rating": 4.2,
-      "reviews": 268,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Pine Grove"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Hilltop%20Retreat%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Ginger Kufri",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7800,
-      "priceMax": 13000,
-      "rating": 4,
-      "reviews": 792,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Hilltop Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Kufri%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Keys Select Hilltop Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2522,
-      "priceMax": 3110,
-      "rating": 4.4,
-      "reviews": 931,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Mist Haven"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Hilltop%20Retreat%20Kufri%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Tourist%20Inn%20Kufri%20Himachal%20Pradesh"
     },
     {
-      "name": "Kufri Summit View",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3093,
-      "priceMax": 4924,
-      "rating": 4.1,
-      "reviews": 694,
+      "name": "Zostel Shimla",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 750,
+      "priceMax": 1500,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Valley View Terrace",
+        "Cozy Common Rooms",
+        "Board Games",
+        "WiFi"
       ],
       "tags": [
-        "Family Friendly",
-        "Ridge Resort"
+        "Shimla (9 km away)",
+        "Backpacker Choice",
+        "Social Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kufri%20Summit%20View%20Kufri%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Novotel Kufri",
+      "name": "HPTDC Hotel Peterhof",
+      "type": "heritage",
+      "tier": "good",
+      "priceMin": 2600,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 3200,
+      "amenities": [
+        "Viceregal Heritage",
+        "Lush Lawns",
+        "Restaurant",
+        "Free Parking"
+      ],
+      "tags": [
+        "Shimla (9 km away)",
+        "State Heritage",
+        "Historic Grounds"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Hotel%20Peterhof%20Shimla%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Hotel Combermere Shimla",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5696,
-      "priceMax": 6933,
-      "rating": 4.3,
-      "reviews": 1036,
+      "priceMin": 4500,
+      "priceMax": 7800,
+      "rating": 4.4,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Private Passenger Lift to Mall Road",
+        "Gym",
+        "Nightclub",
+        "Billiards"
       ],
       "tags": [
-        "Business Preferred",
-        "Mist Haven"
+        "Shimla (9 km away)",
+        "The Mall Access",
+        "Prime Location"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Kufri%20Kufri%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Combermere%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Kufri Hilton",
-      "type": "hotel",
+      "name": "The Oberoi Cecil, Shimla",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 8592,
-      "priceMax": 10277,
-      "rating": 4.5,
-      "reviews": 2628,
+      "priceMin": 16000,
+      "priceMax": 30000,
+      "rating": 4.8,
+      "reviews": 4900,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Colonial Ballroom",
+        "Indoor Heated Pool",
+        "Oberoi Spa",
+        "Fine Dining"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Summit View"
+        "Shimla (9 km away)",
+        "Historic 1884 Luxury",
+        "Chaura Maidan"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kufri%20Hilton%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Kufri The Gateway",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 10268,
-      "priceMax": 12030,
-      "rating": 4.5,
-      "reviews": 1289,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kufri%20The%20Gateway%20Kufri%20Himachal%20Pradesh"
-    },
-    {
-      "name": "The ITC Kufri",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 14005,
-      "priceMax": 15338,
-      "rating": 4.7,
-      "reviews": 890,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
-      ],
-      "tags": [
-        "Iconic Luxury",
-        "Ridge Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20ITC%20Kufri%20Kufri%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Cecil%2C%20Shimla%20Shimla%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],

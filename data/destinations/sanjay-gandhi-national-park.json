@@ -422,203 +422,87 @@
   ],
   "hotels": [
     {
-      "name": "FabHotels Sanjay Gandhi",
-      "type": "hotel",
+      "name": "Sanjay Gandhi National Park Eco Tourism & Forest Rest House",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 3.9,
-      "reviews": 261,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Budget Friendly",
-        "Wilderness Camp"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Sanjay%20Gandhi%20Sanjay%20Gandhi%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sanjay%20Gandhi%20National%20Park%20Forest%20Rest%20House%20Maharashtra"
     },
     {
-      "name": "Treebo Trend Sanjay Gandhi",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.1,
-      "reviews": 450,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Forest Rest House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Sanjay%20Gandhi%20Sanjay%20Gandhi%20Maharashtra"
-    },
-    {
-      "name": "FabHotels Prime Safari Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4,
-      "reviews": 365,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Wilderness Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Safari%20Lodge%20Sanjay%20Gandhi%20Maharashtra"
-    },
-    {
-      "name": "Holiday Inn Express Sanjay Gandhi",
+      "name": "Hotel Suba Palace Mumbai",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.2,
-      "reviews": 1182,
+      "priceMin": 3500,
+      "priceMax": 5800,
+      "rating": 4.4,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
+        "Near Gateway of India",
+        "Buffet Breakfast",
+        "Modern AC Rooms",
+        "WiFi"
       ],
       "tags": [
-        "Family Friendly",
-        "Safari Lodge"
+        "Mumbai (37 km away)",
+        "Colaba Hub",
+        "Value Comfort"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Sanjay%20Gandhi%20Sanjay%20Gandhi%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suba%20Palace%20Mumbai%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Sanjay Gandhi Eco Lodge",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3992,
-      "priceMax": 4549,
-      "rating": 4.2,
-      "reviews": 504,
+      "name": "The Taj Mahal Palace, Mumbai",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 22000,
+      "priceMax": 55000,
+      "rating": 4.9,
+      "reviews": 9800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Gateway of India Oceanfront",
+        "Historic 1903 Grandeur",
+        "Wasabi by Morimoto",
+        "Jiva Spa"
       ],
       "tags": [
-        "Family Friendly",
-        "Wilderness Camp"
+        "Mumbai (37 km away)",
+        "Colaba Waterfront",
+        "India's Most Iconic Landmark"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sanjay%20Gandhi%20Eco%20Lodge%20Sanjay%20Gandhi%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Mahal%20Palace%2C%20Mumbai%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Sanjay Gandhi Wildlife Camp",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6374,
-      "priceMax": 8344,
-      "rating": 4.3,
-      "reviews": 419,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Eco Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sanjay%20Gandhi%20Wildlife%20Camp%20Sanjay%20Gandhi%20Maharashtra"
-    },
-    {
-      "name": "Sanjay Gandhi Vivanta",
+      "name": "Trident Nariman Point, Mumbai",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11064,
-      "priceMax": 12246,
-      "rating": 4.4,
-      "reviews": 2480,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.7,
+      "reviews": 7800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Marine Drive Queen's Necklace View",
+        "Outdoor Pool",
+        "Frangipani Mediterranean",
+        "Spa"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Eco Lodge"
+        "Mumbai (37 km away)",
+        "Marine Drive",
+        "Oberoi Group"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sanjay%20Gandhi%20Vivanta%20Sanjay%20Gandhi%20Maharashtra"
-    },
-    {
-      "name": "Grand Hyatt Sanjay Gandhi Resort & Spa",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 15936,
-      "priceMax": 16798,
-      "rating": 4.6,
-      "reviews": 3769,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "World Class",
-        "Wilderness Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Grand%20Hyatt%20Sanjay%20Gandhi%20Resort%20%26%20Spa%20Sanjay%20Gandhi%20Maharashtra"
-    },
-    {
-      "name": "Sanjay Gandhi Oberoi Rajvilas",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 28898,
-      "priceMax": 30267,
-      "rating": 4.8,
-      "reviews": 375,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
-      ],
-      "tags": [
-        "Once in a Lifetime",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sanjay%20Gandhi%20Oberoi%20Rajvilas%20Sanjay%20Gandhi%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Trident%20Nariman%20Point%2C%20Mumbai%20Mumbai%20Maharashtra"
     }
   ],
   "restaurants": [],

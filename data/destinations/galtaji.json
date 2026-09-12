@@ -422,156 +422,129 @@
   ],
   "hotels": [
     {
-      "name": "Galtaji Backpackers",
+      "name": "Galtaji Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Galtaji%20Yatri%20Nivas%20Rajasthan"
+    },
+    {
+      "name": "Zostel Jaipur",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
+      ],
+      "tags": [
+        "Jaipur (7 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "RTDC Hotel Teej Jaipur",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4,
-      "reviews": 217,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
+        "Parking"
       ],
       "tags": [
-        "Budget Friendly",
-        "Sanctum Stay"
+        "Jaipur (7 km away)",
+        "State Tourism",
+        "Collectorate Circle"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Galtaji%20Backpackers%20Galtaji%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "OYO Townhouse Krishna Kunj",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 412,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Temple View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Krishna%20Kunj%20Galtaji%20Rajasthan"
-    },
-    {
-      "name": "Treebo Trend Galtaji",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 485,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Galtaji%20Galtaji%20Rajasthan"
-    },
-    {
-      "name": "Galtaji Sarovar Portico",
-      "type": "hotel",
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 650,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Travel Desk"
       ],
       "tags": [
-        "Comfort Plus",
-        "Sanctum Stay"
+        "Jaipur (7 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Galtaji%20Sarovar%20Portico%20Galtaji%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Galtaji Bhakti Residency",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3891,
-      "priceMax": 4269,
-      "rating": 4.3,
-      "reviews": 988,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Family Friendly",
-        "Shiva Sadan"
+        "Jaipur (7 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Galtaji%20Bhakti%20Residency%20Galtaji%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Hilton Garden Inn Devotee Inn",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6662,
-      "priceMax": 8050,
-      "rating": 4.4,
-      "reviews": 1918,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Devotee%20Inn%20Galtaji%20Rajasthan"
-    },
-    {
-      "name": "Sheraton Devotee Inn",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8336,
-      "priceMax": 9181,
-      "rating": 4.5,
-      "reviews": 1909,
+      "priceMin": 7000,
+      "priceMax": 15000,
+      "rating": 4.6,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Yatri Nivas"
+        "Jaipur (7 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Devotee%20Inn%20Galtaji%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],

@@ -298,204 +298,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Wilderness Camp",
+      "name": "Bandipur Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20Forest%20Rest%20House%20Karnataka"
+    },
+    {
+      "name": "Hotel Roopa Mysuru",
       "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4.1,
-      "reviews": 195,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Forest Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Wilderness%20Camp%20Bandipur%20Karnataka"
-    },
-    {
-      "name": "FabHotels Prime Bandipur",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.3,
-      "reviews": 326,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Bandipur%20Bandipur%20Karnataka"
-    },
-    {
-      "name": "Bandipur Ginger",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
+      "priceMin": 900,
+      "priceMax": 1600,
       "rating": 4,
-      "reviews": 593,
+      "reviews": 3100,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
+        "Rooftop Restaurant",
+        "AC Rooms",
         "Travel Desk",
-        "Laundry"
+        "City View"
       ],
       "tags": [
-        "Good Value",
-        "Birders Inn"
+        "Mysuru (70 km away)",
+        "BN Road",
+        "Budget Pilgrim Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20Ginger%20Bandipur%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Roopa%20Mysuru%20Mysuru%20Karnataka"
     },
     {
-      "name": "Bandipur Nature Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
+      "name": "KSTDC Hotel Mayura Hoysala Mysuru",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1300,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 858,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Govt Tourism Unit",
+        "Restaurant",
+        "Lush Lawns",
+        "Tour Booking"
       ],
       "tags": [
-        "Family Friendly",
-        "Wildlife Camp"
+        "Mysuru (70 km away)",
+        "Jhansi Lakshmibai Rd",
+        "Karnataka State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20Nature%20Retreat%20Bandipur%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=KSTDC%20Hotel%20Mayura%20Hoysala%20Mysuru%20Mysuru%20Karnataka"
     },
     {
-      "name": "Bandipur River View Camp",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3227,
-      "priceMax": 4469,
-      "rating": 4.3,
-      "reviews": 897,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Forest Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20River%20View%20Camp%20Bandipur%20Karnataka"
-    },
-    {
-      "name": "Bandipur Safari Lodge",
+      "name": "Radisson Blu Plaza Hotel Mysore",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5692,
-      "priceMax": 6216,
+      "priceMin": 5500,
+      "priceMax": 9500,
       "rating": 4.5,
-      "reviews": 1548,
+      "reviews": 4900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Chamundi View",
+        "Outdoor Pool",
         "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Fitness Centre"
       ],
       "tags": [
-        "Premium Stay",
-        "Jungle Lodge"
+        "Mysuru (70 km away)",
+        "Near Mysore Palace",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20Safari%20Lodge%20Bandipur%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Radisson%20Blu%20Plaza%20Hotel%20Mysore%20Mysuru%20Karnataka"
     },
     {
-      "name": "Bandipur Hyatt Regency",
-      "type": "hotel",
+      "name": "Lalitha Mahal Palace Hotel Mysuru",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 10313,
-      "priceMax": 10746,
-      "rating": 4.4,
-      "reviews": 1727,
+      "priceMin": 7500,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Historic Royal Palace",
+        "Italian Marble",
+        "Royal Ballroom",
+        "Swimming Pool"
       ],
       "tags": [
-        "Award Winning",
-        "Nature Retreat"
+        "Mysuru (70 km away)",
+        "Chamundi Hills Base",
+        "Royal Heritage Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bandipur%20Hyatt%20Regency%20Bandipur%20Karnataka"
-    },
-    {
-      "name": "The Oberoi Bandipur Resort & Spa",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 21321,
-      "priceMax": 22601,
-      "rating": 4.7,
-      "reviews": 2633,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool",
-        "World-class Spa",
-        "Fine Dining",
-        "Butler",
-        "Limousine",
-        "Golf",
-        "Helipad"
-      ],
-      "tags": [
-        "World Class",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Bandipur%20Resort%20%26%20Spa%20Bandipur%20Karnataka"
-    },
-    {
-      "name": "Oberoi Rajvilas Forest Camp",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 50541,
-      "priceMax": 52232,
-      "rating": 4.8,
-      "reviews": 1299,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Private Dining",
-        "Butler",
-        "Yacht",
-        "Cultural Programs",
-        "Wellness Retreat"
-      ],
-      "tags": [
-        "Ultra Luxury",
-        "Safari Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Rajvilas%20Forest%20Camp%20Bandipur%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lalitha%20Mahal%20Palace%20Hotel%20Mysuru%20Mysuru%20Karnataka"
     }
   ],
   "restaurants": [],

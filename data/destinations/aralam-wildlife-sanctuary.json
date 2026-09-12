@@ -421,202 +421,108 @@
   ],
   "hotels": [
     {
-      "name": "Aralam Wildlife Camp",
-      "type": "guesthouse",
+      "name": "Aralam Wildlife Sanctuary Eco Tourism & Forest Rest House",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
+      "priceMin": 800,
+      "priceMax": 1600,
       "rating": 4.2,
-      "reviews": 382,
+      "reviews": 540,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Value Stay",
-        "Wildlife Camp"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Wildlife%20Camp%20Aralam%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Wildlife%20Sanctuary%20Forest%20Rest%20House%20Kerala"
     },
     {
-      "name": "Aralam Treebo Trend",
-      "type": "hotel",
+      "name": "Zostel Wayanad",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.5,
+      "reviews": 1900,
+      "amenities": [
+        "Tea Estate Views",
+        "Bonfire",
+        "Common Lounge",
+        "Hiking Tours"
+      ],
+      "tags": [
+        "Wayanad (37 km away)",
+        "Meppadi",
+        "Backpacker Base"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "KTDC Pepper Grove Wayanad",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.3,
-      "reviews": 490,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Treebo%20Trend%20Aralam%20Kerala"
-    },
-    {
-      "name": "Aralam Birders Inn",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4,
-      "reviews": 699,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Safari Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Birders%20Inn%20Aralam%20Kerala"
-    },
-    {
-      "name": "Aralam Nature Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 847,
+      "reviews": 2100,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Kerala Tourism Unit",
+        "Restaurant",
+        "Garden",
+        "Sightseeing Desk"
       ],
       "tags": [
-        "Well Rated",
-        "Wilderness Camp"
+        "Wayanad (37 km away)",
+        "Sulthan Bathery",
+        "State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Nature%20Retreat%20Aralam%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Pepper%20Grove%20Wayanad%20Wayanad%20Kerala"
     },
     {
-      "name": "Fairfield by Marriott Birders Inn",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2843,
-      "priceMax": 4451,
-      "rating": 4.2,
-      "reviews": 478,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Forest Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Birders%20Inn%20Aralam%20Kerala"
-    },
-    {
-      "name": "Aralam The Fern",
+      "name": "Tranquil Resort Wayanad",
       "type": "resort",
       "tier": "better",
-      "priceMin": 6700,
-      "priceMax": 8376,
-      "rating": 4.4,
-      "reviews": 1331,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20The%20Fern%20Aralam%20Kerala"
-    },
-    {
-      "name": "The Gateway Jungle Lodge",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8859,
-      "priceMax": 9184,
-      "rating": 4.4,
-      "reviews": 843,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Award Winning",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Jungle%20Lodge%20Aralam%20Kerala"
-    },
-    {
-      "name": "Aralam Taj",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 15901,
-      "priceMax": 17837,
-      "rating": 4.5,
-      "reviews": 2430,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
-      ],
-      "tags": [
-        "Royal Experience",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aralam%20Taj%20Aralam%20Kerala"
-    },
-    {
-      "name": "Leela Palace Aralam Palace",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 25406,
-      "priceMax": 25973,
+      "priceMin": 5500,
+      "priceMax": 9500,
       "rating": 4.6,
-      "reviews": 1538,
+      "reviews": 1400,
       "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
+        "Coffee Plantation",
+        "Treehouse Suites",
+        "Swimming Pool",
+        "Ayurveda"
       ],
       "tags": [
-        "Once in a Lifetime",
-        "Birders Inn"
+        "Wayanad (37 km away)",
+        "Kuppamudi Estate",
+        "Boutique Plantation Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Leela%20Palace%20Aralam%20Palace%20Aralam%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Tranquil%20Resort%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Vythiri Village Resort Wayanad",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8000,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 4700,
+      "amenities": [
+        "Hanging Bridge",
+        "Artificial Waterfall",
+        "Spa",
+        "Plantation Walks"
+      ],
+      "tags": [
+        "Wayanad (37 km away)",
+        "Vythiri",
+        "Rainforest Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vythiri%20Village%20Resort%20Wayanad%20Wayanad%20Kerala"
     }
   ],
   "restaurants": [],

@@ -320,203 +320,108 @@
   ],
   "hotels": [
     {
-      "name": "FabHotels Tansa",
+      "name": "Tansa Wildlife Sanctuary Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Tansa%20Wildlife%20Sanctuary%20Forest%20Rest%20House%20Maharashtra"
+    },
+    {
+      "name": "Hotel Panchavati Yatri Nashik",
       "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 3.9,
-      "reviews": 147,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Wilderness Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Tansa%20Tansa%20Maharashtra"
-    },
-    {
-      "name": "OYO Townhouse Tansa",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
+      "priceMin": 850,
+      "priceMax": 1500,
       "rating": 4,
-      "reviews": 239,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
+        "Pure Veg Restaurant",
+        "Pilgrim Assistance",
+        "AC Rooms",
+        "24h Hot Water"
       ],
       "tags": [
-        "Smart Choice",
-        "Wildlife Camp"
+        "Nashik (74 km away)",
+        "Vakil Wadi",
+        "Godavari Ghat & Pilgrim Choice"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Tansa%20Tansa%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Panchavati%20Yatri%20Nashik%20Nashik%20Maharashtra"
     },
     {
-      "name": "Ibis Budget Tansa",
-      "type": "hotel",
+      "name": "MTDC Grape Park Resort Nashik",
+      "type": "resort",
       "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
+      "priceMin": 1400,
+      "priceMax": 2500,
       "rating": 4.2,
-      "reviews": 202,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
+        "Gangapur Dam View",
+        "Water Sports",
+        "Garden Restaurant",
+        "Maharashtra Tourism"
       ],
       "tags": [
-        "Good Value",
-        "Wilderness Camp"
+        "Nashik (74 km away)",
+        "Gangapur Dam",
+        "State Tourism Wine Resort"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Tansa%20Tansa%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Grape%20Park%20Resort%20Nashik%20Nashik%20Maharashtra"
     },
     {
-      "name": "Tansa Ginger",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.2,
-      "reviews": 528,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tansa%20Ginger%20Tansa%20Maharashtra"
-    },
-    {
-      "name": "Tansa Lemon Tree",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3020,
-      "priceMax": 4417,
-      "rating": 4.3,
-      "reviews": 1082,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Wilderness Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tansa%20Lemon%20Tree%20Tansa%20Maharashtra"
-    },
-    {
-      "name": "Tansa Hyatt Place",
+      "name": "Courtyard by Marriott Nashik",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 6879,
-      "priceMax": 8320,
-      "rating": 4.3,
-      "reviews": 511,
+      "priceMin": 5000,
+      "priceMax": 9000,
+      "rating": 4.5,
+      "reviews": 3200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Rooftop Pool",
+        "All Day Dining",
+        "Fitness Centre",
+        "Wine Tours"
       ],
       "tags": [
-        "Top Amenities",
-        "Tiger Trail"
+        "Nashik (74 km away)",
+        "Mumbai Naka",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tansa%20Hyatt%20Place%20Tansa%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Nashik%20Nashik%20Maharashtra"
     },
     {
-      "name": "Le Méridien Tansa",
+      "name": "The Gateway Hotel Ambad Nashik",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 9517,
-      "priceMax": 10191,
-      "rating": 4.4,
-      "reviews": 3000,
+      "priceMin": 7000,
+      "priceMax": 13000,
+      "rating": 4.6,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "11-acre Gardens",
+        "Swimming Pool",
         "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Fine Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Safari Lodge"
+        "Nashik (74 km away)",
+        "Ambad MIDC",
+        "Taj Hospitality"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Tansa%20Tansa%20Maharashtra"
-    },
-    {
-      "name": "The Oberoi Tansa Palace",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 17876,
-      "priceMax": 19372,
-      "rating": 4.5,
-      "reviews": 1741,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool",
-        "World-class Spa",
-        "Fine Dining",
-        "Butler",
-        "Limousine",
-        "Golf",
-        "Helipad"
-      ],
-      "tags": [
-        "World Class",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Tansa%20Palace%20Tansa%20Maharashtra"
-    },
-    {
-      "name": "Oberoi Rajvilas Tansa Resort & Spa",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 54659,
-      "priceMax": 56277,
-      "rating": 4.8,
-      "reviews": 1385,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Private Dining",
-        "Butler",
-        "Yacht",
-        "Cultural Programs",
-        "Wellness Retreat"
-      ],
-      "tags": [
-        "Exclusive",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Rajvilas%20Tansa%20Resort%20%26%20Spa%20Tansa%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Hotel%20Ambad%20Nashik%20Nashik%20Maharashtra"
     }
   ],
   "restaurants": [],

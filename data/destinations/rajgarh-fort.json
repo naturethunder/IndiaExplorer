@@ -272,155 +272,129 @@
   ],
   "hotels": [
     {
-      "name": "Rajgarh Royal Retreat",
-      "type": "guesthouse",
+      "name": "RTDC Hotel Tourist Bungalow (Rajgarh Fort)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
+      "priceMax": 1700,
       "rating": 4.1,
-      "reviews": 476,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Value Stay",
-        "Royal Retreat"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Rajgarh%20Royal%20Retreat%20Rajgarh%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Tourist%20Bungalow%20Rajgarh%20Fort%20Rajasthan"
     },
     {
-      "name": "Rajgarh Manor House",
+      "name": "Zostel Jaipur",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
+      ],
+      "tags": [
+        "Jaipur (89 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "RTDC Hotel Teej Jaipur",
       "type": "hotel",
       "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.1,
-      "reviews": 416,
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
+        "Parking"
       ],
       "tags": [
-        "Good Value",
-        "Heritage Hotel"
+        "Jaipur (89 km away)",
+        "State Tourism",
+        "Collectorate Circle"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Rajgarh%20Manor%20House%20Rajgarh%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Treebo Trend Manor House",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 708,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Manor%20House%20Rajgarh%20Rajasthan"
-    },
-    {
-      "name": "Ginger Legacy Hotel",
-      "type": "hotel",
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 458,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Travel Desk"
       ],
       "tags": [
-        "Family Friendly",
-        "Period Property"
+        "Jaipur (89 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Legacy%20Hotel%20Rajgarh%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Lemon Tree Legacy Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2799,
-      "priceMax": 3397,
-      "rating": 4.3,
-      "reviews": 880,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Well Rated",
-        "Palace Hotel"
+        "Jaipur (89 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Legacy%20Hotel%20Rajgarh%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Courtyard by Marriott Rajgarh",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6228,
-      "priceMax": 7166,
-      "rating": 4.4,
-      "reviews": 1196,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Rajgarh%20Rajgarh%20Rajasthan"
-    },
-    {
-      "name": "Rajgarh Mahal Palace",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10191,
-      "priceMax": 11105,
-      "rating": 4.5,
-      "reviews": 2506,
+      "priceMin": 7000,
+      "priceMax": 15000,
+      "rating": 4.6,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Award Winning",
-        "Palace Hotel"
+        "Jaipur (89 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Rajgarh%20Mahal%20Palace%20Rajgarh%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],

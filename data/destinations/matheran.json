@@ -301,221 +301,66 @@
   ],
   "hotels": [
     {
-      "name": "Matheran FabHotels",
-      "type": "hotel",
+      "name": "MTDC Holiday Resort (Matheran)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 1300,
-      "priceMax": 2100,
-      "rating": 3.9,
-      "reviews": 319,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Value Stay",
-        "Pine Grove"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20FabHotels%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Matheran Ridge Resort",
-      "type": "hotel",
-      "tier": "cheapest",
-      "priceMin": 2450,
-      "priceMax": 3500,
-      "rating": 3.9,
-      "reviews": 371,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Mountain Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20Ridge%20Resort%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Zostel Plus Matheran",
-      "type": "hostel",
-      "tier": "budget",
-      "priceMin": 3900,
-      "priceMax": 5850,
-      "rating": 4,
-      "reviews": 556,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Summit View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Matheran%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Matheran Hotel Royal Orchid",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7800,
-      "priceMax": 13000,
-      "rating": 4.2,
-      "reviews": 290,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Summit View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20Hotel%20Royal%20Orchid%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Matheran Keys Select",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3590,
-      "priceMax": 4300,
+      "priceMin": 1100,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 423,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Valley View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20Keys%20Select%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Matheran Summit View",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3758,
-      "priceMax": 4502,
-      "rating": 4.3,
-      "reviews": 873,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Peak Stay"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20Summit%20View%20Matheran%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Matheran%20Maharashtra"
     },
     {
-      "name": "Hyatt Place Pine Grove",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5734,
-      "priceMax": 6205,
-      "rating": 4.5,
-      "reviews": 872,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Ridge Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Pine%20Grove%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Hilton Ridge Resort",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8286,
-      "priceMax": 9133,
-      "rating": 4.4,
-      "reviews": 1573,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Ridge%20Resort%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "Matheran Pine Grove",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 9209,
-      "priceMax": 10086,
-      "rating": 4.4,
-      "reviews": 1127,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Matheran%20Pine%20Grove%20Matheran%20Maharashtra"
-    },
-    {
-      "name": "The Taj Matheran",
+      "name": "Fariyas Resort Lonavala",
       "type": "resort",
-      "tier": "luxury",
-      "priceMin": 15483,
-      "priceMax": 17188,
+      "tier": "better",
+      "priceMin": 6500,
+      "priceMax": 12000,
       "rating": 4.5,
-      "reviews": 1032,
+      "reviews": 4800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
+        "Wild Water Waterpark On-site",
+        "Frangipani Dining",
+        "Indoor Heated Pool",
+        "Spa"
       ],
       "tags": [
-        "World Class",
-        "Valley View"
+        "Lonavala (30 km away)",
+        "Frichley Hills",
+        "Family Favorite"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Matheran%20Matheran%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fariyas%20Resort%20Lonavala%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "The Machan - Treehouse Resort",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 14000,
+      "priceMax": 28000,
+      "rating": 4.8,
+      "reviews": 3600,
+      "amenities": [
+        "Canopy Machans 45ft in the Air",
+        "100% Eco Off-Grid",
+        "Valley Dining",
+        "Spa"
+      ],
+      "tags": [
+        "Lonavala (30 km away)",
+        "Jambulne Forest",
+        "World Luxury Eco Winner"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Machan%20-%20Treehouse%20Resort%20Lonavala%20Maharashtra"
     }
   ],
   "restaurants": [],

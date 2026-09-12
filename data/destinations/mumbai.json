@@ -298,160 +298,87 @@
   ],
   "hotels": [
     {
-      "name": "Mumbai Haveli Stay",
-      "type": "hotel",
-      "tier": "cheapest",
-      "priceMin": 1500,
-      "priceMax": 2400,
-      "rating": 4.2,
-      "reviews": 332,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20Haveli%20Stay%20Mumbai%20Maharashtra"
-    },
-    {
-      "name": "Lemon Tree Red Fox Period Property",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2850,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 565,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Period%20Property%20Mumbai%20Maharashtra"
-    },
-    {
-      "name": "Treebo Trend Legacy Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4500,
-      "priceMax": 6750,
-      "rating": 4.1,
-      "reviews": 517,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Legacy%20Hotel%20Mumbai%20Maharashtra"
-    },
-    {
-      "name": "Ibis Mahal Palace",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 9000,
-      "priceMax": 15000,
-      "rating": 4.2,
-      "reviews": 535,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Mahal%20Palace%20Mumbai%20Maharashtra"
-    },
-    {
-      "name": "Fairfield by Marriott Mumbai",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3049,
-      "priceMax": 3753,
-      "rating": 4.4,
-      "reviews": 500,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Mumbai%20Mumbai%20Maharashtra"
-    },
-    {
-      "name": "Mumbai The Fern",
+      "name": "MTDC Holiday Resort (Mumbai)",
       "type": "resort",
-      "tier": "better",
-      "priceMin": 5571,
-      "priceMax": 7475,
-      "rating": 4.5,
-      "reviews": 493,
+      "tier": "cheapest",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Premium Stay",
-        "Manor House"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20The%20Fern%20Mumbai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Mumbai Hyatt Regency",
+      "name": "Hotel Suba Palace Mumbai",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 3500,
+      "priceMax": 5800,
+      "rating": 4.4,
+      "reviews": 4100,
+      "amenities": [
+        "Near Gateway of India",
+        "Buffet Breakfast",
+        "Modern AC Rooms",
+        "WiFi"
+      ],
+      "tags": [
+        "Mumbai (18 km away)",
+        "Colaba Hub",
+        "Value Comfort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suba%20Palace%20Mumbai%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "The Taj Mahal Palace, Mumbai",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 22000,
+      "priceMax": 55000,
+      "rating": 4.9,
+      "reviews": 9800,
+      "amenities": [
+        "Gateway of India Oceanfront",
+        "Historic 1903 Grandeur",
+        "Wasabi by Morimoto",
+        "Jiva Spa"
+      ],
+      "tags": [
+        "Mumbai (18 km away)",
+        "Colaba Waterfront",
+        "India's Most Iconic Landmark"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Mahal%20Palace%2C%20Mumbai%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "Trident Nariman Point, Mumbai",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10792,
-      "priceMax": 12581,
-      "rating": 4.5,
-      "reviews": 1313,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.7,
+      "reviews": 7800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Marine Drive Queen's Necklace View",
+        "Outdoor Pool",
+        "Frangipani Mediterranean",
+        "Spa"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Palace Hotel"
+        "Mumbai (18 km away)",
+        "Marine Drive",
+        "Oberoi Group"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Mumbai%20Hyatt%20Regency%20Mumbai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Trident%20Nariman%20Point%2C%20Mumbai%20Mumbai%20Maharashtra"
     }
   ],
   "restaurants": [],

@@ -537,77 +537,87 @@
   ],
   "hotels": [
     {
-      "name": "Phukthar Guest House",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 2500,
-      "priceMax": 4500,
-      "rating": 4.8,
-      "reviews": 210,
-      "amenities": [
-        "Bukhari Stove Heating",
-        "Ladakhi Meals",
-        "Free WiFi"
-      ],
-      "tags": [
-        "Homestay",
-        "Padum"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Phukthar%20Guest%20House%20Zanskar%20Valley%20Ladakh"
-    },
-    {
-      "name": "Zambala Guest House",
+      "name": "Zanskar Valley Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 6500,
-      "rating": 4.7,
-      "reviews": 180,
-      "amenities": [
-        "Heated Rooms",
-        "Dining Hall",
-        "River View"
-      ],
-      "tags": [
-        "Alpine Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zambala%20Guest%20House%20Zanskar%20Valley%20Ladakh"
-    },
-    {
-      "name": "Ibex Guest House",
-      "type": "guesthouse",
-      "tier": "budget",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.4,
-      "reviews": 150,
-      "amenities": [
-        "Hot Water",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Govt Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibex%20Guest%20House%20Zanskar%20Valley%20Ladakh"
-    },
-    {
-      "name": "Marq Guest House",
-      "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 1200,
-      "priceMax": 2200,
-      "rating": 4.6,
-      "reviews": 110,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Sleeping Tents",
-        "Hot Tea",
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
         "Campfire"
       ],
       "tags": [
-        "Trekker Camp"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Marq%20Guest%20House%20Zanskar%20Valley%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zanskar%20Valley%20Forest%20Rest%20House%20Ladakh"
+    },
+    {
+      "name": "Zostel Leh",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.6,
+      "reviews": 3800,
+      "amenities": [
+        "Stok Range Terrace",
+        "Cozy Common Room",
+        "Bike Rental Desk",
+        "WiFi"
+      ],
+      "tags": [
+        "Leh (100 km away)",
+        "Upper Tukcha Road",
+        "Bikers & Trekkers Base"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Leh%20Leh%20Ladakh"
+    },
+    {
+      "name": "Gomang Boutique Hotel Leh",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 2400,
+      "amenities": [
+        "Extensive Himalayan Library",
+        "Pure Veg Dining",
+        "Oxygen Support",
+        "Apple Orchards"
+      ],
+      "tags": [
+        "Leh (100 km away)",
+        "Changspa Road",
+        "Eco Boutique"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gomang%20Boutique%20Hotel%20Leh%20Leh%20Ladakh"
+    },
+    {
+      "name": "The Grand Dragon Ladakh",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 4600,
+      "amenities": [
+        "Solar Heated Luxury",
+        "Stok Kangri Mountain Panorama",
+        "Oxygen Assistance",
+        "Zasgyath Dining"
+      ],
+      "tags": [
+        "Leh (100 km away)",
+        "Old Road Shenam",
+        "Ladakh Premier 5-Star"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Dragon%20Ladakh%20Leh%20Ladakh"
     }
   ],
   "gallery": [

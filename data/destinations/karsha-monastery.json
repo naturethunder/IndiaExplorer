@@ -323,155 +323,87 @@
   ],
   "hotels": [
     {
-      "name": "Karsha Monastery Backpackers",
+      "name": "Karsha Monastery Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Karsha%20Monastery%20Yatri%20Nivas%20Ladakh"
+    },
+    {
+      "name": "Zostel Leh",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 425,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Stok Range Terrace",
+        "Cozy Common Room",
+        "Bike Rental Desk",
+        "WiFi"
       ],
       "tags": [
-        "Budget Friendly",
-        "Ashram Stay"
+        "Leh (93 km away)",
+        "Upper Tukcha Road",
+        "Bikers & Trekkers Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Karsha%20Monastery%20Backpackers%20Karsha%20Monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Treebo Trend Karsha Monastery",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 734,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Karsha%20Monastery%20Karsha%20Monastery%20Ladakh"
-    },
-    {
-      "name": "OYO Townhouse Karsha Monastery",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 650,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Karsha%20Monastery%20Karsha%20Monastery%20Ladakh"
-    },
-    {
-      "name": "Karsha Monastery Ginger",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.2,
-      "reviews": 910,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Karsha%20Monastery%20Ginger%20Karsha%20Monastery%20Ladakh"
-    },
-    {
-      "name": "Karsha Monastery Zone by The Park",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2906,
-      "priceMax": 4099,
-      "rating": 4.2,
-      "reviews": 1195,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Karsha%20Monastery%20Zone%20by%20The%20Park%20Karsha%20Monastery%20Ladakh"
-    },
-    {
-      "name": "Holiday Inn Temple View",
-      "type": "hotel",
+      "name": "Gomang Boutique Hotel Leh",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 6959,
-      "priceMax": 8693,
-      "rating": 4.4,
-      "reviews": 751,
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Extensive Himalayan Library",
+        "Pure Veg Dining",
+        "Oxygen Support",
+        "Apple Orchards"
       ],
       "tags": [
-        "Premium Stay",
-        "Bhakti Residency"
+        "Leh (93 km away)",
+        "Changspa Road",
+        "Eco Boutique"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Temple%20View%20Karsha%20Monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gomang%20Boutique%20Hotel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Karsha Monastery Vivanta",
+      "name": "The Grand Dragon Ladakh",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 7832,
-      "priceMax": 8802,
-      "rating": 4.6,
-      "reviews": 2442,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 4600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Solar Heated Luxury",
+        "Stok Kangri Mountain Panorama",
+        "Oxygen Assistance",
+        "Zasgyath Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Divine Retreat"
+        "Leh (93 km away)",
+        "Old Road Shenam",
+        "Ladakh Premier 5-Star"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Karsha%20Monastery%20Vivanta%20Karsha%20Monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Dragon%20Ladakh%20Leh%20Ladakh"
     }
   ],
   "restaurants": [],

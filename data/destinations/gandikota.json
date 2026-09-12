@@ -539,82 +539,108 @@
   ],
   "hotels": [
     {
-      "name": "APTDC Haritha Resort Gandikota",
+      "name": "Gandikota Eco Tourism & Forest Rest House",
       "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gandikota%20Forest%20Rest%20House%20Andhra%20Pradesh"
+    },
+    {
+      "name": "TTD Srinivasam Complex Tirupati",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 400,
+      "priceMax": 900,
+      "rating": 4.5,
+      "reviews": 9400,
+      "amenities": [
+        "Official Devasthanam Run",
+        "Darshan Counter On-site",
+        "24hr Canteen",
+        "Bus Station Opposite"
+      ],
+      "tags": [
+        "Tirupati (180 km away)",
+        "Official TTD",
+        "Pilgrim Gold Standard"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=TTD%20Srinivasam%20Complex%20Tirupati%20Tirupati%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Hotel Bliss Tirupati",
+      "type": "hotel",
       "tier": "good",
       "priceMin": 2200,
-      "priceMax": 4500,
-      "rating": 4.5,
-      "reviews": 410,
+      "priceMax": 3600,
+      "rating": 4.2,
+      "reviews": 3800,
       "amenities": [
+        "Pure Veg Darshini",
+        "Travel Desk",
         "AC Rooms",
-        "Restaurant",
-        "Parking",
-        "Fort View"
+        "Parking"
       ],
       "tags": [
-        "Govt Resort",
-        "Fort View"
+        "Tirupati (180 km away)",
+        "Ramanuja Circle",
+        "Family Pilgrim"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=APTDC%20Haritha%20Resort%20Gandikota%20Gandikota%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Bliss%20Tirupati%20Tirupati%20Andhra%20Pradesh"
     },
     {
-      "name": "Freakouts Adventure Cliff Camping Gandikota",
-      "type": "camp",
-      "tier": "budget",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.7,
-      "reviews": 350,
-      "amenities": [
-        "Cliff Tents",
-        "Campfire",
-        "Dinner",
-        "Kayaking"
-      ],
-      "tags": [
-        "Camping",
-        "Adventure"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Freakouts%20Adventure%20Cliff%20Camping%20Gandikota%20Gandikota%20Andhra%20Pradesh"
-    },
-    {
-      "name": "Gandikota Heritage Resort",
-      "type": "resort",
+      "name": "Fortune Select Grand Ridge Tirupati (ITC)",
+      "type": "hotel",
       "tier": "better",
-      "priceMin": 3500,
+      "priceMin": 3800,
       "priceMax": 6500,
-      "rating": 4.6,
-      "reviews": 220,
+      "rating": 4.4,
+      "reviews": 4100,
       "amenities": [
-        "Swimming Pool",
-        "Multi-cuisine Restaurant",
-        "AC Cottages"
+        "Hill Views",
+        "Vegetarian Dining",
+        "Outdoor Pool",
+        "Gym"
       ],
       "tags": [
-        "Resort",
-        "Heritage"
+        "Tirupati (180 km away)",
+        "Shilparamam Hub",
+        "ITC Hospitality"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gandikota%20Heritage%20Resort%20Gandikota%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Select%20Grand%20Ridge%20Tirupati%20(ITC)%20Tirupati%20Andhra%20Pradesh"
     },
     {
-      "name": "APTDC",
-      "type": "homestay",
-      "tier": "budget",
-      "priceMin": 1500,
-      "priceMax": 2800,
-      "rating": 4.5,
-      "reviews": 180,
+      "name": "Taj Tirupati (IHCL)",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 4800,
       "amenities": [
-        "Home Cooked Meals",
-        "Free WiFi",
-        "Local Guide"
+        "Tirumala Hill View",
+        "Varun Pure Veg & Multi-cuisine",
+        "Infinity Pool",
+        "Spa"
       ],
       "tags": [
-        "Homestay",
-        "Local Experience"
+        "Tirupati (180 km away)",
+        "Tata Luxury",
+        "Tirumala Foothills"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=APTDC%20Gandikota%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Tirupati%20(IHCL)%20Tirupati%20Andhra%20Pradesh"
     }
   ],
   "gallery": [

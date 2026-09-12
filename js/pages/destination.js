@@ -100,6 +100,13 @@ function markDestinationNotFound() {
 const params = new URLSearchParams(window.location.search);
 let rawSlug = params.get('slug') || params.get('id') || window.location.hash.slice(1) || null;
 let slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, '').replace(/\.html$/i, '').replace(/\.json$/i, '') : null;
+if (slug) {
+  if (slug.includes('bangla') && slug.includes('sahib')) {
+    slug = 'gurudwara-bangla-sahib';
+  } else {
+    slug = slug.replace(/['".,]/g, '').trim().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  }
+}
 
 let dest = null;
 let idx = null;
@@ -443,9 +450,11 @@ function main(dest, idx) {
         });
       } else if (dest.heroImage && dest.heroImage.src) {
         const cleanHeroSub = cleanAltText(dest.heroImage.alt);
+        const heroExplicitTitle = (dest.heroImage.title && !isGenericLabel(dest.heroImage.title) ? cleanAltText(dest.heroImage.title) : null)
+          || (dest.gallery && dest.gallery[0] && dest.gallery[0].title && !isGenericLabel(dest.gallery[0].title) ? cleanAltText(dest.gallery[0].title) : null);
         addPhoto({
           src: dest.heroImage.src,
-          title: formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
+          title: heroExplicitTitle || formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
           subtitle: (cleanHeroSub && cleanHeroSub.toLowerCase() !== dest.title.toLowerCase()) ? cleanHeroSub : (dest.state + ' · Main View'),
           category: dest.type || 'scenic'
         });
@@ -568,7 +577,7 @@ function main(dest, idx) {
       '<div id="destOvTrack" class="relative w-full h-full">' +
       real5Photos.map(function (ph, idx) {
         return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
-          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' +
+          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" decoding="async" onerror="this.onerror=null;" />' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
           '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
@@ -876,10 +885,7 @@ function main(dest, idx) {
       cards = list.map(function (s) {
         const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-amber-500/15 text-amber-300 dark:text-amber-400 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
         const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
-        const canonicalQuery = encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || ''));
-        const googleUrl = (s.url && (s.url.includes('google.com/maps') || s.url.includes('google.com/search')) && s.url.toLowerCase().includes(encodeURIComponent(s.name).toLowerCase()))
-          ? s.url
-          : ('https://www.google.com/maps/search/?api=1&query=' + canonicalQuery);
+        const googleUrl = s.url || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '')));
         return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
@@ -1503,7 +1509,7 @@ function main(dest, idx) {
     carLen = urls.length; carIdx = 0;
     carTrack.innerHTML = urls.map(function (u, i) {
       return '<div class="carousel-slide"><img src="' + esc(u) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
-        '" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" /></div>';
+        '" decoding="async" onerror="this.onerror=null;" /></div>';
     }).join('');
     carDots.innerHTML = urls.map(function (u, i) {
       return '<button type="button" class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';
@@ -1527,8 +1533,15 @@ function main(dest, idx) {
     document.getElementById('placeName').textContent = p.name;
     document.getElementById('placeRating').textContent = '★ ' + p.rating;
     document.getElementById('placeCategory').textContent = p.category;
-    document.getElementById('placeDesc').textContent = p.description;
-    document.getElementById('placeDistance').textContent = p.distance + ' from ' + dest.title;
+    var distText = p.distance || '';
+    if (/^\d+(\.\d+)?\s*(km|m)/i.test(distText)) {
+      distText = distText + ' from ' + dest.title;
+    } else if (/town\s*cent(re|er)/i.test(distText)) {
+      distText = 'In Town Centre';
+    } else if (/^(main\s*complex|courtyard|on[- ]site|inside|centre|center|premises)/i.test(distText)) {
+      distText = distText + ' (On-site)';
+    }
+    document.getElementById('placeDistance').textContent = distText || ('Near ' + dest.title);
     document.getElementById('placeDuration').textContent = p.duration;
     document.getElementById('placeFee').textContent = p.entryFee;
     document.getElementById('placeTimings').textContent = p.timings;

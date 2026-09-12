@@ -441,44 +441,87 @@
   ],
   "hotels": [
     {
-      "name": "Gurudongmar Lake Tourist Guest House",
-      "type": "guesthouse",
-      "tier": "budget",
+      "name": "Gurudongmar Lake Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
       "priceMin": 800,
-      "priceMax": 1500,
-      "rating": 4.1,
-      "reviews": 140,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Clean Rooms",
-        "Hot Water",
-        "Free Parking",
-        "Travel Assistance"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Budget Friendly",
-        "Convenient"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gurudongmar%20Lake%20Tourist%20Guest%20House%20Sikkim"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gurudongmar%20Lake%20Forest%20Rest%20House%20Sikkim"
     },
     {
-      "name": "Gurudongmar Lake Heritage Residency",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.3,
-      "reviews": 210,
+      "name": "Zostel Gangtok",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "AC Rooms",
-        "Multi-Cuisine Dining",
-        "Free WiFi",
-        "Room Service"
+        "Valley View Balconies",
+        "Cafe",
+        "Board Games",
+        "Tour Desk"
       ],
       "tags": [
-        "Family Friendly",
-        "Comfortable"
+        "Gangtok (72 km away)",
+        "Development Area",
+        "Backpacker Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gurudongmar%20Lake%20Heritage%20Residency%20Sikkim"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Gangtok%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "Mayfair Spa Resort & Casino, Gangtok",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 9500,
+      "priceMax": 19000,
+      "rating": 4.8,
+      "reviews": 5200,
+      "amenities": [
+        "Monastic Architecture",
+        "Casino Mahjong",
+        "Luxury Spa",
+        "Forest Pool"
+      ],
+      "tags": [
+        "Gangtok (72 km away)",
+        "Ranipool",
+        "Sikkim's Premier Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Spa%20Resort%20%26%20Casino%2C%20Gangtok%20Gangtok%20Sikkim"
+    },
+    {
+      "name": "The Elgin Nor-Khill, Gangtok",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.7,
+      "reviews": 3400,
+      "amenities": [
+        "Former Chogyal Royal Guest House",
+        "Kanchenjunga Views",
+        "Dragon Bar",
+        "Tibetan Murals"
+      ],
+      "tags": [
+        "Gangtok (72 km away)",
+        "Palzor Stadium Road",
+        "Historic Royal Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Elgin%20Nor-Khill%2C%20Gangtok%20Gangtok%20Sikkim"
     }
   ],
   "gallery": [

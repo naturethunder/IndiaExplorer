@@ -420,156 +420,87 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Arasikere",
+      "name": "Ishvara Temple, Arasikere Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ishvara%20Temple%2C%20Arasikere%20Yatri%20Nivas%20Karnataka"
+    },
+    {
+      "name": "Zostel Coorg",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 463,
+      "priceMin": 750,
+      "priceMax": 1500,
+      "rating": 4.6,
+      "reviews": 3400,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Coffee Estate Trails",
+        "Bonfire Pit",
+        "Common Lounge",
+        "WiFi"
       ],
       "tags": [
-        "Budget Friendly",
-        "Yatri Nivas"
+        "Coorg (114 km away)",
+        "Coffee Hills",
+        "Backpacker Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Arasikere%20Arasikere%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Coorg%20Coorg%20Karnataka"
     },
     {
-      "name": "Arasikere Treebo Trend",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 676,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Krishna Kunj"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Arasikere%20Treebo%20Trend%20Arasikere%20Karnataka"
-    },
-    {
-      "name": "FabHotels Prime Divine Retreat",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 263,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Divine%20Retreat%20Arasikere%20Karnataka"
-    },
-    {
-      "name": "Arasikere Temple View",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.2,
-      "reviews": 606,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Well Rated",
-        "Sai Dham"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Arasikere%20Temple%20View%20Arasikere%20Karnataka"
-    },
-    {
-      "name": "Keys Select Sai Dham",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2261,
-      "priceMax": 3637,
-      "rating": 4.1,
-      "reviews": 814,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Ashram Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Sai%20Dham%20Arasikere%20Karnataka"
-    },
-    {
-      "name": "Hilton Garden Inn Arasikere",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 4856,
-      "priceMax": 5725,
-      "rating": 4.5,
-      "reviews": 1195,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Arasikere%20Arasikere%20Karnataka"
-    },
-    {
-      "name": "Le Méridien Arasikere",
-      "type": "hotel",
+      "name": "Taj Madikeri Resort & Spa, Coorg",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 11889,
-      "priceMax": 13035,
-      "rating": 4.5,
-      "reviews": 2493,
+      "priceMin": 18000,
+      "priceMax": 38000,
+      "rating": 4.8,
+      "reviews": 5200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "180 Acres of Living Rainforest",
+        "Heated Indoor Pool",
+        "Jiva Grande Spa",
+        "Kodagu Dining"
       ],
       "tags": [
-        "Award Winning",
-        "Sai Dham"
+        "Coorg (114 km away)",
+        "Monsoons & Mist",
+        "Rainforest Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Arasikere%20Arasikere%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Madikeri%20Resort%20%26%20Spa%2C%20Coorg%20Coorg%20Karnataka"
+    },
+    {
+      "name": "Evolve Back, Chikkana Halli Estate, Coorg",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 24000,
+      "priceMax": 48000,
+      "rating": 4.9,
+      "reviews": 4600,
+      "amenities": [
+        "300-Acre Coffee & Spice Plantation",
+        "Private Pool Villas",
+        "Vaidyasala Ayurveda",
+        "Infinity Pool"
+      ],
+      "tags": [
+        "Coorg (114 km away)",
+        "World-Class Plantation",
+        "Orange County Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Evolve%20Back%2C%20Chikkana%20Halli%20Estate%2C%20Coorg%20Coorg%20Karnataka"
     }
   ],
   "restaurants": [],

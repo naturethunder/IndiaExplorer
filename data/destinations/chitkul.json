@@ -296,221 +296,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Highland Resort",
-      "type": "guesthouse",
+      "name": "HPTDC Tourist Inn (Chitkul)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 1200,
-      "priceMax": 1900,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 456,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Budget Friendly",
-        "Ridge Resort"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Highland%20Resort%20Chitkul%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Tourist%20Inn%20Chitkul%20Himachal%20Pradesh"
     },
     {
-      "name": "Treebo Mist Haven",
-      "type": "hotel",
+      "name": "Zostel Shimla",
+      "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 2300,
-      "priceMax": 3250,
-      "rating": 3.8,
-      "reviews": 298,
+      "priceMin": 750,
+      "priceMax": 1500,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Valley View Terrace",
+        "Cozy Common Rooms",
+        "Board Games",
+        "WiFi"
       ],
       "tags": [
-        "Value Stay",
-        "Pine Grove"
+        "Shimla (123 km away)",
+        "Backpacker Choice",
+        "Social Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Mist%20Haven%20Chitkul%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Lemon Tree Red Fox Chitkul",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3600,
-      "priceMax": 5400,
-      "rating": 4.3,
-      "reviews": 556,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Chitkul%20Chitkul%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Ginger Alpine Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7200,
-      "priceMax": 12000,
-      "rating": 4.3,
-      "reviews": 253,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Alpine Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Alpine%20Lodge%20Chitkul%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Chitkul Summit View",
-      "type": "hotel",
+      "name": "HPTDC Hotel Peterhof",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 2274,
-      "priceMax": 3154,
-      "rating": 4.2,
-      "reviews": 770,
+      "priceMin": 2600,
+      "priceMax": 4500,
+      "rating": 4.3,
+      "reviews": 3200,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Viceregal Heritage",
+        "Lush Lawns",
+        "Restaurant",
+        "Free Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Alpine Lodge"
+        "Shimla (123 km away)",
+        "State Heritage",
+        "Historic Grounds"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Summit%20View%20Chitkul%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Hotel%20Peterhof%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Chitkul Valley View",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3742,
-      "priceMax": 4905,
-      "rating": 4.2,
-      "reviews": 696,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Pine Grove"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Valley%20View%20Chitkul%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Holiday Inn Alpine Lodge",
+      "name": "Hotel Combermere Shimla",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5628,
-      "priceMax": 6572,
-      "rating": 4.3,
-      "reviews": 1674,
+      "priceMin": 4500,
+      "priceMax": 7800,
+      "rating": 4.4,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Private Passenger Lift to Mall Road",
+        "Gym",
+        "Nightclub",
+        "Billiards"
       ],
       "tags": [
-        "Business Preferred",
-        "Highland Resort"
+        "Shimla (123 km away)",
+        "The Mall Access",
+        "Prime Location"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Alpine%20Lodge%20Chitkul%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Combermere%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Sheraton Chitkul",
-      "type": "hotel",
+      "name": "The Oberoi Cecil, Shimla",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 7820,
-      "priceMax": 8964,
-      "rating": 4.5,
-      "reviews": 1726,
+      "priceMin": 16000,
+      "priceMax": 30000,
+      "rating": 4.8,
+      "reviews": 4900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Colonial Ballroom",
+        "Indoor Heated Pool",
+        "Oberoi Spa",
+        "Fine Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Ridge Resort"
+        "Shimla (123 km away)",
+        "Historic 1884 Luxury",
+        "Chaura Maidan"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Chitkul%20Chitkul%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Chitkul Mist Haven",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 10015,
-      "priceMax": 10360,
-      "rating": 4.6,
-      "reviews": 1283,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
-      ],
-      "tags": [
-        "Luxury Experience",
-        "Peak Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chitkul%20Mist%20Haven%20Chitkul%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Taj Summit View",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 16230,
-      "priceMax": 17669,
-      "rating": 4.5,
-      "reviews": 3136,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "World Class",
-        "Peak Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Summit%20View%20Chitkul%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Cecil%2C%20Shimla%20Shimla%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],

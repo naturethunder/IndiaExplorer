@@ -538,76 +538,108 @@
   ],
   "hotels": [
     {
-      "name": "JKTDC Tourist Bungalow Dawar",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4500,
-      "rating": 4.5,
-      "reviews": 210,
+      "name": "State Tourism Rest House (Gurez Valley)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 900,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Heated Rooms",
-        "Restaurant",
-        "River View"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Govt Lodge"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=JKTDC%20Tourist%20Bungalow%20Dawar%20Gurez%20Valley%20Jammu%20%26%20Kashmir"
+      "url": "https://www.google.com/maps/search/?api=1&query=State%20Tourism%20Rest%20House%20Gurez%20Valley%20Jammu%20%26%20Kashmir"
     },
     {
-      "name": "Kishanganga River View Homestay",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3500,
-      "rating": 4.8,
-      "reviews": 190,
-      "amenities": [
-        "Kashmiri Home Meals",
-        "Kangri Heating",
-        "River View"
-      ],
-      "tags": [
-        "Dard-Shin Homestay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kishanganga%20River%20View%20Homestay%20Gurez%20Valley%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Habba Khatoon Eco Resort Gurez",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 3200,
-      "priceMax": 6000,
-      "rating": 4.7,
-      "reviews": 140,
-      "amenities": [
-        "Wooden Cottages",
-        "Dining",
-        "Bonfire"
-      ],
-      "tags": [
-        "Eco Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Habba%20Khatoon%20Eco%20Resort%20Gurez%20Gurez%20Valley%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Taobat Continental Hotel and Guest House",
+      "name": "JKTDC Tourist Reception Centre Srinagar",
       "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 1600,
-      "priceMax": 3000,
-      "rating": 4.6,
-      "reviews": 90,
+      "priceMin": 1400,
+      "priceMax": 2600,
+      "rating": 4,
+      "reviews": 1900,
       "amenities": [
-        "Alpine Tents",
-        "Campfire",
-        "Trek Guide"
+        "TRC Hub",
+        "State Tourism",
+        "Tour Booking Desk",
+        "Heating"
       ],
       "tags": [
-        "Adventure Camp"
+        "Srinagar (62 km away)",
+        "State Tourism",
+        "City Transit"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Taobat%20Continental%20Hotel%20and%20Guest%20House%20Gurez%20Valley%20Jammu%20%26%20Kashmir"
+      "url": "https://www.google.com/maps/search/?api=1&query=JKTDC%20Tourist%20Reception%20Centre%20Srinagar%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Sukoon Houseboat - Dal Lake",
+      "type": "heritage",
+      "tier": "better",
+      "priceMin": 8500,
+      "priceMax": 15000,
+      "rating": 4.8,
+      "reviews": 1800,
+      "amenities": [
+        "Eco Luxury Cedar Wood Houseboat",
+        "Rooftop Shikara Lounge",
+        "Wazwan Dining",
+        "Dal Lake"
+      ],
+      "tags": [
+        "Srinagar (62 km away)",
+        "Kashmir Houseboat",
+        "Serene Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sukoon%20Houseboat%20-%20Dal%20Lake%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "The Lalit Grand Palace Srinagar",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 18000,
+      "priceMax": 36000,
+      "rating": 4.8,
+      "reviews": 4900,
+      "amenities": [
+        "Maharaja Pratap Singh Palace",
+        "Dal Lake Panorama",
+        "Chinar Gardens",
+        "Indoor Pool"
+      ],
+      "tags": [
+        "Srinagar (62 km away)",
+        "Gupkar Road",
+        "Historic Royal Splendour"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Lalit%20Grand%20Palace%20Srinagar%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Vivanta Dal View, Srinagar (IHCL)",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 14000,
+      "priceMax": 26000,
+      "rating": 4.7,
+      "reviews": 4200,
+      "amenities": [
+        "Kralsangri Hilltop Dal Lake Panorama",
+        "Infinity Heated Pool",
+        "Wazwan Dining",
+        "Jiva Spa"
+      ],
+      "tags": [
+        "Srinagar (62 km away)",
+        "Dal Lake Cliff",
+        "Tata Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Dal%20View%2C%20Srinagar%20(IHCL)%20Srinagar%20Jammu%20%26%20Kashmir"
     }
   ],
   "gallery": [

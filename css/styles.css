@@ -445,11 +445,14 @@ body {
 
 .search-input {
   border: none;
-  outline: none;
   width: 100%;
   font-size: 1.125rem;
   color: var(--text);
   background: transparent;
+}
+
+.search-input:focus-visible {
+  outline: none; /* Focus ring handled by parent .search-box:focus-within */
 }
 
 .search-input::placeholder {
@@ -555,10 +558,15 @@ body {
   border-radius: 6px 6px 0 0;
   margin-bottom: -2px;
   white-space: nowrap;
+  min-height: 44px;
   cursor: pointer;
   transition: all var(--transition);
   background: transparent;
-  outline: none;
+}
+
+.tab-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .tab-btn:hover,

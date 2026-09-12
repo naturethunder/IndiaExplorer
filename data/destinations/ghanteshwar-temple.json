@@ -422,156 +422,87 @@
   ],
   "hotels": [
     {
-      "name": "Ghanteshwar Treebo",
-      "type": "hotel",
+      "name": "Ghanteshwar Temple Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
+      "priceMin": 500,
+      "priceMax": 1100,
       "rating": 4.1,
-      "reviews": 322,
+      "reviews": 680,
       "amenities": [
-        "Free WiFi",
+        "Devotee Clean Rooms",
         "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Pilgrim Assistance",
+        "Safe Luggage"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Bhakti Residency"
+        "On-site / Village",
+        "Devotee Choice"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ghanteshwar%20Treebo%20Ghanteshwar%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ghanteshwar%20Temple%20Yatri%20Nivas%20West%20Bengal"
     },
     {
-      "name": "Treebo Trend Temple View",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.1,
-      "reviews": 307,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Temple%20View%20Ghanteshwar%20West%20Bengal"
-    },
-    {
-      "name": "OYO Townhouse Ghanteshwar",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 525,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Temple View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Ghanteshwar%20Ghanteshwar%20West%20Bengal"
-    },
-    {
-      "name": "Ginger Ghanteshwar",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 619,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Krishna Kunj"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Ghanteshwar%20Ghanteshwar%20West%20Bengal"
-    },
-    {
-      "name": "Ibis Ghanteshwar",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2838,
-      "priceMax": 4231,
-      "rating": 4.1,
-      "reviews": 1172,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Ghanteshwar%20Ghanteshwar%20West%20Bengal"
-    },
-    {
-      "name": "Ghanteshwar Hilton Garden Inn",
-      "type": "hotel",
+      "name": "The Lalit Great Eastern Kolkata",
+      "type": "heritage",
       "tier": "better",
-      "priceMin": 5857,
-      "priceMax": 7329,
-      "rating": 4.5,
-      "reviews": 1459,
+      "priceMin": 4500,
+      "priceMax": 8200,
+      "rating": 4.4,
+      "reviews": 4200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Jewel of the East Since 1841",
+        "Bakery",
+        "Outdoor Pool",
+        "Spa"
       ],
       "tags": [
-        "Business Preferred",
-        "Pilgrim Lodge"
+        "Kolkata (55 km away)",
+        "BBD Bagh Dalhousie",
+        "Historic Luxury Hotel"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ghanteshwar%20Hilton%20Garden%20Inn%20Ghanteshwar%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Lalit%20Great%20Eastern%20Kolkata%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Ghanteshwar Hyatt Regency",
+      "name": "The Oberoi Grand, Kolkata",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.8,
+      "reviews": 7100,
+      "amenities": [
+        "Colonial Grande Dame Since 1880s",
+        "Palm-fringed Pool",
+        "Baan Thai Dining",
+        "Oberoi Spa"
+      ],
+      "tags": [
+        "Kolkata (55 km away)",
+        "Esplanade Central",
+        "Grande Dame of Chowringhee"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Grand%2C%20Kolkata%20Kolkata%20West%20Bengal"
+    },
+    {
+      "name": "ITC Sonar, a Luxury Collection Hotel, Kolkata",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10093,
-      "priceMax": 11390,
-      "rating": 4.4,
-      "reviews": 2296,
+      "priceMin": 7500,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 6200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Water Lily Pavilions",
+        "Peshawri & Dum Pukht",
+        "Kaya Kalp Spa",
+        "Jogging Track"
       ],
       "tags": [
-        "Award Winning",
-        "Dharmashala"
+        "Kolkata (55 km away)",
+        "EM Bypass",
+        "Business & Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ghanteshwar%20Hyatt%20Regency%20Ghanteshwar%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Sonar%2C%20a%20Luxury%20Collection%20Hotel%2C%20Kolkata%20Kolkata%20West%20Bengal"
     }
   ],
   "restaurants": [],

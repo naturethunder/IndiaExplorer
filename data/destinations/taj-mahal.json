@@ -298,104 +298,129 @@
   ],
   "hotels": [
     {
-      "name": "Joey's Hostel Agra (Rooftop Taj View)",
+      "name": "UPSTDC Rahi Tourist Bungalow (Taj Mahal)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 900,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=UPSTDC%20Rahi%20Tourist%20Bungalow%20Taj%20Mahal%20Uttar%20Pradesh"
+    },
+    {
+      "name": "Zostel Agra",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 650,
+      "priceMin": 600,
       "priceMax": 1200,
-      "rating": 4.6,
-      "reviews": 950,
-      "amenities": [
-        "Direct Taj View Rooftop",
-        "AC Dorms",
-        "Cafe",
-        "Walking Tours"
-      ],
-      "tags": [
-        "Backpacker Hub",
-        "Taj View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Joey's%20Hostel%20Agra%20(Rooftop%20Taj%20View)%20Agra%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Hotel Taj Resorts (East Gate)",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2400,
-      "priceMax": 4200,
-      "rating": 4.3,
-      "reviews": 1400,
-      "amenities": [
-        "Rooftop Pool with Taj View",
-        "Near Taj East Gate",
-        "Restaurant",
-        "Free WiFi"
-      ],
-      "tags": [
-        "Walking to Taj",
-        "Rooftop Pool"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Taj%20Resorts%20(East%20Gate)%20Agra%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Courtyard by Marriott Agra",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 4500,
-      "priceMax": 7500,
       "rating": 4.5,
-      "reviews": 2100,
-      "amenities": [
-        "Outdoor Pool",
-        "Spa",
-        "MoMo Cafe",
-        "Fitness Centre"
-      ],
-      "tags": [
-        "Marriott Comfort",
-        "Fatehabad Road"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Agra%20Agra%20Uttar%20Pradesh"
-    },
-    {
-      "name": "ITC Mughal, a Luxury Collection Resort & Spa",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 8500,
-      "priceMax": 16000,
-      "rating": 4.7,
       "reviews": 3400,
       "amenities": [
-        "Kaya Kalp Royal Spa",
-        "Peshawri Dining",
-        "35 Acres Mughal Lawns",
-        "Pool"
+        "Taj Mahal Walking Distance",
+        "Rooftop Cafe",
+        "AC Dorms",
+        "WiFi"
       ],
       "tags": [
-        "Aga Khan Award Winner",
-        "Peshawri Cuisine"
+        "Agra (3 km away)",
+        "Tajganj",
+        "Backpacker Community"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Mughal%2C%20a%20Luxury%20Collection%20Resort%20%26%20Spa%20Agra%20Uttar%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Agra%20Agra%20Uttar%20Pradesh"
+    },
+    {
+      "name": "UPSTDC Hotel Taj Khema",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.2,
+      "reviews": 2900,
+      "amenities": [
+        "Taj East Gate View",
+        "Lush Green Gardens",
+        "Restaurant",
+        "Parking"
+      ],
+      "tags": [
+        "Agra (3 km away)",
+        "State Tourism",
+        "Closest to Taj East Gate"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=UPSTDC%20Hotel%20Taj%20Khema%20Agra%20Uttar%20Pradesh"
+    },
+    {
+      "name": "Hotel Clarks Shiraz Agra",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 3200,
+      "priceMax": 5800,
+      "rating": 4.3,
+      "reviews": 4100,
+      "amenities": [
+        "Rooftop Taj View Restaurant",
+        "Outdoor Pool",
+        "Spa",
+        "Lawn Gardens"
+      ],
+      "tags": [
+        "Agra (3 km away)",
+        "Cantonment Area",
+        "Heritage Comfort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Clarks%20Shiraz%20Agra%20Agra%20Uttar%20Pradesh"
     },
     {
       "name": "The Oberoi Amarvilas, Agra",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 35000,
-      "priceMax": 75000,
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 32000,
+      "priceMax": 65000,
       "rating": 4.9,
-      "reviews": 2800,
+      "reviews": 5600,
       "amenities": [
-        "Unobstructed Taj Mahal Views from Every Room",
-        "Private Golf Buggy to Taj",
-        "Tiered Pool",
-        "Oberoi Spa"
+        "Taj Mahal Views from Every Room",
+        "Terraced Pool",
+        "Oberoi Spa",
+        "Mughal Dining"
       ],
       "tags": [
-        "World’s Best Taj View",
-        "Ultra Luxury"
+        "Agra (3 km away)",
+        "600m from Taj Mahal",
+        "World-Class Luxury"
       ],
       "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Amarvilas%2C%20Agra%20Agra%20Uttar%20Pradesh"
+    },
+    {
+      "name": "ITC Mughal, a Luxury Collection Hotel, Agra",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 6500,
+      "priceMax": 14000,
+      "rating": 4.6,
+      "reviews": 6800,
+      "amenities": [
+        "35 Acres of Mughal Gardens",
+        "Kaya Kalp Royal Spa",
+        "Peshawri Dining",
+        "Swimming Pool"
+      ],
+      "tags": [
+        "Agra (3 km away)",
+        "Fatehabad Road",
+        "ITC Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Mughal%2C%20a%20Luxury%20Collection%20Hotel%2C%20Agra%20Agra%20Uttar%20Pradesh"
     }
   ],
   "restaurants": [

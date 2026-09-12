@@ -242,155 +242,129 @@
   ],
   "hotels": [
     {
-      "name": "OYO Kesroli",
-      "type": "guesthouse",
+      "name": "RTDC Hotel Tourist Bungalow (Hill Fort Kesroli)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Tourist%20Bungalow%20Hill%20Fort%20Kesroli%20Rajasthan"
+    },
+    {
+      "name": "Zostel Jaipur",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
+      ],
+      "tags": [
+        "Jaipur (116 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "RTDC Hotel Teej Jaipur",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4,
-      "reviews": 111,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
+        "Parking"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Period Property"
+        "Jaipur (116 km away)",
+        "State Tourism",
+        "Collectorate Circle"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Kesroli%20Kesroli%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "FabHotels Prime Palace Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.1,
-      "reviews": 447,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Palace%20Hotel%20Kesroli%20Rajasthan"
-    },
-    {
-      "name": "OYO Townhouse Palace Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 612,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Palace%20Hotel%20Kesroli%20Rajasthan"
-    },
-    {
-      "name": "Ginger Palace Hotel",
-      "type": "hotel",
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 947,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Travel Desk"
       ],
       "tags": [
-        "Comfort Plus",
-        "Rajwada"
+        "Jaipur (116 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Palace%20Hotel%20Kesroli%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Kesroli Fort Residence",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3761,
-      "priceMax": 4144,
-      "rating": 4.2,
-      "reviews": 818,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Well Rated",
-        "Manor House"
+        "Jaipur (116 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kesroli%20Fort%20Residence%20Kesroli%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Kesroli Royal Retreat",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6050,
-      "priceMax": 6855,
-      "rating": 4.4,
-      "reviews": 612,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kesroli%20Royal%20Retreat%20Kesroli%20Rajasthan"
-    },
-    {
-      "name": "Kesroli Marriott",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8575,
-      "priceMax": 8945,
+      "priceMin": 7000,
+      "priceMax": 15000,
       "rating": 4.6,
-      "reviews": 1847,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Luxury Experience",
-        "Palace Hotel"
+        "Jaipur (116 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kesroli%20Marriott%20Kesroli%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],

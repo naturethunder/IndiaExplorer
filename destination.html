@@ -9,7 +9,7 @@
   <meta name="description"
     content="Explore top places to visit, best hotels, how to reach, and travel tips for this destination in India. Plan your perfect trip with ExploreDesh." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#080A0F" />
   <!-- Default canonical for non-JS crawlers; destination.js overwrites this after slug validation. -->
   <link rel="canonical" href="https://exploredesh.com/destination.html" />
@@ -92,7 +92,7 @@
       <line x1="8" y1="2" x2="8" y2="18" />
       <line x1="16" y1="6" x2="16" y2="22" />
     </svg>
-    <h1 class="text-2xl font-bold text-white">Destination not found</h1>
+    <h2 class="text-2xl font-bold text-white">Destination not found</h2>
     <p class="text-gray-400">We don't have a page for this destination yet.</p>
     <a href="destinations.html" class="btn btn-primary">Browse all destinations</a>
   </div>
@@ -102,7 +102,7 @@
 
     <!-- HERO: Clean cinematic banner image -->
     <div class="dest-hero pt-16" role="region" aria-label="Destination hero">
-      <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" referrerpolicy="origin" />
+      <img id="heroImg" src="" alt="" class="dest-hero-img" fetchpriority="high" referrerpolicy="no-referrer" />
       <div class="dest-hero-overlay" aria-hidden="true"></div>
       <div
         class="dest-hero-content absolute inset-0 flex flex-col justify-center items-center p-6 max-w-7xl mx-auto w-full text-center"
@@ -263,7 +263,7 @@
             <p id="placeDistance" class="font-medium text-gray-900"></p>
           </div>
           <div>
-            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Time Needed</p>
+            <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Travel Time</p>
             <p id="placeDuration" class="font-medium text-gray-900"></p>
           </div>
           <div>
@@ -344,17 +344,6 @@
       var nav = document.querySelector('.nav-glass');
       if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 40);
     }, { passive: true });
-  </script>
-  <!-- SEO: TouristDestination Fallback JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristDestination",
-    "@id": "https://exploredesh.com/destination.html#destination",
-    "name": "India Travel Destinations — ExploreDesh",
-    "description": "Explore comprehensive travel guides, places to visit, stays, and weather across India.",
-    "isPartOf": { "@id": "https://exploredesh.com/#website" }
-  }
   </script>
 </body>
 

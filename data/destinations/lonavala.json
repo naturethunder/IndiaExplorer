@@ -302,221 +302,66 @@
   ],
   "hotels": [
     {
-      "name": "Lonavala Alpine Lodge",
-      "type": "hotel",
-      "tier": "cheapest",
-      "priceMin": 1200,
-      "priceMax": 1900,
-      "rating": 4,
-      "reviews": 393,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Peak Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Alpine%20Lodge%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Treebo Summit View",
-      "type": "guesthouse",
-      "tier": "cheapest",
-      "priceMin": 2300,
-      "priceMax": 3250,
-      "rating": 3.8,
-      "reviews": 222,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Peak Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Summit%20View%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Ginger Pine Grove",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3600,
-      "priceMax": 5400,
-      "rating": 4,
-      "reviews": 252,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Summit View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Pine%20Grove%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Lonavala Hotel Royal Orchid",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7200,
-      "priceMax": 12000,
-      "rating": 4.1,
-      "reviews": 255,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Ridge Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Hotel%20Royal%20Orchid%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Lonavala Hilltop Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2913,
-      "priceMax": 3652,
-      "rating": 4.2,
-      "reviews": 953,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Summit View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Hilltop%20Retreat%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Lonavala Lemon Tree",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3143,
-      "priceMax": 4502,
-      "rating": 4.2,
-      "reviews": 781,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Lemon%20Tree%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Holiday Inn Lonavala",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6945,
-      "priceMax": 7519,
-      "rating": 4.4,
-      "reviews": 1829,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Hilltop Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Lonavala%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Lonavala Peak Stay",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 9762,
-      "priceMax": 11540,
-      "rating": 4.4,
-      "reviews": 790,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Peak%20Stay%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Sheraton Lonavala",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 11143,
-      "priceMax": 12565,
-      "rating": 4.4,
-      "reviews": 880,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Lonavala%20Lonavala%20Maharashtra"
-    },
-    {
-      "name": "Lonavala Taj",
+      "name": "MTDC Holiday Resort (Lonavala)",
       "type": "resort",
-      "tier": "luxury",
-      "priceMin": 19188,
-      "priceMax": 19789,
-      "rating": 4.5,
-      "reviews": 2091,
+      "tier": "cheapest",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Royal Experience",
-        "Pine Grove"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lonavala%20Taj%20Lonavala%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "Fariyas Resort Lonavala",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.5,
+      "reviews": 4800,
+      "amenities": [
+        "Wild Water Waterpark On-site",
+        "Frangipani Dining",
+        "Indoor Heated Pool",
+        "Spa"
+      ],
+      "tags": [
+        "Town Centre",
+        "Frichley Hills",
+        "Family Favorite"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Fariyas%20Resort%20Lonavala%20Lonavala%20Maharashtra"
+    },
+    {
+      "name": "The Machan - Treehouse Resort",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 14000,
+      "priceMax": 28000,
+      "rating": 4.8,
+      "reviews": 3600,
+      "amenities": [
+        "Canopy Machans 45ft in the Air",
+        "100% Eco Off-Grid",
+        "Valley Dining",
+        "Spa"
+      ],
+      "tags": [
+        "Town Centre",
+        "Jambulne Forest",
+        "World Luxury Eco Winner"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Machan%20-%20Treehouse%20Resort%20Lonavala%20Maharashtra"
     }
   ],
   "restaurants": [],

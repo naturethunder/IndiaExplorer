@@ -297,202 +297,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Eco Lodge",
-      "type": "guesthouse",
-      "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 3.8,
-      "reviews": 158,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Eco%20Lodge%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Nargu OYO Townhouse",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.3,
-      "reviews": 739,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Eco Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nargu%20OYO%20Townhouse%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Nargu Nature Retreat",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.3,
-      "reviews": 507,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Forest Rest House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nargu%20Nature%20Retreat%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Zone by The Park Wilderness Camp",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.2,
-      "reviews": 595,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Forest Rest House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Wilderness%20Camp%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Nargu Lemon Tree",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2983,
-      "priceMax": 4180,
-      "rating": 4.4,
-      "reviews": 1043,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Wilderness Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nargu%20Lemon%20Tree%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Nargu Birders Inn",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 4845,
-      "priceMax": 5772,
-      "rating": 4.5,
-      "reviews": 1148,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Eco Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nargu%20Birders%20Inn%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Sheraton River View Camp",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8563,
-      "priceMax": 9366,
-      "rating": 4.4,
-      "reviews": 1037,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20River%20View%20Camp%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Taj Nargu",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 15019,
-      "priceMax": 15892,
-      "rating": 4.6,
-      "reviews": 2362,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "World Class",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Nargu%20Nargu%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Aman Nargu",
+      "name": "Nargu Wildlife Sanctuary Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 40464,
-      "priceMax": 40780,
-      "rating": 4.6,
-      "reviews": 1270,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Holistic Wellness",
-        "Curated Dining",
-        "Butler",
-        "Chauffeur",
-        "Experiences"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Exclusive",
-        "Tiger Trail"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aman%20Nargu%20Nargu%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Nargu%20Wildlife%20Sanctuary%20Forest%20Rest%20House%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Zostel Old Manali",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.6,
+      "reviews": 5200,
+      "amenities": [
+        "Riverside Vibe",
+        "Garden Cafe",
+        "Live Music",
+        "Dorms & Privates"
+      ],
+      "tags": [
+        "Manali (40 km away)",
+        "Old Manali Culture",
+        "Backpacker Legend"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Old%20Manali%20Manali%20Himachal%20Pradesh"
+    },
+    {
+      "name": "HPTDC The Castle Naggar",
+      "type": "heritage",
+      "tier": "good",
+      "priceMin": 2400,
+      "priceMax": 4200,
+      "rating": 4.5,
+      "reviews": 3900,
+      "amenities": [
+        "500-Year-Old Medieval Castle",
+        "Kullu Valley Balcony",
+        "Museum",
+        "Restaurant"
+      ],
+      "tags": [
+        "Manali (40 km away)",
+        "Historic Landmark",
+        "Nicholas Roerich Trail"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20The%20Castle%20Naggar%20Manali%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Snow Valley Resorts Manali",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3200,
+      "priceMax": 5500,
+      "rating": 4.4,
+      "reviews": 4800,
+      "amenities": [
+        "Apple Orchard Setting",
+        "Rooftop Cafe",
+        "Game Room",
+        "Discotheque"
+      ],
+      "tags": [
+        "Manali (40 km away)",
+        "Log Hut Area",
+        "Snow Peaks Panorama"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Snow%20Valley%20Resorts%20Manali%20Manali%20Himachal%20Pradesh"
+    },
+    {
+      "name": "The Himalayan Manali",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 3400,
+      "amenities": [
+        "Victorian Gothic Castle",
+        "Swimming Pool",
+        "Dungeon Bar",
+        "Apple Orchards"
+      ],
+      "tags": [
+        "Manali (40 km away)",
+        "Gothic Castle Stay",
+        "Log Huts Area"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Himalayan%20Manali%20Manali%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],

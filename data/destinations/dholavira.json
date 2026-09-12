@@ -536,76 +536,87 @@
   ],
   "hotels": [
     {
-      "name": "Dholavira Tourism Resort & Tents",
-      "type": "resort",
-      "tier": "good",
-      "priceMin": 3200,
-      "priceMax": 6000,
-      "rating": 4.6,
-      "reviews": 240,
+      "name": "TCGL Toran Tourist Complex (Dholavira)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 850,
+      "priceMax": 1600,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Kutchi Bhunga Huts",
-        "Buffet Meals",
-        "Cultural Dance"
-      ],
-      "tags": [
-        "Eco Resort",
-        "Bhunga Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Dholavira%20Tourism%20Resort%20%26%20Tents%20Dholavira%20Gujarat"
-    },
-    {
-      "name": "Toran Resort Dholavira (TCGL)",
-      "type": "resort",
-      "tier": "good",
-      "priceMin": 2500,
-      "priceMax": 4800,
-      "rating": 4.4,
-      "reviews": 180,
-      "amenities": [
-        "AC Rooms",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Govt Resort"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Toran%20Resort%20Dholavira%20(TCGL)%20Dholavira%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=TCGL%20Toran%20Tourist%20Complex%20Dholavira%20Gujarat"
     },
     {
-      "name": "Toran Tourist Complex",
-      "type": "homestay",
+      "name": "Hotel Toran Bhuj (TCGL)",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.5,
-      "reviews": 150,
+      "priceMin": 1000,
+      "priceMax": 1800,
+      "rating": 4,
+      "reviews": 1400,
       "amenities": [
-        "Kutchi Village Food",
-        "Local Guide"
+        "Kutch Tourism Desk",
+        "Govt Canteen",
+        "Parking",
+        "Garden"
       ],
       "tags": [
-        "Homestay"
+        "Bhuj (91 km away)",
+        "State Tourism",
+        "Value Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Toran%20Tourist%20Complex%20Dholavira%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Toran%20Bhuj%20(TCGL)%20Bhuj%20Gujarat"
     },
     {
-      "name": "White Rann Camp Khadir",
-      "type": "camp",
-      "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 6500,
-      "rating": 4.7,
-      "reviews": 120,
+      "name": "Hotel Ilark Bhuj",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2100,
+      "priceMax": 3500,
+      "rating": 4.2,
+      "reviews": 2400,
       "amenities": [
-        "Swiss Glamping Tents",
-        "Desert Safari",
-        "Bonfire"
+        "Multi-cuisine Pure Veg",
+        "Free WiFi",
+        "Travel Desk for Rann",
+        "AC"
       ],
       "tags": [
-        "Glamping Camp"
+        "Bhuj (91 km away)",
+        "Central Town",
+        "Rann of Kutch Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=White%20Rann%20Camp%20Khadir%20Dholavira%20Gujarat"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Ilark%20Bhuj%20Bhuj%20Gujarat"
+    },
+    {
+      "name": "Regenta Resort Bhuj by Royal Orchid",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 3800,
+      "priceMax": 6800,
+      "rating": 4.5,
+      "reviews": 3200,
+      "amenities": [
+        "Heritage Kutch Architecture",
+        "Swimming Pool",
+        "Gazebo Dining",
+        "Gym"
+      ],
+      "tags": [
+        "Bhuj (91 km away)",
+        "Kutch Gateway",
+        "Resort Comfort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Regenta%20Resort%20Bhuj%20by%20Royal%20Orchid%20Bhuj%20Gujarat"
     }
   ],
   "gallery": [

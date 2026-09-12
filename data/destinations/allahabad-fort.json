@@ -494,158 +494,87 @@
   ],
   "hotels": [
     {
-      "name": "The Hosteller Allahabad",
-      "type": "hostel",
+      "name": "UPSTDC Rahi Tourist Bungalow (Allahabad Fort)",
+      "type": "guesthouse",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 3.8,
-      "reviews": 220,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Hosteller%20Allahabad%20Allahabad%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Allahabad Period Property",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.3,
-      "reviews": 288,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Allahabad%20Period%20Property%20Allahabad%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Ginger Mahal Palace",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 625,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Period Property"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Mahal%20Palace%20Allahabad%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Allahabad Sarovar Portico",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 461,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Allahabad%20Sarovar%20Portico%20Allahabad%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Allahabad Zone by The Park",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3114,
-      "priceMax": 4841,
-      "rating": 4.3,
-      "reviews": 1132,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Haveli Stay"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Allahabad%20Zone%20by%20The%20Park%20Allahabad%20Uttar%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=UPSTDC%20Rahi%20Tourist%20Bungalow%20Allahabad%20Fort%20Uttar%20Pradesh"
     },
     {
-      "name": "Fairfield by Marriott Allahabad",
+      "name": "UPSTDC Hotel Ilawart Prayagraj",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1100,
+      "priceMax": 1900,
+      "rating": 4,
+      "reviews": 1600,
+      "amenities": [
+        "Sangam Tour Booking",
+        "UP Tourism",
+        "Lawn Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "Prayagraj (3 km away)",
+        "State Tourism",
+        "Sangam Transit"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=UPSTDC%20Hotel%20Ilawart%20Prayagraj%20Prayagraj%20Uttar%20Pradesh"
+    },
+    {
+      "name": "Hotel Legend Prayagraj",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2200,
+      "priceMax": 3600,
+      "rating": 4.2,
+      "reviews": 2100,
+      "amenities": [
+        "Free Breakfast",
+        "AC Rooms",
+        "Travel Desk",
+        "WiFi"
+      ],
+      "tags": [
+        "Prayagraj (3 km away)",
+        "Station Proximity",
+        "Comfort Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Legend%20Prayagraj%20Prayagraj%20Uttar%20Pradesh"
+    },
+    {
+      "name": "Hotel Kanha Shyam Prayagraj",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 6857,
-      "priceMax": 7304,
-      "rating": 4.4,
-      "reviews": 781,
+      "priceMin": 3200,
+      "priceMax": 5500,
+      "rating": 4.3,
+      "reviews": 3400,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Civil Lines Location",
+        "Multi-cuisine Dining",
+        "Bar",
+        "Gym"
       ],
       "tags": [
-        "Premium Stay",
-        "Palace Hotel"
+        "Prayagraj (3 km away)",
+        "Civil Lines Hub",
+        "City Landmark"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Allahabad%20Allahabad%20Uttar%20Pradesh"
-    },
-    {
-      "name": "Hyatt Regency Haveli Stay",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8320,
-      "priceMax": 8977,
-      "rating": 4.4,
-      "reviews": 1022,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
-      ],
-      "tags": [
-        "Award Winning",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Haveli%20Stay%20Allahabad%20Uttar%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Kanha%20Shyam%20Prayagraj%20Prayagraj%20Uttar%20Pradesh"
     }
   ],
   "restaurants": [],

@@ -540,76 +540,108 @@
   ],
   "hotels": [
     {
-      "name": "Dandami Luxury Resort Chitrakote (CG Tourism)",
+      "name": "Chitrakote Falls Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "good",
-      "priceMin": 3200,
-      "priceMax": 6500,
-      "rating": 4.7,
-      "reviews": 380,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Waterfall View Cottages",
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Chitrakote%20Falls%20Forest%20Rest%20House%20Chhattisgarh"
+    },
+    {
+      "name": "Chhattisgarh Tourism Board Hotel Johar Chhattisgarh",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4,
+      "reviews": 1500,
+      "amenities": [
+        "State Tourism Unit",
+        "Tribal Handicrafts Display",
         "Restaurant",
-        "Gardens"
+        "Parking"
       ],
       "tags": [
-        "Govt Resort",
-        "Waterfall View"
+        "Raipur (228 km away)",
+        "Telibandha",
+        "State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Dandami%20Luxury%20Resort%20Chitrakote%20(CG%20Tourism)%20Chitrakote%20Falls%20Chhattisgarh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Chhattisgarh%20Tourism%20Board%20Hotel%20Johar%20Chhattisgarh%20Raipur%20Chhattisgarh"
     },
     {
-      "name": "Bastar Jungle Resort Jagdalpur",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 3800,
-      "priceMax": 7000,
-      "rating": 4.6,
-      "reviews": 240,
+      "name": "Hotel Babylon Inn Raipur",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2400,
+      "priceMax": 4000,
+      "rating": 4.2,
+      "reviews": 2900,
       "amenities": [
-        "Jungle Cottages",
-        "Tribal Dance Performance",
-        "Restaurant"
+        "Multi-cuisine Restaurant",
+        "Gym",
+        "Free WiFi",
+        "Central Location"
       ],
       "tags": [
-        "Jungle Lodge"
+        "Raipur (228 km away)",
+        "Jail Road",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bastar%20Jungle%20Resort%20Jagdalpur%20Chitrakote%20Falls%20Chhattisgarh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Babylon%20Inn%20Raipur%20Raipur%20Chhattisgarh"
     },
     {
-      "name": "Naman Bastar Resort Jagdalpur",
+      "name": "Courtyard by Marriott Raipur",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 10500,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Outdoor Pool",
+        "MoMo Cafe",
+        "Fitness Centre",
+        "Spa"
+      ],
+      "tags": [
+        "Raipur (228 km away)",
+        "NH 6 Labhandi",
+        "City Star"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Raipur%20Raipur%20Chhattisgarh"
+    },
+    {
+      "name": "Mayfair Lake Resort Raipur",
       "type": "resort",
       "tier": "best",
-      "priceMin": 4500,
-      "priceMax": 9000,
-      "rating": 4.8,
-      "reviews": 310,
+      "priceMin": 8000,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 3100,
       "amenities": [
-        "Swimming Pool",
-        "Spa",
-        "Fine Dining"
+        "Jhamtara Lake View",
+        "Grand Spa",
+        "Water Sports",
+        "Pool"
       ],
       "tags": [
-        "Luxury Resort"
+        "Raipur (228 km away)",
+        "Nava Raipur",
+        "Lakeside Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Naman%20Bastar%20Resort%20Jagdalpur%20Chitrakote%20Falls%20Chhattisgarh"
-    },
-    {
-      "name": "Chitrakote Homestay",
-      "type": "homestay",
-      "tier": "budget",
-      "priceMin": 1800,
-      "priceMax": 3500,
-      "rating": 4.5,
-      "reviews": 150,
-      "amenities": [
-        "Tribal Cooking",
-        "River Access"
-      ],
-      "tags": [
-        "Tribal Homestay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chitrakote%20Homestay%20Chitrakote%20Falls%20Chhattisgarh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Lake%20Resort%20Raipur%20Raipur%20Chhattisgarh"
     }
   ],
   "gallery": [

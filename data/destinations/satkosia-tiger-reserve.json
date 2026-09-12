@@ -242,203 +242,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Satkosia",
+      "name": "Satkosia Tiger Reserve Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Satkosia%20Tiger%20Reserve%20Forest%20Rest%20House%20Odisha"
+    },
+    {
+      "name": "Ginger Bhubaneswar",
       "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4,
-      "reviews": 192,
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 2900,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Fitness Centre",
+        "Cafe Et Cetera",
+        "Free High Speed WiFi",
+        "Tata Brand"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Tiger Trail"
+        "Bhubaneswar (107 km away)",
+        "Jayadev Vihar",
+        "Smart Budget Business"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Satkosia%20Satkosia%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Bhubaneswar%20Bhubaneswar%20Odisha"
     },
     {
-      "name": "Ginger Safari Lodge",
-      "type": "hotel",
+      "name": "OTDC Panthanivas Bhubaneswar",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4,
-      "reviews": 713,
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
+        "Odisha Tourism Property",
+        "Odia Cuisine Restaurant",
+        "Tour Bus Desk",
+        "Lawn"
       ],
       "tags": [
-        "Smart Choice",
-        "Tiger Trail"
+        "Bhubaneswar (107 km away)",
+        "Lewis Road",
+        "State Tourism Unit"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Safari%20Lodge%20Satkosia%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=OTDC%20Panthanivas%20Bhubaneswar%20Bhubaneswar%20Odisha"
     },
     {
-      "name": "Satkosia Jungle Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.3,
-      "reviews": 252,
+      "name": "Mayfair Lagoon Bhubaneswar",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8500,
+      "priceMax": 17000,
+      "rating": 4.7,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
+        "Private Lagoon",
+        "Sprawling Greenery",
+        "Outdoor Pool",
+        "Multiple Fine Dining"
       ],
       "tags": [
-        "Popular Pick",
-        "Safari Lodge"
+        "Bhubaneswar (107 km away)",
+        "Jaydev Vihar",
+        "Temple City Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Satkosia%20Jungle%20Lodge%20Satkosia%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Lagoon%20Bhubaneswar%20Bhubaneswar%20Odisha"
     },
     {
-      "name": "Satkosia Nature Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.4,
-      "reviews": 822,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Satkosia%20Nature%20Retreat%20Satkosia%20Odisha"
-    },
-    {
-      "name": "Lemon Tree Satkosia",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3184,
-      "priceMax": 3673,
-      "rating": 4.3,
-      "reviews": 1152,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Satkosia%20Satkosia%20Odisha"
-    },
-    {
-      "name": "Novotel Nature Retreat",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6181,
-      "priceMax": 7741,
-      "rating": 4.4,
-      "reviews": 1820,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Nature%20Retreat%20Satkosia%20Odisha"
-    },
-    {
-      "name": "Taj Vivanta Satkosia",
+      "name": "Trident Hotel Bhubaneswar",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8701,
-      "priceMax": 10245,
+      "priceMin": 7500,
+      "priceMax": 14000,
       "rating": 4.6,
-      "reviews": 817,
+      "reviews": 3200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Lush Gardens",
+        "Outdoor Pool",
+        "Jogging Track",
+        "Oberoi Hospitality"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Jungle Lodge"
+        "Bhubaneswar (107 km away)",
+        "Nayapalli",
+        "Boutique Garden Hotel"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Vivanta%20Satkosia%20Satkosia%20Odisha"
-    },
-    {
-      "name": "Satkosia Wilderness Camp",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 13045,
-      "priceMax": 14462,
-      "rating": 4.6,
-      "reviews": 1660,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
-      ],
-      "tags": [
-        "Iconic Luxury",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Satkosia%20Wilderness%20Camp%20Satkosia%20Odisha"
-    },
-    {
-      "name": "Oberoi Rajvilas Nature Retreat",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 29043,
-      "priceMax": 30088,
-      "rating": 4.6,
-      "reviews": 1222,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
-      ],
-      "tags": [
-        "Ultra Luxury",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Oberoi%20Rajvilas%20Nature%20Retreat%20Satkosia%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=Trident%20Hotel%20Bhubaneswar%20Bhubaneswar%20Odisha"
     }
   ],
   "restaurants": [],

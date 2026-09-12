@@ -177,7 +177,7 @@ async function searchPexels(query, limit = 10) {
 async function searchOpenverse(query, limit = 10) {
   try {
     const url = `https://api.openverse.org/v1/images/?q=${encodeURIComponent(query)}&page_size=${limit}`;
-    const res = await fetch(url);
+    const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
     if (!res.ok) return [];
     const data = await res.json();
     return (data.results || []).map(p => ({
@@ -222,7 +222,52 @@ async function searchWikimedia(query, limit = 15) {
   }
 }
 
-// 5. Multi-provider search with priority (Unsplash -> Pexels -> Openverse -> Wikimedia in LAST)
+// E. Pixabay (5,000 requests/hour free)
+async function searchPixabay(query, limit = 10) {
+  if (!env.PIXABAY_API_KEY) return [];
+  try {
+    const url = `https://pixabay.com/api/?key=${env.PIXABAY_API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&safesearch=true&per_page=${Math.min(limit, 50)}&orientation=horizontal`;
+    const res = await fetch(url);
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data.hits || []).map(p => ({
+      provider: 'pixabay',
+      title: p.tags || query,
+      url: p.largeImageURL || p.webformatURL,
+      width: p.imageWidth,
+      height: p.imageHeight
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
+// F. Flickr Creative Commons (100% Free, Unlimited)
+async function searchFlickr(query, limit = 10) {
+  try {
+    const cleanTags = query.toLowerCase().replace(/[^a-z0-9]/g, ',');
+    const url = `https://api.flickr.com/services/feeds/photos_public.gne?tags=${encodeURIComponent(cleanTags)},india,travel&tagmode=any&format=json&nojsoncallback=1`;
+    const res = await fetch(url, { headers: { 'User-Agent': 'ExploreDesh/2.0' } });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data.items || []).slice(0, limit).map(item => {
+      const thumb = item.media?.m || '';
+      const url2k = thumb.replace('_m.', '_k.');
+      return {
+        provider: 'flickr',
+        title: item.title || query,
+        url: url2k,
+        width: 2048,
+        height: 1365
+      };
+    });
+  } catch (e) {
+    return [];
+  }
+}
+
+// 5. Multi-provider search with robust failover:
+// Pixabay (5k/hr) -> Pexels -> Unsplash -> Flickr -> Openverse -> Wikimedia
 async function getCandidatesForQueries(queries, limit = 10) {
   const candidates = [];
   const seenUrls = new Set();
@@ -235,9 +280,9 @@ async function getCandidatesForQueries(queries, limit = 10) {
     candidates.push(item);
   }
 
-  // Pass 1: Unsplash
+  // Pass 1: Pixabay (High quota 5,000/hr)
   for (const q of queries) {
-    const res = await searchUnsplash(q, limit);
+    const res = await searchPixabay(q, limit);
     for (const item of res) addCandidate(item);
   }
 
@@ -247,13 +292,25 @@ async function getCandidatesForQueries(queries, limit = 10) {
     for (const item of res) addCandidate(item);
   }
 
-  // Pass 3: Openverse
+  // Pass 3: Unsplash
+  for (const q of queries) {
+    const res = await searchUnsplash(q, limit);
+    for (const item of res) addCandidate(item);
+  }
+
+  // Pass 4: Flickr (Unlimited)
+  for (const q of queries) {
+    const res = await searchFlickr(q, limit);
+    for (const item of res) addCandidate(item);
+  }
+
+  // Pass 5: Openverse
   for (const q of queries) {
     const res = await searchOpenverse(q, limit);
     for (const item of res) addCandidate(item);
   }
 
-  // Pass 4: Wikimedia Commons (ONLY IF WE HAVE FEWER CANDIDATES THAN REQUESTED)
+  // Pass 6: Wikimedia Commons
   if (candidates.length < limit * 2) {
     for (const q of queries) {
       const res = await searchWikimedia(q, limit);
@@ -274,6 +331,8 @@ module.exports = {
   isRejected,
   searchUnsplash,
   searchPexels,
+  searchPixabay,
+  searchFlickr,
   searchOpenverse,
   searchWikimedia,
   getCandidatesForQueries

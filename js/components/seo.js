@@ -280,6 +280,12 @@ export function contactPageJsonLd(opts = {}) {
     name: opts.title || 'Contact Us — ExploreDesh',
     description: opts.description || 'Get in touch with the ExploreDesh team.',
     url: canonical,
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'ExploreDesh',
+      url: 'https://exploredesh.com/',
+      email: 'naturethunder8@gmail.com',
+    },
     mainEntityOfPage: canonical,
   };
 }

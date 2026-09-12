@@ -539,79 +539,108 @@
   ],
   "hotels": [
     {
-      "name": "ifeelhimalayas cottage",
-      "type": "cottage",
-      "tier": "good",
-      "priceMin": 3200,
-      "priceMax": 6500,
-      "rating": 4.8,
-      "reviews": 410,
+      "name": "HPTDC Tourist Inn (Jibhi)",
+      "type": "hotel",
+      "tier": "cheapest",
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Wooden Treehouses",
-        "Stream Balcony",
-        "Bonfire",
-        "Cafe"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Treehouse",
-        "Nature"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=ifeelhimalayas%20cottage%20Jibhi%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Tourist%20Inn%20Jibhi%20Himachal%20Pradesh"
     },
     {
-      "name": "Forest Office",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 2800,
-      "priceMax": 5200,
-      "rating": 4.7,
-      "reviews": 310,
+      "name": "Zostel Shimla",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 750,
+      "priceMax": 1500,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "Mud & Stone Chalets",
-        "Artisan Cafe",
-        "Stream View"
+        "Valley View Terrace",
+        "Cozy Common Rooms",
+        "Board Games",
+        "WiFi"
       ],
       "tags": [
-        "Eco Resort",
-        "Workation"
+        "Shimla (66 km away)",
+        "Backpacker Choice",
+        "Social Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Forest%20Office%20Jibhi%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Sun N Sky",
-      "type": "resort",
+      "name": "HPTDC Hotel Peterhof",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 2200,
+      "priceMin": 2600,
       "priceMax": 4500,
-      "rating": 4.6,
-      "reviews": 220,
+      "rating": 4.3,
+      "reviews": 3200,
       "amenities": [
-        "Pine Chalets",
-        "Heater",
-        "Himachali Meals"
+        "Viceregal Heritage",
+        "Lush Lawns",
+        "Restaurant",
+        "Free Parking"
       ],
       "tags": [
-        "Wooden Cottage"
+        "Shimla (66 km away)",
+        "State Heritage",
+        "Historic Grounds"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sun%20N%20Sky%20Jibhi%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Hotel%20Peterhof%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "River View Home Stay",
-      "type": "homestay",
-      "tier": "budget",
-      "priceMin": 1500,
-      "priceMax": 2800,
-      "rating": 4.6,
-      "reviews": 190,
+      "name": "Hotel Combermere Shimla",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 7800,
+      "rating": 4.4,
+      "reviews": 3600,
       "amenities": [
-        "Home Cooked Food",
-        "Garden",
-        "Valley View"
+        "Private Passenger Lift to Mall Road",
+        "Gym",
+        "Nightclub",
+        "Billiards"
       ],
       "tags": [
-        "Homestay"
+        "Shimla (66 km away)",
+        "The Mall Access",
+        "Prime Location"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=River%20View%20Home%20Stay%20Jibhi%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Combermere%20Shimla%20Shimla%20Himachal%20Pradesh"
+    },
+    {
+      "name": "The Oberoi Cecil, Shimla",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 16000,
+      "priceMax": 30000,
+      "rating": 4.8,
+      "reviews": 4900,
+      "amenities": [
+        "Colonial Ballroom",
+        "Indoor Heated Pool",
+        "Oberoi Spa",
+        "Fine Dining"
+      ],
+      "tags": [
+        "Shimla (66 km away)",
+        "Historic 1884 Luxury",
+        "Chaura Maidan"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Cecil%2C%20Shimla%20Shimla%20Himachal%20Pradesh"
     }
   ],
   "gallery": [

@@ -539,73 +539,87 @@
   ],
   "hotels": [
     {
-      "name": "Unakoti Tourist Lodge Kailashahar (TTDC)",
-      "type": "lodge",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3500,
-      "rating": 4.4,
-      "reviews": 220,
+      "name": "State Tourism Rest House (Unakoti)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 900,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Restaurant",
-        "AC Rooms",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Govt Lodge"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Unakoti%20Tourist%20Lodge%20Kailashahar%20(TTDC)%20Unakoti%20Tripura"
+      "url": "https://www.google.com/maps/search/?api=1&query=State%20Tourism%20Rest%20House%20Unakoti%20Tripura"
     },
     {
-      "name": "Jampui Hills Eden Tourist Lodge",
-      "type": "resort",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4200,
-      "rating": 4.6,
-      "reviews": 180,
-      "amenities": [
-        "Orange Garden View",
-        "Dining"
-      ],
-      "tags": [
-        "Hill Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Jampui%20Hills%20Eden%20Tourist%20Lodge%20Unakoti%20Tripura"
-    },
-    {
-      "name": "Sri Krishna Hotel",
+      "name": "Hotel Centre Point Shillong",
       "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1500,
-      "priceMax": 2800,
+      "tier": "good",
+      "priceMin": 2600,
+      "priceMax": 4400,
       "rating": 4.3,
-      "reviews": 140,
+      "reviews": 2900,
       "amenities": [
-        "AC",
-        "Free WiFi"
+        "Heart of Police Bazar",
+        "Cloud 9 Nightclub",
+        "Free WiFi",
+        "AC"
       ],
       "tags": [
-        "Budget Hotel"
+        "Shillong (141 km away)",
+        "Police Bazar Central",
+        "Shoppers Favorite"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sri%20Krishna%20Hotel%20Unakoti%20Tripura"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Centre%20Point%20Shillong%20Shillong%20Meghalaya"
     },
     {
-      "name": "Manu Valley Plantation Homestay",
-      "type": "homestay",
-      "tier": "budget",
-      "priceMin": 1600,
-      "priceMax": 3000,
-      "rating": 4.5,
-      "reviews": 100,
+      "name": "Hotel Polo Towers Shillong",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 7800,
+      "rating": 4.4,
+      "reviews": 3600,
       "amenities": [
-        "Plantation Walk",
-        "Local Meals"
+        "Polo Grounds View",
+        "Ginger Restaurant",
+        "Platinum Bar",
+        "Spa"
       ],
       "tags": [
-        "Homestay"
+        "Shillong (141 km away)",
+        "Oakland",
+        "Shillong Landmark"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Manu%20Valley%20Plantation%20Homestay%20Unakoti%20Tripura"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Polo%20Towers%20Shillong%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Ri Kynjai - Serenity by the Lake",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 3100,
+      "amenities": [
+        "Khasi Thatch Architecture",
+        "Umiam Lakefront Panorama",
+        "Sao Fe Dining",
+        "Ayurveda"
+      ],
+      "tags": [
+        "Shillong (141 km away)",
+        "Umiam Lake",
+        "Scotland of the East"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ri%20Kynjai%20-%20Serenity%20by%20the%20Lake%20Shillong%20Meghalaya"
     }
   ],
   "gallery": [

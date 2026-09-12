@@ -298,155 +298,87 @@
   ],
   "hotels": [
     {
-      "name": "Kolkata Treebo",
-      "type": "hotel",
+      "name": "WBTDC Tourist Lodge (Kolkata)",
+      "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 1200,
-      "priceMax": 1900,
-      "rating": 4.2,
-      "reviews": 140,
+      "priceMin": 950,
+      "priceMax": 1800,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Manor House"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Treebo%20Kolkata%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=WBTDC%20Tourist%20Lodge%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Kolkata Mahal Palace",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2300,
-      "priceMax": 3250,
-      "rating": 4,
-      "reviews": 536,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Mahal%20Palace%20Kolkata%20West%20Bengal"
-    },
-    {
-      "name": "OYO Townhouse Mahal Palace",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3600,
-      "priceMax": 5400,
-      "rating": 4.3,
-      "reviews": 686,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Heritage Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Mahal%20Palace%20Kolkata%20West%20Bengal"
-    },
-    {
-      "name": "Kolkata Ginger",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 7200,
-      "priceMax": 12000,
-      "rating": 4.4,
-      "reviews": 776,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Heritage Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Ginger%20Kolkata%20West%20Bengal"
-    },
-    {
-      "name": "Kolkata Rajwada",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3593,
-      "priceMax": 5243,
-      "rating": 4.2,
-      "reviews": 348,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Rajwada"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Rajwada%20Kolkata%20West%20Bengal"
-    },
-    {
-      "name": "Kolkata Fairfield by Marriott",
-      "type": "hotel",
+      "name": "The Lalit Great Eastern Kolkata",
+      "type": "heritage",
       "tier": "better",
-      "priceMin": 6167,
-      "priceMax": 6927,
+      "priceMin": 4500,
+      "priceMax": 8200,
       "rating": 4.4,
-      "reviews": 596,
+      "reviews": 4200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Jewel of the East Since 1841",
+        "Bakery",
+        "Outdoor Pool",
+        "Spa"
       ],
       "tags": [
-        "Top Amenities",
-        "Palace Hotel"
+        "Town Centre",
+        "BBD Bagh Dalhousie",
+        "Historic Luxury Hotel"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kolkata%20Fairfield%20by%20Marriott%20Kolkata%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Lalit%20Great%20Eastern%20Kolkata%20Kolkata%20West%20Bengal"
     },
     {
-      "name": "Westin Heritage Hotel",
+      "name": "The Oberoi Grand, Kolkata",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.8,
+      "reviews": 7100,
+      "amenities": [
+        "Colonial Grande Dame Since 1880s",
+        "Palm-fringed Pool",
+        "Baan Thai Dining",
+        "Oberoi Spa"
+      ],
+      "tags": [
+        "Town Centre",
+        "Esplanade Central",
+        "Grande Dame of Chowringhee"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Grand%2C%20Kolkata%20Kolkata%20West%20Bengal"
+    },
+    {
+      "name": "ITC Sonar, a Luxury Collection Hotel, Kolkata",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 9283,
-      "priceMax": 11179,
-      "rating": 4.4,
-      "reviews": 686,
+      "priceMin": 7500,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 6200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Water Lily Pavilions",
+        "Peshawri & Dum Pukht",
+        "Kaya Kalp Spa",
+        "Jogging Track"
       ],
       "tags": [
-        "Award Winning",
-        "Legacy Hotel"
+        "Town Centre",
+        "EM Bypass",
+        "Business & Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Heritage%20Hotel%20Kolkata%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Sonar%2C%20a%20Luxury%20Collection%20Hotel%2C%20Kolkata%20Kolkata%20West%20Bengal"
     }
   ],
   "restaurants": [],

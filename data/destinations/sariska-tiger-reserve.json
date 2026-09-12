@@ -272,204 +272,129 @@
   ],
   "hotels": [
     {
-      "name": "Sariska Backpackers",
+      "name": "Sariska Tiger Reserve Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Tiger%20Reserve%20Forest%20Rest%20House%20Rajasthan"
+    },
+    {
+      "name": "Zostel Jaipur",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 3.8,
-      "reviews": 479,
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
       ],
       "tags": [
-        "Value Stay",
-        "Eco Lodge"
+        "Jaipur (79 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Backpackers%20Sariska%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Sariska Ginger",
+      "name": "RTDC Hotel Teej Jaipur",
       "type": "hotel",
       "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4.1,
-      "reviews": 254,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Ginger%20Sariska%20Rajasthan"
-    },
-    {
-      "name": "OYO Townhouse Eco Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4,
-      "reviews": 716,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Forest Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Eco%20Lodge%20Sariska%20Rajasthan"
-    },
-    {
-      "name": "Sariska Zone by The Park",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.2,
-      "reviews": 751,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
         "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Safari Lodge"
+        "Jaipur (79 km away)",
+        "State Tourism",
+        "Collectorate Circle"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Zone%20by%20The%20Park%20Sariska%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Sariska Keys Select",
-      "type": "hotel",
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 2924,
-      "priceMax": 4842,
-      "rating": 4.4,
-      "reviews": 342,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Travel Desk"
       ],
       "tags": [
-        "Well Rated",
-        "Forest Camp"
+        "Jaipur (79 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Keys%20Select%20Sariska%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Sariska River View Camp",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5297,
-      "priceMax": 7255,
-      "rating": 4.3,
-      "reviews": 555,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Business Preferred",
-        "River View Camp"
+        "Jaipur (79 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20River%20View%20Camp%20Sariska%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Sheraton Sariska",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 9256,
-      "priceMax": 9699,
-      "rating": 4.4,
-      "reviews": 2507,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Luxury Experience",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Sariska%20Sariska%20Rajasthan"
-    },
-    {
-      "name": "Sariska Oberoi",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 15444,
-      "priceMax": 17075,
+      "priceMin": 7000,
+      "priceMax": 15000,
       "rating": 4.6,
-      "reviews": 3921,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Ayurveda Spa",
-        "Royal Dining",
-        "Personal Butler",
-        "Private Jet Access"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Royal Experience",
-        "Safari Lodge"
+        "Jaipur (79 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sariska%20Oberoi%20Sariska%20Rajasthan"
-    },
-    {
-      "name": "The Alila Sariska",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 32916,
-      "priceMax": 33496,
-      "rating": 4.8,
-      "reviews": 390,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Holistic Wellness",
-        "Curated Dining",
-        "Butler",
-        "Chauffeur",
-        "Experiences"
-      ],
-      "tags": [
-        "Exclusive",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Alila%20Sariska%20Sariska%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],

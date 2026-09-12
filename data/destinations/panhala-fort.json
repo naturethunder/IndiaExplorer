@@ -368,157 +368,87 @@
   ],
   "hotels": [
     {
-      "name": "FabHotels Manor House",
-      "type": "hotel",
+      "name": "MTDC Holiday Resort (Panhala Fort)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 429,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Manor%20House%20Panhala%20Maharashtra"
-    },
-    {
-      "name": "Panhala Heritage Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
+      "priceMin": 1100,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 506,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Legacy Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Panhala%20Heritage%20Hotel%20Panhala%20Maharashtra"
-    },
-    {
-      "name": "Panhala Ginger",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 596,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Legacy Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Panhala%20Ginger%20Panhala%20Maharashtra"
-    },
-    {
-      "name": "Panhala Sarovar Portico",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 995,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Rajwada"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Panhala%20Sarovar%20Portico%20Panhala%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Panhala%20Fort%20Maharashtra"
     },
     {
-      "name": "Fairfield by Marriott Mahal Palace",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3650,
-      "priceMax": 5449,
-      "rating": 4.3,
-      "reviews": 1052,
+      "name": "MTDC Holiday Resort Mahabaleshwar",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.1,
+      "reviews": 3100,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "State Tourism Run",
+        "Spacious Forest Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Period Property"
+        "Mahabaleshwar (133 km away)",
+        "State Tourism",
+        "Affordable Nature"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Mahal%20Palace%20Panhala%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra"
     },
     {
-      "name": "Panhala Fort Residence",
-      "type": "hotel",
+      "name": "Brightland Resort & Spa Mahabaleshwar",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 6050,
-      "priceMax": 7173,
-      "rating": 4.5,
-      "reviews": 708,
+      "priceMin": 5500,
+      "priceMax": 9800,
+      "rating": 4.4,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Krishna Valley View",
+        "Solar Heated Pool",
+        "Prana Spa",
+        "Italian Dining"
       ],
       "tags": [
-        "Premium Stay",
-        "Manor House"
+        "Mahabaleshwar (133 km away)",
+        "Kate's Point Road",
+        "Valley Panorama"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Panhala%20Fort%20Residence%20Panhala%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Brightland%20Resort%20%26%20Spa%20Mahabaleshwar%20Mahabaleshwar%20Maharashtra"
     },
     {
-      "name": "Panhala Marriott",
-      "type": "hotel",
+      "name": "Le Méridien Mahabaleshwar Resort & Spa",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 9983,
-      "priceMax": 10743,
-      "rating": 4.4,
-      "reviews": 2879,
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.7,
+      "reviews": 4200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "27 Acres of Evergreen Forest",
+        "Rooftop Infinity Pool",
+        "Chingari Grill",
+        "Explore Spa"
       ],
       "tags": [
-        "Award Winning",
-        "Heritage Hotel"
+        "Mahabaleshwar (133 km away)",
+        "Western Ghats Mist",
+        "Luxury Haven"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Panhala%20Marriott%20Panhala%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Mahabaleshwar%20Resort%20%26%20Spa%20Mahabaleshwar%20Maharashtra"
     }
   ],
   "restaurants": [],

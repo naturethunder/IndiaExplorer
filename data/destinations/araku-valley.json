@@ -298,225 +298,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Araku",
-      "type": "hotel",
+      "name": "APTDC Haritha Resort (Araku Valley)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 1100,
-      "priceMax": 1750,
-      "rating": 3.8,
-      "reviews": 427,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Valley View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Araku%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "FabHotels Araku",
-      "type": "hotel",
-      "tier": "cheapest",
-      "priceMin": 2100,
-      "priceMax": 2950,
-      "rating": 3.9,
-      "reviews": 349,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Araku%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "Ginger Araku",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3300,
-      "priceMax": 4950,
-      "rating": 4,
-      "reviews": 470,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Araku%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "Zostel Plus Araku",
-      "type": "hostel",
-      "tier": "budget",
-      "priceMin": 6600,
-      "priceMax": 11000,
+      "priceMin": 1000,
+      "priceMax": 1900,
       "rating": 4.1,
-      "reviews": 269,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Good Value",
-        "Mountain Resort"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Araku%20Araku%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=APTDC%20Haritha%20Resort%20Araku%20Valley%20Andhra%20Pradesh"
     },
     {
-      "name": "Araku Lemon Tree",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2742,
-      "priceMax": 4583,
-      "rating": 4.3,
-      "reviews": 448,
+      "name": "APTDC Haritha Rushikonda Beach Resort",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 1600,
+      "priceMax": 3000,
+      "rating": 4.2,
+      "reviews": 3100,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
+        "Hillside Ocean View Cottages",
+        "Direct Rushikonda Beach",
         "Restaurant",
         "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Peak Stay"
+        "Visakhapatnam (80 km away)",
+        "State Tourism",
+        "Beachside Cottages"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Lemon%20Tree%20Araku%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=APTDC%20Haritha%20Rushikonda%20Beach%20Resort%20Visakhapatnam%20Andhra%20Pradesh"
     },
     {
-      "name": "Araku Keys Select",
+      "name": "Hotel Green Park Visakhapatnam",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 3455,
-      "priceMax": 3788,
-      "rating": 4.1,
-      "reviews": 818,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Mountain Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Keys%20Select%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "Araku Pine Grove",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6736,
-      "priceMax": 7783,
-      "rating": 4.5,
-      "reviews": 1805,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Pine Grove"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20Pine%20Grove%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "The Gateway Ridge Resort",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8160,
-      "priceMax": 8524,
-      "rating": 4.6,
-      "reviews": 832,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
-      ],
-      "tags": [
-        "Award Winning",
-        "Peak Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Ridge%20Resort%20Araku%20Andhra%20Pradesh"
-    },
-    {
-      "name": "Hilton Peak Stay",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8199,
-      "priceMax": 9292,
+      "priceMin": 2600,
+      "priceMax": 4200,
       "rating": 4.4,
-      "reviews": 843,
+      "reviews": 3800,
       "amenities": [
+        "Famous Midnight Biryani",
+        "Tulips Cafe",
         "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Gym"
       ],
       "tags": [
-        "Luxury Experience",
-        "Alpine Lodge"
+        "Visakhapatnam (80 km away)",
+        "Waltair Main Road",
+        "City Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Peak%20Stay%20Araku%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Green%20Park%20Visakhapatnam%20Visakhapatnam%20Andhra%20Pradesh"
     },
     {
-      "name": "Araku ITC",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 15244,
-      "priceMax": 16298,
+      "name": "The Gateway Hotel Beach Road Visakhapatnam (IHCL)",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 10000,
       "rating": 4.6,
-      "reviews": 1748,
+      "reviews": 4600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
+        "Bay of Bengal Ocean Views",
+        "Lawns",
+        "Outdoor Pool",
+        "Ming Garden"
       ],
       "tags": [
-        "Iconic Luxury",
-        "Alpine Lodge"
+        "Visakhapatnam (80 km away)",
+        "Beach Road Promenade",
+        "Tata Hospitality"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Araku%20ITC%20Araku%20Andhra%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Hotel%20Beach%20Road%20Visakhapatnam%20(IHCL)%20Visakhapatnam%20Andhra%20Pradesh"
+    },
+    {
+      "name": "Novotel Visakhapatnam Varun Beach",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 7000,
+      "priceMax": 13000,
+      "rating": 4.6,
+      "reviews": 6200,
+      "amenities": [
+        "Infinity Pool Overlooking Ocean",
+        "The Square Dining",
+        "Spa",
+        "Executive Lounge"
+      ],
+      "tags": [
+        "Visakhapatnam (80 km away)",
+        "Varun Beach",
+        "5-Star Oceanfront"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Visakhapatnam%20Varun%20Beach%20Visakhapatnam%20Andhra%20Pradesh"
     }
   ],
   "restaurants": [],

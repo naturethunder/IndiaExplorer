@@ -368,227 +368,87 @@
   ],
   "hotels": [
     {
-      "name": "FabHotels Chandrabhaga",
+      "name": "OTDC Panthanivas (Chandrabhaga beach)",
       "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 1200,
-      "priceMax": 1900,
+      "priceMin": 1100,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 309,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Coastal Haven"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Chandrabhaga%20Chandrabhaga%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=OTDC%20Panthanivas%20Chandrabhaga%20beach%20Odisha"
     },
     {
-      "name": "OYO Townhouse Palm Grove",
-      "type": "hotel",
+      "name": "OTDC Panthanivas Puri",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 2300,
-      "priceMax": 3250,
+      "priceMin": 1400,
+      "priceMax": 2400,
       "rating": 4.1,
-      "reviews": 429,
+      "reviews": 2900,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
+        "Sea Facing Lawns",
+        "Odisha Tourism Run",
+        "Authentic Dalma & Seafood",
+        "Parking"
       ],
       "tags": [
-        "Smart Choice",
-        "Sand & Surf"
+        "Puri (26 km away)",
+        "State Tourism",
+        "Beach Road Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Palm%20Grove%20Chandrabhaga%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=OTDC%20Panthanivas%20Puri%20Puri%20Odisha"
     },
     {
-      "name": "Chandrabhaga Coastal Haven",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3600,
-      "priceMax": 5400,
-      "rating": 4.3,
-      "reviews": 686,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Tide Pool"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Coastal%20Haven%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Sand & Surf",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 7200,
-      "priceMax": 12000,
-      "rating": 4.3,
-      "reviews": 519,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Seaside Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Sand%20%26%20Surf%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Zone by The Park",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3415,
-      "priceMax": 4694,
-      "rating": 4.4,
-      "reviews": 474,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Sand & Surf"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Zone%20by%20The%20Park%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Tide Pool",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5687,
-      "priceMax": 6611,
-      "rating": 4.4,
-      "reviews": 1011,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Harbour View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Tide%20Pool%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Le Méridien",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 7851,
-      "priceMax": 9238,
-      "rating": 4.6,
-      "reviews": 1588,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Sand & Surf"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Le%20M%C3%A9ridien%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Taj Vivanta",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 10175,
-      "priceMax": 11262,
-      "rating": 4.6,
-      "reviews": 710,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
-      ],
-      "tags": [
-        "Celebrity Choice",
-        "Ocean View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Taj%20Vivanta%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "ITC Tide Pool",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 16202,
-      "priceMax": 16822,
-      "rating": 4.6,
-      "reviews": 3145,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "Royal Experience",
-        "Coastal Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Tide%20Pool%20Chandrabhaga%20Odisha"
-    },
-    {
-      "name": "Chandrabhaga Harbour View",
+      "name": "Toshali Sands Ethnic Village Resort Puri",
       "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 38871,
-      "priceMax": 39884,
-      "rating": 4.8,
-      "reviews": 945,
+      "tier": "better",
+      "priceMin": 3500,
+      "priceMax": 6500,
+      "rating": 4.3,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Private Dining",
-        "Butler",
-        "Yacht",
-        "Cultural Programs",
-        "Wellness Retreat"
+        "30 Acres of Greenery",
+        "Balighai Private Beach",
+        "Ayurveda",
+        "Swimming Pool"
       ],
       "tags": [
-        "Exclusive",
-        "Coastal Haven"
+        "Puri (26 km away)",
+        "Konark Marine Drive",
+        "Odisha Heritage"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Chandrabhaga%20Harbour%20View%20Chandrabhaga%20Odisha"
+      "url": "https://www.google.com/maps/search/?api=1&query=Toshali%20Sands%20Ethnic%20Village%20Resort%20Puri%20Puri%20Odisha"
+    },
+    {
+      "name": "Mayfair Waves, Puri",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8500,
+      "priceMax": 16000,
+      "rating": 4.7,
+      "reviews": 4800,
+      "amenities": [
+        "Direct Golden Beach Access",
+        "Oceanfront Pool",
+        "Samudra Dining",
+        "Spa"
+      ],
+      "tags": [
+        "Puri (26 km away)",
+        "Chakratirtha Road",
+        "Luxury Beachfront"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Waves%2C%20Puri%20Puri%20Odisha"
     }
   ],
   "restaurants": [],

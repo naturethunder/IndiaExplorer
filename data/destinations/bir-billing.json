@@ -296,155 +296,87 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Bir Billing",
+      "name": "Bir Billing Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Bir%20Billing%20Forest%20Rest%20House%20Himachal%20Pradesh"
+    },
+    {
+      "name": "Zostel Dharamkot",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 1000,
-      "priceMax": 1600,
-      "rating": 4,
-      "reviews": 135,
+      "priceMin": 650,
+      "priceMax": 1300,
+      "rating": 4.6,
+      "reviews": 3900,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Triund Trek Base",
+        "Mountain Cafe",
+        "Yoga Terrace",
+        "WiFi"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Expedition Stay"
+        "Dharamshala (42 km away)",
+        "Dharamkot Village",
+        "Himalayan Vibe"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Dharamkot%20Dharamshala%20Himachal%20Pradesh"
     },
     {
-      "name": "Lemon Tree Red Fox Bir Billing",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1900,
-      "priceMax": 2700,
-      "rating": 4.1,
-      "reviews": 343,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Adventure Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
-    },
-    {
-      "name": "OYO Townhouse Valley Base",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3000,
-      "priceMax": 4500,
-      "rating": 4,
-      "reviews": 783,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Summit Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Valley%20Base%20Bir%20Billing%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Sarovar Portico Summit Camp",
+      "name": "HPTDC Hotel Bhagsu McLeod Ganj",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 6000,
-      "priceMax": 10000,
-      "rating": 4.4,
-      "reviews": 403,
+      "priceMin": 2200,
+      "priceMax": 3800,
+      "rating": 4.2,
+      "reviews": 3100,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Near Dalai Lama Temple",
+        "Spacious Lawns",
+        "Govt Restaurant",
+        "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Trekker's Hut"
+        "Dharamshala (42 km away)",
+        "State Tourism",
+        "Temple Proximity"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Summit%20Camp%20Bir%20Billing%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Hotel%20Bhagsu%20McLeod%20Ganj%20Dharamshala%20Himachal%20Pradesh"
     },
     {
-      "name": "Ginger Valley Base",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3784,
-      "priceMax": 5528,
-      "rating": 4.1,
-      "reviews": 581,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Trekker's Hut"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Valley%20Base%20Bir%20Billing%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Novotel Bir Billing",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 4861,
-      "priceMax": 5840,
-      "rating": 4.4,
-      "reviews": 545,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Adventure Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Novotel%20Bir%20Billing%20Bir%20Billing%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Bir Billing Trail Lodge",
+      "name": "Fortune Park Moksha, McLeod Ganj",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8894,
-      "priceMax": 10620,
-      "rating": 4.6,
-      "reviews": 1590,
+      "priceMin": 5500,
+      "priceMax": 9500,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Dhauladhar Mountain Panorama",
+        "Outdoor Pool",
         "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Fine Dining"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Base Camp"
+        "Dharamshala (42 km away)",
+        "Strawberry Hills",
+        "ITC Hospitality"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bir%20Billing%20Trail%20Lodge%20Bir%20Billing%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Park%20Moksha%2C%20McLeod%20Ganj%20Dharamshala%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],

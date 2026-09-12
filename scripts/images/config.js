@@ -31,8 +31,43 @@ module.exports = {
     },
     wikimedia: {
       baseUrl: 'https://commons.wikimedia.org/w/api.php',
-      rateLimit: { requests: 100, per: 60000 }, // 100/min
-      maxResults: 10,
+      rateLimit: { requests: 100, per: 60000 }, // 100/min (Unlimited)
+      maxResults: 15,
+    },
+    pixabay: {
+      baseUrl: 'https://pixabay.com/api/',
+      rateLimit: { requests: 100, per: 60000 }, // 5,000/hr free
+      perPage: 20,
+    },
+    flickr: {
+      baseUrl: 'https://api.flickr.com/services/feeds/photos_public.gne',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 15,
+    },
+    met: {
+      baseUrl: 'https://collectionapi.metmuseum.org/public/collection/v1',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 10,
+    },
+    aic: {
+      baseUrl: 'https://api.artic.edu/api/v1',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 10,
+    },
+    cma: {
+      baseUrl: 'https://openaccess-api.clevelandart.org/api/artworks',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 10,
+    },
+    va: {
+      baseUrl: 'https://api.vam.ac.uk/v2',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 10,
+    },
+    nasa: {
+      baseUrl: 'https://images-api.nasa.gov',
+      rateLimit: { requests: 120, per: 60000 }, // Unlimited
+      perPage: 10,
     },
   },
 

@@ -423,204 +423,108 @@
   ],
   "hotels": [
     {
-      "name": "GoStops Gulmarg",
-      "type": "hostel",
-      "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 3.8,
-      "reviews": 209,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Gulmarg Safari Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4,
-      "reviews": 350,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Safari Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Safari%20Lodge%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Gulmarg Wilderness Camp",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.3,
-      "reviews": 702,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Tiger Trail"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Wilderness%20Camp%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Ginger Eco Lodge",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.3,
-      "reviews": 1062,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Tiger Trail"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Eco%20Lodge%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Ibis Gulmarg",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3009,
-      "priceMax": 4271,
-      "rating": 4.3,
-      "reviews": 746,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "The Fern Tiger Trail",
+      "name": "Gulmarg Wildlife Sanctuary Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "better",
-      "priceMin": 5428,
-      "priceMax": 6201,
-      "rating": 4.4,
-      "reviews": 1741,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Top Amenities",
-        "Forest Rest House"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Fern%20Tiger%20Trail%20Gulmarg%20Jammu%20%26%20Kashmir"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Wildlife%20Sanctuary%20Forest%20Rest%20House%20Jammu%20%26%20Kashmir"
     },
     {
-      "name": "The Gateway Gulmarg",
+      "name": "JKTDC Tourist Reception Centre Srinagar",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1400,
+      "priceMax": 2600,
+      "rating": 4,
+      "reviews": 1900,
+      "amenities": [
+        "TRC Hub",
+        "State Tourism",
+        "Tour Booking Desk",
+        "Heating"
+      ],
+      "tags": [
+        "Srinagar (40 km away)",
+        "State Tourism",
+        "City Transit"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=JKTDC%20Tourist%20Reception%20Centre%20Srinagar%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Sukoon Houseboat - Dal Lake",
+      "type": "heritage",
+      "tier": "better",
+      "priceMin": 8500,
+      "priceMax": 15000,
+      "rating": 4.8,
+      "reviews": 1800,
+      "amenities": [
+        "Eco Luxury Cedar Wood Houseboat",
+        "Rooftop Shikara Lounge",
+        "Wazwan Dining",
+        "Dal Lake"
+      ],
+      "tags": [
+        "Srinagar (40 km away)",
+        "Kashmir Houseboat",
+        "Serene Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Sukoon%20Houseboat%20-%20Dal%20Lake%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "The Lalit Grand Palace Srinagar",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 18000,
+      "priceMax": 36000,
+      "rating": 4.8,
+      "reviews": 4900,
+      "amenities": [
+        "Maharaja Pratap Singh Palace",
+        "Dal Lake Panorama",
+        "Chinar Gardens",
+        "Indoor Pool"
+      ],
+      "tags": [
+        "Srinagar (40 km away)",
+        "Gupkar Road",
+        "Historic Royal Splendour"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Lalit%20Grand%20Palace%20Srinagar%20Srinagar%20Jammu%20%26%20Kashmir"
+    },
+    {
+      "name": "Vivanta Dal View, Srinagar (IHCL)",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 9467,
-      "priceMax": 9784,
-      "rating": 4.4,
-      "reviews": 2189,
+      "priceMin": 14000,
+      "priceMax": 26000,
+      "rating": 4.7,
+      "reviews": 4200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Kralsangri Hilltop Dal Lake Panorama",
+        "Infinity Heated Pool",
+        "Wazwan Dining",
+        "Jiva Spa"
       ],
       "tags": [
-        "Luxury Experience",
-        "Eco Lodge"
+        "Srinagar (40 km away)",
+        "Dal Lake Cliff",
+        "Tata Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Gulmarg%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Gulmarg Jungle Lodge",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 17067,
-      "priceMax": 18348,
-      "rating": 4.5,
-      "reviews": 3355,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool",
-        "World-class Spa",
-        "Fine Dining",
-        "Butler",
-        "Limousine",
-        "Golf",
-        "Helipad"
-      ],
-      "tags": [
-        "Royal Experience",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Jungle%20Lodge%20Gulmarg%20Jammu%20%26%20Kashmir"
-    },
-    {
-      "name": "Gulmarg Eco Lodge",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 58489,
-      "priceMax": 59044,
-      "rating": 4.6,
-      "reviews": 796,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
-      ],
-      "tags": [
-        "Exclusive",
-        "Safari Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gulmarg%20Eco%20Lodge%20Gulmarg%20Jammu%20%26%20Kashmir"
+      "url": "https://www.google.com/maps/search/?api=1&query=Vivanta%20Dal%20View%2C%20Srinagar%20(IHCL)%20Srinagar%20Jammu%20%26%20Kashmir"
     }
   ],
   "restaurants": [],

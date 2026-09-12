@@ -296,222 +296,108 @@
   ],
   "hotels": [
     {
-      "name": "Kalpa Treebo",
-      "type": "guesthouse",
+      "name": "HPTDC Tourist Inn (Kalpa)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 1200,
-      "priceMax": 1900,
-      "rating": 4,
-      "reviews": 289,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Value Stay",
-        "Summit View"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kalpa%20Treebo%20Kalpa%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Tourist%20Inn%20Kalpa%20Himachal%20Pradesh"
     },
     {
-      "name": "Kalpa Hilltop Retreat",
-      "type": "guesthouse",
+      "name": "Zostel Shimla",
+      "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 2300,
-      "priceMax": 3250,
-      "rating": 3.8,
-      "reviews": 386,
+      "priceMin": 750,
+      "priceMax": 1500,
+      "rating": 4.5,
+      "reviews": 2800,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Valley View Terrace",
+        "Cozy Common Rooms",
+        "Board Games",
+        "WiFi"
       ],
       "tags": [
+        "Shimla (114 km away)",
         "Backpacker Choice",
-        "Pine Grove"
+        "Social Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kalpa%20Hilltop%20Retreat%20Kalpa%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Treebo Trend Mist Haven",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 3600,
-      "priceMax": 5400,
-      "rating": 4,
-      "reviews": 698,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Mist%20Haven%20Kalpa%20Himachal%20Pradesh"
-    },
-    {
-      "name": "OYO Townhouse Kalpa",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7200,
-      "priceMax": 12000,
-      "rating": 4.3,
-      "reviews": 591,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Mist Haven"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Kalpa%20Kalpa%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Fairfield by Marriott Summit View",
-      "type": "hotel",
+      "name": "HPTDC Hotel Peterhof",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 3096,
-      "priceMax": 4958,
-      "rating": 4.2,
-      "reviews": 995,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Ridge Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Summit%20View%20Kalpa%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Ginger Kalpa",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3359,
-      "priceMax": 4976,
+      "priceMin": 2600,
+      "priceMax": 4500,
       "rating": 4.3,
-      "reviews": 999,
+      "reviews": 3200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Viceregal Heritage",
+        "Lush Lawns",
+        "Restaurant",
+        "Free Parking"
       ],
       "tags": [
-        "Family Friendly",
-        "Valley View"
+        "Shimla (114 km away)",
+        "State Heritage",
+        "Historic Grounds"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Kalpa%20Kalpa%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=HPTDC%20Hotel%20Peterhof%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Kalpa Courtyard by Marriott",
+      "name": "Hotel Combermere Shimla",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5886,
-      "priceMax": 6572,
-      "rating": 4.5,
-      "reviews": 1961,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Business Preferred",
-        "Highland Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kalpa%20Courtyard%20by%20Marriott%20Kalpa%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Kalpa Hyatt Regency",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 8368,
-      "priceMax": 10301,
+      "priceMin": 4500,
+      "priceMax": 7800,
       "rating": 4.4,
-      "reviews": 1775,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Private Passenger Lift to Mall Road",
+        "Gym",
+        "Nightclub",
+        "Billiards"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Alpine Lodge"
+        "Shimla (114 km away)",
+        "The Mall Access",
+        "Prime Location"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kalpa%20Hyatt%20Regency%20Kalpa%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Combermere%20Shimla%20Shimla%20Himachal%20Pradesh"
     },
     {
-      "name": "Kalpa Le Méridien",
-      "type": "hotel",
+      "name": "The Oberoi Cecil, Shimla",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 9455,
-      "priceMax": 11341,
-      "rating": 4.5,
-      "reviews": 1879,
+      "priceMin": 16000,
+      "priceMax": 30000,
+      "rating": 4.8,
+      "reviews": 4900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Colonial Ballroom",
+        "Indoor Heated Pool",
+        "Oberoi Spa",
+        "Fine Dining"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Mist Haven"
+        "Shimla (114 km away)",
+        "Historic 1884 Luxury",
+        "Chaura Maidan"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kalpa%20Le%20M%C3%A9ridien%20Kalpa%20Himachal%20Pradesh"
-    },
-    {
-      "name": "Conrad Mountain Resort",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 13758,
-      "priceMax": 15270,
-      "rating": 4.6,
-      "reviews": 1299,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "World Class",
-        "Alpine Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Conrad%20Mountain%20Resort%20Kalpa%20Himachal%20Pradesh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Oberoi%20Cecil%2C%20Shimla%20Shimla%20Himachal%20Pradesh"
     }
   ],
   "restaurants": [],

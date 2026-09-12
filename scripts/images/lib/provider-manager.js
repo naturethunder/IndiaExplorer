@@ -8,6 +8,13 @@ const config = require('../config');
 const { PexelsProvider } = require('../providers/pexels');
 const { UnsplashProvider } = require('../providers/unsplash');
 const { WikimediaProvider } = require('../providers/wikimedia');
+const { PixabayProvider } = require('../providers/pixabay');
+const { FlickrProvider } = require('../providers/flickr');
+const { MetProvider } = require('../providers/met');
+const { AICProvider } = require('../providers/aic');
+const { CMAProvider } = require('../providers/cma');
+const { VAProvider } = require('../providers/va');
+const { NASAProvider } = require('../providers/nasa');
 const { ImageCache } = require('./cache');
 const { loadEnv } = require('./dotenv');
 const fs = require('fs');
@@ -15,7 +22,10 @@ const path = require('path');
 
 class ProviderManager {
   constructor(cache) {
-    this.cache = cache;
+    this.cache = cache || {
+      getProviderSearch: async () => null,
+      cacheProviderSearch: async () => {},
+    };
     this.providers = {};
     this.initProviders();
   }
@@ -29,8 +39,17 @@ class ProviderManager {
     if (process.env.UNSPLASH_ACCESS_KEY) {
       this.providers.unsplash = new UnsplashProvider(process.env.UNSPLASH_ACCESS_KEY);
     }
-    // Wikimedia doesn't require an API key
+    if (process.env.PIXABAY_API_KEY) {
+      this.providers.pixabay = new PixabayProvider(process.env.PIXABAY_API_KEY);
+    }
+    // High-limit & Unlimited Free Providers (No key required)
     this.providers.wikimedia = new WikimediaProvider();
+    this.providers.flickr = new FlickrProvider();
+    this.providers.met = new MetProvider();
+    this.providers.aic = new AICProvider();
+    this.providers.cma = new CMAProvider();
+    this.providers.va = new VAProvider();
+    this.providers.nasa = new NASAProvider();
 
     console.log(`Initialized providers: ${Object.keys(this.providers).join(', ')}`);
   }
@@ -103,54 +122,89 @@ class ProviderManager {
     const cleanState = (state || '').trim();
 
     // 1. EXACT ATTRACTIONS & LANDMARKS (topPlaces, photos)
-    // Priority: Wikimedia (exact monuments/temples) -> Pexels -> Unsplash -> broader fallback
+    // Priority: Authentic ground truth (Wikimedia, Flickr) + Ultra HD (Pexels, Unsplash, Museum CC0), then Pixabay
     if (type === 'place' || type === 'place-photo') {
       if (cleanName) {
         // Level 1: Name + Destination + State + India
-        queries.push({ query: `${cleanName} ${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 800 } });
+        queries.push({ query: `${cleanName} ${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 1200 } });
         queries.push({ query: `${cleanName} ${cleanState} India`, provider: 'pexels', priority: 2, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
         queries.push({ query: `${cleanName} ${cleanState} India`, provider: 'unsplash', priority: 3, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName}`, provider: 'flickr', priority: 4, cascadeLevel: 1, isFallback: false });
+        queries.push({ query: `${cleanName} ${cleanTitle}`, provider: 'pixabay', priority: 5, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
 
-        // Level 2: Name + Destination
-        queries.push({ query: `${cleanName} ${cleanTitle}`, provider: 'wikimedia', priority: 4, cascadeLevel: 2, isFallback: false, metadata: { minWidth: 800 } });
-        queries.push({ query: `${cleanName} India`, provider: 'pexels', priority: 5, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
-        queries.push({ query: `${cleanName} India`, provider: 'unsplash', priority: 6, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
+        // Level 2: Name + Destination & Heritage archives
+        queries.push({ query: `${cleanName} ${cleanTitle}`, provider: 'wikimedia', priority: 6, cascadeLevel: 2, isFallback: false, metadata: { minWidth: 1200 } });
+        queries.push({ query: `${cleanName} India`, provider: 'pexels', priority: 7, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
+        queries.push({ query: `${cleanName} India`, provider: 'unsplash', priority: 8, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName} India`, provider: 'cma', priority: 9, cascadeLevel: 2, isFallback: false });
+        queries.push({ query: `${cleanName} India`, provider: 'aic', priority: 10, cascadeLevel: 2, isFallback: false });
+        queries.push({ query: `${cleanName} India`, provider: 'met', priority: 11, cascadeLevel: 2, isFallback: false });
+        queries.push({ query: `${cleanName} India`, provider: 'va', priority: 12, cascadeLevel: 2, isFallback: false });
+        queries.push({ query: `${cleanName}`, provider: 'pixabay', priority: 13, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
 
         // Level 3: Exact Name
-        queries.push({ query: `${cleanName}`, provider: 'wikimedia', priority: 7, cascadeLevel: 3, isFallback: false, metadata: { minWidth: 800 } });
-        queries.push({ query: `${cleanName}`, provider: 'pexels', priority: 8, cascadeLevel: 3, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName}`, provider: 'wikimedia', priority: 14, cascadeLevel: 3, isFallback: false, metadata: { minWidth: 1200 } });
+        queries.push({ query: `${cleanName}`, provider: 'pexels', priority: 15, cascadeLevel: 3, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName}`, provider: 'flickr', priority: 16, cascadeLevel: 3, isFallback: false });
+        queries.push({ query: `${cleanName}`, provider: 'cma', priority: 17, cascadeLevel: 3, isFallback: false });
       }
 
       // Level 4: Destination + State travel fallback
-      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'unsplash', priority: 9, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
-      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pexels', priority: 10, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape', size: 'large' } });
+      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pexels', priority: 18, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape', size: 'large' } });
+      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'unsplash', priority: 19, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
+      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'wikimedia', priority: 20, cascadeLevel: 4, isFallback: true, metadata: { minWidth: 1200 } });
+      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pixabay', priority: 21, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
 
       // Level 5: Destination landscape fallback
-      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pexels', priority: 11, cascadeLevel: 5, isFallback: true, metadata: { orientation: 'landscape', size: 'large' } });
+      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pexels', priority: 22, cascadeLevel: 5, isFallback: true, metadata: { orientation: 'landscape', size: 'large' } });
+      queries.push({ query: `${cleanTitle} India landscape`, provider: 'nasa', priority: 23, cascadeLevel: 5, isFallback: true });
+      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pixabay', priority: 24, cascadeLevel: 5, isFallback: true, metadata: { orientation: 'landscape' } });
     }
 
     // 2. DESTINATION HERO / COVER / GALLERY
-    // Priority: Pexels exact destination -> Unsplash exact destination -> Wikimedia
     else if (type === 'hero' || type === 'image' || type === 'gallery') {
-      // Level 1: Destination + State + India
+      // Level 1: Destination + State + India (HD landscape priority)
       queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pexels', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
       queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'unsplash', priority: 2, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
-      queries.push({ query: `${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 3, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 1000 } });
+      queries.push({ query: `${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 3, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 1600 } });
+      queries.push({ query: `${cleanTitle}`, provider: 'flickr', priority: 4, cascadeLevel: 1, isFallback: false });
+      queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pixabay', priority: 5, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
 
       // Level 2: Destination + India
-      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pexels', priority: 4, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
-      queries.push({ query: `${cleanTitle} India tourism`, provider: 'unsplash', priority: 5, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
-      queries.push({ query: `${cleanTitle} India`, provider: 'wikimedia', priority: 6, cascadeLevel: 2, isFallback: false, metadata: { minWidth: 1000 } });
+      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pexels', priority: 6, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
+      queries.push({ query: `${cleanTitle} India tourism`, provider: 'unsplash', priority: 7, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
+      queries.push({ query: `${cleanTitle} India`, provider: 'wikimedia', priority: 8, cascadeLevel: 2, isFallback: false, metadata: { minWidth: 1600 } });
+      queries.push({ query: `${cleanTitle} India`, provider: 'cma', priority: 9, cascadeLevel: 2, isFallback: false });
+      queries.push({ query: `${cleanTitle} India`, provider: 'met', priority: 10, cascadeLevel: 2, isFallback: false });
+      queries.push({ query: `${cleanTitle} India`, provider: 'nasa', priority: 11, cascadeLevel: 2, isFallback: false });
+      queries.push({ query: `${cleanTitle} India landscape`, provider: 'pixabay', priority: 12, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
     }
 
     // 3. HOTELS & STAYS
     else if (type === 'hotel') {
       if (cleanName) {
-        queries.push({ query: `${cleanName} ${cleanTitle} hotel India`, provider: 'unsplash', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
-        queries.push({ query: `${cleanName} ${cleanTitle} hotel`, provider: 'pexels', priority: 2, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName} ${cleanTitle} hotel India`, provider: 'pexels', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName} ${cleanTitle} hotel India`, provider: 'unsplash', priority: 2, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName} ${cleanTitle} hotel India`, provider: 'pixabay', priority: 3, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
       }
-      queries.push({ query: `${cleanTitle} luxury resort hotel India`, provider: 'unsplash', priority: 3, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
-      queries.push({ query: `${cleanTitle} hotel room stay India`, provider: 'pexels', priority: 4, cascadeLevel: 5, isFallback: true, metadata: { orientation: 'landscape' } });
+      queries.push({ query: `${cleanTitle} luxury resort hotel India`, provider: 'pexels', priority: 4, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
+      queries.push({ query: `${cleanTitle} luxury resort hotel India`, provider: 'unsplash', priority: 5, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
+      queries.push({ query: `${cleanTitle} luxury resort hotel India`, provider: 'pixabay', priority: 6, cascadeLevel: 4, isFallback: true, metadata: { orientation: 'landscape' } });
+    }
+    // 4. GENERAL FALLBACK (Heritage, Nature, Spiritual, or unclassified)
+    else {
+      if (cleanName) {
+        queries.push({ query: `${cleanName} ${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 1200 } });
+        queries.push({ query: `${cleanName} India`, provider: 'pexels', priority: 2, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
+        queries.push({ query: `${cleanName} India`, provider: 'unsplash', priority: 3, cascadeLevel: 2, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanName}`, provider: 'flickr', priority: 4, cascadeLevel: 3, isFallback: false });
+        queries.push({ query: `${cleanName} ${cleanTitle}`, provider: 'pixabay', priority: 5, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+      } else {
+        queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pexels', priority: 1, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape', size: 'large' } });
+        queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'unsplash', priority: 2, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+        queries.push({ query: `${cleanTitle} ${cleanState} India`, provider: 'wikimedia', priority: 3, cascadeLevel: 1, isFallback: false, metadata: { minWidth: 1600 } });
+        queries.push({ query: `${cleanTitle} ${cleanState} India travel`, provider: 'pixabay', priority: 4, cascadeLevel: 1, isFallback: false, metadata: { orientation: 'landscape' } });
+      }
     }
 
     return queries;

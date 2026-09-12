@@ -243,156 +243,108 @@
   ],
   "hotels": [
     {
-      "name": "GoStops Bhakti Residency",
+      "name": "Madhyamaheshwar Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Madhyamaheshwar%20Yatri%20Nivas%20Uttarakhand"
+    },
+    {
+      "name": "Zostel Rishikesh (Tapovan)",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 255,
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.6,
+      "reviews": 4800,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Chilled Common Areas",
+        "Yoga Deck",
+        "Cafe",
+        "WiFi"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Divine Retreat"
+        "Rishikesh (110 km away)",
+        "Backpacker Hub",
+        "Adventure Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Bhakti%20Residency%20Madhyamaheshwar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Rishikesh%20(Tapovan)%20Rishikesh%20Uttarakhand"
     },
     {
-      "name": "Hotel Royal Orchid Dharmashala",
-      "type": "hotel",
+      "name": "GMVN Tourist Rest House Bharat Bhumi Rishikesh",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 691,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Krishna Kunj"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Dharmashala%20Madhyamaheshwar%20Uttarakhand"
-    },
-    {
-      "name": "Madhyamaheshwar OYO Townhouse",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
+      "priceMin": 1200,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 523,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhyamaheshwar%20OYO%20Townhouse%20Madhyamaheshwar%20Uttarakhand"
-    },
-    {
-      "name": "Fortune Divine Retreat",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 504,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Divine%20Retreat%20Madhyamaheshwar%20Uttarakhand"
-    },
-    {
-      "name": "Ginger Madhyamaheshwar",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3264,
-      "priceMax": 5228,
-      "rating": 4.3,
-      "reviews": 695,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Garhwal Mandal Tourism",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Divine Retreat"
+        "Rishikesh (110 km away)",
+        "State Tourism",
+        "Pilgrim Transit Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Madhyamaheshwar%20Madhyamaheshwar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20Tourist%20Rest%20House%20Bharat%20Bhumi%20Rishikesh%20Rishikesh%20Uttarakhand"
     },
     {
-      "name": "Hilton Garden Inn Ashram Stay",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6680,
-      "priceMax": 7255,
-      "rating": 4.4,
-      "reviews": 639,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Ashram%20Stay%20Madhyamaheshwar%20Uttarakhand"
-    },
-    {
-      "name": "Le Méridien Madhyamaheshwar",
-      "type": "hotel",
+      "name": "Aloha On The Ganges Rishikesh",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 7783,
-      "priceMax": 8317,
-      "rating": 4.6,
-      "reviews": 1918,
+      "priceMin": 7500,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 6200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Infinity Pool on Ganga",
+        "Ayurvedic Spa",
+        "Ganga Aarti Desk",
+        "Organic Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Pilgrim Lodge"
+        "Rishikesh (110 km away)",
+        "Iconic Riverfront",
+        "Tapovan Cliffs"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Le%20M%C3%A9ridien%20Madhyamaheshwar%20Madhyamaheshwar%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Aloha%20On%20The%20Ganges%20Rishikesh%20Rishikesh%20Uttarakhand"
+    },
+    {
+      "name": "The Glasshouse on the Ganges (Neemrana)",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 9000,
+      "priceMax": 18000,
+      "rating": 4.8,
+      "reviews": 2100,
+      "amenities": [
+        "Private Sand Beach on Ganga",
+        "Lychee Orchards",
+        "Rafting Access",
+        "Yoga"
+      ],
+      "tags": [
+        "Rishikesh (110 km away)",
+        "Exclusive River Haven",
+        "Shivpuri"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Glasshouse%20on%20the%20Ganges%20(Neemrana)%20Rishikesh%20Uttarakhand"
     }
   ],
   "restaurants": [],

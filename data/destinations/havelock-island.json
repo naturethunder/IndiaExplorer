@@ -444,44 +444,87 @@
   ],
   "hotels": [
     {
-      "name": "Havelock Island (Swaraj Dweep) Tourist Guest House",
+      "name": "State Tourism Rest House (Havelock Island (Swaraj Dweep))",
       "type": "guesthouse",
-      "tier": "budget",
-      "priceMin": 800,
-      "priceMax": 1500,
+      "tier": "cheapest",
+      "priceMin": 900,
+      "priceMax": 1700,
       "rating": 4.1,
-      "reviews": 140,
+      "reviews": 620,
       "amenities": [
-        "Clean Rooms",
-        "Hot Water",
-        "Free Parking",
-        "Travel Assistance"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Budget Friendly",
-        "Convenient"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Havelock%20Island%20(Swaraj%20Dweep)%20Tourist%20Guest%20House%20Andaman%20%26%20Nicobar"
+      "url": "https://www.google.com/maps/search/?api=1&query=State%20Tourism%20Rest%20House%20Havelock%20Island%20(Swaraj%20Dweep)%20Andaman%20%26%20Nicobar"
     },
     {
-      "name": "Havelock Island (Swaraj Dweep) Heritage Residency",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.3,
-      "reviews": 210,
+      "name": "Hotel Megapode Resort Port Blair",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 2200,
+      "priceMax": 3800,
+      "rating": 4.1,
+      "reviews": 2400,
       "amenities": [
-        "AC Rooms",
-        "Multi-Cuisine Dining",
-        "Free WiFi",
-        "Room Service"
+        "Harbor Facing Hilltop",
+        "Govt ANIIDCO Run",
+        "Bamboo Cottages",
+        "Restaurant"
       ],
       "tags": [
-        "Family Friendly",
-        "Comfortable"
+        "Port Blair (48 km away)",
+        "State Tourism",
+        "Harbor Vista"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Havelock%20Island%20(Swaraj%20Dweep)%20Heritage%20Residency%20Andaman%20%26%20Nicobar"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Megapode%20Resort%20Port%20Blair%20Port%20Blair%20Andaman%20%26%20Nicobar"
+    },
+    {
+      "name": "Symphony Samudra Beachside Jungle Resort",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 5500,
+      "priceMax": 10000,
+      "rating": 4.6,
+      "reviews": 2900,
+      "amenities": [
+        "Chidiya Tapu Sunset View",
+        "Infinity Pool",
+        "Eco Jungle Setting",
+        "Private Beach"
+      ],
+      "tags": [
+        "Port Blair (48 km away)",
+        "Chidiya Tapu",
+        "Sunset Point"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Symphony%20Samudra%20Beachside%20Jungle%20Resort%20Port%20Blair%20Andaman%20%26%20Nicobar"
+    },
+    {
+      "name": "Welcomhotel by ITC Hotels, Bay Island, Port Blair",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9000,
+      "priceMax": 18000,
+      "rating": 4.7,
+      "reviews": 3800,
+      "amenities": [
+        "Native Padauk Timber Architecture",
+        "Marine Hill Ocean Panorama",
+        "Open-air Deck Dining",
+        "Pool"
+      ],
+      "tags": [
+        "Port Blair (48 km away)",
+        "Charles Correa Design",
+        "Bay Island Pride"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Welcomhotel%20by%20ITC%20Hotels%2C%20Bay%20Island%2C%20Port%20Blair%20Port%20Blair%20Andaman%20%26%20Nicobar"
     }
   ],
   "gallery": [

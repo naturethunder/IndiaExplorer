@@ -429,156 +429,108 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Marathahalli",
+      "name": "Someshwara Temple, Marathahalli Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Someshwara%20Temple%2C%20Marathahalli%20Yatri%20Nivas%20Karnataka"
+    },
+    {
+      "name": "Zostel Bangalore (Indiranagar)",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.2,
-      "reviews": 432,
+      "priceMin": 700,
+      "priceMax": 1500,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Heart of Indiranagar",
+        "Rooftop Cafe",
+        "Co-working Pods",
+        "WiFi"
       ],
       "tags": [
-        "Budget Friendly",
-        "Yatri Nivas"
+        "Bengaluru (11 km away)",
+        "Pub Capital Hub",
+        "Community Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Marathahalli%20Marathahalli%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Bangalore%20(Indiranagar)%20Bengaluru%20Karnataka"
     },
     {
-      "name": "Treebo Trend Krishna Kunj",
+      "name": "Hotel Chalukya Bengaluru",
       "type": "hotel",
       "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
+      "priceMin": 1400,
+      "priceMax": 2400,
       "rating": 4.1,
-      "reviews": 527,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Krishna%20Kunj%20Marathahalli%20Karnataka"
-    },
-    {
-      "name": "OYO Townhouse Marathahalli",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 213,
-      "amenities": [
-        "Free WiFi",
+        "Near Vidhana Soudha",
+        "Famous Samrat Veg Dining",
         "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
+        "Parking"
       ],
       "tags": [
-        "Smart Choice",
-        "Temple View"
+        "Bengaluru (11 km away)",
+        "Central Bangalore",
+        "Heritage Value"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Townhouse%20Marathahalli%20Marathahalli%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Chalukya%20Bengaluru%20Bengaluru%20Karnataka"
     },
     {
-      "name": "Marathahalli Ibis",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 519,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Marathahalli%20Ibis%20Marathahalli%20Karnataka"
-    },
-    {
-      "name": "Zone by The Park Heritage Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3658,
-      "priceMax": 4454,
-      "rating": 4.3,
-      "reviews": 855,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Sanctum Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Heritage%20Hotel%20Someshwara%20Temple%2C%20Marathahalli%20Karnataka"
-    },
-    {
-      "name": "Holiday Inn Marathahalli",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6318,
-      "priceMax": 8281,
-      "rating": 4.3,
-      "reviews": 890,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Marathahalli%20Marathahalli%20Karnataka"
-    },
-    {
-      "name": "Hyatt Regency Marathahalli",
+      "name": "The Leela Palace Bengaluru",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10905,
-      "priceMax": 11312,
-      "rating": 4.6,
-      "reviews": 1943,
+      "priceMin": 14000,
+      "priceMax": 28000,
+      "rating": 4.8,
+      "reviews": 8900,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Mysore Royal Palace Inspired",
+        "Jamavar Royal Dining",
+        "Lagoon Pool",
+        "The Leela Spa"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Sanctum Stay"
+        "Bengaluru (11 km away)",
+        "Old Airport Road",
+        "Palatial Garden City Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Marathahalli%20Marathahalli%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Leela%20Palace%20Bengaluru%20Bengaluru%20Karnataka"
+    },
+    {
+      "name": "Taj West End, Bengaluru",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 24000,
+      "rating": 4.8,
+      "reviews": 6200,
+      "amenities": [
+        "20 Acres of Heritage Flora Since 1887",
+        "Blue Ginger Vietnamese",
+        "Jiva Spa",
+        "Pool"
+      ],
+      "tags": [
+        "Bengaluru (11 km away)",
+        "Race Course Road",
+        "Historic Garden Hotel"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20West%20End%2C%20Bengaluru%20Bengaluru%20Karnataka"
     }
   ],
   "restaurants": [],

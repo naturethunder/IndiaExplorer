@@ -240,156 +240,108 @@
   ],
   "hotels": [
     {
-      "name": "Kanakagiri Jain BunkStay",
-      "type": "hostel",
+      "name": "Kanakagiri Jain Shri kshetra Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kanakagiri%20Jain%20Shri%20kshetra%20Yatri%20Nivas%20Karnataka"
+    },
+    {
+      "name": "Hotel Roopa Mysuru",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
+      "priceMax": 1600,
+      "rating": 4,
+      "reviews": 3100,
+      "amenities": [
+        "Rooftop Restaurant",
+        "AC Rooms",
+        "Travel Desk",
+        "City View"
+      ],
+      "tags": [
+        "Mysuru (41 km away)",
+        "BN Road",
+        "Budget Pilgrim Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Roopa%20Mysuru%20Mysuru%20Karnataka"
+    },
+    {
+      "name": "KSTDC Hotel Mayura Hoysala Mysuru",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1300,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 230,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Govt Tourism Unit",
+        "Restaurant",
+        "Lush Lawns",
+        "Tour Booking"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Temple View"
+        "Mysuru (41 km away)",
+        "Jhansi Lakshmibai Rd",
+        "Karnataka State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kanakagiri%20Jain%20BunkStay%20Kanakagiri%20Jain%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=KSTDC%20Hotel%20Mayura%20Hoysala%20Mysuru%20Mysuru%20Karnataka"
     },
     {
-      "name": "Ginger Kanakagiri Jain",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 424,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Dharmashala"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Kanakagiri%20Jain%20Kanakagiri%20Jain%20Karnataka"
-    },
-    {
-      "name": "Lemon Tree Red Fox Pilgrim Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 425,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Dharmashala"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Pilgrim%20Lodge%20Kanakagiri%20Jain%20Karnataka"
-    },
-    {
-      "name": "Fortune Kanakagiri Jain",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 635,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Temple View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Kanakagiri%20Jain%20Kanakagiri%20Jain%20Karnataka"
-    },
-    {
-      "name": "Kanakagiri Jain Sarovar Portico",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3508,
-      "priceMax": 4033,
-      "rating": 4.2,
-      "reviews": 421,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Ashram Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kanakagiri%20Jain%20Sarovar%20Portico%20Kanakagiri%20Jain%20Karnataka"
-    },
-    {
-      "name": "Kanakagiri Jain Hilton Garden Inn",
+      "name": "Radisson Blu Plaza Hotel Mysore",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5154,
-      "priceMax": 7064,
-      "rating": 4.4,
-      "reviews": 956,
+      "priceMin": 5500,
+      "priceMax": 9500,
+      "rating": 4.5,
+      "reviews": 4900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Chamundi View",
+        "Outdoor Pool",
         "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Fitness Centre"
       ],
       "tags": [
-        "Business Preferred",
-        "Divine Retreat"
+        "Mysuru (41 km away)",
+        "Near Mysore Palace",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kanakagiri%20Jain%20Hilton%20Garden%20Inn%20Kanakagiri%20Jain%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Radisson%20Blu%20Plaza%20Hotel%20Mysore%20Mysuru%20Karnataka"
     },
     {
-      "name": "Kanakagiri Jain Ashram Stay",
-      "type": "hotel",
+      "name": "Lalitha Mahal Palace Hotel Mysuru",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 8347,
-      "priceMax": 9088,
-      "rating": 4.5,
-      "reviews": 1096,
+      "priceMin": 7500,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Historic Royal Palace",
+        "Italian Marble",
+        "Royal Ballroom",
+        "Swimming Pool"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Bhakti Residency"
+        "Mysuru (41 km away)",
+        "Chamundi Hills Base",
+        "Royal Heritage Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kanakagiri%20Jain%20Ashram%20Stay%20Kanakagiri%20Jain%20Karnataka"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lalitha%20Mahal%20Palace%20Hotel%20Mysuru%20Mysuru%20Karnataka"
     }
   ],
   "restaurants": [],

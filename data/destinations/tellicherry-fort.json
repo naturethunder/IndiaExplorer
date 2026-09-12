@@ -420,156 +420,108 @@
   ],
   "hotels": [
     {
-      "name": "Tellicherry OYO",
-      "type": "hotel",
+      "name": "KTDC Tourist Home & Tamarind (Tellicherry Fort)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 850,
+      "priceMax": 1600,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Tourist%20Home%20%26%20Tamarind%20Tellicherry%20Fort%20Kerala"
+    },
+    {
+      "name": "KTDC Tamarind Kondotty Kozhikode",
+      "type": "guesthouse",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.2,
-      "reviews": 380,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Period Property"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tellicherry%20OYO%20Tellicherry%20Kerala"
-    },
-    {
-      "name": "Ibis Budget Tellicherry",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
+      "priceMax": 1700,
       "rating": 4,
-      "reviews": 286,
+      "reviews": 1200,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
+        "Kerala Tourism Unit",
+        "Restaurant",
+        "Airport Transit",
+        "Clean Rooms"
       ],
       "tags": [
-        "Popular Pick",
-        "Mahal Palace"
+        "Kozhikode (63 km away)",
+        "Near Airport",
+        "State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Tellicherry%20Tellicherry%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Tamarind%20Kondotty%20Kozhikode%20Kozhikode%20Kerala"
     },
     {
-      "name": "Tellicherry Heritage Hotel",
+      "name": "Hotel Malabar Palace Kozhikode",
       "type": "hotel",
       "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 215,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tellicherry%20Heritage%20Hotel%20Tellicherry%20Kerala"
-    },
-    {
-      "name": "Tellicherry Fort Residence",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
+      "priceMin": 1800,
+      "priceMax": 3000,
       "rating": 4.2,
-      "reviews": 562,
+      "reviews": 2700,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Authentic Malabar Biryani",
+        "AC Rooms",
+        "Banquet",
+        "Free WiFi"
       ],
       "tags": [
-        "Comfort Plus",
-        "Palace Hotel"
+        "Kozhikode (63 km away)",
+        "Mananchira Square",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tellicherry%20Fort%20Residence%20Tellicherry%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Malabar%20Palace%20Kozhikode%20Kozhikode%20Kerala"
     },
     {
-      "name": "Tellicherry Period Property",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3841,
-      "priceMax": 4841,
-      "rating": 4.1,
-      "reviews": 458,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tellicherry%20Period%20Property%20Tellicherry%20Kerala"
-    },
-    {
-      "name": "Tellicherry Holiday Inn",
+      "name": "The Gateway Hotel Beach Road Kozhikode",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 6793,
-      "priceMax": 7172,
-      "rating": 4.5,
-      "reviews": 1314,
+      "priceMin": 4500,
+      "priceMax": 8000,
+      "rating": 4.4,
+      "reviews": 3100,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Calicut Beach Proximity",
+        "Swimming Pool",
+        "Ayurvedic Spa",
+        "Taj Hospitality"
       ],
       "tags": [
-        "Premium Stay",
-        "Royal Retreat"
+        "Kozhikode (63 km away)",
+        "Beach Road",
+        "Heritage Seashore"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tellicherry%20Holiday%20Inn%20Tellicherry%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Hotel%20Beach%20Road%20Kozhikode%20Kozhikode%20Kerala"
     },
     {
-      "name": "Hyatt Regency Legacy Hotel",
-      "type": "hotel",
+      "name": "The Raviz Kadavu Kozhikode",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 11817,
-      "priceMax": 12412,
-      "rating": 4.5,
-      "reviews": 1356,
+      "priceMin": 7000,
+      "priceMax": 14000,
+      "rating": 4.6,
+      "reviews": 3900,
       "amenities": [
-        "Free WiFi",
+        "Chaliyar Riverfront",
+        "Ayurveda Spa",
         "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Malabar Cuisine"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Manor House"
+        "Kozhikode (63 km away)",
+        "NH 17 Bypass",
+        "River Retreat"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Legacy%20Hotel%20Tellicherry%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Raviz%20Kadavu%20Kozhikode%20Kozhikode%20Kerala"
     }
   ],
   "restaurants": [],

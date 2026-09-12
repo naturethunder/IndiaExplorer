@@ -483,43 +483,87 @@
   ],
   "hotels": [
     {
-      "name": "Government guest house Agatti",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 8500,
-      "priceMax": 16000,
-      "rating": 4.8,
-      "reviews": 320,
+      "name": "State Tourism Rest House (Bangaram Island)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 900,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Water Sports",
-        "All Meals Included",
-        "Beachfront",
-        "Diving Center"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Eco Luxury",
-        "Beachfront"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Government%20guest%20house%20Agatti%20Bangaram%20Island%20Lakshadweep"
+      "url": "https://www.google.com/maps/search/?api=1&query=State%20Tourism%20Rest%20House%20Bangaram%20Island%20Lakshadweep"
     },
     {
-      "name": "Kasim's Homestay",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 6500,
-      "priceMax": 9500,
-      "rating": 4.6,
-      "reviews": 210,
+      "name": "KSTDC Hotel Mayura Kaup Beach Udupi",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1300,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 1900,
       "amenities": [
-        "Lagoon View",
-        "Seafood Dining",
-        "Kayaking"
+        "Kaup Lighthouse View",
+        "Beachfront Restaurant",
+        "State Tourism",
+        "Garden"
       ],
       "tags": [
-        "Island Stay",
-        "Waterfront"
+        "Mangaluru (356 km away)",
+        "Kaup Beach",
+        "Karnataka Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kasim's%20Homestay%20Bangaram%20Island%20Lakshadweep"
+      "url": "https://www.google.com/maps/search/?api=1&query=KSTDC%20Hotel%20Mayura%20Kaup%20Beach%20Udupi%20Mangaluru%20Karnataka"
+    },
+    {
+      "name": "Ocean Pearl Udupi",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2500,
+      "priceMax": 4200,
+      "rating": 4.4,
+      "reviews": 3800,
+      "amenities": [
+        "Vegetarian Specialties",
+        "AC Rooms",
+        "Fitness Centre",
+        "Conference Hall"
+      ],
+      "tags": [
+        "Mangaluru (356 km away)",
+        "Near Krishna Temple",
+        "Pilgrim Comfort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ocean%20Pearl%20Udupi%20Mangaluru%20Karnataka"
+    },
+    {
+      "name": "The Gateway Hotel Old Port Road Mangalore",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 5500,
+      "priceMax": 10000,
+      "rating": 4.5,
+      "reviews": 3400,
+      "amenities": [
+        "Arabian Sea & River View",
+        "Swimming Pool",
+        "Cardamom Restaurant",
+        "Taj Hospitality"
+      ],
+      "tags": [
+        "Mangaluru (356 km away)",
+        "Old Port Road",
+        "Coastal Landmark"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Hotel%20Old%20Port%20Road%20Mangalore%20Mangaluru%20Karnataka"
     }
   ],
   "gallery": [

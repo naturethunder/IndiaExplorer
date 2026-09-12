@@ -64,18 +64,24 @@ class PexelsProvider {
   }
 
   normalizeResults(data) {
-    return (data.photos || []).map(photo => ({
-      id: photo.id.toString(),
-      url: photo.src?.large2x || photo.src?.large || photo.src?.medium,
-      thumbnail: photo.src?.medium,
-      width: photo.width,
-      height: photo.height,
-      photographer: photo.photographer,
-      photographerUrl: photo.photographer_url,
-      alt: photo.alt || '',
-      provider: 'pexels',
-      searchUrl: photo.url,
-    })).filter(p => p.url);
+    return (data.photos || []).map(photo => {
+      const width = photo.width || 0;
+      const height = photo.height || 0;
+      const url = photo.src?.original || photo.src?.large2x || photo.src?.large;
+
+      return {
+        id: photo.id.toString(),
+        url,
+        thumbnail: photo.src?.medium || photo.src?.small,
+        width,
+        height,
+        photographer: photo.photographer,
+        photographerUrl: photo.photographer_url,
+        alt: photo.alt || '',
+        provider: 'pexels',
+        searchUrl: photo.url,
+      };
+    }).filter(p => p.url && p.width >= 1600 && p.height >= 900); // Strict HD Filter (Min 1600x900)
   }
 
   sleep(ms) {

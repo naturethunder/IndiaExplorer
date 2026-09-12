@@ -74,12 +74,12 @@ class WikimediaProvider {
       const ii = page.imageinfo?.[0];
       if (!ii) continue;
 
-      const url = ii.thumburl || ii.url;
-      if (!url || !/\.(jpg|jpeg|png|webp)$/i.test(url)) continue;
+      const fullUrl = ii.url || ii.thumburl;
+      if (!fullUrl || !/\.(jpg|jpeg|png|webp)$/i.test(fullUrl)) continue;
 
       // Filter out logos, maps, diagrams, flags
       const title = (page.title || '').toLowerCase();
-      if (this.isUnwanted(title, url)) continue;
+      if (this.isUnwanted(title, fullUrl)) continue;
 
       // Get dimensions from extmetadata or imageinfo
       let width = ii.width;
@@ -87,6 +87,11 @@ class WikimediaProvider {
       const meta = ii.extmetadata;
       if (meta?.ImageWidth?.value) width = parseInt(meta.ImageWidth.value);
       if (meta?.ImageHeight?.value) height = parseInt(meta.ImageHeight.value);
+
+      // Enforce strict HD threshold (min 1600x900)
+      const minW = options.minWidth || 1600;
+      const minH = options.minHeight || 900;
+      if (width < minW || height < minH) continue;
 
       // Get description/artist from extmetadata
       let description = meta?.ImageDescription?.value || '';
@@ -108,8 +113,8 @@ class WikimediaProvider {
 
       results.push({
         id: page.pageid?.toString() || page.title,
-        url,
-        thumbnail: ii.thumburl || url,
+        url: fullUrl,
+        thumbnail: ii.thumburl || fullUrl,
         width,
         height,
         title: page.title,
@@ -119,14 +124,6 @@ class WikimediaProvider {
         provider: 'wikimedia',
         searchUrl: `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title)}`,
       });
-    }
-
-    // Filter by minimum dimensions
-    if (options.minWidth || options.minHeight) {
-      return results.filter(r =>
-        (!options.minWidth || (r.width && r.width >= options.minWidth)) &&
-        (!options.minHeight || (r.height && r.height >= options.minHeight))
-      );
     }
 
     return results.slice(0, options.limit || WM_CONFIG.maxResults);

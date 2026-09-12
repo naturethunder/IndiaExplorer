@@ -544,75 +544,87 @@
   ],
   "hotels": [
     {
-      "name": "Rokeby Manor",
-      "type": "resort",
-      "tier": "good",
-      "priceMin": 3500,
-      "priceMax": 7000,
-      "rating": 4.6,
-      "reviews": 310,
+      "name": "GMVN / KMVN Tourist Rest House (Dhanaulti)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 1000,
+      "priceMax": 1900,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Deodar View",
-        "Restaurant",
-        "AC Rooms"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Hillside Resort"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Rokeby%20Manor%20Dhanaulti%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20%2F%20KMVN%20Tourist%20Rest%20House%20Dhanaulti%20Uttarakhand"
     },
     {
-      "name": "GMVN",
-      "type": "camp",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4500,
-      "rating": 4.5,
-      "reviews": 240,
-      "amenities": [
-        "Alpine Tents",
-        "Bonfire",
-        "Zip-lining"
-      ],
-      "tags": [
-        "Adventure Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20Dhanaulti%20Uttarakhand"
-    },
-    {
-      "name": "Bunkotel",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 7000,
-      "priceMax": 14000,
-      "rating": 4.8,
-      "reviews": 350,
-      "amenities": [
-        "Spa",
-        "Fireplace",
-        "Fine Dining"
-      ],
-      "tags": [
-        "Luxury Spa Resort"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Bunkotel%20Dhanaulti%20Uttarakhand"
-    },
-    {
-      "name": "Hotel Paradise Continental",
-      "type": "homestay",
+      "name": "GMVN Tourist Rest House Drona Dehradun",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.5,
-      "reviews": 160,
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4,
+      "reviews": 2400,
       "amenities": [
-        "Garhwali Home Meals",
-        "Deodar View"
+        "Uttarakhand Tourism Unit",
+        "Spacious Campus",
+        "In-house Dining",
+        "Tour Desk"
       ],
       "tags": [
-        "Homestay"
+        "Dehradun (24 km away)",
+        "Gandhi Road",
+        "State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Paradise%20Continental%20Dhanaulti%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20Tourist%20Rest%20House%20Drona%20Dehradun%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Hotel Madhuban Dehradun",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 8000,
+      "rating": 4.3,
+      "reviews": 2800,
+      "amenities": [
+        "Botanical Gardens",
+        "Ayurvedic Spa",
+        "Vatika Restaurant",
+        "Fitness Room"
+      ],
+      "tags": [
+        "Dehradun (24 km away)",
+        "Rajpur Road",
+        "Valley Heritage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Madhuban%20Dehradun%20Dehradun%20Uttarakhand"
+    },
+    {
+      "name": "Welcomhotel by ITC Hotels The Savoy Mussoorie",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 14000,
+      "priceMax": 26000,
+      "rating": 4.7,
+      "reviews": 3900,
+      "amenities": [
+        "Historic 1902 Grandeur",
+        "Himalayan Panorama",
+        "Spa",
+        "Writer Bar"
+      ],
+      "tags": [
+        "Dehradun (24 km away)",
+        "Mussoorie Ridge",
+        "Legendary Hill Icon"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Welcomhotel%20by%20ITC%20Hotels%20The%20Savoy%20Mussoorie%20Dehradun%20Uttarakhand"
     }
   ],
   "gallery": [

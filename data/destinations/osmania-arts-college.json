@@ -422,155 +422,108 @@
   ],
   "hotels": [
     {
-      "name": "GoStops Osmania Arts College",
-      "type": "hostel",
+      "name": "TSTDC Haritha Hotel (Osmania Arts College)",
+      "type": "hotel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
+      "priceMin": 1000,
+      "priceMax": 1800,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=TSTDC%20Haritha%20Hotel%20Osmania%20Arts%20College%20Telangana"
+    },
+    {
+      "name": "Hotel Sitara Grand Banjara Hills",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 1800,
+      "priceMax": 3200,
       "rating": 4.2,
-      "reviews": 337,
+      "reviews": 2600,
       "amenities": [
+        "Central AC",
+        "Pure Veg Dining",
         "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Travel Desk"
       ],
       "tags": [
-        "Budget Friendly",
-        "Legacy Hotel"
+        "Hyderabad (6 km away)",
+        "City Centre",
+        "Value Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=GoStops%20Osmania%20Arts%20College%20Osmania%20Arts%20College%20Telangana"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Sitara%20Grand%20Banjara%20Hills%20Hyderabad%20Telangana"
     },
     {
-      "name": "Osmania Arts College Heritage Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.1,
-      "reviews": 379,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Period Property"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Osmania%20Arts%20College%20Heritage%20Hotel%20Osmania%20Arts%20College%20Telangana"
-    },
-    {
-      "name": "Osmania Arts College Period Property",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 768,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Rajwada"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Osmania%20Arts%20College%20Period%20Property%20Osmania%20Arts%20College%20Telangana"
-    },
-    {
-      "name": "Fairfield by Marriott Manor House",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 784,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Legacy Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Manor%20House%20Osmania%20Arts%20College%20Telangana"
-    },
-    {
-      "name": "Sarovar Portico Osmania Arts College",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3886,
-      "priceMax": 5048,
-      "rating": 4.1,
-      "reviews": 1029,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Osmania%20Arts%20College%20Osmania%20Arts%20College%20Telangana"
-    },
-    {
-      "name": "Osmania Arts College Legacy Hotel",
+      "name": "The Golkonda Hotel Hyderabad",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 6813,
-      "priceMax": 7137,
-      "rating": 4.4,
-      "reviews": 1011,
+      "priceMin": 3200,
+      "priceMax": 5500,
+      "rating": 4.3,
+      "reviews": 3900,
       "amenities": [
-        "Free WiFi",
+        "Masab Tank Central",
+        "Jewel of Nizam Minar Dining",
         "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
+        "Fitness"
       ],
       "tags": [
-        "Business Preferred",
-        "Heritage Hotel"
+        "Hyderabad (6 km away)",
+        "Banjara Hills Gateway",
+        "Culinary Heritage"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Osmania%20Arts%20College%20Legacy%20Hotel%20Osmania%20Arts%20College%20Telangana"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Golkonda%20Hotel%20Hyderabad%20Hyderabad%20Telangana"
     },
     {
-      "name": "Osmania Arts College Palace Hotel",
-      "type": "hotel",
+      "name": "Taj Falaknuma Palace, Hyderabad",
+      "type": "heritage",
       "tier": "best",
-      "priceMin": 8945,
-      "priceMax": 9858,
-      "rating": 4.5,
-      "reviews": 2491,
+      "priceMin": 38000,
+      "priceMax": 85000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Mirror in the Sky 2000ft Above City",
+        "Horse Carriage Arrival",
+        "Nizam Dining",
+        "Jiva Spa"
       ],
       "tags": [
-        "Celebrity Choice",
-        "Palace Hotel"
+        "Hyderabad (6 km away)",
+        "Royal Nizam Palace",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Osmania%20Arts%20College%20Palace%20Hotel%20Osmania%20Arts%20College%20Telangana"
+      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Falaknuma%20Palace%2C%20Hyderabad%20Hyderabad%20Telangana"
+    },
+    {
+      "name": "ITC Kohenur, a Luxury Collection Hotel, Hyderabad",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 9500,
+      "priceMax": 18000,
+      "rating": 4.8,
+      "reviews": 5400,
+      "amenities": [
+        "Durgam Cheruvu Lake View",
+        "Dum Pukht Begum's",
+        "Kaya Kalp Spa",
+        "Rooftop Lounge"
+      ],
+      "tags": [
+        "Hyderabad (6 km away)",
+        "HITEC City Hub",
+        "Modern Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Kohenur%2C%20a%20Luxury%20Collection%20Hotel%2C%20Hyderabad%20Hyderabad%20Telangana"
     }
   ],
   "restaurants": [],

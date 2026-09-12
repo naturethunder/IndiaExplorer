@@ -422,157 +422,87 @@
   ],
   "hotels": [
     {
-      "name": "Vasai Royal Retreat",
-      "type": "hotel",
+      "name": "MTDC Holiday Resort (Fort Vasai)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4,
-      "reviews": 187,
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Vasai%20Royal%20Retreat%20Vasai%20Maharashtra"
-    },
-    {
-      "name": "Hotel Royal Orchid Vasai",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 401,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Royal%20Orchid%20Vasai%20Vasai%20Maharashtra"
-    },
-    {
-      "name": "Vasai Manor House",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 538,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Vasai%20Manor%20House%20Vasai%20Maharashtra"
-    },
-    {
-      "name": "Vasai Ginger",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 314,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Palace Hotel"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Vasai%20Ginger%20Vasai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Fort%20Vasai%20Maharashtra"
     },
     {
-      "name": "Holiday Inn Express Vasai",
+      "name": "Hotel Suba Palace Mumbai",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 3662,
-      "priceMax": 4604,
-      "rating": 4.3,
-      "reviews": 624,
+      "priceMin": 3500,
+      "priceMax": 5800,
+      "rating": 4.4,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Near Gateway of India",
+        "Buffet Breakfast",
+        "Modern AC Rooms",
+        "WiFi"
       ],
       "tags": [
-        "Comfort Plus",
-        "Royal Retreat"
+        "Mumbai (45 km away)",
+        "Colaba Hub",
+        "Value Comfort"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Vasai%20Vasai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suba%20Palace%20Mumbai%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Fairfield by Marriott Manor House",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6408,
-      "priceMax": 6842,
-      "rating": 4.5,
-      "reviews": 897,
+      "name": "The Taj Mahal Palace, Mumbai",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 22000,
+      "priceMax": 55000,
+      "rating": 4.9,
+      "reviews": 9800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Gateway of India Oceanfront",
+        "Historic 1903 Grandeur",
+        "Wasabi by Morimoto",
+        "Jiva Spa"
       ],
       "tags": [
-        "Business Preferred",
-        "Fort Residence"
+        "Mumbai (45 km away)",
+        "Colaba Waterfront",
+        "India's Most Iconic Landmark"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Manor%20House%20Vasai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Mahal%20Palace%2C%20Mumbai%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Vasai Marriott",
+      "name": "Trident Nariman Point, Mumbai",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10751,
-      "priceMax": 11164,
-      "rating": 4.6,
-      "reviews": 2558,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.7,
+      "reviews": 7800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Marine Drive Queen's Necklace View",
+        "Outdoor Pool",
+        "Frangipani Mediterranean",
+        "Spa"
       ],
       "tags": [
-        "Luxury Experience",
-        "Rajwada"
+        "Mumbai (45 km away)",
+        "Marine Drive",
+        "Oberoi Group"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Vasai%20Marriott%20Vasai%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Trident%20Nariman%20Point%2C%20Mumbai%20Mumbai%20Maharashtra"
     }
   ],
   "restaurants": [],

@@ -62,18 +62,25 @@ class UnsplashProvider {
   }
 
   normalizeResults(data) {
-    return (data.results || []).map(photo => ({
-      id: photo.id,
-      url: photo.urls?.full || photo.urls?.regular || photo.urls?.small,
-      thumbnail: photo.urls?.thumb,
-      width: photo.width,
-      height: photo.height,
-      photographer: photo.user?.name,
-      photographerUrl: photo.user?.links?.html,
-      alt: photo.alt_description || photo.description || '',
-      provider: 'unsplash',
-      searchUrl: photo.links?.html,
-    })).filter(p => p.url);
+    return (data.results || []).map(photo => {
+      const width = photo.width || 0;
+      const height = photo.height || 0;
+      // Guarantee high-definition URL (full or raw with 2400w)
+      const url = photo.urls?.raw ? `${photo.urls.raw}&auto=format&fit=crop&w=2400&q=85` : (photo.urls?.full || photo.urls?.regular);
+
+      return {
+        id: photo.id,
+        url,
+        thumbnail: photo.urls?.thumb || photo.urls?.small,
+        width,
+        height,
+        photographer: photo.user?.name,
+        photographerUrl: photo.user?.links?.html,
+        alt: photo.alt_description || photo.description || '',
+        provider: 'unsplash',
+        searchUrl: photo.links?.html,
+      };
+    }).filter(p => p.url && p.width >= 1600 && p.height >= 900); // Strict HD Filter (Min 1600x900)
   }
 
   sleep(ms) {

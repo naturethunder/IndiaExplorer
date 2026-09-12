@@ -442,44 +442,87 @@
   ],
   "hotels": [
     {
-      "name": "Hanle Tourist Guest House",
-      "type": "guesthouse",
-      "tier": "budget",
+      "name": "Hanle Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
       "priceMin": 800,
-      "priceMax": 1500,
-      "rating": 4.1,
-      "reviews": 140,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Clean Rooms",
-        "Hot Water",
-        "Free Parking",
-        "Travel Assistance"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Budget Friendly",
-        "Convenient"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hanle%20Tourist%20Guest%20House%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hanle%20Forest%20Rest%20House%20Ladakh"
     },
     {
-      "name": "Hanle Heritage Residency",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.3,
-      "reviews": 210,
+      "name": "Zostel Leh",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "AC Rooms",
-        "Multi-Cuisine Dining",
-        "Free WiFi",
-        "Room Service"
+        "Stok Range Terrace",
+        "Cozy Common Room",
+        "Bike Rental Desk",
+        "WiFi"
       ],
       "tags": [
-        "Family Friendly",
-        "Comfortable"
+        "Leh (200 km away)",
+        "Upper Tukcha Road",
+        "Bikers & Trekkers Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hanle%20Heritage%20Residency%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Leh%20Leh%20Ladakh"
+    },
+    {
+      "name": "Gomang Boutique Hotel Leh",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 2400,
+      "amenities": [
+        "Extensive Himalayan Library",
+        "Pure Veg Dining",
+        "Oxygen Support",
+        "Apple Orchards"
+      ],
+      "tags": [
+        "Leh (200 km away)",
+        "Changspa Road",
+        "Eco Boutique"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gomang%20Boutique%20Hotel%20Leh%20Leh%20Ladakh"
+    },
+    {
+      "name": "The Grand Dragon Ladakh",
+      "type": "hotel",
+      "tier": "best",
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 4600,
+      "amenities": [
+        "Solar Heated Luxury",
+        "Stok Kangri Mountain Panorama",
+        "Oxygen Assistance",
+        "Zasgyath Dining"
+      ],
+      "tags": [
+        "Leh (200 km away)",
+        "Old Road Shenam",
+        "Ladakh Premier 5-Star"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Dragon%20Ladakh%20Leh%20Ladakh"
     }
   ],
   "gallery": [

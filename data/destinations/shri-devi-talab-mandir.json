@@ -422,156 +422,108 @@
   ],
   "hotels": [
     {
-      "name": "OYO Shri Devi Talab",
+      "name": "Shri Devi Talab Mandir Devasthanam Pilgrim Yatri Nivas",
       "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 3.9,
-      "reviews": 271,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Shri%20Devi%20Talab%20Shri%20Devi%20Talab%20Punjab"
-    },
-    {
-      "name": "Zostel Plus Shri Devi Talab",
-      "type": "hostel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 530,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Plus%20Shri%20Devi%20Talab%20Shri%20Devi%20Talab%20Punjab"
-    },
-    {
-      "name": "Lemon Tree Red Fox Shri Devi Talab",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
+      "priceMin": 500,
+      "priceMax": 1100,
       "rating": 4.1,
-      "reviews": 322,
+      "reviews": 680,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
       ],
       "tags": [
-        "Popular Pick",
-        "Pilgrim Lodge"
+        "On-site / Village",
+        "Devotee Choice"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Red%20Fox%20Shri%20Devi%20Talab%20Shri%20Devi%20Talab%20Punjab"
+      "url": "https://www.google.com/maps/search/?api=1&query=Shri%20Devi%20Talab%20Mandir%20Yatri%20Nivas%20Punjab"
     },
     {
-      "name": "Holiday Inn Express Heritage Suites",
+      "name": "Guru Arjan Dev Niwas / Sarai (SGPC)",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 300,
+      "priceMax": 700,
+      "rating": 4.7,
+      "reviews": 9200,
+      "amenities": [
+        "Official Golden Temple Trust Run",
+        "Clean Devotee Rooms",
+        "24hr Langar Access",
+        "Gurbani Audio"
+      ],
+      "tags": [
+        "Amritsar (75 km away)",
+        "Inside Golden Temple Complex",
+        "Divine Pilgrimage"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Guru%20Arjan%20Dev%20Niwas%20%2F%20Sarai%20(SGPC)%20Amritsar%20Punjab"
+    },
+    {
+      "name": "Hotel City Park Amritsar",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
+      "priceMin": 2200,
+      "priceMax": 3800,
       "rating": 4.3,
-      "reviews": 673,
+      "reviews": 3600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Near Golden Temple Entrance",
+        "Pure Veg Dining",
+        "AC",
+        "Free WiFi"
       ],
       "tags": [
-        "Well Rated",
-        "Sai Dham"
+        "Amritsar (75 km away)",
+        "Golden Temple 200m",
+        "Devotee Convenience"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Heritage%20Suites%20Shri%20Devi%20Talab%20Mandir%20Punjab"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20City%20Park%20Amritsar%20Amritsar%20Punjab"
     },
     {
-      "name": "Sarovar Portico Sai Dham",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3767,
-      "priceMax": 4941,
-      "rating": 4.2,
-      "reviews": 361,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Sai%20Dham%20Shri%20Devi%20Talab%20Punjab"
-    },
-    {
-      "name": "Fairfield by Marriott Shri Devi Talab",
+      "name": "Radisson Blu Hotel Amritsar",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 4519,
-      "priceMax": 5436,
-      "rating": 4.4,
-      "reviews": 1315,
+      "priceMin": 4000,
+      "priceMax": 7500,
+      "rating": 4.5,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Airport Highway",
+        "Tavolo Mondo Dining",
+        "Outdoor Pool",
+        "Gym"
       ],
       "tags": [
-        "Premium Stay",
-        "Bhakti Residency"
+        "Amritsar (75 km away)",
+        "Airport Proximity",
+        "Quiet Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fairfield%20by%20Marriott%20Shri%20Devi%20Talab%20Shri%20Devi%20Talab%20Punjab"
+      "url": "https://www.google.com/maps/search/?api=1&query=Radisson%20Blu%20Hotel%20Amritsar%20Amritsar%20Punjab"
     },
     {
-      "name": "Shri Devi Talab Westin",
+      "name": "Hyatt Regency Amritsar",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11665,
-      "priceMax": 12438,
-      "rating": 4.4,
-      "reviews": 1704,
+      "priceMin": 5500,
+      "priceMax": 10000,
+      "rating": 4.6,
+      "reviews": 5200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Free Shuttle to Golden Temple",
+        "Vitality Pool",
+        "Shanti Spa",
+        "Punjab Province Dining"
       ],
       "tags": [
-        "Award Winning",
-        "Sai Dham"
+        "Amritsar (75 km away)",
+        "GT Road Hub",
+        "International Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Shri%20Devi%20Talab%20Westin%20Shri%20Devi%20Talab%20Punjab"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Amritsar%20Amritsar%20Punjab"
     }
   ],
   "restaurants": [],

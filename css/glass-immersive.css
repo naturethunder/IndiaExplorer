@@ -1646,3 +1646,15 @@ body.glass-immersive .ex-chip:active svg {
   stroke: #F5C542 !important;
   filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
 }
+
+/* ─── UI/UX Pro Max: Prefers-Reduced-Motion Compliance ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

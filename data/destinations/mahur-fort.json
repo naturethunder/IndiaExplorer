@@ -251,157 +251,87 @@
   ],
   "hotels": [
     {
-      "name": "BunkStay Mahur",
-      "type": "hostel",
+      "name": "MTDC Holiday Resort (Mahur Fort)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 3.8,
-      "reviews": 402,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=BunkStay%20Mahur%20Mahur%20Maharashtra"
-    },
-    {
-      "name": "Mahur Keys Prima",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.3,
-      "reviews": 385,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Mahur%20Keys%20Prima%20Mahur%20Maharashtra"
-    },
-    {
-      "name": "Treebo Trend Mahur",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 485,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Palace Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Mahur%20Mahur%20Maharashtra"
-    },
-    {
-      "name": "Zone by The Park Mahur",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 306,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Period Property"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zone%20by%20The%20Park%20Mahur%20Mahur%20Maharashtra"
-    },
-    {
-      "name": "Ibis Mahur",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3902,
-      "priceMax": 5093,
+      "priceMin": 1100,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 1004,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Mahal Palace"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Mahur%20Mahur%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Mahur%20Fort%20Maharashtra"
     },
     {
-      "name": "Hilton Garden Inn Mahur",
+      "name": "MTDC Tourist Hotel Nagpur",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4,
+      "reviews": 1800,
+      "amenities": [
+        "Govt Tourism Property",
+        "Restaurant",
+        "Parking",
+        "Tiger Safari Bookings"
+      ],
+      "tags": [
+        "Nagpur (189 km away)",
+        "Civil Lines",
+        "Maharashtra Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Tourist%20Hotel%20Nagpur%20Nagpur%20Maharashtra"
+    },
+    {
+      "name": "Hotel Centre Point Nagpur",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 5780,
-      "priceMax": 7236,
-      "rating": 4.5,
-      "reviews": 1511,
+      "priceMin": 4000,
+      "priceMax": 7000,
+      "rating": 4.4,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Swimming Pool",
+        "Multi-cuisine Dining",
+        "Bar",
+        "Gym"
       ],
       "tags": [
-        "Premium Stay",
-        "Mahal Palace"
+        "Nagpur (189 km away)",
+        "Ramdaspeth",
+        "City Centre Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Mahur%20Mahur%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Centre%20Point%20Nagpur%20Nagpur%20Maharashtra"
     },
     {
-      "name": "Mahur Sheraton",
+      "name": "Radisson Blu Hotel Nagpur",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11750,
-      "priceMax": 13412,
+      "priceMin": 6500,
+      "priceMax": 12500,
       "rating": 4.6,
-      "reviews": 2610,
+      "reviews": 6200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Outdoor Pool",
+        "The Creative Kitchen",
+        "Spa",
+        "Airport Shuttle"
       ],
       "tags": [
-        "Luxury Experience",
-        "Fort Residence"
+        "Nagpur (189 km away)",
+        "Wardha Road",
+        "Vidarbha Tiger Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Mahur%20Sheraton%20Mahur%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Radisson%20Blu%20Hotel%20Nagpur%20Nagpur%20Maharashtra"
     }
   ],
   "restaurants": [],

@@ -12,8 +12,9 @@
     "alt": "Dawki"
   },
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Dawki_River_Boating.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Dawki view 1"
+    "src": "https://images.pexels.com/photos/33769041/pexels-photo-33769041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Scenic view of boats on turquoise waters with lush hills in Meghalaya, India.",
+    "caption": "Scenic view of boats on turquoise waters with lush hills in Meghalaya, India."
   },
   "overview": {
     "short": "Boating on the transparent Umngot River where boats float as if suspended in air.",
@@ -27,7 +28,8 @@
     "rating": 4.8,
     "reviewCount": 3120,
     "minPrice": 800,
-    "distanceFromDelhi": 1980
+    "distanceFromDelhi": 1980,
+    "altitude": 99
   },
   "bestTime": {
     "label": "Nov – Apr",
@@ -426,87 +428,150 @@
       "distance": "0 km",
       "entryFee": "Boating ₹500–₹800/boat",
       "timings": "6 AM – 5 PM",
-      "duration": "2–3 hrs",
+      "duration": "2 min walk",
       "rating": 4.9,
       "description": "Crystal-clear river where boats appear to float in mid-air over visible riverbed pebbles.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Dawki_River%2C_Meghalaya%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Umngot River, Dawki"
+        "src": "https://images.pexels.com/photos/11005506/pexels-photo-11005506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "A lone fisherman paddles a small raft on a misty river, surrounded by lush greenery.",
+        "caption": "A lone fisherman paddles a small raft on a misty river, surrounded by lush greenery."
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/14/Dawki_Bridge_and_Umngot_River.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/65/Fishermen_at_Dawki_River.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dawki_River%2C_Dawki%2C_Meghalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        {
+          "src": "https://images.pexels.com/photos/13872564/pexels-photo-13872564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Feet standing in transparent river water with rocky bed, casting a shadow.",
+          "title": "Feet standing in transparent river water with rocky bed, casting a shadow.",
+          "caption": "Feet standing in transparent river water with rocky bed, casting a shadow."
+        },
+        {
+          "src": "https://images.pexels.com/photos/19674228/pexels-photo-19674228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A serene view of a river with dense forest and a canoe, capturing nature's tranquility.",
+          "caption": "A serene view of a river with dense forest and a canoe, capturing nature's tranquility."
+        },
+        {
+          "src": "https://images.pexels.com/photos/13516822/pexels-photo-13516822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Image of smooth stones submerged in clear water showcasing natural textures.",
+          "title": "Image of smooth stones submerged in clear water showcasing natural textures.",
+          "caption": "Image of smooth stones submerged in clear water showcasing natural textures."
+        }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "Dawki Tourist Guest House",
-      "type": "guesthouse",
-      "tier": "budget",
+      "name": "Dawki Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
       "priceMin": 800,
-      "priceMax": 1500,
-      "rating": 4.1,
-      "reviews": 140,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Clean Rooms",
-        "Hot Water",
-        "Free Parking",
-        "Travel Assistance"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Budget Friendly",
-        "Convenient"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Dawki%20Tourist%20Guest%20House%20Meghalaya"
+      "url": "https://www.google.com/maps/search/?api=1&query=Dawki%20Forest%20Rest%20House%20Meghalaya"
     },
     {
-      "name": "Dawki Heritage Residency",
+      "name": "Hotel Centre Point Shillong",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3200,
+      "priceMin": 2600,
+      "priceMax": 4400,
       "rating": 4.3,
-      "reviews": 210,
+      "reviews": 2900,
       "amenities": [
-        "AC Rooms",
-        "Multi-Cuisine Dining",
+        "Heart of Police Bazar",
+        "Cloud 9 Nightclub",
         "Free WiFi",
-        "Room Service"
+        "AC"
       ],
       "tags": [
-        "Family Friendly",
-        "Comfortable"
+        "Shillong (45 km away)",
+        "Police Bazar Central",
+        "Shoppers Favorite"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Dawki%20Heritage%20Residency%20Meghalaya"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Centre%20Point%20Shillong%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Hotel Polo Towers Shillong",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 7800,
+      "rating": 4.4,
+      "reviews": 3600,
+      "amenities": [
+        "Polo Grounds View",
+        "Ginger Restaurant",
+        "Platinum Bar",
+        "Spa"
+      ],
+      "tags": [
+        "Shillong (45 km away)",
+        "Oakland",
+        "Shillong Landmark"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Polo%20Towers%20Shillong%20Shillong%20Meghalaya"
+    },
+    {
+      "name": "Ri Kynjai - Serenity by the Lake",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 12000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 3100,
+      "amenities": [
+        "Khasi Thatch Architecture",
+        "Umiam Lakefront Panorama",
+        "Sao Fe Dining",
+        "Ayurveda"
+      ],
+      "tags": [
+        "Shillong (45 km away)",
+        "Umiam Lake",
+        "Scotland of the East"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Ri%20Kynjai%20-%20Serenity%20by%20the%20Lake%20Shillong%20Meghalaya"
     }
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Dawki_River_Boating.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dawki view 1",
-      "title": "Umngot River"
+      "src": "https://images.pexels.com/photos/33769041/pexels-photo-33769041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Scenic view of boats on turquoise waters with lush hills in Meghalaya, India.",
+      "title": "Scenic view of boats on turquoise waters with lush hills in Meghalaya, India.",
+      "caption": "Scenic view of boats on turquoise waters with lush hills in Meghalaya, India."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/The_Umngot_River_Boating_at_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dawki view 2",
-      "title": "Dawki — Historic Architecture"
+      "src": "https://images.pexels.com/photos/16077212/pexels-photo-16077212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "A captivating aerial view of Dawki town nestled in lush greenery and hills, Meghalaya, India.",
+      "title": "A captivating aerial view of Dawki town nestled in lush greenery and hills, Meghalaya, India.",
+      "caption": "A captivating aerial view of Dawki town nestled in lush greenery and hills, Meghalaya, India."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dawki view 3",
-      "title": "Dawki — Scenic Nature"
+      "src": "https://images.pexels.com/photos/20011421/pexels-photo-20011421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Aerial view showcasing wooden canoes on clear emerald waters, capturing tranquility.",
+      "title": "Aerial view showcasing wooden canoes on clear emerald waters, capturing tranquility.",
+      "caption": "Aerial view showcasing wooden canoes on clear emerald waters, capturing tranquility."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Wah_Umngot_River_Dawki_Meghalaya_Border_Crossing_Bangladesh_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dawki view 4",
-      "title": "Dawki — Sacred Heritage"
+      "src": "https://images.pexels.com/photos/33580484/pexels-photo-33580484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Vibrant rowboats docked by a scenic riverbank surrounded by lush greenery, under a bright blue sky.",
+      "title": "Vibrant rowboats docked by a scenic riverbank surrounded by lush greenery, under a bright blue sky.",
+      "caption": "Vibrant rowboats docked by a scenic riverbank surrounded by lush greenery, under a bright blue sky."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Dawki_River%2C_Meghalaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dawki view 5",
-      "title": "Dawki — Sunset Horizon"
+      "src": "https://images.pexels.com/photos/15920700/pexels-photo-15920700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "A picturesque river scene with boats, surrounded by lush greenery and rocky shorelines, perfect for nature lovers.",
+      "title": "A picturesque river scene with boats, surrounded by lush greenery and rocky shorelines, perfect for nature lovers.",
+      "caption": "A picturesque river scene with boats, surrounded by lush greenery and rocky shorelines, perfect for nature lovers."
     }
   ],
   "faq": [

@@ -321,156 +321,108 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Gopinath",
+      "name": "Gopinath Mandir Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Gopinath%20Mandir%20Yatri%20Nivas%20Uttarakhand"
+    },
+    {
+      "name": "Zostel Rishikesh (Tapovan)",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.1,
-      "reviews": 401,
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.6,
+      "reviews": 4800,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Chilled Common Areas",
+        "Yoga Deck",
+        "Cafe",
+        "WiFi"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Pilgrim Lodge"
+        "Rishikesh (107 km away)",
+        "Backpacker Hub",
+        "Adventure Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Gopinath%20Gopinath%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Rishikesh%20(Tapovan)%20Rishikesh%20Uttarakhand"
     },
     {
-      "name": "Ginger Shiva Sadan",
-      "type": "hotel",
+      "name": "GMVN Tourist Rest House Bharat Bhumi Rishikesh",
+      "type": "guesthouse",
       "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 769,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Shiva%20Sadan%20Gopinath%20Uttarakhand"
-    },
-    {
-      "name": "Gopinath Temple View",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 553,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gopinath%20Temple%20View%20Gopinath%20Uttarakhand"
-    },
-    {
-      "name": "Ginger Gopinath",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
+      "priceMin": 1200,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 345,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Garhwal Mandal Tourism",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Well Rated",
-        "Krishna Kunj"
+        "Rishikesh (107 km away)",
+        "State Tourism",
+        "Pilgrim Transit Hub"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Gopinath%20Gopinath%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20Tourist%20Rest%20House%20Bharat%20Bhumi%20Rishikesh%20Rishikesh%20Uttarakhand"
     },
     {
-      "name": "Gopinath Ashram Stay",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3883,
-      "priceMax": 5063,
-      "rating": 4.3,
-      "reviews": 917,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Sai Dham"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gopinath%20Ashram%20Stay%20Gopinath%20Uttarakhand"
-    },
-    {
-      "name": "Gopinath Hilton Garden Inn",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5349,
-      "priceMax": 6078,
-      "rating": 4.3,
-      "reviews": 1762,
-      "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Dharmashala"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gopinath%20Hilton%20Garden%20Inn%20Gopinath%20Uttarakhand"
-    },
-    {
-      "name": "Gopinath Krishna Kunj",
-      "type": "hotel",
+      "name": "Aloha On The Ganges Rishikesh",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 7715,
-      "priceMax": 9674,
-      "rating": 4.5,
-      "reviews": 1422,
+      "priceMin": 7500,
+      "priceMax": 15000,
+      "rating": 4.7,
+      "reviews": 6200,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Infinity Pool on Ganga",
+        "Ayurvedic Spa",
+        "Ganga Aarti Desk",
+        "Organic Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Temple View"
+        "Rishikesh (107 km away)",
+        "Iconic Riverfront",
+        "Tapovan Cliffs"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Gopinath%20Krishna%20Kunj%20Gopinath%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Aloha%20On%20The%20Ganges%20Rishikesh%20Rishikesh%20Uttarakhand"
+    },
+    {
+      "name": "The Glasshouse on the Ganges (Neemrana)",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 9000,
+      "priceMax": 18000,
+      "rating": 4.8,
+      "reviews": 2100,
+      "amenities": [
+        "Private Sand Beach on Ganga",
+        "Lychee Orchards",
+        "Rafting Access",
+        "Yoga"
+      ],
+      "tags": [
+        "Rishikesh (107 km away)",
+        "Exclusive River Haven",
+        "Shivpuri"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Glasshouse%20on%20the%20Ganges%20(Neemrana)%20Rishikesh%20Uttarakhand"
     }
   ],
   "restaurants": [],

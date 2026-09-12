@@ -320,156 +320,108 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Avandha",
-      "type": "hostel",
-      "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.2,
-      "reviews": 291,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Avandha%20Avandha%20Maharashtra"
-    },
-    {
-      "name": "Avandha Haveli Stay",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.3,
-      "reviews": 387,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Rajwada"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Avandha%20Haveli%20Stay%20Avandha%20Maharashtra"
-    },
-    {
-      "name": "Treebo Trend Legacy Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.2,
-      "reviews": 535,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Heritage Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Legacy%20Hotel%20Avandha%20Maharashtra"
-    },
-    {
-      "name": "Avandha Legacy Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.3,
-      "reviews": 617,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Well Rated",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Avandha%20Legacy%20Hotel%20Avandha%20Maharashtra"
-    },
-    {
-      "name": "Keys Select Haveli Stay",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3261,
-      "priceMax": 3978,
-      "rating": 4.2,
-      "reviews": 1146,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Legacy Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Haveli%20Stay%20Avandha%20Maharashtra"
-    },
-    {
-      "name": "Avandha Sterling",
+      "name": "MTDC Holiday Resort (Avandha Fort)",
       "type": "resort",
-      "tier": "better",
-      "priceMin": 6665,
-      "priceMax": 7901,
-      "rating": 4.3,
-      "reviews": 1683,
+      "tier": "cheapest",
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Premium Stay",
-        "Rajwada"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Avandha%20Sterling%20Avandha%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Avandha%20Fort%20Maharashtra"
     },
     {
-      "name": "Renaissance Legacy Hotel",
+      "name": "Hotel Panchavati Yatri Nashik",
+      "type": "hotel",
+      "tier": "cheapest",
+      "priceMin": 850,
+      "priceMax": 1500,
+      "rating": 4,
+      "reviews": 2800,
+      "amenities": [
+        "Pure Veg Restaurant",
+        "Pilgrim Assistance",
+        "AC Rooms",
+        "24h Hot Water"
+      ],
+      "tags": [
+        "Nashik (28 km away)",
+        "Vakil Wadi",
+        "Godavari Ghat & Pilgrim Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Panchavati%20Yatri%20Nashik%20Nashik%20Maharashtra"
+    },
+    {
+      "name": "MTDC Grape Park Resort Nashik",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 1400,
+      "priceMax": 2500,
+      "rating": 4.2,
+      "reviews": 2400,
+      "amenities": [
+        "Gangapur Dam View",
+        "Water Sports",
+        "Garden Restaurant",
+        "Maharashtra Tourism"
+      ],
+      "tags": [
+        "Nashik (28 km away)",
+        "Gangapur Dam",
+        "State Tourism Wine Resort"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Grape%20Park%20Resort%20Nashik%20Nashik%20Maharashtra"
+    },
+    {
+      "name": "Courtyard by Marriott Nashik",
+      "type": "hotel",
+      "tier": "better",
+      "priceMin": 5000,
+      "priceMax": 9000,
+      "rating": 4.5,
+      "reviews": 3200,
+      "amenities": [
+        "Rooftop Pool",
+        "All Day Dining",
+        "Fitness Centre",
+        "Wine Tours"
+      ],
+      "tags": [
+        "Nashik (28 km away)",
+        "Mumbai Naka",
+        "City Centre"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Nashik%20Nashik%20Maharashtra"
+    },
+    {
+      "name": "The Gateway Hotel Ambad Nashik",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11592,
-      "priceMax": 13496,
-      "rating": 4.5,
-      "reviews": 1277,
+      "priceMin": 7000,
+      "priceMax": 13000,
+      "rating": 4.6,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "11-acre Gardens",
+        "Swimming Pool",
+        "Spa",
+        "Fine Dining"
       ],
       "tags": [
-        "Award Winning",
-        "Royal Retreat"
+        "Nashik (28 km away)",
+        "Ambad MIDC",
+        "Taj Hospitality"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Renaissance%20Legacy%20Hotel%20Avandha%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Gateway%20Hotel%20Ambad%20Nashik%20Nashik%20Maharashtra"
     }
   ],
   "restaurants": [],

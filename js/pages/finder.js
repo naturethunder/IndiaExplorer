@@ -161,8 +161,8 @@ function parsePrompt(raw) {
 
     // 1. Natural phrase mention (e.g. '5 days in manali', 'trip to goa', 'ooty stay')
     const directHit = text.indexOf(' ' + titleNorm + ' ') >= 0 ||
-                      text.indexOf(' ' + slugClean + ' ') >= 0 ||
-                      (titleClean.length >= 4 && queryClean.indexOf(titleClean) >= 0);
+      text.indexOf(' ' + slugClean + ' ') >= 0 ||
+      (titleClean.length >= 4 && queryClean.indexOf(titleClean) >= 0);
     if (directHit) {
       directDests.push({ slug: d.slug, title: d.title, len: titleClean.length });
     }
@@ -275,7 +275,7 @@ function parsePrompt(raw) {
       const slug = (d.slug || '').toLowerCase();
       // Support partial matching for "near X" queries (ALL words must match)
       if (queryWords.length > 0 && queryWords.every(function (word) { return title.includes(word) || slug.includes(word); }) &&
-          (!out.near || d.title.length > out.near.title.length)) {
+        (!out.near || d.title.length > out.near.title.length)) {
         out.near = d;
       }
     });
@@ -440,7 +440,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
   if (detailedDest) {
     const placesList = (detailedDest.topPlaces || []).slice(0, 3).map(function (p) { return esc(p.name); }).join(', ');
     const hotelsList = (detailedDest.hotels || []).slice(0, 3).map(function (h) { return esc(h.name); }).join(', ');
-    
+
     detailsHTML = '<div class="mt-3 pt-3 border-t border-white/10 space-y-1.5 text-left text-xs text-slate-300">' +
       (placesList ? '<div><strong class="text-slate-200">🏞️ Places:</strong> ' + placesList + '</div>' : '') +
       (hotelsList ? '<div><strong class="text-slate-200">🏨 Stays:</strong> ' + hotelsList + '</div>' : '') +
@@ -449,34 +449,34 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
 
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block bg-slate-900/80 border border-white/15 backdrop-blur-xl rounded-2xl shadow-xl hover:border-emerald-400/50 transition-all duration-200">' +
-      '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
-        '<img src="' + esc(cardImg(d)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="origin" ' +
-             'onerror="this.onerror=null;this.style.display=\'none\';" />' +
-        '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
-        '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
-        '<div class="absolute bottom-3 left-3 right-3">' +
-          '<p class="text-white font-extrabold text-xl leading-tight drop-shadow">' + esc(d.title) + '</p>' +
-          '<p class="text-slate-300 text-xs font-medium">' + esc(d.state) + '</p>' +
-        '</div>' +
-      '</div>' +
-      '<div class="p-4 sm:p-5">' +
-        '<div class="flex items-center justify-between mb-2">' +
-          '<div class="flex items-center gap-1.5"><span class="text-amber-400">★</span>' +
-            '<span class="font-bold text-sm text-white">' + esc(d.rating) + '</span>' +
-            '<span class="text-slate-400 text-xs">(' + inr(d.reviewCount) + ')</span></div>' +
-          '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc(d.bestTime.label) + '</span>' +
-        '</div>' +
-        '<p class="text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
-        (chips ? '<div class="flex flex-wrap gap-1.5 mb-3">' + chips + '</div>' : '') +
-        detailsHTML +
-        '<div class="flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
-          '<span class="text-xs text-slate-400">' + distanceText + '</span>' +
-          '<div class="flex items-baseline gap-1.5">' +
-            '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
-            '<span class="text-sm font-extrabold text-amber-400">₹' + inr(d.minPrice) + '</span>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
+    '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
+    '<img src="' + esc(cardImg(d)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="origin" ' +
+    'onerror="this.onerror=null;this.style.display=\'none\';" />' +
+    '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
+    '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
+    '<div class="absolute bottom-3 left-3 right-3">' +
+    '<p class="text-white font-extrabold text-xl leading-tight drop-shadow">' + esc(d.title) + '</p>' +
+    '<p class="text-slate-300 text-xs font-medium">' + esc(d.state) + '</p>' +
+    '</div>' +
+    '</div>' +
+    '<div class="p-4 sm:p-5">' +
+    '<div class="flex items-center justify-between mb-2">' +
+    '<div class="flex items-center gap-1.5"><span class="text-amber-400">★</span>' +
+    '<span class="font-bold text-sm text-white">' + esc(d.rating) + '</span>' +
+    '<span class="text-slate-400 text-xs">(' + inr(d.reviewCount) + ')</span></div>' +
+    '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc(d.bestTime.label) + '</span>' +
+    '</div>' +
+    '<p class="text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
+    (chips ? '<div class="flex flex-wrap gap-1.5 mb-3">' + chips + '</div>' : '') +
+    detailsHTML +
+    '<div class="flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
+    '<span class="text-xs text-slate-400">' + distanceText + '</span>' +
+    '<div class="flex items-baseline gap-1.5">' +
+    '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
+    '<span class="text-sm font-extrabold text-amber-400">₹' + inr(d.minPrice) + '</span>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
     '</a>';
 }
 
@@ -519,395 +519,395 @@ function infoCardHTML(t) {
     '</span></a>';
 }
 
-  // ─── Run a search ───────────────────────────────────────
-  const grid = document.getElementById('grid');
-  const idle = document.getElementById('idleState');
-  const noMatch = document.getElementById('noMatch');
-  const understanding = document.getElementById('understanding');
-  const siteInfo = document.getElementById('siteInfo');
-  const resultsHeader = document.getElementById('resultsHeader');
-  const resultsTitle = document.getElementById('resultsTitle');
+// ─── Run a search ───────────────────────────────────────
+const grid = document.getElementById('grid');
+const idle = document.getElementById('idleState');
+const noMatch = document.getElementById('noMatch');
+const understanding = document.getElementById('understanding');
+const siteInfo = document.getElementById('siteInfo');
+const resultsHeader = document.getElementById('resultsHeader');
+const resultsTitle = document.getElementById('resultsTitle');
 
-  function generateItineraryHTML(dest, days, userCoords) {
-    const places = dest.topPlaces || [];
-    const hotels = dest.hotels || [];
-    const hiddenPlace = places[0] ? places[0].name : 'local secret spots';
-    const baseItin = dest.itinerary || [];
+function generateItineraryHTML(dest, days, userCoords) {
+  const places = dest.topPlaces || [];
+  const hotels = dest.hotels || [];
+  const hiddenPlace = places[0] ? places[0].name : 'local secret spots';
+  const baseItin = dest.itinerary || [];
 
-    let distanceText = '';
-    if (userCoords) {
-      const userPoint = [userCoords.lat, userCoords.lng];
-      const destPoint = dest.weather ? [dest.weather.lat, dest.weather.lng] : null;
-      if (userPoint && destPoint) {
-        const km = Math.round(haversine(userPoint, destPoint));
-        if (!isNaN(km)) {
-          distanceText = ' · 🚗 ' + km + ' km from you';
-        }
+  let distanceText = '';
+  if (userCoords) {
+    const userPoint = [userCoords.lat, userCoords.lng];
+    const destPoint = dest.weather ? [dest.weather.lat, dest.weather.lng] : null;
+    if (userPoint && destPoint) {
+      const km = Math.round(haversine(userPoint, destPoint));
+      if (!isNaN(km)) {
+        distanceText = ' · 🚗 ' + km + ' km from you';
       }
     }
-
-    let html = '<div class="bg-slate-900/85 border border-white/15 rounded-2xl shadow-xl p-6 mb-8 backdrop-blur-xl reveal in-view">' +
-      '<div class="flex items-center gap-3.5 border-b border-white/10 pb-4 mb-6">' +
-      '<span class="text-3xl p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">📅</span>' +
-      '<div>' +
-      '<h3 class="text-xl font-bold text-white">' + esc(days) + '-Day Plan for ' + esc(dest.title) + '</h3>' +
-      '<p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Featuring hidden gem: ' + esc(hiddenPlace) + esc(distanceText) + '</p>' +
-      '</div>' +
-      '</div>' +
-      '<div class="space-y-6">';
-
-    for (let d = 1; d <= days; d++) {
-      // If within pre-baked itinerary range, use the pre-baked day data!
-      if (d <= baseItin.length) {
-        const dayData = baseItin[d - 1];
-        const items = dayData.items || [];
-        html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
-          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
-          '<h4 class="text-base font-bold text-white mb-2.5 flex items-center gap-2">' + esc(dayData.title || ('Day ' + d)) + '</h4>' +
-          '<div class="space-y-2.5 text-sm text-slate-300">';
-        items.forEach(function (it) {
-          html += '<p><strong class="text-slate-200">' + esc(it.time) + ':</strong> ' +
-            '<span class="text-amber-300 font-semibold">' + esc(it.activity) + '</span>. ' +
-            esc(it.note || '') + '</p>';
-        });
-        // Add stay from hotels list
-        const hotel = hotels[d % hotels.length] || hotels[0];
-        if (hotel) {
-          html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>';
-        }
-        html += '</div></div>';
-      } else {
-        // Synthesize/extrapolate the day dynamically using places and hotels!
-        const p1 = places[(d * 2 - 2) % places.length];
-        const p2 = places[(d * 2 - 1) % places.length];
-        const hotel = hotels[d % hotels.length] || hotels[0];
-
-        html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
-          '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
-          '<h4 class="text-base font-bold text-white mb-2.5">Day ' + d + ': Deep Dive & Hidden Sights</h4>' +
-          '<div class="space-y-2.5 text-sm text-slate-300">' +
-          (p1 ? '<p><strong class="text-slate-200">Morning:</strong> Head to <span class="text-amber-300 font-semibold">' + esc(p1.name) + '</span>. ' + esc(p1.description || 'Spend some quiet time exploring the scenic landscape.') + '</p>' : '') +
-          (p2 ? '<p><strong class="text-slate-200">Afternoon:</strong> Visit <span class="text-amber-300 font-semibold">' + esc(p2.name) + '</span>. ' + esc(p2.description || 'Enjoy local specialties, photograph local architecture and interact with locals.') + '</p>' : '') +
-          (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>' : '') +
-          '</div>' +
-          '</div>';
-      }
-    }
-
-    html += '</div></div>';
-    return html;
   }
 
-  async function run(raw, userCoords) {
-    const p = parsePrompt(raw);
-    const destIntent = p.types.length || p.months.length || p.maxPrice != null || p.budget || p.luxury ||
-      p.states.length || p.directions.length || p.near || p.nearDelhi || p.vibes.length || p.names.length ||
-      p.places.length || p.brands.length;
+  let html = '<div class="bg-slate-900/85 border border-white/15 rounded-2xl shadow-xl p-6 mb-8 backdrop-blur-xl reveal in-view">' +
+    '<div class="flex items-center gap-3.5 border-b border-white/10 pb-4 mb-6">' +
+    '<span class="text-3xl p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">📅</span>' +
+    '<div>' +
+    '<h3 class="text-xl font-bold text-white">' + esc(days) + '-Day Plan for ' + esc(dest.title) + '</h3>' +
+    '<p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mt-1">Featuring hidden gem: ' + esc(hiddenPlace) + esc(distanceText) + '</p>' +
+    '</div>' +
+    '</div>' +
+    '<div class="space-y-6">';
 
-    idle.style.display = 'none';
-
-    // Website-info answers (contact / about / weather / booking …)
-    const infos = matchSiteInfo(p.text);
-    siteInfo.innerHTML = infos.slice(0, 2).map(infoCardHTML).join('');
-    siteInfo.style.display = infos.length ? 'grid' : 'none';
-
-    // Understanding panel
-    const uh = understandingHTML(p);
-    understanding.innerHTML = uh;
-    understanding.style.display = uh ? 'block' : 'none';
-
-    const scored = SUMMARIES.map(function (d) { const r = scoreDest(d, p); return { d: d, s: r.score, reasons: r.reasons }; });
-
-    const matched = scored.filter(function (x) { return x.s > 1.2 && x.reasons.length; })
-      .sort(function (a, b) { return b.s - a.s; }).slice(0, 18);
-
-    // Check if it's an itinerary request
-    const clean = raw.toLowerCase();
-    const daysMatch = clean.match(/\b([1-9]|1[0-5])\s*days?\b/) || clean.match(/\bday\s*([1-9]|1[0-5])\b/) || clean.match(/\b([1-9]|1[0-5])\s*day\b/);
-    const isItineraryRequest = clean.includes('itinerary') || clean.includes('iternary') || clean.includes('plan') || daysMatch;
-
-    if (isItineraryRequest) {
-      let days = 5;
-      if (daysMatch) {
-        days = parseInt(daysMatch[1], 10);
+  for (let d = 1; d <= days; d++) {
+    // If within pre-baked itinerary range, use the pre-baked day data!
+    if (d <= baseItin.length) {
+      const dayData = baseItin[d - 1];
+      const items = dayData.items || [];
+      html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
+        '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
+        '<h4 class="text-base font-bold text-white mb-2.5 flex items-center gap-2">' + esc(dayData.title || ('Day ' + d)) + '</h4>' +
+        '<div class="space-y-2.5 text-sm text-slate-300">';
+      items.forEach(function (it) {
+        html += '<p><strong class="text-slate-200">' + esc(it.time) + ':</strong> ' +
+          '<span class="text-amber-300 font-semibold">' + esc(it.activity) + '</span>. ' +
+          esc(it.note || '') + '</p>';
+      });
+      // Add stay from hotels list
+      const hotel = hotels[d % hotels.length] || hotels[0];
+      if (hotel) {
+        html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>';
       }
-      if (days < 1) days = 1;
-      if (days > 15) days = 15;
+      html += '</div></div>';
+    } else {
+      // Synthesize/extrapolate the day dynamically using places and hotels!
+      const p1 = places[(d * 2 - 2) % places.length];
+      const p2 = places[(d * 2 - 1) % places.length];
+      const hotel = hotels[d % hotels.length] || hotels[0];
 
-      // Pick target destination slug
-      let slug = '';
-      if (p.names.length > 0) {
-        slug = p.names[0];
-      } else if (matched.length > 0) {
-        slug = matched[0].d.slug;
-      } else {
-        const curatedSlugs = ['spiti', 'kanatal', 'munnar', 'coorg', 'hampi', 'goa', 'manali', 'udaipur', 'ladakh', 'rishikesh', 'darjeeling'];
-        slug = curatedSlugs[Math.floor(Math.random() * curatedSlugs.length)];
-      }
+      html += '<div class="relative pl-6 border-l-2 border-amber-500/40">' +
+        '<div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-slate-900 shadow-sm shadow-amber-400"></div>' +
+        '<h4 class="text-base font-bold text-white mb-2.5">Day ' + d + ': Deep Dive & Hidden Sights</h4>' +
+        '<div class="space-y-2.5 text-sm text-slate-300">' +
+        (p1 ? '<p><strong class="text-slate-200">Morning:</strong> Head to <span class="text-amber-300 font-semibold">' + esc(p1.name) + '</span>. ' + esc(p1.description || 'Spend some quiet time exploring the scenic landscape.') + '</p>' : '') +
+        (p2 ? '<p><strong class="text-slate-200">Afternoon:</strong> Visit <span class="text-amber-300 font-semibold">' + esc(p2.name) + '</span>. ' + esc(p2.description || 'Enjoy local specialties, photograph local architecture and interact with locals.') + '</p>' : '') +
+        (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>' : '') +
+        '</div>' +
+        '</div>';
+    }
+  }
 
-      // Show simulated loader sequence
-      grid.innerHTML = '<div class="col-span-full bg-slate-900/90 border border-amber-500/30 rounded-2xl shadow-xl p-8 text-center text-slate-200 mb-8 backdrop-blur-xl">' +
-        '<div class="flex flex-col items-center justify-center gap-3">' +
-        '<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-400"></div>' +
-        '<div id="itineraryStatus" class="text-sm font-semibold text-amber-400">🔍 Connecting to database indexes...</div>' +
-        '</div></div>';
-      scrollToResults();
+  html += '</div></div>';
+  return html;
+}
 
-      const statusEl = document.getElementById('itineraryStatus');
-      await new Promise(function (resolve) { setTimeout(resolve, 600); });
-      if (statusEl) statusEl.textContent = '📡 Consulting Google maps coordinates & hidden sights...';
-      await new Promise(function (resolve) { setTimeout(resolve, 600); });
-      if (statusEl) statusEl.textContent = '🤖 Analyzing itinerary structure for ' + days + ' days...';
-      await new Promise(function (resolve) { setTimeout(resolve, 400); });
+async function run(raw, userCoords) {
+  const p = parsePrompt(raw);
+  const destIntent = p.types.length || p.months.length || p.maxPrice != null || p.budget || p.luxury ||
+    p.states.length || p.directions.length || p.near || p.nearDelhi || p.vibes.length || p.names.length ||
+    p.places.length || p.brands.length;
 
-      try {
-        const dest = await fetchDestination(slug);
-        noMatch.style.display = 'none';
-        resultsHeader.style.display = 'flex';
-        resultsTitle.textContent = 'Custom AI Itinerary & Matches suggested';
+  idle.style.display = 'none';
 
-        const itineraryHTML = generateItineraryHTML(dest, days, userCoords);
+  // Website-info answers (contact / about / weather / booking …)
+  const infos = matchSiteInfo(p.text);
+  siteInfo.innerHTML = infos.slice(0, 2).map(infoCardHTML).join('');
+  siteInfo.style.display = infos.length ? 'grid' : 'none';
 
-        const pickedDest = SUMMARIES.find(function (x) { return x.slug === slug; });
-        const reasons = ['Matches custom itinerary request'];
-        const otherPicks = [];
-        if (pickedDest) {
-          otherPicks.push({ d: pickedDest, reasons: reasons });
-        }
-        matched.forEach(function (x) {
-          if (x.d.slug !== slug) otherPicks.push(x);
-        });
+  // Understanding panel
+  const uh = understandingHTML(p);
+  understanding.innerHTML = uh;
+  understanding.style.display = uh ? 'block' : 'none';
 
-        // Fetch fallback destination details for stays & places list
-        const detailPicks = await Promise.all(otherPicks.slice(0, 9).map(function (x) {
-          return fetchDestination(x.d.slug).catch(function () { return null; });
-        }));
+  const scored = SUMMARIES.map(function (d) { const r = scoreDest(d, p); return { d: d, s: r.score, reasons: r.reasons }; });
 
-        let gridHTML = '<div class="col-span-full">' + itineraryHTML + '</div>';
-        gridHTML += otherPicks.slice(0, 9).map(function (x, i) {
-          return cardHTML(x.d, x.reasons, userCoords, x.d.slug === slug ? dest : detailPicks[i]);
-        }).join('');
-        grid.innerHTML = gridHTML;
-      } catch (err) {
-        grid.innerHTML = '<div class="col-span-full text-center text-red-600 text-sm py-10">Failed to generate itinerary: ' + esc(err.message || String(err)) + '</div>';
-      }
-      scrollToResults();
-      return;
+  const matched = scored.filter(function (x) { return x.s > 1.2 && x.reasons.length; })
+    .sort(function (a, b) { return b.s - a.s; }).slice(0, 18);
+
+  // Check if it's an itinerary request
+  const clean = raw.toLowerCase();
+  const daysMatch = clean.match(/\b([1-9]|1[0-5])\s*days?\b/) || clean.match(/\bday\s*([1-9]|1[0-5])\b/) || clean.match(/\b([1-9]|1[0-5])\s*day\b/);
+  const isItineraryRequest = clean.includes('itinerary') || clean.includes('iternary') || clean.includes('plan') || daysMatch;
+
+  if (isItineraryRequest) {
+    let days = 5;
+    if (daysMatch) {
+      days = parseInt(daysMatch[1], 10);
+    }
+    if (days < 1) days = 1;
+    if (days > 15) days = 15;
+
+    // Pick target destination slug
+    let slug = '';
+    if (p.names.length > 0) {
+      slug = p.names[0];
+    } else if (matched.length > 0) {
+      slug = matched[0].d.slug;
+    } else {
+      const curatedSlugs = ['spiti', 'kanatal', 'munnar', 'coorg', 'hampi', 'goa', 'manali', 'udaipur', 'ladakh', 'rishikesh', 'darjeeling'];
+      slug = curatedSlugs[Math.floor(Math.random() * curatedSlugs.length)];
     }
 
-    if (destIntent && matched.length) {
-      const topMatches = matched.slice(0, 9);
-      // Fetch top destination details in parallel
-      const detailedDests = await Promise.all(topMatches.map(function (x) {
+    // Show simulated loader sequence
+    grid.innerHTML = '<div class="col-span-full bg-slate-900/90 border border-amber-500/30 rounded-2xl shadow-xl p-8 text-center text-slate-200 mb-8 backdrop-blur-xl">' +
+      '<div class="flex flex-col items-center justify-center gap-3">' +
+      '<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-400"></div>' +
+      '<div id="itineraryStatus" class="text-sm font-semibold text-amber-400">🔍 Connecting to database indexes...</div>' +
+      '</div></div>';
+    scrollToResults();
+
+    const statusEl = document.getElementById('itineraryStatus');
+    await new Promise(function (resolve) { setTimeout(resolve, 600); });
+    if (statusEl) statusEl.textContent = '📡 Consulting Google maps coordinates & hidden sights...';
+    await new Promise(function (resolve) { setTimeout(resolve, 600); });
+    if (statusEl) statusEl.textContent = '🤖 Analyzing itinerary structure for ' + days + ' days...';
+    await new Promise(function (resolve) { setTimeout(resolve, 400); });
+
+    try {
+      const dest = await fetchDestination(slug);
+      noMatch.style.display = 'none';
+      resultsHeader.style.display = 'flex';
+      resultsTitle.textContent = 'Custom AI Itinerary & Matches suggested';
+
+      const itineraryHTML = generateItineraryHTML(dest, days, userCoords);
+
+      const pickedDest = SUMMARIES.find(function (x) { return x.slug === slug; });
+      const reasons = ['Matches custom itinerary request'];
+      const otherPicks = [];
+      if (pickedDest) {
+        otherPicks.push({ d: pickedDest, reasons: reasons });
+      }
+      matched.forEach(function (x) {
+        if (x.d.slug !== slug) otherPicks.push(x);
+      });
+
+      // Fetch fallback destination details for stays & places list
+      const detailPicks = await Promise.all(otherPicks.slice(0, 9).map(function (x) {
         return fetchDestination(x.d.slug).catch(function () { return null; });
       }));
 
-      noMatch.style.display = 'none';
-      resultsHeader.style.display = 'flex';
-      resultsTitle.textContent = matched.length + ' great match' + (matched.length > 1 ? 'es' : '') + ' found';
-      grid.innerHTML = topMatches.map(function (x, i) {
-        return cardHTML(x.d, x.reasons, userCoords, detailedDests[i]);
+      let gridHTML = '<div class="col-span-full">' + itineraryHTML + '</div>';
+      gridHTML += otherPicks.slice(0, 9).map(function (x, i) {
+        return cardHTML(x.d, x.reasons, userCoords, x.d.slug === slug ? dest : detailPicks[i]);
       }).join('');
-    } else if (infos.length) {
-      // Site-info-only query (e.g. "contact", "privacy policy") — no destination fallback needed
-      noMatch.style.display = 'none';
-      resultsHeader.style.display = 'none';
-      grid.innerHTML = '';
-    } else {
-      // Fallback: top-rated picks
-      resultsHeader.style.display = 'none';
-      noMatch.style.display = 'block';
-      const top = SUMMARIES.slice().sort(function (a, b) {
-        return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0);
-      }).slice(0, 9);
-      const detailedFallback = await Promise.all(top.map(function (d) {
-        return fetchDestination(d.slug).catch(function () { return null; });
-      }));
-      grid.innerHTML = top.map(function (d, i) {
-        return cardHTML(d, [], userCoords, detailedFallback[i]);
-      }).join('');
-    }
-    // Scroll results into view
-    scrollToResults();
-  }
-
-  function scrollToResults() {
-    const anchor = document.getElementById('results');
-    window.scrollTo({ top: (anchor ? anchor.offsetTop : 0) - 70, behavior: 'smooth' });
-  }
-
-  // Render a set of destinations with custom header text + per-card reason chips.
-  function renderPicks(headerText, noteHTML, picks) {
-    idle.style.display = 'none';
-    siteInfo.style.display = 'none';
-    noMatch.style.display = 'none';
-    understanding.innerHTML = noteHTML || '';
-    understanding.style.display = noteHTML ? 'block' : 'none';
-    resultsHeader.style.display = 'flex';
-    resultsTitle.textContent = headerText;
-    grid.innerHTML = picks.map(function (x) { return cardHTML(x.d, x.reasons, null, x.details); }).join('');
-    scrollToResults();
-  }
-
-  function noteCard(text) {
-    return '<div class="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-4 flex items-center gap-3 backdrop-blur-md shadow-lg">' +
-      '<span class="text-xl p-1.5 bg-emerald-500/10 rounded-lg">📍</span><span class="text-sm text-slate-200 font-medium">' + esc(text) + '</span></div>';
-  }
-
-  // Best destinations to visit THIS month (seasonality only — no location).
-  async function bestThisMonth(headerNote) {
-    const month = new Date().getMonth() + 1;
-    const featured = bySlug.get(MONTH_PICKS[month]);
-    const picks = SUMMARIES
-      .filter(function (d) { return d.bestTime.months.indexOf(month) >= 0 && (!featured || d.slug !== featured.slug); })
-      .sort(function (a, b) { return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0); })
-      .slice(0, featured ? 11 : 12)
-      .map(function (d) { return { d: d, reasons: ['Ideal in ' + monthNameOf(month)] }; });
-    // Lead with the curated marquee pick for this month.
-    if (featured) picks.unshift({ d: featured, reasons: ['⭐ Our pick for ' + monthNameOf(month)] });
-
-    const detailedDests = await Promise.all(picks.map(function (x) {
-      return fetchDestination(x.d.slug).catch(function () { return null; });
-    }));
-
-    const picksWithDetails = picks.map(function (x, i) {
-      x.details = detailedDests[i];
-      return x;
-    });
-
-    renderPicks('Best places to visit in ' + monthNameOf(month),
-      noteCard(headerNote || ('Top-rated destinations that are in season right now (' + monthNameOf(month) + ').')), picksWithDetails);
-  }
-
-  // Best destinations NEAR the visitor, weighted toward what's in season this month.
-  async function nearMe(lat, lng) {
-    const month = new Date().getMonth() + 1;
-    const list = SUMMARIES.map(function (d) {
-      const dist = haversine([lat, lng], destCoords(d));
-      const inSeason = d.bestTime.months.indexOf(month) >= 0;
-      return { d: d, dist: dist, inSeason: inSeason };
-    }).filter(function (x) { return x.dist != null; });
-
-    // Rank by distance, but an in-season place is worth ~400 km of head start.
-    list.sort(function (a, b) { return (a.dist - (a.inSeason ? 400 : 0)) - (b.dist - (b.inSeason ? 400 : 0)); });
-
-    const topList = list.slice(0, 12);
-    const detailedDests = await Promise.all(topList.map(function (x) {
-      return fetchDestination(x.d.slug).catch(function () { return null; });
-    }));
-
-    const picks = topList.map(function (x, i) {
-      const reasons = ['~' + Math.round(x.dist) + ' km away'];
-      if (x.inSeason) reasons.push('Perfect in ' + monthNameOf(month));
-      return { d: x.d, reasons: reasons, details: detailedDests[i] };
-    });
-
-    renderPicks('Best trips near you — ' + monthNameOf(month),
-      noteCard('Using your location · sorted by distance, favouring places in season this ' + monthNameOf(month) + '.'), picks);
-  }
-
-  // Ask the browser for the visitor's location, then show nearby in-season picks.
-  function locateMe() {
-    const btn = document.getElementById('nearMeBtn');
-    if (currentUserCoords) {
-      nearMe(currentUserCoords.lat, currentUserCoords.lng);
-      return;
-    }
-    if (window.location.protocol === 'file:') {
-      grid.innerHTML = '<div class="col-span-full bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm p-6 text-center text-yellow-800 mb-8">' +
-        '<div class="text-3xl mb-2" aria-hidden="true">⚠️</div>' +
-        '<p class="font-bold text-sm">Running via Local File (file://)</p>' +
-        '<p class="text-xs mt-1 text-yellow-700">Browser security policies block location prompts on local files. Please open this site over http(s) (e.g. via the local dev server) to use location features.</p>' +
-        '</div>';
-      return;
-    }
-    if (!navigator.geolocation) {
-      grid.innerHTML = '<div class="col-span-full bg-red-50 border border-red-200 rounded-2xl shadow-sm p-6 text-center text-red-700 mb-8">' +
-        '<div class="text-3xl mb-2" aria-hidden="true">❌</div>' +
-        '<p class="font-bold text-sm">Location access is required</p>' +
-        '<p class="text-xs mt-1 text-red-600">Your browser doesn’t support geolocation. Please try another browser.</p>' +
-        '</div>';
-      return;
-    }
-    const original = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.innerHTML = '📍 Locating…'; }
-    function restore() { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
-    navigator.geolocation.getCurrentPosition(
-      function (pos) {
-        restore();
-        currentUserCoords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-        nearMe(currentUserCoords.lat, currentUserCoords.lng);
-      },
-      function (err) {
-        restore();
-        let advice = 'Please enable location access in your browser to find trips near you.';
-        if (err && err.code === 1) {
-          advice = 'Location permission was denied or blocked. To prompt again, click the lock/settings icon in the browser address bar, set Location permission to "Allow", and reload.';
-        }
-        grid.innerHTML = '<div class="col-span-full bg-red-50 border border-red-200 rounded-2xl shadow-sm p-6 text-center text-red-700 mb-8">' +
-          '<div class="text-3xl mb-2" aria-hidden="true">🔒</div>' +
-          '<p class="font-bold text-sm">Location access is required</p>' +
-          '<p class="text-xs mt-1 text-red-600">' + advice + '</p>' +
-          '</div>';
-      },
-      { enableHighAccuracy: false, timeout: 9000, maximumAge: 600000 }
-    );
-  }
-
-  // Safe wrapper: search directly and attempt geolocation in background without blocking
-  async function doSearch(text, skipUrlSync = false) {
-    if (!text || !text.trim()) return;
-
-    if (!skipUrlSync) {
-      try {
-        const targetUrl = window.location.pathname + '?q=' + encodeURIComponent(text.trim());
-        window.history.replaceState({ q: text.trim() }, '', targetUrl);
-      } catch (_) {}
-    }
-
-    if (currentUserCoords) {
-      try { await run(text, currentUserCoords); }
-      catch (err) {
-        idle.style.display = 'none';
-        grid.innerHTML = '<div class="col-span-full text-center text-red-600 text-sm py-10">Something went wrong: ' +
-          esc(err && err.message ? err.message : String(err)) + '</div>';
-        if (window.console) console.error('[ai-finder]', err);
-      }
-      return;
-    }
-
-    // Perform text search directly without mandatory location prompt
-    try {
-      await run(text, null);
+      grid.innerHTML = gridHTML;
     } catch (err) {
+      grid.innerHTML = '<div class="col-span-full text-center text-red-600 text-sm py-10">Failed to generate itinerary: ' + esc(err.message || String(err)) + '</div>';
+    }
+    scrollToResults();
+    return;
+  }
+
+  if (destIntent && matched.length) {
+    const topMatches = matched.slice(0, 9);
+    // Fetch top destination details in parallel
+    const detailedDests = await Promise.all(topMatches.map(function (x) {
+      return fetchDestination(x.d.slug).catch(function () { return null; });
+    }));
+
+    noMatch.style.display = 'none';
+    resultsHeader.style.display = 'flex';
+    resultsTitle.textContent = matched.length + ' great match' + (matched.length > 1 ? 'es' : '') + ' found';
+    grid.innerHTML = topMatches.map(function (x, i) {
+      return cardHTML(x.d, x.reasons, userCoords, detailedDests[i]);
+    }).join('');
+  } else if (infos.length) {
+    // Site-info-only query (e.g. "contact", "privacy policy") — no destination fallback needed
+    noMatch.style.display = 'none';
+    resultsHeader.style.display = 'none';
+    grid.innerHTML = '';
+  } else {
+    // Fallback: top-rated picks
+    resultsHeader.style.display = 'none';
+    noMatch.style.display = 'block';
+    const top = SUMMARIES.slice().sort(function (a, b) {
+      return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0);
+    }).slice(0, 9);
+    const detailedFallback = await Promise.all(top.map(function (d) {
+      return fetchDestination(d.slug).catch(function () { return null; });
+    }));
+    grid.innerHTML = top.map(function (d, i) {
+      return cardHTML(d, [], userCoords, detailedFallback[i]);
+    }).join('');
+  }
+  // Scroll results into view
+  scrollToResults();
+}
+
+function scrollToResults() {
+  const anchor = document.getElementById('results');
+  window.scrollTo({ top: (anchor ? anchor.offsetTop : 0) - 70, behavior: 'smooth' });
+}
+
+// Render a set of destinations with custom header text + per-card reason chips.
+function renderPicks(headerText, noteHTML, picks) {
+  idle.style.display = 'none';
+  siteInfo.style.display = 'none';
+  noMatch.style.display = 'none';
+  understanding.innerHTML = noteHTML || '';
+  understanding.style.display = noteHTML ? 'block' : 'none';
+  resultsHeader.style.display = 'flex';
+  resultsTitle.textContent = headerText;
+  grid.innerHTML = picks.map(function (x) { return cardHTML(x.d, x.reasons, null, x.details); }).join('');
+  scrollToResults();
+}
+
+function noteCard(text) {
+  return '<div class="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-4 flex items-center gap-3 backdrop-blur-md shadow-lg">' +
+    '<span class="text-xl p-1.5 bg-emerald-500/10 rounded-lg">📍</span><span class="text-sm text-slate-200 font-medium">' + esc(text) + '</span></div>';
+}
+
+// Best destinations to visit THIS month (seasonality only — no location).
+async function bestThisMonth(headerNote) {
+  const month = new Date().getMonth() + 1;
+  const featured = bySlug.get(MONTH_PICKS[month]);
+  const picks = SUMMARIES
+    .filter(function (d) { return d.bestTime.months.indexOf(month) >= 0 && (!featured || d.slug !== featured.slug); })
+    .sort(function (a, b) { return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0); })
+    .slice(0, featured ? 11 : 12)
+    .map(function (d) { return { d: d, reasons: ['Ideal in ' + monthNameOf(month)] }; });
+  // Lead with the curated marquee pick for this month.
+  if (featured) picks.unshift({ d: featured, reasons: ['⭐ Our pick for ' + monthNameOf(month)] });
+
+  const detailedDests = await Promise.all(picks.map(function (x) {
+    return fetchDestination(x.d.slug).catch(function () { return null; });
+  }));
+
+  const picksWithDetails = picks.map(function (x, i) {
+    x.details = detailedDests[i];
+    return x;
+  });
+
+  renderPicks('Best places to visit in ' + monthNameOf(month),
+    noteCard(headerNote || ('Top-rated destinations that are in season right now (' + monthNameOf(month) + ').')), picksWithDetails);
+}
+
+// Best destinations NEAR the visitor, weighted toward what's in season this month.
+async function nearMe(lat, lng) {
+  const month = new Date().getMonth() + 1;
+  const list = SUMMARIES.map(function (d) {
+    const dist = haversine([lat, lng], destCoords(d));
+    const inSeason = d.bestTime.months.indexOf(month) >= 0;
+    return { d: d, dist: dist, inSeason: inSeason };
+  }).filter(function (x) { return x.dist != null; });
+
+  // Rank by distance, but an in-season place is worth ~400 km of head start.
+  list.sort(function (a, b) { return (a.dist - (a.inSeason ? 400 : 0)) - (b.dist - (b.inSeason ? 400 : 0)); });
+
+  const topList = list.slice(0, 12);
+  const detailedDests = await Promise.all(topList.map(function (x) {
+    return fetchDestination(x.d.slug).catch(function () { return null; });
+  }));
+
+  const picks = topList.map(function (x, i) {
+    const reasons = ['~' + Math.round(x.dist) + ' km away'];
+    if (x.inSeason) reasons.push('Perfect in ' + monthNameOf(month));
+    return { d: x.d, reasons: reasons, details: detailedDests[i] };
+  });
+
+  renderPicks('Best trips near you — ' + monthNameOf(month),
+    noteCard('Using your location · sorted by distance, favouring places in season this ' + monthNameOf(month) + '.'), picks);
+}
+
+// Ask the browser for the visitor's location, then show nearby in-season picks.
+function locateMe() {
+  const btn = document.getElementById('nearMeBtn');
+  if (currentUserCoords) {
+    nearMe(currentUserCoords.lat, currentUserCoords.lng);
+    return;
+  }
+  if (window.location.protocol === 'file:') {
+    grid.innerHTML = '<div class="col-span-full bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm p-6 text-center text-yellow-800 mb-8">' +
+      '<div class="text-3xl mb-2" aria-hidden="true">⚠️</div>' +
+      '<p class="font-bold text-sm">Running via Local File (file://)</p>' +
+      '<p class="text-xs mt-1 text-yellow-700">Browser security policies block location prompts on local files. Please open this site over http(s) (e.g. via the local dev server) to use location features.</p>' +
+      '</div>';
+    return;
+  }
+  if (!navigator.geolocation) {
+    grid.innerHTML = '<div class="col-span-full bg-red-50 border border-red-200 rounded-2xl shadow-sm p-6 text-center text-red-700 mb-8">' +
+      '<div class="text-3xl mb-2" aria-hidden="true">❌</div>' +
+      '<p class="font-bold text-sm">Location access is required</p>' +
+      '<p class="text-xs mt-1 text-red-600">Your browser doesn’t support geolocation. Please try another browser.</p>' +
+      '</div>';
+    return;
+  }
+  const original = btn ? btn.innerHTML : '';
+  if (btn) { btn.disabled = true; btn.innerHTML = '📍 Locating…'; }
+  function restore() { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
+  navigator.geolocation.getCurrentPosition(
+    function (pos) {
+      restore();
+      currentUserCoords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      nearMe(currentUserCoords.lat, currentUserCoords.lng);
+    },
+    function (err) {
+      restore();
+      let advice = 'Please enable location access in your browser to find trips near you.';
+      if (err && err.code === 1) {
+        advice = 'Location permission was denied or blocked. To prompt again, click the lock/settings icon in the browser address bar, set Location permission to "Allow", and reload.';
+      }
+      grid.innerHTML = '<div class="col-span-full bg-red-50 border border-red-200 rounded-2xl shadow-sm p-6 text-center text-red-700 mb-8">' +
+        '<div class="text-3xl mb-2" aria-hidden="true">🔒</div>' +
+        '<p class="font-bold text-sm">Location access is required</p>' +
+        '<p class="text-xs mt-1 text-red-600">' + advice + '</p>' +
+        '</div>';
+    },
+    { enableHighAccuracy: false, timeout: 9000, maximumAge: 600000 }
+  );
+}
+
+// Safe wrapper: search directly and attempt geolocation in background without blocking
+async function doSearch(text, skipUrlSync = false) {
+  if (!text || !text.trim()) return;
+
+  if (!skipUrlSync) {
+    try {
+      const targetUrl = window.location.pathname + '?q=' + encodeURIComponent(text.trim());
+      window.history.replaceState({ q: text.trim() }, '', targetUrl);
+    } catch (_) { }
+  }
+
+  if (currentUserCoords) {
+    try { await run(text, currentUserCoords); }
+    catch (err) {
       idle.style.display = 'none';
       grid.innerHTML = '<div class="col-span-full text-center text-red-600 text-sm py-10">Something went wrong: ' +
         esc(err && err.message ? err.message : String(err)) + '</div>';
       if (window.console) console.error('[ai-finder]', err);
     }
+    return;
   }
 
-  // ─── Wire UI ────────────────────────────────────────────
-  const promptEl = document.getElementById('prompt');
-  document.getElementById('findBtn').addEventListener('click', function () { doSearch(promptEl.value); });
-  promptEl.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); doSearch(promptEl.value); }
-  });
-  Array.prototype.forEach.call(document.querySelectorAll('.ex-chip'), function (b) {
-    b.addEventListener('click', function () { promptEl.value = b.getAttribute('data-ex'); doSearch(promptEl.value); });
-  });
-  document.getElementById('nearMeBtn').addEventListener('click', function () {
-    try { locateMe(); } catch (err) { if (window.console) console.error('[ai-finder]', err); bestThisMonth(); }
-  });
+  // Perform text search directly without mandatory location prompt
+  try {
+    await run(text, null);
+  } catch (err) {
+    idle.style.display = 'none';
+    grid.innerHTML = '<div class="col-span-full text-center text-red-600 text-sm py-10">Something went wrong: ' +
+      esc(err && err.message ? err.message : String(err)) + '</div>';
+    if (window.console) console.error('[ai-finder]', err);
+  }
+}
 
-  window.addEventListener('popstate', function () {
-    const query = new URLSearchParams(location.search).get('q');
-    if (query) {
-      promptEl.value = query;
-      doSearch(query, true);
-    }
-  });
+// ─── Wire UI ────────────────────────────────────────────
+const promptEl = document.getElementById('prompt');
+document.getElementById('findBtn').addEventListener('click', function () { doSearch(promptEl.value); });
+promptEl.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); doSearch(promptEl.value); }
+});
+Array.prototype.forEach.call(document.querySelectorAll('.ex-chip'), function (b) {
+  b.addEventListener('click', function () { promptEl.value = b.getAttribute('data-ex'); doSearch(promptEl.value); });
+});
+document.getElementById('nearMeBtn').addEventListener('click', function () {
+  try { locateMe(); } catch (err) { if (window.console) console.error('[ai-finder]', err); bestThisMonth(); }
+});
 
-  // Deep link: ai-finder.html?q=...
-  const q = new URLSearchParams(location.search).get('q');
-  if (q) { promptEl.value = q; doSearch(q, true); }
+window.addEventListener('popstate', function () {
+  const query = new URLSearchParams(location.search).get('q');
+  if (query) {
+    promptEl.value = query;
+    doSearch(query, true);
+  }
+});
+
+// Deep link: ai-finder.html?q=...
+const q = new URLSearchParams(location.search).get('q');
+if (q) { promptEl.value = q; doSearch(q, true); }

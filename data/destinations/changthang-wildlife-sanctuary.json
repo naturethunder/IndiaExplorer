@@ -243,204 +243,87 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Tiger Trail",
+      "name": "Changthang Wildlife Sanctuary Eco Tourism & Forest Rest House",
+      "type": "resort",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
+      "amenities": [
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
+      ],
+      "tags": [
+        "On-site Nature Lodge",
+        "Eco Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Changthang%20Wildlife%20Sanctuary%20Forest%20Rest%20House%20Ladakh"
+    },
+    {
+      "name": "Zostel Leh",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 2500,
-      "priceMax": 4000,
-      "rating": 4.2,
-      "reviews": 167,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Stok Range Terrace",
+        "Cozy Common Room",
+        "Bike Rental Desk",
+        "WiFi"
       ],
       "tags": [
-        "Budget Friendly",
-        "Eco Lodge"
+        "Leh (115 km away)",
+        "Upper Tukcha Road",
+        "Bikers & Trekkers Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Tiger%20Trail%20Changthang%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Ibis Budget Changthang",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4750,
-      "priceMax": 6750,
-      "rating": 4,
-      "reviews": 328,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Changthang%20Changthang%20Ladakh"
-    },
-    {
-      "name": "Treebo Trend Safari Lodge",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 7500,
-      "priceMax": 11250,
-      "rating": 4.1,
-      "reviews": 355,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Good Value",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Safari%20Lodge%20Changthang%20Ladakh"
-    },
-    {
-      "name": "Sarovar Portico Jungle Lodge",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 15000,
-      "priceMax": 25000,
-      "rating": 4.2,
-      "reviews": 592,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Birders Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Jungle%20Lodge%20Changthang%20Ladakh"
-    },
-    {
-      "name": "Ginger Changthang",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3496,
-      "priceMax": 4920,
-      "rating": 4.4,
-      "reviews": 1169,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Tiger Trail"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Changthang%20Changthang%20Ladakh"
-    },
-    {
-      "name": "Changthang Tiger Trail",
-      "type": "hotel",
+      "name": "Gomang Boutique Hotel Leh",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 5069,
-      "priceMax": 6714,
-      "rating": 4.5,
-      "reviews": 1206,
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Extensive Himalayan Library",
+        "Pure Veg Dining",
+        "Oxygen Support",
+        "Apple Orchards"
       ],
       "tags": [
-        "Top Amenities",
-        "Forest Camp"
+        "Leh (115 km away)",
+        "Changspa Road",
+        "Eco Boutique"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Changthang%20Tiger%20Trail%20Changthang%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gomang%20Boutique%20Hotel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Changthang Birders Inn",
+      "name": "The Grand Dragon Ladakh",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11895,
-      "priceMax": 12978,
-      "rating": 4.5,
-      "reviews": 1688,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
-      ],
-      "tags": [
-        "Award Winning",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Changthang%20Birders%20Inn%20Changthang%20Ladakh"
-    },
-    {
-      "name": "The JW Marriott Changthang",
-      "type": "hotel",
-      "tier": "luxury",
-      "priceMin": 12859,
-      "priceMax": 13614,
-      "rating": 4.7,
-      "reviews": 2186,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool",
-        "World-class Spa",
-        "Fine Dining",
-        "Butler",
-        "Limousine",
-        "Golf",
-        "Helipad"
-      ],
-      "tags": [
-        "Royal Experience",
-        "River View Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20JW%20Marriott%20Changthang%20Changthang%20Ladakh"
-    },
-    {
-      "name": "The Six Senses Changthang",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 33913,
-      "priceMax": 35406,
+      "priceMin": 11000,
+      "priceMax": 22000,
       "rating": 4.8,
-      "reviews": 1079,
+      "reviews": 4600,
       "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
+        "Solar Heated Luxury",
+        "Stok Kangri Mountain Panorama",
+        "Oxygen Assistance",
+        "Zasgyath Dining"
       ],
       "tags": [
-        "Once in a Lifetime",
-        "Wildlife Camp"
+        "Leh (115 km away)",
+        "Old Road Shenam",
+        "Ladakh Premier 5-Star"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Six%20Senses%20Changthang%20Changthang%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Dragon%20Ladakh%20Leh%20Ladakh"
     }
   ],
   "restaurants": [],

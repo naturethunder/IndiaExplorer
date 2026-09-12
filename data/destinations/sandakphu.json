@@ -540,73 +540,87 @@
   ],
   "hotels": [
     {
-      "name": "Solu Lodge",
-      "type": "lodge",
-      "tier": "good",
-      "priceMin": 2500,
-      "priceMax": 4800,
-      "rating": 4.7,
-      "reviews": 290,
-      "amenities": [
-        "Heated Rooms",
-        "Dining Room",
-        "Everest View"
-      ],
-      "tags": [
-        "Mountain Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Solu%20Lodge%20Sandakphu%20West%20Bengal"
-    },
-    {
-      "name": "Indiri Lodge",
-      "type": "lodge",
-      "tier": "budget",
-      "priceMin": 1200,
-      "priceMax": 2500,
-      "rating": 4.3,
-      "reviews": 210,
-      "amenities": [
-        "Dormitories",
-        "Hot Meals"
-      ],
-      "tags": [
-        "Govt Hut"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Indiri%20Lodge%20Sandakphu%20West%20Bengal"
-    },
-    {
-      "name": "Kaiakata Habresnest Lodge & Restaurant",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3200,
-      "rating": 4.8,
-      "reviews": 180,
-      "amenities": [
-        "Gurung Home Cooking",
-        "Kanchenjunga View"
-      ],
-      "tags": [
-        "Border Homestay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kaiakata%20Habresnest%20Lodge%20%26%20Restaurant%20Sandakphu%20West%20Bengal"
-    },
-    {
-      "name": "Magnolia Food & Lodging",
+      "name": "Sandakphu Eco Tourism & Forest Rest House",
       "type": "resort",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4000,
-      "rating": 4.6,
-      "reviews": 140,
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.2,
+      "reviews": 540,
       "amenities": [
-        "Fireplace",
-        "Himalayan View"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Alpine Lodge"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Magnolia%20Food%20%26%20Lodging%20Sandakphu%20West%20Bengal"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sandakphu%20Forest%20Rest%20House%20West%20Bengal"
+    },
+    {
+      "name": "Mayfair Darjeeling",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 7000,
+      "priceMax": 14000,
+      "rating": 4.6,
+      "reviews": 4800,
+      "amenities": [
+        "Opposite Governor House",
+        "Himalayan Spa",
+        "Library",
+        "Magnolia Dining"
+      ],
+      "tags": [
+        "Darjeeling (27 km away)",
+        "Hillside Luxury",
+        "Family Favorite"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Mayfair%20Darjeeling%20Darjeeling%20West%20Bengal"
+    },
+    {
+      "name": "The Elgin, Darjeeling - Heritage Resort & Spa",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 9500,
+      "priceMax": 18000,
+      "rating": 4.7,
+      "reviews": 4100,
+      "amenities": [
+        "Former Maharaja Summer Residence",
+        "Lord Mountbatten Suite",
+        "Afternoon High Tea",
+        "Oak Panelled Lounge"
+      ],
+      "tags": [
+        "Darjeeling (27 km away)",
+        "Since 1887",
+        "Kanchenjunga Panorama"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Elgin%2C%20Darjeeling%20-%20Heritage%20Resort%20%26%20Spa%20Darjeeling%20West%20Bengal"
+    },
+    {
+      "name": "Windamere Hotel - A Colonial Heritage Gem",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.7,
+      "reviews": 3100,
+      "amenities": [
+        "Observatory Hill Peak",
+        "Original Coal Fires",
+        "Historic Candlelit Dinners",
+        "The Terrace Tea Garden"
+      ],
+      "tags": [
+        "Darjeeling (27 km away)",
+        "Historic Raj Era",
+        "Observatory Hill"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Windamere%20Hotel%20-%20A%20Colonial%20Heritage%20Gem%20Darjeeling%20West%20Bengal"
     }
   ],
   "gallery": [

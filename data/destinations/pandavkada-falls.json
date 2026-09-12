@@ -422,156 +422,87 @@
   ],
   "hotels": [
     {
-      "name": "Pandavkada Rajwada",
-      "type": "guesthouse",
+      "name": "MTDC Holiday Resort (Pandavkada Falls)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 3.8,
-      "reviews": 224,
+      "priceMin": 1100,
+      "priceMax": 2000,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Pandavkada%20Rajwada%20Pandavkada%20Maharashtra"
-    },
-    {
-      "name": "Pandavkada Treebo Trend",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.3,
-      "reviews": 452,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Pandavkada%20Treebo%20Trend%20Pandavkada%20Maharashtra"
-    },
-    {
-      "name": "Pandavkada OYO Townhouse",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.2,
-      "reviews": 437,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Pandavkada%20OYO%20Townhouse%20Pandavkada%20Maharashtra"
-    },
-    {
-      "name": "Sarovar Portico Pandavkada",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 574,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Haveli Stay"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%20Pandavkada%20Pandavkada%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Pandavkada%20Falls%20Maharashtra"
     },
     {
-      "name": "Fortune Pandavkada",
+      "name": "Hotel Suba Palace Mumbai",
       "type": "hotel",
       "tier": "good",
-      "priceMin": 3128,
-      "priceMax": 4281,
-      "rating": 4.3,
-      "reviews": 372,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Pandavkada%20Pandavkada%20Maharashtra"
-    },
-    {
-      "name": "The Fern Pandavkada",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 4725,
-      "priceMax": 6347,
+      "priceMin": 3500,
+      "priceMax": 5800,
       "rating": 4.4,
-      "reviews": 1384,
+      "reviews": 4100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Near Gateway of India",
+        "Buffet Breakfast",
+        "Modern AC Rooms",
+        "WiFi"
       ],
       "tags": [
-        "Top Amenities",
-        "Royal Retreat"
+        "Mumbai (28 km away)",
+        "Colaba Hub",
+        "Value Comfort"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Fern%20Pandavkada%20Pandavkada%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Suba%20Palace%20Mumbai%20Mumbai%20Maharashtra"
     },
     {
-      "name": "Pandavkada Legacy Hotel",
+      "name": "The Taj Mahal Palace, Mumbai",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 22000,
+      "priceMax": 55000,
+      "rating": 4.9,
+      "reviews": 9800,
+      "amenities": [
+        "Gateway of India Oceanfront",
+        "Historic 1903 Grandeur",
+        "Wasabi by Morimoto",
+        "Jiva Spa"
+      ],
+      "tags": [
+        "Mumbai (28 km away)",
+        "Colaba Waterfront",
+        "India's Most Iconic Landmark"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Taj%20Mahal%20Palace%2C%20Mumbai%20Mumbai%20Maharashtra"
+    },
+    {
+      "name": "Trident Nariman Point, Mumbai",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11423,
-      "priceMax": 12835,
-      "rating": 4.5,
-      "reviews": 847,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.7,
+      "reviews": 7800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Marine Drive Queen's Necklace View",
+        "Outdoor Pool",
+        "Frangipani Mediterranean",
+        "Spa"
       ],
       "tags": [
-        "Luxury Experience",
-        "Fort Residence"
+        "Mumbai (28 km away)",
+        "Marine Drive",
+        "Oberoi Group"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Pandavkada%20Legacy%20Hotel%20Pandavkada%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Trident%20Nariman%20Point%2C%20Mumbai%20Mumbai%20Maharashtra"
     }
   ],
   "restaurants": [],

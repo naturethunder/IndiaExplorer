@@ -1,7 +1,7 @@
 # Search Engine Architecture & Enhancements
 
-**Date:** 2026-09-06 (Phase 28 original) | Last updated: 2026-09-11 rev-2 (Phase 35)
-**Milestone:** Phase 28 — Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul
+**Date:** 2026-09-06 (Phase 28 original) | Last updated: 2026-09-12 (Phase 38)
+**Milestone:** Phase 28 — Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul | Phase 38 — Dual-Path Stay Indexing & 2,393 Destinations Rebuild
 
 ## Problem Solved
 
@@ -26,7 +26,7 @@ All search functionality across ExploreDesh is powered by a high-performance, pu
     - Destination Slug
     - State & Region
     - Category / Type
-    - All 14,013 Attraction Places
+    - All 14,021 Attraction Places across 2,393 Destinations
     - Feature tags and short overview descriptions.
 
 ### 2. Matching Capabilities
@@ -126,3 +126,22 @@ Only `nonStopWords` are used for direct-destination lookup and fuzzy matching.
 | `honeymoon trip to ooty` | ⚠️ Random | ✅ Ooty |
 | `weekend in rishikesh` | ⚠️ Random | ✅ Rishikesh |
 | `plan a trip to munnar` | ⚠️ Random | ✅ Munnar |
+
+---
+
+## Phase 36 Update — Bangla Sahib Alias Resolution & Full 2,393 Catalog Index (2026-09-11)
+
+### Enhancements
+1. **Dynamic Slug Normalization (`js/pages/destination.js`):** Added slug preprocessing to recognize all query variants containing `bangla` and `sahib` (e.g. `bangla-sahib`, `bangla-sahib-gurudwara`, `bangla sahib gurudwara`) and route them canonically to `gurudwara-bangla-sahib`.
+2. **2,393 Destination Full Index Rebuild (`data/search-index.json`):** Gurudwara Bangla Sahib and all 14 overhauled destinations fully indexed with attraction names, hotel names, price tiers, and searchable intent keywords (`Spiritual Haven`, `Holy Sarovar`, `Mega Langar`, `Sikh Heritage Museum`, `Golden Dome`, `24/7 Harmony`).
+3. **Space-Agnostic & Keyword Queries Verified:** `banglasahib`, `gurudwarabanglasahib`, `bangla sahib delhi` all match with high relevance.
+
+---
+
+## Phase 42–44 Update — Khajuraho Batch, Platform HD Audit & UI/UX Pro Max QA (2026-09-13)
+
+### Enhancements & Fixes
+
+1. **Khajuraho Batch Index Synchronization:** All 11 Khajuraho batch destinations (`ashokdham-temple`, `bhadrachalam-temple`, `pataleshwar-mandir`, `mangla-gauri-temple`, `maa-tara-chandi-temple`, `vajrapoha-falls`, `kottankulangara-devi-temple-chavara`, `mudikondan-kothandaramar-temple`, `vadakkan-koyikkal-devi-temple-puthiyavila`, `sacred-heart-forane-church`, `khajuraho`) are fully indexed in `data/search-index.json` with place names, hotel names, tier data, and searchable haystack text.
+2. **Platform-Wide Session Audit (`scripts/audit_session_hd_images.js`):** All 47 session-updated destinations audited — 1,259 / 1,259 URLs live HTTP 200, 0 dead, 0 non-HD, 0 collisions.
+3. **UI/UX Pro Max QA (`scripts/ui_ux_qa_audit.js`):** Full automated audit across 8 HTML files and 4 CSS stylesheets. **0 issues** after accessibility hardening (focus rings, touch targets, `prefers-reduced-motion` compliance).

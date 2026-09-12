@@ -400,156 +400,87 @@
   ],
   "hotels": [
     {
-      "name": "BunkStay Temple View",
+      "name": "Tingmosgang monastery Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Tingmosgang%20monastery%20Yatri%20Nivas%20Ladakh"
+    },
+    {
+      "name": "Zostel Leh",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.1,
-      "reviews": 139,
+      "priceMin": 800,
+      "priceMax": 1600,
+      "rating": 4.6,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Stok Range Terrace",
+        "Cozy Common Room",
+        "Bike Rental Desk",
+        "WiFi"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Bhakti Residency"
+        "Leh (57 km away)",
+        "Upper Tukcha Road",
+        "Bikers & Trekkers Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=BunkStay%20Temple%20View%20Tingmosgang%20monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Ginger Tingmosgang monastery",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 645,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Pilgrim Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Tingmosgang%20monastery%20Tingmosgang%20monastery%20Ladakh"
-    },
-    {
-      "name": "Tingmosgang monastery FabHotels Prime",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 491,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tingmosgang%20monastery%20FabHotels%20Prime%20Tingmosgang%20monastery%20Ladakh"
-    },
-    {
-      "name": "Tingmosgang monastery Yatri Nivas",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 977,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tingmosgang%20monastery%20Yatri%20Nivas%20Tingmosgang%20monastery%20Ladakh"
-    },
-    {
-      "name": "Lemon Tree Sai Dham",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 2872,
-      "priceMax": 3397,
-      "rating": 4.2,
-      "reviews": 1066,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Sai%20Dham%20Tingmosgang%20monastery%20Ladakh"
-    },
-    {
-      "name": "Tingmosgang monastery Radisson Blu",
-      "type": "hotel",
+      "name": "Gomang Boutique Hotel Leh",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 5688,
-      "priceMax": 7426,
-      "rating": 4.4,
-      "reviews": 452,
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 2400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Extensive Himalayan Library",
+        "Pure Veg Dining",
+        "Oxygen Support",
+        "Apple Orchards"
       ],
       "tags": [
-        "Top Amenities",
-        "Pilgrim Lodge"
+        "Leh (57 km away)",
+        "Changspa Road",
+        "Eco Boutique"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Tingmosgang%20monastery%20Radisson%20Blu%20Tingmosgang%20monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=Gomang%20Boutique%20Hotel%20Leh%20Leh%20Ladakh"
     },
     {
-      "name": "Westin Yatri Nivas",
+      "name": "The Grand Dragon Ladakh",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 9089,
-      "priceMax": 9428,
-      "rating": 4.4,
-      "reviews": 2010,
+      "priceMin": 11000,
+      "priceMax": 22000,
+      "rating": 4.8,
+      "reviews": 4600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Solar Heated Luxury",
+        "Stok Kangri Mountain Panorama",
+        "Oxygen Assistance",
+        "Zasgyath Dining"
       ],
       "tags": [
-        "Luxury Experience",
-        "Temple View"
+        "Leh (57 km away)",
+        "Old Road Shenam",
+        "Ladakh Premier 5-Star"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Westin%20Yatri%20Nivas%20Tingmosgang%20monastery%20Ladakh"
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Dragon%20Ladakh%20Leh%20Ladakh"
     }
   ],
   "restaurants": [],

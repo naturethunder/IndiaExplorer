@@ -420,160 +420,108 @@
   ],
   "hotels": [
     {
-      "name": "Madhur Devotee Inn",
+      "name": "Madhur Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Yatri%20Nivas%20Kerala"
+    },
+    {
+      "name": "Zostel Wayanad",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
+      "priceMin": 700,
+      "priceMax": 1400,
+      "rating": 4.5,
+      "reviews": 1900,
+      "amenities": [
+        "Tea Estate Views",
+        "Bonfire",
+        "Common Lounge",
+        "Hiking Tours"
+      ],
+      "tags": [
+        "Wayanad (154 km away)",
+        "Meppadi",
+        "Backpacker Base"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "KTDC Pepper Grove Wayanad",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 365,
+      "reviews": 2100,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Backpacker Choice",
-        "Devotee Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Devotee%20Inn%20Madhur%20Kerala"
-    },
-    {
-      "name": "Ginger Devotee Inn",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.3,
-      "reviews": 310,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
+        "Kerala Tourism Unit",
         "Restaurant",
-        "Travel Desk",
-        "Laundry"
+        "Garden",
+        "Sightseeing Desk"
       ],
       "tags": [
-        "Smart Choice",
-        "Sai Dham"
+        "Wayanad (154 km away)",
+        "Sulthan Bathery",
+        "State Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Devotee%20Inn%20Madhur%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Pepper%20Grove%20Wayanad%20Wayanad%20Kerala"
     },
     {
-      "name": "Madhur Divine Retreat",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 547,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Divine%20Retreat%20Madhur%20Kerala"
-    },
-    {
-      "name": "Madhur Yatri Nivas",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.4,
-      "reviews": 782,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Well Rated",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Yatri%20Nivas%20Madhur%20Kerala"
-    },
-    {
-      "name": "Lemon Tree Premier Divine Inn",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3494,
-      "priceMax": 5286,
-      "rating": 4.3,
-      "reviews": 350,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
-        "Parking"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Devotee Inn"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Premier%20Divine%20Inn%20Madhur%20Kerala"
-    },
-    {
-      "name": "Madhur Radisson Blu",
-      "type": "hotel",
+      "name": "Tranquil Resort Wayanad",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 5048,
-      "priceMax": 5904,
-      "rating": 4.3,
-      "reviews": 1169,
+      "priceMin": 5500,
+      "priceMax": 9500,
+      "rating": 4.6,
+      "reviews": 1400,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Coffee Plantation",
+        "Treehouse Suites",
+        "Swimming Pool",
+        "Ayurveda"
       ],
       "tags": [
-        "Business Preferred",
-        "Divine Retreat"
+        "Wayanad (154 km away)",
+        "Kuppamudi Estate",
+        "Boutique Plantation Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Radisson%20Blu%20Madhur%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Tranquil%20Resort%20Wayanad%20Wayanad%20Kerala"
     },
     {
-      "name": "Madhur Heritage Residency & Suites",
-      "type": "hotel",
+      "name": "Vythiri Village Resort Wayanad",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 8231,
-      "priceMax": 9750,
-      "rating": 4.4,
-      "reviews": 1507,
+      "priceMin": 8000,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 4700,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Hanging Bridge",
+        "Artificial Waterfall",
+        "Spa",
+        "Plantation Walks"
       ],
       "tags": [
-        "Award Winning",
-        "Temple View"
+        "Wayanad (154 km away)",
+        "Vythiri",
+        "Rainforest Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Madhur%20Heritage%20Residency%20%26%20Suites%20Madhur%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Vythiri%20Village%20Resort%20Wayanad%20Wayanad%20Kerala"
     }
   ],
   "restaurants": [],

@@ -296,202 +296,87 @@
   ],
   "hotels": [
     {
-      "name": "Thekkady The Hosteller",
-      "type": "hostel",
+      "name": "Thekkady Eco Tourism & Forest Rest House",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 1500,
-      "priceMax": 2400,
+      "priceMin": 800,
+      "priceMax": 1600,
       "rating": 4.2,
-      "reviews": 374,
+      "reviews": 540,
       "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
+        "Forest Department Lodge",
+        "Nature Walks",
+        "Local Meals",
+        "Campfire"
       ],
       "tags": [
-        "Budget Friendly",
-        "Jungle Lodge"
+        "On-site Nature Lodge",
+        "Eco Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20The%20Hosteller%20Thekkady%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Forest%20Rest%20House%20Kerala"
     },
     {
-      "name": "Ibis Budget Thekkady",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2850,
-      "priceMax": 4050,
-      "rating": 4,
-      "reviews": 457,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Thekkady%20Thekkady%20Kerala"
-    },
-    {
-      "name": "Ginger Thekkady",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 4500,
-      "priceMax": 6750,
-      "rating": 4.1,
-      "reviews": 472,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Jungle Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Thekkady%20Thekkady%20Kerala"
-    },
-    {
-      "name": "Thekkady Fairfield by Marriott",
-      "type": "hotel",
+      "name": "KTDC Tea County Munnar",
+      "type": "resort",
       "tier": "good",
-      "priceMin": 9000,
-      "priceMax": 15000,
-      "rating": 4.2,
-      "reviews": 1115,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Eco Lodge"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Fairfield%20by%20Marriott%20Thekkady%20Kerala"
-    },
-    {
-      "name": "Thekkady Keys Select",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3575,
-      "priceMax": 5346,
+      "priceMin": 3200,
+      "priceMax": 5500,
       "rating": 4.4,
-      "reviews": 1123,
+      "reviews": 3400,
       "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Between Two Hills",
+        "Ayurvedic Massage",
+        "Govt Run",
+        "Restaurant"
       ],
       "tags": [
-        "Well Rated",
-        "Nature Retreat"
+        "Munnar (56 km away)",
+        "State Tourism",
+        "Pine Trees"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Keys%20Select%20Thekkady%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Tea%20County%20Munnar%20Munnar%20Kerala"
     },
     {
-      "name": "Hyatt Place Thekkady",
-      "type": "hotel",
+      "name": "Blanket Hotel & Spa Munnar",
+      "type": "resort",
       "tier": "better",
-      "priceMin": 5463,
-      "priceMax": 6714,
-      "rating": 4.4,
-      "reviews": 1455,
+      "priceMin": 6500,
+      "priceMax": 12000,
+      "rating": 4.7,
+      "reviews": 3900,
       "amenities": [
-        "Free WiFi",
+        "Attukad Waterfalls View",
         "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Spa",
+        "Yoga"
       ],
       "tags": [
-        "Business Preferred",
-        "River View Camp"
+        "Munnar (56 km away)",
+        "Waterfall Facing",
+        "Luxury Romance"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hyatt%20Place%20Thekkady%20Thekkady%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Blanket%20Hotel%20%26%20Spa%20Munnar%20Munnar%20Kerala"
     },
     {
-      "name": "Thekkady Hilton",
-      "type": "hotel",
+      "name": "Windermere Estate Munnar",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 10735,
-      "priceMax": 12611,
-      "rating": 4.5,
-      "reviews": 2573,
+      "priceMin": 9500,
+      "priceMax": 18000,
+      "rating": 4.8,
+      "reviews": 3200,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Cardamom & Coffee Plantation",
+        "The Barn Dining",
+        "Valley View",
+        "Campfire"
       ],
       "tags": [
-        "Luxury Experience",
-        "Birders Inn"
+        "Munnar (56 km away)",
+        "Boutique Plantation",
+        "Tea Hills"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Thekkady%20Hilton%20Thekkady%20Kerala"
-    },
-    {
-      "name": "Taj Thekkady",
-      "type": "resort",
-      "tier": "luxury",
-      "priceMin": 19151,
-      "priceMax": 19510,
-      "rating": 4.7,
-      "reviews": 1920,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Fine Dining",
-        "Palace Grounds",
-        "Heritage Tours",
-        "Butler"
-      ],
-      "tags": [
-        "Iconic Luxury",
-        "Nature Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Taj%20Thekkady%20Thekkady%20Kerala"
-    },
-    {
-      "name": "Aman Jungle Lodge",
-      "type": "resort",
-      "tier": "extra_luxury",
-      "priceMin": 38171,
-      "priceMax": 39162,
-      "rating": 4.7,
-      "reviews": 813,
-      "amenities": [
-        "Free WiFi",
-        "Private Pool/Villa",
-        "Signature Spa",
-        "Michelin Dining",
-        "24hr Butler",
-        "Private Jet",
-        "Helipad",
-        "Personal Concierge"
-      ],
-      "tags": [
-        "Once in a Lifetime",
-        "Wildlife Camp"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Aman%20Jungle%20Lodge%20Thekkady%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Windermere%20Estate%20Munnar%20Munnar%20Kerala"
     }
   ],
   "restaurants": [],

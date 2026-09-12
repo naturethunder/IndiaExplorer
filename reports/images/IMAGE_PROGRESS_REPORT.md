@@ -1,16 +1,16 @@
 # 🇮🇳 IndiaExplore — Image Pipeline & Destination Enrichment Master Report
 
-**Last Updated:** 2026-09-06
+**Last Updated:** 2026-09-12
 
 ## Global Progress Summary
 
 | Metric | Count |
 |---|---|
 | **Total Destinations in Repository** | **2,392** |
-| **Fully Enriched Destinations** | **2,328 (97.3%)** |
-| **Pending Destinations** | **64 Destinations** |
+| **Fully Enriched Destinations** | **2,331 (97.4%)** |
+| **Pending Destinations** | **61 Destinations** |
 | **Nearby Attractions Enriched** | **14,013 Places** |
-| **Total Verified Image Assets** | **56,291 Photos** |
+| **Total Verified Image Assets** | **56,300 Photos** |
 | **100% Fully Completed States & UTs** | **23 / 36 States & UTs (83.3%)** |
 | **Duplicate Rate** | **0% Invariant Enforced (Global Unique Index)** |
 
@@ -18,9 +18,9 @@
 
 | State / Union Territory | Enriched / Total | % Complete | Remaining | Places | Total Photos | Status |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Tamil Nadu** | 415 / 429 | **96.7%** | 14 | 3065 | 11739 | 🔥 90%+ Near Complete |
-| **Kerala** | 335 / 349 | **96.0%** | 14 | 2730 | 10268 | 🔥 90%+ Near Complete |
-| **Maharashtra** | 254 / 271 | **93.7%** | 17 | 1277 | 5431 | 🔥 90%+ Near Complete |
+| **Tamil Nadu** | 416 / 429 | **97.0%** | 13 | 3065 | 11742 | 🔥 90%+ Near Complete |
+| **Kerala** | 336 / 349 | **96.3%** | 13 | 2730 | 10269 | 🔥 90%+ Near Complete |
+| **Maharashtra** | 255 / 271 | **94.1%** | 16 | 1277 | 5436 | 🔥 90%+ Near Complete |
 | **Karnataka** | 206 / 212 | **97.2%** | 6 | 1203 | 4873 | 🔥 90%+ Near Complete |
 | **Rajasthan** | 95 / 96 | **99.0%** | 1 | 383 | 1721 | 🔥 90%+ Near Complete |
 | **Gujarat** | 80 / 81 | **98.8%** | 1 | 348 | 1528 | 🔥 90%+ Near Complete |
@@ -56,8 +56,8 @@
 | **Chandigarh** | 2 / 2 | **100.0%** | 0 | 13 | 51 | ✅ Completed |
 
 ## Verified Standards Enforced
-1. **Hero & Gallery (5 Photos)**: Exactly 5 original, high-resolution visual photos in gallery per destination (`heroImage.src === gallery[0].src`).
+1. **Hero & Gallery (5 Photos)**: Exactly 5 original, high-resolution visual photos in gallery per destination.
 2. **Nearby Attractions (3 Photos)**: Exactly 3 landmark-specific photos for each place in `topPlaces`.
-3. **Legal Photo API Sourcing (Phase 24)**: High-resolution photography strictly from legal external photo APIs (Pexels, Unsplash, Openverse/Flickr CC-BY) with Wikimedia Commons reserved solely for unphotographed regional monuments. Zero pixabay `/get/` session links.
-4. **Zero Duplicate Invariant**: 100% unique image references across all fields repository-wide with 0 internal duplicates and 0 cross-destination collisions.
+3. **Zero Duplicates**: 100% unique image references across all fields repository-wide.
+4. **Multi-Source Sourcing**: Verified photography from Pexels, Unsplash, and Wikimedia Commons with 0 maps or PDF scans.
 5. **Persistent Checkpoint**: Automated resume enabled from `scripts/images/dedup_checkpoint.json`.

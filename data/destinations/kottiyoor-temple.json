@@ -420,157 +420,108 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Kottiyoor",
+      "name": "Kottiyoor Temple Devasthanam Pilgrim Yatri Nivas",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 500,
+      "priceMax": 1100,
+      "rating": 4.1,
+      "reviews": 680,
+      "amenities": [
+        "Devotee Clean Rooms",
+        "Hot Water",
+        "Pilgrim Assistance",
+        "Safe Luggage"
+      ],
+      "tags": [
+        "On-site / Village",
+        "Devotee Choice"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Temple%20Yatri%20Nivas%20Kerala"
+    },
+    {
+      "name": "Zostel Wayanad",
       "type": "hostel",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 3.9,
-      "reviews": 167,
-      "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Bhakti Residency"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Kottiyoor%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor Backpackers",
-      "type": "hostel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4,
-      "reviews": 709,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Backpackers%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor OYO Townhouse",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 656,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Dharmashala"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20OYO%20Townhouse%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor Keys Select",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.2,
-      "reviews": 841,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Shiva Sadan"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Keys%20Select%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor Krishna Kunj",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3667,
-      "priceMax": 5112,
-      "rating": 4.2,
-      "reviews": 922,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Comfort Plus",
-        "Yatri Nivas"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Krishna%20Kunj%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor Radisson Blu",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6252,
-      "priceMax": 6951,
-      "rating": 4.4,
-      "reviews": 1439,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Temple View"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Radisson%20Blu%20Kottiyoor%20Kerala"
-    },
-    {
-      "name": "Kottiyoor Marriott",
-      "type": "hotel",
-      "tier": "best",
-      "priceMin": 9761,
-      "priceMax": 11346,
+      "priceMin": 700,
+      "priceMax": 1400,
       "rating": 4.5,
-      "reviews": 1028,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Tea Estate Views",
+        "Bonfire",
+        "Common Lounge",
+        "Hiking Tours"
       ],
       "tags": [
-        "Luxury Experience",
-        "Bhakti Residency"
+        "Wayanad (38 km away)",
+        "Meppadi",
+        "Backpacker Base"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kottiyoor%20Marriott%20Kottiyoor%20Kerala"
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "KTDC Pepper Grove Wayanad",
+      "type": "guesthouse",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4.1,
+      "reviews": 2100,
+      "amenities": [
+        "Kerala Tourism Unit",
+        "Restaurant",
+        "Garden",
+        "Sightseeing Desk"
+      ],
+      "tags": [
+        "Wayanad (38 km away)",
+        "Sulthan Bathery",
+        "State Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=KTDC%20Pepper%20Grove%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Tranquil Resort Wayanad",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 5500,
+      "priceMax": 9500,
+      "rating": 4.6,
+      "reviews": 1400,
+      "amenities": [
+        "Coffee Plantation",
+        "Treehouse Suites",
+        "Swimming Pool",
+        "Ayurveda"
+      ],
+      "tags": [
+        "Wayanad (38 km away)",
+        "Kuppamudi Estate",
+        "Boutique Plantation Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Tranquil%20Resort%20Wayanad%20Wayanad%20Kerala"
+    },
+    {
+      "name": "Vythiri Village Resort Wayanad",
+      "type": "resort",
+      "tier": "best",
+      "priceMin": 8000,
+      "priceMax": 16000,
+      "rating": 4.6,
+      "reviews": 4700,
+      "amenities": [
+        "Hanging Bridge",
+        "Artificial Waterfall",
+        "Spa",
+        "Plantation Walks"
+      ],
+      "tags": [
+        "Wayanad (38 km away)",
+        "Vythiri",
+        "Rainforest Luxury"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Vythiri%20Village%20Resort%20Wayanad%20Wayanad%20Kerala"
     }
   ],
   "restaurants": [],

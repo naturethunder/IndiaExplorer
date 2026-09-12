@@ -538,77 +538,129 @@
   ],
   "hotels": [
     {
-      "name": "Hotel Guru",
-      "type": "resort",
-      "tier": "best",
-      "priceMin": 5500,
-      "priceMax": 11000,
-      "rating": 4.8,
-      "reviews": 310,
+      "name": "TTDC Hotel Tamil Nadu (Tranquebar (Tharangambadi))",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4.1,
+      "reviews": 620,
       "amenities": [
-        "Sea View",
-        "Dining",
-        "Pool",
-        "Colonial Decor"
-      ],
-      "tags": [
-        "Neemrana",
-        "Heritage"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Guru%20Tranquebar%20(Tharangambadi)%20Tamil%20Nadu"
-    },
-    {
-      "name": "Hotel Manivizha",
-      "type": "resort",
-      "tier": "better",
-      "priceMin": 3500,
-      "priceMax": 7000,
-      "rating": 4.6,
-      "reviews": 220,
-      "amenities": [
-        "Heritage Rooms",
-        "Dining",
-        "Garden"
-      ],
-      "tags": [
-        "Neemrana Villa"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Manivizha%20Tranquebar%20(Tharangambadi)%20Tamil%20Nadu"
-    },
-    {
-      "name": "Hotel Krishna Bhavan",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 1800,
-      "priceMax": 3500,
-      "rating": 4.4,
-      "reviews": 190,
-      "amenities": [
-        "Restaurant",
-        "Sea View Rooms",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Govt Hotel"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Krishna%20Bhavan%20Tranquebar%20(Tharangambadi)%20Tamil%20Nadu"
+      "url": "https://www.google.com/maps/search/?api=1&query=TTDC%20Hotel%20Tamil%20Nadu%20Tranquebar%20(Tharangambadi)%20Tamil%20Nadu"
     },
     {
-      "name": "Hotel Sadhabishegam",
-      "type": "homestay",
-      "tier": "good",
-      "priceMin": 2200,
-      "priceMax": 4200,
-      "rating": 4.5,
-      "reviews": 140,
+      "name": "Sri Akshardham Hotel",
+      "type": "hotel",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1400,
+      "rating": 4,
+      "reviews": 650,
       "amenities": [
-        "Kitchenette",
-        "Beach Access"
+        "Clean Rooms",
+        "Hot Water",
+        "Room Service",
+        "TV"
       ],
       "tags": [
-        "Beach Villa"
+        "Mayiladuthurai (24 km away)",
+        "Budget Friendly",
+        "Devotee Inn"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Sadhabishegam%20Tranquebar%20(Tharangambadi)%20Tamil%20Nadu"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sri%20Akshardham%20Hotel%20Mayiladuthurai%20Tamil%20Nadu"
+    },
+    {
+      "name": "Hotel Pothigai Residency",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2000,
+      "rating": 4.2,
+      "reviews": 1450,
+      "amenities": [
+        "Free WiFi",
+        "AC Rooms",
+        "Veg Restaurant",
+        "24hr Desk"
+      ],
+      "tags": [
+        "Mayiladuthurai (24 km away)",
+        "Nearest Town Hub",
+        "Family Stay"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pothigai%20Residency%20Mayiladuthurai%20Tamil%20Nadu"
+    },
+    {
+      "name": "Hotel Million Day",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2400,
+      "priceMax": 3800,
+      "rating": 4.3,
+      "reviews": 1120,
+      "amenities": [
+        "Free WiFi",
+        "Multi-cuisine Restaurant",
+        "Room Service",
+        "Parking"
+      ],
+      "tags": [
+        "Mayiladuthurai (24 km away)",
+        "Town Centre",
+        "Comfort Plus"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Million%20Day%20Mayiladuthurai%20Tamil%20Nadu"
+    },
+    {
+      "name": "Hotel Sadhabhishegam",
+      "type": "hotel",
+      "tier": "good",
+      "priceMin": 2200,
+      "priceMax": 3500,
+      "rating": 4.2,
+      "reviews": 980,
+      "amenities": [
+        "Free WiFi",
+        "Pure Veg Dining",
+        "Travel Desk",
+        "AC"
+      ],
+      "tags": [
+        "Mayiladuthurai (24 km away)",
+        "Pilgrim Choice",
+        "Vaitheeswarankoil"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Sadhabhishegam%20Mayiladuthurai%20Tamil%20Nadu"
+    },
+    {
+      "name": "The Bungalow on the Beach - 17th Century Neemrana",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 6500,
+      "priceMax": 11000,
+      "rating": 4.6,
+      "reviews": 1820,
+      "amenities": [
+        "Sea View",
+        "Swimming Pool",
+        "Heritage Dining",
+        "Garden"
+      ],
+      "tags": [
+        "Mayiladuthurai (24 km away)",
+        "Historic Danish Fort",
+        "Tranquebar Beach"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=The%20Bungalow%20on%20the%20Beach%20-%2017th%20Century%20Neemrana%20Mayiladuthurai%20Tamil%20Nadu"
     }
   ],
   "gallery": [

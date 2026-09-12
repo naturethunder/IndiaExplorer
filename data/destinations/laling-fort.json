@@ -272,155 +272,87 @@
   ],
   "hotels": [
     {
-      "name": "BunkStay Laling",
-      "type": "hostel",
+      "name": "MTDC Holiday Resort (Laling Fort)",
+      "type": "resort",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
+      "priceMin": 1100,
+      "priceMax": 2000,
       "rating": 4.1,
-      "reviews": 198,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Value Stay",
-        "Manor House"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=BunkStay%20Laling%20Laling%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Laling%20Fort%20Maharashtra"
     },
     {
-      "name": "Treebo Trend Laling",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 268,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Popular Pick",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Laling%20Laling%20Maharashtra"
-    },
-    {
-      "name": "Laling Ibis Budget",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
+      "name": "Sai Ashram Bhakta Niwas Shirdi",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 400,
+      "priceMax": 900,
       "rating": 4.3,
-      "reviews": 505,
+      "reviews": 8900,
       "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
+        "Sansthan Pilgrim Complex",
+        "Clean Rooms",
+        "Solar Hot Water",
+        "Devotee Security"
       ],
       "tags": [
-        "Popular Pick",
-        "Fort Residence"
+        "Shirdi (79 km away)",
+        "Shirdi Sansthan",
+        "Spiritual Trust Stay"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Laling%20Ibis%20Budget%20Laling%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sai%20Ashram%20Bhakta%20Niwas%20Shirdi%20Shirdi%20Maharashtra"
     },
     {
-      "name": "Laling Rajwada",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.2,
-      "reviews": 531,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Family Friendly",
-        "Period Property"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Laling%20Rajwada%20Laling%20Maharashtra"
-    },
-    {
-      "name": "Keys Select Haveli Stay",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3834,
-      "priceMax": 5209,
+      "name": "MTDC Holiday Resort Shirdi",
+      "type": "resort",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4.1,
-      "reviews": 909,
+      "reviews": 2600,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Govt Tourism Unit",
+        "Spacious Grounds",
+        "Veg Canteen",
+        "Near Temple"
       ],
       "tags": [
-        "Well Rated",
-        "Heritage Hotel"
+        "Shirdi (79 km away)",
+        "Shiv Road",
+        "Maharashtra Tourism"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Keys%20Select%20Haveli%20Stay%20Laling%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=MTDC%20Holiday%20Resort%20Shirdi%20Shirdi%20Maharashtra"
     },
     {
-      "name": "Laling Hilton Garden Inn",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 6525,
-      "priceMax": 7572,
-      "rating": 4.5,
-      "reviews": 1705,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Top Amenities",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Laling%20Hilton%20Garden%20Inn%20Laling%20Maharashtra"
-    },
-    {
-      "name": "Laling Vivanta",
-      "type": "hotel",
+      "name": "Sun-n-Sand Resort Shirdi",
+      "type": "resort",
       "tier": "best",
-      "priceMin": 9618,
-      "priceMax": 10637,
-      "rating": 4.4,
-      "reviews": 936,
+      "priceMin": 4500,
+      "priceMax": 8500,
+      "rating": 4.5,
+      "reviews": 5800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Swimming Pool",
+        "Pure Vegetarian Dining",
         "Spa",
-        "Michelin Dining",
-        "Private Beach",
-        "Yacht Access",
-        "Helipad"
+        "Temple Shuttle"
       ],
       "tags": [
-        "Award Winning",
-        "Haveli Stay"
+        "Shirdi (79 km away)",
+        "Pimpalwadi Road",
+        "Luxury Pilgrim Haven"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Laling%20Vivanta%20Laling%20Maharashtra"
+      "url": "https://www.google.com/maps/search/?api=1&query=Sun-n-Sand%20Resort%20Shirdi%20Shirdi%20Maharashtra"
     }
   ],
   "restaurants": [],

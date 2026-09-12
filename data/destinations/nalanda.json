@@ -297,159 +297,87 @@
   ],
   "hotels": [
     {
-      "name": "OYO Nalanda",
-      "type": "hotel",
+      "name": "BSTDC Hotel Kautilya Vihar (Nalanda)",
+      "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.2,
-      "reviews": 182,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "Room Service",
-        "Luggage Storage"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=OYO%20Nalanda%20Nalanda%20Bihar"
-    },
-    {
-      "name": "Nalanda Ginger",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
+      "priceMin": 750,
+      "priceMax": 1400,
       "rating": 4.1,
-      "reviews": 667,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast",
-        "Parking",
-        "Room Service"
-      ],
-      "tags": [
-        "Good Value",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nalanda%20Ginger%20Nalanda%20Bihar"
-    },
-    {
-      "name": "Ibis Budget Nalanda",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.1,
-      "reviews": 269,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Fort Residence"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Budget%20Nalanda%20Nalanda%20Bihar"
-    },
-    {
-      "name": "Nalanda Zone by The Park",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.1,
-      "reviews": 747,
-      "amenities": [
-        "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
-      ],
-      "tags": [
-        "Well Rated",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nalanda%20Zone%20by%20The%20Park%20Nalanda%20Bihar"
-    },
-    {
-      "name": "Nalanda Heritage Hotel",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3960,
-      "priceMax": 4846,
-      "rating": 4.2,
-      "reviews": 1151,
-      "amenities": [
-        "Free WiFi",
-        "AC Rooms",
-        "Breakfast Buffet",
-        "Pool",
-        "Gym",
-        "Restaurant",
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
         "Parking"
       ],
       "tags": [
-        "Family Friendly",
-        "Mahal Palace"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nalanda%20Heritage%20Hotel%20Nalanda%20Bihar"
+      "url": "https://www.google.com/maps/search/?api=1&query=BSTDC%20Hotel%20Kautilya%20Vihar%20Nalanda%20Bihar"
     },
     {
-      "name": "Nalanda Royal Retreat",
+      "name": "BSTDC Hotel Kautilya Vihar Patna",
+      "type": "guesthouse",
+      "tier": "cheapest",
+      "priceMin": 800,
+      "priceMax": 1500,
+      "rating": 4,
+      "reviews": 1900,
+      "amenities": [
+        "Bihar State Tourism Unit",
+        "Air-cooled & AC Rooms",
+        "Canteen",
+        "Travel Desk"
+      ],
+      "tags": [
+        "Patna (60 km away)",
+        "Beer Chand Patel Marg",
+        "State Tourism"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=BSTDC%20Hotel%20Kautilya%20Vihar%20Patna%20Patna%20Bihar"
+    },
+    {
+      "name": "Lemon Tree Premier Patna",
       "type": "hotel",
       "tier": "better",
-      "priceMin": 6643,
-      "priceMax": 8534,
+      "priceMin": 4500,
+      "priceMax": 8500,
       "rating": 4.4,
-      "reviews": 521,
+      "reviews": 3800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
+        "Rooftop Pool",
+        "Citrus Cafe",
         "Spa",
-        "Multiple Dining",
-        "Gym",
-        "Banquet",
-        "Concierge",
-        "Valet"
+        "Fitness Centre"
       ],
       "tags": [
-        "Business Preferred",
-        "Haveli Stay"
+        "Patna (60 km away)",
+        "Exhibition Road",
+        "City Centre"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Nalanda%20Royal%20Retreat%20Nalanda%20Bihar"
+      "url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Premier%20Patna%20Patna%20Bihar"
     },
     {
-      "name": "Sheraton Nalanda",
+      "name": "Hotel Maurya Patna",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 11930,
-      "priceMax": 13614,
+      "priceMin": 6000,
+      "priceMax": 11000,
       "rating": 4.5,
-      "reviews": 2654,
+      "reviews": 5100,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Swimming Pool",
+        "Club Mirchi Restaurant",
+        "Bakery",
+        "Gym"
       ],
       "tags": [
-        "Award Winning",
-        "Rajwada"
+        "Patna (60 km away)",
+        "South Gandhi Maidan",
+        "Patna Grand Landmark"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Nalanda%20Nalanda%20Bihar"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Maurya%20Patna%20Patna%20Bihar"
     }
   ],
   "restaurants": [],

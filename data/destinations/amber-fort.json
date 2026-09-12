@@ -422,156 +422,129 @@
   ],
   "hotels": [
     {
-      "name": "Amber Haveli Stay",
-      "type": "guesthouse",
+      "name": "RTDC Hotel Tourist Bungalow (Amber Fort)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
+      "priceMax": 1700,
+      "rating": 4.1,
+      "reviews": 620,
+      "amenities": [
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
+      ],
+      "tags": [
+        "State Tourism Unit",
+        "Verified Govt Lodge"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Tourist%20Bungalow%20Amber%20Fort%20Rajasthan"
+    },
+    {
+      "name": "Zostel Jaipur",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
+      ],
+      "tags": [
+        "Jaipur (10 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "RTDC Hotel Teej Jaipur",
+      "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
       "rating": 4,
-      "reviews": 194,
+      "reviews": 1900,
       "amenities": [
-        "Free WiFi",
-        "Clean Rooms",
-        "24hr Reception",
-        "CCTV Security"
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
+        "Parking"
       ],
       "tags": [
-        "Backpacker Choice",
-        "Manor House"
+        "Jaipur (10 km away)",
+        "State Tourism",
+        "Collectorate Circle"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Amber%20Haveli%20Stay%20Amber%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Treebo Trend Heritage Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 764,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Mahal Palace"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Heritage%20Hotel%20Amber%20Rajasthan"
-    },
-    {
-      "name": "FabHotels Prime Amber",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.3,
-      "reviews": 326,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Heritage Hotel"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=FabHotels%20Prime%20Amber%20Amber%20Rajasthan"
-    },
-    {
-      "name": "Ibis Amber",
-      "type": "hotel",
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
-      "rating": 4.2,
-      "reviews": 805,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Travel Desk"
       ],
       "tags": [
-        "Well Rated",
-        "Fort Residence"
+        "Jaipur (10 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ibis%20Amber%20Amber%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Fortune Amber",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 3227,
-      "priceMax": 4459,
-      "rating": 4.2,
-      "reviews": 841,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Family Friendly",
-        "Royal Retreat"
+        "Jaipur (10 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Fortune%20Amber%20Amber%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Amber Period Property",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5450,
-      "priceMax": 7310,
-      "rating": 4.5,
-      "reviews": 1227,
-      "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Rooftop Bar",
-        "Meeting Rooms",
-        "Airport Transfer"
-      ],
-      "tags": [
-        "Premium Stay",
-        "Rajwada"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Amber%20Period%20Property%20Amber%20Rajasthan"
-    },
-    {
-      "name": "Hilton Royal Retreat",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 10158,
-      "priceMax": 10859,
+      "priceMin": 7000,
+      "priceMax": 15000,
       "rating": 4.6,
-      "reviews": 710,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Full Spa",
-        "Multiple Fine Dining",
-        "Club Lounge",
-        "Butler",
-        "Valet",
-        "Golf"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Luxury Experience",
-        "Heritage Hotel"
+        "Jaipur (10 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Royal%20Retreat%20Amber%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],

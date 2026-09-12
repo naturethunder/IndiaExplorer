@@ -422,155 +422,129 @@
   ],
   "hotels": [
     {
-      "name": "Zostel Hawa",
-      "type": "hostel",
+      "name": "RTDC Hotel Tourist Bungalow (Hawa Mahal)",
+      "type": "hotel",
       "tier": "cheapest",
       "priceMin": 900,
-      "priceMax": 1450,
-      "rating": 4.2,
-      "reviews": 178,
-      "amenities": [
-        "Free WiFi",
-        "Attached Bath",
-        "Daily Housekeeping",
-        "Power Backup"
-      ],
-      "tags": [
-        "Budget Friendly",
-        "Royal Retreat"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Hawa%20Hawa%20Rajasthan"
-    },
-    {
-      "name": "Hawa Heritage Hotel",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 1700,
-      "priceMax": 2450,
-      "rating": 4.2,
-      "reviews": 296,
-      "amenities": [
-        "Free WiFi",
-        "Hot Water",
-        "TV",
-        "Intercom",
-        "Doctor on Call"
-      ],
-      "tags": [
-        "Smart Choice",
-        "Manor House"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hawa%20Heritage%20Hotel%20Hawa%20Rajasthan"
-    },
-    {
-      "name": "Treebo Trend Hawa",
-      "type": "hotel",
-      "tier": "budget",
-      "priceMin": 2700,
-      "priceMax": 4050,
-      "rating": 4.2,
-      "reviews": 381,
-      "amenities": [
-        "Free WiFi",
-        "AC & Non-AC",
-        "Restaurant",
-        "Travel Desk",
-        "Laundry"
-      ],
-      "tags": [
-        "Good Value",
-        "Haveli Stay"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Treebo%20Trend%20Hawa%20Hawa%20Rajasthan"
-    },
-    {
-      "name": "Ginger Haveli Stay",
-      "type": "hotel",
-      "tier": "good",
-      "priceMin": 5400,
-      "priceMax": 9000,
+      "priceMax": 1700,
       "rating": 4.1,
-      "reviews": 704,
+      "reviews": 620,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Multi-cuisine",
-        "Bar",
-        "Kids Club",
-        "Business Center"
+        "Govt Run",
+        "Spacious Grounds",
+        "Canteen",
+        "Parking"
       ],
       "tags": [
-        "Comfort Plus",
-        "Palace Hotel"
+        "State Tourism Unit",
+        "Verified Govt Lodge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Ginger%20Haveli%20Stay%20Hawa%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Tourist%20Bungalow%20Hawa%20Mahal%20Rajasthan"
     },
     {
-      "name": "Holiday Inn Express Period Property",
+      "name": "Zostel Jaipur",
+      "type": "hostel",
+      "tier": "cheapest",
+      "priceMin": 600,
+      "priceMax": 1200,
+      "rating": 4.6,
+      "reviews": 4200,
+      "amenities": [
+        "Walled City Location",
+        "Rooftop Lounge",
+        "Common Kitchen",
+        "WiFi"
+      ],
+      "tags": [
+        "Jaipur (4 km away)",
+        "Near Hawa Mahal",
+        "Backpacker Community"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Zostel%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "RTDC Hotel Teej Jaipur",
       "type": "hotel",
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2200,
+      "rating": 4,
+      "reviews": 1900,
+      "amenities": [
+        "Rajasthan Tourism Run",
+        "Central Location",
+        "Dining Hall",
+        "Parking"
+      ],
+      "tags": [
+        "Jaipur (4 km away)",
+        "State Tourism",
+        "Collectorate Circle"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=RTDC%20Hotel%20Teej%20Jaipur%20Jaipur%20Rajasthan"
+    },
+    {
+      "name": "Hotel Pearl Palace Jaipur",
+      "type": "heritage",
       "tier": "good",
-      "priceMin": 3586,
-      "priceMax": 4960,
-      "rating": 4.2,
-      "reviews": 889,
+      "priceMin": 1800,
+      "priceMax": 3200,
+      "rating": 4.7,
+      "reviews": 4900,
       "amenities": [
+        "Peacock Rooftop Restaurant",
+        "Artistic Decor",
         "Free WiFi",
-        "Mini Bar",
-        "Spa",
-        "Conference Room",
-        "Banquet Hall",
-        "Valet"
+        "Travel Desk"
       ],
       "tags": [
-        "Comfort Plus",
-        "Period Property"
+        "Jaipur (4 km away)",
+        "Hathroi Fort",
+        "Travellers' Choice Legend"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Period%20Property%20Hawa%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Pearl%20Palace%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Hilton Garden Inn Royal Retreat",
-      "type": "hotel",
-      "tier": "better",
-      "priceMin": 5005,
-      "priceMax": 6960,
-      "rating": 4.3,
-      "reviews": 897,
+      "name": "Rambagh Palace, Jaipur",
+      "type": "heritage",
+      "tier": "best",
+      "priceMin": 38000,
+      "priceMax": 80000,
+      "rating": 4.9,
+      "reviews": 6800,
       "amenities": [
-        "Free WiFi",
-        "Infinity Pool",
-        "Spa & Wellness",
-        "Fine Dining",
-        "Club Lounge",
-        "Butler"
+        "Maharaja Residence",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Spa",
+        "Polo Bar"
       ],
       "tags": [
-        "Top Amenities",
-        "Manor House"
+        "Jaipur (4 km away)",
+        "Jewel of Jaipur",
+        "World Luxury Icon"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hilton%20Garden%20Inn%20Royal%20Retreat%20Hawa%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace%2C%20Jaipur%20Jaipur%20Rajasthan"
     },
     {
-      "name": "Hawa Renaissance",
+      "name": "ITC Rajputana, a Luxury Collection Hotel",
       "type": "hotel",
       "tier": "best",
-      "priceMin": 8122,
-      "priceMax": 8797,
+      "priceMin": 7000,
+      "priceMax": 15000,
       "rating": 4.6,
-      "reviews": 2548,
+      "reviews": 5400,
       "amenities": [
-        "Free WiFi",
-        "Pool",
-        "Spa",
-        "Multiple Restaurants",
-        "Ballroom",
-        "Kids Club",
-        "Concierge"
+        "Haveli Design",
+        "Peshawri Dining",
+        "Kaya Kalp Spa",
+        "Courtyard Pool"
       ],
       "tags": [
-        "Luxury Experience",
-        "Heritage Hotel"
+        "Jaipur (4 km away)",
+        "Near Railway Station",
+        "ITC Royal Luxury"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Hawa%20Renaissance%20Hawa%20Rajasthan"
+      "url": "https://www.google.com/maps/search/?api=1&query=ITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%20Jaipur%20Rajasthan"
     }
   ],
   "restaurants": [],
