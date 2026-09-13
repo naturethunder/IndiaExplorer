@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Parvati Valley",
   "type": "adventure",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Kasol — adventure base of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Parvati River",
       "Trekking",
-      "Israeli Cafes"
+      "Israeli Cafes",
+      "Misty Hills"
     ],
     "altitude": 1640,
     "rating": 4.5,
@@ -210,7 +211,7 @@
     {
       "name": "Kheerganga Trek",
       "category": "trekking",
-      "distance": "22 km",
+      "distance": "22 km from Kasol, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 days",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bagheshwari_Temple%2C.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/66/Daul_mandir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/45/Howly_Rash-Mandir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Kasol"
     },
     {
       "name": "Tosh Village",
       "category": "town",
-      "distance": "20 km",
+      "distance": "20 km from Kasol, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Trishuldhari_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/01/Nagsankar_mandir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/75/Dubarani_Shiva_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "35–45 mins drive from Kasol"
     },
     {
       "name": "Manikaran Sahib",
       "category": "spiritual",
-      "distance": "4 km",
+      "distance": "4 km from Kasol, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b3/Welcome_gate_Voirabi_Mandir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/99/Ganesh_Mandir_of_Lalmati.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c3/Raas_Mandir_Howly.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–25 mins drive from Kasol"
     }
   ],
   "itinerary": [
@@ -411,23 +415,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg",
-      "alt": "Kasol in Kasol, Himachal Pradesh - Mountain view from the Evergreen restaurant in Old Kasol"
+      "alt": "Kasol in Kasol, Himachal Pradesh - Mountain view from the Evergreen restaurant in Old Kasol",
+      "title": "Kasol Mountain View"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/The_route_to_Kheerganga.jpg",
-      "alt": "Kasol photo 2"
+      "alt": "The Route To Kheerganga — Kasol",
+      "title": "The Route To Kheerganga — Kasol"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Tosh_himachal_01.jpg",
-      "alt": "Kasol photo 3"
+      "alt": "Tosh Himachal — Kasol",
+      "title": "Tosh Himachal — Kasol"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Shilha_himachal_02.jpg",
-      "alt": "Kasol photo 4"
+      "alt": "Shilha Himachal — Kasol",
+      "title": "Shilha Himachal — Kasol"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Kheerganga_trek_route.jpg",
-      "alt": "Kasol photo 6"
+      "alt": "Kheerganga Trek Route — Kasol",
+      "title": "Kheerganga Trek Route — Kasol"
     }
   ],
   "faq": [

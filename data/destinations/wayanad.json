@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Western Ghats",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Cascading Waterfall",
   "tagline": "Wayanad — hill station of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Edakkal_Caves_-_Interior.jpg",
@@ -216,7 +216,7 @@
     {
       "name": "Edakkal Caves",
       "category": "heritage",
-      "distance": "25 km",
+      "distance": "25 km from Wayanad, Kerala",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -230,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Cave_at_Edakkal%28Inside%29.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/9/9b/Edakkal_0235.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/c9/Edakkal_cave_way_in1.jpg"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Wayanad"
     },
     {
       "name": "Chembra Peak",
       "category": "trekking",
-      "distance": "15 km",
+      "distance": "15 km from Wayanad, Kerala",
       "entryFee": "₹750",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -249,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Chembra_Peak%2C_Wayanad.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/5/5b/Chembra_Peak%2C_Wayanad_-_panoramio_%282%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/b/b7/Chembra_Peak%2C_Wayanad_-_panoramio_%284%29.jpg"
-      ]
+      ],
+      "travelTime": "35–45 mins drive from Wayanad"
     },
     {
       "name": "Banasura Sagar Dam",
       "category": "scenic",
-      "distance": "21 km",
+      "distance": "21 km from Wayanad, Kerala",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -268,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Banasura_Sagar_Dam_Wayanad1.jpg/1280px-Banasura_Sagar_Dam_Wayanad1.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/5c/Banasura_sagar_reservoir.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/ca/Banasura_Sagar_Dam_Wayanad4.jpg"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Wayanad"
     }
   ],
   "itinerary": [
@@ -419,23 +422,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Edakkal_Caves_-_Interior.jpg",
-      "alt": "Wayanad photo 2"
+      "alt": "Edakkal Caves Interior — Wayanad",
+      "title": "Edakkal Caves Interior — Wayanad"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Chembra_Peak%2C_Wayanad_-_panoramio.jpg",
-      "alt": "Wayanad photo 3"
+      "alt": "Chembra Peak, Wayanad Panoramio",
+      "title": "Chembra Peak, Wayanad Panoramio"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Chembra_Peak%2C_Wayanad_-_panoramio_%285%29.jpg",
-      "alt": "Wayanad photo 4"
+      "alt": "Chembra Peak, Wayanad Panoramio",
+      "title": "Chembra Peak, Wayanad Panoramio"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Banasura_Sagar_Dam_Wayanad4.jpg",
-      "alt": "Wayanad photo 5"
+      "alt": "Banasura Sagar Dam Wayanad",
+      "title": "Banasura Sagar Dam Wayanad"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/JainTemple_Wayanad_%286%29.JPG",
-      "alt": "Wayanad in Wayanad, Kerala - This is a photo of ASI monument number"
+      "alt": "JainTemple Wayanad",
+      "title": "JainTemple Wayanad"
     }
   ],
   "faq": [

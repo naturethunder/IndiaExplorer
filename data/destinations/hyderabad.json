@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Deccan Plateau",
   "type": "heritage",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Hyderabad — heritage city of Telangana",
   "heroImage": {
     "src": "https://images.pexels.com/photos/5491756/pexels-photo-5491756.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
@@ -212,7 +212,7 @@
     {
       "name": "Charminar",
       "category": "heritage",
-      "distance": "Old City",
+      "distance": "Old City near Hyderabad, Telangana",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -226,12 +226,13 @@
         "https://images.pexels.com/photos/36097665/pexels-photo-36097665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.pexels.com/photos/38925075/pexels-photo-38925075.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.pexels.com/photos/29221911/pexels-photo-29221911.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Hyderabad"
     },
     {
       "name": "Golconda Fort",
       "category": "heritage",
-      "distance": "11 km",
+      "distance": "11 km from Hyderabad, Telangana",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "2–3 hrs",
@@ -245,12 +246,13 @@
         "https://images.pexels.com/photos/29221922/pexels-photo-29221922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.pexels.com/photos/29221924/pexels-photo-29221924.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.unsplash.com/photo-1568484085354-4e6149a3e658?auto=format&fit=crop&w=1600&q=80"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Hyderabad"
     },
     {
       "name": "Ramoji Film City",
       "category": "cultural",
-      "distance": "30 km",
+      "distance": "30 km from Hyderabad, Telangana",
       "entryFee": "₹1,200",
       "timings": "Varies by season",
       "duration": "Full day",
@@ -264,7 +266,8 @@
         "https://images.pexels.com/photos/9876261/pexels-photo-9876261.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.pexels.com/photos/275977/pexels-photo-275977.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
         "https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?auto=format&fit=crop&w=1600&q=80"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Hyderabad"
     }
   ],
   "itinerary": [
@@ -414,23 +417,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/5491756/pexels-photo-5491756.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
-      "alt": "Charminar iconic monument in Hyderabad, Telangana"
+      "alt": "Charminar iconic monument in Hyderabad, Telangana",
+      "title": "Charminar iconic monument in Hyderabad, Telangana — Hyderabad"
     },
     {
       "src": "https://images.pexels.com/photos/12572754/pexels-photo-12572754.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
-      "alt": "Chowmahalla Palace majestic facade and courtyard in Hyderabad"
+      "alt": "Chowmahalla Palace majestic facade and courtyard in Hyderabad",
+      "title": "Chowmahalla Palace majestic facade and courtyard in Hyderabad — Hyderabad"
     },
     {
       "src": "https://images.pexels.com/photos/18036130/pexels-photo-18036130.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
-      "alt": "Monolithic Buddha statue across Hussain Sagar lake in Hyderabad"
+      "alt": "Monolithic Buddha statue across Hussain Sagar lake in Hyderabad",
+      "title": "Monolithic Buddha statue across Hussain Sagar lake in Hyderabad — Hyderabad"
     },
     {
       "src": "https://images.pexels.com/photos/29221923/pexels-photo-29221923.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1280",
-      "alt": "Panoramic view of historical ruins of Golconda Fort overlooking Hyderabad"
+      "alt": "Panoramic view of historical ruins of Golconda Fort overlooking Hyderabad",
+      "title": "Lakes at Hyderabad"
     },
     {
       "src": "https://images.unsplash.com/photo-1667905205148-0e425d8b7b5e?auto=format&fit=crop&w=1600&q=80",
-      "alt": "Grand domed heritage architecture of Qutb Shahi Tombs in Hyderabad"
+      "alt": "Grand domed heritage architecture of Qutb Shahi Tombs in Hyderabad",
+      "title": "Grand domed heritage architecture of Qutb Shahi Tombs in Hyderabad — Hyderabad"
     }
   ],
   "faq": [

@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Eastern Ghats",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Araku Valley — hill station of Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Beauty_of_aruku.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Coffee",
       "Tribal Culture",
-      "Train Ride"
+      "Train Ride",
+      "Misty Hills"
     ],
     "altitude": 910,
     "rating": 4.4,
@@ -212,7 +213,7 @@
     {
       "name": "Araku Coffee Museum",
       "category": "cultural",
-      "distance": "Centre",
+      "distance": "In Araku Valley Centre, Andhra Pradesh",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/31/Chicken_tikka_in_Araku_Valley%2C_Andhra_Pradesh_01.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fd/Boiled_corn_cob_in_Araku_Valley%2C_Andhra_Pradesh_03.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_view_of_Araku_Valley_hill_station_in_Andhra_Pradesh.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Tribal Museum",
       "category": "cultural",
-      "distance": "2 km",
+      "distance": "2 km from Araku Valley, Andhra Pradesh",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Araku_Tribal_Museum_in_Araku_valley_03.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_03.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/25/Araku_Tribal_Museum_in_Araku_valley_02.jpg",
         "https://pixabay.com/get/gf51285f9483ae8c65dc05a16e7623487a936821b464afe7b22698576a74c59cb79c019949f074db2f6cfaadcbf4b3b5321df9832ae79f60ff76a4ae9de9ff29d_1280.jpg"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Araku Valley"
     },
     {
       "name": "Vizag–Araku Train Ride",
       "category": "scenic",
-      "distance": "Route",
+      "distance": "Route near Araku Valley, Andhra Pradesh",
       "entryFee": "₹500",
       "timings": "Varies by season",
       "duration": "5 hrs",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Train_Exiting_Araku_and_heading_Towards_Ghat.jpg/1280px-Train_Exiting_Araku_and_heading_Towards_Ghat.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/KK_railway_line_near_Araku_02.jpg/1280px-KK_railway_line_near_Araku_02.jpg",
         "https://pixabay.com/get/gd4ea221fccc1225c8750d3b8d9098472da5aeb170002faaf6ad96045caf2713dad681b7afed780f793ffcdc3dde0a9424020581616668c7867c11ee583840856_1280.jpg"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Araku Valley"
     }
   ],
   "itinerary": [
@@ -413,23 +417,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Beauty_of_aruku.jpg",
-      "alt": "Araku Valley in Araku Valley, Andhra Pradesh - Araku, Vishakapatnam, Andhra Pradesh"
+      "alt": "Araku Valley in Araku Valley, Andhra Pradesh - Araku, Vishakapatnam, Andhra Pradesh",
+      "title": "Beauty Of Aruku — Araku Valley"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Araku_Tribal_Museum_in_Araku_valley_02.jpg",
-      "alt": "Araku Valley photo 2"
+      "alt": "Araku Tribal Museum In Araku Valley",
+      "title": "Araku Tribal Museum In Araku Valley"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/07/Araku_Tribal_Museum_in_Araku_valley_01.jpg",
-      "alt": "Araku Valley photo 3"
+      "alt": "Araku Tribal Museum In Araku Valley",
+      "title": "Araku Tribal Museum In Araku Valley"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Araku_Tribal_Museum_in_Araku_valley_04.jpg",
-      "alt": "Araku Valley photo 4"
+      "alt": "Araku Tribal Museum In Araku Valley",
+      "title": "Araku Tribal Museum In Araku Valley"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Araku_Tribal_Museum_in_Araku_valley_06.jpg",
-      "alt": "Araku Valley photo 5"
+      "alt": "Araku Tribal Museum In Araku Valley",
+      "title": "Araku Tribal Museum In Araku Valley"
     }
   ],
   "faq": [

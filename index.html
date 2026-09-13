@@ -6,12 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ExploreDesh — Discover Incredible India</title>
   <meta name="description"
-    content="Discover India's 2,392 most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
+    content="Discover India's 2,393 most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
   <meta name="keywords"
     content="India travel, travel guide, tourist destinations India, hill stations, beaches, heritage spots, trip planner" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="theme-color" content="#080A0F" />
+  <!-- Fast-path zero-FOUC theme resolution -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('exploredesh_theme');
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#080A0F');
+      } catch (_) {}
+    })();
+  </script>
   <meta name="google-site-verification" content="HqAoAKbe2yBCMPODIFdVDp2x07-FP8hOMRsaaLjtokc" />
   <link rel="canonical" href="https://exploredesh.com/" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
@@ -32,9 +45,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Jost:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=2" />
-  <link rel="stylesheet" href="css/tailwind.css?v=2" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=2" />
+  <link rel="stylesheet" href="css/styles.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20260914_6" />
   <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"
@@ -363,7 +376,7 @@
           <!-- Rendered by JS -->
         </div>
         <div class="text-center mt-10 reveal">
-          <a href="destinations.html" class="btn btn-primary">Browse All 2,392 Destinations</a>
+          <a href="destinations.html" class="btn btn-primary">Browse All 2,393 Destinations</a>
         </div>
       </div>
     </section>
@@ -386,7 +399,7 @@
     "name": "ExploreDesh",
     "url": "https://exploredesh.com",
     "logo": "https://exploredesh.com/images/favicon.svg",
-    "description": "India's most comprehensive travel planning platform with 2,392 destinations across 36 states."
+    "description": "India's most comprehensive travel planning platform with 2,393 destinations across 36 states."
   }
   </script>
   <script type="application/ld+json">

@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Thar Desert",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Bikaner — heritage city of Rajasthan",
+  "badge": "Royal Palace",
+  "tagline": "Historic Royal Palace & Architectural Splendour in Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Devi_Kund_Sagar_and_Cenotaphs%2C_Bikaner.jpg",
     "alt": "Bikaner, Rajasthan"
@@ -212,7 +212,7 @@
     {
       "name": "Junagarh Fort",
       "category": "heritage",
-      "distance": "City Centre",
+      "distance": "In Bikaner Centre, Rajasthan",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -226,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/20191212_Junagarh_Fort%2C_Bikaner%2C_India_1524_8206.jpg/1280px-20191212_Junagarh_Fort%2C_Bikaner%2C_India_1524_8206.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/ce/20191211_Junagarh_Fort%2C_Bikaner%2C_India_1547_8077_DxO.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/20191212_Junagarh_Fort%2C_Bikaner%2C_India_1524_8206.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Karni Mata Temple",
       "category": "spiritual",
-      "distance": "30 km",
+      "distance": "30 km from Bikaner, Rajasthan",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg/1280px-Karni_Mata_Temple_Deshnok_Near_Bikaner_Rajasthan_India_2013-09-08_16-29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Entrance_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/8/84/Courtyard_of_the_Karni_Mata_temple_at_Deshnoke_near_Bikaner.jpg"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Bikaner"
     },
     {
       "name": "National Research Centre on Camel",
       "category": "wildlife",
-      "distance": "8 km",
+      "distance": "8 km from Bikaner, Rajasthan",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -264,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/30/Nrcc_small_furnace_5_of_5.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/7/76/Nrcc_column_furnace_front_entrance_view.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Nrcc_small_furnace_6.jpg"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Bikaner"
     }
   ],
   "itinerary": [
@@ -394,23 +397,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Devi_Kund_Sagar_and_Cenotaphs%2C_Bikaner.jpg",
-      "alt": "Bikaner in Bikaner, Rajasthan - This is a photo of ASI monument number"
+      "alt": "Devi Kund Sagar And Cenotaphs, Bikaner",
+      "title": "Devi Kund Sagar And Cenotaphs, Bikaner"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/20191212_Junagarh_Fort%2C_Bikaner%2C_India_1507_8174_DxO.jpg",
-      "alt": "Bikaner photo 2"
+      "alt": "Junagarh Fort, Bikaner, India 1507 8174 DxO",
+      "title": "Junagarh Fort, Bikaner, India 1507 8174 DxO"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Le_temple_de_Karni_Mata_%28Deshnoke%29_%288423353617%29.jpg",
-      "alt": "Bikaner photo 3"
+      "alt": "Le Temple De Karni Mata (Deshnoke) — Bikaner",
+      "title": "Le Temple De Karni Mata (Deshnoke) — Bikaner"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Karni_Mata_Temple_Bikaner_1.jpg",
-      "alt": "Bikaner photo 4"
+      "alt": "Karni Mata Temple Bikaner",
+      "title": "Karni Mata Temple Bikaner"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Nrcc_small_furnace_1_of_5.jpg",
-      "alt": "Bikaner photo 5"
+      "alt": "Nrcc Small Furnace 1 Of — Bikaner",
+      "title": "Nrcc Small Furnace 1 Of — Bikaner"
     }
   ],
   "faq": [

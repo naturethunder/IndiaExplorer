@@ -11,6 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+const ORIGIN = (process.env.SITE_ORIGIN || 'https://exploredesh.com').replace(/\/$/, '');
 const idx = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'destinations', 'index.json'), 'utf8'));
 
 function xmlEscape(s) {
@@ -18,31 +19,33 @@ function xmlEscape(s) {
 }
 
 function stubHTML(d) {
-  const url = '/destination.html?slug=' + encodeURIComponent(d.slug);
+  const relUrl = '/destination.html?slug=' + encodeURIComponent(d.slug);
+  const canonicalUrl = ORIGIN + relUrl;
   const title = xmlEscape(d.title + ' Travel Guide — Places, Hotels, How to Reach | ExploreDesh');
   const desc = xmlEscape((d.short || '').replace(/\s+$/, '') + ' Plan your ' + d.title + ' trip: top attractions, stays and how to reach.');
-  const imgUrl = xmlEscape((d.heroImage && d.heroImage.src) || (d.image && d.image.src) || '');
+  const rawImg = (d.heroImage && d.heroImage.src) || (d.image && d.image.src) || '';
+  const imgUrl = rawImg ? (rawImg.startsWith('http') ? rawImg : ORIGIN + '/' + rawImg.replace(/^\/+/, '')) : '';
   return '<!DOCTYPE html>\n' +
     '<html lang="en">\n' +
     '<head>\n' +
     '  <meta charset="UTF-8" />\n' +
     '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n' +
-    '  <meta http-equiv="refresh" content="0;url=' + url + '" />\n' +
-    '  <link rel="canonical" href="' + url + '" />\n' +
+    '  <meta http-equiv="refresh" content="0;url=' + relUrl + '" />\n' +
+    '  <link rel="canonical" href="' + canonicalUrl + '" />\n' +
     '  <title>' + title + '</title>\n' +
     '  <meta name="description" content="' + desc + '" />\n' +
     '  <meta property="og:title" content="' + title + '" />\n' +
     '  <meta property="og:description" content="' + desc + '" />\n' +
     '  <meta property="og:type" content="article" />\n' +
-    '  <meta property="og:url" content="' + url + '" />\n' +
-    (imgUrl ? '  <meta property="og:image" content="' + imgUrl + '" />\n' : '') +
+    '  <meta property="og:url" content="' + canonicalUrl + '" />\n' +
+    (imgUrl ? '  <meta property="og:image" content="' + xmlEscape(imgUrl) + '" />\n' : '') +
     '  <meta name="twitter:card" content="summary_large_image" />\n' +
     '  <meta name="twitter:title" content="' + title + '" />\n' +
     '  <meta name="twitter:description" content="' + desc + '" />\n' +
-    (imgUrl ? '  <meta name="twitter:image" content="' + imgUrl + '" />\n' : '') +
+    (imgUrl ? '  <meta name="twitter:image" content="' + xmlEscape(imgUrl) + '" />\n' : '') +
     '</head>\n' +
     '<body>\n' +
-    '  <script>window.location.replace(\'' + url + '\');</script>\n' +
+    '  <script>window.location.replace(\'' + relUrl + '\');</script>\n' +
     '</body>\n' +
     '</html>\n';
 }

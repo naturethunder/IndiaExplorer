@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Rajasthan",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Bhatner Fort — heritage city of Rajasthan",
+  "badge": "Historic Fortress",
+  "tagline": "Bhatner Fort — historic fortress of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bhatner_Fort.jpg",
     "alt": "Bhatner Fort, Rajasthan"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.2,
@@ -210,7 +210,7 @@
     {
       "name": "Hanumangarh",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Bhatner Fort Centre, Rajasthan",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,7 +224,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/99/View_of_Bhagat_Singh_Chowk_in_Hanumanagrh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/5b/Fried_Idli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/02/Village_at_Hanumangarh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -331,28 +332,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bhatner_Fort.jpg",
-      "alt": "Bhatner Fort in Bhatner Fort, Rajasthan - This is a photo of ASI monument number"
+      "alt": "Hanumangarh — Bhatner Fort",
+      "title": "Hanumangarh — Bhatner Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bhatner_durg.jpg",
-      "alt": "Bhatner Fort photo 2"
+      "alt": "Bhatner Durg — Bhatner Fort",
+      "title": "Bhatner Durg — Bhatner Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hanumangarh_Bhatner_fort.jpg",
-      "alt": "Bhatner Fort photo 3"
+      "alt": "Hanumangarh Bhatner Fort",
+      "title": "Hanumangarh Bhatner Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/GNMPGC_Hanumangarh.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bhatner Fort photo 4"
+      "alt": "GNMPGC Hanumangarh — Bhatner Fort",
+      "title": "GNMPGC Hanumangarh — Bhatner Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hanumangarh_Bhatner_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bhatner Fort photo 5"
+      "alt": "Hanumangarh Bhatner Fort",
+      "title": "Hanumangarh Bhatner Fort"
     }
   ],
   "faq": [

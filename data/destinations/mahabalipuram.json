@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Coromandel Coast",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Mahabalipuram — heritage city of Tamil Nadu",
+  "badge": "Coastal Beach",
+  "tagline": "Scenic Coastal Beach & Ocean Horizons in Tamil Nadu",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Shore_Temple_Mahabalipuram_Tamilnadu_IMG_20191218_104514.jpg",
     "alt": "Mahabalipuram, Tamil Nadu"
@@ -17,7 +17,8 @@
     "features": [
       "Shore Temple",
       "Rock Carvings",
-      "Beach"
+      "Beach",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -213,7 +214,7 @@
     {
       "name": "Shore Temple",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Mahabalipuram Centre, Tamil Nadu",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -227,12 +228,13 @@
         "https://images.pexels.com/photos/37271214/pexels-photo-37271214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/e/ed/JEEN_MATA_MONDAY_3-09-2012_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7e/RJ_MDR_20-Bijaipur-20131015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Pancha Rathas",
       "category": "heritage",
-      "distance": "1 km",
+      "distance": "1 km from Mahabalipuram, Tamil Nadu",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -246,12 +248,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/5/59/NIIT_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/88/An_aerial_view_of_Udaipur_and_Aravali_hills_Rajasthan_India_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/28/Delhi-Rajasthan_8-6-12_to_12-6-12_070.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins walk / 3 min drive from Mahabalipuram"
     },
     {
       "name": "Arjuna’s Penance",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Mahabalipuram Centre, Tamil Nadu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "45 min",
@@ -265,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Arjuna%E2%80%99s_Penance%2C_Mahabalipuram.JPG/1280px-Arjuna%E2%80%99s_Penance%2C_Mahabalipuram.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/c/cd/Delhi-Rajasthan_8-6-12_to_12-6-12_073.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Delhi-Rajasthan_8-6-12_to_12-6-12_072.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -413,23 +417,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Shore_Temple_Mahabalipuram_Tamilnadu_IMG_20191218_104514.jpg",
-      "alt": "Mahabalipuram photo 2"
+      "alt": "Shore Temple Mahabalipuram Tamilnadu",
+      "title": "Shore Temple Mahabalipuram Tamilnadu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mahabalipuram%2C_Pancha_Rathas%2C_India.jpg",
-      "alt": "Mahabalipuram photo 3"
+      "alt": "Mahabalipuram, Pancha Rathas, India",
+      "title": "Mahabalipuram, Pancha Rathas, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mahabalipuram%2C_Pancha_Rathas_3%2C_India.jpg",
-      "alt": "Mahabalipuram photo 4"
+      "alt": "Mahabalipuram, Pancha Rathas 3, India",
+      "title": "Mahabalipuram, Pancha Rathas 3, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Descent_of_the_Ganges_01.jpg",
-      "alt": "Mahabalipuram photo 5"
+      "alt": "Descent Of The Ganges — Mahabalipuram",
+      "title": "Descent Of The Ganges — Mahabalipuram"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Arawali_Hills_around_Ajmer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hills of Rajasthan"
+      "alt": "Hills of Rajasthan",
+      "title": "Arawali Hills Around Ajmer — Mahabalipuram"
     }
   ],
   "faq": [

@@ -5,7 +5,7 @@
   "country": "India",
   "region": "West Sikkim",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Pelling — hill station of Sikkim",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Frauendoppel_Tenzin_Pelling_und_Cendrine_Hantz.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Kanchenjunga Views",
       "Skywalk",
-      "Monasteries"
+      "Monasteries",
+      "Misty Hills"
     ],
     "altitude": 2150,
     "rating": 4.5,
@@ -210,7 +211,7 @@
     {
       "name": "Pemayangtse Monastery",
       "category": "spiritual",
-      "distance": "2 km",
+      "distance": "2 km from Pelling, Sikkim",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/Front_view_of_Pemayangtse_monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/02/Window%2C_Pemayangtse_Monastery_%288064435192%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c0/Pemayangtse_Monastery_Outdoor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Pelling"
     },
     {
       "name": "Skywalk & Chenrezig Statue",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Pelling, Sikkim",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d2/Outer_sculpture_of_Cave_no_33_alias_Jagannath_Sabha%2C_Ellora_Caves_%2C_Maharashtra%2C_India_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Prayer_Wheel%2C_Skywalk%2C_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/ec/Outer_sculpture_of_Cave_no_33_alias_Jagannath_Sabha%2C_Ellora_Caves_%2C_Maharashtra%2C_India_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Pelling"
     },
     {
       "name": "Khecheopalri Lake",
       "category": "spiritual",
-      "distance": "24 km",
+      "distance": "24 km from Pelling, Sikkim",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Rabdentse_ruins.jpg/1280px-Rabdentse_ruins.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/8/84/Khecheopalri_boardwalk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/Khecheopalri_lake_%284635658168%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Pelling"
     }
   ],
   "itinerary": [
@@ -390,23 +394,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Frauendoppel_Tenzin_Pelling_und_Cendrine_Hantz.jpg",
-      "alt": "Pelling in Pelling, Sikkim - NLA Badminton Tenzin Pelling und Cendrine Hantz"
+      "alt": "Pelling in Pelling, Sikkim - NLA Badminton Tenzin Pelling und Cendrine Hantz",
+      "title": "Frauendoppel Tenzin Pelling Und Cendrine Hantz"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Pemayangtse_Monastery%2C_Pelling%2C_West_Sikkim_02.jpg",
-      "alt": "Pelling photo 2"
+      "alt": "Pemayangtse Monastery, Pelling, West Sikkim",
+      "title": "Pemayangtse Monastery, Pelling, West Sikkim"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Glass_walking_i_pelling_in_India.jpg",
-      "alt": "Pelling photo 4"
+      "alt": "Glass Walking I Pelling In India",
+      "title": "Glass Walking I Pelling In India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/Wishing_Lake.jpg",
-      "alt": "Pelling photo 5"
+      "alt": "Wishing Lake — Pelling",
+      "title": "Wishing Lake — Pelling"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Outer_sculpture_of_Cave_no_33_alias_Jagannath_Sabha%2C_Ellora_Caves_%2C_Maharashtra%2C_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "rock cut cave sculpture India"
+      "alt": "rock cut cave sculpture India",
+      "title": "rock cut cave sculpture India — Pelling"
     }
   ],
   "faq": [

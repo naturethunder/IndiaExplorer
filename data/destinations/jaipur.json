@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Aravalli Plains",
   "type": "heritage",
-  "badge": "Popular",
+  "badge": "Royal Palace",
   "tagline": "Jaipur — heritage city of Rajasthan",
   "heroImage": {
     "src": "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -212,7 +212,7 @@
     {
       "name": "Hawa Mahal",
       "category": "heritage",
-      "distance": "City Centre",
+      "distance": "In Jaipur Centre, Rajasthan",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -226,12 +226,13 @@
         "https://images.pexels.com/photos/38068052/pexels-photo-38068052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/35117480/pexels-photo-35117480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/39181898/pexels-photo-39181898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Amber Fort",
       "category": "heritage",
-      "distance": "11 km",
+      "distance": "11 km from Jaipur, Rajasthan",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "2–3 hrs",
@@ -245,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1552_9340.jpg/1280px-20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1552_9340.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg/1280px-20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nahargarh_Fort%2C_Jaipur%2C_20191218_1529_9314.jpg/1280px-Nahargarh_Fort%2C_Jaipur%2C_20191218_1529_9314.jpg"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Jaipur"
     },
     {
       "name": "City Palace",
       "category": "heritage",
-      "distance": "City Centre",
+      "distance": "In Jaipur Centre, Rajasthan",
       "entryFee": "₹200",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -264,12 +266,13 @@
         "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/33290417/pexels-photo-33290417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg/1280px-20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Jantar Mantar",
       "category": "heritage",
-      "distance": "City Centre",
+      "distance": "In Jaipur Centre, Rajasthan",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -283,7 +286,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg/1280px-20191218_Jantar_Mantar%2C_Jaipur_0906_8983_DxO.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Rashivilaya_Yantra%2C_Jantar_Mantar%2C_Jaipur%2C_20191218_0923_9016.jpg/1280px-Rashivilaya_Yantra%2C_Jantar_Mantar%2C_Jaipur%2C_20191218_0923_9016.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/20191218_Nadivalaya_Yantra%2C_Jantar_Mantar%2C_Jaipur%2C_0926_9023.jpg/1280px-20191218_Nadivalaya_Yantra%2C_Jantar_Mantar%2C_Jaipur%2C_0926_9023.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -458,23 +462,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Hawa Mahal Palace of Winds full facade, Jaipur"
+      "alt": "Hawa Mahal Palace of Winds full facade, Jaipur",
+      "title": "Hawa Mahal Palace of Winds full facade, Jaipur — Jaipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/20191218_Jaigarh_Fort%2C_Amer%2C_Jaipur_1551_9335.jpg",
-      "alt": "Jaigarh Fort ramparts and watchtower, Jaipur"
+      "alt": "Jaigarh Fort, Amer, Jaipur",
+      "title": "Jaigarh Fort, Amer, Jaipur"
     },
     {
       "src": "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Royal palace courtyards and arches, Jaipur"
+      "alt": "Royal palace courtyards and arches, Jaipur",
+      "title": "Royal palace courtyards and arches, Jaipur — Jaipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/20191218_Fort_Nahargarh%2C_Jaipur_1514_9294.jpg",
-      "alt": "Nahargarh Fort royal pavilions, Jaipur"
+      "alt": "Fort Nahargarh, Jaipur",
+      "title": "Fort Nahargarh, Jaipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Water_Palace%2C_Jaipur.jpg",
-      "alt": "Jal Mahal Water Palace floating in Man Sagar Lake at dawn, Jaipur"
+      "alt": "Jal Mahal Water Palace floating in Man Sagar Lake at dawn, Jaipur",
+      "title": "Water Palace, Jaipur"
     }
   ],
   "faq": [

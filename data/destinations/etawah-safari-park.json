@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Uttar Pradesh",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Etawah Safari Park — heritage city of Uttar Pradesh",
+  "badge": "Wildlife Sanctuary",
+  "tagline": "Etawah Safari Park — wildlife sanctuary of Uttar Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Etawah_Safari_Park.jpg",
     "alt": "Etawah Safari Park, Uttar Pradesh"
@@ -15,10 +15,10 @@
     "short": "Etawah Safari Park (formerly Etawah Lion Safari) is a drive-through safari park in Etawah, Uttar Pradesh, India.",
     "description": "Etawah Safari Park (formerly Etawah Lion Safari) is a drive-through safari park in Etawah, Uttar Pradesh, India. It was opened to the public in November 2019. It includes multiple safaris, an Asiatic lion breeding centre and a visitor centre.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Wildlife Habitat",
+      "Nature Observation",
+      "Flora & Fauna",
+      "Nature Trails"
     ],
     "altitude": null,
     "rating": 4.2,
@@ -210,7 +210,7 @@
     {
       "name": "Etawah",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Etawah Safari Park, Uttar Pradesh",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Visitor_Facilitation_Centre%2C_Etawah_Safari_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Tigerbannerghatta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/57/Ramdas_Baba_Mandir_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Etawah Safari Park"
     },
     {
       "name": "Ekdil",
       "category": "scenic",
-      "distance": "9 km",
+      "distance": "9 km from Etawah Safari Park, Uttar Pradesh",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,7 +244,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/73/Ekdil_railway_station.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pir_Ekdil_shah_Dargah_kazipara_Barasat.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/41/Ram_mandir_chawk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Etawah Safari Park"
     }
   ],
   "itinerary": [
@@ -403,28 +405,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Scenic Sightseeing"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Etawah_Safari_Park.jpg",
-      "alt": "Etawah Safari Park in Etawah Safari Park, Uttar Pradesh - This image represents the \"safari\" structure created at park."
+      "alt": "Etawah Safari Park in Etawah Safari Park, Uttar Pradesh - This image represents the \"safari\" structure created at park.",
+      "title": "Uttar Pradesh — Etawah Safari Park"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Carved_in_rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hindu temples in India"
+      "alt": "Carved In Rocks — Etawah Safari Park",
+      "title": "Carved In Rocks — Etawah Safari Park"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ettaia-ettawa.ruins.1830s-1850s.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Etawah Safari Park photo 3"
+      "alt": "Ettaia Ettawa.ruins.1830s 1850s — Etawah Safari Park",
+      "title": "Ettaia Ettawa.ruins.1830s 1850s — Etawah Safari Park"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Itawah_Jn_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Etawah Safari Park photo 4"
+      "alt": "Itawah Jn Railway Station — Etawah Safari Park",
+      "title": "Itawah Jn Railway Station — Etawah Safari Park"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kali_Vahan_Shakti_peeth.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Etawah Safari Park photo 5"
+      "alt": "Kali Vahan Shakti Peeth — Etawah Safari Park",
+      "title": "Kali Vahan Shakti Peeth — Etawah Safari Park"
     }
   ],
   "faq": [

@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Rajasthan",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Rajgarh Fort — heritage city of Rajasthan",
+  "badge": "Historic Fortress",
+  "tagline": "Rajgarh Fort — historic fortress of Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Osiya-temple_%26_architecture_13.jpg",
     "alt": "Rajgarh Fort, Rajasthan"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -210,7 +210,7 @@
     {
       "name": "Rajgarh, Alwar",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Rajgarh Fort Centre, Rajasthan",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/19/Flowers_of_Chinese_ixora_%28Ixora_chinensis%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/4d/Leaves_and_buds_of_yellow_oleander_%28Cascabela_thevetia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/3e/Crape_jasmine_%28Tabernaemontana_divaricata%29_flowers_in_West_Bengal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Saloli, Rajasthan",
       "category": "cultural",
-      "distance": "6 km",
+      "distance": "6 km from Rajgarh Fort, Rajasthan",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,7 +244,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cape_periwinkle_flowers_%28Catharanthus_roseus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1b/Crape_Jasmine_flowers_at_a_garden_in_Kayalpara%2C_Jagadishpur_Hat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/A_flower_of_Datura_metel_%28Indian_thornapple%29_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Rajgarh Fort"
     }
   ],
   "itinerary": [
@@ -404,28 +406,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Osiya-temple_%26_architecture_13.jpg",
-      "alt": "Rajgarh Fort in Rajasthan - The temple of Osiya-Rajasthan"
+      "alt": "Rajgarh Fort in Rajasthan - The temple of Osiya-Rajasthan",
+      "title": "Osiya Temple & Architecture — Rajgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Rajgarh_Fort.jpg",
-      "alt": "Rajgarh Fort photo 2"
+      "alt": "Saloli, Rajasthan — Rajgarh Fort",
+      "title": "Saloli, Rajasthan — Rajgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rajgarh_Fort_rear_view.JPG",
-      "alt": "Rajgarh Fort photo 3"
+      "alt": "Rajgarh Fort Rear View",
+      "title": "Rajgarh Fort Rear View"
     },
     {
       "src": "https://images.pexels.com/photos/974454/pexels-photo-974454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Capture of Kumbhalgarh Fort in Rajasthan, India under a clear blue sky. Perfect for travel and architecture enthusiasts."
+      "alt": "Capture of Kumbhalgarh Fort in Rajasthan, India under a clear blue sky. Perfect for travel and architecture enthusiasts.",
+      "title": "Historic Ramparts at Rajgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Crape_jasmine_flowers_in_West_Bengal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Flowers of India"
+      "alt": "Flowers of India",
+      "title": "Crape Jasmine Flowers In West Bengal — Rajgarh Fort"
     }
   ],
   "faq": [

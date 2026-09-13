@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Chota Nagpur",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Wildlife Sanctuary",
   "tagline": "Netarhat — hill station of Jharkhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Queen of Chotanagpur",
       "Sunrise",
-      "Forests"
+      "Forests",
+      "Wildlife Habitat"
     ],
     "altitude": 1128,
     "rating": 4.2,
@@ -215,7 +216,7 @@
     {
       "name": "Magnolia Sunset Point",
       "category": "scenic",
-      "distance": "10 km",
+      "distance": "10 km from Netarhat, Jharkhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/75/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_170.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_186.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/be/0112421_Satmarhi_group_of_Hindu_temples%2C_Badoh_Pathari%2C_Madhya_Pradesh_080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Netarhat"
     },
     {
       "name": "Netarhat Sunrise Point",
       "category": "scenic",
-      "distance": "2 km",
+      "distance": "2 km from Netarhat, Jharkhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/76/Ellora_Caves_%286158337875%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/56/Ellora_Caves_%286158878516%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/Ellora_Caves%2C_%286158392021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Netarhat"
     },
     {
       "name": "Upper Ghaghri Falls",
       "category": "nature",
-      "distance": "5 km",
+      "distance": "5 km from Netarhat, Jharkhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ellora_caves_rigth_caves_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/b2/Indra_sabha_Ellora_Cave_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/70/Cave_15_of_Ellora_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Netarhat"
     }
   ],
   "itinerary": [
@@ -395,23 +399,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
-      "alt": "Netarhat photo 2"
+      "alt": "Sunset In Netarhatt, Jharkhand",
+      "title": "Sunset In Netarhatt, Jharkhand"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Hill_station_of_jharkhand%2CNetarhat.jpg",
-      "alt": "Netarhat photo 4"
+      "alt": "Hill Station Of Jharkhand,Netarhat",
+      "title": "Hill Station Of Jharkhand,Netarhat"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Netarhat_Gate%2C_Latehar%2C_Jharkhand_Sample_3.jpg",
-      "alt": "Netarhat photo 5"
+      "alt": "Netarhat Gate, Latehar, Jharkhand Sample",
+      "title": "Netarhat Gate, Latehar, Jharkhand Sample"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Madhya Pradesh temples"
+      "alt": "Madhya Pradesh temples",
+      "title": "Gargaj Group Of Temples, Thobon Madhya Pradesh — Netarhat"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Gargaj_group_of_temples%2C_Thobon_Madhya_Pradesh_149.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Madhya Pradesh temples"
+      "alt": "Madhya Pradesh temples",
+      "title": "Gargaj Group Of Temples, Thobon Madhya Pradesh — Netarhat"
     }
   ],
   "faq": [

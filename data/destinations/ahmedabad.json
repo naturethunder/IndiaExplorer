@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Sabarmati",
   "type": "heritage",
-  "badge": "Popular",
+  "badge": "Heritage City",
   "tagline": "Ahmedabad — heritage city of Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG",
@@ -17,7 +17,8 @@
     "features": [
       "Heritage City",
       "Sabarmati Ashram",
-      "Textiles"
+      "Textiles",
+      "Historic Monuments"
     ],
     "altitude": 53,
     "rating": 4.4,
@@ -211,7 +212,7 @@
     {
       "name": "Sabarmati Ashram",
       "category": "heritage",
-      "distance": "6 km",
+      "distance": "6 km from Ahmedabad, Gujarat",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -225,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC001.jpg/1280px-Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC001.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC002.jpg/1280px-Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC002.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/3/32/Sabarmati_Ashram_-_Ahmedabad_-_Gujarat_-_DSC001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Ahmedabad"
     },
     {
       "name": "Adalaj Stepwell",
       "category": "heritage",
-      "distance": "18 km",
+      "distance": "18 km from Ahmedabad, Gujarat",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -244,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Adalaj_Stepwell%2C_Ahmedabad%2C_Gujarat%2C_India.jpg/1280px-Adalaj_Stepwell%2C_Ahmedabad%2C_Gujarat%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/f7/Adalaj_Vav_Ahmedabad.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/14/Adalaj_Vav%2C_Gandhinagar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Ahmedabad"
     },
     {
       "name": "Sidi Saiyyed Mosque",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Ahmedabad Centre, Gujarat",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -263,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jali_at_Sidi_Saiyyed_Mosque_01.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_01.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jali_at_Sidi_Saiyyed_Mosque_02.jpg/1280px-Jali_at_Sidi_Saiyyed_Mosque_02.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/4/47/Sidi_Saiyyed_Mosque_-_A_mosque_with_exquisite_carvings-_2012-11-03_09-48-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -411,23 +415,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Adalaj_Vav_%282%29_Ahmedabad.JPG",
-      "alt": "Ahmedabad photo 2"
+      "alt": "Adalaj Vav (2) Ahmedabad",
+      "title": "Adalaj Vav (2) Ahmedabad"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Adalaj_Stepwell-Adalaj_Ahmedabad-Gujarat-O0A0201.jpg",
-      "alt": "Ahmedabad photo 3"
+      "alt": "Adalaj Stepwell Adalaj Ahmedabad Gujarat O0A",
+      "title": "Adalaj Stepwell Adalaj Ahmedabad Gujarat O0A"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Adalaj_stepwell_in_Nov_2023.jpg",
-      "alt": "Ahmedabad photo 4"
+      "alt": "Adalaj Stepwell In Nov — Ahmedabad",
+      "title": "Adalaj Stepwell In Nov — Ahmedabad"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/A_pigeon_at_Adalaj_stepwell%2C_Ahmedabad.jpg",
-      "alt": "Ahmedabad photo 5"
+      "alt": "A Pigeon At Adalaj Stepwell, Ahmedabad",
+      "title": "A Pigeon At Adalaj Stepwell, Ahmedabad"
     },
     {
       "src": "https://images.unsplash.com/photo-1570605505301-0f713202ca7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8QWhtZWRhYmFkJTIwR3VqYXJhdHxlbnwwfDB8fHwxNzg4MDEyOTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "alt": "Ahmedabad in Ahmedabad, Gujarat - brown concrete builsing"
+      "alt": "Ahmedabad in Ahmedabad, Gujarat - brown concrete builsing",
+      "title": "Gujarat — Ahmedabad"
     }
   ],
   "faq": [

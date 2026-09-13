@@ -11,6 +11,7 @@
 
 import { icon } from './icons.js';
 import { esc } from '../utils/format.js';
+import { themeToggleHTML, initThemeToggle } from '../utils/theme.js';
 
 // Pill nav: Home / Destinations / AI Trip Finder / About / Contact.
 // "Plan My Trip" is the standout gradient CTA on the right.
@@ -33,14 +34,16 @@ function navbarHTML(active, variant) {
   const brand =
     '<a href="/" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
     '      <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
-    '      <span class="font-bold text-lg tracking-tight text-white">Explore<span class="text-primary">Desh</span></span>\n' +
+    '      <span class="font-bold text-lg tracking-tight text-white site-brand-text">Explore<span class="text-primary">Desh</span></span>\n' +
     '    </a>';
   return (
     '<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation">\n' +
     '  <div class="max-w-screen-2xl mx-auto px-6 h-full flex items-center justify-between gap-4">\n' +
     '    ' + brand + '\n' +
     '    <div class="hidden md:flex nav-menu items-center gap-1">\n        ' + links + '\n    </div>\n' +
-    '    <div class="flex items-center gap-3 shrink-0"></div>\n' +
+    '    <div class="flex items-center gap-3 shrink-0">\n' +
+    '      ' + themeToggleHTML() + '\n' +
+    '    </div>\n' +
     '  </div>\n' +
     '</nav>'
   );
@@ -170,6 +173,7 @@ export function initLayout(opts = {}) {
   if (navEl) navEl.innerHTML = navbarHTML(active, opts.variant);
   if (footEl) footEl.innerHTML = footerHTML();
   if (mobEl) mobEl.innerHTML = mobileNavHTML(active, opts.variant);
+  initThemeToggle();
 }
 
 /** Re-highlight a navbar link by exact href (used by destinations.html for ?type= tabs). */

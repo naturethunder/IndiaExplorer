@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kinnaur",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Chitkul — hill station of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Chitkul%2C_last_village_of_india.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Last Indian Village",
       "Baspa River",
-      "Apple Orchards"
+      "Apple Orchards",
+      "Misty Hills"
     ],
     "altitude": 3450,
     "rating": 4.6,
@@ -210,7 +211,7 @@
     {
       "name": "Last Village of India",
       "category": "town",
-      "distance": "Centre",
+      "distance": "In Chitkul Centre, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/1b/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/19/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/67/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2836%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Baspa Riverside",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Chitkul Centre, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/42/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2839%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2840%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/8b/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Mathi Temple",
       "category": "spiritual",
-      "distance": "Centre",
+      "distance": "In Chitkul Centre, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Courtyard_Mathi_Temple.jpg/1280px-Courtyard_Mathi_Temple.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e1/Badami_cave_temples%2C_cave_3_-_hamvrvb102k22_%2851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -412,23 +416,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Chitkul%2C_last_village_of_india.jpg",
-      "alt": "Chitkul photo 2"
+      "alt": "Chitkul, Last Village Of India",
+      "title": "Chitkul, Last Village Of India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Mathi_Temple%2C_Chitkul%2C_The_last_Village_of_India.jpg",
-      "alt": "Chitkul photo 3"
+      "alt": "Mathi Temple, Chitkul, The Last Village Of India",
+      "title": "Mathi Temple, Chitkul, The Last Village Of India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Mathi_Temple.jpg",
-      "alt": "Chitkul photo 4"
+      "alt": "Mathi Temple — Chitkul",
+      "title": "Mathi Temple — Chitkul"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Chitkul_the_last_village_of_India.jpg",
-      "alt": "Chitkul photo 5"
+      "alt": "Chitkul The Last Village Of India",
+      "title": "Chitkul The Last Village Of India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Badami_cave_temples%2C_cave_2_-_hamvrvb102k22_%2854%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Temples and monuments of Karnataka"
+      "alt": "Temples and monuments of Karnataka",
+      "title": "Badami Cave Temples, Cave 2 Hamvrvb102k22 — Chitkul"
     }
   ],
   "faq": [

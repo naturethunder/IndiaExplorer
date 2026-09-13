@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Western Ghats",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Cascading Waterfall",
   "tagline": "Chikmagalur — hill station of Karnataka",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Stunning_unknown.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Coffee",
       "Mullayanagiri",
-      "Waterfalls"
+      "Waterfalls",
+      "Cascading Waterfalls"
     ],
     "altitude": 1090,
     "rating": 4.5,
@@ -215,7 +216,7 @@
     {
       "name": "Mullayanagiri Peak",
       "category": "trekking",
-      "distance": "22 km",
+      "distance": "22 km from Chikmagalur, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/The_otherside_of_the_peak.jpg/1280px-The_otherside_of_the_peak.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/0/0d/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_186.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/24/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_192.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Chikmagalur"
     },
     {
       "name": "Baba Budangiri",
       "category": "scenic",
-      "distance": "30 km",
+      "distance": "30 km from Chikmagalur, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Baba_Budangiri%2C_Chikmagalur_%282024%29_44.jpg/1280px-Baba_Budangiri%2C_Chikmagalur_%282024%29_44.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/76/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_194.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Chikmagalur"
     },
     {
       "name": "Hebbe Falls",
       "category": "nature",
-      "distance": "55 km",
+      "distance": "55 km from Chikmagalur, Karnataka",
       "entryFee": "₹500",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hebbe_Falls_Chikmagalur_India.jpg/1280px-Hebbe_Falls_Chikmagalur_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hebbe_Falls_%288321061857%29.jpg/1280px-Hebbe_Falls_%288321061857%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_198.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "2.5–3.5 hrs drive from Chikmagalur"
     }
   ],
   "itinerary": [
@@ -396,23 +400,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Stunning_unknown.jpg",
-      "alt": "Chikmagalur photo 2"
+      "alt": "Stunning Unknown — Chikmagalur",
+      "title": "Stunning Unknown — Chikmagalur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Baba_Budangiri%2C_Chikmagalur_%282024%29_29.jpg",
-      "alt": "Chikmagalur photo 3"
+      "alt": "Baba Budangiri, Chikmagalur (2024)",
+      "title": "Baba Budangiri, Chikmagalur (2024)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Baba_Budangiri%2C_Chikmagalur_%282024%29_37.jpg",
-      "alt": "Chikmagalur photo 4"
+      "alt": "Baba Budangiri, Chikmagalur (2024)",
+      "title": "Baba Budangiri, Chikmagalur (2024)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_173.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Temples and monuments of Tamil Nadu"
+      "alt": "Temples and monuments of Tamil Nadu",
+      "title": "Brihadisvara Temple, Thanjavur, Tamil Nadu, India (2016) — Chikmagalur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India_%282016%29_182.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Temples and monuments of Tamil Nadu"
+      "alt": "Temples and monuments of Tamil Nadu",
+      "title": "Brihadisvara Temple, Thanjavur, Tamil Nadu, India (2016) — Chikmagalur"
     }
   ],
   "faq": [

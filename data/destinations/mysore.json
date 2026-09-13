@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Deccan Plateau",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Mysore — heritage city of Karnataka",
+  "badge": "Royal Palace",
+  "tagline": "Historic Royal Palace & Architectural Splendour in Karnataka",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mysore_Palace_%281%29.jpg",
     "alt": "Mysore, Karnataka"
@@ -212,7 +212,7 @@
     {
       "name": "Mysore Palace",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Mysore Centre, Karnataka",
       "entryFee": "₹70",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -226,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/3b/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Chamundi Hill Temple",
       "category": "spiritual",
-      "distance": "13 km",
+      "distance": "13 km from Mysore, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -245,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d3/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/57/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/dc/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Mysore"
     },
     {
       "name": "Brindavan Gardens",
       "category": "nature",
-      "distance": "21 km",
+      "distance": "21 km from Mysore, Karnataka",
       "entryFee": "₹15",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -264,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg/1280px-Brindavan_Gardens_%28Image_1%29%2C_Krishna_Raja_Sagara%2C_Mandya%2C_Karnataka%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/c9/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/Kanchi_Kailasanathar_Temple_at_Kanchipuram%2C_Tamil_Nadu_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Mysore"
     }
   ],
   "itinerary": [
@@ -415,23 +418,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mysore_Palace_%281%29.jpg",
-      "alt": "Mysore photo 2"
+      "alt": "Mysore Palace",
+      "title": "Mysore Palace"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Chamundi_Temple_Mysore.jpg",
-      "alt": "Mysore photo 3"
+      "alt": "Chamundi Temple Mysore",
+      "title": "Chamundi Temple Mysore"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chamudeswari_Temple_%2C_Chamundi_Hills_-_Mysore.jpg",
-      "alt": "Mysore photo 4"
+      "alt": "Chamudeswari Temple , Chamundi Hills Mysore",
+      "title": "Chamudeswari Temple , Chamundi Hills Mysore"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Brindavan_Gardens.JPG",
-      "alt": "Mysore photo 5"
+      "alt": "Brindavan Gardens — Mysore",
+      "title": "Brindavan Gardens — Mysore"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/The_holy_Temple_Pond%2C_in_Mahabalipuram%2C_Tamil_Nadu_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Tamil Nadu temples"
+      "alt": "Tamil Nadu temples",
+      "title": "The Holy Temple Pond, In Mahabalipuram, Tamil Nadu — Mysore"
     }
   ],
   "faq": [

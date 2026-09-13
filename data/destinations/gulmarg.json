@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kashmir Valley",
   "type": "adventure",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Gulmarg — adventure base of Jammu & Kashmir",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maharani_Temple%2C_Gulmarg_2012-05-07.jpg",
@@ -214,7 +214,7 @@
     {
       "name": "Gulmarg Gondola",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Gulmarg Centre, Jammu & Kashmir",
       "entryFee": "₹1,700",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -228,12 +228,13 @@
         "https://images.pexels.com/photos/29983914/pexels-photo-29983914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/35464235/pexels-photo-35464235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/18049364/pexels-photo-18049364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Apharwat Peak",
       "category": "adventure",
-      "distance": "Gondola",
+      "distance": "Gondola near Gulmarg, Jammu & Kashmir",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -247,12 +248,13 @@
         "https://images.pexels.com/photos/20583478/pexels-photo-20583478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/14504861/pexels-photo-14504861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/35698731/pexels-photo-35698731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Gulmarg"
     },
     {
       "name": "Gulmarg Golf Course",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Gulmarg Centre, Jammu & Kashmir",
       "entryFee": "₹500",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -266,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Indian_Mountain_Images_%2825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6e/Indian_Mountain_Images_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/0b/Indian_Mountain_Images_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -416,23 +419,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Maharani_Temple%2C_Gulmarg_2012-05-07.jpg",
-      "alt": "Gulmarg in Gulmarg, Jammu & Kashmir - Maharani Temple at Gulmarg. – Himalaya hills are the home of Lord Shiva according"
+      "alt": "Maharani Temple, Gulmarg",
+      "title": "Maharani Temple, Gulmarg"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Gulmarg_Gondola%2C_Cable_Car.JPG",
-      "alt": "Gulmarg photo 2"
+      "alt": "Gulmarg Gondola, Cable Car",
+      "title": "Gulmarg Gondola, Cable Car"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Apharwat_Peak.JPG",
-      "alt": "Gulmarg photo 3"
+      "alt": "Apharwat Peak — Gulmarg",
+      "title": "Apharwat Peak — Gulmarg"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Apharwat_Right_Wing.jpg",
-      "alt": "Gulmarg photo 4"
+      "alt": "Apharwat Right Wing — Gulmarg",
+      "title": "Apharwat Right Wing — Gulmarg"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7f/The_Ancient_Maharani_Temple%28Gulmarg%2CKashmir%29_DivyaGupta_forWiki.jpg",
-      "alt": "Gulmarg photo 5"
+      "alt": "The Ancient Maharani Temple(Gulmarg,Kashmir) DivyaGupta ForWiki",
+      "title": "The Ancient Maharani Temple(Gulmarg,Kashmir) DivyaGupta ForWiki"
     }
   ],
   "faq": [

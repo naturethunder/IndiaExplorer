@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kangra",
   "type": "adventure",
-  "badge": "Popular",
+  "badge": "Historic Heritage",
   "tagline": "Bir Billing — adventure base of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Buddhist_Monastery_in_HIMACHAL_PRADESH_%28INDIA%29.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Paragliding",
       "Monasteries",
-      "Tea Gardens"
+      "Tea Gardens",
+      "Historic Monuments"
     ],
     "altitude": 1525,
     "rating": 4.6,
@@ -210,7 +211,7 @@
     {
       "name": "Billing Take-off",
       "category": "adventure",
-      "distance": "14 km",
+      "distance": "14 km from Bir Billing, Himachal Pradesh",
       "entryFee": "₹2,500",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/a/ae/Lockheed_ER-2_take_off_in_Costa_Rica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c7/Pipistrel_Taurus_G4_take-off_at_2011_Green_Flight_Challenge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/db/PhoEnix_take-off_at_2011_Green_Flight_Challenge_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "35–45 mins drive from Bir Billing"
     },
     {
       "name": "Bir Landing Site",
       "category": "adventure",
-      "distance": "Centre",
+      "distance": "In Bir Billing Centre, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/41/Space_Shuttle_Columbia_launching.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bir-Billing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Sherab Ling Monastery",
       "category": "spiritual",
-      "distance": "8 km",
+      "distance": "8 km from Bir Billing, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Palpung_in_Tibet.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/6d/Uncle_Sherab_2011_Dec_290.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/Khentin_Tai_Situ_Rinpoche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Bir Billing"
     }
   ],
   "itinerary": [
@@ -390,23 +394,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Buddhist_Monastery_in_HIMACHAL_PRADESH_%28INDIA%29.jpg",
-      "alt": "Bir Billing in Bir Billing, Himachal Pradesh - A beautiful monastery near BIR BILLING H.P. in the laps of Dhauladhar ran"
+      "alt": "Bir Billing in Bir Billing, Himachal Pradesh - A beautiful monastery near BIR BILLING H.P. in the laps of Dhauladhar ran",
+      "title": "Buddhist Monastery In HIMACHAL PRADESH (INDIA) — Bir Billing"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Pilot_on_a_paragliding_takeoff_at_Bir-Billing_%2801%29.JPG",
-      "alt": "Bir Billing photo 2"
+      "alt": "Pilot On A Paragliding Takeoff At Bir Billing",
+      "title": "Pilot On A Paragliding Takeoff At Bir Billing"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bir-Billing_%28HP%29%2C_India.jpg",
-      "alt": "Bir Billing photo 3"
+      "alt": "Bir Billing (HP), India",
+      "title": "Bir Billing (HP), India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bir-Billing.jpg",
-      "alt": "Bir Billing photo 4"
+      "alt": "Historic Monuments at Bir Billing",
+      "title": "Historic Monuments at Bir Billing"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/31/Catoptrophorus-semipalmatus-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Bir Billing — Catoptrophorus-semipalmatus-001"
+      "alt": "Bir Billing — Catoptrophorus-semipalmatus-001",
+      "title": "Catoptrophorus Semipalmatus 001 — Bir Billing"
     }
   ],
   "faq": [

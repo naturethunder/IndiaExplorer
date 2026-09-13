@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Hazara Falls — heritage city of Maharashtra",
+  "badge": "Cascading Waterfall",
+  "tagline": "Hazara Falls — scenic waterfall of Maharashtra",
   "heroImage": {
     "src": "https://images.pexels.com/photos/5204416/pexels-photo-5204416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "alt": "Hazara Falls, Maharashtra"
@@ -15,10 +15,10 @@
     "short": "Hajra Falls is a waterfall 191 km from Nagpur, 50 km from Gondia and close to the Gondia district in India.",
     "description": "Hajra Falls is a waterfall 191 km from Nagpur, 50 km from Gondia and close to the Gondia district in India. Hajra Falls, in Salekasa tehsil, is a tourist attraction during the rainy season. It is located 1 km from Darekasa railway station.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Cascading Waterfalls",
+      "Scenic Landscapes",
+      "Nature Trails",
+      "Lush Surroundings"
     ],
     "altitude": null,
     "rating": 4.7,
@@ -210,7 +210,7 @@
     {
       "name": "Salekasa",
       "category": "cultural",
-      "distance": "6 km",
+      "distance": "6 km from Hazara Falls, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flora_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flora_garden_morning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/64/Garden_panorma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Hazara Falls"
     },
     {
       "name": "Chandsuraj",
       "category": "cultural",
-      "distance": "7 km",
+      "distance": "7 km from Hazara Falls, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,7 +244,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/2e/101_Albright_Way.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Parliament%2C_east_gate_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/46/Farming_in_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Hazara Falls"
     }
   ],
   "itinerary": [
@@ -361,28 +363,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Nature Walks"
   ],
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/5204416/pexels-photo-5204416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Hazara Falls photo 2"
+      "alt": "Salekasa — Hazara Falls",
+      "title": "Salekasa — Hazara Falls"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kaghan_and_Naran_Valleys.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hazara Falls — Kaghan and Naran Valleys"
+      "alt": "Hazara Falls — Kaghan and Naran Valleys",
+      "title": "Kaghan And Naran Valleys — Hazara Falls"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Unseen_image_of_delhi_garden_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Gardens in India"
+      "alt": "Gardens in India",
+      "title": "Unseen Image Of Delhi Garden — Hazara Falls"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Heaven_on.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Gardens in India"
+      "alt": "Gardens in India",
+      "title": "Heaven On — Hazara Falls"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Intex_Aqua_Star_Power_20160810_103206.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Gardens in India"
+      "alt": "Intex Aqua Star Power",
+      "title": "Intex Aqua Star Power"
     }
   ],
   "faq": [

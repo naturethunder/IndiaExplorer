@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Naldurg Fort — heritage city of Maharashtra",
+  "badge": "Historic Fortress",
+  "tagline": "Naldurg Fort — historic fortress of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Main_Entrance%2C_Naldurg_fort.jpg",
     "alt": "Naldurg Fort, Maharashtra"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.4,
@@ -210,7 +210,7 @@
     {
       "name": "Naldurg",
       "category": "heritage",
-      "distance": "Town Centre",
+      "distance": "In Naldurg Fort Centre, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,7 +224,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/49/View_from_Upali_Buruj%2C_Naldurg_fort.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/f5/Details_of_a_room%2C_Naldurg_fort.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/a/a4/View_from_top_of_Upali_Buruj%2C_Naldurg_fort.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -352,28 +353,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Main_Entrance%2C_Naldurg_fort.jpg",
-      "alt": "Main entrance of Naldurg Fort in Maharashtra"
+      "alt": "Main entrance of Naldurg Fort in Maharashtra",
+      "title": "Main Entrance, Naldurg Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Naldurg_fort%2CIndia.jpg",
-      "alt": "Panoramic view of Naldurg Fort in India"
+      "alt": "Panoramic view of Naldurg Fort in India",
+      "title": "Naldurg Fort,India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Naldurg_Fort%2C_Outer_Walls.jpg",
-      "alt": "Outer stone walls of Naldurg Fort"
+      "alt": "Outer stone walls of Naldurg Fort",
+      "title": "Naldurg Fort, Outer Walls"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Naldurg_Fort%2C_Outer_Walls_and_bastions.jpg",
-      "alt": "Outer walls and bastions of Naldurg Fort"
+      "alt": "Outer walls and bastions of Naldurg Fort",
+      "title": "Naldurg Fort, Outer Walls And Bastions"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Near_inner_gate%2C_Naldurg_fort.jpg",
-      "alt": "Architecture near the inner gate of Naldurg Fort"
+      "alt": "Architecture near the inner gate of Naldurg Fort",
+      "title": "Near Inner Gate, Naldurg Fort"
     }
   ],
   "faq": [

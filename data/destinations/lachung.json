@@ -5,7 +5,7 @@
   "country": "India",
   "region": "North Sikkim",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Lachung — hill station of Sikkim",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridge_over_Lachung_River%2C_North_Sikkim.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Yumthang Valley",
       "Zero Point",
-      "Rhododendrons"
+      "Rhododendrons",
+      "Misty Hills"
     ],
     "altitude": 2700,
     "rating": 4.6,
@@ -210,7 +211,7 @@
     {
       "name": "Yumthang Valley",
       "category": "scenic",
-      "distance": "24 km",
+      "distance": "24 km from Lachung, Sikkim",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Trees_at_yumthang_valley_%286828773293%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_Breathtaking_Shivamoga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/fb/Thalacauveri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Lachung"
     },
     {
       "name": "Zero Point",
       "category": "scenic",
-      "distance": "40 km",
+      "distance": "40 km from Lachung, Sikkim",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/79/Zero-point_energy_v.s._motion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/aa/Hungary-02179_-_Zero_Kilometer_Stone_%2832611293645%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/93/Banglabandha--Zero_Point_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "2–3 hrs drive from Lachung"
     },
     {
       "name": "Lachung Monastery",
       "category": "spiritual",
-      "distance": "2 km",
+      "distance": "2 km from Lachung, Sikkim",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Lachung_Monastery%2C_Sikkim_India.jpg/1280px-Lachung_Monastery%2C_Sikkim_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/65/Gumpa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Young_girl%2C_Kimu%2C_carrying_a_birthday_cake_through_the_Lachung_Monastery%2C_Sikkim_LOC_8385171986.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Lachung"
     }
   ],
   "itinerary": [
@@ -390,23 +394,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridge_over_Lachung_River%2C_North_Sikkim.jpg",
-      "alt": "Lachung in Lachung, Sikkim - Images from 2010 Sikkim tour"
+      "alt": "Lachung in Lachung, Sikkim - Images from 2010 Sikkim tour",
+      "title": "Bridge Over Lachung River, North Sikkim"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/The_Yumthang_Valley_with_the_River_Lachung_Chu_-_panoramio.jpg",
-      "alt": "Lachung photo 2"
+      "alt": "The Yumthang Valley With The River Lachung Chu Panoramio",
+      "title": "The Yumthang Valley With The River Lachung Chu Panoramio"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Zeropoint.jpg",
-      "alt": "Lachung photo 3"
+      "alt": "Zeropoint — Lachung",
+      "title": "Zeropoint — Lachung"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/Zero_point_lachung.jpg",
-      "alt": "Lachung photo 4"
+      "alt": "Zero Point Lachung",
+      "title": "Zero Point Lachung"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Lachung_Monastery_Murals_Rinpoche.jpg",
-      "alt": "Lachung photo 5"
+      "alt": "Lachung Monastery Murals Rinpoche",
+      "title": "Lachung Monastery Murals Rinpoche"
     }
   ],
   "faq": [

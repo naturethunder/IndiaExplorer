@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Coromandel Coast",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Pondicherry — beach town of Puducherry",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Oriental_Scenery_Part_5_Fig_15.jpg",
@@ -210,7 +210,7 @@
     {
       "name": "Promenade Beach",
       "category": "beach",
-      "distance": "Centre",
+      "distance": "In Pondicherry Centre, Puducherry",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/0d/BASILICA_OF_SACRED_HEART_OF_JESUS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e1/The_Grotto_for_Sacred_Heart_of_Jesus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/2f/Cymbilabia_undulata_%28Lindl.%29_D.K.Liu_%26_Ming_H.Li_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Auroville Matrimandir",
       "category": "spiritual",
-      "distance": "12 km",
+      "distance": "12 km from Pondicherry, Puducherry",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +244,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e2/Basilica_of_the_Sacred_Heart_of_Jesus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/72/Basilica_of_the_Sacred_Heart_of_Jesus%2C_Pondicherry%2C_1907_%282%29_%2823662517608%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Basilica_of_the_Sacred_Heart_of_Jesus%2C_Pondicherry%2C_1907_%284%29_%2837466533516%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Pondicherry"
     },
     {
       "name": "French Quarter (White Town)",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Pondicherry Centre, Puducherry",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -262,7 +264,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/fa/Basilica_of_the_Sacred_Heart_of_Jesus%2C_Pondicherry%2C_1907_%281%29_%2837256415620%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f7/French_cafe_on_the_beach_in_Pondicherry_%286297402011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/be/On_the_roof_of_Kasha_Ki_Asha_in_Pondicherry_%286290972610%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -392,23 +395,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Oriental_Scenery_Part_5_Fig_15.jpg",
-      "alt": "Pondicherry - authentic heritage scenery"
+      "alt": "Pondicherry - authentic heritage scenery",
+      "title": "Oriental Scenery Part 5 Fig — Pondicherry"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sacred_Heart_of_Jesus_Basilica%2C_Pondicherry.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pondicherry — Puducherry landmark"
+      "alt": "Pondicherry — Puducherry landmark",
+      "title": "Sacred Heart Of Jesus Basilica, Pondicherry"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/SACRED_HEART_-_FIRST_BASILICA_OF_PUDUCHERRY.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pondicherry — Puducherry landmark"
+      "alt": "Pondicherry — Puducherry landmark",
+      "title": "SACRED HEART FIRST BASILICA OF PUDUCHERRY — Pondicherry"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Pondicherry_Panorama_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Pondicherry — Puducherry landmark"
+      "alt": "Pondicherry — Puducherry landmark",
+      "title": "Pondicherry Panorama"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Cymbilabia_undulata_%28Lindl.%29_D.K.Liu_%26_Ming_H.Li.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Flora of India"
+      "alt": "Flora of India",
+      "title": "Cymbilabia Undulata (Lindl.) D.K.Liu & Ming H.Li — Pondicherry"
     }
   ],
   "faq": [

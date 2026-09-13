@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Dang",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Saputara — hill station of Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Lake_Saputara.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Only Hill Station",
       "Lake",
-      "Tribal"
+      "Tribal",
+      "Tranquil Lake Waters"
     ],
     "altitude": 1000,
     "rating": 4.2,
@@ -215,7 +216,7 @@
     {
       "name": "Saputara Lake",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Saputara Centre, Gujarat",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kharkhara_Dam_Evening_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/48/Greenzone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/42/Brindavan_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Sunset Point",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Saputara, Gujarat",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Sh07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/ab/Sh39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e6/Small_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Saputara"
     },
     {
       "name": "Gira Waterfalls",
       "category": "nature",
-      "distance": "52 km",
+      "distance": "52 km from Saputara, Gujarat",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Mountains_malampuzha_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/10/Bilaspur_kota_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/df/Purulia_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1.5–2 hrs drive from Saputara"
     }
   ],
   "itinerary": [
@@ -416,23 +420,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Lake_Saputara.jpg",
-      "alt": "Saputara photo 2"
+      "alt": "Lake Saputara",
+      "title": "Lake Saputara"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Valley_view.jpg",
-      "alt": "Saputara photo 3"
+      "alt": "Valley View — Saputara",
+      "title": "Valley View — Saputara"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Saputara_-_YS.jpg",
-      "alt": "Saputara photo 4"
+      "alt": "Saputara YS",
+      "title": "Saputara YS"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Gira_waterfalls.jpg",
-      "alt": "Saputara photo 5"
+      "alt": "Gira Waterfalls — Saputara",
+      "title": "Gira Waterfalls — Saputara"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/On_the_way_to_Tehri_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dams in India"
+      "alt": "Dams in India",
+      "title": "On The Way To Tehri Dam — Saputara"
     }
   ],
   "faq": [

@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Chamba",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Dalhousie — hill station of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/St_John%27s_Church%2C_Dalhousie.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Colonial",
       "Khajjiar",
-      "Pines"
+      "Pines",
+      "Misty Hills"
     ],
     "altitude": 1970,
     "rating": 4.3,
@@ -210,7 +211,7 @@
     {
       "name": "Khajjiar",
       "category": "scenic",
-      "distance": "22 km",
+      "distance": "22 km from Dalhousie, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b3/CLOUDY_ROCKS_AND_NATURAL_BEAUTY_MARPHA_FORT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d1/CLOUDY_ROCKS_AND_NATURAL_BEAUTY_MARPHA_FORT_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/cc/GAJANTAK%2C_PANCHMUKHEE_SHIV_IN_MARPHA_FORT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Dalhousie"
     },
     {
       "name": "Panchpula",
       "category": "nature",
-      "distance": "3 km",
+      "distance": "3 km from Dalhousie, Himachal Pradesh",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/70/Astik_Baba_Mandir%2C_Nasirabad%2C_Sidhauli%2C_Sitapur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mahabodhi_Temple_Gaya_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/View_of_the_Temple_from_the_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Dalhousie"
     },
     {
       "name": "St. John’s Church",
       "category": "heritage",
-      "distance": "1 km",
+      "distance": "1 km from Dalhousie, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/St._JOHN%27S_CHURCH_CHURCH_OF_NORTH_INDIA_ESTD._1863.jpg/1280px-St._JOHN%27S_CHURCH_CHURCH_OF_NORTH_INDIA_ESTD._1863.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mahabodhi_Temple_Complex_-_Bodh_Gaya_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/08/Mahabodhi_Temple_Complex_-_Bodh_Gaya_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins walk / 3 min drive from Dalhousie"
     }
   ],
   "itinerary": [
@@ -391,23 +395,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/St_John%27s_Church%2C_Dalhousie.jpg",
-      "alt": "Dalhousie in Dalhousie, Himachal Pradesh - Built in 1863."
+      "alt": "Dalhousie in Dalhousie, Himachal Pradesh - Built in 1863.",
+      "title": "St John's Church, Dalhousie"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/KhajjiarDalhousie.jpg",
-      "alt": "Dalhousie photo 2"
+      "alt": "KhajjiarDalhousie",
+      "title": "KhajjiarDalhousie"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/St_John%27s_Episcopal_Stone_Church_on_Carleton_Stret%2C_built_in_1824_%28HS85-10-13241%29.jpg",
-      "alt": "Dalhousie photo 3"
+      "alt": "St. John’s Church — Dalhousie",
+      "title": "St. John’s Church — Dalhousie"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/St_John%27s_Episcopal_Stone_Church_on_Carleton_Stret%2C_built_in_1824_%28HS85-10-13241%29_original.tif",
-      "alt": "Dalhousie photo 4"
+      "alt": "Misty Hills at Dalhousie",
+      "title": "Misty Hills at Dalhousie"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Khajjiar_Dalhousie.jpg",
-      "alt": "Dalhousie photo 5"
+      "alt": "Khajjiar Dalhousie",
+      "title": "Khajjiar Dalhousie"
     }
   ],
   "faq": [

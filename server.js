@@ -109,7 +109,7 @@ const server = http.createServer((req, res) => {
     if (req.headers['if-none-match'] === etag) {
       res.writeHead(304, {
         'ETag': etag,
-        'Cache-Control': (ext === '.html' || ext === '.json') ? 'no-cache' : 'public, max-age=86400, stale-while-revalidate=3600',
+        'Cache-Control': (ext === '.html' || ext === '.json' || ext === '.js' || ext === '.css') ? 'no-cache, must-revalidate' : 'public, max-age=86400, stale-while-revalidate=3600',
         'Access-Control-Allow-Origin': '*',
       });
       res.end();

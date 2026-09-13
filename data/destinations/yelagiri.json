@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Vellore",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Yelagiri — hill station of Tamil Nadu",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nature_Park%2C_Yelagiri.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Quiet Hills",
       "Paragliding",
-      "Trekking"
+      "Trekking",
+      "Misty Hills"
     ],
     "altitude": 1110,
     "rating": 4.1,
@@ -215,7 +216,7 @@
     {
       "name": "Swamimalai Hills Trek",
       "category": "trekking",
-      "distance": "5 km",
+      "distance": "5 km from Yelagiri, Tamil Nadu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Melkote_trecking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/12/Thanjavur_yoganarasimha_perumal_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/42/Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Yelagiri"
     },
     {
       "name": "Punganoor Lake",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Yelagiri Centre, Tamil Nadu",
       "entryFee": "₹15",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f3/Close_up_view_of_the_Gopuram_at_Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7e/Head_Priest_of_Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sunset_view_Sri_YogaNarasimha_Temple_%2C_Melkote.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Jalagamparai Waterfalls",
       "category": "nature",
-      "distance": "8 km",
+      "distance": "8 km from Yelagiri, Tamil Nadu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Melkoute_Yoga_Narasimha_temple-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/53/Melkoute-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/47/Sri_Veera_Narayana_Swamy_Temple_-_Belavadi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Yelagiri"
     }
   ],
   "itinerary": [
@@ -395,23 +399,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nature_Park%2C_Yelagiri.jpg",
-      "alt": "Yelagiri photo 2"
+      "alt": "Nature Park, Yelagiri",
+      "title": "Nature Park, Yelagiri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Weird_fruits_%2834007052385%29.jpg",
-      "alt": "Yelagiri photo 3"
+      "alt": "Weird Fruits — Yelagiri",
+      "title": "Weird Fruits — Yelagiri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Rose_apples_%2833194264723%29.jpg",
-      "alt": "Yelagiri photo 4"
+      "alt": "Rose Apples — Yelagiri",
+      "title": "Rose Apples — Yelagiri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Weird_fruits_%2833194272143%29.jpg",
-      "alt": "Yelagiri photo 5"
+      "alt": "Weird Fruits — Yelagiri",
+      "title": "Weird Fruits — Yelagiri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Melkote_ramjala_path.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Yoganarasimha temple Devarayanadurga"
+      "alt": "Yoganarasimha temple Devarayanadurga",
+      "title": "Melkote Ramjala Path — Yelagiri"
     }
   ],
   "faq": [

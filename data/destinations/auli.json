@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Garhwal",
   "type": "adventure",
-  "badge": "Popular",
+  "badge": "Historic Fortress",
   "tagline": "Auli — adventure base of Uttarakhand",
   "heroImage": {
     "src": "https://images.unsplash.com/photo-1623727705498-51a6a4154384?auto=format&fit=crop&w=1920&q=85",
@@ -17,7 +17,8 @@
     "features": [
       "Skiing",
       "Cable Car",
-      "Nanda Devi Views"
+      "Nanda Devi Views",
+      "Historic Fortress"
     ],
     "altitude": 2800,
     "rating": 4.6,
@@ -215,7 +216,7 @@
     {
       "name": "Auli Ski Slopes",
       "category": "adventure",
-      "distance": "Resort",
+      "distance": "Resort near Auli, Uttarakhand",
       "entryFee": "₹1,500",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -229,12 +230,13 @@
         "https://images.unsplash.com/photo-1579095152121-eebb8bc56176?auto=format&fit=crop&w=1920&q=85",
         "https://images.unsplash.com/photo-1611767554660-7df5b019cde8?auto=format&fit=crop&w=1920&q=85",
         "https://images.pexels.com/photos/19534384/pexels-photo-19534384.jpeg?auto=compress&cs=tinysrgb&w=1920"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Auli"
     },
     {
       "name": "Auli Ropeway",
       "category": "scenic",
-      "distance": "Joshimath",
+      "distance": "Joshimath near Auli, Uttarakhand",
       "entryFee": "₹1,000",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -248,12 +250,13 @@
         "https://images.pexels.com/photos/36951965/pexels-photo-36951965.jpeg?auto=compress&cs=tinysrgb&w=1920",
         "https://images.unsplash.com/photo-1742281413791-f3fe80e7f3bf?auto=format&fit=crop&w=1920&q=85",
         "https://images.pexels.com/photos/17515600/pexels-photo-17515600.jpeg?auto=compress&cs=tinysrgb&w=1920"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Auli"
     },
     {
       "name": "Gurso Bugyal",
       "category": "trekking",
-      "distance": "3 km",
+      "distance": "3 km from Auli, Uttarakhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -267,7 +270,8 @@
         "https://images.pexels.com/photos/38431536/pexels-photo-38431536.jpeg?auto=compress&cs=tinysrgb&w=1920",
         "https://images.pexels.com/photos/30591146/pexels-photo-30591146.jpeg?auto=compress&cs=tinysrgb&w=1920",
         "https://images.pexels.com/photos/7719327/pexels-photo-7719327.jpeg?auto=compress&cs=tinysrgb&w=1920"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Auli"
     }
   ],
   "itinerary": [
@@ -396,23 +400,28 @@
   "gallery": [
     {
       "src": "https://images.unsplash.com/photo-1623727705498-51a6a4154384?auto=format&fit=crop&w=1920&q=85",
-      "alt": "Snow-capped Himalayan mountain peaks and alpine slopes in Auli, Uttarakhand"
+      "alt": "Snow-capped Himalayan mountain peaks and alpine slopes in Auli, Uttarakhand",
+      "title": "Auli Ski Slopes — Auli"
     },
     {
       "src": "https://images.pexels.com/photos/8735478/pexels-photo-8735478.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      "alt": "Breathtaking view of Nanda Devi peak and snow ranges reflected in Auli lake, Uttarakhand"
+      "alt": "Breathtaking view of Nanda Devi peak and snow ranges reflected in Auli lake, Uttarakhand",
+      "title": "Auli Ropeway — Auli"
     },
     {
       "src": "https://images.pexels.com/photos/13001739/pexels-photo-13001739.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      "alt": "Picturesque winter landscape of Auli slopes with pristine snow, Himalayan backdrop and alpine huts"
+      "alt": "Picturesque winter landscape of Auli slopes with pristine snow, Himalayan backdrop and alpine huts",
+      "title": "Gurso Bugyal — Auli"
     },
     {
       "src": "https://images.unsplash.com/photo-1550854317-10deac0a98a9?auto=format&fit=crop&w=1920&q=85",
-      "alt": "Panoramic winter vista of the Garhwal Himalayas from the high-altitude ski slopes of Auli"
+      "alt": "Panoramic winter vista of the Garhwal Himalayas from the high-altitude ski slopes of Auli",
+      "title": "Panoramic winter vista of the Garhwal Himalayas from the high — Auli"
     },
     {
       "src": "https://images.pexels.com/photos/32456291/pexels-photo-32456291.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      "alt": "Serene alpine lake surrounded by snow-covered Himalayan peaks in Auli"
+      "alt": "Serene alpine lake surrounded by snow-covered Himalayan peaks in Auli",
+      "title": "Serene alpine lake surrounded by snow — Auli"
     }
   ],
   "faq": [

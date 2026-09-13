@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Manikgad — heritage city of Maharashtra",
+  "badge": "Coastal Fortress",
+  "tagline": "Manikgad — historic fortress of Maharashtra",
   "heroImage": {
     "src": "https://images.pexels.com/photos/5406961/pexels-photo-5406961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "alt": "A foggy view of Matheran's lush and vibrant mountain landscape with yellow flora."
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.8,
@@ -210,7 +210,7 @@
     {
       "name": "Ambivali Tarf Tungaratan",
       "category": "scenic",
-      "distance": "7 km",
+      "distance": "7 km from Manikgad, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -233,12 +233,13 @@
           "src": "https://images.pexels.com/photos/35706953/pexels-photo-35706953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "Peaceful rice paddy landscape featuring a solitary tree and village background under a ..."
         }
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Manikgad"
     },
     {
       "name": "Rasayani",
       "category": "scenic",
-      "distance": "8 km",
+      "distance": "8 km from Manikgad, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -261,12 +262,13 @@
           "src": "https://images.pexels.com/photos/26988585/pexels-photo-26988585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "Beautiful mountain landscape with a flowing stream and vibrant green foliage."
         }
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Manikgad"
     },
     {
       "name": "Mohpada",
       "category": "scenic",
-      "distance": "9 km",
+      "distance": "9 km from Manikgad, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -289,7 +291,8 @@
           "src": "https://images.pexels.com/photos/32397396/pexels-photo-32397396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "A picturesque view of lush green hills and misty clouds in Mahabaleshwar, India."
         }
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Manikgad"
     }
   ],
   "itinerary": [
@@ -391,28 +394,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/5406961/pexels-photo-5406961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "A foggy view of Matheran's lush and vibrant mountain landscape with yellow flora."
+      "alt": "A foggy view of Matheran's lush and vibrant mountain landscape with yellow flora.",
+      "title": "Ambivali Tarf Tungaratan — Manikgad"
     },
     {
       "src": "https://images.pexels.com/photos/12753026/pexels-photo-12753026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "A person in a red jacket relaxes on a mountain top with a breathtaking view of cliffs a..."
+      "alt": "A person in a red jacket relaxes on a mountain top with a breathtaking view of cliffs a...",
+      "title": "Rasayani — Manikgad"
     },
     {
       "src": "https://images.pexels.com/photos/28529441/pexels-photo-28529441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "People hiking on a lush green hill with an observation deck. Perfect for nature and tra..."
+      "alt": "People hiking on a lush green hill with an observation deck. Perfect for nature and tra...",
+      "title": "Mohpada — Manikgad"
     },
     {
       "src": "https://images.pexels.com/photos/14711535/pexels-photo-14711535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Serene landscape of rolling green hills beneath a cloudy sky in Dhom, Maharashtra, India."
+      "alt": "Serene landscape of rolling green hills beneath a cloudy sky in Dhom, Maharashtra, India.",
+      "title": "Historic Ramparts at Manikgad"
     },
     {
       "src": "https://images.pexels.com/photos/16729040/pexels-photo-16729040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Breathtaking view of mountainous landscape in Chikkamagaluru during sunset."
+      "alt": "Breathtaking view of mountainous landscape in Chikkamagaluru during sunset.",
+      "title": "Panoramic Heritage Landscape at Manikgad"
     }
   ],
   "faq": [

@@ -153,7 +153,7 @@ function cleanUrl(u) {
 }
 
 function initGlobalCollisions() {
-  console.log('Building repository-wide collision set from all 2,392 destinations...');
+  console.log('Building repository-wide collision set from all 2,393 destinations...');
   const files = fs.readdirSync(destDir).filter(f => f.endsWith('.json') && f !== 'index.json');
   for (const f of files) {
     if (TARGETS.includes(f)) continue; // ignore the 6 target files

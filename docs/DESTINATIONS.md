@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-09-12.
+> Last generated: 2026-09-13.
 
 **36 states/UTs · 2,393 destinations**
 
@@ -308,7 +308,7 @@
 | **New Delhi** | Heritage | Jan–Mar, Oct–Dec | ₹700 – ₹28,000 |
 | **Red Fort** | Heritage | Jan–Mar, Oct–Dec | ₹700 – ₹28,000 |
 | **St. James' Orthodox Church, Mayur Vihar Phase-3, Delhi** | Spiritual | Jan–Mar, Oct–Dec | ₹500 – ₹28,000 |
-| **St. Sebastian's Church,** | Spiritual | Jan–Mar, Oct–Dec | ₹500 – ₹28,000 |
+| **St. Sebastian's Church** | Spiritual | Jan–Mar, Oct–Dec | ₹500 – ₹28,000 |
 
 ## Goa
 

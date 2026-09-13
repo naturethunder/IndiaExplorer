@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Coromandel Coast",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Konark — heritage city of Odisha",
+  "badge": "Coastal Beach",
+  "tagline": "Scenic Coastal Beach & Ocean Horizons in Odisha",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg",
     "alt": "Konark, Odisha"
@@ -17,7 +17,8 @@
     "features": [
       "Sun Temple",
       "Chariot",
-      "UNESCO"
+      "UNESCO",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -211,7 +212,7 @@
     {
       "name": "Konark Sun Temple",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Konark Centre, Odisha",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -225,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/Colvale-_Tar_vaddo_kopel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6a/Kursa_vaddachem_kopel-Colvale.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/20/St._Francis_Xavier_Firgoz%2C_Velim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Chandrabhaga Beach",
       "category": "beach",
-      "distance": "3 km",
+      "distance": "3 km from Konark, Odisha",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -244,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Regina_Martyrum_Church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d1/Milagris_church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvim_church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Konark"
     },
     {
       "name": "ASI Konark Museum",
       "category": "cultural",
-      "distance": "Centre",
+      "distance": "In Konark Centre, Odisha",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -263,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/46/Utorda_Church_%28Our_Lady_of_Lourdes%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Khampri_khuris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/cd/Our_lady_of_piety.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -392,23 +396,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg",
-      "alt": "Konark in Konark, Odisha - This is a wheel engraved in the 13th century built Konark Sun Temple in Orissa, India. The te"
+      "alt": "Konark in Konark, Odisha - This is a wheel engraved in the 13th century built Konark Sun Temple in Orissa, India. The te",
+      "title": "Odisha — Konark"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg",
-      "alt": "Konark photo 2"
+      "alt": "Sun Temple Main Structure, Konark, Orissa",
+      "title": "Sun Temple Main Structure, Konark, Orissa"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Beach_of_Konark_02.jpg",
-      "alt": "Konark photo 3"
+      "alt": "Beach Of Konark",
+      "title": "Beach Of Konark"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Beach_of_Konark_01.jpg",
-      "alt": "Konark photo 4"
+      "alt": "Beach Of Konark",
+      "title": "Beach Of Konark"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Boita_-_Konark_Museum.jpg",
-      "alt": "Konark photo 5"
+      "alt": "Boita Konark Museum",
+      "title": "Boita Konark Museum"
     }
   ],
   "faq": [

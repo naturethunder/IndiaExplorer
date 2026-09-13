@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Sawai Madhopur",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Ranthambore — wildlife reserve of Rajasthan",
+  "badge": "Historic Fortress",
+  "tagline": "Historic Fortress & Ancient Ramparts in Rajasthan",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Osiya-temple_%26_architecture_02.jpg",
     "alt": "Ranthambore, Rajasthan"
@@ -213,7 +213,7 @@
     {
       "name": "Tiger Safari (Zone 1-6)",
       "category": "wildlife",
-      "distance": "Park",
+      "distance": "Park near Ranthambore, Rajasthan",
       "entryFee": "₹1,500",
       "timings": "Varies by season",
       "duration": "3 hrs",
@@ -227,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tiger_Safari.jpg/1280px-Tiger_Safari.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/A_tiger_at_Ranthambore_National_Park_%282016%29_4.jpg/1280px-A_tiger_at_Ranthambore_National_Park_%282016%29_4.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/d/d7/A_view_of_temple_before_reaching_to_it.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Ranthambore"
     },
     {
       "name": "Ranthambore Fort",
       "category": "heritage",
-      "distance": "12 km",
+      "distance": "12 km from Ranthambore, Rajasthan",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -246,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mondrothuruthu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/Blue_hope.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a7/Panshet_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Ranthambore"
     },
     {
       "name": "Padam Talao",
       "category": "scenic",
-      "distance": "Park",
+      "distance": "Park near Ranthambore, Rajasthan",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -265,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Natural_vs_man-made.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sindhudurg_fort_and_boats.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/85/Right_Dike_Hirakud.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Ranthambore"
     }
   ],
   "itinerary": [
@@ -395,23 +398,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Osiya-temple_%26_architecture_02.jpg",
-      "alt": "Ranthambore in Rajasthan - The temple of Osiya-Rajasthan"
+      "alt": "Ranthambore in Rajasthan - The temple of Osiya-Rajasthan",
+      "title": "Osiya Temple & Architecture — Ranthambore"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Ranthambore_Fort%2C_Built.JPG",
-      "alt": "Ranthambore photo 2"
+      "alt": "Ranthambore Fort, Built",
+      "title": "Ranthambore Fort, Built"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Padam_Talao_Lake%2C_Ranthambore_National_Park_%282014%29.jpg",
-      "alt": "Ranthambore photo 3"
+      "alt": "Padam Talao Lake, Ranthambore National Park",
+      "title": "Padam Talao Lake, Ranthambore National Park"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Padam_Talao.jpg",
-      "alt": "Ranthambore photo 4"
+      "alt": "Padam Talao — Ranthambore",
+      "title": "Padam Talao — Ranthambore"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Center_beauty_of_ganga_river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Boats in India"
+      "alt": "Boats in India",
+      "title": "Center Beauty Of Ganga River — Ranthambore"
     }
   ],
   "faq": [

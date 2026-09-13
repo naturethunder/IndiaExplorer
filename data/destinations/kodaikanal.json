@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Palani Hills",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Bird Sanctuary",
   "tagline": "Kodaikanal — hill station of Tamil Nadu",
   "heroImage": {
     "src": "https://images.pexels.com/photos/9253697/pexels-photo-9253697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -18,7 +18,8 @@
     "features": [
       "Star Lake",
       "Pillar Rocks",
-      "Forests"
+      "Forests",
+      "Wildlife Habitat"
     ],
     "altitude": 2133,
     "rating": 4.5,
@@ -216,7 +217,7 @@
     {
       "name": "Kodai Lake",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Kodaikanal Centre, Tamil Nadu",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -231,12 +232,13 @@
         "https://images.pexels.com/photos/37309039/pexels-photo-37309039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/9411150/pexels-photo-9411150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ],
-      "cover": "https://images.pexels.com/photos/35761660/pexels-photo-35761660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "cover": "https://images.pexels.com/photos/35761660/pexels-photo-35761660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Pillar Rocks",
       "category": "scenic",
-      "distance": "7 km",
+      "distance": "7 km from Kodaikanal, Tamil Nadu",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -251,12 +253,13 @@
         "https://images.pexels.com/photos/355482/pexels-photo-355482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/1801/rocks-fog-path-foggy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ],
-      "cover": "https://images.pexels.com/photos/15448239/pexels-photo-15448239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "cover": "https://images.pexels.com/photos/15448239/pexels-photo-15448239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "travelTime": "25–35 mins drive from Kodaikanal"
     },
     {
       "name": "Coaker’s Walk",
       "category": "scenic",
-      "distance": "1 km",
+      "distance": "1 km from Kodaikanal, Tamil Nadu",
       "entryFee": "₹10",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -271,7 +274,8 @@
         "https://images.pexels.com/photos/37026801/pexels-photo-37026801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/5320849/pexels-photo-5320849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ],
-      "cover": "https://images.pexels.com/photos/11089921/pexels-photo-11089921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "cover": "https://images.pexels.com/photos/11089921/pexels-photo-11089921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "travelTime": "5–10 mins walk / 3 min drive from Kodaikanal"
     }
   ],
   "itinerary": [
@@ -399,27 +403,32 @@
     {
       "src": "https://images.pexels.com/photos/9253697/pexels-photo-9253697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "alt": "Monochrome view of an abandoned wooden dock at Kodaikanal Lake amidst serene landscapes.",
-      "caption": "Monochrome view of an abandoned wooden dock at Kodaikanal Lake amidst serene landscapes."
+      "caption": "Monochrome view of an abandoned wooden dock at Kodaikanal Lake amidst serene landscapes.",
+      "title": "Kodai Lake — Kodaikanal"
     },
     {
       "src": "https://images.pexels.com/photos/33738013/pexels-photo-33738013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "alt": "Dramatic black and white view of tall forest trees reaching towards the sky.",
-      "caption": "Dramatic black and white view of tall forest trees reaching towards the sky."
+      "caption": "Dramatic black and white view of tall forest trees reaching towards the sky.",
+      "title": "Pillar Rocks — Kodaikanal"
     },
     {
       "src": "https://images.pexels.com/photos/30335691/pexels-photo-30335691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "alt": "Scenic view of green mountains with clouds and sunlight creating a tranquil atmosphere.",
-      "caption": "Scenic view of green mountains with clouds and sunlight creating a tranquil atmosphere."
+      "caption": "Scenic view of green mountains with clouds and sunlight creating a tranquil atmosphere.",
+      "title": "Coaker’s Walk — Kodaikanal"
     },
     {
       "src": "https://images.pexels.com/photos/12791178/pexels-photo-12791178.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "alt": "A breathtaking aerial shot of Kodaikanal's lush countryside and colorful village, depicting serene rural life.",
-      "caption": "A breathtaking aerial shot of Kodaikanal's lush countryside and colorful village, depicting serene rural life."
+      "caption": "A breathtaking aerial shot of Kodaikanal's lush countryside and colorful village, depicting serene rural life.",
+      "title": "Wildlife Habitat at Kodaikanal"
     },
     {
       "src": "https://images.pexels.com/photos/9411140/pexels-photo-9411140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "alt": "Beautiful cascading waterfall in the vibrant forest of Kodaikanal, India, showcasing nature's serene beauty.",
-      "caption": "Beautiful cascading waterfall in the vibrant forest of Kodaikanal, India, showcasing nature's serene beauty."
+      "caption": "Beautiful cascading waterfall in the vibrant forest of Kodaikanal, India, showcasing nature's serene beauty.",
+      "title": "Golden Sunlit Ridge Vista at Kodaikanal"
     }
   ],
   "faq": [

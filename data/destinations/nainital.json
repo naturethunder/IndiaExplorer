@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kumaon",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Nainital — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg",
@@ -211,7 +211,7 @@
     {
       "name": "Naini Lake",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Nainital Centre, Uttarakhand",
       "entryFee": "₹210",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -225,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/27/StoneChariot-Hampi-Karnataka-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hampi%2C_India%2C_Watch_Tower%2C_The_Zenana_Enclosure%2C_Vijayanagara_Empire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hampi%2C_India%2C_Night_in_Hampi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Naina Devi Temple",
       "category": "spiritual",
-      "distance": "Town Centre",
+      "distance": "In Nainital Centre, Uttarakhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -244,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hampi_group_of_monuments_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/85/HAMPI_KARNATAKA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/25/Hampi_-_King%27s_Palace_-_Throne_Platform_-_Relief_-_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Snow View Point",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Nainital, Uttarakhand",
       "entryFee": "₹300",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -263,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Snow_View_Point%2C_Nainital.jpg/1280px-Snow_View_Point%2C_Nainital.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fb/Hampi_in_karnataka_is_a_natural_heritage_site.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/86/Hampi%2C_Karnataka%2C_India_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Nainital"
     }
   ],
   "itinerary": [
@@ -392,23 +395,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg",
-      "alt": "Nainital in Nainital, Uttarakhand - Governor’s House also known Raj Bhavan and formerly, Government House was built in 1"
+      "alt": "Nainital in Nainital, Uttarakhand - Governor’s House also known Raj Bhavan and formerly, Government House was built in 1",
+      "title": "Governor’s House, Nainital, Uttarakhand, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Nainital_Panorama_from_Naini_Lake.jpg",
-      "alt": "Nainital photo 2"
+      "alt": "Nainital Panorama From Naini Lake",
+      "title": "Nainital Panorama From Naini Lake"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Naina_Devi_Temple%2C_Nainital.jpg",
-      "alt": "Nainital photo 3"
+      "alt": "Naina Devi Temple, Nainital",
+      "title": "Naina Devi Temple, Nainital"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Naina_Devi_Temple-Nainital.jpg",
-      "alt": "Nainital photo 4"
+      "alt": "Naina Devi Temple Nainital",
+      "title": "Naina Devi Temple Nainital"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/View_of_Nainital_from_Snow_View_Point.jpg",
-      "alt": "Nainital photo 5"
+      "alt": "View Of Nainital From Snow View Point",
+      "title": "View Of Nainital From Snow View Point"
     }
   ],
   "faq": [

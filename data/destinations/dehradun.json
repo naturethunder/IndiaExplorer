@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Doon Valley",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Rock-Cut Caves",
   "tagline": "Dehradun — hill station of Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Guchu_Pani_Robbers_Cave_ate_Dehradun.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Robbers Cave",
       "Forest Research",
-      "Gateway"
+      "Gateway",
+      "Rock-Cut Architecture"
     ],
     "altitude": 640,
     "rating": 4.2,
@@ -213,7 +214,7 @@
     {
       "name": "Robber’s Cave (Gucchupani)",
       "category": "nature",
-      "distance": "8 km",
+      "distance": "8 km from Dehradun, Uttarakhand",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -227,12 +228,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hidimba_Devi_Temple-Manali-Himachal_pradesh-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/10/Hidimba_Devi_Temple-Manali_Kullu_district-Himachal_Pradesh-DSC_0211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Hidimba_Devi_Temple-Manali_Kullu_district-Himachal_Pradesh-DSC_0207.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Dehradun"
     },
     {
       "name": "Forest Research Institute",
       "category": "heritage",
-      "distance": "7 km",
+      "distance": "7 km from Dehradun, Uttarakhand",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -246,12 +248,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_at_Sahastradhara_v2.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sahastradhara_fun_spot_connected_with_cable_car.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/Masroor-Kangra-Himachal-R16_02706.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Dehradun"
     },
     {
       "name": "Sahastradhara",
       "category": "nature",
-      "distance": "11 km",
+      "distance": "11 km from Dehradun, Uttarakhand",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -265,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/5/50/View_at_Sahastradhara_v1.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_at_Sahastradhara_v2.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sahastradhara_fun_spot_connected_with_cable_car.jpg"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Dehradun"
     }
   ],
   "itinerary": [
@@ -393,23 +397,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Guchu_Pani_Robbers_Cave_ate_Dehradun.jpg",
-      "alt": "Dehradun photo 2"
+      "alt": "Guchu Pani Robbers Cave Ate Dehradun",
+      "title": "Guchu Pani Robbers Cave Ate Dehradun"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Forest_Research_Institute_campus%2C_Dehradun%2C_India.jpg",
-      "alt": "Dehradun photo 3"
+      "alt": "Forest Research Institute Campus, Dehradun, India",
+      "title": "Forest Research Institute Campus, Dehradun, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Forest_Research_Institute_in_Dehradun_05.jpg",
-      "alt": "Dehradun photo 4"
+      "alt": "Forest Research Institute In Dehradun",
+      "title": "Forest Research Institute In Dehradun"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/View_at_Sahastradhara_v1.jpg",
-      "alt": "Dehradun photo 5"
+      "alt": "View At Sahastradhara V1 — Dehradun",
+      "title": "View At Sahastradhara V1 — Dehradun"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Hidimba_Devi_Temple-Manali-Himachal_pradesh-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Temples and monuments of Himachal Pradesh"
+      "alt": "Temples and monuments of Himachal Pradesh",
+      "title": "Hidimba Devi Temple Manali Himachal Pradesh 1 — Dehradun"
     }
   ],
   "faq": [

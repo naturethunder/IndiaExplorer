@@ -1,7 +1,7 @@
 # Search Engine Architecture & Enhancements
 
-**Date:** 2026-09-06 (Phase 28 original) | Last updated: 2026-09-12 (Phase 38)
-**Milestone:** Phase 28 — Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul | Phase 38 — Dual-Path Stay Indexing & 2,393 Destinations Rebuild
+**Date:** 2026-09-06 (Phase 28 original) | Last updated: 2026-09-14 (Phase 47 rev-7)
+**Milestone:** Phase 28 — Universal Space-Agnostic, Multi-Word, and Relevance-Ranked Search Engine Overhaul | Phase 38 — Dual-Path Stay Indexing & 2,393 Destinations Rebuild | Phase 47 — Liquid Pearl Glass Autocomplete & High-Contrast Light Mode Dropdown Integration
 
 ## Problem Solved
 
@@ -26,7 +26,7 @@ All search functionality across ExploreDesh is powered by a high-performance, pu
     - Destination Slug
     - State & Region
     - Category / Type
-    - All 14,021 Attraction Places across 2,393 Destinations
+    - All 14,013 Attraction Places across 2,393 Destinations
     - Feature tags and short overview descriptions.
 
 ### 2. Matching Capabilities

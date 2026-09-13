@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Eastern Ghats",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Visakhapatnam — beach town of Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sunrise_near_Thotlakonda_beach_10.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Beaches",
       "Submarine",
-      "Araku Nearby"
+      "Araku Nearby",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.4,
@@ -209,7 +210,7 @@
     {
       "name": "RK Beach",
       "category": "beach",
-      "distance": "Centre",
+      "distance": "In Visakhapatnam Centre, Andhra Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -223,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b6/Visakhapatnam_port_from_RK_beach_at_night.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gowthama_Buddha_Statue_at_RK_Beach_Visakhapatnam_03.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/ed/Sweetpan_at_RK_Beach_Visakhapatnam_02.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Kailasagiri",
       "category": "scenic",
-      "distance": "8 km",
+      "distance": "8 km from Visakhapatnam, Andhra Pradesh",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -242,12 +244,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_1.jpg/1280px-Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_1.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Yoga_centre_on_Kailasagiri_hill_%28May_2019%29.jpg/1280px-Yoga_centre_on_Kailasagiri_hill_%28May_2019%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/c/ce/Sculpture_park_on_Kailasagiri%2C_Visakhapatnam_%28May_2019%29_2.jpg"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Visakhapatnam"
     },
     {
       "name": "Borra Caves",
       "category": "nature",
-      "distance": "90 km",
+      "distance": "90 km from Visakhapatnam, Andhra Pradesh",
       "entryFee": "₹60",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -261,7 +264,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Borra_caves_1.jpg/1280px-Borra_caves_1.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Borra_caves_2.jpg/1280px-Borra_caves_2.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/7/70/Borra_Cave.jpg"
-      ]
+      ],
+      "travelTime": "2–3 hrs drive from Visakhapatnam"
     }
   ],
   "itinerary": [
@@ -411,23 +415,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sunrise_near_Thotlakonda_beach_10.jpg",
-      "alt": "Visakhapatnam in Visakhapatnam, Andhra Pradesh - Sunrise near Thotlakonda beach"
+      "alt": "Visakhapatnam in Visakhapatnam, Andhra Pradesh - Sunrise near Thotlakonda beach",
+      "title": "Sunrise Near Thotlakonda Beach — Visakhapatnam"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Visakhapatnam_port_from_RK_beach_at_night.jpg",
-      "alt": "Visakhapatnam photo 2"
+      "alt": "Visakhapatnam Port From RK Beach At Night",
+      "title": "Visakhapatnam Port From RK Beach At Night"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/INS_Tarmugli_%28T91%29_near_Visakhapatnam_port.jpg",
-      "alt": "Visakhapatnam photo 3"
+      "alt": "INS Tarmugli (T91) Near Visakhapatnam Port",
+      "title": "INS Tarmugli (T91) Near Visakhapatnam Port"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Sacred_Heart_Church_in_Visakhapatnam%2C_Andhra_Pradesh_01.jpg",
-      "alt": "Visakhapatnam photo 4"
+      "alt": "Sacred Heart Church In Visakhapatnam, Andhra Pradesh",
+      "title": "Sacred Heart Church In Visakhapatnam, Andhra Pradesh"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/23/Jurassic_Statues_at_RK_Beach_Visakhapatnam_05.jpg",
-      "alt": "Visakhapatnam photo 5"
+      "alt": "Jurassic Statues At RK Beach Visakhapatnam",
+      "title": "Jurassic Statues At RK Beach Visakhapatnam"
     }
   ],
   "faq": [

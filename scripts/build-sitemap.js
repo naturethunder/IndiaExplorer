@@ -1,8 +1,13 @@
 #!/usr/bin/env node
 /**
- * build-sitemap.js — generate Google-compliant sitemap.xml with Image Sitemap extensions.
- * Emits static pages + filter landings + all 2,388 destinations with <image:image> blocks
- * for hero & gallery photos to rank in Google Images, Discover, and Web Search.
+ * build-sitemap.js — generate Google-compliant Sitemap Index & modular sub-sitemaps
+ * with Google Image Sitemap extensions.
+ *
+ * Emits:
+ *   - sitemap.xml (Master Sitemap Index linking to sub-sitemaps)
+ *   - sitemap-main.xml (Static core pages: Home, Catalogue, Finder, About, Contact)
+ *   - sitemap-states.xml (State landings, category/type landings, and monthly guides)
+ *   - sitemap-destinations-<n>.xml (Chunked destination detail guides with <image:image> blocks)
  *
  * Usage: node scripts/build-sitemap.js
  */
@@ -14,6 +19,9 @@ const ORIGIN = (process.env.SITE_ORIGIN || 'https://exploredesh.com').replace(/\
 const DEST_DIR = path.join(ROOT, 'data', 'destinations');
 const idx = JSON.parse(fs.readFileSync(path.join(DEST_DIR, 'index.json'), 'utf8'));
 
+const TODAY = new Date().toISOString().split('T')[0];
+const DESTINATIONS_PER_CHUNK = 1000;
+
 // Static pages with crawl priorities.
 const STATIC = [
   { loc: '', priority: '1.0', changefreq: 'weekly' },
@@ -24,12 +32,18 @@ const STATIC = [
 ];
 
 function xmlEscape(s) {
-  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
 }
 
-function urlEntry(loc, priority, changefreq, images = []) {
+function urlEntry(loc, priority, changefreq, images = [], lastmod = TODAY) {
   let xml = '  <url>\n' +
     '    <loc>' + xmlEscape(ORIGIN + '/' + loc) + '</loc>\n' +
+    '    <lastmod>' + lastmod + '</lastmod>\n' +
     '    <changefreq>' + changefreq + '</changefreq>\n' +
     '    <priority>' + priority + '</priority>\n';
 
@@ -48,37 +62,74 @@ function urlEntry(loc, priority, changefreq, images = []) {
   return xml;
 }
 
-const urls = [];
-STATIC.forEach(function (s) { urls.push(urlEntry(s.loc, s.priority, s.changefreq)); });
+function wrapUrlset(entries) {
+  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' +
+    '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
+    entries.join('\n') + '\n' +
+    '</urlset>\n';
+}
 
-// State landing pages
-idx.meta.states.forEach(function (state) {
-  const destinationCount = idx.destinations.filter(function (destination) { return destination.state === state; }).length;
+function wrapSitemapIndex(sitemapLocs) {
+  const entries = sitemapLocs.map(loc =>
+    '  <sitemap>\n' +
+    '    <loc>' + xmlEscape(ORIGIN + '/' + loc) + '</loc>\n' +
+    '    <lastmod>' + TODAY + '</lastmod>\n' +
+    '  </sitemap>'
+  ).join('\n');
+
+  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    entries + '\n' +
+    '</sitemapindex>\n';
+}
+
+console.log('Building modular Google-compliant sitemaps for ' + ORIGIN + '...');
+
+const subSitemaps = [];
+
+// 1. sitemap-main.xml (Static core pages)
+const mainEntries = STATIC.map(s => urlEntry(s.loc, s.priority, s.changefreq));
+fs.writeFileSync(path.join(ROOT, 'sitemap-main.xml'), wrapUrlset(mainEntries));
+subSitemaps.push('sitemap-main.xml');
+console.log(`  ✓ Wrote sitemap-main.xml (${mainEntries.length} URLs)`);
+
+// 2. sitemap-states.xml (State, Type/Category, and Month filter landing pages)
+const stateEntries = [];
+
+// State landings
+idx.meta.states.forEach(state => {
+  const destinationCount = idx.destinations.filter(d => d.state === state).length;
   if (destinationCount >= 3) {
-    urls.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly'));
+    stateEntries.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly'));
   }
 });
 
-// Category / type landing pages
-idx.meta.types.forEach(function (type) {
-  urls.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly'));
+// Category / type landings
+idx.meta.types.forEach(type => {
+  stateEntries.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly'));
 });
 
 // Monthly travel guides
-idx.meta.months.forEach(function (month) {
-  urls.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly'));
+idx.meta.months.forEach(month => {
+  stateEntries.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly'));
 });
 
-// Destination detail pages with Google Image Sitemap markup
+fs.writeFileSync(path.join(ROOT, 'sitemap-states.xml'), wrapUrlset(stateEntries));
+subSitemaps.push('sitemap-states.xml');
+console.log(`  ✓ Wrote sitemap-states.xml (${stateEntries.length} filter landings)`);
+
+// 3. Chunked destination detail pages (sitemap-destinations-1.xml, -2.xml, etc.)
 console.log('Compiling destination URLs with Google Image Sitemap metadata...');
 let totalImages = 0;
+const destEntries = [];
 
-idx.destinations.forEach(function (d) {
+idx.destinations.forEach(d => {
   const imgList = [];
   const dPath = path.join(DEST_DIR, d.slug + '.json');
   let detail = null;
   if (fs.existsSync(dPath)) {
-    try { detail = JSON.parse(fs.readFileSync(dPath, 'utf8')); } catch (e) {}
+    try { detail = JSON.parse(fs.readFileSync(dPath, 'utf8')); } catch (_) {}
   }
 
   const target = detail || d;
@@ -96,7 +147,7 @@ idx.destinations.forEach(function (d) {
 
   if (Array.isArray(target.gallery)) {
     target.gallery.forEach(g => {
-      const gUrl = typeof g === 'string' ? g : g.src;
+      const gUrl = typeof g === 'string' ? g : (g && g.src);
       if (gUrl && !imgList.some(x => x.url === gUrl)) {
         imgList.push({
           url: gUrl,
@@ -108,14 +159,23 @@ idx.destinations.forEach(function (d) {
   }
 
   totalImages += imgList.length;
-  urls.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList));
+  destEntries.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList));
 });
 
-const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n' +
-  '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
-  urls.join('\n') + '\n' +
-  '</urlset>\n';
+// Split destinations into chunks of DESTINATIONS_PER_CHUNK
+const numChunks = Math.ceil(destEntries.length / DESTINATIONS_PER_CHUNK);
+for (let chunkIdx = 0; chunkIdx < numChunks; chunkIdx++) {
+  const start = chunkIdx * DESTINATIONS_PER_CHUNK;
+  const end = start + DESTINATIONS_PER_CHUNK;
+  const chunkEntries = destEntries.slice(start, end);
+  const filename = `sitemap-destinations-${chunkIdx + 1}.xml`;
+  fs.writeFileSync(path.join(ROOT, filename), wrapUrlset(chunkEntries));
+  subSitemaps.push(filename);
+  console.log(`  ✓ Wrote ${filename} (${chunkEntries.length} destinations)`);
+}
 
-fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
-console.log(`✅ Wrote sitemap.xml — ${urls.length} URLs, ${totalImages} indexed images for Google (origin: ${ORIGIN})`);
+// 4. Master sitemap.xml (Sitemap Index)
+fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), wrapSitemapIndex(subSitemaps));
+console.log(`✅ Wrote master sitemap.xml (Sitemap Index pointing to ${subSitemaps.length} sub-sitemaps)`);
+console.log(`   Total URLs: ${mainEntries.length + stateEntries.length + destEntries.length} across all sitemaps`);
+console.log(`   Total Indexed Images: ${totalImages}`);

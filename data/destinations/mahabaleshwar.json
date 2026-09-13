@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Sahyadri",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Mahabaleshwar — hill station of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahabaleshwar_Pratapgad_023.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Strawberries",
       "Viewpoints",
-      "Lake"
+      "Lake",
+      "Tranquil Lake Waters"
     ],
     "altitude": 1353,
     "rating": 4.4,
@@ -215,7 +216,7 @@
     {
       "name": "Venna Lake",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Mahabaleshwar Centre, Maharashtra",
       "entryFee": "₹150",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Venna_Lake%2C_Mahabaleshwar.jpg/1280px-Venna_Lake%2C_Mahabaleshwar.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Venna_lake_hanuman_mandir_mahabaleshwar_-_panoramio.jpg/1280px-Venna_lake_hanuman_mandir_mahabaleshwar_-_panoramio.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Rajasthan_%286363950421%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Arthur’s Seat",
       "category": "scenic",
-      "distance": "12 km",
+      "distance": "12 km from Mahabaleshwar, Maharashtra",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/bf/Arthur%27s_seat%2C_Mahabaleshwar.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Arthur%27s_Seat%2C_Mahabaleshwar_%284662716124%29.jpg/1280px-Arthur%27s_Seat%2C_Mahabaleshwar_%284662716124%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/91/Rajasthan_%286363949511%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Mahabaleshwar"
     },
     {
       "name": "Pratapgad Fort",
       "category": "heritage",
-      "distance": "24 km",
+      "distance": "24 km from Mahabaleshwar, Maharashtra",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c3/Rajasthan_%286373260699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/02/Rajasthan_%286373265929%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/4/4f/Chohtan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Mahabaleshwar"
     }
   ],
   "itinerary": [
@@ -395,23 +399,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mahabaleshwar_Pratapgad_023.jpg",
-      "alt": "Mahabaleshwar photo 2"
+      "alt": "Mahabaleshwar Pratapgad",
+      "title": "Mahabaleshwar Pratapgad"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pratapgad_Fort.JPG",
-      "alt": "Mahabaleshwar photo 3"
+      "alt": "Pratapgad Fort — Mahabaleshwar",
+      "title": "Pratapgad Fort — Mahabaleshwar"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mahabaleshwar_Pratapgad_023_%28cropped%29.jpg",
-      "alt": "Mahabaleshwar photo 4"
+      "alt": "Mahabaleshwar — Scenic Valley Lookout & Viewpoint",
+      "title": "Mahabaleshwar — Scenic Valley Lookout & Viewpoint"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Pratapgad_fort_front_view.jpg",
-      "alt": "Mahabaleshwar photo 5"
+      "alt": "Pratapgad Fort Front View — Mahabaleshwar",
+      "title": "Pratapgad Fort Front View — Mahabaleshwar"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/RAJASTHAN_%286358883141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hills of Rajasthan"
+      "alt": "Hills of Rajasthan",
+      "title": "RAJASTHAN — Mahabaleshwar"
     }
   ],
   "faq": [

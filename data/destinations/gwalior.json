@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Chambal",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Gwalior — heritage city of Madhya Pradesh",
+  "badge": "Royal Palace",
+  "tagline": "Historic Royal Palace & Architectural Splendour in Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Nilgais_fighting%2C_Lakeshwari%2C_Gwalior_district%2C_India.jpg",
     "alt": "Gwalior, Madhya Pradesh"
@@ -17,7 +17,8 @@
     "features": [
       "Hill Fort",
       "Palaces",
-      "Music"
+      "Music",
+      "Royal Palace"
     ],
     "altitude": null,
     "rating": 4.4,
@@ -213,7 +214,7 @@
     {
       "name": "Gwalior Fort",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Gwalior Centre, Madhya Pradesh",
       "entryFee": "₹75",
       "timings": "Varies by season",
       "duration": "2–3 hrs",
@@ -227,12 +228,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/00/A_a_b_c_d_e_%287%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/56/A_a_b_c_d_e_%288%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1f/A_a_b_c_d_e_%289%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Jai Vilas Palace",
       "category": "heritage",
-      "distance": "4 km",
+      "distance": "4 km from Gwalior, Madhya Pradesh",
       "entryFee": "₹150",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -246,12 +248,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/A_a_b_c_d_e_%2815%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/0c/A_a_b_c_d_e_%2816%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/c8/A_a_b_c_d_e_%2817%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Gwalior"
     },
     {
       "name": "Sas-Bahu Temples",
       "category": "heritage",
-      "distance": "Fort",
+      "distance": "Fort near Gwalior, Madhya Pradesh",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "45 min",
@@ -265,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sasbahu_Temple_%28in_Gwalior%29.jpg/1280px-Sasbahu_Temple_%28in_Gwalior%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/92/A_a_b_c_d_e_%2818%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/85/Amar_y_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Gwalior"
     }
   ],
   "itinerary": [
@@ -392,23 +396,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Nilgais_fighting%2C_Lakeshwari%2C_Gwalior_district%2C_India.jpg",
-      "alt": "Gwalior in Gwalior, Madhya Pradesh - Male nilgais fighting (Boselaphus tragocamelus), Lakeshwari, Gwalior district, Indi"
+      "alt": "Gwalior in Gwalior, Madhya Pradesh - Male nilgais fighting (Boselaphus tragocamelus), Lakeshwari, Gwalior district, Indi",
+      "title": "Nilgais Fighting, Lakeshwari, Gwalior District, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Lion_sculpture%2C_Gwalior_Fort%2C_India.jpg",
-      "alt": "Gwalior photo 2"
+      "alt": "Lion Sculpture, Gwalior Fort, India",
+      "title": "Lion Sculpture, Gwalior Fort, India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Jai_Vilas_Palace_%28_Scindia_Palace%29.jpg",
-      "alt": "Gwalior photo 3"
+      "alt": "Jai Vilas Palace ( Scindia Palace) — Gwalior",
+      "title": "Jai Vilas Palace ( Scindia Palace) — Gwalior"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Jai_Vilas_Palace_%28Gwalior%29.jpg",
-      "alt": "Gwalior photo 4"
+      "alt": "Jai Vilas Palace (Gwalior)",
+      "title": "Jai Vilas Palace (Gwalior)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/1869_photo_of_the_Sas_bahu_temple%2C_Gwalior_Madhya_Pradesh.jpg",
-      "alt": "Gwalior photo 5"
+      "alt": "1869 Photo Of The Sas Bahu Temple, Gwalior Madhya Pradesh",
+      "title": "1869 Photo Of The Sas Bahu Temple, Gwalior Madhya Pradesh"
     }
   ],
   "faq": [

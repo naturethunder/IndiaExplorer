@@ -78,9 +78,9 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
   title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
-  description: 'Discover 2,392 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
+  description: 'Discover 2,393 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
   canonicalPath: 'destinations.html',
-  heading: '2,392 Destinations',
+  heading: '2,393 Destinations',
   subheading: 'Across 36 States & UTs',
 };
 
@@ -162,7 +162,7 @@ function applyLandingSeo(resultLength) {
 
   if (heroTitle) {
     if (seo.isDefault) {
-      heroTitle.innerHTML = '<span class="hero-line-1">2,392 <em class="gold-gradient-text">Destinations</em></span>' +
+      heroTitle.innerHTML = '<span class="hero-line-1">2,393 <em class="gold-gradient-text">Destinations</em></span>' +
         '<span class="hero-line-2">Across 36 States & UTs</span>';
     } else {
       heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
@@ -759,6 +759,16 @@ document.addEventListener('keydown', function (e) {
 
 // ─── Wire Controls ─────────────────────────────────────
 if (searchInput) {
+  function updateSearchPlaceholder() {
+    if (window.innerWidth <= 640) {
+      searchInput.placeholder = 'Search 2,393 destinations...';
+    } else {
+      searchInput.placeholder = 'Search 2,393 destinations, states, regions, or attractions...';
+    }
+  }
+  updateSearchPlaceholder();
+  window.addEventListener('resize', updateSearchPlaceholder);
+
   searchInput.addEventListener('input', function () {
     filters.search = searchInput.value;
     toggleSearchClear();

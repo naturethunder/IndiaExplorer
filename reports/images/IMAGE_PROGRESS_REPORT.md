@@ -6,7 +6,7 @@
 
 | Metric | Count |
 |---|---|
-| **Total Destinations in Repository** | **2,392** |
+| **Total Destinations in Repository** | **2,393** |
 | **Fully Enriched Destinations** | **2,331 (97.4%)** |
 | **Pending Destinations** | **61 Destinations** |
 | **Nearby Attractions Enriched** | **14,013 Places** |
@@ -45,7 +45,7 @@
 | **Arunachal Pradesh** | 12 / 12 | **100.0%** | 0 | 30 | 162 | ✅ Completed |
 | **Meghalaya** | 11 / 11 | **100.0%** | 0 | 47 | 207 | ✅ Completed |
 | **Tripura** | 11 / 11 | **100.0%** | 0 | 63 | 255 | ✅ Completed |
-| **Delhi** | 10 / 10 | **100.0%** | 0 | 84 | 312 | ✅ Completed |
+| **Delhi** | 11 / 11 | **100.0%** | 0 | 84 | 312 | ✅ Completed |
 | **Manipur** | 9 / 9 | **100.0%** | 0 | 59 | 231 | ✅ Completed |
 | **Nagaland** | 9 / 9 | **100.0%** | 0 | 46 | 192 | ✅ Completed |
 | **Andaman & Nicobar** | 8 / 8 | **100.0%** | 0 | 28 | 132 | ✅ Completed |

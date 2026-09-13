@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Hooghly Delta",
   "type": "heritage",
-  "badge": "Popular",
+  "badge": "Historic Fortress",
   "tagline": "Kolkata — heritage city of West Bengal",
   "heroImage": {
     "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -212,7 +212,7 @@
     {
       "name": "Victoria Memorial",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Kolkata Centre, West Bengal",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -226,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/4e/Old_monastry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sikhim_and_Bhutan_-_Chorten_at_Gorina_Monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Howrah Bridge",
       "category": "heritage",
-      "distance": "3 km",
+      "distance": "3 km from Kolkata, West Bengal",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/48/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/70/Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Kolkata"
     },
     {
       "name": "Dakshineswar Kali Temple",
       "category": "spiritual",
-      "distance": "12 km",
+      "distance": "12 km from Kolkata, West Bengal",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -264,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg/1280px-Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/ef/Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Wall_paintings_of_Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Kolkata"
     }
   ],
   "itinerary": [
@@ -393,23 +396,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata"
+      "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata",
+      "title": "Victoria Memorial marble architecture and reflective pool in Kolkata — Kolkata"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pavilion_at_the_Victoria_Memorial%2C_Kolkata_02.jpg",
-      "alt": "Kolkata photo 2"
+      "alt": "Pavilion At The Victoria Memorial, Kolkata",
+      "title": "Pavilion At The Victoria Memorial, Kolkata"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Howrah_Bridge%2C_Foggy.jpg",
-      "alt": "Kolkata photo 3"
+      "alt": "Howrah Bridge, Foggy — Kolkata",
+      "title": "Howrah Bridge, Foggy — Kolkata"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Howrah_Railway_Station_01.jpg",
-      "alt": "Kolkata photo 4"
+      "alt": "Howrah Railway Station — Kolkata",
+      "title": "Howrah Railway Station — Kolkata"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Dakshineswar_Kali_temple%2C_Kolkata%2C_West_Bengal%2C_India.JPG",
-      "alt": "Kolkata photo 5"
+      "alt": "Dakshineswar Kali Temple, Kolkata, West Bengal, India",
+      "title": "Dakshineswar Kali Temple, Kolkata, West Bengal, India"
     }
   ],
   "faq": [

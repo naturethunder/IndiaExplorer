@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Backwaters",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Bird Sanctuary",
   "tagline": "Kumarakom — beach town of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Kumarakom_Bird_Sanctuary_01.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Bird Sanctuary",
       "Backwaters",
-      "Houseboats"
+      "Houseboats",
+      "Wildlife Habitat"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -210,7 +211,7 @@
     {
       "name": "Kumarakom Bird Sanctuary",
       "category": "wildlife",
-      "distance": "3 km",
+      "distance": "3 km from Kumarakom, Kerala",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/46/Just_about_to_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/dc/Balamathi_hills_top_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f2/Balamathi_Hills_Panoramic_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Kumarakom"
     },
     {
       "name": "Vembanad Lake Cruise",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Kumarakom Centre, Kerala",
       "entryFee": "₹1,500",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kumarakom_Lake_Resort_%28HDR%29_%288660427371%29.jpg/1280px-Kumarakom_Lake_Resort_%28HDR%29_%288660427371%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sunset_time_vembanad_lake_kumarakom_kerala_-_panoramio.jpg/1280px-Sunset_time_vembanad_lake_kumarakom_kerala_-_panoramio.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/d/d7/On_the_train_to_Madurai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Pathiramanal Island",
       "category": "nature",
-      "distance": "Lake",
+      "distance": "Lake near Kumarakom, Kerala",
       "entryFee": "₹500",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pathiramanal_walkway2.jpg/1280px-Pathiramanal_walkway2.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Pathiramanal_island_-_view_from_muhamma.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Yercaud_hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Kumarakom"
     }
   ],
   "itinerary": [
@@ -391,23 +395,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Kumarakom_Bird_Sanctuary_01.jpg",
-      "alt": "Kumarakom photo 2"
+      "alt": "Kumarakom Bird Sanctuary",
+      "title": "Kumarakom Bird Sanctuary"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kumarakom_Bird_Sanctuary_03.jpg",
-      "alt": "Kumarakom photo 3"
+      "alt": "Kumarakom Bird Sanctuary",
+      "title": "Kumarakom Bird Sanctuary"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Kumarakom_Bird_Sanctuary_2024.jpg",
-      "alt": "Kumarakom photo 4"
+      "alt": "Kumarakom Bird Sanctuary",
+      "title": "Kumarakom Bird Sanctuary"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Kumarakom_Bird_Sanctuary_2024_2.jpg",
-      "alt": "Kumarakom photo 5"
+      "alt": "Kumarakom — Pristine Waterfront Promenade",
+      "title": "Kumarakom — Pristine Waterfront Promenade"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Pollachi_hilly_landsacpe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Hills of Tamil Nadu"
+      "alt": "Hills of Tamil Nadu",
+      "title": "Pollachi Hilly Landsacpe — Kumarakom"
     }
   ],
   "faq": [

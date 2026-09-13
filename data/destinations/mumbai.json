@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Konkan Coast",
   "type": "heritage",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Mumbai — heritage city of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Gateway_of_India_Mumbai.jpg",
@@ -212,7 +212,7 @@
     {
       "name": "Gateway of India",
       "category": "heritage",
-      "distance": "Colaba",
+      "distance": "Colaba near Mumbai, Maharashtra",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -226,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Gateway_of_India_in_Mumbai%2C_India.jpg/1280px-Gateway_of_India_in_Mumbai%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/The_Gateway_of_India%2C_Mumbai%2C_Maharashtra%2C_India.jpg/1280px-The_Gateway_of_India%2C_Mumbai%2C_Maharashtra%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Gateway_of_India_2024_jan.jpg/1280px-Gateway_of_India_2024_jan.jpg"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Mumbai"
     },
     {
       "name": "Marine Drive",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Mumbai Centre, Maharashtra",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -245,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mumbai_%28Bombay%29%2C_RTW_2012_%288405005216%29.jpg/1280px-Mumbai_%28Bombay%29%2C_RTW_2012_%288405005216%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mumbai%2C_India%2C_Bombay%2C_Mumbai_skyline_at_sunset.jpg/1280px-Mumbai%2C_India%2C_Bombay%2C_Mumbai_skyline_at_sunset.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Mumbai%2C_marine_drive_di_notte_01.jpg/1280px-Mumbai%2C_marine_drive_di_notte_01.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Elephanta Caves",
       "category": "heritage",
-      "distance": "Sea",
+      "distance": "Sea near Mumbai, Maharashtra",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -264,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Elephanta_Caves_Shiva-Parvati.jpg/1280px-Elephanta_Caves_Shiva-Parvati.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shiva_as_Nataraja_in_Elephanta_Caves.jpg/1280px-Shiva_as_Nataraja_in_Elephanta_Caves.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Shiva_Slaying_Andhaka_sculpture_in_Cave_1_of_Elephanta_Caves.jpg/1280px-Shiva_Slaying_Andhaka_sculpture_in_Cave_1_of_Elephanta_Caves.jpg"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Mumbai"
     }
   ],
   "itinerary": [
@@ -393,23 +396,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Gateway_of_India_Mumbai.jpg",
-      "alt": "Gateway of India waterfront arch monument in Mumbai"
+      "alt": "Gateway of India waterfront arch monument in Mumbai",
+      "title": "Great Gateway Of India Mumbai"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg",
-      "alt": "Marine Drive coastal promenade lit at twilight in Mumbai"
+      "alt": "Marine Drive coastal promenade lit at twilight in Mumbai",
+      "title": "Mumbai Skyline At Night"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Mumbai_03-2016_68_Victoria_Terminus.jpg",
-      "alt": "Chhatrapati Shivaji Maharaj Terminus historic Victorian Gothic facade in Mumbai"
+      "alt": "Chhatrapati Shivaji Maharaj Terminus historic Victorian Gothic facade in Mumbai",
+      "title": "Mumbai 03 2016 68 Victoria Terminus"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Mumbai_Skyline_with_Bandra%E2%80%93Worli_Sea_Link_25_July_2018_%281%29.jpg",
-      "alt": "Bandra Worli Sea Link cable-stayed bridge and Mumbai coastal skyline"
+      "alt": "Mumbai Skyline With Bandra–Worli Sea Link 25 July",
+      "title": "Mumbai Skyline With Bandra–Worli Sea Link 25 July"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shiva_Trimurti_%40_Elephanta_Caves.jpg",
-      "alt": "Rock-cut Trimurti sculpture of Lord Shiva inside Cave 1 at Elephanta Caves Mumbai"
+      "alt": "Rock-cut Trimurti sculpture of Lord Shiva inside Cave 1 at Elephanta Caves Mumbai",
+      "title": "Shiva Trimurti @ Elephanta Caves — Mumbai"
     }
   ],
   "faq": [

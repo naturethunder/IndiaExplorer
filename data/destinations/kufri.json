@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Shimla",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Wildlife Sanctuary",
   "tagline": "Kufri — hill station of Himachal Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/0051423_Baijnath_temple%2C_Vaidyanatha_mandir%2C_Baijnath_Himachal_Pradesh_099.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Snow",
       "Skiing",
-      "Himalayan Zoo"
+      "Himalayan Zoo",
+      "Wildlife Habitat"
     ],
     "altitude": 2720,
     "rating": 4.1,
@@ -210,7 +211,7 @@
     {
       "name": "Kufri Fun World",
       "category": "adventure",
-      "distance": "Centre",
+      "distance": "In Kufri Centre, Himachal Pradesh",
       "entryFee": "₹300",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/8e/Outdoor_Lawn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/83/Terrace_Cafeteria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6e/Garden_Greenery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Himalayan Nature Park",
       "category": "wildlife",
-      "distance": "1 km",
+      "distance": "1 km from Kufri, Himachal Pradesh",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/79/Wonderment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a7/Victoria_Memorial_from_Maidan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/57/Road_to_Nathu_La.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins walk / 3 min drive from Kufri"
     },
     {
       "name": "Mahasu Peak",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Kufri, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b8/President_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/ec/National_Museum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/ab/National_Museum3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Kufri"
     }
   ],
   "itinerary": [
@@ -412,23 +416,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/0051423_Baijnath_temple%2C_Vaidyanatha_mandir%2C_Baijnath_Himachal_Pradesh_099.jpg",
-      "alt": "Kufri in Himachal Pradesh - The Baijnath temple is a late 12th to early 13th century Shiva temple in Kangra district of"
+      "alt": "Kufri in Himachal Pradesh - The Baijnath temple is a late 12th to early 13th century Shiva temple in Kangra district of",
+      "title": "0051423 Baijnath Temple, Vaidyanatha Mandir, Baijnath Himachal Pradesh — Kufri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Kufri_Simla_Himachal_India_%283%29.jpg",
-      "alt": "Kufri photo 2"
+      "alt": "Kufri Simla Himachal India",
+      "title": "Kufri Simla Himachal India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bear_of_Himalayan_Nature_Park%2C_Kufri.jpg",
-      "alt": "Kufri photo 3"
+      "alt": "Bear Of Himalayan Nature Park, Kufri",
+      "title": "Bear Of Himalayan Nature Park, Kufri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Goral_of_Himalayan_Nature_Park%2C_Kufri.jpg",
-      "alt": "Kufri photo 4"
+      "alt": "Goral Of Himalayan Nature Park, Kufri",
+      "title": "Goral Of Himalayan Nature Park, Kufri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kufri_Simla_Himachal_India_%284%29.jpg",
-      "alt": "Kufri photo 5"
+      "alt": "Kufri Simla Himachal India",
+      "title": "Kufri Simla Himachal India"
     }
   ],
   "faq": [

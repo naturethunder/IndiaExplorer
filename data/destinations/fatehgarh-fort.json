@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Uttar Pradesh",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Fatehgarh Fort — heritage city of Uttar Pradesh",
+  "badge": "Historic Fortress",
+  "tagline": "Fatehgarh Fort — historic fortress of Uttar Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fort_of_Agra_at_a_distance_from_the_East_-_Bonhams.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "alt": "Fatehgarh Fort, Uttar Pradesh"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -210,7 +210,7 @@
     {
       "name": "Fatehgarh",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Fatehgarh Fort Centre, Uttar Pradesh",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/45/All_Souls_Memorial_Church%2C_Fatehgarh-002.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9f/Dhai_Seedhi_Ki_Masjid-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d4/Dhai_Seedhi_Ki_Masjid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Battle of Farrukhabad",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Fatehgarh Fort Centre, Uttar Pradesh",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,12 +244,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d4/Charge_of_8th_Dragoons_at_Furruckabad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/ad/A_Mosque_and_a_shrine%2C_Najibabad%2C_1814-15.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/ff/Sun_temple_kutch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Farrukhabad",
       "category": "scenic",
-      "distance": "5 km",
+      "distance": "5 km from Fatehgarh Fort, Uttar Pradesh",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -262,7 +264,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/90/Foggy_chauraha.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Tomb_of_Mohd._Khan_Bangash_Nawab.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/61/FARRUKHABAD_RAILWAY_STATION_MAIN_BUILDING.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Fatehgarh Fort"
     }
   ],
   "itinerary": [
@@ -406,28 +409,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fort_of_Agra_at_a_distance_from_the_East_-_Bonhams.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Fatehgarh Fort — Historic panoramic view across the eastern bastions"
+      "alt": "Fatehgarh Fort — Historic panoramic view across the eastern bastions",
+      "title": "Fort Of Agra At A Distance From The East Bonhams — Fatehgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Main_Entrance_of_Gurudwara_Fatehgarh_Sahib.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Fatehgarh Fort photo 2"
+      "alt": "Main Entrance Of Gurudwara Fatehgarh Sahib — Fatehgarh Fort",
+      "title": "Main Entrance Of Gurudwara Fatehgarh Sahib — Fatehgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Nihang_at_Jor_Mela.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Fatehgarh Fort photo 3"
+      "alt": "Nihang At Jor Mela — Fatehgarh Fort",
+      "title": "Nihang At Jor Mela — Fatehgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Original_Gurdwara_Sri_Fatehgarh_Sahib.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Fatehgarh Fort photo 4"
+      "alt": "Original Gurdwara Sri Fatehgarh Sahib — Fatehgarh Fort",
+      "title": "Original Gurdwara Sri Fatehgarh Sahib — Fatehgarh Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rauza_sharif.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Fatehgarh Fort photo 5"
+      "alt": "Rauza Sharif — Fatehgarh Fort",
+      "title": "Rauza Sharif — Fatehgarh Fort"
     }
   ],
   "faq": [

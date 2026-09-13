@@ -4,15 +4,15 @@
    across all pages (Home, AI Finder, About, Contact, Privacy, Terms).
    ========================================================= */
 
-body.glass-immersive {
+html:not([data-theme="light"]) body.glass-immersive,
+html[data-theme="dark"] body.glass-immersive {
   background: #080a0f !important;
   color: rgba(255, 255, 255, 0.95) !important;
   overflow-x: hidden;
 }
 
 /* ─── LAYER 1 & 2: Fixed Full-Viewport Background & Overlay ──────── */
-.explore-immersive-bg,
-.dest-immersive-bg {
+.explore-immersive-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -22,8 +22,7 @@ body.glass-immersive {
   background-repeat: no-repeat;
 }
 
-.explore-immersive-overlay,
-.dest-immersive-overlay {
+.explore-immersive-overlay {
   position: fixed;
   inset: 0;
   z-index: 1;
@@ -165,20 +164,20 @@ body.glass-immersive .bg-gradient-to-t {
 }
 
 /* ─── Individual Floating Glass Cards (Destinations, Info Cards, Modals) ─── */
-body.glass-immersive .card,
-body.glass-immersive .dest-card,
-body.glass-immersive .card .bg-white,
-body.glass-immersive .dest-card .bg-white,
-body.glass-immersive .info-card,
-body.glass-immersive .dest-summary-card,
-body.glass-immersive .ai-hero-card,
-body.glass-immersive .budget-card,
-body.glass-immersive .category-strip,
-body.glass-immersive .popular-chip,
-body.glass-immersive .month-tab,
-body.glass-immersive [data-dest-card],
-body.glass-immersive .bg-white:not(section):not(main):not(body):not(nav):not(.rating-badge):not(.rating-badge *):not(button):not(input):not(.badge),
-body.glass-immersive .bg-gray-50:not(section):not(main):not(body):not(nav):not(button) {
+html:not([data-theme="light"]) body.glass-immersive .card,
+html:not([data-theme="light"]) body.glass-immersive .dest-card,
+html:not([data-theme="light"]) body.glass-immersive .card .bg-white,
+html:not([data-theme="light"]) body.glass-immersive .dest-card .bg-white,
+html:not([data-theme="light"]) body.glass-immersive .info-card,
+html:not([data-theme="light"]) body.glass-immersive .dest-summary-card,
+html:not([data-theme="light"]) body.glass-immersive .ai-hero-card,
+html:not([data-theme="light"]) body.glass-immersive .budget-card,
+html:not([data-theme="light"]) body.glass-immersive .category-strip,
+html:not([data-theme="light"]) body.glass-immersive .popular-chip,
+html:not([data-theme="light"]) body.glass-immersive .month-tab,
+html:not([data-theme="light"]) body.glass-immersive [data-dest-card],
+html:not([data-theme="light"]) body.glass-immersive .bg-white:not(section):not(main):not(body):not(nav):not(.rating-badge):not(.rating-badge *):not(button):not(input):not(.badge),
+html:not([data-theme="light"]) body.glass-immersive .bg-gray-50:not(section):not(main):not(body):not(nav):not(button) {
   background: rgba(14, 19, 30, 0.82) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
@@ -256,7 +255,7 @@ body.glass-immersive .category-chip:hover .category-chip-icon {
   box-shadow: 0 6px 22px rgba(229, 192, 123, 0.5) !important;
 }
 
-body.glass-immersive .category-chip-label {
+html:not([data-theme="light"]) body.glass-immersive .category-chip-label {
   color: #ffffff !important;
   font-weight: 700 !important;
   font-size: 0.82rem !important;
@@ -265,7 +264,7 @@ body.glass-immersive .category-chip-label {
   line-height: 1.2 !important;
 }
 
-body.glass-immersive .category-chip-count {
+html:not([data-theme="light"]) body.glass-immersive .category-chip-count {
   color: rgba(229, 192, 123, 0.85) !important;
   font-size: 0.74rem !important;
   white-space: nowrap !important;
@@ -278,45 +277,45 @@ body.glass-immersive .budget-card {
   text-align: center !important;
 }
 
-body.glass-immersive .budget-card .text-gray-900,
-body.glass-immersive .budget-card font,
-body.glass-immersive .budget-card div:not(.text-gray-500) {
+html:not([data-theme="light"]) body.glass-immersive .budget-card .text-gray-900,
+html:not([data-theme="light"]) body.glass-immersive .budget-card font,
+html:not([data-theme="light"]) body.glass-immersive .budget-card div:not(.text-gray-500) {
   color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-body.glass-immersive .budget-card .text-gray-500 {
+html:not([data-theme="light"]) body.glass-immersive .budget-card .text-gray-500 {
   color: rgba(255, 255, 255, 0.80) !important;
 }
 
-body.glass-immersive .card:hover,
-body.glass-immersive .budget-card:hover,
-body.glass-immersive .dest-summary-card:hover,
-body.glass-immersive .category-chip:hover {
+html:not([data-theme="light"]) body.glass-immersive .card:hover,
+html:not([data-theme="light"]) body.glass-immersive .budget-card:hover,
+html:not([data-theme="light"]) body.glass-immersive .dest-summary-card:hover,
+html:not([data-theme="light"]) body.glass-immersive .category-chip:hover {
   background: rgba(18, 24, 38, 0.88) !important;
   border-color: rgba(229, 192, 123, 0.55) !important;
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.65), 0 0 30px rgba(229, 192, 123, 0.20) !important;
 }
 
 /* ─── Text Contrast & Typography ──────────────────────────────────── */
-body.glass-immersive h1,
-body.glass-immersive h2,
-body.glass-immersive h3,
-body.glass-immersive h4,
-body.glass-immersive h5,
-body.glass-immersive h6,
-body.glass-immersive .text-gray-900,
-body.glass-immersive .text-gray-800,
-body.glass-immersive .text-slate-900,
-body.glass-immersive .text-slate-800 {
+html:not([data-theme="light"]) body.glass-immersive h1,
+html:not([data-theme="light"]) body.glass-immersive h2,
+html:not([data-theme="light"]) body.glass-immersive h3,
+html:not([data-theme="light"]) body.glass-immersive h4,
+html:not([data-theme="light"]) body.glass-immersive h5,
+html:not([data-theme="light"]) body.glass-immersive h6,
+html:not([data-theme="light"]) body.glass-immersive .text-gray-900,
+html:not([data-theme="light"]) body.glass-immersive .text-gray-800,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-900,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-800 {
   color: #ffffff !important;
 }
 
-body.glass-immersive :where(p, span, label, li, td):not(:where(.badge, .badge *, .rating-badge, .rating-badge *, .bg-emerald-50 *, .bg-orange-50 *, .bg-amber-50 *, .bg-purple-50 *, .bg-blue-50 *, .bg-rose-50 *, [class*="text-emerald"], [class*="text-amber"], [class*="text-rose"], [class*="text-red"], [class*="text-green"])),
-body.glass-immersive .text-gray-700,
-body.glass-immersive .text-gray-600,
-body.glass-immersive .text-slate-700,
-body.glass-immersive .text-slate-600 {
+html:not([data-theme="light"]) body.glass-immersive :where(p, span, label, li, td):not(:where(.badge, .badge *, .rating-badge, .rating-badge *, .bg-emerald-50 *, .bg-orange-50 *, .bg-amber-50 *, .bg-purple-50 *, .bg-blue-50 *, .bg-rose-50 *, [class*="text-emerald"], [class*="text-amber"], [class*="text-rose"], [class*="text-red"], [class*="text-green"])),
+html:not([data-theme="light"]) body.glass-immersive .text-gray-700,
+html:not([data-theme="light"]) body.glass-immersive .text-gray-600,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-700,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-600 {
   color: rgba(255, 255, 255, 0.90) !important;
 }
 
@@ -341,18 +340,18 @@ body.glass-immersive .rating-badge path,
   fill: #D97706 !important;
 }
 
-body.glass-immersive .text-gray-500,
-body.glass-immersive .text-slate-500 {
+html:not([data-theme="light"]) body.glass-immersive .text-gray-500,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-500 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
 /* Card rating and details high-contrast colors */
-body.glass-immersive .dest-card strong,
-body.glass-immersive .card strong,
-body.glass-immersive .dest-card h3,
-body.glass-immersive .card h3,
-body.glass-immersive .dest-card .text-gray-900,
-body.glass-immersive .card .text-gray-900 {
+html:not([data-theme="light"]) body.glass-immersive .dest-card strong,
+html:not([data-theme="light"]) body.glass-immersive .card strong,
+html:not([data-theme="light"]) body.glass-immersive .dest-card h3,
+html:not([data-theme="light"]) body.glass-immersive .card h3,
+html:not([data-theme="light"]) body.glass-immersive .dest-card .text-gray-900,
+html:not([data-theme="light"]) body.glass-immersive .card .text-gray-900 {
   color: #FFFFFF !important;
   font-weight: 700 !important;
 }
@@ -364,15 +363,15 @@ body.glass-immersive .card .text-amber-400 {
   color: #F59E0B !important;
 }
 
-body.glass-immersive .dest-card .text-gray-500,
-body.glass-immersive .card .text-gray-500,
-body.glass-immersive .dest-card .text-gray-600,
-body.glass-immersive .card .text-gray-600 {
+html:not([data-theme="light"]) body.glass-immersive .dest-card .text-gray-500,
+html:not([data-theme="light"]) body.glass-immersive .card .text-gray-500,
+html:not([data-theme="light"]) body.glass-immersive .dest-card .text-gray-600,
+html:not([data-theme="light"]) body.glass-immersive .card .text-gray-600 {
   color: #CBD5E1 !important;
 }
 
-body.glass-immersive .dest-card .text-gray-400,
-body.glass-immersive .card .text-gray-400 {
+html:not([data-theme="light"]) body.glass-immersive .dest-card .text-gray-400,
+html:not([data-theme="light"]) body.glass-immersive .card .text-gray-400 {
   color: #94A3B8 !important;
 }
 
@@ -502,7 +501,7 @@ body.glass-immersive .hero-search-seg input::placeholder {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-body.glass-immersive .hero-seg-btn {
+html:not([data-theme="light"]) body.glass-immersive .hero-seg-btn {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.16) 0%, rgba(245, 197, 66, 0.08) 100%) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(245, 197, 66, 0.35) !important;
@@ -511,7 +510,7 @@ body.glass-immersive .hero-seg-btn {
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-body.glass-immersive .hero-seg-btn:hover,
+html:not([data-theme="light"]) body.glass-immersive .hero-seg-btn:hover,
 body.glass-immersive .hero-seg-btn:active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   color: #FFFFFF !important;
@@ -555,12 +554,12 @@ body.glass-immersive .bg-blue-50 * {
 }
 
 /* ─── Universal High-Contrast Glass Chips & Tags ───────────────────── */
-body.glass-immersive .amenity-chip,
-body.glass-immersive .reason-chip,
-body.glass-immersive .tag-chip,
-body.glass-immersive .tier-chip,
-body.glass-immersive .active-filter-chip,
-body.glass-immersive .popular-chip {
+html:not([data-theme="light"]) body.glass-immersive .amenity-chip,
+html:not([data-theme="light"]) body.glass-immersive .reason-chip,
+html:not([data-theme="light"]) body.glass-immersive .tag-chip,
+html:not([data-theme="light"]) body.glass-immersive .tier-chip,
+html:not([data-theme="light"]) body.glass-immersive .active-filter-chip,
+html:not([data-theme="light"]) body.glass-immersive .popular-chip {
   background: rgba(15, 23, 42, 0.85) !important;
   color: #ffffff !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
@@ -771,7 +770,7 @@ body.glass-immersive .trend-card {
 }
 
 /* ─── India Map Floating Popover Card & Dedicated Showcase Layout ── */
-body.glass-immersive .discover-map-inner {
+html:not([data-theme="light"]) body.glass-immersive .discover-map-inner {
   background: rgba(14, 19, 30, 0.82) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
@@ -801,7 +800,7 @@ body.glass-immersive .discover-map .india-map-svg {
   pointer-events: auto !important;
 }
 
-body.glass-immersive .india-map-card {
+html:not([data-theme="light"]) body.glass-immersive .india-map-card {
   position: relative !important;
   inset: auto !important;
   flex: 0 0 38% !important;
@@ -993,7 +992,7 @@ header.dest-discovery-toolbar {
 
 
 
-#searchInput {
+html:not([data-theme="light"]) #searchInput {
   background: rgba(15, 23, 42, 0.85) !important;
   color: #ffffff !important;
   border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
@@ -1004,16 +1003,79 @@ header.dest-discovery-toolbar {
   height: 44px !important;
   font-size: 0.9rem !important;
   font-weight: 500 !important;
+  padding: 0 40px 0 44px !important;
 }
 
-#searchInput::placeholder {
+html:not([data-theme="light"]) .hero-search-seg #searchInput {
+  padding: 0.5rem 1rem !important;
+}
+
+html:not([data-theme="light"]) #searchInput::placeholder {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-#searchInput:focus {
+html:not([data-theme="light"]) #searchInput:focus {
   border-color: #E5C07B !important;
   box-shadow: 0 0 0 3px rgba(229, 192, 123, 0.35) !important;
 }
+
+html[data-theme="light"] #searchInput {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1.5px solid #CBD5E1 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+  border-radius: 0.85rem !important;
+  height: 44px !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  padding: 0 40px 0 44px !important;
+}
+
+html[data-theme="light"] .hero-search-seg #searchInput {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #0F172A !important;
+  padding: 0.5rem 1rem !important;
+}
+
+html[data-theme="light"] #searchInput::placeholder {
+  color: #64748B !important;
+}
+
+html[data-theme="light"] #searchInput:focus {
+  border-color: #D97706 !important;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15) !important;
+}
+
+/* Light Mode Active Filter Chips WCAG AAA Contrast */
+html[data-theme="light"] .active-chips-bar {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05) !important;
+}
+
+html[data-theme="light"] .active-chips-title {
+  color: #334155 !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] .active-filter-chip {
+  background: #E8F5E9 !important;
+  border: 1px solid #81C784 !important;
+  color: #1B5E20 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="light"] .active-filter-chip button {
+  background: rgba(27, 94, 32, 0.12) !important;
+  color: #1B5E20 !important;
+}
+
+html[data-theme="light"] .active-filter-chip button:hover {
+  background: rgba(27, 94, 32, 0.22) !important;
+}
+
 
 /* Category Filter Chips */
 #typeFilter {
@@ -1026,7 +1088,7 @@ header.dest-discovery-toolbar {
   gap: 0.5rem !important;
 }
 
-#typeFilter button {
+html:not([data-theme="light"]) #typeFilter button {
   background: rgba(15, 23, 42, 0.75) !important;
   color: rgba(255, 255, 255, 0.85) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
@@ -1040,16 +1102,16 @@ header.dest-discovery-toolbar {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-#typeFilter button:hover {
+html:not([data-theme="light"]) #typeFilter button:hover {
   background: rgba(15, 23, 42, 0.90) !important;
   color: #ffffff !important;
   border-color: rgba(229, 192, 123, 0.6) !important;
   transform: translateY(-1px) !important;
 }
 
-#typeFilter button.active,
-#typeFilter button[aria-pressed="true"],
-.category-pill-btn.active {
+html:not([data-theme="light"]) #typeFilter button.active,
+html:not([data-theme="light"]) #typeFilter button[aria-pressed="true"],
+html:not([data-theme="light"]) .category-pill-btn.active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.12) 60%, rgba(245, 197, 66, 0.22) 100%) !important;
   color: #FFFFFF !important;
   border: none !important;
@@ -1059,8 +1121,8 @@ header.dest-discovery-toolbar {
   border-radius: 6px 6px 0 0 !important;
 }
 
-#typeFilter button.active svg,
-.category-pill-btn.active svg {
+html:not([data-theme="light"]) #typeFilter button.active svg,
+html:not([data-theme="light"]) .category-pill-btn.active svg {
   color: #F5C542 !important;
   stroke: #F5C542 !important;
   filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
@@ -1300,7 +1362,7 @@ body.glass-immersive .bg-amber-100 {
   border: 1px solid #bbf7d0;
 }
 
-body.glass-immersive .ex-chip {
+html:not([data-theme="light"]) body.glass-immersive .ex-chip {
   min-height: 40px;
   display: inline-flex;
   align-items: center;
@@ -1313,14 +1375,14 @@ body.glass-immersive .ex-chip {
   transition: all 0.2s ease !important;
 }
 
-body.glass-immersive .ex-chip:hover {
+html:not([data-theme="light"]) body.glass-immersive .ex-chip:hover {
   border-color: rgba(74, 222, 128, 0.55) !important;
   color: #ffffff !important;
   box-shadow: 0 4px 14px rgba(74, 222, 128, 0.20) !important;
   transform: translateY(-1px) !important;
 }
 
-body.glass-immersive .ex-chip:active {
+html:not([data-theme="light"]) body.glass-immersive .ex-chip:active {
   transform: scale(0.96) !important;
 }
 
@@ -1471,20 +1533,51 @@ body.glass-immersive .month-car-slide .slide-badge-star {
    SECTION TITLE & SUBTITLE — ensure legibility on dark glass
    ═══════════════════════════════════════════════════════════════ */
 
-body.glass-immersive .section-title {
+/* Dark Mode Section Titles */
+html:not([data-theme="light"]) body.glass-immersive .section-title,
+html[data-theme="dark"] body.glass-immersive .section-title {
   color: #ffffff !important;
 }
 
-body.glass-immersive .section-subtitle {
+html:not([data-theme="light"]) body.glass-immersive .section-subtitle,
+html[data-theme="dark"] body.glass-immersive .section-subtitle {
   color: rgba(255, 255, 255, 0.70) !important;
 }
 
-body.glass-immersive .section-link {
-  color: #4ade80 !important;
+html:not([data-theme="light"]) body.glass-immersive .section-link,
+html[data-theme="dark"] body.glass-immersive .section-link {
+  color: #F5C542 !important;
 }
 
-body.glass-immersive .section-link:hover {
-  color: #86efac !important;
+html:not([data-theme="light"]) body.glass-immersive .section-link:hover,
+html[data-theme="dark"] body.glass-immersive .section-link:hover {
+  color: #FDE68A !important;
+}
+
+/* Light Mode Section Titles (Editorial Slate-900 & Accessible Slate-600) */
+html[data-theme="light"] body.glass-immersive .section-title,
+html[data-theme="light"] .section-title {
+  color: #0F172A !important;
+  text-shadow: none !important;
+  font-weight: 800 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .section-subtitle,
+html[data-theme="light"] .section-subtitle {
+  color: #475569 !important;
+  text-shadow: none !important;
+  font-weight: 500 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .section-link,
+html[data-theme="light"] .section-link {
+  color: #B45309 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .section-link:hover,
+html[data-theme="light"] .section-link:hover {
+  color: #92400E !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1558,61 +1651,20 @@ body.glass-immersive .card-calligraphy-accent {
    "I want whole button of my project look like this, when I click or when I hover"
    Applied across every button, pill, tab, CTA, chip, and action trigger site-wide.
    ═════════════════════════════════════════════════════════════════════════════ */
-body.glass-immersive button:hover,
-body.glass-immersive button:active,
-body.glass-immersive button.active,
-body.glass-immersive button[aria-selected="true"],
-body.glass-immersive button[aria-pressed="true"],
-body.glass-immersive .btn:hover,
-body.glass-immersive .btn:active,
-body.glass-immersive .btn.active,
-body.glass-immersive a.btn:hover,
-body.glass-immersive a.btn:active,
-body.glass-immersive a.btn.active,
-body.glass-immersive .btn-primary:hover,
-body.glass-immersive .btn-primary:active,
-body.glass-immersive .btn-primary.active,
-body.glass-immersive .btn-outline:hover,
-body.glass-immersive .btn-outline:active,
-body.glass-immersive .btn-outline.active,
-body.glass-immersive .btn-ghost:hover,
-body.glass-immersive .btn-ghost:active,
-body.glass-immersive .btn-ghost.active,
-body.glass-immersive .btn-gradient:hover,
-body.glass-immersive .btn-gradient:active,
-body.glass-immersive .btn-gradient.active,
-body.glass-immersive .tab-btn:hover,
-body.glass-immersive .tab-btn:active,
-body.glass-immersive .tab-btn.active,
-body.glass-immersive .dest-quick-pill:hover,
-body.glass-immersive .dest-quick-pill:active,
-body.glass-immersive .dest-quick-pill.active,
-body.glass-immersive .category-pill-btn:hover,
-body.glass-immersive .category-pill-btn:active,
-body.glass-immersive .category-pill-btn.active,
-body.glass-immersive .quick-tag-btn:hover,
-body.glass-immersive .quick-tag-btn:active,
-body.glass-immersive .quick-tag-btn.active,
-body.glass-immersive .nav-link:hover,
-body.glass-immersive .nav-link:active,
-body.glass-immersive .nav-link.active,
-body.glass-immersive .ex-chip:hover,
-body.glass-immersive .ex-chip:active,
-body.glass-immersive .ex-chip.active,
-body.glass-immersive .load-more-luxury-btn:hover,
-body.glass-immersive .load-more-luxury-btn:active,
-body.glass-immersive .mobile-filter-trigger:hover,
-body.glass-immersive .mobile-filter-trigger:active,
-body.glass-immersive .filter-apply-btn:hover,
-body.glass-immersive .filter-apply-btn:active,
-body.glass-immersive .empty-state-reset-btn:hover,
-body.glass-immersive .empty-state-reset-btn:active,
-body.glass-immersive .carousel-btn:hover,
-body.glass-immersive .carousel-btn:active,
-body.glass-immersive input[type="button"]:hover,
-body.glass-immersive input[type="button"]:active,
-body.glass-immersive input[type="submit"]:hover,
-body.glass-immersive input[type="submit"]:active {
+html:not([data-theme="light"]) body.glass-immersive button:hover,
+html:not([data-theme="light"]) body.glass-immersive button:active,
+html:not([data-theme="light"]) body.glass-immersive button.active,
+html:not([data-theme="light"]) body.glass-immersive button[aria-selected="true"],
+html:not([data-theme="light"]) body.glass-immersive button[aria-pressed="true"],
+html:not([data-theme="light"]) body.glass-immersive .btn:hover,
+html:not([data-theme="light"]) body.glass-immersive .btn:active,
+html:not([data-theme="light"]) body.glass-immersive .btn.active,
+html:not([data-theme="light"]) body.glass-immersive a.btn:hover,
+html:not([data-theme="light"]) body.glass-immersive a.btn:active,
+html:not([data-theme="light"]) body.glass-immersive a.btn.active,
+html:not([data-theme="light"]) body.glass-immersive .btn-primary:hover,
+html:not([data-theme="light"]) body.glass-immersive .btn-primary:active,
+html:not([data-theme="light"]) body.glass-immersive .btn-primary.active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
@@ -1624,37 +1676,877 @@ body.glass-immersive input[type="submit"]:active {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
 }
 
-body.glass-immersive button:hover svg,
-body.glass-immersive button:active svg,
-body.glass-immersive button.active svg,
-body.glass-immersive .btn:hover svg,
-body.glass-immersive .btn:active svg,
-body.glass-immersive .btn.active svg,
-body.glass-immersive a.btn:hover svg,
-body.glass-immersive a.btn:active svg,
-body.glass-immersive .quick-tag-btn:hover svg,
-body.glass-immersive .quick-tag-btn:active svg,
-body.glass-immersive .category-pill-btn:hover svg,
-body.glass-immersive .category-pill-btn:active svg,
-body.glass-immersive .category-pill-btn.active svg,
-body.glass-immersive .dest-quick-pill:hover svg,
-body.glass-immersive .dest-quick-pill:active svg,
-body.glass-immersive .dest-quick-pill.active svg,
-body.glass-immersive .ex-chip:hover svg,
-body.glass-immersive .ex-chip:active svg {
-  color: #F5C542 !important;
-  stroke: #F5C542 !important;
-  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
+/* ─── Editorial Luxury Light Mode: Soft Alabaster Canvas & Radiant Light Wells ───────── */
+html[data-theme="light"] body.glass-immersive {
+  background-color: #FAF9F6 !important;
+  background: #FAF9F6 !important;
+  color: #0F172A !important;
 }
 
-/* ─── UI/UX Pro Max: Prefers-Reduced-Motion Compliance ─── */
+/* Background Wallpaper: Soft, artistic daylight mist */
+html[data-theme="light"] .explore-immersive-bg {
+  opacity: 0.20 !important;
+  filter: saturate(0.92) contrast(0.98) brightness(1.03) !important;
+}
+
+html[data-theme="light"] .explore-immersive-overlay {
+  background:
+    radial-gradient(circle 1000px at 50% -120px, rgba(254, 243, 199, 0.45), transparent 72%),
+    radial-gradient(circle 850px at 88% 12%, rgba(224, 242, 254, 0.40), transparent 60%),
+    radial-gradient(circle 900px at 12% 55%, rgba(254, 240, 138, 0.20), transparent 60%),
+    linear-gradient(180deg,
+      rgba(250, 249, 246, 0.84) 0%,
+      rgba(248, 250, 252, 0.92) 35%,
+      rgba(241, 245, 249, 0.98) 100%) !important;
+}
+
+/* Navbar in Light Mode: Frosted Pearl Glass with Specular Top Bevel & Crisp Links */
+html[data-theme="light"] body.glass-immersive .nav-glass,
+html[data-theme="light"] .nav-glass {
+  background: rgba(255, 255, 255, 0.90) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04), inset 0 -1px 0 rgba(217, 119, 6, 0.10) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .nav-glass a.font-bold,
+html[data-theme="light"] body.glass-immersive .nav-glass .site-brand-text {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .nav-link {
+  color: #334155 !important;
+  font-weight: 500 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .nav-link:hover {
+  color: #0F172A !important;
+  background: rgba(15, 23, 42, 0.04) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .nav-link.active {
+  color: #B45309 !important;
+  font-weight: 700 !important;
+  border-bottom-color: #D97706 !important;
+}
+
+/* Mobile Nav Drawer in Light Mode */
+html[data-theme="light"] #mobileMenu,
+html[data-theme="light"] .mobile-menu {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08) !important;
+}
+html[data-theme="light"] #mobileMenu a {
+  color: #334155 !important;
+}
+html[data-theme="light"] #mobileMenu a:hover,
+html[data-theme="light"] #mobileMenu a.active {
+  color: #B45309 !important;
+  background: rgba(217, 119, 6, 0.08) !important;
+}
+
+/* Headings on Informational Pages: Rich Charcoal over Daylight Canvas */
+html[data-theme="light"] body.glass-immersive header h1:not(.hero-home h1),
+html[data-theme="light"] body.glass-immersive section > h1:not(.hero-home h1),
+html[data-theme="light"] body.glass-immersive .page-header h1 {
+  color: #0F172A !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] body.glass-immersive header p:not(.hero-home p),
+html[data-theme="light"] body.glass-immersive section > p.max-w-2xl:not(.hero-home p) {
+  color: #475569 !important;
+  text-shadow: none !important;
+}
+
+/* Homepage Hero over Scrimmed Photo Rotator: Retains Brilliant White */
+html[data-theme="light"] body.glass-immersive .hero-home h1,
+html[data-theme="light"] body.glass-immersive .hero-home p,
+html[data-theme="light"] body.glass-immersive #heroTitle,
+html[data-theme="light"] body.glass-immersive .hero-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Calligraphy Kickers in Light Mode */
+html[data-theme="light"] body.glass-immersive .calligraphy-kicker {
+  color: #B45309 !important;
+  background: linear-gradient(135deg, #B45309 0%, #D97706 60%, #92400E 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] .gold-gradient-text {
+  background: linear-gradient(135deg, #B45309 0%, #D97706 50%, #78350F 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Trending Cards: Photos with Scrim Overlays MUST Stay White */
+html[data-theme="light"] body.glass-immersive .trend-card .trend-card-title,
+html[data-theme="light"] body.glass-immersive .trend-card p.trend-card-title,
+html[data-theme="light"] body.glass-immersive .trend-card p.text-white,
+html[data-theme="light"] body.glass-immersive .trend-card .card-calligraphy-accent {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85) !important;
+}
+
+/* ─── Elevated Light Mode Content Cards (Liquid Glass / Lait de Perle) ────────── */
+html[data-theme="light"] body.glass-immersive .glass-card,
+html[data-theme="light"] body.glass-immersive .card,
+html[data-theme="light"] body.glass-immersive .feature-card,
+html[data-theme="light"] body.glass-immersive .dest-card,
+html[data-theme="light"] body.glass-immersive .category-card,
+html[data-theme="light"] body.glass-immersive .content-sheet,
+html[data-theme="light"] body.glass-immersive .about-card {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 1px 3px rgba(15, 23, 42, 0.04),
+    0 10px 28px -4px rgba(15, 23, 42, 0.07) !important;
+  color: #1C1917 !important;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive .glass-card:hover,
+html[data-theme="light"] body.glass-immersive .card:hover,
+html[data-theme="light"] body.glass-immersive .feature-card:hover,
+html[data-theme="light"] body.glass-immersive .about-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(217, 119, 6, 0.40) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 18px 40px -6px rgba(15, 23, 42, 0.12),
+    0 0 20px -2px rgba(217, 119, 6, 0.18) !important;
+}
+
+/* Typography Inside Content Cards */
+html[data-theme="light"] body.glass-immersive .glass-card h1,
+html[data-theme="light"] body.glass-immersive .glass-card h2,
+html[data-theme="light"] body.glass-immersive .glass-card h3,
+html[data-theme="light"] body.glass-immersive .glass-card h4,
+html[data-theme="light"] body.glass-immersive .glass-card strong,
+html[data-theme="light"] body.glass-immersive .card h2,
+html[data-theme="light"] body.glass-immersive .card h3,
+html[data-theme="light"] body.glass-immersive .card strong,
+html[data-theme="light"] body.glass-immersive .dest-card h3:not(.dest-card-title) {
+  color: #1C1917 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .glass-card p,
+html[data-theme="light"] body.glass-immersive .glass-card span:not([class*="badge"]):not([class*="text-amber"]):not([class*="text-emerald"]),
+html[data-theme="light"] body.glass-immersive .glass-card li,
+html[data-theme="light"] body.glass-immersive .card p,
+html[data-theme="light"] body.glass-immersive .card li,
+html[data-theme="light"] body.glass-immersive .dest-card p {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .glass-card .text-slate-300,
+html[data-theme="light"] body.glass-immersive .glass-card .text-gray-600,
+html[data-theme="light"] body.glass-immersive .card .text-gray-600 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .glass-card .text-slate-400,
+html[data-theme="light"] body.glass-immersive .glass-card .text-gray-500,
+html[data-theme="light"] body.glass-immersive .card .text-gray-500 {
+  color: #64748B !important;
+}
+
+/* Search inputs and form fields inside cards */
+html[data-theme="light"] body.glass-immersive input:not(.search-input),
+html[data-theme="light"] body.glass-immersive select,
+html[data-theme="light"] body.glass-immersive textarea {
+  background: #FFFFFF !important;
+  color: #1C1917 !important;
+  border: 1.5px solid rgba(28, 25, 23, 0.15) !important;
+}
+
+html[data-theme="light"] body.glass-immersive textarea::placeholder,
+html[data-theme="light"] body.glass-immersive input::placeholder {
+  color: #64748B !important;
+}
+
+/* Hero Search Segmented Container */
+html[data-theme="light"] body.glass-immersive .hero-search-seg {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(217, 119, 6, 0.35) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-search-seg input,
+html[data-theme="light"] body.glass-immersive .hero-search-seg .search-input {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #1C1917 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-search-seg input::placeholder,
+html[data-theme="light"] body.glass-immersive .hero-search-seg .search-input::placeholder {
+  color: #64748B !important;
+}
+
+/* Footer in Light Mode — Stays Dark Cinema Canvas with Light Accessible Text */
+html[data-theme="light"] body.glass-immersive footer,
+html[data-theme="light"] body.glass-immersive #siteFooter,
+html[data-theme="light"] body.glass-immersive .footer {
+  background: #080A10 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .footer p,
+html[data-theme="light"] body.glass-immersive .footer span,
+html[data-theme="light"] body.glass-immersive .footer a,
+html[data-theme="light"] body.glass-immersive .footer li,
+html[data-theme="light"] body.glass-immersive #siteFooter p,
+html[data-theme="light"] body.glass-immersive #siteFooter span,
+html[data-theme="light"] body.glass-immersive #siteFooter a,
+html[data-theme="light"] body.glass-immersive #siteFooter li {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .footer .text-white,
+html[data-theme="light"] body.glass-immersive #siteFooter .text-white,
+html[data-theme="light"] body.glass-immersive .footer h4,
+html[data-theme="light"] body.glass-immersive .footer p.text-white {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .footer a:hover,
+html[data-theme="light"] body.glass-immersive #siteFooter a:hover {
+  color: #F5C542 !important;
+}
+
+/* ─── AI Finder Page Elements in Light Mode ───────────────── */
+html[data-theme="light"] body.glass-immersive .ex-chip,
+html[data-theme="light"] .ex-chip {
+  background: #FFFFFF !important;
+  color: #334155 !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .ex-chip:hover,
+html[data-theme="light"] .ex-chip:hover {
+  background: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #94A3B8 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .ex-chip svg,
+html[data-theme="light"] .ex-chip svg {
+  color: #D97706 !important;
+}
+
+html[data-theme="light"] #nearMeBtn {
+  background: #FEF3C7 !important;
+  border: 1px solid #FCD34D !important;
+  color: #92400E !important;
+}
+
+html[data-theme="light"] #nearMeBtn svg {
+  color: #D97706 !important;
+}
+
+html[data-theme="light"] #hint {
+  background: #F1F5F9 !important;
+  color: #64748B !important;
+  border: 1px solid #E2E8F0 !important;
+}
+
+html[data-theme="light"] #hint kbd {
+  color: #B45309 !important;
+}
+
+/* ─── AI Finder Search Result Cards in Light Mode ─────────── */
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap p.text-white,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap p.font-extrabold,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .text-white {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap p.text-slate-300 {
+  color: rgba(255, 255, 255, 0.90) !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .p-4 .text-white,
+html[data-theme="light"] body.glass-immersive .dest-card .p-5 .text-white,
+html[data-theme="light"] body.glass-immersive .dest-card .font-bold.text-white {
+  color: #1C1917 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card strong.text-slate-200 {
+  color: #1C1917 !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300 {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400 {
+  color: #64748B !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card [class*="bg-slate-800"] {
+  background: #FEF3C7 !important;
+  color: #92400E !important;
+  border: 1px solid #FCD34D !important;
+}
+
+html[data-theme="light"] body.glass-immersive .reason-chip {
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #047857 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  font-weight: 600 !important;
+}
+
+/* Understanding Box & Info Cards in AI Finder */
+html[data-theme="light"] body.glass-immersive [class*="bg-slate-900\/80"] {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(28, 25, 23, 0.12) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tag-chip {
+  background: #F1F5F9 !important;
+  color: #1C1917 !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   HIGH-VISIBILITY LUXURY LIGHT MODE OVERRIDES (/ui-ux-pro-max Luxury Trust)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* 1. Primary Action Buttons (Send Message, Browse Destinations, Find Destinations) */
+html[data-theme="light"] .btn-primary,
+html[data-theme="light"] .btn.btn-primary,
+html[data-theme="light"] button.btn-primary,
+html[data-theme="light"] a.btn-primary,
+html[data-theme="light"] #findBtn,
+html[data-theme="light"] body.glass-immersive .btn-primary,
+html[data-theme="light"] body.glass-immersive .btn.btn-primary,
+html[data-theme="light"] body.explore-immersive .btn-primary,
+html[data-theme="light"] body.explore-immersive .btn.btn-primary {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  border: 1px solid #B45309 !important;
+  border-bottom: 2.5px solid #92400E !important;
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.35) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="light"] .btn-primary:hover,
+html[data-theme="light"] .btn.btn-primary:hover,
+html[data-theme="light"] button.btn-primary:hover,
+html[data-theme="light"] a.btn-primary:hover,
+html[data-theme="light"] #findBtn:hover,
+html[data-theme="light"] body.glass-immersive .btn-primary:hover,
+html[data-theme="light"] body.glass-immersive .btn.btn-primary:hover,
+html[data-theme="light"] body.explore-immersive .btn-primary:hover,
+html[data-theme="light"] body.explore-immersive .btn.btn-primary:hover {
+  background: linear-gradient(135deg, #B45309 0%, #92400E 100%) !important;
+  color: #FFFFFF !important;
+  border-color: #78350F !important;
+  box-shadow: 0 6px 20px rgba(180, 83, 9, 0.45) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 2. Secondary & Outline Action Buttons */
+html[data-theme="light"] .btn-outline,
+html[data-theme="light"] a.btn-outline,
+html[data-theme="light"] button.btn-outline,
+html[data-theme="light"] body.glass-immersive .btn-outline,
+html[data-theme="light"] body.glass-immersive a.btn-outline,
+html[data-theme="light"] body.explore-immersive .btn-outline {
+  background: #FFFFFF !important;
+  color: #1E293B !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-bottom: 2px solid #94A3B8 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06) !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] .btn-outline:hover,
+html[data-theme="light"] a.btn-outline:hover,
+html[data-theme="light"] button.btn-outline:hover,
+html[data-theme="light"] body.glass-immersive .btn-outline:hover,
+html[data-theme="light"] body.glass-immersive a.btn-outline:hover,
+html[data-theme="light"] body.explore-immersive .btn-outline:hover {
+  background: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #94A3B8 !important;
+  border-bottom-color: #64748B !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 3. Form Labels, Descriptions & Contact Page Elements */
+html[data-theme="light"] label,
+html[data-theme="light"] .form-label,
+html[data-theme="light"] label.text-slate-200,
+html[data-theme="light"] .text-slate-200,
+html[data-theme="light"] body.glass-immersive label,
+html[data-theme="light"] body.glass-immersive .text-slate-200 {
+  color: #1E293B !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="light"] a.text-amber-400,
+html[data-theme="light"] .card a.text-amber-400,
+html[data-theme="light"] body.glass-immersive a.text-amber-400 {
+  color: #B45309 !important;
+  font-weight: 600 !important;
+}
+
+html[data-theme="light"] a.text-amber-400:hover,
+html[data-theme="light"] .card a.text-amber-400:hover,
+html[data-theme="light"] body.glass-immersive a.text-amber-400:hover {
+  color: #92400E !important;
+}
+
+html[data-theme="light"] .card strong.text-white,
+html[data-theme="light"] .card h3.text-white,
+html[data-theme="light"] body.glass-immersive .card strong.text-white,
+html[data-theme="light"] body.glass-immersive .card h3.text-white {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] .card .text-slate-300,
+html[data-theme="light"] body.glass-immersive .card .text-slate-300 {
+  color: #475569 !important;
+}
+
+/* 4. Toolbar Category Pills & Filter Chips */
+html[data-theme="light"] #typeFilter button,
+html[data-theme="light"] .category-pill-btn,
+html[data-theme="light"] body.glass-immersive #typeFilter button,
+html[data-theme="light"] body.explore-immersive .category-pill-btn {
+  background: #F1F5F9 !important;
+  color: #334155 !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] #typeFilter button:hover,
+html[data-theme="light"] .category-pill-btn:hover,
+html[data-theme="light"] body.glass-immersive #typeFilter button:hover,
+html[data-theme="light"] body.explore-immersive .category-pill-btn:hover {
+  background: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #94A3B8 !important;
+}
+
+html[data-theme="light"] #typeFilter button.active,
+html[data-theme="light"] #typeFilter button[aria-pressed="true"],
+html[data-theme="light"] .category-pill-btn.active,
+html[data-theme="light"] body.glass-immersive #typeFilter button.active,
+html[data-theme="light"] body.explore-immersive .category-pill-btn.active {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%) !important;
+  border: 1px solid #F59E0B !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  color: #92400E !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.20) !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] #typeFilter button svg,
+html[data-theme="light"] .category-pill-btn svg,
+html[data-theme="light"] body.glass-immersive #typeFilter button svg,
+html[data-theme="light"] body.explore-immersive .category-pill-btn svg {
+  color: #D97706 !important;
+  stroke: #D97706 !important;
+}
+
+/* 5. Universal Text Primary Reset in Light Mode */
+html[data-theme="light"] .text-primary,
+html[data-theme="light"] body.glass-immersive .text-primary,
+html[data-theme="light"] body.dest-immersive .text-primary {
+  color: #B45309 !important;
+  -webkit-text-fill-color: #B45309 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  font-weight: 700 !important;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+   HOMEPAGE LIGHT MODE CONTRAST & VISIBILITY (UI/UX PRO MAX SUITE)
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* 1. Featured Badges (Common component fallback for both themes) */
+.dest-badge-featured,
+body.glass-immersive .dest-badge-featured {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 4px 10px !important;
+  border-radius: 9999px !important;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%) !important;
+  border: 1px solid rgba(255, 243, 196, 0.6) !important;
+  color: #080A0F !important;
+  font-size: 9.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 4px 12px rgba(229, 192, 123, 0.35) !important;
+  white-space: nowrap !important;
+}
+
+html[data-theme="light"] .dest-badge-featured,
+html[data-theme="light"] body.glass-immersive .dest-badge-featured {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%) !important;
+  border: 1px solid #F59E0B !important;
+  color: #92400E !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25) !important;
+}
+
+/* 2. Floating Category Strip & Chips in Light Mode */
+html[data-theme="light"] body.glass-immersive .category-strip {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 4px 16px -2px rgba(15, 23, 42, 0.05),
+    0 12px 32px -4px rgba(15, 23, 42, 0.08) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.03) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip:hover {
+  background: #FFFFFF !important;
+  border-color: #D97706 !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 8px 24px rgba(217, 119, 6, 0.18),
+    0 0 14px rgba(217, 119, 6, 0.12) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip-label {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.01em !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip:hover .category-chip-label {
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip-count {
+  color: #64748B !important;
+  font-weight: 600 !important;
+  font-size: 0.74rem !important;
+}
+
+html[data-theme="light"] body.glass-immersive .category-chip:hover .category-chip-count {
+  color: #D97706 !important;
+}
+
+/* 3. Browse by Budget Cards in Light Mode */
+html[data-theme="light"] body.glass-immersive .budget-card {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 4px 16px -2px rgba(15, 23, 42, 0.05),
+    0 10px 24px -4px rgba(15, 23, 42, 0.06) !important;
+  border-radius: 1.25rem !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive .budget-card:hover {
+  background: #FFFFFF !important;
+  border-color: #D97706 !important;
+  transform: translateY(-5px) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 16px 36px -6px rgba(15, 23, 42, 0.12),
+    0 0 22px -2px rgba(217, 119, 6, 0.20) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .budget-card .text-gray-900,
+html[data-theme="light"] body.glass-immersive .budget-card font,
+html[data-theme="light"] body.glass-immersive .budget-card div:not(.text-gray-500) {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .budget-card:hover .text-gray-900,
+html[data-theme="light"] body.glass-immersive .budget-card:hover div:not(.text-gray-500) {
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .budget-card .text-gray-500 {
+  color: #64748B !important;
+  font-weight: 500 !important;
+}
+
+/* 4. Destination Cards in Light Mode (Best Hill Stations, Popular, etc.) */
+html[data-theme="light"] body.glass-immersive .card.dest-card,
+html[data-theme="light"] body.glass-immersive .dest-card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 2px 4px rgba(15, 23, 42, 0.04),
+    0 12px 30px -4px rgba(15, 23, 42, 0.07) !important;
+  border-radius: 1.35rem !important;
+  overflow: hidden !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive .card.dest-card:hover,
+html[data-theme="light"] body.glass-immersive .dest-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 20px 45px -8px rgba(15, 23, 42, 0.14),
+    0 0 24px -2px rgba(217, 119, 6, 0.22) !important;
+  border-color: rgba(217, 119, 6, 0.45) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .p-3,
+html[data-theme="light"] body.glass-immersive .dest-card [class*="bg-slate-900"],
+html[data-theme="light"] body.glass-immersive .card [class*="bg-slate-900"],
+html[data-theme="light"] body.glass-immersive .dest-card-body {
+  background: #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card h3 {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card-calligraphy-state {
+  color: #B45309 !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card strong.text-white,
+html[data-theme="light"] body.glass-immersive .dest-card strong,
+html[data-theme="light"] body.glass-immersive .dest-card .font-bold:not(.text-amber-400) {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300,
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .border-white\/10,
+html[data-theme="light"] body.glass-immersive .card .border-white\/10 {
+  border-color: #E2E8F0 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card span.text-amber-400 {
+  color: #D97706 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card .font-bold.text-amber-400,
+html[data-theme="light"] body.glass-immersive .dest-card .text-amber-400.font-bold {
+  color: #B45309 !important;
+  font-weight: 800 !important;
+}
+
+/* 5. AI Hero Card in Light Mode */
+html[data-theme="light"] body.glass-immersive .ai-hero-card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.90) 100%) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  border-top: 2.5px solid #D97706 !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 4px 20px -2px rgba(15, 23, 42, 0.06),
+    0 20px 50px -8px rgba(15, 23, 42, 0.12),
+    0 0 24px -4px rgba(217, 119, 6, 0.10) !important;
+  border-radius: 1.35rem !important;
+}
+
+html[data-theme="light"] body.glass-immersive .ai-hero-card span.text-gray-900,
+html[data-theme="light"] body.glass-immersive .ai-hero-card p.text-gray-900,
+html[data-theme="light"] body.glass-immersive .ai-hero-card strong.text-gray-900 {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .ai-hero-card p.text-gray-500 {
+  color: #475569 !important;
+}
+
+/* 6. Hero Popular Search Chips in Light Mode */
+html[data-theme="light"] body.glass-immersive #popular-searches .popular-chip,
+html[data-theme="light"] .popular-chip {
+  background: rgba(255, 255, 255, 0.90) !important;
+  backdrop-filter: blur(14px) !important;
+  color: #1E293B !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.06) !important;
+  font-weight: 600 !important;
+  transition: all 0.22s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive #popular-searches .popular-chip:hover,
+html[data-theme="light"] .popular-chip:hover {
+  background: #FFFFFF !important;
+  color: #B45309 !important;
+  border-color: #F59E0B !important;
+  transform: translateY(-2px) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 12px rgba(217, 119, 6, 0.18) !important;
+}
+
+/* 7. Month Selector Pills in Light Mode */
+html[data-theme="light"] body.glass-immersive .month-pill {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  color: #334155 !important;
+  border: 1px solid rgba(15, 23, 42, 0.09) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.22s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive .month-pill:hover {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #94A3B8 !important;
+  transform: translateY(-2px) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .month-pill.is-active,
+html[data-theme="light"] body.glass-immersive .month-pill[aria-pressed="true"] {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%) !important;
+  color: #92400E !important;
+  border: 1.5px solid #F59E0B !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.25) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .month-pill.is-active .pill-current-badge {
+  background: #92400E !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .month-pill:not(.is-active) .pill-current-badge {
+  background: #FEF3C7 !important;
+  color: #B45309 !important;
+  border: 1px solid #FCD34D !important;
+}
+
+/* 8. India Map Popover in Light Mode */
+html[data-theme="light"] body.glass-immersive .discover-map-inner {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 8px 24px -4px rgba(15, 23, 42, 0.05),
+    0 20px 50px -8px rgba(15, 23, 42, 0.10) !important;
+  border-radius: 1.5rem !important;
+}
+
+html[data-theme="light"] body.glass-immersive .india-map-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(217, 119, 6, 0.25) !important;
+  border-top: 2.5px solid #D97706 !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 16px 45px rgba(15, 23, 42, 0.12),
+    0 0 20px rgba(217, 119, 6, 0.12) !important;
+  border-radius: 1.25rem !important;
+}
+
+html[data-theme="light"] body.glass-immersive .india-map-card h3,
+html[data-theme="light"] body.glass-immersive .india-map-card .font-bold {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .india-map-card p,
+html[data-theme="light"] body.glass-immersive .india-map-card span:not([class*="badge"]) {
+  color: #475569 !important;
+}
+
+/* 9. Autocomplete Search Dropdown in Light Mode */
+html[data-theme="light"] body.glass-immersive #autocomplete,
+html[data-theme="light"] .autocomplete-dropdown {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+  box-shadow:
+    inset 0 1px 0 0 #FFFFFF,
+    0 20px 48px rgba(15, 23, 42, 0.14) !important;
+  border-radius: 1.15rem !important;
+}
+
+html[data-theme="light"] body.glass-immersive .autocomplete-item {
+  color: #0F172A !important;
+  border-bottom: 1px solid #F1F5F9 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .autocomplete-item:hover,
+html[data-theme="light"] body.glass-immersive .autocomplete-item.is-active {
+  background: #F8FAFC !important;
+}
+
+html[data-theme="light"] body.glass-immersive .autocomplete-item .font-bold,
+html[data-theme="light"] body.glass-immersive .autocomplete-item .font-semibold {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .autocomplete-item .text-gray-500 {
+  color: #64748B !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACCESSIBILITY — prefers-reduced-motion (WCAG 2.1 AAA)
+   ═══════════════════════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  body.glass-immersive *,
+  body.glass-immersive *::before,
+  body.glass-immersive *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  body.glass-immersive .card:hover,
+  body.glass-immersive .dest-card:hover,
+  body.glass-immersive .category-chip:hover,
+  body.glass-immersive .budget-card:hover {
+    transform: none !important;
   }
 }

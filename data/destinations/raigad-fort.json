@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Raigad Fort — heritage city of Maharashtra",
+  "badge": "Historic Fortress",
+  "tagline": "Raigad Fort — historic fortress of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Raigad_fort_towers.jpg",
     "alt": "Raigad Fort, Maharashtra"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -210,7 +210,7 @@
     {
       "name": "ISKCON Temple, Pune",
       "category": "spiritual",
-      "distance": "8 km",
+      "distance": "8 km from Raigad Fort, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,7 +224,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/6/6a/ISKONNVCC_02.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/7/72/ISKONNVCC_05.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/2/26/ISKONNVCC_06.JPG"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Raigad Fort"
     }
   ],
   "itinerary": [
@@ -331,28 +332,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Raigad_fort_towers.jpg",
-      "alt": "Historic stone towers at Raigad Fort in Maharashtra"
+      "alt": "Historic stone towers at Raigad Fort in Maharashtra",
+      "title": "Raigad Fort Towers"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/RaigadFort3.jpg",
-      "alt": "Moss-covered stone ruins within Raigad Fort"
+      "alt": "Moss-covered stone ruins within Raigad Fort",
+      "title": "RaigadFort3 — Raigad Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Palace_at_Raigad_Fort.jpg",
-      "alt": "Palace courtyard and architecture at Raigad Fort"
+      "alt": "Palace courtyard and architecture at Raigad Fort",
+      "title": "Palace At Raigad Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/A_view_from_Fort_Raigad.jpg",
-      "alt": "Fortifications and mountain view from Raigad Fort"
+      "alt": "Fortifications and mountain view from Raigad Fort",
+      "title": "A View From Fort Raigad — Raigad Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Raigad_fort_walls_hidden_in_the_green.JPG",
-      "alt": "Raigad Fort walls across the green monsoon hillside"
+      "alt": "Raigad Fort walls across the green monsoon hillside",
+      "title": "Raigad Fort Walls Hidden In The Green"
     }
   ],
   "faq": [

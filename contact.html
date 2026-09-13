@@ -8,6 +8,19 @@
   <meta name="keywords" content="contact ExploreDesh, travel support, partner with ExploreDesh, destination enquiries" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#080A0F" />
+  <!-- Fast-path zero-FOUC theme resolution -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('exploredesh_theme');
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#080A0F');
+      } catch (_) {}
+    })();
+  </script>
   <link rel="canonical" href="https://exploredesh.com/contact.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Bodoni Moda, Playfair Display & Plus Jakarta Sans -->
@@ -18,9 +31,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Jost:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/tailwind.css" />
-  <link rel="stylesheet" href="css/glass-immersive.css" />
+  <link rel="stylesheet" href="css/styles.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20260914_6" />
 </head>
 <body class="bg-slate-950 text-slate-100 glass-immersive">
 

@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Ankai Fort — heritage city of Maharashtra",
+  "badge": "Historic Fortress",
+  "tagline": "Ankai Fort — historic fortress of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ankai_Fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "alt": "Ankai Fort, Maharashtra"
@@ -18,7 +18,7 @@
       "Forts",
       "Architecture",
       "History",
-      "Local Bazaars"
+      "Historic Ramparts"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -210,7 +210,7 @@
     {
       "name": "Tankai fort",
       "category": "heritage",
-      "distance": "Town Centre",
+      "distance": "In Ankai Fort Centre, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TankaiFort.jpg/1280px-TankaiFort.jpg",
         "https://pixabay.com/get/g81901c7738ba7f88583b2a93f7f02cd8e138fc891eabecc7218b16c8be057d43bb2da2980146f62471e6040915aaf8a8f48243a2bd687e016cff36371c3d88a8_1280.png",
         "https://pixabay.com/get/gf3f36c4ce529d296f2b6bfb5bc34a82e9d9eaa31e2cd1292e5c3f5b1e384bcc2f0ee534205dae59bb09932de0e20b46adee4fb5819fd4244ca730cee1666d95c_1280.png"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Manmad",
       "category": "scenic",
-      "distance": "7 km",
+      "distance": "7 km from Ankai Fort, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,7 +244,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Manmad_Junction.JPG/1280px-Manmad_Junction.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/c/cf/Manmad_Junction.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://pixabay.com/get/gcf494194b1a4f5a320712befee88a929a26e8848c4228ee5b482bb34362ddeb57ff23492ddb5a9e0087973ca8ee88880da515f931e3432cc55929784d5e0e884_1280.png"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Ankai Fort"
     }
   ],
   "itinerary": [
@@ -362,24 +364,28 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Fort Exploration"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ankai_Fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ankai Fort view 1 — Ankai Fort"
+      "alt": "Ankai Fort view 1 — Ankai Fort",
+      "title": "Ankai Fort view 1 — Ankai Fort — Ankai Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Ankai_1.jpg",
-      "alt": "Ankai Fort photo 2"
+      "alt": "Manmad — Ankai Fort",
+      "title": "Manmad — Ankai Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ankai5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ankai Fort — Ankai5"
+      "alt": "Ankai Fort — Ankai5",
+      "title": "Ankai5 — Ankai Fort"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ankai12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ankai Fort — Ankai12"
+      "alt": "Ankai Fort — Ankai12",
+      "title": "Ankai12 — Ankai Fort"
     }
   ],
   "faq": [

@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Lower Himalayas",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Shimla — hill station of Himachal Pradesh",
   "heroImage": {
     "src": "https://images.pexels.com/photos/4999674/pexels-photo-4999674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -211,7 +211,7 @@
     {
       "name": "The Ridge & Mall Road",
       "category": "town",
-      "distance": "Centre",
+      "distance": "In Shimla Centre, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -225,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/94/Mamandur_rock_cut_caves_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/c/ca/Mamandur_rock_cut_caves_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mamandur_rock_cut_caves_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Jakhoo Temple",
       "category": "spiritual",
-      "distance": "2 km",
+      "distance": "2 km from Shimla, Himachal Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -244,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e7/Mamandur_rock_cut_caves_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mamandur_rock_cut_caves_6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/5d/Thirunanthikarai_rock-cut_cave_temple%2C_Kanyakumari_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Shimla"
     },
     {
       "name": "Kalka–Shimla Toy Train",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Shimla Centre, Himachal Pradesh",
       "entryFee": "₹300",
       "timings": "Varies by season",
       "duration": "5 hrs",
@@ -263,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Entrance%2C_Thirunanthikarai_rock-cut_cave_temple%2C_Kanyakumari_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/dc/Entrance_to_rock_cut_caves_at_Dhanadibbalu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/11/Carving_inside_Jogeshwari_Caves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -414,23 +417,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/4999674/pexels-photo-4999674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Shimla photo 3"
+      "alt": "The Ridge & Mall Road — Shimla",
+      "title": "The Ridge & Mall Road — Shimla"
     },
     {
       "src": "https://images.pexels.com/photos/944364/pexels-photo-944364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Shimla photo 4"
+      "alt": "Jakhoo Temple — Shimla",
+      "title": "Jakhoo Temple — Shimla"
     },
     {
       "src": "https://images.pexels.com/photos/2418400/pexels-photo-2418400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Shimla photo 5"
+      "alt": "Kalka–Shimla Toy Train — Shimla",
+      "title": "Kalka–Shimla Toy Train — Shimla"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/Stupa_with_Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar%2C_India_61.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "ancient pillar stone India"
+      "alt": "ancient pillar stone India",
+      "title": "ancient pillar stone India — Shimla"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Stupa_with_Asokan_Pillar_at_Archeological_remains_of_Vaishali%2C_Kolhua_in_Bihar%2C_India_62.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "ancient pillar stone India"
+      "alt": "ancient pillar stone India",
+      "title": "ancient pillar stone India — Shimla"
     }
   ],
   "faq": [

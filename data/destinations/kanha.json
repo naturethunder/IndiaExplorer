@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Maikal Hills",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Kanha — wildlife reserve of Madhya Pradesh",
+  "badge": "Wildlife Sanctuary",
+  "tagline": "Protected Wildlife Sanctuary & Natural Habitat in Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Common_Sailer_Neptis_hylas_UN_Kanha_Madhya_Pradesh_IMG_9762_%285%29.CR2.jpg",
     "alt": "Kanha, Madhya Pradesh"
@@ -17,7 +17,8 @@
     "features": [
       "Jungle Book",
       "Barasingha",
-      "Sal Forests"
+      "Sal Forests",
+      "Wildlife Habitat"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -212,7 +213,7 @@
     {
       "name": "Kanha Jeep Safari",
       "category": "wildlife",
-      "distance": "Park",
+      "distance": "Park near Kanha, Madhya Pradesh",
       "entryFee": "₹2,500",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f4/Pataleswar_Temple%2C_Palanpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/81/Ahmedabad2007-187.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ahmedabad2007-343.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Kanha"
     },
     {
       "name": "Bamni Dadar",
       "category": "scenic",
-      "distance": "Park",
+      "distance": "Park near Kanha, Madhya Pradesh",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ambe_Maa_Ambapur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Khimeshwar_temple_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/68/Rtob.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Kanha"
     },
     {
       "name": "Kanha Museum",
       "category": "cultural",
-      "distance": "Gate",
+      "distance": "On-site at Kanha",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/db/Main_Portal_of_the_Ruins_of_the_Rudramala_at_Sidhpur_Gujarat_1905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panchnath_mahadev.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/Jogninar_Temple_Vira_Kutch_Gujarat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Inside complex (Walkable)"
     }
   ],
   "itinerary": [
@@ -393,23 +397,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Common_Sailer_Neptis_hylas_UN_Kanha_Madhya_Pradesh_IMG_9762_%285%29.CR2.jpg",
-      "alt": "Kanha in Kanha, Madhya Pradesh - Common Sailer Neptis hylas UN at Kanha Tiger Reserve, Madhya Pradesh"
+      "alt": "Common Sailer Neptis Hylas UN Kanha Madhya Pradesh 9762 (5).CR",
+      "title": "Common Sailer Neptis Hylas UN Kanha Madhya Pradesh 9762 (5).CR"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Thirsty_Monkey%21.jpg",
-      "alt": "Kanha photo 2"
+      "alt": "Thirsty Monkey! — Kanha",
+      "title": "Thirsty Monkey! — Kanha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Thai_-_Vessantara_Jataka%2C_Chapter_4_-_Vessantara%2C_Maddi%2C_Jali%2C_and_Kanha_Enter_the_Forest_-_Walters_35234.jpg",
-      "alt": "Kanha photo 4"
+      "alt": "Kanha Museum — Kanha",
+      "title": "Kanha Museum — Kanha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Thai_-_Vessantara_Jataka%2C_Chapter_4_-_Vessantara%2C_Maddi%2C_Jali%2C_and_Kanha_Enter_the_Forest_-_Walters_2010125.jpg",
-      "alt": "Kanha photo 5"
+      "alt": "Wildlife Habitat at Kanha",
+      "title": "Wildlife Habitat at Kanha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Thirsty_Deers%21.jpg",
-      "alt": "Kanha photo 6"
+      "alt": "Thirsty Deers! — Kanha",
+      "title": "Thirsty Deers! — Kanha"
     }
   ],
   "faq": [

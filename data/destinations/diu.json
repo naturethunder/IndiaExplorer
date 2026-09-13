@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kathiawar Coast",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Fortress",
   "tagline": "Diu — beach town of Daman & Diu",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Diu_7.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Portuguese Fort",
       "Quiet Beaches",
-      "Seafood"
+      "Seafood",
+      "Coastal Fortress"
     ],
     "altitude": null,
     "rating": 4.3,
@@ -211,7 +212,7 @@
     {
       "name": "Diu Fort",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Diu Centre, Daman & Diu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -225,12 +226,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Diu_fort.jpg/1280px-Diu_fort.jpg",
         "https://images.pexels.com/photos/39013091/pexels-photo-39013091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/38103879/pexels-photo-38103879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Nagoa Beach",
       "category": "beach",
-      "distance": "7 km",
+      "distance": "7 km from Diu, Daman & Diu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -244,12 +246,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nagoa_Beach_-_panoramio.jpg/1280px-Nagoa_Beach_-_panoramio.jpg",
         "https://images.pexels.com/photos/37310930/pexels-photo-37310930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/38103878/pexels-photo-38103878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Diu"
     },
     {
       "name": "St. Paul’s Church",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Diu Centre, Daman & Diu",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "30 min",
@@ -263,7 +266,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/St._Paul_Church_-_Diu_-_001.jpg/1280px-St._Paul_Church_-_Diu_-_001.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/St._Paul_Church_-_Diu_-_006.jpg/1280px-St._Paul_Church_-_Diu_-_006.jpg",
         "https://images.pexels.com/photos/12610659/pexels-photo-12610659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -412,23 +416,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Diu_7.jpg",
-      "alt": "Diu in Diu, Daman & Diu - Governor's Palace in Diu, destroyed in 1961 by Indian artillery"
+      "alt": "Diu in Diu, Daman & Diu - Governor's Palace in Diu, destroyed in 1961 by Indian artillery",
+      "title": "Daman & Diu — Diu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Diu_Fortress%2C_Jan._2010.jpg",
-      "alt": "Diu photo 2"
+      "alt": "Diu Fortress, Jan.",
+      "title": "Diu Fortress, Jan."
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Nagoa_Beach%2C_Diu.jpg",
-      "alt": "Diu photo 3"
+      "alt": "Nagoa Beach, Diu",
+      "title": "Nagoa Beach, Diu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Nagoa_Beach_-_panoramio_%281%29.jpg",
-      "alt": "Diu photo 4"
+      "alt": "Nagoa Beach Panoramio — Diu",
+      "title": "Nagoa Beach Panoramio — Diu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/St._Paul_Church_-_Diu_-_002.jpg",
-      "alt": "Diu photo 5"
+      "alt": "St. Paul Church Diu",
+      "title": "St. Paul Church Diu"
     }
   ],
   "faq": [

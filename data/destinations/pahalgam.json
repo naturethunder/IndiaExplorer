@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Anantnag",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Pahalgam — hill station of Jammu & Kashmir",
   "heroImage": {
     "src": "https://images.pexels.com/photos/14177070/pexels-photo-14177070.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -17,7 +17,8 @@
     "features": [
       "Lidder River",
       "Betaab Valley",
-      "Amarnath Base"
+      "Amarnath Base",
+      "Misty Hills"
     ],
     "altitude": 2740,
     "rating": 4.6,
@@ -210,7 +211,7 @@
     {
       "name": "Betaab Valley",
       "category": "scenic",
-      "distance": "15 km",
+      "distance": "15 km from Pahalgam, Jammu & Kashmir",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -224,12 +225,13 @@
         "https://live.staticflickr.com/7145/6448489249_2ed6bf49bc_b.jpg",
         "https://live.staticflickr.com/7538/15096742414_e12c45acac_b.jpg",
         "https://images.pexels.com/photos/30244032/pexels-photo-30244032.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Pahalgam"
     },
     {
       "name": "Aru Valley",
       "category": "scenic",
-      "distance": "12 km",
+      "distance": "12 km from Pahalgam, Jammu & Kashmir",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://live.staticflickr.com/7148/6435818941_f0a12137f4_b.jpg",
         "https://live.staticflickr.com/6019/6359818441_f4b9f97f9c_b.jpg",
         "https://images.pexels.com/photos/38762584/pexels-photo-38762584.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Pahalgam"
     },
     {
       "name": "Chandanwari",
       "category": "scenic",
-      "distance": "16 km",
+      "distance": "16 km from Pahalgam, Jammu & Kashmir",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -262,7 +265,8 @@
         "https://live.staticflickr.com/4300/35381855043_e0ff481d61_b.jpg",
         "https://live.staticflickr.com/4296/35349845054_1cd70349eb_b.jpg",
         "https://images.pexels.com/photos/46727008/pexels-photo-46727008.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Pahalgam"
     }
   ],
   "itinerary": [
@@ -410,23 +414,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/14177070/pexels-photo-14177070.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "Serene river flowing through rocky landscape with mountain backdrop in Pahalgam, capturing natural beauty."
+      "alt": "Serene river flowing through rocky landscape with mountain backdrop in Pahalgam, capturing natural beauty.",
+      "title": "Betaab Valley — Pahalgam"
     },
     {
       "src": "https://images.pexels.com/photos/38496871/pexels-photo-38496871.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "Tranquil river flowing through lush green hills in Pahalgam, showcasing natural beauty and serenity."
+      "alt": "Tranquil river flowing through lush green hills in Pahalgam, showcasing natural beauty and serenity.",
+      "title": "Aru Valley — Pahalgam"
     },
     {
       "src": "https://images.pexels.com/photos/28805621/pexels-photo-28805621.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "Breathtaking view of lush valleys and mountains in Pahalgam, Kashmir on a clear day."
+      "alt": "Breathtaking view of lush valleys and mountains in Pahalgam, Kashmir on a clear day.",
+      "title": "Chandanwari — Pahalgam"
     },
     {
       "src": "https://images.pexels.com/photos/17400910/pexels-photo-17400910.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "Captivating aerial view of lush valley with meandering river in Pahalgam, perfect for nature lovers."
+      "alt": "Captivating aerial view of lush valley with meandering river in Pahalgam, perfect for nature lovers.",
+      "title": "Misty Hills at Pahalgam"
     },
     {
       "src": "https://images.pexels.com/photos/10538891/pexels-photo-10538891.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "A breathtaking aerial shot of a river winding through dense forests in Pahalgam, showcasing lush greenery and natural beauty."
+      "alt": "A breathtaking aerial shot of a river winding through dense forests in Pahalgam, showcasing lush greenery and natural beauty.",
+      "title": "Golden Sunlit Ridge Vista at Pahalgam"
     }
   ],
   "faq": [

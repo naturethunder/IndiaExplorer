@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Konkan Coast",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Gokarna — beach town of Karnataka",
   "heroImage": {
     "src": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -17,7 +17,8 @@
     "features": [
       "Beaches",
       "Temples",
-      "Backpacker"
+      "Backpacker",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -212,7 +213,7 @@
     {
       "name": "Om Beach",
       "category": "beach",
-      "distance": "6 km",
+      "distance": "6 km from Gokarna, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -226,12 +227,13 @@
         "https://images.pexels.com/photos/24963228/pexels-photo-24963228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/31288292/pexels-photo-31288292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/13383545/pexels-photo-13383545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Gokarna"
     },
     {
       "name": "Mahabaleshwar Temple",
       "category": "spiritual",
-      "distance": "Centre",
+      "distance": "In Gokarna Centre, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +247,13 @@
         "https://images.pexels.com/photos/12446345/pexels-photo-12446345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/17233027/pexels-photo-17233027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/102124/pexels-photo-102124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Kudle Beach",
       "category": "beach",
-      "distance": "3 km",
+      "distance": "3 km from Gokarna, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -264,7 +267,8 @@
         "https://images.pexels.com/photos/35279373/pexels-photo-35279373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/37709751/pexels-photo-37709751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/38073983/pexels-photo-38073983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Gokarna"
     }
   ],
   "itinerary": [
@@ -392,23 +396,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/29520172/pexels-photo-29520172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Spectacular turquoise waters and natural double-crescent coastline of Om Beach in Gokarna, Karnataka"
+      "alt": "Spectacular turquoise waters and natural double-crescent coastline of Om Beach in Gokarna, Karnataka",
+      "title": "Spectacular turquoise waters and natural double — Gokarna"
     },
     {
       "src": "https://images.pexels.com/photos/29563653/pexels-photo-29563653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gokarna landscape photo 2"
+      "alt": "Mahabaleshwar Temple — Gokarna",
+      "title": "Mahabaleshwar Temple — Gokarna"
     },
     {
       "src": "https://images.pexels.com/photos/17344039/pexels-photo-17344039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gokarna landscape photo 3"
+      "alt": "Kudle Beach — Gokarna",
+      "title": "Kudle Beach — Gokarna"
     },
     {
       "src": "https://images.pexels.com/photos/6769121/pexels-photo-6769121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gokarna landscape photo 4"
+      "alt": "Coastal Shoreline at Gokarna",
+      "title": "Coastal Shoreline at Gokarna"
     },
     {
       "src": "https://images.pexels.com/photos/19993279/pexels-photo-19993279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Gokarna landscape photo 5"
+      "alt": "Dramatic Sunset Over the Sea at Gokarna",
+      "title": "Dramatic Sunset Over the Sea at Gokarna"
     }
   ],
   "faq": [

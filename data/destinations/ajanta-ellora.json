@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Aurangabad",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Ajanta & Ellora — heritage city of Maharashtra",
+  "badge": "Rock-Cut Caves",
+  "tagline": "Ancient Rock-Cut Caves & Archaeological Heritage in Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Maharashtra_Districts.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "alt": "Ajanta & Ellora, Maharashtra"
@@ -17,7 +17,8 @@
     "features": [
       "Rock-cut Caves",
       "UNESCO",
-      "Murals"
+      "Murals",
+      "Rock-Cut Architecture"
     ],
     "altitude": null,
     "rating": 4.7,
@@ -213,7 +214,7 @@
     {
       "name": "Ajanta Caves",
       "category": "heritage",
-      "distance": "100 km",
+      "distance": "100 km from Ajanta & Ellora, Maharashtra",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -227,12 +228,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%287%29.jpg/1280px-AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%287%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2837%29.jpg/1280px-AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2837%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/Ajanta_cave_no._9_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "2–3 hrs drive from Ajanta & Ellora"
     },
     {
       "name": "Ellora Caves",
       "category": "heritage",
-      "distance": "30 km",
+      "distance": "30 km from Ajanta & Ellora, Maharashtra",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -246,12 +248,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2813%29.jpg/1280px-AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2813%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2812%29.jpg/1280px-AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2812%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Ellora_Caves%2C_India%2C_Kailasanatha_Temple_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Ajanta & Ellora"
     },
     {
       "name": "Bibi Ka Maqbara",
       "category": "heritage",
-      "distance": "Aurangabad",
+      "distance": "Aurangabad near Ajanta & Ellora, Maharashtra",
       "entryFee": "₹25",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -265,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/7/7a/BIBI_KA_MAQBARA_%28TOMB_OF_THE_LADY%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/Bibi_Ka_Maqbara_Entrance_gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/71/Flowers_carving_on_Bibi_ka_Maqbara_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Ajanta & Ellora"
     }
   ],
   "itinerary": [
@@ -413,23 +417,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/32/Maharashtra_Districts.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ajanta & Ellora view 1 — Maharashtra Districts"
+      "alt": "Ajanta & Ellora view 1 — Maharashtra Districts",
+      "title": "Maharashtra Districts — Ajanta & Ellora"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/AJANTA_ELLORA_CAVES-Dr._Murali_Mohan_Gurram_%2836%29.jpg",
-      "alt": "Ajanta & Ellora photo 2"
+      "alt": "AJANTA ELLORA CAVES Dr. Murali Mohan Gurram — Ajanta & Ellora",
+      "title": "AJANTA ELLORA CAVES Dr. Murali Mohan Gurram — Ajanta & Ellora"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ajanta_Ellora_caves-_Maharashtra%2CIndia.jpg",
-      "alt": "Ajanta & Ellora photo 3"
+      "alt": "Ajanta Ellora Caves Maharashtra,India — Ajanta & Ellora",
+      "title": "Ajanta Ellora Caves Maharashtra,India — Ajanta & Ellora"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Peace_And_Perfection_-_Ajanta_%26_Ellora_caves%2C_Maharashtra.jpg",
-      "alt": "Ajanta & Ellora photo 4"
+      "alt": "Peace And Perfection Ajanta & Ellora Caves, Maharashtra",
+      "title": "Peace And Perfection Ajanta & Ellora Caves, Maharashtra"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ajanta_and_ellora_caves_at_aurangabad%2Cmaharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Ajanta & Ellora view 5 — Ajanta and ellora caves at aurangabad,maharashtra"
+      "alt": "Ajanta & Ellora view 5 — Ajanta and ellora caves at aurangabad,maharashtra",
+      "title": "Ajanta And Ellora Caves At Aurangabad,maharashtra — Ajanta & Ellora"
     }
   ],
   "faq": [

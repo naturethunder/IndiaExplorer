@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Kashmir Valley",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Srinagar — hill station of Jammu & Kashmir",
   "heroImage": {
     "src": "https://images.pexels.com/photos/35255985/pexels-photo-35255985.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -211,7 +211,7 @@
     {
       "name": "Dal Lake Shikara Ride",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Srinagar Centre, Jammu & Kashmir",
       "entryFee": "₹800",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -225,12 +225,13 @@
         "https://images.pexels.com/photos/4000600/pexels-photo-4000600.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/3000400/pexels-photo-3000400.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/3017402/pexels-photo-3017402.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Mughal Gardens (Nishat & Shalimar)",
       "category": "heritage",
-      "distance": "9 km",
+      "distance": "9 km from Srinagar, Jammu & Kashmir",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -244,12 +245,13 @@
         "https://images.pexels.com/photos/33801560/pexels-photo-33801560.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/33801563/pexels-photo-33801563.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/27523510/pexels-photo-27523510.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Srinagar"
     },
     {
       "name": "Shankaracharya Temple",
       "category": "spiritual",
-      "distance": "6 km",
+      "distance": "6 km from Srinagar, Jammu & Kashmir",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -263,7 +265,8 @@
         "https://images.pexels.com/photos/16381693/pexels-photo-16381693.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/36692735/pexels-photo-36692735.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/35131055/pexels-photo-35131055.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Srinagar"
     }
   ],
   "itinerary": [
@@ -414,23 +417,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/35255985/pexels-photo-35255985.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "A scenic view of a traditional shikara boat on Dal Lake in Srinagar, Kashmir."
+      "alt": "A scenic view of a traditional shikara boat on Dal Lake in Srinagar, Kashmir.",
+      "title": "Dal Lake Shikara Ride — Srinagar"
     },
     {
       "src": "https://images.pexels.com/photos/7179406/pexels-photo-7179406.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "A serene aerial perspective of a traditional shikara boat floating on the tranquil waters of Dal Lake in Srinagar."
+      "alt": "A serene aerial perspective of a traditional shikara boat floating on the tranquil waters of Dal Lake in Srinagar.",
+      "title": "Mughal Gardens (Nishat & Shalimar) — Srinagar"
     },
     {
       "src": "https://images.pexels.com/photos/31432750/pexels-photo-31432750.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "A peaceful view of Dal Lake framed by mountains and colorful shikara boats under a clear blue sky."
+      "alt": "A peaceful view of Dal Lake framed by mountains and colorful shikara boats under a clear blue sky.",
+      "title": "Shankaracharya Temple — Srinagar"
     },
     {
       "src": "https://images.pexels.com/photos/33466692/pexels-photo-33466692.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "Colorful shikaras resting on the serene waters of Dal Lake, Srinagar with mountains in the backdrop."
+      "alt": "Colorful shikaras resting on the serene waters of Dal Lake, Srinagar with mountains in the backdrop.",
+      "title": "Houseboats at Srinagar"
     },
     {
       "src": "https://images.pexels.com/photos/28944985/pexels-photo-28944985.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "alt": "A vibrant yellow shikara boat on the tranquil waters of Dal Lake in Srinagar."
+      "alt": "A vibrant yellow shikara boat on the tranquil waters of Dal Lake in Srinagar.",
+      "title": "Golden Sunlit Ridge Vista at Srinagar"
     }
   ],
   "faq": [

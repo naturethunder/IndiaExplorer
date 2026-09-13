@@ -8,4 +8,28 @@ Disallow: /docs/
 Disallow: /stubs/
 Disallow: /*.md$
 
+# Explicit AI Search & Knowledge Agents (Generative Engine Optimization / AI Discovery)
+User-agent: GPTBot
+Allow: /
+Disallow: /scripts/
+Disallow: /stubs/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /scripts/
+Disallow: /stubs/
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://exploredesh.com/sitemap.xml
+

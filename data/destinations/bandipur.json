@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Chamarajanagar",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Bandipur — wildlife reserve of Karnataka",
+  "badge": "Wildlife Sanctuary",
+  "tagline": "Protected Wildlife Sanctuary & Natural Habitat in Karnataka",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tiger_and_its_Reflection.jpg",
     "alt": "Bandipur, Karnataka"
@@ -17,7 +17,8 @@
     "features": [
       "Tigers",
       "Elephants",
-      "Safari"
+      "Safari",
+      "Wildlife Habitat"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -212,7 +213,7 @@
     {
       "name": "Bandipur Jeep Safari",
       "category": "wildlife",
-      "distance": "Park",
+      "distance": "Park near Bandipur, Karnataka",
       "entryFee": "₹1,200",
       "timings": "Varies by season",
       "duration": "3 hrs",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/1/1e/Hampi_group_of_monuments_05.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bandipur_-_Karnataka_%284860641860%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/68/Tiger_and_its_Reflection.jpg"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Bandipur"
     },
     {
       "name": "Himavad Gopalaswamy Betta",
       "category": "scenic",
-      "distance": "30 km",
+      "distance": "30 km from Bandipur, Karnataka",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gopal_Swami_Betta_%40_Bandipur_Tiger_Reserve_-_panoramio.jpg/1280px-Gopal_Swami_Betta_%40_Bandipur_Tiger_Reserve_-_panoramio.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/8/8f/Gopal_Swami_Betta_%40_Bandipur_Tiger_Reserve_-_panoramio.jpg",
         "https://images.pexels.com/photos/35688869/pexels-photo-35688869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Bandipur"
     },
     {
       "name": "Moyar River Gorge",
       "category": "scenic",
-      "distance": "25 km",
+      "distance": "25 km from Bandipur, Karnataka",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/A_view_of_the_Moyar_gorge_with_the_Beer_Mukkan_temple_to_the_left_of_the_frame.jpg/1280px-A_view_of_the_Moyar_gorge_with_the_Beer_Mukkan_temple_to_the_left_of_the_frame.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/0/00/A_view_of_the_Moyar_gorge_with_the_Beer_Mukkan_temple_to_the_left_of_the_frame.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/e/e9/House_Sparrow_%28male%29_at_Bandipur_Tiger_Reserve%2C_Karnataka_DSC00719.jpg"
-      ]
+      ],
+      "travelTime": "35–50 mins drive from Bandipur"
     }
   ],
   "itinerary": [
@@ -413,23 +417,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tiger_and_its_Reflection.jpg",
-      "alt": "Bandipur photo 2"
+      "alt": "Tiger And Its Reflection — Bandipur",
+      "title": "Tiger And Its Reflection — Bandipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/2012-bandipur-gopalaswamy.jpg",
-      "alt": "Bandipur photo 3"
+      "alt": "2012 Bandipur Gopalaswamy",
+      "title": "2012 Bandipur Gopalaswamy"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/88/Sri_Himavad_Gopalaswamy_Hill%2C_Bandipur%2C_Gundalpet%2C_Karnataka%2C_South_India%2C_South_Asia.jpg",
-      "alt": "Bandipur photo 4"
+      "alt": "Moyar River Gorge — Bandipur",
+      "title": "Moyar River Gorge — Bandipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Chital_Run_%2868191027%29.jpeg",
-      "alt": "Bandipur photo 5"
+      "alt": "Chital Run — Bandipur",
+      "title": "Chital Run — Bandipur"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Hampi_group_of_monuments_04.jpg",
-      "alt": "Bandipur in Karnataka - Hampi is a UNESCO World Heritage site with a collection of monuments , built by the Vijayanagara"
+      "alt": "Bandipur in Karnataka - Hampi is a UNESCO World Heritage site with a collection of monuments , built by the Vijayanagara",
+      "title": "Hampi Group Of Monuments — Bandipur"
     }
   ],
   "faq": [

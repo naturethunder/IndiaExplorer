@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Aravalli Range",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Mount Abu — hill station of Rajasthan",
   "heroImage": {
     "src": "https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -17,7 +17,8 @@
     "features": [
       "Only Hill Station",
       "Dilwara Temples",
-      "Nakki Lake"
+      "Nakki Lake",
+      "Tranquil Lake Waters"
     ],
     "altitude": 1220,
     "rating": 4.4,
@@ -212,7 +213,7 @@
     {
       "name": "Dilwara Jain Temples",
       "category": "heritage",
-      "distance": "3 km",
+      "distance": "3 km from Mount Abu, Rajasthan",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/0/01/Main_Uddin_and_Chaulung_Chukafa_Web_Team.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/89/Sualkuchi_Main_Gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mobile_Puppet_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Mount Abu"
     },
     {
       "name": "Nakki Lake",
       "category": "scenic",
-      "distance": "Town Centre",
+      "distance": "In Mount Abu Centre, Rajasthan",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nakki_Lake%2C_Mount_Abu%2C_Rajasthan%2C_610.jpg/1280px-Nakki_Lake%2C_Mount_Abu%2C_Rajasthan%2C_610.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Nakki_Lake-Mount_Abu.jpg/1280px-Nakki_Lake-Mount_Abu.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/6/67/Road_in_Shikdamakha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Guru Shikhar",
       "category": "scenic",
-      "distance": "15 km",
+      "distance": "15 km from Mount Abu, Rajasthan",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view_of_Jatinga_village%2C_Assam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/92/Houses_in_Jatinga_village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nisamgram.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Mount Abu"
     }
   ],
   "itinerary": [
@@ -392,23 +396,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan"
+      "alt": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan",
+      "title": "Mount Abu — Hill Station and Dilwara Temples, Rajasthan — Mount Abu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Ceiling_of_Dilwara_Jain_Temple_Abu_Rajasthan_India.jpg",
-      "alt": "Mount Abu photo 2"
+      "alt": "Ceiling Of Dilwara Jain Temple Abu Rajasthan India — Mount Abu",
+      "title": "Ceiling Of Dilwara Jain Temple Abu Rajasthan India — Mount Abu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Mount_Abu_Observatory.JPG",
-      "alt": "Mount Abu photo 3"
+      "alt": "Mount Abu Observatory",
+      "title": "Mount Abu Observatory"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Guru_Shikhar.jpg",
-      "alt": "Mount Abu photo 4"
+      "alt": "Guru Shikhar — Mount Abu",
+      "title": "Guru Shikhar — Mount Abu"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/The_Jain_temples_on_mount_Abu%2C_Rajasthan.jpg",
-      "alt": "Mount Abu photo 5"
+      "alt": "The Jain Temples On Mount Abu, Rajasthan",
+      "title": "The Jain Temples On Mount Abu, Rajasthan"
     }
   ],
   "faq": [

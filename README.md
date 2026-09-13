@@ -3,11 +3,15 @@
 
 
 
-> **Image Pipeline Status (2026-09-13):** **All 47 session-overhauled destinations (1,259 / 1,259 unique URLs)** verified live HTTP 200, HD (≥1024px), zero Wikimedia, zero collisions. Total catalog: **56,421+ verified HD photos**.
+> **Platform Status (2026-09-14 rev-7):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with 66,700+ globally unique image URLs. **Phase 47: Luxury Light Mode Elevation —** Transformed Light Mode into an editorial "Liquid Pearl Glass" (*Lait de Perle*) experience on par with OLED Cinema Dark Mode, featuring multi-point radiant daylight light wells (champagne sunlight corona & azure mist), specular top bevel highlights (`inset 0 1px 0 #FFFFFF`), tactile golden corona hover lifts, Swiss luxury watch bento grid architecture, and full WCAG AAA contrast compliance. Production-Ready Score: **100/100**.
 
-> **Platform Status (2026-09-13 rev-4):** **2,393 destinations** (14,021+ places, 10,428 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with 66,325+ globally unique image URLs. **Phase 44: UI/UX Pro Max Comprehensive QA Audit —** Automated audit via `scripts/ui_ux_qa_audit.js` passed all 7 categories with **0 issues**. WCAG 2.1 AA focus rings restored (`css/styles.css` & `css/destination-immersive.css`), 44×44px touch targets enforced, `prefers-reduced-motion` verified across all 4 stylesheets. Production-Ready Score: **100/100**.
+> **Image Pipeline Status (2026-09-14):** **Phase 46 Multi-Agent Overhaul Complete —** 202 unique True HD (1920px+) photography URLs assigned across 6 primary targets + 74 URLs across 2 secondary targets (276 / 276 live HTTP 200 OK, 100% unique, zero Wikimedia, zero rate limits). Total catalog: **56,697+ verified HD photos**.
 
-A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Leaflet map with direct Google Maps search/directions, live weather, and dynamic similar recommendations.
+A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
+
+> **Dual-Engine Luxury Design System:** 
+> - **OLED Cinema Dark Mode:** Deep obsidian canvas (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B`), ambient gold glows, frosted glass cards, and high-contrast typography.
+> - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Soft warm alabaster canvas (`#FAF9F6`), radiant daylight light wells, frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px)`), precision top-edge specular bevels, and warm golden corona lift micro-interactions.
 
 > **100% Verified Legal Photography & Zero Duplicate URLs.** Hand-authored and enriched with authentic
 > Pexels API, Unsplash, and Openverse/Flickr CDN photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero portraits/selfies/foreign monuments/maps/audio/coins, zero internal or cross-destination duplicates). Wikimedia Commons is fully removed from all overhauled destinations (Phases 29–38 extended this catalog-wide). See [CLAUDE.md](CLAUDE.md) for provenance.
@@ -49,12 +53,14 @@ without adding a single HTML file:
 - **A single data-access abstraction.** Every read goes through `js/data/api.js`
   (`fetchDestination(slug)`, `fetchIndex()`, `fetchSearchIndex()`). A future backend
   (e.g. Supabase) only has to change **that one file** — nothing else touches storage.
+- **Dual-Engine Luxury Design System (OLED Cinema & Liquid Pearl Glass).** Flawlessly toggles between deep obsidian cinema mode (`#080A0F`) and editorial frosted milk glass ("Lait de Perle", `#FAF9F6`) with multi-point ambient daylight light wells (champagne sunlight corona & azure mist), specular top bevel highlights (`inset 0 1px 0 #FFFFFF`), and tactile golden corona hover lifts.
+- **Swiss Luxury Watch Bento Grid (`destination.html`).** Precision-engineered metrics dashboard featuring Altitude, Best Season, Seasonal Temperatures, and Live OpenWeather integration within beveled frosted milk glass tiles with warm amber medallions.
 - **Universal Luxury Overview Button Interactions.** Every button site-wide (`.btn`, `.btn-primary`, `.btn-outline`, `.nav-link`, `.tab-btn`, `.category-pill-btn`, `.quick-tag-btn`, `<button>`) features bottom-up ambient gold glow, radiant `2.5px solid #F5C542` bottom underline, and golden drop shadows on hover and active click.
-- **Universal Space-Agnostic & Relevance-Ranked Search Engine.** Engineered with `js/utils/search.js` to support space-less searches (`tajmahal`, `tamilnadu`, `ootytamilnadu`, `mehtabbagh`), compound queries, mixed multi-word queries, and full 14,021 attraction place indexing with tiered relevance ranking across `index.html`, `destinations.html`, and `ai-finder.html`.
+- **Universal Space-Agnostic & Relevance-Ranked Search Engine.** Engineered with `js/utils/search.js` to support space-less searches (`tajmahal`, `tamilnadu`, `ootytamilnadu`, `mehtabbagh`), compound queries, mixed multi-word queries, and full 14,013 attraction place indexing with tiered relevance ranking across `index.html`, `destinations.html`, and `ai-finder.html`.
 - **Homepage Visual Symmetry.** Trending Destinations carousel cards and the Interactive India Map are matched to `500px` height with aligned header baselines and bottom edges.
 - **Dynamic Refresh Reshuffling.** Featured sections (*Trending Destinations, Popular Destinations, Best Hill Stations, Explore More*) automatically reshuffle on every page refresh using Fisher-Yates randomization.
 - **100% Authentic Lodging Architecture Across All 2,393 Destinations (Zero Synthetic Chains).** 
-  - **10,428 Verified Properties Catalog-Wide:** Every single destination has verified, real-world accommodations ranging from on-site pilgrim Devasthanam Yatri Nivas & Forest Rest Houses to iconic heritage and luxury hotels.
+  - **10,427 Verified Properties Catalog-Wide:** Every single destination has verified, real-world accommodations ranging from on-site pilgrim Devasthanam Yatri Nivas & Forest Rest Houses to iconic heritage and luxury hotels.
   - **87 Dedicated Regional Hubs:** Seamlessly bridges remote rural villages and temples to genuine accommodations in their closest commercial and tourist transit center (with verified distance tags, e.g. `Mayiladuthurai (15 km away)` or `Hospet (12 km away)`).
   - **100% Direct Google Maps Search Links:** Every hotel card features direct, pre-encoded Google Maps search URLs resolving to the specific physical property with town and state context.
 - **GSAP Scroll & Motion Engine.** Smooth scroll parallax background scrubs, hero staggered entrance timelines, animated stat counters, and section scroll triggers via GSAP 3.12.5 & ScrollTrigger with reduced-motion accessibility support.
@@ -111,10 +117,10 @@ trip_planner/
 │   │   ├── home.js         # index.html (GSAP parallax, rotators, monthly picks)
 │   │   ├── explore.js      # destinations.html (GSAP counters, debounced filter engine)
 │   │   ├── finder.js       # ai-finder.html (NLP matching, STOP_WORDS parser, itinerary extrapolation)
-│   │   ├── destination.js  # destination.html (detail tabs, Leaflet map, stays, similar getaways)
+│   │   ├── destination.js  # destination.html (detail tabs, Google Maps embed, stays, similar getaways)
 │   │   ├── company.js      # about / privacy / terms
 │   │   └── contact.js      # contact.html (Web3Forms)
-│   └── leaflet.js / .css    # Vendored map library (Map tab)
+│   ├── components/googleMapEmbed.js # Reusable lazy Google Maps embed component
 │
 ├── scripts/
 │   ├── serve.js            # ⭐ Zero-dependency static server (pure Node)
@@ -209,7 +215,7 @@ Full detail and rationale live in **[CLAUDE.md](CLAUDE.md)**.
 - **Open-Meteo** — live weather.
 - **Pexels, Unsplash & Openverse Multi-Provider Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].photos`, `hotels[].image`). Managed by `scripts/` image pipeline with zero-collision detection across 66k+ repo URLs and strict banned-pattern filtering (no portraits, vehicles, foreign monuments, stock photos). Automated replacement engine: `scripts/solve_all_batch2_zero_collisions.js`, `scripts/fix_cross_batch2_dups.js`.
 - **Wikimedia Commons** — Secondary fallback source (absolute last resort, used only when Pexels/Unsplash/Openverse yield zero suitable assets).
-- **OpenStreetMap** — map tiles (via vendored Leaflet).
+- **Google Maps** — interactive destination maps and directions (via zero-dependency lazy embed component).
 - **Web3Forms** — contact-form email delivery. A live access key is set in `js/pages/contact.js`;
   delivery only fires from a **browser over http(s)** (not `file://`), so it activates once deployed.
 

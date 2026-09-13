@@ -5,7 +5,7 @@
   "country": "India",
   "region": "East Sikkim",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Freshwater Lake",
   "tagline": "Gangtok — hill station of Sikkim",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rumtek_Monastry_%2C_Gangtok%2C_Sikkim.jpg",
@@ -211,7 +211,7 @@
     {
       "name": "Tsomgo (Changu) Lake",
       "category": "scenic",
-      "distance": "38 km",
+      "distance": "38 km from Gangtok, Sikkim",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -225,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6d/Changu_Lake%2C_Gangtok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/27/Tsongmo_Lake_or_Changu_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "2–3 hrs drive from Gangtok"
     },
     {
       "name": "Rumtek Monastery",
       "category": "spiritual",
-      "distance": "24 km",
+      "distance": "24 km from Gangtok, Sikkim",
       "entryFee": "₹10",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -244,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Dharmachakra_Centre%2C_Rumtek_Monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/22/Rumtek_Monastery_-_Sikkim_-_Wikipedia_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/5/59/Rumtek_Monastery_-_Sikkim_-_Wikipedia_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Gangtok"
     },
     {
       "name": "MG Marg",
       "category": "town",
-      "distance": "Centre",
+      "distance": "In Gangtok Centre, Sikkim",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -263,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mahatma_Gandhi_Marg_%28Gangtok%29_Sikkim.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/M.G._Marg_popularly_known_as_Gangtok_mall_in_Sikkim_02.jpg/1280px-M.G._Marg_popularly_known_as_Gangtok_mall_in_Sikkim_02.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/A_view_of_MG_Marg%2C_Gangtok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -393,23 +396,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rumtek_Monastry_%2C_Gangtok%2C_Sikkim.jpg",
-      "alt": "Gangtok in Gangtok, Sikkim - Rumtek Monastery."
+      "alt": "Gangtok in Gangtok, Sikkim - Rumtek Monastery.",
+      "title": "Rumtek Monastry , Gangtok, Sikkim"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tsomgo_Lake_%28Changu_Lake%29_in_Gangtok_district.jpg",
-      "alt": "Gangtok photo 2"
+      "alt": "Tsomgo Lake (Changu Lake) In Gangtok District",
+      "title": "Tsomgo Lake (Changu Lake) In Gangtok District"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_03.jpg",
-      "alt": "Gangtok photo 3"
+      "alt": "Rumtek Monastery Alias Dharma Chakra Centre Near Gangtok, East Sikkim",
+      "title": "Rumtek Monastery Alias Dharma Chakra Centre Near Gangtok, East Sikkim"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_02.jpg",
-      "alt": "Gangtok photo 4"
+      "alt": "Rumtek Monastery Alias Dharma Chakra Centre Near Gangtok, East Sikkim",
+      "title": "Rumtek Monastery Alias Dharma Chakra Centre Near Gangtok, East Sikkim"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Pure_Solitarity.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Lakes of India"
+      "alt": "Lakes of India",
+      "title": "Pure Solitarity — Gangtok"
     }
   ],
   "faq": [

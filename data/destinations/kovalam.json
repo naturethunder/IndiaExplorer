@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Thiruvananthapuram",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Kovalam — beach town of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
@@ -17,7 +17,8 @@
     "features": [
       "Lighthouse Beach",
       "Ayurveda",
-      "Surfing"
+      "Surfing",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.4,
@@ -210,7 +211,7 @@
     {
       "name": "Lighthouse Beach",
       "category": "beach",
-      "distance": "Centre",
+      "distance": "In Kovalam Centre, Kerala",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c1/RedFort%2C_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7c/The_Union_Minister_of_Tourism_and_Culture%2C_Smt._Ambika_Soni_lighting_lamp_to_inaugurate_the_convention_of_Indian_Tourists_Travel_Association_%28ITTA%29%2C_in_New_Delhi_on_September_26%2C_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/2c/The_Union_Minister_of_Tourism_and_Culture%2C_Smt._Ambika_Soni_addressing_the_convention_of_Indian_Tourists_Travel_Association_%28ITTA%29%2C_in_New_Delhi_on_September_26%2C_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Hawa Beach",
       "category": "beach",
-      "distance": "1 km",
+      "distance": "1 km from Kovalam, Kerala",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f5/The_Union_Minister_of_Tourism_%26_Housing_and_Urban_Poverty_Alleviation%2C_Kum._Selja_chairing_a_meeting_of_convergence_for_development_of_tourist_destinations%2C_in_New_Delhi_on_April_13%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/73/The_Union_Minister_of_Tourism_%26_Housing_and_Urban_Poverty_Alleviation%2C_Kum._Selja_chairing_a_meeting_of_convergence_for_development_of_tourist_destinations%2C_in_New_Delhi_on_April_13%2C_2010_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6f/The_Union_Tourism_Minister%2C_Shri_Subodh_Kant_Sahai_received_the_Best_Tourist_Destination_award_from_the_Chairman%2C_World_Tourism_Awards%2C_Mr._Graham_Cooke%2C_in_London_on_November_08_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins walk / 3 min drive from Kovalam"
     },
     {
       "name": "Vizhinjam Marine Aquarium",
       "category": "wildlife",
-      "distance": "3 km",
+      "distance": "3 km from Kovalam, Kerala",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/fa/Subodh_Kant_Sahai_addressing_at_the_All_India_workshop_on_Campaign_Clean_India_to_create_awareness_about_hygiene_and_cleanliness_at_tourist_destinations_and_monuments%2C_organized_by_the_Ministry_of_Tourism%2C_in_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dinesh_Trivedi_addressing_at_the_All_India_workshop_on_Campaign_Clean_India_to_create_awareness_about_hygiene_and_cleanliness_at_tourist_destinations_and_monuments%2C_organized_by_the_Ministry_of_Tourism%2C_in_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e0/A.P.J._Abdul_Kalam%2C_the_Union_Tourism_Minister%2C_Shri_Subodh_Kant_Sahai%2C_the_Union_Minister_for_Railways%2C_Shri_Dinesh_Trivedi%2C_the_Minister_of_State_for_Tourism%2C_Shri_Sultan_Ahmed_and_other_dignitaries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Kovalam"
     }
   ],
   "itinerary": [
@@ -369,23 +373,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/KovalamBeach.JPG",
-      "alt": "Kovalam photo 2"
+      "alt": "KovalamBeach",
+      "title": "KovalamBeach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Kovalam_Lighthouse_Beach.JPG",
-      "alt": "Kovalam photo 3"
+      "alt": "Kovalam Lighthouse Beach",
+      "title": "Kovalam Lighthouse Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Kovalam_-_view_from_the_lighthouse.jpg",
-      "alt": "Kovalam photo 4"
+      "alt": "Kovalam View From The Lighthouse",
+      "title": "Kovalam View From The Lighthouse"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Kovalam_beach_01.JPG",
-      "alt": "Kovalam photo 5"
+      "alt": "Kovalam Beach",
+      "title": "Kovalam Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/India_Folk_Historical_Place_In_Maharashtra_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Raigad Fort is a historic hill fortress located in the Sahyadri mountain range of Maharashtra, India"
+      "alt": "Raigad Fort is a historic hill fortress located in the Sahyadri mountain range of Maharashtra, India",
+      "title": "India Folk Historical Place In Maharashtra — Kovalam"
     }
   ],
   "faq": [

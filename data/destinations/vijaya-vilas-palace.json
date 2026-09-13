@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Gujarat",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Vijaya Vilas Palace — heritage city of Gujarat",
+  "badge": "Royal Palace",
+  "tagline": "Historic Royal Palace & Architectural Splendour in Gujarat",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/VIJAYA-VILAS_palace_gujarat_01.jpg",
     "alt": "Vijaya Vilas Palace, Gujarat"
@@ -15,10 +15,10 @@
     "short": "Vijaya Vilas Palace is a summer palace of Maharao of Kutch located on the beach of Mandvi in Kutch, Gujarat, India.",
     "description": "Vijaya Vilas Palace is a summer palace of Maharao of Kutch located on the beach of Mandvi in Kutch, Gujarat, India.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Royal Palace",
+      "Heritage Architecture",
+      "Courtyards",
+      "Historic Artifacts"
     ],
     "altitude": null,
     "rating": 4.1,
@@ -210,7 +210,7 @@
     {
       "name": "Mandvi",
       "category": "beach",
-      "distance": "7 km",
+      "distance": "7 km from Vijaya Vilas Palace, Gujarat",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +224,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/c/c8/Check-dam_in_puzhakkara%2C_pananthur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/b/b1/Kodaikanal_Golf_Club%2C_Saddle-10th_hole.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d0/Shanmuganathi_Dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Vijaya Vilas Palace"
     },
     {
       "name": "Rukmavati River",
       "category": "scenic",
-      "distance": "8 km",
+      "distance": "8 km from Vijaya Vilas Palace, Gujarat",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -243,12 +244,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/a/a0/Vijay_Vilas_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/28/The_water_flowing_path_from_16_bridge..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dam_in_trichi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Vijaya Vilas Palace"
     },
     {
       "name": "Nagalpur, Mandvi",
       "category": "cultural",
-      "distance": "9 km",
+      "distance": "9 km from Vijaya Vilas Palace, Gujarat",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -262,7 +264,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e6/Main_5-lock_view_of_chembarambakkam_tank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/36/Water_gushing_out_of_tank_when_water_released_during_the_sep-oct_of_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/31/Palanichettipattidam.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Vijaya Vilas Palace"
     }
   ],
   "itinerary": [
@@ -387,28 +390,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Scenic Sightseeing"
   ],
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/VIJAYA-VILAS_palace_gujarat_01.jpg",
-      "alt": "Vijaya Vilas Palace in Vijaya Vilas Palace, Gujarat - This is a photo of ASI monument number"
+      "alt": "VIJAYA VILAS Palace Gujarat",
+      "title": "VIJAYA VILAS Palace Gujarat"
     },
     {
       "src": "https://images.pexels.com/photos/37514707/pexels-photo-37514707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Vijaya Vilas Palace photo 2"
+      "alt": "Rukmavati River — Vijaya Vilas Palace",
+      "title": "Rukmavati River — Vijaya Vilas Palace"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/The_Vijay_Vilas_palace_%28Mandvi_-_Gujarat_-_India%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Vijaya Vilas Palace — The Vijay Vilas palace (Mandvi - Gujarat - India)"
+      "alt": "Vijaya Vilas Palace — The Vijay Vilas palace (Mandvi - Gujarat - India)",
+      "title": "The Vijay Vilas Palace (Mandvi Gujarat India) — Vijaya Vilas Palace"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kuttiyadi-saddle_dam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dams in Kerala"
+      "alt": "Dams in Kerala",
+      "title": "Kuttiyadi Saddle Dam — Vijaya Vilas Palace"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Biyyam_reglator_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Dams in Kerala"
+      "alt": "Dams in Kerala",
+      "title": "Biyyam Reglator — Vijaya Vilas Palace"
     }
   ],
   "faq": [

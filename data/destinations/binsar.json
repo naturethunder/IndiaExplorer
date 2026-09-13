@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Kumaon",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Binsar — wildlife reserve of Uttarakhand",
+  "badge": "Wildlife Sanctuary",
+  "tagline": "Protected Wildlife Sanctuary & Natural Habitat in Uttarakhand",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Binsar%2C_a_view_of_Kumaon_Himalayas.jpg",
     "alt": "Binsar, Uttarakhand"
@@ -17,7 +17,8 @@
     "features": [
       "Wildlife Sanctuary",
       "Zero Point",
-      "Himalayan Views"
+      "Himalayan Views",
+      "Wildlife Habitat"
     ],
     "altitude": 2412,
     "rating": 4.5,
@@ -210,7 +211,7 @@
     {
       "name": "Zero Point",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Binsar, Uttarakhand",
       "entryFee": "₹50",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -224,12 +225,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jhandi_Dhar_Hills.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Pindari_glacier_from_Zero_Point%2C_Uttarakhand.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/a/ac/LOVE_NATURE1.jpg"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Binsar"
     },
     {
       "name": "Binsar Wildlife Sanctuary",
       "category": "wildlife",
-      "distance": "Gate",
+      "distance": "On-site at Binsar",
       "entryFee": "₹150",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/22/Binsar_Oak_Forests.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sunrise_at_Binsar.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sunrise_at_Binsar_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Inside complex (Walkable)"
     },
     {
       "name": "Bineshwar Mahadev Temple",
       "category": "spiritual",
-      "distance": "5 km",
+      "distance": "5 km from Binsar, Uttarakhand",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "45 min",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sitting_Area_in_Room_of_The_Calm_Cottages_Nathuakhan_-_panoramio.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_from_Brahmadhungi%2C_Binsar_wildlife_sanctuary_20160520.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/2f/11th_12th_century_Suryanarayana_Temple%2C_Kalgi%2C_Karnataka_India_-_50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–25 mins drive from Binsar"
     }
   ],
   "itinerary": [
@@ -391,23 +395,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Binsar%2C_a_view_of_Kumaon_Himalayas.jpg",
-      "alt": "Binsar in Binsar, Uttarakhand - Binsar, a view of Kumaon Himalayas, (Uttarakhand)"
+      "alt": "Binsar in Binsar, Uttarakhand - Binsar, a view of Kumaon Himalayas, (Uttarakhand)",
+      "title": "Binsar, A View Of Kumaon Himalayas"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Binsar_Oak_Forests.JPG",
-      "alt": "Binsar photo 2"
+      "alt": "Binsar Oak Forests",
+      "title": "Binsar Oak Forests"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sunrise_at_Binsar_1.JPG",
-      "alt": "Binsar photo 3"
+      "alt": "Sunrise At Binsar",
+      "title": "Sunrise At Binsar"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/View_from_Brahmadhungi%2C_Binsar_wildlife_sanctuary_20160520.jpg",
-      "alt": "Binsar photo 4"
+      "alt": "View From Brahmadhungi, Binsar Wildlife Sanctuary",
+      "title": "View From Brahmadhungi, Binsar Wildlife Sanctuary"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Trek_route_in_binsar_wildlife_sanctury.jpg",
-      "alt": "Binsar photo 5"
+      "alt": "Trek Route In Binsar Wildlife Sanctury",
+      "title": "Trek Route In Binsar Wildlife Sanctury"
     }
   ],
   "faq": [

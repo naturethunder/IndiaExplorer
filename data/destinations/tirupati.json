@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Tirumala Hills",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Tirupati — spiritual town of Andhra Pradesh",
+  "badge": "Ancient Temple",
+  "tagline": "Ancient Sacred Temple & Historic Architecture in Andhra Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/SVU_entrance%2C_tirupati.JPG",
     "alt": "Tirupati, Andhra Pradesh"
@@ -17,7 +17,8 @@
     "features": [
       "Balaji Temple",
       "Pilgrimage",
-      "Hills"
+      "Hills",
+      "Sacred Temple"
     ],
     "altitude": 853,
     "rating": 4.6,
@@ -215,7 +216,7 @@
     {
       "name": "Sri Venkateswara Temple",
       "category": "spiritual",
-      "distance": "Tirumala",
+      "distance": "Tirumala near Tirupati, Andhra Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "3–4 hrs",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/6/67/Mudumalai_Tiger_Reserve_-_panoramio_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/6/6e/Western_ghats%2C_Madumalai_tiger_reserve%2C_nilgiris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/8f/A_chilling_treat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Tirupati"
     },
     {
       "name": "Sri Kalahasti Temple",
       "category": "spiritual",
-      "distance": "36 km",
+      "distance": "36 km from Tirupati, Andhra Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -248,12 +250,13 @@
         "https://images.pexels.com/photos/5860770/pexels-photo-5860770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://upload.wikimedia.org/wikipedia/commons/b/be/Indian_Pond_Heron_Perching_Bokkapuram_BW_Mar21_DSC01453.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/08/Hairpin_34_36_MDR_700_Nilgiris_Sep24_A7CR_02961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Tirupati"
     },
     {
       "name": "Chandragiri Fort",
       "category": "heritage",
-      "distance": "12 km",
+      "distance": "12 km from Tirupati, Andhra Pradesh",
       "entryFee": "₹15",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/40/MDR_700_Below_Kalhatty_Nilgiris_Sep24_A7CR_02953.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a3/NE_Kalhatty_Hullathy_Nilgiris_Sep24_A7CR_02927.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/8/8d/View_North_Mudumalai_MDR_700_Sep24_A7CR_02965.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Tirupati"
     }
   ],
   "itinerary": [
@@ -416,23 +420,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/SVU_entrance%2C_tirupati.JPG",
-      "alt": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati"
+      "alt": "Tirupati in Tirupati, Andhra Pradesh - SVU, Tirupati",
+      "title": "SVU Entrance, Tirupati"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pappula_Venkatesh_-%28Tirupati_sri_venkateswara_swamy_varu%29.jpg",
-      "alt": "Tirupati photo 2"
+      "alt": "Pappula Venkatesh (Tirupati Sri Venkateswara Swamy Varu)",
+      "title": "Pappula Venkatesh (Tirupati Sri Venkateswara Swamy Varu)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_2.jpg",
-      "alt": "Tirupati photo 5"
+      "alt": "Chandragiri Fort, Tirupati, Andhra Pradesh, India (2016)",
+      "title": "Chandragiri Fort, Tirupati, Andhra Pradesh, India (2016)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chandragiri_Fort%2C_Tirupati%2C_Andhra_Pradesh%2C_India_%282016%29_1.jpg",
-      "alt": "Tirupati photo 6"
+      "alt": "Chandragiri Fort, Tirupati, Andhra Pradesh, India (2016)",
+      "title": "Chandragiri Fort, Tirupati, Andhra Pradesh, India (2016)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mudumalai_Tiger_Reserve_-_panoramio_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Mudumalai tiger reserve nilgiris"
+      "alt": "Mudumalai tiger reserve nilgiris",
+      "title": "Mudumalai Tiger Reserve Panoramio — Tirupati"
     }
   ],
   "faq": [

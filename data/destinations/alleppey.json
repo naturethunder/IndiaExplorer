@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Backwaters",
   "type": "beach",
-  "badge": "Popular",
+  "badge": "Coastal Beach",
   "tagline": "Alleppey — beach town of Kerala",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Houseboats",
       "Backwaters",
-      "Beach"
+      "Beach",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -210,7 +211,7 @@
     {
       "name": "Backwater Houseboat Cruise",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Alleppey Centre, Kerala",
       "entryFee": "₹7,000",
       "timings": "Varies by season",
       "duration": "Overnight",
@@ -224,12 +225,13 @@
         "https://pixabay.com/get/g9650332637c2bb8d65988535a1975f5d748e510da2774bab7be246c6b65a0245cd7ac77e2646a401d2c3079cf68af1c0d4567ab6da04aaa19b25be3f6d92a5ca_1280.jpg",
         "https://pixabay.com/get/gae41c39103509827e8fb190ae2054ee39c1c1724102d735e2d067aad1dfabf0c6f94703758e88538b583e879daf96208e51aca6b1c4bf1ad27d10dbc040a4d6c_1280.jpg",
         "https://pixabay.com/get/g609a36c596dd24d8b61b32c894e8c8b28649b8b72aa08cbcbcca2ef1ff4aa6653a557cd56292fcba4cdeac1b3a2b655eda23d851c464467a943e945432ea9473_1280.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Alleppey Beach",
       "category": "beach",
-      "distance": "3 km",
+      "distance": "3 km from Alleppey, Kerala",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -243,12 +245,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crab-plover%2C_Pallana_beach%2C_Alleppey_5.jpg/1280px-Crab-plover%2C_Pallana_beach%2C_Alleppey_5.jpg",
         "https://pixabay.com/get/g42f84628e401cdd2a9d66f7837a00b87b8313fb6cf210aa821b49bbf0b51f14202f1d5e15853b1fbb748c63c161ccb695ad110a1b7e22d08d44b7b7f4f51d3cd_1280.jpg",
         "https://live.staticflickr.com/8165/7248051642_401839cfc5_b.jpg"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Alleppey"
     },
     {
       "name": "Marari Beach",
       "category": "beach",
-      "distance": "11 km",
+      "distance": "11 km from Alleppey, Kerala",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -262,7 +265,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sunset_from_Mararikulam_beach%2C_Kerala%2C_India.jpg/1280px-Sunset_from_Mararikulam_beach%2C_Kerala%2C_India.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Beach_Rd%2C_Mararikulam%2C_Kerala_688523%2C_India_-_panoramio.jpg/1280px-Beach_Rd%2C_Mararikulam%2C_Kerala_688523%2C_India_-_panoramio.jpg",
         "https://images.pexels.com/photos/38326109/pexels-photo-38326109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Alleppey"
     }
   ],
   "itinerary": [
@@ -390,19 +394,23 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Alleppey_Backwaters_%2815865969507%29.jpg",
-      "alt": "Alleppey photo 2"
+      "alt": "Alleppey Backwaters",
+      "title": "Alleppey Backwaters"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Alleppey_beach.jpg",
-      "alt": "Alleppey photo 3"
+      "alt": "Alleppey Beach",
+      "title": "Alleppey Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Crab-plover%2C_Pallana_beach%2C_Alleppey_3.jpg",
-      "alt": "Alleppey photo 4"
+      "alt": "Crab Plover, Pallana Beach, Alleppey",
+      "title": "Crab Plover, Pallana Beach, Alleppey"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Alleppey_Backwaters_%2816049777971%29.jpg",
-      "alt": "Alleppey photo 5"
+      "alt": "Alleppey Backwaters",
+      "title": "Alleppey Backwaters"
     }
   ],
   "faq": [

@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Ganderbal",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Sonamarg — hill station of Jammu & Kashmir",
   "heroImage": {
     "src": "https://images.pexels.com/photos/35027239/pexels-photo-35027239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -17,7 +17,8 @@
     "features": [
       "Meadow of Gold",
       "Thajiwas Glacier",
-      "Sindh River"
+      "Sindh River",
+      "Misty Hills"
     ],
     "altitude": 2800,
     "rating": 4.5,
@@ -210,7 +211,7 @@
     {
       "name": "Thajiwas Glacier",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Sonamarg, Jammu & Kashmir",
       "entryFee": "₹600",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -224,12 +225,13 @@
         "https://images.pexels.com/photos/24964397/pexels-photo-24964397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/18292476/pexels-photo-18292476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/36056487/pexels-photo-36056487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Sonamarg"
     },
     {
       "name": "Zoji La Pass",
       "category": "scenic",
-      "distance": "15 km",
+      "distance": "15 km from Sonamarg, Jammu & Kashmir",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -241,14 +243,15 @@
       },
       "photos": [
         "https://images.pexels.com/photos/39181031/pexels-photo-39181031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://images.pexels.com/photos/161699/maligne-river-jasper-alberta-canada-161699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Zoji_La_pass_Kashmir.jpg",
         "https://images.pexels.com/photos/23428148/pexels-photo-23428148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Sonamarg"
     },
     {
       "name": "Sindh River Banks",
       "category": "scenic",
-      "distance": "Centre",
+      "distance": "In Sonamarg Centre, Jammu & Kashmir",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -262,7 +265,8 @@
         "https://images.pexels.com/photos/34544043/pexels-photo-34544043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/25399584/pexels-photo-25399584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/32336033/pexels-photo-32336033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -410,23 +414,28 @@
   "gallery": [
     {
       "src": "https://images.pexels.com/photos/35027239/pexels-photo-35027239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Breathtaking golden alpine meadows and snow-capped Himalayan peaks in Sonamarg, Kashmir"
+      "alt": "Breathtaking golden alpine meadows and snow-capped Himalayan peaks in Sonamarg, Kashmir",
+      "title": "Breathtaking golden alpine meadows and snow — Sonamarg"
     },
     {
       "src": "https://images.pexels.com/photos/15964991/pexels-photo-15964991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sonamarg landscape photo 2"
+      "alt": "Zoji La Pass — Sonamarg",
+      "title": "Zoji La Pass — Sonamarg"
     },
     {
       "src": "https://images.pexels.com/photos/30092083/pexels-photo-30092083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sonamarg landscape photo 3"
+      "alt": "Sindh River Banks — Sonamarg",
+      "title": "Sindh River Banks — Sonamarg"
     },
     {
       "src": "https://images.pexels.com/photos/27794015/pexels-photo-27794015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sonamarg landscape photo 4"
+      "alt": "Misty Hills at Sonamarg",
+      "title": "Misty Hills at Sonamarg"
     },
     {
       "src": "https://images.pexels.com/photos/30092087/pexels-photo-30092087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Sonamarg landscape photo 5"
+      "alt": "Golden Sunlit Ridge Vista at Sonamarg",
+      "title": "Golden Sunlit Ridge Vista at Sonamarg"
     }
   ],
   "faq": [

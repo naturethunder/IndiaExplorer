@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Maharashtra",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Coastal Fortress",
   "tagline": "Amboli — hill station of Maharashtra",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/SaurabhSawant_Amboli_Cnemaspis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -208,7 +208,7 @@
     {
       "name": "Hiranyakeshi river",
       "category": "scenic",
-      "distance": "3 km",
+      "distance": "3 km from Amboli, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -222,12 +222,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shri_Hiranyakeshi_temple%2C_Amboli.jpg/1280px-Shri_Hiranyakeshi_temple%2C_Amboli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "https://upload.wikimedia.org/wikipedia/commons/d/dc/Ramteerth_falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://pixabay.com/get/gad51bef4aed8167472ee212b62c411936462f436868e8b0381bba00d830e3ae160332984497a81c01dbf9d10dfce9cbee800bf8835f453991cff947a74c9a3c8_1280.jpg"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Amboli"
     },
     {
       "name": "Chaukul",
       "category": "cultural",
-      "distance": "6 km",
+      "distance": "6 km from Amboli, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -241,12 +242,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/4/48/Amboli5.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/a/a4/Amboli_Waterfall%2CSindhudurg%28Maharashtra%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/b/bb/Panchgani_Nature_Animals_Flowers.png"
-      ]
+      ],
+      "travelTime": "10–15 mins drive from Amboli"
     },
     {
       "name": "Kalambist",
       "category": "cultural",
-      "distance": "8 km",
+      "distance": "8 km from Amboli, Maharashtra",
       "entryFee": "Varies",
       "timings": "Varies by season",
       "duration": "1–2 hrs",
@@ -260,7 +262,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/8/81/Distant_view_of_a_road%2C_Western_Ghats%2C_Amboli_Ghat%2C_Maharashtra_%282013%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/28/Amboli_Bush_Frog_Pseudophilautus_amboli_by_Dr_Raju_Kasambe_DSCN0709_%285%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Amboli_Bush_Frog_Pseudophilautus_amboli_by_Dr_Raju_Kasambe_DSCN0709_%287%29.jpg"
-      ]
+      ],
+      "travelTime": "15–20 mins drive from Amboli"
     }
   ],
   "itinerary": [
@@ -389,23 +392,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/SaurabhSawant_Amboli_Cnemaspis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Amboli scenic view 1"
+      "alt": "Amboli scenic view 1",
+      "title": "SaurabhSawant Amboli Cnemaspis"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Amboli_Bus_Stand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Amboli photo 2"
+      "alt": "Amboli Bus Stand",
+      "title": "Amboli Bus Stand"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Amboli_Sunset_Point.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "alt": "Amboli photo 3"
+      "alt": "Amboli Sunset Point",
+      "title": "Amboli Sunset Point"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Amboli_Waterfall%2CSindhudurg%28Maharashtra%29.jpg",
-      "alt": "Amboli photo 4"
+      "alt": "Amboli Waterfall,Sindhudurg(Maharashtra)",
+      "title": "Amboli Waterfall,Sindhudurg(Maharashtra)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/..._at_Hiranyakshi%2C_Amboli_%286673314037%29.jpg",
-      "alt": "Amboli photo 5"
+      "alt": "... At Hiranyakshi, Amboli",
+      "title": "... At Hiranyakshi, Amboli"
     }
   ],
   "faq": [

@@ -5,20 +5,21 @@
   "country": "India",
   "region": "Madhya Pradesh",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Chaman Mahal — heritage city of Madhya Pradesh",
+  "badge": "Royal Palace",
+  "tagline": "Historic 18th-Century Afghan-Mughal Garden Palace & Charbagh Architecture in Islamnagar",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chaman_Mahal_S-MP-27_%287%29.jpg",
-    "alt": "Chaman Mahal, Madhya Pradesh"
+    "src": "https://images.pexels.com/photos/29624144/pexels-photo-29624144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Chaman Mahal, Islamnagar — Red Sandstone Garden Palace",
+    "title": "Chaman Mahal — Historic Red Sandstone Garden Pavilion & Courtyard"
   },
   "overview": {
     "short": "Chaman Mahal is a palace in the Bhopal district of Madhya Pradesh, India.",
     "description": "Chaman Mahal is a palace in the Bhopal district of Madhya Pradesh, India. It was built by Afghan Commander Dost Mohammad Khan, who was the ruler of Islamnagar in 1715. It is located 11 km away from Bhopal, capital of Madhya Pradesh. 'Chaman' means garden and hence the palace is also known as Garden palace, having an attractive garden in the middle of palace with multiple fountains.",
     "features": [
-      "Forts",
-      "Architecture",
-      "History",
-      "Local Bazaars"
+      "Royal Palace",
+      "Heritage Architecture",
+      "Courtyards",
+      "Historic Artifacts"
     ],
     "altitude": null,
     "rating": 4.7,
@@ -197,8 +198,8 @@
       }
     ],
     "nearestAirport": {
-      "name": "Chaman Mahal / nearest airport",
-      "distance": 30
+      "name": "Raja Bhoj Airport, Bhopal (BHO)",
+      "distance": 12
     },
     "nearestRailway": {
       "name": "Bhopal Junction",
@@ -208,155 +209,83 @@
   },
   "topPlaces": [
     {
-      "name": "Islamnagar, Bhopal",
-      "category": "cultural",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Islamnagar (officially known as Jagdishpur since February 2023) is a panchayat village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Islamnagar_Rani_Mahal%2C_Picture_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Islamnagar, Bhopal"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Chaman_Mahal_Islamnagar_%2811%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Chaman_Mahal_Islamnagar_bhoapl_%281%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/af/Chaman_mahal_Islamnagar_Bhopal_%2816%29.jpg"
-      ]
-    },
-    {
-      "name": "Bherupura",
-      "category": "cultural",
-      "distance": "Town Centre",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.5,
-      "description": "Bherupura is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Chaman_Mahal_Islamnagar_%281%29.jpg",
-        "alt": "Bherupura"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/55/Chaman_Mahal_Islamnagar_%287%29.jpg",
-        "https://images.pexels.com/photos/17582672/pexels-photo-17582672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kheerganga_trek_starting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
-    },
-    {
-      "name": "Kanchbavli",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Kanchbavli is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chaman_Mahal_Islamnagar_%288%29.jpg",
-        "alt": "Kanchbavli"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Chaman_Mahal_Islamnagar_%2812%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Chaman_Mahal_Islamnagar_%2810%29.jpg",
-        "https://images.pexels.com/photos/14259791/pexels-photo-14259791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
-    },
-    {
-      "name": "Ghasipura, Bhopal",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.3,
-      "description": "Ghasipura is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/0102721_Lat_masjid%2C_Vijay_mandir%2C_Dhar_Madhya_Pradesh_094.jpg",
-        "alt": "Ghasipura, Bhopal"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/ec/Buddhists_monuments_at_sanchi.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/08/Chaman_Mahal_Islamnagar_%2813%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Anandapur_Part%2C_Odisha%2C_India_-_panoramio_%287%29.jpg"
-      ]
-    },
-    {
-      "name": "Kalyanpura, Bhopal",
-      "category": "cultural",
-      "distance": "1 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.7,
-      "description": "Kalyanpura is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chaman_Mahal_Islamnagar_%2814%29.jpg",
-        "alt": "Kalyanpura, Bhopal"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/Chaman_Mahal_Islamnagar_%2815%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Chaman_Mahal_Islamnagar_%282%29.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Chaman_Mahal_Islamnagar_%2816%29.jpg"
-      ]
-    },
-    {
-      "name": "Shyampur, Bhopal",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
+      "name": "Rani Mahal, Islamnagar",
+      "category": "heritage",
+      "distance": "100 m from Chaman Mahal, Madhya Pradesh",
+      "entryFee": "₹25 (ASI entry)",
+      "timings": "9:00 AM – 5:30 PM",
       "duration": "1–2 hrs",
       "rating": 4.6,
-      "description": "Shyampur is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
+      "description": "Situated directly adjacent to Chaman Mahal, Rani Mahal was the queen's royal residence built by Dost Mohammad Khan in 1720. It features beautiful colonnaded stone verandas, inner courtyards, and deep arches blending Malwa and Mughal architectural styles.",
+      "travelTime": "2 mins walk inside complex",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Chaman_Mahal%2C_Islamnagar.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Shyampur, Bhopal"
+        "src": "https://images.pexels.com/photos/33726143/pexels-photo-33726143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Rani Mahal royal stone pavilion and arches at Islamnagar"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Chaman_Mahal_Islamnagar_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ec/Chaman_Mahal_Islamnagar_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/35/Chaman_Mahal_Islamnagar_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://images.pexels.com/photos/8449712/pexels-photo-8449712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/13023314/pexels-photo-13023314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/33726141/pexels-photo-33726141.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
-      "name": "Gol Khedi",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.2,
-      "description": "Gol Khedi is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
+      "name": "Islamnagar Fort Ramparts",
+      "category": "heritage",
+      "distance": "200 m from Chaman Mahal, Madhya Pradesh",
+      "entryFee": "Included in complex ticket",
+      "timings": "9:00 AM – 5:30 PM",
+      "duration": "1 hr",
+      "rating": 4.5,
+      "description": "The fortified bastions and monumental gateways of Islamnagar (formerly Jagdishpur), fortified in 1715 as the first capital of Bhopal's founding dynasty. Offers elevated views across the surrounding countryside and water reservoirs.",
+      "travelTime": "3 mins walk inside complex",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/Chaman_mahal.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Gol Khedi"
+        "src": "https://images.pexels.com/photos/34637459/pexels-photo-34637459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Islamnagar Fort stone ramparts and watchtowers"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Chaman_Mahal_S-MP-27_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/68/Chaman_mahal_Islam_Nagar_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/96/Chaman_mahal_Islam_Nagar_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://images.pexels.com/photos/29624147/pexels-photo-29624147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/29624149/pexels-photo-29624149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/5651623/pexels-photo-5651623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     },
     {
-      "name": "Intkhedi Sadak",
-      "category": "cultural",
-      "distance": "2 km",
-      "entryFee": "Varies",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
+      "name": "Kanchbavli Stepped Baoli",
+      "category": "heritage",
+      "distance": "500 m from Chaman Mahal, Madhya Pradesh",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 6:00 PM",
+      "duration": "45 mins",
+      "rating": 4.4,
+      "description": "An ancient stone stepwell (baoli) that provided fresh water to the royal palaces and fountain network of Islamnagar. Features stone staircases and subterranean arched landings showcasing historic water engineering.",
+      "travelTime": "5 mins walk / 2 mins drive from Chaman Mahal",
+      "image": {
+        "src": "https://images.pexels.com/photos/14713460/pexels-photo-14713460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Kanchbavli historic stone stepwell and reservoir"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/29624131/pexels-photo-29624131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.unsplash.com/photo-1763767458644-090bc283e496?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8bXVnaGFsJTIwcGFsYWNlJTIwY291cnR5YXJkJTIwZm91bnRhaW5zJTIwZ2FyZGVufGVufDB8MHx8fDE3ODkzMDg5MzN8MA&ixlib=rb-4.1.0&w=1920&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1786596552010-b5d28a92895b?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8bXVnaGFsJTIwcGFsYWNlJTIwY291cnR5YXJkJTIwZm91bnRhaW5zJTIwZ2FyZGVufGVufDB8MHx8fDE3ODkzMDg5MzN8MA&ixlib=rb-4.1.0&w=1920&auto=format&fit=crop&q=85"
+      ]
+    },
+    {
+      "name": "Bhopal Upper Lake (Bhojtal)",
+      "category": "nature",
+      "distance": "14 km from Chaman Mahal, Madhya Pradesh",
+      "entryFee": "Free",
+      "timings": "Open all day",
+      "duration": "2–3 hrs",
       "rating": 4.7,
-      "description": "Intkhedi Sadak is a village in the Bhopal district of Madhya Pradesh, India. It is located in the Huzur tehsil and the Phanda block.",
+      "description": "One of Asia's largest artificial lakes, created by Raja Bhoj in the 11th century. Offers serene sunset boat rides, water promenade walks, and birdwatching along the lush wetlands.",
+      "travelTime": "25–30 mins drive from Chaman Mahal",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/A_part_of_the_Rani_Mahal..JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Intkhedi Sadak"
+        "src": "https://images.pexels.com/photos/39477672/pexels-photo-39477672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Bhopal Upper Lake serene waterfront and horizon"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/19/Chaman_mahal_Islam_Nagar_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chaman_mahal_Islam_Nagar_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Chaman_mahal_Islam_Nagar_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        "https://images.pexels.com/photos/6959874/pexels-photo-6959874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/8987280/pexels-photo-8987280.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/7691574/pexels-photo-7691574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ]
     }
   ],
@@ -511,28 +440,33 @@
     "Forts",
     "Architecture",
     "History",
-    "Local Bazaars"
+    "Scenic Sightseeing"
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Chaman_Mahal_S-MP-27_%287%29.jpg",
-      "alt": "Chaman Mahal in Chaman Mahal, Madhya Pradesh - This is a photo of ASI monument number"
+      "src": "https://images.pexels.com/photos/29624144/pexels-photo-29624144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Chaman Mahal red sandstone pavilion with traditional cusped arches and water channels",
+      "title": "Chaman Mahal — Sandstone Garden Pavilion & Charbagh Courtyard"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chaman_Mahal_at_Islampur%2C_Bhopal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chaman Mahal — Chaman Mahal at Islampur, Bhopal"
+      "src": "https://images.pexels.com/photos/24374867/pexels-photo-24374867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Historic central charbagh garden with fountains and water canals at Chaman Mahal",
+      "title": "Chaman Mahal — Charbagh Water Channels & Fountain Terraces"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Chaman_Mahal_at_Islamnagar%2C_picture_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chaman Mahal — Chaman Mahal at Islamnagar, picture 3"
+      "src": "https://images.pexels.com/photos/37261483/pexels-photo-37261483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Intricate jali latticework screens and floral stonework inside the palace",
+      "title": "Chaman Mahal — Ornate Jali Screens & Sandstone Columns"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Chaman_Mahal_at_Islamnagar%2C_picture_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chaman Mahal — Chaman Mahal at Islamnagar, picture 4"
+      "src": "https://images.pexels.com/photos/28133705/pexels-photo-28133705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Royal Hammam bathhouse and Sheesh Mahal chamber within the palace complex",
+      "title": "Chaman Mahal — Historic Hammam & Royal Chambers"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8a/A_view_of_the_Chaman_Mahal..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Chaman Mahal — A view of the Chaman Mahal."
+      "src": "https://images.pexels.com/photos/17477652/pexels-photo-17477652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Panoramic view of Islamnagar citadel ramparts and palace gardens",
+      "title": "Chaman Mahal — Islamnagar Citadel Ramparts & Heritage Gardens"
     }
   ],
   "faq": [

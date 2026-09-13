@@ -170,12 +170,12 @@ function search(q) {
 (function () {
   const el = document.getElementById('hero-stats');
   if (!el) return;
-  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2392);
+  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2393);
   const stats = [
     { ic: 'map-pin', raw: totalDestCount, suffix: '+', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
     { ic: 'mountain', raw: 14013, suffix: '+', label: 'Places' },
-    { ic: 'bed', raw: 17567, suffix: '+', label: 'Stays' },
+    { ic: 'bed', raw: 10427, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +
@@ -226,7 +226,7 @@ function search(q) {
     customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
   });
 
-  const totalCount = idx.count || summaries.length || 2392;
+  const totalCount = idx.count || summaries.length || 2393;
 
   el.innerHTML = cats.map((c) => {
     const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
@@ -418,6 +418,13 @@ function search(q) {
         }
       });
     });
+
+    const activeBtn = pillsEl.querySelector('.month-pill.is-active');
+    if (activeBtn) {
+      requestAnimationFrame(() => {
+        activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      });
+    }
   }
 
   function renderMonthRail(monthNum) {

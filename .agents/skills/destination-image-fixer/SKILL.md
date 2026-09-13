@@ -13,7 +13,7 @@ This skill defines the autonomous image acquisition and quality enforcement work
    - Exactly 5 unique HD image URLs in `gallery[]` array.
    - Primary `heroImage.src` must match `gallery[0].src` or be a valid HD image.
    - Minimum resolution width 1280px (recommended 1920px+ landscape).
-   - Every gallery item must have descriptive `alt` and `title` text.
+   - Every gallery item must have a proper, evocative `title` (accurately naming the landmark, monument, nature vista, or architectural feature) along with descriptive `alt` and `caption`. Generic placeholders like "photo 1", "slide 2", or repeated bare destination names are strictly prohibited.
    - Widescreen aspect ratio (1.25–1.9). Portrait orientation strictly prohibited.
 
 2. **Rule 2 — Nearby Places (Flexible Count, 3 Photos per Existing Place)**
@@ -32,22 +32,25 @@ This skill defines the autonomous image acquisition and quality enforcement work
 
 4. **Rule 4 — Authentic Legal Sourcing (HD-First & Ground-Truth Priority as per `.env.local`)**
    - Priority Source Order:
-     1. **Tier 1 (Authentic Ground Truth)**: **Google Places Photos API** (geotagged place photos) & **Wikimedia Commons** (4K/8K authentic Indian monuments, temples, forts, waterfalls; min 1600×900) & **Flickr CC Travel Streams** (`_b.jpg` 1024px+, `_k.jpg` 2048px, `_o.jpg` 4K).
-     2. **Tier 2 (Ultra HD Curated Photo APIs)**: **Pexels API** (`original` or `dpr=2&w=1920`) & **Unsplash API** (`w=2400&auto=format&fit=crop&q=85`) & **Openverse Public Search** (700M+ CC library).
-     3. **Tier 3 (Museum 4K Open Access)**: **Cleveland Museum of Art (CMA)** (3400px+ CC0), **Art Institute of Chicago (AIC)** (3840px 4K IIIF), **The Met** (4K historical Rajput/Mughal architecture), **V&A Museum** (2048px IIIF), and **NASA Earth Imagery** (Ultra-HD natural geography).
-     4. **Tier 4 (Secondary Stock)**: **Pixabay API** (`largeImageURL` or `fullHDURL`, min 1600×900).
-   - Strictly banned: Pixabay `/get/g…` session links (return HTTP 429), placeholder domains (`picsum.photos`, `via.placeholder`, `placeholder.com`, `dummyimage.com`), low-res thumbnails (< 1000px width), SVG/PDF/maps/diagrams.
+     1. **Tier 1 (Ultra HD Curated Photo APIs)**: **Pexels API** (`&w=1920` canonical True HD) & **Unsplash API** (`&auto=format&fit=crop&w=1920&q=85`) with 100% reliable global CDNs and zero rate-limiting.
+     2. **Tier 2 (Official Stock APIs)**: **Pixabay API** (`largeImageURL` or `fullHDURL`, min 1600×900 via official API key).
+     3. **Tier 3 (Authentic CC Travel Streams)**: **Flickr CC Travel Streams** (`_b.jpg` 1024px+, `_k.jpg` 2048px, `_o.jpg` 4K) & **Openverse Public Search** (700M+ CC library).
+     4. **Tier 4 (Museum 4K Open Access & NASA)**: **Cleveland Museum of Art (CMA)** (3400px+ CC0), **Art Institute of Chicago (AIC)** (3840px 4K IIIF), **The Met**, **V&A Museum** (2048px IIIF), and **NASA Earth Imagery**.
+     5. **Tier 5 (Ground Truth Captures)**: **Google Places Photos API** & **Wikimedia Commons** (only when fully accessible without CDN rate limits HTTP 429 or 404 file moves).
+   - Strictly banned: Wikimedia Commons direct hotlinks when rate-limited (`upload.wikimedia.org` HTTP 429/403/404), Pixabay `/get/g…` session links (return HTTP 429), placeholder domains (`picsum.photos`, `via.placeholder`, `placeholder.com`, `dummyimage.com`), low-res thumbnails (< 1000px width), SVG/PDF/maps/diagrams.
    - Sanitize all metadata: Ensure HTML entities (`&lt;`, `&gt;`, `&quot;`, `&amp;`) are completely decoded and any HTML tags (`<a href=...>`, `<b>`, etc.) are 100% stripped from `alt`, `title`, and `caption`.
 
 5. **Rule 5 — Subject Selection (Monuments, Scenery & Architecture Only)**
    - **Target Subjects**: Must feature authentic monuments, scenic landscapes, panoramic views, historical architecture, heritage structures, nature, temples, forts, waterfalls, or beaches.
-   - **Automatic Rejections** (Banned Pattern Filter — applied to both title AND URL):
-     - ❌ People / portraits / selfies / faces / posing women/girls/boys/men
-     - ❌ Vehicles: tractor, bus, train, car, speedboat, turbine
-     - ❌ Foreign locations: China, Spain, Brazil, Bali, Indonesia, Malaysia, Ukraine, Berlin, Germany, Vietnam, Cuba, Kyiv
-     - ❌ Real-estate/commercial: villas, apartments, "for sale", hotel lobby
-     - ❌ Generic stock: random DSC filenames, placeholder images, audio files, diagrams, flags, clip art
-     - ❌ Wrong region: verify state/district context matches destination slug
+   - **Strict Rejections (Zero Tolerance)**:
+     - ❌ **NO person**: Zero individuals, portraits, selfies, faces, or posing tourists/models (women, girls, boys, men).
+     - ❌ **NO people crowd**: Zero tourist mobs, dense crowds, or market gatherings obstructing the scenery/monument.
+     - ❌ **NO random images**: Zero unrelated stock filler, arbitrary objects, food plates, hotel rooms, office interiors, traffic jams, or clip art.
+     - ❌ **Vehicles**: tractor, bus, train, car, speedboat, turbine.
+     - ❌ **Foreign locations**: China, Spain, Brazil, Bali, Indonesia, Malaysia, Ukraine, Berlin, Germany, Vietnam, Cuba, Kyiv.
+     - ❌ **Real-estate/commercial**: villas, apartments, "for sale", hotel lobby.
+     - ❌ **Generic assets**: random DSC filenames, placeholder images, audio files, diagrams, flags, scanned documents.
+     - ❌ **Wrong region**: state/district context must strictly match the destination.
 
 ## Search Strategy & Heuristics
 

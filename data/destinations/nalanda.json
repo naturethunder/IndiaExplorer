@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Magadh",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Nalanda — heritage city of Bihar",
+  "badge": "Historic Fortress",
+  "tagline": "Historic Fortress & Ancient Ramparts in Bihar",
   "heroImage": {
     "src": "https://images.unsplash.com/photo-1736235300171-eb8aa382b594?auto=format&fit=crop&w=1600&q=80",
     "alt": "Temple No. 3 and Sariputra Stupa at the ancient Nalanda University ruins"
@@ -17,7 +17,8 @@
     "features": [
       "Ancient University",
       "Ruins",
-      "UNESCO"
+      "UNESCO",
+      "Historic Fortress"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -211,7 +212,7 @@
     {
       "name": "Nalanda University Ruins",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Nalanda Centre, Bihar",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -225,12 +226,13 @@
         "https://images.pexels.com/photos/36588602/pexels-photo-36588602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.unsplash.com/photo-1559489110-40a90ee4e70a?auto=format&fit=crop&w=1600&q=80",
         "https://live.staticflickr.com/65535/53023406400_176bb046ff_b.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Nalanda Archaeological Museum",
       "category": "cultural",
-      "distance": "Centre",
+      "distance": "In Nalanda Centre, Bihar",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -244,12 +246,13 @@
         "https://live.staticflickr.com/448/31448111034_3fdddd0b17_b.jpg",
         "https://live.staticflickr.com/7316/16400310065_2a6ba7ce02_b.jpg",
         "https://live.staticflickr.com/592/32289845595_cd5ac41bd7_b.jpg"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Xuanzang Memorial Hall",
       "category": "cultural",
-      "distance": "2 km",
+      "distance": "2 km from Nalanda, Bihar",
       "entryFee": "₹20",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -263,7 +266,8 @@
         "https://images.unsplash.com/photo-1786062841848-18177898b3a7?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8OHx8WHVhbnphbmclMjBNZW1vcmlhbCUyMEhhbGwlMjBCaWhhcnxlbnwwfDB8fHwxNzg4NjM4NDQ5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
         "https://upload.wikimedia.org/wikipedia/commons/e/e5/Xuanzang_Memorial_Hall_Nalanda.jpg",
         "https://live.staticflickr.com/2793/4193007564_b391659e9d_b.jpg"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Nalanda"
     }
   ],
   "itinerary": [
@@ -391,23 +395,28 @@
   "gallery": [
     {
       "src": "https://images.unsplash.com/photo-1736235300171-eb8aa382b594?auto=format&fit=crop&w=1600&q=80",
-      "alt": "Temple No. 3 and Sariputra Stupa at the ancient Nalanda University ruins"
+      "alt": "Temple No. 3 and Sariputra Stupa at the ancient Nalanda University ruins",
+      "title": "Nalanda University Ruins — Nalanda"
     },
     {
       "src": "https://images.unsplash.com/photo-1608798293214-4466caaa28af?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8U2FyaXB1dHJhJTIwU3R1cGElMjBOYWxhbmRhJTIwcnVpbnN8ZW58MHwwfHx8MTc4ODYzNzQ4OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=80",
-      "alt": "Excavated brick viharas and monasteries of ancient Nalanda Mahavihara"
+      "alt": "Excavated brick viharas and monasteries of ancient Nalanda Mahavihara",
+      "title": "Excavated brick viharas and monasteries of ancient Nalanda Mahavihara — Nalanda"
     },
     {
       "src": "https://images.pexels.com/photos/38186484/pexels-photo-38186484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Xuanzang Memorial Hall pagoda architecture in Nalanda, Bihar"
+      "alt": "Xuanzang Memorial Hall pagoda architecture in Nalanda, Bihar",
+      "title": "Xuanzang Memorial Hall pagoda architecture in Nalanda, Bihar — Nalanda"
     },
     {
       "src": "https://live.staticflickr.com/4227/34179303813_ec30dec2c3_b.jpg",
-      "alt": "Ancient corridors and brick masonry at Nalanda UNESCO World Heritage Site"
+      "alt": "Ancient corridors and brick masonry at Nalanda UNESCO World Heritage Site",
+      "title": "Historic Fortress at Nalanda"
     },
     {
       "src": "https://live.staticflickr.com/750/32140418232_c84e6c39d6_b.jpg",
-      "alt": "Courtyard and archaeological landscape of the ancient university of Nalanda"
+      "alt": "Courtyard and archaeological landscape of the ancient university of Nalanda",
+      "title": "Panoramic Heritage Landscape at Nalanda"
     }
   ],
   "faq": [

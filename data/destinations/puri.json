@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Coromandel Coast",
   "type": "spiritual",
-  "badge": "Popular",
-  "tagline": "Puri — spiritual town of Odisha",
+  "badge": "Coastal Beach",
+  "tagline": "Scenic Coastal Beach & Ocean Horizons in Odisha",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/At_Puri_beach_05.jpg",
     "alt": "Puri, Odisha"
@@ -17,7 +17,8 @@
     "features": [
       "Jagannath",
       "Beach",
-      "Rath Yatra"
+      "Rath Yatra",
+      "Coastal Shoreline"
     ],
     "altitude": null,
     "rating": 4.5,
@@ -215,7 +216,7 @@
     {
       "name": "Jagannath Temple",
       "category": "spiritual",
-      "distance": "Centre",
+      "distance": "In Puri Centre, Odisha",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -229,12 +230,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rising_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7a/Broken_tree_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Long_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Puri Beach",
       "category": "beach",
-      "distance": "2 km",
+      "distance": "2 km from Puri, Odisha",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -248,12 +250,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/6/6b/Full_of_tree%27s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d6/Small_dog_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d7/Banyan_tree_at_the_campus_of_Ramkrishna_Mission_Shikshanamandira%2C_in_Howrah%2C_WB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins drive from Puri"
     },
     {
       "name": "Chilika Lake",
       "category": "nature",
-      "distance": "50 km",
+      "distance": "50 km from Puri, Odisha",
       "entryFee": "₹1,200",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -267,7 +270,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Satpada.jpg/1280px-Satpada.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/1/17/Amaltas_tree_in_Delhi%2CIndia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E0%A4%A8%E0%A5%80%E0%A4%AE.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Puri"
     }
   ],
   "itinerary": [
@@ -396,23 +400,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/At_Puri_beach_05.jpg",
-      "alt": "Puri in Puri, Odisha - Boats at Puri beach"
+      "alt": "Puri in Puri, Odisha - Boats at Puri beach",
+      "title": "At Puri Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jagannath_Temple%2C_Puri_02.jpg",
-      "alt": "Puri photo 2"
+      "alt": "Jagannath Temple, Puri",
+      "title": "Jagannath Temple, Puri"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/At_Puri_beach_02.jpg",
-      "alt": "Puri photo 3"
+      "alt": "At Puri Beach",
+      "title": "At Puri Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/At_Puri_beach_03.jpg",
-      "alt": "Puri photo 4"
+      "alt": "At Puri Beach",
+      "title": "At Puri Beach"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tree_without_leaf_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Trees in India"
+      "alt": "Trees in India",
+      "title": "Tree Without Leaf — Puri"
     }
   ],
   "faq": [

@@ -12,10 +12,12 @@ import { destUrl, cardImg } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';
 import { mountGoogleMapEmbed } from '../components/googleMapEmbed.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
+import { initThemeToggle } from '../utils/theme.js';
 
 // This page keeps its own breadcrumb navbar + mobile tab bar (Stays/Route);
 // only the footer comes from the shared layout component.
 initLayout({});
+initThemeToggle();
 
 const TIER_ORDER = ['cheapest', 'budget', 'good', 'better', 'best', 'luxury', 'extra_luxury'];
 function tierColor(tier) {
@@ -182,6 +184,7 @@ function main(dest, idx) {
     // Step 6: Remove common Wikimedia file prefix patterns
     clean = clean.replace(/^File:[^.]+\.(?:jpe?g|png|webp)/i, ' ');
     clean = clean.replace(/^This is a photo of\s*/i, ' ');
+    clean = clean.replace(/^\d+px[-_\s]*/i, '');
     // Step 7: Normalise whitespace
     clean = clean.replace(/[\r\n\t]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
     // Step 8: Strip trailing/leading punctuation
@@ -268,11 +271,9 @@ function main(dest, idx) {
     }
   } catch (_) { }
 
-  // ─── Dynamic per-destination fixed background ────────────
-  const immBg = document.querySelector('.dest-immersive-bg');
-  if (immBg && heroSrc) {
-    immBg.style.backgroundImage = "url('" + heroSrc.replace(/'/g, "\\'") + "')";
-  }
+  // ─── Static Luxury Ambient Background ────────────────────
+  // Fixed dark obsidian canvas with static CSS radial glows.
+  // Never sets moving/shifting images on full-page background.
 
   // ─── Hero ───────────────────────────────────────────────
   const heroImg = document.getElementById('heroImg');
@@ -373,7 +374,16 @@ function main(dest, idx) {
 
   // ─── OVERVIEW panel ─────────────────────────────────────
   function renderOverview() {
-    const features = (ov && ov.features ? ov.features : (dest.features || [])).map(function (f) {
+    let featList = (ov && ov.features ? ov.features : (dest.features || []));
+    const tLower = (dest.title || '').toLowerCase();
+    const isCommercialCity = /delhi|mumbai|jaipur|kolkata|lucknow|ahmedabad|bengaluru|hyderabad|chennai|bazaar|market|chowk/i.test(tLower);
+    featList = featList.filter(function (f) {
+      const fl = (f || '').toLowerCase().trim();
+      if (fl === 'local bazaars' && !isCommercialCity) return false;
+      if (fl === 'ghats' && !/ghat|varanasi|haridwar|rishikesh|ujjain|prayagraj|mathura|maheshwar/i.test(tLower)) return false;
+      return true;
+    });
+    const features = featList.map(function (f) {
       return '<span class="inline-flex items-center px-3 py-1.5 bg-orange-50 text-orange-800 text-sm font-medium rounded-full border border-orange-200">' + esc(f) + '</span>';
     }).join('');
 
@@ -391,7 +401,9 @@ function main(dest, idx) {
         '<h4 class="font-bold text-sm text-gray-900 truncate leading-snug">' + esc(p.name) + '</h4>' +
         '</div>' +
         '<p class="text-xs text-gray-500 capitalize mb-1.5 font-medium flex items-center gap-1.5 truncate">' +
-        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'attraction') + '</span> · <span>📍 ' + esc(p.distance || 'Nearby') + '</span>' +
+        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'attraction') + '</span> · ' +
+        '<span title="' + esc(p.distance || '') + '">📍 ' + esc(p.distance || 'Nearby') + '</span> · ' +
+        '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span>' +
         '</p>' +
         '<p class="text-xs text-gray-600 line-clamp-2 leading-relaxed">' + esc(desc.slice(0, 90)) + (desc.length > 90 ? '…' : '') + '</p>' +
         '</div></div>';
@@ -418,6 +430,33 @@ function main(dest, idx) {
         photos.push(photo);
       }
 
+      // Intelligent resolver for gallery titles and subtitles avoiding generic numbers, camera codes, or foreign labels
+      function isGenericLabel(text) {
+        if (!text || typeof text !== 'string') return true;
+        const trimmed = text.trim();
+        const dTitle = (dest.title || '').trim().toLowerCase();
+        const tLower = trimmed.toLowerCase();
+        
+        // Exact duplicate of destination name or repetition
+        if (tLower === dTitle || tLower === `${dTitle} — ${dTitle}` || tLower === `${dTitle} — ${dTitle}, ${(dest.state || '').toLowerCase()}`) return true;
+
+        // Generic vista/slide words
+        if (/^(?:[a-zA-Z\s-]+[\s—–-])?(?:vista|highlight|photo|slide|view|scenic view|image|attraction)\s*\d*$/i.test(trimmed)) return true;
+        if (/^(?:photo|slide|image|vista|highlight|landscape)\s*\d*$/i.test(trimmed)) return true;
+        if (/^attraction\s*\d+/i.test(trimmed)) return true;
+
+        // Trailing numbered suffixes (e.g. Tikona3, Addhi Khuyi1)
+        if (/\b[A-Za-z\s-]+\d+$/.test(trimmed)) return true;
+
+        // Camera filenames or timestamps (e.g. DSC08544, IMG2025..., 20190615)
+        if (/\b(dsc[n0-9_]*|img[0-9_]*|p\d{4,}|\d{8,}|\d{4}_\d{2}_\d{2}|ptrqs|wikivoyage)\b/i.test(trimmed)) return true;
+
+        // Foreign locations
+        if (/\b(germany|france|italy|spain|turkey|türkiye|austria|ukraine|russia|vietnam|taiwan|indonesia|thailand|canada|usa|england|poland|kyiv|berlin|vienna|london|paris|weser|pegestorf|argentina|brazil|mexico|colombia|sri lanka|colombo|dhaka|lahore|karachi)\b/i.test(trimmed)) return true;
+
+        return false;
+      }
+
       function formatHeroTitle(title, tagline, alt, state) {
         if (tagline && typeof tagline === 'string') {
           const t = cleanAltText(tagline);
@@ -430,7 +469,7 @@ function main(dest, idx) {
         }
         if (alt && typeof alt === 'string') {
           const a = cleanAltText(alt);
-          if (a && a.toLowerCase() !== title.toLowerCase()) {
+          if (a && a.toLowerCase() !== title.toLowerCase() && !isGenericLabel(a)) {
             if (a.toLowerCase().startsWith(title.toLowerCase())) {
               return a.slice(0, 70);
             }
@@ -460,50 +499,93 @@ function main(dest, idx) {
         });
       }
 
-      // Intelligent resolver for gallery titles and subtitles avoiding generic "Vista 2" or "Highlight 1"
-      function isGenericLabel(text) {
-        if (!text || typeof text !== 'string') return true;
-        const trimmed = text.trim();
-        return /^(?:[a-zA-Z\s-]+[\s—–-])?(?:vista|highlight|photo|slide|view|scenic view|image|attraction)\s*\d+$/i.test(trimmed)
-          || /^(?:photo|slide|image|vista|highlight)\s*\d+$/i.test(trimmed)
-          || /^attraction\s*\d+/i.test(trimmed);
-      }
-
       function resolveGalleryTitle(g, idx) {
-        // 1. If explicit title exists and is not generic, use it
+        // 1. If explicit title exists and is not generic, clean and use it
         if (g && typeof g === 'object' && g.title && !isGenericLabel(g.title)) {
           const cleanedTitle = cleanAltText(g.title);
-          if (cleanedTitle) return cleanedTitle;
+          if (cleanedTitle && !isGenericLabel(cleanedTitle)) return cleanedTitle;
         }
-        // 2. Derive from alt text if descriptive
+        // 2. Derive from alt text if descriptive and not generic
         const gAlt = (g && typeof g === 'object' && g.alt) ? cleanAltText(g.alt) : '';
         if (gAlt && gAlt.length > 5 && !isGenericLabel(gAlt) && gAlt.toLowerCase() !== dest.title.toLowerCase()) {
           let cleanAlt = gAlt;
-          if (cleanAlt.length > 55) {
-            const sub = cleanAlt.slice(0, 52);
+          if (cleanAlt.length > 60) {
+            const sub = cleanAlt.slice(0, 58);
             const lastSpace = sub.lastIndexOf(' ');
             cleanAlt = (lastSpace > 25 ? sub.slice(0, lastSpace) : sub) + '…';
           }
           return cleanAlt;
         }
-        // 3. Fallback to destination features if available
-        const features = dest.features || (dest.overview && dest.overview.features) || [];
-        if (features && features[idx]) {
-          return features[idx];
+        // 3. Fallback to destination features if available (excluding misplaced generic tags)
+        const tLower = (dest.title || '').toLowerCase();
+        const isCommercialCity = /delhi|mumbai|jaipur|kolkata|lucknow|ahmedabad|bengaluru|hyderabad|chennai|bazaar|market|chowk/i.test(tLower);
+        const rawFeatures = dest.features || (dest.overview && dest.overview.features) || [];
+        const validFeatures = rawFeatures.filter(f => {
+          const fl = (f || '').toLowerCase().trim();
+          if (fl === 'local bazaars' && !isCommercialCity) return false;
+          if (fl === 'ghats' && !/ghat|varanasi|haridwar|rishikesh|ujjain|prayagraj|mathura|maheshwar/i.test(tLower)) return false;
+          return fl.length > 3;
+        });
+        if (validFeatures && validFeatures[idx]) {
+          return `${dest.title} — ${validFeatures[idx]}`;
         }
         // 4. Fallback to top places names if available
-        if (places && places[idx] && places[idx].name) {
-          return places[idx].name;
+        if (places && places[idx] && places[idx].name && places[idx].name.toLowerCase() !== dest.title.toLowerCase()) {
+          return `${dest.title} — ${places[idx].name}`;
         }
-        // 5. Evocative editorial descriptors (never robotic numbers)
-        const editorialPicks = [
+        // 5. Category-tailored authentic architectural and nature descriptors
+        const typePicks = {
+          heritage: [
+            'Historic Ramparts & Ancient Architecture',
+            'Fort Summit & Flag Bastion',
+            'Fortified Stone Gateway & Carvings',
+            'Ancient Citadel Ruins & Cisterns',
+            'Panoramic Mountain Ramparts'
+          ],
+          spiritual: [
+            'Sacred Sanctum & Ancient Shikhara',
+            'Carved Granite Mandapam & Pillars',
+            'Sacred Theertham & Temple Waters',
+            'Towering Dravidian Gopuram & Spire',
+            'Spiritual Courtyard & Inner Shrines'
+          ],
+          wildlife: [
+            'Protected Wildlife Habitat & Canopy',
+            'Native Flora & Forest Trails',
+            'Wetland Sanctuary Grounds & Wildlife',
+            'Wilderness Scenic Vista & Watchtower',
+            'Natural Habitat Reserve & Woodlands'
+          ],
+          beach: [
+            'Serene Shoreline & Pristine Waters',
+            'Coastal Horizon & Golden Sands',
+            'Cascading Coastal Surf & Sands',
+            'Pristine Waterfront Promenade',
+            'Tranquil Water Vista & Embankment'
+          ],
+          lakes: [
+            'Serene Lake Waters & Reflection',
+            'Tranquil Shoreline & Gentle Waves',
+            'Scenic Waterfront Embankment',
+            'Sunset Over Lake & Mountain Ridge',
+            'Emerald Waters & Nature Canopy'
+          ],
+          hill_station: [
+            'Panoramic Mountain Peaks & Valley',
+            'Misty Hill Slopes & Pine Ridge',
+            'Scenic Valley Lookout & Viewpoint',
+            'High Altitude Mountain Ridge',
+            'Serene Alpine Horizon & Clouds'
+          ]
+        };
+        const picks = typePicks[dest.type] || [
           'Panoramic Landscape & Horizon',
           'Historic Architecture & Spire',
           'Scenic Nature & Serene Trails',
           'Sacred Temple & Spiritual Sanctuary',
           'Majestic Sunset Vista'
         ];
-        return dest.title + ' — ' + (editorialPicks[idx % editorialPicks.length] || 'Scenic Vista');
+        return dest.title + ' — ' + (picks[idx % picks.length] || 'Scenic Vista');
       }
 
       function resolveGalleryCaption(g, idx) {
@@ -695,23 +777,9 @@ function main(dest, idx) {
       const slides = document.querySelectorAll('#destOvTrack .dest-ov-slide');
       if (!wrap || !slides.length) return;
 
-      // Cache ambient bg element for live sync
-      const immBg = document.querySelector('.dest-immersive-bg');
-      // Pre-collect slide image URLs for ambient bg sync
-      const slideImgSrcs = Array.from(slides).map(function (s) {
-        return s.getAttribute('data-src') || '';
-      });
-
       let cur = 0;
       let timer = null;
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      function syncAmbientBg(idx) {
-        // Sync the full-page blurred background to the current slide's image
-        // Creates the "living page" WOW effect — page breathes with the photo
-        if (!immBg || !slideImgSrcs[idx] || reduceMotion) return;
-        immBg.style.backgroundImage = "url('" + slideImgSrcs[idx].replace(/'/g, "\\'") + "')";
-      }
 
       function go(idx) {
         cur = (idx + slides.length) % slides.length;
@@ -731,8 +799,6 @@ function main(dest, idx) {
           d.classList.toggle('is-active', i === cur);
           d.setAttribute('aria-current', i === cur ? 'true' : 'false');
         });
-        // ✨ Ambient bg sync — page background follows the carousel slide
-        syncAmbientBg(cur);
       }
 
       function start() { if (reduceMotion) return; stop(); timer = setInterval(function () { go(cur + 1); }, 4000); }
@@ -806,8 +872,6 @@ function main(dest, idx) {
         start();
       });
 
-      // Init ambient bg with first slide
-      syncAmbientBg(0);
       start();
     })();
   }
@@ -837,7 +901,12 @@ function main(dest, idx) {
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
-        '<p class="text-xs text-gray-500 mb-1.5 capitalize">' + esc(p.category) + ' · ' + esc(p.distance) + ' · ' + esc(p.duration) + '</p>' +
+        '<p class="text-xs text-gray-500 mb-1.5 capitalize flex flex-wrap items-center gap-x-2 gap-y-1">' +
+        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'attraction') + '</span> · ' +
+        '<span>📍 ' + esc(p.distance || 'Nearby') + '</span> · ' +
+        '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span> · ' +
+        '<span>⏱ ' + esc(p.duration || '1–2 hrs') + '</span>' +
+        '</p>' +
         '<p class="text-xs text-gray-600 leading-relaxed line-clamp-2">' + esc(p.description) + '</p>' +
         '<div class="flex items-center justify-between mt-2 text-xs"><div class="flex gap-3">' + fee + '<span class="text-gray-400">' + esc(p.timings) + '</span></div>' +
         '<span class="text-amber-400 font-semibold shrink-0">View details →</span></div>' +
@@ -1379,7 +1448,7 @@ function main(dest, idx) {
     if (typeTitle) {
       expAllEl.textContent = 'Explore Similar ' + typeTitle + ' Destinations';
     } else {
-      const totalCount = (idx && idx.count) || allDestList.length || 2392;
+      const totalCount = (idx && idx.count) || allDestList.length || 2393;
       expAllEl.textContent = 'Explore All ' + inr(totalCount);
     }
   }
@@ -1527,22 +1596,72 @@ function main(dest, idx) {
     const d = e.target.closest('.dot'); if (d) { carGo(parseInt(d.getAttribute('data-i'), 10)); carStartAuto(); }
   });
   carDots.addEventListener('focusin', carStopAuto);
-  carDots.addEventListener('focusout', carStartAuto);
+  const HIMALAYAN_STATES = new Set([
+    'Ladakh', 'Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand',
+    'Sikkim', 'Arunachal Pradesh', 'Meghalaya', 'Mizoram', 'Nagaland', 'Manipur'
+  ]);
+
+  function getPlaceTravelTime(p, destTitle, destState) {
+    if (p && p.travelTime && typeof p.travelTime === 'string') return p.travelTime;
+    const isHimalayan = HIMALAYAN_STATES.has((destState || '').trim());
+    let rawDist = ((p && p.distance) || '').trim();
+    let numKm = null;
+    const kmMatch = rawDist.match(/([\d.]+)\s*km/i);
+    if (kmMatch) numKm = parseFloat(kmMatch[1]);
+    else if (/^\d+(\.\d+)?$/.test(rawDist)) numKm = parseFloat(rawDist);
+
+    const isBoat = /boat|ferry|water/i.test(rawDist);
+    const isTownCentre = /town\s*cent(re|er)|city\s*cent(re|er)|^centre$|^center$|^central$/i.test(rawDist);
+    const isOnSite = /^(main\s*complex|courtyard|on[- ]site|inside|premises|gate|campus|sanctum)/i.test(rawDist);
+
+    const baseName = destTitle || 'main destination';
+
+    if (isOnSite) return 'Inside complex (Walkable)';
+    if (isTownCentre || numKm === 0) return 'Under 5 mins walk in Town Centre';
+    if (isBoat) return (numKm || 2) <= 2 ? '10–15 mins boat ride from ' + baseName : '20–30 mins boat ride from ' + baseName;
+
+    if (numKm !== null) {
+      if (numKm <= 0.8) return '3–5 mins walk from ' + baseName;
+      if (numKm <= 1.5) return '5–10 mins walk / 3 min drive from ' + baseName;
+      if (numKm <= 3) return isHimalayan ? '10–15 mins drive from ' + baseName : '5–10 mins drive from ' + baseName;
+      if (numKm <= 6) return isHimalayan ? '15–25 mins drive from ' + baseName : '10–15 mins drive from ' + baseName;
+      if (numKm <= 12) return isHimalayan ? '25–35 mins drive from ' + baseName : '15–20 mins drive from ' + baseName;
+      if (numKm <= 20) return isHimalayan ? '35–45 mins drive from ' + baseName : '25–35 mins drive from ' + baseName;
+      if (numKm <= 35) return isHimalayan ? '1–1.5 hrs drive from ' + baseName : '35–50 mins drive from ' + baseName;
+      if (numKm <= 50) return isHimalayan ? '2–3 hrs drive from ' + baseName : '1–1.5 hrs drive from ' + baseName;
+      if (numKm <= 80) return isHimalayan ? '2.5–3.5 hrs drive from ' + baseName : '1.5–2 hrs drive from ' + baseName;
+      if (numKm <= 120) return isHimalayan ? '3.5–5 hrs drive from ' + baseName : '2–3 hrs drive from ' + baseName;
+      if (numKm <= 180) return isHimalayan ? '5–6 hrs drive from ' + baseName : '3–4 hrs drive from ' + baseName;
+      return isHimalayan ? '6+ hrs drive from ' + baseName + ' (Day trip)' : '4–6 hrs drive from ' + baseName;
+    }
+    return '15–30 mins drive from ' + baseName;
+  }
 
   function openPlaceModal(p) {
     document.getElementById('placeName').textContent = p.name;
     document.getElementById('placeRating').textContent = '★ ' + p.rating;
     document.getElementById('placeCategory').textContent = p.category;
-    var distText = p.distance || '';
-    if (/^\d+(\.\d+)?\s*(km|m)/i.test(distText)) {
+    var distText = (p.distance || '').trim();
+    if (/^\d+(\.\d+)?\s*(km|m)$/i.test(distText)) {
       distText = distText + ' from ' + dest.title;
+    } else if (/^\d+(\.\d+)?\s*(km|m)\s+from\s+/i.test(distText)) {
+      if (!distText.toLowerCase().includes(dest.title.toLowerCase())) {
+        distText = distText + ', ' + dest.title;
+      }
     } else if (/town\s*cent(re|er)/i.test(distText)) {
       distText = 'In Town Centre';
     } else if (/^(main\s*complex|courtyard|on[- ]site|inside|centre|center|premises)/i.test(distText)) {
       distText = distText + ' (On-site)';
     }
     document.getElementById('placeDistance').textContent = distText || ('Near ' + dest.title);
-    document.getElementById('placeDuration').textContent = p.duration;
+    
+    // Set Travel Time from main destination
+    const travelTimeStr = getPlaceTravelTime(p, dest.title, dest.state);
+    const travelEl = document.getElementById('placeTravelTime');
+    if (travelEl) {
+      travelEl.textContent = travelTimeStr;
+    }
+    document.getElementById('placeDuration').textContent = p.duration || '1–2 hrs to explore';
     document.getElementById('placeFee').textContent = p.entryFee;
     document.getElementById('placeTimings').textContent = p.timings;
     document.getElementById('placeMapLink').href =

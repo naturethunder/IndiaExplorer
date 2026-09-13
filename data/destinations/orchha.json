@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Bundelkhand",
   "type": "heritage",
-  "badge": "Popular",
-  "tagline": "Orchha — heritage city of Madhya Pradesh",
+  "badge": "Royal Palace",
+  "tagline": "Historic Royal Palace & Architectural Splendour in Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Raja_Mahal%2C_Orchha.jpg",
     "alt": "Orchha, Madhya Pradesh"
@@ -17,7 +17,8 @@
     "features": [
       "Cenotaphs",
       "Palaces",
-      "Betwa River"
+      "Betwa River",
+      "Royal Palace"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -213,7 +214,7 @@
     {
       "name": "Orchha Fort Complex",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Orchha Centre, Madhya Pradesh",
       "entryFee": "₹40",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -227,12 +228,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Karuppusamy_Temple_Near_Malaikovil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/09/Karkudi_malai_padi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/e/e8/Karkudi_malai_koil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Chhatris (Cenotaphs)",
       "category": "heritage",
-      "distance": "1 km",
+      "distance": "1 km from Orchha, Madhya Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -246,12 +248,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E0%AE%9A%E0%AF%8A%E0%AE%B0%E0%AF%8D%E0%AE%A3%E0%AE%BE%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%95%E0%AF%88_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%80%E0%AE%B8%E0%AF%8D%E0%AE%B5%E0%AE%B0%E0%AE%B0%E0%AF%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kovil_south_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/a/a2/Thottiyam_Madurakali_Amman_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "5–10 mins walk / 3 min drive from Orchha"
     },
     {
       "name": "Ram Raja Temple",
       "category": "spiritual",
-      "distance": "Centre",
+      "distance": "In Orchha Centre, Madhya Pradesh",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -265,7 +268,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/D%C3%A9vots_devant_le_Ram_Raja_Temple_%28Orchha%29_%288451604116%29.jpg/1280px-D%C3%A9vots_devant_le_Ram_Raja_Temple_%28Orchha%29_%288451604116%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/d/db/%E0%AE%AA%E0%AE%B0%E0%AE%BE%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B1%E0%AF%88%E0%AE%A8%E0%AE%BE%E0%AE%A4%E0%AE%B0%E0%AF%8D_%E0%AE%89%E0%AE%B3%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AA%E0%AF%81%E0%AE%B0%E0%AE%AE%E0%AF%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/f/f1/%E0%AE%95%E0%AE%BE%E0%AE%B3%E0%AE%BF%E0%AE%AF%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%A9%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88_%E0%AE%AA%E0%AE%B0%E0%AE%BE%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B1%E0%AF%88%E0%AE%A8%E0%AE%BE%E0%AE%A4%E0%AE%B0%E0%AF%8D_%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AF%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     }
   ],
   "itinerary": [
@@ -393,23 +397,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Raja_Mahal%2C_Orchha.jpg",
-      "alt": "Orchha in Orchha, Madhya Pradesh - King Palace (Raja Mahal), Orchha, Madhya Pradesh, India."
+      "alt": "Orchha in Orchha, Madhya Pradesh - King Palace (Raja Mahal), Orchha, Madhya Pradesh, India.",
+      "title": "Raja Mahal, Orchha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Orchha_Fort_complex_in_Orchha%2C_Madhya_Pradesh_02.jpg",
-      "alt": "Orchha photo 2"
+      "alt": "Orchha Fort Complex In Orchha, Madhya Pradesh",
+      "title": "Orchha Fort Complex In Orchha, Madhya Pradesh"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Chhatris%28Cenotaphs%29%2C_Orchha_01.jpg",
-      "alt": "Orchha photo 3"
+      "alt": "Chhatris(Cenotaphs), Orchha",
+      "title": "Chhatris(Cenotaphs), Orchha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chhatris%28Cenotaphs%29%2C_Orchha_03.jpg",
-      "alt": "Orchha photo 4"
+      "alt": "Chhatris(Cenotaphs), Orchha",
+      "title": "Chhatris(Cenotaphs), Orchha"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Ram_Raja_Temple.jpg",
-      "alt": "Orchha photo 5"
+      "alt": "Ram Raja Temple — Orchha",
+      "title": "Ram Raja Temple — Orchha"
     }
   ],
   "faq": [

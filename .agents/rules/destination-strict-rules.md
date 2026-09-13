@@ -12,17 +12,19 @@ They stack on top of `ui-ux-pro-max` skill rules.
 Every destination JSON must have **exactly 5 hero/gallery images**, all different.
 
 - **HD-First & Authentic Priority Order (as per `.env.local`)**:
-  1. **Google Places Photos & Wikimedia Commons**: Ground-truth authentic 4K/8K captures of the exact destination/monument.
-  2. **Pexels & Unsplash**: True HD / 4K landscape photography (1920×1080 to 4608×2592).
+  1. **Pexels & Unsplash APIs**: True HD / 4K landscape photography (1920×1080 to 4608×2592, canonical `&w=1920` or `&auto=format&fit=crop&w=1920&q=85`). Zero rate-limiting, 100% reliable global CDNs.
+  2. **Pixabay (Official API Only)**: Permanent `largeImageURL` (min 1600×900) via official API key.
   3. **Flickr CC & Openverse**: Authentic high-res travel streams (`_b.jpg` 1024px+, `_k.jpg` 2048px, `_o.jpg` 4K).
   4. **Museum 4K Open Access (CMA, AIC, Met, V&A)**: 3400px–3840px Ultra HD CC0 captures for historical architecture, forts, and palaces.
   5. **NASA Earth Imagery**: Ultra-HD satellite vistas for geographical landscapes, rivers, and mountain ranges.
-  6. **Pixabay (API Only)**: Permanent `largeImageURL` (min 1600×900) via official API key.
-- **Banned:** Pixabay `/get/` session links (expire / return HTTP 429), `picsum.photos`, placeholder CDNs, low-res thumbnails (< 1000px width)
-- Each image must be **True HD / 4K Landscape quality** — minimum 1280px wide (recommended 1920×1080 to 4608×2592), widescreen aspect ratio (`1.25` to `1.9`)
+  6. **Google Places Photos & Wikimedia Commons**: Ground-truth captures only when fully accessible without CDN rate limits (HTTP 429) or 404s.
+- **Banned:** Wikimedia Commons direct hotlinks when rate-limited (`upload.wikimedia.org` HTTP 429/403/404), Pixabay `/get/` session links (expire / return HTTP 429), `picsum.photos`, placeholder CDNs, low-res thumbnails (< 1000px width)
+- Each image must be **True HD / 4K Landscape quality** — minimum 1280px wide (strictly recommended 1920×1080 to 4608×2592), widescreen aspect ratio (`1.25` to `1.9`)
 - Portrait orientation (< 1.0 ratio) and thin banner slices (< 300px height) are strictly prohibited
 - All 5 must show the **actual destination** — no generic maps, district graphics, audio files, coins, or unrelated photos
 - The `heroImage.src` must be identical to `gallery[0].src`
+- **Proper Titles Mandatory**: Every item in `gallery[]` must have a meaningful, evocative, human-readable `title` that accurately describes the specific attraction, landmark, or scenic feature shown (e.g., `"Entrance Gate & Sanctuary Boardwalk"`, `"Yamuna River Wetland Vista"`, `"Migratory Waterfowl Over Okhla Barrage"`).
+  - ❌ **Forbidden titles**: Generic placeholders like `"photo 1"`, `"image 2"`, `"slide 3"`, `"Okhla Sanctuary photo 2"`, `"view 1"`, or blank titles.
 - The `gallery[]` array must contain all 5 unique URLs with descriptive `alt`, `title`, and `caption` fields
 
 ```json
@@ -31,11 +33,11 @@ Every destination JSON must have **exactly 5 hero/gallery images**, all differen
   "alt": "Descriptive alt text of the actual destination"
 },
 "gallery": [
-  { "src": "unique-hd-url-1", "alt": "..." },
-  { "src": "unique-hd-url-2", "alt": "..." },
-  { "src": "unique-hd-url-3", "alt": "..." },
-  { "src": "unique-hd-url-4", "alt": "..." },
-  { "src": "unique-hd-url-5", "alt": "..." }
+  { "src": "unique-hd-url-1", "alt": "Okhla Bird Sanctuary Entrance Gate", "title": "Grand Entrance & Nature Trail", "caption": "Protected wetlands bordering the Yamuna River" },
+  { "src": "unique-hd-url-2", "alt": "Yamuna River wetland waters at Okhla", "title": "Yamuna River Wetland Vista", "caption": "Serene morning mist over the river waters" },
+  { "src": "unique-hd-url-3", "alt": "Migratory waterbirds resting on the marsh", "title": "Migratory Avian Haven", "caption": "Winter refuge for over 300 migratory bird species" },
+  { "src": "unique-hd-url-4", "alt": "Watchtower overlooking the sanctuary reed beds", "title": "Observation Deck & Reed Beds", "caption": "Panoramic viewing platform for birdwatchers" },
+  { "src": "unique-hd-url-5", "alt": "Lush sanctuary foliage along the walking trails", "title": "Verdant Forest Trail", "caption": "Canopy walk along the Yamuna biodiversity corridor" }
 ]
 ```
 
@@ -106,18 +108,17 @@ const dupes = allUrls.filter((u, i) => allUrls.indexOf(u) !== i);
 
 ## Rule 4 — Subject & Visual Curation: Monuments, Scenery & Architecture Only
 
-When searching and selecting images across all providers, strict content filtering must be applied:
+When searching, curating, and selecting images across all providers, strict content filtering is enforced:
 
-- **MANDATORY / PREFERRED SUBJECTS**:
+- **MANDATORY / EXCLUSIVE FOCUS (Clean Architectural & Nature Vistas)**:
   - **Monuments & Heritage**: Ancient temples, historical forts, grand palaces, memorials, UNESCO world heritage sites.
   - **Scenery & Nature**: Panoramic landscapes, mountain vistas, waterfalls, lush valleys, pristine beaches, rivers, wildlife reserves.
   - **Architecture & Culture**: Magnificent facades, heritage courtyards, intricate stone carvings, aesthetic streetscapes, authentic cultural landmarks.
-  
-- **STRICTLY FORBIDDEN / AUTOMATIC REJECTION**:
-  - ❌ **People / Portraits / Selfies**: Photos with prominent individuals, tourist selfies, close-up faces, or people posing and obstructing the view.
-  - ❌ **Politicians / Politically Sensitive**: Official government/military photos at sensitive borders (e.g. PM/army at Line of Control). These are doubly rejected.
-  - ❌ **Unrelated / Wrong Images**: Stock photos of unrelated locations, wrong cities/states, generic modern office interiors, conference rooms, city traffic jams.
-  - ❌ **Generic Non-Travel Assets**: Food / plate close-ups, hotel bedding, random object close-ups, clip art, logos, infographics, maps, flags.
+
+- **STRICTLY FORBIDDEN / ZERO-TOLERANCE REJECTION**:
+  - ❌ **NO PERSON / NO PORTRAITS**: Absolutely zero individuals, tourist selfies, posing models (men, women, children), face close-ups, or humans as the subject.
+  - ❌ **NO PEOPLE CROWDS**: Absolutely zero dense tourist mobs, crowded gatherings, congested markets, or human crowds obstructing the monuments, scenery, or architecture. The shot must showcase the destination cleanly.
+  - ❌ **NO RANDOM IMAGES**: Absolutely zero unrelated filler, generic commercial stock, random objects, food/plates, hotel bedding, office interiors, traffic jams, clip art, logos, infographics, maps, flags, or mismatched foreign locations (e.g., Bali, Thailand, China, Europe). All images must be authentic to the specific Indian destination.
 
 ---
 
@@ -136,6 +137,7 @@ When searching and selecting images across all providers, strict content filteri
 | **9** | **Zero cross-destination URL collisions across all 2,393 files (66k+ URLs)** | **ExploreDesh Strict** |
 | **10** | **Subject Curation: Monuments, scenery & architecture only (No persons/selfies/politics/vehicles/foreign-monuments)** | **ExploreDesh Strict** |
 | **11** | **Authentic Ground-Truth + HD First Priority (as per `.env.local`)** | **ExploreDesh Strict (Phase 39)** |
+| **12** | **Proper Titles & Captions: descriptive, non-generic title for every gallery image** | **ExploreDesh Strict** |
 
 ---
 
@@ -164,7 +166,8 @@ When searching and selecting images across all providers, strict content filteri
 - ❌ **Placeholder CDNs**: `picsum.photos`, `via.placeholder`, `placeholder.com`, `dummyimage.com`, `placehold.co`, `loremflickr.com`.
 - ❌ **Low-Resolution Thumbnails (< 1000px width)**: Any thumbnail URLs (`cs=tiny`, `_s.jpg`, `_t.jpg`, `_m.jpg`, `w=300`, `w=400`) instead of Full HD (min 1280px, target 1920px+).
 - ❌ **Non-Photographic / Document Scans**: Vector `.svg`, document `.pdf`, audio files, scanned census sheets, heraldic emblems, logos, flags, maps.
-- ❌ **Foreign / Mismatched Locations**: Photos of foreign monuments/destinations (Angkor Wat, Bali, Thailand, Europe, China, etc.) falsely used for Indian destinations.
-- ❌ **Prominent Face / Portrait / Selfie Content**: Photos dominated by tourists or models obstructing the monument or landscape.
+- ❌ **NO Persons / Portraits / Selfies**: Photos with people, tourists, posing models, or face close-ups.
+- ❌ **NO People Crowds**: Dense tourist crowds, congested gatherings, or mobs obstructing the scenery or monument.
+- ❌ **NO Random / Unrelated Images**: Stock filler, unrelated cities/states, hotel beds, food plates, office interiors, or foreign landmarks.
 - ❌ **Politically Sensitive Content**: Official government/military figures at border checkpoints.
 - ❌ **Duplicate URLs**: Any URL appearing 2+ times in the same file or in any other destination file in the 66k+ index.

@@ -5,8 +5,8 @@
   "country": "India",
   "region": "Umaria",
   "type": "wildlife",
-  "badge": "Popular",
-  "tagline": "Bandhavgarh — wildlife reserve of Madhya Pradesh",
+  "badge": "Historic Fortress",
+  "tagline": "Historic Fortress & Ancient Ramparts in Madhya Pradesh",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hilly_terrain_of_Bandhavgarh_National_Park_Madhya_Pradesh_India.jpg",
     "alt": "Bandhavgarh, Madhya Pradesh"
@@ -17,7 +17,8 @@
     "features": [
       "Highest Tiger Density",
       "Fort",
-      "Safari"
+      "Safari",
+      "Historic Fortress"
     ],
     "altitude": null,
     "rating": 4.6,
@@ -212,7 +213,7 @@
     {
       "name": "Tala Zone Safari",
       "category": "wildlife",
-      "distance": "Park",
+      "distance": "Park near Bandhavgarh, Madhya Pradesh",
       "entryFee": "₹3,000",
       "timings": "Varies by season",
       "duration": "Half day",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/f/ff/Duladeo_Shiva_Temple_-_Khajuraho_-_Madhya_Pradesh_-_001.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sanchi_Stupa_-_Madhya_Pradesh_-_DSC_0001.jpg",
         "https://images.pexels.com/photos/15687156/pexels-photo-15687156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Bandhavgarh"
     },
     {
       "name": "Bandhavgarh Fort",
       "category": "heritage",
-      "distance": "Park",
+      "distance": "Park near Bandhavgarh, Madhya Pradesh",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/9/96/Bhimakali_temple_%289053410519%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/97/Spotted_deer_in_Bandhavgarh_National_Park_08.jpg",
         "https://images.pexels.com/photos/28181469/pexels-photo-28181469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Bandhavgarh"
     },
     {
       "name": "Three Cave Point",
       "category": "wildlife",
-      "distance": "Park",
+      "distance": "Park near Bandhavgarh, Madhya Pradesh",
       "entryFee": "Included",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/3/3f/0112621_Cave_10%2C_Udayagiri_Hindu_Caves%2C_Vidisha_district%2C_Madhya_Pradesh_005.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/f/f6/SLNSW_796800_The_Cave_Falls_Somersby_Point_Clare.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/0/02/Berdorf_%28LU%29%2C_Hohllay_--_2015_--_6097-101.jpg"
-      ]
+      ],
+      "travelTime": "15–30 mins drive from Bandhavgarh"
     }
   ],
   "itinerary": [
@@ -392,23 +396,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hilly_terrain_of_Bandhavgarh_National_Park_Madhya_Pradesh_India.jpg",
-      "alt": "Bandhavgarh in Bandhavgarh, Madhya Pradesh - Bandhavgarh National Park is home to 22 species of mammals and 300 species"
+      "alt": "Bandhavgarh in Bandhavgarh, Madhya Pradesh - Bandhavgarh National Park is home to 22 species of mammals and 300 species",
+      "title": "Hilly Terrain Of Bandhavgarh National Park Madhya Pradesh India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Fort_Bandhavgarh_National_Park_Madhya_Pradesh_India.jpg",
-      "alt": "Bandhavgarh photo 2"
+      "alt": "Fort Bandhavgarh National Park Madhya Pradesh India",
+      "title": "Fort Bandhavgarh National Park Madhya Pradesh India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Ficus_temple.jpg",
-      "alt": "Bandhavgarh photo 3"
+      "alt": "Ficus Temple — Bandhavgarh",
+      "title": "Ficus Temple — Bandhavgarh"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Nand_Mahal%2C_Baderi_Umaria.jpg",
-      "alt": "Bandhavgarh photo 5"
+      "alt": "Nand Mahal, Baderi Umaria — Bandhavgarh",
+      "title": "Nand Mahal, Baderi Umaria — Bandhavgarh"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Nand_Mahal%2C_Baderi%2C_Umaria.jpg",
-      "alt": "Bandhavgarh photo 6"
+      "alt": "Nand Mahal, Baderi, Umaria — Bandhavgarh",
+      "title": "Nand Mahal, Baderi, Umaria — Bandhavgarh"
     }
   ],
   "faq": [

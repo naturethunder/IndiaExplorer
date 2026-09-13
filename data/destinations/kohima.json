@@ -5,7 +5,7 @@
   "country": "India",
   "region": "Naga Hills",
   "type": "hill_station",
-  "badge": "Popular",
+  "badge": "Hill Station",
   "tagline": "Kohima — hill station of Nagaland",
   "heroImage": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Way_o_Kohima%2CNagaland_India.jpg",
@@ -17,7 +17,8 @@
     "features": [
       "Hornbill Festival",
       "WWII History",
-      "Tribes"
+      "Tribes",
+      "Misty Hills"
     ],
     "altitude": 1444,
     "rating": 4.4,
@@ -212,7 +213,7 @@
     {
       "name": "Kohima War Cemetery",
       "category": "heritage",
-      "distance": "Centre",
+      "distance": "In Kohima Centre, Nagaland",
       "entryFee": "Free",
       "timings": "Varies by season",
       "duration": "1 hr",
@@ -226,12 +227,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/df/Kohima_war_cemetery_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/3/30/Kohima_war_cemetery_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/d/d6/Kohima_war_cemetery_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "Under 5 mins walk in Town Centre"
     },
     {
       "name": "Kisama Heritage Village",
       "category": "cultural",
-      "distance": "12 km",
+      "distance": "12 km from Kohima, Nagaland",
       "entryFee": "₹30",
       "timings": "Varies by season",
       "duration": "2 hrs",
@@ -245,12 +247,13 @@
         "https://upload.wikimedia.org/wikipedia/commons/a/a2/Western_Ghats-_Karnataka_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Western_Ghats-_Karnataka_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/0/07/Panoramic_view_on_western_ghats.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "25–35 mins drive from Kohima"
     },
     {
       "name": "Dzukou Valley",
       "category": "trekking",
-      "distance": "25 km",
+      "distance": "25 km from Kohima, Nagaland",
       "entryFee": "₹100",
       "timings": "Varies by season",
       "duration": "2 days",
@@ -264,7 +267,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg/1280px-Astonishing_beauty_of_the_Dzuko_Valley_in_Manipur-Nagaland_border.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border.jpg/1280px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/1/1d/Dz%C3%BCkou_Valley%2C_Viswema%2C_Nagaland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ]
+      ],
+      "travelTime": "1–1.5 hrs drive from Kohima"
     }
   ],
   "itinerary": [
@@ -393,23 +397,28 @@
   "gallery": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Way_o_Kohima%2CNagaland_India.jpg",
-      "alt": "Kohima in Kohima, Nagaland - This the entrance to Kohima the town of Nagaland"
+      "alt": "Kohima in Kohima, Nagaland - This the entrance to Kohima the town of Nagaland",
+      "title": "Way O Kohima,Nagaland India"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Kohima_war_cemetery_19.jpg",
-      "alt": "Kohima photo 2"
+      "alt": "Kohima War Cemetery",
+      "title": "Kohima War Cemetery"
     },
     {
       "src": "https://images.pexels.com/photos/34330917/pexels-photo-34330917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Stunning view of vibrant green hills under a dramatic cloudy sky, located in India."
+      "alt": "Stunning view of vibrant green hills under a dramatic cloudy sky, located in India.",
+      "title": "Dzukou Valley — Kohima"
     },
     {
       "src": "https://images.pexels.com/photos/14916663/pexels-photo-14916663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Stunning view of Gangtok, Sikkim at sunset showcasing vibrant urban landscape and scenic hills."
+      "alt": "Stunning view of Gangtok, Sikkim at sunset showcasing vibrant urban landscape and scenic hills.",
+      "title": "Misty Hills at Kohima"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kohima_war_cemetery_34.jpg",
-      "alt": "Kohima photo 5"
+      "alt": "Kohima War Cemetery",
+      "title": "Kohima War Cemetery"
     }
   ],
   "faq": [
