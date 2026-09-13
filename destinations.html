@@ -343,13 +343,25 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/explore.js?v=20260906-1"></script>
+  <script type="module" src="js/pages/explore.js?v=20260914_7"></script>
   <script>
     // Navbar glass transition on scroll
     window.addEventListener('scroll', function () {
       var nav = document.querySelector('.nav-glass');
       if (nav) nav.classList.toggle('nav-scrolled', window.scrollY > 40);
     }, { passive: true });
+
+    // Inform users who open the file via local file:// protocol
+    if (window.location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var box = document.createElement('aside');
+        box.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999999;background:#FFFBEB;border:2px solid #F59E0B;color:#92400E;padding:16px 20px;border-radius:14px;box-shadow:0 16px 40px rgba(0,0,0,0.35);max-width:92vw;width:440px;text-align:center;font-family:sans-serif;';
+        box.innerHTML = '<strong style="display:block;font-size:15px;margin-bottom:6px;">⚠️ Notice: Running from local file (file://)</strong>' +
+          '<p style="font-size:12.5px;line-height:1.4;margin:0 0 12px 0;">Browsers disallow ES module imports and JSON loading on <code>file://</code> URLs for security. Run <code>node scripts/serve.js</code> and open:</p>' +
+          '<a href="http://localhost:8080/destinations.html" style="display:inline-block;background:#D97706;color:#FFFFFF;font-weight:600;font-size:13px;padding:8px 18px;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(217,119,6,0.3);">Open http://localhost:8080</a>';
+        document.body.appendChild(box);
+      });
+    }
   </script>
   <!-- SEO: CollectionPage JSON-LD -->
   <script type="application/ld+json">

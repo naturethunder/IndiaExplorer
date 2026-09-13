@@ -3,7 +3,7 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20260906-1';
+import { initLayout } from '../components/layout.js?v=20260914_7';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
