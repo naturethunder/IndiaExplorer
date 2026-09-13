@@ -1079,10 +1079,9 @@ html[data-theme="light"] .active-filter-chip button:hover {
 
 /* Category Filter Chips */
 #typeFilter {
-  overflow-x: auto !important;
-  scroll-behavior: smooth !important;
-  -webkit-overflow-scrolling: touch !important;
-  overscroll-behavior-x: contain !important;
+  overflow: visible !important;
+  overflow-x: visible !important;
+  overscroll-behavior-x: auto !important;
   padding-top: 0.15rem !important;
   padding-bottom: 0.4rem !important;
   gap: 0.5rem !important;

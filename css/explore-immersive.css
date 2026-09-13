@@ -571,24 +571,103 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   display: none !important;
 }
 
-/* Category Tabs */
+/* Category Tabs & Horizontal Slider Scroller */
+.category-scroller-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .category-tabs-container {
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-x: contain !important;
+  touch-action: pan-x pan-y !important;
+  cursor: grab;
+  width: 100%;
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .category-tabs-container::-webkit-scrollbar {
   display: none;
 }
 
+.category-tabs-container.is-dragging {
+  cursor: grabbing !important;
+  user-select: none !important;
+  scroll-behavior: auto !important;
+}
+
 .category-tabs-track {
   display: flex;
   align-items: flex-end;
-  gap: 4px;
+  gap: 6px;
   min-width: max-content;
+  overflow: visible !important;
+}
+
+.category-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(11, 15, 25, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #F5C542;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.category-scroll-arrow:hover {
+  background: rgba(20, 28, 44, 0.98);
+  border-color: rgba(245, 197, 66, 0.6);
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 16px rgba(245, 197, 66, 0.25);
+}
+
+.category-scroll-arrow.left {
+  left: -12px;
+}
+
+.category-scroll-arrow.right {
+  right: -12px;
+}
+
+.category-scroll-arrow.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) scale(0.85);
+}
+
+/* Light Mode scroll arrows */
+html[data-theme="light"] .category-scroll-arrow {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(203, 213, 225, 0.9) !important;
+  color: #B45309 !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12) !important;
+}
+
+html[data-theme="light"] .category-scroll-arrow:hover {
+  background: #FFFFFF !important;
+  border-color: #D97706 !important;
+  color: #92400E !important;
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.2) !important;
 }
 
 .category-pill-btn {

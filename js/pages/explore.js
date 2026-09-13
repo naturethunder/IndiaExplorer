@@ -224,8 +224,98 @@ function syncFilterActive() {
     const isAct = filters.type === (b.dataset.type || '');
     b.classList.toggle('active', isAct);
     b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+    if (isAct) {
+      requestAnimationFrame(() => {
+        b.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      });
+    }
   });
 }
+
+// ─── Horizontal Category Scroller with Arrow Controls & Drag ───
+(function setupCategoryScroller() {
+  const container = document.getElementById('categoryTabsContainer');
+  const btnLeft = document.getElementById('catScrollLeft');
+  const btnRight = document.getElementById('catScrollRight');
+  if (!container) return;
+
+  function updateArrows() {
+    const maxScroll = container.scrollWidth - container.clientWidth;
+    if (maxScroll <= 8) {
+      if (btnLeft) btnLeft.classList.add('hidden');
+      if (btnRight) btnRight.classList.add('hidden');
+      return;
+    }
+    if (btnLeft) btnLeft.classList.toggle('hidden', container.scrollLeft <= 10);
+    if (btnRight) btnRight.classList.toggle('hidden', container.scrollLeft >= maxScroll - 10);
+  }
+
+  if (btnLeft) {
+    btnLeft.addEventListener('click', () => {
+      container.scrollBy({ left: -260, behavior: 'smooth' });
+    });
+  }
+  if (btnRight) {
+    btnRight.addEventListener('click', () => {
+      container.scrollBy({ left: 260, behavior: 'smooth' });
+    });
+  }
+
+  container.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
+
+  // Mouse wheel horizontal scroll
+  container.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      container.scrollLeft += e.deltaY;
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  // Mouse drag-to-scroll (touchpad & mouse on small screens)
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+  let hasDragged = false;
+
+  container.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return;
+    isDown = true;
+    hasDragged = false;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeftStart = container.scrollLeft;
+    container.classList.add('is-dragging');
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    if (Math.abs(walk) > 4) {
+      hasDragged = true;
+    }
+    container.scrollLeft = scrollLeftStart - walk;
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDown) return;
+    isDown = false;
+    container.classList.remove('is-dragging');
+  });
+
+  // Prevent accidental button clicks when user was dragging
+  container.addEventListener('click', (e) => {
+    if (hasDragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      hasDragged = false;
+    }
+  }, true);
+
+  // Initial update
+  setTimeout(updateArrows, 100);
+})();
+
 
 // ─── Hero Quick Tag Buttons ────────────────────────────
 const quickTagsWrap = document.getElementById('heroQuickTags');
