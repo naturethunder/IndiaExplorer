@@ -448,14 +448,16 @@ function search(q) {
     const allEl = document.getElementById('railMonthAll');
     if (allEl) allEl.href = 'destinations.html?month=' + monthNum;
 
-    const featuredSlug = MONTH_PICKS[monthNum];
-    const featured = featuredSlug ? bySlug.get(featuredSlug) : null;
-    const rest = summaries
-      .filter((d) => d.bestTime.months.includes(monthNum) && (!featured || d.slug !== featured.slug))
-      .sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0) || (b.rating || 0) - (a.rating || 0))
-      .slice(0, featured ? 3 : 4);
+    // Dynamic Month Shuffling: Filter quality destinations for this month and shuffle on every refresh/selection
+    const monthCandidates = summaries.filter((d) => {
+      const inMonth = d.bestTime && d.bestTime.months && d.bestTime.months.includes(monthNum);
+      const hasPhoto = d.heroImage && d.heroImage.src;
+      return inMonth && hasPhoto;
+    });
 
-    const picks = (featured ? [featured].concat(rest) : rest).slice(0, 4);
+    const qualityPool = monthCandidates.filter((d) => (d.rating >= 4.4 && (d.reviewCount >= 20 || d.badge)) || d.badge);
+    const pool = qualityPool.length >= 8 ? qualityPool : (monthCandidates.length >= 4 ? monthCandidates : summaries);
+    const picks = shuffleArray(pool).slice(0, 4);
 
     railEl.style.opacity = '0.4';
     setTimeout(() => {

@@ -118,7 +118,30 @@ When searching, curating, and selecting images across all providers, strict cont
 - **STRICTLY FORBIDDEN / ZERO-TOLERANCE REJECTION**:
   - ❌ **NO PERSON / NO PORTRAITS**: Absolutely zero individuals, tourist selfies, posing models (men, women, children), face close-ups, or humans as the subject.
   - ❌ **NO PEOPLE CROWDS**: Absolutely zero dense tourist mobs, crowded gatherings, congested markets, or human crowds obstructing the monuments, scenery, or architecture. The shot must showcase the destination cleanly.
-  - ❌ **NO RANDOM IMAGES**: Absolutely zero unrelated filler, generic commercial stock, random objects, food/plates, hotel bedding, office interiors, traffic jams, clip art, logos, infographics, maps, flags, or mismatched foreign locations (e.g., Bali, Thailand, China, Europe). All images must be authentic to the specific Indian destination.
+  - ❌ **NO RANDOM IMAGES**: Absolutely zero unrelated filler, generic commercial stock, random objects, food/plates, hotel bedding, office interiors, traffic jams, clip art, logos, infographics, maps, flags.
+  - ❌ **NO MODERN INFRASTRUCTURE / DISTRACTIONS**: Absolutely zero electric transmission towers, power lines, utility poles, high-voltage pylons, or substations marring scenic vistas. Zero modern clock towers falsely representing traditional temple gopurams.
+
+---
+
+## Rule 5 — 100% Indian Geographic Authenticity & Regional Fidelity
+
+ExploreDesh is an authentic Indian exploration platform. Every single image asset MUST be geographically authentic to India and faithfully represent the destination's state and cultural landscape.
+
+### 1. Zero Foreign Stock Guarantee (Strict Country Blacklist)
+Stock photo APIs (Pexels, Unsplash) frequently return international results for generic terms like "temple", "wetlands", or "misty mountains". **Any photo from outside India is strictly prohibited.** Automated filters must reject photos tagged or describing:
+- **South & Southeast Asia**: Sri Lanka (`colombo`, `polonnaruwa`, `haputale`, `kandy`, `galle`, `sigiriya`, `ingiriya`), Thailand, Vietnam, Cambodia (`angkor`, `siem reap`), Bali, Indonesia, Pakistan (`katas raj`, `lahore`), Bangladesh (`sylhet`, `dhaka`), Nepal, Bhutan.
+- **Middle East & Eurasia**: Turkey / Türkiye (`kars`, `rize`, `isparta`, `sağrak`, `cappadocia`, `istanbul`), Egypt (`nile`, `cairo`), Greece (`nemea`, `athens`), Armenia (`dadivank`).
+- **Americas**: USA (`minnesota`, `california`, `florida`, `texas`, `oregon`), Peru (`huacho`, `machu picchu`), Brazil, Mexico, Canada.
+- **Europe & Oceania**: Germany (`husum`, `berlin`), Switzerland (`alps`), France (`corsica`, `lumio`), Italy, Spain, UK, New Zealand (`auckland`), Australia.
+
+### 2. Strict State & Regional Cultural Alignment (Zero Cross-State Misattribution)
+When sourcing proxies or nearby attractions, imagery MUST originate from the same state, district, or contiguous cultural-geographic zone in India:
+- **Andhra Pradesh / Eastern Ghats**: Must feature authentic Andhra Pradesh heritage (Bojjannakonda Buddhist stupas/caves, Dravidian stone relief carvings, Araku Valley, Tuni, Visakhapatnam hills). Strictly forbidden: Himachal Pradesh, West Bengal, or Karnataka Hampi ruins.
+- **Coastal Karnataka & Western Ghats**: Must feature Western Ghats Karnataka peaks (Kodachadri, Baba Budangiri, Agumbe), traditional Dravidian temple gopurams, and lush rain-forest foliage. Strictly forbidden: Tamil Nadu transmission towers, Kerala Munnar tea estates, or Maharashtra Khandala hills.
+- **Kashmir Valley**: Must feature authentic Kashmir stone sanctums (Martand Sun Temple, Pandrethan, Shankaracharya, Avantipur), Kashmir mountain meadows (Gurez, Pir Panjal), and Pampore saffron crocus fields. Strictly forbidden: Cambodia, Greece, Germany, or Karnataka Melukote B&W photos.
+- **Northern Indian Wetlands (Haryana / NCR)**: Must feature genuine northern Indian migratory bird sanctuary photography (Keoladeo, Bharatpur, Sultanpur, Najafgarh - Bar-headed geese, Painted storks, Spoonbills, Kingfishers). Strictly forbidden: American, Peruvian, or Thai wetlands.
+- **Northeast India (Arunachal Pradesh)**: Must feature Ziro Valley terraced rice paddies, Lower Subansiri pine hills, and Himalayan rainforests. Strictly forbidden: Turkey or European alpine valleys.
+- **Karnataka Heritage (Kalyana Chalukya / Hoysala)**: Must feature authentic Karnataka temple stone architecture (Gadag, Lakkundi, Aihole, Badami, Pattadakal, Halebidu). Strictly forbidden: Auckland NZ statues.
 
 ---
 
@@ -135,9 +158,10 @@ When searching, curating, and selecting images across all providers, strict cont
 | **7** | **Each nearby place must have exactly 3 unique images** | **ExploreDesh Strict** |
 | **8** | **Zero duplicate image URLs anywhere in the file** | **ExploreDesh Strict** |
 | **9** | **Zero cross-destination URL collisions across all 2,393 files (66k+ URLs)** | **ExploreDesh Strict** |
-| **10** | **Subject Curation: Monuments, scenery & architecture only (No persons/selfies/politics/vehicles/foreign-monuments)** | **ExploreDesh Strict** |
-| **11** | **Authentic Ground-Truth + HD First Priority (as per `.env.local`)** | **ExploreDesh Strict (Phase 39)** |
-| **12** | **Proper Titles & Captions: descriptive, non-generic title for every gallery image** | **ExploreDesh Strict** |
+| **10** | **100% Indian Geographic Authenticity: Zero foreign stock & zero cross-state misattributions** | **ExploreDesh Strict (Phase 40)** |
+| **11** | **Subject Curation: Monuments, scenery & architecture only (No persons/crowds/towers/vehicles)** | **ExploreDesh Strict** |
+| **12** | **Authentic Ground-Truth + HD First Priority (as per `.env.local`)** | **ExploreDesh Strict** |
+| **13** | **Proper Titles & Captions: descriptive, non-generic title for every gallery image** | **ExploreDesh Strict** |
 
 ---
 

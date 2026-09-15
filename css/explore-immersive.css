@@ -1814,11 +1814,14 @@ html[data-theme="light"] body.explore-immersive .explore-hero-display .hero-line
 }
 
 html[data-theme="light"] body.explore-immersive .calligraphy-kicker {
-  color: #B45309 !important;
-  background: linear-gradient(135deg, #B45309 0%, #D97706 60%, #92400E 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  text-shadow: none !important;
+  color: #92400E !important;
+  -webkit-text-fill-color: #92400E !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .explore-eyebrow-pill {

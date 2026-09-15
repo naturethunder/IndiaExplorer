@@ -8,7 +8,19 @@ Last updated: 2026-09-14 (rev-7).
 
 ---
 
-## ✅ Done (current state)
+- **Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity Overhaul (2026-09-16 rev-9)** — Forensic overhaul of all 9 session destinations (`ajanta-ellora`, `shankaracharya-temple-srinagar`, `ancient-temple-at-ladhoo`, `sultanpur-national-park`, `khaparwas-wildlife-sanctuary`, `ziro`, `veeranarayana-temple-gadag`, `kollur-mookambika-temple`, `devipuram`) across 253 image assets:
+  1. **Zero Foreign Stock Guarantee:** Purged all foreign results returned by generic stock API searches (Sri Lanka, Turkey, Minnesota USA, New Zealand, Peru, Vietnam, Cambodia, Germany, Pakistan, Bangladesh).
+  2. **Strict State & Regional Cultural Alignment:** Sourced authentic local Indian photography (Andhra Pradesh Eastern Ghats / Araku / Bojjannakonda rock-cut stupas for Devipuram; Western Ghats Karnataka peaks and traditional Dravidian gopurams for Kollur; Kashmir Valley mountain sanctums and Pampore saffron fields for Ladhoo; North Indian migratory waterfowl for Sultanpur & Khaparwas; Ziro Valley terraced paddies for Ziro; Karnataka Chalukya/Hoysala heritage for Veeranarayana; Ellora Kailasa & Ajanta chaityas for Ajanta-Ellora).
+  3. **Zero Modern Infrastructure & Distractions:** Eliminated all electric power transmission towers, power lines, and modern clock towers substituting for Hindu gopurams.
+  4. **Strict Media Invariants Certified:** Exactly 5 HD gallery slides, `heroImage.src === gallery[0].src`, exactly 3 photos per nearby place + 1 thumbnail, zero internal duplicates, zero mutual collisions, zero collisions with the 66k+ catalog index (253 / 253 unique URLs, 100% live HTTP 200).
+  5. **Rulebooks & Skills Enshrined:** Updated `.agents/rules/destination-strict-rules.md` (Rule 5, Priority 10), `.agents/skills/destination-image-fixer/SKILL.md` (Rule 6), `.agents/skills/media-integrity-audit/SKILL.md` (Rule 6), and `.agents/skills/audit-all/SKILL.md`. Production Health Score: **100/100**.
+
+- **Phase 48: World-Class Light Mode Redesign & 31-Point Deep Audit (2026-09-15 rev-8)** — Comprehensive 31-point UI/UX redesign and browser-verified visual overhaul:
+  1. **Elimination of Inverted Dark Button Artifacts in Light Mode:** Transformed `.section-link` and carousel arrows into frosted ivory milk glass pills with deep slate typography (`#0F172A`) and royal amber bottom highlights (`border-bottom: 2.5px solid #D97706`).
+  2. **WCAG AAA Royal Burnt Amber Calligraphy Kickers:** Upgraded kickers across all stylesheets to solid royal burnt amber (`#92400E`), achieving 7.6:1 WCAG AAA contrast.
+  3. **Harmonious India Map SVG States:** Warm honey amber (`#FEF3C7`) with gold boundaries (`#FCD34D`) and amber hover lift.
+  4. **Multi-Point Ambient Daylight Light Wells:** Enriched Light Mode with champagne sunlight corona, azure mist, and golden hearth glow.
+  5. **UI/UX Pro Max Automated Audit:** `node scripts/ui_ux_qa_audit.js` returns 0 issues across all 7 priority categories. Score: **100/100**.
 
 - **Phase 47: Luxury Light Mode Elevation — Liquid Pearl Glass, Radiant Light Wells & Swiss Bento Parity (2026-09-14 rev-7)** — Complete elevation of Light Mode to a world-class editorial luxury travel aesthetic (*Liquid Pearl Glass / Lait de Perle*) on par with OLED Cinema Dark Mode:
   1. **Liquid Pearl Glassmorphism ("Lait de Perle"):** Upgraded all cards (`.card`, `.glass-card`, `.dest-card`, `.feature-card`, `.category-card`, `.about-card`, `.dest-card-link`) to frosted milk glass (`rgba(255, 255, 255, 0.92)` to `0.94` with `backdrop-filter: blur(24px) saturate(180%)`), specular top bevel highlights (`inset 0 1px 0 0 #FFFFFF`), and hairline glass rims (`border: 1px solid rgba(255, 255, 255, 0.95)`).

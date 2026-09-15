@@ -12,7 +12,9 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..', '..');
 
 function normalizeUrl(url) {
-  if (!url || typeof url !== 'string') return url;
+  if (!url) return '';
+  if (typeof url === 'object') url = url.src || url.url || '';
+  if (typeof url !== 'string' || !url) return '';
   // Remove query parameters
   url = url.split('?')[0];
   // Normalize Wikimedia thumbnails

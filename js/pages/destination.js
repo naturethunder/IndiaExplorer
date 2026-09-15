@@ -1479,15 +1479,15 @@ function main(dest, idx) {
         '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
         '</div>' +
         '<div class="absolute bottom-2 left-2.5 right-2.5">' +
-        '<p class="text-white text-sm font-bold truncate leading-tight drop-shadow">' + esc(d.title) + '</p>' +
-        '<p class="text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
+        '<p class="similar-card-title text-white text-sm font-bold truncate leading-tight drop-shadow">' + esc(d.title) + '</p>' +
+        '<p class="similar-card-state text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
         '</div>' +
         '</div>' +
         '<div class="flex items-center justify-between px-1">' +
-        '<div class="flex items-center gap-1 text-amber-400 text-xs font-bold">' +
-        '<span>★</span><span>' + esc(d.rating || '4.5') + '</span>' +
+        '<div class="similar-card-rating flex items-center gap-1 text-amber-400 text-xs font-bold">' +
+        '<span class="similar-star">★</span><span class="similar-score">' + esc(d.rating || '4.5') + '</span>' +
         '</div>' +
-        '<p class="text-xs text-slate-400">Stay starts from <span class="font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
+        '<p class="similar-card-price text-xs text-slate-400">Stay starts from <span class="similar-price-val font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
         '</div>' +
         '</a>';
     }).join('');

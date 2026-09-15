@@ -1231,7 +1231,7 @@ body.dest-immersive #similarExploreBtn:hover {
   transform: translateY(-2px) !important;
 }
 
-body.dest-immersive #similar-grid a {
+html:not([data-theme="light"]) body.dest-immersive #similar-grid a {
   background: rgba(13, 27, 23, 0.88) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(16px) !important;
@@ -1239,7 +1239,7 @@ body.dest-immersive #similar-grid a {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35) !important;
 }
 
-body.dest-immersive #similar-grid a:hover {
+html:not([data-theme="light"]) body.dest-immersive #similar-grid a:hover {
   border-color: rgba(229, 192, 123, 0.6) !important;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 192, 123, 0.25) !important;
 }
@@ -2125,7 +2125,7 @@ html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-600,
 html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-700,
 html[data-theme="light"] body.dest-immersive #panel-overview p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *),
 html[data-theme="light"] body.dest-immersive .tab-panel p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *),
-html[data-theme="light"] body.dest-immersive p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *):not(.dest-card-overlay *) {
+html[data-theme="light"] body.dest-immersive p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *):not(.dest-card-overlay *):not(#similar-grid *) {
   color: #1E293B !important;
   font-size: 15px !important;
   line-height: 1.75 !important;
@@ -2149,11 +2149,14 @@ html[data-theme="light"] body.dest-immersive .text-gray-400 {
 }
 
 html[data-theme="light"] body.dest-immersive .tab-calligraphy-kicker {
-  color: #B45309 !important;
-  background: linear-gradient(135deg, #B45309 0%, #D97706 60%, #92400E 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  letter-spacing: 0.03em !important;
+  color: #92400E !important;
+  -webkit-text-fill-color: #92400E !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ─── 6. BENTO CARDS, SUMMARY CARDS & INFO CARDS ─────────────────────────── */
@@ -2577,12 +2580,117 @@ html[data-theme="light"] body.dest-immersive #similarSubheading {
 html[data-theme="light"] body.dest-immersive #similar-grid a {
   background: #FFFFFF !important;
   border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease !important;
 }
 
 html[data-theme="light"] body.dest-immersive #similar-grid a:hover {
-  border-color: rgba(217, 119, 6, 0.4) !important;
-  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.10) !important;
+  border-color: rgba(217, 119, 6, 0.45) !important;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.15) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Photo overlay text inside #similar-grid (Always crisp brilliant white with drop shadow) */
+#similar-grid .aspect-video .similar-card-title,
+#similar-grid .aspect-video p.similar-card-title,
+#similar-grid .aspect-video p.truncate,
+html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video .similar-card-title,
+html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.similar-card-title,
+html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.truncate {
+  color: #FFFFFF !important;
+  font-size: 0.875rem !important; /* 14px */
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+  margin: 0 !important;
+}
+
+#similar-grid .aspect-video .similar-card-state,
+#similar-grid .aspect-video p.similar-card-state,
+html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video .similar-card-state,
+html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.similar-card-state {
+  color: rgba(255, 255, 255, 0.90) !important;
+  font-size: 0.6875rem !important; /* 11px */
+  line-height: 1.25 !important;
+  font-weight: 500 !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
+  margin: 0 !important;
+}
+
+/* Category Badge on top right of card photo */
+#similar-grid .aspect-video .badge {
+  background: rgba(0, 0, 0, 0.65) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  font-weight: 600 !important;
+}
+
+/* Card footer — Light Mode star ratings, labels & price */
+html[data-theme="light"] body.dest-immersive #similar-grid .similar-card-rating,
+html[data-theme="light"] body.dest-immersive #similar-grid .similar-card-rating span,
+html[data-theme="light"] body.dest-immersive #similar-grid .similar-star,
+html[data-theme="light"] body.dest-immersive #similar-grid .similar-score,
+html[data-theme="light"] body.dest-immersive #similar-grid .text-amber-400,
+html[data-theme="light"] body.dest-immersive #similar-grid .text-amber-400 span {
+  color: #D97706 !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+}
+
+html[data-theme="light"] body.dest-immersive #similar-grid p.similar-card-price,
+html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 {
+  color: #475569 !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #similar-grid .similar-price-val,
+html[data-theme="light"] body.dest-immersive #similar-grid p.similar-card-price span.similar-price-val,
+html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 span.font-bold,
+html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 span.text-amber-400 {
+  color: #B45309 !important;
+  font-weight: 800 !important;
+  font-size: 0.8125rem !important; /* 13px */
+  display: inline !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Card footer — Dark Mode star ratings, labels & price */
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-card-rating,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-card-rating span,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-star,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-score,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .text-amber-400,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .text-amber-400 span {
+  color: #F5C542 !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+}
+
+html:not([data-theme="light"]) body.dest-immersive #similar-grid p.similar-card-price,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 {
+  color: #94A3B8 !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-price-val,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid p.similar-card-price span.similar-price-val,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 span.font-bold,
+html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 span.text-amber-400 {
+  color: #F5C542 !important;
+  font-weight: 800 !important;
+  font-size: 0.8125rem !important;
+  display: inline !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 html[data-theme="light"] body.dest-immersive #similarExploreBtn {

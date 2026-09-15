@@ -381,10 +381,10 @@ body.glass-immersive .card .text-primary {
   font-weight: 700 !important;
 }
 
-/* Similar Destinations Cards & Bottom Grid High Contrast Fix */
-body.glass-immersive #similar-grid a,
-body.glass-immersive #similar-grid div.group,
-#similar-grid a {
+/* Similar Destinations Cards & Bottom Grid High Contrast Fix (Dark Mode) */
+html:not([data-theme="light"]) body.glass-immersive #similar-grid a,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid div.group,
+html:not([data-theme="light"]) #similar-grid a {
   background: rgba(15, 23, 42, 0.85) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   backdrop-filter: blur(16px) !important;
@@ -394,19 +394,19 @@ body.glass-immersive #similar-grid div.group,
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
 }
 
-body.glass-immersive #similar-grid a p,
-body.glass-immersive #similar-grid p,
-body.glass-immersive #similar-grid .font-semibold,
-body.glass-immersive #similar-grid .font-bold,
-body.glass-immersive #similar-grid .text-gray-900 {
+html:not([data-theme="light"]) body.glass-immersive #similar-grid a p,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid p,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid .font-semibold,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid .font-bold,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid .text-gray-900 {
   color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-body.glass-immersive #similar-grid a p.text-gray-500,
-body.glass-immersive #similar-grid p.text-emerald-400,
-body.glass-immersive #similar-grid .text-emerald-400,
-body.glass-immersive #similar-grid .text-gray-500 {
+html:not([data-theme="light"]) body.glass-immersive #similar-grid a p.text-gray-500,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid p.text-emerald-400,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid .text-emerald-400,
+html:not([data-theme="light"]) body.glass-immersive #similar-grid .text-gray-500 {
   color: #34d399 !important;
   font-weight: 700 !important;
 }
@@ -1128,25 +1128,25 @@ html:not([data-theme="light"]) .category-pill-btn.active svg {
 }
 
 
-/* ─── Universal High-Contrast Card Fix (All Pages) ────────── */
-#similar-grid a,
-#similar-grid div.group,
-.dest-card,
-.card {
+/* ─── Universal High-Contrast Card Fix (Dark Mode) ────────── */
+html:not([data-theme="light"]) #similar-grid a,
+html:not([data-theme="light"]) #similar-grid div.group,
+html:not([data-theme="light"]) .dest-card,
+html:not([data-theme="light"]) .card {
   color: #ffffff !important;
 }
 
-#similar-grid a p,
-#similar-grid a span,
-#similar-grid p,
-#similar-grid span {
+html:not([data-theme="light"]) #similar-grid a p,
+html:not([data-theme="light"]) #similar-grid a span:not([class*="similar-price-val"]):not([class*="text-amber"]),
+html:not([data-theme="light"]) #similar-grid p,
+html:not([data-theme="light"]) #similar-grid span:not([class*="similar-price-val"]):not([class*="text-amber"]) {
   color: #ffffff !important;
 }
 
-#similar-grid a p.text-emerald-400,
-#similar-grid a p.text-xs.font-bold,
-#similar-grid .text-emerald-400,
-#similar-grid [style*="color: #34d399"] {
+html:not([data-theme="light"]) #similar-grid a p.text-emerald-400,
+html:not([data-theme="light"]) #similar-grid a p.text-xs.font-bold,
+html:not([data-theme="light"]) #similar-grid .text-emerald-400,
+html:not([data-theme="light"]) #similar-grid [style*="color: #34d399"] {
   color: #34d399 !important;
   font-weight: 700 !important;
 }
@@ -1737,9 +1737,11 @@ html[data-theme="light"] .mobile-menu {
   border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
   box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08) !important;
 }
+
 html[data-theme="light"] #mobileMenu a {
   color: #334155 !important;
 }
+
 html[data-theme="light"] #mobileMenu a:hover,
 html[data-theme="light"] #mobileMenu a.active {
   color: #B45309 !important;
@@ -1748,14 +1750,14 @@ html[data-theme="light"] #mobileMenu a.active {
 
 /* Headings on Informational Pages: Rich Charcoal over Daylight Canvas */
 html[data-theme="light"] body.glass-immersive header h1:not(.hero-home h1),
-html[data-theme="light"] body.glass-immersive section > h1:not(.hero-home h1),
+html[data-theme="light"] body.glass-immersive section>h1:not(.hero-home h1),
 html[data-theme="light"] body.glass-immersive .page-header h1 {
   color: #0F172A !important;
   text-shadow: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive header p:not(.hero-home p),
-html[data-theme="light"] body.glass-immersive section > p.max-w-2xl:not(.hero-home p) {
+html[data-theme="light"] body.glass-immersive section>p.max-w-2xl:not(.hero-home p) {
   color: #475569 !important;
   text-shadow: none !important;
 }
@@ -2533,6 +2535,7 @@ html[data-theme="light"] body.glass-immersive .autocomplete-item .text-gray-500 
    ACCESSIBILITY — prefers-reduced-motion (WCAG 2.1 AAA)
    ═══════════════════════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
+
   body.glass-immersive *,
   body.glass-immersive *::before,
   body.glass-immersive *::after {

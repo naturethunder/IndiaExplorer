@@ -46,11 +46,27 @@ This skill defines the autonomous image acquisition and quality enforcement work
      - ❌ **NO person**: Zero individuals, portraits, selfies, faces, or posing tourists/models (women, girls, boys, men).
      - ❌ **NO people crowd**: Zero tourist mobs, dense crowds, or market gatherings obstructing the scenery/monument.
      - ❌ **NO random images**: Zero unrelated stock filler, arbitrary objects, food plates, hotel rooms, office interiors, traffic jams, or clip art.
+     - ❌ **NO modern infrastructure / distractions**: Zero electric transmission towers, power lines, utility poles, high-voltage pylons, or substations. Zero clock towers substituting for traditional Hindu temple gopurams.
      - ❌ **Vehicles**: tractor, bus, train, car, speedboat, turbine.
-     - ❌ **Foreign locations**: China, Spain, Brazil, Bali, Indonesia, Malaysia, Ukraine, Berlin, Germany, Vietnam, Cuba, Kyiv.
      - ❌ **Real-estate/commercial**: villas, apartments, "for sale", hotel lobby.
      - ❌ **Generic assets**: random DSC filenames, placeholder images, audio files, diagrams, flags, scanned documents.
-     - ❌ **Wrong region**: state/district context must strictly match the destination.
+
+6. **Rule 6 — 100% Indian Geographic Authenticity & Regional Fidelity**
+   - **Zero Foreign Stock Guarantee**: Stock APIs (Pexels, Unsplash) frequently return international photos for generic terms like "temple", "wetlands", or "misty forest". Automated regex word-boundary filters must strictly reject photos tagged or describing:
+     - *Sri Lanka* (`colombo`, `polonnaruwa`, `haputale`, `kandy`, `galle`, `sigiriya`, `ingiriya`)
+     - *Turkey / Türkiye* (`kars`, `rize`, `isparta`, `sağrak`, `cappadocia`, `istanbul`)
+     - *USA* (`minnesota`, `california`, `florida`, `texas`, `oregon`)
+     - *New Zealand* (`auckland`), *Australia*, *Canada*
+     - *Southeast Asia* (Thailand, Vietnam, Cambodia/Angkor Wat, Bali/Indonesia)
+     - *Europe* (Germany/Husum, Switzerland/Alps, France/Corsica, Greece/Nemea, Italy, Spain, UK)
+     - *South Asia & Middle East* (Pakistan/Katas Raj, Bangladesh/Sylhet, Egypt/Nile, Armenia/Dadivank, Peru/Huacho)
+   - **Strict Regional & State Accuracy (Zero Cross-State Misattribution)**:
+     - Imagery MUST originate from the same state, district, or contiguous cultural-geographic zone in India:
+       - *Andhra Pradesh / Eastern Ghats*: Authentic Andhra Pradesh heritage (Bojjannakonda Buddhist stupas/caves, Dravidian stone reliefs, Araku Valley, Tuni, Visakhapatnam hills). No Himachal, West Bengal, or Hampi.
+       - *Western Ghats / Karnataka*: Western Ghats Karnataka peaks (Kodachadri, Baba Budangiri, Agumbe), Dravidian temple gopurams. No Tamil Nadu towers, Munnar (Kerala), or Khandala (Maharashtra).
+       - *Kashmir Valley*: Kashmir stone sanctums (Martand, Pandrethan, Shankaracharya, Avantipur), Kashmir mountain meadows, Pampore saffron crocus fields. No Cambodia, Greece, Germany, or Melukote.
+       - *Northern Indian Wetlands*: Northern Indian migratory waterfowl (Keoladeo, Bharatpur, Sultanpur, Najafgarh - Bar-headed geese, Painted storks, Spoonbills, Kingfishers). No Minnesota or Peru.
+       - *Northeast India*: Ziro Valley terraced rice paddies, Lower Subansiri pine hills, Himalayan rainforests. No Turkey.
 
 ## Search Strategy & Heuristics
 
