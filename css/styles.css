@@ -274,7 +274,7 @@ body {
 .calligraphy-kicker,
 .calligraphy-eyebrow {
   font-family: 'Pinyon Script', cursive !important;
-  font-size: clamp(1.4rem, 2.2vw, 2.05rem);
+  font-size: clamp(1.2rem, 2.2vw, 2.05rem);
   line-height: 1.15;
   color: #F5C542;
   background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
@@ -283,6 +283,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap !important;
+  max-width: 100%;
   gap: 12px;
   margin-bottom: 8px;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75));
@@ -294,13 +296,32 @@ body {
 .calligraphy-kicker::after {
   content: "";
   display: inline-block;
-  width: 28px;
+  width: 24px;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(229, 192, 123, 0.75));
+  flex-shrink: 1;
 }
 
 .calligraphy-kicker::after {
   background: linear-gradient(90deg, rgba(229, 192, 123, 0.75), transparent);
+}
+
+@media (max-width: 640px) {
+  .calligraphy-kicker,
+  .calligraphy-eyebrow {
+    font-size: clamp(1.1rem, 4.2vw, 1.35rem) !important;
+    gap: 8px;
+  }
+  .calligraphy-kicker::before,
+  .calligraphy-kicker::after {
+    width: 14px;
+  }
+}
+
+html[data-theme="light"] .calligraphy-kicker,
+html[data-theme="light"] .calligraphy-eyebrow {
+  filter: none !important;
+  text-shadow: none !important;
 }
 
 /* Calligraphic Tab Section Kicker */
@@ -2506,10 +2527,10 @@ textarea.form-input {
 
 @media (min-width: 1024px) {
   .discover-row {
-    grid-template-columns: 1.3fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
     align-items: start;
-    min-height: 420px;
+    min-height: 500px;
   }
 }
 
@@ -2632,39 +2653,43 @@ textarea.form-input {
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 1.25rem;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
-  padding: 1.25rem 1.5rem;
+  padding: 0.5rem 0.85rem 0.75rem 0.75rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 500px;
   min-height: 500px;
+  max-height: 500px;
 }
 
 .discover-map .india-map-svg {
-  flex: 1 1 60%;
-  max-width: 60%;
-  max-height: 380px;
-  height: 100%;
   width: auto;
+  height: 100%;
+  max-width: 80%;
+  max-height: 475px;
   margin: 0;
+  display: block;
+  align-self: flex-start;
   pointer-events: auto;
 }
 
 .india-map-card {
-  position: relative;
-  inset: auto;
-  flex: 0 0 36%;
-  width: 36%;
-  min-width: 190px;
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  inset: auto 0.85rem 0.85rem auto;
+  width: 200px;
+  max-width: 208px;
+  min-width: 180px;
   margin: 0;
-  background: rgba(15, 23, 42, 0.90);
+  background: rgba(15, 23, 42, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  padding: 0.65rem 0.85rem;
   z-index: 10;
   pointer-events: auto;
 }
@@ -2674,15 +2699,24 @@ textarea.form-input {
     flex-direction: column;
     min-height: auto;
     height: auto;
+    padding: 1.15rem 1rem;
+    gap: 1.15rem;
   }
 
   .discover-map .india-map-svg {
     max-width: 100%;
-    max-height: 320px;
+    max-height: 420px;
   }
 
   .india-map-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    inset: auto;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0.75rem 0.95rem;
     flex: none;
   }
 }
@@ -2764,23 +2798,29 @@ textarea.form-input {
 }
 
 .india-state {
-  fill: #E8EDF2;
+  fill: var(--state-light, #E8EDF2);
   stroke: #fff;
   stroke-width: 1;
-  transition: fill 0.2s ease, transform 0.2s ease;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: fill 0.2s ease, stroke 0.2s ease, transform 0.2s ease, filter 0.2s ease;
 }
 
 .india-state:not(.is-empty) {
-  fill: #BBF7D0;
+  fill: var(--state-light, #BBF7D0);
   cursor: pointer;
 }
 
 .india-state:not(.is-empty):hover {
-  fill: #6EE7A8;
+  stroke: #fff;
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
 }
 
 .india-state.is-active {
-  fill: var(--primary);
+  stroke: #F59E0B;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 2px 10px rgba(245, 158, 11, 0.5));
 }
 
 .india-state.is-empty {
@@ -2793,6 +2833,42 @@ textarea.form-input {
   stroke: var(--primary-dark);
   stroke-width: 2;
 }
+
+/* Enhanced island styling for Andaman & Nicobar and Lakshadweep */
+.india-state[data-state*="Andaman"],
+.india-state[data-state*="Lakshadweep"] {
+  stroke: #0284c7 !important;
+  stroke-width: 1.5px !important;
+  filter: drop-shadow(0 0 5px rgba(2, 132, 199, 0.6)) !important;
+}
+
+.map-island-badge-bg {
+  fill: rgba(14, 165, 233, 0.15);
+  stroke: rgba(14, 165, 233, 0.5);
+  stroke-width: 1;
+  transition: all 0.2s ease;
+}
+
+.map-island-tag:hover .map-island-badge-bg {
+  fill: rgba(14, 165, 233, 0.35);
+  stroke: #38bdf8;
+}
+
+.map-island-text {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  fill: #0284c7;
+}
+
+.map-island-line {
+  stroke: #0284c7;
+  stroke-width: 1.2;
+  stroke-dasharray: 2 2;
+  opacity: 0.8;
+}
+
 
 /* Hover tooltip: state name + destination count, follows the cursor */
 .india-map-tip {

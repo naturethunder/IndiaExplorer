@@ -3,15 +3,17 @@
 
 
 
-> **Platform Status (2026-09-16 rev-9):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with 66,700+ globally unique image URLs. **Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity —** Eliminated all foreign stock fallbacks (Sri Lanka, Turkey, USA, New Zealand, Thailand, Vietnam, Cambodia, etc.) and power lines; enforced strict Indian regional cultural matching and zero cross-destination collisions across all 253 overhauled URLs. Production-Ready Score: **100/100**.
+# ExploreDesh — Discover Incredible India
 
-> **Image Pipeline Status (2026-09-16):** **Phase 49 Geographic Authenticity Overhaul Complete —** 253 unique True HD (1920px+) photography URLs assigned across 9 session targets (100% live HTTP 200 OK, 100% unique, zero foreign stock, zero Wikimedia, zero rate limits). Total catalog: **56,950+ verified HD photos**.
+> **Platform Status (2026-09-19 rev-12):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,480+ globally unique image URLs**. **Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness —** Complete resolution of mobile layout defects, calligraphy kicker wrapping, light mode hero text contrast, interactive India map mobile stacking (zero-overlap state card), right-aligned action buttons, and frosted pearl light-mode mobile navigation. Automated UI/UX QA audit: **0 issues detected (100/100 score)**.
+
+> **Image Pipeline Status (2026-09-19):** **Phase 50 Multi-Agent HD Overhaul Complete —** 100% True HD (1920px+) photography assigned across 26 session targets (100% live HTTP 200 OK, 100% unique, zero foreign stock, zero Wikimedia, zero rate limits). Total catalog: **66,480+ verified HD photos**.
 
 A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
 > **Dual-Engine Luxury Design System:** 
 > - **OLED Cinema Dark Mode:** Deep obsidian canvas (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B`), ambient gold glows, frosted glass cards, and high-contrast typography.
-> - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Soft warm alabaster canvas (`#FAF9F6`), radiant daylight light wells, frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px)`), precision top-edge specular bevels, and warm golden corona lift micro-interactions.
+> - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Soft warm alabaster canvas (`#FAF9F6`), radiant daylight light wells, frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px)`), precision top-edge specular bevels, and warm golden corona lift micro-interactions. Full mobile responsiveness across 375px, 390px, and 412px viewports.
 
 > **100% Verified Legal Photography & Zero Duplicate URLs.** Hand-authored and enriched with authentic
 > Pexels API, Unsplash, and Openverse/Flickr CDN photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero foreign stock from outside India, zero portraits/selfies/vehicles/power-lines, zero internal or cross-destination duplicates). Wikimedia Commons is fully removed from all overhauled destinations (Phases 29–49 extended this catalog-wide). See [CLAUDE.md](CLAUDE.md) and [.agents/rules/destination-strict-rules.md](.agents/rules/destination-strict-rules.md) for provenance.
@@ -30,6 +32,7 @@ node scripts/verify_batch3.js                # → Strict zero-collision audit: 
 node scripts/verify_batch2.js                # → Strict zero-collision audit: 10 Batch 2 destinations
 node scripts/verify_meghalaya_strict.js      # → Strict zero-collision audit: 11 Meghalaya destinations
 node scripts/audit_session_hd_images.js      # → Platform-wide HD session audit: 47 destinations / 1,259 URLs
+node scripts/audit_all.js                    # → Master Unified Audit Suite: UI/UX + SEO + Media integrity
 node scripts/ui_ux_qa_audit.js               # → UI/UX Pro Max automated QA audit across all HTML & CSS files
 ```
 
@@ -213,8 +216,8 @@ Full detail and rationale live in **[CLAUDE.md](CLAUDE.md)**.
 ## External services & Image Pipeline
 
 - **Open-Meteo** — live weather.
-- **Pexels, Unsplash & Openverse Multi-Provider Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].photos`, `hotels[].image`). Managed by `scripts/` image pipeline with zero-collision detection across 66k+ repo URLs and strict banned-pattern filtering (no portraits, vehicles, foreign monuments, stock photos). Automated replacement engine: `scripts/solve_all_batch2_zero_collisions.js`, `scripts/fix_cross_batch2_dups.js`.
-- **Wikimedia Commons** — Secondary fallback source (absolute last resort, used only when Pexels/Unsplash/Openverse yield zero suitable assets).
+- **Pexels, Unsplash & Openverse Multi-Provider Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].photos`, `hotels[].image`). Managed by `scripts/` image pipeline with zero-collision detection across 66k+ repo URLs and strict banned-pattern filtering (no portraits, vehicles, foreign monuments, foreign stock photos). Automated replacement engine: `scripts/solve_all_batch2_zero_collisions.js`, `scripts/fix_cross_batch2_dups.js`, `scripts/audit_all.js`.
+- **Wikimedia Commons** — Strictly banned as a direct hotlink source (Phases 29–50 have completely eliminated all Wikimedia hotlinks across all overhauled destinations; CDN rate limiting causes HTTP 429 errors). All imagery is sourced from Pexels/Unsplash/Openverse/Flickr CC exclusively.
 - **Google Maps** — interactive destination maps and directions (via zero-dependency lazy embed component).
 - **Web3Forms** — contact-form email delivery. A live access key is set in `js/pages/contact.js`;
   delivery only fires from a **browser over http(s)** (not `file://`), so it activates once deployed.

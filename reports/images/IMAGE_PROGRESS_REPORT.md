@@ -1,6 +1,6 @@
 # 🇮🇳 IndiaExplore — Image Pipeline & Destination Enrichment Master Report
 
-**Last Updated:** 2026-09-12
+**Last Updated:** 2026-09-19 (Phase 50)
 
 ## Global Progress Summary
 
@@ -58,6 +58,7 @@
 ## Verified Standards Enforced
 1. **Hero & Gallery (5 Photos)**: Exactly 5 original, high-resolution visual photos in gallery per destination.
 2. **Nearby Attractions (3 Photos)**: Exactly 3 landmark-specific photos for each place in `topPlaces`.
-3. **Zero Duplicates**: 100% unique image references across all fields repository-wide.
-4. **Multi-Source Sourcing**: Verified photography from Pexels, Unsplash, and Wikimedia Commons with 0 maps or PDF scans.
+3. **Zero Duplicates**: 100% unique image references across all fields repository-wide (cross-destination zero-collision guarantee).
+4. **Phase 50 Non-Wikimedia True HD Sourcing**: 100% direct high-resolution CDNs (Unsplash HD / Pexels HD, min 1920px), zero hotlink rate limits, zero Wikimedia URLs.
 5. **Persistent Checkpoint**: Automated resume enabled from `scripts/images/dedup_checkpoint.json`.
+

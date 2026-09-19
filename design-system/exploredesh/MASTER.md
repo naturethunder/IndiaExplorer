@@ -8,7 +8,7 @@
 ---
 
 **Project:** ExploreDesh  
-**Last Updated:** 2026-09-14 (rev-7)  
+**Last Updated:** 2026-09-19 (rev-12)  
 **Category:** Luxury Travel & Cultural Discovery  
 
 ---
@@ -138,6 +138,26 @@ button:hover, .btn:hover, .tab-btn:hover {
 }
 ```
 
+### 4. Mobile Navigation Bar in Light Mode (`.mobile-nav`)
+```css
+/* Frosted pearl milk glass with amber active indicator */
+html[data-theme="light"] body.glass-immersive .mobile-nav {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.18) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .mobile-nav a {
+  color: #64748B !important;
+}
+
+html[data-theme="light"] body.glass-immersive .mobile-nav a.active {
+  color: #D97706 !important;
+  font-weight: 700 !important;
+}
+```
+
 ---
 
 ## Invariant Design Rules
@@ -147,3 +167,8 @@ button:hover, .btn:hover, .tab-btn:hover {
 3. **Protected Media Captions:** Slide titles and captions overlaid on dark scenic photographs must ALWAYS remain `#FFFFFF` with drop shadows regardless of theme toggle.
 4. **Touch Target Size:** Interactive elements must measure at least 44×44px.
 5. **Reduced Motion:** All transitions and transforms must be disabled when `@media (prefers-reduced-motion: reduce)` is active.
+6. **Mobile Responsive Architecture (<= 768px & <= 640px):** 
+   - Interactive India Map must collapse to fluid vertical column with state details card anchored underneath (zero map or island obscuration).
+   - Calligraphy kickers must enforce `white-space: nowrap !important;` with responsive font clamp to prevent orphan trailing `✦` ornament stars.
+   - Section link buttons ("View all →") must right-align on mobile with frosted milk glass styling in Light Mode.
+   - Fixed mobile navigation must be paired with `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` on body container.

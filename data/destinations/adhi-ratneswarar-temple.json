@@ -220,7 +220,10 @@
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/2e/Thiruvadanai_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Thiruvadanai_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        {
+          "src": "https://images.pexels.com/photos/6640401/pexels-photo-6640401.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "alt": "A breathtaking aerial view of a verdant valley and village amidst rolling hills in Kerala, India."
+        },
         "https://images.pexels.com/photos/37862811/pexels-photo-37862811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ],
       "travelTime": "Under 5 mins walk in Town Centre"

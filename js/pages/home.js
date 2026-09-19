@@ -477,7 +477,7 @@ function search(q) {
   const svgEl = document.getElementById('india-map');
   if (!svgEl) return;
   try {
-    const { initIndiaMap } = await import('../components/indiaMap.js');
+    const { initIndiaMap } = await import('../components/indiaMap.js?v=20260919_4');
     const countByState = new Map();
     const destsByState = new Map();
     summaries.forEach((d) => {

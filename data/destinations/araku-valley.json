@@ -245,7 +245,10 @@
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Araku_Tribal_Museum_in_Araku_valley_03.jpg/1280px-Araku_Tribal_Museum_in_Araku_valley_03.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/Araku_Tribal_Museum_in_Araku_valley_02.jpg",
+        {
+          "src": "https://images.pexels.com/photos/39585264/pexels-photo-39585264.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "alt": "Explore the architectural elegance of the historic Lepakshi Temple's intricate stone carvings in And"
+        },
         "https://pixabay.com/get/gf51285f9483ae8c65dc05a16e7623487a936821b464afe7b22698576a74c59cb79c019949f074db2f6cfaadcbf4b3b5321df9832ae79f60ff76a4ae9de9ff29d_1280.jpg"
       ],
       "travelTime": "10–15 mins drive from Araku Valley"

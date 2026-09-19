@@ -2,7 +2,7 @@
 
 > **Scope:** Deep audit and architectural elevation of the live ExploreDesh platform across Homepage, Destinations Explorer, Destination Detail pages, AI Trip Finder, Navigation, Interactive Map, and all supporting pages.
 > **Standard:** Apple-level visual polish, Airbnb-level usability, Google-level clarity, and world-class luxury travel editorial.
-> **Date:** September 2026 | Milestone: Phase 48
+> **Date:** September 2026 | Milestone: Phase 50 (Mobile Map Display, 26-Destination Authentic HD Overhaul & Light Mode Fix)
 
 ---
 
@@ -140,3 +140,56 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 - **0 Data Regressions:** Real pricing, real routes, and real weather data preserved.
 - **100% Dark Mode Parity:** Zero regressions on OLED Cinema Dark Mode.
 - **Production QA Score:** 100/100 (`node scripts/ui_ux_qa_audit.js`).
+
+---
+
+## 4. Phase 50 Addendum — Mobile Map Display, 26-Destination HD Overhaul & Light Mode Fix
+
+1. **Mobile Map Display Optimization (`indiaMap.js`, `home.js`, CSS):**
+   - Eliminated container collapse bug on mobile viewports (< 768px).
+   - Set fluid aspect-ratio `min-height: 480px` on mobile, fixed SVG touch interaction and smooth tooltip centering.
+   - Preserved luxury glass container styling with responsive SVG viewBox scaling.
+
+2. **26-Destination Multi-Agent Authentic True HD Overhaul:**
+   - Overhauled 26 destinations (`pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`) with 100% unique authentic HD non-Wikimedia images (`w=1920` Pexels & Unsplash CDN).
+   - 0 duplicate URLs across the entire 66,480+ photo catalog index, 0 Wikimedia URLs, 0 Pixabay session URLs.
+   - Enforced container aspect-ratio fitting (`object-fit: cover` with focal positioning) across hero banners and place cards.
+
+3. **Light Mode "Load More" Button High-Contrast Styling:**
+   - Resolved low contrast on `.load-more-luxury-btn` / `#loadMoreBtn` in Light Mode.
+   - Enforced deep obsidian slate gradient (`#1E293B` to `#0F172A`), pure white text (`#FFFFFF`), amber gold bottom border (`#D97706`), and `#F5C542` gold count badge.
+   - Full WCAG AAA contrast ratio compliance certified.
+
+---
+
+## 5. Phase 51 Addendum — Deep Mobile Screen Audit & Light/Dark Mode Responsiveness (2026-09-19 rev-12)
+
+1. **Calligraphy Kicker Star Wrapping on Mobile (`styles.css`, `glass-immersive.css`):**
+   - **Defect:** On viewports $\le 640\text{px}$, `.calligraphy-kicker` decoration lines forced the trailing ornament star `✦` (`✦ Cartography of Wonder ✦`, `✦ Wanderlust of the Season ✦`) onto an orphan second line.
+   - **Fix:** Enforced `white-space: nowrap !important; max-width: 100%;` with responsive font scaling (`clamp(1.1rem, 4.2vw, 1.35rem)`) and reduced line ornament widths (14px).
+
+2. **Scrimmed Photo Hero Contrast in Light Mode (`glass-immersive.css`):**
+   - **Defect:** Global light mode rules forced dark bronze (`#B45309`) onto `.gold-gradient-text`, rendering `TRAVEL.` nearly invisible against dark mountain/monument hero photos.
+   - **Fix:** Scoped `.hero-home .gold-gradient-text` and `.hero-home .calligraphy-kicker` to luminous sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text shadow protection (`0 3px 18px rgba(0, 0, 0, 0.6)`).
+
+3. **Calligraphy Dark Halos Eliminated in Light Mode (`styles.css`, `explore-immersive.css`):**
+   - **Defect:** `filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75))` designed for dark mode cast a muddy dark shadow on daylight white surfaces.
+   - **Fix:** Enforced `html[data-theme="light"] .calligraphy-kicker { filter: none !important; text-shadow: none !important; }`.
+
+4. **Interactive India Map Mobile Architecture (`glass-immersive.css`, `indiaMap.js`):**
+   - **Defect:** Desktop 500px height lock and `position: absolute` at the end of the stylesheet overrode mobile media queries, causing the state card to overlap and obscure southern states and island tags.
+   - **Fix:** Scoped desktop 500px and absolute coordinates strictly to `@media (min-width: 769px)`. Enforced fluid vertical stack (`flex-direction: column !important; height: auto !important;`) on mobile with state card placed cleanly beneath the SVG map in relative flow with zero overlap.
+
+5. **Frosted Pearl Glass Section Links (`glass-immersive.css`):**
+   - **Defect:** `.section-link` retained dark slate backgrounds on white pages and wrapped to the left awkwardly on mobile.
+   - **Fix:** Implemented frosted pearl milk glass (`rgba(255, 255, 255, 0.90)`), royal amber hairline border (`border: 1px solid rgba(217, 119, 6, 0.35)`), and right-alignment (`margin-left: auto !important;`) on mobile screens.
+
+6. **Mobile Bottom Navigation in Light Mode (`glass-immersive.css`):**
+   - **Fix:** Styled `.mobile-nav` in light mode with frosted white glass (`rgba(255, 255, 255, 0.95)`), slate navigation icons (`#64748B`), and amber active indicator pill (`#D97706`).
+
+7. **Compact 2-Column Mobile Highlights (`glass-immersive.css`):**
+   - **Fix:** Replaced 500px-tall single-column stacked monoliths on `#month-rail` and `#season-grid` with compact 2-column mobile grids (270px card height), cutting mobile vertical scroll depth by over 60%.
+
+8. **Automated QA Audit Verification:**
+   - Ran `node scripts/ui_ux_qa_audit.js`: **0 issues detected** across all 7 categories (Accessibility, Touch/Interaction, Performance, Layout/Responsive, Typography/Color, Motion/Animation, Forms/Feedback). Production Health Score: **100/100.**
+

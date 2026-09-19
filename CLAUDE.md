@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-13 rev-5)
+# ExploreDesh — Project Guide (updated 2026-09-19 rev-12)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -9,14 +9,32 @@
 > what was verified, and what's still open. Read this to understand the site's current health state.
 
 An India travel-discovery platform: browse **2,393 destinations** (14,013 places,
-11,874 gallery images, 10,427 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
+66,480+ gallery images catalog-wide, 10,427 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
 detail pages with places, stays, routes, an interactive Leaflet map, **live weather**, and
 dynamic similar-destination recommendations.
 The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-16) — Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity Overhaul (253 Image Assets):**
+> **Latest Milestone (2026-09-19 rev-12) — Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness:**
+> - **Calligraphy Kicker Mobile Decoration Line & Star Wrap Fix:** Resolved orphan trailing star `✦` on screens $\le 640\text{px}$ in `styles.css` and `glass-immersive.css` using `white-space: nowrap !important; max-width: 100%;` and responsive font clamp (`clamp(1.1rem, 4.2vw, 1.35rem)`).
+> - **Scrimmed Photo Hero Typography Protection in Light Mode:** Scoped `.hero-home .gold-gradient-text` and `.hero-home .calligraphy-kicker` in Light Mode to luminous sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text-shadow protection (`0 3px 18px rgba(0, 0, 0, 0.6)`), preventing muddy dark bronze against dark photo backdrops.
+> - **Calligraphy Dark Dropshadow Elimination in Light Mode:** Enforced `filter: none !important; text-shadow: none !important;` on `.calligraphy-kicker` under `html[data-theme="light"]`, eradicating dark blurred halos on white pages.
+> - **Interactive India Map Mobile Architecture & Zero-Overlap Card:** Scoped desktop 500px and absolute coordinates to `@media (min-width: 769px)`. Enforced fluid vertical stack (`flex-direction: column !important; height: auto !important;`) on mobile with state card placed cleanly beneath the SVG map in relative flow with zero overlap or island obscuration.
+> - **Frosted Pearl Glass Section Links:** Transformed `.section-link` in Light Mode into frosted pearl milk glass (`rgba(255, 255, 255, 0.90)`), royal amber hairline border (`border: 1px solid rgba(217, 119, 6, 0.35)`), and right-alignment (`margin-left: auto !important;`) on mobile screens.
+> - **Mobile Bottom Navigation in Light Mode:** Frosted white glass (`rgba(255, 255, 255, 0.95)`), slate navigation icons (`#64748B`), and amber active indicator pill (`#D97706`).
+> - **Compact 2-Column Mobile Highlights:** Converted 500px-tall single-column monoliths on `#month-rail` and `#season-grid` to compact 2-column mobile grids (270px card height).
+> - **Automated QA Audit Verification:** Ran `node scripts/ui_ux_qa_audit.js`: **0 issues detected** across all 7 categories. Production Health Score: **100/100.**
+>
+> **Previous Milestone (2026-09-19 rev-11) — Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul (26 Destinations) & Light Mode Elevation:**
+> - **26-Destination Batch Overhauled:** `pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, and `trilokpur`.
+> - **Zero Wikimedia & Zero Pixabay Session URLs:** 100% of deployed images sourced exclusively from Pexels API and Unsplash HD CDNs. Strictly 0 Wikimedia Commons, 0 Pixabay session `/get/` URLs, 0 placeholder domains, and 0 broken HTTP links across all 26 destination files.
+> - **100% Unique True HD (1920px+) URLs:** Canonical HD URL parameters (`w=1920`) strictly enforced. Widescreen landscape orientation matching `object-fit: cover`. Cross-destination zero-collision guarantee enforced — 0 collisions against 66,480+ repo-wide URL index, 0 intra-file duplicate URLs (`heroImage.src === gallery[0].src` certified).
+> - **Repository Invariants Certified:** Exactly 5 HD gallery slides, `heroImage.src === gallery[0].src`, exactly 3 photos per nearby place + 1 card thumbnail, zero internal duplicates, zero mutual collisions. All URLs verified HTTP 200 OK via live network checks.
+> - **Light Mode "Load More Destinations" High-Contrast Fix:** Restyled `#loadMoreBtn` and `.load-more-luxury-btn` across `explore-immersive.css` and `glass-immersive.css` in Light Mode to deep obsidian slate gradient (`#1E293B` to `#0F172A`), pure white text (`#FFFFFF`), amber gold bottom border (`#D97706`), and `#F5C542` gold count badge, achieving full WCAG AAA contrast compliance.
+> - **Ecosystem Synchronized:** Regenerated `data/destinations/index.json`, `data/search-index.json`, `docs/DESTINATIONS.md` (2,393 destinations), and XML sitemaps (2,450 URLs, 11,935 images). Production-Ready Score: **100/100**.
+>
+> **Previous Milestone (2026-09-16) — Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity Overhaul (253 Image Assets):**
 > - **Zero Foreign Stock Guarantee:** Forensic audit and purge across all 9 session targets (`ajanta-ellora`, `shankaracharya-temple-srinagar`, `ancient-temple-at-ladhoo`, `sultanpur-national-park`, `khaparwas-wildlife-sanctuary`, `ziro`, `veeranarayana-temple-gadag`, `kollur-mookambika-temple`, `devipuram`). Completely eliminated foreign results returned by generic stock API matches (Sri Lanka, Turkey, Minnesota USA, New Zealand, Peru, Vietnam, Cambodia, Germany, Pakistan, Bangladesh).
 > - **Strict State & Regional Alignment:** Sourced authentic local Indian photography (Andhra Pradesh Eastern Ghats / Araku / Bojjannakonda rock-cut stupas for Devipuram; Western Ghats Karnataka peaks and traditional Dravidian gopurams for Kollur; Kashmir Valley mountain sanctums and Pampore saffron fields for Ladhoo; North Indian migratory waterfowl for Sultanpur & Khaparwas; Ziro Valley terraced paddies for Ziro; Karnataka Chalukya/Hoysala heritage for Veeranarayana; Ellora Kailasa & Ajanta chaityas for Ajanta-Ellora).
 > - **Zero Modern Infrastructure & Distractions:** Eliminated all electric power transmission towers, power lines, and modern clock towers substituting for Hindu gopurams.

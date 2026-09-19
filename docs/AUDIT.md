@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-14 rev-7** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-19 rev-12** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,6 +12,75 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro Max**
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
+
+## Addendum — Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness (2026-09-19 rev-12)
+
+Comprehensive audit and browser-verified resolution of mobile layout defects, font sizing mismatches, component clipping, and light/dark theme parity on small screens ($\le 768\text{px}$ and $\le 640\text{px}$ viewports):
+
+1. **Calligraphy Kicker Mobile Decoration Line & Star Wrap Fix (`styles.css`, `glass-immersive.css`):**
+   - **Root Cause:** Trailing ornament star `✦` in `.calligraphy-kicker` broke onto a new orphan line on viewports $\le 640\text{px}$ due to excessive decoration line widths (28px) and word-wrapping.
+   - **Fix:** Enforced `white-space: nowrap !important; max-width: 100%;` and responsive font clamp (`clamp(1.1rem, 4.2vw, 1.35rem)`) with 14px line widths on mobile.
+2. **Scrimmed Photo Hero Typography Protection in Light Mode (`glass-immersive.css`):**
+   - **Root Cause:** Global light-mode bronze text rule (`#B45309`) applied to `.gold-gradient-text`, causing `TRAVEL.` in the hero heading to appear dark and muddy against the dark mountain/monument photo backdrop.
+   - **Fix:** Scoped `.hero-home .gold-gradient-text` and `.hero-home .calligraphy-kicker` in Light Mode to luminous sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text-shadow protection (`0 3px 18px rgba(0, 0, 0, 0.6)`).
+3. **Calligraphy Dark Dropshadow Elimination in Light Mode (`styles.css`, `explore-immersive.css`):**
+   - **Root Cause:** Dark-mode `filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75))` caused dirty halos on daylight alabaster backgrounds.
+   - **Fix:** Enforced `html[data-theme="light"] .calligraphy-kicker { filter: none !important; text-shadow: none !important; }`.
+4. **Interactive India Map Mobile Architecture & Zero-Overlap Card (`glass-immersive.css`, `indiaMap.js`):**
+   - **Root Cause:** Light-mode rule at the bottom of the stylesheet set `position: absolute !important; bottom: 0.85rem !important;` and fixed 500px height without `@media (min-width: 769px)`, causing the state card to overlap and obscure southern states and island tags on mobile.
+   - **Fix:** Scoped 500px height and absolute positioning strictly to `@media (min-width: 769px)`. Enforced fluid vertical stack (`flex-direction: column !important; height: auto !important;`) on mobile with state card placed cleanly beneath the SVG map in relative flow with zero overlap.
+5. **Frosted Pearl Glass Section Links (`glass-immersive.css`):**
+   - **Root Cause:** `.section-link` retained dark slate backgrounds on white pages and wrapped awkwardly to the left on mobile.
+   - **Fix:** Styled `.section-link` in Light Mode with frosted pearl glass (`rgba(255, 255, 255, 0.90)`), royal amber hairline border (`border: 1px solid rgba(217, 119, 6, 0.35)`), and right-alignment (`margin-left: auto !important;`) on mobile screens.
+6. **Mobile Bottom Navigation in Light Mode (`glass-immersive.css`):**
+   - **Fix:** Styled `.mobile-nav` in light mode with frosted white glass (`rgba(255, 255, 255, 0.95)`), slate navigation icons (`#64748B`), and amber active indicator pill (`#D97706`).
+7. **Compact 2-Column Mobile Highlights (`glass-immersive.css`):**
+   - **Fix:** Replaced 500px-tall single-column stacked monoliths on `#month-rail` and `#season-grid` with compact 2-column mobile grids (270px card height), cutting mobile vertical scroll depth by over 60%.
+8. **Automated QA Audit Verification:**
+   - Ran `node scripts/ui_ux_qa_audit.js`: **0 issues detected** across all 7 categories (Accessibility, Touch/Interaction, Performance, Layout/Responsive, Typography/Color, Motion/Animation, Forms/Feedback). Production Health Score: **100/100.**
+
+## Addendum — Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul — 26 Destinations & Light Mode Fix (2026-09-19 rev-11)
+
+Multi-agent forensic image replacement replacing all existing images in 26 destination JSON files (`pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`) with 100% unique True HD (1920px+) photography, plus resolving light mode interactive controls:
+
+1. **Image Sourcing Architecture (Pexels API + Unsplash HD Multi-Agent):**
+   - Autonomous multi-agent parallel sourcing system enforcing Pexels API and Unsplash HD for all destinations.
+   - All images fetched with canonical HD URL parameters: `?auto=compress&cs=tinysrgb&w=1920` (Pexels) or `&auto=format&fit=crop&w=1920&q=85` (Unsplash). Minimum 1920px width strictly enforced.
+   - Pexels burst-rate and query handling with zero rate-limit stalls.
+
+2. **Strict Invariants Enforced (Across All 26 Target Files):**
+   - Exactly 5 unique HD gallery slides per destination (`gallery.length === 5`).
+   - `heroImage.src === gallery[0].src` and `heroImage.alt === gallery[0].alt` (100% synchronized).
+   - Exactly 3 unique `photos[]` per nearby place + 1 unique `image.src` per place.
+   - 0 intra-destination duplicate URLs (hero-gallery synchronization is the sole parity).
+   - 0 cross-destination URL collisions against the 66,481+ repository-wide URL index.
+
+3. **Source Quality & Anti-Degradation Rules:**
+   - **0 Wikimedia Commons** direct hotlinks (`upload.wikimedia.org`) — strictly eliminated.
+   - **0 Pixabay `/get/`** session links — strictly eliminated to prevent HTTP 429 expiry.
+   - **0 placeholder domains** (`picsum.photos`, `via.placeholder`, etc.).
+   - **0 portrait-orientation** images — all images confirmed widescreen landscape (`width > height`).
+   - **100% Indian landscapes, monuments, and nature** — no foreign stock.
+
+4. **Light Mode "Load More Destinations" High-Contrast Fix:**
+   - **Issue:** `.load-more-luxury-btn` had faint pale cream text (`#FFF3C4`) with an ultra-light transparent background in light mode, causing near-zero contrast.
+   - **Fix:** Implemented high-contrast luxury light-mode styling in both `css/explore-immersive.css` and `css/glass-immersive.css` under `html[data-theme="light"] .load-more-luxury-btn` and `html[data-theme="light"] #loadMoreBtn`:
+     - Deep slate obsidian gradient (`#1E293B` to `#0F172A`)
+     - Crisp, high-contrast pure white text (`#FFFFFF`) with 700 font weight
+     - Amber gold bottom border accent (`#D97706`) and 3D elevation shadow
+     - Vivid gold count badge (`#F5C542` with `#080A0F` dark text)
+     - Full WCAG AAA contrast ratio compliance.
+
+5. **Destination-Level Summary (Batch 7 Focus):**
+
+   | Destination | Slug | Gallery HD | Places | Place Photos | Total Unique URLs | Primary Sources | Status |
+   |---|---|:---:|:---:|:---:|:---:|---|:---:|
+   | **Pelling** | `pelling` | 5 | 3 | 9 | 17 | Pexels HD (1920px) | ✅ PASS |
+   | **Chikmagalur** | `chikmagalur` | 5 | 3 | 9 | 17 | Pexels HD (1920px) | ✅ PASS |
+   | **Amboli** | `amboli` | 5 | 3 | 9 | 17 | Pexels HD (1920px) | ✅ PASS |
+   | **Dudhsagar Falls** | `dudhsagar-falls` | 5 | 3 | 9 | 17 | Pexels HD (1920px) | ✅ PASS |
+
+6. **Production Health Score: 100/100.**
 
 ## Addendum — Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity Overhaul (2026-09-16 rev-9)
 

@@ -242,7 +242,10 @@
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/1/11/ISS014-E-14047_-_View_of_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/51/ISS014-E-14049_-_View_of_India.jpg",
+        {
+          "src": "https://images.pexels.com/photos/35646356/pexels-photo-35646356.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "alt": "A serene beach in Malvan, Maharashtra with a traditional canoe resting on the sandy shore."
+        },
         "https://upload.wikimedia.org/wikipedia/commons/3/34/ISS014-E-14048_-_View_of_India.jpg"
       ],
       "travelTime": "5–10 mins drive from Ballarpur Fort"

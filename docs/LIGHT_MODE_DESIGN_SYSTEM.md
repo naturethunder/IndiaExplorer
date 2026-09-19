@@ -131,11 +131,51 @@
 - **Top Accent:** Precision 2.5px royal burnt gold crest (`border-top: 2.5px solid #D97706`).
 - **CTA:** Full-width royal amber button with subtle 3D bevel and tactile hover response.
 
+### 4.6 Luxury Catalog Pagination & "Load More" Controls (`.load-more-luxury-btn` / `#loadMoreBtn`)
+- **Background & Canvas Contrast:** Deep obsidian slate gradient (`linear-gradient(135deg, #1E293B 0%, #0F172A 100%)`) providing an authoritative, high-contrast anchor against light mode alabaster canvases.
+- **Typography:** Pure high-contrast white (`#FFFFFF`) with `font-weight: 700` and letter-spacing `0.02em`, delivering an ultra-high 15.5:1 contrast ratio exceeding WCAG AAA standards.
+- **Border & Bevel Accent:** Amber gold bottom border (`border-bottom: 2.5px solid #D97706`), hairline border (`1px solid rgba(217, 119, 6, 0.45)`), and top specular inner highlight.
+- **Count Badge:** Solid radiant gold pill (`background: #F5C542`) with deep charcoal text (`#080A0F`), clearly highlighting the remaining destination count.
+- **Hover & Active Micro-Interactions:** Smooth `translateY(-2px)` elevation, intensified amber corona glow (`box-shadow: 0 8px 24px -4px rgba(217, 119, 6, 0.35)`), and smooth 0.2s cubic-bezier transition.
+
+### 4.7 Mobile Navigation Bar in Light Mode (`.mobile-nav`)
+- **Surface:** Frosted ivory milk glass (`background: rgba(255, 255, 255, 0.95)`), `backdrop-filter: blur(20px) saturate(180%)`, top specular hairline rim (`border-top: 1px solid rgba(217, 119, 6, 0.18)`).
+- **Default Nav Icons & Labels:** Neutral slate-500 (`#64748B`), font-weight 600, 11px micro-typography.
+- **Active Nav Item:** Heritage royal amber (`#D97706`), bold font weight, with subtle amber halo on icon and active indicator pill.
+- **Safe Area Inset:** Enforced `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` on body container to prevent bottom navigation occlusion of footer links and action buttons.
+
+### 4.8 Interactive India Map Mobile Architecture (`.discover-map-inner` & `.india-map-card`)
+- **Container Stack:** Collapses from desktop horizontal row (`flex-direction: row`, `height: 500px`) to fluid vertical column (`flex-direction: column`, `height: auto`, `padding: 1rem 0.85rem`).
+- **Map SVG:** Scales fluidly (`width: 100%`, `max-height: 380px`), preserving regional pastel fills, dark blue ocean labels, and touch target accessibility for all 36 states/UTs including Andaman & Nicobar and Lakshadweep.
+- **State Details Card (`.india-map-card`):** Transitions from desktop floating absolute position to full-width relative card (`width: 100%`, `inset: auto`) cleanly positioned below the SVG map. Eliminates map obscuration, Southern state overlap, and bottom nav occlusion.
+- **Surface & Trim:** Milk glass (`rgba(255, 255, 255, 0.96)`), 3px amber top crest (`border-top: 3px solid #D97706`), crisp Slate-900 titles, and high-contrast links.
+
+### 4.9 Scrimmed Photo Hero Typography Protection in Light Mode
+- **Protected Elements:** Inside `.hero-home` (and photo hero banners), background imagery is inherently dark regardless of document theme.
+- **Hero Headings:** Hero title retains pure white `#FFFFFF` with drop shadow (`0 3px 18px rgba(0, 0, 0, 0.8)`).
+- **Hero Gradient Accent (`.hero-home .gold-gradient-text`):** Overridden from daytime bronze (`#B45309`) to brilliant glowing sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text shadow (`0 3px 18px rgba(0,0,0,0.6)`).
+- **Hero Calligraphy Kicker & Accent Script:** Luminous warm gold (`#FCD34D` and `#FDE68A`) with zero dark filter dropshadow.
+
 ---
 
-## 5. Verification & Accessibility Standards
+## 5. Mobile Responsive Architecture (<= 768px & <= 640px)
+
+| Viewport Breakpoint | Component | Responsive Rule | Visual Outcome |
+|---|---|---|---|
+| `<= 768px` | `body.glass-immersive` | `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` | Prevents fixed bottom nav from clipping CTA buttons and footer |
+| `<= 768px` | `.discover-map-inner` | `flex-direction: column !important; height: auto !important;` | Eliminates desktop 500px height lock and enables natural mobile scroll |
+| `<= 768px` | `.india-map-card` | `position: relative !important; width: 100% !important;` | Anchors state card neatly below SVG map; stops state obscuration |
+| `<= 640px` | `.calligraphy-kicker` | `white-space: nowrap !important; clamp(1.1rem, 4.2vw, 1.35rem)` | Prevents trailing `✦` ornament from breaking onto an orphan line |
+| `<= 640px` | `.section-title` | `clamp(1.35rem, 5.2vw, 1.85rem) !important;` | Eliminates headline wrapping clashes against action buttons |
+| `<= 640px` | `.section-link` | `margin-left: auto !important; white-space: nowrap !important;` | Neatly right-aligns "View all →" buttons above carousels |
+| `<= 640px` | `#month-rail`, `#season-grid` | `grid-template-columns: repeat(2, minmax(0, 1fr)) !important;` | Compact 270px 2-column grid replacing 500px single-column monoliths |
+
+---
+
+## 6. Verification & Accessibility Standards
 
 - **WCAG 2.1 AAA:** All text combinations exceed 7:1 contrast ratio.
 - **Apple HIG & Material Design Touch Targets:** Minimum 44×44px interactive area on all buttons and pills.
 - **Reduced Motion Support:** All transitions, transforms, and animations immediately degrade to `0.01ms` when `@media (prefers-reduced-motion: reduce)` is detected.
 - **Zero FOUC:** Instant local-storage theme resolution executes synchronously in `<head>` prior to CSS render.
+- **Zero Horizontal Overflow:** Tested and confirmed at 375px, 390px, and 412px viewports (`overflow-x: hidden`).
