@@ -3,7 +3,43 @@
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-09-12 (Phase 39).** Sourcing hierarchy is updated per `.env.local` with **HD-First and Authentic-Image-First** priority. Authentic ground-truth sources (Wikimedia Commons 4K/8K, Google Places Photos, Flickr CC Travel Streams) and Ultra-HD photo engines (Pexels, Unsplash, Openverse, Museum 4K IIIF) are prioritized. Pixabay `/get/` session links, placeholder CDNs, and low-res thumbnails are strictly banned. **Cross-destination zero-collision is enforced** — use `scripts/verify_batch2.js` after any image update to verify 0 collisions across the full 66k+ URL repository index.
+> **Last updated: 2026-09-20 (Phase 54 — Strict Photographic Truth & Anti-Mislabeling Guard).** Sourcing hierarchy is strictly governed by **Photographic Truth**: Never mislabel a stock photo (e.g. never use Ajanta Caves or Khajuraho for Vajreshwari Temple, never use Delhi forts for Khurnak Fort). Specific monuments, temples, churches, and forts must use verified authentic captures of the exact structure from verified repositories (Wikimedia Commons HD, Flickr CC, Google Places). Regional landscape photos (Pexels/Unsplash HD) are permitted for rivers, mountains, and forests only when honestly described as regional topography. Zero human figures, zero foreign stock, 100% live HTTP 200, and cross-destination zero-collision across the 66k+ catalog are strictly enforced.
+
+---
+
+## Rule 0 — Strict Photographic Truth & Zero Mislabeling Guard (CRITICAL — NEVER VIOLATE)
+
+Every image assigned to a destination must be **photographically authentic, certified, and truthful**:
+1. **Zero Mislabeled Stock**: Never accept fuzzy search results from stock APIs (Pexels, Unsplash, Pixabay) that depict an unrelated monument or location. Before assigning any stock photo, its photographer metadata (`alt`, `description`, `tags`, `location`) must be verified against the destination's real geography and name.
+   - ❌ **STRICTLY PROHIBITED**: Using photos of Kumbhalgarh Fort or Mehrangarh Fort for Maharashtra forts.
+   - ❌ **STRICTLY PROHIBITED**: Using photos of foreign castles (e.g. Swiss castles, European ruins) or foreign churches (e.g. Vietnam, Europe) for Indian forts or churches.
+   - ❌ **STRICTLY PROHIBITED**: Using photos of Badami, Khajuraho, Mahabalipuram, or Hoysaleshwara for unrelated temples in Uttarakhand, Telangana, Tamil Nadu, or Maharashtra.
+
+2. **Programmatic Metadata Mismatch Matrix (Mandatory Enforcement Rule)**:
+   Any photo where the photographer's metadata contains banned keywords for the destination's region/monument is strictly disqualified:
+
+   | Destination Pattern | Strictly Banned Keywords in Photographer Metadata | Rejection Reason |
+   |---|---|---|
+   | Maharashtra Forts (`dategad`, `vardhangad`, `mahur-fort`, `anjanvel-fort`, etc.) | `switzerland`, `stirling`, `kumbhalgarh`, `nahargarh`, `jaipur`, `rajasthan`, `europe`, `murud-janjira` | Mislabeled Maharashtra fort with foreign castle or Rajasthan fort |
+   | Uttarakhand Temples (`lakhamandal`, `rudranath`, etc.) | `badami`, `karnataka`, `aihole`, `pattadakal`, `sikkim` | Mislabeled Uttarakhand temple with Karnataka Chalukya temple or Sikkim cabin |
+   | Telangana Temples (`alampur`, `saraswathi-kshetramu`, etc.) | `orchha`, `madhya pradesh`, `khajuraho`, `hoysaleshwara`, `halebidu`, `belur`, `karnataka` | Mislabeled Telangana temple with Madhya Pradesh or Karnataka monument |
+   | Bangalore / Karnataka Shrines (`someshwara-temple-marathahalli`, etc.) | `brihadeeswarar`, `thanjavur`, `chola`, `mahabalipuram` | Mislabeled Bangalore temple with Thanjavur Brihadeeswarar |
+   | Central India Sanctums (`bagalamukhi-temple`, etc.) | `maheshwar`, `narmada ghat`, `ahilya` | Mislabeled Nalkheda sanctum with Maheshwar ghats |
+   | Tamil Nadu Shrines (`thandayuthapani-temples-chettikulam`, etc.) | `mahabalipuram`, `shore temple`, `vellore` | Mislabeled Chettikulam temple with coastal Shore Temple |
+   | Indian Churches / Cathedrals (`st-thomas-orthodox-cathedral`, `little-flower-forane-church`, `church-of-sacred-heart-of-jesus-madanthyar`, etc.) | `vietnam`, `europe`, `hanoi`, `saigon`, `spain`, `italy`, `france` | Mislabeled Indian parish church with foreign cathedral |
+
+3. **Photographer Metadata Verification Algorithm**:
+   - For any stock photo (e.g. Pexels `https://images.pexels.com/photos/{ID}/...`), inspect the photographer's original `alt` and `description` via the API (`https://api.pexels.com/v1/photos/{ID}`).
+   - If the photographer's original description identifies the image as a different monument, city, state, or foreign country, that photo MUST NOT be assigned to the destination under a renamed title.
+   - If no verified stock photo exists for a specific obscure monument, source the verified structure from ground-truth archives (Wikimedia Commons HD archives, Panoramio, Flickr CC).
+
+4. **Monument & Shrine Ground-Truth Priority**: For specific temples, churches, shrines, and historical forts, the hero image and monument gallery slides must portray the **actual, authentic structure**.
+
+5. **Honest Regional Landscape Titles**: High-definition Pexels/Unsplash photos may be used for natural features (rivers, hills, valleys, wildlife), but their titles, alt text, and captions must **honestly describe the geographic feature** (e.g., *"Tansa River Basin & Rolling Hills"*, *"Pangong Tso Mountain Basin"*) and **never** claim to be the temple or monument itself.
+
+6. **Zero Human Subjects**: 0 people, 0 tourists, 0 yogis, 0 devotees, 0 pilgrims, 0 farmers, 0 portraits, and 0 crowd scenes across both gallery and nearby places.
+
+7. **Zero Foreign Stock**: 100% Indian geography only.
 
 ---
 
@@ -118,6 +154,7 @@ When searching, curating, and selecting images across all providers, strict cont
 - **STRICTLY FORBIDDEN / ZERO-TOLERANCE REJECTION**:
   - ❌ **NO PERSON / NO PORTRAITS**: Absolutely zero individuals, tourist selfies, posing models (men, women, children), face close-ups, or humans as the subject.
   - ❌ **NO PEOPLE CROWDS**: Absolutely zero dense tourist mobs, crowded gatherings, congested markets, or human crowds obstructing the monuments, scenery, or architecture. The shot must showcase the destination cleanly.
+  - ❌ **NO SCRAPED ACCIDENTS / TRAGEDIES**: Absolutely zero scraped news disasters, stampedes, crowd crushes, boat capsizings, factory/hotel fires, train disasters, or municipal landfills masquerading as tourist attraction places in `topPlaces`. Every nearby place must be an authentic, scenic, or culturally significant tourist landmark, park, viewpoint, or monument.
   - ❌ **NO RANDOM IMAGES**: Absolutely zero unrelated filler, generic commercial stock, random objects, food/plates, hotel bedding, office interiors, traffic jams, clip art, logos, infographics, maps, flags.
   - ❌ **NO MODERN INFRASTRUCTURE / DISTRACTIONS**: Absolutely zero electric transmission towers, power lines, utility poles, high-voltage pylons, or substations marring scenic vistas. Zero modern clock towers falsely representing traditional temple gopurams.
 
@@ -160,8 +197,9 @@ When sourcing proxies or nearby attractions, imagery MUST originate from the sam
 | **9** | **Zero cross-destination URL collisions across all 2,393 files (66k+ URLs)** | **ExploreDesh Strict** |
 | **10** | **100% Indian Geographic Authenticity: Zero foreign stock & zero cross-state misattributions** | **ExploreDesh Strict (Phase 40)** |
 | **11** | **Subject Curation: Monuments, scenery & architecture only (No persons/crowds/towers/vehicles)** | **ExploreDesh Strict** |
-| **12** | **Authentic Ground-Truth + HD First Priority (as per `.env.local`)** | **ExploreDesh Strict** |
-| **13** | **Proper Titles & Captions: descriptive, non-generic title for every gallery image** | **ExploreDesh Strict** |
+| **12** | **Zero Scraped Tragedies: Only authentic tourist landmarks, parks, viewpoints & heritage sites** | **ExploreDesh Strict (Phase 52)** |
+| **13** | **Authentic Ground-Truth + HD First Priority (as per `.env.local`)** | **ExploreDesh Strict** |
+| **14** | **Proper Titles & Captions: descriptive, non-generic title for every gallery image** | **ExploreDesh Strict** |
 
 ---
 

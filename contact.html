@@ -10,13 +10,13 @@
   <meta name="keywords"
     content="contact ExploreDesh, travel support, partner with ExploreDesh, destination enquiries" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="theme-color" content="#080A0F" />
+  <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('exploredesh_theme');
-        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
         var meta = document.querySelector('meta[name="theme-color"]');
@@ -26,6 +26,11 @@
   </script>
   <link rel="canonical" href="https://exploredesh.com/contact.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ExploreDesh Go" />
+  <link rel="apple-touch-icon" href="images/pwa-icon-192.png" />
   <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Bodoni Moda, Playfair Display & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

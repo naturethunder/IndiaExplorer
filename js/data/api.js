@@ -10,6 +10,8 @@
  *   data/search-index.json          AI-finder text index
  */
 
+import { getDestinationOffline } from '../utils/offlineStorage.js';
+
 const BASE = 'data';
 const cache = new Map();
 
@@ -25,8 +27,20 @@ function getJSON(path) {
 }
 
 /** Full detail for one destination. The detail page loads ONLY this. */
-export function fetchDestination(slug) {
-  return getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json');
+export async function fetchDestination(slug) {
+  try {
+    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json');
+  } catch (err) {
+    // If network fetch failed (offline in Himalayan passes / safari), check offline storage
+    try {
+      const offlineRecord = await getDestinationOffline(slug);
+      if (offlineRecord && offlineRecord.data) {
+        console.info('[ExploreDesh Go] Serving destination from offline storage:', slug);
+        return offlineRecord.data;
+      }
+    } catch (_) {}
+    throw err;
+  }
 }
 
 /**

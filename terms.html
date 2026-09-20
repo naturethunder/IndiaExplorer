@@ -9,13 +9,13 @@
     content="The terms and conditions that govern your use of the ExploreDesh travel-discovery website." />
   <link rel="canonical" href="https://exploredesh.com/terms.html" />
   <meta name="robots" content="noindex, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#080A0F" />
+  <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('exploredesh_theme');
-        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
         var meta = document.querySelector('meta[name="theme-color"]');

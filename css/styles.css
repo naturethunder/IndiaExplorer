@@ -324,6 +324,76 @@ html[data-theme="light"] .calligraphy-eyebrow {
   text-shadow: none !important;
 }
 
+/* ─── Monthly Highlights 3-Column Header Bar ─── */
+.monthly-header-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .monthly-header-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem 1.5rem;
+  }
+
+  .monthly-header-left {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .monthly-header-center {
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .monthly-header-center .calligraphy-kicker {
+    margin-bottom: 0 !important;
+    font-size: clamp(1.2rem, 1.8vw, 1.85rem) !important;
+  }
+
+  .monthly-header-right {
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .monthly-header-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .monthly-header-center {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .monthly-header-center .calligraphy-kicker {
+    margin-bottom: 0 !important;
+  }
+
+  .monthly-header-left {
+    text-align: left;
+  }
+
+  .monthly-header-right {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 /* Calligraphic Tab Section Kicker */
 .tab-calligraphy-kicker {
   font-family: 'Pinyon Script', cursive !important;
@@ -973,6 +1043,7 @@ html[data-theme="light"] .calligraphy-eyebrow {
   inset: 0;
   z-index: 2;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none; /* Gradient overlay must never capture clicks — buttons beneath must be clickable */
 }
 
 /* Hero photo carousel (real destination images, cross-fading) */
@@ -3452,13 +3523,1021 @@ a.btn:active svg,
 .category-pill-btn.active svg,
 .dest-quick-pill:hover svg,
 .dest-quick-pill:active svg,
-.dest-quick-pill.active svg,
-.tab-btn:hover svg,
-.tab-btn:active svg,
-.tab-btn.active svg,
 .ex-chip:hover svg,
 .ex-chip:active svg {
   color: #F5C542 !important;
   stroke: #F5C542 !important;
   filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5)) !important;
+}
+
+/* =========================================================
+   EXPLOREDESH GO — PROGRESSIVE WEB APP & OFFLINE POCKET GUIDE
+   ========================================================= */
+
+/* ─── NAVBAR OFFLINE BUTTON ───────────────────────────────── */
+.nav-offline-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  height: 38px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(229, 192, 123, 0.25);
+  color: #F8FAFC;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.nav-offline-btn:hover {
+  background: rgba(229, 192, 123, 0.15);
+  border-color: #E5C07B;
+  color: #FFF3C4;
+  box-shadow: 0 0 16px rgba(229, 192, 123, 0.3);
+  transform: translateY(-1px);
+}
+.nav-offline-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #FBBF24;
+}
+.nav-offline-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+/* ─── AMBIENT NETWORK STATUS BAR ──────────────────────────── */
+.network-status-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.network-status-bar.hidden {
+  display: none !important;
+}
+.network-status-bar.network-offline {
+  background: rgba(24, 24, 27, 0.94);
+  border-bottom: 1.5px solid #F59E0B;
+  color: #FEF3C7;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(245, 158, 11, 0.2);
+}
+.network-status-bar.network-online {
+  background: rgba(6, 78, 59, 0.94);
+  border-bottom: 1.5px solid #10B981;
+  color: #D1FAE5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(16, 185, 129, 0.3);
+}
+.network-status-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.network-status-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #F59E0B;
+  flex-shrink: 0;
+}
+.network-status-text {
+  flex: 1;
+}
+.network-status-btn {
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: #F59E0B;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+}
+.network-status-btn:hover {
+  transform: scale(1.04);
+}
+
+/* ─── GO HUB MODAL & DRAWER ───────────────────────────────── */
+.go-hub-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeInBackdrop 0.25s ease-out;
+}
+.go-hub-backdrop.hidden {
+  display: none !important;
+}
+@keyframes fadeInBackdrop {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.go-hub-drawer {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background: #080A0F;
+  border-left: 1px solid rgba(229, 192, 123, 0.2);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.8), -1px 0 0 rgba(229, 192, 123, 0.15);
+  animation: slideInDrawer 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+@keyframes slideInDrawer {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.go-hub-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+.go-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(249, 115, 22, 0.16);
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  color: #FB923C;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.go-close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94A3B8;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.go-close-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+
+.go-connection-indicator {
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #94A3B8;
+}
+.conn-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.conn-dot.online {
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+}
+.conn-dot.offline {
+  background: #F59E0B;
+  box-shadow: 0 0 8px #F59E0B;
+}
+
+.go-tabs-bar {
+  display: flex;
+  padding: 10px 16px;
+  gap: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(14, 19, 31, 0.6);
+}
+.go-tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #94A3B8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.go-tab-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.04);
+}
+.go-tab-btn.active {
+  color: #FFF3C4;
+  background: rgba(229, 192, 123, 0.12);
+  border-color: rgba(229, 192, 123, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.go-tab-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+.go-panel.hidden {
+  display: none !important;
+}
+
+/* ─── SAVED GUIDES LIST ──────────────────────────────────── */
+.go-search-wrap {
+  position: relative;
+  margin-bottom: 14px;
+}
+.go-search-wrap .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748B;
+}
+.go-search-input {
+  width: 100%;
+  padding: 9px 12px 9px 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.go-search-input:focus {
+  border-color: #E5C07B;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.go-guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.go-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.2s ease;
+}
+.go-guide-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(229, 192, 123, 0.25);
+  transform: translateY(-1px);
+}
+.go-guide-thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.go-guide-info {
+  flex: 1;
+  min-width: 0;
+}
+.go-size-tag {
+  font-size: 10px;
+  color: #94A3B8;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.go-altitude-tag {
+  font-size: 10px;
+  color: #F87171;
+  background: rgba(239, 68, 68, 0.14);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.go-status-pill {
+  font-size: 10px;
+  color: #34D399;
+  font-weight: 600;
+}
+.go-guide-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.go-btn-open {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 100%);
+  color: #080A0F;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.go-btn-open:hover {
+  transform: scale(1.04);
+}
+.go-btn-delete {
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94A3B8;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.go-btn-delete:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #F87171;
+}
+
+.go-empty-state {
+  text-align: center;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.go-empty-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(229, 192, 123, 0.1);
+  color: #E5C07B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* ─── EMERGENCY SOS TOOLKIT ───────────────────────────────── */
+.go-emergency-banner {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.alert-icon {
+  color: #F59E0B;
+  flex-shrink: 0;
+}
+.go-sos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.go-sos-call-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.go-sos-call-card:hover {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+  transform: translateY(-1px);
+}
+.go-sos-icon-slot {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E5C07B;
+  flex-shrink: 0;
+}
+.go-sos-num-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: #DC2626;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.4);
+}
+
+.go-accordion {
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+.go-acc-summary {
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+.go-acc-summary::-webkit-details-marker {
+  display: none;
+}
+.acc-chevron {
+  color: #64748B;
+  transition: transform 0.2s ease;
+}
+.go-accordion[open] .acc-chevron {
+  transform: rotate(90deg);
+}
+.go-acc-body {
+  padding: 0 14px 14px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+.go-golden-rule {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.12);
+  border-left: 3px solid #EF4444;
+  color: #FECACA;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+.go-check-list {
+  padding-left: 18px;
+  margin: 6px 0;
+  font-size: 11px;
+  color: #CBD5E1;
+  line-height: 1.5;
+}
+.go-check-list li {
+  margin-bottom: 4px;
+}
+
+/* ─── STORAGE & PWA MANAGER ───────────────────────────────── */
+.go-storage-card,
+.go-install-card,
+.go-clear-box {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 14px;
+}
+.go-progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.go-progress-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #E5C07B 0%, #10B981 100%);
+  transition: width 0.3s ease;
+}
+.go-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+.go-action-btn.primary {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 100%);
+  color: #080A0F;
+  box-shadow: 0 4px 14px rgba(229, 192, 123, 0.25);
+}
+.go-action-btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(229, 192, 123, 0.4);
+}
+.go-action-btn.danger {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #F87171;
+}
+.go-action-btn.danger:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+.go-clear-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* ─── DESTINATION HERO OFFLINE ACTION BUTTONS ──────────────── */
+.dest-hero-actions {
+  position: relative;
+  z-index: 10; /* Must sit above the hero-overlay (z-index:2) */
+}
+.dest-offline-save-btn,
+.dest-pocket-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 9999px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.dest-offline-save-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(229, 192, 123, 0.5);
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.dest-offline-save-btn:hover {
+  background: rgba(229, 192, 123, 0.25);
+  border-color: #E5C07B;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(229, 192, 123, 0.3);
+}
+.dest-offline-save-btn.is-saved {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10B981;
+  color: #D1FAE5;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.3);
+}
+.dest-pocket-card-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #F1F5F9;
+}
+.dest-pocket-card-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+/* ─── POCKET CHEAT SHEET MODAL ────────────────────────────── */
+.pocket-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeInBackdrop 0.25s ease-out;
+}
+.pocket-modal-backdrop.hidden {
+  display: none !important;
+}
+.pocket-modal-card {
+  width: 100%;
+  max-width: 580px;
+  max-height: 90vh;
+  background: #080A0F;
+  border: 1px solid rgba(229, 192, 123, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(229, 192, 123, 0.15);
+  overflow: hidden;
+}
+.pocket-modal-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.02);
+}
+.pocket-print-btn,
+.pocket-close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #CBD5E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.pocket-print-btn:hover,
+.pocket-close-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+.pocket-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cheat-alert-box.ams {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.14);
+  border-left: 4px solid #EF4444;
+  color: #FECACA;
+  font-size: 11px;
+  line-height: 1.4;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.cheat-section {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.cheat-section-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #E5C07B;
+  margin-bottom: 6px;
+}
+.cheat-place-row {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.cheat-place-row:last-child {
+  border-bottom: none;
+}
+.cheat-sos-btn {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+.cheat-sos-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #FECACA;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #pocketCheatSheetModal,
+  #pocketCheatSheetModal * {
+    visibility: visible;
+  }
+  #pocketCheatSheetModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .pocket-modal-card {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   EXPLOREDESH GO — DUAL THEME ENGINE (LIGHT & DARK MODE SUPPORT)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── DARK MODE EXPLICIT ENFORCEMENT & SHIELD ────────────────────────────── */
+html:not([data-theme="light"]) .go-hub-drawer,
+html[data-theme="dark"] .go-hub-drawer {
+  background: #080A0F !important;
+  border-left: 1px solid rgba(229, 192, 123, 0.25) !important;
+}
+html:not([data-theme="light"]) .go-hub-drawer .text-white,
+html[data-theme="dark"] .go-hub-drawer .text-white,
+html:not([data-theme="light"]) .pocket-modal-card .text-white,
+html[data-theme="dark"] .pocket-modal-card .text-white,
+html:not([data-theme="light"]) .go-hub-drawer h2,
+html:not([data-theme="light"]) .go-hub-drawer h3,
+html:not([data-theme="light"]) .go-hub-drawer h4,
+html:not([data-theme="light"]) .go-hub-drawer h5,
+html[data-theme="dark"] .go-hub-drawer h2,
+html[data-theme="dark"] .go-hub-drawer h3,
+html[data-theme="dark"] .go-hub-drawer h4,
+html[data-theme="dark"] .go-hub-drawer h5 {
+  color: #FFFFFF !important;
+}
+html:not([data-theme="light"]) .go-hub-drawer .text-gray-400,
+html[data-theme="dark"] .go-hub-drawer .text-gray-400,
+html:not([data-theme="light"]) .pocket-modal-card .text-gray-400,
+html[data-theme="dark"] .pocket-modal-card .text-gray-400 {
+  color: #94A3B8 !important;
+}
+html:not([data-theme="light"]) .go-hub-drawer .text-gray-500,
+html[data-theme="dark"] .go-hub-drawer .text-gray-500 {
+  color: #64748B !important;
+}
+
+/* ─── LIGHT MODE LUXURY STYLING FOR OFFLINE GO SUITE ─────────────────────── */
+/* 1. Navbar Offline Go Button in Light Mode */
+html[data-theme="light"] .nav-offline-btn {
+  background: rgba(15, 23, 42, 0.05) !important;
+  border: 1px solid rgba(217, 119, 6, 0.4) !important;
+  color: #1E293B !important;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05) !important;
+}
+html[data-theme="light"] .nav-offline-btn:hover {
+  background: rgba(245, 197, 66, 0.18) !important;
+  border-color: #D97706 !important;
+  color: #0F172A !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.22) !important;
+}
+html[data-theme="light"] .nav-offline-icon {
+  color: #D97706 !important;
+}
+
+/* 2. Ambient Network Status Bar in Light Mode */
+html[data-theme="light"] .network-status-bar.network-offline {
+  background: rgba(254, 243, 199, 0.96) !important;
+  border-bottom: 1.5px solid #D97706 !important;
+  color: #78350F !important;
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.18) !important;
+}
+html[data-theme="light"] .network-status-bar.network-offline .network-status-text strong {
+  color: #92400E !important;
+}
+html[data-theme="light"] .network-status-bar.network-online {
+  background: rgba(209, 250, 229, 0.96) !important;
+  border-bottom: 1.5px solid #059669 !important;
+  color: #065F46 !important;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.18) !important;
+}
+html[data-theme="light"] .network-status-btn {
+  background: #D97706 !important;
+  color: #FFFFFF !important;
+}
+
+/* 3. ExploreDesh Go Hub Drawer & Components in Light Mode */
+html[data-theme="light"] .go-hub-drawer {
+  background: #FFFFFF !important;
+  border-left: 1px solid rgba(229, 192, 123, 0.45) !important;
+  box-shadow: -8px 0 36px rgba(15, 23, 42, 0.18), -1px 0 0 rgba(229, 192, 123, 0.25) !important;
+  color: #1E293B !important;
+}
+html[data-theme="light"] .go-hub-header {
+  background: #F8FAFC !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+html[data-theme="light"] .go-hub-header h2 {
+  color: #0F172A !important;
+}
+html[data-theme="light"] .go-hub-header p {
+  color: #64748B !important;
+}
+html[data-theme="light"] .go-close-btn {
+  background: #F1F5F9 !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #475569 !important;
+}
+html[data-theme="light"] .go-close-btn:hover {
+  background: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+html[data-theme="light"] .go-connection-indicator {
+  background: #F8FAFC !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  color: #475569 !important;
+}
+html[data-theme="light"] .go-tabs-bar {
+  background: #F1F5F9 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+html[data-theme="light"] .go-tab-btn {
+  color: #64748B !important;
+}
+html[data-theme="light"] .go-tab-btn:hover {
+  color: #0F172A !important;
+  background: rgba(15, 23, 42, 0.05) !important;
+}
+html[data-theme="light"] .go-tab-btn.active {
+  color: #B45309 !important;
+  background: #FFFBEB !important;
+  border-color: #F59E0B !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.15) !important;
+}
+html[data-theme="light"] .go-search-input {
+  background: #F8FAFC !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #0F172A !important;
+}
+html[data-theme="light"] .go-search-input:focus {
+  border-color: #D97706 !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.12) !important;
+}
+html[data-theme="light"] .go-search-wrap .search-icon {
+  color: #94A3B8 !important;
+}
+html[data-theme="light"] .go-guide-card {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+}
+html[data-theme="light"] .go-guide-card:hover {
+  background: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08) !important;
+}
+html[data-theme="light"] .go-guide-thumb {
+  border-color: #E2E8F0 !important;
+}
+html[data-theme="light"] .go-size-tag {
+  background: #F1F5F9 !important;
+  color: #64748B !important;
+}
+html[data-theme="light"] .go-btn-delete {
+  background: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  color: #64748B !important;
+}
+html[data-theme="light"] .go-btn-delete:hover {
+  background: #FEE2E2 !important;
+  border-color: #FCA5A5 !important;
+  color: #DC2626 !important;
+}
+html[data-theme="light"] .go-empty-icon {
+  background: #FEF3C7 !important;
+  color: #D97706 !important;
+}
+html[data-theme="light"] .go-emergency-banner {
+  background: #FFFBEB !important;
+  border: 1px solid #FCD34D !important;
+}
+html[data-theme="light"] .go-emergency-banner h4 {
+  color: #92400E !important;
+}
+html[data-theme="light"] .go-emergency-banner p {
+  color: #B45309 !important;
+}
+html[data-theme="light"] .go-sos-call-card {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+}
+html[data-theme="light"] .go-sos-call-card:hover {
+  background: #FEF2F2 !important;
+  border-color: #FECACA !important;
+}
+html[data-theme="light"] .go-sos-icon-slot {
+  background: #FEF3C7 !important;
+  color: #D97706 !important;
+}
+html[data-theme="light"] .go-accordion {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+}
+html[data-theme="light"] .go-acc-body {
+  border-top: 1px solid #F1F5F9 !important;
+}
+html[data-theme="light"] .go-check-list {
+  color: #475569 !important;
+}
+html[data-theme="light"] .go-storage-card,
+html[data-theme="light"] .go-install-card,
+html[data-theme="light"] .go-clear-box {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+}
+html[data-theme="light"] .go-progress-track {
+  background: #F1F5F9 !important;
+}
+
+/* 4. Pocket Cheat Sheet Modal in Light Mode */
+html[data-theme="light"] .pocket-modal-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(229, 192, 123, 0.5) !important;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25) !important;
+  color: #1E293B !important;
+}
+html[data-theme="light"] .pocket-modal-header {
+  background: #F8FAFC !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+html[data-theme="light"] .pocket-print-btn,
+html[data-theme="light"] .pocket-close-btn {
+  background: #F1F5F9 !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #334155 !important;
+}
+html[data-theme="light"] .pocket-print-btn:hover,
+html[data-theme="light"] .pocket-close-btn:hover {
+  background: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+html[data-theme="light"] .cheat-section {
+  background: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+}
+html[data-theme="light"] .cheat-section-title {
+  color: #B45309 !important;
+}
+html[data-theme="light"] .cheat-place-row {
+  border-bottom-color: #E2E8F0 !important;
+}
+html[data-theme="light"] .cheat-sos-btn {
+  background: #FEF2F2 !important;
+  border-color: #FECACA !important;
+  color: #DC2626 !important;
+}
+html[data-theme="light"] .cheat-sos-btn:hover {
+  background: #FEE2E2 !important;
+  color: #991B1B !important;
+}
+
+/* 5. Direct Light Mode Text Inversion */
+html[data-theme="light"] .go-hub-drawer .text-white,
+html[data-theme="light"] .pocket-modal-card .text-white {
+  color: #0F172A !important;
+}
+html[data-theme="light"] .go-hub-drawer .text-gray-400,
+html[data-theme="light"] .pocket-modal-card .text-gray-400 {
+  color: #64748B !important;
+}
+html[data-theme="light"] .go-hub-drawer .text-gray-500,
+html[data-theme="light"] .pocket-modal-card .text-gray-500 {
+  color: #64748B !important;
+}
+html[data-theme="light"] .dest-pocket-card-btn {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  color: #FFFFFF !important;
 }

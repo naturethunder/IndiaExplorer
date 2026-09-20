@@ -36,9 +36,10 @@ const MIME = {
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
+  '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
-const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/i;
+const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript|manifest\+json))/i;
 
 // In-memory cache for compressed static payloads: Map<key, { mtimeMs, buffer }>
 const gzipCache = new Map();
@@ -118,8 +119,11 @@ const server = http.createServer((req, res) => {
 
     // Determine cache control: dev server always revalidates code & data immediately
     let cacheControl = 'public, max-age=86400, stale-while-revalidate=3600';
-    if (ext === '.html' || ext === '.json' || ext === '.js' || ext === '.css') {
+    if (ext === '.html' || ext === '.json' || ext === '.js' || ext === '.css' || ext === '.webmanifest') {
       cacheControl = 'no-cache, must-revalidate';
+    }
+    if (urlPath === '/sw.js' || cleanPath === '/sw.js') {
+      cacheControl = 'no-cache, no-store, must-revalidate';
     }
 
     const headers = {
@@ -127,6 +131,7 @@ const server = http.createServer((req, res) => {
       'ETag': etag,
       'Cache-Control': cacheControl,
       'Access-Control-Allow-Origin': '*',
+      'Service-Worker-Allowed': '/',
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'SAMEORIGIN',
       'Referrer-Policy': 'strict-origin-when-cross-origin',

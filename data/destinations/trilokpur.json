@@ -9,7 +9,8 @@
   "tagline": "Ancient Sacred Temple & Historic Architecture in Himachal Pradesh",
   "heroImage": {
     "src": "https://images.pexels.com/photos/38992913/pexels-photo-38992913.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-    "alt": "Maa Bala Sundari Temple, Trilokpur, Himachal Pradesh"
+    "alt": "Maa Bala Sundari Temple, Trilokpur, Himachal Pradesh",
+    "title": "Maa Bala Sundari Temple Complex — Trilokpur"
   },
   "overview": {
     "short": "Trilokpur (Hindi: त्रिलोकपुर) is a Hindu temple site in Himachal Pradesh, India.",
@@ -222,9 +223,24 @@
         "alt": "Kala Amb"
       },
       "photos": [
-        "https://images.pexels.com/photos/38771350/pexels-photo-38771350.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/32464426/pexels-photo-32464426.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/38549327/pexels-photo-38549327.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/38771350/pexels-photo-38771350.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Kala Amb Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Kala Amb, Himachal Pradesh",
+          "caption": "Kala Amb landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/32464426/pexels-photo-32464426.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Kala Amb Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Kala Amb, Himachal Pradesh",
+          "caption": "Kala Amb landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/38549327/pexels-photo-38549327.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Kala Amb Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Kala Amb, Himachal Pradesh",
+          "caption": "Kala Amb landmark view in Himachal Pradesh"
+        }
       ],
       "travelTime": "10–15 mins drive from Trilokpur"
     },
@@ -242,9 +258,24 @@
         "alt": "Suketi"
       },
       "photos": [
-        "https://images.pexels.com/photos/37763603/pexels-photo-37763603.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/18981052/pexels-photo-18981052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/31756506/pexels-photo-31756506.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/37763603/pexels-photo-37763603.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Suketi Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Suketi, Himachal Pradesh",
+          "caption": "Suketi landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/18981052/pexels-photo-18981052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Suketi Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Suketi, Himachal Pradesh",
+          "caption": "Suketi landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/31756506/pexels-photo-31756506.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Suketi Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Suketi, Himachal Pradesh",
+          "caption": "Suketi landmark view in Himachal Pradesh"
+        }
       ],
       "travelTime": "15–25 mins drive from Trilokpur"
     },
@@ -262,9 +293,24 @@
         "alt": "Sangrani"
       },
       "photos": [
-        "https://images.pexels.com/photos/35526187/pexels-photo-35526187.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/19553614/pexels-photo-19553614.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/27131966/pexels-photo-27131966.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/35526187/pexels-photo-35526187.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Sangrani Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Sangrani, Himachal Pradesh",
+          "caption": "Sangrani landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/19553614/pexels-photo-19553614.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Sangrani Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Sangrani, Himachal Pradesh",
+          "caption": "Sangrani landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/27131966/pexels-photo-27131966.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Sangrani Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Sangrani, Himachal Pradesh",
+          "caption": "Sangrani landmark view in Himachal Pradesh"
+        }
       ],
       "travelTime": "15–25 mins drive from Trilokpur"
     },
@@ -282,9 +328,24 @@
         "alt": "Roranwali"
       },
       "photos": [
-        "https://images.pexels.com/photos/4781122/pexels-photo-4781122.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/26184221/pexels-photo-26184221.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/26184209/pexels-photo-26184209.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/4781122/pexels-photo-4781122.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Roranwali Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Roranwali, Himachal Pradesh",
+          "caption": "Roranwali landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/26184221/pexels-photo-26184221.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Roranwali Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Roranwali, Himachal Pradesh",
+          "caption": "Roranwali landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/26184209/pexels-photo-26184209.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Roranwali Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Roranwali, Himachal Pradesh",
+          "caption": "Roranwali landmark view in Himachal Pradesh"
+        }
       ],
       "travelTime": "15–25 mins drive from Trilokpur"
     },
@@ -302,9 +363,24 @@
         "alt": "Nahan"
       },
       "photos": [
-        "https://images.pexels.com/photos/35371189/pexels-photo-35371189.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/66494/pexels-photo-66494.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/805448/pexels-photo-805448.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/35371189/pexels-photo-35371189.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Nahan Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Nahan, Himachal Pradesh",
+          "caption": "Nahan landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/66494/pexels-photo-66494.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Nahan Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Nahan, Himachal Pradesh",
+          "caption": "Nahan landmark view in Himachal Pradesh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/805448/pexels-photo-805448.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Nahan Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Nahan, Himachal Pradesh",
+          "caption": "Nahan landmark view in Himachal Pradesh"
+        }
       ],
       "travelTime": "25–35 mins drive from Trilokpur"
     }
@@ -479,9 +555,9 @@
     },
     {
       "src": "https://images.pexels.com/photos/35131050/pexels-photo-35131050.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-      "alt": "Devotional Pilgrim Courtyard & Bell Tower — Trilokpur, Himachal Pradesh",
-      "title": "Devotional Pilgrim Courtyard & Bell Tower — Trilokpur",
-      "caption": "Spacious pilgrimage grounds welcoming thousands of devotees during Navratri melas."
+      "alt": "Devotional Temple Courtyard & Bell Tower — Trilokpur, Himachal Pradesh",
+      "title": "Devotional Temple Courtyard & Bell Tower — Trilokpur, Himachal Pradesh",
+      "caption": "Ornate prayer pavilions and sacred courtyard at the base of the Shivalik hills."
     },
     {
       "src": "https://images.pexels.com/photos/32261679/pexels-photo-32261679.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",

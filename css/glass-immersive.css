@@ -1892,6 +1892,62 @@ body.glass-immersive section.bg-gray-100 {
   border-bottom-color: rgba(255, 255, 255, 0.08) !important;
 }
 
+/* ─── Monthly Highlights 3-Zone Header Bar ─── */
+body.glass-immersive .monthly-header-bar {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  body.glass-immersive .monthly-header-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem 1.5rem !important;
+  }
+
+  body.glass-immersive .monthly-header-left {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    text-align: left !important;
+  }
+
+  body.glass-immersive .monthly-header-center {
+    flex-shrink: 0 !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  body.glass-immersive .monthly-header-center .calligraphy-kicker {
+    margin-bottom: 0 !important;
+    font-size: clamp(1.25rem, 1.9vw, 1.95rem) !important;
+  }
+
+  body.glass-immersive .monthly-header-right {
+    flex: 1 1 0% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body.glass-immersive .monthly-header-center {
+    order: -1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  body.glass-immersive .monthly-header-center .calligraphy-kicker {
+    margin-bottom: 0 !important;
+  }
+}
+
 /* ═══════════════════════════════════════════════════════════════
    MONTH CAROUSEL BADGE — replace emoji 🌟 styling
    ═══════════════════════════════════════════════════════════════ */

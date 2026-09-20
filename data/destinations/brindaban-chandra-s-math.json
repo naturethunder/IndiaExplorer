@@ -282,7 +282,12 @@
       },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/29/Temple_renovation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/37/Birbhum_Pilgrimage-Bahira_Kaalima%2C_Maa_Nimbabasini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        {
+          "src": "https://images.pexels.com/photos/30145177/pexels-photo-30145177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1920",
+          "title": "Beharia, Nadia Scenic Vista 2",
+          "alt": "Beharia, Nadia near brindaban-chandra-s-math, West Bengal — Scenic landscape and authentic regional beauty",
+          "caption": "Tranquil natural surroundings and heritage vistas near Beharia, Nadia"
+        },
         "https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       ],
       "travelTime": "10–15 mins drive from Brindaban Chandra's Math"

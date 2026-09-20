@@ -9,7 +9,8 @@
   "tagline": "Ancient Buddhist Gompa & Sacred Heritage in Ladakh",
   "heroImage": {
     "src": "https://images.pexels.com/photos/38332156/pexels-photo-38332156.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-    "alt": "Hemis Monastery, Ladakh"
+    "alt": "Hemis Monastery, Ladakh",
+    "title": "Hemis Gompa Courtyard & Drukpa Sanctuaries — Ladakh"
   },
   "overview": {
     "short": "Hemis Monastery is a Himalayan Buddhist monastery (gompa) of the Drukpa Lineage, in Hemis on the bank of the Indus River, Ladakh, India.",
@@ -222,9 +223,24 @@
         "alt": "Hemis"
       },
       "photos": [
-        "https://images.pexels.com/photos/38416853/pexels-photo-38416853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/37835729/pexels-photo-37835729.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/17033868/pexels-photo-17033868.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/38416853/pexels-photo-38416853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Hemis Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Hemis, Ladakh",
+          "caption": "Hemis landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/37835729/pexels-photo-37835729.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Hemis Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Hemis, Ladakh",
+          "caption": "Hemis landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/17033868/pexels-photo-17033868.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Hemis Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Hemis, Ladakh",
+          "caption": "Hemis landmark view in Ladakh"
+        }
       ],
       "travelTime": "Under 5 mins walk in Town Centre"
     },
@@ -242,9 +258,24 @@
         "alt": "Changa, Ladakh"
       },
       "photos": [
-        "https://images.pexels.com/photos/5352248/pexels-photo-5352248.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/31029370/pexels-photo-31029370.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/33866714/pexels-photo-33866714.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/5352248/pexels-photo-5352248.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Changa, Ladakh Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Changa, Ladakh, Ladakh",
+          "caption": "Changa, Ladakh landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/31029370/pexels-photo-31029370.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Changa, Ladakh Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Changa, Ladakh, Ladakh",
+          "caption": "Changa, Ladakh landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/33866714/pexels-photo-33866714.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Changa, Ladakh Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Changa, Ladakh, Ladakh",
+          "caption": "Changa, Ladakh landmark view in Ladakh"
+        }
       ],
       "travelTime": "10–15 mins drive from Hemis Monastery"
     },
@@ -262,9 +293,24 @@
         "alt": "Chuchot Shama"
       },
       "photos": [
-        "https://images.pexels.com/photos/17033865/pexels-photo-17033865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/38433310/pexels-photo-38433310.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/28748655/pexels-photo-28748655.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/17033865/pexels-photo-17033865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Chuchot Shama Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Chuchot Shama, Ladakh",
+          "caption": "Chuchot Shama landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/38433310/pexels-photo-38433310.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Chuchot Shama Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Chuchot Shama, Ladakh",
+          "caption": "Chuchot Shama landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/28748655/pexels-photo-28748655.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Chuchot Shama Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Chuchot Shama, Ladakh",
+          "caption": "Chuchot Shama landmark view in Ladakh"
+        }
       ],
       "travelTime": "15–25 mins drive from Hemis Monastery"
     },
@@ -282,9 +328,24 @@
         "alt": "Karu, Ladakh"
       },
       "photos": [
-        "https://images.pexels.com/photos/38992945/pexels-photo-38992945.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/37312724/pexels-photo-37312724.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/38639204/pexels-photo-38639204.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/38992945/pexels-photo-38992945.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Karu, Ladakh Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Karu, Ladakh, Ladakh",
+          "caption": "Karu, Ladakh landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/37312724/pexels-photo-37312724.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Karu, Ladakh Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Karu, Ladakh, Ladakh",
+          "caption": "Karu, Ladakh landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/38639204/pexels-photo-38639204.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Karu, Ladakh Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Karu, Ladakh, Ladakh",
+          "caption": "Karu, Ladakh landmark view in Ladakh"
+        }
       ],
       "travelTime": "25–35 mins drive from Hemis Monastery"
     },
@@ -302,9 +363,24 @@
         "alt": "Stakna"
       },
       "photos": [
-        "https://images.pexels.com/photos/39524576/pexels-photo-39524576.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/7639553/pexels-photo-7639553.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-        "https://images.pexels.com/photos/9653560/pexels-photo-9653560.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920"
+        {
+          "src": "https://images.pexels.com/photos/39524576/pexels-photo-39524576.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Stakna Heritage Landmark 1",
+          "alt": "Historic architecture and scenic surroundings of Stakna, Ladakh",
+          "caption": "Stakna landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/7639553/pexels-photo-7639553.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Stakna Heritage Landmark 2",
+          "alt": "Historic architecture and scenic surroundings of Stakna, Ladakh",
+          "caption": "Stakna landmark view in Ladakh"
+        },
+        {
+          "src": "https://images.pexels.com/photos/9653560/pexels-photo-9653560.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
+          "title": "Stakna Heritage Landmark 3",
+          "alt": "Historic architecture and scenic surroundings of Stakna, Ladakh",
+          "caption": "Stakna landmark view in Ladakh"
+        }
       ],
       "travelTime": "25–35 mins drive from Hemis Monastery"
     }

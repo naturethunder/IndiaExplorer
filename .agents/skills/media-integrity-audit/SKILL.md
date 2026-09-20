@@ -19,7 +19,7 @@ This skill audits ExploreDesh's media catalog across all 2,393 destinations to e
 ## Automated Execution Commands
 
 ### 1. Repository-Wide Integrity Audit
-Audits all 2,393 destination JSON files for gallery length, hero synchronization, place photos, internal duplicates, and Taj Mahal cross-destination contamination:
+Audits all 2,393 destination JSON files for gallery length, hero synchronization, place photos, internal duplicates, and cross-destination contamination:
 
 ```bash
 node scripts/final-repository-audit.js
@@ -41,7 +41,13 @@ node scripts/images/cross-destination-audit.js
 
 ---
 
-## 5 Strict Media Invariants
+## 6 Strict Media Invariants
+
+### 0. Rule 0 — Strict Photographic Truth & Zero Mislabeling Guard
+- **Photographic Truth**: Never accept fuzzy search results from stock engines depicting an unrelated monument (e.g. Kumbhalgarh for Maharashtra forts, Badami for Uttarakhand temples, or foreign castles/churches).
+- **Metadata Mismatch Matrix**: Strictly enforce the Mismatch Rules in `.agents/rules/destination-strict-rules.md` Rule 0 before assigning any stock photos.
+- **Monument Ground-Truth**: For specific temples, churches, shrines, and forts, images must portray the **actual, authentic structure** from verified ground-truth archives.
+- **Honest Regional Landscape Titles**: High-definition Pexels/Unsplash photos may be used for natural features only when honestly described as regional topography.
 
 ### 1. Rule 1 — Hero & Gallery Parity (5 Unique HD Images)
 - **Count**: Exactly 5 unique HD image URLs in `gallery[]` array.

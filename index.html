@@ -11,13 +11,13 @@
     content="India travel, travel guide, tourist destinations India, hill stations, beaches, heritage spots, trip planner" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta name="theme-color" content="#080A0F" />
+  <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('exploredesh_theme');
-        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
         var meta = document.querySelector('meta[name="theme-color"]');
@@ -28,6 +28,11 @@
   <meta name="google-site-verification" content="HqAoAKbe2yBCMPODIFdVDp2x07-FP8hOMRsaaLjtokc" />
   <link rel="canonical" href="https://exploredesh.com/" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ExploreDesh Go" />
+  <link rel="apple-touch-icon" href="images/pwa-icon-192.png" />
   <!-- CDN & Resource Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,9 +50,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Jost:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/styles.css?v=20260921_1" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20260921_1" />
   <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"
@@ -251,9 +256,9 @@
     <!-- ═══════════════ BEST IN THIS MONTH (Upper side of Travel This Season) ═══════════════ -->
     <section class="py-14 bg-gray-50 border-t border-b border-gray-200" id="monthly-highlights-section">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 reveal">
-          <div>
-            <span class="calligraphy-kicker text-sm block mb-1">✦ Wanderlust of the Season ✦</span>
+        <div class="monthly-header-bar mb-6 reveal">
+          <!-- Left: Best in <Month> & Subtitle -->
+          <div class="monthly-header-left">
             <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1 flex items-center gap-1.5">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -264,15 +269,24 @@
             <h2 class="section-title">Best in <span id="railMonthName" class="text-primary"></span></h2>
             <p class="section-subtitle" id="railMonthSub">Top recommended places to travel right now</p>
           </div>
-          <a id="railMonthAll" href="destinations.html"
-            class="btn btn-outline text-sm self-start sm:self-auto inline-flex items-center gap-2">
-            <span>View All for <span id="railMonthBtnName"></span></span>
-            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </a>
+
+          <!-- Center: ✦ Wanderlust of the Season ✦ -->
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ Wanderlust of the Season ✦</span>
+          </div>
+
+          <!-- Right: View All Button -->
+          <div class="monthly-header-right">
+            <a id="railMonthAll" href="destinations.html"
+              class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>View All for <span id="railMonthBtnName"></span></span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Month selector pills (Jan–Dec) -->
@@ -291,10 +305,15 @@
     <!-- ═══════════════ TRAVEL THIS SEASON ═══════════════ -->
     <section class="py-14">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="mb-8 reveal">
-          <span class="calligraphy-kicker text-sm block mb-1">✦ Seasonal Escapes ✦</span>
-          <h2 class="section-title">Travel This Season</h2>
-          <p class="section-subtitle">Where to go, whatever the weather</p>
+        <div class="monthly-header-bar mb-8 reveal">
+          <div class="monthly-header-left">
+            <h2 class="section-title text-2xl sm:text-3xl">Travel This Season</h2>
+            <p class="section-subtitle text-xs sm:text-sm mt-1">Where to go, whatever the weather</p>
+          </div>
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ Seasonal Escapes ✦</span>
+          </div>
+          <div class="monthly-header-right"></div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="season-grid">
           <!-- Rendered by JS -->
@@ -305,20 +324,24 @@
     <!-- ═══════════════ FEATURED: POPULAR DESTINATIONS ═══════════════ -->
     <section class="py-14 bg-gray-50">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="flex items-end justify-between mb-8 reveal">
-          <div>
-            <span class="calligraphy-kicker text-sm block mb-1">✦ The Crown Jewels ✦</span>
-            <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-1">Most Visited</p>
-            <h2 class="section-title">Popular Destinations</h2>
+        <div class="monthly-header-bar mb-8 reveal">
+          <div class="monthly-header-left">
+            <p class="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-1">Most Visited</p>
+            <h2 class="section-title text-2xl sm:text-3xl">Popular Destinations</h2>
           </div>
-          <a href="destinations.html" class="btn btn-outline text-sm hidden sm:flex">
-            See All Destinations
-            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </a>
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ The Crown Jewels ✦</span>
+          </div>
+          <div class="monthly-header-right">
+            <a href="destinations.html" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>See All Destinations</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="popular-grid">
           <!-- Rendered by JS -->
@@ -329,10 +352,15 @@
     <!-- ═══════════════ BROWSE BY BUDGET ═══════════════ -->
     <section class="py-14">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 reveal">
-          <span class="calligraphy-kicker block mb-1">✦ Tailored For Every Journey ✦</span>
-          <h2 class="section-title">Browse by Budget</h2>
-          <p class="section-subtitle">From backpacker stays to palace suites — every budget welcome</p>
+        <div class="monthly-header-bar mb-8 reveal">
+          <div class="monthly-header-left">
+            <h2 class="section-title text-2xl sm:text-3xl">Browse by Budget</h2>
+            <p class="section-subtitle text-xs sm:text-sm mt-1">From backpacker stays to palace suites — every budget welcome</p>
+          </div>
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ Tailored For Every Journey ✦</span>
+          </div>
+          <div class="monthly-header-right"></div>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" id="budget-grid">
           <!-- Rendered by JS -->
@@ -343,20 +371,24 @@
     <!-- ═══════════════ FEATURED: HILL STATIONS ═══════════════ -->
     <section class="py-14">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="flex items-end justify-between mb-8 reveal">
-          <div>
-            <span class="calligraphy-kicker text-sm block mb-1">✦ Sanctuaries in the Clouds ✦</span>
-            <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-1">Escape to the Hills</p>
-            <h2 class="section-title">Best Hill Stations</h2>
+        <div class="monthly-header-bar mb-8 reveal">
+          <div class="monthly-header-left">
+            <p class="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-1">Escape to the Hills</p>
+            <h2 class="section-title text-2xl sm:text-3xl">Best Hill Stations</h2>
           </div>
-          <a href="destinations.html?type=hill_station" class="btn btn-outline text-sm hidden sm:flex">
-            See All Hills
-            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </a>
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ Sanctuaries in the Clouds ✦</span>
+          </div>
+          <div class="monthly-header-right">
+            <a href="destinations.html?type=hill_station" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>See All Hills</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="hills-grid">
           <!-- Rendered by JS -->
@@ -367,10 +399,15 @@
     <!-- ═══════════════ EXPLORE MORE ═══════════════ -->
     <section class="py-14 bg-gray-50">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 reveal">
-          <span class="calligraphy-kicker block mb-1">✦ Infinite Wonders of Bharat ✦</span>
-          <h2 class="section-title">Explore More</h2>
-          <p class="section-subtitle">Beaches, Heritage, Wildlife and more across India</p>
+        <div class="monthly-header-bar mb-8 reveal">
+          <div class="monthly-header-left">
+            <h2 class="section-title text-2xl sm:text-3xl">Explore More</h2>
+            <p class="section-subtitle text-xs sm:text-sm mt-1">Beaches, Heritage, Wildlife and more across India</p>
+          </div>
+          <div class="monthly-header-center">
+            <span class="calligraphy-kicker">✦ Infinite Wonders of Bharat ✦</span>
+          </div>
+          <div class="monthly-header-right"></div>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4" id="explore-grid">
           <!-- Rendered by JS -->
