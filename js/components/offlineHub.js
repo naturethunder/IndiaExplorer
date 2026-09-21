@@ -220,6 +220,11 @@ function injectHubMarkup() {
   modal.onclick = (e) => {
     if (e.target === modal) closeOfflineHub();
   };
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeOfflineHub();
+    }
+  });
 
   const tabs = modal.querySelectorAll('.go-tab-btn');
   tabs.forEach((tab) => {
