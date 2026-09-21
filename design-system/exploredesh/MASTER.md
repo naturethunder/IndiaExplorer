@@ -172,7 +172,3 @@ html[data-theme="light"] body.glass-immersive .mobile-nav a.active {
    - Calligraphy kickers must enforce `white-space: nowrap !important;` with responsive font clamp to prevent orphan trailing `✦` ornament stars.
    - Section link buttons ("View all →") must right-align on mobile with frosted milk glass styling in Light Mode.
    - Fixed mobile navigation must be paired with `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` on body container.
-7. **Zero-Human & Zero-Scraped-Tragedy Media Policy:**
-   - Visual imagery must feature authentic monuments, scenic nature vistas, and architecture exclusively.
-   - Strictly 0 portraits, devotees, pilgrims, selfies, tourist mobs, or human crowds.
-   - Strictly 0 scraped news accidents, stampedes, fires, or boat disasters in nearby attraction cards. Every place is a legitimate, beautiful tourist landmark.

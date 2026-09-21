@@ -31,7 +31,7 @@ node scripts/audit_all.js
 |---|---|---|---|
 | **1. UI/UX & A11y** | [`/ui-ux-qa-audit`](../ui-ux-qa-audit/SKILL.md) | `node scripts/ui_ux_qa_audit.js` | 7 categories: WCAG AAA contrast, responsive layout (390/768/1440px), touch targets, roving tabindex, Light & Dark mode consistency |
 | **2. Technical SEO** | [`/seo-audit`](../seo-audit/SKILL.md) | `node scripts/seo_audit.js` | Sitemaps (6 XML files, 2,450 URLs, 11,853 images), robots.txt, canonical links, OpenGraph, JSON-LD structured schemas |
-| **3. Media Integrity & Photographic Truth** | [`/media-integrity-audit`](../media-integrity-audit/SKILL.md) | `node scripts/final-repository-audit.js` | 2,393 destinations: Rule 0 photographic truth (0 cross-monument borrowing per `.agents/rules/destination-strict-rules.md`), 5 HD gallery images, hero parity, 3 place photos, zero duplicate URLs, 100% Indian geographic authenticity, zero rate limits |
+| **3. Media Integrity** | [`/media-integrity-audit`](../media-integrity-audit/SKILL.md) | `node scripts/final-repository-audit.js` | 2,393 destinations: 5 HD gallery images, hero parity, 3 place photos, zero duplicate URLs, 100% Indian geographic authenticity (zero foreign stock), zero Wikimedia hotlinks |
 
 ---
 

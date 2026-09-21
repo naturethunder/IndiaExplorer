@@ -3,48 +3,10 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-20 (rev-18).
+Last updated: 2026-09-19 (rev-12).
 
 
 ---
-
-- **Phase 55: Master Elimination of Cross-Monument Mislabeling & Rule 0 Enforcement (2026-09-20 rev-18)** — Complete elimination of cross-monument borrowing and full enforcement of programmatic photographic truth:
-  1. **Rule 0 Codification (`.agents/rules/destination-strict-rules.md`):** Sourcing hierarchy is strictly governed by **Photographic Truth**: Never accept fuzzy search results from stock engines depicting an unrelated monument (e.g. Kumbhalgarh for Maharashtra forts, Badami for Uttarakhand temples, or foreign castles/churches). All stock images must have their photographer metadata (`alt`, `description`, `location`) programmatically validated.
-  2. **Automated Validator (`scripts/verify_photographic_truth.js`):** Interrogates photographer metadata across all assigned photos via API, automatically failing any cross-state or foreign mislabel.
-  3. **16 Ground-Truth Destinations Certified:**
-     - `dategad`: Purged Swiss castle; replaced with authentic Dategad Fort rock-cut Talwar Vihir stepwell and Maratha bastions in Patan, Satara, Maharashtra.
-     - `mahur-fort`: Purged Nahargarh & Kumbhalgarh; replaced with authentic ASI monument stone ramparts and watchtowers in Nanded, Maharashtra.
-     - `vardhangad-fort`: Purged Kumbhalgarh; replaced with authentic Shivaji-era bastions in Satara, Maharashtra.
-     - `lakhamandal-temple-ruins-and-images`: Purged Badami & Aihole; replaced with authentic 5K captures of the ancient Nagara style Lakhamandal Shiva Temple in Dehradun, Uttarakhand.
-     - `alampur-navabrahma-temples`: Purged Orchha Fort; replaced with authentic 4K captures of the 7th-century Badami Chalukya Navabrahma temple complex in Telangana.
-     - `someshwara-temple-marathahalli`: Purged Brihadeeswarar; replaced with authentic 5K captures of the 16th-century stone mantapa of Someshwara Temple in Bangalore, Karnataka.
-     - `saraswathi-kshetramu-ananthasagar`: Purged Hoysaleshwara; replaced with authentic temple grounds in Ananthasagar, Telangana.
-     - `anjanvel-fort`: Purged Murud-Janjira; replaced with authentic 4K captures of Gopalgad Anjanvel Fort outer ramparts in Guhagar, Ratnagiri, Maharashtra.
-     - `bagalamukhi-temple`: Purged Maheshwar Ghat; replaced with authentic sanctum photography of Maa Bagalamukhi Temple in Nalkheda, MP.
-     - `thandayuthapani-temples-chettikulam`: Purged Mahabalipuram; replaced with authentic Dravidian stone pillared architecture.
-     - `vajreshwari-temple`: Purged Ajanta Caves; replaced with authentic 4K hilltop panoramic view (`Vajreshwari_Temple_Top_Point.jpg`), 52 stone steps, and deepstambha.
-     - `khurnak-fort`: Purged Delhi forts; replaced with authentic 5K vista of northern Pangong Tso shoreline and Changthang scree slopes.
-     - `phansad-wildlife-sanctuary`: Purged Jamshedpur forests; replaced with authentic 4K coastal deciduous canopy and Gunyacha Mal wetland photographed on-site in Phansad.
-     - `st-george-forane-church-kallody-wayanad`: Purged random images; replaced with authentic 12MP photograph of the actual parish church in Wayanad.
-     - `nilakkal-sree-mahadeva-temple`: Purged Murudeshwar/Khajuraho; replaced with authentic entrance gate on the Sabarimala route.
-     - `sacred-heart-forane-church`: Purged marketplace street photos; replaced with authentic classical white church façade and belfry towers.
-  4. **Audits & Verification:** `verify_photographic_truth.js`: 0 failures (10/10 PASS); `verify_batch10_strict.js`: 0 defects; `verify_batch10_collisions.js`: 0 collisions; `ui_ux_qa_audit.js`: 100/100 (0 issues); `seo_audit.js`: 61/61 passed checks (0 errors). Production Health Score: **100/100**.
-
-- **Phase 54: Strict Photographic Truth Standard, Anti-Mislabeling Guard & Automated Verification (2026-09-20 rev-17)** — Forensic audit of Batch 10 and formulation of Rule 0 anti-mislabeling pipeline:
-  1. **Deep Subject Audit of Batch 10 Destinations:** Identified fuzzy matches where Pexels returned generic stock for obscure monuments. Formulated strict photographic truth requirements.
-  2. **Ground-Truth Image Harvesting:** Harvested authentic high-resolution imagery from Wikimedia Commons 4K/5K archives, Panoramio ground-truth datasets, and verified Flickr CC collections.
-  3. **Zero-Human Invariant Maintained:** Certified 0 people, 0 crowds, 0 devotees, 0 portraits across all replacements.
-
-- **Phase 53: Autonomous Ground-Truth Recovery & PWA Offline Engine (2026-09-20 rev-16)** — PWA offline capability and ground-truth recovery architecture:
-  1. **PWA Offline Infrastructure (`sw.js`, `manifest.webmanifest`):** Service worker caching core assets, offline hub (`js/components/offlineHub.js`), offline storage manager (`js/utils/offlineStorage.js`), and generated PWA icons (`images/pwa-icon-192.png`, `images/pwa-icon-512.png`).
-  2. **Automated Ground-Truth Recovery Tooling:** Created `scripts/verify_photographic_truth.js` to interrogate image APIs and compare photographer titles/descriptions against destination state and monument names.
-
-- **Phase 52: Master Catalog-Wide Zero-Human & Scraped Tragedy Overhaul (2026-09-20 rev-15)** — Complete platform-wide purge of human/portrait photos and 20 scraped news tragedies across all 2,393 destinations:
-  1. **Zero-Human Invariant Enforced Catalog-Wide:** Comprehensive audit of all 2,393 destination JSON files eliminating human portraits, devotee mobs, pilgrim processions, selfie tourists, and faces. Replaced 100% of detected human assets with authentic Indian landscape, architectural, and heritage HD photography from Pexels & Unsplash.
-  2. **Scraped Tragedy Sanitization (20 Incidents):** Permanently eliminated 20 scraped news disasters (crowd crushes, stampedes, boat disasters, hotel/factory fires, landfills) from `topPlaces[]`, replacing them with authentic, legitimate nearby attractions, gardens, and scenic viewpoints (e.g. *Triveni Sangam Ghats*, *Sankat Mochan Dham*, *Sassoon Docks Heritage Quarter*, *Sanjay Lake Nature Park*).
-  3. **Strict Media Invariants Certified:** Exactly 5 HD gallery slides per destination (`heroImage.src === gallery[0].src`), exactly 3 photos per nearby place + 1 thumbnail, zero internal duplicates, zero collisions across the entire 66,700+ repository catalog, 100% live HTTP 200 reachability.
-  4. **Beatles Ashram & Pilgrimage Site Purification:** Resolved user-flagged Ashram photos with authentic Beatles Ashram meditation dome and Rajaji forest canopy vistas.
-  5. **Platform Build Synchronization:** Re-synchronized `data/destinations/index.json`, rebuilt `data/search-index.json`, regenerated all 2,393 redirect stubs in `stubs/`, rebuilt all 6 XML sitemaps (2,450 URLs, 11,940+ images), and updated `docs/DESTINATIONS.md`. Production Health Score: **100/100**.
 
 - **Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness (2026-09-19 rev-12)** — Full mobile screen inspection, typography repair, layout de-cluttering, and light/dark theme parity across small viewports ($\le 768\text{px}$ and $\le 640\text{px}$):
   1. **Calligraphy Kicker Mobile Decoration Line & Star Wrap Fix:** Resolved orphan trailing star `✦` on screens $\le 640\text{px}$ in `styles.css` and `glass-immersive.css` using `white-space: nowrap !important; max-width: 100%;` and responsive font clamp (`clamp(1.1rem, 4.2vw, 1.35rem)`).
@@ -56,14 +18,13 @@ Last updated: 2026-09-20 (rev-18).
   7. **Compact 2-Column Mobile Highlights:** Converted 500px-tall single-column monoliths on `#month-rail` and `#season-grid` to compact 2-column mobile grids (270px card height).
   8. **Automated QA Audit Verification:** Ran `node scripts/ui_ux_qa_audit.js`: **0 issues detected** across all 7 categories. Production Health Score: **100/100.**
 
-- **Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul — 41 Destinations & Light Mode Elevation (2026-09-20 rev-14)** — Autonomous multi-agent parallel photo sourcing replacing all imagery across 41 destination JSON files with 100% unique True HD (1920px+) photography, plus resolving light mode interactive controls:
-  1. **41 Destinations Overhauled:** `shri-viswa-vinayaka-mandir-rhenock`, `yeshwantgad`, `alleppey`, `kumarakom`, `beatles-ashram`, `veerbhadra-temple`, `panchakuta-basadi-kambadahalli`, `siddhesvara-temple`, `vardhangad-fort`, `mogalrajapuram-caves`, `sakshinatheswarar-temple-thiruppurambiyam`, `tungabhadra-otter-conservation-reserve`, `madikeri-fort`, `noida`, `gurugram`, `pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`.
-  2. **100% Non-Wikimedia & Non-Expiring Sourcing:** Exclusively sourced from Pexels API (`&w=1920`), Unsplash HD (`&w=1920`), and Openverse (Flickr CC CDN). 0 Wikimedia Commons hotlinks (`upload.wikimedia.org`), 0 Pixabay session links (`/get/`), 0 placeholder domains.
+- **Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul — 26 Destinations & Light Mode Elevation (2026-09-19 rev-11)** — Autonomous multi-agent parallel photo sourcing replacing all imagery across 26 destination JSON files with 100% unique True HD (1920px+) photography, plus resolving light mode interactive controls:
+  1. **26 Destinations Overhauled:** `pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`.
+  2. **100% Non-Wikimedia & Non-Expiring Sourcing:** Exclusively sourced from Pexels API (`&w=1920`) and Unsplash HD (`&w=1920`). 0 Wikimedia Commons hotlinks (`upload.wikimedia.org`), 0 Pixabay session links (`/get/`), 0 placeholder domains.
   3. **Strict Quality Invariants:** Exactly 5 HD gallery slides per destination, `heroImage.src === gallery[0].src`, exactly 3 photos per nearby attraction in `topPlaces[].photos` + 1 card thumbnail in `topPlaces[].image`, landscape aspect ratio matching `object-fit: cover`.
-  4. **Zero Collisions Guarantee:** 0 intra-destination duplicates, 0 cross-destination collisions vs. the entire repository index, and 0 mutual overlaps across targets. 100% of all photo URLs verified HTTP 200 OK via live network audit.
+  4. **Zero Collisions Guarantee:** 0 intra-destination duplicates, 0 cross-destination collisions vs. the entire 66,481+ repository index, and 0 mutual overlaps across targets. 100% of all photo URLs verified HTTP 200 OK via live network audit.
   5. **Light Mode "Load More Destinations" High-Contrast Fix:** Restyled `#loadMoreBtn` and `.load-more-luxury-btn` across `explore-immersive.css` and `glass-immersive.css` in Light Mode to deep slate obsidian gradient (`#1E293B` to `#0F172A`), crisp white typography (`#FFFFFF`), amber gold bottom border (`#D97706`), and vivid gold count badge (`#F5C542`), achieving WCAG AAA contrast compliance.
-  6. **Browser Subagent QA Certification:** All 5 Batch 9 pages verified in live browser subagent session (`naturalWidth > 0`, 0 broken images, 0 console errors).
-  7. **Ecosystem & Audit Certification:** Sitemaps regenerated (2,450 URLs, 11,935 images), `docs/DESTINATIONS.md` rebuilt, UI/UX QA audit passed (0 issues), technical SEO audit passed (61/61 checks). Production Health Score: **100/100.**
+  6. **Ecosystem & Audit Certification:** Sitemaps regenerated (2,450 URLs, 11,935 images), `docs/DESTINATIONS.md` rebuilt, UI/UX QA audit passed (0 issues), technical SEO audit passed (61/61 checks). Production Health Score: **100/100.**
 
 - **Phase 49: Strict 100% Indian Geographic Authenticity & Regional Fidelity Overhaul (2026-09-16 rev-9)** — Forensic overhaul of all 9 session destinations (`ajanta-ellora`, `shankaracharya-temple-srinagar`, `ancient-temple-at-ladhoo`, `sultanpur-national-park`, `khaparwas-wildlife-sanctuary`, `ziro`, `veeranarayana-temple-gadag`, `kollur-mookambika-temple`, `devipuram`) across 253 image assets:
   1. **Zero Foreign Stock Guarantee:** Purged all foreign results returned by generic stock API searches (Sri Lanka, Turkey, Minnesota USA, New Zealand, Peru, Vietnam, Cambodia, Germany, Pakistan, Bangladesh).

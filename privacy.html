@@ -9,13 +9,13 @@
     content="ExploreDesh Privacy Policy — what information we collect, how we use it, and the third-party services (weather, maps, photos) we rely on." />
   <link rel="canonical" href="https://exploredesh.com/privacy.html" />
   <meta name="robots" content="noindex, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#FAF9F6" />
+  <meta name="theme-color" content="#080A0F" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('exploredesh_theme');
-        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
         var meta = document.querySelector('meta[name="theme-color"]');

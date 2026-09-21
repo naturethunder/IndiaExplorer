@@ -3,17 +3,11 @@ name: destination-image-fixer
 description: "Autonomous agent skill for auditing, retrieving, and repairing destination hero images, gallery images, and place images across IndiaExplorer destination JSON files. Enforces 5 HD unique hero/gallery images, 3 unique place photos per place, and 0 duplicate URLs across the entire file AND across the entire 66k+ URL repository index (cross-destination zero-collision guarantee)."
 ---
 
-# Destination Image Fixer — Agent Skill (Phase 55 Updated)
+# Destination Image Fixer — Agent Skill (Phase 38 Updated)
 
 This skill defines the autonomous image acquisition and quality enforcement workflow for ExploreDesh destination dataset.
 
 ## Core Rules
-
-0. **Rule 0 — Strict Photographic Truth & Zero Mislabeling Guard (CRITICAL — NEVER VIOLATE)**
-   - Every image must be **photographically authentic and truthful** to the destination.
-   - **Zero Mislabeled Stock**: Never accept fuzzy search results from stock APIs (Pexels, Unsplash, Pixabay) that depict an unrelated monument or location (e.g. Kumbhalgarh for Maharashtra forts, Badami for Uttarakhand, foreign castles/churches). All stock images must have their photographer metadata (`alt`, `description`, `location`) verified against the **Mismatch Rules Matrix** in `.agents/rules/destination-strict-rules.md`.
-   - **Monument & Shrine Ground-Truth Priority**: For specific temples, churches, shrines, and historical forts, the hero and monument gallery slides must portray the **actual, authentic structure** from verified ground-truth repositories (Wikimedia Commons HD, Panoramio archives, Flickr CC).
-   - **Honest Regional Landscape Titles**: High-definition Pexels/Unsplash photos may be used for natural features (rivers, hills, forests), but must honestly describe the feature and never claim to be the monument itself.
 
 1. **Rule 1 — Hero & Gallery (5 Unique HD Images)**
    - Exactly 5 unique HD image URLs in `gallery[]` array.
@@ -85,12 +79,12 @@ When searching for images for a place `<PlaceName>` in destination `<Destination
 6. Automatically verify that selected images showcase scenery/architecture rather than people or unrelated stock subjects.
 7. After sourcing, run `node scripts/verify_batch2.js` to confirm zero cross-destination URL collisions.
 
-## Automated Tools (Phase 55)
+## Automated Tools (Phase 38)
 
 | Script | Purpose |
 |--------|---------|
 | `scripts/solve_all_batch2_zero_collisions.js` | Multi-page API fetcher: replaces bad/random images with zero-collision verified HD URLs across a target slug list |
-| `scripts/verify_batch2.js` | Strict 66k-URL repo-wide collision audit for destinations |
+| `scripts/verify_batch2.js` | Strict 66k-URL repo-wide collision audit for 10 Batch 2 destinations |
 | `scripts/audit_batch2_issues.js` | Pre-audit: flags portrait/foreign/low-quality/banned-pattern images |
 | `scripts/fix_cross_batch2_dups.js` | Resolves cross-destination URL collisions between batch targets |
 | `scripts/purge_and_fix_all_random_images.js` | Universal random-image purge engine (configurable slug list, full BANNED_PATTERNS filtering) |

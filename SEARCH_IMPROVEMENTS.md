@@ -145,15 +145,3 @@ Only `nonStopWords` are used for direct-destination lookup and fuzzy matching.
 1. **Khajuraho Batch Index Synchronization:** All 11 Khajuraho batch destinations (`ashokdham-temple`, `bhadrachalam-temple`, `pataleshwar-mandir`, `mangla-gauri-temple`, `maa-tara-chandi-temple`, `vajrapoha-falls`, `kottankulangara-devi-temple-chavara`, `mudikondan-kothandaramar-temple`, `vadakkan-koyikkal-devi-temple-puthiyavila`, `sacred-heart-forane-church`, `khajuraho`) are fully indexed in `data/search-index.json` with place names, hotel names, tier data, and searchable haystack text.
 2. **Platform-Wide Session Audit (`scripts/audit_session_hd_images.js`):** All 47 session-updated destinations audited — 1,259 / 1,259 URLs live HTTP 200, 0 dead, 0 non-HD, 0 collisions.
 3. **UI/UX Pro Max QA (`scripts/ui_ux_qa_audit.js`):** Full automated audit across 8 HTML files and 4 CSS stylesheets. **0 issues** after accessibility hardening (focus rings, touch targets, `prefers-reduced-motion` compliance).
-
----
-
-## Phase 52 Update — Catalog-Wide Search Index Sanitization & Authentic Landmark Tokens (2026-09-20)
-
-### Problem Addressed
-Historical Wikipedia scraping had inadvertently indexed tragic incident names (such as "2025 Prayag Maha Kumbh Mela crowd crush", "2019 Delhi factory fire", "Ghazipur landfill") into `topPlaces` searchable arrays. Users typing search queries encountered non-tourist tokens.
-
-### Enhancements & Solutions
-1. **Scraped Tragedy Sanitization:** Purged all 20 incident-based place names catalog-wide, replacing them with authentic, legitimate tourist attractions (e.g. *Triveni Sangam Ghats & Boating Point*, *Sankat Mochan Dham (108-Foot Hanuman Statue)*, *Sassoon Docks Heritage Quarter*, *Sanjay Lake Nature Park*).
-2. **Search Index Rebuilt (`data/search-index.json`):** Regenerated 2,393 searchable JSON objects with clean attraction keywords, certified HD hero imagery, and updated tier metadata.
-3. **Relevance Guarantee:** Validated that space-agnostic matching for newly cleansed places correctly surfaces the corresponding destination hubs without legacy disaster keyword matches.

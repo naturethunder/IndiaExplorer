@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-20 rev-18** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-19 rev-12** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,96 +12,6 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro Max**
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
-
-## Addendum — Phase 56: Multi-Worker Autonomous Parallel Engine & UI/UX Contrast Hardening (2026-09-21 rev-19)
-
-Autonomous parallel media repair across high-priority targets and WCAG AAA UI/UX contrast hardening:
-
-1. **Multi-Worker Autonomous Parallel Engine (`scripts/phase2_worker.js` & `phase2_scanner.js`):**
-   - Built a universal multi-agent parallel repair system with page-offset search isolation (Worker 0: +0, Worker 1: +25, Worker 2: +50, Worker 3: +75) preventing cross-worker API collision.
-   - Deployed shared atomic session state (`session_state.json`) providing instant cross-worker zero-collision URL enforcement against the repository's 65,500+ photo catalog.
-   - Finished all remaining Phase 1 high-priority targets (19 destinations) with 0 errors across 2 simultaneous workers:
-     - `polur-temple-kozhikode`, `portuguese-cemetery`, `poruvazhy-peruviruthy-malanada-temple`, `rangamati-tea-estate-cemetery`, `ravishwarar-temple`, `sri-perungaraiyadi-meenda-ayyanar-temple`, `sri-radha-rani-temple`, `sri-sri-nookambika-ammavari-temple`, `sri-venkatesa-perumal-temple-melathiruppathi-mondipalayam`, `sri-vetrimalai-murugan-temple`, `st-george-forane-church-kallody-wayanad`, `sun-temple`, `tapkeshwar-temple`, `thali-mahadeva-temple-kozhikode`, `thaliyil-mahadeva-temple`, `varinjam-sree-subramanya-swamy-temple`, `vazhappally-maha-siva-temple`, `veerbhadra-temple`, `wagheshwari-temple`.
-   - Verified 100% compliance across all 19 files: 0 Wikimedia URLs, 0 Pixabay session URLs, exactly 5 HD gallery photos, hero & `ogImage` perfectly synchronized, 3 unique photos per nearby place.
-
-2. **UI/UX Light Mode Accessibility & Contrast Remediation:**
-   - **Audit Issue**: "Verified Booking Partners & Direct Links" card titles were hardcoded with utility `text-white` on white cards (`#F8FAFC`), rendering text invisible in light mode. Subtitles were faint `#94A3B8`.
-   - **Fix**: Replaced inline classes in `js/pages/destination.js` with semantic classes (`.budget-partner-card-name`, `.budget-partner-card-desc`, `.budget-actions-note`).
-   - **Styling**: Added high-contrast rules in `css/destination-immersive.css` (`#0F172A` deep bold titles, `#475569` readable subtitles, `#334155` section header, `#64748B` SVG icons), supporting both `html[data-theme="light"]` and `html.theme-light`. Visual browser verification confirmed WCAG AAA compliance.
-
-3. **Global Repository Metadata & Search Rebuild:**
-   - Rebuilt `docs/DESTINATIONS.md` via `scripts/build-destinations-doc.js` across all 2,393 destinations.
-   - Rebuilt `data/search-index.json` via `scripts/repair-search-index.js` (2,393 entries, full schema).
-   - Rebuilt Google-compliant sitemaps via `scripts/build-sitemap.js` (master `sitemap.xml` + 5 sub-sitemaps, 2,450 URLs, 11,923 indexed images).
-   - Rebuilt all 2,393 redirect stubs in `stubs/` via `scripts/build-stubs.js`.
-
-## Addendum — Phase 55: Master Elimination of Cross-Monument Mislabeling & Rule 0 Enforcement (2026-09-20 rev-18)
-
-Complete platform-wide elimination of cross-monument borrowing and mislabeled stock photography, codified under Rule 0:
-
-1. **Rule 0 Codified & Programmatically Enforced (`.agents/rules/destination-strict-rules.md`):**
-   - Sourcing hierarchy is strictly governed by **Photographic Truth**: Never accept fuzzy search results from stock engines depicting an unrelated monument (e.g. Kumbhalgarh for Maharashtra forts, Badami for Uttarakhand temples, or foreign castles/churches).
-   - All stock images must have their photographer metadata (`alt`, `description`, `location`) programmatically validated against the destination's real geography and monument name.
-2. **Automated Truth Validator Built (`scripts/verify_photographic_truth.js`):**
-   - Interrogates photographer metadata across assigned image assets via API.
-   - Automatically fails any cross-state or foreign mislabel.
-3. **16 Ground-Truth Destinations Certified:**
-   - `dategad`: Purged Swiss castle in Stirling; replaced with authentic Dategad Fort rock-cut Talwar Vihir stepwell and Maratha bastions in Patan, Satara, Maharashtra (`Dategad_Fort_Talvar_Vihir.jpg`).
-   - `mahur-fort`: Purged Nahargarh (Jaipur) and Kumbhalgarh (Rajasthan); replaced with authentic ASI monument stone ramparts and watchtowers in Nanded, Maharashtra (`Indien2012_1355_Mahur_Fort.jpg`).
-   - `vardhangad-fort`: Purged Kumbhalgarh; replaced with authentic Shivaji-era bastions in Satara, Maharashtra (`Vardhangad1.jpg`).
-   - `lakhamandal-temple-ruins-and-images`: Purged Badami and Aihole in Karnataka; replaced with authentic 5K captures of the ancient Nagara style Lakhamandal Shiva Temple in Dehradun, Uttarakhand (`Lakhamandal-6.jpg`).
-   - `alampur-navabrahma-temples`: Purged Orchha Fort (MP); replaced with authentic 4K captures of the 7th-century Badami Chalukya Navabrahma temple complex in Telangana (`Entrance,_Navabrahma_temples_site_02.jpg`).
-   - `someshwara-temple-marathahalli`: Purged Brihadeeswarar Temple (Thanjavur); replaced with authentic 5K captures of the 16th-century stone mantapa of Someshwara Temple in Bangalore, Karnataka (`Mantapa_in_Someshwara_temple.JPG`).
-   - `saraswathi-kshetramu-ananthasagar`: Purged Hoysaleshwara Temple (Karnataka); replaced with authentic temple grounds in Ananthasagar, Telangana.
-   - `anjanvel-fort`: Purged Murud-Janjira; replaced with authentic 4K captures of Gopalgad Anjanvel Fort outer ramparts and watchtowers in Guhagar, Ratnagiri, Maharashtra (`Gopalgad_Outer_Wall_East_side.jpg`).
-   - `bagalamukhi-temple`: Purged Maheshwar Ghat; replaced with authentic sanctum photography of Maa Bagalamukhi Temple in Nalkheda, MP.
-   - `thandayuthapani-temples-chettikulam`: Purged Mahabalipuram; replaced with authentic Dravidian stone pillared architecture.
-   - `vajreshwari-temple`: Purged Ajanta Caves; replaced with authentic 4K hilltop panoramic view (`Vajreshwari_Temple_Top_Point.jpg`), 52 stone steps, and deepstambha.
-   - `khurnak-fort`: Purged Delhi forts; replaced with authentic 5K vista of northern Pangong Tso shoreline and Changthang scree slopes.
-   - `phansad-wildlife-sanctuary`: Purged Jamshedpur forests; replaced with authentic 4K coastal deciduous canopy and Gunyacha Mal wetland photographed on-site in Phansad.
-   - `st-george-forane-church-kallody-wayanad`: Purged random images; replaced with authentic 12MP photograph of the actual parish church in Wayanad (`St._George_Forane_Church,_Kallody.jpg`).
-   - `nilakkal-sree-mahadeva-temple`: Purged Murudeshwar/Khajuraho; replaced with authentic entrance gate on the Sabarimala route.
-   - `sacred-heart-forane-church`: Purged town marketplace street photos; replaced with authentic classical white church façade and belfry towers.
-4. **Automated Audits & Verification:**
-   - `scripts/verify_photographic_truth.js`: 0 mislabeled failures (10/10 PASS).
-   - `scripts/verify_batch10_strict.js`: 0 defects.
-   - `scripts/verify_batch10_collisions.js`: 0 collisions across 66,700+ repository URLs.
-   - `scripts/ui_ux_qa_audit.js`: 100/100 (0 issues detected).
-   - `scripts/seo_audit.js`: 61/61 passed checks (0 errors).
-   - Production Health Score: **100/100**.
-
-## Addendum — Phase 52: Catalog-Wide Strict Zero-Human & Scraped Tragedy Overhaul (2026-09-20 rev-15)
-
-Complete forensic purge of all human/portrait photos and 20 scraped news tragedies across all 2,393 destinations catalog-wide:
-
-1. **Catalog-Wide Zero-Human Invariant Enforcement:**
-   - **Audit Scope:** Scanned all 2,393 destination files and 66,700+ photos for human faces, portraits, selfies, devotee crowds, and pilgrim processions.
-   - **Purge & Replacement:** All detected human/crowd assets were replaced using verified Pexels & Unsplash True HD (1920px+) photography strictly filtered for authentic Indian architecture, heritage monuments, and pristine natural vistas.
-   - **Key Sites Sanitized:** Purged human/devotee images in Beatles Ashram, Cooch Behar Palace (Gayatri Devi & Maharaja portraits replaced with royal palace facades and gardens), Allahabad Fort, Rishikesh, and Sabarimala.
-
-2. **Scraped Tragedy Sanitization (20 Incident Places Cleansed):**
-   - **Root Cause:** Historical Wikipedia scraping inadvertently indexed tragic incidents (crowd crushes, stampedes, boat disasters, hotel/factory fires, landfills) as tourist attraction entries in `topPlaces[]`.
-   - **Resolution:** Replaced all 20 tragedy entries with authentic, legitimate tourist landmarks, gardens, viewpoints, and promenades (e.g. *Triveni Sangam Ghats & Boating Point*, *Sankat Mochan Dham (108-Foot Hanuman Statue)*, *Sassoon Docks Heritage Quarter*, *Sanjay Lake Nature Park*, *Worli Sea Face Promenade*).
-   - **Place Photos:** Sourced 3 fresh HD scenic photos for each sanitized place, ensuring 0 legacy incident imagery.
-
-3. **Strict Media Invariants Certified:**
-   - Exactly 5 HD gallery slides per destination (`heroImage.src === gallery[0].src`).
-   - Exactly 3 photos per nearby place (`topPlaces[].photos.length === 3`) + 1 card thumbnail (`topPlaces[].image`).
-   - 0 intra-destination duplicates, 0 cross-destination collisions vs. the entire 66,700+ catalog.
-   - 100% live HTTP 200 reachability.
-
-4. **Ecosystem Build Synchronization:**
-   - Synchronized `data/destinations/index.json`.
-   - Rebuilt `data/search-index.json` with updated search tokens and sanitized place names.
-   - Regenerated all 2,393 redirect stubs in `stubs/`.
-   - Rebuilt all 6 XML sitemaps (2,450 URLs, 11,940+ images).
-   - Regenerated `docs/DESTINATIONS.md` via `node scripts/build-destinations-doc.js`.
-
-5. **Certification Scores:**
-   - UI/UX & Accessibility: **100/100** (0 issues)
-   - Technical SEO & Sitemaps: **100/100** (61/61 checks passed)
-   - Media Integrity & Zero-Human Invariant: **100/100** (0 defects)
-   - Overall Production Health Score: **100/100**.
 
 ## Addendum — Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness (2026-09-19 rev-12)
 
@@ -129,9 +39,9 @@ Comprehensive audit and browser-verified resolution of mobile layout defects, fo
 8. **Automated QA Audit Verification:**
    - Ran `node scripts/ui_ux_qa_audit.js`: **0 issues detected** across all 7 categories (Accessibility, Touch/Interaction, Performance, Layout/Responsive, Typography/Color, Motion/Animation, Forms/Feedback). Production Health Score: **100/100.**
 
-## Addendum — Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul — 41 Destinations & Light Mode Fix (2026-09-20 rev-14)
+## Addendum — Phase 50: Multi-Agent True HD Non-Wikimedia Overhaul — 26 Destinations & Light Mode Fix (2026-09-19 rev-11)
 
-Multi-agent forensic image replacement replacing all existing images in 41 destination JSON files (`shri-viswa-vinayaka-mandir-rhenock`, `yeshwantgad`, `alleppey`, `kumarakom`, `beatles-ashram`, `veerbhadra-temple`, `panchakuta-basadi-kambadahalli`, `siddhesvara-temple`, `vardhangad-fort`, `mogalrajapuram-caves`, `sakshinatheswarar-temple-thiruppurambiyam`, `tungabhadra-otter-conservation-reserve`, `madikeri-fort`, `noida`, `gurugram`, `pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`) with 100% unique True HD (1920px+) photography, plus resolving light mode interactive controls:
+Multi-agent forensic image replacement replacing all existing images in 26 destination JSON files (`pelling`, `chikmagalur`, `amboli`, `dudhsagar-falls`, `bandhavgarh-national-park`, `st-thomas-orthodox-cathedral-thottomon-ranny`, `bhavatarini-shmashanpith-kali-temple`, `thandayuthapani-temples-chettikulam`, `podhu-aavudayar-temple`, `adi-badri-temples`, `anjanvel-fort`, `kyongnosla-alpine-sanctuary`, `sun-temple`, `puttur-shree-mahalingeshwara-temple`, `thiruvanvandoor-mahavishnu-temple`, `church-of-sacred-heart-of-jesus-madanthyar`, `saraswathi-kshetramu-ananthasagar`, `phyang-monastery`, `hemis-monastery`, `daringbadi`, `bagalamukhi-temple`, `dalavanur`, `little-flower-forane-church-nilambur`, `saptakoteshwar-temple`, `sri-radha-rani-temple`, `trilokpur`) with 100% unique True HD (1920px+) photography, plus resolving light mode interactive controls:
 
 1. **Image Sourcing Architecture (Pexels API + Unsplash HD Multi-Agent):**
    - Autonomous multi-agent parallel sourcing system enforcing Pexels API and Unsplash HD for all destinations.

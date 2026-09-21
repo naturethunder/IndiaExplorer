@@ -11,8 +11,8 @@ export function getPreferredTheme() {
     const saved = localStorage.getItem(THEME_KEY);
     if (saved === 'light' || saved === 'dark') return saved;
   } catch (_) {}
-  // Default to light mode (flagship editorial luxury daylight aesthetic)
-  return 'light';
+  // Default to dark mode (flagship ExploreDesh cinema aesthetic)
+  return 'dark';
 }
 
 export function applyTheme(theme) {
