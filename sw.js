@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.0.4';
+const VERSION = 'v1.0.3';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -154,26 +154,20 @@ self.addEventListener('fetch', (event) => {
 
         return fetch(req)
           .then((networkRes) => {
-            // Cache same-origin local assets
-            if (networkRes && (networkRes.ok || networkRes.type === 'opaque')) {
-              if (url.origin === self.location.origin) {
-                const copy = networkRes.clone();
-                caches.open(CACHE_MEDIA).then((cache) => {
-                  cache.put(req, copy).catch(() => {});
-                });
-              }
+            if (networkRes && networkRes.ok) {
+              const copy = networkRes.clone();
+              // Cache media into CACHE_MEDIA
+              caches.open(CACHE_MEDIA).then((cache) => {
+                cache.put(req, copy).catch(() => {});
+              });
             }
             return networkRes;
           })
-          .catch((fetchErr) => {
-            // Only return 1x1 transparent PNG when genuinely offline and no cache is available
-            if (!self.navigator.onLine) {
-              return new Response(EMPTY_PNG, {
-                headers: { 'Content-Type': 'image/png' }
-              });
-            }
-            // Allow error to propagate when online so browser/onerror fallbacks trigger properly
-            throw fetchErr;
+          .catch(() => {
+            // When offline and image not cached, return transparent 1x1 image so UI doesn't break
+            return new Response(EMPTY_PNG, {
+              headers: { 'Content-Type': 'image/png' }
+            });
           });
       })
     );
@@ -210,7 +204,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 4. Static assets (CSS, JS, Fonts, SVGs, Manifest): True Stale-While-Revalidate
+  // 4. Static assets (CSS, JS, Fonts, SVGs, Manifest): Stale-While-Revalidate
   event.respondWith(
     caches.match(req).then((cached) => {
       const fetchPromise = fetch(req)
@@ -223,12 +217,7 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => cached);
 
-      // If cached, return immediately while revalidating in background
-      if (cached) {
-        fetchPromise.catch(() => {});
-        return cached;
-      }
-      return fetchPromise;
+      return cached || fetchPromise;
     })
   );
 });
@@ -263,9 +252,8 @@ self.addEventListener('message', (event) => {
         // 2. Cache Images
         if (Array.isArray(imageUrls)) {
           await Promise.allSettled(
-            imageUrls.map(async (rawImg) => {
-              const imgUrl = typeof rawImg === 'string' ? rawImg : (rawImg && rawImg.src);
-              if (!imgUrl || typeof imgUrl !== 'string') return;
+            imageUrls.map(async (imgUrl) => {
+              if (!imgUrl) return;
               try {
                 // If not already cached
                 const match = await mediaCache.match(imgUrl);

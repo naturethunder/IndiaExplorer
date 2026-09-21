@@ -31,7 +31,12 @@ export function cardImg(d) {
 export function cardThumb(d, width = 600) {
   const url = cardImg(d);
   if (!url) return '';
-  // 1. Existing Wikimedia Commons thumb: resize to target width
+  // 1. Raw Wikimedia Commons DSLR photo (often 8MB - 10MB): convert to official thumb.php endpoint
+  if (url.includes('upload.wikimedia.org/wikipedia/commons/') && !url.includes('/thumb/') && !url.endsWith('.svg')) {
+    const filename = url.split('/').pop().split('?')[0];
+    return 'https://commons.wikimedia.org/w/thumb.php?f=' + filename + '&w=' + width;
+  }
+  // 2. Existing Wikimedia Commons thumb: resize to target width
   if (url.includes('/thumb/') && /\/\d+px-[^/]+$/.test(url)) {
     return url.replace(/\/(\d+)px-([^/]+)$/, '/' + width + 'px-$2');
   }

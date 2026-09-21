@@ -131,10 +131,7 @@ function extractDestinationImages(dest) {
       else if (p.image && p.image.src) urls.add(p.image.src);
 
       if (Array.isArray(p.photos)) {
-        p.photos.slice(0, 2).forEach((src) => {
-          const u = typeof src === 'string' ? src : (src && src.src);
-          if (u && typeof u === 'string') urls.add(u);
-        });
+        p.photos.slice(0, 2).forEach((src) => { if (src) urls.add(src); });
       }
     });
   }
@@ -143,7 +140,7 @@ function extractDestinationImages(dest) {
   if (Array.isArray(dest.gallery)) {
     dest.gallery.slice(0, 3).forEach((item) => {
       const src = typeof item === 'string' ? item : (item && item.src);
-      if (src && typeof src === 'string') urls.add(src);
+      if (src) urls.add(src);
     });
   }
 
