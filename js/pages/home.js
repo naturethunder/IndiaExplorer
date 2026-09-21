@@ -536,8 +536,10 @@ function shuffleArray(arr) {
     { name: 'Spring Blooms', range: 'February – March', ic: 'flower', months: [3, 4], lead: ['darjeeling', 'coorg', 'kanatal'] },
   ];
   el.innerHTML = seasons.map((s) => {
-    const lead = s.lead.map((sl) => bySlug.get(sl)).find(Boolean) || summaries[0];
-    const src = (lead && (lead.heroImage && lead.heroImage.src || lead.image && lead.image.src)) || '';
+    const lead = (s.lead || []).map((sl) => bySlug.get(sl)).find(Boolean) || summaries[0];
+    const leadHero = lead && (typeof lead.heroImage === 'string' ? lead.heroImage : (lead.heroImage && lead.heroImage.src));
+    const leadImg = lead && (typeof lead.image === 'string' ? lead.image : (lead.image && lead.image.src));
+    const src = leadHero || leadImg || '';
     const primaryMonth = s.months[0];
     return '<a href="destinations.html?month=' + primaryMonth + '" class="season-card group">' +
       '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" ' +

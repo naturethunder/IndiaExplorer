@@ -221,7 +221,12 @@
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/c/c7/Hyderabad_-_Charminar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/2/2e/Main_entrance_-_Gangaikonda_Cholapuram_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/86/World_Famous_Tourist_places_in_UP13_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+        {
+          "src": "https://images.pexels.com/photos/6144912/pexels-photo-6144912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1920",
+          "title": "Marutharode Scenic Vista 3",
+          "alt": "Marutharode near kottekkad-temple, Kerala — Scenic landscape and authentic regional beauty",
+          "caption": "Tranquil natural surroundings and heritage vistas near Marutharode"
+        }
       ],
       "travelTime": "5–10 mins drive from Kottekkad Temple"
     },
