@@ -287,6 +287,7 @@ function main(dest, idx) {
   // ─── Hero ───────────────────────────────────────────────
   const heroImg = document.getElementById('heroImg');
   if (heroImg) {
+    heroImg.setAttribute('referrerpolicy', 'origin');
     if (heroSrc) {
       heroImg.src = heroSrc;
       heroImg.alt = heroAlt;
@@ -991,7 +992,7 @@ function main(dest, idx) {
       '<div id="destOvTrack" class="relative w-full h-full">' +
       real5Photos.map(function (ph, idx) {
         return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
-          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" decoding="async" onerror="this.onerror=null;" />' +
+          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" decoding="async" referrerpolicy="origin" onerror="this.onerror=null;" />' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
           '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
@@ -1230,7 +1231,7 @@ function main(dest, idx) {
       const pImg = (p.image && p.image.src) ? p.image : null;
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImg ? '<img src="' + esc(pImg.src) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
+        (pImg ? '<img src="' + esc(pImg.src) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -2469,7 +2470,7 @@ function main(dest, idx) {
     carLen = urls.length; carIdx = 0;
     carTrack.innerHTML = urls.map(function (u, i) {
       return '<div class="carousel-slide"><img src="' + esc(u) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
-        '" decoding="async" onerror="this.onerror=null;" /></div>';
+        '" decoding="async" referrerpolicy="origin" onerror="this.onerror=null;" /></div>';
     }).join('');
     carDots.innerHTML = urls.map(function (u, i) {
       return '<button type="button" class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';
