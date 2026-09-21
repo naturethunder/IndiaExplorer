@@ -8,7 +8,7 @@
  */
 import { fetchDestination, fetchIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
-import { destUrl, cardImg } from '../components/destinationCard.js';
+import { destUrl, cardImg, optimizeImageUrl } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';
 import { mountGoogleMapEmbed } from '../components/googleMapEmbed.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
@@ -289,7 +289,7 @@ function main(dest, idx) {
   if (heroImg) {
     heroImg.setAttribute('referrerpolicy', 'origin');
     if (heroSrc) {
-      heroImg.src = heroSrc;
+      heroImg.src = optimizeImageUrl(heroSrc, 1600);
       heroImg.alt = heroAlt;
       heroImg.style.display = 'block';
     } else {
@@ -700,7 +700,8 @@ function main(dest, idx) {
     }).join('');
 
     const topPlaces = places.slice(0, 4).map(function (p, i) {
-      const pImgSrc = (typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')) || '';
+      const pImgRaw = (typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')) || '';
+      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 600) : '';
       const pImgAlt = (p.image && p.image.alt) ? p.image.alt : (p.name || '');
       const desc = (p.description || '');
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
@@ -941,7 +942,7 @@ function main(dest, idx) {
           const gCaption = resolveGalleryCaption(g, idx);
 
           addPhoto({
-            src: srcUrl,
+            src: optimizeImageUrl(srcUrl, 1400),
             title: gTitle,
             subtitle: gCaption,
             category: (typeof g === 'object' && g.category) ? g.category : (dest.type || 'heritage')
@@ -953,7 +954,7 @@ function main(dest, idx) {
       (places || []).forEach(function (p) {
         if (photos.length < 5 && p.image && p.image.src) {
           addPhoto({
-            src: p.image.src,
+            src: optimizeImageUrl(p.image.src, 1400),
             title: p.name,
             subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
             category: p.category || 'attraction'
@@ -964,7 +965,7 @@ function main(dest, idx) {
             const phSrc = typeof ph === 'string' ? ph : (ph && ph.src ? ph.src : '');
             if (photos.length < 5 && phSrc) {
               addPhoto({
-                src: phSrc,
+                src: optimizeImageUrl(phSrc, 1400),
                 title: p.name,
                 subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
                 category: p.category || 'attraction'
@@ -976,7 +977,7 @@ function main(dest, idx) {
 
       if (photos.length === 0 && dest.image && dest.image.src) {
         addPhoto({
-          src: dest.image.src,
+          src: optimizeImageUrl(dest.image.src, 1400),
           title: dest.title,
           subtitle: dest.state,
           category: dest.type || 'scenic'
@@ -1231,7 +1232,7 @@ function main(dest, idx) {
       const pImg = (p.image && p.image.src) ? p.image : null;
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImg ? '<img src="' + esc(pImg.src) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
+        (pImg ? '<img src="' + esc(optimizeImageUrl(pImg.src, 600)) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -2361,7 +2362,7 @@ function main(dest, idx) {
   const similarGrid = document.getElementById('similar-grid');
   if (similarGrid && similar.length > 0) {
     similarGrid.innerHTML = similar.map(function (d) {
-      const img = resolveCardPhoto(d);
+      const img = optimizeImageUrl(resolveCardPhoto(d), 600);
       return '' +
         '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
         '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
@@ -2469,7 +2470,7 @@ function main(dest, idx) {
   function carRender(urls, name) {
     carLen = urls.length; carIdx = 0;
     carTrack.innerHTML = urls.map(function (u, i) {
-      return '<div class="carousel-slide"><img src="' + esc(u) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
+      return '<div class="carousel-slide"><img src="' + esc(optimizeImageUrl(u, 1000)) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
         '" decoding="async" referrerpolicy="origin" onerror="this.onerror=null;" /></div>';
     }).join('');
     carDots.innerHTML = urls.map(function (u, i) {

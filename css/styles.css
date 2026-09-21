@@ -273,13 +273,12 @@ body {
 /* Royal Calligraphy Eyebrows & Kickers */
 .calligraphy-kicker,
 .calligraphy-eyebrow {
-  font-family: 'Pinyon Script', cursive !important;
-  font-size: clamp(1.2rem, 2.2vw, 2.05rem);
-  line-height: 1.15;
-  color: #F5C542;
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Alex Brush', 'Pinyon Script', cursive !important;
+  font-size: clamp(1.5rem, 2.5vw, 2.35rem) !important;
+  line-height: 1.25;
+  color: #F5C542 !important;
+  -webkit-text-fill-color: #F5C542 !important;
+  background: none !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -288,28 +287,32 @@ body {
   gap: 12px;
   margin-bottom: 8px;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75));
-  text-shadow: 0 0 20px rgba(229, 192, 123, 0.25);
-  font-weight: 400;
+  text-shadow: 0 0 16px rgba(245, 197, 66, 0.35), 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: 400 !important;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .calligraphy-kicker::before,
 .calligraphy-kicker::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(229, 192, 123, 0.75));
+  width: 28px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(245, 197, 66, 0.85));
   flex-shrink: 1;
 }
 
 .calligraphy-kicker::after {
-  background: linear-gradient(90deg, rgba(229, 192, 123, 0.75), transparent);
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0.85), transparent);
 }
 
 @media (max-width: 640px) {
   .calligraphy-kicker,
   .calligraphy-eyebrow {
-    font-size: clamp(1.1rem, 4.2vw, 1.35rem) !important;
+    font-size: clamp(1.25rem, 4.5vw, 1.65rem) !important;
     gap: 8px;
   }
   .calligraphy-kicker::before,
@@ -320,8 +323,19 @@ body {
 
 html[data-theme="light"] .calligraphy-kicker,
 html[data-theme="light"] .calligraphy-eyebrow {
+  color: #78350F !important;
+  -webkit-text-fill-color: #78350F !important;
+  background: none !important;
   filter: none !important;
-  text-shadow: none !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9) !important;
+}
+
+html[data-theme="light"] .calligraphy-kicker::before {
+  background: linear-gradient(90deg, transparent, #B45309) !important;
+}
+
+html[data-theme="light"] .calligraphy-kicker::after {
+  background: linear-gradient(90deg, #B45309, transparent) !important;
 }
 
 /* ─── Monthly Highlights 3-Column Header Bar ─── */
@@ -354,7 +368,7 @@ html[data-theme="light"] .calligraphy-eyebrow {
 
   .monthly-header-center .calligraphy-kicker {
     margin-bottom: 0 !important;
-    font-size: clamp(1.2rem, 1.8vw, 1.85rem) !important;
+    font-size: clamp(1.5rem, 2.4vw, 2.25rem) !important;
   }
 
   .monthly-header-right {
@@ -382,6 +396,7 @@ html[data-theme="light"] .calligraphy-eyebrow {
 
   .monthly-header-center .calligraphy-kicker {
     margin-bottom: 0 !important;
+    font-size: clamp(1.5rem, 2.4vw, 2.25rem) !important;
   }
 
   .monthly-header-left {

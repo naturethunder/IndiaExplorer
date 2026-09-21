@@ -7,7 +7,7 @@
  */
 import { fetchIndex, fetchSearchIndex, fetchDestination } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
-import { destUrl, cardImg } from '../components/destinationCard.js';
+import { destUrl, cardImg, cardThumb } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { MONTH_PICKS } from '../data/taxonomy.js';
@@ -450,7 +450,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block bg-slate-900/80 border border-white/15 backdrop-blur-xl rounded-2xl shadow-xl hover:border-emerald-400/50 transition-all duration-200">' +
     '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
-    '<img src="' + esc(cardImg(d)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="origin" ' +
+    '<img src="' + esc(cardThumb(d, 600)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" referrerpolicy="origin" ' +
     'onerror="this.onerror=null;this.style.display=\'none\';" />' +
     '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
     '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +

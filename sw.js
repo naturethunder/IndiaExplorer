@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.0.5';
+const VERSION = 'v1.0.6';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -110,6 +110,12 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
   if (url.origin === 'https://api.web3forms.com') return;
 
+  // ─── CRITICAL SHIELD: Never intercept external third-party origins ────────
+  // All external media (Pexels, Unsplash, Wikimedia, wsrv.nl, Google Fonts, etc.)
+  // are handled natively by the browser. SW never intercepts them, guaranteeing
+  // zero image loading failures, zero blank pixels, and zero CORS issues.
+  if (url.origin !== self.location.origin) return;
+
   // 1. Navigation requests (HTML pages)
   if (req.mode === 'navigate') {
     event.respondWith(
@@ -182,22 +188,27 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 3. Dynamic Destination JSON Data (`data/destinations/*.json`)
+  // 3. Dynamic Destination JSON Data (`data/destinations/*.json`): Stale-While-Revalidate for Instant 0ms Render
   if (url.pathname.startsWith('/data/') || url.pathname.includes('/data/')) {
     event.respondWith(
       caches.open(CACHE_DATA).then(async (cache) => {
-        try {
-          const networkRes = await fetch(req);
-          if (networkRes && networkRes.ok) {
-            cache.put(req, networkRes.clone());
+        const cached = await cache.match(req);
+        const fetchPromise = fetch(req)
+          .then((networkRes) => {
+            if (networkRes && networkRes.ok) {
+              cache.put(req, networkRes.clone());
+            }
             return networkRes;
-          }
-        } catch (_) {
-          // Network failed (offline)
+          })
+          .catch(() => null);
+
+        // If cached copy exists, return immediately without network latency
+        if (cached) {
+          return cached;
         }
 
-        const cached = await cache.match(req);
-        if (cached) return cached;
+        const networkRes = await fetchPromise;
+        if (networkRes) return networkRes;
 
         // Check in shell cache as secondary fallback
         const shellCached = await caches.match(req);

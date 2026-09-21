@@ -539,7 +539,7 @@ function shuffleArray(arr) {
     const lead = (s.lead || []).map((sl) => bySlug.get(sl)).find(Boolean) || summaries[0];
     const leadHero = lead && (typeof lead.heroImage === 'string' ? lead.heroImage : (lead.heroImage && lead.heroImage.src));
     const leadImg = lead && (typeof lead.image === 'string' ? lead.image : (lead.image && lead.image.src));
-    const src = leadHero || leadImg || '';
+    const src = lead ? cardThumb(lead, 800) : (leadHero || leadImg || '');
     const primaryMonth = s.months[0];
     return '<a href="destinations.html?month=' + primaryMonth + '" class="season-card group">' +
       '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" ' +

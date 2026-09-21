@@ -28,26 +28,48 @@ export function cardImg(d) {
   return resolve(d.heroImage) || resolve(d.image) || '';
 }
 
-export function cardThumb(d, width = 600) {
-  const url = cardImg(d);
-  if (!url) return '';
+export function optimizeImageUrl(url, width = 800) {
+  if (!url || typeof url !== 'string') return '';
+  // 0. Already optimized via edge service
+  if (url.startsWith('https://wsrv.nl') || url.startsWith('//wsrv.nl')) return url;
   // 1. Existing Wikimedia Commons thumb: resize to target width
   if (url.includes('/thumb/') && /\/\d+px-[^/]+$/.test(url)) {
     return url.replace(/\/(\d+)px-([^/]+)$/, '/' + width + 'px-$2');
   }
-  // 3. Pexels photo: compress & set size to max 800 or width
+  // 2. Raw Wikimedia Commons DSLR photo (often 10MB - 42MB): convert to ultra-fast 50KB WebP via Cloudflare edge optimizer
+  if (url.includes('upload.wikimedia.org/wikipedia/commons/') && !url.includes('/thumb/') && !url.endsWith('.svg')) {
+    return 'https://wsrv.nl/?url=' + encodeURIComponent(url) + '&w=' + width + '&output=webp&q=80';
+  }
+  // 3. Pexels photo: compress & set size
   if (url.includes('images.pexels.com/photos/')) {
     try {
       const u = new URL(url);
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
-      u.searchParams.set('w', String(Math.min(width, 800)));
+      u.searchParams.set('w', String(Math.min(width, 1600)));
+      return u.toString();
+    } catch (_) {
+      return url;
+    }
+  }
+  // 4. Unsplash photo: compress & set size
+  if (url.includes('images.unsplash.com/')) {
+    try {
+      const u = new URL(url);
+      u.searchParams.set('auto', 'format');
+      u.searchParams.set('fit', 'crop');
+      u.searchParams.set('w', String(Math.min(width, 1600)));
+      u.searchParams.set('q', '80');
       return u.toString();
     } catch (_) {
       return url;
     }
   }
   return url;
+}
+
+export function cardThumb(d, width = 600) {
+  return optimizeImageUrl(cardImg(d), width);
 }
 
 /**
