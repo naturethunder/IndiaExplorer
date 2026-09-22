@@ -30,35 +30,46 @@ export function cardImg(d) {
 
 export function optimizeImageUrl(url, width = 800) {
   if (!url || typeof url !== 'string') return '';
-  // 0. Already optimized via edge service
-  if (url.startsWith('https://wsrv.nl') || url.startsWith('//wsrv.nl')) return url;
+  // 0. Unwrap any legacy wsrv.nl proxy URLs to recover the direct origin
+  if (url.startsWith('https://wsrv.nl') || url.startsWith('//wsrv.nl')) {
+    try {
+      const u = new URL(url.startsWith('//') ? 'https:' + url : url);
+      const inner = u.searchParams.get('url');
+      if (inner) return optimizeImageUrl(decodeURIComponent(inner), width);
+    } catch (_) {}
+  }
   // 1. Existing Wikimedia Commons thumb: resize to target width
   if (url.includes('/thumb/') && /\/\d+px-[^/]+$/.test(url)) {
     return url.replace(/\/(\d+)px-([^/]+)$/, '/' + width + 'px-$2');
   }
-  // 2. Raw Wikimedia Commons DSLR photo (often 10MB - 42MB): convert to ultra-fast 50KB WebP via Cloudflare edge optimizer
+  // 2. Raw Wikimedia Commons DSLR photo: convert directly to official Wikimedia CDN thumbnail generator (30KB-60KB)
   if (url.includes('upload.wikimedia.org/wikipedia/commons/') && !url.includes('/thumb/') && !url.endsWith('.svg')) {
-    return 'https://wsrv.nl/?url=' + encodeURIComponent(url) + '&w=' + width + '&output=webp&q=80';
+    const filename = url.split('/').pop().split('?')[0];
+    return 'https://commons.wikimedia.org/w/thumb.php?f=' + filename + '&w=' + width;
   }
-  // 3. Pexels photo: compress & set size
+  // 3. Pexels photo: strip dpr & extra height, compress & set clean target width
   if (url.includes('images.pexels.com/photos/')) {
     try {
       const u = new URL(url);
+      u.searchParams.delete('dpr');
+      u.searchParams.delete('h');
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
-      u.searchParams.set('w', String(Math.min(width, 1600)));
+      u.searchParams.set('w', String(Math.min(width, 1200)));
       return u.toString();
     } catch (_) {
       return url;
     }
   }
-  // 4. Unsplash photo: compress & set size
+  // 4. Unsplash photo: strip dpr & extra height, compress & set clean target width
   if (url.includes('images.unsplash.com/')) {
     try {
       const u = new URL(url);
+      u.searchParams.delete('dpr');
+      u.searchParams.delete('h');
       u.searchParams.set('auto', 'format');
       u.searchParams.set('fit', 'crop');
-      u.searchParams.set('w', String(Math.min(width, 1600)));
+      u.searchParams.set('w', String(Math.min(width, 1200)));
       u.searchParams.set('q', '80');
       return u.toString();
     } catch (_) {

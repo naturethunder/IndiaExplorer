@@ -31,25 +31,33 @@ let currentTab = 'saved'; // 'saved' | 'emergency' | 'storage'
 export function registerServiceWorker() {
   if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker
-        .register('/sw.js', { scope: '/' })
-        .then((reg) => {
-          console.info('[ExploreDesh Go] Service Worker active with scope:', reg.scope);
-          // Check for worker updates
-          reg.addEventListener('updatefound', () => {
-            const installingWorker = reg.installing;
-            if (installingWorker) {
-              installingWorker.addEventListener('statechange', () => {
-                if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  console.info('[ExploreDesh Go] New version available.');
-                }
-              });
-            }
+      const startRegistration = () => {
+        navigator.serviceWorker
+          .register('/sw.js', { scope: '/' })
+          .then((reg) => {
+            console.info('[ExploreDesh Go] Service Worker active with scope:', reg.scope);
+            // Check for worker updates
+            reg.addEventListener('updatefound', () => {
+              const installingWorker = reg.installing;
+              if (installingWorker) {
+                installingWorker.addEventListener('statechange', () => {
+                  if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    console.info('[ExploreDesh Go] New version available.');
+                  }
+                });
+              }
+            });
+          })
+          .catch((err) => {
+            console.warn('[ExploreDesh Go] Service Worker registration failed:', err);
           });
-        })
-        .catch((err) => {
-          console.warn('[ExploreDesh Go] Service Worker registration failed:', err);
-        });
+      };
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(startRegistration, { timeout: 3000 });
+      } else {
+        setTimeout(startRegistration, 1000);
+      }
     });
   }
 }

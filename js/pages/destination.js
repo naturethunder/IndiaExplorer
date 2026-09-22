@@ -28,6 +28,11 @@ if (navOfflineBtn) {
   navOfflineBtn.addEventListener('click', () => openOfflineHub('saved'));
 }
 
+const HIMALAYAN_STATES = new Set([
+  'Ladakh', 'Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand',
+  'Sikkim', 'Arunachal Pradesh', 'Meghalaya', 'Mizoram', 'Nagaland', 'Manipur'
+]);
+
 const TIER_ORDER = ['cheapest', 'budget', 'good', 'better', 'best', 'luxury', 'extra_luxury'];
 function tierColor(tier) {
   const map = {
@@ -120,19 +125,14 @@ if (slug) {
 }
 
 let dest = null;
-let idx = null;
 if (slug) {
   try {
-    [dest, idx] = await Promise.all([
-      fetchDestination(slug),
-      fetchIndex().catch(() => null),  // Bug 7 fix: fetchIndex failure won't mask dest error
-    ]);
+    dest = await fetchDestination(slug);
     if (dest && dest.slug) {
       localStorage.setItem('exploredesh_last_destination', dest.slug);
     }
   } catch (e) {
     dest = null;
-    idx = null;
   }
 }
 
@@ -140,7 +140,17 @@ if (!dest) {
   markDestinationNotFound();
   document.getElementById('notFound').style.display = 'flex';
 } else {
-  main(dest, idx);
+  // Instant render: show hero photo, overview, places & stays in <50ms without waiting for 4.15MB index
+  main(dest, null);
+
+  // Background manifest load for bottom Similar Destinations rail
+  fetchIndex()
+    .then((loadedIdx) => {
+      if (loadedIdx && typeof window.__renderSimilarDestinations === 'function') {
+        window.__renderSimilarDestinations(loadedIdx);
+      }
+    })
+    .catch(() => { });
 }
 
 function main(dest, idx) {
@@ -758,9 +768,26 @@ function main(dest, idx) {
     function get5RealPhotos() {
       const photos = [];
       const seen = new Set();
+
+      function getNormalizedKey(u) {
+        if (!u || typeof u !== 'string') return '';
+        try {
+          const parsed = new URL(u, window.location.origin);
+          if (parsed.hostname.includes('wikimedia.org')) {
+            const f = parsed.searchParams.get('f');
+            if (f) return decodeURIComponent(f).toLowerCase().replace(/_/g, ' ').trim();
+          }
+          return decodeURIComponent(parsed.pathname).toLowerCase().replace(/_/g, ' ').trim();
+        } catch (_) {
+          return u.split('?')[0].toLowerCase().trim();
+        }
+      }
+
       function addPhoto(photo) {
-        if (!photo || !photo.src || seen.has(photo.src)) return;
-        seen.add(photo.src);
+        if (!photo || !photo.src) return;
+        const key = getNormalizedKey(photo.src);
+        if (!key || seen.has(key)) return;
+        seen.add(key);
         photos.push(photo);
       }
 
@@ -770,7 +797,7 @@ function main(dest, idx) {
         const trimmed = text.trim();
         const dTitle = (dest.title || '').trim().toLowerCase();
         const tLower = trimmed.toLowerCase();
-        
+
         // Exact duplicate of destination name or repetition
         if (tLower === dTitle || tLower === `${dTitle} — ${dTitle}` || tLower === `${dTitle} — ${dTitle}, ${(dest.state || '').toLowerCase()}`) return true;
 
@@ -816,7 +843,7 @@ function main(dest, idx) {
       // 1. Primary Hero Image
       if (typeof dest.heroImage === 'string' && dest.heroImage) {
         addPhoto({
-          src: dest.heroImage,
+          src: optimizeImageUrl(dest.heroImage, 1400),
           title: formatHeroTitle(dest.title, dest.tagline, '', dest.state),
           subtitle: dest.state + ' · Main View',
           category: dest.type || 'scenic'
@@ -826,7 +853,7 @@ function main(dest, idx) {
         const heroExplicitTitle = (dest.heroImage.title && !isGenericLabel(dest.heroImage.title) ? cleanAltText(dest.heroImage.title) : null)
           || (dest.gallery && dest.gallery[0] && dest.gallery[0].title && !isGenericLabel(dest.gallery[0].title) ? cleanAltText(dest.gallery[0].title) : null);
         addPhoto({
-          src: dest.heroImage.src,
+          src: optimizeImageUrl(dest.heroImage.src, 1400),
           title: heroExplicitTitle || formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
           subtitle: (cleanHeroSub && cleanHeroSub.toLowerCase() !== dest.title.toLowerCase()) ? cleanHeroSub : (dest.state + ' · Main View'),
           category: dest.type || 'scenic'
@@ -2249,103 +2276,6 @@ function main(dest, idx) {
     similarHeadingTypeName.textContent = rawType ? rawType + ' ' : '';
   }
 
-  const allDestList = (idx && Array.isArray(idx.destinations)) ? idx.destinations : [];
-
-  function byRating(a, b) {
-    return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0);
-  }
-
-  function getSimilarDestinations() {
-    if (!allDestList.length) return [];
-    // 1. Same state and same type (closest match)
-    const sameStateAndType = allDestList.filter(function (d) {
-      return d && d.slug !== dest.slug && d.type === dest.type && d.state === dest.state;
-    }).sort(byRating);
-    // 2. Same type in other states (top rated across India)
-    const sameTypeOther = allDestList.filter(function (d) {
-      return d && d.slug !== dest.slug && d.type === dest.type && d.state !== dest.state;
-    }).sort(byRating);
-    // 3. Same state other types (only fallback if same type has fewer than 4 total)
-    const sameStateOther = (sameStateAndType.length + sameTypeOther.length < 4)
-      ? allDestList.filter(function (d) {
-        return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
-      }).sort(byRating)
-      : [];
-    // 4. Fallback fill only if still fewer than 4 cards
-    const others = (sameStateAndType.length + sameTypeOther.length + sameStateOther.length < 4)
-      ? allDestList.filter(function (d) { return d && d.slug !== dest.slug; }).sort(byRating)
-      : [];
-
-    const pool = [].concat(sameStateAndType, sameTypeOther, sameStateOther, others);
-    const uniqueMap = new Map();
-    pool.forEach(function (d) {
-      if (d && d.slug && !uniqueMap.has(d.slug)) {
-        uniqueMap.set(d.slug, d);
-      }
-    });
-
-    return Array.from(uniqueMap.values()).slice(0, 4);
-  }
-
-  const similar = getSimilarDestinations();
-
-  // Dynamic Type-Specific Similar Section Heading & Explore Button
-  const TYPE_NAME_MAP = {
-    spiritual: 'Spiritual',
-    hill_station: 'Hill Station',
-    beach: 'Beach',
-    adventure: 'Adventure',
-    heritage: 'Heritage',
-    wildlife: 'Wildlife',
-    road_trips: 'Road Trip',
-    camping: 'Camping',
-    forts: 'Forts & Palaces',
-    ecotourism: 'Ecotourism'
-  };
-
-  const rawType = (dest.type || '').toLowerCase();
-  const typeTitle = TYPE_NAME_MAP[rawType] || (rawType ? (rawType.charAt(0).toUpperCase() + rawType.slice(1).replace(/_/g, ' ')) : '');
-
-  const similarHeadingEl = document.getElementById('similar-heading');
-  const similarSubheadingEl = document.getElementById('similarSubheading');
-  const expBtnEl = document.getElementById('similarExploreBtn');
-  const expAllEl = document.getElementById('similarExploreAllText');
-
-  if (similarHeadingEl) {
-    if (typeTitle) {
-      similarHeadingEl.innerHTML = 'Similar <span id="similarTypeName" class="text-amber-400 font-serif italic">' + esc(typeTitle) + '</span> Destinations You May Love';
-    } else {
-      similarHeadingEl.innerHTML = 'Similar Destinations You May Love';
-    }
-  }
-
-  if (similarSubheadingEl) {
-    if (typeTitle) {
-      similarSubheadingEl.textContent = 'Handpicked ' + typeTitle.toLowerCase() + ' getaways sharing similar landscapes, heritage, and travel vibes across India.';
-    } else {
-      similarSubheadingEl.textContent = 'Handpicked getaways sharing similar landscapes, altitudes, and travel vibes across India.';
-    }
-  }
-
-  if (expBtnEl) {
-    if (rawType) {
-      expBtnEl.href = 'destinations.html?type=' + encodeURIComponent(rawType);
-      expBtnEl.setAttribute('aria-label', 'Explore Similar ' + typeTitle + ' Destinations');
-    } else {
-      expBtnEl.href = 'destinations.html';
-      expBtnEl.setAttribute('aria-label', 'Explore All Destinations');
-    }
-  }
-
-  if (expAllEl) {
-    if (typeTitle) {
-      expAllEl.textContent = 'Explore Similar ' + typeTitle + ' Destinations';
-    } else {
-      const totalCount = (idx && idx.count) || allDestList.length || 2393;
-      expAllEl.textContent = 'Explore All ' + inr(totalCount);
-    }
-  }
-
   function resolveCardPhoto(d) {
     if (!d) return '';
     if (typeof cardImg === 'function') {
@@ -2359,32 +2289,71 @@ function main(dest, idx) {
     return '';
   }
 
-  const similarGrid = document.getElementById('similar-grid');
-  if (similarGrid && similar.length > 0) {
-    similarGrid.innerHTML = similar.map(function (d) {
-      const img = optimizeImageUrl(resolveCardPhoto(d), 600);
-      return '' +
-        '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
-        '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
-        (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '') +
-        '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
-        '<div class="absolute top-2 right-2">' +
-        '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
-        '</div>' +
-        '<div class="absolute bottom-2 left-2.5 right-2.5">' +
-        '<p class="similar-card-title text-white text-sm font-bold truncate leading-tight drop-shadow">' + esc(d.title) + '</p>' +
-        '<p class="similar-card-state text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
-        '</div>' +
-        '</div>' +
-        '<div class="flex items-center justify-between px-1">' +
-        '<div class="similar-card-rating flex items-center gap-1 text-amber-400 text-xs font-bold">' +
-        '<span class="similar-star">★</span><span class="similar-score">' + esc(d.rating || '4.5') + '</span>' +
-        '</div>' +
-        '<p class="similar-card-price text-xs text-slate-400">Stay starts from <span class="similar-price-val font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
-        '</div>' +
-        '</a>';
-    }).join('');
+  function populateSimilar(activeIdx) {
+    const list = (activeIdx && Array.isArray(activeIdx.destinations)) ? activeIdx.destinations : [];
+    if (!list.length) return;
+
+    function byRating(a, b) {
+      return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0);
+    }
+
+    const sameStateAndType = list.filter(function (d) {
+      return d && d.slug !== dest.slug && d.type === dest.type && d.state === dest.state;
+    }).sort(byRating);
+
+    const sameTypeOther = list.filter(function (d) {
+      return d && d.slug !== dest.slug && d.type === dest.type && d.state !== dest.state;
+    }).sort(byRating);
+
+    const sameStateOther = (sameStateAndType.length + sameTypeOther.length < 4)
+      ? list.filter(function (d) {
+        return d && d.slug !== dest.slug && d.state === dest.state && d.type !== dest.type;
+      }).sort(byRating)
+      : [];
+
+    const others = (sameStateAndType.length + sameTypeOther.length + sameStateOther.length < 4)
+      ? list.filter(function (d) { return d && d.slug !== dest.slug; }).sort(byRating)
+      : [];
+
+    const pool = [].concat(sameStateAndType, sameTypeOther, sameStateOther, others);
+    const uniqueMap = new Map();
+    pool.forEach(function (d) {
+      if (d && d.slug && !uniqueMap.has(d.slug)) {
+        uniqueMap.set(d.slug, d);
+      }
+    });
+
+    const similar = Array.from(uniqueMap.values()).slice(0, 4);
+    const similarGrid = document.getElementById('similar-grid');
+    if (similarGrid && similar.length > 0) {
+      similarGrid.innerHTML = similar.map(function (d) {
+        const img = optimizeImageUrl(resolveCardPhoto(d), 600);
+        return '' +
+          '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
+          '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
+          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '') +
+          '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
+          '<div class="absolute top-2 right-2">' +
+          '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
+          '</div>' +
+          '<div class="absolute bottom-2 left-2.5 right-2.5">' +
+          '<p class="similar-card-title text-white text-sm font-bold truncate leading-tight drop-shadow">' + esc(d.title) + '</p>' +
+          '<p class="similar-card-state text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
+          '</div>' +
+          '</div>' +
+          '<div class="flex items-center justify-between px-1">' +
+          '<div class="similar-card-rating flex items-center gap-1 text-amber-400 text-xs font-bold">' +
+          '<span class="similar-star">★</span><span class="similar-score">' + esc(d.rating || '4.5') + '</span>' +
+          '</div>' +
+          '<p class="similar-card-price text-xs text-slate-400">Stay starts from <span class="similar-price-val font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
+          '</div>' +
+          '</a>';
+      }).join('');
+    }
   }
+
+  window.__renderSimilarDestinations = populateSimilar;
+  if (idx) populateSimilar(idx);
 
   // Bug 4 fix: added null checks for mStays and mReach before addEventListener
   const mStaysEl = document.getElementById('mStays');
@@ -2489,10 +2458,6 @@ function main(dest, idx) {
     const d = e.target.closest('.dot'); if (d) { carGo(parseInt(d.getAttribute('data-i'), 10)); carStartAuto(); }
   });
   carDots.addEventListener('focusin', carStopAuto);
-  const HIMALAYAN_STATES = new Set([
-    'Ladakh', 'Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand',
-    'Sikkim', 'Arunachal Pradesh', 'Meghalaya', 'Mizoram', 'Nagaland', 'Manipur'
-  ]);
 
   function getPlaceTravelTime(p, destTitle, destState) {
     if (p && p.travelTime && typeof p.travelTime === 'string') return p.travelTime;
@@ -2547,7 +2512,7 @@ function main(dest, idx) {
       distText = distText + ' (On-site)';
     }
     document.getElementById('placeDistance').textContent = distText || ('Near ' + dest.title);
-    
+
     // Set Travel Time from main destination
     const travelTimeStr = getPlaceTravelTime(p, dest.title, dest.state);
     const travelEl = document.getElementById('placeTravelTime');

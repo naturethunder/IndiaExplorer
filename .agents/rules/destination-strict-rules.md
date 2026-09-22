@@ -195,3 +195,14 @@ When sourcing proxies or nearby attractions, imagery MUST originate from the sam
 - ❌ **NO Random / Unrelated Images**: Stock filler, unrelated cities/states, hotel beds, food plates, office interiors, or foreign landmarks.
 - ❌ **Politically Sensitive Content**: Official government/military figures at border checkpoints.
 - ❌ **Duplicate URLs**: Any URL appearing 2+ times in the same file or in any other destination file in the 66k+ index.
+
+---
+
+## Rule 14 — Pinpoint Surgical Replacement (No Blind Overwrites)
+
+When auditing or repairing an existing destination file:
+- **Pinpoint Surgery Only**: If 1 or a few slots are defective (internal duplicates or out-of-state geographic leaks), touch **ONLY** those specific defective slots.
+- **Never Blindly Overwrite Valid Ground-Truth**: Do not replace whole galleries or wipe out hundreds of existing authentic monument/place photos.
+- **Strict Attraction & State Geofencing**: Every replacement photo must match the exact attraction, district, and state. Out-of-state images (e.g. Kerala photos in Tamil Nadu/Punjab, Ladakh photos in MP/Bihar) are strictly prohibited.
+- **100% Repository-Wide Uniqueness**: Before saving any replacement slot, verify against the master 66,500+ repository index to guarantee zero cross-destination URL collisions.
+

@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.0.6';
+const VERSION = 'v1.0.8';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -52,7 +52,6 @@ const APP_SHELL_URLS = [
   '/images/pwa-icon-512.png',
   '/fonts/caveat-latin.woff2',
   '/manifest.webmanifest',
-  '/data/destinations/index.json',
 ];
 
 // Fallback 1x1 transparent PNG for uncached images when offline
@@ -168,7 +167,7 @@ self.addEventListener('fetch', (event) => {
             if (networkRes && (networkRes.ok || networkRes.type === 'opaque')) {
               const copy = networkRes.clone();
               caches.open(CACHE_MEDIA).then((cache) => {
-                cache.put(req, copy).catch(() => {});
+                cache.put(req, copy).catch(() => { });
               });
             }
             return networkRes;
@@ -238,7 +237,7 @@ self.addEventListener('fetch', (event) => {
 
       // If cached, return immediately while revalidating in background
       if (cached) {
-        fetchPromise.catch(() => {});
+        fetchPromise.catch(() => { });
         return cached;
       }
       return fetchPromise;
@@ -286,7 +285,7 @@ self.addEventListener('message', (event) => {
                   const imgRes = await fetch(imgUrl, { mode: 'no-cors' });
                   if (imgRes) await mediaCache.put(imgUrl, imgRes);
                 }
-              } catch (_) {}
+              } catch (_) { }
             })
           );
         }
