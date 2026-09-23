@@ -170,6 +170,9 @@ export function resolveState(query, states) {
 // instead. Single source of truth so js/pages/home.js's chip counts always
 // match what js/pages/explore.js's filter actually returns for the same id.
 export const CUSTOM_TYPE_MATCHERS = {
+  recently_updated: function (d) {
+    return Boolean(d.updatedAt);
+  },
   road_trips: function (d) {
     return (d.type === 'adventure' || d.type === 'hill_station' ||
       (d.features && d.features.some(function (f) { return f.toLowerCase() === 'ghats'; }))) &&

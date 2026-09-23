@@ -21,7 +21,11 @@ initLayout({ active: 'destinations' });
 
 const idx = await fetchIndex();
 const SUMMARIES = idx.destinations;
-SUMMARIES.forEach((d, i) => { d._index = i; d._addedAt = d.addedAt || i; });
+SUMMARIES.forEach((d, i) => {
+  d._index = i;
+  d._updatedAt = d.updatedAt ? new Date(d.updatedAt).getTime() : 0;
+  d._addedAt = d._updatedAt || d.addedAt || i;
+});
 const { priceTiers: PRICE_TIERS, types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
 const TYPE_SEO_LABELS = {
   hill_station: 'Hill Stations',
@@ -30,6 +34,7 @@ const TYPE_SEO_LABELS = {
   wildlife: 'Wildlife Destinations',
   spiritual: 'Spiritual Places',
   adventure: 'Adventure Destinations',
+  recently_updated: 'Recently Updated',
 };
 const INDEXABLE_TYPES = new Map(DESTINATION_TYPES.map(function (type) {
   return [type.id, TYPE_SEO_LABELS[type.id] || type.label];
@@ -37,6 +42,7 @@ const INDEXABLE_TYPES = new Map(DESTINATION_TYPES.map(function (type) {
 
 const CATEGORY_FILTERS = [
   { id: '', label: 'All Destinations', iconName: 'compass' },
+  { id: 'recently_updated', label: 'Recently Updated', iconName: 'sparkles' },
   { id: 'hill_station', label: 'Hill Stations', iconName: 'mountain' },
   { id: 'beach', label: 'Beaches', iconName: 'waves' },
   { id: 'heritage', label: 'Heritage', iconName: 'landmark' },

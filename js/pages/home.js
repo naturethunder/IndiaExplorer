@@ -205,6 +205,7 @@ function search(q) {
   if (!el) return;
   const cats = [
     { type: '', ic: 'compass', tint: 'tint-teal', label: 'All Destinations', countKey: 'all' },
+    { type: 'recently_updated', ic: 'sparkles', tint: 'tint-amber', label: 'Recently Updated', badge: 'new', countKey: 'recently_updated' },
     { type: 'hill_station', ic: 'mountain', tint: 'tint-green', label: 'Hill Stations', badge: 'popular' },
     { type: 'beach', ic: 'waves', tint: 'tint-blue', label: 'Beaches', badge: 'popular' },
     { type: 'heritage', ic: 'landmark', tint: 'tint-orange', label: 'Heritage', badge: 'popular' },

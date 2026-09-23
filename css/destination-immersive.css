@@ -265,7 +265,7 @@ body.dest-immersive .dest-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center center;
   display: block;
   transform: none;
   transition: filter 0.8s ease;
@@ -1515,7 +1515,7 @@ body.dest-immersive #placeClose:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center center;
   /* transform transition removed — no Ken Burns zoom */
 }
 

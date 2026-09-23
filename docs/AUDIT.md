@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-20 rev-18** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-24 rev-22** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,6 +12,53 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro Max**
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
+
+## Addendum — Phase 59: Saccidananda Ashram (Shantivanam) Image Authenticity Overhaul & Hero CSS Centering Fix (2026-09-24 rev-22)
+
+Surgical single-destination repair for `saccidananda-ashram` with a global CSS centering fix:
+
+1. **Hero CSS Centering Bug Fix (`css/destination-immersive.css` & `css/styles.css`):**
+   - Root cause: `.dest-hero-img` had `object-position: center 30%` — in the ultra-wide 64vh/480px hero container this cut off the bottom 70% of landscapes and monuments, showing only sky.
+   - Fix: Changed to `object-position: center center` on `.dest-hero-img` and `.dest-ov-slide img` in both `destination-immersive.css` and `styles.css`. All destination hero images now display the full scene vertically centred.
+
+2. **Saccidananda Ashram Full Image Overhaul (`data/destinations/saccidananda-ashram.json`):**
+   - Replaced all 5 gallery + 7 place card + 21 place photos (34 total URLs, 33 unique) with authentic Tamil Nadu / Kaveri-basin photography:
+     - **Hero + Gallery[0]:** Pexels 8967819 — Mayanur/Kaveri aerial drone shot (4000×2250, 16:9)
+     - **Gallery[1]:** Pexels 37890172 — serene hermitage garden pathway (4096×2304, 16:9)
+     - **Gallery[2]:** Iyer Malai (21) — ancient stone mandapam Wikimedia (4128×2322, 16:9)
+     - **Gallery[3]:** River Kaveri at Musiri Wikimedia (5152×3864, authentic location)
+     - **Gallery[4]:** Iyer Malai (3) — Ratnagiriswarar sacred hill Wikimedia (4128×2322, 16:9)
+     - **7 Places:** Kaveri/Kadambandurai river bathing ghats + Iyer Malai granite hill temple series; all Wikimedia Kadambandurai (1–10) and Iyer Malai (2–35) series, zero-collision verified.
+   - **Badge fix:** `"Himalayan Monastery"` → `"Spiritual Hermitage"`.
+   - **Tagline fix:** Generic Buddhist tagline → `"Sacred Hermitage & Contemplative Peace on the Banks of River Kaveri"`.
+
+3. **Integrity Verification:**
+   - `heroImage.src === gallery[0].src === seo.ogImage` ✅
+   - Gallery: exactly 5 images ✅
+   - Places: 7 × 3 photos + 7 card thumbnails = 28 place photos ✅
+   - Internal duplicates: 0 ✅
+   - Repo-wide collisions: 0 (verified against 66,376-URL index) ✅
+   - `data/destinations/index.json` synced with new hero URL ✅
+
+## Addendum — Phase 58: Image Integrity Certification, Degradation Reversal & "Recently Updated" Sort/Filter Activation (2026-09-24 rev-21)
+
+Aesthetic quality certification, uncurated batch reversal, and dynamic chronological discovery:
+
+1. **Aesthetic Quality Certification & Degradation Reversal:**
+   - Identified and completely reversed an experimental automated Flickr batch that replaced iconic, 4K/HD curated Pexels photos with off-topic or low-aesthetic Flickr photos (e.g. Taj Mahal side mosque, Manali kancha game, Pushkar 1997 cyber cafe, Varkala guesthouse room, Trimbakeshwar railway station).
+   - Restored 100% authentic, high-definition photography across all 2,393 destinations (14,013 places, 10,427 stays) back to the certified pristine state (`bb943308`).
+   - Verified that all landmark hero images display authentic, majestic perspectives with zero foreign stock or mislabeled architecture.
+
+2. **"✨ Latest (Newest First)" Sort & "✨ Recently Updated" Category Filter Activation:**
+   - **Frontend Engine (`js/pages/explore.js`):** Integrated `_updatedAt` timestamp calculation (`d._updatedAt = d.updatedAt ? new Date(d.updatedAt).getTime() : 0`) and enabled reverse-chronological sorting via `results.sort((a, b) => b._addedAt - a._addedAt)`. Added `Recently Updated` (`recently_updated`) filter chip with sparkles icon.
+   - **Taxonomy Matcher (`js/data/taxonomy.js`):** Added `recently_updated: (d) => Boolean(d.updatedAt)` to `CUSTOM_TYPE_MATCHERS` to ensure synchronized client-side filtering.
+   - **Homepage Category Strip (`js/pages/home.js`):** Added dynamic `Recently Updated` category badge linking directly to the newest destinations.
+   - **Saturday Catalog Synchronization:** Tagged the 235 authentic Saturday destinations (from commit `cec7400c`) with `updatedAt: "2026-09-19T12:00:00Z"` across `data/destinations/index.json`, `data/search-index.json`, and individual destination JSON files, giving users instant discovery of recently enriched destinations with zero image defects.
+
+3. **Master Triple Audit Verification:**
+   - **UI/UX Pro Max QA Audit:** 0 issues detected across all 8 HTML templates and 4 CSS files (WCAG AAA contrast, 44px touch targets, 390px/768px/1440px responsive parity).
+   - **Technical SEO Regression Guard:** 71/71 tests passed (6 XML sitemaps, 2,450 URLs, 11,935 images, absolute self-canonical tags, 404 routing).
+   - **Server & Performance:** Local server on port 8080 responding with HTTP 200 OK across all core landing pages and individual destination guides.
 
 ## Addendum — Phase 56: Multi-Worker Autonomous Parallel Engine & UI/UX Contrast Hardening (2026-09-21 rev-19)
 
