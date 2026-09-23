@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-09-23T12:19:11.558Z",
+  "architecture": {},
+  "robotsTxt": {
+    "passed": [
+      "Wildcard user-agent defined",
+      "Public root crawling allowed",
+      "Master sitemap accurately declared",
+      "Disallows /stubs/ to avoid redirect loop / duplicate indexing",
+      "Disallows /scripts/ internal tools",
+      "Disallows /reports/ audit logs",
+      "Disallows /docs/",
+      "Verified: Destination and public routes are NOT blocked"
+    ],
+    "errors": [],
+    "warnings": []
+  },
+  "headers": {
+    "passed": [
+      "nosniff header present",
+      "strict-origin-when-cross-origin present",
+      "/scripts/* protected with noindex, nofollow header",
+      "/stubs/* protected with noindex, follow header"
+    ],
+    "errors": [],
+    "warnings": []
+  },
+  "sitemaps": {
+    "totalUrls": 2450,
+    "totalImages": 11935,
+    "sitemaps": [
+      {
+        "file": "sitemap.xml",
+        "locCount": 5,
+        "imgCount": 0,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      },
+      {
+        "file": "sitemap-main.xml",
+        "locCount": 5,
+        "imgCount": 0,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      },
+      {
+        "file": "sitemap-states.xml",
+        "locCount": 52,
+        "imgCount": 0,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      },
+      {
+        "file": "sitemap-destinations-1.xml",
+        "locCount": 1000,
+        "imgCount": 4991,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      },
+      {
+        "file": "sitemap-destinations-2.xml",
+        "locCount": 1000,
+        "imgCount": 4983,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      },
+      {
+        "file": "sitemap-destinations-3.xml",
+        "locCount": 393,
+        "imgCount": 1961,
+        "hasXmlDeclaration": true,
+        "hasNamespace": true
+      }
+    ],
+    "invalidUrls": [],
+    "duplicateUrls": []
+  },
+  "canonicals": {
+    "passed": [],
+    "errors": [],
+    "warnings": []
+  },
+  "noindex": {
+    "directives": []
+  },
+  "templates": {
+    "index.html": {
+      "title": "ExploreDesh — Discover Incredible India",
+      "titleLength": 39,
+      "desc": "Discover India",
+      "descLength": 14,
+      "canonical": "https://exploredesh.com/",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 2
+    },
+    "destinations.html": {
+      "title": "All Destinations — ExploreDesh | Complete Catalogue of Bharat",
+      "titleLength": 61,
+      "desc": "Discover 2,393 destinations across 36 states & UTs of India. Filter by category, season, state, and budget with verified photography and travel guides.",
+      "descLength": 151,
+      "canonical": "https://exploredesh.com/destinations.html",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    },
+    "destination.html": {
+      "title": "Destination Guide — ExploreDesh",
+      "titleLength": 31,
+      "desc": "Explore top places to visit, best hotels, how to reach, and travel tips for this destination in India. Plan your perfect trip with ExploreDesh.",
+      "descLength": 143,
+      "canonical": null,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 0
+    },
+    "about.html": {
+      "title": "About Us — ExploreDesh",
+      "titleLength": 22,
+      "desc": "Learn about ExploreDesh — India",
+      "descLength": 31,
+      "canonical": "https://exploredesh.com/about.html",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    },
+    "contact.html": {
+      "title": "Contact Us — ExploreDesh",
+      "titleLength": 24,
+      "desc": "Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.",
+      "descLength": 111,
+      "canonical": "https://exploredesh.com/contact.html",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    },
+    "ai-finder.html": {
+      "title": "AI Trip Finder — ExploreDesh",
+      "titleLength": 28,
+      "desc": "Find your ideal Indian destination with AI Trip Finder. Match spots by travel vibe, budget, season, and region in seconds without signup.",
+      "descLength": 137,
+      "canonical": "https://exploredesh.com/ai-finder.html",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    },
+    "privacy.html": {
+      "title": "Privacy Policy — ExploreDesh",
+      "titleLength": 28,
+      "desc": "ExploreDesh Privacy Policy — what information we collect, how we use it, and the third-party services (weather, maps, photos) we rely on.",
+      "descLength": 137,
+      "canonical": "https://exploredesh.com/privacy.html",
+      "robots": "noindex, follow, max-image-preview:large",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    },
+    "terms.html": {
+      "title": "Terms of Use — ExploreDesh",
+      "titleLength": 26,
+      "desc": "The terms and conditions that govern your use of the ExploreDesh travel-discovery website.",
+      "descLength": 90,
+      "canonical": "https://exploredesh.com/terms.html",
+      "robots": "noindex, follow, max-image-preview:large",
+      "h1Count": 1,
+      "jsonLdCount": 1
+    }
+  },
+  "destinations": {
+    "totalChecked": 2393,
+    "thinPages": [
+      {
+        "slug": "someswara-swamy-temple-appikonda",
+        "title": "Someswara Swamy Temple, Appikonda",
+        "words": 13
+      },
+      {
+        "slug": "chowdeshwari-temple-at-nandavaram",
+        "title": "Chowdeshwari Temple at Nandavaram",
+        "words": 13
+      },
+      {
+        "slug": "ashtabhuji-temple",
+        "title": "Ashtabhuji Temple",
+        "words": 14
+      },
+      {
+        "slug": "palolem-beach",
+        "title": "Palolem Beach",
+        "words": 10
+      },
+      {
+        "slug": "uparkot-fort",
+        "title": "Uparkot Fort",
+        "words": 12
+      },
+      {
+        "slug": "kanthkot-fort",
+        "title": "Kanthkot Fort",
+        "words": 12
+      },
+      {
+        "slug": "shri-kalika-devi-temple",
+        "title": "Shri Kalika Devi Temple",
+        "words": 13
+      },
+      {
+        "slug": "someshwara-temple-marathahalli",
+        "title": "Someshwara Temple, Marathahalli",
+        "words": 14
+      },
+      {
+        "slug": "karimpuzha-wildlife-sanctuary",
+        "title": "Karimpuzha Wildlife Sanctuary",
+        "words": 13
+      },
+      {
+        "slug": "st-peter-and-st-paul-s-church-kolenchery",
+        "title": "St. Peter and St. Paul's Church, Kolenchery",
+        "words": 14
+      },
+      {
+        "slug": "sree-bhuvaneswary-temple-valamchuzhy",
+        "title": "Sree Bhuvaneswary Temple, Valamchuzhy",
+        "words": 14
+      },
+      {
+        "slug": "meenkulathi-temple",
+        "title": "Meenkulathi Temple",
+        "words": 12
+      },
+      {
+        "slug": "kolathukara-shiva-temple",
+        "title": "Kolathukara shiva temple",
+        "words": 6
+      },
+      {
+        "slug": "trikandiyur-mahadeva-temple",
+        "title": "Trikandiyur Mahadeva Temple",
+        "words": 12
+      },
+      {
+        "slug": "madhur",
+        "title": "Madhur",
+        "words": 13
+      },
+      {
+        "slug": "dronagiri-fort",
+        "title": "Dronagiri Fort द्रौणपुर रियासत",
+        "words": 12
+      },
+      {
+        "slug": "st-joseph-s-church-juhu",
+        "title": "St. Joseph's Church, Juhu",
+        "words": 12
+      },
+      {
+        "slug": "bihu-loukon",
+        "title": "Bihu Loukon",
+        "words": 10
+      },
+      {
+        "slug": "ladnu-jain-temple",
+        "title": "Ladnu Jain temple",
+        "words": 12
+      },
+      {
+        "slug": "gurdwara-nanaklama",
+        "title": "Gurdwara Nanaklama",
+        "words": 9
+      },
+      {
+        "slug": "ithiyapuram-kaavu",
+        "title": "Ithiyapuram kaavu",
+        "words": 11
+      },
+      {
+        "slug": "thiruppudaimarudur",
+        "title": "Thiruppudaimarudur",
+        "words": 13
+      },
+      {
+        "slug": "veeramakaliamman-temple-arantangi",
+        "title": "Veeramakaliamman Temple, Arantangi",
+        "words": 13
+      },
+      {
+        "slug": "kaleshwara-mukteswara-swamy-temple",
+        "title": "Kaleshwara Mukteswara Swamy Temple",
+        "words": 14
+      },
+      {
+        "slug": "bada-gaon-temple",
+        "title": "Bada Gaon temple",
+        "words": 14
+      },
+      {
+        "slug": "vasudhara-falls",
+        "title": "Vasudhara Falls",
+        "words": 11
+      }
+    ],
+    "duplicateSlugs": [],
+    "duplicateTitles": [],
+    "missingFields": [],
+    "invalidCoords": [],
+    "missingHero": [],
+    "lowAttractions": [],
+    "invalidPlaceImages": [],
+    "invalidAltTexts": []
+  },
+  "internalLinking": {
+    "stateLandingReachable": 0,
+    "totalDestinationsReachableViaCards": 0,
+    "orphanDestinations": {
+      "sitemapOnlySlugs": [],
+      "dataOnlySlugs": [],
+      "totalInIndex": 2393,
+      "totalInSitemap": 2393
+    },
+    "destinationsWithSimilarRail": 0
+  },
+  "structuredData": {
+    "passed": [],
+    "warnings": [],
+    "errors": []
+  },
+  "soft404": {
+    "verified": []
+  }
+}

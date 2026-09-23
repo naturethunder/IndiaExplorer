@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found (404) — ExploreDesh</title>
+  <meta name="description" content="The requested travel page could not be found on ExploreDesh. Browse 2,393 verified destinations across India or find your next adventure." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#FAF9F6" />
+  <!-- Fast-path zero-FOUC theme resolution -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('exploredesh_theme');
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#080A0F');
+      } catch (_) { }
+    })();
+  </script>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20260914_6" />
+</head>
+
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- Immersive ambient background glow -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-gradient-to-b from-amber-500/10 via-emerald-500/5 to-transparent blur-3xl rounded-full"></div>
+    <div class="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-sky-500/5 blur-3xl rounded-full"></div>
+  </div>
+
+  <header class="w-full border-b border-white/10 backdrop-blur-md bg-slate-950/60 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 text-white font-bold text-lg tracking-tight hover:opacity-90 transition-opacity" aria-label="ExploreDesh — Home">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 font-black text-sm shadow-md shadow-amber-500/20">ED</span>
+        <span>Explore<span class="text-amber-400">Desh</span></span>
+      </a>
+      <nav class="flex items-center gap-3 sm:gap-6 text-sm font-medium text-slate-300">
+        <a href="/" class="hover:text-amber-400 transition-colors">Home</a>
+        <a href="destinations.html" class="hover:text-amber-400 transition-colors">Destinations</a>
+        <a href="ai-finder.html" class="hover:text-amber-400 transition-colors">AI Finder</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="flex-1 flex items-center justify-center px-4 py-16 text-center">
+    <div class="max-w-xl mx-auto">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 text-amber-300 text-xs font-semibold border border-amber-500/20 mb-6 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        HTTP 404 — Destination Path Lost in Transit
+      </span>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4 drop-shadow-sm font-serif">
+        Page Not Found
+      </h1>
+
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto">
+        The trail you followed may have shifted, or this destination guide has moved to a new route in Bharat's catalogue.
+      </p>
+
+      <!-- Quick Search Bar -->
+      <form action="destinations.html" method="GET" class="relative max-w-md mx-auto mb-10">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search 2,393 destinations or states…"
+          class="w-full px-5 py-3.5 pl-12 rounded-full bg-white/10 text-white placeholder-slate-400 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent backdrop-blur-md text-sm transition-all"
+          aria-label="Search destinations"
+        />
+        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1.5 rounded-full bg-amber-400 text-slate-950 font-bold text-xs hover:bg-amber-300 transition-colors">
+          Search
+        </button>
+      </form>
+
+      <!-- Quick CTAs -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+        <a href="/" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amber-400 text-slate-950 font-bold text-sm hover:bg-amber-300 transition-transform active:scale-95 shadow-lg shadow-amber-400/20">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Return to Homepage
+        </a>
+        <a href="destinations.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 text-white font-semibold text-sm border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all backdrop-blur-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0V9a2 2 0 0 0-2-2M5 11V9a2 2 0 0 1 2-2m0 0V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 7h10"></path></svg>
+          Browse All Destinations
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-slate-500">
+    <p>© 2026 ExploreDesh — Discover Incredible India. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

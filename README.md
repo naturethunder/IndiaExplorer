@@ -5,9 +5,9 @@
 
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-23 rev-19):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 56: Comprehensive Saturday Reconciliation & Defect-Free Certification —** Reverted 245 authentic destinations to Saturday commit `17833b6e` (eliminating all foreign stock and cross-state leaks), preserved 4K/UHD benchmark (`mukteshwar-temple-punjab.json`), surgically repaired 45 destinations with pre-existing Saturday defects, upgraded Service Worker to `v1.0.8`, and updated cache-busters. Automated UI/UX QA audit: **0 issues detected (100/100 score)**.
+> **Platform Status (2026-09-23 rev-20):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 57: Google Crawlability, Indexability & Search Console Master Audit Certified —** Live GSC verification confirmed master sitemap (`sitemap.xml`) status **Success** with **2,450 discovered pages**, Homepage (`/`) and Catalogue (`/destinations.html`) live and **Indexed**, and 2,447 destination guides in active **Validation: Started** crawl queue. Upgraded `build-sitemap.js` with content `mtime` `<lastmod>` timestamps, created custom branded `404.html` with explicit `noindex` directives, and passed 100% of technical SEO regression tests (Score: **100/100**).
 
-> **Image Pipeline Status (2026-09-23):** **Phase 56 Certified Defect-Free —** 100% True HD (1920px+) photography assigned across catalog targets (100% live HTTP 200 OK, 100% unique, zero foreign stock, zero Pixabay session tokens, zero broken thumbnails). Total catalog: **66,500+ verified HD photos**.
+> **Image Pipeline Status (2026-09-23):** **Phase 57 Certified Defect-Free —** 100% True HD (1920px+) photography assigned across catalog targets (100% live HTTP 200 OK, 100% unique, zero foreign stock, zero Pixabay session tokens, zero broken thumbnails). Total catalog: **66,500+ verified HD photos**.
 
 A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
@@ -27,13 +27,13 @@ A luxury India travel-discovery platform. Browse **2,393 destinations**, filter 
 
 ```bash
 node scripts/serve.js                        # → http://localhost:8080 (Start local web server)
-node scripts/verify_khajuraho_batch.js       # → Strict zero-collision audit: 11 Khajuraho batch destinations
-node scripts/verify_batch3.js                # → Strict zero-collision audit: 14 Batch 3 destinations
-node scripts/verify_batch2.js                # → Strict zero-collision audit: 10 Batch 2 destinations
-node scripts/verify_meghalaya_strict.js      # → Strict zero-collision audit: 11 Meghalaya destinations
-node scripts/audit_session_hd_images.js      # → Platform-wide HD session audit: 47 destinations / 1,259 URLs
-node scripts/audit_all.js                    # → Master Unified Audit Suite: UI/UX + SEO + Media integrity
+node scripts/seo_audit.js                    # → Technical SEO & Indexing Audit (61 checks)
+node scripts/seo_regression_guard.js         # → Master SEO Regression Guard (71 checks)
+node scripts/audit/master_seo_audit.js       # → Deep Master SEO & Parity Audit (2,393 destinations)
+node scripts/audit/check_broken_links.js     # → Relative Internal Link Integrity Scan
 node scripts/ui_ux_qa_audit.js               # → UI/UX Pro Max automated QA audit across all HTML & CSS files
+node scripts/build-sitemap.js                # → Regenerate 6 XML sitemaps with authentic file mtime lastmod
+node scripts/build-stubs.js                  # → Regenerate 2,393 fallback redirect stubs
 ```
 
 Then open **http://localhost:8080/**. A server is required (not `file://`) because the site

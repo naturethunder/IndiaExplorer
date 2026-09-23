@@ -85,18 +85,23 @@ function middleTruncate(value, maxLength) {
 
 function destinationMetaTitle(dest, seoObj) {
   if (seoObj && seoObj.title && seoObj.title.trim().length > 15) {
-    return seoObj.title.trim();
+    const t = seoObj.title.trim();
+    if (t.length <= 70) return t;
+    // Clean verbose suffix for SERP display if exceeding 70 chars
+    const cleaned = t.replace(/\s*\|\s*ExploreDesh$/, '').trim();
+    return cleaned.length <= 70 ? cleaned : truncateMeta(t, 65);
   }
   const destName = String(dest && dest.title ? dest.title : 'Destination').trim();
   const stateStr = dest && dest.state ? `, ${dest.state}` : '';
-  const suffix = ` Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh`;
+  const suffix = ` Travel Guide | ExploreDesh`;
   const candidate = `${destName}${stateStr}${suffix}`;
-  return candidate.length <= 70 ? candidate : `${destName}${suffix}`;
+  return candidate.length <= 65 ? candidate : `${destName}${suffix}`;
 }
 
 function destinationMetaDescription(dest, seoObj) {
   if (seoObj && seoObj.description && seoObj.description.trim().length > 30) {
-    return seoObj.description.trim();
+    const raw = seoObj.description.trim();
+    return raw.length <= 160 ? raw : truncateMeta(raw, 160);
   }
   const destName = dest && dest.title ? dest.title : 'Destination';
   const ov = (dest && dest.overview && dest.overview.short) ? dest.overview.short : (dest && dest.short ? dest.short : '');

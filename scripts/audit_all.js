@@ -44,9 +44,11 @@ try {
 console.log('\n--- [2/3] RUNNING TECHNICAL SEO & INDEXING AUDIT ---');
 try {
   const out = execSync('node scripts/seo_audit.js', { cwd: ROOT, encoding: 'utf8' });
-  results.seo.output = out;
-  results.seo.status = out.includes('ZERO ERRORS FOUND') ? 'PASS' : 'WARN';
+  const regOut = execSync('node scripts/seo_regression_guard.js', { cwd: ROOT, encoding: 'utf8' });
+  results.seo.output = out + '\n' + regOut;
+  results.seo.status = (out.includes('ZERO ERRORS FOUND') && regOut.includes('ZERO DEFECTS DETECTED')) ? 'PASS' : 'WARN';
   console.log(out);
+  console.log(regOut);
 } catch (err) {
   results.seo.status = 'FAIL';
   results.seo.output = err.stdout || err.message;

@@ -94,6 +94,17 @@ const server = http.createServer((req, res) => {
     }
 
     if (!match) {
+      const custom404 = checkFile('/404.html');
+      if (custom404) {
+        const content404 = fs.readFileSync(custom404.fullPath);
+        res.writeHead(404, {
+          'Content-Type': 'text/html; charset=utf-8',
+          'Content-Length': content404.length,
+          'X-Robots-Tag': 'noindex, follow'
+        });
+        res.end(content404);
+        return;
+      }
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('404 Not Found: ' + urlPath);
       return;

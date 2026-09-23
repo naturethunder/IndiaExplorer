@@ -165,16 +165,27 @@ export function destinationJsonLd(dest, canonicalPath) {
     };
   }
 
-  // Google review stars (aggregateRating)
-  const ratingVal = ov.rating || dest.rating || 4.5;
-  const reviewCountVal = ov.reviewCount || dest.reviewCount || 1200;
-  out.aggregateRating = {
-    '@type': 'AggregateRating',
-    ratingValue: ratingVal,
-    bestRating: 5,
-    worstRating: 1,
-    ratingCount: reviewCountVal,
-  };
+  // Google review stars (aggregateRating) — Rule C & F: strictly emit only when authentic data exists
+  const ratingVal = ov.rating || dest.rating;
+  const reviewCountVal = ov.reviewCount || dest.reviewCount;
+  if (ratingVal && reviewCountVal && Number(ratingVal) > 0 && Number(reviewCountVal) > 0) {
+    out.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: Number(ratingVal),
+      bestRating: 5,
+      worstRating: 1,
+      ratingCount: Number(reviewCountVal),
+    };
+  }
+
+  // Hierarchy relationship (State & Country)
+  if (dest.state) {
+    out.containedInPlace = {
+      '@type': 'AdministrativeArea',
+      name: dest.state,
+      addressCountry: 'IN'
+    };
+  }
 
   // Attractions / Top Places for Google "Things to do" carousel
   const places = (dest.topPlaces && dest.topPlaces.length) ? dest.topPlaces : (dest.places || []);

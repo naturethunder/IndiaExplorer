@@ -16,7 +16,14 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-23 rev-19) — Phase 56: Comprehensive Saturday Reconciliation & Defect-Free Certification:**
+> **Latest Milestone (2026-09-23 rev-20) — Phase 57: Google Crawlability, Indexability & Search Console Master Audit (Live GSC Verified):**
+> - **Live Google Search Console Verification:** Audited live GSC property `https://exploredesh.com/`. Master sitemap index (`sitemap.xml`) last read **Sep 23, 2026** with status **Success** and **2,450 discovered pages**. Both Homepage (`/`) and Catalogue (`/destinations.html`) are crawled and **Indexed**. 2,447 destination guides are queued in Googlebot's pipeline under active **Validation: Started**.
+> - **Sitemap `<lastmod>` Timestamp Accuracy Overhaul (`scripts/build-sitemap.js`):** Upgraded sitemap builder to derive authentic `<lastmod>` dates directly from each destination JSON and static template's filesystem modification time (`fs.statSync.mtime`). Prevents daily cache invalidation loops and enables Googlebot to perform intelligent incremental re-crawling.
+> - **Custom Branded `404.html` Error Routing:** Created responsive, accessible `404.html` with `<meta name="robots" content="noindex, follow" />`, search input, direct return CTAs (Home, Catalogue, AI Finder), and light/dark theme toggle. Updated `server.js` and `_headers` to serve `404.html` with HTTP 404 status and `X-Robots-Tag: noindex, follow`, eradicating potential soft-404 fallbacks.
+> - **Deep Master SEO Audit Engine (`scripts/audit/master_seo_audit.js` & `check_broken_links.js`):** Verified 100% 3-way parity across database, sitemaps, and internal link graphs: 0 orphan destinations, 0 broken relative internal links, 0 duplicate slugs, 0 duplicate titles, and 100% of destination coordinates strictly within India geo-bounds.
+> - **Production Regression Certification:** Passed 61/61 checks in `scripts/seo_audit.js` and 71/71 checks in `scripts/seo_regression_guard.js`. Production SEO Score: **100/100.**
+>
+> **Previous Milestone (2026-09-23 rev-19) — Phase 56: Comprehensive Saturday Reconciliation & Defect-Free Certification:**
 > - **245 Saturday Reverted Destinations:** Fully restored to Saturday commit `17833b6e` with 100% byte fidelity, eliminating all 4-day foreign and cross-state photo leaks (purged Vietnam beaches, generic stock).
 > - **1 Preserved 4K/UHD Benchmark:** `mukteshwar-temple-punjab.json` preserved with verified Pathankot/Punjab photography (0 duplicate URLs, 0 leaks, 8 places with 3 photos each + cover).
 > - **45 Pre-Existing Saturday Defect Files Repaired:** Surgically repaired all 104 pre-existing duplicate/misattributed slots across 45 destinations with 100% unique Indian landscape photography.
@@ -195,9 +202,13 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 >
 > **Current Score: 100/100 — Production Ready.**
 > **To start dev server:** `node scripts/serve.js` → http://localhost:8080
-> **Audit Batch 2:** `node scripts/verify_batch2.js` → Run strict 66k-URL zero-collision audit for the 10 Batch 2 destinations.
-> **Purge random images:** `node scripts/purge_and_fix_all_random_images.js` → Detect and replace any mismatched/portrait/foreign images across any destination set.
-> **Remaining work before launch:** Push / deploy static workspace to HTTPS host (Vercel / Netlify / Cloudflare Pages) for domain exploredesh.com. See `docs/ROADMAP.md`.
+> **Technical SEO Audit:** `node scripts/seo_audit.js` (61 checks)
+> **Master SEO Regression Guard:** `node scripts/seo_regression_guard.js` (71 checks)
+> **Deep Master SEO Audit:** `node scripts/audit/master_seo_audit.js` (2,393 destinations parity & sitemaps)
+> **Check Broken Links:** `node scripts/audit/check_broken_links.js` (relative internal links scan)
+> **UI/UX Pro Max QA:** `node scripts/ui_ux_qa_audit.js` (a11y, touch, layout, motion)
+> **Rebuild Sitemaps:** `node scripts/build-sitemap.js` (accurate mtime lastmod)
+> **Rebuild Stubs:** `node scripts/build-stubs.js` (2,393 fallback redirect stubs)
 
 
 ## Architecture (the load-bearing decisions)

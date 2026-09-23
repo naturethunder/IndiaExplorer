@@ -89,30 +89,37 @@ console.log('Building modular Google-compliant sitemaps for ' + ORIGIN + '...');
 const subSitemaps = [];
 
 // 1. sitemap-main.xml (Static core pages)
-const mainEntries = STATIC.map(s => urlEntry(s.loc, s.priority, s.changefreq));
+const mainEntries = STATIC.map(s => {
+  const filePath = path.join(ROOT, s.loc || 'index.html');
+  const mtime = fs.existsSync(filePath) ? fs.statSync(filePath).mtime.toISOString().split('T')[0] : TODAY;
+  return urlEntry(s.loc, s.priority, s.changefreq, [], mtime);
+});
 fs.writeFileSync(path.join(ROOT, 'sitemap-main.xml'), wrapUrlset(mainEntries));
 subSitemaps.push('sitemap-main.xml');
 console.log(`  ✓ Wrote sitemap-main.xml (${mainEntries.length} URLs)`);
 
 // 2. sitemap-states.xml (State, Type/Category, and Month filter landing pages)
 const stateEntries = [];
+const indexMtime = fs.existsSync(path.join(DEST_DIR, 'index.json'))
+  ? fs.statSync(path.join(DEST_DIR, 'index.json')).mtime.toISOString().split('T')[0]
+  : TODAY;
 
 // State landings
 idx.meta.states.forEach(state => {
   const destinationCount = idx.destinations.filter(d => d.state === state).length;
   if (destinationCount >= 3) {
-    stateEntries.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly'));
+    stateEntries.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly', [], indexMtime));
   }
 });
 
 // Category / type landings
 idx.meta.types.forEach(type => {
-  stateEntries.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly'));
+  stateEntries.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly', [], indexMtime));
 });
 
 // Monthly travel guides
 idx.meta.months.forEach(month => {
-  stateEntries.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly'));
+  stateEntries.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly', [], indexMtime));
 });
 
 fs.writeFileSync(path.join(ROOT, 'sitemap-states.xml'), wrapUrlset(stateEntries));
@@ -128,8 +135,13 @@ idx.destinations.forEach(d => {
   const imgList = [];
   const dPath = path.join(DEST_DIR, d.slug + '.json');
   let detail = null;
+  let destLastmod = TODAY;
   if (fs.existsSync(dPath)) {
-    try { detail = JSON.parse(fs.readFileSync(dPath, 'utf8')); } catch (_) {}
+    try {
+      const st = fs.statSync(dPath);
+      destLastmod = st.mtime.toISOString().split('T')[0];
+      detail = JSON.parse(fs.readFileSync(dPath, 'utf8'));
+    } catch (_) {}
   }
 
   const target = detail || d;
@@ -159,7 +171,7 @@ idx.destinations.forEach(d => {
   }
 
   totalImages += imgList.length;
-  destEntries.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList));
+  destEntries.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList, destLastmod));
 });
 
 // Split destinations into chunks of DESTINATIONS_PER_CHUNK
