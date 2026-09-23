@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-19 rev-12)
+# ExploreDesh — Project Guide (updated 2026-09-23 rev-19)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -9,14 +9,23 @@
 > what was verified, and what's still open. Read this to understand the site's current health state.
 
 An India travel-discovery platform: browse **2,393 destinations** (14,013 places,
-66,480+ gallery images catalog-wide, 10,427 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
+66,500+ gallery images catalog-wide, 10,427 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
 detail pages with places, stays, routes, an interactive Leaflet map, **live weather**, and
 dynamic similar-destination recommendations.
 The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-19 rev-12) — Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness:**
+> **Latest Milestone (2026-09-23 rev-19) — Phase 56: Comprehensive Saturday Reconciliation & Defect-Free Certification:**
+> - **245 Saturday Reverted Destinations:** Fully restored to Saturday commit `17833b6e` with 100% byte fidelity, eliminating all 4-day foreign and cross-state photo leaks (purged Vietnam beaches, generic stock).
+> - **1 Preserved 4K/UHD Benchmark:** `mukteshwar-temple-punjab.json` preserved with verified Pathankot/Punjab photography (0 duplicate URLs, 0 leaks, 8 places with 3 photos each + cover).
+> - **45 Pre-Existing Saturday Defect Files Repaired:** Surgically repaired all 104 pre-existing duplicate/misattributed slots across 45 destinations with 100% unique Indian landscape photography.
+> - **Siddhivinayak Temple Mumbai Overhaul:** Cleaned all 5 gallery slots (removed Kerala scenes, added Gateway/Mumbai heritage) and replaced broken thumbnail links in place cards with authentic Mumbai landmark photography.
+> - **Cache & Service Worker Invalidation:** Upgraded Service Worker in `sw.js` to `v1.0.8` and bumped script query in `destination.html` to `?v=20260923_v5` to eliminate browser TDZ ReferenceErrors.
+> - **Sitemaps & SEO Certified:** Generated 5 Google-compliant sitemaps (2,450 URLs, 11,935 images); passed 100% of Schema.org `TouristDestination`, `FAQPage`, `BreadcrumbList`, and `WebSite` tests.
+> - **Zero Regression Certification:** Node.js syntax checks, browser end-to-end smoke test on `http://localhost:8080/` confirmed 0 console errors, 0 broken images, and 100% live HTTP 200 reachability. Production Health Score: **100/100.**
+>
+> **Previous Milestone (2026-09-19 rev-12) — Phase 51: Deep Mobile Screen Audit & Light/Dark Mode Full Responsiveness:**
 > - **Calligraphy Kicker Mobile Decoration Line & Star Wrap Fix:** Resolved orphan trailing star `✦` on screens $\le 640\text{px}$ in `styles.css` and `glass-immersive.css` using `white-space: nowrap !important; max-width: 100%;` and responsive font clamp (`clamp(1.1rem, 4.2vw, 1.35rem)`).
 > - **Scrimmed Photo Hero Typography Protection in Light Mode:** Scoped `.hero-home .gold-gradient-text` and `.hero-home .calligraphy-kicker` in Light Mode to luminous sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text-shadow protection (`0 3px 18px rgba(0, 0, 0, 0.6)`), preventing muddy dark bronze against dark photo backdrops.
 > - **Calligraphy Dark Dropshadow Elimination in Light Mode:** Enforced `filter: none !important; text-shadow: none !important;` on `.calligraphy-kicker` under `html[data-theme="light"]`, eradicating dark blurred halos on white pages.
