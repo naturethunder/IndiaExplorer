@@ -515,3 +515,10 @@ fs.writeFileSync(SEARCH_OUT, JSON.stringify({ entries: searchEntries }));
 const kb = (p) => Math.round(fs.statSync(p).size / 1024);
 console.log(`OK: ${written} destination JSON files → data/destinations/`);
 console.log(`index.json ${kb(path.join(OUT_DIR, 'index.json'))} KB, search-index.json ${kb(SEARCH_OUT)} KB`);
+
+// Automatically generate the lightweight home-manifest.json
+try {
+  require('./build-home-manifest').build();
+} catch (e) {
+  console.warn('Warning: could not run build-home-manifest:', e.message);
+}

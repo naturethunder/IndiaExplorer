@@ -55,7 +55,7 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
-      u.searchParams.set('w', String(Math.min(width, 1200)));
+      u.searchParams.set('w', String(Math.min(width, 1920)));
       return u.toString();
     } catch (_) {
       return url;
@@ -69,7 +69,7 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'format');
       u.searchParams.set('fit', 'crop');
-      u.searchParams.set('w', String(Math.min(width, 1200)));
+      u.searchParams.set('w', String(Math.min(width, 1920)));
       u.searchParams.set('q', '80');
       return u.toString();
     } catch (_) {

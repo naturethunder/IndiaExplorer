@@ -2,7 +2,7 @@
  * home.js — page logic for index.html.
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
-import { fetchIndex } from '../data/api.js';
+import { fetchIndex, fetchHomeIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js?v=20260914_7';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
@@ -142,28 +142,59 @@ function injectSkeletons() {
 injectSkeletons();
 
 let idx;
+let isFullIndexLoaded = false;
 try {
-  idx = await fetchIndex();
+  // Ultra-fast instant initial render (~148 KB payload instead of 4 MB)
+  idx = await fetchHomeIndex();
 } catch (err) {
-  // Chrome (navbar/footer) already mounted; show a minimal failure note
-  // instead of a silently empty page.
-  console.warn('[home] manifest failed to load:', err);
-  const main = document.getElementById('main');
-  if (main) main.insertAdjacentHTML('beforeend',
-    '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
-  throw err;
+  try {
+    idx = await fetchIndex();
+    isFullIndexLoaded = true;
+  } catch (fallbackErr) {
+    console.warn('[home] manifest failed to load:', fallbackErr);
+    const main = document.getElementById('main');
+    if (main) main.insertAdjacentHTML('beforeend',
+      '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
+    throw fallbackErr;
+  }
 }
-const summaries = idx.destinations;
+
+let summaries = idx.destinations;
 const STATES = idx.meta.states;
 const MONTHS = idx.meta.months || [];
-const bySlug = new Map(summaries.map((d) => [d.slug, d]));
+let bySlug = new Map(summaries.map((d) => [d.slug, d]));
 
 // Count destinations in a state (for the "view all in <state>" suggestion).
-function stateCount(state) { return summaries.reduce((n, d) => n + (d.state === state ? 1 : 0), 0); }
+function stateCount(state) {
+  if (idx.meta && idx.meta.stateCounts && idx.meta.stateCounts[state] != null) {
+    return idx.meta.stateCounts[state];
+  }
+  return summaries.reduce((n, d) => n + (d.state === state ? 1 : 0), 0);
+}
 function stateUrl(state) { return 'destinations.html?state=' + encodeURIComponent(state); }
 
 function search(q) {
   return searchDestinations(summaries, q);
+}
+
+// Background promotion: load full 2,393 index quietly so deep autocomplete works across all India
+function loadFullCatalog() {
+  if (isFullIndexLoaded) return;
+  fetchIndex().then((fullIdx) => {
+    if (!fullIdx || !fullIdx.destinations) return;
+    isFullIndexLoaded = true;
+    summaries = fullIdx.destinations;
+    bySlug = new Map(summaries.map((d) => [d.slug, d]));
+    if (fullIdx.count) idx.count = fullIdx.count;
+  }).catch(() => {});
+}
+
+if (!isFullIndexLoaded) {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadFullCatalog, { timeout: 2500 });
+  } else {
+    setTimeout(loadFullCatalog, 800);
+  }
 }
 
 // ─── Hero inline stats ────────────────────────────────────
@@ -217,15 +248,17 @@ function search(q) {
     { type: 'forts', ic: 'gem', tint: 'tint-amber', label: 'Forts & Palaces', countKey: 'forts' },
     { type: 'ecotourism', ic: 'flower', tint: 'tint-green', label: 'Ecotourism', countKey: 'ecotourism' }
   ];
-  // Live counts from the manifest — pseudo-categories (road_trips/camping/
-  // forts/ecotourism) use the same CUSTOM_TYPE_MATCHERS predicate explore.js
-  // filters on, so the chip count always matches what clicking through yields.
-  const counts = {};
-  idx.destinations.forEach((d) => { counts[d.type] = (counts[d.type] || 0) + 1; });
-  const customCounts = {};
-  Object.keys(CUSTOM_TYPE_MATCHERS).forEach((key) => {
-    customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
-  });
+  // Live counts from the manifest — use pre-calculated counts if available from home-manifest
+  const counts = (idx.meta && idx.meta.categoryCounts) ? { ...idx.meta.categoryCounts } : {};
+  if (!idx.meta || !idx.meta.categoryCounts) {
+    idx.destinations.forEach((d) => { counts[d.type] = (counts[d.type] || 0) + 1; });
+  }
+  const customCounts = (idx.meta && idx.meta.customCounts) ? { ...idx.meta.customCounts } : {};
+  if (!idx.meta || !idx.meta.customCounts) {
+    Object.keys(CUSTOM_TYPE_MATCHERS).forEach((key) => {
+      customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
+    });
+  }
 
   const totalCount = idx.count || summaries.length || 2393;
 
@@ -370,7 +403,10 @@ function search(q) {
   }
 
   input.addEventListener('input', onInput);
-  input.addEventListener('focus', onInput);
+  input.addEventListener('focus', function () {
+    loadFullCatalog();
+    onInput();
+  });
   input.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowDown') { e.preventDefault(); setActive(activeIdx + 1); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(activeIdx - 1); }

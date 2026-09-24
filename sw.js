@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.0.8';
+const VERSION = 'v1.0.9';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -28,6 +28,7 @@ const APP_SHELL_URLS = [
   '/css/glass-immersive.css',
   '/css/destination-immersive.css',
   '/css/explore-immersive.css',
+  '/data/destinations/home-manifest.json',
   '/js/data/api.js',
   '/js/data/taxonomy.js',
   '/js/components/icons.js',

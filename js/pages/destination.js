@@ -6,7 +6,7 @@
  * price-tier meta), and renders every tab. Google Maps Embed is mounted
  * lazily via GoogleMapEmbed component when opening the Map tab.
  */
-import { fetchDestination, fetchIndex } from '../data/api.js';
+import { fetchDestination, fetchIndex, fetchHomeIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg, optimizeImageUrl } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';
@@ -148,14 +148,27 @@ if (!dest) {
   // Instant render: show hero photo, overview, places & stays in <50ms without waiting for 4.15MB index
   main(dest, null);
 
-  // Background manifest load for bottom Similar Destinations rail
-  fetchIndex()
+  // Lean background manifest load for bottom Similar Destinations rail (~148 KB instead of 2.9 MB)
+  fetchHomeIndex()
     .then((loadedIdx) => {
       if (loadedIdx && typeof window.__renderSimilarDestinations === 'function') {
-        window.__renderSimilarDestinations(loadedIdx);
+        const found = window.__renderSimilarDestinations(loadedIdx);
+        if (!found) {
+          fetchIndex().then((fullIdx) => {
+            if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
+              window.__renderSimilarDestinations(fullIdx);
+            }
+          }).catch(() => {});
+        }
       }
     })
-    .catch(() => { });
+    .catch(() => {
+      fetchIndex().then((fullIdx) => {
+        if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
+          window.__renderSimilarDestinations(fullIdx);
+        }
+      }).catch(() => {});
+    });
 }
 
 function main(dest, idx) {
@@ -984,9 +997,10 @@ function main(dest, idx) {
 
       // 3. Backfill with Top Places if gallery has fewer than 5 photos
       (places || []).forEach(function (p) {
-        if (photos.length < 5 && p.image && p.image.src) {
+        const pImgFallback = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '');
+        if (photos.length < 5 && pImgFallback) {
           addPhoto({
-            src: optimizeImageUrl(p.image.src, 1400),
+            src: optimizeImageUrl(pImgFallback, 1400),
             title: p.name,
             subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
             category: p.category || 'attraction'
@@ -1260,11 +1274,12 @@ function main(dest, idx) {
       const fee = p.entryFee === 'Free'
         ? '<span class="text-amber-400 font-medium">Free Entry</span>'
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
-      // Bug 14 fix: guard p.image before accessing .src to avoid null crash
-      const pImg = (p.image && p.image.src) ? p.image : null;
+      // Support string and object image structures so real place images are always visible
+      const pImgSrc = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '');
+      const pImgAlt = (typeof p.image === 'object' && p.image && p.image.alt) ? p.image.alt : (p.name || '');
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImg ? '<img src="' + esc(optimizeImageUrl(pImg.src, 600)) + '" alt="' + esc(pImg.alt || p.name) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
+        (pImgSrc ? '<img src="' + esc(optimizeImageUrl(pImgSrc, 600)) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -2354,7 +2369,9 @@ function main(dest, idx) {
           '</div>' +
           '</a>';
       }).join('');
+      return similar.length >= 4;
     }
+    return false;
   }
 
   window.__renderSimilarDestinations = populateSimilar;
@@ -2398,8 +2415,9 @@ function main(dest, idx) {
   // ─── Place photos: card image as slide 1 + baked p.photos ──
   function fetchPlacePhotos(p, cb) {
     const list = [];
-    if (p.image && p.image.src && typeof p.image.src === 'string' && !p.image.src.includes('picsum.photos')) {
-      list.push(p.image.src);
+    const pImgSrc = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '');
+    if (pImgSrc && !pImgSrc.includes('picsum.photos')) {
+      list.push(pImgSrc);
     }
     if (Array.isArray(p.photos)) {
       for (const u of p.photos) {
@@ -2413,12 +2431,14 @@ function main(dest, idx) {
       cb(list);
       return;
     }
-    if (dest.heroImage && dest.heroImage.src) {
-      cb([dest.heroImage.src]);
+    const heroSrc = typeof dest.heroImage === 'string' ? dest.heroImage : (dest.heroImage && dest.heroImage.src ? dest.heroImage.src : '');
+    if (heroSrc) {
+      cb([heroSrc]);
       return;
     }
-    if (dest.image && dest.image.src) {
-      cb([dest.image.src]);
+    const destImgSrc = typeof dest.image === 'string' ? dest.image : (dest.image && dest.image.src ? dest.image.src : '');
+    if (destImgSrc) {
+      cb([destImgSrc]);
       return;
     }
     cb([]);

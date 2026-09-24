@@ -4,7 +4,7 @@ const path = require('path');
 const DEST_DIR = path.join(__dirname, '../data/destinations');
 const INDEX_FILE = path.join(DEST_DIR, 'index.json');
 
-const files = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json');
+const files = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json' && f !== 'home-manifest.json');
 
 console.log('=== COMPREHENSIVE REPOSITORY-WIDE INTEGRITY AUDIT ===');
 console.log(`Total destination files: ${files.length}\n`);

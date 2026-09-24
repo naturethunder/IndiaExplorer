@@ -44,8 +44,17 @@ export async function fetchDestination(slug) {
 }
 
 /**
- * Lightweight manifest: { count, meta: {priceTiers, types, states, months},
- * destinations: [summary…] }. Used by list/browse pages — never the full data.
+ * Ultra-fast homepage manifest (~148 KB instead of 4 MB uncompressed):
+ * Carries all site metadata, counts, and curated featured destinations across
+ * all home sections (hills, trending, popular, explore, seasons, months, and map).
+ */
+export function fetchHomeIndex() {
+  return getJSON(BASE + '/destinations/home-manifest.json');
+}
+
+/**
+ * Full lightweight manifest: { count, meta: {priceTiers, types, states, months},
+ * destinations: [summary…] }. Used by browse/search pages.
  */
 export function fetchIndex() {
   return getJSON(BASE + '/destinations/index.json');

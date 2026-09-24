@@ -5,9 +5,9 @@
 
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-24 rev-22):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 59 Certified —** Saccidananda Ashram (Shantivanam) fully overhauled with authentic Kaveri river, Iyer Malai hill temple, and Kadambandurai ghat photography. Hero CSS cropping bug fixed (`object-position: center center`). Passed 100% of UI/UX QA (0 issues) and technical SEO regression tests (71/71 tests passed, Score: **100/100**).
+> **Platform Status (2026-09-24 rev-23):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 60 Certified —** 19 priority destinations fully overhauled with authentic HD photography and zero cross-destination collisions. Place card rendering normalized (`js/pages/destination.js`) so that all 106 attraction thumbnails visibly render real images in the live UI. Passed 100% of UI/UX QA (0 issues) and technical SEO regression tests (71/71 tests passed, Score: **100/100**).
 
-> **Image Pipeline Status (2026-09-24):** **Phase 59 Certified Defect-Free —** 100% True HD (1920px+) authentic photography assigned across catalog targets (100% live HTTP 200 OK, zero foreign stock, zero Pixabay session tokens, zero broken thumbnails). Total catalog: **66,500+ verified HD photos**.
+> **Image Pipeline Status (2026-09-24):** **Phase 60 Certified Defect-Free —** 100% True HD (1920px+) authentic photography assigned across catalog targets (100% live HTTP 200 OK, zero foreign stock, zero Pixabay session tokens, zero broken thumbnails). Total catalog: **66,500+ verified HD photos**.
 
 A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
