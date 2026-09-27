@@ -5,29 +5,32 @@
   "country": "India",
   "region": "Lakshadweep Archipelago",
   "type": "beach",
-  "badge": "Island Gateway",
-  "tagline": "Gateway airfield island of Lakshadweep with scenic ocean runway",
+  "badge": "Coral Atoll Gateway",
+  "tagline": "Agatti Island — premier coral atoll and turquoise lagoon of Lakshadweep",
   "image": {
-    "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1280&q=80",
-    "alt": "Agatti Island, Lakshadweep"
+    "src": "https://images.pexels.com/photos/13828958/pexels-photo-13828958.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Agatti Island Crystal Turquoise Lagoon & Coral Reef — Lakshadweep"
   },
   "heroImage": {
-    "src": "https://images.pexels.com/photos/37943746/pexels-photo-37943746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Agatti Island landscape 5"
+    "src": "https://images.pexels.com/photos/13828958/pexels-photo-13828958.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Agatti Island Crystal Turquoise Lagoon & Coral Reef — Lakshadweep",
+    "title": "Agatti Island Crystal Turquoise Lagoon & Coral Reef"
   },
   "overview": {
-    "short": "Gateway island with dramatic ocean airstrip runway and clear blue lagoons.",
-    "description": "Agatti Island features a 7km narrow strip of land surrounded by a deep blue ocean and calm shallow lagoons. It serves as the primary airfield entrance to the Lakshadweep archipelago.",
+    "short": "Agatti Island is the premier coral atoll gateway of Lakshadweep, famed for its 7-kilometer turquoise lagoon, vibrant coral reefs, and white coral sands.",
+    "description": "Agatti Island is an idyllic 7.6 km long coral atoll in the Union Territory of Lakshadweep. Celebrated for its breathtaking shallow turquoise lagoon, world-class scuba diving, colorful living coral reefs, and sea turtle habitats, Agatti serves as the scenic entry point to the Lakshadweep archipelago.",
     "features": [
-      "Lagoon Kayaking",
-      "Island Hopping",
-      "Airport Runway View",
-      "Deep Sea Fishing"
+      "Turquoise Lagoon",
+      "Coral Reef Scuba Diving",
+      "Glass Bottom Boats",
+      "Snorkeling with Sea Turtles",
+      "White Coral Sands"
     ],
     "rating": 4.8,
     "reviewCount": 1850,
-    "minPrice": 800,
-    "distanceFromDelhi": 2130
+    "minPrice": 3500,
+    "distanceFromDelhi": 2130,
+    "altitude": 3
   },
   "bestTime": {
     "label": "Oct – May",
@@ -423,24 +426,100 @@
   },
   "topPlaces": [
     {
-      "name": "Agatti Lagoon",
+      "name": "Agatti Turquoise Lagoon & Coral Reef",
       "category": "beach",
-      "distance": "1 km from Agatti Island, Lakshadweep",
-      "entryFee": "Free",
-      "timings": "All day",
-      "duration": "2–3 hrs",
-      "rating": 4.8,
-      "description": "Shallow calm waters perfect for swimming, windsurfing and glass-bottom boat rides.",
+      "distance": "Directly off Island Shores",
+      "entryFee": "Free (Watersports extra)",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "3–4 hrs",
+      "rating": 4.9,
+      "description": "An expansive shallow coral lagoon extending across several square kilometers. World-renowned for crystal transparency, snorkeling among parrotfish and sea turtles, kayaking, and glass-bottom boating.",
+      "travelTime": "Immediate beach access across island",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rowing_to_lagoon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Agatti Lagoon, Agatti Island"
+        "src": "https://images.pexels.com/photos/3525724/pexels-photo-3525724.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Agatti Turquoise Lagoon Waters — Lakshadweep"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anthan_Beach_in_Agatti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Lakshadweep_Islands%2C_India_%28MODIS_2015-01-14%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Dweep_Halva.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "5–10 mins walk / 3 min drive from Agatti Island"
+        {
+          "src": "https://images.pexels.com/photos/30037452/pexels-photo-30037452.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Sandy Atoll Island and Turquoise Lagoon Perspective 1 — Agatti",
+          "title": "Sandy Atoll Island Perspective 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/8356055/pexels-photo-8356055.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tropical Atoll Vegetation and Outer Reef Perspective 2 — Lakshadweep",
+          "title": "Tropical Atoll Vegetation Perspective 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/9080914/pexels-photo-9080914.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Vibrant Coral Reef Patterns Perspective 3 — Agatti Lagoon",
+          "title": "Vibrant Coral Reef Patterns Perspective 3"
+        }
+      ]
+    },
+    {
+      "name": "Eastern Jetty & White Sand Beach",
+      "category": "nature",
+      "distance": "Eastern Shore of Agatti",
+      "entryFee": "Free",
+      "timings": "Sunrise to Sunset",
+      "duration": "2–3 hrs",
+      "rating": 4.7,
+      "description": "A serene white coral sand beach flanked by tall coconut palms and a wooden jetty. Offers calm waters for swimming and spectacular views of local fishing catamarans during sunrise.",
+      "travelTime": "5 mins from Agatti Airstrip",
+      "image": {
+        "src": "https://images.pexels.com/photos/17877162/pexels-photo-17877162.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Eastern Jetty White Sand Beach — Agatti Island, Lakshadweep"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/28408404/pexels-photo-28408404.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tranquil Turquoise Waters and Palm Shaded Shore View 1 — Agatti",
+          "title": "Tranquil Turquoise Waters View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/1724433/pexels-photo-1724433.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Pristine White Coral Sands and Crystal Lagoon View 2 — Lakshadweep",
+          "title": "Pristine White Coral Sands View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/3695175/pexels-photo-3695175.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Exotic Living Corals and Sea Life in Shallow Waters View 3 — Agatti",
+          "title": "Exotic Living Corals View 3"
+        }
+      ]
+    },
+    {
+      "name": "South Point Sandspit & Coral Shoals",
+      "category": "scenic",
+      "distance": "Southern Tip of Agatti Island",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 6:30 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.8,
+      "description": "The narrow southern sandspit where the calm turquoise lagoon converges with the deeper sapphire waters of the Arabian Sea. Ideal for sunset walks and observing marine bird life.",
+      "travelTime": "10–12 mins bike/auto ride from Jetty",
+      "image": {
+        "src": "https://images.pexels.com/photos/1450345/pexels-photo-1450345.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "South Point Sandspit Coral Shoals — Agatti Island, Lakshadweep"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/9149283/pexels-photo-9149283.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Aerial Panorama of Island Sandspit View 1 — Agatti Island",
+          "title": "Aerial Panorama of Island Sandspit View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/36382888/pexels-photo-36382888.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Serene Coastal Waters and Sand Bar View 2 — Agatti Lakshadweep",
+          "title": "Serene Coastal Waters View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/30658207/pexels-photo-30658207.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Coral Sand Beach and Distant Horizon View 3 — Lakshadweep",
+          "title": "Coral Sand Beach and Horizon View 3"
+        }
+      ]
     }
   ],
   "hotels": [
@@ -530,30 +609,29 @@
   ],
   "gallery": [
     {
-      "src": "https://images.pexels.com/photos/37943746/pexels-photo-37943746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Agatti Island landscape",
-      "title": "Agatti Island landscape"
+      "src": "https://images.pexels.com/photos/13828958/pexels-photo-13828958.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Agatti Island Crystal Turquoise Lagoon & Coral Reef — Lakshadweep",
+      "title": "Agatti Island Crystal Turquoise Lagoon & Coral Reef"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Agatti Island view 2",
-      "title": "Agatti Island — Scenic Mountain Ridge & Panorama"
+      "src": "https://images.pexels.com/photos/10878027/pexels-photo-10878027.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Aerial View of Vibrant Coral Reefs and Shimmering Lagoon Waters — Agatti Lakshadweep",
+      "title": "Vibrant Coral Reefs & Shimmering Lagoon"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/India_Tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Agatti Island view 4",
-      "title": "Agatti Island — Ancient Stone Architecture"
+      "src": "https://images.pexels.com/photos/7748795/pexels-photo-7748795.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Aquamarine Waters Across the Shallow Atoll Basin — Agatti Island",
+      "title": "Aquamarine Waters Across the Atoll Basin"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Agatti_island%2C_Lakshadweep.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Agatti Island view 5",
-      "title": "Agatti Island — Sacred Temple Heritage"
+      "src": "https://images.pexels.com/photos/14615246/pexels-photo-14615246.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Living Coral Formations Beneath Tropical Shallows — Lakshadweep Sea",
+      "title": "Living Coral Formations Beneath Tropical Shallows"
     },
     {
-      "src": "https://images.pexels.com/photos/30658207/pexels-photo-30658207.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920",
-      "alt": "A solitary boat floats serenely on the calm Andaman Sea under a partially cloudy sky.",
-      "title": "A solitary boat floats serenely on the calm Andaman Sea under a partially cloudy sky.",
-      "caption": "A solitary boat floats serenely on the calm Andaman Sea under a partially cloudy sky."
+      "src": "https://images.pexels.com/photos/13828960/pexels-photo-13828960.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "High Angle Panorama of Agatti Island Lagoon and Outer Reef — Lakshadweep",
+      "title": "Agatti Island Lagoon & Outer Barrier Reef"
     }
   ],
   "faq": [
@@ -563,16 +641,21 @@
     }
   ],
   "seo": {
-    "title": "Agatti Island Travel Guide 2026 — Airport, Hotels, Water Sports | ExploreDesh",
-    "description": "Plan your trip to Agatti Island in Lakshadweep: ocean runway, lagoon kayaking, resorts and permit requirements.",
+    "title": "Agatti Island Travel Guide 2026 — Coral Lagoon, Stays & Flights | ExploreDesh",
+    "description": "Complete travel guide to Agatti Island, Lakshadweep. Discover turquoise lagoons, scuba diving spots, coral reefs, flight routes, and permit guidance.",
     "canonical": "destination.html?slug=agatti-island",
-    "ogImage": "https://images.pexels.com/photos/37943746/pexels-photo-37943746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://images.pexels.com/photos/13828958/pexels-photo-13828958.jpeg?auto=compress&cs=tinysrgb&w=2560",
     "keywords": [
       "Agatti Island",
-      "Agatti airport",
-      "Lakshadweep beaches"
+      "Agatti Island Lakshadweep",
+      "Agatti lagoon",
+      "Lakshadweep travel guide",
+      "Agatti flights",
+      "scuba diving Lakshadweep",
+      "Agatti permit"
     ]
   },
   "hotelSourceTried": true,
-  "hotelsRealSourceCount": 1
+  "hotelsRealSourceCount": 1,
+  "updatedAt": "2026-09-27T19:29:41.627Z"
 }

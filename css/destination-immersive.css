@@ -2162,25 +2162,56 @@ html[data-theme="light"] body.dest-immersive .tab-calligraphy-kicker {
 /* ─── 6. BENTO CARDS, SUMMARY CARDS & INFO CARDS ─────────────────────────── */
 html[data-theme="light"] body.dest-immersive .card,
 html[data-theme="light"] body.dest-immersive .info-card,
-html[data-theme="light"] body.dest-immersive .dest-summary-card,
 html[data-theme="light"] body.dest-immersive .dest-bento-box,
 html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid) {
   background: #FFFFFF !important;
   border: 1px solid rgba(15, 23, 42, 0.08) !important;
   border-radius: var(--imm-radius-md) !important;
+  padding: 1.5rem !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* Cards that already use p-0 (image cards) should not get padding override */
+html[data-theme="light"] body.dest-immersive .card.p-0 {
+  padding: 0 !important;
+}
+
+/* Stays cards use p-5 — match dark mode's larger feel */
+html[data-theme="light"] body.dest-immersive #panel-stays .card.p-5 {
+  padding: 1.75rem !important;
+}
+
+/* Summary cards: smaller padding, tighter */
+html[data-theme="light"] body.dest-immersive .dest-summary-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: var(--imm-radius-md) !important;
+  padding: 1.1rem 1.25rem !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* bg-gray-50 used as section bg in dark mode — light override */
+html[data-theme="light"] body.dest-immersive .bg-gray-50 {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: var(--imm-radius-md) !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
 }
 
 html[data-theme="light"] body.dest-immersive .card:hover,
 html[data-theme="light"] body.dest-immersive .info-card:hover,
 html[data-theme="light"] body.dest-immersive .dest-summary-card:hover,
-html[data-theme="light"] body.dest-immersive .dest-bento-box:hover {
+html[data-theme="light"] body.dest-immersive .dest-bento-box:hover,
+html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid):hover {
   background: #FFFFFF !important;
-  border-color: rgba(217, 119, 6, 0.35) !important;
-  box-shadow: 0 12px 36px -4px rgba(15, 23, 42, 0.10), 0 0 16px rgba(217, 119, 6, 0.10) !important;
-  transform: translateY(-2px);
+  border-color: rgba(217, 119, 6, 0.40) !important;
+  box-shadow: 0 14px 40px -4px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.12) !important;
+  transform: translateY(-3px) !important;
 }
 
 /* Sidebar Quick Facts Cards — High Contrast Values */
@@ -4156,3 +4187,379 @@ html[data-theme="light"] body.dest-immersive .budget-partner-card:hover {
 }
 
 
+/* ==========================================================================
+   LIGHT MODE PATCH v2 — Deep Design Harmony & WCAG AAA Contrast
+   Fixes all remaining dark-only classes leaking into light theme:
+   - Similar Destinations section & eyebrow pill
+   - Places panel category filter chips (Tailwind bg-orange-50/text-orange-700)
+   - Place detail modal contrast
+   - Section border separators (border-white/15)
+   - Subheading text-slate-300/80 fix
+   - All tab panel section headings
+   ========================================================================== */
+
+/* ─── SIMILAR DESTINATIONS — Section Border & BG ───────────────────────── */
+html[data-theme="light"] body.dest-immersive #similarSection {
+  border-top: 2px solid #E2E8F0 !important;
+  background: linear-gradient(180deg, #F1F5F9 0%, #F8FAFC 100%) !important;
+}
+
+/* "More Like This" eyebrow pill — amber-tinted for light */
+html[data-theme="light"] body.dest-immersive #similarSection .inline-flex.items-center.gap-2.px-3\\.5,
+html[data-theme="light"] body.dest-immersive .dest-similar-header [class*="bg-amber-500/10"],
+html[data-theme="light"] body.dest-immersive .dest-similar-header [class*="border-amber-500"] {
+  background: rgba(217, 119, 6, 0.10) !important;
+  border-color: rgba(180, 83, 9, 0.35) !important;
+  color: #92400E !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-similar-header [class*="text-amber-300"] {
+  color: #92400E !important;
+}
+
+/* "Similar Heading" h2 & type name span */
+html[data-theme="light"] body.dest-immersive #similar-heading {
+  color: #0F172A !important;
+  text-shadow: none !important;
+}
+html[data-theme="light"] body.dest-immersive #similar-heading .text-amber-400,
+html[data-theme="light"] body.dest-immersive #similar-heading [class*="text-amber"] {
+  color: #B45309 !important;
+}
+
+/* Subheading paragraph "text-slate-300/80" */
+html[data-theme="light"] body.dest-immersive #similarSubheading,
+html[data-theme="light"] body.dest-immersive .dest-similar-header p[class*="text-slate"] {
+  color: #475569 !important;
+}
+
+/* Explore Similar Destinations button */
+html[data-theme="light"] body.dest-immersive #similarExploreBtn {
+  background: #FFFBEB !important;
+  border: 1px solid rgba(217, 119, 6, 0.45) !important;
+  color: #92400E !important;
+}
+html[data-theme="light"] body.dest-immersive #similarExploreBtn:hover {
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #78350F !important;
+}
+
+/* Similar grid cards — override dark Tailwind classes bg-slate-900/85 border-white/15 */
+html[data-theme="light"] body.dest-immersive #similar-grid a {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+}
+html[data-theme="light"] body.dest-immersive #similar-grid a:hover {
+  border-color: rgba(217, 119, 6, 0.5) !important;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.15) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* ─── PLACES PANEL — Category badge & filter chips ─────────────────────── */
+/* bg-orange-50 text-orange-700 — used as category chip inside place cards */
+html[data-theme="light"] body.dest-immersive #panel-places .bg-orange-50 {
+  background: #FEF3C7 !important;
+  color: #B45309 !important;
+  border: 1px solid rgba(217, 119, 6, 0.35) !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-places .text-orange-700 {
+  color: #B45309 !important;
+}
+/* "Free Entry" amber text in light */
+html[data-theme="light"] body.dest-immersive #panel-places .text-amber-400.font-medium {
+  color: #B45309 !important;
+}
+/* View details arrow link */
+html[data-theme="light"] body.dest-immersive #panel-places .text-amber-400.font-semibold {
+  color: #B45309 !important;
+}
+/* Distance / timing secondary text */
+html[data-theme="light"] body.dest-immersive #panel-places .text-gray-400 {
+  color: #64748B !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-places .text-gray-500 {
+  color: #475569 !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-places .text-gray-600 {
+  color: #334155 !important;
+}
+/* Travel time emerald */
+html[data-theme="light"] body.dest-immersive #panel-places .text-emerald-700 {
+  color: #047857 !important;
+}
+/* Place card image fallback area */
+html[data-theme="light"] body.dest-immersive #panel-places .bg-gray-100 {
+  background: #F1F5F9 !important;
+}
+
+/* ─── PLACE DETAIL MODAL — WCAG contrast in light mode ─────────────────── */
+html[data-theme="light"] #placeModal .bg-white {
+  background: #FFFFFF !important;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.20) !important;
+}
+html[data-theme="light"] #placeModal #placeName {
+  color: #0F172A !important;
+}
+html[data-theme="light"] #placeModal #placeDesc,
+html[data-theme="light"] #placeModal .text-gray-600 {
+  color: #334155 !important;
+}
+html[data-theme="light"] #placeModal .text-gray-500,
+html[data-theme="light"] #placeModal .text-gray-400 {
+  color: #475569 !important;
+}
+html[data-theme="light"] #placeModal .text-gray-900,
+html[data-theme="light"] #placeModal .font-medium.text-gray-900 {
+  color: #0F172A !important;
+}
+html[data-theme="light"] #placeModal #placeRating,
+html[data-theme="light"] #placeModal .text-amber-500 {
+  color: #D97706 !important;
+}
+/* Modal weather box */
+html[data-theme="light"] #placeModal .rounded-xl.border.border-emerald-200.bg-emerald-50 {
+  background: #ECFDF5 !important;
+  border-color: #6EE7B7 !important;
+}
+html[data-theme="light"] #placeModal .text-emerald-700 {
+  color: #047857 !important;
+}
+html[data-theme="light"] #placeModal .text-emerald-600 {
+  color: #059669 !important;
+}
+html[data-theme="light"] #placeModal .text-gray-700#placeWeather {
+  color: #334155 !important;
+}
+/* Modal category badge */
+html[data-theme="light"] #placeModal .bg-orange-100.text-orange-800 {
+  background: #FEF3C7 !important;
+  color: #92400E !important;
+  border: 1px solid rgba(217, 119, 6, 0.3) !important;
+}
+/* "View on Maps" button */
+html[data-theme="light"] #placeModal .btn-primary {
+  background: linear-gradient(180deg, #D97706 0%, #B45309 100%) !important;
+  color: #FFFFFF !important;
+}
+
+/* ─── TAB PANEL SECTION BORDERS — fix white/15 borders in light mode ───── */
+html[data-theme="light"] body.dest-immersive #similarSection[class*="border-white"] {
+  border-color: #E2E8F0 !important;
+}
+
+/* ─── DEST NAV SUBNAV — Google Maps note text ───────────────────────────── */
+html[data-theme="light"] body.dest-immersive .text-slate-400,
+html[data-theme="light"] body.dest-immersive p.text-slate-400,
+html[data-theme="light"] body.dest-immersive span.text-slate-400 {
+  color: #64748B !important;
+}
+html[data-theme="light"] body.dest-immersive .text-slate-300 {
+  color: #475569 !important;
+}
+html[data-theme="light"] body.dest-immersive [class*="text-slate-300\\/80"],
+html[data-theme="light"] body.dest-immersive .text-slate-300\/80 {
+  color: #475569 !important;
+  opacity: 1 !important;
+}
+
+/* ─── STAYS PANEL — "Stay starts from" price text ──────────────────────── */
+html[data-theme="light"] body.dest-immersive #panel-stays .text-slate-400 {
+  color: #475569 !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-stays [class*="text-emerald-400"] {
+  color: #047857 !important;
+}
+
+/* ─── BUDGET TAB — Fix audit strip text in light mode ──────────────────── */
+html[data-theme="light"] body.dest-immersive .budget-audit-strip .text-amber-300,
+html[data-theme="light"] body.dest-immersive .budget-audit-strip [class*="text-amber-300"] {
+  color: #92400E !important;
+}
+html[data-theme="light"] body.dest-immersive .budget-audit-strip .text-slate-300,
+html[data-theme="light"] body.dest-immersive .budget-audit-strip [class*="text-slate-300"] {
+  color: #475569 !important;
+}
+html[data-theme="light"] body.dest-immersive .budget-total-hero .text-xs.text-slate-400 {
+  color: #64748B !important;
+}
+
+/* ─── OVERVIEW: bento box image area — bg-slate-800 fallback ───────────── */
+html[data-theme="light"] body.dest-immersive .bg-slate-800 {
+  background: #E2E8F0 !important;
+}
+
+/* ─── MISC: horizontal rule separators ─────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive hr,
+html[data-theme="light"] body.dest-immersive [class*="border-white\\/"] {
+  border-color: #E2E8F0 !important;
+}
+
+/* ─── FAQ SECTION (if present) ──────────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .faq-item,
+html[data-theme="light"] body.dest-immersive [class*="faq-"] {
+  background: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+html[data-theme="light"] body.dest-immersive .faq-item summary,
+html[data-theme="light"] body.dest-immersive [class*="faq-"] summary {
+  color: #0F172A !important;
+}
+
+/* ─── BOTTOM ANCHOR — Google Maps link text ─────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .text-xs.text-center.text-slate-400,
+html[data-theme="light"] body.dest-immersive p.text-xs.text-center {
+  color: #64748B !important;
+}
+
+/* ==========================================================================
+   LIGHT MODE — SPACING & PADDING HARMONY
+   Matches the dark theme's generous card padding, section gaps & breathing room
+   ========================================================================== */
+
+/* ─── OUTER PANEL WRAPPER — more vertical breathing ────────────────────── */
+html[data-theme="light"] body.dest-immersive .max-w-7xl.mx-auto.px-4.pt-10.pb-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* ─── OVERVIEW: info-card & sidebar cards — match dark mode generosity ──── */
+html[data-theme="light"] body.dest-immersive .info-card {
+  padding: 1.75rem !important;
+  border-radius: 1.25rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ─── OVERVIEW: section gap (space-y-6) ─────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .lg\:col-span-2.space-y-6,
+html[data-theme="light"] body.dest-immersive .space-y-6 {
+  row-gap: 1.75rem !important;
+}
+html[data-theme="light"] body.dest-immersive .space-y-4 {
+  row-gap: 1.25rem !important;
+}
+
+/* ─── OVERVIEW: main grid gap ────────────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .grid.grid-cols-1.lg\:grid-cols-3.gap-8 {
+  gap: 2rem !important;
+}
+
+/* ─── OVERVIEW: top-places grid gap ─────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .grid.grid-cols-1.sm\:grid-cols-2.gap-4 {
+  gap: 1.25rem !important;
+}
+
+/* ─── TOP PLACES cards — extra padding for light mode ──────────────────── */
+html[data-theme="light"] body.dest-immersive #panel-overview .card {
+  padding: 0 !important; /* p-0 cards, no override needed — image fills */
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.05) !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 1rem !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-overview .card .p-3 {
+  padding: 0.875rem !important;
+}
+
+/* ─── PLACES PANEL — card list gap ──────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive #panel-places .grid.grid-cols-1.md\:grid-cols-2.gap-4 {
+  gap: 1.25rem !important;
+}
+/* Places card: the flex card with p-0 — add inner div padding */
+html[data-theme="light"] body.dest-immersive #panel-places .card.p-0 {
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06) !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-places .card.p-0 .flex-1.p-3 {
+  padding: 0.875rem 1rem !important;
+}
+/* Filter buttons gap */
+html[data-theme="light"] body.dest-immersive #panel-places .flex.gap-2.overflow-x-auto {
+  gap: 0.625rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ─── STAYS PANEL — card padding bump ───────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive #panel-stays .card.p-5 {
+  padding: 1.5rem !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.07) !important;
+  border-radius: 1.125rem !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-stays .space-y-4 {
+  row-gap: 1.25rem !important;
+}
+/* Stays card separator in light mode */
+html[data-theme="light"] body.dest-immersive #panel-stays .border-t.md\:border-t-0.border-gray-100 {
+  border-color: #E2E8F0 !important;
+}
+/* Tier/filter button bar */
+html[data-theme="light"] body.dest-immersive #panel-stays .flex.gap-2.flex-wrap.mb-6 {
+  gap: 0.625rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ─── REACH PANEL — table card padding ──────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive #panel-reach .info-card {
+  padding: 1.75rem !important;
+  border-radius: 1.25rem !important;
+}
+
+/* ─── BUDGET PANEL — section vertical breathing ─────────────────────────── */
+html[data-theme="light"] body.dest-immersive .budget-section-wrap {
+  padding-top: 2.5rem !important;
+}
+
+/* ─── SUMMARY CARDS (altitude, season, etc.) — padding & gap ────────────── */
+html[data-theme="light"] body.dest-immersive .dest-summary-grid {
+  gap: 1rem !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-summary-card {
+  padding: 1.125rem 1.25rem !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* ─── MAP PANEL ──────────────────────────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive #mapDirectionsBtn {
+  background: #F1F5F9 !important;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1 !important;
+}
+html[data-theme="light"] body.dest-immersive #mapDirectionsBtn:hover {
+  background: #E2E8F0 !important;
+}
+
+/* ─── OVERVIEW BUDGET TEASER CARD ────────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .overview-budget-teaser {
+  padding: 1.5rem !important;
+}
+
+/* ─── ROAD NOTE (amber-50 box) ───────────────────────────────────────────── */
+html[data-theme="light"] body.dest-immersive .bg-amber-50.border.border-amber-200.rounded-xl.p-4 {
+  padding: 1.25rem !important;
+  border-radius: 1rem !important;
+}
+
+/* ─── SIMILAR SECTION — py-16 mt-14 should stay consistent ─────────────── */
+html[data-theme="light"] body.dest-immersive #similarSection {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  margin-top: 3.5rem !important;
+}
+
+/* ─── SIMILAR DESTINATION CARDS — thumbnail label row ────────────────────── */
+html[data-theme="light"] body.dest-immersive #similar-grid a .p-3 {
+  padding: 0.875rem !important;
+}
+
+/* ─── UNIVERSAL CARD SHADOW for light mode (all .card without explicit override) */
+html[data-theme="light"] body.dest-immersive .card {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+html[data-theme="light"] body.dest-immersive .card:hover {
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(15, 23, 42, 0.06) !important;
+}

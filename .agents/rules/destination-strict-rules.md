@@ -254,3 +254,23 @@ Every nearby attraction place card (`topPlaces[]`) MUST accurately represent tha
 2. **Visual Inspection**: All place card thumbnails and modal photos must be visually inspected or programmatically verified via metadata (`alt`, `description`, tags) to ensure they depict the true subject.
 3. **Card-Level Differentiation**: If a destination has multiple nearby monasteries, forts, or lakes, each place card must show its own distinct structure — never repeat one landmark across multiple place cards.
 4. **Zero Script Residue**: Any temporary runner scripts created to perform batch updates must be deleted immediately after execution to keep the repository clean.
+
+---
+
+## Rule 17 — Ground-Truth Landmark Preservation Over Generic Stock (Added Phase 67)
+
+Famous historical monuments, temples, forts, palaces, and geographic landmarks must retain authentic, verified photography. Replacing an authentic photo of a recognized Indian monument with generic stock photos is strictly prohibited.
+
+1. **Never Replace Authentic Monument Photos with Stock Photography**:
+   - Automated scripts must NEVER replace legitimate photos of iconic landmarks (e.g. Khajuraho temples, Udaipur City Palace, Gateway of India, Meenakshi Temple, Mysore Palace, Dudhsagar Falls, Key Gompa) with generic stock photography (such as flowers, nature scenery, generic streets, or repetitive stock images).
+2. **Selective Surgical Curation**:
+   - When auditing or repairing destination images, inspect both the current image and previous versions in git history.
+   - If the previous version is authentic and depicts the true monument, **preserve or restore it**.
+   - Only replace slots where the previous image had verified defects (e.g. foreign country monuments, insects, fish, signboards, or unrelated portrait photos).
+3. **Mandatory Invariants for All Restored/Updated Files**:
+   - `heroImage.src === gallery[0].src` (identically synchronized).
+   - Gallery must contain exactly 5 images.
+   - `seo.ogImage` must match `heroImage.src`.
+   - Zero internal duplicate URLs between hero, gallery, and nearby place cards.
+   - Zero cross-destination duplicate collisions across the 66k+ catalog index.
+

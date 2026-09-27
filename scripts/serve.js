@@ -36,9 +36,10 @@ const MIME = {
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
+  '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
-const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript))/i;
+const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript|manifest\+json))/i;
 const gzipCache = new Map();
 
 function checkFile(relPath) {

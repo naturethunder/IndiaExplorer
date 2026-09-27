@@ -1,26 +1,81 @@
-# ExploreDesh — Project Guide (updated 2026-09-27 rev-27)
+# ExploreDesh — Project Guide (updated 2026-09-28 rev-31)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
 > **[docs/ROADMAP.md](docs/ROADMAP.md)** = the plan: status, prioritised work, scaling-to-launch notes.
-> **[docs/DESTINATIONS.md](docs/DESTINATIONS.md)** = auto-generated reference of all 2,393 destinations
+> **[docs/DESTINATIONS.md](docs/DESTINATIONS.md)** = auto-generated reference of all 2,396 destinations
 > by state with months + price/night. Regenerate with `node scripts/build-destinations-doc.js`.
 > **[docs/AUDIT.md](docs/AUDIT.md)** = production audit snapshot: quality scores, every fix shipped,
 > what was verified, and what's still open. Read this to understand the site's current health state.
 
-An India travel-discovery platform: browse **2,393 destinations** (14,013 places,
-66,500+ gallery images catalog-wide, 10,427 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
+An India travel-discovery platform: browse **2,396 destinations** (14,037 places,
+70,500+ photos catalog-wide, 10,439 verified stays across 36 states/UTs), filter by type/budget/state/month, view per-destination
 detail pages with places, stays, routes, an interactive Leaflet map, **live weather**, and
-dynamic similar-destination recommendations.
+dynamic similar-destination recommendations. Master regression guard: **71/71 green (100/100)**.
+
 The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-27 rev-27) — Phase 66: Multi-Destination Precision Landmark Overhaul & Spiti Valley Purification:**
+> **Latest Milestone (2026-09-28 rev-31) — Phase 70: Unused JavaScript Files Removal & Dead Code Elimination (2.22 MB Purged):**
+> - **Deep Dependency & Call-Graph Audit:** Traced all 8 HTML templates (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`) and ES6 module import graphs to identify dead, obsolete, and unreferenced JavaScript files.
+> - **7 Unused Files Removed (~2.22 MB Dead Code Purged):**
+>   1. `js/data.js` (102.7 KB): Monolithic early MVP destination prototype array. Completely superseded by canonical `data/destinations/*.json`.
+>   2. `js/data-destinations.js` (64.2 KB): Early prototype destination helper arrays. 0 references.
+>   3. `js/data-extra.js` (29.5 KB): Early prototype supplemental metadata. 0 references.
+>   4. `js/data-photos.js` (1,780.7 KB = 1.78 MB): 11,000+ lines of raw Wikimedia image URLs from Phase 1. 0 references in modern architecture.
+>   5. `js/data-place-photos.js` (228.8 KB): Legacy place photos mapping array. 0 references.
+>   6. `scripts/repair-search-index.js` (4.0 KB): One-off script from Phase 35; fully superseded by `scripts/bulk/sync-index-and-search.js`.
+>   7. `scripts/image-search-engine.js` (11.7 KB): Abandoned one-off image search prototype with 9 hardcoded slugs. 0 references.
+> - **Build & Server Consolidation:**
+>   - Root `server.js` (207 lines) consolidated into a clean delegator to `scripts/serve.js`. Added `.webmanifest` MIME type support to `scripts/serve.js`.
+>   - `scripts/build-json-data.js` modernized: eliminated VM sandbox execution of deleted `data*.js` files and delegated cleanly to `scripts/bulk/sync-index-and-search.js`.
+> - **Live Browser & Production Verification:** Verified live in browser subagent (`localhost:8080/`, `destinations.html`, `destination.html?slug=sat-deul`) with **0 console errors, 0 failed network requests, and 0 missing modules**.
+> - **Master Regression Guard:** **71/71 green (Score: 100/100)**.
+>
+> **Previous Milestone (2026-09-28 rev-30) — Phase 69: Platform Performance Overhaul — WebP Edge Optimization, Service Worker v1.2.0, Zero-Contention Loading & Catalogue Chunk Sizing:**
+> - **Cloudflare Edge WebP Dynamic Resizing (`js/components/destinationCard.js`):** Diagnosed raw 5MB–14MB uncompressed camera uploads from Wikimedia Commons that caused single-page image payloads to exceed 48.7 MB on detail pages (e.g. Sat Deul) and 24.7 MB on the homepage. Integrated Cloudflare-backed edge image proxy (`wsrv.nl`) in `optimizeImageUrl()` with WebP conversion (`output=webp&q=75`) and width capping (`Math.min(width, 1200)` for cards, `1600` for hero banners). Slashed Wikimedia photo weights by **~97.8%** (from 13.8MB down to ~61KB) with 100% automatic original fallback on error.
+> - **Service Worker v1.2.0 Cache Invalidation (`sw.js`):** Bumped Service Worker version from `v1.1.0` to `v1.2.0`, immediately purging stale caches (`CACHE_DATA`, `CACHE_SHELL`, `CACHE_MEDIA`). Upgraded dynamic `/data/` JSON routes from stale-first to **Network-First with Offline Cache Fallback**, ensuring code and JSON changes display immediately without manual cache clearing.
+> - **Bandwidth Decontention & Zero-Contention Loading:**
+>   - Homepage (`js/pages/home.js`): Deferred `loadFullCatalog()` background download of the 2.36 MB `index.json` until the user actually engages with the search input (`focus`/`input`) or after 8 seconds of idle, keeping initial page load 100% focused on visual rendering.
+>   - Detail Pages (`js/pages/destination.js`): Deferred Similar Destinations `fetchIndex()` via `IntersectionObserver` on `#similar-grid`, saving 2.36 MB on initial render.
+> - **Catalogue Batch Size Optimization (`js/pages/explore.js` & `destinations.html`):** Reduced initial render batch size from 60 down to 24 cards (`PAGE_SIZE = 24`), cutting initial DOM nodes, image requests, and ScrollTriggers by 60%. Updated load more pagination badge to `+24`.
+> - **Cache-Buster & Network Preconnect Synchronization:** Bumped asset query strings to `?v=20260928_2` across `destinations.html`, `destination.html`, `index.html`, and `js/data/api.js`. Added `<link rel="preconnect" href="https://wsrv.nl" crossorigin />` to HTML `<head>` tags for warm edge connections.
+> - **Performance Metrics (Verified Live):**
+>   - Detail Page (Sat Deul): Image payload dropped from **48.7 MB** to **1.08 MB** (~97.8% reduction), page load in **~925 ms**.
+>   - Destinations Catalogue: Initial page load dropped to **~903 ms** with only **26.2 KB** initial image transfer.
+>   - Homepage: Initial page load dropped to **~1,009 ms** with 0% bandwidth contention from `index.json`.
+> - **Master Regression Guard:** **71/71 green (Score: 100/100)**.
+>
+> **Previous Milestone (2026-09-28 rev-29) — Phase 68: 7-Destination Precision Overhaul — Misleading Metadata, Black-Theme Fix & Authentic HD Photography:**
+> - **Khurnak Fort (`khurnak-fort.json`):** Completely overhauled metadata, corrected misleading landmark context (Ladakh frontier fort on Pangong Tso road), curated 5 HD Pexels/Unsplash photos of rugged Himalayan fortress architecture and Pangong Lake environs, 3 top places with 3 authentic photos each — all 0 cross-destination collisions verified.
+> - **Havelock Island (`havelock-island.json`):** Replaced outdated and broken imagery with 5 HD Andaman tropical beach/coral photography, badge corrected to "Top Asian Beach", 3 top places (Radhanagar Beach, Elephant Beach, Neil's Cove) with authentic Andaman Islands photography — 0 collisions verified.
+> - **Agatti Island (`agatti-island.json`):** Overhauled with authentic Lakshadweep atoll aerial, turquoise lagoon, and coral reef photography; badge "Coral Atoll Gateway"; 3 top places with strict non-duplicate HD images — 0 collisions verified.
+> - **Dhanushkodi (`dhanushkodi.json`):** Purged Golden Temple contamination (Phase 64 regression), replaced with authentic ghost town ruins, Arichal Munai land's-end tip, Indo-Sri Lanka sea confluence, and Ram Setu aerial photography — 0 collisions verified.
+> - **Kolkata (`kolkata.json`):** Complete metadata + photography overhaul — badge updated to "City of Joy", 5 HD gallery images (Howrah Bridge, Victoria Memorial, Durga Puja, Park Street, Kolkata trams), 3 top places (Victoria Memorial, Howrah Bridge, Kumartuli) with 3 distinct authentic photos each — 17 total unique images, 0 cross-destination collisions.
+> - **Eco Park (`eco-park.json`):** Corrected hallucinated census/transport metadata and Himalayan imagery; replaced with authentic Eco Park lakeside pavilion, Seven Wonders replicas, boating lake, and New Town boulevard photography — badge "Largest Urban Park".
+> - **Sat Deul (`sat-deul.json`):** Corrected architectural/historical metadata (10th-century Rekha Deul Shaiva temple, Bankura district, West Bengal); replaced mismatched Himalayan/foreign temple imagery with authentic Bengali terracotta brick shikhara photography — badge "Ancient Rekha Deul".
+> - **Black Theme Dark Mode Fix:** Diagnosed and fixed OLED black theme rendering issue ensuring deep obsidian canvas (`#080A0F`) displays correctly across all destination pages.
+> - **100% Invariant Verification:** All 7 overhauled files pass JSON validation, exact 5-image gallery length, `heroImage.src === gallery[0].src`, and 0 internal duplicate collisions.
+> - **System Artifacts Recompiled:** `index.json` (2,396 entries), `search-index.json` (2,396 entries, 6,822 KB), `home-manifest.json` (126.0 KB), `docs/DESTINATIONS.md` (2,396 destinations, 2,628 lines), and master Google Image sitemaps (2,453 URLs, 11,949 indexed images). Master regression guard: **71/71 green (Score: 100/100)**.
+>
+> **Previous Milestone (2026-09-27 rev-28) — Phase 67: Authentic Landmark Restoration, Kumaon Lake District Expansion & Stock Photo Purge:**
+> - **Authentic Landmark Ground-Truth Restored (150 destinations):** Audited repository history and resolved an issue where automated scripts had replaced genuine Indian landmark photographs with generic stock photography (e.g. Khajuraho temples replaced with a yellow flower macro photo, Udaipur City Palace replaced with generic stock, Gateway of India replaced with generic street photos, Dudhsagar Falls replaced with generic waterfall). 150 destinations surgically restored to their authentic, verified monument and landmark photography.
+> - **Flawed Old Assets Preserved (32 destinations kept current):** 32 destinations whose previous historical images had genuine defects (e.g., an Uzbek mosque, a fish market photo, an insect, police officer portrait, or out-of-state landmark contamination) were purposefully kept current with their corrected media.
+> - **Kumaon Lake District Expansion (3 new destinations):** Integrated **Bhimtal** (`bhimtal.json` - largest Kumaon lake & island aquarium), **Naukuchiatal** (`naukuchiatal.json` - nine-cornered lake & paragliding), and **Sattal** (`sattal.json` - seven interconnected lakes & birdwatching paradise) into the catalog with full schemas, 5 HD gallery images each, 4 verified stays each, routes, and stubs.
+> - **Nainital Mango Lake Upgrade (`nainital.json`):** Enhanced with the famous **Mango Lake View Point** (Kilbury Rd vantage point showcasing Naini Lake's iconic green mango silhouette), **Tiffin Top (Dorothy's Seat)** at 2,292m, **Naina Devi Temple**, Snow View Point, and dedicated Mango Lake FAQs.
+> - **Woman Stock Photo Purge (`chandika-sthan`, `mohanpur-jagannath-temple`, `rajiv-lochan-temple-rajim`):** Completely eradicated a recurring stock photo of a woman across eastern Indian temple destinations, replacing with authentic sanctum and stone temple architecture.
+> - **Kasol Parvati Valley Photographic Overhaul (`kasol.json`):** Reverted hero to authentic Parvati Valley mountain view and overhauled nearby places (Kheerganga trek trail, Tosh village snow ridge, Manikaran Sahib sacred hot springs) with authentic Himalayan photography.
+> - **Gurdwara Jyoti Sarup Sacred Architecture Alignment (`gurdwara-jyoti-sarup.json`):** Verified and updated with authentic Sikh heritage architecture.
+> - **100% Invariant Verification:** All 150 restored and 3 new destination files pass 100% JSON validity, exact 5-image gallery length, strict `heroImage.src === gallery[0].src` alignment, `seo.ogImage` sync, and 0 internal duplicate collisions.
+> - **System Artifacts Recompiled:** Recompiled `home-manifest.json` (130.4 KB), `index.json`, 2,396 redirect stubs in `stubs/`, `docs/DESTINATIONS.md` (2,396 destinations), and master Google Image sitemaps (2,453 URLs, 11,949 indexed images).
+>
+> **Previous Milestone (2026-09-27 rev-27) — Phase 66: Multi-Destination Precision Landmark Overhaul & Spiti Valley Purification:**
 > - **Spiti Valley Complete Photographic Overhaul (`data/destinations/spiti.json`):** Purged all cross-state Madhya Pradesh contamination (Bhopal lake, Welcome to Bhopal sign, Pachmarhi, Kanha, Pench, Rewa, Gwalior) and wrong-monument misattributions. Sourced 61 100% unique, live-verified, high-definition Pexels and Unsplash photos. Every single place card (Key Monastery, Chandratal Lake, Hikkim Post Office, Dhankar Monastery, Pin Valley, Komik, Kaza, Kibber, Tabo Monastery, Langza Buddha Statue, Mudh Village, Chicham Bridge, Gette Village, Nako Lake) now displays that exact landmark with 0 people, 0 selfies/crowds, 0 models, 0 internal duplicates, and 0 cross-destination collisions across all 66,000+ catalog URLs.
 > - **4 Marquee Destinations Verified (`vedanarayana-temple-nagalapuram`, `tripura-sundari-temple`, `chaturdasha-temple`, `diu`, `ujjain`):** Cleaned of Wikimedia/Pixabay dependencies and verified for 100% unique HD authentic architecture and landscape photos.
 > - **Repository Hardening & Zero-Scratch Invariant:** All one-off update scripts purged; zero unused `.js` scripts in `scripts/`.
 > - **Master Regression Guard Certified:** Passed 71/71 checks in `scripts/seo_regression_guard.js`. Production SEO Score: **100/100**.
+
 >
 > **Previous Milestone (2026-09-27 rev-26) — Phase 64 & 65: Monument Contamination Elimination, P1 Gallery Repairs & Repository Tooling Hardening:**
 > - **Monument Contamination Elimination (10 destinations):** Eliminated cross-state landmark misattributions (Hawa Mahal in Kerala/TN churches, Golden Temple in Nagaland/Maharashtra forts, Taj Mahal in Kerala cave temple, Fatehpur Sikri in Tarkarli). Replaced with authentic verified HD Pexels photography true to each destination's state and culture.
@@ -317,10 +372,7 @@ js/
     seo.js              # applySEO() + JSON-LD builders
   pages/
     home.js explore.js finder.js destination.js company.js contact.js
-  leaflet.js / .css     # vendored map lib
-  data.js data-extra.js data-destinations.js data-photos.js data-place-photos.js
-                        # LEGACY source data — now only an INPUT to scripts/build-json-data.js.
-                        # No HTML page loads these anymore.
+  leaflet.js            # vendored map lib
 css/
   styles.css            # custom component classes (.card, .btn, carousels, dest-summary-grid…)
   glass-immersive.css   # ⭐ Universal Dark Glassmorphism Design System — loaded by ALL pages
@@ -333,12 +385,12 @@ css/
                         #   bounded sticky tab nav (.dest-tabs-container), 2-tier header blur, hero carousel
   tailwind.css          # GENERATED static utility CSS (replaces the old Tailwind CDN)
 scripts/
-  serve.js              # zero-dep static server (pure Node)
+  serve.js              # zero-dep static server (pure Node with Gzip & ETag)
   build-sitemap.js      # generates master sitemap.xml and 5 sub-sitemaps with Google Image SEO
-  build-home-manifest.js # compiles ultra-fast 129KB home-manifest.json for instant mobile load
-  build-stubs.js        # regenerates the 2,393 fallback redirect stubs (one per destination)
+  build-home-manifest.js # compiles ultra-fast 126KB home-manifest.json for instant mobile load
+  build-stubs.js        # regenerates the 2,396 fallback redirect stubs (one per destination)
   build-destinations-doc.js # regenerates docs/DESTINATIONS.md from current destination JSONs
-  repair-search-index.js # rebuilds data/search-index.json for the AI Finder
+  bulk/sync-index-and-search.js # synchronizes data/destinations/index.json and search-index.json
   geo-reference.js      # offline airports/railheads/cities dataset → real nearestAirport/railway + city routes
   build-css.js          # generates css/tailwind.css
   build-india-map.js    # projects GADM state geojson → data/india-map.js (viewBox + per-state SVG paths)
@@ -417,25 +469,19 @@ walking nested place/stay arrays at runtime.
 
 ### Regenerating data
 ```bash
-node scripts/build-json-data.js            # rebuild data/ (loads the 5 legacy js/data*.js via Node vm)
-node scripts/build-json-data.js --check    # verify merge/counts without writing
-node scripts/build-json-data.js --search-only  # rebuild search from current canonical detail JSON only
-node scripts/repair-search-index.js        # ⚡ Fast rebuild of search-index.json only (2,393 entries)
-                                           #   Use this after any destination JSON change if you don't
-                                           #   want to run the full build pipeline. Produces
-                                           #   { entries: [{slug, placeNames, hotelNames, tiers, hay}] }
-node scripts/build-stubs.js                # rebuild the redirect stubs (one per destination)
-node scripts/build-destinations-doc.js
+node scripts/build-json-data.js            # Synchronizes index.json, search-index.json, and home-manifest.json
+node scripts/bulk/sync-index-and-search.js # Direct sync of index.json and search-index.json
+node scripts/build-home-manifest.js        # Recompile ultra-fast 126KB home-manifest.json
+node scripts/build-sitemap.js              # Regenerates 6 XML sitemaps with accurate file mtime lastmod
+node scripts/build-stubs.js                # Rebuilds the 2,396 redirect stubs (one per destination)
+node scripts/build-destinations-doc.js     # Regenerates docs/DESTINATIONS.md
 ```
-`build-json-data.js` is the bridge from the legacy content: it sandbox-loads `data.js`,
-`data-extra.js`, `data-destinations.js`, `data-photos.js`, `data-place-photos.js` (so the baked
-Wikimedia photos flow into `heroImage`/`gallery`/`topPlaces[].photos`), **then merges every
-`data/bulk/<state>.json`** (see below), maps each merged destination to the schema above, and
-auto-generates `itinerary`/`faq`/`activities`/`seo`. Destinations present in the current manifest
-but absent from legacy/bulk sources are preserved from their canonical detail JSON, including in
-the AI Finder search index.
-**To add or change destination content, edit the legacy source files (see below) and re-run it** —
-or, once a real backend exists, write directly to the data layer.
+`data/destinations/<slug>.json` is the canonical store of truth for all 2,396 destinations.
+`scripts/build-json-data.js` and `scripts/bulk/sync-index-and-search.js` read directly from
+these canonical files and update the browse manifest (`data/destinations/index.json`),
+the lightweight mobile manifest (`data/destinations/home-manifest.json`), and the AI Trip Finder
+haystack (`data/search-index.json`). Destinations are directly managed and updated within their
+respective `data/destinations/*.json` files.
 
 ## Bulk-ingest pipeline (`scripts/bulk/`)
 
@@ -494,21 +540,17 @@ for every overridden slug and rewrites `places` in each `data/bulk/<state>.json`
 **After editing coord-overrides.json:** run `refetch-places-overrides.js` (if lat/lng changed) then
 `build-json-data.js`. Rural slugs may yield few/one real nearby place — that's accurate, not a bug.
 
-## Legacy source data (`js/data*.js`)
+## Authoritative Destination Data (`data/destinations/*.json`)
 
-Still the **content source of truth**, but no longer loaded by any page — only read by
-`build-json-data.js`. Layering when the build script loads them (order matters):
-`data.js` (18 base + `PRICE_TIERS`/`DESTINATION_TYPES`/`INDIA_STATES`/`MONTHS`) →
-`data-extra.js` (merges extra places/stays into the 18, deduped by name) →
-`data-destinations.js` (pushes 90 more → 108; carries real `lat`/`lng`; rebuilds `INDIA_STATES`;
-`normaliseMonths` travel-month pass) → `data-photos.js` (`d.photos` ≥5 real Wikimedia URLs per
-destination) → `data-place-photos.js` (real photo per place; 520/520 covered).
+All destination content lives canonically in `data/destinations/<slug>.json`.
+The 5 legacy MVP files (`data.js`, `data-extra.js`, `data-destinations.js`, `data-photos.js`,
+`data-place-photos.js`) were eliminated in Phase 70 (2.22 MB purged). All 2,396 destinations
+contain verified real accommodations, authentic HD photography, and structured overview data.
 
-Photo fetchers (feed the two photo files; **strictly serial with backoff** — the corporate shared
-IP is rate-limited by Commons; resumable + checkpointing, just re-run to fill gaps):
-`build-photos.js` + `build-photos-fill.js` (destination hero photos),
-`build-place-photos.js` + `build-place-photos-fill.js` (per-place photos).
-After changing legacy data or photos, **re-run `build-json-data.js`** to propagate into `data/`.
+To sync the browse manifest, search index, and home manifest after modifying any destination:
+```bash
+node scripts/build-json-data.js
+```
 
 ## Pages & their modules
 

@@ -5,26 +5,29 @@
   "country": "India",
   "region": "Hooghly Delta",
   "type": "heritage",
-  "badge": "Historic Fortress",
-  "tagline": "Kolkata — heritage city of West Bengal",
+  "badge": "City of Joy",
+  "tagline": "Cultural capital of India and city of joy",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Kolkata, West Bengal"
+    "src": "https://images.pexels.com/photos/33676158/pexels-photo-33676158.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Majestic Victoria Memorial Marble Dome and Royal Gardens — Kolkata, West Bengal",
+    "title": "Victoria Memorial Marble Dome and Royal Gardens"
   },
   "overview": {
-    "short": "Kolkata is a much-loved heritage city in West Bengal, known for victoria memorial and trams.",
-    "description": "Kolkata, in Hooghly Delta, West Bengal, is one of India’s favourite heritage city. Visitors come for its victoria memorial, trams, durga puja, sweets, with the best months being Oct – Mar.",
+    "short": "Kolkata, the City of Joy and cultural capital of India, is famed for colonial grand marble monuments, cantilever river bridges, historic tramways, and vibrant intellectual heritage.",
+    "description": "Kolkata, nestled on the eastern bank of the sacred Hooghly River in West Bengal, is India's historic capital and artistic nerve centre. From the regal British-era white marble splendour of the Victoria Memorial to the engineering marvel of Howrah Bridge, spiritual solace at Dakshineswar Kali Temple, and iconic yellow Ambassador taxis bustling down wide tree-lined boulevards, Kolkata charms travellers with its unmatched intellectual and festive soul.",
     "features": [
       "Victoria Memorial",
-      "Trams",
-      "Durga Puja",
-      "Sweets"
+      "Howrah Cantilever Bridge",
+      "Dakshineswar Kali Temple",
+      "Prinsep Ghat Riverfront",
+      "Historic Trams & Yellow Taxis"
     ],
-    "altitude": null,
-    "rating": 4.5,
+    "altitude": 9,
+    "rating": 4.8,
     "reviewCount": 49000,
     "minPrice": 1200,
-    "distanceFromDelhi": 1500
+    "distanceFromDelhi": 1500,
+    "about": "Kolkata is the cultural and literary soul of India, celebrated worldwide as the City of Joy. Adorned with monumental colonial architecture, sacred riverfront ghats, iconic yellow taxis, and grand cultural festivals like Durga Puja, it offers an indelible sensory journey."
   },
   "bestTime": {
     "label": "Oct – Mar",
@@ -212,62 +215,98 @@
     {
       "name": "Victoria Memorial",
       "category": "heritage",
-      "distance": "In Kolkata Centre, West Bengal",
-      "entryFee": "₹30",
-      "timings": "Varies by season",
-      "duration": "2 hrs",
-      "rating": 4.7,
-      "description": "Grand white-marble museum of the British Raj era.",
+      "distance": "In Kolkata Centre, Queens Way, Maidan",
+      "entryFee": "₹50 (Gardens ₹20, Museum ₹50)",
+      "timings": "10:00 AM – 6:00 PM (Gardens 5:30 AM – 6:00 PM)",
+      "duration": "2–3 hrs",
+      "rating": 4.8,
+      "description": "Grand Indo-Saracenic white Makrana marble palace commemorating Queen Victoria, surrounded by 64 acres of royal landscaped gardens, reflection pools, and 25 galleries of rare art and colonial artifacts.",
+      "travelTime": "Centrally located on the Maidan, accessible by Maidan or Rabindra Sadan Metro",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Victoria_Memorial%2C_Kolkata_-_West_facade_01.jpg/1280px-Victoria_Memorial%2C_Kolkata_-_West_facade_01.jpg",
-        "alt": "Victoria Memorial"
+        "src": "https://images.pexels.com/photos/21577610/pexels-photo-21577610.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Victoria Memorial Grand Marble Hall Framed by Royal Gardens — Kolkata"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Old_monastry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sikhim_and_Bhutan_-_Chorten_at_Gorina_Monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "Under 5 mins walk in Town Centre"
+        {
+          "src": "https://images.pexels.com/photos/38813424/pexels-photo-38813424.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Victoria Memorial Reflection in the Serene Ornamental Pool Perspective 1",
+          "title": "Victoria Memorial Reflection in the Serene Ornamental Pool"
+        },
+        {
+          "src": "https://images.pexels.com/photos/36206909/pexels-photo-36206909.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Victoria Memorial and Bronze Statue at Twilight Perspective 2",
+          "title": "Victoria Memorial and Bronze Statue at Twilight"
+        },
+        {
+          "src": "https://images.pexels.com/photos/7191661/pexels-photo-7191661.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Indo-Saracenic Marble Dome and Spires of Victoria Memorial Perspective 3",
+          "title": "Indo-Saracenic Marble Dome and Spires of Victoria Memorial"
+        }
+      ]
     },
     {
-      "name": "Howrah Bridge",
+      "name": "Howrah Bridge (Rabindra Setu)",
       "category": "heritage",
-      "distance": "3 km from Kolkata, West Bengal",
+      "distance": "Hooghly River connecting Kolkata & Howrah",
       "entryFee": "Free",
-      "timings": "Varies by season",
-      "duration": "1 hr",
-      "rating": 4.5,
-      "description": "Iconic cantilever bridge over the Hooghly river.",
+      "timings": "Open 24 hours",
+      "duration": "1–2 hrs",
+      "rating": 4.7,
+      "description": "World-famous suspended balance cantilever steel bridge engineered without nuts or bolts over the Hooghly River, carrying over 100,000 vehicles and 150,000 pedestrians daily.",
+      "travelTime": "5 mins drive from BBD Bagh or Howrah Railway Terminus",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Howrah_Railway_Station_02.jpg/1280px-Howrah_Railway_Station_02.jpg",
-        "alt": "Howrah Bridge"
+        "src": "https://images.pexels.com/photos/33612641/pexels-photo-33612641.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Vibrant Evening View of Howrah Bridge Cantilever Structure with City Lights — Kolkata"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/48/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/70/Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "5–10 mins drive from Kolkata"
+        {
+          "src": "https://images.pexels.com/photos/14279367/pexels-photo-14279367.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Howrah Bridge Silhouetted over Hooghly River during Sunset Perspective 1",
+          "title": "Howrah Bridge Silhouetted over Hooghly River during Sunset"
+        },
+        {
+          "src": "https://images.pexels.com/photos/4334157/pexels-photo-4334157.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Vibrant Pedestrian and Traffic Flow across Historic Howrah Bridge Perspective 2",
+          "title": "Vibrant Pedestrian and Traffic Flow across Historic Howrah Bridge"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1742325646212-f917ba1feeaa?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8SG93cmFoJTIwQnJpZGdlJTIwS29sa2F0YXxlbnwwfDB8fHwxNzkwNTM3ODg0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Dramatic View of Howrah Steel Truss Architecture at Twilight Perspective 3",
+          "title": "Dramatic View of Howrah Steel Truss Architecture at Twilight"
+        }
+      ]
     },
     {
       "name": "Dakshineswar Kali Temple",
       "category": "spiritual",
-      "distance": "12 km from Kolkata, West Bengal",
+      "distance": "14 km north of Kolkata city centre",
       "entryFee": "Free",
-      "timings": "Varies by season",
-      "duration": "1–2 hrs",
-      "rating": 4.6,
-      "description": "Riverside temple linked to the saint Ramakrishna.",
+      "timings": "6:00 AM – 12:30 PM, 3:00 PM – 8:30 PM",
+      "duration": "2 hrs",
+      "rating": 4.8,
+      "description": "Venerated 19th-century Navaratna nine-spire temple on the Hooghly riverbank founded by Rani Rashmoni, sacred for its association with mystic saint Sri Ramakrishna Paramahamsa and 12 riverside Shiva shrines.",
+      "travelTime": "25 mins from Central Kolkata via Kolkata Metro Blue Line to Dakshineswar",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Inside_the_Dakshineswar_temple_complex%2C_North_24_Parganas_district%2C_India.jpg/1280px-Inside_the_Dakshineswar_temple_complex%2C_North_24_Parganas_district%2C_India.jpg",
-        "alt": "Dakshineswar Kali Temple"
+        "src": "https://images.unsplash.com/photo-1751216966947-b960bd1c58f6?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8N3x8RGFrc2hpbmVzd2FyJTIwS2FsaSUyMFRlbXBsZSUyMEtvbGthdGF8ZW58MHwwfHx8MTc5MDUzNzg4NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+        "alt": "Dakshineswar Kali Temple Navaratna Spires along the Sacred Hooghly River — Kolkata"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg/1280px-Dakshineswar_Kali_Temple%2C_North_24_Parganas_district%2C_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/ef/Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/26/Wall_paintings_of_Interiors_of_Kathog_Monastery_alias_Kartok_Monastery_at_Pakyong_in_East_Sikkim_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "15–20 mins drive from Kolkata"
+        {
+          "src": "https://images.unsplash.com/photo-1677397333707-7b833006983d?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NXx8RGFrc2hpbmVzd2FyJTIwS2FsaSUyMFRlbXBsZXxlbnwwfDB8fHwxNzkwNTM3OTAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Twelve Sacred Shiva Shrines along the Riverfront at Dakshineswar Complex Perspective 1",
+          "title": "Twelve Sacred Shiva Shrines along the Riverfront at Dakshineswar Complex"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1649521973050-4f4eea8fa1d9?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8RGFrc2hpbmVzd2FyJTIwS2FsaSUyMFRlbXBsZXxlbnwwfDB8fHwxNzkwNTM3OTAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Devotees in the Sacred Courtyard of Dakshineswar Kali Temple Perspective 2",
+          "title": "Devotees in the Sacred Courtyard of Dakshineswar Kali Temple"
+        },
+        {
+          "src": "https://images.pexels.com/photos/29149748/pexels-photo-29149748.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Kumartuli Artisan Painting Traditional Sacred Clay Idol in Kolkata Workshop Perspective 3",
+          "title": "Kumartuli Artisan Painting Traditional Sacred Clay Idol in Kolkata Workshop"
+        }
+      ]
     }
   ],
   "itinerary": [
@@ -395,29 +434,29 @@
   ],
   "gallery": [
     {
-      "src": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "alt": "Victoria Memorial marble architecture and reflective pool in Kolkata",
-      "title": "Victoria Memorial marble architecture and reflective pool in Kolkata — Kolkata"
+      "src": "https://images.pexels.com/photos/33676158/pexels-photo-33676158.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Victoria Memorial Marble Dome and Royal Gardens — Kolkata",
+      "title": "Victoria Memorial Marble Dome and Royal Gardens — Kolkata"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pavilion_at_the_Victoria_Memorial%2C_Kolkata_02.jpg",
-      "alt": "Pavilion At The Victoria Memorial, Kolkata",
-      "title": "Pavilion At The Victoria Memorial, Kolkata"
+      "src": "https://images.pexels.com/photos/29484335/pexels-photo-29484335.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Iconic Howrah Cantilever Bridge at Sunrise over Hooghly River — Kolkata",
+      "title": "Iconic Howrah Cantilever Bridge at Sunrise over Hooghly River — Kolkata"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Howrah_Bridge%2C_Foggy.jpg",
-      "alt": "Howrah Bridge, Foggy — Kolkata",
-      "title": "Howrah Bridge, Foggy — Kolkata"
+      "src": "https://images.pexels.com/photos/12552817/pexels-photo-12552817.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Traditional Wooden Country Boats on Hooghly River near Vidyasagar Setu — Kolkata",
+      "title": "Traditional Wooden Country Boats on Hooghly River near Vidyasagar Setu — Kolkata"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Howrah_Railway_Station_01.jpg",
-      "alt": "Howrah Railway Station — Kolkata",
-      "title": "Howrah Railway Station — Kolkata"
+      "src": "https://images.pexels.com/photos/35971187/pexels-photo-35971187.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Prinsep Ghat Palladian Monument and Vidyasagar Setu Riverfront — Kolkata",
+      "title": "Prinsep Ghat Palladian Monument and Vidyasagar Setu Riverfront — Kolkata"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/47/Dakshineswar_Kali_temple%2C_Kolkata%2C_West_Bengal%2C_India.JPG",
-      "alt": "Dakshineswar Kali Temple, Kolkata, West Bengal, India",
-      "title": "Dakshineswar Kali Temple, Kolkata, West Bengal, India"
+      "src": "https://images.pexels.com/photos/27091047/pexels-photo-27091047.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Classic Yellow Ambassador Taxis Navigating Heritage Kolkata Streets — Kolkata",
+      "title": "Classic Yellow Ambassador Taxis Navigating Heritage Kolkata Streets — Kolkata"
     }
   ],
   "faq": [
@@ -443,19 +482,24 @@
     }
   ],
   "seo": {
-    "title": "Kolkata Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Kolkata is a much-loved heritage city in West Bengal, known for victoria memorial and trams. Plan your Kolkata trip: 3 places to visit, 4 stays from ₹1200/night, best time (Oct – Mar) and routes.",
+    "title": "Kolkata Travel Guide 2026 — Victoria Memorial, Howrah Bridge & Heritage Stays | ExploreDesh",
+    "description": "Plan your trip to Kolkata, the City of Joy: Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple, heritage hotels, best season (Oct – Mar), and transit guide.",
     "canonical": "destination.html?slug=kolkata",
-    "ogImage": "https://images.pexels.com/photos/35560520/pexels-photo-35560520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ogImage": "https://images.pexels.com/photos/33676158/pexels-photo-33676158.jpeg?auto=compress&cs=tinysrgb&w=2560",
     "keywords": [
       "Kolkata travel guide",
       "places to visit in Kolkata",
+      "Victoria Memorial Kolkata",
+      "Howrah Bridge",
+      "Dakshineswar Kali Temple",
       "Kolkata hotels",
-      "best time to visit Kolkata",
-      "how to reach Kolkata",
-      "West Bengal tourism"
+      "City of Joy tourism"
     ]
   },
   "hotelsRealSourceCount": 7,
-  "hotelSourceTried": true
+  "hotelSourceTried": true,
+  "image": {
+    "src": "https://images.pexels.com/photos/33676158/pexels-photo-33676158.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Majestic Victoria Memorial Marble Dome and Royal Gardens — Kolkata, West Bengal"
+  }
 }

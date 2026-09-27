@@ -5,11 +5,12 @@
 
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-27 rev-27):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 66 Certified —** Comprehensive Spiti Valley and marquee destination precision landmark overhaul completed (zero cross-state contamination, zero people/selfies, 100% authentic landmarks); repository cleaned of all obsolete scratch scripts; Service Worker `v1.1.0`; master regression guard 100% green (71/71 tests passed, Score: **100/100**).
+> **Platform Status (2026-09-28 rev-31):** **2,396 destinations** (14,037 places, 10,439 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **70,500+ photos catalog-wide**. **Phase 70 Certified —** Unused JavaScript Files Removal & Dead Code Elimination (2.22 MB purged across 7 obsolete files; root `server.js` and `build-json-data.js` consolidated); **Phase 69 Performance Overhaul —** Cloudflare edge WebP dynamic image compression via `wsrv.nl` (reducing image weight by ~97.8%), Service Worker `v1.2.0` with Network-First dynamic JSON caching, zero-contention background loading, and catalogue batch optimization (PAGE_SIZE = 24); master regression guard 100% green (71/71 tests passed, Score: **100/100**).
 
-> **Image Pipeline Status (2026-09-27):** **Phase 66 Certified Defect-Free —** 100% True HD (2560px) authentic Pexels and Unsplash photography assigned across all overhauled destinations (100% live HTTP 200 OK, zero Pixabay session tokens, zero wrong-monument contaminations, zero Wikimedia hotlinks, zero broken thumbnails, zero internal duplicates, zero cross-destination collisions across all 66,000+ catalog URLs). Total indexed images: **11,937 in Google Image Sitemaps**.
+> **Image Pipeline Status (2026-09-28):** **Phase 70 & 69 Certified —** 100% authentic, high-definition photography verified across all destinations with edge WebP dynamic optimization for fast low-latency loads; 100% live HTTP reachability, zero Pixabay session tokens, zero wrong-monument contaminations, zero broken thumbnails, zero internal duplicates between hero and places, zero cross-destination collisions across all 66,000+ catalog URLs. Total indexed images: **11,949 in Google Image Sitemaps**.
 
-A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
+A luxury India travel-discovery platform. Browse **2,396 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
+
 
 > **Dual-Engine Luxury Design System:** 
 > - **OLED Cinema Dark Mode:** Deep obsidian canvas (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B`), ambient gold glows, frosted glass cards, and high-contrast typography.
@@ -61,11 +62,12 @@ without adding a single HTML file:
 - **Dual-Engine Luxury Design System (OLED Cinema & Liquid Pearl Glass).** Flawlessly toggles between deep obsidian cinema mode (`#080A0F`) and editorial frosted milk glass ("Lait de Perle", `#FAF9F6`) with multi-point ambient daylight light wells (champagne sunlight corona & azure mist), specular top bevel highlights (`inset 0 1px 0 #FFFFFF`), and tactile golden corona hover lifts.
 - **Swiss Luxury Watch Bento Grid (`destination.html`).** Precision-engineered metrics dashboard featuring Altitude, Best Season, Seasonal Temperatures, and Live OpenWeather integration within beveled frosted milk glass tiles with warm amber medallions.
 - **Universal Luxury Overview Button Interactions.** Every button site-wide (`.btn`, `.btn-primary`, `.btn-outline`, `.nav-link`, `.tab-btn`, `.category-pill-btn`, `.quick-tag-btn`, `<button>`) features bottom-up ambient gold glow, radiant `2.5px solid #F5C542` bottom underline, and golden drop shadows on hover and active click.
-- **Universal Space-Agnostic & Relevance-Ranked Search Engine.** Engineered with `js/utils/search.js` to support space-less searches (`tajmahal`, `tamilnadu`, `ootytamilnadu`, `mehtabbagh`), compound queries, mixed multi-word queries, and full 14,013 attraction place indexing with tiered relevance ranking across `index.html`, `destinations.html`, and `ai-finder.html`.
+- **Universal Space-Agnostic & Relevance-Ranked Search Engine.** Engineered with `js/utils/search.js` to support space-less searches (`tajmahal`, `tamilnadu`, `ootytamilnadu`, `mehtabbagh`), compound queries, mixed multi-word queries, and full 14,037 attraction place indexing with tiered relevance ranking across `index.html`, `destinations.html`, and `ai-finder.html`.
 - **Homepage Visual Symmetry.** Trending Destinations carousel cards and the Interactive India Map are matched to `500px` height with aligned header baselines and bottom edges.
 - **Dynamic Refresh Reshuffling.** Featured sections (*Trending Destinations, Popular Destinations, Best Hill Stations, Explore More*) automatically reshuffle on every page refresh using Fisher-Yates randomization.
-- **100% Authentic Lodging Architecture Across All 2,393 Destinations (Zero Synthetic Chains).** 
-  - **10,427 Verified Properties Catalog-Wide:** Every single destination has verified, real-world accommodations ranging from on-site pilgrim Devasthanam Yatri Nivas & Forest Rest Houses to iconic heritage and luxury hotels.
+- **100% Authentic Lodging Architecture Across All 2,396 Destinations (Zero Synthetic Chains).** 
+  - **10,439 Verified Properties Catalog-Wide:** Every single destination has verified, real-world accommodations ranging from on-site pilgrim Devasthanam Yatri Nivas & Forest Rest Houses to iconic heritage and luxury hotels.
+
   - **87 Dedicated Regional Hubs:** Seamlessly bridges remote rural villages and temples to genuine accommodations in their closest commercial and tourist transit center (with verified distance tags, e.g. `Mayiladuthurai (15 km away)` or `Hospet (12 km away)`).
   - **100% Direct Google Maps Search Links:** Every hotel card features direct, pre-encoded Google Maps search URLs resolving to the specific physical property with town and state context.
 - **GSAP Scroll & Motion Engine.** Smooth scroll parallax background scrubs, hero staggered entrance timelines, animated stat counters, and section scroll triggers via GSAP 3.12.5 & ScrollTrigger with reduced-motion accessibility support.
@@ -128,23 +130,20 @@ trip_planner/
 │   ├── components/googleMapEmbed.js # Reusable lazy Google Maps embed component
 │
 ├── scripts/
-│   ├── serve.js            # ⭐ Zero-dependency static server (pure Node)
-│   ├── build-json-data.js  # Generates data/ from the legacy js/data*.js sources (+ bulk + overrides)
+│   ├── serve.js            # ⭐ Zero-dependency static server (pure Node with Gzip & ETag)
+│   ├── build-json-data.js  # Re-indexes search and manifest data (delegates to bulk/sync-index-and-search.js)
 │   ├── geo-reference.js    # Offline airports/railheads/cities → real nearest-reach + city routes
 │   ├── build-css.js        # Generates css/tailwind.css (static utility CSS)
 │   ├── build-india-map.js  # Generates data/india-map.js (state SVG paths for the home map)
-│   ├── build-stubs.js      # Regenerates the 2,393 redirect stubs
-│   ├── build-home-manifest.js # Recompiles lightweight home manifest (130KB payload)
+│   ├── build-stubs.js      # Regenerates the 2,396 redirect stubs
+│   ├── build-home-manifest.js # Recompiles lightweight home manifest (126KB payload)
 │   ├── build-sitemap.js    # Regenerates master sitemap.xml and 5 modular sub-sitemaps
 │   ├── seo_regression_guard.js # Master 71-rule SEO & architectural regression test suite
 │   ├── final-repository-audit.js # Full catalog invariant and collision auditor
 │   ├── seo_audit.js        # Technical SEO and Google indexing auditor
 │   ├── ui_ux_qa_audit.js   # Automated UI/UX, responsive, and a11y QA audit
-│   ├── bulk/               # Bulk-ingest pipeline (Wikidata + Wikipedia) + refetch-places-overrides.js
+│   ├── bulk/               # Bulk-ingest pipeline & sync-index-and-search.js
 │   └── build-destinations-doc.js   # Regenerates docs/DESTINATIONS.md
-│
-├── js/data.js, data-extra.js, data-destinations.js, data-photos.js, data-place-photos.js
-│                           # LEGACY source data — now only an input to build-json-data.js
 │
 ├── CLAUDE.md               # 📘 Authoritative engineering guide — READ before changing code
 ├── README.md               # This file

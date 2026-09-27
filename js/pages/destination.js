@@ -149,25 +149,47 @@ if (!dest) {
   main(dest, null);
 
   // Lean background manifest load for bottom Similar Destinations rail (~148 KB instead of 2.9 MB)
+  function loadFullSimilar() {
+    fetchIndex().then((fullIdx) => {
+      if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
+        window.__renderSimilarDestinations(fullIdx);
+      }
+    }).catch(() => {});
+  }
+
   fetchHomeIndex()
     .then((loadedIdx) => {
       if (loadedIdx && typeof window.__renderSimilarDestinations === 'function') {
         const found = window.__renderSimilarDestinations(loadedIdx);
         if (!found) {
-          fetchIndex().then((fullIdx) => {
-            if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
-              window.__renderSimilarDestinations(fullIdx);
-            }
-          }).catch(() => {});
+          const simEl = document.getElementById('similar-grid');
+          if (simEl && 'IntersectionObserver' in window) {
+            const obs = new IntersectionObserver((entries, observer) => {
+              if (entries[0].isIntersecting) {
+                observer.disconnect();
+                loadFullSimilar();
+              }
+            }, { rootMargin: '400px' });
+            obs.observe(simEl);
+          } else {
+            loadFullSimilar();
+          }
         }
       }
     })
     .catch(() => {
-      fetchIndex().then((fullIdx) => {
-        if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
-          window.__renderSimilarDestinations(fullIdx);
-        }
-      }).catch(() => {});
+      const simEl = document.getElementById('similar-grid');
+      if (simEl && 'IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries, observer) => {
+          if (entries[0].isIntersecting) {
+            observer.disconnect();
+            loadFullSimilar();
+          }
+        }, { rootMargin: '400px' });
+        obs.observe(simEl);
+      } else {
+        loadFullSimilar();
+      }
     });
 }
 

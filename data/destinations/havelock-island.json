@@ -6,14 +6,15 @@
   "region": "Ritchie's Archipelago",
   "type": "beach",
   "badge": "Top Asian Beach",
-  "tagline": "Home to world-renowned Radhanagar Beach and coral reefs",
+  "tagline": "Home to world-renowned Radhanagar Beach, Elephant Beach reefs and azure lagoons",
   "image": {
-    "src": "https://images.pexels.com/photos/37950306/pexels-photo-37950306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "alt": "Havelock Island (Swaraj Dweep), Andaman & Nicobar"
+    "src": "https://images.pexels.com/photos/14313849/pexels-photo-14313849.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Havelock Island (Swaraj Dweep) Turquoise Ocean Waters & White Sand Shoreline — Andaman"
   },
   "heroImage": {
-    "src": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1280",
-    "alt": "Havelock Island Radhanagar Beach with crystal clear turquoise water"
+    "src": "https://images.pexels.com/photos/14313849/pexels-photo-14313849.jpeg?auto=compress&cs=tinysrgb&w=2560",
+    "alt": "Havelock Island (Swaraj Dweep) Turquoise Ocean Waters & White Sand Shoreline — Andaman",
+    "title": "Havelock Island Turquoise Ocean & White Sand Shoreline"
   },
   "overview": {
     "short": "Home to Asia's world-famous Radhanagar Beach, turquoise diving spots and mahua forests.",
@@ -425,22 +426,98 @@
     {
       "name": "Radhanagar Beach (Beach No. 7)",
       "category": "beach",
-      "distance": "10 km from Havelock Island (Swaraj Dweep), Andaman & Nicobar",
+      "distance": "10 km from Havelock Ferry Jetty",
       "entryFee": "Free",
-      "timings": "6 AM – 6 PM",
+      "timings": "6:00 AM – 6:00 PM",
       "duration": "3–4 hrs",
       "rating": 4.9,
-      "description": "Voted among Asia's best beaches, famous for soft white sand and breathtaking sunsets.",
+      "description": "Voted among Asia's best beaches by Time Magazine. Renowned for its powdery soft white silica sand, turquoise waves, and legendary sunsets framed by ancient rainforest mahua trees.",
+      "travelTime": "15–20 mins drive from Jetty",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Havelock_elephant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Radhanagar Beach (Beach No. 7) in Andaman & Nicobar"
+        "src": "https://images.unsplash.com/photo-1593202232429-549625b8660d?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8UmFkaGFuYWdhciUyMEJlYWNoJTIwQW5kYW1hbnxlbnwwfDB8fHwxNzkwNTM2OTk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+        "alt": "Radhanagar Beach White Sands & Crystal Surf — Havelock Island, Andaman"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Beautiful_sunset_at_radhanagar_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Trees_near_Radhanagar_Beach%2C_Havelock_Island%2C_Andaman_vrvbaan042k24_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3e/Radhanagar_Beach%2C_Havelock_Island%2C_Andaman_vrvbaan042k24_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "15–20 mins drive from Havelock Island (Swaraj Dweep)"
+        {
+          "src": "https://images.unsplash.com/photo-1599325601183-042bed55081c?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8UmFkaGFuYWdhciUyMEJlYWNoJTIwQW5kYW1hbnxlbnwwfDB8fHwxNzkwNTM2OTk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Radhanagar Beach Emerald Shallows Perspective 1 — Swaraj Dweep",
+          "title": "Radhanagar Beach Emerald Shallows Perspective 1"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1721834058855-b9d0570722b4?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8UmFkaGFuYWdhciUyMEJlYWNoJTIwQW5kYW1hbnxlbnwwfDB8fHwxNzkwNTM2OTk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Radhanagar Tropical Mahua Forest Coastline Perspective 2 — Andaman",
+          "title": "Radhanagar Tropical Mahua Forest Coastline Perspective 2"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1622718247639-d368a0ba7d23?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Nnx8UmFkaGFuYWdhciUyMEJlYWNoJTIwQW5kYW1hbnxlbnwwfDB8fHwxNzkwNTM2OTk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Radhanagar Beach Golden Sunset Waves Perspective 3 — Andaman",
+          "title": "Radhanagar Beach Golden Sunset Waves Perspective 3"
+        }
+      ]
+    },
+    {
+      "name": "Elephant Beach (Snorkeling & Coral Reefs)",
+      "category": "adventure",
+      "distance": "8.5 km from Havelock Jetty + short trek / boat",
+      "entryFee": "Free (Water sports extra)",
+      "timings": "7:00 AM – 3:30 PM",
+      "duration": "3–4 hrs",
+      "rating": 4.8,
+      "description": "The premier snorkeling and water sports haven of Havelock. Vibrant shallow coral gardens teem with exotic marine life, sea turtles, and colorful parrotfish amidst crystal-clear turquoise waters.",
+      "travelTime": "20 mins boat ride / 30 mins jungle trek",
+      "image": {
+        "src": "https://images.pexels.com/photos/36647555/pexels-photo-36647555.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Elephant Beach Turquoise Snorkeling Waters & Mangrove Coast — Havelock Island"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/16840024/pexels-photo-16840024.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Elephant Beach Coral Reef Shallows Perspective 1 — Andaman",
+          "title": "Elephant Beach Coral Reef Shallows Perspective 1"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1586359716568-3e1907e4cf9f?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MXx8SGF2ZWxvY2slMjBJc2xhbmQlMjBBbmRhbWFufGVufDB8MHx8fDE3OTA1MzY5OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+          "alt": "Tropical Palm Shaded Coral Coast Perspective 2 — Elephant Beach",
+          "title": "Tropical Palm Shaded Coral Coast Perspective 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/19756133/pexels-photo-19756133.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Speedboat Gliding Through Turquoise Reef Waters Perspective 3 — Andaman",
+          "title": "Speedboat Gliding Through Turquoise Reef Waters Perspective 3"
+        }
+      ]
+    },
+    {
+      "name": "Kalapathar Beach (Sunrise & Black Rocks)",
+      "category": "scenic",
+      "distance": "6.5 km from Havelock Market",
+      "entryFee": "Free",
+      "timings": "5:30 AM – 6:00 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.7,
+      "description": "A serene beach celebrated for its dramatic contrast of unique black volcanic limestone boulders against powdery golden sands and vibrant aquamarine lagoons. The prime sunrise spot on Swaraj Dweep.",
+      "travelTime": "15 mins drive from Town Market",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1736960486059-561d1f687130?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8MTJ8fFJhZGhhbmFnYXIlMjBCZWFjaCUyMEFuZGFtYW58ZW58MHwwfHx8MTc5MDUzNjk5N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=2560&q=85",
+        "alt": "Kalapathar Beach Coastal Rocks & Turquoise Surf — Havelock Island, Andaman"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/10794387/pexels-photo-10794387.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Calm Shoreline and Emerald Lagoon Perspective 1 — Kalapathar Beach",
+          "title": "Calm Shoreline and Emerald Lagoon Perspective 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/30588127/pexels-photo-30588127.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tropical Golden Hour over Coastal Sands Perspective 2 — Swaraj Dweep",
+          "title": "Tropical Golden Hour over Coastal Sands Perspective 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/31793705/pexels-photo-31793705.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tranquil Coastal Mahua Trees Perspective 3 — Andaman",
+          "title": "Tranquil Coastal Mahua Trees Perspective 3"
+        }
+      ]
     }
   ],
   "hotels": [
@@ -530,49 +607,65 @@
   ],
   "gallery": [
     {
-      "src": "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1280",
-      "alt": "Havelock Island Radhanagar Beach with crystal clear turquoise water",
-      "title": "Havelock Island Aka Swaraj Dweep Andaman Vrvbaan042k24 — Havelock Island (Swaraj Dweep)"
+      "src": "https://images.pexels.com/photos/14313849/pexels-photo-14313849.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Havelock Island (Swaraj Dweep) Turquoise Ocean Waters & White Sand Shoreline — Andaman",
+      "title": "Havelock Island Turquoise Ocean & White Sand Shoreline"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Havelock_island_aka_Swaraj_Dweep_Andaman_vrvbaan042k24_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Havelock Island (Swaraj Dweep) — Havelock island aka Swaraj Dweep Andaman vrvbaan042k24 (2)",
-      "title": "Havelock Island Aka Swaraj Dweep Andaman Vrvbaan042k24 — Havelock Island (Swaraj Dweep)"
+      "src": "https://images.pexels.com/photos/37943867/pexels-photo-37943867.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Aerial View of Pristine White Sand Shoals and Tropical Island Waters — Andaman",
+      "title": "Aerial Vista of Pristine Coral Waters & Island Shoals"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Havelock_island_aka_Swaraj_Dweep_Andaman_vrvbaan042k24_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Havelock Island (Swaraj Dweep) — Havelock island aka Swaraj Dweep Andaman vrvbaan042k24 (5)",
-      "title": "Havelock Island Aka Swaraj Dweep Andaman Vrvbaan042k24 — Havelock Island (Swaraj Dweep)"
+      "src": "https://images.pexels.com/photos/30188165/pexels-photo-30188165.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Traditional Wooden Boat Docked in Serene Azure Waters — Havelock Island Andaman",
+      "title": "Azure Lagoon Waters & Coastal Wooden Boats"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Havelock_island_aka_Swaraj_Dweep_Andaman_vrvbaan042k24_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Havelock Island (Swaraj Dweep) — Havelock island aka Swaraj Dweep Andaman vrvbaan042k24 (7)",
-      "title": "Havelock Island Aka Swaraj Dweep Andaman Vrvbaan042k24 — Havelock Island (Swaraj Dweep)"
+      "src": "https://images.pexels.com/photos/7898438/pexels-photo-7898438.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Tropical Mahua Canopy Overlooking Tranquil Ocean — Havelock Island",
+      "title": "Tropical Mahua Trees Overlooking Calming Andaman Sea"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/CK_Plus_jpg_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Havelock Island (Swaraj Dweep) - Highlight 5",
-      "alt": "Gardens in India",
-      "title": "Gardens in India"
+      "src": "https://images.pexels.com/photos/37943866/pexels-photo-37943866.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Pristine Emerald Coral Reef Shallows — Andaman & Nicobar Archipelago",
+      "title": "Pristine Emerald Coral Reef Shallows"
     }
   ],
   "faq": [
     {
-      "q": "How to reach Havelock Island?",
-      "a": "Take a flight to Port Blair, then a 1.5-hour high-speed ferry (Makruzz or Green Ocean) to Havelock."
+      "q": "How to reach Havelock Island (Swaraj Dweep)?",
+      "a": "Fly to Veer Savarkar International Airport in Port Blair, then board a government ferry or high-speed catamaran (Makruzz, Nautika, Green Ocean) for a 90-minute voyage to Havelock."
+    },
+    {
+      "q": "What are the top beaches to visit in Havelock Island?",
+      "a": "The top beaches are Radhanagar Beach (Beach No. 7) for sunsets, Elephant Beach for coral snorkeling and water sports, and Kalapathar Beach for sunrise and scenic black rocks."
+    },
+    {
+      "q": "What is the best time to visit Havelock Island?",
+      "a": "The best time to visit is from October to April when the tropical weather is sunny, humidity is pleasant, and sea visibility is ideal for scuba diving and snorkeling."
+    },
+    {
+      "q": "Are water sports available at Havelock Island?",
+      "a": "Yes, Havelock is India premier scuba diving destination (PADI certified centers), alongside sea-walking, glass-bottom boat rides, snorkeling, and night bioluminescent kayaking."
     }
   ],
   "seo": {
-    "title": "Havelock Island Travel Guide 2026 — Radhanagar Beach, Hotels, Ferries | ExploreDesh",
-    "description": "Complete Havelock Island guide: Radhanagar Beach, scuba diving spots, luxury resorts and ferry timings from Port Blair.",
+    "title": "Havelock Island Travel Guide 2026 — Radhanagar Beach, Stays & Ferries | ExploreDesh",
+    "description": "Complete travel guide to Havelock Island (Swaraj Dweep), Andaman. Featuring Asia top-rated Radhanagar Beach, Elephant Beach snorkeling, ferry booking tips, and hotels.",
     "canonical": "destination.html?slug=havelock-island",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Havelock_island_aka_Swaraj_Dweep_Andaman_vrvbaan042k24_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://images.pexels.com/photos/14313849/pexels-photo-14313849.jpeg?auto=compress&cs=tinysrgb&w=2560",
     "keywords": [
-      "Havelock Island Andaman",
+      "Havelock Island",
+      "Swaraj Dweep Andaman",
       "Radhanagar Beach",
-      "Port Blair to Havelock ferry"
+      "Elephant Beach snorkeling",
+      "Kalapathar Beach",
+      "Port Blair to Havelock ferry",
+      "Andaman travel guide"
     ]
   },
   "hotelSourceTried": true,
-  "hotelsRealSourceCount": 1
+  "hotelsRealSourceCount": 1,
+  "updatedAt": "2026-09-27T19:24:24.535Z"
 }

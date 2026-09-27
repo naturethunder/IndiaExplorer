@@ -83,6 +83,10 @@ node scripts/images/cross-destination-audit.js
   - Northern Indian Wetlands: Must feature Northern Indian wetland waterfowl (Keoladeo, Bharatpur, Sultanpur, Najafgarh). Never Minnesota or Peru.
   - Northeast India: Must feature Ziro Valley terraced rice paddies and pine hills. Never Turkey.
 
+### 7. Rule 7 — Ground-Truth Landmark Preservation Over Generic Stock
+- **Never Replace Iconic Monuments with Stock**: Automated scripts must NEVER overwrite authentic photos of recognizable Indian monuments (e.g. Khajuraho temples, Udaipur City Palace, Gateway of India, Meenakshi Temple, Mysore Palace, Dudhsagar Falls, Key Gompa) with generic stock photography (such as flowers, nature macros, generic trees, or repetitive stock fillers).
+- **Surgical Verification**: Verify both current and historical images. If the historical image depicts the true monument and is reachable, preserve or restore it. Only replace slots where the existing image has confirmed defects.
+
 ---
 
 ## Remediation Workflow
@@ -95,4 +99,5 @@ When repairing destinations flagged by the audit:
    node scripts/build-sitemap.js
    ```
 3. Re-run `node scripts/final-repository-audit.js` to verify 100% compliance.
+
 

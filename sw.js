@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.1.0';
+const VERSION = 'v1.2.0';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -188,37 +188,27 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 3. Dynamic Destination JSON Data (`data/destinations/*.json`): Stale-While-Revalidate for Instant 0ms Render
+  // 3. Dynamic Destination JSON Data (`data/destinations/*.json`): Network-First with Offline Cache Fallback
   if (url.pathname.startsWith('/data/') || url.pathname.includes('/data/')) {
     event.respondWith(
-      caches.open(CACHE_DATA).then(async (cache) => {
-        const cached = await cache.match(req);
-        const fetchPromise = fetch(req)
-          .then((networkRes) => {
-            if (networkRes && networkRes.ok) {
-              cache.put(req, networkRes.clone());
-            }
-            return networkRes;
-          })
-          .catch(() => null);
-
-        // If cached copy exists, return immediately without network latency
-        if (cached) {
-          return cached;
-        }
-
-        const networkRes = await fetchPromise;
-        if (networkRes) return networkRes;
-
-        // Check in shell cache as secondary fallback
-        const shellCached = await caches.match(req);
-        if (shellCached) return shellCached;
-
-        return new Response(JSON.stringify({ error: 'offline', message: 'Data not cached for offline access' }), {
-          status: 503,
-          headers: { 'Content-Type': 'application/json; charset=utf-8' }
-        });
-      })
+      fetch(req)
+        .then((networkRes) => {
+          if (networkRes && networkRes.ok) {
+            const copy = networkRes.clone();
+            caches.open(CACHE_DATA).then((cache) => cache.put(req, copy)).catch(() => {});
+          }
+          return networkRes;
+        })
+        .catch(async () => {
+          const cached = await caches.match(req);
+          if (cached) return cached;
+          const shellCached = await caches.open(CACHE_SHELL).then((c) => c.match(req)).catch(() => null);
+          if (shellCached) return shellCached;
+          return new Response(JSON.stringify({ error: 'offline', message: 'Data not cached for offline access' }), {
+            status: 503,
+            headers: { 'Content-Type': 'application/json; charset=utf-8' }
+          });
+        })
     );
     return;
   }

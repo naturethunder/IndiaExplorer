@@ -38,10 +38,10 @@ export function optimizeImageUrl(url, width = 800) {
       if (inner) return optimizeImageUrl(decodeURIComponent(inner), width);
     } catch (_) {}
   }
-  // 1. Wikimedia Commons: Preserve valid static pre-rendered thumbnails and raw URLs directly.
-  // Never rewrite to arbitrary widths (e.g. 1400px, 600px) because upload.wikimedia.org returns HTTP 400 Bad Request.
+  // 1. Wikimedia Commons: Optimize raw uncompressed DSLR/phone uploads via global Cloudflare edge WebP resizing
   if (url.includes('upload.wikimedia.org/') || url.includes('commons.wikimedia.org/')) {
-    return url;
+    const targetW = Math.min(width, 1200);
+    return 'https://wsrv.nl/?url=' + encodeURIComponent(url) + '&w=' + targetW + '&output=webp&q=75';
   }
   // 3. Pexels photo: strip dpr & extra height, compress & set clean target width
   if (url.includes('images.pexels.com/photos/')) {

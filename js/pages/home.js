@@ -185,7 +185,7 @@ function search(q) {
   return searchDestinations(summaries, q);
 }
 
-// Background promotion: load full 2,393 index quietly so deep autocomplete works across all India
+// Background promotion: load full 2,396 index only on search engagement or deferred 8s idle
 function loadFullCatalog() {
   if (isFullIndexLoaded) return;
   fetchIndex().then((fullIdx) => {
@@ -197,11 +197,19 @@ function loadFullCatalog() {
   }).catch(() => {});
 }
 
+// On-demand: start loading full catalogue when user focuses search
+const searchIn = document.getElementById('searchInput');
+if (searchIn) {
+  searchIn.addEventListener('focus', loadFullCatalog, { once: true, passive: true });
+  searchIn.addEventListener('input', loadFullCatalog, { once: true, passive: true });
+}
+
+// Secondary deferred fallback only after initial page completely settles (8 seconds)
 if (!isFullIndexLoaded) {
   if ('requestIdleCallback' in window) {
-    requestIdleCallback(loadFullCatalog, { timeout: 2500 });
+    requestIdleCallback(loadFullCatalog, { timeout: 8000 });
   } else {
-    setTimeout(loadFullCatalog, 800);
+    setTimeout(loadFullCatalog, 8000);
   }
 }
 
@@ -209,12 +217,12 @@ if (!isFullIndexLoaded) {
 (function () {
   const el = document.getElementById('hero-stats');
   if (!el) return;
-  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2393);
+  const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2396);
   const stats = [
     { ic: 'map-pin', raw: totalDestCount, suffix: '+', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
-    { ic: 'mountain', raw: 14013, suffix: '+', label: 'Places' },
-    { ic: 'bed', raw: 10427, suffix: '+', label: 'Stays' },
+    { ic: 'mountain', raw: 14037, suffix: '+', label: 'Places' },
+    { ic: 'bed', raw: 10439, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>
     '<span class="hero-stat">' +
@@ -268,7 +276,7 @@ if (!isFullIndexLoaded) {
     });
   }
 
-  const totalCount = idx.count || summaries.length || 2393;
+  const totalCount = idx.count || summaries.length || 2396;
 
   el.innerHTML = cats.map((c) => {
     const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);

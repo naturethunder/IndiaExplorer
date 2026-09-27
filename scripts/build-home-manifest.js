@@ -7,7 +7,7 @@
  * - Contains all ~130-150 destinations needed by the homepage sections (hills, popular,
  *   trending, explore, season leads, month-by-month recommendations, and top destinations
  *   per state for the India map).
- * - Pre-computes exact state counts and category counts for all 2,393 destinations.
+ * - Pre-computes exact state counts and category counts for all 2,396 destinations.
  * - Zero features or destinations removed: full index.json continues to load asynchronously
  *   in the background for deep autocomplete and catalogue browsing.
  */

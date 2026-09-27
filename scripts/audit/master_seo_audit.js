@@ -201,7 +201,7 @@ templates.forEach(tpl => {
   };
 });
 
-// 5. Destination Data & Content Quality Audit (all 2,393 files)
+// 5. Destination Data & Content Quality Audit (all 2,396 files)
 console.log('5. Auditing all destination JSON files (content depth, image validity, coordinates, places)...');
 const indexPath = path.join(DEST_DIR, 'index.json');
 const indexData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));

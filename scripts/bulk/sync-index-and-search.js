@@ -72,17 +72,16 @@ idx.destinations.forEach(summary => {
       src: dest.heroImage.src,
       alt: dest.heroImage.alt || `${dest.title}, ${dest.state}`
     };
-  }
-  if (dest.image && dest.image.src) {
-    summary.image = {
-      src: dest.image.src,
-      alt: dest.image.alt || `${dest.title}, ${dest.state}`
-    };
-  } else if (dest.heroImage && dest.heroImage.src) {
     summary.image = {
       src: dest.heroImage.src,
       alt: dest.heroImage.alt || `${dest.title}, ${dest.state}`
     };
+  }
+  if (ov.short) {
+    summary.short = ov.short;
+  }
+  if (dest.badge) {
+    summary.badge = dest.badge;
   }
   updatedCount++;
 

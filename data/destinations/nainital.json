@@ -8,15 +8,16 @@
   "badge": "Freshwater Lake",
   "tagline": "Nainital — hill station of Uttarakhand",
   "heroImage": {
-    "src": "https://images.pexels.com/photos/19289780/pexels-photo-19289780.jpeg?auto=compress&cs=tinysrgb&w=1280",
-    "alt": "Naini Lake surrounded by lush green hills in Nainital"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg",
+    "alt": "Nainital, Uttarakhand"
   },
   "overview": {
-    "short": "Nainital is a much-loved hill station in Uttarakhand, known for naini lake and boating.",
-    "description": "Nainital, in Kumaon, Uttarakhand, is one of India’s favourite hill station. Visitors come for its naini lake, boating, mall road, snow views, with the best months being Mar – Jun, Sep – Nov.",
+    "short": "Nainital is Uttarakhand's iconic Lake District hill station, famed for the emerald, mango-shaped Naini Lake, boating along Mall Road, and panoramic Himalayan peaks.",
+    "description": "Nainital, nestled in the Kumaon Himalayas of Uttarakhand at an elevation of 2,084m, is celebrated across India for its picturesque freshwater lakes and vibrant hill-town atmosphere. The town revolves around the emerald Naini Lake—widely dubbed the 'Mango Lake' due to its natural mango-shaped contour when viewed from upper viewpoints like Mango Lake View Point and Tiffin Top. Surrounded by seven verdant peaks and offering boating, heritage temples, and panoramic snow views of Nanda Devi, it is the crown jewel of Kumaon tourism.",
     "features": [
-      "Naini Lake",
-      "Boating",
+      "Naini Lake (Mango Lake)",
+      "Mango Lake View Point",
+      "Boating & Yachting",
       "Mall Road",
       "Snow Views"
     ],
@@ -209,64 +210,260 @@
   },
   "topPlaces": [
     {
-      "name": "Naini Lake",
+      "name": "Naini Lake (The Mango Lake)",
       "category": "scenic",
       "distance": "In Nainital Centre, Uttarakhand",
       "entryFee": "₹210",
-      "timings": "Varies by season",
-      "duration": "1 hr",
-      "rating": 4.5,
-      "description": "Emerald crescent lake at the heart of town, perfect for boating.",
+      "timings": "6:00 AM – 6:00 PM",
+      "duration": "1–2 hrs",
+      "rating": 4.8,
+      "description": "The iconic emerald freshwater lake at the heart of Nainital. When observed from elevated vantage points like the famous Mango Lake View Point on Kilbury Road or Tiffin Top, the natural shoreline perfectly resembles a giant green mango—earning it its famous moniker 'Mango Lake'. Visitors enjoy colorful wooden rowboats, paddle boats, and heritage yachting amidst misty Kumaon hills.",
+      "travelTime": "Under 5 mins walk in Town Centre",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nainital%2C_Mall_Road.jpg/1280px-Nainital%2C_Mall_Road.jpg",
-        "alt": "Naini Lake"
+        "src": "https://images.pexels.com/photos/34792711/pexels-photo-34792711.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Naini Lake Boating & Waters — Nainital, Uttarakhand"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/StoneChariot-Hampi-Karnataka-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hampi%2C_India%2C_Watch_Tower%2C_The_Zenana_Enclosure%2C_Vijayanagara_Empire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/Hampi%2C_India%2C_Night_in_Hampi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "Under 5 mins walk in Town Centre"
+        {
+          "src": "https://images.pexels.com/photos/16060830/pexels-photo-16060830.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naini Lake Boating & Waters View 1 — Kumaon Himalayas",
+          "title": "Naini Lake Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/11847569/pexels-photo-11847569.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naini Lake Boating & Waters View 2 — Uttarakhand",
+          "title": "Naini Lake Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/29870625/pexels-photo-29870625.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naini Lake Boating & Waters View 3 — Lake District",
+          "title": "Naini Lake Scenic View 3"
+        }
+      ]
+    },
+    {
+      "name": "Bhimtal Lake",
+      "category": "scenic",
+      "distance": "22 km from Nainital, Uttarakhand",
+      "entryFee": "₹150",
+      "timings": "9:00 AM – 6:00 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.7,
+      "description": "The largest lake in the Kumaon region, featuring a picturesque natural island in its center with an aquarium and scenic walking promenades.",
+      "travelTime": "45–55 mins drive from Nainital",
+      "image": {
+        "src": "https://images.pexels.com/photos/29870616/pexels-photo-29870616.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Bhimtal Lake Island & Waters — Nainital, Uttarakhand"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/37794897/pexels-photo-37794897.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Bhimtal Lake Island & Waters View 1 — Kumaon Himalayas",
+          "title": "Bhimtal Lake Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/12923126/pexels-photo-12923126.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Bhimtal Lake Island & Waters View 2 — Uttarakhand",
+          "title": "Bhimtal Lake Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/34940316/pexels-photo-34940316.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Bhimtal Lake Island & Waters View 3 — Lake District",
+          "title": "Bhimtal Lake Scenic View 3"
+        }
+      ]
+    },
+    {
+      "name": "Naukuchiatal",
+      "category": "scenic",
+      "distance": "26 km from Nainital, Uttarakhand",
+      "entryFee": "Free",
+      "timings": "Open all day",
+      "duration": "2 hrs",
+      "rating": 4.6,
+      "description": "The renowned \"Lake of Nine Corners\", the deepest lake in the region surrounded by verdant terraced hills, lotus ponds, and serene bird-watching trails.",
+      "travelTime": "55–65 mins drive from Nainital",
+      "image": {
+        "src": "https://images.pexels.com/photos/2443872/pexels-photo-2443872.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Naukuchiatal Nine-Cornered Lake — Nainital, Uttarakhand"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/12525612/pexels-photo-12525612.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naukuchiatal Nine-Cornered Lake View 1 — Kumaon Himalayas",
+          "title": "Naukuchiatal Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/26971139/pexels-photo-26971139.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naukuchiatal Nine-Cornered Lake View 2 — Uttarakhand",
+          "title": "Naukuchiatal Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/18679940/pexels-photo-18679940.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naukuchiatal Nine-Cornered Lake View 3 — Lake District",
+          "title": "Naukuchiatal Scenic View 3"
+        }
+      ]
+    },
+    {
+      "name": "Sattal (Seven Lakes)",
+      "category": "nature",
+      "distance": "23 km from Nainital, Uttarakhand",
+      "entryFee": "Free",
+      "timings": "Sunrise to Sunset",
+      "duration": "Half day",
+      "rating": 4.7,
+      "description": "A cluster of seven interconnected pristine freshwater lakes (Ram, Sita, Lakshman, and more) nestled deep in dense oak and pine Himalayan forests.",
+      "travelTime": "50–60 mins drive from Nainital",
+      "image": {
+        "src": "https://images.pexels.com/photos/30015894/pexels-photo-30015894.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Sattal Forest Interconnected Lakes — Nainital, Uttarakhand"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/30404565/pexels-photo-30404565.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Sattal Forest Interconnected Lakes View 1 — Kumaon Himalayas",
+          "title": "Sattal (Seven Lakes) Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/32921242/pexels-photo-32921242.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Sattal Forest Interconnected Lakes View 2 — Uttarakhand",
+          "title": "Sattal (Seven Lakes) Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/1469883/pexels-photo-1469883.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Sattal Forest Interconnected Lakes View 3 — Lake District",
+          "title": "Sattal (Seven Lakes) Scenic View 3"
+        }
+      ]
+    },
+    {
+      "name": "Khurpatal Lake",
+      "category": "nature",
+      "distance": "11 km from Nainital, Uttarakhand",
+      "entryFee": "Free",
+      "timings": "Open all day",
+      "duration": "1–2 hrs",
+      "rating": 4.5,
+      "description": "A secluded, emerald-green hidden lake perched at 1,635m, famous for crystal-clear reflection of surrounding cedar trees and peaceful angling.",
+      "travelTime": "25–35 mins drive from Nainital",
+      "image": {
+        "src": "https://images.pexels.com/photos/19930945/pexels-photo-19930945.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Khurpatal Emerald Green Lake — Nainital, Uttarakhand"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/36662608/pexels-photo-36662608.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Khurpatal Emerald Green Lake View 1 — Kumaon Himalayas",
+          "title": "Khurpatal Lake Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/5269074/pexels-photo-5269074.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Khurpatal Emerald Green Lake View 2 — Uttarakhand",
+          "title": "Khurpatal Lake Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/18563692/pexels-photo-18563692.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Khurpatal Emerald Green Lake View 3 — Lake District",
+          "title": "Khurpatal Lake Scenic View 3"
+        }
+      ]
     },
     {
       "name": "Naina Devi Temple",
       "category": "spiritual",
-      "distance": "In Nainital Centre, Uttarakhand",
+      "distance": "On Northern Shore of Naini Lake",
       "entryFee": "Free",
-      "timings": "Varies by season",
-      "duration": "30 min",
-      "rating": 4.4,
-      "description": "Lakeside Shakti-peeth temple, the soul of Nainital.",
+      "timings": "6:00 AM – 10:00 PM",
+      "duration": "1 hr",
+      "rating": 4.6,
+      "description": "Revered Shakti Peetha shrine situated directly on the northern bank of Naini Lake, where Goddess Sati’s eyes are believed to have fallen.",
+      "travelTime": "5 mins walk from Mall Road",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Naina_devi_mandir02%2C_Nainital.jpg/1280px-Naina_devi_mandir02%2C_Nainital.jpg",
-        "alt": "Naina Devi Temple"
+        "src": "https://images.pexels.com/photos/9244238/pexels-photo-9244238.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Naina Devi Sacred Lakeside Temple — Nainital, Uttarakhand"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hampi_group_of_monuments_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/85/HAMPI_KARNATAKA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/25/Hampi_-_King%27s_Palace_-_Throne_Platform_-_Relief_-_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "Under 5 mins walk in Town Centre"
+        {
+          "src": "https://images.pexels.com/photos/30404566/pexels-photo-30404566.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naina Devi Sacred Lakeside Temple View 1 — Kumaon Himalayas",
+          "title": "Naina Devi Temple Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/14124217/pexels-photo-14124217.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naina Devi Sacred Lakeside Temple View 2 — Uttarakhand",
+          "title": "Naina Devi Temple Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/14825945/pexels-photo-14825945.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Naina Devi Sacred Lakeside Temple View 3 — Lake District",
+          "title": "Naina Devi Temple Scenic View 3"
+        }
+      ]
     },
     {
       "name": "Snow View Point",
       "category": "scenic",
       "distance": "3 km from Nainital, Uttarakhand",
-      "entryFee": "₹300",
-      "timings": "Varies by season",
-      "duration": "1 hr",
-      "rating": 4.4,
-      "description": "Cable-car ride to Himalayan panoramas of Nanda Devi.",
+      "entryFee": "₹300 (Aerial Ropeway)",
+      "timings": "10:00 AM – 5:00 PM",
+      "duration": "2 hrs",
+      "rating": 4.5,
+      "description": "Elevated 2,270m vantage point reachable by cable car, offering magnificent panoramic views of snow-clad Himalayan peaks like Nanda Devi and Trishul.",
+      "travelTime": "10 mins ropeway / 15 mins drive",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Snow-nainital_0.jpg",
-        "alt": "Snow View Point"
+        "src": "https://images.pexels.com/photos/9065690/pexels-photo-9065690.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Snow View Point Himalayan Panorama — Nainital, Uttarakhand"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Snow_View_Point%2C_Nainital.jpg/1280px-Snow_View_Point%2C_Nainital.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Hampi_in_karnataka_is_a_natural_heritage_site.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/8/86/Hampi%2C_Karnataka%2C_India_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "10–15 mins drive from Nainital"
+        {
+          "src": "https://images.pexels.com/photos/38992926/pexels-photo-38992926.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Snow View Point Himalayan Panorama View 1 — Kumaon Himalayas",
+          "title": "Snow View Point Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/39757686/pexels-photo-39757686.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Snow View Point Himalayan Panorama View 2 — Uttarakhand",
+          "title": "Snow View Point Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/35283480/pexels-photo-35283480.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Snow View Point Himalayan Panorama View 3 — Lake District",
+          "title": "Snow View Point Scenic View 3"
+        }
+      ]
+    },
+    {
+      "name": "Tiffin Top (Dorothy’s Seat)",
+      "category": "adventure",
+      "distance": "4 km from Nainital Centre",
+      "entryFee": "Free",
+      "timings": "8:00 AM – 5:30 PM",
+      "duration": "2–3 hrs",
+      "rating": 4.6,
+      "description": "A popular hilltop picnic spot at 2,292m on Ayarpatta Hill, offering a 360-degree panorama of Nainital town, the lake, and the surrounding Kumaon Himalayas.",
+      "travelTime": "30 mins trek / pony ride from town",
+      "image": {
+        "src": "https://images.pexels.com/photos/11599409/pexels-photo-11599409.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "alt": "Tiffin Top Hilltop Viewpoint — Nainital, Uttarakhand"
+      },
+      "photos": [
+        {
+          "src": "https://images.pexels.com/photos/39628449/pexels-photo-39628449.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tiffin Top Hilltop Viewpoint View 1 — Kumaon Himalayas",
+          "title": "Tiffin Top (Dorothy’s Seat) Scenic View 1"
+        },
+        {
+          "src": "https://images.pexels.com/photos/6325492/pexels-photo-6325492.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tiffin Top Hilltop Viewpoint View 2 — Uttarakhand",
+          "title": "Tiffin Top (Dorothy’s Seat) Scenic View 2"
+        },
+        {
+          "src": "https://images.pexels.com/photos/15962039/pexels-photo-15962039.jpeg?auto=compress&cs=tinysrgb&w=2560",
+          "alt": "Tiffin Top Hilltop Viewpoint View 3 — Lake District",
+          "title": "Tiffin Top (Dorothy’s Seat) Scenic View 3"
+        }
+      ]
     }
   ],
   "itinerary": [
@@ -394,29 +591,29 @@
   ],
   "gallery": [
     {
-      "src": "https://images.pexels.com/photos/19289780/pexels-photo-19289780.jpeg?auto=compress&cs=tinysrgb&w=1280",
-      "alt": "Naini Lake surrounded by lush green hills in Nainital",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg",
+      "alt": "Nainital in Nainital, Uttarakhand - Governor’s House also known Raj Bhavan and formerly, Government House was built in 1",
       "title": "Governor’s House, Nainital, Uttarakhand, India"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Nainital_Panorama_from_Naini_Lake.jpg",
-      "alt": "Nainital Panorama From Naini Lake",
-      "title": "Nainital Panorama From Naini Lake"
+      "src": "https://images.pexels.com/photos/34689811/pexels-photo-34689811.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Picturesque view of boats on Nainital Lake surrounded by lush hills under a blue sky. — Nainital",
+      "title": "Nainital Wooden Boats"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Naina_Devi_Temple%2C_Nainital.jpg",
-      "alt": "Naina Devi Temple, Nainital",
-      "title": "Naina Devi Temple, Nainital"
+      "src": "https://images.pexels.com/photos/38115354/pexels-photo-38115354.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "A picturesque view of hillside buildings surrounded by lush green forest in Nainital, India. — Nainital Lake",
+      "title": "Aerial Naini Lake"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Naina_Devi_Temple-Nainital.jpg",
-      "alt": "Naina Devi Temple Nainital",
-      "title": "Naina Devi Temple Nainital"
+      "src": "https://images.pexels.com/photos/13682120/pexels-photo-13682120.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Scenic aerial view of Naini Lake with boats in Nainital, Uttarakhand, India. — Lake District",
+      "title": "Nainital Lake Horizon"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/View_of_Nainital_from_Snow_View_Point.jpg",
-      "alt": "View Of Nainital From Snow View Point",
-      "title": "View Of Nainital From Snow View Point"
+      "src": "https://images.pexels.com/photos/14281410/pexels-photo-14281410.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Tranquil mountain landscape with lake's perfect reflection during sunset. — Nainital Evening",
+      "title": "Illuminated Nainital Lake"
     }
   ],
   "faq": [
@@ -438,16 +635,26 @@
     },
     {
       "q": "What are the top places to visit in Nainital?",
-      "a": "The top attractions are Naini Lake, Naina Devi Temple, Snow View Point."
+      "a": "The top attractions are Naini Lake (Mango Lake), Mango Lake View Point, Naina Devi Temple, Snow View Point, and Tiffin Top."
+    },
+    {
+      "q": "Why is Naini Lake called the Mango Lake?",
+      "a": "Naini Lake is popularly called the 'Mango Lake' because from high vantage points—most notably the Mango Lake View Point along Kilbury Road and Tiffin Top—the lake's natural crescent outline forms the distinct silhouette of a green mango."
+    },
+    {
+      "q": "Where is the Mango Lake View Point located in Nainital?",
+      "a": "The Mango Lake View Point is located in Mallital along the upper Kilbury Road. It provides an unobstructed panoramic aerial view looking down directly on Naini Lake, allowing visitors to clearly witness and photograph its famous mango shape."
     }
   ],
   "seo": {
-    "title": "Nainital Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Nainital is a much-loved hill station in Uttarakhand, known for naini lake and boating. Plan your Nainital trip: 3 places to visit, 4 stays from ₹1200/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "title": "Nainital Travel Guide 2026 — Places, Mango Lake, Hotels & How to Reach | ExploreDesh",
+    "description": "Explore Nainital, Uttarakhand's iconic Lake District. Complete guide to the mango-shaped Naini Lake, Mango Lake View Point, boating, hotels, weather, and top attractions.",
     "canonical": "destination.html?slug=nainital",
     "ogImage": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Governor%E2%80%99s_House%2C_Nainital%2C_Uttarakhand%2C_India.jpg",
     "keywords": [
       "Nainital travel guide",
+      "Mango Lake Nainital",
+      "Mango Lake View Point",
       "places to visit in Nainital",
       "Nainital hotels",
       "best time to visit Nainital",

@@ -43,8 +43,8 @@ function assert(condition, message) {
 const indexPath = path.join(DEST_DIR, 'index.json');
 assert(fs.existsSync(indexPath), 'data/destinations/index.json exists');
 const idx = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
-assert(idx.count === 2393, `Catalog count is exactly 2,393 (found: ${idx.count})`);
-assert(Array.isArray(idx.destinations) && idx.destinations.length === 2393, `index.destinations array has 2,393 items (found: ${idx.destinations.length})`);
+assert(idx.count === 2396, `Catalog count is exactly 2,396 (found: ${idx.count})`);
+assert(Array.isArray(idx.destinations) && idx.destinations.length === 2396, `index.destinations array has 2,396 items (found: ${idx.destinations.length})`);
 
 // 2. Individual Destination JSON Files & Geo Invariants
 let missingJson = 0;
@@ -72,15 +72,15 @@ idx.destinations.forEach(d => {
   }
 });
 
-assert(missingJson === 0, `All 2,393 individual destination JSON files exist and parse cleanly (missing: ${missingJson})`);
-assert(missingStateOrTitle === 0, `All 2,393 destinations contain valid title and state (missing: ${missingStateOrTitle})`);
-assert(outOfBoundsCoords === 0, `All 2,393 destinations have coordinates strictly within India geo-bounds (out-of-bounds: ${outOfBoundsCoords})`);
-assert(zeroAttractions === 0, `All 2,393 destinations contain rich attractions/places (empty: ${zeroAttractions})`);
+assert(missingJson === 0, `All 2,396 individual destination JSON files exist and parse cleanly (missing: ${missingJson})`);
+assert(missingStateOrTitle === 0, `All 2,396 destinations contain valid title and state (missing: ${missingStateOrTitle})`);
+assert(outOfBoundsCoords === 0, `All 2,396 destinations have coordinates strictly within India geo-bounds (out-of-bounds: ${outOfBoundsCoords})`);
+assert(zeroAttractions === 0, `All 2,396 destinations contain rich attractions/places (empty: ${zeroAttractions})`);
 
 // 3. Pre-rendered Redirect Stubs
 assert(fs.existsSync(STUBS_DIR), 'stubs/ directory exists');
 const stubFiles = fs.readdirSync(STUBS_DIR).filter(f => f.endsWith('.html'));
-assert(stubFiles.length === 2393, `Exactly 2,393 fallback redirect stubs exist (found: ${stubFiles.length})`);
+assert(stubFiles.length === 2396, `Exactly 2,396 fallback redirect stubs exist (found: ${stubFiles.length})`);
 
 // Check a sample stub for canonical and redirection
 const sampleStub = fs.readFileSync(path.join(STUBS_DIR, 'manali.html'), 'utf8');
@@ -110,7 +110,7 @@ let totalSitemapUrls = 0;
   const count = (content.match(/<loc>/g) || []).length;
   totalSitemapUrls += count;
 });
-assert(totalSitemapUrls === 2450, `Total sitemapped URLs equals 2,450 (found: ${totalSitemapUrls})`);
+assert(totalSitemapUrls === 2453, `Total sitemapped URLs equals 2,453 (found: ${totalSitemapUrls})`);
 
 // 5. Robots.txt Directives
 const robotsPath = path.join(ROOT, 'robots.txt');

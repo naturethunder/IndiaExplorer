@@ -39,7 +39,8 @@ export function applySEO(opts = {}) {
   setMeta('name', 'description', opts.description);
   setMeta('name', 'robots', opts.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
   if (opts.keywords && opts.keywords.length) {
-    setMeta('name', 'keywords', opts.keywords.join(', '));
+    const kwStr = Array.isArray(opts.keywords) ? opts.keywords.join(', ') : String(opts.keywords);
+    setMeta('name', 'keywords', kwStr);
   }
 
   const currentPath = window.location.pathname + window.location.search;
@@ -261,7 +262,7 @@ export function collectionPageJsonLd(opts = {}) {
     '@type': 'CollectionPage',
     '@id': canonical + '#collection',
     name: opts.title || 'All Destinations in India — ExploreDesh',
-    description: opts.description || 'Browse 2,393 travel destinations across all 36 states & UTs of India.',
+    description: opts.description || 'Browse 2,396 travel destinations across all 36 states & UTs of India.',
     url: canonical,
     mainEntityOfPage: canonical,
   };

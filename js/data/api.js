@@ -29,7 +29,7 @@ function getJSON(path) {
 /** Full detail for one destination. The detail page loads ONLY this. */
 export async function fetchDestination(slug) {
   try {
-    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20260927_2');
+    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20260928_2');
   } catch (err) {
     // If network fetch failed (offline in Himalayan passes / safari), check offline storage
     try {
@@ -49,7 +49,7 @@ export async function fetchDestination(slug) {
  * all home sections (hills, trending, popular, explore, seasons, months, and map).
  */
 export function fetchHomeIndex() {
-  return getJSON(BASE + '/destinations/home-manifest.json');
+  return getJSON(BASE + '/destinations/home-manifest.json?v=20260928_2');
 }
 
 /**
@@ -57,12 +57,12 @@ export function fetchHomeIndex() {
  * destinations: [summary…] }. Used by browse/search pages.
  */
 export function fetchIndex() {
-  return getJSON(BASE + '/destinations/index.json');
+  return getJSON(BASE + '/destinations/index.json?v=20260928_2');
 }
 
 /** AI-finder text index: { entries: [{slug, placeNames, hotelNames, tiers, hay}…] } */
 export function fetchSearchIndex() {
-  return getJSON(BASE + '/search-index.json');
+  return getJSON(BASE + '/search-index.json?v=20260928_2');
 }
 
 /** Summary record for one slug from the manifest (null if unknown). */

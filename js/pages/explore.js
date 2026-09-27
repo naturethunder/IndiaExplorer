@@ -84,9 +84,9 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
   title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
-  description: 'Discover 2,393 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
+  description: 'Discover 2,396 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
   canonicalPath: 'destinations.html',
-  heading: '2,393 Destinations',
+  heading: '2,396 Destinations',
   subheading: 'Across 36 States & UTs',
 };
 
@@ -168,7 +168,7 @@ function applyLandingSeo(resultLength) {
 
   if (heroTitle) {
     if (seo.isDefault) {
-      heroTitle.innerHTML = '<span class="hero-line-1">2,393 <em class="gold-gradient-text">Destinations</em></span>' +
+      heroTitle.innerHTML = '<span class="hero-line-1">2,396 <em class="gold-gradient-text">Destinations</em></span>' +
         '<span class="hero-line-2">Across 36 States & UTs</span>';
     } else {
       heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
@@ -380,7 +380,7 @@ if (monthSel) monthSel.addEventListener('change', function () {
 });
 
 // ─── GSAP ScrollTrigger Card Reveal Engine ─────────────
-const PAGE_SIZE = 60;
+const PAGE_SIZE = 24;
 let shown = PAGE_SIZE;
 let lastResults = [];
 let _cardScrollTriggers = [];
@@ -863,9 +863,9 @@ document.addEventListener('keydown', function (e) {
 if (searchInput) {
   function updateSearchPlaceholder() {
     if (window.innerWidth <= 640) {
-      searchInput.placeholder = 'Search 2,393 destinations...';
+      searchInput.placeholder = 'Search 2,396 destinations...';
     } else {
-      searchInput.placeholder = 'Search 2,393 destinations, states, regions, or attractions...';
+      searchInput.placeholder = 'Search 2,396 destinations, states, regions, or attractions...';
     }
   }
   updateSearchPlaceholder();
