@@ -38,14 +38,10 @@ export function optimizeImageUrl(url, width = 800) {
       if (inner) return optimizeImageUrl(decodeURIComponent(inner), width);
     } catch (_) {}
   }
-  // 1. Existing Wikimedia Commons thumb: resize to target width
-  if (url.includes('/thumb/') && /\/\d+px-[^/]+$/.test(url)) {
-    return url.replace(/\/(\d+)px-([^/]+)$/, '/' + width + 'px-$2');
-  }
-  // 2. Raw Wikimedia Commons DSLR photo: convert directly to official Wikimedia CDN thumbnail generator (30KB-60KB)
-  if (url.includes('upload.wikimedia.org/wikipedia/commons/') && !url.includes('/thumb/') && !url.endsWith('.svg')) {
-    const filename = url.split('/').pop().split('?')[0];
-    return 'https://commons.wikimedia.org/w/thumb.php?f=' + filename + '&w=' + width;
+  // 1. Wikimedia Commons: Preserve valid static pre-rendered thumbnails and raw URLs directly.
+  // Never rewrite to arbitrary widths (e.g. 1400px, 600px) because upload.wikimedia.org returns HTTP 400 Bad Request.
+  if (url.includes('upload.wikimedia.org/') || url.includes('commons.wikimedia.org/')) {
+    return url;
   }
   // 3. Pexels photo: strip dpr & extra height, compress & set clean target width
   if (url.includes('images.pexels.com/photos/')) {
@@ -55,7 +51,7 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
-      u.searchParams.set('w', String(Math.min(width, 1920)));
+      u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
       return u.toString();
     } catch (_) {
       return url;
@@ -68,9 +64,8 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.delete('dpr');
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'format');
-      u.searchParams.set('fit', 'crop');
-      u.searchParams.set('w', String(Math.min(width, 1920)));
       u.searchParams.set('q', '80');
+      u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
       return u.toString();
     } catch (_) {
       return url;
@@ -93,7 +88,7 @@ export function trendCardHTML(d) {
   const image = cardThumb(d, 600);
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" loading="lazy" decoding="async" referrerpolicy="origin" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
@@ -132,7 +127,7 @@ export function destCardHTML(d, opts = {}) {
     '<article class="dest-card-item">' +
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" loading="lazy" decoding="async" referrerpolicy="origin" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     '<div class="dest-card-badges-top">' +
@@ -175,7 +170,7 @@ export function heroCardHTML(d) {
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block group">' +
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" referrerpolicy="origin" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     (d.badge ? '<div class="absolute top-3 left-3"><span class="dest-badge-featured">' + esc(d.badge) + '</span></div>' : '') +
     '</div>' +
@@ -209,7 +204,7 @@ export function miniCardHTML(d) {
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="group block">' +
     '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" referrerpolicy="origin" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +

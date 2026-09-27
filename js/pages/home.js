@@ -30,24 +30,32 @@ injectJsonLd(websiteJsonLd(), 'website');
   if (!bg) return;
 
   const HERO_PHOTOS = [
-    { name: 'Varanasi Ganga Ghats', src: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Uttar Pradesh' },
-    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
-    { name: 'Rishikesh Ganga Aarti', src: 'https://images.pexels.com/photos/18887232/pexels-photo-18887232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Uttarakhand' },
-    { name: 'Baga Beach, Goa', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Goa' },
-    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Himachal Pradesh' },
-    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
-    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Karnataka' },
-    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'West Bengal' },
-    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Himachal Pradesh' },
-    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', state: 'Rajasthan' },
+    { name: 'Varanasi Ganga Ghats', src: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Uttar Pradesh' },
+    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
+    { name: 'Rishikesh Ganga Aarti', src: 'https://images.pexels.com/photos/18887232/pexels-photo-18887232.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Uttarakhand' },
+    { name: 'Baga Beach, Goa', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Goa' },
+    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Himachal Pradesh' },
+    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
+    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Karnataka' },
+    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'West Bengal' },
+    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Himachal Pradesh' },
+    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
   ];
 
   let currentIdx = 0;
   bg.style.backgroundColor = '#0f3460';
   bg.style.transition = 'opacity 0.8s ease-in-out, background-image 0.8s ease-in-out';
 
-  // Preload images
-  HERO_PHOTOS.slice(0, 2).forEach(p => { const img = new Image(); img.src = p.src; });
+  // Defer preloading of upcoming hero slides until after primary UI has hydrated
+  const preloadNextSlide = () => {
+    const nextImg = new Image();
+    nextImg.src = HERO_PHOTOS[1].src;
+  };
+  if (typeof window.requestIdleCallback === 'function') {
+    window.requestIdleCallback(preloadNextSlide);
+  } else {
+    window.addEventListener('load', () => setTimeout(preloadNextSlide, 2000), { once: true });
+  }
 
   function setHeroPhoto(i) {
     currentIdx = (i + HERO_PHOTOS.length) % HERO_PHOTOS.length;
@@ -760,15 +768,6 @@ function wireCarousel(row, prevBtn, nextBtn) {
     }, '-=0.45');
   }
 
-  if (document.querySelectorAll('#popular-searches .popular-chip').length) {
-    heroTL.from('#popular-searches .popular-chip', {
-      opacity: 0,
-      y: 12,
-      stagger: 0.04,
-      duration: 0.45,
-      ease: 'power2.out'
-    }, '-=0.35');
-  }
 
   if (document.querySelectorAll('.hero-stat').length) {
     heroTL.from('.hero-stat', {

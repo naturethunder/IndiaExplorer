@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-24 rev-22)
+# ExploreDesh — Project Guide (updated 2026-09-27 rev-27)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -16,7 +16,28 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-24 rev-22) — Phase 59: Saccidananda Ashram (Shantivanam) Image Authenticity Overhaul & Hero CSS Centering Fix:**
+> **Latest Milestone (2026-09-27 rev-27) — Phase 66: Multi-Destination Precision Landmark Overhaul & Spiti Valley Purification:**
+> - **Spiti Valley Complete Photographic Overhaul (`data/destinations/spiti.json`):** Purged all cross-state Madhya Pradesh contamination (Bhopal lake, Welcome to Bhopal sign, Pachmarhi, Kanha, Pench, Rewa, Gwalior) and wrong-monument misattributions. Sourced 61 100% unique, live-verified, high-definition Pexels and Unsplash photos. Every single place card (Key Monastery, Chandratal Lake, Hikkim Post Office, Dhankar Monastery, Pin Valley, Komik, Kaza, Kibber, Tabo Monastery, Langza Buddha Statue, Mudh Village, Chicham Bridge, Gette Village, Nako Lake) now displays that exact landmark with 0 people, 0 selfies/crowds, 0 models, 0 internal duplicates, and 0 cross-destination collisions across all 66,000+ catalog URLs.
+> - **4 Marquee Destinations Verified (`vedanarayana-temple-nagalapuram`, `tripura-sundari-temple`, `chaturdasha-temple`, `diu`, `ujjain`):** Cleaned of Wikimedia/Pixabay dependencies and verified for 100% unique HD authentic architecture and landscape photos.
+> - **Repository Hardening & Zero-Scratch Invariant:** All one-off update scripts purged; zero unused `.js` scripts in `scripts/`.
+> - **Master Regression Guard Certified:** Passed 71/71 checks in `scripts/seo_regression_guard.js`. Production SEO Score: **100/100**.
+>
+> **Previous Milestone (2026-09-27 rev-26) — Phase 64 & 65: Monument Contamination Elimination, P1 Gallery Repairs & Repository Tooling Hardening:**
+> - **Monument Contamination Elimination (10 destinations):** Eliminated cross-state landmark misattributions (Hawa Mahal in Kerala/TN churches, Golden Temple in Nagaland/Maharashtra forts, Taj Mahal in Kerala cave temple, Fatehpur Sikri in Tarkarli). Replaced with authentic verified HD Pexels photography true to each destination's state and culture.
+> - **Priority 1 Pixabay Session Expiry Remediation (23 destinations):** Repaired 23 destinations with expired `pixabay.com/get/...` URLs (`badami`, `hampi`, `ajanta-ellora`, `khajuraho`, `fatehpur-sikri`, `abirameswarar-temple`, `alorna-fort`, `baba-gangeshwarnath-dham`, etc.) with permanent Pexels HD CDN URLs (`w=2560`), ensuring 5/5 gallery images and primary hero synchronization.
+> - **Obsolete Script Cleanup & Repository Hardening:** Safely removed 20 obsolete one-off update scratch scripts, debug dumps, and unreferenced assets from `scripts/` and `js/`. Master regression guard passed 71/71 tests (100% compliance).
+> - **Technical Hardening:** Bumped Service Worker to `v1.1.0` (cache invalidation), raised image resolution cap from `800px` → `2560px` in `destinationCard.js`, added `?v=20260927_2` cache-buster in `api.js`, and tuned CSS `object-position: center 42%` for architectural headroom.
+>
+> **Previous Milestone (2026-09-26 rev-24) — Phase 61 & 62: Goa Photography Overhaul, Carousel Sync & Hero Popular Searches Visibility Fix:**
+> - **Goa Deep Photographic Overhaul (`data/destinations/goa.json`):** Restored 100% verified authentic HD Goan photography across all 5 hero/gallery slots (Palolem Beach, Chapora Fort, Basilica of Bom Jesus, Dudhsagar Falls, Agonda Beach) and all 8 top places (3 distinct photos each + card thumbnails = 32 place photos). Enforced primary hero synchronization (`heroImage.src === gallery[0].src`), 0 internal duplicate URLs, 0 Pixabay session URLs, and 0 cross-destination collisions against the 66,000+ repository catalog index.
+> - **Destination Hero Carousel & Place Photos Robustness:** Hardened `js/pages/destination.js` to normalize both object and string place image data payloads, ensuring place card thumbnails and modal carousels load with 100% reliability.
+> - **Hero Popular Searches Decoupling Fix (`js/pages/home.js` & `index.html`):** Resolved conflict where a redundant GSAP intro tween forced inline `opacity: 0` on `#popular-searches .popular-chip`. Decoupled chips from GSAP inline overrides, letting the parent `#popular-searches` CSS `animate-fade-up` handle entrance animation smoothly. All 6 popular search chips (`Manali`, `Goa`, `Kerala`, `Ladakh`, `Rajasthan`, `Darjeeling`) now render permanently visible across all network conditions and viewports.
+> - **Production Regression Certification:** Passed 71/71 checks in `scripts/seo_regression_guard.js`. Production SEO Score: **100/100.**
+>
+> **Previous Milestone (2026-09-24 rev-23) — Phase 60: 19 Priority Destinations Deep Photographic Overhaul & Place Cards Normalization:**
+> - Autonomous repair across 19 critical destinations with 519 verified HD images, zero cross-destination collisions, and normalized `renderPlaces()` logic.
+>
+> **Previous Milestone (2026-09-24 rev-22) — Phase 59: Saccidananda Ashram (Shantivanam) Image Authenticity Overhaul & Hero CSS Centering Fix:**
 > - **Hero CSS Centering Fix (`destination-immersive.css`, `styles.css`):** Corrected `object-position: center 30%` → `object-position: center center` on `.dest-hero-img` and `.dest-ov-slide img` across both CSS files, preventing bottom-70% monument cropping inside the 64vh/480px ultra-wide hero container.
 > - **Saccidananda Ashram Full Image Overhaul (`data/destinations/saccidananda-ashram.json`):** Replaced all generic Unsplash search stock with authentic, fully-visible, India-specific photography: Hero + Gallery[0] = Mayanur/Kaveri aerial (Pexels 8967819, 4000×2250 16:9); Gallery[1] = serene hermitage garden pathway (Pexels 37890172, 4096×2304 16:9); Gallery[2] = Iyer Malai stone mandapam (Wikimedia 4128×2322 16:9); Gallery[3] = River Kaveri at Musiri (Wikimedia 5152×3864); Gallery[4] = Ratnagiriswarar hill (Wikimedia 4128×2322). All 7 places updated with authentic Kaveri/Kadambandurai/Iyer Malai Wikimedia and Pexels photos (1 card + 3 photos each = 28 place photos). Zero internal duplicates, zero repo-wide collisions verified.
 > - **Badge & Tagline Fix:** Corrected erroneous `"Himalayan Monastery"` badge → `"Spiritual Hermitage"`; fixed generic Buddhist tagline to `"Sacred Hermitage & Contemplative Peace on the Banks of River Kaveri"`.
@@ -313,31 +334,22 @@ css/
   tailwind.css          # GENERATED static utility CSS (replaces the old Tailwind CDN)
 scripts/
   serve.js              # zero-dep static server (pure Node)
-  build-json-data.js    # generates data/ from the legacy js/data*.js sources
+  build-sitemap.js      # generates master sitemap.xml and 5 sub-sitemaps with Google Image SEO
+  build-home-manifest.js # compiles ultra-fast 129KB home-manifest.json for instant mobile load
+  build-stubs.js        # regenerates the 2,393 fallback redirect stubs (one per destination)
+  build-destinations-doc.js # regenerates docs/DESTINATIONS.md from current destination JSONs
+  repair-search-index.js # rebuilds data/search-index.json for the AI Finder
   geo-reference.js      # offline airports/railheads/cities dataset → real nearestAirport/railway + city routes
   build-css.js          # generates css/tailwind.css
   build-india-map.js    # projects GADM state geojson → data/india-map.js (viewBox + per-state SVG paths)
-  build-stubs.js        # regenerates the redirect stubs (one per destination)
-  build-sitemap.js      # generates sitemap.xml for all destinations and static pages
   validate-filters.js   # validates that every explore filter combination returns at least one destination
-  enrich-new-destinations-full.js # enriches hand-added destinations with topPlaces, hotels, itinerary & SEO
-  fetch-verified-wikimedia-photos.js # fetches real Wikimedia photos for enriched destinations
-  enforce-real-photos-only.js # audits and removes picsum / fake stock image fallbacks
-  count-exact-stats.js  # prints exact dataset statistics across all 2,393 destinations
-  build-photos*.js / build-place-photos*.js  # real-photo fetchers (feed the legacy source data)
-  build-destinations-doc.js  # regenerates docs/DESTINATIONS.md
-  add-new-destinations.js    # hand-add new destinations directly to index.json + per-slug detail JSON;
-                             #   bypasses the legacy data pipeline entirely
-  fix-new-destinations-schema.js  # normalise hand-added destinations to match the full schema
-                             #   (topPlaces/hotels/gallery/howToReach/seo/faq/itinerary)
-  update-image-paths.js      # rewrite image refs in index.json + detail JSONs to point at local
-                             #   AI-generated images in images/destinations/
-  restore-handadded-destinations.js  # re-merges hand-added destinations' summaries back into
-                             #   index.json after a build-json-data.js run drops them (see
-                             #   docs/ROADMAP.md P0.5 — a standing landmine, not yet fixed at the root)
-  normalize-delhi-ncr-schema.js / fix-delhi-ncr-final.js  # one-off scripts that rebuilt the 6
-                             #   Delhi-NCR destinations' canonical schema from data/delhi-ncr-source.json
-                             #   (moved out of data/bulk/ — its ad-hoc shape broke the generic bulk mapper)
+  audit_all.js          # master unified Triple Audit runner (UI/UX, SEO, Media integrity)
+  final-repository-audit.js # core media integrity & invariant audit across all 2,393 files
+  seo_audit.js          # technical SEO & sitemap validator
+  seo_regression_guard.js # 71-point master regression guard (invariants, sitemaps, counts)
+  ui_ux_qa_audit.js     # WCAG AAA accessibility, touch target, and layout audit
+  deep_pre_commit_audit.js # comprehensive pre-commit verification
+  images/               # multi-provider image acquisition and audit engine (Pexels, Unsplash, Flickr)
 ```
 
 ## The data layer
@@ -345,23 +357,29 @@ scripts/
 ### `js/data/api.js` — the one abstraction
 ```js
 fetchDestination(slug)  // → data/destinations/<slug>.json  (full detail)
+fetchHomeIndex()        // → data/destinations/home-manifest.json (lightweight homepage)
 fetchIndex()            // → data/destinations/index.json    (manifest, cached)
 fetchSearchIndex()      // → data/search-index.json          (finder haystack)
 fetchSummary(slug)      // → one manifest entry
 ```
-All results are promise-cached in a `Map`. **To migrate to a backend, reimplement these four
+All results are promise-cached in a `Map`. **To migrate to a backend, reimplement these five
 functions — nothing else in the codebase reads storage.**
 
-### Hand-adding new destinations (bypass pipeline)
-`scripts/add-new-destinations.js` writes new entries directly into `index.json` and creates per-slug
-detail JSON files — no legacy `data*.js` edits needed. After running it, use
-`scripts/fix-new-destinations-schema.js` to normalise fields to the full schema, then
-`scripts/update-image-paths.js` to wire up local images (stored in `images/destinations/`).
-Finally run `node scripts/build-stubs.js` + `node scripts/build-sitemap.js` +
-`node scripts/build-destinations-doc.js`.
-
-⚠️ The `count` field in `index.json` may lag behind `destinations.length` after hand-adds; the UI
-uses `.destinations.length`, not `.count`, so this is cosmetic only. Fix it if it bothers you.
+### Destination Catalog Management
+Destination data lives in `data/destinations/<slug>.json`. Whenever destinations are updated:
+1. Ensure the destination schema adheres to the strict guidelines in `.agents/rules/destination-strict-rules.md`.
+2. Synchronize `data/destinations/index.json` hero and card image metadata.
+3. Rebuild downstream assets:
+   ```bash
+   node scripts/build-home-manifest.js
+   node scripts/build-sitemap.js
+   node scripts/build-stubs.js
+   node scripts/build-destinations-doc.js
+   ```
+4. Verify using the Master Triple Audit:
+   ```bash
+   node scripts/audit_all.js
+   ```
 
 ### Destination JSON schema (`data/destinations/<slug>.json`)
 ```

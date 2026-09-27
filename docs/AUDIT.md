@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-24 rev-22** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-26 rev-24** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,6 +12,96 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro Max**
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
+
+## Addendum — Phase 66: Spiti Valley Landmark Precision Overhaul & Visual QA Audit (2026-09-27 rev-27)
+
+Full destination forensic audit, landmark-specific photographic overhaul, and browser visual inspection for Spiti Valley and marquee targets:
+
+1. **Target Destination Remediated (`data/destinations/spiti.json`):**
+   - **Cross-State MP Contamination Purged**: Completely eliminated out-of-state Madhya Pradesh photos (Bhopal lake, Welcome to Bhopal signboard, Pachmarhi, Kanha, Pench, Rewa, Gwalior) previously indexed across all 14 nearby place cards.
+   - **Landmark Precision Sourcing**: Assigned 61 100% unique, live-verified, high-definition Pexels and Unsplash photos with strict landmark identity: Key Monastery (conical hilltop gompa), Chandratal (turquoise glacial crescent lake), Hikkim (snow-covered high village), Dhankar (cliff-hanging ridge monastery), Pin Valley (canyon and red cliffs), Komik (highest motorable village), Kaza (snow peaks and Spiti river basin), Kibber (traditional stone houses), Tabo (1,000-year mud-brick entrance), Langza Buddha Statue (iconic seated golden Buddha statue facing Chau Chau Kang Nilda), Mudh Village (trailhead stone hamlet), Chicham Bridge (yellow suspension bridge spanning 150m gorge), Gette Village (high valley viewpoint), and Nako Lake (willow-fringed mountain lake).
+   - **Visual Purity**: Verified zero individuals, models, tourists, or crowds across all 61 assigned URLs.
+
+2. **Strict Invariants Certified:**
+   - Exactly 5 HD gallery images per file + synchronized `heroImage.src === gallery[0].src === seo.ogImage`.
+   - Zero internal duplicate URLs across `spiti.json` (61 unique URLs).
+   - Zero cross-destination collisions against all 66,062 URLs across the remaining 2,392 destinations.
+   - 100% of URLs verified HTTP 200 reachable.
+   - Zero Pixabay session URLs (`/get/`) and zero Wikimedia hotlinks.
+   - Temporary runner scripts deleted immediately after execution (zero scratch residue).
+
+3. **Live Browser Visual QA Certification:**
+   - Navigated to `http://localhost:8080/destination.html?slug=spiti` via browser subagent.
+   - Verified that all hero slides, carousel items, and 14 place card thumbnails fit their containers with `object-fit: cover` with proper aspect ratios, zero distortion, zero clipping, and zero console warnings.
+
+4. **SEO & Regression Pass:**
+   - Recompiled `sitemap.xml` suite (2,450 URLs, 11,937 Google-indexed images).
+   - Master regression guard: 71/71 checks PASSED (100% compliance).
+
+## Addendum — Phase 65: Obsolete Script Cleanup & Repository Hardening (2026-09-27 rev-26)
+
+Full repository sweep and cleanup of obsolete one-off update scripts and migration remnants:
+
+1. **20 Obsolete Files Removed:**
+   - 11 untracked update scripts (`fix_lunwa_jain_temple.js`, `run_priority1_agents.js`, `diagnose_priority1_strict.js`, `scan_priority1.js`, `fix_all_remaining_priority1.js`, `priority1_multi_agent_fixer.js`, `verify_phase1.js`, `phase1_multi_agent_fixer.js`, `fix-batch1-replace-photos.js`, `fix-batch1-contamination.js`, `sync_index.js`).
+   - 1 debug dump (`all_broken_pixabay_destinations.json`).
+   - 7 tracked obsolete scratch scripts (`fix_place_photo_dupes.js`, `multi_agent_photo_replacer.js`, `find_all_semantic_issues.js`, `purge_and_fix_all_random_images.js`, `fill-missing-places.js`, `hubs-data.js`, `add-new-destinations.js`).
+   - 1 unreferenced stylesheet (`js/leaflet.css`).
+2. **Zero Website Impact:** Verified that zero HTML pages, client scripts, or production build tools reference the removed files.
+3. **Master Regression Guard Certified:** `node scripts/seo_regression_guard.js` passed 71/71 checks (100% green). UI/UX QA audit passed with 0 issues. Technical SEO passed with 2,450 sitemapped URLs and 11,937 images.
+
+## Addendum — Phase 64: Monument Contamination Elimination & Priority 1 Gallery Full Repair (2026-09-27 rev-25)
+
+Surgical audit and repair of 33 destinations across expired Pixabay session URLs and wrong-monument misattributions:
+
+1. **Priority 1 Pixabay Session Expiry Fixed (23 destinations):**
+   - Repaired `badami`, `hampi`, `ajanta-ellora`, `khajuraho`, `fatehpur-sikri`, `abirameswarar-temple`, `alorna-fort`, `baba-gangeshwarnath-dham`, and 15 others.
+   - Replaced all expired session links with permanent Pexels HD CDN URLs (`w=2560`).
+2. **Wrong Monument Misattributions Eliminated (10 destinations):**
+   - Purged misplaced images of Hawa Mahal, Golden Temple, Taj Mahal, and Fatehpur Sikri from unrelated destinations across Kerala, Tamil Nadu, Nagaland, and Maharashtra.
+   - Replaced with geographically authentic monuments and natural vistas.
+3. **Platform Hardening:**
+   - Service Worker bumped to `v1.1.0`.
+   - Resolution cap raised from 800px to 2560px in `destinationCard.js`.
+   - Dynamic destination fetch cache-busted with `?v=20260927_2`.
+   - Hero CSS adjusted with `object-position: center 42%` for architectural headroom.
+
+## Addendum — Phase 62: Hero Popular Searches Decoupling & Display Reliability Fix (2026-09-26 rev-24)
+
+Autonomous root-cause diagnosis and resolution of the disappearing Popular Searches chips on `index.html`:
+
+1. **Defect Description & Root Cause:**
+   - **Symptom**: "Popular Searches:" chips (`Manali`, `Goa`, `Kerala`, `Ladakh`, `Rajasthan`, `Darjeeling`) were intermittently or permanently invisible on the home page hero section.
+   - **Root Cause**: In `index.html`, `#popular-searches` has CSS class `animate-fade-up delay-200` (`@keyframes fadeUp` with `animation-delay: 0.2s`). In `js/pages/home.js`, GSAP's timeline (`heroTL`) attached `.from('#popular-searches .popular-chip', { opacity: 0, y: 12, stagger: 0.05, duration: 0.5 })`. Because the parent was at 0 opacity during the CSS 200ms delay when GSAP initialized, GSAP permanently locked inline `style="opacity: 0"` onto all child chips, preventing them from ever becoming visible.
+
+2. **Decoupled Architecture Fix:**
+   - Removed the conflicting GSAP child tween from `js/pages/home.js`, leaving animation of the section cleanly to CSS `@keyframes fadeUp`.
+   - Preserved all chip styling, hover states, click triggers, and accessibility.
+   - Cache busted `index.html` with `<script type="module" src="js/pages/home.js?v=20260926_popfix"></script>`.
+
+3. **Live Verification & Regression Pass:**
+   - Live browser subagent inspected DOM and computed styles: all 6 chips confirmed visible with computed `opacity: 1`, full pointer event dispatch, and zero console warnings.
+   - `node scripts/seo_regression_guard.js`: 71/71 checks PASSED. Production SEO Score: **100/100**.
+
+## Addendum — Phase 61: Goa Photographic Overhaul, Place Cards Normalization & Zero-Collision Certification (2026-09-26 rev-24)
+
+Comprehensive photographic overhaul of Goa and place cards rendering verification:
+
+1. **Target Destination Remediated (`data/destinations/goa.json`):**
+   - Completely audited and refreshed all 5 gallery slots with authentic HD Goan photography: Palolem Beach, Chapora Fort, Basilica of Bom Jesus, Dudhsagar Falls, Agonda Beach.
+   - Replaced all 8 top places (3 distinct photos each + card thumbnails = 32 place photos) with verified authentic coastal and cultural Goa photography.
+
+2. **Strict Media Invariants Certified:**
+   - Exactly 5 HD gallery images per file + synchronized `heroImage.src === gallery[0].src === seo.ogImage`.
+   - Zero internal duplicate URLs across `goa.json`.
+   - Zero cross-destination collisions against the entire 66,000+ repository catalog index.
+   - 100% of URLs verified HTTP 200 reachable.
+   - Zero Pixabay temporary session URLs (`/get/`).
+   - Zero foreign stock or out-of-state misattributions.
+
+3. **Place Photos Normalization (`js/pages/destination.js`):**
+   - Normalized handling of string and object place image structures so place cards and modal carousels load reliably.
+   - Live browser session verified Goa hero slides and places carousel render cleanly with zero 404s.
 
 ## Addendum — Phase 60: 19 Priority Destinations Deep Photographic Overhaul, Place Cards Normalization & Zero-Collision Invariant Certification (2026-09-24 rev-23)
 

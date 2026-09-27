@@ -441,12 +441,18 @@ function renderBatch(isAppend = false) {
   const previousShown = isAppend ? shown - PAGE_SIZE : 0;
   const slice = lastResults.slice(0, shown);
 
-  // Kill stale scroll triggers before re-render
-  if (!isAppend) killCardTriggers();
-
-  grid.innerHTML = slice.map(function (d) {
-    return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '' });
-  }).join('');
+  if (isAppend) {
+    const newItems = lastResults.slice(previousShown, shown);
+    grid.insertAdjacentHTML('beforeend', newItems.map(function (d) {
+      return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '' });
+    }).join(''));
+  } else {
+    // Kill stale scroll triggers before re-render
+    killCardTriggers();
+    grid.innerHTML = slice.map(function (d) {
+      return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '' });
+    }).join('');
+  }
 
   const moreWrap = document.getElementById('loadMoreWrap');
   if (moreWrap) moreWrap.style.display = shown < lastResults.length ? 'flex' : 'none';

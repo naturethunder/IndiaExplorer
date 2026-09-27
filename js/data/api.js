@@ -29,7 +29,7 @@ function getJSON(path) {
 /** Full detail for one destination. The detail page loads ONLY this. */
 export async function fetchDestination(slug) {
   try {
-    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json');
+    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20260927_2');
   } catch (err) {
     // If network fetch failed (offline in Himalayan passes / safari), check offline storage
     try {

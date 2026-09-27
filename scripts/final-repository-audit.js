@@ -25,8 +25,9 @@ files.forEach(f => {
     let hasInternalDup = false;
 
     const recordUrl = (u) => {
-      if (!u || typeof u !== 'string' || !u.startsWith('http')) return;
-      const clean = u.split('?')[0];
+      const raw = typeof u === 'string' ? u : (u && u.src ? u.src : null);
+      if (!raw || typeof raw !== 'string' || !raw.startsWith('http')) return;
+      const clean = raw.split('?')[0];
       if (fileUrls.has(clean)) {
         hasInternalDup = true;
       }

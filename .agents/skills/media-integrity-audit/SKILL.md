@@ -10,9 +10,9 @@ This skill audits ExploreDesh's media catalog across all 2,393 destinations to e
 ## When to Run This Skill
 
 - After adding or updating destination JSON files in `data/destinations/`.
-- After running image replacement agents (`scripts/multi_agent_photo_replacer.js`, `scripts/multi_agent_8_destinations_fixer.js`).
+- After acquiring or replacing images via Pexels, Unsplash, or Flickr APIs.
 - When auditing catalog-wide duplicate collisions or missing photos.
-- Before synchronizing `data/destinations/index.json`.
+- Before synchronizing `data/destinations/index.json` or deploying.
 
 ---
 
@@ -29,7 +29,7 @@ node scripts/final-repository-audit.js
 Audits high-priority target destinations for live HTTP 200 reachability, true HD resolution ($\ge 1280\text{px}$), and landscape aspect ratio:
 
 ```bash
-node scripts/audit_session_hd_images.js
+node scripts/images/audit-full-strict.js
 ```
 
 ### 3. Cross-Destination Collision Scanner
@@ -88,12 +88,11 @@ node scripts/images/cross-destination-audit.js
 ## Remediation Workflow
 
 When repairing destinations flagged by the audit:
-1. Use the multi-agent photo replacer to source verified, live HTTP 200, zero-collision, India-only Ultra HD photos:
+1. Acquire verified, live HTTP 200, zero-collision, India-only Ultra HD photos using the multi-provider image APIs (`scripts/images/`).
+2. Synchronize the master catalog index and homepage manifest:
    ```bash
-   node scripts/multi_agent_photo_replacer.js
-   ```
-2. Synchronize the master catalog index:
-   ```bash
-   node scripts/sync-bulk-from-destinations.js
+   node scripts/build-home-manifest.js
+   node scripts/build-sitemap.js
    ```
 3. Re-run `node scripts/final-repository-audit.js` to verify 100% compliance.
+

@@ -77,14 +77,14 @@ When searching for images for a place `<PlaceName>` in destination `<Destination
 4. Fall back to high-resolution category-matched authentic Indian landscape/architecture photos.
 5. Filter out icons, maps, SVG files, diagrams, flags, or low-res thumbnails (< 800px width).
 6. Automatically verify that selected images showcase scenery/architecture rather than people or unrelated stock subjects.
-7. After sourcing, run `node scripts/verify_batch2.js` to confirm zero cross-destination URL collisions.
+7. After sourcing, run `node scripts/images/cross-destination-audit.js` and `node scripts/final-repository-audit.js` to confirm zero cross-destination URL collisions and 100% invariant adherence.
 
-## Automated Tools (Phase 38)
+## Automated Audit & Verification Tools
 
 | Script | Purpose |
 |--------|---------|
-| `scripts/solve_all_batch2_zero_collisions.js` | Multi-page API fetcher: replaces bad/random images with zero-collision verified HD URLs across a target slug list |
-| `scripts/verify_batch2.js` | Strict 66k-URL repo-wide collision audit for 10 Batch 2 destinations |
-| `scripts/audit_batch2_issues.js` | Pre-audit: flags portrait/foreign/low-quality/banned-pattern images |
-| `scripts/fix_cross_batch2_dups.js` | Resolves cross-destination URL collisions between batch targets |
-| `scripts/purge_and_fix_all_random_images.js` | Universal random-image purge engine (configurable slug list, full BANNED_PATTERNS filtering) |
+| `scripts/final-repository-audit.js` | Comprehensive repository-wide integrity audit: checks gallery length (5/5), hero sync, place photos, and internal duplicates |
+| `scripts/images/cross-destination-audit.js` | Strict 66k+ URL repo-wide collision scanner: flags any image URL reused across multiple destination files |
+| `scripts/images/audit-full-strict.js` | Live HTTP 200 reachability and resolution verification engine |
+| `scripts/build-home-manifest.js` | Recompiles the lightweight `home-manifest.json` after destination updates |
+

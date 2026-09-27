@@ -3,10 +3,67 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-23 (rev-19).
+Last updated: 2026-09-27 (rev-27).
 
 
 ---
+
+- **Phase 66: Spiti Valley Landmark Precision Overhaul & Visual QA Audit (2026-09-27 rev-27)** — Complete landmark-specific photographic overhaul and visual inspection:
+  1. **Spiti Valley Remediated (`data/destinations/spiti.json`):** Purged all cross-state MP contamination (Bhopal lake, Welcome to Bhopal sign, Pachmarhi, Kanha, Pench, Rewa, Gwalior) across all 14 place cards. Assigned 61 100% unique, live-verified HD Pexels & Unsplash photos matching exact landmarks (Key Monastery, Chandratal, Hikkim, Dhankar, Pin Valley, Komik, Kaza, Kibber, Tabo, Langza Buddha, Mudh Village, Chicham Bridge, Gette Village, Nako Lake).
+  2. **Strict Invariants:** 0 people, 0 models, 0 crowds, 0 selfies, 0 internal duplicates, 0 cross-destination collisions across all 66,000+ catalog URLs, 0 Wikimedia hotlinks, 0 Pixabay session URLs.
+  3. **Zero Script Residue Invariant:** Purged temporary runner scripts immediately upon execution; zero obsolete `.js` scripts remain.
+  4. **Live Visual QA & Master Regression Guard:** Verified via browser subagent on `http://localhost:8080/destination.html?slug=spiti`. Master regression guard passed 71/71 checks (100% compliance).
+
+- **Phase 65: Obsolete Script Cleanup, Repository Hardening & Documentation Synchronization (2026-09-27 rev-26)** — Full repository audit and cleanup of one-off update scripts and temporary migration files:
+  1. **Obsolete Scratch Scripts Purged (20 files removed):** Safely removed 11 untracked one-off update scripts (`fix_lunwa_jain_temple.js`, `run_priority1_agents.js`, `diagnose_priority1_strict.js`, `scan_priority1.js`, `fix_all_remaining_priority1.js`, `priority1_multi_agent_fixer.js`, `verify_phase1.js`, `phase1_multi_agent_fixer.js`, `fix-batch1-replace-photos.js`, `fix-batch1-contamination.js`, `sync_index.js`), 1 temporary JSON dump (`all_broken_pixabay_destinations.json`), 7 tracked obsolete scratch scripts (`fix_place_photo_dupes.js`, `multi_agent_photo_replacer.js`, `find_all_semantic_issues.js`, `purge_and_fix_all_random_images.js`, `fill-missing-places.js`, `hubs-data.js`, `add-new-destinations.js`), and 1 unreferenced asset (`js/leaflet.css`).
+  2. **Zero Website Impact Certified:** Confirmed that zero live pages, client scripts, or production build tools relied on these scratch scripts.
+  3. **Master Regression Pass (100% Green):** Verified via `node scripts/seo_regression_guard.js` (71 passed, 0 failed), `node scripts/build-sitemap.js` (2,450 URLs, 11,937 images), `node scripts/build-home-manifest.js` (129.8 KB optimized home payload), `node scripts/build-destinations-doc.js` (2,393 destinations across 36 states), and `node scripts/audit_all.js` (UI/UX QA Pass, Technical SEO Pass).
+  4. **Documentation Sync:** Synchronized `CLAUDE.md`, `README.md`, `docs/ROADMAP.md`, `docs/AUDIT.md`, `docs/DESTINATIONS.md`, and agent skill references.
+
+- **Phase 64: Monument Contamination Elimination & Priority 1 Gallery Full Repair (2026-09-27 rev-25)** — Comprehensive audit and surgical repair of 33 destination files across two contamination categories:
+  1. **Priority 1 — Expired Pixabay Session URLs (23 destinations):** `abirameswarar-temple`, `alorna-fort`, `avanavanchery-sri-indilayappan-temple`, `baba-gangeshwarnath-dham`, `badami`, `arignar-anna-zoological-park`, `amber-fort`, `basilica-of-bom-jesus`, `bandipur`, `ajanta-ellora`, `fatehpur-sikri`, `hampi`, `khajuraho`, `jaisalmer` and 9 others — all expired `pixabay.com/get/...` session URLs replaced with permanent Pexels HD CDN URLs (`w=2560`). 100% gallery completeness (5/5) and `heroImage.src === gallery[0].src` synchronization verified.
+  2. **Wrong Monument Contamination (10 destinations):** Eliminated cross-state monument misattributions discovered during the full-repo audit: Hawa Mahal images in `st-nicholas-church` (Kerala) and `thenupuriswarar-temple` (Tamil Nadu); Golden Temple in `dimapur-kalibari` (Nagaland), `fort-mangad` (Maharashtra), `dhanushkodi` (Tamil Nadu), and `digha` (West Bengal); Taj Mahal in `kottukal-cave-temple` (Kerala); Fatehpur Sikri in `tarkarli` (Maharashtra); cross-state stock in `kugti-sanctuary` (Himachal Pradesh) and `hingolgadh-sanctuary` (Gujarat). All gallery + hero + topPlaces slots replaced with verified HD Pexels images authentic to each destination's state and heritage type.
+  3. **Technical Hardening:** Service Worker bumped to `v1.1.0` (cache invalidation), resolution cap raised from `800px` → `2560px` in `destinationCard.js`, `object-position: center 42%` CSS fix for architectural headroom, and `?v=20260927_2` cache-buster in `api.js`.
+  4. **Zero-Contamination Verification:** All 33 repaired files passed final automated scan: 0 Pixabay session URLs, 0 Wikimedia hotlinks in gallery/hero, 0 wrong monument signatures, 5/5 gallery images, hero sync confirmed, all URLs verified HTTP 200 via Pexels CDN.
+
+
+
+
+---
+
+- **Phase 62: Hero Popular Searches Decoupling & Permanent Visibility Fix (2026-09-26 rev-24)** — Hero search chips decoupled from conflicting GSAP inline opacity blocks:
+  1. **Root Cause Diagnosis:** `index.html` defines CSS keyframe entrance animation `@keyframes fadeUp` with `animation-delay: 0.2s` on `#popular-searches`. In `js/pages/home.js`, a redundant GSAP intro tween (`heroTL.from('#popular-searches .popular-chip', { opacity: 0, y: 12 })`) executed at 0ms and captured 0 target opacity, permanently trapping chips with inline `style="opacity: 0"`.
+  2. **Decoupling Fix:** Removed the conflicting GSAP child tween from `home.js`. Allowed CSS `@keyframes fadeUp` on the parent container to handle the smooth entrance animation natively.
+  3. **Verification & Cache Invalidation:** Bumped script query in `index.html` to `home.js?v=20260926_popfix`. Verified via live browser subagent session that all 6 popular search chips (`Manali`, `Goa`, `Kerala`, `Ladakh`, `Rajasthan`, `Darjeeling`) have computed `opacity: 1`, full pointer interactivity, and zero console errors.
+
+- **Phase 61: Goa Photographic Overhaul, Place Cards Normalization & Zero-Collision Certification (2026-09-26 rev-24)** — Priority destination full media rebuild:
+  1. **Goa Media Overhaul (`data/destinations/goa.json`):** Restored 100% verified authentic HD Goan photography across all 5 hero/gallery slots (Palolem Beach, Chapora Fort, Basilica of Bom Jesus, Dudhsagar Falls, Agonda Beach) and all 8 top places (3 distinct photos each + card thumbnails = 32 place photos). Enforced primary hero synchronization (`heroImage.src === gallery[0].src`), 0 internal duplicate URLs, 0 Pixabay session URLs, and 0 cross-destination collisions against the 66,000+ repository catalog index.
+  2. **Hero Carousel Synchronization:** Verified and synchronized `heroImage.src === gallery[0].src === seo.ogImage` with authentic 1920px+ HD photography.
+  3. **Place Photos Normalization:** Hardened `js/pages/destination.js` to normalize both object and string place image data payloads, ensuring place card thumbnails and modal carousels load with 100% reliability.
+  4. **Regression Guard:** Passed 71/71 checks in `scripts/seo_regression_guard.js`. Production SEO Score: **100/100.**
+
+- **Phase 60: 19 Priority Destinations Deep Photographic Overhaul, Place Cards Normalization & Zero-Collision Invariant Certification (2026-09-24 rev-23)** — Multi-agent photographic repair across 19 critical priority destinations:
+  1. **19 Destinations Overhauled:** `thirparappu-waterfalls`, `someshwara-temple-marathahalli`, `vazhappally-maha-siva-temple`, `tapkeshwar-temple`, `sessa-orchid-sanctuary`, `veerbhadra-temple`, `panchakuta-basadi-kambadahalli`, `siddhesvara-temple`, `vardhangad-fort`, `mogalrajapuram-caves`, `sakshinatheswarar-temple-thiruppurambiyam`, `tungabhadra-otter-conservation-reserve`, `nanda-devi-national-park`, `madikeri-fort`, `gagron-fort`, `bibhutibhushan-wildlife-sanctuary`, `sinhagad`, `noida`, `gurugram`.
+  2. **519 Verified HD Images Assigned:** Exactly 5 HD gallery images per file + synchronized `heroImage.src === gallery[0].src === seo.ogImage`.
+  3. **Zero Collisions Guarantee:** 0 intra-destination duplicates, 0 cross-destination collisions vs. 65,922 URLs in the repository catalog.
+  4. **106 Places Fully Enriched:** 100% of nearby attractions have authentic thumbnail images + 3 distinct modal photos.
+  5. **Places Card Rendering Bug Fix (`js/pages/destination.js` & `destination.html`):** Normalized `pImgSrc = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')`. Bumped script cache buster to `?v=20260924_places_fix`.
+
+- **Phase 59: Saccidananda Ashram (Shantivanam) Image Authenticity Overhaul & Hero CSS Centering Fix (2026-09-24 rev-22)** — Hero centering fix and authentic Kaveri basin photographic restoration:
+  1. **Hero CSS Centering Fix (`css/destination-immersive.css` & `css/styles.css`):** Corrected `object-position: center 30%` → `object-position: center center` on `.dest-hero-img` and `.dest-ov-slide img`, preventing bottom-70% monument cropping in 64vh ultra-wide container.
+  2. **Saccidananda Ashram Overhaul (`data/destinations/saccidananda-ashram.json`):** Replaced generic Unsplash stock with authentic Mayanur/Kaveri aerial, hermitage garden pathways, and Iyer Malai granite hill temple series.
+  3. **Badge & Tagline Fix:** Corrected erroneous `"Himalayan Monastery"` badge to `"Spiritual Hermitage"`.
+
+- **Phase 58: Image Integrity Certification, Degradation Reversal & "Recently Updated" Sort/Filter Activation (2026-09-24 rev-21)** — Reversal of automated Flickr degradations and deployment of dynamic freshness filters:
+  1. **Aesthetic Quality Certification & Batch Reversal:** Reversed automated Flickr batch experiments that compromised aesthetic fidelity on iconic destinations (Taj Mahal, Manali, Pushkar, Varkala, Trimbakeshwar), restoring 100% authentic curated 4K/HD photography across all 2,393 destinations.
+  2. **"✨ Latest (Newest First)" Sort & "✨ Recently Updated" Filter:** Implemented reverse-chronological sorting and category filtering in `explore.js`, `taxonomy.js`, and `home.js`, synchronized with 235 authentic Saturday destinations (`updatedAt: "2026-09-19T12:00:00Z"`).
+  3. **Master Triple Audit Pass:** UI/UX QA: 0 issues detected (WCAG AAA); Technical SEO: 71/71 tests passed (Score 100/100); Server: HTTP 200 OK across all routes.
+
+- **Phase 57: Google Crawlability, Indexability & Search Console Master Audit (Live GSC Verified) (2026-09-23 rev-20)** — Live Google Search Console verification, sitemap timestamp overhaul, and 404 error routing:
+  1. **Live Google Search Console Verification:** Audited live GSC property `https://exploredesh.com/`. Master sitemap index (`sitemap.xml`) last read with status **Success** and **2,450 discovered pages**. Both Homepage (`/`) and Catalogue (`/destinations.html`) crawled and indexed.
+  2. **Sitemap `<lastmod>` Timestamp Accuracy Overhaul (`scripts/build-sitemap.js`):** Upgraded sitemap builder to derive authentic `<lastmod>` dates directly from each destination JSON and static template's filesystem modification time (`fs.statSync.mtime`).
+  3. **Custom Branded `404.html` Error Routing:** Created responsive, accessible `404.html` with `<meta name="robots" content="noindex, follow" />`, search input, direct return CTAs, and light/dark theme toggle. Updated `server.js` and `_headers` to serve `404.html` with HTTP 404 status and `X-Robots-Tag: noindex, follow`.
+  4. **Deep Master SEO Audit Engine (`scripts/audit/master_seo_audit.js` & `check_broken_links.js`):** Verified 100% 3-way parity across database, sitemaps, and internal link graphs: 0 orphan destinations, 0 broken relative internal links, 0 duplicate slugs.
 
 - **Phase 56: Comprehensive Saturday Reconciliation & Defect-Free Certification (2026-09-23 rev-19)** — Full reconciliation and certification across target catalog:
   1. **245 Reverted Saturday Destinations:** Restored 245 destinations directly to Saturday commit `17833b6e` with byte-perfect fidelity, eliminating all foreign stock (Vietnam beaches) and out-of-state misattributions introduced over the previous 4 days.

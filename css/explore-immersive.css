@@ -65,7 +65,7 @@ body.explore-immersive *::after {
   position: fixed;
   inset: -10% -5%;
   z-index: 0;
-  background: url('../images/destinations-immersive-bg.png') center 35% / cover no-repeat;
+  background: url('../images/destinations-immersive-bg.webp') center 35% / cover no-repeat;
   filter: saturate(0.85) contrast(1.1) brightness(0.75);
   transform: translateY(0);
   will-change: transform;

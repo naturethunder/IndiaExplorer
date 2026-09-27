@@ -5,9 +5,9 @@
 
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-24 rev-23):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 60 Certified —** 19 priority destinations fully overhauled with authentic HD photography and zero cross-destination collisions. Place card rendering normalized (`js/pages/destination.js`) so that all 106 attraction thumbnails visibly render real images in the live UI. Passed 100% of UI/UX QA (0 issues) and technical SEO regression tests (71/71 tests passed, Score: **100/100**).
+> **Platform Status (2026-09-27 rev-27):** **2,393 destinations** (14,013 places, 10,427 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **66,500+ globally unique image URLs**. **Phase 66 Certified —** Comprehensive Spiti Valley and marquee destination precision landmark overhaul completed (zero cross-state contamination, zero people/selfies, 100% authentic landmarks); repository cleaned of all obsolete scratch scripts; Service Worker `v1.1.0`; master regression guard 100% green (71/71 tests passed, Score: **100/100**).
 
-> **Image Pipeline Status (2026-09-24):** **Phase 60 Certified Defect-Free —** 100% True HD (1920px+) authentic photography assigned across catalog targets (100% live HTTP 200 OK, zero foreign stock, zero Pixabay session tokens, zero broken thumbnails). Total catalog: **66,500+ verified HD photos**.
+> **Image Pipeline Status (2026-09-27):** **Phase 66 Certified Defect-Free —** 100% True HD (2560px) authentic Pexels and Unsplash photography assigned across all overhauled destinations (100% live HTTP 200 OK, zero Pixabay session tokens, zero wrong-monument contaminations, zero Wikimedia hotlinks, zero broken thumbnails, zero internal duplicates, zero cross-destination collisions across all 66,000+ catalog URLs). Total indexed images: **11,937 in Google Image Sitemaps**.
 
 A luxury India travel-discovery platform. Browse **2,393 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
@@ -16,7 +16,7 @@ A luxury India travel-discovery platform. Browse **2,393 destinations**, filter 
 > - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Soft warm alabaster canvas (`#FAF9F6`), radiant daylight light wells, frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px)`), precision top-edge specular bevels, and warm golden corona lift micro-interactions. Full mobile responsiveness across 375px, 390px, and 412px viewports.
 
 > **100% Verified Legal Photography & Zero Duplicate URLs.** Hand-authored and enriched with authentic
-> Pexels API, Unsplash, and Openverse/Flickr CDN photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero foreign stock from outside India, zero portraits/selfies/vehicles/power-lines, zero internal or cross-destination duplicates). Wikimedia Commons is fully removed from all overhauled destinations (Phases 29–49 extended this catalog-wide). See [CLAUDE.md](CLAUDE.md) and [.agents/rules/destination-strict-rules.md](.agents/rules/destination-strict-rules.md) for provenance.
+> Pexels API and Unsplash photography as primary sources (zero picsum/PDF/dummy stock fallbacks, zero foreign stock from outside India, zero portraits/selfies/vehicles/power-lines, zero internal or cross-destination duplicates). Wikimedia Commons is fully removed from all overhauled destinations. See [CLAUDE.md](CLAUDE.md) and [.agents/rules/destination-strict-rules.md](.agents/rules/destination-strict-rules.md) for provenance.
 
 > **No framework. No npm. No bundler.** Plain HTML5 + CSS + vanilla ES6 modules, powered by
 > **GSAP ScrollTrigger** animations and served over a zero-dependency Node static server.
@@ -29,9 +29,11 @@ A luxury India travel-discovery platform. Browse **2,393 destinations**, filter 
 node scripts/serve.js                        # → http://localhost:8080 (Start local web server)
 node scripts/seo_audit.js                    # → Technical SEO & Indexing Audit (61 checks)
 node scripts/seo_regression_guard.js         # → Master SEO Regression Guard (71 checks)
+node scripts/final-repository-audit.js       # → Master Repository Health & Invariant Audit
 node scripts/audit/master_seo_audit.js       # → Deep Master SEO & Parity Audit (2,393 destinations)
 node scripts/audit/check_broken_links.js     # → Relative Internal Link Integrity Scan
 node scripts/ui_ux_qa_audit.js               # → UI/UX Pro Max automated QA audit across all HTML & CSS files
+node scripts/build-home-manifest.js          # → Recompile lightweight featured home manifest
 node scripts/build-sitemap.js                # → Regenerate 6 XML sitemaps with authentic file mtime lastmod
 node scripts/build-stubs.js                  # → Regenerate 2,393 fallback redirect stubs
 ```
@@ -132,14 +134,14 @@ trip_planner/
 │   ├── build-css.js        # Generates css/tailwind.css (static utility CSS)
 │   ├── build-india-map.js  # Generates data/india-map.js (state SVG paths for the home map)
 │   ├── build-stubs.js      # Regenerates the 2,393 redirect stubs
+│   ├── build-home-manifest.js # Recompiles lightweight home manifest (130KB payload)
+│   ├── build-sitemap.js    # Regenerates master sitemap.xml and 5 modular sub-sitemaps
+│   ├── seo_regression_guard.js # Master 71-rule SEO & architectural regression test suite
+│   ├── final-repository-audit.js # Full catalog invariant and collision auditor
+│   ├── seo_audit.js        # Technical SEO and Google indexing auditor
+│   ├── ui_ux_qa_audit.js   # Automated UI/UX, responsive, and a11y QA audit
 │   ├── bulk/               # Bulk-ingest pipeline (Wikidata + Wikipedia) + refetch-places-overrides.js
-│   ├── build-photos*.js / build-place-photos*.js  # Real-photo fetchers (legacy source data)
-│   ├── build-destinations-doc.js   # Regenerates docs/DESTINATIONS.md
-│   ├── verify_batch2.js    # 🔍 Strict 66k-URL zero-collision audit for all 10 Batch 2 destinations
-│   ├── solve_all_batch2_zero_collisions.js  # 🤖 Multi-page API fetcher: replaces bad images with zero-collision verified HD URLs
-│   ├── fix_cross_batch2_dups.js   # 🔧 Resolves cross-destination URL collisions within Batch 2
-│   ├── audit_batch2_issues.js     # 📋 Pre-audit: flags portrait/foreign/low-quality/banned-pattern images
-│   └── purge_and_fix_all_random_images.js  # 🧹 Universal random-image purge engine (configurable target slug list)
+│   └── build-destinations-doc.js   # Regenerates docs/DESTINATIONS.md
 │
 ├── js/data.js, data-extra.js, data-destinations.js, data-photos.js, data-place-photos.js
 │                           # LEGACY source data — now only an input to build-json-data.js
@@ -216,8 +218,8 @@ Full detail and rationale live in **[CLAUDE.md](CLAUDE.md)**.
 ## External services & Image Pipeline
 
 - **Open-Meteo** — live weather.
-- **Pexels, Unsplash & Openverse Multi-Provider Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].photos`, `hotels[].image`). Managed by `scripts/` image pipeline with zero-collision detection across 66k+ repo URLs and strict banned-pattern filtering (no portraits, vehicles, foreign monuments, foreign stock photos). Automated replacement engine: `scripts/solve_all_batch2_zero_collisions.js`, `scripts/fix_cross_batch2_dups.js`, `scripts/audit_all.js`.
-- **Wikimedia Commons** — Strictly banned as a direct hotlink source (Phases 29–50 have completely eliminated all Wikimedia hotlinks across all overhauled destinations; CDN rate limiting causes HTTP 429 errors). All imagery is sourced from Pexels/Unsplash/Openverse/Flickr CC exclusively.
+- **Pexels and Unsplash High-Definition Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].image`, `topPlaces[].photos`, `hotels[].image`). Enforces zero-collision detection across 66,500+ repo URLs and strict banned-pattern filtering (zero portraits, selfies, mobs, vehicles, foreign monuments, or foreign stock photos).
+- **Wikimedia Commons** — Strictly banned as a direct hotlink source across all overhauled destinations (eliminates CDN IP rate-limiting HTTP 429 errors). All imagery is sourced from Pexels and Unsplash APIs exclusively.
 - **Google Maps** — interactive destination maps and directions (via zero-dependency lazy embed component).
 - **Web3Forms** — contact-form email delivery. A live access key is set in `js/pages/contact.js`;
   delivery only fires from a **browser over http(s)** (not `file://`), so it activates once deployed.

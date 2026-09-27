@@ -3,7 +3,7 @@
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-09-12 (Phase 39).** Sourcing hierarchy is updated per `.env.local` with **HD-First and Authentic-Image-First** priority. Authentic ground-truth sources (Wikimedia Commons 4K/8K, Google Places Photos, Flickr CC Travel Streams) and Ultra-HD photo engines (Pexels, Unsplash, Openverse, Museum 4K IIIF) are prioritized. Pixabay `/get/` session links, placeholder CDNs, and low-res thumbnails are strictly banned. **Cross-destination zero-collision is enforced** — use `scripts/verify_batch2.js` after any image update to verify 0 collisions across the full 66k+ URL repository index.
+> **Last updated: 2026-09-27 (Phase 66).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Pexels/Unsplash only. Wikimedia Commons direct hotlinks are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
 
 ---
 
@@ -85,9 +85,9 @@ Checked across:
 - `topPlaces[].image.src`
 - `topPlaces[].photos[]` (every single photo URL)
 
-**Cross-destination audit command:**
+**Cross-destination audit check:**
 ```bash
-node scripts/verify_batch2.js
+node scripts/final-repository-audit.js
 # Indexes 66,000+ URLs from all 2,393 destination files
 # Flags any URL appearing in more than one destination
 ```
@@ -206,3 +206,51 @@ When auditing or repairing an existing destination file:
 - **Strict Attraction & State Geofencing**: Every replacement photo must match the exact attraction, district, and state. Out-of-state images (e.g. Kerala photos in Tamil Nadu/Punjab, Ladakh photos in MP/Bihar) are strictly prohibited.
 - **100% Repository-Wide Uniqueness**: Before saving any replacement slot, verify against the master 66,500+ repository index to guarantee zero cross-destination URL collisions.
 
+---
+
+## Rule 15 — Zero Foreign Monument Contamination (Added Phase 64)
+
+During Phase 64 audit, a systematic cross-monument contamination was discovered where stock image search engines returned famous Indian landmarks for unrelated destinations. **This is strictly banned.**
+
+### Known Contamination Patterns (All Fixed in Phase 64)
+
+| Wrong Monument | Destinations It Appeared In (Wrongly) |
+|---|---|
+| Hawa Mahal (Jaipur, Rajasthan) | `st-nicholas-church` (Kerala), `thenupuriswarar-temple` (Tamil Nadu) |
+| Golden Temple / Harmandir Sahib (Amritsar, Punjab) | `dimapur-kalibari` (Nagaland), `fort-mangad` (Maharashtra), `dhanushkodi` (Tamil Nadu), `digha` (West Bengal), `avanavanchery` (Kerala), `alorna-fort` (Goa) |
+| Taj Mahal (Agra, Uttar Pradesh) | `kottukal-cave-temple` (Kerala), `achala-fort` (Maharashtra), `kugti-sanctuary` (HP) |
+| Fatehpur Sikri (Rajasthan/UP) | `tarkarli` (Maharashtra) |
+| Khajuraho Temples (MP) | `amirthakadeswarar-temple` (Tamil Nadu), `annamanada-mahadeva-temple` (Kerala) |
+| Konark Sun Temple (Odisha) | `adithyapuram-sun-temple` (Kerala), `arasavalli-sun-temple` (AP) |
+| Qutub Minar (Delhi) | `dimapur-kalibari` (Nagaland), `achala-fort` (Maharashtra) |
+| Charminar (Hyderabad, Telangana) | `andul-rajbari` (West Bengal), `eco-park` (West Bengal) |
+| India Gate (Delhi) | `abirameswarar-temple` (Tamil Nadu) |
+| Gateway of India (Mumbai) | `abirameswarar-temple` (Tamil Nadu), `lingaraja-temple` (Odisha) |
+
+### Prevention Rule
+
+When searching Pexels/Unsplash/any stock engine for a destination:
+1. **Never use generic queries** like `"India temple"`, `"India fort"`, `"India heritage"` — these return Taj Mahal, Hampi, Konark, Khajuraho, Golden Temple, Hawa Mahal by default.
+2. **Always use state + destination-specific queries** like `"Kerala church architecture"`, `"Nagaland northeast temple"`, `"Maharashtra fort stone ruins"`.
+3. **Always inspect the alt text** of returned photos for monument signatures: `Hawa_Mahal`, `Taj_Mahal`, `Golden_Temple`, `Harmandir`, `Charminar`, `India_Gate`, `Gateway_India`, `Qutub_Minar`, `Fatehpur`, `Khajuraho`, `Konark`.
+4. **Reject any photo** whose alt/description mentions a monument from a different state/city than the destination.
+
+### Banned Signature Strings (Auto-Reject)
+```
+TajMahal, Taj_Mahal, Hawa_Mahal, HawaMahal, Golden_Temple,
+Harmandir, harmandir, India_Gate, Gateway_of_India, Qutub_Minar,
+qutub_minar, qutab_minar, Charminar, charminar, Fatehpur, fatehpur,
+Khajuraho, khajuraho, Konark, konark, Kedarnath, Narmada_River,
+Sarahan-Bhimakali, Baijnath, National_Museum, Chongkham
+```
+
+---
+
+## Rule 16 — Landmark-Specific Precision Matching (Added Phase 66)
+
+Every nearby attraction place card (`topPlaces[]`) MUST accurately represent that specific landmark, monument, or attraction.
+
+1. **Exact Subject Verification**: Never assign a general regional photo (e.g. general mountains, general lake) to a specific landmark that has a distinct architectural or physical identity (e.g., assigning a generic hill to a specific Buddha statue or a generic road to a suspension bridge).
+2. **Visual Inspection**: All place card thumbnails and modal photos must be visually inspected or programmatically verified via metadata (`alt`, `description`, tags) to ensure they depict the true subject.
+3. **Card-Level Differentiation**: If a destination has multiple nearby monasteries, forts, or lakes, each place card must show its own distinct structure — never repeat one landmark across multiple place cards.
+4. **Zero Script Residue**: Any temporary runner scripts created to perform batch updates must be deleted immediately after execution to keep the repository clean.

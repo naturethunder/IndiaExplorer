@@ -734,7 +734,7 @@ function main(dest, idx) {
       const desc = (p.description || '');
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
         '<div class="relative h-32 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
+        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
         '<span class="absolute top-2.5 right-2.5 text-xs font-bold px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-amber-300 border border-white/20 shadow-sm flex items-center gap-1">★ ' + esc(String(p.rating || '4.5')) + '</span>' +
         '</div>' +
         '<div class="p-3.5">' +
@@ -1038,8 +1038,10 @@ function main(dest, idx) {
       '<div class="dest-ov-carousel group" id="destOvCarouselWrap">' +
       '<div id="destOvTrack" class="relative w-full h-full">' +
       real5Photos.map(function (ph, idx) {
+        const loadingAttr = idx === 0 ? 'eager' : 'lazy';
+        const fetchpriorityAttr = idx === 0 ? 'fetchpriority="high" ' : '';
         return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
-          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" decoding="async" referrerpolicy="origin" onerror="this.onerror=null;" />' +
+          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="' + loadingAttr + '" ' + fetchpriorityAttr + 'decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;" />' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
           '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
@@ -1279,7 +1281,7 @@ function main(dest, idx) {
       const pImgAlt = (typeof p.image === 'object' && p.image && p.image.alt) ? p.image.alt : (p.name || '');
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(optimizeImageUrl(pImgSrc, 600)) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="origin" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
+        (pImgSrc ? '<img src="' + esc(optimizeImageUrl(pImgSrc, 600)) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -2465,7 +2467,7 @@ function main(dest, idx) {
     carLen = urls.length; carIdx = 0;
     carTrack.innerHTML = urls.map(function (u, i) {
       return '<div class="carousel-slide"><img src="' + esc(optimizeImageUrl(u, 1000)) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
-        '" decoding="async" referrerpolicy="origin" onerror="this.onerror=null;" /></div>';
+        '" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;" /></div>';
     }).join('');
     carDots.innerHTML = urls.map(function (u, i) {
       return '<button type="button" class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';
@@ -2668,19 +2670,22 @@ function main(dest, idx) {
         },
       });
 
-      window.gsap.from('#similar-grid a', {
-        opacity: 0,
-        y: 20,
-        stagger: 0.08,
-        duration: 0.6,
-        ease: 'power2.out',
-        clearProps: 'all',
-        scrollTrigger: {
-          trigger: '#similarSection',
-          start: 'top 98%',
-          toggleActions: 'play none none none',
-        },
-      });
+      const similarCards = document.querySelectorAll('#similar-grid a');
+      if (similarCards.length > 0) {
+        window.gsap.from('#similar-grid a', {
+          opacity: 0,
+          y: 20,
+          stagger: 0.08,
+          duration: 0.6,
+          ease: 'power2.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '#similarSection',
+            start: 'top 98%',
+            toggleActions: 'play none none none',
+          },
+        });
+      }
 
       setTimeout(function () {
         if (window.ScrollTrigger) window.ScrollTrigger.refresh();
