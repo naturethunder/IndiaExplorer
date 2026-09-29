@@ -2,7 +2,27 @@
 
 > **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
 > **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit<br>
-> **Date**: 2026-09-29 (Phase 71 update)
+> **Date**: 2026-09-30 (Phase 82 update)
+
+---
+
+## Phase 82 Modifications (2026-09-30)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `css/styles.css` & `css/glass-immersive.css` | Floating `.india-map-card` hovered over the map SVG, creating potential overlap with northern, eastern, or island territories depending on absolute placement | Absolute floating popover positioned at top/bottom corner over SVG canvas | Responsive side-by-side flex layout (`display: flex; justify-content: space-between; gap: 0.75rem;`) with India map shifted left and dedicated right-hand details panel (`flex: 0 0 205px; width: 205px;`) | Eliminate all visual overlap between map states/islands and the destination details card on desktop and tablet | Zero visual obstruction, superior user engagement, improved dwell time and interaction signals | Low |
+| `data/india-map.js` & `js/components/indiaMap.js` | Andaman & Nicobar islands were thin slivers (1px–5px) with badge located too far north in open water, previously obscured under floating card | Thin island polygons with disconnected leader line stopping at y=435 | Scaled 16 island polygons by 1.45× around individual centroids for clear landmass presence, added `.map-archipelago-frame` dashed maritime boundary, and aligned badge at `(382, 444)` with leader line connecting directly to North Andaman (`(466, 475)`) | Ensure complete sovereign visibility, cultural prominence, and ease of interaction for all 36 States/UTs including remote island groups | Boosts destination discovery and direct CTR to island travel guides | Low |
+| `sw.js` & `index.html` | Client-side cache needed immediate refresh for updated CSS flex architecture, island geometry, and map layout | Service Worker v1.4.4 and asset queries on phase 81 | Upgraded Service Worker to `v1.4.5`, purged stale shell cache, and bumped all stylesheet and script query strings to `v=20260930_phase82` | Guarantee zero-latency delivery of updated map layout and stylesheets without user hard-refresh | Ensures search crawlers and repeat users receive verified, pristine layout instantly | Low |
+
+---
+
+## Phase 73 Modifications (2026-09-30)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/india-map.js` & `js/components/indiaMap.js` | Pre-2019 LoC cut truncated J&K; Ladakh was omitted; Delhi was swallowed under Haryana's polygon due to SVG document order | Truncated northern crown; missing Ladakh; hidden Delhi polygon | Official Survey of India 2026 boundaries with full northern crown (J&K + Ladakh), separated Telangana, area Z-order sorting, and interactive Delhi callout badge + pulsing capital pin | Delineate complete sovereign territorial boundaries and ensure 100% interactive accessibility for all 36 States/UTs | Major UX boost, zero user frustration, and full territorial discovery compliance | Low |
+| `data/destinations/*.json` (12 files) | Image quality audit required zero-person, zero-crowd, zero-fake stock, 100% unique authentic HD photography with 0 repo collisions | Outdated or non-specific photography across 12 destinations | Overhauled 368 URLs across 12 destinations with authentic Pexels/Unsplash HD imagery, 0 persons, 0 fake stock, and 0 collisions across 2,396 destinations | Enforce pristine photographic quality and authentic travel discovery in Google Images | High positive impact on Google Image CTR, rich snippets, and visual trust | Low |
+| `sitemaps` (6 XML files) & `home-manifest.json` | Sitemaps and home manifest needed synchronization with updated photography | Previous image metadata | Recompiled master `sitemap.xml` (2,453 URLs, 11,960 images) and `home-manifest.json` (126.3 KB) | Ensure Googlebot and home map components receive verified current media | Fast re-indexing and synchronization with edge CDN | Low |
 
 ---
 

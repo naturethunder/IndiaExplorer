@@ -1,4 +1,17 @@
-# Image Quality & Performance Fixes — Phase 71 (2026-09-29)
+# Image Quality & Performance Fixes — Phase 74 (2026-09-30)
+
+## ✅ Phase 74 — Proxy Elimination, Direct CDN Delivery & Referrer Resilience (2026-09-30)
+
+### Problem Diagnosed & Fixed
+- **Unstable Proxy Failures (`wsrv.nl`)**: The third-party `wsrv.nl` edge proxy was returning HTTP 404 and connection timeouts (5s–15s) on Wikimedia Commons image URLs containing dashes, parentheses, or complex filenames (e.g. Majuli, Dalhousie, Wayanad, Kohima, Bir-Billing), causing cards to delay or fail to open.
+- **Bot Rate-Limiting via `referrerpolicy="no-referrer"`**: When images were requested with `referrerpolicy="no-referrer"`, Wikimedia Commons detected empty referers and issued HTTP 429 Too Many Requests.
+- **Resolution**:
+  1. **Direct Origin Delivery**: Removed `wsrv.nl` proxy wrapping from `optimizeImageUrl()` in `js/components/destinationCard.js`. All Wikimedia images are now fetched directly from Wikimedia's global CDN (`upload.wikimedia.org`), eliminating proxy 404s, latency, and timeouts.
+  2. **Native Edge CDN Sizing**: Kept native query parameters for Pexels (`auto=compress&cs=tinysrgb&w=...`) and Unsplash (`auto=format&w=...`), which resize images natively on their respective CDNs without third-party proxy intervention.
+  3. **Referrer Resilience**: Removed `referrerpolicy="no-referrer"` across all card components, HTML templates, and destination page script renderers. Browsers now send legitimate origin referers, allowing Wikimedia to serve images with HTTP 200 OK.
+  4. **Cache Invalidation**: Service Worker bumped to `v1.4.0` and query strings bumped to `?v=20260930_phase74`.
+
+---
 
 ## ✅ Phase 71 — Pixabay Session URL Purge, Media Integrity Certification & Rishikesh Landmark Restoration (2026-09-29)
 
@@ -328,3 +341,10 @@ loading="lazy"
 All P0 fixes applied. Site will load **60-70% less image data** with **50-60% faster LCP** and **zero layout shift**.
 
 Run `node scripts/serve.js` → http://localhost:8080 to verify locally.
+
+
+## Phase 73 Image Pipeline Quality Certification (2026-09-30)
+- **Zero-Person Rule Strict Enforcement**: 12 destinations overhauled with 0 individuals/portraits/faces/selfies/models/crowds.
+- **Zero Fake / Random Stock**: Strict prohibition of chemistry cubes, feathers, and irrelevant stock items.
+- **Zero Collisions**: Certified 0 cross-destination URL collisions across the entire 66,500+ repository catalog.
+- **All 368 URLs HTTP 200 Verified**: 100% reachability across all primary hero, gallery, and nearby place cards.

@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-29 rev-33)
+# ExploreDesh — Project Guide (updated 2026-09-30 rev-35)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -17,7 +17,37 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-29 rev-33) — Phase 72: Core Web Vitals & Web Performance Optimization:**
+> **Latest Milestone (2026-09-30 rev-35) — Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul:**
+> - **Side-by-Side Zero-Overlap Flex Architecture (`css/styles.css`, `css/glass-immersive.css`):**
+>   - Reconfigured `.discover-map-inner` from an overlapping floating card layout into a responsive side-by-side flex layout (`display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 0.75rem;`).
+>   - India SVG map is allocated the left portion (`flex: 1 1 auto; max-width: calc(100% - 215px); height: 100%;`), shifting it leftwards with balanced margins.
+>   - Hover details card (`.india-map-card`) converted into a dedicated relative flex child (`flex: 0 0 205px; width: 205px; align-self: center;`) on the right side.
+>   - **Zero Overlap Guarantee:** Because the card is placed outside the SVG canvas, it **never obscures any state boundary, label, or island group** on desktop or tablet. On mobile (`<= 768px`), layout stacks vertically with map above and card below.
+> - **Andaman & Nicobar Islands Complete Visibility & Archipelago Geometry (`data/india-map.js`, `js/components/indiaMap.js`):**
+>   - Displaced hover card away from bottom-right where it previously obscured the Andaman & Nicobar island chain.
+>   - Scaled 16 island polygons in `data/india-map.js` by 1.45× around individual centroids for prominent, tangible landmass geometry.
+>   - Added `.map-archipelago-frame` maritime dashed inset boundary grouping North Andaman to Great Nicobar (`rect x="445" y="473" width="45" height="133"`).
+>   - Aligned indicator badge `✦ ANDAMAN & NICOBAR ✦` (`x="382" y="444"`) with leader line connecting directly to North Andaman (`(466, 475)`).
+>   - High-contrast jewel blue styling (`#0284C7`) with 2.2px crisp border stroke and golden amber hover glow (`#F59E0B`).
+> - **Master Regression & Safety Certification:**
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+>   - Service Worker cache upgraded to `v1.4.5` and assets synchronized to `v=20260930_phase82`.
+>
+> **Previous Milestone (2026-09-30 rev-34) — Phase 73: Official Survey of India 2026 Interactive Map & 12-Destination Strict Photographic Quality Overhaul:**
+> - **Official Survey of India 2026 Interactive Map (`data/india-map.js`, `js/components/indiaMap.js`, `scripts/build-india-map.js`):**
+>   - **Complete Northern Crown ($37.08^\circ\text{N}$):** Replaced legacy pre-2019 GeoJSON (which truncated Jammu & Kashmir along the de facto Line of Control at $34^\circ\text{N}$ leaving an empty void) with the sovereign Survey of India 2026 boundary, accurately rendering both **Jammu & Kashmir** and **Ladakh** as bifurcated, clickable, full territories.
+>   - **Separated Telangana & Andhra Pradesh:** Accurately delineated post-2014 state bifurcation boundaries.
+>   - **SVG Painter's Algorithm Area Z-Order Stacking:** Solved the issue where large surrounding states (Haryana, UP) swallowed small enclaves like Delhi. Polygons are sorted descending by area so large states draw at the bottom and small enclaves render on top.
+>   - **Prominent Delhi Interactive Integration:** Added interactive `✦ DELHI ✦` callout tag (`.map-capital-tag`) with leader line and a pulsing concentric capital marker pin (`.map-capital-marker`) at coordinates `(176.3, 202.1)`. Hovering/clicking immediately loads Delhi's 11 destinations.
+> - **12-Destination Strict Photographic Quality Overhaul:**
+>   - Overhauled 12 destinations (`komrelly-mallanna-temple`, `kirateshwar-mahadev-temple`, `tendong-gumpa`, `kyongnosla-alpine-sanctuary`, `dubdi-monastery`, `maenam-wildlife-sanctuary`, `shingba-rhododendron-sanctuary`, `shri-viswa-vinayaka-mandir-rhenock`, `kitam-bird-sanctuary`, `khangchendzonga-national-park`, `gurdwara-nanaklama`, `varsey-rhododendron-sanctuary`).
+>   - Enforced strict rules: 100% unique original destination/place HD URLs (Pexels & Unsplash APIs), zero individuals/faces/crowds/models, zero fake/random stock, and **0 collisions across all 2,396 destinations**.
+> - **Master Regression & Safety Certification:**
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+>   - Technical SEO & Indexing Audit (`scripts/seo_audit.js`): **61/61 checks passed (100%)**.
+>   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+>
+> **Previous Milestone (2026-09-29 rev-33) — Phase 72: Core Web Vitals & Web Performance Optimization:**
 > - **Direct Edge WebP Formatting (`js/components/destinationCard.js`):** Enabled native `fm=webp` query parameter across Pexels and Unsplash CDN image requests in `optimizeImageUrl()`. Verified live HTTP 200 responses with `image/webp` content type, slashing card image network payload weight by ~35%–50% per asset without any third-party proxy dependencies.
 > - **Non-Blocking Concurrent Search Index (`js/pages/finder.js`):** Decoupled the 6.99 MB `data/search-index.json` download from top-level module execution on `ai-finder.html`. Created non-blocking concurrent promise evaluation, ensuring the page UI, suggested prompt chips, header, and geolocation controls initialize in <50ms without waiting for search payload parsing.
 > - **Zero-Flicker Card Skeletons (`destinations.html`):** Inserted 6 shimmering `.skeleton-card.skeleton-hero` placeholders inside `#grid` to prevent layout jumps and blank white/dark screen flashes while `index.json` compiles.

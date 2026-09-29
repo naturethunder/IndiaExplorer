@@ -253,11 +253,26 @@ function main(dest, idx) {
   }
 
 
+  function cleanMediaUrl(u) {
+    if (!u || typeof u !== 'string') return '';
+    if (u.includes('wikimedia.org') && u.includes('utm_')) {
+      try {
+        const parsed = new URL(u);
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(p => parsed.searchParams.delete(p));
+        return parsed.searchParams.toString() ? parsed.toString() : (parsed.origin + parsed.pathname);
+      } catch (_) {
+        return u.split('?')[0];
+      }
+    }
+    return u;
+  }
+
   // Resolve heroImage regardless of whether it's a string URL or {src,alt} object
-  const heroSrc = typeof dest.heroImage === 'string' ? dest.heroImage
+  const rawHeroResolved = typeof dest.heroImage === 'string' ? dest.heroImage
     : (dest.heroImage && dest.heroImage.src ? dest.heroImage.src
       : (dest.image && dest.image.src ? dest.image.src
         : (dest.gallery && dest.gallery[0] ? (typeof dest.gallery[0] === 'string' ? dest.gallery[0] : dest.gallery[0].src) : '')));
+  const heroSrc = cleanMediaUrl(rawHeroResolved);
   const rawHeroAlt = typeof dest.heroImage === 'object' && dest.heroImage ? dest.heroImage.alt : '';
   const heroAlt = cleanAltText(rawHeroAlt) || (dest.title || 'Destination');
 
@@ -337,16 +352,35 @@ function main(dest, idx) {
   // ─── Hero ───────────────────────────────────────────────
   const heroImg = document.getElementById('heroImg');
   if (heroImg) {
-    heroImg.setAttribute('referrerpolicy', 'origin');
     if (heroSrc) {
-      heroImg.src = optimizeImageUrl(heroSrc, 1600);
+      const optHeroSrc = optimizeImageUrl(heroSrc, 1600);
+      heroImg.src = optHeroSrc;
       heroImg.alt = heroAlt;
       heroImg.style.display = 'block';
+      // Multi-tier resilience: if edge WebP proxy returns error (404/429), fall back to clean origin heroSrc
+      heroImg.onerror = function () {
+        if (!this.dataset.fallbackTier) {
+          this.dataset.fallbackTier = '1';
+          if (heroSrc && heroSrc !== this.src) {
+            this.src = heroSrc;
+            return;
+          }
+        }
+        if (this.dataset.fallbackTier === '1') {
+          this.dataset.fallbackTier = '2';
+          const altPhoto = (dest.gallery && dest.gallery[1] ? (typeof dest.gallery[1] === 'string' ? dest.gallery[1] : dest.gallery[1].src) : null)
+            || (dest.image ? (typeof dest.image === 'string' ? dest.image : dest.image.src) : null);
+          if (altPhoto && altPhoto !== this.src) {
+            this.src = optimizeImageUrl(cleanMediaUrl(altPhoto), 1600);
+            return;
+          }
+        }
+        this.onerror = null;
+      };
     } else {
       heroImg.removeAttribute('src');
       heroImg.hidden = true;
     }
-    heroImg.onerror = function () { this.onerror = null; };
   }
   const typeObj = DESTINATION_TYPES.find(function (t) { return t.id === dest.type; }) || {};
   const heroType = document.getElementById('heroType');
@@ -750,13 +784,16 @@ function main(dest, idx) {
     }).join('');
 
     const topPlaces = places.slice(0, 4).map(function (p, i) {
-      const pImgRaw = (typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')) || '';
+      const pImgRaw = cleanMediaUrl((typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')) || '');
       const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 600) : '';
       const pImgAlt = (p.image && p.image.alt) ? p.image.alt : (p.name || '');
       const desc = (p.description || '');
+      const loadAttr = i < 2 ? 'loading="eager"' : 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
         '<div class="relative h-32 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
+        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" ' +
+          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="this.onerror=null;this.style.display=\'none\';" ') +
+          '/>' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
         '<span class="absolute top-2.5 right-2.5 text-xs font-bold px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-amber-300 border border-white/20 shadow-sm flex items-center gap-1">★ ' + esc(String(p.rating || '4.5')) + '</span>' +
         '</div>' +
         '<div class="p-3.5">' +
@@ -813,6 +850,11 @@ function main(dest, idx) {
         if (!u || typeof u !== 'string') return '';
         try {
           const parsed = new URL(u, window.location.origin);
+          // If this is a wsrv.nl or weserv proxy URL, unwrap the target 'url' parameter first
+          if (parsed.hostname.includes('wsrv.nl') || parsed.hostname.includes('weserv.nl')) {
+            const inner = parsed.searchParams.get('url');
+            if (inner) return getNormalizedKey(decodeURIComponent(inner));
+          }
           if (parsed.hostname.includes('wikimedia.org')) {
             const f = parsed.searchParams.get('f');
             if (f) return decodeURIComponent(f).toLowerCase().replace(/_/g, ' ').trim();
@@ -825,7 +867,7 @@ function main(dest, idx) {
 
       function addPhoto(photo) {
         if (!photo || !photo.src) return;
-        const key = getNormalizedKey(photo.src);
+        const key = getNormalizedKey(photo.rawSrc || photo.src);
         if (!key || seen.has(key)) return;
         seen.add(key);
         photos.push(photo);
@@ -882,18 +924,22 @@ function main(dest, idx) {
 
       // 1. Primary Hero Image
       if (typeof dest.heroImage === 'string' && dest.heroImage) {
+        const raw = cleanMediaUrl(dest.heroImage);
         addPhoto({
-          src: optimizeImageUrl(dest.heroImage, 1400),
+          src: optimizeImageUrl(raw, 1400),
+          rawSrc: raw,
           title: formatHeroTitle(dest.title, dest.tagline, '', dest.state),
           subtitle: dest.state + ' · Main View',
           category: dest.type || 'scenic'
         });
       } else if (dest.heroImage && dest.heroImage.src) {
+        const raw = cleanMediaUrl(dest.heroImage.src);
         const cleanHeroSub = cleanAltText(dest.heroImage.alt);
         const heroExplicitTitle = (dest.heroImage.title && !isGenericLabel(dest.heroImage.title) ? cleanAltText(dest.heroImage.title) : null)
           || (dest.gallery && dest.gallery[0] && dest.gallery[0].title && !isGenericLabel(dest.gallery[0].title) ? cleanAltText(dest.gallery[0].title) : null);
         addPhoto({
-          src: optimizeImageUrl(dest.heroImage.src, 1400),
+          src: optimizeImageUrl(raw, 1400),
+          rawSrc: raw,
           title: heroExplicitTitle || formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
           subtitle: (cleanHeroSub && cleanHeroSub.toLowerCase() !== dest.title.toLowerCase()) ? cleanHeroSub : (dest.state + ' · Main View'),
           category: dest.type || 'scenic'
@@ -1003,13 +1049,14 @@ function main(dest, idx) {
 
       // 2. Curated Destination Gallery (Prioritize destination's own authentic gallery photos)
       (dest.gallery || []).forEach(function (g, idx) {
-        const srcUrl = typeof g === 'string' ? g : (g && g.src ? g.src : '');
-        if (photos.length < 5 && srcUrl) {
+        const raw = cleanMediaUrl(typeof g === 'string' ? g : (g && g.src ? g.src : ''));
+        if (photos.length < 5 && raw) {
           const gTitle = resolveGalleryTitle(g, idx);
           const gCaption = resolveGalleryCaption(g, idx);
 
           addPhoto({
-            src: optimizeImageUrl(srcUrl, 1400),
+            src: optimizeImageUrl(raw, 1400),
+            rawSrc: raw,
             title: gTitle,
             subtitle: gCaption,
             category: (typeof g === 'object' && g.category) ? g.category : (dest.type || 'heritage')
@@ -1019,10 +1066,11 @@ function main(dest, idx) {
 
       // 3. Backfill with Top Places if gallery has fewer than 5 photos
       (places || []).forEach(function (p) {
-        const pImgFallback = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '');
+        const pImgFallback = cleanMediaUrl(typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : ''));
         if (photos.length < 5 && pImgFallback) {
           addPhoto({
             src: optimizeImageUrl(pImgFallback, 1400),
+            rawSrc: pImgFallback,
             title: p.name,
             subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
             category: p.category || 'attraction'
@@ -1030,10 +1078,11 @@ function main(dest, idx) {
         }
         if (Array.isArray(p.photos)) {
           p.photos.forEach(function (ph) {
-            const phSrc = typeof ph === 'string' ? ph : (ph && ph.src ? ph.src : '');
+            const phSrc = cleanMediaUrl(typeof ph === 'string' ? ph : (ph && ph.src ? ph.src : ''));
             if (photos.length < 5 && phSrc) {
               addPhoto({
                 src: optimizeImageUrl(phSrc, 1400),
+                rawSrc: phSrc,
                 title: p.name,
                 subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
                 category: p.category || 'attraction'
@@ -1044,8 +1093,10 @@ function main(dest, idx) {
       });
 
       if (photos.length === 0 && dest.image && dest.image.src) {
+        const raw = cleanMediaUrl(dest.image.src);
         addPhoto({
-          src: optimizeImageUrl(dest.image.src, 1400),
+          src: optimizeImageUrl(raw, 1400),
+          rawSrc: raw,
           title: dest.title,
           subtitle: dest.state,
           category: dest.type || 'scenic'
@@ -1062,8 +1113,11 @@ function main(dest, idx) {
       real5Photos.map(function (ph, idx) {
         const loadingAttr = idx === 0 ? 'eager' : 'lazy';
         const fetchpriorityAttr = idx === 0 ? 'fetchpriority="high" ' : '';
+        const rawSrc = ph.rawSrc || '';
         return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
-          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="' + loadingAttr + '" ' + fetchpriorityAttr + 'decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;" />' +
+          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="' + loadingAttr + '" ' + fetchpriorityAttr + 'decoding="async" ' +
+          (rawSrc && rawSrc !== ph.src ? 'data-raw="' + esc(rawSrc) + '" onerror="if(!this.dataset.triedFallback && this.dataset.raw && this.dataset.raw !== this.src){this.dataset.triedFallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;}" ' : 'onerror="this.onerror=null;" ') +
+          '/>' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
           '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
@@ -1299,11 +1353,15 @@ function main(dest, idx) {
         ? '<span class="text-amber-400 font-medium">Free Entry</span>'
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
       // Support string and object image structures so real place images are always visible
-      const pImgSrc = typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '');
+      const pImgRaw = cleanMediaUrl(typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : ''));
+      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 600) : '';
       const pImgAlt = (typeof p.image === 'object' && p.image && p.image.alt) ? p.image.alt : (p.name || '');
+      const loadAttr = i < 4 ? 'loading="eager"' : 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(optimizeImageUrl(pImgSrc, 600)) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.style.display=\'none\';" />' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
+        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" width="112" height="96" ' + loadAttr + ' decoding="async" ' +
+          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="this.onerror=null;this.style.display=\'none\';" ') +
+          '/>' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
         '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
@@ -2371,11 +2429,13 @@ function main(dest, idx) {
     const similarGrid = document.getElementById('similar-grid');
     if (similarGrid && similar.length > 0) {
       similarGrid.innerHTML = similar.map(function (d) {
-        const img = optimizeImageUrl(resolveCardPhoto(d), 600);
+        const rawPhoto = resolveCardPhoto(d);
+        const img = optimizeImageUrl(rawPhoto, 600);
         return '' +
           '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
           '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
-          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.style.display=\'none\';" />' : '') +
+          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" ' +
+            'onerror="if(this.dataset.fallback){this.onerror=null;this.style.display=\'none\';}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawPhoto) + '\';}" />' : '') +
           '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
           '<div class="absolute top-2 right-2">' +
           '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
@@ -2488,8 +2548,12 @@ function main(dest, idx) {
   function carRender(urls, name) {
     carLen = urls.length; carIdx = 0;
     carTrack.innerHTML = urls.map(function (u, i) {
-      return '<div class="carousel-slide"><img src="' + esc(optimizeImageUrl(u, 1000)) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
-        '" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;" /></div>';
+      const cleanU = cleanMediaUrl(u);
+      const optU = optimizeImageUrl(cleanU, 1000);
+      return '<div class="carousel-slide"><img src="' + esc(optU) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
+        '" decoding="async" ' +
+        (cleanU && cleanU !== optU ? 'data-raw="' + esc(cleanU) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;}" ' : 'onerror="this.onerror=null;" ') +
+        '/></div>';
     }).join('');
     carDots.innerHTML = urls.map(function (u, i) {
       return '<button type="button" class="dot' + (i === 0 ? ' active' : '') + '" data-i="' + i + '" aria-label="Go to photo ' + (i + 1) + '" aria-current="' + (i === 0 ? 'true' : 'false') + '"></button>';

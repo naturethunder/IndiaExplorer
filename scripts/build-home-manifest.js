@@ -42,6 +42,16 @@ function build() {
   ];
   iconicLeads.forEach(s => add(all.find(d => d.slug === s)));
 
+  // Add all 12 recently overhauled destinations
+  const recentOverhauls = [
+    'komrelly-mallanna-temple', 'kirateshwar-mahadev-temple', 'tendong-gumpa',
+    'kyongnosla-alpine-sanctuary', 'dubdi-monastery', 'maenam-wildlife-sanctuary',
+    'shingba-rhododendron-sanctuary', 'shri-viswa-vinayaka-mandir-rhenock',
+    'kitam-bird-sanctuary', 'khangchendzonga-national-park', 'gurdwara-nanaklama',
+    'varsey-rhododendron-sanctuary'
+  ];
+  recentOverhauls.forEach(s => add(all.find(d => d.slug === s)));
+
   // 2. Hills
   all.filter(d => (d.type === 'hill_station' || d.type === 'hillstation' || (d.features && d.features.some(f => /hill|mountain|valley|peak/i.test(f)))) && d.heroImage && d.heroImage.src)
      .sort((a,b) => (b.reviewCount||0) - (a.reviewCount||0)).slice(0, 16).forEach(add);

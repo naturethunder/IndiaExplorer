@@ -449,8 +449,8 @@ function renderBatch(isAppend = false) {
   } else {
     // Kill stale scroll triggers before re-render
     killCardTriggers();
-    grid.innerHTML = slice.map(function (d) {
-      return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '' });
+    grid.innerHTML = slice.map(function (d, i) {
+      return destCardHTML(d, { variant: 'explore', typeIcon: categoryIconMap.get(d.type) || '', priority: i < 4 });
     }).join('');
   }
 

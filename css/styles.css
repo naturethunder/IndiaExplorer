@@ -2743,36 +2743,44 @@ textarea.form-input {
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 1.25rem;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
-  padding: 0.5rem 0.85rem 0.75rem 0.75rem;
+  padding: 0.5rem 0.85rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
   height: 500px;
   min-height: 500px;
   max-height: 500px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .discover-map .india-map-svg {
+  flex: 1 1 auto;
   width: auto;
   height: 100%;
-  max-width: 80%;
-  max-height: 475px;
+  max-width: calc(100% - 215px);
+  max-height: 100%;
   margin: 0;
   display: block;
-  align-self: flex-start;
+  align-self: center;
   pointer-events: auto;
 }
 
 .india-map-card {
-  position: absolute;
-  right: 0.85rem;
-  bottom: 0.85rem;
-  inset: auto 0.85rem 0.85rem auto;
-  width: 200px;
-  max-width: 208px;
-  min-width: 180px;
+  position: relative;
+  flex: 0 0 205px;
+  width: 205px;
+  max-width: 215px;
+  min-width: 190px;
   margin: 0;
+  inset: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  align-self: center;
   background: rgba(15, 23, 42, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -2782,6 +2790,15 @@ textarea.form-input {
   padding: 0.65rem 0.85rem;
   z-index: 10;
   pointer-events: auto;
+}
+
+.map-archipelago-frame {
+  fill: rgba(14, 165, 233, 0.06);
+  stroke: rgba(14, 165, 233, 0.45);
+  stroke-width: 1px;
+  stroke-dasharray: 3 3;
+  pointer-events: none;
+  transition: all 0.25s ease;
 }
 
 @media (max-width: 768px) {
@@ -2889,8 +2906,8 @@ textarea.form-input {
 
 .india-state {
   fill: var(--state-light, #E8EDF2);
-  stroke: #fff;
-  stroke-width: 1;
+  stroke: #334155;
+  stroke-width: 1.15px;
   stroke-linejoin: round;
   stroke-linecap: round;
   transition: fill 0.2s ease, stroke 0.2s ease, transform 0.2s ease, filter 0.2s ease;
@@ -2902,15 +2919,15 @@ textarea.form-input {
 }
 
 .india-state:not(.is-empty):hover {
-  stroke: #fff;
-  stroke-width: 2;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  stroke: #0F172A;
+  stroke-width: 2.2px;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }
 
 .india-state.is-active {
-  stroke: #F59E0B;
-  stroke-width: 2.5;
-  filter: drop-shadow(0 2px 10px rgba(245, 158, 11, 0.5));
+  stroke: #D97706;
+  stroke-width: 2.5px;
+  filter: drop-shadow(0 0 14px rgba(217, 119, 6, 0.7));
 }
 
 .india-state.is-empty {
@@ -2921,7 +2938,22 @@ textarea.form-input {
 .india-state:focus-visible {
   outline: none;
   stroke: var(--primary-dark);
-  stroke-width: 2;
+  stroke-width: 2px;
+}
+
+/* Cartographic State Typography */
+.map-state-label {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  fill: #0F172A;
+  paint-order: stroke fill;
+  stroke: rgba(255, 255, 255, 0.95);
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* Enhanced island styling for Andaman & Nicobar and Lakshadweep */
@@ -2957,6 +2989,91 @@ textarea.form-input {
   stroke-width: 1.2;
   stroke-dasharray: 2 2;
   opacity: 0.8;
+}
+
+/* Delhi National Capital Territory styling — Prominent Area Outline & Fill */
+.india-state[data-state="Delhi"] {
+  fill: #FECDD3 !important;
+  stroke: #BE123C !important;
+  stroke-width: 1.4px !important;
+  stroke-linejoin: round !important;
+  stroke-linecap: round !important;
+  filter: drop-shadow(0 0 4px rgba(225, 29, 72, 0.45)) !important;
+  cursor: pointer !important;
+}
+
+.india-state[data-state="Delhi"]:hover {
+  fill: #FDA4AF !important;
+  stroke: #E11D48 !important;
+  stroke-width: 2.2px !important;
+  filter: drop-shadow(0 0 10px rgba(225, 29, 72, 0.8)) !important;
+}
+
+.india-state[data-state="Delhi"].is-active {
+  fill: #FB7185 !important;
+  stroke: #9F1239 !important;
+  stroke-width: 2.4px !important;
+  filter: drop-shadow(0 0 12px rgba(225, 29, 72, 0.9)) !important;
+}
+
+.map-capital-badge-bg {
+  fill: rgba(225, 29, 72, 0.12);
+  stroke: rgba(225, 29, 72, 0.5);
+  stroke-width: 1;
+  transition: all 0.2s ease;
+}
+
+.map-capital-tag:hover .map-capital-badge-bg,
+.map-capital-tag.is-active .map-capital-badge-bg {
+  fill: rgba(225, 29, 72, 0.35);
+  stroke: #F43F5E;
+  filter: drop-shadow(0 0 6px rgba(244, 63, 94, 0.5));
+}
+
+.map-capital-text {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  fill: #E11D48;
+}
+
+.map-capital-line {
+  stroke: #E11D48;
+  stroke-width: 1.2;
+  stroke-dasharray: 2 2;
+  opacity: 0.85;
+}
+
+.map-capital-pulse {
+  fill: #E11D48;
+  opacity: 0.25;
+  animation: capitalPulse 2.4s infinite ease-in-out;
+}
+
+.map-capital-dot {
+  fill: #E11D48;
+  stroke: #FFFFFF;
+  stroke-width: 1.2;
+  transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.map-capital-marker:hover .map-capital-dot,
+.map-capital-marker.is-active .map-capital-dot {
+  fill: #F43F5E;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 6px rgba(244, 63, 94, 0.8));
+}
+
+@keyframes capitalPulse {
+  0%, 100% {
+    r: 6px;
+    opacity: 0.2;
+  }
+  50% {
+    r: 9px;
+    opacity: 0.45;
+  }
 }
 
 

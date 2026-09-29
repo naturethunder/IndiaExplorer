@@ -6,68 +6,103 @@
  *
  * Keyboard, screen-reader, and mobile touch accessible.
  */
-import { INDIA_MAP } from '../../data/india-map.js';
+import { INDIA_MAP } from '../../data/india-map.js?v=20260930_phase80';
 import { esc } from '../utils/format.js';
 
-// Curated regional color palette: harmonious pastel tones in light mode, luminous jewel tones in dark mode
+// Curated regional color palette: vibrant, high-contrast, cartographic tones where no adjacent states share the same color
 export const STATE_THEME_COLORS = {
   // Northern India
-  "Jammu & Kashmir": { light: "#DDD6FE", dark: "#6366F1" },
-  "Ladakh": { light: "#D9F99D", dark: "#65A30D" },
-  "Himachal Pradesh": { light: "#FBCFE8", dark: "#9D174D" },
-  "Punjab": { light: "#FEF08A", dark: "#CA8A04" },
-  "Chandigarh": { light: "#FDE047", dark: "#EAB308" },
-  "Uttarakhand": { light: "#C4B5FD", dark: "#7C3AED" },
-  "Haryana": { light: "#FED7AA", dark: "#EA580C" },
-  "Delhi": { light: "#FECDD3", dark: "#E11D48" },
+  "Jammu & Kashmir": { light: "#BAE6FD", dark: "#0284C7" },
+  "Ladakh": { light: "#FEF08A", dark: "#B45309" },
+  "Himachal Pradesh": { light: "#FECDD3", dark: "#E11D48" },
+  "Punjab": { light: "#FDE047", dark: "#CA8A04" },
+  "Chandigarh": { light: "#FCD34D", dark: "#D97706" },
+  "Uttarakhand": { light: "#E9D5FF", dark: "#9333EA" },
+  "Haryana": { light: "#FDBA74", dark: "#EA580C" },
+  "Delhi": { light: "#FDA4AF", dark: "#BE123C" },
 
   // Western India
-  "Rajasthan": { light: "#FBCFE8", dark: "#DB2777" },
-  "Gujarat": { light: "#FED7AA", dark: "#D97706" },
+  "Rajasthan": { light: "#FDE68A", dark: "#D97706" },
+  "Gujarat": { light: "#FED7AA", dark: "#C2410C" },
   "Goa": { light: "#67E8F9", dark: "#0891B2" },
   "Dadra & Nagar Haveli": { light: "#A7F3D0", dark: "#059669" },
   "Daman & Diu": { light: "#FDBA74", dark: "#C2410C" },
 
   // Central India
-  "Madhya Pradesh": { light: "#FEF08A", dark: "#CA8A04" },
-  "Chhattisgarh": { light: "#E0E7FF", dark: "#4F46E5" },
+  "Madhya Pradesh": { light: "#DDD6FE", dark: "#7C3AED" },
+  "Chhattisgarh": { light: "#BFDBFE", dark: "#2563EB" },
 
   // Eastern India
   "Uttar Pradesh": { light: "#BBF7D0", dark: "#16A34A" },
-  "Bihar": { light: "#FDE68A", dark: "#B45309" },
+  "Bihar": { light: "#FED7AA", dark: "#EA580C" },
   "Jharkhand": { light: "#FBCFE8", dark: "#BE185D" },
-  "Odisha": { light: "#FDE047", dark: "#D97706" },
-  "West Bengal": { light: "#A7F3D0", dark: "#059669" },
+  "Odisha": { light: "#FDE68A", dark: "#D97706" },
+  "West Bengal": { light: "#99F6E4", dark: "#0D9488" },
 
   // Southern India
-  "Maharashtra": { light: "#BBF7D0", dark: "#15803D" },
-  "Karnataka": { light: "#FEF08A", dark: "#A16207" },
-  "Telangana": { light: "#FBCFE8", dark: "#BE185D" },
+  "Maharashtra": { light: "#A7F3D0", dark: "#059669" },
+  "Karnataka": { light: "#FEF08A", dark: "#CA8A04" },
+  "Telangana": { light: "#F5D0FE", dark: "#C026D3" },
   "Andhra Pradesh": { light: "#FED7AA", dark: "#EA580C" },
-  "Kerala": { light: "#DDD6FE", dark: "#7C3AED" },
-  "Tamil Nadu": { light: "#A7F3D0", dark: "#047857" },
+  "Kerala": { light: "#A7F3D0", dark: "#059669" },
+  "Tamil Nadu": { light: "#DDD6FE", dark: "#7C3AED" },
   "Puducherry": { light: "#F472B6", dark: "#DB2777" },
 
   // North-East India
   "Sikkim": { light: "#FBCFE8", dark: "#C026D3" },
-  "Assam": { light: "#FEF08A", dark: "#B45309" },
-  "Arunachal Pradesh": { light: "#E0E7FF", dark: "#6D28D9" },
-  "Nagaland": { light: "#FBCFE8", dark: "#9D174D" },
-  "Manipur": { light: "#BBF7D0", dark: "#15803D" },
-  "Mizoram": { light: "#FDA4AF", dark: "#9F1239" },
-  "Tripura": { light: "#FED7AA", dark: "#C2410C" },
-  "Meghalaya": { light: "#FDE68A", dark: "#D97706" },
+  "Assam": { light: "#FDE68A", dark: "#D97706" },
+  "Arunachal Pradesh": { light: "#E9D5FF", dark: "#7C3AED" },
+  "Nagaland": { light: "#FECDD3", dark: "#E11D48" },
+  "Manipur": { light: "#BBF7D0", dark: "#16A34A" },
+  "Mizoram": { light: "#FDA4AF", dark: "#BE123C" },
+  "Tripura": { light: "#FED7AA", dark: "#EA580C" },
+  "Meghalaya": { light: "#99F6E4", dark: "#0D9488" },
 
-  // Islands - vivid turquoise & cyan for high visibility in open waters
+  // Islands
   "Andaman & Nicobar": { light: "#0284C7", dark: "#38BDF8" },
   "Lakshadweep": { light: "#0284C7", dark: "#38BDF8" }
 };
 
 // Ocean and sea body labels positioned in open water
 const WATER_BODIES = [
-  { name: "ARABIAN SEA", x: 60, y: 440, rotate: -25 },
+  { name: "ARABIAN SEA", x: 60, y: 470, rotate: -25 },
   { name: "BAY OF BENGAL", x: 360, y: 390, rotate: 20 },
-  { name: "INDIAN OCEAN", x: 205, y: 610, rotate: 0 }
+  { name: "INDIAN OCEAN", x: 205, y: 595, rotate: 0 }
+];
+
+// Verified interior label coordinates for prominent cartographic state visibility
+export const STATE_LABELS = [
+  { name: "Ladakh", label: "LADAKH", x: 171, y: 88, size: 8.5 },
+  { name: "Jammu & Kashmir", label: "JAMMU & KASHMIR", x: 136, y: 112, size: 6.5 },
+  { name: "Himachal Pradesh", label: "HIMACHAL", x: 180, y: 142, size: 6.5 },
+  { name: "Punjab", label: "PUNJAB", x: 146, y: 162, size: 7 },
+  { name: "Haryana", label: "HARYANA", x: 161, y: 191, size: 6.5 },
+  { name: "Uttarakhand", label: "UTTARAKHAND", x: 215, y: 174, size: 6.5 },
+  { name: "Rajasthan", label: "RAJASTHAN", x: 118, y: 240, size: 9.5 },
+  { name: "Gujarat", label: "GUJARAT", x: 76, y: 310, size: 8.5 },
+  { name: "Madhya Pradesh", label: "MADHYA PRADESH", x: 198, y: 285, size: 9 },
+  { name: "Uttar Pradesh", label: "UTTAR PRADESH", x: 240, y: 234, size: 9 },
+  { name: "Bihar", label: "BIHAR", x: 332, y: 256, size: 8 },
+  { name: "Jharkhand", label: "JHARKHAND", x: 332, y: 293, size: 7.5 },
+  { name: "West Bengal", label: "WEST BENGAL", x: 376, y: 290, size: 6.5 },
+  { name: "Odisha", label: "ODISHA", x: 310, y: 350, size: 8.5 },
+  { name: "Chhattisgarh", label: "CHHATTISGARH", x: 267, y: 338, size: 7.5 },
+  { name: "Maharashtra", label: "MAHARASHTRA", x: 158, y: 368, size: 9.5 },
+  { name: "Telangana", label: "TELANGANA", x: 212, y: 400, size: 7.5 },
+  { name: "Andhra Pradesh", label: "ANDHRA PRADESH", x: 229, y: 437, size: 8 },
+  { name: "Karnataka", label: "KARNATAKA", x: 160, y: 456, size: 8.5 },
+  { name: "Tamil Nadu", label: "TAMIL NADU", x: 201, y: 524, size: 8.5 },
+  { name: "Kerala", label: "KERALA", x: 164, y: 535, size: 6.5 },
+  { name: "Assam", label: "ASSAM", x: 462, y: 244, size: 8 },
+  { name: "Arunachal Pradesh", label: "ARUNACHAL", x: 498, y: 213, size: 6.5 },
+  { name: "Sikkim", label: "SIKKIM", x: 384, y: 221, size: 5.5 },
+  { name: "Meghalaya", label: "MEGHALAYA", x: 436, y: 259, size: 5.5 },
+  { name: "Nagaland", label: "NAGALAND", x: 495, y: 249, size: 5.5 },
+  { name: "Manipur", label: "MANIPUR", x: 484, y: 273, size: 5.5 },
+  { name: "Mizoram", label: "MIZORAM", x: 464, y: 300, size: 5.5 },
+  { name: "Tripura", label: "TRIPURA", x: 442, y: 292, size: 5.5 },
+  { name: "Delhi", label: "DELHI", x: 175.6, y: 201.7, size: 5.5 },
+  { name: "Goa", label: "GOA", x: 120.9, y: 444.9, size: 5.5 }
 ];
 
 export function initIndiaMap(opts) {
@@ -90,7 +125,7 @@ export function initIndiaMap(opts) {
   const neighborLands = `
     <g class="map-neighbor-lands" pointer-events="none">
       <ellipse cx="254" cy="565" rx="13" ry="18" transform="rotate(15 254 565)" class="map-neighbor-land" />
-      <text x="254" y="598" class="map-neighbor-text">SRI LANKA</text>
+      <text x="254" y="588" class="map-neighbor-text">SRI LANKA</text>
     </g>
   `;
 
@@ -103,18 +138,20 @@ export function initIndiaMap(opts) {
     </g>
   `;
 
-  // 4. Prominent Island Territory Locator Tags (Andaman & Nicobar and Lakshadweep)
+  // 4. Prominent Island Territory Locator Tags (Offshore groups: Andaman & Nicobar and Lakshadweep)
   const islandTags = `
     <g class="map-islands-labels" role="group" aria-label="Union Territory Island Groups">
-      <g class="map-island-tag" data-state="Andaman & Nicobar" tabindex="0" role="button" aria-label="Andaman & Nicobar Islands, ${countByState ? (countByState.get('Andaman & Nicobar') || 0) : 0} destinations" style="cursor:pointer;">
-        <rect x="390" y="402" width="164" height="20" rx="6" class="map-island-badge-bg" />
-        <text x="472" y="416" text-anchor="middle" class="map-island-text">✦ ANDAMAN &amp; NICOBAR ✦</text>
-        <line x1="472" y1="422" x2="470" y2="435" class="map-island-line" />
+      <g class="map-island-tag" data-state="Andaman & Nicobar" tabindex="0" role="button" aria-label="Andaman &amp; Nicobar Islands, ${countByState ? (countByState.get('Andaman & Nicobar') || 0) : 0} destinations" style="cursor:pointer;">
+        <rect x="382" y="444" width="156" height="22" rx="6" class="map-island-badge-bg" />
+        <text x="460" y="458.5" text-anchor="middle" class="map-island-text">✦ ANDAMAN &amp; NICOBAR ✦</text>
+        <line x1="466" y1="466" x2="466" y2="475" class="map-island-line" />
+        <rect x="445" y="473" width="45" height="133" rx="8" class="map-archipelago-frame" />
       </g>
       <g class="map-island-tag" data-state="Lakshadweep" tabindex="0" role="button" aria-label="Lakshadweep Islands, ${countByState ? (countByState.get('Lakshadweep') || 0) : 0} destinations" style="cursor:pointer;">
-        <rect x="25" y="462" width="100" height="20" rx="6" class="map-island-badge-bg" />
-        <text x="75" y="476" text-anchor="middle" class="map-island-text">✦ LAKSHADWEEP ✦</text>
-        <line x1="88" y1="482" x2="96" y2="495" class="map-island-line" />
+        <rect x="25" y="492" width="100" height="20" rx="6" class="map-island-badge-bg" />
+        <text x="75" y="506" text-anchor="middle" class="map-island-text">✦ LAKSHADWEEP ✦</text>
+        <line x1="88" y1="512" x2="97" y2="520" class="map-island-line" />
+        <rect x="86" y="515" width="24" height="52" rx="6" class="map-archipelago-frame" />
       </g>
     </g>
   `;
@@ -132,9 +169,18 @@ export function initIndiaMap(opts) {
     return `<path class="${cls}" d="${st.path}" data-state="${esc(st.name)}" ${styleAttr}${attrs}><title>${esc(st.name)} (${count} destinations)</title></path>`;
   }).join('');
 
-  // 6. Compass Rose Indicator in top-right
+  // 6. State Names Typography Layer: Crisp, high-contrast labels on every state
+  const stateLabels = `
+    <g class="map-labels-layer" pointer-events="none" aria-hidden="true">
+      ${STATE_LABELS.map((lbl) => `
+        <text class="map-state-label" x="${lbl.x}" y="${lbl.y}" font-size="${lbl.size}" text-anchor="middle" dominant-baseline="central">${esc(lbl.label)}</text>
+      `).join('')}
+    </g>
+  `;
+
+  // 7. Compass Rose Indicator in top-right
   const compassRose = `
-    <g class="map-compass" transform="translate(485, 20)" pointer-events="none">
+    <g class="map-compass" transform="translate(480, 52)" pointer-events="none">
       <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4" stroke-dasharray="2 2" />
       <polygon points="20,6 23,20 20,18" fill="url(#compass-grad)" />
       <polygon points="20,6 17,20 20,18" fill="#B38628" />
@@ -148,12 +194,13 @@ export function initIndiaMap(opts) {
     </g>
   `;
 
-  // Assemble full clean SVG content without visual clutter
+  // Assemble full clean SVG content: states layer, state typography layer, locator tags, compass
   svgEl.setAttribute('viewBox', INDIA_MAP.viewBox);
   svgEl.setAttribute('role', 'group');
   svgEl.setAttribute('aria-label', 'Interactive Political Map of India — select any state to view its top destinations');
   svgEl.innerHTML = defs + neighborLands + waterLabels + islandTags +
                     `<g class="map-states-layer">${statePaths}</g>` +
+                    stateLabels +
                     compassRose;
 
   const host = svgEl.parentElement;
@@ -209,8 +256,8 @@ export function initIndiaMap(opts) {
 
   function activateState(name) {
     if (!name) return;
-    const allPaths = svgEl.querySelectorAll('.india-state');
-    allPaths.forEach((p) => {
+    const allTargets = svgEl.querySelectorAll('.india-state, .map-island-tag');
+    allTargets.forEach((p) => {
       const isTarget = p.getAttribute('data-state') === name;
       p.classList.toggle('is-active', isTarget);
     });

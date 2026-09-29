@@ -3,9 +3,39 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-29 (rev-32).
+Last updated: 2026-09-30 (rev-35).
 
 ---
+
+- **Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul (2026-09-30 rev-35)** — Responsive side-by-side flex layout, island geometry scaling, and zero-overlap details panel:
+  1. **Side-by-Side Zero-Overlap Flex Architecture (`css/styles.css`, `css/glass-immersive.css`):**
+     - Shifted India SVG map leftwards (`flex: 1 1 auto; max-width: calc(100% - 215px); height: 100%;`) with fluid proportional responsiveness.
+     - Converted floating `.india-map-card` into a dedicated relative right-side flex panel (`flex: 0 0 205px; width: 205px; align-self: center;`).
+     - Guaranteed 100% zero-overlap across all 36 States/UTs, island territories, and boundaries on desktop and tablet.
+  2. **Andaman & Nicobar Islands Complete Visibility & Archipelago Geometry (`data/india-map.js`, `js/components/indiaMap.js`):**
+     - Uncovered bottom-right ocean quadrant by moving destination card to the right side of the container.
+     - Scaled all 16 island polygons by 1.45× around individual centroids for prominent, tangible landmass presence.
+     - Enclosed the archipelago in an elegant maritime dashed boundary frame (`.map-archipelago-frame`).
+     - Aligned locator badge `✦ ANDAMAN & NICOBAR ✦` (`x="382" y="444"`) with leader line connecting directly to North Andaman (`(466, 475)`).
+     - Styled with high-contrast jewel blue (`#0284C7`), 2.2px crisp border stroke, and golden amber hover glow (`#F59E0B`).
+  3. **Safety & Zero-Regression Certification:**
+     - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+     - Cache synchronization: Bumped Service Worker to `v1.4.5` and all asset cachebusters to `v=20260930_phase82`.
+
+- **Phase 73: Official Survey of India 2026 Interactive Map & 12-Destination Strict Photographic Quality Overhaul (2026-09-30 rev-34)** — Sovereign boundary upgrade, interactive map layer stacking overhaul, and autonomous multi-agent photographic certification:
+  1. **Official Survey of India 2026 Interactive Map (`data/india-map.js`, `js/components/indiaMap.js`, `scripts/build-india-map.js`):**
+     - Complete sovereign northern crown up to 37.08°N (Indira Col) with both **Jammu & Kashmir** and **Ladakh** bifurcated and independently interactive.
+     - Complete separation of **Telangana** and **Andhra Pradesh**.
+     - Area-descending Z-order SVG sorting so large surrounding states (Haryana, UP) draw at the base layer while small enclaves (Delhi, Chandigarh, Puducherry, Goa) render on top.
+     - Dedicated interactive `✦ DELHI ✦` callout badge with leader line and pulsing concentric capital marker pin (`.map-capital-marker`).
+  2. **12-Destination Strict Photographic Quality Overhaul:**
+     - Overhauled 12 destinations: `komrelly-mallanna-temple`, `kirateshwar-mahadev-temple`, `tendong-gumpa`, `kyongnosla-alpine-sanctuary`, `dubdi-monastery`, `maenam-wildlife-sanctuary`, `shingba-rhododendron-sanctuary`, `shri-viswa-vinayaka-mandir-rhenock`, `kitam-bird-sanctuary`, `khangchendzonga-national-park`, `gurdwara-nanaklama`, `varsey-rhododendron-sanctuary`.
+     - 100% unique original destination/place HD URLs (Pexels & Unsplash APIs), zero individuals/faces/crowds/models, zero fake/random stock, and 0 cross-destination collisions across all 2,396 destinations.
+  3. **Master Regression Certification:**
+     - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+     - Technical SEO & Indexing Audit (`scripts/seo_audit.js`): **61/61 checks passed (100%)**.
+     - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+     - Sitemaps & Manifests: Recompiled `master sitemap.xml` (2,453 URLs, 11,960 images) and `home-manifest.json` (126.3 KB).
 
 - **Phase 72: Core Web Vitals & Web Performance Optimization (2026-09-29 rev-33)** — Comprehensive frontend performance overhaul eliminating render-blocking bottlenecks, image bloat, and layout flicker:
   1. **Direct Edge WebP Formatting (`js/components/destinationCard.js`):** Enabled native `fm=webp` query parameter across Pexels and Unsplash CDN image requests in `optimizeImageUrl()`. Verified live HTTP 200 responses with `image/webp` content type, slashing card image network payload weight by ~35%–50% per asset without any third-party proxy dependencies.

@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # ExploreDesh — Strict Data Quality Rules
 
 These rules are **mandatory** for every destination page. No exceptions.
@@ -273,4 +277,48 @@ Famous historical monuments, temples, forts, palaces, and geographic landmarks m
    - `seo.ogImage` must match `heroImage.src`.
    - Zero internal duplicate URLs between hero, gallery, and nearby place cards.
    - Zero cross-destination duplicate collisions across the 66k+ catalog index.
+
+---
+
+## Rule 18 — Strict Zero-Person & Zero-Fake/Random Stock Invariant (Added Phase 73)
+
+Every single destination and place image across ExploreDesh must strictly adhere to pristine architectural, landscape, and nature photography:
+
+1. **Strict Zero-Person Policy (No Exceptions)**:
+   - ❌ **Zero Individuals**: Absolutely no close-up portraits, selfies, faces, tourists, or posing models (men, women, boys, girls).
+   - ❌ **Zero Crowds & Mobs**: No dense tourist gatherings, market mobs, or pilgrim crowds obstructing monument façades, temple sanctums, or natural vistas.
+   - **Permitted**: Distant, incidental human silhouettes only if microscopic (< 2% of frame area) where the overwhelming subject is the monumental architecture or vast landscape.
+2. **Zero Fake or Random Stock**:
+   - ❌ **No Abstract or Random Filler**: Zero random chemistry cubes, macro feathers, isolated studio objects, clip art, or generic indoor office/hotel lobbies.
+   - ❌ **No Geographic Misattribution**: Every photo must be geographically and culturally authentic to that exact destination and its surrounding district/state.
+3. **100% Unique Destination and Place-Related HD URLs**:
+   - Sourced exclusively via **Pexels & Unsplash APIs** with high-resolution parameters (`&w=1920` or `&auto=format&fit=crop&w=1920&q=85`).
+   - Every nearby place card (`topPlaces[]`) must have a distinct card cover + 3 unique place photos depicting that specific place.
+4. **Zero Repo-Wide Collisions**:
+   - Every replacement URL must be verified against the master repository catalog index of 66,500+ URLs to guarantee 0 cross-destination duplicate collisions.
+
+---
+
+## Rule 19 — Official Survey of India 2026 Interactive Map & Spatial Topology Invariants (Added Phase 73)
+
+The interactive political map of India (`data/india-map.js`, `js/components/indiaMap.js`, `scripts/build-india-map.js`) must strictly represent the sovereign boundaries and spatial topology of the Republic of India:
+
+1. **Official Survey of India 2026 Northern Crown**:
+   - Must extend to the northernmost sovereign boundary ($37.08^\circ\text{N}$, Indira Col).
+   - Pre-2019 de facto Line of Control (LoC) cuts at $34^\circ\text{N}$ are strictly prohibited.
+   - Both **Jammu & Kashmir** and **Ladakh** must be bifurcated and rendered with independent polygons and interactive states.
+2. **Complete 36 States & Union Territories**:
+   - All 28 States and 8 Union Territories must be present, distinct, and navigable.
+   - **Telangana** and **Andhra Pradesh** must be completely separated.
+   - Island territories (**Andaman & Nicobar Islands**, **Lakshadweep**) must feature dedicated locator tags with pointer lines.
+3. **Descending Area Z-Order Stacking (Painter's Algorithm Invariant)**:
+   - In SVG rendering, elements are drawn in document order.
+   - SVG paths in `data/india-map.js` must be ordered by bounding-box area descending.
+   - Large states (Rajasthan, MP, Maharashtra, UP, Haryana) are drawn at the base layer.
+   - Small enclaves (**Delhi**, **Chandigarh**, **Puducherry**, **Goa**) must be drawn on the topmost layer to prevent large surrounding polygons from swallowing or obscuring them.
+4. **National Capital Territory (Delhi) Prominence**:
+   - Delhi must feature a dedicated interactive callout badge (`✦ DELHI ✦`) with a pointer leader line anchored to its coordinates.
+   - Delhi must feature a glowing concentric capital marker pin (`.map-capital-marker`) to guarantee immediate mouse/touch accessibility.
+   - Hovering or clicking either the badge, marker pin, or polygon must immediately activate Delhi and update `.india-map-card`.
+
 

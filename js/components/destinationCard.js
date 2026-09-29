@@ -25,7 +25,17 @@ export function cardImg(d) {
     if (val.src && typeof val.src.src === 'string') return val.src.src;
     return '';
   }
-  return resolve(d.heroImage) || resolve(d.image) || '';
+  const raw = resolve(d.heroImage) || resolve(d.image) || '';
+  if (raw && (raw.includes('wikimedia.org') || raw.includes('utm_'))) {
+    try {
+      const u = new URL(raw);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(p => u.searchParams.delete(p));
+      return u.searchParams.toString() ? u.toString() : (u.origin + u.pathname);
+    } catch (_) {
+      return raw.split('?')[0];
+    }
+  }
+  return raw;
 }
 
 export function optimizeImageUrl(url, width = 800) {
@@ -38,36 +48,36 @@ export function optimizeImageUrl(url, width = 800) {
       if (inner) return optimizeImageUrl(decodeURIComponent(inner), width);
     } catch (_) {}
   }
-  // 1. Wikimedia Commons: Optimize raw uncompressed DSLR/phone uploads via global Cloudflare edge WebP resizing
+  // 1. Wikimedia Commons: Always serve directly from Wikimedia's global CDN.
+  // Never route through third-party proxies (wsrv.nl) that 404, timeout, or get rate-limited.
   if (url.includes('upload.wikimedia.org/') || url.includes('commons.wikimedia.org/')) {
-    const targetW = Math.min(width, 1200);
-    return 'https://wsrv.nl/?url=' + encodeURIComponent(url) + '&w=' + targetW + '&output=webp&q=75';
+    try {
+      const u = new URL(url);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(p => u.searchParams.delete(p));
+      return u.searchParams.toString() ? u.toString() : (u.origin + u.pathname);
+    } catch (_) {
+      return url.split('?')[0];
+    }
   }
-  // 3. Pexels photo: strip dpr & extra height, compress & set clean target width + WebP
+  // 2. Pexels photo: Use Pexels native CDN params (auto=compress&cs=tinysrgb&w=...)
   if (url.includes('images.pexels.com/photos/')) {
     try {
       const u = new URL(url);
-      u.searchParams.delete('dpr');
-      u.searchParams.delete('h');
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
-      u.searchParams.set('fm', 'webp');
-      u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
+      u.searchParams.set('w', String(Math.min(width, 2560)));
       return u.toString();
     } catch (_) {
       return url;
     }
   }
-  // 4. Unsplash photo: strip dpr & extra height, compress & set clean target width + WebP
+  // 3. Unsplash photo: Use Unsplash native CDN params (auto=format&w=...)
   if (url.includes('images.unsplash.com/')) {
     try {
       const u = new URL(url);
-      u.searchParams.delete('dpr');
-      u.searchParams.delete('h');
       u.searchParams.set('auto', 'format');
-      u.searchParams.set('fm', 'webp');
-      u.searchParams.set('q', '75');
-      u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
+      u.searchParams.set('w', String(Math.min(width, 2560)));
+      if (!u.searchParams.has('q')) u.searchParams.set('q', '80');
       return u.toString();
     } catch (_) {
       return url;
@@ -85,12 +95,13 @@ export function cardThumb(d, width = 600) {
  * "Best in <month>" grid. Image with amber ★ rating badge top-left, gradient
  * overlay bottom carrying name + "Best Time" green pill + ₹price chip.
  */
-export function trendCardHTML(d) {
+export function trendCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
   const image = cardThumb(d, 600);
+  const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" ' + loadingAttr + ' decoding="async" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
@@ -108,7 +119,7 @@ export function trendCardHTML(d) {
     '</a>';
 }
 
-/** Standard grid card. opts: { delay (s), typeIcon, variant: 'trending' | 'explore' } */
+/** Standard grid card. opts: { delay (s), typeIcon, variant: 'trending' | 'explore', priority: boolean } */
 export function destCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
   const image = cardThumb(d, 600);
@@ -124,12 +135,13 @@ export function destCardHTML(d, opts = {}) {
   }).join('');
 
   const distText = (d.distanceFromDelhi || 0) + ' km from Delhi';
+  const loadingAttr = opts.priority ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
 
   return '' +
     '<article class="dest-card-item">' +
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" ' + loadingAttr + ' decoding="async" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     '<div class="dest-card-badges-top">' +
@@ -166,13 +178,14 @@ export function destCardHTML(d, opts = {}) {
 }
 
 /** Large 16/9 hero card (home "Best Hill Stations"). */
-export function heroCardHTML(d) {
+export function heroCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
   const image = cardThumb(d, 800);
+  const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block group">' +
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" ' + loadingAttr + ' decoding="async" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     (d.badge ? '<div class="absolute top-3 left-3"><span class="dest-badge-featured">' + esc(d.badge) + '</span></div>' : '') +
     '</div>' +
@@ -200,13 +213,14 @@ export function heroCardHTML(d) {
 }
 
 /** Small square card (home "Explore More" grid). */
-export function miniCardHTML(d) {
+export function miniCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
   const image = cardThumb(d, 400);
+  const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="group block">' +
     '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" ' + loadingAttr + ' decoding="async" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +

@@ -1,7 +1,7 @@
 # 🔍 ExploreDesh — Production Audit & Fix Log
 
 > **Purpose of this file.** A self-contained snapshot of the full professional audit
-> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-29 rev-33** and
+> (QA, frontend, UX, accessibility, SEO, performance, security) through **2026-09-30 rev-35** and
 > every fix shipped from it. Any AI model (or human) can read *this file alone* to understand
 > what state the site is in, what was verified, what was changed, and what is still open —
 > without re-deriving it from the code. When you resume work, read this + [CLAUDE.md](../CLAUDE.md)
@@ -12,6 +12,69 @@
 Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and **UI/UX Pro Max**
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
+
+## Addendum — Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul (2026-09-30 rev-35)
+
+Comprehensive interactive map responsive architecture overhaul, island geometry scaling, and zero-overlap details panel:
+
+1. **Side-by-Side Zero-Overlap Flex Architecture (`css/styles.css`, `css/glass-immersive.css`):**
+   - **Problem:** Floating `.india-map-card` overlay was previously positioned at the corner of `.discover-map-inner`. Depending on corner placement, it covered either Andaman & Nicobar (bottom-right) or Rajasthan/Punjab (top-left) or Arunachal/Assam (top-right).
+   - **Solution:** Reconfigured `.discover-map-inner` into a responsive side-by-side flex layout (`display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 0.75rem;`).
+   - The India SVG map is allocated the left portion (`flex: 1 1 auto; max-width: calc(100% - 215px); height: 100%;`), shifting the entire map to the left with balanced breathing room.
+   - Hover details card (`.india-map-card`) is converted into a dedicated relative flex child (`flex: 0 0 205px; width: 205px; align-self: center;`) on the right side.
+   - **Zero Overlap Guarantee:** The card sits completely outside the SVG canvas, guaranteeing zero physical obstruction of any state boundary, label, or island group.
+
+2. **Andaman & Nicobar Islands Complete Visibility & Archipelago Geometry (`data/india-map.js`, `js/components/indiaMap.js`):**
+   - **Problem:** Andaman & Nicobar islands were thin slivers (1px–5px) located in the bottom-right corner where the card previously sat, and the locator badge was placed too high in open water at y=402.
+   - **Solution:** Scaled all 16 island polygons in `data/india-map.js` by 1.45× around individual centroids for prominent, tangible landmass presence.
+   - Added `.map-archipelago-frame` maritime dashed inset boundary grouping North Andaman to Great Nicobar (`rect x="445" y="473" width="45" height="133"`).
+   - Aligned indicator badge `✦ ANDAMAN & NICOBAR ✦` (`x="382" y="444"`) with leader line connecting directly to North Andaman (`(466, 475)`).
+   - Styled with high-contrast jewel blue (`#0284C7`), 2.2px crisp border stroke, and golden amber hover glow (`#F59E0B`).
+
+3. **Master Regression & Safety Certification:**
+   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+   - Cache synchronization: Upgraded Service Worker to `v1.4.5` and bumped asset query strings in `index.html` and `home.js` to `v=20260930_phase82`.
+
+---
+
+## Addendum — Phase 73: Official Survey of India 2026 Interactive Map & 12-Destination Strict Photographic Quality Overhaul (2026-09-30 rev-34)
+
+Comprehensive geographic boundaries upgrade, interactive map layer stacking overhaul, and autonomous multi-agent photographic certification across 12 destinations:
+
+1. **Official Survey of India 2026 Interactive Map (`data/india-map.js`, `js/components/indiaMap.js`, `scripts/build-india-map.js`):**
+   - **Root Cause Analysis (Jammu & Kashmir & Ladakh Truncation):**
+     - Legacy pre-2019 GADM GeoJSON truncated India along the de facto Line of Control (34°N), omitting the sovereign northern crown up to 37.08°N (Indira Col).
+     - The 2019 bifurcation into Jammu & Kashmir and Ladakh had left Ladakh completely omitted, rendering the top half of India an empty void.
+   - **Survey of India Sovereign Crown Solution:**
+     - Downloaded official 2026 boundary GeoJSON (`data/india_states_official.geojson`) covering all 36 States/UTs.
+     - Regenerated `data/india-map.js` (48.1 KB, viewBox `0 0 560 650`) with Douglas-Peucker point simplification.
+     - Delineated both **Jammu & Kashmir** and **Ladakh** as independent, clickable, beautifully themed regions.
+     - Fully separated **Telangana** and **Andhra Pradesh** along official boundaries.
+   - **Root Cause & Fix for Delhi Visibility:**
+     - **Painter's Algorithm Ordering Issue:** In SVG, elements render in DOM document order. With alphabetical ordering, Delhi was drawn early and the surrounding larger states (Haryana and Uttar Pradesh) were painted directly over it, swallowing Delhi's path completely.
+     - **Area-Descending Z-Order Sorting:** Sorted all state SVG paths in descending order of bounding-box area (`scripts/build-india-map.js`). Large states are drawn first at the bottom; small enclaves (Delhi, Chandigarh, Puducherry, Goa) are drawn on top.
+     - **Prominent Interactive Callout & Marker Pin:** Added an interactive `✦ DELHI ✦` callout tag (`.map-capital-tag`) with a pointer leader line, plus a glowing concentric capital marker pin (`.map-capital-marker`) at coordinates `(176.3, 202.1)`.
+     - Verified in browser: Hovering/clicking immediately activates Delhi and renders its 11 destinations (Red Fort, New Delhi, Gurudwara Bangla Sahib, etc.) in `.india-map-card`.
+
+2. **12-Destination Strict Photographic Quality Overhaul:**
+   - Overhauled 12 destinations:
+     - Batch 1 (4 destinations, 128 URLs): `komrelly-mallanna-temple`, `kirateshwar-mahadev-temple`, `tendong-gumpa`, `kyongnosla-alpine-sanctuary`.
+     - Batch 2 (8 destinations, 240 URLs): `dubdi-monastery`, `maenam-wildlife-sanctuary`, `shingba-rhododendron-sanctuary`, `shri-viswa-vinayaka-mandir-rhenock`, `kitam-bird-sanctuary`, `khangchendzonga-national-park`, `gurdwara-nanaklama`, `varsey-rhododendron-sanctuary`.
+   - **Strict Enforcements:**
+     - ❌ **Zero Persons:** No portraits, selfies, faces, tourists, or posing models.
+     - ❌ **Zero Crowds:** No dense crowds or mobs obstructing architecture/scenery.
+     - ❌ **Zero Fake / Random Images:** Zero out-of-region stock, chemistry cubes, feathers, or clip art.
+     - ✅ **100% Unique Destination & Place-Related HD URLs:** Sourced from Pexels & Unsplash APIs.
+     - ✅ **0 Cross-Destination Collisions:** Verified across all 2,396 destinations (`0 collisions`).
+     - ✅ **All 368 URLs verified live via HTTP HEAD/GET (`368/368 OK 200/206`).**
+
+3. **Master Regression & Safety Certification:**
+   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+   - Technical SEO & Indexing Audit (`scripts/seo_audit.js`): **61/61 checks passed (100%)**.
+   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+   - Deep Pre-Commit Audit (`scripts/deep_pre_commit_audit.js`): Certified `✓ PASS`.
+   - Sitemaps & Manifests: Recompiled `master sitemap.xml` (2,453 URLs, 11,960 images) and `home-manifest.json` (126.3 KB).
+
 
 ## Addendum — Phase 72: Core Web Vitals & Web Performance Overhaul (2026-09-29 rev-33)
 

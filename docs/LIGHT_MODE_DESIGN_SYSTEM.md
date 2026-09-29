@@ -145,7 +145,8 @@
 - **Safe Area Inset:** Enforced `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` on body container to prevent bottom navigation occlusion of footer links and action buttons.
 
 ### 4.8 Interactive India Map Mobile Architecture (`.discover-map-inner` & `.india-map-card`)
-- **Container Stack:** Collapses from desktop horizontal row (`flex-direction: row`, `height: 500px`) to fluid vertical column (`flex-direction: column`, `height: auto`, `padding: 1rem 0.85rem`).
+- **Desktop Side-by-Side Architecture:** Horizontal flex row (`display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 0.75rem;`, `height: 500px`) allocating the left portion to the SVG map (`max-width: calc(100% - 215px)`) and the right portion to the dedicated relative details panel (`flex: 0 0 205px; width: 205px;`), guaranteeing zero visual overlap across all 36 States/UTs and island territories.
+- **Mobile Collapsible Stack:** Transitions on mobile (`<= 768px`) to fluid vertical column (`flex-direction: column`, `height: auto`, `padding: 1rem 0.85rem`).
 - **Map SVG:** Scales fluidly (`width: 100%`, `max-height: 380px`), preserving regional pastel fills, dark blue ocean labels, and touch target accessibility for all 36 states/UTs including Andaman & Nicobar and Lakshadweep.
 - **State Details Card (`.india-map-card`):** Transitions from desktop floating absolute position to full-width relative card (`width: 100%`, `inset: auto`) cleanly positioned below the SVG map. Eliminates map obscuration, Southern state overlap, and bottom nav occlusion.
 - **Surface & Trim:** Milk glass (`rgba(255, 255, 255, 0.96)`), 3px amber top crest (`border-top: 3px solid #D97706`), crisp Slate-900 titles, and high-contrast links.

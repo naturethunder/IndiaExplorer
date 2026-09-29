@@ -514,7 +514,7 @@ if (!isFullIndexLoaded) {
 
     railEl.style.opacity = '0.4';
     setTimeout(() => {
-      railEl.innerHTML = picks.map((d) => trendCardHTML(d)).join('');
+      railEl.innerHTML = picks.map((d, i) => trendCardHTML(d, { priority: i < 3 })).join('');
       railEl.style.opacity = '1';
     }, 120);
 
@@ -530,7 +530,7 @@ if (!isFullIndexLoaded) {
   const svgEl = document.getElementById('india-map');
   if (!svgEl) return;
   try {
-    const { initIndiaMap } = await import('../components/indiaMap.js?v=20260919_4');
+    const { initIndiaMap } = await import('../components/indiaMap.js?v=20260930_phase80');
     const countByState = new Map();
     const destsByState = new Map();
     summaries.forEach((d) => {
@@ -573,7 +573,7 @@ function shuffleArray(arr) {
   });
 
   const selected = shuffleArray(pool.length >= 10 ? pool : summaries.filter(d => d.heroImage && d.heroImage.src)).slice(0, 10);
-  row.innerHTML = selected.map(function (d) { return trendCardHTML(d); }).join('');
+  row.innerHTML = selected.map(function (d, i) { return trendCardHTML(d, { priority: i < 3 }); }).join('');
   wireCarousel(row, document.getElementById('trend-prev'), document.getElementById('trend-next'));
 })();
 
@@ -642,7 +642,7 @@ function shuffleArray(arr) {
   });
 
   const selectedHills = shuffleArray(hillsPool.length >= 4 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 4);
-  el.innerHTML = selectedHills.map(function (d) { return heroCardHTML(d); }).join('');
+  el.innerHTML = selectedHills.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
 })();
 
 // ─── Popular grid (large cards - Dynamic Reshuffle on Refresh) ─
@@ -657,7 +657,7 @@ function shuffleArray(arr) {
   });
 
   const selectedPopular = shuffleArray(popularPool.length >= 4 ? popularPool : summaries).slice(0, 4);
-  el.innerHTML = selectedPopular.map(function (d) { return heroCardHTML(d); }).join('');
+  el.innerHTML = selectedPopular.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
 })();
 
 // ─── Explore grid (small cards - Dynamic Reshuffle on Refresh) ─
@@ -667,7 +667,7 @@ function shuffleArray(arr) {
 
   const explorePool = summaries.filter(function (d) { return d.heroImage && d.heroImage.src; });
   const selectedExplore = shuffleArray(explorePool).slice(0, 6);
-  el.innerHTML = selectedExplore.map(function (d) { return miniCardHTML(d); }).join('');
+  el.innerHTML = selectedExplore.map(function (d, i) { return miniCardHTML(d, { priority: i < 3 }); }).join('');
 })();
 
 // Grids above are populated synchronously right after the index fetch resolves;
