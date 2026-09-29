@@ -49,7 +49,7 @@ ExploreDesh is an India travel discovery platform.
 
 Current project characteristics include approximately:
 
-- 2,393+ destinations
+- 2,396+ destinations
 - State pages
 - Destination pages
 - Place/attraction pages
@@ -178,7 +178,7 @@ Do not invent it.
 
 ## RULE D — DO NOT MASS-REWRITE DESTINATIONS
 
-There are approximately 2,393 destinations.
+There are approximately 2,396 destinations.
 
 Do NOT rewrite all pages simply because a common template exists.
 
@@ -1280,7 +1280,7 @@ Create automated regression checks for:
 Example:
 
 BEFORE:
-2,393 indexable destinations
+2,396 indexable destinations
 
 AFTER:
 1,742
@@ -1799,11 +1799,11 @@ long-term organic growth.
 All 18 steps of Section 55 have been executed with 100% zero-defect verification:
 
 1. **Full Codebase Audit Completed:**
-   - 2,393 destinations in database (`data/destinations/index.json`)
-   - 2,393 individual destination JSON files
-   - 2,450 total sitemapped URLs across 6 XML sitemaps
-   - 11,935 total sitemapped images with title and caption metadata
-   - 2,393 pre-rendered redirect stubs in `stubs/*.html`
+   - 2,396 destinations in database (`data/destinations/index.json`)
+   - 2,396 individual destination JSON files
+   - 2,453 total sitemapped URLs across 6 XML sitemaps
+   - 11,960 total sitemapped images with title and caption metadata
+   - 2,396 pre-rendered redirect stubs in `stubs/*.html`
    - 0 orphan destinations, 0 broken links, 0 duplicate slugs or titles
 
 2. **Live Google Search Console Verification (Sep 23, 2026):**
@@ -1823,4 +1823,24 @@ All 18 steps of Section 55 have been executed with 100% zero-defect verification
    - [GOOGLE_INDEXING_READINESS.md](file:///d:/latest%20live/ExploreDesh/GOOGLE_INDEXING_READINESS.md) — Readiness scorecard & GSC guidance
    - [SEO_CHANGELOG.md](file:///d:/latest%20live/ExploreDesh/SEO_CHANGELOG.md) — Modification log and risk assessments
    - [SEO_FINAL_REPORT.md](file:///d:/latest%20live/ExploreDesh/SEO_FINAL_REPORT.md) — Master Technical SEO Audit Report
+
+
+# ============================================================
+# 57. PHASE 72 CORE WEB VITALS & WEB PERFORMANCE OVERHAUL (2026-09-29)
+# ============================================================
+
+1. **Core Web Vitals & Render-Blocking Optimization:**
+   - **Self-Hosted GSAP & ScrollTrigger:** Moved libraries into local origin (`/js/vendor/`), eliminating 3rd-party DNS/TLS handshake to `cdnjs.cloudflare.com`.
+   - **Per-Page Typography Pruning:** Consolidated Google Fonts requests on all templates down to the 3–5 families actually rendered, slashing font payload by >50%.
+   - **Strict On-Demand AI Index:** Decoupled `data/search-index.json` (6.99 MB) from initial load on `ai-finder.html`; loads in background only on user interaction.
+   - **Direct Edge WebP Formatting:** Added native `fm=webp` to Pexels and Unsplash in `optimizeImageUrl()`, reducing card image payloads by ~35%–50%.
+   - **Zero-Flicker Skeleton Cards:** Pre-rendered 6 shimmer skeleton cards in `destinations.html` `#grid` for instant initial layout paint.
+   - **LCP Hero Preload Sync:** Aligned `<link rel="preload">` and `#heroBg` inline style to identical `w=1280` URL on `index.html`.
+
+2. **Master Quality & Regression Verification:**
+   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (100/100)**.
+   - Technical SEO Audit (`scripts/seo_audit.js`): **61/61 CHECKS PASSED (100%)**.
+   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 ISSUES DETECTED**.
+   - Deep Pre-Commit Audit (`scripts/deep_pre_commit_audit.js`): Certified `✓ PASS`.
+   - All 19 critical platform resources respond with `HTTP 200` in ~24ms.
 

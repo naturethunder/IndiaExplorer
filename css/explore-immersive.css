@@ -617,8 +617,10 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,6 +634,12 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
+}
+
+.category-scroll-arrow::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
 }
 
 .category-scroll-arrow:hover {

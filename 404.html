@@ -22,12 +22,23 @@
     })();
   </script>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20260914_6" />
+  <!-- CDN & Resource Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Bodoni Moda, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/styles.css?v=20260922_1" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20260922_1" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20260922_1" />
 </head>
 
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950">
+
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Immersive ambient background glow -->
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">

@@ -34,11 +34,11 @@ This document classifies every discovered URL pattern on ExploreDesh into one of
 | `https://exploredesh.com/ai-finder.html` | AI Trip Finder | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/ai-finder.html` |
 | `https://exploredesh.com/privacy.html` | Legal & Privacy | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/privacy.html` |
 | `https://exploredesh.com/terms.html` | Legal & Terms | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/terms.html` |
-| `https://exploredesh.com/destination.html?slug=<slug>` | Destination Guide (2,393 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-destinations-*.xml`) | Self-referencing `?slug=<slug>` |
+| `https://exploredesh.com/destination.html?slug=<slug>` | Destination Guide (2,396 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-destinations-*.xml`) | Self-referencing `?slug=<slug>` |
 | `https://exploredesh.com/destinations.html?state=<State>` | State Hub (36 States/UTs >= 3 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?state=<State>` |
 | `https://exploredesh.com/destinations.html?type=<category>` | Category Landings (14 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?type=<category>` |
 | `https://exploredesh.com/destinations.html?month=<1-12>` | Monthly Travel Guides (12 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?month=<1-12>` |
-| `https://exploredesh.com/stubs/<slug>.html` | Static Pre-rendered Fallback (2,393 items) | 200 OK | **DISALLOW / NOINDEX** | `noindex, follow` (via header) + Disallow in `robots.txt` | No | `https://exploredesh.com/destination.html?slug=<slug>` |
+| `https://exploredesh.com/stubs/<slug>.html` | Static Pre-rendered Fallback (2,396 items) | 200 OK | **DISALLOW / NOINDEX** | `noindex, follow` (via header) + Disallow in `robots.txt` | No | `https://exploredesh.com/destination.html?slug=<slug>` |
 | `https://exploredesh.com/destinations.html?search=<query>` | Internal Site Search | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations.html` |
 | `https://exploredesh.com/destinations.html?tier=<tier>&state=...` | Multi-Faceted Combinations | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations.html` |
 | `https://exploredesh.com/data/destinations/<slug>.json` | Raw JSON Endpoints | 200 OK | **NOINDEX** | `X-Robots-Tag: noindex, nofollow` | No | None (API asset) |

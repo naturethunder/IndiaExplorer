@@ -5,9 +5,9 @@
 
 # ExploreDesh — Discover Incredible India
 
-> **Platform Status (2026-09-28 rev-31):** **2,396 destinations** (14,037 places, 10,439 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **70,500+ photos catalog-wide**. **Phase 70 Certified —** Unused JavaScript Files Removal & Dead Code Elimination (2.22 MB purged across 7 obsolete files; root `server.js` and `build-json-data.js` consolidated); **Phase 69 Performance Overhaul —** Cloudflare edge WebP dynamic image compression via `wsrv.nl` (reducing image weight by ~97.8%), Service Worker `v1.2.0` with Network-First dynamic JSON caching, zero-contention background loading, and catalogue batch optimization (PAGE_SIZE = 24); master regression guard 100% green (71/71 tests passed, Score: **100/100**).
+> **Platform Status (2026-09-29 rev-33):** **2,396 destinations** (14,037 places, 10,439 verified authentic stays across all 36 states & UTs). 100% zero-duplicate & landmark-verified photography with **70,500+ photos catalog-wide**. **Phase 72 Performance Overhaul —** Self-hosted GSAP & ScrollTrigger (`/js/vendor/`), per-page Google Fonts consolidation, strict on-demand lazy loading of the 6.99 MB AI search index, native WebP CDN delivery (`fm=webp`) across Pexels and Unsplash, and instant shimmering skeleton cards on `destinations.html`; **Phase 71 Certified —** Master Production Audit Suite, 697 Pixabay Session URLs Purged (101 files), Geographic Leak & Disaster Remediation (`siddhivinayak-temple-mumbai.json`), Gallery Count Invariant Enforcement (10 destinations), OpenGraph Synchronization (6 destinations), and Rishikesh Landmark Hero Restoration (`rishikesh.json`); **Phase 70 —** Unused JavaScript Files Removal & Dead Code Elimination (2.22 MB purged); master regression guard 100% green (71/71 tests passed, Score: **100/100**).
 
-> **Image Pipeline Status (2026-09-28):** **Phase 70 & 69 Certified —** 100% authentic, high-definition photography verified across all destinations with edge WebP dynamic optimization for fast low-latency loads; 100% live HTTP reachability, zero Pixabay session tokens, zero wrong-monument contaminations, zero broken thumbnails, zero internal duplicates between hero and places, zero cross-destination collisions across all 66,000+ catalog URLs. Total indexed images: **11,949 in Google Image Sitemaps**.
+> **Image Pipeline Status (2026-09-29):** **Phase 72 Certified —** 100% authentic, high-definition photography verified across all destinations with direct edge WebP dynamic optimization for fast low-latency loads; 100% live HTTP reachability, zero Pixabay session tokens (697 purged), zero wrong-monument contaminations, zero broken thumbnails, zero internal duplicates between hero and places, zero cross-destination collisions across all 66,000+ catalog URLs. Total indexed images: **11,960 in Google Image Sitemaps** across **2,453 indexed URLs**.
 
 A luxury India travel-discovery platform. Browse **2,396 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
@@ -31,12 +31,12 @@ node scripts/serve.js                        # → http://localhost:8080 (Start 
 node scripts/seo_audit.js                    # → Technical SEO & Indexing Audit (61 checks)
 node scripts/seo_regression_guard.js         # → Master SEO Regression Guard (71 checks)
 node scripts/final-repository-audit.js       # → Master Repository Health & Invariant Audit
-node scripts/audit/master_seo_audit.js       # → Deep Master SEO & Parity Audit (2,393 destinations)
+node scripts/audit/master_seo_audit.js       # → Deep Master SEO & Parity Audit (2,396 destinations)
 node scripts/audit/check_broken_links.js     # → Relative Internal Link Integrity Scan
 node scripts/ui_ux_qa_audit.js               # → UI/UX Pro Max automated QA audit across all HTML & CSS files
 node scripts/build-home-manifest.js          # → Recompile lightweight featured home manifest
 node scripts/build-sitemap.js                # → Regenerate 6 XML sitemaps with authentic file mtime lastmod
-node scripts/build-stubs.js                  # → Regenerate 2,393 fallback redirect stubs
+node scripts/build-stubs.js                  # → Regenerate 2,396 fallback redirect stubs
 ```
 
 Then open **http://localhost:8080/**. A server is required (not `file://`) because the site
@@ -53,7 +53,7 @@ The site follows a strict **template + data-layer** design so it scales to 2,000
 without adding a single HTML file:
 
 - **One reusable detail template.** `destination.html?slug=goa` renders *any* destination.
-  There is never one HTML file per destination — the 2,393 `<slug>.html` files in `stubs/` are redirect stubs kept for backwards compatibility.
+  There is never one HTML file per destination — the 2,396 `<slug>.html` files in `stubs/` are redirect stubs kept for backwards compatibility.
 - **A JSON data layer.** All content lives in `data/` as JSON. No content is hardcoded in
   markup or page scripts.
 - **A single data-access abstraction.** Every read goes through `js/data/api.js`
@@ -92,10 +92,10 @@ trip_planner/
 ├── index.html              # Home — GSAP hero parallax, category strip, interactive month showcase, SVG India map, featured grids
 ├── destinations.html       # Explore — Editorial hero with GSAP live counter, instant search, sticky category pills, dark filter rail
 ├── ai-finder.html          # ✨ AI Trip Finder — natural-language matcher, fully local & keyless
-├── destination.html        # ⭐ The ONE real detail page (all 2,393 render via ?slug=, GSAP parallax, weather, stays, routes & similar getaways)
+├── destination.html        # ⭐ The ONE real detail page (all 2,396 render via ?slug=, GSAP parallax, weather, stays, routes & similar getaways)
 ├── about / privacy / terms / contact.html   # Company pages (contact form, no backend)
 ├── stubs/
-│   └── <slug>.html  (×2393)  # Redirect stubs → destination.html?slug=<slug>
+│   └── <slug>.html  (×2396)  # Redirect stubs → destination.html?slug=<slug>
 │
 ├── css/
 │   ├── styles.css          # Custom component classes (.card, .btn, carousels, …)
@@ -106,8 +106,8 @@ trip_planner/
 │
 ├── data/                             # ← the data layer (JSON, no hardcoded content)
 │   ├── destinations/
-│   │   ├── index.json      # Light manifest: 2,393 summaries + filter meta (tiers/types/states/months)
-│   │   └── <slug>.json  (×2393)  # Full per-destination detail (schema below)
+│   │   ├── index.json      # Light manifest: 2,396 summaries + filter meta (tiers/types/states/months)
+│   │   └── <slug>.json  (×2396)  # Full per-destination detail (schema below)
 │   ├── search-index.json   # AI-finder haystack: precomputed place/hotel names + tiers + text
 │   ├── bulk/<state>.json   # Bulk-ingest output, merged into DESTINATIONS by build-json-data.js
 │   └── coord-overrides.json  # Manual lat/lng/state fixes for bad upstream coords
@@ -184,7 +184,7 @@ bestTime/lat/lng/image/features/tiers) plus `meta` (priceTiers, types, states, m
 ```bash
 node scripts/build-json-data.js   # rebuild data/ from js/data*.js + bulk + coord-overrides (+ index + search-index)
 node scripts/build-css.js         # rebuild css/tailwind.css (run after adding utility classes)
-node scripts/build-stubs.js       # rebuild the 2,393 redirect stubs
+node scripts/build-stubs.js       # rebuild the 2,396 redirect stubs
 ```
 
 `build-css.js` scans every page + `js/` module for utility classes and emits **only those**

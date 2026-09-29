@@ -27,18 +27,36 @@ injectJsonLd(breadcrumbJsonLd([
   { name: 'AI Trip Finder', path: 'ai-finder.html' },
 ]));
 
-const [idx, searchIdx] = await Promise.all([fetchIndex(), fetchSearchIndex()]);
+const idx = await fetchIndex();
 const SUMMARIES = idx.destinations;
 const { types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
-const searchEntries = Array.isArray(searchIdx) ? searchIdx : (searchIdx && searchIdx.entries ? searchIdx.entries : []);
-const SEARCH = new Map(searchEntries.map((e) => [e.slug, e]));
 const bySlug = new Map(SUMMARIES.map((d) => [d.slug, d]));
+
+let SEARCH = null;
+let searchIndexPromise = null;
+
+function ensureSearchIndex() {
+  if (searchIndexPromise) return searchIndexPromise;
+  searchIndexPromise = fetchSearchIndex().then((searchIdx) => {
+    const searchEntries = Array.isArray(searchIdx) ? searchIdx : (searchIdx && searchIdx.entries ? searchIdx.entries : []);
+    SEARCH = new Map(searchEntries.map((e) => [e.slug, e]));
+    return SEARCH;
+  }).catch((err) => {
+    if (window.console) console.warn('[ai-finder] search index load error:', err);
+    SEARCH = new Map();
+    return SEARCH;
+  });
+  return searchIndexPromise;
+}
 
 let currentUserCoords = null;
 
 function monthNameOf(n) { const m = MONTHS.find((x) => x.num === n); return m ? m.name : ''; }
 function inList(v, arr) { return arr.indexOf(v) >= 0; }
-function entryOf(d) { return SEARCH.get(d.slug) || { placeNames: [], hotelNames: [], tiers: [], hotelMinPrices: [], hay: '' }; }
+function entryOf(d) {
+  if (!SEARCH) return { placeNames: [], hotelNames: [], tiers: [], hotelMinPrices: [], hay: '' };
+  return SEARCH.get(d.slug) || { placeNames: [], hotelNames: [], tiers: [], hotelMinPrices: [], hay: '' };
+}
 
 // ─── Vocabulary ─────────────────────────────────────────
 const TYPE_KEYWORDS = {
@@ -599,6 +617,9 @@ function generateItineraryHTML(dest, days, userCoords) {
 }
 
 async function run(raw, userCoords) {
+  if (!SEARCH) {
+    await ensureSearchIndex();
+  }
   const p = parsePrompt(raw);
   const destIntent = p.types.length || p.months.length || p.maxPrice != null || p.budget || p.luxury ||
     p.states.length || p.directions.length || p.near || p.nearDelhi || p.vibes.length || p.names.length ||
@@ -889,11 +910,20 @@ async function doSearch(text, skipUrlSync = false) {
 
 // ─── Wire UI ────────────────────────────────────────────
 const promptEl = document.getElementById('prompt');
-document.getElementById('findBtn').addEventListener('click', function () { doSearch(promptEl.value); });
+const findBtn = document.getElementById('findBtn');
+
+// Prefetch search-index.json on first user intent (hover, touch, focus, or typing)
+promptEl.addEventListener('focus', ensureSearchIndex, { once: true });
+promptEl.addEventListener('input', ensureSearchIndex, { once: true });
+promptEl.addEventListener('pointerenter', ensureSearchIndex, { once: true });
+if (findBtn) findBtn.addEventListener('pointerenter', ensureSearchIndex, { once: true });
+
+findBtn.addEventListener('click', function () { doSearch(promptEl.value); });
 promptEl.addEventListener('keydown', function (e) {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); doSearch(promptEl.value); }
 });
 Array.prototype.forEach.call(document.querySelectorAll('.ex-chip'), function (b) {
+  b.addEventListener('pointerenter', ensureSearchIndex, { once: true });
   b.addEventListener('click', function () { promptEl.value = b.getAttribute('data-ex'); doSearch(promptEl.value); });
 });
 document.getElementById('nearMeBtn').addEventListener('click', function () {
@@ -910,4 +940,8 @@ window.addEventListener('popstate', function () {
 
 // Deep link: ai-finder.html?q=...
 const q = new URLSearchParams(location.search).get('q');
-if (q) { promptEl.value = q; doSearch(q, true); }
+if (q) {
+  ensureSearchIndex();
+  promptEl.value = q;
+  doSearch(q, true);
+}

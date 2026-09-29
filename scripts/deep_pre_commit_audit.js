@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DEST_DIR = path.join(__dirname, '..', 'data', 'destinations');
-const files = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json'));
+const files = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json' && f !== 'home-manifest.json');
 
 console.log(`Auditing all ${files.length} destination JSON files...`);
 

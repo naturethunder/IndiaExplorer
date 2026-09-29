@@ -23,8 +23,8 @@ scripts/bulk/cache/
 # Image cache database & reports
 data/*.sqlite
 data/*.db
-reports/comprehensive-image-quality-audit.json
-reports/duplicate-images-full-audit.json
+reports/*.json
+reports/images/
 
 # Scratch directory
 scratch/

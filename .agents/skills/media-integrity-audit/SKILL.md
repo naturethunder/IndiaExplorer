@@ -1,11 +1,11 @@
 ---
 name: media-integrity-audit
-description: "Repository Media, Photography Quality, and Destination Invariant Audit skill for ExploreDesh. Audits 2,393 destinations and 66,000+ photo URLs across strict dataset invariants: exactly 5 HD gallery images, primary hero synchronization (heroImage.src === gallery[0].src), 3 distinct photos per nearby place, zero internal duplicate URLs, zero cross-destination duplicate collisions across the 66k+ repository catalog, zero Wikimedia hotlinks, zero Pixabay session URLs, zero placeholder domains, and live HTTP 200 reachability. Run whenever verifying image quality, auditing batches, or fixing photo defects."
+description: "Repository Media, Photography Quality, and Destination Invariant Audit skill for ExploreDesh. Audits 2,396 destinations and 70,500+ photo URLs across strict dataset invariants: exactly 5 HD gallery images, primary hero synchronization (heroImage.src === gallery[0].src), 3 distinct photos per nearby place, zero internal duplicate URLs, zero cross-destination duplicate collisions across the 70k+ repository catalog, zero Pixabay session URLs, zero placeholder domains, and live HTTP 200 reachability. Run whenever verifying image quality, auditing batches, or fixing photo defects."
 ---
 
 # Media & Destination Integrity Audit Skill (`/media-integrity-audit`)
 
-This skill audits ExploreDesh's media catalog across all 2,393 destinations to enforce photography standards, eliminate duplicate URLs, and verify visual invariants.
+This skill audits ExploreDesh's media catalog across all 2,396 destinations to enforce photography standards, eliminate duplicate URLs, and verify visual invariants.
 
 ## When to Run This Skill
 
@@ -19,7 +19,7 @@ This skill audits ExploreDesh's media catalog across all 2,393 destinations to e
 ## Automated Execution Commands
 
 ### 1. Repository-Wide Integrity Audit
-Audits all 2,393 destination JSON files for gallery length, hero synchronization, place photos, internal duplicates, and Taj Mahal cross-destination contamination:
+Audits all 2,396 destination JSON files for gallery length, hero synchronization, place photos, internal duplicates, and Taj Mahal cross-destination contamination:
 
 ```bash
 node scripts/final-repository-audit.js
@@ -33,7 +33,7 @@ node scripts/images/audit-full-strict.js
 ```
 
 ### 3. Cross-Destination Collision Scanner
-Scans the 66,000+ URL repository index to pinpoint any image reused across multiple destinations:
+Scans the 70,500+ URL repository index to pinpoint any image reused across multiple destinations:
 
 ```bash
 node scripts/images/cross-destination-audit.js

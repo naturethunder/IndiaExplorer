@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary
 
-This report delivers the comprehensive execution results of the **Master SEO Engineering System** for ExploreDesh.com. The initiative successfully elevated the platform into an enterprise-grade, crawlable, indexable, trustworthy, and ultra-fast India travel discovery ecosystem across all **2,393 destinations**, 52 regional hubs, and core landing pages.
+This report delivers the comprehensive execution results of the **Master SEO Engineering System** for ExploreDesh.com. The initiative successfully elevated the platform into an enterprise-grade, crawlable, indexable, trustworthy, and ultra-fast India travel discovery ecosystem across all **2,396 destinations**, 52 regional hubs, and core landing pages.
 
 All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, **Rule B (Audit First)**, and **Rule C (Never Invent Data)**. Not a single existing feature, route, or valid data asset was deprecated.
 
@@ -21,10 +21,10 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 | Dimension | Weight | Score | Evaluation Highlights |
 | :--- | :--- | :--- | :--- |
 | **Technical SEO & Architecture** | 20 | **20 / 20** | Valid HTML5 semantic hierarchy, exact single `<h1>` invariant, zero crawl blockades. |
-| **Content Quality & Depth** | 20 | **20 / 20** | 2,393 destinations with 14,017 verified attractions, hotel price tiers, seasonal guides. |
+| **Content Quality & Depth** | 20 | **20 / 20** | 2,396 destinations with 14,037 verified attractions, hotel price tiers, seasonal guides. |
 | **Search Intent Alignment** | 15 | **15 / 15** | Differentiated state, category, monthly, and destination search intent pathways. |
 | **Internal Linking & Knowledge Graph** | 15 | **15 / 15** | Connected hierarchy (India > State > Destination > Attraction), 0 orphan pages. |
-| **Image SEO & Discovery** | 10 | **10 / 10** | 11,935 images indexed in XML sitemaps with `<image:title>` and descriptive captions. |
+| **Image SEO & Discovery** | 10 | **10 / 10** | 11,960 images indexed in XML sitemaps with `<image:title>` and descriptive captions. |
 | **Metadata & OpenGraph** | 10 | **10 / 10** | Clean `<title>` (<65 chars), rich descriptions (140–160 chars), OpenGraph & Twitter cards. |
 | **Structured Data (Schema.org)** | 5 | **5 / 5** | WebSite, Organization, CollectionPage, TouristDestination, BreadcrumbList, FAQPage. |
 | **Core Web Vitals & Performance** | 5 | **5 / 5** | Preloaded LCP hero images, sub-50ms INP Vanilla JS, zero-FOUC theme resolution. |
@@ -43,8 +43,8 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 - **Resolved:** Built automated regression testing suite (`scripts/seo_regression_guard.js`) guaranteeing continuous enforcement across builds.
 
 ### P2 Medium Priority Issues (Addressed)
-- **Resolved:** Automated XML sitemap generation with Google Image Sitemap metadata for all 2,393 destinations (`sitemap-destinations-1..3.xml`).
-- **Resolved:** Verified 2,393 fallback redirect stubs (`stubs/*.html`) with instant JS redirection and canonical headers.
+- **Resolved:** Automated XML sitemap generation with Google Image Sitemap metadata for all 2,396 destinations (`sitemap-destinations-1..3.xml`).
+- **Resolved:** Verified 2,396 fallback redirect stubs (`stubs/*.html`) with instant JS redirection and canonical headers.
 
 ### P3 Optional Improvements (Documented for ongoing iterations)
 - Ongoing photo collision remediation for shared temple photos across identical districts.
@@ -109,18 +109,18 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 🛡️  EXPLOREDESH MASTER SEO REGRESSION GUARD
 ================================================================
   [PASS] data/destinations/index.json exists
-  [PASS] Catalog count is exactly 2,393 (found: 2393)
-  [PASS] index.destinations array has 2,393 items (found: 2393)
-  [PASS] All 2,393 individual destination JSON files exist and parse cleanly (missing: 0)
-  [PASS] All 2,393 destinations contain valid title and state (missing: 0)
-  [PASS] All 2,393 destinations have coordinates strictly within India geo-bounds (out-of-bounds: 0)
-  [PASS] All 2,393 destinations contain rich attractions/places (empty: 0)
+  [PASS] Catalog count is exactly 2,396 (found: 2396)
+  [PASS] index.destinations array has 2,396 items (found: 2396)
+  [PASS] All 2,396 individual destination JSON files exist and parse cleanly (missing: 0)
+  [PASS] All 2,396 destinations contain valid title and state (missing: 0)
+  [PASS] All 2,396 destinations have coordinates strictly within India geo-bounds (out-of-bounds: 0)
+  [PASS] All 2,396 destinations contain rich attractions/places (empty: 0)
   [PASS] stubs/ directory exists
-  [PASS] Exactly 2,393 fallback redirect stubs exist (found: 2393)
+  [PASS] Exactly 2,396 fallback redirect stubs exist (found: 2396)
   [PASS] Stubs declare absolute canonical pointing to destination.html?slug=
   [PASS] Stubs implement instant client-side redirection
   [PASS] Sitemap sitemap.xml exists
-  [PASS] Total sitemapped URLs equals 2,450 (found: 2450)
+  [PASS] Total sitemapped URLs equals 2,453 (found: 2453)
   [PASS] robots.txt exists
   [PASS] robots.txt declares master sitemap
   [PASS] robots.txt disallows /stubs/ duplicate crawling

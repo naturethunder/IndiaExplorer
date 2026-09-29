@@ -1,8 +1,21 @@
 # ExploreDesh — Technical SEO Change Log
 
-> **Project**: [https://exploredesh.com](https://exploredesh.com)  
-> **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit  
-> **Date**: 2026-09-28 (Phase 69 update)  
+> **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
+> **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit<br>
+> **Date**: 2026-09-29 (Phase 71 update)
+
+---
+
+## Phase 71 Modifications (2026-09-29)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (101 files) | 697 banned, expiring Pixabay session URLs (`/get/`) causing HTTP 429 broken image cards on production | Expired session links returning HTTP 429 | 100% replaced with permanent, high-definition, zero-collision Pexels & Unsplash CDN photography | Eliminate broken image signals in Google Image search and restore visual stability | High positive impact on image indexability, Google Images CTR, and Core Web Vitals | Low (Data accuracy restoration) |
+| `data/destinations/siddhivinayak-temple-mumbai.json` | Geographic asset leaks (Kerala rivers/waterfalls) and improper attraction entries (`2017 Mumbai stampede` accident and private residential towers) | Kerala photos in Mumbai temple guide; non-tourist disaster entry | Curated authentic Mumbai landmarks: Bandra-Worli Sea Link, Shivaji Park, Chaitya Bhoomi, Portuguese Church with 100% zero-collision photography | Eliminate geographic misattribution and provide accurate travel itineraries for Mumbai | Major improvement in search relevance and user trust for Siddhivinayak Temple searches | Low (Editorial & visual accuracy) |
+| `data/destinations/*.json` (10 files) | Gallery count underflow: files had fewer than 5 images in `gallery[]` array (`bambleshwari-temple`, `koranganatha-temple`, `laling-fort`, `mangi-tungi`, etc.) | 3 or 4 gallery images | Exactly 5 HD landscape images with descriptive `title`, `alt`, and `caption` metadata | Satisfy Rule 1 platform invariant across all 2,396 destinations | Enhanced rich snippet eligibility and Google Image thumbnail indexing | Low (Additive enhancement) |
+| `data/destinations/*.json` (6 files) | OpenGraph image mismatch where `seo.ogImage !== gallery[0].src` (`saddle-peak`, `sardarpur`, `senchal`, `shri-naimishnath`, `st-francis-xavier`, `yangoupokpi-lokchao`) | Outdated Wikimedia thumbnail in `seo.ogImage` | Synchronized `seo.ogImage` identically to `gallery[0].src` | Maintain 100% parity between OpenGraph social previews and hero photography | Consistent social share previews and search engine snippet alignment | Low (Metadata sync) |
+| `data/destinations/rishikesh.json` | Hero and gallery needed quintessential, world-famous landmark restoration | Meditative close-up hero; previous commits had Telangana road defect | Restored 5 best hero/gallery images: Iconic Lakshman Jhula boat panorama, Triveni Ghat evening Ganga Aarti, and Garhwal mountain vistas | Showcase the single most recognized symbol of Rishikesh to incoming search visitors | Boosts engagement, reduces bounce rate, and strengthens image authority | Low (Targeted curation) |
+| `sitemaps` (6 XML files) | Sitemaps and homepage manifest needed synchronization with updated media | Previous image URLs and manifest | Recompiled master `sitemap.xml` + 5 sub-sitemaps (2,453 URLs, 11,960 images) and `home-manifest.json` (126.0 KB) | Notify Googlebot of updated photography, 0 broken images, and updated metadata | Speeds up Google re-crawling and image index updates | Low (Automated recompile) |
 
 ---
 

@@ -161,18 +161,23 @@ function injectHubMarkup() {
           <div>
             <div class="flex items-center gap-2">
               <h2 id="goHubTitle" class="font-bold text-lg text-white">ExploreDesh <span class="text-primary">Go</span></h2>
-              <span class="go-badge-pill">📴 Offline Pocket Guide</span>
+              <span class="go-badge-pill">Offline Pocket Guide</span>
             </div>
             <p class="text-xs text-gray-400">Zero-connectivity companion for Himalayan passes & safaris</p>
           </div>
         </div>
-        <button type="button" class="go-close-btn" id="goHubCloseBtn" aria-label="Close offline hub">✕</button>
+        <button type="button" class="go-close-btn" id="goHubCloseBtn" aria-label="Close offline hub">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
       </div>
 
       <!-- Live Connectivity Status Indicator -->
       <div class="go-connection-indicator" id="goConnectionIndicator">
         <span class="conn-dot ${navigator.onLine ? 'online' : 'offline'}"></span>
-        <span class="conn-text">${navigator.onLine ? '🟢 Connected to Internet' : '📴 Zero Signal / Offline Active'}</span>
+        <span class="conn-text">${navigator.onLine ? 'Connected to Internet' : 'Zero Signal / Offline Active'}</span>
       </div>
 
       <!-- Navigation Tabs -->

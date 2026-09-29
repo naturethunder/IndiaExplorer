@@ -1,6 +1,6 @@
 ---
 name: seo-audit
-description: "Technical SEO, Search Indexing, and Structured Data Audit skill for ExploreDesh. Audits all 6 XML sitemaps (master sitemap.xml, main, states, destinations 1-3), 2,450 sitemapped URLs, 11,935+ images, robots.txt directives, canonical tag integrity, OpenGraph/Twitter cards, single <h1> hierarchies, meta descriptions, 404 error routing, and JSON-LD structured data (Organization, WebSite Sitelinks Searchbox, CollectionPage, TouristDestination, BreadcrumbList, FAQPage). Run whenever checking search engine readiness or modifying routing/metadata."
+description: "Technical SEO, Search Indexing, and Structured Data Audit skill for ExploreDesh. Audits all 6 XML sitemaps (master sitemap.xml, main, states, destinations 1-3), 2,453 sitemapped URLs, 11,960 images, robots.txt directives, canonical tag integrity, OpenGraph/Twitter cards, single <h1> hierarchies, meta descriptions, 404 error routing, and JSON-LD structured data (Organization, WebSite Sitelinks Searchbox, CollectionPage, TouristDestination, BreadcrumbList, FAQPage). Run whenever checking search engine readiness or modifying routing/metadata."
 ---
 
 # Technical SEO & Indexing Audit Skill (`/seo-audit`)
@@ -28,7 +28,7 @@ node scripts/seo_audit.js
 # 2. Master SEO regression guard (71 checks)
 node scripts/seo_regression_guard.js
 
-# 3. Deep repository & sitemap integrity audit (2,393 destinations)
+# 3. Deep repository & sitemap integrity audit (2,396 destinations)
 node scripts/audit/master_seo_audit.js
 
 # 4. Internal relative link integrity scan

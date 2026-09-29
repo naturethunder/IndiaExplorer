@@ -892,8 +892,12 @@ html[data-theme="light"] .calligraphy-kicker::after {
   transition: all var(--transition);
   cursor: pointer;
   border: none;
-  outline: none;
   text-decoration: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 /* .btn.btn-primary (0,2,0) so it outweighs Tailwind preflight's
@@ -3211,6 +3215,7 @@ textarea.form-input {
 }
 
 .active-filter-chip button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3222,6 +3227,12 @@ textarea.form-input {
   font-size: 0.75rem;
   line-height: 1;
   transition: background-color 0.15s ease;
+}
+
+.active-filter-chip button::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
 }
 
 .active-filter-chip button:hover {
@@ -3719,8 +3730,10 @@ a.btn:active svg,
   letter-spacing: 0.5px;
 }
 .go-close-btn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -4191,8 +4204,10 @@ a.btn:active svg,
 }
 .pocket-print-btn,
 .pocket-close-btn {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);

@@ -1,9 +1,9 @@
 # ExploreDesh — SEO Duplicate Content & Template Audit
 
-> **Document Type:** Duplicate Content & Substantive Uniqueness Audit  
-> **Platform:** [ExploreDesh.com](https://exploredesh.com)  
-> **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 31 & Section 50  
-> **Target Scope:** 2,393 Destinations, Core Templates & Static Stubs  
+> **Document Type:** Duplicate Content & Substantive Uniqueness Audit<br>
+> **Platform:** [ExploreDesh.com](https://exploredesh.com)<br>
+> **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 31 & Section 50<br>
+> **Target Scope:** 2,396 Destinations, Core Templates & Static Stubs<br>
 > **Status:** Analyzed & Verified Clean
 
 ---
@@ -22,23 +22,23 @@ This audit evaluates ExploreDesh across three critical duplicate content vectors
 ## 2. Duplicate Detection Analysis
 
 ### 2.1 Destination Slugs & Titles
-- **Total Unique Slugs:** **2,393 / 2,393 (100.0% Unique)**
+- **Total Unique Slugs:** **2,396 / 2,396 (100.0% Unique)**
   - Every single destination JSON file has a unique slug and corresponding file name.
-- **Total Unique Titles:** **2,393 / 2,393 (100.0% Unique)**
+- **Total Unique Titles:** **2,396 / 2,396 (100.0% Unique)**
   - Zero duplicate destination display titles. Where destinations share names across states (e.g. temples or generic hill features), they are differentiated by regional prefixes and state associations.
 
 ### 2.2 Metadata & Snippet Uniqueness
 - **Dynamic Meta Titles:**
   - Evaluated through `destinationMetaTitle()` in `js/pages/destination.js`.
   - Format: `<Destination Title>, <State> Travel Guide | ExploreDesh`.
-  - Because all 2,393 destinations have unique title + state pairings, **100% of generated `<title>` tags are unique**.
+  - Because all 2,396 destinations have unique title + state pairings, **100% of generated `<title>` tags are unique**.
 - **Dynamic Meta Descriptions:**
   - Evaluated through `destinationMetaDescription()`.
   - Generated using each destination's bespoke `overview.short` or `overview.description` combined with specific attraction counts and pricing data.
   - Zero generic template placeholders (e.g. *"Welcome to this destination"*).
 
 ### 2.3 Pre-rendered Redirect Stubs vs. Production URLs
-- **Risk:** Having 2,393 pre-rendered `.html` files in `stubs/` could result in Google indexing both `/stubs/<slug>.html` and `/destination.html?slug=<slug>`.
+- **Risk:** Having 2,396 pre-rendered `.html` files in `stubs/` could result in Google indexing both `/stubs/<slug>.html` and `/destination.html?slug=<slug>`.
 - **Enforced Safeguard:**
   1. `robots.txt` explicitly disallows `/stubs/`:
      ```text
@@ -49,7 +49,7 @@ This audit evaluates ExploreDesh across three critical duplicate content vectors
      /stubs/*
        X-Robots-Tag: noindex, follow
      ```
-  3. All 2,393 stubs specify a hardcoded self-correcting canonical tag:
+  3. All 2,396 stubs specify a hardcoded self-correcting canonical tag:
      ```html
      <link rel="canonical" href="https://exploredesh.com/destination.html?slug=<slug>" />
      ```
@@ -61,7 +61,7 @@ This audit evaluates ExploreDesh across three critical duplicate content vectors
 ## 3. Substantive Uniqueness of Travel Content
 
 To ensure high-quality indexing and Google Discover eligibility:
-- **Attractions:** 14,017 total attractions across 2,393 destinations (average 5.86 unique attractions per destination).
+- **Attractions:** 14,037 total attractions across 2,396 destinations (average 5.86 unique attractions per destination).
 - **Hotel Stays:** Each destination maps authentic price-tier data and verified hotel categories (`cheapest`, `budget`, `good`, `better`, `best`, `luxury`, `extra_luxury`).
 - **Transit Corridors:** Route options detail distinct highway identifiers (e.g. `NH44`, `NH3`), specific railheads, and regional airports.
 - **Geographic Coordinates:** Distinct latitude/longitude coordinates preventing cluster collapse.

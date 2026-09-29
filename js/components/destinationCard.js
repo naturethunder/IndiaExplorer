@@ -43,7 +43,7 @@ export function optimizeImageUrl(url, width = 800) {
     const targetW = Math.min(width, 1200);
     return 'https://wsrv.nl/?url=' + encodeURIComponent(url) + '&w=' + targetW + '&output=webp&q=75';
   }
-  // 3. Pexels photo: strip dpr & extra height, compress & set clean target width
+  // 3. Pexels photo: strip dpr & extra height, compress & set clean target width + WebP
   if (url.includes('images.pexels.com/photos/')) {
     try {
       const u = new URL(url);
@@ -51,20 +51,22 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
+      u.searchParams.set('fm', 'webp');
       u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
       return u.toString();
     } catch (_) {
       return url;
     }
   }
-  // 4. Unsplash photo: strip dpr & extra height, compress & set clean target width
+  // 4. Unsplash photo: strip dpr & extra height, compress & set clean target width + WebP
   if (url.includes('images.unsplash.com/')) {
     try {
       const u = new URL(url);
       u.searchParams.delete('dpr');
       u.searchParams.delete('h');
       u.searchParams.set('auto', 'format');
-      u.searchParams.set('q', '80');
+      u.searchParams.set('fm', 'webp');
+      u.searchParams.set('q', '75');
       u.searchParams.set('w', String(Math.min(width, 2560))); // Support crystal-clear Full HD & 2K banners
       return u.toString();
     } catch (_) {

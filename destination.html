@@ -61,12 +61,11 @@
   <link rel="preconnect" href="https://wsrv.nl" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Bodoni Moda, Playfair Display & Plus Jakarta Sans -->
+  <!-- Google Fonts: Bodoni Moda, Jost, Pinyon Script, Playfair Display & Plus Jakarta Sans -->
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=20260920_2" />
@@ -74,13 +73,9 @@
   <link rel="stylesheet" href="css/glass-immersive.css?v=20260916_1" />
   <link rel="stylesheet" href="css/destination-immersive.css?v=20260928_3" />
   <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
-  <!-- GSAP & ScrollTrigger -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"
-    defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"
-    defer></script>
+  <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body class="dest-immersive glass-immersive">
@@ -460,7 +455,13 @@
               <rect x="6" y="14" width="12" height="8" />
             </svg>
           </button>
-          <button type="button" class="pocket-close-btn" id="pocketCloseBtn" aria-label="Close pocket card">✕</button>
+          <button type="button" class="pocket-close-btn" id="pocketCloseBtn" aria-label="Close pocket card">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
         </div>
       </div>
       <div class="pocket-modal-body" id="pocketCardBody">

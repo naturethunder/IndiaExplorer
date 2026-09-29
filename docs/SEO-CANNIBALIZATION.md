@@ -11,7 +11,7 @@
 
 Keyword cannibalization occurs when multiple URLs within a domain target identical or substantially overlapping search queries, confusing search engine ranking algorithms and diluting internal PageRank.
 
-In a programmatic discovery catalog containing 2,393 destinations and multi-dimensional filters, the primary risk areas are:
+In a programmatic discovery catalog containing 2,396 destinations and multi-dimensional filters, the primary risk areas are:
 1. **State Landing Pages vs. Destination Hubs** (e.g. `destinations.html?state=Goa` vs. `destination.html?slug=goa`).
 2. **Category / Type Landing Pages vs. Top Destinations** (e.g. `destinations.html?type=hill_station` vs. individual hill station guides).
 3. **Pre-rendered Redirect Stubs vs. Dynamic Destination Pages** (`stubs/<slug>.html` vs. `destination.html?slug=<slug>`).

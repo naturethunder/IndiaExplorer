@@ -16,7 +16,8 @@ const HTML_FILES = [
   'about.html',
   'contact.html',
   'privacy.html',
-  'terms.html'
+  'terms.html',
+  '404.html'
 ];
 
 const CSS_FILES = [
@@ -76,7 +77,7 @@ for (const file of HTML_FILES) {
     auditResults.accessibility.push({ file, issue: `Multiple <h1> tags found (${h1Matches.length})`, severity: 'MEDIUM' });
   }
 
-  // F. Icon buttons without aria-label
+  // F. Icon buttons without aria-label or using raw glyphs
   const buttonMatches = content.match(/<button[\s\S]*?<\/button>/gi) || [];
   for (const btn of buttonMatches) {
     // If button has an svg or i tag but no text content and no aria-label
@@ -86,6 +87,9 @@ for (const file of HTML_FILES) {
     if (hasIcon && textOnly.length === 0 && !hasAria) {
       const snippet = btn.slice(0, 70).replace(/\s+/g, ' ');
       auditResults.accessibility.push({ file, issue: `Icon-only button missing aria-label: ${snippet}...`, severity: 'CRITICAL' });
+    }
+    if (textOnly === '✕') {
+      auditResults.accessibility.push({ file, issue: `Button uses raw character '✕' instead of scalable SVG icon`, severity: 'MEDIUM' });
     }
   }
 
@@ -99,8 +103,14 @@ for (const file of HTML_FILES) {
   }
 
   // H. Skip to main content link
-  if (!content.includes('skip-link') && !content.includes('skip-to') && !content.includes('Skip to')) {
+  const skipMatch = content.match(/<a[^>]*href=["']#([^"']+)["'][^>]*>(Skip\s+to\s+[^<]+)<\/a>/i);
+  if (!skipMatch) {
     auditResults.accessibility.push({ file, issue: 'Missing "Skip to main content" accessibility link', severity: 'MEDIUM' });
+  } else {
+    const targetId = skipMatch[1];
+    if (!new RegExp(`id=["']${targetId}["']`, 'i').test(content)) {
+      auditResults.accessibility.push({ file, issue: `Skip link targets "#${targetId}" but target does not exist`, severity: 'HIGH' });
+    }
   }
 }
 

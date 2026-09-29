@@ -13,8 +13,8 @@
 | Layer | Implementation Details | SEO Impact & Evaluation |
 | :--- | :--- | :--- |
 | **Core Architecture** | Vanilla HTML5, Modern Modular ES6+ JavaScript, Vanilla CSS / Tailwind utilities | Zero framework bundle overhead (React/Next hydration debt avoided). Fast initial parse and sub-millisecond execution. |
-| **Rendering Strategy** | Client-Side Hydrated Rendering (CSR) backed by 2,393 Static Pre-rendered HTML Redirect Stubs (`stubs/*.html`) | Search engines that execute JS (Googlebot WRS, Bingbot) render rich dynamic DOM. Crawlers hitting raw URLs receive pre-rendered stubs with canonical headers and instant redirection. |
-| **Data Architecture** | Static JSON flat-file storage (`data/destinations/*.json`) indexed by `index.json` (2,393 destinations) | Instant CDN edge caching; 0 database latency; deterministic indexing. |
+| **Rendering Strategy** | Client-Side Hydrated Rendering (CSR) backed by 2,396 Static Pre-rendered HTML Redirect Stubs (`stubs/*.html`) | Search engines that execute JS (Googlebot WRS, Bingbot) render rich dynamic DOM. Crawlers hitting raw URLs receive pre-rendered stubs with canonical headers and instant redirection. |
+| **Data Architecture** | Static JSON flat-file storage (`data/destinations/*.json`) indexed by `index.json` (2,396 destinations) | Instant CDN edge caching; 0 database latency; deterministic indexing. |
 | **Hosting & CDN** | Cloudflare Pages / Edge Infrastructure | HTTP/2 & HTTP/3 multiplexing, global edge SSL termination, Brotli/Gzip compression, edge caching via `_headers`. |
 | **Security & Headers** | Configured in `_headers` (CSP, `nosniff`, `SAMEORIGIN`, `strict-origin-when-cross-origin`, `X-Robots-Tag`) | Prevents accidental raw JSON indexing (`/data/*` marked `noindex, nofollow`) while keeping client fetch allowed. |
 
@@ -37,9 +37,9 @@ ExploreDesh implements an optimal XML Sitemap Index (`sitemap.xml`) dividing the
 2. `sitemap-states.xml`: 52 high-value filter landing pages (states with >=3 destinations, primary destination types, and travel months).
 3. `sitemap-destinations-1.xml`: 1,000 destination pages with Google Image Sitemap metadata.
 4. `sitemap-destinations-2.xml`: 1,000 destination pages with Google Image Sitemap metadata.
-5. `sitemap-destinations-3.xml`: 393 destination pages with Google Image Sitemap metadata.
-- **Total Sitemapped URLs:** **2,450**
-- **Total Indexed Images:** **11,935**
+5. `sitemap-destinations-3.xml`: 396 destination pages with Google Image Sitemap metadata.
+- **Total Sitemapped URLs:** **2,453**
+- **Total Indexed Images:** **11,960**
 
 ---
 
@@ -64,7 +64,7 @@ ExploreDesh implements an optimal XML Sitemap Index (`sitemap.xml`) dividing the
 ### 4.1 Heading Structure (Single H1 Invariant)
 All 8 platform HTML templates enforce exactly one semantic `<h1>` element:
 - `index.html`: `<h1>Discover Incredible India</h1>`
-- `destinations.html`: `<h1>2,393 Destinations Across Bharat</h1>`
+- `destinations.html`: `<h1>2,396 Destinations Across Bharat</h1>`
 - `destination.html`: Dynamic `<h1>` bound to destination title (e.g. `Manali`)
 - `ai-finder.html`: `<h1>AI Trip Finder</h1>`
 - `about.html`: `<h1>About ExploreDesh</h1>`

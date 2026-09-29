@@ -22,7 +22,7 @@ if (!fs.existsSync(REPORTS_DIR)) fs.mkdirSync(REPORTS_DIR, { recursive: true });
 if (!fs.existsSync(IMAGES_REPORTS_DIR)) fs.mkdirSync(IMAGES_REPORTS_DIR, { recursive: true });
 
 async function updateAllDocs() {
-  const allDestFiles = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json');
+  const allDestFiles = fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.json') && f !== 'index.json' && f !== 'home-manifest.json');
 
   let totalEnriched = 0;
   let totalPlaces = 0;

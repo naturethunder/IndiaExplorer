@@ -1,9 +1,9 @@
 # ExploreDesh — SEO Orphan Page & Internal Link Graph Audit
 
-> **Document Type:** Internal Link Architecture & Crawler Reachability Audit  
-> **Platform:** [ExploreDesh.com](https://exploredesh.com)  
-> **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 32 & Section 50  
-> **Target Scope:** 2,393 Destinations, 36 State Hubs, 14,017 Attractions  
+> **Document Type:** Internal Link Architecture & Crawler Reachability Audit<br>
+> **Platform:** [ExploreDesh.com](https://exploredesh.com)<br>
+> **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 32 & Section 50<br>
+> **Target Scope:** 2,396 Destinations, 36 State Hubs, 14,037 Attractions<br>
 > **Status:** Analyzed & Verified Reachable
 
 ---
@@ -24,11 +24,11 @@ In ExploreDesh, internal crawl equity flows through a structured 4-tier knowledg
            │                                                       │
            ▼                                                       ▼
 [ Tier 3: Destination Guides ]
-  2,393 Core Destination Guides (destination.html?slug=<slug>)
+  2,396 Core Destination Guides (destination.html?slug=<slug>)
            │
            ▼
 [ Tier 4: Local Attraction & Stay Entities ]
-  14,017 Nearby Places  ───  Hotel Stays  ───  Interactive Vector Map Nodes
+  14,037 Nearby Places  ───  Hotel Stays  ───  Interactive Vector Map Nodes
 ```
 
 ---
@@ -43,7 +43,7 @@ Every destination page on ExploreDesh receives multiple independent inbound link
 | **Interactive India Map** | Vector SVG map on `index.html` & `destinations.html` | Visual click navigation connecting all 36 States and featured regional hubs. |
 | **Breadcrumbs Trail** | `Home > Destinations > [State] > [Destination]` | Bidirectional hierarchical linking present in HTML markup and JSON-LD schema. |
 | **Related Destinations Module** | Embedded recommendation carousel at bottom of `destination.html` | Contextual links to 4–6 neighboring destinations within the same state or terrain type. |
-| **Universal Search Index** | `data/search-index.json` indexed in header search modal | All 2,393 destinations indexed with instant autocomplete and deep link access. |
+| **Universal Search Index** | `data/search-index.json` indexed in header search modal | All 2,396 destinations indexed with instant autocomplete and deep link access. |
 | **XML Sitemaps Index** | `sitemap-destinations-*.xml` | 100% of destination URLs declared with priority `0.8` and image metadata. |
 
 ---
