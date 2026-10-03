@@ -5,26 +5,26 @@
   "country": "India",
   "region": "Uttarakhand",
   "type": "spiritual",
-  "badge": "Historic Fortress",
-  "tagline": "Historic Fortress & Ancient Ramparts in Uttarakhand",
+  "badge": "Ancient Shiva Temple",
+  "tagline": "Ancient Hilltop Shiva Shrine & Himalayan Solitude in Pauri Garhwal",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Pine_Forest_Kandoliya_Pauri.JPG",
-    "alt": "Kamanda Mahadev, Uttarakhand"
+    "src": "https://images.pexels.com/photos/32074585/pexels-photo-32074585.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "alt": "Garhwal Pine Ridge & Valley Vista, Pauri Garhwal, Uttarakhand"
   },
   "overview": {
-    "short": "Pauri Garhwal district is a district in the Indian state of Uttarakhand.",
-    "description": "Pauri Garhwal district is a district in the Indian state of Uttarakhand. Its headquarters is in the town of Pauri. It is sometimes referred to simply as Garhwal district, though it should not be confused with the larger Garhwal region of which it is only a part of.",
+    "short": "Sacred hilltop Shiva shrine located 2 km north of Satpuli on the banks of the Nayar River in Pauri Garhwal.",
+    "description": "Kamanda Mahadev (also revered locally as Kamadeshwar Mahadev) is an ancient Hindu temple dedicated to Lord Shiva situated in the scenic hills of Pauri Garhwal, approximately 2 kilometres north of Satpuli town. Perched amidst quiet pine-clad ridges overlooking the valley of the Purvi Nayar River, the temple is a venerated pilgrimage retreat known for its tranquil Himalayan surroundings, seasonal festivals, and deeply rooted spiritual sanctity.",
     "features": [
-      "Temples",
-      "Pilgrimage",
-      "Sacred Theertham",
-      "Festivals"
+      "Ancient Temple",
+      "Shiva Shrine",
+      "Nayar River Valley",
+      "Pine Forests"
     ],
-    "altitude": null,
+    "altitude": 850,
     "rating": 4.7,
     "reviewCount": 19432,
     "minPrice": 900,
-    "distanceFromDelhi": 209
+    "distanceFromDelhi": 260
   },
   "bestTime": {
     "label": "Mar – Jun, Sep – Nov",
@@ -39,271 +39,239 @@
     ]
   },
   "weather": {
-    "lat": 29.623888888,
-    "lng": 79.023055555,
-    "tempSummer": "15–28°C",
-    "tempWinter": "2–16°C"
+    "lat": 29.932,
+    "lng": 78.711,
+    "tempSummer": "18–32°C",
+    "tempWinter": "5–20°C"
   },
   "howToReach": {
     "routes": [
       {
-        "from": "Dehradun (Uttarakhand)",
-        "city": "Dehradun",
-        "state": "Uttarakhand",
-        "distance": 154,
-        "byCar": "3–4 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 123 km · road approx."
-      },
-      {
         "from": "Delhi (Delhi UT)",
         "city": "Delhi",
         "state": "Delhi UT",
-        "distance": 261,
-        "byCar": "4–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 209 km · road approx."
-      },
-      {
-        "from": "Gurugram (Haryana)",
-        "city": "Gurugram",
-        "state": "Haryana",
-        "distance": 291,
+        "distance": 260,
         "byCar": "5–6 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 233 km · road approx."
+        "byTrain": "Train to Kotdwar (52 km) + taxi",
+        "byAir": "Fly to Dehradun (DED) + road transfer",
+        "via": "Via Meerut, Bijnor, Kotdwar on NH 534"
       },
       {
-        "from": "Shimla (Himachal Pradesh)",
-        "city": "Shimla",
-        "state": "Himachal Pradesh",
-        "distance": 303,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 242 km · road approx."
+        "from": "Dehradun (Uttarakhand)",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "distance": 140,
+        "byCar": "3.5–4.5 hrs",
+        "byTrain": "Train to Kotdwar + taxi",
+        "byAir": "Jolly Grant Airport (115 km)",
+        "via": "Via Rishikesh, Kotdwar, Satpuli"
       },
       {
-        "from": "Chandigarh (Chandigarh UT)",
-        "city": "Chandigarh",
-        "state": "Chandigarh UT",
-        "distance": 310,
-        "byCar": "5–7 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "No direct flight — rail/road faster",
-        "via": "Straight-line 248 km · road approx."
-      },
-      {
-        "from": "Agra (Uttar Pradesh)",
-        "city": "Agra",
-        "state": "Uttar Pradesh",
-        "distance": 363,
-        "byCar": "6–8 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 290 km · road approx."
-      },
-      {
-        "from": "Jaipur (Rajasthan)",
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "distance": 546,
-        "byCar": "9–12 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 437 km · road approx."
-      },
-      {
-        "from": "Amritsar (Punjab)",
-        "city": "Amritsar",
-        "state": "Punjab",
-        "distance": 570,
-        "byCar": "10–13 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 456 km · road approx."
-      },
-      {
-        "from": "Leh (Ladakh UT)",
-        "city": "Leh",
-        "state": "Ladakh UT",
-        "distance": 653,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 522 km · road approx."
-      },
-      {
-        "from": "Jammu (Jammu & Kashmir UT)",
-        "city": "Jammu",
-        "state": "Jammu & Kashmir UT",
-        "distance": 656,
-        "byCar": "11–15 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 525 km · road approx."
-      },
-      {
-        "from": "Bhopal (Madhya Pradesh)",
-        "city": "Bhopal",
-        "state": "Madhya Pradesh",
-        "distance": 908,
-        "byCar": "15–20 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 726 km · road approx."
-      },
-      {
-        "from": "Patna (Bihar)",
-        "city": "Patna",
-        "state": "Bihar",
-        "distance": 939,
-        "byCar": "16–21 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 751 km · road approx."
-      },
-      {
-        "from": "Ranchi (Jharkhand)",
-        "city": "Ranchi",
-        "state": "Jharkhand",
-        "distance": 1171,
-        "byCar": "20–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 937 km · road approx."
-      },
-      {
-        "from": "Nagpur (Maharashtra)",
-        "city": "Nagpur",
-        "state": "Maharashtra",
-        "distance": 1179,
-        "byCar": "20–26 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 943 km · road approx."
-      },
-      {
-        "from": "Raipur (Chhattisgarh)",
-        "city": "Raipur",
-        "state": "Chhattisgarh",
-        "distance": 1209,
-        "byCar": "20–27 hrs",
-        "byTrain": "Trains to nearest railhead",
-        "byAir": "Fly to nearest airport + road transfer",
-        "via": "Straight-line 967 km · road approx."
+        "from": "Haridwar (Uttarakhand)",
+        "city": "Haridwar",
+        "state": "Uttarakhand",
+        "distance": 105,
+        "byCar": "3–3.5 hrs",
+        "byTrain": "Connecting trains to Kotdwar",
+        "byAir": "Fly to Dehradun + taxi",
+        "via": "Via Najibabad, Kotdwar on NH 534"
       }
     ],
     "nearestAirport": {
-      "name": "Kamanda Mahadev / nearest airport",
-      "distance": 30
+      "name": "Jolly Grant Airport, Dehradun (DED)",
+      "distance": 115
     },
     "nearestRailway": {
-      "name": "Kathgodam (Nainital railhead)",
-      "distance": 64
+      "name": "Kotdwar Railway Station (KTW)",
+      "distance": 52
     },
-    "roadNote": "Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+    "roadNote": "Accessible by well-maintained mountain highway NH 534 via Kotdwar and Satpuli; private taxis and state transport buses ply regularly."
   },
-  "topPlaces": [],
+  "topPlaces": [
+    {
+      "name": "Satpuli & Nayar River Valley",
+      "category": "nature",
+      "distance": "~2 km from Kamanda Mahadev",
+      "entryFee": "Free",
+      "timings": "Open 24 hours",
+      "duration": "2–3 hours",
+      "rating": 4.5,
+      "description": "Tranquil riverside town at the confluence of the Eastern and Western Nayar rivers, known for angling, peaceful riverbanks, and scenic Garhwal hillscapes.",
+      "image": {
+        "src": "https://images.pexels.com/photos/29855007/pexels-photo-29855007.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Satpuli & Nayar River Valley, Pauri Garhwal, Uttarakhand"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/5435278/pexels-photo-5435278.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/30218019/pexels-photo-30218019.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/1469875/pexels-photo-1469875.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      ]
+    },
+    {
+      "name": "Jwalpa Devi Temple",
+      "category": "spiritual",
+      "distance": "~22 km from Kamanda Mahadev",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 8:00 PM",
+      "duration": "1–2 hours",
+      "rating": 4.7,
+      "description": "Revered Shakti pilgrimage shrine on the banks of the Navalika (Nayar) River along the Kotdwar-Pauri road, surrounded by scenic green hills.",
+      "image": {
+        "src": "https://images.pexels.com/photos/36737801/pexels-photo-36737801.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Jwalpa Devi Temple, Pauri Garhwal, Uttarakhand"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/36123985/pexels-photo-36123985.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/17935048/pexels-photo-17935048.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/10432964/pexels-photo-10432964.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      ]
+    },
+    {
+      "name": "Lansdowne",
+      "category": "hill_station",
+      "distance": "~28 km from Kamanda Mahadev",
+      "entryFee": "Free",
+      "timings": "Open 24 hours",
+      "duration": "Half day",
+      "rating": 4.6,
+      "description": "Quiet, historic cantonment hill station set amidst dense pine and oak forests, offering panoramic snow views of the Chaukhamba and Trishul peaks.",
+      "image": {
+        "src": "https://images.pexels.com/photos/34121475/pexels-photo-34121475.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Lansdowne, Pauri Garhwal, Uttarakhand"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/29931664/pexels-photo-29931664.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/14825945/pexels-photo-14825945.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/10019900/pexels-photo-10019900.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      ]
+    },
+    {
+      "name": "Tarkeshwar Mahadev Temple",
+      "category": "spiritual",
+      "distance": "~42 km from Kamanda Mahadev",
+      "entryFee": "Free",
+      "timings": "6:00 AM – 7:00 PM",
+      "duration": "2–3 hours",
+      "rating": 4.8,
+      "description": "Ancient Shiva sanctuary situated at 2,092m altitude, nestled inside a dense sacred grove of towering deodar and cedar trees in the Garhwal Himalayas.",
+      "image": {
+        "src": "https://images.pexels.com/photos/12531025/pexels-photo-12531025.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "alt": "Tarkeshwar Mahadev Temple, Pauri Garhwal, Uttarakhand"
+      },
+      "photos": [
+        "https://images.pexels.com/photos/38297839/pexels-photo-38297839.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/29511743/pexels-photo-29511743.jpeg?auto=compress&cs=tinysrgb&w=1920",
+        "https://images.pexels.com/photos/19972401/pexels-photo-19972401.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      ]
+    }
+  ],
   "itinerary": [
     {
       "day": 1,
-      "title": "Day 1 — 2024 Almora bus accident",
+      "title": "Day 1 — Spiritual Darshan & Nayar River Valley",
       "items": [
         {
           "time": "Morning",
-          "activity": "2024 Almora bus accident",
-          "note": "On 4 November 2024, a bus traveling from Garhwal to the Kumaon region in the Indian state of Uttarakhand fell into a gorge near Almora. 38 people were killed and 25 others were injured."
+          "activity": "Morning Puja at Kamanda Mahadev Temple",
+          "note": "Experience the peaceful morning prayers and serene mountain vistas overlooking the Purvi Nayar valley."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Explore Satpuli and Nayar River Banks",
+          "note": "Visit the riverside ghats and peaceful nature trails along the Nayar River basin."
+        },
+        {
+          "time": "Evening",
+          "activity": "Sunset over Pine Ridges",
+          "note": "Enjoy panoramic golden-hour views of the Garhwal Himalayan foothills from nearby viewpoints."
         }
       ]
     }
   ],
   "hotels": [
     {
-      "name": "Kamanda Mahadev Devasthanam Pilgrim Yatri Nivas",
+      "name": "GMVN Tourist Rest House Satpuli",
       "type": "guesthouse",
       "tier": "cheapest",
-      "priceMin": 500,
-      "priceMax": 1100,
+      "priceMin": 800,
+      "priceMax": 1800,
       "rating": 4.1,
-      "reviews": 680,
+      "reviews": 420,
       "amenities": [
-        "Devotee Clean Rooms",
+        "State Tourism Clean Rooms",
         "Hot Water",
-        "Pilgrim Assistance",
-        "Safe Luggage"
+        "Restaurant & Canteen",
+        "Parking Space"
       ],
       "tags": [
-        "On-site / Village",
-        "Devotee Choice"
+        "Satpuli Town (2 km away)",
+        "State Tourism (GMVN)",
+        "River View"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=Kamanda%20Mahadev%20Yatri%20Nivas%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=GMVN%20Tourist%20Rest%20House%20Satpuli%20Uttarakhand"
     },
     {
-      "name": "KMVN Tourist Rest House Sukhatal",
-      "type": "guesthouse",
-      "tier": "budget",
-      "priceMin": 1400,
-      "priceMax": 2400,
-      "rating": 4.1,
-      "reviews": 1900,
-      "amenities": [
-        "Kumaon Mandal Tourism",
-        "Spacious Lawns",
-        "Canteen",
-        "Parking"
-      ],
-      "tags": [
-        "Nainital (51 km away)",
-        "State Tourism",
-        "Budget Lake Access"
-      ],
-      "url": "https://www.google.com/maps/search/?api=1&query=KMVN%20Tourist%20Rest%20House%20Sukhatal%20Nainital%20Uttarakhand"
-    },
-    {
-      "name": "The Manu Maharani Nainital",
+      "name": "Hotel Nayar Valley Satpuli",
       "type": "hotel",
-      "tier": "best",
-      "priceMin": 7500,
-      "priceMax": 14000,
-      "rating": 4.6,
-      "reviews": 4100,
+      "tier": "budget",
+      "priceMin": 1200,
+      "priceMax": 2400,
+      "rating": 4.2,
+      "reviews": 310,
       "amenities": [
-        "Naini Lake Panorama",
-        "Olive Spa",
-        "Garden Dining",
-        "Shuttle to Mall"
+        "Valley View Balconies",
+        "Free Wi-Fi",
+        "Room Service",
+        "Travel Desk"
       ],
       "tags": [
-        "Nainital (51 km away)",
-        "Luxury Hilltop",
-        "Nainital Classic"
+        "Satpuli Center",
+        "Budget Comfort",
+        "Nayar Valley"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Manu%20Maharani%20Nainital%20Nainital%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Nayar%20Valley%20Satpuli%20Uttarakhand"
     },
     {
-      "name": "The Naini Retreat, by Leisure Hotels",
+      "name": "Fairydale Resort Lansdowne",
       "type": "heritage",
-      "tier": "best",
-      "priceMin": 8000,
-      "priceMax": 16000,
-      "rating": 4.7,
-      "reviews": 3600,
+      "tier": "good",
+      "priceMin": 3500,
+      "priceMax": 6000,
+      "rating": 4.4,
+      "reviews": 1250,
       "amenities": [
-        "Historic Maharaja Residence",
-        "Forest Setting",
-        "Fine Dining",
-        "Bar"
+        "Colonial Heritage Setting",
+        "Pine Garden Dining",
+        "Bonfire & Lawns",
+        "Mountain Views"
       ],
       "tags": [
-        "Nainital (51 km away)",
-        "Ayarpata Slopes",
-        "Colonial Charm"
+        "Lansdowne (28 km away)",
+        "Colonial Charm",
+        "Pine Ridge"
       ],
-      "url": "https://www.google.com/maps/search/?api=1&query=The%20Naini%20Retreat%2C%20by%20Leisure%20Hotels%20Nainital%20Uttarakhand"
+      "url": "https://www.google.com/maps/search/?api=1&query=Fairydale%20Resort%20Lansdowne%20Uttarakhand"
+    },
+    {
+      "name": "Blue Pine Resort Lansdowne",
+      "type": "resort",
+      "tier": "better",
+      "priceMin": 4500,
+      "priceMax": 8500,
+      "rating": 4.5,
+      "reviews": 1820,
+      "amenities": [
+        "Swimming Pool",
+        "Himalayan Snow View",
+        "Multi-Cuisine Restaurant",
+        "Indoor Games & Spa"
+      ],
+      "tags": [
+        "Lansdowne (28 km away)",
+        "Panoramic Luxury",
+        "Family Favorite"
+      ],
+      "url": "https://www.google.com/maps/search/?api=1&query=Blue%20Pine%20Resort%20Lansdowne%20Uttarakhand"
     }
   ],
   "restaurants": [],
@@ -316,68 +284,74 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Pine_Forest_Kandoliya_Pauri.JPG",
-      "alt": "Kamanda Mahadev in Kamanda Mahadev, Uttarakhand - Pine Forest Kandoliya Pauri",
-      "title": "Pine Forest Kandoliya Pauri — Kamanda Mahadev"
+      "src": "https://images.pexels.com/photos/32074585/pexels-photo-32074585.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Garhwal Pine Ridge & Valley Vista, Pauri Garhwal, Uttarakhand",
+      "title": "Garhwal Pine Ridge & Valley Vista",
+      "caption": "Scenic natural vista in the Garhwal Himalayas near Kamanda Mahadev"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Chai_walli_-_Old_woman_at_a_Tea_Stall_on_a_highway_in_Pauri%2C_Uttrakhand%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Kamanda Mahadev — Chai walli - Old woman at a Tea Stall on a highway in Pauri, Uttrakhand, India",
-      "title": "Kamanda Mahadev — Chai walli — Kamanda Mahadev"
+      "src": "https://images.pexels.com/photos/5643832/pexels-photo-5643832.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Purvi Nayar River Basin, Pauri Garhwal, Uttarakhand",
+      "title": "Purvi Nayar River Basin",
+      "caption": "Scenic natural vista in the Garhwal Himalayas near Kamanda Mahadev"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Panoramic_View_of_Garhwal_Hills_from_Lansdowne_in_Pauri_Garhwal_district_in_the_Indian_state_of_Uttarakhand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Kamanda Mahadev — Panoramic View of Garhwal Hills from Lansdowne in Pauri Garhwal district in the Indian state of Uttarakhand",
-      "title": "Sacred Theertham at Kamanda Mahadev"
+      "src": "https://images.pexels.com/photos/35378794/pexels-photo-35378794.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Kamanda Mahadev Mountain Sanctuary, Pauri Garhwal, Uttarakhand",
+      "title": "Kamanda Mahadev Mountain Sanctuary",
+      "caption": "Scenic natural vista in the Garhwal Himalayas near Kamanda Mahadev"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Eastern_Nayaar_near_Syunsi-Bangaar%2C_Pauri_Garhwal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Kamanda Mahadev — Eastern Nayaar near Syunsi-Bangaar, Pauri Garhwal",
-      "title": "Eastern Nayaar Near Syunsi Bangaar, Pauri Garhwal — Kamanda Mahadev"
+      "src": "https://images.pexels.com/photos/30665293/pexels-photo-30665293.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Garhwal Foothills & Terraced Ridges, Pauri Garhwal, Uttarakhand",
+      "title": "Garhwal Foothills & Terraced Ridges",
+      "caption": "Scenic natural vista in the Garhwal Himalayas near Kamanda Mahadev"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Amotha_Pauri_Garhwal_Uttarakhand_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "alt": "Kamanda Mahadev — Amotha Pauri Garhwal Uttarakhand India 02",
-      "title": "Amotha Pauri Garhwal Uttarakhand India — Kamanda Mahadev"
+      "src": "https://images.pexels.com/photos/12795418/pexels-photo-12795418.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "alt": "Misty Garhwal Mountain Peaks, Pauri Garhwal, Uttarakhand",
+      "title": "Misty Garhwal Mountain Peaks",
+      "caption": "Scenic natural vista in the Garhwal Himalayas near Kamanda Mahadev"
     }
   ],
   "faq": [
     {
       "q": "What is the best time to visit Kamanda Mahadev?",
-      "a": "The best time to visit Kamanda Mahadev is Mar – Jun, Sep – Nov. Summers are 15–28°C and winters are 2–16°C."
+      "a": "The best time to visit Kamanda Mahadev is Mar – Jun and Sep – Nov when weather in the Garhwal foothills is pleasant and road travel along NH 534 is smooth."
     },
     {
       "q": "How do I reach Kamanda Mahadev?",
-      "a": "The nearest airport is Kamanda Mahadev / nearest airport (30 km) and the nearest railway station is Kathgodam (Nainital railhead) (64 km). Roads are generally good; check seasonal/monsoon conditions before high-altitude or remote stretches."
+      "a": "Kamanda Mahadev is located 2 km north of Satpuli town in Pauri Garhwal. The nearest railway station is Kotdwar (52 km) and nearest airport is Jolly Grant Airport in Dehradun (115 km)."
     },
     {
       "q": "How many days are enough for Kamanda Mahadev?",
-      "a": "2 days are usually enough to cover the top attractions of Kamanda Mahadev at a relaxed pace."
+      "a": "2 days are ideal to visit Kamanda Mahadev temple and explore nearby attractions like Satpuli river valley, Jwalpa Devi temple, and Lansdowne."
     },
     {
-      "q": "How much does a hotel cost in Kamanda Mahadev?",
-      "a": "Stays in Kamanda Mahadev start from ₹900 per night, with options across 4 price categories."
+      "q": "How much does a hotel cost near Kamanda Mahadev?",
+      "a": "Budget guesthouses like GMVN Satpuli start around ₹800–₹1,800/night, while resort stays in nearby Lansdowne range from ₹3,500 to ₹8,500/night."
     },
     {
-      "q": "What are the top places to visit in Kamanda Mahadev?",
-      "a": "The top attractions are 2024 Almora bus accident."
+      "q": "What are the top places to visit near Kamanda Mahadev?",
+      "a": "Top attractions include the Satpuli & Nayar River Valley, Jwalpa Devi Temple, Lansdowne cantonment hill station, and Tarkeshwar Mahadev Temple."
     }
   ],
   "seo": {
-    "title": "Kamanda Mahadev Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
-    "description": "Pauri Garhwal district is a district in the Indian state of Uttarakhand. Plan your Kamanda Mahadev trip: 1 places to visit, 4 stays from ₹900/night, best time (Mar – Jun, Sep – Nov) and routes.",
+    "title": "Kamanda Mahadev Temple Travel Guide 2026 — Pauri Garhwal, Places, Stays | ExploreDesh",
+    "description": "Plan your visit to Kamanda Mahadev Temple in Pauri Garhwal, Uttarakhand: nearby attractions in Satpuli and Lansdowne, authentic stays, routes via Kotdwar, and best travel seasons.",
     "canonical": "destination.html?slug=kamanda-mahadev",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/Pine_Forest_Kandoliya_Pauri.JPG",
+    "ogImage": "https://images.pexels.com/photos/32074585/pexels-photo-32074585.jpeg?auto=compress&cs=tinysrgb&w=1920",
     "keywords": [
       "Kamanda Mahadev travel guide",
       "places to visit in Kamanda Mahadev",
+      "Satpuli Uttarakhand",
       "Kamanda Mahadev hotels",
       "best time to visit Kamanda Mahadev",
       "how to reach Kamanda Mahadev",
-      "Uttarakhand tourism"
+      "Pauri Garhwal tourism"
     ]
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-19T12:00:00Z"
+  "updatedAt": "2026-10-03T20:58:12.397Z"
 }
