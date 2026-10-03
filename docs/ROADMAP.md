@@ -3,7 +3,33 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-09-30 (rev-35).
+Last updated: 2026-10-04 (rev-36 Phase 84).
+
+---
+
+- **Phase 84: Media Quality Cleanups, Kamanda Mahadev Ground-Truth Restoration & Immersive UI Standardization (2026-10-04 rev-36)** — Media deduplication across 51 destinations, place card image schema normalization, geographic ground-truth restoration, filter button styling unification, and CSS variable mapping:
+  1. **Media Deduplication & Authentic Ground-Truth Photography (51 Destinations Overhauled):**
+     - Sourced and verified **354 unique HD landscape photos** from Pexels, Unsplash, Flickr CC, and Wikimedia CDN across 51 high-traffic and top-duplicate destinations.
+     - Permanently purged **342 duplicate photo slots** (catalog internal duplicate slots dropped from 1,516 to **1,175**).
+     - Normalized 99 place card image objects across 18 destinations (`place.image: "url"` → `place.image: { src, alt }`).
+     - 100% of all 24 home manifest featured destinations certified at **0 internal duplicates** and **0 cross-destination collisions**.
+     - Sourced authentic Delhi Aravalli Ridge deer photo to replace foreign California Death Valley photo in `asola-bhatti-wildlife-sanctuary.json`.
+     - Catalog unique verified photo URLs expanded to **66,412**; clean destinations reached **2,134 / 2,396 (89.1%)**.
+  2. **Kamanda Mahadev Real-World Geographic Restoration:**
+     - Restored authentic geography: ancient hilltop Shiva temple 2 km north of Satpuli on Purvi Nayar River in Pauri Garhwal, Uttarakhand (`29.932, 78.711`).
+     - Purged scraped Almora bus accident disaster items and displaced Nainital KMVN hotels.
+     - Sourced 5 authentic Garhwal gallery photos, 4 Pauri Garhwal nearby attractions (Satpuli Valley, Jwalpa Devi Temple, Lansdowne, Tarkeshwar Mahadev) with 16 photos, and local GMVN Satpuli stays.
+  3. **Category Pill Filter Styling Unification (`css/explore-immersive.css`, `css/glass-immersive.css`):**
+     - Restyled `.category-pill-btn` with modern `.quick-tag-btn` pill-chip aesthetics (`border-radius: var(--exp-radius-md)`, ambient border `1px solid var(--exp-border)`, 44px min touch target, centered track alignment, gold glow active states, and Light Mode theme transitions).
+  4. **CSS Variable Refactor & Code Hygiene:**
+     - Replaced hardcoded hex values with canonical `:root` tokens (`var(--white)`, `var(--text)`, `var(--text-muted)`, `var(--border)`, `var(--bg)`, `var(--bg-obsidian)`).
+     - Pruned redundant `!important` flags across container and track layout rules.
+  5. **Master Regression & Safety Certification:**
+     - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+     - Technical SEO Audit (`scripts/seo_audit.js`): **61/61 checks passed (0 errors)**.
+     - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+     - Service Worker cache upgraded to `v1.4.9` and asset query strings bumped to `?v=20261004_phase84`.
+
 
 ---
 

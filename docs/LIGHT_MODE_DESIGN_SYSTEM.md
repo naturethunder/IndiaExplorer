@@ -155,7 +155,11 @@
 - **Protected Elements:** Inside `.hero-home` (and photo hero banners), background imagery is inherently dark regardless of document theme.
 - **Hero Headings:** Hero title retains pure white `#FFFFFF` with drop shadow (`0 3px 18px rgba(0, 0, 0, 0.8)`).
 - **Hero Gradient Accent (`.hero-home .gold-gradient-text`):** Overridden from daytime bronze (`#B45309`) to brilliant glowing sunrise gold (`linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%)`) with text shadow (`0 3px 18px rgba(0,0,0,0.6)`).
-- **Hero Calligraphy Kicker & Accent Script:** Luminous warm gold (`#FCD34D` and `#FDE68A`) with zero dark filter dropshadow.
+### 4.10 Category Pill Buttons & CSS `:root` Variable Refactoring (Phase 84)
+- **Unified Pill-Chip Aesthetics:** `.category-pill-btn` in `css/explore-immersive.css` matches `.quick-tag-btn` pill architecture with `border-radius: var(--exp-radius-md)` (14px), subtle border `1px solid var(--exp-border)`, and minimum 44×44px touch targets.
+- **Light Mode Surface:** Frosted milk glass pill `rgba(255, 255, 255, 0.92)` with dark slate text (`#1E293B`) and soft ambient shadow (`0 2px 8px rgba(15, 23, 42, 0.05)`).
+- **Active State in Light Mode:** Radiant Heritage Amber outline (`border-color: #D97706`), warm amber kicker glow (`0 0 14px rgba(217, 119, 6, 0.20)`), gold underline accent (`2.5px solid #F5C542`), and bold primary text.
+- **Tokenized CSS Variables:** Replaced all hardcoded color literals with canonical `:root` variables: `var(--white)`, `var(--text)`, `var(--text-muted)`, `var(--border)`, `var(--bg)`, `var(--bg-obsidian)`, guaranteeing instantaneous dual-engine theme flips with zero FOUC or style contention.
 
 ---
 

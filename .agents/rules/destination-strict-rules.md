@@ -321,4 +321,21 @@ The interactive political map of India (`data/india-map.js`, `js/components/indi
    - Delhi must feature a glowing concentric capital marker pin (`.map-capital-marker`) to guarantee immediate mouse/touch accessibility.
    - Hovering or clicking either the badge, marker pin, or polygon must immediately activate Delhi and update `.india-map-card`.
 
+---
+
+## Rule 20 — Standardized Place Card Image Object Schema (Added Phase 84)
+
+Every nearby attraction place card (`topPlaces[]`) must store its cover photo as a canonical object with explicit `src` and `alt` fields:
+
+```json
+"image": {
+  "src": "https://images.pexels.com/photos/XXXXXXX/...",
+  "alt": "Specific landmark name and authentic description"
+}
+```
+
+1. **Zero Bare String URLs**: Never save `place.image` as a raw string (`"image": "https://..."`).
+2. **Accessible & Descriptive Alt Attributes**: Every `alt` attribute must accurately name the landmark and state/district context.
+3. **Photos Array Uniqueness**: In addition to `image.src`, the `photos[]` array must contain exactly 3 distinct, high-definition photo URLs (`photos: ["url1", "url2", "url3"]`), with zero duplicate URLs within the card or destination file.
+
 

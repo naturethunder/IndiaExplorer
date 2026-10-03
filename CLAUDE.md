@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-09-30 rev-35)
+# ExploreDesh — Project Guide (updated 2026-10-04 Phase 84 rev-36)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
