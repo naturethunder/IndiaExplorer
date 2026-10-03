@@ -17,7 +17,27 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-09-30 rev-35) — Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul:**
+> **Latest Milestone (2026-10-04 Phase 84) — Media Deduplication, Kamanda Mahadev Ground Truth & Immersive UI Standardization:**
+> - **Media Deduplication & Authentic Sourcing (37 Destinations Overhauled):**
+>   - Sourced and live-verified **308 unique HD landscape photos** from Pexels & Unsplash across 37 destinations.
+>   - Purged **296 duplicate photo slots** across high-traffic and top-duplicate destinations (`munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `valley-of-flowers-national-park`, `osmania-arts-college`, `sainik-school-kapurthala`, `anchuthengu-fort`, etc.).
+>   - 100% of all 24 home manifest featured destinations are verified at **0 internal duplicates** and **0 cross-destination collisions**.
+>   - Purged foreign California Death Valley photo from `asola-bhatti-wildlife-sanctuary.json` and replaced with native Delhi Aravalli Ridge deer capture.
+>   - Catalog unique photo URLs expanded to **66,367**.
+> - **Kamanda Mahadev Ground Truth Restoration:**
+>   - Real-world geography restored to Satpuli (`29.932, 78.711`), Pauri Garhwal district, Uttarakhand.
+>   - Purged scraped 2024 Almora bus accident tragedy and Nainital KMVN hotels.
+>   - Added 4 authentic Pauri Garhwal nearby places (Satpuli Valley, Jwalpa Devi Temple, Lansdowne, Tarkeshwar Mahadev) with 16 photos and local GMVN Satpuli stays.
+> - **Category Pill Filter Styling Unification (`css/explore-immersive.css`, `css/glass-immersive.css`):**
+>   - Restyled `.category-pill-btn` with modern `.quick-tag-btn` pill-chip aesthetics: `border-radius: var(--exp-radius-md)` (14px), ambient border `1px solid var(--exp-border)`, 44px min touch target, centered flex track alignment, gold glow active states, and full Light Mode theme transitions.
+> - **CSS Optimization:** Replaced 67 lines of hardcoded hex values with `:root` variables (`var(--white)`, `var(--text)`, `var(--text-muted)`, `var(--border)`, `var(--bg)`, `var(--bg-obsidian)`), pruned redundant `!important` flags.
+> - **Master Regression & Safety Certification:**
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+>   - Technical SEO Audit (`scripts/seo_audit.js`): **61/61 checks passed (0 errors)**.
+>   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+>   - Service Worker bumped to `v1.4.9` in `sw.js` with asset query strings `?v=20261004_phase84`.
+>
+> **Previous Milestone (2026-09-30 rev-35) — Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul:**
 > - **Side-by-Side Zero-Overlap Flex Architecture (`css/styles.css`, `css/glass-immersive.css`):**
 >   - Reconfigured `.discover-map-inner` from an overlapping floating card layout into a responsive side-by-side flex layout (`display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 0.75rem;`).
 >   - India SVG map is allocated the left portion (`flex: 1 1 auto; max-width: calc(100% - 215px); height: 100%;`), shifting it leftwards with balanced margins.

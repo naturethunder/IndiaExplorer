@@ -22,12 +22,18 @@ Comprehensive platform hardening covering media deduplication, geographic ground
    - Verified active Pexels and Unsplash API tokens in local environment.
    - Certified all critical codebase markers: `RECENT_UPDATE_DAYS` in `js/data/taxonomy.js`, `WIKIMEDIA_STEPS` in `js/components/destinationCard.js`, and `scripts/bulk/content-hashes.json`.
 
-2. **Media Deduplication & Authentic Sourcing (Task 1):**
+2. **Media Deduplication & Authentic Sourcing (Task 1 & Batch 3):**
    - Built automated live-verification sourcing engine querying Pexels and Unsplash APIs with strict filters (Indian geographical authenticity, landscape aspect ratio >= 1.25, canonical `w=1920`, zero people/crowds/models, zero cross-destination collision against the 66k+ catalog index).
    - **Batch 1 (10 destinations, 65 live-verified HD replacements):** `munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `dehradun`, `kasol`, `annavaram-satyanarayana-temple`, `rajiv-lochan-temple-rajim`, `gurdwara-jyoti-sarup`.
    - **Batch 2 (10 destinations, 27 live-verified HD replacements):** `fakim-wildlife-sanctuary`, `senchal-wildlife-sanctuary`, `changthang-wildlife-sanctuary`, `manali`, `darjeeling`, `our-lady-of-lourdes-shrine`, `tirunallar-saniswaran-temple`, `madaksira-hill-fort`, `chembra-peak`, `kanatal`.
+   - **Batch 3 (15 destinations, 225 live-verified HD replacements):** `sainik-school-kapurthala`, `osmania-arts-college`, `anchuthengu-fort`, `valley-of-flowers-national-park`, `amunthirathu-devi-temple`, `amirthakadeswarar-temple`, `nahar-singh-mahal`, `alappancode-easwara-kala-bhoothathan-temple`, `bambleshwari-temple`, `maharajbagh-zoo`, `perur-pateeswarar-temple`, `anniyur-abathsahayeswarar-temple`, `anandeshwaram-mahadeva-temple`, `avanoor-sreekanteswaram-mahadeva-temple`, `arattupuzha-temple`.
    - **Asola Bhatti California Photo Purge:** Purged Death Valley (USA) photo from `asola-bhatti-wildlife-sanctuary.json` (`heroImage`, `gallery[0]`, `seo.ogImage`) and replaced with live-verified Delhi Aravalli Ridge spotted deer photo (`pexels-photo-585402`).
-   - **Catalog Impact:** All 24 destinations in `data/home-manifest.json` now have 0 internal duplicates and 0 cross-destination collisions. Internal duplicates reduced by 71, cross collisions reduced by 10, total unique verified catalog URLs increased from 66,035 to 66,142.
+   - **Catalog Impact:**
+     - All 24 destinations in `data/home-manifest.json` have **0 internal duplicates** and **0 cross-destination collisions**.
+     - Across all 37 processed destinations: **37 / 37 are 100% CLEAN (0 internal duplicates)**.
+     - Total duplicate slots permanently eliminated: **296 duplicates purged** (reducing catalog internal duplicates from 1,516 to **1,220**).
+     - Total unique verified catalog URLs increased from 66,035 to **66,367** (+332 net new unique verified URLs).
+     - Clean destinations count increased to **2,120 out of 2,396 (88.5%)**.
 
 3. **Kamanda Mahadev Ground-Truth Restoration (Task 2):**
    - Corrected real-world geography: Kamanda Mahadev (Kamadeshwar Mahadev) is an ancient hilltop Shiva temple located 2 km north of Satpuli town on the Purvi Nayar River in Pauri Garhwal district, Uttarakhand (`lat: 29.932, lng: 78.711`).
@@ -51,10 +57,10 @@ Comprehensive platform hardening covering media deduplication, geographic ground
 6. **Final Rebuild, Service Worker Bump & System Verification:**
    - Synchronized indices, manifests, utility CSS, redirect stubs, XML sitemaps, and destination markdown reference:
      - `sync-index-and-search.js`: 2,396 destinations synchronized in `index.json` and `search-index.json`.
-     - `build-home-manifest.js`: Minified home manifest generated (148 featured destinations, 169.5 KB).
+     - `build-home-manifest.js`: Minified home manifest generated (148 featured destinations, 169.9 KB).
      - `build-css.js`: 517 utility rules compiled into `css/tailwind.css`.
      - `build-stubs.js`: 2,396 redirect stubs re-rendered.
-     - `build-sitemap.js`: 6 sitemaps compiled (2,453 URLs, 11,962 indexed images).
+     - `build-sitemap.js`: 6 sitemaps compiled (2,453 URLs, 11,963 indexed images).
      - `build-destinations-doc.js`: `docs/DESTINATIONS.md` updated (2,396 destinations, 36 states).
    - Bumped Service Worker `VERSION` in `sw.js` to `v1.4.9`.
    - Bumped cache query strings to `?v=20261004_phase84` on page scripts and CSS across `index.html`, `destinations.html`, `destination.html`, and `ai-finder.html`.
