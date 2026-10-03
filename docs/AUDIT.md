@@ -13,6 +13,62 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 84: Media Quality Cleanups, Kamanda Mahadev Ground-Truth Restoration & Immersive UI Standardization (2026-10-04)
+
+Comprehensive platform hardening covering media deduplication, geographic ground-truth restoration, regression guard certification (71/71), filter button styling unification, and CSS `:root` variable standardization:
+
+1. **Preflight Environment & Baseline Integrity (Task 0):**
+   - Added `.env.local` and `.env.*.local` to `.gitignore` to prevent credential exposure.
+   - Verified active Pexels and Unsplash API tokens in local environment.
+   - Certified all critical codebase markers: `RECENT_UPDATE_DAYS` in `js/data/taxonomy.js`, `WIKIMEDIA_STEPS` in `js/components/destinationCard.js`, and `scripts/bulk/content-hashes.json`.
+
+2. **Media Deduplication & Authentic Sourcing (Task 1):**
+   - Built automated live-verification sourcing engine querying Pexels and Unsplash APIs with strict filters (Indian geographical authenticity, landscape aspect ratio >= 1.25, canonical `w=1920`, zero people/crowds/models, zero cross-destination collision against the 66k+ catalog index).
+   - **Batch 1 (10 destinations, 65 live-verified HD replacements):** `munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `dehradun`, `kasol`, `annavaram-satyanarayana-temple`, `rajiv-lochan-temple-rajim`, `gurdwara-jyoti-sarup`.
+   - **Batch 2 (10 destinations, 27 live-verified HD replacements):** `fakim-wildlife-sanctuary`, `senchal-wildlife-sanctuary`, `changthang-wildlife-sanctuary`, `manali`, `darjeeling`, `our-lady-of-lourdes-shrine`, `tirunallar-saniswaran-temple`, `madaksira-hill-fort`, `chembra-peak`, `kanatal`.
+   - **Asola Bhatti California Photo Purge:** Purged Death Valley (USA) photo from `asola-bhatti-wildlife-sanctuary.json` (`heroImage`, `gallery[0]`, `seo.ogImage`) and replaced with live-verified Delhi Aravalli Ridge spotted deer photo (`pexels-photo-585402`).
+   - **Catalog Impact:** All 24 destinations in `data/home-manifest.json` now have 0 internal duplicates and 0 cross-destination collisions. Internal duplicates reduced by 71, cross collisions reduced by 10, total unique verified catalog URLs increased from 66,035 to 66,142.
+
+3. **Kamanda Mahadev Ground-Truth Restoration (Task 2):**
+   - Corrected real-world geography: Kamanda Mahadev (Kamadeshwar Mahadev) is an ancient hilltop Shiva temple located 2 km north of Satpuli town on the Purvi Nayar River in Pauri Garhwal district, Uttarakhand (`lat: 29.932, lng: 78.711`).
+   - Updated `data/coord-overrides.json` and `data/destinations/kamanda-mahadev.json`.
+   - Completely purged scraped Almora bus accident disaster items and displaced Nainital KMVN hotels.
+   - Sourced 5 authentic HD Garhwal gallery photos and populated 4 genuine Pauri Garhwal nearby attractions (Satpuli & Nayar River Valley, Jwalpa Devi Temple, Lansdowne, Tarkeshwar Mahadev Temple) with 16 collision-free, live-verified HD photos.
+   - Configured authentic local stays (GMVN Satpuli, Hotel Nayar Valley Satpuli, Fairydale Resort Lansdowne, Blue Pine Resort Lansdowne).
+   - **Master SEO Regression Guard:** Achieved **71/71 PASSED (100/100)**, resolving the 1 remaining regression failure.
+
+4. **Category Pill Filter Styling Unification (Task 3):**
+   - Restyled `.category-pill-btn` in `css/explore-immersive.css` and `css/glass-immersive.css` to match the modern `.quick-tag-btn` pill-chip aesthetics.
+   - Applied `border-radius: var(--exp-radius-md)`, subtle ambient border `1px solid var(--exp-border)`, 44px min touch target, and `align-items: center` in `.category-tabs-track`.
+   - Preserved luxury gold glow hover/active states, radiant amber bottom border (`2.5px solid #F5C542`), `aria-pressed` states, keyboard focus rings (`:focus-visible`), and seamless Light Mode theme transitions.
+   - Verified with browser subagent across desktop viewport and dynamic theme toggles.
+
+5. **CSS Optimization & Variable Mapping (Task 4):**
+   - Replaced 67 lines of hardcoded hex values in `css/explore-immersive.css` with canonical `:root` variables: `var(--white)` (`#FFFFFF`), `var(--text)` (`#0F172A`), `var(--text-muted)` (`#64748B`), `var(--border)` (`#E2E8F0`), `var(--bg)` (`#F8FAFC`), `var(--bg-obsidian)` (`#080A0F`), and `var(--primary-light)` (`#FFF3C4`).
+   - Removed redundant `!important` flags on `.category-tabs-container` and `.category-tabs-track` where cascade and specificity already guarantee precedence.
+   - Validated zero layout shifts or visual regressions in dark and light modes.
+
+6. **Final Rebuild, Service Worker Bump & System Verification:**
+   - Synchronized indices, manifests, utility CSS, redirect stubs, XML sitemaps, and destination markdown reference:
+     - `sync-index-and-search.js`: 2,396 destinations synchronized in `index.json` and `search-index.json`.
+     - `build-home-manifest.js`: Minified home manifest generated (148 featured destinations, 169.5 KB).
+     - `build-css.js`: 517 utility rules compiled into `css/tailwind.css`.
+     - `build-stubs.js`: 2,396 redirect stubs re-rendered.
+     - `build-sitemap.js`: 6 sitemaps compiled (2,453 URLs, 11,962 indexed images).
+     - `build-destinations-doc.js`: `docs/DESTINATIONS.md` updated (2,396 destinations, 36 states).
+   - Bumped Service Worker `VERSION` in `sw.js` to `v1.4.9`.
+   - Bumped cache query strings to `?v=20261004_phase84` on page scripts and CSS across `index.html`, `destinations.html`, `destination.html`, and `ai-finder.html`.
+   - Verification suite passed 100%:
+     - `node scripts/seo_regression_guard.js`: **71/71 PASSED (100/100)**.
+     - `node scripts/seo_audit.js`: **PASSED (0 errors, 61 checks passed)**.
+     - `node scripts/ui_ux_qa_audit.js`: **PASSED (0 issues across all 7 categories)**.
+     - `node scripts/validate-filters.js`: **PASSED (2,396 destinations, 36 states)**.
+     - `node scripts/audit/check_broken_links.js`: **PASSED (0 broken links)**.
+     - `node scripts/deep_pre_commit_audit.js`: **PASSED (0 JSON errors, 0 hero/gallery errors, 0 geographic leaks)**.
+     - Local dev server (`node scripts/serve.js`): Verified HTTP 200 OK for `/`, `/destinations.html`, `/destination.html?slug=munnar`, `/destination.html?slug=kamanda-mahadev`, and `/ai-finder.html`.
+
+---
+
 ## Addendum — 2026-10-03 QA, Filter, Image Optimization & Automatic Change Stamping
 
 Comprehensive platform hardening covering code quality, accessibility, security, filter correctness, destination data hygiene, automatic change stamping, and Wikimedia rate-limiting prevention:

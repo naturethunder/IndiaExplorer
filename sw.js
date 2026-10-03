@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.4.8';
+const VERSION = 'v1.4.9';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;

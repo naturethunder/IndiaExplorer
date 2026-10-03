@@ -2509,7 +2509,7 @@
 | **Kainchi Dham** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
 | **Kalinka, Pauri Garhwal** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
 | **Kalpeshwar** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
-| **Kamanda Mahadev** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
+| **Kamanda Mahadev** | Spiritual | Mar–Jun, Sep–Nov | ₹800 – ₹8,500 |
 | **Kanatal** | Hill Station | Jan–Mar, Oct–Dec | ₹1,000 – ₹26,000 |
 | **Kedarnath Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
 | **Kempty Falls** | Heritage | Mar–Jun, Sep–Nov | ₹1,000 – ₹26,000 |
