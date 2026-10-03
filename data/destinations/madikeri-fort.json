@@ -214,7 +214,10 @@
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "The St. Mark's Church, is located within the Mercara Fort, Coorg, India and was raised in 1859, by the officers and men of the East India Company.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Madikeri_Fort_%2820%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Madikeri_Fort_%2820%29.jpg",
+        "alt": "St. Mark's Church, Mercara — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/69/Madikeri_Fort_%2821%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/2/2d/Madikeri_Fort_%2822%29.jpg",
@@ -230,7 +233,10 @@
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Coorg State was a Part-C state in India which existed from 1950 to 1956. When the Constitution of India came into force on 26 January 1950, most of the existing provinces were reconstituted into states.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Madikeri_Fort_%2824%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Madikeri_Fort_%2824%29.jpg",
+        "alt": "Coorg State — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/39626092/pexels-photo-39626092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/30626163/pexels-photo-30626163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -246,7 +252,10 @@
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "Madikeri (Kodava: [mɐɖikeːri]), earlier called as Mercara is city and headquarters of Kodagu district in the Karnataka state of India. It is recognised as one of the world's eight \"hottest hotspots\" of biological diversity and is also a UNESCO World Heritage Site.",
-      "image": "https://images.pexels.com/photos/32200365/pexels-photo-32200365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/32200365/pexels-photo-32200365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Madikeri — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/e/e4/Former_Palace_-_now_government_buildings.jpg",
         "https://images.pexels.com/photos/36317415/pexels-photo-36317415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -262,7 +271,10 @@
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "Raja's Seat (Seat of the King) is a culturally significant site and tourist attraction in Madikeri of Coorg District. It is 270km away from Bangalore, the capital of Karnataka.",
-      "image": "https://images.pexels.com/photos/34957344/pexels-photo-34957344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/34957344/pexels-photo-34957344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Raja's Seat — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/27669342/pexels-photo-27669342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/36743294/pexels-photo-36743294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -278,7 +290,10 @@
       "duration": "1–2 hrs",
       "rating": 4.5,
       "description": "Abbey Falls (also spelled Abbi Falls and Abbe Falls) is a waterfall in Kodagu, in the Western Ghats of Karnataka, India. It is located 8 km from the Madikeri, 122 km from Mysore, 144 km from Mangalore and 268 km from Bangalore.",
-      "image": "https://images.pexels.com/photos/161759/tunnel-arch-bricks-military-fort-161759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/161759/tunnel-arch-bricks-military-fort-161759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Abbey Falls — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/36569954/pexels-photo-36569954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/13391675/pexels-photo-13391675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -294,7 +309,10 @@
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Jawahar Navodaya Vidyalaya is a school in Kodagu, India, and is a part of the Navodaya Vidyalaya group. The school is located near Madikeri, which is 7 km from Madikeri, the headquarters of Kodagu district.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madikeri_Fort_%2827%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Madikeri_Fort_%2827%29.jpg",
+        "alt": "Jawahar Navodaya Vidyalaya, Kodagu — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/f/f9/Madikeri_Fort_%2832%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Madikeri_Fort_%2843%29.jpg",
@@ -507,5 +525,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:16:36.256Z"
+  "updatedAt": "2026-10-03T21:58:48.809Z"
 }

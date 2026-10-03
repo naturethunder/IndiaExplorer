@@ -18,12 +18,13 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
 > **Latest Milestone (2026-10-04 Phase 84) — Media Deduplication, Kamanda Mahadev Ground Truth & Immersive UI Standardization:**
-> - **Media Deduplication & Authentic Sourcing (37 Destinations Overhauled):**
->   - Sourced and live-verified **308 unique HD landscape photos** from Pexels & Unsplash across 37 destinations.
->   - Purged **296 duplicate photo slots** across high-traffic and top-duplicate destinations (`munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `valley-of-flowers-national-park`, `osmania-arts-college`, `sainik-school-kapurthala`, `anchuthengu-fort`, etc.).
->   - 100% of all 24 home manifest featured destinations are verified at **0 internal duplicates** and **0 cross-destination collisions**.
+> - **Media Deduplication & Authentic Sourcing (51 Destinations Overhauled):**
+>   - Sourced and live-verified **354 unique HD landscape photos** from Pexels, Unsplash, Flickr CC, and Wikimedia CDN across 51 destinations.
+>   - Purged **342 duplicate photo slots** across high-traffic and top-duplicate destinations (`munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `valley-of-flowers-national-park`, `osmania-arts-college`, `sainik-school-kapurthala`, `anchuthengu-fort`, `tirumanancheri-udhvaganathar-temple`, `bhimtal`, `sattal`, `badami`, `armenian-church-of-st-john-the-baptist`, etc.).
+>   - Normalized 99 place card image objects across 18 destinations (`place.image: "url"` → `place.image: { src, alt }`).
+>   - 100% of all 24 home manifest featured destinations and all 51 overhauled destinations are verified at **0 internal duplicates** and **0 cross-destination collisions**.
 >   - Purged foreign California Death Valley photo from `asola-bhatti-wildlife-sanctuary.json` and replaced with native Delhi Aravalli Ridge deer capture.
->   - Catalog unique photo URLs expanded to **66,367**.
+>   - Catalog unique photo URLs expanded to **66,412**; internal duplicate slots catalog-wide reduced to **1,175**.
 > - **Kamanda Mahadev Ground Truth Restoration:**
 >   - Real-world geography restored to Satpuli (`29.932, 78.711`), Pauri Garhwal district, Uttarakhand.
 >   - Purged scraped 2024 Almora bus accident tragedy and Nainital KMVN hotels.

@@ -214,7 +214,10 @@
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "Addihalli, Nagamangala is a village in the southern state of Karnataka, India. It is located in the Nagamangala taluk of Mandya district in Karnataka.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Panchakuta_Basadi_%2810%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Panchakuta_Basadi_%2810%29.jpg",
+        "alt": "Addihalli, Mandya — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/d/d4/Panchakuta_Basadi_%2820%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/9/90/Panchakuta_Basadi_%2821%29.jpg",
@@ -230,7 +233,10 @@
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Bindiganavale is a village and hobli headquarters in Nagamangala taluka of Mandya district, Karnataka, India. It is about 50 kilometres (31 mi) from Mandya and 130 km (81 mi) from Bangalore.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Panchakuta_Basadi_%2829%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Panchakuta_Basadi_%2829%29.jpg",
+        "alt": "Bindiganavile — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/35711349/pexels-photo-35711349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/37626196/pexels-photo-37626196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -441,5 +447,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:15:21.748Z"
+  "updatedAt": "2026-10-03T21:58:48.750Z"
 }

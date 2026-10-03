@@ -22,18 +22,21 @@ Comprehensive platform hardening covering media deduplication, geographic ground
    - Verified active Pexels and Unsplash API tokens in local environment.
    - Certified all critical codebase markers: `RECENT_UPDATE_DAYS` in `js/data/taxonomy.js`, `WIKIMEDIA_STEPS` in `js/components/destinationCard.js`, and `scripts/bulk/content-hashes.json`.
 
-2. **Media Deduplication & Authentic Sourcing (Task 1 & Batch 3):**
-   - Built automated live-verification sourcing engine querying Pexels and Unsplash APIs with strict filters (Indian geographical authenticity, landscape aspect ratio >= 1.25, canonical `w=1920`, zero people/crowds/models, zero cross-destination collision against the 66k+ catalog index).
+2. **Media Deduplication & Authentic Sourcing (Tasks 1, Batch 3 & Previous Sessions Deduplication):**
+   - Built automated live-verification sourcing engine querying Pexels, Unsplash, Flickr CC, and Wikimedia CDN with strict filters (Indian geographical authenticity, landscape aspect ratio >= 1.25, canonical `w=1920`, zero people/crowds/models, zero cross-destination collision against the 66k+ catalog index).
    - **Batch 1 (10 destinations, 65 live-verified HD replacements):** `munnar`, `tirupati`, `jaipur`, `visakhapatnam`, `jim-corbett`, `dehradun`, `kasol`, `annavaram-satyanarayana-temple`, `rajiv-lochan-temple-rajim`, `gurdwara-jyoti-sarup`.
    - **Batch 2 (10 destinations, 27 live-verified HD replacements):** `fakim-wildlife-sanctuary`, `senchal-wildlife-sanctuary`, `changthang-wildlife-sanctuary`, `manali`, `darjeeling`, `our-lady-of-lourdes-shrine`, `tirunallar-saniswaran-temple`, `madaksira-hill-fort`, `chembra-peak`, `kanatal`.
    - **Batch 3 (15 destinations, 225 live-verified HD replacements):** `sainik-school-kapurthala`, `osmania-arts-college`, `anchuthengu-fort`, `valley-of-flowers-national-park`, `amunthirathu-devi-temple`, `amirthakadeswarar-temple`, `nahar-singh-mahal`, `alappancode-easwara-kala-bhoothathan-temple`, `bambleshwari-temple`, `maharajbagh-zoo`, `perur-pateeswarar-temple`, `anniyur-abathsahayeswarar-temple`, `anandeshwaram-mahadeva-temple`, `avanoor-sreekanteswaram-mahadeva-temple`, `arattupuzha-temple`.
+   - **Previous Sessions Gap Remediation (14 destinations, 46 live-verified HD replacements):** Audited and cured all residual duplicate slots across destinations discussed in prior sessions: `tirumanancheri-udhvaganathar-temple` (9 slots), `armenian-church-of-st-john-the-baptist` (6 slots), `bhimtal` (5 slots), `sattal` (5 slots), `veeramakaliamman-temple-arantangi` (4 slots), `wesley-church-egmore` (4 slots), `podhu-aavudayar-temple` (3 slots), `badami` (3 slots), `ajanta-ellora` (1 slot), `wayanad` (1 slot), `araku-valley` (1 slot), `ashtabhuji-temple` (1 slot), `bandipur` (1 slot), and `sreenarayanapuram-temple` (1 slot). Every destination certified at **0 internal duplicates** with synchronized hero/gallery[0].
    - **Asola Bhatti California Photo Purge:** Purged Death Valley (USA) photo from `asola-bhatti-wildlife-sanctuary.json` (`heroImage`, `gallery[0]`, `seo.ogImage`) and replaced with live-verified Delhi Aravalli Ridge spotted deer photo (`pexels-photo-585402`).
+   - **Place Card Image Schema Normalization (18 destinations, 99 place cards):** Forensic audit discovered 99 places across 18 destinations had raw string image URLs (`place.image: "https://..."`) rather than canonical object structures (`place.image: { src, alt }`). Normalized all 99 cards across `bibhutibhushan-wildlife-sanctuary`, `gagron-fort`, `madikeri-fort`, `mogalrajapuram-caves`, `nanda-devi-national-park`, `noida`, `panchakuta-basadi-kambadahalli`, `sakshinatheswarar-temple-thiruppurambiyam`, `sessa-orchid-sanctuary`, `siddhesvara-temple`, `sinhagad`, `someshwara-temple-marathahalli`, `tapkeshwar-temple`, `thirparappu-waterfalls`, `tungabhadra-otter-conservation-reserve`, `vardhangad-fort`, `vazhappally-maha-siva-temple`, and `veerbhadra-temple`.
    - **Catalog Impact:**
      - All 24 destinations in `data/home-manifest.json` have **0 internal duplicates** and **0 cross-destination collisions**.
-     - Across all 37 processed destinations: **37 / 37 are 100% CLEAN (0 internal duplicates)**.
-     - Total duplicate slots permanently eliminated: **296 duplicates purged** (reducing catalog internal duplicates from 1,516 to **1,220**).
-     - Total unique verified catalog URLs increased from 66,035 to **66,367** (+332 net new unique verified URLs).
-     - Clean destinations count increased to **2,120 out of 2,396 (88.5%)**.
+     - Across all 51 processed destinations: **51 / 51 are 100% CLEAN (0 internal duplicates)**.
+     - Total duplicate slots permanently eliminated: **342 duplicates purged** (reducing catalog internal duplicates from 1,516 to **1,175**).
+     - Total unique verified catalog URLs increased from 66,035 to **66,412** (+377 net new unique verified URLs).
+     - Clean destinations count increased to **2,134 out of 2,396 (89.1%)**.
+     - Resolved query parameter parsing defect in `scripts/images/providers/wikimedia.js`.
 
 3. **Kamanda Mahadev Ground-Truth Restoration (Task 2):**
    - Corrected real-world geography: Kamanda Mahadev (Kamadeshwar Mahadev) is an ancient hilltop Shiva temple located 2 km north of Satpuli town on the Purvi Nayar River in Pauri Garhwal district, Uttarakhand (`lat: 29.932, lng: 78.711`).

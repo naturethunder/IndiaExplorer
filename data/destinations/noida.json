@@ -69,7 +69,10 @@
       "name": "Okhla Bird Sanctuary",
       "category": "Wetland Nature",
       "description": "4 sq km sanctuary at the Yamuna river entry host to 300+ bird species.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Maude_Roxby_Wetlands_Kelowna_Panorama1s.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Maude_Roxby_Wetlands_Kelowna_Panorama1s.jpg",
+        "alt": "Okhla Bird Sanctuary — undefined"
+      },
       "photos": [
         {
           "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Chilika_Lake_Mangalajodi_Wetlands_Odisha_India_2012.jpg",
@@ -97,7 +100,10 @@
       "name": "DLF Mall of India",
       "category": "Shopping Mall",
       "description": "One of India's largest shopping malls featuring 330+ international brands.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/DFC_2457_Interior_view_of_a_multi-level_shopping_mall_with_escalators_glass_railings_and_shoppers_moving_between_floors_under_bright_overhead_lighting.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/DFC_2457_Interior_view_of_a_multi-level_shopping_mall_with_escalators_glass_railings_and_shoppers_moving_between_floors_under_bright_overhead_lighting.jpg",
+        "alt": "DLF Mall of India — undefined"
+      },
       "photos": [
         {
           "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Kyoto_Station_-_55369803130.jpg",
@@ -125,7 +131,10 @@
       "name": "Buddh International Circuit",
       "category": "Motorsport Venue",
       "description": "Formula 1 racing track in Greater Noida designed by Hermann Tilke.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Breeder_and_sportsman_%281915%29_%2820404378292%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Breeder_and_sportsman_%281915%29_%2820404378292%29.jpg",
+        "alt": "Buddh International Circuit — undefined"
+      },
       "photos": [
         {
           "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Breeder_and_sportsman_%281910%29_%2820402788382%29.jpg",
@@ -153,7 +162,10 @@
       "name": "Botanic Garden of Indian Republic",
       "category": "Botanical Reserve",
       "description": "160-acre botanical reserve preserving rare and endangered Indian plant species.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/The_Trees_Have_Eyes_%284927973508%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/The_Trees_Have_Eyes_%284927973508%29.jpg",
+        "alt": "Botanic Garden of Indian Republic — undefined"
+      },
       "photos": [
         {
           "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pink_blossom_and_green_leaves_%28Unsplash%29.jpg",
@@ -306,5 +318,5 @@
   },
   "hotelSourceTried": true,
   "hotelsRealSourceCount": 7,
-  "updatedAt": "2026-09-24T11:21:20.136Z"
+  "updatedAt": "2026-10-03T21:58:49.780Z"
 }

@@ -217,7 +217,10 @@
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "The Dudhaganga (or Dudhganga, Doodhganga) is a right-bank tributary river of the Krishna in western India. It rises in Kolhapur district of Maharashtra in the Western Ghats and flows eastward through the Kolhapur and Belgaum districts in Karnataka before joining the Krishna.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Prime_Minister_Modi_at_Veerbhadra_Temple.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Prime_Minister_Modi_at_Veerbhadra_Temple.jpg",
+        "alt": "Dudhaganga — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/2/27/Diving_Embrace-_Shiv_Ling_and_temples.jpg",
         "https://images.pexels.com/photos/33968966/pexels-photo-33968966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -233,7 +236,10 @@
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Kopeshwar Temple is at Khidrapur, Kolhapur district, Maharashtra. It is a Hindu temple dedicated to Shiva.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Basavannah_-_Monolithic_Bull_%40_Lepakshi_02.JPG",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Basavannah_-_Monolithic_Bull_%40_Lepakshi_02.JPG",
+        "alt": "Kopeshwar Temple — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/0/0b/Basavanna.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/1_massive_Nandi_Bull_sculpture_in_Lepakshi_India_2017.jpg",
@@ -249,7 +255,10 @@
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "The Panchganga River is one of the important rivers of India located in Maharashtra. In English, the name translates as \"Five Rivers\".",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/LEPAKSHI_TEMPLE.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/LEPAKSHI_TEMPLE.jpg",
+        "alt": "Panchganga River — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/7/76/LEPAKSHI_TEMPLE_02.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/b/bb/LEPAKSHI_TEMPLE_03.jpg",
@@ -265,7 +274,10 @@
       "duration": "1–2 hrs",
       "rating": 4.1,
       "description": "Diggewadi is a village in Raybag taluk in Belgaum Panchayat in the southern state of Karnataka, India. The official language of Diggewadi is Kannada.",
-      "image": "https://images.unsplash.com/photo-1666006903005-29e1ea1c8a47?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TGVwYWtzaGklMjB0ZW1wbGUlMjBzdG9uZSUyMGNhcnZpbmdzfGVufDB8MHx8fDE3OTAyNTEzMjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1666006903005-29e1ea1c8a47?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8Mnx8TGVwYWtzaGklMjB0ZW1wbGUlMjBzdG9uZSUyMGNhcnZpbmdzfGVufDB8MHx8fDE3OTAyNTEzMjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80",
+        "alt": "Diggewadi — undefined"
+      },
       "photos": [
         "https://images.unsplash.com/photo-1789726262930-27105b1a4053?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8M3x8TGVwYWtzaGklMjB0ZW1wbGUlMjBzdG9uZSUyMGNhcnZpbmdzfGVufDB8MHx8fDE3OTAyNTEzMjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80",
         "https://images.unsplash.com/photo-1789726263107-d5814ea651c3?ixid=M3wxMDMzNjUxfDB8MXxzZWFyY2h8NHx8TGVwYWtzaGklMjB0ZW1wbGUlMjBzdG9uZSUyMGNhcnZpbmdzfGVufDB8MHx8fDE3OTAyNTEzMjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1920&q=80",
@@ -488,5 +500,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:15:11.442Z"
+  "updatedAt": "2026-10-03T21:58:48.825Z"
 }

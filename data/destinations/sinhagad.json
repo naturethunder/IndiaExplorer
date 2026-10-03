@@ -217,7 +217,10 @@
       "duration": "1–2 hrs",
       "rating": 4.4,
       "description": "Donje is a village in the Haveli taluka of Pune district in Maharashtra State, India. Tanaji Malusare Path (Sinhagad Road), which starts at Sarasbaug junction, terminates at Sinhagad Fort or Paitha at Donje village.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sinhgad_%28kondhana%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sinhgad_%28kondhana%29.jpg",
+        "alt": "Donje, Maharashtra — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/4/41/Top_view_of_Kalyan_Darwaza%2C_Sinhgad_Fort%2C_Pune.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/5/54/Pathway_to_Kalyan_Darwaza%2C_Sinhgad_Fort%2C_Pune.jpg",
@@ -233,7 +236,10 @@
       "duration": "1–2 hrs",
       "rating": 4.7,
       "description": "Zapurza Museum of Art & Culture is a museum in Kudje village, 25 kilometers from the city of Pune in Maharashtra, India. it opened to the public in May 2022.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Kalyan_darwaza%2C_Sinhgad_Fort%2C_Pune.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Kalyan_darwaza%2C_Sinhgad_Fort%2C_Pune.jpg",
+        "alt": "Zapurza Museum of Art & Culture — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/5/5b/Stairs_from_Kalyan_Darwaza%2C_Sinhgad_Fort%2C_Pune.jpg",
         "https://images.pexels.com/photos/39198437/pexels-photo-39198437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -249,7 +255,10 @@
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "The National Defence Academy (NDA) is the joint defence academy of the Indian Armed Forces. Here, cadets of the Indian Army, the Indian Navy, and the Indian Air Force train together before they go on to their respective service academies for further pre-commission training.",
-      "image": "https://images.pexels.com/photos/29201402/pexels-photo-29201402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/29201402/pexels-photo-29201402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "National Defence Academy (India) — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/13308431/pexels-photo-13308431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/12988566/pexels-photo-12988566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -445,5 +454,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:11:11.176Z"
+  "updatedAt": "2026-10-03T21:58:49.137Z"
 }

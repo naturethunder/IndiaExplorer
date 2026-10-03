@@ -75,7 +75,8 @@ class WikimediaProvider {
       if (!ii) continue;
 
       const fullUrl = ii.url || ii.thumburl;
-      if (!fullUrl || !/\.(jpg|jpeg|png|webp)$/i.test(fullUrl)) continue;
+      const cleanUrl = (fullUrl || '').split('?')[0];
+      if (!cleanUrl || !/\.(jpg|jpeg|png|webp)$/i.test(cleanUrl)) continue;
 
       // Filter out logos, maps, diagrams, flags
       const title = (page.title || '').toLowerCase();

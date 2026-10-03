@@ -218,7 +218,10 @@
       "duration": "1–2 hrs",
       "rating": 4.1,
       "description": "Singchung is a census town in West Kameng district, Arunachal Pradesh, India. As per 2011 Census of India, Singchung has a total population of 14,534 people including 9260 males and 5,274 females.",
-      "image": "https://images.pexels.com/photos/38018782/pexels-photo-38018782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/38018782/pexels-photo-38018782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Singchung — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/36410551/pexels-photo-36410551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/4862615/pexels-photo-4862615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -397,5 +400,5 @@
   },
   "hotelsRealSourceCount": 9,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:14:36.699Z"
+  "updatedAt": "2026-10-03T21:58:48.521Z"
 }

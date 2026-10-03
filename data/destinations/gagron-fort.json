@@ -216,7 +216,10 @@
       "duration": "1–2 hrs",
       "rating": 4.2,
       "description": "The Ahu River is an Indian river that starts its journey from the Tonkra hill in Agar tehsil in Agar Malwa district. It flows through the north-western boundary of the district, forming a natural border with Jhalawar District, Rajasthan.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Amer_Fort_Now_on_World_Heritage_List.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Amer_Fort_Now_on_World_Heritage_List.jpg",
+        "alt": "Ahu River — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/a/ad/News_Anchor_Mahesh_Kumar.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/0/09/Garh_Palace%2CJhalawar%2CRajasthan%2C_India._02.jpg",
@@ -232,7 +235,10 @@
       "duration": "1–2 hrs",
       "rating": 4.8,
       "description": "The Garh (or Fort) Palace, Jhalawar, was a royal residence and former administrative headquarters of the rulers of the Jhalawar State in Jhalawar, Rajasthan, India.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Gallery_in_Jhalawar_Museum.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Gallery_in_Jhalawar_Museum.jpg",
+        "alt": "Garh Palace, Jhalawar — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/9551082/pexels-photo-9551082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/3339903/pexels-photo-3339903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -248,7 +254,10 @@
       "duration": "1–2 hrs",
       "rating": 4.6,
       "description": "Jhalawar ([dʒʱaːlaːʋaːɽ] ) is a city, municipal council and headquarter in Jhalawar district of the Indian state of Rajasthan. It is located in the southeastern part of the state.",
-      "image": "https://images.pexels.com/photos/29433400/pexels-photo-29433400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "image": {
+        "src": "https://images.pexels.com/photos/29433400/pexels-photo-29433400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Jhalawar — undefined"
+      },
       "photos": [
         "https://images.pexels.com/photos/29433244/pexels-photo-29433244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "https://images.pexels.com/photos/29433252/pexels-photo-29433252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -264,7 +273,10 @@
       "duration": "1–2 hrs",
       "rating": 4.3,
       "description": "Jhalawar State was a 15-gun salute (later 13)Princely State in India during the British Raj. It was located in the south eastern historic Hadoti region of Rajputana .The main town in the state was Jhalawar.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Heritage_Architecture_at_49_Poyang_Street.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Heritage_Architecture_at_49_Poyang_Street.jpg",
+        "alt": "Jhalawar State — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/67/Heritage_Architecture_at_333_Shengli_Street.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Architecture_and_Heritage-Mul_Chowk%2C_Patan.jpg",
@@ -280,7 +292,10 @@
       "duration": "1–2 hrs",
       "rating": 4.8,
       "description": "Jhalrapatan is a city and municipality of India in Jhalawar district in the state of Rajasthan. Its population is approximately 37,506.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/West_Yorkshire_Society_of_Architects%2C_Heritage_Architecture_by_DM_Jones_%281%29.jpg",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/West_Yorkshire_Society_of_Architects%2C_Heritage_Architecture_by_DM_Jones_%281%29.jpg",
+        "alt": "Jhalrapatan — undefined"
+      },
       "photos": [
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/West_Yorkshire_Society_of_Architects%2C_Heritage_Architecture_by_DM_Jones_%2810%29.JPG",
         "https://upload.wikimedia.org/wikipedia/commons/f/f7/West_Yorkshire_Society_of_Architects%2C_Heritage_Architecture_by_DM_Jones_%2811%29.JPG",
@@ -487,5 +502,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-09-24T12:09:49.890Z"
+  "updatedAt": "2026-10-03T21:58:49.349Z"
 }
