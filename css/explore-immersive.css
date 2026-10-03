@@ -196,7 +196,7 @@ body.explore-immersive :focus-visible {
   display: block;
   font-size: 0.85em;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--border);
 }
 
 .gold-gradient-text {
@@ -339,7 +339,7 @@ body.explore-immersive :focus-visible {
 .quick-tag-btn:active,
 .quick-tag-btn.active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   font-weight: 600 !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
   border-bottom: 2.5px solid #F5C542 !important;
@@ -580,12 +580,12 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
 }
 
 .category-tabs-container {
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  scroll-behavior: smooth !important;
-  -webkit-overflow-scrolling: touch !important;
-  overscroll-behavior-x: contain !important;
-  touch-action: pan-x pan-y !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
   cursor: grab;
   width: 100%;
   padding-bottom: 2px;
@@ -599,9 +599,9 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
 }
 
 .category-tabs-container.is-dragging {
-  cursor: grabbing !important;
-  user-select: none !important;
-  scroll-behavior: auto !important;
+  cursor: grabbing;
+  user-select: none;
+  scroll-behavior: auto;
 }
 
 .category-tabs-track {
@@ -609,7 +609,7 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   align-items: center;
   gap: 8px;
   min-width: max-content;
-  overflow: visible !important;
+  overflow: visible;
   padding: 4px 2px;
 }
 
@@ -673,7 +673,7 @@ html[data-theme="light"] .category-scroll-arrow {
 }
 
 html[data-theme="light"] .category-scroll-arrow:hover {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border-color: #D97706 !important;
   color: #92400E !important;
   box-shadow: 0 6px 16px rgba(217, 119, 6, 0.2) !important;
@@ -718,7 +718,7 @@ html[data-theme="light"] .category-scroll-arrow:hover {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
   border-bottom: 2.5px solid #F5C542 !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   font-weight: 600 !important;
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   border-radius: var(--exp-radius-md) !important;
@@ -922,14 +922,14 @@ html[data-theme="light"] .category-scroll-arrow:hover {
 
 html:not([data-theme="light"]) .custom-select option {
   background-color: #0b1814 !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   padding: 8px;
 }
 
 html[data-theme="light"] .custom-select option,
 html[data-theme="light"] select option {
-  background-color: #FFFFFF !important;
-  color: #0F172A !important;
+  background-color: var(--white) !important;
+  color: var(--text) !important;
   padding: 8px !important;
 }
 
@@ -1284,7 +1284,7 @@ html[data-theme="light"] select option {
   border-radius: 9999px;
   background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
   border: 1px solid rgba(255, 243, 196, 0.6);
-  color: #080A0F;
+  color: var(--bg-obsidian);
   font-size: 9.5px;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -1350,7 +1350,7 @@ html[data-theme="light"] select option {
   line-height: 1.15;
   letter-spacing: -0.015em;
   margin: 0 0 3px;
-  color: #ffffff;
+  color: var(--white);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
@@ -1527,7 +1527,7 @@ html[data-theme="light"] select option {
 .load-more-luxury-btn:hover,
 .load-more-luxury-btn:active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   border-color: rgba(245, 197, 66, 0.4) !important;
   border-bottom: 2.5px solid #F5C542 !important;
   transform: translateY(-2px) !important;
@@ -1540,7 +1540,7 @@ html[data-theme="light"] select option {
   padding: 2px 8px;
   border-radius: 9999px;
   background: #F5C542;
-  color: #080A0F;
+  color: var(--bg-obsidian);
   font-size: 11px;
   font-weight: 800;
 }
@@ -1549,8 +1549,8 @@ html[data-theme="light"] select option {
 html[data-theme="light"] .load-more-luxury-btn,
 [data-theme="light"] .load-more-luxury-btn {
   background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%) !important;
-  color: #FFFFFF !important;
-  border: 1.5px solid #0F172A !important;
+  color: var(--white) !important;
+  border: 1.5px solid var(--text) !important;
   border-bottom: 3px solid #D97706 !important;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.22), 0 2px 6px rgba(0, 0, 0, 0.08) !important;
 }
@@ -1570,7 +1570,7 @@ html[data-theme="light"] .load-more-luxury-btn:active,
 html[data-theme="light"] .load-more-badge,
 [data-theme="light"] .load-more-badge {
   background: #F5C542 !important;
-  color: #080A0F !important;
+  color: var(--bg-obsidian) !important;
   font-weight: 800 !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
 }
@@ -1705,7 +1705,7 @@ html[data-theme="light"] .load-more-badge,
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    scroll-behavior: auto;
   }
 
   .explore-immersive-bg {
@@ -1761,7 +1761,7 @@ body.explore-immersive input[type="button"]:active,
 body.explore-immersive input[type="submit"]:hover,
 body.explore-immersive input[type="submit"]:active {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   font-weight: 600 !important;
   border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
   border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
@@ -1821,7 +1821,7 @@ html[data-theme="light"] body.explore-immersive {
 
   background-color: #FAF9F6 !important;
   background: #FAF9F6 !important;
-  color: #0F172A !important;
+  color: var(--text) !important;
 }
 
 /* Background Layers: Ethereal daylight mist with subtle artistic landscape */
@@ -1847,11 +1847,11 @@ html[data-theme="light"] body.explore-immersive .explore-ambient-glow {
 
 /* ─── Hero Section: Over Soft Daylight Porcelain Canvas ───────────────────── */
 html[data-theme="light"] body.explore-immersive .explore-hero-display {
-  color: #0F172A !important;
+  color: var(--text) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .explore-hero-display .hero-line-1 {
-  color: #0F172A !important;
+  color: var(--text) !important;
   text-shadow: none !important;
 }
 
@@ -1900,7 +1900,7 @@ html[data-theme="light"] body.explore-immersive .stat-metric-card {
   -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   border: 1px solid rgba(255, 255, 255, 0.95) !important;
   box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
+    inset 0 1px 0 0 var(--white),
     0 4px 16px -2px rgba(15, 23, 42, 0.05),
     0 10px 28px -4px rgba(15, 23, 42, 0.06) !important;
   border-radius: 1.25rem !important;
@@ -1908,10 +1908,10 @@ html[data-theme="light"] body.explore-immersive .stat-metric-card {
 }
 
 html[data-theme="light"] body.explore-immersive .stat-metric-card:hover {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border-color: rgba(217, 119, 6, 0.5) !important;
   box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
+    inset 0 1px 0 0 var(--white),
     0 16px 36px -6px rgba(15, 23, 42, 0.12),
     0 0 20px -2px rgba(217, 119, 6, 0.20) !important;
   transform: translateY(-4px) !important;
@@ -1931,7 +1931,7 @@ html[data-theme="light"] body.explore-immersive .stat-metric-card dd {
 /* ─── Curated Discovery Container & Search ──────────────────────────────── */
 html[data-theme="light"] body.explore-immersive .curated-discovery,
 html[data-theme="light"] body.explore-immersive .curated-box {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border: 1px solid rgba(15, 23, 42, 0.08) !important;
   box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05) !important;
 }
@@ -1943,28 +1943,28 @@ html[data-theme="light"] body.explore-immersive .discovery-live-badge {
 }
 
 html[data-theme="light"] body.explore-immersive .search-input-field {
-  background: #FFFFFF !important;
-  color: #0F172A !important;
+  background: var(--white) !important;
+  color: var(--text) !important;
   border: 1.5px solid #CBD5E1 !important;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .search-input-field:focus {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border-color: #D97706 !important;
   box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .search-input-field::placeholder {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .search-lens-icon {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .search-clear-btn {
-  background: #E2E8F0 !important;
+  background: var(--border) !important;
   color: #475569 !important;
 }
 
@@ -1992,7 +1992,7 @@ html[data-theme="light"] body.explore-immersive .filter-glass-card {
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border: 1px solid rgba(255, 255, 255, 0.95) !important;
   box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
+    inset 0 1px 0 0 var(--white),
     0 4px 16px -2px rgba(15, 23, 42, 0.05),
     0 12px 32px -4px rgba(15, 23, 42, 0.07) !important;
   border-radius: 1.25rem !important;
@@ -2011,13 +2011,13 @@ html[data-theme="light"] body.explore-immersive .filter-label {
 }
 
 html[data-theme="light"] body.explore-immersive .custom-select {
-  background-color: #FFFFFF !important;
+  background-color: var(--white) !important;
   border: 1.5px solid #CBD5E1 !important;
   color: #1E293B !important;
 }
 
 html[data-theme="light"] body.explore-immersive .select-chevron {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 /* ─── Category Bar & Filter Pills ───────────────────────────────────────── */
@@ -2043,8 +2043,8 @@ html[data-theme="light"] body.explore-immersive .dest-filter-btn {
 html[data-theme="light"] body.explore-immersive .category-pill-btn:hover,
 html[data-theme="light"] body.explore-immersive .quick-tag-btn:hover,
 html[data-theme="light"] body.explore-immersive .dest-filter-btn:hover {
-  background: #F8FAFC !important;
-  color: #0F172A !important;
+  background: var(--bg) !important;
+  color: var(--text) !important;
   border-color: #94A3B8 !important;
 }
 
@@ -2066,7 +2066,7 @@ html[data-theme="light"] body.explore-immersive .dest-card-link {
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border: 1px solid rgba(255, 255, 255, 0.95) !important;
   box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
+    inset 0 1px 0 0 var(--white),
     0 2px 4px rgba(15, 23, 42, 0.04),
     0 12px 32px -4px rgba(15, 23, 42, 0.07) !important;
   border-radius: 1.35rem !important;
@@ -2075,10 +2075,10 @@ html[data-theme="light"] body.explore-immersive .dest-card-link {
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-link:hover {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border-color: rgba(217, 119, 6, 0.45) !important;
   box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
+    inset 0 1px 0 0 var(--white),
     0 20px 42px -6px rgba(15, 23, 42, 0.13),
     0 0 24px -2px rgba(217, 119, 6, 0.22) !important;
   transform: translateY(-6px) !important;
@@ -2087,7 +2087,7 @@ html[data-theme="light"] body.explore-immersive .dest-card-link:hover {
 /* INVARIANT: Card Media Overlay MUST STAY WHITE over dark photos! */
 html[data-theme="light"] body.explore-immersive .dest-card-header-overlay .dest-card-title,
 html[data-theme="light"] body.explore-immersive .dest-card-title {
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85) !important;
 }
 
@@ -2108,7 +2108,7 @@ html[data-theme="light"] body.explore-immersive .dest-card-calligraphy-state {
 
 /* Card Body in Light Mode */
 html[data-theme="light"] body.explore-immersive .dest-card-body {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-desc {
@@ -2117,19 +2117,19 @@ html[data-theme="light"] body.explore-immersive .dest-card-desc {
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-rating .rating-num {
-  color: #0F172A !important;
+  color: var(--text) !important;
   font-weight: 700 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-rating .review-cnt {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-best-season {
   background: #FEF3C7 !important;
   color: #92400E !important;
   border: 1px solid rgba(217, 119, 6, 0.28) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF !important;
+  box-shadow: inset 0 1px 0 0 var(--white) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-best-season svg {
@@ -2147,7 +2147,7 @@ html[data-theme="light"] body.explore-immersive .dest-card-footer {
 }
 
 html[data-theme="light"] body.explore-immersive .dest-dist-hint {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-dist-hint svg {
@@ -2155,7 +2155,7 @@ html[data-theme="light"] body.explore-immersive .dest-dist-hint svg {
 }
 
 html[data-theme="light"] body.explore-immersive .price-prefix {
-  color: #64748B !important;
+  color: var(--text-muted) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .price-val {
@@ -2166,15 +2166,15 @@ html[data-theme="light"] body.explore-immersive .price-val {
 /* ─── Sidebar Filter Panel ──────────────────────────────────────────────── */
 html[data-theme="light"] body.explore-immersive #filtersAside,
 html[data-theme="light"] body.explore-immersive .explore-sidebar {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border: 1px solid rgba(217, 119, 6, 0.16) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 24px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.04) !important;
+  box-shadow: inset 0 1px 0 0 var(--white), 0 4px 24px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.04) !important;
 }
 
 html[data-theme="light"] body.explore-immersive #filtersAside h3,
 html[data-theme="light"] body.explore-immersive #filtersAside h4,
 html[data-theme="light"] body.explore-immersive #filtersAside label {
-  color: #0F172A !important;
+  color: var(--text) !important;
 }
 
 html[data-theme="light"] body.explore-immersive #filtersAside .filter-count,
@@ -2188,7 +2188,7 @@ html[data-theme="light"] body.explore-immersive #filtersAside select,
 html[data-theme="light"] body.explore-immersive #filtersAside input[type="text"],
 html[data-theme="light"] body.explore-immersive #filtersAside input[type="number"] {
   background: #FAF8F5 !important;
-  color: #0F172A !important;
+  color: var(--text) !important;
   border: 1px solid rgba(217, 119, 6, 0.22) !important;
 }
 
@@ -2200,16 +2200,16 @@ html[data-theme="light"] body.explore-immersive .results-meta-bar {
 
 html[data-theme="light"] body.explore-immersive #filterCount,
 html[data-theme="light"] body.explore-immersive .results-count-number {
-  color: #0F172A !important;
+  color: var(--text) !important;
   font-weight: 700 !important;
 }
 
 /* Pagination & Controls */
 html[data-theme="light"] body.explore-immersive .pagination-btn {
-  background: #FFFFFF !important;
-  color: #0F172A !important;
+  background: var(--white) !important;
+  color: var(--text) !important;
   border: 1px solid rgba(217, 119, 6, 0.20) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  box-shadow: inset 0 1px 0 0 var(--white), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .pagination-btn:hover {
@@ -2220,7 +2220,7 @@ html[data-theme="light"] body.explore-immersive .pagination-btn:hover {
 
 html[data-theme="light"] body.explore-immersive .pagination-btn.active {
   background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   border-color: #B45309 !important;
   box-shadow: 0 4px 14px rgba(180, 83, 9, 0.35) !important;
 }
@@ -2228,16 +2228,16 @@ html[data-theme="light"] body.explore-immersive .pagination-btn.active {
 /* ─── Curated Discovery Quickstart Card (Light Mode) ────────── */
 html[data-theme="light"] body.explore-immersive .hero-quick-card,
 html[data-theme="light"] .hero-quick-card {
-  background: #FFFFFF !important;
+  background: var(--white) !important;
   border: 1px solid rgba(217, 119, 6, 0.20) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 16px 40px -8px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.08) !important;
+  box-shadow: inset 0 1px 0 0 var(--white), 0 16px 40px -8px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.08) !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-title,
 html[data-theme="light"] .quick-title {
-  color: #0F172A !important;
+  color: var(--text) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-subtitle,
@@ -2262,7 +2262,7 @@ html[data-theme="light"] .quick-tag-btn {
   background: #FAF8F5 !important;
   border: 1px solid rgba(217, 119, 6, 0.18) !important;
   color: #1E293B !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  box-shadow: inset 0 1px 0 0 var(--white), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-tag-btn svg,
