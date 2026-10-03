@@ -57,8 +57,15 @@ export function searchDestinations(destinations, query) {
     const regionClean = cleanSearchText(d.region);
     const typeClean = cleanSearchText(d.type);
     const shortClean = cleanSearchText(d.short);
-    const placesClean = (d.places || []).map(cleanSearchText);
-    const placesNorm = (d.places || []).map(normalizeSearchWords);
+    const placeNames = d.placeNames || d.places || [];
+    const placesClean = placeNames.map(cleanSearchText);
+    const placesNorm = placeNames.map(normalizeSearchWords);
+    const placeSuffixes = [];
+    placesNorm.forEach(function (p) {
+      const words = p.split(' ').filter(Boolean);
+      for (let w = 0; w < words.length; w++) placeSuffixes.push(words.slice(w).join(''));
+    });
+    const placeHas = function (q) { return placeSuffixes.some(function (s) { return s.startsWith(q); }); };
     const featuresClean = (d.features || []).map(cleanSearchText);
 
     // 1. Direct single-field or substring match without spaces
@@ -68,7 +75,7 @@ export function searchDestinations(destinations, query) {
       stateClean.includes(qClean) ||
       regionClean.includes(qClean) ||
       typeClean.includes(qClean) ||
-      placesClean.some(function (p) { return p.includes(qClean); })
+      placeHas(qClean)
     );
 
     // 2. Direct title + state combination (e.g., "ootytamilnadu", "tajmahaluttarpradesh")
@@ -110,7 +117,7 @@ export function searchDestinations(destinations, query) {
           stateNorm.includes(w) ||
           regionClean.includes(wn) ||
           typeClean.includes(wn) ||
-          placesClean.some(function (p) { return p.includes(wn); }) ||
+          placeHas(wn) ||
           placesNorm.some(function (p) { return p.includes(w); }) ||
           featuresClean.some(function (f) { return f.includes(wn); }) ||
           shortClean.includes(wn);
@@ -140,7 +147,7 @@ export function searchDestinations(destinations, query) {
       // Place exact match
       if (placesClean.includes(qClean)) score += 600;
       else if (placesClean.some(function (p) { return p.startsWith(qClean); })) score += 300;
-      else if (placesClean.some(function (p) { return p.includes(qClean); })) score += 180;
+      else if (placeHas(qClean)) score += 180;
 
       // Multi-word scoring
       qWordsClean.forEach(function (wn) {
@@ -153,7 +160,7 @@ export function searchDestinations(destinations, query) {
         else if (stateClean.includes(wn)) score += 100;
 
         if (placesClean.some(function (p) { return p === wn; })) score += 160;
-        else if (placesClean.some(function (p) { return p.includes(wn); })) score += 90;
+        else if (placeHas(wn)) score += 90;
       });
 
       // Tie breaker for rating & reviews
@@ -172,7 +179,7 @@ export function searchDestinations(destinations, query) {
         if (stateClean === wn) partialScore += 200;
         else if (stateClean.includes(wn)) partialScore += 80;
 
-        if (placesClean.some(function (p) { return p.includes(wn); })) partialScore += 60;
+        if (placeHas(wn)) partialScore += 60;
       });
       partialScore += Math.min((d.rating || 0) * 2, 10);
       scoredPartial.push({ d: d, score: partialScore });

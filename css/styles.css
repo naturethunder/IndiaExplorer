@@ -43,6 +43,23 @@
   --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html[data-theme="light"],
+:root[data-theme="light"] {
+  --primary: #B45309;
+  --primary-dark: #92400E;
+  --primary-light: #FEF3C7;
+  --primary-rgb: 180, 83, 9;
+  --secondary: #D97706;
+  --accent: #B45309;
+  --gold-glow: 0 0 25px rgba(217, 119, 6, 0.22);
+  --gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 50%, #78350F 100%);
+  --border: rgba(217, 119, 6, 0.16);
+  --bg: #FAF9F6;
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(180, 83, 9, 0.03);
+  --shadow: 0 4px 16px rgba(15, 23, 42, 0.06), 0 2px 6px rgba(180, 83, 9, 0.04);
+  --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.12);
+}
+
 /* ─── UNIVERSAL THEME TOGGLE BUTTON ────────────────────────── */
 .theme-toggle-btn {
   display: inline-flex;
@@ -4559,24 +4576,25 @@ html[data-theme="light"] .go-search-wrap .search-icon {
 }
 html[data-theme="light"] .go-guide-card {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 8px rgba(15, 23, 42, 0.04) !important;
 }
 html[data-theme="light"] .go-guide-card:hover {
-  background: #F8FAFC !important;
-  border-color: #CBD5E1 !important;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08) !important;
+  background: #FAF8F5 !important;
+  border-color: rgba(217, 119, 6, 0.38) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 6px 18px rgba(217, 119, 6, 0.12) !important;
 }
 html[data-theme="light"] .go-guide-thumb {
-  border-color: #E2E8F0 !important;
+  border-color: rgba(217, 119, 6, 0.16) !important;
 }
 html[data-theme="light"] .go-size-tag {
-  background: #F1F5F9 !important;
-  color: #64748B !important;
+  background: #FEF3C7 !important;
+  color: #92400E !important;
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
 }
 html[data-theme="light"] .go-btn-delete {
-  background: #F8FAFC !important;
-  border: 1px solid #E2E8F0 !important;
+  background: #FAF8F5 !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
   color: #64748B !important;
 }
 html[data-theme="light"] .go-btn-delete:hover {
@@ -4600,8 +4618,8 @@ html[data-theme="light"] .go-emergency-banner p {
 }
 html[data-theme="light"] .go-sos-call-card {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.04) !important;
 }
 html[data-theme="light"] .go-sos-call-card:hover {
   background: #FEF2F2 !important;
@@ -4613,10 +4631,10 @@ html[data-theme="light"] .go-sos-icon-slot {
 }
 html[data-theme="light"] .go-accordion {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
 }
 html[data-theme="light"] .go-acc-body {
-  border-top: 1px solid #F1F5F9 !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.12) !important;
 }
 html[data-theme="light"] .go-check-list {
   color: #475569 !important;
@@ -4625,8 +4643,8 @@ html[data-theme="light"] .go-storage-card,
 html[data-theme="light"] .go-install-card,
 html[data-theme="light"] .go-clear-box {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.04) !important;
 }
 html[data-theme="light"] .go-progress-track {
   background: #F1F5F9 !important;
@@ -4635,34 +4653,35 @@ html[data-theme="light"] .go-progress-track {
 /* 4. Pocket Cheat Sheet Modal in Light Mode */
 html[data-theme="light"] .pocket-modal-card {
   background: #FFFFFF !important;
-  border: 1px solid rgba(229, 192, 123, 0.5) !important;
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25) !important;
+  border: 1px solid rgba(217, 119, 6, 0.28) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 24px 64px rgba(15, 23, 42, 0.18), 0 0 32px rgba(217, 119, 6, 0.12) !important;
   color: #1E293B !important;
 }
 html[data-theme="light"] .pocket-modal-header {
-  background: #F8FAFC !important;
-  border-bottom: 1px solid #E2E8F0 !important;
+  background: #FAF8F5 !important;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.16) !important;
 }
 html[data-theme="light"] .pocket-print-btn,
 html[data-theme="light"] .pocket-close-btn {
-  background: #F1F5F9 !important;
-  border: 1px solid #CBD5E1 !important;
+  background: #FAF8F5 !important;
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
   color: #334155 !important;
 }
 html[data-theme="light"] .pocket-print-btn:hover,
 html[data-theme="light"] .pocket-close-btn:hover {
-  background: #E2E8F0 !important;
-  color: #0F172A !important;
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #78350F !important;
 }
 html[data-theme="light"] .cheat-section {
-  background: #F8FAFC !important;
-  border: 1px solid #E2E8F0 !important;
+  background: #FAF8F5 !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
 }
 html[data-theme="light"] .cheat-section-title {
   color: #B45309 !important;
 }
 html[data-theme="light"] .cheat-place-row {
-  border-bottom-color: #E2E8F0 !important;
+  border-bottom-color: rgba(217, 119, 6, 0.12) !important;
 }
 html[data-theme="light"] .cheat-sos-btn {
   background: #FEF2F2 !important;

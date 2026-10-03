@@ -241,8 +241,8 @@ indexData.destinations.forEach(d => {
   }
 
   // 1. Content depth check (overview, description, short)
-  const ov = full.overview || {};
-  const descriptionText = ov.description || full.description || ov.about || ov.short || full.short || '';
+  const ov = typeof full.overview === 'string' ? {} : (full.overview || {});
+  const descriptionText = typeof full.overview === 'string' ? full.overview : (ov.description || full.description || ov.about || ov.short || full.short || '');
   const wordCount = descriptionText.trim().split(/\s+/).filter(Boolean).length;
   if (wordCount < 15) {
     auditResults.destinations.thinPages.push({ slug: d.slug, title: full.title, words: wordCount });

@@ -66,8 +66,6 @@ body.dest-immersive {
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
   z-index: 0 !important;
   background-color: #07090E !important;
   background-image:
@@ -97,8 +95,6 @@ body.dest-immersive {
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
   z-index: 1 !important;
   background: radial-gradient(ellipse 85% 75% at 50% 35%, transparent 60%, rgba(4, 6, 10, 0.65) 100%) !important;
   pointer-events: none !important;
@@ -1111,6 +1107,11 @@ body.dest-immersive .form-input:focus {
   border-color: var(--imm-accent);
   box-shadow: 0 0 0 3px var(--imm-accent-glow);
   outline: none;
+}
+
+html:not([data-theme="light"]) body.dest-immersive .form-input:focus {
+  border-color: var(--imm-accent) !important;
+  box-shadow: 0 0 0 3px var(--imm-accent-glow) !important;
 }
 
 body.dest-immersive .info-card.text-center .info-card-icon {
@@ -4174,7 +4175,8 @@ html[data-theme="light"] body.dest-immersive .budget-partners-title {
 
 html[data-theme="light"] body.dest-immersive .budget-partner-card {
   background: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  border: 1px solid rgba(217, 119, 6, 0.16);
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 8px rgba(15, 23, 42, 0.04);
 }
 
 html[data-theme="light"] body.dest-immersive .budget-partner-card-name {
@@ -4183,7 +4185,7 @@ html[data-theme="light"] body.dest-immersive .budget-partner-card-name {
 
 html[data-theme="light"] body.dest-immersive .budget-partner-card:hover {
   border-color: #D97706;
-  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.12);
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 6px 18px rgba(217, 119, 6, 0.14);
 }
 
 
@@ -4200,12 +4202,12 @@ html[data-theme="light"] body.dest-immersive .budget-partner-card:hover {
 
 /* ─── SIMILAR DESTINATIONS — Section Border & BG ───────────────────────── */
 html[data-theme="light"] body.dest-immersive #similarSection {
-  border-top: 2px solid #E2E8F0 !important;
-  background: linear-gradient(180deg, #F1F5F9 0%, #F8FAFC 100%) !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.18) !important;
+  background: linear-gradient(180deg, #FBF9F5 0%, #FAF8F5 100%) !important;
 }
 
 /* "More Like This" eyebrow pill — amber-tinted for light */
-html[data-theme="light"] body.dest-immersive #similarSection .inline-flex.items-center.gap-2.px-3\\.5,
+html[data-theme="light"] body.dest-immersive #similarSection .inline-flex.items-center.gap-2.px-3\.5,
 html[data-theme="light"] body.dest-immersive .dest-similar-header [class*="bg-amber-500/10"],
 html[data-theme="light"] body.dest-immersive .dest-similar-header [class*="border-amber-500"] {
   background: rgba(217, 119, 6, 0.10) !important;
@@ -4247,12 +4249,12 @@ html[data-theme="light"] body.dest-immersive #similarExploreBtn:hover {
 /* Similar grid cards — override dark Tailwind classes bg-slate-900/85 border-white/15 */
 html[data-theme="light"] body.dest-immersive #similar-grid a {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 18px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.06) !important;
 }
 html[data-theme="light"] body.dest-immersive #similar-grid a:hover {
   border-color: rgba(217, 119, 6, 0.5) !important;
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.15) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 14px 36px rgba(15, 23, 42, 0.10), 0 0 24px rgba(217, 119, 6, 0.16) !important;
   transform: translateY(-4px) !important;
 }
 
@@ -4453,8 +4455,8 @@ html[data-theme="light"] body.dest-immersive .grid.grid-cols-1.sm\:grid-cols-2.g
 /* ─── TOP PLACES cards — extra padding for light mode ──────────────────── */
 html[data-theme="light"] body.dest-immersive #panel-overview .card {
   padding: 0 !important; /* p-0 cards, no override needed — image fills */
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.05) !important;
-  border: 1px solid #E2E8F0 !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 18px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.06) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
   border-radius: 1rem !important;
 }
 html[data-theme="light"] body.dest-immersive #panel-overview .card .p-3 {
@@ -4467,10 +4469,14 @@ html[data-theme="light"] body.dest-immersive #panel-places .grid.grid-cols-1.md\
 }
 /* Places card: the flex card with p-0 — add inner div padding */
 html[data-theme="light"] body.dest-immersive #panel-places .card.p-0 {
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 16px rgba(15, 23, 42, 0.05), 0 10px 24px -4px rgba(180, 83, 9, 0.05) !important;
   border-radius: 1rem !important;
   overflow: hidden !important;
+}
+html[data-theme="light"] body.dest-immersive #panel-places .card.p-0:hover {
+  border-color: rgba(217, 119, 6, 0.38) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 10px 28px rgba(15, 23, 42, 0.08), 0 0 20px rgba(217, 119, 6, 0.12) !important;
 }
 html[data-theme="light"] body.dest-immersive #panel-places .card.p-0 .flex-1.p-3 {
   padding: 0.875rem 1rem !important;
@@ -4484,8 +4490,8 @@ html[data-theme="light"] body.dest-immersive #panel-places .flex.gap-2.overflow-
 /* ─── STAYS PANEL — card padding bump ───────────────────────────────────── */
 html[data-theme="light"] body.dest-immersive #panel-stays .card.p-5 {
   padding: 1.5rem !important;
-  border: 1px solid #E2E8F0 !important;
-  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.07) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 6px 24px rgba(15, 23, 42, 0.06), 0 10px 28px -4px rgba(180, 83, 9, 0.05) !important;
   border-radius: 1.125rem !important;
 }
 html[data-theme="light"] body.dest-immersive #panel-stays .space-y-4 {
@@ -4493,7 +4499,7 @@ html[data-theme="light"] body.dest-immersive #panel-stays .space-y-4 {
 }
 /* Stays card separator in light mode */
 html[data-theme="light"] body.dest-immersive #panel-stays .border-t.md\:border-t-0.border-gray-100 {
-  border-color: #E2E8F0 !important;
+  border-color: rgba(217, 119, 6, 0.14) !important;
 }
 /* Tier/filter button bar */
 html[data-theme="light"] body.dest-immersive #panel-stays .flex.gap-2.flex-wrap.mb-6 {
@@ -4505,6 +4511,8 @@ html[data-theme="light"] body.dest-immersive #panel-stays .flex.gap-2.flex-wrap.
 html[data-theme="light"] body.dest-immersive #panel-reach .info-card {
   padding: 1.75rem !important;
   border-radius: 1.25rem !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 20px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.05) !important;
 }
 
 /* ─── BUDGET PANEL — section vertical breathing ─────────────────────────── */
@@ -4518,19 +4526,27 @@ html[data-theme="light"] body.dest-immersive .dest-summary-grid {
 }
 html[data-theme="light"] body.dest-immersive .dest-summary-card {
   padding: 1.125rem 1.25rem !important;
-  border: 1px solid #E2E8F0 !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
   border-radius: 1rem !important;
-  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 12px rgba(15, 23, 42, 0.04) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-summary-card:hover {
+  border-color: rgba(217, 119, 6, 0.38) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 8px 24px -4px rgba(217, 119, 6, 0.18) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* ─── MAP PANEL ──────────────────────────────────────────────────────────── */
 html[data-theme="light"] body.dest-immersive #mapDirectionsBtn {
-  background: #F1F5F9 !important;
-  color: #0F172A !important;
-  border: 1px solid #CBD5E1 !important;
+  background: #FFFBEB !important;
+  color: #92400E !important;
+  border: 1px solid rgba(217, 119, 6, 0.35) !important;
 }
 html[data-theme="light"] body.dest-immersive #mapDirectionsBtn:hover {
-  background: #E2E8F0 !important;
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #78350F !important;
 }
 
 /* ─── OVERVIEW BUDGET TEASER CARD ────────────────────────────────────────── */
@@ -4558,8 +4574,9 @@ html[data-theme="light"] body.dest-immersive #similar-grid a .p-3 {
 
 /* ─── UNIVERSAL CARD SHADOW for light mode (all .card without explicit override) */
 html[data-theme="light"] body.dest-immersive .card {
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 20px rgba(15, 23, 42, 0.05), 0 10px 24px -4px rgba(180, 83, 9, 0.04) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
 }
 html[data-theme="light"] body.dest-immersive .card:hover {
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(15, 23, 42, 0.06) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 12px 32px rgba(15, 23, 42, 0.08), 0 0 20px rgba(217, 119, 6, 0.12) !important;
 }

@@ -24,6 +24,7 @@ import {
 let isInitialized = false;
 let deferredInstallPrompt = null;
 let currentTab = 'saved'; // 'saved' | 'emergency' | 'storage'
+let hubReturnFocusEl = null;
 
 /**
  * Register Service Worker across any page with graceful fallback
@@ -182,15 +183,15 @@ function injectHubMarkup() {
 
       <!-- Navigation Tabs -->
       <div class="go-tabs-bar" role="tablist">
-        <button type="button" class="go-tab-btn active" id="tabBtnSaved" data-tab="saved" role="tab" aria-selected="true">
+        <button type="button" class="go-tab-btn active" id="tabBtnSaved" data-tab="saved" role="tab" aria-selected="true" aria-controls="panelSaved" tabindex="0">
           ${icon('download', { size: 16 })}
           <span>Saved Guides (<span id="savedCountBadge">0</span>)</span>
         </button>
-        <button type="button" class="go-tab-btn" id="tabBtnEmergency" data-tab="emergency" role="tab" aria-selected="false">
+        <button type="button" class="go-tab-btn" id="tabBtnEmergency" data-tab="emergency" role="tab" aria-selected="false" aria-controls="panelEmergency" tabindex="-1">
           ${icon('shield-check', { size: 16 })}
           <span>Emergency & AMS</span>
         </button>
-        <button type="button" class="go-tab-btn" id="tabBtnStorage" data-tab="storage" role="tab" aria-selected="false">
+        <button type="button" class="go-tab-btn" id="tabBtnStorage" data-tab="storage" role="tab" aria-selected="false" aria-controls="panelStorage" tabindex="-1">
           ${icon('hard-drive', { size: 16 })}
           <span>Storage & App</span>
         </button>
@@ -199,10 +200,11 @@ function injectHubMarkup() {
       <!-- Tab Body -->
       <div class="go-tab-body">
         <!-- 1. Saved Guides Panel -->
-        <div class="go-panel" id="panelSaved" role="tabpanel">
+        <div class="go-panel" id="panelSaved" role="tabpanel" aria-labelledby="tabBtnSaved">
           <div class="go-search-wrap">
             <span class="search-icon">${icon('search', { size: 15 })}</span>
-            <input type="text" id="goGuideSearchInput" class="go-search-input" placeholder="Search saved offline destinations..." />
+            <label for="goGuideSearchInput" class="sr-only">Search saved offline destinations</label>
+            <input type="text" id="goGuideSearchInput" class="go-search-input" placeholder="Search saved offline destinations..." aria-label="Search saved offline destinations" />
           </div>
           <div id="goSavedGuidesList" class="go-guides-list">
             <!-- Populated via renderSavedGuides() -->
@@ -210,14 +212,14 @@ function injectHubMarkup() {
         </div>
 
         <!-- 2. Emergency & Himalayan SOS Panel -->
-        <div class="go-panel hidden" id="panelEmergency" role="tabpanel">
+        <div class="go-panel hidden" id="panelEmergency" role="tabpanel" aria-labelledby="tabBtnEmergency">
           <div id="goEmergencyContent" class="go-emergency-wrap">
             <!-- Populated via renderEmergencyToolkit() -->
           </div>
         </div>
 
         <!-- 3. Storage & PWA Panel -->
-        <div class="go-panel hidden" id="panelStorage" role="tabpanel">
+        <div class="go-panel hidden" id="panelStorage" role="tabpanel" aria-labelledby="tabBtnStorage">
           <div id="goStorageContent" class="go-storage-wrap">
             <!-- Populated via renderStorageManager() -->
           </div>
@@ -234,10 +236,53 @@ function injectHubMarkup() {
     if (e.target === modal) closeOfflineHub();
   };
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    if (modal.classList.contains('hidden')) return;
+    if (e.key === 'Escape') {
       closeOfflineHub();
+      return;
+    }
+    if (e.key === 'Tab') {
+      const focusables = Array.from(modal.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter(el => el.offsetParent !== null || el.getClientRects().length > 0);
+      if (focusables.length === 0) {
+        e.preventDefault();
+        return;
+      }
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first || !modal.contains(document.activeElement)) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last || !modal.contains(document.activeElement)) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
   });
+
+  const tabsBar = modal.querySelector('.go-tabs-bar');
+  if (tabsBar) {
+    tabsBar.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const tabList = Array.from(modal.querySelectorAll('.go-tab-btn'));
+        const currIndex = tabList.findIndex(b => b.getAttribute('data-tab') === currentTab);
+        if (currIndex !== -1) {
+          const nextIndex = e.key === 'ArrowRight'
+            ? (currIndex + 1) % tabList.length
+            : (currIndex - 1 + tabList.length) % tabList.length;
+          const nextTab = tabList[nextIndex];
+          nextTab.focus();
+          switchTab(nextTab.getAttribute('data-tab'));
+        }
+      }
+    });
+  }
 
   const tabs = modal.querySelectorAll('.go-tab-btn');
   tabs.forEach((tab) => {
@@ -267,6 +312,7 @@ function switchTab(tabId) {
     const isTarget = btn.getAttribute('data-tab') === tabId;
     btn.classList.toggle('active', isTarget);
     btn.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+    btn.setAttribute('tabindex', isTarget ? '0' : '-1');
   });
 
   document.getElementById('panelSaved').classList.toggle('hidden', tabId !== 'saved');
@@ -631,9 +677,15 @@ async function renderStorageManager() {
  * Open the ExploreDesh Go Offline Hub
  */
 export function openOfflineHub(tab = 'saved') {
+  hubReturnFocusEl = document.activeElement;
   initOfflineHub();
   const modal = document.getElementById('exploreDeshGoModal');
   if (!modal) return;
+
+  ['#siteNav', 'main', '#siteFooter'].forEach(sel => {
+    const el = document.querySelector(sel);
+    if (el) el.setAttribute('aria-hidden', 'true');
+  });
 
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
@@ -647,6 +699,9 @@ export function openOfflineHub(tab = 'saved') {
   }
 
   switchTab(tab);
+
+  const closeBtn = document.getElementById('goHubCloseBtn');
+  if (closeBtn) closeBtn.focus();
 }
 
 /**
@@ -655,8 +710,19 @@ export function openOfflineHub(tab = 'saved') {
 export function closeOfflineHub() {
   const modal = document.getElementById('exploreDeshGoModal');
   if (!modal) return;
+
+  ['#siteNav', 'main', '#siteFooter'].forEach(sel => {
+    const el = document.querySelector(sel);
+    if (el) el.removeAttribute('aria-hidden');
+  });
+
   modal.classList.add('hidden');
   document.body.style.overflow = '';
+
+  if (hubReturnFocusEl && typeof hubReturnFocusEl.focus === 'function') {
+    hubReturnFocusEl.focus();
+    hubReturnFocusEl = null;
+  }
 }
 
 /**

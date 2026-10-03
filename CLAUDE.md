@@ -346,7 +346,8 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 > **Check Broken Links:** `node scripts/audit/check_broken_links.js` (relative internal links scan)
 > **UI/UX Pro Max QA:** `node scripts/ui_ux_qa_audit.js` (a11y, touch, layout, motion)
 > **Rebuild Sitemaps:** `node scripts/build-sitemap.js` (accurate mtime lastmod)
-> **Rebuild Stubs:** `node scripts/build-stubs.js` (2,393 fallback redirect stubs)
+> **Rebuild Stubs:** `node scripts/build-stubs.js` (2,396 fallback redirect stubs)
+> **Sync Index & Search:** `node scripts/bulk/sync-index-and-search.js` (synchronizes `data/destinations/index.json` and `data/search-index.json` with canonical fields from destination files, tracks content fingerprints in `scripts/bulk/content-hashes.json`, and automatically stamps `updatedAt = new Date().toISOString()` on changed/new destinations; use `--no-touch` flag for mechanical bulk edits to update hashes without stamping `updatedAt`)
 
 
 ## Architecture (the load-bearing decisions)

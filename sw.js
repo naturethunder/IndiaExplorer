@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.4.5';
+const VERSION = 'v1.4.8';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -195,7 +195,7 @@ self.addEventListener('fetch', (event) => {
         .then((networkRes) => {
           if (networkRes && networkRes.ok) {
             const copy = networkRes.clone();
-            caches.open(CACHE_DATA).then((cache) => cache.put(req, copy)).catch(() => {});
+            caches.open(CACHE_DATA).then((cache) => cache.put(req, copy)).catch(() => { });
           }
           return networkRes;
         })

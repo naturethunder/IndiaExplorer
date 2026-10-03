@@ -19,7 +19,16 @@ if ('scrollRestoration' in history) {
 
 initLayout({ active: 'destinations' });
 
-const idx = await fetchIndex();
+let idx;
+try {
+  idx = await fetchIndex();
+} catch (err) {
+  console.warn('[explore] manifest failed to load:', err);
+  const main = document.getElementById('main');
+  if (main) main.insertAdjacentHTML('beforeend',
+    '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
+  throw err;
+}
 const SUMMARIES = idx.destinations;
 SUMMARIES.forEach((d, i) => {
   d._index = i;
@@ -146,6 +155,17 @@ function landingSeo(resultLength) {
     };
   }
 
+  if (activeCount === 1 && filters.season) {
+    return {
+      title: 'Best Places to Visit in ' + filters.season + ' in India | ExploreDesh',
+      description: 'Discover ' + count + ' recommended destinations to visit during ' + filters.season + ' in India, with seasonal highlights, stays across budgets and practical travel guides.',
+      canonicalPath: 'destinations.html?season=' + encodeURIComponent(filters.season),
+      heading: 'Best Places to Visit in ' + filters.season,
+      subheading: count + ' ' + filters.season + ' Destinations Across India',
+      breadcrumb: filters.season + ' Travel',
+    };
+  }
+
   return {
     title: 'Filtered India Destinations | ExploreDesh',
     description: 'Refine destinations in India by state, category, travel month, season and budget.',
@@ -208,7 +228,11 @@ function applyLandingSeo(resultLength) {
 function renderTypeButtons() {
   if (!typeWrap) return;
   typeWrap.innerHTML = '';
+  const recentCount = SUMMARIES.filter(CUSTOM_TYPE_MATCHERS.recently_updated).length;
   CATEGORY_FILTERS.forEach(function (t) {
+    if (t.id === 'recently_updated' && recentCount === 0 && filters.type !== 'recently_updated') {
+      return;
+    }
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'category-pill-btn' + (filters.type === t.id ? ' active' : '');

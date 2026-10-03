@@ -27,7 +27,16 @@ injectJsonLd(breadcrumbJsonLd([
   { name: 'AI Trip Finder', path: 'ai-finder.html' },
 ]));
 
-const idx = await fetchIndex();
+let idx;
+try {
+  idx = await fetchIndex();
+} catch (err) {
+  console.warn('[finder] manifest failed to load:', err);
+  const main = document.getElementById('main');
+  if (main) main.insertAdjacentHTML('beforeend',
+    '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
+  throw err;
+}
 const SUMMARIES = idx.destinations;
 const { types: DESTINATION_TYPES, states: INDIA_STATES, months: MONTHS } = idx.meta;
 const bySlug = new Map(SUMMARIES.map((d) => [d.slug, d]));
@@ -340,7 +349,7 @@ function scoreDest(d, p) {
 
   // Month
   if (p.months.length) {
-    const hit = p.months.filter(function (n) { return d.bestTime.months.indexOf(n) >= 0; });
+    const hit = p.months.filter(function (n) { return ((d.bestTime && d.bestTime.months) || []).indexOf(n) >= 0; });
     if (hit.length) { score += 3; reasons.push('Great in ' + hit.slice(0, 3).map(monthNameOf).join(', ')); }
     else { score -= 1.5; } // in season matters — softly penalise off-season
   }
@@ -469,7 +478,8 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block bg-slate-900/80 border border-white/15 backdrop-blur-xl rounded-2xl shadow-xl hover:border-emerald-400/50 transition-all duration-200">' +
     '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
     '<img src="' + esc(cardThumb(d, 600)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" ' +
-    'onerror="this.onerror=null;this.style.display=\'none\';" />' +
+    'data-fallback-src="' + esc(cardImg(d)) + '" ' +
+    'onerror="if(this.dataset.fallback){this.onerror=null;this.style.display=\'none\';}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' +
     '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
     '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
     '<div class="absolute bottom-3 left-3 right-3">' +
@@ -482,7 +492,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     '<div class="flex items-center gap-1.5"><span class="text-amber-400">★</span>' +
     '<span class="font-bold text-sm text-white">' + esc(d.rating) + '</span>' +
     '<span class="text-slate-400 text-xs">(' + inr(d.reviewCount) + ')</span></div>' +
-    '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc(d.bestTime.label) + '</span>' +
+    '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
     (chips ? '<div class="flex flex-wrap gap-1.5 mb-3">' + chips + '</div>' : '') +
@@ -780,7 +790,7 @@ async function bestThisMonth(headerNote) {
   const month = new Date().getMonth() + 1;
   const featured = bySlug.get(MONTH_PICKS[month]);
   const picks = SUMMARIES
-    .filter(function (d) { return d.bestTime.months.indexOf(month) >= 0 && (!featured || d.slug !== featured.slug); })
+    .filter(function (d) { return ((d.bestTime && d.bestTime.months) || []).indexOf(month) >= 0 && (!featured || d.slug !== featured.slug); })
     .sort(function (a, b) { return (b.rating || 0) - (a.rating || 0) || (b.reviewCount || 0) - (a.reviewCount || 0); })
     .slice(0, featured ? 11 : 12)
     .map(function (d) { return { d: d, reasons: ['Ideal in ' + monthNameOf(month)] }; });
@@ -805,7 +815,7 @@ async function nearMe(lat, lng) {
   const month = new Date().getMonth() + 1;
   const list = SUMMARIES.map(function (d) {
     const dist = haversine([lat, lng], destCoords(d));
-    const inSeason = d.bestTime.months.indexOf(month) >= 0;
+    const inSeason = ((d.bestTime && d.bestTime.months) || []).indexOf(month) >= 0;
     return { d: d, dist: dist, inSeason: inSeason };
   }).filter(function (x) { return x.dist != null; });
 

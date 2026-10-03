@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-25T10:19:49.401Z",
+  "timestamp": "2026-10-03T15:31:24.207Z",
   "architecture": {},
   "robotsTxt": {
     "passed": [
@@ -26,8 +26,8 @@
     "warnings": []
   },
   "sitemaps": {
-    "totalUrls": 2450,
-    "totalImages": 11935,
+    "totalUrls": 2453,
+    "totalImages": 11960,
     "sitemaps": [
       {
         "file": "sitemap.xml",
@@ -53,21 +53,21 @@
       {
         "file": "sitemap-destinations-1.xml",
         "locCount": 1000,
-        "imgCount": 4991,
+        "imgCount": 4994,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       },
       {
         "file": "sitemap-destinations-2.xml",
         "locCount": 1000,
-        "imgCount": 4983,
+        "imgCount": 4989,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       },
       {
         "file": "sitemap-destinations-3.xml",
-        "locCount": 393,
-        "imgCount": 1961,
+        "locCount": 396,
+        "imgCount": 1977,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       }
@@ -97,7 +97,7 @@
     "destinations.html": {
       "title": "All Destinations — ExploreDesh | Complete Catalogue of Bharat",
       "titleLength": 61,
-      "desc": "Discover 2,393 destinations across 36 states & UTs of India. Filter by category, season, state, and budget with verified photography and travel guides.",
+      "desc": "Discover 2,396 destinations across 36 states & UTs of India. Filter by category, season, state, and budget with verified photography and travel guides.",
       "descLength": 151,
       "canonical": "https://exploredesh.com/destinations.html",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -132,7 +132,7 @@
       "canonical": "https://exploredesh.com/contact.html",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
-      "jsonLdCount": 1
+      "jsonLdCount": 0
     },
     "ai-finder.html": {
       "title": "AI Trip Finder — ExploreDesh",
@@ -166,145 +166,20 @@
     }
   },
   "destinations": {
-    "totalChecked": 2393,
-    "thinPages": [
-      {
-        "slug": "someswara-swamy-temple-appikonda",
-        "title": "Someswara Swamy Temple, Appikonda",
-        "words": 13
-      },
-      {
-        "slug": "chowdeshwari-temple-at-nandavaram",
-        "title": "Chowdeshwari Temple at Nandavaram",
-        "words": 13
-      },
-      {
-        "slug": "ashtabhuji-temple",
-        "title": "Ashtabhuji Temple",
-        "words": 14
-      },
-      {
-        "slug": "palolem-beach",
-        "title": "Palolem Beach",
-        "words": 10
-      },
-      {
-        "slug": "uparkot-fort",
-        "title": "Uparkot Fort",
-        "words": 12
-      },
-      {
-        "slug": "kanthkot-fort",
-        "title": "Kanthkot Fort",
-        "words": 12
-      },
-      {
-        "slug": "shri-kalika-devi-temple",
-        "title": "Shri Kalika Devi Temple",
-        "words": 13
-      },
-      {
-        "slug": "someshwara-temple-marathahalli",
-        "title": "Someshwara Temple, Marathahalli",
-        "words": 14
-      },
-      {
-        "slug": "karimpuzha-wildlife-sanctuary",
-        "title": "Karimpuzha Wildlife Sanctuary",
-        "words": 13
-      },
-      {
-        "slug": "st-peter-and-st-paul-s-church-kolenchery",
-        "title": "St. Peter and St. Paul's Church, Kolenchery",
-        "words": 14
-      },
-      {
-        "slug": "sree-bhuvaneswary-temple-valamchuzhy",
-        "title": "Sree Bhuvaneswary Temple, Valamchuzhy",
-        "words": 14
-      },
-      {
-        "slug": "meenkulathi-temple",
-        "title": "Meenkulathi Temple",
-        "words": 12
-      },
-      {
-        "slug": "kolathukara-shiva-temple",
-        "title": "Kolathukara shiva temple",
-        "words": 6
-      },
-      {
-        "slug": "trikandiyur-mahadeva-temple",
-        "title": "Trikandiyur Mahadeva Temple",
-        "words": 12
-      },
-      {
-        "slug": "madhur",
-        "title": "Madhur",
-        "words": 13
-      },
-      {
-        "slug": "dronagiri-fort",
-        "title": "Dronagiri Fort द्रौणपुर रियासत",
-        "words": 12
-      },
-      {
-        "slug": "st-joseph-s-church-juhu",
-        "title": "St. Joseph's Church, Juhu",
-        "words": 12
-      },
-      {
-        "slug": "bihu-loukon",
-        "title": "Bihu Loukon",
-        "words": 10
-      },
-      {
-        "slug": "ladnu-jain-temple",
-        "title": "Ladnu Jain temple",
-        "words": 12
-      },
-      {
-        "slug": "gurdwara-nanaklama",
-        "title": "Gurdwara Nanaklama",
-        "words": 9
-      },
-      {
-        "slug": "ithiyapuram-kaavu",
-        "title": "Ithiyapuram kaavu",
-        "words": 11
-      },
-      {
-        "slug": "thiruppudaimarudur",
-        "title": "Thiruppudaimarudur",
-        "words": 13
-      },
-      {
-        "slug": "veeramakaliamman-temple-arantangi",
-        "title": "Veeramakaliamman Temple, Arantangi",
-        "words": 13
-      },
-      {
-        "slug": "kaleshwara-mukteswara-swamy-temple",
-        "title": "Kaleshwara Mukteswara Swamy Temple",
-        "words": 14
-      },
-      {
-        "slug": "bada-gaon-temple",
-        "title": "Bada Gaon temple",
-        "words": 14
-      },
-      {
-        "slug": "vasudhara-falls",
-        "title": "Vasudhara Falls",
-        "words": 11
-      }
-    ],
+    "totalChecked": 2396,
+    "thinPages": [],
     "duplicateSlugs": [],
     "duplicateTitles": [],
     "missingFields": [],
     "invalidCoords": [],
     "missingHero": [],
-    "lowAttractions": [],
+    "lowAttractions": [
+      {
+        "slug": "kamanda-mahadev",
+        "title": "Kamanda Mahadev",
+        "count": 0
+      }
+    ],
     "invalidPlaceImages": [],
     "invalidAltTexts": []
   },
@@ -314,8 +189,8 @@
     "orphanDestinations": {
       "sitemapOnlySlugs": [],
       "dataOnlySlugs": [],
-      "totalInIndex": 2393,
-      "totalInSitemap": 2393
+      "totalInIndex": 2396,
+      "totalInSitemap": 2396
     },
     "destinationsWithSimilarRail": 0
   },

@@ -30,7 +30,7 @@ const COMPANY_NAV_LINKS = NAV_LINKS;
 function navbarHTML(active, variant) {
   const navLinks = variant === 'company' ? COMPANY_NAV_LINKS : NAV_LINKS;
   const links = navLinks.map((l) =>
-    '<a href="' + l.href + '" class="nav-link' + (l.key === active ? ' active' : '') + '">' + l.label + '</a>'
+    '<a href="' + l.href + '" class="nav-link' + (l.key === active ? ' active' : '') + '"' + (l.key === active ? ' aria-current="page"' : '') + '>' + l.label + '</a>'
   ).join('\n        ');
   const brand =
     '<a href="/" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
@@ -84,7 +84,7 @@ const FOOTER_COLS = [
   {
     title: 'Resources', links: [
       ['Itineraries', 'ai-finder.html'],
-      ['Weekend Getaways', 'destinations.html?maxPrice=10000'],
+      ['Weekend Getaways', 'destinations.html?sort=distance'],
       ['Weather Guide', 'destinations.html?month=' + (new Date().getMonth() + 1)],
       ['Packing List', 'ai-finder.html'],
       ['Budget Planner', 'ai-finder.html'],
@@ -162,7 +162,7 @@ const COMPANY_MOBILE_LINKS = [
 
 function mobileNavHTML(active, variant) {
   const links = (variant === 'company' ? COMPANY_MOBILE_LINKS : MOBILE_LINKS).map((l) =>
-    '<a href="' + l.href + '" class="mobile-nav-btn' + (l.key === active ? ' active' : '') + '">' +
+    '<a href="' + l.href + '" class="mobile-nav-btn' + (l.key === active ? ' active' : '') + '"' + (l.key === active ? ' aria-current="page"' : '') + '>' +
     '<span class="mobile-nav-icon">' + icon(l.icon, { size: 22 }) + '</span>' + l.label + '</a>'
   ).join('\n  ');
 
@@ -211,10 +211,14 @@ export function setActiveNav(href) {
   let matched = null;
   links.forEach(function (a) {
     a.classList.remove('active');
+    a.removeAttribute('aria-current');
     if (a.getAttribute('href') === href) matched = a;
   });
   if (!matched) {
     links.forEach(function (a) { if (a.getAttribute('href') === 'destinations.html') matched = a; });
   }
-  if (matched) matched.classList.add('active');
+  if (matched) {
+    matched.classList.add('active');
+    matched.setAttribute('aria-current', 'page');
+  }
 }

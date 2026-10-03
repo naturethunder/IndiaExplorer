@@ -4,7 +4,7 @@
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
 import { initLayout } from '../components/layout.js?v=20260914_7';
-import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb } from '../components/destinationCard.js';
+import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
@@ -98,6 +98,12 @@ injectJsonLd(websiteJsonLd(), 'website');
   if (heroSection) {
     heroSection.addEventListener('mouseenter', () => clearInterval(timer));
     heroSection.addEventListener('mouseleave', startTimer);
+    heroSection.addEventListener('focusin', () => clearInterval(timer));
+    heroSection.addEventListener('focusout', (e) => {
+      if (!heroSection.contains(e.relatedTarget)) {
+        startTimer();
+      }
+    });
   }
 
   setHeroPhoto(0);
@@ -138,7 +144,7 @@ function injectSkeletons() {
   }
   const budget = document.getElementById(budgetId);
   if (budget && !budget.children.length) {
-    budget.innerHTML = [1, 2, 3, 4, 5].map(() =>
+    budget.innerHTML = [1, 2, 3, 4, 5, 6].map(() =>
       '<div class="skeleton-card skeleton-budget"></div>').join('');
   }
   const month = document.getElementById(monthId);
@@ -270,7 +276,9 @@ if (!isFullIndexLoaded) {
     idx.destinations.forEach((d) => { counts[d.type] = (counts[d.type] || 0) + 1; });
   }
   const customCounts = (idx.meta && idx.meta.customCounts) ? { ...idx.meta.customCounts } : {};
-  if (!idx.meta || !idx.meta.customCounts) {
+  if (idx.meta && Array.isArray(idx.meta.updatedTimes)) {
+    customCounts.recently_updated = idx.meta.updatedTimes.filter(t => CUSTOM_TYPE_MATCHERS.recently_updated({ updatedAt: t })).length;
+  } else if (!idx.meta || !idx.meta.customCounts) {
     Object.keys(CUSTOM_TYPE_MATCHERS).forEach((key) => {
       customCounts[key] = idx.destinations.filter(CUSTOM_TYPE_MATCHERS[key]).length;
     });
@@ -278,20 +286,28 @@ if (!isFullIndexLoaded) {
 
   const totalCount = idx.count || summaries.length || 2396;
 
-  el.innerHTML = cats.map((c) => {
-    const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
-    const badge = c.badge
-      ? '<span class="category-chip-badge badge-' + c.badge + '">' + (c.badge === 'new' ? 'New' : 'Popular') + '</span>'
-      : '';
-    const href = c.type === ''
-      ? 'destinations.html'
-      : 'destinations.html?type=' + encodeURIComponent(c.type);
-    return '<a href="' + href + '" class="category-chip">' +
-      '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
-      '<span class="category-chip-label">' + esc(c.label) + '</span>' +
-      '<span class="category-chip-count">' + inr(n) + ' places</span>' +
-      '</a>';
-  }).join('');
+  el.innerHTML = cats
+    .filter((c) => {
+      if (c.type === 'recently_updated') {
+        const count = customCounts.recently_updated || 0;
+        return count > 0;
+      }
+      return true;
+    })
+    .map((c) => {
+      const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
+      const badge = c.badge
+        ? '<span class="category-chip-badge badge-' + c.badge + '">' + (c.badge === 'new' ? 'New' : 'Popular') + '</span>'
+        : '';
+      const href = c.type === ''
+        ? 'destinations.html'
+        : 'destinations.html?type=' + encodeURIComponent(c.type);
+      return '<a href="' + href + '" class="category-chip">' +
+        '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
+        '<span class="category-chip-label">' + esc(c.label) + '</span>' +
+        '<span class="category-chip-count">' + inr(n) + ' places</span>' +
+        '</a>';
+    }).join('');
 })();
 
 
@@ -362,7 +378,8 @@ if (!isFullIndexLoaded) {
       const currentId = optId++;
       return '<a href="' + destUrl(d.slug) + '" id="ac-opt-' + currentId + '" class="autocomplete-item" role="option">' +
         '<img src="' + esc(thumb) + '" alt="" class="autocomplete-img" loading="lazy" ' +
-        'onerror="this.onerror=null;this.style.display=\'none\';" />' +
+        'data-fallback-src="' + esc(cardImg(d)) + '" ' +
+        'onerror="if(this.dataset.fallback){this.onerror=null;this.style.display=\'none\';}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' +
         '<div class="text-left flex-1 min-w-0">' +
         '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
         '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
@@ -583,18 +600,19 @@ function shuffleArray(arr) {
   if (!el) return;
   // Season → representative months, a fitting lead destination, and label.
   const seasons = [
-    { name: 'Summer Escapes', range: 'March – June', ic: 'sun', months: [4, 5, 6], lead: ['goa', 'manali', 'ladakh'] },
-    { name: 'Monsoon Magic', range: 'July – September', ic: 'cloud-rain', months: [7, 8, 9], lead: ['munnar', 'coorg', 'goa'] },
-    { name: 'Winter Wonderland', range: 'October – February', ic: 'snowflake', months: [12, 1, 2], lead: ['manali', 'jaisalmer', 'udaipur'] },
-    { name: 'Spring Blooms', range: 'February – March', ic: 'flower', months: [3, 4], lead: ['darjeeling', 'coorg', 'kanatal'] },
+    { name: 'Spring Blooms', range: 'March – April', ic: 'flower', season: 'Spring', months: [3, 4], lead: ['darjeeling', 'coorg', 'kanatal'] },
+    { name: 'Summer Escapes', range: 'April – June', ic: 'sun', season: 'Summer', months: [4, 5, 6], lead: ['manali', 'ladakh', 'shimla'] },
+    { name: 'Monsoon Magic', range: 'July – September', ic: 'cloud-rain', season: 'Monsoon', months: [7, 8, 9], lead: ['munnar', 'coorg', 'lonavala'] },
+    { name: 'Autumn Splendor', range: 'October – November', ic: 'sparkles', season: 'Autumn', months: [10, 11], lead: ['udaipur', 'ranthambore', 'varanasi'] },
+    { name: 'Winter Wonderland', range: 'December – February', ic: 'snowflake', season: 'Winter', months: [12, 1, 2], lead: ['gulmarg', 'jaisalmer', 'auli'] },
   ];
   el.innerHTML = seasons.map((s) => {
     const lead = (s.lead || []).map((sl) => bySlug.get(sl)).find(Boolean) || summaries[0];
     const leadHero = lead && (typeof lead.heroImage === 'string' ? lead.heroImage : (lead.heroImage && lead.heroImage.src));
     const leadImg = lead && (typeof lead.image === 'string' ? lead.image : (lead.image && lead.image.src));
     const src = lead ? cardThumb(lead, 800) : (leadHero || leadImg || '');
-    const primaryMonth = s.months[0];
-    return '<a href="destinations.html?month=' + primaryMonth + '" class="season-card group">' +
+    const seasonParam = encodeURIComponent(s.season || s.name.split(' ')[0]);
+    return '<a href="destinations.html?season=' + seasonParam + '" class="season-card group">' +
       '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" ' +
       'onerror="this.onerror=null;this.style.display=\'none\';" />' +
       '<div class="season-card-overlay"></div>' +
@@ -613,20 +631,22 @@ function shuffleArray(arr) {
   const el = document.getElementById('budget-grid');
   if (!el) return;
   const tiers = [
-    { ic: 'tent', tint: 'tint-green', label: 'Budget', sub: 'under ₹2k', max: 2000 },
-    { ic: 'bed', tint: 'tint-blue', label: 'Mid-Range', sub: '₹2k–5k', max: 5000 },
-    { ic: 'wallet', tint: 'tint-amber', label: 'Premium', sub: '₹5k–12k', max: 12000 },
-    { ic: 'gem', tint: 'tint-rose', label: 'Luxury', sub: '₹12k–25k', max: 25000 },
-    { ic: 'crown', tint: 'tint-purple', label: 'Ultra Luxury', sub: '₹25k+', max: 30000 },
+    { tier: 'budget', label: 'Budget', ic: 'tent', tint: 'tint-green' },
+    { tier: 'good', label: 'Mid-Range', ic: 'bed', tint: 'tint-blue' },
+    { tier: 'better', label: 'Comfort', ic: 'wallet', tint: 'tint-amber' },
+    { tier: 'best', label: 'Premium', ic: 'star', tint: 'tint-orange' },
+    { tier: 'luxury', label: 'Luxury', ic: 'gem', tint: 'tint-rose' },
+    { tier: 'extra_luxury', label: 'Ultra Luxury', ic: 'crown', tint: 'tint-purple' },
   ];
-  el.innerHTML = tiers.map((t) =>
-    '<a href="destinations.html?maxPrice=' + t.max + '" class="budget-card group">' +
-    '<span class="w-11 h-11 rounded-full ' + t.tint + ' flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">' +
-    icon(t.ic, { size: 22 }) + '</span>' +
-    '<div class="font-bold text-sm text-gray-900">' + esc(t.label) + '</div>' +
-    '<div class="text-xs text-gray-500 mt-1">' + esc(t.sub) + '</div>' +
-    '</a>'
-  ).join('');
+  el.innerHTML = tiers.map((t) => {
+    const sub = (idx.meta && idx.meta.priceTiers && idx.meta.priceTiers[t.tier] && idx.meta.priceTiers[t.tier].range) || '';
+    return '<a href="destinations.html?tier=' + t.tier + '" class="budget-card group">' +
+      '<span class="w-11 h-11 rounded-full ' + t.tint + ' flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">' +
+      icon(t.ic, { size: 22 }) + '</span>' +
+      '<div class="font-bold text-sm text-gray-900">' + esc(t.label) + '</div>' +
+      '<div class="text-xs text-gray-500 mt-1">' + esc(sub) + '</div>' +
+      '</a>';
+  }).join('');
 })();
 
 // ─── Hills grid (large cards - Dynamic Reshuffle on Refresh) ─

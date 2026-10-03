@@ -38,7 +38,7 @@ function build() {
     'goa', 'manali', 'ladakh', 'munnar', 'coorg', 'jaisalmer', 'udaipur', 'darjeeling', 'kanatal',
     'hampi', 'varanasi', 'rishikesh', 'jaipur', 'agra', 'ooty', 'kodaikanal', 'alleppey',
     'amritsar', 'khajuraho', 'mysore', 'pondicherry', 'shillong', 'shimla', 'spiti', 'kasol',
-    'varkala', 'kaziranga', 'rann-of-kutch'
+    'varkala', 'kaziranga', 'rann-of-kutch', 'gulmarg', 'ranthambore', 'auli'
   ];
   iconicLeads.forEach(s => add(all.find(d => d.slug === s)));
 
@@ -84,6 +84,13 @@ function build() {
     list.sort((a,b) => (b.reviewCount||0) - (a.reviewCount||0)).slice(0, 3).forEach(add);
   });
 
+  // Load CUSTOM_TYPE_MATCHERS from taxonomy.js via vm
+  const vm = require('vm');
+  const tSrc = fs.readFileSync(path.join(ROOT, 'js/data/taxonomy.js'), 'utf8').replace(/export\s+/g, '');
+  const tax = {};
+  vm.runInNewContext(tSrc + '\n;Object.assign(__x, { CUSTOM_TYPE_MATCHERS });', { __x: tax });
+  const { CUSTOM_TYPE_MATCHERS } = tax;
+
   // Pre-calculate full state destination counts and category counts
   const stateCounts = {};
   all.forEach(d => { stateCounts[d.state] = (stateCounts[d.state] || 0) + 1; });
@@ -91,13 +98,12 @@ function build() {
   const categoryCounts = {};
   all.forEach(d => { categoryCounts[d.type] = (categoryCounts[d.type] || 0) + 1; });
 
-  const customCounts = {
-    recently_updated: all.filter(d => Boolean(d.updatedAt)).length,
-    road_trips: all.filter(d => (d.type === 'adventure' || d.type === 'hill_station' || (d.features && d.features.some(f => f.toLowerCase() === 'ghats'))) && d.type !== 'spiritual').length,
-    camping: all.filter(d => (d.features && d.features.some(f => f.toLowerCase().includes('camp') || f.toLowerCase().includes('trek'))) || d.type === 'adventure').length,
-    forts: all.filter(d => d.features && d.features.some(f => f.toLowerCase().includes('fort') || f.toLowerCase().includes('palace'))).length,
-    ecotourism: all.filter(d => d.features && d.features.some(f => f.toLowerCase().includes('nature') || f.toLowerCase().includes('birding') || f.toLowerCase().includes('eco'))).length,
-  };
+  const customCounts = {};
+  Object.keys(CUSTOM_TYPE_MATCHERS).forEach(key => {
+    customCounts[key] = all.filter(d => CUSTOM_TYPE_MATCHERS[key](d)).length;
+  });
+
+  const updatedTimes = all.map(d => d.updatedAt).filter(Boolean);
 
   const featuredDests = all.filter(d => selectedSlugs.has(d.slug));
 
@@ -108,7 +114,8 @@ function build() {
       ...index.meta,
       stateCounts,
       categoryCounts,
-      customCounts
+      customCounts,
+      updatedTimes
     },
     destinations: featuredDests
   };

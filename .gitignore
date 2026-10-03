@@ -19,6 +19,8 @@ scripts/bulk/cache/
 # Environment files
 .env
 .env.secret
+.env.local
+.env.*.local
 
 # Image cache database & reports
 data/*.sqlite

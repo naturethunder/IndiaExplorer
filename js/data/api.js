@@ -29,7 +29,7 @@ function getJSON(path) {
 /** Full detail for one destination. The detail page loads ONLY this. */
 export async function fetchDestination(slug) {
   try {
-    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20260930_phase74');
+    return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20261003_phase76');
   } catch (err) {
     // If network fetch failed (offline in Himalayan passes / safari), check offline storage
     try {
@@ -38,7 +38,7 @@ export async function fetchDestination(slug) {
         console.info('[ExploreDesh Go] Serving destination from offline storage:', slug);
         return offlineRecord.data;
       }
-    } catch (_) {}
+    } catch (_) { }
     throw err;
   }
 }
@@ -49,7 +49,7 @@ export async function fetchDestination(slug) {
  * all home sections (hills, trending, popular, explore, seasons, months, and map).
  */
 export function fetchHomeIndex() {
-  return getJSON(BASE + '/destinations/home-manifest.json?v=20260930_phase74');
+  return getJSON(BASE + '/destinations/home-manifest.json?v=20261003_phase76');
 }
 
 /**
@@ -57,12 +57,12 @@ export function fetchHomeIndex() {
  * destinations: [summary…] }. Used by browse/search pages.
  */
 export function fetchIndex() {
-  return getJSON(BASE + '/destinations/index.json?v=20260930_phase74');
+  return getJSON(BASE + '/destinations/index.json?v=20261003_phase76');
 }
 
 /** AI-finder text index: { entries: [{slug, placeNames, hotelNames, tiers, hay}…] } */
 export function fetchSearchIndex() {
-  return getJSON(BASE + '/search-index.json?v=20260930_phase74');
+  return getJSON(BASE + '/search-index.json?v=20261003_phase76');
 }
 
 /** Summary record for one slug from the manifest (null if unknown). */

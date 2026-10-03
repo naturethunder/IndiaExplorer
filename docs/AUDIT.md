@@ -13,6 +13,57 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — 2026-10-03 QA, Filter, Image Optimization & Automatic Change Stamping
+
+Comprehensive platform hardening covering code quality, accessibility, security, filter correctness, destination data hygiene, automatic change stamping, and Wikimedia rate-limiting prevention:
+
+1. **Code Quality, Accessibility, and Security Fixes:**
+   - `js/utils/search.js`: Repaired search-by-attraction dead code by reading `d.placeNames || d.places || []`. Enforced word-boundary prefix matching via `placeSuffixes` and `placeHas(q)` so queries like "manali" no longer match "Pathiramanal Island". Maintained 3-tier relevance scoring (+600 exact place, +300 startsWith, +180 placeHas). Verified "mehtabbagh" → Taj Mahal, "manali" → Manali (no Kumarakom), "rohtangpass" → Manali.
+   - `js/components/layout.js`: Added `aria-current="page"` to active links in `navbarHTML()` and `mobileNavHTML()`. In `setActiveNav()`, cleared and reapplied `aria-current` dynamically. Fixed footer "Weekend Getaways" href to `destinations.html?sort=distance`.
+   - `js/components/offlineHub.js`: Added `hubReturnFocusEl` focus tracking; toggled `aria-hidden="true"` on `#siteNav`, `main`, and `#siteFooter`; set focus to `#goHubCloseBtn` on open and restored focus on close; added Tab/Shift+Tab focus trap; implemented roving `tabindex`, ArrowLeft/ArrowRight keyboard navigation, `aria-controls`, and `aria-labelledby` on tabs and panels; added `<label class="sr-only">` and `aria-label` to `#goGuideSearchInput`.
+   - `js/components/destinationCard.js`: Eliminated inline JS escaping vulnerability in card image error handlers by moving fallback URL to `data-fallback-src` attribute with static handler. Guarded `d.bestTime.label`. Added descriptive `aria-label="{title}, {state}"` across `trendCardHTML`, `heroCardHTML`, and `miniCardHTML`.
+   - `js/pages/finder.js` & `js/pages/explore.js`: Guarded `bestTime.months.indexOf` and `bestTime.label`. Wrapped top-level `await fetchIndex()` in try/catch inserting friendly refresh notice into `#main`.
+   - `js/pages/destination.js`: Removed dead Delhi sample theme cleanup code. Added `aria-expanded` and `aria-controls` to "Audit Sights" button. Added `type="button"` and `aria-pressed` to stays tier pills. Updated `renderPlaces` with `p.category || 'attraction'` and empty state message `"No verified nearby attractions are listed for {title} yet."`. Fixed hero type links (`nature` → `?type=ecotourism`, unknown types → `?state=<state>`). Applied `data-fallback-src` to similar destinations cards.
+   - `js/pages/home.js`: Paused hero background rotator on `focusin` and resumed on `focusout` when focus leaves the hero per WCAG 2.2.2.
+   - `css/destination-immersive.css`: Removed `width:100vw` and `height:100vh` on `.dest-immersive-bg` and `.dest-immersive-overlay` (eliminating bottom gap on iOS Safari). Added dark-mode gold focus ring override for `.form-input:focus`.
+   - `contact.html`: Removed redundant static `ContactPage` JSON-LD `<script>`. Added `aria-hidden="true"` to success SVG checkmark.
+   - `css/explore-immersive.css`: Changed placeholder text from `'Photography in Verification'` to `'Photo unavailable'`.
+
+2. **Filter Correctness & Manifest Sync:**
+   - `scripts/bulk/sync-index-and-search.js`: Removed `if (h.tier) tiers.add(h.tier);` from `calculateTiers()` so stay tiers reflect absolute price bands instead of destination-relative tiers (preventing "Cheapest" from matching all destinations). Handled string `overview` schema. Synchronized all summary fields (`title`, `state`, `type`, `region`, `bestTime`, `features`, `rating`, `reviewCount`, `distanceFromDelhi`, `updatedAt`, `placeNames`). Added string overview to search haystack.
+   - `js/data/taxonomy.js`: Updated `CUSTOM_TYPE_MATCHERS.forts` (excludes `wildlife`, matches fort/palace keywords and `/garh\b/` unless natural features) and `ecotourism` (matches `nature` type).
+   - `scripts/build-home-manifest.js`: Refactored to load `CUSTOM_TYPE_MATCHERS` directly from `taxonomy.js` via `vm.runInNewContext`. Added `meta.updatedTimes`.
+   - `js/pages/home.js` & `index.html`: Replaced budget cards with 6 direct tier cards (`budget`, `good`, `better`, `best`, `luxury`, `extra_luxury`) with subtitles from `idx.meta.priceTiers[tier].range`. Updated `#budget-grid` to `lg:grid-cols-6` and recompiled `css/tailwind.css`.
+
+3. **Destination Data Fixes (`data/destinations/*.json`):**
+   - **Scraped Tragedies Purged:** Removed 46 news tragedy/disaster entries from 45 destinations' `topPlaces`. Preserved Massacre Ghat in `kanpur-memorial-church` and Dr. Karni Singh Shooting Range in `asola-bhatti-wildlife-sanctuary`. Renamed "Jallianwala Bagh massacre" in `harmandir-sahib` to "Jallianwala Bagh Memorial" (category heritage, description honoring victims, updated alts).
+   - **Feature Cleanup:** Removed false "Historic Fortress" feature from `auli`, `chopta`, `lansdowne`, `munsiyari`, and `nalanda`.
+   - **Lake Retyping:** Retyped `bhimtal`, `naukuchiatal`, and `sattal` from `lake` to `hill_station`.
+   - **Best-Time Alignment:** Synchronized `bestTime.months` with simple single-range `bestTime.label` across 56 destinations. Handled `coorg` exception: preserved all 12 months (ensuring in-season for July `MONTH_PICKS`), set label to "Year-round", and updated SEO description and FAQ. Verified all 12 `MONTH_PICKS` remain in season.
+   - **Thin Descriptions Rebuilt:** Fixed `scripts/audit/master_seo_audit.js` to handle string overview. Rebuilt descriptions for 26 thin destinations (<15 words) using only facts from existing file metadata (features, places, stays, best time).
+
+4. **Automatic "Recently Updated" Engine:**
+   - `js/data/taxonomy.js`: Added `RECENT_UPDATE_DAYS = 30` and `isRecentlyUpdated()`. Wired `CUSTOM_TYPE_MATCHERS.recently_updated` to evaluate `updatedAt`.
+   - `scripts/bulk/sync-index-and-search.js`: Implemented SHA-1 content fingerprinting stored in `scripts/bulk/content-hashes.json` (canonical key-sorted JSON excluding `updatedAt`). Auto-stamps `dest.updatedAt = new Date().toISOString()` whenever content changes or a new destination is added. Added `--no-touch` flag for mechanical edits.
+   - `home.js` & `explore.js`: Dynamically compute `customCounts.recently_updated` from `idx.meta.updatedTimes`. Automatically hides "Recently Updated" chip when count is 0.
+   - Stamped `updatedAt` on all 132 changed destinations from Section C (excluding `kamanda-mahadev`).
+
+5. **Wikimedia Rate-Limiting & 429 Prevention:**
+   - `js/components/destinationCard.js`: Added `WIKIMEDIA_STEPS = [250, 330, 500, 960, 1280, 1920]` and `wikimediaThumb(url, width)`. In `optimizeImageUrl()`, stripped UTM params and converted Wikimedia URLs to CDN-cached 960px thumbnails.
+   - Fallback retry: Added `data-fallback-src="esc(cardImg(d))"` to `finder.js` result card and `home.js` search-autocomplete thumbnail, retrying raw source before hiding.
+   - Cache invalidation: Bumped Service Worker in `sw.js` to `v1.4.6`. Bumped script queries to `?v=20261003_qa` in `index.html`, `destinations.html`, `destination.html`, and `ai-finder.html`. Verified sample thumbnail URLs return HTTP 200 (0 HTTP 400/429).
+
+6. **System Verification & Regression Status:**
+   - `node scripts/validate-filters.js`: PASSED (all filters return ≥1 destination).
+   - `node scripts/seo_audit.js`: PASSED (0 errors, 61 checks passed).
+   - `node scripts/ui_ux_qa_audit.js`: PASSED (0 issues across all 7 categories).
+   - `node scripts/audit/check_broken_links.js`: PASSED (0 broken links).
+   - `node scripts/deep_pre_commit_audit.js`: PASSED (0 JSON errors, 0 hero/gallery errors, 0 geographic leaks).
+   - `node scripts/seo_regression_guard.js`: 70/71 passed (expected: 1 empty places check on `kamanda-mahadev` after bus-accident removal).
+   - Local dev server (`node scripts/serve.js`): Verified HTTP 200 OK on `/`, `?tier=good`, `?type=forts`, `?type=recently_updated`, `/destination.html?slug=coorg`, and `/ai-finder.html`.
+
+---
+
 ## Addendum — Phase 82: Interactive India Map Side-by-Side Zero-Overlap Architecture & Complete Andaman & Nicobar Visibility Overhaul (2026-09-30 rev-35)
 
 Comprehensive interactive map responsive architecture overhaul, island geometry scaling, and zero-overlap details panel:

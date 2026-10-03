@@ -38,6 +38,20 @@ export function cardImg(d) {
   return raw;
 }
 
+const WIKIMEDIA_STEPS = [250, 330, 500, 960, 1280, 1920]; // other widths return HTTP 400
+export function wikimediaThumb(url, width) {
+  const step = WIKIMEDIA_STEPS.find(s => s >= width) || WIKIMEDIA_STEPS[WIKIMEDIA_STEPS.length - 1];
+  const t = url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[^/]+\/thumb\/[0-9a-f]\/[0-9a-f]{2}\/[^/]+\/)(\d+)px-([^/?#]+)$/);
+  if (t) return t[1] + step + 'px-' + t[3];
+  const m = url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[^/]+)\/([0-9a-f])\/([0-9a-f]{2})\/([^/?#]+)$/);
+  if (!m) return '';
+  const file = m[4];
+  if (/\.(pdf|djvu)$/i.test(file)) return '';
+  let name = step + 'px-' + file;
+  if (/\.svg$/i.test(file)) name += '.png'; else if (/\.tiff?$/i.test(file)) name += '.jpg';
+  return m[1] + '/thumb/' + m[2] + '/' + m[3] + '/' + file + '/' + name;
+}
+
 export function optimizeImageUrl(url, width = 800) {
   if (!url || typeof url !== 'string') return '';
   // 0. Unwrap any legacy wsrv.nl proxy URLs to recover the direct origin
@@ -51,13 +65,15 @@ export function optimizeImageUrl(url, width = 800) {
   // 1. Wikimedia Commons: Always serve directly from Wikimedia's global CDN.
   // Never route through third-party proxies (wsrv.nl) that 404, timeout, or get rate-limited.
   if (url.includes('upload.wikimedia.org/') || url.includes('commons.wikimedia.org/')) {
+    let clean = url;
     try {
       const u = new URL(url);
       ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(p => u.searchParams.delete(p));
-      return u.searchParams.toString() ? u.toString() : (u.origin + u.pathname);
+      clean = u.searchParams.toString() ? u.toString() : (u.origin + u.pathname);
     } catch (_) {
-      return url.split('?')[0];
+      clean = url.split('?')[0];
     }
+    return wikimediaThumb(clean, width) || clean;
   }
   // 2. Pexels photo: Use Pexels native CDN params (auto=compress&cs=tinysrgb&w=...)
   if (url.includes('images.pexels.com/photos/')) {
@@ -100,9 +116,9 @@ export function trendCardHTML(d, opts = {}) {
   const image = cardThumb(d, 600);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
-    '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" ' + loadingAttr + ' decoding="async" ' +
-      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
+    '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
     '<span class="rating-badge">' + icon('star', { size: 13, fill: true }) + esc(d.rating) + '</span>' +
@@ -112,7 +128,7 @@ export function trendCardHTML(d, opts = {}) {
     '<span class="card-calligraphy-accent">~ ' + esc(d.state) + ' ~</span>' +
     '<p class="text-white font-bold text-lg leading-tight drop-shadow-md trend-card-title">' + esc(d.title) + '</p>' +
     '<div class="flex items-center gap-2 flex-wrap mt-2.5">' +
-    '<span class="pill-green">' + icon('calendar', { size: 12 }) + esc(d.bestTime.label) + '</span>' +
+    '<span class="pill-green">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '<span class="pill-glass">Stay starts from ₹' + inr(d.minPrice) + '</span>' +
     '</div>' +
     '</div>' +
@@ -141,8 +157,8 @@ export function destCardHTML(d, opts = {}) {
     '<article class="dest-card-item">' +
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" ' + loadingAttr + ' decoding="async" ' +
-      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     '<div class="dest-card-badges-top">' +
     (badgeHtml || '') +
@@ -161,7 +177,7 @@ export function destCardHTML(d, opts = {}) {
     '<span class="rating-num">' + esc(d.rating) + '</span>' +
     '<span class="review-cnt">(' + inr(d.reviewCount) + ')</span>' +
     '</div>' +
-    '<span class="dest-best-season">' + icon('calendar', { size: 12 }) + esc(d.bestTime.label) + '</span>' +
+    '<span class="dest-best-season">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="dest-card-desc">' + esc(d.short) + '</p>' +
     (feats ? '<div class="dest-card-tags">' + feats + '</div>' : '') +
@@ -183,10 +199,10 @@ export function heroCardHTML(d, opts = {}) {
   const image = cardThumb(d, 800);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
-    '<a href="' + destUrl(d.slug) + '" class="card dest-card block group">' +
+    '<a href="' + destUrl(d.slug) + '" class="card dest-card block group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" ' + loadingAttr + ' decoding="async" ' +
-      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     (d.badge ? '<div class="absolute top-3 left-3"><span class="dest-badge-featured">' + esc(d.badge) + '</span></div>' : '') +
     '</div>' +
     '<div class="p-3 bg-slate-900/90 flex flex-col gap-1">' +
@@ -197,8 +213,8 @@ export function heroCardHTML(d, opts = {}) {
     '<span class="text-amber-400">' + icon('star', { size: 12, fill: true }) + '</span>' +
     '<strong class="text-white">' + esc(d.rating) + '</strong></span>' +
     '<span>(' + inr(d.reviewCount) + ')</span>' +
-    '<span class="text-slate-500">|</span>' +
-    '<span>' + esc(d.bestTime.label) + '</span>' +
+    '<span>|</span>' +
+    '<span>' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">' + esc(d.short) + '</p>' +
     '<div class="pt-2 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 mt-1">' +
@@ -218,10 +234,10 @@ export function miniCardHTML(d, opts = {}) {
   const image = cardThumb(d, 400);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
-    '<a href="' + destUrl(d.slug) + '" class="group block">' +
+    '<a href="' + destUrl(d.slug) + '" class="group block" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" ' + loadingAttr + ' decoding="async" ' +
-      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawImage) + '\';}" />' : '') +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+      'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +
     '<span class="dest-card-calligraphy-state text-[11px] mb-0.5">~ ' + esc(d.state) + ' ~</span>' +

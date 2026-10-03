@@ -1070,6 +1070,10 @@ html[data-theme="light"] body.glass-immersive .india-state[data-state="Delhi"].i
     gap: 0.75rem !important;
   }
 
+  #season-grid > :last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
+
   #month-rail .trend-card,
   #season-grid .trend-card {
     height: 270px !important;
@@ -1494,6 +1498,102 @@ body.glass-immersive .tint-slate svg,
 body.glass-immersive .tint-slate path {
   stroke: #cbd5e1 !important;
   color: #cbd5e1 !important;
+}
+
+/* ─── Rich Royal Jewel-Tone Badges in Light Mode ─────────────────── */
+html[data-theme="light"] body.glass-immersive .tint-green {
+  background: #ECFDF5 !important;
+  border: 1.5px solid #A7F3D0 !important;
+  color: #047857 !important;
+  box-shadow: 0 2px 8px rgba(4, 120, 87, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-green svg,
+html[data-theme="light"] body.glass-immersive .tint-green path {
+  stroke: #047857 !important;
+  color: #047857 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-blue {
+  background: #EFF6FF !important;
+  border: 1.5px solid #BFDBFE !important;
+  color: #1D4ED8 !important;
+  box-shadow: 0 2px 8px rgba(29, 78, 216, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-blue svg,
+html[data-theme="light"] body.glass-immersive .tint-blue path {
+  stroke: #1D4ED8 !important;
+  color: #1D4ED8 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-orange {
+  background: #FFF7ED !important;
+  border: 1.5px solid #FED7AA !important;
+  color: #C2410C !important;
+  box-shadow: 0 2px 8px rgba(194, 65, 12, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-orange svg,
+html[data-theme="light"] body.glass-immersive .tint-orange path {
+  stroke: #C2410C !important;
+  color: #C2410C !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-amber {
+  background: #FEF3C7 !important;
+  border: 1.5px solid #FDE68A !important;
+  color: #B45309 !important;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.14) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-amber svg,
+html[data-theme="light"] body.glass-immersive .tint-amber path {
+  stroke: #B45309 !important;
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-purple {
+  background: #FAF5FF !important;
+  border: 1.5px solid #E9D5FF !important;
+  color: #6D28D9 !important;
+  box-shadow: 0 2px 8px rgba(109, 40, 217, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-purple svg,
+html[data-theme="light"] body.glass-immersive .tint-purple path {
+  stroke: #6D28D9 !important;
+  color: #6D28D9 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-rose {
+  background: #FFF1F2 !important;
+  border: 1.5px solid #FECDD3 !important;
+  color: #BE123C !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-rose svg,
+html[data-theme="light"] body.glass-immersive .tint-rose path {
+  stroke: #BE123C !important;
+  color: #BE123C !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-teal {
+  background: #F0FDFA !important;
+  border: 1.5px solid #99F6E4 !important;
+  color: #0F766E !important;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.12) !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-teal svg,
+html[data-theme="light"] body.glass-immersive .tint-teal path {
+  stroke: #0F766E !important;
+  color: #0F766E !important;
+}
+
+html[data-theme="light"] body.glass-immersive .tint-slate {
+  background: #F8FAFC !important;
+  border: 1.5px solid #CBD5E1 !important;
+  color: #334155 !important;
+}
+html[data-theme="light"] body.glass-immersive .tint-slate svg,
+html[data-theme="light"] body.glass-immersive .tint-slate path {
+  stroke: #334155 !important;
+  color: #334155 !important;
 }
 
 /* ─── Destinations Page Sticky Subheader & Search Bar Fix ─── */
@@ -2238,13 +2338,13 @@ html[data-theme="light"] .explore-immersive-bg {
 
 html[data-theme="light"] .explore-immersive-overlay {
   background:
-    radial-gradient(circle 1000px at 50% -120px, rgba(254, 243, 199, 0.45), transparent 72%),
-    radial-gradient(circle 850px at 88% 12%, rgba(224, 242, 254, 0.40), transparent 60%),
-    radial-gradient(circle 900px at 12% 55%, rgba(254, 240, 138, 0.20), transparent 60%),
+    radial-gradient(circle 1100px at 50% -120px, rgba(254, 243, 199, 0.55), transparent 72%),
+    radial-gradient(circle 900px at 88% 12%, rgba(224, 242, 254, 0.45), transparent 60%),
+    radial-gradient(circle 950px at 12% 55%, rgba(254, 240, 138, 0.25), transparent 60%),
     linear-gradient(180deg,
-      rgba(250, 249, 246, 0.84) 0%,
-      rgba(248, 250, 252, 0.92) 35%,
-      rgba(241, 245, 249, 0.98) 100%) !important;
+      rgba(250, 249, 246, 0.82) 0%,
+      rgba(249, 248, 244, 0.90) 35%,
+      rgba(250, 248, 245, 0.97) 100%) !important;
 }
 
 /* Navbar in Light Mode: Frosted Pearl Glass with Specular Top Bevel & Crisp Links */
@@ -2385,14 +2485,14 @@ html[data-theme="light"] body.glass-immersive .dest-card,
 html[data-theme="light"] body.glass-immersive .category-card,
 html[data-theme="light"] body.glass-immersive .content-sheet,
 html[data-theme="light"] body.glass-immersive .about-card {
-  background: rgba(255, 255, 255, 0.92) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
   box-shadow:
     inset 0 1px 0 0 #FFFFFF,
-    0 1px 3px rgba(15, 23, 42, 0.04),
-    0 10px 28px -4px rgba(15, 23, 42, 0.07) !important;
+    0 2px 4px rgba(15, 23, 42, 0.03),
+    0 12px 30px -4px rgba(180, 83, 9, 0.07) !important;
   color: #1C1917 !important;
   transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease !important;
 }
@@ -2402,11 +2502,11 @@ html[data-theme="light"] body.glass-immersive .card:hover,
 html[data-theme="light"] body.glass-immersive .feature-card:hover,
 html[data-theme="light"] body.glass-immersive .about-card:hover {
   transform: translateY(-4px) !important;
-  border-color: rgba(217, 119, 6, 0.40) !important;
+  border-color: rgba(217, 119, 6, 0.45) !important;
   box-shadow:
     inset 0 1px 0 0 #FFFFFF,
-    0 18px 40px -6px rgba(15, 23, 42, 0.12),
-    0 0 20px -2px rgba(217, 119, 6, 0.18) !important;
+    0 20px 45px -6px rgba(15, 23, 42, 0.12),
+    0 0 24px -2px rgba(217, 119, 6, 0.22) !important;
 }
 
 /* Typography Inside Content Cards */
@@ -2743,10 +2843,10 @@ html[data-theme="light"] #typeFilter button,
 html[data-theme="light"] .category-pill-btn,
 html[data-theme="light"] body.glass-immersive #typeFilter button,
 html[data-theme="light"] body.explore-immersive .category-pill-btn {
-  background: #F1F5F9 !important;
-  color: #334155 !important;
-  border: 1px solid #CBD5E1 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  color: #1E293B !important;
+  border: 1px solid rgba(217, 119, 6, 0.18) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(180, 83, 9, 0.04) !important;
   text-shadow: none !important;
 }
 
@@ -2754,9 +2854,10 @@ html[data-theme="light"] #typeFilter button:hover,
 html[data-theme="light"] .category-pill-btn:hover,
 html[data-theme="light"] body.glass-immersive #typeFilter button:hover,
 html[data-theme="light"] body.explore-immersive .category-pill-btn:hover {
-  background: #F8FAFC !important;
-  color: #0F172A !important;
-  border-color: #94A3B8 !important;
+  background: #FFFFFF !important;
+  color: #B45309 !important;
+  border-color: rgba(217, 119, 6, 0.40) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 14px rgba(217, 119, 6, 0.14) !important;
 }
 
 html[data-theme="light"] #typeFilter button.active,
@@ -2764,21 +2865,30 @@ html[data-theme="light"] #typeFilter button[aria-pressed="true"],
 html[data-theme="light"] .category-pill-btn.active,
 html[data-theme="light"] body.glass-immersive #typeFilter button.active,
 html[data-theme="light"] body.explore-immersive .category-pill-btn.active {
-  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%) !important;
-  border: 1px solid #F59E0B !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  color: #92400E !important;
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
+  border: 1px solid #92400E !important;
+  border-bottom: 2.5px solid #78350F !important;
+  color: #FFFFFF !important;
   font-weight: 700 !important;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.20) !important;
-  text-shadow: none !important;
+  box-shadow: 0 4px 16px rgba(180, 83, 9, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) !important;
 }
 
 html[data-theme="light"] #typeFilter button svg,
 html[data-theme="light"] .category-pill-btn svg,
 html[data-theme="light"] body.glass-immersive #typeFilter button svg,
 html[data-theme="light"] body.explore-immersive .category-pill-btn svg {
-  color: #D97706 !important;
-  stroke: #D97706 !important;
+  color: #B45309 !important;
+  stroke: #B45309 !important;
+}
+
+html[data-theme="light"] #typeFilter button.active svg,
+html[data-theme="light"] #typeFilter button[aria-pressed="true"] svg,
+html[data-theme="light"] .category-pill-btn.active svg,
+html[data-theme="light"] body.glass-immersive #typeFilter button.active svg,
+html[data-theme="light"] body.explore-immersive .category-pill-btn.active svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
 }
 
 /* 5. Universal Text Primary Reset in Light Mode */
@@ -2836,10 +2946,10 @@ html[data-theme="light"] body.glass-immersive .category-strip {
 }
 
 html[data-theme="light"] body.glass-immersive .category-chip {
-  background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.03) !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(180, 83, 9, 0.04) !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
@@ -2918,14 +3028,14 @@ html[data-theme="light"] body.glass-immersive .budget-card .text-gray-500 {
 /* 4. Destination Cards in Light Mode (Best Hill Stations, Popular, etc.) */
 html[data-theme="light"] body.glass-immersive .card.dest-card,
 html[data-theme="light"] body.glass-immersive .dest-card {
-  background: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
   box-shadow:
     inset 0 1px 0 0 #FFFFFF,
-    0 2px 4px rgba(15, 23, 42, 0.04),
-    0 12px 30px -4px rgba(15, 23, 42, 0.07) !important;
+    0 2px 4px rgba(15, 23, 42, 0.03),
+    0 14px 34px -4px rgba(180, 83, 9, 0.08) !important;
   border-radius: 1.35rem !important;
   overflow: hidden !important;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease !important;

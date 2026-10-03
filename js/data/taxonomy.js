@@ -59,8 +59,14 @@ export const STATE_ZONE = {
 export const ZONES = ['North India', 'South India', 'East India', 'West India', 'Central India', 'North East India'];
 
 // ── Season → month numbers (spec "Season" filter) ──────────────────────
-export const SEASON_MONTHS = { Summer: [4, 5, 6], Monsoon: [7, 8, 9], Winter: [12, 1, 2] };
-export const SEASONS = ['Summer', 'Monsoon', 'Winter'];
+export const SEASON_MONTHS = {
+  Spring: [3, 4],
+  Summer: [4, 5, 6],
+  Monsoon: [7, 8, 9],
+  Autumn: [10, 11],
+  Winter: [12, 1, 2],
+};
+export const SEASONS = ['Spring', 'Summer', 'Monsoon', 'Autumn', 'Winter'];
 
 // ── Curated "best destination" per month ───────────────────────────────
 // Hand-picked on India's real travel calendar (verified in-season + real
@@ -164,6 +170,13 @@ export function resolveState(query, states) {
   return null;
 }
 
+export const RECENT_UPDATE_DAYS = 30;
+export function isRecentlyUpdated(updatedAt, now) {
+  const t = Date.parse(updatedAt || '');
+  if (isNaN(t)) return false;
+  return ((now || Date.now()) - t) <= RECENT_UPDATE_DAYS * 86400000;
+}
+
 // ── Pseudo-category matchers ────────────────────────────────────────────
 // The Explore category strip includes 4 ids that aren't a real `d.type`
 // value (road_trips/camping/forts/ecotourism); they filter on `features`
@@ -171,7 +184,7 @@ export function resolveState(query, states) {
 // match what js/pages/explore.js's filter actually returns for the same id.
 export const CUSTOM_TYPE_MATCHERS = {
   recently_updated: function (d) {
-    return Boolean(d.updatedAt);
+    return isRecentlyUpdated(d.updatedAt);
   },
   road_trips: function (d) {
     return (d.type === 'adventure' || d.type === 'hill_station' ||
@@ -184,13 +197,17 @@ export const CUSTOM_TYPE_MATCHERS = {
     })) || d.type === 'adventure';
   },
   forts: function (d) {
-    return d.features && d.features.some(function (f) {
+    if (d.type === 'wildlife') return false;
+    if (/\b(fort|forts|palace|qila|quila|kila|killa|durg)\b/i.test(d.title || '')) return true;
+    if (d.type === 'heritage' && /garh\b/i.test(d.title || '') && !/\b(falls?|sanctuary|park|lake|reserve|dam|cave|caves)\b/i.test(d.title || '')) return true;
+    return Boolean(d.features && d.features.some(function (f) {
       return f.toLowerCase().includes('fort') || f.toLowerCase().includes('palace');
-    });
+    }));
   },
   ecotourism: function (d) {
-    return d.features && d.features.some(function (f) {
+    if (d.type === 'nature') return true;
+    return Boolean(d.features && d.features.some(function (f) {
       return f.toLowerCase().includes('nature') || f.toLowerCase().includes('birding') || f.toLowerCase().includes('eco');
-    });
+    }));
   },
 };

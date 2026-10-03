@@ -6,7 +6,7 @@
  * price-tier meta), and renders every tab. Google Maps Embed is mounted
  * lazily via GoogleMapEmbed component when opening the Map tab.
  */
-import { fetchDestination, fetchIndex, fetchHomeIndex } from '../data/api.js';
+import { fetchDestination, fetchIndex, fetchHomeIndex } from '../data/api.js?v=20261003_phase76';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg, optimizeImageUrl } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';
@@ -154,7 +154,7 @@ if (!dest) {
       if (fullIdx && typeof window.__renderSimilarDestinations === 'function') {
         window.__renderSimilarDestinations(fullIdx);
       }
-    }).catch(() => {});
+    }).catch(() => { });
   }
 
   fetchHomeIndex()
@@ -385,7 +385,16 @@ function main(dest, idx) {
   const typeObj = DESTINATION_TYPES.find(function (t) { return t.id === dest.type; }) || {};
   const heroType = document.getElementById('heroType');
   if (heroType) {
-    heroType.href = 'destinations.html?type=' + dest.type;
+    const exploreTypes = new Set(['hill_station', 'beach', 'heritage', 'wildlife', 'spiritual', 'adventure', 'road_trips', 'camping', 'forts', 'ecotourism', 'recently_updated']);
+    if (dest.type === 'nature') {
+      heroType.href = 'destinations.html?type=ecotourism';
+    } else if (exploreTypes.has(dest.type)) {
+      heroType.href = 'destinations.html?type=' + dest.type;
+    } else if (dest.state) {
+      heroType.href = 'destinations.html?state=' + encodeURIComponent(dest.state);
+    } else {
+      heroType.href = 'destinations.html';
+    }
     // Bug 3 fix: removed emoji typeObj.icon; use plain text label only
     heroType.textContent = typeLabel(dest.type);
   }
@@ -1338,16 +1347,26 @@ function main(dest, idx) {
   // ─── PLACES panel (with category filter) ────────────────
   let placeFilter = 'all';
   function renderPlaces() {
+    if (places.length === 0) {
+      document.getElementById('panel-places').innerHTML =
+        '<div class="flex items-center justify-between mb-6"><div><span class="tab-calligraphy-kicker">✦ Sacred Sanctuaries & Must-Visit Wonders ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
+        '<p class="text-sm text-gray-400 py-10 text-center">No verified nearby attractions are listed for ' + esc(dest.title) + ' yet.</p>';
+      return;
+    }
+    const catOf = (p) => p.category || 'attraction';
     const cats = [];
-    places.forEach(function (p) { if (cats.indexOf(p.category) === -1) cats.push(p.category); });
-    let btns = '<button class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
-      (placeFilter === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="all">All</button>';
+    places.forEach(function (p) {
+      const c = catOf(p);
+      if (cats.indexOf(c) === -1) cats.push(c);
+    });
+    let btns = '<button type="button" class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
+      (placeFilter === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="all" aria-pressed="' + (placeFilter === 'all' ? 'true' : 'false') + '">All</button>';
     btns += cats.map(function (c) {
-      return '<button class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all capitalize ' +
-        (placeFilter === c ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="' + esc(c) + '">' + esc(c) + '</button>';
+      return '<button type="button" class="shrink-0 px-4 py-1.5 rounded-full border text-xs font-semibold transition-all capitalize ' +
+        (placeFilter === c ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-place="' + esc(c) + '" aria-pressed="' + (placeFilter === c ? 'true' : 'false') + '">' + esc(c) + '</button>';
     }).join('');
 
-    const list = places.filter(function (p) { return placeFilter === 'all' || p.category === placeFilter; });
+    const list = places.filter(function (p) { return placeFilter === 'all' || catOf(p) === placeFilter; });
     const cards = list.map(function (p, i) {
       const fee = p.entryFee === 'Free'
         ? '<span class="text-amber-400 font-medium">Free Entry</span>'
@@ -1397,13 +1416,13 @@ function main(dest, idx) {
   // ─── STAYS panel (with tier filter) ─────────────────────
   let stayTier = 'all';
   function renderStays() {
-    const allBtn = '<button class="px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
-      (stayTier === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-tier="all">All Stays</button>';
+    const allBtn = '<button type="button" class="px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
+      (stayTier === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-tier="all" aria-pressed="' + (stayTier === 'all' ? 'true' : 'false') + '">All Stays</button>';
     const tierBtns = Object.keys(PRICE_TIERS).filter(function (key) {
       return hotels.some(function (s) { return s.tier === key; });
     }).map(function (key) {
       const active = stayTier === key ? ' active ring-2 ring-offset-1 ring-amber-400/80 shadow-md shadow-amber-400/25' : ' opacity-75 hover:opacity-100';
-      return '<button class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '">' + PRICE_TIERS[key].label + '</button>';
+      return '<button type="button" class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '" aria-pressed="' + (stayTier === key ? 'true' : 'false') + '">' + PRICE_TIERS[key].label + '</button>';
     }).join('');
 
     const list = hotels.filter(function (s) { return stayTier === 'all' || s.tier === stayTier; });
@@ -1776,7 +1795,7 @@ function main(dest, idx) {
       '</p>' +
       (budgetIncludeEntry && b.includedAttractions.length > 0
         ? ('<div class="mt-2.5">' +
-          '<button type="button" id="btnToggleSightsAudit" class="text-xs text-purple-300 font-semibold hover:text-purple-200 cursor-pointer flex items-center justify-between w-full py-1 border-t border-white/10">' +
+          '<button type="button" id="btnToggleSightsAudit" class="text-xs text-purple-300 font-semibold hover:text-purple-200 cursor-pointer flex items-center justify-between w-full py-1 border-t border-white/10" aria-expanded="' + (budgetSightsOpen ? 'true' : 'false') + '" aria-controls="budgetSightsList">' +
           '<span>Check Sightseeing Places (' + activeSightsCount + '/' + b.includedAttractions.length + ')</span>' +
           '<span class="text-purple-400">' + (budgetSightsOpen ? '▲ Hide List' : '▼ Audit Sights') + '</span>' +
           '</button>' +
@@ -2434,8 +2453,8 @@ function main(dest, idx) {
         return '' +
           '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
           '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
-          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" ' +
-            'onerror="if(this.dataset.fallback){this.onerror=null;this.style.display=\'none\';}else{this.dataset.fallback=\'1\';this.src=\'' + esc(rawPhoto) + '\';}" />' : '') +
+          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" data-fallback-src="' + esc(rawPhoto) + '" ' +
+            'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
           '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
           '<div class="absolute top-2 right-2">' +
           '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
@@ -2783,15 +2802,7 @@ function main(dest, idx) {
 
   setTimeout(initDestinationGSAP, 100);
 
-  // Clean up any residual sample classes from testing session
-  try {
-    sessionStorage.removeItem('delhi_sample_theme');
-    document.body.classList.remove('sample-canvas-obsidian', 'sample-canvas-white');
-    const oldBar = document.getElementById('sampleThemeBar');
-    if (oldBar) oldBar.remove();
-    const oldStyles = document.getElementById('delhiThemeInjectedStyles');
-    if (oldStyles) oldStyles.remove();
-  } catch (_) { }
+
 
   // ─── EXPLOREDESH GO: OFFLINE POCKET GUIDE & CHEAT SHEET ───────────
   async function setupPocketGuideActions(dest) {
