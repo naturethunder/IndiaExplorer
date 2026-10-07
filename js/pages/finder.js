@@ -451,7 +451,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     return '<span class="reason-chip">✓ ' + esc(r) + '</span>';
   }).join(' ');
 
-  let distanceText = (d.distanceFromDelhi || 0) + ' km from Delhi';
+  let distanceText = '';
   if (userCoords) {
     const userPoint = [userCoords.lat, userCoords.lng];
     const destPoint = destCoords(d);
