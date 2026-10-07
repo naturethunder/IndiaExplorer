@@ -13,6 +13,41 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 87: Destination Card UX Declutter & CSS Dead-Code Purge (2026-10-08)
+
+Premium UI cleanup audit and fix session covering destination card visual noise reduction, CSS dead-rule elimination, and platform-wide version synchronization:
+
+1. **Destination Card Pill Chips Audit & Removal (`js/components/destinationCard.js`):**
+   - Deep-inspected the destination card template (`destCardHTML()`) at `destinations.html` and identified 8 simultaneous metadata elements per card (2 badges, title, location, rating, best season, description, 3 feature pills, price).
+   - Removed the `.dest-card-tags` container and `.dest-feat-pill` items — the 3 micro-tag pills (e.g. "Temples", "Pilgrimage", "Sacred Theertham") that appeared between the description and price footer.
+   - Removed `feats` variable (`d.features.slice(0,3).map(...).join('')`).
+   - Result: Cards are ~35–45px shorter, scan cleanly, and match the card density of Booking.com, MakeMyTrip, and Airbnb.
+
+2. **Dead CSS Purge (`css/explore-immersive.css`, `css/styles.css`, `css/glass-immersive.css`):**
+   - **`css/explore-immersive.css`** (~80 lines removed): `.dest-badge-featured` (gold gradient badge), `.dest-card-calligraphy-state` (Pinyon Script overlay), `.dest-card-tags` (pill container), `.dest-feat-pill` (individual pills), `.dest-distance-hint` (distance row), orphaned `justify-content: space-between`.
+   - **`css/styles.css`** (~12 lines removed): `.dest-card-calligraphy-state` block.
+   - **`css/glass-immersive.css`** (~30 lines removed): `.dest-badge-featured` and `.dest-card-calligraphy-state` duplicate rules.
+   - Zero live selectors were broken — all removed classes were orphaned (had no corresponding HTML generators).
+
+3. **Offline Go Button Evaluation (Retained):**
+   - Evaluated removing the ⚡ Offline Go button from the fixed top navbar across all 8 pages.
+   - Determined: Button provides genuine user utility (offline pocket guide access, emergency SOS directory, ambient network status). **Retained by user's explicit preference.**
+   - Button is present in `layout.js` navbar (`#navOfflineBtn`), `layout.js` mobile dock (`#mobNavOfflineBtn`), and `destination.html` inline navbar (`#navOfflineBtn`).
+   - Event listeners wired in `layout.js` `initLayout()` and `destination.js` top-level scope.
+
+4. **Platform-Wide Version Bump Synchronization (8 HTML pages + 2 JS pages):**
+   - `js/components/destinationCard.js` → `v=20261008_phase87` (explore.js, home.js)
+   - `js/components/layout.js` → `v=20261008_phase87` (explore.js, home.js)
+   - `css/styles.css` → `v=20261008_phase87` (index.html, destinations.html, destination.html, about.html, contact.html, ai-finder.html, privacy.html, terms.html)
+   - `css/glass-immersive.css` → `v=20261008_phase87` (all 8 HTML pages)
+   - `css/explore-immersive.css` → `v=20261008_phase87` (destinations.html)
+   - `js/pages/explore.js` → `v=20261008_phase87` (destinations.html)
+
+5. **Open Items (No Regressions Detected):**
+   - Service Worker version remains at `v1.4.9` — no SW logic changed.
+   - Zero JavaScript syntax errors (all modified files pass `node -c`).
+   - Zero orphaned event listeners — `navOfflineBtn` listeners in both `layout.js` and `destination.js` guarded with null-check.
+
 ## Addendum — Phase 84: Media Quality Cleanups, Kamanda Mahadev Ground-Truth Restoration & Immersive UI Standardization (2026-10-04)
 
 Comprehensive platform hardening covering media deduplication, geographic ground-truth restoration, regression guard certification (71/71), filter button styling unification, and CSS `:root` variable standardization:

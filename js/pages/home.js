@@ -3,8 +3,8 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20260914_7';
-import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js';
+import { initLayout } from '../components/layout.js?v=20261008_phase87';
+import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from '../components/icons.js';
@@ -200,7 +200,7 @@ function loadFullCatalog() {
     summaries = fullIdx.destinations;
     bySlug = new Map(summaries.map((d) => [d.slug, d]));
     if (fullIdx.count) idx.count = fullIdx.count;
-  }).catch(() => {});
+  }).catch(() => { });
 }
 
 // On-demand: start loading full catalogue when user focuses search

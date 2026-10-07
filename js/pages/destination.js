@@ -1201,10 +1201,10 @@ function main(dest, idx) {
       '<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">' +
       '<div class="lg:col-span-2 space-y-6">' +
       summaryHighlightsHTML +
-      '<div><span class="tab-calligraphy-kicker">✦ The Chronicles & Heritage ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">About ' + esc(dest.title) + '</h2>' +
+      '<div><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">About ' + esc(dest.title) + '</h2>' +
       '<p class="text-gray-600 leading-relaxed">' + esc(ov.about || ov.description || dest.short || '') + '</p></div>' +
       '<div><h3 class="font-semibold text-gray-900 mb-3">Known For</h3><div class="flex flex-wrap gap-2">' + features + '</div></div>' +
-      '<div><div class="flex items-center justify-between mb-3.5"><div><span class="tab-calligraphy-kicker text-sm">✦ Must-Visit Wonders ✦</span><h3 class="font-bold text-gray-900 dark:text-white text-lg">Top Places to Visit</h3></div>' +
+      '<div><div class="flex items-center justify-between mb-3.5"><div><h3 class="font-bold text-gray-900 dark:text-white text-lg">Top Places to Visit</h3></div>' +
       '<button class="text-sm text-primary font-semibold hover:underline flex items-center gap-1" data-goto="places">See all places →</button></div>' +
       '<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">' + topPlaces + '</div></div>' +
       '</div>' +
@@ -1349,7 +1349,7 @@ function main(dest, idx) {
   function renderPlaces() {
     if (places.length === 0) {
       document.getElementById('panel-places').innerHTML =
-        '<div class="flex items-center justify-between mb-6"><div><span class="tab-calligraphy-kicker">✦ Sacred Sanctuaries & Must-Visit Wonders ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
+        '<div class="flex items-center justify-between mb-6"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
         '<p class="text-sm text-gray-400 py-10 text-center">No verified nearby attractions are listed for ' + esc(dest.title) + ' yet.</p>';
       return;
     }
@@ -1397,7 +1397,7 @@ function main(dest, idx) {
     }).join('');
 
     document.getElementById('panel-places').innerHTML =
-      '<div class="flex items-center justify-between mb-6"><div><span class="tab-calligraphy-kicker">✦ Sacred Sanctuaries & Must-Visit Wonders ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
+      '<div class="flex items-center justify-between mb-6"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Places to Visit in ' + esc(dest.title) + '</h2></div></div>' +
       '<div class="flex gap-2 overflow-x-auto scrollbar-hide mb-6 pb-1">' + btns + '</div>' +
       '<div class="grid grid-cols-1 md:grid-cols-2 gap-4">' + cards + '</div>';
 
@@ -1466,7 +1466,7 @@ function main(dest, idx) {
     }
 
     document.getElementById('panel-stays').innerHTML =
-      '<div class="flex items-center justify-between mb-4"><div><span class="tab-calligraphy-kicker">✦ Regal Stays & Boutique Sanctuaries ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Where to Stay in ' + esc(dest.title) + '</h2></div></div>' +
+      '<div class="flex items-center justify-between mb-4"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Where to Stay in ' + esc(dest.title) + '</h2></div></div>' +
       '<div class="flex gap-2 flex-wrap mb-6">' + allBtn + tierBtns + '</div>' + cards;
 
     document.querySelectorAll('#panel-stays [data-tier]').forEach(function (b) {
@@ -1535,7 +1535,6 @@ function main(dest, idx) {
       '<div class="budget-header-box">' +
       '<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">' +
       '<div>' +
-      '<span class="tab-calligraphy-kicker">✦ Real-Time Financial Simulator ✦</span>' +
       '<h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-2.5">' +
       SVG_WALLET +
       '<span>Smart Budget Estimator — ' + esc(dest.title) + '</span>' +
@@ -2089,7 +2088,7 @@ function main(dest, idx) {
     const SVG_CAR = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
     const hasMetro = !!(reach && reach.nearestMetro && reach.nearestMetro.name);
     document.getElementById('panel-reach').innerHTML =
-      '<div class="mb-4"><span class="tab-calligraphy-kicker">✦ The Royal Passage & Routes ✦</span><h2 class="text-2xl font-bold text-gray-900 dark:text-white">How to Reach ' + esc(dest.title) + '</h2></div>' +
+      '<div class="mb-4"><h2 class="text-2xl font-bold text-gray-900 dark:text-white">How to Reach ' + esc(dest.title) + '</h2></div>' +
       '<div class="grid grid-cols-1 sm:grid-cols-2 ' + (hasMetro ? 'lg:grid-cols-4' : 'lg:grid-cols-3') + ' gap-4 mb-8">' +
       (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="info-card text-center"><div class="info-card-icon mx-auto">' + SVG_PLANE + '</div><h3 class="font-bold text-sm mb-1">Nearest Airport</h3>' +
         '<p class="text-gray-600 text-sm">' + esc(reach.nearestAirport.name) + '</p><p class="text-primary font-semibold text-sm mt-1">' + (reach.nearestAirport.distance || '—') + ' km away</p></div>' : '') +

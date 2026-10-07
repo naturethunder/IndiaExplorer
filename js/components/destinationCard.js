@@ -123,9 +123,7 @@ export function trendCardHTML(d, opts = {}) {
     '<div class="absolute top-3 left-3">' +
     '<span class="rating-badge">' + icon('star', { size: 13, fill: true }) + esc(d.rating) + '</span>' +
     '</div>' +
-    (d.badge ? '<div class="absolute top-3 right-3"><span class="pill-glass">' + esc(d.badge) + '</span></div>' : '') +
     '<div class="absolute bottom-0 left-0 right-0 p-4">' +
-    '<span class="card-calligraphy-accent">~ ' + esc(d.state) + ' ~</span>' +
     '<p class="text-white font-bold text-lg leading-tight drop-shadow-md trend-card-title">' + esc(d.title) + '</p>' +
     '<div class="flex items-center gap-2 flex-wrap mt-2.5">' +
     '<span class="pill-green">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
@@ -142,15 +140,7 @@ export function destCardHTML(d, opts = {}) {
   const typeBadge = opts.variant === 'explore'
     ? '<span class="dest-badge-type">' + (opts.typeIcon || '') + ' ' + esc(typeLabel(d.type)) + '</span>'
     : '';
-  const badgeHtml = d.badge
-    ? '<span class="dest-badge-featured">' + esc(d.badge) + '</span>'
-    : '';
 
-  const feats = (d.features || []).slice(0, 3).map(function (f) {
-    return '<span class="dest-feat-pill">' + esc(f) + '</span>';
-  }).join('');
-
-  const distText = (d.distanceFromDelhi || 0) + ' km from Delhi';
   const loadingAttr = opts.priority ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
 
   return '' +
@@ -160,14 +150,10 @@ export function destCardHTML(d, opts = {}) {
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
-    '<div class="dest-card-badges-top">' +
-    (badgeHtml || '') +
-    (typeBadge || '') +
-    '</div>' +
+    (typeBadge ? '<div class="dest-card-badges-top">' + typeBadge + '</div>' : '') +
     '<div class="dest-card-header-overlay">' +
-    '<span class="dest-card-calligraphy-state">~ ' + esc(d.state) + ' ~</span>' +
     '<h3 class="dest-card-title">' + esc(d.title) + '</h3>' +
-    '<p class="dest-card-location">' + icon('map-pin', { size: 12 }) + esc(d.state) + (d.region ? ' · ' + esc(d.region) : '') + '</p>' +
+    '<p class="dest-card-location">' + icon('map-pin', { size: 12 }) + esc(d.state) + (d.region && d.region.trim().toLowerCase() !== d.state.trim().toLowerCase() ? ' · ' + esc(d.region) : '') + '</p>' +
     '</div>' +
     '</div>' +
     '<div class="dest-card-body">' +
@@ -180,9 +166,7 @@ export function destCardHTML(d, opts = {}) {
     '<span class="dest-best-season">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="dest-card-desc">' + esc(d.short) + '</p>' +
-    (feats ? '<div class="dest-card-tags">' + feats + '</div>' : '') +
     '<div class="dest-card-footer">' +
-    '<span class="dest-dist-hint">' + icon('compass', { size: 12 }) + distText + '</span>' +
     '<div class="dest-price-box">' +
     '<span class="price-prefix">Stay starts from</span>' +
     '<span class="price-val">₹' + inr(d.minPrice) + '</span>' +
@@ -203,10 +187,8 @@ export function heroCardHTML(d, opts = {}) {
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
-    (d.badge ? '<div class="absolute top-3 left-3"><span class="dest-badge-featured">' + esc(d.badge) + '</span></div>' : '') +
     '</div>' +
     '<div class="p-3 bg-slate-900/90 flex flex-col gap-1">' +
-    '<span class="dest-card-calligraphy-state text-xs">~ ' + esc(d.state) + ' ~</span>' +
     '<h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">' + esc(d.title) + '</h3>' +
     '<div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300">' +
     '<span class="flex items-center gap-0.5">' +
@@ -217,8 +199,7 @@ export function heroCardHTML(d, opts = {}) {
     '<span>' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">' + esc(d.short) + '</p>' +
-    '<div class="pt-2 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 mt-1">' +
-    '<span class="text-slate-400 text-[10px] uppercase font-semibold tracking-wider">' + (d.distanceFromDelhi || 0) + ' km from Delhi</span>' +
+    '<div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1">' +
     '<div class="flex items-baseline gap-1.5">' +
     '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
     '<span class="text-amber-400 font-bold text-sm">₹' + inr(d.minPrice) + '</span>' +
@@ -240,7 +221,6 @@ export function miniCardHTML(d, opts = {}) {
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +
-    '<span class="dest-card-calligraphy-state text-[11px] mb-0.5">~ ' + esc(d.state) + ' ~</span>' +
     '<p class="text-white text-xs font-semibold truncate">' + esc(d.title) + '</p>' +
     '</div>' +
     '</div>' +

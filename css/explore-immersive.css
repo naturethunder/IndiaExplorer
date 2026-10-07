@@ -1267,7 +1267,7 @@ html[data-theme="light"] select option {
   right: 12px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 6px;
   z-index: 2;
   /* Never let badges overflow the card edges */
@@ -1277,28 +1277,6 @@ html[data-theme="light"] select option {
 }
 
 
-.dest-badge-featured {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 45%, #B38628 100%);
-  border: 1px solid rgba(255, 243, 196, 0.6);
-  color: var(--bg-obsidian);
-  font-size: 9.5px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 12px rgba(229, 192, 123, 0.35);
-  /* Prevent long badge text from crashing into the type badge */
-  max-width: 55%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-shrink: 1;
-}
 
 .dest-badge-type {
   display: inline-flex;
@@ -1331,17 +1309,6 @@ html[data-theme="light"] select option {
   z-index: 2;
 }
 
-.dest-card-calligraphy-state {
-  display: block;
-  font-family: 'Pinyon Script', cursive !important;
-  font-size: clamp(1.1rem, 1.3vw, 1.35rem);
-  line-height: 1.1;
-  color: #F5C542;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
-  letter-spacing: 0.04em;
-  margin-bottom: 2px;
-  font-weight: 400;
-}
 
 .dest-card-title {
   font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif;
@@ -1435,30 +1402,11 @@ html[data-theme="light"] select option {
   font-size: 12px;
   line-height: 1.6;
   color: var(--exp-text-muted);
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.dest-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 14px;
-}
-
-.dest-feat-pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 8px;
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--exp-border);
-  color: #cbd5e1;
-  font-size: 10.5px;
-  font-weight: 500;
 }
 
 .dest-card-footer {
@@ -1468,15 +1416,6 @@ html[data-theme="light"] select option {
   padding-top: 12px;
   margin-top: auto;
   border-top: 1px solid var(--exp-border);
-}
-
-.dest-dist-hint {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 11px;
-  color: var(--exp-text-subtle);
-  font-weight: 500;
 }
 
 .dest-price-box {
@@ -2101,10 +2040,6 @@ html[data-theme="light"] body.explore-immersive .dest-card-location {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7) !important;
 }
 
-html[data-theme="light"] body.explore-immersive .dest-card-calligraphy-state {
-  color: #FDE68A !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
-}
 
 /* Card Body in Light Mode */
 html[data-theme="light"] body.explore-immersive .dest-card-body {
@@ -2136,22 +2071,8 @@ html[data-theme="light"] body.explore-immersive .dest-best-season svg {
   color: #B45309 !important;
 }
 
-html[data-theme="light"] body.explore-immersive .dest-feat-pill {
-  background: #FAF8F5 !important;
-  color: #334155 !important;
-  border: 1px solid rgba(217, 119, 6, 0.16) !important;
-}
-
 html[data-theme="light"] body.explore-immersive .dest-card-footer {
   border-top: 1px solid rgba(217, 119, 6, 0.12) !important;
-}
-
-html[data-theme="light"] body.explore-immersive .dest-dist-hint {
-  color: var(--text-muted) !important;
-}
-
-html[data-theme="light"] body.explore-immersive .dest-dist-hint svg {
-  color: #94A3B8 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .price-prefix {

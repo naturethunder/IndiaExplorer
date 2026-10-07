@@ -3,7 +3,28 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-04 (rev-36 Phase 84).
+Last updated: 2026-10-08 (rev-37 Phase 87).
+
+---
+
+- **Phase 87: Destination Card UX Declutter & CSS Dead-Code Purge (2026-10-08 rev-37)** — Premium UI cleanup removing visual noise from destination cards and pruning unused CSS rules:
+  1. **Destination Card Pill Chips Removed (`js/components/destinationCard.js`):**
+     - Removed the 3-pill feature-tag row (`.dest-card-tags` / `.dest-feat-pill`) from `destCardHTML()` — eliminated ~35–45px of visual clutter per card.
+     - Removed `feats` variable computation (was slicing `d.features` to 3 pills per card).
+     - Cards now show a cleaner 6-element layout: image → title/location overlay → rating + best season → description → price — reducing cognitive load and aligning with premium travel platform standards (MakeMyTrip, Booking.com, Airbnb card patterns).
+  2. **Dead CSS Rules Purged (`css/explore-immersive.css`, `css/styles.css`, `css/glass-immersive.css`):**
+     - **`css/explore-immersive.css`**: Removed `.dest-badge-featured` (gold gradient premium badge), `.dest-card-calligraphy-state` (Pinyon Script font overlay), `.dest-card-tags` (flex pill container), `.dest-feat-pill` (individual feature pills), `.dest-distance-hint` (distance row), and orphaned `justify-content: space-between` rule — ~80 lines of dead code purged.
+     - **`css/styles.css`**: Removed `.dest-card-calligraphy-state` block — ~12 lines purged.
+     - **`css/glass-immersive.css`**: Removed `.dest-badge-featured` and `.dest-card-calligraphy-state` duplicate blocks — ~30 lines purged.
+  3. **Platform-Wide Cache-Buster Version Bumps:**
+     - `js/components/destinationCard.js` → `v=20261008_phase87` in `explore.js`, `home.js`.
+     - `js/components/layout.js` → `v=20261008_phase87` in `explore.js`, `home.js`.
+     - `css/styles.css`, `css/glass-immersive.css` → `v=20261008_phase87` in all 8 HTML pages.
+     - `css/explore-immersive.css` → `v=20261008_phase87` in `destinations.html`.
+     - `js/pages/explore.js` → `v=20261008_phase87` in `destinations.html`.
+  4. **Offline Go Button Decision (Retained by User Preference):**
+     - The ⚡ Offline Go button in the header navbar and mobile navigation dock was evaluated for removal but **retained** at the user's explicit request — it provides genuine utility for offline pocket guide access and emergency SOS toolkit.
+     - The `navOfflineBtn` is present in `layout.js` (for 7 pages) and in `destination.html` (8th page) with matching event listeners in `destination.js`.
 
 ---
 
