@@ -17,16 +17,8 @@ import { saveDestinationOffline, removeDestinationOffline, isDestinationOffline,
 import { openOfflineHub, initOfflineHub } from '../components/offlineHub.js';
 import { icon } from '../components/icons.js';
 
-// This page keeps its own breadcrumb navbar + mobile tab bar (Stays/Route);
-// only the footer comes from the shared layout component.
-initLayout({});
-initThemeToggle();
-initOfflineHub();
-
-const navOfflineBtn = document.getElementById('navOfflineBtn');
-if (navOfflineBtn) {
-  navOfflineBtn.addEventListener('click', () => openOfflineHub('saved'));
-}
+// Shared site chrome (navbar with active Destinations, offline hub & theme toggle)
+initLayout({ active: 'destinations' });
 
 const HIMALAYAN_STATES = new Set([
   'Ladakh', 'Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand',

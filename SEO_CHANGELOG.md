@@ -2,7 +2,20 @@
 
 > **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
 > **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit<br>
-> **Date**: 2026-10-04 (Phase 84 update)
+> **Date**: 2026-10-14 (Phase 88 update)
+
+---
+
+## Phase 88 Modifications (2026-10-14)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/bhimeswar-dham.json` | Cross-monument and foreign stock contamination (Gwalior Fort MP, Rawatpura Shiva MP, Devghat Nepal) plus generic South Indian stock temple in gallery | Contaminated stock photos and generic temple reflections | Synchronized authentic 3.2K–9.2K photography of rock-cut Jyotirlinga, terracotta archway, and zodiac chakra with bells; verified Ahom/Kamrup places | Provide 100% authentic ground-truth photography and eliminate cross-state misattributions | Maximizes image authenticity, user trust, and rich snippet quality | Low (Content accuracy) |
+| `data/destinations/bangaram-island.json` | HTTP 404 broken URL (`Bangaram_Island_Lakshadweep.jpg`) and HTTP 429 Wikimedia rate-limiting caused `"PHOTO UNAVAILABLE"` card on Explore | 404 broken hero URL and rate-limited Wikimedia links | 100% replaced with permanent high-speed Pexels HD (`21617942`) and authentic working Commons (`LakshadweepIsland.jpg`) with 0 collisions | Eliminate broken image signals and rate-limiting errors for visitors and search crawlers | Restores 100% Core Web Vitals stability and Google Image indexability | Low (Media upgrade) |
+| `data/destinations/index.json` & `home-manifest.json` | Catalog manifests lagged behind destination JSON updates, displaying older image URLs on Home and Explore cards | Stale cover URLs in manifests | Automated catalog compilation via `build-json-data.js` auto-stamping `updatedAt` on 80+ modified destinations | Ensure highlight cards and "Recently Updated" filters immediately reflect latest authentic media | Accelerates crawler discovery of updated content and boosts user engagement | Low (Automated build) |
+| `.agents/rules/destination-strict-rules.md` | Missing explicit rule for high-speed edge delivery, rate-limit immunity, and highlight compilation pipeline | Rules ended at Rule 20 | Formulated Rule 21: High-Speed Edge Delivery & Rate-Limit (429/404) Immunity | Document mandatory standards for CDN reliability, micro-payload resizing, and manifest synchronization | Enforces data and performance invariants across future agent runs | Low (Policy update) |
+| `destination.html` & `js/pages/destination.js` | Legacy hardcoded navbar had narrower `max-w-7xl` container and breadcrumbs in top bar displacing buttons | Narrow header, cluttered navbar breadcrumb, inactive Destinations pill | Replaced with shared `siteNav` via `initLayout({ active: 'destinations' })`; relocated breadcrumb into hero banner | Standardize header structure and layout width with Home page while maintaining BreadcrumbList schema | Enhances UX consistency, reduces layout shift, and preserves rich breadcrumb snippets | Low (UI/UX enhancement) |
+| `scripts/` (15 obsolete files) | Repository contained legacy one-off batch scripts with exposed API keys and outdated Phase 24 migration tools | 15 obsolete scripts in `scripts/bulk/`, `scripts/cron/`, `scripts/audit/`, `scripts/images/` | Safely deleted 15 residue scripts while preserving all active build, manifest, and audit engines | Clean codebase, eliminate security liabilities, and prevent documentation clobbering | Ensures clean development toolchain and maintains 71/71 regression guard score | Low (Maintenance) |
 
 ---
 

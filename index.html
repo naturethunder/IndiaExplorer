@@ -49,9 +49,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
+  <link rel="stylesheet" href="css/styles.css?v=20261008_phase90" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261008_phase87" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261008_phase90" />
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
   <script src="js/vendor/ScrollTrigger.min.js" defer></script>
@@ -136,7 +136,7 @@
             </div>
           </div>
 
-          <!-- Right: white AI Finder card (desktop only) -->
+          <!-- Right: white Trip / Itenary Planner card (desktop only) -->
           <div class="lg:col-span-4 hidden lg:block">
             <div class="ai-hero-card p-6 animate-fade-up delay-300 ml-auto">
               <div class="flex items-center gap-2.5 mb-3">
@@ -149,7 +149,7 @@
                     <path d="M22 5h-4" />
                   </svg>
                 </span>
-                <span class="text-gray-900 font-bold text-lg">AI Trip Finder</span>
+                <span class="text-gray-900 font-bold text-lg">Trip / Itenary Planner</span>
               </div>
               <p class="text-gray-900 font-semibold text-base mb-1">Not sure where to go?</p>
               <p class="text-gray-500 text-sm leading-relaxed mb-5">
@@ -251,26 +251,31 @@
         <div class="monthly-header-bar mb-6 reveal">
           <!-- Left: Best in <Month> & Subtitle -->
           <div class="monthly-header-left">
-            <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1 flex items-center gap-1.5">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            <div class="monthly-kicker-badge mb-2">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
                 <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg> Monthly Highlights
-            </p>
-            <h2 class="section-title">Best in <span id="railMonthName" class="text-primary"></span></h2>
+              </svg>
+              <span>Monthly Highlights</span>
+            </div>
+            <h2 class="section-title">Best in <span id="railMonthName" class="rail-month-highlight text-primary"></span></h2>
             <p class="section-subtitle" id="railMonthSub">Top recommended places to travel right now</p>
           </div>
+        </div>
 
-          <!-- Center spacer -->
-          <div class="monthly-header-center"></div>
-
-          <!-- Right: View All Button -->
-          <div class="monthly-header-right">
+        <!-- Month selector pills + View All Button (Inline row: same right position, down inline with all months) -->
+        <div class="monthly-nav-bar mb-6 reveal">
+          <div class="monthly-pills-scroll overflow-x-auto scrollbar-hide py-1">
+            <div id="monthPills" class="flex gap-2 min-w-max items-center">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+          <div class="monthly-nav-action flex-shrink-0">
             <a id="railMonthAll" href="destinations.html"
-              class="btn btn-outline text-sm inline-flex items-center gap-2">
+              class="monthly-cta-btn btn btn-outline text-sm inline-flex items-center gap-2">
               <span>View All for <span id="railMonthBtnName"></span></span>
-              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              <svg class="icon monthly-cta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
@@ -279,15 +284,16 @@
           </div>
         </div>
 
-        <!-- Month selector pills (Jan–Dec) -->
-        <div class="mb-6 overflow-x-auto scrollbar-hide py-1 reveal">
-          <div id="monthPills" class="flex gap-2 min-w-max">
+        <div class="section-carousel-wrap">
+          <div id="month-rail" aria-live="polite" class="carousel-row section-carousel-grid" tabindex="0" role="group" aria-label="Best destinations this month">
             <!-- Rendered by JS -->
           </div>
-        </div>
-
-        <div id="month-rail" aria-live="polite" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <!-- Rendered by JS -->
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="month-prev" aria-label="Scroll month picks left">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="month-next" aria-label="Scroll month picks right">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -329,8 +335,16 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="popular-grid">
-          <!-- Rendered by JS -->
+        <div class="section-carousel-wrap">
+          <div class="carousel-row section-carousel-grid" id="popular-grid" tabindex="0" role="group" aria-label="Popular destinations">
+            <!-- Rendered by JS -->
+          </div>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="popular-prev" aria-label="Scroll popular destinations left">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="popular-next" aria-label="Scroll popular destinations right">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -372,8 +386,16 @@
             </a>
           </div>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="hills-grid">
-          <!-- Rendered by JS -->
+        <div class="section-carousel-wrap">
+          <div class="carousel-row section-carousel-grid" id="hills-grid" tabindex="0" role="group" aria-label="Best hill stations">
+            <!-- Rendered by JS -->
+          </div>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="hills-prev" aria-label="Scroll hill stations left">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="hills-next" aria-label="Scroll hill stations right">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -389,8 +411,16 @@
           <div class="monthly-header-center"></div>
           <div class="monthly-header-right"></div>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4" id="explore-grid">
-          <!-- Rendered by JS -->
+        <div class="section-carousel-wrap">
+          <div class="carousel-row section-carousel-grid section-carousel-grid--mini" id="explore-grid" tabindex="0" role="group" aria-label="Explore more destinations">
+            <!-- Rendered by JS -->
+          </div>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="explore-prev" aria-label="Scroll explore left">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="explore-next" aria-label="Scroll explore right">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
         </div>
         <div class="text-center mt-10 reveal">
           <a href="destinations.html" class="btn btn-primary">Browse All 2,396 Destinations</a>
@@ -405,7 +435,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/home.js?v=20261007_phase86"></script>
+  <script type="module" src="js/pages/home.js?v=20261008_phase89"></script>
 
   <!-- SEO: Organization + WebSite JSON-LD -->
   <script type="application/ld+json">

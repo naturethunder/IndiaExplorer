@@ -5,7 +5,7 @@
  * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout, setActiveNav } from '../components/layout.js?v=20261008_phase87';
+import { initLayout, setActiveNav } from '../components/layout.js?v=20261008_phase90';
 import { destCardHTML } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';

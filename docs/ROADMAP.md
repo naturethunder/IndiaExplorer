@@ -3,7 +3,32 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-08 (rev-37 Phase 87).
+Last updated: 2026-10-14 (rev-38 Phase 88).
+
+---
+
+- **Phase 88: High-Speed Edge Delivery, Rate-Limit Elimination, Destination Header Parity & Toolchain Cleanup (2026-10-14 rev-38)**:
+  1. **Destination Detail Page Header Parity**:
+     - Replaced hardcoded navbar on `destination.html` with shared platform chrome `<div id="siteNav"></div>` via `initLayout({ active: 'destinations' })`.
+     - Standardized container width to `max-w-screen-2xl px-6` with `site-brand-text` support.
+     - Relocated breadcrumb trail from navbar into the hero banner header (`.dest-hero-content`).
+     - Ensured active `Destinations` chip highlight and full Dark/Light mode theme parity.
+  2. **Obsolete Scripts & Residue Cleanup**:
+     - Safely purged 15 legacy, one-off residue scripts from `scripts/bulk/`, `scripts/cron/`, `scripts/audit/`, and `scripts/images/`.
+  3. **Zero Broken (404) & Rate-Limited (429) URLs**:
+     - Purged dead Wikimedia 404 links and throttled Commons endpoints causing "PHOTO UNAVAILABLE" placeholder cards.
+     - Sourced high-speed, rate-limit immune Pexels/Unsplash CDN endpoints with native fallback chains.
+  4. **Ground-Truth Overhaul**:
+     - `bhimeswar-dham.json`: Restored authentic Kamrup/Guwahati rock-cut sanctum, terracotta entrance, sacred chakra, and wetlands.
+     - `bangaram-island.json`: Sourced pristine turquoise lagoon and coral atoll landscape photography.
+  5. **Micro-Payload Dynamic CDN Delivery & High-Speed Rendering**:
+     - Destination cards dynamically transform original multi-megabyte photo URLs into edge-optimized micro-payloads (`&w=600`, ~40 KB WebP).
+     - Lightweight home manifest (`home-manifest.json`, 173 KB) delivers instant initial landing page renders.
+  6. **Catalog Build & Recently Updated Synchronization**:
+     - Executed `scripts/build-json-data.js` compiling `index.json`, `search-index.json`, and `home-manifest.json`.
+  7. **Master Regression Certification**:
+     - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (100/100)**.
+     - Technical SEO Audit (`scripts/seo_audit.js`): **61/61 PASSED (0 errors)**.
 
 ---
 

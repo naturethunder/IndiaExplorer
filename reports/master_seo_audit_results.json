@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03T15:31:24.207Z",
+  "timestamp": "2026-10-13T19:15:51.206Z",
   "architecture": {},
   "robotsTxt": {
     "passed": [
@@ -27,7 +27,7 @@
   },
   "sitemaps": {
     "totalUrls": 2453,
-    "totalImages": 11960,
+    "totalImages": 11963,
     "sitemaps": [
       {
         "file": "sitemap.xml",
@@ -53,14 +53,14 @@
       {
         "file": "sitemap-destinations-1.xml",
         "locCount": 1000,
-        "imgCount": 4994,
+        "imgCount": 4996,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       },
       {
         "file": "sitemap-destinations-2.xml",
         "locCount": 1000,
-        "imgCount": 4989,
+        "imgCount": 4990,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       },
@@ -135,10 +135,10 @@
       "jsonLdCount": 0
     },
     "ai-finder.html": {
-      "title": "AI Trip Finder — ExploreDesh",
-      "titleLength": 28,
-      "desc": "Find your ideal Indian destination with AI Trip Finder. Match spots by travel vibe, budget, season, and region in seconds without signup.",
-      "descLength": 137,
+      "title": "Trip / Itenary Planner — ExploreDesh",
+      "titleLength": 36,
+      "desc": "Find your ideal Indian destination with Trip / Itenary Planner. Match spots by travel vibe, budget, season, and region in seconds without signup.",
+      "descLength": 145,
       "canonical": "https://exploredesh.com/ai-finder.html",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
@@ -173,13 +173,7 @@
     "missingFields": [],
     "invalidCoords": [],
     "missingHero": [],
-    "lowAttractions": [
-      {
-        "slug": "kamanda-mahadev",
-        "title": "Kamanda Mahadev",
-        "count": 0
-      }
-    ],
+    "lowAttractions": [],
     "invalidPlaceImages": [],
     "invalidAltTexts": []
   },

@@ -3,7 +3,7 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20261008_phase87';
+import { initLayout } from '../components/layout.js?v=20261008_phase90';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
@@ -527,16 +527,19 @@ if (!isFullIndexLoaded) {
 
     const qualityPool = monthCandidates.filter((d) => (d.rating >= 4.4 && (d.reviewCount >= 20 || d.badge)) || d.badge);
     const pool = qualityPool.length >= 8 ? qualityPool : (monthCandidates.length >= 4 ? monthCandidates : summaries);
-    const picks = shuffleArray(pool).slice(0, 4);
+    const picks = shuffleArray(pool).slice(0, 10);
 
     railEl.style.opacity = '0.4';
     setTimeout(() => {
       railEl.innerHTML = picks.map((d, i) => trendCardHTML(d, { priority: i < 3 })).join('');
+      railEl.scrollLeft = 0;
       railEl.style.opacity = '1';
+      if (typeof updateMonthCarousel === 'function') updateMonthCarousel();
     }, 120);
 
   }
 
+  const updateMonthCarousel = wireCarousel(railEl, document.getElementById('month-prev'), document.getElementById('month-next'));
   renderMonthPills();
   renderMonthRail(activeMonth);
 })();
@@ -661,8 +664,9 @@ function shuffleArray(arr) {
     return isHill && hasPhoto;
   });
 
-  const selectedHills = shuffleArray(hillsPool.length >= 4 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 4);
+  const selectedHills = shuffleArray(hillsPool.length >= 10 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 10);
   el.innerHTML = selectedHills.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
+  wireCarousel(el, document.getElementById('hills-prev'), document.getElementById('hills-next'));
 })();
 
 // ─── Popular grid (large cards - Dynamic Reshuffle on Refresh) ─
@@ -676,8 +680,9 @@ function shuffleArray(arr) {
     return isPopular && hasPhoto;
   });
 
-  const selectedPopular = shuffleArray(popularPool.length >= 4 ? popularPool : summaries).slice(0, 4);
+  const selectedPopular = shuffleArray(popularPool.length >= 10 ? popularPool : summaries).slice(0, 10);
   el.innerHTML = selectedPopular.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
+  wireCarousel(el, document.getElementById('popular-prev'), document.getElementById('popular-next'));
 })();
 
 // ─── Explore grid (small cards - Dynamic Reshuffle on Refresh) ─
@@ -686,8 +691,9 @@ function shuffleArray(arr) {
   if (!el) return;
 
   const explorePool = summaries.filter(function (d) { return d.heroImage && d.heroImage.src; });
-  const selectedExplore = shuffleArray(explorePool).slice(0, 6);
+  const selectedExplore = shuffleArray(explorePool).slice(0, 12);
   el.innerHTML = selectedExplore.map(function (d, i) { return miniCardHTML(d, { priority: i < 3 }); }).join('');
+  wireCarousel(el, document.getElementById('explore-prev'), document.getElementById('explore-next'));
 })();
 
 // Grids above are populated synchronously right after the index fetch resolves;
@@ -732,6 +738,7 @@ function wireCarousel(row, prevBtn, nextBtn) {
   row.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();
+  return update;
 }
 
 // ─── Scroll-reveal (fade-up with 50ms stagger) ────────────

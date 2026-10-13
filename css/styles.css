@@ -2289,6 +2289,63 @@ textarea.form-input {
   cursor: default;
 }
 
+/* ─── Section carousel wrappers (Popular / Hills / Explore / Month) ─── */
+.section-carousel-wrap {
+  position: relative;
+}
+
+/* Hero-card sections (Popular Destinations, Best Hill Stations, Best in Month)
+   Cards are ~310px wide — with 10 cards per section, smooth scrolling is guaranteed
+   across all screen widths while maintaining beautiful card proportions. */
+.section-carousel-grid {
+  gap: 1.25rem;
+  padding: 0.5rem 0.25rem 1rem;
+}
+
+.section-carousel-grid > * {
+  width: 310px;
+  flex: 0 0 auto;
+}
+
+/* Mini-card section (Explore More) — 12 cards × 210px = 2520px total scroll strip */
+.section-carousel-grid--mini > * {
+  width: 210px;
+}
+
+/* Arrow buttons: vertically centred, overlapping the card strip edges */
+.section-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-carousel-arrow-left {
+  left: -8px;
+}
+
+.section-carousel-arrow-right {
+  right: -8px;
+}
+
+@media (max-width: 768px) {
+  .section-carousel-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-carousel-grid > * {
+    width: 80vw;
+  }
+
+  .section-carousel-grid--mini > * {
+    width: 52vw;
+  }
+}
+
+
 /* Trending carousel card (image w/ overlay content) */
 .trend-card {
   position: relative;
@@ -3317,6 +3374,51 @@ textarea.form-input {
 .month-pill:not(.is-active) .pill-current-badge {
   background-color: #ffedd5;
   color: #ea580c;
+}
+
+.monthly-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.monthly-pills-scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 0.75rem;
+  padding: 0.35rem 0.1rem;
+}
+
+.monthly-pills-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.monthly-nav-action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.monthly-cta-btn {
+  min-height: 44px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .monthly-nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .monthly-nav-action {
+    align-self: flex-start;
+  }
 }
 
 /* Active filter chip on Destinations page */

@@ -1807,56 +1807,183 @@ body.glass-immersive .rating-badge svg {
   fill: #D97706 !important;
 }
 
-/* ─── Month Selector Pills (Best in <Month> Section) ─────────── */
-body.glass-immersive .month-pill {
-  background: rgba(15, 23, 42, 0.75) !important;
-  color: rgba(255, 255, 255, 0.85) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border-radius: 9999px !important;
-  padding: 0.5rem 1.15rem !important;
-  font-size: 0.85rem !important;
-  font-weight: 600 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  gap: 0.4rem !important;
-  display: inline-flex !important;
-  align-items: center !important;
+/* ─── Monthly Highlights Header, Nav & Pills (UI/UX Pro Max) ─────────── */
+.monthly-kicker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.12);
+  border: 1px solid rgba(245, 197, 66, 0.32);
+  color: #F5C542;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: fit-content;
 }
 
-body.glass-immersive .month-pill:hover,
-body.glass-immersive .month-pill:active,
-body.glass-immersive .month-pill.is-active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+.rail-month-highlight {
+  background: linear-gradient(135deg, #FFF6E5 0%, #F5C542 50%, #E5A823 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 16px rgba(245, 197, 66, 0.35));
+  display: inline-block;
+}
+
+/* Inline Row: Month Pills on Left + View All Button on Right */
+.monthly-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.monthly-pills-scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 0.75rem;
+  padding: 0.35rem 0.1rem;
+}
+
+.monthly-pills-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.monthly-nav-action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Dedicated Pill-Shaped Glass CTA */
+body.glass-immersive .monthly-cta-btn,
+.monthly-cta-btn {
+  min-height: 44px !important;
+  padding: 0.55rem 1.35rem !important;
+  border-radius: 9999px !important;
+  background: rgba(15, 23, 42, 0.82) !important;
+  color: #FDE68A !important;
+  border: 1px solid rgba(245, 197, 66, 0.38) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.60) !important;
+  backdrop-filter: blur(16px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(160%) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
   font-weight: 600 !important;
-  transform: translateY(-1px) !important;
+  font-size: 0.875rem !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .monthly-cta-btn:hover,
+.monthly-cta-btn:hover {
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.24) 0%, rgba(217, 119, 6, 0.30) 100%) !important;
+  border-color: #F5C542 !important;
+  border-bottom-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 22px rgba(245, 197, 66, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+}
+
+.monthly-cta-arrow {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.monthly-cta-btn:hover .monthly-cta-arrow,
+body.glass-immersive .monthly-cta-btn:hover .monthly-cta-arrow {
+  transform: translateX(4px) !important;
+}
+
+/* 44px Apple HIG / MD3 Touch Target Month Selector Pills */
+body.glass-immersive .month-pill {
+  min-height: 44px !important;
+  min-width: 58px !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-radius: 9999px !important;
+  padding: 0.55rem 1.15rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  gap: 0.45rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  white-space: nowrap !important;
+}
+
+body.glass-immersive .month-pill:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(245, 197, 66, 0.50) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+}
+
+body.glass-immersive .month-pill.is-active,
+body.glass-immersive .month-pill[aria-pressed="true"] {
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.28) 0%, rgba(217, 119, 6, 0.20) 100%) !important;
+  color: #FFF9E6 !important;
+  border: 1.5px solid #F5C542 !important;
+  box-shadow: 0 4px 20px rgba(245, 197, 66, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
+  font-weight: 700 !important;
+  transform: translateY(-2px) scale(1.02) !important;
 }
 
 body.glass-immersive .month-pill .pill-current-badge {
-  font-size: 0.65rem !important;
+  font-size: 0.625rem !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
+  letter-spacing: 0.06em !important;
   padding: 0.15rem 0.45rem !important;
   border-radius: 9999px !important;
-  margin-left: 0.35rem !important;
   line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
 }
 
 body.glass-immersive .month-pill.is-active .pill-current-badge {
-  background-color: #080A0F !important;
-  color: #F5C542 !important;
+  background-color: #F5C542 !important;
+  color: #080A0F !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35) !important;
 }
 
 body.glass-immersive .month-pill:not(.is-active) .pill-current-badge {
-  background-color: rgba(229, 192, 123, 0.2) !important;
+  background-color: rgba(245, 197, 66, 0.18) !important;
   color: #F5C542 !important;
-  border: 1px solid rgba(229, 192, 123, 0.45) !important;
+  border: 1px solid rgba(245, 197, 66, 0.42) !important;
+}
+
+@media (max-width: 767px) {
+  .monthly-nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .monthly-nav-action {
+    align-self: flex-start;
+  }
 }
 
 /* ─── Stay Price Filter Chips (Translucent Neon Capsules) ─────────── */
@@ -2148,7 +2275,21 @@ body.glass-immersive .ai-hero-card .text-gray-900 {
    SECTION DIVIDERS — Replace opaque gray sections with subtle glass
    ═══════════════════════════════════════════════════════════════ */
 
-body.glass-immersive #monthly-highlights-section,
+body.glass-immersive #monthly-highlights-section {
+  position: relative;
+  background: radial-gradient(135% 120% at 50% 0%, rgba(15, 23, 42, 0.82) 0%, rgba(8, 10, 15, 0.92) 100%) !important;
+  backdrop-filter: blur(24px) saturate(170%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(170%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+}
+
+#monthly-highlights-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.90) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
 body.glass-immersive section.bg-gray-50,
 body.glass-immersive section.bg-gray-100 {
   background: rgba(255, 255, 255, 0.03) !important;

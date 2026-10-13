@@ -159,7 +159,7 @@ CORE_HTML_PAGES.forEach(pg => {
 // 7. Protected Functionality File Check
 assert(fs.existsSync(path.join(ROOT, 'js', 'utils', 'search.js')), 'Search utility exists');
 assert(fs.existsSync(path.join(ROOT, 'js', 'components', 'indiaMap.js')), 'Interactive India Map component exists');
-assert(fs.existsSync(path.join(ROOT, 'ai-finder.html')), 'AI Trip Finder template exists');
+assert(fs.existsSync(path.join(ROOT, 'ai-finder.html')), 'Trip / Itenary Planner template exists');
 
 // Summary Scorecard
 console.log('\n================================================================');

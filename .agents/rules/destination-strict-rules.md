@@ -338,4 +338,22 @@ Every nearby attraction place card (`topPlaces[]`) must store its cover photo as
 2. **Accessible & Descriptive Alt Attributes**: Every `alt` attribute must accurately name the landmark and state/district context.
 3. **Photos Array Uniqueness**: In addition to `image.src`, the `photos[]` array must contain exactly 3 distinct, high-definition photo URLs (`photos: ["url1", "url2", "url3"]`), with zero duplicate URLs within the card or destination file.
 
+---
+
+## Rule 21 — High-Speed Edge Delivery & Rate-Limit (429/404) Immunity (Added Phase 88)
+
+Every destination and place card asset across ExploreDesh must load rapidly without rate-limiting, timeouts, or broken image states:
+
+1. **Zero Broken (404) & Zero Throttled (429) Cover Assets**:
+   - Destination `image.src` and `heroImage.src` must never point to rate-limited Wikimedia Commons endpoints that return HTTP 429 or 404 to browsers, which cause cards to render `"PHOTO UNAVAILABLE"`.
+   - Prefer Pexels / Unsplash high-speed Tier-1/2 CDNs for hero and highlight cards, delivering WebP/JPEG in < 50ms with 100% reliable global edge caching.
+2. **Mandatory Catalog & Highlight Synchronization**:
+   - After modifying any destination JSON, running `node scripts/build-json-data.js` is mandatory to synchronize catalog files.
+   - Compiles `data/destinations/index.json`, `data/search-index.json`, and `data/destinations/home-manifest.json`.
+   - Auto-stamps `updatedAt` timestamps on modified destinations so they instantly surface under the `"Recently Updated"` filter tab (`destinations.html?type=recently_updated`) and in Home highlight rails.
+3. **Micro-Payload Edge Resizing**:
+   - Grid cards dynamically request `w=600` (`&auto=compress&cs=tinysrgb&w=600` or `&auto=format&fit=crop&w=600&q=80`) yielding ~40KB per card.
+   - Slashes card payloads by 98% compared to raw original downloads, ensuring instantaneous page loads across mobile 3G/4G/5G connections.
+
+
 

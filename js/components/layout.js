@@ -14,12 +14,12 @@ import { esc } from '../utils/format.js';
 import { themeToggleHTML, initThemeToggle } from '../utils/theme.js';
 import { openOfflineHub, initOfflineHub } from './offlineHub.js';
 
-// Pill nav: Home / Destinations / AI Trip Finder / About / Contact.
+// Pill nav: Home / Destinations / Trip / Itenary Planner / About / Contact.
 // "Plan My Trip" is the standout gradient CTA on the right.
 const NAV_LINKS = [
   { key: 'home', href: '/', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', label: 'Destinations' },
-  { key: 'finder', href: 'ai-finder.html', label: 'AI Trip Finder' },
+  { key: 'finder', href: 'ai-finder.html', label: 'Trip / Itenary Planner' },
   { key: 'about', href: 'about.html', label: 'About' },
   { key: 'contact', href: 'contact.html', label: 'Contact' },
 ];
@@ -148,7 +148,7 @@ function footerHTML() {
 const MOBILE_LINKS = [
   { key: 'home', href: '/', icon: 'home', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
-  { key: 'finder', href: 'ai-finder.html', icon: 'sparkles', label: 'AI Finder' },
+  { key: 'finder', href: 'ai-finder.html', icon: 'sparkles', label: 'Trip / Itenary Planner' },
   { key: 'beaches', href: 'destinations.html?type=beach', icon: 'waves', label: 'Beaches' },
 ];
 
