@@ -124,21 +124,96 @@ body.glass-immersive .nav-link,
 body.glass-immersive .nav-link:hover,
 .nav-glass .nav-link:hover,
 body.glass-immersive .nav-link:active,
-.nav-glass .nav-link:active,
+.nav-glass .nav-link:active {
+  color: #F5C542 !important;
+  background: rgba(245, 197, 66, 0.06) !important;
+  border-bottom: 2px solid rgba(245, 197, 66, 0.5) !important;
+  border-radius: 6px 6px 0 0 !important;
+}
+
 body.glass-immersive .nav-link.active,
 .nav-glass .nav-link.active {
-  color: #ffffff !important;
+  color: #F5C542 !important;
   font-weight: 600 !important;
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  border: none !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  background: rgba(245, 197, 66, 0.12) !important;
+  border-bottom: 2px solid #F5C542 !important;
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.35) !important;
   border-radius: 6px 6px 0 0 !important;
 }
 
 body.glass-immersive .nav-link::after,
 .nav-glass .nav-link::after {
   display: none !important;
+}
+
+/* ─── Ultra-Luxury Navbar Top Rule & CTA Button ──────────────── */
+.nav-luxury-top-rule {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 197, 66, 0.4) 20%, #F5C542 50%, rgba(245, 197, 66, 0.4) 80%, transparent 100%) !important;
+  z-index: 10002 !important;
+  pointer-events: none !important;
+}
+
+body.glass-immersive .nav-cta-pill,
+.nav-glass .nav-cta-pill,
+html[data-theme="light"] body.glass-immersive .nav-cta-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.45rem 1.15rem !important;
+  height: 38px !important;
+  border-radius: 9999px !important;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #B45309 100%) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(245, 197, 66, 0.5) !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+
+body.glass-immersive .nav-cta-pill:hover,
+.nav-glass .nav-cta-pill:hover,
+html[data-theme="light"] body.glass-immersive .nav-cta-pill:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #EA580C 100%) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  body.glass-immersive .nav-link,
+  .nav-glass .nav-link {
+    padding: 0.45rem 0.65rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  body.glass-immersive .nav-cta-pill,
+  .nav-glass .nav-cta-pill {
+    padding: 0.35rem 0.85rem !important;
+    font-size: 0.74rem !important;
+  }
+}
+
+body.glass-immersive .hero-home {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding-top: 80px !important;
+  padding-bottom: 60px !important;
 }
 
 /* ─── Make Section Wrappers & Background Containers 100% Transparent ── */
@@ -251,8 +326,8 @@ body.glass-immersive .category-chip-icon {
 }
 
 body.glass-immersive .category-chip:hover .category-chip-icon {
-  transform: scale(1.14) rotate(-4deg) !important;
-  box-shadow: 0 6px 22px rgba(229, 192, 123, 0.5) !important;
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 22px rgba(229, 192, 123, 0.45) !important;
 }
 
 html:not([data-theme="light"]) body.glass-immersive .category-chip-label {
@@ -371,8 +446,9 @@ html:not([data-theme="light"]) body.glass-immersive .card .text-gray-600 {
 }
 
 html:not([data-theme="light"]) body.glass-immersive .dest-card .text-gray-400,
-html:not([data-theme="light"]) body.glass-immersive .card .text-gray-400 {
-  color: #94A3B8 !important;
+html:not([data-theme="light"]) body.glass-immersive .card .text-gray-400,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-400 {
+  color: #CBD5E1 !important;
 }
 
 body.glass-immersive .dest-card .text-primary,
@@ -471,53 +547,62 @@ body.glass-immersive .form-input:focus {
 
 /* ─── Segmented Hero Search Bar (Pill Glass Fix) ──────────────────── */
 body.glass-immersive .hero-search-seg {
-  background: rgba(15, 23, 42, 0.75) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.50) !important;
+  background: rgba(10, 16, 28, 0.78) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(245, 197, 66, 0.32) !important;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
   border-radius: 9999px !important;
-  padding: 0.4rem 0.4rem 0.4rem 1.25rem !important;
+  padding: 6px 8px 6px 20px !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+body.glass-immersive .hero-search-seg:focus-within {
+  border-color: #F5C542 !important;
+  box-shadow: 0 24px 60px -10px rgba(0, 0, 0, 0.7), 0 0 32px rgba(245, 197, 66, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-1px) !important;
 }
 
 body.glass-immersive .hero-search-seg input,
 body.glass-immersive .hero-search-seg .search-input {
   background: transparent !important;
   border: none !important;
+  border-color: transparent !important;
   box-shadow: none !important;
   outline: none !important;
-  color: #ffffff !important;
-  font-size: 0.95rem !important;
+  color: #FFFFFF !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
   width: 100% !important;
   border-radius: 0 !important;
 }
 
-body.glass-immersive .hero-search-seg:focus-within {
-  border-color: #4ade80 !important;
-  box-shadow: 0 0 0 2px #4ade80, 0 16px 40px rgba(0, 0, 0, 0.50) !important;
+body.glass-immersive .hero-search-seg input::placeholder,
+body.glass-immersive .hero-search-seg .search-input::placeholder {
+  color: #94A3B8 !important;
 }
 
-body.glass-immersive .hero-search-seg input::placeholder {
-  color: rgba(255, 255, 255, 0.75) !important;
-}
-
-html:not([data-theme="light"]) body.glass-immersive .hero-seg-btn {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.16) 0%, rgba(245, 197, 66, 0.08) 100%) !important;
+body.glass-immersive .hero-seg-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 48px !important;
+  height: 48px !important;
+  margin-left: 8px !important;
+  border: none !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 60%, #B45309 100%) !important;
   color: #FFFFFF !important;
-  border: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-bottom: 2px solid rgba(245, 197, 66, 0.65) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
 }
 
-html:not([data-theme="light"]) body.glass-immersive .hero-seg-btn:hover,
-body.glass-immersive .hero-seg-btn:active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  transform: translateY(-1px) !important;
+body.glass-immersive .hero-seg-btn:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #EA580C 100%) !important;
+  transform: scale(1.06) !important;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
 }
 
 /* ─── Hero Social Proof & Avatar Cluster ─────────────────────────── */
@@ -857,8 +942,8 @@ html:not([data-theme="light"]) body.glass-immersive .india-state[data-state*="An
 
 body.glass-immersive .india-state[data-state*="Andaman"]:hover,
 body.glass-immersive .india-state[data-state*="Andaman"].is-active,
-body.glass-immersive .map-island-tag[data-state="Andaman & Nicobar"]:hover ~ .map-states-layer .india-state[data-state*="Andaman"],
-body.glass-immersive .map-island-tag[data-state="Andaman & Nicobar"].is-active ~ .map-states-layer .india-state[data-state*="Andaman"] {
+body.glass-immersive .map-island-tag[data-state="Andaman & Nicobar"]:hover~.map-states-layer .india-state[data-state*="Andaman"],
+body.glass-immersive .map-island-tag[data-state="Andaman & Nicobar"].is-active~.map-states-layer .india-state[data-state*="Andaman"] {
   fill: #f59e0b !important;
   stroke: #d97706 !important;
   stroke-width: 2.8px !important;
@@ -1070,7 +1155,7 @@ html[data-theme="light"] body.glass-immersive .india-state[data-state="Delhi"].i
     gap: 0.75rem !important;
   }
 
-  #season-grid > :last-child:nth-child(odd) {
+  #season-grid> :last-child:nth-child(odd) {
     grid-column: span 2;
   }
 
@@ -1090,8 +1175,8 @@ html[data-theme="light"] body.glass-immersive .india-state[data-state="Delhi"].i
   }
 
   /* Section headers: allow clean wrapping so title & button never collide */
-  .discover-trending > .flex,
-  .discover-map > .flex,
+  .discover-trending>.flex,
+  .discover-map>.flex,
   #monthly-highlights-section .flex,
   section .flex.items-center.justify-between,
   section .flex.items-end.justify-between {
@@ -1209,9 +1294,11 @@ body.glass-immersive .india-state.is-empty {
   user-select: none;
   text-anchor: middle;
 }
+
 body.glass-immersive .map-sea-text {
   fill: rgba(148, 163, 184, 0.45) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-sea-text {
   fill: rgba(3, 105, 161, 0.55) !important;
 }
@@ -1225,9 +1312,11 @@ html[data-theme="light"] body.glass-immersive .map-sea-text {
   user-select: none;
   text-anchor: middle;
 }
+
 body.glass-immersive .map-neighbor-text {
   fill: rgba(148, 163, 184, 0.35) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-neighbor-text {
   fill: rgba(71, 85, 105, 0.6) !important;
 }
@@ -1237,6 +1326,7 @@ body.glass-immersive .map-neighbor-land {
   stroke: rgba(255, 255, 255, 0.2) !important;
   stroke-width: 1px !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-neighbor-land {
   fill: #E2E8F0 !important;
   stroke: #CBD5E1 !important;
@@ -1253,10 +1343,12 @@ html[data-theme="light"] body.glass-immersive .map-neighbor-land {
   pointer-events: none;
   user-select: none;
 }
+
 body.glass-immersive .map-state-label {
   fill: #FFFFFF !important;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.95)) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-state-label {
   fill: #0F172A !important;
   filter: drop-shadow(0 1px 1.5px rgba(255, 255, 255, 0.95)) !important;
@@ -1266,11 +1358,13 @@ html[data-theme="light"] body.glass-immersive .map-state-label {
 .map-city-dot {
   pointer-events: none;
 }
+
 body.glass-immersive .map-city-dot {
   fill: #FDE047 !important;
   stroke: #080A0F !important;
   stroke-width: 0.8px !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-city-dot {
   fill: #DC2626 !important;
   stroke: #FFFFFF !important;
@@ -1284,10 +1378,12 @@ html[data-theme="light"] body.glass-immersive .map-city-dot {
   pointer-events: none;
   user-select: none;
 }
+
 body.glass-immersive .map-city-name {
   fill: #F1F5F9 !important;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.95)) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .map-city-name {
   fill: #0F172A !important;
   filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.95)) !important;
@@ -1296,6 +1392,7 @@ html[data-theme="light"] body.glass-immersive .map-city-name {
 .map-capital-marker .map-capital-pulse {
   fill: rgba(220, 38, 38, 0.3);
 }
+
 .map-capital-marker .map-capital-core {
   fill: #DC2626;
   stroke: #FFFFFF;
@@ -1305,6 +1402,7 @@ html[data-theme="light"] body.glass-immersive .map-city-name {
 body.glass-immersive .map-compass {
   color: #E5C07B;
 }
+
 html[data-theme="light"] body.glass-immersive .map-compass {
   color: #0369A1;
 }
@@ -1319,6 +1417,7 @@ html[data-theme="light"] body.glass-immersive .map-compass {
   margin: 0 0 0.45rem 0 !important;
   color: #FFFFFF !important;
 }
+
 html[data-theme="light"] .map-card-title {
   color: #0F172A !important;
 }
@@ -1349,6 +1448,7 @@ html[data-theme="light"] .map-card-title {
   line-height: 1.25 !important;
   transition: color 0.15s ease, transform 0.15s ease !important;
 }
+
 html[data-theme="light"] .map-card-list li a {
   color: #1E293B !important;
 }
@@ -1357,6 +1457,7 @@ html[data-theme="light"] .map-card-list li a {
   color: #4ADE80 !important;
   transform: translateX(3px) !important;
 }
+
 html[data-theme="light"] .map-card-list li a:hover {
   color: #16A34A !important;
   transform: translateX(3px) !important;
@@ -1383,13 +1484,16 @@ html[data-theme="light"] .map-card-list li a:hover {
   transition: color 0.2s ease, gap 0.2s ease !important;
   margin-top: 0.2rem !important;
 }
+
 .map-card-all:hover {
   color: #4ADE80 !important;
   gap: 0.45rem !important;
 }
+
 html[data-theme="light"] .map-card-all {
   color: #16A34A !important;
 }
+
 html[data-theme="light"] .map-card-all:hover {
   color: #15803D !important;
 }
@@ -1507,6 +1611,7 @@ html[data-theme="light"] body.glass-immersive .tint-green {
   color: #047857 !important;
   box-shadow: 0 2px 8px rgba(4, 120, 87, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-green svg,
 html[data-theme="light"] body.glass-immersive .tint-green path {
   stroke: #047857 !important;
@@ -1519,6 +1624,7 @@ html[data-theme="light"] body.glass-immersive .tint-blue {
   color: #1D4ED8 !important;
   box-shadow: 0 2px 8px rgba(29, 78, 216, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-blue svg,
 html[data-theme="light"] body.glass-immersive .tint-blue path {
   stroke: #1D4ED8 !important;
@@ -1531,6 +1637,7 @@ html[data-theme="light"] body.glass-immersive .tint-orange {
   color: #C2410C !important;
   box-shadow: 0 2px 8px rgba(194, 65, 12, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-orange svg,
 html[data-theme="light"] body.glass-immersive .tint-orange path {
   stroke: #C2410C !important;
@@ -1543,6 +1650,7 @@ html[data-theme="light"] body.glass-immersive .tint-amber {
   color: #B45309 !important;
   box-shadow: 0 2px 8px rgba(180, 83, 9, 0.14) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-amber svg,
 html[data-theme="light"] body.glass-immersive .tint-amber path {
   stroke: #B45309 !important;
@@ -1555,6 +1663,7 @@ html[data-theme="light"] body.glass-immersive .tint-purple {
   color: #6D28D9 !important;
   box-shadow: 0 2px 8px rgba(109, 40, 217, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-purple svg,
 html[data-theme="light"] body.glass-immersive .tint-purple path {
   stroke: #6D28D9 !important;
@@ -1567,6 +1676,7 @@ html[data-theme="light"] body.glass-immersive .tint-rose {
   color: #BE123C !important;
   box-shadow: 0 2px 8px rgba(190, 18, 60, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-rose svg,
 html[data-theme="light"] body.glass-immersive .tint-rose path {
   stroke: #BE123C !important;
@@ -1579,6 +1689,7 @@ html[data-theme="light"] body.glass-immersive .tint-teal {
   color: #0F766E !important;
   box-shadow: 0 2px 8px rgba(15, 118, 110, 0.12) !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-teal svg,
 html[data-theme="light"] body.glass-immersive .tint-teal path {
   stroke: #0F766E !important;
@@ -1590,6 +1701,7 @@ html[data-theme="light"] body.glass-immersive .tint-slate {
   border: 1.5px solid #CBD5E1 !important;
   color: #334155 !important;
 }
+
 html[data-theme="light"] body.glass-immersive .tint-slate svg,
 html[data-theme="light"] body.glass-immersive .tint-slate path {
   stroke: #334155 !important;
@@ -1981,6 +2093,7 @@ body.glass-immersive .month-pill:not(.is-active) .pill-current-badge {
     align-items: stretch;
     gap: 0.85rem;
   }
+
   .monthly-nav-action {
     align-self: flex-start;
   }
@@ -2263,6 +2376,23 @@ body.glass-immersive .ai-hero-card {
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.50) !important;
 }
 
+body.glass-immersive .ai-hero-card .ai-card-title {
+  color: #ffffff !important;
+}
+
+body.glass-immersive .ai-hero-card .ai-card-heading {
+  color: #f8fafc !important;
+}
+
+body.glass-immersive .ai-hero-card .ai-card-desc {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+body.glass-immersive .ai-hero-card .ai-card-tags {
+  color: rgba(255, 255, 255, 0.65) !important;
+  border-top-color: rgba(255, 255, 255, 0.12) !important;
+}
+
 body.glass-immersive .ai-hero-card p.text-gray-500 {
   color: rgba(255, 255, 255, 0.70) !important;
 }
@@ -2275,20 +2405,64 @@ body.glass-immersive .ai-hero-card .text-gray-900 {
    SECTION DIVIDERS — Replace opaque gray sections with subtle glass
    ═══════════════════════════════════════════════════════════════ */
 
+/* Dark Mode — Seamless, non-jarring glass integration with global fixed background */
 body.glass-immersive #monthly-highlights-section {
   position: relative;
-  background: radial-gradient(135% 120% at 50% 0%, rgba(15, 23, 42, 0.82) 0%, rgba(8, 10, 15, 0.92) 100%) !important;
-  backdrop-filter: blur(24px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(170%) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: none !important;
 }
 
 #monthly-highlights-section .section-subtitle {
-  color: rgba(255, 255, 255, 0.90) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+  color: rgba(255, 255, 255, 0.70) !important;
+  text-shadow: none !important;
 }
+
+/* Light Mode — Seamless soft luxury tint matching surrounding page rhythm */
+html[data-theme="light"] body.glass-immersive #monthly-highlights-section {
+  background: rgba(248, 250, 252, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-top: 1px solid rgba(226, 232, 240, 0.8) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] body.glass-immersive #monthly-highlights-section .section-title {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] body.glass-immersive #monthly-highlights-section .section-subtitle {
+  color: #64748b !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-kicker-badge {
+  background: rgba(245, 158, 11, 0.12) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #b45309 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-cta-btn {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  border-bottom: 2px solid #94a3b8 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-cta-btn:hover {
+  background: #f8fafc !important;
+  border-color: #f59e0b !important;
+  border-bottom-color: #d97706 !important;
+  color: #b45309 !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.18) !important;
+}
+
 
 body.glass-immersive section.bg-gray-50,
 body.glass-immersive section.bg-gray-100 {
@@ -2297,6 +2471,47 @@ body.glass-immersive section.bg-gray-100 {
   border-top-color: rgba(255, 255, 255, 0.08) !important;
   border-bottom-color: rgba(255, 255, 255, 0.08) !important;
 }
+
+html[data-theme="light"] body.glass-immersive section.bg-gray-50,
+html[data-theme="light"] body.glass-immersive section.bg-gray-100 {
+  background: rgba(248, 250, 252, 0.85) !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  border-top-color: rgba(226, 232, 240, 0.9) !important;
+  border-bottom-color: rgba(226, 232, 240, 0.9) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO STATS — Royal Gold & Editorial Typography
+   ═══════════════════════════════════════════════════════════════ */
+body.glass-immersive .hero-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+body.glass-immersive .hero-stat-icon {
+  color: #fbbf24 !important;
+  /* Royal warm amber / gold */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.glass-immersive .hero-stat strong {
+  font-family: var(--font-display, "Playfair Display", Georgia, serif) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+  color: #ffffff !important;
+}
+
+body.glass-immersive .hero-stat-label {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 
 /* ═══════════════════════════════════════════════════════════════
    MONTH CAROUSEL BADGE — replace emoji 🌟 styling
@@ -2479,35 +2694,83 @@ html[data-theme="light"] .explore-immersive-overlay {
       rgba(250, 248, 245, 0.97) 100%) !important;
 }
 
-/* Navbar in Light Mode: Frosted Pearl Glass with Specular Top Bevel & Crisp Links */
+/* Navbar in Light Mode: Royal Obsidian Smoked Glass with Specular Gold Top Rule & Crisp Links */
 html[data-theme="light"] body.glass-immersive .nav-glass,
 html[data-theme="light"] .nav-glass {
-  background: rgba(255, 255, 255, 0.90) !important;
-  backdrop-filter: blur(24px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04), inset 0 -1px 0 rgba(217, 119, 6, 0.10) !important;
+  background: rgba(6, 9, 18, 0.78) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(245, 197, 66, 0.18) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(245, 197, 66, 0.12) !important;
 }
 
 html[data-theme="light"] body.glass-immersive .nav-glass a.font-bold,
-html[data-theme="light"] body.glass-immersive .nav-glass .site-brand-text {
-  color: #0F172A !important;
+html[data-theme="light"] body.glass-immersive .nav-glass .site-brand-text,
+html[data-theme="light"] .nav-glass .site-brand-text {
+  color: #FFFFFF !important;
 }
 
-html[data-theme="light"] body.glass-immersive .nav-link {
-  color: #334155 !important;
-  font-weight: 500 !important;
+html[data-theme="light"] body.glass-immersive .nav-link,
+html[data-theme="light"] .nav-glass .nav-link {
+  color: rgba(248, 250, 252, 0.85) !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  padding: 0.5rem 0.95rem !important;
+  transition: all 0.25s ease !important;
+  background: transparent !important;
+  border: none !important;
 }
 
-html[data-theme="light"] body.glass-immersive .nav-link:hover {
-  color: #0F172A !important;
-  background: rgba(15, 23, 42, 0.04) !important;
+html[data-theme="light"] body.glass-immersive .nav-link:hover,
+html[data-theme="light"] .nav-glass .nav-link:hover {
+  color: #F5C542 !important;
+  background: rgba(245, 197, 66, 0.08) !important;
 }
 
-html[data-theme="light"] body.glass-immersive .nav-link.active {
-  color: #B45309 !important;
-  font-weight: 700 !important;
-  border-bottom-color: #D97706 !important;
+html[data-theme="light"] body.glass-immersive .nav-link.active,
+html[data-theme="light"] .nav-glass .nav-link.active {
+  color: #F5C542 !important;
+  background: rgba(245, 197, 66, 0.12) !important;
+  border-bottom: 2px solid #F5C542 !important;
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.4) !important;
+  border-radius: 6px 6px 0 0 !important;
+}
+
+/* Navbar Theme Toggle Button & Offline Button in Light Mode: Obsidian Smoked Glass */
+html[data-theme="light"] .nav-glass .theme-toggle-btn,
+html[data-theme="light"] body.glass-immersive .nav-glass .theme-toggle-btn {
+  border-color: rgba(245, 197, 66, 0.35) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="light"] .nav-glass .theme-toggle-btn:hover,
+html[data-theme="light"] body.glass-immersive .nav-glass .theme-toggle-btn:hover {
+  background: rgba(245, 197, 66, 0.2) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 0 16px rgba(245, 197, 66, 0.4) !important;
+}
+
+html[data-theme="light"] .nav-glass .nav-offline-btn {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(245, 197, 66, 0.3) !important;
+  color: #F8FAFC !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+html[data-theme="light"] .nav-glass .nav-offline-btn:hover {
+  background: rgba(245, 197, 66, 0.2) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.35) !important;
+}
+
+html[data-theme="light"] .nav-glass .nav-offline-icon {
+  color: #F5C542 !important;
 }
 
 /* Mobile Nav Drawer in Light Mode */
@@ -2600,6 +2863,56 @@ html[data-theme="light"] body.glass-immersive .hero-home .hero-accent-calligraph
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75) !important;
 }
 
+/* ─── Hero Luxury Editorial Eyebrow & Trending Label Invariants ── */
+body.glass-immersive .hero-luxury-eyebrow,
+html[data-theme="light"] body.glass-immersive .hero-luxury-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 14px !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.glass-immersive .hero-eyebrow-rule,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule {
+  display: inline-block !important;
+  width: 44px !important;
+  height: 1.5px !important;
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0.1) 0%, #F5C542 100%) !important;
+}
+
+body.glass-immersive .hero-eyebrow-rule:last-child,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule:last-child {
+  background: linear-gradient(90deg, #F5C542 0%, rgba(245, 197, 66, 0.1) 100%) !important;
+}
+
+body.glass-immersive .hero-eyebrow-label,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-label {
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.24em !important;
+  text-transform: uppercase !important;
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 0 12px rgba(245, 197, 66, 0.6) !important;
+}
+
+body.glass-immersive .hero-popular-label,
+html[data-theme="light"] body.glass-immersive .hero-popular-label {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9) !important;
+  margin-right: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
 /* Trending Cards: Photos with Scrim Overlays MUST Stay White */
 html[data-theme="light"] body.glass-immersive .trend-card .trend-card-title,
 html[data-theme="light"] body.glass-immersive .trend-card p.trend-card-title,
@@ -2656,10 +2969,16 @@ html[data-theme="light"] body.glass-immersive .dest-card h3:not(.dest-card-title
 html[data-theme="light"] body.glass-immersive .glass-card p,
 html[data-theme="light"] body.glass-immersive .glass-card span:not([class*="badge"]):not([class*="text-amber"]):not([class*="text-emerald"]),
 html[data-theme="light"] body.glass-immersive .glass-card li,
+html[data-theme="light"] body.glass-immersive .card li {
+  color: #1E293B !important;
+}
+
 html[data-theme="light"] body.glass-immersive .card p,
-html[data-theme="light"] body.glass-immersive .card li,
-html[data-theme="light"] body.glass-immersive .dest-card p {
-  color: #334155 !important;
+html[data-theme="light"] body.glass-immersive .dest-card p,
+html[data-theme="light"] body.glass-immersive .dest-card-desc {
+  color: #0F172A !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
 }
 
 html[data-theme="light"] body.glass-immersive .glass-card .text-slate-300,
@@ -2670,8 +2989,10 @@ html[data-theme="light"] body.glass-immersive .card .text-gray-600 {
 
 html[data-theme="light"] body.glass-immersive .glass-card .text-slate-400,
 html[data-theme="light"] body.glass-immersive .glass-card .text-gray-500,
-html[data-theme="light"] body.glass-immersive .card .text-gray-500 {
-  color: #64748B !important;
+html[data-theme="light"] body.glass-immersive .card .text-gray-500,
+html[data-theme="light"] body.glass-immersive .card .text-slate-400 {
+  color: #334155 !important;
+  font-weight: 500;
 }
 
 /* Search inputs and form fields inside cards */
@@ -2690,18 +3011,32 @@ html[data-theme="light"] body.glass-immersive input::placeholder {
 
 /* Hero Search Segmented Container */
 html[data-theme="light"] body.glass-immersive .hero-search-seg {
-  background: #FFFFFF !important;
-  border: 1.5px solid rgba(217, 119, 6, 0.35) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1.5px solid rgba(180, 83, 9, 0.28) !important;
+  box-shadow: 0 20px 50px -10px rgba(180, 83, 9, 0.12), 0 0 24px rgba(217, 119, 6, 0.08), inset 0 1px 0 #FFFFFF !important;
+  border-radius: 9999px !important;
+  padding: 6px 8px 6px 20px !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-search-seg:focus-within {
+  border-color: #D97706 !important;
+  box-shadow: 0 24px 60px -10px rgba(180, 83, 9, 0.2), 0 0 32px rgba(217, 119, 6, 0.18), inset 0 1px 0 #FFFFFF !important;
+  transform: translateY(-1px) !important;
 }
 
 html[data-theme="light"] body.glass-immersive .hero-search-seg input,
 html[data-theme="light"] body.glass-immersive .hero-search-seg .search-input {
   background: transparent !important;
   border: none !important;
+  border-color: transparent !important;
   box-shadow: none !important;
   outline: none !important;
-  color: #1C1917 !important;
+  color: #0F172A !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
 }
 
 html[data-theme="light"] body.glass-immersive .hero-search-seg input::placeholder,
@@ -2725,7 +3060,8 @@ html[data-theme="light"] body.glass-immersive #siteFooter p,
 html[data-theme="light"] body.glass-immersive #siteFooter span,
 html[data-theme="light"] body.glass-immersive #siteFooter a,
 html[data-theme="light"] body.glass-immersive #siteFooter li {
-  color: #94A3B8 !important;
+  color: #CBD5E1 !important;
+  font-weight: 500;
 }
 
 html[data-theme="light"] body.glass-immersive .footer .text-white,
@@ -3179,11 +3515,13 @@ html[data-theme="light"] body.glass-immersive .dest-card .font-bold:not(.text-am
 
 html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300,
 html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400 {
-  color: #475569 !important;
+  color: #334155 !important;
+  font-weight: 500;
 }
 
 html[data-theme="light"] body.glass-immersive .dest-card .text-slate-500 {
-  color: #94A3B8 !important;
+  color: #1E293B !important;
+  font-weight: 600;
 }
 
 html[data-theme="light"] body.glass-immersive .dest-card .border-white\/10,
@@ -3216,35 +3554,44 @@ html[data-theme="light"] body.glass-immersive .ai-hero-card {
   border-radius: 1.35rem !important;
 }
 
+html[data-theme="light"] body.glass-immersive .ai-hero-card .ai-card-title,
+html[data-theme="light"] body.glass-immersive .ai-hero-card .ai-card-heading,
 html[data-theme="light"] body.glass-immersive .ai-hero-card span.text-gray-900,
 html[data-theme="light"] body.glass-immersive .ai-hero-card p.text-gray-900,
 html[data-theme="light"] body.glass-immersive .ai-hero-card strong.text-gray-900 {
   color: #0F172A !important;
 }
 
+html[data-theme="light"] body.glass-immersive .ai-hero-card .ai-card-desc,
 html[data-theme="light"] body.glass-immersive .ai-hero-card p.text-gray-500 {
   color: #475569 !important;
 }
 
-/* 6. Hero Popular Search Chips in Light Mode */
+html[data-theme="light"] body.glass-immersive .ai-hero-card .ai-card-tags {
+  color: #64748B !important;
+  border-top-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+/* 6. Hero Popular Search Chips in Light Mode: Smoked Obsidian Glass with Gold Accents */
 html[data-theme="light"] body.glass-immersive #popular-searches .popular-chip,
 html[data-theme="light"] .popular-chip {
-  background: rgba(255, 255, 255, 0.90) !important;
+  background: rgba(8, 12, 22, 0.65) !important;
   backdrop-filter: blur(14px) !important;
-  color: #1E293B !important;
-  border: 1px solid rgba(15, 23, 42, 0.10) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(15, 23, 42, 0.06) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
   font-weight: 600 !important;
-  transition: all 0.22s ease !important;
+  transition: all 0.25s ease !important;
 }
 
 html[data-theme="light"] body.glass-immersive #popular-searches .popular-chip:hover,
 html[data-theme="light"] .popular-chip:hover {
-  background: #FFFFFF !important;
-  color: #B45309 !important;
-  border-color: #F59E0B !important;
-  transform: translateY(-2px) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 12px rgba(217, 119, 6, 0.18) !important;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.25) 0%, rgba(217, 119, 6, 0.35) 100%) !important;
+  border-color: #F5C542 !important;
+  color: #FFFBEB !important;
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 8px 24px -2px rgba(245, 197, 66, 0.45) !important;
 }
 
 /* 7. Month Selector Pills in Light Mode */
@@ -3480,6 +3827,7 @@ html[data-theme="light"] body.glass-immersive .autocomplete-item .text-gray-500 
 }
 
 @media (max-width: 640px) {
+
   /* Dynamic Title Scaling: prevents text cramming or orphan line breaks */
   body.glass-immersive .section-title,
   .section-title {
@@ -3511,4 +3859,157 @@ html[data-theme="light"] body.glass-immersive .autocomplete-item .text-gray-500 
     font-size: clamp(1.85rem, 6.8vw, 2.5rem) !important;
     line-height: 1.15 !important;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   UNIVERSAL HIGH-CONTRAST TYPOGRAPHY SYSTEM (DARK & LIGHT THEMES)
+   Guarantees 100% WCAG AAA readability, eliminating washed-out
+   or excessively faint text across all platform templates.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── 1. DARK MODE: Crisp, High-Contrast Typography ────────── */
+html:not([data-theme="light"]) body.glass-immersive,
+html[data-theme="dark"] body.glass-immersive {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .text-gray-400,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-400,
+html:not([data-theme="light"]) body.glass-immersive .text-zinc-400,
+html[data-theme="dark"] body.glass-immersive .text-gray-400,
+html[data-theme="dark"] body.glass-immersive .text-slate-400,
+html[data-theme="dark"] body.glass-immersive .text-zinc-400 {
+  color: #CBD5E1 !important;
+  /* slate-300: 11.2:1 contrast against obsidian dark */
+  font-weight: 500;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .text-gray-500,
+html:not([data-theme="light"]) body.glass-immersive .text-slate-500,
+html:not([data-theme="light"]) body.glass-immersive .text-zinc-500,
+html[data-theme="dark"] body.glass-immersive .text-gray-500,
+html[data-theme="dark"] body.glass-immersive .text-slate-500,
+html[data-theme="dark"] body.glass-immersive .text-zinc-500 {
+  color: #E2E8F0 !important;
+  /* slate-200: 13.5:1 contrast */
+  font-weight: 500;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .text-white\/60,
+html:not([data-theme="light"]) body.glass-immersive .text-white\/70,
+html[data-theme="dark"] body.glass-immersive .text-white\/60,
+html[data-theme="dark"] body.glass-immersive .text-white\/70 {
+  color: rgba(255, 255, 255, 0.90) !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .text-white\/40,
+html:not([data-theme="light"]) body.glass-immersive .text-white\/50,
+html[data-theme="dark"] body.glass-immersive .text-white\/40,
+html[data-theme="dark"] body.glass-immersive .text-white\/50 {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* ─── 2. LIGHT MODE: Deep Slate, Non-Faint Typography ───────── */
+html[data-theme="light"] body.glass-immersive {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .text-gray-400,
+html[data-theme="light"] body.glass-immersive .text-slate-400,
+html[data-theme="light"] body.glass-immersive .text-zinc-400,
+html[data-theme="light"] body.glass-immersive .text-gray-500,
+html[data-theme="light"] body.glass-immersive .text-slate-500,
+html[data-theme="light"] body.glass-immersive .text-zinc-500,
+html[data-theme="light"] .text-gray-400,
+html[data-theme="light"] .text-slate-400 {
+  color: #334155 !important;
+  /* slate-700: 9.6:1 AAA contrast against #FAF9F6 */
+  font-weight: 500;
+}
+
+html[data-theme="light"] body.glass-immersive .text-gray-600,
+html[data-theme="light"] body.glass-immersive .text-slate-600 {
+  color: #1E293B !important;
+  /* slate-800: 12.5:1 AAA contrast */
+  font-weight: 500;
+}
+
+html[data-theme="light"] body.glass-immersive .text-slate-300,
+html[data-theme="light"] body.glass-immersive .text-gray-300 {
+  color: #475569 !important;
+  /* slate-600: 7.0:1 AAA contrast */
+  font-weight: 500;
+}
+
+/* Card descriptions, locations, and meta row text in Light Mode */
+html[data-theme="light"] body.glass-immersive .dest-card-desc,
+html[data-theme="light"] body.glass-immersive .dest-card-location,
+html[data-theme="light"] body.glass-immersive .price-prefix,
+html[data-theme="light"] body.glass-immersive .dest-price-box .price-prefix,
+html[data-theme="light"] body.glass-immersive .review-cnt,
+html[data-theme="light"] body.glass-immersive .dest-best-season {
+  color: #334155 !important;
+  font-weight: 500 !important;
+}
+
+/* Form Placeholders across Light Mode */
+html[data-theme="light"] body.glass-immersive input::placeholder,
+html[data-theme="light"] body.glass-immersive textarea::placeholder,
+html[data-theme="light"] input::placeholder {
+  color: #475569 !important;
+  /* slate-600 */
+}
+
+/* ─── 3. UNIVERSAL FOOTER HIGH-CONTRAST TEXT (ALL MODES) ────── */
+body.glass-immersive footer p,
+body.glass-immersive footer span:not([class*="badge"]):not([class*="text-amber"]):not([class*="bg-"]),
+body.glass-immersive footer a,
+body.glass-immersive footer li,
+body.glass-immersive #siteFooter p,
+body.glass-immersive #siteFooter span:not([class*="badge"]):not([class*="text-amber"]):not([class*="bg-"]),
+body.glass-immersive #siteFooter a,
+body.glass-immersive #siteFooter li {
+  color: #CBD5E1 !important;
+  /* 11.2:1 contrast against dark footer canvas */
+  font-weight: 500;
+}
+
+body.glass-immersive footer h4,
+body.glass-immersive #siteFooter h4 {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+body.glass-immersive footer a:hover,
+body.glass-immersive #siteFooter a:hover {
+  color: #F5C542 !important;
+}
+
+/* ─── Hero Centered Stats Ribbon Invariants ── */
+body.glass-immersive #hero-stats,
+html[data-theme="light"] body.glass-immersive #hero-stats {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  gap: 0 !important;
+  padding: 8px 18px !important;
+  border-radius: 9999px !important;
+  background: rgba(8, 12, 22, 0.78) !important;
+  border: 1px solid rgba(245, 197, 66, 0.32) !important;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+body.glass-immersive #hero-stats strong,
+html[data-theme="light"] body.glass-immersive #hero-stats strong {
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+}
+
+body.glass-immersive #hero-stats .hero-stat-label,
+html[data-theme="light"] body.glass-immersive #hero-stats .hero-stat-label {
+  color: #F5C542 !important;
+  -webkit-text-fill-color: #F5C542 !important;
 }

@@ -1,5 +1,5 @@
 /**
- * finder.js — page logic for ai-finder.html (Trip / Itenary Planner / universal search).
+ * finder.js — page logic for ai-finder.html (AI Trip Planner / universal search).
  * Fully local & keyless: a vanilla-JS parser turns free text into structured
  * intent, then scores all destinations. Loads the lightweight manifest plus
  * data/search-index.json (precomputed haystack + place/hotel names per
@@ -17,14 +17,14 @@ import { cleanSearchText, normalizeSearchWords } from '../utils/search.js';
 initLayout({ active: 'finder' });
 
 applySEO({
-  title: 'Trip / Itenary Planner — ExploreDesh',
-  description: 'Describe your ideal trip in plain English and let the Trip / Itenary Planner match you to the perfect Indian destinations — by type, budget, month, region and vibe. No signup, works instantly.',
+  title: 'Trip Planner — ExploreDesh',
+  description: 'Describe your ideal trip in plain English and let the Trip Planner match you to the perfect Indian destinations — by type, budget, month, region and vibe. Instant recommendations, no signup required.',
   canonicalPath: 'ai-finder.html',
-  keywords: ['trip itenary planner', 'trip planner india', 'india trip finder', 'where to travel in india', 'india destination search'],
+  keywords: ['trip planner', 'trip planner india', 'india trip finder', 'where to travel in india', 'india destination search'],
 });
 injectJsonLd(breadcrumbJsonLd([
   { name: 'Home', path: '/' },
-  { name: 'Trip / Itenary Planner', path: 'ai-finder.html' },
+  { name: 'Trip Planner', path: 'ai-finder.html' },
 ]));
 
 let idx;

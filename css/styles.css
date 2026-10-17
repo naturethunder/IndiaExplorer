@@ -27,8 +27,8 @@
   --bg-surface: #0E131F;
   --text: #0F172A;
   /* slate-900, near-black */
-  --text-muted: #64748B;
-  /* slate-500 */
+  --text-muted: #334155;
+  /* slate-700, crisp high-contrast */
   --border: #E2E8F0;
   /* slate-200 */
   --bg: #F8FAFC;
@@ -43,6 +43,13 @@
   --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+:root:not([data-theme="light"]),
+html[data-theme="dark"],
+:root[data-theme="dark"] {
+  --text: #FFFFFF;
+  --text-muted: #CBD5E1;
+}
+
 html[data-theme="light"],
 :root[data-theme="light"] {
   --primary: #B45309;
@@ -55,6 +62,8 @@ html[data-theme="light"],
   --gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 50%, #78350F 100%);
   --border: rgba(217, 119, 6, 0.16);
   --bg: #FAF9F6;
+  --text: #0F172A;
+  --text-muted: #334155;
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(180, 83, 9, 0.03);
   --shadow: 0 4px 16px rgba(15, 23, 42, 0.06), 0 2px 6px rgba(180, 83, 9, 0.04);
   --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.12);
@@ -89,6 +98,22 @@ html[data-theme="light"],
   background: rgba(255, 255, 255, 0.95) !important;
   color: #0F172A !important;
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08) !important;
+}
+
+.nav-glass .theme-toggle-btn,
+[data-theme="light"] .nav-glass .theme-toggle-btn {
+  border-color: rgba(245, 197, 66, 0.35) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.nav-glass .theme-toggle-btn:hover,
+[data-theme="light"] .nav-glass .theme-toggle-btn:hover {
+  background: rgba(245, 197, 66, 0.2) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 0 16px rgba(245, 197, 66, 0.4) !important;
 }
 
 .theme-toggle-btn:hover {
@@ -533,15 +558,17 @@ html[data-theme="light"] .calligraphy-kicker::after {
   background: var(--text-muted);
 }
 
-/* ─── Nav ─────────────────────────────────────────────────── */
+/* ─── Nav — Ultra-Luxury Royal Obsidian ──────────────────── */
 .nav-glass {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  background: rgba(6, 8, 15, 0.78);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border-bottom: 1px solid rgba(245, 197, 66, 0.12);
+  box-shadow: 0 1px 0 rgba(245, 197, 66, 0.08), 0 4px 32px rgba(0, 0, 0, 0.45);
+  height: 68px;
 }
 
-/* Center pill-shaped nav group (legacy — kept for company pages if referenced) */
+/* Center pill-shaped nav group (legacy) */
 .nav-pill {
   background: rgba(15, 23, 42, 0.04);
   border: 1px solid rgba(15, 23, 42, 0.05);
@@ -549,22 +576,21 @@ html[data-theme="light"] .calligraphy-kicker::after {
   padding: 0.25rem;
 }
 
-/* Reference nav: plain centered links with a green underline on the active item */
 .nav-menu {
-  gap: 0.25rem;
+  gap: 0;
 }
 
-/* Brand mountain mark */
+/* Brand mark — gold-ringed emblem */
 .brand-mark {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
-  box-shadow: 0 3px 10px rgba(var(--primary-rgb), 0.35);
+  background: linear-gradient(135deg, #F59E0B 0%, #B45309 100%);
+  box-shadow: 0 0 0 1px rgba(245, 197, 66, 0.45), 0 4px 14px rgba(245, 159, 11, 0.45);
 }
 
 .nav-link {
@@ -572,39 +598,92 @@ html[data-theme="light"] .calligraphy-kicker::after {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  color: rgba(226, 232, 240, 0.75);
+  font-size: 0.84rem;
   font-weight: 500;
-  padding: 0.5rem 0.85rem;
-  transition: color var(--transition);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.55rem 1rem;
+  transition: color 0.25s ease;
   text-decoration: none;
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
-  left: 0.85rem;
-  right: 0.85rem;
-  bottom: -0.35rem;
-  height: 2px;
+  left: 1rem;
+  right: 1rem;
+  bottom: -2px;
+  height: 1.5px;
   border-radius: 2px;
-  background: var(--primary);
+  background: linear-gradient(90deg, #F5C542, #D97706);
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform var(--transition);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .nav-link:hover {
-  color: var(--text);
+  color: #F5C542;
 }
 
 .nav-link.active {
-  color: var(--primary-dark);
+  color: #F5C542;
   font-weight: 600;
 }
 
 .nav-link.active::after {
   transform: scaleX(1);
+}
+
+/* Luxury Nav Top Gold Accent Line */
+.nav-luxury-top-rule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 197, 66, 0.35) 20%, #F5C542 50%, rgba(245, 197, 66, 0.35) 80%, transparent 100%);
+  z-index: 52;
+  pointer-events: none;
+}
+
+/* Luxury Nav CTA Pill */
+.nav-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.15rem;
+  height: 38px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #B45309 100%);
+  color: #FFFFFF !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(245, 197, 66, 0.4);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  white-space: nowrap;
+}
+
+.nav-cta-pill:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #EA580C 100%);
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .nav-link {
+    padding: 0.45rem 0.65rem !important;
+    font-size: 0.78rem !important;
+  }
+  .nav-cta-pill {
+    padding: 0.35rem 0.85rem !important;
+    font-size: 0.74rem !important;
+  }
 }
 
 /* ─── Hero ────────────────────────────────────────────────── */
@@ -1872,9 +1951,12 @@ textarea.form-input {
 /* ─── Hero (full-bleed photo) ─────────────────────────────── */
 .hero-home {
   position: relative;
-  min-height: 90vh;
+  min-height: max(720px, 100vh);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 
@@ -1884,7 +1966,7 @@ textarea.form-input {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #0f3460;
+  background-color: #0b111e;
   z-index: 1;
   transition: opacity 0.8s ease-in-out, background-image 0.8s ease-in-out;
 }
@@ -1893,21 +1975,119 @@ textarea.form-input {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.35) 40%, rgba(15, 23, 42, 0.72) 100%),
-    linear-gradient(105deg, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.1) 60%);
+    linear-gradient(180deg,
+      rgba(4, 6, 14, 0.85) 0%,
+      rgba(4, 6, 14, 0.40) 38%,
+      rgba(4, 6, 14, 0.40) 65%,
+      rgba(4, 6, 14, 0.95) 100%
+    ),
+    radial-gradient(ellipse at center, rgba(4, 6, 14, 0.25) 0%, rgba(4, 6, 14, 0.70) 100%);
   z-index: 2;
   pointer-events: none;
 }
 
-/* ─── Segmented hero search (Where / When / Travelers) ────── */
+/* ─── Luxury Hero Eyebrow Pill ─────────────────────────────── */
+.hero-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 18px;
+  border-radius: 9999px;
+  background: rgba(10, 16, 28, 0.78);
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  margin-bottom: 20px;
+}
+
+.hero-eyebrow-pill .eyebrow-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #F5C542;
+  box-shadow: 0 0 10px #F5C542, 0 0 20px rgba(245, 197, 66, 0.6);
+  animation: goldPulseDot 2s infinite ease-in-out;
+}
+
+.hero-eyebrow-pill .eyebrow-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #F5C542;
+}
+
+@keyframes goldPulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.65; }
+}
+
+/* ─── Hero Luxury Editorial Eyebrow with Gold Rules ───────── */
+.hero-luxury-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 0.75rem;
+}
+
+.hero-eyebrow-rule {
+  display: inline-block;
+  width: 38px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0.1) 0%, #F5C542 100%);
+}
+
+.hero-eyebrow-rule:last-child {
+  background: linear-gradient(90deg, #F5C542 0%, rgba(245, 197, 66, 0.1) 100%);
+}
+
+.hero-eyebrow-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #F5C542;
+  text-shadow: 0 2px 12px rgba(245, 197, 66, 0.4);
+}
+
+.hero-popular-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #F5C542;
+  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ─── Luxury Segmented Hero Search ────────────────────────── */
 .hero-search-seg {
   display: flex;
   align-items: center;
   gap: 0;
-  background: #fff;
-  border-radius: 100px;
-  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.22);
-  padding: 0.4rem 0.4rem 0.4rem 1.25rem;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 9999px;
+  border: 1.5px solid rgba(245, 197, 66, 0.38);
+  box-shadow: 
+    0 24px 60px -10px rgba(0, 0, 0, 0.5),
+    0 0 28px rgba(245, 197, 66, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  padding: 6px 8px 6px 20px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-search-seg:focus-within {
+  border-color: #F5C542;
+  box-shadow: 
+    0 28px 70px -10px rgba(0, 0, 0, 0.6),
+    0 0 36px rgba(245, 197, 66, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
 }
 
 .hero-seg {
@@ -1915,7 +2095,7 @@ textarea.form-input {
   align-items: center;
   gap: 0.5rem;
   padding: 0.55rem 0.9rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   white-space: nowrap;
   background: none;
@@ -1926,7 +2106,7 @@ textarea.form-input {
 }
 
 .hero-seg svg {
-  color: var(--text-muted);
+  color: #B45309;
 }
 
 .hero-seg-pick:hover {
@@ -1936,10 +2116,27 @@ textarea.form-input {
 .hero-seg-main {
   flex: 1;
   min-width: 0;
-  gap: 0.65rem;
+  gap: 0.75rem;
   padding-left: 0;
   border-left: none;
   cursor: text;
+}
+
+.hero-seg-main .search-input {
+  background: transparent;
+  border: none;
+  border-color: transparent;
+  box-shadow: none;
+  font-size: 15.5px;
+  font-weight: 500;
+  color: #0F172A;
+  outline: none;
+  width: 100%;
+}
+
+.hero-seg-main .search-input::placeholder {
+  color: #64748B;
+  font-weight: 400;
 }
 
 .hero-seg-btn {
@@ -1948,19 +2145,21 @@ textarea.form-input {
   justify-content: center;
   width: 48px;
   height: 48px;
-  margin-left: 0.5rem;
+  margin-left: 8px;
   border: none;
   border-radius: 50%;
-  background: var(--primary);
-  color: #fff;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 60%, #B45309 100%);
+  color: #FFFFFF;
   cursor: pointer;
   flex-shrink: 0;
-  transition: background var(--transition), transform var(--transition);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .hero-seg-btn:hover {
-  background: var(--primary-dark);
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #FBBF24 0%, #EA580C 100%);
+  transform: scale(1.06);
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 @media (max-width: 900px) {
@@ -1986,81 +2185,184 @@ textarea.form-input {
   }
 }
 
-@media (max-width: 640px) {
-  #hero-stats {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem 0 !important;
-    width: 100%;
-  }
-
-  .hero-stat+.hero-stat {
-    border-left: 0;
-    padding-left: 0;
-  }
-
-  #hero-stats .hero-stat:nth-child(even) {
-    border-left: 1px solid rgba(255, 255, 255, 0.18);
-    padding-left: 1rem;
-  }
-}
-
-/* Popular-search chips */
+/* ─── Ultra-Luxury Popular-Search Chips ─────────────────────── */
 .popular-chip {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 1rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 100px;
-  text-decoration: none;
-  transition: background var(--transition);
+  gap: 7px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #FFFFFF !important;
+  background: rgba(8, 12, 22, 0.65) !important;
+  border: 1px solid rgba(245, 197, 66, 0.3) !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
 }
 
 .popular-chip:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.25) 0%, rgba(217, 119, 6, 0.35) 100%) !important;
+  border-color: #F5C542 !important;
+  color: #FFFBEB !important;
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 8px 24px -2px rgba(245, 197, 66, 0.45) !important;
 }
 
-/* Hero stats inline row */
-.hero-stat {
-  display: inline-flex;
+/* ─── Ultra-Luxury Hero Baseline Dock ─────────────────────── */
+.hero-bottom-dock {
+  position: absolute;
+  bottom: 0;
+  inset-x: 0;
+  z-index: 20;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 2rem 1.5rem 2rem;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 12, 20, 0.55) 100%);
+}
+
+.hero-dock-left,
+.hero-dock-right {
+  pointer-events: auto;
+  display: flex;
   align-items: center;
-  gap: 0.65rem;
-  color: #fff;
+  flex-shrink: 0;
 }
 
-.hero-stat-icon {
+.hero-dock-right {
+  justify-content: flex-end;
+}
+
+#hero-photo-indicator button[data-hero-idx] {
+  cursor: pointer;
+  min-height: 24px;
+}
+
+@media (max-width: 1120px) {
+  .hero-bottom-dock {
+    position: relative;
+    inset-x: auto;
+    bottom: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 0.5rem 1rem 2rem 1rem;
+    background: transparent;
+    pointer-events: auto;
+  }
+
+  .hero-dock-left,
+  .hero-dock-right {
+    width: 100%;
+  }
+
+  .hero-dock-right {
+    justify-content: flex-start;
+  }
+}
+
+/* ─── Luxury Hero Stats Ribbon ────────────────────────────── */
+#hero-stats {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-light);
+  margin: 0 auto;
+  gap: 0;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background: rgba(8, 12, 22, 0.78);
+  border: 1px solid rgba(245, 197, 66, 0.32);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 18px;
+  color: #fff;
+}
+
+.hero-stat:first-child {
+  padding-left: 4px;
+}
+
+.hero-stat:last-child {
+  padding-right: 4px;
+}
+
+.hero-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(245, 197, 66, 0.12);
+  border: 1px solid rgba(245, 197, 66, 0.28);
+  color: #F5C542;
+  flex-shrink: 0;
 }
 
 .hero-stat-body {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  gap: 2px;
 }
 
 .hero-stat strong {
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: -0.02em;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  letter-spacing: -0.01em;
 }
 
 .hero-stat-label {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #F5C542;
 }
 
-.hero-stat+.hero-stat {
-  border-left: 1px solid rgba(255, 255, 255, 0.18);
-  padding-left: 2rem;
+.hero-stat + .hero-stat {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  padding-left: 18px;
+}
+
+@media (max-width: 768px) {
+  #hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 20px;
+    padding: 14px 16px;
+    gap: 12px 8px !important;
+    width: 100%;
+  }
+
+  .hero-stat {
+    padding: 6px 8px !important;
+  }
+
+  .hero-stat + .hero-stat {
+    border-left: none;
+    padding-left: 8px;
+  }
+
+  #hero-stats .hero-stat:nth-child(even) {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    padding-left: 14px !important;
+  }
 }
 
 /* White AI Finder card (desktop hero) */
@@ -4565,19 +4867,19 @@ html[data-theme="dark"] .go-hub-drawer .text-gray-500 {
 /* ─── LIGHT MODE LUXURY STYLING FOR OFFLINE GO SUITE ─────────────────────── */
 /* 1. Navbar Offline Go Button in Light Mode */
 html[data-theme="light"] .nav-offline-btn {
-  background: rgba(15, 23, 42, 0.05) !important;
-  border: 1px solid rgba(217, 119, 6, 0.4) !important;
-  color: #1E293B !important;
-  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(245, 197, 66, 0.3) !important;
+  color: #F8FAFC !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
 }
 html[data-theme="light"] .nav-offline-btn:hover {
-  background: rgba(245, 197, 66, 0.18) !important;
-  border-color: #D97706 !important;
-  color: #0F172A !important;
-  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.22) !important;
+  background: rgba(245, 197, 66, 0.2) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.35) !important;
 }
 html[data-theme="light"] .nav-offline-icon {
-  color: #D97706 !important;
+  color: #F5C542 !important;
 }
 
 /* 2. Ambient Network Status Bar in Light Mode */

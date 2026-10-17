@@ -24,7 +24,7 @@
 
   --imm-text: #FFFFFF;
   --imm-text-muted: #CBD5E1;
-  --imm-text-subtle: #94A3B8;
+  --imm-text-subtle: #CBD5E1;
 
   --imm-accent: #F5C542;
   --imm-accent-dim: rgba(245, 197, 66, 0.15);
@@ -2007,7 +2007,8 @@ html[data-theme="light"] .nav-glass .nav-link.active {
 /* Breadcrumbs in navbar */
 html[data-theme="light"] body.dest-immersive .nav-glass ol a,
 html[data-theme="light"] body.dest-immersive .nav-glass ol li {
-  color: #64748B !important;
+  color: #334155 !important;
+  font-weight: 500 !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass ol a:hover {
@@ -4354,7 +4355,8 @@ html[data-theme="light"] body.dest-immersive #similarSection[class*="border-whit
 html[data-theme="light"] body.dest-immersive .text-slate-400,
 html[data-theme="light"] body.dest-immersive p.text-slate-400,
 html[data-theme="light"] body.dest-immersive span.text-slate-400 {
-  color: #64748B !important;
+  color: #334155 !important;
+  font-weight: 500 !important;
 }
 html[data-theme="light"] body.dest-immersive .text-slate-300 {
   color: #475569 !important;

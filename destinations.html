@@ -49,7 +49,7 @@
   <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
   <link rel="stylesheet" href="css/glass-immersive.css?v=20261008_phase87" />
-  <link rel="stylesheet" href="css/explore-immersive.css?v=20261008_phase87" />
+  <link rel="stylesheet" href="css/explore-immersive.css?v=20261015_luxury2" />
 
   <!-- GSAP Animation Core & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -112,11 +112,15 @@
 
           <div class="explore-hero-quickstart">
             <div class="hero-quick-card">
+              <div class="quick-kicker">
+                <span class="quick-kicker-dot" aria-hidden="true"></span>
+                <span>CURATOR'S COLLECTION</span>
+              </div>
               <div class="quick-card-head">
                 <span class="quick-icon" aria-hidden="true"></span>
                 <div>
-                  <h2 class="quick-title">Curated Discovery</h2>
-                  <p class="quick-subtitle">Quickly jump to distinct Indian landscapes</p>
+                  <h2 class="quick-title">Signature Landscapes</h2>
+                  <p class="quick-subtitle">Explore distinct Indian terrains &amp; sanctuaries</p>
                 </div>
               </div>
               <div class="hero-quick-tags" id="heroQuickTags">
@@ -126,6 +130,12 @@
                 <button type="button" data-type="wildlife" class="quick-tag-btn">Wildlife</button>
                 <button type="button" data-type="spiritual" class="quick-tag-btn">Spiritual</button>
                 <button type="button" data-type="adventure" class="quick-tag-btn">Adventure</button>
+              </div>
+              <div class="quick-card-footer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>2,396 Verified Sanctuaries &middot; Authentic Imagery</span>
               </div>
             </div>
           </div>
@@ -162,8 +172,7 @@
               <input id="searchInput" type="search"
                 placeholder="Search 2,396 destinations, states, regions, or attractions..."
                 aria-label="Search destinations" autocomplete="off" class="search-input-field" />
-              <button id="searchClear" type="button" class="search-clear-btn hidden"
-                aria-label="Clear search">
+              <button id="searchClear" type="button" class="search-clear-btn hidden" aria-label="Clear search">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M18 6 6 18" />
@@ -226,8 +235,7 @@
                 </div>
                 <div class="filter-header-actions">
                   <button id="resetTop" type="button" class="filter-reset-link">Reset all</button>
-                  <button id="filterClose" type="button" class="filter-close-btn lg:hidden"
-                    aria-label="Close filters">
+                  <button id="filterClose" type="button" class="filter-close-btn lg:hidden" aria-label="Close filters">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                       <path d="M18 6 6 18" />
@@ -392,7 +400,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/explore.js?v=20261008_phase87"></script>
+  <script type="module" src="js/pages/explore.js?v=20261015_luxury2"></script>
   <script>
     // Navbar glass transition on scroll
     window.addEventListener('scroll', function () {

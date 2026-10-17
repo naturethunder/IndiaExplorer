@@ -8,7 +8,7 @@
 ---
 
 **Project:** ExploreDesh  
-**Last Updated:** 2026-09-19 (rev-12)  
+**Last Updated:** 2026-10-15 (rev-13 Phase 89)  
 **Category:** Luxury Travel & Cultural Discovery  
 
 ---
@@ -24,7 +24,7 @@
 | Top Specular Bevel | `inset 0 1px 0 0 #FFFFFF` | `--shadow-specular` | Optical 3D lens highlight |
 | Hairline Glass Border | `rgba(255, 255, 255, 0.95)` | `--color-border-glass` | Crisp bevel edge |
 | Primary Text | `#0F172A` / `#1C1917` | `--color-text-main` | Deep editorial slate / warm ink (7:1+ AAA) |
-| Secondary Text | `#334155` / `#475569` | `--color-text-muted` | Balanced slate |
+| Secondary Text | `#334155` | `--color-text-muted` | Deep high-contrast slate (9.6:1 AAA) |
 | Muted Labels | `#64748B` | `--color-text-subtle` | Crisp micro-copy |
 | Primary Accent / Gold | `#D97706` / `#B45309` | `--color-accent` | Warm royal amber / burnt gold |
 | Gold Corona Glow | `rgba(217, 119, 6, 0.20)` | `--shadow-corona` | Soft amber ambient hover halo |

@@ -14,12 +14,11 @@ import { esc } from '../utils/format.js';
 import { themeToggleHTML, initThemeToggle } from '../utils/theme.js';
 import { openOfflineHub, initOfflineHub } from './offlineHub.js';
 
-// Pill nav: Home / Destinations / Trip / Itenary Planner / About / Contact.
-// "Plan My Trip" is the standout gradient CTA on the right.
+// Pill nav: Home / Destinations / Trip Planner / About / Contact.
 const NAV_LINKS = [
   { key: 'home', href: '/', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', label: 'Destinations' },
-  { key: 'finder', href: 'ai-finder.html', label: 'Trip / Itenary Planner' },
+  { key: 'finder', href: 'ai-finder.html', label: 'Trip Planner' },
   { key: 'about', href: 'about.html', label: 'About' },
   { key: 'contact', href: 'contact.html', label: 'Contact' },
 ];
@@ -41,20 +40,20 @@ function navbarHTML(active, variant) {
   const offlineBtn =
     '<button type="button" class="nav-offline-btn" id="navOfflineBtn" aria-label="Open ExploreDesh Go offline pocket guides and emergency SOS toolkit" title="ExploreDesh Go: Offline Guides & SOS">\n' +
     '  <span class="nav-offline-icon">' + icon('wifi-off', { size: 15 }) + '</span>\n' +
-    '  <span class="nav-offline-label hidden sm:inline">Offline Go</span>\n' +
+    '  <span class="nav-offline-label hidden xl:inline">Offline Go</span>\n' +
     '  <span class="nav-offline-count-badge" style="display:none">0</span>\n' +
     '</button>';
 
   return (
-    '<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation">\n' +
-    '  <div class="max-w-screen-2xl mx-auto px-6 h-full flex items-center justify-between gap-4">\n' +
-    '    ' + brand + '\n' +
-    '    <div class="hidden md:flex nav-menu items-center gap-1">\n        ' + links + '\n    </div>\n' +
-    '    <div class="flex items-center gap-2.5 shrink-0">\n' +
-    '      ' + offlineBtn + '\n' +
-    '      ' + themeToggleHTML() + '\n' +
-    '    </div>\n' +
-    '  </div>\n' +
+    '<nav class="nav-glass fixed top-0 left-0 right-0 z-50 h-16" aria-label="Main navigation"><div class="nav-luxury-top-rule"></div>' +
+    '  <div class="max-w-screen-2xl mx-auto px-6 h-full flex items-center justify-between gap-4">' +
+    '    ' + brand +
+    '    <div class="hidden md:flex nav-menu items-center">' + links + '</div>' +
+    '    <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">' +
+    '      ' + offlineBtn +
+    '      ' + themeToggleHTML() +
+    '    </div>' +
+    '  </div>' +
     '</nav>'
   );
 }
@@ -148,7 +147,7 @@ function footerHTML() {
 const MOBILE_LINKS = [
   { key: 'home', href: '/', icon: 'home', label: 'Home' },
   { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
-  { key: 'finder', href: 'ai-finder.html', icon: 'sparkles', label: 'Trip / Itenary Planner' },
+  { key: 'finder', href: 'ai-finder.html', icon: 'compass', label: 'Planner' },
   { key: 'beaches', href: 'destinations.html?type=beach', icon: 'waves', label: 'Beaches' },
 ];
 

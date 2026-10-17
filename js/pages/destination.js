@@ -6,7 +6,7 @@
  * price-tier meta), and renders every tab. Google Maps Embed is mounted
  * lazily via GoogleMapEmbed component when opening the Map tab.
  */
-import { fetchDestination, fetchIndex, fetchHomeIndex } from '../data/api.js?v=20261003_phase76';
+import { fetchDestination, fetchIndex, fetchHomeIndex } from '../data/api.js?v=20261018_phase94';
 import { initLayout } from '../components/layout.js';
 import { destUrl, cardImg, optimizeImageUrl } from '../components/destinationCard.js';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, destinationJsonLd, faqPageJsonLd } from '../components/seo.js';

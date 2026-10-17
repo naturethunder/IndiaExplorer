@@ -25,7 +25,7 @@ body.explore-immersive {
 
   --exp-text-main: #FFFFFF;
   --exp-text-muted: #CBD5E1;
-  --exp-text-subtle: #94A3B8;
+  --exp-text-subtle: #CBD5E1;
 
   --exp-radius-sm: 8px;
   --exp-radius-md: 14px;
@@ -257,52 +257,95 @@ body.explore-immersive :focus-visible {
   line-height: 1;
 }
 
-/* Hero Quick card */
+/* ─── Luxury Curator's Showcase Card (Hero Quickstart) ─────── */
 .explore-hero-quickstart {
   min-width: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-quick-card {
-  padding: 30px;
-  border-radius: var(--exp-radius-xl);
-  background: linear-gradient(145deg, rgba(16, 32, 27, 0.9), rgba(8, 18, 15, 0.92));
-  border: 1px solid var(--exp-border-light);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  padding: 28px 26px 22px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(16, 24, 38, 0.88), rgba(9, 14, 22, 0.94));
+  border: 1px solid rgba(245, 197, 66, 0.22);
+  box-shadow: 
+    0 30px 70px -15px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.hero-quick-card:hover {
+  border-color: rgba(245, 197, 66, 0.38);
+  box-shadow: 
+    0 36px 80px -15px rgba(0, 0, 0, 0.65),
+    0 0 28px rgba(245, 197, 66, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.quick-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #F5C542;
+}
+
+.quick-kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F5C542;
+  box-shadow: 0 0 8px #F5C542;
 }
 
 .quick-card-head {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 22px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--exp-border);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .quick-icon {
-  font-size: 24px;
+  font-size: 20px;
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 12px;
-  background: rgba(243, 200, 107, 0.12);
-  border: 1px solid rgba(243, 200, 107, 0.25);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.18), rgba(217, 119, 6, 0.08));
+  border: 1px solid rgba(245, 197, 66, 0.32);
+  color: #F5C542;
+  box-shadow: 0 4px 14px rgba(245, 197, 66, 0.15);
+  flex-shrink: 0;
 }
 
 .quick-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 0 0 2px;
-  color: var(--exp-text-main);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0 0 3px;
+  color: #F8FAFC;
 }
 
 .quick-subtitle {
   font-size: 12px;
-  color: var(--exp-text-muted);
+  line-height: 1.4;
+  color: #94A3B8;
   margin: 0;
 }
 
@@ -315,44 +358,81 @@ body.explore-immersive :focus-visible {
 .quick-tag-btn {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   padding: 10px 14px;
-  border-radius: var(--exp-radius-md);
-  border: 1px solid var(--exp-border);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--exp-text-main);
-  font-size: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
+  color: #E2E8F0;
+  font-size: 12.5px;
   font-weight: 600;
+  letter-spacing: 0.01em;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
   text-align: left;
   min-height: 44px;
   touch-action: manipulation;
 }
 
-.quick-tag-btn svg {
-  flex: 0 0 auto;
-  color: var(--exp-emerald-light);
+.quick-tag-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quick-tag-left svg {
+  flex-shrink: 0;
+  color: #F5C542;
+  transition: transform 0.2s ease;
+}
+
+.quick-tag-arrow {
+  color: rgba(255, 255, 255, 0.3);
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .quick-tag-btn:hover,
 .quick-tag-btn:active,
 .quick-tag-btn.active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  color: var(--white) !important;
-  font-weight: 600 !important;
-  border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  transform: translateY(-1px) !important;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.12), rgba(217, 119, 6, 0.18)) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  border-bottom: 2px solid #F5C542 !important;
+  box-shadow: 0 6px 20px -3px rgba(245, 197, 66, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px);
 }
 
-.quick-tag-btn:hover svg,
-.quick-tag-btn:active svg,
-.quick-tag-btn.active svg {
-  color: #F5C542 !important;
-  stroke: #F5C542 !important;
-  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
+.quick-tag-btn:hover .quick-tag-left svg,
+.quick-tag-btn:active .quick-tag-left svg,
+.quick-tag-btn.active .quick-tag-left svg {
+  transform: scale(1.1);
+  color: #FACC15;
+}
+
+.quick-tag-btn:hover .quick-tag-arrow,
+.quick-tag-btn:active .quick-tag-arrow,
+.quick-tag-btn.active .quick-tag-arrow {
+  transform: translateX(3px);
+  color: #F5C542;
+}
+
+.quick-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #94A3B8;
+}
+
+.quick-card-footer svg {
+  color: #F5C542;
+  flex-shrink: 0;
 }
 
 /* Scroll indicator */
@@ -751,6 +831,7 @@ html[data-theme="light"] .category-scroll-arrow:hover {
 
 /* Sidebar filter card — sticky with comfortable top clearance under sticky discovery bar (Desktop only) */
 @media (min-width: 1024px) {
+
   body.explore-immersive .explore-filter-sidebar,
   body.glass-immersive .explore-filter-sidebar,
   .explore-filter-sidebar {
@@ -1399,9 +1480,10 @@ html[data-theme="light"] select option {
 }
 
 .dest-card-desc {
-  font-size: 12px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.55;
   color: var(--exp-text-muted);
+  font-weight: 500;
   margin: 0 0 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1421,11 +1503,12 @@ html[data-theme="light"] select option {
 .dest-price-box {
   display: flex;
   align-items: baseline;
-  gap: 4px;
+  gap: 5px;
 }
 
 .dest-price-box .price-prefix {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--exp-text-subtle);
   white-space: nowrap;
 }
@@ -1756,7 +1839,7 @@ html[data-theme="light"] body.explore-immersive {
 
   --exp-text-main: #0F172A;
   --exp-text-muted: #334155;
-  --exp-text-subtle: #64748B;
+  --exp-text-subtle: #334155;
 
   background-color: #FAF9F6 !important;
   background: #FAF9F6 !important;
@@ -1945,18 +2028,25 @@ html[data-theme="light"] body.explore-immersive .filter-kicker {
   color: #B45309 !important;
 }
 
-html[data-theme="light"] body.explore-immersive .filter-label {
-  color: #334155 !important;
+html[data-theme="light"] body.explore-immersive .filter-label,
+html[data-theme="light"] body.explore-immersive .filter-label span {
+  color: #0F172A !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.06em !important;
 }
 
 html[data-theme="light"] body.explore-immersive .custom-select {
   background-color: var(--white) !important;
-  border: 1.5px solid #CBD5E1 !important;
-  color: #1E293B !important;
+  border: 1.5px solid #94A3B8 !important;
+  color: #0F172A !important;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
 }
 
 html[data-theme="light"] body.explore-immersive .select-chevron {
-  color: var(--text-muted) !important;
+  color: #0F172A !important;
+  font-weight: 800 !important;
 }
 
 /* ─── Category Bar & Filter Pills ───────────────────────────────────────── */
@@ -2047,41 +2137,70 @@ html[data-theme="light"] body.explore-immersive .dest-card-body {
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-desc {
-  color: #475569 !important;
+  color: #0F172A !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
   line-height: 1.55 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-rating .rating-num {
-  color: var(--text) !important;
-  font-weight: 700 !important;
+  color: #0F172A !important;
+  font-weight: 800 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-rating .review-cnt {
-  color: var(--text-muted) !important;
+  color: #334155 !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-best-season {
   background: #FEF3C7 !important;
-  color: #92400E !important;
-  border: 1px solid rgba(217, 119, 6, 0.28) !important;
+  color: #78350F !important;
+  font-weight: 700 !important;
+  font-size: 11.5px !important;
+  border: 1px solid rgba(180, 83, 9, 0.35) !important;
   box-shadow: inset 0 1px 0 0 var(--white) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-best-season svg {
-  color: #B45309 !important;
+  color: #92400E !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-footer {
-  border-top: 1px solid rgba(217, 119, 6, 0.12) !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.16) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .price-prefix {
-  color: var(--text-muted) !important;
+  color: #334155 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .price-val {
   color: #B45309 !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+}
+
+/* Card Body in Dark Mode — Crisp Slate-200 */
+html:not([data-theme="light"]) body.explore-immersive .dest-card-desc {
+  color: #E2E8F0 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+}
+
+html:not([data-theme="light"]) body.explore-immersive .dest-card-rating .review-cnt {
+  color: #CBD5E1 !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+
+html:not([data-theme="light"]) body.explore-immersive .price-prefix {
+  color: #CBD5E1 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 /* ─── Sidebar Filter Panel ──────────────────────────────────────────────── */
@@ -2146,19 +2265,44 @@ html[data-theme="light"] body.explore-immersive .pagination-btn.active {
   box-shadow: 0 4px 14px rgba(180, 83, 9, 0.35) !important;
 }
 
-/* ─── Curated Discovery Quickstart Card (Light Mode) ────────── */
+/* ─── Luxury Curator's Showcase Card (Light Mode) ────────── */
 html[data-theme="light"] body.explore-immersive .hero-quick-card,
 html[data-theme="light"] .hero-quick-card {
-  background: var(--white) !important;
-  border: 1px solid rgba(217, 119, 6, 0.20) !important;
-  box-shadow: inset 0 1px 0 0 var(--white), 0 16px 40px -8px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.08) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(250, 248, 244, 0.96)) !important;
+  border: 1px solid rgba(180, 83, 9, 0.20) !important;
+  box-shadow: 
+    0 24px 60px -15px rgba(180, 83, 9, 0.12),
+    0 10px 30px -8px rgba(15, 23, 42, 0.06),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    inset 0 1px 0 var(--white) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+html[data-theme="light"] body.explore-immersive .hero-quick-card:hover,
+html[data-theme="light"] .hero-quick-card:hover {
+  border-color: rgba(180, 83, 9, 0.35) !important;
+  box-shadow: 
+    0 30px 70px -15px rgba(180, 83, 9, 0.18),
+    0 14px 36px -8px rgba(15, 23, 42, 0.08),
+    0 0 24px rgba(217, 119, 6, 0.12),
+    inset 0 1px 0 var(--white) !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-kicker,
+html[data-theme="light"] .quick-kicker {
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-kicker-dot,
+html[data-theme="light"] .quick-kicker-dot {
+  background: #B45309 !important;
+  box-shadow: 0 0 6px rgba(180, 83, 9, 0.6) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-title,
 html[data-theme="light"] .quick-title {
-  color: var(--text) !important;
+  color: #0F172A !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-subtitle,
@@ -2168,33 +2312,56 @@ html[data-theme="light"] .quick-subtitle {
 
 html[data-theme="light"] body.explore-immersive .quick-card-head,
 html[data-theme="light"] .quick-card-head {
-  border-bottom-color: rgba(217, 119, 6, 0.12) !important;
+  border-bottom-color: rgba(180, 83, 9, 0.12) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-icon,
 html[data-theme="light"] .quick-icon {
-  background: rgba(217, 119, 6, 0.10) !important;
-  border: 1px solid rgba(217, 119, 6, 0.25) !important;
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.12), rgba(245, 158, 11, 0.05)) !important;
+  border: 1px solid rgba(180, 83, 9, 0.28) !important;
   color: #B45309 !important;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.12) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-tag-btn,
 html[data-theme="light"] .quick-tag-btn {
-  background: #FAF8F5 !important;
-  border: 1px solid rgba(217, 119, 6, 0.18) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(180, 83, 9, 0.16) !important;
   color: #1E293B !important;
-  box-shadow: inset 0 1px 0 0 var(--white), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  box-shadow: inset 0 1px 0 var(--white), 0 2px 6px rgba(15, 23, 42, 0.04) !important;
 }
 
-html[data-theme="light"] body.explore-immersive .quick-tag-btn svg,
-html[data-theme="light"] .quick-tag-btn svg {
-  color: #D97706 !important;
+html[data-theme="light"] body.explore-immersive .quick-tag-left svg,
+html[data-theme="light"] .quick-tag-left svg {
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-tag-arrow,
+html[data-theme="light"] .quick-tag-arrow {
+  color: rgba(180, 83, 9, 0.4) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .quick-tag-btn:hover,
 html[data-theme="light"] .quick-tag-btn:hover {
-  background: #FEF3C7 !important;
+  background: linear-gradient(135deg, #FEF3C7, #FDE68A) !important;
   border-color: #D97706 !important;
   color: #78350F !important;
-  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.22), inset 0 1px 0 var(--white) !important;
+  transform: translateY(-2px) !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-tag-btn:hover .quick-tag-arrow,
+html[data-theme="light"] .quick-tag-btn:hover .quick-tag-arrow {
+  color: #78350F !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-card-footer,
+html[data-theme="light"] .quick-card-footer {
+  border-top-color: rgba(180, 83, 9, 0.10) !important;
+  color: #64748B !important;
+}
+
+html[data-theme="light"] body.explore-immersive .quick-card-footer svg,
+html[data-theme="light"] .quick-card-footer svg {
+  color: #B45309 !important;
 }

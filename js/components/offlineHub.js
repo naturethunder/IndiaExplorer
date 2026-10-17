@@ -43,7 +43,9 @@ export function registerServiceWorker() {
               if (installingWorker) {
                 installingWorker.addEventListener('statechange', () => {
                   if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    console.info('[ExploreDesh Go] New version available.');
+                    console.info('[ExploreDesh Go] New version detected — activating immediately.');
+                    // Tell the new SW to skip waiting and take control right away
+                    installingWorker.postMessage({ action: 'SKIP_WAITING' });
                   }
                 });
               }
@@ -52,6 +54,17 @@ export function registerServiceWorker() {
           .catch((err) => {
             console.warn('[ExploreDesh Go] Service Worker registration failed:', err);
           });
+
+        // When the controller changes (new SW took over), reload all open tabs
+        // to ensure they instantly receive fresh JSON + JS assets.
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!refreshing) {
+            refreshing = true;
+            console.info('[ExploreDesh Go] New SW activated — reloading for fresh data.');
+            window.location.reload();
+          }
+        });
       };
 
       if ('requestIdleCallback' in window) {
@@ -62,6 +75,7 @@ export function registerServiceWorker() {
     });
   }
 }
+
 
 /**
  * Capture PWA install prompt

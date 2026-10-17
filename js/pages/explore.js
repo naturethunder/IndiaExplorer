@@ -5,7 +5,7 @@
  * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout, setActiveNav } from '../components/layout.js?v=20261008_phase90';
+import { initLayout, setActiveNav } from '../components/layout.js?v=20261014_luxury1';
 import { destCardHTML } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
@@ -353,7 +353,7 @@ if (quickTagsWrap) {
   quickTagsWrap.querySelectorAll('button').forEach((btn) => {
     const category = CATEGORY_FILTERS.find((item) => item.id === btn.dataset.type);
     if (category) {
-      btn.innerHTML = icon(category.iconName, { size: 16 }) + '<span>' + esc(category.label) + '</span>';
+      btn.innerHTML = `<span class="quick-tag-left">${icon(category.iconName, { size: 16 })}<span>${esc(category.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
     }
     btn.addEventListener('click', () => {
       const type = btn.dataset.type;

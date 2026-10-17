@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-10-14 Phase 88 rev-37)
+# ExploreDesh — Project Guide (updated 2026-10-18 Phase 94 rev-43)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -17,7 +17,80 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-10-14 Phase 88) — High-Speed Edge Delivery, 429/404 Elimination, Ground-Truth Overhaul, Header Parity & Toolchain Cleanup:**
+> **Latest Milestone (2026-10-18 Phase 94 rev-43) — 16-Destination Ultra-HD Media Curation, Strict Zero-Person / Zero-Random Rule Enforcement & Service Worker v1.5.5 Cache Purge:**
+> - **Strict 16-Destination Photography Overhaul (`data/destinations/*.json`):**
+>   - Sourced and verified **512 pristine unique HD landscape URLs** via official Pexels and Unsplash APIs for `alleppey`, `kittur-fort`, `manjarabad-fort`, `tungabhadra-otter-conservation-reserve`, `arnala-fort`, `ahmednagar-fort`, `malegaon-fort`, `tungi-fort`, `mahipalgad`, `gajlaxmi-palace`, `phillaur-fort`, `bhangarh-fort`, `monsoon-palace`, `alorna-fort`, `kondapalli-fort`, `bengaluru-palace`.
+>   - **Strict Zero-Person / Zero-Crowd Policy**: Strictly eliminated tourist portraits, selfies, models, and dense human gatherings to present undisturbed architectural facades and natural landscapes.
+>   - **Strict Zero-Fake / Zero-Random Invariant**: 100% Indian geographic authenticity and regional fidelity; eliminated unrelated macros, abstract objects, and out-of-state misattributions.
+>   - **Dataset Invariants Verified**: `heroImage.src === gallery[0].src` (identically synchronized), exactly 5 gallery images per file with evocative descriptive titles, exactly 3 photos per nearby place, zero internal duplicates, zero cross-destination collisions across all 16 destinations.
+> - **Service Worker v1.5.5 Cache Purge & Client Synchronization (`sw.js`, `js/data/api.js`, `destination.js`, `destination.html`):**
+>   - Bumped Service Worker version to `v1.5.5` in `sw.js` (purging obsolete `exploredesh-shell-v1.5.4`, `exploredesh-media-v1.5.4`, and `exploredesh-data-v1.5.4` caches).
+>   - Upgraded query parameters to `?v=20261018_phase94` across dynamic JSON loaders in `js/data/api.js` and module imports in `destination.js` and `destination.html`.
+>   - Recompiled master catalog manifests (`data/destinations/index.json`, `data/destinations/home-manifest.json`, `data/search-index.json`).
+> - **Full System Verification & Zero Regression:**
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+>   - Master Technical SEO Audit (`scripts/seo_audit.js`): **61/61 PASSED (0 errors)**.
+>   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected**.
+>
+> **Previous Milestone (2026-10-17 Phase 91 rev-42) — Master Ultra-Luxury Hero & Royal Obsidian Navigation Redesign:**
+> - **Royal Obsidian & Gold Luxury Navbar (`js/components/layout.js`, `css/styles.css`, `css/glass-immersive.css`):**
+>   - Implemented a royal obsidian frosted glass bar (`rgba(6, 9, 18, 0.78); backdrop-filter: blur(28px) saturate(180%)`) with a specular top gold accent rule (`.nav-luxury-top-rule`).
+>   - Maintained persistent dark smoked glass navbar across both Light and Dark themes to eliminate white strip cutoff on dark hero photography.
+>   - Added gold-ringed mountain brand emblem and letter-spaced uppercase navigation links (`HOME`, `DESTINATIONS`, `TRIP PLANNER`, `ABOUT`, `CONTACT`) with refined gold underline indicators.
+>   - Streamlined navbar right flank: removed intrusive CTA button in favor of pure, minimalist obsidian luxury.
+>   - Renamed `AI Trip Planner` -> **`Trip Planner`** across all navigation links, mobile nav (with compass icon), `ai-finder.html`, `finder.js`, and `404.html`.
+> - **Cinematic Centered Editorial Hero Experience (`index.html`, `css/styles.css`, `css/glass-immersive.css`):**
+>   - Redesigned the hero top with an ultra-luxury editorial eyebrow flanked by golden hairline rules: `—— CURATED JOURNEYS ACROSS BHARAT ——` (`.hero-luxury-eyebrow`).
+>   - Restored canonical headline: **"Discover the Wonder of / Incredible India"** with 24-karat metallic liquid gold typography and balanced two-line line wrapping.
+>   - Enhanced the segmented search bar with a warm golden search icon, glowing amber round search button, and high-contrast placeholder.
+>   - Added uppercase golden `TRENDING:` tag paired with smoked glass pill tags (`Manali`, `Goa`, `Kerala`, `Ladakh`, `Rajasthan`, `Darjeeling`).
+>   - Centered Platform Stats Ribbon: Added `2,396+ Destinations`, `36 States`, `14,037+ Places`, `10,439+ Stays` in the middle below trending tags as a frosted obsidian glass capsule with gold hairline borders and Playfair Display numbers.
+>   - Removed bottom dock and yellow slider dots to provide an unobstructed view of the background photography.
+> - **Full System Verification & Zero Regression:**
+>   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected** across all 7 priority categories.
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (100/100)**.
+>   - Technical SEO & Sitemaps (`seo_audit.js`, `master_seo_audit.js`, `check_broken_links.js`): **61/61 standard checks, 2,453 sitemapped URLs, 0 broken links**.
+>   - Visual Verification: Subagent screenshot-certified in both Dark and Light modes on desktop and mobile.
+>
+> **Previous Milestone (2026-10-15 Phase 90) — Section Heading Parity, Ultra-Luxury Hero Declutter & Full SEO / Performance Certification:**
+> - **Hero Section Declutter & Luxury Refinement (`index.html`):**
+>   - Purged the wordy descriptive paragraph (*"From snow-crested Himalayan passes to sacred temple ghats and pristine coastal lagoons..."*) and the directory-style eyebrow badge (*"THE COMPLETE TRAVEL CATALOGUE OF BHARAT"*).
+>   - Created an ultra-luxury editorial cover aesthetic: the regal headline (*"Discover the Wonder of Incredible India"*) now connects directly to the glassmorphic search bar with generous negative space and an edge-to-edge balanced baseline dock.
+> - **Section Heading Parity with Production (`index.html`):**
+>   - Aligned homepage section headings directly with `exploredesh.com`:
+>     - **Popular Destinations** (with `Most Visited` kicker badge)
+>     - **Browse by Budget** (clean, zero subtitle bloat)
+>     - **Best Hill Stations** (with `Escape to the Hills` kicker badge)
+>     - **Explore More** (clean, zero subtitle bloat)
+> - **Zero-Dead-Space Luxury Layout (`index.html`, `js/pages/home.js`):**
+>   - Completely eliminated secondary filler subtitles (`Top recommended places to travel right now`, `Where to go, whatever the weather`, `From backpacker stays...`, `Beaches, Heritage...`), streamlining vertical rhythm and giving direct visual impact to the photography and card content.
+> - **Full Technical SEO & Sitemaps Audit Suite (`/seo-audit`):**
+>   - Standard Technical SEO (`scripts/seo_audit.js`): **61/61 checks passed (0 errors)**.
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 checks passed (Score: 100/100)**.
+>   - Master Repository & Sitemap Parity (`scripts/audit/master_seo_audit.js`): **2,396 destinations, 2,453 sitemapped URLs, 11,963 sitemapped images verified, 0 orphan routes**.
+>   - Relative Internal Link Integrity (`scripts/audit/check_broken_links.js`): **0 broken links across all 8 HTML templates**.
+> - **Real-World Web Performance & Core Web Vitals:**
+>   - Local Dev (`localhost:8080`): TTFB 8ms, FCP 360ms, DOMContentLoaded 327ms, Total Page Load 329ms.
+>   - Live Production (`exploredesh.com`): TTFB 129ms (Cloudflare Edge CDN), FCP 836ms (Google Good standard < 1.8s), Total Load 1.01s.
+>   - Smart image loading: 44 off-screen images deferred via `loading="lazy"`, 13 above-the-fold images eagerly prioritized.
+>
+> **Previous Milestone (2026-10-15 Phase 89) — Editorial Header Streamlining, Universal High-Contrast Typography & Card Legibility Overhaul:**
+> - **Editorial Header Streamlining (`index.html`, `js/pages/home.js`):**
+>   - Purged redundant secondary subtitle lines (`Top recommended places to travel right now`, `Curated sanctuaries harmonized with India's seasonal rhythms`, `From tranquil boutique retreats to palatial royal estates`, `Sacred heritage, untamed wildlife corridors, and sunlit coastal shores`) across all platform homepage sections.
+>   - Achieved a magazine-grade, ultra-luxury aesthetic coupling uppercase luxury kicker badges (`SEASONAL JOURNEYS`, `TIMELESS ICONS`, `HERITAGE & HOSPITALITY`, `ALPINE SANCTUARIES`, `UNCHARTED HORIZONS`) with bold royal serif titles directly connecting to card content without visual dead space.
+> - **Universal High-Contrast Typography System (`css/glass-immersive.css`, `css/styles.css`):**
+>   - Upgraded `:root` `--text-muted` from `#64748B` to `#334155` (slate-700), delivering a **9.6:1 AAA contrast ratio** on light mode canvases.
+>   - Pinned all `.text-slate-400`, `.text-gray-400`, `.text-zinc-400` elements to `#334155` (500 weight) in Light Mode and `#CBD5E1` (slate-300, 11.2:1 contrast) in Dark Mode.
+>   - Replaced pale `#94A3B8` footer text with crisp `#CBD5E1` (silver-slate) with `#FFFFFF` headers and golden hover accents across all pages.
+> - **Destination Card & Filter Sidebar High-Contrast Legibility Overhaul (`css/explore-immersive.css`):**
+>   - `.dest-card-desc` upgraded from faint 12px `#475569` to bold near-black `#0F172A` (13px, font-weight: 500, line-height: 1.55) in Light Mode and crisp `#E2E8F0` in Dark Mode.
+>   - Meta elements (`price-prefix`, `review-cnt`) upgraded to `#334155` (12px, font-weight: 600).
+>   - Filter sidebar labels (`REGION / ZONE`, `STATE OR UT`, `PRICE BAND / NIGHT`, `BEST SEASON`, `SPECIFIC TRAVEL MONTH`) upgraded from faint gray to `#0F172A` (12px, font-weight: 800) with `#0F172A` select values.
+> - **Master Regression & Safety Certification:**
+>   - UI/UX Pro Max QA Audit (`scripts/ui_ux_qa_audit.js`): **0 issues detected (100% PASS)**.
+>   - Master SEO Regression Guard (`scripts/seo_regression_guard.js`): **71/71 PASSED (Score: 100/100)**.
+>
+> **Previous Milestone (2026-10-14 Phase 88) — High-Speed Edge Delivery, 429/404 Elimination, Ground-Truth Overhaul, Header Parity & Toolchain Cleanup:**
 > - **Destination Header Parity & Layout Standardization (`destination.html`, `destination.js`):**
 >   - Replaced legacy hardcoded `<nav>` with shared platform chrome `<div id="siteNav"></div>` via `initLayout({ active: 'destinations' })`.
 >   - Upgraded container width from `max-w-7xl px-4` to site-standard `max-w-screen-2xl px-6`, eliminating horizontal jumping between Home and Detail views.

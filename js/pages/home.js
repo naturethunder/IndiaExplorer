@@ -3,7 +3,7 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20261008_phase90';
+import { initLayout } from '../components/layout.js?v=20261015_luxury_master';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
@@ -20,7 +20,7 @@ applySEO({
   description: "Discover India's most beautiful destinations. Search hotels by budget, explore top places to visit, and plan your perfect India trip with ExploreDesh.",
   canonicalPath: '/',
   keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner', 'hotels in india'],
-  image: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&w=1280',
+  image: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920',
 });
 
 injectJsonLd(websiteJsonLd(), 'website');
@@ -30,16 +30,14 @@ injectJsonLd(websiteJsonLd(), 'website');
   if (!bg) return;
 
   const HERO_PHOTOS = [
-    { name: 'Varanasi Ganga Ghats', src: 'https://images.pexels.com/photos/35655143/pexels-photo-35655143.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Uttar Pradesh' },
-    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
-    { name: 'Rishikesh Ganga Aarti', src: 'https://images.pexels.com/photos/18887232/pexels-photo-18887232.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Uttarakhand' },
-    { name: 'Baga Beach, Goa', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Goa' },
-    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Himachal Pradesh' },
-    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
-    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Karnataka' },
-    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'West Bengal' },
-    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Himachal Pradesh' },
-    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&w=1280', state: 'Rajasthan' },
+    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
+    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
+    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
+    { name: 'Pangong Tso Lake', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Ladakh' },
+    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Himachal Pradesh' },
+    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Karnataka' },
+    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'West Bengal' },
+    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Himachal Pradesh' },
   ];
 
   let currentIdx = 0;
@@ -65,13 +63,13 @@ injectJsonLd(websiteJsonLd(), 'website');
     const indicatorEl = document.getElementById('hero-photo-indicator');
     if (indicatorEl) {
       indicatorEl.innerHTML = `
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/80 border border-amber-400/30 backdrop-blur-md shadow-lg text-xs font-semibold text-white">
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-950/85 border border-amber-400/35 backdrop-blur-md shadow-xl text-xs font-semibold text-white">
           <svg class="w-3.5 h-3.5 text-amber-400 shrink-0" width="14" height="14" style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span class="inline-flex items-center gap-1">${icon('map-pin', { size: 14 })} Featured: <strong class="text-amber-300 font-bold">${photo.name}</strong> (${photo.state})</span>
+          <span class="inline-flex items-center gap-1.5"><span class="text-amber-400 font-bold uppercase tracking-wider text-[10px]">FEATURED:</span> <strong class="text-amber-300 font-bold">${photo.name}</strong> <span class="text-white/60">(${photo.state})</span></span>
         </div>
-        <div class="flex items-center gap-1.5 ml-1">
+        <div class="flex items-center gap-1.5 ml-2">
           ${HERO_PHOTOS.map((_, idx) => `
-            <button type="button" data-hero-idx="${idx}" class="h-2 rounded-full transition-all duration-300 ${idx === currentIdx ? 'bg-amber-400 w-6 shadow-sm shadow-amber-400' : 'bg-white/40 hover:bg-white/80 w-2'}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}></button>
+            <button type="button" data-hero-idx="${idx}" class="h-2 rounded-full transition-all duration-300 ${idx === currentIdx ? 'bg-amber-400 w-7 shadow-sm shadow-amber-400' : 'bg-white/35 hover:bg-white/80 w-2'}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}></button>
           `).join('')}
         </div>
       `;
@@ -508,13 +506,6 @@ if (!isFullIndexLoaded) {
     const btnNameEl = document.getElementById('railMonthBtnName');
     if (btnNameEl) btnNameEl.textContent = monthName;
 
-    const subEl = document.getElementById('railMonthSub');
-    if (subEl) {
-      subEl.textContent = isCurrent
-        ? 'Top recommended places to travel right now'
-        : 'Top recommended places to travel in ' + monthName;
-    }
-
     const allEl = document.getElementById('railMonthAll');
     if (allEl) allEl.href = 'destinations.html?month=' + monthNum;
 
@@ -701,25 +692,6 @@ function shuffleArray(arr) {
 // (skeletons had different heights while loading).
 if (window.ScrollTrigger) window.ScrollTrigger.refresh();
 
-// ─── Hero social-proof avatars (local inline SVG — no external fetch) ─────
-(function () {
-  const el = document.getElementById('heroAvatars');
-  if (!el) return;
-  // Brand-consistent gradient avatars with a person glyph. Zero network calls
-  // (Strict Real Photos Policy: no picsum / stock placeholders).
-  const grads = [['#34d399', '#0ea5e9'], ['#f59e0b', '#ef4444'], ['#8b5cf6', '#ec4899'], ['#10b981', '#6366f1']];
-  el.innerHTML = grads.map(function (g, i) {
-    return '<svg class="avatar-cluster-img" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">' +
-      '<defs><linearGradient id="av' + i + '" x1="0" y1="0" x2="1" y2="1">' +
-      '<stop offset="0" stop-color="' + g[0] + '"/><stop offset="1" stop-color="' + g[1] + '"/>' +
-      '</linearGradient></defs>' +
-      '<rect width="48" height="48" rx="24" fill="url(#av' + i + ')"/>' +
-      '<circle cx="24" cy="19" r="7.5" fill="rgba(255,255,255,0.92)"/>' +
-      '<path d="M11 41c1.5-8 7-12 13-12s11.5 4 13 12" fill="rgba(255,255,255,0.92)"/>' +
-      '</svg>';
-  }).join('');
-})();
-
 // ─── Snap-scroll carousel wiring (arrows + disabled state) ─
 function wireCarousel(row, prevBtn, nextBtn) {
   if (!row || !prevBtn || !nextBtn) return;
@@ -773,54 +745,57 @@ function wireCarousel(row, prevBtn, nextBtn) {
   }
 
   // 1. Hero Intro Sequence (Page Load Timeline)
-  const heroTL = window.gsap.timeline({ delay: 0.1 });
+  const heroTL = window.gsap.timeline({ delay: 0.05, defaults: { ease: 'power2.out' } });
 
-  if (document.querySelector('.hero-home h1')) {
-    heroTL.from('.hero-home h1', {
+  if (document.querySelector('.hero-eyebrow-pill')) {
+    heroTL.from('.hero-eyebrow-pill', { opacity: 0, y: -12, duration: 0.45 });
+  }
+
+  if (document.querySelector('.hero-home-title')) {
+    heroTL.from('.hero-home-title', {
       opacity: 0,
-      y: 35,
-      duration: 0.85,
-      ease: 'power3.out'
-    });
+      y: 24,
+      duration: 0.6
+    }, '-=0.25');
   }
 
   if (document.querySelector('.hero-home p')) {
     heroTL.from('.hero-home p', {
       opacity: 0,
-      y: 20,
-      duration: 0.65,
-      ease: 'power2.out'
-    }, '-=0.55');
+      y: 16,
+      duration: 0.5
+    }, '-=0.35');
   }
 
   if (document.querySelector('.hero-search-seg')) {
     heroTL.from('.hero-search-seg', {
-      opacity: 0,
-      scale: 0.95,
-      y: 20,
-      duration: 0.7,
-      ease: 'back.out(1.4)'
-    }, '-=0.45');
+      y: 12,
+      duration: 0.45
+    }, '-=0.2');
   }
 
-
-  if (document.querySelectorAll('.hero-stat').length) {
-    heroTL.from('.hero-stat', {
+  if (document.querySelector('#popular-searches')) {
+    heroTL.from('#popular-searches', {
       opacity: 0,
-      y: 18,
-      stagger: 0.08,
-      duration: 0.6,
-      ease: 'power2.out'
+      y: 12,
+      duration: 0.45
     }, '-=0.25');
   }
 
-  if (document.querySelector('.ai-hero-card')) {
-    heroTL.from('.ai-hero-card', {
+  if (document.querySelector('#hero-stats')) {
+    heroTL.from('#hero-stats', {
       opacity: 0,
-      x: 30,
-      duration: 0.8,
-      ease: 'power3.out'
-    }, '-=0.7');
+      y: 14,
+      duration: 0.5
+    }, '-=0.25');
+  }
+
+  if (document.querySelector('#hero-photo-indicator')) {
+    heroTL.from('#hero-photo-indicator', {
+      opacity: 0,
+      y: 10,
+      duration: 0.45
+    }, '-=0.25');
   }
 
   // 2. Dynamic Numeric Stat Counters
