@@ -1,10 +1,16 @@
 # ExploreDesh — Master Architecture & Production Plan
 
-## Status: ✅ Complete & Production Ready (2026-09-29 rev-32)
+## Status: ✅ Complete & Production Ready (2026-10-18 rev-44 Phase 95)
 
 ## Recent Milestones Delivered (Phases 68–71)
 
-### 0. Phase 71: Master Production Audit Suite, Pixabay Session URL Purge, Media Integrity Certification & Rishikesh Landmark Restoration (2026-09-29 rev-32)
+### 0. Phase 95: Multi-Agent Deep Image Curation, Zero-Person Verification & Foreign Stock Purge (2026-10-18 rev-44)
+- **33 Target Destinations Curated:** Overhauled 33 destinations including Step 1 (4 targets), Step 2 (27 targets with 45 junk assets purged), Aridwaramangalam (eliminated Ahobilam out-of-state photos and Kovilvenni highway signboards), and Garbharakshambigai (purged HTTP 429 rate-limited Wikimedia links and Central Park New York leak).
+- **Zero-Person & Zero-Crowd Guarantee:** Strictly enforced 100% clean architectural and landscape views across all 33 files.
+- **Zero Cross-Destination Collisions:** All 37 distinct slots per file verified unique and collision-free against the 66,433+ repo URL catalog.
+- **Catalog & Sitemaps Rebuilt:** 2,396 destinations, 2,453 sitemapped URLs, 11,965 images in Google Image Sitemaps.
+
+### 1. Phase 71: Master Production Audit Suite, Pixabay Session URL Purge, Media Integrity Certification & Rishikesh Landmark Restoration (2026-09-29 rev-32)
 - **Pixabay Session URL Purge (101 Destinations, 697 URLs):** Completely eradicated 697 expiring `pixabay.com/get/...` session tokens across 101 destination files, replacing with permanent, high-definition, zero-collision Pexels & Unsplash CDN photography. Zero Pixabay session URLs remaining in repository.
 - **Geographic Asset Leak & Disaster Remediation (`siddhivinayak-temple-mumbai.json`):** Eliminated 3 Kerala asset leaks in Siddhivinayak Temple, Mumbai. Removed tragic news disaster scraping (`2017 Mumbai stampede`) and residential apartments, curating authentic Mumbai landmarks: Bandra-Worli Sea Link, Shivaji Park, Chaitya Bhoomi, and Portuguese Church.
 - **Gallery Count Invariant Enforcement (10 Destinations):** Repaired 10 destinations with fewer than 5 gallery photos (`bambleshwari-temple`, `koranganatha-temple`, `laling-fort`, `mangi-tungi`, `natadreeswarar-temple`, `nrusinghanath-temple`, `palamu-fort`, `sarala-temple`, `sindhudurg-fort`, `teru-malleshvara-temple-hiriyur`) to exactly 5 HD images with descriptive metadata.

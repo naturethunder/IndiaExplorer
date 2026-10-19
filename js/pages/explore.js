@@ -255,9 +255,15 @@ function syncFilterActive() {
     b.classList.toggle('active', isAct);
     b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
     if (isAct) {
-      requestAnimationFrame(() => {
-        b.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-      });
+      const scrollContainer = typeWrap.closest('.category-tabs-container') || typeWrap.parentElement;
+      if (scrollContainer) {
+        requestAnimationFrame(() => {
+          const containerRect = scrollContainer.getBoundingClientRect();
+          const btnRect = b.getBoundingClientRect();
+          const targetLeft = (btnRect.left - containerRect.left) + scrollContainer.scrollLeft - (scrollContainer.clientWidth / 2) + (btnRect.width / 2);
+          scrollContainer.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' });
+        });
+      }
     }
   });
 }

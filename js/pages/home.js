@@ -3,7 +3,7 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20261015_luxury_master';
+import { initLayout } from '../components/layout.js?v=20261019_home_scroll_fix';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
@@ -12,6 +12,14 @@ import { resolveState, MONTH_PICKS, CUSTOM_TYPE_MATCHERS } from '../data/taxonom
 import { searchDestinations } from '../utils/search.js';
 
 const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Ensure homepage always starts from the top on page load or refresh (prevent browser restoring mid-page scroll)
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+if (!window.location.hash) {
+  window.scrollTo(0, 0);
+}
 
 initLayout({ active: 'home' });
 
@@ -489,9 +497,15 @@ if (!isFullIndexLoaded) {
 
     const activeBtn = pillsEl.querySelector('.month-pill.is-active');
     if (activeBtn) {
-      requestAnimationFrame(() => {
-        activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-      });
+      const scrollContainer = pillsEl.closest('.monthly-pills-scroll') || pillsEl.parentElement;
+      if (scrollContainer) {
+        requestAnimationFrame(() => {
+          const containerRect = scrollContainer.getBoundingClientRect();
+          const btnRect = activeBtn.getBoundingClientRect();
+          const targetLeft = (btnRect.left - containerRect.left) + scrollContainer.scrollLeft - (scrollContainer.clientWidth / 2) + (btnRect.width / 2);
+          scrollContainer.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' });
+        });
+      }
     }
   }
 

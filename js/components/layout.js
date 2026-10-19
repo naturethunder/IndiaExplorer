@@ -201,6 +201,27 @@ export function initLayout(opts = {}) {
   if (mobOfflineBtn) {
     mobOfflineBtn.addEventListener('click', () => openOfflineHub('saved'));
   }
+
+  // Smooth scroll to top when Home link or Brand logo is clicked while already on the home page
+  const isHomePage = active === 'home' ||
+    window.location.pathname === '/' ||
+    window.location.pathname.endsWith('/index.html') ||
+    window.location.pathname === '';
+
+  if (isHomePage) {
+    const homeLinks = document.querySelectorAll('a[href="/"], a[href="index.html"], a[href="/index.html"]');
+    homeLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && link.getAttribute('target') !== '_blank') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          if (window.location.search || window.location.hash) {
+            history.replaceState(null, '', window.location.pathname.endsWith('index.html') ? 'index.html' : '/');
+          }
+        }
+      });
+    });
+  }
 }
 
 /** Re-highlight a navbar link by exact href (used by destinations.html for ?type= tabs). */

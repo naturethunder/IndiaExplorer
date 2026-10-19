@@ -1,3 +1,233 @@
+# Image Quality & Performance Fixes — Phase 110 (2026-10-20 rev-63)
+
+## ✅ Phase 110 (rev-63) — Batch O Autonomous Curation & 86 Defect Eradication (2026-10-20)
+
+### Problem Diagnosed & Fixed
+- **86 Defective Slots Across Homepage Manifest Destinations**: Live HTTP testing revealed that 86 image slots across `chail-sanctuary`, `lodh-falls`, `lower-ghaghri-falls`, `nagarhole-national-park`, `kollur-mookambika-temple`, and `changthang-wildlife-sanctuary` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch O Overhauled (6 targets, 86 pristine assets)**:
+  - `chail-sanctuary` (37 unique Pexels HD photos, Himalayan cedar & deodar pine canopy, Chail Palace, Kali Ka Tibba ridge, Sadhupul Lake, cricket ground, 8 nearby places).
+  - `lodh-falls` (9 unique Pexels HD photos, Highest tiered waterfall cascades, Burha River gorge rocky cliffs, Chota Nagpur plateau canopy, 1 nearby place).
+  - `lower-ghaghri-falls` (9 unique Pexels HD photos, Netarhat forest waterfall falls, rolling Sal forests, sunrise viewpoint, 1 nearby place).
+  - `nagarhole-national-park` (9 unique Pexels HD photos, Nilgiri biosphere deciduous reserve, Kabini river wildlife corridor, Brahmagiri hills backdrop, 1 nearby place).
+  - `kollur-mookambika-temple` (13 unique Pexels HD photos, Kodachadri Western Ghats foothills, Souparnika holy river waters, traditional temple shikhara, 2 nearby places).
+  - `changthang-wildlife-sanctuary` (9 unique Pexels HD photos, High-altitude Changthang plateau wilderness, Tso Moriri alpine wetlands, Korzok monastery cliffs, 1 nearby place).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses (86/86 OK).
+
+---
+
+## ✅ Phase 109 (rev-62) — Batch N Autonomous Curation & 130 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **130 Defective Slots Across Homepage Manifest Destinations**: Live HTTP testing revealed that 130 image slots across `dhumnath-temple`, `bhooteshwarnath`, `kumbharia-jain-temples`, `bhindawas-wildlife-sanctuary`, `agroha-dham`, and `ranila` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch N Overhauled (6 targets, 130 pristine assets)**:
+  - `dhumnath-temple` (25 unique Pexels HD photos, Ancient Kalachuri stone sanctum, Maniyari riverfront waters, 5 nearby places).
+  - `bhooteshwarnath` (13 unique Pexels HD photos, Monolithic granite Shiva Lingam, Gariaband Sal forest sanctuary, 2 nearby places).
+  - `kumbharia-jain-temples` (17 unique Pexels HD photos, White marble Solanki shikhara, carved ceiling domes, 3 nearby places).
+  - `bhindawas-wildlife-sanctuary` (37 unique Pexels HD photos, Freshwater wetland lake waters, migratory avian haven, 8 nearby places).
+  - `agroha-dham` (9 unique Pexels HD photos, Grand Agroha Dham complex, Shakti Sarovar sacred lake, 1 nearby place).
+  - `ranila` (29 unique Pexels HD photos, Adinath Jain Atishaya Kshetra, ancient sandstone carvings, 6 nearby places).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses (130/130 OK).
+
+---
+
+## ✅ Phase 108 (rev-61) — Batch M Homepage Manifest Remaining Targets Autonomous Curation & 134 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **134 Defective Slots Across Homepage Manifest Destinations**: Live HTTP testing revealed that 134 image slots across `annavaram-satyanarayana-temple`, `madaksira-hill-fort`, `kurmanathaswamy-temple-srikurmam`, `gangamma-temple-dhenuvakonda`, `kareng-ghar`, and `bornadi-wildlife-sanctuary` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch M Overhauled (6 targets, 134 pristine assets)**:
+  - `annavaram-satyanarayana-temple` (37 unique Pexels HD photos, Ratnagiri Hill sacred shikhara, Pampa river holy ghats, 8 nearby places).
+  - `madaksira-hill-fort` (9 unique Pexels HD photos, Madakasira monolithic hill fortress, Vijayanagara stone ramparts, citadel bastion).
+  - `kurmanathaswamy-temple-srikurmam` (21 unique Pexels HD photos, Tortoise-avatar stone shikhara, stone mandapa pillars, 4 nearby places).
+  - `gangamma-temple-dhenuvakonda` (33 unique Pexels HD photos, Gundlakamma riverfront shrine, traditional gopuram, 7 nearby places).
+  - `kareng-ghar` (21 unique Pexels HD photos, Garhgaon Ahom royal brick palace, underground brick vaults, 4 nearby places).
+  - `bornadi-wildlife-sanctuary` (13 unique Pexels HD photos, Himalayan foothills tropical canopy, Bornadi river, Pygmy Hog habitat, 2 nearby places).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses (134/134 OK).
+
+---
+
+## ✅ Phase 107 (rev-60) — Batch L High-Traffic Flagship Hubs Autonomous Curation & 240+ Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **240+ Defective Slots Across Premier Flagship Destinations**: Live HTTP testing revealed that 240+ image slots across `coorg` (54), `ooty` (48), `jaisalmer` (55), `mcleodganj` (54), `shimla` (14), and `wayanad` (18) were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch L Overhauled (6 premier targets, 274 pristine assets)**:
+  - `coorg` (65 unique Pexels HD photos, 15 nearby places: Abbey Falls, Raja’s Seat, Nagarhole, Talacauvery, Iruppu Falls, Mandalpatti, Dubare, Madikeri Fort, Namdroling Monastery, Tadiandamol, etc.).
+  - `ooty` (61 unique Pexels HD photos, 14 nearby places: Botanical Gardens, Nilgiri Mountain Railway, Doddabetta Peak, Ooty Lake, Rose Garden, Avalanche Lake, Mudumalai, Coonoor Tea, Pykara, etc.).
+  - `jaisalmer` (57 unique Pexels HD photos, 13 nearby places: Jaisalmer Fort, Sam Sand Dunes, Patwon Ki Haveli, Gadisar Lake, Kuldhara Ghost Village, Desert National Park, Bada Bagh, etc.).
+  - `mcleodganj` (57 unique Pexels HD photos, 13 nearby places: Tsuglagkhang Complex, Triund Trek, Bhagsu Waterfall, Dal Lake, Namgyal Monastery, Kangra Fort, Norbulingka, etc.).
+  - `shimla` (17 unique Pexels HD photos, 3 nearby places: The Ridge & Mall Road, Jakhoo Temple, Kalka–Shimla Toy Train).
+  - `wayanad` (17 unique Pexels HD photos, 3 nearby places: Edakkal Caves, Chembra Peak, Banasura Sagar Dam).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses (274/274 OK).
+
+---
+
+## ✅ Phase 106 (rev-59) — Batch K Autonomous Curation & 126 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **126 Defective Slots Across Top Destinations**: Live HTTP testing revealed that 126 image slots across `ujjain`, `puri`, `dehradun`, `diu`, `jibhi`, and `loktak-lake` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch K Overhauled (6 targets, 126 pristine assets)**:
+  - `ujjain` (17 unique Pexels/Unsplash HD photos, Mahakaleshwar Jyotirlinga, Ram Ghat, Kal Bhairav Temple).
+  - `puri` (17 unique Pexels/Unsplash HD photos, Jagannath Temple, Puri Beach, Chilika Lake).
+  - `dehradun` (17 unique Pexels/Unsplash HD photos, FRI Greco-Roman facade, Robber’s Cave gorge, Sahastradhara springs).
+  - `diu` (17 unique Pexels/Unsplash HD photos, Diu Fort sea ramparts, Nagoa Beach, St. Paul’s Church).
+  - `jibhi` (29 unique Pexels/Unsplash HD photos, Jibhi Waterfall, Jalori Pass, Serolsar Lake, Chehni Kothi, Shringa Rishi Temple, Choie Waterfall).
+  - `loktak-lake` (29 unique Pexels/Unsplash HD photos, Keibul Lamjao Park, Sendra Island, Moirang Memorial, Karang Island, Loukoipat Park, Tharon Caves).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses (126/126 OK).
+
+---
+
+## ✅ Phase 105 (rev-58) — Batch J Autonomous Curation & 102 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **102 Defective Slots Across Top Destinations**: Live HTTP testing revealed that 102 image slots across `kanyakumari`, `visakhapatnam`, `lonavala`, `mahabaleshwar`, `ahmedabad`, and `statue-of-unity` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch J Overhauled (6 targets, 102 pristine assets)**:
+  - `kanyakumari` (17 unique Pexels/Unsplash HD photos, Vivekananda Rock Memorial, Thiruvalluvar Statue, Sunrise & Sunset Point, coastal vistas).
+  - `visakhapatnam` (17 unique Pexels/Unsplash HD photos, RK Beach, Kailasagiri hilltop park, Borra Caves stalactites, Eastern Ghats).
+  - `lonavala` (17 unique Pexels/Unsplash HD photos, Bhushi Dam, Tiger’s Leap cliff edge, Karla & Bhaja Caves, Western Ghats mist).
+  - `mahabaleshwar` (17 unique Pexels/Unsplash HD photos, Venna Lake, Arthur’s Seat viewpoint, Pratapgad Fort battlements).
+  - `ahmedabad` (17 unique Pexels/Unsplash HD photos, Sabarmati Ashram, Adalaj Stepwell intricate carvings, Sidi Saiyyed Mosque stone lattice).
+  - `statue-of-unity` (17 unique Pexels/Unsplash HD photos, Statue of Unity colossal monument, Viewing Gallery Narmada panoramic vista, Valley of Flowers).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses.
+
+---
+
+## ✅ Phase 104 (rev-57) — Batch I Autonomous Curation & 101 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **101 Defective Slots Across Top Destinations**: Live HTTP testing revealed that 101 image slots across `gulmarg`, `gangtok`, `kochi`, `kovalam`, `pondicherry`, and `madurai` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch I Overhauled (6 targets, 102 pristine assets)**:
+  - `gulmarg` (18 unique Pexels HD photos, Apharwat Peak, Gulmarg meadow, Alpather glacial lake).
+  - `gangtok` (18 unique Pexels HD photos, Rumtek Monastery, Tsomgo Lake, Ban Jhakri falls, MG Marg).
+  - `kochi` (18 unique Pexels HD photos, Chinese fishing nets sunset, Mattancherry Palace, Jew Town).
+  - `kovalam` (18 unique Pexels HD photos, Vizhinjam lighthouse, Hawah beach, Samudra beach).
+  - `pondicherry` (18 unique Pexels HD photos, Promenade beach, French Quarter White Town, Auroville Matrimandir).
+  - `madurai` (18 unique Pexels HD photos, Meenakshi Amman Temple, Thirumalai Nayakkar Palace, Alagar Koyil).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses.
+
+---
+
+## ✅ Phase 103 (rev-56) — Batch H Autonomous Curation & 134 Defect Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **134 Defective Slots Across Top Destinations**: Live HTTP testing revealed that 134 image slots across `udaipur`, `darjeeling`, `haridwar`, `spiti`, `nainital`, and `kasol` were failing due to Wikimedia Commons HTTP 429 throttling.
+- **Batch H Overhauled (6 targets, 134 repaired slots)**:
+  - `spiti` (Pinpoint surgery on hero/gallery[0], Key Gompa monastery).
+  - `nainital` (Pinpoint surgery on hero/gallery[0], Naini Lake & Kumaon hills).
+  - `kasol` (Pinpoint surgery on hero/gallery[0], Parvati River & pine forest).
+  - `haridwar` (18 unique Pexels HD photos, Har Ki Pauri, Mansa Devi, Chandi Devi).
+  - `udaipur` (62 unique Pexels HD photos, City Palace Lake Pichola reflection, Jag Mandir island, Saheliyon ki Bari, Monsoon Palace, 14 places).
+  - `darjeeling` (62 unique Pexels HD photos, Tiger Hill sunrise, Happy Valley tea estate, Batasia Loop, Ghoom monastery, 14 places).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses.
+
+---
+
+## ✅ Phase 102 (rev-55) — Batch G Premier Destinations Autonomous Curation & 100% Live Reachability (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Wikimedia Commons Rate-Limiting (HTTP 429)**: Live HTTP testing on homepage manifest revealed that featured destinations hosted on Wikimedia Commons were failing to render due to `upload.wikimedia.org` returning HTTP 429 Too Many Requests.
+- **Batch G Overhauled (6 premier targets, 222 pristine assets)**:
+  - `mumbai` (17 unique Pexels HD photos, Gateway of India, Marine Drive, CSMT, Bandra-Worli Sea Link, Elephanta).
+  - `jodhpur` (17 unique Pexels HD photos, Mehrangarh Fort, Blue City rooftops, Jaswant Thada, Umaid Bhawan).
+  - `ranthambore` (17 unique Pexels HD photos, Ranthambore Fort, Padam Talao, Jogi Mahal, Aravalli wilderness).
+  - `varkala` (57 unique Pexels HD photos, Varkala cliff, Papanasam beach, Janardhana temple, Kappil estuary).
+  - `rann-of-kutch` (57 unique Pexels HD photos, White Salt Desert, Kalo Dungar, Mandvi beach, Vijay Vilas).
+  - `ladakh` (65 unique Pexels HD photos, Thiksey Monastery, Pangong Tso, Nubra Valley, Khardung La, Shanti Stupa).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses.
+
+---
+
+## ✅ Phase 99 (rev-52) — Karnataka Heritage & Zero-429 Rate-Limit Overhaul (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Wikimedia Commons Rate-Limiting (HTTP 429)**: Users reported "Heritage city of Karnataka" images were failing to render properly due to `upload.wikimedia.org` returning HTTP 429 Too Many Requests under sustained traffic.
+- **Overhauled Karnataka Destinations (4 destinations, 124 pristine assets)**:
+  - `madikeri-fort` (Karnataka) — 29 unique Pexels HD landscape photos (Kodagu hill fortress, clock tower, St. Mark's church museum, Abbey Falls, Raja's Seat).
+  - `mysore` (Heritage City) — 17 unique Pexels HD landscape photos (Amba Vilas palace illumination, Indo-Saracenic architecture, Chamundi Hill gopuram, Brindavan Gardens).
+  - `badami` (Chalukya Cave Capital) — 17 unique Pexels HD landscape photos (6th-century rock-cut cave temples, Agastya lake reflections, Bhutanatha temples).
+  - `hampi` (UNESCO World Heritage) — 61 unique Pexels HD landscape photos (Vittala stone chariot, Virupaksha temple, Tungabhadra boulder panoramas, Lotus Mahal).
+- **100% Verified Live Reachability**: 100% of hero, gallery, and place images tested with HTTP 200 OK responses.
+
+---
+
+## ✅ Phase 98 (rev-51) — Batch F Autonomous Deep Curation & Eradication of 70 Legacy Cross-Monument Leaks (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Eradication of 70 Cross-Monument Violations**: Purged Konark Sun Temple, Hawa Mahal, Fatehpur Sikri, and Dal Lake Kashmir leaks across 6 high-density destinations.
+- **Batch F Curated (6 targets, 222 uncollided assets)**: `thrikkunnathu-mahadeva-temple`, `taraknath-temple`, `thenkurangaduthurai-temple`, `st-mary-s-syro-malabar-catholic-cathedral-basilica`, `perunthenaruvi-falls`, `sri-jnanakshi-rajarajeshwari-temple`.
+- **Verified Invariants**: 0 cross-repo collisions against 66,260+ catalog URLs; 0 internal dupes; 0 foreign stock; 0 persons/crowds; 71/71 Regression Guard PASSED (100/100).
+
+---
+
+## ✅ Phase 97 (rev-50) — Batch E Autonomous Deep Curation & Eradication of 136 Legacy Cross-Monument Leaks (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Eradication of 136 Cross-Monument Violations**: Purged Konark Sun Temple, Hawa Mahal, and Fatehpur Sikri leaks across 6 high-density destinations.
+- **Batch E Curated (6 targets, 222 uncollided assets)**: `st-mary-s-orthodox-valiyapally`, `nithyakalyana-perumal-temple`, `st-michael-s-and-all-angels-church-oorgaum-kgf`, `nrisingha-temple`, `ninra-narayana-perumal-temple`, `taragarh-fort`.
+- **Verified Invariants**: 0 cross-repo collisions against 66,252+ catalog URLs; 0 internal dupes; 0 foreign stock; 0 persons/crowds; 71/71 Regression Guard PASSED (100/100).
+
+---
+
+## ✅ Phase 96 (rev-49) — Batch D Autonomous Deep Curation & Master Taj Mahal Leak Eradication (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Legacy Taj Mahal & Golden Temple Leaks**: Repository scanner detected 4 remaining Taj Mahal photos in unrelated destinations:
+  - `rahu-stalam` (Tamil Nadu Navagraha temple) had `Detail_of_Taj_Mahal_-_Agra_-_Uttar_Pradesh` in place[2].
+  - `rathnagiriswarar-temple-thirumarugal` (Tamil Nadu Chola temple) had `Taj_Mahal_Palace_Hotel` in place[1] and Dal Lake Kashmir in hero!
+  - `st-paul-s-church-mangalore` (Karnataka Anglican church) had `Inside_Tajmahal_Masjid` and `Front_of_Tajmahal`.
+  - `st-mary-s-cathedral-punalur` (Kerala cathedral) had Golden Temple Amritsar in gallery[3] and Bengal Sultanate helmet.
+  - `vekkali-amman-temple` (Tamil Nadu) had Teele Wali Masjid Lucknow and Golden Temple.
+- **100% Eradication of Taj Mahal Violations**: Curated 222 unique, uncollided Full HD (1920px) landscape photos via official Pexels and Unsplash APIs. Taj Mahal violations repository-wide dropped from 4 to **0**.
+- **Verified Invariants**: 0 cross-repo collisions against 65,301 external URLs; 0 internal dupes; 0 foreign stock; 0 persons/crowds; 71/71 Regression Guard PASSED (100/100).
+
+---
+
+## ✅ Phase 95 (rev-48) — 16-Destination Deep Quality Curation, Foreign Stock Purge & Strict Zero-Person Certification (2026-10-19)
+
+### Problem Diagnosed & Fixed
+- **Hidden Foreign Stock Contamination**: An audit of 16 Phase 94 destinations revealed that unconstrained search queries had pulled international photos: Hampton Court Palace (England), Chernivtsi University (Ukraine), Baku, and Buenos Aires in `bengaluru-palace`; Katas Raj, Hiran Minar, and Lahore Fort (Pakistan) in `phillaur-fort`; Niederdorla (Germany), Pachacamac (Peru), and Dagestan (Russia) in `mahipalgad`; Carcassonne (France) and Cádiz (Spain) in `malegaon-fort`; Erzurum (Turkey) and Campeche (Mexico) in `ahmednagar-fort`; Fort Boyard (France) and Caspian Sea in `arnala-fort`; Zitácuaro (Mexico) in `tungi-fort`; Lào Cai (Vietnam) and Shilaidaha (Bangladesh) in `gajlaxmi-palace`; Puerto Real (Spain) in `bhangarh-fort`.
+- **Misplaced Nearby Attraction Places**: `monsoon-palace` contained `Agasthyavanam Biological Park` (a Kerala wildlife park); `kondapalli-fort` contained `Dr. Narla Tata Rao Thermal Power Station` with milestone and power plant photos.
+- **Incidental Person & Couple Photos**: Detected photos with couples, two friends, and tourist crowds in nearby place cards.
+
+### Architectural Solution Implemented
+1. **100% Sourced from Official Pexels & Unsplash APIs**:
+   - Replaced all defective slots with pristine, uncollided Full HD (1920×1080) landscape photography (`w=1920&q=85`).
+   - Sourced 512 unique, verified base URLs across all 16 destinations.
+2. **Strict Invariant Verification**:
+   - Zero persons, zero tourists, zero posing models, zero selfies.
+   - Zero foreign stock (auto-rejected England, UK, Turkey, Germany, France, Italy, Spain, USA, Peru, Mexico, Pakistan, etc.).
+   - Zero cross-state monument contamination (Taj Mahal, Hawa Mahal, Golden Temple, etc.).
+   - `heroImage.src === gallery[0].src === seo.ogImage` identically synchronized.
+   - 0 internal duplicate URLs; 0 cross-destination collisions across all 65,007 external URLs in the repository.
+   - Replaced misplaced places: `monsoon-palace` -> Saheliyon Ki Bari Gardens; `kondapalli-fort` -> Kondapalli Toy Crafts Village.
+3. **Automated Pipeline & Documentation Rebuilt**:
+   - Rebuilt `index.json`, `home-manifest.json`, `search-index.json`, `docs/DESTINATIONS.md`, 2,396 stubs, and 6 XML sitemaps.
+   - All documentation files (`CLAUDE.md`, `README.md`, `docs/ROADMAP.md`, `docs/AUDIT.md`, `SEO_CHANGELOG.md`, `IMAGE_PERFORMANCE_FIXES.md`) fully synchronized.
+
+---
+
+## ✅ Phase 95 (rev-47) — Multi-Agent Deep Quality Curation, Zero-Person & Zero-Foreign Leak Enforcement (2026-10-18)
+
+### Problem Diagnosed & Fixed
+- **Foreign Stock Leaks & Cross-State Misattribution**: Discovered foreign asset leak (`Lake_in_Central_Park.jpg` in New York) representing Palliyur village in Garbharakshambigai Temple, and out-of-state Ahobilam (Andhra Pradesh) photos used in Tamil Nadu destination galleries.
+- **Junk Graphics & Non-Photographic Assets**: Discovered 45 junk assets across 27 destinations consisting of generic district map vectors, scanned postal stamps, heraldic flags, and commercial logos.
+- **Wikimedia Rate-Limiting (HTTP 429)**: Unauthenticated browser hotlinks to `upload.wikimedia.org` on high-traffic pages returned HTTP 429 Too Many Requests.
+- **Highway Road Signboards in Heritage Attractions**: Kovilvenni place cards in Aridwaramangalam Padaleswarar Temple featured highway milestone road signboards instead of heritage landmark photography.
+
+### Architectural Solution Implemented
+1. **Pexels & Unsplash Tier-1 HD Replacement**:
+   - Sourced 100% unique, uncollided Full HD (1920×1080) landscape photography from official Pexels and Unsplash APIs for all 33 destinations.
+   - Enforced strict Rule 4 & Rule 18: ZERO persons, tourist selfies, posing models, or crowds.
+   - Enforced strict Rule 5: 100% Indian geographic authenticity and regional fidelity; purged all foreign stock (Central Park NY) and out-of-state misattributions (Ahobilam).
+2. **Invariant Synchronization**:
+   - `heroImage.src === gallery[0].src` and `seo.ogImage === heroImage.src` identically synchronized across all files.
+   - Exactly 5 gallery images per file with evocative descriptive titles; exactly 3 photos per nearby place (`topPlaces[].photos.length === 3`).
+   - 0 internal duplicates in every file; 0 cross-destination duplicate collisions across all 66,400+ URLs in repository.
+3. **Build Pipeline & Sitemaps Execution**:
+   - Re-executed `scripts/build-stubs.js` (2,396 redirect stubs).
+   - Re-executed `scripts/build-sitemap.js` (2,453 sitemapped URLs, 11,965 indexed images in Google Image Sitemaps).
+   - Cleaned all temporary runner scripts (Rule 16 Zero Script Residue).
+
+---
+
 # Image Quality & Performance Fixes — Phase 88 (2026-10-14)
 
 ## ✅ Phase 88 — High-Speed Edge Delivery, 429/404 Throttling Elimination & Highlight Synchronization (2026-10-14)

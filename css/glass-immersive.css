@@ -273,12 +273,14 @@ body.glass-immersive .category-strip {
 body.glass-immersive #category-strip.carousel-row {
   display: flex !important;
   flex-direction: row !important;
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
   align-items: stretch !important;
   width: 100% !important;
-  gap: 0.65rem !important;
+  gap: 0.75rem !important;
   overflow-x: auto !important;
   scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding: 0.25rem 0.1rem 0.6rem !important;
 }
 
 body.glass-immersive #category-strip.carousel-row::-webkit-scrollbar {
@@ -286,24 +288,42 @@ body.glass-immersive #category-strip.carousel-row::-webkit-scrollbar {
 }
 
 body.glass-immersive #category-strip.carousel-row>* {
-  flex: 1 1 0px !important;
-  min-width: 86px !important;
-  max-width: 100% !important;
+  flex: 0 0 114px !important;
+  width: 114px !important;
+  min-width: 114px !important;
+  max-width: 114px !important;
+  flex-shrink: 0 !important;
+}
+
+@media (min-width: 1440px) {
+  body.glass-immersive #category-strip.carousel-row {
+    justify-content: space-between !important;
+    gap: 0.65rem !important;
+  }
+  body.glass-immersive #category-strip.carousel-row>* {
+    flex: 1 1 0px !important;
+    width: auto !important;
+    min-width: 100px !important;
+    max-width: 100% !important;
+    flex-shrink: 1 !important;
+  }
 }
 
 body.glass-immersive .category-chip {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   height: 100% !important;
-  padding: 0.75rem 0.4rem !important;
+  min-height: 138px !important;
+  padding: 0.85rem 0.45rem 0.75rem !important;
   border-radius: 1.15rem !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
   background: rgba(255, 255, 255, 0.035) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   text-decoration: none !important;
+  box-sizing: border-box !important;
 }
 
 body.glass-immersive .category-chip:hover {
@@ -333,10 +353,19 @@ body.glass-immersive .category-chip:hover .category-chip-icon {
 html:not([data-theme="light"]) body.glass-immersive .category-chip-label {
   color: #ffffff !important;
   font-weight: 700 !important;
-  font-size: 0.82rem !important;
-  white-space: nowrap !important;
+  font-size: 0.80rem !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
   text-align: center !important;
-  line-height: 1.2 !important;
+  line-height: 1.25 !important;
+  min-height: 2.5em !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 2px !important;
 }
 
 html:not([data-theme="light"]) body.glass-immersive .category-chip-count {
@@ -2814,6 +2843,12 @@ html[data-theme="light"] body.glass-immersive .hero-title {
   text-shadow: 0 3px 18px rgba(0, 0, 0, 0.8) !important;
 }
 
+html[data-theme="light"] body.glass-immersive #heroTagline {
+  color: #FEF3C7 !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
 /* Calligraphy Kickers in Light Mode */
 html[data-theme="light"] body.glass-immersive .calligraphy-kicker {
   font-family: 'Alex Brush', 'Pinyon Script', cursive !important;
@@ -3410,6 +3445,17 @@ html[data-theme="light"] body.glass-immersive .category-chip-label {
   font-weight: 700 !important;
   font-size: 0.82rem !important;
   letter-spacing: 0.01em !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  text-align: center !important;
+  line-height: 1.25 !important;
+  min-height: 2.5em !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 100% !important;
+  padding: 0 3px !important;
 }
 
 html[data-theme="light"] body.glass-immersive .category-chip:hover .category-chip-label {

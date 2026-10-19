@@ -99,6 +99,10 @@ export function optimizeImageUrl(url, width = 800) {
       return url;
     }
   }
+  // 4. Flickr photo: Use _b.jpg (1024px HD) which is guaranteed to exist on Flickr static CDN
+  if (url.includes('staticflickr.com/')) {
+    return url.replace(/_[kzoqmst]\.jpg/i, '_b.jpg');
+  }
   return url;
 }
 

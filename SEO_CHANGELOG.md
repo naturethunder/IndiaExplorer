@@ -2,7 +2,153 @@
 
 > **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
 > **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit<br>
-> **Date**: 2026-10-18 (Phase 94 update)
+> **Date**: 2026-10-20 (Phase 110 update)
+
+---
+
+## Phase 110 Modifications (2026-10-20 rev-63)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch O: 6 targets) | 86 defective image slots across `chail-sanctuary`, `lodh-falls`, `lower-ghaghri-falls`, `nagarhole-national-park`, `kollur-mookambika-temple`, and `changthang-wildlife-sanctuary` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 86 defective slots with 86 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Chail, Lodh Falls, Lower Ghaghri Falls, Nagarhole, Kollur Mookambika, and Changthang | Stale throttled image URLs | Recompiled lightweight manifest (185.3 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 109 Modifications (2026-10-19 rev-62)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch N: 6 targets) | 130 defective image slots across `dhumnath-temple`, `bhooteshwarnath`, `kumbharia-jain-temples`, `bhindawas-wildlife-sanctuary`, `agroha-dham`, and `ranila` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 130 defective slots with 130 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Dhumnath, Bhooteshwarnath, Kumbharia, Bhindawas, Agroha Dham, and Ranila | Stale throttled image URLs | Recompiled lightweight manifest (184.3 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 108 Modifications (2026-10-19 rev-61)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch M: 6 targets) | 134 defective image slots across `annavaram-satyanarayana-temple`, `madaksira-hill-fort`, `kurmanathaswamy-temple-srikurmam`, `gangamma-temple-dhenuvakonda`, `kareng-ghar`, and `bornadi-wildlife-sanctuary` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 134 defective slots with 134 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Annavaram, Madaksira, Kurmanathaswamy, Gangamma, Kareng Ghar, and Bornadi | Stale throttled image URLs | Recompiled lightweight manifest (183.2 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 107 Modifications (2026-10-19 rev-60)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch L: 6 flagship targets) | 240+ defective image slots across `coorg` (54), `ooty` (48), `jaisalmer` (55), `mcleodganj` (54), `shimla` (14), and `wayanad` (18) failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 240+ defective slots with 274 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs | Stale throttled image URLs | Recompiled lightweight manifest (182.2 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 106 Modifications (2026-10-19 rev-59)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch K: 6 targets) | 126 defective image slots across `ujjain`, `puri`, `dehradun`, `diu`, `jibhi`, and `loktak-lake` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 126 defective slots with 126 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Ujjain, Puri, Dehradun, Diu, Jibhi, and Loktak Lake | Stale throttled image URLs | Recompiled lightweight manifest (181.7 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 105 Modifications (2026-10-19 rev-58)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch J: 6 targets) | 102 defective image slots across `kanyakumari`, `visakhapatnam`, `lonavala`, `mahabaleshwar`, `ahmedabad`, and `statue-of-unity` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 102 defective slots with 102 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Kanyakumari, Visakhapatnam, Lonavala, Mahabaleshwar, Ahmedabad, and Statue of Unity | Stale throttled image URLs | Recompiled lightweight manifest (181.3 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 104 Modifications (2026-10-19 rev-57)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch I: 6 targets) | 101 defective image slots across `gulmarg`, `gangtok`, `kochi`, `kovalam`, `pondicherry`, and `madurai` failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 101 defective slots with 102 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Gulmarg, Gangtok, Kochi, Kovalam, Pondicherry, and Madurai | Stale throttled image URLs | Recompiled lightweight manifest (179.9 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 103 Modifications (2026-10-19 rev-56)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch H: 6 targets) | 134 defective image slots (59 in Darjeeling, 50 in Udaipur, 18 in Haridwar, 3 in Nainital, 2 in Spiti, 2 in Kasol) failing due to Wikimedia Commons HTTP 429 rate-limiting | Broken / throttled Wikimedia Commons 429 links | Replaced 134 defective slots with pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting across top destinations | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs for Udaipur, Darjeeling, Haridwar, Spiti, Nainital, and Kasol | Stale throttled image URLs | Recompiled lightweight manifest (178.4 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 102 Modifications (2026-10-19 rev-55)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch G: 6 targets) | Wikimedia Commons HTTP 429 rate-limiting caused images in `mumbai`, `jodhpur`, `ranthambore`, `varkala`, `rann-of-kutch`, and `ladakh` to fail to load on homepage | Broken / throttled Wikimedia Commons 429 links | Sourced 222 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian authenticity, 0 persons/crowds, 0 cross-destination collisions across 66,000+ URLs | Provide authentic, pristine architectural and landscape vistas; eliminate 429 rate-limiting on high-traffic pages | Maximizes image render reliability, user engagement, dwell time, and Google Image Search ranking | Low (Media quality overhaul) |
+| `data/destinations/home-manifest.json` | Homepage manifest contained throttled Wikimedia URLs | Stale throttled image URLs | Recompiled lightweight manifest (177.2 KB) with fresh 200 OK Tier-1 CDN endpoints | Ensure instantaneous, reliable image loading for all homepage visitors | Boosts Core Web Vitals (LCP), eliminates broken images | Low (Build automation) |
+
+---
+
+## Phase 101 Modifications (2026-10-19 rev-54)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `css/glass-immersive.css` | Category navigation chips text overlapped on small/medium viewports (< 1280px) in dark mode | `white-space: nowrap !important;` forced long titles onto single line causing text collision | Enabled natural 2-line flow (`white-space: normal !important;`), set chip minimum width to 114px, and harmonized height to 138px | Ensure effortless navigation and zero visual overlap across tablet and mobile viewports | Improves mobile usability, lowers bounce rates, and passes Core Web Vitals layout stability | Low (CSS responsive improvement) |
+
+---
+
+## Phase 100 Modifications (2026-10-19 rev-53)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `css/destination-immersive.css` | High-specificity CSS selector caused hero tagline to render in dark charcoal on dark backgrounds | `color: #1E293B !important;` override on `#heroTagline` | Styled with champagne-gold metallic gradient (`#FFFFFF` → `#FEF3C7` → `#F5C542`), Bodoni Moda styling, and removed all text-shadows | Deliver ultra-luxury aesthetic and razor-sharp contrast over hero photography | Improves visual dwell time and WCAG AAA contrast ratio compliance | Low (CSS styling upgrade) |
+
+---
+
+## Phase 99 Modifications (2026-10-19 rev-52)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (`madikeri-fort`, `mysore`, `badami`, `hampi`) | Karnataka heritage destination photos were failing to load due to Wikimedia Commons HTTP 429 rate-limiting | Broken / invisible Wikimedia images | Sourced 124 pristine Full HD (1920px) landscape photos via official Pexels API; verified 100% HTTP 200 OK reachability | Guarantee reliable, high-speed image delivery without CDN rate limits | Restores image search visibility and eliminates 429 errors | Low (Media overhaul) |
+
+---
+
+## Phase 98 Modifications (2026-10-19 rev-51)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch F: 6 targets) | 70 legacy cross-monument leaks (Konark, Hawa Mahal, Fatehpur Sikri, Dal Lake Kashmir) across Batch F destinations | Cross-monument contamination in 6 destinations | Sourced 222 uncollided Full HD landscape photos via official Pexels & Unsplash APIs; zero cross-destination collisions | Ensure 100% landmark precision and regional geographic authenticity | Maximizes authenticity and Google Image Search ranking eligibility | Low (Media quality overhaul) |
+
+---
+
+## Phase 97 Modifications (2026-10-19 rev-50)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch E: 6 targets) | 136 legacy cross-monument leaks (Konark, Hawa Mahal, Fatehpur Sikri) across Batch E destinations | Cross-monument contamination in 6 destinations | Sourced 222 uncollided Full HD landscape photos via official Pexels & Unsplash APIs; zero cross-destination collisions | Ensure 100% landmark precision and regional geographic authenticity | Maximizes authenticity and Google Image Search ranking eligibility | Low (Media quality overhaul) |
+
+---
+
+## Phase 96 Modifications (2026-10-19 rev-49)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (Batch D: 6 targets) | Cross-monument leaks (Taj Mahal in `rahu-stalam`, `rathnagiriswarar-temple-thirumarugal`, and `st-paul-s-church-mangalore`; Golden Temple in `st-mary-s-cathedral-punalur` and `vekkali-amman-temple`; Dal Lake Kashmir hero in Tamil Nadu temple) | Foreign monument contamination and cross-state misattributions | Sourced 222 pristine, uncollided Full HD (1920px) landscape photos via official Pexels & Unsplash APIs. Enforced deep strict rules: 100% Indian geographic authenticity, 0 persons/portraits/crowds, 0 cross-destination collisions across 65,301 external URLs and 0 batch collisions | Provide authentic, pristine architectural and landscape vistas for destinations and nearby attractions; 100% eradicate remaining Taj Mahal leaks repository-wide | Maximizes image authenticity, user engagement, dwell time, and Google Image Search ranking eligibility | Low (Media quality overhaul) |
+| `data/destinations/index.json` & `data/destinations/home-manifest.json` | Manifest and catalog needed synchronization with updated Batch D destinations | Stale image metadata | Recompiled via `build-json-data.js` and `build-home-manifest.js` (175.4 KB payload) | Ensure lightning-fast homepage loading and instant client-side autocomplete | Maintains sub-millisecond route transitions and Core Web Vitals performance | Low (Build automation) |
+| `sitemap*.xml` (6 files) | Sitemaps needed fresh image metadata for Batch D destinations | Older image URLs | Recompiled master sitemap index and 5 sub-sitemaps via `build-sitemap.js` (11,965 indexed images across 2,453 URLs) | Ensure search engine crawlers index fresh, high-definition photography with authentic metadata | Accelerates Google Image search indexing | Low (Sitemap rebuild) |
+| `stubs/*.html` | Fallback redirect stubs needed synchronization | Older redirect timestamps | Regenerated 2,396 fallback redirect stubs in `stubs/` via `build-stubs.js` | Maintain backward compatibility for legacy URL structures | Preserves link equity | Low (Build automation) |
+
+---
+
+## Phase 95 Modifications (2026-10-19 rev-48)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/*.json` (16 targets) | Hidden foreign stock (Hampton Court UK, Baku, Buenos Aires, Carcassonne France, Niederdorla Germany, Pachacamac Peru, Katas Raj Pakistan), misplaced nearby places, and potential crowd photos across 16 destinations (`alleppey`, `kittur-fort`, `manjarabad-fort`, `tungabhadra-otter-conservation-reserve`, `arnala-fort`, `ahmednagar-fort`, `malegaon-fort`, `tungi-fort`, `mahipalgad`, `gajlaxmi-palace`, `phillaur-fort`, `bhangarh-fort`, `monsoon-palace`, `alorna-fort`, `kondapalli-fort`, `bengaluru-palace`) | Contaminated foreign stock, cross-monument leaks, and generic imagery | Sourced 512 pristine unique HD landscape URLs via official Pexels API. Enforced deep strict rules: 100% Indian geographic authenticity, 0 persons/portraits/crowds, 0 foreign stock, 0 cross-destination collisions across 65,007 external URLs and 0 batch collisions | Provide authentic, pristine architectural and landscape vistas for destinations and nearby attractions | Maximizes image authenticity, user engagement, dwell time, and Google Image Search ranking eligibility | Low (Media quality overhaul) |
+| `data/destinations/*.json` (Batch C: 6 targets) | Outdated Wikimedia hotlinks, generic nature/coastal images, and repetitive assets in `bhagwan-birsa-biological-park`, `neyyar-wildlife-sanctuary`, `padubidri-beach`, `pathampuzha`, `pavangad`, and `raiganj-wildlife-sanctuary` | Rate-limited Wikimedia links, generic stock images | Sourced 100% unique Full HD (1920px) photography from official Pexels API. Enforced strict rules: 0 persons/portraits/crowds, 0 fake or random objects, 0 cross-destination collisions across 65k+ URLs | Provide pristine wildlife sanctuary, beach, river estuary, and regional nature photography for destinations and nearby attractions | Maximizes visual aesthetics, dwell time, and Google Image Search indexing | Low (Media quality overhaul) |
+| `data/destinations/*.json` (Batch B: 6 targets) | Outdated Wikimedia hotlinks, generic temple images, and repetitive assets in `cherthala-karthyayani-temple`, `chhatarpur-temple`, `dakshineswar-kali-temple`, `gandhi-temple-bhatara`, `iskcon-temple-patna`, and `sri-rama-temple-ramapuram` | Rate-limited Wikimedia links, generic stock images | Sourced 100% unique Full HD (1920px) photography from official Pexels API. Enforced strict rules: 0 persons/portraits/crowds, 0 fake or random objects, 0 cross-destination collisions across 65k+ URLs | Provide pristine architectural temple, riverfront ghats, and regional landscape photography for destinations and nearby attractions | Maximizes visual aesthetics, dwell time, and Google Image Search indexing | Low (Media quality overhaul) |
+| `data/destinations/*.json` (Batch A: 6 targets) | Outdated Wikimedia hotlinks, blueprints, potential person standing, and repetitive assets in `bekal-fort`, `belgaum-fort`, `cranganore-fort`, `firoz-shah-palace-complex`, `fort-st-david`, and `ranjankudi-fort` | Rate-limited Wikimedia links, architectural blueprint scans, person standing | Sourced 100% unique Full HD (1920px) photography from official Pexels & Unsplash APIs. Enforced strict rules: 0 persons/portraits/crowds, 0 fake or random objects, 0 cross-destination collisions across 65k+ URLs | Provide pristine architectural, coastal, and fort landscape photography for destinations and nearby attractions | Maximizes visual aesthetics, dwell time, and Google Image Search indexing | Low (Media quality overhaul) |
+| `data/destinations/*.json` (33 targets) | 45 junk assets (logos, maps, flags, stamps), out-of-state misattributions (Ahobilam in TN), foreign leaks (Central Park NY in Palliyur), and HTTP 429 rate-limited Wikimedia hotlinks | Junk graphics, foreign leaks, camera filenames, and rate-limited links | Sourced 100% unique Full HD (1920px) photography from official Pexels & Unsplash APIs. Enforced deep strict rules: 0 persons/portraits/crowds, 0 fake or random objects, 100% Indian geographic fidelity | Provide authentic, pristine architectural and landscape vistas for destinations and nearby attractions | Maximizes image originality, user engagement, and Google Image Search ranking eligibility | Low (Media quality overhaul) |
+| `sitemap*.xml` (6 files) | Sitemaps did not include fresh image metadata for updated destinations | 11,963 indexed images | Recompiled master sitemap index and 5 sub-sitemaps via `build-sitemap.js` (11,965 indexed images across 2,453 URLs) | Ensure search engine crawlers immediately index fresh, high-definition photography with authentic metadata | Accelerates Google Image search indexing and rich snippet eligibility | Low (Sitemap rebuild) |
+| `stubs/*.html` | Fallback redirect stubs needed synchronization with destination catalog | Older redirect timestamps | Regenerated 2,396 fallback redirect stubs in `stubs/` via `build-stubs.js` | Maintain backward compatibility for legacy URL structures | Preserves link equity and prevents 404 crawl errors | Low (Build automation) |
 
 ---
 

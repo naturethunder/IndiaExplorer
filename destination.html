@@ -69,8 +69,8 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260916_1" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261008_phase87" />
-  <link rel="stylesheet" href="css/destination-immersive.css?v=20260928_3" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261019_phase100" />
+  <link rel="stylesheet" href="css/destination-immersive.css?v=20261019_phase100" />
   <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -130,7 +130,7 @@
           </div>
           <h1 id="heroTitle" class="font-display text-white mb-2"
             style="font-size:clamp(2.6rem,6.5vw,4.8rem);line-height:1.08;pointer-events:none"></h1>
-          <p id="heroTagline" class="text-white/90 text-base sm:text-lg max-w-2xl text-center"
+          <p id="heroTagline" class="hero-tagline-luxury max-w-2xl text-center"
             style="pointer-events:none"></p>
           <div class="dest-hero-actions flex items-center justify-center gap-3 mt-4 flex-wrap" id="destHeroActions"
             style="pointer-events:auto">
@@ -411,7 +411,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/pages/destination.js?v=20261018_phase94"></script>
+  <script type="module" src="js/pages/destination.js?v=20261018_phase100"></script>
   <!-- Bug 12 fix: noscript fallback for JS-disabled browsers -->
   <noscript>
     <style>

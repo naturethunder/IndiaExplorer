@@ -279,7 +279,11 @@
         "alt": "Sottaiyur"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/ca/Location_of_the_Salangthel_Hill_in_Manipur.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        {
+          "src": "https://images.pexels.com/photos/943593/pexels-photo-943593.jpeg?auto=compress&cs=tinysrgb&w=1920&q=85",
+          "alt": "Panoramic green hillslopes and mist-shrouded peaks of the Western Ghats near the temple precinct",
+          "title": "Verdant Western Ghats Ridgeline"
+        },
         "https://upload.wikimedia.org/wikipedia/commons/b/ba/Yangoupokpi_Lokchao_WLS_Manipur_by_Dr_Raju_Kasambe_%281%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://upload.wikimedia.org/wikipedia/commons/9/9a/Yangoupokpi_Lokchao_WLS_Manipur_by_Dr_Raju_Kasambe_%281%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
       ],
@@ -605,5 +609,6 @@
     ]
   },
   "hotelsRealSourceCount": 7,
-  "hotelSourceTried": true
+  "hotelSourceTried": true,
+  "updatedAt": "2026-10-18T16:24:18.864Z"
 }

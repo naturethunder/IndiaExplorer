@@ -7,7 +7,7 @@ trigger: always_on
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-09-27 (Phase 66).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Pexels/Unsplash only. Wikimedia Commons direct hotlinks are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
+> **Last updated: 2026-10-18 (Phase 95).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Pexels/Unsplash only. Wikimedia Commons direct hotlinks are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
 
 ---
 
@@ -279,6 +279,13 @@ Famous historical monuments, temples, forts, palaces, and geographic landmarks m
    - Zero cross-destination duplicate collisions across the 66k+ catalog index.
 
 ---
+
+
+### Additional Prohibitions & Contamination Signatures (Added Phase 95)
+- ❌ **Zero Foreign Park/Lake Leaks**: Zero foreign assets (such as `Lake_in_Central_Park.jpg` New York) assigned to Indian rural villages or delta waterways.
+- ❌ **Zero Out-of-State Monument Leaks**: Zero Andhra Pradesh temples (e.g. Ahobilam) assigned to Tamil Nadu Chola destinations, and vice versa.
+- ❌ **Zero Road Transit / Milestone Signboards**: Place cards must depict authentic architectural landmarks, temples, sacred theerthams, or natural scenery—never highway distance stones, road signs, or asphalt dividers.
+- ❌ **Zero HTTP 429 Rate-Limited Direct Hotlinks**: Replace rate-limited Wikimedia hotlinks with permanent, zero-rate-limited Pexels/Unsplash Tier-1 CDN photography.
 
 ## Rule 18 — Strict Zero-Person & Zero-Fake/Random Stock Invariant (Added Phase 73)
 

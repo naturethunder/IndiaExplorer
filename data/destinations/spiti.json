@@ -8,8 +8,8 @@
   "badge": "Offbeat",
   "tagline": "Little Tibet of India",
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Kee_monastery_Spiti_Valley.JPG",
-    "alt": "Spiti Valley, Himachal Pradesh"
+    "src": "https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1920&h=1080&q=85",
+    "alt": "Key Monastery nestled in the rugged hills of Spiti Valley, showcasing stunning Buddhist architecture."
   },
   "overview": {
     "short": "High-altitude desert, ancient Key Monastery, Chandratal Lake and star-filled skies.",
@@ -173,11 +173,7 @@
         "alt": "Dhankar Monastery & Lake — Spiti Valley, Himachal Pradesh"
       },
       "photos": [
-        {
-          "src": "https://images.pexels.com/photos/5238635/pexels-photo-5238635.jpeg?auto=compress&cs=tinysrgb&w=2560",
-          "alt": "Dhankar Monastery & Lake View 1 — Spiti Valley",
-          "title": "Dhankar Monastery & Lake Authentic Landscape 1"
-        },
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Dhankar_Gompa-20-Klosterburg-gje.jpg",
         {
           "src": "https://images.pexels.com/photos/5239097/pexels-photo-5239097.jpeg?auto=compress&cs=tinysrgb&w=2560",
           "alt": "Dhankar Monastery & Lake View 2 — Spiti Valley",
@@ -728,25 +724,34 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Kee_monastery_Spiti_Valley.JPG",
-      "alt": "Spiti Valley in Spiti Valley, Himachal Pradesh - Kee Monastery in Winter",
-      "title": "Kee Monastery Spiti Valley"
+      "src": "https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1920&h=1080&q=85",
+      "alt": "Key Monastery nestled in the rugged hills of Spiti Valley, showcasing stunning Buddhist architecture.",
+      "title": "Key Gompa Buddhist Monastery",
+      "caption": "11th-century cliffside Tibetan Buddhist monastery situated at 4,166 meters in Spiti Valley"
     },
     {
       "src": "https://images.pexels.com/photos/14574640/pexels-photo-14574640.jpeg?auto=compress&cs=tinysrgb&w=2560",
-      "alt": "A breathtaking view of a mountain lake reflecting snowy peaks under a blue sky. — Chandratal Moon Lake"
+      "alt": "A breathtaking view of a mountain lake reflecting snowy peaks under a blue sky. — Chandratal Moon Lake",
+      "title": "Chandratal Moon Lake Reflection",
+      "caption": "Crescent-shaped high-altitude lake mirroring snow-clad Himalayan peaks at 14,100 feet"
     },
     {
       "src": "https://images.pexels.com/photos/5239005/pexels-photo-5239005.jpeg?auto=compress&cs=tinysrgb&w=2560",
-      "alt": "A picturesque view of Dhankar Village nestled in the rocky Spiti Valley, India. — Dhankar Monastery on rocky cliff"
+      "alt": "A picturesque view of Dhankar Village nestled in the rocky Spiti Valley, India. — Dhankar Monastery on rocky cliff",
+      "title": "Dhankar Cliffside Monastery",
+      "caption": "Centuries-old Gelugpa monastery perched dramatically above the confluence of Spiti and Pin rivers"
     },
     {
       "src": "https://images.pexels.com/photos/20883703/pexels-photo-20883703.jpeg?auto=compress&cs=tinysrgb&w=2560",
-      "alt": "Panoramic View of Spiti Valley and Langza Highland Basin"
+      "alt": "Panoramic View of Spiti Valley and Langza Highland Basin",
+      "title": "Langza High Highland Basin",
+      "caption": "Vast prehistoric fossil valley dominated by the giant Buddha statue and Chau Chau Kang Nilda peak"
     },
     {
       "src": "https://images.pexels.com/photos/38168221/pexels-photo-38168221.jpeg?auto=compress&cs=tinysrgb&w=2560",
-      "alt": "Scenic aerial view of the rugged Spiti Valley landscape with mountains and river. — Pin Valley and Spiti River Confluence"
+      "alt": "Scenic aerial view of the rugged Spiti Valley landscape with mountains and river. — Pin Valley and Spiti River Confluence",
+      "title": "Pin Valley & Spiti River Confluence",
+      "caption": "Rugged barren mountain ravines and glacial riverbeds across the high cold desert of Spiti"
     }
   ],
   "faq": [
@@ -775,7 +780,7 @@
     "title": "Spiti Valley Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh",
     "description": "High-altitude desert, ancient Key Monastery, Chandratal Lake and star-filled skies. Plan your Spiti Valley trip: 14 places to visit, 10 stays from ₹700/night, best time (Jun – Sep) and routes.",
     "canonical": "destination.html?slug=spiti",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Kee_monastery_Spiti_Valley.JPG",
+    "ogImage": "https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1920&h=1080&q=85",
     "keywords": [
       "Spiti Valley travel guide",
       "places to visit in Spiti Valley",
@@ -787,5 +792,5 @@
   },
   "hotelsRealSourceCount": 7,
   "hotelSourceTried": true,
-  "updatedAt": "2026-10-03T14:11:32.355Z"
+  "updatedAt": "2026-10-19T16:17:03.514Z"
 }

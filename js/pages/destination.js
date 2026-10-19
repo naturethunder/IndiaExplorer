@@ -467,30 +467,55 @@ function main(dest, idx) {
   }
 
 
-  // ─── SMART BUDGET SIMULATOR STATE & ENGINE ───────────────
+  // ─── SMART BUDGET SIMULATOR STATE & ENGINE (ULTRA LUXURY SUITE) ───────────────
   let budgetPax = 'couple';     // 'solo' | 'couple' | 'family' | 'group'
-  let budgetStyle = 'moderate';  // 'backpacker' | 'moderate' | 'luxury'
-  let budgetDays = 3;           // 2 to 7
+  let budgetCustomAdults = 2;
+  let budgetCustomKids = 0;
+  let budgetStyle = 'moderate';  // 'backpacker' | 'moderate' | 'luxury' | 'ultra_luxury'
+  let budgetDays = 3;           // 1 to 14
+  let budgetCurrency = 'INR';    // 'INR' | 'USD' | 'EUR' | 'GBP' | 'AED'
+  let budgetSeason = 'standard'; // 'standard' | 'peak' | 'monsoon'
   let budgetIncludeStays = true;
   let budgetSelectedHotelIdx = -1; // -1 = auto-match by tier
   let budgetIncludeTransport = true;
   let budgetIncludeFood = true;
   let budgetIncludeEntry = true;
+  let budgetIncludeConcierge = true;
   let budgetExcludedPlaces = new Set();
   let budgetIncludeBuffer = true;
   let budgetSightsOpen = false;
+  let budgetAuditOpen = false;
+
+  const CURRENCIES = {
+    INR: { code: 'INR', symbol: '₹', rate: 1, label: 'INR (₹)' },
+    USD: { code: 'USD', symbol: '$', rate: 0.01156, label: 'USD ($)' },
+    EUR: { code: 'EUR', symbol: '€', rate: 0.01087, label: 'EUR (€)' },
+    GBP: { code: 'GBP', symbol: '£', rate: 0.00909, label: 'GBP (£)' },
+    AED: { code: 'AED', symbol: 'AED ', rate: 0.04255, label: 'AED (د.إ)' }
+  };
+
+  function formatBudgetMoney(amountInINR, currKey) {
+    const k = currKey || budgetCurrency || 'INR';
+    const c = CURRENCIES[k] || CURRENCIES.INR;
+    const val = Math.max(0, Math.round(amountInINR));
+    if (k === 'INR') {
+      return '₹' + inr(val);
+    }
+    const converted = Math.round(val * c.rate);
+    return c.symbol + converted.toLocaleString('en-US');
+  }
 
   function parseEntryFeeInfo(feeStr) {
     if (!feeStr || typeof feeStr !== 'string') return { adult: 0, kid: 0 };
     const s = feeStr.trim();
     if (/free|no entry|included|none/i.test(s)) return { adult: 0, kid: 0 };
 
-    const adultM = s.match(/(?:₹|rs\.?\s*)(\d+)\s*(?:for\s+)?(?:adults?|person|head)?/i);
-    const kidM = s.match(/(?:₹|rs\.?\s*)(\d+)\s*(?:for\s+)?(?:kids?|children|child)/i);
+    const adultM = s.match(/(?:₹|rs.?\s*)(\d+)\s*(?:for\s+)?(?:adults?|person|head|indians?)?/i);
+    const kidM = s.match(/(?:₹|rs.?\s*)(\d+)\s*(?:for\s+)?(?:kids?|children|child)/i);
     if (adultM && kidM) {
       return { adult: parseInt(adultM[1], 10), kid: parseInt(kidM[1], 10) };
     }
-    const singleM = s.match(/(?:₹|rs\.?\s*)(\d+)/i);
+    const singleM = s.match(/(?:₹|rs.?\s*)(\d+)/i);
     if (singleM) {
       const val = parseInt(singleM[1], 10);
       return { adult: val, kid: Math.round(val * 0.5) };
@@ -501,45 +526,60 @@ function main(dest, idx) {
     return { adult: 0, kid: 0 };
   }
 
-  function computeBudgetState(customPax, customStyle, customDays) {
+  function computeBudgetState(customPax, customStyle, customDays, customCurr, customSeason) {
     const pKey = customPax || budgetPax;
     const sKey = customStyle || budgetStyle;
     const dVal = typeof customDays === 'number' ? customDays : budgetDays;
+    const currKey = customCurr || budgetCurrency || 'INR';
+    const seasonKey = customSeason || budgetSeason || 'standard';
     const nights = Math.max(1, dVal - 1);
 
     const paxConfigs = {
-      solo: { adults: 1, kids: 0, total: 1, label: 'Solo Traveler', desc: '1 Adult', roomFactor: 1 },
-      couple: { adults: 2, kids: 0, total: 2, label: 'Couple', desc: '2 Adults', roomFactor: 1 },
-      family: { adults: 2, kids: 2, total: 4, label: 'Family', desc: '2 Adults, 2 Kids', roomFactor: 1.5 },
-      group: { adults: 4, kids: 0, total: 4, label: 'Group of Friends', desc: '4 Adults', roomFactor: 2 },
+      solo: { adults: 1, kids: 0, total: 1, label: 'Solo Wanderer', desc: '1 Adult Explorer', roomFactor: 1 },
+      couple: { adults: 2, kids: 0, total: 2, label: 'Couple / Duet', desc: '2 Adults', roomFactor: 1 },
+      family: { adults: 2, kids: 2, total: 4, label: 'Family Vacation', desc: '2 Adults, 2 Kids', roomFactor: 1.5 },
+      group: { adults: 4, kids: 0, total: 4, label: 'Group Entourage', desc: '4 Adults', roomFactor: 2 },
     };
     const pCfg = paxConfigs[pKey] || paxConfigs.couple;
 
     // 1. Matched Hotel & Stay Cost
     let matchedHotel = null;
     let stayTierLabel = '';
+    let stayExperienceBadge = '';
 
     if (!budgetIncludeStays) {
-      stayTierLabel = 'Excluded / Own Accommodation';
+      stayTierLabel = 'Excluded / Self-Arranged Stay';
+      stayExperienceBadge = 'Excluded';
     } else if (budgetSelectedHotelIdx >= 0 && hotels[budgetSelectedHotelIdx]) {
       matchedHotel = hotels[budgetSelectedHotelIdx];
       stayTierLabel = (matchedHotel.tier ? matchedHotel.tier.toUpperCase() : 'Selected Hotel') + ' (Custom Pick)';
+      stayExperienceBadge = 'Custom Picked';
     } else {
       if (sKey === 'backpacker') {
-        stayTierLabel = 'Hostel / Yatri Nivas';
+        stayTierLabel = 'Heritage Hostel & Yatri Nivas';
+        stayExperienceBadge = 'Nomad / Budget';
         matchedHotel = hotels.find(function (h) { return h.tier === 'cheapest'; });
         if (!matchedHotel && hotels.length) {
           matchedHotel = hotels.slice().sort(function (a, b) { return (a.priceMin || 0) - (b.priceMin || 0); })[0];
         }
       } else if (sKey === 'moderate') {
-        stayTierLabel = 'Comfort 3-Star / Boutique';
+        stayTierLabel = '3-Star Boutique & Heritage Stay';
+        stayExperienceBadge = 'Comfort / 3-Star';
         matchedHotel = hotels.find(function (h) { return h.tier === 'budget' || h.tier === 'good'; });
         if (!matchedHotel && hotels.length) {
           matchedHotel = hotels[Math.floor(hotels.length / 2)];
         }
-      } else {
-        stayTierLabel = 'Heritage Palace / 4–5 Star Luxury';
-        matchedHotel = hotels.find(function (h) { return h.tier === 'luxury' || h.tier === 'best' || h.tier === 'extra_luxury' || h.tier === 'better'; });
+      } else if (sKey === 'luxury') {
+        stayTierLabel = '4-Star Deluxe Resort & Heritage Haveli';
+        stayExperienceBadge = 'Premium / 4-Star';
+        matchedHotel = hotels.find(function (h) { return h.tier === 'better' || h.tier === 'best' || h.tier === 'luxury'; });
+        if (!matchedHotel && hotels.length) {
+          matchedHotel = hotels.slice().sort(function (a, b) { return (b.priceMin || 0) - (a.priceMin || 0); })[0];
+        }
+      } else { // ultra_luxury
+        stayTierLabel = '5-Star Royal Palace / Luxury Villa Sanctuary';
+        stayExperienceBadge = 'Ultra Luxury / 5-Star';
+        matchedHotel = hotels.find(function (h) { return h.tier === 'extra_luxury' || h.tier === 'luxury' || h.tier === 'best'; });
         if (!matchedHotel && hotels.length) {
           matchedHotel = hotels.slice().sort(function (a, b) { return (b.priceMin || 0) - (a.priceMin || 0); })[0];
         }
@@ -549,71 +589,118 @@ function main(dest, idx) {
     const baseMinPrice = (ov && ov.minPrice) ? ov.minPrice : (dest.minPrice || 900);
     let nightlyRate = 0;
     if (budgetIncludeStays) {
-      nightlyRate = matchedHotel && matchedHotel.priceMin
-        ? matchedHotel.priceMin
-        : (sKey === 'backpacker' ? Math.max(500, baseMinPrice) : (sKey === 'moderate' ? Math.max(1800, Math.round(baseMinPrice * 2.2)) : Math.max(6500, Math.round(baseMinPrice * 5))));
+      if (matchedHotel && matchedHotel.priceMin) {
+        if (sKey === 'ultra_luxury') {
+          nightlyRate = matchedHotel.priceMax ? Math.round(matchedHotel.priceMax * 1.15) : Math.max(16500, Math.round(matchedHotel.priceMin * 1.8));
+        } else if (sKey === 'luxury') {
+          nightlyRate = matchedHotel.priceMin ? matchedHotel.priceMin : Math.max(6800, Math.round(baseMinPrice * 4.5));
+        } else if (sKey === 'moderate') {
+          nightlyRate = matchedHotel.priceMin ? matchedHotel.priceMin : Math.max(2200, Math.round(baseMinPrice * 2.2));
+        } else {
+          nightlyRate = matchedHotel.priceMin ? matchedHotel.priceMin : Math.max(800, baseMinPrice);
+        }
+      } else {
+        if (sKey === 'backpacker') nightlyRate = Math.max(750, baseMinPrice);
+        else if (sKey === 'moderate') nightlyRate = Math.max(2200, Math.round(baseMinPrice * 2.2));
+        else if (sKey === 'luxury') nightlyRate = Math.max(6800, Math.round(baseMinPrice * 4.8));
+        else nightlyRate = Math.max(18500, Math.round(baseMinPrice * 9.5));
+      }
 
+      // Room multiplier & solo bed rate
       if (sKey === 'backpacker' && pKey === 'solo') {
-        nightlyRate = Math.round(nightlyRate * 0.85); // dorm / single bed rate
+        nightlyRate = Math.round(nightlyRate * 0.85);
       } else {
         nightlyRate = Math.round(nightlyRate * pCfg.roomFactor);
+      }
+
+      // Seasonality adjustment
+      if (seasonKey === 'peak') {
+        nightlyRate = Math.round(nightlyRate * 1.20);
+      } else if (seasonKey === 'monsoon') {
+        nightlyRate = Math.round(nightlyRate * 0.82);
       }
     }
     const totalStay = budgetIncludeStays ? (nightlyRate * nights) : 0;
 
-    // 2. Local Transport
+    // 2. Local Transport & Chauffeur Fleet
     let dailyTransport = 0;
     let transportDesc = '';
+    let transportVehicle = '';
     if (!budgetIncludeTransport) {
-      transportDesc = 'Own Vehicle / Walking / Excluded';
+      transportDesc = 'Own Vehicle / Walking / Excluded from estimate';
+      transportVehicle = 'Self-Arranged / Excluded';
     } else {
       if (sKey === 'backpacker') {
-        transportDesc = 'Scooter rental / shared auto / local bus';
-        if (pKey === 'solo') dailyTransport = 350;
-        else if (pKey === 'couple') dailyTransport = 500;
-        else if (pKey === 'family') dailyTransport = 750;
-        else dailyTransport = 900;
+        transportVehicle = 'Two-Wheeler / E-Auto / Local Transit';
+        transportDesc = 'Self-ride scooter rental, shared auto-rickshaw & local hop buses';
+        if (pKey === 'solo') dailyTransport = 400;
+        else if (pKey === 'couple') dailyTransport = 600;
+        else if (pKey === 'family') dailyTransport = 850;
+        else dailyTransport = 1100;
       } else if (sKey === 'moderate') {
-        transportDesc = 'Dedicated auto-rickshaw & city AC cab hops';
-        if (pKey === 'solo') dailyTransport = 750;
-        else if (pKey === 'couple') dailyTransport = 950;
-        else if (pKey === 'family') dailyTransport = 1400;
-        else dailyTransport = 1800;
-      } else {
-        transportDesc = 'Private chauffeur AC premium sedan / luxury SUV';
-        if (pKey === 'solo') dailyTransport = 2200;
-        else if (pKey === 'couple') dailyTransport = 2800;
-        else if (pKey === 'family') dailyTransport = 3600;
-        else dailyTransport = 4500;
+        transportVehicle = 'Dedicated AC Hatchback / Sedan & City Auto';
+        transportDesc = 'Dedicated city auto-rickshaw hire & AC app cab transfers';
+        if (pKey === 'solo') dailyTransport = 1100;
+        else if (pKey === 'couple') dailyTransport = 1450;
+        else if (pKey === 'family') dailyTransport = 1950;
+        else dailyTransport = 2500;
+      } else if (sKey === 'luxury') {
+        transportVehicle = 'Private Chauffeur AC Premium Sedan (Dzire / Etios)';
+        transportDesc = 'Dedicated private AC Sedan with personal chauffeur, full-day sightseeing, fuel, parking & tolls';
+        if (pKey === 'solo') dailyTransport = 3000;
+        else if (pKey === 'couple') dailyTransport = 3600;
+        else if (pKey === 'family') dailyTransport = 4600;
+        else dailyTransport = 5600;
+      } else { // ultra_luxury
+        transportVehicle = 'Royal Executive Chauffeur Fleet (Innova Crysta / Fortuner / Mercedes)';
+        transportDesc = 'Executive Luxury Chauffeur Fleet with uniformed English-speaking driver, chilled spring water, Wi-Fi, 24/7 on-call availability & all state permits';
+        if (pKey === 'solo') dailyTransport = 6500;
+        else if (pKey === 'couple') dailyTransport = 7500;
+        else if (pKey === 'family') dailyTransport = 9200;
+        else dailyTransport = 11500;
+      }
+
+      if (seasonKey === 'peak') {
+        dailyTransport = Math.round(dailyTransport * 1.15);
       }
     }
     const totalTransport = budgetIncludeTransport ? (dailyTransport * dVal) : 0;
 
-    // 3. Food & Dining
+    // 3. Food & Gastronomy
     let adultMealPerDay = 0;
     let kidMealPerDay = 0;
     let diningDesc = '';
+    let diningTier = '';
     if (!budgetIncludeFood) {
-      diningDesc = 'Self-Arranged / Excluded';
+      diningDesc = 'Self-Arranged / Excluded from estimate';
+      diningTier = 'Self-Catered / Excluded';
     } else {
       if (sKey === 'backpacker') {
-        adultMealPerDay = 450;
-        kidMealPerDay = 250;
-        diningDesc = 'Authentic local street food, thalis & tea stalls';
+        adultMealPerDay = 500;
+        kidMealPerDay = 280;
+        diningTier = 'Authentic Street & Dhaba Feasts';
+        diningDesc = 'Authentic regional thalis, street food alleys, temple prasad & local kulhad chai stalls';
       } else if (sKey === 'moderate') {
-        adultMealPerDay = 950;
-        kidMealPerDay = 550;
-        diningDesc = 'Popular local cafes, multi-cuisine family restaurants';
-      } else {
-        adultMealPerDay = 2400;
-        kidMealPerDay = 1200;
-        diningDesc = 'Fine dining, heritage rooftop & luxury hotel dining';
+        adultMealPerDay = 1200;
+        kidMealPerDay = 650;
+        diningTier = 'Curated Multi-Cuisine & Heritage Diners';
+        diningDesc = 'Curated heritage restaurants, verified multi-cuisine diners & popular local family cafes';
+      } else if (sKey === 'luxury') {
+        adultMealPerDay = 3200;
+        kidMealPerDay = 1500;
+        diningTier = 'Boutique Fine Dining & Scenic Rooftops';
+        diningDesc = 'Fine dining, scenic rooftop sunset venues, gourmet regional tasting tables & boutique hotel dining';
+      } else { // ultra_luxury
+        adultMealPerDay = 6800;
+        kidMealPerDay = 2900;
+        diningTier = 'Private Palace Degustation & Royal Banquets';
+        diningDesc = 'Royal Palace Banquets, Private Chef Tasting Degustation, Champagne Sunset High Tea & Sommelier Pairings';
       }
     }
     const dailyFood = (pCfg.adults * adultMealPerDay) + (pCfg.kids * kidMealPerDay);
     const totalFood = budgetIncludeFood ? (dailyFood * dVal) : 0;
 
-    // 4. Entry Fees & Sightseeing
+    // 4. Sightseeing, Monument Passes & VIP Concierge
     const placesToCount = dVal <= 2 ? places.slice(0, 4) : (dVal <= 4 ? places.slice(0, 6) : places);
     let sumAdultFees = 0;
     let sumKidFees = 0;
@@ -627,14 +714,31 @@ function main(dest, idx) {
       }
       includedAttractions.push({ name: p.name, fee: p.entryFee, isExcluded: isExcluded, isFree: (fee.adult === 0 && fee.kid === 0) });
     });
-    let totalEntry = 0;
-    if (budgetIncludeEntry) {
-      totalEntry = (pCfg.adults * sumAdultFees) + (pCfg.kids * sumKidFees);
-      const activeCount = includedAttractions.filter(function (a) { return !a.isExcluded; }).length;
-      if (totalEntry === 0 && activeCount > 0) {
-        totalEntry = pCfg.adults * 50; // nominal temple donation or locker charge
-      }
+
+    let baseEntryCost = (pCfg.adults * sumAdultFees) + (pCfg.kids * sumKidFees);
+    const activeCount = includedAttractions.filter(function (a) { return !a.isExcluded; }).length;
+    if (baseEntryCost === 0 && activeCount > 0) {
+      baseEntryCost = pCfg.adults * 50; // nominal temple donation or locker charge
     }
+
+    let vipGuidePerDay = 0;
+    let vipDesc = '';
+    if (sKey === 'backpacker') {
+      vipGuidePerDay = 0;
+      vipDesc = 'Self-guided trail maps & standard monument entry queues';
+    } else if (sKey === 'moderate') {
+      vipGuidePerDay = 350;
+      vipDesc = 'Audio guide headsets & digital heritage exploration passes';
+    } else if (sKey === 'luxury') {
+      vipGuidePerDay = 1600;
+      vipDesc = 'Government-certified ASI private heritage guide for major monuments';
+    } else { // ultra_luxury
+      vipGuidePerDay = 4200;
+      vipDesc = 'VIP Fast-Track priority passes (zero queuing), master historian private concierge guide, boat permits & golf carts';
+    }
+
+    const totalGuide = (budgetIncludeEntry && budgetIncludeConcierge) ? (vipGuidePerDay * dVal) : 0;
+    const totalEntry = budgetIncludeEntry ? (baseEntryCost + totalGuide) : 0;
 
     // 5. Buffer (5%)
     const subtotal = totalStay + totalTransport + totalFood + totalEntry;
@@ -661,11 +765,37 @@ function main(dest, idx) {
     // Dynamic Pro Tip
     let proTip = '';
     if (sKey === 'backpacker') {
-      proTip = '💡 Backpacker Insider Tip: Opt for local shared autos or fixed whole-day auto bookings to save up to 35% compared to booking separate short rides.';
+      proTip = 'Nomad Travel Tip: Opt for local shared autos or pre-negotiated whole-day auto hires from railway junctions to save up to 35% compared to booking separate short rides.';
     } else if (sKey === 'moderate') {
-      proTip = '💡 Moderate Saver Tip: Pre-book breakfast with your hotel stay and visit heritage attractions before 9:30 AM to skip midday lines and avoid surge taxi fares.';
+      proTip = 'Comfort Explorer Tip: Pre-book breakfast with your hotel stay and visit heritage attractions before 9:30 AM to skip midday lines and avoid peak cab surge tariffs.';
+    } else if (sKey === 'luxury') {
+      proTip = 'Premium Executive Tip: Reserve royal rooftop dinners in advance during sunset golden hours, and schedule your private AC chauffeur for effortless point-to-point transfers.';
     } else {
-      proTip = '💡 Luxury Experience Tip: Reserve royal rooftop dinners in advance during sunset hours and pre-arrange a private AC chauffeur for effortless point-to-point sightseeing.';
+      proTip = 'Ultra Luxury Concierge Tip: Request private sunrise heritage monument viewings before general public admission. Your private chauffeur will coordinate seamless luggage check-in directly with your 5-star suite butler.';
+    }
+
+    // Day-by-Day Timeline for Deep Audit
+    const dayFlow = [];
+    for (let dayNum = 1; dayNum <= dVal; dayNum++) {
+      let dayTitle = '';
+      let dayDesc = '';
+      let dayCost = 0;
+
+      if (dayNum === 1) {
+        dayTitle = 'Day 1 — Royal Arrival & Orientation';
+        dayDesc = 'Chauffeur pickup at airport/station, check-in, sunset viewpoint stroll & welcome evening dining.';
+        dayCost = Math.round((nightlyRate) + (dailyTransport * 0.9) + (dailyFood * 0.85) + (baseEntryCost * 0.2));
+      } else if (dayNum === dVal) {
+        dayTitle = 'Day ' + dayNum + ' — Heritage Bazaars & Departure';
+        dayDesc = 'Morning crafts shopping, souvenir trail, royal high tea & executive chauffeur transfer for departure.';
+        dayCost = Math.round((dailyTransport * 0.9) + (dailyFood * 0.8) + (baseEntryCost * 0.1));
+      } else {
+        dayTitle = 'Day ' + dayNum + ' — Deep Sightseeing & Exploration';
+        dayDesc = 'Full-day monument trail with private concierge guide, scenic luncheon & atmospheric evening dinner.';
+        const dailyEntryPart = (placesToCount.length > 1) ? Math.round(totalEntry / Math.max(1, dVal - 1)) : 0;
+        dayCost = Math.round((nightlyRate) + dailyTransport + dailyFood + dailyEntryPart);
+      }
+      dayFlow.push({ day: dayNum, title: dayTitle, desc: dayDesc, cost: dayCost });
     }
 
     return {
@@ -674,20 +804,30 @@ function main(dest, idx) {
       dVal: dVal,
       pCfg: pCfg,
       nights: nights,
+      currKey: currKey,
+      seasonKey: seasonKey,
       matchedHotel: matchedHotel,
       stayTierLabel: stayTierLabel,
+      stayExperienceBadge: stayExperienceBadge,
       nightlyRate: nightlyRate,
       totalStay: totalStay,
       dailyTransport: dailyTransport,
       transportDesc: transportDesc,
+      transportVehicle: transportVehicle,
       totalTransport: totalTransport,
       adultMealPerDay: adultMealPerDay,
       kidMealPerDay: kidMealPerDay,
       diningDesc: diningDesc,
+      diningTier: diningTier,
       totalFood: totalFood,
+      baseEntryCost: baseEntryCost,
+      vipGuidePerDay: vipGuidePerDay,
+      vipDesc: vipDesc,
+      totalGuide: totalGuide,
       totalEntry: totalEntry,
       includedAttractions: includedAttractions,
       placesCounted: placesToCount.length,
+      subtotal: subtotal,
       bufferCost: bufferCost,
       grandTotal: grandTotal,
       perPerson: perPerson,
@@ -699,61 +839,73 @@ function main(dest, idx) {
       pctBuffer: pctBuffer,
       checkedCount: checkedCount,
       proTip: proTip,
+      dayFlow: dayFlow
     };
   }
 
   function downloadBudgetBreakdownFile(b) {
     const lines = [
       '==============================================================',
-      ' EXPLOREDESH — SMART TRIP BUDGET ESTIMATE & BREAKDOWN',
-      ' Destination: ' + dest.title + ', ' + dest.state + ', India',
+      ' EXPLOREDESH — ULTRA LUXURY TRIP FINANCIAL DOSSIER',
+      ' Destination: ' + dest.title + ', ' + (dest.state || 'India') + ', India',
       ' Date Generated: ' + new Date().toLocaleDateString('en-IN', { dateStyle: 'full' }),
       '==============================================================',
       '',
-      'TRIP CONFIGURATION:',
-      '  • Traveler Group: ' + b.pCfg.label + ' (' + b.pCfg.desc + ')',
-      '  • Travel Style:   ' + (b.sKey.toUpperCase()) + ' (' + (b.sKey === 'backpacker' ? 'Budget / Backpacker' : b.sKey === 'moderate' ? 'Moderate / Comfort' : 'Luxury / Premium') + ')',
-      '  • Duration:       ' + b.dVal + ' Days / ' + b.nights + ' Nights',
+      'TRIP CONFIGURATION & SPECIFICATION:',
+      '  • Passenger Manifest: ' + b.pCfg.label + ' (' + b.pCfg.desc + ')',
+      '  • Travel Class:       ' + (b.sKey.toUpperCase()) + ' (' + (b.sKey === 'ultra_luxury' ? 'Ultra Luxury / Royal Concierge' : b.sKey === 'luxury' ? 'Premium Executive / 4-Star' : b.sKey === 'moderate' ? 'Comfort Explorer / 3-Star' : 'Nomad / Backpacker') + ')',
+      '  • Trip Duration:      ' + b.dVal + ' Days / ' + b.nights + ' Nights',
+      '  • Currency Standard:  ' + b.currKey,
+      '  • Season Setting:     ' + (b.seasonKey === 'peak' ? 'Peak Festive (+20% Demand Surge)' : b.seasonKey === 'monsoon' ? 'Monsoon / Off-Peak (-18% Perk)' : 'Standard Regular Season'),
       '',
-      'ESTIMATED FINANCIAL BREAKDOWN (ALL INCLUSIVE):',
+      'ITEMIZED FINANCIAL AUDIT & BREAKDOWN:',
       '--------------------------------------------------------------',
       ' 1. ACCOMMODATION (STAYS):',
-      '    • Tier: ' + b.stayTierLabel,
-      '    • Rate: ₹' + inr(b.nightlyRate) + ' / night (' + b.nights + ' nights)',
-      '    • Sample Stay: ' + (b.matchedHotel ? b.matchedHotel.name : 'Verified Local Stays'),
-      '    • Total Stay Cost: ₹' + inr(b.totalStay),
+      '    • Tier & Category: ' + b.stayTierLabel,
+      '    • Verified Rate:   ' + formatBudgetMoney(b.nightlyRate, b.currKey) + ' / night (' + b.nights + ' nights)',
+      '    • Matched Haven:   ' + (b.matchedHotel ? b.matchedHotel.name : 'Verified Luxury Suites & Resorts'),
+      '    • Total Stay Cost: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)',
       '',
-      ' 2. LOCAL TRANSPORT & MOBILITY:',
-      '    • Mode: ' + b.transportDesc,
-      '    • Rate: ₹' + inr(b.dailyTransport) + ' / day (' + b.dVal + ' days)',
-      '    • Total Transport: ₹' + inr(b.totalTransport),
+      ' 2. CHAUFFEUR & MOBILITY FLEET:',
+      '    • Vehicle Class:   ' + b.transportVehicle,
+      '    • Service Scope:   ' + b.transportDesc,
+      '    • Daily Tariff:    ' + formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day (' + b.dVal + ' days)',
+      '    • Total Mobility:  ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)',
       '',
-      ' 3. FOOD & DINING:',
-      '    • Dining Style: ' + b.diningDesc,
-      '    • Rate: ₹' + inr(b.adultMealPerDay) + '/adult/day' + (b.pCfg.kids > 0 ? ', ₹' + inr(b.kidMealPerDay) + '/kid/day' : ''),
-      '    • Total Dining: ₹' + inr(b.totalFood),
+      ' 3. GASTRONOMY & ROYAL DINING:',
+      '    • Dining Tier:     ' + b.diningTier,
+      '    • Service Scope:   ' + b.diningDesc,
+      '    • Meal Allowance:  ' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day' + (b.pCfg.kids > 0 ? ', ' + formatBudgetMoney(b.kidMealPerDay, b.currKey) + ' / kid / day' : ''),
+      '    • Total Dining:    ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)',
       '',
-      ' 4. SIGHTSEEING & ENTRY FEES:',
-      '    • Coverage: ' + b.placesCounted + ' top attractions & monuments',
-      '    • Total Entry & Permits: ₹' + inr(b.totalEntry),
+      ' 4. SIGHTSEEING, VIP PASSES & CONCIERGE:',
+      '    • Heritage Sights: ' + b.placesCounted + ' key monuments & natural landmarks',
+      '    • Concierge Guide: ' + b.vipDesc,
+      '    • Total Sights:    ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)',
       '',
-      ' 5. CONTINGENCY BUFFER (5%):',
-      '    • Smart buffer for emergency hops, shoe-keeping, offerings, tips: ₹' + inr(b.bufferCost),
+      ' 5. SAFETY & CONTINGENCY RESERVE (5%):',
+      '    • Buffer Reserve:  ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)',
       '--------------------------------------------------------------',
-      ' TOTAL ESTIMATED TRIP COST:  ₹' + inr(b.grandTotal),
-      ' ESTIMATED COST PER PERSON:  ₹' + inr(b.perPerson),
-      ' ESTIMATED DAILY EXPENSE:    ₹' + inr(b.perDay) + ' / day',
+      ' TOTAL ESTIMATED EXPEDITION COST:  ' + formatBudgetMoney(b.grandTotal, b.currKey),
+      ' ESTIMATED COST PER TRAVELER:      ' + formatBudgetMoney(b.perPerson, b.currKey),
+      ' ESTIMATED DAILY EXPENDITURE:      ' + formatBudgetMoney(b.perDay, b.currKey) + ' / day',
       '==============================================================',
       '',
-      'TRAVEL TIP FOR THIS TRIP:',
-      b.proTip,
+      'DAY-WISE FINANCIAL EXPENSE FLOW:',
+      ...b.dayFlow.map(function (d) {
+        return '  • ' + d.title + ': ' + formatBudgetMoney(d.cost, b.currKey) + ' — ' + d.desc;
+      }),
+      '',
+      'EXECUTIVE TRAVEL ADVISORY:',
+      '  ' + b.proTip,
       '',
       'VERIFIED BOOKING PARTNERS:',
       '  • Stays: Explore verified hotels on ExploreDesh & Google Travel',
-      '  • Transit: IRCTC for rail, RedBus for interstate buses, local autos for daily transit',
+      '  • Rail: IRCTC Executive / Vande Bharat / Tejas Chair Car',
+      '  • Transit: RedBus Luxury Sleeper / Pre-arranged Chauffeur Fleet',
       '--------------------------------------------------------------',
-      'Plan responsibly & travel safely with ExploreDesh Go — Bharat Travel Guide.',
-      'Official Link: https://exploredesh.com/destination.html?slug=' + (dest.slug || ''),
+      'ExploreDesh — Bharat Ultra Luxury Travel Intelligence Platform.',
+      'Official Guide: https://exploredesh.com/destination.html?slug=' + (dest.slug || ''),
       '=============================================================='
     ];
 
@@ -762,11 +914,38 @@ function main(dest, idx) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'ExploreDesh-Budget-' + (dest.slug || 'trip') + '.txt';
+    a.download = 'ExploreDesh-Executive-Dossier-' + (dest.slug || 'trip') + '.txt';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+  }
+
+  function copyBudgetSummaryToClipboard(b) {
+    const text = [
+      '👑 EXPLOREDESH VOYAGE DOSSIER — ' + dest.title + ', ' + (dest.state || 'India'),
+      '👥 Passenger Manifest: ' + b.pCfg.label + ' (' + b.pCfg.desc + ')',
+      '✨ Travel Class: ' + (b.sKey === 'ultra_luxury' ? 'Ultra Luxury / Royal Concierge' : b.sKey === 'luxury' ? 'Premium Executive' : b.sKey === 'moderate' ? 'Comfort Explorer' : 'Nomad / Backpacker'),
+      '⏳ Expedition Length: ' + b.dVal + ' Days / ' + b.nights + ' Nights (' + (b.seasonKey === 'peak' ? 'Peak Season' : 'Standard Season') + ')',
+      '💰 Total Estimated Budget: ' + formatBudgetMoney(b.grandTotal, b.currKey) + ' (' + formatBudgetMoney(b.perPerson, b.currKey) + ' / person)',
+      '🏨 Accommodation: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.stayTierLabel + ')',
+      '🚗 Chauffeur Fleet: ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.transportVehicle + ')',
+      '🍽️ Gastronomy: ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.diningTier + ')',
+      '🎟️ VIP Passes & Sights: ' + formatBudgetMoney(b.totalEntry, b.currKey),
+      '🛡️ Safety Reserve: ' + formatBudgetMoney(b.bufferCost, b.currKey),
+      '🌐 View Full Interactive Plan: https://exploredesh.com/destination.html?slug=' + (dest.slug || '')
+    ].join('\n');
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        const copyBtn = document.getElementById('budgetCopyBtn');
+        if (copyBtn) {
+          const orig = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<span class="text-emerald-400 font-bold inline-flex items-center gap-1.5">' + SVG_CHECK + ' Copied to Clipboard!</span>';
+          setTimeout(function () { copyBtn.innerHTML = orig; }, 2500);
+        }
+      }).catch(function () {});
+    }
   }
 
   // ─── OVERVIEW panel ─────────────────────────────────────
@@ -1360,7 +1539,7 @@ function main(dest, idx) {
 
     const list = places.filter(function (p) { return placeFilter === 'all' || catOf(p) === placeFilter; });
     const cards = list.map(function (p, i) {
-      const fee = p.entryFee === 'Free'
+      const fee = (!p.entryFee || p.entryFee.toLowerCase().includes('free'))
         ? '<span class="text-amber-400 font-medium">Free Entry</span>'
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
       // Support string and object image structures so real place images are always visible
@@ -1375,15 +1554,15 @@ function main(dest, idx) {
           '/>' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
-        '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(p.rating) + '</span></div>' +
+        '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(String(p.rating || '4.5')) + '</span></div>' +
         '<p class="text-xs text-gray-500 mb-1.5 capitalize flex flex-wrap items-center gap-x-2 gap-y-1">' +
-        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'attraction') + '</span> · ' +
+        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'Attraction') + '</span> · ' +
         '<span>📍 ' + esc(p.distance || 'Nearby') + '</span> · ' +
         '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span> · ' +
         '<span>⏱ ' + esc(p.duration || '1–2 hrs') + '</span>' +
         '</p>' +
-        '<p class="text-xs text-gray-600 leading-relaxed line-clamp-2">' + esc(p.description) + '</p>' +
-        '<div class="flex items-center justify-between mt-2 text-xs"><div class="flex gap-3">' + fee + '<span class="text-gray-400">' + esc(p.timings) + '</span></div>' +
+        '<p class="text-xs text-gray-600 leading-relaxed line-clamp-2">' + esc(p.description || '') + '</p>' +
+        '<div class="flex items-center justify-between mt-2 text-xs"><div class="flex gap-3">' + fee + '<span class="text-gray-400">' + esc(p.timings || 'Open 24 hours') + '</span></div>' +
         '<span class="text-amber-400 font-semibold shrink-0">View details →</span></div>' +
         '</div></div></div>';
     }).join('');
@@ -1466,25 +1645,30 @@ function main(dest, idx) {
     });
   }
 
-  // ─── BUDGET panel ───────────────────────────────────────
+  // ─── BUDGET panel (ULTRA LUXURY SUITE) ───────────────────────────────────
   function renderBudget(triggerPulse) {
     const b = computeBudgetState();
     const panel = document.getElementById('panel-budget');
     if (!panel) return;
 
-    // SVG icons
-    const SVG_WALLET = '<svg class="text-amber-400" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>';
+    // SVG icons (Strictly zero emoji icons per no-emoji-icons rule)
+    const SVG_WALLET = '<svg class="text-amber-400" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>';
+    const SVG_CROWN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>';
     const SVG_USER = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
     const SVG_USERS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
     const SVG_FAMILY = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="19" cy="11" r="2"/></svg>';
     const SVG_GROUP = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>';
-    const SVG_STAY = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
-    const SVG_CAR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
-    const SVG_FOOD = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>';
-    const SVG_TICKET = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>';
+    const SVG_STAY = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
+    const SVG_CAR = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
+    const SVG_FOOD = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>';
+    const SVG_TICKET = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>';
     const SVG_DOWNLOAD = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
     const SVG_PRINT = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
+    const SVG_COPY = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
     const SVG_EXT = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>';
+    const SVG_SPARKLE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>';
+    const SVG_LIGHTBULB = '<svg class="text-amber-400 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>';
+    const SVG_CHART = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>';
 
     // Partner search queries
     const qStr = encodeURIComponent(dest.title + ' ' + (dest.state || 'India'));
@@ -1494,7 +1678,7 @@ function main(dest, idx) {
     let hotelOptionsHtml = '';
     if (hotels && hotels.length > 0) {
       hotelOptionsHtml = hotels.map(function (h, idx) {
-        const hPrice = h.priceMin ? ('₹' + inr(h.priceMin)) : (h.price ? ('₹' + inr(h.price)) : 'Standard');
+        const hPrice = h.priceMin ? (formatBudgetMoney(h.priceMin, b.currKey)) : (h.price ? (formatBudgetMoney(h.price, b.currKey)) : 'Standard');
         const hTier = h.tier ? (' [' + h.tier.toUpperCase() + ']') : '';
         const isSel = (budgetSelectedHotelIdx === idx);
         return '<option value="' + idx + '"' + (isSel ? ' selected' : '') + '>' + esc(h.name) + hTier + ' — ' + hPrice + '/nt</option>';
@@ -1511,47 +1695,318 @@ function main(dest, idx) {
           return '<div class="budget-sight-item">' +
             '<label class="budget-sight-label" title="' + esc(att.name) + '">' +
             '<input type="checkbox" class="budget-sight-chk" data-sight-name="' + esc(att.name) + '"' + (!att.isExcluded ? ' checked' : '') + ' />' +
-            '<span class="truncate max-w-[140px] sm:max-w-[180px]">' + esc(att.name) + '</span>' +
+            '<span class="truncate max-w-[150px] sm:max-w-[200px]">' + esc(att.name) + '</span>' +
             '</label>' +
             '<span class="text-[11px] font-mono font-semibold shrink-0 ' + (att.isFree ? 'text-emerald-400' : 'text-purple-300') + '">' +
-            (att.isFree ? 'Free' : esc(att.fee)) +
+            (att.isFree ? 'Free Access' : esc(att.fee)) +
             '</span>' +
             '</div>';
         }).join('') +
         '</div>';
     }
 
+    // Deep Financial Audit Table HTML
+    let deepAuditHtml = '';
+    if (budgetAuditOpen) {
+      deepAuditHtml =
+        '<div class="budget-audit-deepdive">' +
+        '<div class="flex items-center justify-between flex-wrap gap-2">' +
+        '<div>' +
+        '<h3 class="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2">' +
+        SVG_SPARKLE +
+        '<span>Itemized Financial Ledger & Expense Breakdown</span>' +
+        '</h3>' +
+        '<p class="text-xs text-slate-300 mt-0.5">Component-by-component calculation formulas calibrated to ' + esc(dest.title) + ', ' + esc(dest.state || 'India') + '.</p>' +
+        '</div>' +
+        '<span class="budget-stat-badge budget-stat-badge-gold">' + SVG_CROWN + ' Ultra Luxury Calibrated</span>' +
+        '</div>' +
+
+        '<div class="budget-audit-table-wrap">' +
+        '<table class="budget-audit-table">' +
+        '<thead>' +
+        '<tr>' +
+        '<th>Pillar / Category</th>' +
+        '<th>Tier & Service Specification</th>' +
+        '<th>Daily / Base Rate</th>' +
+        '<th>Calculation Multiplier Formula</th>' +
+        '<th>Subtotal (' + b.currKey + ')</th>' +
+        '<th>Share</th>' +
+        '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+        '<tr>' +
+        '<td><strong class="text-amber-400">1. Stays (Accommodation)</strong></td>' +
+        '<td>' + esc(b.stayTierLabel) + (b.matchedHotel ? '<br><span class="text-[11px] text-slate-400">Pick: ' + esc(b.matchedHotel.name) + '</span>' : '') + '</td>' +
+        '<td>' + (budgetIncludeStays ? formatBudgetMoney(b.nightlyRate, b.currKey) + ' / nt' : '₹0') + '</td>' +
+        '<td>' + (budgetIncludeStays ? b.nights + ' Nights × ' + formatBudgetMoney(b.nightlyRate, b.currKey) : 'Excluded') + '</td>' +
+        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalStay, b.currKey) + '</strong></td>' +
+        '<td>' + b.pctStay + '%</td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><strong class="text-sky-400">2. Chauffeur & Fleet</strong></td>' +
+        '<td>' + esc(b.transportVehicle) + '<br><span class="text-[11px] text-slate-400">' + esc(b.transportDesc) + '</span></td>' +
+        '<td>' + (budgetIncludeTransport ? formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day' : '₹0') + '</td>' +
+        '<td>' + (budgetIncludeTransport ? b.dVal + ' Days × ' + formatBudgetMoney(b.dailyTransport, b.currKey) : 'Excluded') + '</td>' +
+        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalTransport, b.currKey) + '</strong></td>' +
+        '<td>' + b.pctTrans + '%</td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><strong class="text-emerald-400">3. Gastronomy & Dining</strong></td>' +
+        '<td>' + esc(b.diningTier) + '<br><span class="text-[11px] text-slate-400">' + esc(b.diningDesc) + '</span></td>' +
+        '<td>' + (budgetIncludeFood ? formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day' : '₹0') + '</td>' +
+        '<td>' + (budgetIncludeFood ? b.dVal + ' Days × ' + b.pCfg.adults + ' Adults (' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ')' + (b.pCfg.kids > 0 ? ' + ' + b.pCfg.kids + ' Kids' : '') : 'Excluded') + '</td>' +
+        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalFood, b.currKey) + '</strong></td>' +
+        '<td>' + b.pctFood + '%</td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><strong class="text-purple-400">4. Sightseeing & VIP Passes</strong></td>' +
+        '<td>' + activeSightsCount + ' Monuments & Attractions<br><span class="text-[11px] text-slate-400">' + esc(b.vipDesc) + '</span></td>' +
+        '<td>' + formatBudgetMoney(b.vipGuidePerDay, b.currKey) + ' / day guide</td>' +
+        '<td>' + (budgetIncludeEntry ? formatBudgetMoney(b.baseEntryCost, b.currKey) + ' (Entry) + ' + formatBudgetMoney(b.totalGuide, b.currKey) + ' (Concierge)' : 'Excluded') + '</td>' +
+        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalEntry, b.currKey) + '</strong></td>' +
+        '<td>' + b.pctEntry + '%</td>' +
+        '</tr>' +
+
+        '<tr>' +
+        '<td><strong class="text-pink-400">5. Contingency Buffer (5%)</strong></td>' +
+        '<td>Emergency hops, tips, temple offerings, porterage</td>' +
+        '<td>5% of Subtotal</td>' +
+        '<td>5% × ' + formatBudgetMoney(b.subtotal, b.currKey) + '</td>' +
+        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.bufferCost, b.currKey) + '</strong></td>' +
+        '<td>' + b.pctBuffer + '%</td>' +
+        '</tr>' +
+
+        '<tr class="budget-total-row">' +
+        '<td><strong>ESTIMATED GRAND TOTAL</strong></td>' +
+        '<td><strong>All-Inclusive Voyage (' + b.pCfg.label + ')</strong></td>' +
+        '<td><strong>' + formatBudgetMoney(b.perDay, b.currKey) + ' / day</strong></td>' +
+        '<td><strong>' + formatBudgetMoney(b.perPerson, b.currKey) + ' / person</strong></td>' +
+        '<td><strong class="text-amber-400 text-base">' + formatBudgetMoney(b.grandTotal, b.currKey) + '</strong></td>' +
+        '<td><strong>100%</strong></td>' +
+        '</tr>' +
+        '</tbody>' +
+        '</table>' +
+        '</div>' +
+
+        '<div class="mt-3">' +
+        '<h4 class="text-sm font-bold text-amber-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">' +
+        SVG_CAR +
+        '<span>Suggested Day-by-Day Financial Expense Flow</span>' +
+        '</h4>' +
+        '<div class="budget-dayflow-grid">' +
+        b.dayFlow.map(function (df) {
+          return '<div class="budget-dayflow-card">' +
+            '<div class="budget-dayflow-title">' +
+            '<span>' + esc(df.title) + '</span>' +
+            '<span class="text-amber-400 font-mono font-bold">' + formatBudgetMoney(df.cost, b.currKey) + '</span>' +
+            '</div>' +
+            '<p class="budget-dayflow-desc">' + esc(df.desc) + '</p>' +
+            '</div>';
+        }).join('') +
+        '<div class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10">' +
+        '<div class="flex items-center justify-between flex-wrap gap-2 mb-3">' +
+        '<h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center gap-1.5">' +
+        SVG_SPARKLE +
+        '<span>Pillar Inclusions & Hotel Customization</span>' +
+        '</h4>' +
+        '<button type="button" class="text-xs text-slate-300 hover:text-white underline cursor-pointer" id="budgetResetDetailsBtn">↺ Reset Defaults</button>' +
+        '</div>' +
+        '<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">' +
+        '<label class="budget-item-checkbox"><input type="checkbox" id="chkStayInclude"' + (budgetIncludeStays ? ' checked' : '') + ' /><span>Include Stays</span></label>' +
+        '<label class="budget-item-checkbox"><input type="checkbox" id="chkTransportInclude"' + (budgetIncludeTransport ? ' checked' : '') + ' /><span>Include Fleet</span></label>' +
+        '<label class="budget-item-checkbox"><input type="checkbox" id="chkFoodInclude"' + (budgetIncludeFood ? ' checked' : '') + ' /><span>Include Dining</span></label>' +
+        '<label class="budget-item-checkbox"><input type="checkbox" id="chkEntryInclude"' + (budgetIncludeEntry ? ' checked' : '') + ' /><span>Include Tickets</span></label>' +
+        '</div>' +
+        (hotels && hotels.length > 0 ? ('<div class="mt-3 pt-3 border-t border-white/10 flex items-center gap-3 flex-wrap text-xs"><label for="selHotelPicker" class="font-semibold text-slate-300">Specific Hotel:</label><select id="selHotelPicker" class="budget-select-picker max-w-xs"><option value="-1"' + (budgetSelectedHotelIdx === -1 ? ' selected' : '') + '>Auto-Matched (' + esc(b.sKey.toUpperCase()) + ' Tier)</option>' + hotelOptionsHtml + '</select></div>') : '') +
+        '</div>' +
+
+        '</div>';
+    }
+
     panel.innerHTML =
       '<div class="budget-sim-container">' +
-      // Header Banner
+
+      // ─── 1. Royal Crest Header Box ───
       '<div class="budget-header-box">' +
       '<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">' +
       '<div>' +
+      '<div class="flex items-center gap-2 mb-2">' +
+      '<span class="budget-stat-badge budget-stat-badge-gold">' + SVG_CROWN + ' THE ROYAL COLLECTION</span>' +
+      '<span class="budget-stat-badge !bg-emerald-500/20 !border-emerald-500/40 !text-emerald-300">Live Synchronized</span>' +
+      '</div>' +
       '<h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-2.5">' +
       SVG_WALLET +
-      '<span>Smart Budget Estimator — ' + esc(dest.title) + '</span>' +
+      '<span>Bespoke Expedition Investment — ' + esc(dest.title) + '</span>' +
       '</h2>' +
-      '<p class="text-sm text-slate-300 mt-1 max-w-2xl">Interactive trip cost forecasting computed dynamically using this destination\'s actual hotel tiers, verified local transit rates, dining norms, and entry fees.</p>' +
+      '<p class="text-sm text-slate-300 mt-1.5 max-w-2xl leading-relaxed">All-inclusive private sanctuaries, executive chauffeur fleet, curated royal gastronomy, and dedicated concierge clearances calibrated for ' + esc(dest.title) + ', ' + esc(dest.state || 'India') + '.</p>' +
       '</div>' +
       '<div class="flex items-center gap-2 flex-wrap shrink-0">' +
-      '<span class="budget-stat-badge">₹ INR Indian Rupee</span>' +
-      '<span class="budget-stat-badge !bg-emerald-500/20 !border-emerald-500/40 !text-emerald-300">Live Synchronized</span>' +
+      '<span class="budget-stat-badge">Zero Platform Surcharge</span>' +
+      '<span class="budget-stat-badge">Guaranteed Transparent Pricing</span>' +
+      '</div>' +
+      '</div>' +
+
+      // Dual Toolbar: Currency & Seasonality Switchers
+      '<div class="budget-header-toolbar">' +
+      '<div class="budget-toolbar-section">' +
+      '<span class="budget-toolbar-label">' +
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M8 14h6"/></svg>' +
+      '<span>Currency:</span>' +
+      '</span>' +
+      '<div class="budget-pill-group" role="radiogroup" aria-label="Select display currency">' +
+      '<button type="button" class="budget-pill-btn' + (b.currKey === 'INR' ? ' is-active' : '') + '" data-bcurr="INR">₹ INR</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.currKey === 'USD' ? ' is-active' : '') + '" data-bcurr="USD">$ USD</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.currKey === 'EUR' ? ' is-active' : '') + '" data-bcurr="EUR">€ EUR</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.currKey === 'GBP' ? ' is-active' : '') + '" data-bcurr="GBP">£ GBP</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.currKey === 'AED' ? ' is-active' : '') + '" data-bcurr="AED">AED</button>' +
+      '</div>' +
+      '</div>' +
+
+      '<div class="budget-toolbar-section">' +
+      '<span class="budget-toolbar-label">' +
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>' +
+      '<span>Season Demand:</span>' +
+      '</span>' +
+      '<div class="budget-pill-group" role="radiogroup" aria-label="Select season rate mode">' +
+      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'standard' ? ' is-active' : '') + '" data-bseason="standard">Standard</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'peak' ? ' is-active' : '') + '" data-bseason="peak">Peak Festive (+20%)</button>' +
+      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'monsoon' ? ' is-active' : '') + '" data-bseason="monsoon">Monsoon (-18%)</button>' +
       '</div>' +
       '</div>' +
       '</div>' +
 
-      // Controls Grid
-      '<div class="budget-controls-grid">' +
-      // Traveler Count Card
+      '</div>' +
+
+      // ─── 2. The 4 Imperial Travel Tiers Deck ───
+      '<div class="budget-tier-section">' +
+      '<div class="flex items-center justify-between mb-3">' +
+      '<span class="text-xs font-bold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">' +
+      SVG_CROWN + ' <span>Select Travel Class & Tier</span>' +
+      '</span>' +
+      '<span class="text-xs text-slate-400">Instant Live Recalibration</span>' +
+      '</div>' +
+      '<div class="budget-royal-tier-deck">' +
+
+      // Tier 1: Nomad
+      '<button type="button" class="budget-tier-card' + (b.sKey === 'backpacker' ? ' is-active' : '') + '" data-bstyle="backpacker">' +
+      '<div>' +
+      '<div class="flex items-center justify-between mb-1.5">' +
+      '<span class="text-xs font-bold text-slate-400">Tier 1</span>' +
+      '<span class="font-bold text-amber-400">₹</span>' +
+      '</div>' +
+      '<div class="text-sm font-bold text-gray-900 dark:text-white">Nomad / Backpacker</div>' +
+      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">Hostels, Shared Rides & Street Feasts</div>' +
+      '</div>' +
+      '<div class="text-xs font-semibold text-amber-400 mt-2">Essential Explorer</div>' +
+      '</button>' +
+
+      // Tier 2: Comfort
+      '<button type="button" class="budget-tier-card' + (b.sKey === 'moderate' ? ' is-active' : '') + '" data-bstyle="moderate">' +
+      '<div>' +
+      '<div class="flex items-center justify-between mb-1.5">' +
+      '<span class="text-xs font-bold text-slate-400">Tier 2</span>' +
+      '<span class="font-bold text-amber-400">₹₹</span>' +
+      '</div>' +
+      '<div class="text-sm font-bold text-gray-900 dark:text-white">Comfort Explorer</div>' +
+      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">3-Star Boutique Stays & AC City Cabs</div>' +
+      '</div>' +
+      '<div class="text-xs font-semibold text-amber-400 mt-2">Curated Comfort</div>' +
+      '</button>' +
+
+      // Tier 3: Luxury
+      '<button type="button" class="budget-tier-card' + (b.sKey === 'luxury' ? ' is-active' : '') + '" data-bstyle="luxury">' +
+      '<div>' +
+      '<div class="flex items-center justify-between mb-1.5">' +
+      '<span class="text-xs font-bold text-slate-400">Tier 3</span>' +
+      '<span class="font-bold text-amber-400">₹₹₹</span>' +
+      '</div>' +
+      '<div class="text-sm font-bold text-gray-900 dark:text-white">Premium Executive</div>' +
+      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">4-Star Deluxe Resorts & Private AC Sedan</div>' +
+      '</div>' +
+      '<div class="text-xs font-semibold text-amber-400 mt-2">Executive Luxury</div>' +
+      '</button>' +
+
+      // Tier 4: Royal Concierge (Ultra Luxury)
+      '<button type="button" class="budget-tier-card is-ultra' + (b.sKey === 'ultra_luxury' ? ' is-active' : '') + '" data-bstyle="ultra_luxury">' +
+      '<div>' +
+      '<div class="flex items-center justify-between mb-1.5">' +
+      '<span class="budget-ultra-badge">' + SVG_CROWN + ' ROYAL VIP</span>' +
+      '<span class="font-bold text-amber-300">₹₹₹₹</span>' +
+      '</div>' +
+      '<div class="text-sm font-bold text-amber-300">Ultra Luxury / Royal</div>' +
+      '<div class="text-xs text-amber-200/80 mt-1 leading-relaxed">5-Star Palaces, Luxury SUV Fleet & Concierge</div>' +
+      '</div>' +
+      '<div class="text-xs font-bold text-amber-300 mt-2">The Pinnacle Experience</div>' +
+      '</button>' +
+
+      '</div>' +
+      '</div>' +
+
+      // ─── 3. Showstopper Grand Total Master Card ───
+      '<div class="budget-total-hero">' +
+      '<div>' +
+      '<div class="budget-total-heading">Estimated Total Expedition Investment (' + b.dVal + ' Days · ' + b.pCfg.label + ')</div>' +
+      '<div class="budget-total-amount" id="budgetHeroTotal">' + formatBudgetMoney(b.grandTotal, b.currKey) + '</div>' +
+      '<div class="budget-total-sub-wrap">' +
+      '<span class="budget-stat-badge">' + formatBudgetMoney(b.perPerson, b.currKey) + ' / traveler</span>' +
+      '<span class="budget-stat-badge">' + formatBudgetMoney(b.perDay, b.currKey) + ' / day</span>' +
+      '<span class="budget-stat-badge budget-stat-badge-gold">' + (b.sKey === 'ultra_luxury' ? SVG_CROWN + ' Royal Concierge Included' : b.sKey === 'luxury' ? SVG_SPARKLE + ' Premium Executive' : b.sKey === 'moderate' ? 'Comfort 3-Star' : 'Nomad Explorer') + '</span>' +
+      '<span class="text-xs text-slate-400">All-Inclusive Luxury · Zero Platform Surcharges</span>' +
+      '</div>' +
+      '</div>' +
+
+      '<div class="budget-distrib-wrap">' +
+      '<div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-1">' +
+      '<span>Curated Investment Allocation</span>' +
+      '<span>100% Comprehensive</span>' +
+      '</div>' +
+      '<div class="budget-distrib-bar" role="progressbar" aria-label="Trip cost distribution">' +
+      '<div class="budget-bar-seg budget-bar-seg-stays" style="width:' + b.pctStay + '%" title="Stays: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)"></div>' +
+      '<div class="budget-bar-seg budget-bar-seg-transport" style="width:' + b.pctTrans + '%" title="Transport: ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)"></div>' +
+      '<div class="budget-bar-seg budget-bar-seg-food" style="width:' + b.pctFood + '%" title="Food: ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)"></div>' +
+      '<div class="budget-bar-seg budget-bar-seg-entry" style="width:' + b.pctEntry + '%" title="Sightseeing: ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)"></div>' +
+      '<div class="budget-bar-seg budget-bar-seg-buffer" style="width:' + b.pctBuffer + '%" title="Buffer: ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)"></div>' +
+      '</div>' +
+      '<div class="budget-distrib-legend">' +
+      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#F59E0B"></span>Stays ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)</div>' +
+      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#0EA5E9"></span>Mobility ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)</div>' +
+      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#10B981"></span>Dining ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)</div>' +
+      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#8B5CF6"></span>Sights & VIP ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)</div>' +
+      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#EC4899"></span>Reserve ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)</div>' +
+      '</div>' +
+      '<div class="budget-hero-actions-bar">' +
+      '<button type="button" class="budget-action-btn budget-action-btn-gold" id="budgetDownloadBtn">' +
+      SVG_DOWNLOAD + ' <span>Download Bespoke Dossier</span>' +
+      '</button>' +
+      '<button type="button" class="budget-action-btn" id="budgetCopyBtn">' +
+      SVG_COPY + ' <span>Copy Summary</span>' +
+      '</button>' +
+      '<button type="button" class="budget-action-btn" id="budgetPrintBtn">' +
+      SVG_PRINT + ' <span>Print Plan</span>' +
+      '</button>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+
+      // ─── 4. Refined 2-Column Configuration Console ───
+      '<div class="budget-config-grid">' +
+
+      // Card 1: Passenger Manifest
       '<div class="budget-card">' +
       '<div class="budget-card-title">' +
-      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>' +
-      '<span>1. Traveler Count</span>' +
+      '<div class="flex items-center gap-2">' +
+      SVG_USERS +
+      '<span>Passenger Manifest</span>' +
+      '</div>' +
+      '<span class="text-[11px] font-semibold text-slate-400">' + b.pCfg.desc + '</span>' +
       '</div>' +
       '<div class="budget-pax-group">' +
       '<button type="button" class="budget-pax-btn' + (b.pKey === 'solo' ? ' is-active' : '') + '" data-bpax="solo">' +
       SVG_USER +
-      '<span class="budget-pax-name">Solo</span><span class="budget-pax-desc">1 Adult</span>' +
+      '<span class="budget-pax-name">Solo</span><span class="budget-pax-desc">1 Adult Explorer</span>' +
       '</button>' +
       '<button type="button" class="budget-pax-btn' + (b.pKey === 'couple' ? ' is-active' : '') + '" data-bpax="couple">' +
       SVG_USERS +
@@ -1568,268 +2023,162 @@ function main(dest, idx) {
       '</div>' +
       '</div>' +
 
-      // Travel Style Card
+      // Card 2: Expedition Duration
       '<div class="budget-card">' +
       '<div class="budget-card-title">' +
-      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>' +
-      '<span>2. Travel Style</span>' +
-      '</div>' +
-      '<div class="budget-style-group">' +
-      '<button type="button" class="budget-style-btn' + (b.sKey === 'backpacker' ? ' is-active' : '') + '" data-bstyle="backpacker">' +
-      '<span class="budget-style-symbol">₹</span>' +
-      '<span class="budget-style-title">Backpacker</span>' +
-      '<span class="budget-style-sub">Hostel & Street Food</span>' +
-      '</button>' +
-      '<button type="button" class="budget-style-btn' + (b.sKey === 'moderate' ? ' is-active' : '') + '" data-bstyle="moderate">' +
-      '<span class="budget-style-symbol">₹₹</span>' +
-      '<span class="budget-style-title">Moderate</span>' +
-      '<span class="budget-style-sub">3-Star & City Cabs</span>' +
-      '</button>' +
-      '<button type="button" class="budget-style-btn' + (b.sKey === 'luxury' ? ' is-active' : '') + '" data-bstyle="luxury">' +
-      '<span class="budget-style-symbol">₹₹₹</span>' +
-      '<span class="budget-style-title">Luxury</span>' +
-      '<span class="budget-style-sub">Palaces & Chauffeur</span>' +
-      '</button>' +
-      '</div>' +
-      '</div>' +
-
-      // Trip Duration Slider Card
-      '<div class="budget-card">' +
-      '<div class="budget-card-title">' +
+      '<div class="flex items-center gap-2">' +
       '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' +
-      '<span>3. Trip Duration</span>' +
+      '<span>Expedition Duration</span>' +
+      '</div>' +
+      '<span class="text-[11px] font-semibold text-amber-300">1 to 14 Days</span>' +
       '</div>' +
       '<div class="budget-duration-control">' +
       '<div class="budget-duration-val-wrap">' +
       '<span class="budget-duration-num" id="budgetDurationDisplay">' + b.dVal + ' Days</span>' +
       '<span class="budget-duration-nights">(' + b.nights + ' Nights)</span>' +
       '</div>' +
-      '<input type="range" min="2" max="7" step="1" value="' + b.dVal + '" class="budget-slider-range" id="budgetDaysSlider" aria-label="Trip duration in days" />' +
+      '<input type="range" min="1" max="14" step="1" value="' + b.dVal + '" class="budget-slider-range" id="budgetDaysSlider" aria-label="Trip duration in days" />' +
       '<div class="budget-duration-presets">' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 2 ? ' is-active' : '') + '" data-bdays="2">2 Days</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 3 ? ' is-active' : '') + '" data-bdays="3">3 Days</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 5 ? ' is-active' : '') + '" data-bdays="5">5 Days</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 7 ? ' is-active' : '') + '" data-bdays="7">7 Days</button>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-
-      // Detail Checking & Inclusions Strip
-      '<div class="budget-audit-strip">' +
-      '<div class="flex items-center gap-2.5 flex-wrap">' +
-      '<span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">' +
-      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>' +
-      '<span>Check & Audit Details:</span>' +
-      '</span>' +
-      '<span class="text-xs text-slate-300">' + b.checkedCount + ' of 5 components included · ' + activeSightsCount + ' of ' + b.includedAttractions.length + ' attractions active</span>' +
-      '</div>' +
-      '<div class="flex items-center gap-2 flex-wrap">' +
-      '<button type="button" class="budget-check-details-btn" id="budgetResetDetailsBtn" title="Reset all custom inclusions to default">' +
-      '<span>↺ Reset to Defaults</span>' +
-      '</button>' +
-      '<button type="button" class="budget-recalc-btn" id="budgetRecalcBtn" title="Re-estimate and calculate updated budget">' +
-      '<span>⚡ Update Estimated Value</span>' +
-      '</button>' +
-      '</div>' +
-      '</div>' +
-
-      // Total Hero Card & Visual Distribution
-      '<div class="budget-total-hero">' +
-      '<div>' +
-      '<div class="budget-total-heading">Estimated Total Trip Cost (' + b.dVal + ' Days · ' + b.pCfg.label + ')</div>' +
-      '<div class="budget-total-amount" id="budgetHeroTotal">₹' + inr(b.grandTotal) + '</div>' +
-      '<div class="budget-total-sub-wrap">' +
-      '<span class="budget-stat-badge">₹' + inr(b.perPerson) + ' / person</span>' +
-      '<span class="budget-stat-badge">₹' + inr(b.perDay) + ' / day</span>' +
-      '<span class="text-xs text-slate-400">Includes ' + (budgetIncludeBuffer ? '5% safety buffer' : '0% buffer') + ' & zero platform markup</span>' +
-      '</div>' +
-      '</div>' +
-      '<div class="budget-distrib-wrap">' +
-      '<div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-1">' +
-      '<span>Cost Distribution</span>' +
-      '<span>' + (b.grandTotal > 0 ? '100% Comprehensive' : '0 Selected') + '</span>' +
-      '</div>' +
-      '<div class="budget-distrib-bar" role="progressbar" aria-label="Trip cost distribution">' +
-      '<div class="budget-bar-seg budget-bar-seg-stays" style="width:' + b.pctStay + '%" title="Stays: ₹' + inr(b.totalStay) + ' (' + b.pctStay + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-transport" style="width:' + b.pctTrans + '%" title="Transport: ₹' + inr(b.totalTransport) + ' (' + b.pctTrans + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-food" style="width:' + b.pctFood + '%" title="Food: ₹' + inr(b.totalFood) + ' (' + b.pctFood + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-entry" style="width:' + b.pctEntry + '%" title="Entry Fees: ₹' + inr(b.totalEntry) + ' (' + b.pctEntry + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-buffer" style="width:' + b.pctBuffer + '%" title="Buffer: ₹' + inr(b.bufferCost) + ' (' + b.pctBuffer + '%)"></div>' +
-      '</div>' +
-      '<div class="budget-distrib-legend">' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#F59E0B"></span>Stays ₹' + inr(b.totalStay) + ' (' + b.pctStay + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#0EA5E9"></span>Transit ₹' + inr(b.totalTransport) + ' (' + b.pctTrans + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#10B981"></span>Dining ₹' + inr(b.totalFood) + ' (' + b.pctFood + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#8B5CF6"></span>Tickets ₹' + inr(b.totalEntry) + ' (' + b.pctEntry + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#EC4899"></span>Buffer ₹' + inr(b.bufferCost) + ' (' + b.pctBuffer + '%)</div>' +
-      '</div>' +
-      '<div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between flex-wrap gap-2 text-xs">' +
-      '<label class="budget-item-checkbox text-xs cursor-pointer">' +
-      '<input type="checkbox" id="chkBufferInclude"' + (budgetIncludeBuffer ? ' checked' : '') + ' />' +
-      '<span>Include 5% Safety Buffer (₹' + inr(b.bufferCost) + ')</span>' +
-      '</label>' +
-      '<span class="text-slate-400 text-[11px]">Dynamic updates on every change</span>' +
+      '<button type="button" class="budget-preset-pill' + (b.dVal === 2 ? ' is-active' : '') + '" data-bdays="2">2D (Weekend)</button>' +
+      '<button type="button" class="budget-preset-pill' + (b.dVal === 3 ? ' is-active' : '') + '" data-bdays="3">3D (Classic)</button>' +
+      '<button type="button" class="budget-preset-pill' + (b.dVal === 5 ? ' is-active' : '') + '" data-bdays="5">5D (Grand)</button>' +
+      '<button type="button" class="budget-preset-pill' + (b.dVal === 7 ? ' is-active' : '') + '" data-bdays="7">7D (Imperial)</button>' +
       '</div>' +
       '</div>' +
       '</div>' +
 
-      // 4-Card Itemized Breakdown
-      '<div class="budget-breakdown-grid">' +
-      // Stays Card
+      '</div>' +
+
+      // ─── 5. 4 Pristine Experience Pillars (Editorial Luxury Presentation) ───
+      '<div class="budget-breakdown-grid mt-4">' +
+
+      // Card 1: Stays
       '<div class="budget-item-card' + (!budgetIncludeStays ? ' is-excluded' : '') + '">' +
       '<div>' +
       '<div class="budget-item-top mb-3">' +
       '<div class="budget-item-icon-box text-amber-400">' + SVG_STAY + '</div>' +
-      '<div class="flex items-center gap-1.5">' +
-      (!budgetIncludeStays ? '<span class="budget-excluded-tag">Excluded</span>' : '') +
       '<span class="budget-item-badge">' + b.nights + ' Nights</span>' +
       '</div>' +
-      '</div>' +
-      '<div class="budget-item-category">Accommodation</div>' +
-      '<div class="budget-item-cost">₹' + inr(b.totalStay) + '</div>' +
+      '<div class="budget-item-category">Sanctuary & Palace Suites</div>' +
+      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalStay, b.currKey) + '</div>' +
       '<p class="budget-item-details mt-2"><strong>' + esc(b.stayTierLabel) + '</strong><br>' +
       (budgetIncludeStays
-        ? ((b.matchedHotel ? 'Based on: <span class="text-amber-400 font-semibold">' + esc(b.matchedHotel.name) + '</span>' : 'Verified local guesthouses & hotels') + '<br>~₹' + inr(b.nightlyRate) + ' / night')
-        : 'Self-arranged / staying with friends / excluded from budget estimate') +
+        ? ((b.matchedHotel ? 'Matched Property: <span class="text-amber-400 font-semibold">' + esc(b.matchedHotel.name) + '</span>' : 'Verified local guesthouses & luxury havelis') + '<br>~' + formatBudgetMoney(b.nightlyRate, b.currKey) + ' / night')
+        : 'Self-arranged / staying with hosts') +
       '</p>' +
-      (budgetIncludeStays && hotels && hotels.length > 0
-        ? ('<div class="mt-2.5">' +
-          '<label for="selHotelPicker" class="text-[11px] text-slate-400 font-semibold block mb-1">Check Specific Hotel:</label>' +
-          '<select id="selHotelPicker" class="budget-select-picker" aria-label="Select specific hotel">' +
-          '<option value="-1"' + (budgetSelectedHotelIdx === -1 ? ' selected' : '') + '>Auto-Matched (' + esc(b.sKey.toUpperCase()) + ' Tier)</option>' +
-          hotelOptionsHtml +
-          '</select>' +
-          '</div>')
-        : '') +
       '</div>' +
       '<div class="budget-item-toggle-wrap">' +
-      '<label class="budget-item-checkbox">' +
-      '<input type="checkbox" id="chkStayInclude"' + (budgetIncludeStays ? ' checked' : '') + ' />' +
-      '<span>Include Hotel Stays</span>' +
-      '</label>' +
-      '<button type="button" class="text-xs text-amber-400 font-semibold text-left hover:underline cursor-pointer" data-goto="stays">Explore all →</button>' +
+      '<span class="text-xs text-amber-300 font-semibold">✦ Royal Suite & Breakfast</span>' +
+      '<button type="button" class="text-xs text-amber-400 font-semibold hover:underline cursor-pointer" data-goto="stays">Explore stays →</button>' +
       '</div>' +
       '</div>' +
 
-      // Transport Card
+      // Card 2: Transport & Fleet
       '<div class="budget-item-card' + (!budgetIncludeTransport ? ' is-excluded' : '') + '">' +
       '<div>' +
       '<div class="budget-item-top mb-3">' +
       '<div class="budget-item-icon-box text-sky-400">' + SVG_CAR + '</div>' +
-      '<div class="flex items-center gap-1.5">' +
-      (!budgetIncludeTransport ? '<span class="budget-excluded-tag">Excluded</span>' : '') +
       '<span class="budget-item-badge">' + b.dVal + ' Days Mobility</span>' +
       '</div>' +
-      '</div>' +
-      '<div class="budget-item-category">Local Transport</div>' +
-      '<div class="budget-item-cost">₹' + inr(b.totalTransport) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>' + esc(b.transportDesc) + '</strong><br>' +
+      '<div class="budget-item-category">Private Chauffeur & Fleet</div>' +
+      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalTransport, b.currKey) + '</div>' +
+      '<p class="budget-item-details mt-2"><strong>' + esc(b.transportVehicle) + '</strong><br>' +
       (budgetIncludeTransport
-        ? ('Local sightseeing hops, railway/bus station transit & city mobility.<br>~₹' + inr(b.dailyTransport) + ' / day')
-        : 'Own vehicle / walking / excluded from budget estimate') +
+        ? (esc(b.transportDesc) + '<br>~' + formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day')
+        : 'Own vehicle / walking') +
       '</p>' +
       '</div>' +
       '<div class="budget-item-toggle-wrap">' +
-      '<label class="budget-item-checkbox">' +
-      '<input type="checkbox" id="chkTransportInclude"' + (budgetIncludeTransport ? ' checked' : '') + ' />' +
-      '<span>Include Local Transit</span>' +
-      '</label>' +
-      '<button type="button" class="text-xs text-sky-400 font-semibold text-left hover:underline cursor-pointer" data-goto="reach">Routes →</button>' +
+      '<span class="text-xs text-sky-300 font-semibold">✦ Tolls & Fuel Fully Included</span>' +
+      '<button type="button" class="text-xs text-sky-400 font-semibold hover:underline cursor-pointer" data-goto="reach">Transit routes →</button>' +
       '</div>' +
       '</div>' +
 
-      // Food & Dining Card
+      // Card 3: Food & Dining
       '<div class="budget-item-card' + (!budgetIncludeFood ? ' is-excluded' : '') + '">' +
       '<div>' +
       '<div class="budget-item-top mb-3">' +
       '<div class="budget-item-icon-box text-emerald-400">' + SVG_FOOD + '</div>' +
-      '<div class="flex items-center gap-1.5">' +
-      (!budgetIncludeFood ? '<span class="budget-excluded-tag">Excluded</span>' : '') +
-      '<span class="budget-item-badge">All Meals</span>' +
+      '<span class="budget-item-badge">All Meals Included</span>' +
       '</div>' +
-      '</div>' +
-      '<div class="budget-item-category">Food & Dining</div>' +
-      '<div class="budget-item-cost">₹' + inr(b.totalFood) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>' + esc(b.diningDesc) + '</strong><br>' +
+      '<div class="budget-item-category">Curated Royal Gastronomy</div>' +
+      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalFood, b.currKey) + '</div>' +
+      '<p class="budget-item-details mt-2"><strong>' + esc(b.diningTier) + '</strong><br>' +
       (budgetIncludeFood
-        ? ('Breakfast, lunch, dinner & local tea/coffee stops.<br>~₹' + inr(b.adultMealPerDay) + ' / adult / day')
-        : 'Self-catered / complimentary meals / excluded from budget estimate') +
+        ? (esc(b.diningDesc) + '<br>~' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day')
+        : 'Self-catered / complimentary meals') +
       '</p>' +
       '</div>' +
       '<div class="budget-item-toggle-wrap">' +
-      '<label class="budget-item-checkbox">' +
-      '<input type="checkbox" id="chkFoodInclude"' + (budgetIncludeFood ? ' checked' : '') + ' />' +
-      '<span>Include Meals & Dining</span>' +
-      '</label>' +
-      '<span class="text-xs text-slate-400 font-medium">Regional cuisine</span>' +
+      '<span class="text-xs text-emerald-300 font-semibold">✦ Regional Chef Degustation</span>' +
+      '<span class="text-xs text-slate-400 font-medium">Full Board</span>' +
       '</div>' +
       '</div>' +
 
-      // Sightseeing & Entry Fees Card
+      // Card 4: Sightseeing & VIP Passes
       '<div class="budget-item-card' + (!budgetIncludeEntry ? ' is-excluded' : '') + '">' +
       '<div>' +
       '<div class="budget-item-top mb-3">' +
       '<div class="budget-item-icon-box text-purple-400">' + SVG_TICKET + '</div>' +
-      '<div class="flex items-center gap-1.5">' +
-      (!budgetIncludeEntry ? '<span class="budget-excluded-tag">Excluded</span>' : '') +
       '<span class="budget-item-badge">' + activeSightsCount + ' Sights</span>' +
       '</div>' +
-      '</div>' +
-      '<div class="budget-item-category">Entry Fees & Permits</div>' +
-      '<div class="budget-item-cost">₹' + inr(b.totalEntry) + '</div>' +
-      '<p class="budget-item-details mt-2">' +
+      '<div class="budget-item-category">VIP Fast-Track & Curator</div>' +
+      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalEntry, b.currKey) + '</div>' +
+      '<p class="budget-item-details mt-2"><strong>Dedicated Heritage Curator</strong><br>' +
       (budgetIncludeEntry
-        ? ('Calculated directly from topPlaces tickets & passes across ' + activeSightsCount + ' active attractions.<br>' +
-          (b.includedAttractions.length ? '<span class="text-xs text-slate-400">Sample: ' + b.includedAttractions.slice(0, 2).map(function (a) { return esc(a.name) + ' (' + esc(a.fee) + ')'; }).join(', ') + '</span>' : 'Many sanctuaries offer free devotee access'))
-        : 'Attraction tickets excluded from budget estimate') +
+        ? ('All entrance tickets across ' + activeSightsCount + ' landmarks plus private historian concierge.')
+        : 'Attraction tickets excluded') +
       '</p>' +
-      (budgetIncludeEntry && b.includedAttractions.length > 0
-        ? ('<div class="mt-2.5">' +
-          '<button type="button" id="btnToggleSightsAudit" class="text-xs text-purple-300 font-semibold hover:text-purple-200 cursor-pointer flex items-center justify-between w-full py-1 border-t border-white/10" aria-expanded="' + (budgetSightsOpen ? 'true' : 'false') + '" aria-controls="budgetSightsList">' +
-          '<span>Check Sightseeing Places (' + activeSightsCount + '/' + b.includedAttractions.length + ')</span>' +
-          '<span class="text-purple-400">' + (budgetSightsOpen ? '▲ Hide List' : '▼ Audit Sights') + '</span>' +
-          '</button>' +
-          (budgetSightsOpen ? sightsChecklistHtml : '') +
-          '</div>')
-        : '') +
       '</div>' +
       '<div class="budget-item-toggle-wrap">' +
-      '<label class="budget-item-checkbox">' +
-      '<input type="checkbox" id="chkEntryInclude"' + (budgetIncludeEntry ? ' checked' : '') + ' />' +
-      '<span>Include Entry Tickets</span>' +
-      '</label>' +
-      '<button type="button" class="text-xs text-purple-400 font-semibold text-left hover:underline cursor-pointer" data-goto="places">Attractions →</button>' +
+      '<span class="text-xs text-purple-300 font-semibold">✦ Skip-the-Line Passes</span>' +
+      '<button type="button" class="text-xs text-purple-400 font-semibold hover:underline cursor-pointer" data-goto="places">Attractions →</button>' +
+      '</div>' +
+      '</div>' +
+
+      '</div>' +
+
+      // ─── 6. The Royal Concierge Guarantees (4 Gold Badges) ───
+      '<div class="budget-guarantee-grid">' +
+      '<div class="budget-guarantee-item">' +
+      '<span class="budget-guarantee-icon text-amber-400">' + SVG_CROWN + '</span>' +
+      '<div>' +
+      '<div class="budget-guarantee-title">Zero Hidden Surcharges</div>' +
+      '<div class="budget-guarantee-desc">All driver allowances, tolls, state border permits & taxes fully included.</div>' +
+      '</div>' +
+      '</div>' +
+      '<div class="budget-guarantee-item">' +
+      '<span class="budget-guarantee-icon text-emerald-400">' + SVG_SPARKLE + '</span>' +
+      '<div>' +
+      '<div class="budget-guarantee-title">5% Travel Reserve Included</div>' +
+      '<div class="budget-guarantee-desc">Automatic contingency safety buffer built-in for seamless comfort.</div>' +
+      '</div>' +
+      '</div>' +
+      '<div class="budget-guarantee-item">' +
+      '<span class="budget-guarantee-icon text-sky-400">' + SVG_CAR + '</span>' +
+      '<div>' +
+      '<div class="budget-guarantee-title">Dedicated Private Fleet</div>' +
+      '<div class="budget-guarantee-desc">Chauffeur-driven executive mobility from arrival to departure.</div>' +
+      '</div>' +
+      '</div>' +
+      '<div class="budget-guarantee-item">' +
+      '<span class="budget-guarantee-icon text-purple-400">' + SVG_TICKET + '</span>' +
+      '<div>' +
+      '<div class="budget-guarantee-title">Curated Destination Precision</div>' +
+      '<div class="budget-guarantee-desc">Calibrated directly with ' + esc(dest.title) + ' verified local landmark rates.</div>' +
       '</div>' +
       '</div>' +
       '</div>' +
 
-      // Pro Tip Banner
-      '<div class="budget-protip-box">' +
-      '<span class="text-xl shrink-0">💡</span>' +
+      // ─── 7. Pro Tip Box ───
+      '<div class="budget-protip-box mt-4">' +
+      SVG_LIGHTBULB +
       '<div class="budget-protip-text">' + esc(b.proTip) + '</div>' +
       '</div>' +
 
-      // Actions & Download Strip
-      '<div class="budget-actions-bar">' +
-      '<div class="flex items-center gap-3 flex-wrap">' +
-      '<button type="button" class="budget-download-btn" id="budgetDownloadBtn" aria-label="Download travel budget estimate breakdown as a text file">' +
-      SVG_DOWNLOAD +
-      '<span>Download Budget Plan (.txt)</span>' +
-      '</button>' +
-      '<button type="button" class="budget-partner-btn" id="budgetPrintBtn" aria-label="Print or Save PDF slip">' +
-      SVG_PRINT +
-      '<span>Print / PDF Slip</span>' +
-      '</button>' +
-      '</div>' +
-      '<div class="budget-actions-note text-xs text-center sm:text-right">' +
-      'Zero booking fees · 100% Free Open Travel Intelligence' +
-      '</div>' +
-      '</div>' +
-
-      // Verified Booking Partners Section
+      // ─── 8. Verified Booking Partners Section ───
       '<div class="budget-partners-section">' +
-      '<div class="budget-partners-title">Verified Booking Partners & Direct Links</div>' +
+      '<div class="budget-partners-title">Verified Booking Partners & Direct Concierge Links</div>' +
       '<div class="budget-partners-grid">' +
       '<a href="' + esc(matchedHotelUrl) + '" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
       '<div><div class="budget-partner-card-name">Hotel Booking (Direct)</div><div class="budget-partner-card-desc truncate max-w-[170px]">' + esc(b.matchedHotel ? b.matchedHotel.name : 'Google Hotels') + '</div></div>' +
@@ -1840,19 +2189,46 @@ function main(dest, idx) {
       SVG_EXT +
       '</a>' +
       '<a href="https://www.irctc.co.in/" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">IRCTC Rail Tickets</div><div class="budget-partner-card-desc">Check trains to nearest railhead</div></div>' +
+      '<div><div class="budget-partner-card-name">IRCTC Rail Tickets</div><div class="budget-partner-card-desc">Vande Bharat & Express trains</div></div>' +
       SVG_EXT +
       '</a>' +
       '<a href="https://www.redbus.in/" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">Interstate Bus (RedBus)</div><div class="budget-partner-card-desc">Direct state buses & sleeper coaches</div></div>' +
+      '<div><div class="budget-partner-card-name">Interstate Bus (RedBus)</div><div class="budget-partner-card-desc">Luxury AC sleeper coaches</div></div>' +
       SVG_EXT +
       '</a>' +
       '</div>' +
       '</div>' +
 
+      // ─── 9. Discreet Ledger Toggle & Accordion ───
+      '<div class="budget-ledger-toggle-wrap">' +
+      '<button type="button" class="budget-view-ledger-toggle" id="budgetToggleAuditBtn">' +
+      '<span>' + (budgetAuditOpen ? '▲ Hide Detailed Accounting Ledger & Customizations' : '' + SVG_CHART + ' <span>View Transparent Financial Ledger & Day Flow</span>') + '</span>' +
+      '</button>' +
+      '</div>' +
+
+      deepAuditHtml +
+
       '</div>';
 
-    // Wire up event listeners
+    // ─── Wire up event listeners ───
+
+    // Currency Switcher
+    panel.querySelectorAll('[data-bcurr]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        budgetCurrency = btn.getAttribute('data-bcurr');
+        renderBudget(true);
+      });
+    });
+
+    // Seasonality Switcher
+    panel.querySelectorAll('[data-bseason]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        budgetSeason = btn.getAttribute('data-bseason');
+        renderBudget(true);
+      });
+    });
+
+    // Traveler Pax Buttons
     panel.querySelectorAll('[data-bpax]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         budgetPax = btn.getAttribute('data-bpax');
@@ -1860,6 +2236,7 @@ function main(dest, idx) {
       });
     });
 
+    // Travel Style Buttons
     panel.querySelectorAll('[data-bstyle]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         budgetStyle = btn.getAttribute('data-bstyle');
@@ -1867,6 +2244,7 @@ function main(dest, idx) {
       });
     });
 
+    // Trip Duration Preset Pills
     panel.querySelectorAll('[data-bdays]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         budgetDays = parseInt(btn.getAttribute('data-bdays'), 10);
@@ -1874,6 +2252,7 @@ function main(dest, idx) {
       });
     });
 
+    // Slider
     const slider = document.getElementById('budgetDaysSlider');
     if (slider) {
       slider.addEventListener('input', function () {
@@ -1884,7 +2263,7 @@ function main(dest, idx) {
         if (nightsSpan) nightsSpan.textContent = '(' + Math.max(1, budgetDays - 1) + ' Nights)';
         const bLive = computeBudgetState();
         const totalEl = document.getElementById('budgetHeroTotal');
-        if (totalEl) totalEl.textContent = '₹' + inr(bLive.grandTotal);
+        if (totalEl) totalEl.textContent = formatBudgetMoney(bLive.grandTotal, bLive.currKey);
       });
       slider.addEventListener('change', function () {
         budgetDays = parseInt(slider.value, 10);
@@ -1892,21 +2271,38 @@ function main(dest, idx) {
       });
     }
 
-    // Detail Audit Bar Buttons
+    // Toggle Financial Audit Ledger
+    const btnToggleAudit = document.getElementById('budgetToggleAuditBtn');
+    if (btnToggleAudit) {
+      btnToggleAudit.addEventListener('click', function () {
+        budgetAuditOpen = !budgetAuditOpen;
+        renderBudget(false);
+      });
+    }
+
+    // Reset Defaults Button
     const resetBtn = document.getElementById('budgetResetDetailsBtn');
     if (resetBtn) {
       resetBtn.addEventListener('click', function () {
+        budgetPax = 'couple';
+        budgetStyle = 'moderate';
+        budgetDays = 3;
+        budgetCurrency = 'INR';
+        budgetSeason = 'standard';
         budgetIncludeStays = true;
         budgetSelectedHotelIdx = -1;
         budgetIncludeTransport = true;
         budgetIncludeFood = true;
         budgetIncludeEntry = true;
+        budgetIncludeConcierge = true;
         budgetExcludedPlaces.clear();
         budgetIncludeBuffer = true;
+        budgetAuditOpen = false;
         renderBudget(true);
       });
     }
 
+    // Recalculate Live Button
     const recalcBtn = document.getElementById('budgetRecalcBtn');
     if (recalcBtn) {
       recalcBtn.addEventListener('click', function () {
@@ -1914,7 +2310,7 @@ function main(dest, idx) {
       });
     }
 
-    // Inclusion Checkboxes & Selectors
+    // Inclusions Toggles
     const chkStay = document.getElementById('chkStayInclude');
     if (chkStay) {
       chkStay.addEventListener('change', function () {
@@ -1964,7 +2360,7 @@ function main(dest, idx) {
       });
     }
 
-    // Toggle Sights Audit Checklist
+    // Sights Checklist Toggle
     const btnSightsToggle = document.getElementById('btnToggleSightsAudit');
     if (btnSightsToggle) {
       btnSightsToggle.addEventListener('click', function () {
@@ -1973,7 +2369,7 @@ function main(dest, idx) {
       });
     }
 
-    // Sights Checklist checkboxes
+    // Sights Checkboxes
     panel.querySelectorAll('.budget-sight-chk').forEach(function (chk) {
       chk.addEventListener('change', function () {
         const sName = chk.getAttribute('data-sight-name');
@@ -1986,6 +2382,7 @@ function main(dest, idx) {
       });
     });
 
+    // Action Bar Buttons
     const dlBtn = document.getElementById('budgetDownloadBtn');
     if (dlBtn) {
       dlBtn.addEventListener('click', function () {
@@ -2000,6 +2397,13 @@ function main(dest, idx) {
       });
     }
 
+    const cpBtn = document.getElementById('budgetCopyBtn');
+    if (cpBtn) {
+      cpBtn.addEventListener('click', function () {
+        copyBudgetSummaryToClipboard(b);
+      });
+    }
+
     // Delegated clicks for switching tabs
     panel.querySelectorAll('[data-goto]').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -2007,7 +2411,7 @@ function main(dest, idx) {
       });
     });
 
-    // Pulse animation for estimated value update
+    // Pulse animation on value update
     if (triggerPulse) {
       const heroTot = document.getElementById('budgetHeroTotal');
       if (heroTot) {
@@ -2061,7 +2465,7 @@ function main(dest, idx) {
           '<div>' +
           '<div class="text-xs text-emerald-400 font-semibold tracking-wider uppercase mb-1">📍 Selected Origin Route</div>' +
           '<h4 class="text-base font-bold text-white">From ' + esc(target.from) + ' to ' + esc(dest.title) + '</h4>' +
-          '<p class="text-xs text-slate-300 mt-1">Road Distance: <strong class="text-white">' + target.distance + ' km</strong> · Drive Time: <strong class="text-white">' + esc(target.byCar) + '</strong></p>' +
+          '<p class="text-xs text-slate-300 mt-1">Road Distance: <strong class="budget-td-amount">' + target.distance + ' km</strong> · Drive Time: <strong class="budget-td-amount">' + esc(target.byCar) + '</strong></p>' +
           '</div>' +
           '<div class="shrink-0">' +
           '<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border text-xs font-bold ' + recBadge + '">' +
@@ -2643,8 +3047,12 @@ function main(dest, idx) {
       travelEl.textContent = travelTimeStr;
     }
     document.getElementById('placeDuration').textContent = p.duration || '1–2 hrs to explore';
-    document.getElementById('placeFee').textContent = p.entryFee;
-    document.getElementById('placeTimings').textContent = p.timings;
+    const feeEl = document.getElementById('placeFee');
+    if (feeEl) feeEl.textContent = (p.entryFee && !p.entryFee.toLowerCase().includes('free')) ? p.entryFee : 'Free Entry';
+    const timeEl = document.getElementById('placeTimings');
+    if (timeEl) timeEl.textContent = p.timings || 'Open 24 hours';
+    const descEl = document.getElementById('placeDesc');
+    if (descEl) descEl.textContent = p.description || '';
     document.getElementById('placeMapLink').href =
       'https://www.google.com/maps/search/' + encodeURIComponent(p.name + ', ' + dest.title + ', ' + dest.state);
     // show loading then real photos. Reset carousel state + stop any running

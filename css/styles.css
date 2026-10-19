@@ -2433,10 +2433,21 @@ textarea.form-input {
 }
 
 .category-chip-label {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-muted);
   letter-spacing: 0.01em;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  line-height: 1.25;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 3px;
 }
 
 .category-chip:hover .category-chip-label {
