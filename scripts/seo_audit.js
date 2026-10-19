@@ -100,11 +100,12 @@ htmlPages.forEach(hp => {
   }
 
   // Meta description
-  const descMatch = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i);
-  if (!descMatch || !descMatch[1].trim()) {
+  const descMatch = html.match(/<meta\s+name=["']description["']\s+content=(?:"([^"]+)"|'([^']+)')/i);
+  const rawDesc = descMatch ? (descMatch[1] || descMatch[2] || '').trim() : '';
+  if (!rawDesc) {
     report.warnings.push(hp + ': Missing static meta description');
   } else {
-    const d = descMatch[1].trim();
+    const d = rawDesc;
     if (d.length > 170) {
       report.warnings.push(hp + ': Meta description exceeds 170 chars (' + d.length + ' chars)');
     } else {
