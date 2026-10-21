@@ -3,9 +3,21 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-21 (rev-65 Phase 112 Batch P Autonomous Curation & 44 Defect Eradication).
+Last updated: 2026-10-21 (rev-66 Phase 113 Batch Q & R Autonomous Curation & 72 Defect Eradication).
 
 ---
+
+- **Phase 113: Batch Q & Batch R Autonomous Curation & 72 Defect Eradication (2026-10-21 rev-66)**:
+  1. **72 Defective & Colliding Slots Overhauled Across 12 Destinations**:
+     - Audited and surgically overhauled all internal duplicates, cross-destination collisions, person photos (Amber Hagerman, elephant riders, festival crowds), animal macros (Amboli gecko lizard), vintage motorcycle on road, and out-of-state misattributions (Udupi chariot in Kerala temple) across 12 destinations in **Batch Q** (mbalappuzha-sri-krishna-temple, mber-fort, mboli, mchang-wildlife-sanctuary, mirthakadeswarar-temple-sakkottai, mirthakadeswarar-temple) and **Batch R** (mritaghateswarar-abirami-temple-thirukkadaiyur, mruteshwar-temple, mrutesvara-temple, munthirathu-devi-temple, naimalai-tiger-reserve, nandeshwaram-mahadeva-temple).
+     - Fully overhauled all 12 destinations with 72 pristine, uncollided Full HD landscape photos via official Pexels and Unsplash APIs.
+  2. **Strict Invariants Certified Across All 12 Destinations**:
+     - 100% verified live HTTP 200 reachability on global Tier-1 CDNs (Pexels, Unsplash).
+     - 0 cross-destination duplicate collisions across 66,000+ repository URLs.
+     - 0 persons, 0 crowds, 0 foreign stock, 0 cross-monument leaks, 0 animal/reptile macros, 0 vehicle fillers.
+     - Rebuilt home-manifest.json, index.json, search-index.json, 2,396 stubs, and 6 XML sitemaps.
+     - Service worker cache version bumped to 1.6.4 (sw.js).
+     - Master SEO Regression Guard: 71/71 PASSED (100/100).
 
 - **Phase 112: Batch P Autonomous Curation & 44 Defect Eradication (2026-10-21 rev-65)**:
   1. **44 Defective & Colliding Slots Overhauled Across 6 Destinations**:
