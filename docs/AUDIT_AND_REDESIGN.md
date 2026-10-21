@@ -2,7 +2,7 @@
 
 > **Scope:** Deep audit and architectural elevation of the live ExploreDesh platform across Homepage, Destinations Explorer, Destination Detail pages, AI Trip Finder, Navigation, Interactive Map, and all supporting pages.
 > **Standard:** Apple-level visual polish, Airbnb-level usability, Google-level clarity, and world-class luxury travel editorial.
-> **Date:** 2026-10-20 | Milestone: Phase 111 rev-64 (Batches A through O Master Overhaul & 90-Destination Photographic Certification)
+> **Date:** 2026-10-21 | Milestone: Phase 116 rev-69 (Wikimedia HTTP 429 Throttle Eradication, Tier-1 Pexels/Unsplash CDN Transition & 5 High-Defect Destinations Complete Overhaul)
 
 ---
 

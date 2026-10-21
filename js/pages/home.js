@@ -307,7 +307,9 @@ if (!isFullIndexLoaded) {
         : '';
       const href = c.type === ''
         ? 'destinations.html'
-        : 'destinations.html?type=' + encodeURIComponent(c.type);
+        : c.type === 'recently_updated'
+          ? 'destinations.html?type=recently_updated&sort=latest'
+          : 'destinations.html?type=' + encodeURIComponent(c.type);
       return '<a href="' + href + '" class="category-chip">' +
         '<span class="category-chip-icon ' + c.tint + '">' + icon(c.ic, { size: 24 }) + badge + '</span>' +
         '<span class="category-chip-label">' + esc(c.label) + '</span>' +

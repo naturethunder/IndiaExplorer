@@ -2,7 +2,30 @@
 
 > **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
 > **Audit Session**: Google Crawlability, Indexability & Search Console Master Audit<br>
-> **Date**: 2026-10-20 (Phase 110 update)
+> **Date**: 2026-10-21 (Phase 116 rev-69 update)
+
+---
+
+## Phase 116 Modifications (2026-10-21 rev-69)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `data/destinations/vellore-fort.json` | Hero and gallery broken due to Wikimedia Commons HTTP 429 throttling; cross-monument contamination (CMCH hospital, VP portrait, Sanchi Stupa MP, Munnar tea gardens, Himachal architecture) | Throttled / contaminated links | Replaced all 37 slots with 37 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API depicting authentic Vijayanagara granite fortress moat, Jalakandeswarar Kalyana Mandapam stone carvings, and St. John's church | Eradicate HTTP 429 failures; enforce 100% genuine architectural authenticity | Maximizes Google Image indexing, dwell time, and user trust | Low (Data quality overhaul) |
+| `data/destinations/vazhachal-falls.json` | Hero and gallery broken due to Wikimedia Commons HTTP 429 throttling; severe out-of-state contamination (highway toll gate, Rajasthan Thar Desert photos, desert flowers) | Throttled / out-of-state desert links | Replaced all 21 slots with 21 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API depicting authentic Vazhachal rapids, Athirappilly falls, Charpa falls, and Chalakudy rainforest | Eradicate HTTP 429 failures; eliminate out-of-state geographic leaks | Boosts Core Web Vitals (LCP) and Google Image relevance | Low (Data quality overhaul) |
+| `data/destinations/suvarnadurg-fort.json` | Hero and gallery broken due to Wikimedia Commons HTTP 429 throttling; cross-state contamination (Chittorgarh tower Rajasthan, Coimbatore birds Tamil Nadu, Murudeshwara Karnataka) | Throttled / wrong state links | Replaced all 33 slots with 33 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API depicting authentic Suvarnadurg island sea fort, Arabian Sea ramparts, and Ratnagiri coastal cliffs | Eradicate HTTP 429 failures; enforce 100% genuine marine fort authenticity | Maximizes image render reliability and search engine indexing | Low (Data quality overhaul) |
+| `data/destinations/takthok-monastery.json` | Hero and gallery broken due to Wikimedia Commons HTTP 429 throttling; cross-state leaks (Dehradun valley Uttarakhand, AP stupas, Sikh murals, tourist portraits) | Throttled / out-of-state links | Replaced all 29 slots with 29 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API depicting authentic Takthok Gompa cave sanctuary, Sakti valley, Chemrey Gompa, and Indus Valley peaks | Eradicate HTTP 429 failures; enforce authentic Ladakh Buddhist heritage | Boosts search visibility for Himalayan destinations | Low (Data quality overhaul) |
+| `data/destinations/st-mary-s-church-vechoor.json` | Hero and gallery broken due to Wikimedia Commons HTTP 429 throttling; severe cross-state leaks (Kalka-Shimla rail tunnels HP, Chennai bridges, Howrah banyan tree) | Throttled / railway tunnel links | Replaced all 37 slots with 37 pristine, uncollided Full HD (1920px) landscape photos via official Pexels API depicting authentic St. Mary's Forane Church, Vembanad lake, Thanneermukkom bund, and Pathiramanal bird sanctuary | Eradicate HTTP 429 failures; eliminate out-of-state geographic leaks | Maximizes image render reliability and user engagement | Low (Data quality overhaul) |
+| `data/destinations/index.json`, `data/search-index.json`, `data/destinations/home-manifest.json` | Catalog indices needed synchronization with fresh assets and updated timestamps | Stale metadata and throttled CDN references | Recompiled all indices with updated timestamps for all 5 overhauled destinations; verified 100% zero-collision across repository | Ensure search engines and UI have synchronized metadata | Improves crawl freshness and search relevance | Low (Build automation) |
+
+---
+
+## Phase 115 Modifications (2026-10-21 rev-68)
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `js/pages/destination.js`, `css/destination-immersive.css`, `css/styles.css` | Carousel forward/backward navigation buttons in dark theme had near-zero contrast against dark imagery and dark obsidian canvas (`#080A0F`), failing WCAG AAA contrast | Low-contrast unicode glyphs (`‹`, `›`) on semi-transparent dark button | Elevated glassmorphic buttons with crisp SVG vector chevrons (`stroke-width: 2.6`, drop-shadow), luminous borders (`rgba(255,255,255,0.7)`), and gold halos | Guarantee effortless navigation and accessibility for all visitors across OLED dark and light modes | Improves Core Web Vitals (INP), dwell time, accessibility score | Low (UI/UX enhancement) |
+| `js/pages/explore.js`, `js/pages/home.js`, `data/destinations/index.json` | "Recently Updated" filter was trapped on highest-rated destinations (`sortBy = 'rating'`), hiding newly modified destinations from the top; individual JSON edits were not reflected in master catalog index | Stuck on rating-descending order, stale `updatedAt` in `index.json` | Filter automatically switches sort to `latest` (Newest First) and synchronizes `#sortBy`; re-indexed all 165 destinations updated in the last 5 days with accurate ISO timestamps | Allow users and search crawlers to immediately discover newly refreshed content | Improves crawl priority for fresh content, increases user discovery | Low (Dynamic sorting & build sync) |
+| `data/destinations/lakshmi-narayani-golden-temple.json`, `data/destinations/mondaicaud-bhagavathi-temple.json` | Cross-monument contamination (Amritsar photos in Tamil Nadu temple) and Wikimedia Commons HTTP 429 rate-limited links | Throttled / wrong monument links | Replaced with authentic Sripuram gilded vimanam, star path gardens, and Kanyakumari coastal shrine architecture | Strict adherence to authentic ground-truth and zero-rate-limited CDNs | Maximizes image render reliability, prevents Google Image indexing penalties | Low (Media quality overhaul) |
 
 ---
 

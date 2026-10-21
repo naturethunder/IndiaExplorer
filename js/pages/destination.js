@@ -1320,8 +1320,12 @@ function main(dest, idx) {
       }).join('') +
       '</div>' +
       '<!-- Arrows -->' +
-      '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo">‹</button>' +
-      '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo">›</button>' +
+      '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo">' +
+      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>' +
+      '</button>' +
+      '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo">' +
+      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>' +
+      '</button>' +
       '<!-- 5 Dots -->' +
       '<div id="destOvDots" class="dest-ov-dots" role="group" aria-label="Photo navigation">' +
       real5Photos.map(function (_, i) {

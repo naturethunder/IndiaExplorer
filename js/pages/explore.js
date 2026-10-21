@@ -241,6 +241,10 @@ function renderTypeButtons() {
     b.setAttribute('aria-pressed', filters.type === t.id ? 'true' : 'false');
     b.addEventListener('click', function () {
       filters.type = t.id;
+      if (t.id === 'recently_updated') {
+        sortBy = 'latest';
+        if (sortSel) sortSel.value = 'latest';
+      }
       apply();
       syncFilterActive();
     });
@@ -609,6 +613,8 @@ function readFiltersFromUrl() {
       newSortBy = s;
       hasUrlParams = true;
     }
+  } else if (newFilters.type === 'recently_updated') {
+    newSortBy = 'latest';
   }
 
   // If no params in URL, start with fresh clean filters and clear any stale session state

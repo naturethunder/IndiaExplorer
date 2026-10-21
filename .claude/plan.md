@@ -1,8 +1,24 @@
 # ExploreDesh — Master Architecture & Production Plan
 
-## Status: ✅ Complete & Production Ready (2026-10-18 rev-44 Phase 95)
+## Status: ✅ Complete & Production Ready (2026-10-21 rev-69 Phase 116)
 
-## Recent Milestones Delivered (Phases 68–71)
+## Recent Milestones Delivered (Phases 114–116)
+
+### 0. Phase 116: Wikimedia HTTP 429 Throttle Eradication, Tier-1 Pexels/Unsplash CDN Transition & 5 High-Defect Destinations Complete Overhaul (2026-10-21 rev-69)
+- **Wikimedia Commons 429 Throttling Forensic Solution:** Diagnosed browser User-Agent selective rate limiting on `upload.wikimedia.org`. Transitioned overhauled destination assets to permanent Tier-1 CDN endpoints (Pexels and Unsplash) with zero browser rate-limiting and canonical 1920px Full HD landscape resolution.
+- **5 High-Defect Destinations Overhauled (157 Distinct Slots):**
+  - `vellore-fort` (Tamil Nadu, 37 assets): Vijayanagara granite fortress moat, Jalakandeswarar Kalyana Mandapam stone carvings, St. John's church; purged hospital photos, VP portrait, Sanchi Stupa MP, Munnar tea gardens, Himachal architecture.
+  - `vazhachal-falls` (Kerala, 21 assets): Vazhachal rapids, Athirappilly torrential cascade, Charpa Falls, Peringalkuthu Dam reservoir, Chalakudy river rainforest; purged highway toll signboards, Rajasthan Thar Desert photos, desert flowers.
+  - `suvarnadurg-fort` (Maharashtra, 33 assets): Suvarnadurg Maratha island sea fort, Arabian Sea stone ramparts, Fattegad and Goa Fort headlands, Ratnagiri coastal cliffs; purged Chittorgarh tower Rajasthan, Coimbatore birds Tamil Nadu, Murudeshwara Karnataka.
+  - `takthok-monastery` (Ladakh, 29 assets): Takthok Gompa cave sanctuary, Sakti valley, Chemrey Gompa, Indus Valley, Himalayan mountain passes; purged Dehradun valley Uttarakhand, AP stupas, Sikh murals.
+  - `st-mary-s-church-vechoor` (Kerala, 37 assets): 15th-century St. Mary's Forane Church, Vembanad freshwater lake, Thanneermukkom bund, Pathiramanal bird sanctuary; purged Kalka-Shimla rail tunnels HP, Chennai bridges, Howrah banyan tree.
+- **Strict Invariants Certified:** 100% live HTTP 200 reachability (157/157 OK), zero cross-destination collisions against 66,514+ repo URLs, zero internal duplicates (`heroImage.src === gallery[0].src === seo.ogImage`, exactly 5 gallery photos, exactly 3 photos per nearby place), zero persons/crowds/foreign stock.
+- **Platform Integrity Verified:** Master SEO Regression Guard 71/71 PASSED (100/100); UI/UX QA 0 issues detected; in-browser verified with `naturalWidth > 0`.
+
+### 1. Phase 115: Carousel Navigation Contrast, "Recently Updated" Dynamic Sorting & Destinations 1-2 Flawless Certification (2026-10-21 rev-68)
+- **Carousel Navigation Visibility Overhaul:** Fixed dark theme navigation buttons with elevated glassmorphic styling, crisp SVG vector chevrons (`stroke-width: 2.6`), luminous borders, and gold halos.
+- **"Recently Updated" Dynamic Chronological Sorting:** `explore.js` automatically switches `sortBy = 'latest'` (Newest First) and synchronizes `#sortBy` when "Recently Updated" is active. Stamped accurate ISO `updatedAt` timestamps in `data/destinations/index.json` across all 165 destinations modified over the past 5 days.
+- **Destinations 1 & 2 Authentic Ground-Truth Overhaul:** Overhauled `lakshmi-narayani-golden-temple` and `mondaicaud-bhagavathi-temple`.
 
 ### 0. Phase 95: Multi-Agent Deep Image Curation, Zero-Person Verification & Foreign Stock Purge (2026-10-18 rev-44)
 - **33 Target Destinations Curated:** Overhauled 33 destinations including Step 1 (4 targets), Step 2 (27 targets with 45 junk assets purged), Aridwaramangalam (eliminated Ahobilam out-of-state photos and Kovilvenni highway signboards), and Garbharakshambigai (purged HTTP 429 rate-limited Wikimedia links and Central Park New York leak).

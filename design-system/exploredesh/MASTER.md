@@ -8,7 +8,7 @@
 ---
 
 **Project:** ExploreDesh  
-**Last Updated:** 2026-10-15 (rev-13 Phase 89)  
+**Last Updated:** 2026-10-21 (rev-69 Phase 116)  
 **Category:** Luxury Travel & Cultural Discovery  
 
 ---

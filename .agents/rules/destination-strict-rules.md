@@ -7,7 +7,7 @@ trigger: always_on
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-10-18 (Phase 95).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Pexels/Unsplash only. Wikimedia Commons direct hotlinks are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
+> **Last updated: 2026-10-21 (Phase 116 rev-69).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Tier-1 Pexels/Unsplash CDNs. Wikimedia Commons direct hotlinks returning HTTP 429 rate limits are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
 
 ---
 
