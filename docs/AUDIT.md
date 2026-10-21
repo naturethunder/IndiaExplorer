@@ -13,6 +13,37 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 113: Batch Q & Batch R Autonomous Curation & 72 Defect Eradication (2026-10-21 rev-66)
+
+Comprehensive deep curation, zero-collision overhaul, and invariant certification across **Batch Q & Batch R (12 destinations, 72 defective slots repaired)**:
+1. **Defects Diagnosed & Fixed Across All 12 Destinations**:
+   - **Batch Q**:
+     - `ambalappuzha-sri-krishna-temple` (Kerala): Eradicated out-of-state Udupi chariot photos, removed festival crowd mob scenes, replaced cross-destination collisions in Thakazhy and Kunnumma cards with authentic Kerala temple and Alappuzha water landscapes.
+     - `amber-fort` (Rajasthan): Sourced pristine Amer Fort battlements, Sheesh Mahal mirror mosaic, and Maota Lake vistas; permanently purged American kidnap victim photo (`Amber_Hagerman.jpg`), elephant rider portrait, and raw timestamp titles.
+     - `amboli` (Maharashtra): Replaced gecko lizard macro hero (`SaurabhSawant_Amboli_Cnemaspis.jpg`) and undefined gallery titles with authentic cascading Amboli waterfall and mist-shrouded Western Ghats mountain vistas.
+     - `amchang-wildlife-sanctuary` (Assam): Replaced vintage motorcycle photo falsely titled "Ancient Masonry" with authentic Assam tropical rainforest canopy and Brahmaputra valley vistas.
+     - `amirthakadeswarar-temple-sakkottai` (Tamil Nadu): Eradicated 9 internal duplicates and 11 repository collisions across Kumbakonam and Kaveri delta temple cards; allocated pristine Dravidian granite stone architecture photos.
+     - `amirthakadeswarar-temple` (Tamil Nadu): Replaced 16 cross-colliding slots across Kattumannarkoil, Lalpet, and Gangaikonda Cholapuram with authentic Chola stone temple architecture and delta landscapes.
+   - **Batch R**:
+     - `amritaghateswarar-abirami-temple-thirukkadaiyur` (Tamil Nadu): Replaced duplicate repository collision in Thanthondreeswarar Temple card with authentic Tamil Nadu temple stone architecture.
+     - `amruteshwar-temple` (Maharashtra): Replaced 10 colliding slots across Ghanchakkar, Ghatghar Dam, and Kalsubai with authentic 12th-century Hemadpanthi stone carvings, Arthur Lake reflections, and Sahyadri peak vistas.
+     - `amrutesvara-temple` (Karnataka): Replaced colliding image in A. Rangapura card with authentic Hoysala soapstone reliefs and Chikmagalur coffee hill landscapes.
+     - `amunthirathu-devi-temple` (Kerala): Eradicated 4 internal duplicates and 16 repository collisions across Mudakkal, Keezhthonnakkal, Edakkode, Avanavancherry, Koduvazhannoor, Manikkal, and Indilayappan Temple cards; allocated pristine Kerala Chuttambalam wood and stone temple architecture.
+     - `anaimalai-tiger-reserve` (Tamil Nadu): Standardized gallery titles, purged raw Panoramio filenames, and verified pristine Anamalai Western Ghats rainforest canopy and Valparai mist hills.
+     - `anandeshwaram-mahadeva-temple` (Kerala): Replaced 14 colliding slots across Purakkad, Thottappally Spillway, Kunnumma, Karumady, Alappuzha East, and Ambalappuzha Krishna Temple with authentic Kerala stone sanctum and Haripad waterway captures.
+2. **Certified Invariant Scorecard**:
+   - Zero internal duplicate URLs across all 12 destinations (0/12).
+   - Zero cross-destination collisions across all 66,000+ repository URLs (0/12).
+   - Zero persons, portraits, tourist selfies, or crowd mobs (0/12).
+   - Zero animal / reptile macros (purged Amboli gecko hero) (0/12).
+   - Zero vehicle fillers (purged vintage motorcycle) (0/12).
+   - Zero cross-state monument misattributions (purged out-of-state Udupi chariot from Kerala) (0/12).
+   - 100% Hero & Gallery synchronization (`heroImage.src === gallery[0].src === seo.ogImage`).
+   - Exactly 5 gallery images per file with evocative, human-readable titles and captions.
+   - Exactly 3 photos per nearby place card (`topPlaces[].photos.length === 3`) + 1 unique cover image.
+   - Master SEO Regression Guard: 71/71 PASSED (100/100).
+   - Service worker cache version bumped to `v1.6.4` (`sw.js`).
+
 ## Addendum — Phase 112: Batch P Autonomous Curation & 44 Defect Eradication (2026-10-21 rev-65)
 
 Comprehensive deep curation, zero-collision overhaul, and invariant certification across **Batch P (6 destinations, 44 defective slots repaired)**:

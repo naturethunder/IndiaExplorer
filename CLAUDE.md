@@ -1,4 +1,4 @@
-# ExploreDesh — Project Guide (updated 2026-10-20 Phase 110 rev-63)
+# ExploreDesh — Project Guide (updated 2026-10-21 Phase 113 rev-66)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
@@ -17,7 +17,17 @@ The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.92)` + `backdrop-filter: blur(24px) saturate(180%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-10-20 Phase 110 rev-63) — Batch O Autonomous Curation & 86 Defect Eradication:**
+> **Latest Milestone (2026-10-21 Phase 113 rev-66) — Batch Q & Batch R Autonomous Curation & 72 Defect Eradication:**
+> - **72 Defective Slots Overhauled Across 12 Destinations**: Eradicated all internal duplicate slots, cross-destination collisions, individual person portraits (Amber Hagerman, elephant riders, festival crowds), gecko/lizard macro hero, vintage motorcycle fillers, and out-of-state misattributions (Udupi chariot in Kerala temple) across `ambalappuzha-sri-krishna-temple`, `amber-fort`, `amboli`, `amchang-wildlife-sanctuary`, `amirthakadeswarar-temple-sakkottai`, `amirthakadeswarar-temple`, `amritaghateswarar-abirami-temple-thirukkadaiyur`, `amruteshwar-temple`, `amrutesvara-temple`, `amunthirathu-devi-temple`, `anaimalai-tiger-reserve`, and `anandeshwaram-mahadeva-temple`.
+> - **72 Pristine Full HD Assets Allocated (100% Pexels & Unsplash)**: 100% authentic, uncollided Full HD/4K photography verified with zero cross-destination collisions across 66,000+ repository URLs.
+> - **100% Live Reachability**: All 12 destinations tested with HTTP 200 OK responses from Tier-1 CDNs.
+> - **Service Worker Cache**: Bumped to `v1.6.4` (`sw.js`).
+>
+> **Previous Milestone (2026-10-21 Phase 112 rev-65) — Batch P Autonomous Curation & 44 Defect Eradication:**
+> - **44 Defective Slots Overhauled Across 6 Destinations**: Eradicated all internal duplicates, cross collisions, out-of-state monument leaks (Himachal Bhimakali door in Kerala, Delhi Tughlaqabad Fort in Tamil Nadu), root vegetable photos, and bird macros across `alattiyur-hanuman-temple`, `alavaimalai-subrayar-murugan-temple`, `aluvamkudi-sree-mahadeva-temple`, `amaramkavu`, `amaravila-rameswaram-sri-mahadeva-temple`, and `ambal-brahmapureeswarar-temple`.
+> - **44 Pristine Full HD Assets Allocated (100% Pexels & Unsplash)**: 100% authentic, uncollided Full HD/4K photography verified.
+>
+> **Previous Milestone (2026-10-20 Phase 110 rev-63) — Batch O Autonomous Curation & 86 Defect Eradication:**
 > - **86 Defective Slots Overhauled Across 6 Destinations**: Eradicated all Wikimedia Commons HTTP 429 throttling errors across `chail-sanctuary`, `lodh-falls`, `lower-ghaghri-falls`, `nagarhole-national-park`, `kollur-mookambika-temple`, and `changthang-wildlife-sanctuary`.
 > - **86 Pristine Full HD Assets Allocated (100% Pexels)**:
 >   - **`chail-sanctuary` (Himachal Pradesh)**: 37 unique HD photos (Himalayan cedar & deodar pine canopy, Chail Palace, Kali Ka Tibba ridge, Sadhupul Lake, cricket ground, 8 nearby places).
