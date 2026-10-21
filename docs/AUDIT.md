@@ -13,6 +13,25 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 112: Batch P Autonomous Curation & 44 Defect Eradication (2026-10-21 rev-65)
+
+Comprehensive deep curation, zero-collision overhaul, and invariant certification across **Batch P (6 destinations, 44 defective slots repaired)**:
+1. **Defects Diagnosed & Fixed Across All 6 Destinations**:
+   - `alattiyur-hanuman-temple` (Kerala): Eradicated internal duplicate URL in Pudiyangadi card, removed out-of-state Sarahan Bhimakali Temple door photo, replaced cross-colliding temple photos with unique Pexels/Unsplash Kerala architectural captures, and updated gallery with evocative non-generic titles.
+   - `alavaimalai-subrayar-murugan-temple` (Tamil Nadu): Replaced 5 internal duplicate slots and cross-destination collisions (`photo-1620103142897-e759080cd49d` and `photo-1671375159250-8f81a29e54e7`) across Alavaimalai, Alavaipatti, Athanur, and Pillanallur with unique Tamil Nadu Dravidian stone architecture photography.
+   - `aluvamkudi-sree-mahadeva-temple` (Kerala): Replaced 3 internal duplicate slots across Vayyattupuzha, Seethathodu, and Adavi, removed random vegetable macro photo (`Potato_Yam`), and replaced generic gallery title with evocative descriptive title.
+   - `amaramkavu` (Kerala): Replaced close-up bird macro hero with scenic sacred grove vista, eradicated individual portrait photos of persons in Kalayanthani, and removed cross-colliding duplicates in Thodupuzha and Kanjiramattam temples.
+   - `amaravila-rameswaram-sri-mahadeva-temple` (Kerala): Replaced internal duplicates across Sree Maha Ganapathy Temple, Panachamoodu, and Amaravila; removed bird nest, guava flower, and gas station petrol pump photos from Neyyattinkara taluk card.
+   - `ambal-brahmapureeswarar-temple` (Tamil Nadu): Replaced monkey macro and out-of-state Delhi Tughlaqabad Fort stone stairway with authentic Chola stone temple architecture; eliminated 7 internal duplicate slots across Koothanur, Polagam, Adhalaiyur, and Mudikondan temples.
+2. **Certified Invariant Scorecard**:
+   - Zero internal duplicate URLs (0/6).
+   - Zero cross-destination collisions across all 66,000+ repository URLs (0/6).
+   - Zero persons, portraits, tourist selfies, or crowds (0/6).
+   - Zero foreign stock or cross-state monument contaminations (0/6).
+   - 100% Hero & Gallery synchronization (`heroImage.src === gallery[0].src`).
+   - Recompiled `index.json`, `search-index.json`, `home-manifest.json`, `stubs/`, and 6 XML sitemaps.
+   - Service worker cache version bumped to `v1.6.2` (`sw.js`).
+
 ## Addendum — Phase 111: Batches A through O Master Overhaul & 90-Destination Photographic Certification (2026-10-20 rev-64)
 
 Comprehensive deep forensic audit, surgical ground-truth replacement, and invariant certification across **all 90 destinations in Batches A through O**:

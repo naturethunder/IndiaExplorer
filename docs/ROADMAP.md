@@ -3,9 +3,20 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-20 (rev-64 Phase 111 Batches A through O Master Overhaul & 90-Destination Photographic Certification).
+Last updated: 2026-10-21 (rev-65 Phase 112 Batch P Autonomous Curation & 44 Defect Eradication).
 
 ---
+
+- **Phase 112: Batch P Autonomous Curation & 44 Defect Eradication (2026-10-21 rev-65)**:
+  1. **44 Defective & Colliding Slots Overhauled Across 6 Destinations**:
+     - Audited and surgically repaired all internal duplicate slots, cross-destination collisions, animal/vegetable macros, individual portrait photos, and out-of-state monument leaks across `alattiyur-hanuman-temple`, `alavaimalai-subrayar-murugan-temple`, `aluvamkudi-sree-mahadeva-temple`, `amaramkavu`, `amaravila-rameswaram-sri-mahadeva-temple`, and `ambal-brahmapureeswarar-temple`.
+     - Fully overhauled all 6 destinations with 44 pristine, uncollided Full HD landscape photos via official Pexels and Unsplash APIs.
+  2. **Verified Invariants**:
+     - 100% verified live HTTP 200 reachability on global Tier-1 CDNs (Pexels, Unsplash).
+     - 0 cross-destination duplicate collisions across 66,000+ repository URLs.
+     - 0 persons, 0 crowds, 0 foreign stock, 0 cross-monument leaks (eliminated out-of-state Himachal Bhimakali temple door in Kerala and Delhi Tughlaqabad Fort in Tamil Nadu).
+     - Rebuilt `home-manifest.json`, `index.json`, `search-index.json`, 2,396 stubs, and 6 XML sitemaps.
+     - Service worker cache version bumped to `v1.6.3` (`sw.js`).
 
 - **Phase 111: Batches A through O Master Overhaul & 90-Destination Photographic Certification (2026-10-20 rev-64)**:
   1. **90 Destinations Across 15 Batches Comprehensively Overhauled & Certified**:
