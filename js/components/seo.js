@@ -116,7 +116,7 @@ export function destinationJsonLd(dest, canonicalPath) {
   if (!dest) return null;
   const ov = dest.overview || {};
   const description = ov.description || ov.short || dest.short || dest.description || '';
-  const canonical = absUrl(canonicalPath || ('destination.html?slug=' + encodeURIComponent(dest.slug || '')));
+  const canonical = absUrl(canonicalPath || ('destination?slug=' + encodeURIComponent(dest.slug || '')));
 
   const imgSrc = typeof dest.heroImage === 'string'
     ? dest.heroImage
@@ -247,7 +247,7 @@ export function websiteJsonLd() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://exploredesh.com/destinations.html?q={search_term_string}',
+        urlTemplate: 'https://exploredesh.com/destinations?search={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

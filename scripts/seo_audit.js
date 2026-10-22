@@ -165,7 +165,7 @@ if (fs.existsSync(stubsDir)) {
   let stubsValid = true;
   sample.forEach(f => {
     const txt = fs.readFileSync(path.join(stubsDir, f), 'utf8');
-    if (!txt.includes('link rel="canonical" href="https://exploredesh.com/destination.html?slug=')) {
+    if (!txt.includes('link rel="canonical" href="https://exploredesh.com/destination?slug=')) {
       stubsValid = false;
     }
   });

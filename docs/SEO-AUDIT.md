@@ -33,13 +33,13 @@
 
 ### 2.2 Sitemaps Hierarchy
 ExploreDesh implements an optimal XML Sitemap Index (`sitemap.xml`) dividing the catalog into 5 modular children:
-1. `sitemap-main.xml`: 5 static platform pillar pages (`/`, `destinations.html`, `ai-finder.html`, `about.html`, `contact.html`).
+1. `sitemap-main.xml`: 5 static platform pillar pages (`/`, `destinations`, `ai-finder`, `about`, `contact`).
 2. `sitemap-states.xml`: 52 high-value filter landing pages (states with >=3 destinations, primary destination types, and travel months).
 3. `sitemap-destinations-1.xml`: 1,000 destination pages with Google Image Sitemap metadata.
 4. `sitemap-destinations-2.xml`: 1,000 destination pages with Google Image Sitemap metadata.
 5. `sitemap-destinations-3.xml`: 396 destination pages with Google Image Sitemap metadata.
 - **Total Sitemapped URLs:** **2,453**
-- **Total Indexed Images:** **11,965**
+- **Total Indexed Images:** **11,980**
 
 ---
 
@@ -47,15 +47,18 @@ ExploreDesh implements an optimal XML Sitemap Index (`sitemap.xml`) dividing the
 
 ### 3.1 Canonical Implementation
 1. **Static Platform Templates (`index.html`, `destinations.html`, etc.)**:
-   - Hardcoded self-referencing absolute canonical tags (e.g. `https://exploredesh.com/destinations.html`).
-2. **Dynamic Destination Detail Pages (`destination.html?slug=<slug>`)**:
+   - Hardcoded self-referencing absolute canonical tags using clean URLs (`https://exploredesh.com/destinations`, `https://exploredesh.com/about`, `https://exploredesh.com/contact`, `https://exploredesh.com/ai-finder`, `https://exploredesh.com/privacy`, `https://exploredesh.com/terms`).
+2. **Dynamic Destination Detail Pages (`destination?slug=<slug>`)**:
    - Generic root canonical (`destination.html`) is strictly omitted from static HTML to prevent duplicate canonicalization collisions.
-   - Dynamic JavaScript (`js/components/seo.js` via `applySEO`) injects the exact self-referencing canonical:
-     `https://exploredesh.com/destination.html?slug=<slug>`
+   - Dynamic JavaScript (`js/components/seo.js` via `applySEO`) and the head fast-path script inject the exact clean self-referencing canonical:
+     `https://exploredesh.com/destination?slug=<slug>`
    - Unrecognized/missing slugs trigger `markDestinationNotFound()`, removing canonical tags and injecting `<meta name="robots" content="noindex, follow">`.
-3. **Filter Landings (`destinations.html?state=...`)**:
-   - Single-parameter valid states, categories, and months declare dedicated self-referencing canonicals in sitemaps and runtime (`explore.js`).
-   - Mixed, noisy, or empty multi-filter states apply `noindex, follow` and canonicalize back to `destinations.html`.
+3. **Filter Landings (`destinations?state=...`)**:
+   - Single-parameter valid states, categories, and months declare dedicated clean self-referencing canonicals in sitemaps and runtime (`explore.js`).
+   - Mixed, noisy, or empty multi-filter states apply `noindex, follow` and canonicalize back to `/destinations`.
+4. **Wave 1 Raw HTML Pre-rendering & State Directory**:
+   - `index.html`: Pre-renders 10 top destination cards in `#popular-grid`.
+   - `destinations.html`: Pre-renders 24 complete destination cards in `#grid` and embeds a 36-state navigation directory.
 
 ---
 

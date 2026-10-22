@@ -289,8 +289,8 @@ console.log('7. Analyzing internal link graph & orphan URLs...');
 // Compare sitemapped URLs vs index destinations
 const sitemappedDestSlugs = new Set();
 sitemapUrlList.forEach(url => {
-  if (url.includes('destination.html?slug=')) {
-    const uSlug = decodeURIComponent(url.split('destination.html?slug=')[1]);
+  if (url.includes('destination?slug=') || url.includes('destination.html?slug=')) {
+    const uSlug = decodeURIComponent(url.split(/destination(?:\.html)?\?slug=/)[1]);
     sitemappedDestSlugs.add(uSlug);
   }
 });

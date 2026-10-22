@@ -94,7 +94,7 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 const BASE_SEO = {
   title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
   description: 'Discover 2,396 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
-  canonicalPath: 'destinations.html',
+  canonicalPath: 'destinations',
   heading: '2,396 Destinations',
   subheading: 'Across 36 States & UTs',
 };
@@ -118,7 +118,7 @@ function landingSeo(resultLength) {
     const stateSeo = {
       title: 'Places to Visit in ' + state + ' | ExploreDesh',
       description: 'Explore ' + count + ' places to visit in ' + state + ', with top attractions, best travel months, stays across budgets and practical route guides.',
-      canonicalPath: 'destinations.html?state=' + encodeURIComponent(state),
+      canonicalPath: 'destinations?state=' + encodeURIComponent(state),
       heading: 'Places to Visit in ' + state,
       subheading: count + ' Destination Guides',
       breadcrumb: state,
@@ -136,7 +136,7 @@ function landingSeo(resultLength) {
     return {
       title: 'Best ' + label + ' in India | ExploreDesh',
       description: 'Discover ' + count + ' of the best ' + label.toLowerCase() + ' in India, with destination guides, ideal travel months, stays and practical routes.',
-      canonicalPath: 'destinations.html?type=' + encodeURIComponent(filters.type),
+      canonicalPath: 'destinations?type=' + encodeURIComponent(filters.type),
       heading: 'Best ' + label + ' in India',
       subheading: count + ' Destination Guides',
       breadcrumb: label,
@@ -148,7 +148,7 @@ function landingSeo(resultLength) {
     return {
       title: 'Best Places to Visit in ' + monthName + ' | ExploreDesh',
       description: 'Plan an India trip in ' + monthName + ' with ' + count + ' recommended destinations, seasonal highlights, stays across budgets and practical travel guides.',
-      canonicalPath: 'destinations.html?month=' + filters.month,
+      canonicalPath: 'destinations?month=' + filters.month,
       heading: 'Best Places to Visit in ' + monthName,
       subheading: count + ' Seasonal Picks Across India',
       breadcrumb: monthName + ' Travel',
@@ -159,7 +159,7 @@ function landingSeo(resultLength) {
     return {
       title: 'Best Places to Visit in ' + filters.season + ' in India | ExploreDesh',
       description: 'Discover ' + count + ' recommended destinations to visit during ' + filters.season + ' in India, with seasonal highlights, stays across budgets and practical travel guides.',
-      canonicalPath: 'destinations.html?season=' + encodeURIComponent(filters.season),
+      canonicalPath: 'destinations?season=' + encodeURIComponent(filters.season),
       heading: 'Best Places to Visit in ' + filters.season,
       subheading: count + ' ' + filters.season + ' Destinations Across India',
       breadcrumb: filters.season + ' Travel',

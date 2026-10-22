@@ -19,7 +19,7 @@ function xmlEscape(s) {
 }
 
 function stubHTML(d) {
-  const relUrl = '/destination.html?slug=' + encodeURIComponent(d.slug);
+  const relUrl = '/destination?slug=' + encodeURIComponent(d.slug);
   const canonicalUrl = ORIGIN + relUrl;
   const title = xmlEscape(d.title + ' Travel Guide — Places, Hotels, How to Reach | ExploreDesh');
   const desc = xmlEscape((d.short || '').replace(/\s+$/, '') + ' Plan your ' + d.title + ' trip: top attractions, stays and how to reach.');

@@ -18,9 +18,9 @@ module.exports = {
     pexels: {
       baseUrl: 'https://api.pexels.com/v1',
       searchEndpoint: '/search',
-      rateLimit: { requests: 200, per: 3600000 }, // 200/hour
-      maxPages: 3,
-      perPage: 20,
+      rateLimit: { requests: 20000, per: 3600000 }, // 25,000/month real quota
+      maxPages: 5,
+      perPage: 40,
     },
     unsplash: {
       baseUrl: 'https://api.unsplash.com',
@@ -31,8 +31,8 @@ module.exports = {
     },
     wikimedia: {
       baseUrl: 'https://commons.wikimedia.org/w/api.php',
-      rateLimit: { requests: 100, per: 60000 }, // 100/min (Unlimited)
-      maxResults: 15,
+      rateLimit: { requests: 300, per: 60000 }, // Unlimited public API
+      maxResults: 25,
     },
     pixabay: {
       baseUrl: 'https://pixabay.com/api/',

@@ -9,7 +9,7 @@ import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from './icons.js';
 
 export function destUrl(slug) {
-  return 'destination.html?slug=' + encodeURIComponent(slug);
+  return 'destination?slug=' + encodeURIComponent(slug);
 }
 
 /**

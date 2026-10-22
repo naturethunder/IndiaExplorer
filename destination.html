@@ -34,7 +34,7 @@
         var slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, '').replace(/\.html$/i, '').replace(/\.json$/i, '') : '';
         if (slug) {
           var cleanSlug = slug.replace(/['".,]/g, '').trim().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-          var canonicalUrl = 'https://exploredesh.com/destination.html?slug=' + encodeURIComponent(cleanSlug);
+          var canonicalUrl = 'https://exploredesh.com/destination?slug=' + encodeURIComponent(cleanSlug);
           var link = document.createElement('link');
           link.rel = 'canonical';
           link.href = canonicalUrl;
@@ -99,7 +99,7 @@
     </svg>
     <h2 class="text-2xl font-bold text-white">Destination not found</h2>
     <p class="text-gray-400">We don't have a page for this destination yet.</p>
-    <a href="destinations.html" class="btn btn-primary">Browse all destinations</a>
+    <a href="/destinations" class="btn btn-primary">Browse all destinations</a>
   </div>
 
   <!-- MAIN CONTENT -->
@@ -118,7 +118,7 @@
             <ol class="flex items-center gap-1.5 text-xs text-white/80 list-none p-0 m-0">
               <li><a href="/" class="hover:text-amber-300 transition-colors">Home</a></li>
               <li aria-hidden="true" class="text-white/40">/</li>
-              <li><a href="destinations.html" class="hover:text-amber-300 transition-colors">Destinations</a></li>
+              <li><a href="/destinations" class="hover:text-amber-300 transition-colors">Destinations</a></li>
               <li aria-hidden="true" class="text-white/40">/</li>
               <li><span id="crumbName" class="text-amber-300 font-semibold" aria-current="page">...</span></li>
             </ol>
@@ -236,7 +236,7 @@
               similar landscapes,
               altitudes, and travel vibes across India.</p>
           </div>
-          <a href="destinations.html" id="similarExploreBtn"
+          <a href="/destinations" id="similarExploreBtn"
             class="inline-flex items-center gap-1.5 text-sm font-bold text-amber-300 hover:text-amber-200 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/25 px-4 py-2.5 rounded-xl transition-all shrink-0">
             <span id="similarExploreAllText">Explore Similar Destinations</span>
             <span>→</span>
@@ -339,7 +339,7 @@
       </svg>
       Home
     </a>
-    <a href="destinations.html" class="mobile-nav-btn" aria-label="Explore destinations">
+    <a href="/destinations" class="mobile-nav-btn" aria-label="Explore destinations">
       <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
@@ -424,7 +424,7 @@
       <p style="font-size:1.2rem;font-weight:bold">JavaScript Required</p>
       <p style="color:#94a3b8">ExploreDesh requires JavaScript to display destination guides. Please enable JavaScript
         in your browser.</p>
-      <a href="destinations.html" style="color:#E5C07B;text-decoration:underline">Browse all destinations</a>
+      <a href="/destinations" style="color:#E5C07B;text-decoration:underline">Browse all destinations</a>
     </div>
   </noscript>
   <script>

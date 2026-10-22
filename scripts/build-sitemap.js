@@ -24,11 +24,11 @@ const DESTINATIONS_PER_CHUNK = 1000;
 
 // Static pages with crawl priorities.
 const STATIC = [
-  { loc: '', priority: '1.0', changefreq: 'weekly' },
-  { loc: 'destinations.html', priority: '0.9', changefreq: 'weekly' },
-  { loc: 'ai-finder.html', priority: '0.8', changefreq: 'monthly' },
-  { loc: 'about.html', priority: '0.4', changefreq: 'yearly' },
-  { loc: 'contact.html', priority: '0.4', changefreq: 'yearly' },
+  { loc: '', file: 'index.html', priority: '1.0', changefreq: 'weekly' },
+  { loc: 'destinations', file: 'destinations.html', priority: '0.9', changefreq: 'weekly' },
+  { loc: 'ai-finder', file: 'ai-finder.html', priority: '0.8', changefreq: 'monthly' },
+  { loc: 'about', file: 'about.html', priority: '0.4', changefreq: 'yearly' },
+  { loc: 'contact', file: 'contact.html', priority: '0.4', changefreq: 'yearly' },
 ];
 
 function xmlEscape(s) {
@@ -90,7 +90,7 @@ const subSitemaps = [];
 
 // 1. sitemap-main.xml (Static core pages)
 const mainEntries = STATIC.map(s => {
-  const filePath = path.join(ROOT, s.loc || 'index.html');
+  const filePath = path.join(ROOT, s.file || (s.loc ? s.loc + '.html' : 'index.html'));
   const mtime = fs.existsSync(filePath) ? fs.statSync(filePath).mtime.toISOString().split('T')[0] : TODAY;
   return urlEntry(s.loc, s.priority, s.changefreq, [], mtime);
 });
@@ -108,18 +108,18 @@ const indexMtime = fs.existsSync(path.join(DEST_DIR, 'index.json'))
 idx.meta.states.forEach(state => {
   const destinationCount = idx.destinations.filter(d => d.state === state).length;
   if (destinationCount >= 3) {
-    stateEntries.push(urlEntry('destinations.html?state=' + encodeURIComponent(state), '0.8', 'weekly', [], indexMtime));
+    stateEntries.push(urlEntry('destinations?state=' + encodeURIComponent(state), '0.8', 'weekly', [], indexMtime));
   }
 });
 
 // Category / type landings
 idx.meta.types.forEach(type => {
-  stateEntries.push(urlEntry('destinations.html?type=' + encodeURIComponent(type.id), '0.8', 'weekly', [], indexMtime));
+  stateEntries.push(urlEntry('destinations?type=' + encodeURIComponent(type.id), '0.8', 'weekly', [], indexMtime));
 });
 
 // Monthly travel guides
 idx.meta.months.forEach(month => {
-  stateEntries.push(urlEntry('destinations.html?month=' + month.num, '0.7', 'monthly', [], indexMtime));
+  stateEntries.push(urlEntry('destinations?month=' + month.num, '0.7', 'monthly', [], indexMtime));
 });
 
 fs.writeFileSync(path.join(ROOT, 'sitemap-states.xml'), wrapUrlset(stateEntries));
@@ -171,7 +171,7 @@ idx.destinations.forEach(d => {
   }
 
   totalImages += imgList.length;
-  destEntries.push(urlEntry('destination.html?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList, destLastmod));
+  destEntries.push(urlEntry('destination?slug=' + encodeURIComponent(d.slug), '0.8', 'monthly', imgList, destLastmod));
 });
 
 // Split destinations into chunks of DESTINATIONS_PER_CHUNK

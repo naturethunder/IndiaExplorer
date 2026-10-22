@@ -35,7 +35,7 @@ files.forEach(f => {
       if (!globalUrlMap.has(clean)) globalUrlMap.set(clean, new Set());
       globalUrlMap.get(clean).add(f);
 
-      if (/Taj_Mahal_in_March_2004/i.test(clean) && slug !== 'agra') {
+      if (/Taj_Mahal_in_March_2004/i.test(clean) && slug !== 'agra' && slug !== 'taj-mahal') {
         tajViolations++;
         console.error(`[Taj Violation] ${f} has Taj Mahal monument: ${clean}`);
       }

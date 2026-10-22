@@ -17,10 +17,10 @@ import { openOfflineHub, initOfflineHub } from './offlineHub.js';
 // Pill nav: Home / Destinations / Trip Planner / About / Contact.
 const NAV_LINKS = [
   { key: 'home', href: '/', label: 'Home' },
-  { key: 'destinations', href: 'destinations.html', label: 'Destinations' },
-  { key: 'finder', href: 'ai-finder.html', label: 'Trip Planner' },
-  { key: 'about', href: 'about.html', label: 'About' },
-  { key: 'contact', href: 'contact.html', label: 'Contact' },
+  { key: 'destinations', href: '/destinations', label: 'Destinations' },
+  { key: 'finder', href: '/ai-finder', label: 'Trip Planner' },
+  { key: 'about', href: '/about', label: 'About' },
+  { key: 'contact', href: '/contact', label: 'Contact' },
 ];
 
 // Company pages (about/contact/privacy/terms) share the same pill nav.
@@ -63,39 +63,39 @@ function navbarHTML(active, variant) {
 const FOOTER_COLS = [
   {
     title: 'Explore', links: [
-      ['Destinations', 'destinations.html'],
-      ['States', 'destinations.html'],
-      ['Places', 'destinations.html'],
-      ['Hotels', 'destinations.html'],
-      ['Travel Guides', 'ai-finder.html'],
+      ['Destinations', '/destinations'],
+      ['States', '/destinations'],
+      ['Places', '/destinations'],
+      ['Hotels', '/destinations'],
+      ['Travel Guides', '/ai-finder'],
     ]
   },
   {
     title: 'Categories', links: [
-      ['Mountains', 'destinations.html?type=hill_station'],
-      ['Beaches', 'destinations.html?type=beach'],
-      ['Heritage', 'destinations.html?type=heritage'],
-      ['Wildlife', 'destinations.html?type=wildlife'],
-      ['Adventure', 'destinations.html?type=adventure'],
-      ['Road Trips', 'destinations.html?type=road_trips'],
+      ['Mountains', '/destinations?type=hill_station'],
+      ['Beaches', '/destinations?type=beach'],
+      ['Heritage', '/destinations?type=heritage'],
+      ['Wildlife', '/destinations?type=wildlife'],
+      ['Adventure', '/destinations?type=adventure'],
+      ['Road Trips', '/destinations?type=road_trips'],
     ]
   },
   {
     title: 'Resources', links: [
-      ['Itineraries', 'ai-finder.html'],
-      ['Weekend Getaways', 'destinations.html?sort=distance'],
-      ['Weather Guide', 'destinations.html?month=' + (new Date().getMonth() + 1)],
-      ['Packing List', 'ai-finder.html'],
-      ['Budget Planner', 'ai-finder.html'],
+      ['Itineraries', '/ai-finder'],
+      ['Weekend Getaways', '/destinations?sort=distance'],
+      ['Weather Guide', '/destinations?month=' + (new Date().getMonth() + 1)],
+      ['Packing List', '/ai-finder'],
+      ['Budget Planner', '/ai-finder'],
     ]
   },
   {
     title: 'Company', links: [
-      ['About', 'about.html'],
-      ['Contact', 'contact.html'],
-      ['Privacy', 'privacy.html'],
-      ['Terms', 'terms.html'],
-      ['Disclaimer', 'terms.html'],
+      ['About', '/about'],
+      ['Contact', '/contact'],
+      ['Privacy', '/privacy'],
+      ['Terms', '/terms'],
+      ['Disclaimer', '/terms'],
     ]
   },
 ];
@@ -146,16 +146,16 @@ function footerHTML() {
 
 const MOBILE_LINKS = [
   { key: 'home', href: '/', icon: 'home', label: 'Home' },
-  { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
-  { key: 'finder', href: 'ai-finder.html', icon: 'compass', label: 'Planner' },
-  { key: 'beaches', href: 'destinations.html?type=beach', icon: 'waves', label: 'Beaches' },
+  { key: 'destinations', href: '/destinations', icon: 'map', label: 'Explore' },
+  { key: 'finder', href: '/ai-finder', icon: 'compass', label: 'Planner' },
+  { key: 'beaches', href: '/destinations?type=beach', icon: 'waves', label: 'Beaches' },
 ];
 
 const COMPANY_MOBILE_LINKS = [
   { key: 'home', href: '/', icon: 'home', label: 'Home' },
-  { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
-  { key: 'hills', href: 'destinations.html?type=hill_station', icon: 'mountain', label: 'Hills' },
-  { key: 'contact', href: 'contact.html', icon: 'mail', label: 'Contact' },
+  { key: 'destinations', href: '/destinations', icon: 'map', label: 'Explore' },
+  { key: 'hills', href: '/destinations?type=hill_station', icon: 'mountain', label: 'Hills' },
+  { key: 'contact', href: '/contact', icon: 'mail', label: 'Contact' },
 ];
 
 function mobileNavHTML(active, variant) {

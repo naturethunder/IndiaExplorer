@@ -24,7 +24,7 @@ htmlPages.forEach(hp => {
     let clean = link.split('?')[0].split('#')[0];
     if (clean === '' || clean === '/') return;
     if (clean.startsWith('/')) clean = clean.slice(1);
-    if (!fs.existsSync(path.join(ROOT, clean))) {
+    if (!fs.existsSync(path.join(ROOT, clean)) && !fs.existsSync(path.join(ROOT, clean + '.html'))) {
       brokenLinks.push({ page: hp, link: link, clean: clean });
     }
   });

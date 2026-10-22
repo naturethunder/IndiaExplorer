@@ -84,7 +84,7 @@ assert(stubFiles.length === 2396, `Exactly 2,396 fallback redirect stubs exist (
 
 // Check a sample stub for canonical and redirection
 const sampleStub = fs.readFileSync(path.join(STUBS_DIR, 'manali.html'), 'utf8');
-assert(sampleStub.includes('rel="canonical"') && sampleStub.includes('https://exploredesh.com/destination.html?slug=manali'), 'Stubs declare absolute canonical pointing to destination.html?slug=');
+assert(sampleStub.includes('rel="canonical"') && sampleStub.includes('https://exploredesh.com/destination?slug=manali'), 'Stubs declare absolute canonical pointing to destination?slug=');
 assert(sampleStub.includes('window.location.replace'), 'Stubs implement instant client-side redirection');
 
 // 4. Sitemaps Architecture & Counts
@@ -123,12 +123,12 @@ assert(robotsContent.includes('Disallow: /scripts/'), 'robots.txt disallows /scr
 // 6. Core Static HTML Templates Inspection
 const CORE_HTML_PAGES = [
   { file: 'index.html', title: 'ExploreDesh', canonical: 'https://exploredesh.com/' },
-  { file: 'destinations.html', title: 'All Destinations', canonical: 'https://exploredesh.com/destinations.html' },
-  { file: 'about.html', title: 'About', canonical: 'https://exploredesh.com/about.html' },
-  { file: 'contact.html', title: 'Contact', canonical: 'https://exploredesh.com/contact.html' },
-  { file: 'ai-finder.html', title: 'AI', canonical: 'https://exploredesh.com/ai-finder.html' },
-  { file: 'privacy.html', title: 'Privacy Policy', canonical: 'https://exploredesh.com/privacy.html' },
-  { file: 'terms.html', title: 'Terms', canonical: 'https://exploredesh.com/terms.html' },
+  { file: 'destinations.html', title: 'All Destinations', canonical: 'https://exploredesh.com/destinations' },
+  { file: 'about.html', title: 'About', canonical: 'https://exploredesh.com/about' },
+  { file: 'contact.html', title: 'Contact', canonical: 'https://exploredesh.com/contact' },
+  { file: 'ai-finder.html', title: 'AI', canonical: 'https://exploredesh.com/ai-finder' },
+  { file: 'privacy.html', title: 'Privacy Policy', canonical: 'https://exploredesh.com/privacy' },
+  { file: 'terms.html', title: 'Terms', canonical: 'https://exploredesh.com/terms' },
   { file: 'destination.html', title: 'Destination', dynamicCanonical: true }
 ];
 

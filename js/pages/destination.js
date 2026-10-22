@@ -286,7 +286,7 @@ function main(dest, idx) {
   const hotels = (dest.hotels && dest.hotels.length) ? dest.hotels : (dest.stays || dest.accommodations || []);
 
   // ─── SEO ───────────────────────────────────────────────
-  const canonicalPath = 'destination.html?slug=' + encodeURIComponent(dest.slug || '');
+  const canonicalPath = 'destination?slug=' + encodeURIComponent(dest.slug || '');
   const metaTitle = destinationMetaTitle(dest, seoObj);
   const metaDescription = destinationMetaDescription(dest, seoObj);
   applySEO({
@@ -303,12 +303,12 @@ function main(dest, idx) {
   }
   const breadcrumbItems = [
     { name: 'Home', path: '/' },
-    { name: 'Destinations', path: 'destinations.html' },
+    { name: 'Destinations', path: 'destinations' },
   ];
   if (dest.state) {
     breadcrumbItems.push({
       name: dest.state,
-      path: 'destinations.html?state=' + encodeURIComponent(dest.state),
+      path: 'destinations?state=' + encodeURIComponent(dest.state),
     });
   }
   breadcrumbItems.push({ name: dest.title, path: canonicalPath });

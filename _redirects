@@ -1,0 +1,4 @@
+# ExploreDesh Cloudflare Pages Redirects
+# Fix legacy 404 route identified in Google Search Console
+/tour-list-beach/* /destinations?type=beach 301
+/tour-list-beach /destinations?type=beach 301

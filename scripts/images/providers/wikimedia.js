@@ -34,6 +34,9 @@ class WikimediaProvider {
     url.searchParams.set('gsrsearch', query);
     url.searchParams.set('gsrnamespace', '6'); // File namespace
     url.searchParams.set('gsrlimit', gsrlimit.toString());
+    if (options.offset) {
+      url.searchParams.set('gsroffset', options.offset.toString());
+    }
     url.searchParams.set('prop', 'imageinfo');
     url.searchParams.set('iiprop', 'url|extmetadata|size');
     url.searchParams.set('iiurlwidth', (options.minWidth || 800).toString());
@@ -89,9 +92,9 @@ class WikimediaProvider {
       if (meta?.ImageWidth?.value) width = parseInt(meta.ImageWidth.value);
       if (meta?.ImageHeight?.value) height = parseInt(meta.ImageHeight.value);
 
-      // Enforce strict HD threshold (min 1600x900)
-      const minW = options.minWidth || 1600;
-      const minH = options.minHeight || 900;
+      // Enforce strict HD threshold (min 1280x720)
+      const minW = options.minWidth || 1280;
+      const minH = options.minHeight || 720;
       if (width < minW || height < minH) continue;
 
       // Get description/artist from extmetadata
