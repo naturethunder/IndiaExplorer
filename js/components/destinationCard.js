@@ -82,6 +82,8 @@ export function optimizeImageUrl(url, width = 800) {
       u.searchParams.set('auto', 'compress');
       u.searchParams.set('cs', 'tinysrgb');
       u.searchParams.set('w', String(Math.min(width, 2560)));
+      u.searchParams.delete('dpr');
+      u.searchParams.delete('h');
       return u.toString();
     } catch (_) {
       return url;
@@ -93,7 +95,8 @@ export function optimizeImageUrl(url, width = 800) {
       const u = new URL(url);
       u.searchParams.set('auto', 'format');
       u.searchParams.set('w', String(Math.min(width, 2560)));
-      if (!u.searchParams.has('q')) u.searchParams.set('q', '80');
+      u.searchParams.set('q', '75');
+      u.searchParams.delete('h');
       return u.toString();
     } catch (_) {
       return url;
@@ -106,7 +109,7 @@ export function optimizeImageUrl(url, width = 800) {
   return url;
 }
 
-export function cardThumb(d, width = 600) {
+export function cardThumb(d, width = 480) {
   return optimizeImageUrl(cardImg(d), width);
 }
 
@@ -117,11 +120,11 @@ export function cardThumb(d, width = 600) {
  */
 export function trendCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
-  const image = cardThumb(d, 600);
+  const image = cardThumb(d, 480);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="600" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="480" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
@@ -140,7 +143,7 @@ export function trendCardHTML(d, opts = {}) {
 /** Standard grid card. opts: { delay (s), typeIcon, variant: 'trending' | 'explore', priority: boolean } */
 export function destCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
-  const image = cardThumb(d, 600);
+  const image = cardThumb(d, 480);
   const typeBadge = opts.variant === 'explore'
     ? '<span class="dest-badge-type">' + (opts.typeIcon || '') + ' ' + esc(typeLabel(d.type)) + '</span>'
     : '';
@@ -151,7 +154,7 @@ export function destCardHTML(d, opts = {}) {
     '<article class="dest-card-item">' +
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="600" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="480" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     (typeBadge ? '<div class="dest-card-badges-top">' + typeBadge + '</div>' : '') +
@@ -184,12 +187,12 @@ export function destCardHTML(d, opts = {}) {
 /** Large 16/9 hero card (home "Best Hill Stations"). */
 export function heroCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
-  const image = cardThumb(d, 800);
+  const image = cardThumb(d, 640);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="640" height="360" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '</div>' +
     '<div class="p-3 bg-slate-900/90 flex flex-col gap-1">' +
@@ -216,12 +219,12 @@ export function heroCardHTML(d, opts = {}) {
 /** Small square card (home "Explore More" grid). */
 export function miniCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
-  const image = cardThumb(d, 400);
+  const image = cardThumb(d, 320);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="group block" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="400" height="400" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="320" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
     '<div class="absolute bottom-2 left-2 right-2">' +

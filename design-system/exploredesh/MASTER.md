@@ -8,7 +8,7 @@
 ---
 
 **Project:** ExploreDesh  
-**Last Updated:** 2026-10-21 (rev-69 Phase 116)  
+**Last Updated:** 2026-10-24 (rev-73 Phase 120)  
 **Category:** Luxury Travel & Cultural Discovery  
 
 ---
@@ -176,3 +176,80 @@ html[data-theme="light"] body.glass-immersive .mobile-nav a.active {
    - Visual imagery must feature authentic monuments, scenic nature vistas, and architecture exclusively.
    - Strictly 0 portraits, devotees, pilgrims, selfies, tourist mobs, or human crowds.
    - Strictly 0 scraped news accidents, stampedes, fires, or boat disasters in nearby attraction cards. Every place is a legitimate, beautiful tourist landmark.
+
+---
+
+## Universal Editorial Stacked Header System ("100,000% WOW" Architecture)
+
+Introduced in **Phase 120 (rev-73)** to eliminate side-by-side kicker/heading clumping and establish Rolex / Vogue / Condé Nast Traveler editorial hierarchy across all homepage and section headers:
+
+```html
+<div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
+  <div class="monthly-header-left">
+    <h2 class="section-title">Trending Destinations</h2>
+  </div>
+  <div class="monthly-header-right">
+    <a href="destinations.html?sort=trending" class="btn btn-outline btn-sm">
+      <span>View All</span>
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</div>
+```
+
+### Header CSS Rules:
+```css
+.monthly-header-bar--split {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 1.5rem !important;
+  padding-bottom: 1.25rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  margin-bottom: 2.25rem !important;
+}
+
+.monthly-header-left {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.luxury-kicker {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: var(--color-primary, #F5C542) !important;
+  background: rgba(245, 197, 66, 0.1) !important;
+  border: 1px solid rgba(245, 197, 66, 0.25) !important;
+  border-radius: 9999px !important;
+  padding: 0.25rem 0.85rem !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.section-title {
+  display: block !important;
+  width: 100% !important;
+  font-family: var(--font-heading, 'Cinzel', 'Playfair Display', serif) !important;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem) !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .monthly-header-bar--split {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+}
+```

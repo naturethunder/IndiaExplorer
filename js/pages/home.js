@@ -28,7 +28,7 @@ applySEO({
   description: "Discover India's most beautiful destinations. Search hotels by budget, explore top places to visit, and plan your perfect India trip with ExploreDesh.",
   canonicalPath: '/',
   keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner', 'hotels in india'],
-  image: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1920&q=85',
 });
 
 injectJsonLd(websiteJsonLd(), 'website');
@@ -38,14 +38,14 @@ injectJsonLd(websiteJsonLd(), 'website');
   if (!bg) return;
 
   const HERO_PHOTOS = [
-    { name: 'Hawa Mahal, Jaipur', src: 'https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
-    { name: 'City Palace, Udaipur', src: 'https://images.pexels.com/photos/33658452/pexels-photo-33658452.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
-    { name: 'Jaisalmer Fort', src: 'https://images.pexels.com/photos/35130760/pexels-photo-35130760.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Rajasthan' },
-    { name: 'Pangong Tso Lake', src: 'https://images.pexels.com/photos/28355681/pexels-photo-28355681.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Ladakh' },
-    { name: 'Manali Valley', src: 'https://images.pexels.com/photos/994194/pexels-photo-994194.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Himachal Pradesh' },
-    { name: 'Vittala Temple, Hampi', src: 'https://images.pexels.com/photos/38297408/pexels-photo-38297408.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Karnataka' },
-    { name: 'Kanchenjunga from Darjeeling', src: 'https://images.pexels.com/photos/38426620/pexels-photo-38426620.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'West Bengal' },
-    { name: 'Key Monastery, Spiti', src: 'https://images.pexels.com/photos/31307365/pexels-photo-31307365.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Himachal Pradesh' },
+    { name: 'City Palace, Udaipur', src: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1920&q=85', state: 'Rajasthan' },
+    { name: 'Hawa Mahal Palace, Jaipur', src: 'https://images.unsplash.com/photo-1695395550316-8995ae9d35ff?auto=format&fit=crop&w=1920&q=85', state: 'Rajasthan' },
+    { name: 'Pangong Tso Lake', src: 'https://images.unsplash.com/photo-1595071211728-b6a417f1c6cf?auto=format&fit=crop&w=1920&q=85', state: 'Ladakh' },
+    { name: 'Stone Chariot, Hampi', src: 'https://images.unsplash.com/photo-1651073231341-651e8b38b310?auto=format&fit=crop&w=1920&q=85', state: 'Karnataka' },
+    { name: 'Alleppey Backwaters', src: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1920&q=85', state: 'Kerala' },
+    { name: 'Dal Lake at Dawn, Srinagar', src: 'https://images.pexels.com/photos/40348598/pexels-photo-40348598.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Jammu & Kashmir' },
+    { name: 'Key Gompa Monastery, Spiti', src: 'https://images.pexels.com/photos/38140328/pexels-photo-38140328.jpeg?auto=compress&cs=tinysrgb&w=1920', state: 'Himachal Pradesh' },
+    { name: 'Amer Fort Palace, Jaipur', src: 'https://images.unsplash.com/photo-1705861145803-9f7ad1559bc6?auto=format&fit=crop&w=1920&q=85', state: 'Rajasthan' },
   ];
 
   let currentIdx = 0;
@@ -75,9 +75,11 @@ injectJsonLd(websiteJsonLd(), 'website');
           <svg class="w-3.5 h-3.5 text-amber-400 shrink-0" width="14" height="14" style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           <span class="inline-flex items-center gap-1.5"><span class="text-amber-400 font-bold uppercase tracking-wider text-[10px]">FEATURED:</span> <strong class="text-amber-300 font-bold">${photo.name}</strong> <span class="text-white/60">(${photo.state})</span></span>
         </div>
-        <div class="flex items-center gap-1.5 ml-2">
+        <div class="flex items-center gap-1 ml-2">
           ${HERO_PHOTOS.map((_, idx) => `
-            <button type="button" data-hero-idx="${idx}" class="h-2 rounded-full transition-all duration-300 ${idx === currentIdx ? 'bg-amber-400 w-7 shadow-sm shadow-amber-400' : 'bg-white/35 hover:bg-white/80 w-2'}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}></button>
+            <button type="button" data-hero-idx="${idx}" class="hero-dot-btn ${idx === currentIdx ? 'active' : ''}" aria-label="Slide ${idx + 1}" ${idx === currentIdx ? 'aria-current="true"' : ''}>
+              <span class="hero-dot-pill"></span>
+            </button>
           `).join('')}
         </div>
       `;
@@ -557,7 +559,7 @@ if (!isFullIndexLoaded) {
   const svgEl = document.getElementById('india-map');
   if (!svgEl) return;
   try {
-    const { initIndiaMap } = await import('../components/indiaMap.js?v=20260930_phase80');
+    const { initIndiaMap } = await import('../components/indiaMap.js?v=20261023_1click');
     const countByState = new Map();
     const destsByState = new Map();
     summaries.forEach((d) => {
@@ -666,9 +668,12 @@ function shuffleArray(arr) {
 
   const hillsPool = summaries.filter(function (d) {
     const isHill = d.type === 'hill_station' || d.type === 'hillstation' ||
-      (d.features && d.features.some(f => /hill|mountain|valley|peak/i.test(f)));
+      (d.category && /hill/i.test(d.category)) ||
+      (Array.isArray(d.types) && d.types.some(t => /hill/i.test(t)));
     const hasPhoto = d.heroImage && d.heroImage.src;
-    return isHill && hasPhoto;
+    // Exclude major non-hill plains or heritage cities that happen to have hills nearby
+    const excluded = ['mysore', 'tirupati', 'madurai', 'varanasi', 'delhi', 'agra', 'jaipur', 'jodhpur', 'patna', 'gaya'];
+    return isHill && hasPhoto && !excluded.includes(d.slug);
   });
 
   const selectedHills = shuffleArray(hillsPool.length >= 10 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 10);

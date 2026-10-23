@@ -289,26 +289,27 @@ export function initIndiaMap(opts) {
     window.location.href = stateUrl ? stateUrl(state) : 'destinations.html?state=' + encodeURIComponent(state);
   }
 
-  // On touch / click: activate first; if already active, navigate
-  let lastClickedState = initialState;
+  // On click: activate state and immediately navigate to state page (1-click navigation)
   svgEl.addEventListener('click', (e) => {
     const el = e.target.closest('.india-state, .map-island-tag');
     if (!el || el.classList.contains('is-empty')) return;
     const name = el.getAttribute('data-state');
-    if (name === lastClickedState) {
-      go(name);
-    } else {
-      lastClickedState = name;
+    if (name) {
       activateState(name);
+      go(name);
     }
   });
 
   svgEl.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
-    const p = e.target.closest('.india-state');
+    const p = e.target.closest('.india-state, .map-island-tag');
     if (p && !p.classList.contains('is-empty')) {
       e.preventDefault();
-      go(p.getAttribute('data-state'));
+      const name = p.getAttribute('data-state');
+      if (name) {
+        activateState(name);
+        go(name);
+      }
     }
   });
 }

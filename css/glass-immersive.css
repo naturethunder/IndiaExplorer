@@ -4059,3 +4059,158 @@ html[data-theme="light"] body.glass-immersive #hero-stats .hero-stat-label {
   color: #F5C542 !important;
   -webkit-text-fill-color: #F5C542 !important;
 }
+
+/* ==========================================================================
+   SUPER LUXURY THEME ELEVATION — 50-YEAR MASTER UI/UX CRAFTSMANSHIP
+   "100,000% WOW" EDITORIAL STANDARD: UNIVERSAL STACKED HEADER SYSTEM
+   Kicker Pill (Top) -> Grand Serif Headline (Left) -> Action CTA (Right)
+   ========================================================================== */
+
+/* ─── A. UNIVERSAL EDITORIAL LUXURY KICKERS ───────────────────────── */
+.luxury-kicker {
+  display: inline-flex !important;
+  align-items: center !important;
+  align-self: flex-start !important;
+  gap: 0.45rem !important;
+  font-size: 0.70rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.14em !important;
+  padding: 0.30rem 0.80rem !important;
+  border-radius: 9999px !important;
+  margin-bottom: 0.60rem !important;
+  line-height: 1 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  white-space: nowrap !important;
+}
+
+html[data-theme="light"] body.glass-immersive .luxury-kicker {
+  background: rgba(254, 243, 199, 0.92) !important;
+  border: 1px solid rgba(217, 119, 6, 0.32) !important;
+  color: #92400E !important;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.10) !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .luxury-kicker,
+html[data-theme="dark"] body.glass-immersive .luxury-kicker {
+  background: rgba(245, 197, 66, 0.12) !important;
+  border: 1px solid rgba(245, 197, 66, 0.32) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* ─── B. SPLIT HEADER BAR (100,000% WOW EDITORIAL COMPOSITION) ───── */
+.monthly-header-bar--split {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 1.25rem !important;
+  padding-bottom: 0.85rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+@media (max-width: 640px) {
+  .monthly-header-bar--split {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-header-bar--split {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+}
+
+.monthly-header-bar--split .monthly-header-left,
+.monthly-header-left {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  gap: 0 !important;
+}
+
+.monthly-header-bar--split .monthly-header-right {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+
+/* ─── C. SECTION TITLES & TYPOGRAPHY ─────────────────────────────── */
+body.glass-immersive .section-title,
+html[data-theme="light"] body.glass-immersive .section-title,
+html[data-theme="dark"] body.glass-immersive .section-title,
+html:not([data-theme="light"]) body.glass-immersive .section-title,
+.section-title {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif !important;
+  letter-spacing: -0.015em !important;
+  font-weight: 800 !important;
+  line-height: 1.18 !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .section-title,
+html[data-theme="light"] .section-title {
+  color: #0F172A !important;
+  text-shadow: none !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .section-title,
+html[data-theme="dark"] body.glass-immersive .section-title {
+  color: #F8FAFC !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ─── D. REFINED PILL ACTION BUTTONS ─────────────────────────────── */
+body.glass-immersive .monthly-header-right .btn,
+body.glass-immersive .monthly-header-right a.btn {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  font-size: 0.80rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  padding: 0.55rem 1.25rem !important;
+  border-radius: 9999px !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-header-right .btn-outline {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(217, 119, 6, 0.30) !important;
+  color: #92400E !important;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.08) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .monthly-header-right .btn-outline:hover {
+  background: #92400E !important;
+  border-color: #92400E !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(180, 83, 9, 0.22) !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .monthly-header-right .btn-outline,
+html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(245, 197, 66, 0.32) !important;
+  color: #F5C542 !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive .monthly-header-right .btn-outline:hover,
+html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:hover {
+  background: rgba(245, 197, 66, 0.22) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(245, 197, 66, 0.30) !important;
+}

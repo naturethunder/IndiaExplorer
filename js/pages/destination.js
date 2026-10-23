@@ -345,7 +345,7 @@ function main(dest, idx) {
   const heroImg = document.getElementById('heroImg');
   if (heroImg) {
     if (heroSrc) {
-      const optHeroSrc = optimizeImageUrl(heroSrc, 1600);
+      const optHeroSrc = optimizeImageUrl(heroSrc, 1280);
       heroImg.src = optHeroSrc;
       heroImg.alt = heroAlt;
       heroImg.style.display = 'block';
@@ -965,10 +965,10 @@ function main(dest, idx) {
 
     const topPlaces = places.slice(0, 4).map(function (p, i) {
       const pImgRaw = cleanMediaUrl((typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : '')) || '');
-      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 600) : '';
+      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 480) : '';
       const pImgAlt = (p.image && p.image.alt) ? p.image.alt : (p.name || '');
       const desc = (p.description || '');
-      const loadAttr = i < 2 ? 'loading="eager"' : 'loading="lazy"';
+      const loadAttr = 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
         '<div class="relative h-32 overflow-hidden bg-gray-100">' +
         (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" ' +
@@ -1106,7 +1106,7 @@ function main(dest, idx) {
       if (typeof dest.heroImage === 'string' && dest.heroImage) {
         const raw = cleanMediaUrl(dest.heroImage);
         addPhoto({
-          src: optimizeImageUrl(raw, 1400),
+          src: optimizeImageUrl(raw, 1280),
           rawSrc: raw,
           title: formatHeroTitle(dest.title, dest.tagline, '', dest.state),
           subtitle: dest.state + ' · Main View',
@@ -1118,7 +1118,7 @@ function main(dest, idx) {
         const heroExplicitTitle = (dest.heroImage.title && !isGenericLabel(dest.heroImage.title) ? cleanAltText(dest.heroImage.title) : null)
           || (dest.gallery && dest.gallery[0] && dest.gallery[0].title && !isGenericLabel(dest.gallery[0].title) ? cleanAltText(dest.gallery[0].title) : null);
         addPhoto({
-          src: optimizeImageUrl(raw, 1400),
+          src: optimizeImageUrl(raw, 1280),
           rawSrc: raw,
           title: heroExplicitTitle || formatHeroTitle(dest.title, dest.tagline, cleanHeroSub, dest.state),
           subtitle: (cleanHeroSub && cleanHeroSub.toLowerCase() !== dest.title.toLowerCase()) ? cleanHeroSub : (dest.state + ' · Main View'),
@@ -1235,7 +1235,7 @@ function main(dest, idx) {
           const gCaption = resolveGalleryCaption(g, idx);
 
           addPhoto({
-            src: optimizeImageUrl(raw, 1400),
+            src: optimizeImageUrl(raw, 1280),
             rawSrc: raw,
             title: gTitle,
             subtitle: gCaption,
@@ -1249,7 +1249,7 @@ function main(dest, idx) {
         const pImgFallback = cleanMediaUrl(typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : ''));
         if (photos.length < 5 && pImgFallback) {
           addPhoto({
-            src: optimizeImageUrl(pImgFallback, 1400),
+            src: optimizeImageUrl(pImgFallback, 1280),
             rawSrc: pImgFallback,
             title: p.name,
             subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
@@ -1261,7 +1261,7 @@ function main(dest, idx) {
             const phSrc = cleanMediaUrl(typeof ph === 'string' ? ph : (ph && ph.src ? ph.src : ''));
             if (photos.length < 5 && phSrc) {
               addPhoto({
-                src: optimizeImageUrl(phSrc, 1400),
+                src: optimizeImageUrl(phSrc, 1280),
                 rawSrc: phSrc,
                 title: p.name,
                 subtitle: (p.category || 'Attraction') + ' · ' + (p.distance || 'Nearby'),
@@ -1275,7 +1275,7 @@ function main(dest, idx) {
       if (photos.length === 0 && dest.image && dest.image.src) {
         const raw = cleanMediaUrl(dest.image.src);
         addPhoto({
-          src: optimizeImageUrl(raw, 1400),
+          src: optimizeImageUrl(raw, 1280),
           rawSrc: raw,
           title: dest.title,
           subtitle: dest.state,
@@ -1548,9 +1548,9 @@ function main(dest, idx) {
         : '<span class="text-gray-400">Entry: ' + esc(p.entryFee) + '</span>';
       // Support string and object image structures so real place images are always visible
       const pImgRaw = cleanMediaUrl(typeof p.image === 'string' ? p.image : (p.image && p.image.src ? p.image.src : ''));
-      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 600) : '';
+      const pImgSrc = pImgRaw ? optimizeImageUrl(pImgRaw, 320) : '';
       const pImgAlt = (typeof p.image === 'object' && p.image && p.image.alt) ? p.image.alt : (p.name || '');
-      const loadAttr = i < 4 ? 'loading="eager"' : 'loading="lazy"';
+      const loadAttr = 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
         (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" width="112" height="96" ' + loadAttr + ' decoding="async" ' +
@@ -3347,10 +3347,10 @@ function main(dest, idx) {
       <div class="cheat-section">
         <h4 class="cheat-section-title">Emergency Numbers (Works Offline)</h4>
         <div class="grid grid-cols-2 gap-2 mt-1">
-          <a href="tel:112" class="cheat-sos-btn">🚨 Universal SOS: 112</a>
-          <a href="tel:108" class="cheat-sos-btn">🚑 Medical: 108</a>
-          <a href="tel:1070" class="cheat-sos-btn">🏔️ Mountain Rescue: 1070</a>
-          <a href="tel:100" class="cheat-sos-btn">👮 Police: 100</a>
+          <a href="tel:112" class="cheat-sos-btn" aria-label="Call Universal SOS 112"><svg class="w-3.5 h-3.5 text-red-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg><span>Universal SOS: 112</span></a>
+          <a href="tel:108" class="cheat-sos-btn" aria-label="Call Medical 108"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>Medical: 108</span></a>
+          <a href="tel:1070" class="cheat-sos-btn" aria-label="Call Mountain Rescue 1070"><svg class="w-3.5 h-3.5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg><span>Mountain Rescue: 1070</span></a>
+          <a href="tel:100" class="cheat-sos-btn" aria-label="Call Police 100"><svg class="w-3.5 h-3.5 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span>Police: 100</span></a>
         </div>
       </div>
     `;

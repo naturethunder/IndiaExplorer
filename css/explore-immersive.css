@@ -2365,3 +2365,412 @@ html[data-theme="light"] body.explore-immersive .quick-card-footer svg,
 html[data-theme="light"] .quick-card-footer svg {
   color: #B45309 !important;
 }
+
+/* ==========================================================================
+   Regional Atlas Directory Section (Pre-Footer Luxury Collapsible Accordion)
+   ========================================================================== */
+.explore-state-directory {
+  position: relative;
+  z-index: 10;
+  margin-top: clamp(40px, 5vw, 64px);
+  margin-bottom: clamp(48px, 6vw, 72px);
+}
+
+.state-directory-accordion {
+  border-radius: var(--exp-radius-lg, 20px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(14, 20, 32, 0.85) 0%, rgba(8, 12, 20, 0.95) 100%);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-directory-accordion:hover {
+  border-color: rgba(245, 197, 66, 0.35);
+}
+
+.state-directory-accordion[open] {
+  border-color: rgba(245, 197, 66, 0.35);
+  box-shadow: 0 24px 56px -16px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(245, 197, 66, 0.15);
+}
+
+/* Accordion Summary Trigger */
+summary.state-directory-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 60px;
+  padding: 16px 24px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  transition: background 0.25s ease;
+}
+
+summary.state-directory-trigger::-webkit-details-marker {
+  display: none;
+}
+
+summary.state-directory-trigger:hover {
+  background: rgba(245, 197, 66, 0.04);
+}
+
+.trigger-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trigger-gem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(245, 197, 66, 0.12);
+  border: 1px solid rgba(245, 197, 66, 0.28);
+  color: #F5C542;
+  flex-shrink: 0;
+}
+
+.trigger-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trigger-title {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.trigger-subtitle {
+  font-size: 12.5px;
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.trigger-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.trigger-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.10);
+  border: 1px solid rgba(245, 197, 66, 0.25);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #F5C542;
+  letter-spacing: 0.02em;
+}
+
+.trigger-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #CBD5E1;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, color 0.2s ease;
+}
+
+.state-directory-accordion[open] .trigger-chevron {
+  transform: rotate(180deg);
+  background: rgba(245, 197, 66, 0.2);
+  color: #F5C542;
+}
+
+/* Accordion Content Panel */
+.state-directory-content {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: clamp(24px, 3.5vw, 40px) clamp(20px, 3.5vw, 36px);
+  animation: stateDirExpand 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes stateDirExpand {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.state-directory-card {
+  position: relative;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.state-directory-header {
+  margin-bottom: 24px;
+}
+
+.state-directory-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.10);
+  border: 1px solid rgba(245, 197, 66, 0.25);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #F5C542;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.state-directory-kicker .state-kicker-icon {
+  color: #F5C542;
+}
+
+.state-directory-title-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.state-directory-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.state-directory-desc {
+  font-size: 14px;
+  color: #94A3B8;
+  line-height: 1.5;
+  margin-top: 6px;
+  margin-bottom: 0;
+  max-width: 640px;
+}
+
+.state-directory-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: #E2E8F0;
+  flex-shrink: 0;
+}
+
+.state-directory-badge .badge-count {
+  font-size: 15px;
+  font-weight: 800;
+  color: #F5C542;
+}
+
+.state-directory-badge .badge-text {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+}
+
+.state-atlas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 10px;
+}
+
+.state-atlas-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #F1F5F9;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.state-atlas-pill .state-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.state-atlas-pill .state-count {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.12);
+  color: #F5C542;
+  border: 1px solid rgba(245, 197, 66, 0.24);
+  flex-shrink: 0;
+  transition: all 0.22s ease;
+}
+
+.state-atlas-pill:hover {
+  background: rgba(245, 197, 66, 0.10);
+  border-color: rgba(245, 197, 66, 0.45);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px rgba(245, 197, 66, 0.20);
+}
+
+.state-atlas-pill:hover .state-count {
+  background: #F5C542;
+  color: #080A0F;
+  border-color: #F5C542;
+  box-shadow: 0 2px 8px rgba(245, 197, 66, 0.4);
+}
+
+/* Light Mode Overrides */
+html[data-theme="light"] body.explore-immersive .state-directory-accordion {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%);
+  border: 1px solid rgba(180, 83, 9, 0.16);
+  box-shadow: 0 12px 32px -8px rgba(180, 83, 9, 0.08);
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-accordion:hover,
+html[data-theme="light"] body.explore-immersive .state-directory-accordion[open] {
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 16px 40px -8px rgba(180, 83, 9, 0.14);
+}
+
+html[data-theme="light"] body.explore-immersive summary.state-directory-trigger:hover {
+  background: rgba(245, 158, 11, 0.04);
+}
+
+html[data-theme="light"] body.explore-immersive .trigger-gem {
+  background: rgba(217, 119, 6, 0.10);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .trigger-title {
+  color: #0F172A;
+}
+
+html[data-theme="light"] body.explore-immersive .trigger-subtitle {
+  color: #64748B;
+}
+
+html[data-theme="light"] body.explore-immersive .trigger-badge {
+  background: rgba(217, 119, 6, 0.10);
+  border-color: rgba(217, 119, 6, 0.24);
+  color: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .trigger-chevron {
+  background: rgba(15, 23, 42, 0.05);
+  color: #475569;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-accordion[open] .trigger-chevron {
+  background: rgba(217, 119, 6, 0.15);
+  color: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-content {
+  border-top-color: rgba(180, 83, 9, 0.10);
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-heading {
+  color: #0F172A;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-desc {
+  color: #475569;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-badge {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(217, 119, 6, 0.20);
+  color: #1E293B;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-badge .badge-count {
+  color: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .state-directory-badge .badge-text {
+  color: #64748B;
+}
+
+html[data-theme="light"] body.explore-immersive .state-atlas-pill {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(180, 83, 9, 0.14);
+  color: #1E293B;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+html[data-theme="light"] body.explore-immersive .state-atlas-pill .state-count {
+  background: rgba(217, 119, 6, 0.10);
+  color: #B45309;
+  border-color: rgba(217, 119, 6, 0.24);
+}
+
+html[data-theme="light"] body.explore-immersive .state-atlas-pill:hover {
+  background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+  border-color: #D97706;
+  color: #78350F;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px rgba(217, 119, 6, 0.22);
+}
+
+html[data-theme="light"] body.explore-immersive .state-atlas-pill:hover .state-count {
+  background: #D97706;
+  color: #FFFFFF;
+  border-color: #D97706;
+}
+
+@media (max-width: 640px) {
+  summary.state-directory-trigger {
+    padding: 14px 16px;
+  }
+  .trigger-subtitle {
+    display: none;
+  }
+  .state-atlas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .state-atlas-pill {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+

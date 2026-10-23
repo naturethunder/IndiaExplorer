@@ -41,7 +41,7 @@
   <link rel="preconnect" href="https://commons.wikimedia.org" crossorigin />
   <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
   <link rel="preload" as="image"
-    href="https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    href="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1920&q=85"
     fetchpriority="high" />
   <!-- Google Fonts: Pinyon Script, Alex Brush, Cinzel Decorative, Cinzel, Playfair Display & Plus Jakarta Sans -->
   <link rel="preload" as="style"
@@ -49,9 +49,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20261019_phase101" />
+  <link rel="stylesheet" href="css/styles.css?v=20261024_luxury_v4" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261019_phase101" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261024_luxury_v4" />
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
   <script src="js/vendor/ScrollTrigger.min.js" defer></script>
@@ -72,7 +72,7 @@
     <!-- ═══════════════ HERO ═══════════════ -->
     <section class="hero-home">
       <div class="hero-home-bg" id="heroBg"
-        style="background-image: url('https://images.pexels.com/photos/34086724/pexels-photo-34086724.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+        style="background-image: url('https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1920&q=85');">
       </div>
       <div class="hero-home-overlay"></div>
 
@@ -107,7 +107,7 @@
                   placeholder="Search 2,396 destinations, hill stations, heritage forts, beaches…" autocomplete="off"
                   aria-label="Search destinations" />
               </div>
-              <button id="searchBtn" class="hero-seg-btn" aria-label="Search">
+              <button type="button" id="searchBtn" class="hero-seg-btn" aria-label="Search">
                 <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <circle cx="11" cy="11" r="8" />
@@ -133,6 +133,10 @@
               <!-- Rendered by JS -->
             </div>
           </div>
+
+          <!-- Featured Hero Photo Indicator & Controls -->
+          <div id="hero-photo-indicator" class="flex items-center justify-center gap-3 mt-6 flex-wrap"
+            aria-label="Hero photo rotator"></div>
         </div>
       </div>
     </section>
@@ -153,31 +157,33 @@
         <div class="discover-row">
           <!-- Trending carousel -->
           <div class="discover-trending reveal">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1">Curated Highlights</p>
-                <h2 class="section-title text-2xl">Trending Destinations</h2>
+            <div class="monthly-header-bar monthly-header-bar--split mb-6">
+              <div class="monthly-header-left">
+                <h2 class="section-title text-2xl sm:text-3xl">Trending Destinations</h2>
               </div>
-              <a href="/destinations" class="section-link">View all
-                <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
+              <div class="monthly-header-right">
+                <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+                  <span>View All</span>
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="discover-trending-wrap">
               <div class="carousel-row" id="trending-grid" tabindex="0" role="group" aria-label="Trending destinations">
                 <!-- Rendered by JS -->
               </div>
-              <button class="carousel-arrow discover-arrow discover-arrow-left" id="trend-prev"
+              <button type="button" class="carousel-arrow discover-arrow discover-arrow-left" id="trend-prev"
                 aria-label="Scroll trending left">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="m15 18-6-6 6-6" />
                 </svg>
               </button>
-              <button class="carousel-arrow discover-arrow discover-arrow-right" id="trend-next"
+              <button type="button" class="carousel-arrow discover-arrow discover-arrow-right" id="trend-next"
                 aria-label="Scroll trending right">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -189,18 +195,20 @@
 
           <!-- Explore India map -->
           <div class="discover-map reveal">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1">Geographic Directory</p>
-                <h2 class="section-title text-2xl">Interactive India Map</h2>
+            <div class="monthly-header-bar monthly-header-bar--split mb-6">
+              <div class="monthly-header-left">
+                <h2 class="section-title text-2xl sm:text-3xl">Interactive India Map</h2>
               </div>
-              <a href="/destinations" class="section-link">View all states
-                <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
+              <div class="monthly-header-right">
+                <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+                  <span>All States</span>
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="discover-map-inner">
               <svg id="india-map" class="india-map-svg"></svg>
@@ -216,15 +224,8 @@
         <div class="monthly-header-bar mb-6 reveal">
           <!-- Left: Best in <Month> & Subtitle -->
           <div class="monthly-header-left">
-            <div class="monthly-kicker-badge mb-2">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-              <span>Monthly Highlights</span>
-            </div>
-            <h2 class="section-title">Best in <span id="railMonthName" class="rail-month-highlight text-primary"></span>
+            <h2 class="section-title text-2xl sm:text-3xl">Best in <span id="railMonthName"
+                class="rail-month-highlight text-primary"></span>
             </h2>
           </div>
         </div>
@@ -255,15 +256,15 @@
             aria-label="Best destinations this month">
             <!-- Rendered by JS -->
           </div>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="month-prev"
-            aria-label="Scroll month picks left">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
+            id="month-prev" aria-label="Scroll month picks left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="month-next"
-            aria-label="Scroll month picks right">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
+            id="month-next" aria-label="Scroll month picks right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -274,15 +275,22 @@
     </section>
 
     <!-- ═══════════════ TRAVEL THIS SEASON ═══════════════ -->
-    <section class="py-14">
+    <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar mb-8 reveal">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
           <div class="monthly-header-left">
-            <p class="text-primary font-semibold text-xs uppercase tracking-wider mb-1">Seasonal Journeys</p>
             <h2 class="section-title text-2xl sm:text-3xl">Travel This Season</h2>
           </div>
-          <div class="monthly-header-center"></div>
-          <div class="monthly-header-right"></div>
+          <div class="monthly-header-right">
+            <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>Explore All Seasons</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5" id="season-grid">
           <!-- Rendered by JS -->
@@ -291,14 +299,12 @@
     </section>
 
     <!-- ═══════════════ FEATURED: POPULAR DESTINATIONS ═══════════════ -->
-    <section class="py-14 bg-gray-50">
+    <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar mb-8 reveal">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
           <div class="monthly-header-left">
-            <p class="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-1">Most Visited</p>
             <h2 class="section-title text-2xl sm:text-3xl">Popular Destinations</h2>
           </div>
-          <div class="monthly-header-center"></div>
           <div class="monthly-header-right">
             <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
               <span>See All Destinations</span>
@@ -313,26 +319,17 @@
         <div class="section-carousel-wrap">
           <div class="carousel-row section-carousel-grid" id="popular-grid" tabindex="0" role="group"
             aria-label="Popular destinations">
-            <a href="/destination?slug=manali" class="card dest-card block group" aria-label="Manali, Himachal Pradesh"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Manali, Himachal Pradesh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="eager" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Manali</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(18,420)</span><span>|</span><span>Oct – Jun (avoid Jul–Aug monsoon)</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Snow-capped peaks, adventure sports, ancient temples and the legendary Rohtang Pass.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹700</span></div></div></div></a>
-            <a href="/destination?slug=udaipur" class="card dest-card block group" aria-label="Udaipur, Rajasthan"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/31778015/pexels-photo-31778015.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Majestic granite and marble facade of Udaipur City Palace towering above Lake Pichola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="eager" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Udaipur</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(28,000)</span><span>|</span><span>Oct – Mar</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Shimmering lakes, ornate palaces, romantic sunsets and royal Rajput grandeur.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹700</span></div></div></div></a>
-            <a href="/destination?slug=ladakh" class="card dest-card block group" aria-label="Ladakh, Ladakh"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/6650409/pexels-photo-6650409.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Multi-tiered whitewashed buildings of Thiksey Monastery perched on a hill in Ladakh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Ladakh</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.9</strong></span><span>(32,000)</span><span>|</span><span>Jun – Sep</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Moonscapes, Buddhist monasteries, Pangong Lake and the world's highest motorable roads.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹800</span></div></div></div></a>
-            <a href="/destination?slug=hampi" class="card dest-card block group" aria-label="Hampi, Karnataka"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/37040437/pexels-photo-37040437.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Vittala Temple stone chariot illuminated at sunset in Hampi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Hampi</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(21,000)</span><span>|</span><span>Nov – Mar</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Ruins of the Vijayanagara Empire spread across surreal boulder landscapes on the Tungabhadra.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹900</span></div></div></div></a>
-            <a href="/destination?slug=spiti" class="card dest-card block group" aria-label="Spiti Valley, Himachal Pradesh"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Key Monastery nestled in the rugged hills of Spiti Valley, showcasing stunning Buddhist architecture." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Spiti Valley</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.8</strong></span><span>(8,400)</span><span>|</span><span>Jun – Sep</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">High-altitude desert, ancient Key Monastery, Chandratal Lake and star-filled skies.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹700</span></div></div></div></a>
-            <a href="/destination?slug=kaziranga" class="card dest-card block group" aria-label="Kaziranga, Assam"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/30481914/pexels-photo-30481914.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;q=85" alt="Panoramic landscape of Kaziranga wetland waters and emerald hills at golden sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Kaziranga</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.8</strong></span><span>(9,800)</span><span>|</span><span>Nov – Apr</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">UNESCO World Heritage park with the world's largest population of Indian one-horned rhinos.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹800</span></div></div></div></a>
-            <a href="/destination?slug=gulmarg" class="card dest-card block group" aria-label="Gulmarg, Jammu &amp; Kashmir"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/16617762/pexels-photo-16617762.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Lush alpine meadow of Gulmarg framed by dense pine forests and snow-capped Himalayan ridges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Gulmarg</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(28,000)</span><span>|</span><span>Dec – Mar (ski), Apr – Jun</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Gulmarg is a much-loved adventure base in Jammu &amp; Kashmir, known for gondola and skiing.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹800</span></div></div></div></a>
-            <a href="/destination?slug=ajanta-ellora" class="card dest-card block group" aria-label="Ajanta &amp; Ellora, Maharashtra"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Maharashtra_Districts.png?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" alt="Ajanta &amp; Ellora, Maharashtra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Ajanta &amp; Ellora</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(19,000)</span><span>|</span><span>Oct – Mar</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Ajanta &amp; Ellora is a much-loved heritage city in Maharashtra, known for rock-cut caves and unesco.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹950</span></div></div></div></a>
-            <a href="/destination?slug=kolkata" class="card dest-card block group" aria-label="Kolkata, West Bengal"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/33676158/pexels-photo-33676158.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2560" alt="Majestic Victoria Memorial Marble Dome and Royal Gardens — Kolkata, West Bengal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Kolkata</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.8</strong></span><span>(49,000)</span><span>|</span><span>Oct – Mar</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Kolkata, the City of Joy and cultural capital of India, is famed for colonial grand marble monuments, cantilever river bridges, historic tramways, and vibrant intellectual heritage.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹950</span></div></div></div></a>
-            <a href="/destination?slug=bodh-gaya" class="card dest-card block group" aria-label="Bodh Gaya, Bihar"><div class="card-image-frame relative overflow-hidden" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;"><img src="https://images.pexels.com/photos/29868338/pexels-photo-29868338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Bodh Gaya, Bihar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="450" loading="lazy" decoding="async" /></div><div class="p-3 bg-slate-900/90 flex flex-col gap-1"><h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">Bodh Gaya</h3><div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300"><span class="flex items-center gap-0.5"><span class="text-amber-400"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><strong class="text-white">4.7</strong></span><span>(24,000)</span><span>|</span><span>Oct – Mar</span></div><p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">Bodh Gaya is a much-loved spiritual town in Bihar, known for mahabodhi and bodhi tree.</p><div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1"><div class="flex items-baseline gap-1.5"><span class="text-slate-400 text-[11px]">Stay starts from</span><span class="text-amber-400 font-bold text-sm">₹500</span></div></div></div></a>
+            <!-- Rendered by JS -->
           </div>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="popular-prev"
-            aria-label="Scroll popular destinations left">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
+            id="popular-prev" aria-label="Scroll popular destinations left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="popular-next"
-            aria-label="Scroll popular destinations right">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
+            id="popular-next" aria-label="Scroll popular destinations right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -343,14 +340,22 @@
     </section>
 
     <!-- ═══════════════ BROWSE BY BUDGET ═══════════════ -->
-    <section class="py-14">
+    <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar mb-8 reveal">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
           <div class="monthly-header-left">
             <h2 class="section-title text-2xl sm:text-3xl">Browse by Budget</h2>
           </div>
-          <div class="monthly-header-center"></div>
-          <div class="monthly-header-right"></div>
+          <div class="monthly-header-right">
+            <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>All Price Ranges</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4" id="budget-grid">
           <!-- Rendered by JS -->
@@ -359,18 +364,14 @@
     </section>
 
     <!-- ═══════════════ FEATURED: HILL STATIONS ═══════════════ -->
-    <section class="py-14">
+    <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar mb-8 reveal">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
           <div class="monthly-header-left">
-            <p class="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-1">Escape to the Hills
-            </p>
             <h2 class="section-title text-2xl sm:text-3xl">Best Hill Stations</h2>
           </div>
-          <div class="monthly-header-center"></div>
           <div class="monthly-header-right">
-            <a href="/destinations?type=hill_station"
-              class="btn btn-outline text-sm inline-flex items-center gap-2">
+            <a href="/destinations?type=hill_station" class="btn btn-outline text-sm inline-flex items-center gap-2">
               <span>See All Hills</span>
               <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -385,15 +386,15 @@
             aria-label="Best hill stations">
             <!-- Rendered by JS -->
           </div>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="hills-prev"
-            aria-label="Scroll hill stations left">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
+            id="hills-prev" aria-label="Scroll hill stations left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="hills-next"
-            aria-label="Scroll hill stations right">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
+            id="hills-next" aria-label="Scroll hill stations right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -404,29 +405,37 @@
     </section>
 
     <!-- ═══════════════ EXPLORE MORE ═══════════════ -->
-    <section class="py-14 bg-gray-50">
+    <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar mb-8 reveal">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
           <div class="monthly-header-left">
             <h2 class="section-title text-2xl sm:text-3xl">Explore More</h2>
           </div>
-          <div class="monthly-header-center"></div>
-          <div class="monthly-header-right"></div>
+          <div class="monthly-header-right">
+            <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>Complete Index</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="section-carousel-wrap">
           <div class="carousel-row section-carousel-grid section-carousel-grid--mini" id="explore-grid" tabindex="0"
             role="group" aria-label="Explore more destinations">
             <!-- Rendered by JS -->
           </div>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-left" id="explore-prev"
-            aria-label="Scroll explore left">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
+            id="explore-prev" aria-label="Scroll explore left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
-          <button class="carousel-arrow section-carousel-arrow section-carousel-arrow-right" id="explore-next"
-            aria-label="Scroll explore right">
+          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
+            id="explore-next" aria-label="Scroll explore right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -454,7 +463,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/home.js?v=20261019_home_scroll_fix"></script>
+  <script type="module" src="js/pages/home.js?v=20261024_luxury_ultra"></script>
 
   <!-- SEO: Organization + WebSite JSON-LD -->
   <script type="application/ld+json">

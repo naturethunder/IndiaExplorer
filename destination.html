@@ -39,6 +39,12 @@
           link.rel = 'canonical';
           link.href = canonicalUrl;
           document.head.appendChild(link);
+
+          // Fast-path immediate destination JSON prefetch
+          window.__destSlug = cleanSlug;
+          window.__destFetchPromise = fetch('data/destinations/' + encodeURIComponent(cleanSlug) + '.json?v=20261018_phase99')
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .catch(function () { return null; });
         } else {
           // If destination.html is accessed directly without a slug parameter, do not index the empty shell
           var robots = document.getElementById('robotsMeta');
@@ -255,7 +261,7 @@
     role="dialog" aria-modal="true" aria-labelledby="placeName" aria-hidden="true">
     <div id="placeBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
     <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-xl max-h-[90vh] overflow-y-auto">
-      <button id="placeClose"
+      <button type="button" id="placeClose"
         class="absolute top-3 right-3 z-20 w-9 h-9 flex items-center justify-center text-white bg-black/40 hover:bg-black/60 rounded-full transition-colors"
         aria-label="Close place details">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -267,12 +273,12 @@
       <!-- Image carousel -->
       <div id="placeCarousel" class="carousel">
         <div id="placeTrack" class="carousel-track"></div>
-        <button id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo"><svg width="20" height="20"
+        <button type="button" id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo"><svg width="20" height="20"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <path d="m15 18-6-6 6-6" />
           </svg></button>
-        <button id="carNext" class="carousel-btn carousel-next" aria-label="Next photo"><svg width="20" height="20"
+        <button type="button" id="carNext" class="carousel-btn carousel-next" aria-label="Next photo"><svg width="20" height="20"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <path d="m9 18 6-6-6-6" />

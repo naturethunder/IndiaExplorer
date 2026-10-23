@@ -249,23 +249,26 @@ html {
 
 .skip-link {
   position: fixed;
-  top: -60px;
-  left: 12px;
+  top: -80px;
+  left: 20px;
   z-index: 10050;
-  background: #15803D;
-  /* green-700 — 4.6:1 on white text (AA); --primary fails at 2.3:1 */
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.6rem 1rem;
-  border-radius: 0 0 10px 10px;
+  background: linear-gradient(135deg, #1C1917 0%, #0F172A 100%);
+  color: #F5C542;
+  border: 1px solid rgba(245, 197, 66, 0.45);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45), 0 0 15px rgba(245, 197, 66, 0.25);
   text-decoration: none;
-  transition: top 0.2s ease;
+  transition: top 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 
 .skip-link:focus {
   top: 0;
+  outline: 2px solid #F5C542;
+  outline-offset: 2px;
 }
 
 body {
@@ -280,8 +283,8 @@ body {
 /* Display headings use regal serif/cinzel for a royal luxury feel. */
 .font-display,
 .section-title {
-  font-family: 'Cinzel', 'Playfair Display', serif;
-  font-weight: 700;
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
@@ -398,6 +401,9 @@ html[data-theme="light"] .calligraphy-kicker::after {
   .monthly-header-left {
     justify-self: start;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .monthly-header-center {
@@ -419,6 +425,15 @@ html[data-theme="light"] .calligraphy-kicker::after {
     justify-content: flex-end;
     align-items: center;
   }
+}
+
+.monthly-header-bar--split {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 1.25rem !important;
 }
 
 @media (max-width: 767px) {
@@ -443,6 +458,9 @@ html[data-theme="light"] .calligraphy-kicker::after {
 
   .monthly-header-left {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .monthly-header-right {
@@ -2023,14 +2041,69 @@ textarea.form-input {
   inset: 0;
   background:
     linear-gradient(180deg,
-      rgba(4, 6, 14, 0.85) 0%,
-      rgba(4, 6, 14, 0.40) 38%,
-      rgba(4, 6, 14, 0.40) 65%,
-      rgba(4, 6, 14, 0.95) 100%
+      rgba(4, 6, 14, 0.72) 0%,
+      rgba(4, 6, 14, 0.18) 30%,
+      rgba(4, 6, 14, 0.16) 60%,
+      rgba(4, 6, 14, 0.88) 100%
     ),
     radial-gradient(ellipse at center, rgba(4, 6, 14, 0.25) 0%, rgba(4, 6, 14, 0.70) 100%);
   z-index: 2;
   pointer-events: none;
+}
+
+/* ─── Gold Gradient Title Text ─────────────────────────── */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF3C4 0%, #F5C542 35%, #E5A020 65%, #C8860A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 28px rgba(245, 197, 66, 0.45));
+}
+
+.hero-home-title {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.12;
+}
+
+/* ─── Hero Cinematic Rotator Indicator ─────────────────────── */
+.hero-dot-btn {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 5px 3px;
+  cursor: pointer;
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+}
+.hero-dot-btn:focus-visible {
+  outline: 2px solid var(--primary, #f59e0b);
+  outline-offset: 2px;
+}
+.hero-dot-pill {
+  display: block;
+  height: 5px;
+  border-radius: 9999px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.hero-dot-btn.active .hero-dot-pill {
+  width: 28px;
+  background: linear-gradient(90deg, #F5C542 0%, #FFD700 100%);
+  box-shadow: 0 0 12px rgba(245, 197, 66, 0.8), 0 0 4px rgba(245, 197, 66, 0.5);
+}
+.hero-dot-btn:not(.active) .hero-dot-pill {
+  width: 7px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.hero-dot-btn:hover:not(.active) .hero-dot-pill {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* ─── Luxury Hero Eyebrow Pill ─────────────────────────────── */
@@ -4846,7 +4919,11 @@ a.btn:active svg,
   border-bottom: none;
 }
 .cheat-sos-btn {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
   padding: 8px 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
@@ -4856,6 +4933,7 @@ a.btn:active svg,
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
   transition: all 0.15s ease;
 }
 .cheat-sos-btn:hover {

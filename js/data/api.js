@@ -28,6 +28,12 @@ function getJSON(path) {
 
 /** Full detail for one destination. The detail page loads ONLY this. */
 export async function fetchDestination(slug) {
+  if (typeof window !== 'undefined' && window.__destFetchPromise && window.__destSlug === slug) {
+    try {
+      const data = await window.__destFetchPromise;
+      if (data && data.slug) return data;
+    } catch (_) { }
+  }
   try {
     return await getJSON(BASE + '/destinations/' + encodeURIComponent(slug) + '.json?v=20261018_phase99');
   } catch (err) {
