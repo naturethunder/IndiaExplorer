@@ -265,6 +265,7 @@ function main(dest, idx) {
       : (dest.image && dest.image.src ? dest.image.src
         : (dest.gallery && dest.gallery[0] ? (typeof dest.gallery[0] === 'string' ? dest.gallery[0] : dest.gallery[0].src) : '')));
   const heroSrc = cleanMediaUrl(rawHeroResolved);
+  window._currentHeroImage = heroSrc;
   const rawHeroAlt = typeof dest.heroImage === 'object' && dest.heroImage ? dest.heroImage.alt : '';
   const heroAlt = cleanAltText(rawHeroAlt) || (dest.title || 'Destination');
 
@@ -944,12 +945,48 @@ function main(dest, idx) {
           copyBtn.innerHTML = '<span class="text-emerald-400 font-bold inline-flex items-center gap-1.5">' + SVG_CHECK + ' Copied to Clipboard!</span>';
           setTimeout(function () { copyBtn.innerHTML = orig; }, 2500);
         }
-      }).catch(function () {});
+      }).catch(function () { });
     }
   }
 
   // ─── OVERVIEW panel ─────────────────────────────────────
   function renderOverview() {
+    function cleanNearbyDistance(d, destTitle) {
+      if (!d) return 'Nearby';
+      let s = String(d).trim();
+      const m = s.match(/^(\d+(?:\.\d+)?\s*(?:km|m))\b/i);
+      if (m) return m[1].toLowerCase();
+      if (destTitle) {
+        try {
+          const escaped = destTitle.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+          s = s.replace(new RegExp('\\s*(?:from|near|to)\\s*' + escaped, 'i'), '');
+        } catch (_) { }
+      }
+      return s.trim() || 'Nearby';
+    }
+
+    function cleanAirportDisplay(airport) {
+      if (!airport || !airport.name) return '';
+      let n = String(airport.name).trim();
+      if (n.toLowerCase().includes('/ nearest airport') || n.toLowerCase().includes('nearest airport')) {
+        return 'Regional Airport' + (airport.distance ? ' (' + airport.distance + ' km)' : '');
+      }
+      return esc(n) + (airport.distance ? ' (' + airport.distance + ' km)' : '');
+    }
+
+    function cleanRailwayDisplay(rail) {
+      if (!rail || !rail.name) return '';
+      let n = String(rail.name).trim();
+      if (n.toLowerCase().includes('/ nearest') || n.toLowerCase().includes('nearest railway')) {
+        return 'Nearest Railhead' + (rail.distance ? ' (' + rail.distance + ' km)' : '');
+      }
+      return esc(n) + (rail.distance ? ' (' + rail.distance + ' km)' : '');
+    }
+
+    const SVG_PIN_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
+    const SVG_CAR_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.7 2 10.8 2 11v5c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>';
+    const SVG_METRO_SM = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg>';
+
     let featList = (ov && ov.features ? ov.features : (dest.features || []));
     const tLower = (dest.title || '').toLowerCase();
     const isCommercialCity = /delhi|mumbai|jaipur|kolkata|lucknow|ahmedabad|bengaluru|hyderabad|chennai|bazaar|market|chowk/i.test(tLower);
@@ -960,7 +997,7 @@ function main(dest, idx) {
       return true;
     });
     const features = featList.map(function (f) {
-      return '<span class="inline-flex items-center px-3 py-1.5 bg-orange-50 text-orange-800 text-sm font-medium rounded-full border border-orange-200">' + esc(f) + '</span>';
+      return '<span class="feature-pill-luxury">' + esc(f) + '</span>';
     }).join('');
 
     const topPlaces = places.slice(0, 4).map(function (p, i) {
@@ -971,8 +1008,8 @@ function main(dest, idx) {
       const loadAttr = 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
         '<div class="relative h-32 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" ' +
-          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="this.onerror=null;this.style.display=\'none\';" ') +
+        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" referrerpolicy="no-referrer" ' +
+          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ') +
           '/>' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
         '<span class="absolute top-2.5 right-2.5 text-xs font-bold px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-amber-300 border border-white/20 shadow-sm flex items-center gap-1">★ ' + esc(String(p.rating || '4.5')) + '</span>' +
         '</div>' +
@@ -980,12 +1017,12 @@ function main(dest, idx) {
         '<div class="flex items-center justify-between gap-2 mb-1">' +
         '<h4 class="font-bold text-sm text-gray-900 truncate leading-snug">' + esc(p.name) + '</h4>' +
         '</div>' +
-        '<p class="text-xs text-gray-500 capitalize mb-1.5 font-medium flex items-center gap-1.5 truncate">' +
-        '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'attraction') + '</span> · ' +
-        '<span title="' + esc(p.distance || '') + '">📍 ' + esc(p.distance || 'Nearby') + '</span> · ' +
-        '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span>' +
+        '<p class="text-xs text-gray-500 dark:text-slate-400 mb-2 font-medium flex items-center gap-2 flex-wrap">' +
+        '<span class="place-category-badge">' + esc(p.category || 'attraction') + '</span>' +
+        '<span class="flex items-center gap-1" title="' + esc(p.distance || '') + '">' + SVG_PIN_SM + esc(cleanNearbyDistance(p.distance, dest.title)) + '</span>' +
+        '<span class="flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-semibold">' + SVG_CAR_SM + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span>' +
         '</p>' +
-        '<p class="text-xs text-gray-600 line-clamp-2 leading-relaxed">' + esc(desc.slice(0, 90)) + (desc.length > 90 ? '…' : '') + '</p>' +
+        '<p class="text-xs text-gray-600 dark:text-slate-300 line-clamp-2 leading-relaxed">' + esc(desc.slice(0, 95)) + (desc.length > 95 ? '…' : '') + '</p>' +
         '</div></div>';
     }).join('');
 
@@ -1295,7 +1332,7 @@ function main(dest, idx) {
         const fetchpriorityAttr = idx === 0 ? 'fetchpriority="high" ' : '';
         const rawSrc = ph.rawSrc || '';
         return '<div class="dest-ov-slide ' + (idx === 0 ? 'is-active' : '') + '" data-ovslide="' + idx + '" data-src="' + esc(ph.src) + '">' +
-          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="' + loadingAttr + '" ' + fetchpriorityAttr + 'decoding="async" ' +
+          '<img src="' + esc(ph.src) + '" alt="' + esc(ph.title) + '" loading="' + loadingAttr + '" ' + fetchpriorityAttr + 'decoding="async" referrerpolicy="no-referrer" ' +
           (rawSrc && rawSrc !== ph.src ? 'data-raw="' + esc(rawSrc) + '" onerror="if(!this.dataset.triedFallback && this.dataset.raw && this.dataset.raw !== this.src){this.dataset.triedFallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;}" ' : 'onerror="this.onerror=null;" ') +
           '/>' +
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
@@ -1309,7 +1346,7 @@ function main(dest, idx) {
           '<!-- Slide Caption -->' +
           '<div class="absolute bottom-5 left-5 right-5 z-20 text-left pointer-events-auto">' +
           '<div class="dest-ov-caption-inner">' +
-          '<span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500 text-white uppercase tracking-wider mb-1 inline-block capitalize">' +
+          '<span class="gallery-category-pill">' +
           esc((ph.category || 'scenic').replace('_', ' ')) +
           '</span>' +
           '<h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight drop-shadow-md">' + esc(ph.title) + '</h3>' +
@@ -1377,7 +1414,7 @@ function main(dest, idx) {
       '<div class="lg:col-span-2 space-y-6">' +
       summaryHighlightsHTML +
       '<div><h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">About ' + esc(dest.title) + '</h2>' +
-      '<p class="text-gray-600 leading-relaxed">' + esc(ov.about || ov.description || dest.short || '') + '</p></div>' +
+      '<p class="text-gray-600 leading-relaxed">' + esc(String(ov.about || ov.description || dest.short || '').replace(/\s+,/g, ',').replace(/,([^\s0-9"'])/g, ', $1')) + '</p></div>' +
       '<div><h3 class="font-semibold text-gray-900 mb-3">Known For</h3><div class="flex flex-wrap gap-2">' + features + '</div></div>' +
       '<div><div class="flex items-center justify-between mb-3.5"><div><h3 class="font-bold text-gray-900 dark:text-white text-lg">Top Places to Visit</h3></div>' +
       '<button class="text-sm text-primary font-semibold hover:underline flex items-center gap-1" data-goto="places">See all places →</button></div>' +
@@ -1397,17 +1434,22 @@ function main(dest, idx) {
       '<div class="flex justify-between text-sm"><span class="text-gray-500">Region</span><span class="font-medium">' + esc(dest.region) + '</span></div>' +
       '<div class="flex justify-between text-sm"><span class="text-gray-500">State</span><span class="font-medium">' + esc(dest.state) + '</span></div>' +
       altRow +
-      (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Airport</span><span class="font-medium text-right text-xs max-w-36">' + esc(reach.nearestAirport.name) + ' (' + (reach.nearestAirport.distance || '—') + ' km)</span></div>' : '') +
-      (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Station</span><span class="font-medium text-right text-xs max-w-36">' + esc(reach.nearestRailway.name) + ' (' + (reach.nearestRailway.distance || '—') + ' km)</span></div>' : '') +
-      (reach && reach.nearestMetro && reach.nearestMetro.name ? '<div class="flex justify-between text-sm"><span class="text-gray-500">Nearest Metro</span><span class="font-medium text-right text-xs max-w-36">🚇 ' + esc(reach.nearestMetro.name) + ' (' + (reach.nearestMetro.distance || '—') + ' km)</span></div>' : '') +
+      (reach && reach.nearestAirport && reach.nearestAirport.name ? '<div class="flex items-baseline justify-between text-sm gap-2"><span class="text-gray-500 shrink-0">Nearest Airport</span><span class="font-medium text-right text-xs text-slate-800 dark:text-slate-200">' + cleanAirportDisplay(reach.nearestAirport) + '</span></div>' : '') +
+      (reach && reach.nearestRailway && reach.nearestRailway.name ? '<div class="flex items-baseline justify-between text-sm gap-2"><span class="text-gray-500 shrink-0">Nearest Station</span><span class="font-medium text-right text-xs text-slate-800 dark:text-slate-200">' + cleanRailwayDisplay(reach.nearestRailway) + '</span></div>' : '') +
+      (reach && reach.nearestMetro && reach.nearestMetro.name ? '<div class="flex items-baseline justify-between text-sm gap-2"><span class="text-gray-500 shrink-0">Nearest Metro</span><span class="font-medium text-right text-xs flex items-center gap-1 text-slate-800 dark:text-slate-200">' + SVG_METRO_SM + ' ' + esc(reach.nearestMetro.name) + ' (' + (reach.nearestMetro.distance || '—') + ' km)</span></div>' : '') +
       (ov && ov.distanceFromDelhi ? '<div class="flex justify-between text-sm"><span class="text-gray-500">From Delhi</span><span class="font-medium">' + ov.distanceFromDelhi + ' km</span></div>' : (dest.distanceFromDelhi ? '<div class="flex justify-between text-sm"><span class="text-gray-500">From Delhi</span><span class="font-medium">' + dest.distanceFromDelhi + ' km</span></div>' : '')) +
       '</div></div>' +
       '<div class="info-card"><div class="flex items-center justify-between mb-3"><h3 class="font-bold text-gray-900 text-sm uppercase tracking-wider">Stays From</h3>' +
       '<button class="text-xs text-primary font-semibold" data-goto="stays">View all</button></div>' +
       '<div class="space-y-2">' + staysFrom + '</div></div>' +
       overviewBudgetTeaserHTML +
-      (reach && reach.roadNote ? '<div class="bg-amber-50 border border-amber-200 rounded-xl p-4"><div class="flex items-start gap-2"><span class="text-lg shrink-0">⚠️</span>' +
-        '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Note</p><p class="text-amber-800 text-xs leading-relaxed">' + esc(reach.roadNote) + '</p></div></div></div>' : '') +
+      (reach && reach.roadNote ? '<div class="concierge-advisory-card">' +
+        '<div class="flex items-start gap-3">' +
+        '<span class="advisory-icon shrink-0">' +
+        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>' +
+        '</span>' +
+        '<div><p class="advisory-title font-bold text-xs uppercase tracking-wider mb-1">Curator Road Advisory</p><p class="advisory-text text-xs leading-relaxed">' + esc(reach.roadNote) + '</p></div>' +
+        '</div></div>' : '') +
       '</div>' +
       '</div>';
 
@@ -1553,8 +1595,8 @@ function main(dest, idx) {
       const loadAttr = 'loading="lazy"';
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all" data-pidx="' + i + '" role="button" tabindex="0"><div class="flex">' +
         '<div class="shrink-0 w-28 h-24 overflow-hidden bg-gray-100">' +
-        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" width="112" height="96" ' + loadAttr + ' decoding="async" ' +
-          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="this.onerror=null;this.style.display=\'none\';" ') +
+        (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover hover:scale-105 transition-transform" width="112" height="96" ' + loadAttr + ' decoding="async" referrerpolicy="no-referrer" ' +
+          (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ') +
           '/>' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
         '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
@@ -2852,7 +2894,7 @@ function main(dest, idx) {
         return '' +
           '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
           '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
-          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" data-fallback-src="' + esc(rawPhoto) + '" ' +
+          (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="' + esc(rawPhoto) + '" ' +
             'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
           '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
           '<div class="absolute top-2 right-2">' +
@@ -2969,7 +3011,7 @@ function main(dest, idx) {
       const cleanU = cleanMediaUrl(u);
       const optU = optimizeImageUrl(cleanU, 1000);
       return '<div class="carousel-slide"><img src="' + esc(optU) + '" alt="' + esc(name) + ' photo ' + (i + 1) +
-        '" decoding="async" ' +
+        '" decoding="async" referrerpolicy="no-referrer" ' +
         (cleanU && cleanU !== optU ? 'data-raw="' + esc(cleanU) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else{this.onerror=null;}" ' : 'onerror="this.onerror=null;" ') +
         '/></div>';
     }).join('');

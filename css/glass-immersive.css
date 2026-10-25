@@ -300,6 +300,7 @@ body.glass-immersive #category-strip.carousel-row>* {
     justify-content: space-between !important;
     gap: 0.65rem !important;
   }
+
   body.glass-immersive #category-strip.carousel-row>* {
     flex: 1 1 0px !important;
     width: auto !important;
@@ -1738,18 +1739,32 @@ html[data-theme="light"] body.glass-immersive .tint-slate path {
 }
 
 /* ─── Destinations Page Sticky Subheader & Search Bar Fix ─── */
-.dest-subheader-wrap,
-.dest-discovery-toolbar,
-header.dest-discovery-toolbar {
+html:not([data-theme="light"]) .dest-subheader-wrap,
+html:not([data-theme="light"]) .dest-discovery-toolbar,
+html:not([data-theme="light"]) header.dest-discovery-toolbar {
   position: sticky !important;
   top: 64px !important;
-  z-index: 40 !important;
+  z-index: 80 !important;
   background: #060f0c !important;
   background-color: #060f0c !important;
   backdrop-filter: blur(28px) saturate(140%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(140%) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65) !important;
+}
+
+html[data-theme="light"] .dest-subheader-wrap,
+html[data-theme="light"] .dest-discovery-toolbar,
+html[data-theme="light"] header.dest-discovery-toolbar {
+  position: sticky !important;
+  top: 64px !important;
+  z-index: 80 !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(28px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(160%) !important;
+  border-bottom: 2px solid rgba(217, 119, 6, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 
@@ -2823,15 +2838,32 @@ html[data-theme="light"] #mobileMenu a.active {
 /* Headings on Informational Pages: Rich Charcoal over Daylight Canvas */
 html[data-theme="light"] body.glass-immersive header h1:not(.hero-home h1),
 html[data-theme="light"] body.glass-immersive section>h1:not(.hero-home h1),
-html[data-theme="light"] body.glass-immersive .page-header h1 {
+html[data-theme="light"] body.glass-immersive .page-header h1,
+html[data-theme="light"] body.glass-immersive main h1:not(.hero-home h1),
+html[data-theme="light"] body.glass-immersive main h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
+html[data-theme="light"] body.glass-immersive main h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
+html[data-theme="light"] body.glass-immersive section h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
+html[data-theme="light"] body.glass-immersive section>h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
+html[data-theme="light"] body.glass-immersive section h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
+html[data-theme="light"] body.glass-immersive section>h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title) {
   color: #0F172A !important;
   text-shadow: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive header p:not(.hero-home p),
-html[data-theme="light"] body.glass-immersive section>p.max-w-2xl:not(.hero-home p) {
-  color: #475569 !important;
+html[data-theme="light"] body.glass-immersive section p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p),
+html[data-theme="light"] body.glass-immersive section>p.max-w-2xl:not(.hero-home p),
+html[data-theme="light"] body.glass-immersive main p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p) {
+  color: #334155 !important;
   text-shadow: none !important;
+}
+
+html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *) {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .text-slate-300:not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *) {
+  color: #334155 !important;
 }
 
 /* Homepage Hero over Scrimmed Photo Rotator: Retains Brilliant White */
@@ -2954,6 +2986,520 @@ html[data-theme="light"] body.glass-immersive .trend-card p.trend-card-title,
 html[data-theme="light"] body.glass-immersive .trend-card p.text-white {
   color: #FFFFFF !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ULTRA LUXURY SEASON CARDS (Travel This Season) — Both Themes
+   ═══════════════════════════════════════════════════════════════ */
+body.glass-immersive .season-card {
+  position: relative !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  aspect-ratio: 3 / 2 !important;
+  display: block !important;
+  text-decoration: none !important;
+  background: #0B1220 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
+}
+
+html[data-theme="light"] body.glass-immersive .season-card {
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+body.glass-immersive .season-card:hover {
+  transform: translateY(-6px) scale(1.01) !important;
+  border-color: rgba(245, 197, 66, 0.5) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 20px rgba(245, 197, 66, 0.2) !important;
+}
+
+body.glass-immersive .season-card img,
+body.glass-immersive .season-card .season-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .season-card:hover img,
+body.glass-immersive .season-card:hover .season-card-img {
+  transform: scale(1.08) !important;
+}
+
+body.glass-immersive .season-card-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg,
+      rgba(11, 15, 25, 0.12) 0%,
+      rgba(11, 15, 25, 0.32) 35%,
+      rgba(11, 15, 25, 0.78) 70%,
+      rgba(11, 15, 25, 0.95) 100%) !important;
+  pointer-events: none !important;
+  transition: background 0.4s ease !important;
+}
+
+body.glass-immersive .season-card:hover .season-card-overlay {
+  background: linear-gradient(180deg,
+      rgba(11, 15, 25, 0.18) 0%,
+      rgba(11, 15, 25, 0.42) 35%,
+      rgba(11, 15, 25, 0.85) 70%,
+      rgba(11, 15, 25, 0.98) 100%) !important;
+}
+
+body.glass-immersive .season-card-badge {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(11, 15, 25, 0.72) !important;
+  border: 1px solid rgba(245, 197, 66, 0.38) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+  transition: transform 0.3s ease, background 0.3s ease !important;
+  z-index: 2 !important;
+}
+
+body.glass-immersive .season-card:hover .season-card-badge {
+  transform: scale(1.12) rotate(6deg) !important;
+  background: rgba(245, 158, 11, 0.35) !important;
+  border-color: #F5C542 !important;
+  color: #FFFFFF !important;
+}
+
+body.glass-immersive .season-card-content {
+  position: absolute !important;
+  inset: 0 !important;
+  padding: 1.25rem 1.15rem 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+body.glass-immersive .season-card .season-card-title,
+html[data-theme="light"] body.glass-immersive .season-card .season-card-title,
+html[data-theme="dark"] body.glass-immersive .season-card .season-card-title {
+  font-family: var(--font-heading), 'Outfit', -apple-system, sans-serif !important;
+  font-size: clamp(1.1rem, 1.35vw, 1.3rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  margin: 0 0 0.3rem 0 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.8) !important;
+  letter-spacing: -0.01em !important;
+}
+
+body.glass-immersive .season-card .season-card-range,
+html[data-theme="light"] body.glass-immersive .season-card .season-card-range,
+html[data-theme="dark"] body.glass-immersive .season-card .season-card-range {
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: #FDE68A !important;
+  -webkit-text-fill-color: #FDE68A !important;
+  margin: 0 0 0.75rem 0 !important;
+  letter-spacing: 0.03em !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+
+body.glass-immersive .season-explore,
+body.glass-immersive .season-card .season-explore,
+html[data-theme="light"] body.glass-immersive .season-card .season-explore,
+html[data-theme="dark"] body.glass-immersive .season-card .season-explore {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  padding: 0.32rem 0.8rem !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  width: fit-content !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+  transition: gap 0.3s ease, background 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
+}
+
+body.glass-immersive .season-card:hover .season-explore {
+  gap: 0.65rem !important;
+  background: rgba(245, 158, 11, 0.9) !important;
+  border-color: #F5C542 !important;
+  color: #0F172A !important;
+  -webkit-text-fill-color: #0F172A !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4) !important;
+  transform: translateX(2px) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ULTRA LUXURY MINI CARDS (Explore More Strip) — Both Themes
+   ═══════════════════════════════════════════════════════════════ */
+body.glass-immersive .mini-card {
+  display: block !important;
+  text-decoration: none !important;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform;
+}
+
+body.glass-immersive .mini-card:hover {
+  transform: translateY(-7px) scale(1.02) !important;
+}
+
+body.glass-immersive .mini-card-frame {
+  position: relative !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  aspect-ratio: 1 / 1 !important;
+  background: #0B1220 !important;
+  border: 1px solid rgba(229, 192, 123, 0.20) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+  transition: border-color 0.35s ease, box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .mini-card-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.20) 50%, transparent 100%);
+  transform: skewX(-22deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+body.glass-immersive .mini-card:hover .mini-card-frame::after {
+  left: 140%;
+}
+
+html[data-theme="light"] body.glass-immersive .mini-card-frame {
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
+  box-shadow: 0 6px 20px rgba(180, 83, 9, 0.10), inset 0 1px 1px #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .mini-card-frame::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.65) 50%, transparent 100%) !important;
+}
+
+body.glass-immersive .mini-card:hover .mini-card-frame {
+  border-color: rgba(229, 192, 123, 0.70) !important;
+  box-shadow: 0 18px 38px -6px rgba(0, 0, 0, 0.65), 0 0 24px -2px rgba(229, 192, 123, 0.30) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .mini-card:hover .mini-card-frame {
+  border-color: rgba(217, 119, 6, 0.75) !important;
+  box-shadow: 0 18px 38px -6px rgba(180, 83, 9, 0.22), 0 0 24px -2px rgba(245, 158, 11, 0.30), inset 0 1px 2px #FFFFFF !important;
+}
+
+body.glass-immersive .mini-card-frame img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .mini-card:hover .mini-card-frame img {
+  transform: scale(1.1) !important;
+}
+
+body.glass-immersive .mini-card-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg,
+      rgba(11, 15, 25, 0.05) 0%,
+      rgba(11, 15, 25, 0.22) 40%,
+      rgba(11, 15, 25, 0.8) 75%,
+      rgba(11, 15, 25, 0.96) 100%) !important;
+  pointer-events: none !important;
+  transition: background 0.4s ease !important;
+}
+
+body.glass-immersive .mini-card:hover .mini-card-overlay {
+  background: linear-gradient(180deg,
+      rgba(11, 15, 25, 0.1) 0%,
+      rgba(11, 15, 25, 0.32) 40%,
+      rgba(11, 15, 25, 0.86) 75%,
+      rgba(11, 15, 25, 0.98) 100%) !important;
+}
+
+body.glass-immersive .mini-card-content {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  padding: 0.85rem 0.8rem 0.75rem !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.2rem !important;
+  pointer-events: none !important;
+}
+
+body.glass-immersive .mini-card-title,
+body.glass-immersive .card-image-frame p.truncate,
+html[data-theme="light"] body.glass-immersive .mini-card-title,
+html[data-theme="dark"] body.glass-immersive .mini-card-title,
+html[data-theme="light"] body.glass-immersive .card-image-frame p.truncate,
+html[data-theme="dark"] body.glass-immersive .card-image-frame p.truncate {
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  line-height: 1.25 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.7) !important;
+  margin: 0 !important;
+  letter-spacing: -0.01em !important;
+}
+
+body.glass-immersive .mini-card-location,
+html[data-theme="light"] body.glass-immersive .mini-card-location,
+html[data-theme="dark"] body.glass-immersive .mini-card-location {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
+}
+
+body.glass-immersive .mini-card-location svg {
+  color: #F59E0B !important;
+  stroke: #F59E0B !important;
+  flex-shrink: 0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ULTRA LUXURY HERO HILL CARDS (Best Hill Stations) — Both Themes
+   ═══════════════════════════════════════════════════════════════ */
+body.glass-immersive .hero-hill-card {
+  position: relative !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-decoration: none !important;
+  background: linear-gradient(155deg, rgba(15, 23, 42, 0.85) 0%, rgba(7, 12, 22, 0.94) 100%) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(229, 192, 123, 0.20) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, background 0.35s ease !important;
+  will-change: transform, box-shadow;
+}
+
+body.glass-immersive .hero-hill-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.12) 50%, transparent 100%);
+  transform: skewX(-22deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+body.glass-immersive .hero-hill-card:hover::after {
+  left: 140%;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-card {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06), inset 0 1px 1px #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-card::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.65) 50%, transparent 100%) !important;
+}
+
+body.glass-immersive .hero-hill-card:hover {
+  transform: translateY(-8px) scale(1.015) !important;
+  background: linear-gradient(155deg, rgba(22, 34, 60, 0.92) 0%, rgba(10, 18, 32, 0.98) 100%) !important;
+  border-color: rgba(229, 192, 123, 0.68) !important;
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.75), 0 0 32px -2px rgba(229, 192, 123, 0.30), inset 0 1px 2px rgba(255, 255, 255, 0.25) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-card:hover {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(217, 119, 6, 0.72) !important;
+  box-shadow: 0 24px 50px -10px rgba(180, 83, 9, 0.20), 0 0 30px rgba(245, 158, 11, 0.25), inset 0 1px 2px #FFFFFF !important;
+}
+
+/* Ultra Luxury Trend Card Glassmorphism in Both Themes */
+body.glass-immersive .trend-card {
+  position: relative !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(229, 192, 123, 0.20) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease !important;
+  will-change: transform, box-shadow;
+}
+
+body.glass-immersive .trend-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.20) 50%, transparent 100%);
+  transform: skewX(-22deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+body.glass-immersive .trend-card:hover::after {
+  left: 140%;
+}
+
+body.glass-immersive .trend-card:hover {
+  transform: translateY(-8px) scale(1.018) !important;
+  border-color: rgba(229, 192, 123, 0.70) !important;
+  box-shadow: 0 24px 55px -10px rgba(0, 0, 0, 0.85), 0 0 35px -2px rgba(229, 192, 123, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.30) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .trend-card {
+  border: 1px solid rgba(217, 119, 6, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(180, 83, 9, 0.12), inset 0 1px 1px #FFFFFF !important;
+}
+
+html[data-theme="light"] body.glass-immersive .trend-card:hover {
+  border-color: rgba(217, 119, 6, 0.75) !important;
+  box-shadow: 0 24px 55px -10px rgba(180, 83, 9, 0.25), 0 0 35px 2px rgba(245, 158, 11, 0.30), inset 0 1px 2px #FFFFFF !important;
+}
+
+body.glass-immersive .hero-hill-media {
+  aspect-ratio: 16 / 9 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  background: #0B1220 !important;
+}
+
+body.glass-immersive .hero-hill-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+body.glass-immersive .hero-hill-card:hover .hero-hill-media img {
+  transform: scale(1.06) !important;
+}
+
+body.glass-immersive .hero-hill-body {
+  padding: 1rem 1.15rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.35rem !important;
+}
+
+body.glass-immersive .hero-hill-title {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-title {
+  color: #0F172A !important;
+}
+
+body.glass-immersive .hero-hill-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-size: 0.78rem !important;
+  color: #CBD5E1 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-meta {
+  color: #475569 !important;
+}
+
+body.glass-immersive .hero-hill-rating {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+}
+
+body.glass-immersive .hero-hill-desc {
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+  color: #94A3B8 !important;
+  margin: 0.2rem 0 0 0 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-desc {
+  color: #64748B !important;
+}
+
+body.glass-immersive .hero-hill-footer {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  padding-top: 0.65rem !important;
+  margin-top: 0.35rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+body.glass-immersive .hero-hill-prefix {
+  font-size: 0.72rem !important;
+  color: #94A3B8 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-prefix {
+  color: #64748B !important;
+}
+
+body.glass-immersive .hero-hill-price {
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: #FBBF24 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .hero-hill-price {
+  color: #B45309 !important;
 }
 
 /* ─── Elevated Light Mode Content Cards (Liquid Glass / Lait de Perle) ────────── */
@@ -4213,4 +4759,657 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 20px rgba(245, 197, 66, 0.30) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   POPULAR DESTINATIONS 3D FAN-OUT / COVERFLOW SHOWCASE
+   Figma 'Dekho Apna Desh' design specification:
+   - 3D perspective curved fan deck
+   - Tall portrait cards (r:28px) with full-bleed photography
+   - Center active card: upright, full details + pill 'Explore →' CTA
+   - Side neighbor cards: tilted in 3D arc with subtle dim & clean titles
+   - Circular frosted glass prev/next navigation arrows
+   - Bottom elongated pill pagination indicators
+   ═══════════════════════════════════════════════════════════════════ */
+.popular-showcase-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* ─── Outer wrapper: flex column for stage+arrows | then dots below ─── */
+.popular-3d-showcase {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 2.5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  /* NO overflow:hidden — side cards must be visible */
+}
+
+/* ─── Stage-wrap: contains prev/next arrows + card stage as a row ─── */
+.popular-3d-stage-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: visible so side cards fan out beyond bounds */
+}
+
+/* ─── Card stage: the perspective container ─── */
+.popular-3d-stage {
+  position: relative;
+  width: min(680px, 90vw);
+  height: 480px;
+  flex-shrink: 0;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+/* ─── Individual portrait cards ─── */
+.popular-3d-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -234px;
+  margin-left: -162px;
+  width: 324px;
+  height: 468px;
+  border-radius: 26px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
+  /* CRITICAL: Only transition border/shadow/opacity — NOT transform (JS owns transform) */
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+  will-change: transform, opacity;
+  background: #0f172a;
+}
+
+/* JS sets card.style.transform directly; CSS provides the animation timing via transition on the transform-related values when they change */
+.popular-3d-card[style] {
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.popular-3d-card.is-active {
+  border-color: rgba(229, 192, 123, 0.65);
+  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.70), 0 0 32px rgba(229, 192, 123, 0.25);
+  cursor: default;
+}
+
+/* Subtle hover glow on side cards — ONLY border/shadow, NEVER transform */
+.popular-3d-card:not(.is-active):hover {
+  border-color: rgba(229, 192, 123, 0.55) !important;
+  box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.75), 0 0 24px rgba(229, 192, 123, 0.22) !important;
+}
+
+.popular-3d-card:not(.is-active):hover .popular-3d-dim {
+  opacity: 0.15 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):hover {
+  border-color: rgba(217, 119, 6, 0.60) !important;
+  box-shadow: 0 22px 50px -10px rgba(180, 83, 9, 0.20), 0 0 22px rgba(245, 158, 11, 0.22) !important;
+}
+
+.popular-3d-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.popular-3d-card.is-active:hover .popular-3d-img {
+  transform: scale(1.04);
+}
+
+.popular-3d-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.25) 35%,
+      rgba(8, 10, 15, 0.85) 70%,
+      rgba(8, 10, 15, 0.98) 100%);
+  pointer-events: none;
+}
+
+.popular-3d-dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 10, 15, 0.35);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.popular-3d-card.is-active .popular-3d-dim {
+  opacity: 0;
+}
+
+.popular-3d-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 3;
+}
+
+.popular-3d-badge .star-icon {
+  color: #F59E0B;
+}
+
+.popular-3d-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 22px 20px 20px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popular-3d-state {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #E5C07B;
+}
+
+.popular-3d-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  transition: font-size 0.3s ease;
+}
+
+.popular-3d-card:not(.is-active) .popular-3d-title {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 1.35rem;
+}
+
+.popular-3d-desc {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.90) !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 4px;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.popular-3d-card:not(.is-active) .popular-3d-desc {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.popular-3d-actions {
+  margin-top: 8px;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.popular-3d-card:not(.is-active) .popular-3d-actions {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.popular-3d-explore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.popular-3d-explore:hover {
+  background: rgba(229, 192, 123, 0.28);
+  border-color: #E5C07B;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(229, 192, 123, 0.35);
+}
+
+/* ─── Circular Glass Nav Arrows — positioned symmetrically relative to card deck ─── */
+.popular-3d-arrow {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 30;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+.popular-3d-arrow:hover {
+  background: rgba(229, 192, 123, 0.32);
+  border-color: #E5C07B;
+  color: #FFFFFF;
+  transform: translateY(-50%) scale(1.12) !important;
+  box-shadow: 0 12px 32px rgba(229, 192, 123, 0.45);
+}
+
+.popular-3d-arrow:active {
+  transform: translateY(-50%) scale(0.94) !important;
+}
+
+/* Position arrows symmetrically flanking the cards, NOT lost at screen edges */
+.popular-3d-arrow-prev {
+  left: clamp(16px, calc(50% - 470px), calc(50% - 370px));
+}
+
+.popular-3d-arrow-next {
+  right: clamp(16px, calc(50% - 470px), calc(50% - 370px));
+}
+
+/* ─── Elongated Pill Pagination Indicators ─── */
+.popular-3d-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+  z-index: 20;
+}
+
+.popular-3d-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.popular-3d-dot.is-active {
+  width: 32px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%);
+  box-shadow: 0 2px 10px rgba(229, 192, 123, 0.45);
+}
+
+/* ─── Light Mode Overrides ─── */
+html[data-theme="light"] body.glass-immersive .popular-3d-arrow {
+  background: rgba(255, 255, 255, 0.90) !important;
+  border: 1.5px solid rgba(217, 119, 6, 0.30) !important;
+  color: #92400E !important;
+  box-shadow: 0 6px 20px rgba(180, 83, 9, 0.15) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-arrow:hover {
+  background: #92400E !important;
+  border-color: #92400E !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 10px 28px rgba(180, 83, 9, 0.30) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-dot.is-active {
+  background: linear-gradient(135deg, #FEF3C7 0%, #D97706 100%) !important;
+  box-shadow: 0 2px 10px rgba(180, 83, 9, 0.35) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
+  background: rgba(0, 0, 0, 0.22) !important;
+}
+
+/* ─── Responsive: Tablet (768px and below) ─── */
+@media (max-width: 768px) {
+  .popular-3d-stage {
+    height: 440px;
+    width: min(520px, 85vw);
+  }
+
+  .popular-3d-card {
+    width: 275px;
+    height: 425px;
+    margin-top: -212px;
+    margin-left: -137px;
+    border-radius: 22px;
+  }
+
+  .popular-3d-arrow {
+    width: 46px;
+    height: 46px;
+  }
+
+  .popular-3d-arrow-prev {
+    left: clamp(8px, calc(50% - 320px), calc(50% - 230px));
+  }
+
+  .popular-3d-arrow-next {
+    right: clamp(8px, calc(50% - 320px), calc(50% - 230px));
+  }
+}
+
+/* ─── Responsive: Mobile (480px and below) ─── */
+@media (max-width: 480px) {
+  .popular-3d-stage {
+    height: 400px;
+    width: min(440px, 80vw);
+  }
+
+  .popular-3d-card {
+    width: 244px;
+    height: 388px;
+    margin-top: -194px;
+    margin-left: -122px;
+    border-radius: 20px;
+  }
+
+  .popular-3d-title {
+    font-size: 1.45rem;
+  }
+
+  .popular-3d-card:not(.is-active) .popular-3d-title {
+    font-size: 1.15rem;
+  }
+
+  .popular-3d-arrow {
+    width: 44px;
+    height: 44px;
+    z-index: 35;
+  }
+
+  .popular-3d-arrow-prev {
+    left: 8px;
+  }
+
+  .popular-3d-arrow-next {
+    right: 8px;
+  }
+}
+
+/* ─── Responsive: Small Mobile (375px and below) ─── */
+@media (max-width: 375px) {
+  .popular-3d-stage {
+    height: 375px;
+    width: 100%;
+  }
+
+  .popular-3d-card {
+    width: 220px;
+    height: 360px;
+    margin-top: -180px;
+    margin-left: -110px;
+    border-radius: 18px;
+  }
+
+  .popular-3d-title {
+    font-size: 1.3rem;
+  }
+
+  .popular-3d-card:not(.is-active) .popular-3d-title {
+    font-size: 1.05rem;
+  }
+
+  .popular-3d-content {
+    padding: 16px 14px 14px;
+  }
+
+  .popular-3d-arrow {
+    width: 44px;
+    height: 44px;
+    z-index: 35;
+  }
+
+  .popular-3d-arrow-prev {
+    left: 6px;
+  }
+
+  .popular-3d-arrow-next {
+    right: 6px;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   MASTER UNIVERSAL GLASS HOVER & KINETIC MICRO-INTERACTION SYSTEM (BOTH THEMES)
+   Applied across navbar, categories, buttons, cards, stays, places, and footers.
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Dynamic Specular Shimmer Layer for Glass Elements */
+[data-glass-interactive]:not(.popular-3d-arrow):not(.carousel-arrow):not(.discover-arrow):not(.section-carousel-arrow),
+.btn,
+.nav-link,
+.category-pill-btn,
+.dest-quick-pill,
+.quick-tag-btn,
+.load-more-luxury-btn,
+.section-link {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.2s ease !important;
+}
+
+[data-glass-interactive]::before,
+.btn::before,
+.category-pill-btn::before,
+.load-more-luxury-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  transition: left 0.65s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+[data-glass-interactive]:hover::before,
+.btn:hover::before,
+.category-pill-btn:hover::before,
+.load-more-luxury-btn:hover::before {
+  left: 140%;
+}
+
+/* ─── 1. DARK THEME UNIVERSAL GLASS HOVER ───────────────────────────────────── */
+html:not([data-theme="light"]) [data-glass-interactive]:hover,
+html:not([data-theme="light"]) .btn:hover,
+html:not([data-theme="light"]) a.btn:hover,
+html:not([data-theme="light"]) .nav-link:hover,
+html:not([data-theme="light"]) .nav-link.active,
+html:not([data-theme="light"]) .category-pill-btn:hover,
+html:not([data-theme="light"]) .category-pill-btn.active,
+html:not([data-theme="light"]) .quick-tag-btn:hover,
+html:not([data-theme="light"]) .quick-tag-btn.active,
+html:not([data-theme="light"]) .dest-quick-pill:hover,
+html:not([data-theme="light"]) .dest-quick-pill.active,
+html:not([data-theme="light"]) .tab-btn:hover,
+html:not([data-theme="light"]) .tab-btn.active,
+html:not([data-theme="light"]) .load-more-luxury-btn:hover,
+html:not([data-theme="light"]) .section-link:hover,
+html:not([data-theme="light"]) .carousel-btn:hover,
+html:not([data-theme="light"]) .hero-car-btn:hover,
+html:not([data-theme="light"]) .cheat-sos-btn:hover,
+html:not([data-theme="light"]) .state-accordion-summary:hover {
+  background: linear-gradient(135deg, rgba(22, 38, 30, 0.88) 0%, rgba(14, 24, 18, 0.92) 100%) !important;
+  backdrop-filter: blur(18px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(190%) !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.45) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.45) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.45) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 8px 26px -3px rgba(0, 0, 0, 0.75), 0 0 22px rgba(245, 197, 66, 0.38), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* ─── 2. LIGHT THEME UNIVERSAL GLASS HOVER ──────────────────────────────────── */
+html[data-theme="light"] [data-glass-interactive]:hover,
+html[data-theme="light"] .btn:hover,
+html[data-theme="light"] a.btn:hover,
+html[data-theme="light"] .category-pill-btn:hover,
+html[data-theme="light"] .category-pill-btn.active,
+html[data-theme="light"] .quick-tag-btn:hover,
+html[data-theme="light"] .quick-tag-btn.active,
+html[data-theme="light"] .dest-quick-pill:hover,
+html[data-theme="light"] .dest-quick-pill.active,
+html[data-theme="light"] .tab-btn:hover,
+html[data-theme="light"] .tab-btn.active,
+html[data-theme="light"] .load-more-luxury-btn:hover,
+html[data-theme="light"] .section-link:hover,
+html[data-theme="light"] .carousel-btn:hover,
+html[data-theme="light"] .hero-car-btn:hover,
+html[data-theme="light"] .cheat-sos-btn:hover,
+html[data-theme="light"] .state-accordion-summary:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(254, 243, 199, 0.88) 100%) !important;
+  backdrop-filter: blur(18px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(190%) !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-left: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-right: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  box-shadow: 0 6px 20px -2px rgba(180, 83, 9, 0.20), 0 0 18px rgba(245, 158, 11, 0.28), inset 0 1px 1px 0 #FFFFFF !important;
+  color: #0F172A !important;
+  text-shadow: none !important;
+}
+
+/* Navbar Links in Light Mode (stays on dark obsidian header) */
+html[data-theme="light"] .nav-glass .nav-link:hover,
+html[data-theme="light"] .nav-glass .nav-link.active {
+  background: rgba(245, 197, 66, 0.16) !important;
+  backdrop-filter: blur(20px) saturate(190%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  color: #F5C542 !important;
+  box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.5), 0 0 16px rgba(245, 197, 66, 0.4) !important;
+}
+
+/* ─── 3. CARDS GLASS HOVER & 3D MAGNETIC ELEVATION ──────────────────────────── */
+html:not([data-theme="light"]) .dest-card:hover,
+html:not([data-theme="light"]) .dest-card-link:hover,
+html:not([data-theme="light"]) .explore-card:hover,
+html:not([data-theme="light"]) .trend-card:hover,
+html:not([data-theme="light"]) .hero-hill-card:hover,
+html:not([data-theme="light"]) .place-card:hover,
+html:not([data-theme="light"]) .stay-card:hover,
+html:not([data-theme="light"]) .bento-tile:hover {
+  background: rgba(16, 32, 28, 0.86) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border: 1px solid rgba(229, 192, 123, 0.68) !important;
+  box-shadow: 0 24px 56px -12px rgba(0, 0, 0, 0.85), 0 0 36px rgba(229, 192, 123, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+}
+
+html[data-theme="light"] .dest-card:hover,
+html[data-theme="light"] .dest-card-link:hover,
+html[data-theme="light"] .explore-card:hover,
+html[data-theme="light"] .trend-card:hover,
+html[data-theme="light"] .hero-hill-card:hover,
+html[data-theme="light"] .place-card:hover,
+html[data-theme="light"] .stay-card:hover,
+html[data-theme="light"] .bento-tile:hover {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.72) !important;
+  box-shadow: 0 26px 58px -10px rgba(180, 83, 9, 0.22), 0 0 32px 2px rgba(245, 158, 11, 0.28), inset 0 1px 2px 0 #FFFFFF !important;
+}
+
+/* ─── 4. FOOTER LINKS & ACCORDION GLASS HOVER ───────────────────────────────── */
+footer a,
+#siteFooter a,
+.footer a,
+.state-link {
+  transition: all 0.24s ease !important;
+  border-radius: 6px !important;
+}
+
+footer a:hover,
+#siteFooter a:hover,
+.footer a:hover,
+.state-link:hover {
+  background: rgba(22, 36, 30, 0.85) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(245, 197, 66, 0.40) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 197, 66, 0.25) !important;
+  padding: 3px 8px !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="light"] footer a:hover,
+html[data-theme="light"] #siteFooter a:hover,
+html[data-theme="light"] .footer a:hover,
+html[data-theme="light"] .state-link:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  color: #F5C542 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), 0 0 16px rgba(245, 197, 66, 0.35) !important;
 }

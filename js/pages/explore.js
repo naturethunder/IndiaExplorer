@@ -5,7 +5,7 @@
  * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
 import { fetchIndex } from '../data/api.js';
-import { initLayout, setActiveNav } from '../components/layout.js?v=20261014_luxury1';
+import { initLayout, setActiveNav } from '../components/layout.js';
 import { destCardHTML } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
 import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
@@ -93,9 +93,9 @@ const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
   title: 'All Destinations — ExploreDesh | Complete Catalogue of Bharat',
-  description: 'Discover 2,396 travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
+  description: 'Discover curated travel destinations across 36 states & UTs of India. Filter by category, travel season, state, and price tier with verified real photography and travel guides.',
   canonicalPath: 'destinations',
-  heading: '2,396 Destinations',
+  heading: 'Curated Destinations',
   subheading: 'Across 36 States & UTs',
 };
 
@@ -188,7 +188,7 @@ function applyLandingSeo(resultLength) {
 
   if (heroTitle) {
     if (seo.isDefault) {
-      heroTitle.innerHTML = '<span class="hero-line-1">2,396 <em class="gold-gradient-text">Destinations</em></span>' +
+      heroTitle.innerHTML = '<span class="hero-line-1">Curated <em class="gold-gradient-text">Destinations</em></span>' +
         '<span class="hero-line-2">Across 36 States & UTs</span>';
     } else {
       heroTitle.innerHTML = '<span class="hero-line-1">' + esc(seo.heading) + '</span>' +
@@ -413,41 +413,109 @@ if (monthSel) monthSel.addEventListener('change', function () {
   apply();
 });
 
-// ─── GSAP ScrollTrigger Card Reveal Engine ─────────────
+// ─── GSAP ScrollTrigger Card Reveal & 3D Magnetic Tilt Engine ─────────────
 const PAGE_SIZE = 24;
 let shown = PAGE_SIZE;
 let lastResults = [];
 let _cardScrollTriggers = [];
+
+function ensureGSAP() {
+  if (window.gsap && window.ScrollTrigger) {
+    try {
+      window.gsap.registerPlugin(window.ScrollTrigger);
+    } catch (_) { }
+  }
+  return Boolean(window.gsap);
+}
 
 function killCardTriggers() {
   _cardScrollTriggers.forEach((st) => { try { st.kill(); } catch (_) { } });
   _cardScrollTriggers = [];
 }
 
+function initCardGlassTilt(items) {
+  if (window.matchMedia('(hover: none) or (pointer: coarse)').matches) return;
+  if (!window.gsap) return;
+
+  items.forEach((item) => {
+    const card = item.querySelector('.dest-card-link');
+    if (!card || card.dataset.tiltInitted) return;
+    card.dataset.tiltInitted = '1';
+
+    let bounds = null;
+
+    card.addEventListener('mouseenter', () => {
+      bounds = card.getBoundingClientRect();
+    });
+
+    card.addEventListener('mousemove', (e) => {
+      if (!bounds) bounds = card.getBoundingClientRect();
+      const mouseX = e.clientX - bounds.left;
+      const mouseY = e.clientY - bounds.top;
+      const xPct = (mouseX / bounds.width - 0.5) * 2; // -1 to 1
+      const yPct = (mouseY / bounds.height - 0.5) * 2; // -1 to 1
+
+      window.gsap.to(card, {
+        rotateY: xPct * 4.5,
+        rotateX: -yPct * 4.5,
+        transformPerspective: 1000,
+        duration: 0.3,
+        ease: 'power1.out',
+        overwrite: 'auto',
+      });
+    });
+
+    card.addEventListener('mouseleave', () => {
+      bounds = null;
+      window.gsap.to(card, {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 0.55,
+        ease: 'power2.out',
+        overwrite: 'auto',
+        clearProps: 'rotateX,rotateY,transformPerspective',
+      });
+    });
+  });
+}
+
 function animateCardsIn(startIndex) {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced || !window.gsap) return;
+  if (!ensureGSAP()) {
+    if (document.readyState !== 'complete') {
+      window.addEventListener('load', () => animateCardsIn(startIndex), { once: true });
+    }
+    return;
+  }
 
   const cardItems = Array.from(grid.querySelectorAll('.dest-card-item'));
   const items = cardItems.slice(startIndex, startIndex + PAGE_SIZE);
   if (!items.length) return;
 
-  // Chunk into rows of 3 for row-by-row stagger reveal
+  if (prefersReduced) {
+    items.forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+    return;
+  }
+
+  // Chunk into rows of 3 for silky smooth luxury row-by-row cascade
   const chunkSize = 3;
   for (let i = 0; i < items.length; i += chunkSize) {
     const row = items.slice(i, i + chunkSize);
 
-    // Set initial hidden state
-    window.gsap.set(row, { opacity: 0, y: 32, scale: 0.97 });
+    // Initial state: subtle elevation, slight scale, 3D perspective
+    window.gsap.set(row, { opacity: 0, y: 32, scale: 0.965 });
 
     const st = window.ScrollTrigger
       ? window.gsap.to(row, {
         opacity: 1,
         y: 0,
         scale: 1,
-        duration: 0.55,
+        duration: 0.75,
         stagger: 0.055,
-        ease: 'expo.out',
+        ease: 'power3.out',
         clearProps: 'transform,scale,opacity',
         scrollTrigger: {
           trigger: row[0],
@@ -460,15 +528,18 @@ function animateCardsIn(startIndex) {
         opacity: 1,
         y: 0,
         scale: 1,
-        duration: 0.55,
+        duration: 0.75,
         stagger: 0.055,
-        ease: 'expo.out',
-        delay: (i / chunkSize) * 0.07,
+        ease: 'power3.out',
+        delay: (i / chunkSize) * 0.06,
         clearProps: 'transform,scale,opacity',
       });
 
     if (st && st.scrollTrigger) _cardScrollTriggers.push(st.scrollTrigger);
   }
+
+  // Attach interactive 3D magnetic tilt to newly rendered cards
+  initCardGlassTilt(items);
 }
 
 function renderBatch(isAppend = false) {
@@ -532,7 +603,7 @@ function syncUrlAndState() {
     }));
   } catch (_) { }
 
-  setActiveNav(filters.type ? 'destinations.html?type=' + filters.type : 'destinations.html');
+  setActiveNav(filters.type ? '/destinations?type=' + filters.type : '/destinations');
 }
 
 function syncControlsFromFilters() {
@@ -899,9 +970,9 @@ document.addEventListener('keydown', function (e) {
 if (searchInput) {
   function updateSearchPlaceholder() {
     if (window.innerWidth <= 640) {
-      searchInput.placeholder = 'Search 2,396 destinations...';
+      searchInput.placeholder = 'Search destinations, states, or sanctuaries...';
     } else {
-      searchInput.placeholder = 'Search 2,396 destinations, states, regions, or attractions...';
+      searchInput.placeholder = 'Search by destination, state, heritage site, or sanctuary...';
     }
   }
   updateSearchPlaceholder();

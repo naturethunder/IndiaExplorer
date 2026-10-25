@@ -10,7 +10,7 @@
     content="Explore top places to visit, best hotels, how to reach, and travel tips for this destination in India. Plan your perfect trip with ExploreDesh." />
   <meta name="robots" id="robotsMeta"
     content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
@@ -75,8 +75,8 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260916_1" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261019_phase100" />
-  <link rel="stylesheet" href="css/destination-immersive.css?v=20261019_phase100" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261026_ultra_luxury_glass" />
+  <link rel="stylesheet" href="css/destination-immersive.css?v=20261025_luxury_pro_max" />
   <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -169,11 +169,13 @@
       </div>
     </div>
 
-    <!-- STICKY TAB BAR — populated by JS with role="tablist" -->
-    <div id="destNavContainer" role="tablist" aria-label="Destination sections"></div>
+    <!-- TABS & PANELS SECTION (Confines sticky subnav) -->
+    <section class="dest-tabs-section relative">
+      <!-- STICKY TAB BAR — populated by JS with role="tablist" -->
+      <div id="destNavContainer" role="tablist" aria-label="Destination sections"></div>
 
-    <!-- TAB PANELS — aria-labelledby set by JS in setTab() -->
-    <div class="max-w-7xl mx-auto px-4 pt-10 pb-12">
+      <!-- TAB PANELS — aria-labelledby set by JS in setTab() -->
+      <div class="max-w-7xl mx-auto px-4 pt-10 pb-12">
       <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
       <div id="panel-places" class="tab-panel" role="tabpanel" aria-labelledby="tab-places" style="display:none"></div>
       <div id="panel-stays" class="tab-panel" role="tabpanel" aria-labelledby="tab-stays" style="display:none"></div>
@@ -216,6 +218,7 @@
         <p class="text-xs text-slate-400 mt-3 text-center">Google Maps · Interactive Location Map</p>
       </div>
     </div>
+    </section>
 
     <!-- SIMILAR DESTINATIONS -->
     <section id="similarSection" aria-labelledby="similar-heading"

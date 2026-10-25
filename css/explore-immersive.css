@@ -489,7 +489,7 @@ html:not([data-theme="light"]) header.dest-discovery-toolbar,
 html:not([data-theme="light"]) .dest-discovery-toolbar {
   position: sticky !important;
   top: 64px !important;
-  z-index: 40 !important;
+  z-index: 80 !important;
   background: #060f0c !important;
   background-color: #060f0c !important;
   backdrop-filter: blur(28px) saturate(140%) !important;
@@ -686,6 +686,8 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
 
 .category-tabs-track {
   display: flex;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
   align-items: center;
   gap: 8px;
   min-width: max-content;
@@ -836,8 +838,8 @@ html[data-theme="light"] .category-scroll-arrow:hover {
   body.glass-immersive .explore-filter-sidebar,
   .explore-filter-sidebar {
     position: sticky !important;
-    top: 200px !important;
-    max-height: calc(100vh - 220px);
+    top: 228px !important;
+    max-height: calc(100vh - 248px) !important;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -1257,39 +1259,59 @@ html[data-theme="light"] select option {
   flex-direction: column;
   height: 100%;
   border-radius: var(--exp-radius-lg);
-  background: linear-gradient(155deg, rgba(16, 32, 28, 0.95), rgba(8, 18, 15, 0.97));
-  border: 1px solid var(--exp-border);
+  background: linear-gradient(155deg, rgba(16, 32, 28, 0.84) 0%, rgba(8, 18, 15, 0.94) 100%) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(229, 192, 123, 0.20) !important;
   overflow: hidden;
   text-decoration: none;
   color: var(--exp-text-main);
-  /* Layered shadow for premium depth */
   box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    0 8px 24px rgba(0, 0, 0, 0.25),
-    0 16px 40px rgba(0, 0, 0, 0.2);
-  /* Spring-physics transition per Pro Max */
+    0 4px 16px rgba(0, 0, 0, 0.35),
+    0 12px 32px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14) !important;
   transition:
-    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
-    border-color 0.25s ease,
-    box-shadow 0.4s ease;
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.45s ease !important;
   position: relative;
   cursor: pointer;
+  will-change: transform, box-shadow;
+}
+
+/* Ultra Luxury Specular Sheen Sweep */
+.dest-card-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.12) 50%, transparent 100%);
+  transform: skewX(-22deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.dest-card-link:hover::after {
+  left: 140%;
 }
 
 .dest-card-link:hover {
-  transform: translateY(-8px) scale(1.012);
-  border-color: rgba(52, 211, 153, 0.5);
+  transform: translateY(-9px) scale(1.015) !important;
+  background: linear-gradient(155deg, rgba(22, 44, 38, 0.92) 0%, rgba(10, 22, 18, 0.98) 100%) !important;
+  border-color: rgba(229, 192, 123, 0.68) !important;
   box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.15),
-    0 12px 32px rgba(0, 0, 0, 0.35),
-    0 32px 72px rgba(0, 0, 0, 0.45),
-    0 0 32px rgba(16, 185, 129, 0.18),
-    inset 0 1px 0 rgba(52, 211, 153, 0.12);
+    0 24px 56px -12px rgba(0, 0, 0, 0.85),
+    0 0 36px -2px rgba(229, 192, 123, 0.32),
+    inset 0 1px 2px rgba(255, 255, 255, 0.30) !important;
 }
 
 .dest-card-link:active {
-  transform: translateY(-4px) scale(1.006);
-  transition-duration: 0.15s;
+  transform: translateY(-4px) scale(1.008) !important;
+  transition-duration: 0.15s !important;
 }
 
 /* Card Media Frame */
@@ -2072,9 +2094,13 @@ html[data-theme="light"] body.explore-immersive .dest-filter-btn {
 html[data-theme="light"] body.explore-immersive .category-pill-btn:hover,
 html[data-theme="light"] body.explore-immersive .quick-tag-btn:hover,
 html[data-theme="light"] body.explore-immersive .dest-filter-btn:hover {
-  background: var(--bg) !important;
-  color: var(--text) !important;
-  border-color: #94A3B8 !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(254, 243, 199, 0.90) 100%) !important;
+  backdrop-filter: blur(18px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(190%) !important;
+  color: #0F172A !important;
+  border: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  box-shadow: 0 6px 20px -2px rgba(180, 83, 9, 0.20), 0 0 16px rgba(245, 158, 11, 0.26), inset 0 1px 1px 0 #FFFFFF !important;
 }
 
 html[data-theme="light"] body.explore-immersive .category-pill-btn.active,
@@ -2090,27 +2116,36 @@ html[data-theme="light"] body.explore-immersive .dest-filter-btn.active {
 
 /* ─── Destination Cards (The Grid Items) ─────────────────────────────────── */
 html[data-theme="light"] body.explore-immersive .dest-card-link {
-  background: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
   box-shadow:
-    inset 0 1px 0 0 var(--white),
-    0 2px 4px rgba(15, 23, 42, 0.04),
-    0 12px 32px -4px rgba(15, 23, 42, 0.07) !important;
+    inset 0 1px 1px 0 #FFFFFF,
+    0 4px 16px rgba(15, 23, 42, 0.04),
+    0 12px 30px -4px rgba(180, 83, 9, 0.08) !important;
   border-radius: 1.35rem !important;
   color: #1C1917 !important;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease !important;
+  transition:
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    background 0.45s ease !important;
+  will-change: transform, box-shadow;
+}
+
+html[data-theme="light"] body.explore-immersive .dest-card-link::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.65) 50%, transparent 100%) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-link:hover {
-  background: var(--white) !important;
-  border-color: rgba(217, 119, 6, 0.45) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(217, 119, 6, 0.72) !important;
   box-shadow:
-    inset 0 1px 0 0 var(--white),
-    0 20px 42px -6px rgba(15, 23, 42, 0.13),
-    0 0 24px -2px rgba(217, 119, 6, 0.22) !important;
-  transform: translateY(-6px) !important;
+    inset 0 1px 2px 0 #FFFFFF,
+    0 26px 58px -10px rgba(180, 83, 9, 0.22),
+    0 0 32px 2px rgba(245, 158, 11, 0.28) !important;
+  transform: translateY(-9px) scale(1.015) !important;
 }
 
 /* INVARIANT: Card Media Overlay MUST STAY WHITE over dark photos! */
@@ -2130,10 +2165,9 @@ html[data-theme="light"] body.explore-immersive .dest-card-location {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7) !important;
 }
 
-
-/* Card Body in Light Mode */
+/* Card Body in Light Mode stays crystal transparent */
 html[data-theme="light"] body.explore-immersive .dest-card-body {
-  background: var(--white) !important;
+  background: transparent !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-desc {

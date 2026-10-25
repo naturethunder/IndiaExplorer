@@ -491,23 +491,77 @@ html[data-theme="light"] .calligraphy-kicker::after {
   -webkit-text-fill-color: transparent;
 }
 
-/* Universal Destination Card Title */
+/* Universal Destination Card Overlay Typography & Media (Both Themes) */
+.dest-card-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: #0B1220;
+}
+
+.dest-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 15, 25, 0.05) 0%,
+    rgba(11, 15, 25, 0.25) 35%,
+    rgba(11, 15, 25, 0.82) 70%,
+    rgba(11, 15, 25, 0.98) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dest-card-header-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  z-index: 2;
+  pointer-events: none;
+}
+
 .dest-card-title {
   font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
   font-size: clamp(1.2rem, 1.4vw, 1.45rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.015em;
-  margin: 0 0 3px;
-  color: #ffffff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  margin: 0 0 4px;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.8) !important;
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .dest-card-item:hover .dest-card-title,
 .dest-card-link:hover .dest-card-title {
-  color: #FFF3C4;
-  text-shadow: 0 0 16px rgba(245, 197, 66, 0.45);
+  color: #FFF3C4 !important;
+  -webkit-text-fill-color: #FFF3C4 !important;
+  text-shadow: 0 0 16px rgba(245, 197, 66, 0.6), 0 2px 8px rgba(0, 0, 0, 0.95) !important;
+}
+
+.dest-card-location,
+.trend-card-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+.dest-card-location svg,
+.trend-card-location svg {
+  color: #F59E0B !important;
+  stroke: #F59E0B !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+  flex-shrink: 0;
 }
 
 /* Royal Handwritten script accent */
@@ -4177,16 +4231,97 @@ a.btn.active,
 input[type="button"]:hover,
 input[type="button"]:active,
 input[type="submit"]:hover,
-input[type="submit"]:active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+input[type="submit"]:active,
+[data-glass-interactive]:hover {
+  background: linear-gradient(135deg, rgba(22, 38, 30, 0.88) 0%, rgba(14, 24, 18, 0.92) 100%) !important;
+  backdrop-filter: blur(16px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(190%) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
-  border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.42) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.42) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.42) !important;
   border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 8px 24px -2px rgba(0, 0, 0, 0.75), 0 0 20px rgba(245, 197, 66, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Light Theme Universal Button & Interactive Glass Hover */
+html[data-theme="light"] button.active,
+html[data-theme="light"] button[aria-selected="true"],
+html[data-theme="light"] button[aria-pressed="true"],
+html[data-theme="light"] .btn:hover,
+html[data-theme="light"] .btn:active,
+html[data-theme="light"] .btn.active,
+html[data-theme="light"] a.btn:hover,
+html[data-theme="light"] a.btn:active,
+html[data-theme="light"] a.btn.active,
+html[data-theme="light"] .btn-outline:hover,
+html[data-theme="light"] .btn-outline:active,
+html[data-theme="light"] .btn-outline.active,
+html[data-theme="light"] .btn-ghost:hover,
+html[data-theme="light"] .btn-ghost:active,
+html[data-theme="light"] .btn-ghost.active,
+html[data-theme="light"] .tab-btn:hover,
+html[data-theme="light"] .tab-btn:active,
+html[data-theme="light"] .tab-btn.active,
+html[data-theme="light"] .dest-quick-pill:hover,
+html[data-theme="light"] .dest-quick-pill:active,
+html[data-theme="light"] .dest-quick-pill.active,
+html[data-theme="light"] .category-pill-btn:hover,
+html[data-theme="light"] .category-pill-btn:active,
+html[data-theme="light"] .category-pill-btn.active,
+html[data-theme="light"] .quick-tag-btn:hover,
+html[data-theme="light"] .quick-tag-btn:active,
+html[data-theme="light"] .quick-tag-btn.active,
+html[data-theme="light"] .nav-link:hover,
+html[data-theme="light"] .nav-link:active,
+html[data-theme="light"] .nav-link.active,
+html[data-theme="light"] .ex-chip:hover,
+html[data-theme="light"] .ex-chip:active,
+html[data-theme="light"] .ex-chip.active,
+html[data-theme="light"] .hero-seg-btn:hover,
+html[data-theme="light"] .hero-seg-btn:active,
+html[data-theme="light"] .hero-car-btn:hover,
+html[data-theme="light"] .hero-car-btn:active,
+html[data-theme="light"] .load-more-luxury-btn:hover,
+html[data-theme="light"] .load-more-luxury-btn:active,
+html[data-theme="light"] .mobile-filter-trigger:hover,
+html[data-theme="light"] .mobile-filter-trigger:active,
+html[data-theme="light"] .filter-apply-btn:hover,
+html[data-theme="light"] .filter-apply-btn:active,
+html[data-theme="light"] .empty-state-reset-btn:hover,
+html[data-theme="light"] .empty-state-reset-btn:active,
+html[data-theme="light"] input[type="button"]:hover,
+html[data-theme="light"] input[type="button"]:active,
+html[data-theme="light"] input[type="submit"]:hover,
+html[data-theme="light"] input[type="submit"]:active,
+html[data-theme="light"] [data-glass-interactive]:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(254, 243, 199, 0.88) 100%) !important;
+  backdrop-filter: blur(16px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(190%) !important;
+  color: #0F172A !important;
+  font-weight: 600 !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-left: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-right: 1px solid rgba(217, 119, 6, 0.45) !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  box-shadow: 0 6px 20px -2px rgba(180, 83, 9, 0.20), 0 0 16px rgba(245, 158, 11, 0.26), inset 0 1px 1px 0 #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="light"] .btn-primary:hover,
+html[data-theme="light"] .btn-primary:active,
+html[data-theme="light"] .btn-primary.active,
+html[data-theme="light"] .btn-gradient:hover,
+html[data-theme="light"] .btn-gradient:active,
+html[data-theme="light"] .btn-gradient.active {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(217, 119, 6, 0.6) !important;
+  border-bottom: 2.5px solid #92400E !important;
+  box-shadow: 0 8px 24px -2px rgba(180, 83, 9, 0.35), 0 0 20px rgba(217, 119, 6, 0.4) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 button:hover svg,

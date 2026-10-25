@@ -3,7 +3,7 @@
  * Loads ONLY the lightweight manifest (data/destinations/index.json).
  */
 import { fetchIndex, fetchHomeIndex } from '../data/api.js';
-import { initLayout } from '../components/layout.js?v=20261019_home_scroll_fix';
+import { initLayout } from '../components/layout.js';
 import { heroCardHTML, miniCardHTML, trendCardHTML, destUrl, cardThumb, cardImg } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, websiteJsonLd } from '../components/seo.js';
 import { esc, inr, typeLabel } from '../utils/format.js';
@@ -24,10 +24,10 @@ if (!window.location.hash) {
 initLayout({ active: 'home' });
 
 applySEO({
-  title: 'ExploreDesh — Discover Incredible India | Travel Guides & Hotels',
-  description: "Discover India's most beautiful destinations. Search hotels by budget, explore top places to visit, and plan your perfect India trip with ExploreDesh.",
+  title: "ExploreDesh — India's Hidden Destinations & Sanctuaries",
+  description: "Uncover India's hidden gems, untouched valleys, and curated sanctuaries across 36 states. Authentic photography, bespoke stays, and honest travel guides.",
   canonicalPath: '/',
-  keywords: ['india travel', 'india destinations', 'hill stations', 'beaches in india', 'india trip planner', 'hotels in india'],
+  keywords: ['hidden places in india', 'unexplored india', 'offbeat destinations india', 'curated sanctuaries', 'india travel catalogue', 'boutique stays india'],
   image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1920&q=85',
 });
 
@@ -121,12 +121,17 @@ injectJsonLd(websiteJsonLd(), 'website');
 // ─── Pre-populate grids with shimmer skeletons while index.json loads ─
 // UI/UX skill §3: progressive-loading — show skeleton instead of blank space
 function injectSkeletons() {
-  const heroGridIds = ['hills-grid', 'popular-grid'];
+  const heroGridIds = ['hills-grid'];
   const trendId = 'trending-grid';
   const seasonId = 'season-grid';
   const miniId = 'explore-grid';
   const budgetId = 'budget-grid';
   const monthId = 'month-rail';
+
+  const popEl = document.getElementById('popular-grid');
+  if (popEl && !popEl.children.length) {
+    popEl.innerHTML = '<div class="skeleton-card" style="width:324px;height:468px;border-radius:26px;"></div>';
+  }
 
   heroGridIds.forEach((id) => {
     const el = document.getElementById(id);
@@ -624,15 +629,16 @@ function shuffleArray(arr) {
     const leadImg = lead && (typeof lead.image === 'string' ? lead.image : (lead.image && lead.image.src));
     const src = lead ? cardThumb(lead, 800) : (leadHero || leadImg || '');
     const seasonParam = encodeURIComponent(s.season || s.name.split(' ')[0]);
-    return '<a href="destinations.html?season=' + seasonParam + '" class="season-card group">' +
-      '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" ' +
+    return '<a href="destinations.html?season=' + seasonParam + '" class="season-card group" aria-label="' + esc(s.name) + ' (' + esc(s.range) + ')">' +
+      '<img src="' + esc(src) + '" alt="' + esc(lead ? lead.title + ', ' + lead.state : s.name) + '" loading="lazy" class="season-card-img" ' +
       'onerror="this.onerror=null;this.style.display=\'none\';" />' +
       '<div class="season-card-overlay"></div>' +
-      '<div class="absolute inset-0 p-5 flex flex-col justify-end">' +
-      '<p class="text-white font-bold text-lg leading-tight">' + esc(s.name) + '</p>' +
-      '<p class="text-white/80 text-sm mb-2">' + esc(s.range) + '</p>' +
-      '<span class="season-explore">Explore ' +
-      icon('arrow-right', { size: 15 }) + '</span>' +
+      '<div class="season-card-badge" aria-hidden="true">' + icon(s.ic, { size: 16 }) + '</div>' +
+      '<div class="season-card-content">' +
+      '<h3 class="season-card-title">' + esc(s.name) + '</h3>' +
+      '<p class="season-card-range">' + esc(s.range) + '</p>' +
+      '<span class="season-explore"><span>Explore</span>' +
+      icon('arrow-right', { size: 14 }) + '</span>' +
       '</div>' +
       '</a>';
   }).join('');
@@ -681,7 +687,7 @@ function shuffleArray(arr) {
   wireCarousel(el, document.getElementById('hills-prev'), document.getElementById('hills-next'));
 })();
 
-// ─── Popular grid (large cards - Dynamic Reshuffle on Refresh) ─
+// ─── Popular 3D Fan-Out / Coverflow Showcase (Figma 'Dekho Apna Desh' design) ─
 (function () {
   const el = document.getElementById('popular-grid');
   if (!el) return;
@@ -693,8 +699,263 @@ function shuffleArray(arr) {
   });
 
   const selectedPopular = shuffleArray(popularPool.length >= 10 ? popularPool : summaries).slice(0, 10);
-  el.innerHTML = selectedPopular.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
-  wireCarousel(el, document.getElementById('popular-prev'), document.getElementById('popular-next'));
+
+  // Render cards matching the Figma coverflow design
+  el.innerHTML = selectedPopular.map(function (d, i) {
+    const rawImage = cardImg(d);
+    const image = cardThumb(d, 640) || rawImage;
+    const altText = (d.heroImage && d.heroImage.alt) || d.title;
+    const badgeLabel = d.badge || 'Popular';
+
+    return (
+      '<div class="popular-3d-card" data-no-gsap data-index="' + i + '" data-slug="' + esc(d.slug) + '" role="group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '" tabindex="0">' +
+      '<img src="' + esc(image) + '" alt="' + esc(altText) + '" class="popular-3d-img" ' + (i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"') + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" onerror="if(this.dataset.fallback){this.onerror=null;}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' +
+      '<div class="popular-3d-scrim" aria-hidden="true"></div>' +
+      '<div class="popular-3d-dim" aria-hidden="true"></div>' +
+      '<div class="popular-3d-badge">' +
+      '<svg class="icon star-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" aria-hidden="true">' +
+      '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>' +
+      '</svg>' +
+      '<span>' + esc(badgeLabel) + '</span>' +
+      '</div>' +
+      '<div class="popular-3d-content">' +
+      '<span class="popular-3d-state" style="color:#E5C07B !important;">' + esc(d.state) + '</span>' +
+      '<h3 class="popular-3d-title" style="color:#FFFFFF !important; text-shadow:0 2px 14px rgba(0,0,0,0.85);">' + esc(d.title) + '</h3>' +
+      '<p class="popular-3d-desc" style="color:rgba(255,255,255,0.92) !important; text-shadow:0 1px 8px rgba(0,0,0,0.7);">' + esc(d.short || '') + '</p>' +
+      '<div class="popular-3d-actions">' +
+      '<a href="' + destUrl(d.slug) + '" class="popular-3d-explore" aria-label="Explore ' + esc(d.title) + '">' +
+      '<span>Explore</span>' +
+      '<svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>' +
+      '</svg>' +
+      '</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>'
+    );
+  }).join('');
+
+  // Render bottom elongated pill pagination dots
+  const dotsEl = document.getElementById('popular-dots');
+  if (dotsEl) {
+    dotsEl.innerHTML = selectedPopular.map(function (_, i) {
+      return '<button type="button" class="popular-3d-dot' + (i === 0 ? ' is-active' : '') + '" data-index="' + i + '" aria-label="Go to destination ' + (i + 1) + ' of ' + selectedPopular.length + '"></button>';
+    }).join('');
+  }
+
+  const cards = Array.from(el.querySelectorAll('.popular-3d-card'));
+  const dots = dotsEl ? Array.from(dotsEl.querySelectorAll('.popular-3d-dot')) : [];
+  let currentIndex = 0;
+
+  function updateShowcase(immediate) {
+    const isMobile = window.innerWidth < 640;
+    const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
+    const total = cards.length;
+
+    cards.forEach(function (card, i) {
+      let diff = i - currentIndex;
+      while (diff > total / 2) diff -= total;
+      while (diff < -total / 2) diff += total;
+
+      const absDiff = Math.abs(diff);
+      const sign = diff >= 0 ? 1 : -1;
+      let x = 0;
+      let y = 0;
+      let scale = 1;
+      let rotateY = 0;
+      let rotateZ = 0;
+      let opacity = 1;
+      let zIndex = 10;
+      let pointerEvents = 'auto';
+
+      if (diff === 0) {
+        x = 0;
+        y = 0;
+        scale = 1.0;
+        rotateY = 0;
+        rotateZ = 0;
+        opacity = 1;
+        zIndex = 16;
+        card.classList.add('is-active');
+      } else if (absDiff === 1) {
+        const spacing = isMobile ? 120 : (isTablet ? 180 : 220);
+        x = sign * spacing;
+        y = isMobile ? 6 : 8;
+        scale = isMobile ? 0.84 : 0.88;
+        rotateY = -sign * (isMobile ? 12 : 16);
+        rotateZ = sign * (isMobile ? 2.5 : 3.5);
+        opacity = isMobile ? 0.60 : 0.85;
+        zIndex = 10;
+        card.classList.remove('is-active');
+      } else if (absDiff === 2) {
+        const spacing = isMobile ? 240 : (isTablet ? 330 : 410);
+        x = sign * spacing;
+        y = isMobile ? 14 : 22;
+        scale = isMobile ? 0.70 : 0.76;
+        rotateY = -sign * (isMobile ? 18 : 25);
+        rotateZ = sign * (isMobile ? 5 : 7);
+        opacity = isMobile ? 0 : 0.55;
+        zIndex = 6;
+        pointerEvents = isMobile ? 'none' : 'auto';
+        card.classList.remove('is-active');
+      } else if (absDiff === 3) {
+        const spacing = isTablet ? 450 : 570;
+        x = sign * spacing;
+        y = 34;
+        scale = 0.64;
+        rotateY = -sign * 32;
+        rotateZ = sign * 10;
+        opacity = isTablet ? 0 : 0.28;
+        zIndex = 3;
+        pointerEvents = isTablet ? 'none' : 'auto';
+        card.classList.remove('is-active');
+      } else {
+        x = sign * 700;
+        y = 40;
+        scale = 0.5;
+        rotateY = -sign * 35;
+        rotateZ = sign * 12;
+        opacity = 0;
+        zIndex = 1;
+        pointerEvents = 'none';
+        card.classList.remove('is-active');
+      }
+
+      card.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) scale(' + scale + ') rotateY(' + rotateY + 'deg) rotateZ(' + rotateZ + 'deg)';
+      card.style.opacity = opacity;
+      card.style.zIndex = zIndex;
+      card.style.pointerEvents = pointerEvents;
+    });
+
+    dots.forEach(function (dot, dIdx) {
+      dot.classList.toggle('is-active', dIdx === currentIndex);
+    });
+  }
+
+  // Initial layout immediate
+  updateShowcase(true);
+
+  // Card click: clicking side card brings it to center; active card allows link click
+  cards.forEach(function (card, idx) {
+    card.addEventListener('click', function (e) {
+      if (idx !== currentIndex) {
+        e.preventDefault();
+        currentIndex = idx;
+        updateShowcase();
+      }
+    });
+
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        if (idx !== currentIndex) {
+          e.preventDefault();
+          currentIndex = idx;
+          updateShowcase();
+        }
+      }
+    });
+  });
+
+  // Navigation button handlers
+  const prevBtn = document.getElementById('popular-prev');
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateShowcase();
+    });
+  }
+
+  const nextBtn = document.getElementById('popular-next');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateShowcase();
+    });
+  }
+
+  // Dots navigation
+  dots.forEach(function (dot, idx) {
+    dot.addEventListener('click', function () {
+      currentIndex = idx;
+      updateShowcase();
+    });
+  });
+
+  // Keyboard navigation when container focused
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateShowcase();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateShowcase();
+    }
+  });
+
+  // Touch Swipe on showcase wrap
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let isSwiping = false;
+  const wrap = document.getElementById('popular-showcase-wrap') || el;
+
+  wrap.addEventListener('touchstart', function (e) {
+    if (!e.touches || !e.touches[0]) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isSwiping = true;
+  }, { passive: true });
+
+  wrap.addEventListener('touchend', function (e) {
+    if (!isSwiping || !e.changedTouches || !e.changedTouches[0]) return;
+    isSwiping = false;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0) {
+        currentIndex = (currentIndex + 1) % cards.length;
+      } else {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      }
+      updateShowcase();
+    }
+  }, { passive: true });
+
+  // Responsive resize update
+  let resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      updateShowcase(true);
+    }, 150);
+  });
+
+  // GSAP ScrollTrigger intro: gentle fade-in (no transform to avoid coverflow transform conflicts)
+  if (window.ScrollTrigger && window.gsap && typeof window.gsap.fromTo === 'function') {
+    window.ScrollTrigger.create({
+      trigger: '#popular-showcase-section',
+      start: 'top 85%',
+      once: true,
+      onEnter: function () {
+        // First call updateShowcase to set correct transforms, THEN fade in
+        updateShowcase(true);
+        window.gsap.fromTo(cards, {
+          opacity: 0
+        }, {
+          opacity: function (i, el) {
+            // Active card: 1, neighbor ±1: 0.85, neighbor ±2: 0.55, etc.
+            // Let updateShowcase handle opacity via inline style — just fade in from 0
+            return parseFloat(el.style.opacity) || 1;
+          },
+          duration: 0.6,
+          stagger: 0.05,
+          ease: 'power2.out',
+          clearProps: 'opacity'
+        });
+      }
+    });
+  }
 })();
 
 // ─── Explore grid (small cards - Dynamic Reshuffle on Refresh) ─
@@ -896,7 +1157,6 @@ function wireCarousel(row, prevBtn, nextBtn) {
       '#trending-grid',
       '#month-rail',
       '#season-grid',
-      '#popular-grid',
       '#budget-grid',
       '#hills-grid',
       '#explore-grid',
@@ -956,5 +1216,48 @@ function wireCarousel(row, prevBtn, nextBtn) {
         },
       });
     });
+
+    // 3D Magnetic Cursor Tilt for Home Glass Cards
+    if (!window.matchMedia('(hover: none) or (pointer: coarse)').matches) {
+      document.querySelectorAll('.trend-card, .hero-hill-card, .mini-card').forEach((card) => {
+        if (card.dataset.tiltInitted) return;
+        card.dataset.tiltInitted = '1';
+
+        let bounds = null;
+
+        card.addEventListener('mouseenter', () => {
+          bounds = card.getBoundingClientRect();
+        });
+
+        card.addEventListener('mousemove', (e) => {
+          if (!bounds) bounds = card.getBoundingClientRect();
+          const mouseX = e.clientX - bounds.left;
+          const mouseY = e.clientY - bounds.top;
+          const xPct = (mouseX / bounds.width - 0.5) * 2;
+          const yPct = (mouseY / bounds.height - 0.5) * 2;
+
+          window.gsap.to(card, {
+            rotateY: xPct * 4,
+            rotateX: -yPct * 4,
+            transformPerspective: 1000,
+            duration: 0.3,
+            ease: 'power1.out',
+            overwrite: 'auto',
+          });
+        });
+
+        card.addEventListener('mouseleave', () => {
+          bounds = null;
+          window.gsap.to(card, {
+            rotateX: 0,
+            rotateY: 0,
+            duration: 0.55,
+            ease: 'power2.out',
+            overwrite: 'auto',
+            clearProps: 'rotateX,rotateY,transformPerspective',
+          });
+        });
+      });
+    }
   }
 })();

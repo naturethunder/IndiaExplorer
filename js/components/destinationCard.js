@@ -60,7 +60,7 @@ export function optimizeImageUrl(url, width = 800) {
       const u = new URL(url.startsWith('//') ? 'https:' + url : url);
       const inner = u.searchParams.get('url');
       if (inner) return optimizeImageUrl(decodeURIComponent(inner), width);
-    } catch (_) {}
+    } catch (_) { }
   }
   // 1. Wikimedia Commons: Always serve directly from Wikimedia's global CDN.
   // Never route through third-party proxies (wsrv.nl) that 404, timeout, or get rate-limited.
@@ -124,7 +124,7 @@ export function trendCardHTML(d, opts = {}) {
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="trend-card group' + (image ? '' : ' image-unavailable') + '" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="480" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="480" height="320" ' + loadingAttr + ' decoding="async" referrerpolicy="no-referrer" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
     '<div class="absolute top-3 left-3">' +
@@ -154,7 +154,7 @@ export function destCardHTML(d, opts = {}) {
     '<article class="dest-card-item">' +
     '<a href="' + destUrl(d.slug) + '" class="dest-card-link group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
     '<div class="dest-card-media' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="480" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="dest-card-img" width="480" height="320" ' + loadingAttr + ' decoding="async" referrerpolicy="no-referrer" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="dest-card-scrim"></div>' +
     (typeBadge ? '<div class="dest-card-badges-top">' + typeBadge + '</div>' : '') +
@@ -190,45 +190,46 @@ export function heroCardHTML(d, opts = {}) {
   const image = cardThumb(d, 640);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
-    '<a href="' + destUrl(d.slug) + '" class="card dest-card block group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
-    '<div class="card-image-frame relative overflow-hidden' + (image ? '' : ' image-unavailable') + '" style="aspect-ratio:16/9; border-radius: var(--radius) var(--radius) 0 0;">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="640" height="360" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    '<a href="' + destUrl(d.slug) + '" class="hero-hill-card group block" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
+    '<div class="hero-hill-media relative overflow-hidden' + (image ? '' : ' image-unavailable') + '">' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" width="640" height="360" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
+    '<div class="hero-hill-scrim"></div>' +
     '</div>' +
-    '<div class="p-3 bg-slate-900/90 flex flex-col gap-1">' +
-    '<h3 class="dest-card-title text-white font-bold text-sm sm:text-base truncate leading-tight">' + esc(d.title) + '</h3>' +
-    '<div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-slate-300">' +
-    '<span class="flex items-center gap-0.5">' +
+    '<div class="hero-hill-body">' +
+    '<h3 class="hero-hill-title truncate">' + esc(d.title) + '</h3>' +
+    '<div class="hero-hill-meta">' +
+    '<span class="hero-hill-rating">' +
     '<span class="text-amber-400">' + icon('star', { size: 12, fill: true }) + '</span>' +
-    '<strong class="text-white">' + esc(d.rating) + '</strong></span>' +
-    '<span>(' + inr(d.reviewCount) + ')</span>' +
-    '<span>|</span>' +
-    '<span>' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
+    '<strong>' + esc(d.rating) + '</strong>' +
+    '<span class="opacity-75">(' + inr(d.reviewCount) + ')</span>' +
+    '</span>' +
+    '<span class="hero-hill-divider">·</span>' +
+    '<span class="hero-hill-season">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
-    '<p class="text-slate-400 text-xs line-clamp-1 sm:line-clamp-2 leading-relaxed mt-0.5">' + esc(d.short) + '</p>' +
-    '<div class="pt-2 border-t border-white/10 flex items-center justify-between gap-1 mt-1">' +
-    '<div class="flex items-baseline gap-1.5">' +
-    '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
-    '<span class="text-amber-400 font-bold text-sm">₹' + inr(d.minPrice) + '</span>' +
-    '</div>' +
+    '<p class="hero-hill-desc">' + esc(d.short) + '</p>' +
+    '<div class="hero-hill-footer">' +
+    '<span class="hero-hill-prefix">Stay starts from</span>' +
+    '<span class="hero-hill-price">₹' + inr(d.minPrice) + '</span>' +
     '</div>' +
     '</div>' +
     '</a>';
 }
 
-/** Small square card (home "Explore More" grid). */
+/** Small square card (home "Explore More" grid) — Ultra Luxury Edition. */
 export function miniCardHTML(d, opts = {}) {
   const rawImage = cardImg(d);
-  const image = cardThumb(d, 320);
+  const image = cardThumb(d, 360);
   const loadingAttr = (opts && opts.priority) ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return '' +
-    '<a href="' + destUrl(d.slug) + '" class="group block" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
-    '<div class="card-image-frame rounded-xl overflow-hidden aspect-square relative mb-2' + (image ? '' : ' image-unavailable') + '">' +
-    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="320" height="320" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
+    '<a href="' + destUrl(d.slug) + '" class="mini-card group block" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '">' +
+    '<div class="mini-card-frame relative rounded-2xl overflow-hidden aspect-square' + (image ? '' : ' image-unavailable') + '">' +
+    (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out" width="360" height="360" ' + loadingAttr + ' decoding="async" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
-    '<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>' +
-    '<div class="absolute bottom-2 left-2 right-2">' +
-    '<p class="text-white text-xs font-semibold truncate">' + esc(d.title) + '</p>' +
+    '<div class="mini-card-overlay"></div>' +
+    '<div class="mini-card-content">' +
+    '<p class="mini-card-title truncate">' + esc(d.title) + '</p>' +
+    (d.state ? '<span class="mini-card-location">' + icon('map-pin', { size: 10 }) + esc(d.state) + '</span>' : '') +
     '</div>' +
     '</div>' +
     '</a>';

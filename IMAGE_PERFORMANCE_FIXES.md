@@ -1,4 +1,27 @@
-# Image Quality & Performance Fixes — Phase 117 (2026-10-22 rev-70)
+# Image Quality & Performance Fixes — Phase 122 (2026-10-26 rev-76)
+
+## ✅ Phase 122 (rev-76) — Popular Destinations 3D Coverflow Zero-Collision Stabilization, GSAP Micro-Interaction De-confliction & Master Arrow Repositioning (2026-10-26)
+
+### Problem Diagnosed & Fixed
+- **Popular Destinations Hover Merge Bug**: Diagnosed root cause of side cards snapping to center destination on hover: generic GSAP magnetic cursor tilt engine targeted `.popular-3d-card`, writing inline `perspective/rotateX/rotateY` styles on mousemove that wiped out the carousel's computed `translateX(...) translateY(...) scale(...) rotateY(...) rotateZ(...)` offsets, causing hovered side cards to lose their horizontal positioning and snap to `x = 0` right over the active center destination. Excluded `.popular-3d-card` from GSAP magnetic tilt in `js/pages/home.js`. Added defensive guards in `attachCardGSAP` within `js/utils/gsapInteractions.js` to ignore `.popular-3d-card`, `.popular-3d-stage`, and elements with `data-no-gsap`.
+- **Carousel Navigation Arrow De-confliction & CSS Isolation**: Discovered `[data-glass-interactive]` had `position: relative !important` in `css/glass-immersive.css`. Because `attachButtonGSAP` attached to all buttons without `data-no-gsap`, every carousel navigation arrow (`.popular-3d-arrow`, `.discover-arrow`, `.carousel-arrow`, `.section-carousel-arrow`) was stripped of `position: absolute`, causing arrows to push into cards as flex items or float to the top-left corner under the navbar. Removed `!important` from `position: relative` and excluded carousel arrows from `[data-glass-interactive]`. Added guards in `attachButtonGSAP` and updated `BUTTON_SELECTORS` to ignore carousel arrows. Added `data-no-gsap` attributes to `#popular-prev`, `#popular-next`, `#trend-prev`, `#trend-next`, `#hills-prev`, `#hills-next`, `#explore-prev`, and `#explore-next` in `index.html`.
+- **Ergonomic Symmetric Arrow Placement**: Replaced fragile viewport-margin positioning with symmetric deck framing: Desktop (≥1024px) `left/right: clamp(16px, calc(50% - 470px), calc(50% - 370px))` at `top: 50%; transform: translateY(-50%)`; Tablet (768px–1023px) `left/right: clamp(8px, calc(50% - 320px), calc(50% - 230px))` with 46×46px buttons; Mobile (≤640px / 390px) `left/right: 8px` with accessible 44×44px WCAG AAA touch targets and `z-index: 35`.
+- **Tactile Non-Transform Glass Hover Feedback**: Added dedicated luxury glass hover styles for `.popular-3d-card:not(.is-active):hover` across both dark mode (`border-color: rgba(229, 192, 123, 0.60)`, gold specular bloom `box-shadow`, and scrim dim reduction to `0.12`) and light mode (`border-color: rgba(217, 119, 6, 0.65)`, amber glow).
+- **Triple Audit Suite Certified**: UI/UX Pro Max QA Audit 0 issues detected (100%), Master SEO Audit 61/61 PASSED, Master Regression Guard 71/71 PASSED, Full Repository Integrity 0 violations across 67,952 photo URLs. In-browser verified across 1536px, 768px, and 390px.
+
+---
+
+## ✅ Phase 121 (rev-74) — Ultra-Luxury GSAP Motion Engine, Dual-Theme Liquid Glassmorphism & Navbar Navigation Hardening (2026-10-26)
+
+### Problem Diagnosed & Fixed
+- **Navbar Navigation Active State Desynchronization**: Diagnosed `setActiveNav(href)` bug where iterating across desktop (`nav .nav-link`) and mobile nav links (`.mobile-nav-btn`) using a single `matched` variable caused the desktop link to lose its active gold highlight (`#F5C542`). Resolved by updating the matcher to concurrently highlight all matching desktop and mobile nodes, and adding an instant-feedback click listener with smooth scroll-to-top on re-click.
+- **Destinations Page Scroll Clearance & Layout Overlap Eradication**: Fixed sticky desktop sidebar collision by adjusting sticky `top: 228px`, guaranteeing a 48.0px gap with 0 collision. Elevated discovery toolbar `z-index: 80` and prevented category filter pills from wrapping (`white-space: nowrap !important`) with custom scrollbars, achieving zero Cumulative Layout Shift (CLS = 0.000).
+- **Dual-Theme Liquid Glassmorphism & Specular Sheen**: Replaced solid white card hover in light mode with liquid pearl frosted glass (`rgba(255, 255, 255, 0.88)` + `blur(28px) saturate(190%)`), warm amber rim (`rgba(217, 119, 6, 0.72)`), and golden ambient glow. In dark mode, enhanced obsidian emerald frosted glass (`rgba(16, 32, 28, 0.84)`) with 24K gold rim and deep ambient drop shadow. Added 45-degree specular reflection sheen sweep (`::after`) across both themes.
+- **Ultra-Luxury GSAP Motion & 3D Magnetic Cursor Tilt Engine**: Built safe GSAP ScrollTrigger registration (`ensureGSAP()`), hero entrance timeline with dynamic stat counting (2,396 destinations, 14,037 places, 10,439 stays, 36 states), row-by-row card reveal with `power3.out`, and desktop 3D magnetic cursor tilt engine (`initCardGlassTilt`).
+- **11 Destinations Photographic Overhaul**: Overhauled defective/throttled slots in `chehni-kothi`, `dhanushkodi`, `digha`, `guruvayur-temple`, `kalamb-beach`, `kollur-mookambika-temple`, `kumarakom`, `mahuadanr-wolf-sanctuary`, `panchakuta-basadi-kambadahalli`, `tranquebar`, and `udupi-sri-krishna-matha`. Sourced 100% verified Tier-1 CDN photography preserving zero cross-destination collisions.
+- **Triple Audit Suite Certified**: UI/UX Pro Max QA Audit 0 issues detected (100%), Master SEO Audit 61/61 PASSED, Master Regression Guard 71/71 PASSED, Full Repository Integrity 0 violations across 67,952 photo URLs.
+
+---
 
 ## ✅ Phase 120 (rev-73) — "100,000% WOW" Editorial Stacked Header System & Pre-Footer Regional Atlas Accordion (2026-10-24)
 

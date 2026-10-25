@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.6.6';
+const VERSION = 'v1.7.2';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -41,6 +41,7 @@ const APP_SHELL_URLS = [
   '/js/utils/format.js',
   '/js/utils/theme.js',
   '/js/utils/search.js',
+  '/js/utils/gsapInteractions.js',
   '/js/utils/offlineStorage.js',
   '/js/pages/home.js',
   '/js/pages/explore.js',

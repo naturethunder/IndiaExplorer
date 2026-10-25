@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ExploreDesh — Discover Incredible India</title>
+  <title>ExploreDesh — India's Hidden Destinations &amp; Sanctuaries</title>
   <meta name="description"
-    content="Discover India's 2,396 most beautiful destinations. Search hotels by budget, explore places to visit, and plan your perfect India trip." />
+    content="Uncover India's hidden gems, untouched valleys, and curated sanctuaries across 36 states. Authentic photography, bespoke stays, and honest travel guides." />
   <meta name="keywords"
-    content="India travel, travel guide, tourist destinations India, hill stations, beaches, heritage spots, trip planner" />
+    content="hidden places in India, unexplored India, offbeat destinations India, India travel catalogue, hill stations, heritage sanctuaries, trip planner" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
@@ -49,9 +49,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20261024_luxury_v4" />
+  <link rel="stylesheet" href="css/styles.css?v=20261025_luxury_cards_v5" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261024_luxury_v4" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261026_ultra_luxury_glass" />
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
   <script src="js/vendor/ScrollTrigger.min.js" defer></script>
@@ -82,14 +82,14 @@
           <!-- Luxury Eyebrow — ornamental gold rule flanking -->
           <div class="hero-luxury-eyebrow justify-center mx-auto">
             <span class="hero-eyebrow-rule"></span>
-            <span class="hero-eyebrow-label">CURATED JOURNEYS ACROSS BHARAT</span>
+            <span class="hero-eyebrow-label">CURATED HIDDEN SANCTUARIES ACROSS BHARAT</span>
             <span class="hero-eyebrow-rule"></span>
           </div>
 
           <!-- Cinematic Royal Headline -->
           <h1 class="hero-home-title text-white tracking-tight text-center"
             style="font-size:clamp(2.4rem,4.4vw,4.4rem);line-height:1.15;font-weight:800;margin-top:0.75rem;">
-            <span class="inline sm:whitespace-nowrap">Discover the Wonder of</span><br class="hidden sm:block" />
+            <span class="inline sm:whitespace-nowrap">Discover the Hidden Gems of</span><br class="hidden sm:block" />
             <span class="gold-gradient-text" style="display:inline-block;">Incredible India</span>
           </h1>
 
@@ -104,7 +104,7 @@
                   <path d="m21 21-4.3-4.3" />
                 </svg>
                 <input id="searchInput" type="text" class="search-input"
-                  placeholder="Search 2,396 destinations, hill stations, heritage forts, beaches…" autocomplete="off"
+                  placeholder="Search destinations, hill stations, heritage forts, coastal sanctuaries…" autocomplete="off"
                   aria-label="Search destinations" />
               </div>
               <button type="button" id="searchBtn" class="hero-seg-btn" aria-label="Search">
@@ -177,14 +177,14 @@
                 <!-- Rendered by JS -->
               </div>
               <button type="button" class="carousel-arrow discover-arrow discover-arrow-left" id="trend-prev"
-                aria-label="Scroll trending left">
+                data-no-gsap aria-label="Scroll trending left">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="m15 18-6-6 6-6" />
                 </svg>
               </button>
               <button type="button" class="carousel-arrow discover-arrow discover-arrow-right" id="trend-next"
-                aria-label="Scroll trending right">
+                data-no-gsap aria-label="Scroll trending right">
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="m9 18 6-6-6-6" />
@@ -213,6 +213,58 @@
             <div class="discover-map-inner">
               <svg id="india-map" class="india-map-svg"></svg>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FEATURED: POPULAR DESTINATIONS ═══════════════ -->
+    <section class="py-16 popular-showcase-section" id="popular-showcase-section">
+      <div class="w-full px-4 sm:px-6 lg:px-8">
+        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
+          <div class="monthly-header-left">
+            <h2 class="section-title text-2xl sm:text-3xl">Popular Destinations</h2>
+          </div>
+          <div class="monthly-header-right">
+            <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
+              <span>See All Destinations</span>
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Fan-Out / Coverflow Showcase Deck -->
+        <div class="popular-3d-showcase" id="popular-showcase-wrap">
+          <!-- Stage wrapper holds cards + prev/next arrows, centered together -->
+          <div class="popular-3d-stage-wrap">
+            <button type="button" class="popular-3d-arrow popular-3d-arrow-prev" id="popular-prev"
+              data-no-gsap aria-label="Previous popular destination">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+
+            <div class="popular-3d-stage" id="popular-grid" tabindex="0" role="region" aria-roledescription="carousel"
+              aria-label="Popular destinations 3D showcase">
+              <!-- Rendered by JS -->
+            </div>
+
+            <button type="button" class="popular-3d-arrow popular-3d-arrow-next" id="popular-next"
+              data-no-gsap aria-label="Next popular destination">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="popular-3d-dots" id="popular-dots" role="tablist" aria-label="Popular destination slides">
+            <!-- Rendered by JS -->
           </div>
         </div>
       </div>
@@ -298,47 +350,6 @@
       </div>
     </section>
 
-    <!-- ═══════════════ FEATURED: POPULAR DESTINATIONS ═══════════════ -->
-    <section class="py-16">
-      <div class="w-full px-4 sm:px-6 lg:px-8">
-        <div class="monthly-header-bar monthly-header-bar--split mb-8 reveal">
-          <div class="monthly-header-left">
-            <h2 class="section-title text-2xl sm:text-3xl">Popular Destinations</h2>
-          </div>
-          <div class="monthly-header-right">
-            <a href="/destinations" class="btn btn-outline text-sm inline-flex items-center gap-2">
-              <span>See All Destinations</span>
-              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="section-carousel-wrap">
-          <div class="carousel-row section-carousel-grid" id="popular-grid" tabindex="0" role="group"
-            aria-label="Popular destinations">
-            <!-- Rendered by JS -->
-          </div>
-          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
-            id="popular-prev" aria-label="Scroll popular destinations left">
-            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </button>
-          <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
-            id="popular-next" aria-label="Scroll popular destinations right">
-            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
     <!-- ═══════════════ BROWSE BY BUDGET ═══════════════ -->
     <section class="py-16">
       <div class="w-full px-4 sm:px-6 lg:px-8">
@@ -387,14 +398,14 @@
             <!-- Rendered by JS -->
           </div>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
-            id="hills-prev" aria-label="Scroll hill stations left">
+            id="hills-prev" data-no-gsap aria-label="Scroll hill stations left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
-            id="hills-next" aria-label="Scroll hill stations right">
+            id="hills-next" data-no-gsap aria-label="Scroll hill stations right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -428,14 +439,14 @@
             <!-- Rendered by JS -->
           </div>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
-            id="explore-prev" aria-label="Scroll explore left">
+            id="explore-prev" data-no-gsap aria-label="Scroll explore left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
-            id="explore-next" aria-label="Scroll explore right">
+            id="explore-next" data-no-gsap aria-label="Scroll explore right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />
@@ -445,7 +456,7 @@
         <div class="text-center mt-12 reveal">
           <a href="/destinations"
             class="btn btn-primary px-8 py-3.5 text-base font-semibold shadow-lg inline-flex items-center gap-2">
-            <span>Explore All 2,396 Destinations</span>
+            <span>Explore the Complete Collection</span>
             <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M5 12h14" />
@@ -463,7 +474,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/home.js?v=20261024_luxury_ultra"></script>
+  <script type="module" src="js/pages/home.js?v=20261026_gsap_luxury_tilt"></script>
 
   <!-- SEO: Organization + WebSite JSON-LD -->
   <script type="application/ld+json">
@@ -474,7 +485,7 @@
     "name": "ExploreDesh",
     "url": "https://exploredesh.com",
     "logo": "https://exploredesh.com/images/favicon.svg",
-    "description": "India's most comprehensive travel planning platform with 2,396 destinations across 36 states."
+    "description": "India's premier luxury travel discovery atelier curating destinations across all 36 states."
   }
   </script>
   <script type="application/ld+json">

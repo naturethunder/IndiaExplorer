@@ -15,14 +15,14 @@
    - **Champagne Zenith Corona:** `rgba(254, 243, 199, 0.45)` radiating from top-center.
    - **Ethereal Azure Mist:** `rgba(224, 242, 254, 0.40)` in the upper-right quadrant.
    - **Warm Hearth Gold Glow:** `rgba(254, 240, 138, 0.22)` in the lower-left horizon.
-3. **Liquid Pearl Glassmorphism ("Lait de Perle"):**  
-   All content cards, modal sheets, and toolbars utilize milk glass: high optical opacity (`0.92` to `0.96`), intense backdrop-blur (`24px` to `28px`), optical saturation boosting (`180%`), and a precision top-edge specular bevel (`inset 0 1px 0 0 #FFFFFF`).
+3. **Liquid Pearl Glassmorphism ("Lait de Perle") & 45° Specular Reflection Sheen:**  
+   All content cards, modal sheets, and toolbars utilize milk glass: high optical opacity (`0.88` to `0.96`), intense backdrop-blur (`24px` to `28px`), optical saturation boosting (`190%`), precision top-edge specular bevel (`inset 0 1px 0 0 #FFFFFF`), and a dynamic 45-degree specular reflection sheen sweep (`::after`). Solid white backgrounds on hover are strictly forbidden to preserve pure frosted glassmorphic depth.
 4. **Heritage Royal Burnt Amber Accents (WCAG AAA Contrast):**  
    To guarantee effortless readability on daylight backgrounds without losing regal prestige, script kickers, calligraphy badges, and primary action accents use warm royal burnt amber (`#92400E`, `#A16207`, and `#B45309`), exceeding 7:1 contrast on all light surfaces.
 5. **Swiss Luxury Watch Bento Grid Architecture:**  
    Metrics, weather feeds, and destination overviews are presented in precision-beveled tiles with amber medallions, drop-shadowed typography, and crisp border geometry.
-6. **Tactile Golden Corona Hover Lift:**  
-   Interactive elements lift effortlessly (`-4px` to `-6px`) accompanied by a subtle golden corona halo (`0 0 22px rgba(217, 119, 6, 0.20)`), creating responsive, physical tangibility.
+6. **Tactile Golden Corona Hover Lift & 3D Magnetic Cursor Tilt:**  
+   Interactive cards lift smoothly (`-6px`) with a dual-layer warm golden corona halo (`0 26px 58px -10px rgba(180,83,9,0.22), 0 0 32px rgba(245,158,11,0.28)`), warm amber rim highlight (`rgba(217, 119, 6, 0.72)`), and dynamic desktop 3D magnetic cursor perspective tilt (`perspective(1000px) rotateX(...) rotateY(...) scale3d(1.025, 1.025, 1.025)`).
 7. **Absolute Dark Mode Parity:**  
    Every single enhancement in Light Mode maintains 100% dual-engine synchronization with OLED Cinema Dark Mode (`#080A0F`), sharing HTML markup and responsive breakpoints with zero visual regressions.
 
@@ -75,8 +75,8 @@
     0 12px 30px -4px rgba(15, 23, 42, 0.07);
   --shadow-card-hover: 
     inset 0 1px 0 0 #FFFFFF,
-    0 20px 45px -8px rgba(15, 23, 42, 0.14),
-    0 0 24px -2px rgba(217, 119, 6, 0.22);
+    0 26px 58px -10px rgba(180, 83, 9, 0.22),
+    0 0 32px rgba(245, 158, 11, 0.28);
   --shadow-bento: 
     inset 0 1px 0 0 #FFFFFF,
     0 4px 16px -2px rgba(15, 23, 42, 0.05),

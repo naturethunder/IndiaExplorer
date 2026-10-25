@@ -10,7 +10,7 @@ const PAGES = {
   'about.html': {
     active: 'about',
     title: 'About Us — ExploreDesh',
-    description: "Learn about ExploreDesh — India's most thoughtful travel discovery platform. Our mission, story, and the values behind 2,390 destinations across 36 states & UTs.",
+    description: "Learn about ExploreDesh — India's premier luxury travel discovery atelier. Our mission, story, and the craftsmanship behind curated destinations across 36 states & UTs.",
     crumb: 'About Us',
     keywords: ['about exploredesh', 'india travel platform', 'curated india destinations'],
   },
@@ -32,7 +32,8 @@ const PAGES = {
   },
 };
 
-const file = window.location.pathname.split('/').pop() || 'about.html';
+const rawPath = window.location.pathname.split('/').pop() || 'about.html';
+const file = rawPath.endsWith('.html') ? rawPath : rawPath + '.html';
 const page = PAGES[file] || PAGES['about.html'];
 
 initLayout({ variant: 'company', active: page.active });

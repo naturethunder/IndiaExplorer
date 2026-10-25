@@ -8,12 +8,12 @@
   "badge": "Danish Colonial Haven",
   "tagline": "Historic 17th-century Danish seaside colony with Fort Dansborg and ozone sea breeze",
   "image": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bungalow_on_the_Beach%2C_Neemrana_Hotels%2C_in_Tranquebar%2C_Tamil_Nadu.jpg",
-    "alt": "Tranquebar (Tharangambadi), Tamil Nadu"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fort_Dansborg.JPG",
+    "alt": "Fort Dansborg sea ramparts at Tranquebar"
   },
   "heroImage": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Last_Surviving_Population_of_Hangul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Dachigam national park hangul deer kashmir"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fort_Dansborg.JPG",
+    "alt": "Fort Dansborg sea ramparts at Tranquebar"
   },
   "overview": {
     "short": "Historic 17th-century Danish seaside colony with Fort Dansborg and ozone-rich sea breeze.",
@@ -423,123 +423,67 @@
   "topPlaces": [
     {
       "name": "Fort Dansborg",
-      "category": "heritage",
-      "distance": "In Tranquebar (Tharangambadi) Centre, Tamil Nadu",
-      "entryFee": "₹10",
-      "timings": "9 AM – 5 PM",
-      "duration": "2 hrs",
-      "rating": 4.8,
-      "description": "Danish sea fortress built in 1620 housing maritime artifacts and cannons.",
+      "distance": "Seafront",
+      "driveTime": "Town Centre",
+      "category": "Colonial Fort",
+      "description": "Iconic 1620 Danish fort overlooking the Bay of Bengal with two-tier barracks, governor's chambers, and archeological museum.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/A_Cell_inside_Fort_Dansborg.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Fort Dansborg in Tamil Nadu, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fort_Dansborg_%28Danish_Fort%29_-_Tharangambadi%2C_Tamil_Nadu.jpg",
+        "alt": "Fort Dansborg in Tranquebar (Tharangambadi), Tamil Nadu"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b7/TirthanRiver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/8230167/pexels-photo-8230167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/Welcome_Gate_at_Larji_for_Sainj_and_Tirthan_Valleys%2C_Kullu_District%2C_Himachal_Pradesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "Under 5 mins walk in Town Centre"
+        "https://images.pexels.com/photos/16136199/pexels-photo-16136199.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "https://images.pexels.com/photos/19542048/pexels-photo-19542048.jpeg?auto=compress&cs=tinysrgb&w=2560",
+        "https://upload.wikimedia.org/wikipedia/commons/8/80/Tharangambadi_Fort.jpg"
+      ]
     },
     {
-      "name": "Zion Church & Danish Museum",
-      "category": "heritage",
-      "distance": "0.3 km from Tranquebar (Tharangambadi), Tamil Nadu",
-      "entryFee": "Free",
-      "timings": "8 AM – 6 PM",
-      "duration": "1 hr",
-      "rating": 4.6,
-      "description": "India's oldest Protestant church (1701) and colonial history museum.",
+      "name": "New Jerusalem Church & Zion Church",
+      "distance": "400 meters from Fort",
+      "driveTime": "3 mins walk",
+      "category": "Colonial Church Heritage",
+      "description": "India's first Protestant church consecrated in 1718 by royal Danish missionary Bartholomaeus Ziegenbalg, featuring cross-shaped architecture.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Goldsmith_Street.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Zion Church & Danish Museum in Tamil Nadu, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Danish_Church%2C_Tranquebar.jpg",
+        "alt": "New Jerusalem Church & Zion Church in Tranquebar (Tharangambadi), Tamil Nadu"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/ce/Hellerup_Kirke_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://images.pexels.com/photos/37740851/pexels-photo-37740851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Breakfast_Tara_Mud_Spiti_Himachal_Jun18_D72_7079.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "3–5 mins walk from Tranquebar (Tharangambadi)"
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/New_Jerusalem_Church%2C_Tranquebar_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/Tharangambadi_%2815%29.jpg",
+        "https://images.pexels.com/photos/15359848/pexels-photo-15359848.jpeg?auto=compress&cs=tinysrgb&w=2560"
+      ]
     },
     {
       "name": "Town Gate (Landporten)",
-      "category": "heritage",
-      "distance": "0.2 km from Tranquebar (Tharangambadi), Tamil Nadu",
-      "entryFee": "Free",
-      "timings": "All Day",
-      "duration": "30 mins",
-      "rating": 4.6,
-      "description": "Historic 1792 entry gate bearing the royal seal of Danish King Christian VII.",
+      "distance": "600 meters from Fort",
+      "driveTime": "5 mins walk",
+      "category": "Historic Gateway",
+      "description": "Arched colonial entrance gate built in 1792 bearing the royal Danish monogram of King Christian VII, marking the boundary of the fortified town.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Borgmesterg%C3%A5rden_%28Mads_Lerches_G%C3%A5rd%29_i_Nyborg_-_g%C3%A5rdspladsen.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Town Gate (Landporten) in Tamil Nadu, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Tranquebar_Gate.jpg",
+        "alt": "Town Gate (Landporten) in Tranquebar (Tharangambadi), Tamil Nadu"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/26/Carl_Aarsleff.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Gadeparti_fra_Nyborg.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/c/cd/Har_ki_Dun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "3–5 mins walk from Tranquebar (Tharangambadi)"
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Tranquebar_Gate_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/Tranquebar_Gate_3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tranquebar_Gate_1.jpg"
+      ]
     },
     {
       "name": "Masilamani Nathar Temple",
-      "category": "spiritual",
-      "distance": "0.5 km from Tranquebar (Tharangambadi), Tamil Nadu",
-      "entryFee": "Free",
-      "timings": "6 AM – 7 PM",
-      "duration": "45 mins",
-      "rating": 4.7,
-      "description": "1300-year-old Chola Shiva temple built right on the water edge.",
+      "distance": "Beachfront (south of Fort)",
+      "driveTime": "5 mins walk",
+      "category": "Ancient Temple",
+      "description": "Built in 1306 AD by Pandyan King Maravarman Kulasekara Pandyan I, this coastal Shiva shrine showcases unique monolithic Dravidian stonework.",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kaverippattanam_OR_Pumpuhar_022.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Masilamani Nathar Temple in Tamil Nadu, India"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Masilamaninathar_Temple_Tranqebar.jpg",
+        "alt": "Masilamani Nathar Temple in Tranquebar (Tharangambadi), Tamil Nadu"
       },
       "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8d/Kaverippattanam_OR_Pumpuhar_360.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Poompuhar-Monument-near-beach.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7a/Valley_of_flowers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "3–5 mins walk from Tranquebar (Tharangambadi)"
-    },
-    {
-      "name": "Poompuhar Ancient Port Beach",
-      "category": "heritage",
-      "distance": "22 km from Tranquebar (Tharangambadi), Tamil Nadu",
-      "entryFee": "Free",
-      "timings": "All Day",
-      "duration": "1.5 hrs",
-      "rating": 4.6,
-      "description": "Sangam age ancient Chola port beach mentioned in Tamil epic Silappatikaram.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Poompuhar-View-from-the-Lighthouse.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Poompuhar Ancient Port Beach in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Poompuhar_Beach_with_lighthouse_and_visitors1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Poompuhar_beach_7.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Brahmakamal_flowers_near_Trishul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "35–50 mins drive from Tranquebar (Tharangambadi)"
-    },
-    {
-      "name": "Thirukadaiyur Temple",
-      "category": "spiritual",
-      "distance": "15 km from Tranquebar (Tharangambadi), Tamil Nadu",
-      "entryFee": "Free",
-      "timings": "6 AM – 8 PM",
-      "duration": "1.5 hrs",
-      "rating": 4.8,
-      "description": "Famous temple associated with Markandeya and 60th birthday milestone rituals.",
-      "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Danish_Fort_-Nagapattinam_-TamilNadu.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "alt": "Thirukadaiyur Temple in Tamil Nadu, India"
-      },
-      "photos": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/21/Gopura_of_the_Mayuranathaswamy_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gopuram_of_Mayuranathaswami_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
-        "https://upload.wikimedia.org/wikipedia/commons/2/21/Nanda_Devi_Biosphere_Reserve_-_Chamoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-      ],
-      "travelTime": "25–35 mins drive from Tranquebar (Tharangambadi)"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Temple_Tharangambadi.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tharangambadi_%2821%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tharangambadi_%2814%29.jpg"
+      ]
     }
   ],
   "hotels": [
@@ -671,34 +615,34 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Last_Surviving_Population_of_Hangul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tranquebar (Tharangambadi) - Highlight 1",
-      "alt": "Dachigam national park hangul deer kashmir",
-      "title": "Dachigam national park hangul deer kashmir"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fort_Dansborg.JPG",
+      "alt": "Fort Dansborg sea ramparts at Tranquebar",
+      "title": "Fort Dansborg Sea Bastion",
+      "caption": "1620 Danish coastal fortress overlooking the Bay of Bengal"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Tirthan_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tranquebar (Tharangambadi) - Highlight 2",
-      "alt": "Great himalayan national park tirthan",
-      "title": "Great himalayan national park tirthan"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Danish_Fort%2C_Tranquebar.jpg",
+      "alt": "Danish Fort Dansborg courtyard architecture",
+      "title": "Colonial Danish Courtyard",
+      "caption": "Historic yellow stone ramparts and military barracks"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cornus_capitata%2C_Tirthan_Valley%2C_Kullu_District%2C_Himachal_Pradesh_%28%E0%A4%AB%E0%A4%BE%E0%A4%97%E0%A5%81%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tranquebar (Tharangambadi) - Highlight 3",
-      "alt": "Great himalayan national park tirthan",
-      "title": "Great himalayan national park tirthan"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Fort_Dansborg_at_Tharangambadi.jpg",
+      "alt": "Fort Dansborg architectural view from shoreline",
+      "title": "Bay of Bengal Ramparts",
+      "caption": "Ocean waves crashing against the 400-year-old Danish fortress"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Trekking_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tranquebar (Tharangambadi) - Highlight 4",
-      "alt": "Great himalayan national park tirthan",
-      "title": "Great himalayan national park tirthan"
+      "src": "https://images.pexels.com/photos/19081217/pexels-photo-19081217.jpeg?auto=compress&cs=tinysrgb&w=2560",
+      "alt": "Danish fortress bastion and cannons",
+      "title": "Historic Fort Bastion",
+      "caption": "Colonial cannons overlooking the Coromandel coast"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Tirthan_River_Rapids.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "caption": "Tranquebar (Tharangambadi) - Highlight 5",
-      "alt": "Great himalayan national park tirthan",
-      "title": "Great himalayan national park tirthan"
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Danish_Fort_%28a_view_from_outside%29.jpg",
+      "alt": "Outside view of Fort Dansborg Tranquebar",
+      "title": "Fort Dansborg Panoramic View",
+      "caption": "Coastal defense structure erected in 1620"
     }
   ],
   "faq": [
@@ -711,7 +655,7 @@
     "title": "Tranquebar Travel Guide 2026 — Fort Dansborg, Danish Colony | ExploreDesh",
     "description": "Explore Tranquebar (Tharangambadi) Tamil Nadu: Fort Dansborg, Danish colonial beach bungalows and Neemrana sea resorts.",
     "canonical": "destination.html?slug=tranquebar",
-    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Last_Surviving_Population_of_Hangul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "ogImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fort_Dansborg.JPG",
     "keywords": [
       "Tranquebar Tamil Nadu",
       "Fort Dansborg",

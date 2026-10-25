@@ -262,7 +262,7 @@ export function collectionPageJsonLd(opts = {}) {
     '@type': 'CollectionPage',
     '@id': canonical + '#collection',
     name: opts.title || 'All Destinations in India — ExploreDesh',
-    description: opts.description || 'Browse 2,396 travel destinations across all 36 states & UTs of India.',
+    description: opts.description || 'Browse curated travel destinations across all 36 states & UTs of India.',
     url: canonical,
     mainEntityOfPage: canonical,
   };

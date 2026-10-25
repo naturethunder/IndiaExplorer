@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found (404) — ExploreDesh</title>
-  <meta name="description" content="The requested travel page could not be found on ExploreDesh. Browse 2,396 verified destinations across India or find your next adventure." />
+  <meta name="description" content="The requested travel page could not be found on ExploreDesh. Browse curated destinations across India or find your next adventure." />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
@@ -33,7 +33,9 @@
     media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/styles.css?v=20260922_1" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260922_1" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20260922_1" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261026_ultra_luxury_glass" />
+  <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
+  <script src="js/vendor/gsap.min.js" defer></script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-slate-950">
@@ -80,7 +82,7 @@
         <input
           type="text"
           name="search"
-          placeholder="Search 2,396 destinations or states…"
+          placeholder="Search destinations, states, or sanctuaries…"
           class="w-full px-5 py-3.5 pl-12 rounded-full bg-white/10 text-white placeholder-slate-400 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent backdrop-blur-md text-sm transition-all"
           aria-label="Search destinations"
         />
@@ -108,7 +110,7 @@
   </main>
 
   <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 ExploreDesh — Discover Incredible India. All rights reserved.</p>
+    <p>© 2026 ExploreDesh — India's Hidden Destinations &amp; Sanctuaries. All rights reserved.</p>
   </footer>
 
 </body>

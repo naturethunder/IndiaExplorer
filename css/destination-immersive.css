@@ -504,7 +504,7 @@ body.dest-immersive #statsBar .text-amber-400 {
   top: 64px;
   z-index: 500;
   width: 100%;
-  background: rgba(8, 12, 20, 0.85) !important;
+  background: rgba(8, 12, 20, 0.96) !important;
   backdrop-filter: blur(28px) saturate(190%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -746,6 +746,7 @@ html:not([data-theme="light"]) body.dest-immersive .dest-bento-box:hover {
 /* Ensure ultra-crisp typography inside all cards */
 html:not([data-theme="light"]) body.dest-immersive .info-card h3,
 html:not([data-theme="light"]) body.dest-immersive .info-card .font-bold,
+html:not([data-theme="light"]) body.dest-immersive .card h3,
 html:not([data-theme="light"]) body.dest-immersive .card h4,
 html:not([data-theme="light"]) body.dest-immersive #panel-overview h2,
 html:not([data-theme="light"]) body.dest-immersive #panel-overview h3 {
@@ -1961,15 +1962,17 @@ html:not([data-theme="light"]) body.dest-immersive input[type="button"]:hover,
 html:not([data-theme="light"]) body.dest-immersive input[type="button"]:active,
 html:not([data-theme="light"]) body.dest-immersive input[type="submit"]:hover,
 html:not([data-theme="light"]) body.dest-immersive input[type="submit"]:active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
+  background: linear-gradient(135deg, rgba(22, 38, 30, 0.88) 0%, rgba(14, 24, 18, 0.92) 100%) !important;
+  backdrop-filter: blur(16px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(190%) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
-  border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
+  border-top: 1px solid rgba(245, 197, 66, 0.42) !important;
+  border-left: 1px solid rgba(245, 197, 66, 0.42) !important;
+  border-right: 1px solid rgba(245, 197, 66, 0.42) !important;
   border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 8px 24px -2px rgba(0, 0, 0, 0.75), 0 0 20px rgba(245, 197, 66, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
 body.dest-immersive button:hover svg,
@@ -2125,855 +2128,7 @@ html[data-theme="dark"] body.dest-immersive #heroTagline {
 
 /* ─── 4. STICKY SUB-NAV BAR (Tabs) ───────────────────────────────────────── */
 html[data-theme="light"] #destNavContainer {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(28px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
-  border-top: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-bottom: 2px solid rgba(217, 119, 6, 0.3) !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #destNavContainer .dest-quick-pill,
-html[data-theme="light"] #destNavContainer .dest-quick-pill,
-html[data-theme="light"] .dest-quick-pill {
-  color: #1E293B !important;
-  background: transparent !important;
-  border: none !important;
-  border-bottom: 2.5px solid transparent !important;
-  font-weight: 600 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #destNavContainer .dest-quick-pill:hover,
-html[data-theme="light"] #destNavContainer .dest-quick-pill:hover {
-  color: #0F172A !important;
-  background: rgba(15, 23, 42, 0.04) !important;
-  border-bottom-color: rgba(217, 119, 6, 0.45) !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #destNavContainer .dest-quick-pill.active,
-html[data-theme="light"] body.dest-immersive .dest-quick-pill.active,
-html[data-theme="light"] #destNavContainer .dest-quick-pill.active {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.08) 0%, rgba(245, 197, 66, 0.22) 100%) !important;
-  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.25) !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] #destNavContainer .dest-quick-pill .tab-badge {
-  background: #F1F5F9 !important;
-  color: #334155 !important;
-  border: 1px solid #CBD5E1 !important;
-}
-
-html[data-theme="light"] #destNavContainer .dest-quick-pill.active .tab-badge {
-  background: rgba(217, 119, 6, 0.16) !important;
-  color: #92400E !important;
-  border-color: rgba(217, 119, 6, 0.4) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #destNavContainer .dest-quick-pill svg,
-html[data-theme="light"] #destNavContainer .dest-quick-pill svg {
-  color: #D97706 !important;
-  stroke: #D97706 !important;
-  filter: none !important;
-}
-
-/* ─── 5. GLOBAL TYPOGRAPHY OVERRIDES IN LIGHT MODE ───────────────────────── */
-html[data-theme="light"] body.dest-immersive .tab-panel h1,
-html[data-theme="light"] body.dest-immersive .tab-panel h2,
-html[data-theme="light"] body.dest-immersive .tab-panel h3,
-html[data-theme="light"] body.dest-immersive .tab-panel h4,
-html[data-theme="light"] body.dest-immersive h2,
-html[data-theme="light"] body.dest-immersive h3 {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-/* Overview Narrative & All Body Text - Crisp Slate-800 Readability */
-html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-600,
-html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-700,
-html[data-theme="light"] body.dest-immersive #panel-overview p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *),
-html[data-theme="light"] body.dest-immersive .tab-panel p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *):not(.dest-card-overlay *):not(#similar-grid *),
-html[data-theme="light"] body.dest-immersive #content p:not(.dest-hero *):not(#heroTagline):not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *):not(.dest-card-overlay *):not(#similar-grid *) {
-  color: #1E293B !important;
-  font-size: 15px !important;
-  line-height: 1.75 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-gray-900,
-html[data-theme="light"] body.dest-immersive .text-gray-800,
-html[data-theme="light"] body.dest-immersive .text-gray-700 {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-gray-600,
-html[data-theme="light"] body.dest-immersive .text-gray-500 {
-  color: #475569 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-gray-400 {
-  color: #64748B !important;
-}
-
-html[data-theme="light"] body.dest-immersive .tab-calligraphy-kicker {
-  color: #92400E !important;
-  -webkit-text-fill-color: #92400E !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  background-clip: unset !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) !important;
-}
-
-/* ─── 6. BENTO CARDS, SUMMARY CARDS & INFO CARDS ─────────────────────────── */
-html[data-theme="light"] body.dest-immersive .card,
-html[data-theme="light"] body.dest-immersive .info-card,
-html[data-theme="light"] body.dest-immersive .dest-bento-box,
-html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid) {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: var(--imm-radius-md) !important;
-  padding: 1.5rem !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.05) !important;
-}
-
-/* Cards that already use p-0 (image cards) should not get padding override */
-html[data-theme="light"] body.dest-immersive .card.p-0 {
-  padding: 0 !important;
-}
-
-/* Stays cards use p-5 — match dark mode's larger feel */
-html[data-theme="light"] body.dest-immersive #panel-stays .card.p-5 {
-  padding: 1.75rem !important;
-}
-
-/* Summary cards: smaller padding, tighter */
-html[data-theme="light"] body.dest-immersive .dest-summary-card {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: var(--imm-radius-md) !important;
-  padding: 1.1rem 1.25rem !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06) !important;
-}
-
-/* bg-gray-50 used as section bg in dark mode — light override */
-html[data-theme="light"] body.dest-immersive .bg-gray-50 {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: var(--imm-radius-md) !important;
-  padding: 1.5rem !important;
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .card:hover,
-html[data-theme="light"] body.dest-immersive .info-card:hover,
-html[data-theme="light"] body.dest-immersive .dest-summary-card:hover,
-html[data-theme="light"] body.dest-immersive .dest-bento-box:hover,
-html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid):hover {
-  background: #FFFFFF !important;
-  border-color: rgba(217, 119, 6, 0.40) !important;
-  box-shadow: 0 14px 40px -4px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.12) !important;
-  transform: translateY(-3px) !important;
-}
-
-/* Sidebar Quick Facts Cards — High Contrast Values */
-html[data-theme="light"] body.dest-immersive .info-card .font-medium,
-html[data-theme="light"] body.dest-immersive .info-card .font-semibold,
-html[data-theme="light"] body.dest-immersive .info-card span.font-medium,
-html[data-theme="light"] body.dest-immersive .info-card span.font-semibold {
-  color: #0F172A !important;
-  font-weight: 600 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive .info-card .text-gray-500,
-html[data-theme="light"] body.dest-immersive .info-card .text-gray-400,
-html[data-theme="light"] body.dest-immersive .info-card span.text-gray-500 {
-  color: #475569 !important;
-  font-weight: 500 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .info-card h3,
-html[data-theme="light"] body.dest-immersive .info-card .font-bold {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-/* Summary Cards (Altitude, Best Time, Summer, Winter) */
-html[data-theme="light"] body.dest-immersive .dest-summary-label {
-  color: #64748B !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .dest-summary-val {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .dest-summary-icon {
-  background: #F8FAFC !important;
-  border: 1px solid #E2E8F0 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .icon-alt { color: #0284C7 !important; }
-html[data-theme="light"] body.dest-immersive .icon-time { color: #059669 !important; }
-html[data-theme="light"] body.dest-immersive .icon-summer { color: #D97706 !important; }
-html[data-theme="light"] body.dest-immersive .icon-winter { color: #4F46E5 !important; }
-
-/* Overview Carousel in light mode */
-html[data-theme="light"] .dest-ov-carousel {
-  background: #F1F5F9 !important;
-  border: 1px solid rgba(15, 23, 42, 0.10) !important;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08) !important;
-}
-
-/* Known for tags */
-html[data-theme="light"] body.dest-immersive .bg-orange-50 {
-  background: #FEF3C7 !important;
-  border: 1px solid #FDE68A !important;
-  color: #92400E !important;
-  font-weight: 600 !important;
-}
-
-/* ─── 7. PLACES TO VISIT (Cards, Filters & Detail Modal) ─────────────────── */
-html[data-theme="light"] body.dest-immersive [data-place] {
-  background: #FFFFFF !important;
-  border: 1px solid #CBD5E1 !important;
-  color: #334155 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-place]:hover {
-  background: #F8FAFC !important;
-  color: #0F172A !important;
-  border-color: #94A3B8 !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-place].active,
-html[data-theme="light"] body.dest-immersive [data-place].bg-primary {
-  background: linear-gradient(180deg, #FEF3C7 0%, #FDE68A 100%) !important;
-  border: 1px solid #F59E0B !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  color: #92400E !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 12px -2px rgba(217, 119, 6, 0.25) !important;
-}
-
-/* Place Card Elements */
-html[data-theme="light"] body.dest-immersive [data-pidx] {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-pidx] .font-bold.text-sm.text-gray-900,
-html[data-theme="light"] body.dest-immersive [data-pidx] h3 {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-pidx] p.text-gray-600 {
-  color: #334155 !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-pidx] .text-emerald-700 {
-  color: #047857 !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-pidx] .text-amber-400 {
-  color: #D97706 !important;
-  font-weight: 600 !important;
-}
-
-/* Place Detail Modal */
-html[data-theme="light"] body.dest-immersive #placeBackdrop {
-  background: rgba(15, 23, 42, 0.65) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .bg-white {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.12) !important;
-  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.25) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .text-2xl,
-html[data-theme="light"] body.dest-immersive #placeModal .font-bold {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .text-gray-600,
-html[data-theme="light"] body.dest-immersive #placeModal .text-gray-500,
-html[data-theme="light"] body.dest-immersive #placeModal p.text-gray-600 {
-  color: #334155 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal p.text-gray-500,
-html[data-theme="light"] body.dest-immersive #placeModal .text-xs.uppercase {
-  color: #475569 !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .font-medium.text-gray-900,
-html[data-theme="light"] body.dest-immersive #placeModal p.font-medium {
-  color: #0F172A !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal #placeTravelTime {
-  color: #047857 !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .rounded-xl.border.border-emerald-200.bg-emerald-50 {
-  background: #ECFDF5 !important;
-  border-color: #A7F3D0 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeModal .bg-emerald-50,
-html[data-theme="light"] body.dest-immersive #placeModal .bg-emerald-50 * {
-  color: #065F46 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #placeClose {
-  background: #0F172A !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-/* ─── 8. STAYS / HOTELS (Tier Chips, Amenity Chips, Prices) ──────────────── */
-html[data-theme="light"] body.dest-immersive [data-tier] {
-  background: #FFFFFF !important;
-  border: 1px solid #CBD5E1 !important;
-  color: #334155 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-tier]:hover {
-  background: #F8FAFC !important;
-  color: #0F172A !important;
-}
-
-html[data-theme="light"] body.dest-immersive [data-tier].active,
-html[data-theme="light"] body.dest-immersive .dest-filter-btn.active {
-  background: linear-gradient(180deg, #FEF3C7 0%, #FDE68A 100%) !important;
-  border: 1px solid #F59E0B !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  color: #92400E !important;
-  font-weight: 700 !important;
-}
-
-/* Tier Chips in Light Mode */
-html[data-theme="light"] .tier-pill-cheapest {
-  background: #DCFCE7 !important;
-  color: #15803D !important;
-  border: 1px solid #86EFAC !important;
-}
-
-html[data-theme="light"] .tier-pill-budget {
-  background: #DBEAFE !important;
-  color: #1E40AF !important;
-  border: 1px solid #93C5FD !important;
-}
-
-html[data-theme="light"] .tier-pill-good {
-  background: #E0E7FF !important;
-  color: #3730A3 !important;
-  border: 1px solid #A5B4FC !important;
-}
-
-html[data-theme="light"] .tier-pill-better {
-  background: #EDE9FE !important;
-  color: #5B21B6 !important;
-  border: 1px solid #C4B5FD !important;
-}
-
-html[data-theme="light"] .tier-pill-best {
-  background: #FEF3C7 !important;
-  color: #92400E !important;
-  border: 1px solid #FCD34D !important;
-}
-
-html[data-theme="light"] .tier-pill-luxury {
-  background: #FFE4E6 !important;
-  color: #9F1239 !important;
-  border: 1px solid #FDA4AF !important;
-}
-
-html[data-theme="light"] .tier-pill-extra-luxury {
-  background: #FFFBEB !important;
-  color: #B45309 !important;
-  border: 1px solid #F59E0B !important;
-  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .amenity-chip {
-  background: #F8FAFC !important;
-  color: #334155 !important;
-  border: 1px solid #E2E8F0 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .card .text-2xl.font-extrabold {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-/* ─── 9. HOW TO REACH & ROUTE TABLE ──────────────────────────────────────── */
-html[data-theme="light"] body.dest-immersive #panel-reach .info-card,
-html[data-theme="light"] body.dest-immersive .bg-white.rounded-2xl.border.border-gray-200 {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table th {
-  background: #F1F5F9 !important;
-  color: #0F172A !important;
-  border-bottom: 2px solid #CBD5E1 !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table td {
-  border-bottom: 1px solid #E2E8F0 !important;
-  color: #334155 !important;
-  background: #FFFFFF !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table td .font-semibold.text-gray-900,
-html[data-theme="light"] body.dest-immersive .route-table td .text-gray-900,
-html[data-theme="light"] body.dest-immersive .route-table td span.font-semibold {
-  color: #0F172A !important;
-  text-shadow: none !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table td .text-primary,
-html[data-theme="light"] body.dest-immersive .route-table td span.text-primary,
-html[data-theme="light"] .route-table td .text-primary {
-  color: #047857 !important;
-  -webkit-text-fill-color: #047857 !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  background-clip: unset !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-primary,
-html[data-theme="light"] body.dest-immersive #panel-reach .text-primary {
-  color: #047857 !important;
-  -webkit-text-fill-color: #047857 !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  background-clip: unset !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .bg-amber-500\/15 {
-  background: #FEF3C7 !important;
-  color: #92400E !important;
-  border: 1px solid #FCD34D !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .bg-orange-50 {
-  background: #FEF3C7 !important;
-  border: 1px solid #FCD34D !important;
-  color: #92400E !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-amber-400,
-html[data-theme="light"] body.dest-immersive .text-amber-500,
-html[data-theme="light"] body.dest-immersive .text-amber-600,
-html[data-theme="light"] body.dest-immersive .card .text-amber-400,
-html[data-theme="light"] body.dest-immersive a.text-amber-400,
-html[data-theme="light"] body.dest-immersive span.text-amber-400 {
-  color: #B45309 !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-emerald-700,
-html[data-theme="light"] body.dest-immersive .text-emerald-600,
-html[data-theme="light"] body.dest-immersive .text-green-600 {
-  color: #047857 !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-blue-700 {
-  color: #1D4ED8 !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-purple-700 {
-  color: #6D28D9 !important;
-  font-weight: 600 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-gray-400,
-html[data-theme="light"] body.dest-immersive span.text-gray-400 {
-  color: #64748B !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table td .text-gray-500,
-html[data-theme="light"] body.dest-immersive .route-table td.text-gray-500,
-html[data-theme="light"] body.dest-immersive .route-table td.text-xs.text-gray-500 {
-  color: #475569 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive .route-table tr:hover td {
-  background: #F8FAFC !important;
-}
-
-html[data-theme="light"] body.dest-immersive #reachCity {
-  background: #FFFFFF !important;
-  color: #0F172A !important;
-  border: 1.5px solid #CBD5E1 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #reachCity option {
-  background: #FFFFFF !important;
-  color: #0F172A !important;
-}
-
-/* Road Note in Light Mode */
-html[data-theme="light"] body.dest-immersive .bg-amber-50,
-html[data-theme="light"] body.dest-immersive #panel-reach .bg-amber-50 {
-  background: #FFFBEB !important;
-  border: 1px solid #FCD34D !important;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-amber-900,
-html[data-theme="light"] body.dest-immersive #panel-reach .text-amber-900 {
-  color: #92400E !important;
-  font-weight: 700 !important;
-}
-
-html[data-theme="light"] body.dest-immersive .text-amber-800,
-html[data-theme="light"] body.dest-immersive #panel-reach .text-amber-800 {
-  color: #78350F !important;
-}
-
-/* ─── 10. SIMILAR DESTINATIONS & BUTTONS ─────────────────────────────────── */
-html[data-theme="light"] body.dest-immersive .dest-similar-wrap {
-  border-top: 1px solid #E2E8F0 !important;
-  background: #F1F5F9 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similar-heading {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similarSubheading {
-  color: #475569 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similar-grid a {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similar-grid a:hover {
-  border-color: rgba(217, 119, 6, 0.45) !important;
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12), 0 0 20px rgba(217, 119, 6, 0.15) !important;
-  transform: translateY(-4px) !important;
-}
-
-/* Photo overlay text inside #similar-grid (Always crisp brilliant white with drop shadow) */
-#similar-grid .aspect-video .similar-card-title,
-#similar-grid .aspect-video p.similar-card-title,
-#similar-grid .aspect-video p.truncate,
-html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video .similar-card-title,
-html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.similar-card-title,
-html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.truncate {
-  color: #FFFFFF !important;
-  font-size: 0.875rem !important; /* 14px */
-  line-height: 1.25 !important;
-  font-weight: 700 !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 1px 2px rgba(0, 0, 0, 0.8) !important;
-  margin: 0 !important;
-}
-
-#similar-grid .aspect-video .similar-card-state,
-#similar-grid .aspect-video p.similar-card-state,
-html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video .similar-card-state,
-html[data-theme="light"] body.dest-immersive #similar-grid .aspect-video p.similar-card-state {
-  color: rgba(255, 255, 255, 0.90) !important;
-  font-size: 0.6875rem !important; /* 11px */
-  line-height: 1.25 !important;
-  font-weight: 500 !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
-  margin: 0 !important;
-}
-
-/* Category Badge on top right of card photo */
-#similar-grid .aspect-video .badge {
-  background: rgba(0, 0, 0, 0.65) !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  font-weight: 600 !important;
-}
-
-/* Card footer — Light Mode star ratings, labels & price */
-html[data-theme="light"] body.dest-immersive #similar-grid .similar-card-rating,
-html[data-theme="light"] body.dest-immersive #similar-grid .similar-card-rating span,
-html[data-theme="light"] body.dest-immersive #similar-grid .similar-star,
-html[data-theme="light"] body.dest-immersive #similar-grid .similar-score,
-html[data-theme="light"] body.dest-immersive #similar-grid .text-amber-400,
-html[data-theme="light"] body.dest-immersive #similar-grid .text-amber-400 span {
-  color: #D97706 !important;
-  font-weight: 700 !important;
-  font-size: 0.75rem !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similar-grid p.similar-card-price,
-html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 {
-  color: #475569 !important;
-  font-size: 0.75rem !important;
-  line-height: 1.25 !important;
-  margin: 0 !important;
-  font-weight: 500 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similar-grid .similar-price-val,
-html[data-theme="light"] body.dest-immersive #similar-grid p.similar-card-price span.similar-price-val,
-html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 span.font-bold,
-html[data-theme="light"] body.dest-immersive #similar-grid p.text-slate-400 span.text-amber-400 {
-  color: #B45309 !important;
-  font-weight: 800 !important;
-  font-size: 0.8125rem !important; /* 13px */
-  display: inline !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Card footer — Dark Mode star ratings, labels & price */
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-card-rating,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-card-rating span,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-star,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-score,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .text-amber-400,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .text-amber-400 span {
-  color: #F5C542 !important;
-  font-weight: 700 !important;
-  font-size: 0.75rem !important;
-}
-
-html:not([data-theme="light"]) body.dest-immersive #similar-grid p.similar-card-price,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 {
-  color: #94A3B8 !important;
-  font-size: 0.75rem !important;
-  line-height: 1.25 !important;
-  margin: 0 !important;
-  font-weight: 500 !important;
-}
-
-html:not([data-theme="light"]) body.dest-immersive #similar-grid .similar-price-val,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid p.similar-card-price span.similar-price-val,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 span.font-bold,
-html:not([data-theme="light"]) body.dest-immersive #similar-grid p.text-slate-400 span.text-amber-400 {
-  color: #F5C542 !important;
-  font-weight: 800 !important;
-  font-size: 0.8125rem !important;
-  display: inline !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #similarExploreBtn {
-  background: #FEF3C7 !important;
-  border: 1px solid #FCD34D !important;
-  color: #92400E !important;
-}
-
-/* Universal Buttons in Light Mode */
-html[data-theme="light"] body.dest-immersive button:hover,
-html[data-theme="light"] body.dest-immersive button:active,
-html[data-theme="light"] body.dest-immersive .btn:hover,
-html[data-theme="light"] body.dest-immersive .btn:active,
-html[data-theme="light"] body.dest-immersive a.btn:hover,
-html[data-theme="light"] body.dest-immersive a.btn:active,
-html[data-theme="light"] body.dest-immersive .dest-quick-pill:hover,
-html[data-theme="light"] body.dest-immersive .dest-quick-pill:active {
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive .btn.btn-primary,
-html[data-theme="light"] body.dest-immersive .card .btn.btn-primary {
-  background: linear-gradient(180deg, #D97706 0%, #B45309 100%) !important;
-  color: #FFFFFF !important;
-  border: 1px solid #B45309 !important;
-  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .btn.btn-primary:hover,
-html[data-theme="light"] body.dest-immersive .card .btn.btn-primary:hover {
-  background: linear-gradient(180deg, #F59E0B 0%, #D97706 100%) !important;
-  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4) !important;
-  color: #FFFFFF !important;
-}
-
-html[data-theme="light"] body.dest-immersive .btn-outline {
-  background: #FFFFFF !important;
-  border: 1px solid #CBD5E1 !important;
-  color: #0F172A !important;
-}
-
-html[data-theme="light"] body.dest-immersive .btn-outline:hover {
-  background: #F8FAFC !important;
-  border-color: #94A3B8 !important;
-  color: #0F172A !important;
-}
-
-/* Mobile Nav in Light Mode */
-html[data-theme="light"] body.dest-immersive .mobile-nav {
-  background: rgba(255, 255, 255, 0.94) !important;
-  border-top: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.06) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .mobile-nav-btn {
-  color: #64748B !important;
-}
-
-html[data-theme="light"] body.dest-immersive .mobile-nav-btn:hover,
-html[data-theme="light"] body.dest-immersive .mobile-nav-btn.active {
-  color: #B45309 !important;
-}
-
-/* ─── ULTRA-HIGH SPECIFICITY LIGHT MODE OVERRIDES ──────────────────────── */
-html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-600,
-html[data-theme="light"] body.dest-immersive #panel-overview p.text-gray-700,
-html[data-theme="light"] body.dest-immersive #panel-overview p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *),
-html[data-theme="light"] body.dest-immersive #panel-overview div p:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *),
-html[data-theme="light"] body.dest-immersive #panel-overview .leading-relaxed {
-  color: #1E293B !important;
-  font-size: 15px !important;
-  line-height: 1.75 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview h2,
-html[data-theme="light"] body.dest-immersive #panel-overview h3:not(#destOvCarouselWrap *):not(.dest-ov-caption-inner *) {
-  color: #0F172A !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card,
-html[data-theme="light"] body.dest-immersive .info-card,
-html[data-theme="light"] body.dest-immersive #liveWeather {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.90) 100%) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
-  box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
-    0 4px 16px -2px rgba(15, 23, 42, 0.05),
-    0 12px 30px -4px rgba(15, 23, 42, 0.06) !important;
-  border-radius: 1.25rem !important;
-  color: #0F172A !important;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card:hover,
-html[data-theme="light"] body.dest-immersive .info-card:hover,
-html[data-theme="light"] body.dest-immersive #liveWeather:hover {
-  transform: translateY(-4px) !important;
-  border-color: rgba(217, 119, 6, 0.45) !important;
-  box-shadow:
-    inset 0 1px 0 0 #FFFFFF,
-    0 18px 40px -6px rgba(15, 23, 42, 0.12),
-    0 0 20px -2px rgba(217, 119, 6, 0.20) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card svg,
-html[data-theme="light"] body.dest-immersive .info-card svg {
-  color: #D97706 !important;
-  filter: drop-shadow(0 2px 6px rgba(217, 119, 6, 0.25)) !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card .font-medium,
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card .font-semibold,
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card span.font-medium,
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card span.font-semibold,
-html[data-theme="light"] body.dest-immersive .info-card .font-medium,
-html[data-theme="light"] body.dest-immersive .info-card .font-semibold {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card .text-gray-500,
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card .text-gray-400,
-html[data-theme="light"] body.dest-immersive #panel-overview .info-card span.text-gray-500,
-html[data-theme="light"] body.dest-immersive .info-card .text-gray-500,
-html[data-theme="light"] body.dest-immersive .info-card .text-gray-400 {
-  color: #475569 !important;
-  font-weight: 500 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #liveWeather,
-html[data-theme="light"] body.dest-immersive #liveWeather * {
-  text-shadow: none !important;
-}
-
-html[data-theme="light"] body.dest-immersive #liveWeather .text-2xl,
-html[data-theme="light"] body.dest-immersive #liveWeather .text-xl,
-html[data-theme="light"] body.dest-immersive #liveWeather .font-bold {
-  color: #0F172A !important;
-}
-
-html[data-theme="light"] body.dest-immersive #liveWeather .text-gray-500,
-html[data-theme="light"] body.dest-immersive #liveWeather .text-gray-400,
-html[data-theme="light"] body.dest-immersive #liveWeather .text-slate-400 {
-  color: #475569 !important;
-}
-
-html[data-theme="light"] body.dest-immersive #liveWeatherBody {
-  color: #334155 !important;
-}
-
-/* ─── Editorial Luxury Light Mode: Soft Porcelain Canvas & Radiant Light Wells ─── */
-html[data-theme="light"] body.dest-immersive {
-  background-color: #FAF9F6 !important;
-  background: #FAF9F6 !important;
-  color: #0F172A !important;
-}
-
-html[data-theme="light"] body.dest-immersive .dest-immersive-bg {
-  background-color: #FAF9F6 !important;
-  background-image:
-    radial-gradient(circle 1100px at 50% -120px, rgba(254, 243, 199, 0.45), transparent 72%),
-    radial-gradient(circle 850px at 88% 12%, rgba(224, 242, 254, 0.40), transparent 60%),
-    radial-gradient(circle 900px at 12% 50%, rgba(254, 240, 138, 0.20), transparent 60%),
-    linear-gradient(180deg, #FAF9F6 0%, #F8FAFC 40%, #FFFFFF 100%) !important;
-}
-
-html[data-theme="light"] body.dest-immersive .dest-immersive-overlay {
-  background: radial-gradient(ellipse 85% 75% at 50% 35%, transparent 65%, rgba(226, 232, 240, 0.35) 100%) !important;
-}
-
-/* ─── Scrolled Navbar in Light Mode: Frosted Pearl Glass ─── */
-html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled {
-  background: rgba(255, 255, 255, 0.90) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(24px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
@@ -5178,4 +4333,218 @@ html[data-theme="light"] body.dest-immersive .card {
 }
 html[data-theme="light"] body.dest-immersive .card:hover {
   box-shadow: inset 0 1px 0 0 #FFFFFF, 0 12px 32px rgba(15, 23, 42, 0.08), 0 0 20px rgba(217, 119, 6, 0.12) !important;
+}
+
+
+/* ==========================================================================
+   ULTRA-LUXURY DESIGN REFINEMENTS & CONTRAST/VISIBILITY FIXES
+   ========================================================================== */
+
+/* Hero Breadcrumbs Glass Capsule — 100% Crisp Visibility */
+body.dest-immersive .dest-hero-content nav[aria-label="Breadcrumb"] ol {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 18px !important;
+  border-radius: 9999px !important;
+  background: rgba(11, 15, 25, 0.65) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+body.dest-immersive .dest-hero-content nav[aria-label="Breadcrumb"] a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+body.dest-immersive .dest-hero-content nav[aria-label="Breadcrumb"] a:hover {
+  color: #F5C542 !important;
+}
+
+body.dest-immersive .dest-hero-content #crumbName,
+html[data-theme="light"] body.dest-immersive .dest-hero-content #crumbName,
+html[data-theme="dark"] body.dest-immersive .dest-hero-content #crumbName {
+  color: #F5C542 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 12px rgba(245, 197, 66, 0.5) !important;
+}
+
+/* Feature / Known-For Luxury Chips */
+.feature-pill-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 15px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.10);
+  color: #B45309;
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.feature-pill-luxury:hover {
+  background: rgba(245, 197, 66, 0.18);
+  border-color: rgba(245, 197, 66, 0.6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+}
+
+html:not([data-theme="light"]) .feature-pill-luxury {
+  background: rgba(245, 197, 66, 0.14) !important;
+  color: #FDE68A !important;
+  border-color: rgba(245, 197, 66, 0.38) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Nearby Places Category & Distance Badges */
+.place-category-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(245, 197, 66, 0.12);
+  color: #B45309;
+  border: 1px solid rgba(245, 197, 66, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+html:not([data-theme="light"]) .place-category-badge {
+  background: rgba(245, 197, 66, 0.16);
+  color: #FCD34D;
+  border-color: rgba(245, 197, 66, 0.4);
+}
+
+/* Gallery Carousel Category Pill */
+.gallery-category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  background: rgba(11, 15, 25, 0.75);
+  border: 1px solid rgba(245, 197, 66, 0.4);
+  color: #F5C542;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+}
+
+/* Concierge Road Advisory Card */
+.concierge-advisory-card {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.85) 0%, rgba(253, 230, 138, 0.7) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.08);
+  transition: border-color 0.25s ease;
+}
+
+.concierge-advisory-card .advisory-icon {
+  color: #B45309;
+  display: grid;
+  place-items: center;
+  padding-top: 1px;
+}
+
+.concierge-advisory-card .advisory-title {
+  color: #92400E;
+  margin-bottom: 2px;
+}
+
+.concierge-advisory-card .advisory-text {
+  color: #78350F;
+}
+
+html:not([data-theme="light"]) .concierge-advisory-card {
+  background: linear-gradient(135deg, rgba(30, 24, 16, 0.9) 0%, rgba(20, 18, 14, 0.95) 100%);
+  border: 1px solid rgba(245, 197, 66, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+html:not([data-theme="light"]) .concierge-advisory-card .advisory-icon {
+  color: #F5C542;
+}
+
+html:not([data-theme="light"]) .concierge-advisory-card .advisory-title {
+  color: #FDE68A;
+}
+
+html:not([data-theme="light"]) .concierge-advisory-card .advisory-text {
+  color: #E2E8F0;
+}
+
+/* Quick Facts Table Refinements */
+.quick-facts-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+html:not([data-theme="light"]) .quick-facts-row {
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Upgraded Michelin-Tier Stay Badges in Light Mode */
+html[data-theme="light"] .tier-pill-cheapest {
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #047857 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+html[data-theme="light"] .tier-pill-budget {
+  background: rgba(14, 165, 233, 0.08) !important;
+  color: #0369A1 !important;
+  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+}
+
+html[data-theme="light"] .tier-pill-good {
+  background: rgba(99, 102, 241, 0.08) !important;
+  color: #4338CA !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+}
+
+html[data-theme="light"] .tier-pill-better {
+  background: rgba(139, 92, 246, 0.08) !important;
+  color: #6D28D9 !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+}
+
+html[data-theme="light"] .tier-pill-best {
+  background: rgba(245, 197, 66, 0.12) !important;
+  color: #854D0E !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  box-shadow: 0 2px 6px rgba(245, 197, 66, 0.12) !important;
+}
+
+html[data-theme="light"] .tier-pill-luxury {
+  background: rgba(225, 29, 72, 0.08) !important;
+  color: #9F1239 !important;
+  border: 1px solid rgba(225, 29, 72, 0.3) !important;
+}
+
+html[data-theme="light"] .tier-pill-extra-luxury {
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.22), rgba(217, 119, 6, 0.18)) !important;
+  color: #78350F !important;
+  border: 1px solid rgba(217, 119, 6, 0.45) !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.15) !important;
 }
