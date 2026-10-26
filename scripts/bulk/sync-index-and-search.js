@@ -2,7 +2,7 @@
  * sync-index-and-search.js
  * Synchronizes data/destinations/index.json and data/search-index.json directly from
  * the canonical data/destinations/<slug>.json files.
- * Ensures all "Stay starts from ₹..." card prices and search filter tiers match.
+ * Ensures all destination metadata, prices, and search filter tiers match.
  */
 const fs = require('fs');
 const path = require('path');

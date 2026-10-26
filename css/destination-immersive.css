@@ -47,12 +47,15 @@
 }
 
 /* ─── BASE BODY ─────────────────────────────────────────── */
+html,
 body.dest-immersive {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   font-family: 'Jost', -apple-system, system-ui, sans-serif;
   background-color: #07090E !important;
   background: #07090E !important;
   color: var(--imm-text);
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -389,9 +392,9 @@ body.dest-immersive .tab-calligraphy-kicker {
 body.dest-immersive #heroTitle {
   font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
   font-weight: 700 !important;
-  font-size: var(--hero-title-size, clamp(2.4rem, 5.5vw, 5.5rem)) !important;
+  font-size: var(--hero-title-size, clamp(1.65rem, 5.5vw, 5.2rem)) !important;
   letter-spacing: -0.015em !important;
-  line-height: 1.12 !important;
+  line-height: 1.15 !important;
   color: #FFFFFF !important;
   text-align: center !important;
   background: linear-gradient(180deg, #FFFFFF 15%, #FFF6E5 60%, #F5C542 100%);
@@ -404,7 +407,10 @@ body.dest-immersive #heroTitle {
   padding: 0 1rem;
   width: 100% !important;
   max-width: 100% !important;
-  white-space: nowrap !important;
+  white-space: normal !important;
+  text-wrap: balance !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
   overflow: visible;
   animation: heroFadeUp 0.8s var(--imm-ease) both;
 }
@@ -1439,13 +1445,17 @@ body.dest-immersive #placeClose:hover {
   }
 
   body.dest-immersive #heroTitle {
-    font-size: var(--hero-title-size, clamp(2.2rem, 7vw, 4.4rem)) !important;
-    letter-spacing: 0.02em !important;
+    font-size: var(--hero-title-size, clamp(1.65rem, 6vw, 3.2rem)) !important;
+    letter-spacing: 0.01em !important;
+    white-space: normal !important;
+    text-wrap: balance !important;
+    overflow-wrap: break-word !important;
   }
 
   body.dest-immersive #heroTagline {
-    font-size: clamp(1.15rem, 3.5vw, 1.5rem) !important;
+    font-size: clamp(1.05rem, 3.2vw, 1.4rem) !important;
     line-height: 1.4 !important;
+    text-wrap: balance !important;
   }
 
   body.dest-immersive .tab-panel {
@@ -1454,24 +1464,29 @@ body.dest-immersive #placeClose:hover {
   }
 
   #destNavContainer .dest-quick-pill {
-    padding: 13px 14px !important;
-    font-size: 12.5px !important;
+    padding: 12px 14px !important;
+    font-size: 13px !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
   }
 }
 
 @media (max-width: 480px) {
   body.dest-immersive #heroTitle {
-    font-size: var(--hero-title-size, clamp(1.8rem, 8.5vw, 3.2rem)) !important;
+    font-size: var(--hero-title-size, clamp(1.4rem, 7.5vw, 2.4rem)) !important;
     white-space: normal !important;
-    word-break: keep-all !important;
+    text-wrap: balance !important;
+    overflow-wrap: break-word !important;
   }
 
   body.dest-immersive #heroTagline {
-    font-size: clamp(1rem, 4.2vw, 1.25rem) !important;
+    font-size: clamp(0.92rem, 3.8vw, 1.15rem) !important;
+    text-wrap: balance !important;
   }
 
   #destNavContainer .dest-quick-pill {
-    padding: 12px 12px !important;
+    padding: 10px 11px !important;
+    font-size: 12px !important;
   }
 }
 
@@ -1530,95 +1545,116 @@ body.dest-immersive #placeClose:hover {
   /* Ken Burns zoom removed */
 }
 
-/* Carousel nav buttons */
+/* Carousel nav buttons — Fixed Absolute Positioning & High-Contrast Luxury Glass */
 .dest-ov-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 25;
-  width: 3rem;
-  height: 3rem;
-  min-width: 44px;
-  min-height: 44px;
-  border-radius: 9999px;
-  background: rgba(15, 23, 42, 0.88);
-  color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0.65);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 16px rgba(245, 197, 66, 0.45);
-  transition: all 0.2s var(--imm-ease);
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 35 !important;
+  width: 3.25rem !important;
+  height: 3.25rem !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  border-radius: 9999px !important;
+  background: rgba(15, 23, 42, 0.90) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.6) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(14px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.85), 0 0 16px rgba(245, 197, 66, 0.35) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .dest-ov-btn svg {
-  width: 24px;
-  height: 24px;
-  stroke: #ffffff;
-  stroke-width: 2.6;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9));
-  transition: transform 0.2s var(--imm-ease);
+  width: 24px !important;
+  height: 24px !important;
+  stroke: #ffffff !important;
+  stroke-width: 2.8 !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9)) !important;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .dest-ov-btn:hover {
-  background: rgba(16, 185, 129, 0.95);
-  border-color: #ffffff;
-  color: #ffffff;
-  box-shadow: 0 0 24px rgba(16, 185, 129, 0.8), 0 4px 20px rgba(0, 0, 0, 0.9);
-  transform: translateY(-50%) scale(1.15);
+  background: #F5C542 !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: 0 0 28px rgba(245, 197, 66, 0.8), 0 4px 22px rgba(0, 0, 0, 0.9) !important;
+  transform: translateY(-50%) scale(1.12) !important;
 }
 
 .dest-ov-btn:hover svg {
-  transform: scale(1.12);
+  stroke: #000000 !important;
+  transform: scale(1.15) !important;
+  filter: none !important;
 }
 
 .dest-ov-btn:active {
-  transform: translateY(-50%) scale(0.96);
+  transform: translateY(-50%) scale(0.95) !important;
 }
 
 /* Explicit Dark Theme High-Contrast Visibility for Overview Carousel */
 html:not([data-theme="light"]) .dest-ov-btn,
 html[data-theme="dark"] .dest-ov-btn,
 body.theme-dark .dest-ov-btn {
-  background: rgba(15, 23, 42, 0.92);
-  color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 18px rgba(245, 197, 66, 0.5);
+  background: rgba(15, 23, 42, 0.92) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.85), 0 0 18px rgba(245, 197, 66, 0.4) !important;
 }
 
 /* Light Theme Styling for Overview Carousel */
 html[data-theme="light"] .dest-ov-btn {
-  background: rgba(255, 255, 255, 0.95);
-  color: #0f172a;
-  border: 1.5px solid rgba(15, 23, 42, 0.2);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #0F172A !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.8) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 0 14px rgba(245, 197, 66, 0.45) !important;
 }
 
 html[data-theme="light"] .dest-ov-btn svg {
-  stroke: #0f172a;
-  filter: none;
+  stroke: #0F172A !important;
+  filter: none !important;
 }
 
 html[data-theme="light"] .dest-ov-btn:hover {
-  background: #059669;
-  border-color: #059669;
-  color: #ffffff;
-  box-shadow: 0 4px 18px rgba(5, 150, 105, 0.45);
+  background: #F5C542 !important;
+  border-color: #B45309 !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 22px rgba(245, 197, 66, 0.65) !important;
 }
 
 html[data-theme="light"] .dest-ov-btn:hover svg {
-  stroke: #ffffff;
+  stroke: #000000 !important;
 }
 
 .dest-ov-prev {
-  left: 1rem;
+  left: 1.25rem !important;
 }
 
 .dest-ov-next {
-  right: 1rem;
+  right: 1.25rem !important;
+}
+
+/* Photo Counter Badge over carousel images — MUST always be crystal clear and high-contrast */
+.dest-ov-counter,
+.dest-ov-counter span,
+.dest-ov-counter .counter-pill,
+html[data-theme="light"] body.dest-immersive .dest-ov-counter span,
+html[data-theme="light"] body.glass-immersive .dest-ov-counter span,
+html[data-theme="dark"] body.dest-immersive .dest-ov-counter span {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  background: rgba(11, 15, 25, 0.85) !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.65) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 12px rgba(245, 197, 66, 0.25) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
 }
 
 /* Dots */

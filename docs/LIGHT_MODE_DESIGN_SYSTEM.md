@@ -159,14 +159,18 @@
 ### 4.11 High-Contrast Destination Cards & Editorial Headers (Phase 89)
 - **Zero Filler Subtitle Lines:** Redundant subtitles like *"Top recommended places to travel right now"* have been purged across all homepage sections, coupling luxury kicker badges directly with bold royal headings.
 - **Card Description Contrast:** `.dest-card-desc` upgraded to deep slate-950 (`#0F172A`) at `13px` with `font-weight: 500` and `1.55` line height (16.5:1 contrast against white cards).
-- **Meta Chips & Pricing:** Price prefixes (`"Stay starts from"`) and review counts render in deep slate `#334155` with `font-weight: 600`, and prices in bold `#B45309` (`font-weight: 800`).
+- **Curated Badges & Action CTAs (Phase 123):** Eliminated cheap backpacker price prefixes (`"Stay starts from"`) across all cards; replaced with Imperial Gold `✦ Curated Sanctuary` badges and interactive `Explore Sanctuary →` CTAs.
 - **Filter Sidebar Contrast:** Filter labels (`REGION / ZONE`, `STATE OR UT`, etc.) are rendered in deep slate `#0F172A` with `font-weight: 800` and defined border geometry on select dropdowns.
 
-### 4.10 Category Pill Buttons & CSS `:root` Variable Refactoring (Phase 84)
-- **Unified Pill-Chip Aesthetics:** `.category-pill-btn` in `css/explore-immersive.css` matches `.quick-tag-btn` pill architecture with `border-radius: var(--exp-radius-md)` (14px), subtle border `1px solid var(--exp-border)`, and minimum 44×44px touch targets.
-- **Light Mode Surface:** Frosted milk glass pill `rgba(255, 255, 255, 0.92)` with dark slate text (`#1E293B`) and soft ambient shadow (`0 2px 8px rgba(15, 23, 42, 0.05)`).
-- **Active State in Light Mode:** Radiant Heritage Amber outline (`border-color: #D97706`), warm amber kicker glow (`0 0 14px rgba(217, 119, 6, 0.20)`), gold underline accent (`2.5px solid #F5C542`), and bold primary text.
-- **Tokenized CSS Variables:** Replaced all hardcoded color literals with canonical `:root` variables: `var(--white)`, `var(--text)`, `var(--text-muted)`, `var(--border)`, `var(--bg)`, `var(--bg-obsidian)`, guaranteeing instantaneous dual-engine theme flips with zero FOUC or style contention.
+### 4.12 Overview Carousel Contrast & Button Isolation (Phase 123)
+- **Photo Counter Protection:** All elements within `.dest-ov-counter`, `.counter-pill`, and `gallery-category-pill` overlaying scenic photography retain crisp brilliant white text (`#FFFFFF !important`, text-shadow) on obsidian translucent glass (`rgba(11, 15, 25, 0.85)`) with an Imperial Gold border (`1.5px solid rgba(245, 197, 66, 0.7)`). They are strictly excluded from light-mode dark text inversion rules.
+- **Carousel Navigation Buttons:** In Light Mode, carousel navigation arrow buttons (`.dest-ov-btn`, `#destOvPrev`, `#destOvNext`) feature luminous frosted glass (`rgba(255, 255, 255, 0.96)`), high-contrast dark slate chevrons (`#0F172A`), Imperial Gold rims, and an amber hover halo (`box-shadow: 0 4px 22px rgba(245, 197, 66, 0.65)`). They are strictly protected from relative positioning overrides via `:not()` exclusions on `[data-glass-interactive]`.
+
+### 4.13 3D Coverflow Small-Screen Depth Stacking & Flat Architecture (Phase 125 rev-79)
+- **Container Flat Stacking Architecture:** On all viewports `<= 1023px`, `.popular-3d-stage` enforces `transform-style: flat !important;`. This bypasses browser 3D stacking context collisions and enables strict CSS `z-index` paint ordering while preserving individual card 3D perspective rotation (`rotateY`, `rotateZ`, `scale`, `translateX`, `translateY`).
+- **240px Depth Separation:** In `js/pages/home.js` and `css/glass-immersive.css`, the active center card projects forward with `translateZ(120px)` and elevated `z-index: 50 !important`, while inactive side cards are deeply recessed to `translateZ(-120px)` with `z-index: 10 / 5 !important` (desktop `z-index: 8`), guaranteeing that side cards remain strictly in the background.
+- **Luminous 24K Imperial Gold Carousel Medallions:** In Light Mode, carousel navigation arrow buttons feature radiant gold gradients (`linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #F59E0B 100%)`), bold amber borders (`border: 2px solid #D97706`), and high-contrast amber chevrons (`stroke: #78350F; stroke-width: 2.8px`), delivering 100% effortless visibility.
+- **Root Viewport Scroll Standard:** Root elements (`html`, `body`) utilize modern `overflow-x: clip;` instead of legacy `overflow-x: hidden;`, preventing browsers from creating secondary scroll containers that detach `position: sticky` headers (`#destDiscoveryBar` at `top: 64px` and `#filterSidebar` at `top: 228px`).
 
 ---
 
@@ -177,6 +181,9 @@
 | `<= 768px` | `body.glass-immersive` | `padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px))` | Prevents fixed bottom nav from clipping CTA buttons and footer |
 | `<= 768px` | `.discover-map-inner` | `flex-direction: column !important; height: auto !important;` | Eliminates desktop 500px height lock and enables natural mobile scroll |
 | `<= 768px` | `.india-map-card` | `position: relative !important; width: 100% !important;` | Anchors state card neatly below SVG map; stops state obscuration |
+| `<= 768px` | `.popular-3d-stage` | `transform-style: flat !important;` | Forces strict CSS z-index paint ordering over 3D context |
+| `<= 768px` | `.popular-3d-card.is-active` | `translateZ(120px); z-index: 50 !important;` | Projects active center card forward in front of flanking cards |
+| `<= 768px` | `.popular-3d-card:not(.is-active)` | `translateZ(-120px); z-index: 5 !important;` | Drops inactive side cards behind active card, eliminating overlap |
 | `<= 640px` | `.calligraphy-kicker` | `white-space: nowrap !important; clamp(1.1rem, 4.2vw, 1.35rem)` | Prevents trailing `✦` ornament from breaking onto an orphan line |
 | `<= 640px` | `.section-title` | `clamp(1.35rem, 5.2vw, 1.85rem) !important;` | Eliminates headline wrapping clashes against action buttons |
 | `<= 640px` | `.section-link` | `margin-left: auto !important; white-space: nowrap !important;` | Neatly right-aligns "View all →" buttons above carousels |
@@ -190,4 +197,4 @@
 - **Apple HIG & Material Design Touch Targets:** Minimum 44×44px interactive area on all buttons and pills.
 - **Reduced Motion Support:** All transitions, transforms, and animations immediately degrade to `0.01ms` when `@media (prefers-reduced-motion: reduce)` is detected.
 - **Zero FOUC:** Instant local-storage theme resolution executes synchronously in `<head>` prior to CSS render.
-- **Zero Horizontal Overflow:** Tested and confirmed at 375px, 390px, and 412px viewports (`overflow-x: hidden`).
+- **Zero Horizontal Overflow:** Tested and confirmed at 375px, 390px, and 412px viewports (`overflow-x: clip` preserving sticky navigation).

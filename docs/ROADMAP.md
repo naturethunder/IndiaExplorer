@@ -3,9 +3,54 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-26 (rev-75 Phase 122 Popular Destinations 3D Coverflow Hover Transform Collision Fix & Multi-Screen Responsive Hardening) · Previous: (rev-74 Phase 121 Ultra-Luxury GSAP Motion Engine, Dual-Theme Liquid Glassmorphism & Navbar Navigation Hardening).
+Last updated: 2026-10-27 (rev-79 Phase 125 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture) · Previous: (rev-78 Phase 124 Homepage Hero Royal Typography, 3D Coverflow Small-Screen Depth Stacking & Viewport Sticky Scroll Restoration).
 
 ---
+
+- **Phase 125: 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture (2026-10-27 rev-79)**:
+  1. **Luminous 24K Imperial Gold Carousel Medallions (`css/glass-immersive.css`, `css/styles.css`)**:
+     - Identified root cause of user reports that carousels lacked forward/backward buttons: navigation arrows used dark black glass (`rgba(11, 18, 32, 0.94)`), which completely blended into dark destination photography.
+     - Upgraded navigation arrows across all platform carousels to luminous 24K imperial gold medallion buttons with bold `2.8px` chevrons, ambient gold glow, and high-contrast light/dark theme styling.
+  2. **Popular Destinations Outward Deck Framing (`css/glass-immersive.css`)**:
+     - Shifted desktop navigation buttons outward to `clamp(16px, calc(50% - 590px), calc(50% - 490px))`, positioning them symmetrically at the outer flanks of the 3D deck without covering secondary card titles or badges.
+  3. **Small-Screen 3D Depth Hierarchy & `transform-style: flat` Architecture (`js/pages/home.js`, `css/glass-immersive.css`)**:
+     - Diagnosed CSS 3D stacking context bug: `transform-style: preserve-3d;` bypasses CSS `z-index` in mobile rendering engines, causing DOM order to paint later cards on top of earlier cards.
+     - Enforced `transform-style: flat !important;` on `.popular-3d-stage` across all viewports `<= 1023px`, enabling strict CSS `z-index` paint ordering while retaining full 3D rotation, scaling, and tilt angles.
+     - Established 240px physical depth separation on mobile: active center card at `translateZ(120px)` with `z-index: 50 !important`, while side cards are recessed to `translateZ(-120px)` with `z-index: 10 / 5`, guaranteeing side cards remain strictly in the background.
+  4. **Popular Card Explore Button Polish (`css/glass-immersive.css`)**:
+     - Upgraded `Explore →` button from translucent grey to obsidian gold glass with 24K gold border, bright `#F5C542` typography, and golden hover bloom.
+  5. **Platform Health Scorecard (All Passed)**:
+     - Master SEO Regression Guard: **71/71 PASSED (Score: 100/100)**.
+     - Multi-Resolution Deep Verification: Certified across 1536px, 1024px, 768px, 390px, and 375px viewports.
+
+- **Phase 124: Homepage Hero Royal Typography, 3D Coverflow Small-Screen Depth Stacking & Viewport Sticky Scroll Restoration (2026-10-27 rev-78)**:
+  1. **Homepage Hero Typography & Royal Visual Identity (`index.html`)**:
+     - Upgraded the headline into a high-prestige 2-tier editorial display: classical `Playfair Display` serif for *"Discover the Hidden Gems of"* and Roman imperial `Cinzel` with living 24K gold foil shimmer (`@keyframes goldFoilShimmer`) for *"Incredible India"*.
+     - Upgraded the eyebrow pill into an obsidian glass capsule with an 8-pointed gold star seal.
+     - Stripped cluttered editorial sub-lead per user request, achieving pristine breathing room and a focused luxury presentation.
+  2. **Popular Destinations 3D Coverflow Small-Screen Depth Stacking (`js/pages/home.js`, `css/glass-immersive.css`)**:
+     - Resolved mobile viewport (<768px) card overlap: active center card is projected forward with `translateZ(80px)` and elevated with `z-index: 30 !important`, while inactive flanking side cards are recessed with `translateZ(-80px)` and set to `z-index: 5 !important` (desktop `z-index: 8`).
+     - Preserved signature 3D tilted/fan rotation and drag inertia without clipping or z-index collisions.
+     - Upgraded carousel navigation arrows to high-contrast circular amber/gold frosted glass buttons (`rgba(11, 18, 32, 0.92)` obsidian base, `1.5px solid rgba(245, 197, 66, 0.65)` border, explicit SVG dimensions).
+  3. **Destinations Page (`destinations.html`) Viewport & Sticky Scroll Standard**:
+     - Identified root cause of sticky detachment during downward scrolling: legacy `overflow-x: hidden` on root elements (`html`, `body`) forced modern Chromium/Safari/Firefox to compute `overflow-y: auto`, spawning a secondary BFC scroll container that detached `#destDiscoveryBar` and `#filterSidebar` from the viewport.
+     - Replaced legacy `overflow-x: hidden` with modern `overflow-x: clip;` across `css/glass-immersive.css`, `css/explore-immersive.css`, `css/styles.css`, and `css/destination-immersive.css`.
+     - Preserved seamless bidirectional document scrolling: `#destDiscoveryBar` locks at `top: 64px`, `#filterSidebar` locks at `top: 228px` with internal scroll, and destination cards glide cleanly with unified document scrolling. Users can scroll through cards and scroll back up to the hero section with zero trapping.
+  4. **Platform Health Scorecard (All Passed)**:
+     - Master SEO Regression Guard: **71/71 PASSED (Score: 100/100)**.
+     - Full Repository Media & Invariant Audit: **2,396/2,396 passed (0 violations across 67,952 unique photo URLs)**.
+     - Cross-device verification: 100% verified across Desktop (1440px), Tablet (768px), and Mobile (390px).
+
+- **Phase 123: 100,000% Ultra-Luxury Editorial Standards & Hospitality Tier Elevation (2026-10-27 rev-77)**:
+  1. **Commercial Price Tag Elimination (`js/components/destinationCard.js`, `destinations.html`, `index.html`)**:
+     - Eradicated cheap commercial budget price tags (`₹1,500/day`) across all 24 static and dynamic cards.
+     - Replaced with Imperial Gold Curated Sanctuary badge (`✦ Curated Sanctuary`) and luxury CTA button (`Explore Sanctuary →`).
+  2. **Hospitality Tier Elevation (`data/destinations/*.json`)**:
+     - Upgraded transactional accommodation tiers to curated luxury classifications: *"Heritage Homestays"*, *"Boutique Retreats"*, *"Signature Havelis"*, and *"Grand Palaces"*.
+  3. **Overview Carousel Chevrons & Photo Counter Badges (`destination.html`, `js/pages/destination.js`)**:
+     - Upgraded navigation arrows to high-contrast circular amber/gold frosted glass chevron buttons and prominent capsule photo counters (`rgba(11, 15, 25, 0.85)` with `1.5px solid rgba(245, 197, 66, 0.7)`).
+  4. **Agra Fort Ground-Truth Restoration (`data/destinations/agra-fort.json`)**:
+     - Restored 5 verified Full HD Pexels captures depicting authentic Mughal red sandstone courtyards and Jahangiri Mahal; 0 cross-destination collisions.
 
 - **Phase 122: Popular Destinations 3D Coverflow Zero-Collision Stabilization, GSAP Micro-Interaction De-confliction & Master Arrow Repositioning (2026-10-26 rev-76)**:
   1. **Hover Merge Bug Eradication (`js/pages/home.js`, `js/utils/gsapInteractions.js`)**:

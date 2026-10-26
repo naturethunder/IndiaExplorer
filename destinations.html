@@ -48,8 +48,8 @@
     media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261026_ultra_luxury_glass" />
-  <link rel="stylesheet" href="css/explore-immersive.css?v=20261026_ultra_luxury_glass" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261027_sticky_scroll_fix" />
+  <link rel="stylesheet" href="css/explore-immersive.css?v=20261027_sticky_scroll_fix" />
 
   <!-- GSAP Animation Core & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -132,8 +132,9 @@
                 <button type="button" data-type="adventure" class="quick-tag-btn">Adventure</button>
               </div>
               <div class="quick-card-footer">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
                 <span>Hand-Curated Sanctuaries &middot; Verified Imagery</span>
               </div>
@@ -196,7 +197,7 @@
           <div class="category-scroller-wrap">
             <button type="button" class="category-scroll-arrow left hidden" id="catScrollLeft"
               aria-label="Scroll categories left">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="m15 18-6-6 6-6" />
               </svg>
@@ -208,7 +209,7 @@
             </div>
             <button type="button" class="category-scroll-arrow right" id="catScrollRight"
               aria-label="Scroll categories right">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="m9 18 6-6-6-6" />
               </svg>
@@ -254,7 +255,11 @@
                     <select id="regionFilter" aria-label="Filter by region" class="custom-select">
                       <option value="">All Regions of India</option>
                     </select>
-                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
                   </div>
                 </div>
 
@@ -267,7 +272,11 @@
                     <select id="stateFilter" aria-label="Filter by state" class="custom-select">
                       <option value="">All 36 States & UTs</option>
                     </select>
-                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
                   </div>
                 </div>
 
@@ -280,7 +289,11 @@
                     <select id="tierFilter" aria-label="Filter by price per night" class="custom-select">
                       <option value="">Any Budget Band</option>
                     </select>
-                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
                   </div>
                 </div>
 
@@ -293,7 +306,11 @@
                     <select id="seasonFilter" aria-label="Filter by season" class="custom-select">
                       <option value="">Any Travel Season</option>
                     </select>
-                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
                   </div>
                 </div>
 
@@ -306,7 +323,11 @@
                     <select id="monthFilter" aria-label="Filter by travel month" class="custom-select">
                       <option value="">Any Travel Month</option>
                     </select>
-                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
                   </div>
                 </div>
               </div>
@@ -340,7 +361,11 @@
                     <option value="price_desc">₹ Price: High to Low</option>
                     <option value="distance">📍 Closest to Delhi</option>
                   </select>
-                  <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+                  <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg></span>
                 </div>
               </div>
             </div>
@@ -370,30 +395,1158 @@
 
             <!-- Destinations Card Grid (Managed by JS) -->
             <div id="grid" class="destinations-master-grid" role="region" aria-label="Destinations List">
-                <article class="dest-card-item"><a href="/destination?slug=kanatal" class="dest-card-link group" aria-label="Kanatal, Uttarakhand"><div class="dest-card-media"><img src="https://images.pexels.com/photos/32126841/pexels-photo-32126841.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Scenic view of Garhwal Himalayan mountains and pine terraces in Uttarakhand, India" class="dest-card-img" width="600" height="400" loading="eager" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Kanatal</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Uttarakhand · Garhwal Himalayas</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(2,847)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Pine forests, apple orchards and breathtaking Tehri Lake views at 2,600m altitude.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹1,000</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=manali" class="dest-card-link group" aria-label="Manali, Himachal Pradesh"><div class="dest-card-media"><img src="https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Manali, Himachal Pradesh" class="dest-card-img" width="600" height="400" loading="eager" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Manali</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Himachal Pradesh · Kullu Valley</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.7</span><span class="review-cnt">(18,420)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Jun (avoid Jul–Aug monsoon)</span></div><p class="dest-card-desc">Snow-capped peaks, adventure sports, ancient temples and the legendary Rohtang Pass.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹700</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=goa" class="dest-card-link group" aria-label="Goa, Goa"><div class="dest-card-media"><img src="https://images.pexels.com/photos/28520254/pexels-photo-28520254.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Golden sunset over Goa coastline" class="dest-card-img" width="600" height="400" loading="eager" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Beach</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Goa</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Goa · Konkan Coast</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.5</span><span class="review-cnt">(42,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Nov – Mar</span></div><p class="dest-card-desc">Golden beaches, Portuguese heritage, vibrant nightlife and fresh seafood.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹700</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=coorg" class="dest-card-link group" aria-label="Coorg, Karnataka"><div class="dest-card-media"><img src="https://images.pexels.com/photos/33250481/pexels-photo-33250481.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Verdant Coffee Plantation &amp; Mist — Coorg, Karnataka, India" class="dest-card-img" width="600" height="400" loading="eager" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Coorg</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Karnataka · Western Ghats</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.5</span><span class="review-cnt">(11,200)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Year-round</span></div><p class="dest-card-desc">Rolling coffee estates, misty hills, waterfalls and the brave Kodava culture.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹750</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=udaipur" class="dest-card-link group" aria-label="Udaipur, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/31778015/pexels-photo-31778015.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Majestic granite and marble facade of Udaipur City Palace towering above Lake Pichola" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Udaipur</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Mewar</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.7</span><span class="review-cnt">(28,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Shimmering lakes, ornate palaces, romantic sunsets and royal Rajput grandeur.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹700</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=rishikesh" class="dest-card-link group" aria-label="Rishikesh, Uttarakhand"><div class="dest-card-media"><img src="https://images.pexels.com/photos/36123978/pexels-photo-36123978.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920&amp;q=85" alt="Lakshman Jhula Suspension Bridge Over Emerald Ganga in Rishikesh, Uttarakhand" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Rishikesh</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Uttarakhand · Garhwal Himalayas</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(19,500)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Sep – Jun</span></div><p class="dest-card-desc">White water rafting, yoga ashrams, bungee jumping and Ganga aarti at dusk.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹500</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=darjeeling" class="dest-card-link group" aria-label="Darjeeling, West Bengal"><div class="dest-card-media"><img src="https://images.pexels.com/photos/31572403/pexels-photo-31572403.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="First golden rays of sunrise illuminating the snow peaks of Mount Kanchenjunga from Tiger Hill" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Darjeeling</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>West Bengal · Eastern Himalayas</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(14,200)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Mar – May, Sep – Nov</span></div><p class="dest-card-desc">World-famous tea gardens, Kanchenjunga views, toy train and colonial charm.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹950</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=munnar" class="dest-card-link group" aria-label="Munnar, Kerala"><div class="dest-card-media"><img src="https://images.pexels.com/photos/29023410/pexels-photo-29023410.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Munnar, Kerala" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Munnar</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Kerala · Western Ghats</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(16,800)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Sep – Mar</span></div><p class="dest-card-desc">Endless tea plantations, misty peaks, Neelakurinji flowers and the cool Cardamom Hills.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹850</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=ladakh" class="dest-card-link group" aria-label="Ladakh, Ladakh"><div class="dest-card-media"><img src="https://images.pexels.com/photos/6650409/pexels-photo-6650409.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Multi-tiered whitewashed buildings of Thiksey Monastery perched on a hill in Ladakh" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Ladakh</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ladakh · Trans-Himalayas</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.9</span><span class="review-cnt">(32,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Jun – Sep</span></div><p class="dest-card-desc">Moonscapes, Buddhist monasteries, Pangong Lake and the world's highest motorable roads.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹800</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=hampi" class="dest-card-link group" aria-label="Hampi, Karnataka"><div class="dest-card-media"><img src="https://images.pexels.com/photos/37040437/pexels-photo-37040437.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Vittala Temple stone chariot illuminated at sunset in Hampi" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Hampi</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Karnataka · Northern Karnataka</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.7</span><span class="review-cnt">(21,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Nov – Mar</span></div><p class="dest-card-desc">Ruins of the Vijayanagara Empire spread across surreal boulder landscapes on the Tungabhadra.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹900</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=ooty" class="dest-card-link group" aria-label="Ooty, Tamil Nadu"><div class="dest-card-media"><img src="https://images.pexels.com/photos/6871925/pexels-photo-6871925.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Nilgiris Emerald Tea Terraces — Ooty, Tamil Nadu, India" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Ooty</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Tamil Nadu · Nilgiri Hills</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.4</span><span class="review-cnt">(22,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Apr – Jun, Sep – Nov</span></div><p class="dest-card-desc">Botanical gardens, Nilgiri Mountain Railway, tea estates and cool Nilgiri weather.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹800</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=varanasi" class="dest-card-link group" aria-label="Varanasi, Uttar Pradesh"><div class="dest-card-media"><img src="https://images.pexels.com/photos/38931046/pexels-photo-38931046.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Varanasi Ghats along the holy River Ganga at sunrise" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Varanasi</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Uttar Pradesh · Gangetic Plains</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.5</span><span class="review-cnt">(28,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Dawn boat rides on the Ganga, Dashashwamedh Ghat aarti and narrow lanes of the holy city.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹500</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=spiti" class="dest-card-link group" aria-label="Spiti Valley, Himachal Pradesh"><div class="dest-card-media"><img src="https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Key Monastery nestled in the rugged hills of Spiti Valley, showcasing stunning Buddhist architecture." class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Spiti Valley</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Himachal Pradesh · Trans-Himalayas</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.8</span><span class="review-cnt">(8,400)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Jun – Sep</span></div><p class="dest-card-desc">High-altitude desert, ancient Key Monastery, Chandratal Lake and star-filled skies.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹700</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=jaisalmer" class="dest-card-link group" aria-label="Jaisalmer, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/19438328/pexels-photo-19438328.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Sonar Qila Golden Sandstone Bastions — Jaisalmer, Rajasthan, India" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Jaisalmer</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Thar Desert</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(17,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Living fort city, camel safaris in the Thar Desert, Sam sand dunes and starlit nights.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹900</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=mcleodganj" class="dest-card-link group" aria-label="McLeod Ganj, Himachal Pradesh"><div class="dest-card-media"><img src="https://images.pexels.com/photos/755401/pexels-photo-755401.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Dhauladhar Alpine Mountain Wall — McLeod Ganj, Himachal Pradesh, India" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">McLeod Ganj</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Himachal Pradesh · Kangra Valley</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.5</span><span class="review-cnt">(12,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Mar – Jun, Sep – Nov</span></div><p class="dest-card-desc">Tibetan culture, Dalai Lama's residence, Triund Trek and the dramatic Dhauladhar range.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹500</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=varkala" class="dest-card-link group" aria-label="Varkala, Kerala"><div class="dest-card-media"><img src="https://images.pexels.com/photos/6652196/pexels-photo-6652196.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Dramatic red sandstone cliffs towering over Papanasam beach at Varkala" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Beach</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Varkala</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Kerala · Kerala Coast</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.5</span><span class="review-cnt">(8,900)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Nov – Mar</span></div><p class="dest-card-desc">Dramatic 15m red laterite cliffs, Papanasam beach, Ayurvedic spas and fresh seafood.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹850</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=kaziranga" class="dest-card-link group" aria-label="Kaziranga, Assam"><div class="dest-card-media"><img src="https://images.pexels.com/photos/30481914/pexels-photo-30481914.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;q=85" alt="Panoramic landscape of Kaziranga wetland waters and emerald hills at golden sunset" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Wildlife</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Kaziranga</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Assam · Brahmaputra Valley</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.8</span><span class="review-cnt">(9,800)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Nov – Apr</span></div><p class="dest-card-desc">UNESCO World Heritage park with the world's largest population of Indian one-horned rhinos.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹800</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=rann-of-kutch" class="dest-card-link group" aria-label="Rann of Kutch, Gujarat"><div class="dest-card-media"><img src="https://images.pexels.com/photos/20256168/pexels-photo-20256168.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Endless white expanse of the Great Rann of Kutch glowing under sunset colors" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Rann of Kutch</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Gujarat · Kutch Desert</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(11,200)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Nov – Feb (during Rann Utsav)</span></div><p class="dest-card-desc">Infinite white salt flats, flamingos, full moon nights and the Rann Utsav festival.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹800</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=jaipur" class="dest-card-link group" aria-label="Jaipur, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Jaipur, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Jaipur</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Aravalli Plains</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(52,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Jaipur is a much-loved heritage city in Rajasthan, known for forts and palaces.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹600</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=jodhpur" class="dest-card-link group" aria-label="Jodhpur, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/18010572/pexels-photo-18010572.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Imposing sandstone ramparts of Mehrangarh Fort rising above Jodhpur" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Jodhpur</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Marwar</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(31,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Jodhpur is a much-loved heritage city in Rajasthan, known for blue city and mehrangarh.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹900</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=pushkar" class="dest-card-link group" aria-label="Pushkar, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/36795134/pexels-photo-36795134.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Reflective serene view of Pushkar Lake sacred bathing ghats surrounded by white temples and hills" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Pushkar</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Ajmer</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.4</span><span class="review-cnt">(18,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Pushkar is a much-loved spiritual town in Rajasthan, known for holy lake and camel fair.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹500</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=mount-abu" class="dest-card-link group" aria-label="Mount Abu, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Mount Abu, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Mount Abu</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Aravalli Range</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.4</span><span class="review-cnt">(21,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Mount Abu is a much-loved hill station in Rajasthan, known for only hill station and dilwara temples.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹700</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=ranthambore" class="dest-card-link group" aria-label="Ranthambore, Rajasthan"><div class="dest-card-media"><img src="https://images.pexels.com/photos/37350659/pexels-photo-37350659.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85" alt="Stone walls and watchtowers of 10th-century Ranthambore Fort inside the forest" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Wildlife</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Ranthambore</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Sawai Madhopur</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.6</span><span class="review-cnt">(24,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Jun</span></div><p class="dest-card-desc">Ranthambore is a much-loved wildlife reserve in Rajasthan, known for tigers and safari.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹800</span></div></div></div></a></article>
-                <article class="dest-card-item"><a href="/destination?slug=bikaner" class="dest-card-link group" aria-label="Bikaner, Rajasthan"><div class="dest-card-media"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Devi_Kund_Sagar_and_Cenotaphs%2C_Bikaner.jpg" alt="Bikaner, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" /><div class="dest-card-scrim"></div><div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div><div class="dest-card-header-overlay"><h3 class="dest-card-title">Bikaner</h3><p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rajasthan · Thar Desert</p></div></div><div class="dest-card-body"><div class="dest-card-meta-row"><div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="rating-num">4.3</span><span class="review-cnt">(12,000)</span></div><span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>Oct – Mar</span></div><p class="dest-card-desc">Bikaner is a much-loved heritage city in Rajasthan, known for junagarh fort and camels.</p><div class="dest-card-footer"><div class="dest-price-box"><span class="price-prefix">Stay starts from</span><span class="price-val">₹900</span></div></div></div></a></article>
+              <article class="dest-card-item"><a href="/destination?slug=kanatal" class="dest-card-link group"
+                  aria-label="Kanatal, Uttarakhand">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/32126841/pexels-photo-32126841.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920"
+                      alt="Scenic view of Garhwal Himalayan mountains and pine terraces in Uttarakhand, India"
+                      class="dest-card-img" width="600" height="400" loading="eager" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Kanatal</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Uttarakhand · Garhwal Himalayas</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(2,847)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Pine forests, apple orchards and breathtaking Tehri Lake views at 2,600m
+                      altitude.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=manali" class="dest-card-link group"
+                  aria-label="Manali, Himachal Pradesh">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Manali, Himachal Pradesh" class="dest-card-img" width="600" height="400" loading="eager"
+                      decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Manali</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Himachal Pradesh · Kullu Valley</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.7</span><span class="review-cnt">(18,420)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Jun (avoid Jul–Aug monsoon)</span>
+                    </div>
+                    <p class="dest-card-desc">Snow-capped peaks, adventure sports, ancient temples and the legendary
+                      Rohtang Pass.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=goa" class="dest-card-link group"
+                  aria-label="Goa, Goa">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/28520254/pexels-photo-28520254.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Golden sunset over Goa coastline" class="dest-card-img" width="600" height="400"
+                      loading="eager" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Beach</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Goa</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Goa · Konkan Coast</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.5</span><span class="review-cnt">(42,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Nov – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Golden beaches, Portuguese heritage, vibrant nightlife and fresh seafood.
+                    </p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=coorg" class="dest-card-link group"
+                  aria-label="Coorg, Karnataka">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/33250481/pexels-photo-33250481.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Verdant Coffee Plantation &amp; Mist — Coorg, Karnataka, India" class="dest-card-img"
+                      width="600" height="400" loading="eager" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Coorg</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Karnataka · Western Ghats</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.5</span><span class="review-cnt">(11,200)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Year-round</span>
+                    </div>
+                    <p class="dest-card-desc">Rolling coffee estates, misty hills, waterfalls and the brave Kodava
+                      culture.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=udaipur" class="dest-card-link group"
+                  aria-label="Udaipur, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/31778015/pexels-photo-31778015.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Majestic granite and marble facade of Udaipur City Palace towering above Lake Pichola"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Udaipur</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Mewar</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.7</span><span class="review-cnt">(28,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Shimmering lakes, ornate palaces, romantic sunsets and royal Rajput
+                      grandeur.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=rishikesh" class="dest-card-link group"
+                  aria-label="Rishikesh, Uttarakhand">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/36123978/pexels-photo-36123978.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920&amp;q=85"
+                      alt="Lakshman Jhula Suspension Bridge Over Emerald Ganga in Rishikesh, Uttarakhand"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Rishikesh</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Uttarakhand · Garhwal Himalayas</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(19,500)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Sep – Jun</span>
+                    </div>
+                    <p class="dest-card-desc">White water rafting, yoga ashrams, bungee jumping and Ganga aarti at dusk.
+                    </p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=darjeeling" class="dest-card-link group"
+                  aria-label="Darjeeling, West Bengal">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/31572403/pexels-photo-31572403.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="First golden rays of sunrise illuminating the snow peaks of Mount Kanchenjunga from Tiger Hill"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Darjeeling</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>West Bengal · Eastern Himalayas</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(14,200)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Mar – May, Sep – Nov</span>
+                    </div>
+                    <p class="dest-card-desc">World-famous tea gardens, Kanchenjunga views, toy train and colonial
+                      charm.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=munnar" class="dest-card-link group"
+                  aria-label="Munnar, Kerala">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/29023410/pexels-photo-29023410.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Munnar, Kerala" class="dest-card-img" width="600" height="400" loading="lazy"
+                      decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Munnar</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Kerala · Western Ghats</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(16,800)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Sep – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Endless tea plantations, misty peaks, Neelakurinji flowers and the cool
+                      Cardamom Hills.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=ladakh" class="dest-card-link group"
+                  aria-label="Ladakh, Ladakh">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/6650409/pexels-photo-6650409.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Multi-tiered whitewashed buildings of Thiksey Monastery perched on a hill in Ladakh"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Ladakh</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Ladakh · Trans-Himalayas</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.9</span><span class="review-cnt">(32,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Jun – Sep</span>
+                    </div>
+                    <p class="dest-card-desc">Moonscapes, Buddhist monasteries, Pangong Lake and the world's highest
+                      motorable roads.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=hampi" class="dest-card-link group"
+                  aria-label="Hampi, Karnataka">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/37040437/pexels-photo-37040437.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Vittala Temple stone chariot illuminated at sunset in Hampi" class="dest-card-img"
+                      width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Hampi</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Karnataka · Northern Karnataka</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.7</span><span class="review-cnt">(21,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Nov – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Ruins of the Vijayanagara Empire spread across surreal boulder landscapes
+                      on the Tungabhadra.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=ooty" class="dest-card-link group"
+                  aria-label="Ooty, Tamil Nadu">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/6871925/pexels-photo-6871925.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Nilgiris Emerald Tea Terraces — Ooty, Tamil Nadu, India" class="dest-card-img" width="600"
+                      height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Ooty</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Tamil Nadu · Nilgiri Hills</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.4</span><span class="review-cnt">(22,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Apr – Jun, Sep – Nov</span>
+                    </div>
+                    <p class="dest-card-desc">Botanical gardens, Nilgiri Mountain Railway, tea estates and cool Nilgiri
+                      weather.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=varanasi" class="dest-card-link group"
+                  aria-label="Varanasi, Uttar Pradesh">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/38931046/pexels-photo-38931046.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Varanasi Ghats along the holy River Ganga at sunrise" class="dest-card-img" width="600"
+                      height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Varanasi</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Uttar Pradesh · Gangetic Plains</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.5</span><span class="review-cnt">(28,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Dawn boat rides on the Ganga, Dashashwamedh Ghat aarti and narrow lanes of
+                      the holy city.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=spiti" class="dest-card-link group"
+                  aria-label="Spiti Valley, Himachal Pradesh">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/31875017/pexels-photo-31875017.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Key Monastery nestled in the rugged hills of Spiti Valley, showcasing stunning Buddhist architecture."
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Spiti Valley</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Himachal Pradesh · Trans-Himalayas</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.8</span><span class="review-cnt">(8,400)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Jun – Sep</span>
+                    </div>
+                    <p class="dest-card-desc">High-altitude desert, ancient Key Monastery, Chandratal Lake and
+                      star-filled skies.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=jaisalmer" class="dest-card-link group"
+                  aria-label="Jaisalmer, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/19438328/pexels-photo-19438328.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Sonar Qila Golden Sandstone Bastions — Jaisalmer, Rajasthan, India" class="dest-card-img"
+                      width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Jaisalmer</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Thar Desert</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(17,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Living fort city, camel safaris in the Thar Desert, Sam sand dunes and
+                      starlit nights.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=mcleodganj" class="dest-card-link group"
+                  aria-label="McLeod Ganj, Himachal Pradesh">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/755401/pexels-photo-755401.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Dhauladhar Alpine Mountain Wall — McLeod Ganj, Himachal Pradesh, India" class="dest-card-img"
+                      width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">McLeod Ganj</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Himachal Pradesh · Kangra Valley</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.5</span><span class="review-cnt">(12,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Mar – Jun, Sep – Nov</span>
+                    </div>
+                    <p class="dest-card-desc">Tibetan culture, Dalai Lama's residence, Triund Trek and the dramatic
+                      Dhauladhar range.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=varkala" class="dest-card-link group"
+                  aria-label="Varkala, Kerala">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/6652196/pexels-photo-6652196.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Dramatic red sandstone cliffs towering over Papanasam beach at Varkala" class="dest-card-img"
+                      width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Beach</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Varkala</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Kerala · Kerala Coast</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.5</span><span class="review-cnt">(8,900)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Nov – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Dramatic 15m red laterite cliffs, Papanasam beach, Ayurvedic spas and
+                      fresh seafood.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=kaziranga" class="dest-card-link group"
+                  aria-label="Kaziranga, Assam">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/30481914/pexels-photo-30481914.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;q=85"
+                      alt="Panoramic landscape of Kaziranga wetland waters and emerald hills at golden sunset"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Wildlife</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Kaziranga</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Assam · Brahmaputra Valley</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.8</span><span class="review-cnt">(9,800)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Nov – Apr</span>
+                    </div>
+                    <p class="dest-card-desc">UNESCO World Heritage park with the world's largest population of Indian
+                      one-horned rhinos.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=rann-of-kutch" class="dest-card-link group"
+                  aria-label="Rann of Kutch, Gujarat">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/20256168/pexels-photo-20256168.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Endless white expanse of the Great Rann of Kutch glowing under sunset colors"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Adventure</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Rann of Kutch</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Gujarat · Kutch Desert</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(11,200)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Nov – Feb (during Rann Utsav)</span>
+                    </div>
+                    <p class="dest-card-desc">Infinite white salt flats, flamingos, full moon nights and the Rann Utsav
+                      festival.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=jaipur" class="dest-card-link group"
+                  aria-label="Jaipur, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Jaipur, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy"
+                      decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Jaipur</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Aravalli Plains</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(52,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Jaipur is a much-loved heritage city in Rajasthan, known for forts and
+                      palaces.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=jodhpur" class="dest-card-link group"
+                  aria-label="Jodhpur, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/18010572/pexels-photo-18010572.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Imposing sandstone ramparts of Mehrangarh Fort rising above Jodhpur" class="dest-card-img"
+                      width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Jodhpur</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Marwar</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(31,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Jodhpur is a much-loved heritage city in Rajasthan, known for blue city
+                      and mehrangarh.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=pushkar" class="dest-card-link group"
+                  aria-label="Pushkar, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/36795134/pexels-photo-36795134.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Reflective serene view of Pushkar Lake sacred bathing ghats surrounded by white temples and hills"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Spiritual</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Pushkar</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Ajmer</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.4</span><span class="review-cnt">(18,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Pushkar is a much-loved spiritual town in Rajasthan, known for holy lake
+                      and camel fair.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=mount-abu" class="dest-card-link group"
+                  aria-label="Mount Abu, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/31173940/pexels-photo-31173940.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                      alt="Mount Abu, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy"
+                      decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Hill Station</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Mount Abu</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Aravalli Range</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.4</span><span class="review-cnt">(21,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Mount Abu is a much-loved hill station in Rajasthan, known for only hill
+                      station and dilwara temples.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=ranthambore" class="dest-card-link group"
+                  aria-label="Ranthambore, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://images.pexels.com/photos/37350659/pexels-photo-37350659.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=85"
+                      alt="Stone walls and watchtowers of 10th-century Ranthambore Fort inside the forest"
+                      class="dest-card-img" width="600" height="400" loading="lazy" decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Wildlife</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Ranthambore</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Sawai Madhopur</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.6</span><span class="review-cnt">(24,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Jun</span>
+                    </div>
+                    <p class="dest-card-desc">Ranthambore is a much-loved wildlife reserve in Rajasthan, known for
+                      tigers and safari.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
+              <article class="dest-card-item"><a href="/destination?slug=bikaner" class="dest-card-link group"
+                  aria-label="Bikaner, Rajasthan">
+                  <div class="dest-card-media"><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/4/43/Devi_Kund_Sagar_and_Cenotaphs%2C_Bikaner.jpg"
+                      alt="Bikaner, Rajasthan" class="dest-card-img" width="600" height="400" loading="lazy"
+                      decoding="async" />
+                    <div class="dest-card-scrim"></div>
+                    <div class="dest-card-badges-top"><span class="dest-badge-type">Heritage</span></div>
+                    <div class="dest-card-header-overlay">
+                      <h3 class="dest-card-title">Bikaner</h3>
+                      <p class="dest-card-location"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>Rajasthan · Thar Desert</p>
+                    </div>
+                  </div>
+                  <div class="dest-card-body">
+                    <div class="dest-card-meta-row">
+                      <div class="dest-card-rating"><span class="star-icon"><svg class="icon" width="12" height="12"
+                            viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polygon
+                              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                          </svg></span><span class="rating-num">4.3</span><span class="review-cnt">(12,000)</span></div>
+                      <span class="dest-best-season"><svg class="icon" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                          <line x1="16" x2="16" y1="2" y2="6" />
+                          <line x1="8" x2="8" y1="2" y2="6" />
+                          <line x1="3" x2="21" y1="10" y2="10" />
+                        </svg>Oct – Mar</span>
+                    </div>
+                    <p class="dest-card-desc">Bikaner is a much-loved heritage city in Rajasthan, known for junagarh
+                      fort and camels.</p>
+                    <div class="dest-card-footer">
+                      <div class="dest-curated-badge" title="Curated Indian Sanctuary"><svg class="curated-sparkle-icon"
+                          width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        </svg><span class="curated-label">Curated Sanctuary</span></div><span class="dest-explore-cta"
+                        aria-hidden="true">Explore Sanctuary &rarr;</span>
+                    </div>
+                  </div>
+                </a></article>
             </div>
 
             <!-- Load More Pagination -->
@@ -416,7 +1569,8 @@
           <summary class="state-directory-trigger" aria-controls="stateAtlasPanel">
             <div class="trigger-left">
               <span class="trigger-gem" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                   <polyline points="2 17 12 22 22 17"></polyline>
                   <polyline points="2 12 12 17 22 12"></polyline>
@@ -426,14 +1580,16 @@
                 <h2 id="stateAtlasHeading" class="trigger-title">
                   Explore Destinations by State &amp; Union Territory
                 </h2>
-                <span class="trigger-subtitle">Browse the complete regional atlas across all 36 States &amp; Union Territories</span>
+                <span class="trigger-subtitle">Browse the complete regional atlas across all 36 States &amp; Union
+                  Territories</span>
               </div>
             </div>
             <div class="trigger-right">
               <span class="trigger-badge">36 States &amp; UTs</span>
               <span class="trigger-chevron" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m6 9 6 6 6-6"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </span>
             </div>
@@ -443,7 +1599,9 @@
             <div class="state-directory-card">
               <div class="state-directory-header">
                 <div class="state-directory-kicker">
-                  <svg class="state-kicker-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <svg class="state-kicker-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                     <polyline points="2 17 12 22 22 17"></polyline>
                     <polyline points="2 12 12 17 22 12"></polyline>
@@ -453,10 +1611,13 @@
                 <div class="state-directory-title-wrap">
                   <div>
                     <h3 class="state-directory-heading">
-                      Curated Directories Across <span class="gold-gradient-text font-calligraphy text-[1.12em] font-normal tracking-wide">36 States</span> &amp; Union Territories
+                      Curated Directories Across <span
+                        class="gold-gradient-text font-calligraphy text-[1.12em] font-normal tracking-wide">36
+                        States</span> &amp; Union Territories
                     </h3>
                     <p class="state-directory-desc">
-                      National index cataloguing verified destinations with authentic photography, seasonal travel weather, and budget stay guides.
+                      National index cataloguing verified destinations with authentic photography, seasonal travel
+                      weather, and budget stay guides.
                     </p>
                   </div>
                   <div class="state-directory-badge" aria-label="36 States and Union Territories catalogued">
@@ -468,42 +1629,78 @@
 
               <nav class="state-directory-nav" aria-label="Explore Destinations by Indian State &amp; UT">
                 <div class="state-atlas-grid">
-                  <a href="/destinations?state=Andaman%20%26%20Nicobar" class="state-atlas-pill"><span class="state-name">Andaman &amp; Nicobar</span><span class="state-count">8</span></a>
-                  <a href="/destinations?state=Andhra%20Pradesh" class="state-atlas-pill"><span class="state-name">Andhra Pradesh</span><span class="state-count">80</span></a>
-                  <a href="/destinations?state=Arunachal%20Pradesh" class="state-atlas-pill"><span class="state-name">Arunachal Pradesh</span><span class="state-count">12</span></a>
-                  <a href="/destinations?state=Assam" class="state-atlas-pill"><span class="state-name">Assam</span><span class="state-count">43</span></a>
-                  <a href="/destinations?state=Bihar" class="state-atlas-pill"><span class="state-name">Bihar</span><span class="state-count">38</span></a>
-                  <a href="/destinations?state=Chandigarh" class="state-atlas-pill"><span class="state-name">Chandigarh</span><span class="state-count">2</span></a>
-                  <a href="/destinations?state=Chhattisgarh" class="state-atlas-pill"><span class="state-name">Chhattisgarh</span><span class="state-count">18</span></a>
-                  <a href="/destinations?state=Daman%20%26%20Diu" class="state-atlas-pill"><span class="state-name">Daman &amp; Diu</span><span class="state-count">3</span></a>
-                  <a href="/destinations?state=Delhi" class="state-atlas-pill"><span class="state-name">Delhi</span><span class="state-count">11</span></a>
-                  <a href="/destinations?state=Goa" class="state-atlas-pill"><span class="state-name">Goa</span><span class="state-count">33</span></a>
-                  <a href="/destinations?state=Gujarat" class="state-atlas-pill"><span class="state-name">Gujarat</span><span class="state-count">81</span></a>
-                  <a href="/destinations?state=Haryana" class="state-atlas-pill"><span class="state-name">Haryana</span><span class="state-count">31</span></a>
-                  <a href="/destinations?state=Himachal%20Pradesh" class="state-atlas-pill"><span class="state-name">Himachal Pradesh</span><span class="state-count">56</span></a>
-                  <a href="/destinations?state=Jammu%20%26%20Kashmir" class="state-atlas-pill"><span class="state-name">Jammu &amp; Kashmir</span><span class="state-count">36</span></a>
-                  <a href="/destinations?state=Jharkhand" class="state-atlas-pill"><span class="state-name">Jharkhand</span><span class="state-count">33</span></a>
-                  <a href="/destinations?state=Karnataka" class="state-atlas-pill"><span class="state-name">Karnataka</span><span class="state-count">212</span></a>
-                  <a href="/destinations?state=Kerala" class="state-atlas-pill"><span class="state-name">Kerala</span><span class="state-count">349</span></a>
-                  <a href="/destinations?state=Ladakh" class="state-atlas-pill"><span class="state-name">Ladakh</span><span class="state-count">28</span></a>
-                  <a href="/destinations?state=Lakshadweep" class="state-atlas-pill"><span class="state-name">Lakshadweep</span><span class="state-count">2</span></a>
-                  <a href="/destinations?state=Madhya%20Pradesh" class="state-atlas-pill"><span class="state-name">Madhya Pradesh</span><span class="state-count">75</span></a>
-                  <a href="/destinations?state=Maharashtra" class="state-atlas-pill"><span class="state-name">Maharashtra</span><span class="state-count">271</span></a>
-                  <a href="/destinations?state=Manipur" class="state-atlas-pill"><span class="state-name">Manipur</span><span class="state-count">9</span></a>
-                  <a href="/destinations?state=Meghalaya" class="state-atlas-pill"><span class="state-name">Meghalaya</span><span class="state-count">11</span></a>
-                  <a href="/destinations?state=Mizoram" class="state-atlas-pill"><span class="state-name">Mizoram</span><span class="state-count">6</span></a>
-                  <a href="/destinations?state=Nagaland" class="state-atlas-pill"><span class="state-name">Nagaland</span><span class="state-count">9</span></a>
-                  <a href="/destinations?state=Odisha" class="state-atlas-pill"><span class="state-name">Odisha</span><span class="state-count">81</span></a>
-                  <a href="/destinations?state=Puducherry" class="state-atlas-pill"><span class="state-name">Puducherry</span><span class="state-count">7</span></a>
-                  <a href="/destinations?state=Punjab" class="state-atlas-pill"><span class="state-name">Punjab</span><span class="state-count">31</span></a>
-                  <a href="/destinations?state=Rajasthan" class="state-atlas-pill"><span class="state-name">Rajasthan</span><span class="state-count">96</span></a>
-                  <a href="/destinations?state=Sikkim" class="state-atlas-pill"><span class="state-name">Sikkim</span><span class="state-count">16</span></a>
-                  <a href="/destinations?state=Tamil%20Nadu" class="state-atlas-pill"><span class="state-name">Tamil Nadu</span><span class="state-count">429</span></a>
-                  <a href="/destinations?state=Telangana" class="state-atlas-pill"><span class="state-name">Telangana</span><span class="state-count">55</span></a>
-                  <a href="/destinations?state=Tripura" class="state-atlas-pill"><span class="state-name">Tripura</span><span class="state-count">11</span></a>
-                  <a href="/destinations?state=Uttar%20Pradesh" class="state-atlas-pill"><span class="state-name">Uttar Pradesh</span><span class="state-count">79</span></a>
-                  <a href="/destinations?state=Uttarakhand" class="state-atlas-pill"><span class="state-name">Uttarakhand</span><span class="state-count">54</span></a>
-                  <a href="/destinations?state=West%20Bengal" class="state-atlas-pill"><span class="state-name">West Bengal</span><span class="state-count">80</span></a>
+                  <a href="/destinations?state=Andaman%20%26%20Nicobar" class="state-atlas-pill"><span
+                      class="state-name">Andaman &amp; Nicobar</span><span class="state-count">8</span></a>
+                  <a href="/destinations?state=Andhra%20Pradesh" class="state-atlas-pill"><span
+                      class="state-name">Andhra Pradesh</span><span class="state-count">80</span></a>
+                  <a href="/destinations?state=Arunachal%20Pradesh" class="state-atlas-pill"><span
+                      class="state-name">Arunachal Pradesh</span><span class="state-count">12</span></a>
+                  <a href="/destinations?state=Assam" class="state-atlas-pill"><span
+                      class="state-name">Assam</span><span class="state-count">43</span></a>
+                  <a href="/destinations?state=Bihar" class="state-atlas-pill"><span
+                      class="state-name">Bihar</span><span class="state-count">38</span></a>
+                  <a href="/destinations?state=Chandigarh" class="state-atlas-pill"><span
+                      class="state-name">Chandigarh</span><span class="state-count">2</span></a>
+                  <a href="/destinations?state=Chhattisgarh" class="state-atlas-pill"><span
+                      class="state-name">Chhattisgarh</span><span class="state-count">18</span></a>
+                  <a href="/destinations?state=Daman%20%26%20Diu" class="state-atlas-pill"><span
+                      class="state-name">Daman &amp; Diu</span><span class="state-count">3</span></a>
+                  <a href="/destinations?state=Delhi" class="state-atlas-pill"><span
+                      class="state-name">Delhi</span><span class="state-count">11</span></a>
+                  <a href="/destinations?state=Goa" class="state-atlas-pill"><span class="state-name">Goa</span><span
+                      class="state-count">33</span></a>
+                  <a href="/destinations?state=Gujarat" class="state-atlas-pill"><span
+                      class="state-name">Gujarat</span><span class="state-count">81</span></a>
+                  <a href="/destinations?state=Haryana" class="state-atlas-pill"><span
+                      class="state-name">Haryana</span><span class="state-count">31</span></a>
+                  <a href="/destinations?state=Himachal%20Pradesh" class="state-atlas-pill"><span
+                      class="state-name">Himachal Pradesh</span><span class="state-count">56</span></a>
+                  <a href="/destinations?state=Jammu%20%26%20Kashmir" class="state-atlas-pill"><span
+                      class="state-name">Jammu &amp; Kashmir</span><span class="state-count">36</span></a>
+                  <a href="/destinations?state=Jharkhand" class="state-atlas-pill"><span
+                      class="state-name">Jharkhand</span><span class="state-count">33</span></a>
+                  <a href="/destinations?state=Karnataka" class="state-atlas-pill"><span
+                      class="state-name">Karnataka</span><span class="state-count">212</span></a>
+                  <a href="/destinations?state=Kerala" class="state-atlas-pill"><span
+                      class="state-name">Kerala</span><span class="state-count">349</span></a>
+                  <a href="/destinations?state=Ladakh" class="state-atlas-pill"><span
+                      class="state-name">Ladakh</span><span class="state-count">28</span></a>
+                  <a href="/destinations?state=Lakshadweep" class="state-atlas-pill"><span
+                      class="state-name">Lakshadweep</span><span class="state-count">2</span></a>
+                  <a href="/destinations?state=Madhya%20Pradesh" class="state-atlas-pill"><span
+                      class="state-name">Madhya Pradesh</span><span class="state-count">75</span></a>
+                  <a href="/destinations?state=Maharashtra" class="state-atlas-pill"><span
+                      class="state-name">Maharashtra</span><span class="state-count">271</span></a>
+                  <a href="/destinations?state=Manipur" class="state-atlas-pill"><span
+                      class="state-name">Manipur</span><span class="state-count">9</span></a>
+                  <a href="/destinations?state=Meghalaya" class="state-atlas-pill"><span
+                      class="state-name">Meghalaya</span><span class="state-count">11</span></a>
+                  <a href="/destinations?state=Mizoram" class="state-atlas-pill"><span
+                      class="state-name">Mizoram</span><span class="state-count">6</span></a>
+                  <a href="/destinations?state=Nagaland" class="state-atlas-pill"><span
+                      class="state-name">Nagaland</span><span class="state-count">9</span></a>
+                  <a href="/destinations?state=Odisha" class="state-atlas-pill"><span
+                      class="state-name">Odisha</span><span class="state-count">81</span></a>
+                  <a href="/destinations?state=Puducherry" class="state-atlas-pill"><span
+                      class="state-name">Puducherry</span><span class="state-count">7</span></a>
+                  <a href="/destinations?state=Punjab" class="state-atlas-pill"><span
+                      class="state-name">Punjab</span><span class="state-count">31</span></a>
+                  <a href="/destinations?state=Rajasthan" class="state-atlas-pill"><span
+                      class="state-name">Rajasthan</span><span class="state-count">96</span></a>
+                  <a href="/destinations?state=Sikkim" class="state-atlas-pill"><span
+                      class="state-name">Sikkim</span><span class="state-count">16</span></a>
+                  <a href="/destinations?state=Tamil%20Nadu" class="state-atlas-pill"><span class="state-name">Tamil
+                      Nadu</span><span class="state-count">429</span></a>
+                  <a href="/destinations?state=Telangana" class="state-atlas-pill"><span
+                      class="state-name">Telangana</span><span class="state-count">55</span></a>
+                  <a href="/destinations?state=Tripura" class="state-atlas-pill"><span
+                      class="state-name">Tripura</span><span class="state-count">11</span></a>
+                  <a href="/destinations?state=Uttar%20Pradesh" class="state-atlas-pill"><span class="state-name">Uttar
+                      Pradesh</span><span class="state-count">79</span></a>
+                  <a href="/destinations?state=Uttarakhand" class="state-atlas-pill"><span
+                      class="state-name">Uttarakhand</span><span class="state-count">54</span></a>
+                  <a href="/destinations?state=West%20Bengal" class="state-atlas-pill"><span class="state-name">West
+                      Bengal</span><span class="state-count">80</span></a>
                 </div>
               </nav>
             </div>

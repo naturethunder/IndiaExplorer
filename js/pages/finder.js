@@ -499,10 +499,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     detailsHTML +
     '<div class="flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
     '<span class="text-xs text-slate-400">' + distanceText + '</span>' +
-    '<div class="flex items-baseline gap-1.5">' +
-    '<span class="text-slate-400 text-[11px]">Stay starts from</span>' +
-    '<span class="text-sm font-extrabold text-amber-400">₹' + inr(d.minPrice) + '</span>' +
-    '</div>' +
+    '<span class="text-xs font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
     '</div>' +
     '</div>' +
     '</a>';

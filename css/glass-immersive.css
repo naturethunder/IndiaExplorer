@@ -4,11 +4,18 @@
    across all pages (Home, AI Finder, About, Contact, Privacy, Terms).
    ========================================================= */
 
+html,
+body.glass-immersive {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 html:not([data-theme="light"]) body.glass-immersive,
 html[data-theme="dark"] body.glass-immersive {
   background: #080a0f !important;
   color: rgba(255, 255, 255, 0.95) !important;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* ─── LAYER 1 & 2: Fixed Full-Viewport Background & Overlay ──────── */
@@ -264,6 +271,9 @@ html:not([data-theme="light"]) body.glass-immersive .bg-gray-50:not(section):not
 body.glass-immersive .category-strip {
   width: 100% !important;
   max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
   padding: 1.25rem 1.5rem !important;
   border-radius: 1.5rem !important;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 30px rgba(229, 192, 123, 0.06) !important;
@@ -276,11 +286,14 @@ body.glass-immersive #category-strip.carousel-row {
   justify-content: flex-start !important;
   align-items: stretch !important;
   width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
   gap: 0.75rem !important;
   overflow-x: auto !important;
   scrollbar-width: none !important;
   -webkit-overflow-scrolling: touch !important;
   padding: 0.25rem 0.1rem 0.6rem !important;
+  box-sizing: border-box !important;
 }
 
 body.glass-immersive #category-strip.carousel-row::-webkit-scrollbar {
@@ -864,13 +877,20 @@ body.glass-immersive .discover-trending-wrap {
   position: relative !important;
   height: 500px !important;
   width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
 }
 
 body.glass-immersive .discover-trending .carousel-row {
   height: 100% !important;
   align-items: stretch !important;
   width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: auto !important;
   gap: 1.25rem !important;
+  box-sizing: border-box !important;
 }
 
 body.glass-immersive .discover-trending .carousel-row>* {
@@ -2858,7 +2878,7 @@ html[data-theme="light"] body.glass-immersive main p:not(.hero-home p):not(.seas
   text-shadow: none !important;
 }
 
-html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *) {
+html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *):not(.dest-ov-counter *):not(.dest-ov-counter):not(.counter-pill):not(.gallery-category-pill) {
   color: #0F172A !important;
 }
 
@@ -2939,31 +2959,168 @@ html[data-theme="light"] body.glass-immersive .hero-luxury-eyebrow {
   margin-left: auto !important;
   margin-right: auto !important;
   gap: 14px !important;
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.85rem !important;
 }
 
 body.glass-immersive .hero-eyebrow-rule,
 html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule {
   display: inline-block !important;
-  width: 44px !important;
-  height: 1.5px !important;
-  background: linear-gradient(90deg, rgba(245, 197, 66, 0.1) 0%, #F5C542 100%) !important;
+  width: 48px !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0) 0%, #F5C542 100%) !important;
 }
 
 body.glass-immersive .hero-eyebrow-rule:last-child,
 html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule:last-child {
-  background: linear-gradient(90deg, #F5C542 0%, rgba(245, 197, 66, 0.1) 100%) !important;
+  background: linear-gradient(90deg, #F5C542 0%, rgba(245, 197, 66, 0) 100%) !important;
+}
+
+body.glass-immersive .hero-eyebrow-badge,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-badge {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  gap: 9px !important;
+  background: rgba(11, 16, 28, 0.78) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.6), 0 0 16px rgba(245, 197, 66, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  border-radius: 9999px !important;
+  padding: 6px 18px !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+body.glass-immersive .hero-eyebrow-badge:hover,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-badge:hover {
+  border-color: rgba(245, 197, 66, 0.85) !important;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.7), 0 0 24px rgba(245, 197, 66, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.28) !important;
+  transform: translateY(-1px) !important;
+}
+
+body.glass-immersive .hero-eyebrow-seal,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-seal {
+  color: #FCD34D !important;
+  filter: drop-shadow(0 0 6px rgba(245, 197, 66, 0.7)) !important;
 }
 
 body.glass-immersive .hero-eyebrow-label,
 html[data-theme="light"] body.glass-immersive .hero-eyebrow-label {
-  font-size: 11.5px !important;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+  font-size: 11px !important;
   font-weight: 700 !important;
   letter-spacing: 0.24em !important;
   text-transform: uppercase !important;
   color: #FCD34D !important;
   -webkit-text-fill-color: #FCD34D !important;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 0 12px rgba(245, 197, 66, 0.6) !important;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9), 0 0 14px rgba(245, 197, 66, 0.5) !important;
+}
+
+body.glass-immersive .hero-eyebrow-dot,
+html[data-theme="light"] body.glass-immersive .hero-eyebrow-dot {
+  font-size: 10px !important;
+  color: #FCD34D !important;
+  opacity: 0.85 !important;
+}
+
+/* Hero Title & Lead Typography Invariants */
+body.glass-immersive .hero-title-lead,
+html[data-theme="light"] body.glass-immersive .hero-title-lead {
+  display: block !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(1.85rem, 4.4vw, 3.4rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.18 !important;
+  text-transform: none !important;
+  color: #F8FAFC !important;
+  -webkit-text-fill-color: #F8FAFC !important;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+body.glass-immersive .hero-title-brand,
+html[data-theme="light"] body.glass-immersive .hero-title-brand {
+  display: block !important;
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(2.4rem, 6.2vw, 4.9rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.015em !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  margin-top: 0.15rem !important;
+}
+
+body.glass-immersive .hero-editorial-lead,
+html[data-theme="light"] body.glass-immersive .hero-editorial-lead {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+  font-size: clamp(0.92rem, 1.35vw, 1.12rem) !important;
+  font-weight: 350 !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.02em !important;
+  color: rgba(248, 250, 252, 0.88) !important;
+  -webkit-text-fill-color: rgba(248, 250, 252, 0.88) !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95) !important;
+}
+
+@media (max-width: 640px) {
+
+  body.glass-immersive .hero-luxury-eyebrow,
+  html[data-theme="light"] body.glass-immersive .hero-luxury-eyebrow {
+    gap: 8px !important;
+    max-width: 100% !important;
+  }
+
+  body.glass-immersive .hero-eyebrow-rule,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule {
+    width: 22px !important;
+  }
+
+  body.glass-immersive .hero-eyebrow-badge,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-badge {
+    padding: 5px 13px !important;
+    gap: 6px !important;
+  }
+
+  body.glass-immersive .hero-eyebrow-label,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-label {
+    font-size: 9.5px !important;
+    letter-spacing: 0.14em !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  body.glass-immersive .hero-title-lead,
+  html[data-theme="light"] body.glass-immersive .hero-title-lead {
+    font-size: clamp(1.4rem, 5.8vw, 2.1rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  body.glass-immersive .hero-title-brand,
+  html[data-theme="light"] body.glass-immersive .hero-title-brand {
+    font-size: clamp(2rem, 8.4vw, 3.1rem) !important;
+    line-height: 1.12 !important;
+  }
+}
+
+@media (max-width: 420px) {
+
+  body.glass-immersive .hero-eyebrow-rule,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-rule {
+    display: none !important;
+  }
+
+  body.glass-immersive .hero-eyebrow-badge,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-badge {
+    padding: 4px 10px !important;
+  }
+
+  body.glass-immersive .hero-eyebrow-label,
+  html[data-theme="light"] body.glass-immersive .hero-eyebrow-label {
+    font-size: 8.5px !important;
+    letter-spacing: 0.1em !important;
+  }
 }
 
 body.glass-immersive .hero-popular-label,
@@ -4447,9 +4604,23 @@ html[data-theme="light"] body.glass-immersive .autocomplete-item .text-gray-500 
 
   /* Hero Headline scaling */
   body.glass-immersive .hero-home h1,
+  body.glass-immersive .hero-home-title,
   body.glass-immersive .hero-title {
-    font-size: clamp(1.85rem, 6.8vw, 2.5rem) !important;
-    line-height: 1.15 !important;
+    font-size: clamp(1.5rem, 6.2vw, 2.3rem) !important;
+    line-height: 1.18 !important;
+    text-wrap: balance !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+}
+
+@media (max-width: 400px) {
+
+  body.glass-immersive .hero-home h1,
+  body.glass-immersive .hero-home-title,
+  body.glass-immersive .hero-title {
+    font-size: clamp(1.35rem, 6.8vw, 1.75rem) !important;
+    line-height: 1.2 !important;
   }
 }
 
@@ -4544,6 +4715,58 @@ html[data-theme="light"] body.glass-immersive .dest-best-season {
   font-weight: 500 !important;
 }
 
+.dest-curated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F5C542;
+}
+
+.dest-curated-badge .curated-sparkle-icon {
+  width: 13px;
+  height: 13px;
+  stroke: #F5C542;
+  flex-shrink: 0;
+}
+
+.dest-explore-cta {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #94A3B8;
+  transition: color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dest-card-link:hover .dest-explore-cta,
+.dest-card-item:hover .dest-explore-cta {
+  color: #F5C542;
+  transform: translateX(4px);
+}
+
+html[data-theme="light"] body.glass-immersive .dest-curated-badge {
+  color: #B45309;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-curated-badge .curated-sparkle-icon {
+  stroke: #B45309;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-explore-cta {
+  color: #475569;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card-link:hover .dest-explore-cta,
+html[data-theme="light"] body.glass-immersive .dest-card-item:hover .dest-explore-cta {
+  color: #B45309;
+}
+
 /* Form Placeholders across Light Mode */
 html[data-theme="light"] body.glass-immersive input::placeholder,
 html[data-theme="light"] body.glass-immersive textarea::placeholder,
@@ -4592,6 +4815,30 @@ html[data-theme="light"] body.glass-immersive #hero-stats {
   box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+
+  body.glass-immersive #hero-stats,
+  html[data-theme="light"] body.glass-immersive #hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    border-radius: 20px !important;
+    padding: 12px 14px !important;
+    gap: 10px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body.glass-immersive #hero-stats,
+  html[data-theme="light"] body.glass-immersive #hero-stats {
+    max-width: 100% !important;
+    padding: 10px 8px !important;
+  }
 }
 
 body.glass-immersive #hero-stats strong,
@@ -4774,6 +5021,7 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
 .popular-showcase-section {
   position: relative;
   z-index: 2;
+  overflow-x: clip;
 }
 
 /* ─── Outer wrapper: flex column for stage+arrows | then dots below ─── */
@@ -4828,8 +5076,8 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
   /* CRITICAL: Only transition border/shadow/opacity — NOT transform (JS owns transform) */
   transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.35s ease,
-              box-shadow 0.35s ease;
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
   will-change: transform, opacity;
   background: #0f172a;
 }
@@ -4837,15 +5085,20 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
 /* JS sets card.style.transform directly; CSS provides the animation timing via transition on the transform-related values when they change */
 .popular-3d-card[style] {
   transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.35s ease,
-              box-shadow 0.35s ease;
+    opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .popular-3d-card.is-active {
   border-color: rgba(229, 192, 123, 0.65);
   box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.70), 0 0 32px rgba(229, 192, 123, 0.25);
   cursor: default;
+  z-index: 25 !important;
+}
+
+.popular-3d-card:not(.is-active) {
+  z-index: 8;
 }
 
 /* Subtle hover glow on side cards — ONLY border/shadow, NEVER transform */
@@ -5002,69 +5255,92 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
   width: 100%;
   padding: 10px 20px;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #FFFFFF;
+  border: 1.5px solid rgba(245, 197, 66, 0.75);
+  background: linear-gradient(135deg, rgba(20, 26, 38, 0.90) 0%, rgba(11, 15, 25, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #F5C542 !important;
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 0 0 14px rgba(245, 197, 66, 0.25);
 }
 
 .popular-3d-explore:hover {
-  background: rgba(229, 192, 123, 0.28);
-  border-color: #E5C07B;
-  color: #FFFFFF;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(229, 192, 123, 0.35);
+  background: linear-gradient(135deg, #FFF3C4 0%, #F5C542 50%, #D97706 100%);
+  border-color: #FFF3C4;
+  color: #080A0F !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(245, 197, 66, 0.6);
 }
 
-/* ─── Circular Glass Nav Arrows — positioned symmetrically relative to card deck ─── */
+.popular-3d-explore svg {
+  stroke: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.popular-3d-explore:hover svg {
+  transform: translateX(4px);
+}
+
+/* ─── Circular Glass Nav Arrows — Radiant 24K Imperial Gold Framing Deck ─── */
 .popular-3d-arrow {
   position: absolute !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
-  z-index: 30;
-  width: 52px;
-  height: 52px;
+  z-index: 45;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(15, 23, 42, 0.78);
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.95) 0%, rgba(245, 197, 66, 0.92) 50%, rgba(217, 119, 6, 0.92) 100%) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1.5px solid rgba(255, 255, 255, 0.28);
-  color: #FFFFFF;
+  border: 2px solid #FFFBEB !important;
+  color: #080A0F !important;
   cursor: pointer;
   flex-shrink: 0;
-  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.75), 0 0 24px rgba(245, 197, 66, 0.65) !important;
+}
+
+.popular-3d-arrow svg {
+  width: 24px;
+  height: 24px;
+  stroke: #080A0F !important;
+  stroke-width: 2.8 !important;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.4));
 }
 
 .popular-3d-arrow:hover {
-  background: rgba(229, 192, 123, 0.32);
-  border-color: #E5C07B;
-  color: #FFFFFF;
-  transform: translateY(-50%) scale(1.12) !important;
-  box-shadow: 0 12px 32px rgba(229, 192, 123, 0.45);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF3C4 40%, #F5C542 100%) !important;
+  border-color: #FFFFFF !important;
+  color: #000000 !important;
+  transform: translateY(-50%) scale(1.14) !important;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.85), 0 0 36px rgba(245, 197, 66, 0.95) !important;
+}
+
+.popular-3d-arrow:hover svg {
+  stroke: #000000 !important;
 }
 
 .popular-3d-arrow:active {
   transform: translateY(-50%) scale(0.94) !important;
 }
 
-/* Position arrows symmetrically flanking the cards, NOT lost at screen edges */
+/* Position arrows comfortably framing the entire 3D deck without card text overlap */
 .popular-3d-arrow-prev {
-  left: clamp(16px, calc(50% - 470px), calc(50% - 370px));
+  left: clamp(16px, calc(50% - 590px), calc(50% - 490px));
 }
 
 .popular-3d-arrow-next {
-  right: clamp(16px, calc(50% - 470px), calc(50% - 370px));
+  right: clamp(16px, calc(50% - 590px), calc(50% - 490px));
 }
 
 /* ─── Elongated Pill Pagination Indicators ─── */
@@ -5097,17 +5373,27 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
 
 /* ─── Light Mode Overrides ─── */
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow {
-  background: rgba(255, 255, 255, 0.90) !important;
-  border: 1.5px solid rgba(217, 119, 6, 0.30) !important;
-  color: #92400E !important;
-  box-shadow: 0 6px 20px rgba(180, 83, 9, 0.15) !important;
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #F59E0B 100%) !important;
+  border: 2px solid #D97706 !important;
+  color: #78350F !important;
+  box-shadow: 0 8px 24px rgba(180, 83, 9, 0.28), 0 0 16px rgba(245, 158, 11, 0.35) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-arrow svg {
+  stroke: #78350F !important;
+  stroke-width: 2.8 !important;
+  filter: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow:hover {
-  background: #92400E !important;
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
   border-color: #92400E !important;
   color: #FFFFFF !important;
-  box-shadow: 0 10px 28px rgba(180, 83, 9, 0.30) !important;
+  box-shadow: 0 10px 32px rgba(180, 83, 9, 0.45) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .popular-3d-arrow:hover svg {
+  stroke: #FFFFFF !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-dot.is-active {
@@ -5119,11 +5405,27 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   background: rgba(0, 0, 0, 0.22) !important;
 }
 
+/* ─── Responsive: Tablet & Below (1023px and below) ─── */
+@media (max-width: 1023px) {
+  .popular-3d-stage {
+    transform-style: flat !important; /* CRITICAL: Flattens 3D context so z-index strictly guarantees center card is in front! */
+  }
+
+  .popular-3d-card.is-active {
+    z-index: 50 !important;
+  }
+
+  .popular-3d-card:not(.is-active) {
+    z-index: 5 !important;
+  }
+}
+
 /* ─── Responsive: Tablet (768px and below) ─── */
 @media (max-width: 768px) {
   .popular-3d-stage {
     height: 440px;
     width: min(520px, 85vw);
+    transform-style: flat !important;
   }
 
   .popular-3d-card {
@@ -5134,9 +5436,18 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
     border-radius: 22px;
   }
 
+  .popular-3d-card.is-active {
+    z-index: 50 !important;
+  }
+
+  .popular-3d-card:not(.is-active) {
+    z-index: 5 !important;
+  }
+
   .popular-3d-arrow {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
+    z-index: 55;
   }
 
   .popular-3d-arrow-prev {
@@ -5153,6 +5464,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   .popular-3d-stage {
     height: 400px;
     width: min(440px, 80vw);
+    transform-style: flat !important;
   }
 
   .popular-3d-card {
@@ -5161,6 +5473,14 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
     margin-top: -194px;
     margin-left: -122px;
     border-radius: 20px;
+  }
+
+  .popular-3d-card.is-active {
+    z-index: 50 !important;
+  }
+
+  .popular-3d-card:not(.is-active) {
+    z-index: 5 !important;
   }
 
   .popular-3d-title {
@@ -5172,9 +5492,9 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-arrow {
-    width: 44px;
-    height: 44px;
-    z-index: 35;
+    width: 46px;
+    height: 46px;
+    z-index: 60;
   }
 
   .popular-3d-arrow-prev {
@@ -5191,6 +5511,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   .popular-3d-stage {
     height: 375px;
     width: 100%;
+    transform-style: flat !important;
   }
 
   .popular-3d-card {
@@ -5199,6 +5520,14 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
     margin-top: -180px;
     margin-left: -110px;
     border-radius: 18px;
+  }
+
+  .popular-3d-card.is-active {
+    z-index: 50 !important;
+  }
+
+  .popular-3d-card:not(.is-active) {
+    z-index: 5 !important;
   }
 
   .popular-3d-title {
@@ -5216,7 +5545,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   .popular-3d-arrow {
     width: 44px;
     height: 44px;
-    z-index: 35;
+    z-index: 60;
   }
 
   .popular-3d-arrow-prev {
@@ -5234,7 +5563,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
    ══════════════════════════════════════════════════════════════════════════════ */
 
 /* Dynamic Specular Shimmer Layer for Glass Elements */
-[data-glass-interactive]:not(.popular-3d-arrow):not(.carousel-arrow):not(.discover-arrow):not(.section-carousel-arrow),
+[data-glass-interactive]:not(.popular-3d-arrow):not(.carousel-arrow):not(.discover-arrow):not(.section-carousel-arrow):not(.category-scroll-arrow):not(.dest-ov-btn):not(.dest-ov-prev):not(.dest-ov-next):not(.carousel-btn):not(.carousel-prev):not(.carousel-next),
 .btn,
 .nav-link,
 .category-pill-btn,

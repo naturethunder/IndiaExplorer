@@ -49,9 +49,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20261025_luxury_cards_v5" />
+  <link rel="stylesheet" href="css/styles.css?v=20261027_gold_luxury_v8" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261026_ultra_luxury_glass" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261027_gold_luxury_v8" />
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
   <script src="js/vendor/ScrollTrigger.min.js" defer></script>
@@ -80,17 +80,24 @@
         <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
 
           <!-- Luxury Eyebrow — ornamental gold rule flanking -->
-          <div class="hero-luxury-eyebrow justify-center mx-auto">
-            <span class="hero-eyebrow-rule"></span>
-            <span class="hero-eyebrow-label">CURATED HIDDEN SANCTUARIES ACROSS BHARAT</span>
-            <span class="hero-eyebrow-rule"></span>
+          <div class="hero-luxury-eyebrow justify-center mx-auto" aria-label="Curated Indian Sanctuaries">
+            <span class="hero-eyebrow-rule" aria-hidden="true"></span>
+            <span class="hero-eyebrow-badge inline-flex items-center gap-2">
+              <svg class="hero-eyebrow-seal shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.4 6.9h7.1l-5.7 4.3 2.2 6.8-6-4.4-6 4.4 2.2-6.8-5.7-4.3h7.1z" />
+              </svg>
+              <span class="hero-eyebrow-label">CURATED HIDDEN SANCTUARIES ACROSS BHARAT</span>
+              <span class="hero-eyebrow-dot" aria-hidden="true">✦</span>
+            </span>
+            <span class="hero-eyebrow-rule" aria-hidden="true"></span>
           </div>
 
           <!-- Cinematic Royal Headline -->
-          <h1 class="hero-home-title text-white tracking-tight text-center"
-            style="font-size:clamp(2.4rem,4.4vw,4.4rem);line-height:1.15;font-weight:800;margin-top:0.75rem;">
-            <span class="inline sm:whitespace-nowrap">Discover the Hidden Gems of</span><br class="hidden sm:block" />
-            <span class="gold-gradient-text" style="display:inline-block;">Incredible India</span>
+          <h1 class="hero-home-title text-white tracking-tight text-center">
+            <span class="hero-title-lead">Discover the Hidden Gems of</span>
+            <span class="hero-title-brand">
+              <span class="gold-gradient-text gold-shimmer-text">Incredible India</span>
+            </span>
           </h1>
 
           <!-- Segmented search bar -->
@@ -309,14 +316,14 @@
             <!-- Rendered by JS -->
           </div>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-left"
-            id="month-prev" aria-label="Scroll month picks left">
+            id="month-prev" data-no-gsap aria-label="Scroll month picks left">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
           <button type="button" class="carousel-arrow section-carousel-arrow section-carousel-arrow-right"
-            id="month-next" aria-label="Scroll month picks right">
+            id="month-next" data-no-gsap aria-label="Scroll month picks right">
             <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m9 18 6-6-6-6" />

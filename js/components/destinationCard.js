@@ -134,7 +134,7 @@ export function trendCardHTML(d, opts = {}) {
     '<p class="text-white font-bold text-lg leading-tight drop-shadow-md trend-card-title">' + esc(d.title) + '</p>' +
     '<div class="flex items-center gap-2 flex-wrap mt-2.5">' +
     '<span class="pill-green">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
-    '<span class="pill-glass">Stay starts from ₹' + inr(d.minPrice) + '</span>' +
+    '<span class="pill-glass">✦ ' + esc(d.badge || 'Curated Sanctuary') + '</span>' +
     '</div>' +
     '</div>' +
     '</a>';
@@ -174,10 +174,11 @@ export function destCardHTML(d, opts = {}) {
     '</div>' +
     '<p class="dest-card-desc">' + esc(d.short) + '</p>' +
     '<div class="dest-card-footer">' +
-    '<div class="dest-price-box">' +
-    '<span class="price-prefix">Stay starts from</span>' +
-    '<span class="price-val">₹' + inr(d.minPrice) + '</span>' +
+    '<div class="dest-curated-badge">' +
+    '<span class="curated-sparkle-icon">✦</span>' +
+    '<span class="curated-label">' + esc(d.badge || 'Curated Sanctuary') + '</span>' +
     '</div>' +
+    '<span class="dest-explore-cta">Explore Sanctuary →</span>' +
     '</div>' +
     '</div>' +
     '</a>' +
@@ -209,8 +210,8 @@ export function heroCardHTML(d, opts = {}) {
     '</div>' +
     '<p class="hero-hill-desc">' + esc(d.short) + '</p>' +
     '<div class="hero-hill-footer">' +
-    '<span class="hero-hill-prefix">Stay starts from</span>' +
-    '<span class="hero-hill-price">₹' + inr(d.minPrice) + '</span>' +
+    '<span class="hero-curated-tag">✦ ' + esc(d.badge || 'Bespoke Retreat') + '</span>' +
+    '<span class="hero-explore-link">Explore Guide →</span>' +
     '</div>' +
     '</div>' +
     '</a>';

@@ -186,14 +186,23 @@ if (!dest) {
 }
 
 function main(dest, idx) {
+  const LUXURY_TIER_LABELS = {
+    cheapest: 'Heritage Homestays',
+    budget: 'Boutique Retreats',
+    good: 'Sanctuary Lodges',
+    better: 'Signature Havelis',
+    best: 'Grand Palaces',
+    luxury: 'Royal Villas & Suites',
+    extra_luxury: 'Imperial Estates'
+  };
   const PRICE_TIERS = (idx && idx.meta && idx.meta.priceTiers) ? idx.meta.priceTiers : {
-    cheapest: { label: 'Cheapest', range: '₹0 – ₹800' },
-    budget: { label: 'Budget', range: '₹800 – ₹2,000' },
-    good: { label: 'Good', range: '₹2,000 – ₹4,000' },
-    better: { label: 'Better', range: '₹4,000 – ₹7,000' },
-    best: { label: 'Best', range: '₹7,000 – ₹12,000' },
-    luxury: { label: 'Luxury', range: '₹12,000 – ₹25,000' },
-    extra_luxury: { label: 'Ultra Luxury', range: '₹25,000+' },
+    cheapest: { label: 'Heritage Homestays', range: '₹0 – ₹800' },
+    budget: { label: 'Boutique Retreats', range: '₹800 – ₹2,000' },
+    good: { label: 'Sanctuary Lodges', range: '₹2,000 – ₹4,000' },
+    better: { label: 'Signature Havelis', range: '₹4,000 – ₹7,000' },
+    best: { label: 'Grand Palaces', range: '₹7,000 – ₹12,000' },
+    luxury: { label: 'Royal Villas & Suites', range: '₹12,000 – ₹25,000' },
+    extra_luxury: { label: 'Imperial Estates', range: '₹25,000+' },
   };
   const DESTINATION_TYPES = (idx && idx.meta && idx.meta.types) ? idx.meta.types : [
     { id: 'heritage', label: 'Heritage', icon: '🏛️' },
@@ -985,6 +994,8 @@ function main(dest, idx) {
 
     const SVG_PIN_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
     const SVG_CAR_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.7 2 10.8 2 11v5c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>';
+    const SVG_WALK_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="m9 20 3-6 3 2 2 4"/><path d="m6 17 3-3-1-4 4-2 3 3"/></svg>';
+    const SVG_BOAT_SM = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><line x1="12" x2="12" y1="2" y2="4"/></svg>';
     const SVG_METRO_SM = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline shrink-0" aria-hidden="true"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg>';
 
     let featList = (ov && ov.features ? ov.features : (dest.features || []));
@@ -1006,6 +1017,8 @@ function main(dest, idx) {
       const pImgAlt = (p.image && p.image.alt) ? p.image.alt : (p.name || '');
       const desc = (p.description || '');
       const loadAttr = 'loading="lazy"';
+      const placeTime = getPlaceTravelTime(p, dest.title, dest.state);
+      const placeTimeIcon = /boat|ferry/i.test(placeTime) ? SVG_BOAT_SM : (/walk|inside|complex|precinct/i.test(placeTime) ? SVG_WALK_SM : SVG_CAR_SM);
       return '<div class="card p-0 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all bg-white rounded-2xl border border-gray-100 group shadow-sm" data-topidx="' + i + '" role="button" tabindex="0">' +
         '<div class="relative h-32 overflow-hidden bg-gray-100">' +
         (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" referrerpolicy="no-referrer" ' +
@@ -1020,7 +1033,7 @@ function main(dest, idx) {
         '<p class="text-xs text-gray-500 dark:text-slate-400 mb-2 font-medium flex items-center gap-2 flex-wrap">' +
         '<span class="place-category-badge">' + esc(p.category || 'attraction') + '</span>' +
         '<span class="flex items-center gap-1" title="' + esc(p.distance || '') + '">' + SVG_PIN_SM + esc(cleanNearbyDistance(p.distance, dest.title)) + '</span>' +
-        '<span class="flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-semibold">' + SVG_CAR_SM + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span>' +
+        '<span class="flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-semibold">' + placeTimeIcon + esc(placeTime) + '</span>' +
         '</p>' +
         '<p class="text-xs text-gray-600 dark:text-slate-300 line-clamp-2 leading-relaxed">' + esc(desc.slice(0, 95)) + (desc.length > 95 ? '…' : '') + '</p>' +
         '</div></div>';
@@ -1031,7 +1044,7 @@ function main(dest, idx) {
     }).map(function (tier) {
       const min = (hotels.filter(function (s) { return s.tier === tier; })[0] || {}).priceMin || 0;
       return '<div class="flex justify-between items-center text-sm py-1 border-b border-gray-100 last:border-0">' +
-        '<span class="capitalize text-xs px-2 py-0.5 rounded-full font-medium ' + tierColor(tier) + '">' + (PRICE_TIERS[tier] ? PRICE_TIERS[tier].label : tier) + '</span>' +
+        '<span class="capitalize text-xs px-2 py-0.5 rounded-full font-medium ' + tierColor(tier) + '">' + (LUXURY_TIER_LABELS[tier] || (PRICE_TIERS[tier] ? PRICE_TIERS[tier].label : tier)) + '</span>' +
         '<span class="font-semibold text-gray-900 text-sm">₹' + inr(min) + '+</span></div>';
     }).join('');
 
@@ -1338,7 +1351,7 @@ function main(dest, idx) {
           '<div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
           '<!-- Counter -->' +
           '<div class="dest-ov-counter absolute top-4 left-4 z-20 pointer-events-none">' +
-          '<span class="px-3.5 py-1 rounded-full text-xs font-bold bg-black/60 backdrop-blur-md text-white border border-white/20 shadow-lg flex items-center gap-1.5">' +
+          '<span class="counter-pill px-3.5 py-1.5 rounded-full text-xs font-bold text-white shadow-xl flex items-center gap-1.5" style="color:#ffffff !important; -webkit-text-fill-color:#ffffff !important; background:rgba(11,15,25,0.85) !important; border:1.5px solid rgba(245,197,66,0.7) !important; text-shadow:0 1px 3px rgba(0,0,0,0.9) !important; box-shadow:0 4px 16px rgba(0,0,0,0.5), 0 0 12px rgba(245,197,66,0.3) !important;">' +
           // Bug 17 fix: use real5Photos.length instead of hardcoded 5
           'Photo ' + (idx + 1) + ' of ' + real5Photos.length + ' · ' + esc(dest.title) +
           '</span>' +
@@ -1357,11 +1370,11 @@ function main(dest, idx) {
       }).join('') +
       '</div>' +
       '<!-- Arrows -->' +
-      '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo">' +
-      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>' +
+      '<button type="button" id="destOvPrev" class="dest-ov-btn dest-ov-prev" aria-label="Previous photo" style="position:absolute !important; top:50% !important; transform:translateY(-50%) !important; left:1.25rem !important; z-index:35 !important; display:flex !important;">' +
+      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>' +
       '</button>' +
-      '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo">' +
-      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>' +
+      '<button type="button" id="destOvNext" class="dest-ov-btn dest-ov-next" aria-label="Next photo" style="position:absolute !important; top:50% !important; transform:translateY(-50%) !important; right:1.25rem !important; z-index:35 !important; display:flex !important;">' +
+      '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>' +
       '</button>' +
       '<!-- 5 Dots -->' +
       '<div id="destOvDots" class="dest-ov-dots" role="group" aria-label="Photo navigation">' +
@@ -1639,7 +1652,8 @@ function main(dest, idx) {
       return hotels.some(function (s) { return s.tier === key; });
     }).map(function (key) {
       const active = stayTier === key ? ' active ring-2 ring-offset-1 ring-amber-400/80 shadow-md shadow-amber-400/25' : ' opacity-75 hover:opacity-100';
-      return '<button type="button" class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '" aria-pressed="' + (stayTier === key ? 'true' : 'false') + '">' + PRICE_TIERS[key].label + '</button>';
+      const label = LUXURY_TIER_LABELS[key] || (PRICE_TIERS[key] ? PRICE_TIERS[key].label : key);
+      return '<button type="button" class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '" aria-pressed="' + (stayTier === key ? 'true' : 'false') + '">' + label + '</button>';
     }).join('');
 
     const list = hotels.filter(function (s) { return stayTier === 'all' || s.tier === stayTier; });
@@ -1655,13 +1669,14 @@ function main(dest, idx) {
         const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-amber-500/15 text-amber-300 dark:text-amber-400 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
         const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
         const googleUrl = s.url || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '')));
+        const tierName = LUXURY_TIER_LABELS[s.tier] || (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier);
         return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
           '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-amber-400">' +
           '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-amber-400 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
-          '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier) + '</span>' +
+          '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + tierName + '</span>' +
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
           '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
@@ -2909,7 +2924,7 @@ function main(dest, idx) {
           '<div class="similar-card-rating flex items-center gap-1 text-amber-400 text-xs font-bold">' +
           '<span class="similar-star">★</span><span class="similar-score">' + esc(d.rating || '4.5') + '</span>' +
           '</div>' +
-          '<p class="similar-card-price text-xs text-slate-400">Stay starts from <span class="similar-price-val font-bold text-amber-400">₹' + inr(d.minPrice || 1500) + '</span></p>' +
+          '<span class="text-[11px] font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
           '</div>' +
           '</a>';
       }).join('');
@@ -3047,8 +3062,8 @@ function main(dest, idx) {
 
     const baseName = destTitle || 'main destination';
 
-    if (isOnSite) return 'Inside complex (Walkable)';
-    if (isTownCentre || numKm === 0) return 'Under 5 mins walk in Town Centre';
+    if (isOnSite) return 'Within destination complex · Walkable';
+    if (isTownCentre || numKm === 0) return 'Immediate heritage precinct · Walkable';
     if (isBoat) return (numKm || 2) <= 2 ? '10–15 mins boat ride from ' + baseName : '20–30 mins boat ride from ' + baseName;
 
     if (numKm !== null) {
@@ -3272,7 +3287,7 @@ function main(dest, idx) {
         saveBtn.dataset.confirmPending = 'false';
         saveBtn.innerHTML = `
           <span class="save-icon">${icon('download', { size: 16 })}</span>
-          <span class="save-label font-semibold text-sm">Save Pocket Guide (Offline)</span>
+          <span class="save-label font-semibold text-sm">Save Field Dossier (Offline)</span>
         `;
         saveBtn.title = 'Download full guide, places, and images for zero-connectivity travels';
       }
@@ -3306,7 +3321,7 @@ function main(dest, idx) {
         }
       } else {
         saveBtn.disabled = true;
-        saveBtn.innerHTML = `<span class="save-icon animate-spin">${icon('refresh', { size: 16 })}</span><span class="save-label text-sm">Downloading Pocket Guide...</span>`;
+        saveBtn.innerHTML = `<span class="save-icon animate-spin">${icon('refresh', { size: 16 })}</span><span class="save-label text-sm">Downloading Field Dossier...</span>`;
         try {
           await saveDestinationOffline(dest);
           saveBtn.disabled = false;
@@ -3335,7 +3350,7 @@ function main(dest, idx) {
     const printBtn = document.getElementById('pocketPrintBtn');
     if (!modal || !body) return;
 
-    title.textContent = `${dest.title} — Offline Travel Cheat Sheet`;
+    title.textContent = `${dest.title} — Curated Heritage Field Dossier`;
     subtitle.textContent = `${dest.state || 'India'} • ${dest.overview && dest.overview.altitude ? dest.overview.altitude + 'm elevation' : (dest.type || 'Travel')}`;
 
     const isHighAltitude = dest.overview && dest.overview.altitude && dest.overview.altitude >= 2400;

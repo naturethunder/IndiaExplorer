@@ -250,6 +250,9 @@ function renderTypeButtons() {
     });
     typeWrap.appendChild(b);
   });
+  if (typeof window.updateCategoryScrollArrows === 'function') {
+    window.updateCategoryScrollArrows();
+  }
 }
 
 function syncFilterActive() {
@@ -270,6 +273,9 @@ function syncFilterActive() {
       }
     }
   });
+  if (typeof window.updateCategoryScrollArrows === 'function') {
+    window.updateCategoryScrollArrows();
+  }
 }
 
 // ─── Horizontal Category Scroller with Arrow Controls & Drag ───
@@ -352,8 +358,12 @@ function syncFilterActive() {
     }
   }, true);
 
-  // Initial update
-  setTimeout(updateArrows, 100);
+  // Initial update across rendering lifecycle
+  window.updateCategoryScrollArrows = updateArrows;
+  updateArrows();
+  requestAnimationFrame(updateArrows);
+  setTimeout(updateArrows, 120);
+  setTimeout(updateArrows, 500);
 })();
 
 

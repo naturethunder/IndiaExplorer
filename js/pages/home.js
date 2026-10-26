@@ -271,15 +271,15 @@ if (!isFullIndexLoaded) {
   if (!el) return;
   const cats = [
     { type: '', ic: 'compass', tint: 'tint-teal', label: 'All Destinations', countKey: 'all' },
-    { type: 'recently_updated', ic: 'sparkles', tint: 'tint-amber', label: 'Recently Updated', badge: 'new', countKey: 'recently_updated' },
-    { type: 'hill_station', ic: 'mountain', tint: 'tint-green', label: 'Hill Stations', badge: 'popular' },
-    { type: 'beach', ic: 'waves', tint: 'tint-blue', label: 'Beaches', badge: 'popular' },
-    { type: 'heritage', ic: 'landmark', tint: 'tint-orange', label: 'Heritage', badge: 'popular' },
+    { type: 'recently_updated', ic: 'sparkles', tint: 'tint-amber', label: 'Recently Updated', countKey: 'recently_updated' },
+    { type: 'hill_station', ic: 'mountain', tint: 'tint-green', label: 'Hill Stations' },
+    { type: 'beach', ic: 'waves', tint: 'tint-blue', label: 'Beaches' },
+    { type: 'heritage', ic: 'landmark', tint: 'tint-orange', label: 'Heritage' },
     { type: 'wildlife', ic: 'paw-print', tint: 'tint-amber', label: 'Wildlife' },
-    { type: 'spiritual', ic: 'temple', tint: 'tint-rose', label: 'Spiritual', badge: 'popular' },
+    { type: 'spiritual', ic: 'temple', tint: 'tint-rose', label: 'Spiritual' },
     { type: 'adventure', ic: 'tent', tint: 'tint-purple', label: 'Adventure' },
-    { type: 'road_trips', ic: 'car', tint: 'tint-blue', label: 'Road Trips', badge: 'new', countKey: 'road_trips' },
-    { type: 'camping', ic: 'tent', tint: 'tint-slate', label: 'Camping', badge: 'new', countKey: 'camping' },
+    { type: 'road_trips', ic: 'car', tint: 'tint-blue', label: 'Road Trips', countKey: 'road_trips' },
+    { type: 'camping', ic: 'tent', tint: 'tint-slate', label: 'Camping', countKey: 'camping' },
     { type: 'forts', ic: 'gem', tint: 'tint-amber', label: 'Forts & Palaces', countKey: 'forts' },
     { type: 'ecotourism', ic: 'flower', tint: 'tint-green', label: 'Ecotourism', countKey: 'ecotourism' }
   ];
@@ -399,7 +399,7 @@ if (!isFullIndexLoaded) {
         '<div class="font-semibold text-gray-900 text-sm">' + esc(d.title) + '</div>' +
         '<div class="text-xs text-gray-500 truncate">' + esc(d.state) + ' · ' + esc((d.short || '').slice(0, 50)) + '...</div>' +
         '</div>' +
-        '<span class="text-xs text-gray-500 shrink-0">Stay starts from ₹' + inr(d.minPrice || 0) + '</span>' +
+        '<span class="text-xs font-semibold text-emerald-700 dark:text-emerald-400 shrink-0 flex items-center gap-1">Explore <svg class="inline-block w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
         '</a>';
     }).join('');
     items += '<a href="destinations.html" id="ac-opt-' + (optId++) + '" role="option" class="autocomplete-item justify-center text-sm font-semibold text-primary hover:bg-emerald-50 transition-colors">View all destinations →</a>';
@@ -750,6 +750,7 @@ function shuffleArray(arr) {
   function updateShowcase(immediate) {
     const isMobile = window.innerWidth < 640;
     const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
+    const isSmallScreen = window.innerWidth < 1024;
     const total = cards.length;
 
     cards.forEach(function (card, i) {
@@ -761,6 +762,7 @@ function shuffleArray(arr) {
       const sign = diff >= 0 ? 1 : -1;
       let x = 0;
       let y = 0;
+      let z = 0;
       let scale = 1;
       let rotateY = 0;
       let rotateZ = 0;
@@ -771,37 +773,41 @@ function shuffleArray(arr) {
       if (diff === 0) {
         x = 0;
         y = 0;
+        z = isMobile ? 120 : (isTablet ? 90 : 40);
         scale = 1.0;
         rotateY = 0;
         rotateZ = 0;
         opacity = 1;
-        zIndex = 16;
+        zIndex = 50;
         card.classList.add('is-active');
       } else if (absDiff === 1) {
         const spacing = isMobile ? 120 : (isTablet ? 180 : 220);
         x = sign * spacing;
         y = isMobile ? 6 : 8;
+        z = isMobile ? -120 : (isTablet ? -80 : -30);
         scale = isMobile ? 0.84 : 0.88;
         rotateY = -sign * (isMobile ? 12 : 16);
         rotateZ = sign * (isMobile ? 2.5 : 3.5);
         opacity = isMobile ? 0.60 : 0.85;
-        zIndex = 10;
+        zIndex = isSmallScreen ? 10 : 12;
         card.classList.remove('is-active');
       } else if (absDiff === 2) {
         const spacing = isMobile ? 240 : (isTablet ? 330 : 410);
         x = sign * spacing;
         y = isMobile ? 14 : 22;
+        z = isMobile ? -220 : (isTablet ? -160 : -70);
         scale = isMobile ? 0.70 : 0.76;
         rotateY = -sign * (isMobile ? 18 : 25);
         rotateZ = sign * (isMobile ? 5 : 7);
         opacity = isMobile ? 0 : 0.55;
-        zIndex = 6;
+        zIndex = isSmallScreen ? 5 : 6;
         pointerEvents = isMobile ? 'none' : 'auto';
         card.classList.remove('is-active');
       } else if (absDiff === 3) {
         const spacing = isTablet ? 450 : 570;
         x = sign * spacing;
         y = 34;
+        z = isSmallScreen ? -320 : -240;
         scale = 0.64;
         rotateY = -sign * 32;
         rotateZ = sign * 10;
@@ -812,6 +818,7 @@ function shuffleArray(arr) {
       } else {
         x = sign * 700;
         y = 40;
+        z = -400;
         scale = 0.5;
         rotateY = -sign * 35;
         rotateZ = sign * 12;
@@ -821,7 +828,7 @@ function shuffleArray(arr) {
         card.classList.remove('is-active');
       }
 
-      card.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) scale(' + scale + ') rotateY(' + rotateY + 'deg) rotateZ(' + rotateZ + 'deg)';
+      card.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) translateZ(' + z + 'px) scale(' + scale + ') rotateY(' + rotateY + 'deg) rotateZ(' + rotateZ + 'deg)';
       card.style.opacity = opacity;
       card.style.zIndex = zIndex;
       card.style.pointerEvents = pointerEvents;
@@ -1029,7 +1036,9 @@ function wireCarousel(row, prevBtn, nextBtn) {
   // 1. Hero Intro Sequence (Page Load Timeline)
   const heroTL = window.gsap.timeline({ delay: 0.05, defaults: { ease: 'power2.out' } });
 
-  if (document.querySelector('.hero-eyebrow-pill')) {
+  if (document.querySelector('.hero-luxury-eyebrow')) {
+    heroTL.from('.hero-luxury-eyebrow', { opacity: 0, y: -14, duration: 0.5 });
+  } else if (document.querySelector('.hero-eyebrow-pill')) {
     heroTL.from('.hero-eyebrow-pill', { opacity: 0, y: -12, duration: 0.45 });
   }
 

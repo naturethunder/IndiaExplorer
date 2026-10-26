@@ -7,7 +7,7 @@ trigger: always_on
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-10-21 (Phase 116 rev-69).** Monument contamination rule (Rule 15) and Landmark-Specific Precision rule (Rule 16) strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Tier-1 Pexels/Unsplash CDNs. Wikimedia Commons direct hotlinks returning HTTP 429 rate limits are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 66k+ URL repository index.
+> **Last updated: 2026-10-27 (Phase 124 rev-78).** 100,000% Ultra-Luxury Editorial Standards, 3D Tilted/Fan Stacking Card Preservation, Monument contamination rule (Rule 15), Landmark-Specific Precision rule (Rule 16), and Zero Foreign Stock / Strict Geofencing rules strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Tier-1 Pexels/Unsplash CDNs. Wikimedia Commons direct hotlinks returning HTTP 429 rate limits are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 67,952+ URL repository index (0 collisions across all 2,396 destinations).
 
 ---
 
@@ -362,5 +362,23 @@ Every destination and place card asset across ExploreDesh must load rapidly with
    - Grid cards dynamically request `w=600` (`&auto=compress&cs=tinysrgb&w=600` or `&auto=format&fit=crop&w=600&q=80`) yielding ~40KB per card.
    - Slashes card payloads by 98% compared to raw original downloads, ensuring instantaneous page loads across mobile 3G/4G/5G connections.
 
+---
 
+## Rule 22 — Zero-Budget Price Clutter & High-Contrast Overlay Badges (Added Phase 123)
 
+To maintain an ultra-luxury editorial standard, destination presentation across all surfaces must adhere to prestigious hospitality aesthetics:
+
+1. **Zero Backpacker Rate Tags**:
+   - Destination cards across all surfaces (catalogue, search autocomplete, AI finder, similar destinations) must never display cheap price tags (Stay starts from ₹...).
+   - Cards must feature the Imperial Gold **✦ Curated Sanctuary** badge and **Explore Sanctuary →** editorial call-to-action with hover displacement.
+2. **Elevated Hospitality Taxonomy**:
+   - Crude stay tiers (Cheapest, Budget, Good, Better, Best) are strictly replaced with luxury categories:
+     Heritage Homestays, Boutique Retreats, Sanctuary Lodges, Signature Havelis, Grand Palaces, Royal Villas & Suites, Imperial Estates.
+3. **Context-Aware Proximity & Walk Icons**:
+   - Nearby attraction cards within fort complexes or city centers must never display repetitive robotic strings like Under 5 mins walk in Town Centre.
+   - Use refined contextual labels (Within destination complex · Walkable, Immediate heritage precinct · Walkable) paired with vector pedestrian walk icons (SVG_WALK_SM), never vehicle icons.
+4. **Permanent High-Contrast Scrim Badges**:
+   - All text overlaying scenic photos (e.g., .dest-ov-counter, .counter-pill, gallery-category-pill) must maintain high-contrast brilliant white text (#FFFFFF !important) with text-shadow and gold trim (gba(245, 197, 66, 0.7)).
+   - Must be explicitly protected from light-mode dark text inversion rules.
+5. **Carousel Navigation Arrow Integrity**:
+   - Carousel navigation buttons must retain position: absolute !important (never relative) and maintain minimum 44×44px touch targets with high-contrast chevron icons.

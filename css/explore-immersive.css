@@ -34,12 +34,20 @@ body.explore-immersive {
 
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   color: var(--exp-text-main);
   background-color: var(--exp-ink-black);
   font-family: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body.explore-immersive *,
@@ -60,10 +68,16 @@ body.explore-immersive *::after {
   }
 }
 
+@media (max-width: 480px) {
+  .explore-shell {
+    width: min(100% - 20px, 1440px);
+  }
+}
+
 /* Background layers */
 .explore-immersive-bg {
   position: fixed;
-  inset: -10% -5%;
+  inset: 0;
   z-index: 0;
   background: url('../images/destinations-immersive-bg.webp') center 35% / cover no-repeat;
   filter: saturate(0.85) contrast(1.1) brightness(0.75);
@@ -126,7 +140,7 @@ body.explore-immersive :focus-visible {
 
 .explore-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(360px, 0.8fr);
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
   gap: clamp(40px, 5vw, 80px);
   align-items: center;
 }
@@ -179,13 +193,14 @@ body.explore-immersive :focus-visible {
 
 .explore-hero-display {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+  font-size: clamp(1.85rem, 5.2vw, 4.8rem);
   font-weight: 700;
-  line-height: 1.04;
+  line-height: 1.08;
   letter-spacing: -0.035em;
   margin: 0 0 24px;
   color: var(--exp-text-main);
   text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .explore-hero-display .hero-line-1 {
@@ -272,7 +287,7 @@ body.explore-immersive :focus-visible {
   border-radius: 24px;
   background: linear-gradient(145deg, rgba(16, 24, 38, 0.88), rgba(9, 14, 22, 0.94));
   border: 1px solid rgba(245, 197, 66, 0.22);
-  box-shadow: 
+  box-shadow:
     0 30px 70px -15px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
@@ -283,7 +298,7 @@ body.explore-immersive :focus-visible {
 
 .hero-quick-card:hover {
   border-color: rgba(245, 197, 66, 0.38);
-  box-shadow: 
+  box-shadow:
     0 36px 80px -15px rgba(0, 0, 0, 0.65),
     0 0 28px rgba(245, 197, 66, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
@@ -699,66 +714,100 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  min-height: 36px;
+  z-index: 25;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(11, 15, 25, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(245, 197, 66, 0.65);
+  background: rgba(11, 15, 25, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   color: #F5C542;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55), 0 0 14px rgba(245, 197, 66, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.category-scroll-arrow svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  pointer-events: none;
+  transition: transform 0.2s ease;
 }
 
 .category-scroll-arrow::after {
   content: '';
   position: absolute;
-  inset: -5px;
+  inset: -4px;
 }
 
 .category-scroll-arrow:hover {
   background: rgba(20, 28, 44, 0.98);
-  border-color: rgba(245, 197, 66, 0.6);
-  transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 16px rgba(245, 197, 66, 0.25);
+  border-color: #F5C542;
+  color: #FFFFFF;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(245, 197, 66, 0.5);
+}
+
+.category-scroll-arrow:active {
+  transform: translateY(-50%) scale(0.95);
 }
 
 .category-scroll-arrow.left {
-  left: -12px;
+  left: -14px;
 }
 
 .category-scroll-arrow.right {
-  right: -12px;
+  right: -14px;
+}
+
+@media (max-width: 768px) {
+  .category-scroll-arrow.left {
+    left: 4px;
+  }
+
+  .category-scroll-arrow.right {
+    right: 4px;
+  }
 }
 
 .category-scroll-arrow.hidden {
-  opacity: 0;
-  pointer-events: none;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden;
   transform: translateY(-50%) scale(0.85);
 }
 
 /* Light Mode scroll arrows */
 html[data-theme="light"] .category-scroll-arrow {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border: 1px solid rgba(203, 213, 225, 0.9) !important;
-  color: #B45309 !important;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1.5px solid rgba(217, 119, 6, 0.5) !important;
+  color: #92400E !important;
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.8) !important;
+}
+
+html[data-theme="light"] .category-scroll-arrow svg {
+  stroke: #92400E !important;
 }
 
 html[data-theme="light"] .category-scroll-arrow:hover {
-  background: var(--white) !important;
-  border-color: #D97706 !important;
-  color: #92400E !important;
-  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.2) !important;
+  background: #92400E !important;
+  border-color: #92400E !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(180, 83, 9, 0.35) !important;
+}
+
+html[data-theme="light"] .category-scroll-arrow:hover svg {
+  stroke: #FFFFFF !important;
 }
 
 .category-pill-btn {
@@ -1542,6 +1591,54 @@ html[data-theme="light"] select option {
   letter-spacing: -0.02em;
 }
 
+.dest-curated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F5C542;
+}
+
+.dest-curated-badge .curated-sparkle-icon {
+  width: 13px;
+  height: 13px;
+  stroke: #F5C542;
+  flex-shrink: 0;
+}
+
+.dest-explore-cta {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--exp-text-subtle);
+  transition: color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dest-card-link:hover .dest-explore-cta,
+.dest-card-item:hover .dest-explore-cta {
+  color: #F5C542;
+  transform: translateX(4px);
+}
+
+html[data-theme="light"] body.explore-immersive .dest-curated-badge {
+  color: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .dest-curated-badge .curated-sparkle-icon {
+  stroke: #B45309;
+}
+
+html[data-theme="light"] body.explore-immersive .dest-card-link:hover .dest-explore-cta,
+html[data-theme="light"] body.explore-immersive .dest-card-item:hover .dest-explore-cta {
+  color: #B45309;
+}
+
 /* ==========================================================================
    Load More Button
    ========================================================================== */
@@ -1704,6 +1801,38 @@ html[data-theme="light"] .load-more-badge,
 }
 
 @media (max-width: 640px) {
+  .explore-hero-display {
+    font-size: clamp(1.65rem, 7.2vw, 2.5rem);
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+
+  .explore-hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .explore-hero-quickstart {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-quick-card {
+    max-width: 100%;
+    padding: 20px 16px 18px;
+    border-radius: 18px;
+  }
+
+  .hero-quick-tags {
+    gap: 6px;
+  }
+
+  .quick-tag-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
   .destinations-master-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -2304,7 +2433,7 @@ html[data-theme="light"] body.explore-immersive .hero-quick-card,
 html[data-theme="light"] .hero-quick-card {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(250, 248, 244, 0.96)) !important;
   border: 1px solid rgba(180, 83, 9, 0.20) !important;
-  box-shadow: 
+  box-shadow:
     0 24px 60px -15px rgba(180, 83, 9, 0.12),
     0 10px 30px -8px rgba(15, 23, 42, 0.06),
     0 0 0 1px rgba(255, 255, 255, 0.8),
@@ -2316,7 +2445,7 @@ html[data-theme="light"] .hero-quick-card {
 html[data-theme="light"] body.explore-immersive .hero-quick-card:hover,
 html[data-theme="light"] .hero-quick-card:hover {
   border-color: rgba(180, 83, 9, 0.35) !important;
-  box-shadow: 
+  box-shadow:
     0 30px 70px -15px rgba(180, 83, 9, 0.18),
     0 14px 36px -8px rgba(15, 23, 42, 0.08),
     0 0 24px rgba(217, 119, 6, 0.12),
@@ -2542,6 +2671,7 @@ summary.state-directory-trigger:hover {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -2795,16 +2925,18 @@ html[data-theme="light"] body.explore-immersive .state-atlas-pill:hover .state-c
   summary.state-directory-trigger {
     padding: 14px 16px;
   }
+
   .trigger-subtitle {
     display: none;
   }
+
   .state-atlas-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
+
   .state-atlas-pill {
     padding: 8px 12px;
     font-size: 12px;
   }
 }
-
