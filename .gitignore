@@ -35,3 +35,8 @@ scratch/
 __pycache__/
 *.pyc
 
+# Agent runtime artifacts
+.agents/teamwork/
+.taste-skill/
+
+

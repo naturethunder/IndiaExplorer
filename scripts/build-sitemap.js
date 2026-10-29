@@ -107,7 +107,7 @@ const indexMtime = fs.existsSync(path.join(DEST_DIR, 'index.json'))
 // State landings
 idx.meta.states.forEach(state => {
   const destinationCount = idx.destinations.filter(d => d.state === state).length;
-  if (destinationCount >= 3) {
+  if (destinationCount >= 1) {
     stateEntries.push(urlEntry('destinations?state=' + encodeURIComponent(state), '0.8', 'weekly', [], indexMtime));
   }
 });

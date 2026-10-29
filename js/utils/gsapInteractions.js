@@ -72,18 +72,14 @@ export function attachButtonGSAP(btn) {
   });
 
   // Mouse move: subtle magnetic cursor pull (desktop with fine pointer only)
+  // gsap.quickTo() reuses a single tween instead of creating new ones per mousemove
   if (isFinePointer()) {
+    const xTo = gsap.quickTo(btn, "x", { duration: 0.2, ease: "power1.out" });
+    const yTo = gsap.quickTo(btn, "y", { duration: 0.2, ease: "power1.out" });
     btn.addEventListener('mousemove', (e) => {
       const rect = btn.getBoundingClientRect();
-      const x = (e.clientX - rect.left - rect.width / 2) * 0.12;
-      const y = (e.clientY - rect.top - rect.height / 2) * 0.12;
-      gsap.to(btn, {
-        x: x,
-        y: y - 2.5,
-        duration: 0.2,
-        ease: 'power1.out',
-        overwrite: 'auto'
-      });
+      xTo((e.clientX - rect.left - rect.width / 2) * 0.12);
+      yTo((e.clientY - rect.top - rect.height / 2) * 0.12 - 2.5);
     });
   }
 
@@ -144,30 +140,28 @@ export function attachCardGSAP(card) {
   const gsap = getGSAP();
   if (!gsap || prefersReducedMotion()) return;
 
+  // gsap.quickTo() for rotateX/rotateY — reuses single tween on high-frequency mousemove
   if (isFinePointer()) {
+    gsap.set(card, { transformPerspective: 1000 });
+    const rxTo = gsap.quickTo(card, "rotateX", { duration: 0.25, ease: "power1.out" });
+    const ryTo = gsap.quickTo(card, "rotateY", { duration: 0.25, ease: "power1.out" });
+
+    card.addEventListener('mouseenter', () => {
+      gsap.to(card, { scale: 1.02, y: -6, duration: 0.25, ease: 'power1.out', overwrite: 'auto' });
+    });
+
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      const rotateY = ((x / rect.width) - 0.5) * 10;
-      const rotateX = -((y / rect.height) - 0.5) * 10;
-
-      gsap.to(card, {
-        transformPerspective: 1000,
-        rotateX: rotateX,
-        rotateY: rotateY,
-        scale: 1.02,
-        y: -6,
-        duration: 0.25,
-        ease: 'power1.out',
-        overwrite: 'auto'
-      });
+      ryTo(((x / rect.width) - 0.5) * 10);
+      rxTo(-((y / rect.height) - 0.5) * 10);
     });
 
     card.addEventListener('mouseleave', () => {
+      rxTo(0);
+      ryTo(0);
       gsap.to(card, {
-        rotateX: 0,
-        rotateY: 0,
         scale: 1,
         y: 0,
         duration: 0.48,

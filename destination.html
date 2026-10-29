@@ -103,7 +103,7 @@
       <line x1="8" y1="2" x2="8" y2="18" />
       <line x1="16" y1="6" x2="16" y2="22" />
     </svg>
-    <h2 class="text-2xl font-bold text-white">Destination not found</h2>
+    <p class="text-2xl font-bold text-white" role="heading" aria-level="2">Destination not found</p>
     <p class="text-gray-400">We don't have a page for this destination yet.</p>
     <a href="/destinations" class="btn btn-primary">Browse all destinations</a>
   </div>
@@ -125,6 +125,8 @@
               <li><a href="/" class="hover:text-amber-300 transition-colors">Home</a></li>
               <li aria-hidden="true" class="text-white/40">/</li>
               <li><a href="/destinations" class="hover:text-amber-300 transition-colors">Destinations</a></li>
+              <li id="crumbStateSep" aria-hidden="true" class="text-white/40" style="display:none">/</li>
+              <li id="crumbStateItem" style="display:none"><a id="crumbStateLink" href="/destinations" class="hover:text-amber-300 transition-colors"></a></li>
               <li aria-hidden="true" class="text-white/40">/</li>
               <li><span id="crumbName" class="text-amber-300 font-semibold" aria-current="page">...</span></li>
             </ol>

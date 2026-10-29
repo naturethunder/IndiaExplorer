@@ -11,13 +11,13 @@
     content="trip planner, trip planner India, Indian travel planner, destination finder, travel planner India" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="no-referrer" />
-  <meta name="theme-color" content="#080A0F" />
+  <meta name="theme-color" content="#FAF9F6" />
   <!-- Fast-path zero-FOUC theme resolution -->
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('exploredesh_theme');
-        var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
         var meta = document.querySelector('meta[name="theme-color"]');
@@ -187,7 +187,7 @@
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-white mb-2">Tell me what you're looking for</h3>
+        <h2 class="text-xl font-bold text-white mb-2">Tell me what you're looking for</h2>
         <p class="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">Try one of the example chips above, or
           describe your trip in your own words — the more detail (budget, month, vibe, region), the sharper the match.
         </p>
@@ -226,8 +226,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "@id": "https://exploredesh.com/ai-finder.html#webapp",
-    "url": "https://exploredesh.com/ai-finder.html",
+    "@id": "https://exploredesh.com/ai-finder#webapp",
+    "url": "https://exploredesh.com/ai-finder",
     "name": "Trip Planner — ExploreDesh",
     "description": "Smart travel concierge to describe and find your ideal vacation in India.",
     "applicationCategory": "TravelApplication",

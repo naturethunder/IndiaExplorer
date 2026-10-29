@@ -7,7 +7,7 @@ trigger: always_on
 These rules are **mandatory** for every destination page. No exceptions.
 They stack on top of `ui-ux-pro-max` skill rules.
 
-> **Last updated: 2026-10-27 (Phase 124 rev-78).** 100,000% Ultra-Luxury Editorial Standards, 3D Tilted/Fan Stacking Card Preservation, Monument contamination rule (Rule 15), Landmark-Specific Precision rule (Rule 16), and Zero Foreign Stock / Strict Geofencing rules strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Tier-1 Pexels/Unsplash CDNs. Wikimedia Commons direct hotlinks returning HTTP 429 rate limits are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 67,952+ URL repository index (0 collisions across all 2,396 destinations).
+> **Last updated: 2026-10-30 (Phase 126 rev-80).** 100,000% Ultra-Luxury Editorial Standards, 3D Tilted/Fan Stacking Card Preservation, Monument contamination rule (Rule 15), Landmark-Specific Precision rule (Rule 16), and Zero Foreign Stock / Strict Geofencing rules strictly enforced. Sourcing hierarchy requires **HD-First and Authentic-Image-First** from Tier-1 Pexels/Unsplash CDNs. Wikimedia Commons direct hotlinks returning HTTP 429 rate limits are banned. Pixabay `/get/` session links are strictly banned. **Cross-destination zero-collision is enforced** across the entire 67,952+ URL repository index (0 collisions across all 2,396 destinations).
 
 ---
 

@@ -110,7 +110,7 @@ let totalSitemapUrls = 0;
   const count = (content.match(/<loc>/g) || []).length;
   totalSitemapUrls += count;
 });
-assert(totalSitemapUrls === 2453, `Total sitemapped URLs equals 2,453 (found: ${totalSitemapUrls})`);
+assert(totalSitemapUrls === 2455, `Total sitemapped URLs equals 2,455 (found: ${totalSitemapUrls})`);
 
 // 5. Robots.txt Directives
 const robotsPath = path.join(ROOT, 'robots.txt');

@@ -2347,7 +2347,8 @@ body.glass-immersive .map-card-all {
 
 /* ─── Focus visible ring — global ─────────────────────────────── */
 body.glass-immersive *:focus-visible {
-  outline: 2px solid #4ade80 !important;
+  outline: 2px solid var(--primary, #F5C542) !important;
+  outline-offset: 2px !important;
   outline-offset: 3px !important;
 }
 
@@ -2805,10 +2806,10 @@ html[data-theme="light"] .nav-glass .nav-link.active {
 /* Navbar Theme Toggle Button & Offline Button in Light Mode: Obsidian Smoked Glass */
 html[data-theme="light"] .nav-glass .theme-toggle-btn,
 html[data-theme="light"] body.glass-immersive .nav-glass .theme-toggle-btn {
-  border-color: rgba(245, 197, 66, 0.35) !important;
-  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.45) !important;
+  background: rgba(20, 26, 38, 0.82) !important;
   color: #F5C542 !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35), 0 0 12px rgba(245, 197, 66, 0.15) !important;
 }
 
 html[data-theme="light"] .nav-glass .theme-toggle-btn:hover,
@@ -3246,7 +3247,7 @@ body.glass-immersive .season-card-content {
 body.glass-immersive .season-card .season-card-title,
 html[data-theme="light"] body.glass-immersive .season-card .season-card-title,
 html[data-theme="dark"] body.glass-immersive .season-card .season-card-title {
-  font-family: var(--font-heading), 'Outfit', -apple-system, sans-serif !important;
+  font-family: var(--font-heading, 'Playfair Display'), Georgia, serif !important;
   font-size: clamp(1.1rem, 1.35vw, 1.3rem) !important;
   font-weight: 700 !important;
   line-height: 1.25 !important;
@@ -5022,6 +5023,44 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   position: relative;
   z-index: 2;
   overflow-x: clip;
+  background:
+    linear-gradient(180deg, rgba(8, 12, 18, 0.70) 0%, rgba(8, 12, 18, 0.82) 40%, rgba(8, 12, 18, 0.95) 100%),
+    url('../images/destinations-immersive-bg.webp') center 28% / cover no-repeat;
+}
+
+.popular-showcase-section .monthly-header-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.popular-showcase-section .section-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85) !important;
+}
+.popular-showcase-section .monthly-header-right .btn-outline {
+  background: rgba(45, 38, 28, 0.70) !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+  color: #E8D8B8 !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-radius: 9999px !important;
+  padding: 0.55rem 1.35rem !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+.popular-showcase-section .monthly-header-right .btn-outline:hover {
+  background: rgba(65, 54, 38, 0.90) !important;
+  border-color: rgba(245, 197, 66, 0.8) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 16px rgba(245, 197, 66, 0.3) !important;
+}
+
+.popular-showcase-section .monthly-header-right .btn-outline svg {
+  stroke: currentColor;
 }
 
 /* ─── Outer wrapper: flex column for stage+arrows | then dots below ─── */
@@ -5091,8 +5130,8 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
 }
 
 .popular-3d-card.is-active {
-  border-color: rgba(229, 192, 123, 0.65);
-  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.70), 0 0 32px rgba(229, 192, 123, 0.25);
+  border-color: rgba(229, 192, 123, 0.70);
+  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.75), 0 0 28px rgba(229, 192, 123, 0.25);
   cursor: default;
   z-index: 25 !important;
 }
@@ -5133,7 +5172,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.05) 0%,
       rgba(0, 0, 0, 0.25) 35%,
       rgba(8, 10, 15, 0.85) 70%,
       rgba(8, 10, 15, 0.98) 100%);
@@ -5255,30 +5294,31 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
   width: 100%;
   padding: 10px 20px;
   border-radius: 9999px;
-  border: 1.5px solid rgba(245, 197, 66, 0.75);
-  background: linear-gradient(135deg, rgba(20, 26, 38, 0.90) 0%, rgba(11, 15, 25, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(36, 42, 54, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  color: #F5C542 !important;
+  color: #FFFFFF !important;
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 0 0 14px rgba(245, 197, 66, 0.25);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
 }
 
 .popular-3d-explore:hover {
-  background: linear-gradient(135deg, #FFF3C4 0%, #F5C542 50%, #D97706 100%);
-  border-color: #FFF3C4;
-  color: #080A0F !important;
+  background: rgba(52, 60, 76, 0.95);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #FFFFFF !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(245, 197, 66, 0.6);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
 }
 
 .popular-3d-explore svg {
-  stroke: currentColor;
+  stroke: #FFFFFF !important;
+  stroke-width: 2 !important;
   transition: transform 0.25s ease;
 }
 
@@ -5286,61 +5326,61 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
   transform: translateX(4px);
 }
 
-/* ─── Circular Glass Nav Arrows — Radiant 24K Imperial Gold Framing Deck ─── */
+/* ─── Circular Glass Nav Arrows — Figma 'Dekho Apna Desh' Obsidian Glass Design ─── */
 .popular-3d-arrow {
   position: absolute !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
   z-index: 45;
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(254, 243, 199, 0.95) 0%, rgba(245, 197, 66, 0.92) 50%, rgba(217, 119, 6, 0.92) 100%) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 2px solid #FFFBEB !important;
-  color: #080A0F !important;
+  background: rgba(18, 24, 38, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #FFFFFF !important;
   cursor: pointer;
   flex-shrink: 0;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.75), 0 0 24px rgba(245, 197, 66, 0.65) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.60) !important;
 }
 
 .popular-3d-arrow svg {
-  width: 24px;
-  height: 24px;
-  stroke: #080A0F !important;
-  stroke-width: 2.8 !important;
+  width: 20px;
+  height: 20px;
+  stroke: #FFFFFF !important;
+  stroke-width: 2.2 !important;
   pointer-events: none;
-  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
 }
 
 .popular-3d-arrow:hover {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFF3C4 40%, #F5C542 100%) !important;
-  border-color: #FFFFFF !important;
-  color: #000000 !important;
-  transform: translateY(-50%) scale(1.14) !important;
-  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.85), 0 0 36px rgba(245, 197, 66, 0.95) !important;
+  background: rgba(30, 38, 54, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-50%) scale(1.08) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), 0 0 16px rgba(255, 255, 255, 0.15) !important;
 }
 
 .popular-3d-arrow:hover svg {
-  stroke: #000000 !important;
+  stroke: #FFFFFF !important;
 }
 
 .popular-3d-arrow:active {
   transform: translateY(-50%) scale(0.94) !important;
 }
 
-/* Position arrows comfortably framing the entire 3D deck without card text overlap */
+/* Position arrows: in the Figma design, arrows float symmetrically framing the cards */
 .popular-3d-arrow-prev {
-  left: clamp(16px, calc(50% - 590px), calc(50% - 490px));
+  left: clamp(16px, calc(50% - 305px), calc(50% - 275px));
 }
 
 .popular-3d-arrow-next {
-  right: clamp(16px, calc(50% - 590px), calc(50% - 490px));
+  right: clamp(16px, calc(50% - 305px), calc(50% - 275px));
 }
 
 /* ─── Elongated Pill Pagination Indicators ─── */
@@ -5373,27 +5413,27 @@ html[data-theme="light"] body.glass-immersive .popular-3d-card:not(.is-active):h
 
 /* ─── Light Mode Overrides ─── */
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow {
-  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #F59E0B 100%) !important;
-  border: 2px solid #D97706 !important;
-  color: #78350F !important;
-  box-shadow: 0 8px 24px rgba(180, 83, 9, 0.28), 0 0 16px rgba(245, 158, 11, 0.35) !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(15, 23, 42, 0.18) !important;
+  color: #0F172A !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow svg {
-  stroke: #78350F !important;
-  stroke-width: 2.8 !important;
+  stroke: #0F172A !important;
+  stroke-width: 2.2 !important;
   filter: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow:hover {
-  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
-  border-color: #92400E !important;
-  color: #FFFFFF !important;
-  box-shadow: 0 10px 32px rgba(180, 83, 9, 0.45) !important;
+  background: #FFFFFF !important;
+  border-color: rgba(15, 23, 42, 0.35) !important;
+  color: #000000 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-arrow:hover svg {
-  stroke: #FFFFFF !important;
+  stroke: #000000 !important;
 }
 
 html[data-theme="light"] body.glass-immersive .popular-3d-dot.is-active {
@@ -5417,6 +5457,14 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
 
   .popular-3d-card:not(.is-active) {
     z-index: 5 !important;
+  }
+
+  .popular-3d-arrow-prev {
+    left: clamp(10px, calc(50% - 240px), 24px) !important;
+  }
+
+  .popular-3d-arrow-next {
+    right: clamp(10px, calc(50% - 240px), 24px) !important;
   }
 }
 
@@ -5741,4 +5789,73 @@ html[data-theme="light"] .state-link:hover {
   border: 1px solid rgba(245, 197, 66, 0.45) !important;
   color: #F5C542 !important;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), 0 0 16px rgba(245, 197, 66, 0.35) !important;
+}
+/* ─── 5. EDITORIAL REGIONAL CORRIDORS & FAQ ACCORDION ────────── */
+.editorial-travel-section {
+  position: relative;
+  z-index: 10;
+}
+
+.editorial-card {
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(20px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.editorial-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(245, 197, 66, 0.5) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 197, 66, 0.2) !important;
+}
+
+html[data-theme="light"] .editorial-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-theme="light"] .editorial-card:hover {
+  border-color: rgba(217, 119, 6, 0.45) !important;
+  box-shadow: 0 16px 36px rgba(180, 83, 9, 0.12) !important;
+}
+
+.faq-item {
+  transition: all 0.25s ease !important;
+}
+
+.faq-item:hover,
+.faq-item.is-open {
+  border-color: rgba(245, 197, 66, 0.35) !important;
+  background: rgba(15, 23, 42, 0.75) !important;
+}
+
+.faq-trigger {
+  cursor: pointer !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.faq-trigger:focus-visible {
+  outline: 2px solid #F5C542 !important;
+  outline-offset: -2px !important;
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg) !important;
+  color: #F5C542 !important;
+}
+
+html[data-theme="light"] .faq-item {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html[data-theme="light"] .faq-item:hover,
+html[data-theme="light"] .faq-item.is-open {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(217, 119, 6, 0.35) !important;
 }

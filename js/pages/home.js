@@ -705,7 +705,8 @@ function shuffleArray(arr) {
     const rawImage = cardImg(d);
     const image = cardThumb(d, 640) || rawImage;
     const altText = (d.heroImage && d.heroImage.alt) || d.title;
-    const badgeLabel = d.badge || 'Popular';
+    let badgeLabel = d.badge || 'Must Visit';
+    if (!badgeLabel || /popular/i.test(badgeLabel)) badgeLabel = 'Must Visit';
 
     return (
       '<div class="popular-3d-card" data-no-gsap data-index="' + i + '" data-slug="' + esc(d.slug) + '" role="group" aria-label="' + esc(d.title) + ', ' + esc(d.state) + '" tabindex="0">' +
@@ -781,47 +782,58 @@ function shuffleArray(arr) {
         zIndex = 50;
         card.classList.add('is-active');
       } else if (absDiff === 1) {
-        const spacing = isMobile ? 120 : (isTablet ? 180 : 220);
+        const spacing = isMobile ? 115 : (isTablet ? 170 : 205);
         x = sign * spacing;
         y = isMobile ? 6 : 8;
         z = isMobile ? -120 : (isTablet ? -80 : -30);
         scale = isMobile ? 0.84 : 0.88;
         rotateY = -sign * (isMobile ? 12 : 16);
         rotateZ = sign * (isMobile ? 2.5 : 3.5);
-        opacity = isMobile ? 0.60 : 0.85;
-        zIndex = isSmallScreen ? 10 : 12;
+        opacity = isMobile ? 0.60 : 0.90;
+        zIndex = isSmallScreen ? 10 : 20;
         card.classList.remove('is-active');
       } else if (absDiff === 2) {
-        const spacing = isMobile ? 240 : (isTablet ? 330 : 410);
+        const spacing = isMobile ? 220 : (isTablet ? 310 : 385);
         x = sign * spacing;
-        y = isMobile ? 14 : 22;
+        y = isMobile ? 14 : 20;
         z = isMobile ? -220 : (isTablet ? -160 : -70);
-        scale = isMobile ? 0.70 : 0.76;
+        scale = isMobile ? 0.70 : 0.77;
         rotateY = -sign * (isMobile ? 18 : 25);
         rotateZ = sign * (isMobile ? 5 : 7);
-        opacity = isMobile ? 0 : 0.55;
-        zIndex = isSmallScreen ? 5 : 6;
+        opacity = isMobile ? 0 : (isTablet ? 0.45 : 0.72);
+        zIndex = isSmallScreen ? 5 : 14;
         pointerEvents = isMobile ? 'none' : 'auto';
         card.classList.remove('is-active');
       } else if (absDiff === 3) {
-        const spacing = isTablet ? 450 : 570;
+        const spacing = isTablet ? 430 : 540;
         x = sign * spacing;
-        y = 34;
-        z = isSmallScreen ? -320 : -240;
-        scale = 0.64;
+        y = 32;
+        z = isSmallScreen ? -320 : -140;
+        scale = 0.67;
         rotateY = -sign * 32;
         rotateZ = sign * 10;
-        opacity = isTablet ? 0 : 0.28;
-        zIndex = 3;
-        pointerEvents = isTablet ? 'none' : 'auto';
+        opacity = isSmallScreen ? 0 : 0.52;
+        zIndex = 8;
+        pointerEvents = isSmallScreen ? 'none' : 'auto';
+        card.classList.remove('is-active');
+      } else if (absDiff === 4) {
+        x = sign * 670;
+        y = 42;
+        z = -220;
+        scale = 0.58;
+        rotateY = -sign * 36;
+        rotateZ = sign * 12;
+        opacity = isSmallScreen ? 0 : 0.35;
+        zIndex = 4;
+        pointerEvents = isSmallScreen ? 'none' : 'auto';
         card.classList.remove('is-active');
       } else {
-        x = sign * 700;
-        y = 40;
-        z = -400;
-        scale = 0.5;
-        rotateY = -sign * 35;
-        rotateZ = sign * 12;
+        x = sign * 780;
+        y = 50;
+        z = -300;
+        scale = 0.50;
+        rotateY = -sign * 38;
+        rotateZ = sign * 14;
         opacity = 0;
         zIndex = 1;
         pointerEvents = 'none';
@@ -1234,6 +1246,10 @@ function wireCarousel(row, prevBtn, nextBtn) {
 
         let bounds = null;
 
+        window.gsap.set(card, { transformPerspective: 1000 });
+        const rxTo = window.gsap.quickTo(card, "rotateX", { duration: 0.3, ease: "power1.out" });
+        const ryTo = window.gsap.quickTo(card, "rotateY", { duration: 0.3, ease: "power1.out" });
+
         card.addEventListener('mouseenter', () => {
           bounds = card.getBoundingClientRect();
         });
@@ -1244,29 +1260,49 @@ function wireCarousel(row, prevBtn, nextBtn) {
           const mouseY = e.clientY - bounds.top;
           const xPct = (mouseX / bounds.width - 0.5) * 2;
           const yPct = (mouseY / bounds.height - 0.5) * 2;
-
-          window.gsap.to(card, {
-            rotateY: xPct * 4,
-            rotateX: -yPct * 4,
-            transformPerspective: 1000,
-            duration: 0.3,
-            ease: 'power1.out',
-            overwrite: 'auto',
-          });
+          ryTo(xPct * 4);
+          rxTo(-yPct * 4);
         });
 
         card.addEventListener('mouseleave', () => {
           bounds = null;
-          window.gsap.to(card, {
-            rotateX: 0,
-            rotateY: 0,
-            duration: 0.55,
-            ease: 'power2.out',
-            overwrite: 'auto',
-            clearProps: 'rotateX,rotateY,transformPerspective',
-          });
+          rxTo(0);
+          ryTo(0);
         });
       });
     }
   }
+
+  // ─── FAQ Accordion Accessibility & Interactive Handler ──────────
+  function initFaqAccordion() {
+    const triggers = document.querySelectorAll('.faq-trigger');
+    triggers.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const targetId = btn.getAttribute('aria-controls');
+        const content = document.getElementById(targetId);
+        if (!content || !item) return;
+
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Toggle state
+        if (isExpanded) {
+          btn.setAttribute('aria-expanded', 'false');
+          content.classList.add('hidden');
+          item.classList.remove('is-open');
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          content.classList.remove('hidden');
+          item.classList.add('is-open');
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFaqAccordion);
+  } else {
+    initFaqAccordion();
+  }
+
 })();

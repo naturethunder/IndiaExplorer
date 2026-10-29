@@ -2,19 +2,11 @@
    ExploreDesh — Custom Design System
    ========================================================= */
 
-/* Handwritten script accent (self-hosted — no CDN). Used ONLY for the word
-   "India" in the hero headline. Latin subset (~75 KB). */
-@font-face {
-  font-family: 'Caveat';
-  font-style: normal;
-  font-weight: 600 700;
-  font-display: swap;
-  src: url('../fonts/caveat-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+2122, U+2191, U+2193;
-}
+
 
 :root {
   /* Royal Gold & Obsidian Black Luxury Bharat Palette */
+  --font-heading: 'Playfair Display', 'Cinzel', Georgia, serif;
   --primary: #E5C07B;
   --primary-dark: #B38628;
   --primary-light: #FFF3C4;
@@ -56,7 +48,7 @@ html[data-theme="light"],
   --primary-dark: #92400E;
   --primary-light: #FEF3C7;
   --primary-rgb: 180, 83, 9;
-  --secondary: #D97706;
+  --secondary: #B45309;
   --accent: #B45309;
   --gold-glow: 0 0 25px rgba(217, 119, 6, 0.22);
   --gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 50%, #78350F 100%);
@@ -74,8 +66,10 @@ html[data-theme="light"],
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.08);
@@ -102,10 +96,10 @@ html[data-theme="light"],
 
 .nav-glass .theme-toggle-btn,
 [data-theme="light"] .nav-glass .theme-toggle-btn {
-  border-color: rgba(245, 197, 66, 0.35) !important;
-  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.45) !important;
+  background: rgba(20, 26, 38, 0.82) !important;
   color: #F5C542 !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35), 0 0 12px rgba(245, 197, 66, 0.15) !important;
 }
 
 .nav-glass .theme-toggle-btn:hover,
@@ -161,7 +155,8 @@ html[data-theme="light"],
 [data-theme="dark"] .theme-icon-sun {
   transform: rotate(0deg) scale(1);
   opacity: 1;
-  color: #F5C542;
+  color: #F5C542 !important;
+  filter: drop-shadow(0 0 6px rgba(245, 197, 66, 0.45));
 }
 
 :root:not([data-theme="light"]) .theme-icon-moon,
@@ -181,7 +176,8 @@ html[data-theme="light"],
 [data-theme="light"] .theme-icon-moon {
   transform: rotate(0deg) scale(1);
   opacity: 1;
-  color: #0F172A;
+  color: #F5C542 !important;
+  filter: drop-shadow(0 0 6px rgba(245, 197, 66, 0.45));
 }
 
 *,
@@ -369,6 +365,11 @@ body {
 
 .calligraphy-kicker::after {
   background: linear-gradient(90deg, rgba(245, 197, 66, 0.85), transparent);
+}
+
+.discover-trending .carousel-row>* {
+  width: 320px;
+  height: 500px;
 }
 
 @media (max-width: 640px) {
@@ -1358,8 +1359,10 @@ html[data-theme="light"] .calligraphy-kicker::after {
 }
 
 .info-card-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -3504,10 +3507,7 @@ textarea.form-input {
   align-items: stretch;
 }
 
-.discover-trending .carousel-row>* {
-  width: 320px;
-  height: 500px;
-}
+
 
 .trend-card {
   height: 500px;

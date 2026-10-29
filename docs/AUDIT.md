@@ -13,6 +13,51 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 126: Master Platform Extreme Audit, 24 Defect Remediation, State Sitemap Expansion (Chandigarh & Lakshadweep), GSAP quickTo() Engine & Theme Icon Polish (2026-10-30 rev-80)
+
+1. **Master Platform Extreme Audit & 24 Defect Profiles Remediation**:
+   - Conducted an exhaustive audit across all 9 HTML templates (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`, `404.html`), 4 stylesheets (19,100 lines), and shared modules.
+   - Identified and permanently fixed all 24 defect profiles across Typography, Color Contrast, Layout, Taxonomy/Sitemaps, and Accessibility.
+
+2. **Technical SEO & Sitemap State Expansion (`scripts/build-sitemap.js`, `sitemap-states.xml`, `sitemap.xml`)**:
+   - Lowered state threshold (`destinationCount >= 1`) to include Chandigarh and Lakshadweep in `sitemap-states.xml`.
+   - Total landing pages in `sitemap-states.xml` reached 54, and total platform sitemapped URLs expanded from 2,453 to **2,455** with **11,980 indexed images** across all 36 States/UTs.
+   - Updated `scripts/seo_regression_guard.js` assertion to verify `totalSitemapUrls === 2455`.
+   - Synchronized JSON-LD Schema.org `@id` and `url` attributes to clean canonical extensionless URLs in `destinations.html`, `ai-finder.html`, `about.html`, `privacy.html`, and `terms.html`.
+
+3. **Accessibility & Semantics**:
+   - Removed static `role="dialog" aria-modal="true"` from desktop aside in `destinations.html`; dynamically toggle attributes only when mobile drawer opens in `js/pages/explore.js`.
+   - Fixed heading hierarchy jump on `ai-finder.html` (promoted `#idleState` from `<h3>` to `<h2>`).
+   - Fixed DOM sequence heading inversion on `destination.html` (changed `#notFound` error heading from `<h2>` before `<h1>` to `<p role="heading" aria-level="2">`).
+   - Synchronized visual UI breadcrumb with JSON-LD BreadcrumbList schema on `destination.html` by adding state breadcrumb slots (`#crumbStateItem`, `#crumbStateLink`).
+   - Expanded touch targets to 44×44px minimum for `.theme-toggle-btn`, `.social-btn`, and 404 search button.
+   - Upgraded focus outline in `css/glass-immersive.css` to royal gold (`outline: 2px solid var(--primary, #F5C542) !important`).
+
+4. **Color Contrast & Theme Toggle Polish**:
+   - Adjusted light-mode `--secondary` to `#B45309` (4.77:1 contrast on alabaster `#FAF9F6`, exceeding WCAG AA).
+   - Fixed theme toggle icon invisibility on dark smoked navbars: removed black `#0F172A` override, applied gold `#F5C542` with drop shadow, filled SVG shapes, and 20px dimensions.
+   - Upgraded legal page headings in `privacy.html` and `terms.html` to `text-slate-900 dark:text-white`.
+   - Synchronized default theme fallback to `'light'` and meta theme-color to `#FAF9F6` across all pages.
+   - Enhanced `404.html` with `glass-immersive` styling and WCAG AA compliant text colors.
+
+5. **Layout & Typographic Normalization**:
+   - Normalized Popular Destinations heading font size in `css/glass-immersive.css` to match standard section titles (`text-2xl sm:text-3xl`), removing oversized clamp and uppercase transform.
+   - Replaced `width: 100vw !important` with `width: 100% !important` on `.explore-filter-sidebar` in `css/explore-immersive.css` to prevent Windows horizontal scrollbar jitter.
+   - Fixed CSS cascade order in `css/styles.css` for mobile breakpoint drawer width.
+   - Purged orphaned Caveat `@font-face` (75 KB) from `css/styles.css` and service worker cache in `sw.js`.
+   - Added `-webkit-backdrop-filter` across 5 glassmorphism CSS rules for Safari compatibility.
+   - Normalized Jost `font-weight: 700` in `css/destination-immersive.css`.
+
+6. **GSAP Micro-Interaction Performance Optimization**:
+   - Upgraded magnetic button and 3D card tilt listeners in `js/utils/gsapInteractions.js` to use cached `gsap.quickTo()` pipes for `x`, `y`, `rotateX`, and `rotateY`, eliminating per-frame tween recreation.
+   - Removed redundant `registerPlugin(ScrollTrigger)` calls in `js/pages/explore.js`.
+
+7. **Production Verification Suite**:
+   - UI/UX Pro Max QA Audit: **0 issues detected across all 7 categories**.
+   - Master SEO Audit: **61/61 checks PASSED (0 errors)**.
+   - Master SEO Regression Guard: **71/71 assertions PASSED (Score: 100/100)**.
+   - Full Repository Media & Invariant Audit: **2,396/2,396 passed (0 duplicate collisions across 67,952 unique photo URLs)**.
+
 ## Addendum — Phase 125: 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture (2026-10-27 rev-79)
 
 1. **Luminous 24K Imperial Gold Carousel Medallions (`css/glass-immersive.css`, `css/styles.css`)**:

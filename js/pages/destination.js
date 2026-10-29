@@ -389,13 +389,13 @@ function main(dest, idx) {
   if (heroType) {
     const exploreTypes = new Set(['hill_station', 'beach', 'heritage', 'wildlife', 'spiritual', 'adventure', 'road_trips', 'camping', 'forts', 'ecotourism', 'recently_updated']);
     if (dest.type === 'nature') {
-      heroType.href = 'destinations.html?type=ecotourism';
+      heroType.href = 'destinations?type=ecotourism';
     } else if (exploreTypes.has(dest.type)) {
-      heroType.href = 'destinations.html?type=' + dest.type;
+      heroType.href = 'destinations?type=' + dest.type;
     } else if (dest.state) {
-      heroType.href = 'destinations.html?state=' + encodeURIComponent(dest.state);
+      heroType.href = 'destinations?state=' + encodeURIComponent(dest.state);
     } else {
-      heroType.href = 'destinations.html';
+      heroType.href = 'destinations';
     }
     // Bug 3 fix: removed emoji typeObj.icon; use plain text label only
     heroType.textContent = typeLabel(dest.type);

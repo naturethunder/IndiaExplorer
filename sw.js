@@ -52,7 +52,6 @@ const APP_SHELL_URLS = [
   '/images/pwa-icon.svg',
   '/images/pwa-icon-192.png',
   '/images/pwa-icon-512.png',
-  '/fonts/caveat-latin.woff2',
   '/manifest.webmanifest',
 ];
 

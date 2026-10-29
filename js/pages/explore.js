@@ -911,6 +911,13 @@ if (quickIcon) quickIcon.innerHTML = icon('sparkles', { size: 24 });
 function setDrawer(open) {
   if (!sidebar) return;
   sidebar.classList.toggle('open', open);
+  if (open) {
+    sidebar.setAttribute('role', 'dialog');
+    sidebar.setAttribute('aria-modal', 'true');
+  } else {
+    sidebar.removeAttribute('role');
+    sidebar.removeAttribute('aria-modal');
+  }
   document.body.style.overflow = open ? 'hidden' : '';
   if (filterOpenBtn) filterOpenBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
 
@@ -1076,10 +1083,6 @@ function initGSAPAnimations() {
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReduced) return;
-
-  if (window.ScrollTrigger) {
-    window.gsap.registerPlugin(window.ScrollTrigger);
-  }
 
   // Hero entrance timeline
   const tl = window.gsap.timeline({ defaults: { ease: 'power3.out' } });
