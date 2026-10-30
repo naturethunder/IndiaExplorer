@@ -8,7 +8,7 @@ import { fetchIndex } from '../data/api.js';
 import { initLayout, setActiveNav } from '../components/layout.js';
 import { destCardHTML } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
-import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS } from '../data/taxonomy.js';
+import { zoneOf, seasonsOf, ZONES, SEASONS, CUSTOM_TYPE_MATCHERS, CORRIDORS, CORRIDOR_LIST, corridorOf } from '../data/taxonomy.js';
 import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { searchDestinations } from '../utils/search.js';
@@ -52,6 +52,10 @@ const INDEXABLE_TYPES = new Map(DESTINATION_TYPES.map(function (type) {
 const CATEGORY_FILTERS = [
   { id: '', label: 'All Destinations', iconName: 'compass' },
   { id: 'recently_updated', label: 'Recently Updated', iconName: 'sparkles' },
+  { id: 'northern-alpine', label: 'Northern Alpine', iconName: 'mountain', isCorridor: true },
+  { id: 'royal-heritage', label: 'Royal Heritage', iconName: 'landmark', isCorridor: true },
+  { id: 'coastal-ghats', label: 'Coastal & Ghats', iconName: 'waves', isCorridor: true },
+  { id: 'seven-sisters', label: 'Seven Sisters', iconName: 'flower', isCorridor: true },
   { id: 'hill_station', label: 'Hill Stations', iconName: 'mountain' },
   { id: 'beach', label: 'Beaches', iconName: 'waves' },
   { id: 'heritage', label: 'Heritage', iconName: 'landmark' },
@@ -69,7 +73,7 @@ const categoryIconMap = new Map(
 );
 
 // ─── Filter state ──────────────────────────────────────
-let filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
+let filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '', corridor: '' };
 let sortBy = 'rating';
 let initialRestoredScrollY = 0;
 
@@ -83,6 +87,7 @@ const stateSel = document.getElementById('stateFilter');
 const sortSel = document.getElementById('sortBy');
 const tierSel = document.getElementById('tierFilter');
 const regionSel = document.getElementById('regionFilter');
+const corridorSel = document.getElementById('corridorFilter');
 const seasonSel = document.getElementById('seasonFilter');
 const monthSel = document.getElementById('monthFilter');
 const typeWrap = document.getElementById('typeFilter');
@@ -104,7 +109,7 @@ function fullMonthName(monthNumber) {
 }
 
 function activeFilterCount() {
-  return ['search', 'type', 'state', 'tier', 'month', 'region', 'season']
+  return ['search', 'type', 'state', 'tier', 'month', 'region', 'season', 'corridor']
     .filter(function (key) { return Boolean(filters[key]); }).length + (sortBy !== 'rating' ? 1 : 0);
 }
 
@@ -112,6 +117,18 @@ function landingSeo(resultLength) {
   const count = inr(resultLength);
   const activeCount = activeFilterCount();
   if (activeCount === 0) return { ...BASE_SEO, breadcrumb: 'The Complete Travel Catalogue of Bharat', isDefault: true };
+
+  if (activeCount === 1 && filters.corridor && CORRIDORS[filters.corridor]) {
+    const c = CORRIDORS[filters.corridor];
+    return {
+      title: c.label + ' Corridor Destinations | ExploreDesh',
+      description: 'Explore ' + count + ' curated destinations across the ' + c.label + ' corridor (' + c.tagline + '), spanning ' + c.states.join(', ') + '.',
+      canonicalPath: 'destinations?corridor=' + encodeURIComponent(filters.corridor),
+      heading: c.label + ' Corridor',
+      subheading: count + ' Curated Sanctuaries · ' + c.tagline,
+      breadcrumb: c.label,
+    };
+  }
 
   if (activeCount === 1 && filters.state) {
     const state = filters.state;
@@ -235,21 +252,39 @@ function renderTypeButtons() {
     }
     const b = document.createElement('button');
     b.type = 'button';
-    b.className = 'category-pill-btn' + (filters.type === t.id ? ' active' : '');
+    const isAct = t.isCorridor
+      ? Boolean(filters.corridor && filters.corridor === t.id)
+      : Boolean(!filters.corridor && (filters.type || '') === (t.id || ''));
+    b.className = 'category-pill-btn' + (isAct ? ' active' : '');
     b.innerHTML = icon(t.iconName, { size: 14 }) + '<span>' + esc(t.label) + '</span>';
-    b.dataset.type = t.id;
-    b.setAttribute('aria-pressed', filters.type === t.id ? 'true' : 'false');
+    if (t.isCorridor) {
+      b.dataset.corridor = t.id;
+    } else {
+      b.dataset.type = t.id;
+    }
+    b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
     b.addEventListener('click', function () {
-      filters.type = t.id;
-      if (t.id === 'recently_updated') {
-        sortBy = 'latest';
-        if (sortSel) sortSel.value = 'latest';
+      if (t.isCorridor) {
+        filters.corridor = t.id;
+        filters.type = '';
+        if (corridorSel) corridorSel.value = t.id;
+      } else {
+        filters.type = t.id;
+        filters.corridor = '';
+        if (corridorSel) corridorSel.value = '';
+        if (t.id === 'recently_updated') {
+          sortBy = 'latest';
+          if (sortSel) sortSel.value = 'latest';
+        }
       }
       apply();
       syncFilterActive();
     });
     typeWrap.appendChild(b);
   });
+  if (typeof window.scanAndAttachGSAP === 'function') {
+    window.scanAndAttachGSAP(typeWrap);
+  }
   if (typeof window.updateCategoryScrollArrows === 'function') {
     window.updateCategoryScrollArrows();
   }
@@ -257,22 +292,39 @@ function renderTypeButtons() {
 
 function syncFilterActive() {
   if (!typeWrap) return;
+  let activeElement = null;
   Array.prototype.forEach.call(typeWrap.children, function (b) {
-    const isAct = filters.type === (b.dataset.type || '');
+    let isAct = false;
+    if (b.dataset.corridor) {
+      isAct = Boolean(filters.corridor && filters.corridor === b.dataset.corridor);
+    } else {
+      isAct = Boolean(!filters.corridor && (filters.type || '') === (b.dataset.type || ''));
+    }
     b.classList.toggle('active', isAct);
     b.setAttribute('aria-pressed', isAct ? 'true' : 'false');
-    if (isAct) {
-      const scrollContainer = typeWrap.closest('.category-tabs-container') || typeWrap.parentElement;
-      if (scrollContainer) {
+    if (isAct && !activeElement) {
+      activeElement = b;
+    }
+  });
+
+  if (activeElement) {
+    const scrollContainer = typeWrap.closest('.category-tabs-container') || typeWrap.parentElement;
+    if (scrollContainer) {
+      if (!filters.corridor && !filters.type) {
+        if (scrollContainer.scrollLeft > 0) {
+          scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      } else {
         requestAnimationFrame(() => {
           const containerRect = scrollContainer.getBoundingClientRect();
-          const btnRect = b.getBoundingClientRect();
+          const btnRect = activeElement.getBoundingClientRect();
           const targetLeft = (btnRect.left - containerRect.left) + scrollContainer.scrollLeft - (scrollContainer.clientWidth / 2) + (btnRect.width / 2);
           scrollContainer.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' });
         });
       }
     }
-  });
+  }
+
   if (typeof window.updateCategoryScrollArrows === 'function') {
     window.updateCategoryScrollArrows();
   }
@@ -371,19 +423,33 @@ function syncFilterActive() {
 const quickTagsWrap = document.getElementById('heroQuickTags');
 if (quickTagsWrap) {
   quickTagsWrap.querySelectorAll('button').forEach((btn) => {
-    const category = CATEGORY_FILTERS.find((item) => item.id === btn.dataset.type);
-    if (category) {
-      btn.innerHTML = `<span class="quick-tag-left">${icon(category.iconName, { size: 16 })}<span>${esc(category.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
+    const type = btn.dataset.type;
+    const corridor = btn.dataset.corridor;
+    if (type) {
+      const category = CATEGORY_FILTERS.find((item) => item.id === type);
+      if (category) {
+        btn.innerHTML = `<span class="quick-tag-left">${icon(category.iconName, { size: 16 })}<span>${esc(category.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
+      }
+    } else if (corridor && CORRIDORS[corridor]) {
+      const c = CORRIDORS[corridor];
+      btn.innerHTML = `<span class="quick-tag-left">${icon(c.iconName, { size: 16 })}<span>${esc(c.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
     }
     btn.addEventListener('click', () => {
-      const type = btn.dataset.type;
-      if (type) {
-        filters.type = type;
+      if (btn.dataset.corridor) {
+        filters.corridor = btn.dataset.corridor;
+        filters.type = '';
+        if (corridorSel) corridorSel.value = filters.corridor;
         apply();
         syncFilterActive();
-        const discBar = document.getElementById('destDiscoveryBar');
-        if (discBar) discBar.scrollIntoView({ behavior: 'smooth' });
+      } else if (btn.dataset.type) {
+        filters.type = btn.dataset.type;
+        filters.corridor = '';
+        if (corridorSel) corridorSel.value = '';
+        apply();
+        syncFilterActive();
       }
+      const discBar = document.getElementById('destDiscoveryBar');
+      if (discBar) discBar.scrollIntoView({ behavior: 'smooth' });
     });
   });
 }
@@ -417,6 +483,7 @@ if (stateSel) {
 
 if (tierSel) tierSel.addEventListener('change', function () { filters.tier = tierSel.value; apply(); });
 if (regionSel) regionSel.addEventListener('change', function () { filters.region = regionSel.value; apply(); });
+if (corridorSel) corridorSel.addEventListener('change', function () { filters.corridor = corridorSel.value; if (filters.corridor) { filters.type = ''; } apply(); syncFilterActive(); });
 if (seasonSel) seasonSel.addEventListener('change', function () { filters.season = seasonSel.value; apply(); });
 if (monthSel) monthSel.addEventListener('change', function () {
   filters.month = monthSel.value ? parseInt(monthSel.value, 10) : null;
@@ -585,6 +652,7 @@ function syncUrlAndState() {
   if (filters.type) p.set('type', filters.type);
   if (filters.state) p.set('state', filters.state);
   if (filters.region) p.set('region', filters.region);
+  if (filters.corridor) p.set('corridor', filters.corridor);
   if (filters.tier) p.set('tier', filters.tier);
   if (filters.season) p.set('season', filters.season);
   if (filters.month) p.set('month', String(filters.month));
@@ -623,6 +691,7 @@ function syncControlsFromFilters() {
   }
   if (stateSel) stateSel.value = filters.state || '';
   if (regionSel) regionSel.value = filters.region || '';
+  if (corridorSel) corridorSel.value = filters.corridor || '';
   if (tierSel) tierSel.value = filters.tier || '';
   if (seasonSel) seasonSel.value = filters.season || '';
   if (monthSel) monthSel.value = filters.month ? String(filters.month) : '';
@@ -634,7 +703,7 @@ function readFiltersFromUrl() {
   const params = new URLSearchParams(window.location.search);
   let hasUrlParams = false;
 
-  const newFilters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
+  const newFilters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '', corridor: '' };
   let newSortBy = 'rating';
 
   if (params.get('search') || params.get('q')) {
@@ -657,6 +726,10 @@ function readFiltersFromUrl() {
       newFilters.state = matchedState;
       hasUrlParams = true;
     }
+  }
+  if (params.get('corridor') && CORRIDORS[params.get('corridor')]) {
+    newFilters.corridor = params.get('corridor');
+    hasUrlParams = true;
   }
   if (params.get('region') && ZONES.indexOf(params.get('region')) >= 0) {
     newFilters.region = params.get('region');
@@ -739,6 +812,12 @@ function apply(options = {}) {
     }
   }
 
+  if (filters.corridor && CORRIDORS[filters.corridor]) {
+    const cStates = CORRIDORS[filters.corridor].states.map(function (s) { return s.toLowerCase(); });
+    results = results.filter(function (d) {
+      return d.state && cStates.indexOf(d.state.toLowerCase()) >= 0;
+    });
+  }
   if (filters.state) {
     results = results.filter(function (d) { return d.state === filters.state; });
   }
@@ -821,6 +900,9 @@ function renderActiveFilterChips() {
   if (filters.state) {
     activeItems.push({ key: 'state', label: 'State: ' + filters.state });
   }
+  if (filters.corridor && CORRIDORS[filters.corridor]) {
+    activeItems.push({ key: 'corridor', label: 'Corridor: ' + CORRIDORS[filters.corridor].label });
+  }
   if (filters.region) {
     activeItems.push({ key: 'region', label: 'Region: ' + filters.region });
   }
@@ -859,7 +941,9 @@ function renderActiveFilterChips() {
       if (key === 'search') { filters.search = ''; if (searchInput) searchInput.value = ''; toggleSearchClear(); }
       else if (key === 'type') { filters.type = ''; }
       else if (key === 'state') { filters.state = ''; if (stateSel) stateSel.value = ''; }
-      else if (key === 'region') { filters.region = ''; if (regionSel) regionSel.value = ''; }
+      else if (key === 'corridor') { filters.corridor = ''; if (corridorSel) corridorSel.value = ''; }
+      else if (key === 'region') { filters.region = ''; if (regionSel) regionSel.value = '';
+  if (corridorSel) corridorSel.value = ''; }
       else if (key === 'tier') { filters.tier = ''; if (tierSel) tierSel.value = ''; }
       else if (key === 'season') { filters.season = ''; if (seasonSel) seasonSel.value = ''; }
       else if (key === 'month') { filters.month = null; if (monthSel) monthSel.value = ''; }
@@ -881,7 +965,7 @@ function applyDebounced() {
 }
 
 function resetFilters() {
-  filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '' };
+  filters = { search: '', type: '', state: '', tier: '', month: null, region: '', season: '', corridor: '' };
   sortBy = 'rating';
   shown = PAGE_SIZE;
   initialRestoredScrollY = 0;
@@ -940,7 +1024,7 @@ function setDrawer(open) {
 }
 
 function activeSidebarFilters() {
-  return ['tier', 'state', 'region', 'season'].filter(function (k) { return filters[k]; }).length +
+  return ['tier', 'state', 'region', 'season', 'corridor'].filter(function (k) { return filters[k]; }).length +
     (filters.month ? 1 : 0);
 }
 

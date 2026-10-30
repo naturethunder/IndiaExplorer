@@ -8,7 +8,7 @@
 ---
 
 **Project:** ExploreDesh  
-**Last Updated:** 2026-10-24 (rev-73 Phase 120)  
+**Last Updated:** 2026-10-31 (rev-83 Phase 129)  
 **Category:** Luxury Travel & Cultural Discovery  
 
 ---
@@ -135,6 +135,71 @@ html[data-theme="light"] .info-card svg {
 button:hover, .btn:hover, .tab-btn:hover {
   border-bottom: 2.5px solid #F5C542 !important;
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+}
+```
+
+
+### 5. Horological Metric Dials (`.dest-summary-card`, `.dest-summary-icon`)
+```css
+/* Obsidian & Pearl Glass Stat Dials (Monochromatic Champagne Gold) */
+.dest-summary-card {
+  background: rgba(15, 23, 42, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 1rem !important;
+  padding: 0.85rem 1rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.dest-summary-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.75rem;
+  background: rgba(245, 197, 66, 0.12) !important;
+  border: 1px solid rgba(245, 197, 66, 0.25) !important;
+  color: #F5C542 !important;
+}
+
+html[data-theme="light"] .dest-summary-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(217, 119, 6, 0.14) !important;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04), inset 0 1px 1px #FFFFFF !important;
+}
+
+html[data-theme="light"] .dest-summary-icon {
+  background: rgba(217, 119, 6, 0.10) !important;
+  border: 1px solid rgba(217, 119, 6, 0.22) !important;
+  color: #B45309 !important;
+}
+```
+
+### 6. Unboxed Editorial Destination Narrative (`#panel-overview`)
+```css
+/* Weightless Editorial Storytelling — Zero Container Inception */
+body.dest-immersive #panel-overview .lg\:col-span-2 > div:not(.dest-summary-grid) {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0.25rem 0 !important;
+  box-shadow: none !important;
+}
+
+body.dest-immersive #panel-overview .lg\:col-span-2 h2 {
+  font-family: var(--font-display, "Playfair Display", Georgia, serif) !important;
+  font-size: 1.85rem !important;
+  letter-spacing: -0.015em !important;
+  margin-bottom: 0.85rem !important;
+  line-height: 1.25 !important;
+}
+
+body.dest-immersive #panel-overview .lg\:col-span-2 p {
+  font-size: 1.0625rem !important;
+  line-height: 1.85 !important;
+  max-width: 68ch !important;
 }
 ```
 

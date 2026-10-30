@@ -706,14 +706,38 @@ html:not([data-theme="light"]) body.dest-immersive .text-purple-700 {
 }
 
 /* ─── OVERVIEW SECTION GLASS CARDS ─────────────────────── */
-html:not([data-theme="light"]) body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid) {
-  background: rgba(10, 12, 18, 0.78) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: var(--imm-radius-lg) !important;
-  padding: 1.5rem !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+html:not([data-theme="light"]) body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid),
+html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid),
+body.dest-immersive #panel-overview .lg\:col-span-2>div:not(.dest-summary-grid) {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0.25rem 0 !important;
+  box-shadow: none !important;
+}
+
+body.dest-immersive #panel-overview .lg\:col-span-2 h2 {
+  font-family: var(--font-display, "Playfair Display", Georgia, serif) !important;
+  font-size: 1.85rem !important;
+  letter-spacing: -0.015em !important;
+  margin-bottom: 0.85rem !important;
+  line-height: 1.25 !important;
+}
+
+body.dest-immersive #panel-overview .lg\:col-span-2 p {
+  font-size: 1.0625rem !important;
+  line-height: 1.85 !important;
+  max-width: 68ch !important;
+}
+
+html:not([data-theme="light"]) body.dest-immersive #panel-overview .lg\:col-span-2 p {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2 p {
+  color: #334155 !important;
 }
 
 /* ─── BENTO GLASS CARDS & INFO CARDS ─────────────────────── */
@@ -2059,46 +2083,51 @@ html[data-theme="light"] .dest-immersive-overlay {
   pointer-events: none !important;
 }
 
-/* ─── 2. NAVBAR (Light Frosted Milk Glass) ───────────────────────────────── */
+/* ─── 2. NAVBAR: Preserves Royal Obsidian Glass in Both Themes ─────────────────── */
 html[data-theme="light"] body.dest-immersive .nav-glass,
 html[data-theme="light"] .nav-glass {
-  background: rgba(255, 255, 255, 0.88) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+  background: rgba(10, 15, 29, 0.82) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(245, 197, 66, 0.22) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(245, 197, 66, 0.15) !important;
 }
 
-/* Navbar Brand & Text */
-html[data-theme="light"] body.dest-immersive .nav-glass .font-bold.text-lg.text-white,
 html[data-theme="light"] body.dest-immersive .nav-glass .site-brand-text,
-html[data-theme="light"] body.dest-immersive .nav-glass a.flex span.text-white,
-html[data-theme="light"] .nav-glass .font-bold.text-lg.text-white,
 html[data-theme="light"] .nav-glass .site-brand-text {
-  color: #0F172A !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="light"] body.dest-immersive .nav-glass .site-brand-text .text-primary,
+html[data-theme="light"] .nav-glass .site-brand-text .text-primary {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass .nav-link,
 html[data-theme="light"] .nav-glass .nav-link {
-  color: #475569 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   background: transparent !important;
   border-bottom: 2.5px solid transparent !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass .nav-link:hover,
 html[data-theme="light"] .nav-glass .nav-link:hover {
-  color: #0F172A !important;
-  background: rgba(15, 23, 42, 0.04) !important;
-  border-bottom-color: rgba(217, 119, 6, 0.4) !important;
+  color: #F5C542 !important;
+  background: rgba(245, 197, 66, 0.08) !important;
+  border-bottom-color: rgba(245, 197, 66, 0.6) !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass .nav-link.active,
 html[data-theme="light"] .nav-glass .nav-link.active {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.06) 0%, rgba(245, 197, 66, 0.16) 100%) !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  box-shadow: 0 4px 12px -2px rgba(217, 119, 6, 0.2) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  background: rgba(245, 197, 66, 0.12) !important;
+  border-bottom: 2.5px solid #F5C542 !important;
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.35) !important;
 }
 
 /* Breadcrumbs in navbar */
@@ -2173,20 +2202,20 @@ html[data-theme="light"] #destNavContainer {
 
 html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled .site-brand-text,
 html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled a.font-bold {
-  color: #0F172A !important;
+  color: #FFFFFF !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled .nav-link {
-  color: #334155 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled .nav-link:hover {
-  color: #0F172A !important;
+  color: #F5C542 !important;
 }
 
 html[data-theme="light"] body.dest-immersive .nav-glass.nav-scrolled .nav-link.active {
-  color: #B45309 !important;
-  border-bottom-color: #D97706 !important;
+  color: #FFFFFF !important;
+  border-bottom-color: #F5C542 !important;
 }
 
 /* ─── Light Mode Sticky Subnav Tabs Refinement ─── */
@@ -4217,8 +4246,10 @@ html[data-theme="light"] body.dest-immersive .max-w-7xl.mx-auto.px-4.pt-10.pb-12
 }
 
 /* ─── OVERVIEW: info-card & sidebar cards — match dark mode generosity ──── */
+body.dest-immersive .info-card,
+html:not([data-theme="light"]) body.dest-immersive .info-card,
 html[data-theme="light"] body.dest-immersive .info-card {
-  padding: 1.75rem !important;
+  padding: 1.15rem 1.35rem !important;
   border-radius: 1.25rem !important;
   margin-bottom: 0 !important;
 }
@@ -4299,7 +4330,7 @@ html[data-theme="light"] body.dest-immersive #panel-stays .flex.gap-2.flex-wrap.
 
 /* ─── REACH PANEL — table card padding ──────────────────────────────────── */
 html[data-theme="light"] body.dest-immersive #panel-reach .info-card {
-  padding: 1.75rem !important;
+  padding: 1.15rem 1.35rem !important;
   border-radius: 1.25rem !important;
   border: 1px solid rgba(217, 119, 6, 0.16) !important;
   box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 20px rgba(15, 23, 42, 0.05), 0 10px 28px -4px rgba(180, 83, 9, 0.05) !important;

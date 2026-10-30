@@ -143,7 +143,7 @@ body.glass-immersive .nav-link.active,
   color: #F5C542 !important;
   font-weight: 600 !important;
   background: rgba(245, 197, 66, 0.12) !important;
-  border-bottom: 2px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.35) !important;
   border-radius: 6px 6px 0 0 !important;
 }
@@ -803,7 +803,7 @@ body.glass-immersive .btn-primary.active {
   color: #FFFFFF !important;
   font-weight: 600 !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   transform: translateY(-1px) !important;
 }
@@ -832,7 +832,7 @@ body.glass-immersive a.btn-outline.active {
   color: #FFFFFF !important;
   font-weight: 600 !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   transform: translateY(-1px) !important;
 }
@@ -867,7 +867,7 @@ body.glass-immersive a.section-link.active {
   font-weight: 600 !important;
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   transform: translateY(-1px) !important;
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
 }
@@ -1898,30 +1898,58 @@ html:not([data-theme="light"]) #typeFilter button {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-html:not([data-theme="light"]) #typeFilter button:hover {
-  background: rgba(15, 23, 42, 0.90) !important;
-  color: #ffffff !important;
-  border-color: rgba(229, 192, 123, 0.6) !important;
-  transform: translateY(-1px) !important;
+html:not([data-theme="light"]) #typeFilter button,
+html:not([data-theme="light"]) .category-pill-btn {
+  background: rgba(15, 23, 42, 0.60) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 9999px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html:not([data-theme="light"]) #typeFilter button:hover,
+html:not([data-theme="light"]) .category-pill-btn:hover {
+  background: rgba(245, 197, 66, 0.12) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  /* refined perimeter */
+  color: #FFFFFF !important;
+  transform: translateY(-1.5px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 18px rgba(245, 197, 66, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+}
+
+html:not([data-theme="light"]) #typeFilter button:hover svg,
+html:not([data-theme="light"]) .category-pill-btn:hover svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  transform: scale(1.1) !important;
+  filter: drop-shadow(0 0 6px rgba(245, 197, 66, 0.6)) !important;
 }
 
 html:not([data-theme="light"]) #typeFilter button.active,
 html:not([data-theme="light"]) #typeFilter button[aria-pressed="true"],
 html:not([data-theme="light"]) .category-pill-btn.active {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.12) 60%, rgba(245, 197, 66, 0.22) 100%) !important;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.22) 0%, rgba(217, 119, 6, 0.28) 100%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.70) !important;
+  /* refined perimeter */
   color: #FFFFFF !important;
-  border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.4), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  font-weight: 600 !important;
-  border-radius: var(--exp-radius-md, 14px) !important;
+  font-weight: 700 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 197, 66, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+  border-radius: 9999px !important;
 }
 
 html:not([data-theme="light"]) #typeFilter button.active svg,
 html:not([data-theme="light"]) .category-pill-btn.active svg {
   color: #F5C542 !important;
   stroke: #F5C542 !important;
-  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
+  filter: drop-shadow(0 0 8px rgba(245, 197, 66, 0.8)) !important;
 }
 
 
@@ -2730,7 +2758,7 @@ html:not([data-theme="light"]) body.glass-immersive .btn-primary.active {
   border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
   border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
   border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
 }
@@ -2738,8 +2766,33 @@ html:not([data-theme="light"]) body.glass-immersive .btn-primary.active {
 /* ─── Editorial Luxury Light Mode: Soft Alabaster Canvas & Radiant Light Wells ───────── */
 html[data-theme="light"] body.glass-immersive {
   background-color: #FAF9F6 !important;
-  background: #FAF9F6 !important;
-  color: #0F172A !important;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(254, 243, 199, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(224, 242, 254, 0.25) 0%, transparent 40%);
+  color: #1E293B !important;
+}
+
+/* Frosted Pearl Glass Cards for Light Mode */
+html[data-theme="light"] body.glass-immersive .card,
+html[data-theme="light"] body.glass-immersive .dest-card,
+html[data-theme="light"] body.glass-immersive .info-card,
+html[data-theme="light"] body.glass-immersive .dest-summary-card {
+  background: rgba(255, 255, 255, 0.80) !important;
+  backdrop-filter: blur(28px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+  border-top: 1px solid rgba(255, 255, 255, 1) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 12px 40px rgba(180, 83, 9, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .card:hover,
+html[data-theme="light"] body.glass-immersive .dest-card:hover {
+  transform: translateY(-6px) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(217, 119, 6, 0.2) !important;
 }
 
 /* Background Wallpaper: Soft, artistic daylight mist */
@@ -2759,47 +2812,73 @@ html[data-theme="light"] .explore-immersive-overlay {
       rgba(250, 248, 245, 0.97) 100%) !important;
 }
 
-/* Navbar in Light Mode: Royal Obsidian Smoked Glass with Specular Gold Top Rule & Crisp Links */
+/* Navbar in Light Mode: Royal Obsidian Smoked Glass with Specular Gold Top Rule & Identical Crisp Links */
 html[data-theme="light"] body.glass-immersive .nav-glass,
 html[data-theme="light"] .nav-glass {
-  background: rgba(6, 9, 18, 0.78) !important;
+  background: rgba(10, 15, 29, 0.82) !important;
   backdrop-filter: blur(28px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-  border-bottom: 1px solid rgba(245, 197, 66, 0.18) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(245, 197, 66, 0.12) !important;
+  border-bottom: 1px solid rgba(245, 197, 66, 0.22) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(245, 197, 66, 0.15) !important;
 }
 
+html[data-theme="light"] .nav-glass a.font-bold,
+html[data-theme="light"] .nav-glass .site-brand-text,
 html[data-theme="light"] body.glass-immersive .nav-glass a.font-bold,
-html[data-theme="light"] body.glass-immersive .nav-glass .site-brand-text,
-html[data-theme="light"] .nav-glass .site-brand-text {
+html[data-theme="light"] body.glass-immersive .nav-glass .site-brand-text {
   color: #FFFFFF !important;
+}
+
+.nav-glass .site-brand-text .text-primary,
+html[data-theme="light"] .nav-glass .site-brand-text .text-primary,
+body.glass-immersive .nav-glass .site-brand-text .text-primary {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
 }
 
 html[data-theme="light"] body.glass-immersive .nav-link,
 html[data-theme="light"] .nav-glass .nav-link {
-  color: rgba(248, 250, 252, 0.85) !important;
-  font-size: 0.82rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.06em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
   text-transform: uppercase !important;
-  padding: 0.5rem 0.95rem !important;
-  transition: all 0.25s ease !important;
+  padding: 0.55rem 1.15rem !important;
+  border-radius: 6px 6px 0 0 !important;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
   background: transparent !important;
   border: none !important;
+  border-bottom: 2.5px solid transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive .nav-link:hover,
-html[data-theme="light"] .nav-glass .nav-link:hover {
+html[data-theme="light"] .nav-glass .nav-link:hover,
+html[data-theme="light"] body.glass-immersive .nav-link:active,
+html[data-theme="light"] .nav-glass .nav-link:active {
   color: #F5C542 !important;
   background: rgba(245, 197, 66, 0.08) !important;
+  border-bottom: 2.5px solid rgba(245, 197, 66, 0.6) !important;
+  border-radius: 6px 6px 0 0 !important;
 }
 
 html[data-theme="light"] body.glass-immersive .nav-link.active,
 html[data-theme="light"] .nav-glass .nav-link.active {
-  color: #F5C542 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
   background: rgba(245, 197, 66, 0.12) !important;
-  border-bottom: 2px solid #F5C542 !important;
-  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.4) !important;
+  border: none !important;
+  /* refined perimeter */
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.35) !important;
   border-radius: 6px 6px 0 0 !important;
 }
 
@@ -2861,25 +2940,25 @@ html[data-theme="light"] body.glass-immersive header h1:not(.hero-home h1),
 html[data-theme="light"] body.glass-immersive section>h1:not(.hero-home h1),
 html[data-theme="light"] body.glass-immersive .page-header h1,
 html[data-theme="light"] body.glass-immersive main h1:not(.hero-home h1),
-html[data-theme="light"] body.glass-immersive main h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
-html[data-theme="light"] body.glass-immersive main h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
-html[data-theme="light"] body.glass-immersive section h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
-html[data-theme="light"] body.glass-immersive section>h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
-html[data-theme="light"] body.glass-immersive section h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title),
-html[data-theme="light"] body.glass-immersive section>h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title) {
+html[data-theme="light"] body.glass-immersive main h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *),
+html[data-theme="light"] body.glass-immersive main h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *):not(.season-card *):not(.season-card-title),
+html[data-theme="light"] body.glass-immersive section h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *),
+html[data-theme="light"] body.glass-immersive section>h2:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *),
+html[data-theme="light"] body.glass-immersive section h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *):not(.season-card *):not(.season-card-title),
+html[data-theme="light"] body.glass-immersive section>h3:not(.hero-home *):not(.trend-card *):not(.dest-card-title):not(.about-corridor-card *):not(.season-card *):not(.season-card-title) {
   color: #0F172A !important;
   text-shadow: none !important;
 }
 
 html[data-theme="light"] body.glass-immersive header p:not(.hero-home p),
-html[data-theme="light"] body.glass-immersive section p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p),
+html[data-theme="light"] body.glass-immersive section p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p):not(.about-corridor-card p):not(.about-corridor-card *),
 html[data-theme="light"] body.glass-immersive section>p.max-w-2xl:not(.hero-home p),
-html[data-theme="light"] body.glass-immersive main p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p) {
+html[data-theme="light"] body.glass-immersive main p:not(.hero-home p):not(.season-card p):not(.mini-card p):not(.card-image-frame p):not(.trend-card p):not(.about-corridor-card p):not(.about-corridor-card *) {
   color: #334155 !important;
   text-shadow: none !important;
 }
 
-html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *):not(.dest-ov-counter *):not(.dest-ov-counter):not(.counter-pill):not(.gallery-category-pill) {
+html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *):not(.dest-ov-counter *):not(.dest-ov-counter):not(.counter-pill):not(.gallery-category-pill):not(.about-corridor-card *):not(.about-corridor-card):not(.bg-black\/60):not(.bg-black\/60 *) {
   color: #0F172A !important;
 }
 
@@ -4049,21 +4128,29 @@ html[data-theme="light"] #typeFilter button,
 html[data-theme="light"] .category-pill-btn,
 html[data-theme="light"] body.glass-immersive #typeFilter button,
 html[data-theme="light"] body.explore-immersive .category-pill-btn {
-  background: rgba(255, 255, 255, 0.94) !important;
-  color: #1E293B !important;
-  border: 1px solid rgba(217, 119, 6, 0.18) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 6px rgba(180, 83, 9, 0.04) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  color: #334155 !important;
+  border: 1px solid rgba(217, 119, 6, 0.20) !important;
+  border-radius: 9999px !important;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.90), 0 2px 8px rgba(15, 23, 42, 0.04) !important;
   text-shadow: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 html[data-theme="light"] #typeFilter button:hover,
 html[data-theme="light"] .category-pill-btn:hover,
 html[data-theme="light"] body.glass-immersive #typeFilter button:hover,
 html[data-theme="light"] body.explore-immersive .category-pill-btn:hover {
-  background: #FFFFFF !important;
-  color: #B45309 !important;
-  border-color: rgba(217, 119, 6, 0.40) !important;
-  box-shadow: inset 0 1px 0 0 #FFFFFF, 0 4px 14px rgba(217, 119, 6, 0.14) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  color: #0F172A !important;
+  border: 1px solid rgba(217, 119, 6, 0.48) !important;
+  border-bottom: 2px solid #D97706 !important;
+  transform: translateY(-1.5px) !important;
+  box-shadow: 0 6px 20px -2px rgba(217, 119, 6, 0.16), 0 0 14px rgba(245, 158, 11, 0.18), inset 0 1px 2px #FFFFFF !important;
 }
 
 html[data-theme="light"] #typeFilter button.active,
@@ -4071,13 +4158,16 @@ html[data-theme="light"] #typeFilter button[aria-pressed="true"],
 html[data-theme="light"] .category-pill-btn.active,
 html[data-theme="light"] body.glass-immersive #typeFilter button.active,
 html[data-theme="light"] body.explore-immersive .category-pill-btn.active {
-  background: linear-gradient(135deg, #D97706 0%, #B45309 100%) !important;
-  border: 1px solid #92400E !important;
-  border-bottom: 2.5px solid #78350F !important;
-  color: #FFFFFF !important;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.96) 0%, rgba(253, 230, 138, 0.90) 100%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(217, 119, 6, 0.60) !important;
+  border-bottom: 2.5px solid #D97706 !important;
+  color: #78350F !important;
   font-weight: 700 !important;
-  box-shadow: 0 4px 16px rgba(180, 83, 9, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.22), inset 0 1px 1px #FFFFFF !important;
+  text-shadow: none !important;
 }
 
 html[data-theme="light"] #typeFilter button svg,
@@ -4086,6 +4176,17 @@ html[data-theme="light"] body.glass-immersive #typeFilter button svg,
 html[data-theme="light"] body.explore-immersive .category-pill-btn svg {
   color: #B45309 !important;
   stroke: #B45309 !important;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+html[data-theme="light"] #typeFilter button:hover svg,
+html[data-theme="light"] .category-pill-btn:hover svg,
+html[data-theme="light"] body.glass-immersive #typeFilter button:hover svg,
+html[data-theme="light"] body.explore-immersive .category-pill-btn:hover svg {
+  color: #D97706 !important;
+  stroke: #D97706 !important;
+  transform: scale(1.1) !important;
+  filter: drop-shadow(0 0 4px rgba(217, 119, 6, 0.35)) !important;
 }
 
 html[data-theme="light"] #typeFilter button.active svg,
@@ -4093,8 +4194,9 @@ html[data-theme="light"] #typeFilter button[aria-pressed="true"] svg,
 html[data-theme="light"] .category-pill-btn.active svg,
 html[data-theme="light"] body.glass-immersive #typeFilter button.active svg,
 html[data-theme="light"] body.explore-immersive .category-pill-btn.active svg {
-  color: #FFFFFF !important;
-  stroke: #FFFFFF !important;
+  color: #B45309 !important;
+  stroke: #B45309 !important;
+  filter: drop-shadow(0 0 3px rgba(217, 119, 6, 0.35)) !important;
 }
 
 /* 5. Universal Text Primary Reset in Light Mode */
@@ -5113,18 +5215,16 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   user-select: none;
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
-  /* CRITICAL: Only transition border/shadow/opacity — NOT transform (JS owns transform) */
-  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s ease,
+  /* Transition border & shadow; JS/GSAP owns transform & opacity for 60fps */
+  transition: border-color 0.35s ease,
     box-shadow 0.35s ease;
-  will-change: transform, opacity;
+  will-change: transform;
   background: #0f172a;
 }
 
-/* JS sets card.style.transform directly; CSS provides the animation timing via transition on the transform-related values when they change */
+/* JS sets card.style.transform directly; CSS provides the animation timing via transition on transform */
 .popular-3d-card[style] {
   transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.35s ease,
     box-shadow 0.35s ease;
 }
@@ -5678,7 +5778,7 @@ html:not([data-theme="light"]) .state-accordion-summary:hover {
   border-top: 1px solid rgba(245, 197, 66, 0.45) !important;
   border-left: 1px solid rgba(245, 197, 66, 0.45) !important;
   border-right: 1px solid rgba(245, 197, 66, 0.45) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 8px 26px -3px rgba(0, 0, 0, 0.75), 0 0 22px rgba(245, 197, 66, 0.38), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
   color: #FFFFFF !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
@@ -5715,14 +5815,18 @@ html[data-theme="light"] .state-accordion-summary:hover {
 }
 
 /* Navbar Links in Light Mode (stays on dark obsidian header) */
-html[data-theme="light"] .nav-glass .nav-link:hover,
-html[data-theme="light"] .nav-glass .nav-link.active {
-  background: rgba(245, 197, 66, 0.16) !important;
-  backdrop-filter: blur(20px) saturate(190%) !important;
-  border: 1px solid rgba(245, 197, 66, 0.45) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+html[data-theme="light"] .nav-glass .nav-link:hover {
+  background: rgba(245, 197, 66, 0.08) !important;
   color: #F5C542 !important;
-  box-shadow: 0 6px 20px -2px rgba(0, 0, 0, 0.5), 0 0 16px rgba(245, 197, 66, 0.4) !important;
+  border-bottom: 2.5px solid rgba(245, 197, 66, 0.6) !important;
+}
+html[data-theme="light"] .nav-glass .nav-link.active {
+  background: rgba(245, 197, 66, 0.12) !important;
+  border: none !important;
+  /* refined perimeter */
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px -2px rgba(245, 197, 66, 0.35) !important;
+  border-radius: 6px 6px 0 0 !important;
 }
 
 /* ─── 3. CARDS GLASS HOVER & 3D MAGNETIC ELEVATION ──────────────────────────── */
@@ -5858,4 +5962,112 @@ html[data-theme="light"] .faq-item:hover,
 html[data-theme="light"] .faq-item.is-open {
   background: rgba(255, 255, 255, 0.95) !important;
   border-color: rgba(217, 119, 6, 0.35) !important;
+}
+
+html[data-theme="light"] .faq-item .faq-trigger span {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] .faq-item .faq-content,
+html[data-theme="light"] .faq-item .faq-content p {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] .faq-icon {
+  color: #D97706 !important;
+}
+
+
+/* ─── Light Mode Luxury Overrides: About Corridor Image Cards ─── */
+html[data-theme="light"] body.glass-immersive main .about-corridor-card h3,
+html[data-theme="light"] body.glass-immersive .about-corridor-card h3,
+html[data-theme="light"] .about-corridor-card h3 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.85) !important;
+}
+
+html[data-theme="light"] body.glass-immersive main .about-corridor-card p,
+html[data-theme="light"] body.glass-immersive .about-corridor-card p,
+html[data-theme="light"] .about-corridor-card p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75) !important;
+}
+
+html[data-theme="light"] body.glass-immersive main .about-corridor-card span,
+html[data-theme="light"] body.glass-immersive .about-corridor-card span,
+html[data-theme="light"] .about-corridor-card span {
+  color: #FDE68A !important;
+}
+
+html[data-theme="light"] body.glass-immersive main .about-corridor-card div,
+html[data-theme="light"] body.glass-immersive .about-corridor-card div,
+html[data-theme="light"] .about-corridor-card div {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+
+/* ─── Light Mode Accessible Amber Accents (7.6:1 AAA Contrast) ─── */
+html[data-theme="light"] body.glass-immersive :where(.text-amber-400, .text-amber-300, .text-amber-500, [class*="text-amber"]):not(.hero-home *):not(.about-corridor-card *) {
+  color: #92400E !important;
+}
+
+html[data-theme="light"] body.glass-immersive .skip-link,
+html[data-theme="light"] .skip-link {
+  background: #0F172A !important;
+  color: #F5C542 !important;
+  border-color: rgba(245, 197, 66, 0.5) !important;
+}
+
+
+/* ─── Ultra-Luxury Universal Contrast & Chromatic Calibration ─── */
+
+/* 1. Seasonal Exploration Photo Cards */
+body.glass-immersive .season-card-title,
+html[data-theme="light"] body.glass-immersive .season-card-title,
+html[data-theme="dark"] body.glass-immersive .season-card-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 2. Over-Photo Floating Badges & Glass Scrim Pill Tags */
+body.glass-immersive .bg-black\/60.text-amber-300,
+html[data-theme="light"] body.glass-immersive .bg-black\/60.text-amber-300,
+html[data-theme="dark"] body.glass-immersive .bg-black\/60.text-amber-300 {
+  color: #FDE68A !important;
+}
+
+body.glass-immersive .badge.bg-black\/60.text-white,
+html[data-theme="light"] body.glass-immersive .badge.bg-black\/60.text-white,
+html[data-theme="dark"] body.glass-immersive .badge.bg-black\/60.text-white {
+  color: #FFFFFF !important;
+}
+
+/* 3. Regional Atlas Directory Eyebrow in Light Mode */
+html[data-theme="light"] body.glass-immersive .state-directory-kicker,
+html[data-theme="light"] body.glass-immersive .state-directory-kicker span {
+  color: #92400E !important;
+  background-color: rgba(217, 119, 6, 0.12) !important;
+  border-color: rgba(217, 119, 6, 0.3) !important;
+}
+
+/* 4. Active Category Pill Buttons in Light Mode */
+html[data-theme="light"] body.glass-immersive .category-pill-btn.active,
+html[data-theme="light"] body.glass-immersive .category-pill-btn.active * {
+  color: #78350F !important;
+}
+
+/* 5. Load More Luxury Button */
+html[data-theme="light"] body.glass-immersive .load-more-luxury-btn,
+html[data-theme="light"] body.glass-immersive .load-more-luxury-btn * {
+  color: #FFFFFF !important;
+}
+
+/* 6. Destination Breadcrumbs on Dark Hero Scrim */
+body.glass-immersive nav[aria-label="Breadcrumb"] a,
+html[data-theme="light"] body.glass-immersive nav[aria-label="Breadcrumb"] a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+body.glass-immersive nav[aria-label="Breadcrumb"] a:hover,
+html[data-theme="light"] body.glass-immersive nav[aria-label="Breadcrumb"] a:hover {
+  color: #FDE68A !important;
 }

@@ -58,6 +58,55 @@ export const STATE_ZONE = {
 // Display order for the Region filter (only zones that actually occur).
 export const ZONES = ['North India', 'South India', 'East India', 'West India', 'Central India', 'North East India'];
 
+// ── Curated Regional Corridors Across Bharat ──────────────────────────
+export const CORRIDORS = {
+  'northern-alpine': {
+    id: 'northern-alpine',
+    label: 'Northern Alpine',
+    tagline: 'Himalayas & High Passes',
+    states: ['Jammu & Kashmir', 'Himachal Pradesh', 'Ladakh', 'Uttarakhand'],
+    iconName: 'mountain',
+    description: 'Snow-draped monasteries, alpine glacial lakes, and pine valleys spanning Kashmir, Himachal, Ladakh, and Uttarakhand.',
+  },
+  'royal-heritage': {
+    id: 'royal-heritage',
+    label: 'Royal Heritage',
+    tagline: 'Fortresses & Desert Dunes',
+    states: ['Rajasthan', 'Gujarat', 'Madhya Pradesh'],
+    iconName: 'landmark',
+    description: 'Centuries-old Rajput hill forts, stepwells, and white salt deserts preserving ancient dynasties across Rajasthan, Gujarat, and Madhya Pradesh.',
+  },
+  'coastal-ghats': {
+    id: 'coastal-ghats',
+    label: 'Coastal & Ghats',
+    tagline: 'Backwaters & Cloud Forests',
+    states: ['Kerala', 'Karnataka', 'Goa', 'Tamil Nadu', 'Maharashtra'],
+    iconName: 'waves',
+    description: 'Emerald tea plantations, UNESCO living Chola temples, and peaceful backwaters across Kerala, Karnataka, Goa, Tamil Nadu, and Maharashtra.',
+  },
+  'seven-sisters': {
+    id: 'seven-sisters',
+    label: 'Seven Sisters',
+    tagline: 'Living Roots & Rainforests',
+    states: ['Meghalaya', 'Assam', 'Arunachal Pradesh', 'Sikkim', 'Nagaland', 'Manipur', 'Mizoram', 'Tripura'],
+    iconName: 'flower',
+    description: 'Living root bridges, crystal-clear river gorges, and orchid-filled biodiversity corridors across Meghalaya, Assam, Arunachal Pradesh, Sikkim, Nagaland, Manipur, Mizoram, and Tripura.',
+  },
+};
+
+export const CORRIDOR_LIST = Object.values(CORRIDORS);
+
+export function corridorOf(state) {
+  if (!state) return null;
+  const sNorm = state.toLowerCase().trim();
+  for (const c of CORRIDOR_LIST) {
+    if (c.states.some(function (st) { return st.toLowerCase().trim() === sNorm; })) {
+      return c.id;
+    }
+  }
+  return null;
+}
+
 // ── Season → month numbers (spec "Season" filter) ──────────────────────
 export const SEASON_MONTHS = {
   Spring: [3, 4],

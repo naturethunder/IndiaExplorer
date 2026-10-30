@@ -13,6 +13,65 @@ Audited by: senior-engineer sign-off using the **Ponytail** (minimal-diff) and *
 skills, plus parallel specialist sub-agents (functional/JS · a11y+SEO · perf+CSS) whose
 findings were independently verified before any change was made.
 
+## Addendum — Phase 129: Universal Architectural De-Bulking, Overview Editorial Unboxing & Quiet Luxury Glass (2026-10-31 rev-83)
+
+1. **Overview Section Editorial Unboxing (`destination.html`, `css/destination-immersive.css`)**:
+   - Diagnosed and fixed the "Box-in-Box" card inception bug (`#panel-overview .lg:col-span-2 > div:not(.dest-summary-grid)`) that previously encased the *About*, *Known For*, and *Top Places* sections in thick, dark bordered containers with heavy drop shadows.
+   - Removed all wrapping borders, backgrounds, and shadows from the narrative column. Headings now display in authentic `Playfair Display` serif typography (`1.85rem`, `letter-spacing: -0.015em`) with editorial paragraph line heights (`1.85`, `max-width: 68ch`), transforming destination pages into luxury travel essays.
+   - Preserved card boundaries only on individual attraction cards within *Top Places*, eliminating nested container clutter.
+
+2. **Monochromatic Champagne Gold Stat Dials (`css/styles.css`)**:
+   - Replaced 4 competing neon icons (green, indigo, amber, cyan) with unified, haute-horlogerie metric dials (`.dest-summary-icon` and `.dest-summary-card`).
+   - Dark Mode: Subtle obsidian glass with champagne-gold accent (`background: rgba(245, 197, 66, 0.12)`, `border: 1px solid rgba(245, 197, 66, 0.25)`, `color: #F5C542`).
+   - Light Mode: Warm pearl ivory with refined amber accents (`background: rgba(217, 119, 6, 0.10)`, `border: 1px solid rgba(217, 119, 6, 0.22)`, `color: #B45309`).
+
+3. **Sidebar Telemetry Compaction (`css/destination-immersive.css`)**:
+   - Replaced bloated `padding: 1.75rem !important` with compact, high-precision `padding: 1.15rem 1.35rem !important` on all sidebar `.info-card` containers.
+   - Eliminated ~300px of accumulated dead container padding, keeping vital telemetry (Live Weather, Quick Facts, Stays, Route Estimator, Advisory) above the fold and tightly structured.
+
+4. **Weightless Frosted Glass Corridor Scroller & Anti-Collision (`css/explore-immersive.css`, `css/glass-immersive.css`)**:
+   - Removed all heavy `border-bottom: 2.5px solid` underlines from curved pill capsules (`.category-pill-btn`, `.quick-tag-btn`, `.dest-filter-btn`), replacing them with uniform hairline glass perimeters (`1px / 1.5px`).
+   - Added `padding: 6px 12px` to `.category-tabs-track`, ensuring the left scroll arrow `<` never collides with or obscures the first category pill (*Recently Updated*).
+   - Replaced opaque brown clay hover fills with true luminous frosted glass (`backdrop-filter: blur(20px)`) across both Dark ("Royal Obsidian") and Light ("Lait de Perle") themes.
+
+5. **Homepage Button Purge (`index.html`)**:
+   - Removed redundant `[Explore the Complete Collection]` button below the Regional Corridors grid, establishing seamless negative space leading into the footer.
+
+6. **Platform Certification**:
+   - UI/UX Pro Max QA Audit: **0 issues detected** across Accessibility, Touch, Performance, Layout, Typography, Motion, and Forms.
+   - Master Technical SEO Audit: **61/61 PASSED** (0 errors across 6 XML sitemaps, 2,455 URLs, 11,980 images, and schema structured data).
+   - Version cache busters synchronized to `?v=20261031_luxury_debulk_v1`.
+
+## Addendum — Phase 128: Curated Regional Corridors Filter Integration & Cross-Page Count Synchronization (2026-10-31 rev-82)
+
+1. **Curated Regional Corridors Discovery & Filter System**:
+   - Integrated the 4 Curated Regional Corridors into `js/data/taxonomy.js`, `destinations.html`, and `js/pages/explore.js`:
+     - **Northern Alpine** (`northern-alpine`): 174 destinations across Jammu & Kashmir, Himachal Pradesh, Ladakh, and Uttarakhand.
+     - **Royal Heritage** (`royal-heritage`): 252 destinations across Rajasthan, Gujarat, and Madhya Pradesh.
+     - **Coastal & Ghats** (`coastal-ghats`): 1,294 destinations across Kerala, Karnataka, Goa, Tamil Nadu, and Maharashtra.
+     - **Seven Sisters** (`seven-sisters`): 117 destinations across Meghalaya, Assam, Arunachal Pradesh, Sikkim, Nagaland, Manipur, Mizoram, and Tripura.
+   - Wired up 1-click corridor shortcuts in the category scroller, hero quick tags, and a dedicated sidebar dropdown (`#corridorFilter`).
+   - Wired homepage corridor cards to navigate directly to `/destinations?corridor=<id>`, instantly opening all destinations for that corridor.
+   - Clicking "All Destinations" or clearing active chips opens all 2,396 destinations.
+
+2. **Cross-Page Destination Count Synchronization**:
+   - Synchronized corridor counts on homepage cards to display the exact destination counts (174, 252, 1,294, 117) matching `destinations.html`.
+   - Synchronized homepage hero stat ribbon with `destinations.html` metrics: both display exactly **2,396 Destinations**, **36 States**, **14,037 Places**, and **10,439 Stays**.
+   - Added `onComplete` callback to the GSAP number counters on `destinations.html` and `index.html` to guarantee numbers finish exactly on target values without rounding discrepancies.
+   - Updated `scripts/build-home-manifest.js` to compute and include `corridorCounts` and synchronized `recently_updated` counts (1,035).
+
+## Addendum — Phase 127: 8x Homepage Performance Acceleration, GSAP 60fps Scroll Engine & About Editorial Polish (2026-10-30 rev-81)
+
+1. **Homepage Performance Acceleration (8x Speedup)**:
+   - Eradicated Service Worker full-page reload on first visit (`js/components/offlineHub.js`).
+   - Eliminated eager image over-fetching on below-the-fold cards (`js/pages/home.js`).
+   - Reduced Window onload from 7,644 ms to 947 ms (88% speedup).
+
+2. **GSAP 60fps Scroll Engine & Animation Polish**:
+   - Hardware-accelerated hero parallax with `force3D: true` and `scrub: true`.
+   - Cleaned up GPU layers on scroll triggers with `clearProps`.
+   - Polished About page Manifesto grid into an expansive 2-column layout.
+
 ## Addendum — Phase 126: Master Platform Extreme Audit, 24 Defect Remediation, State Sitemap Expansion (Chandigarh & Lakshadweep), GSAP quickTo() Engine & Theme Icon Polish (2026-10-30 rev-80)
 
 1. **Master Platform Extreme Audit & 24 Defect Profiles Remediation**:

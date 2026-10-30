@@ -6,6 +6,19 @@
 
 ---
 
+## Phase 129 Modifications (2026-10-31 rev-83) — Universal Architectural De-Bulking, Overview Editorial Unboxing & Monochromatic Champagne Gold Glass
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `destination.html`, `css/destination-immersive.css` | Narrative section (*About*, *Known For*, *Top Places*) was encased inside nested bordered cards with heavy padding and shadows ("card inception") | Nested container layout causing visual clutter and heavy cognitive load | Unboxed narrative body into an authentic editorial travel essay with Playfair Display serif headings (`1.85rem`) and comfortable line height (`1.85`, `max-width: 68ch`) | Elevates dwell time and readability, delivering Belmond / Aman luxury publication standards | Reduces bounce rate, improves content engagement signals, and reinforces topical entity depth | Low (CSS layout & typography) |
+| `css/styles.css` | 4 stat metric icons (*Altitude*, *Best Time*, *Summer Temp*, *Winter Temp*) used conflicting neon green, indigo, amber, and cyan squares | SaaS-like multi-color dashboard cards | Unified into monochromatic champagne-gold / warm amber glass dials with sleek 1px hairline borders | Transforms visual hierarchy into high-precision horological telemetry | Enhances brand prestige, visual harmony, and dwell quality | Low (CSS styling) |
+| `css/destination-immersive.css` | Sidebar `.info-card` containers had `padding: 1.75rem !important`, creating ~300px of dead space across 5 cards | Bloated vertical spacing pushing vital telemetry below the fold | Scaled padding to `1.15rem 1.35rem !important` with refined hairline borders | Keeps weather, stays, routes, and concierge facts visible above the fold | Reduces scroll fatigue and improves core viewport engagement | Low (CSS spacing) |
+| `css/explore-immersive.css`, `css/glass-immersive.css` | Curved pill filter buttons had thick `2.5px solid` bottom borders distorting their shape, and scroll arrow `<` overlapped text | Chunky tactile buttons with text clipping on scroll | Removed `border-bottom` underlines, added `padding: 6px 12px` to track, and implemented dual-theme frosted glass hover states | Delivers true weightless glass capsules and zero arrow/text collisions | Eliminates CLS / visual overlap, enhancing INP and usability | Low (CSS layout & interaction) |
+| `index.html` | Redundant `[Explore the Complete Collection]` button sat below Regional Corridors grid | Cluttered button before footer | Removed redundant button, allowing clean editorial whitespace | Creates clean section termination leading naturally into the footer | Improves UX clarity and visual polish | Low (HTML template) |
+| `destination.html`, `destinations.html` | Client browsers caching previous bulky card and pill styles | Legacy stylesheet query parameters | Synchronized cache buster query to `?v=20261031_luxury_debulk_v1` | Guarantees instant delivery of fresh glass styles and unboxed layouts | Prevents stale stylesheet rendering | Low (Cache version bump) |
+
+---
+
 ## Phase 126 Modifications (2026-10-30 rev-80) — Master Platform Audit Remediation, State Sitemap Expansion (Chandigarh & Lakshadweep), Heading Normalization & Clean Canonical JSON-LD
 
 | File | Problem | Before | After | Reason | SEO Impact | Risk Level |

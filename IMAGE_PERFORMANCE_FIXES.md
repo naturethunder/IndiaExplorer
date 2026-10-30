@@ -1,5 +1,34 @@
 # Image Quality & Performance Fixes — Phase 122 (2026-10-26 rev-76)
 
+## ✅ Phase 129 (rev-83) — Universal Architectural De-Bulking, Overview Editorial Unboxing & Monochromatic Champagne Gold Glass (2026-10-31)
+
+### Problem Diagnosed & Fixed
+- **Overview Card Inception ("Box-in-Box" Syndrome)**: In `css/destination-immersive.css`, `#panel-overview .lg:col-span-2 > div:not(.dest-summary-grid)` forcibly encased the article body (*About*, *Known For*, and *Top Places*) inside heavy bordered containers with `padding: 1.5rem` and dark drop shadows. Inside *Top Places*, each place card was another box. Eradicated all container styling on the parent column: the article body now flows unboxed on the canvas with `Playfair Display` display serif headings (`1.85rem`), editorial line-height (`1.85`), and comfortable line measures (`max-width: 68ch`), achieving Belmond / Aman editorial travel standards.
+- **Monochromatic Champagne Gold Stat Dials**: Replaced 4 mismatched neon green/indigo/cyan IT server metric squares in `css/styles.css` with unified, horological champagne-gold / warm amber glass dials (`.dest-summary-icon` and `.dest-summary-card`) in both themes.
+- **Sidebar Telemetry Compaction**: Scaled down `.info-card` padding from `1.75rem` down to `1.15rem 1.35rem`, eliminating ~300px of accumulated dead container padding across the 5 stacked sidebar cards.
+- **Category Corridor Scroller Anti-Collision & Hairlines**: Added `padding: 6px 12px` to `.category-tabs-track` so the left scroll arrow `<` never obscures or overlaps pill typography. Removed all thick `border-bottom: 2.5px solid` underlines on curved pills, replacing them with refined `1px / 1.5px` perimeter hairline glass strokes with pure frosted glass hover in both themes.
+- **Homepage Button Purge**: Removed redundant `[Explore the Complete Collection]` button below the Regional Corridors grid in `index.html`.
+- **Cache Invalidation**: Synchronized query parameters to `?v=20261031_luxury_debulk_v1` across `destination.html` and `destinations.html`.
+- **Triple Audit Suite Certified**: UI/UX Pro Max QA Audit 0 issues detected (100%), Master SEO Audit 61/61 PASSED, Master Regression Guard 71/71 PASSED, Full Repository Integrity 0 violations across 67,952 photo URLs.
+
+---
+
+## ✅ Phase 127 (rev-81) — 8x Homepage Performance Acceleration (7.6s → 0.94s), SW Auto-Reload Eradication, and GSAP 60fps Scroll Optimization (2026-10-30)
+
+### Problem Diagnosed & Fixed
+- **Eradicated Service Worker Unwanted Full-Page Reload (`js/components/offlineHub.js`)**: Diagnosed unexpected page re-fetches in active browser sessions: on initial visit, `navigator.serviceWorker.addEventListener('controllerchange')` invoked `window.location.reload()`, wiping out pending asset streams and forcing an abrupt full-page reload. Resolved by adding `hadExistingController = Boolean(navigator.serviceWorker.controller)` guard so the first SW install/activation operates silently without reloading.
+- **Eliminated Eager Image Over-Fetching Across Below-the-Fold Grids (`js/pages/home.js`, `js/components/destinationCard.js`)**: Diagnosed 12+ off-screen CDN images loading with `fetchpriority="high"` simultaneously because `priority: i < 3` or `priority: i < 2` was set on `month-rail`, `hills-grid`, `explore-grid`, and trending carousels. This kept `window.onload` stalled for **7,644 ms (~7.6s)**. Enforced `priority: false` on below-the-fold cards and native `loading="lazy" decoding="async"`. Load event dropped to **947 ms (88% faster)** and initial image requests dropped from 54 to 21.
+- **Deferred Hero Slide 2 Preload (`js/pages/home.js`)**: Hero slide 2 was fetching after only 50ms via `requestIdleCallback`, consuming 534 KB of network bandwidth during initial paint. Deferred preloading to 4.5 seconds.
+- **Eliminated Fixed Background Full-Body Scrub (`js/pages/home.js`)**: Removed continuous `scrub: 0.8` parallax on `.explore-immersive-bg` across `body`. Scrubbing a fixed 100vw×100vh layer across 6,000px forced continuous GPU compositing and repaints on every scroll frame.
+- **Hardware-Accelerated Hero Parallax & CSS Isolation (`js/pages/home.js`, `css/styles.css`)**: Enabled `force3D: true`, direct `scrub: true`, and added `will-change: transform` to `.hero-home-bg` in CSS.
+- **GSAP vs CSS Transition Clash Eradication (`css/glass-immersive.css`)**: Removed `transition: opacity` from `.popular-3d-card[style]` so GSAP's frame-by-frame 60fps entrance tweens own card opacity without competing with CSS transitions.
+- **Scoped Staggered Grid Reveals & Props Cleanup (`js/pages/home.js`)**: Limited entrance animations to the first 6 visible cards with `clearProps: 'transform,opacity'` and `once: true`, returning cards to clean CSS layout and freeing GPU layer overhead.
+- **Curated Regional Corridors Across Bharat Homepage Integration (`index.html`, `about.html`)**: Moved the visual 4-quadrant Regional Corridors section into `index.html` directly before the master collection CTA. Integrated verified Tier-1 Pexels landscape photography across Northern Alpine (Ladakh snow peaks), Royal Heritage (Jaisalmer desert fort), Coastal & Ghats (Alleppey backwaters), and Seven Sisters (Meghalaya living root waterfalls) with lazy loading and responsive 4-column card grid.
+- **About Page Editorial Manifesto Grid Architecture (`about.html`, `css/glass-immersive.css`)**: Resolved squished Manifesto layout by introducing dedicated `.about-manifesto-grid` (`grid-template-columns: 420px 1fr`), granting 557px to the quote box and 779px to the chapter narrative. Removed accidental insertion of `#editorial-guide` from `index.html`.
+- **Triple Audit Suite Certified**: UI/UX Pro Max QA Audit 0 issues (100%), Master SEO Audit 61/61 PASSED, Master Regression Guard 71/71 PASSED (100/100), Full Repository Media Integrity 0 violations across 67,900 URLs and 2,396 destinations.
+
+---
+
 ## ✅ Phase 122 (rev-76) — Popular Destinations 3D Coverflow Zero-Collision Stabilization, GSAP Micro-Interaction De-confliction & Master Arrow Repositioning (2026-10-26)
 
 ### Problem Diagnosed & Fixed

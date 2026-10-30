@@ -52,16 +52,12 @@ injectJsonLd(websiteJsonLd(), 'website');
   bg.style.backgroundColor = '#0f3460';
   bg.style.transition = 'opacity 0.8s ease-in-out, background-image 0.8s ease-in-out';
 
-  // Defer preloading of upcoming hero slides until after primary UI has hydrated
+  // Defer preloading of upcoming hero slides until after initial page load settles
   const preloadNextSlide = () => {
     const nextImg = new Image();
     nextImg.src = HERO_PHOTOS[1].src;
   };
-  if (typeof window.requestIdleCallback === 'function') {
-    window.requestIdleCallback(preloadNextSlide);
-  } else {
-    window.addEventListener('load', () => setTimeout(preloadNextSlide, 2000), { once: true });
-  }
+  setTimeout(preloadNextSlide, 4500);
 
   function setHeroPhoto(i) {
     currentIdx = (i + HERO_PHOTOS.length) % HERO_PHOTOS.length;
@@ -238,7 +234,7 @@ if (!isFullIndexLoaded) {
   if (!el) return;
   const totalDestCount = (idx && idx.count) || (summaries ? summaries.length : 2396);
   const stats = [
-    { ic: 'map-pin', raw: totalDestCount, suffix: '+', label: 'Destinations' },
+    { ic: 'map-pin', raw: totalDestCount, suffix: '', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
     { ic: 'mountain', raw: 14037, suffix: '+', label: 'Places' },
     { ic: 'bed', raw: 10439, suffix: '+', label: 'Stays' },
@@ -308,7 +304,13 @@ if (!isFullIndexLoaded) {
       return true;
     })
     .map((c) => {
-      const n = c.countKey === 'all' ? totalCount : c.countKey ? (customCounts[c.countKey] || (counts[c.type] || 0)) : (counts[c.type] || 0);
+      const n = c.countKey === 'all'
+        ? totalCount
+        : c.countKey === 'corridor'
+          ? ((idx.meta && idx.meta.corridorCounts && idx.meta.corridorCounts[c.corridorId]) || (c.corridorId === 'northern-alpine' ? 174 : c.corridorId === 'royal-heritage' ? 252 : c.corridorId === 'coastal-ghats' ? 1294 : 117))
+          : c.countKey
+            ? (customCounts[c.countKey] || (counts[c.type] || 0))
+            : (counts[c.type] || 0);
       const badge = c.badge
         ? '<span class="category-chip-badge badge-' + c.badge + '">' + (c.badge === 'new' ? 'New' : 'Popular') + '</span>'
         : '';
@@ -545,7 +547,7 @@ if (!isFullIndexLoaded) {
 
     railEl.style.opacity = '0.4';
     setTimeout(() => {
-      railEl.innerHTML = picks.map((d, i) => trendCardHTML(d, { priority: i < 3 })).join('');
+      railEl.innerHTML = picks.map((d) => trendCardHTML(d, { priority: false })).join('');
       railEl.scrollLeft = 0;
       railEl.style.opacity = '1';
       if (typeof updateMonthCarousel === 'function') updateMonthCarousel();
@@ -607,7 +609,7 @@ function shuffleArray(arr) {
   });
 
   const selected = shuffleArray(pool.length >= 10 ? pool : summaries.filter(d => d.heroImage && d.heroImage.src)).slice(0, 10);
-  row.innerHTML = selected.map(function (d, i) { return trendCardHTML(d, { priority: i < 3 }); }).join('');
+  row.innerHTML = selected.map(function (d, i) { return trendCardHTML(d, { priority: i < 2 }); }).join('');
   wireCarousel(row, document.getElementById('trend-prev'), document.getElementById('trend-next'));
 })();
 
@@ -683,7 +685,7 @@ function shuffleArray(arr) {
   });
 
   const selectedHills = shuffleArray(hillsPool.length >= 10 ? hillsPool : summaries.filter(d => d.type.includes('hill'))).slice(0, 10);
-  el.innerHTML = selectedHills.map(function (d, i) { return heroCardHTML(d, { priority: i < 2 }); }).join('');
+  el.innerHTML = selectedHills.map(function (d) { return heroCardHTML(d, { priority: false }); }).join('');
   wireCarousel(el, document.getElementById('hills-prev'), document.getElementById('hills-next'));
 })();
 
@@ -984,7 +986,7 @@ function shuffleArray(arr) {
 
   const explorePool = summaries.filter(function (d) { return d.heroImage && d.heroImage.src; });
   const selectedExplore = shuffleArray(explorePool).slice(0, 12);
-  el.innerHTML = selectedExplore.map(function (d, i) { return miniCardHTML(d, { priority: i < 3 }); }).join('');
+  el.innerHTML = selectedExplore.map(function (d) { return miniCardHTML(d, { priority: false }); }).join('');
   wireCarousel(el, document.getElementById('explore-prev'), document.getElementById('explore-next'));
 })();
 
@@ -1121,59 +1123,47 @@ function wireCarousel(row, prevBtn, nextBtn) {
     });
   });
 
-  // 3. Hero Depth Parallax on Scroll
+  // 3. Hero Depth Parallax on Scroll (Hardware accelerated, 1:1 scrub, no inertia lag)
   if (window.ScrollTrigger && document.getElementById('heroBg')) {
     window.gsap.to('#heroBg', {
-      yPercent: 20,
+      yPercent: 18,
       ease: 'none',
+      force3D: true,
       scrollTrigger: {
         trigger: '.hero-home',
         start: 'top top',
         end: 'bottom top',
-        scrub: 0.6,
+        scrub: true,
+        invalidateOnRefresh: true,
       },
     });
   }
 
-  // 4. Ambient Background Subtle Parallax
-  if (window.ScrollTrigger && document.querySelector('.explore-immersive-bg')) {
-    window.gsap.to('.explore-immersive-bg', {
-      yPercent: 10,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: 'body',
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 0.8,
-      },
-    });
-  }
-
-  // 5. ScrollTrigger Staggered Section Entrances
+  // 4. ScrollTrigger Staggered Section Entrances
   if (window.ScrollTrigger) {
     // Category strip chips
     const catStrip = document.getElementById('category-strip');
-    if (catStrip) {
+    if (catStrip && catStrip.children.length) {
       window.gsap.fromTo(catStrip.children, {
         opacity: 0,
-        y: 25,
-        scale: 0.92
+        y: 18,
       }, {
         opacity: 1,
         y: 0,
-        scale: 1,
-        stagger: 0.035,
-        duration: 0.55,
+        stagger: 0.025,
+        duration: 0.45,
         ease: 'power2.out',
+        clearProps: 'transform,opacity',
         scrollTrigger: {
           trigger: catStrip,
-          start: 'top 90%',
+          start: 'top 92%',
           toggleActions: 'play none none none',
+          once: true,
         },
       });
     }
 
-    // Grid sections staggered reveal
+    // Grid sections staggered reveal (animating visible cards only, clearProps on complete)
     const gridSelectors = [
       '#trending-grid',
       '#month-rail',
@@ -1185,23 +1175,24 @@ function wireCarousel(row, prevBtn, nextBtn) {
 
     gridSelectors.forEach((selector) => {
       const container = document.querySelector(selector);
-      if (!container) return;
+      if (!container || !container.children.length) return;
 
-      window.gsap.fromTo(container.children, {
+      const items = Array.from(container.children).slice(0, 6);
+      window.gsap.fromTo(items, {
         opacity: 0,
-        y: 32,
-        scale: 0.96
+        y: 22,
       }, {
         opacity: 1,
         y: 0,
-        scale: 1,
-        duration: 0.65,
-        stagger: 0.07,
+        duration: 0.48,
+        stagger: 0.05,
         ease: 'power2.out',
+        clearProps: 'transform,opacity',
         scrollTrigger: {
           trigger: container,
           start: 'top 88%',
           toggleActions: 'play none none none',
+          once: true,
         },
       });
     });
@@ -1211,66 +1202,80 @@ function wireCarousel(row, prevBtn, nextBtn) {
     if (mapInner) {
       window.gsap.from(mapInner, {
         opacity: 0,
-        scale: 0.96,
-        y: 30,
-        duration: 0.8,
-        ease: 'power3.out',
+        y: 24,
+        duration: 0.6,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity',
         scrollTrigger: {
           trigger: mapInner,
-          start: 'top 85%',
+          start: 'top 88%',
           toggleActions: 'play none none none',
+          once: true,
         },
       });
     }
 
     // Section Titles and headers reveal
     document.querySelectorAll('.section-title').forEach((titleEl) => {
+      if (titleEl.closest('.reveal')) return;
       window.gsap.from(titleEl, {
         opacity: 0,
-        y: 18,
-        duration: 0.6,
+        y: 16,
+        duration: 0.5,
         ease: 'power2.out',
+        clearProps: 'transform,opacity',
         scrollTrigger: {
           trigger: titleEl,
           start: 'top 92%',
           toggleActions: 'play none none none',
+          once: true,
         },
       });
     });
 
-    // 3D Magnetic Cursor Tilt for Home Glass Cards
+    // 3D Magnetic Cursor Tilt for Home Glass Cards (isolated GPU layer on hover)
     if (!window.matchMedia('(hover: none) or (pointer: coarse)').matches) {
-      document.querySelectorAll('.trend-card, .hero-hill-card, .mini-card').forEach((card) => {
-        if (card.dataset.tiltInitted) return;
-        card.dataset.tiltInitted = '1';
+      function initTilt(selector) {
+        document.querySelectorAll(selector).forEach((card) => {
+          if (card.dataset.tiltInitted) return;
+          card.dataset.tiltInitted = '1';
 
-        let bounds = null;
+          let bounds = null;
+          window.gsap.set(card, { transformPerspective: 1000 });
+          const rxTo = window.gsap.quickTo(card, 'rotateX', { duration: 0.25, ease: 'power1.out' });
+          const ryTo = window.gsap.quickTo(card, 'rotateY', { duration: 0.25, ease: 'power1.out' });
 
-        window.gsap.set(card, { transformPerspective: 1000 });
-        const rxTo = window.gsap.quickTo(card, "rotateX", { duration: 0.3, ease: "power1.out" });
-        const ryTo = window.gsap.quickTo(card, "rotateY", { duration: 0.3, ease: "power1.out" });
+          card.addEventListener('mouseenter', () => {
+            card.style.willChange = 'transform';
+            bounds = card.getBoundingClientRect();
+          });
 
-        card.addEventListener('mouseenter', () => {
-          bounds = card.getBoundingClientRect();
+          card.addEventListener('mousemove', (e) => {
+            if (!bounds) bounds = card.getBoundingClientRect();
+            const mouseX = e.clientX - bounds.left;
+            const mouseY = e.clientY - bounds.top;
+            const xPct = (mouseX / bounds.width - 0.5) * 2;
+            const yPct = (mouseY / bounds.height - 0.5) * 2;
+            ryTo(xPct * 3.5);
+            rxTo(-yPct * 3.5);
+          });
+
+          card.addEventListener('mouseleave', () => {
+            bounds = null;
+            rxTo(0);
+            ryTo(0);
+            card.style.willChange = '';
+          });
         });
-
-        card.addEventListener('mousemove', (e) => {
-          if (!bounds) bounds = card.getBoundingClientRect();
-          const mouseX = e.clientX - bounds.left;
-          const mouseY = e.clientY - bounds.top;
-          const xPct = (mouseX / bounds.width - 0.5) * 2;
-          const yPct = (mouseY / bounds.height - 0.5) * 2;
-          ryTo(xPct * 4);
-          rxTo(-yPct * 4);
-        });
-
-        card.addEventListener('mouseleave', () => {
-          bounds = null;
-          rxTo(0);
-          ryTo(0);
-        });
-      });
+      }
+      initTilt('.trend-card, .hero-hill-card, .mini-card');
+      window.__initCardTilt = initTilt;
     }
+
+    // Debounced refresh once images settle
+    setTimeout(() => {
+      window.ScrollTrigger.refresh();
+    }, 300);
   }
 
   // ─── FAQ Accordion Accessibility & Interactive Handler ──────────

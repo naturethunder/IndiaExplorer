@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -46,10 +46,10 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="css/styles.css?v=20261008_phase87" />
+  <link rel="stylesheet" href="css/styles.css?v=20261031_luxury_debulk_v1" />
   <link rel="stylesheet" href="css/tailwind.css?v=20260914_6" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261027_sticky_scroll_fix" />
-  <link rel="stylesheet" href="css/explore-immersive.css?v=20261027_sticky_scroll_fix" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261031_luxury_debulk_v1" />
+  <link rel="stylesheet" href="css/explore-immersive.css?v=20261031_luxury_debulk_v1" />
 
   <!-- GSAP Animation Core & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -76,10 +76,6 @@
       <div class="explore-shell">
         <div class="explore-hero-grid">
           <div class="explore-hero-content">
-            <div class="explore-eyebrow-pill" id="heroEyebrow">
-              <span class="pulse-dot"></span>
-              <span class="eyebrow-txt">The Complete Travel Catalogue of Bharat</span>
-            </div>
             <h1 id="explore-hero-title" class="explore-hero-display">
               <span class="hero-line-1">Curated <em
                   class="gold-gradient-text font-calligraphy text-[1.12em] font-normal tracking-wide">Destinations</em></span>
@@ -112,10 +108,6 @@
 
           <div class="explore-hero-quickstart">
             <div class="hero-quick-card">
-              <div class="quick-kicker">
-                <span class="quick-kicker-dot" aria-hidden="true"></span>
-                <span>CURATOR'S COLLECTION</span>
-              </div>
               <div class="quick-card-head">
                 <span class="quick-icon" aria-hidden="true"></span>
                 <div>
@@ -124,6 +116,10 @@
                 </div>
               </div>
               <div class="hero-quick-tags" id="heroQuickTags">
+                <button type="button" data-corridor="northern-alpine" class="quick-tag-btn">Northern Alpine</button>
+                <button type="button" data-corridor="royal-heritage" class="quick-tag-btn">Royal Heritage</button>
+                <button type="button" data-corridor="coastal-ghats" class="quick-tag-btn">Coastal &amp; Ghats</button>
+                <button type="button" data-corridor="seven-sisters" class="quick-tag-btn">Seven Sisters</button>
                 <button type="button" data-type="hill_station" class="quick-tag-btn">Hill Stations</button>
                 <button type="button" data-type="beach" class="quick-tag-btn">Beaches</button>
                 <button type="button" data-type="heritage" class="quick-tag-btn">Heritage</button>
@@ -225,7 +221,7 @@
         <div class="explore-workspace-grid">
 
           <!-- ── Desktop & Mobile Sidebar Filters ───────────── -->
-          <aside id="filterSidebar" class="explore-filter-sidebar" aria-label="Destination Filters"
+          <aside id="filterSidebar" class="explore-filter-sidebar" role="dialog" aria-modal="true" aria-label="Filter Destinations"
             aria-labelledby="filterCardTitle">
             <div class="filter-glass-card">
               <div class="filter-card-header">
@@ -246,6 +242,27 @@
               </div>
 
               <div class="filter-controls-stack">
+                <!-- Regional Corridor -->
+                <div class="filter-group">
+                  <label for="corridorFilter" class="filter-label">
+                    <span>Regional Corridor</span>
+                  </label>
+                  <div class="custom-select-wrap">
+                    <select id="corridorFilter" aria-label="Filter by regional corridor" class="custom-select">
+                      <option value="">All Corridors of Bharat</option>
+                      <option value="northern-alpine">Northern Alpine (Himalayas &amp; High Passes)</option>
+                      <option value="royal-heritage">Royal Heritage (Fortresses &amp; Desert Dunes)</option>
+                      <option value="coastal-ghats">Coastal &amp; Ghats (Backwaters &amp; Cloud Forests)</option>
+                      <option value="seven-sisters">Seven Sisters (Living Roots &amp; Rainforests)</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg></span>
+                  </div>
+                </div>
+
                 <!-- Region (Macro Zone) -->
                 <div class="filter-group">
                   <label for="regionFilter" class="filter-label">
@@ -1717,7 +1734,7 @@
   <!-- Mobile Nav (shared component) -->
   <div id="siteMobileNav"></div>
 
-  <script type="module" src="js/pages/explore.js?v=20261026_navbar_highlight_all"></script>
+  <script type="module" src="js/pages/explore.js?v=20261031_luxury_glass_corridor_v1"></script>
   <script>
     // Navbar glass transition on scroll
     window.addEventListener('scroll', function () {

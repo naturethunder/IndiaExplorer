@@ -58,7 +58,14 @@ export function registerServiceWorker() {
         // When the controller changes (new SW took over), reload all open tabs
         // to ensure they instantly receive fresh JSON + JS assets.
         let refreshing = false;
+        let hadExistingController = Boolean(navigator.serviceWorker.controller);
         navigator.serviceWorker.addEventListener('controllerchange', () => {
+          // Only reload if this is a genuine update of a previously active service worker,
+          // NOT on the very first install of the SW!
+          if (!hadExistingController) {
+            hadExistingController = true;
+            return;
+          }
           if (!refreshing) {
             refreshing = true;
             console.info('[ExploreDesh Go] New SW activated — reloading for fresh data.');

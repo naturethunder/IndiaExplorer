@@ -88,7 +88,7 @@ function build() {
   const vm = require('vm');
   const tSrc = fs.readFileSync(path.join(ROOT, 'js/data/taxonomy.js'), 'utf8').replace(/export\s+/g, '');
   const tax = {};
-  vm.runInNewContext(tSrc + '\n;Object.assign(__x, { CUSTOM_TYPE_MATCHERS });', { __x: tax });
+  vm.runInNewContext(tSrc + '\n;Object.assign(__x, { CUSTOM_TYPE_MATCHERS, CORRIDORS, CORRIDOR_LIST });', { __x: tax });
   const { CUSTOM_TYPE_MATCHERS } = tax;
 
   // Pre-calculate full state destination counts and category counts
@@ -103,6 +103,14 @@ function build() {
     customCounts[key] = all.filter(d => CUSTOM_TYPE_MATCHERS[key](d)).length;
   });
 
+  const corridorCounts = {};
+  if (tax.CORRIDOR_LIST) {
+    tax.CORRIDOR_LIST.forEach(c => {
+      const norm = c.states.map(s => s.toLowerCase());
+      corridorCounts[c.id] = all.filter(d => d.state && norm.includes(d.state.toLowerCase())).length;
+    });
+  }
+
   const updatedTimes = all.map(d => d.updatedAt).filter(Boolean);
 
   const featuredDests = all.filter(d => selectedSlugs.has(d.slug));
@@ -115,6 +123,7 @@ function build() {
       stateCounts,
       categoryCounts,
       customCounts,
+      corridorCounts,
       updatedTimes
     },
     destinations: featuredDests

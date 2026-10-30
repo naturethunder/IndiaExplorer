@@ -21,7 +21,7 @@ const STATES = idx.meta.states;
 // Load the ES-module taxonomy by stripping `export ` and running it in a sandbox.
 const tSrc = fs.readFileSync(path.join(ROOT, 'js/data/taxonomy.js'), 'utf8').replace(/export\s+/g, '');
 const tax = {};
-vm.runInNewContext(tSrc + '\n;Object.assign(__x,{STATE_ZONE,ZONES,SEASON_MONTHS,SEASONS,zoneOf,seasonsOf,resolveState});', { __x: tax });
+vm.runInNewContext(tSrc + '\n;Object.assign(__x,{STATE_ZONE,ZONES,SEASON_MONTHS,SEASONS,CORRIDORS,CORRIDOR_LIST,corridorOf,zoneOf,seasonsOf,resolveState});', { __x: tax });
 
 let fails = 0;
 function check(label, ok, detail) {
@@ -48,6 +48,12 @@ tax.ZONES.forEach(function (z) {
 tax.SEASONS.forEach(function (s) {
   check('season=' + s, D.some(function (d) { return tax.seasonsOf(d.bestTime.months).indexOf(s) >= 0; }));
 });
+if (tax.CORRIDOR_LIST) {
+  tax.CORRIDOR_LIST.forEach(function (c) {
+    const normStates = c.states.map(function (s) { return s.toLowerCase(); });
+    check('corridor=' + c.id, D.some(function (d) { return normStates.indexOf((d.state || '').toLowerCase()) >= 0; }));
+  });
+}
 
 // ── Every state maps to a known zone (no destination falls out of Region) ─
 console.log('State → zone coverage:');

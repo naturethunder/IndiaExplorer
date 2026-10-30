@@ -413,7 +413,7 @@ body.explore-immersive :focus-visible {
   background: linear-gradient(135deg, rgba(245, 197, 66, 0.12), rgba(217, 119, 6, 0.18)) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(245, 197, 66, 0.45) !important;
-  border-bottom: 2px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 6px 20px -3px rgba(245, 197, 66, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
   transform: translateY(-2px);
 }
@@ -707,7 +707,7 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
   gap: 8px;
   min-width: max-content;
   overflow: visible;
-  padding: 4px 2px;
+  padding: 6px 12px;
 }
 
 .category-scroll-arrow {
@@ -811,23 +811,28 @@ html[data-theme="light"] .category-scroll-arrow:hover svg {
 }
 
 .category-pill-btn {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  padding: 10px 16px;
-  border-radius: var(--exp-radius-md) !important;
-  border: 1px solid var(--exp-border) !important;
-  background: rgba(255, 255, 255, 0.03) !important;
-  color: var(--exp-text-main);
-  font-size: 13px;
-  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(15, 23, 42, 0.60) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   touch-action: manipulation;
   user-select: none;
-  box-shadow: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 .category-pill-btn:focus-visible {
@@ -837,32 +842,48 @@ html[data-theme="light"] .category-scroll-arrow:hover svg {
 
 .category-pill-btn svg {
   flex: 0 0 auto;
-  color: var(--exp-emerald-light);
-  stroke: var(--exp-emerald-light);
-  transition: color 0.2s ease, transform 0.2s ease, stroke 0.2s ease;
+  color: #F5C542;
+  stroke: #F5C542;
+  transition: transform 0.25s ease, filter 0.25s ease, stroke 0.25s ease;
 }
 
-.category-pill-btn:hover,
-.category-pill-btn:active,
+.category-pill-btn:hover {
+  background: rgba(245, 197, 66, 0.12) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1px solid rgba(245, 197, 66, 0.45) !important;
+  /* refined perimeter */
+  color: #FFFFFF !important;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 18px rgba(245, 197, 66, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.22) !important;
+}
+
+.category-pill-btn:hover svg {
+  color: #F5C542 !important;
+  stroke: #F5C542 !important;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(245, 197, 66, 0.6));
+}
+
 .category-pill-btn.active,
 .category-pill-btn[aria-pressed="true"] {
-  background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
-  border: 1px solid rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
-  color: var(--white) !important;
-  font-weight: 600 !important;
-  box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
-  border-radius: var(--exp-radius-md) !important;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.22) 0%, rgba(217, 119, 6, 0.28) 100%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(245, 197, 66, 0.70) !important;
+  /* refined perimeter */
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 197, 66, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+  border-radius: 9999px !important;
   transform: translateY(-1px);
 }
 
-.category-pill-btn:hover svg,
-.category-pill-btn:active svg,
 .category-pill-btn.active svg,
 .category-pill-btn[aria-pressed="true"] svg {
   color: #F5C542 !important;
   stroke: #F5C542 !important;
-  filter: drop-shadow(0 0 3px rgba(245, 197, 66, 0.5));
+  filter: drop-shadow(0 0 8px rgba(245, 197, 66, 0.8));
 }
 
 
@@ -1670,7 +1691,7 @@ html[data-theme="light"] body.explore-immersive .dest-card-item:hover .dest-expl
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   color: var(--white) !important;
   border-color: rgba(245, 197, 66, 0.4) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
 }
@@ -1939,7 +1960,7 @@ body.explore-immersive input[type="submit"]:active {
   border-top: 1px solid rgba(245, 197, 66, 0.35) !important;
   border-left: 1px solid rgba(245, 197, 66, 0.35) !important;
   border-right: 1px solid rgba(245, 197, 66, 0.35) !important;
-  border-bottom: 2.5px solid #F5C542 !important;
+  /* refined perimeter */
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
 }
@@ -2214,33 +2235,41 @@ html[data-theme="light"] body.explore-immersive #categoryBar {
 html[data-theme="light"] body.explore-immersive .category-pill-btn,
 html[data-theme="light"] body.explore-immersive .quick-tag-btn,
 html[data-theme="light"] body.explore-immersive .dest-filter-btn {
-  background: #F1F5F9 !important;
-  border: 1px solid #CBD5E1 !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(217, 119, 6, 0.20) !important;
+  border-radius: 9999px !important;
   color: #334155 !important;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.90) !important;
 }
 
 html[data-theme="light"] body.explore-immersive .category-pill-btn:hover,
 html[data-theme="light"] body.explore-immersive .quick-tag-btn:hover,
 html[data-theme="light"] body.explore-immersive .dest-filter-btn:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(254, 243, 199, 0.90) 100%) !important;
-  backdrop-filter: blur(18px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(18px) saturate(190%) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
   color: #0F172A !important;
-  border: 1px solid rgba(217, 119, 6, 0.45) !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  box-shadow: 0 6px 20px -2px rgba(180, 83, 9, 0.20), 0 0 16px rgba(245, 158, 11, 0.26), inset 0 1px 1px 0 #FFFFFF !important;
+  border: 1px solid rgba(217, 119, 6, 0.48) !important;
+  /* refined perimeter */
+  transform: translateY(-1.5px) !important;
+  box-shadow: 0 6px 20px -2px rgba(217, 119, 6, 0.16), 0 0 14px rgba(245, 158, 11, 0.18), inset 0 1px 2px #FFFFFF !important;
 }
 
 html[data-theme="light"] body.explore-immersive .category-pill-btn.active,
 html[data-theme="light"] body.explore-immersive .quick-tag-btn.active,
 html[data-theme="light"] body.explore-immersive .dest-filter-btn.active {
-  background: linear-gradient(180deg, #FEF3C7 0%, #FDE68A 100%) !important;
-  border: 1px solid #F59E0B !important;
-  border-bottom: 2.5px solid #D97706 !important;
-  color: #92400E !important;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.96) 0%, rgba(253, 230, 138, 0.90) 100%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(217, 119, 6, 0.60) !important;
+  /* refined perimeter */
+  color: #78350F !important;
   font-weight: 700 !important;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.22), inset 0 1px 1px #FFFFFF !important;
 }
 
 /* ─── Destination Cards (The Grid Items) ─────────────────────────────────── */
