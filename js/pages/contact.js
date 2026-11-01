@@ -21,17 +21,17 @@ initLayout({ variant: 'company', active: 'contact' });
 applySEO({
   title: 'Contact Us — ExploreDesh',
   description: 'Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.',
-  canonicalPath: 'contact.html',
+  canonicalPath: '/contact',
   keywords: ['contact exploredesh', 'exploredesh support'],
 });
 injectJsonLd(contactPageJsonLd({
   title: 'Contact Us — ExploreDesh',
   description: 'Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.',
-  canonicalPath: 'contact.html',
+  canonicalPath: '/contact',
 }));
 injectJsonLd(breadcrumbJsonLd([
   { name: 'Home', path: '/' },
-  { name: 'Contact', path: 'contact.html' },
+  { name: 'Contact', path: '/contact' },
 ]));
 
 // ─── Contact form ───────────────────────────────────────

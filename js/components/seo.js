@@ -108,7 +108,6 @@ export function breadcrumbJsonLd(items = []) {
 /**
  * TouristDestination schema with full rich snippet signals:
  * - includesAttraction: TouristAttraction entities (Google "Things to do" knowledge graph)
- * - aggregateRating: Review stars in Google Search
  * - geo: GeoCoordinates for local map intent
  * - photo: Gallery array
  */
@@ -166,18 +165,8 @@ export function destinationJsonLd(dest, canonicalPath) {
     };
   }
 
-  // Google review stars (aggregateRating) — Rule C & F: strictly emit only when authentic data exists
-  const ratingVal = ov.rating || dest.rating;
-  const reviewCountVal = ov.reviewCount || dest.reviewCount;
-  if (ratingVal && reviewCountVal && Number(ratingVal) > 0 && Number(reviewCountVal) > 0) {
-    out.aggregateRating = {
-      '@type': 'AggregateRating',
-      ratingValue: Number(ratingVal),
-      bestRating: 5,
-      worstRating: 1,
-      ratingCount: Number(reviewCountVal),
-    };
-  }
+  // No aggregateRating: ratings/review counts in the catalogue are not sourced from real reviews,
+  // and Google's structured-data policy forbids marking up fabricated reviews. Re-add only with real data.
 
   // Hierarchy relationship (State & Country)
   if (dest.state) {

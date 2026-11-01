@@ -3,7 +3,7 @@
 > **Document Type:** Full Codebase & Systems Engineering Audit  
 > **Platform:** [ExploreDesh.com](https://exploredesh.com)  
 > **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 5 & Section 50  
-> **Date:** October 2026 (Phase 116 rev-69 update)  
+> **Date:** November 2026 (Phase 131 rev-85 update — duplicate JSON-LD removed from 3 pages, dead assets deleted ~4 MB)  
 > **Auditor:** Master SEO Engineering System
 
 ---
@@ -38,7 +38,7 @@ ExploreDesh implements an optimal XML Sitemap Index (`sitemap.xml`) dividing the
 3. `sitemap-destinations-1.xml`: 1,000 destination pages with Google Image Sitemap metadata.
 4. `sitemap-destinations-2.xml`: 1,000 destination pages with Google Image Sitemap metadata.
 5. `sitemap-destinations-3.xml`: 396 destination pages with Google Image Sitemap metadata.
-- **Total Sitemapped URLs:** **2,453**
+- **Total Sitemapped URLs:** **2,455**
 - **Total Indexed Images:** **11,980**
 
 ---
@@ -86,7 +86,7 @@ All 8 platform HTML templates enforce exactly one semantic `<h1>` element:
 ## 5. Structured Data (Schema.org JSON-LD)
 
 ExploreDesh injects rich, valid Schema.org entities across all core templates:
-1. **WebSite & Organization** (`index.html`): Declares sitename, publisher, logo, and Google Sitelinks Searchbox (`SearchAction` pointing to `destinations.html?q={search_term_string}`).
+1. **WebSite & Organization** (`index.html`): Declares sitename, publisher, logo, and Google Sitelinks Searchbox (`SearchAction` pointing to `destinations?q={search_term_string}`).
 2. **CollectionPage** (`destinations.html`): Declares the catalogue discovery collection for India travel.
 3. **TouristDestination** (`destination.html`):
    - Full entity representation (`@id`, `name`, `description`, `url`, `addressRegion`, `touristType`).

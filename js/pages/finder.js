@@ -19,12 +19,12 @@ initLayout({ active: 'finder' });
 applySEO({
   title: 'Trip Planner — ExploreDesh',
   description: 'Describe your ideal trip in plain English and let the Trip Planner match you to the perfect Indian destinations — by type, budget, month, region and vibe. Instant recommendations, no signup required.',
-  canonicalPath: 'ai-finder.html',
+  canonicalPath: '/ai-finder',
   keywords: ['trip planner', 'trip planner india', 'india trip finder', 'where to travel in india', 'india destination search'],
 });
 injectJsonLd(breadcrumbJsonLd([
   { name: 'Home', path: '/' },
-  { name: 'Trip Planner', path: 'ai-finder.html' },
+  { name: 'Trip Planner', path: '/ai-finder' },
 ]));
 
 let idx;
@@ -469,7 +469,7 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     const hotelsList = (detailedDest.hotels || []).slice(0, 3).map(function (h) { return esc(h.name); }).join(', ');
 
     detailsHTML = '<div class="mt-3 pt-3 border-t border-white/10 space-y-1.5 text-left text-xs text-slate-300">' +
-      (placesList ? '<div><strong class="text-slate-200">🏞️ Places:</strong> ' + placesList + '</div>' : '') +
+      (placesList ? '<div><strong class="text-slate-200">Places:</strong> ' + placesList + '</div>' : '') +
       (hotelsList ? '<div><strong class="text-slate-200">🏨 Stays:</strong> ' + hotelsList + '</div>' : '') +
       '</div>';
   }
@@ -489,9 +489,6 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     '</div>' +
     '<div class="p-4 sm:p-5">' +
     '<div class="flex items-center justify-between mb-2">' +
-    '<div class="flex items-center gap-1.5"><span class="text-amber-400">★</span>' +
-    '<span class="font-bold text-sm text-white">' + esc(d.rating) + '</span>' +
-    '<span class="text-slate-400 text-xs">(' + inr(d.reviewCount) + ')</span></div>' +
     '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
@@ -509,18 +506,18 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
 function understandingHTML(p) {
   const tags = [];
   p.names.forEach(function (slug) { const d = bySlug.get(slug); if (d) tags.push('🔎 ' + d.title); });
-  p.places.forEach(function (x) { tags.push('🏞️ ' + x.name); });
+  p.places.forEach(function (x) { tags.push(x.name); });
   p.brands.forEach(function (b) { tags.push('🏨 ' + b.replace(/\b\w/g, function (c) { return c.toUpperCase(); })); });
   p.types.forEach(function (t) { const o = DESTINATION_TYPES.find(function (x) { return x.id === t; }); tags.push((o ? o.icon + ' ' + o.label : t)); });
   if (p.months.length) tags.push('🗓️ ' + p.months.slice().sort(function (a, b) { return a - b; }).map(monthNameOf).join(', '));
-  if (p.maxPrice != null) tags.push('💰 under ₹' + p.maxPrice.toLocaleString());
-  if (p.budget) tags.push('💸 budget');
-  if (p.luxury) tags.push('👑 luxury');
-  p.states.forEach(function (s) { tags.push('📍 ' + s); });
-  directionStates(p.directions).length && p.directions.forEach(function (d) { tags.push('🧭 ' + d); });
-  if (p.near) tags.push('🎯 near ' + p.near.title);
-  if (p.nearDelhi) tags.push('🎯 near Delhi');
-  p.vibes.forEach(function (v) { if (p.text.indexOf(v) >= 0 && tags.indexOf('✨ ' + v) < 0) tags.push('✨ ' + v); });
+  if (p.maxPrice != null) tags.push('under ₹' + p.maxPrice.toLocaleString());
+  if (p.budget) tags.push('budget');
+  if (p.luxury) tags.push('luxury');
+  p.states.forEach(function (s) { tags.push(s); });
+  directionStates(p.directions).length && p.directions.forEach(function (d) { tags.push(d); });
+  if (p.near) tags.push('near ' + p.near.title);
+  if (p.nearDelhi) tags.push('near Delhi');
+  p.vibes.forEach(function (v) { if (p.text.indexOf(v) >= 0 && tags.indexOf(v) < 0) tags.push(v); });
   if (!tags.length) return '';
   return '<div class="bg-slate-900/80 border border-white/15 rounded-xl p-4 backdrop-blur-md shadow-lg">' +
     '<p class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">' +
@@ -598,7 +595,7 @@ function generateItineraryHTML(dest, days, userCoords) {
       // Add stay from hotels list
       const hotel = hotels[d % hotels.length] || hotels[0];
       if (hotel) {
-        html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>';
+        html += '<p><strong class="text-slate-200">Stay:</strong> Relax at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay).</p>';
       }
       html += '</div></div>';
     } else {
@@ -613,7 +610,7 @@ function generateItineraryHTML(dest, days, userCoords) {
         '<div class="space-y-2.5 text-sm text-slate-300">' +
         (p1 ? '<p><strong class="text-slate-200">Morning:</strong> Head to <span class="text-amber-300 font-semibold">' + esc(p1.name) + '</span>. ' + esc(p1.description || 'Spend some quiet time exploring the scenic landscape.') + '</p>' : '') +
         (p2 ? '<p><strong class="text-slate-200">Afternoon:</strong> Visit <span class="text-amber-300 font-semibold">' + esc(p2.name) + '</span>. ' + esc(p2.description || 'Enjoy local specialties, photograph local architecture and interact with locals.') + '</p>' : '') +
-        (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay, rated ' + esc(hotel.rating) + '⭐).</p>' : '') +
+        (hotel ? '<p><strong class="text-slate-200">Evening & Stay:</strong> Rest and unwind at <span class="text-amber-400 font-semibold">' + esc(hotel.name) + '</span> (' + esc(hotel.tier || 'Mid-range') + ' stay).</p>' : '') +
         '</div>' +
         '</div>';
     }
@@ -623,9 +620,13 @@ function generateItineraryHTML(dest, days, userCoords) {
   return html;
 }
 
+let runSeq = 0;
 async function run(raw, userCoords) {
+  // Only the latest run may write results; earlier slow runs (itinerary delays/fetches) are dropped.
+  const myRun = ++runSeq;
   if (!SEARCH) {
     await ensureSearchIndex();
+    if (myRun !== runSeq) return;
   }
   const p = parsePrompt(raw);
   const destIntent = p.types.length || p.months.length || p.maxPrice != null || p.budget || p.luxury ||
@@ -652,7 +653,7 @@ async function run(raw, userCoords) {
   // Check if it's an itinerary request
   const clean = raw.toLowerCase();
   const daysMatch = clean.match(/\b([1-9]|1[0-5])\s*days?\b/) || clean.match(/\bday\s*([1-9]|1[0-5])\b/) || clean.match(/\b([1-9]|1[0-5])\s*day\b/);
-  const isItineraryRequest = clean.includes('itinerary') || clean.includes('iternary') || clean.includes('plan') || daysMatch;
+  const isItineraryRequest = clean.includes('itinerary') || clean.includes('iternary') || /\bplan(s|ning)?\b/.test(clean) || daysMatch;
 
   if (isItineraryRequest) {
     let days = 5;
@@ -677,19 +678,21 @@ async function run(raw, userCoords) {
     grid.innerHTML = '<div class="col-span-full bg-slate-900/90 border border-amber-500/30 rounded-2xl shadow-xl p-8 text-center text-slate-200 mb-8 backdrop-blur-xl">' +
       '<div class="flex flex-col items-center justify-center gap-3">' +
       '<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-400"></div>' +
-      '<div id="itineraryStatus" class="text-sm font-semibold text-amber-400">🔍 Connecting to database indexes...</div>' +
+      '<div id="itineraryStatus" class="text-sm font-semibold text-amber-400">Connecting to database indexes...</div>' +
       '</div></div>';
     scrollToResults();
 
     const statusEl = document.getElementById('itineraryStatus');
     await new Promise(function (resolve) { setTimeout(resolve, 600); });
-    if (statusEl) statusEl.textContent = '📡 Consulting Google maps coordinates & hidden sights...';
+    if (statusEl) statusEl.textContent = 'Consulting coordinates & hidden sights...';
     await new Promise(function (resolve) { setTimeout(resolve, 600); });
     if (statusEl) statusEl.textContent = '🤖 Analyzing itinerary structure for ' + days + ' days...';
     await new Promise(function (resolve) { setTimeout(resolve, 400); });
+    if (myRun !== runSeq) return;
 
     try {
       const dest = await fetchDestination(slug);
+      if (myRun !== runSeq) return;
       noMatch.style.display = 'none';
       resultsHeader.style.display = 'flex';
       resultsTitle.textContent = 'Custom AI Itinerary & Matches suggested';
@@ -711,6 +714,7 @@ async function run(raw, userCoords) {
         return fetchDestination(x.d.slug).catch(function () { return null; });
       }));
 
+      if (myRun !== runSeq) return;
       let gridHTML = '<div class="col-span-full">' + itineraryHTML + '</div>';
       gridHTML += otherPicks.slice(0, 9).map(function (x, i) {
         return cardHTML(x.d, x.reasons, userCoords, x.d.slug === slug ? dest : detailPicks[i]);
@@ -729,6 +733,7 @@ async function run(raw, userCoords) {
     const detailedDests = await Promise.all(topMatches.map(function (x) {
       return fetchDestination(x.d.slug).catch(function () { return null; });
     }));
+    if (myRun !== runSeq) return;
 
     noMatch.style.display = 'none';
     resultsHeader.style.display = 'flex';
@@ -779,7 +784,7 @@ function renderPicks(headerText, noteHTML, picks) {
 
 function noteCard(text) {
   return '<div class="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-4 flex items-center gap-3 backdrop-blur-md shadow-lg">' +
-    '<span class="text-xl p-1.5 bg-emerald-500/10 rounded-lg">📍</span><span class="text-sm text-slate-200 font-medium">' + esc(text) + '</span></div>';
+    '<span class="text-xl p-1.5 bg-emerald-500/10 rounded-lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="text-sm text-slate-200 font-medium">' + esc(text) + '</span></div>';
 }
 
 // Best destinations to visit THIS month (seasonality only — no location).
@@ -804,7 +809,7 @@ async function bestThisMonth(headerNote) {
   });
 
   renderPicks('Best places to visit in ' + monthNameOf(month),
-    noteCard(headerNote || ('Top-rated destinations that are in season right now (' + monthNameOf(month) + ').')), picksWithDetails);
+    noteCard(headerNote || ('Recommended destinations that are in season right now (' + monthNameOf(month) + ').')), picksWithDetails);
 }
 
 // Best destinations NEAR the visitor, weighted toward what's in season this month.
@@ -858,7 +863,7 @@ function locateMe() {
     return;
   }
   const original = btn ? btn.innerHTML : '';
-  if (btn) { btn.disabled = true; btn.innerHTML = '📍 Locating…'; }
+  if (btn) { btn.disabled = true; btn.innerHTML = 'Locating…'; }
   function restore() { if (btn) { btn.disabled = false; btn.innerHTML = original; } }
   navigator.geolocation.getCurrentPosition(
     function (pos) {

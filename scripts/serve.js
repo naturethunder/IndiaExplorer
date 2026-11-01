@@ -42,9 +42,25 @@ const MIME = {
 const COMPRESSIBLE = /^(text\/|application\/(json|xml|javascript|manifest\+json))/i;
 const gzipCache = new Map();
 
+// Never serve secrets (.env*, .git, .claude …) or repo tooling/docs, even though they sit under ROOT.
+const BLOCKED_TOP_DIRS = new Set(['scripts', 'docs', 'reports', 'node_modules']);
+
+function isServable(relPath) {
+  const segs = relPath.split(/[\\/]+/).filter(Boolean);
+  if (segs.some((s) => s.startsWith('.'))) return false;
+  return !(segs.length && BLOCKED_TOP_DIRS.has(segs[0].toLowerCase()));
+}
+
+function isInside(root, full) {
+  const r = root.toLowerCase();
+  const f = full.toLowerCase();
+  return f === r || f.startsWith(r + path.sep);
+}
+
 function checkFile(relPath) {
+  if (!isServable(relPath)) return null;
   const fullPath = path.normalize(path.join(ROOT, relPath));
-  if (fullPath.toLowerCase().startsWith(ROOT.toLowerCase())) {
+  if (isInside(ROOT, fullPath)) {
     try {
       const st = fs.statSync(fullPath);
       if (st.isFile()) return { fullPath, stat: st };
@@ -52,7 +68,7 @@ function checkFile(relPath) {
   }
   const stubPath = path.normalize(path.join(ROOT, 'stubs', relPath));
   const stubsRoot = path.join(ROOT, 'stubs');
-  if (stubPath.toLowerCase().startsWith(stubsRoot.toLowerCase())) {
+  if (isInside(stubsRoot, stubPath)) {
     try {
       const st = fs.statSync(stubPath);
       if (st.isFile()) return { fullPath: stubPath, stat: st };
@@ -108,7 +124,6 @@ const server = http.createServer((req, res) => {
       res.writeHead(304, {
         'ETag': etag,
         'Cache-Control': (ext === '.html' || ext === '.css' || ext === '.js' || ext === '.json') ? 'no-cache, must-revalidate' : 'public, max-age=86400, stale-while-revalidate=3600',
-        'Access-Control-Allow-Origin': '*',
       });
       res.end();
       return;
@@ -123,7 +138,6 @@ const server = http.createServer((req, res) => {
       'Content-Type': contentType,
       'ETag': etag,
       'Cache-Control': cacheControl,
-      'Access-Control-Allow-Origin': '*',
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'SAMEORIGIN',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
@@ -177,7 +191,8 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+// Loopback only: this is a dev server, not meant to be reachable from the LAN.
+server.listen(PORT, '127.0.0.1', () => {
   console.log('⚡ IndiaExplore High-Performance Server running:');
   console.log('   http://localhost:' + PORT + '/');
   console.log('   Gzip Compression + ETag 304 Caching Active.');

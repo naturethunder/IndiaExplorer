@@ -5,7 +5,7 @@
 > cheapest and most expensive real listing for that destination).
 >
 > Regenerate with `node scripts/build-destinations-doc.js` after data changes.
-> Last generated: 2026-10-22.
+> Last generated: 2026-11-01.
 
 **36 states/UTs · 2,396 destinations**
 
@@ -2492,7 +2492,7 @@
 | **Bagnath Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
 | **Baleshwar Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
 | **Beatles Ashram** | Heritage | Mar–Jun, Sep–Nov | ₹700 – ₹18,000 |
-| **Bhimtal** | Hill Station | Mar–Jun, Sep–Dec | ₹0 – ₹0 |
+| **Bhimtal** | Hill Station | Mar–Jun, Sep–Dec | ₹1,800 – ₹6,500 |
 | **Binsar** | Wildlife | Mar–Jun, Sep–Nov | ₹800 – ₹16,000 |
 | **Chakrata** | Hill Station | Mar–Jun, Sep–Nov | ₹1,000 – ₹26,000 |
 | **Chandrabadani Devi** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
@@ -2523,7 +2523,7 @@
 | **Nainital** | Hill Station | Mar–Jun, Sep–Nov | ₹1,000 – ₹16,000 |
 | **Nanda Devi and Valley of Flowers National Parks** | Wildlife | Mar–Jun, Sep–Nov | ₹800 – ₹16,000 |
 | **Nanda Devi National Park** | Wildlife | Mar–Jun, Sep–Nov | ₹2,500 – ₹25,000 |
-| **Naukuchiatal** | Hill Station | Mar–Jun, Sep–Nov | ₹0 – ₹0 |
+| **Naukuchiatal** | Hill Station | Mar–Jun, Sep–Nov | ₹1,600 – ₹7,200 |
 | **Neelkanth Mahadev Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
 | **Patal Bhuvaneshwar** | Heritage | Mar–Jun, Sep–Nov | ₹1,000 – ₹16,000 |
 | **Raghunathji Temple, Devprayag** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
@@ -2531,7 +2531,7 @@
 | **Rishikesh** | Spiritual | Jan–Jun, Sep–Dec | ₹500 – ₹18,000 |
 | **Rudranath** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
 | **Sapta Badri** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹18,000 |
-| **Sattal** | Hill Station | Mar–Jun, Oct–Dec | ₹0 – ₹0 |
+| **Sattal** | Hill Station | Mar–Jun, Oct–Dec | ₹1,500 – ₹6,800 |
 | **Sonanadi Wildlife Sanctuary** | Wildlife | Mar–Jun, Sep–Nov | ₹800 – ₹12,000 |
 | **St. John in the Wilderness (Nainital)** | Spiritual | Mar–Jun, Sep–Nov | ₹500 – ₹16,000 |
 | **Tapkeshwar Temple** | Spiritual | Mar–Jun, Sep–Nov | ₹900 – ₹9,000 |

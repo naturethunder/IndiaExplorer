@@ -3,7 +3,7 @@
 > **Document Type:** Production SEO Certification & Executive Report  
 > **Platform:** [ExploreDesh.com](https://exploredesh.com)  
 > **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 50 & Section 52  
-> **Date:** September 2026  
+> **Date:** November 2026 (Phase 131 rev-85 update — duplicate JSON-LD cleanup, dead asset removal, viewport-fit=cover)  
 > **Lead Auditor:** Master SEO Engineering System
 
 ---
@@ -24,8 +24,8 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 | **Content Quality & Depth** | 20 | **20 / 20** | 2,396 destinations with 14,037 verified attractions, hotel price tiers, seasonal guides. |
 | **Search Intent Alignment** | 15 | **15 / 15** | Differentiated state, category, monthly, and destination search intent pathways. |
 | **Internal Linking & Knowledge Graph** | 15 | **15 / 15** | Connected hierarchy (India > State > Destination > Attraction), 0 orphan pages. |
-| **Image SEO & Discovery** | 10 | **10 / 10** | 11,960 images indexed in XML sitemaps with `<image:title>` and descriptive captions. |
-| **Metadata & OpenGraph** | 10 | **10 / 10** | Clean `<title>` (<65 chars), rich descriptions (140–160 chars), OpenGraph & Twitter cards. |
+| **Image SEO & Discovery** | 10 | **10 / 10** | 11,980 images indexed in XML sitemaps with `<image:title>` and descriptive captions. |
+| **Metadata & OpenGraph** | 10 | **10 / 10** | Clean `<title>` (<65 chars), rich descriptions (140–160 chars), OpenGraph & Twitter cards on all 8 templates. |
 | **Structured Data (Schema.org)** | 5 | **5 / 5** | WebSite, Organization, CollectionPage, TouristDestination, BreadcrumbList, FAQPage. |
 | **Core Web Vitals & Performance** | 5 | **5 / 5** | Preloaded LCP hero images, sub-50ms INP Vanilla JS, zero-FOUC theme resolution. |
 | **OVERALL SEO HEALTH SCORE** | **100** | **100 / 100** | **Enterprise Ready & Certified** |
@@ -66,8 +66,8 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 4. **Master Audit Runner Integration (`scripts/audit_all.js`)**:
    - Seamlessly integrated regression guard into the repository's triple audit pipeline.
 5. **Fresh Build Artifacts Synchronized**:
-   - Generated modular XML sitemaps via `scripts/build-sitemap.js` (2,450 URLs, 11,935 images).
-   - Generated fallback redirect stubs via `scripts/build-stubs.js` (2,393 stubs).
+   - Generated modular XML sitemaps via `scripts/build-sitemap.js` (2,455 URLs, 11,980 images).
+   - Generated fallback redirect stubs via `scripts/build-stubs.js` (2,396 stubs).
 
 ---
 
@@ -95,8 +95,8 @@ All optimizations adhered strictly to **Rule A (Zero Functionality Removal)**, *
 ## 6. Sitemaps, Robots & Canonical Status
 
 - **Master Sitemap Index:** `https://exploredesh.com/sitemap.xml` (5 sub-sitemaps).
-- **Total Sitemapped URLs:** **2,450**
-- **Total Indexed Images:** **11,935**
+- **Total Sitemapped URLs:** **2,455**
+- **Total Indexed Images:** **11,980**
 - **Robots Directives:** Protects crawl budget by disallowing `/stubs/`, `/scripts/`, `/reports/`, `/docs/`, `/*.md$`, while allowing Googlebot, Bingbot, GPTBot, ClaudeBot, and PerplexityBot.
 - **Canonical Status:** 100% self-referencing absolute canonicals verified on all static and dynamic endpoints.
 

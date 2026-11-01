@@ -2,7 +2,7 @@
 
 > **Scope:** Deep audit and architectural elevation of the live ExploreDesh platform across Homepage, Destinations Explorer, Destination Detail pages, AI Trip Finder, Navigation, Interactive Map, and all supporting pages.
 > **Standard:** Apple-level visual polish, Airbnb-level usability, Google-level clarity, and world-class luxury travel editorial.
-> **Date:** 2026-10-24 | Milestone: Phase 120 rev-73 ("100,000% WOW" Editorial Stacked Header Standard, Pre-Footer Regional Atlas Accordion & Service Worker v1.6.5 Cache Elevation)
+> **Date:** 2026-11-01 | Milestone: Phase 131 rev-85 (Platform Quality Elevation & Luxury UX Polish, 18 fixes: viewport-fit=cover, WCAG contrast, carousel pause, JSON-LD dedup, dead assets, gold scroll progress, back-to-top, print stylesheet, SW v1.7.8)
 
 ---
 
@@ -33,8 +33,8 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 - **Pre-Footer Regional Atlas Accordion (`destinations.html`)**:
   - Converted 36 States & UTs directory into a native semantic `<details>` / `<summary>` accordion widget.
   - Retains 100% crawlable raw HTML links for Googlebot while keeping visual canvas pristine and uncluttered.
-- **Service Worker v1.6.5 & Stale-While-Revalidate Purge**:
-  - Bumped Service Worker cache from `v1.6.4` to `v1.6.5` (`sw.js`) and stylesheet query parameters to `?v=20261024_luxury_v3`.
+- **Service Worker v1.7.6 & Stale-While-Revalidate Purge**:
+  - Bumped Service Worker cache to `v1.7.6` (`sw.js`) and stylesheet query parameters to `?v=20261031_luxury_debulk_v1`.
 - **Quality Verification**:
   - UI/UX Pro Max QA Audit: **0 issues detected** across all 7 categories (100% PASS).
   - Master SEO Audit: **61/61 PASSED** (0 errors, 0 warnings).
@@ -90,7 +90,7 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 - Search inputs include high-contrast placeholders (`#64748B`), explicit `<label>` or `aria-label`, clear button triggers, and accessible error message banners (`#searchError`).
 
 ### 14. URL & Routing Safety
-- All 2,393 destination URLs (`destination.html?slug=...`), 36 state filters, category query params, and canonical redirect stubs (`stubs/...`) preserved with 100% fidelity.
+- All 2,396 destination URLs (`destination?slug=...`), 36 state filters, category query params, and canonical redirect stubs (`stubs/...`) preserved with 100% fidelity.
 
 ### 15. SEO Visual Trade-Off Audit
 - Heading hierarchy strictly enforced: exactly one `<h1>` per page, sequential `<h2>` and `<h3>` tags. Zero crawlable text replaced by non-semantic images.
@@ -102,7 +102,7 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 - High-resolution SVG favicon (`images/favicon.svg`), branded manifest colors, and consistent page titles across the entire domain.
 
 ### 18. Footer Architecture
-- Semantic footer with deep slate links, heritage gold hover underlines, copyright notice, and legal links (`privacy.html`, `terms.html`, `contact.html`).
+- Semantic footer with deep slate links, heritage gold hover underlines, copyright notice, and legal links (`/privacy`, `/terms`, `/contact`).
 
 ### 19. Trust & Credibility
 - Authentic MPSTDC, KTDC, and state tourism partner badges, real verified stay pricing, authentic weather readings from OpenWeather API, and zero fabricated claims.
@@ -140,7 +140,7 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 - Unified border radii (`0.75rem` for pills, `1.25rem` for cards, `1.5rem` for hero sheets). Standardized 44px minimum button heights.
 
 ### 28. Destination Data Scalability
-- Catalog-wide virtualized rendering for 2,393 destinations ensuring smooth 60fps scrolling without DOM explosion.
+- Catalog-wide virtualized rendering for 2,396 destinations ensuring smooth 60fps scrolling without DOM explosion.
 
 ### 29. Dataset Integrity & Memory Safety
 - Lazy-loaded destination JSON payloads (cuts 2.3MB index down to ~290KB gzipped).
@@ -156,7 +156,7 @@ However, deep visual inspection of **Light Mode** across live browser sessions i
 
 ## 3. Invariant Standards Maintained
 
-- **0 Functionality Deleted:** All 2,393 destinations, 14,013 places, 10,427 stays preserved.
+- **0 Functionality Deleted:** All 2,396 destinations, 14,037 places, 10,439 stays preserved.
 - **0 Data Regressions:** Real pricing, real routes, and real weather data preserved.
 - **100% Dark Mode Parity:** Zero regressions on OLED Cinema Dark Mode.
 - **Production QA Score:** 100/100 (`node scripts/ui_ux_qa_audit.js`).

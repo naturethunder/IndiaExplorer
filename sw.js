@@ -10,7 +10,7 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.7.2';
+const VERSION = 'v1.7.8';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
@@ -133,9 +133,13 @@ self.addEventListener('fetch', (event) => {
           if (cached) return cached;
 
           // For destination page with query params (/destination.html?slug=...)
-          if (url.pathname.includes('destination')) {
+          // (exact-path tests: '/destinations' also contains 'destination' but is the listing page)
+          if (/^\/destination(\.html)?\/?$/.test(url.pathname)) {
             const destShell = await caches.match('/destination.html');
             if (destShell) return destShell;
+          } else if (/^\/destinations(\.html)?\/?$/.test(url.pathname)) {
+            const listShell = await caches.match('/destinations.html');
+            if (listShell) return listShell;
           }
 
           // Fallback to home page or root shell

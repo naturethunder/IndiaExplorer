@@ -125,11 +125,11 @@ let dest = null;
 if (slug) {
   try {
     dest = await fetchDestination(slug);
-    if (dest && dest.slug) {
-      localStorage.setItem('exploredesh_last_destination', dest.slug);
-    }
   } catch (e) {
     dest = null;
+  }
+  if (dest && dest.slug) {
+    try { localStorage.setItem('exploredesh_last_destination', dest.slug); } catch (_) { }
   }
 }
 
@@ -205,14 +205,14 @@ function main(dest, idx) {
     extra_luxury: { label: 'Imperial Estates', range: '₹25,000+' },
   };
   const DESTINATION_TYPES = (idx && idx.meta && idx.meta.types) ? idx.meta.types : [
-    { id: 'heritage', label: 'Heritage', icon: '🏛️' },
-    { id: 'city', label: 'City', icon: '🏙️' },
-    { id: 'lakes', label: 'Lakes', icon: '🏞️' },
-    { id: 'spiritual', label: 'Spiritual', icon: '🕌' },
-    { id: 'hill_station', label: 'Hill Stations', icon: '🏔️' },
-    { id: 'beach', label: 'Beaches', icon: '🏖️' },
-    { id: 'wildlife', label: 'Wildlife', icon: '🐯' },
-    { id: 'adventure', label: 'Adventure', icon: '⛺' },
+    { id: 'heritage', label: 'Heritage', svg: 'landmark' },
+    { id: 'city', label: 'City', svg: 'globe' },
+    { id: 'lakes', label: 'Lakes', svg: 'waves' },
+    { id: 'spiritual', label: 'Spiritual', svg: 'temple' },
+    { id: 'hill_station', label: 'Hill Stations', svg: 'mountain' },
+    { id: 'beach', label: 'Beaches', svg: 'waves' },
+    { id: 'wildlife', label: 'Wildlife', svg: 'paw-print' },
+    { id: 'adventure', label: 'Adventure', svg: 'tent' },
   ];
 
   function cleanAltText(str) {
@@ -853,111 +853,6 @@ function main(dest, idx) {
     };
   }
 
-  function downloadBudgetBreakdownFile(b) {
-    const lines = [
-      '==============================================================',
-      ' EXPLOREDESH — ULTRA LUXURY TRIP FINANCIAL DOSSIER',
-      ' Destination: ' + dest.title + ', ' + (dest.state || 'India') + ', India',
-      ' Date Generated: ' + new Date().toLocaleDateString('en-IN', { dateStyle: 'full' }),
-      '==============================================================',
-      '',
-      'TRIP CONFIGURATION & SPECIFICATION:',
-      '  • Passenger Manifest: ' + b.pCfg.label + ' (' + b.pCfg.desc + ')',
-      '  • Travel Class:       ' + (b.sKey.toUpperCase()) + ' (' + (b.sKey === 'ultra_luxury' ? 'Ultra Luxury / Royal Concierge' : b.sKey === 'luxury' ? 'Premium Executive / 4-Star' : b.sKey === 'moderate' ? 'Comfort Explorer / 3-Star' : 'Nomad / Backpacker') + ')',
-      '  • Trip Duration:      ' + b.dVal + ' Days / ' + b.nights + ' Nights',
-      '  • Currency Standard:  ' + b.currKey,
-      '  • Season Setting:     ' + (b.seasonKey === 'peak' ? 'Peak Festive (+20% Demand Surge)' : b.seasonKey === 'monsoon' ? 'Monsoon / Off-Peak (-18% Perk)' : 'Standard Regular Season'),
-      '',
-      'ITEMIZED FINANCIAL AUDIT & BREAKDOWN:',
-      '--------------------------------------------------------------',
-      ' 1. ACCOMMODATION (STAYS):',
-      '    • Tier & Category: ' + b.stayTierLabel,
-      '    • Verified Rate:   ' + formatBudgetMoney(b.nightlyRate, b.currKey) + ' / night (' + b.nights + ' nights)',
-      '    • Matched Haven:   ' + (b.matchedHotel ? b.matchedHotel.name : 'Verified Luxury Suites & Resorts'),
-      '    • Total Stay Cost: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)',
-      '',
-      ' 2. CHAUFFEUR & MOBILITY FLEET:',
-      '    • Vehicle Class:   ' + b.transportVehicle,
-      '    • Service Scope:   ' + b.transportDesc,
-      '    • Daily Tariff:    ' + formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day (' + b.dVal + ' days)',
-      '    • Total Mobility:  ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)',
-      '',
-      ' 3. GASTRONOMY & ROYAL DINING:',
-      '    • Dining Tier:     ' + b.diningTier,
-      '    • Service Scope:   ' + b.diningDesc,
-      '    • Meal Allowance:  ' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day' + (b.pCfg.kids > 0 ? ', ' + formatBudgetMoney(b.kidMealPerDay, b.currKey) + ' / kid / day' : ''),
-      '    • Total Dining:    ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)',
-      '',
-      ' 4. SIGHTSEEING, VIP PASSES & CONCIERGE:',
-      '    • Heritage Sights: ' + b.placesCounted + ' key monuments & natural landmarks',
-      '    • Concierge Guide: ' + b.vipDesc,
-      '    • Total Sights:    ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)',
-      '',
-      ' 5. SAFETY & CONTINGENCY RESERVE (5%):',
-      '    • Buffer Reserve:  ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)',
-      '--------------------------------------------------------------',
-      ' TOTAL ESTIMATED EXPEDITION COST:  ' + formatBudgetMoney(b.grandTotal, b.currKey),
-      ' ESTIMATED COST PER TRAVELER:      ' + formatBudgetMoney(b.perPerson, b.currKey),
-      ' ESTIMATED DAILY EXPENDITURE:      ' + formatBudgetMoney(b.perDay, b.currKey) + ' / day',
-      '==============================================================',
-      '',
-      'DAY-WISE FINANCIAL EXPENSE FLOW:',
-      ...b.dayFlow.map(function (d) {
-        return '  • ' + d.title + ': ' + formatBudgetMoney(d.cost, b.currKey) + ' — ' + d.desc;
-      }),
-      '',
-      'EXECUTIVE TRAVEL ADVISORY:',
-      '  ' + b.proTip,
-      '',
-      'VERIFIED BOOKING PARTNERS:',
-      '  • Stays: Explore verified hotels on ExploreDesh & Google Travel',
-      '  • Rail: IRCTC Executive / Vande Bharat / Tejas Chair Car',
-      '  • Transit: RedBus Luxury Sleeper / Pre-arranged Chauffeur Fleet',
-      '--------------------------------------------------------------',
-      'ExploreDesh — Bharat Ultra Luxury Travel Intelligence Platform.',
-      'Official Guide: https://exploredesh.com/destination.html?slug=' + (dest.slug || ''),
-      '=============================================================='
-    ];
-
-    const content = lines.join('\r\n');
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'ExploreDesh-Executive-Dossier-' + (dest.slug || 'trip') + '.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
-  }
-
-  function copyBudgetSummaryToClipboard(b) {
-    const text = [
-      '👑 EXPLOREDESH VOYAGE DOSSIER — ' + dest.title + ', ' + (dest.state || 'India'),
-      '👥 Passenger Manifest: ' + b.pCfg.label + ' (' + b.pCfg.desc + ')',
-      '✨ Travel Class: ' + (b.sKey === 'ultra_luxury' ? 'Ultra Luxury / Royal Concierge' : b.sKey === 'luxury' ? 'Premium Executive' : b.sKey === 'moderate' ? 'Comfort Explorer' : 'Nomad / Backpacker'),
-      '⏳ Expedition Length: ' + b.dVal + ' Days / ' + b.nights + ' Nights (' + (b.seasonKey === 'peak' ? 'Peak Season' : 'Standard Season') + ')',
-      '💰 Total Estimated Budget: ' + formatBudgetMoney(b.grandTotal, b.currKey) + ' (' + formatBudgetMoney(b.perPerson, b.currKey) + ' / person)',
-      '🏨 Accommodation: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.stayTierLabel + ')',
-      '🚗 Chauffeur Fleet: ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.transportVehicle + ')',
-      '🍽️ Gastronomy: ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.diningTier + ')',
-      '🎟️ VIP Passes & Sights: ' + formatBudgetMoney(b.totalEntry, b.currKey),
-      '🛡️ Safety Reserve: ' + formatBudgetMoney(b.bufferCost, b.currKey),
-      '🌐 View Full Interactive Plan: https://exploredesh.com/destination.html?slug=' + (dest.slug || '')
-    ].join('\n');
-
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function () {
-        const copyBtn = document.getElementById('budgetCopyBtn');
-        if (copyBtn) {
-          const orig = copyBtn.innerHTML;
-          copyBtn.innerHTML = '<span class="text-emerald-400 font-bold inline-flex items-center gap-1.5">' + SVG_CHECK + ' Copied to Clipboard!</span>';
-          setTimeout(function () { copyBtn.innerHTML = orig; }, 2500);
-        }
-      }).catch(function () { });
-    }
-  }
-
   // ─── OVERVIEW panel ─────────────────────────────────────
   function renderOverview() {
     function cleanNearbyDistance(d, destTitle) {
@@ -1024,7 +919,6 @@ function main(dest, idx) {
         (pImgSrc ? '<img src="' + esc(pImgSrc) + '" alt="' + esc(pImgAlt) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="360" height="128" ' + loadAttr + ' decoding="async" referrerpolicy="no-referrer" ' +
           (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ') +
           '/>' : '<div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No image</div>') +
-        '<span class="absolute top-2.5 right-2.5 text-xs font-bold px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-amber-300 border border-white/20 shadow-sm flex items-center gap-1">★ ' + esc(String(p.rating || '4.5')) + '</span>' +
         '</div>' +
         '<div class="p-3.5">' +
         '<div class="flex items-center justify-between gap-2 mb-1">' +
@@ -1612,11 +1506,10 @@ function main(dest, idx) {
           (pImgRaw && pImgRaw !== pImgSrc ? 'data-raw="' + esc(pImgRaw) + '" onerror="if(!this.dataset.fallback && this.dataset.raw){this.dataset.fallback=\'1\';this.src=this.dataset.raw;}else if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ' : 'onerror="if(!this.dataset.fallbackHero && window._currentHeroImage){this.dataset.fallbackHero=\'1\';this.src=window._currentHeroImage;}else{this.onerror=null;this.style.display=\'none\';}" ') +
           '/>' : '<div class="w-full h-full flex items-center justify-center text-gray-400 text-xs">No image</div>') + '</div>' +
         '<div class="p-3 flex-1 min-w-0">' +
-        '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3>' +
-        '<span class="text-amber-400 text-xs font-semibold shrink-0">★ ' + esc(String(p.rating || '4.5')) + '</span></div>' +
+        '<div class="flex items-start justify-between gap-2 mb-1"><h3 class="font-bold text-sm text-gray-900 leading-tight">' + esc(p.name) + '</h3></div>' +
         '<p class="text-xs text-gray-500 mb-1.5 capitalize flex flex-wrap items-center gap-x-2 gap-y-1">' +
         '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'Attraction') + '</span> · ' +
-        '<span>📍 ' + esc(p.distance || 'Nearby') + '</span> · ' +
+        '<span>' + icon('map-pin', { size: 12 }) + ' ' + esc(p.distance || 'Nearby') + '</span> · ' +
         '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span> · ' +
         '<span>⏱ ' + esc(p.duration || '1–2 hrs') + '</span>' +
         '</p>' +
@@ -1680,7 +1573,6 @@ function main(dest, idx) {
           '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
           '</div>' +
           '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
-          '<span><span class="text-amber-400">★</span> <strong class="text-gray-800 dark:text-gray-200">' + esc(s.rating) + '</strong> <a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-amber-400 underline">(' + esc(s.reviews) + ' reviews)</a></span>' +
           (tags ? '<span class="flex gap-1.5">' + tags + '</span>' : '') +
           '</div>' +
           '<div class="flex flex-wrap gap-1.5">' + ams + '</div>' +
@@ -1688,7 +1580,7 @@ function main(dest, idx) {
           '<div class="flex sm:flex-col items-end justify-between sm:justify-center shrink-0 pt-3 md:pt-0 border-t md:border-t-0 border-gray-100 dark:border-white/10 gap-2">' +
           '<div class="text-right">' +
           '<span class="text-2xl font-extrabold text-gray-900 dark:text-white">₹' + inr(s.priceMin) + '</span>' +
-          '<span class="text-gray-400 text-xs block">to ₹' + inr(s.priceMax) + ' / night</span>' +
+          '<span class="text-gray-400 text-xs block">' + (s.priceMax && s.priceMax > s.priceMin ? 'to ₹' + inr(s.priceMax) + ' / night' : 'starting / night') + '</span>' +
           '</div>' +
           '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20">Google Maps ↗</a>' +
           '</div>' +
@@ -1706,780 +1598,509 @@ function main(dest, idx) {
     });
   }
 
-  // ─── BUDGET panel (ULTRA LUXURY SUITE) ───────────────────────────────────
-  function renderBudget(triggerPulse) {
+  // ─── BUDGET panel — plain-language, 3-step estimator ─────────────────────────
+  const BD_ICON_PATHS = {
+    user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+    users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+    family: '<circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M17 14a3.5 3.5 0 0 1 4 3.5V21"/>',
+    group: '<circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.5"/><circle cx="19" cy="9" r="2.5"/><path d="M7 21v-2a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2"/>',
+    bed: '<path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/>',
+    car: '<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>',
+    food: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+    ticket: '<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 11v2"/><path d="M13 17v2"/>',
+    shield: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
+    minus: '<path d="M5 12h14"/>',
+    plus: '<path d="M5 12h14"/><path d="M12 5v14"/>',
+    check: '<path d="M20 6 9 17l-5-5"/>',
+    chevron: '<path d="m6 9 6 6 6-6"/>',
+    download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>',
+    copy: '<rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>',
+    print: '<path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/>',
+    external: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
+  };
+  function bdIcon(name, size) {
+    const s = size || 20;
+    return '<svg class="bd-ic" width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + (BD_ICON_PATHS[name] || '') + '</svg>';
+  }
+
+  // UI wording for each travel style (the engine keys stay the same).
+  const BD_STYLES = {
+    backpacker: { name: 'Budget', sym: '₹', blurb: 'Hostels, shared rides, street food', stay: 'Hostels & budget stays', ride: 'Scooter, shared auto & local buses', food: 'Local eateries & street food', guide: 'self-guided' },
+    moderate: { name: 'Comfort', sym: '₹₹', blurb: '3-star hotels, AC cabs, good restaurants', stay: '3-star hotels & heritage stays', ride: 'AC cab & city auto', food: 'Good restaurants & cafés', guide: 'audio guides' },
+    luxury: { name: 'Premium', sym: '₹₹₹', blurb: '4-star resorts, private car with driver', stay: '4-star resorts & havelis', ride: 'Private car with driver', food: 'Fine dining & rooftop restaurants', guide: 'licensed local guide' },
+    ultra_luxury: { name: 'Luxury', sym: '₹₹₹₹', blurb: '5-star palaces, premium car, private guide', stay: '5-star palaces & villas', ride: 'Premium car with driver', food: 'Chef’s tasting menus & banquets', guide: 'private guide & fast-track entry' }
+  };
+  const BD_PAX = [
+    { key: 'solo', name: 'Solo', sub: '1 adult', icon: 'user' },
+    { key: 'couple', name: 'Couple', sub: '2 adults', icon: 'users' },
+    { key: 'family', name: 'Family', sub: '2 adults + 2 kids', icon: 'family' },
+    { key: 'group', name: 'Group', sub: '4 adults', icon: 'group' }
+  ];
+  const BD_SEASONS = [
+    ['standard', 'Regular season'],
+    ['peak', 'Peak season (higher prices)'],
+    ['monsoon', 'Monsoon (lower stay prices)']
+  ];
+  const BD_DAY_PRESETS = [2, 3, 5, 7];
+  let budgetMoreOpen = false;
+  let budgetPendingFocus = null;
+
+  // One model shared by the screen, the download, the copy text and the print view.
+  function budgetSummaryModel() {
     const b = computeBudgetState();
+    const ui = BD_STYLES[b.sKey] || BD_STYLES.moderate;
+    const money = function (n) { return formatBudgetMoney(n, b.currKey); };
+    const adults = b.pCfg.adults;
+    const kids = b.pCfg.kids;
+    const who = adults + (adults === 1 ? ' adult' : ' adults') + (kids ? ' + ' + kids + (kids === 1 ? ' kid' : ' kids') : '');
+    const daysLabel = b.dVal + (b.dVal === 1 ? ' day' : ' days');
+    const nightsLabel = b.nights + (b.nights === 1 ? ' night' : ' nights');
+    const dailyFood = adults * b.adultMealPerDay + kids * b.kidMealPerDay;
+    const activeSights = b.includedAttractions.filter(function (a) { return !a.isExcluded; }).length;
+    const seasonLabel = (BD_SEASONS.filter(function (s) { return s[0] === b.seasonKey; })[0] || BD_SEASONS[0])[1];
+    const rows = [
+      {
+        key: 'stay', icon: 'bed', name: 'Stay', on: budgetIncludeStays, amount: b.totalStay, pct: b.pctStay,
+        detail: budgetIncludeStays ? nightsLabel + ' × ' + money(b.nightlyRate) + ' · ' + (b.matchedHotel ? b.matchedHotel.name : ui.stay) : 'Not included'
+      },
+      {
+        key: 'ride', icon: 'car', name: 'Local transport', on: budgetIncludeTransport, amount: b.totalTransport, pct: b.pctTrans,
+        detail: budgetIncludeTransport ? daysLabel + ' × ' + money(b.dailyTransport) + ' · ' + ui.ride : 'Not included'
+      },
+      {
+        key: 'food', icon: 'food', name: 'Food', on: budgetIncludeFood, amount: b.totalFood, pct: b.pctFood,
+        detail: budgetIncludeFood ? money(dailyFood) + ' a day for ' + who + ' · ' + ui.food : 'Not included'
+      },
+      {
+        key: 'entry', icon: 'ticket', name: 'Tickets & guide', on: budgetIncludeEntry, amount: b.totalEntry, pct: b.pctEntry,
+        detail: budgetIncludeEntry ? activeSights + (activeSights === 1 ? ' place' : ' places') + ' · ' + ui.guide : 'Not included'
+      },
+      {
+        key: 'buffer', icon: 'shield', name: 'Extra cushion (5%)', on: budgetIncludeBuffer, amount: b.bufferCost, pct: b.pctBuffer,
+        detail: budgetIncludeBuffer ? 'For tips, snacks and small surprises' : 'Not included'
+      }
+    ];
+    // Day-by-day split built from the same totals shown above, so it adds up exactly (before the 5% cushion).
+    const dayList = [];
+    let dayRunning = 0;
+    for (let day = 1; day <= b.dVal; day++) {
+      const nightCost = (budgetIncludeStays && day <= b.nights) ? b.nightlyRate : 0;
+      const shared = (b.totalTransport + b.totalFood + b.totalEntry) / b.dVal;
+      const cost = (day === b.dVal) ? Math.max(0, b.subtotal - dayRunning) : Math.round(nightCost + shared);
+      dayRunning += cost;
+      const what = b.dVal === 1 ? 'Day trip' : (day === 1 ? 'Arrive & settle in' : (day === b.dVal ? 'Last day & heading home' : 'Sightseeing day'));
+      dayList.push({ label: 'Day ' + day + ' — ' + what, cost: cost });
+    }
+    return { b: b, ui: ui, money: money, who: who, daysLabel: daysLabel, nightsLabel: nightsLabel, dailyFood: dailyFood, activeSights: activeSights, seasonLabel: seasonLabel, rows: rows, dayList: dayList };
+  }
+
+  function bdAnnounce(msg) {
+    let el = document.getElementById('bdLiveRegion');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'bdLiveRegion';
+      el.className = 'sr-only';
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-live', 'polite');
+      document.body.appendChild(el);
+    }
+    el.textContent = '';
+    setTimeout(function () { el.textContent = msg; }, 60);
+  }
+
+  function budgetResetAll() {
+    budgetPax = 'couple';
+    budgetStyle = 'moderate';
+    budgetDays = 3;
+    budgetCurrency = 'INR';
+    budgetSeason = 'standard';
+    budgetIncludeStays = true;
+    budgetSelectedHotelIdx = -1;
+    budgetIncludeTransport = true;
+    budgetIncludeFood = true;
+    budgetIncludeEntry = true;
+    budgetIncludeConcierge = true;
+    budgetExcludedPlaces.clear();
+    budgetIncludeBuffer = true;
+  }
+
+  function downloadBudgetBreakdownFile() {
+    const m = budgetSummaryModel();
+    const b = m.b;
+    const pad = function (s, n) { s = String(s); while (s.length < n) s += ' '; return s; };
+    const lines = [
+      'TRIP BUDGET ESTIMATE',
+      dest.title + ', ' + (dest.state || 'India'),
+      'Created: ' + new Date().toLocaleDateString('en-IN', { dateStyle: 'long' }),
+      '',
+      'YOUR TRIP',
+      '  Travellers:    ' + m.who,
+      '  Travel style:  ' + m.ui.name + ' (' + m.ui.blurb + ')',
+      '  Length:        ' + m.daysLabel + ', ' + m.nightsLabel,
+      '  Season:        ' + m.seasonLabel,
+      '  Currency:      ' + b.currKey + (b.currKey === 'INR' ? '' : ' (approximate conversion from rupees)'),
+      '',
+      'WHERE THE MONEY GOES'
+    ];
+    m.rows.forEach(function (r) {
+      lines.push('  ' + pad(r.name, 22) + pad(r.on ? m.money(r.amount) : 'not included', 16) + (r.on ? r.pct + '%' : ''));
+      lines.push('      ' + r.detail);
+    });
+    lines.push('');
+    lines.push('  ' + pad('TOTAL', 22) + m.money(b.grandTotal));
+    lines.push('  ' + pad('Per person', 22) + m.money(b.perPerson));
+    lines.push('  ' + pad('Per day', 22) + m.money(b.perDay));
+    lines.push('');
+    lines.push('DAY BY DAY (before the 5% cushion)');
+    m.dayList.forEach(function (d) { lines.push('  ' + pad(d.label, 36) + m.money(d.cost)); });
+    lines.push('');
+    lines.push('NOTE');
+    lines.push('  This is an estimate based on typical prices around ' + dest.title + '. Real costs change with');
+    lines.push('  season, availability and how you book.');
+    lines.push('');
+    lines.push('Destination guide: https://exploredesh.com/destination?slug=' + (dest.slug || ''));
+
+    const blob = new Blob([lines.join('\r\n')], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'trip-budget-' + (dest.slug || 'trip') + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+    bdAnnounce('Budget downloaded.');
+  }
+
+  function copyBudgetSummaryToClipboard() {
+    const m = budgetSummaryModel();
+    const b = m.b;
+    const text = [
+      'Trip budget — ' + dest.title + ', ' + (dest.state || 'India'),
+      m.who + ' · ' + m.ui.name + ' style · ' + m.daysLabel + ' (' + m.nightsLabel + ')',
+      'Estimated total: ' + m.money(b.grandTotal) + ' (' + m.money(b.perPerson) + ' per person, ' + m.money(b.perDay) + ' per day)',
+      ''
+    ].concat(m.rows.filter(function (r) { return r.on; }).map(function (r) {
+      return r.name + ': ' + m.money(r.amount);
+    })).concat([
+      '',
+      'Plan: https://exploredesh.com/destination?slug=' + (dest.slug || '')
+    ]).join('\n');
+
+    const done = function () {
+      const btn = document.getElementById('bdCopyBtn');
+      if (btn) {
+        if (!btn.dataset.orig) btn.dataset.orig = btn.innerHTML;
+        btn.innerHTML = bdIcon('check', 18) + '<span>Copied</span>';
+        setTimeout(function () { btn.innerHTML = btn.dataset.orig; }, 2200);
+      }
+      bdAnnounce('Summary copied to clipboard.');
+    };
+    const fallback = function () {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { if (document.execCommand('copy')) done(); } catch (e) { /* no clipboard available */ }
+      document.body.removeChild(ta);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function printBudgetPlan() {
+    const calc = document.getElementById('bdCalc');
+    const wasOpen = calc ? calc.open : false;
+    if (calc) calc.open = true;
+    document.body.classList.add('bd-printing');
+    const finish = function () {
+      document.body.classList.remove('bd-printing');
+      if (calc) calc.open = wasOpen;
+      window.removeEventListener('afterprint', finish);
+    };
+    window.addEventListener('afterprint', finish);
+    window.print();
+  }
+
+  function renderBudget(triggerPulse) {
     const panel = document.getElementById('panel-budget');
     if (!panel) return;
-
-    // SVG icons (Strictly zero emoji icons per no-emoji-icons rule)
-    const SVG_WALLET = '<svg class="text-amber-400" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>';
-    const SVG_CROWN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>';
-    const SVG_USER = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
-    const SVG_USERS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
-    const SVG_FAMILY = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="19" cy="11" r="2"/></svg>';
-    const SVG_GROUP = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>';
-    const SVG_STAY = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
-    const SVG_CAR = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17H5M3 11l1.5-4.5A2 2 0 0 1 6.4 5h11.2a2 2 0 0 1 1.9 1.5L21 11v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6Z"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>';
-    const SVG_FOOD = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>';
-    const SVG_TICKET = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>';
-    const SVG_DOWNLOAD = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
-    const SVG_PRINT = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
-    const SVG_COPY = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
-    const SVG_EXT = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>';
-    const SVG_SPARKLE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>';
-    const SVG_LIGHTBULB = '<svg class="text-amber-400 shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>';
-    const SVG_CHART = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>';
-
-    // Partner search queries
+    const m = budgetSummaryModel();
+    const b = m.b;
+    const money = m.money;
     const qStr = encodeURIComponent(dest.title + ' ' + (dest.state || 'India'));
-    const matchedHotelUrl = (b.matchedHotel && b.matchedHotel.url) ? b.matchedHotel.url : ('https://www.google.com/travel/hotels?q=' + qStr);
 
-    // Hotel dropdown options
-    let hotelOptionsHtml = '';
+    // ── Step 1: who is travelling ──
+    const paxHtml = BD_PAX.map(function (p) {
+      return '<label class="bd-opt">' +
+        '<input class="bd-sr" type="radio" name="bd-pax" value="' + p.key + '"' + (b.pKey === p.key ? ' checked' : '') + ' />' +
+        '<span class="bd-opt-body">' + bdIcon(p.icon, 22) +
+        '<span class="bd-opt-name">' + p.name + '</span>' +
+        '<span class="bd-opt-sub bd-muted">' + p.sub + '</span></span>' +
+        '<span class="bd-tick" aria-hidden="true">' + bdIcon('check', 14) + '</span>' +
+        '</label>';
+    }).join('');
+
+    // ── Step 2: how many days ──
+    const presetsHtml = BD_DAY_PRESETS.map(function (d) {
+      return '<button type="button" data-no-gsap data-bdays="' + d + '" class="bd-chip-btn" aria-pressed="' + (b.dVal === d ? 'true' : 'false') + '">' + d + ' days</button>';
+    }).join('');
+
+    // ── Step 3: travel style ──
+    const styleHtml = ['backpacker', 'moderate', 'luxury', 'ultra_luxury'].map(function (k) {
+      const s = BD_STYLES[k];
+      return '<label class="bd-opt">' +
+        '<input class="bd-sr" type="radio" name="bd-style" value="' + k + '"' + (b.sKey === k ? ' checked' : '') + ' />' +
+        '<span class="bd-opt-body">' +
+        '<span class="bd-opt-top"><span class="bd-opt-name">' + s.name + '</span><span class="bd-sym bd-accent-text" aria-hidden="true">' + s.sym + '</span></span>' +
+        '<span class="bd-opt-sub bd-muted">' + s.blurb + '</span></span>' +
+        '<span class="bd-tick" aria-hidden="true">' + bdIcon('check', 14) + '</span>' +
+        '</label>';
+    }).join('');
+
+    // ── More options ──
+    const checkHtml = function (id, checked, label) {
+      return '<label class="bd-check"><input class="bd-sr" type="checkbox" id="' + id + '"' + (checked ? ' checked' : '') + ' />' +
+        '<span class="bd-box" aria-hidden="true">' + bdIcon('check', 16) + '</span><span class="bd-check-text">' + label + '</span></label>';
+    };
+    const currencyOpts = Object.keys(CURRENCIES).map(function (k) {
+      return '<option value="' + k + '"' + (b.currKey === k ? ' selected' : '') + '>' + esc(CURRENCIES[k].label) + '</option>';
+    }).join('');
+    const seasonOpts = BD_SEASONS.map(function (s) {
+      return '<option value="' + s[0] + '"' + (b.seasonKey === s[0] ? ' selected' : '') + '>' + s[1] + '</option>';
+    }).join('');
+    let hotelField = '';
     if (hotels && hotels.length > 0) {
-      hotelOptionsHtml = hotels.map(function (h, idx) {
-        const hPrice = h.priceMin ? (formatBudgetMoney(h.priceMin, b.currKey)) : (h.price ? (formatBudgetMoney(h.price, b.currKey)) : 'Standard');
-        const hTier = h.tier ? (' [' + h.tier.toUpperCase() + ']') : '';
-        const isSel = (budgetSelectedHotelIdx === idx);
-        return '<option value="' + idx + '"' + (isSel ? ' selected' : '') + '>' + esc(h.name) + hTier + ' — ' + hPrice + '/nt</option>';
-      }).join('');
+      hotelField = '<div class="bd-field"><label class="bd-label" for="bdHotel">Choose a specific hotel</label>' +
+        '<select class="bd-select" id="bdHotel"><option value="-1"' + (budgetSelectedHotelIdx < 0 ? ' selected' : '') + '>Automatic — based on your travel style</option>' +
+        hotels.map(function (h, idx) {
+          const p = h.priceMin ? formatBudgetMoney(h.priceMin, b.currKey) + '/night' : 'price on request';
+          return '<option value="' + idx + '"' + (budgetSelectedHotelIdx === idx ? ' selected' : '') + '>' + esc(h.name) + ' — ' + p + '</option>';
+        }).join('') + '</select></div>';
+    }
+    let sightsField = '';
+    if (b.includedAttractions && b.includedAttractions.length) {
+      sightsField = '<fieldset class="bd-field bd-fieldset"><legend class="bd-label">Places included (' + m.activeSights + ' of ' + b.includedAttractions.length + ')</legend>' +
+        b.includedAttractions.map(function (a, i) {
+          return '<label class="bd-check"><input class="bd-sr bd-sight-chk" type="checkbox" data-i="' + i + '" data-sight-name="' + esc(a.name) + '"' + (!a.isExcluded ? ' checked' : '') + ' />' +
+            '<span class="bd-box" aria-hidden="true">' + bdIcon('check', 16) + '</span>' +
+            '<span class="bd-check-text">' + esc(a.name) + '</span>' +
+            '<span class="bd-check-aside bd-muted">' + (a.isFree ? 'Free' : esc(a.fee)) + '</span></label>';
+        }).join('') + '</fieldset>';
     }
 
-    // Sightseeing Checklist HTML
-    const activeSightsCount = b.includedAttractions.filter(function (a) { return !a.isExcluded; }).length;
-    let sightsChecklistHtml = '';
-    if (b.includedAttractions && b.includedAttractions.length > 0) {
-      sightsChecklistHtml =
-        '<div class="budget-sights-checklist" id="budgetSightsList">' +
-        b.includedAttractions.map(function (att) {
-          return '<div class="budget-sight-item">' +
-            '<label class="budget-sight-label" title="' + esc(att.name) + '">' +
-            '<input type="checkbox" class="budget-sight-chk" data-sight-name="' + esc(att.name) + '"' + (!att.isExcluded ? ' checked' : '') + ' />' +
-            '<span class="truncate max-w-[150px] sm:max-w-[200px]">' + esc(att.name) + '</span>' +
-            '</label>' +
-            '<span class="text-[11px] font-mono font-semibold shrink-0 ' + (att.isFree ? 'text-emerald-400' : 'text-purple-300') + '">' +
-            (att.isFree ? 'Free Access' : esc(att.fee)) +
-            '</span>' +
-            '</div>';
-        }).join('') +
-        '</div>';
-    }
+    // ── Results ──
+    const rowsHtml = m.rows.map(function (r) {
+      return '<li class="bd-row bd-c-' + r.key + (r.on ? '' : ' is-off') + '">' +
+        '<span class="bd-row-ic" aria-hidden="true">' + bdIcon(r.icon, 20) + '</span>' +
+        '<div class="bd-row-main">' +
+        '<div class="bd-row-top"><span class="bd-row-name">' + esc(r.name) + '</span>' +
+        '<span class="bd-row-amt">' + (r.on ? money(r.amount) + ' <span class="bd-muted bd-pct">· ' + r.pct + '%</span>' : 'Off') + '</span></div>' +
+        '<div class="bd-row-detail">' + esc(r.detail) + '</div>' +
+        '<div class="bd-meter" aria-hidden="true"><i style="width:' + (r.on ? Math.max(0, Math.min(100, r.pct)) : 0) + '%"></i></div>' +
+        '</div></li>';
+    }).join('');
 
-    // Deep Financial Audit Table HTML
-    let deepAuditHtml = '';
-    if (budgetAuditOpen) {
-      deepAuditHtml =
-        '<div class="budget-audit-deepdive">' +
-        '<div class="flex items-center justify-between flex-wrap gap-2">' +
-        '<div>' +
-        '<h3 class="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2">' +
-        SVG_SPARKLE +
-        '<span>Itemized Financial Ledger & Expense Breakdown</span>' +
-        '</h3>' +
-        '<p class="text-xs text-slate-300 mt-0.5">Component-by-component calculation formulas calibrated to ' + esc(dest.title) + ', ' + esc(dest.state || 'India') + '.</p>' +
-        '</div>' +
-        '<span class="budget-stat-badge budget-stat-badge-gold">' + SVG_CROWN + ' Ultra Luxury Calibrated</span>' +
-        '</div>' +
+    const calcRows = [
+      ['Stay', budgetIncludeStays ? m.nightsLabel + ' × ' + money(b.nightlyRate) + ' (' + (b.matchedHotel ? b.matchedHotel.name : m.ui.stay) + ')' : 'Not included', b.totalStay],
+      ['Local transport', budgetIncludeTransport ? m.daysLabel + ' × ' + money(b.dailyTransport) + ' (' + m.ui.ride + ')' : 'Not included', b.totalTransport],
+      ['Food', budgetIncludeFood ? m.daysLabel + ' × ' + money(m.dailyFood) + ' for ' + m.who + ' (' + m.ui.food + ')' : 'Not included', b.totalFood],
+      ['Tickets & guide', budgetIncludeEntry ? 'Entry fees ' + money(b.baseEntryCost) + (b.totalGuide ? ' + guide ' + money(b.totalGuide) : '') : 'Not included', b.totalEntry],
+      ['Extra cushion', budgetIncludeBuffer ? '5% of ' + money(b.subtotal) : 'Not included', b.bufferCost]
+    ];
+    const calcHtml =
+      '<div class="bd-table-wrap"><table class="bd-table"><thead><tr><th scope="col">Item</th><th scope="col">How it’s worked out</th><th scope="col" class="bd-amt">Amount</th></tr></thead><tbody>' +
+      calcRows.map(function (r) { return '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td><td class="bd-amt">' + money(r[2]) + '</td></tr>'; }).join('') +
+      '<tr class="bd-total-row"><th scope="row">Total</th><td>' + esc(m.who) + ' · ' + m.daysLabel + '</td><td class="bd-amt">' + money(b.grandTotal) + '</td></tr>' +
+      '</tbody></table></div>' +
+      '<div class="bd-sub-title">Day by day (before the 5% cushion)</div>' +
+      '<ul class="bd-daylist">' + m.dayList.map(function (d) { return '<li><span>' + esc(d.label) + '</span><strong>' + money(d.cost) + '</strong></li>'; }).join('') + '</ul>';
 
-        '<div class="budget-audit-table-wrap">' +
-        '<table class="budget-audit-table">' +
-        '<thead>' +
-        '<tr>' +
-        '<th>Pillar / Category</th>' +
-        '<th>Tier & Service Specification</th>' +
-        '<th>Daily / Base Rate</th>' +
-        '<th>Calculation Multiplier Formula</th>' +
-        '<th>Subtotal (' + b.currKey + ')</th>' +
-        '<th>Share</th>' +
-        '</tr>' +
-        '</thead>' +
-        '<tbody>' +
-        '<tr>' +
-        '<td><strong class="text-amber-400">1. Stays (Accommodation)</strong></td>' +
-        '<td>' + esc(b.stayTierLabel) + (b.matchedHotel ? '<br><span class="text-[11px] text-slate-400">Pick: ' + esc(b.matchedHotel.name) + '</span>' : '') + '</td>' +
-        '<td>' + (budgetIncludeStays ? formatBudgetMoney(b.nightlyRate, b.currKey) + ' / nt' : '₹0') + '</td>' +
-        '<td>' + (budgetIncludeStays ? b.nights + ' Nights × ' + formatBudgetMoney(b.nightlyRate, b.currKey) : 'Excluded') + '</td>' +
-        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalStay, b.currKey) + '</strong></td>' +
-        '<td>' + b.pctStay + '%</td>' +
-        '</tr>' +
-
-        '<tr>' +
-        '<td><strong class="text-sky-400">2. Chauffeur & Fleet</strong></td>' +
-        '<td>' + esc(b.transportVehicle) + '<br><span class="text-[11px] text-slate-400">' + esc(b.transportDesc) + '</span></td>' +
-        '<td>' + (budgetIncludeTransport ? formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day' : '₹0') + '</td>' +
-        '<td>' + (budgetIncludeTransport ? b.dVal + ' Days × ' + formatBudgetMoney(b.dailyTransport, b.currKey) : 'Excluded') + '</td>' +
-        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalTransport, b.currKey) + '</strong></td>' +
-        '<td>' + b.pctTrans + '%</td>' +
-        '</tr>' +
-
-        '<tr>' +
-        '<td><strong class="text-emerald-400">3. Gastronomy & Dining</strong></td>' +
-        '<td>' + esc(b.diningTier) + '<br><span class="text-[11px] text-slate-400">' + esc(b.diningDesc) + '</span></td>' +
-        '<td>' + (budgetIncludeFood ? formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day' : '₹0') + '</td>' +
-        '<td>' + (budgetIncludeFood ? b.dVal + ' Days × ' + b.pCfg.adults + ' Adults (' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ')' + (b.pCfg.kids > 0 ? ' + ' + b.pCfg.kids + ' Kids' : '') : 'Excluded') + '</td>' +
-        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalFood, b.currKey) + '</strong></td>' +
-        '<td>' + b.pctFood + '%</td>' +
-        '</tr>' +
-
-        '<tr>' +
-        '<td><strong class="text-purple-400">4. Sightseeing & VIP Passes</strong></td>' +
-        '<td>' + activeSightsCount + ' Monuments & Attractions<br><span class="text-[11px] text-slate-400">' + esc(b.vipDesc) + '</span></td>' +
-        '<td>' + formatBudgetMoney(b.vipGuidePerDay, b.currKey) + ' / day guide</td>' +
-        '<td>' + (budgetIncludeEntry ? formatBudgetMoney(b.baseEntryCost, b.currKey) + ' (Entry) + ' + formatBudgetMoney(b.totalGuide, b.currKey) + ' (Concierge)' : 'Excluded') + '</td>' +
-        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.totalEntry, b.currKey) + '</strong></td>' +
-        '<td>' + b.pctEntry + '%</td>' +
-        '</tr>' +
-
-        '<tr>' +
-        '<td><strong class="text-pink-400">5. Contingency Buffer (5%)</strong></td>' +
-        '<td>Emergency hops, tips, temple offerings, porterage</td>' +
-        '<td>5% of Subtotal</td>' +
-        '<td>5% × ' + formatBudgetMoney(b.subtotal, b.currKey) + '</td>' +
-        '<td><strong class="budget-td-amount">' + formatBudgetMoney(b.bufferCost, b.currKey) + '</strong></td>' +
-        '<td>' + b.pctBuffer + '%</td>' +
-        '</tr>' +
-
-        '<tr class="budget-total-row">' +
-        '<td><strong>ESTIMATED GRAND TOTAL</strong></td>' +
-        '<td><strong>All-Inclusive Voyage (' + b.pCfg.label + ')</strong></td>' +
-        '<td><strong>' + formatBudgetMoney(b.perDay, b.currKey) + ' / day</strong></td>' +
-        '<td><strong>' + formatBudgetMoney(b.perPerson, b.currKey) + ' / person</strong></td>' +
-        '<td><strong class="text-amber-400 text-base">' + formatBudgetMoney(b.grandTotal, b.currKey) + '</strong></td>' +
-        '<td><strong>100%</strong></td>' +
-        '</tr>' +
-        '</tbody>' +
-        '</table>' +
-        '</div>' +
-
-        '<div class="mt-3">' +
-        '<h4 class="text-sm font-bold text-amber-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">' +
-        SVG_CAR +
-        '<span>Suggested Day-by-Day Financial Expense Flow</span>' +
-        '</h4>' +
-        '<div class="budget-dayflow-grid">' +
-        b.dayFlow.map(function (df) {
-          return '<div class="budget-dayflow-card">' +
-            '<div class="budget-dayflow-title">' +
-            '<span>' + esc(df.title) + '</span>' +
-            '<span class="text-amber-400 font-mono font-bold">' + formatBudgetMoney(df.cost, b.currKey) + '</span>' +
-            '</div>' +
-            '<p class="budget-dayflow-desc">' + esc(df.desc) + '</p>' +
-            '</div>';
-        }).join('') +
-        '<div class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10">' +
-        '<div class="flex items-center justify-between flex-wrap gap-2 mb-3">' +
-        '<h4 class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center gap-1.5">' +
-        SVG_SPARKLE +
-        '<span>Pillar Inclusions & Hotel Customization</span>' +
-        '</h4>' +
-        '<button type="button" class="text-xs text-slate-300 hover:text-white underline cursor-pointer" id="budgetResetDetailsBtn">↺ Reset Defaults</button>' +
-        '</div>' +
-        '<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">' +
-        '<label class="budget-item-checkbox"><input type="checkbox" id="chkStayInclude"' + (budgetIncludeStays ? ' checked' : '') + ' /><span>Include Stays</span></label>' +
-        '<label class="budget-item-checkbox"><input type="checkbox" id="chkTransportInclude"' + (budgetIncludeTransport ? ' checked' : '') + ' /><span>Include Fleet</span></label>' +
-        '<label class="budget-item-checkbox"><input type="checkbox" id="chkFoodInclude"' + (budgetIncludeFood ? ' checked' : '') + ' /><span>Include Dining</span></label>' +
-        '<label class="budget-item-checkbox"><input type="checkbox" id="chkEntryInclude"' + (budgetIncludeEntry ? ' checked' : '') + ' /><span>Include Tickets</span></label>' +
-        '</div>' +
-        (hotels && hotels.length > 0 ? ('<div class="mt-3 pt-3 border-t border-white/10 flex items-center gap-3 flex-wrap text-xs"><label for="selHotelPicker" class="font-semibold text-slate-300">Specific Hotel:</label><select id="selHotelPicker" class="budget-select-picker max-w-xs"><option value="-1"' + (budgetSelectedHotelIdx === -1 ? ' selected' : '') + '>Auto-Matched (' + esc(b.sKey.toUpperCase()) + ' Tier)</option>' + hotelOptionsHtml + '</select></div>') : '') +
-        '</div>' +
-
-        '</div>';
-    }
+    const nothingOn = b.checkedCount === 0;
 
     panel.innerHTML =
-      '<div class="budget-sim-container">' +
+      '<section class="bd" aria-labelledby="bdTitle">' +
 
-      // ─── 1. Royal Crest Header Box ───
-      '<div class="budget-header-box">' +
-      '<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">' +
-      '<div>' +
-      '<div class="flex items-center gap-2 mb-2">' +
-      '<span class="budget-stat-badge budget-stat-badge-gold">' + SVG_CROWN + ' THE ROYAL COLLECTION</span>' +
-      '<span class="budget-stat-badge !bg-emerald-500/20 !border-emerald-500/40 !text-emerald-300">Live Synchronized</span>' +
+      '<div class="bd-head">' +
+      '<div class="bd-head-text">' +
+      '<h2 id="bdTitle" class="bd-title">Trip budget for ' + esc(dest.title) + '</h2>' +
+      '<div class="bd-lead">Pick who is going, for how long, and your travel style. The estimate updates as you go.</div>' +
       '</div>' +
-      '<h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-2.5">' +
-      SVG_WALLET +
-      '<span>Bespoke Expedition Investment — ' + esc(dest.title) + '</span>' +
-      '</h2>' +
-      '<p class="text-sm text-slate-300 mt-1.5 max-w-2xl leading-relaxed">All-inclusive private sanctuaries, executive chauffeur fleet, curated royal gastronomy, and dedicated concierge clearances calibrated for ' + esc(dest.title) + ', ' + esc(dest.state || 'India') + '.</p>' +
-      '</div>' +
-      '<div class="flex items-center gap-2 flex-wrap shrink-0">' +
-      '<span class="budget-stat-badge">Zero Platform Surcharge</span>' +
-      '<span class="budget-stat-badge">Guaranteed Transparent Pricing</span>' +
-      '</div>' +
+      '<div class="bd-chip" aria-hidden="true"><span class="bd-muted">Estimated total</span><strong>' + money(b.grandTotal) + '</strong></div>' +
       '</div>' +
 
-      // Dual Toolbar: Currency & Seasonality Switchers
-      '<div class="budget-header-toolbar">' +
-      '<div class="budget-toolbar-section">' +
-      '<span class="budget-toolbar-label">' +
-      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M8 14h6"/></svg>' +
-      '<span>Currency:</span>' +
-      '</span>' +
-      '<div class="budget-pill-group" role="radiogroup" aria-label="Select display currency">' +
-      '<button type="button" class="budget-pill-btn' + (b.currKey === 'INR' ? ' is-active' : '') + '" data-bcurr="INR">₹ INR</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.currKey === 'USD' ? ' is-active' : '') + '" data-bcurr="USD">$ USD</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.currKey === 'EUR' ? ' is-active' : '') + '" data-bcurr="EUR">€ EUR</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.currKey === 'GBP' ? ' is-active' : '') + '" data-bcurr="GBP">£ GBP</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.currKey === 'AED' ? ' is-active' : '') + '" data-bcurr="AED">AED</button>' +
-      '</div>' +
-      '</div>' +
+      '<div class="bd-layout">' +
 
-      '<div class="budget-toolbar-section">' +
-      '<span class="budget-toolbar-label">' +
-      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>' +
-      '<span>Season Demand:</span>' +
-      '</span>' +
-      '<div class="budget-pill-group" role="radiogroup" aria-label="Select season rate mode">' +
-      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'standard' ? ' is-active' : '') + '" data-bseason="standard">Standard</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'peak' ? ' is-active' : '') + '" data-bseason="peak">Peak Festive (+20%)</button>' +
-      '<button type="button" class="budget-pill-btn' + (b.seasonKey === 'monsoon' ? ' is-active' : '') + '" data-bseason="monsoon">Monsoon (-18%)</button>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
+      // ── Left: the 3 steps ──
+      '<div class="bd-card bd-controls">' +
 
-      '</div>' +
+      '<fieldset class="bd-step"><legend class="bd-legend"><span class="bd-num" aria-hidden="true">1</span>Who’s travelling?</legend>' +
+      '<div class="bd-grid bd-grid-pax">' + paxHtml + '</div></fieldset>' +
 
-      // ─── 2. The 4 Imperial Travel Tiers Deck ───
-      '<div class="budget-tier-section">' +
-      '<div class="flex items-center justify-between mb-3">' +
-      '<span class="text-xs font-bold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">' +
-      SVG_CROWN + ' <span>Select Travel Class & Tier</span>' +
-      '</span>' +
-      '<span class="text-xs text-slate-400">Instant Live Recalibration</span>' +
+      '<div class="bd-step" role="group" aria-labelledby="bdDaysLegend"><div class="bd-legend" id="bdDaysLegend"><span class="bd-num" aria-hidden="true">2</span>How many days?</div>' +
+      '<div class="bd-days">' +
+      '<div class="bd-stepper">' +
+      '<button type="button" data-no-gsap class="bd-step-btn" data-bstep="-1" aria-label="One day fewer"' + (b.dVal <= 1 ? ' disabled' : '') + '>' + bdIcon('minus', 20) + '</button>' +
+      '<div class="bd-days-val" aria-live="off"><strong>' + m.daysLabel + '</strong><span class="bd-muted">' + m.nightsLabel + '</span></div>' +
+      '<button type="button" data-no-gsap class="bd-step-btn" data-bstep="1" aria-label="One day more"' + (b.dVal >= 14 ? ' disabled' : '') + '>' + bdIcon('plus', 20) + '</button>' +
       '</div>' +
-      '<div class="budget-royal-tier-deck">' +
+      '<div class="bd-presets" role="group" aria-label="Common trip lengths">' + presetsHtml + '</div>' +
+      '</div></div>' +
 
-      // Tier 1: Nomad
-      '<button type="button" class="budget-tier-card' + (b.sKey === 'backpacker' ? ' is-active' : '') + '" data-bstyle="backpacker">' +
-      '<div>' +
-      '<div class="flex items-center justify-between mb-1.5">' +
-      '<span class="text-xs font-bold text-slate-400">Tier 1</span>' +
-      '<span class="font-bold text-amber-400">₹</span>' +
-      '</div>' +
-      '<div class="text-sm font-bold text-gray-900 dark:text-white">Nomad / Backpacker</div>' +
-      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">Hostels, Shared Rides & Street Feasts</div>' +
-      '</div>' +
-      '<div class="text-xs font-semibold text-amber-400 mt-2">Essential Explorer</div>' +
-      '</button>' +
+      '<fieldset class="bd-step"><legend class="bd-legend"><span class="bd-num" aria-hidden="true">3</span>Travel style</legend>' +
+      '<div class="bd-grid bd-grid-style">' + styleHtml + '</div></fieldset>' +
 
-      // Tier 2: Comfort
-      '<button type="button" class="budget-tier-card' + (b.sKey === 'moderate' ? ' is-active' : '') + '" data-bstyle="moderate">' +
-      '<div>' +
-      '<div class="flex items-center justify-between mb-1.5">' +
-      '<span class="text-xs font-bold text-slate-400">Tier 2</span>' +
-      '<span class="font-bold text-amber-400">₹₹</span>' +
+      '<details class="bd-more" id="bdMore"' + (budgetMoreOpen ? ' open' : '') + '>' +
+      '<summary><span class="bd-sum-main">More options</span><span class="bd-sum-hint bd-muted">Currency, season, what’s included</span><span class="bd-chev" aria-hidden="true">' + bdIcon('chevron', 20) + '</span></summary>' +
+      '<div class="bd-more-body">' +
+      '<div class="bd-field-row">' +
+      '<div class="bd-field"><label class="bd-label" for="bdCurrency">Currency</label><select class="bd-select" id="bdCurrency">' + currencyOpts + '</select><div class="bd-help bd-muted">Approximate conversion from rupees.</div></div>' +
+      '<div class="bd-field"><label class="bd-label" for="bdSeason">Season</label><select class="bd-select" id="bdSeason">' + seasonOpts + '</select></div>' +
       '</div>' +
-      '<div class="text-sm font-bold text-gray-900 dark:text-white">Comfort Explorer</div>' +
-      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">3-Star Boutique Stays & AC City Cabs</div>' +
-      '</div>' +
-      '<div class="text-xs font-semibold text-amber-400 mt-2">Curated Comfort</div>' +
-      '</button>' +
-
-      // Tier 3: Luxury
-      '<button type="button" class="budget-tier-card' + (b.sKey === 'luxury' ? ' is-active' : '') + '" data-bstyle="luxury">' +
-      '<div>' +
-      '<div class="flex items-center justify-between mb-1.5">' +
-      '<span class="text-xs font-bold text-slate-400">Tier 3</span>' +
-      '<span class="font-bold text-amber-400">₹₹₹</span>' +
-      '</div>' +
-      '<div class="text-sm font-bold text-gray-900 dark:text-white">Premium Executive</div>' +
-      '<div class="text-xs text-slate-400 mt-1 leading-relaxed">4-Star Deluxe Resorts & Private AC Sedan</div>' +
-      '</div>' +
-      '<div class="text-xs font-semibold text-amber-400 mt-2">Executive Luxury</div>' +
-      '</button>' +
-
-      // Tier 4: Royal Concierge (Ultra Luxury)
-      '<button type="button" class="budget-tier-card is-ultra' + (b.sKey === 'ultra_luxury' ? ' is-active' : '') + '" data-bstyle="ultra_luxury">' +
-      '<div>' +
-      '<div class="flex items-center justify-between mb-1.5">' +
-      '<span class="budget-ultra-badge">' + SVG_CROWN + ' ROYAL VIP</span>' +
-      '<span class="font-bold text-amber-300">₹₹₹₹</span>' +
-      '</div>' +
-      '<div class="text-sm font-bold text-amber-300">Ultra Luxury / Royal</div>' +
-      '<div class="text-xs text-amber-200/80 mt-1 leading-relaxed">5-Star Palaces, Luxury SUV Fleet & Concierge</div>' +
-      '</div>' +
-      '<div class="text-xs font-bold text-amber-300 mt-2">The Pinnacle Experience</div>' +
-      '</button>' +
+      '<fieldset class="bd-field bd-fieldset"><legend class="bd-label">Include in the estimate</legend>' +
+      checkHtml('bdIncStay', budgetIncludeStays, 'Stay') +
+      checkHtml('bdIncRide', budgetIncludeTransport, 'Local transport') +
+      checkHtml('bdIncFood', budgetIncludeFood, 'Food') +
+      checkHtml('bdIncEntry', budgetIncludeEntry, 'Tickets &amp; guide') +
+      checkHtml('bdIncBuffer', budgetIncludeBuffer, 'Extra cushion (5%)') +
+      '</fieldset>' +
+      hotelField +
+      sightsField +
+      '<button type="button" data-no-gsap class="bd-btn bd-btn-text" id="bdReset">Reset to defaults</button>' +
+      '</div></details>' +
 
       '</div>' +
-      '</div>' +
 
-      // ─── 3. Showstopper Grand Total Master Card ───
-      '<div class="budget-total-hero">' +
-      '<div>' +
-      '<div class="budget-total-heading">Estimated Total Expedition Investment (' + b.dVal + ' Days · ' + b.pCfg.label + ')</div>' +
-      '<div class="budget-total-amount" id="budgetHeroTotal">' + formatBudgetMoney(b.grandTotal, b.currKey) + '</div>' +
-      '<div class="budget-total-sub-wrap">' +
-      '<span class="budget-stat-badge">' + formatBudgetMoney(b.perPerson, b.currKey) + ' / traveler</span>' +
-      '<span class="budget-stat-badge">' + formatBudgetMoney(b.perDay, b.currKey) + ' / day</span>' +
-      '<span class="budget-stat-badge budget-stat-badge-gold">' + (b.sKey === 'ultra_luxury' ? SVG_CROWN + ' Royal Concierge Included' : b.sKey === 'luxury' ? SVG_SPARKLE + ' Premium Executive' : b.sKey === 'moderate' ? 'Comfort 3-Star' : 'Nomad Explorer') + '</span>' +
-      '<span class="text-xs text-slate-400">All-Inclusive Luxury · Zero Platform Surcharges</span>' +
+      // ── Right: the answer ──
+      '<div class="bd-card bd-result">' +
+      '<div class="bd-result-label bd-muted">Estimated total · ' + m.daysLabel + ' · ' + esc(m.who) + '</div>' +
+      '<div class="bd-total" id="budgetHeroTotal">' + money(b.grandTotal) + '</div>' +
+      '<div class="bd-sub"><span><strong>' + money(b.perPerson) + '</strong> <span class="bd-muted">per person</span></span><span><strong>' + money(b.perDay) + '</strong> <span class="bd-muted">per day</span></span></div>' +
+      (nothingOn ? '<div class="bd-empty">Everything is switched off. Open “More options” and turn on at least one item.</div>' : '') +
+      '<div class="bd-sub-title">Where your money goes</div>' +
+      '<ul class="bd-rows">' + rowsHtml + '</ul>' +
+      '<div class="bd-actions">' +
+      '<button type="button" data-no-gsap class="bd-btn bd-btn-primary" id="bdDownloadBtn">' + bdIcon('download', 18) + '<span>Download plan</span></button>' +
+      '<button type="button" data-no-gsap class="bd-btn" id="bdCopyBtn">' + bdIcon('copy', 18) + '<span>Copy summary</span></button>' +
+      '<button type="button" data-no-gsap class="bd-btn" id="bdPrintBtn">' + bdIcon('print', 18) + '<span>Print</span></button>' +
       '</div>' +
-      '</div>' +
-
-      '<div class="budget-distrib-wrap">' +
-      '<div class="flex items-center justify-between text-xs font-bold text-slate-300 mb-1">' +
-      '<span>Curated Investment Allocation</span>' +
-      '<span>100% Comprehensive</span>' +
-      '</div>' +
-      '<div class="budget-distrib-bar" role="progressbar" aria-label="Trip cost distribution">' +
-      '<div class="budget-bar-seg budget-bar-seg-stays" style="width:' + b.pctStay + '%" title="Stays: ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-transport" style="width:' + b.pctTrans + '%" title="Transport: ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-food" style="width:' + b.pctFood + '%" title="Food: ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-entry" style="width:' + b.pctEntry + '%" title="Sightseeing: ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)"></div>' +
-      '<div class="budget-bar-seg budget-bar-seg-buffer" style="width:' + b.pctBuffer + '%" title="Buffer: ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)"></div>' +
-      '</div>' +
-      '<div class="budget-distrib-legend">' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#F59E0B"></span>Stays ' + formatBudgetMoney(b.totalStay, b.currKey) + ' (' + b.pctStay + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#0EA5E9"></span>Mobility ' + formatBudgetMoney(b.totalTransport, b.currKey) + ' (' + b.pctTrans + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#10B981"></span>Dining ' + formatBudgetMoney(b.totalFood, b.currKey) + ' (' + b.pctFood + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#8B5CF6"></span>Sights & VIP ' + formatBudgetMoney(b.totalEntry, b.currKey) + ' (' + b.pctEntry + '%)</div>' +
-      '<div class="budget-legend-item"><span class="budget-legend-dot" style="background:#EC4899"></span>Reserve ' + formatBudgetMoney(b.bufferCost, b.currKey) + ' (' + b.pctBuffer + '%)</div>' +
-      '</div>' +
-      '<div class="budget-hero-actions-bar">' +
-      '<button type="button" class="budget-action-btn budget-action-btn-gold" id="budgetDownloadBtn">' +
-      SVG_DOWNLOAD + ' <span>Download Bespoke Dossier</span>' +
-      '</button>' +
-      '<button type="button" class="budget-action-btn" id="budgetCopyBtn">' +
-      SVG_COPY + ' <span>Copy Summary</span>' +
-      '</button>' +
-      '<button type="button" class="budget-action-btn" id="budgetPrintBtn">' +
-      SVG_PRINT + ' <span>Print Plan</span>' +
-      '</button>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-
-      // ─── 4. Refined 2-Column Configuration Console ───
-      '<div class="budget-config-grid">' +
-
-      // Card 1: Passenger Manifest
-      '<div class="budget-card">' +
-      '<div class="budget-card-title">' +
-      '<div class="flex items-center gap-2">' +
-      SVG_USERS +
-      '<span>Passenger Manifest</span>' +
-      '</div>' +
-      '<span class="text-[11px] font-semibold text-slate-400">' + b.pCfg.desc + '</span>' +
-      '</div>' +
-      '<div class="budget-pax-group">' +
-      '<button type="button" class="budget-pax-btn' + (b.pKey === 'solo' ? ' is-active' : '') + '" data-bpax="solo">' +
-      SVG_USER +
-      '<span class="budget-pax-name">Solo</span><span class="budget-pax-desc">1 Adult Explorer</span>' +
-      '</button>' +
-      '<button type="button" class="budget-pax-btn' + (b.pKey === 'couple' ? ' is-active' : '') + '" data-bpax="couple">' +
-      SVG_USERS +
-      '<span class="budget-pax-name">Couple</span><span class="budget-pax-desc">2 Adults</span>' +
-      '</button>' +
-      '<button type="button" class="budget-pax-btn' + (b.pKey === 'family' ? ' is-active' : '') + '" data-bpax="family">' +
-      SVG_FAMILY +
-      '<span class="budget-pax-name">Family</span><span class="budget-pax-desc">2 Adults, 2 Kids</span>' +
-      '</button>' +
-      '<button type="button" class="budget-pax-btn' + (b.pKey === 'group' ? ' is-active' : '') + '" data-bpax="group">' +
-      SVG_GROUP +
-      '<span class="budget-pax-name">Group</span><span class="budget-pax-desc">4 Adults</span>' +
-      '</button>' +
-      '</div>' +
-      '</div>' +
-
-      // Card 2: Expedition Duration
-      '<div class="budget-card">' +
-      '<div class="budget-card-title">' +
-      '<div class="flex items-center gap-2">' +
-      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' +
-      '<span>Expedition Duration</span>' +
-      '</div>' +
-      '<span class="text-[11px] font-semibold text-amber-300">1 to 14 Days</span>' +
-      '</div>' +
-      '<div class="budget-duration-control">' +
-      '<div class="budget-duration-val-wrap">' +
-      '<span class="budget-duration-num" id="budgetDurationDisplay">' + b.dVal + ' Days</span>' +
-      '<span class="budget-duration-nights">(' + b.nights + ' Nights)</span>' +
-      '</div>' +
-      '<input type="range" min="1" max="14" step="1" value="' + b.dVal + '" class="budget-slider-range" id="budgetDaysSlider" aria-label="Trip duration in days" />' +
-      '<div class="budget-duration-presets">' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 2 ? ' is-active' : '') + '" data-bdays="2">2D (Weekend)</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 3 ? ' is-active' : '') + '" data-bdays="3">3D (Classic)</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 5 ? ' is-active' : '') + '" data-bdays="5">5D (Grand)</button>' +
-      '<button type="button" class="budget-preset-pill' + (b.dVal === 7 ? ' is-active' : '') + '" data-bdays="7">7D (Imperial)</button>' +
-      '</div>' +
-      '</div>' +
+      '<div class="bd-note bd-muted">This is an estimate based on typical prices around ' + esc(dest.title) + '. Real costs change with season, availability and how you book.</div>' +
       '</div>' +
 
       '</div>' +
 
-      // ─── 5. 4 Pristine Experience Pillars (Editorial Luxury Presentation) ───
-      '<div class="budget-breakdown-grid mt-4">' +
+      // ── Below: details + booking ──
+      '<details class="bd-card bd-calc" id="bdCalc"' + (budgetAuditOpen ? ' open' : '') + '>' +
+      '<summary><span class="bd-sum-main">See how this is worked out</span><span class="bd-chev" aria-hidden="true">' + bdIcon('chevron', 20) + '</span></summary>' +
+      '<div class="bd-calc-body">' + calcHtml + '</div></details>' +
 
-      // Card 1: Stays
-      '<div class="budget-item-card' + (!budgetIncludeStays ? ' is-excluded' : '') + '">' +
-      '<div>' +
-      '<div class="budget-item-top mb-3">' +
-      '<div class="budget-item-icon-box text-amber-400">' + SVG_STAY + '</div>' +
-      '<span class="budget-item-badge">' + b.nights + ' Nights</span>' +
-      '</div>' +
-      '<div class="budget-item-category">Sanctuary & Palace Suites</div>' +
-      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalStay, b.currKey) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>' + esc(b.stayTierLabel) + '</strong><br>' +
-      (budgetIncludeStays
-        ? ((b.matchedHotel ? 'Matched Property: <span class="text-amber-400 font-semibold">' + esc(b.matchedHotel.name) + '</span>' : 'Verified local guesthouses & luxury havelis') + '<br>~' + formatBudgetMoney(b.nightlyRate, b.currKey) + ' / night')
-        : 'Self-arranged / staying with hosts') +
-      '</p>' +
-      '</div>' +
-      '<div class="budget-item-toggle-wrap">' +
-      '<span class="text-xs text-amber-300 font-semibold">✦ Royal Suite & Breakfast</span>' +
-      '<button type="button" class="text-xs text-amber-400 font-semibold hover:underline cursor-pointer" data-goto="stays">Explore stays →</button>' +
-      '</div>' +
+      '<div class="bd-book">' +
+      '<span class="bd-book-title">Ready to book?</span>' +
+      '<a class="bd-link" href="https://www.google.com/travel/hotels?q=' + qStr + '" target="_blank" rel="noopener noreferrer"><span>Hotels in ' + esc(dest.title) + '</span>' + bdIcon('external', 16) + '</a>' +
+      '<a class="bd-link" href="https://www.irctc.co.in/" target="_blank" rel="noopener noreferrer"><span>Trains (IRCTC)</span>' + bdIcon('external', 16) + '</a>' +
+      '<a class="bd-link" href="https://www.redbus.in/" target="_blank" rel="noopener noreferrer"><span>Buses (RedBus)</span>' + bdIcon('external', 16) + '</a>' +
       '</div>' +
 
-      // Card 2: Transport & Fleet
-      '<div class="budget-item-card' + (!budgetIncludeTransport ? ' is-excluded' : '') + '">' +
-      '<div>' +
-      '<div class="budget-item-top mb-3">' +
-      '<div class="budget-item-icon-box text-sky-400">' + SVG_CAR + '</div>' +
-      '<span class="budget-item-badge">' + b.dVal + ' Days Mobility</span>' +
-      '</div>' +
-      '<div class="budget-item-category">Private Chauffeur & Fleet</div>' +
-      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalTransport, b.currKey) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>' + esc(b.transportVehicle) + '</strong><br>' +
-      (budgetIncludeTransport
-        ? (esc(b.transportDesc) + '<br>~' + formatBudgetMoney(b.dailyTransport, b.currKey) + ' / day')
-        : 'Own vehicle / walking') +
-      '</p>' +
-      '</div>' +
-      '<div class="budget-item-toggle-wrap">' +
-      '<span class="text-xs text-sky-300 font-semibold">✦ Tolls & Fuel Fully Included</span>' +
-      '<button type="button" class="text-xs text-sky-400 font-semibold hover:underline cursor-pointer" data-goto="reach">Transit routes →</button>' +
-      '</div>' +
-      '</div>' +
+      '</section>';
 
-      // Card 3: Food & Dining
-      '<div class="budget-item-card' + (!budgetIncludeFood ? ' is-excluded' : '') + '">' +
-      '<div>' +
-      '<div class="budget-item-top mb-3">' +
-      '<div class="budget-item-icon-box text-emerald-400">' + SVG_FOOD + '</div>' +
-      '<span class="budget-item-badge">All Meals Included</span>' +
-      '</div>' +
-      '<div class="budget-item-category">Curated Royal Gastronomy</div>' +
-      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalFood, b.currKey) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>' + esc(b.diningTier) + '</strong><br>' +
-      (budgetIncludeFood
-        ? (esc(b.diningDesc) + '<br>~' + formatBudgetMoney(b.adultMealPerDay, b.currKey) + ' / adult / day')
-        : 'Self-catered / complimentary meals') +
-      '</p>' +
-      '</div>' +
-      '<div class="budget-item-toggle-wrap">' +
-      '<span class="text-xs text-emerald-300 font-semibold">✦ Regional Chef Degustation</span>' +
-      '<span class="text-xs text-slate-400 font-medium">Full Board</span>' +
-      '</div>' +
-      '</div>' +
+    // ─── Wire up ───
+    function again(focusSelector) {
+      budgetPendingFocus = focusSelector || null;
+      renderBudget(true);
+    }
 
-      // Card 4: Sightseeing & VIP Passes
-      '<div class="budget-item-card' + (!budgetIncludeEntry ? ' is-excluded' : '') + '">' +
-      '<div>' +
-      '<div class="budget-item-top mb-3">' +
-      '<div class="budget-item-icon-box text-purple-400">' + SVG_TICKET + '</div>' +
-      '<span class="budget-item-badge">' + activeSightsCount + ' Sights</span>' +
-      '</div>' +
-      '<div class="budget-item-category">VIP Fast-Track & Curator</div>' +
-      '<div class="budget-item-cost">' + formatBudgetMoney(b.totalEntry, b.currKey) + '</div>' +
-      '<p class="budget-item-details mt-2"><strong>Dedicated Heritage Curator</strong><br>' +
-      (budgetIncludeEntry
-        ? ('All entrance tickets across ' + activeSightsCount + ' landmarks plus private historian concierge.')
-        : 'Attraction tickets excluded') +
-      '</p>' +
-      '</div>' +
-      '<div class="budget-item-toggle-wrap">' +
-      '<span class="text-xs text-purple-300 font-semibold">✦ Skip-the-Line Passes</span>' +
-      '<button type="button" class="text-xs text-purple-400 font-semibold hover:underline cursor-pointer" data-goto="places">Attractions →</button>' +
-      '</div>' +
-      '</div>' +
-
-      '</div>' +
-
-      // ─── 6. The Royal Concierge Guarantees (4 Gold Badges) ───
-      '<div class="budget-guarantee-grid">' +
-      '<div class="budget-guarantee-item">' +
-      '<span class="budget-guarantee-icon text-amber-400">' + SVG_CROWN + '</span>' +
-      '<div>' +
-      '<div class="budget-guarantee-title">Zero Hidden Surcharges</div>' +
-      '<div class="budget-guarantee-desc">All driver allowances, tolls, state border permits & taxes fully included.</div>' +
-      '</div>' +
-      '</div>' +
-      '<div class="budget-guarantee-item">' +
-      '<span class="budget-guarantee-icon text-emerald-400">' + SVG_SPARKLE + '</span>' +
-      '<div>' +
-      '<div class="budget-guarantee-title">5% Travel Reserve Included</div>' +
-      '<div class="budget-guarantee-desc">Automatic contingency safety buffer built-in for seamless comfort.</div>' +
-      '</div>' +
-      '</div>' +
-      '<div class="budget-guarantee-item">' +
-      '<span class="budget-guarantee-icon text-sky-400">' + SVG_CAR + '</span>' +
-      '<div>' +
-      '<div class="budget-guarantee-title">Dedicated Private Fleet</div>' +
-      '<div class="budget-guarantee-desc">Chauffeur-driven executive mobility from arrival to departure.</div>' +
-      '</div>' +
-      '</div>' +
-      '<div class="budget-guarantee-item">' +
-      '<span class="budget-guarantee-icon text-purple-400">' + SVG_TICKET + '</span>' +
-      '<div>' +
-      '<div class="budget-guarantee-title">Curated Destination Precision</div>' +
-      '<div class="budget-guarantee-desc">Calibrated directly with ' + esc(dest.title) + ' verified local landmark rates.</div>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-
-      // ─── 7. Pro Tip Box ───
-      '<div class="budget-protip-box mt-4">' +
-      SVG_LIGHTBULB +
-      '<div class="budget-protip-text">' + esc(b.proTip) + '</div>' +
-      '</div>' +
-
-      // ─── 8. Verified Booking Partners Section ───
-      '<div class="budget-partners-section">' +
-      '<div class="budget-partners-title">Verified Booking Partners & Direct Concierge Links</div>' +
-      '<div class="budget-partners-grid">' +
-      '<a href="' + esc(matchedHotelUrl) + '" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">Hotel Booking (Direct)</div><div class="budget-partner-card-desc truncate max-w-[170px]">' + esc(b.matchedHotel ? b.matchedHotel.name : 'Google Hotels') + '</div></div>' +
-      SVG_EXT +
-      '</a>' +
-      '<a href="https://www.google.com/travel/hotels?q=' + qStr + '" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">Google Travel Hotels</div><div class="budget-partner-card-desc">Compare live rates in ' + esc(dest.title) + '</div></div>' +
-      SVG_EXT +
-      '</a>' +
-      '<a href="https://www.irctc.co.in/" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">IRCTC Rail Tickets</div><div class="budget-partner-card-desc">Vande Bharat & Express trains</div></div>' +
-      SVG_EXT +
-      '</a>' +
-      '<a href="https://www.redbus.in/" target="_blank" rel="noopener noreferrer" class="budget-partner-card">' +
-      '<div><div class="budget-partner-card-name">Interstate Bus (RedBus)</div><div class="budget-partner-card-desc">Luxury AC sleeper coaches</div></div>' +
-      SVG_EXT +
-      '</a>' +
-      '</div>' +
-      '</div>' +
-
-      // ─── 9. Discreet Ledger Toggle & Accordion ───
-      '<div class="budget-ledger-toggle-wrap">' +
-      '<button type="button" class="budget-view-ledger-toggle" id="budgetToggleAuditBtn">' +
-      '<span>' + (budgetAuditOpen ? '▲ Hide Detailed Accounting Ledger & Customizations' : '' + SVG_CHART + ' <span>View Transparent Financial Ledger & Day Flow</span>') + '</span>' +
-      '</button>' +
-      '</div>' +
-
-      deepAuditHtml +
-
-      '</div>';
-
-    // ─── Wire up event listeners ───
-
-    // Currency Switcher
-    panel.querySelectorAll('[data-bcurr]').forEach(function (btn) {
+    panel.querySelectorAll('input[name="bd-pax"]').forEach(function (r) {
+      r.addEventListener('change', function () { budgetPax = r.value; again('input[name="bd-pax"]:checked'); });
+    });
+    panel.querySelectorAll('input[name="bd-style"]').forEach(function (r) {
+      r.addEventListener('change', function () { budgetStyle = r.value; again('input[name="bd-style"]:checked'); });
+    });
+    panel.querySelectorAll('[data-bstep]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        budgetCurrency = btn.getAttribute('data-bcurr');
-        renderBudget(true);
+        const d = parseInt(btn.getAttribute('data-bstep'), 10);
+        budgetDays = Math.min(14, Math.max(1, budgetDays + d));
+        again('[data-bstep="' + d + '"]');
       });
     });
-
-    // Seasonality Switcher
-    panel.querySelectorAll('[data-bseason]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        budgetSeason = btn.getAttribute('data-bseason');
-        renderBudget(true);
-      });
-    });
-
-    // Traveler Pax Buttons
-    panel.querySelectorAll('[data-bpax]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        budgetPax = btn.getAttribute('data-bpax');
-        renderBudget(true);
-      });
-    });
-
-    // Travel Style Buttons
-    panel.querySelectorAll('[data-bstyle]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        budgetStyle = btn.getAttribute('data-bstyle');
-        renderBudget(true);
-      });
-    });
-
-    // Trip Duration Preset Pills
     panel.querySelectorAll('[data-bdays]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         budgetDays = parseInt(btn.getAttribute('data-bdays'), 10);
-        renderBudget(true);
+        again('[data-bdays="' + btn.getAttribute('data-bdays') + '"]');
       });
     });
 
-    // Slider
-    const slider = document.getElementById('budgetDaysSlider');
-    if (slider) {
-      slider.addEventListener('input', function () {
-        budgetDays = parseInt(slider.value, 10);
-        const disp = document.getElementById('budgetDurationDisplay');
-        if (disp) disp.textContent = budgetDays + ' Days';
-        const nightsSpan = panel.querySelector('.budget-duration-nights');
-        if (nightsSpan) nightsSpan.textContent = '(' + Math.max(1, budgetDays - 1) + ' Nights)';
-        const bLive = computeBudgetState();
-        const totalEl = document.getElementById('budgetHeroTotal');
-        if (totalEl) totalEl.textContent = formatBudgetMoney(bLive.grandTotal, bLive.currKey);
-      });
-      slider.addEventListener('change', function () {
-        budgetDays = parseInt(slider.value, 10);
-        renderBudget(true);
-      });
-    }
-
-    // Toggle Financial Audit Ledger
-    const btnToggleAudit = document.getElementById('budgetToggleAuditBtn');
-    if (btnToggleAudit) {
-      btnToggleAudit.addEventListener('click', function () {
-        budgetAuditOpen = !budgetAuditOpen;
-        renderBudget(false);
-      });
-    }
-
-    // Reset Defaults Button
-    const resetBtn = document.getElementById('budgetResetDetailsBtn');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', function () {
-        budgetPax = 'couple';
-        budgetStyle = 'moderate';
-        budgetDays = 3;
-        budgetCurrency = 'INR';
-        budgetSeason = 'standard';
-        budgetIncludeStays = true;
-        budgetSelectedHotelIdx = -1;
-        budgetIncludeTransport = true;
-        budgetIncludeFood = true;
-        budgetIncludeEntry = true;
-        budgetIncludeConcierge = true;
-        budgetExcludedPlaces.clear();
-        budgetIncludeBuffer = true;
-        budgetAuditOpen = false;
-        renderBudget(true);
-      });
-    }
-
-    // Recalculate Live Button
-    const recalcBtn = document.getElementById('budgetRecalcBtn');
-    if (recalcBtn) {
-      recalcBtn.addEventListener('click', function () {
-        renderBudget(true);
-      });
-    }
-
-    // Inclusions Toggles
-    const chkStay = document.getElementById('chkStayInclude');
-    if (chkStay) {
-      chkStay.addEventListener('change', function () {
-        budgetIncludeStays = chkStay.checked;
-        renderBudget(true);
-      });
-    }
-
-    const selHotel = document.getElementById('selHotelPicker');
+    const selCurrency = document.getElementById('bdCurrency');
+    if (selCurrency) selCurrency.addEventListener('change', function () { budgetCurrency = selCurrency.value; again('#bdCurrency'); });
+    const selSeason = document.getElementById('bdSeason');
+    if (selSeason) selSeason.addEventListener('change', function () { budgetSeason = selSeason.value; again('#bdSeason'); });
+    const selHotel = document.getElementById('bdHotel');
     if (selHotel) {
       selHotel.addEventListener('change', function () {
         budgetSelectedHotelIdx = parseInt(selHotel.value, 10);
-        budgetIncludeStays = true;
-        renderBudget(true);
+        if (budgetSelectedHotelIdx >= 0) budgetIncludeStays = true;
+        again('#bdHotel');
       });
     }
 
-    const chkTrans = document.getElementById('chkTransportInclude');
-    if (chkTrans) {
-      chkTrans.addEventListener('change', function () {
-        budgetIncludeTransport = chkTrans.checked;
-        renderBudget(true);
-      });
-    }
+    const toggles = {
+      bdIncStay: function (v) { budgetIncludeStays = v; },
+      bdIncRide: function (v) { budgetIncludeTransport = v; },
+      bdIncFood: function (v) { budgetIncludeFood = v; },
+      bdIncEntry: function (v) { budgetIncludeEntry = v; },
+      bdIncBuffer: function (v) { budgetIncludeBuffer = v; }
+    };
+    Object.keys(toggles).forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('change', function () { toggles[id](el.checked); again('#' + id); });
+    });
 
-    const chkFood = document.getElementById('chkFoodInclude');
-    if (chkFood) {
-      chkFood.addEventListener('change', function () {
-        budgetIncludeFood = chkFood.checked;
-        renderBudget(true);
-      });
-    }
-
-    const chkEntry = document.getElementById('chkEntryInclude');
-    if (chkEntry) {
-      chkEntry.addEventListener('change', function () {
-        budgetIncludeEntry = chkEntry.checked;
-        renderBudget(true);
-      });
-    }
-
-    const chkBuffer = document.getElementById('chkBufferInclude');
-    if (chkBuffer) {
-      chkBuffer.addEventListener('change', function () {
-        budgetIncludeBuffer = chkBuffer.checked;
-        renderBudget(true);
-      });
-    }
-
-    // Sights Checklist Toggle
-    const btnSightsToggle = document.getElementById('btnToggleSightsAudit');
-    if (btnSightsToggle) {
-      btnSightsToggle.addEventListener('click', function () {
-        budgetSightsOpen = !budgetSightsOpen;
-        renderBudget(false);
-      });
-    }
-
-    // Sights Checkboxes
-    panel.querySelectorAll('.budget-sight-chk').forEach(function (chk) {
+    panel.querySelectorAll('.bd-sight-chk').forEach(function (chk) {
       chk.addEventListener('change', function () {
-        const sName = chk.getAttribute('data-sight-name');
-        if (!chk.checked) {
-          budgetExcludedPlaces.add(sName);
-        } else {
-          budgetExcludedPlaces.delete(sName);
-        }
-        renderBudget(true);
+        const name = chk.getAttribute('data-sight-name');
+        if (chk.checked) budgetExcludedPlaces.delete(name); else budgetExcludedPlaces.add(name);
+        again('.bd-sight-chk[data-i="' + chk.getAttribute('data-i') + '"]');
       });
     });
 
-    // Action Bar Buttons
-    const dlBtn = document.getElementById('budgetDownloadBtn');
-    if (dlBtn) {
-      dlBtn.addEventListener('click', function () {
-        downloadBudgetBreakdownFile(b);
-      });
+    const moreEl = document.getElementById('bdMore');
+    if (moreEl) moreEl.addEventListener('toggle', function () { budgetMoreOpen = moreEl.open; });
+    const calcEl = document.getElementById('bdCalc');
+    if (calcEl) calcEl.addEventListener('toggle', function () { budgetAuditOpen = calcEl.open; });
+
+    const resetBtn = document.getElementById('bdReset');
+    if (resetBtn) resetBtn.addEventListener('click', function () { budgetResetAll(); again('#bdReset'); });
+
+    const dlBtn = document.getElementById('bdDownloadBtn');
+    if (dlBtn) dlBtn.addEventListener('click', downloadBudgetBreakdownFile);
+    const cpBtn = document.getElementById('bdCopyBtn');
+    if (cpBtn) cpBtn.addEventListener('click', copyBudgetSummaryToClipboard);
+    const prBtn = document.getElementById('bdPrintBtn');
+    if (prBtn) prBtn.addEventListener('click', printBudgetPlan);
+
+    // Keep keyboard focus on the control the user just used (the panel is re-rendered on every change).
+    if (budgetPendingFocus) {
+      let target = panel.querySelector(budgetPendingFocus);
+      if (target && target.disabled) {
+        target = panel.querySelector(target.getAttribute('data-bstep') === '1' ? '[data-bstep="-1"]' : '[data-bstep="1"]');
+      }
+      if (target) target.focus({ preventScroll: true });
+      budgetPendingFocus = null;
     }
 
-    const prBtn = document.getElementById('budgetPrintBtn');
-    if (prBtn) {
-      prBtn.addEventListener('click', function () {
-        window.print();
-      });
-    }
-
-    const cpBtn = document.getElementById('budgetCopyBtn');
-    if (cpBtn) {
-      cpBtn.addEventListener('click', function () {
-        copyBudgetSummaryToClipboard(b);
-      });
-    }
-
-    // Delegated clicks for switching tabs
-    panel.querySelectorAll('[data-goto]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        setTab(btn.getAttribute('data-goto'));
-      });
-    });
-
-    // Pulse animation on value update
     if (triggerPulse) {
       const heroTot = document.getElementById('budgetHeroTotal');
       if (heroTot) {
         heroTot.classList.remove('budget-pulse-update');
-        void heroTot.offsetWidth; // Force reflow
+        void heroTot.offsetWidth; // restart the animation
         heroTot.classList.add('budget-pulse-update');
       }
+      bdAnnounce('Estimated total ' + money(b.grandTotal) + ' for ' + m.who + ', ' + m.daysLabel + '.');
     }
   }
 
@@ -2524,7 +2145,7 @@ function main(dest, idx) {
         selectedBanner = '<div class="card p-4 mb-6 bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 border border-emerald-500/30 rounded-2xl text-slate-100 shadow-xl">' +
           '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">' +
           '<div>' +
-          '<div class="text-xs text-emerald-400 font-semibold tracking-wider uppercase mb-1">📍 Selected Origin Route</div>' +
+          '<div class="text-xs text-emerald-400 font-semibold tracking-wider uppercase mb-1">' + icon('map-pin', { size: 12 }) + ' Selected Origin Route</div>' +
           '<h4 class="text-base font-bold text-white">From ' + esc(target.from) + ' to ' + esc(dest.title) + '</h4>' +
           '<p class="text-xs text-slate-300 mt-1">Road Distance: <strong class="budget-td-amount">' + target.distance + ' km</strong> · Drive Time: <strong class="budget-td-amount">' + esc(target.byCar) + '</strong></p>' +
           '</div>' +
@@ -2920,10 +2541,7 @@ function main(dest, idx) {
           '<p class="similar-card-state text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
           '</div>' +
           '</div>' +
-          '<div class="flex items-center justify-between px-1">' +
-          '<div class="similar-card-rating flex items-center gap-1 text-amber-400 text-xs font-bold">' +
-          '<span class="similar-star">★</span><span class="similar-score">' + esc(d.rating || '4.5') + '</span>' +
-          '</div>' +
+          '<div class="flex items-center justify-end px-1">' +
           '<span class="text-[11px] font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
           '</div>' +
           '</a>';
@@ -3085,7 +2703,6 @@ function main(dest, idx) {
 
   function openPlaceModal(p) {
     document.getElementById('placeName').textContent = p.name;
-    document.getElementById('placeRating').textContent = '★ ' + p.rating;
     document.getElementById('placeCategory').textContent = p.category;
     var distText = (p.distance || '').trim();
     if (/^\d+(\.\d+)?\s*(km|m)$/i.test(distText)) {
@@ -3302,6 +2919,8 @@ function main(dest, idx) {
           // Second click: actually remove
           clearTimeout(removeTimeout);
           saveBtn.disabled = true;
+          saveBtn.style.borderColor = '';
+          saveBtn.style.background = '';
           saveBtn.innerHTML = `<span class="save-icon">${icon('trash', { size: 16 })}</span><span class="save-label text-sm">Removing...</span>`;
           await removeDestinationOffline(dest.slug);
           saveBtn.disabled = false;
@@ -3373,7 +2992,7 @@ function main(dest, idx) {
     body.innerHTML = `
       ${isHighAltitude ? `
         <div class="cheat-alert-box ams">
-          <span class="alert-symbol">🏔️</span>
+          <span class="alert-symbol">${icon('mountain', { size: 20 })}</span>
           <div>
             <strong>High Altitude Zone (${dest.overview.altitude}m):</strong>
             <span>Acclimatize 48 hrs. Drink 3.5L+ water daily. If severe headache or nausea occurs, descend immediately.</span>

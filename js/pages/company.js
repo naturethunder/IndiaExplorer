@@ -35,13 +35,15 @@ const PAGES = {
 const rawPath = window.location.pathname.split('/').pop() || 'about.html';
 const file = rawPath.endsWith('.html') ? rawPath : rawPath + '.html';
 const page = PAGES[file] || PAGES['about.html'];
+// Clean extensionless path, matching the static <link rel="canonical"> and the sitemap.
+const cleanPath = '/' + file.replace(/\.html$/, '');
 
 initLayout({ variant: 'company', active: page.active });
 
 applySEO({
   title: page.title,
   description: page.description,
-  canonicalPath: file,
+  canonicalPath: cleanPath,
   keywords: page.keywords,
   robots: page.robots,
 });
@@ -49,10 +51,10 @@ if (file === 'about.html') {
   injectJsonLd(aboutPageJsonLd({
     title: page.title,
     description: page.description,
-    canonicalPath: file,
+    canonicalPath: cleanPath,
   }));
 }
 injectJsonLd(breadcrumbJsonLd([
   { name: 'Home', path: '/' },
-  { name: page.crumb, path: file },
+  { name: page.crumb, path: cleanPath },
 ]));

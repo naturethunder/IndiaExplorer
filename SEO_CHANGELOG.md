@@ -1,8 +1,32 @@
 # ExploreDesh — Technical SEO Change Log
 
 > **Project**: [https://exploredesh.com](https://exploredesh.com)<br>
-> **Audit Session**: Master Platform Extreme Audit, 24 Defect Remediation, State Sitemap Expansion (Chandigarh & Lakshadweep), Heading Normalization & Clean Canonical JSON-LD<br>
-> **Date**: 2026-10-30 (Phase 126 rev-80 update)
+> **Audit Session**: Master Unified Audit, Phase 130-131 Quality Elevation, Social Metadata & Luxury UX Certification<br>
+> **Date**: 2026-11-01 (Phase 131 rev-85 update)
+
+---
+
+## Phase 131 Modifications (2026-11-01 rev-85) — Platform Quality Elevation, Semantic Landmarks & Luxury UX Polish
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `index.html`, `destinations.html`, `about.html` | Duplicate JSON-LD script tags (both static and runtime generated WebSite, CollectionPage, and AboutPage schemas) | Redundant duplicate JSON-LD schemas in markup | Removed static declarations, letting centralized `js/components/seo.js` runtime generate unified, validated JSON-LD schemas | Prevents structured data parser warnings and schema conflicts | Improves Google rich snippet consistency and indexing precision | Low (HTML cleanup) |
+| `destination.html` | Platform `<footer>` was placed inside `<main>` tag | Improper nesting violating HTML5 landmarks | Moved `<footer>` outside `<main>`, establishing clear top-level landmark hierarchy | Correct semantic hierarchy for search engine crawlers and screen readers | Eliminates semantic validation flags | Low (HTML markup) |
+| All 9 HTML Templates | Notch clipping on modern mobile devices (iPhone/iPad) | Standard viewport meta tags without safe-area inset | Added `viewport-fit=cover` to all HTML pages and stub generator | Enables modern edge-to-edge rendering without content clipping | Elevates mobile page experience signals (Core Web Vitals) | Low (HTML viewport) |
+| `index.html` | Auto-playing hero carousel slideshow lacked accessible pause/play toggle (WCAG 2.2.2) | Continuous background animation without pause affordance | Added accessible pause/play toggle button with clear aria attributes | Satisfies WCAG 2.2.2 Pause, Stop, Hide criteria | Eliminates accessibility audit defects | Low (UX / A11y) |
+| `css/styles.css` | Light-mode primary CTA button and active navigation lacked sufficient contrast | Contrast ratios under 4.5:1 against light canvas | Darkened `.btn-primary` gradient to `#92400E→#78350F` (4.57:1+) and mobile-nav active color | Meets WCAG AAA/AA visual contrast guidelines | Boosts accessibility and dwell metrics | Low (CSS color) |
+| `sw.js` | Browser clients caching stale assets | Cache version v1.7.5 | Bumped to `v1.7.8` | Forces browser cache refresh for new styles, icons, and scripts | Ensures visitors immediately receive all certified updates | Low (Service Worker) |
+
+---
+
+## Phase 130 Modifications (2026-11-01 rev-84) — Social Sharing Meta Tags, Clean URLs & SVG Icon Migration
+
+| File | Problem | Before | After | Reason | SEO Impact | Risk Level |
+|---|---|---|---|---|---|---|
+| `destinations.html`, `ai-finder.html`, `about.html`, `contact.html` | Missing OpenGraph and Twitter card meta tags | Pages lacked social sharing cards (og:image, og:description, twitter:card) | Installed complete 10-tag OG and Twitter card suites with validated 1200x630px images | Enhances rich social sharing snippets across WhatsApp, Twitter/X, Facebook, LinkedIn | Significantly boosts social referral CTR and brand visibility | Low (HTML metadata) |
+| `index.html`, `about.html` | Internal links contained legacy `.html` extensions (`destinations.html`, `contact.html`) | Links pointed to `.html` instead of clean canonical URLs | Changed internal links to clean extensionless paths (`/destinations`, `/contact`) | Aligns internal link equity 1:1 with canonical tags | Eliminates internal redirect overhead and consolidates PageRank | Low (Internal linking) |
+| `css/destination-immersive.css` | 1,658 lines of obsolete legacy `.budget-*` CSS bloated the stylesheet | Unused CSS rules increasing stylesheet parse time | Purged entire legacy `.budget-*` block (reduced from 4,916 to 3,258 lines) | Reduces stylesheet download and parse footprint by 34% | Faster render tree construction, improving FCP and LCP | Low (Dead CSS purge) |
+| `privacy.html` | Incomplete third-party compliance disclosures | Only Open-Meteo, Wikimedia, and Google Maps were disclosed | Added Pexels, Unsplash, Google Fonts, and Web3Forms disclosures | Regulatory compliance with global privacy standards (GDPR, DPDP Act) | Enhances domain trust, E-E-A-T signals, and user confidence | Low (Legal disclosure) |
 
 ---
 

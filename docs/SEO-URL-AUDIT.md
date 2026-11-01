@@ -3,7 +3,7 @@
 > **Document Type:** Comprehensive URL & Routing Strategy Audit  
 > **Platform:** [ExploreDesh.com](https://exploredesh.com)  
 > **Standard:** [seo.md](file:///d:/latest%20live/ExploreDesh/seo.md) — Section 8, Section 11 & Section 50  
-> **Total Sitemapped URLs:** 2,450  
+> **Total Sitemapped URLs:** 2,455  
 > **Status:** Audited, Classified & Enforced
 
 ---
@@ -28,19 +28,19 @@ This document classifies every discovered URL pattern on ExploreDesh into one of
 | URL Pattern / Route | Page Type | HTTP Status | Target Indexation Directive | Robots Directive | Sitemapped | Canonical Target |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `https://exploredesh.com/` | Homepage Hub | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/` |
-| `https://exploredesh.com/destinations.html` | Master Catalogue | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/destinations.html` |
-| `https://exploredesh.com/about.html` | About & Authority | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/about.html` |
-| `https://exploredesh.com/contact.html` | Contact & Inquiries | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/contact.html` |
-| `https://exploredesh.com/ai-finder.html` | AI Trip Finder | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/ai-finder.html` |
-| `https://exploredesh.com/privacy.html` | Legal & Privacy | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/privacy.html` |
-| `https://exploredesh.com/terms.html` | Legal & Terms | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/terms.html` |
-| `https://exploredesh.com/destination.html?slug=<slug>` | Destination Guide (2,396 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-destinations-*.xml`) | Self-referencing `?slug=<slug>` |
-| `https://exploredesh.com/destinations.html?state=<State>` | State Hub (36 States/UTs >= 3 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?state=<State>` |
-| `https://exploredesh.com/destinations.html?type=<category>` | Category Landings (14 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?type=<category>` |
-| `https://exploredesh.com/destinations.html?month=<1-12>` | Monthly Travel Guides (12 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?month=<1-12>` |
-| `https://exploredesh.com/stubs/<slug>.html` | Static Pre-rendered Fallback (2,396 items) | 200 OK | **DISALLOW / NOINDEX** | `noindex, follow` (via header) + Disallow in `robots.txt` | No | `https://exploredesh.com/destination.html?slug=<slug>` |
-| `https://exploredesh.com/destinations.html?search=<query>` | Internal Site Search | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations.html` |
-| `https://exploredesh.com/destinations.html?tier=<tier>&state=...` | Multi-Faceted Combinations | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations.html` |
+| `https://exploredesh.com/destinations` | Master Catalogue | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/destinations` |
+| `https://exploredesh.com/about` | About & Authority | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/about` |
+| `https://exploredesh.com/contact` | Contact & Inquiries | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/contact` |
+| `https://exploredesh.com/ai-finder` | AI Trip Finder | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/ai-finder` |
+| `https://exploredesh.com/privacy` | Legal & Privacy | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/privacy` |
+| `https://exploredesh.com/terms` | Legal & Terms | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-main.xml`) | `https://exploredesh.com/terms` |
+| `https://exploredesh.com/destination?slug=<slug>` | Destination Guide (2,396 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-destinations-*.xml`) | Self-referencing `?slug=<slug>` |
+| `https://exploredesh.com/destinations?state=<State>` | State Hub (36 States/UTs >= 3 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?state=<State>` |
+| `https://exploredesh.com/destinations?type=<category>` | Category Landings (14 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?type=<category>` |
+| `https://exploredesh.com/destinations?month=<1-12>` | Monthly Travel Guides (12 items) | 200 OK | **INDEX** | `index, follow` | Yes (`sitemap-states.xml`) | Self-referencing `?month=<1-12>` |
+| `https://exploredesh.com/stubs/<slug>.html` | Static Pre-rendered Fallback (2,396 items) | 200 OK | **DISALLOW / NOINDEX** | `noindex, follow` (via header) + Disallow in `robots.txt` | No | `https://exploredesh.com/destination?slug=<slug>` |
+| `https://exploredesh.com/destinations?search=<query>` | Internal Site Search | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations` |
+| `https://exploredesh.com/destinations?tier=<tier>&state=...` | Multi-Faceted Combinations | 200 OK | **NOINDEX / CANONICALIZE** | `noindex, follow` | No | `https://exploredesh.com/destinations` |
 | `https://exploredesh.com/data/destinations/<slug>.json` | Raw JSON Endpoints | 200 OK | **NOINDEX** | `X-Robots-Tag: noindex, nofollow` | No | None (API asset) |
 
 ---

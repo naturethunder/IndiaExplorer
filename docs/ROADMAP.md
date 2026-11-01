@@ -3,9 +3,47 @@
 The working plan for the project: where it stands, what's next, and what it takes to go
 public. Keep this current — it's the single place to see status at a glance.
 
-Last updated: 2026-10-27 (rev-79 Phase 125 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture) · Previous: (rev-78 Phase 124 Homepage Hero Royal Typography, 3D Coverflow Small-Screen Depth Stacking & Viewport Sticky Scroll Restoration).
+Last updated: 2026-11-01 (rev-85 Phase 131 Platform Quality Elevation & Luxury UX Polish) · Previous: (rev-84 Phase 130 Full QA + UI/UX + SEO Audit & 8 Defect Remediation).
 
 ---
+
+- **Phase 131: Platform Quality Elevation & Luxury UX Polish (2026-11-01 rev-85)**:
+  1. **Accessibility & Semantic Fixes**:
+     - Added `viewport-fit=cover` to all 9 HTML templates + stub generator for iPhone notch safe-area.
+     - Moved footer outside `<main>` in `destination.html` for semantic correctness.
+     - Fixed light-theme contrast: `.btn-primary` gradient darkened to 4.57:1+, mobile-nav active color upgraded, dark-pill amber text preserved.
+     - Enlarged footer link touch targets to 44px WCAG minimum.
+     - Added carousel pause/play toggle button (WCAG 2.2.2) to homepage hero slideshow.
+     - Added gold `:focus-visible` keyboard focus ring across both themes.
+  2. **SEO & Code Cleanup**:
+     - Removed duplicate JSON-LD from `index.html`, `destinations.html`, `about.html`.
+     - Removed dead `#heroEyebrow` code from `explore.js`.
+     - Synced index drift across 2,396 destinations.
+     - Deleted dead assets: `fonts/caveat-latin.woff2` (75 KB) + 4 unused PNGs (3.98 MB).
+     - Fixed save-button state bug (red confirm tint stuck after removing offline guide).
+  3. **Luxury UX Polish (both themes)**:
+     - Gold scroll progress bar, gold text selection, luxury gold scrollbar, back-to-top medallion button, print stylesheet.
+  4. **Platform Health Scorecard**:
+     - Updated Scorecard: UI/UX 89, SEO 84, A11y 82, Performance 60, Code 76, Data 77, Security 82, Mobile 80, Overall **~85/100**.
+     - Master SEO Regression Guard: **71/71 PASSED (Score: 100/100)**.
+     - UI/UX QA Audit: **0 issues detected**.
+
+- **Phase 130: Full QA + UI/UX + SEO Audit & 8 Defect Remediation (2026-11-01 rev-84)**:
+  1. **Social Sharing Meta Tags (`destinations.html`, `ai-finder.html`, `about.html`, `contact.html`)**:
+     - Added complete OG/Twitter meta tag sets (og:type, og:url, og:site_name, og:title, og:description, og:image with dimensions, og:locale, twitter:card, twitter:title, twitter:description, twitter:image) to 4 pages missing social sharing support.
+  2. **Emoji→SVG Icon Compliance (6 JS files)**:
+     - Replaced all 15+ remaining Unicode emoji icons with project SVG icon system across `destination.js`, `finder.js`, `layout.js`, `indiaMap.js`, `offlineHub.js`. Removed emoji from sort options in `destinations.html`.
+  3. **Dead CSS Purge (`css/destination-immersive.css`)**:
+     - Removed 1,658 lines of legacy `.budget-*` CSS rules, reducing file from 4,916 to 3,258 lines (34% reduction). New `.bd` budget tab classes preserved intact.
+  4. **Privacy Policy Compliance (`privacy.html`)**:
+     - Added 4 missing third-party service disclosures: Pexels, Unsplash, Google Fonts, Web3Forms.
+  5. **Clean URL Architecture Fix (`index.html`, `about.html`)**:
+     - Fixed 8 remaining `.html` extension links to clean URLs (`/destinations`, `/contact`).
+  6. **Service Worker v1.7.6 (`sw.js`)**:
+     - Bumped cache version from v1.7.5 to v1.7.6.
+  7. **Platform Health Scorecard**:
+     - Audit Scorecard: UI/UX 85, SEO 82, A11y 72, Performance 58, Code Quality 72, Data Integrity 75, Security 82, Mobile 74, Overall **75/100**.
+     - Master SEO Regression Guard: **71/71 PASSED (Score: 100/100)**.
 
 - **Phase 125: 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture (2026-10-27 rev-79)**:
   1. **Luminous 24K Imperial Gold Carousel Medallions (`css/glass-immersive.css`, `css/styles.css`)**:

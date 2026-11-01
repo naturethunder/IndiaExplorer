@@ -402,7 +402,7 @@ async function renderSavedGuides(filterQuery = '') {
           </div>
           <p class="text-xs text-gray-400 truncate">${esc(guide.state || 'India')} • <span class="capitalize">${esc(guide.type || 'Travel')}</span></p>
           <div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
-            ${isAltitude ? `<span class="go-altitude-tag">🏔️ ${guide.altitude}m AMS Alert</span>` : ''}
+            ${isAltitude ? `<span class="go-altitude-tag">${icon('mountain', { size: 12 })} ${guide.altitude}m AMS Alert</span>` : ''}
             <span class="go-status-pill">✓ Saved Offline</span>
           </div>
         </div>
@@ -503,7 +503,7 @@ async function renderEmergencyToolkit() {
     <details class="go-accordion" open>
       <summary class="go-acc-summary">
         <span class="flex items-center gap-2 font-bold text-sm text-white">
-          <span>🏔️</span> ${esc(alt.title || 'High-Altitude Sickness (AMS) Protocol')}
+          <span>${icon('mountain', { size: 16 })}</span> ${esc(alt.title || 'High-Altitude Sickness (AMS) Protocol')}
         </span>
         <span class="acc-chevron">${icon('chevron-right', { size: 16 })}</span>
       </summary>
@@ -526,7 +526,7 @@ async function renderEmergencyToolkit() {
     <details class="go-accordion">
       <summary class="go-acc-summary">
         <span class="flex items-center gap-2 font-bold text-sm text-white">
-          <span>🐯</span> ${esc(safari.title || 'Forest Core & Safari Safety')}
+          <span>${icon('paw-print', { size: 16 })}</span> ${esc(safari.title || 'Forest Core & Safari Safety')}
         </span>
         <span class="acc-chevron">${icon('chevron-right', { size: 16 })}</span>
       </summary>

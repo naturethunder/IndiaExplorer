@@ -39,7 +39,7 @@ function navbarHTML(active, variant) {
     '    </a>';
 
   const offlineBtn =
-    '<button type="button" class="nav-offline-btn" id="navOfflineBtn" aria-label="Open ExploreDesh Go offline pocket guides and emergency SOS toolkit" title="ExploreDesh Go: Offline Guides & SOS">\n' +
+    '<button type="button" class="nav-offline-btn" id="navOfflineBtn" aria-label="Offline Go: open ExploreDesh Go offline pocket guides and emergency SOS toolkit" title="ExploreDesh Go: Offline Guides & SOS">\n' +
     '  <span class="nav-offline-icon">' + icon('wifi-off', { size: 15 }) + '</span>\n' +
     '  <span class="nav-offline-label hidden xl:inline">Offline Go</span>\n' +
     '  <span class="nav-offline-count-badge" style="display:none">0</span>\n' +
@@ -130,7 +130,7 @@ function footerHTML() {
     '        </div>\n' +
     '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-3">India\'s premier luxury travel discovery atelier. Curated sanctuaries, heritage monuments, and boutique escapes across 36 states and union territories.</p>\n' +
     '        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-amber-300 font-medium">\n' +
-    '          <span>✨ Complete Catalogue of Bharat</span>\n' +
+    '          <span>' + icon('sparkles', { size: 14 }) + ' Complete Catalogue of Bharat</span>\n' +
     '        </div>\n' +
     '      </div>\n' +
     cols + '\n' +
@@ -166,7 +166,7 @@ function mobileNavHTML(active, variant) {
   ).join('\n  ');
 
   const offlineMobBtn =
-    '<button type="button" class="mobile-nav-btn" id="mobNavOfflineBtn" aria-label="Open ExploreDesh Go offline pocket guides">\n' +
+    '<button type="button" class="mobile-nav-btn" id="mobNavOfflineBtn" aria-label="Offline Go: open ExploreDesh Go offline pocket guides">\n' +
     '  <span class="mobile-nav-icon relative">' + icon('wifi-off', { size: 22 }) +
     '    <span class="nav-offline-count-badge" style="display:none">0</span>\n' +
     '  </span>Offline Go\n' +
@@ -261,6 +261,35 @@ export function initLayout(opts = {}) {
 
   // Initialize universal GSAP glass hover engine across buttons, pills, cards and links
   initGlobalGlassHoverGSAP();
+
+  // Scroll progress bar
+  const prog = document.createElement('div');
+  prog.id = 'scrollProgress';
+  prog.style.width = '0%';
+  document.body.prepend(prog);
+
+  // Back-to-top button
+  const btt = document.createElement('button');
+  btt.id = 'backToTop';
+  btt.type = 'button';
+  btt.setAttribute('aria-label', 'Back to top');
+  btt.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>';
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.body.appendChild(btt);
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+        prog.style.width = pct + '%';
+        btt.classList.toggle('visible', window.scrollY > 400);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
 }
 
 /** Re-highlight a navbar link by exact href or normalized path (used by destinations.html for ?type= tabs). */

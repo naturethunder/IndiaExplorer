@@ -1,4 +1,25 @@
-# Image Quality & Performance Fixes — Phase 122 (2026-10-26 rev-76)
+# Image Quality & Performance Fixes — Phase 131 (2026-11-01 rev-85)
+
+## ✅ Phase 131 (rev-85) — Platform Quality Elevation, WCAG Contrast & Luxury Polish (2026-11-01)
+
+### Problem Diagnosed & Fixed
+- **Dead Asset Purge**: Deleted orphaned `fonts/caveat-latin.woff2` (75 KB) and 4 unreferenced destination PNGs (`bangaram_island_lagoon_1785085303615.png`, `dawki_umngot_river_1785085316445.png`, `gurudongmar_sacred_lake_1785085332045.png`, `hanle_dark_sky_1785085345472.png` totaling 3.98 MB), saving ~4.05 MB from the project bundle.
+- **Carousel Play/Pause Toggle (WCAG 2.2.2)**: Installed accessible pause/play toggle on homepage hero carousel with keyboard accessibility.
+- **Light-Theme Contrast Elevation**: Darkened `.btn-primary` gradient to `#92400E→#78350F` (4.57:1+) and mobile navigation active color to pass WCAG AA/AAA.
+- **Luxury UI Features**: Added 3px top gold scroll progress bar, gold selection highlight, luxury scrollbar thumb, floating back-to-top medallion button, and print stylesheet.
+- **Service Worker v1.7.8**: Bumped cache version in `sw.js` to ensure immediate client cache refresh.
+
+---
+
+## ✅ Phase 130 (rev-84) — Social Sharing Meta Tags, Dead CSS Purge & Lucide SVG Icons (2026-11-01)
+
+### Problem Diagnosed & Fixed
+- **Social Sharing OpenGraph / Twitter Cards**: Installed complete OG/Twitter card suites on `destinations.html`, `ai-finder.html`, `about.html`, and `contact.html`.
+- **Dead CSS Purge**: Eradicated 1,658 lines of obsolete `.budget-*` CSS rules from `css/destination-immersive.css`, reducing file size by 34%.
+- **Emoji to Lucide SVG Icons**: Migrated 15+ inline emoji to accessible Lucide-style vector SVGs across 6 application JS files.
+- **Clean Extensionless URLs**: Replaced internal `.html` links with canonical clean paths (`/destinations`, `/contact`).
+
+---
 
 ## ✅ Phase 129 (rev-83) — Universal Architectural De-Bulking, Overview Editorial Unboxing & Monochromatic Champagne Gold Glass (2026-10-31)
 

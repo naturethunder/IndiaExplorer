@@ -214,15 +214,17 @@ export function initIndiaMap(opts) {
   }
 
   function getCategoryIcon(type) {
-    switch (type) {
-      case 'hill_station': return '🏔️';
-      case 'beach': return '🏖️';
-      case 'heritage': return '🏰';
-      case 'wildlife': return '🐅';
-      case 'spiritual': return '🛕';
-      case 'adventure': return '🧗';
-      default: return '📍';
-    }
+    const map = { hill_station: 'mountain', beach: 'waves', heritage: 'landmark', wildlife: 'paw-print', spiritual: 'temple', adventure: 'tent' };
+    const name = map[type] || 'map-pin';
+    return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline;vertical-align:-2px">' + ({
+      mountain: '<path d="m8 3 4 8 5-5 5 15H2L8 3z"/>',
+      waves: '<path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>',
+      landmark: '<path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="m4 7 8-5 8 5H4z"/>',
+      'paw-print': '<circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/>',
+      temple: '<path d="M4 22h16"/><path d="M6 22V11"/><path d="M18 22V11"/><path d="M4 11h16"/><path d="m12 2 8 6H4l8-6z"/>',
+      tent: '<path d="M19 20 10 4"/><path d="m5 20 9-16"/><path d="M3 20h18"/>',
+      'map-pin': '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+    }[name] || '') + '</svg>';
   }
 
   function updateMapCard(stateName) {

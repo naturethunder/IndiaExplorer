@@ -636,7 +636,7 @@ html[data-theme="light"] .calligraphy-kicker::after {
   flex-shrink: 0;
 }
 
-/* ─── Scrollbar ──────────────────────────────────────────── */
+/* ─── Scrollbar (Luxury Gold Accent) ────────────────────── */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -646,12 +646,20 @@ html[data-theme="light"] .calligraphy-kicker::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: linear-gradient(180deg, #E5C07B 0%, #B38628 100%);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: linear-gradient(180deg, #F5C542 0%, #D4A028 100%);
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D97706 0%, #B45309 100%);
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #F59E0B 0%, #D97706 100%);
 }
 
 /* ─── Nav — Ultra-Luxury Royal Obsidian ──────────────────── */
@@ -2003,6 +2011,10 @@ html:not([data-theme="light"]) body.glass-immersive .dest-summary-val {
   text-decoration: none;
   font-size: 0.875rem;
   transition: color var(--transition);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
 }
 
 .footer-link:hover {
@@ -2158,6 +2170,7 @@ textarea.form-input {
 .hero-home {
   position: relative;
   min-height: max(720px, 100vh);
+  min-height: max(720px, 100dvh);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6154,4 +6167,112 @@ html[data-theme="light"] .about-corridor-card div {
     grid-template-columns: 5fr 7fr;
     gap: 2.5rem;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LUXURY POLISH — Scroll Progress, Selection, Focus, Back-to-Top, Print
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── Gold Text Selection ───────────────────────────────── */
+::selection {
+  background: rgba(245, 197, 66, 0.3);
+  color: inherit;
+}
+
+html[data-theme="light"] ::selection {
+  background: rgba(217, 119, 6, 0.2);
+  color: inherit;
+}
+
+/* ─── Scroll Progress Bar ───────────────────────────────── */
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #E5C07B, #F5C542, #B38628);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+html[data-theme="light"] #scrollProgress {
+  background: linear-gradient(90deg, #D97706, #F59E0B, #B45309);
+}
+
+/* ─── Gold Keyboard Focus Ring ──────────────────────────── */
+:focus-visible {
+  outline: 2px solid #F5C542 !important;
+  outline-offset: 2px !important;
+}
+
+html[data-theme="light"] :focus-visible {
+  outline-color: #D97706 !important;
+}
+
+/* ─── Back-to-Top Button ────────────────────────────────── */
+#backToTop {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 197, 66, 0.5);
+  background: rgba(8, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  color: #F5C542;
+  cursor: pointer;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+  pointer-events: none;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#backToTop:hover {
+  background: rgba(245, 197, 66, 0.15);
+  border-color: #F5C542;
+}
+
+html[data-theme="light"] #backToTop {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(217, 119, 6, 0.4);
+  color: #B45309;
+}
+
+html[data-theme="light"] #backToTop:hover {
+  background: rgba(254, 243, 199, 0.95);
+  border-color: #D97706;
+}
+
+@media (max-width: 768px) {
+  #backToTop { bottom: 80px; right: 14px; }
+}
+
+/* ─── Print Stylesheet ──────────────────────────────────── */
+@media print {
+  #siteNav, #siteMobileNav, #backToTop, #scrollProgress,
+  .theme-toggle-btn, .mobile-nav, .skip-link,
+  .explore-immersive-bg, .explore-immersive-overlay,
+  .dest-immersive-bg, .dest-immersive-overlay { display: none !important; }
+
+  body, main, .glass-card, .info-card, .dest-tab-content {
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  a { color: #111 !important; text-decoration: underline !important; }
+  img { max-width: 100% !important; page-break-inside: avoid; }
 }

@@ -29,7 +29,7 @@ function stubHTML(d) {
     '<html lang="en">\n' +
     '<head>\n' +
     '  <meta charset="UTF-8" />\n' +
-    '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n' +
+    '  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />\n' +
     '  <meta http-equiv="refresh" content="0;url=' + relUrl + '" />\n' +
     '  <link rel="canonical" href="' + canonicalUrl + '" />\n' +
     '  <title>' + title + '</title>\n' +

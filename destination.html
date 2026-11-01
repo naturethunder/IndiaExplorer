@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <!-- SEO: Title & Description updated by destination.js via applySEO() -->
   <title>Destination Guide — ExploreDesh</title>
   <meta name="description"
@@ -74,9 +74,9 @@
     media="print" onload="this.media='all'" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css?v=20261031_luxury_debulk_v1" />
-  <link rel="stylesheet" href="css/tailwind.css?v=20260916_1" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20261031_luxury_debulk_v1" />
   <link rel="stylesheet" href="css/glass-immersive.css?v=20261031_luxury_debulk_v1" />
-  <link rel="stylesheet" href="css/destination-immersive.css?v=20261031_luxury_debulk_v1" />
+  <link rel="stylesheet" href="css/destination-immersive.css?v=20261101_budget_v2" />
   <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
@@ -257,9 +257,10 @@
       </div>
     </section>
 
-    <!-- FOOTER (shared component) -->
-    <div id="siteFooter"></div>
   </main>
+
+  <!-- FOOTER (shared component) -->
+  <div id="siteFooter"></div>
 
   <!-- Place Details Modal -->
   <div id="placeModal" class="fixed inset-0 z-[210] flex items-center justify-center p-4" style="display:none"
@@ -295,7 +296,6 @@
       <div class="p-6">
         <div class="flex items-start justify-between gap-3 mb-1">
           <h2 id="placeName" class="text-2xl font-bold text-gray-900 leading-tight"></h2>
-          <span id="placeRating" class="shrink-0 text-amber-500 font-bold" aria-label="Rating"></span>
         </div>
         <span id="placeCategory"
           class="inline-block badge bg-orange-100 text-orange-800 text-xs capitalize mb-4"></span>
@@ -422,7 +422,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/pages/destination.js?v=20261018_phase100"></script>
+  <script type="module" src="js/pages/destination.js?v=20261101_budget_v2"></script>
   <!-- Bug 12 fix: noscript fallback for JS-disabled browsers -->
   <noscript>
     <style>

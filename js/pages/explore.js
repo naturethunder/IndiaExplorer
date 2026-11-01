@@ -13,6 +13,9 @@ import { esc, inr } from '../utils/format.js';
 import { icon } from '../components/icons.js';
 import { searchDestinations } from '../utils/search.js';
 
+// Own-property lookup so URL values like ?corridor=constructor don't resolve to Object.prototype members.
+const own = (obj, key) => !!key && Object.prototype.hasOwnProperty.call(obj, key);
+
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
@@ -93,7 +96,6 @@ const monthSel = document.getElementById('monthFilter');
 const typeWrap = document.getElementById('typeFilter');
 const heroTitle = document.getElementById('explore-hero-title');
 const heroDescription = document.getElementById('exploreHeroDescription');
-const heroEyebrowText = document.querySelector('#heroEyebrow .eyebrow-txt');
 const discoveryHeading = document.querySelector('.discovery-heading');
 
 const BASE_SEO = {
@@ -118,7 +120,7 @@ function landingSeo(resultLength) {
   const activeCount = activeFilterCount();
   if (activeCount === 0) return { ...BASE_SEO, breadcrumb: 'The Complete Travel Catalogue of Bharat', isDefault: true };
 
-  if (activeCount === 1 && filters.corridor && CORRIDORS[filters.corridor]) {
+  if (activeCount === 1 && own(CORRIDORS, filters.corridor)) {
     const c = CORRIDORS[filters.corridor];
     return {
       title: c.label + ' Corridor Destinations | ExploreDesh',
@@ -219,7 +221,6 @@ function applyLandingSeo(resultLength) {
       heroDescription.textContent = seo.description;
     }
   }
-  if (heroEyebrowText) heroEyebrowText.textContent = seo.breadcrumb || 'The Complete Travel Catalogue of Bharat';
   if (discoveryHeading) discoveryHeading.textContent = seo.isDefault ? 'Destinations' : seo.heading;
 
   if (seo.noSchema) {
@@ -430,7 +431,7 @@ if (quickTagsWrap) {
       if (category) {
         btn.innerHTML = `<span class="quick-tag-left">${icon(category.iconName, { size: 16 })}<span>${esc(category.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
       }
-    } else if (corridor && CORRIDORS[corridor]) {
+    } else if (own(CORRIDORS, corridor)) {
       const c = CORRIDORS[corridor];
       btn.innerHTML = `<span class="quick-tag-left">${icon(c.iconName, { size: 16 })}<span>${esc(c.label)}</span></span><svg class="quick-tag-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
     }
@@ -727,7 +728,7 @@ function readFiltersFromUrl() {
       hasUrlParams = true;
     }
   }
-  if (params.get('corridor') && CORRIDORS[params.get('corridor')]) {
+  if (own(CORRIDORS, params.get('corridor'))) {
     newFilters.corridor = params.get('corridor');
     hasUrlParams = true;
   }
@@ -746,7 +747,7 @@ function readFiltersFromUrl() {
       hasUrlParams = true;
     }
   }
-  if (params.get('tier') && PRICE_TIERS[params.get('tier')]) {
+  if (own(PRICE_TIERS, params.get('tier'))) {
     newFilters.tier = params.get('tier');
     hasUrlParams = true;
   } else if (params.get('maxPrice')) {
@@ -812,7 +813,7 @@ function apply(options = {}) {
     }
   }
 
-  if (filters.corridor && CORRIDORS[filters.corridor]) {
+  if (own(CORRIDORS, filters.corridor)) {
     const cStates = CORRIDORS[filters.corridor].states.map(function (s) { return s.toLowerCase(); });
     results = results.filter(function (d) {
       return d.state && cStates.indexOf(d.state.toLowerCase()) >= 0;
@@ -900,14 +901,14 @@ function renderActiveFilterChips() {
   if (filters.state) {
     activeItems.push({ key: 'state', label: 'State: ' + filters.state });
   }
-  if (filters.corridor && CORRIDORS[filters.corridor]) {
+  if (own(CORRIDORS, filters.corridor)) {
     activeItems.push({ key: 'corridor', label: 'Corridor: ' + CORRIDORS[filters.corridor].label });
   }
   if (filters.region) {
     activeItems.push({ key: 'region', label: 'Region: ' + filters.region });
   }
   if (filters.tier) {
-    const tier = PRICE_TIERS[filters.tier];
+    const tier = own(PRICE_TIERS, filters.tier) ? PRICE_TIERS[filters.tier] : null;
     activeItems.push({ key: 'tier', label: 'Price: ' + (tier ? tier.label : filters.tier) });
   }
   if (filters.season) {
@@ -942,8 +943,7 @@ function renderActiveFilterChips() {
       else if (key === 'type') { filters.type = ''; }
       else if (key === 'state') { filters.state = ''; if (stateSel) stateSel.value = ''; }
       else if (key === 'corridor') { filters.corridor = ''; if (corridorSel) corridorSel.value = ''; }
-      else if (key === 'region') { filters.region = ''; if (regionSel) regionSel.value = '';
-  if (corridorSel) corridorSel.value = ''; }
+      else if (key === 'region') { filters.region = ''; if (regionSel) regionSel.value = ''; }
       else if (key === 'tier') { filters.tier = ''; if (tierSel) tierSel.value = ''; }
       else if (key === 'season') { filters.season = ''; if (seasonSel) seasonSel.value = ''; }
       else if (key === 'month') { filters.month = null; if (monthSel) monthSel.value = ''; }
@@ -978,6 +978,7 @@ function resetFilters() {
   if (sortSel) sortSel.value = 'rating';
   if (tierSel) tierSel.value = '';
   if (regionSel) regionSel.value = '';
+  if (corridorSel) corridorSel.value = '';
   if (seasonSel) seasonSel.value = '';
   if (monthSel) monthSel.value = '';
   apply();
@@ -1171,12 +1172,12 @@ function initGSAPAnimations() {
   // Hero entrance timeline
   const tl = window.gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-  tl.from('#heroEyebrow', { opacity: 0, y: -16, duration: 0.6 })
-    .from('.explore-hero-display .hero-line-1', { opacity: 0, y: 30, duration: 0.8 }, '-=0.3')
+  tl.from('.explore-hero-display .hero-line-1', { opacity: 0, y: 30, duration: 0.8 })
     .from('.explore-hero-display .hero-line-2', { opacity: 0, y: 30, duration: 0.8 }, '-=0.6')
     .from('.explore-hero-desc', { opacity: 0, y: 20, duration: 0.7 }, '-=0.5')
     .from('.stat-metric-card', { opacity: 0, y: 20, stagger: 0.08, duration: 0.6 }, '-=0.5')
-    .from('.hero-quick-card', { opacity: 0, x: 30, duration: 0.8 }, '-=0.7')
+    // fromTo + clearProps: the card also has a CSS `transition: transform`, which made from() settle at x:30.
+    .fromTo('.hero-quick-card', { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.8, clearProps: 'transform,opacity' }, '-=0.7')
     .from('.explore-scroll-indicator', { opacity: 0, duration: 0.8 }, '-=0.4');
 
   // Animated number counter for hero statistics

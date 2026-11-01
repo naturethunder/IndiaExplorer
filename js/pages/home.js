@@ -77,6 +77,9 @@ injectJsonLd(websiteJsonLd(), 'website');
               <span class="hero-dot-pill"></span>
             </button>
           `).join('')}
+          <button type="button" id="heroPauseBtn" class="hero-dot-btn ml-1" aria-label="${heroPaused ? 'Play slideshow' : 'Pause slideshow'}" style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(11,18,32,0.85);border:1.5px solid rgba(245,197,66,0.5);cursor:pointer;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="text-amber-400" style="color:#F5C542;">${heroPaused ? '<polygon points="6 3 20 12 6 21"/>' : '<rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/>'}</svg>
+          </button>
         </div>
       `;
 
@@ -87,12 +90,21 @@ injectJsonLd(websiteJsonLd(), 'website');
           resetTimer();
         };
       });
+      const pauseBtn = document.getElementById('heroPauseBtn');
+      if (pauseBtn) {
+        pauseBtn.onclick = () => {
+          heroPaused = !heroPaused;
+          if (heroPaused) { clearInterval(timer); } else { startTimer(); }
+          setHeroPhoto(currentIdx);
+        };
+      }
     }
   }
 
   let timer = null;
+  let heroPaused = false;
   function startTimer() {
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || heroPaused) return;
     clearInterval(timer);
     timer = setInterval(() => setHeroPhoto(currentIdx + 1), 7000);
   }
@@ -236,7 +248,7 @@ if (!isFullIndexLoaded) {
   const stats = [
     { ic: 'map-pin', raw: totalDestCount, suffix: '', label: 'Destinations' },
     { ic: 'landmark', raw: (STATES ? STATES.length : 36), suffix: '', label: 'States' },
-    { ic: 'mountain', raw: 14037, suffix: '+', label: 'Places' },
+    { ic: 'mountain', raw: 13980, suffix: '+', label: 'Places' },
     { ic: 'bed', raw: 10439, suffix: '+', label: 'Stays' },
   ];
   el.innerHTML = stats.map((s) =>

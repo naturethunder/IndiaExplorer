@@ -127,9 +127,6 @@ export function trendCardHTML(d, opts = {}) {
     (image ? '<img src="' + esc(image) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" width="480" height="320" ' + loadingAttr + ' decoding="async" referrerpolicy="no-referrer" data-fallback-src="' + esc(rawImage) + '" ' +
       'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
     '<div class="trend-card-overlay"></div>' +
-    '<div class="absolute top-3 left-3">' +
-    '<span class="rating-badge">' + icon('star', { size: 13, fill: true }) + esc(d.rating) + '</span>' +
-    '</div>' +
     '<div class="absolute bottom-0 left-0 right-0 p-4">' +
     '<p class="text-white font-bold text-lg leading-tight drop-shadow-md trend-card-title">' + esc(d.title) + '</p>' +
     '<div class="flex items-center gap-2 flex-wrap mt-2.5">' +
@@ -165,11 +162,6 @@ export function destCardHTML(d, opts = {}) {
     '</div>' +
     '<div class="dest-card-body">' +
     '<div class="dest-card-meta-row">' +
-    '<div class="dest-card-rating">' +
-    '<span class="star-icon">' + icon('star', { size: 14, fill: true }) + '</span>' +
-    '<span class="rating-num">' + esc(d.rating) + '</span>' +
-    '<span class="review-cnt">(' + inr(d.reviewCount) + ')</span>' +
-    '</div>' +
     '<span class="dest-best-season">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="dest-card-desc">' + esc(d.short) + '</p>' +
@@ -200,12 +192,6 @@ export function heroCardHTML(d, opts = {}) {
     '<div class="hero-hill-body">' +
     '<h3 class="hero-hill-title truncate">' + esc(d.title) + '</h3>' +
     '<div class="hero-hill-meta">' +
-    '<span class="hero-hill-rating">' +
-    '<span class="text-amber-400">' + icon('star', { size: 12, fill: true }) + '</span>' +
-    '<strong>' + esc(d.rating) + '</strong>' +
-    '<span class="opacity-75">(' + inr(d.reviewCount) + ')</span>' +
-    '</span>' +
-    '<span class="hero-hill-divider">·</span>' +
     '<span class="hero-hill-season">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
     '<p class="hero-hill-desc">' + esc(d.short) + '</p>' +
