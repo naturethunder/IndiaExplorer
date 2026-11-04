@@ -771,6 +771,17 @@ html:not([data-theme="light"]) .dest-discovery-toolbar {
 }
 
 @media (max-width: 768px) {
+  .category-tabs-track {
+    padding: 6px 48px !important;
+  }
+
+  .category-scroll-arrow {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
   .category-scroll-arrow.left {
     left: 4px;
   }
@@ -1321,6 +1332,8 @@ html[data-theme="light"] select option {
 .dest-card-item {
   min-width: 0;
   height: 100%;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 440px;
   /* Cards start hidden — GSAP scroll-reveal sets opacity:0 on them */
 }
 
@@ -1341,10 +1354,10 @@ html[data-theme="light"] select option {
     0 12px 32px rgba(0, 0, 0, 0.30),
     inset 0 1px 0 rgba(255, 255, 255, 0.14) !important;
   transition:
-    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s ease,
-    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-    background 0.45s ease !important;
+    transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.20s ease,
+    box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.25s ease !important;
   position: relative;
   cursor: pointer;
   will-change: transform, box-shadow;

@@ -111,7 +111,14 @@ function markDestinationNotFound() {
 
 // ─── Resolve destination ───────────────────────────────
 const params = new URLSearchParams(window.location.search);
-let rawSlug = params.get('slug') || params.get('id') || window.location.hash.slice(1) || null;
+let rawSlug = params.get('slug') || params.get('id') || (window.location.hash ? window.location.hash.slice(1) : '') || null;
+if (!rawSlug && typeof window !== 'undefined' && window.location && window.location.pathname) {
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  const last = parts[parts.length - 1];
+  if (parts.length >= 2 && (parts[0] === 'destination' || parts[0] === 'destinations') && last && !last.endsWith('.html')) {
+    rawSlug = last;
+  }
+}
 let slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, '').replace(/\.html$/i, '').replace(/\.json$/i, '') : null;
 if (slug) {
   if (slug.includes('bangla') && slug.includes('sahib')) {
@@ -2528,25 +2535,26 @@ function main(dest, idx) {
         const rawPhoto = resolveCardPhoto(d);
         const img = optimizeImageUrl(rawPhoto, 600);
         return '' +
-          '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
-          '<div class="rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
+          '<a href="' + destUrl(d.slug) + '" class="group block rounded-2xl p-3 border border-white/15 bg-slate-900/85 backdrop-blur-xl shadow-2xl hover:border-amber-400/60 hover:-translate-y-1.5 transition-all duration-300">' +
+          '<div class="dest-card-media rounded-xl overflow-hidden aspect-video relative mb-3 bg-slate-800' + (img ? '' : ' image-unavailable') + '">' +
           (img ? '<img src="' + esc(img) + '" alt="' + esc((d.image && d.image.alt) || d.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="225" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback-src="' + esc(rawPhoto) + '" ' +
             'onerror="if(this.dataset.fallback){this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'image-unavailable\');}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' : '') +
-          '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>' +
-          '<div class="absolute top-2 right-2">' +
-          '<span class="badge bg-black/60 backdrop-blur text-white text-[10px] px-2 py-0.5 rounded-full border border-white/15">' + esc(typeLabel(d.type)) + '</span>' +
+          '<div class="dest-card-scrim"></div>' +
+          '<div class="absolute top-2 right-2 z-10">' +
+          '<span class="badge bg-black/65 backdrop-blur text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-white/20">' + esc(typeLabel(d.type)) + '</span>' +
           '</div>' +
-          '<div class="absolute bottom-2 left-2.5 right-2.5">' +
-          '<p class="similar-card-title text-white text-sm font-bold truncate leading-tight drop-shadow">' + esc(d.title) + '</p>' +
-          '<p class="similar-card-state text-white/70 text-[11px] font-medium">' + esc(d.state) + '</p>' +
+          '<div class="dest-card-header-overlay">' +
+          '<h4 class="dest-card-title truncate">' + esc(d.title) + '</h4>' +
+          '<p class="dest-card-location">' + icon('map-pin', { size: 12 }) + '<span>' + esc(d.state) + '</span></p>' +
           '</div>' +
           '</div>' +
-          '<div class="flex items-center justify-end px-1">' +
-          '<span class="text-[11px] font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
+          '<div class="flex items-center justify-between px-1 pt-1 border-t border-white/10">' +
+          '<span class="dest-best-season text-[11px] font-semibold text-emerald-400 inline-flex items-center gap-1">' + icon('calendar', { size: 11 }) + esc((d.bestTime && d.bestTime.label) || 'Best: Oct – Mar') + '</span>' +
+          '<span class="dest-explore-cta text-[11px] font-bold text-amber-400 group-hover:text-amber-300 group-hover:translate-x-1 transition-all inline-flex items-center gap-1">Explore Sanctuary →</span>' +
           '</div>' +
           '</a>';
       }).join('');
-      return similar.length >= 4;
+      return similar.length > 0;
     }
     return false;
   }

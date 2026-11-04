@@ -4,7 +4,7 @@
  * Automatically synchronizes filter state with URL query parameters and sessionStorage
  * so that back button navigation, refreshes, and bookmarks preserve active filters.
  */
-import { fetchIndex } from '../data/api.js';
+import { fetchIndex, fetchHomeIndex } from '../data/api.js';
 import { initLayout, setActiveNav } from '../components/layout.js';
 import { destCardHTML } from '../components/destinationCard.js?v=20261008_phase87';
 import { applySEO, injectJsonLd, breadcrumbJsonLd, collectionPageJsonLd } from '../components/seo.js';
@@ -23,16 +23,31 @@ if ('scrollRestoration' in history) {
 initLayout({ active: 'destinations' });
 
 let idx;
+let isFullIndexLoaded = false;
+const hasQueryParams = Boolean(window.location.search && window.location.search.length > 1);
+
 try {
-  idx = await fetchIndex();
+  // Ultra-fast instant catalog render (~200 KB instead of 2.8 MB)
+  // If user arrives with a deep filter or search query, load full index directly
+  if (hasQueryParams) {
+    idx = await fetchIndex();
+    isFullIndexLoaded = true;
+  } else {
+    idx = await fetchHomeIndex();
+  }
 } catch (err) {
-  console.warn('[explore] manifest failed to load:', err);
-  const main = document.getElementById('main');
-  if (main) main.insertAdjacentHTML('beforeend',
-    '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
-  throw err;
+  try {
+    idx = await fetchIndex();
+    isFullIndexLoaded = true;
+  } catch (fallbackErr) {
+    console.warn('[explore] manifest failed to load:', fallbackErr);
+    const main = document.getElementById('main');
+    if (main) main.insertAdjacentHTML('beforeend',
+      '<p class="text-center py-16" style="color:rgba(255,255,255,0.6)">Couldn\'t load destinations. Please refresh the page.</p>');
+    throw fallbackErr;
+  }
 }
-const SUMMARIES = idx.destinations;
+let SUMMARIES = idx.destinations;
 SUMMARIES.forEach((d, i) => {
   d._index = i;
   d._updatedAt = d.updatedAt ? new Date(d.updatedAt).getTime() : 0;
@@ -521,6 +536,9 @@ function initCardGlassTilt(items) {
     card.dataset.tiltInitted = '1';
 
     let bounds = null;
+    window.gsap.set(card, { transformPerspective: 1000, force3D: true });
+    const rxTo = window.gsap.quickTo(card, 'rotateX', { duration: 0.12, ease: 'power2.out' });
+    const ryTo = window.gsap.quickTo(card, 'rotateY', { duration: 0.12, ease: 'power2.out' });
 
     card.addEventListener('mouseenter', () => {
       bounds = card.getBoundingClientRect();
@@ -532,27 +550,14 @@ function initCardGlassTilt(items) {
       const mouseY = e.clientY - bounds.top;
       const xPct = (mouseX / bounds.width - 0.5) * 2; // -1 to 1
       const yPct = (mouseY / bounds.height - 0.5) * 2; // -1 to 1
-
-      window.gsap.to(card, {
-        rotateY: xPct * 4.5,
-        rotateX: -yPct * 4.5,
-        transformPerspective: 1000,
-        duration: 0.3,
-        ease: 'power1.out',
-        overwrite: 'auto',
-      });
-    });
+      ryTo(xPct * 4.5);
+      rxTo(-yPct * 4.5);
+    }, { passive: true });
 
     card.addEventListener('mouseleave', () => {
       bounds = null;
-      window.gsap.to(card, {
-        rotateX: 0,
-        rotateY: 0,
-        duration: 0.55,
-        ease: 'power2.out',
-        overwrite: 'auto',
-        clearProps: 'rotateX,rotateY,transformPerspective',
-      });
+      rxTo(0);
+      ryTo(0);
     });
   });
 }
@@ -1156,6 +1161,43 @@ window.addEventListener('popstate', function () {
 readFiltersFromUrl();
 renderTypeButtons();
 apply({ preserveShown: true });
+
+// ─── Background Promotion: Load Full Catalog (2,396 items) ───
+function loadFullCatalog() {
+  if (isFullIndexLoaded) return;
+  isFullIndexLoaded = true;
+  fetchIndex().then((fullIdx) => {
+    if (!fullIdx || !fullIdx.destinations) return;
+    SUMMARIES = fullIdx.destinations;
+    SUMMARIES.forEach((d, i) => {
+      d._index = i;
+      d._updatedAt = d.updatedAt ? new Date(d.updatedAt).getTime() : 0;
+      d._addedAt = d._updatedAt || d.addedAt || i;
+    });
+    if (fullIdx.count) idx.count = fullIdx.count;
+    // Re-run apply with current filters using the complete index
+    apply({ preserveShown: true, skipUrlSync: true });
+  }).catch(() => { });
+}
+
+if (!isFullIndexLoaded) {
+  if (searchInput) {
+    searchInput.addEventListener('focus', loadFullCatalog, { once: true, passive: true });
+    searchInput.addEventListener('input', loadFullCatalog, { once: true, passive: true });
+  }
+  const filterElements = [stateSel, sortSel, tierSel, regionSel, corridorSel, seasonSel, monthSel, typeWrap];
+  filterElements.forEach((el) => {
+    if (el) {
+      el.addEventListener('pointerdown', loadFullCatalog, { once: true, passive: true });
+      el.addEventListener('focus', loadFullCatalog, { once: true, passive: true });
+    }
+  });
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadFullCatalog, { timeout: 3500 });
+  } else {
+    setTimeout(loadFullCatalog, 3000);
+  }
+}
 
 // ─── GSAP Motion Engine ────────────────────────────────
 // Register ScrollTrigger immediately so card reveal works on first render

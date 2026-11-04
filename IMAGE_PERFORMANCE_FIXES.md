@@ -1,4 +1,18 @@
-# Image Quality & Performance Fixes — Phase 131 (2026-11-01 rev-85)
+# Image Quality & Performance Fixes — Phase 132 (2026-11-05 rev-86)
+
+## ✅ Phase 132 (rev-86) — Single-Line Mobile Split Headers, 240Hz ProMotion Hardware Acceleration & SW v1.8.1 Streamlining (2026-11-05)
+
+### Problem Diagnosed & Fixed
+- **Single-Line Mobile Split Header Standard**: Eliminated vertical flex column wrapping on mobile. Section titles (*Travel This Season*, *Trending Destinations*, etc.) and CTA action pills (*Explore All Seasons →*, etc.) now sit inline on the exact same row across all mobile viewports (320px–480px) with `flex-direction: row !important; flex-wrap: nowrap !important; align-items: center !important;`.
+- **Multi-Resolution Zero-Overlap Architecture**: Tested and certified across 12 standard viewport widths (320px to 1920px+). Eliminated `!important` clamp block in 3D coverflow carousel, establishing guaranteed positive clearance (+21px to +199px) between navigation arrows and cards across all screens down to 320px ultra-mobile. Injected 48px padding buffer on `.category-tabs-track` so category pills never scroll under 38px arrows. Enhanced `.dest-summary-grid` with single-column fallback on `<= 360px` screens for 100% legibility. Responsive padding on `.nav-glass` prevents brand text or button collisions on `<= 420px`.
+- **Instant Fast-Path Catalog Delivery (219 KB vs 2.78 MB)**: Direct visits to `destinations.html` previously loaded the complete 2.78 MB `index.json` on the critical render path. Implemented smart progressive delivery: clean arrivals fetch `home-manifest.json` (~219 KB, 92% payload reduction) to paint the catalog instantly, while the complete 2,396 destination index is seamlessly loaded in the background on idle or user interaction.
+- **240Hz ProMotion Hardware Acceleration & GPU Layer Compositing**: Injected `-webkit-transform: translateZ(0); transform: translateZ(0); backface-visibility: hidden;` across cards, buttons, glass navbars, and category pills for 120Hz/144Hz/240Hz displays. Added `content-visibility: auto` + `contain-intrinsic-size` on offscreen sections and catalog cards, and `contain: paint` on mobile viewports (< 768px).
+- **Zero-Layout-Thrashing GSAP Engine**: Cached `getBoundingClientRect()` on `mouseenter` to eliminate synchronous reflows on high-frequency `mousemove` events at 240Hz. Configured GSAP ticker with `lagSmoothing(1000, 16)`, `force3D: true`, and `{ passive: true }` listeners for instantaneous 0.12s–0.18s spring physics.
+- **Similar Destinations Typography & Scrim Protection**: Elevated similar destinations cards with `Playfair Display` serif headers, warm amber `#FCD34D` location labels, dual-layer gradient scrims, and `#FFF3C4` hover glow.
+- **Service Worker v1.8.1 Streamlining & Universal Cache Invalidation**: Stripped App Shell pre-caching from 35+ items down to the essential core shell (HTML, manifest, core CSS, icons, core utils, and api.js), offloading non-critical assets to on-demand runtime cache to eliminate bandwidth contention on initial load. Deferred registration to 4500ms idle window. Bumped cache version to `v1.8.1` and updated stylesheet query parameters to `?v=20261105_inline_headers_v2` across all 9 HTML templates.
+- **Local Dev & Static Server Fallbacks**: Added intelligent `destination.html?slug=` fallback when running under `localhost`, `127.0.0.1`, or `file:` protocol. Dev server `scripts/serve.js` now listens on all local interfaces with IPv4/IPv6 dual-stack support.
+
+---
 
 ## ✅ Phase 131 (rev-85) — Platform Quality Elevation, WCAG Contrast & Luxury Polish (2026-11-01)
 

@@ -1280,6 +1280,73 @@ html:not([data-theme="light"]) body.dest-immersive #similar-grid a:hover {
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 192, 123, 0.25) !important;
 }
 
+/* Similar destinations card text contrast and colors matching destination cards */
+body.dest-immersive #similar-grid .dest-card-title {
+  font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.85) !important;
+  margin: 0 0 3px !important;
+  line-height: 1.2 !important;
+}
+
+body.dest-immersive #similar-grid a:hover .dest-card-title {
+  color: #FFF3C4 !important;
+  -webkit-text-fill-color: #FFF3C4 !important;
+  text-shadow: 0 0 16px rgba(245, 197, 66, 0.6), 0 2px 8px rgba(0, 0, 0, 0.95) !important;
+}
+
+body.dest-immersive #similar-grid .dest-card-location {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  font-size: 0.74rem !important;
+  font-weight: 600 !important;
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7) !important;
+  margin: 0 !important;
+}
+
+body.dest-immersive #similar-grid .dest-card-location svg {
+  color: #F59E0B !important;
+  stroke: #F59E0B !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9)) !important;
+  flex-shrink: 0 !important;
+}
+
+body.dest-immersive #similar-grid .dest-card-scrim {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 15, 25, 0.05) 0%,
+    rgba(11, 15, 25, 0.25) 35%,
+    rgba(11, 15, 25, 0.85) 70%,
+    rgba(11, 15, 25, 0.98) 100%
+  ) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+body.dest-immersive #similar-grid .dest-card-header-overlay {
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 12px !important;
+  right: 12px !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+html[data-theme="light"] body.dest-immersive #similar-grid a {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(217, 119, 6, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
 /* ─── IMAGE HOVER ───────────────────────────────────────── */
 body.dest-immersive .card img {
   /* zoom-on-hover removed */
@@ -1512,6 +1579,36 @@ body.dest-immersive #placeClose:hover {
   #destNavContainer .dest-quick-pill {
     padding: 10px 11px !important;
     font-size: 12px !important;
+  }
+
+  .dest-summary-grid {
+    gap: 0.625rem !important;
+  }
+
+  .dest-summary-card {
+    padding: 0.75rem 0.85rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .dest-summary-icon {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 0.65rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .dest-summary-label {
+    font-size: 0.72rem !important;
+  }
+
+  .dest-summary-val {
+    font-size: 0.88rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .dest-summary-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 

@@ -67,6 +67,48 @@ html[data-theme="light"],
   --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.08), 0 0 24px rgba(217, 119, 6, 0.12);
 }
 
+/* ─── PERFORMANCE & GPU COMPOSITING ACCELERATION ─────────── */
+.section-content-auto,
+section.py-16:not(.hero-home):not(.explore-hero):not(.popular-showcase-section) {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+@media (max-width: 768px) {
+  .popular-3d-card,
+  .trend-card,
+  .hero-card,
+  .mini-card,
+  .dest-card,
+  .similar-card {
+    contain: paint;
+  }
+}
+
+/* ─── 240Hz HARDWARE ACCELERATION & ZERO-JANK MOTION ───────── */
+.dest-card-link,
+.popular-3d-card,
+.trend-card,
+.hero-hill-card,
+.mini-card,
+.dest-card,
+.similar-card,
+.btn,
+.nav-glass,
+.category-pill-btn {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Kinetic momentum scrolling across horizontal tracks */
+.carousel-row,
+.category-tabs-track {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
 /* ─── UNIVERSAL THEME TOGGLE BUTTON ────────────────────────── */
 .theme-toggle-btn {
   display: inline-flex;
@@ -455,17 +497,27 @@ html[data-theme="light"] .calligraphy-kicker::after {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
-  align-items: flex-end !important;
-  flex-wrap: wrap !important;
-  gap: 1.25rem !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
+  width: 100% !important;
 }
 
 @media (max-width: 767px) {
-  .monthly-header-bar {
+  .monthly-header-bar:not(.monthly-header-bar--split) {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
+  }
+
+  .monthly-header-bar--split {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
   }
 
   .monthly-header-center {
@@ -2458,6 +2510,31 @@ textarea.form-input {
 }
 
 @media (max-width: 420px) {
+  .nav-glass > div {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .site-brand-text {
+    font-size: 1rem !important;
+  }
+
+  .brand-mark {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .hero-search-seg {
+    padding: 4px 6px 4px 12px !important;
+  }
+
+  .hero-seg-btn {
+    width: 42px !important;
+    height: 42px !important;
+    margin-left: 4px !important;
+  }
+
   .hero-eyebrow-rule {
     display: none;
   }
@@ -6248,6 +6325,13 @@ html[data-theme="light"] #backToTop {
   background: rgba(255, 255, 255, 0.9);
   border-color: rgba(217, 119, 6, 0.4);
   color: #B45309;
+}
+
+@media (min-width: 769px) {
+  #backToTop {
+    bottom: 28px !important;
+    right: 24px !important;
+  }
 }
 
 html[data-theme="light"] #backToTop:hover {

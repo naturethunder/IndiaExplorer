@@ -75,9 +75,9 @@ export function registerServiceWorker() {
       };
 
       if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(startRegistration, { timeout: 3000 });
+        window.requestIdleCallback(startRegistration, { timeout: 4500 });
       } else {
-        setTimeout(startRegistration, 1000);
+        setTimeout(startRegistration, 3000);
       }
     });
   }

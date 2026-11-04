@@ -10,49 +10,28 @@
  * - Zero external dependencies, pure W3C Service Worker API
  */
 
-const VERSION = 'v1.7.8';
+const VERSION = 'v1.8.1';
 const CACHE_SHELL = `exploredesh-shell-${VERSION}`;
 const CACHE_MEDIA = `exploredesh-media-${VERSION}`;
 const CACHE_DATA = `exploredesh-data-${VERSION}`;
 
+// Streamlined core App Shell pre-cached on install.
+// All other pages, stylesheets, scripts, and media are cached on-demand
+// as the user navigates, preventing bandwidth contention on initial load.
 const APP_SHELL_URLS = [
   '/',
   '/index.html',
-  '/destinations.html',
-  '/destination.html',
-  '/ai-finder.html',
-  '/about.html',
-  '/contact.html',
+  '/manifest.webmanifest',
+  '/images/favicon.svg',
+  '/images/pwa-icon.svg',
   '/css/styles.css',
   '/css/tailwind.css',
   '/css/glass-immersive.css',
-  '/css/destination-immersive.css',
-  '/css/explore-immersive.css',
-  '/data/destinations/home-manifest.json',
   '/js/data/api.js',
-  '/js/data/taxonomy.js',
   '/js/components/icons.js',
   '/js/components/layout.js',
-  '/js/components/destinationCard.js',
-  '/js/components/seo.js',
-  '/js/components/googleMapEmbed.js',
-  '/js/components/indiaMap.js',
-  '/js/components/offlineHub.js',
   '/js/utils/format.js',
-  '/js/utils/theme.js',
-  '/js/utils/search.js',
-  '/js/utils/gsapInteractions.js',
-  '/js/utils/offlineStorage.js',
-  '/js/pages/home.js',
-  '/js/pages/explore.js',
-  '/js/pages/destination.js',
-  '/js/pages/finder.js',
-  '/js/pages/company.js',
-  '/images/favicon.svg',
-  '/images/pwa-icon.svg',
-  '/images/pwa-icon-192.png',
-  '/images/pwa-icon-512.png',
-  '/manifest.webmanifest',
+  '/js/utils/theme.js'
 ];
 
 // Fallback 1x1 transparent PNG for uncached images when offline

@@ -868,13 +868,18 @@ function shuffleArray(arr) {
   // Initial layout immediate
   updateShowcase(true);
 
-  // Card click: clicking side card brings it to center; active card allows link click
+  // Card click: clicking side card brings it to center; clicking active center card opens destination
   cards.forEach(function (card, idx) {
     card.addEventListener('click', function (e) {
       if (idx !== currentIndex) {
         e.preventDefault();
         currentIndex = idx;
         updateShowcase();
+      } else if (!e.target.closest('a')) {
+        const slug = card.getAttribute('data-slug');
+        if (slug) {
+          window.location.href = destUrl(slug);
+        }
       }
     });
 
@@ -884,6 +889,12 @@ function shuffleArray(arr) {
           e.preventDefault();
           currentIndex = idx;
           updateShowcase();
+        } else if (!e.target.closest('a')) {
+          e.preventDefault();
+          const slug = card.getAttribute('data-slug');
+          if (slug) {
+            window.location.href = destUrl(slug);
+          }
         }
       }
     });
@@ -1253,9 +1264,9 @@ function wireCarousel(row, prevBtn, nextBtn) {
           card.dataset.tiltInitted = '1';
 
           let bounds = null;
-          window.gsap.set(card, { transformPerspective: 1000 });
-          const rxTo = window.gsap.quickTo(card, 'rotateX', { duration: 0.25, ease: 'power1.out' });
-          const ryTo = window.gsap.quickTo(card, 'rotateY', { duration: 0.25, ease: 'power1.out' });
+          window.gsap.set(card, { transformPerspective: 1000, force3D: true });
+          const rxTo = window.gsap.quickTo(card, 'rotateX', { duration: 0.12, ease: 'power2.out' });
+          const ryTo = window.gsap.quickTo(card, 'rotateY', { duration: 0.12, ease: 'power2.out' });
 
           card.addEventListener('mouseenter', () => {
             card.style.willChange = 'transform';
@@ -1270,7 +1281,7 @@ function wireCarousel(row, prevBtn, nextBtn) {
             const yPct = (mouseY / bounds.height - 0.5) * 2;
             ryTo(xPct * 3.5);
             rxTo(-yPct * 3.5);
-          });
+          }, { passive: true });
 
           card.addEventListener('mouseleave', () => {
             bounds = null;

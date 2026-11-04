@@ -29,7 +29,18 @@ const isFinePointer = () =>
 
 function getGSAP() {
   if (typeof window === 'undefined') return null;
-  return window.gsap && typeof window.gsap.to === 'function' ? window.gsap : null;
+  const g = window.gsap && typeof window.gsap.to === 'function' ? window.gsap : null;
+  if (g && !window.__gsap240HzConfigured) {
+    window.__gsap240HzConfigured = true;
+    try {
+      // Synchronize GSAP ticker with 120Hz/144Hz/240Hz ProMotion & gaming refresh rates
+      g.ticker.lagSmoothing(1000, 16);
+      if (typeof g.config === 'function') {
+        g.config({ force3D: true, autoSleep: 60 });
+      }
+    } catch (_) { }
+  }
+  return g;
 }
 
 /**
@@ -50,13 +61,15 @@ export function attachButtonGSAP(btn) {
   if (!gsap || prefersReducedMotion()) return;
 
   const svg = btn.querySelector('svg');
+  let btnRect = null;
 
   // Mouse enter: smooth elastic scale & lift
   btn.addEventListener('mouseenter', () => {
+    btnRect = btn.getBoundingClientRect();
     gsap.to(btn, {
       scale: 1.035,
       y: -2.5,
-      duration: 0.28,
+      duration: 0.18,
       ease: 'power2.out',
       overwrite: 'auto'
     });
@@ -64,7 +77,7 @@ export function attachButtonGSAP(btn) {
       gsap.to(svg, {
         scale: 1.15,
         rotate: 2,
-        duration: 0.24,
+        duration: 0.18,
         ease: 'back.out(2)',
         overwrite: 'auto'
       });
@@ -72,24 +85,25 @@ export function attachButtonGSAP(btn) {
   });
 
   // Mouse move: subtle magnetic cursor pull (desktop with fine pointer only)
-  // gsap.quickTo() reuses a single tween instead of creating new ones per mousemove
+  // gsap.quickTo() reuses a single tween with cached bounds for zero layout thrashing at 240Hz
   if (isFinePointer()) {
-    const xTo = gsap.quickTo(btn, "x", { duration: 0.2, ease: "power1.out" });
-    const yTo = gsap.quickTo(btn, "y", { duration: 0.2, ease: "power1.out" });
+    const xTo = gsap.quickTo(btn, "x", { duration: 0.12, ease: "power2.out" });
+    const yTo = gsap.quickTo(btn, "y", { duration: 0.12, ease: "power2.out" });
     btn.addEventListener('mousemove', (e) => {
-      const rect = btn.getBoundingClientRect();
-      xTo((e.clientX - rect.left - rect.width / 2) * 0.12);
-      yTo((e.clientY - rect.top - rect.height / 2) * 0.12 - 2.5);
-    });
+      if (!btnRect) btnRect = btn.getBoundingClientRect();
+      xTo((e.clientX - btnRect.left - btnRect.width / 2) * 0.12);
+      yTo((e.clientY - btnRect.top - btnRect.height / 2) * 0.12 - 2.5);
+    }, { passive: true });
   }
 
   // Mouse leave: smooth spring release back to origin
   btn.addEventListener('mouseleave', () => {
+    btnRect = null;
     gsap.to(btn, {
       scale: 1,
       x: 0,
       y: 0,
-      duration: 0.38,
+      duration: 0.28,
       ease: 'power3.out',
       overwrite: 'auto'
     });
@@ -97,7 +111,7 @@ export function attachButtonGSAP(btn) {
       gsap.to(svg, {
         scale: 1,
         rotate: 0,
-        duration: 0.32,
+        duration: 0.22,
         ease: 'power3.out',
         overwrite: 'auto'
       });
@@ -140,31 +154,34 @@ export function attachCardGSAP(card) {
   const gsap = getGSAP();
   if (!gsap || prefersReducedMotion()) return;
 
-  // gsap.quickTo() for rotateX/rotateY — reuses single tween on high-frequency mousemove
+  // gsap.quickTo() for rotateX/rotateY — reuses single tween with cached bounds for zero layout thrashing at 240Hz
   if (isFinePointer()) {
-    gsap.set(card, { transformPerspective: 1000 });
-    const rxTo = gsap.quickTo(card, "rotateX", { duration: 0.25, ease: "power1.out" });
-    const ryTo = gsap.quickTo(card, "rotateY", { duration: 0.25, ease: "power1.out" });
+    gsap.set(card, { transformPerspective: 1000, force3D: true });
+    const rxTo = gsap.quickTo(card, "rotateX", { duration: 0.14, ease: "power2.out" });
+    const ryTo = gsap.quickTo(card, "rotateY", { duration: 0.14, ease: "power2.out" });
+    let cardRect = null;
 
     card.addEventListener('mouseenter', () => {
-      gsap.to(card, { scale: 1.02, y: -6, duration: 0.25, ease: 'power1.out', overwrite: 'auto' });
+      cardRect = card.getBoundingClientRect();
+      gsap.to(card, { scale: 1.02, y: -6, duration: 0.18, ease: 'power2.out', overwrite: 'auto' });
     });
 
     card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      ryTo(((x / rect.width) - 0.5) * 10);
-      rxTo(-((y / rect.height) - 0.5) * 10);
-    });
+      if (!cardRect) cardRect = card.getBoundingClientRect();
+      const x = e.clientX - cardRect.left;
+      const y = e.clientY - cardRect.top;
+      ryTo(((x / cardRect.width) - 0.5) * 10);
+      rxTo(-((y / cardRect.height) - 0.5) * 10);
+    }, { passive: true });
 
     card.addEventListener('mouseleave', () => {
+      cardRect = null;
       rxTo(0);
       ryTo(0);
       gsap.to(card, {
         scale: 1,
         y: 0,
-        duration: 0.48,
+        duration: 0.32,
         ease: 'power3.out',
         overwrite: 'auto'
       });

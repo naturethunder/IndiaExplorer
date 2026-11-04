@@ -31,6 +31,13 @@
       try {
         var params = new URLSearchParams(window.location.search);
         var rawSlug = params.get('slug') || params.get('id') || (window.location.hash ? window.location.hash.slice(1) : '');
+        if (!rawSlug && window.location.pathname) {
+          var pathParts = window.location.pathname.split('/').filter(Boolean);
+          var lastPart = pathParts[pathParts.length - 1];
+          if (pathParts.length >= 2 && (pathParts[0] === 'destination' || pathParts[0] === 'destinations') && lastPart && !lastPart.endsWith('.html')) {
+            rawSlug = lastPart;
+          }
+        }
         var slug = rawSlug ? String(rawSlug).trim().toLowerCase().replace(/^\/+|\/+$/g, '').replace(/\.html$/i, '').replace(/\.json$/i, '') : '';
         if (slug) {
           var cleanSlug = slug.replace(/['".,]/g, '').trim().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -73,10 +80,10 @@
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Jost:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     media="print" onload="this.media='all'" />
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css?v=20261031_luxury_debulk_v1" />
-  <link rel="stylesheet" href="css/tailwind.css?v=20261031_luxury_debulk_v1" />
-  <link rel="stylesheet" href="css/glass-immersive.css?v=20261031_luxury_debulk_v1" />
-  <link rel="stylesheet" href="css/destination-immersive.css?v=20261101_budget_v2" />
+  <link rel="stylesheet" href="css/styles.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="css/tailwind.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="css/glass-immersive.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="css/destination-immersive.css?v=20261105_inline_headers_v2" />
   <!-- Google Maps Embed is mounted lazily on first Map-tab open by destination.js via GoogleMapEmbed component -->
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>

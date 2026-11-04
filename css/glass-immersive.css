@@ -5002,18 +5002,66 @@ html[data-theme="dark"] body.glass-immersive .luxury-kicker {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
-  align-items: flex-end !important;
-  flex-wrap: wrap !important;
-  gap: 1.25rem !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
   padding-bottom: 0.85rem !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  width: 100% !important;
 }
 
 @media (max-width: 640px) {
   .monthly-header-bar--split {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 1rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    padding-bottom: 0.65rem !important;
+  }
+
+  .monthly-header-bar--split .monthly-header-left {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .monthly-header-bar--split .section-title {
+    font-size: clamp(1.1rem, 4.4vw, 1.45rem) !important;
+    line-height: 1.15 !important;
+    white-space: normal !important;
+  }
+
+  .monthly-header-bar--split .monthly-header-right {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+
+  body.glass-immersive .monthly-header-right .btn,
+  body.glass-immersive .monthly-header-right a.btn {
+    font-size: clamp(0.68rem, 2.4vw, 0.78rem) !important;
+    padding: 0.42rem 0.85rem !important;
+    letter-spacing: 0.03em !important;
+    gap: 0.35rem !important;
+    min-height: 38px !important;
+  }
+
+  body.glass-immersive .monthly-header-right .btn svg,
+  body.glass-immersive .monthly-header-right a.btn svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .monthly-header-bar--split .section-title {
+    font-size: 1rem !important;
+  }
+
+  body.glass-immersive .monthly-header-right .btn,
+  body.glass-immersive .monthly-header-right a.btn {
+    font-size: 0.65rem !important;
+    padding: 0.38rem 0.65rem !important;
   }
 }
 
@@ -5217,24 +5265,28 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   user-select: none;
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
-  /* Transition border & shadow; JS/GSAP owns transform & opacity for 60fps */
-  transition: border-color 0.35s ease,
-    box-shadow 0.35s ease;
+  /* Transition border & shadow; JS/GSAP owns transform & opacity for ultra-high refresh rates */
+  transition: border-color 0.25s ease,
+    box-shadow 0.25s ease;
   will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background: #0f172a;
 }
 
-/* JS sets card.style.transform directly; CSS provides the animation timing via transition on transform */
+/* JS sets card.style.transform directly; CSS provides instant 240Hz spring physics */
 .popular-3d-card[style] {
-  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s ease,
-    box-shadow 0.35s ease;
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .popular-3d-card.is-active {
   border-color: rgba(229, 192, 123, 0.70);
   box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.75), 0 0 28px rgba(229, 192, 123, 0.25);
-  cursor: default;
+  cursor: pointer;
   z-index: 25 !important;
 }
 
@@ -5562,11 +5614,11 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-arrow-prev {
-    left: clamp(10px, calc(50% - 240px), 24px) !important;
+    left: clamp(10px, calc(50% - 280px), 24px);
   }
 
   .popular-3d-arrow-next {
-    right: clamp(10px, calc(50% - 240px), 24px) !important;
+    right: clamp(10px, calc(50% - 280px), 24px);
   }
 }
 
@@ -5601,11 +5653,11 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-arrow-prev {
-    left: clamp(8px, calc(50% - 320px), calc(50% - 230px));
+    left: clamp(8px, calc(50% - 320px), calc(50% - 230px)) !important;
   }
 
   .popular-3d-arrow-next {
-    right: clamp(8px, calc(50% - 320px), calc(50% - 230px));
+    right: clamp(8px, calc(50% - 320px), calc(50% - 230px)) !important;
   }
 }
 
@@ -5642,17 +5694,17 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-arrow {
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     z-index: 60;
   }
 
   .popular-3d-arrow-prev {
-    left: 8px;
+    left: 8px !important;
   }
 
   .popular-3d-arrow-next {
-    right: 8px;
+    right: 8px !important;
   }
 }
 
@@ -5665,10 +5717,10 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-card {
-    width: 220px;
-    height: 360px;
-    margin-top: -180px;
-    margin-left: -110px;
+    width: 216px;
+    height: 356px;
+    margin-top: -178px;
+    margin-left: -108px;
     border-radius: 18px;
   }
 
@@ -5681,7 +5733,7 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .popular-3d-card:not(.is-active) .popular-3d-title {
@@ -5689,21 +5741,53 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
   }
 
   .popular-3d-content {
-    padding: 16px 14px 14px;
+    padding: 14px 12px 12px;
   }
 
   .popular-3d-arrow {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     z-index: 60;
   }
 
   .popular-3d-arrow-prev {
-    left: 6px;
+    left: 4px !important;
   }
 
   .popular-3d-arrow-next {
-    right: 6px;
+    right: 4px !important;
+  }
+}
+
+/* ─── Responsive: Ultra-Narrow Mobile (340px and below) ─── */
+@media (max-width: 340px) {
+  .popular-3d-stage {
+    height: 350px;
+  }
+
+  .popular-3d-card {
+    width: 196px;
+    height: 335px;
+    margin-top: -167px;
+    margin-left: -98px;
+    border-radius: 16px;
+  }
+
+  .popular-3d-title {
+    font-size: 1.15rem;
+  }
+
+  .popular-3d-arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  .popular-3d-arrow-prev {
+    left: 2px !important;
+  }
+
+  .popular-3d-arrow-next {
+    right: 2px !important;
   }
 }
 

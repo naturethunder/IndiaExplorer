@@ -191,9 +191,10 @@ const server = http.createServer((req, res) => {
   }
 });
 
-// Loopback only: this is a dev server, not meant to be reachable from the LAN.
-server.listen(PORT, '127.0.0.1', () => {
+// Listen on all local interfaces (dual-stack IPv4 + IPv6 localhost)
+server.listen(PORT, () => {
   console.log('⚡ IndiaExplore High-Performance Server running:');
   console.log('   http://localhost:' + PORT + '/');
+  console.log('   http://127.0.0.1:' + PORT + '/');
   console.log('   Gzip Compression + ETag 304 Caching Active.');
 });

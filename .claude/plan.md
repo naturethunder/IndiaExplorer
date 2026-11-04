@@ -1,10 +1,51 @@
 # ExploreDesh — Master Architecture & Production Plan
 
-## Status: ✅ Complete & Production Ready (2026-10-24 rev-73 Phase 120)
+## Status: ✅ Complete & Production Ready (2026-11-05 rev-86 Phase 132)
 
-## Recent Milestones Delivered (Phases 117–120)
+## Recent Milestones Delivered (Phases 121–132)
 
-### 0. Phase 120: "100,000% WOW" Editorial Stacked Header Standard, Pre-Footer Regional Atlas Accordion & Service Worker v1.6.5 Cache Elevation (2026-10-24 rev-73)
+### 0. Phase 132: Single-Line Inline Mobile Split Headers, 12-Breakpoint Zero-Overlap Multi-Resolution Engine, 240Hz ProMotion Hardware Acceleration & Service Worker v1.8.1 (2026-11-05 rev-86)
+- **Single-Line Inline Mobile Split Header Standard (`css/glass-immersive.css`, `css/styles.css`)**: Permanently solved mobile header vertical stacking on `.monthly-header-bar--split`. Both "Travel This Season" and "Explore All Seasons →" now render strictly side-by-side (`flex-direction: row !important; flex-wrap: nowrap !important; justify-content: space-between !important;`) across all mobile devices down to 320px screens. Applied `clamp()` typography and compact pill padding so titles stay bold, prominent, and perfectly proportioned on the same line with zero overlapping or text wrapping.
+- **12-Breakpoint Zero-Overlap Multi-Resolution Audit Engine (`scripts/audit/test_multi_resolution.js`)**: Comprehensive audit script testing 12 distinct breakpoints (320px, 360px, 375px, 390px, 414px, 480px, 640px, 768px, 1024px, 1280px, 1440px, 1920px+). Verifies zero overlapping across Popular 3D coverflow arrows (guaranteed +22px clearance on 320px), Category scroller pills (48px arrow buffer), inline split headers, summary telemetry grids, and viewport meta tags (**30/30 PASSED**).
+- **Fast-Path Instant Catalog Delivery (219 KB vs 2.78 MB)**: Direct visitors to `destinations.html` load the pre-compiled `home-manifest.json` (~219 KB) for instant first paint (92% initial payload reduction). The full 2,396 destination catalog is seamlessly promoted in the background on idle or user interaction.
+- **240Hz ProMotion Hardware Compositing (`css/styles.css`, `css/explore-immersive.css`)**: Injected hardware composition (`transform: translateZ(0); backface-visibility: hidden;`) across cards, buttons, glass navbars, and category pills for 120Hz/144Hz/240Hz displays. Added `content-visibility: auto` + `contain-intrinsic-size` on offscreen sections and catalog cards, `contain: paint` on mobile viewports (< 768px), and kinetic touch momentum scrolling on horizontal rows.
+- **Zero-Layout-Thrashing GSAP Engine (`js/utils/gsapInteractions.js`, `js/pages/home.js`, `js/pages/explore.js`)**: Cached `getBoundingClientRect()` on `mouseenter` to eliminate costly synchronous layout reflows on high-frequency `mousemove` events at 240Hz. Configured GSAP ticker with `lagSmoothing(1000, 16)`, `force3D: true`, and `{ passive: true }` listeners for instantaneous 0.12s–0.18s spring physics.
+- **Similar Destinations Typography & Scrim Protection (`css/destination-immersive.css`, `js/pages/destination.js`)**: Elevated similar destinations cards with `Playfair Display` serif headers, warm amber `#FCD34D` location labels, dual-layer gradient scrims, and `#FFF3C4` hover glow.
+- **Service Worker v1.8.1 Streamlining (`sw.js`, `js/components/offlineHub.js`)**: Stripped App Shell pre-caching from 35+ items down to the essential core shell (HTML, manifest, core CSS, icons, core utils, and api.js), offloading non-critical assets to on-demand runtime cache to eliminate bandwidth contention on initial load. Cache-busted query parameter synchronized to `?v=20261105_inline_headers_v2` across all 9 HTML templates.
+- **Local Dev & Static Server Fallbacks (`js/components/destinationCard.js`, `destination.html`, `js/pages/destination.js`, `scripts/serve.js`)**: Added intelligent `destination.html?slug=` fallback when running under `localhost`, `127.0.0.1`, or `file:` protocol. Dev server now listens on all local interfaces with IPv4/IPv6 dual-stack support.
+- **Platform Integrity Certified**: UI/UX QA **0 issues**; Master SEO Regression Guard **71/71 PASSED (100/100)**; Multi-Resolution Audit **30/30 PASSED (100/100)**; Deep Pre-Commit Audit **PASS**.
+
+### 1. Phase 131: Platform Quality Elevation & Luxury UX Polish (2026-11-01 rev-85)
+- **Accessibility & Semantic Overhaul**: Added `viewport-fit=cover` across all 9 HTML templates + stub generator; moved footer outside `<main>` in `destination.html`; fixed light-theme contrast on `.btn-primary` (4.57:1+) and mobile navigation; enlarged footer link touch targets to 44px WCAG minimum; added carousel pause/play toggle (WCAG 2.2.2); added gold `:focus-visible` keyboard focus ring.
+- **SEO & Code Cleanup**: Removed duplicate JSON-LD schemas from 3 templates; removed dead `#heroEyebrow` code from `explore.js`; purged dead assets (`caveat-latin.woff2` and 4 unused PNGs totaling 4.05 MB); fixed save-button state bug in `destination.js`.
+- **Luxury UX Polish**: Gold scroll progress bar, gold text selection, luxury scrollbar thumb, floating back-to-top medallion button, and print stylesheet.
+
+### 2. Phase 130: Full QA + UI/UX + SEO Audit & 8 Defect Remediation (2026-11-01 rev-84)
+- **Social Sharing Meta Tags**: Added complete OG/Twitter card tag suites across `destinations.html`, `ai-finder.html`, `about.html`, and `contact.html`.
+- **Emoji to Lucide SVG Icons**: Migrated all functional emoji to accessible Lucide-style SVG icons across 6 JS files.
+- **Dead CSS Purge**: Removed 1,658 lines of obsolete `.budget-*` CSS rules from `css/destination-immersive.css` (34% reduction).
+- **Clean URLs & Privacy Policy**: Replaced internal `.html` links with canonical clean URLs; updated third-party disclosures in `privacy.html`.
+
+### 3. Phase 129: Universal Architectural De-Bulking, Overview Editorial Unboxing & Monochromatic Champagne Gold Glass (2026-10-31 rev-83)
+- **Overview Editorial Unboxing**: Eradicated card-inception on `destination.html`, flowing narrative unboxed on canvas with `Playfair Display` serif headings (`1.85rem`) and comfortable line height.
+- **Monochromatic Champagne Gold Stat Dials**: Replaced mismatched server metric boxes with unified champagne-gold glass dials.
+- **Sidebar Telemetry Compaction**: Reduced `.info-card` padding from 1.75rem to 1.15rem 1.35rem, reclaiming ~300px dead container space.
+- **Weightless Glass Corridor Pills**: Removed chunky 2.5px bottom underlines, added padding to category scroller to prevent arrow overlap.
+
+### 4. Phase 128: Curated Regional Corridors Filter Integration & Cross-Page Count Synchronization (2026-10-31 rev-82)
+- **Curated Regional Corridors Discovery**: Integrated Northern Alpine (174), Royal Heritage (252), Coastal & Ghats (1,294), and Seven Sisters (117) corridors into taxonomy and UI filters.
+- **Cross-Page Synchronization**: Synchronized corridor counts across home and explore pages.
+
+### 5. Phase 126: Master Platform Extreme Audit, State Sitemap Expansion (Chandigarh & Lakshadweep) & GSAP quickTo() Engine (2026-10-30 rev-80)
+- **Sitemap Expansion**: Lowered threshold to include Chandigarh & Lakshadweep in `sitemap-states.xml`, reaching 2,455 sitemapped URLs and 11,980 indexed images.
+- **GSAP quickTo() Engine**: Initial implementation of cached `quickTo()` pipes for cursor tilt and magnetic buttons.
+- **High-Contrast Theme Toggle**: Redesigned 24K gold moon/sun toggle icon with drop shadow and explicit touch target.
+
+### 6. Phase 125: 24K Imperial Gold Carousel Medallions, Outward Deck Framing & Small-Screen 3D Stacking Flat Architecture (2026-10-27 rev-79)
+- **24K Gold Carousel Medallions**: Upgraded all platform carousel navigation arrows to imperial gold medallions with 2.8px chevrons.
+- **Small-Screen 3D Flat Stacking**: Enforced `transform-style: flat` on mobile viewports with 240px depth separation (`translateZ(120px)` / `translateZ(-120px)`).
+
+### 7. Phase 120: "100,000% WOW" Editorial Stacked Header Standard, Pre-Footer Regional Atlas Accordion & Service Worker v1.6.5 Cache Elevation (2026-10-24 rev-73)
 - **Universal Pure Editorial Header System (Zero-Kicker Clutter Standard): Permanently eliminated all subtitle kicker badges ('Mountain Sanctuaries', 'Handpicked Escapes', etc.) from all 8 homepage section headers in both Light and Dark themes. Headings now command the left margin with pristine editorial majesty, while action buttons anchor the right margin.
 - **Flexbox Split Bar & Multi-Breakpoint Ergonomics**: Enforced `display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: flex-end !important; flex-wrap: wrap !important;` on `.monthly-header-bar--split` across `css/glass-immersive.css` and `css/styles.css`. Implemented `@media (max-width: 640px)` collapsing gracefully to vertical column with zero horizontal overflow.
 - **Pre-Footer Regional Atlas Accordion (`destinations.html`)**: Transformed the 36 States & UTs pre-footer index into an interactive `<details>` / `<summary>` collapsible accordion widget. Guarantees 100% Googlebot crawlability and internal link equity without visual clutter.

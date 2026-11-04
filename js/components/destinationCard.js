@@ -9,7 +9,19 @@ import { esc, inr, typeLabel } from '../utils/format.js';
 import { icon } from './icons.js';
 
 export function destUrl(slug) {
-  return 'destination?slug=' + encodeURIComponent(slug);
+  const clean = encodeURIComponent(slug);
+  if (typeof window !== 'undefined' && window.location) {
+    // If running in local development (Live Server, localhost, 127.0.0.1, file://)
+    // or on any page with an explicit .html extension, target destination.html so
+    // static file servers without URL rewrite modules can load the destination guide.
+    if (window.location.protocol === 'file:' ||
+        window.location.pathname.endsWith('.html') ||
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1') {
+      return 'destination.html?slug=' + clean;
+    }
+  }
+  return 'destination?slug=' + clean;
 }
 
 /**

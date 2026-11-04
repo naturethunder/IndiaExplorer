@@ -64,9 +64,9 @@ function build() {
   all.filter(d => ((d.rating >= 4.5 && (d.reviewCount >= 50 || d.badge)) || d.badge === 'Popular' || d.badge === 'Trending') && d.heroImage && d.heroImage.src)
      .sort((a,b) => (b.reviewCount||0) - (a.reviewCount||0)).slice(0, 20).forEach(add);
 
-  // 5. Explore
+  // 5. Explore & Initial Catalogue (top 36 by rating for instant destinations.html fast-path)
   all.filter(d => d.heroImage && d.heroImage.src)
-     .sort((a,b) => (b.rating||0) - (a.rating||0)).slice(0, 20).forEach(add);
+     .sort((a,b) => (b.rating||0) - (a.rating||0)).slice(0, 36).forEach(add);
 
   // 6. Each month 1..12 (top 8 per month)
   for (let m = 1; m <= 12; m++) {
