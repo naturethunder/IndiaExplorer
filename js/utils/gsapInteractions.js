@@ -10,7 +10,7 @@
  *  - Navigation: .nav-link, .nav-cta-pill, .theme-toggle-btn, .nav-offline-btn, .brand-mark, .mobile-nav-btn
  *  - Category / Filter Pills: .category-pill-btn, .category-chip, .filter-chip, .quick-tag-btn, .dest-quick-pill, .month-pill, .dest-filter-btn, .sort-btn
  *  - Cards: .dest-card-link, .destination-card, .explore-card, .trend-card, .hero-hill-card, .place-card, .stay-card, .mini-card, .bento-tile
- *  - Action Triggers: .section-link, .footer-link, .state-link, .load-more-luxury-btn, .carousel-btn, .hero-car-btn, .cheat-sos-btn, footer a, summary
+ *  - Action Triggers: .section-link, .footer-link, .state-link, .load-more-luxury-btn, .carousel-btn, .cheat-sos-btn, footer a, summary
  */
 
 const animatedButtons = new WeakSet();
@@ -217,10 +217,17 @@ const BUTTON_SELECTORS = [
   '.state-link',
   '.load-more-luxury-btn',
   '.carousel-btn',
-  '.hero-car-btn',
   '.cheat-sos-btn',
   '.state-accordion-summary',
   '.accordion-trigger',
+  '.dest-stay-filter-pill',
+  '.dest-itin-seg-btn',
+  '.dest-itin-action-btn',
+  '.dest-itin-place-btn',
+  '.view-mode-btn',
+  '.chip-btn',
+  '.dir-state-pill',
+  '.venue-btn',
   'summary'
 ].join(',');
 
@@ -232,6 +239,11 @@ const CARD_SELECTORS = [
   '.hero-hill-card',
   '.place-card',
   '.stay-card',
+  '.place-venue-card',
+  '.dest-stay-card',
+  '.dest-dining-card',
+  '.dest-itin-card',
+  '.dest-itin-day-card',
   '.mini-card',
   '.bento-tile',
   '.bento-stat-card'

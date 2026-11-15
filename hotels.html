@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <base href="/" />
+  <title>Curated Stays &amp; Sanctuaries in India — ExploreDesh</title>
+  <meta name="description"
+    content="Discover curated stays, heritage havelis, luxury sanctuaries, and boutique retreats across India with live maps, authentic distances, and direct contact." />
+  <meta name="keywords"
+    content="curated stays India, heritage havelis, luxury sanctuaries, boutique retreats, mountain lodges India, verified accommodations, heritage hotels India" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <meta name="theme-color" content="#FAF9F6" />
+  
+  <!-- Fast-path zero-FOUC theme resolution -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('exploredesh_theme');
+        var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#080A0F');
+      } catch (_) { }
+    })();
+  </script>
+
+  <link rel="canonical" href="https://exploredesh.com/hotels" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://exploredesh.com/hotels" />
+  <meta property="og:site_name" content="ExploreDesh" />
+  <meta property="og:title" content="Curated Stays &amp; Sanctuaries in India — ExploreDesh" />
+  <meta property="og:description" content="Discover curated stays, heritage havelis, luxury sanctuaries, and boutique retreats across India with interactive maps and direct contact." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&h=630&q=85" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Curated Stays &amp; Sanctuaries in India — ExploreDesh" />
+  <meta name="twitter:description" content="Discover curated stays, heritage havelis, and luxury sanctuaries across India." />
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Curated Stays & Sanctuaries Across India — ExploreDesh",
+    "url": "https://exploredesh.com/hotels",
+    "description": "Discover curated stays, heritage havelis, luxury sanctuaries, and boutique retreats across India with live maps and direct contact.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ExploreDesh",
+      "url": "https://exploredesh.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ExploreDesh",
+      "url": "https://exploredesh.com",
+      "logo": "https://exploredesh.com/images/favicon.svg"
+    }
+  }
+  </script>
+
+  <!-- OpenStreetMap Preconnect -->
+  <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin />
+  <link rel="preconnect" href="https://a.tile.openstreetmap.fr" crossorigin />
+  <link rel="preconnect" href="https://b.tile.openstreetmap.fr" crossorigin />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    media="print" onload="this.media='all'" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/styles.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="/css/glass-immersive.css?v=20261105_inline_headers_v2" />
+  <link rel="stylesheet" href="/css/leaflet.css?v=1.9.4" />
+  <link rel="stylesheet" href="/css/discovery-places.css?v=20261107_v2" />
+
+  <!-- Vendor Scripts -->
+  <script src="/js/vendor/gsap.min.js" defer></script>
+  <script src="/js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="/js/vendor/leaflet.js" defer></script>
+
+  <!-- Page Module -->
+  <script type="module" src="/js/pages/hotels.js?v=20261107_v2"></script>
+</head>
+
+<body class="dest-immersive glass-immersive">
+
+  <!-- Background overlay -->
+  <div class="dest-immersive-bg" aria-hidden="true"></div>
+  <div class="dest-immersive-overlay" aria-hidden="true"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navbar -->
+  <div id="siteNav"></div>
+
+  <!-- Main Container -->
+  <main id="main">
+    <div id="placesApp">
+      <!-- Semantic H1 — JS updates inner content after data loads; static text is meaningful for crawlers & screen readers -->
+      <div class="text-center py-24" id="placesAppLoader">
+        <h1 class="text-3xl font-bold text-white mb-2" id="placesAppTitle">Curated Stays &amp; Sanctuaries Across India</h1>
+        <p class="text-gray-400 text-sm">Discovering heritage havelis, boutique retreats, mountain lodges, and luxury sanctuaries near every destination.</p>
+      </div>
+    </div>
+  </main>
+  <noscript>
+    <div style="text-align:center;padding:4rem 1.5rem;font-family:sans-serif;color:#cbd5e1;background:#0b0f19">
+      <p style="font-size:1.5rem;margin-bottom:1rem" role="heading" aria-level="2">Curated Stays &amp; Sanctuaries Across India</p>
+      <p style="margin-bottom:1.5rem">ExploreDesh requires JavaScript to display the interactive stays map and curated directory.</p>
+      <a href="/destinations" style="color:#f5c542;text-decoration:underline">Browse All Destinations</a>
+    </div>
+  </noscript>
+
+  <!-- Footer & Mobile Navigation -->
+  <div id="siteFooter"></div>
+  <div id="siteMobileNav"></div>
+
+</body>
+
+</html>
+
+

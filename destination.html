@@ -47,10 +47,52 @@
           link.href = canonicalUrl;
           document.head.appendChild(link);
 
-          // Fast-path immediate destination JSON prefetch
+          // Fast-path immediate destination title and description for fast crawlers
+          var readableName = cleanSlug.split('-').map(function (w) {
+            return w.charAt(0).toUpperCase() + w.slice(1);
+          }).join(' ');
+          document.title = readableName + ' Travel Guide 2026 — Places, Stays, How to Reach | ExploreDesh';
+          var descMeta = document.querySelector('meta[name="description"]');
+          if (descMeta) {
+            descMeta.setAttribute('content', 'Explore ' + readableName + ', India: top attractions, heritage spots, verified stays, travel routes, and seasonal weather. Plan your trip with ExploreDesh.');
+          }
+
+          // Fast-path immediate destination JSON prefetch & metadata hydration
           window.__destSlug = cleanSlug;
           window.__destFetchPromise = fetch('data/destinations/' + encodeURIComponent(cleanSlug) + '.json?v=20261018_phase99')
             .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) {
+              if (d && d.title) {
+                var fullTitle = (d.seo && d.seo.title) || (d.title + ' Travel Guide 2026 — Places, Hotels, How to Reach | ExploreDesh');
+                document.title = fullTitle;
+                var fullDesc = (d.seo && d.seo.description) || (d.overview && (d.overview.description || d.overview.short)) || '';
+                if (fullDesc && descMeta) descMeta.setAttribute('content', fullDesc);
+                var ogT = document.querySelector('meta[property="og:title"]');
+                if (ogT) ogT.setAttribute('content', fullTitle);
+                var ogD = document.querySelector('meta[property="og:description"]');
+                if (ogD && fullDesc) ogD.setAttribute('content', fullDesc);
+                var ogI = document.getElementById('ogImageMeta');
+                if (ogI && d.heroImage && d.heroImage.src) ogI.setAttribute('content', d.heroImage.src);
+
+                // Fast-hydrate H1 and tagline when DOM is ready
+                var hydrateDom = function () {
+                  var hTitle = document.getElementById('heroTitle');
+                  if (hTitle && !hTitle.textContent) hTitle.textContent = d.title;
+                  var hTag = document.getElementById('heroTagline');
+                  if (hTag && !hTag.textContent && d.tagline) hTag.textContent = d.tagline;
+                  var cName = document.getElementById('crumbName');
+                  if (cName && cName.textContent === '...') cName.textContent = d.title;
+                  var mEl = document.getElementById('main');
+                  if (mEl) mEl.style.display = 'block';
+                };
+                if (document.readyState === 'loading') {
+                  document.addEventListener('DOMContentLoaded', hydrateDom);
+                } else {
+                  hydrateDom();
+                }
+              }
+              return d;
+            })
             .catch(function () { return null; });
         } else {
           // If destination.html is accessed directly without a slug parameter, do not index the empty shell
@@ -88,6 +130,28 @@
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
   <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <!-- Static fallback OG image — destination.js overwrites with actual hero after load -->
+  <meta property="og:image" id="ogImageMeta"
+    content="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1200&h=630&q=85" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Scenic Indian destination landscape" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ExploreDesh" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" id="twImageMeta"
+    content="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1200&h=630&q=85" />
+  <!-- Minimal static JSON-LD fallback; destination.js injects full TouristDestination schema after data loads -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Destination Guide",
+    "url": "https://exploredesh.com/destination.html",
+    "touristType": "Cultural, Heritage, Nature",
+    "geo": { "@type": "GeoCoordinates", "addressCountry": "IN" }
+  }
+  </script>
 </head>
 
 <body class="dest-immersive glass-immersive">
@@ -133,7 +197,8 @@
               <li aria-hidden="true" class="text-white/40">/</li>
               <li><a href="/destinations" class="hover:text-amber-300 transition-colors">Destinations</a></li>
               <li id="crumbStateSep" aria-hidden="true" class="text-white/40" style="display:none">/</li>
-              <li id="crumbStateItem" style="display:none"><a id="crumbStateLink" href="/destinations" class="hover:text-amber-300 transition-colors"></a></li>
+              <li id="crumbStateItem" style="display:none"><a id="crumbStateLink" href="/destinations"
+                  class="hover:text-amber-300 transition-colors"></a></li>
               <li aria-hidden="true" class="text-white/40">/</li>
               <li><span id="crumbName" class="text-amber-300 font-semibold" aria-current="page">...</span></li>
             </ol>
@@ -145,8 +210,7 @@
           </div>
           <h1 id="heroTitle" class="font-display text-white mb-2"
             style="font-size:clamp(2.6rem,6.5vw,4.8rem);line-height:1.08;pointer-events:none"></h1>
-          <p id="heroTagline" class="hero-tagline-luxury max-w-2xl text-center"
-            style="pointer-events:none"></p>
+          <p id="heroTagline" class="hero-tagline-luxury max-w-2xl text-center" style="pointer-events:none"></p>
           <div class="dest-hero-actions flex items-center justify-center gap-3 mt-4 flex-wrap" id="destHeroActions"
             style="pointer-events:auto">
             <button type="button" class="dest-offline-save-btn" id="savePocketGuideBtn"
@@ -185,48 +249,54 @@
 
       <!-- TAB PANELS — aria-labelledby set by JS in setTab() -->
       <div class="max-w-7xl mx-auto px-4 pt-10 pb-12">
-      <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
-      <div id="panel-places" class="tab-panel" role="tabpanel" aria-labelledby="tab-places" style="display:none"></div>
-      <div id="panel-stays" class="tab-panel" role="tabpanel" aria-labelledby="tab-stays" style="display:none"></div>
-      <div id="panel-budget" class="tab-panel" role="tabpanel" aria-labelledby="tab-budget" style="display:none"></div>
-      <div id="panel-reach" class="tab-panel" role="tabpanel" aria-labelledby="tab-reach" style="display:none"></div>
-      <div id="panel-map" class="tab-panel" role="tabpanel" aria-labelledby="tab-map" style="display:none">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-          <div>
-            <h2 class="text-2xl font-bold text-white">Interactive Map — <span id="mapName"
-                class="text-amber-400"></span></h2>
-          </div>
-          <div class="flex items-center gap-2 flex-wrap">
-            <a id="mapOpenGoogleBtn" href="#" target="_blank" rel="noopener noreferrer"
-              class="btn btn-primary inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm shadow-lg shadow-amber-500/25 transition-all hover:-translate-y-0.5 cursor-pointer"
-              title="Open live location in Google Maps">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              Open in Google Maps
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M7 17L17 7" />
-                <path d="M7 7h10v10" />
-              </svg>
-            </a>
-            <a id="mapDirectionsBtn" href="#" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/15 transition-all hover:-translate-y-0.5 cursor-pointer backdrop-blur"
-              title="Get directions to this destination">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polygon points="3 11 22 2 13 21 11 13 3 11" />
-              </svg>
-              Get Directions
-            </a>
-          </div>
+        <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
+        <div id="panel-places" class="tab-panel" role="tabpanel" aria-labelledby="tab-places" style="display:none">
         </div>
-        <div id="destination-map" class="w-full"></div>
-        <p class="text-xs text-slate-400 mt-3 text-center">Google Maps · Interactive Location Map</p>
+        <div id="panel-itinerary" class="tab-panel" role="tabpanel" aria-labelledby="tab-itinerary"
+          style="display:none"></div>
+        <div id="panel-stays" class="tab-panel" role="tabpanel" aria-labelledby="tab-stays" style="display:none"></div>
+        <div id="panel-dining" class="tab-panel" role="tabpanel" aria-labelledby="tab-dining" style="display:none">
+        </div>
+        <div id="panel-budget" class="tab-panel" role="tabpanel" aria-labelledby="tab-budget" style="display:none">
+        </div>
+        <div id="panel-reach" class="tab-panel" role="tabpanel" aria-labelledby="tab-reach" style="display:none"></div>
+        <div id="panel-map" class="tab-panel" role="tabpanel" aria-labelledby="tab-map" style="display:none">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+            <div>
+              <h2 class="text-2xl font-bold text-white">Interactive Map — <span id="mapName"
+                  class="text-amber-400"></span></h2>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <a id="mapOpenGoogleBtn" href="#" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm shadow-lg shadow-amber-500/25 transition-all hover:-translate-y-0.5 cursor-pointer"
+                title="Open live location in Google Maps">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Open in Google Maps
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+              <a id="mapDirectionsBtn" href="#" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/15 transition-all hover:-translate-y-0.5 cursor-pointer backdrop-blur"
+                title="Get directions to this destination">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                </svg>
+                Get Directions
+              </a>
+            </div>
+          </div>
+          <div id="destination-map" class="w-full"></div>
+          <p class="text-xs text-slate-400 mt-3 text-center">Google Maps · Interactive Location Map</p>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- SIMILAR DESTINATIONS -->
@@ -286,13 +356,13 @@
       <!-- Image carousel -->
       <div id="placeCarousel" class="carousel">
         <div id="placeTrack" class="carousel-track"></div>
-        <button type="button" id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo"><svg width="20" height="20"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-            stroke-linejoin="round" aria-hidden="true">
+        <button type="button" id="carPrev" class="carousel-btn carousel-prev" aria-label="Previous photo"><svg
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m15 18-6-6 6-6" />
           </svg></button>
-        <button type="button" id="carNext" class="carousel-btn carousel-next" aria-label="Next photo"><svg width="20" height="20"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+        <button type="button" id="carNext" class="carousel-btn carousel-next" aria-label="Next photo"><svg width="20"
+            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <path d="m9 18 6-6-6-6" />
           </svg></button>
@@ -429,20 +499,13 @@
     </div>
   </div>
 
-  <script type="module" src="js/pages/destination.js?v=20261101_budget_v2"></script>
-  <!-- Bug 12 fix: noscript fallback for JS-disabled browsers -->
+  <script type="module" src="js/pages/destination.js?v=20261114_itinerary_faq_v3"></script>
+  <!-- Accessible fallback for non-JS crawlers and environments -->
   <noscript>
-    <style>
-      #main {
-        display: none !important;
-      }
-    </style>
-    <div
-      style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:1rem;padding:2rem;text-align:center;font-family:sans-serif;color:#fff">
-      <p style="font-size:1.2rem;font-weight:bold">JavaScript Required</p>
-      <p style="color:#94a3b8">ExploreDesh requires JavaScript to display destination guides. Please enable JavaScript
-        in your browser.</p>
-      <a href="/destinations" style="color:#E5C07B;text-decoration:underline">Browse all destinations</a>
+    <div style="max-width:800px;margin:2rem auto;padding:2rem;text-align:center;font-family:system-ui,-apple-system,sans-serif;color:#e2e8f0;background:#0f172a;border-radius:1rem;border:1px solid rgba(255,255,255,0.15)">
+      <h2 style="font-size:1.5rem;color:#f59e0b;margin-bottom:1rem">Explore India with ExploreDesh</h2>
+      <p style="color:#cbd5e1;line-height:1.6;margin-bottom:1.5rem">ExploreDesh provides comprehensive travel discovery across 2,396 destinations in India with verified stays, authentic dining, and curated heritage sites.</p>
+      <a href="/destinations" style="display:inline-block;background:#15803d;color:#fff;padding:0.75rem 1.5rem;border-radius:0.5rem;font-weight:600;text-decoration:none">Browse All 2,396 Destinations</a>
     </div>
   </noscript>
   <script>

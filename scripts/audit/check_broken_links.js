@@ -10,7 +10,9 @@ const htmlPages = [
   'contact.html',
   'ai-finder.html',
   'privacy.html',
-  'terms.html'
+  'terms.html',
+  'hotels.html',
+  'restaurants.html'
 ];
 
 const brokenLinks = [];
@@ -34,5 +36,5 @@ console.log('Broken relative links found:', brokenLinks.length);
 if (brokenLinks.length > 0) {
   console.log(JSON.stringify(brokenLinks, null, 2));
 } else {
-  console.log('All static relative links in all 8 HTML templates point to valid existing files.');
+  console.log('All static relative links in all 10 HTML templates point to valid existing files.');
 }

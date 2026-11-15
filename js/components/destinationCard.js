@@ -175,6 +175,7 @@ export function destCardHTML(d, opts = {}) {
     '<div class="dest-card-body">' +
     '<div class="dest-card-meta-row">' +
     '<span class="dest-best-season">' + icon('calendar', { size: 12 }) + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
+    '<span class="dest-card-amenity-hint">' + icon('bed', { size: 12 }) + ' Stays &amp; Dining</span>' +
     '</div>' +
     '<p class="dest-card-desc">' + esc(d.short) + '</p>' +
     '<div class="dest-card-footer">' +

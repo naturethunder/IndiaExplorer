@@ -75,7 +75,9 @@ const htmlPages = [
   'contact.html',
   'ai-finder.html',
   'privacy.html',
-  'terms.html'
+  'terms.html',
+  'hotels.html',
+  'restaurants.html'
 ];
 
 htmlPages.forEach(hp => {
@@ -187,6 +189,20 @@ if (indexHtml.includes('"@type": "Organization"') && indexHtml.includes('"@type"
 const destHtml = fs.readFileSync(path.join(ROOT, 'destinations.html'), 'utf8');
 if (destHtml.includes('"@type": "CollectionPage"')) {
   report.passed.push('Structured Data (destinations.html): CollectionPage JSON-LD present');
+}
+
+if (fs.existsSync(path.join(ROOT, 'hotels.html'))) {
+  const hotelsHtml = fs.readFileSync(path.join(ROOT, 'hotels.html'), 'utf8');
+  if (hotelsHtml.includes('"@type": "CollectionPage"')) {
+    report.passed.push('Structured Data (hotels.html): CollectionPage JSON-LD present');
+  }
+}
+
+if (fs.existsSync(path.join(ROOT, 'restaurants.html'))) {
+  const restHtml = fs.readFileSync(path.join(ROOT, 'restaurants.html'), 'utf8');
+  if (restHtml.includes('"@type": "CollectionPage"')) {
+    report.passed.push('Structured Data (restaurants.html): CollectionPage JSON-LD present');
+  }
 }
 
 const seoJs = fs.readFileSync(path.join(ROOT, 'js', 'components', 'seo.js'), 'utf8');

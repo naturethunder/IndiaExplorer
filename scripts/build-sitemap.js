@@ -29,6 +29,8 @@ const STATIC = [
   { loc: 'ai-finder', file: 'ai-finder.html', priority: '0.8', changefreq: 'monthly' },
   { loc: 'about', file: 'about.html', priority: '0.4', changefreq: 'yearly' },
   { loc: 'contact', file: 'contact.html', priority: '0.4', changefreq: 'yearly' },
+  { loc: 'hotels', file: 'hotels.html', priority: '0.8', changefreq: 'weekly' },
+  { loc: 'restaurants', file: 'restaurants.html', priority: '0.8', changefreq: 'weekly' },
 ];
 
 function xmlEscape(s) {

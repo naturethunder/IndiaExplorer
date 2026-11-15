@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -55,6 +55,21 @@
   <link rel="stylesheet" href="css/glass-immersive.css?v=20261105_inline_headers_v2" />
   <!-- GSAP & ScrollTrigger (Self-hosted for zero external CDN latency) -->
   <script src="js/vendor/gsap.min.js" defer></script>
+  <!-- JSON-LD: ContactPage structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact ExploreDesh",
+    "url": "https://exploredesh.com/contact",
+    "description": "Get in touch with the ExploreDesh team — questions, feedback, partnership enquiries or destination suggestions.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ExploreDesh",
+      "url": "https://exploredesh.com"
+    }
+  }
+  </script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 glass-immersive">
@@ -192,6 +207,13 @@
 
     </div>
   </main>
+  <noscript>
+    <div style="text-align:center;padding:4rem 1.5rem;font-family:sans-serif;color:#cbd5e1;background:#0b0f19">
+      <p style="font-size:1.5rem;margin-bottom:1rem" role="heading" aria-level="2">Contact ExploreDesh Support & Editorial</p>
+      <p style="margin-bottom:1.5rem">ExploreDesh requires JavaScript enabled in your browser for dynamic maps, theme toggles, and rich interactive features.</p>
+      <a href="/destinations" style="color:#f5c542;text-decoration:underline;font-weight:600">Browse All Destinations</a>
+    </div>
+  </noscript>
 
   <!-- FOOTER (shared component) -->
   <div id="siteFooter"></div>

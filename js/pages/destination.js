@@ -39,21 +39,32 @@ function tierColor(tier) {
   return map[tier] || 'tier-pill-default';
 }
 
-// Map a WMO weather code to a human label + emoji
+function weatherSvg(code, size = 32) {
+  if (code === 0 || code === 1) return icon('sun', { size: size, cls: 'text-amber-400 shrink-0' });
+  if (code === 2 || code === 3) return icon('cloud', { size: size, cls: 'text-slate-300 shrink-0' });
+  if (code >= 45 && code <= 48) return icon('waves', { size: size, cls: 'text-slate-400 shrink-0' });
+  if ((code >= 51 && code <= 67) || (code >= 80 && code <= 82)) return icon('cloud-rain', { size: size, cls: 'text-blue-400 shrink-0' });
+  if ((code >= 71 && code <= 77) || (code >= 85 && code <= 86)) return icon('snowflake', { size: size, cls: 'text-cyan-300 shrink-0' });
+  if (code >= 95) return icon('flame', { size: size, cls: 'text-amber-500 shrink-0' });
+  return icon('sun', { size: size, cls: 'text-amber-400 shrink-0' });
+}
+
+// Map a WMO weather code to a human label + SVG icon
 function weatherInfo(code) {
   const m = {
-    0: ['Clear sky', '☀️'], 1: ['Mainly clear', '🌤️'], 2: ['Partly cloudy', '⛅'], 3: ['Overcast', '☁️'],
-    45: ['Fog', '🌫️'], 48: ['Rime fog', '🌫️'],
-    51: ['Light drizzle', '🌦️'], 53: ['Drizzle', '🌦️'], 55: ['Dense drizzle', '🌦️'],
-    56: ['Freezing drizzle', '🌧️'], 57: ['Freezing drizzle', '🌧️'],
-    61: ['Light rain', '🌧️'], 63: ['Rain', '🌧️'], 65: ['Heavy rain', '🌧️'],
-    66: ['Freezing rain', '🌧️'], 67: ['Freezing rain', '🌧️'],
-    71: ['Light snow', '🌨️'], 73: ['Snow', '🌨️'], 75: ['Heavy snow', '❄️'], 77: ['Snow grains', '🌨️'],
-    80: ['Rain showers', '🌦️'], 81: ['Rain showers', '🌦️'], 82: ['Violent showers', '⛈️'],
-    85: ['Snow showers', '🌨️'], 86: ['Snow showers', '❄️'],
-    95: ['Thunderstorm', '⛈️'], 96: ['Thunderstorm + hail', '⛈️'], 99: ['Thunderstorm + hail', '⛈️'],
+    0: 'Clear sky', 1: 'Mainly clear', 2: 'Partly cloudy', 3: 'Overcast',
+    45: 'Fog', 48: 'Rime fog',
+    51: 'Light drizzle', 53: 'Drizzle', 55: 'Dense drizzle',
+    56: 'Freezing drizzle', 57: 'Freezing drizzle',
+    61: 'Light rain', 63: 'Rain', 65: 'Heavy rain',
+    66: 'Freezing rain', 67: 'Freezing rain',
+    71: 'Light snow', 73: 'Snow', 75: 'Heavy snow',
+    77: 'Snow grains', 80: 'Rain showers', 81: 'Rain showers',
+    82: 'Violent showers', 85: 'Snow showers', 86: 'Snow showers',
+    95: 'Thunderstorm', 96: 'Thunderstorm + hail', 99: 'Thunderstorm + hail'
   };
-  return m[code] || ['—', '🌡️'];
+  const label = m[code] || 'Clear';
+  return [label, weatherSvg(code, 28)];
 }
 function pad2(n) { return (n < 10 ? '0' : '') + n; }
 
@@ -192,6 +203,120 @@ if (!dest) {
     });
 }
 
+// ─── REGIONAL CUISINES DIRECTORY ─────────────────────────
+const REGIONAL_CUISINE_MAP = {
+  'Himachal Pradesh': {
+    title: 'Himachali Pahadi Gastronomy',
+    desc: 'Flavors of the Himalayas characterized by aromatic whole spices, slow-cooked lentils, and rich yogurt-based gravies.',
+    dishes: ['Kangra Dham (Festive Thali)', 'Siddu (Steamed Ghee Breads)', 'Chha Gosht', 'Madra (Chickpea Gravy)', 'Babru']
+  },
+  'Jammu & Kashmir': {
+    title: 'Kashmiri Wazwan & Heritage Flavors',
+    desc: 'Famed royal Kashmiri culinary tradition infused with saffron, dried ginger (sonth), fennel, and mild Kashmiri chillies.',
+    dishes: ['Rogan Josh', 'Dum Aloo', 'Yakhni', 'Kashmiri Kahwa (Saffron Tea)', 'Nadru Yakhni']
+  },
+  'Ladakh': {
+    title: 'Ladakhi High-Altitude Mountain Delicacies',
+    desc: 'Hearty, warming high-altitude recipes designed for Himalayan climates, featuring barley, tsampa, and warming herbal broths.',
+    dishes: ['Thukpa (Tibetan Noodle Soup)', 'Steamed Momos', 'Butter Tea (Gur Gur Cha)', 'Skyu (Pasta Stew)', 'Khambir']
+  },
+  'Uttarakhand': {
+    title: 'Garhwali & Kumaoni Mountain Cuisine',
+    desc: 'Nutritious mountain recipes centered on indigenous organic millets, local lentils, and wild mountain herbs like jambu.',
+    dishes: ['Kafuli (Spinach & Fenugreek)', 'Chainsoo (Black Gram Curry)', 'Aloo ke Gutke', 'Jhangore ki Kheer', 'Bhatt ki Churkani']
+  },
+  'Rajasthan': {
+    title: 'Royal Rajputana Heritage Feasts',
+    desc: 'Centuries-old royal desert recipes utilizing sun-dried lentils, rich churned ghee, buttermilk gravies, and royal spices.',
+    dishes: ['Dal Baati Churma', 'Ker Sangri (Desert Beans)', 'Gatte ki Sabzi', 'Laal Maas', 'Ghevar']
+  },
+  'Kerala': {
+    title: 'Malabar & Travancore Coastal Delights',
+    desc: 'Fragrant coconut-scented culinary marvels infused with fresh curry leaves, Tellicherry black pepper, and mustard seeds.',
+    dishes: ['Appam with Coconut Stew', 'Kerala Sadya', 'Karimeen Pollichathu', 'Malabar Parotta', 'Puttu with Kadala Curry']
+  },
+  'Goa': {
+    title: 'Goan Coastal & Heritage Recipes',
+    desc: 'Zesty coastal recipes blending fresh ocean catch, coconut milk, kokum, toddy vinegar, and Portuguese culinary traditions.',
+    dishes: ['Goan Fish Curry & Rice', 'Chicken Xacuti', 'Pork Vindaloo', 'Poi (Goan Bread)', 'Traditional Bebinca']
+  },
+  'Tamil Nadu': {
+    title: 'Chettinad & Dravidian Flavors',
+    desc: 'A vibrant balance of freshly roasted black pepper, star anise, curry leaves, and traditional stone-ground fermentations.',
+    dishes: ['Chettinad Pepper Curry', 'Madurai Jigarthanda', 'Crispy Dosa & Podi Idli', 'Filter Kaapi', 'Pongal & Sambar']
+  },
+  'Karnataka': {
+    title: 'Kannada Coastal & Mysore Royal Cuisine',
+    desc: 'Diverse culinary traditions ranging from coastal Udupi and Mangalore seafood to royal Mysore sweets and aromatic coffee.',
+    dishes: ['Bisi Bele Bath', 'Mysore Pak', 'Mangalorean Ghee Roast', 'Neer Dosa', 'Dharwad Peda']
+  },
+  'Maharashtra': {
+    title: 'Maharashtrian Heritage & Konkan Coast',
+    desc: 'Dynamic flavors ranging from spicy Kolhapuri curries to coastal Konkani coconut curries and sweet jaggery-infused flatbreads.',
+    dishes: ['Misal Pav', 'Puran Poli', 'Vada Pav', 'Malvani Fish Curry', 'Solkadhi']
+  },
+  'West Bengal': {
+    title: 'Bengali Epicurean Traditions',
+    desc: 'Subtle and sophisticated flavors defined by the five-spice panch phoron, cold-pressed mustard oil, and renowned confectionery.',
+    dishes: ['Shorshe Ilish (Hilsa Mustard)', 'Kosha Mangsho', 'Luchi with Chholar Dal', 'Mishti Doi', 'Sandesh & Rosogolla']
+  },
+  'Punjab': {
+    title: 'Punjabi Heritage Flavors',
+    desc: 'Robust, comforting North Indian cooking celebrated for slow-simmered black lentils, clay-tandoor flatbreads, and fresh dairy.',
+    dishes: ['Makki di Roti & Sarson Saag', 'Dal Makhani', 'Amritsari Kulcha with Chole', 'Butter Chicken', 'Sweet Lassi']
+  },
+  'Uttar Pradesh': {
+    title: 'Awadhi & Banarasi Gastronomy',
+    desc: 'Refined Mughal court cooking (dum pukht) harmonized with sacred ancient temple sweets and Banaras street chaat.',
+    dishes: ['Awadhi Dum Biryani', 'Galouti Kebabs', 'Banarasi Tamatar Chaat', 'Bedmi Poori with Aloo', 'Banarasi Paan & Malaiyo']
+  },
+  'Delhi': {
+    title: 'Purani Dilli & Capital Gastronomy',
+    desc: 'A legendary culinary crossroads fusing historic Mughal street delicacies with contemporary pan-Indian flavors.',
+    dishes: ['Old Delhi Butter Chicken', 'Chandni Chowk Paranthe', 'Dahi Bhalla', 'Chole Bhature', 'Karim’s Nihari']
+  },
+  'Madhya Pradesh': {
+    title: 'Malwa & Bundelkhand Flavors',
+    desc: 'Hearty Central Indian cooking blending sweet and spicy notes, celebrated across the famous street food night markets.',
+    dishes: ['Indori Poha with Sev', 'Bhutte Ka Kees (Spiced Corn)', 'Dal Bafla with Ghee', 'Mawa Bati', 'Chakki ki Shaak']
+  },
+  'Gujarat': {
+    title: 'Gujarati Kathiyawadi & Royal Thali',
+    desc: 'A refined vegetarian cuisine balancing sweet, salty, and spicy dimensions with delicate tempering and seasonal fresh vegetables.',
+    dishes: ['Gujarati Thali with Kadhi', 'Dhokla & Khandvi', 'Sev Tameta Nu Shaak', 'Undhiyu', 'Fafda Jalebi']
+  },
+  'Odisha': {
+    title: 'Odia Temple & Coastal Traditions',
+    desc: 'Mild, sacred temple culinary recipes prepared with minimal oil, fresh mustard, and ancient Puri Jagannath heritage.',
+    dishes: ['Dalma (Lentil & Veg Medley)', 'Pakhala Bhata', 'Chhena Poda (Caramelized Cheese)', 'Crab Kalia', 'Puri Khaja']
+  },
+  'Telangana': {
+    title: 'Hyderabadi Nizami & Deccan Cuisine',
+    desc: 'A celebrated royal fusion of Mughal, Turkish, and Arabic influences combined with native Andhra spice and tamarind.',
+    dishes: ['Hyderabadi Dum Biryani', 'Mirchi ka Salan', 'Haleem', 'Double ka Meetha', 'Sarva Pindi']
+  },
+  'Andhra Pradesh': {
+    title: 'Andhra Coastal & Rayalaseema Spices',
+    desc: 'Renowned for fiery Guntur chillies, tangy sour gongura leaves, and aromatic coastal seafood.',
+    dishes: ['Gongura Mutton/Pachadi', 'Andhra Meals with Ghee & Podi', 'Royyala Vepudu (Prawn Fry)', 'Pesarattu Upma', 'Pootharekulu']
+  },
+  'Assam': {
+    title: 'Assamese Brahmaputra Cuisine',
+    desc: 'Pure, fresh, and soothing flavors relying on fresh herbs, bamboo shoots, and fermentation without heavy powdered spices.',
+    dishes: ['Masor Tenga (Tangy Fish Curry)', 'Khar (Alkaline Papaya)', 'Duck Curry with White Gourd', 'Aloo Pitika', 'Pitha']
+  },
+  'Meghalaya': {
+    title: 'Khasi & Garo Hill Delicacies',
+    desc: 'Earth-ground mountain recipes featuring aromatic black sesame, bamboo shoots, wild forest greens, and smoked meats.',
+    dishes: ['Jadoh (Rice Cooked with Broth)', 'Dohneiiong (Black Sesame Curry)', 'Tungrymbai (Soybean)', 'Pukhlein']
+  },
+  'Sikkim': {
+    title: 'Sikkimese Himalayan Traditions',
+    desc: 'Fermented soybean, sun-dried mountain mustard greens, and Himalayan dumplings paired with local churpi.',
+    dishes: ['Gundruk Soup', 'Phagshapa (Pork with Radish)', 'Steamed Tingmo Breads', 'Kinema Curry', 'Sel Roti']
+  }
+};
+
 function main(dest, idx) {
   const LUXURY_TIER_LABELS = {
     cheapest: 'Heritage Homestays',
@@ -300,7 +425,7 @@ function main(dest, idx) {
     ? [dest.weather.lat, dest.weather.lng]
     : (dest.coordinates ? [dest.coordinates.lat, dest.coordinates.lng] : null);
   const places = (dest.topPlaces && dest.topPlaces.length) ? dest.topPlaces : (dest.places || []);
-  const hotels = (dest.hotels && dest.hotels.length) ? dest.hotels : (dest.stays || dest.accommodations || []);
+  let hotels = ((dest.hotels && dest.hotels.length) ? dest.hotels : (dest.stays || dest.accommodations || [])).slice();
 
   // ─── SEO ───────────────────────────────────────────────
   const canonicalPath = 'destination?slug=' + encodeURIComponent(dest.slug || '');
@@ -1475,6 +1600,8 @@ function main(dest, idx) {
     })();
   }
 
+  
+
   // ─── PLACES panel (with category filter) ────────────────
   let placeFilter = 'all';
   function renderPlaces() {
@@ -1517,8 +1644,8 @@ function main(dest, idx) {
         '<p class="text-xs text-gray-500 mb-1.5 capitalize flex flex-wrap items-center gap-x-2 gap-y-1">' +
         '<span class="inline-block px-2 py-0.5 rounded-md bg-orange-50 text-orange-700 font-semibold">' + esc(p.category || 'Attraction') + '</span> · ' +
         '<span>' + icon('map-pin', { size: 12 }) + ' ' + esc(p.distance || 'Nearby') + '</span> · ' +
-        '<span class="text-emerald-700 font-semibold">🚗 ' + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span> · ' +
-        '<span>⏱ ' + esc(p.duration || '1–2 hrs') + '</span>' +
+        '<span class="text-emerald-700 dark:text-emerald-400 font-semibold inline-flex items-center gap-1">' + icon('car', { size: 12 }) + esc(getPlaceTravelTime(p, dest.title, dest.state)) + '</span> · ' +
+        '<span class="inline-flex items-center gap-1">' + icon('clock', { size: 12 }) + esc(p.duration || '1–2 hrs') + '</span>' +
         '</p>' +
         '<p class="text-xs text-gray-600 leading-relaxed line-clamp-2">' + esc(p.description || '') + '</p>' +
         '<div class="flex items-center justify-between mt-2 text-xs"><div class="flex gap-3">' + fee + '<span class="text-gray-400">' + esc(p.timings || 'Open 24 hours') + '</span></div>' +
@@ -1543,44 +1670,438 @@ function main(dest, idx) {
     });
   }
 
-  // ─── STAYS panel (with tier filter) ─────────────────────
+  // ─── DYNAMIC ITINERARY ATELIER (Ultra-Luxury & Interactive) ───
+  let itinDuration = 2; // Default 2 Days
+  let itinPace = 'balanced'; // 'relaxed' | 'balanced' | 'intensive'
+  let itinVibe = 'all'; // 'all' | 'heritage' | 'nature'
+
+  function showItinToast(msg) {
+    const existing = document.querySelector('.dest-itin-toast');
+    if (existing) existing.remove();
+    const t = document.createElement('div');
+    t.className = 'dest-itin-toast';
+    t.innerHTML = icon('sparkles', { size: 16 }) + '<span>' + esc(msg) + '</span>';
+    document.body.appendChild(t);
+    setTimeout(function () {
+      t.style.opacity = '0';
+      t.style.transition = 'opacity 0.4s ease';
+      setTimeout(function () { t.remove(); }, 400);
+    }, 2800);
+  }
+
+  function renderItinerary() {
+    const panel = document.getElementById('panel-itinerary');
+    if (!panel) return;
+
+    // Source places from real destination attractions or fallback to curated itinerary items
+    const allPlaces = Array.isArray(places) && places.length > 0 ? places : (dest.topPlaces || []);
+
+    if (!allPlaces.length && (!dest.itinerary || !dest.itinerary.length)) {
+      panel.innerHTML =
+        '<div class="flex items-center justify-between mb-6"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Bespoke Itinerary Atelier</h2></div></div>' +
+        '<p class="text-sm text-gray-400 py-10 text-center">No curated places available to generate an itinerary for ' + esc(dest.title) + ' yet.</p>';
+      return;
+    }
+
+    // Filter places by selected vibe if applicable
+    let candidatePlaces = allPlaces.slice();
+    if (itinVibe === 'heritage') {
+      const filtered = candidatePlaces.filter(function (p) {
+        const txt = (p.name + ' ' + (p.category || '') + ' ' + (p.description || '')).toLowerCase();
+        return /temple|fort|palace|cave|monument|church|mosque|ghat|heritage|sanctuary|tomb|stepwell|ruin/.test(txt);
+      });
+      if (filtered.length >= itinDuration) candidatePlaces = filtered;
+    } else if (itinVibe === 'nature') {
+      const filtered = candidatePlaces.filter(function (p) {
+        const txt = (p.name + ' ' + (p.category || '') + ' ' + (p.description || '')).toLowerCase();
+        return /waterfall|lake|valley|hill|peak|forest|river|viewpoint|park|meadow|pass|wildlife|trek/.test(txt);
+      });
+      if (filtered.length >= itinDuration) candidatePlaces = filtered;
+    }
+
+    // Determine stops per day based on pace
+    const stopsPerDay = itinPace === 'relaxed' ? 2 : (itinPace === 'intensive' ? 4 : 3);
+    const totalDays = itinDuration;
+
+    // Bespoke luxury day themes
+    const DAY_THEMES = [
+      {
+        title: 'The Sacred Heart & Defining Landmarks',
+        desc: 'Begin your journey with the defining monuments, ancient courtyards, and primary spiritual centers of ' + dest.title + '.'
+      },
+      {
+        title: 'Highland Vistas, Nature Trails & Riverbank Serenity',
+        desc: 'Venture into sweeping viewpoints, tranquil waters, and open landscape vistas optimal for golden hour light.'
+      },
+      {
+        title: 'Hidden Architectural Gems & Artisan Quarters',
+        desc: 'Explore secluded sanctuaries, heritage stepwells, regional craft quarters, and authentic culinary stops.'
+      },
+      {
+        title: 'Wilderness Escapes & Panoramic Passes',
+        desc: 'An adventurous excursion into untouched forest reserves, dramatic rock formations, and scenic passes.'
+      },
+      {
+        title: 'Slow Living, Reflections & Twilight Farewells',
+        desc: 'A leisurely cadence of peaceful morning walks, lingering tea rituals, and sunset reflections.'
+      }
+    ];
+
+    const TIME_SLOTS_3 = [
+      { time: '08:30 AM – 11:00 AM', slot: 'Morning Golden Hour', badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20' },
+      { time: '11:45 AM – 02:15 PM', slot: 'Midday Architecture & Heritage', badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
+      { time: '04:00 PM – 06:45 PM', slot: 'Sunset Golden Hour & Twilight', badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' }
+    ];
+
+    const TIME_SLOTS_2 = [
+      { time: '09:00 AM – 12:30 PM', slot: 'Morning Immersion', badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20' },
+      { time: '03:30 PM – 06:30 PM', slot: 'Late Afternoon & Sunset', badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' }
+    ];
+
+    const TIME_SLOTS_4 = [
+      { time: '08:00 AM – 10:00 AM', slot: 'Dawn Light & Sanctuary', badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20' },
+      { time: '10:30 AM – 12:45 PM', slot: 'Grand Monument & History', badge: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
+      { time: '02:30 PM – 04:45 PM', slot: 'Cultural Quarters & Craft', badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20' },
+      { time: '05:15 PM – 07:30 PM', slot: 'Sunset Panorama & Evening Aarti', badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' }
+    ];
+
+    const slots = stopsPerDay === 2 ? TIME_SLOTS_2 : (stopsPerDay === 4 ? TIME_SLOTS_4 : TIME_SLOTS_3);
+
+    let dayCardsHTML = '';
+    let globalPlaceIdx = 0;
+
+    for (let d = 0; d < totalDays; d++) {
+      const theme = DAY_THEMES[d] || {
+        title: 'Day ' + (d + 1) + ' · Immersive Regional Discovery',
+        desc: 'Deep exploration of cultural landscapes and tranquil sanctuaries.'
+      };
+
+      const dayItems = [];
+      for (let s = 0; s < stopsPerDay; s++) {
+        let placeObj = null;
+        if (candidatePlaces.length > 0) {
+          placeObj = candidatePlaces[globalPlaceIdx % candidatePlaces.length];
+          globalPlaceIdx++;
+        }
+        dayItems.push({
+          slotInfo: slots[s] || { time: 'Stop ' + (s + 1), slot: 'Curated Discovery', badge: 'bg-amber-500/10 text-amber-400 border-amber-500/20' },
+          place: placeObj
+        });
+      }
+
+      const itemRows = dayItems.map(function (item, itIdx) {
+        const p = item.place;
+        const sInfo = item.slotInfo;
+        const actName = p ? p.name : ('Highlight Stop ' + (itIdx + 1));
+        const cat = p && p.category ? p.category : 'Must-Visit Sanctuary';
+        const note = p && (p.description || p.history) ? p.description : 'A premier heritage vista offering profound cultural insight and memorable photography.';
+        const imgUrl = p && p.image && p.image.src ? p.image.src : (p && p.photos && p.photos[0] ? p.photos[0] : (dest.heroImage ? dest.heroImage.src : ''));
+
+        const pIdx = p ? places.indexOf(p) : -1;
+        const placeAction = pIdx >= 0
+          ? '<button type="button" class="dest-itin-place-btn inline-flex items-center gap-1.5 text-xs text-amber-500 hover:text-amber-400 font-bold mt-3 cursor-pointer transition-colors" data-itin-pidx="' + pIdx + '">' +
+          icon('map-pin', { size: 13 }) + ' View Place Details &amp; Gallery →</button>'
+          : '';
+
+        const transitIndicator = (itIdx < dayItems.length - 1)
+          ? '<div class="dest-itin-transit">' +
+          icon('route', { size: 12 }) +
+          '<span>~' + (1.8 + ((itIdx * 1.5 + d * 0.9) % 3.2)).toFixed(1) + ' km · ' + (10 + ((itIdx * 6 + d * 4) % 18)) + ' min scenic drive</span>' +
+          '</div>'
+          : '';
+
+        return '<div class="dest-itin-item relative pl-8 pb-6 last:pb-0">' +
+          '<div class="dest-itin-marker absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-amber-400 bg-slate-900 flex items-center justify-center text-[11px] font-bold text-amber-300">' +
+          (itIdx + 1) +
+          '</div>' +
+          '<div class="dest-itin-card p-4 sm:p-5 rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-slate-900/80 shadow-sm hover:border-amber-400/40 transition-all">' +
+          '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">' +
+          '<div class="flex items-center gap-2 flex-wrap">' +
+          '<h4 class="font-bold text-gray-900 dark:text-white text-base sm:text-lg leading-snug">' + esc(actName) + '</h4>' +
+          '<span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-white/5 text-gray-600 dark:text-slate-300 border border-gray-200 dark:border-white/10">' + esc(cat) + '</span>' +
+          '</div>' +
+          '<span class="dest-itin-time text-[11px] font-bold px-2.5 py-0.5 rounded-full border shrink-0 ' + sInfo.badge + '">' + sInfo.time + '</span>' +
+          '</div>' +
+          (imgUrl ? (
+            '<div class="flex flex-col md:flex-row gap-4 mt-3 items-start">' +
+            '<div class="w-full md:w-36 h-24 rounded-xl overflow-hidden shrink-0 border border-gray-100 dark:border-white/10 relative group">' +
+            '<img src="' + esc(imgUrl) + '" alt="' + esc(actName) + '" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />' +
+            '</div>' +
+            '<div class="flex-1">' +
+            '<p class="text-xs sm:text-sm text-gray-600 dark:text-slate-300 leading-relaxed line-clamp-2 sm:line-clamp-3">' + esc(note) + '</p>' +
+            placeAction +
+            '</div></div>'
+          ) : (
+            '<div><p class="text-xs sm:text-sm text-gray-600 dark:text-slate-300 leading-relaxed">' + esc(note) + '</p>' + placeAction + '</div>'
+          )) +
+          '</div>' +
+          transitIndicator +
+          '</div>';
+      }).join('');
+
+      dayCardsHTML +=
+        '<div class="dest-itin-day-card card p-5 md:p-7 mb-6 rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-slate-900/60 shadow-lg">' +
+        '<div class="dest-itin-day-header flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-gray-100 dark:border-white/10">' +
+        '<div>' +
+        '<div class="flex items-center gap-2 mb-1.5">' +
+        '<span class="px-3 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">Day ' + (d + 1) + ' of ' + totalDays + '</span>' +
+        '<span class="text-xs text-gray-400">· ' + dayItems.length + ' Choreographed Stops</span>' +
+        '</div>' +
+        '<h3 class="text-xl sm:text-2xl font-display font-bold text-gray-900 dark:text-white">' + esc(theme.title) + '</h3>' +
+        '<p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1 max-w-2xl">' + esc(theme.desc) + '</p>' +
+        '</div>' +
+        '<button type="button" class="dest-itin-action-btn self-start sm:self-center" data-itin-day-stays="' + (d + 1) + '">' +
+        icon('hotel', { size: 13 }) + ' Stays For Day ' + (d + 1) +
+        '</button>' +
+        '</div>' +
+        '<div class="dest-itin-timeline relative ml-3 pl-2 border-l border-amber-400/30">' +
+        itemRows +
+        '</div>' +
+        '</div>';
+    }
+
+    // Atelier Control Shell
+    panel.innerHTML =
+      '<div class="dest-itin-atelier-box">' +
+      '<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">' +
+      '<div>' +
+      '<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">' +
+      icon('sparkles', { size: 13 }) + ' Bespoke Journey Atelier' +
+      '</div>' +
+      '<h2 class="text-2xl sm:text-3xl font-display font-bold text-gray-900 dark:text-white">Dynamic Itinerary for ' + esc(dest.title) + '</h2>' +
+      '<p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1 max-w-2xl">Tailor your trip duration, daily rhythm, and sightseeing focus. Every route dynamically coordinates optimal lighting and geographic proximity.</p>' +
+      '</div>' +
+      '<div class="flex items-center gap-2 flex-wrap">' +
+      '<button type="button" class="dest-itin-action-btn" id="btnCopyItinerary">' +
+      icon('check', { size: 13 }) + ' Copy Itinerary' +
+      '</button>' +
+      '<button type="button" class="dest-itin-action-btn" id="btnPrintItinerary">' +
+      icon('download', { size: 13 }) + ' Print / Save PDF' +
+      '</button>' +
+      '</div>' +
+      '</div>' +
+
+      // Controls Bar
+      '<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-gray-100 dark:border-white/10">' +
+      '<div>' +
+      '<label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">Trip Duration</label>' +
+      '<div class="flex items-center gap-1.5 flex-wrap" id="itinDurationGroup">' +
+      [1, 2, 3, 4, 5].map(function (days) {
+        const active = itinDuration === days ? ' active' : '';
+        const label = days === 1 ? '1 Day' : days + ' Days';
+        return '<button type="button" class="dest-itin-seg-btn' + active + '" data-itin-days="' + days + '">' + label + '</button>';
+      }).join('') +
+      '</div>' +
+      '</div>' +
+
+      '<div>' +
+      '<label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">Exploration Pace</label>' +
+      '<div class="flex items-center gap-1.5 flex-wrap" id="itinPaceGroup">' +
+      [
+        { key: 'relaxed', label: 'Relaxed (2 stops)' },
+        { key: 'balanced', label: 'Balanced (3 stops)' },
+        { key: 'intensive', label: 'Active (4 stops)' }
+      ].map(function (p) {
+        const active = itinPace === p.key ? ' active' : '';
+        return '<button type="button" class="dest-itin-seg-btn' + active + '" data-itin-pace="' + p.key + '">' + p.label + '</button>';
+      }).join('') +
+      '</div>' +
+      '</div>' +
+
+      '<div>' +
+      '<label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">Atmospheric Focus</label>' +
+      '<div class="flex items-center gap-1.5 flex-wrap" id="itinVibeGroup">' +
+      [
+        { key: 'all', label: 'All Must-Sees' },
+        { key: 'heritage', label: 'Heritage & Temples' },
+        { key: 'nature', label: 'Nature & Vistas' }
+      ].map(function (v) {
+        const active = itinVibe === v.key ? ' active' : '';
+        return '<button type="button" class="dest-itin-seg-btn' + active + '" data-itin-vibe="' + v.key + '">' + v.label + '</button>';
+      }).join('') +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+
+      // Rendered day cards
+      '<div class="space-y-6" id="itinDaysContainer">' + dayCardsHTML + '</div>';
+
+    // Wire up events
+    panel.querySelectorAll('[data-itin-days]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        itinDuration = parseInt(btn.getAttribute('data-itin-days'), 10);
+        renderItinerary();
+      });
+    });
+
+    panel.querySelectorAll('[data-itin-pace]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        itinPace = btn.getAttribute('data-itin-pace');
+        renderItinerary();
+      });
+    });
+
+    panel.querySelectorAll('[data-itin-vibe]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        itinVibe = btn.getAttribute('data-itin-vibe');
+        renderItinerary();
+      });
+    });
+
+    panel.querySelectorAll('[data-itin-pidx]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const pidx = parseInt(btn.getAttribute('data-itin-pidx'), 10);
+        if (places[pidx]) openPlaceModal(places[pidx]);
+      });
+    });
+
+    panel.querySelectorAll('[data-itin-day-stays]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setTab('stays');
+      });
+    });
+
+    // Copy Itinerary Event
+    const btnCopy = panel.querySelector('#btnCopyItinerary');
+    if (btnCopy) {
+      btnCopy.addEventListener('click', function () {
+        let copyText = dest.title + ' — ' + itinDuration + '-Day Bespoke Travel Itinerary\n';
+        copyText += 'Pace: ' + itinPace + ' | Focus: ' + itinVibe + '\n\n';
+
+        for (let d = 0; d < totalDays; d++) {
+          const theme = DAY_THEMES[d] || { title: 'Day ' + (d + 1) };
+          copyText += '════════════════════════════════════════════\n';
+          copyText += 'DAY ' + (d + 1) + ': ' + theme.title + '\n';
+          copyText += '════════════════════════════════════════════\n';
+          for (let s = 0; s < stopsPerDay; s++) {
+            const pIdx = (d * stopsPerDay + s) % (candidatePlaces.length || 1);
+            const p = candidatePlaces[pIdx];
+            const sInfo = slots[s] || { time: 'Stop ' + (s + 1) };
+            if (p) {
+              copyText += '• ' + sInfo.time + ' — ' + p.name + ' (' + (p.category || 'Sight') + ')\n';
+              if (p.description) copyText += '  Tip: ' + p.description.slice(0, 120) + '...\n';
+            }
+          }
+          copyText += '\n';
+        }
+        copyText += 'Curated via ExploreDesh (https://exploredesh.com)\n';
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(copyText).then(function () {
+            showItinToast('✨ Itinerary copied to clipboard!');
+          });
+        } else {
+          showItinToast('✨ Itinerary generated!');
+        }
+      });
+    }
+
+    // Print Itinerary Event
+    const btnPrint = panel.querySelector('#btnPrintItinerary');
+    if (btnPrint) {
+      btnPrint.addEventListener('click', function () {
+        window.print();
+      });
+    }
+  }
+
+  // ─── STAYS panel (Verified Stays & Sanctuaries) ─────────────────────
   let stayTier = 'all';
+  let staysPortalSynced = false;
+
+  async function syncStaysFromDirectory() {
+    if (staysPortalSynced) return;
+    staysPortalSynced = true;
+    try {
+      const res = await fetch('/data/hotels/' + encodeURIComponent(dest.slug) + '.json');
+      if (res.ok) {
+        const data = await res.json();
+        let added = false;
+        (data.items || []).forEach(function (h) {
+          const norm = (h.name || '').toLowerCase().trim();
+          if (norm && !hotels.some(function (existing) { return (existing.name || '').toLowerCase().trim() === norm; })) {
+            let tier = h.tier;
+            if (!tier || !PRICE_TIERS[tier]) {
+              if (h.priceMin >= 7000) tier = 'best';
+              else if (h.priceMin >= 4000) tier = 'better';
+              else if (h.priceMin >= 2000) tier = 'good';
+              else if (h.priceMin >= 800) tier = 'budget';
+              else if (h.priceMin) tier = 'cheapest';
+              else tier = 'good';
+            }
+            const pMin = h.priceMin || (PRICE_TIERS[tier] ? 2400 : 2000);
+            const pMax = h.priceMax || (pMin ? Math.round(pMin * 1.5) : 4500);
+            hotels.push({
+              name: h.name,
+              type: h.category ? h.category.toLowerCase() : 'hotel',
+              tier: tier,
+              priceMin: pMin,
+              priceMax: pMax,
+              rating: h.rating || 4.3,
+              reviews: h.reviews || null,
+              amenities: Array.isArray(h.facilities) && h.facilities.length ? h.facilities : (Array.isArray(h.amenities) && h.amenities.length ? h.amenities : ['Free Wi-Fi', 'Room Service', 'Air Conditioning', 'Parking']),
+              tags: Array.isArray(h.tags) && h.tags.length ? h.tags : ['Verified Location', 'Curated Stay'],
+              url: h.url || (h.latitude && h.longitude
+                ? ('https://www.google.com/maps/dir/?api=1&destination=' + h.latitude + ',' + h.longitude)
+                : ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(h.name + ' ' + dest.title + ' ' + (dest.state || ''))))
+            });
+            added = true;
+          }
+        });
+        if (added) {
+          const badge = document.querySelector('#tab-stays .tab-badge');
+          if (badge) {
+            badge.textContent = hotels.length;
+            badge.setAttribute('aria-label', hotels.length + ' stays');
+          }
+          renderStays();
+        }
+      }
+    } catch (_) { }
+  }
+
   function renderStays() {
-    const allBtn = '<button type="button" class="px-4 py-1.5 rounded-full border text-xs font-semibold transition-all ' +
-      (stayTier === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-tier="all" aria-pressed="' + (stayTier === 'all' ? 'true' : 'false') + '">All Stays</button>';
+    syncStaysFromDirectory();
+
+    const allBtn = '<button type="button" class="dest-stay-filter-pill border transition-all ' +
+      (stayTier === 'all' ? 'dest-filter-btn active' : 'dest-filter-btn') + '" data-tier="all" aria-pressed="' + (stayTier === 'all' ? 'true' : 'false') + '">All Stays (' + hotels.length + ')</button>';
     const tierBtns = Object.keys(PRICE_TIERS).filter(function (key) {
       return hotels.some(function (s) { return s.tier === key; });
     }).map(function (key) {
       const active = stayTier === key ? ' active ring-2 ring-offset-1 ring-amber-400/80 shadow-md shadow-amber-400/25' : ' opacity-75 hover:opacity-100';
       const label = LUXURY_TIER_LABELS[key] || (PRICE_TIERS[key] ? PRICE_TIERS[key].label : key);
-      return '<button type="button" class="px-3 py-1.5 rounded-full border text-xs font-semibold transition-all ' + tierColor(key) + active + '" data-tier="' + key + '" aria-pressed="' + (stayTier === key ? 'true' : 'false') + '">' + label + '</button>';
+      const count = hotels.filter(function (s) { return s.tier === key; }).length;
+      return '<button type="button" class="dest-stay-filter-pill border transition-all ' + tierColor(key) + active + '" data-tier="' + key + '" aria-pressed="' + (stayTier === key ? 'true' : 'false') + '">' + label + ' (' + count + ')</button>';
     }).join('');
 
     const list = hotels.filter(function (s) { return stayTier === 'all' || s.tier === stayTier; });
     let cards;
-    // Bug 2 fix: replaced 🏨 emoji with SVG hotel icon
     const SVG_HOTEL = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg>';
     if (list.length === 0) {
       cards = '<div class="text-center py-16"><div class="mb-3 flex justify-center">' + SVG_HOTEL + '</div>' +
-        '<p class="text-gray-600 font-medium">No stays in this price category</p>' +
-        '<button class="mt-3 text-amber-400 text-sm font-semibold" data-tier="all">Show all stays</button></div>';
+        '<p class="text-gray-600 dark:text-gray-300 font-medium">No stays in this price category</p>' +
+        '<button type="button" class="mt-3 text-amber-500 hover:text-amber-400 text-sm font-semibold underline" data-tier="all">Show all stays</button></div>';
     } else {
       cards = list.map(function (s) {
         const tags = (s.tags || []).map(function (t) { return '<span class="text-xs bg-amber-500/15 text-amber-300 dark:text-amber-400 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold">' + esc(t) + '</span>'; }).join('');
         const ams = (s.amenities || []).map(function (a) { return '<span class="amenity-chip text-xs bg-gray-100 dark:bg-white/10 px-2.5 py-1 rounded-lg text-gray-700 dark:text-gray-300 font-medium">' + esc(a) + '</span>'; }).join('');
         const googleUrl = s.url || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name + ' ' + dest.title + ' ' + (dest.state || '')));
         const tierName = LUXURY_TIER_LABELS[s.tier] || (PRICE_TIERS[s.tier] ? PRICE_TIERS[s.tier].label : s.tier);
+        const ratingHtml = s.rating ? '<span class="text-xs font-bold px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-600 dark:text-amber-300 border border-amber-500/25 flex items-center gap-1">★ ' + s.rating + (s.reviews ? ' <span class="opacity-75 font-normal">(' + inr(s.reviews) + ')</span>' : '') + '</span>' : '';
         return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
           '<div class="min-w-0 flex-1">' +
           '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
-          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-amber-400">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-amber-400 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-bold text-gray-900 dark:text-white hover:text-amber-400 text-lg">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20"/><path d="M2 11h20"/><path d="M6 11V7a2 2 0 012-2h8a2 2 0 012 2v4"/><rect x="8" y="15" width="8" height="7" rx="1"/></svg> ' + esc(s.name) + ' <span class="text-xs text-amber-400 font-bold" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>' +
           '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full ' + tierColor(s.tier) + '">' + tierName + '</span>' +
-          '<span class="text-xs text-gray-500 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
+          '<span class="text-xs text-gray-500 dark:text-gray-400 capitalize bg-gray-100 dark:bg-white/10 px-2 py-0.5 rounded-md font-medium">' + esc(s.type) + '</span>' +
+          ratingHtml +
           '</div>' +
-          '<div class="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">' +
-          (tags ? '<span class="flex gap-1.5">' + tags + '</span>' : '') +
+          '<div class="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mb-3 flex-wrap">' +
+          (tags ? '<span class="flex gap-1.5 flex-wrap">' + tags + '</span>' : '') +
           '</div>' +
           '<div class="flex flex-wrap gap-1.5">' + ams + '</div>' +
           '</div>' +
@@ -1589,19 +2110,234 @@ function main(dest, idx) {
           '<span class="text-2xl font-extrabold text-gray-900 dark:text-white">₹' + inr(s.priceMin) + '</span>' +
           '<span class="text-gray-400 text-xs block">' + (s.priceMax && s.priceMax > s.priceMin ? 'to ₹' + inr(s.priceMax) + ' / night' : 'starting / night') + '</span>' +
           '</div>' +
-          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20">Google Maps ↗</a>' +
+          '<a href="' + esc(googleUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2.5 flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20 min-h-[44px]">Directions &amp; Map ↗<span class="sr-only"> (opens in a new tab)</span></a>' +
           '</div>' +
           '</div></div>';
       }).join('');
       cards = '<div class="space-y-4">' + cards + '</div>';
     }
 
+    const areaMapUrl = 'https://www.google.com/maps/search/?api=1&query=Hotels+in+' + encodeURIComponent(dest.title + ' ' + (dest.state || ''));
+
+    const heroHeader =
+      '<div class="stays-luxury-header mb-8 p-6 sm:p-8 rounded-3xl relative overflow-hidden">' +
+      '<div class="stays-luxury-mesh" aria-hidden="true"></div>' +
+      '<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">' +
+      '<div class="max-w-2xl">' +
+      '<div class="stays-kicker-badge mb-3">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" class="text-amber-500 dark:text-amber-400 shrink-0" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' +
+      '<span>Verified Stays &amp; Sanctuaries</span>' +
+      '</div>' +
+      '<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-white font-display tracking-tight mb-2">' +
+      'Where to Stay in <span class="gold-gradient-text">' + esc(dest.title) + '</span>' +
+      '</h2>' +
+      '<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">' +
+      hotels.length + ' Curated heritage retreats, royal havelis, luxury resorts &amp; verified sanctuaries in ' + esc(dest.title) + '.' +
+      '</p>' +
+      '<div class="flex flex-wrap items-center gap-2">' +
+      '<span class="trust-chip"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Price Verified</span>' +
+      '<span class="trust-chip"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>GPS &amp; Maps Linked</span>' +
+      '<span class="trust-chip"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Tier Classified</span>' +
+      '<span class="trust-chip"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>Direct Navigation</span>' +
+      '</div>' +
+      '</div>' +
+      '<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 self-start lg:self-center">' +
+      '<a href="/hotels?destination=' + encodeURIComponent(dest.slug) + '" class="stays-hero-btn stays-hero-btn-primary">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>' +
+      '<span>Interactive Stays Map &amp; Directory</span>' +
+      '<span class="text-xs" aria-hidden="true">↗</span>' +
+      '</a>' +
+      '<a href="' + areaMapUrl + '" target="_blank" rel="noopener noreferrer" class="stays-hero-btn stays-hero-btn-secondary">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' +
+      '<span>Google Maps</span>' +
+      '<span class="text-xs" aria-hidden="true">↗</span>' +
+      '<span class="sr-only"> (opens in a new tab)</span>' +
+      '</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+
     document.getElementById('panel-stays').innerHTML =
-      '<div class="flex items-center justify-between mb-4"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Where to Stay in ' + esc(dest.title) + '</h2></div></div>' +
+      heroHeader +
       '<div class="flex gap-2 flex-wrap mb-6">' + allBtn + tierBtns + '</div>' + cards;
 
     document.querySelectorAll('#panel-stays [data-tier]').forEach(function (b) {
       b.addEventListener('click', function () { stayTier = b.getAttribute('data-tier'); renderStays(); });
+    });
+  }
+
+  // ─── DINING panel (Restaurants & Cafes) ─────────────────────
+  let diningLoaded = false;
+  let diningVenues = [];
+  let diningFilter = 'all';
+
+  async function renderDining() {
+    const panel = document.getElementById('panel-dining');
+    if (!panel) return;
+
+    if (!diningLoaded) {
+      panel.innerHTML = '<div class="text-center py-12"><p class="text-gray-400">Loading verified dining options...</p></div>';
+      try {
+        const res = await fetch('/data/restaurants/' + encodeURIComponent(dest.slug) + '.json');
+        if (res.ok) {
+          const data = await res.json();
+          diningVenues = (data.items || []).filter(function (r) {
+            const n = (r.name || '').toLowerCase();
+            return !n.includes('mens hostel') && !n.includes('womens hostel') && !n.includes('college') && !n.includes('boys hostel') && !n.includes('girls hostel');
+          }).map(function (r) {
+            return Object.assign({}, r, {
+              cuisine: Array.isArray(r.cuisine)
+                ? r.cuisine
+                : (typeof r.cuisine === 'string' ? r.cuisine.split(',').map(s => s.trim()).filter(Boolean) : [])
+            });
+          });
+        }
+      } catch (_) { }
+
+      // Also merge any curated restaurants defined on the destination object
+      if (Array.isArray(dest.restaurants) && dest.restaurants.length > 0) {
+        dest.restaurants.forEach(function (dr, i) {
+          const norm = (dr.name || '').toLowerCase().trim();
+          if (!diningVenues.some(v => (v.name || '').toLowerCase().trim() === norm)) {
+            diningVenues.unshift({
+              id: 'dest-curated-' + i,
+              name: dr.name,
+              category: dr.cuisine ? dr.cuisine.split(',')[0].trim() : 'Restaurant',
+              cuisine: typeof dr.cuisine === 'string' ? dr.cuisine.split(',').map(s => s.trim()) : (dr.cuisine || []),
+              rating: dr.rating || null,
+              priceForTwo: dr.priceForTwo || dr.price || null,
+              mustTry: dr.mustTry || null,
+              is_pure_veg: (dr.cuisine && dr.cuisine.toLowerCase().includes('veg')) || false,
+              address: dr.mustTry ? ('Must Try: ' + dr.mustTry) : (dest.title + ', ' + dest.state),
+              source: 'ExploreDesh Curated'
+            });
+          }
+        });
+      }
+
+      diningLoaded = true;
+    }
+
+    const areaDiningUrl = 'https://www.google.com/maps/search/?api=1&query=Restaurants+in+' + encodeURIComponent(dest.title + ' ' + (dest.state || ''));
+
+    const profile = REGIONAL_CUISINE_MAP[dest.state] || {
+      title: (dest.state || 'Regional') + ' Cuisine & Gastronomy',
+      desc: 'Authentic local culinary traditions, regional delicacies, and dining experiences.',
+      dishes: ['Traditional Thali', 'Local Specialties', 'Regional Street Food', 'Signature Sweets']
+    };
+
+    const regionalGuideHTML =
+      '<div class="card p-6 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent rounded-2xl border border-amber-500/20 mb-6">' +
+      '<div class="flex items-start justify-between gap-4 flex-wrap mb-3">' +
+      '<div>' +
+      '<span class="text-xs font-bold uppercase tracking-wider text-amber-500 dark:text-amber-400">Regional Gastronomy</span>' +
+      '<h3 class="text-xl font-bold text-gray-900 dark:text-white mt-1">' + esc(profile.title) + '</h3>' +
+      '</div>' +
+      '<a href="' + areaDiningUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 font-bold inline-flex items-center gap-1.5 shadow-md shadow-amber-500/20">Explore Area Dining on Map ↗</a>' +
+      '</div>' +
+      '<p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">' + esc(profile.desc) + '</p>' +
+      '<div class="flex items-center gap-2 flex-wrap">' +
+      '<span class="text-xs font-bold text-amber-600 dark:text-amber-400 mr-1">Signature Delicacies:</span>' +
+      profile.dishes.map(function (d) {
+        return '<span class="text-xs bg-amber-500/15 text-amber-600 dark:text-amber-300 border border-amber-500/30 px-2.5 py-1 rounded-full font-semibold">✦ ' + esc(d) + '</span>';
+      }).join('') +
+      '</div>' +
+      '</div>';
+
+    if (diningVenues.length === 0) {
+      panel.innerHTML =
+        '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Dining &amp; Local Cuisine in ' + esc(dest.title) + '</h2>' +
+        '<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Curated regional gastronomy &amp; verified eateries</p></div>' +
+        '<a href="' + areaDiningUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-xs px-4 py-2 inline-flex items-center gap-1.5 font-bold shrink-0">Open Area Map ↗</a></div>' +
+        regionalGuideHTML +
+        '<div class="text-center py-10 bg-white/5 rounded-2xl border border-white/10 p-6">' +
+        '<p class="text-sm text-gray-400 mb-4 max-w-lg mx-auto">Explore verified authentic restaurants, cafes, and traditional dhabas in and around ' + esc(dest.title) + ' on Google Maps.</p>' +
+        '<a href="' + areaDiningUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-5 py-2.5 font-bold inline-flex items-center gap-1.5">Discover ' + esc(dest.title) + ' Restaurants on Google Maps ↗</a>' +
+        '</div>';
+      return;
+    }
+
+    // Filter controls for destinations with verified venues
+    const filterBtns = [
+      { id: 'all', label: 'All Venues (' + diningVenues.length + ')' },
+      { id: 'veg', label: 'Pure Veg (' + diningVenues.filter(v => v.is_pure_veg).length + ')' },
+      { id: 'cafe', label: 'Cafes (' + diningVenues.filter(v => (v.category || '').toLowerCase() === 'cafe').length + ')' },
+      { id: 'restaurant', label: 'Restaurants (' + diningVenues.filter(v => (v.category || '').toLowerCase().includes('restaurant')).length + ')' }
+    ].filter(function (btn) {
+      return btn.id === 'all' || !btn.label.includes('(0)');
+    }).map(function (btn) {
+      const active = diningFilter === btn.id ? ' active ring-2 ring-offset-1 ring-amber-400/80 shadow-md shadow-amber-400/25' : ' opacity-75 hover:opacity-100';
+      return '<button type="button" class="px-3.5 py-1.5 rounded-full border text-xs font-semibold transition-all dest-filter-btn' + active + '" data-dining-filter="' + btn.id + '" aria-pressed="' + (diningFilter === btn.id ? 'true' : 'false') + '">' + btn.label + '</button>';
+    }).join('');
+
+    const filtered = diningVenues.filter(function (v) {
+      if (diningFilter === 'veg') return v.is_pure_veg;
+      if (diningFilter === 'cafe') return (v.category || '').toLowerCase() === 'cafe';
+      if (diningFilter === 'restaurant') return (v.category || '').toLowerCase().includes('restaurant');
+      return true;
+    });
+
+    const cards = filtered.map(function (r) {
+      const dirUrl = (r.latitude && r.longitude)
+        ? 'https://www.google.com/maps/dir/?api=1&destination=' + r.latitude + ',' + r.longitude
+        : ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(r.name + ' ' + dest.title + ' ' + (dest.state || '')));
+      const rawCuisines = Array.isArray(r.cuisine)
+        ? r.cuisine
+        : (typeof r.cuisine === 'string' ? r.cuisine.split(',').map(s => s.trim()) : []);
+      const cuisines = rawCuisines.map(function (c) {
+        return '<span class="text-xs bg-amber-500/15 text-amber-500 dark:text-amber-300 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-semibold capitalize">' + esc(c) + '</span>';
+      }).join('');
+      const vegBadge = r.is_pure_veg
+        ? '<span class="text-xs bg-green-500/15 text-green-600 dark:text-green-400 border border-green-500/30 px-2 py-0.5 rounded-full font-bold inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 inline-block" aria-hidden="true"></span>Pure Veg</span>'
+        : '';
+
+      const distText = r.distance_km ? (r.distance_km + ' km from destination center') : '';
+      const addrText = r.address || distText;
+
+      const metaRow = (r.rating || r.priceForTwo || r.mustTry) ? (
+        '<div class="flex items-center gap-3 flex-wrap text-xs mb-2">' +
+        (r.rating ? '<span class="px-2 py-0.5 rounded-md font-bold bg-amber-500/20 text-amber-300">★ ' + esc(String(r.rating)) + '</span>' : '') +
+        (r.priceForTwo ? '<span class="text-emerald-500 dark:text-emerald-400 font-semibold">₹' + esc(String(r.priceForTwo)) + ' for two</span>' : '') +
+        (r.mustTry ? '<span class="text-amber-600 dark:text-amber-300 font-medium">Must Try: ' + esc(String(r.mustTry)) + '</span>' : '') +
+        '</div>'
+      ) : '';
+
+      return '<div class="card p-5 bg-white dark:bg-slate-900/90 rounded-2xl border border-gray-100 dark:border-white/10 hover:border-amber-400/50 hover:shadow-xl transition-all group">' +
+        '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">' +
+        '<div class="min-w-0 flex-1">' +
+        '<div class="flex items-center gap-2.5 flex-wrap mb-2">' +
+        '<h3 class="font-bold text-gray-900 dark:text-white text-lg">' + esc(r.name) + '</h3>' +
+        '<span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-orange-500/15 text-orange-400 border border-orange-500/30">' + esc(r.category || 'Restaurant') + '</span>' +
+        vegBadge +
+        '</div>' +
+        metaRow +
+        (addrText ? '<p class="text-xs text-gray-500 mb-3">' + esc(addrText) + '</p>' : '') +
+        (cuisines ? '<div class="flex flex-wrap gap-1.5">' + cuisines + '</div>' : '') +
+        '</div>' +
+        '<div class="shrink-0 flex items-center gap-2">' +
+        (r.phone ? '<a href="tel:' + esc(r.phone) + '" class="btn btn-outline text-xs px-3 py-2 font-bold">Call</a>' : '') +
+        '<a href="' + dirUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20">Directions &amp; Map ↗</a>' +
+        '</div>' +
+        '</div></div>';
+    }).join('');
+
+    panel.innerHTML =
+      '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6"><div><h2 class="text-2xl font-bold text-gray-900 dark:text-white">Dining &amp; Local Cuisine in ' + esc(dest.title) + '</h2>' +
+      '<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">' + diningVenues.length + ' verified venues catalogued</p></div>' +
+      '<div class="flex items-center gap-2 flex-wrap">' +
+      '<a href="/restaurants?d=' + encodeURIComponent(dest.slug) + '" class="btn btn-primary text-xs px-4 py-2 inline-flex items-center gap-1.5 font-bold shadow-md shadow-amber-500/20">Interactive Dining Map &amp; Venues ↗</a>' +
+      '<a href="' + areaDiningUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-xs px-4 py-2 inline-flex items-center gap-1.5 font-bold shrink-0">Open Area Map ↗</a>' +
+      '</div></div>' +
+      regionalGuideHTML +
+      (filterBtns ? '<div class="flex gap-2 flex-wrap mb-6">' + filterBtns + '</div>' : '') +
+      '<div class="space-y-4">' + cards + '</div>' +
+      '<p class="text-xs text-gray-500 dark:text-gray-400 mt-6 text-center">Verified dining data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="underline hover:text-amber-400">OpenStreetMap contributors</a> under ODbL license.</p>';
+
+    panel.querySelectorAll('[data-dining-filter]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        diningFilter = b.getAttribute('data-dining-filter');
+        renderDining();
+      });
     });
   }
 
@@ -2134,19 +2870,19 @@ function main(dest, idx) {
     if (reachCity !== 'all') {
       const target = routes.find(function (r) { return r.from === reachCity; });
       if (target) {
-        let recMode = '🚗 Direct Drive / Bus';
+        let recMode = '<span class="inline-flex items-center gap-1.5">' + icon('car', { size: 14 }) + 'Direct Drive / Bus</span>';
         let recBadge = 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
         if (target.distance > 700 && reach.nearestAirport && reach.nearestAirport.name) {
-          recMode = '✈️ Flight to ' + esc(reach.nearestAirport.name) + ' (' + reach.nearestAirport.distance + ' km away) + Taxi';
+          recMode = '<span class="inline-flex items-center gap-1.5">' + icon('plane', { size: 14 }) + 'Flight to ' + esc(reach.nearestAirport.name) + ' (' + reach.nearestAirport.distance + ' km away) + Taxi</span>';
           recBadge = 'bg-blue-500/20 text-blue-300 border-blue-500/40';
         } else if (target.distance > 300 && reach.nearestRailway && reach.nearestRailway.name) {
-          recMode = '🚂 Express Train to ' + esc(reach.nearestRailway.name) + ' (' + reach.nearestRailway.distance + ' km away) or 🚗 Drive';
+          recMode = '<span class="inline-flex items-center gap-1.5">' + icon('train', { size: 14 }) + 'Express Train to ' + esc(reach.nearestRailway.name) + ' (' + reach.nearestRailway.distance + ' km away) or Drive</span>';
           recBadge = 'bg-purple-500/20 text-purple-300 border-purple-500/40';
         } else if (target.distance > 700) {
-          recMode = '✈️ Flight + Taxi';
+          recMode = '<span class="inline-flex items-center gap-1.5">' + icon('plane', { size: 14 }) + 'Flight + Taxi</span>';
           recBadge = 'bg-blue-500/20 text-blue-300 border-blue-500/40';
         } else if (target.distance > 300) {
-          recMode = '🚂 Express Train or 🚗 Drive';
+          recMode = '<span class="inline-flex items-center gap-1.5">' + icon('train', { size: 14 }) + 'Express Train or Drive</span>';
           recBadge = 'bg-purple-500/20 text-purple-300 border-purple-500/40';
         }
         selectedBanner = '<div class="card p-4 mb-6 bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 border border-emerald-500/30 rounded-2xl text-slate-100 shadow-xl">' +
@@ -2166,7 +2902,7 @@ function main(dest, idx) {
       }
     }
 
-    // Bug 20 fix: replaced ✈️ 🚂 🚗 emojis with inline SVGs in reach panel
+    // Bug 20 fix: replaced emojis with inline SVGs in reach panel
     const SVG_PLANE = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2A1 1 0 0 0 1 7.2l2.4 2.4 4.8-.8L3.5 17.8l2.3 2.3 7.5-4.8-.8 4.8 2.4 2.4a1 1 0 0 0 1-.8z"/></svg>';
     const SVG_TRAIN = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M9 3v16M15 3v16M4 11h16M4 7h16"/><path d="m8 20-1 2M17 20l1 2"/></svg>';
     const SVG_METRO = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16M12 3v8M8 19l-3 3M16 19l3 3M8 15h.01M16 15h.01"/></svg>';
@@ -2194,8 +2930,8 @@ function main(dest, idx) {
       '</div>' +
       '<div class="overflow-x-auto"><table class="route-table"><thead><tr><th>From (City & State)</th><th>Distance</th><th>By Road</th><th>By Train</th><th>By Air</th><th>Via</th></tr></thead>' +
       '<tbody>' + rows + '</tbody></table></div></div>' +
-      (reach && reach.roadNote ? '<div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3"><span class="text-xl shrink-0">⚠️</span>' +
-        '<div><p class="font-semibold text-amber-900 text-sm mb-1">Road Advisory</p><p class="text-amber-800 text-sm">' + esc(reach.roadNote) + '</p></div></div>' : '');
+      (reach && reach.roadNote ? '<div class="bg-amber-500/10 border border-amber-500/25 rounded-xl p-4 flex items-start gap-3"><span class="text-amber-500 shrink-0 mt-0.5">' + icon('alert-triangle', { size: 18 }) + '</span>' +
+        '<div><p class="font-bold text-amber-500 dark:text-amber-400 text-xs uppercase tracking-wider mb-1">Road Advisory</p><p class="text-gray-700 dark:text-gray-200 text-sm leading-relaxed">' + esc(reach.roadNote) + '</p></div></div>' : '');
 
     const sel = document.getElementById('reachCity');
     if (sel) sel.addEventListener('change', function () { reachCity = sel.value; renderReach(); });
@@ -2261,10 +2997,19 @@ function main(dest, idx) {
       '<span>Places</span>' +
       '<span class="tab-badge" aria-label="' + pc + ' places">' + pc + '</span>' +
       '</button>' +
+      '<button type="button" role="tab" id="tab-itinerary" class="dest-quick-pill" data-navtab="itinerary" aria-controls="panel-itinerary" aria-selected="false" tabindex="-1">' +
+      '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>' +
+      '<span>Itinerary</span>' +
+      '<span class="tab-badge text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Dynamic</span>' +
+      '</button>' +
       '<button type="button" role="tab" id="tab-stays" class="dest-quick-pill" data-navtab="stays" aria-controls="panel-stays" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>' +
       '<span>Stays</span>' +
       '<span class="tab-badge" aria-label="' + sc + ' stays">' + sc + '</span>' +
+      '</button>' +
+      '<button type="button" role="tab" id="tab-dining" class="dest-quick-pill" data-navtab="dining" aria-controls="panel-dining" aria-selected="false" tabindex="-1">' +
+      '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v6a3 3 0 0 1-3 3 3 3 0 0 1-3-3V2"/><path d="M15 2v10"/><path d="M12 12v8a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-8"/><path d="M6 2v20"/><path d="M9 2v4a3 3 0 0 1-6 0V2"/></svg>' +
+      '<span>Dining</span>' +
       '</button>' +
       '<button type="button" role="tab" id="tab-budget" class="dest-quick-pill" data-navtab="budget" aria-controls="panel-budget" aria-selected="false" tabindex="-1">' +
       '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>' +
@@ -2284,7 +3029,7 @@ function main(dest, idx) {
 
   // ─── Tab Navigation ────────────────────────────────────
   function setTab(name) {
-    var tabs = ['overview', 'places', 'stays', 'budget', 'reach', 'map'];
+    var tabs = ['overview', 'places', 'itinerary', 'stays', 'dining', 'budget', 'reach', 'map'];
 
     // Update tab buttons: active class + aria-selected
     document.querySelectorAll('[data-navtab]').forEach(function (b) {
@@ -2318,6 +3063,9 @@ function main(dest, idx) {
     }
 
     if (name === 'map') initMap();
+    if (name === 'dining') renderDining();
+    if (name === 'itinerary') renderItinerary();
+    if (name === 'stays') renderStays();
   }
 
   // Global event delegation for all subnav pill buttons
@@ -2357,6 +3105,7 @@ function main(dest, idx) {
   renderNav();
   renderOverview();
   renderPlaces();
+  renderItinerary();
   renderStays();
   renderBudget();
   renderReach();
@@ -2390,9 +3139,9 @@ function main(dest, idx) {
       refreshPlaceWeather();
       body.innerHTML =
         '<div class="flex items-center gap-3 mb-3">' +
-        '<span class="text-4xl leading-none">' + info[1] + '</span>' +
-        '<div><div class="text-3xl font-bold text-gray-900 leading-none">' + temp + '°C</div>' +
-        '<div class="text-xs text-gray-500 mt-1">' + info[0] + '</div></div>' +
+        '<div class="shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20">' + info[1] + '</div>' +
+        '<div><div class="text-3xl font-bold text-gray-900 dark:text-white leading-none font-display">' + temp + '°C</div>' +
+        '<div class="text-xs text-gray-500 dark:text-slate-400 mt-1 font-medium">' + info[0] + '</div></div>' +
         '</div>' +
         '<div class="grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs">' +
         '<div class="flex justify-between"><span class="text-gray-500">Feels like</span><span class="font-medium">' + feels + '°C</span></div>' +
@@ -2451,7 +3200,7 @@ function main(dest, idx) {
     }, 1000);
   })();
 
-  // delegated clicks inside overview: "See all / View all" tabs + Top Places cards
+  // delegated clicks & keyboard navigation inside overview: dossier cards & tabs
   document.getElementById('panel-overview').addEventListener('click', function (e) {
     const goto = e.target.closest('[data-goto]');
     if (goto) { setTab(goto.getAttribute('data-goto')); return; }
@@ -2460,6 +3209,12 @@ function main(dest, idx) {
   });
   document.getElementById('panel-overview').addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' && e.key !== ' ') return;
+    const goto = e.target.closest('[data-goto]');
+    if (goto) {
+      e.preventDefault();
+      setTab(goto.getAttribute('data-goto'));
+      return;
+    }
     const top = e.target.closest('[data-topidx]');
     if (top) { e.preventDefault(); openPlaceModal(places[parseInt(top.getAttribute('data-topidx'), 10)]); }
   });
@@ -2592,7 +3347,7 @@ function main(dest, idx) {
     if (!el || pModal.style.display === 'none') return;
     if (!latestWeather) { el.textContent = 'Loading…'; return; }
     const w = latestWeather;
-    el.innerHTML = '<span class="text-xl mr-1">' + w.emoji + '</span>' +
+    el.innerHTML = '<span class="inline-flex items-center mr-1.5 align-middle">' + (w.emoji || '') + '</span>' +
       '<span class="font-bold text-gray-900">' + w.temp + '°C</span> · ' + w.label +
       ' · feels ' + w.feels + '°C · humidity ' + w.humidity + '% · wind ' + w.wind + ' km/h';
   }
@@ -3018,7 +3773,7 @@ function main(dest, idx) {
         <div class="space-y-1 mt-1">
           ${routes || '<p class="text-xs text-gray-400">Road accessible. Check local weather in winter.</p>'}
         </div>
-        ${reach.roadNote ? `<p class="text-[11px] text-amber-300/90 mt-2">⚠️ <em>${esc(reach.roadNote)}</em></p>` : ''}
+        ${reach.roadNote ? `<p class="text-[11px] text-amber-300/90 mt-2 flex items-center gap-1.5">${icon('alert-triangle', { size: 13, cls: 'shrink-0 text-amber-400' })} <em>${esc(reach.roadNote)}</em></p>` : ''}
       </div>
 
       <div class="cheat-section">

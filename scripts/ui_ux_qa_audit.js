@@ -17,6 +17,8 @@ const HTML_FILES = [
   'contact.html',
   'privacy.html',
   'terms.html',
+  'hotels.html',
+  'restaurants.html',
   '404.html'
 ];
 
@@ -24,7 +26,8 @@ const CSS_FILES = [
   'css/styles.css',
   'css/explore-immersive.css',
   'css/destination-immersive.css',
-  'css/glass-immersive.css'
+  'css/glass-immersive.css',
+  'css/discovery-places.css'
 ];
 
 console.log('================================================================');

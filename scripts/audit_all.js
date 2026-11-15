@@ -3,10 +3,11 @@
  * ============================================================
  * Master Unified Audit Runner for ExploreDesh
  *
- * Runs all 3 primary production audit suites:
+ * Runs all 4 primary production audit suites:
  *   1. UI/UX Pro Max QA Audit (scripts/ui_ux_qa_audit.js)
  *   2. Technical SEO & Indexing Audit (scripts/seo_audit.js)
  *   3. Media & Destination Integrity Audit (scripts/final-repository-audit.js)
+ *   4. Client-Side Security & Vulnerability Audit (scripts/security_audit.js)
  *
  * Generates an executive pass/fail scorecard and platform health summary.
  */
@@ -18,17 +19,18 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 
 console.log('================================================================');
-console.log('🌟 EXPLOREDESH TRIPLE AUDIT SUITE — MASTER RUNNER');
+console.log('🌟 EXPLOREDESH MASTER AUDIT SUITE — QUAD-PILLAR RUNNER');
 console.log('================================================================\n');
 
 const results = {
   uiUx: { status: 'PENDING', output: '' },
   seo: { status: 'PENDING', output: '' },
-  media: { status: 'PENDING', output: '' }
+  media: { status: 'PENDING', output: '' },
+  security: { status: 'PENDING', output: '' }
 };
 
 // 1. UI/UX QA Audit
-console.log('--- [1/3] RUNNING UI/UX QA AUDIT ---');
+console.log('--- [1/4] RUNNING UI/UX QA AUDIT ---');
 try {
   const out = execSync('node scripts/ui_ux_qa_audit.js', { cwd: ROOT, encoding: 'utf8' });
   results.uiUx.output = out;
@@ -41,7 +43,7 @@ try {
 }
 
 // 2. SEO & Indexing Audit
-console.log('\n--- [2/3] RUNNING TECHNICAL SEO & INDEXING AUDIT ---');
+console.log('\n--- [2/4] RUNNING TECHNICAL SEO & INDEXING AUDIT ---');
 try {
   const out = execSync('node scripts/seo_audit.js', { cwd: ROOT, encoding: 'utf8' });
   const regOut = execSync('node scripts/seo_regression_guard.js', { cwd: ROOT, encoding: 'utf8' });
@@ -56,7 +58,7 @@ try {
 }
 
 // 3. Media & Destination Integrity Audit
-console.log('\n--- [3/3] RUNNING MEDIA & DESTINATION INTEGRITY AUDIT ---');
+console.log('\n--- [3/4] RUNNING MEDIA & DESTINATION INTEGRITY AUDIT ---');
 try {
   const out = execSync('node scripts/final-repository-audit.js', { cwd: ROOT, encoding: 'utf8' });
   results.media.output = out;
@@ -68,11 +70,25 @@ try {
   console.log(results.media.output);
 }
 
+// 4. Security & Vulnerability Audit
+console.log('\n--- [4/4] RUNNING SECURITY & VULNERABILITY AUDIT ---');
+try {
+  const out = execSync('node scripts/security_audit.js', { cwd: ROOT, encoding: 'utf8' });
+  results.security.output = out;
+  results.security.status = out.includes('ZERO CRITICAL SECURITY VULNERABILITIES DETECTED') ? 'PASS' : 'WARN';
+  console.log(out);
+} catch (err) {
+  results.security.status = 'FAIL';
+  results.security.output = err.stdout || err.message;
+  console.error(results.security.output);
+}
+
 // Scorecard Summary
 console.log('\n================================================================');
-console.log('📊 TRIPLE AUDIT SCORECARD');
+console.log('📊 QUAD-PILLAR PLATFORM HEALTH SCORECARD');
 console.log('================================================================');
 console.log(`1. UI/UX Pro Max QA Audit:      [ ${results.uiUx.status} ]`);
 console.log(`2. Technical SEO & Indexing:     [ ${results.seo.status} ]`);
 console.log(`3. Media & Image Integrity:      [ ${results.media.status} ]`);
+console.log(`4. Security & Vulnerability:     [ ${results.security.status} ]`);
 console.log('================================================================\n');

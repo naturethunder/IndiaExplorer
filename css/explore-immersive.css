@@ -165,8 +165,7 @@ body.explore-immersive :focus-visible {
   height: 8px;
   border-radius: 50%;
   background-color: var(--exp-emerald-light);
-  box-shadow: 0 0 10px var(--exp-emerald-light);
-  animation: pulseDot 2s infinite;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes pulseDot {
@@ -217,9 +216,7 @@ body.explore-immersive :focus-visible {
 .gold-gradient-text {
   font-style: italic;
   font-weight: 600;
-  background: linear-gradient(135deg, var(--exp-gold-light) 0%, var(--exp-gold-base) 60%, #d4a034 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #F59E0B;
 }
 
 .explore-hero-desc {
@@ -1584,6 +1581,23 @@ html[data-theme="light"] select option {
   color: var(--exp-emerald-light);
 }
 
+.dest-card-amenity-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(245, 197, 66, 0.08);
+  border: 1px solid rgba(245, 197, 66, 0.2);
+  font-size: 11px;
+  font-weight: 600;
+  color: #FCD34D;
+}
+
+.dest-card-amenity-hint svg {
+  color: #F5C542;
+}
+
 .dest-card-desc {
   font-size: 13px;
   line-height: 1.55;
@@ -1725,8 +1739,7 @@ html[data-theme="light"] .load-more-luxury-btn,
 [data-theme="light"] .load-more-luxury-btn {
   background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%) !important;
   color: var(--white) !important;
-  border: 1.5px solid var(--text) !important;
-  border-bottom: 3px solid #D97706 !important;
+  border: 1.5px solid #D97706 !important;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.22), 0 2px 6px rgba(0, 0, 0, 0.08) !important;
 }
 
@@ -1735,11 +1748,10 @@ html[data-theme="light"] .load-more-luxury-btn:active,
 [data-theme="light"] .load-more-luxury-btn:hover,
 [data-theme="light"] .load-more-luxury-btn:active {
   background: linear-gradient(135deg, #0F172A 0%, #020617 100%) !important;
-  color: #FDE68A !important;
-  border-color: #B45309 !important;
-  border-bottom: 3px solid #F5C542 !important;
+  color: #FEF3C7 !important;
+  border-color: #F59E0B !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.35), 0 0 16px rgba(245, 197, 66, 0.35) !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.35), 0 4px 14px rgba(245, 158, 11, 0.25) !important;
 }
 
 html[data-theme="light"] .load-more-badge,
@@ -2067,18 +2079,6 @@ html[data-theme="light"] body.explore-immersive .explore-hero-display .hero-line
   text-shadow: none !important;
 }
 
-html[data-theme="light"] body.explore-immersive .calligraphy-kicker {
-  color: #92400E !important;
-  -webkit-text-fill-color: #92400E !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  background-clip: unset !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-  text-shadow: none !important;
-  filter: none !important;
-}
-
 html[data-theme="light"] body.explore-immersive .explore-eyebrow-pill {
   background: rgba(245, 197, 66, 0.14) !important;
   border: 1px solid rgba(217, 119, 6, 0.35) !important;
@@ -2370,6 +2370,18 @@ html[data-theme="light"] body.explore-immersive .dest-best-season {
 
 html[data-theme="light"] body.explore-immersive .dest-best-season svg {
   color: #92400E !important;
+}
+
+html[data-theme="light"] body.explore-immersive .dest-card-amenity-hint {
+  background: #FFFBEB !important;
+  color: #92400E !important;
+  font-weight: 700 !important;
+  font-size: 11.5px !important;
+  border: 1px solid rgba(217, 119, 6, 0.35) !important;
+}
+
+html[data-theme="light"] body.explore-immersive .dest-card-amenity-hint svg {
+  color: #D97706 !important;
 }
 
 html[data-theme="light"] body.explore-immersive .dest-card-footer {

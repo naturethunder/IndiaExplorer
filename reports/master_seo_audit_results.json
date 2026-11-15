@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T14:40:13.323Z",
+  "timestamp": "2026-11-15T21:09:07.656Z",
   "architecture": {},
   "robotsTxt": {
     "passed": [
@@ -26,7 +26,7 @@
     "warnings": []
   },
   "sitemaps": {
-    "totalUrls": 2453,
+    "totalUrls": 2457,
     "totalImages": 11980,
     "sitemaps": [
       {
@@ -38,14 +38,14 @@
       },
       {
         "file": "sitemap-main.xml",
-        "locCount": 5,
+        "locCount": 7,
         "imgCount": 0,
         "hasXmlDeclaration": true,
         "hasNamespace": true
       },
       {
         "file": "sitemap-states.xml",
-        "locCount": 52,
+        "locCount": 54,
         "imgCount": 0,
         "hasXmlDeclaration": true,
         "hasNamespace": true
@@ -85,20 +85,20 @@
   },
   "templates": {
     "index.html": {
-      "title": "ExploreDesh — Discover Incredible India",
-      "titleLength": 39,
-      "desc": "Discover India",
-      "descLength": 14,
+      "title": "ExploreDesh — India's Hidden Destinations &amp; Sanctuaries",
+      "titleLength": 59,
+      "desc": "Uncover India",
+      "descLength": 13,
       "canonical": "https://exploredesh.com/",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
-      "jsonLdCount": 2
+      "jsonLdCount": 3
     },
     "destinations.html": {
       "title": "All Destinations — ExploreDesh | Complete Catalogue of Bharat",
       "titleLength": 61,
-      "desc": "Discover 2,396 destinations across 36 states & UTs of India. Filter by category, season, state, and budget with verified photography and travel guides.",
-      "descLength": 151,
+      "desc": "Discover curated destinations across 36 states & UTs of India. Filter by category, season, state, and budget with verified photography and travel guides.",
+      "descLength": 153,
       "canonical": "https://exploredesh.com/destinations",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
@@ -112,7 +112,7 @@
       "canonical": null,
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
-      "jsonLdCount": 0
+      "jsonLdCount": 1
     },
     "about.html": {
       "title": "About Us — ExploreDesh",
@@ -132,7 +132,7 @@
       "canonical": "https://exploredesh.com/contact",
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "h1Count": 1,
-      "jsonLdCount": 0
+      "jsonLdCount": 1
     },
     "ai-finder.html": {
       "title": "Trip Planner — ExploreDesh",

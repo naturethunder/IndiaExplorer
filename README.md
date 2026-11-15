@@ -4,9 +4,9 @@
 
 
 # ExploreDesh — Discover Incredible India
-> **Platform Status (2026-11-05 Phase 132 rev-86):** **2,396 destinations** (14,037 places, 10,439 verified authentic stays across all 36 states & UTs). 100% landmark-verified photography with **67,952 unique photos catalog-wide**. **Comprehensive Zero-Collision Eradication —** Eradicated all duplicate collisions across the catalog (cross-destination duplicate collision rate is **EXACTLY 0** across all 2,396 files). Signature 3D Tilted/Fan Card Stacking Carousel strictly preserved and interactive in Popular Destinations with luminous 24K imperial gold medallion navigation buttons, outward deck framing, and `transform-style: flat` depth hierarchy with 240px separation (`translateZ(120px)` / `translateZ(-120px)` and `z-index: 50 / 10`) guaranteeing that side cards remain strictly in the background on mobile. Master regression guard 100% green (71/71 tests passed, Score: **100/100**), Full Repository Integrity Audit 100% green (2,396/2,396 passed, 0 violations). Total indexed URLs: **2,455** across 6 XML sitemaps with **11,980 indexed images**.
+> **Platform Status (2026-11-16 Phase 134 rev-88):** **2,396 destinations** (14,037 places, 10,439 verified authentic stays, plus dedicated Hotels & Restaurants discovery engines across all 36 states & UTs). 100% landmark-verified photography with **67,900 unique photos catalog-wide**. **Comprehensive Zero-Collision Eradication —** Eradicated all duplicate collisions across the catalog (cross-destination duplicate collision rate is **EXACTLY 0** across all 2,396 files). Signature 3D Tilted/Fan Card Stacking Carousel strictly preserved and interactive in Popular Destinations with luminous 24K imperial gold medallion navigation buttons, outward deck framing, and `transform-style: flat` depth hierarchy with 240px separation (`translateZ(120px)` / `translateZ(-120px)` and `z-index: 50 / 10`) guaranteeing that side cards remain strictly in the background on mobile. Master regression guard 100% green (81/81 tests passed, Score: **100/100**), Full Repository Integrity Audit 100% green (2,396/2,396 passed, 0 violations), Client-Side Security & Vulnerability Audit 100% green (27/27 checks passed). Total indexed URLs: **2,457** across 6 XML sitemaps with **11,980 indexed images**.
 
-> **Image & Design Pipeline Status (2026-11-05):** **Phase 132 rev-86 Certified —** Single-Line Mobile Split Headers (permanent `flex-direction: row !important; flex-wrap: nowrap !important;` across all phone resolutions for title & CTA buttons), Multi-Resolution Zero-Overlap Certification across 12 breakpoints (320px to 1920px+), 240Hz ProMotion Hardware Acceleration & GPU Compositing (`transform: translateZ(0); backface-visibility: hidden;`), Zero-Layout-Thrashing GSAP Engine (`quickTo` with cached bounding rects for 240Hz zero reflows), Fast-Path 200 KB Catalog Delivery & Background Index Promotion on `destinations.html`, Whole-Card Clickable 3D Coverflow Center Navigation, Similar Destinations High-Contrast Typography & Scrim Protection, Service Worker v1.8.1 Streamlined Core App Shell, Intelligent Local Dev Static Server Fallbacks (`destination.html?slug=`), Universal Cache Invalidation (`?v=20261105_inline_headers_v2`); **Phase 131 rev-85 Certified —** Platform Quality Elevation & Luxury UX Polish (viewport-fit=cover on all templates, WCAG light-theme contrast fix, carousel pause button, duplicate JSON-LD removal, dead code/asset cleanup, gold scroll progress bar, gold text selection, luxury scrollbar, back-to-top medallion button, print stylesheet, keyboard focus ring), Service Worker v1.7.8; **Phase 130 rev-84 Certified —** Full QA + UI/UX + SEO Audit (OG/Twitter social meta tags on all pages, emoji→SVG icon compliance across 6 JS files, 1,658-line dead `.budget-*` CSS purge, privacy policy third-party disclosure compliance, clean URL architecture `.html` extension fix), Service Worker v1.7.6, Budget Tab `.bd` redesign; **Phase 129 rev-83 Certified —** Universal Architectural De-Bulking & Editorial Unboxing (eliminated box-in-box card inception on `destination.html`, transformed narrative into an unboxed travel monograph with Playfair Display serif headings and relaxed line height), Monochromatic Champagne Gold Stat Dials (`.dest-summary-icon` unified across Altitude, Best Time, Summer Temp, Winter Temp), Sidebar Telemetry Compaction (`.info-card` padding 1.75rem → 1.15rem 1.35rem, reclaiming ~300px dead space), Weightless Frosted Glass Category Scroller & Anti-Collision (`padding: 6px 12px` prevents arrow overlap, eliminated chunky 2.5px bottom underlines, pure frosted glass hover in both themes), Homepage Button Purge (removed extra `[Explore the Complete Collection]` button); **Phase 128 rev-82 Certified —** Regional Corridors Filter System (*Northern Alpine* 174, *Royal Heritage* 252, *Coastal & Ghats* 1,294, *Seven Sisters* 117), Exact Cross-Page Metric Synchronization (2,396 Destinations, 36 States, 14,037 Places, 10,439 Stays);  8x Homepage Performance Acceleration (Window onload 7.6s → 947ms, 88% speedup), Service Worker Unwanted Reload Eradication, Below-the-Fold Lazy Loading Strict Enforcing, GSAP 60fps Scroll Engine Hardening (eliminated full-body background scrub, hardware-accelerated hero parallax, 3D tilt layer isolation, clearProps cleanup), About Page Manifesto Luxury 2-Column Grid Architecture (557px quote box, 779px chapter narrative); **Phase 126 rev-80 Certified —** Master Platform Extreme Audit & 24 Defect Remediation, State Sitemap Expansion to all 36 States/UTs (Chandigarh & Lakshadweep included, 2,455 URLs, 11,980 images), GSAP `quickTo()` Performance Engine, Popular Destinations Heading Size Normalization, High-Contrast 24K Gold Theme Toggle Moon/Sun Icon, Dynamic ARIA Mobile Drawer, Clean Canonical JSON-LD URLs, Safari `-webkit-backdrop-filter` hardening; **Phase 125 rev-79 Certified —** Luminous 24K Imperial Gold Carousel Medallions across all platform carousels, Outward Deck Framing on Desktop (`clamp(16px, calc(50% - 590px), calc(50% - 490px))`), Small-Screen `transform-style: flat` Stacking & 240px Depth Separation, Obsidian Gold Glass `Explore →` Action Buttons, Cache Purge (`?v=20261027_gold_luxury_v8`); **Phase 124 rev-78 Certified —** Homepage Hero Royal Typography & 24K Living Gold Shimmer (`Cinzel` + `Playfair Display`), Obsidian Glass Seal with 8-Pointed Gold Star, Editorial Sub-Lead Streamlining, Destinations Page Root Viewport Scroll Architecture (`overflow-x: clip`); **Phase 123 rev-77 Certified —** 100,000% Ultra-Luxury Editorial Standards, 3D Fan Carousel Preservation, Budget Price Tag Elimination (✦ Curated Sanctuary & Explore Sanctuary →), Hospitality Tier Elevation, Context-Aware Proximity with Pedestrian Walk Icons, Offline Field Dossier Nomenclature, Agra Fort Ground-Truth Restoration (5 HD Pexels captures); **Phase 122 rev-76 Certified —** Popular Destinations 3D Coverflow Zero-Collision Stabilization, GSAP Micro-Interaction De-confliction; **Phase 121 rev-74 Certified —** Ultra-Luxury GSAP Motion Engine & 3D Magnetic Cursor Tilt, Dual-Theme Liquid Glassmorphism; **Phase 120 rev-73 Certified —** "100,000% WOW" Editorial Stacked Header System; Total indexed images: **11,980 in Google Image Sitemaps** across **2,455 indexed URLs**.
+> **Image & Design Pipeline Status (2026-11-16):** **Phase 134 rev-88 Certified —** Deep Code Cleaning, Legacy Dead Code & Cruft Purge (~350 lines of obsolete CSS rules removed from `styles.css`, `destination-immersive.css`, `glass-immersive.css`, and `explore-immersive.css`; 22 dead test artifacts and screenshots purged from `reports/` freeing 12.04 MB; GSAP micro-interaction engine expanded to support hospitality and itinerary cards); **Phase 133 rev-87 Certified —** Dedicated Hospitality & Gastronomy discovery engines (`hotels.html` and `restaurants.html` with self-hosted Leaflet interactive property maps, multi-filter attributes, and curated data catalogs); Destination Detail Architectural Enrichment (`destination.html` with dedicated Dining & Gastronomy tab, Day-by-Day Curated Itineraries, Verified FAQ Accordion Engine with `FAQPage` schema.org JSON-LD injection, static fallback OpenGraph/Twitter social cards for instant crawler unfurls, and enhanced Google Maps action deep-links); Master Quad-Pillar Platform Health Certification (`scripts/audit_all.js` unifying UI/UX QA, Technical SEO, Media Integrity, and OWASP Security); Master Navigation & Clean Routing Sync (`js/components/layout.js`, `_redirects`, `sitemap-main.xml`); **Phase 132 rev-86 Certified —** Single-Line Mobile Split Headers (permanent `flex-direction: row !important; flex-wrap: nowrap !important;` across all phone resolutions for title & CTA buttons), Multi-Resolution Zero-Overlap Certification across 12 breakpoints (320px to 1920px+), 240Hz ProMotion Hardware Acceleration & GPU Compositing (`transform: translateZ(0); backface-visibility: hidden;`), Zero-Layout-Thrashing GSAP Engine (`quickTo` with cached bounding rects for 240Hz zero reflows), Fast-Path 200 KB Catalog Delivery & Background Index Promotion on `destinations.html`, Whole-Card Clickable 3D Coverflow Center Navigation, Similar Destinations High-Contrast Typography & Scrim Protection, Service Worker v1.8.1 Streamlined Core App Shell, Intelligent Local Dev Static Server Fallbacks (`destination.html?slug=`), Universal Cache Invalidation (`?v=20261105_inline_headers_v2`); **Phase 131 rev-85 Certified —** Platform Quality Elevation & Luxury UX Polish (viewport-fit=cover on all templates, WCAG light-theme contrast fix, carousel pause button, duplicate JSON-LD removal, dead code/asset cleanup, gold scroll progress bar, gold text selection, luxury scrollbar, back-to-top medallion button, print stylesheet, keyboard focus ring), Service Worker v1.7.8; **Phase 130 rev-84 Certified —** Full QA + UI/UX + SEO Audit (OG/Twitter social meta tags on all pages, emoji→SVG icon compliance across 6 JS files, 1,658-line dead `.budget-*` CSS purge, privacy policy third-party disclosure compliance, clean URL architecture `.html` extension fix), Service Worker v1.7.6, Budget Tab `.bd` redesign; **Phase 129 rev-83 Certified —** Universal Architectural De-Bulking & Editorial Unboxing (eliminated box-in-box card inception on `destination.html`, transformed narrative into an unboxed travel monograph with Playfair Display serif headings and relaxed line height), Monochromatic Champagne Gold Stat Dials (`.dest-summary-icon` unified across Altitude, Best Time, Summer Temp, Winter Temp), Sidebar Telemetry Compaction (`.info-card` padding 1.75rem → 1.15rem 1.35rem, reclaiming ~300px dead space), Weightless Frosted Glass Category Scroller & Anti-Collision (`padding: 6px 12px` prevents arrow overlap, eliminated chunky 2.5px bottom underlines, pure frosted glass hover in both themes), Homepage Button Purge (removed extra `[Explore the Complete Collection]` button); **Phase 128 rev-82 Certified —** Regional Corridors Filter System (*Northern Alpine* 174, *Royal Heritage* 252, *Coastal & Ghats* 1,294, *Seven Sisters* 117), Exact Cross-Page Metric Synchronization (2,396 Destinations, 36 States, 14,037 Places, 10,439 Stays);  8x Homepage Performance Acceleration (Window onload 7.6s → 947ms, 88% speedup), Service Worker Unwanted Reload Eradication, Below-the-Fold Lazy Loading Strict Enforcing, GSAP 60fps Scroll Engine Hardening (eliminated full-body background scrub, hardware-accelerated hero parallax, 3D tilt layer isolation, clearProps cleanup), About Page Manifesto Luxury 2-Column Grid Architecture (557px quote box, 779px chapter narrative); **Phase 126 rev-80 Certified —** Master Platform Extreme Audit & 24 Defect Remediation, State Sitemap Expansion to all 36 States/UTs (Chandigarh & Lakshadweep included, 2,455 URLs, 11,980 images), GSAP `quickTo()` Performance Engine, Popular Destinations Heading Size Normalization, High-Contrast 24K Gold Theme Toggle Moon/Sun Icon, Dynamic ARIA Mobile Drawer, Clean Canonical JSON-LD URLs, Safari `-webkit-backdrop-filter` hardening; **Phase 125 rev-79 Certified —** Luminous 24K Imperial Gold Carousel Medallions across all platform carousels, Outward Deck Framing on Desktop (`clamp(16px, calc(50% - 590px), calc(50% - 490px))`), Small-Screen `transform-style: flat` Stacking & 240px Depth Separation, Obsidian Gold Glass `Explore →` Action Buttons, Cache Purge (`?v=20261027_gold_luxury_v8`); **Phase 124 rev-78 Certified —** Homepage Hero Royal Typography & 24K Living Gold Shimmer (`Cinzel` + `Playfair Display`), Obsidian Glass Seal with 8-Pointed Gold Star, Editorial Sub-Lead Streamlining, Destinations Page Root Viewport Scroll Architecture (`overflow-x: clip`); **Phase 123 rev-77 Certified —** 100,000% Ultra-Luxury Editorial Standards, 3D Fan Carousel Preservation, Budget Price Tag Elimination (✦ Curated Sanctuary & Explore Sanctuary →), Hospitality Tier Elevation, Context-Aware Proximity with Pedestrian Walk Icons, Offline Field Dossier Nomenclature, Agra Fort Ground-Truth Restoration (5 HD Pexels captures); **Phase 122 rev-76 Certified —** Popular Destinations 3D Coverflow Zero-Collision Stabilization, GSAP Micro-Interaction De-confliction; **Phase 121 rev-74 Certified —** Ultra-Luxury GSAP Motion Engine & 3D Magnetic Cursor Tilt, Dual-Theme Liquid Glassmorphism; **Phase 120 rev-73 Certified —** "100,000% WOW" Editorial Stacked Header System; Total indexed images: **11,980 in Google Image Sitemaps** across **2,457 indexed URLs**.
 
 A luxury India travel-discovery platform. Browse **2,396 destinations**, filter by type / budget / state / travel-month, and open a per-destination page with a photo hero, places to visit, stays by budget, routes (with distance from major cities), an interactive Google Maps overview with direct directions, live weather, and dynamic similar recommendations.
 
@@ -27,8 +27,10 @@ A luxury India travel-discovery platform. Browse **2,396 destinations**, filter 
 
 ```bash
 node scripts/serve.js                        # → http://localhost:8080 (Start local web server)
-node scripts/seo_audit.js                    # → Technical SEO & Indexing Audit (61 checks)
-node scripts/seo_regression_guard.js         # → Master SEO Regression Guard (71 checks)
+node scripts/audit_all.js                    # → Master Quad-Pillar Audit Suite (UI/UX + SEO + Media + Security)
+node scripts/security_audit.js               # → Client-Side Security & OWASP Vulnerability Audit (27 checks)
+node scripts/seo_audit.js                    # → Technical SEO & Indexing Audit (60 checks)
+node scripts/seo_regression_guard.js         # → Master SEO Regression Guard (81 checks)
 node scripts/final-repository-audit.js       # → Master Repository Health & Invariant Audit
 node scripts/audit/master_seo_audit.js       # → Deep Master SEO & Parity Audit (2,396 destinations)
 node scripts/audit/check_broken_links.js     # → Relative Internal Link Integrity Scan
@@ -90,8 +92,10 @@ without adding a single HTML file:
 trip_planner/
 ├── index.html              # Home — GSAP hero parallax, category strip, interactive month showcase, SVG India map, featured grids
 ├── destinations.html       # Explore — Editorial hero with GSAP live counter, instant search, sticky category pills, dark filter rail
+├── hotels.html             # 🏨 Curated Stays — Dedicated hotel discovery engine, verified heritage/palace/retreat lodgings, Leaflet property map
+├── restaurants.html        # 🍽️ Gastronomy & Dining — Regional culinary heritage, iconic cafes, street food lanes, coastal cuisine
 ├── ai-finder.html          # ✨ AI Trip Finder — natural-language matcher, fully local & keyless
-├── destination.html        # ⭐ The ONE real detail page (all 2,396 render via ?slug=, GSAP parallax, weather, stays, routes & similar getaways)
+├── destination.html        # ⭐ The ONE real detail page (all 2,396 render via ?slug=, GSAP parallax, weather, stays, dining, itineraries, FAQs, routes)
 ├── about / privacy / terms / contact.html   # Company pages (contact form, no backend)
 ├── stubs/
 │   └── <slug>.html  (×2396)  # Redirect stubs → destination.html?slug=<slug>
@@ -99,14 +103,18 @@ trip_planner/
 ├── css/
 │   ├── styles.css          # Custom component classes (.card, .btn, carousels, …)
 │   ├── explore-immersive.css # Luxury editorial tokens & card styling for destinations catalog
-│   ├── destination-immersive.css # Dark glassmorphism & rich tab styling for destination detail pages
+│   ├── destination-immersive.css # Dark glassmorphism, dining, itineraries, FAQ accordions, and rich tab styling
+│   ├── discovery-places.css # Luxury styling for Hotels & Restaurants Discovery Portals & split map views
 │   ├── glass-immersive.css # Ambient dark glass theme system
+│   ├── leaflet.css         # Local self-hosted Leaflet mapping styles
 │   └── tailwind.css        # Static utility CSS
 │
 ├── data/                             # ← the data layer (JSON, no hardcoded content)
 │   ├── destinations/
 │   │   ├── index.json      # Light manifest: 2,396 summaries + filter meta (tiers/types/states/months)
 │   │   └── <slug>.json  (×2396)  # Full per-destination detail (schema below)
+│   ├── hotels/             # Curated hotel registries across all Indian destinations
+│   ├── restaurants/        # Authentic regional dining & culinary heritage registries
 │   ├── search-index.json   # AI-finder haystack: precomputed place/hotel names + tiers + text
 │   ├── bulk/<state>.json   # Bulk-ingest output, merged into DESTINATIONS by build-json-data.js
 │   └── coord-overrides.json  # Manual lat/lng/state fixes for bad upstream coords
@@ -114,6 +122,7 @@ trip_planner/
 ├── js/
 │   ├── data/api.js         # ⭐ The ONLY storage touchpoint — swap this for a backend
 │   ├── utils/format.js     # esc() / inr() / typeLabel()
+│   ├── vendor/leaflet.js   # Local self-hosted Leaflet map engine (zero CDN dependency)
 │   ├── components/
 │   │   ├── layout.js       # Navbar + footer + mobile-nav (mounted into #siteNav/#siteFooter/#siteMobileNav)
 │   │   ├── indiaMap.js     # Inline-SVG clickable state map (home "Explore India" section)
@@ -122,31 +131,37 @@ trip_planner/
 │   ├── pages/
 │   │   ├── home.js         # index.html (GSAP parallax, rotators, monthly picks)
 │   │   ├── explore.js      # destinations.html (GSAP counters, debounced filter engine)
+│   │   ├── hotels.js       # hotels.html (faceted stay filtering, Leaflet property pins, price brackets)
+│   │   ├── restaurants.js  # restaurants.html (cuisine filters, dietary tags, ambiance selection)
 │   │   ├── finder.js       # ai-finder.html (NLP matching, STOP_WORDS parser, itinerary extrapolation)
-│   │   ├── destination.js  # destination.html (detail tabs, Google Maps embed, stays, similar getaways)
+│   │   ├── destination.js  # destination.html (detail tabs, dining tab, curated itineraries, FAQ accordion, stays)
 │   │   ├── company.js      # about / privacy / terms
 │   │   └── contact.js      # contact.html (Web3Forms)
 │   ├── components/googleMapEmbed.js # Reusable lazy Google Maps embed component
 │
 ├── scripts/
 │   ├── serve.js            # ⭐ Zero-dependency static server (pure Node with Gzip & ETag)
+│   ├── audit_all.js        # Master Quad-Pillar Audit Suite (UI/UX QA + SEO + Media Integrity + OWASP Security)
+│   ├── security_audit.js   # Client-Side Security & OWASP Vulnerability Audit (27 automated security checks)
+│   ├── seo_audit.js        # Technical SEO and Google indexing auditor
+│   ├── seo_regression_guard.js # Master 81-rule SEO & architectural regression test suite
+│   ├── final-repository-audit.js # Full catalog invariant and collision auditor
+│   ├── ui_ux_qa_audit.js   # Automated UI/UX, responsive, and a11y QA audit
 │   ├── build-json-data.js  # Re-indexes search and manifest data (delegates to bulk/sync-index-and-search.js)
 │   ├── geo-reference.js    # Offline airports/railheads/cities → real nearest-reach + city routes
 │   ├── build-css.js        # Generates css/tailwind.css (static utility CSS)
 │   ├── build-india-map.js  # Generates data/india-map.js (state SVG paths for the home map)
 │   ├── build-stubs.js      # Regenerates the 2,396 redirect stubs
-│   ├── build-home-manifest.js # Recompiles lightweight home manifest (126KB payload)
+│   ├── build-home-manifest.js # Recompiles lightweight home manifest (219KB payload)
 │   ├── build-sitemap.js    # Regenerates master sitemap.xml and 5 modular sub-sitemaps
-│   ├── seo_regression_guard.js # Master 71-rule SEO & architectural regression test suite
-│   ├── final-repository-audit.js # Full catalog invariant and collision auditor
-│   ├── seo_audit.js        # Technical SEO and Google indexing auditor
-│   ├── ui_ux_qa_audit.js   # Automated UI/UX, responsive, and a11y QA audit
 │   ├── bulk/               # Bulk-ingest pipeline & sync-index-and-search.js
 │   └── build-destinations-doc.js   # Regenerates docs/DESTINATIONS.md
 │
 ├── CLAUDE.md               # 📘 Authoritative engineering guide — READ before changing code
 ├── README.md               # This file
-└── docs/ROADMAP.md · DESTINATIONS.md · AUDIT.md
+├── DESIGN.md               # 🎨 Master design system & tokens (dual-engine themes, components)
+├── PRODUCT.md              # 🎯 Product vision, users, principles, and strategic positioning
+└── docs/ROADMAP.md · DESTINATIONS.md · AUDIT.md · SEO-AUDIT.md
 ```
 
 ---
@@ -216,7 +231,7 @@ Full detail and rationale live in **[CLAUDE.md](CLAUDE.md)**.
 ## External services & Image Pipeline
 
 - **Open-Meteo** — live weather.
-- **Pexels and Unsplash High-Definition Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].image`, `topPlaces[].photos`, `hotels[].image`). Enforces zero-collision detection across 66,500+ repo URLs and strict banned-pattern filtering (zero portraits, selfies, mobs, vehicles, foreign monuments, or foreign stock photos).
+- **Pexels and Unsplash High-Definition Pipeline** — High-resolution verified photography baked into destination JSONs (`heroImage`, `gallery`, `topPlaces[].image`, `topPlaces[].photos`, `hotels[].image`). Enforces zero-collision detection across 67,900 unique photos catalog-wide and strict banned-pattern filtering (zero portraits, selfies, mobs, vehicles, foreign monuments, or foreign stock photos).
 - **Wikimedia Commons** — Strictly banned as a direct hotlink source across all overhauled destinations (eliminates CDN IP rate-limiting HTTP 429 errors). All imagery is sourced from Pexels and Unsplash APIs exclusively.
 - **Google Maps** — interactive destination maps and directions (via zero-dependency lazy embed component).
 - **Web3Forms** — contact-form email delivery. A live access key is set in `js/pages/contact.js`;

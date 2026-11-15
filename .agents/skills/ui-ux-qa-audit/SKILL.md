@@ -1,6 +1,6 @@
 ---
 name: ui-ux-qa-audit
-description: "Comprehensive UI/UX, Accessibility, and Design QA Audit skill for ExploreDesh. Audits all 8 HTML platform pages and 4 CSS stylesheets across 7 priority categories: Accessibility (WCAG AAA contrast, ARIA landmarks, alt attributes), Touch & Interaction (44px min touch targets), Performance (preloads, font-display, image loading), Layout & Responsive (390px, 768px, 1440px breakpoints, zero horizontal overflow), Typography & Color (WCAG contrast, light/dark theme consistency), Motion & Animation (prefers-reduced-motion), and Forms & Feedback. Run whenever checking design compliance or after making UI changes."
+description: "Comprehensive UI/UX, Accessibility, and Design QA Audit skill for ExploreDesh. Audits all 10 HTML platform pages and 5 CSS stylesheets across 7 priority categories: Accessibility (WCAG AAA contrast, ARIA landmarks, alt attributes), Touch & Interaction (44px min touch targets), Performance (preloads, font-display, image loading), Layout & Responsive (390px, 768px, 1440px breakpoints, zero horizontal overflow), Typography & Color (WCAG contrast, light/dark theme consistency), Motion & Animation (prefers-reduced-motion), and Forms & Feedback. Run whenever checking design compliance or after making UI changes."
 ---
 
 # UI/UX & Accessibility QA Audit Skill (`/ui-ux-qa-audit`)
@@ -9,8 +9,8 @@ This skill provides autonomous and manual quality assurance procedures to certif
 
 ## When to Run This Skill
 
-- After making any edits to HTML templates (`index.html`, `destinations.html`, `destination.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`).
-- After modifying core stylesheets (`css/styles.css`, `css/explore-immersive.css`, `css/destination-immersive.css`, `css/glass-immersive.css`).
+- After making any edits to HTML templates (`index.html`, `destinations.html`, `destination.html`, `hotels.html`, `restaurants.html`, `ai-finder.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`).
+- After modifying core stylesheets (`css/styles.css`, `css/explore-immersive.css`, `css/destination-immersive.css`, `css/glass-immersive.css`, `css/discovery-places.css`).
 - When validating Light Mode and Dark Mode theme parity.
 - Before committing UI changes or preparing for production release.
 

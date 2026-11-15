@@ -110,7 +110,7 @@ let totalSitemapUrls = 0;
   const count = (content.match(/<loc>/g) || []).length;
   totalSitemapUrls += count;
 });
-assert(totalSitemapUrls === 2455, `Total sitemapped URLs equals 2,455 (found: ${totalSitemapUrls})`);
+assert(totalSitemapUrls === 2457, `Total sitemapped URLs equals 2,457 (found: ${totalSitemapUrls})`);
 
 // 5. Robots.txt Directives
 const robotsPath = path.join(ROOT, 'robots.txt');
@@ -129,6 +129,8 @@ const CORE_HTML_PAGES = [
   { file: 'ai-finder.html', title: 'AI', canonical: 'https://exploredesh.com/ai-finder' },
   { file: 'privacy.html', title: 'Privacy Policy', canonical: 'https://exploredesh.com/privacy' },
   { file: 'terms.html', title: 'Terms', canonical: 'https://exploredesh.com/terms' },
+  { file: 'hotels.html', title: 'Curated Stays', canonical: 'https://exploredesh.com/hotels' },
+  { file: 'restaurants.html', title: 'Dining', canonical: 'https://exploredesh.com/restaurants' },
   { file: 'destination.html', title: 'Destination', dynamicCanonical: true }
 ];
 
@@ -136,7 +138,7 @@ CORE_HTML_PAGES.forEach(pg => {
   const p = path.join(ROOT, pg.file);
   assert(fs.existsSync(p), `${pg.file} exists`);
   const html = fs.readFileSync(p, 'utf8');
-  
+
   // Single H1 rule
   const h1Count = (html.match(/<h1[\s>]/gi) || []).length;
   assert(h1Count === 1, `${pg.file} contains exactly 1 <h1> heading (found: ${h1Count})`);

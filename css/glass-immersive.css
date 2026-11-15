@@ -1240,18 +1240,6 @@ html[data-theme="light"] body.glass-immersive .india-state[data-state="Delhi"].i
     font-size: clamp(1.4rem, 5.5vw, 1.85rem) !important;
     line-height: 1.15 !important;
   }
-
-  .calligraphy-kicker,
-  .calligraphy-eyebrow {
-    white-space: nowrap !important;
-    max-width: 100% !important;
-    font-size: clamp(1.05rem, 4.2vw, 1.35rem) !important;
-  }
-
-  .calligraphy-kicker::before,
-  .calligraphy-kicker::after {
-    width: 14px !important;
-  }
 }
 
 /* ─── Cartographic Political India Map Styling ─── */
@@ -2706,27 +2694,6 @@ body.glass-immersive #main {
    ROYAL CALLIGRAPHY & EDITORIAL SERIF ENHANCEMENTS
    ═══════════════════════════════════════════════════════════════ */
 
-body.glass-immersive .calligraphy-kicker,
-body.glass-immersive .calligraphy-eyebrow {
-  font-family: 'Pinyon Script', 'Alex Brush', cursive !important;
-  font-size: clamp(1.45rem, 2.2vw, 2.2rem) !important;
-  line-height: 1.65 !important;
-  padding-top: 6px !important;
-  padding-bottom: 8px !important;
-  padding-inline: 4px !important;
-  overflow: visible !important;
-  color: #F8D176 !important;
-  background: linear-gradient(135deg, #FFF8E1 0%, #F5C542 50%, #C4972B 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8)) !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.02em !important;
-}
-
 body.glass-immersive .trend-card .trend-card-title,
 body.glass-immersive .trend-card p.text-white.font-bold {
   font-family: 'Playfair Display', 'Bodoni Moda', Georgia, serif !important;
@@ -2983,41 +2950,13 @@ html[data-theme="light"] body.glass-immersive #heroTagline {
   filter: none !important;
 }
 
-/* Calligraphy Kickers in Light Mode */
-html[data-theme="light"] body.glass-immersive .calligraphy-kicker {
-  font-family: 'Alex Brush', 'Pinyon Script', cursive !important;
-  font-size: clamp(1.5rem, 2.4vw, 2.25rem) !important;
-  color: #78350F !important;
-  -webkit-text-fill-color: #78350F !important;
-  background: none !important;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9) !important;
-  filter: none !important;
-  letter-spacing: 0.03em !important;
-  -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility !important;
-}
-
 html[data-theme="light"] .gold-gradient-text {
   background: linear-gradient(135deg, #B45309 0%, #D97706 50%, #78350F 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
-/* Homepage Hero over Scrimmed Photo: Retains Luminous Gold & Calligraphy Contrast */
-html[data-theme="light"] body.glass-immersive .hero-home .calligraphy-kicker {
-  color: #FCD34D !important;
-  background: linear-gradient(135deg, #FFFBEB 0%, #FCD34D 50%, #F59E0B 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7) !important;
-  filter: none !important;
-}
-
-html[data-theme="light"] body.glass-immersive .hero-home .calligraphy-kicker::before,
-html[data-theme="light"] body.glass-immersive .hero-home .calligraphy-kicker::after {
-  background: linear-gradient(90deg, transparent, #F59E0B) !important;
-}
-
+/* Homepage Hero over Scrimmed Photo: Retains Luminous Gold Contrast */
 html[data-theme="light"] body.glass-immersive .hero-home .gold-gradient-text {
   background: linear-gradient(135deg, #FFFBEB 0%, #FCD34D 45%, #F59E0B 100%) !important;
   -webkit-background-clip: text !important;
@@ -3132,18 +3071,6 @@ html[data-theme="light"] body.glass-immersive .hero-title-brand {
   line-height: 1.1 !important;
   text-transform: uppercase !important;
   margin-top: 0.15rem !important;
-}
-
-body.glass-immersive .hero-editorial-lead,
-html[data-theme="light"] body.glass-immersive .hero-editorial-lead {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
-  font-size: clamp(0.92rem, 1.35vw, 1.12rem) !important;
-  font-weight: 350 !important;
-  line-height: 1.6 !important;
-  letter-spacing: 0.02em !important;
-  color: rgba(248, 250, 252, 0.88) !important;
-  -webkit-text-fill-color: rgba(248, 250, 252, 0.88) !important;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95) !important;
 }
 
 @media (max-width: 640px) {
@@ -5189,6 +5116,7 @@ html[data-theme="dark"] body.glass-immersive .monthly-header-right .btn-outline:
   color: #FFFFFF !important;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85) !important;
 }
+
 .popular-showcase-section .monthly-header-right .btn-outline {
   background: rgba(45, 38, 28, 0.70) !important;
   border: 1px solid rgba(212, 175, 55, 0.45) !important;
@@ -5602,7 +5530,8 @@ html[data-theme="light"] body.glass-immersive .popular-3d-dot:not(.is-active) {
 /* ─── Responsive: Tablet & Below (1023px and below) ─── */
 @media (max-width: 1023px) {
   .popular-3d-stage {
-    transform-style: flat !important; /* CRITICAL: Flattens 3D context so z-index strictly guarantees center card is in front! */
+    transform-style: flat !important;
+    /* CRITICAL: Flattens 3D context so z-index strictly guarantees center card is in front! */
   }
 
   .popular-3d-card.is-active {
@@ -5855,7 +5784,6 @@ html:not([data-theme="light"]) .tab-btn.active,
 html:not([data-theme="light"]) .load-more-luxury-btn:hover,
 html:not([data-theme="light"]) .section-link:hover,
 html:not([data-theme="light"]) .carousel-btn:hover,
-html:not([data-theme="light"]) .hero-car-btn:hover,
 html:not([data-theme="light"]) .cheat-sos-btn:hover,
 html:not([data-theme="light"]) .state-accordion-summary:hover {
   background: linear-gradient(135deg, rgba(22, 38, 30, 0.88) 0%, rgba(14, 24, 18, 0.92) 100%) !important;
@@ -5885,7 +5813,6 @@ html[data-theme="light"] .tab-btn.active,
 html[data-theme="light"] .load-more-luxury-btn:hover,
 html[data-theme="light"] .section-link:hover,
 html[data-theme="light"] .carousel-btn:hover,
-html[data-theme="light"] .hero-car-btn:hover,
 html[data-theme="light"] .cheat-sos-btn:hover,
 html[data-theme="light"] .state-accordion-summary:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(254, 243, 199, 0.88) 100%) !important;
@@ -5906,6 +5833,7 @@ html[data-theme="light"] .nav-glass .nav-link:hover {
   color: #F5C542 !important;
   border-bottom: 2.5px solid rgba(245, 197, 66, 0.6) !important;
 }
+
 html[data-theme="light"] .nav-glass .nav-link.active {
   background: rgba(245, 197, 66, 0.12) !important;
   border: none !important;
@@ -5946,18 +5874,12 @@ html[data-theme="light"] .bento-tile:hover {
   box-shadow: 0 26px 58px -10px rgba(180, 83, 9, 0.22), 0 0 32px 2px rgba(245, 158, 11, 0.28), inset 0 1px 2px 0 #FFFFFF !important;
 }
 
-/* ─── 4. FOOTER LINKS & ACCORDION GLASS HOVER ───────────────────────────────── */
-footer a,
-#siteFooter a,
-.footer a,
+/* ─── 4. STATE LINKS & ACCORDION GLASS HOVER ───────────────────────────────── */
 .state-link {
   transition: all 0.24s ease !important;
   border-radius: 6px !important;
 }
 
-footer a:hover,
-#siteFooter a:hover,
-.footer a:hover,
 .state-link:hover {
   background: rgba(22, 36, 30, 0.85) !important;
   backdrop-filter: blur(14px) !important;
@@ -5969,9 +5891,6 @@ footer a:hover,
   text-decoration: none !important;
 }
 
-html[data-theme="light"] footer a:hover,
-html[data-theme="light"] #siteFooter a:hover,
-html[data-theme="light"] .footer a:hover,
 html[data-theme="light"] .state-link:hover {
   background: rgba(255, 255, 255, 0.16) !important;
   backdrop-filter: blur(14px) !important;
@@ -5980,6 +5899,7 @@ html[data-theme="light"] .state-link:hover {
   color: #F5C542 !important;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), 0 0 16px rgba(245, 197, 66, 0.35) !important;
 }
+
 /* ─── 5. EDITORIAL REGIONAL CORRIDORS & FAQ ACCORDION ────────── */
 .editorial-travel-section {
   position: relative;
@@ -6156,7 +6076,55 @@ body.glass-immersive nav[aria-label="Breadcrumb"] a,
 html[data-theme="light"] body.glass-immersive nav[aria-label="Breadcrumb"] a {
   color: rgba(255, 255, 255, 0.9) !important;
 }
+
 body.glass-immersive nav[aria-label="Breadcrumb"] a:hover,
 html[data-theme="light"] body.glass-immersive nav[aria-label="Breadcrumb"] a:hover {
   color: #FDE68A !important;
+}
+
+/* ─── DUAL-THEME FORM INPUT & STATIC PAGE LEGIBILITY OVERRIDES ─── */
+html[data-theme="light"] body.glass-immersive .form-input,
+html[data-theme="light"] .form-input {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1.5px solid rgba(15, 23, 42, 0.16) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+
+html[data-theme="light"] body.glass-immersive .form-input::placeholder,
+html[data-theme="light"] .form-input::placeholder {
+  color: #64748B !important;
+}
+
+html[data-theme="light"] body.glass-immersive .form-input:focus,
+html[data-theme="light"] .form-input:focus {
+  border-color: #D97706 !important;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15) !important;
+  outline: none !important;
+}
+
+/* Static & Editorial Pages (About, Contact, Privacy, Terms) */
+html[data-theme="light"] body.glass-immersive .glass-card h1.text-white,
+html[data-theme="light"] body.glass-immersive .glass-card h2.text-white,
+html[data-theme="light"] body.glass-immersive .glass-card h3.text-white,
+html[data-theme="light"] body.glass-immersive .glass-card strong.text-white {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive .glass-card p.text-slate-400,
+html[data-theme="light"] body.glass-immersive .glass-card span.text-slate-400 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] body.glass-immersive main h1.text-white {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.glass-immersive main p.text-slate-400 {
+  color: #475569 !important;
+}
+
+html:not([data-theme="light"]) body.glass-immersive main p.text-slate-400 {
+  color: #94A3B8 !important;
 }

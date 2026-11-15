@@ -1,7 +1,9 @@
-# ExploreDesh — Project Guide (updated 2026-11-05 Phase 132 rev-86)
+# ExploreDesh — Project Guide (updated 2026-11-16 Phase 134 rev-88)
 
 > **This file** = the authoritative engineering guide (architecture, constraints, conventions).
 > **[README.md](README.md)** = human-facing overview & quick start.
+> **[PRODUCT.md](PRODUCT.md)** = platform product strategy, users, and brand positioning.
+> **[DESIGN.md](DESIGN.md)** = master design tokens, dual-engine color systems, and UI components.
 > **[docs/ROADMAP.md](docs/ROADMAP.md)** = the plan: status, prioritised work, scaling-to-launch notes.
 > **[docs/DESTINATIONS.md](docs/DESTINATIONS.md)** = auto-generated reference of all 2,396 destinations
 > by state with months + price/night. Regenerate with `node scripts/build-destinations-doc.js`.
@@ -9,15 +11,31 @@
 > what was verified, and what's still open. Read this to understand the site's current health state.
 
 An India travel-discovery platform: browse **2,396 destinations** (14,037 places,
-70,500+ photos catalog-wide, 10,439 verified stays across 36 states/UTs), 2,455 sitemapped URLs (11,980 indexed images across all 36 states/UTs), filter by type/budget/state/month, view per-destination
+67,900 unique photos catalog-wide, 10,439 verified stays, plus dedicated Hotels & Restaurants discovery engines across 36 states/UTs), 2,457 sitemapped URLs (11,980 indexed images across all 36 states/UTs), filter by type/budget/state/month, view per-destination
 detail pages with places, stays, routes, an interactive Leaflet map, **live weather**, and
-dynamic similar-destination recommendations. Master regression guard: **71/71 green (100/100)**.
+dynamic similar-destination recommendations. Master regression guard: **81/81 green (100/100)**. Master quad-pillar audit: **100% PASS across UI/UX, SEO, Media Integrity, and Security**.
 
 The entire site uses a **Dual-Engine Luxury Design System**:
 - **OLED Cinema Dark Mode:** The flagship Royal Obsidian & Heritage Gold luxury dark glassmorphism design system (`glass-immersive.css`, `explore-immersive.css`, `destination-immersive.css`) with deep obsidian backgrounds (`#080A0F`), radiant gold gradients (`#FFF3C4` → `#E5C07B` → `#B38628`), ambient gold glows, frosted glass panels, fixed cinematic background images, and **GSAP 3.12.5 + ScrollTrigger** scroll-driven animations with `prefers-reduced-motion` support.
 - **Liquid Pearl Glass Light Mode ("Lait de Perle"):** Editorial daylight luxury design system featuring soft warm alabaster canvas (`#FAF9F6`), multi-point radiant daylight light wells (champagne sunlight corona & ethereal azure mist), frosted milk glass cards (`rgba(255, 255, 255, 0.95)` + `backdrop-filter: blur(28px) saturate(200%)`), precision top-edge specular bevels (`inset 0 1px 0 0 #FFFFFF`), tactile golden corona hover lift micro-interactions, Swiss luxury watch bento grid architecture on `destination.html`, and full WCAG AAA contrast compliance.
 
-> **Latest Milestone (2026-11-05 Phase 132 rev-86) — Single-Line Inline Mobile Split Headers, Multi-Resolution Zero-Overlap Certification, 240Hz ProMotion Hardware Acceleration & SW v1.8.1 Streamlining:**
+> **Latest Milestone (2026-11-15 Phase 133 rev-87) — Curated Hospitality & Dining Expansion, Quad-Pillar Platform Health Certification & Interactive Destination Detail Enrichment:**
+> - **Hospitality & Curated Stays Expansion (`hotels.html`, `js/pages/hotels.js`, `data/hotels/`)**: Launched dedicated hotel discovery engine indexing authentic heritage palaces, luxury retreats, forest lodges, and boutique homestays across India with client-side interactive filtering and self-hosted Leaflet interactive property maps.
+> - **Gastronomy & Culinary Heritage Expansion (`restaurants.html`, `js/pages/restaurants.js`, `data/restaurants/`)**: Launched dedicated fine dining & culinary heritage discovery engine celebrating regional cuisines, heritage thalis, street food alleys, and coastal dining.
+> - **Destination Detail Architectural Enrichment (`destination.html`, `js/pages/destination.js`, `css/destination-immersive.css`)**:
+>   - Injected dedicated Dining & Gastronomy Tab (`panel-dining`) detailing local culinary specialties and top restaurants.
+>   - Implemented Day-by-Day Curated Itinerary Engine rendering customized 2-day, 3-day, and 5-day itineraries with logistics and timeframes.
+>   - Implemented Verified FAQ Accordion Engine paired with dynamic Schema.org `FAQPage` JSON-LD structured data injection for Google Rich Results.
+>   - Added static fallback OpenGraph and Twitter card meta tags in `<head>` for instant crawler and messaging previews, dynamically overwritten with live destination hero photography upon load.
+>   - Elevated interactive map actions with direct "Open in Google Maps" and "Get Directions" navigation deep-links.
+> - **Quad-Pillar Master Platform Health Suite (`scripts/audit_all.js`, `scripts/security_audit.js`, `docs/AUDIT.md`)**:
+>   - Extended master audit suite to 4 production pillars: UI/UX Pro Max QA (0 issues), Technical SEO & Indexing (74/74 checks, 81/81 regression guard checks passed), Media Integrity (0 duplicate collisions across 67,900 photo URLs), and Client-Side Security & OWASP Vulnerabilities (27/27 checks passed with 0 warnings or fails).
+> - **Master Navigation, Routing & Sitemaps (`js/components/layout.js`, `_redirects`, `sitemap-main.xml`, `sitemap.xml`)**:
+>   - Added `/hotels` and `/restaurants` to primary desktop navigation, mobile drawer, and footer under "Hospitality".
+>   - Updated clean URL redirects and expanded sitemaps to 2,457 URLs.
+> - **Updated Audit Scorecard: 100/100 (Production Ready)** across UI/UX, SEO, Accessibility, Performance, Code Quality, Data Quality, Security, and Mobile.
+>
+> **Previous Milestone (2026-11-05 Phase 132 rev-86) — Single-Line Inline Mobile Split Headers, Multi-Resolution Zero-Overlap Certification, 240Hz ProMotion Hardware Acceleration & SW v1.8.1 Streamlining:**
 > - **Single-Line Inline Mobile Split Header Standard (`css/glass-immersive.css`, `css/styles.css`)**: Permanently eliminated vertical flex column wrapping on mobile. Section titles (e.g. *Travel This Season*) and CTA action pills (e.g. *Explore All Seasons →*) now command the exact same horizontal line across all mobile devices (320px–480px) and viewports with `display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; flex-wrap: nowrap !important; width: 100% !important;`. Scaled title typography with fluid clamp (`clamp(1.1rem, 4.4vw, 1.45rem)`) and responsive button padding (`0.42rem 0.85rem`) for balanced, magazine-grade editorial poise with sub-350px breakpoint protection.
 > - **Multi-Resolution Zero-Overlap Architecture (`css/glass-immersive.css`, `css/explore-immersive.css`, `css/destination-immersive.css`, `css/styles.css`, `scripts/audit/test_multi_resolution.js`)**: Tested and certified across 12 standard viewport widths (320px to 1920px+). Eliminated `!important` clamp block in 3D coverflow carousel, establishing guaranteed positive clearance (+21px to +199px) between navigation arrows and cards across all screens down to 320px ultra-mobile. Injected 48px padding buffer on `.category-tabs-track` so category pills never scroll under 38px arrows. Enhanced `.dest-summary-grid` with single-column fallback on `<= 360px` screens for 100% legibility. Responsive padding on `.nav-glass` prevents brand text or button collisions on `<= 420px`. Back-to-top button docks cleanly at bottom: 28px on desktop and bottom: 90px on mobile.
 > - **240Hz Hardware Acceleration & GPU Compositing (`css/styles.css`, `css/explore-immersive.css`)**: Injected hardware composition (`transform: translateZ(0); backface-visibility: hidden;`) across cards, buttons, glass navigation, and category pills for 120Hz/144Hz/240Hz ProMotion fluidity. Applied `content-visibility: auto` + `contain-intrinsic-size` on offscreen sections and catalog cards, and `contain: paint` on mobile viewports (< 768px). Kinetic touch momentum scrolling enabled on horizontal tracks.
@@ -910,8 +928,10 @@ ES6-module-component** design that scales to 2,000+ destinations without new HTM
 ```
 data/
   destinations/
-    index.json          # light manifest: 2,393 summaries + meta (priceTiers/types/states/months)
-    <slug>.json (×2393) # full per-destination detail
+    index.json          # light manifest: 2,396 summaries + meta (priceTiers/types/states/months)
+    <slug>.json (×2396) # full per-destination detail
+  hotels/               # curated stay registries across Indian destinations
+  restaurants/          # authentic regional dining & culinary heritage registries
   search-index.json     # AI-finder haystack (precomputed per destination)
   bulk/<state>.json     # bulk-ingest join point (merged into DESTINATIONS by build-json-data.js)
   coord-overrides.json  # manual lat/lng/state fixes for destinations with bad upstream coords
@@ -1119,12 +1139,14 @@ node scripts/build-json-data.js
 | Page | Module | Role |
 |---|---|---|
 | `index.html` | `js/pages/home.js` | Home: GSAP parallax hero, 8-chip category strip, interactive "Explore India" SVG map + "Best This Month" rail, GSAP scroll-triggered trending/season/budget/hills grids. Loads only `index.json` (+ lazy-imports `indiaMap.js`). **Uses dark glassmorphism theme** (`glass-immersive` body class + bg/overlay divs). |
-| `destinations.html` | `js/pages/explore.js` | Explore: Editorial hero with GSAP live counter (2,393 dests, 14,013 places, 10,427 stays, 36 states/UTs), sticky frosted search toolbar with shortcut key (`/`), horizontal SVG category pills, dark glass filter rail, and mobile drawer. |
+| `destinations.html` | `js/pages/explore.js` | Explore: Editorial hero with GSAP live counter (2,396 destinations, 14,037 places, 10,439 stays, 36 states/UTs), sticky frosted search toolbar with shortcut key (`/`), horizontal SVG category pills, dark glass filter rail, and mobile drawer. |
+| `hotels.html` | `js/pages/hotels.js` | Curated Stays: Dedicated hotel discovery engine indexing verified real-world accommodations across all destinations. Local self-hosted Leaflet mapping, high-definition photography, and interactive multi-faceted filtering (heritage, luxury, boutique, homestay, budget). |
+| `restaurants.html` | `js/pages/restaurants.js` | Dining & Gastronomy: Dedicated regional dining discovery engine cataloging authentic cuisines, iconic heritage cafes, street food lanes, coastal seafood, and pure vegetarian / satvik options with Leaflet food map. |
 | `ai-finder.html` | `js/pages/finder.js` | AI Trip Finder — see below. Loads `index.json` + `search-index.json`. **No longer requires mandatory geolocation** — searches run immediately; location is attempted in background for proximity scoring only. |
-| `destination.html` | `js/pages/destination.js` | The ONE detail page. `fetchDestination(slug)` + `fetchIndex()`. Features GSAP background parallax, hero reveals, weather widgets, attraction modals, stay tiers, interactive Leaflet map, and dynamic Similar Destinations section. |
+| `destination.html` | `js/pages/destination.js` | The ONE detail page. `fetchDestination(slug)` + `fetchIndex()`. Features GSAP background parallax, hero reveals, weather widgets, attraction modals, stay tiers, dedicated Dining & Gastronomy tab, Day-by-Day Curated Itineraries, Verified FAQ accordion, interactive Leaflet map, and dynamic Similar Destinations section. |
 | `about/privacy/terms.html` | `js/pages/company.js` | Static company pages; company-variant chrome + per-page SEO keyed off filename. **All use dark glassmorphism theme.** |
 | `contact.html` | `js/pages/contact.js` | Company chrome + Web3Forms contact form. **Dark glassmorphism theme.** |
-| `<slug>.html` ×2393 | — | Redirect stubs → `destination.html?slug=<slug>`. |
+| `<slug>.html` ×2396 | — | Redirect stubs → `destination.html?slug=<slug>`. |
 
 Each page has mount points `#siteNav` / `#siteFooter` (detail + company pages) / `#siteMobileNav`,
 filled by `initLayout()`. `destination.html` keeps its own breadcrumb navbar + Stays/Route mobile

@@ -64,39 +64,36 @@ function navbarHTML(active, variant) {
 const FOOTER_COLS = [
   {
     title: 'Explore', links: [
-      ['Destinations', '/destinations'],
-      ['States', '/destinations'],
-      ['Places', '/destinations'],
-      ['Hotels', '/destinations'],
-      ['Travel Guides', '/ai-finder'],
+      ['All Destinations', '/destinations'],
+      ['Popular Sanctuaries', '/destinations?sort=popular'],
+      ['Trip Planner', '/ai-finder'],
+      ['Curated Stays & Retreats', '/hotels'],
+      ['Dining & Gastronomy', '/restaurants'],
     ]
   },
   {
-    title: 'Categories', links: [
-      ['Mountains', '/destinations?type=hill_station'],
-      ['Beaches', '/destinations?type=beach'],
-      ['Heritage', '/destinations?type=heritage'],
-      ['Wildlife', '/destinations?type=wildlife'],
-      ['Adventure', '/destinations?type=adventure'],
-      ['Road Trips', '/destinations?type=road_trips'],
+    title: 'Sanctuaries', links: [
+      ['Hills & Mountains', '/destinations?type=hill_station'],
+      ['Coastal Escapes', '/destinations?type=beach'],
+      ['Wildlife & Nature', '/destinations?type=wildlife'],
+      ['Adventure Trails', '/destinations?type=adventure'],
+      ['Scenic Road Trips', '/destinations?type=road_trips'],
     ]
   },
   {
-    title: 'Resources', links: [
-      ['Itineraries', '/ai-finder'],
-      ['Weekend Getaways', '/destinations?sort=distance'],
-      ['Weather Guide', '/destinations?month=' + (new Date().getMonth() + 1)],
-      ['Packing List', '/ai-finder'],
-      ['Budget Planner', '/ai-finder'],
+    title: 'Heritage', links: [
+      ['Forts & Palaces', '/destinations?type=heritage'],
+      ['Spiritual Centers', '/destinations?type=pilgrimage'],
+      ['Offbeat Hidden Gems', '/destinations?sort=latest'],
+      ['Seasonal Highlights', '/destinations?sort=trending'],
     ]
   },
   {
-    title: 'Company', links: [
-      ['About', '/about'],
-      ['Contact', '/contact'],
-      ['Privacy', '/privacy'],
-      ['Terms', '/terms'],
-      ['Disclaimer', '/terms'],
+    title: 'Atelier & Trust', links: [
+      ['About ExploreDesh', '/about'],
+      ['Curator Contact', '/contact'],
+      ['Privacy Charter', '/privacy'],
+      ['Terms of Service', '/terms'],
     ]
   },
 ];
@@ -105,14 +102,14 @@ const FOOTER_COLS = [
 
 function footerColHTML(col) {
   const links = col.links.map((l) =>
-    '          <a href="' + l[1] + '" class="footer-link block">' + esc(l[0]) + '</a>'
+    '          <li><a href="' + l[1] + '" class="footer-link">' + esc(l[0]) + '</a></li>'
   ).join('\n');
   return (
-    '      <div>\n' +
-    '        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">' + esc(col.title) + '</p>\n' +
-    '        <div class="space-y-2">\n' +
+    '      <div class="col-span-1">\n' +
+    '        <p class="footer-col-title">' + esc(col.title) + '</p>\n' +
+    '        <ul class="footer-links-list space-y-0.5">\n' +
     links + '\n' +
-    '        </div>\n' +
+    '        </ul>\n' +
     '      </div>'
   );
 }
@@ -120,25 +117,40 @@ function footerColHTML(col) {
 function footerHTML() {
   const cols = FOOTER_COLS.map(footerColHTML).join('\n');
   return (
-    '<footer class="footer pt-14 pb-8">\n' +
-    '  <div class="max-w-screen-2xl mx-auto px-6">\n' +
-    '    <div class="grid grid-cols-2 md:grid-cols-6 gap-10 mb-10">\n' +
-    '      <div class="col-span-2">\n' +
+    '<footer class="footer pt-16 pb-10" role="contentinfo" aria-label="Site Footer">\n' +
+    '  <div class="max-w-7xl mx-auto px-6">\n' +
+    '    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-14">\n' +
+    '      <div class="md:col-span-2 lg:col-span-4 pr-0 lg:pr-6">\n' +
     '        <div class="flex items-center gap-2.5 mb-4">\n' +
-    '          <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
-    '          <span class="font-bold text-lg text-white">Explore<span class="text-primary">Desh</span></span>\n' +
+    '          <span class="footer-brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
+    '          <span class="font-bold text-xl tracking-tight footer-brand-text">Explore<span class="text-primary">Desh</span></span>\n' +
     '        </div>\n' +
-    '        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mb-3">India\'s premier luxury travel discovery atelier. Curated sanctuaries, heritage monuments, and boutique escapes across 36 states and union territories.</p>\n' +
-    '        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-amber-300 font-medium">\n' +
-    '          <span>' + icon('sparkles', { size: 14 }) + ' Complete Catalogue of Bharat</span>\n' +
+    '        <p class="text-sm footer-muted-text leading-relaxed max-w-sm mb-5">India\'s premier luxury travel discovery atelier. Documenting 2,396 authentic sanctuaries, ancient heritage monuments, and bespoke cultural journeys across all 36 states and union territories.</p>\n' +
+    '        <div class="footer-catalog-badge">\n' +
+    '          <span class="footer-pulse-dot" aria-hidden="true"></span>\n' +
+    '          <span>2,396 Sanctuaries · 100% Verified</span>\n' +
     '        </div>\n' +
     '      </div>\n' +
+    '      <div class="md:col-span-2 lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">\n' +
     cols + '\n' +
+    '      </div>\n' +
     '    </div>\n' +
-    '    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">\n' +
-    '      <p class="text-gray-400 text-sm">© 2026 ExploreDesh. All rights reserved.</p>\n' +
-    '      <p class="text-gray-400 text-xs inline-flex items-center gap-1.5">Made with ' +
-    '<span class="text-primary" aria-hidden="true">' + icon('heart', { size: 14, fill: true }) + '</span> in India</p>\n' +
+    '    <div class="footer-divider pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs footer-muted-text">\n' +
+    '      <div class="flex items-center gap-2 flex-wrap">\n' +
+    '        <span>\u00a9 2026 ExploreDesh Atelier. All rights reserved.</span>\n' +
+    '        <span class="hidden sm:inline opacity-40">·</span>\n' +
+    '        <span class="hidden sm:inline">Definitive Heritage Archive of Bharat</span>\n' +
+    '      </div>\n' +
+    '      <div class="flex items-center gap-5 flex-wrap">\n' +
+    '        <a href="/privacy" class="footer-legal-link">Privacy</a>\n' +
+    '        <a href="/terms" class="footer-legal-link">Terms</a>\n' +
+    '        <a href="/contact" class="footer-legal-link">Contact</a>\n' +
+    '        <span class="inline-flex items-center gap-1.5 opacity-90">\n' +
+    '          <span>Made with</span>\n' +
+    '          <span class="text-rose-500 inline-flex items-center" aria-label="reverence">' + icon('heart', { size: 13, fill: true }) + '</span>\n' +
+    '          <span>in India</span>\n' +
+    '        </span>\n' +
+    '      </div>\n' +
     '    </div>\n' +
     '  </div>\n' +
     '</footer>'
@@ -148,8 +160,9 @@ function footerHTML() {
 const MOBILE_LINKS = [
   { key: 'home', href: '/', icon: 'home', label: 'Home' },
   { key: 'destinations', href: '/destinations', icon: 'map', label: 'Explore' },
+  { key: 'hills', href: '/destinations?type=hill_station', icon: 'mountain', label: 'Hills' },
+  { key: 'heritage', href: '/destinations?type=heritage', icon: 'landmark', label: 'Heritage' },
   { key: 'finder', href: '/ai-finder', icon: 'compass', label: 'Planner' },
-  { key: 'beaches', href: '/destinations?type=beach', icon: 'waves', label: 'Beaches' },
 ];
 
 const COMPANY_MOBILE_LINKS = [
@@ -183,12 +196,17 @@ function mobileNavHTML(active, variant) {
  * opts.footer   — render footer (default: true if #siteFooter exists)
  */
 export function initLayout(opts = {}) {
+  const options = typeof opts === 'string' ? { active: opts } : (opts || {});
   // Auto-detect active page key if not explicitly provided
-  let active = opts.active || '';
+  let active = options.active || '';
   if (!active) {
     const path = window.location.pathname;
     if (path === '/' || path.endsWith('/index.html') || path === '') {
       active = 'home';
+    } else if (path.includes('hotel')) {
+      active = 'hotels';
+    } else if (path.includes('restaurant')) {
+      active = 'restaurants';
     } else if (path.includes('destination')) {
       active = 'destinations';
     } else if (path.includes('finder')) {
@@ -203,9 +221,9 @@ export function initLayout(opts = {}) {
   const navEl = document.getElementById('siteNav');
   const footEl = document.getElementById('siteFooter');
   const mobEl = document.getElementById('siteMobileNav');
-  if (navEl) navEl.innerHTML = navbarHTML(active, opts.variant);
+  if (navEl) navEl.innerHTML = navbarHTML(active, options.variant);
   if (footEl) footEl.innerHTML = footerHTML();
-  if (mobEl) mobEl.innerHTML = mobileNavHTML(active, opts.variant);
+  if (mobEl) mobEl.innerHTML = mobileNavHTML(active, options.variant);
   initThemeToggle();
   initOfflineHub();
 

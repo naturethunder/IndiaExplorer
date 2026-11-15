@@ -274,12 +274,6 @@ body.dest-immersive .dest-hero:hover .dest-hero-img {
   transform: none;
 }
 
-body.dest-immersive .dest-hero-slides {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
 body.dest-immersive .dest-hero-overlay {
   position: absolute;
   inset: 0;
@@ -356,38 +350,6 @@ body.dest-immersive #heroBadge {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
 }
 
-/* ─── Hero Calligraphy Eyebrow & Kicker ─── */
-body.dest-immersive .hero-calligraphy-kicker,
-body.dest-immersive .hero-calligraphy-eyebrow {
-  font-family: 'Pinyon Script', cursive !important;
-  font-size: clamp(1.45rem, 2.5vw, 2.25rem) !important;
-  line-height: 1.15;
-  color: #F5C542 !important;
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 14px !important;
-  margin-bottom: 4px !important;
-  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.95)) !important;
-  animation: heroFadeUp 0.8s var(--imm-ease) both;
-}
-
-body.dest-immersive .tab-calligraphy-kicker {
-  font-family: 'Pinyon Script', cursive !important;
-  font-size: clamp(1.3rem, 1.8vw, 1.7rem) !important;
-  line-height: 1.2;
-  color: #E5C07B !important;
-  background: linear-gradient(135deg, #FFF6E5 0%, #F5C542 55%, #D4AF37 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  display: block !important;
-  margin-bottom: 2px !important;
-  letter-spacing: 0.02em !important;
-}
-
 /* Hero title — High-End Luxury Editorial Serif */
 body.dest-immersive #heroTitle {
   font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif !important;
@@ -397,11 +359,8 @@ body.dest-immersive #heroTitle {
   line-height: 1.15 !important;
   color: #FFFFFF !important;
   text-align: center !important;
-  background: linear-gradient(180deg, #FFFFFF 15%, #FFF6E5 60%, #F5C542 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   filter:
-    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.95)) drop-shadow(0 12px 42px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 35px rgba(245, 197, 66, 0.28));
+    drop-shadow(0 4px 18px rgba(0, 0, 0, 0.95)) drop-shadow(0 12px 42px rgba(0, 0, 0, 0.85));
   text-transform: none;
   margin-bottom: 0.55rem;
   padding: 0 1rem;
@@ -744,8 +703,7 @@ html[data-theme="light"] body.dest-immersive #panel-overview .lg\:col-span-2 p {
 html:not([data-theme="light"]) body.dest-immersive .card,
 html:not([data-theme="light"]) body.dest-immersive .info-card,
 html:not([data-theme="light"]) body.dest-immersive .dest-summary-card,
-html:not([data-theme="light"]) body.dest-immersive .bg-gray-50,
-html:not([data-theme="light"]) body.dest-immersive .dest-bento-box {
+html:not([data-theme="light"]) body.dest-immersive .bg-gray-50 {
   background: rgba(13, 17, 27, 0.94) !important;
   border: 1px solid rgba(255, 255, 255, 0.10) !important;
   border-radius: var(--imm-radius-md) !important;
@@ -763,8 +721,7 @@ html:not([data-theme="light"]) body.dest-immersive .dest-bento-box {
 html:not([data-theme="light"]) body.dest-immersive .card:hover,
 html:not([data-theme="light"]) body.dest-immersive .info-card:hover,
 html:not([data-theme="light"]) body.dest-immersive .dest-summary-card:hover,
-html:not([data-theme="light"]) body.dest-immersive .bg-gray-50:hover,
-html:not([data-theme="light"]) body.dest-immersive .dest-bento-box:hover {
+html:not([data-theme="light"]) body.dest-immersive .bg-gray-50:hover {
   background: rgba(18, 23, 36, 0.96) !important;
   border-color: rgba(245, 197, 66, 0.35) !important;
   box-shadow:
@@ -840,10 +797,10 @@ html:not([data-theme="light"]) body.dest-immersive .dest-summary-val {
   font-size: 0.95rem !important;
 }
 
-/* ─── FILTER PILLS ──────────────────────────────────────── */
-body.dest-immersive [data-place],
-body.dest-immersive [data-tier],
-body.dest-immersive .dest-filter-btn {
+/* ─── FILTER PILLS (Dark Theme) ─────────────────────────── */
+html:not([data-theme="light"]) body.dest-immersive [data-place],
+html:not([data-theme="light"]) body.dest-immersive [data-tier],
+html:not([data-theme="light"]) body.dest-immersive .dest-filter-btn {
   min-height: 38px;
   display: inline-flex !important;
   align-items: center !important;
@@ -863,23 +820,72 @@ body.dest-immersive .dest-filter-btn {
   cursor: pointer;
 }
 
-body.dest-immersive [data-place]:hover,
-body.dest-immersive [data-tier]:hover,
-body.dest-immersive .dest-filter-btn:hover,
-body.dest-immersive [data-place]:active,
-body.dest-immersive [data-tier]:active,
-body.dest-immersive .dest-filter-btn:active,
-body.dest-immersive [data-place].active,
-body.dest-immersive [data-tier].active,
-body.dest-immersive .dest-filter-btn.active,
-body.dest-immersive [data-place].bg-primary,
-body.dest-immersive [data-tier].bg-gray-900 {
+html:not([data-theme="light"]) body.dest-immersive [data-place]:hover,
+html:not([data-theme="light"]) body.dest-immersive [data-tier]:hover,
+html:not([data-theme="light"]) body.dest-immersive .dest-filter-btn:hover,
+html:not([data-theme="light"]) body.dest-immersive [data-place]:active,
+html:not([data-theme="light"]) body.dest-immersive [data-tier]:active,
+html:not([data-theme="light"]) body.dest-immersive .dest-filter-btn:active,
+html:not([data-theme="light"]) body.dest-immersive [data-place].active,
+html:not([data-theme="light"]) body.dest-immersive [data-tier].active,
+html:not([data-theme="light"]) body.dest-immersive .dest-filter-btn.active,
+html:not([data-theme="light"]) body.dest-immersive [data-place].bg-primary,
+html:not([data-theme="light"]) body.dest-immersive [data-tier].bg-gray-900 {
   background: linear-gradient(180deg, rgba(245, 197, 66, 0.04) 0%, rgba(245, 197, 66, 0.14) 60%, rgba(245, 197, 66, 0.24) 100%) !important;
   border: 1px solid rgba(245, 197, 66, 0.4) !important;
   border-bottom: 2.5px solid #F5C542 !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
   box-shadow: 0 4px 16px -2px rgba(245, 197, 66, 0.45), inset 0 -2px 8px rgba(245, 197, 66, 0.25) !important;
+  transform: translateY(-1px);
+}
+
+/* ─── FILTER PILLS (Light Mode) ─────────────────────────── */
+html[data-theme="light"] body.dest-immersive [data-place],
+html[data-theme="light"] body.dest-immersive [data-tier],
+html[data-theme="light"] body.dest-immersive .dest-filter-btn,
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill {
+  min-height: 38px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  touch-action: manipulation;
+  padding: 0.4rem 1.1rem !important;
+  border-radius: 9999px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(217, 119, 6, 0.25) !important;
+  color: #334155 !important;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  transition: all var(--imm-duration) var(--imm-ease);
+  cursor: pointer;
+}
+
+html[data-theme="light"] body.dest-immersive [data-place]:hover,
+html[data-theme="light"] body.dest-immersive [data-tier]:hover,
+html[data-theme="light"] body.dest-immersive .dest-filter-btn:hover,
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill:hover {
+  background: #FFFBEB !important;
+  border-color: rgba(217, 119, 6, 0.45) !important;
+  color: #92400E !important;
+  transform: translateY(-1px);
+}
+
+html[data-theme="light"] body.dest-immersive [data-place].active,
+html[data-theme="light"] body.dest-immersive [data-tier="all"].active,
+html[data-theme="light"] body.dest-immersive [data-tier="all"][aria-pressed="true"],
+html[data-theme="light"] body.dest-immersive .dest-filter-btn.active,
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"].active,
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"][aria-pressed="true"],
+html[data-theme="light"] body.dest-immersive #panel-stays .dest-filter-btn.active {
+  background: #FEF3C7 !important;
+  border: 1.5px solid #D97706 !important;
+  border-bottom: 2.5px solid #B45309 !important;
+  color: #78350F !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.25) !important;
   transform: translateY(-1px);
 }
 
@@ -1902,11 +1908,6 @@ body.dest-immersive .nav-glass.nav-scrolled {
     transition: none !important;
   }
 
-  body.dest-immersive .dest-hero-slides img {
-    animation: none !important;
-    transition: opacity 0.3s ease !important;
-  }
-
   body.dest-immersive .dest-ov-slide {
     transition: opacity 0.2s ease !important;
   }
@@ -2198,10 +2199,7 @@ html[data-theme="light"] .nav-glass .site-brand-text {
 
 html[data-theme="light"] body.dest-immersive .nav-glass .site-brand-text .text-primary,
 html[data-theme="light"] .nav-glass .site-brand-text .text-primary {
-  background: linear-gradient(135deg, #FFF3C4 0%, #E5C07B 50%, #B38628 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
+  color: #F59E0B !important;
   display: inline-block !important;
 }
 
@@ -2255,19 +2253,8 @@ html[data-theme="light"] body.dest-immersive .dest-hero-overlay {
     linear-gradient(180deg, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.15) 60%, rgba(248, 250, 252, 0.95) 96%, #F8FAFC 100%) !important;
 }
 
-html[data-theme="light"] body.dest-immersive .hero-calligraphy-kicker {
-  color: #F59E0B !important;
-  background: linear-gradient(135deg, #FFFBEB 0%, #F59E0B 50%, #D97706 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8)) !important;
-}
-
 html[data-theme="light"] body.dest-immersive #heroTitle {
   color: #FFFFFF !important;
-  background: linear-gradient(180deg, #FFFFFF 20%, #FFFBEB 65%, #FDE68A 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.9)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.7)) !important;
 }
 
@@ -2281,11 +2268,7 @@ html[data-theme="dark"] body.dest-immersive #heroTagline {
   text-align: center !important;
   line-height: 1.45 !important;
   color: #FEF3C7 !important;
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFF7ED 22%, #FEF3C7 52%, #FDE68A 82%, #F59E0B 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: none !important;
-  text-shadow: none !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8)) !important;
   display: inline-block !important;
 }
 
@@ -3208,7 +3191,7 @@ body.dest-immersive .bd .bd-step-btn {
 body.dest-immersive .bd .bd-step-btn:disabled { opacity: .4; cursor: not-allowed; }
 body.dest-immersive .bd .bd-chip-btn {
   --bw-bg: transparent; --bw-fg: var(--bd-text); --bw-bd: var(--bd-border); --bw-bg-h: var(--bd-accent-soft); --bw-bd-h: var(--bd-border-strong);
-  min-height: 44px; padding: 0 16px; border-radius: 999px; font-size: .9375rem; font-weight: 600;
+  min-height: 2.75rem; padding: 0 1rem; border-radius: 999px; font-size: .9375rem; font-weight: 600;
   background: var(--bw-bg); color: var(--bw-fg); border: 1.5px solid var(--bw-bd);
 }
 body.dest-immersive .bd .bd-chip-btn[aria-pressed="true"] {
@@ -3261,7 +3244,7 @@ body.dest-immersive .bd .bd-fieldset { border: 0; padding: 0; }
 body.dest-immersive .bd .bd-label { display: block; margin-bottom: 8px; padding: 0; font-weight: 700; font-size: .9375rem; color: var(--bd-text); }
 body.dest-immersive .bd .bd-help { margin-top: 6px; font-size: .875rem; }
 html body.dest-immersive .bd select.bd-select {
-  width: 100%; min-height: 48px; padding: 0 12px; font-size: 1rem; font-family: inherit;
+  width: 100%; min-height: 3rem; padding: 0 0.75rem; font-size: 1rem; font-family: inherit;
   border-radius: 12px !important; background-color: var(--bd-surface-2) !important; color: var(--bd-text) !important;
   border: 1.5px solid var(--bd-border) !important;
 }
@@ -3291,7 +3274,7 @@ body.dest-immersive .bd-total {
 body.dest-immersive .bd-sub { display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 1rem; }
 body.dest-immersive .bd-sub strong { font-variant-numeric: tabular-nums; }
 body.dest-immersive .bd-sub-title { margin-top: 8px; font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--bd-muted); }
-body.dest-immersive .bd-empty { padding: 12px 16px; border: 1.5px solid var(--bd-accent); border-radius: 12px; background: var(--bd-accent-soft); font-size: .9375rem; }
+body.dest-immersive .bd-empty { padding: 0.75rem 1rem; border: 1.5px solid var(--bd-accent); border-radius: 12px; background: var(--bd-accent-soft); font-size: .9375rem; }
 body.dest-immersive .bd-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
 body.dest-immersive .bd-row { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; align-items: start; }
 body.dest-immersive .bd-row-ic { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 10px; background: var(--bd-surface-2); }
@@ -3351,4 +3334,503 @@ html body.dest-immersive .bd a.bd-link:hover { border-color: var(--bd-accent); b
     --bd-accent: #111; --bd-accent-ink: #fff; --bd-stay: #111; --bd-ride: #111; --bd-food: #111; --bd-entry: #111; --bd-buffer: #111;
   }
   body.bd-printing .bd-actions, body.bd-printing .bd-more, body.bd-printing .bd-chip, body.bd-printing .bd-book { display: none !important; }
+}
+
+/* ─── ITINERARY TIMELINE (Editorial Luxury) ─────────────────────────────────── */
+.dest-itin-day-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.dest-itin-timeline {
+  position: relative;
+}
+.dest-itin-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.55rem;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.6) 0%, rgba(245, 158, 11, 0.15) 100%);
+  border-radius: 1px;
+}
+.dest-itin-item {
+  position: relative;
+}
+.dest-itin-marker {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.35);
+}
+.dest-itin-card {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.dest-itin-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── FAQ ACCORDION (Editorial Luxury) ──────────────────────────────────────── */
+.dest-faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.dest-faq-item[open] {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(15, 23, 42, 0.85);
+}
+.dest-faq-summary::-webkit-details-marker {
+  display: none;
+}
+.dest-faq-summary {
+  list-style: none;
+}
+
+/* Light Theme overrides for Itinerary & FAQ */
+html[data-theme="light"] body.dest-immersive .dest-itin-day-card {
+  background: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-card {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-marker {
+  background: #FFFFFF !important;
+  color: #D97706 !important;
+  border-color: #D97706 !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-faq-item {
+  background: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-faq-item[open] {
+  border-color: #FCD34D !important;
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.08) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-faq-summary {
+  color: #0F172A !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-faq-body {
+  color: #334155 !important;
+  border-color: #F1F5F9 !important;
+}
+
+/* ─── DYNAMIC ITINERARY ATELIER (Ultra-Luxury & Interactive) ──────────────── */
+.dest-itin-atelier-box {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  backdrop-filter: blur(16px);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3), 0 0 20px rgba(245, 158, 11, 0.08);
+}
+.dest-itin-seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #CBD5E1;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+.dest-itin-seg-btn:hover {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #FCD34D;
+  transform: translateY(-1px);
+}
+.dest-itin-seg-btn.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.3) 0%, rgba(217, 119, 6, 0.2) 100%);
+  border-color: #F59E0B;
+  color: #FEF3C7;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
+}
+.dest-itin-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.45rem 0.875rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #E2E8F0;
+  transition: all 0.18s ease;
+  cursor: pointer;
+}
+.dest-itin-action-btn:hover {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: #F59E0B;
+  color: #FFF;
+  transform: translateY(-1px);
+}
+.dest-itin-transit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.75rem 0 0.75rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px dashed rgba(245, 158, 11, 0.35);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #FCD34D;
+}
+.dest-itin-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99999;
+  background: #0F172A;
+  color: #FEF3C7;
+  border: 1.5px solid #F59E0B;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(245,158,11,0.3);
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: itinToastIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes itinToastIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Light Theme overrides for Dynamic Atelier */
+html[data-theme="light"] body.dest-immersive .dest-itin-atelier-box {
+  background: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 0 12px rgba(217, 119, 6, 0.06) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-seg-btn {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  color: #475569 !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-seg-btn:hover {
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #92400E !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-seg-btn.active {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%) !important;
+  border-color: #D97706 !important;
+  color: #78350F !important;
+  box-shadow: 0 2px 10px rgba(217, 119, 6, 0.2) !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-action-btn {
+  background: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  color: #1E293B !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-action-btn:hover {
+  background: #FEF3C7 !important;
+  border-color: #B45309 !important;
+  color: #92400E !important;
+}
+html[data-theme="light"] body.dest-immersive .dest-itin-transit {
+  background: #F8FAFC !important;
+  border-color: #D97706 !important;
+  color: #92400E !important;
+}
+
+/* =========================================================
+   VERIFIED STAYS & SANCTUARIES — LUXURY EDITORIAL HEADER
+   ========================================================= */
+
+.stays-luxury-header {
+  position: relative;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.08) 0%, rgba(17, 24, 39, 0.85) 50%, rgba(11, 15, 25, 0.95) 100%);
+  border: 1px solid rgba(245, 197, 66, 0.25);
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.stays-luxury-mesh {
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 320px;
+  height: 320px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(245, 197, 66, 0.15) 0%, transparent 70%);
+  filter: blur(48px);
+  pointer-events: none;
+}
+
+.stays-kicker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(245, 197, 66, 0.12);
+  color: #F5C542;
+  border: 1px solid rgba(245, 197, 66, 0.3);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+}
+
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #E2E8F0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+}
+
+.trust-chip:hover {
+  background: rgba(245, 197, 66, 0.1);
+  border-color: rgba(245, 197, 66, 0.3);
+  color: #F5C542;
+}
+
+.stays-hero-btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.15rem;
+  border-radius: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.stays-hero-btn-primary {
+  background: linear-gradient(135deg, #F5C542 0%, #D97706 100%);
+  color: #0F172A;
+  border: 1px solid #F5C542;
+  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.25);
+}
+
+.stays-hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(245, 197, 66, 0.4);
+  color: #000000;
+}
+
+.stays-hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stays-hero-btn-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(245, 197, 66, 0.4);
+  color: #F5C542;
+}
+
+/* Enhanced Stay Filter Pills */
+.dest-stay-filter-pill {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Light Theme Overrides */
+html[data-theme="light"] body.dest-immersive .stays-luxury-header {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 35%, #FFFFFF 100%) !important;
+  border-color: rgba(217, 119, 6, 0.25) !important;
+  box-shadow: 0 16px 36px -10px rgba(180, 83, 9, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .stays-luxury-mesh {
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, transparent 70%) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .stays-kicker-badge {
+  background: #FEF3C7 !important;
+  color: #92400E !important;
+  border-color: rgba(217, 119, 6, 0.35) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .trust-chip {
+  background: #FFFFFF !important;
+  color: #78350F !important;
+  border-color: rgba(217, 119, 6, 0.2) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .trust-chip:hover {
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #92400E !important;
+}
+
+html[data-theme="light"] body.dest-immersive .stays-hero-btn-secondary {
+  background: #FFFFFF !important;
+  color: #1E293B !important;
+  border-color: #CBD5E1 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .stays-hero-btn-secondary:hover {
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #92400E !important;
+}
+
+/* Stay Filter Pills & All Stays button in Light Mode */
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"],
+html[data-theme="light"] body.dest-immersive #panel-stays .dest-filter-btn {
+  background: #FFFFFF !important;
+  color: #334155 !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(217, 119, 6, 0.25) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"]:hover,
+html[data-theme="light"] body.dest-immersive #panel-stays .dest-filter-btn:hover {
+  background: #FFFBEB !important;
+  color: #92400E !important;
+  border-color: rgba(217, 119, 6, 0.45) !important;
+}
+
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"].active,
+html[data-theme="light"] body.dest-immersive .dest-stay-filter-pill[data-tier="all"][aria-pressed="true"],
+html[data-theme="light"] body.dest-immersive #panel-stays .dest-filter-btn.active {
+  background: #FEF3C7 !important;
+  color: #78350F !important;
+  font-weight: 700 !important;
+  border: 1.5px solid #D97706 !important;
+  border-bottom: 2.5px solid #B45309 !important;
+  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.25) !important;
+}
+
+/* ─── DUAL-THEME CONTRAST & VISIBILITY ENHANCEMENTS ─────────── */
+
+/* Trip Cost Estimator Teaser */
+#panel-overview .teaser-badge {
+  background: rgba(245, 197, 66, 0.15);
+  color: #F5C542;
+  border: 1px solid rgba(245, 197, 66, 0.3);
+  font-weight: 700;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .teaser-badge {
+  background: #FEF3C7;
+  color: #92400E;
+  border-color: rgba(217, 119, 6, 0.35);
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .border-gray-200 {
+  border-color: rgba(217, 119, 6, 0.2) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .text-amber-500 {
+  color: #B45309 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .text-gray-900 {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-overview .text-gray-500 {
+  color: #475569 !important;
+}
+
+html:not([data-theme="light"]) body.dest-immersive #panel-overview .text-gray-500 {
+  color: #94A3B8 !important;
+}
+
+/* Dining Panel Light & Dark Theme High Contrast */
+html[data-theme="light"] body.dest-immersive #panel-dining .card,
+html[data-theme="light"] body.dest-immersive #panel-dining .dest-dining-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(217, 119, 6, 0.18) !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-dining h2,
+html[data-theme="light"] body.dest-immersive #panel-dining h3,
+html[data-theme="light"] body.dest-immersive #panel-dining h4 {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-dining p {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-dining .text-gray-500,
+html[data-theme="light"] body.dest-immersive #panel-dining .text-gray-600 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-dining .dest-filter-btn {
+  background: #FFFFFF !important;
+  border-color: rgba(217, 119, 6, 0.25) !important;
+  color: #334155 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-dining .dest-filter-btn.active {
+  background: #FEF3C7 !important;
+  border-color: #D97706 !important;
+  color: #78350F !important;
+}
+
+/* Itinerary Panel High Contrast */
+html[data-theme="light"] body.dest-immersive #panel-itinerary h2,
+html[data-theme="light"] body.dest-immersive #panel-itinerary h3,
+html[data-theme="light"] body.dest-immersive #panel-itinerary h4 {
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-itinerary p {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-itinerary .text-gray-400 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] body.dest-immersive #panel-itinerary .dest-itin-day-card,
+html[data-theme="light"] body.dest-immersive #panel-itinerary .dest-itin-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(217, 119, 6, 0.16) !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04) !important;
 }
