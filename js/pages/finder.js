@@ -468,35 +468,35 @@ function cardHTML(d, reasons, userCoords, detailedDest) {
     const placesList = (detailedDest.topPlaces || []).slice(0, 3).map(function (p) { return esc(p.name); }).join(', ');
     const hotelsList = (detailedDest.hotels || []).slice(0, 3).map(function (h) { return esc(h.name); }).join(', ');
 
-    detailsHTML = '<div class="mt-3 pt-3 border-t border-white/10 space-y-1.5 text-left text-xs text-slate-300">' +
-      (placesList ? '<div><strong class="text-slate-200">Places:</strong> ' + placesList + '</div>' : '') +
-      (hotelsList ? '<div><strong class="text-slate-200">🏨 Stays:</strong> ' + hotelsList + '</div>' : '') +
+    detailsHTML = '<div class="dest-card-details mt-3 pt-3 border-t border-white/10 space-y-1.5 text-left text-xs text-slate-300">' +
+      (placesList ? '<div><strong class="dest-detail-label text-slate-200">Places:</strong> <span class="dest-detail-val">' + placesList + '</span></div>' : '') +
+      (hotelsList ? '<div><strong class="dest-detail-label text-slate-200">🏨 Stays:</strong> <span class="dest-detail-val">' + hotelsList + '</span></div>' : '') +
       '</div>';
   }
 
   return '' +
     '<a href="' + destUrl(d.slug) + '" class="card dest-card block bg-slate-900/80 border border-white/15 backdrop-blur-xl rounded-2xl shadow-xl hover:border-emerald-400/50 transition-all duration-200">' +
-    '<div class="dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
+    '<div class="dest-card-media dest-card-img-wrap overflow-hidden rounded-t-2xl relative">' +
     '<img src="' + esc(cardThumb(d, 600)) + '" alt="' + esc((d.heroImage && d.heroImage.alt) || d.title) + '" class="card-img w-full h-48 object-cover" loading="lazy" ' +
     'data-fallback-src="' + esc(cardImg(d)) + '" ' +
     'onerror="if(this.dataset.fallback){this.onerror=null;this.style.display=\'none\';}else{this.dataset.fallback=\'1\';this.src=this.dataset.fallbackSrc;}" />' +
-    '<div class="dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>' +
-    '<div class="absolute top-3 right-3"><span class="badge bg-slate-950/70 backdrop-blur-md text-white text-xs border border-white/20 px-2.5 py-1 rounded-full">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
-    '<div class="absolute bottom-3 left-3 right-3">' +
-    '<p class="text-white font-extrabold text-xl leading-tight drop-shadow">' + esc(d.title) + '</p>' +
-    '<p class="text-slate-300 text-xs font-medium">' + esc(d.state) + '</p>' +
+    '<div class="dest-card-scrim dest-card-overlay absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent"></div>' +
+    '<div class="absolute top-3 right-3 z-10"><span class="badge dest-badge-type bg-slate-950/75 backdrop-blur-md text-white text-xs border border-white/25 px-2.5 py-1 rounded-full font-semibold shadow-sm">' + typeIcon + ' ' + esc(typeLabel(d.type)) + '</span></div>' +
+    '<div class="dest-card-header-overlay absolute bottom-3 left-3 right-3 z-10 pointer-events-none">' +
+    '<h3 class="dest-card-title text-white font-extrabold text-xl leading-tight drop-shadow">' + esc(d.title) + '</h3>' +
+    '<p class="dest-card-location text-amber-300 text-xs font-semibold flex items-center gap-1">' + esc(d.state) + '</p>' +
     '</div>' +
     '</div>' +
-    '<div class="p-4 sm:p-5">' +
+    '<div class="dest-card-body p-4 sm:p-5">' +
     '<div class="flex items-center justify-between mb-2">' +
-    '<span class="text-xs text-slate-300 bg-slate-800/60 px-2 py-0.5 rounded border border-white/10">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
+    '<span class="dest-season-pill text-xs text-slate-300 bg-slate-800/60 px-2.5 py-0.5 rounded border border-white/10 font-medium">' + esc((d.bestTime && d.bestTime.label) || '') + '</span>' +
     '</div>' +
-    '<p class="text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
+    '<p class="dest-card-desc text-slate-300 text-xs leading-relaxed line-clamp-2 mb-3">' + esc(d.short) + '</p>' +
     (chips ? '<div class="flex flex-wrap gap-1.5 mb-3">' + chips + '</div>' : '') +
     detailsHTML +
-    '<div class="flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
-    '<span class="text-xs text-slate-400">' + distanceText + '</span>' +
-    '<span class="text-xs font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
+    '<div class="dest-card-footer-row flex items-center justify-between pt-3 border-t border-white/10 mt-3">' +
+    '<span class="dest-distance-text text-xs text-slate-400">' + distanceText + '</span>' +
+    '<span class="dest-card-cta text-xs font-semibold text-amber-300/90 flex items-center gap-1">Explore Sanctuary <svg class="inline-block w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>' +
     '</div>' +
     '</div>' +
     '</a>';

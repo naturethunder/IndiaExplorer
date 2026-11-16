@@ -2927,11 +2927,11 @@ html[data-theme="light"] body.glass-immersive main p:not(.hero-home p):not(.seas
   text-shadow: none !important;
 }
 
-html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *):not(.dest-ov-counter *):not(.dest-ov-counter):not(.counter-pill):not(.gallery-category-pill):not(.about-corridor-card *):not(.about-corridor-card):not(.bg-black\/60):not(.bg-black\/60 *) {
+html[data-theme="light"] body.glass-immersive .text-white:not(.btn *):not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *):not(.dest-ov-counter *):not(.dest-ov-counter):not(.counter-pill):not(.gallery-category-pill):not(.about-corridor-card *):not(.about-corridor-card):not(.bg-black\/60):not(.bg-black\/60 *) {
   color: #0F172A !important;
 }
 
-html[data-theme="light"] body.glass-immersive .text-slate-300:not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *) {
+html[data-theme="light"] body.glass-immersive .text-slate-300:not(.hero-home *):not(.trend-card *):not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *):not(.nav-glass *):not(.season-card *):not(.mini-card *):not(.card-image-frame *):not(.hero-hill-media *) {
   color: #334155 !important;
 }
 
@@ -3720,8 +3720,8 @@ html[data-theme="light"] body.glass-immersive .card li {
   color: #1E293B !important;
 }
 
-html[data-theme="light"] body.glass-immersive .card p,
-html[data-theme="light"] body.glass-immersive .dest-card p,
+html[data-theme="light"] body.glass-immersive .card p:not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *),
+html[data-theme="light"] body.glass-immersive .dest-card p:not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *),
 html[data-theme="light"] body.glass-immersive .dest-card-desc {
   color: #0F172A !important;
   font-weight: 500 !important;
@@ -3883,23 +3883,40 @@ html[data-theme="light"] body.glass-immersive .dest-card .font-bold.text-white {
   color: #1C1917 !important;
 }
 
-html[data-theme="light"] body.glass-immersive .dest-card strong.text-slate-200 {
-  color: #1C1917 !important;
+html[data-theme="light"] body.glass-immersive .dest-card strong.text-slate-200,
+html[data-theme="light"] body.glass-immersive .dest-card .dest-detail-label {
+  color: #0F172A !important;
   font-weight: 700 !important;
 }
 
-html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300 {
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300:not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *),
+html[data-theme="light"] body.glass-immersive .dest-card .dest-detail-val {
   color: #334155 !important;
 }
 
-html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400 {
-  color: #64748B !important;
+html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400,
+html[data-theme="light"] body.glass-immersive .dest-distance-text {
+  color: #475569 !important;
+  font-weight: 500 !important;
 }
 
+html[data-theme="light"] body.glass-immersive .dest-season-pill,
 html[data-theme="light"] body.glass-immersive .dest-card [class*="bg-slate-800"] {
   background: #FEF3C7 !important;
+  color: #78350F !important;
+  border: 1px solid rgba(217, 119, 6, 0.35) !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card-cta,
+html[data-theme="light"] body.glass-immersive .dest-card span[class*="text-amber-300"] {
+  color: #B45309 !important;
+  font-weight: 700 !important;
+}
+
+html[data-theme="light"] body.glass-immersive .dest-card:hover .dest-card-cta,
+html[data-theme="light"] body.glass-immersive .dest-card:hover span[class*="text-amber-300"] {
   color: #92400E !important;
-  border: 1px solid #FCD34D !important;
 }
 
 html[data-theme="light"] body.glass-immersive .reason-chip {
@@ -3910,10 +3927,16 @@ html[data-theme="light"] body.glass-immersive .reason-chip {
 }
 
 /* Understanding Box & Info Cards in AI Finder */
-html[data-theme="light"] body.glass-immersive [class*="bg-slate-900\/80"] {
+html[data-theme="light"] body.glass-immersive [class*="bg-slate-900\/80"],
+html[data-theme="light"] body.glass-immersive #understanding > div {
   background: #FFFFFF !important;
   border: 1px solid rgba(28, 25, 23, 0.12) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+html[data-theme="light"] body.glass-immersive #understanding p {
+  color: #92400E !important;
+  font-weight: 700 !important;
 }
 
 html[data-theme="light"] body.glass-immersive .tag-chip {
@@ -4281,12 +4304,61 @@ html[data-theme="light"] body.glass-immersive .dest-card-body {
   background: #FFFFFF !important;
 }
 
-html[data-theme="light"] body.glass-immersive .dest-card-title,
-html[data-theme="light"] body.glass-immersive .dest-card h3 {
+/* Card headings inside card body only */
+html[data-theme="light"] body.glass-immersive .dest-card-body h3,
+html[data-theme="light"] body.glass-immersive .card .dest-card-body h3 {
   color: #0F172A !important;
   font-weight: 700 !important;
 }
 
+/* ─── INVARIANT: Card Media Overlay MUST ALWAYS REMAIN CRISP WHITE over dark photos in both themes! ─── */
+body.glass-immersive .dest-card-title,
+body.glass-immersive .dest-card-media .dest-card-title,
+body.glass-immersive .dest-card-img-wrap .dest-card-title,
+body.glass-immersive .dest-card-header-overlay .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card-media .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay .dest-card-title,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap h3,
+html[data-theme="light"] body.glass-immersive .dest-card-media h3,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap p.text-white,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay h3,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay p:not(.dest-card-location) {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.8) !important;
+}
+
+body.glass-immersive .dest-card-location,
+body.glass-immersive .dest-card-media .dest-card-location,
+body.glass-immersive .dest-card-img-wrap .dest-card-location,
+body.glass-immersive .dest-card-header-overlay .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-media .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap p.text-slate-300 {
+  color: #FCD34D !important;
+  -webkit-text-fill-color: #FCD34D !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Category badge over photo */
+body.glass-immersive .dest-card-img-wrap .badge,
+body.glass-immersive .dest-card-media .badge,
+body.glass-immersive .dest-badge-type,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .badge,
+html[data-theme="light"] body.glass-immersive .dest-card-media .badge,
+html[data-theme="light"] body.glass-immersive .dest-badge-type,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .badge *,
+html[data-theme="light"] body.glass-immersive .dest-card-media .badge * {
+  background: rgba(8, 12, 20, 0.82) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
 
 html[data-theme="light"] body.glass-immersive .dest-card strong.text-white,
 html[data-theme="light"] body.glass-immersive .dest-card strong,
@@ -4294,8 +4366,8 @@ html[data-theme="light"] body.glass-immersive .dest-card .font-bold:not(.text-am
   color: #0F172A !important;
 }
 
-html[data-theme="light"] body.glass-immersive .dest-card .text-slate-300,
-html[data-theme="light"] body.glass-immersive .dest-card .text-slate-400 {
+html[data-theme="light"] body.glass-immersive .dest-card .dest-card-body .text-slate-300,
+html[data-theme="light"] body.glass-immersive .dest-card .dest-card-body .text-slate-400 {
   color: #334155 !important;
   font-weight: 500;
 }
@@ -4306,7 +4378,9 @@ html[data-theme="light"] body.glass-immersive .dest-card .text-slate-500 {
 }
 
 html[data-theme="light"] body.glass-immersive .dest-card .border-white\/10,
-html[data-theme="light"] body.glass-immersive .card .border-white\/10 {
+html[data-theme="light"] body.glass-immersive .card .border-white\/10,
+html[data-theme="light"] body.glass-immersive .dest-card-details,
+html[data-theme="light"] body.glass-immersive .dest-card-footer-row {
   border-color: #E2E8F0 !important;
 }
 
@@ -6013,7 +6087,7 @@ html[data-theme="light"] .about-corridor-card div {
 
 
 /* ─── Light Mode Accessible Amber Accents (7.6:1 AAA Contrast) ─── */
-html[data-theme="light"] body.glass-immersive :where(.text-amber-400, .text-amber-300, .text-amber-500, [class*="text-amber"]):not(.hero-home *):not(.about-corridor-card *) {
+html[data-theme="light"] body.glass-immersive :where(.text-amber-400, .text-amber-300, .text-amber-500, [class*="text-amber"]):not(.hero-home *):not(.about-corridor-card *):not(.dest-card-media *):not(.dest-card-img-wrap *):not(.dest-card-header-overlay *) {
   color: #92400E !important;
 }
 
@@ -6041,8 +6115,20 @@ html[data-theme="light"] body.glass-immersive .bg-black\/60.text-amber-300,
 html[data-theme="dark"] body.glass-immersive .bg-black\/60.text-amber-300,
 html[data-theme="light"] body.glass-immersive .bg-slate-800 [class*="text-amber"],
 html[data-theme="light"] body.glass-immersive .bg-slate-900 [class*="text-amber"],
-html[data-theme="light"] body.glass-immersive .bg-gray-900 [class*="text-amber"] {
+html[data-theme="light"] body.glass-immersive .bg-gray-900 [class*="text-amber"],
+body.glass-immersive .dest-card-location,
+body.glass-immersive .dest-card-media .dest-card-location,
+body.glass-immersive .dest-card-img-wrap .dest-card-location,
+body.glass-immersive .dest-card-header-overlay .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-media .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay .dest-card-location,
+html[data-theme="light"] body.glass-immersive .dest-card-header-overlay [class*="text-amber"],
+html[data-theme="light"] body.glass-immersive .dest-card-img-wrap [class*="text-amber"] {
   color: #FDE68A !important;
+  -webkit-text-fill-color: #FDE68A !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7) !important;
 }
 
 body.glass-immersive .badge.bg-black\/60.text-white,
