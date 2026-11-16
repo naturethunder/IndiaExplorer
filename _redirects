@@ -3,12 +3,12 @@
 /tour-list-beach/* /destinations?type=beach 301
 /tour-list-beach /destinations?type=beach 301
 
-# Clean URL Rewrites
-/hotels /hotels.html 200
-/restaurants /restaurants.html 200
-/destinations /destinations.html 200
-/ai-finder /ai-finder.html 200
-/about /about.html 200
-/contact /contact.html 200
-/privacy /privacy.html 200
-/terms /terms.html 200
+# Clean URL Redirects (301 status supported by Cloudflare Pages and Netlify)
+/hotels /hotels.html 301
+/restaurants /restaurants.html 301
+/destinations /destinations.html 301
+/ai-finder /ai-finder.html 301
+/about /about.html 301
+/contact /contact.html 301
+/privacy /privacy.html 301
+/terms /terms.html 301

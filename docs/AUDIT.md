@@ -1,5 +1,14 @@
 # ExploreDesh — Production Audit & Fix Log
 
+## Addendum — Production Navigation Hardening & Live URL Fix (2026-11-16, Phase 134 rev-88)
+
+Full professional QA & audit executed across all 17 dimensions (`qa-audit` pass):
+- **Production Navigation & Live Hosting Routing Hardening**: Fixed production 404 errors on GitHub Pages and static hosts caused by root-relative paths (`/destinations`, `/ai-finder`, `/about`, `/contact`) and `200` status rewrite rules. Standardized all navigation links in `js/components/layout.js` to use robust relative `.html` file paths (`index.html`, `destinations.html`, `ai-finder.html`, `about.html`, `contact.html`, `hotels.html`, `restaurants.html`, `privacy.html`, `terms.html`), ensuring 100% reachability across local dev, custom domains, and GitHub Pages subpath deployments. Updated `_redirects` static rewrite rules to valid `301` status.
+- **Navbar Layout Refinement**: Streamlined navbar items to primary core destinations and planner in `NAV_LINKS`, keeping specialized hospitality and dining engines accessible via discovery portals and footer links.
+- **Master Test Suite Verification (100% Green)**: Master SEO Regression Guard (**81/81 PASSED**), Relative Internal Link Integrity Audit (**0 broken links**), UI/UX Pro Max QA Audit (**0 issues detected**).
+
+---
+
 ## Addendum — Deep Code Cleaning, Legacy Dead Code & Cruft Purge (2026-11-16, Phase 134 rev-88)
 
 Full repository de-bulking, dead legacy code pruning, and local performance optimization executed:

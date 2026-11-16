@@ -17,11 +17,11 @@ import { initGlobalGlassHoverGSAP } from '../utils/gsapInteractions.js';
 
 // Pill nav: Home / Destinations / Trip Planner / About / Contact.
 const NAV_LINKS = [
-  { key: 'home', href: '/', label: 'Home' },
-  { key: 'destinations', href: '/destinations', label: 'Destinations' },
-  { key: 'finder', href: '/ai-finder', label: 'Trip Planner' },
-  { key: 'about', href: '/about', label: 'About' },
-  { key: 'contact', href: '/contact', label: 'Contact' },
+  { key: 'home', href: 'index.html', label: 'Home' },
+  { key: 'destinations', href: 'destinations.html', label: 'Destinations' },
+  { key: 'finder', href: 'ai-finder.html', label: 'Trip Planner' },
+  { key: 'about', href: 'about.html', label: 'About' },
+  { key: 'contact', href: 'contact.html', label: 'Contact' },
 ];
 
 // Company pages (about/contact/privacy/terms) share the same pill nav.
@@ -33,7 +33,7 @@ function navbarHTML(active, variant) {
     '<a href="' + l.href + '" class="nav-link' + (l.key === active ? ' active' : '') + '"' + (l.key === active ? ' aria-current="page"' : '') + '>' + l.label + '</a>'
   ).join('\n        ');
   const brand =
-    '<a href="/" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
+    '<a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="ExploreDesh home">\n' +
     '      <span class="brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
     '      <span class="font-bold text-lg tracking-tight text-white site-brand-text">Explore<span class="text-primary">Desh</span></span>\n' +
     '    </a>';
@@ -64,36 +64,36 @@ function navbarHTML(active, variant) {
 const FOOTER_COLS = [
   {
     title: 'Explore', links: [
-      ['All Destinations', '/destinations'],
-      ['Popular Sanctuaries', '/destinations?sort=popular'],
-      ['Trip Planner', '/ai-finder'],
-      ['Curated Stays & Retreats', '/hotels'],
-      ['Dining & Gastronomy', '/restaurants'],
+      ['All Destinations', 'destinations.html'],
+      ['Popular Sanctuaries', 'destinations.html?sort=popular'],
+      ['Trip Planner', 'ai-finder.html'],
+      ['Curated Stays & Retreats', 'hotels.html'],
+      ['Dining & Gastronomy', 'restaurants.html'],
     ]
   },
   {
     title: 'Sanctuaries', links: [
-      ['Hills & Mountains', '/destinations?type=hill_station'],
-      ['Coastal Escapes', '/destinations?type=beach'],
-      ['Wildlife & Nature', '/destinations?type=wildlife'],
-      ['Adventure Trails', '/destinations?type=adventure'],
-      ['Scenic Road Trips', '/destinations?type=road_trips'],
+      ['Hills & Mountains', 'destinations.html?type=hill_station'],
+      ['Coastal Escapes', 'destinations.html?type=beach'],
+      ['Wildlife & Nature', 'destinations.html?type=wildlife'],
+      ['Adventure Trails', 'destinations.html?type=adventure'],
+      ['Scenic Road Trips', 'destinations.html?type=road_trips'],
     ]
   },
   {
     title: 'Heritage', links: [
-      ['Forts & Palaces', '/destinations?type=heritage'],
-      ['Spiritual Centers', '/destinations?type=pilgrimage'],
-      ['Offbeat Hidden Gems', '/destinations?sort=latest'],
-      ['Seasonal Highlights', '/destinations?sort=trending'],
+      ['Forts & Palaces', 'destinations.html?type=heritage'],
+      ['Spiritual Centers', 'destinations.html?type=pilgrimage'],
+      ['Offbeat Hidden Gems', 'destinations.html?sort=latest'],
+      ['Seasonal Highlights', 'destinations.html?sort=trending'],
     ]
   },
   {
     title: 'Atelier & Trust', links: [
-      ['About ExploreDesh', '/about'],
-      ['Curator Contact', '/contact'],
-      ['Privacy Charter', '/privacy'],
-      ['Terms of Service', '/terms'],
+      ['About ExploreDesh', 'about.html'],
+      ['Curator Contact', 'contact.html'],
+      ['Privacy Charter', 'privacy.html'],
+      ['Terms of Service', 'terms.html'],
     ]
   },
 ];
@@ -124,7 +124,7 @@ function footerHTML() {
     '        <div class="flex items-center gap-2.5 mb-4">\n' +
     '          <span class="footer-brand-mark">' + icon('mountain', { size: 20 }) + '</span>\n' +
     '          <span class="font-bold text-xl tracking-tight footer-brand-text">Explore<span class="text-primary">Desh</span></span>\n' +
-    '        </div>\n' +
+    '        \n</div>\n' +
     '        <p class="text-sm footer-muted-text leading-relaxed max-w-sm mb-5">India\'s premier luxury travel discovery atelier. Documenting 2,396 authentic sanctuaries, ancient heritage monuments, and bespoke cultural journeys across all 36 states and union territories.</p>\n' +
     '        <div class="footer-catalog-badge">\n' +
     '          <span class="footer-pulse-dot" aria-hidden="true"></span>\n' +
@@ -137,14 +137,14 @@ function footerHTML() {
     '    </div>\n' +
     '    <div class="footer-divider pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs footer-muted-text">\n' +
     '      <div class="flex items-center gap-2 flex-wrap">\n' +
-    '        <span>\u00a9 2026 ExploreDesh Atelier. All rights reserved.</span>\n' +
+    '        <span>© 2026 ExploreDesh Atelier. All rights reserved.</span>\n' +
     '        <span class="hidden sm:inline opacity-40">·</span>\n' +
     '        <span class="hidden sm:inline">Definitive Heritage Archive of Bharat</span>\n' +
     '      </div>\n' +
     '      <div class="flex items-center gap-5 flex-wrap">\n' +
-    '        <a href="/privacy" class="footer-legal-link">Privacy</a>\n' +
-    '        <a href="/terms" class="footer-legal-link">Terms</a>\n' +
-    '        <a href="/contact" class="footer-legal-link">Contact</a>\n' +
+    '        <a href="privacy.html" class="footer-legal-link">Privacy</a>\n' +
+    '        <a href="terms.html" class="footer-legal-link">Terms</a>\n' +
+    '        <a href="contact.html" class="footer-legal-link">Contact</a>\n' +
     '        <span class="inline-flex items-center gap-1.5 opacity-90">\n' +
     '          <span>Made with</span>\n' +
     '          <span class="text-rose-500 inline-flex items-center" aria-label="reverence">' + icon('heart', { size: 13, fill: true }) + '</span>\n' +
@@ -158,18 +158,18 @@ function footerHTML() {
 }
 
 const MOBILE_LINKS = [
-  { key: 'home', href: '/', icon: 'home', label: 'Home' },
-  { key: 'destinations', href: '/destinations', icon: 'map', label: 'Explore' },
-  { key: 'hills', href: '/destinations?type=hill_station', icon: 'mountain', label: 'Hills' },
-  { key: 'heritage', href: '/destinations?type=heritage', icon: 'landmark', label: 'Heritage' },
-  { key: 'finder', href: '/ai-finder', icon: 'compass', label: 'Planner' },
+  { key: 'home', href: 'index.html', icon: 'home', label: 'Home' },
+  { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
+  { key: 'hills', href: 'destinations.html?type=hill_station', icon: 'mountain', label: 'Hills' },
+  { key: 'heritage', href: 'destinations.html?type=heritage', icon: 'landmark', label: 'Heritage' },
+  { key: 'finder', href: 'ai-finder.html', icon: 'compass', label: 'Planner' },
 ];
 
 const COMPANY_MOBILE_LINKS = [
-  { key: 'home', href: '/', icon: 'home', label: 'Home' },
-  { key: 'destinations', href: '/destinations', icon: 'map', label: 'Explore' },
-  { key: 'hills', href: '/destinations?type=hill_station', icon: 'mountain', label: 'Hills' },
-  { key: 'contact', href: '/contact', icon: 'mail', label: 'Contact' },
+  { key: 'home', href: 'index.html', icon: 'home', label: 'Home' },
+  { key: 'destinations', href: 'destinations.html', icon: 'map', label: 'Explore' },
+  { key: 'hills', href: 'destinations.html?type=hill_station', icon: 'mountain', label: 'Hills' },
+  { key: 'contact', href: 'contact.html', icon: 'mail', label: 'Contact' },
 ];
 
 function mobileNavHTML(active, variant) {
@@ -203,10 +203,6 @@ export function initLayout(opts = {}) {
     const path = window.location.pathname;
     if (path === '/' || path.endsWith('/index.html') || path === '') {
       active = 'home';
-    } else if (path.includes('hotel')) {
-      active = 'hotels';
-    } else if (path.includes('restaurant')) {
-      active = 'restaurants';
     } else if (path.includes('destination')) {
       active = 'destinations';
     } else if (path.includes('finder')) {
@@ -248,7 +244,7 @@ export function initLayout(opts = {}) {
         const currentClean = window.location.pathname.split('?')[0].replace(/\.html$/, '');
         const isSamePage = cleanHref === currentClean ||
           (cleanHref.includes('destination') && currentClean.includes('destination')) ||
-          ((cleanHref === '/' || cleanHref === '') && (currentClean === '/' || currentClean === '' || currentClean.endsWith('index')));
+          ((cleanHref === '/' || cleanHref === '' || cleanHref === 'index') && (currentClean === '/' || currentClean === '' || currentClean.endsWith('index') || currentClean.endsWith('index.html')));
         if (isSamePage && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && link.getAttribute('target') !== '_blank') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -260,17 +256,18 @@ export function initLayout(opts = {}) {
   const isHomePage = active === 'home' ||
     window.location.pathname === '/' ||
     window.location.pathname.endsWith('/index.html') ||
+    window.location.pathname.endsWith('/') ||
     window.location.pathname === '';
 
   if (isHomePage) {
-    const homeLinks = document.querySelectorAll('a[href="/"], a[href="index.html"], a[href="/index.html"]');
+    const homeLinks = document.querySelectorAll('a[href="index.html"], a[href="/"], a[href="/index.html"]');
     homeLinks.forEach((link) => {
       link.addEventListener('click', (e) => {
         if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && link.getAttribute('target') !== '_blank') {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: 'smooth' });
           if (window.location.search || window.location.hash) {
-            history.replaceState(null, '', window.location.pathname.endsWith('index.html') ? 'index.html' : '/');
+            history.replaceState(null, '', window.location.pathname.endsWith('index.html') ? 'index.html' : './');
           }
         }
       });
@@ -330,7 +327,7 @@ export function setActiveNav(href) {
     const aHref = (a.getAttribute('href') || '').trim();
     const aClean = aHref.split('?')[0].replace(/\.html$/, '');
 
-    if (aHref === raw || (clean && aClean === clean)) {
+    if (aHref === raw || (clean && aClean === clean) || (aClean.endsWith(clean) && clean)) {
       a.classList.add('active');
       a.setAttribute('aria-current', 'page');
       matchedCount++;
