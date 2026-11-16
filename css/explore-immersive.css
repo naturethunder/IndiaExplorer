@@ -404,9 +404,9 @@ body.explore-immersive :focus-visible {
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.quick-tag-btn:hover,
-.quick-tag-btn:active,
-.quick-tag-btn.active {
+html:not([data-theme="light"]) .quick-tag-btn:hover,
+html:not([data-theme="light"]) .quick-tag-btn:active,
+html:not([data-theme="light"]) .quick-tag-btn.active {
   background: linear-gradient(135deg, rgba(245, 197, 66, 0.12), rgba(217, 119, 6, 0.18)) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(245, 197, 66, 0.45) !important;
@@ -1120,6 +1120,7 @@ html[data-theme="light"] select option {
 
 .filter-apply-btn:hover {
   background: var(--exp-emerald-light);
+  color: #03140e !important;
   box-shadow: 0 0 20px rgba(16, 185, 129, 0.35);
 }
 
@@ -1314,6 +1315,7 @@ html[data-theme="light"] select option {
 
 .empty-state-reset-btn:hover {
   background: var(--exp-emerald-light);
+  color: #04120e !important;
   box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 

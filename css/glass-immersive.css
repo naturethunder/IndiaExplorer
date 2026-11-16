@@ -2124,7 +2124,7 @@ body.glass-immersive .month-pill {
   white-space: nowrap !important;
 }
 
-body.glass-immersive .month-pill:hover {
+html:not([data-theme="light"]) body.glass-immersive .month-pill:hover {
   background: rgba(255, 255, 255, 0.12) !important;
   color: #FFFFFF !important;
   border-color: rgba(245, 197, 66, 0.50) !important;
