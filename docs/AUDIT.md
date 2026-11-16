@@ -1,11 +1,14 @@
 # ExploreDesh — Production Audit & Fix Log
 
-## Addendum — Production Navigation Hardening & Live URL Fix (2026-11-16, Phase 134 rev-88)
+## Addendum — Cloudflare Pages Infinite Redirect Resolution (2026-11-16, Phase 134 rev-88)
 
-Full professional QA & audit executed across all 17 dimensions (`qa-audit` pass):
-- **Production Navigation & Live Hosting Routing Hardening**: Fixed production 404 errors on GitHub Pages and static hosts caused by root-relative paths (`/destinations`, `/ai-finder`, `/about`, `/contact`) and `200` status rewrite rules. Standardized all navigation links in `js/components/layout.js` to use robust relative `.html` file paths (`index.html`, `destinations.html`, `ai-finder.html`, `about.html`, `contact.html`, `hotels.html`, `restaurants.html`, `privacy.html`, `terms.html`), ensuring 100% reachability across local dev, custom domains, and GitHub Pages subpath deployments. Updated `_redirects` static rewrite rules to valid `301` status.
-- **Navbar Layout Refinement**: Streamlined navbar items to primary core destinations and planner in `NAV_LINKS`, keeping specialized hospitality and dining engines accessible via discovery portals and footer links.
-- **Master Test Suite Verification (100% Green)**: Master SEO Regression Guard (**81/81 PASSED**), Relative Internal Link Integrity Audit (**0 broken links**), UI/UX Pro Max QA Audit (**0 issues detected**).
+Production Root-Cause Analysis & Fix for `ERR_TOO_MANY_REDIRECTS`:
+- **Root Cause Identified**: Cloudflare Pages features automatic Asset Canonicalization which 307/308 redirects any request for `*.html` (e.g. `/destinations.html`) to clean paths (`/destinations`). The previous addition of `301` rewrite rules in `_redirects` (`/destinations /destinations.html 301`) created an infinite redirect ping-pong loop between Cloudflare's edge proxy and the redirects file.
+- **Resolution**:
+  1. Purged recursive `301` clean URL rules from `_redirects`. Cloudflare Pages natively maps clean URLs (`/destinations`, `/ai-finder`, `/about`, `/contact`, `/hotels`, `/restaurants`) directly to corresponding `.html` templates with 0 redirects and HTTP 200 responses.
+  2. Restored canonical root-relative paths (`/`, `/destinations`, `/ai-finder`, `/about`, `/contact`, `/hotels`, `/restaurants`) across `NAV_LINKS`, `FOOTER_COLS`, and `MOBILE_LINKS` in `js/components/layout.js`.
+  3. Re-verified local dev server (`scripts/serve.js`) clean URL handling for 100% parity with Cloudflare Pages.
+- **Master Test Suite Verification (100% Green)**: Master SEO Regression Guard (**81/81 PASSED**), Broken Link Audit (**0 broken links**), UI/UX Pro Max QA Audit (**0 issues detected**).
 
 ---
 
